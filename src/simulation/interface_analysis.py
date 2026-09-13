@@ -12,6 +12,8 @@ from dotenv import find_dotenv, load_dotenv
 
 from ..analysis.carbon_weights import build_scenario_name
 from ..billing import (
+    PGE_B10_SECONDARY_BUNDLED,
+    PGE_B19_SECONDARY_MANDATORY_BUNDLED,
     calculate_billing,
     get_tariff,
     master_with_submeters_topology,
@@ -45,6 +47,19 @@ DEFAULT_SIGNAL_CACHE_DIRECTORY = (
     / ".cache"
     / "signal_data"
 )
+
+REGION_RETAIL_TARIFF_IDS = {
+    "caiso_np15": (
+        PGE_B10_SECONDARY_BUNDLED.tariff_id,
+        PGE_B19_SECONDARY_MANDATORY_BUNDLED.tariff_id,
+    ),
+}
+
+
+def retail_tariff_ids_for_region(region_id: str) -> tuple[str, ...]:
+    """Return retail tariffs implemented for the selected GUI region."""
+
+    return REGION_RETAIL_TARIFF_IDS.get(region_id, ())
 
 
 @dataclass
@@ -183,6 +198,15 @@ def run_live_api_analysis(
     progress_callback: Callable[[str], None] | None = None,
 ) -> InterfaceAnalysisResult:
     """Retrieve live regional signals and run the selected study scenarios."""
+
+    if price_mode == "time_of_use":
+        regional_tariffs = retail_tariff_ids_for_region(region_id)
+        if tariff_id not in regional_tariffs:
+            raise ValueError(
+                f"No supported retail tariff {tariff_id!r} is available for "
+                f"region {region_id!r}. Select a regional wholesale, fixed, "
+                "or CSV price source instead."
+            )
 
     if progress_callback is not None:
         progress_callback("Resolving regional market and carbon data sources")
@@ -657,6 +681,8 @@ RESULT_TABLE_COLUMNS = (
     ("total_explicit_cost", "Total cost ($)"),
     ("energy_cost", "Energy cost ($)"),
     ("demand_charge", "Demand charge ($)"),
+    ("peak_grid_import_kw", "Peak import (kW)"),
+    ("billed_peak_kw", "Billed peak (kW)"),
     ("customer_charge", "Customer charge ($)"),
     ("export_credit", "Export credit ($)"),
     ("degradation_cost", "Degradation ($)"),
@@ -664,8 +690,6 @@ RESULT_TABLE_COLUMNS = (
     ("emissions_kgCO2", "Emissions (kgCO2)"),
     ("carbon_adjusted_operating_cost", "Carbon-adjusted cost ($)"),
     ("pcc_grid_import_energy_kWh", "Grid import (kWh)"),
-    ("peak_grid_import_kw", "Peak import (kW)"),
-    ("billed_peak_kw", "Billed peak (kW)"),
     ("minimum_voltage_pu", "Min voltage (pu)"),
     ("maximum_line_loading_percent", "Max line (%)"),
     (

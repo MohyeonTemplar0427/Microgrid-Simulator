@@ -301,28 +301,31 @@ def run_carbon_optimization(
         battery_soc_kWh <= max_soc_kWh,
     ]
 
-    for t in range(number_of_steps):
-        constraints.append(
-            battery_soc_kWh[t + 1]
-            ==
-            battery_soc_kWh[t]
-            + battery_charge_kw[t]
-            * timestep_hours
-            * charge_efficiency
-            - battery_discharge_kw[t]
-            * timestep_hours
-            / discharge_efficiency
-        )
+    # Both relations hold at every interval, so they are expressed as two
+    # array constraints rather than two per interval. The feasible set is
+    # unchanged; cvxpy canonicalizes one matrix instead of several thousand
+    # scalar constraints, which dominates runtime on multi-week horizons.
+    constraints.append(
+        battery_soc_kWh[1:]
+        ==
+        battery_soc_kWh[:-1]
+        + battery_charge_kw
+        * timestep_hours
+        * charge_efficiency
+        - battery_discharge_kw
+        * timestep_hours
+        / discharge_efficiency
+    )
 
-        constraints.append(
-            data["pv_kw"].iloc[t]
-            + grid_import_kw[t]
-            + battery_discharge_kw[t]
-            ==
-            data["load_kw"].iloc[t]
-            + battery_charge_kw[t]
-            + grid_export_kw[t]       
-        )
+    constraints.append(
+        data["pv_kw"].to_numpy()
+        + grid_import_kw
+        + battery_discharge_kw
+        ==
+        data["load_kw"].to_numpy()
+        + battery_charge_kw
+        + grid_export_kw
+    )
 
     grid_import_emissions = cp.sum(
         cp.multiply(
@@ -463,28 +466,31 @@ def run_cost_optimization(
         battery_soc_kWh <= max_soc_kWh,
     ]
 
-    for t in range(number_of_steps):
-        constraints.append(
-            battery_soc_kWh[t + 1]
-            ==
-            battery_soc_kWh[t]
-            + battery_charge_kw[t]
-            * timestep_hours
-            * charge_efficiency
-            - battery_discharge_kw[t]
-            * timestep_hours
-            / discharge_efficiency
-        )
+    # Both relations hold at every interval, so they are expressed as two
+    # array constraints rather than two per interval. The feasible set is
+    # unchanged; cvxpy canonicalizes one matrix instead of several thousand
+    # scalar constraints, which dominates runtime on multi-week horizons.
+    constraints.append(
+        battery_soc_kWh[1:]
+        ==
+        battery_soc_kWh[:-1]
+        + battery_charge_kw
+        * timestep_hours
+        * charge_efficiency
+        - battery_discharge_kw
+        * timestep_hours
+        / discharge_efficiency
+    )
 
-        constraints.append(
-            data["pv_kw"].iloc[t]
-            + grid_import_kw[t]
-            + battery_discharge_kw[t]
-            ==
-            data["load_kw"].iloc[t]
-            + battery_charge_kw[t]
-            + grid_export_kw[t]       
-        )
+    constraints.append(
+        data["pv_kw"].to_numpy()
+        + grid_import_kw
+        + battery_discharge_kw
+        ==
+        data["load_kw"].to_numpy()
+        + battery_charge_kw
+        + grid_export_kw
+    )
 
     grid_import_cost = cp.sum(
         cp.multiply(
@@ -810,28 +816,31 @@ def run_combined_optimization(
         battery_soc_kWh <= max_soc_kWh,
     ]
 
-    for t in range(number_of_steps):
-        constraints.append(
-            battery_soc_kWh[t + 1]
-            ==
-            battery_soc_kWh[t]
-            + battery_charge_kw[t]
-            * timestep_hours
-            * charge_efficiency
-            - battery_discharge_kw[t]
-            * timestep_hours
-            / discharge_efficiency
-        )
+    # Both relations hold at every interval, so they are expressed as two
+    # array constraints rather than two per interval. The feasible set is
+    # unchanged; cvxpy canonicalizes one matrix instead of several thousand
+    # scalar constraints, which dominates runtime on multi-week horizons.
+    constraints.append(
+        battery_soc_kWh[1:]
+        ==
+        battery_soc_kWh[:-1]
+        + battery_charge_kw
+        * timestep_hours
+        * charge_efficiency
+        - battery_discharge_kw
+        * timestep_hours
+        / discharge_efficiency
+    )
 
-        constraints.append(
-            data["pv_kw"].iloc[t]
-            + grid_import_kw[t]
-            + battery_discharge_kw[t]
-            ==
-            data["load_kw"].iloc[t]
-            + battery_charge_kw[t]
-            + grid_export_kw[t]       
-        )
+    constraints.append(
+        data["pv_kw"].to_numpy()
+        + grid_import_kw
+        + battery_discharge_kw
+        ==
+        data["load_kw"].to_numpy()
+        + battery_charge_kw
+        + grid_export_kw
+    )
 
     grid_import_cost = cp.sum(
         cp.multiply(

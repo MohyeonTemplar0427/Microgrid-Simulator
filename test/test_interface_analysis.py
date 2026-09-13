@@ -15,6 +15,7 @@ from src.simulation.interface_analysis import (
     create_temporary_site_profile,
     create_site_profile,
     format_comparison_for_display,
+    retail_tariff_ids_for_region,
     run_integrated_csv_analysis,
 )
 from src.signal_pipeline.horizon import build_horizon
@@ -59,6 +60,15 @@ def test_create_temporary_site_profile_allows_site_without_pv():
     )
 
     assert profile["pv_kw"].eq(0.0).all()
+
+
+def test_retail_tariffs_are_available_only_for_caiso_region():
+    assert retail_tariff_ids_for_region("caiso_np15") == (
+        "pge_b10_secondary_bundled_2026_03_01",
+        "pge_b19_secondary_mandatory_bundled_2026_03_01",
+    )
+    assert retail_tariff_ids_for_region("ercot_houston_hub") == ()
+    assert retail_tariff_ids_for_region("pjm_western_hub") == ()
 
 
 def test_run_integrated_csv_analysis_filters_and_names_scenarios(
@@ -263,6 +273,7 @@ def test_build_results_table_uses_readable_headings():
     comparison = _comparison().copy()
     comparison["pcc_grid_import_energy_kWh"] = 100.12345
     comparison["peak_grid_import_kw"] = 30.12345
+    comparison["billed_peak_kw"] = 31.0
     comparison["minimum_voltage_pu"] = 0.998123
     comparison["maximum_line_loading_percent"] = 4.8
     comparison["maximum_transformer_loading_percent"] = 4.2
@@ -273,10 +284,12 @@ def test_build_results_table_uses_readable_headings():
     headings, rows = build_results_table(comparison)
 
     assert headings[0] == "Scenario"
-    assert headings[1:7] == (
+    assert headings[1:9] == (
         "Total cost ($)",
         "Energy cost ($)",
         "Demand charge ($)",
+        "Peak import (kW)",
+        "Billed peak (kW)",
         "Customer charge ($)",
         "Export credit ($)",
         "Degradation ($)",

@@ -2,6 +2,7 @@
 
 from datetime import date
 from decimal import Decimal, InvalidOperation
+import json
 import multiprocessing
 from pathlib import Path
 import queue
@@ -11,6 +12,7 @@ from tkinter import filedialog, messagebox, ttk
 
 from ..billing import (
     PGE_B10_SECONDARY_BUNDLED,
+    PGE_B19_SECONDARY_MANDATORY_BUNDLED,
     supported_tariffs,
 )
 from ..signal_pipeline.price_sources import PRICE_MODES
@@ -24,6 +26,7 @@ from .interface_analysis import (
     build_results_table,
     InterfaceAnalysisResult,
     RESULT_TABLE_COLUMNS,
+    retail_tariff_ids_for_region,
     run_integrated_csv_analysis,
     run_live_api_analysis,
 )
@@ -38,11 +41,34 @@ STRATEGY_LABELS = {
     "combined_optimal": "Combined optimization",
 }
 
+SOURCE_MODE_LABELS = {
+    "live_api": "Live API data",
+    "integrated_csv": "Import integrated CSV",
+}
+
+REGION_LABELS = {
+    "caiso_np15": "Northern California — CAISO NP15",
+    "ercot_houston_hub": "Texas — ERCOT Houston Hub",
+    "pjm_western_hub": "PJM Western Hub — Direct API",
+    "pjm_western_hub_gridstatus": (
+        "PJM Western Hub — GridStatus.io"
+    ),
+}
+
 PRICE_MODE_LABELS = {
     "wholesale_market": "Wholesale market price",
-    "fixed_retail": "Fixed retail price",
-    "time_of_use": "Time-of-use retail tariff",
-    "csv": "Price supplied by CSV",
+    "fixed_retail": "Fixed retail electricity price",
+    "time_of_use": "Time-of-Use(TOU) tariff",
+    "csv": "Import price profile from CSV",
+}
+
+TARIFF_LABELS = {
+    PGE_B10_SECONDARY_BUNDLED.tariff_id: (
+        "PG&E B-10 — Secondary Bundled"
+    ),
+    PGE_B19_SECONDARY_MANDATORY_BUNDLED.tariff_id: (
+        "PG&E B-19 — Secondary Mandatory Bundled"
+    ),
 }
 
 LOAD_PROFILE_LABELS = {
@@ -64,6 +90,19 @@ METER_TOPOLOGY_LABELS = {
     "master_with_submeters": "Master utility meter with internal submeters",
 }
 
+CARBON_WEIGHT_MODE_LABELS = {
+    "single": "Single carbon weight",
+    "list": "List of carbon weights",
+    "range": "Carbon-weight range",
+}
+
+GUI_PREFERENCES_PATH = (
+    Path(__file__).resolve().parents[2]
+    / ".cache"
+    / "gui_preferences.json"
+)
+GUI_PREFERENCES_VERSION = 1
+
 
 class MicrogridApplication:
     """Own one root window and switch between the study workflow pages."""
@@ -79,6 +118,8 @@ class MicrogridApplication:
             name: tk.BooleanVar(value=True)
             for name in STRATEGY_LABELS
         }
+        self.preferences_path = GUI_PREFERENCES_PATH
+        self._load_preferences()
         self.pages: dict[str, ttk.Frame] = {}
         self.battery_entries: list[ttk.Entry] = []
         self.analysis_result: InterfaceAnalysisResult | None = None
@@ -118,7 +159,7 @@ class MicrogridApplication:
             "source_mode": tk.StringVar(value="live_api"),
             "region_id": tk.StringVar(value=first_region),
             "signal_csv_path": tk.StringVar(),
-            "start_date": tk.StringVar(value="2026-08-25"),
+            "start_date": tk.StringVar(value="2026-08-01"),
             "end_date_inclusive": tk.StringVar(value="2026-08-31"),
             "timestep_minutes": tk.StringVar(value="15"),
             "price_mode": tk.StringVar(value="time_of_use"),
@@ -140,7 +181,7 @@ class MicrogridApplication:
             "battery_initial_energy": tk.StringVar(value="200"),
             "battery_max_charge": tk.StringVar(value="100"),
             "battery_max_discharge": tk.StringVar(value="100"),
-            "pv_capacity": tk.StringVar(value="150"),
+            "pv_capacity": tk.StringVar(value="0"),
             "load_power": tk.StringVar(value="250"),
             "load_profile_mode": tk.StringVar(value="constant"),
             "load_archetype": tk.StringVar(value="multifamily"),
@@ -162,6 +203,75 @@ class MicrogridApplication:
             text="Microgrid Analysis",
             font=("Arial", 22, "bold"),
         ).pack(side="left")
+
+    def _load_preferences(self) -> None:
+        """Restore the most recently launched valid GUI configuration."""
+
+        try:
+            saved = json.loads(self.preferences_path.read_text())
+        except (OSError, ValueError, TypeError):
+            return
+
+        if saved.get("version") != GUI_PREFERENCES_VERSION:
+            return
+
+        saved_values = saved.get("values", {})
+        if not isinstance(saved_values, dict):
+            return
+
+        choice_options = {
+            "source_mode": set(SOURCE_MODE_LABELS),
+            "region_id": set(supported_regions()),
+            "price_mode": set(PRICE_MODE_LABELS),
+            "carbon_weight_mode": set(CARBON_WEIGHT_MODE_LABELS),
+            "load_profile_mode": set(LOAD_PROFILE_LABELS),
+            "load_archetype": set(LOAD_ARCHETYPE_LABELS),
+            "tariff_id": set(TARIFF_LABELS) | {""},
+            "meter_topology_mode": set(METER_TOPOLOGY_LABELS),
+        }
+
+        for name, value in saved_values.items():
+            if name not in self.values or not isinstance(value, str):
+                continue
+            if name in choice_options and value not in choice_options[name]:
+                continue
+            self.values[name].set(value)
+
+        saved_strategies = saved.get("strategies", {})
+        if isinstance(saved_strategies, dict):
+            for name, variable in self.strategy_values.items():
+                value = saved_strategies.get(name)
+                if isinstance(value, bool):
+                    variable.set(value)
+
+        self.strategy_values["no_battery"].set(True)
+
+    def _save_preferences(self) -> bool:
+        """Persist the current valid selections outside version control."""
+
+        saved = {
+            "version": GUI_PREFERENCES_VERSION,
+            "values": {
+                name: str(variable.get())
+                for name, variable in self.values.items()
+            },
+            "strategies": {
+                name: bool(variable.get())
+                for name, variable in self.strategy_values.items()
+            },
+        }
+        temporary_path = self.preferences_path.with_suffix(".tmp")
+
+        try:
+            self.preferences_path.parent.mkdir(parents=True, exist_ok=True)
+            temporary_path.write_text(
+                json.dumps(saved, indent=2, sort_keys=True) + "\n"
+            )
+            temporary_path.replace(self.preferences_path)
+        except OSError:
+            return False
+
+        return True
 
     def _new_page(self, name: str) -> ttk.Frame:
         page = ttk.Frame(self.page_container)
@@ -210,6 +320,7 @@ class MicrogridApplication:
             self.values["source_mode"],
             ("live_api", "integrated_csv"),
             0,
+            option_labels=SOURCE_MODE_LABELS,
         ).bind("<<ComboboxSelected>>", self._update_source_controls)
 
         self.region_combobox = self._add_combobox(
@@ -218,6 +329,7 @@ class MicrogridApplication:
             self.values["region_id"],
             tuple(supported_regions()),
             1,
+            option_labels=REGION_LABELS,
         )
         self.region_combobox.bind("<<ComboboxSelected>>", self._apply_region_defaults)
 
@@ -243,6 +355,7 @@ class MicrogridApplication:
             self.values["price_mode"],
             tuple(PRICE_MODES),
             6,
+            option_labels=PRICE_MODE_LABELS,
         )
         self.price_mode_combobox.bind("<<ComboboxSelected>>", self._update_price_controls)
 
@@ -265,6 +378,7 @@ class MicrogridApplication:
             self.values["tariff_id"],
             tuple(supported_tariffs()),
             9,
+            option_labels=TARIFF_LABELS,
         )
         self.meter_topology_combobox = self._add_combobox(
             source_tab,
@@ -272,6 +386,7 @@ class MicrogridApplication:
             self.values["meter_topology_mode"],
             tuple(METER_TOPOLOGY_LABELS),
             10,
+            option_labels=METER_TOPOLOGY_LABELS,
         )
         self.meter_topology_combobox.bind(
             "<<ComboboxSelected>>",
@@ -357,6 +472,7 @@ class MicrogridApplication:
             self.values["carbon_weight_mode"],
             ("single", "list", "range"),
             8,
+            option_labels=CARBON_WEIGHT_MODE_LABELS,
         )
         self.weight_mode_combobox.bind("<<ComboboxSelected>>", self._update_weight_controls)
 
@@ -394,6 +510,7 @@ class MicrogridApplication:
         }
 
         self._navigation(page, next_page="microgrid")
+        self._update_region_pricing_options()
         self._update_source_controls()
         self._update_price_controls()
         self._update_weight_controls()
@@ -728,9 +845,69 @@ class MicrogridApplication:
         variable: tk.Variable,
         options: tuple[str, ...],
         row: int,
+        *,
+        option_labels: dict[str, str] | None = None,
     ) -> ttk.Combobox:
         ttk.Label(parent, text=label).grid(row=row, column=0, sticky="w", padx=6, pady=5)
-        combobox = ttk.Combobox(parent, textvariable=variable, values=options, state="readonly")
+
+        if option_labels is None:
+            combobox = ttk.Combobox(
+                parent,
+                textvariable=variable,
+                values=options,
+                state="readonly",
+            )
+        else:
+            internal_to_display = {
+                option: option_labels.get(option, option)
+                for option in options
+            }
+            display_to_internal = {
+                display: internal
+                for internal, display in internal_to_display.items()
+            }
+            display_variable = tk.StringVar(
+                value=internal_to_display.get(
+                    str(variable.get()),
+                    str(variable.get()),
+                )
+            )
+            synchronizing = {"active": False}
+
+            def update_internal_value(*_args) -> None:
+                if synchronizing["active"]:
+                    return
+                display_value = display_variable.get()
+                if display_value in display_to_internal:
+                    synchronizing["active"] = True
+                    variable.set(display_to_internal[display_value])
+                    synchronizing["active"] = False
+
+            def update_display_value(*_args) -> None:
+                if synchronizing["active"]:
+                    return
+                internal_value = str(variable.get())
+                synchronizing["active"] = True
+                display_variable.set(
+                    internal_to_display.get(internal_value, internal_value)
+                )
+                synchronizing["active"] = False
+
+            display_variable.trace_add("write", update_internal_value)
+            variable.trace_add("write", update_display_value)
+
+            combobox = ttk.Combobox(
+                parent,
+                textvariable=display_variable,
+                values=tuple(
+                    internal_to_display[option]
+                    for option in options
+                ),
+                state="readonly",
+            )
+            combobox.display_variable = display_variable
+            combobox.internal_variable = variable
+
         combobox.grid(row=row, column=1, columnspan=2, sticky="ew", padx=6, pady=5)
         return combobox
 
@@ -768,6 +945,36 @@ class MicrogridApplication:
         self.values["carbon_provider"].set(region.carbon_provider)
         self.values["carbon_zone"].set(region.carbon_zone)
         self.values["timezone"].set(region.timezone)
+        self._update_region_pricing_options()
+
+    def _update_region_pricing_options(self) -> None:
+        """Limit retail-price choices to tariffs valid for the region."""
+
+        region_id = str(self.values["region_id"].get())
+        tariff_ids = retail_tariff_ids_for_region(region_id)
+        price_modes = tuple(
+            mode
+            for mode in PRICE_MODES
+            if mode != "time_of_use" or tariff_ids
+        )
+
+        self.price_mode_combobox.configure(
+            values=tuple(PRICE_MODE_LABELS[mode] for mode in price_modes)
+        )
+        self.tariff_combobox.configure(
+            values=tuple(TARIFF_LABELS[tariff_id] for tariff_id in tariff_ids)
+        )
+
+        if str(self.values["price_mode"].get()) not in price_modes:
+            self.values["price_mode"].set("wholesale_market")
+
+        selected_tariff = str(self.values["tariff_id"].get())
+        if tariff_ids and selected_tariff not in tariff_ids:
+            self.values["tariff_id"].set(tariff_ids[0])
+        elif not tariff_ids:
+            self.values["tariff_id"].set("")
+
+        self._update_price_controls()
 
     def _update_source_controls(self, _event=None) -> None:
         live = self.values["source_mode"].get() == "live_api"
@@ -783,13 +990,16 @@ class MicrogridApplication:
     def _update_price_controls(self, _event=None) -> None:
         live = self.values["source_mode"].get() == "live_api"
         mode = self.values["price_mode"].get()
+        tariff_ids = retail_tariff_ids_for_region(
+            str(self.values["region_id"].get())
+        )
         self.fixed_price_entry.configure(
             state="normal" if live and mode == "fixed_retail" else "disabled"
         )
         csv_state = "normal" if live and mode == "csv" else "disabled"
         self.price_csv_entry.configure(state=csv_state)
         self.price_csv_button.configure(state=csv_state)
-        tariff_active = live and mode == "time_of_use"
+        tariff_active = live and mode == "time_of_use" and bool(tariff_ids)
         tariff_state = "readonly" if tariff_active else "disabled"
         self.tariff_combobox.configure(state=tariff_state)
         self.meter_topology_combobox.configure(state=tariff_state)
@@ -804,8 +1014,19 @@ class MicrogridApplication:
         self.previous_peak_entry.configure(
             state="normal" if tariff_active else "disabled"
         )
+        if live and not tariff_ids:
+            explanation = (
+                "No retail tariff is implemented for this region. Select "
+                "wholesale market, fixed retail, or CSV pricing."
+            )
+        else:
+            explanation = (
+                "Tariff pricing adds TOU energy, customer, and demand charges. "
+                "A blank earlier peak uses only the simulated partial-month peak."
+            )
         self.tariff_explanation.configure(
-            foreground="" if tariff_active else "#777777"
+            text=explanation,
+            foreground="" if tariff_active else "#777777",
         )
 
     def _toggle_overrides(self) -> None:
@@ -1050,6 +1271,7 @@ class MicrogridApplication:
             return
 
         source_mode = str(self.values["source_mode"].get())
+        self._save_preferences()
         self._update_analysis_details(
             source_mode=source_mode,
             timestep_minutes=timestep,
@@ -1667,8 +1889,12 @@ def build_review_rows(
 ) -> tuple[tuple[str, str, str], ...]:
     """Build the rows shown in the Step 3 review table."""
 
-    source_label = "Live APIs" if source_mode == "live_api" else "Integrated CSV"
-    region_label = region_id if source_mode == "live_api" else "Not applicable"
+    source_label = SOURCE_MODE_LABELS[source_mode]
+    region_label = (
+        REGION_LABELS.get(region_id, region_id)
+        if source_mode == "live_api"
+        else "Not applicable"
+    )
     price_label = (
         PRICE_MODE_LABELS[price_mode]
         if source_mode == "live_api"
@@ -1708,7 +1934,9 @@ def build_review_rows(
         (
             "Billing",
             "Retail tariff",
-            tariff_id if tariff_active else "Not used",
+            TARIFF_LABELS.get(tariff_id, tariff_id)
+            if tariff_active
+            else "Not used",
         ),
         ("Billing", "Meter arrangement", topology_label),
         (
@@ -1716,7 +1944,14 @@ def build_review_rows(
             "Earlier monthly peak",
             f"{prior_peak_label} kW" if tariff_active else prior_peak_label,
         ),
-        ("Strategies", "Selected scenarios", ", ".join(strategies)),
+        (
+            "Strategies",
+            "Selected scenarios",
+            ", ".join(
+                STRATEGY_LABELS.get(strategy, strategy)
+                for strategy in strategies
+            ),
+        ),
         ("Strategies", "Combined carbon weights", ", ".join(carbon_weights)),
         (
             "Strategies",

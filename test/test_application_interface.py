@@ -23,6 +23,9 @@ class FakeBooleanVariable:
     def get(self) -> bool:
         return self.value
 
+    def set(self, value: bool) -> None:
+        self.value = value
+
 
 class FakeValueVariable:
     def __init__(self, value) -> None:
@@ -30,6 +33,9 @@ class FakeValueVariable:
 
     def get(self):
         return self.value
+
+    def set(self, value) -> None:
+        self.value = value
 
 
 class FakeConfigurableWidget:
@@ -140,6 +146,69 @@ def test_profile_controls_enable_synthetic_live_inputs():
     )
 
 
+def test_ercot_region_removes_pge_tariff_and_tou_price_option():
+    application = MicrogridApplication.__new__(MicrogridApplication)
+    application.values = {
+        "region_id": FakeValueVariable("ercot_houston_hub"),
+        "price_mode": FakeValueVariable("time_of_use"),
+        "tariff_id": FakeValueVariable(
+            "pge_b10_secondary_bundled_2026_03_01"
+        ),
+    }
+    application.price_mode_combobox = FakeConfigurableWidget()
+    application.tariff_combobox = FakeConfigurableWidget()
+    application._update_price_controls = lambda: None
+
+    application._update_region_pricing_options()
+
+    assert application.values["price_mode"].get() == "wholesale_market"
+    assert application.values["tariff_id"].get() == ""
+    assert application.tariff_combobox.configuration["values"] == ()
+    assert "Time-of-Use(TOU) tariff" not in (
+        application.price_mode_combobox.configuration["values"]
+    )
+
+
+def test_gui_preferences_round_trip_latest_valid_selections(tmp_path):
+    preferences_path = tmp_path / "gui_preferences.json"
+    writer = MicrogridApplication.__new__(MicrogridApplication)
+    writer.preferences_path = preferences_path
+    writer.values = {
+        "region_id": FakeValueVariable("ercot_houston_hub"),
+        "price_mode": FakeValueVariable("wholesale_market"),
+        "start_date": FakeValueVariable("2026-09-01"),
+        "pv_capacity": FakeValueVariable("0"),
+    }
+    writer.strategy_values = {
+        "no_battery": FakeBooleanVariable(True),
+        "cost_optimal": FakeBooleanVariable(True),
+    }
+
+    assert writer._save_preferences()
+
+    reader = MicrogridApplication.__new__(MicrogridApplication)
+    reader.preferences_path = preferences_path
+    reader.values = {
+        "region_id": FakeValueVariable("caiso_np15"),
+        "price_mode": FakeValueVariable("time_of_use"),
+        "start_date": FakeValueVariable("2026-08-25"),
+        "pv_capacity": FakeValueVariable("150"),
+    }
+    reader.strategy_values = {
+        "no_battery": FakeBooleanVariable(False),
+        "cost_optimal": FakeBooleanVariable(False),
+    }
+
+    reader._load_preferences()
+
+    assert reader.values["region_id"].get() == "ercot_houston_hub"
+    assert reader.values["price_mode"].get() == "wholesale_market"
+    assert reader.values["start_date"].get() == "2026-09-01"
+    assert reader.values["pv_capacity"].get() == "0"
+    assert reader.strategy_values["no_battery"].get() is True
+    assert reader.strategy_values["cost_optimal"].get() is True
+
+
 def test_build_review_rows_uses_readable_sections_and_units():
     rows = build_review_rows(
         source_mode="live_api",
@@ -167,7 +236,17 @@ def test_build_review_rows_uses_readable_sections_and_units():
         previous_peak_kw="",
     )
 
-    assert rows[0] == ("Analysis", "Data source", "Live APIs")
+    assert rows[0] == ("Analysis", "Data source", "Live API data")
+    assert (
+        "Analysis",
+        "Region",
+        "Northern California — CAISO NP15",
+    ) in rows
+    assert (
+        "Strategies",
+        "Selected scenarios",
+        "No-battery baseline, Cost optimization",
+    ) in rows
     assert ("Analysis", "End date (inclusive)", "2026-08-26") in rows
     assert ("Analysis", "Time interval", "15 minutes") in rows
     assert ("Microgrid", "Battery capacity", "20 kWh") in rows
