@@ -22,6 +22,11 @@ from src.billing import (
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
     PGE_B20_SECONDARY_BUNDLED,
+    PGE_B19_SECONDARY_OPTION_R_BUNDLED,
+    PGE_B19_SECONDARY_OPTION_S_BUNDLED,
+    PGE_B19_SECONDARY_VOLUNTARY_BUNDLED,
+    PGE_B20_SECONDARY_OPTION_R_BUNDLED,
+    PGE_B20_SECONDARY_OPTION_S_BUNDLED,
     TariffError,
     allocate_shared_generation,
     calculate_billing,
@@ -46,11 +51,20 @@ B6_POLYPHASE = PGE_B6_SECONDARY_POLYPHASE_BUNDLED
 B10 = PGE_B10_SECONDARY_BUNDLED
 B19 = PGE_B19_SECONDARY_MANDATORY_BUNDLED
 B20 = PGE_B20_SECONDARY_BUNDLED
+B19_VOLUNTARY = PGE_B19_SECONDARY_VOLUNTARY_BUNDLED
+B19_OPTION_R = PGE_B19_SECONDARY_OPTION_R_BUNDLED
+B19_OPTION_S = PGE_B19_SECONDARY_OPTION_S_BUNDLED
+B20_OPTION_R = PGE_B20_SECONDARY_OPTION_R_BUNDLED
+B20_OPTION_S = PGE_B20_SECONDARY_OPTION_S_BUNDLED
 B1_SINGLE = PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED
 B1_POLY = PGE_B1_SECONDARY_POLYPHASE_BUNDLED
 TARIFFS = {
     tariff.tariff_id: tariff
-    for tariff in (B1_SINGLE, B1_POLY, B6, B6_POLYPHASE, B10, B19, B20)
+    for tariff in (
+        B1_SINGLE, B1_POLY, B6, B6_POLYPHASE, B10, B19, B20,
+        B19_VOLUNTARY, B19_OPTION_R, B19_OPTION_S,
+        B20_OPTION_R, B20_OPTION_S,
+    )
 }
 
 
@@ -1147,3 +1161,91 @@ def test_b20_summer_bill_applies_peak_and_maximum_demand_together():
     expected_demand = 1200.0 * (39.08 + 41.35 + 9.27)
     assert period.demand_charge == pytest.approx(expected_demand)
     assert period.customer_charge == pytest.approx(107.36636 * 31)
+
+
+## B-19 / B-20 variants ---------------------------------------------------
+
+
+def rates_of(tariff) -> dict[str, float]:
+    return {period.name: period.rate_per_kWh for period in tariff.tou_periods}
+
+
+def demand_of(tariff) -> dict[str, float]:
+    return {c.name: c.rate_per_kW for c in tariff.demand_charges}
+
+
+def test_b19_voluntary_differs_from_mandatory_only_in_customer_charge():
+    assert rates_of(B19_VOLUNTARY) == rates_of(B19)
+    assert demand_of(B19_VOLUNTARY) == demand_of(B19)
+    assert B19_VOLUNTARY.daily_customer_charge == pytest.approx(11.36882)
+    assert B19.daily_customer_charge == pytest.approx(58.62824)
+
+
+def test_option_r_shifts_cost_from_demand_into_energy():
+    # Option R suits renewables: output cuts energy but not the monthly peak,
+    # so the peak-period demand charge drops and energy rates rise.
+    for base, option_r in ((B19, B19_OPTION_R), (B20, B20_OPTION_R)):
+        assert (
+            demand_of(option_r)["peak_period_demand_summer"]
+            < demand_of(base)["peak_period_demand_summer"]
+        )
+        assert rates_of(option_r)["summer_peak"] > rates_of(base)["summer_peak"]
+
+
+def test_option_r_omits_the_zero_rated_winter_peak_demand_component():
+    # Both Option R schedules price winter peak-period demand at $0.00.
+    for option_r in (B19_OPTION_R, B20_OPTION_R):
+        assert "peak_period_demand_winter" not in demand_of(option_r)
+
+
+def test_option_s_maximum_demand_sums_the_printed_rows():
+    # The total-rate table prints maximum demand as a distribution row plus a
+    # combined transmission/reliability row; the bill applies their sum.
+    assert demand_of(B19_OPTION_S)["maximum_demand"] == pytest.approx(
+        6.35 + 9.13
+    )
+    assert demand_of(B20_OPTION_S)["maximum_demand"] == pytest.approx(
+        5.56 + 11.06
+    )
+
+
+def test_option_s_cuts_demand_charges_far_below_the_base_schedule():
+    # Option S is the storage rate: demand charges collapse, energy rises.
+    for base, option_s in ((B19, B19_OPTION_S), (B20, B20_OPTION_S)):
+        assert (
+            sum(demand_of(option_s).values())
+            < 0.25 * sum(demand_of(base).values())
+        )
+        assert rates_of(option_s)["summer_peak"] > rates_of(base)["summer_peak"]
+
+
+def test_variants_share_the_family_tou_hours():
+    # Every B-19/B-20 schedule uses the same period structure.
+    for tariff in (
+        B19, B20, B19_VOLUNTARY, B19_OPTION_R, B19_OPTION_S,
+        B20_OPTION_R, B20_OPTION_S,
+    ):
+        hours = {
+            (p.name, p.start_hour, p.end_hour) for p in tariff.tou_periods
+        }
+        assert ("summer_peak", 16, 21) in hours
+        assert ("summer_part_peak_afternoon", 14, 16) in hours
+        assert ("summer_part_peak_evening", 21, 23) in hours
+        assert ("winter_super_off_peak", 9, 14) in hours
+
+
+def test_option_r_and_s_share_one_energy_schedule():
+    # Within each family the two options are priced identically for energy.
+    assert rates_of(B19_OPTION_R) == rates_of(B19_OPTION_S)
+    assert rates_of(B20_OPTION_R) == rates_of(B20_OPTION_S)
+
+
+def test_every_variant_records_its_source_and_version():
+    for tariff in (
+        B19_VOLUNTARY, B19_OPTION_R, B19_OPTION_S,
+        B20_OPTION_R, B20_OPTION_S,
+    ):
+        assert tariff.version == "2026-03-01"
+        assert tariff.effective_start == date(2026, 3, 1)
+        assert "ELEC_SCHEDS_B-" in tariff.source_url
+        assert tariff.export_rule.implemented is False

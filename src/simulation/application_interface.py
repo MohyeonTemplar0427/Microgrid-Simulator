@@ -18,6 +18,11 @@ from ..billing import (
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
     PGE_B20_SECONDARY_BUNDLED,
+    PGE_B19_SECONDARY_VOLUNTARY_BUNDLED,
+    PGE_B19_SECONDARY_OPTION_R_BUNDLED,
+    PGE_B19_SECONDARY_OPTION_S_BUNDLED,
+    PGE_B20_SECONDARY_OPTION_R_BUNDLED,
+    PGE_B20_SECONDARY_OPTION_S_BUNDLED,
     get_tariff,
     supported_tariffs,
 )
@@ -89,6 +94,21 @@ TARIFF_LABELS = {
     ),
     PGE_B20_SECONDARY_BUNDLED.tariff_id: (
         "PG&E B-20 — Large General TOU (Secondary)"
+    ),
+    PGE_B19_SECONDARY_VOLUNTARY_BUNDLED.tariff_id: (
+        "PG&E B-19 — Voluntary (Secondary)"
+    ),
+    PGE_B19_SECONDARY_OPTION_R_BUNDLED.tariff_id: (
+        "PG&E B-19 Option R — Renewables"
+    ),
+    PGE_B19_SECONDARY_OPTION_S_BUNDLED.tariff_id: (
+        "PG&E B-19 Option S — Storage"
+    ),
+    PGE_B20_SECONDARY_OPTION_R_BUNDLED.tariff_id: (
+        "PG&E B-20 Option R — Renewables"
+    ),
+    PGE_B20_SECONDARY_OPTION_S_BUNDLED.tariff_id: (
+        "PG&E B-20 Option S — Storage"
     ),
 }
 

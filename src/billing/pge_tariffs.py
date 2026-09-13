@@ -386,11 +386,12 @@ PGE_B19_SECONDARY_MANDATORY_BUNDLED = register_tariff(
         source_url=B19_SOURCE_URL,
         version="2026-03-01",
         notes=(
-            "Mandatory tier, secondary voltage, bundled service only. Not "
-            "modelled: Primary and Transmission voltage classes, the "
-            "reduced Voluntary-tier customer charge, Option R and Option S "
-            "(storage/renewables) rate variants, and the power-factor "
-            "adjustment. `previous_peak_kw` carryover applies only to the "
+            "Mandatory tier, secondary voltage, bundled service only. The "
+            "Voluntary tier and Options R and S are registered separately "
+            "as `pge_b19_secondary_voluntary_bundled_2026_03_01`, "
+            "`..._option_r_...` and `..._option_s_...`. Not modelled: "
+            "Primary and Transmission voltage classes, and the "
+            "power-factor adjustment. `previous_peak_kw` carryover applies only to the "
             "maximum-demand component -- the peak-period and part-peak-"
             "period components always start fresh from the supplied data, "
             "same caveat as a MAXIMUM-only tariff's first partial period."
@@ -650,14 +651,310 @@ PGE_B20_SECONDARY_BUNDLED = register_tariff(
         source_url=B20_SOURCE_URL,
         version="2026-03-01",
         notes=(
-            "Secondary voltage, bundled service only. Not modelled: Primary "
-            "and Transmission voltage classes, Option R (renewables) and "
-            "Option S (storage) rate variants, the power-factor adjustment "
+            "Secondary voltage, bundled service only. Option R and Option S "
+            "are registered separately as "
+            "`pge_b20_secondary_option_r_bundled_2026_03_01` and "
+            "`..._option_s_...`. Not modelled: Primary and Transmission "
+            "voltage classes, the power-factor adjustment "
             "($0.00005 per kWh per percent), Peak Day Pricing, Schedule SB "
             "standby charges, and the fuel-cell Generation Demand "
             "Adjustment. `previous_peak_kw` carryover applies only to the "
             "maximum-demand component -- the peak-period and part-peak-"
             "period components always start fresh from the supplied data."
+        ),
+    )
+)
+
+def _pge_large_demand_tou(
+    *,
+    tariff_id: str,
+    name: str,
+    daily_customer_charge: float,
+    maximum_demand: float,
+    peak_demand_summer: float,
+    part_peak_demand_summer: float,
+    peak_demand_winter: float,
+    summer_peak: float,
+    summer_part_peak: float,
+    summer_off_peak: float,
+    winter_peak: float,
+    winter_super_off_peak: float,
+    winter_off_peak: float,
+    source_url: str,
+    notes: str,
+) -> TariffDefinition:
+    """Build one B-19/B-20 family tariff.
+
+    Every schedule in this family shares the same TOU hours -- peak 4-9 p.m.,
+    summer part-peak 2-4 p.m. and 9-11 p.m., winter super-off-peak 9 a.m.-2
+    p.m. in March through May -- and differs only in its rates, so they are
+    built from one definition rather than transcribed separately.
+
+    Demand components priced at zero on a given schedule (Option R prices
+    winter peak-period demand at $0.00) are omitted rather than registered as
+    zero-rate components; the bill is identical either way.
+    """
+
+    demand_charges = [
+        DemandChargeComponent(
+            name="maximum_demand",
+            rate_per_kW=maximum_demand,
+            basis=DemandChargeBasis.MAXIMUM,
+        ),
+    ]
+
+    for component_name, rate, basis, season in (
+        (
+            "peak_period_demand_summer",
+            peak_demand_summer,
+            DemandChargeBasis.PEAK_PERIOD,
+            Season.SUMMER,
+        ),
+        (
+            "part_peak_period_demand_summer",
+            part_peak_demand_summer,
+            DemandChargeBasis.PART_PEAK_PERIOD,
+            Season.SUMMER,
+        ),
+        (
+            "peak_period_demand_winter",
+            peak_demand_winter,
+            DemandChargeBasis.PEAK_PERIOD,
+            Season.WINTER,
+        ),
+    ):
+        if rate > 0:
+            demand_charges.append(
+                DemandChargeComponent(
+                    name=component_name,
+                    rate_per_kW=rate,
+                    basis=basis,
+                    season=season,
+                )
+            )
+
+    return TariffDefinition(
+        tariff_id=tariff_id,
+        name=name,
+        utility="Pacific Gas and Electric",
+        effective_start=date(2026, 3, 1),
+        service_voltage_class=ServiceVoltageClass.SECONDARY,
+        customer_class=CustomerClass.COMMERCIAL,
+        service_type=ServiceType.BUNDLED,
+        season_definition=PGE_SEASONS,
+        daily_customer_charge=daily_customer_charge,
+        demand_charges=tuple(demand_charges),
+        tou_periods=(
+            TOUPeriod(
+                name="summer_peak",
+                rate_per_kWh=summer_peak,
+                start_hour=16,
+                end_hour=21,
+                season=Season.SUMMER,
+                priority=30,
+                demand_basis=DemandChargeBasis.PEAK_PERIOD,
+            ),
+            TOUPeriod(
+                name="summer_part_peak_afternoon",
+                rate_per_kWh=summer_part_peak,
+                start_hour=14,
+                end_hour=16,
+                season=Season.SUMMER,
+                priority=20,
+                demand_basis=DemandChargeBasis.PART_PEAK_PERIOD,
+            ),
+            TOUPeriod(
+                name="summer_part_peak_evening",
+                rate_per_kWh=summer_part_peak,
+                start_hour=21,
+                end_hour=23,
+                season=Season.SUMMER,
+                priority=20,
+                demand_basis=DemandChargeBasis.PART_PEAK_PERIOD,
+            ),
+            TOUPeriod(
+                name="summer_off_peak",
+                rate_per_kWh=summer_off_peak,
+                start_hour=0,
+                end_hour=0,  # full day, lowest priority
+                season=Season.SUMMER,
+                priority=0,
+            ),
+            TOUPeriod(
+                name="winter_peak",
+                rate_per_kWh=winter_peak,
+                start_hour=16,
+                end_hour=21,
+                season=Season.WINTER,
+                priority=30,
+                demand_basis=DemandChargeBasis.PEAK_PERIOD,
+            ),
+            TOUPeriod(
+                name="winter_super_off_peak",
+                rate_per_kWh=winter_super_off_peak,
+                start_hour=9,
+                end_hour=14,
+                season=Season.WINTER,
+                months=frozenset({3, 4, 5}),
+                priority=20,
+            ),
+            TOUPeriod(
+                name="winter_off_peak",
+                rate_per_kWh=winter_off_peak,
+                start_hour=0,
+                end_hour=0,  # full day, lowest priority
+                season=Season.WINTER,
+                priority=0,
+            ),
+        ),
+        export_rule=ExportCompensationRule(
+            name="not_modelled",
+            implemented=False,
+            note=(
+                "Export compensation (NEM or the Net Billing Tariff) is not "
+                "modelled. Configure an explicit fixed or CSV export price "
+                "in the surplus configuration instead."
+            ),
+        ),
+        source_url=source_url,
+        version="2026-03-01",
+        notes=notes,
+    )
+
+
+_FAMILY_NOT_MODELLED = (
+    "Secondary voltage, bundled service only. Not modelled: Primary and "
+    "Transmission voltage classes, the power-factor adjustment, Peak Day "
+    "Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover "
+    "applies only to the maximum-demand component."
+)
+
+# The Voluntary tier is the same rate schedule as Mandatory B-19 with a much
+# smaller customer charge; it is open to customers below the 500 kW threshold
+# that makes B-19 mandatory (Sheet 4).
+PGE_B19_SECONDARY_VOLUNTARY_BUNDLED = register_tariff(
+    _pge_large_demand_tou(
+        tariff_id="pge_b19_secondary_voluntary_bundled_2026_03_01",
+        name="PG&E B-19 Medium General Demand-Metered TOU Service (Voluntary)",
+        daily_customer_charge=11.36882,
+        maximum_demand=37.37,
+        peak_demand_summer=46.16,
+        part_peak_demand_summer=10.52,
+        peak_demand_winter=2.31,
+        summer_peak=0.18648,
+        summer_part_peak=0.14775,
+        summer_off_peak=0.12037,
+        winter_peak=0.16188,
+        winter_super_off_peak=0.06442,
+        winter_off_peak=0.12026,
+        source_url=B19_SOURCE_URL,
+        notes=(
+            "Voluntary tier: identical rates to Mandatory B-19 apart from the "
+            "customer charge ($11.36882 rather than $58.62824 per day). "
+            + _FAMILY_NOT_MODELLED
+        ),
+    )
+)
+
+# Option R moves cost out of demand and into energy, which suits renewable
+# customers whose output cuts energy but not necessarily the monthly peak.
+PGE_B19_SECONDARY_OPTION_R_BUNDLED = register_tariff(
+    _pge_large_demand_tou(
+        tariff_id="pge_b19_secondary_option_r_bundled_2026_03_01",
+        name="PG&E B-19 Option R (Renewables), Mandatory Tier",
+        daily_customer_charge=58.62824,
+        maximum_demand=36.61,
+        peak_demand_summer=6.50,
+        part_peak_demand_summer=1.87,
+        peak_demand_winter=0.00,  # Option R prices winter peak demand at zero
+        summer_peak=0.43568,
+        summer_part_peak=0.25184,
+        summer_off_peak=0.19137,
+        winter_peak=0.18276,
+        winter_super_off_peak=0.10462,
+        winter_off_peak=0.14044,
+        source_url=B19_SOURCE_URL,
+        notes=(
+            "Option R, mandatory-tier customer charge. Eligibility rules for "
+            "Option R enrolment are not modelled. " + _FAMILY_NOT_MODELLED
+        ),
+    )
+)
+
+# Option S cuts demand charges hard in exchange for much higher energy rates,
+# which is what makes it a storage rate. Its maximum-demand charge is printed
+# as two rows -- a voltage-dependent distribution part and a flat combined
+# transmission and reliability-services part -- which sum to the total below
+# (Sheet 11 total table, itemised on Sheet 12).
+PGE_B19_SECONDARY_OPTION_S_BUNDLED = register_tariff(
+    _pge_large_demand_tou(
+        tariff_id="pge_b19_secondary_option_s_bundled_2026_03_01",
+        name="PG&E B-19 Option S (Storage), Mandatory Tier",
+        daily_customer_charge=58.62824,
+        maximum_demand=6.35 + 9.13,
+        peak_demand_summer=1.60,
+        part_peak_demand_summer=0.08,
+        peak_demand_winter=1.22,
+        summer_peak=0.43568,
+        summer_part_peak=0.25184,
+        summer_off_peak=0.19137,
+        winter_peak=0.18276,
+        winter_super_off_peak=0.10462,
+        winter_off_peak=0.14044,
+        source_url=B19_SOURCE_URL,
+        notes=(
+            "Option S, mandatory-tier customer charge. Requires a storage "
+            "system rated at least 10 percent of the account's peak demand "
+            "over the previous twelve months, and is subject to an enrolment "
+            "cap; neither condition is modelled. " + _FAMILY_NOT_MODELLED
+        ),
+    )
+)
+
+PGE_B20_SECONDARY_OPTION_R_BUNDLED = register_tariff(
+    _pge_large_demand_tou(
+        tariff_id="pge_b20_secondary_option_r_bundled_2026_03_01",
+        name="PG&E B-20 Option R (Renewables)",
+        daily_customer_charge=107.36636,
+        maximum_demand=38.23,
+        peak_demand_summer=5.62,
+        part_peak_demand_summer=1.61,
+        peak_demand_winter=0.00,  # Option R prices winter peak demand at zero
+        summer_peak=0.40620,
+        summer_part_peak=0.22337,
+        summer_off_peak=0.16434,
+        winter_peak=0.17396,
+        winter_super_off_peak=0.09448,
+        winter_off_peak=0.13023,
+        source_url=B20_SOURCE_URL,
+        notes=(
+            "Option R. Eligibility rules for Option R enrolment are not "
+            "modelled. " + _FAMILY_NOT_MODELLED
+        ),
+    )
+)
+
+PGE_B20_SECONDARY_OPTION_S_BUNDLED = register_tariff(
+    _pge_large_demand_tou(
+        tariff_id="pge_b20_secondary_option_s_bundled_2026_03_01",
+        name="PG&E B-20 Option S (Storage)",
+        daily_customer_charge=107.36636,
+        maximum_demand=5.56 + 11.06,
+        peak_demand_summer=1.30,
+        part_peak_demand_summer=0.07,
+        peak_demand_winter=1.02,
+        summer_peak=0.40620,
+        summer_part_peak=0.22337,
+        summer_off_peak=0.16434,
+        winter_peak=0.17396,
+        winter_super_off_peak=0.09448,
+        winter_off_peak=0.13023,
+        source_url=B20_SOURCE_URL,
+        notes=(
+            "Option S. Requires a storage system rated at least 10 percent "
+            "of the account's peak demand over the previous twelve months, "
+            "and is subject to an enrolment cap; neither condition is "
+            "modelled. " + _FAMILY_NOT_MODELLED
         ),
     )
 )

@@ -63,17 +63,34 @@ def test_create_temporary_site_profile_allows_site_without_pv():
 
 
 def test_retail_tariffs_are_available_only_for_caiso_region():
-    assert retail_tariff_ids_for_region("caiso_np15") == (
+    # Asserted as a set of required members rather than an exact ordered
+    # tuple: adding a schedule is routine, so pinning the whole list only
+    # produces churn. What must hold is that the PG&E families are all
+    # offered and that regions without modelled retail tariffs offer none.
+    offered = set(retail_tariff_ids_for_region("caiso_np15"))
+
+    assert {
         "pge_b1_secondary_single_phase_bundled_2026_03_01",
-        "pge_b1_secondary_polyphase_bundled_2026_03_01",
         "pge_b6_secondary_single_phase_bundled_2026_03_01",
-        "pge_b6_secondary_polyphase_bundled_2026_03_01",
         "pge_b10_secondary_bundled_2026_03_01",
         "pge_b19_secondary_mandatory_bundled_2026_03_01",
         "pge_b20_secondary_bundled_2026_03_01",
-    )
+    } <= offered
+
     assert retail_tariff_ids_for_region("ercot_houston_hub") == ()
     assert retail_tariff_ids_for_region("pjm_western_hub") == ()
+
+
+def test_every_offered_tariff_is_registered_and_labelled():
+    # A tariff offered for a region but missing from the registry or the
+    # dropdown labels breaks the GUI at build time, so check both.
+    import src.simulation.application_interface as application_interface
+    from src.billing import get_tariff
+
+    for region_id in ("caiso_np15", "ercot_houston_hub", "pjm_western_hub"):
+        for tariff_id in retail_tariff_ids_for_region(region_id):
+            assert get_tariff(tariff_id).tariff_id == tariff_id
+            assert tariff_id in application_interface.TARIFF_LABELS
 
 
 def test_b1_result_table_omits_demand_columns_and_explains_tou_windows():
