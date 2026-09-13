@@ -58,6 +58,12 @@ class BillingPeriodResult:
     previous_peak_was_known: bool = True
     warnings: tuple[str, ...] = field(default_factory=tuple)
     demand_charge_by_component: dict[str, float] = field(default_factory=dict)
+    import_energy_kWh_by_period: dict[str, float] = field(
+        default_factory=dict
+    )
+    import_energy_charge_by_period: dict[str, float] = field(
+        default_factory=dict
+    )
 
     @property
     def total_utility_charge(self) -> float:
@@ -100,6 +106,20 @@ class BillingResult:
     @property
     def export_energy_kWh(self) -> float:
         return sum(period.export_energy_kWh for period in self.periods)
+
+    @property
+    def import_energy_kWh_by_period(self) -> dict[str, float]:
+        return _sum_period_breakdowns(
+            self.periods,
+            "import_energy_kWh_by_period",
+        )
+
+    @property
+    def import_energy_charge_by_period(self) -> dict[str, float]:
+        return _sum_period_breakdowns(
+            self.periods,
+            "import_energy_charge_by_period",
+        )
 
     @property
     def total_utility_charge(self) -> float:
@@ -253,6 +273,7 @@ def calculate_meter_billing(
         )
 
     rates = tariff.energy_rates(timestamps).to_numpy(dtype=float)
+    energy_categories = tariff.billing_categories(timestamps).to_numpy()
     seasons = tariff.season_for(timestamps).to_numpy()
     demand_basis_per_interval = tariff.demand_basis_for(timestamps).to_numpy()
     import_kw = dispatch[import_column].to_numpy(dtype=float)
@@ -296,6 +317,7 @@ def calculate_meter_billing(
         period_import_kw = import_kw[mask]
         period_export_kw = export_kw[mask]
         period_rates = rates[mask]
+        period_energy_categories = energy_categories[mask]
         period_export_rates = export_rates[mask]
 
         import_kWh = period_import_kw * timestep_hours
@@ -361,12 +383,23 @@ def calculate_meter_billing(
 
         warnings = []
 
-        if is_partial and not previous_known:
+        if is_partial and tariff.demand_charges and not previous_known:
             warnings.append(
                 f"PARTIAL BILLING PERIOD: {label} is only "
                 f"{billing_days:.2f} days and no previously established "
                 f"billing peak was supplied. The demand charge reflects only "
                 f"the simulated window; an actual bill can only be higher."
+            )
+
+        energy_kWh_by_period: dict[str, float] = {}
+        energy_charge_by_period: dict[str, float] = {}
+        for category in dict.fromkeys(period_energy_categories):
+            category_mask = period_energy_categories == category
+            energy_kWh_by_period[str(category)] = float(
+                import_kWh[category_mask].sum()
+            )
+            energy_charge_by_period[str(category)] = float(
+                (import_kWh[category_mask] * period_rates[category_mask]).sum()
             )
 
         results.append(
@@ -392,10 +425,25 @@ def calculate_meter_billing(
                 previous_peak_was_known=previous_known,
                 warnings=tuple(warnings),
                 demand_charge_by_component=demand_charge_by_component,
+                import_energy_kWh_by_period=energy_kWh_by_period,
+                import_energy_charge_by_period=energy_charge_by_period,
             )
         )
 
     return tuple(results)
+
+
+def _sum_period_breakdowns(
+    periods: tuple[BillingPeriodResult, ...],
+    attribute: str,
+) -> dict[str, float]:
+    """Sum a named energy-breakdown mapping across billing periods."""
+
+    total: dict[str, float] = {}
+    for period in periods:
+        for category, value in getattr(period, attribute).items():
+            total[category] = total.get(category, 0.0) + float(value)
+    return total
 
 
 def calculate_billing(

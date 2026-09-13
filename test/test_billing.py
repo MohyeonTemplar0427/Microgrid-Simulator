@@ -15,6 +15,10 @@ from src.billing import (
     DemandChargeBasis,
     MeterTopologyError,
     MeterTopologyMode,
+    PGE_B1_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED,
+    PGE_B6_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
     TariffError,
@@ -36,9 +40,16 @@ from src.timeseries import build_interval_index
 
 PACIFIC = "America/Los_Angeles"
 
+B6 = PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED
+B6_POLYPHASE = PGE_B6_SECONDARY_POLYPHASE_BUNDLED
 B10 = PGE_B10_SECONDARY_BUNDLED
 B19 = PGE_B19_SECONDARY_MANDATORY_BUNDLED
-TARIFFS = {B10.tariff_id: B10, B19.tariff_id: B19}
+B1_SINGLE = PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED
+B1_POLY = PGE_B1_SECONDARY_POLYPHASE_BUNDLED
+TARIFFS = {
+    tariff.tariff_id: tariff
+    for tariff in (B1_SINGLE, B1_POLY, B6, B6_POLYPHASE, B10, B19)
+}
 
 
 def rate_at(timestamp: str) -> float:
@@ -49,6 +60,55 @@ def rate_at(timestamp: str) -> float:
 def period_at(timestamp: str) -> str:
     index = pd.DatetimeIndex([pd.Timestamp(timestamp, tz=PACIFIC)])
     return B10.period_names(index).iloc[0]
+
+
+def b1_rate_at(timestamp: str) -> float:
+    index = pd.DatetimeIndex([pd.Timestamp(timestamp, tz=PACIFIC)])
+    return float(B1_POLY.energy_rates(index).iloc[0])
+
+
+## B-1 TOU mapping and billing -------------------------------------------
+
+
+def test_b1_phase_variants_have_correct_customer_charges_and_no_demand_rate():
+    assert B1_SINGLE.daily_customer_charge == pytest.approx(0.32854)
+    assert B1_POLY.daily_customer_charge == pytest.approx(0.82136)
+    assert B1_SINGLE.demand_charges == ()
+    assert B1_POLY.demand_charges == ()
+
+
+def test_b1_summer_and_winter_tou_boundaries():
+    assert b1_rate_at("2026-06-01 16:00") == pytest.approx(0.47087)
+    assert b1_rate_at("2026-06-01 21:00") == pytest.approx(0.42164)
+    assert b1_rate_at("2026-06-01 23:00") == pytest.approx(0.40083)
+    assert b1_rate_at("2026-05-31 16:00") == pytest.approx(0.39545)
+    assert b1_rate_at("2026-05-31 10:00") == pytest.approx(0.36291)
+    assert b1_rate_at("2026-01-15 10:00") == pytest.approx(0.37933)
+
+
+def test_b1_cross_season_bill_has_energy_breakdown_and_no_demand_charge():
+    index, dispatch = make_dispatch("2026-05-31", "2026-06-01", 60.0)
+
+    periods = calculate_meter_billing(
+        dispatch,
+        B1_POLY,
+        meter_id="pcc",
+        timestep_hours=index.timestep_hours,
+    )
+
+    assert len(periods) == 2
+    assert all(period.demand_charge == pytest.approx(0.0) for period in periods)
+    assert all(not period.warnings for period in periods)
+    assert periods[0].import_energy_kWh_by_period == {
+        "winter_off_peak": pytest.approx(840.0),
+        "winter_super_off_peak": pytest.approx(300.0),
+        "winter_peak": pytest.approx(300.0),
+    }
+    assert periods[1].import_energy_kWh_by_period == {
+        "summer_off_peak": pytest.approx(900.0),
+        "summer_part_peak": pytest.approx(240.0),
+        "summer_peak": pytest.approx(300.0),
+    }
 
 
 ## B-10 TOU mapping -------------------------------------------------------
@@ -853,3 +913,130 @@ def test_billing_result_frame_has_one_row_per_period():
     assert result.total_explicit_operating_cost == pytest.approx(
         result.total_utility_charge + 12.34
     )
+
+
+## B-6 TOU mapping -------------------------------------------------------
+
+
+def b6_rate_at(timestamp: str) -> float:
+    index = pd.DatetimeIndex([pd.Timestamp(timestamp, tz=PACIFIC)])
+    return float(B6.energy_rates(index).iloc[0])
+
+
+def b6_period_at(timestamp: str) -> str:
+    index = pd.DatetimeIndex([pd.Timestamp(timestamp, tz=PACIFIC)])
+    return B6.period_names(index).iloc[0]
+
+
+def test_b6_summer_rates():
+    # Peak is 4-9 p.m. every day, including weekends and holidays.
+    assert b6_rate_at("2026-07-15 16:00") == pytest.approx(0.64253)
+    assert b6_rate_at("2026-07-15 20:59") == pytest.approx(0.64253)
+    # Saturday and Sunday are priced the same as a weekday.
+    assert b6_rate_at("2026-07-18 17:00") == pytest.approx(0.64253)
+    assert b6_rate_at("2026-07-19 17:00") == pytest.approx(0.64253)
+    # Everything else is off-peak; B-6 summer has no part-peak block at all.
+    assert b6_rate_at("2026-07-15 15:59") == pytest.approx(0.38491)
+    assert b6_rate_at("2026-07-15 21:00") == pytest.approx(0.38491)
+    assert b6_rate_at("2026-07-15 03:00") == pytest.approx(0.38491)
+
+
+def test_b6_winter_rates():
+    assert b6_rate_at("2026-01-15 17:00") == pytest.approx(0.39584)
+    assert b6_rate_at("2026-01-15 03:00") == pytest.approx(0.35225)
+    # No part-peak in winter either.
+    assert b6_rate_at("2026-01-15 15:00") == pytest.approx(0.35225)
+
+
+def test_b6_super_off_peak_only_in_march_april_may():
+    for month in ("03", "04", "05"):
+        assert b6_rate_at(f"2026-{month}-15 10:00") == pytest.approx(0.31617)
+        assert b6_rate_at(f"2026-{month}-15 13:59") == pytest.approx(0.31617)
+
+    # Same hour in another winter month is ordinary off-peak.
+    assert b6_rate_at("2026-01-15 10:00") == pytest.approx(0.35225)
+    assert b6_rate_at("2026-11-15 10:00") == pytest.approx(0.35225)
+    # The window is 9 a.m. to 2 p.m.
+    assert b6_rate_at("2026-04-15 08:59") == pytest.approx(0.35225)
+    assert b6_rate_at("2026-04-15 14:00") == pytest.approx(0.35225)
+
+
+def test_b6_season_boundaries():
+    assert b6_rate_at("2026-06-01 17:00") == pytest.approx(0.64253)
+    assert b6_rate_at("2026-09-30 17:00") == pytest.approx(0.64253)
+    assert b6_rate_at("2026-05-31 17:00") == pytest.approx(0.39584)
+    assert b6_rate_at("2026-10-01 17:00") == pytest.approx(0.39584)
+
+
+def test_b6_period_names():
+    assert b6_period_at("2026-07-15 17:00") == "summer_peak"
+    assert b6_period_at("2026-07-15 03:00") == "summer_off_peak"
+    assert b6_period_at("2026-01-15 17:00") == "winter_peak"
+    assert b6_period_at("2026-04-15 10:00") == "winter_super_off_peak"
+
+
+def test_b6_has_no_demand_charge():
+    # The defining difference from B-10 and B-19: energy and customer
+    # charges only, so a bill never depends on the monthly peak.
+    assert B6.demand_charges == ()
+    assert B6_POLYPHASE.demand_charges == ()
+
+
+def test_b6_metadata():
+    assert B6.service_voltage_class == ServiceVoltageClass.SECONDARY
+    assert B6.version == "2026-03-01"
+    assert B6.effective_start == date(2026, 3, 1)
+    assert "ELEC_SCHEDS_B-6" in B6.source_url
+    assert B6.daily_customer_charge == pytest.approx(0.32854)
+    assert B6_POLYPHASE.daily_customer_charge == pytest.approx(0.82136)
+
+
+def test_b6_phase_variants_share_one_energy_schedule():
+    # Single-phase and polyphase differ only in the daily customer charge.
+    index = pd.date_range(
+        "2026-01-01", "2026-12-31 23:00", freq="h", tz=PACIFIC
+    )
+
+    assert B6.energy_rates(index).equals(B6_POLYPHASE.energy_rates(index))
+    assert B6.tariff_id != B6_POLYPHASE.tariff_id
+
+
+def test_b6_export_compensation_is_not_modelled():
+    assert B6.export_rule.implemented is False
+    assert "not modelled" in B6.export_rule.note
+
+
+def test_b6_bill_is_energy_plus_customer_charge_only():
+    index, dispatch = make_dispatch("2026-07-01", "2026-07-31", 100.0)
+
+    periods = calculate_meter_billing(
+        dispatch,
+        B6,
+        meter_id="pcc",
+        timestep_hours=index.timestep_hours,
+    )
+
+    assert len(periods) == 1
+    period = periods[0]
+
+    # July 2026: 31 days, 5 peak hours per day at 100 kW.
+    peak_kWh = 100.0 * 5 * 31
+    off_peak_kWh = 100.0 * 24 * 31 - peak_kWh
+
+    expected_energy = peak_kWh * 0.64253 + off_peak_kWh * 0.38491
+
+    assert period.import_energy_charge == pytest.approx(expected_energy)
+    assert period.customer_charge == pytest.approx(0.32854 * 31)
+    assert period.demand_charge == pytest.approx(0.0)
+    assert period.total_utility_charge == pytest.approx(
+        expected_energy + 0.32854 * 31
+    )
+
+
+def test_b6_peak_to_off_peak_spread_exceeds_b10():
+    # B-6 carries its whole price signal in the energy spread because it has
+    # no demand charge, so the summer spread must be the wider of the two.
+    b6_spread = 0.64253 - 0.38491
+    b10_spread = 0.33947 - 0.24522
+
+    assert b6_spread > b10_spread

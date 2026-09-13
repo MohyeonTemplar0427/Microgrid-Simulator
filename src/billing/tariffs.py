@@ -79,6 +79,7 @@ class TOUPeriod:
     months: frozenset[int] = frozenset()
     priority: int = 0
     demand_basis: DemandChargeBasis | None = None
+    billing_category: str | None = None
 
     def __post_init__(self) -> None:
         if self.rate_per_kWh < 0:
@@ -299,6 +300,16 @@ class TariffDefinition:
             period.name: period.demand_basis for period in self.tou_periods
         }
         return names.map(basis_by_name)
+
+    def billing_categories(self, timestamps: pd.DatetimeIndex) -> pd.Series:
+        """Return stable categories used to group bill-detail energy rows."""
+
+        names = self.period_names(timestamps)
+        category_by_name = {
+            period.name: period.billing_category or period.name
+            for period in self.tou_periods
+        }
+        return names.map(category_by_name)
 
     def customer_charge_for(self, billing_days: float) -> float:
         """Customer charge for one meter over ``billing_days`` days."""

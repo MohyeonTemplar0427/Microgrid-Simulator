@@ -386,3 +386,26 @@ def test_results_export_contains_results_parameters_and_warnings():
     assert exported.loc[0, "input_load_power_or_peak_kw"] == 250.0
     assert exported.loc[0, "analysis_warnings"] == "Partial billing period"
     assert "internal_debug_value" not in exported.columns
+
+
+def test_b1_results_export_omits_non_applicable_demand_columns():
+    import pandas as pd
+
+    comparison = pd.DataFrame(
+        {
+            "scenario": ["no_battery"],
+            "total_explicit_cost": [100.0],
+            "energy_cost": [98.0],
+            "demand_charge": [0.0],
+            "billed_peak_kw": [60.0],
+            "peak_grid_import_kw": [60.0],
+            "customer_charge": [2.0],
+            "tariff_has_demand_charge": [False],
+        }
+    )
+
+    exported = build_results_export_table(comparison, {})
+
+    assert "demand_charge" not in exported.columns
+    assert "billed_peak_kw" not in exported.columns
+    assert "peak_grid_import_kw" in exported.columns

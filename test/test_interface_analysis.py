@@ -64,11 +64,33 @@ def test_create_temporary_site_profile_allows_site_without_pv():
 
 def test_retail_tariffs_are_available_only_for_caiso_region():
     assert retail_tariff_ids_for_region("caiso_np15") == (
+        "pge_b1_secondary_single_phase_bundled_2026_03_01",
+        "pge_b1_secondary_polyphase_bundled_2026_03_01",
+        "pge_b6_secondary_single_phase_bundled_2026_03_01",
+        "pge_b6_secondary_polyphase_bundled_2026_03_01",
         "pge_b10_secondary_bundled_2026_03_01",
         "pge_b19_secondary_mandatory_bundled_2026_03_01",
     )
     assert retail_tariff_ids_for_region("ercot_houston_hub") == ()
     assert retail_tariff_ids_for_region("pjm_western_hub") == ()
+
+
+def test_b1_result_table_omits_demand_columns_and_explains_tou_windows():
+    comparison = _comparison().iloc[:1].copy()
+    comparison["tariff_has_demand_charge"] = False
+    comparison["demand_charge"] = 0.0
+    comparison["billed_peak_kw"] = 60.0
+    comparison["peak_grid_import_kw"] = 60.0
+    comparison["summer_peak_energy_kWh"] = 300.0
+    comparison["summer_peak_energy_charge"] = 141.261
+
+    headings, _rows = build_results_table(comparison)
+
+    assert "Demand charge ($)" not in headings
+    assert "Billed peak (kW)" not in headings
+    assert "Peak import (kW)" in headings
+    assert "Summer peak energy, 4–9 p.m. (kWh)" in headings
+    assert "Summer peak charge, 4–9 p.m. ($)" in headings
 
 
 def test_run_integrated_csv_analysis_filters_and_names_scenarios(
@@ -269,6 +291,51 @@ def test_tariff_billing_adds_customer_and_demand_charges():
     assert any("PARTIAL BILLING PERIOD" in warning for warning in warnings)
 
 
+def test_b1_billing_has_no_demand_charge_and_flags_threshold_month():
+    timestamps = pd.date_range(
+        "2026-06-01",
+        periods=4,
+        freq="15min",
+        tz="America/Los_Angeles",
+    )
+    dispatch = pd.DataFrame(
+        {
+            "timestamp": timestamps,
+            "grid_import_kw": [80.0] * 4,
+            "grid_export_kw": [0.0] * 4,
+        }
+    )
+    comparison = pd.DataFrame(
+        {
+            "scenario": ["no_battery"],
+            "carbon_weight": [0.2],
+            "degradation_cost": [0.0],
+            "total_explicit_cost": [0.0],
+        }
+    )
+    run = SimpleNamespace(dispatch_scenarios={"no_battery": dispatch})
+
+    billed, warnings = _apply_tariff_billing(
+        comparison,
+        {0.2: run},
+        first_weight=0.2,
+        tariff_id="pge_b1_secondary_polyphase_bundled_2026_03_01",
+        meter_topology_mode="single_pcc",
+        submeter_count=1,
+        previous_peak_kw=None,
+        timestep_hours=0.25,
+    )
+
+    assert billed.loc[0, "demand_charge"] == pytest.approx(0.0)
+    assert not bool(billed.loc[0, "tariff_has_demand_charge"])
+    assert billed.loc[0, "summer_off_peak_energy_kWh"] == pytest.approx(80.0)
+    assert any("Demand charges are omitted" in note for note in warnings)
+    assert any(
+        "Fewer than three consecutive" in warning
+        for warning in warnings
+    )
+
+
 def test_build_results_table_uses_readable_headings():
     comparison = _comparison().copy()
     comparison["pcc_grid_import_energy_kWh"] = 100.12345
@@ -426,3 +493,168 @@ def test_live_regional_analysis_reaches_opendss_results(
             0.20
         ].dispatch_scenarios.values()
     )
+
+
+def test_b6_is_offered_and_labelled_in_the_gui():
+    import src.simulation.application_interface as application_interface
+
+    single = "pge_b6_secondary_single_phase_bundled_2026_03_01"
+    poly = "pge_b6_secondary_polyphase_bundled_2026_03_01"
+
+    assert single in application_interface.TARIFF_LABELS
+    assert poly in application_interface.TARIFF_LABELS
+    assert "B-6" in application_interface.TARIFF_LABELS[single]
+    # Every offered tariff needs a label or the dropdown build raises.
+    for tariff_id in retail_tariff_ids_for_region("caiso_np15"):
+        assert tariff_id in application_interface.TARIFF_LABELS
+
+
+def test_integrated_csv_analysis_bills_against_the_selected_tariff(tmp_path):
+    csv_path = _write_small_signal_csv(tmp_path)
+
+    unbilled = run_integrated_csv_analysis(
+        _small_specification(),
+        csv_path,
+        start_date="2026-08-01",
+        number_of_days=1,
+        timestep_minutes=15,
+        expected_timezone="America/Los_Angeles",
+        selected_scenarios=("no_battery",),
+        carbon_weights=(0.20,),
+        degradation_cost_per_kWh=0.03,
+    )
+
+    billed = run_integrated_csv_analysis(
+        _small_specification(),
+        csv_path,
+        start_date="2026-08-01",
+        number_of_days=1,
+        timestep_minutes=15,
+        expected_timezone="America/Los_Angeles",
+        selected_scenarios=("no_battery",),
+        carbon_weights=(0.20,),
+        degradation_cost_per_kWh=0.03,
+        tariff_id="pge_b6_secondary_single_phase_bundled_2026_03_01",
+    )
+
+    # Without a tariff the CSV path produces no utility bill at all.
+    assert "total_utility_charge" not in unbilled.comparison.columns
+    assert "total_utility_charge" in billed.comparison.columns
+
+    # B-6 carries no demand charge, and one day of customer charge.
+    assert billed.comparison["demand_charge"].eq(0.0).all()
+    assert billed.comparison["customer_charge"].iloc[0] == pytest.approx(
+        0.32854
+    )
+
+
+def test_integrated_csv_billing_flags_the_two_price_bases(tmp_path):
+    csv_path = _write_small_signal_csv(tmp_path)
+
+    result = run_integrated_csv_analysis(
+        _small_specification(),
+        csv_path,
+        start_date="2026-08-01",
+        number_of_days=1,
+        timestep_minutes=15,
+        expected_timezone="America/Los_Angeles",
+        selected_scenarios=("no_battery",),
+        carbon_weights=(0.20,),
+        degradation_cost_per_kWh=0.03,
+        tariff_id="pge_b6_secondary_single_phase_bundled_2026_03_01",
+    )
+
+    assert any("price bases" in w or "own prices" in w for w in result.warnings)
+
+
+def test_b6_warns_when_the_simulated_peak_exceeds_its_eligibility_ceiling(
+    tmp_path,
+):
+    # 300 kW of load is far above the 75 kW ceiling B-6 is available at.
+    csv_path = _write_small_signal_csv(tmp_path, load_kw=300.0)
+
+    result = run_integrated_csv_analysis(
+        MicrogridSpecification(
+            battery=Battery(
+                capacity_kWh=60.0,
+                energy_kWh=30.0,
+                max_charge_kw=20.0,
+                max_discharge_kw=20.0,
+            ),
+            pv_capacity_kw=25.0,
+            load_kw=300.0,
+        ),
+        csv_path,
+        start_date="2026-08-01",
+        number_of_days=1,
+        timestep_minutes=15,
+        expected_timezone="America/Los_Angeles",
+        selected_scenarios=("no_battery",),
+        carbon_weights=(0.20,),
+        degradation_cost_per_kWh=0.03,
+        tariff_id="pge_b6_secondary_single_phase_bundled_2026_03_01",
+    )
+
+    assert any("75 kW ceiling" in warning for warning in result.warnings)
+
+    # B-10's ceiling is 499 kW, so the same peak raises no eligibility warning.
+    b10_result = run_integrated_csv_analysis(
+        MicrogridSpecification(
+            battery=Battery(
+                capacity_kWh=60.0,
+                energy_kWh=30.0,
+                max_charge_kw=20.0,
+                max_discharge_kw=20.0,
+            ),
+            pv_capacity_kw=25.0,
+            load_kw=300.0,
+        ),
+        csv_path,
+        start_date="2026-08-01",
+        number_of_days=1,
+        timestep_minutes=15,
+        expected_timezone="America/Los_Angeles",
+        selected_scenarios=("no_battery",),
+        carbon_weights=(0.20,),
+        degradation_cost_per_kWh=0.03,
+        tariff_id="pge_b10_secondary_bundled_2026_03_01",
+    )
+
+    assert not any("ceiling" in warning for warning in b10_result.warnings)
+
+
+def _small_specification() -> MicrogridSpecification:
+    return MicrogridSpecification(
+        battery=Battery(
+            capacity_kWh=60.0,
+            energy_kWh=30.0,
+            max_charge_kw=20.0,
+            max_discharge_kw=20.0,
+        ),
+        pv_capacity_kw=25.0,
+        load_kw=55.0,
+    )
+
+
+def _write_small_signal_csv(tmp_path, load_kw: float = 40.0) -> str:
+    timestamps = pd.date_range(
+        "2026-08-01 00:00",
+        periods=96,
+        freq="15min",
+        tz="America/Los_Angeles",
+    )
+
+    frame = pd.DataFrame(
+        {
+            "timestamp": timestamps,
+            "load_kw": load_kw,
+            "pv_kw": 0.0,
+            "price_per_kWh": 0.30,
+            "gCO2/kWh": 300.0,
+            "net_load_kw": load_kw,
+        }
+    )
+
+    path = tmp_path / "signal.csv"
+    frame.to_csv(path, index=False)
+    return str(path)

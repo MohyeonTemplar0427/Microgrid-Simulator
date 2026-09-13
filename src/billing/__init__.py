@@ -23,6 +23,10 @@ from .meter_topology import (
     single_pcc_topology,
 )
 from .pge_tariffs import (
+    PGE_B1_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED,
+    PGE_B6_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
     default_commercial_tariff,
@@ -56,6 +60,10 @@ __all__ = [
     "MeterTopology",
     "MeterTopologyError",
     "MeterTopologyMode",
+    "PGE_B1_SECONDARY_POLYPHASE_BUNDLED",
+    "PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED",
+    "PGE_B6_SECONDARY_POLYPHASE_BUNDLED",
+    "PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED",
     "PGE_B10_SECONDARY_BUNDLED",
     "PGE_B19_SECONDARY_MANDATORY_BUNDLED",
     "Season",

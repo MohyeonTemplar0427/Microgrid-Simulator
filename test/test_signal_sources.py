@@ -723,6 +723,36 @@ def test_live_api_loader_joins_site_profile_with_market_signals(monkeypatch):
     assert data["gCO2/kWh"].eq(300.0).all()
 
 
+def test_live_loader_can_use_explicit_carbon_fallback_without_api(monkeypatch):
+    horizon = make_horizon()
+    config = resolve_live_api_config("caiso_np15")
+    site_profile = pd.DataFrame(
+        {
+            "timestamp": horizon.index,
+            "load_kw": 10.0,
+            "pv_kw": 2.0,
+        }
+    )
+
+    def unexpected_fetch(*args, **kwargs):
+        raise AssertionError("Carbon API should not be called")
+
+    monkeypatch.setattr(
+        "src.signal_pipeline.signal_loader.emd.get_multi_day_carbon_data",
+        unexpected_fetch,
+    )
+
+    data = load_signal_data(
+        config,
+        horizon,
+        site_profile=site_profile,
+        price_source=FixedRetailPrice(price_per_kWh=0.2),
+        carbon_fallback_gCO2_per_kWh=300.0,
+    )
+
+    assert data["gCO2/kWh"].eq(300.0).all()
+
+
 def test_live_api_loader_reuses_cached_provider_signals(
     monkeypatch,
     tmp_path,

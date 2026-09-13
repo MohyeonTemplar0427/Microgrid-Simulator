@@ -59,6 +59,7 @@ def load_signal_data(
     price_source: PriceSource | None = None,
     integrated_data: pd.DataFrame | None = None,
     carbon_api_key: str | None = None,
+    carbon_fallback_gCO2_per_kWh: float | None = None,
     cache_directory: str | Path | None = None,
 ) -> pd.DataFrame:
     """Return the integrated signal frame for one analysis.
@@ -88,6 +89,9 @@ def load_signal_data(
             site_profile=site_profile,
             price_source=price_source,
             carbon_api_key=carbon_api_key,
+            carbon_fallback_gCO2_per_kWh=(
+                carbon_fallback_gCO2_per_kWh
+            ),
             cache_directory=cache_directory,
         )
 
@@ -133,6 +137,7 @@ def _load_from_live_api(
     site_profile: pd.DataFrame | None,
     price_source: PriceSource | None,
     carbon_api_key: str | None,
+    carbon_fallback_gCO2_per_kWh: float | None,
     cache_directory: str | Path | None,
 ) -> pd.DataFrame:
 
@@ -177,6 +182,7 @@ def _load_from_live_api(
         horizon,
         carbon_api_key,
         cache_path,
+        fallback_gCO2_per_kWh=carbon_fallback_gCO2_per_kWh,
     )
 
     merged = profile.merge(prices, on="timestamp", how="inner")
@@ -234,6 +240,8 @@ def _load_carbon_intensity(
     horizon: AnalysisHorizon,
     carbon_api_key: str | None,
     cache_directory: Path | None,
+    *,
+    fallback_gCO2_per_kWh: float | None = None,
 ) -> pd.DataFrame:
     """Load carbon intensity from cache, falling back to the provider."""
 
@@ -252,6 +260,19 @@ def _load_carbon_intensity(
 
     if cached is not None:
         return cached
+
+    if not carbon_api_key and fallback_gCO2_per_kWh is not None:
+        fallback = float(fallback_gCO2_per_kWh)
+        if fallback < 0:
+            raise SignalLoaderError(
+                "Fallback carbon intensity must not be negative."
+            )
+        return pd.DataFrame(
+            {
+                "timestamp": horizon.index,
+                "gCO2/kWh": fallback,
+            }
+        )
 
     carbon = _fetch_carbon(config, horizon, carbon_api_key)
     _write_cached_signal(cache_directory, cache_key, carbon)

@@ -11,8 +11,13 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 from ..billing import (
+    PGE_B1_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED,
+    PGE_B6_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
+    get_tariff,
     supported_tariffs,
 )
 from ..signal_pipeline.price_sources import PRICE_MODES
@@ -63,6 +68,18 @@ PRICE_MODE_LABELS = {
 }
 
 TARIFF_LABELS = {
+    PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id: (
+        "PG&E B-1 — Secondary Single-Phase Bundled"
+    ),
+    PGE_B1_SECONDARY_POLYPHASE_BUNDLED.tariff_id: (
+        "PG&E B-1 — Secondary Polyphase Bundled"
+    ),
+    PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id: (
+        "PG&E B-6 — Small General TOU (Single-Phase)"
+    ),
+    PGE_B6_SECONDARY_POLYPHASE_BUNDLED.tariff_id: (
+        "PG&E B-6 — Small General TOU (Polyphase)"
+    ),
     PGE_B10_SECONDARY_BUNDLED.tariff_id: (
         "PG&E B-10 — Secondary Bundled"
     ),
@@ -101,7 +118,7 @@ GUI_PREFERENCES_PATH = (
     / ".cache"
     / "gui_preferences.json"
 )
-GUI_PREFERENCES_VERSION = 1
+GUI_PREFERENCES_VERSION = 2
 
 
 class MicrogridApplication:
@@ -115,7 +132,9 @@ class MicrogridApplication:
 
         self.values = self._create_variables()
         self.strategy_values = {
-            name: tk.BooleanVar(value=True)
+            name: tk.BooleanVar(
+                value=name in {"no_battery", "cost_optimal"}
+            )
             for name in STRATEGY_LABELS
         }
         self.preferences_path = GUI_PREFERENCES_PATH
@@ -159,8 +178,8 @@ class MicrogridApplication:
             "source_mode": tk.StringVar(value="live_api"),
             "region_id": tk.StringVar(value=first_region),
             "signal_csv_path": tk.StringVar(),
-            "start_date": tk.StringVar(value="2026-08-01"),
-            "end_date_inclusive": tk.StringVar(value="2026-08-31"),
+            "start_date": tk.StringVar(value="2026-05-31"),
+            "end_date_inclusive": tk.StringVar(value="2026-06-01"),
             "timestep_minutes": tk.StringVar(value="15"),
             "price_mode": tk.StringVar(value="time_of_use"),
             "fixed_retail_price": tk.StringVar(value="0.20"),
@@ -177,17 +196,17 @@ class MicrogridApplication:
             "carbon_weight_end": tk.StringVar(value="0.50"),
             "carbon_weight_interval": tk.StringVar(value="0.10"),
             "degradation_cost": tk.StringVar(value="0.03"),
-            "battery_capacity": tk.StringVar(value="400"),
-            "battery_initial_energy": tk.StringVar(value="200"),
-            "battery_max_charge": tk.StringVar(value="100"),
-            "battery_max_discharge": tk.StringVar(value="100"),
-            "pv_capacity": tk.StringVar(value="0"),
-            "load_power": tk.StringVar(value="250"),
+            "battery_capacity": tk.StringVar(value="100"),
+            "battery_initial_energy": tk.StringVar(value="50"),
+            "battery_max_charge": tk.StringVar(value="10"),
+            "battery_max_discharge": tk.StringVar(value="10"),
+            "pv_capacity": tk.StringVar(value="20"),
+            "load_power": tk.StringVar(value="60"),
             "load_profile_mode": tk.StringVar(value="constant"),
             "load_archetype": tk.StringVar(value="multifamily"),
             "load_variability": tk.StringVar(value="0.00"),
             "tariff_id": tk.StringVar(
-                value=PGE_B10_SECONDARY_BUNDLED.tariff_id
+                value=PGE_B1_SECONDARY_POLYPHASE_BUNDLED.tariff_id
             ),
             "meter_topology_mode": tk.StringVar(value="single_pcc"),
             "submeter_count": tk.StringVar(value="30"),
@@ -379,6 +398,10 @@ class MicrogridApplication:
             tuple(supported_tariffs()),
             9,
             option_labels=TARIFF_LABELS,
+        )
+        self.tariff_combobox.bind(
+            "<<ComboboxSelected>>",
+            self._update_price_controls,
         )
         self.meter_topology_combobox = self._add_combobox(
             source_tab,
@@ -999,7 +1022,13 @@ class MicrogridApplication:
         csv_state = "normal" if live and mode == "csv" else "disabled"
         self.price_csv_entry.configure(state=csv_state)
         self.price_csv_button.configure(state=csv_state)
-        tariff_active = live and mode == "time_of_use" and bool(tariff_ids)
+        # The tariff bills the run, so it applies whenever a schedule is
+        # available: on the live path only when prices come from the
+        # tariff itself, and on the integrated-CSV path always (the CSV
+        # supplies dispatch prices, the tariff supplies the bill).
+        tariff_active = bool(tariff_ids) and (
+            not live or mode == "time_of_use"
+        )
         tariff_state = "readonly" if tariff_active else "disabled"
         self.tariff_combobox.configure(state=tariff_state)
         self.meter_topology_combobox.configure(state=tariff_state)
@@ -1011,13 +1040,25 @@ class MicrogridApplication:
         self.submeter_count_entry.configure(
             state="normal" if master_meter else "disabled"
         )
+        selected_tariff_id = str(self.values["tariff_id"].get())
+        tariff_has_demand_charge = (
+            tariff_active
+            and bool(get_tariff(selected_tariff_id).demand_charges)
+        )
         self.previous_peak_entry.configure(
-            state="normal" if tariff_active else "disabled"
+            state="normal" if tariff_has_demand_charge else "disabled"
         )
         if live and not tariff_ids:
             explanation = (
                 "No retail tariff is implemented for this region. Select "
                 "wholesale market, fixed retail, or CSV pricing."
+            )
+        elif tariff_active and not tariff_has_demand_charge:
+            explanation = (
+                "Standard B-1 has TOU energy and customer charges but no "
+                "demand charge. Peak import is still shown for operating "
+                "analysis and the 75 kW eligibility review. B1-ST is a "
+                "separate storage tariff and is not modelled here."
             )
         else:
             explanation = (
@@ -1252,6 +1293,13 @@ class MicrogridApplication:
                 if previous_peak_text
                 else None
             )
+            selected_tariff_id = str(self.values["tariff_id"].get())
+            if (
+                price_mode == "time_of_use"
+                and selected_tariff_id
+                and not get_tariff(selected_tariff_id).demand_charges
+            ):
+                previous_peak_kw = None
             if previous_peak_kw is not None and previous_peak_kw < 0:
                 raise ValueError(
                     "Earlier billing-month peak must not be negative."
@@ -1313,6 +1361,12 @@ class MicrogridApplication:
                 **common_arguments,
                 "csv_path": str(self.values["signal_csv_path"].get()),
                 "expected_timezone": str(self.values["timezone"].get()),
+                "tariff_id": str(self.values["tariff_id"].get()) or None,
+                "meter_topology_mode": str(
+                    self.values["meter_topology_mode"].get()
+                ),
+                "submeter_count": submeter_count,
+                "previous_peak_kw": previous_peak_kw,
             }
         else:
             worker_kind = "live_api"
@@ -1906,7 +1960,12 @@ def build_review_rows(
         topology_label = METER_TOPOLOGY_LABELS[meter_topology_mode]
         if meter_topology_mode == "master_with_submeters":
             topology_label += f" ({submeter_count} submeters)"
-        prior_peak_label = previous_peak_kw.strip() or "Unknown"
+        if get_tariff(tariff_id).demand_charges:
+            prior_peak_label = (
+                f"{previous_peak_kw.strip() or 'Unknown'} kW"
+            )
+        else:
+            prior_peak_label = "Not applicable — no demand charge"
     else:
         topology_label = "Not used"
         prior_peak_label = "Not used"
@@ -1942,7 +2001,7 @@ def build_review_rows(
         (
             "Billing",
             "Earlier monthly peak",
-            f"{prior_peak_label} kW" if tariff_active else prior_peak_label,
+            prior_peak_label,
         ),
         (
             "Strategies",
@@ -2069,10 +2128,19 @@ def build_results_export_table(
 ):
     """Build a self-describing scenario table for CSV export."""
 
+    hide_demand_columns = (
+        "tariff_has_demand_charge" in comparison.columns
+        and not comparison["tariff_has_demand_charge"].astype(bool).any()
+    )
+    hidden_columns = (
+        {"demand_charge", "billed_peak_kw"}
+        if hide_demand_columns
+        else set()
+    )
     result_columns = [
         column
         for column, _label in RESULT_TABLE_COLUMNS
-        if column in comparison.columns
+        if column in comparison.columns and column not in hidden_columns
     ]
     export_table = comparison[result_columns].copy()
 

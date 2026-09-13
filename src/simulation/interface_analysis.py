@@ -12,6 +12,10 @@ from dotenv import find_dotenv, load_dotenv
 
 from ..analysis.carbon_weights import build_scenario_name
 from ..billing import (
+    PGE_B1_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED,
+    PGE_B6_SECONDARY_POLYPHASE_BUNDLED,
+    PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
     calculate_billing,
@@ -50,9 +54,23 @@ DEFAULT_SIGNAL_CACHE_DIRECTORY = (
 
 REGION_RETAIL_TARIFF_IDS = {
     "caiso_np15": (
+        PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id,
+        PGE_B1_SECONDARY_POLYPHASE_BUNDLED.tariff_id,
+        PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id,
+        PGE_B6_SECONDARY_POLYPHASE_BUNDLED.tariff_id,
         PGE_B10_SECONDARY_BUNDLED.tariff_id,
         PGE_B19_SECONDARY_MANDATORY_BUNDLED.tariff_id,
     ),
+}
+
+# Maximum demand a schedule stays available at, in kW. PG&E reviews
+# eligibility against the highest demand reached in three consecutive
+# months of the latest twelve; a simulated peak above the ceiling means
+# the modelled bill is for a plan the account could not remain on.
+TARIFF_ELIGIBILITY_CEILING_KW = {
+    PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id: 75.0,
+    PGE_B6_SECONDARY_POLYPHASE_BUNDLED.tariff_id: 75.0,
+    PGE_B10_SECONDARY_BUNDLED.tariff_id: 499.0,
 }
 
 
@@ -120,9 +138,18 @@ def run_integrated_csv_analysis(
     selected_scenarios: tuple[str, ...],
     carbon_weights: tuple[float, ...],
     degradation_cost_per_kWh: float,
+    tariff_id: str | None = None,
+    meter_topology_mode: str = "single_pcc",
+    submeter_count: int = 1,
+    previous_peak_kw: float | None = None,
     progress_callback: Callable[[str], None] | None = None,
 ) -> InterfaceAnalysisResult:
-    """Run selected scenarios using one integrated signal CSV file."""
+    """Run selected scenarios using one integrated signal CSV file.
+
+    Passing ``tariff_id`` bills the run against that retail schedule,
+    exactly as the live-API path does. Left as ``None`` the comparison
+    carries only the CSV's own energy prices and no utility bill.
+    """
 
     path = Path(csv_path)
 
@@ -156,7 +183,7 @@ def run_integrated_csv_analysis(
         else (carbon_weights[0],)
     )
 
-    return _run_selected_signal_analysis(
+    result = _run_selected_signal_analysis(
         specification,
         signal_data,
         start_date=start_date,
@@ -166,7 +193,31 @@ def run_integrated_csv_analysis(
         selected_scenarios=selected_scenarios,
         carbon_weights=weights_to_run,
         degradation_cost_per_kWh=degradation_cost_per_kWh,
+        tariff_id=tariff_id,
+        meter_topology_mode=meter_topology_mode,
+        submeter_count=submeter_count,
+        previous_peak_kw=previous_peak_kw,
         progress_callback=progress_callback,
+    )
+
+    if tariff_id is None:
+        return result
+
+    # On the live path with time-of-use pricing the optimizer and the bill
+    # read the same tariff. Here they need not agree, so say so rather than
+    # let the two price bases pass unnoticed.
+    price_basis_note = (
+        "Dispatch was optimized against the price column in the integrated "
+        "CSV, while the charges shown are billed at this tariff's rates. The "
+        "two agree only when the CSV carries the tariff's own prices."
+    )
+
+    return InterfaceAnalysisResult(
+        comparison=result.comparison,
+        runs_by_carbon_weight=result.runs_by_carbon_weight,
+        warnings=tuple(
+            dict.fromkeys(result.warnings + (price_basis_note,))
+        ),
     )
 
 
@@ -243,6 +294,20 @@ def run_live_api_analysis(
 
     load_dotenv(find_dotenv(), override=False)
     carbon_api_key = os.getenv("ELECTRICITY_MAPS_API_KEY")
+    carbon_sensitive_scenarios = {
+        "carbon_optimal",
+        "combined_optimal",
+    }
+    needs_real_carbon = bool(
+        carbon_sensitive_scenarios.intersection(selected_scenarios)
+    )
+    if needs_real_carbon and not carbon_api_key:
+        raise ValueError(
+            "Carbon or combined optimization requires an "
+            "ELECTRICITY_MAPS_API_KEY. Configure the key or select only "
+            "the no-battery, rule-based, and cost-optimal scenarios."
+        )
+    fallback_carbon = 300.0 if not carbon_api_key else None
 
     if progress_callback is not None:
         progress_callback("Loading cached signals or retrieving provider data")
@@ -253,6 +318,7 @@ def run_live_api_analysis(
         site_profile=site_profile,
         price_source=price_source,
         carbon_api_key=carbon_api_key,
+        carbon_fallback_gCO2_per_kWh=fallback_carbon,
         cache_directory=DEFAULT_SIGNAL_CACHE_DIRECTORY,
     )
 
@@ -262,7 +328,7 @@ def run_live_api_analysis(
         else (carbon_weights[0],)
     )
 
-    return _run_selected_signal_analysis(
+    result = _run_selected_signal_analysis(
         specification,
         signal_data,
         start_date=horizon.start.isoformat(),
@@ -278,6 +344,18 @@ def run_live_api_analysis(
         previous_peak_kw=previous_peak_kw,
         progress_callback=progress_callback,
     )
+    if fallback_carbon is not None:
+        result.warnings = tuple(
+            dict.fromkeys(
+                (
+                    *result.warnings,
+                    "Carbon intensity is illustrative at 300 gCO₂/kWh "
+                    "because no Electricity Maps key is configured. Cost "
+                    "optimization and B-1 billing are unaffected.",
+                )
+            )
+        )
+    return result
 
 
 def create_temporary_site_profile(
@@ -595,7 +673,15 @@ def _apply_tariff_billing(
         )
 
     billed = comparison.copy()
+    billed["tariff_has_demand_charge"] = bool(tariff.demand_charges)
     warnings: list[str] = []
+
+    if not tariff.demand_charges:
+        warnings.append(
+            "Demand charges are omitted because standard PG&E B-1 has no "
+            "demand charge. Peak import remains an operating and tariff-"
+            "eligibility metric."
+        )
 
     for row_index, row in billed.iterrows():
         display_name = str(row["scenario"])
@@ -630,9 +716,63 @@ def _apply_tariff_billing(
             (period.billed_peak_kw for period in billing.periods),
             default=0.0,
         )
+        if not tariff.demand_charges:
+            for category, energy_kWh in (
+                billing.import_energy_kWh_by_period.items()
+            ):
+                billed.loc[
+                    row_index,
+                    f"{category}_energy_kWh",
+                ] = energy_kWh
+            for category, energy_charge in (
+                billing.import_energy_charge_by_period.items()
+            ):
+                billed.loc[
+                    row_index,
+                    f"{category}_energy_charge",
+                ] = energy_charge
+            b1_periods_at_or_above_threshold = {
+                pd.Period(period.period_label, freq="M")
+                for period in billing.periods
+                if period.simulated_peak_kw >= 75.0
+            }
+            if any(
+                period + 1 in b1_periods_at_or_above_threshold
+                and period + 2 in b1_periods_at_or_above_threshold
+                for period in b1_periods_at_or_above_threshold
+            ):
+                warnings.append(
+                    f"B-1 ELIGIBILITY: {display_name} reaches at least "
+                    "75 kW in three consecutive simulated months. Standard "
+                    "B-1 would generally no longer be eligible; confirm the "
+                    "account's latest 12 months of utility demand history."
+                )
+            elif b1_periods_at_or_above_threshold:
+                months = ", ".join(
+                    str(period)
+                    for period in sorted(b1_periods_at_or_above_threshold)
+                )
+                warnings.append(
+                    f"B-1 ELIGIBILITY CHECK: {display_name} reaches at "
+                    f"least 75 kW in {months}. Fewer than three consecutive "
+                    "simulated months does not establish reassignment; PG&E "
+                    "reviews three consecutive months in the latest 12 "
+                    "months."
+                )
         warnings.extend(billing.warnings)
         for period in billing.periods:
             warnings.extend(period.warnings)
+
+    ceiling_kw = TARIFF_ELIGIBILITY_CEILING_KW.get(tariff_id)
+    if ceiling_kw is not None:
+        highest_peak_kw = float(billed["billed_peak_kw"].max())
+        if highest_peak_kw > ceiling_kw:
+            warnings.append(
+                f"Simulated peak demand reaches {highest_peak_kw:,.1f} kW, above the "
+                f"{ceiling_kw:,.0f} kW ceiling for {tariff_id}. PG&E would move this "
+                "account to another schedule, so the charges shown are for a rate "
+                "plan it could not remain on."
+            )
 
     return billed, warnings
 
@@ -680,6 +820,54 @@ RESULT_TABLE_COLUMNS = (
     ("scenario", "Scenario"),
     ("total_explicit_cost", "Total cost ($)"),
     ("energy_cost", "Energy cost ($)"),
+    (
+        "summer_peak_energy_kWh",
+        "Summer peak energy, 4–9 p.m. (kWh)",
+    ),
+    (
+        "summer_peak_energy_charge",
+        "Summer peak charge, 4–9 p.m. ($)",
+    ),
+    (
+        "summer_part_peak_energy_kWh",
+        "Summer part-peak energy, 2–4 & 9–11 p.m. (kWh)",
+    ),
+    (
+        "summer_part_peak_energy_charge",
+        "Summer part-peak charge, 2–4 & 9–11 p.m. ($)",
+    ),
+    (
+        "summer_off_peak_energy_kWh",
+        "Summer off-peak energy, remaining hours (kWh)",
+    ),
+    (
+        "summer_off_peak_energy_charge",
+        "Summer off-peak charge, remaining hours ($)",
+    ),
+    (
+        "winter_peak_energy_kWh",
+        "Winter peak energy, 4–9 p.m. (kWh)",
+    ),
+    (
+        "winter_peak_energy_charge",
+        "Winter peak charge, 4–9 p.m. ($)",
+    ),
+    (
+        "winter_super_off_peak_energy_kWh",
+        "Winter super off-peak energy, Mar–May 9 a.m.–2 p.m. (kWh)",
+    ),
+    (
+        "winter_super_off_peak_energy_charge",
+        "Winter super off-peak charge, Mar–May 9 a.m.–2 p.m. ($)",
+    ),
+    (
+        "winter_off_peak_energy_kWh",
+        "Winter off-peak energy, remaining hours (kWh)",
+    ),
+    (
+        "winter_off_peak_energy_charge",
+        "Winter off-peak charge, remaining hours ($)",
+    ),
     ("demand_charge", "Demand charge ($)"),
     ("peak_grid_import_kw", "Peak import (kW)"),
     ("billed_peak_kw", "Billed peak (kW)"),
@@ -704,10 +892,19 @@ def build_results_table(
 ) -> tuple[tuple[str, ...], list[tuple[str, ...]]]:
     """Convert a comparison frame into user-facing table headings and rows."""
 
+    hide_demand_columns = (
+        "tariff_has_demand_charge" in comparison.columns
+        and not comparison["tariff_has_demand_charge"].astype(bool).any()
+    )
+    hidden_columns = (
+        {"demand_charge", "billed_peak_kw"}
+        if hide_demand_columns
+        else set()
+    )
     displayed_columns = tuple(
         (column, label)
         for column, label in RESULT_TABLE_COLUMNS
-        if column in comparison.columns
+        if column in comparison.columns and column not in hidden_columns
     )
     headings = tuple(label for _, label in displayed_columns)
     rows: list[tuple[str, ...]] = []
