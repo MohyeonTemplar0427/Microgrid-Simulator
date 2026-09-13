@@ -189,9 +189,9 @@ def require_pv_within_rating(
     if rated_pv_capacity_kw is None or PV_AVAILABLE_KW not in data.columns:
         return
 
-    if rated_pv_capacity_kw <= 0:
+    if rated_pv_capacity_kw < 0:
         raise IntervalTableError(
-            f"Rated PV capacity must be positive; received "
+            f"Rated PV capacity must not be negative; received "
             f"{rated_pv_capacity_kw}."
         )
 

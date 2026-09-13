@@ -122,9 +122,9 @@ def add_replay_resources(
 )-> None:
     """Add the PV system and battery used for dispatch replay"""
 
-    if pv_capacity_kw <= 0:
+    if pv_capacity_kw < 0:
         raise ValueError(
-            "PV capacity must be positive."
+            "PV capacity must not be negative."
         )
 
     if not isinstance(battery, Battery):
@@ -155,19 +155,20 @@ def add_replay_resources(
         battery.discharge_efficiency * 100.0
     )
 
-    dss.Text.Command(
-        "New PVSystem.RooftopPV "
-        "bus1=load_bus.1.2.3 "
-        "phases=3 "
-        "conn=wye "
-        "kv=0.48 "
-        f"kVA={pv_capacity_kw} "
-        f"Pmpp={pv_capacity_kw} "
-        "irradiance=0 "
-        "pf=1.0 "
-        "%CutIn=0 "
-        "%CutOut=0"
-    )
+    if pv_capacity_kw > 0:
+        dss.Text.Command(
+            "New PVSystem.RooftopPV "
+            "bus1=load_bus.1.2.3 "
+            "phases=3 "
+            "conn=wye "
+            "kv=0.48 "
+            f"kVA={pv_capacity_kw} "
+            f"Pmpp={pv_capacity_kw} "
+            "irradiance=0 "
+            "pf=1.0 "
+            "%CutIn=0 "
+            "%CutOut=0"
+        )
 
     dss.Text.Command(
         "New Storage.Battery "
@@ -447,11 +448,13 @@ def apply_dispatch_operating_point(
             "Battery Energy must be between zero and capacity."
         )
     
-    # irradiance is effectively a normalized solar availability
-    # value because OpenDSS defines 1.0 as the reference irradiance of 1kW/m^2
-    # Temperature derating or inverter efficiency curve will be 
-    # introduced for later use
-    pv_irradiance = pv_kw / pv_rated_kw
+    if pv_rated_kw < 0:
+        raise ValueError("PV rating must not be negative.")
+
+    # Irradiance is effectively a normalized solar availability value because
+    # OpenDSS defines 1.0 as the reference irradiance of 1 kW/m^2. A zero
+    # rating represents a site where no PV system is installed.
+    pv_irradiance = pv_kw / pv_rated_kw if pv_rated_kw > 0 else None
 
     battery_soc_percent = (
         battery_soc_kWh
@@ -472,10 +475,11 @@ def apply_dispatch_operating_point(
         f"kW={load_kw}"
     )
 
-    dss.Text.Command(
-        "Edit PVSystem.RooftopPV "
-        f"irradiance={pv_irradiance}"
-    )
+    if pv_irradiance is not None:
+        dss.Text.Command(
+            "Edit PVSystem.RooftopPV "
+            f"irradiance={pv_irradiance}"
+        )
 
     dss.Text.Command(
         "Edit Storage.Battery "

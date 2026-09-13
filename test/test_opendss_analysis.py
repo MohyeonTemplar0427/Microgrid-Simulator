@@ -415,6 +415,21 @@ def test_add_replay_resources_creates_pv_and_battery(
 
     assert dss.Solution.Converged()
 
+
+def test_add_replay_resources_omits_pv_when_capacity_is_zero(
+    replay_battery: Battery,
+):
+    create_base_circuit()
+
+    add_replay_resources(
+        battery=replay_battery,
+        pv_capacity_kw=0.0,
+    )
+
+    assert not dss.PVsystems.AllNames()
+    assert dss.Storages.AllNames() == ["battery"]
+    assert dss.Solution.Converged()
+
 def test_apply_dispatch_operating_point_uses_real_dispatch_row(
     replay_battery: Battery,
 ):

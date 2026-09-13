@@ -44,6 +44,23 @@ def _comparison() -> pd.DataFrame:
     )
 
 
+def test_create_temporary_site_profile_allows_site_without_pv():
+    horizon = build_horizon(
+        "2026-08-25",
+        1,
+        "America/Los_Angeles",
+        15,
+    )
+
+    profile = create_temporary_site_profile(
+        horizon,
+        load_kw=250.0,
+        pv_capacity_kw=0.0,
+    )
+
+    assert profile["pv_kw"].eq(0.0).all()
+
+
 def test_run_integrated_csv_analysis_filters_and_names_scenarios(
     monkeypatch,
     tmp_path,

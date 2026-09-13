@@ -68,9 +68,9 @@ class SyntheticPV(PVProfileSource):
     is_synthetic = True
 
     def __post_init__(self) -> None:
-        if self.rated_pv_capacity_kw <= 0:
+        if self.rated_pv_capacity_kw < 0:
             raise PVSourceError(
-                f"Rated PV capacity must be positive; received "
+                f"Rated PV capacity must not be negative; received "
                 f"{self.rated_pv_capacity_kw}."
             )
 
@@ -191,9 +191,9 @@ class CSVCapacityFactorPV(PVProfileSource):
     mode = PVSourceMode.CSV_CAPACITY_FACTOR
 
     def __post_init__(self) -> None:
-        if self.rated_pv_capacity_kw <= 0:
+        if self.rated_pv_capacity_kw < 0:
             raise PVSourceError(
-                f"Rated PV capacity must be positive; received "
+                f"Rated PV capacity must not be negative; received "
                 f"{self.rated_pv_capacity_kw}."
             )
 
@@ -275,8 +275,8 @@ class WeatherDerivedPVConfiguration:
                 f"{self.longitude}."
             )
 
-        if self.rated_pv_capacity_kw <= 0:
-            raise PVSourceError("Rated PV capacity must be positive.")
+        if self.rated_pv_capacity_kw < 0:
+            raise PVSourceError("Rated PV capacity must not be negative.")
 
         if not 0 <= self.tilt_degrees <= 90:
             raise PVSourceError(

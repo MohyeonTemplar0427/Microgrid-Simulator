@@ -84,9 +84,9 @@ def replay_required_dispatch_scenarios(
             "battery must be a Battery object."
         )
 
-    if pv_capacity_kw <= 0:
+    if pv_capacity_kw < 0:
         raise ValueError(
-            "PV capacity must be positive."
+            "PV capacity must not be negative."
         )
 
     if not dispatch_scenarios:

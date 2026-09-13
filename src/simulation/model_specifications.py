@@ -17,9 +17,9 @@ class MicrogridSpecification:
                 "battery must be a Battery object"
             )
 
-        if self.pv_capacity_kw <= 0:
+        if self.pv_capacity_kw < 0:
             raise ValueError(
-                "PV capacity must be positive."
+                "PV capacity must not be negative."
             )
 
         if self.load_kw < 0:

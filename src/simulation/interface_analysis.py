@@ -267,8 +267,8 @@ def create_temporary_site_profile(
     if load_kw < 0:
         raise ValueError("Temporary profile load must not be negative.")
 
-    if pv_capacity_kw <= 0:
-        raise ValueError("Temporary profile PV capacity must be positive.")
+    if pv_capacity_kw < 0:
+        raise ValueError("Temporary profile PV capacity must not be negative.")
 
     pv_values = []
 

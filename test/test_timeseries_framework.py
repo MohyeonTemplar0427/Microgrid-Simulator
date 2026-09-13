@@ -497,9 +497,17 @@ def test_synthetic_pv_is_zero_at_night_and_peaks_at_midday():
     assert SyntheticPV(rated_pv_capacity_kw=10.0).is_synthetic is True
 
 
-def test_synthetic_pv_rejects_nonpositive_rating():
+def test_synthetic_pv_allows_zero_rating_for_site_without_pv():
+    values = SyntheticPV(
+        rated_pv_capacity_kw=0.0
+    ).build_pv_available_kw(make_index())
+
+    assert values.eq(0.0).all()
+
+
+def test_synthetic_pv_rejects_negative_rating():
     with pytest.raises(PVSourceError):
-        SyntheticPV(rated_pv_capacity_kw=0.0)
+        SyntheticPV(rated_pv_capacity_kw=-1.0)
 
 
 def test_csv_pv_power_unit_conversion():
