@@ -18,6 +18,7 @@ from ..billing import (
     PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
+    PGE_B20_SECONDARY_BUNDLED,
     calculate_billing,
     get_tariff,
     master_with_submeters_topology,
@@ -60,6 +61,7 @@ REGION_RETAIL_TARIFF_IDS = {
         PGE_B6_SECONDARY_POLYPHASE_BUNDLED.tariff_id,
         PGE_B10_SECONDARY_BUNDLED.tariff_id,
         PGE_B19_SECONDARY_MANDATORY_BUNDLED.tariff_id,
+        PGE_B20_SECONDARY_BUNDLED.tariff_id,
     ),
 }
 
@@ -71,6 +73,14 @@ TARIFF_ELIGIBILITY_CEILING_KW = {
     PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id: 75.0,
     PGE_B6_SECONDARY_POLYPHASE_BUNDLED.tariff_id: 75.0,
     PGE_B10_SECONDARY_BUNDLED.tariff_id: 499.0,
+}
+
+# Minimum demand a schedule requires, in kW. B-20 is only available once the
+# account has exceeded 999 kW for three consecutive months, so a simulated
+# peak below the floor means the modelled bill -- including a customer charge
+# of roughly $3,200 a month -- is for a plan the account could not be on.
+TARIFF_ELIGIBILITY_FLOOR_KW = {
+    PGE_B20_SECONDARY_BUNDLED.tariff_id: 1000.0,
 }
 
 
@@ -762,6 +772,17 @@ def _apply_tariff_billing(
         warnings.extend(billing.warnings)
         for period in billing.periods:
             warnings.extend(period.warnings)
+
+    floor_kw = TARIFF_ELIGIBILITY_FLOOR_KW.get(tariff_id)
+    if floor_kw is not None:
+        highest_peak_kw = float(billed["billed_peak_kw"].max())
+        if highest_peak_kw < floor_kw:
+            warnings.append(
+                f"Simulated peak demand only reaches {highest_peak_kw:,.1f} kW, "
+                f"below the {floor_kw:,.0f} kW minimum for {tariff_id}. PG&E "
+                "would place this account on a smaller schedule, so the "
+                "charges shown are for a rate plan it could not be on."
+            )
 
     ceiling_kw = TARIFF_ELIGIBILITY_CEILING_KW.get(tariff_id)
     if ceiling_kw is not None:

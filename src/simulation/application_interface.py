@@ -17,6 +17,7 @@ from ..billing import (
     PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
+    PGE_B20_SECONDARY_BUNDLED,
     get_tariff,
     supported_tariffs,
 )
@@ -85,6 +86,9 @@ TARIFF_LABELS = {
     ),
     PGE_B19_SECONDARY_MANDATORY_BUNDLED.tariff_id: (
         "PG&E B-19 — Secondary Mandatory Bundled"
+    ),
+    PGE_B20_SECONDARY_BUNDLED.tariff_id: (
+        "PG&E B-20 — Large General TOU (Secondary)"
     ),
 }
 

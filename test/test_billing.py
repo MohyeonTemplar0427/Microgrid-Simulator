@@ -21,6 +21,7 @@ from src.billing import (
     PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
+    PGE_B20_SECONDARY_BUNDLED,
     TariffError,
     allocate_shared_generation,
     calculate_billing,
@@ -44,11 +45,12 @@ B6 = PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED
 B6_POLYPHASE = PGE_B6_SECONDARY_POLYPHASE_BUNDLED
 B10 = PGE_B10_SECONDARY_BUNDLED
 B19 = PGE_B19_SECONDARY_MANDATORY_BUNDLED
+B20 = PGE_B20_SECONDARY_BUNDLED
 B1_SINGLE = PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED
 B1_POLY = PGE_B1_SECONDARY_POLYPHASE_BUNDLED
 TARIFFS = {
     tariff.tariff_id: tariff
-    for tariff in (B1_SINGLE, B1_POLY, B6, B6_POLYPHASE, B10, B19)
+    for tariff in (B1_SINGLE, B1_POLY, B6, B6_POLYPHASE, B10, B19, B20)
 }
 
 
@@ -1040,3 +1042,108 @@ def test_b6_peak_to_off_peak_spread_exceeds_b10():
     b10_spread = 0.33947 - 0.24522
 
     assert b6_spread > b10_spread
+
+
+## B-20 ------------------------------------------------------------------
+
+
+def b20_rate_at(timestamp: str) -> float:
+    index = pd.DatetimeIndex([pd.Timestamp(timestamp, tz=PACIFIC)])
+    return float(B20.energy_rates(index).iloc[0])
+
+
+def test_b20_summer_rates():
+    assert b20_rate_at("2026-07-15 17:00") == pytest.approx(0.17702)
+    # Part-peak: 2-4 p.m. and 9-11 p.m., same windows as B-10 and B-19.
+    assert b20_rate_at("2026-07-15 14:00") == pytest.approx(0.14227)
+    assert b20_rate_at("2026-07-15 22:59") == pytest.approx(0.14227)
+    assert b20_rate_at("2026-07-15 03:00") == pytest.approx(0.11482)
+    assert b20_rate_at("2026-07-15 23:00") == pytest.approx(0.11482)
+
+
+def test_b20_winter_rates():
+    assert b20_rate_at("2026-01-15 17:00") == pytest.approx(0.15632)
+    assert b20_rate_at("2026-01-15 03:00") == pytest.approx(0.11460)
+    # Winter has no part-peak block.
+    assert b20_rate_at("2026-01-15 15:00") == pytest.approx(0.11460)
+    # Super off-peak only in March, April and May.
+    assert b20_rate_at("2026-04-15 10:00") == pytest.approx(0.05872)
+    assert b20_rate_at("2026-01-15 10:00") == pytest.approx(0.11460)
+
+
+def test_b20_bills_four_demand_components():
+    names = {component.name for component in B20.demand_charges}
+
+    assert names == {
+        "maximum_demand",
+        "peak_period_demand_summer",
+        "part_peak_period_demand_summer",
+        "peak_period_demand_winter",
+    }
+
+    rates = {c.name: c.rate_per_kW for c in B20.demand_charges}
+    assert rates["maximum_demand"] == pytest.approx(39.08)
+    assert rates["peak_period_demand_summer"] == pytest.approx(41.35)
+    assert rates["part_peak_period_demand_summer"] == pytest.approx(9.27)
+    assert rates["peak_period_demand_winter"] == pytest.approx(2.32)
+
+
+def test_b20_maximum_demand_is_seasonless():
+    # PG&E lists Maximum Demand once per season at the same $39.08. Modelling
+    # it as one season-less component keeps callers that total the
+    # maximum-demand rate from double counting it at $78.16/kW.
+    maximum_components = [
+        component
+        for component in B20.demand_charges
+        if component.basis == DemandChargeBasis.MAXIMUM
+    ]
+
+    assert len(maximum_components) == 1
+    assert maximum_components[0].season is None
+
+
+def test_b20_metadata():
+    assert B20.service_voltage_class == ServiceVoltageClass.SECONDARY
+    assert B20.version == "2026-03-01"
+    assert B20.effective_start == date(2026, 3, 1)
+    assert "ELEC_SCHEDS_B-20" in B20.source_url
+    assert B20.daily_customer_charge == pytest.approx(107.36636)
+
+
+def test_b20_energy_spread_is_the_narrowest_of_the_implemented_tariffs():
+    # The larger the schedule, the more of the price signal sits in demand
+    # and fixed charges rather than the energy spread.
+    def summer_spread(tariff):
+        rates = {p.name: p.rate_per_kWh for p in tariff.tou_periods}
+        return rates["summer_peak"] - rates["summer_off_peak"]
+
+    assert summer_spread(B20) < summer_spread(B19) < summer_spread(B10)
+    assert summer_spread(B10) < summer_spread(B6)
+
+    # And the fixed charge runs the other way.
+    assert (
+        B6.daily_customer_charge
+        < B10.daily_customer_charge
+        < B19.daily_customer_charge
+        < B20.daily_customer_charge
+    )
+
+
+def test_b20_summer_bill_applies_peak_and_maximum_demand_together():
+    index, dispatch = make_dispatch("2026-07-01", "2026-07-31", 1200.0)
+
+    periods = calculate_meter_billing(
+        dispatch,
+        B20,
+        meter_id="pcc",
+        timestep_hours=index.timestep_hours,
+    )
+
+    assert len(periods) == 1
+    period = periods[0]
+
+    # Flat 1200 kW: the maximum and the peak-period peak are both 1200 kW,
+    # and summer bills maximum + peak-period + part-peak-period together.
+    expected_demand = 1200.0 * (39.08 + 41.35 + 9.27)
+    assert period.demand_charge == pytest.approx(expected_demand)
+    assert period.customer_charge == pytest.approx(107.36636 * 31)

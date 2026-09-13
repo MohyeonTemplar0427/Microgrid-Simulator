@@ -70,6 +70,7 @@ def test_retail_tariffs_are_available_only_for_caiso_region():
         "pge_b6_secondary_polyphase_bundled_2026_03_01",
         "pge_b10_secondary_bundled_2026_03_01",
         "pge_b19_secondary_mandatory_bundled_2026_03_01",
+        "pge_b20_secondary_bundled_2026_03_01",
     )
     assert retail_tariff_ids_for_region("ercot_houston_hub") == ()
     assert retail_tariff_ids_for_region("pjm_western_hub") == ()
@@ -658,3 +659,53 @@ def _write_small_signal_csv(tmp_path, load_kw: float = 40.0) -> str:
     path = tmp_path / "signal.csv"
     frame.to_csv(path, index=False)
     return str(path)
+
+
+def test_b20_warns_when_the_simulated_peak_is_below_its_eligibility_floor(
+    tmp_path,
+):
+    # B-20 is only available once demand exceeds 999 kW; 40 kW is far below.
+    csv_path = _write_small_signal_csv(tmp_path, load_kw=40.0)
+
+    result = run_integrated_csv_analysis(
+        _small_specification(),
+        csv_path,
+        start_date="2026-08-01",
+        number_of_days=1,
+        timestep_minutes=15,
+        expected_timezone="America/Los_Angeles",
+        selected_scenarios=("no_battery",),
+        carbon_weights=(0.20,),
+        degradation_cost_per_kWh=0.03,
+        tariff_id="pge_b20_secondary_bundled_2026_03_01",
+    )
+
+    assert any("1,000 kW minimum" in warning for warning in result.warnings)
+
+
+def test_b20_raises_no_eligibility_warning_for_a_large_enough_site(tmp_path):
+    csv_path = _write_small_signal_csv(tmp_path, load_kw=1500.0)
+
+    result = run_integrated_csv_analysis(
+        MicrogridSpecification(
+            battery=Battery(
+                capacity_kWh=60.0,
+                energy_kWh=30.0,
+                max_charge_kw=20.0,
+                max_discharge_kw=20.0,
+            ),
+            pv_capacity_kw=25.0,
+            load_kw=1500.0,
+        ),
+        csv_path,
+        start_date="2026-08-01",
+        number_of_days=1,
+        timestep_minutes=15,
+        expected_timezone="America/Los_Angeles",
+        selected_scenarios=("no_battery",),
+        carbon_weights=(0.20,),
+        degradation_cost_per_kWh=0.03,
+        tariff_id="pge_b20_secondary_bundled_2026_03_01",
+    )
+
+    assert not any("minimum" in warning for warning in result.warnings)

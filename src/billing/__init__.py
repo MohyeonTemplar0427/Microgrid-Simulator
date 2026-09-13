@@ -29,6 +29,7 @@ from .pge_tariffs import (
     PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED,
     PGE_B10_SECONDARY_BUNDLED,
     PGE_B19_SECONDARY_MANDATORY_BUNDLED,
+    PGE_B20_SECONDARY_BUNDLED,
     default_commercial_tariff,
 )
 from .tariffs import (
@@ -66,6 +67,7 @@ __all__ = [
     "PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED",
     "PGE_B10_SECONDARY_BUNDLED",
     "PGE_B19_SECONDARY_MANDATORY_BUNDLED",
+    "PGE_B20_SECONDARY_BUNDLED",
     "Season",
     "SeasonDefinition",
     "ServiceType",
