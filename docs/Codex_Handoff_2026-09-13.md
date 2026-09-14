@@ -1,200 +1,164 @@
-# Codex handoff — microgrid backend
+# Codex handoff — end of 2026-09-13
 
-Written 2026-09-13. Last code change was 2026-09-11 22:31 (`0bc5048`).
-Working tree clean, `main`, **423 tests passing**.
+Supersedes the morning version of this file. `main` is at `01fdcb6`, working
+tree clean, **469 tests passing**.
 
-Read this first, then
-[docs/Microgrid_Backend_Architecture.md](Microgrid_Backend_Architecture.md)
-before touching anything under `src/`. The architecture doc records decisions
-you cannot infer from the code; this file records current state and open work.
-
----
-
-## 1. Environment
-
-```bash
-/usr/local/bin/python3 -m pytest -q
-```
-
-**Use `/usr/local/bin/python3`, not `.venv/bin/python`.** The venv lacks
-`opendssdirect` and `mysql-connector`, so 9 test files fail to *collect* there
-and the suite looks broken when it isn't. The venv has `gridstatusio`, which
-the system Python lacks — that only matters for the GridStatus.io adapter,
-which imports it lazily.
-
-Baseline is **423 passing** in ~6s. Fewer collected means wrong interpreter,
-not a real failure. Check that before debugging anything.
-
-Secrets live in `src/.env` (gitignored): `ELECTRICITY_MAPS_API_KEY`,
-`GRIDSTATUS_API_KEY`, `PJM_API_KEY`. Never print, echo, or commit them.
-**Tests must never call live APIs — mock the client.**
+Read [CLAUDE.md](../CLAUDE.md) first, then
+[Microgrid_Backend_Architecture.md](Microgrid_Backend_Architecture.md) before
+touching the backend. This file covers what changed today and how the two
+agents should divide tomorrow's work.
 
 ---
 
-## 2. Layer map
+## 1. What landed today
 
-Data flows strictly downward. No layer imports from one below it.
+Five commits. Two agents worked in parallel and their changes were merged
+into `76e172f`.
 
-```
-timeseries  →  profiles  →  surplus  →  billing
-     (normalized interval table, then load/PV sources,
-      then allocation + power balance, then tariffs/charges)
+**Optimizer made ~40x faster.** The constraint loops in
+`run_cost_optimization`, `run_carbon_optimization` and
+`run_combined_optimization` built two scalar cvxpy constraints per interval
+(5,766 objects at 2880 intervals). They are now two array constraints each.
+A 30-day, 5-scenario run went **16.2s -> 1.15s**; 90 days now solves in
+~0.5s. Verified bit-identical: 18 runs across four horizons plus
+demand-charge and zero-PV cases, worst difference across every numeric
+column `0.000e+00`.
 
-signal_pipeline (market + carbon providers)  ┐
-dispatch (optimizer, scenarios)              ├→ simulation (Tkinter GUI)
-opendss (QSTS replay, validation)            ┘
-```
+**All PG&E business plans implemented** — twelve tariffs, up from two:
 
-Public surface of the four backend layers, as exported today:
-
-| Layer | Key exports |
+| | schedules |
 |---|---|
-| `src/timeseries` | `NormalizedIntervalTable`, `IntervalIndex`, `build_interval_index`, `build_interval_index_from_days`, `normalize_any_frame`, `to_legacy_columns`, `from_legacy_columns`, `align_to_index`, `convert_to_kw`, `validate_interval_table`, `MissingDataPolicy`, `PowerUnit` |
-| `src/profiles` | `LoadProfileSource` / `PVProfileSource` base types; `CSVLoad`, `ConstantLoad`, `SyntheticLoad`, `BuildingArchetype`, `LoadScaling`; `CSVPowerPV`, `CSVCapacityFactorPV`, `SyntheticPV`; plus three *deliberately unimplemented* adapters (§6) |
-| `src/surplus` | `allocate_surplus`, `SurplusConfiguration`, `default_surplus_configuration`, `GridExportCapability`, `FlexibleLoadCapability`, `ExportCompensationMode`, `validate_power_balance`, `validate_no_simultaneity` |
-| `src/billing` | `calculate_billing`, `calculate_meter_billing`, `calculate_demand_peak`, `calculate_flat_demand_charge`, `assign_billing_periods`, `allocate_shared_generation`; `TariffDefinition`, `get_tariff`, `register_tariff`, `supported_tariffs`, `PGE_B10_SECONDARY_BUNDLED`, `PGE_B19_SECONDARY_MANDATORY_BUNDLED`; four topology builders (`single_pcc_topology`, `master_with_submeters_topology`, `individual_meters_topology`, `shared_generation_topology`) |
+| B-1 | single-phase, polyphase (Codex) |
+| B-6 | single-phase, polyphase |
+| B-10 | secondary |
+| B-19 | mandatory, voluntary, Option R, Option S |
+| B-20 | secondary, Option R, Option S |
+
+All secondary voltage, bundled, effective 2026-03-01 (Advice 7846-E).
+
+**Every rate re-validated against the source PDFs** by scraping the sheets
+programmatically and diffing against the registry — 34 energy/customer
+values and 9 demand values. No discrepancies. Structural decisions confirmed
+against source too: seasonal maximum demand collapsed to one component
+(B-10/B-19/B-20 all print summer and winter at identical rates), B-1
+correctly excludes the B1-ST column, B-6 genuinely has no part-peak block.
+
+**Tariffs reachable from the GUI.** `run_integrated_csv_analysis` now
+accepts `tariff_id`, so the offline CSV path bills; previously the tariff
+dropdown was disabled in that mode and the tariff was ignored entirely.
+
+**Two eligibility guards.** A ceiling (B-6/B-1 under 75 kW, B-10 under
+499 kW) and a floor (B-20 at 1,000 kW) warn when a simulated peak means the
+modelled bill is for a plan the account could not be on. Plus a warning that
+on the CSV path the optimizer prices against the CSV column while the bill
+uses tariff rates — they agree only if the CSV carries the tariff's rates.
+
+**Generated tariff documentation.**
+[PGE_Tariff_Reference.md](PGE_Tariff_Reference.md) — every period rate,
+demand component, eligibility band and source URL for all twelve schedules,
+produced by `tools/generate_tariff_reference.py` from the registry. It
+refuses to run if a registered tariff is missing from its display order.
+**Regenerate it rather than editing it.**
+
+**Default GUI parameters.** `gui_preferences.json` (gitignored, machine
+local) plus two datasets under `data/` — a 254 kW site for B-10 and a 54 kW
+site for B-6. Offline, no API keys, runs in 0.33s.
+
+### Corrections to beliefs that were previously recorded
+
+- **Demand-charge-aware optimization is implemented**, contrary to the old
+  CLAUDE.md entry. `_build_monthly_demand_charge_cost` puts
+  `cp.max(grid_import_kw[month])` in the objective and it works — peak
+  228 -> 113.5 kW under B-10.
+- **`_maximum_demand_rate` understating the rate costs almost nothing.**
+  It passes only `MAXIMUM`-basis components ($39.08 on B-20 rather than the
+  $80.43 a summer peak-hour kW really costs), but peak shaving *saturates*:
+  once the rate justifies shaving at all, the battery shaves to its physical
+  limit and the exact rate stops mattering. It changes the answer only for
+  batteries oversized relative to load (10,000 kWh+ on a 1,320 kW peak),
+  worth ~19 kW there. Lower priority than it first appeared. The real
+  limitation is that one blended rate is applied to the *monthly* maximum,
+  so the optimizer cannot tell "shave the 4pm peak" from "shave the 3am
+  peak".
 
 ---
 
-## 3. Conventions that are silent and costly to violate
+## 2. State
 
-These three cause wrong numbers with no error. They are the most common way
-to break this codebase.
-
-1. **Never compute intervals as `days * 96`.** DST days have 92 or 100
-   intervals. Interval counts always come from the generated index
-   (`build_interval_index` / `build_interval_index_from_days`).
-
-2. **Use `pd.DateOffset(days=n)`, never `pd.Timedelta(days=n)`** for calendar
-   arithmetic. `Timedelta` adds exactly 24h and drifts an hour across a DST
-   boundary.
-
-3. **Never sum demand charges across intervals.** Demand is one peak per
-   billing month. Summing per-interval demand charges inflates the bill by
-   roughly the interval count.
-
-Two more from the architecture doc:
-
-4. **PV-first allocation.** PV serves load before anything else; battery and
-   export see only the residual. Don't reorder this.
-5. **Tariffs are versioned data, not code.** Rates carry effective dates and a
-   `source_url`. Add a new dated version; do not edit an existing one in place.
-
-Date ranges from the GUI are **inclusive**; the interval index is
-**exclusive** at the end. The conversion happens once, at the boundary —
-don't apply it twice.
+- `main` @ `01fdcb6`, clean, **469 tests**, suite runs in ~2.7s
+- The stale Codex worktree at `~/.codex/worktrees/7d67/` was **deleted**. It
+  had a corrupted `core.worktree` pointing at `.git/modules`, which made
+  `git status` there report every tracked file as deleted. If a worktree's
+  status looks impossible, check
+  `git -C <path> rev-parse --show-toplevel` before believing it.
+- `gui_preferences.json` is now gitignored and untracked; the local copy
+  still drives the GUI.
 
 ---
 
-## 4. What landed on 2026-09-11
+## 3. Tomorrow — two lanes, split by file ownership
 
-Five commits, ~8,000 lines, 45 files. Summary so you don't have to read the
-whole diff:
+Today both agents edited the same six files and the merge had to be done by
+hand with `git merge-file --diff3`. The split below is by **file
+ownership**, not by feature, so that cannot recur.
 
-- `d30274c` — `GridStatusIOProvider` (`src/signal_pipeline/providers/gridstatus_io.py`),
-  registered in `region_config.py` and the providers registry. This is the
-  workaround for the blocked PJM key (§7).
-- `f0d9e27` — the four backend layers above, all created at once, each with
-  tests; plus the 276-line architecture doc.
-- `98c0849` — `.gitignore` only.
-- `1fb3e80` — GUI CSV export: "Export Results CSV" button, integrated-CSV vs
-  live-API mode switching, `run_integrated_csv_analysis`; matching plumbing in
-  `interface_analysis.py`, `single_day_analysis.py`, `dispatch/config.py`,
-  `market_data_integration.py`.
-- `0bc5048` — PG&E B-19 (`PGE_B19_SECONDARY_MANDATORY_BUNDLED`) with source
-  URL and 105 lines of new billing tests.
+### Lane A — backend depth
+**Owns:** `src/surplus/`, `src/billing/`, `src/dispatch/`,
+`src/profiles/`, `src/signal_pipeline/`, and their tests
+(`test_surplus_allocation.py`, `test_billing.py`, `test_dispatch_*.py`,
+`test_signal_*.py`, `test_timeseries_framework.py`).
+**Never edits `src/simulation/`.**
 
----
+1. **Wire `surplus` into the dispatch path** — the largest open item. It is
+   imported only by its own test today, so `allocate_surplus`, both
+   power-balance validators and the carbon monetization in
+   `surplus/metrics.py` are unreachable. Expose a function the GUI lane can
+   call; agree its signature with Lane B before starting.
+2. **Peak-scoped demand variables** in `single_day_analysis.py` — separate
+   peak variables for the peak-hour window rather than one blended rate on
+   the monthly maximum. Keep the constraints vectorized (see CLAUDE.md).
+3. **Shared-generation billing** in `charges.py` — currently raises, because
+   the NEM/NBT credit rules are not configured. Needs a modelling decision
+   before code.
+4. **Holidays** in `price_sources.py` — needs a holiday calendar per
+   utility. Note this does *not* affect the PG&E B-series, whose periods all
+   apply every day.
 
-## 5. Integration status — read this before picking work
+### Lane B — GUI and integration
+**Owns:** `src/simulation/` (all of it), plus
+`test_application_interface.py`, `test_interface_analysis.py`,
+`test_graphical_interface.py`, `test_console_interface.py`.
+**Never edits `src/billing/` or `src/dispatch/`.**
 
-The four backend layers are **not** equally wired in. Verified by import
-graph, not by assumption:
-
-| Layer | Reached from production code? |
-|---|---|
-| `timeseries` | **Yes** — `interface_analysis.py` (`build_interval_index_from_days`), `time_series_analysis.py` (`normalize_any_frame`, `to_legacy_columns`) |
-| `profiles` | **Yes** — `interface_analysis.py` (`BuildingArchetype`, `ConstantLoad`, `LoadScaling`, `SyntheticLoad`, `SyntheticPV`) |
-| `billing` | **Yes** — `interface_analysis.py` (`calculate_billing`, `get_tariff`, both topology builders), `application_interface.py` (`PGE_B10_SECONDARY_BUNDLED`, `supported_tariffs`), `market_data_integration.py` (`calculate_flat_demand_charge`) |
-| `surplus` | **No — imported only by `test/test_surplus_allocation.py`** |
-
-So `src/surplus/` is fully built and tested (17 tests) but has **zero
-production consumers**. `allocate_surplus`, the power-balance validators, and
-the carbon monetization in `surplus/metrics.py` are unreachable from the GUI.
-`src/dispatch/dispatch_scenarios.py` imports none of the four layers.
-
----
-
-## 6. Open work, roughly in priority order
-
-1. **Wire `surplus` into the analysis path.** The largest real gap. Decide
-   where `allocate_surplus` belongs relative to the existing dispatch
-   scenarios in `interface_analysis.py`, and route `validate_power_balance` /
-   `validate_no_simultaneity` so violations surface instead of passing
-   silently. This is the one item that unlocks the carbon monetization work
-   already written in `surplus/metrics.py`.
-
-2. **Demand-charge-aware optimization.** Billing computes demand correctly,
-   but the optimizer does not *target* it. This needs a peak variable in the
-   objective — a post-hoc addition of the demand charge after optimizing for
-   energy will not produce the right dispatch. Non-trivial; treat as its own
-   piece of work.
-
-3. **`dispatch_scenarios.py` integration.** It still runs on the legacy path
-   and imports none of `timeseries`/`profiles`/`surplus`/`billing`.
-
-4. **GUI results surface.** `application_interface.py:563` still carries the
+1. **Results visualisation** — `application_interface.py` still carries the
    placeholder "The completed workflow will provide visual comparisons and
-   downloadable CSV outputs here." The CSV export is live as of `1fb3e80`;
-   the visual comparison half is not.
+   downloadable CSV outputs here." CSV export works; the charts do not exist.
+2. **Meter-topology dropdown** — `billing` has four topology builders,
+   `METER_TOPOLOGY_LABELS` exposes two. `individual_meters` is implemented
+   and merely unwired.
+3. **Tariff comparison run** — one dispatch, billed under several tariffs,
+   so the GUI can answer "which plan should this site be on?". All twelve
+   are registered; this is presentation only.
+4. Wire whatever Lane A exposes, once its signature is agreed.
+
+### Rules for both
+
+- **`src/billing/__init__.py` is Lane A's.** Its import and `__all__` lists
+  were the worst conflict today. Lane B must not touch it.
+- **`CLAUDE.md` and `docs/`**: either lane, but announce it.
+- **Commit before switching lanes.** Today's merge was only recoverable
+  because uncommitted work was backed up first.
+- **Re-read a file before editing it.** Both agents are live.
 
 ---
 
-## 7. Deliberately not implemented — do not "fix" these
+## 4. Still not implemented, with the blocker
 
-Each raises a clear error on purpose, so no GUI control can silently produce
-invented numbers. If you think one should be implemented, raise it with the
-user first; the reasons are modelling decisions, not oversights.
-
-| Thing | Where | Why |
-|---|---|---|
-| Measured load adapters (Green Button, Modbus, SunSpec, MQTT) | `profiles/load_sources.py:314` | Planned extension point; no hardware or utility-download connection exists. Use `CSVLoad` for exported data. |
-| Weather-derived PV | `profiles/pv_sources.py:321` | Config validated, but no irradiance provider (PVGIS/NSRDB/PVWatts) connected. |
-| Measured inverter PV | `profiles/pv_sources.py:357` | Inverter telemetry reports *delivered* power; recovering *available* power needs a curtailment signal. Unresolved modelling. |
-| `ExportCompensationMode.TARIFF` | `surplus/configuration.py:79` | NEM / NBT not modelled. Use `fixed`, `csv`, or `none`. |
-
-Note the B-10 and B-19 tariffs both raise on **export compensation**
-specifically (`pge_tariffs.py:118` and `:252`) while supporting import
-billing fully. That is intentional and follows from the row above.
-
-**PG&E B-19 is now implemented** (as of `0bc5048`). Older notes listing it as
-unimplemented are stale.
-
----
-
-## 8. Ground rules
-
-- **Re-read files before editing.** Claude works this repo in parallel; a
-  file you wrote earlier is often stale by the time you return to it.
-- **Never `git checkout` / `reset` / `restore` to resolve a conflict** with
-  parallel work. Merge by hand or ask.
-- **Don't stage, commit, or push unless explicitly asked.**
-- New docs go in `docs/`.
-- Don't rename `results/` files to strip historical `week*` names.
-- Don't restore the Manual Operating-Point Tool button.
-
-## 9. PJM API — known blocked, don't re-litigate
-
-The user's PJM account is non-member (`Other [Other]`). Non-members must email
-PJM's account manager confirming internal-use-only before the portal issues a
-key; granting "PJM Public" in Account Manager is necessary but not sufficient.
-Symptom: `apiportal.pjm.com` redirects to `tools.pjm.com` with no key anywhere.
-
-Rate limits: **non-members 6 connections/minute**, members 600/minute. The PJM
-adapter chunks at 30 days, so a multi-month request fires several calls in
-quick succession and will need throttling between chunks if the key ever
-arrives.
-
-Working alternatives that exercise the same adapter path with no credentials:
-`ercot_houston_hub`, CAISO. Or `pjm_western_hub_gridstatus`, which reaches PJM
-through GridStatus.io with a self-serve key (free tier: 500k rows/month).
+| Item | Blocker |
+|---|---|
+| B1-ST | $7.86/kW demand assessed 2-11 p.m. only — the union of B-1's peak and part-peak blocks. `DemandChargeComponent` has no windowed basis; two components would take each maximum separately and overcharge. |
+| Primary / Transmission voltage classes | Rates are published and parsed, but the modelled 480 V service is secondary, so they would be billing-only. |
+| Agricultural schedules | Keyed to annual operating hours with flex-day options on specific weekdays. `TOUPeriod` has no day-of-week field. |
+| Other utilities | `REGION_RETAIL_TARIFF_IDS` covers `caiso_np15` only; ERCOT and PJM return an empty tuple. |
+| Measured load / weather PV / measured inverter PV | Deliberate. See CLAUDE.md — they raise on purpose. |
+| Export compensation (NEM/NBT) | Not part of any of these schedules. |
