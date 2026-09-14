@@ -41,9 +41,16 @@ class FakeValueVariable:
 class FakeConfigurableWidget:
     def __init__(self) -> None:
         self.configuration = {}
+        self.visible = True
 
     def configure(self, **kwargs) -> None:
         self.configuration.update(kwargs)
+
+    def grid(self) -> None:
+        self.visible = True
+
+    def grid_remove(self) -> None:
+        self.visible = False
 
 
 class FakeProcess:
@@ -125,6 +132,7 @@ def test_profile_controls_enable_synthetic_live_inputs():
     application.values = {
         "source_mode": FakeValueVariable("live_api"),
         "load_profile_mode": FakeValueVariable("synthetic"),
+        "pv_profile_mode": FakeValueVariable("synthetic"),
     }
     application.load_profile_combobox = FakeConfigurableWidget()
     application.load_archetype_combobox = FakeConfigurableWidget()
@@ -144,6 +152,43 @@ def test_profile_controls_enable_synthetic_live_inputs():
     assert "generates one load value per interval" in (
         application.profile_explanation.configuration["text"]
     )
+
+
+def test_capacity_factor_mode_restores_csv_controls_after_initial_hide():
+    application = MicrogridApplication.__new__(MicrogridApplication)
+    application.values = {
+        "source_mode": FakeValueVariable("live_api"),
+        "pv_profile_mode": FakeValueVariable("synthetic"),
+    }
+    application.pv_profile_combobox = FakeConfigurableWidget()
+    application.pv_capacity_entry = FakeConfigurableWidget()
+    application.weather_csv_widgets = (
+        FakeConfigurableWidget(), FakeConfigurableWidget()
+    )
+    application.pv_capacity_factor_csv_widgets = (
+        FakeConfigurableWidget(), FakeConfigurableWidget()
+    )
+    application.pv_generic_entries = [FakeConfigurableWidget()]
+    application.pv_dc_ac_ratio_entry = FakeConfigurableWidget()
+    application.pv_module_combobox = FakeConfigurableWidget()
+    application.pv_inverter_combobox = FakeConfigurableWidget()
+    application.pv_equipment_entries = [FakeConfigurableWidget()]
+    application._update_equipment_summary = lambda: None
+    application.pv_widgets_by_row = {
+        row: (FakeConfigurableWidget(),) for row in range(17)
+    }
+
+    application._update_pv_controls()
+    assert application.pv_widgets_by_row[15][0].visible is False
+
+    application.values["pv_profile_mode"].set("capacity_factor_csv")
+    application._update_pv_controls()
+
+    assert application.pv_widgets_by_row[1][0].visible is True
+    assert application.pv_widgets_by_row[15][0].visible is True
+    assert application.pv_widgets_by_row[16][0].visible is True
+    assert application.pv_widgets_by_row[2][0].visible is False
+    assert application.pv_capacity_factor_csv_widgets[0].configuration["state"] == "normal"
 
 
 def test_ercot_region_removes_pge_tariff_and_tou_price_option():
@@ -167,6 +212,44 @@ def test_ercot_region_removes_pge_tariff_and_tou_price_option():
     assert "Time-of-Use(TOU) tariff" not in (
         application.price_mode_combobox.configuration["values"]
     )
+
+
+
+def test_pge_tariff_reenables_after_region_round_trip():
+    application = MicrogridApplication.__new__(MicrogridApplication)
+    application.values = {
+        "source_mode": FakeValueVariable("live_api"),
+        "region_id": FakeValueVariable("ercot_houston_hub"),
+        "price_mode": FakeValueVariable("time_of_use"),
+        "tariff_id": FakeValueVariable(
+            "pge_b10_secondary_bundled_2026_03_01"
+        ),
+        "meter_topology_mode": FakeValueVariable("single_pcc"),
+    }
+    application.price_mode_combobox = FakeConfigurableWidget()
+    application.tariff_combobox = FakeConfigurableWidget()
+    application.fixed_price_entry = FakeConfigurableWidget()
+    application.price_csv_entry = FakeConfigurableWidget()
+    application.price_csv_button = FakeConfigurableWidget()
+    application.meter_topology_combobox = FakeConfigurableWidget()
+    application.submeter_count_entry = FakeConfigurableWidget()
+    application.previous_peak_entry = FakeConfigurableWidget()
+    application.tariff_explanation = FakeConfigurableWidget()
+
+    application._update_region_pricing_options()
+
+    assert application.values["price_mode"].get() == "wholesale_market"
+    assert application.tariff_combobox.configuration["state"] == "disabled"
+
+    application.values["region_id"].set("caiso_np15")
+    application._update_region_pricing_options()
+
+    assert application.values["price_mode"].get() == "time_of_use"
+    assert application.values["tariff_id"].get() == (
+        "pge_b10_secondary_bundled_2026_03_01"
+    )
+    assert application.tariff_combobox.configuration["state"] == "readonly"
+    assert application.meter_topology_combobox.configuration["state"] == "readonly"
 
 
 def test_gui_preferences_round_trip_latest_valid_selections(tmp_path):
@@ -254,6 +337,42 @@ def test_build_review_rows_uses_readable_sections_and_units():
         "Profiles",
         "Load details",
         "Office, peak 25 kW, variability 0.05",
+    ) in rows
+
+
+def test_build_review_rows_describes_capacity_factor_csv():
+    rows = build_review_rows(
+        source_mode="live_api",
+        region_id="caiso_np15",
+        start_date="2026-08-25",
+        end_date_inclusive="2026-08-25",
+        timestep_minutes="15",
+        price_mode="wholesale_market",
+        strategies=("cost_optimal",),
+        carbon_weights=("0.20",),
+        degradation_cost="0.03",
+        battery_active=True,
+        battery_capacity="20",
+        battery_initial_energy="10",
+        battery_max_charge="5",
+        battery_max_discharge="5",
+        pv_capacity="30",
+        load_power="25",
+        load_profile_mode="constant",
+        load_archetype="office",
+        load_variability="0",
+        tariff_id="",
+        meter_topology_mode="single_pcc",
+        submeter_count="1",
+        previous_peak_kw="",
+        pv_profile_mode="capacity_factor_csv",
+        pv_capacity_factor_csv_path="/profiles/site-pv.csv",
+    )
+
+    assert (
+        "Profiles",
+        "PV source",
+        "PV profile CSV — capacity factor; site-pv.csv; rated 30 kW",
     ) in rows
 
 
@@ -447,3 +566,37 @@ def test_comparison_metrics_exclude_absent_and_nonfinite_data():
         "emissions_kgCO2": [float("nan")],
         "peak_grid_import_kw": [float("inf")],
     })) == ("Total operating cost ($)",)
+
+
+def test_pv_diagnostic_chart_uses_phase2_power_stage_contract():
+    import pandas as pd
+    from matplotlib.backends.backend_agg import FigureCanvasAgg
+    from matplotlib.figure import Figure
+    from src.profiles import EQUIPMENT_POWER_STAGE_COLUMNS
+    from src.simulation.results_visualization import (
+        available_pv_power_stages,
+        draw_pv_power_stages,
+    )
+
+    diagnostics = pd.DataFrame({
+        "timestamp": pd.date_range("2026-06-01", periods=3, freq="15min"),
+        **{
+            column: [0.0, float(index + 1), 0.0]
+            for index, column in enumerate(EQUIPMENT_POWER_STAGE_COLUMNS)
+            if column != "timestamp"
+        },
+    })
+    expected = tuple(
+        column for column in EQUIPMENT_POWER_STAGE_COLUMNS
+        if column != "timestamp"
+    )
+
+    assert available_pv_power_stages(diagnostics) == expected
+
+    figure = Figure(figsize=(8, 4), layout="constrained")
+    canvas = FigureCanvasAgg(figure)
+    draw_pv_power_stages(figure, diagnostics)
+    canvas.draw()
+
+    assert len(figure.axes[0].lines) == len(expected)
+    assert figure.axes[0].get_ylabel() == "Power (kW)"

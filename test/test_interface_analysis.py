@@ -12,6 +12,7 @@ from src.simulation.interface_analysis import (
     _build_live_price_source,
     build_analysis_details,
     build_results_table,
+    build_equipment_pv_configuration,
     create_temporary_site_profile,
     create_site_profile,
     format_comparison_for_display,
@@ -237,6 +238,39 @@ def test_create_site_profile_builds_synthetic_load_and_pv():
     assert profile["load_kw"].nunique() > 1
     assert profile["pv_kw"].max() == pytest.approx(25.5)
     assert profile["pv_kw"].min() == 0
+
+
+def test_create_site_profile_scales_capacity_factor_csv_by_rated_capacity(
+    tmp_path,
+):
+    horizon = build_horizon(
+        "2026-08-25",
+        1,
+        "America/Los_Angeles",
+        15,
+    )
+    csv_path = tmp_path / "pv_capacity_factor.csv"
+    pd.DataFrame(
+        {
+            "timestamp": horizon.index,
+            "capacity_factor": [index / 95 for index in range(96)],
+        }
+    ).to_csv(csv_path, index=False)
+
+    profile = create_site_profile(
+        horizon,
+        load_kw=25,
+        pv_capacity_kw=30,
+        load_profile_mode="constant",
+        load_archetype="office",
+        load_variability_fraction=0.0,
+        pv_profile_mode="capacity_factor_csv",
+        pv_capacity_factor_csv_path=csv_path,
+    )
+
+    assert profile["pv_kw"].iloc[0] == 0
+    assert profile["pv_kw"].iloc[-1] == pytest.approx(30)
+    assert profile.attrs["pv_provenance"]["rated_dc_capacity_kw"] == 30
 
 
 def test_pge_tariff_builds_summer_tou_prices():
@@ -726,3 +760,22 @@ def test_b20_raises_no_eligibility_warning_for_a_large_enough_site(tmp_path):
     )
 
     assert not any("minimum" in warning for warning in result.warnings)
+
+
+def test_equipment_configuration_derives_gui_plant_ratings():
+    configuration = build_equipment_pv_configuration(
+        latitude=37.77,
+        longitude=-122.42,
+        tilt_degrees=20.0,
+        azimuth_degrees=180.0,
+        module_name="Canadian_Solar_Inc__CS6X_300M",
+        inverter_name="SMA_America__STP_50_US_41__480V_",
+        modules_per_string=15,
+        strings=13,
+        inverter_count=2,
+        mppt_input_count=2,
+    )
+
+    assert configuration.rated_dc_capacity_kw == pytest.approx(117.0, rel=0.01)
+    assert configuration.inverter_ac_capacity_kw == pytest.approx(100.0, rel=0.01)
+    assert configuration.dc_ac_ratio == pytest.approx(1.17, rel=0.02)

@@ -35,6 +35,7 @@ from ..dispatch.battery import Battery
 from ..profiles import cec_inverter_names, cec_module_names
 from .interface_analysis import (
     build_analysis_details,
+    build_equipment_pv_configuration,
     build_results_table,
     InterfaceAnalysisResult,
     RESULT_TABLE_COLUMNS,
@@ -43,7 +44,11 @@ from .interface_analysis import (
     run_live_api_analysis,
 )
 from .model_specifications import MicrogridSpecification
-from .results_visualization import available_comparison_metrics, draw_comparison
+from .results_visualization import (
+    available_comparison_metrics,
+    draw_comparison,
+    draw_pv_power_stages,
+)
 
 
 STRATEGY_LABELS = {
@@ -121,6 +126,7 @@ LOAD_PROFILE_LABELS = {
 
 PV_PROFILE_LABELS = {
     "synthetic": "Synthetic clear-sky profile",
+    "capacity_factor_csv": "PV profile CSV — capacity factor",
     "weather_generic": "Weather CSV — generic array",
     "weather_equipment": "Weather CSV — named CEC equipment",
 }
@@ -169,6 +175,8 @@ class MicrogridApplication:
             )
             for name in STRATEGY_LABELS
         }
+        self._constrained_price_mode: str | None = None
+        self._constrained_tariff_id: str | None = None
         self.preferences_path = GUI_PREFERENCES_PATH
         self._load_preferences()
         self.pages: dict[str, ttk.Frame] = {}
@@ -234,6 +242,7 @@ class MicrogridApplication:
             "battery_max_discharge": tk.StringVar(value="10"),
             "pv_capacity": tk.StringVar(value="20"),
             "pv_profile_mode": tk.StringVar(value="synthetic"),
+            "pv_capacity_factor_csv_path": tk.StringVar(),
             "weather_csv_path": tk.StringVar(),
             "pv_latitude": tk.StringVar(value="37.77"),
             "pv_longitude": tk.StringVar(value="-122.42"),
@@ -290,6 +299,7 @@ class MicrogridApplication:
             "carbon_weight_mode": set(CARBON_WEIGHT_MODE_LABELS),
             "load_profile_mode": set(LOAD_PROFILE_LABELS),
             "load_archetype": set(LOAD_ARCHETYPE_LABELS),
+            "pv_profile_mode": set(PV_PROFILE_LABELS),
             "tariff_id": set(TARIFF_LABELS) | {""},
             "meter_topology_mode": set(METER_TOPOLOGY_LABELS),
         }
@@ -421,7 +431,10 @@ class MicrogridApplication:
             6,
             option_labels=PRICE_MODE_LABELS,
         )
-        self.price_mode_combobox.bind("<<ComboboxSelected>>", self._update_price_controls)
+        self.price_mode_combobox.bind(
+            "<<ComboboxSelected>>",
+            self._on_price_mode_selected,
+        )
 
         self.fixed_price_entry = self._add_entry(
             source_tab,
@@ -653,6 +666,44 @@ class MicrogridApplication:
             self._add_entry(pv_frame, "Inverter count", "pv_inverter_count", 12),
             self._add_entry(pv_frame, "MPPT inputs per inverter", "pv_mppt_input_count", 13),
         ]
+        self.pv_equipment_summary = ttk.Label(
+            pv_frame,
+            text="",
+            wraplength=740,
+        )
+        self.pv_equipment_summary.grid(
+            row=14,
+            column=0,
+            columnspan=3,
+            sticky="w",
+            padx=6,
+            pady=(8, 0),
+        )
+        self.pv_capacity_factor_csv_widgets = self._add_file_row(
+            pv_frame,
+            "PV profile CSV",
+            self.values["pv_capacity_factor_csv_path"],
+            15,
+        )
+        self.pv_capacity_factor_csv_hint = ttk.Label(
+            pv_frame,
+            text=(
+                "Required columns: timestamp, capacity_factor. Timestamps must "
+                "include a timezone and match the selected analysis interval."
+            ),
+            wraplength=740,
+        )
+        self.pv_capacity_factor_csv_hint.grid(
+            row=16, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 8)
+        )
+        self.pv_module_combobox.bind(
+            "<<ComboboxSelected>>", self._update_equipment_summary, add="+"
+        )
+        self.pv_inverter_combobox.bind(
+            "<<ComboboxSelected>>", self._update_equipment_summary, add="+"
+        )
+        for entry in self.pv_equipment_entries:
+            entry.bind("<FocusOut>", self._update_equipment_summary)
 
         system_frame = ttk.LabelFrame(page, text="Load", padding=18)
         system_frame.pack(fill="x", pady=12)
@@ -717,6 +768,12 @@ class MicrogridApplication:
         )
 
         self._navigation(page, previous_page="analysis", next_page="review")
+        # grid_slaves() stops returning widgets after grid_remove(). Keep the
+        # original row membership so every PV mode can restore its own fields.
+        self.pv_widgets_by_row = {
+            row: tuple(self.pv_frame.grid_slaves(row=row))
+            for row in range(17)
+        }
         self._update_battery_controls()
         self._update_pv_controls()
         self._update_profile_controls()
@@ -921,6 +978,25 @@ class MicrogridApplication:
         self._bind_result_table_scrolling(self.table_canvas)
         self._bind_result_table_scrolling(self.table_frame)
 
+        pv_tab = ttk.Frame(self.results_notebook)
+        self.results_notebook.add(pv_tab, text="PV model details")
+        self.pv_detail_message = tk.StringVar(
+            value="Run a Phase 1 or Phase 2 weather-derived PV analysis."
+        )
+        ttk.Label(
+            pv_tab,
+            textvariable=self.pv_detail_message,
+            wraplength=760,
+        ).pack(anchor="w", pady=(8, 4))
+        self.pv_chart_placeholder = ttk.Label(
+            pv_tab,
+            text="PV diagnostics are unavailable for synthetic and imported profiles.",
+        )
+        self.pv_chart_placeholder.pack(anchor="w", pady=12)
+        self.pv_chart_host = ttk.Frame(pv_tab)
+        self.pv_chart_host.pack(fill="both", expand=True)
+        self.pv_chart_canvas = None
+
         controls = self._navigation(page, previous_page="review")
         self.export_results_button = ttk.Button(
             controls,
@@ -929,6 +1005,13 @@ class MicrogridApplication:
             state="disabled",
         )
         self.export_results_button.pack(side="right")
+        self.export_pv_diagnostics_button = ttk.Button(
+            controls,
+            text="Export PV Diagnostics CSV",
+            command=self._export_pv_diagnostics_csv,
+            state="disabled",
+        )
+        self.export_pv_diagnostics_button.pack(side="right", padx=(0, 8))
 
     def _navigation(
         self,
@@ -1099,16 +1182,43 @@ class MicrogridApplication:
             values=tuple(TARIFF_LABELS[tariff_id] for tariff_id in tariff_ids)
         )
 
-        if str(self.values["price_mode"].get()) not in price_modes:
+        selected_price_mode = str(self.values["price_mode"].get())
+        if selected_price_mode not in price_modes:
+            if selected_price_mode == "time_of_use":
+                self._constrained_price_mode = selected_price_mode
             self.values["price_mode"].set("wholesale_market")
+        elif tariff_ids:
+            constrained_price_mode = getattr(
+                self, "_constrained_price_mode", None
+            )
+            if constrained_price_mode in price_modes:
+                self.values["price_mode"].set(constrained_price_mode)
+            self._constrained_price_mode = None
 
         selected_tariff = str(self.values["tariff_id"].get())
-        if tariff_ids and selected_tariff not in tariff_ids:
-            self.values["tariff_id"].set(tariff_ids[0])
-        elif not tariff_ids:
+        if not tariff_ids:
+            if selected_tariff:
+                self._constrained_tariff_id = selected_tariff
             self.values["tariff_id"].set("")
+        else:
+            constrained_tariff = getattr(
+                self, "_constrained_tariff_id", None
+            )
+            if constrained_tariff in tariff_ids:
+                selected_tariff = constrained_tariff
+            if selected_tariff not in tariff_ids:
+                selected_tariff = tariff_ids[0]
+            self.values["tariff_id"].set(selected_tariff)
+            self._constrained_tariff_id = None
 
         self._update_price_controls()
+
+    def _on_price_mode_selected(self, _event=None) -> None:
+        """Honor an explicit choice over a remembered regional fallback."""
+
+        self._constrained_price_mode = None
+        self._update_price_controls()
+
 
     def _update_source_controls(self, _event=None) -> None:
         live = self.values["source_mode"].get() == "live_api"
@@ -1240,18 +1350,33 @@ class MicrogridApplication:
                 "Load and PV interval values come from the selected integrated CSV "
                 "columns load_kw and pv_kw; the profile controls above are ignored."
             )
-        elif synthetic:
-            explanation = (
-                "The program generates one load value per interval from the building "
-                "type, peak load, and variability entered above. To provide exact "
-                "interval measurements instead, choose Integrated CSV on Step 1. "
-                "PV uses a synthetic clear-sky profile."
-            )
         else:
-            explanation = (
-                "The entered load power is repeated at every interval. PV uses a "
-                "synthetic clear-sky profile."
+            load_explanation = (
+                "The program generates one load value per interval from the building "
+                "type, peak load, and variability entered above."
+                if synthetic
+                else "The entered load power is repeated at every interval."
             )
+            pv_explanations = {
+                "synthetic": "PV uses a synthetic clear-sky profile.",
+                "capacity_factor_csv": (
+                    "PV available power comes from the selected capacity-factor CSV "
+                    "multiplied by rated PV capacity."
+                ),
+                "weather_generic": (
+                    "PV available power is calculated from the weather CSV and "
+                    "generic array settings."
+                ),
+                "weather_equipment": (
+                    "PV available power is calculated from the weather CSV and "
+                    "named CEC equipment."
+                ),
+            }
+            pv_explanation = pv_explanations.get(
+                str(self.values["pv_profile_mode"].get()),
+                "Select a supported PV profile source.",
+            )
+            explanation = f"{load_explanation} {pv_explanation}"
         self.profile_explanation.configure(text=explanation)
 
     def _update_pv_controls(self, _event=None) -> None:
@@ -1265,25 +1390,40 @@ class MicrogridApplication:
         visible_rows = {0}
         if live and mode == "synthetic":
             visible_rows.add(1)
+        elif live and mode == "capacity_factor_csv":
+            visible_rows.update({1, 15, 16})
         elif live and mode == "weather_generic":
             visible_rows.update(range(1, 8))
         elif live and mode == "weather_equipment":
-            visible_rows.update({2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13})
+            visible_rows.update({2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14})
             if not self._cec_options_loaded:
                 self.pv_module_combobox.configure(values=cec_module_names())
                 self.pv_inverter_combobox.configure(values=cec_inverter_names())
                 self._cec_options_loaded = True
 
-        for row in range(14):
-            for widget in self.pv_frame.grid_slaves(row=row):
+        widgets_by_row = getattr(self, "pv_widgets_by_row", None)
+        for row in range(17):
+            widgets = (
+                widgets_by_row.get(row, ())
+                if widgets_by_row is not None
+                else self.pv_frame.grid_slaves(row=row)
+            )
+            for widget in widgets:
                 if row in visible_rows:
                     widget.grid()
                 else:
                     widget.grid_remove()
 
-        state = "normal" if live and mode != "synthetic" else "disabled"
+        state = "normal" if live and mode in {
+            "weather_generic", "weather_equipment"
+        } else "disabled"
         for widget in self.weather_csv_widgets:
             widget.configure(state=state)
+        capacity_factor_state = (
+            "normal" if live and mode == "capacity_factor_csv" else "disabled"
+        )
+        for widget in self.pv_capacity_factor_csv_widgets:
+            widget.configure(state=capacity_factor_state)
         for entry in self.pv_generic_entries:
             entry.configure(state=state)
         self.pv_capacity_entry.configure(
@@ -1299,6 +1439,50 @@ class MicrogridApplication:
             entry.configure(
                 state="normal" if live and mode == "weather_equipment" else "disabled"
             )
+        self._update_equipment_summary()
+        if hasattr(self, "profile_explanation"):
+            self._update_profile_controls()
+
+    def _equipment_configuration(self):
+        """Build and validate the Phase 2 plant currently shown in the form."""
+
+        return build_equipment_pv_configuration(
+            latitude=float(self.values["pv_latitude"].get()),
+            longitude=float(self.values["pv_longitude"].get()),
+            tilt_degrees=float(self.values["pv_tilt_degrees"].get()),
+            azimuth_degrees=float(self.values["pv_azimuth_degrees"].get()),
+            module_name=str(self.values["pv_module_name"].get()),
+            inverter_name=str(self.values["pv_inverter_name"].get()),
+            modules_per_string=int(
+                self.values["pv_modules_per_string"].get()
+            ),
+            strings=int(self.values["pv_strings"].get()),
+            inverter_count=int(self.values["pv_inverter_count"].get()),
+            mppt_input_count=int(
+                self.values["pv_mppt_input_count"].get()
+            ),
+        )
+
+    def _update_equipment_summary(self, _event=None) -> None:
+        """Show the ratings derived from the selected modules and inverters."""
+
+        active = (
+            self.values["source_mode"].get() == "live_api"
+            and self.values["pv_profile_mode"].get() == "weather_equipment"
+        )
+        if not active:
+            self.pv_equipment_summary.configure(text="")
+            return
+        try:
+            configuration = self._equipment_configuration()
+            text = (
+                f"Derived plant rating: {configuration.rated_dc_capacity_kw:.2f} "
+                f"kW DC, {configuration.inverter_ac_capacity_kw:.2f} kW AC "
+                f"(DC/AC {configuration.dc_ac_ratio:.2f}); grid-following control."
+            )
+        except (TypeError, ValueError) as error:
+            text = f"Equipment design needs attention: {error}"
+        self.pv_equipment_summary.configure(text=text)
 
     def _refresh_review(self) -> None:
         try:
@@ -1316,6 +1500,21 @@ class MicrogridApplication:
         strategies = selected_strategies(self.strategy_values)
         source_mode = str(self.values["source_mode"].get())
         battery_active = any(name != "no_battery" for name in strategies)
+        pv_equipment_rating = ""
+        if (
+            source_mode == "live_api"
+            and self.values["pv_profile_mode"].get() == "weather_equipment"
+        ):
+            try:
+                configuration = self._equipment_configuration()
+                pv_equipment_rating = (
+                    f"{configuration.rated_dc_capacity_kw:.2f} kW DC, "
+                    f"{configuration.inverter_ac_capacity_kw:.2f} kW AC "
+                    f"(DC/AC {configuration.dc_ac_ratio:.2f})"
+                )
+            except (TypeError, ValueError) as error:
+                pv_equipment_rating = f"Invalid equipment design: {error}"
+
 
         rows = build_review_rows(
             source_mode=source_mode,
@@ -1333,7 +1532,11 @@ class MicrogridApplication:
             battery_max_charge=str(self.values["battery_max_charge"].get()),
             battery_max_discharge=str(self.values["battery_max_discharge"].get()),
             pv_capacity=str(self.values["pv_capacity"].get()),
+            pv_equipment_rating=pv_equipment_rating,
             pv_profile_mode=str(self.values["pv_profile_mode"].get()),
+            pv_capacity_factor_csv_path=str(
+                self.values["pv_capacity_factor_csv_path"].get()
+            ),
             weather_csv_path=str(self.values["weather_csv_path"].get()),
             pv_latitude=str(self.values["pv_latitude"].get()),
             pv_longitude=str(self.values["pv_longitude"].get()),
@@ -1438,10 +1641,11 @@ class MicrogridApplication:
                 max_charge_kw=float(self.values["battery_max_charge"].get()),
                 max_discharge_kw=float(self.values["battery_max_discharge"].get()),
             )
-            specification = MicrogridSpecification(
-                battery=battery,
-                pv_capacity_kw=float(self.values["pv_capacity"].get()),
-                load_kw=float(self.values["load_power"].get()),
+            pv_profile_mode = str(self.values["pv_profile_mode"].get())
+            pv_capacity_kw = (
+                0.0
+                if pv_profile_mode == "weather_equipment"
+                else float(self.values["pv_capacity"].get())
             )
             degradation_cost = float(self.values["degradation_cost"].get())
             load_variability = float(self.values["load_variability"].get())
@@ -1449,12 +1653,22 @@ class MicrogridApplication:
                 raise ValueError(
                     "Synthetic load variability must be between 0 and 1."
                 )
-            pv_profile_mode = str(self.values["pv_profile_mode"].get())
             pv_model_arguments = {}
             if str(self.values["source_mode"].get()) == "live_api":
                 if pv_profile_mode not in PV_PROFILE_LABELS:
                     raise ValueError("Select a supported PV profile source.")
-                if pv_profile_mode != "synthetic":
+                if pv_profile_mode == "capacity_factor_csv":
+                    pv_profile_path = str(
+                        self.values["pv_capacity_factor_csv_path"].get()
+                    ).strip()
+                    if not pv_profile_path:
+                        raise ValueError(
+                            "Select a PV capacity-factor CSV file."
+                        )
+                    pv_model_arguments = {
+                        "pv_capacity_factor_csv_path": pv_profile_path,
+                    }
+                elif pv_profile_mode != "synthetic":
                     weather_path = str(self.values["weather_csv_path"].get()).strip()
                     if not weather_path:
                         raise ValueError("Select a weather CSV for the PV model.")
@@ -1478,6 +1692,16 @@ class MicrogridApplication:
                             "pv_inverter_count": int(self.values["pv_inverter_count"].get()),
                             "pv_mppt_input_count": int(self.values["pv_mppt_input_count"].get()),
                         })
+                        equipment = self._equipment_configuration()
+                        pv_capacity_kw = equipment.rated_dc_capacity_kw
+            specification = MicrogridSpecification(
+                battery=battery,
+                pv_capacity_kw=pv_capacity_kw,
+                load_kw=float(self.values["load_power"].get()),
+            )
+            if pv_profile_mode == "weather_equipment":
+                self.values["pv_capacity"].set(f"{pv_capacity_kw:.6g}")
+
             price_mode = str(self.values["price_mode"].get())
             previous_peak_text = str(
                 self.values["previous_peak_kw"].get()
@@ -1729,6 +1953,10 @@ class MicrogridApplication:
         )
         self.comparison_metric.set(metrics[0] if metrics else "")
         self._render_results_chart()
+        self._render_pv_diagnostics()
+        self.export_pv_diagnostics_button.configure(
+            state="normal" if payload.pv_diagnostics is not None else "disabled"
+        )
         self.export_results_button.configure(state="normal")
 
     def _export_results_csv(self) -> None:
@@ -1795,6 +2023,13 @@ class MicrogridApplication:
             live
             and self.values["load_profile_mode"].get() == "synthetic"
         )
+        pv_profile_mode = str(self.values["pv_profile_mode"].get())
+        weather_pv = live and pv_profile_mode in {
+            "weather_generic", "weather_equipment"
+        }
+        capacity_factor_pv = live and pv_profile_mode == "capacity_factor_csv"
+        equipment_pv = live and pv_profile_mode == "weather_equipment"
+        equipment = self._equipment_configuration() if equipment_pv else None
 
         return {
             "input_data_source": source_mode,
@@ -1868,27 +2103,69 @@ class MicrogridApplication:
             "input_battery_max_discharge_kw": float(
                 self.values["battery_max_discharge"].get()
             ),
-            "input_pv_capacity_kw": float(self.values["pv_capacity"].get()),
+            "input_pv_capacity_kw": (
+                equipment.rated_dc_capacity_kw
+                if equipment is not None
+                else float(self.values["pv_capacity"].get())
+            ),
             "input_pv_profile_mode": (
-                str(self.values["pv_profile_mode"].get())
-                if live else "integrated_csv"
+                pv_profile_mode if live else "integrated_csv"
             ),
             "input_weather_csv_path": (
                 str(self.values["weather_csv_path"].get())
-                if live and self.values["pv_profile_mode"].get() != "synthetic"
+                if weather_pv
+                else ""
+            ),
+            "input_pv_capacity_factor_csv_path": (
+                str(self.values["pv_capacity_factor_csv_path"].get())
+                if capacity_factor_pv
                 else ""
             ),
             "input_pv_latitude": str(self.values["pv_latitude"].get()) if live else "",
             "input_pv_longitude": str(self.values["pv_longitude"].get()) if live else "",
             "input_pv_module_name": (
                 str(self.values["pv_module_name"].get())
-                if live and self.values["pv_profile_mode"].get() == "weather_equipment"
+                if equipment_pv
                 else ""
             ),
             "input_pv_inverter_name": (
                 str(self.values["pv_inverter_name"].get())
-                if live and self.values["pv_profile_mode"].get() == "weather_equipment"
+                if equipment_pv
                 else ""
+            ),
+            "input_pv_tilt_degrees": (
+                float(self.values["pv_tilt_degrees"].get()) if weather_pv else ""
+            ),
+            "input_pv_azimuth_degrees": (
+                float(self.values["pv_azimuth_degrees"].get()) if weather_pv else ""
+            ),
+            "input_pv_dc_ac_ratio": (
+                float(self.values["pv_dc_ac_ratio"].get())
+                if live and pv_profile_mode == "weather_generic"
+                else (equipment.dc_ac_ratio if equipment is not None else "")
+            ),
+            "input_pv_inverter_ac_capacity_kw": (
+                equipment.inverter_ac_capacity_kw
+                if equipment is not None
+                else ""
+            ),
+            "input_pv_modules_per_string": (
+                int(self.values["pv_modules_per_string"].get())
+                if equipment_pv else ""
+            ),
+            "input_pv_parallel_strings": (
+                int(self.values["pv_strings"].get()) if equipment_pv else ""
+            ),
+            "input_pv_inverter_count": (
+                int(self.values["pv_inverter_count"].get())
+                if equipment_pv else ""
+            ),
+            "input_pv_mppt_inputs_per_inverter": (
+                int(self.values["pv_mppt_input_count"].get())
+                if equipment_pv else ""
+            ),
+            "input_pv_control_mode": (
+                "grid_following" if equipment_pv else ""
             ),
             "input_load_profile_mode": (
                 str(self.values["load_profile_mode"].get())
@@ -1962,6 +2239,15 @@ class MicrogridApplication:
         self.comparison_metric.set("")
         self.chart_placeholder.configure(text="Run an analysis to compare scenarios.")
         self.chart_placeholder.pack(anchor="w", pady=12)
+        if self.pv_chart_canvas is not None:
+            self.pv_chart_canvas.get_tk_widget().destroy()
+            self.pv_chart_canvas.figure.clear()
+            self.pv_chart_canvas = None
+        self.pv_detail_message.set(
+            "Run a Phase 1 or Phase 2 weather-derived PV analysis."
+        )
+        self.pv_chart_placeholder.pack(anchor="w", pady=12)
+        self.export_pv_diagnostics_button.configure(state="disabled")
 
     def _render_results_chart(self) -> None:
         """Draw on the Tk thread, reusing the canvas when the metric changes."""
@@ -1981,6 +2267,70 @@ class MicrogridApplication:
             self.comparison_metric.get(),
         )
         self.chart_canvas.draw_idle()
+
+    def _render_pv_diagnostics(self) -> None:
+        """Draw the detailed power stages returned by either weather PV model."""
+
+        if self.analysis_result is None or self.analysis_result.pv_diagnostics is None:
+            self.pv_detail_message.set(
+                "PV diagnostics are unavailable for synthetic and imported profiles."
+            )
+            self.pv_chart_placeholder.pack(anchor="w", pady=12)
+            return
+
+        from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+        from matplotlib.figure import Figure
+
+        provenance = self.analysis_result.pv_provenance or {}
+        description = provenance.get("description")
+        model_version = provenance.get("model_version", "weather-derived PV")
+        self.pv_detail_message.set(str(description or model_version))
+        self.pv_chart_placeholder.pack_forget()
+        if self.pv_chart_canvas is None:
+            figure = Figure(figsize=(9, 4), dpi=100, layout="constrained")
+            self.pv_chart_canvas = FigureCanvasTkAgg(
+                figure, master=self.pv_chart_host
+            )
+            self.pv_chart_canvas.get_tk_widget().pack(fill="both", expand=True)
+        draw_pv_power_stages(
+            self.pv_chart_canvas.figure,
+            self.analysis_result.pv_diagnostics,
+        )
+        self.pv_chart_canvas.draw_idle()
+
+    def _export_pv_diagnostics_csv(self) -> None:
+        """Export the timestamp-aligned Phase 1 or Phase 2 diagnostic frame."""
+
+        diagnostics = (
+            self.analysis_result.pv_diagnostics
+            if self.analysis_result is not None
+            else None
+        )
+        if diagnostics is None:
+            messagebox.showerror(
+                "No PV diagnostics",
+                "Run a weather-derived PV analysis before exporting diagnostics.",
+                parent=self.window,
+            )
+            return
+        selected_path = filedialog.asksaveasfilename(
+            parent=self.window,
+            title="Export PV diagnostics",
+            defaultextension=".csv",
+            initialfile="pv_model_diagnostics.csv",
+            filetypes=[("CSV files", "*.csv")],
+        )
+        if not selected_path:
+            return
+        try:
+            diagnostics.to_csv(Path(selected_path), index=False)
+        except (OSError, ValueError) as error:
+            messagebox.showerror(
+                "PV diagnostic export failed",
+                str(error),
+                parent=self.window,
+            )
+
 
     def _clear_results_table(self) -> None:
         """Remove previously displayed table cells."""
@@ -2195,11 +2545,13 @@ def build_review_rows(
     submeter_count: str,
     previous_peak_kw: str,
     pv_profile_mode: str = "synthetic",
+    pv_capacity_factor_csv_path: str = "",
     weather_csv_path: str = "",
     pv_latitude: str = "",
     pv_longitude: str = "",
     pv_module_name: str = "",
     pv_inverter_name: str = "",
+    pv_equipment_rating: str = "",
 ) -> tuple[tuple[str, str, str], ...]:
     """Build the rows shown in the Step 3 review table."""
 
@@ -2238,7 +2590,12 @@ def build_review_rows(
             else f"{load_power} kW at every interval"
         )
         pv_profile_label = PV_PROFILE_LABELS[pv_profile_mode]
-        if pv_profile_mode != "synthetic":
+        if pv_profile_mode == "capacity_factor_csv":
+            pv_profile_label += (
+                f"; {Path(pv_capacity_factor_csv_path).name}; "
+                f"rated {pv_capacity} kW"
+            )
+        elif pv_profile_mode != "synthetic":
             pv_profile_label += (
                 f"; {Path(weather_csv_path).name}; "
                 f"{pv_latitude}, {pv_longitude}"
@@ -2310,7 +2667,7 @@ def build_review_rows(
         (
             "Microgrid",
             "PV capacity",
-            "Derived from named equipment"
+            pv_equipment_rating or "Invalid equipment design"
             if source_mode == "live_api" and pv_profile_mode == "weather_equipment"
             else f"{pv_capacity} kW",
         ),

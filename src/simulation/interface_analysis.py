@@ -32,6 +32,7 @@ from ..billing import (
 from ..profiles import (
     BuildingArchetype,
     ConstantLoad,
+    CSVCapacityFactorPV,
     EquipmentSpecificPV,
     EquipmentSpecificPVConfiguration,
     InverterSpecification,
@@ -116,6 +117,53 @@ class InterfaceAnalysisResult:
     comparison: pd.DataFrame
     runs_by_carbon_weight: dict[float, TimeSeriesAnalysisResult]
     warnings: tuple[str, ...] = ()
+    pv_diagnostics: pd.DataFrame | None = None
+    pv_provenance: dict[str, object] | None = None
+    pv_subarray_diagnostics: dict[str, pd.DataFrame] | None = None
+    pv_inverter_diagnostics: dict[str, pd.DataFrame] | None = None
+
+
+def build_equipment_pv_configuration(
+    *,
+    latitude: float,
+    longitude: float,
+    tilt_degrees: float,
+    azimuth_degrees: float,
+    module_name: str,
+    inverter_name: str,
+    modules_per_string: int,
+    strings: int,
+    inverter_count: int,
+    mppt_input_count: int,
+) -> EquipmentSpecificPVConfiguration:
+    """Resolve one GUI equipment design into the canonical Phase 2 model."""
+
+    module = ModuleSpecification.from_cec_database(module_name)
+    inverter = InverterSpecification.from_cec_database(
+        inverter_name,
+        mppt_input_count=mppt_input_count,
+    )
+    return EquipmentSpecificPVConfiguration(
+        latitude=latitude,
+        longitude=longitude,
+        inverter_units=(
+            InverterUnitConfiguration(
+                inverter=inverter,
+                count=inverter_count,
+                name="inverter",
+                subarrays=(
+                    SubarrayConfiguration(
+                        module=module,
+                        modules_per_string=modules_per_string,
+                        strings=strings,
+                        tilt_degrees=tilt_degrees,
+                        azimuth_degrees=azimuth_degrees,
+                        name="array",
+                    ),
+                ),
+            ),
+        ),
+    )
 
 
 def build_analysis_details(
@@ -272,6 +320,7 @@ def run_live_api_analysis(
     load_archetype: str = "multifamily",
     load_variability_fraction: float = 0.0,
     pv_profile_mode: str = "synthetic",
+    pv_capacity_factor_csv_path: str | Path | None = None,
     weather_csv_path: str | Path | None = None,
     pv_latitude: float | None = None,
     pv_longitude: float | None = None,
@@ -326,6 +375,7 @@ def run_live_api_analysis(
         load_archetype=load_archetype,
         load_variability_fraction=load_variability_fraction,
         pv_profile_mode=pv_profile_mode,
+        pv_capacity_factor_csv_path=pv_capacity_factor_csv_path,
         weather_csv_path=weather_csv_path,
         pv_latitude=pv_latitude,
         pv_longitude=pv_longitude,
@@ -339,6 +389,15 @@ def run_live_api_analysis(
         pv_inverter_count=pv_inverter_count,
         pv_mppt_input_count=pv_mppt_input_count,
     )
+    analysis_specification = specification
+    if pv_profile_mode == "weather_equipment":
+        provenance = site_profile.attrs.get("pv_provenance", {})
+        analysis_specification = MicrogridSpecification(
+            battery=specification.battery,
+            pv_capacity_kw=float(provenance["rated_dc_capacity_kw"]),
+            load_kw=specification.load_kw,
+        )
+
     price_source = _build_live_price_source(
         price_mode,
         horizon,
@@ -384,7 +443,7 @@ def run_live_api_analysis(
     )
 
     result = _run_selected_signal_analysis(
-        specification,
+        analysis_specification,
         signal_data,
         start_date=horizon.start.isoformat(),
         end_date=horizon.end.isoformat(),
@@ -415,6 +474,14 @@ def run_live_api_analysis(
                 )
             )
         )
+    result.pv_diagnostics = site_profile.attrs.get("pv_diagnostics")
+    result.pv_provenance = site_profile.attrs.get("pv_provenance")
+    result.pv_subarray_diagnostics = site_profile.attrs.get(
+        "pv_subarray_diagnostics"
+    )
+    result.pv_inverter_diagnostics = site_profile.attrs.get(
+        "pv_inverter_diagnostics"
+    )
     return result
 
 
@@ -463,6 +530,7 @@ def create_site_profile(
     load_archetype: str,
     load_variability_fraction: float,
     pv_profile_mode: str = "synthetic",
+    pv_capacity_factor_csv_path: str | Path | None = None,
     weather_csv_path: str | Path | None = None,
     pv_latitude: float | None = None,
     pv_longitude: float | None = None,
@@ -501,6 +569,13 @@ def create_site_profile(
 
     if pv_profile_mode == "synthetic":
         pv_source = SyntheticPV(rated_pv_capacity_kw=pv_capacity_kw)
+    elif pv_profile_mode == "capacity_factor_csv":
+        if not pv_capacity_factor_csv_path:
+            raise ValueError("Select a PV capacity-factor CSV file.")
+        pv_source = CSVCapacityFactorPV(
+            data=pd.read_csv(pv_capacity_factor_csv_path),
+            rated_pv_capacity_kw=pv_capacity_kw,
+        )
     else:
         if not weather_csv_path:
             raise ValueError(
@@ -530,31 +605,17 @@ def create_site_profile(
                     "CEC module and inverter names are required for "
                     "equipment-specific PV."
                 )
-            module = ModuleSpecification.from_cec_database(pv_module_name)
-            inverter = InverterSpecification.from_cec_database(
-                pv_inverter_name,
-                mppt_input_count=pv_mppt_input_count,
-            )
-            configuration = EquipmentSpecificPVConfiguration(
+            configuration = build_equipment_pv_configuration(
                 latitude=pv_latitude,
                 longitude=pv_longitude,
-                inverter_units=(
-                    InverterUnitConfiguration(
-                        inverter=inverter,
-                        count=pv_inverter_count,
-                        name="inverter",
-                        subarrays=(
-                            SubarrayConfiguration(
-                                module=module,
-                                modules_per_string=pv_modules_per_string,
-                                strings=pv_strings,
-                                tilt_degrees=pv_tilt_degrees,
-                                azimuth_degrees=pv_azimuth_degrees,
-                                name="array",
-                            ),
-                        ),
-                    ),
-                ),
+                tilt_degrees=pv_tilt_degrees,
+                azimuth_degrees=pv_azimuth_degrees,
+                module_name=pv_module_name,
+                inverter_name=pv_inverter_name,
+                modules_per_string=pv_modules_per_string,
+                strings=pv_strings,
+                inverter_count=pv_inverter_count,
+                mppt_input_count=pv_mppt_input_count,
             )
             pv_source = EquipmentSpecificPV(
                 configuration=configuration,
@@ -579,6 +640,20 @@ def create_site_profile(
         profile.attrs["pv_warnings"] = detailed.warnings
         profile.attrs["pv_provenance"] = detailed.provenance
         profile.attrs["pv_diagnostics"] = detailed.diagnostics
+        profile.attrs["pv_subarray_diagnostics"] = getattr(
+            detailed, "subarray_diagnostics", {}
+        )
+        profile.attrs["pv_inverter_diagnostics"] = getattr(
+            detailed, "inverter_diagnostics", {}
+        )
+    elif pv_profile_mode == "capacity_factor_csv":
+        profile.attrs["pv_provenance"] = {
+            "source": (
+                "PV capacity-factor CSV "
+                f"{Path(pv_capacity_factor_csv_path).name}"
+            ),
+            "rated_dc_capacity_kw": pv_capacity_kw,
+        }
     return profile
 
 

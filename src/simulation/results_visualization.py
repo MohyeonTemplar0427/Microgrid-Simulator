@@ -3,6 +3,7 @@
 import numpy as np
 import pandas as pd
 from matplotlib.figure import Figure
+from ..profiles import EQUIPMENT_POWER_STAGE_COLUMNS, POWER_STAGE_COLUMNS
 
 
 COMPARISON_METRICS = {
@@ -46,4 +47,44 @@ def draw_comparison(figure: Figure, comparison, metric: str) -> None:
     axis.set_axisbelow(True)
     axis.grid(axis="x", alpha=0.2)
     axis.margins(x=0.22)
+    axis.spines[["top", "right"]].set_visible(False)
+
+
+def available_pv_power_stages(diagnostics: pd.DataFrame | None) -> tuple[str, ...]:
+    """Return model-defined PV power stages present in a diagnostic frame."""
+
+    if diagnostics is None or diagnostics.empty:
+        return ()
+    model_columns = (
+        EQUIPMENT_POWER_STAGE_COLUMNS
+        if "pv_dc_at_inverter_input_kw" in diagnostics
+        else POWER_STAGE_COLUMNS
+    )
+    return tuple(
+        column for column in model_columns
+        if column != "timestamp" and column in diagnostics
+    )
+
+
+def draw_pv_power_stages(figure: Figure, diagnostics: pd.DataFrame) -> None:
+    """Plot the Phase 1 or Phase 2 power chain over the analysis horizon."""
+
+    columns = available_pv_power_stages(diagnostics)
+    if not columns:
+        raise ValueError("No PV power-stage diagnostics are available.")
+
+    figure.clear()
+    axis = figure.add_subplot(111)
+    timestamps = pd.to_datetime(diagnostics["timestamp"])
+    for column in columns:
+        axis.plot(
+            timestamps,
+            pd.to_numeric(diagnostics[column], errors="coerce"),
+            label=column.removeprefix("pv_").replace("_kw", "").replace("_", " "),
+            linewidth=1.4,
+        )
+    axis.set_ylabel("Power (kW)")
+    axis.set_title("PV model power stages")
+    axis.grid(alpha=0.2)
+    axis.legend(loc="best", fontsize=8)
     axis.spines[["top", "right"]].set_visible(False)

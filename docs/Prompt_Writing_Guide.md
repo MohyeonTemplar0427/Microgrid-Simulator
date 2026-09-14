@@ -1,4 +1,4 @@
-# Prompt Writing Guide — Session_Week1
+# Prompt Writing Guide — Microgrid Simulator
 
 ## Why this matters here specifically
 
