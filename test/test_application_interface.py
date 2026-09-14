@@ -409,3 +409,41 @@ def test_b1_results_export_omits_non_applicable_demand_columns():
     assert "demand_charge" not in exported.columns
     assert "billed_peak_kw" not in exported.columns
     assert "peak_grid_import_kw" in exported.columns
+
+
+def test_comparison_chart_preserves_sweep_rows_negative_and_missing_values(tmp_path):
+    import pandas as pd
+    from matplotlib.figure import Figure
+    from matplotlib.backends.backend_agg import FigureCanvasAgg
+    from src.simulation.results_visualization import draw_comparison
+
+    comparison = pd.DataFrame({
+        "scenario": ["no_battery", "combined_optimal_0.10", "combined_optimal_0.20"],
+        "total_explicit_cost": [100.0, -20.0, float("nan")],
+    })
+    original = comparison.copy(deep=True)
+    figure = Figure(figsize=(9, 4), layout="constrained")
+    canvas = FigureCanvasAgg(figure)
+    draw_comparison(figure, comparison, "Total operating cost ($)")
+    canvas.draw()
+    axis = figure.axes[0]
+    assert [bar.get_width() for bar in axis.patches] == [100.0, -20.0]
+    assert [label.get_text() for label in axis.get_yticklabels()] == comparison.scenario.tolist()
+    assert "Unavailable" in [text.get_text() for text in axis.texts]
+    pd.testing.assert_frame_equal(comparison, original)
+    draw_comparison(figure, comparison.iloc[:1], "Total operating cost ($)")
+    canvas.draw()
+    assert len(figure.axes) == 1
+    assert len(figure.axes[0].patches) == 1
+
+
+def test_comparison_metrics_exclude_absent_and_nonfinite_data():
+    import pandas as pd
+    from src.simulation.results_visualization import available_comparison_metrics
+
+    assert available_comparison_metrics(pd.DataFrame()) == ()
+    assert available_comparison_metrics(pd.DataFrame({
+        "total_explicit_cost": [0.0],
+        "emissions_kgCO2": [float("nan")],
+        "peak_grid_import_kw": [float("inf")],
+    })) == ("Total operating cost ($)",)

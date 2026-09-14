@@ -32,9 +32,18 @@ from ..billing import (
 from ..profiles import (
     BuildingArchetype,
     ConstantLoad,
+    EquipmentSpecificPV,
+    EquipmentSpecificPVConfiguration,
+    InverterSpecification,
+    InverterUnitConfiguration,
     LoadScaling,
+    ModuleSpecification,
+    SubarrayConfiguration,
     SyntheticLoad,
     SyntheticPV,
+    WeatherDerivedPV,
+    WeatherDerivedPVConfiguration,
+    load_weather_csv,
 )
 from ..signal_pipeline.horizon import AnalysisHorizon, build_horizon
 from ..signal_pipeline.price_sources import (
@@ -262,6 +271,19 @@ def run_live_api_analysis(
     load_profile_mode: str = "constant",
     load_archetype: str = "multifamily",
     load_variability_fraction: float = 0.0,
+    pv_profile_mode: str = "synthetic",
+    weather_csv_path: str | Path | None = None,
+    pv_latitude: float | None = None,
+    pv_longitude: float | None = None,
+    pv_tilt_degrees: float = 20.0,
+    pv_azimuth_degrees: float = 180.0,
+    pv_dc_ac_ratio: float | None = None,
+    pv_module_name: str | None = None,
+    pv_inverter_name: str | None = None,
+    pv_modules_per_string: int = 1,
+    pv_strings: int = 1,
+    pv_inverter_count: int = 1,
+    pv_mppt_input_count: int = 1,
     tariff_id: str | None = None,
     meter_topology_mode: str = "single_pcc",
     submeter_count: int = 1,
@@ -303,6 +325,19 @@ def run_live_api_analysis(
         load_profile_mode=load_profile_mode,
         load_archetype=load_archetype,
         load_variability_fraction=load_variability_fraction,
+        pv_profile_mode=pv_profile_mode,
+        weather_csv_path=weather_csv_path,
+        pv_latitude=pv_latitude,
+        pv_longitude=pv_longitude,
+        pv_tilt_degrees=pv_tilt_degrees,
+        pv_azimuth_degrees=pv_azimuth_degrees,
+        pv_dc_ac_ratio=pv_dc_ac_ratio,
+        pv_module_name=pv_module_name,
+        pv_inverter_name=pv_inverter_name,
+        pv_modules_per_string=pv_modules_per_string,
+        pv_strings=pv_strings,
+        pv_inverter_count=pv_inverter_count,
+        pv_mppt_input_count=pv_mppt_input_count,
     )
     price_source = _build_live_price_source(
         price_mode,
@@ -364,6 +399,11 @@ def run_live_api_analysis(
         previous_peak_kw=previous_peak_kw,
         progress_callback=progress_callback,
     )
+    pv_warnings = tuple(site_profile.attrs.get("pv_warnings", ()))
+    if pv_warnings:
+        result.warnings = tuple(
+            dict.fromkeys((*result.warnings, *pv_warnings))
+        )
     if fallback_carbon is not None:
         result.warnings = tuple(
             dict.fromkeys(
@@ -422,6 +462,19 @@ def create_site_profile(
     load_profile_mode: str,
     load_archetype: str,
     load_variability_fraction: float,
+    pv_profile_mode: str = "synthetic",
+    weather_csv_path: str | Path | None = None,
+    pv_latitude: float | None = None,
+    pv_longitude: float | None = None,
+    pv_tilt_degrees: float = 20.0,
+    pv_azimuth_degrees: float = 180.0,
+    pv_dc_ac_ratio: float | None = None,
+    pv_module_name: str | None = None,
+    pv_inverter_name: str | None = None,
+    pv_modules_per_string: int = 1,
+    pv_strings: int = 1,
+    pv_inverter_count: int = 1,
+    pv_mppt_input_count: int = 1,
 ) -> pd.DataFrame:
     """Build live-analysis load and available-PV inputs from GUI choices."""
 
@@ -446,20 +499,87 @@ def create_site_profile(
             f"Unsupported load profile mode: {load_profile_mode}."
         )
 
-    pv_source = SyntheticPV(
-        rated_pv_capacity_kw=pv_capacity_kw,
-    )
+    if pv_profile_mode == "synthetic":
+        pv_source = SyntheticPV(rated_pv_capacity_kw=pv_capacity_kw)
+    else:
+        if not weather_csv_path:
+            raise ValueError(
+                "Select a weather CSV for weather-derived PV modelling."
+            )
+        if pv_latitude is None or pv_longitude is None:
+            raise ValueError(
+                "Latitude and longitude are required for weather-derived PV."
+            )
+        weather = load_weather_csv(weather_csv_path)
+        if pv_profile_mode == "weather_generic":
+            pv_source = WeatherDerivedPV(
+                configuration=WeatherDerivedPVConfiguration(
+                    latitude=pv_latitude,
+                    longitude=pv_longitude,
+                    rated_pv_capacity_kw=pv_capacity_kw,
+                    tilt_degrees=pv_tilt_degrees,
+                    azimuth_degrees=pv_azimuth_degrees,
+                    dc_ac_ratio=pv_dc_ac_ratio,
+                ),
+                weather_data=weather,
+                weather_source=f"weather CSV {Path(weather_csv_path).name}",
+            )
+        elif pv_profile_mode == "weather_equipment":
+            if not pv_module_name or not pv_inverter_name:
+                raise ValueError(
+                    "CEC module and inverter names are required for "
+                    "equipment-specific PV."
+                )
+            module = ModuleSpecification.from_cec_database(pv_module_name)
+            inverter = InverterSpecification.from_cec_database(
+                pv_inverter_name,
+                mppt_input_count=pv_mppt_input_count,
+            )
+            configuration = EquipmentSpecificPVConfiguration(
+                latitude=pv_latitude,
+                longitude=pv_longitude,
+                inverter_units=(
+                    InverterUnitConfiguration(
+                        inverter=inverter,
+                        count=pv_inverter_count,
+                        name="inverter",
+                        subarrays=(
+                            SubarrayConfiguration(
+                                module=module,
+                                modules_per_string=pv_modules_per_string,
+                                strings=pv_strings,
+                                tilt_degrees=pv_tilt_degrees,
+                                azimuth_degrees=pv_azimuth_degrees,
+                                name="array",
+                            ),
+                        ),
+                    ),
+                ),
+            )
+            pv_source = EquipmentSpecificPV(
+                configuration=configuration,
+                weather_data=weather,
+                weather_source=f"weather CSV {Path(weather_csv_path).name}",
+            )
+        else:
+            raise ValueError(f"Unsupported PV profile mode: {pv_profile_mode}.")
 
     load_values = load_source.build_load_kw(interval_index)
     pv_values = pv_source.build_pv_available_kw(interval_index)
 
-    return pd.DataFrame(
+    profile = pd.DataFrame(
         {
             "timestamp": horizon.index,
             "load_kw": load_values.to_numpy(dtype=float),
             "pv_kw": pv_values.to_numpy(dtype=float),
         }
     )
+    detailed = getattr(pv_source, "last_result", None)
+    if detailed is not None:
+        profile.attrs["pv_warnings"] = detailed.warnings
+        profile.attrs["pv_provenance"] = detailed.provenance
+        profile.attrs["pv_diagnostics"] = detailed.diagnostics
+    return profile
 
 
 def _build_live_price_source(

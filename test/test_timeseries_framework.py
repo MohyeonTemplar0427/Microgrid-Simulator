@@ -592,17 +592,18 @@ def test_weather_configuration_validates_azimuth_convention():
         )
 
 
-def test_weather_derived_pv_is_an_unimplemented_extension_point():
+def test_weather_derived_pv_requires_weather_data():
+    # Phase 1 implemented this source, so it no longer raises
+    # NotImplementedError -- but it refuses to run without weather rather
+    # than inventing a clear-sky curve dressed up as a weather model.
     configuration = WeatherDerivedPVConfiguration(
         latitude=37.77,
         longitude=-122.42,
         rated_pv_capacity_kw=100.0,
     )
 
-    with pytest.raises(NotImplementedError) as error:
-        WeatherDerivedPV(configuration).build_pv_available_kw(make_index())
-
-    assert "not implemented" in str(error.value)
+    with pytest.raises(TypeError):
+        WeatherDerivedPV(configuration)
 
 
 def test_measured_inverter_pv_is_an_unimplemented_extension_point():
