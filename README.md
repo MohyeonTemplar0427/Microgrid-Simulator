@@ -18,7 +18,7 @@ PV and inverter model. **650 tests pass.**
 
 ---
 
-## What the model does today
+## What the model does 
 
 ```text
   INPUTS                DATA SYSTEM            DECISION              VALIDATION
