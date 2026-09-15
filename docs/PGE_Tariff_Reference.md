@@ -32,6 +32,15 @@ Spread is summer peak minus summer off-peak — the per-kWh margin a battery cap
 | PG&E B-20 Large General Demand-Metered TOU Service | 1,000 kW or more | 107.36636 | 92.02 | 0.17702 | 0.11482 | 0.06220 |
 | PG&E B-20 Option R (Renewables) | B-20 accounts with renewables | 107.36636 | 45.46 | 0.40620 | 0.16434 | 0.24186 |
 | PG&E B-20 Option S (Storage) | B-20 accounts with storage | 107.36636 | 19.01 | 0.40620 | 0.16434 | 0.24186 |
+| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 1) | Residential, opt-in; income tier 1 (CARE-level) | 0.19713 | 0.00 | 0.47708 | 0.34212 | 0.13496 |
+| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 2) | Residential, opt-in; income tier 2 (FERA-level) | 0.39688 | 0.00 | 0.47708 | 0.34212 | 0.13496 |
+| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 3) | Residential, opt-in; income tier 3 (all others) | 0.79343 | 0.00 | 0.47708 | 0.34212 | 0.13496 |
+| PG&E E-ELEC Residential Electric Home (Income Tier 1) | Electrified home, opt-in; income tier 1 (CARE-level) | 0.19713 | 0.00 | 0.55214 | 0.33358 | 0.21856 |
+| PG&E E-ELEC Residential Electric Home (Income Tier 2) | Electrified home, opt-in; income tier 2 (FERA-level) | 0.39688 | 0.00 | 0.55214 | 0.33358 | 0.21856 |
+| PG&E E-ELEC Residential Electric Home (Income Tier 3) | Electrified home, opt-in; income tier 3 (all others) | 0.79343 | 0.00 | 0.55214 | 0.33358 | 0.21856 |
+| PG&E EV2-A Residential Electric Vehicle (Income Tier 1) | Household with an EV; income tier 1 (CARE-level) | 0.19713 | 0.00 | 0.53809 | 0.22558 | 0.31251 |
+| PG&E EV2-A Residential Electric Vehicle (Income Tier 2) | Household with an EV; income tier 2 (FERA-level) | 0.39688 | 0.00 | 0.53809 | 0.22558 | 0.31251 |
+| PG&E EV2-A Residential Electric Vehicle (Income Tier 3) | Household with an EV; income tier 3 (all others) | 0.79343 | 0.00 | 0.53809 | 0.22558 | 0.31251 |
 
 ### Energy rates side by side ($/kWh)
 
@@ -51,6 +60,15 @@ The two summer part-peak blocks (afternoon and evening) always carry the same ra
 | B-20 | 0.17702 | 0.14227 | 0.11482 | 0.15632 | 0.05872 | 0.11460 |
 | B-20 Option R | 0.40620 | 0.22337 | 0.16434 | 0.17396 | 0.09448 | 0.13023 |
 | B-20 Option S | 0.40620 | 0.22337 | 0.16434 | 0.17396 | 0.09448 | 0.13023 |
+| pge_e_tou_d_residential_tier1_bundled_2026_06_01 | 0.47708 | — | 0.34212 | 0.38747 | — | 0.34886 |
+| pge_e_tou_d_residential_tier2_bundled_2026_06_01 | 0.47708 | — | 0.34212 | 0.38747 | — | 0.34886 |
+| pge_e_tou_d_residential_tier3_bundled_2026_06_01 | 0.47708 | — | 0.34212 | 0.38747 | — | 0.34886 |
+| pge_e_elec_residential_tier1_bundled_2026_06_01 | 0.55214 | 0.39026 | 0.33358 | 0.32063 | — | 0.28468 |
+| pge_e_elec_residential_tier2_bundled_2026_06_01 | 0.55214 | 0.39026 | 0.33358 | 0.32063 | — | 0.28468 |
+| pge_e_elec_residential_tier3_bundled_2026_06_01 | 0.55214 | 0.39026 | 0.33358 | 0.32063 | — | 0.28468 |
+| pge_ev2_residential_tier1_bundled_2026_06_01 | 0.53809 | 0.42760 | 0.22558 | 0.41099 | — | 0.22558 |
+| pge_ev2_residential_tier2_bundled_2026_06_01 | 0.53809 | 0.42760 | 0.22558 | 0.41099 | — | 0.22558 |
+| pge_ev2_residential_tier3_bundled_2026_06_01 | 0.53809 | 0.42760 | 0.22558 | 0.41099 | — | 0.22558 |
 
 ### Demand charges side by side ($/kW)
 
@@ -70,8 +88,27 @@ Components apply together, so a summer peak-hour kilowatt on B-19 or B-20 can at
 | B-20 | 39.08 | 41.35 | 9.27 | 2.32 | **92.02** |
 | B-20 Option R | 38.23 | 5.62 | 1.61 | — | **45.46** |
 | B-20 Option S | 16.62 | 1.30 | 0.07 | 1.02 | **19.01** |
+| pge_e_tou_d_residential_tier1_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_e_tou_d_residential_tier2_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_e_tou_d_residential_tier3_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_e_elec_residential_tier1_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_e_elec_residential_tier2_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_e_elec_residential_tier3_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_ev2_residential_tier1_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_ev2_residential_tier2_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| pge_ev2_residential_tier3_bundled_2026_06_01 | — | — | — | — | **0.00** |
 
-Seasons are the same on every schedule: **summer is June 1 through September 30**, winter is October 1 through May 31. Every period applies *every day, including weekends and holidays* — none of these schedules distinguishes weekdays.
+Seasons are the same on every schedule: **summer is June 1 through September 30**, winter is October 1 through May 31. Every *commercial* period applies *every day, including weekends and holidays*. The residential time-of-use schedules do not: their peak is weekday-only, and the Hours column says so. Holidays are not modelled anywhere — a holiday falling on a weekday is priced at the ordinary weekday rate.
+
+Schedules priced by usage tier rather than by hour (E-1) are compared separately below; peak and off-peak have no meaning for them.
+
+### Tiered schedules
+
+| Schedule | Eligibility | Customer $/day | Baseline territory | Tier 1 $/kWh | Tier 2 $/kWh |
+| --- | --- | ---: | :---: | ---: | ---: |
+| PG&E E-1 Residential Tiered (Income Tier 1) | Residential default schedule; income tier 1 (CARE-level) | 0.19713 | T | 0.32561 | 0.40702 |
+| PG&E E-1 Residential Tiered (Income Tier 2) | Residential default schedule; income tier 2 (FERA-level) | 0.39688 | T | 0.32561 | 0.40702 |
+| PG&E E-1 Residential Tiered (Income Tier 3) | Residential default schedule; income tier 3 (all others) | 0.79343 | T | 0.32561 | 0.40702 |
 
 ---
 
@@ -547,6 +584,470 @@ Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure a
 ### Notes
 
 Option S. Requires a storage system rated at least 10 percent of the account's peak demand over the previous twelve months, and is subject to an enrolment cap; neither condition is modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the maximum-demand component.
+
+---
+
+## PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 1)
+
+- **Tariff id**: `pge_e_tou_d_residential_tier1_bundled_2026_06_01`
+- **Eligibility**: Residential, opt-in; income tier 1 (CARE-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.19713 per meter per day (about $5.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-TOU-D.pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 17:00-20:00, Mon-Fri | 0.47708 |
+| summer_off_peak | Summer | all remaining hours | 0.34212 |
+| winter_peak | Winter | 17:00-20:00, Mon-Fri | 0.38747 |
+| winter_off_peak | Winter | all remaining hours | 0.34886 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+E-TOU-D export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. Holidays are NOT modelled -- a public holiday falling on a weekday is priced at the weekday peak rate, which overstates the bill for those few days. Also not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 2)
+
+- **Tariff id**: `pge_e_tou_d_residential_tier2_bundled_2026_06_01`
+- **Eligibility**: Residential, opt-in; income tier 2 (FERA-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.39688 per meter per day (about $11.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-TOU-D.pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 17:00-20:00, Mon-Fri | 0.47708 |
+| summer_off_peak | Summer | all remaining hours | 0.34212 |
+| winter_peak | Winter | 17:00-20:00, Mon-Fri | 0.38747 |
+| winter_off_peak | Winter | all remaining hours | 0.34886 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+E-TOU-D export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. Holidays are NOT modelled -- a public holiday falling on a weekday is priced at the weekday peak rate, which overstates the bill for those few days. Also not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 3)
+
+- **Tariff id**: `pge_e_tou_d_residential_tier3_bundled_2026_06_01`
+- **Eligibility**: Residential, opt-in; income tier 3 (all others)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.79343 per meter per day (about $23.80 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-TOU-D.pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 17:00-20:00, Mon-Fri | 0.47708 |
+| summer_off_peak | Summer | all remaining hours | 0.34212 |
+| winter_peak | Winter | 17:00-20:00, Mon-Fri | 0.38747 |
+| winter_off_peak | Winter | all remaining hours | 0.34886 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+E-TOU-D export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. Holidays are NOT modelled -- a public holiday falling on a weekday is priced at the weekday peak rate, which overstates the bill for those few days. Also not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-1 Residential Tiered (Income Tier 1)
+
+- **Tariff id**: `pge_e1_residential_tier1_bundled_2026_06_01`
+- **Eligibility**: Residential default schedule; income tier 1 (CARE-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.19713 per meter per day (about $5.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-1.pdf>
+
+### Energy rates
+
+Priced by **usage tier**, not by time of day. Tier boundaries are multiples of the baseline allowance, which for the default territory **T** (basic) is 6.5 kWh/day in summer and 7.5 kWh/day in winter. Each day of the billing period earns its own season's quantity.
+
+| Tier | Usage range | $/kWh |
+| --- | --- | ---: |
+| tier_1_baseline | 0% - 100% of baseline | 0.32561 |
+| tier_2_over_baseline | 100% - 400% of baseline | 0.40702 |
+| tier_2_over_400_percent | over 400% of baseline | 0.40702 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+E-1 export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential service, tiered by usage against a baseline allowance; no time-of-use periods and no demand charge. Defaults to baseline territory T (basic) -- territory is a property of the premises, set by county and elevation, so pass an explicit BaselineAllowance when the site is elsewhere. Not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-1 Residential Tiered (Income Tier 2)
+
+- **Tariff id**: `pge_e1_residential_tier2_bundled_2026_06_01`
+- **Eligibility**: Residential default schedule; income tier 2 (FERA-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.39688 per meter per day (about $11.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-1.pdf>
+
+### Energy rates
+
+Priced by **usage tier**, not by time of day. Tier boundaries are multiples of the baseline allowance, which for the default territory **T** (basic) is 6.5 kWh/day in summer and 7.5 kWh/day in winter. Each day of the billing period earns its own season's quantity.
+
+| Tier | Usage range | $/kWh |
+| --- | --- | ---: |
+| tier_1_baseline | 0% - 100% of baseline | 0.32561 |
+| tier_2_over_baseline | 100% - 400% of baseline | 0.40702 |
+| tier_2_over_400_percent | over 400% of baseline | 0.40702 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+E-1 export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential service, tiered by usage against a baseline allowance; no time-of-use periods and no demand charge. Defaults to baseline territory T (basic) -- territory is a property of the premises, set by county and elevation, so pass an explicit BaselineAllowance when the site is elsewhere. Not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-1 Residential Tiered (Income Tier 3)
+
+- **Tariff id**: `pge_e1_residential_tier3_bundled_2026_06_01`
+- **Eligibility**: Residential default schedule; income tier 3 (all others)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.79343 per meter per day (about $23.80 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-1.pdf>
+
+### Energy rates
+
+Priced by **usage tier**, not by time of day. Tier boundaries are multiples of the baseline allowance, which for the default territory **T** (basic) is 6.5 kWh/day in summer and 7.5 kWh/day in winter. Each day of the billing period earns its own season's quantity.
+
+| Tier | Usage range | $/kWh |
+| --- | --- | ---: |
+| tier_1_baseline | 0% - 100% of baseline | 0.32561 |
+| tier_2_over_baseline | 100% - 400% of baseline | 0.40702 |
+| tier_2_over_400_percent | over 400% of baseline | 0.40702 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+E-1 export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential service, tiered by usage against a baseline allowance; no time-of-use periods and no demand charge. Defaults to baseline territory T (basic) -- territory is a property of the premises, set by county and elevation, so pass an explicit BaselineAllowance when the site is elsewhere. Not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-ELEC Residential Electric Home (Income Tier 1)
+
+- **Tariff id**: `pge_e_elec_residential_tier1_bundled_2026_06_01`
+- **Eligibility**: Electrified home, opt-in; income tier 1 (CARE-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.19713 per meter per day (about $5.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-ELEC.pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 16:00-21:00 | 0.55214 |
+| summer_part_peak_afternoon | Summer | 15:00-16:00 | 0.39026 |
+| summer_part_peak_evening | Summer | 21:00-24:00 | 0.39026 |
+| summer_off_peak | Summer | all remaining hours | 0.33358 |
+| winter_peak | Winter | 16:00-21:00 | 0.32063 |
+| winter_part_peak_afternoon | Winter | 15:00-16:00 | 0.29854 |
+| winter_part_peak_evening | Winter | 21:00-24:00 | 0.29854 |
+| winter_off_peak | Winter | all remaining hours | 0.28468 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use for an electrified home; requires a qualifying electric technology (heat pump space or water heating, or an electric vehicle). Peak is 4-9 p.m. every day, including weekends and holidays, so no day-of-week restriction applies. No baseline tiers and no demand charge. Not modelled: the qualifying-technology eligibility test itself, the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-ELEC Residential Electric Home (Income Tier 2)
+
+- **Tariff id**: `pge_e_elec_residential_tier2_bundled_2026_06_01`
+- **Eligibility**: Electrified home, opt-in; income tier 2 (FERA-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.39688 per meter per day (about $11.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-ELEC.pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 16:00-21:00 | 0.55214 |
+| summer_part_peak_afternoon | Summer | 15:00-16:00 | 0.39026 |
+| summer_part_peak_evening | Summer | 21:00-24:00 | 0.39026 |
+| summer_off_peak | Summer | all remaining hours | 0.33358 |
+| winter_peak | Winter | 16:00-21:00 | 0.32063 |
+| winter_part_peak_afternoon | Winter | 15:00-16:00 | 0.29854 |
+| winter_part_peak_evening | Winter | 21:00-24:00 | 0.29854 |
+| winter_off_peak | Winter | all remaining hours | 0.28468 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use for an electrified home; requires a qualifying electric technology (heat pump space or water heating, or an electric vehicle). Peak is 4-9 p.m. every day, including weekends and holidays, so no day-of-week restriction applies. No baseline tiers and no demand charge. Not modelled: the qualifying-technology eligibility test itself, the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E E-ELEC Residential Electric Home (Income Tier 3)
+
+- **Tariff id**: `pge_e_elec_residential_tier3_bundled_2026_06_01`
+- **Eligibility**: Electrified home, opt-in; income tier 3 (all others)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.79343 per meter per day (about $23.80 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_E-ELEC.pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 16:00-21:00 | 0.55214 |
+| summer_part_peak_afternoon | Summer | 15:00-16:00 | 0.39026 |
+| summer_part_peak_evening | Summer | 21:00-24:00 | 0.39026 |
+| summer_off_peak | Summer | all remaining hours | 0.33358 |
+| winter_peak | Winter | 16:00-21:00 | 0.32063 |
+| winter_part_peak_afternoon | Winter | 15:00-16:00 | 0.29854 |
+| winter_part_peak_evening | Winter | 21:00-24:00 | 0.29854 |
+| winter_off_peak | Winter | all remaining hours | 0.28468 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use for an electrified home; requires a qualifying electric technology (heat pump space or water heating, or an electric vehicle). Peak is 4-9 p.m. every day, including weekends and holidays, so no day-of-week restriction applies. No baseline tiers and no demand charge. Not modelled: the qualifying-technology eligibility test itself, the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E EV2-A Residential Electric Vehicle (Income Tier 1)
+
+- **Tariff id**: `pge_ev2_residential_tier1_bundled_2026_06_01`
+- **Eligibility**: Household with an EV; income tier 1 (CARE-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.19713 per meter per day (about $5.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_EV2%20(Sch).pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 16:00-21:00 | 0.53809 |
+| summer_part_peak_afternoon | Summer | 15:00-16:00 | 0.42760 |
+| summer_part_peak_evening | Summer | 21:00-24:00 | 0.42760 |
+| summer_off_peak | Summer | all remaining hours | 0.22558 |
+| winter_peak | Winter | 16:00-21:00 | 0.41099 |
+| winter_part_peak_afternoon | Winter | 15:00-16:00 | 0.39428 |
+| winter_part_peak_evening | Winter | 21:00-24:00 | 0.39428 |
+| winter_off_peak | Winter | all remaining hours | 0.22558 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use for a household with a plug-in electric vehicle (PG&E Schedule EV2, rate option A). Same period structure as E-ELEC -- 4-9 p.m. peak every day including weekends and holidays -- but a far cheaper off-peak, which is the whole point: it prices overnight charging at $0.22558/kWh in both seasons. No baseline tiers and no demand charge. Not modelled: the EV-ownership eligibility test, the California Climate Credit, CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E EV2-A Residential Electric Vehicle (Income Tier 2)
+
+- **Tariff id**: `pge_ev2_residential_tier2_bundled_2026_06_01`
+- **Eligibility**: Household with an EV; income tier 2 (FERA-level)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.39688 per meter per day (about $11.91 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_EV2%20(Sch).pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 16:00-21:00 | 0.53809 |
+| summer_part_peak_afternoon | Summer | 15:00-16:00 | 0.42760 |
+| summer_part_peak_evening | Summer | 21:00-24:00 | 0.42760 |
+| summer_off_peak | Summer | all remaining hours | 0.22558 |
+| winter_peak | Winter | 16:00-21:00 | 0.41099 |
+| winter_part_peak_afternoon | Winter | 15:00-16:00 | 0.39428 |
+| winter_part_peak_evening | Winter | 21:00-24:00 | 0.39428 |
+| winter_off_peak | Winter | all remaining hours | 0.22558 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use for a household with a plug-in electric vehicle (PG&E Schedule EV2, rate option A). Same period structure as E-ELEC -- 4-9 p.m. peak every day including weekends and holidays -- but a far cheaper off-peak, which is the whole point: it prices overnight charging at $0.22558/kWh in both seasons. No baseline tiers and no demand charge. Not modelled: the EV-ownership eligibility test, the California Climate Credit, CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## PG&E EV2-A Residential Electric Vehicle (Income Tier 3)
+
+- **Tariff id**: `pge_ev2_residential_tier3_bundled_2026_06_01`
+- **Eligibility**: Household with an EV; income tier 3 (all others)
+- **Service**: secondary voltage, bundled, residential
+- **Customer charge**: $0.79343 per meter per day (about $23.80 over 30 days)
+- **Effective**: 2026-06-01 (version `2026-06-01`)
+- **Source**: <https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_EV2%20(Sch).pdf>
+
+### Energy rates
+
+| Period | Season | Hours | $/kWh |
+| --- | --- | --- | ---: |
+| summer_peak | Summer | 16:00-21:00 | 0.53809 |
+| summer_part_peak_afternoon | Summer | 15:00-16:00 | 0.42760 |
+| summer_part_peak_evening | Summer | 21:00-24:00 | 0.42760 |
+| summer_off_peak | Summer | all remaining hours | 0.22558 |
+| winter_peak | Winter | 16:00-21:00 | 0.41099 |
+| winter_part_peak_afternoon | Winter | 15:00-16:00 | 0.39428 |
+| winter_part_peak_evening | Winter | 21:00-24:00 | 0.39428 |
+| winter_off_peak | Winter | all remaining hours | 0.22558 |
+
+### Demand charges
+
+None. This schedule bills energy and the customer charge only, so the bill never depends on the monthly peak.
+
+### Export compensation
+
+Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure an explicit fixed or CSV export price in the surplus configuration instead.
+
+### Notes
+
+Residential time-of-use for a household with a plug-in electric vehicle (PG&E Schedule EV2, rate option A). Same period structure as E-ELEC -- 4-9 p.m. peak every day including weekends and holidays -- but a far cheaper off-peak, which is the whole point: it prices overnight charging at $0.22558/kWh in both seasons. No baseline tiers and no demand charge. Not modelled: the EV-ownership eligibility test, the California Climate Credit, CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+
+---
+
+## Rate history
+
+Superseded versions, kept so a study of a past year stays reproducible. A simulation selects the version effective on each local service date; see `src/billing/plans.py`.
+
+| Version | Schedule | Effective | Tier 1 $/kWh | Tier 2 $/kWh | Fixed provision |
+| --- | --- | --- | ---: | ---: | --- |
+| `2024-01-01` | E-1 | 2024-01-01 to 2024-02-29 | 0.42009 | 0.52566 | minimum bill $0.37612/day |
+| `2024-03-01` | E-1 | 2024-03-01 to 2024-03-31 | 0.42101 | 0.52708 | minimum bill $0.39167/day |
+| `2024-04-01` | E-1 | 2024-04-01 to 2024-05-31 | 0.42676 | 0.53406 | minimum bill $0.39167/day |
+| `2024-06-01` | E-1 | 2024-06-01 to 2024-06-30 | 0.42676 | 0.53406 | minimum bill $0.39167/day |
+| `2024-07-01` | E-1 | 2024-07-01 to 2024-08-31 | 0.38828 | 0.48617 | minimum bill $0.39167/day |
+| `2024-09-01` | E-1 | 2024-09-01 to 2024-09-30 | 0.39033 | 0.48870 | minimum bill $0.39167/day |
+| `2024-10-01` | E-1 | 2024-10-01 to 2024-12-31 | 0.40206 | 0.50323 | minimum bill $0.39167/day |
+| `2025-01-01` | E-1 | 2025-01-01 to 2025-02-28 | 0.40122 | 0.50257 | minimum bill $0.39167/day |
+| `2025-03-01` | E-1 | 2025-03-01 to 2025-08-31 | 0.40730 | 0.51031 | minimum bill $0.40317/day |
+| `2025-09-01` | E-1 | 2025-09-01 to 2025-12-31 | 0.39834 | 0.49918 | minimum bill $0.40317/day |
+| `2026-01-01` | E-1 | 2026-01-01 to 2026-02-28 | 0.37839 | 0.47405 | minimum bill $0.40317/day |
+| `2024-01-01` | PG&E E-ELEC Residential Electric Home (2024-01-01 to 2024-02-29) | 2024-01-01 to 2024-02-29 | — | — | customer charge $0.49281/day |
+| `2024-03-01` | PG&E E-ELEC Residential Electric Home (2024-03-01 to 2024-03-31) | 2024-03-01 to 2024-03-31 | — | — | customer charge $0.49281/day |
+| `2024-04-01` | PG&E E-ELEC Residential Electric Home (2024-04-01 to 2024-05-31) | 2024-04-01 to 2024-05-31 | — | — | customer charge $0.49281/day |
+| `2024-06-01` | PG&E E-ELEC Residential Electric Home (2024-06-01 to 2024-06-30) | 2024-06-01 to 2024-06-30 | — | — | customer charge $0.49281/day |
+| `2024-07-01` | PG&E E-ELEC Residential Electric Home (2024-07-01 to 2024-08-31) | 2024-07-01 to 2024-08-31 | — | — | customer charge $0.49281/day |
+| `2024-09-01` | PG&E E-ELEC Residential Electric Home (2024-09-01 to 2024-09-30) | 2024-09-01 to 2024-09-30 | — | — | customer charge $0.49281/day |
+| `2024-10-01` | PG&E E-ELEC Residential Electric Home (2024-10-01 to 2024-12-31) | 2024-10-01 to 2024-12-31 | — | — | customer charge $0.49281/day |
+| `2025-01-01` | PG&E E-ELEC Residential Electric Home (2025-01-01 to 2025-02-28) | 2025-01-01 to 2025-02-28 | — | — | customer charge $0.49281/day |
+| `2025-03-01` | PG&E E-ELEC Residential Electric Home (2025-03-01 to 2025-08-31) | 2025-03-01 to 2025-08-31 | — | — | customer charge $0.49281/day |
+| `2025-09-01` | PG&E E-ELEC Residential Electric Home (2025-09-01 to 2025-12-31) | 2025-09-01 to 2025-12-31 | — | — | customer charge $0.49281/day |
+| `2026-01-01` | PG&E E-ELEC Residential Electric Home (2026-01-01 to 2026-02-28) | 2026-01-01 to 2026-02-28 | — | — | customer charge $0.49281/day |
+| `2024-01-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2024-01-01 to 2024-02-29) | 2024-01-01 to 2024-02-29 | — | — | minimum bill $0.37612/day |
+| `2024-03-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2024-03-01 to 2024-03-31) | 2024-03-01 to 2024-03-31 | — | — | minimum bill $0.39167/day |
+| `2024-04-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2024-04-01 to 2024-05-31) | 2024-04-01 to 2024-05-31 | — | — | minimum bill $0.39167/day |
+| `2024-06-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2024-06-01 to 2024-06-30) | 2024-06-01 to 2024-06-30 | — | — | minimum bill $0.39167/day |
+| `2024-07-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2024-07-01 to 2024-08-31) | 2024-07-01 to 2024-08-31 | — | — | minimum bill $0.39167/day |
+| `2024-09-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2024-09-01 to 2024-09-30) | 2024-09-01 to 2024-09-30 | — | — | minimum bill $0.39167/day |
+| `2024-10-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2024-10-01 to 2024-12-31) | 2024-10-01 to 2024-12-31 | — | — | minimum bill $0.39167/day |
+| `2025-01-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2025-01-01 to 2025-02-28) | 2025-01-01 to 2025-02-28 | — | — | minimum bill $0.39167/day |
+| `2025-03-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2025-03-01 to 2025-08-31) | 2025-03-01 to 2025-08-31 | — | — | minimum bill $0.40317/day |
+| `2025-09-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2025-09-01 to 2025-12-31) | 2025-09-01 to 2025-12-31 | — | — | minimum bill $0.40317/day |
+| `2026-01-01` | PG&E E-TOU-D Residential TOU 5-8 p.m. (2026-01-01 to 2026-02-28) | 2026-01-01 to 2026-02-28 | — | — | minimum bill $0.40317/day |
+| `2024-01-01` | PG&E EV2-A Residential EV (2024-01-01 to 2024-02-29) | 2024-01-01 to 2024-02-29 | — | — | minimum bill $0.37612/day |
+| `2024-03-01` | PG&E EV2-A Residential EV (2024-03-01 to 2024-03-31) | 2024-03-01 to 2024-03-31 | — | — | minimum bill $0.39167/day |
+| `2024-04-01` | PG&E EV2-A Residential EV (2024-04-01 to 2024-05-31) | 2024-04-01 to 2024-05-31 | — | — | minimum bill $0.39167/day |
+| `2024-06-01` | PG&E EV2-A Residential EV (2024-06-01 to 2024-06-30) | 2024-06-01 to 2024-06-30 | — | — | minimum bill $0.39167/day |
+| `2024-07-01` | PG&E EV2-A Residential EV (2024-07-01 to 2024-08-31) | 2024-07-01 to 2024-08-31 | — | — | minimum bill $0.39167/day |
+| `2024-09-01` | PG&E EV2-A Residential EV (2024-09-01 to 2024-09-30) | 2024-09-01 to 2024-09-30 | — | — | minimum bill $0.39167/day |
+| `2024-10-01` | PG&E EV2-A Residential EV (2024-10-01 to 2024-12-31) | 2024-10-01 to 2024-12-31 | — | — | minimum bill $0.39167/day |
+| `2025-01-01` | PG&E EV2-A Residential EV (2025-01-01 to 2025-02-28) | 2025-01-01 to 2025-02-28 | — | — | minimum bill $0.39167/day |
+| `2025-03-01` | PG&E EV2-A Residential EV (2025-03-01 to 2025-08-31) | 2025-03-01 to 2025-08-31 | — | — | minimum bill $0.40317/day |
+| `2025-09-01` | PG&E EV2-A Residential EV (2025-09-01 to 2025-12-31) | 2025-09-01 to 2025-12-31 | — | — | minimum bill $0.40317/day |
+| `2026-01-01` | PG&E EV2-A Residential EV (2026-01-01 to 2026-02-28) | 2026-01-01 to 2026-02-28 | — | — | minimum bill $0.40317/day |
 
 ---
 

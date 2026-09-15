@@ -10,11 +10,17 @@ only describes what a tariff *is*. Charges are computed in
 :mod:`src.billing.charges`.
 """
 
+from __future__ import annotations
+
 from dataclasses import dataclass, field
 from datetime import date
 from enum import StrEnum
+from typing import TYPE_CHECKING
 
 import pandas as pd
+
+if TYPE_CHECKING:  # avoids a cycle: baseline imports this module
+    from .baseline import BaselineAllowance
 
 
 class ServiceVoltageClass(StrEnum):
@@ -51,6 +57,15 @@ class DemandChargeBasis(StrEnum):
     PART_PEAK_PERIOD = "part_peak_period"
 
 
+#: Pandas weekday numbers, Monday 0 through Sunday 6. Same convention as
+#: :data:`src.signal_pipeline.price_sources.ALL_DAYS`, deliberately, so the
+#: two places that describe a time-of-use window agree.
+ALL_DAYS = frozenset(range(7))
+
+#: Monday through Friday, for schedules whose peak excludes the weekend.
+WEEKDAYS = frozenset(range(5))
+
+
 class TariffError(ValueError):
     pass
 
@@ -62,6 +77,12 @@ class TOUPeriod:
     ``start_hour`` is inclusive and ``end_hour`` exclusive, in local
     wall-clock hours. A block may wrap past midnight. ``months`` restricts the
     block to specific calendar months (1-12); empty means all months.
+
+    ``days`` restricts the block to weekdays (Monday 0 through Sunday 6);
+    it defaults to all seven. The PG&E B-series never needed it -- every one
+    of its periods applies "every day, including weekends and holidays" --
+    but residential time-of-use peaks are Monday-to-Friday, and charging a
+    weekend evening at the peak rate would overstate the bill.
 
     ``demand_basis`` marks which demand-charge basis this block's *hours*
     also define, if any -- e.g. the same 4-9pm window priced for energy is
@@ -77,6 +98,7 @@ class TOUPeriod:
     end_hour: int
     season: Season | None = None
     months: frozenset[int] = frozenset()
+    days: frozenset[int] = ALL_DAYS
     priority: int = 0
     demand_basis: DemandChargeBasis | None = None
     billing_category: str | None = None
@@ -104,6 +126,19 @@ class TOUPeriod:
                 f"{self.name!r} has invalid months {sorted(invalid_months)}."
             )
 
+        if not self.days:
+            raise TariffError(
+                f"Period {self.name!r} applies to no days of the week."
+            )
+
+        invalid_days = set(self.days) - ALL_DAYS
+
+        if invalid_days:
+            raise TariffError(
+                f"Period {self.name!r} has invalid days "
+                f"{sorted(invalid_days)}. Monday is 0, Sunday is 6."
+            )
+
     @property
     def wraps_midnight(self) -> bool:
         return self.end_hour < self.start_hour
@@ -113,8 +148,14 @@ class TOUPeriod:
         hours,
         months,
         seasons,
+        weekdays=None,
     ):
-        """Boolean mask of intervals this block covers."""
+        """Boolean mask of intervals this block covers.
+
+        ``weekdays`` is optional so a caller that predates day-of-week
+        support keeps working; when it is omitted the block is treated as
+        applying every day, which is what every all-week period means.
+        """
 
         if self.start_hour == self.end_hour:
             in_hours = hours == hours  # full day
@@ -130,6 +171,9 @@ class TOUPeriod:
 
         if self.season is not None:
             mask = mask & (seasons == self.season.value)
+
+        if weekdays is not None and self.days != ALL_DAYS:
+            mask = mask & weekdays.isin(list(self.days))
 
         return mask
 
@@ -158,6 +202,37 @@ class ExportCompensationRule:
     rate_per_kWh: float | None = None
     implemented: bool = False
     note: str = ""
+
+
+@dataclass(frozen=True)
+class EnergyTier:
+    """One usage tier, bounded as a multiple of the baseline allowance.
+
+    ``upper_bound_fraction`` is the top of the tier expressed against the
+    period's baseline: 1.0 is "up to 100% of baseline", 4.0 is "up to 400%",
+    and ``None`` is the unbounded top tier. Tiers are stated this way, rather
+    than in kWh, because the allowance itself depends on the territory,
+    season and number of days in the period.
+    """
+
+    name: str
+    rate_per_kWh: float
+    upper_bound_fraction: float | None = None
+
+    def __post_init__(self) -> None:
+        if self.rate_per_kWh < 0:
+            raise TariffError(
+                f"Tier rate for {self.name!r} must be nonnegative."
+            )
+
+        if (
+            self.upper_bound_fraction is not None
+            and self.upper_bound_fraction <= 0
+        ):
+            raise TariffError(
+                f"Tier {self.name!r} must end above 0% of baseline; received "
+                f"{self.upper_bound_fraction}."
+            )
 
 
 @dataclass(frozen=True)
@@ -196,7 +271,21 @@ class TariffDefinition:
     effective_end: date | None = None
     daily_customer_charge: float | None = None
     monthly_customer_charge: float | None = None
+    #: A **floor** on the period's bill, in $ per meter per day, not a charge
+    #: added to it. PG&E residential service carried a "Delivery Minimum Bill
+    #: Amount" of this shape before the income-graduated Base Services Charge
+    #: replaced it; a household above the floor pays nothing for it, which is
+    #: why it must never be modelled as a customer charge.
+    daily_minimum_bill: float | None = None
     demand_charges: tuple[DemandChargeComponent, ...] = ()
+    #: Usage tiers, lowest first, with exactly one unbounded tier last. Empty
+    #: means the schedule prices every kWh at its TOU rate, which is what
+    #: every commercial schedule here does.
+    energy_tiers: tuple[EnergyTier, ...] = ()
+    #: Default baseline allowance for a customer on this schedule. Territory
+    #: is really a property of the *premises*, not the tariff, so billing may
+    #: override it; this is the starting point when nobody says otherwise.
+    baseline: "BaselineAllowance | None" = None
     export_rule: ExportCompensationRule = field(
         default_factory=ExportCompensationRule
     )
@@ -211,10 +300,51 @@ class TariffDefinition:
         if (
             self.daily_customer_charge is None
             and self.monthly_customer_charge is None
+            and self.daily_minimum_bill is None
         ):
             raise TariffError(
-                f"Tariff {self.tariff_id!r} defines no customer charge."
+                f"Tariff {self.tariff_id!r} defines neither a customer charge "
+                f"nor a minimum bill."
             )
+
+        if (
+            self.daily_minimum_bill is not None
+            and self.daily_minimum_bill < 0
+        ):
+            raise TariffError(
+                f"Tariff {self.tariff_id!r} has a negative minimum bill."
+            )
+
+        if self.energy_tiers:
+            bounded = [
+                tier.upper_bound_fraction
+                for tier in self.energy_tiers
+                if tier.upper_bound_fraction is not None
+            ]
+
+            if len(bounded) != len(self.energy_tiers) - 1:
+                raise TariffError(
+                    f"Tariff {self.tariff_id!r} must end with exactly one "
+                    f"unbounded tier; the rest need an upper bound."
+                )
+
+            if self.energy_tiers[-1].upper_bound_fraction is not None:
+                raise TariffError(
+                    f"Tariff {self.tariff_id!r} puts a bounded tier last; "
+                    f"the top tier must be unbounded."
+                )
+
+            if bounded != sorted(bounded) or len(set(bounded)) != len(bounded):
+                raise TariffError(
+                    f"Tariff {self.tariff_id!r} tier bounds must increase; "
+                    f"received {bounded}."
+                )
+
+            if self.baseline is None:
+                raise TariffError(
+                    f"Tariff {self.tariff_id!r} defines tiers but no default "
+                    f"baseline allowance, so a tier boundary has no size."
+                )
 
         if (
             self.effective_end is not None
@@ -243,6 +373,7 @@ class TariffDefinition:
 
         hours = pd.Series(timestamps.hour)
         months = pd.Series(timestamps.month)
+        weekdays = pd.Series(timestamps.weekday)
         seasons = self.season_for(timestamps)
 
         rates = pd.Series(float("nan"), index=range(len(timestamps)))
@@ -254,7 +385,7 @@ class TariffDefinition:
             key=lambda p: p.priority,
             reverse=True,
         ):
-            covered = period.matches(hours, months, seasons)
+            covered = period.matches(hours, months, seasons, weekdays)
             rates = rates.mask(covered & rates.isna(), period.rate_per_kWh)
 
         if rates.isna().any():
@@ -270,6 +401,7 @@ class TariffDefinition:
     def period_names(self, timestamps: pd.DatetimeIndex) -> pd.Series:
         hours = pd.Series(timestamps.hour)
         months = pd.Series(timestamps.month)
+        weekdays = pd.Series(timestamps.weekday)
         seasons = self.season_for(timestamps)
 
         names = pd.Series(None, index=range(len(timestamps)), dtype=object)
@@ -279,7 +411,7 @@ class TariffDefinition:
             key=lambda p: p.priority,
             reverse=True,
         ):
-            covered = period.matches(hours, months, seasons)
+            covered = period.matches(hours, months, seasons, weekdays)
             names = names.mask(covered & names.isna(), period.name)
 
         return names
@@ -311,6 +443,46 @@ class TariffDefinition:
         }
         return names.map(category_by_name)
 
+    def split_tier_kWh(
+        self,
+        total_kWh: float,
+        allowance_kWh: float,
+    ) -> dict[str, float]:
+        """Split one period's usage across the tiers, lowest tier first.
+
+        Tier boundaries are multiples of ``allowance_kWh``, so this is where
+        "101% - 400% of Baseline" becomes a number of kWh. An untiered tariff
+        returns an empty mapping; its energy is priced per interval instead.
+        """
+
+        if not self.energy_tiers:
+            return {}
+
+        if total_kWh < 0:
+            raise TariffError("Tiered usage must not be negative.")
+
+        if allowance_kWh <= 0:
+            raise TariffError(
+                f"Tariff {self.tariff_id!r} needs a positive baseline "
+                f"allowance to place tier boundaries."
+            )
+
+        split: dict[str, float] = {}
+        consumed = 0.0
+
+        for tier in self.energy_tiers:
+            if tier.upper_bound_fraction is None:
+                ceiling = total_kWh
+            else:
+                ceiling = min(
+                    total_kWh, tier.upper_bound_fraction * allowance_kWh
+                )
+
+            split[tier.name] = max(0.0, ceiling - consumed)
+            consumed = max(consumed, ceiling)
+
+        return split
+
     def customer_charge_for(self, billing_days: float) -> float:
         """Customer charge for one meter over ``billing_days`` days."""
 
@@ -320,8 +492,24 @@ class TariffDefinition:
         if self.daily_customer_charge is not None:
             return self.daily_customer_charge * billing_days
 
-        # A monthly charge is prorated on a 30-day month.
-        return self.monthly_customer_charge * (billing_days / 30.0)
+        if self.monthly_customer_charge is not None:
+            # A monthly charge is prorated on a 30-day month.
+            return self.monthly_customer_charge * (billing_days / 30.0)
+
+        # A schedule whose only fixed provision is a minimum bill adds
+        # nothing per day; the floor is applied to the finished bill instead.
+        return 0.0
+
+    def minimum_bill_for(self, billing_days: float) -> float:
+        """The floor this schedule puts under one meter's period bill."""
+
+        if billing_days < 0:
+            raise TariffError("billing_days must not be negative.")
+
+        if self.daily_minimum_bill is None:
+            return 0.0
+
+        return self.daily_minimum_bill * billing_days
 
 
 TARIFF_REGISTRY: dict[str, TariffDefinition] = {}

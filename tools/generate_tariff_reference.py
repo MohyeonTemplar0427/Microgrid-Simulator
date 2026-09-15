@@ -16,7 +16,11 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPOSITORY_ROOT))
 
 from src.billing import get_tariff, supported_tariffs  # noqa: E402
-from src.billing.tariffs import DemandChargeBasis  # noqa: E402
+from src.billing.tariffs import (  # noqa: E402
+    ALL_DAYS,
+    DemandChargeBasis,
+    Season,
+)
 
 OUTPUT_PATH = REPOSITORY_ROOT / "docs" / "PGE_Tariff_Reference.md"
 
@@ -34,6 +38,64 @@ TARIFF_ORDER = (
     "pge_b20_secondary_bundled_2026_03_01",
     "pge_b20_secondary_option_r_bundled_2026_03_01",
     "pge_b20_secondary_option_s_bundled_2026_03_01",
+    "pge_e_tou_d_residential_tier1_bundled_2026_06_01",
+    "pge_e_tou_d_residential_tier2_bundled_2026_06_01",
+    "pge_e_tou_d_residential_tier3_bundled_2026_06_01",
+    "pge_e1_residential_tier1_bundled_2026_06_01",
+    "pge_e1_residential_tier2_bundled_2026_06_01",
+    "pge_e1_residential_tier3_bundled_2026_06_01",
+    "pge_e_elec_residential_tier1_bundled_2026_06_01",
+    "pge_e_elec_residential_tier2_bundled_2026_06_01",
+    "pge_e_elec_residential_tier3_bundled_2026_06_01",
+    "pge_ev2_residential_tier1_bundled_2026_06_01",
+    "pge_ev2_residential_tier2_bundled_2026_06_01",
+    "pge_ev2_residential_tier3_bundled_2026_06_01",
+    # Superseded versions. These are rendered as a rate history rather than
+    # as full sections: they describe the same schedules at earlier dates.
+    "pge_e1_residential_bundled_2024_01_01",
+    "pge_e1_residential_bundled_2024_03_01",
+    "pge_e1_residential_bundled_2024_04_01",
+    "pge_e1_residential_bundled_2024_06_01",
+    "pge_e1_residential_bundled_2024_07_01",
+    "pge_e1_residential_bundled_2024_09_01",
+    "pge_e1_residential_bundled_2024_10_01",
+    "pge_e1_residential_bundled_2025_01_01",
+    "pge_e1_residential_bundled_2025_03_01",
+    "pge_e1_residential_bundled_2025_09_01",
+    "pge_e1_residential_bundled_2026_01_01",
+    "pge_e_elec_residential_bundled_2024_01_01",
+    "pge_e_elec_residential_bundled_2024_03_01",
+    "pge_e_elec_residential_bundled_2024_04_01",
+    "pge_e_elec_residential_bundled_2024_06_01",
+    "pge_e_elec_residential_bundled_2024_07_01",
+    "pge_e_elec_residential_bundled_2024_09_01",
+    "pge_e_elec_residential_bundled_2024_10_01",
+    "pge_e_elec_residential_bundled_2025_01_01",
+    "pge_e_elec_residential_bundled_2025_03_01",
+    "pge_e_elec_residential_bundled_2025_09_01",
+    "pge_e_elec_residential_bundled_2026_01_01",
+    "pge_e_tou_d_residential_bundled_2024_01_01",
+    "pge_e_tou_d_residential_bundled_2024_03_01",
+    "pge_e_tou_d_residential_bundled_2024_04_01",
+    "pge_e_tou_d_residential_bundled_2024_06_01",
+    "pge_e_tou_d_residential_bundled_2024_07_01",
+    "pge_e_tou_d_residential_bundled_2024_09_01",
+    "pge_e_tou_d_residential_bundled_2024_10_01",
+    "pge_e_tou_d_residential_bundled_2025_01_01",
+    "pge_e_tou_d_residential_bundled_2025_03_01",
+    "pge_e_tou_d_residential_bundled_2025_09_01",
+    "pge_e_tou_d_residential_bundled_2026_01_01",
+    "pge_ev2_residential_bundled_2024_01_01",
+    "pge_ev2_residential_bundled_2024_03_01",
+    "pge_ev2_residential_bundled_2024_04_01",
+    "pge_ev2_residential_bundled_2024_06_01",
+    "pge_ev2_residential_bundled_2024_07_01",
+    "pge_ev2_residential_bundled_2024_09_01",
+    "pge_ev2_residential_bundled_2024_10_01",
+    "pge_ev2_residential_bundled_2025_01_01",
+    "pge_ev2_residential_bundled_2025_03_01",
+    "pge_ev2_residential_bundled_2025_09_01",
+    "pge_ev2_residential_bundled_2026_01_01",
 )
 
 ELIGIBILITY = {
@@ -49,6 +111,42 @@ ELIGIBILITY = {
     "pge_b20_secondary_bundled_2026_03_01": "1,000 kW or more",
     "pge_b20_secondary_option_r_bundled_2026_03_01": "B-20 accounts with renewables",
     "pge_b20_secondary_option_s_bundled_2026_03_01": "B-20 accounts with storage",
+    "pge_e_tou_d_residential_tier1_bundled_2026_06_01": (
+        "Residential, opt-in; income tier 1 (CARE-level)"
+    ),
+    "pge_e_tou_d_residential_tier2_bundled_2026_06_01": (
+        "Residential, opt-in; income tier 2 (FERA-level)"
+    ),
+    "pge_e_tou_d_residential_tier3_bundled_2026_06_01": (
+        "Residential, opt-in; income tier 3 (all others)"
+    ),
+    "pge_e1_residential_tier1_bundled_2026_06_01": (
+        "Residential default schedule; income tier 1 (CARE-level)"
+    ),
+    "pge_e1_residential_tier2_bundled_2026_06_01": (
+        "Residential default schedule; income tier 2 (FERA-level)"
+    ),
+    "pge_e1_residential_tier3_bundled_2026_06_01": (
+        "Residential default schedule; income tier 3 (all others)"
+    ),
+    "pge_e_elec_residential_tier1_bundled_2026_06_01": (
+        "Electrified home, opt-in; income tier 1 (CARE-level)"
+    ),
+    "pge_e_elec_residential_tier2_bundled_2026_06_01": (
+        "Electrified home, opt-in; income tier 2 (FERA-level)"
+    ),
+    "pge_e_elec_residential_tier3_bundled_2026_06_01": (
+        "Electrified home, opt-in; income tier 3 (all others)"
+    ),
+    "pge_ev2_residential_tier1_bundled_2026_06_01": (
+        "Household with an EV; income tier 1 (CARE-level)"
+    ),
+    "pge_ev2_residential_tier2_bundled_2026_06_01": (
+        "Household with an EV; income tier 2 (FERA-level)"
+    ),
+    "pge_ev2_residential_tier3_bundled_2026_06_01": (
+        "Household with an EV; income tier 3 (all others)"
+    ),
 }
 
 HOUR_LABELS = {
@@ -76,6 +174,18 @@ def hours_of(period) -> str:
             for m in sorted(period.months)
         )
         label += f" ({months} only)"
+    # A weekday-only window must say so here, not only in the notes: the
+    # table is what gets read, and "17:00-20:00" alone would describe a
+    # residential peak that also covered the weekend.
+    if period.days != ALL_DAYS:
+        names = "Mon Tue Wed Thu Fri Sat Sun".split()
+        selected = sorted(period.days)
+        span = (
+            f"{names[selected[0]]}-{names[selected[-1]]}"
+            if selected == list(range(selected[0], selected[-1] + 1))
+            else ", ".join(names[d] for d in selected)
+        )
+        label += f", {span}"
     return label
 
 
@@ -99,6 +209,94 @@ DEMAND_COLUMNS = (
     ("part_peak_period_demand_summer", "Summer part-peak-period"),
     ("peak_period_demand_winter", "Winter peak-period"),
 )
+
+
+def current_order() -> tuple[str, ...]:
+    """Tariff ids still in effect, in display order.
+
+    A version with an effective end has been superseded. It stays registered
+    so a historical study stays reproducible, but it is described in the rate
+    history rather than given a section of its own.
+    """
+
+    return tuple(
+        tariff_id
+        for tariff_id in TARIFF_ORDER
+        if get_tariff(tariff_id).effective_end is None
+    )
+
+
+def superseded_order() -> tuple[str, ...]:
+    return tuple(
+        tariff_id
+        for tariff_id in TARIFF_ORDER
+        if get_tariff(tariff_id).effective_end is not None
+    )
+
+
+def rate_history_lines() -> list[str]:
+    superseded = superseded_order()
+
+    if not superseded:
+        return []
+
+    lines = [
+        "## Rate history",
+        "",
+        "Superseded versions, kept so a study of a past year stays "
+        "reproducible. A simulation selects the version effective on each "
+        "local service date; see `src/billing/plans.py`.",
+        "",
+        "| Version | Schedule | Effective | Tier 1 $/kWh | Tier 2 $/kWh | Fixed provision |",
+        "| --- | --- | --- | ---: | ---: | --- |",
+    ]
+
+    for tariff_id in superseded:
+        tariff = get_tariff(tariff_id)
+        tiers = tariff.energy_tiers
+        tier_1 = f"{tiers[0].rate_per_kWh:.5f}" if tiers else "—"
+        tier_2 = f"{tiers[1].rate_per_kWh:.5f}" if len(tiers) > 1 else "—"
+
+        if tariff.daily_minimum_bill is not None:
+            fixed = f"minimum bill ${tariff.daily_minimum_bill:.5f}/day"
+        elif tariff.daily_customer_charge is not None:
+            fixed = f"customer charge ${tariff.daily_customer_charge:.5f}/day"
+        else:
+            fixed = "—"
+
+        schedule = "E-1" if "_e1_" in tariff_id else tariff.name
+        lines.append(
+            f"| `{tariff.version}` | {schedule} "
+            f"| {tariff.effective_start} to {tariff.effective_end} "
+            f"| {tier_1} | {tier_2} | {fixed} |"
+        )
+
+    lines += ["", "---", ""]
+    return lines
+
+
+def time_priced_order() -> tuple[str, ...]:
+    """Tariff ids whose energy price varies by hour, in display order.
+
+    The side-by-side tables compare peak against off-peak, which a tiered
+    schedule has no equivalent of: E-1 prices by cumulative volume, not by
+    time. Listing one in those tables would invent a comparison, so tiered
+    schedules are compared separately instead.
+    """
+
+    return tuple(
+        tariff_id
+        for tariff_id in current_order()
+        if not get_tariff(tariff_id).energy_tiers
+    )
+
+
+def tier_priced_order() -> tuple[str, ...]:
+    return tuple(
+        tariff_id
+        for tariff_id in current_order()
+        if get_tariff(tariff_id).energy_tiers
+    )
 
 
 def energy_rate_columns(tariff) -> dict[str, float | None]:
@@ -140,7 +338,7 @@ def comparison_tables() -> list[str]:
     ) + " |"
     lines += [header, "| --- | " + " | ".join("---:" for _ in ENERGY_COLUMNS) + " |"]
 
-    for tariff_id in TARIFF_ORDER:
+    for tariff_id in time_priced_order():
         tariff = get_tariff(tariff_id)
         values = energy_rate_columns(tariff)
         lines.append(
@@ -164,7 +362,7 @@ def comparison_tables() -> list[str]:
         "| --- | " + " | ".join("---:" for _ in DEMAND_COLUMNS) + " | ---: |",
     ]
 
-    for tariff_id in TARIFF_ORDER:
+    for tariff_id in time_priced_order():
         tariff = get_tariff(tariff_id)
         rates = {c.name: c.rate_per_kW for c in tariff.demand_charges}
         total = sum(rates.values())
@@ -225,18 +423,49 @@ def render_tariff(tariff_id: str) -> list[str]:
         "",
         "### Energy rates",
         "",
-        "| Period | Season | Hours | $/kWh |",
-        "| --- | --- | --- | ---: |",
     ]
 
-    for period in sorted(
-        tariff.tou_periods,
-        key=lambda p: (season_of(p), -p.priority, p.start_hour),
-    ):
-        lines.append(
-            f"| {period.name} | {season_of(period)} | {hours_of(period)} "
-            f"| {period.rate_per_kWh:.5f} |"
-        )
+    if tariff.energy_tiers:
+        baseline = tariff.baseline
+        lines += [
+            f"Priced by **usage tier**, not by time of day. Tier boundaries "
+            f"are multiples of the baseline allowance, which for the default "
+            f"territory **{baseline.territory.value}** "
+            f"({baseline.code.value.replace('_', '-')}) is "
+            f"{baseline.quantity_per_day(Season.SUMMER)} kWh/day in summer "
+            f"and {baseline.quantity_per_day(Season.WINTER)} kWh/day in "
+            f"winter. Each day of the billing period earns its own season's "
+            f"quantity.",
+            "",
+            "| Tier | Usage range | $/kWh |",
+            "| --- | --- | ---: |",
+        ]
+        lower = 0.0
+        for tier in tariff.energy_tiers:
+            if tier.upper_bound_fraction is None:
+                span = f"over {lower:.0%} of baseline"
+            else:
+                span = (
+                    f"{lower:.0%} - {tier.upper_bound_fraction:.0%} "
+                    f"of baseline"
+                )
+                lower = tier.upper_bound_fraction
+            lines.append(
+                f"| {tier.name} | {span} | {tier.rate_per_kWh:.5f} |"
+            )
+    else:
+        lines += [
+            "| Period | Season | Hours | $/kWh |",
+            "| --- | --- | --- | ---: |",
+        ]
+        for period in sorted(
+            tariff.tou_periods,
+            key=lambda p: (season_of(p), -p.priority, p.start_hour),
+        ):
+            lines.append(
+                f"| {period.name} | {season_of(period)} | {hours_of(period)} "
+                f"| {period.rate_per_kWh:.5f} |"
+            )
 
     lines += ["", "### Demand charges", ""]
     if not tariff.demand_charges:
@@ -335,7 +564,7 @@ def build_document() -> str:
         "| --- | --- | ---: | ---: | ---: | ---: | ---: |",
     ]
 
-    for tariff_id in TARIFF_ORDER:
+    for tariff_id in time_priced_order():
         tariff = get_tariff(tariff_id)
         rates = {p.name: p.rate_per_kWh for p in tariff.tou_periods}
         spread = rates["summer_peak"] - rates["summer_off_peak"]
@@ -354,18 +583,46 @@ def build_document() -> str:
 
     lines += [
         "Seasons are the same on every schedule: **summer is June 1 through "
-        "September 30**, winter is October 1 through May 31. Every period "
-        "applies *every day, including weekends and holidays* — none of "
-        "these schedules distinguishes weekdays.",
+        "September 30**, winter is October 1 through May 31. Every "
+        "*commercial* period applies *every day, including weekends and "
+        "holidays*. The residential time-of-use schedules do not: their peak "
+        "is weekday-only, and the Hours column says so. Holidays are not "
+        "modelled anywhere — a holiday falling on a weekday is priced at the "
+        "ordinary weekday rate.",
+        "",
+        "Schedules priced by usage tier rather than by hour (E-1) are "
+        "compared separately below; peak and off-peak have no meaning for "
+        "them.",
+        "",
+        "### Tiered schedules",
+        "",
+        "| Schedule | Eligibility | Customer $/day | Baseline territory | Tier 1 $/kWh | Tier 2 $/kWh |",
+        "| --- | --- | ---: | :---: | ---: | ---: |",
+    ]
+
+    for tariff_id in tier_priced_order():
+        tariff = get_tariff(tariff_id)
+        tiers = tariff.energy_tiers
+        lines.append(
+            f"| {tariff.name} | {ELIGIBILITY.get(tariff_id, '')} "
+            f"| {tariff.daily_customer_charge:,.5f} "
+            f"| {tariff.baseline.territory.value} "
+            f"| {tiers[0].rate_per_kWh:.5f} "
+            f"| {tiers[1].rate_per_kWh:.5f} |"
+        )
+
+    lines += [
         "",
         "---",
         "",
     ]
 
-    for tariff_id in TARIFF_ORDER:
+    for tariff_id in current_order():
         lines += render_tariff(tariff_id)
         lines.append("---")
         lines.append("")
+
+    lines += rate_history_lines()
 
     lines += [
         "## Not modelled",

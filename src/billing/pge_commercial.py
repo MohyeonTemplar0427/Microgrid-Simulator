@@ -1,14 +1,19 @@
-"""PG&E tariff definitions.
+"""PG&E commercial tariff definitions.
 
 Rates below are transcribed from PG&E's published tariff book and are valid
 for the stated effective date only. They are **versioned data**: when PG&E
 files new rates, add a new :class:`TariffDefinition` with its own effective
 window rather than editing these numbers in place, so historical analyses stay
 reproducible.
+
+The B-series: small general service through large demand-metered TOU.
+Every period here applies every day, including weekends and holidays,
+which is why none of them sets ``TOUPeriod.days``.
 """
 
 from datetime import date
 
+from .pge_common import PGE_SEASONS
 from .tariffs import (
     CustomerClass,
     DemandChargeBasis,
@@ -20,15 +25,15 @@ from .tariffs import (
     ServiceVoltageClass,
     TOUPeriod,
     TariffDefinition,
+    WEEKDAYS,
     register_tariff,
 )
+
 
 B10_SOURCE_URL = (
     "https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_B-10.pdf"
 )
 
-# Summer is June 1 through September 30; winter is October 1 through May 31.
-PGE_SEASONS = SeasonDefinition(summer_months=frozenset({6, 7, 8, 9}))
 
 B1_SOURCE_URL = (
     "https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_B-1.pdf"

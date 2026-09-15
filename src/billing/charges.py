@@ -17,14 +17,22 @@ Billing periods are calendar months. A horizon spanning several months gets a
 separate peak, and a separate customer charge, for each.
 """
 
+from __future__ import annotations
+
 from dataclasses import dataclass, field
 from collections.abc import Mapping
+from datetime import date
+from typing import TYPE_CHECKING
 
 import numpy as np
 import pandas as pd
 
 from .meter_topology import MeterTopology, MeterTopologyMode
 from .tariffs import DemandChargeBasis, TariffDefinition, TariffError
+
+if TYPE_CHECKING:
+    from .baseline import BaselineAllowance
+    from .plans import RatePlan
 
 
 class BillingError(ValueError):
@@ -258,8 +266,15 @@ def calculate_meter_billing(
     previous_peak_kw: float | None = None,
     utility_account_count: int = 1,
     expect_full_periods: bool = True,
+    baseline: "BaselineAllowance | None" = None,
 ) -> tuple[BillingPeriodResult, ...]:
-    """Bill one meter across every calendar-month period in the horizon."""
+    """Bill one meter across every calendar-month period in the horizon.
+
+    ``baseline`` overrides the tariff's default allowance for a tiered
+    schedule. Baseline territory belongs to the premises rather than to the
+    rate, so a caller that knows the site's territory should say so; without
+    one the tariff's own default is used.
+    """
 
     if "timestamp" not in dispatch.columns:
         raise BillingError("Dispatch data is missing a timestamp column.")
@@ -391,9 +406,39 @@ def calculate_meter_billing(
                 f"the simulated window; an actual bill can only be higher."
             )
 
-        energy_kWh_by_period: dict[str, float] = {}
-        energy_charge_by_period: dict[str, float] = {}
-        for category in dict.fromkeys(period_energy_categories):
+        # A tiered schedule prices the period's *total*, not each interval:
+        # the rate of a kWh depends on how much came before it. Tier sizes
+        # come from the baseline allowance the period earned, so the whole
+        # calculation replaces the per-interval product rather than adjusting
+        # it. The per-period breakdown then reports tiers instead of TOU
+        # blocks, which is what such a bill actually itemises.
+        period_total_kWh = float(import_kWh.sum())
+        tier_split: dict[str, float] = {}
+
+        if tariff.energy_tiers:
+            allowance = (baseline or tariff.baseline).allowance_kWh(
+                period_timestamps, tariff.season_definition
+            )
+            tier_split = tariff.split_tier_kWh(period_total_kWh, allowance)
+            rate_by_tier = {
+                tier.name: tier.rate_per_kWh for tier in tariff.energy_tiers
+            }
+            energy_kWh_by_period = dict(tier_split)
+            energy_charge_by_period = {
+                name: kWh * rate_by_tier[name]
+                for name, kWh in tier_split.items()
+            }
+            total_energy_charge = float(
+                sum(energy_charge_by_period.values())
+            )
+        else:
+            total_energy_charge = float((import_kWh * period_rates).sum())
+            energy_kWh_by_period = {}
+            energy_charge_by_period = {}
+
+        for category in (
+            () if tariff.energy_tiers else dict.fromkeys(period_energy_categories)
+        ):
             category_mask = period_energy_categories == category
             energy_kWh_by_period[str(category)] = float(
                 import_kWh[category_mask].sum()
@@ -413,7 +458,7 @@ def calculate_meter_billing(
                     * utility_account_count
                 ),
                 import_energy_kWh=float(import_kWh.sum()),
-                import_energy_charge=float((import_kWh * period_rates).sum()),
+                import_energy_charge=total_energy_charge,
                 billed_peak_kw=billed_peak,
                 simulated_peak_kw=simulated_peak,
                 demand_charge=float(demand_charge),
@@ -662,3 +707,298 @@ def _is_full_month(
     )
 
     return timestamps.equals(expected)
+
+
+@dataclass(frozen=True)
+class VersionSegmentResult:
+    """What one tariff version billed inside one billing period.
+
+    A segment is the intersection of a billing period and a version's
+    effective window: the run of local service dates in that month priced by
+    that filed document. Its ``service_days`` never overlap another segment's,
+    which is what keeps a fixed charge from being collected twice for one day.
+    """
+
+    tariff_id: str
+    version: str
+    effective_start: date
+    effective_end: date | None
+    source_url: str
+    service_days: int
+    first_service_date: date
+    last_service_date: date
+    import_energy_kWh: float
+    import_energy_charge: float
+    customer_charge: float
+    minimum_bill_floor: float
+    import_energy_kWh_by_category: dict[str, float] = field(
+        default_factory=dict
+    )
+    import_energy_charge_by_category: dict[str, float] = field(
+        default_factory=dict
+    )
+    baseline_allowance_kWh: float | None = None
+
+
+@dataclass(frozen=True)
+class TimelineBillingPeriodResult:
+    """One meter's bill for one billing period, itemised by tariff version."""
+
+    meter_id: str
+    plan_id: str
+    plan_description: str
+    period_label: str
+    billing_days: int
+    segments: tuple[VersionSegmentResult, ...]
+    export_energy_kWh: float
+    export_credit: float
+    export_pricing_note: str
+    warnings: tuple[str, ...] = ()
+
+    @property
+    def import_energy_kWh(self) -> float:
+        return sum(s.import_energy_kWh for s in self.segments)
+
+    @property
+    def import_energy_charge(self) -> float:
+        return sum(s.import_energy_charge for s in self.segments)
+
+    @property
+    def customer_charge(self) -> float:
+        return sum(s.customer_charge for s in self.segments)
+
+    @property
+    def minimum_bill_floor(self) -> float:
+        """The floor the period's charges must clear, summed over versions."""
+
+        return sum(s.minimum_bill_floor for s in self.segments)
+
+    @property
+    def charges_before_minimum(self) -> float:
+        return self.customer_charge + self.import_energy_charge
+
+    @property
+    def minimum_bill_adjustment(self) -> float:
+        """What the floor added, if the period's own charges fell short."""
+
+        return max(0.0, self.minimum_bill_floor - self.charges_before_minimum)
+
+    @property
+    def total_utility_charge(self) -> float:
+        return (
+            self.charges_before_minimum
+            + self.minimum_bill_adjustment
+            - self.export_credit
+        )
+
+    @property
+    def versions_used(self) -> tuple[str, ...]:
+        return tuple(s.tariff_id for s in self.segments)
+
+
+def calculate_timeline_billing(
+    dispatch: pd.DataFrame,
+    plan: "RatePlan",
+    *,
+    meter_id: str,
+    timestep_hours: float,
+    import_column: str = "grid_import_kw",
+    export_column: str = "grid_export_kw",
+    baseline: "BaselineAllowance | None" = None,
+    export_price_per_kWh: np.ndarray | float | None = None,
+) -> tuple[TimelineBillingPeriodResult, ...]:
+    """Bill one meter across a horizon that may span several rate versions.
+
+    Unlike :func:`calculate_meter_billing`, which takes one version and
+    refuses any date outside it, this walks the plan's timeline: every
+    interval's energy is priced by the version effective on **its own local
+    service date**, and each service date's fixed charge is collected once,
+    under whichever version covered that date.
+
+    ``baseline`` overrides the account's baseline allowance for tiered plans.
+    Territory and Basic/All-Electric code are properties of the premises, so a
+    caller that knows them should pass them; otherwise each version's own
+    default is used.
+
+    ``export_price_per_kWh`` is an explicit scenario price. It is **not** a
+    filed NEM or Net Billing credit -- those rules are not implemented -- and
+    every result carrying a nonzero export credit says so.
+    """
+
+    if "timestamp" not in dispatch.columns:
+        raise BillingError("Dispatch data is missing a timestamp column.")
+
+    timestamps = pd.DatetimeIndex(dispatch["timestamp"])
+
+    if timestamps.tz is None:
+        raise BillingError(
+            "Billing requires timezone-aware timestamps: TOU periods and "
+            "billing months are defined in local time."
+        )
+
+    import_kw = dispatch[import_column].to_numpy(dtype=float)
+    export_kw = (
+        dispatch[export_column].to_numpy(dtype=float)
+        if export_column in dispatch.columns
+        else np.zeros(len(dispatch), dtype=float)
+    )
+    export_rates = _export_rate_array(export_price_per_kWh, len(dispatch))
+
+    # Raises on a gap before any money is computed.
+    segments_by_version = plan.segments_for(timestamps)
+    version_for_date = {
+        service_date: version
+        for version, dates in segments_by_version
+        for service_date in dates
+    }
+
+    service_dates = np.array([stamp.date() for stamp in timestamps])
+    period_labels = assign_billing_periods(timestamps)
+
+    results: list[TimelineBillingPeriodResult] = []
+
+    for label in period_labels.unique():
+        period_mask = (period_labels == label).to_numpy()
+        period_stamps = timestamps[period_mask]
+        period_dates = service_dates[period_mask]
+
+        ordered_versions: list[str] = []
+        seen: set[str] = set()
+        for service_date in period_dates:
+            tariff_id = version_for_date[service_date].tariff_id
+            if tariff_id not in seen:
+                seen.add(tariff_id)
+                ordered_versions.append(tariff_id)
+
+        warnings: list[str] = []
+        segments: list[VersionSegmentResult] = []
+
+        for tariff_id in ordered_versions:
+            version = next(
+                v for v, _ in segments_by_version if v.tariff_id == tariff_id
+            )
+            segment_mask = period_mask & np.array(
+                [
+                    version_for_date[service_date].tariff_id == tariff_id
+                    for service_date in service_dates
+                ]
+            )
+            segment_stamps = timestamps[segment_mask]
+            segment_dates = sorted({s.date() for s in segment_stamps})
+            segment_import_kWh = import_kw[segment_mask] * timestep_hours
+            allowance = None
+
+            if version.energy_tiers:
+                allowance = (
+                    baseline or version.baseline
+                ).allowance_kWh(segment_stamps, version.season_definition)
+                split = version.split_tier_kWh(
+                    float(segment_import_kWh.sum()), allowance
+                )
+                rate_by_tier = {
+                    tier.name: tier.rate_per_kWh
+                    for tier in version.energy_tiers
+                }
+                kWh_by_category = dict(split)
+                charge_by_category = {
+                    name: kWh * rate_by_tier[name]
+                    for name, kWh in split.items()
+                }
+            else:
+                rates = version.energy_rates(segment_stamps).to_numpy(
+                    dtype=float
+                )
+                categories = version.billing_categories(
+                    segment_stamps
+                ).to_numpy()
+                kWh_by_category = {}
+                charge_by_category = {}
+                for category in dict.fromkeys(categories):
+                    category_mask = categories == category
+                    kWh_by_category[str(category)] = float(
+                        segment_import_kWh[category_mask].sum()
+                    )
+                    charge_by_category[str(category)] = float(
+                        (
+                            segment_import_kWh[category_mask]
+                            * rates[category_mask]
+                        ).sum()
+                    )
+
+            segment_days = len(segment_dates)
+            segments.append(
+                VersionSegmentResult(
+                    tariff_id=version.tariff_id,
+                    version=version.version,
+                    effective_start=version.effective_start,
+                    effective_end=version.effective_end,
+                    source_url=version.source_url,
+                    service_days=segment_days,
+                    first_service_date=segment_dates[0],
+                    last_service_date=segment_dates[-1],
+                    import_energy_kWh=float(segment_import_kWh.sum()),
+                    import_energy_charge=float(
+                        sum(charge_by_category.values())
+                    ),
+                    customer_charge=version.customer_charge_for(segment_days),
+                    minimum_bill_floor=version.minimum_bill_for(segment_days),
+                    import_energy_kWh_by_category=kWh_by_category,
+                    import_energy_charge_by_category=charge_by_category,
+                    baseline_allowance_kWh=allowance,
+                )
+            )
+
+        tiered_segments = [
+            segment
+            for segment in segments
+            if segment.baseline_allowance_kWh is not None
+        ]
+
+        if len(tiered_segments) > 1:
+            warnings.append(
+                f"PARTIAL-CYCLE TIER ACCOUNTING: billing period {label} spans "
+                f"{len(tiered_segments)} tariff versions "
+                f"({', '.join(s.tariff_id for s in tiered_segments)}). The "
+                f"filed schedule documents baseline proration across a "
+                f"seasonal changeover (E-1 Special Condition 6) but does not "
+                f"state how tier accumulation is treated when rates change "
+                f"mid-cycle. Each version's days are billed as their own "
+                f"sub-period, with their own prorated baseline and their own "
+                f"tier ladder. This is a documented approximation, not a "
+                f"filed rule."
+            )
+
+        export_kWh = float((export_kw[period_mask] * timestep_hours).sum())
+        export_credit = float(
+            (export_kw[period_mask] * timestep_hours * export_rates[period_mask]).sum()
+        )
+        export_note = (
+            "No export compensation applied."
+            if export_credit == 0.0
+            else (
+                "SCENARIO EXPORT PRICE, NOT A FILED CREDIT: this credit comes "
+                "from an explicit scenario price. PG&E's NEM and Net Billing "
+                "Tariff rules are not implemented, so this is not a filed "
+                "solar credit and must not be presented as one."
+            )
+        )
+
+        if export_credit != 0.0:
+            warnings.append(export_note)
+
+        results.append(
+            TimelineBillingPeriodResult(
+                meter_id=meter_id,
+                plan_id=plan.identity.plan_id,
+                plan_description=plan.identity.describe(),
+                period_label=str(label),
+                billing_days=len({d for d in period_dates}),
+                segments=tuple(segments),
+                export_energy_kWh=export_kWh,
+                export_credit=export_credit,
+                export_pricing_note=export_note,
+                warnings=tuple(warnings),
+            )
+        )
+
+    return tuple(results)
