@@ -209,9 +209,8 @@ than editing it by hand.
 
 ## Learning roadmap
 
-The project doubles as the vehicle for a
-[12-week energy-engineering learning plan](Energy_Engineering_3_Month_Learning_Plan_Revised_Aug_2026.pdf),
-in which Python, pandas, optimization, real grid data, OpenDSS, SQL, Git,
+The project doubles as the vehicle for a 12-week energy-engineering learning
+plan, in which Python, pandas, optimization, real grid data, OpenDSS, SQL, Git,
 SPICE, C++, and Arduino each extend this same model rather than becoming
 disconnected tutorials. Each week ends with an evidence-based completion gate.
 

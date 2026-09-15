@@ -1,10 +1,36 @@
+# --- Secrets ---
 .env
+
+# --- Python environment and bytecode ---
 .venv
 __pycache__/
 *.pyc
-.cache/
 
-# Local-only notes for Claude; not shared to the repository.
+# --- Tool and editor caches / local settings ---
+.cache/
+.pytest_cache/
+.vscode/
+.DS_Store
+
+# --- Local-only notes and preferences ---
+# CLAUDE.md: local notes for Claude; not shared to the repository.
 CLAUDE.md
 gui_preferences.json
-.DS_Store
+
+# --- Personal reference material (kept locally, not part of the package) ---
+# Root-level PDFs only, so filed tariff documents under docs/ can still be tracked.
+/*.pdf
+
+# --- Runtime-generated data (recreated on demand by the code) ---
+data/cache/
+data/runtime.json
+data/previous_runtime.txt
+
+# --- Local SQL scratch sessions (VS Code SQLTools) ---
+*.session.sql
+
+# --- KiCad local project state and auto-backups ---
+*.kicad_prl
+*-backups/
+*.kicad_sch-bak
+*.kicad_pcb-bak
