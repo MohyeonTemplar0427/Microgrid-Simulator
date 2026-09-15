@@ -150,7 +150,7 @@ Launch the guided GUI:
 python3 -m src.simulation.graphical_interface
 ```
 
-Run the test suite — **650 tests**:
+Run the test suite — **785 tests**:
 
 ```bash
 python3 -m pytest -q

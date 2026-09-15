@@ -13,7 +13,14 @@ cannot recover from the code alone.
 | Surplus | `src/surplus` | Where does excess PV go, and does it balance? |
 | Metering | `src/billing/meter_topology.py` | Which flows are billed together? |
 | Tariffs | `src/billing/tariffs.py` | What are the rates, and when were they valid? |
+| Rate plans | `src/billing/plans.py` | Which filed version applies on each service date? |
+| Baselines | `src/billing/baseline.py` | How much usage is priced at the baseline tier? |
 | Billing | `src/billing/charges.py` | What does it cost? |
+
+Tariff definitions themselves live in `src/billing/pge_commercial.py` and
+`src/billing/pge_residential.py`, split because the two families differ
+structurally and not merely in price — see *Residential is not commercial*
+below.
 
 The physical network (`src/opendss`) and the billing topology are deliberately
 distinct. OpenDSS determines voltages, currents, losses and real PCC power.
@@ -127,6 +134,47 @@ When rates change, **add a new definition** with its own effective window
 rather than editing the numbers in place, so historical analyses stay
 reproducible.
 
+### A plan is not a version
+
+A **plan** is what a customer is on and stays on: "PG&E E-1 bundled, income
+tier 3". A **version** is what that plan's rates were between two dates. PG&E
+refiled residential rates seven times during 2024 alone, so one year of one
+plan touches many versions, and one billing month can touch two.
+
+`RatePlan` in `src/billing/plans.py` holds a plan's versions in effective-date
+order and enforces two things at construction:
+
+- **No overlap.** Effective windows are inclusive, so two versions may not
+  share a date. Only the newest version may be open-ended.
+- **No silent gaps.** `require_coverage` refuses a horizon containing a date
+  no version covers, naming the first uncovered date and listing the windows
+  that do exist.
+
+A gap is not a bug to paper over. Where PG&E's sources do not state what
+applied — currently 2026-03-01 to 2026-05-31, where the rate workbook and the
+filed tariff disagree about when the current rates began — billing **raises**.
+Substituting a neighbouring version would move a residential bill by roughly
+19% while looking entirely normal.
+
+### Two billing entry points
+
+| Function | Takes | Behaviour outside the window |
+|---|---|---|
+| `calculate_meter_billing` | one `TariffDefinition` | Raises. Strict, unchanged. |
+| `calculate_timeline_billing` | a `RatePlan` | Selects the version effective on each local service date. |
+
+The strict path is deliberately preserved: a caller that means "bill this
+month at these rates" should still be told when its horizon leaves the window.
+The timeline path is for studies that cross a refiling.
+
+Each interval's energy is priced by the version effective on **its own local
+service date**, and each service date's fixed charge is collected exactly
+once, under whichever version covered that date. Service dates come from the
+timestamps, so a daylight-saving day is one service date like any other.
+Results are itemised per `VersionSegmentResult` — the intersection of one
+billing period and one version — while still totalling to one bill per meter
+per period.
+
 ### PG&E B-10, effective 2026-03-01
 
 Secondary voltage (below 2,400 V — the modelled 480 V service qualifies),
@@ -150,6 +198,57 @@ local on both sides of a DST transition.
 components — maximum plus separate peak-period and part-peak-period demand —
 which cannot be approximated by B-10's single maximum-demand charge without
 materially misstating cost in a way that would look plausible.
+
+## Residential is not commercial
+
+The two families differ in structure, not just in price, which is why they
+live in separate modules and why residential needed capabilities the B-series
+never exercised.
+
+| | Commercial (B-series) | Residential |
+|---|---|---|
+| Peak days | Every day, including weekends and holidays | Weekday-only on E-TOU-D |
+| Demand charges | Central to the bill | None |
+| Energy price | Per-interval TOU rate | Per-interval **or** tiered on period volume |
+| Fixed charge | Daily customer charge | Customer charge *or* a minimum bill |
+
+**Day-of-week (`TOUPeriod.days`).** Every B-series period applies every day,
+which is why the commercial work never needed this field and why its absence
+went unnoticed. E-TOU-D's peak is 5–8 p.m. Monday through Friday; without day
+matching, every weekend evening would bill at the peak rate. Holidays are
+still **not** modelled — a holiday falling on a weekday is priced at the
+ordinary weekday rate, which overstates those few days.
+
+**Tiered energy (`EnergyTier`).** E-1 has no time-of-use periods at all. The
+price of a kWh depends on how much came before it in the billing period,
+measured against a baseline allowance. Tier bounds are therefore expressed as
+multiples of that allowance (100%, 400%), not as kWh, because the allowance
+itself depends on territory, season and the number of days in the period.
+`charges.py` prices the period total for a tiered schedule and never the
+per-interval rate.
+
+**Baseline allowances (`src/billing/baseline.py`).** Quantities vary by
+baseline territory (P, Q, R, S, T, V, W, X, Y, Z), season, and whether the
+home is all-electric. Territory is a property of the **premises**, set by
+county and elevation — never inferred from the tariff name — so billing
+accepts an explicit `BaselineAllowance` override. Each local calendar day
+earns its own season's quantity, which is E-1 Special Condition 6's documented
+rule for a period spanning the June or October changeover.
+
+**Minimum bill is not a customer charge.** A customer charge is *added* to the
+bill; a minimum bill is a *floor* under it. PG&E residential service carried a
+Delivery Minimum Bill before the income-graduated Base Services Charge
+replaced it, and a typical household never reaches the floor. Modelling the
+2024 minimum bill as a customer charge would add roughly $11.65 a month PG&E
+did not charge — a plausible-looking error of exactly the kind this package
+exists to prevent.
+
+**One rule the sources do not state.** The filed schedule documents baseline
+proration across a *seasonal* changeover but says nothing about tier
+accumulation when *rates* change mid-cycle. Where that happens, each version's
+days are billed as their own sub-period with their own prorated baseline, and
+the result carries an explicit warning that this is a documented
+approximation rather than a filed rule.
 
 ## Demand and customer charges
 

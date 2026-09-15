@@ -6,7 +6,7 @@
 /usr/local/bin/python3 tools/generate_tariff_reference.py
 ```
 
-Every rate below is read from the tariff registry in `src/billing/pge_tariffs.py`, so this document and the numbers the billing code applies cannot disagree. Rates are transcribed from PG&E's published tariff sheets and are valid for the stated effective date only; see [Microgrid_Backend_Architecture.md](Microgrid_Backend_Architecture.md) for why tariffs are versioned data rather than editable constants.
+Every rate below is read from the tariff registry built by `src/billing/pge_commercial.py` and `src/billing/pge_residential.py`, so this document and the numbers the billing code applies cannot disagree. Rates are transcribed from PG&E's published tariff sheets and historical rate workbooks, and are valid for the stated effective date only; a simulation picks the version effective on each local service date via `src/billing/plans.py`. See [Microgrid_Backend_Architecture.md](Microgrid_Backend_Architecture.md) for why tariffs are versioned data rather than editable constants.
 
 All schedules below are **secondary voltage, bundled service**. Primary and Transmission voltage classes, Peak Day Pricing, power-factor adjustments and standby charges are not modelled.
 
