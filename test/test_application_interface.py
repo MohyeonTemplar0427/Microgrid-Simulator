@@ -12,6 +12,8 @@ from src.simulation.application_interface import (
     build_review_rows,
     build_results_export_table,
     calculate_progress_percentage,
+    filter_cec_equipment_names,
+    format_cec_equipment_name,
     calculate_inclusive_day_count,
     describe_equipment_ratings,
     describe_pv_selection,
@@ -662,6 +664,8 @@ def build_pv_application(**selections):
     ]
     application.pv_module_combobox = FakeConfigurableWidget()
     application.pv_inverter_combobox = FakeConfigurableWidget()
+    application.pv_module_search_button = FakeConfigurableWidget()
+    application.pv_inverter_search_button = FakeConfigurableWidget()
     application.pv_equipment_entries = [
         FakeConfigurableWidget() for _ in range(4)
     ]
@@ -693,6 +697,38 @@ def packed_sections(application):
         for name, frame in application.pv_section_frames.items()
         if frame.packed
     }
+
+
+## CEC equipment search ---------------------------------------------------
+
+
+def test_cec_search_matches_multiple_readable_terms_and_reports_total():
+    names = (
+        "Canadian_Solar_Inc__CS6X_300M",
+        "Canadian_Solar_Inc__CS6K_285M",
+        "SMA_America__STP_50_US_41__480V_",
+    )
+
+    matches, total = filter_cec_equipment_names(
+        names,
+        "canadian 300m",
+        limit=10,
+    )
+
+    assert matches == ("Canadian_Solar_Inc__CS6X_300M",)
+    assert total == 1
+    assert format_cec_equipment_name(matches[0]) == (
+        "Canadian Solar Inc — CS6X 300M"
+    )
+
+
+def test_cec_search_bounds_large_result_sets_without_losing_total():
+    names = tuple(f"Example_Module_{index}" for index in range(20))
+
+    matches, total = filter_cec_equipment_names(names, "example", limit=5)
+
+    assert matches == names[:5]
+    assert total == 20
 
 
 ## Step 2 progressive disclosure ------------------------------------------
@@ -772,6 +808,8 @@ def test_switching_between_generic_and_equipment_restores_fields():
             == "disabled"
         )
         assert application.pv_module_combobox.configuration["state"] == "readonly"
+        assert application.pv_module_search_button.configuration["state"] == "normal"
+        assert application.pv_inverter_search_button.configuration["state"] == "normal"
         assert application.pv_equipment_entries[0].configuration["state"] == "normal"
 
 

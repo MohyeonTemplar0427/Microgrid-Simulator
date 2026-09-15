@@ -157,6 +157,8 @@ PV_SYSTEM_MODEL_LABELS = {
     "cec_equipment": "Named CEC equipment",
 }
 
+CEC_SEARCH_RESULT_LIMIT = 300
+
 #: Backend profile modes, which :mod:`src.simulation.interface_analysis` still
 #: keys on. The GUI derives one from the independent selections rather than
 #: asking the user for it, so the analysis contract is unchanged.
@@ -337,6 +339,38 @@ def describe_pv_selection(
     )
 
 
+def format_cec_equipment_name(name: str) -> str:
+    """Turn a database key into a readable manufacturer and model label."""
+
+    return str(name).replace("__", " — ").replace("_", " ")
+
+
+def filter_cec_equipment_names(
+    names: tuple[str, ...],
+    query: str,
+    *,
+    limit: int = CEC_SEARCH_RESULT_LIMIT,
+) -> tuple[tuple[str, ...], int]:
+    """Return bounded CEC matches while reporting the complete match count."""
+
+    if limit < 1:
+        raise ValueError("CEC search result limit must be at least 1.")
+    terms = tuple(
+        term.casefold()
+        for term in query.replace("_", " ").split()
+        if term.strip()
+    )
+    matches = tuple(
+        name
+        for name in names
+        if all(
+            term in format_cec_equipment_name(name).casefold()
+            for term in terms
+        )
+    )
+    return matches[:limit], len(matches)
+
+
 class MicrogridApplication:
     """Own one root window and switch between the study workflow pages."""
 
@@ -357,6 +391,8 @@ class MicrogridApplication:
         # rather than at startup. Initialised here, not in the page builder,
         # so a layout change cannot drop it and crash on first selection.
         self._cec_options_loaded = False
+        self._cec_module_options: tuple[str, ...] = ()
+        self._cec_inverter_options: tuple[str, ...] = ()
         self.strategy_values = {
             name: tk.BooleanVar(
                 value=name in {"no_battery", "cost_optimal"}
@@ -374,7 +410,7 @@ class MicrogridApplication:
         self.analysis_result: InterfaceAnalysisResult | None = None
         self.analysis_export_parameters: dict[str, object] | None = None
         self.process_context = multiprocessing.get_context("spawn")
-        self.analysis_messages = self.process_context.Queue()
+        self.analysis_messages = None
         self.analysis_process: multiprocessing.Process | None = None
         self.worker_exit_empty_polls = 0
         self.analysis_started_at: float | None = None
@@ -1053,11 +1089,25 @@ class MicrogridApplication:
             *self.pv_generic_only_entries,
             *self.pv_orientation_entries,
         ]
-        self.pv_module_combobox = self._add_combobox(
-            model_frame, "CEC module", self.values["pv_module_name"], (), 5
+        (
+            self.pv_module_combobox,
+            self.pv_module_search_button,
+        ) = self._add_cec_search_row(
+            model_frame,
+            "CEC module",
+            self.values["pv_module_name"],
+            5,
+            equipment_kind="module",
         )
-        self.pv_inverter_combobox = self._add_combobox(
-            model_frame, "CEC inverter", self.values["pv_inverter_name"], (), 6
+        (
+            self.pv_inverter_combobox,
+            self.pv_inverter_search_button,
+        ) = self._add_cec_search_row(
+            model_frame,
+            "CEC inverter",
+            self.values["pv_inverter_name"],
+            6,
+            equipment_kind="inverter",
         )
         self.pv_equipment_entries = [
             self._add_entry(model_frame, "Modules per string", "pv_modules_per_string", 7),
@@ -1128,12 +1178,6 @@ class MicrogridApplication:
             row=5, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
         )
 
-        self.pv_module_combobox.bind(
-            "<<ComboboxSelected>>", self._update_equipment_summary, add="+"
-        )
-        self.pv_inverter_combobox.bind(
-            "<<ComboboxSelected>>", self._update_equipment_summary, add="+"
-        )
         for entry in self.pv_equipment_entries:
             entry.bind("<FocusOut>", self._update_equipment_summary)
 
@@ -1573,6 +1617,34 @@ class MicrogridApplication:
         combobox.grid(row=row, column=1, columnspan=2, sticky="ew", padx=6, pady=5)
         return combobox
 
+    def _add_cec_search_row(
+        self,
+        parent: ttk.Frame,
+        label: str,
+        variable: tk.Variable,
+        row: int,
+        *,
+        equipment_kind: str,
+    ) -> tuple[ttk.Entry, ttk.Button]:
+        """Add a selected CEC value and a button opening the search dialog."""
+
+        ttk.Label(parent, text=label).grid(
+            row=row, column=0, sticky="w", padx=6, pady=5
+        )
+        selected_entry = ttk.Entry(
+            parent,
+            textvariable=variable,
+            state="readonly",
+        )
+        selected_entry.grid(row=row, column=1, sticky="ew", padx=6, pady=5)
+        search_button = ttk.Button(
+            parent,
+            text="Search…",
+            command=lambda: self._open_cec_search(equipment_kind),
+        )
+        search_button.grid(row=row, column=2, padx=6, pady=5)
+        return selected_entry, search_button
+
     def _add_file_row(
         self,
         parent: ttk.Frame,
@@ -1900,10 +1972,7 @@ class MicrogridApplication:
             # them too, so hiding them would let a stored orientation change
             # the answer with nothing on screen to explain it.
             model_rows.update({2, 3, 5, 6, 7, 8, 9, 10, 11})
-            if not self._cec_options_loaded:
-                self.pv_module_combobox.configure(values=cec_module_names())
-                self.pv_inverter_combobox.configure(values=cec_inverter_names())
-                self._cec_options_loaded = True
+            self._ensure_cec_options_loaded()
         self._apply_row_visibility("model", model_rows)
 
         location_rows = {0, 1, 2, 5}
@@ -1949,6 +2018,9 @@ class MicrogridApplication:
         equipment_state = "readonly" if equipment else "disabled"
         self.pv_module_combobox.configure(state=equipment_state)
         self.pv_inverter_combobox.configure(state=equipment_state)
+        search_state = "normal" if equipment else "disabled"
+        self.pv_module_search_button.configure(state=search_state)
+        self.pv_inverter_search_button.configure(state=search_state)
         for entry in self.pv_equipment_entries:
             entry.configure(state="normal" if equipment else "disabled")
 
@@ -1964,6 +2036,130 @@ class MicrogridApplication:
         self._update_equipment_summary()
         if hasattr(self, "profile_explanation"):
             self._update_profile_controls()
+
+    def _ensure_cec_options_loaded(self) -> None:
+        """Load CEC names once without placing thousands in a combobox."""
+
+        if self._cec_options_loaded:
+            return
+        self._cec_module_options = tuple(cec_module_names())
+        self._cec_inverter_options = tuple(cec_inverter_names())
+        self._cec_options_loaded = True
+
+    def _open_cec_search(self, equipment_kind: str) -> None:
+        """Open a searchable picker for a CEC module or inverter."""
+
+        self._ensure_cec_options_loaded()
+        if equipment_kind == "module":
+            title = "Find CEC Module"
+            noun = "modules"
+            names = self._cec_module_options
+            variable = self.values["pv_module_name"]
+        elif equipment_kind == "inverter":
+            title = "Find CEC Inverter"
+            noun = "inverters"
+            names = self._cec_inverter_options
+            variable = self.values["pv_inverter_name"]
+        else:
+            raise ValueError(f"Unsupported CEC equipment kind: {equipment_kind!r}.")
+
+        dialog = tk.Toplevel(self.window)
+        dialog.title(title)
+        dialog.geometry("780x560")
+        dialog.minsize(620, 420)
+        dialog.transient(self.window)
+        dialog.grab_set()
+
+        body = ttk.Frame(dialog, padding=18)
+        body.pack(fill="both", expand=True)
+        body.columnconfigure(0, weight=1)
+        body.rowconfigure(3, weight=1)
+
+        ttk.Label(
+            body,
+            text=(
+                "Search by manufacturer, model, or several terms. "
+                "All terms must match."
+            ),
+            wraplength=720,
+        ).grid(row=0, column=0, columnspan=2, sticky="w", pady=(0, 8))
+
+        query = tk.StringVar()
+        query_entry = ttk.Entry(body, textvariable=query)
+        query_entry.grid(row=1, column=0, sticky="ew", padx=(0, 8))
+        clear_button = ttk.Button(body, text="Clear", command=lambda: query.set(""))
+        clear_button.grid(row=1, column=1)
+
+        status = tk.StringVar()
+        ttk.Label(body, textvariable=status).grid(
+            row=2, column=0, columnspan=2, sticky="w", pady=(8, 5)
+        )
+
+        results_frame = ttk.Frame(body)
+        results_frame.grid(row=3, column=0, columnspan=2, sticky="nsew")
+        results_frame.rowconfigure(0, weight=1)
+        results_frame.columnconfigure(0, weight=1)
+        results = tk.Listbox(results_frame, exportselection=False)
+        results.grid(row=0, column=0, sticky="nsew")
+        scrollbar = ttk.Scrollbar(
+            results_frame, orient="vertical", command=results.yview
+        )
+        scrollbar.grid(row=0, column=1, sticky="ns")
+        results.configure(yscrollcommand=scrollbar.set)
+
+        controls = ttk.Frame(body)
+        controls.grid(row=4, column=0, columnspan=2, sticky="ew", pady=(12, 0))
+        select_button = ttk.Button(controls, text="Use Selected", state="disabled")
+        select_button.pack(side="right")
+        ttk.Button(controls, text="Cancel", command=dialog.destroy).pack(
+            side="right", padx=(0, 8)
+        )
+
+        visible_names: list[str] = []
+        scheduled_refresh = {"id": None}
+
+        def refresh_results() -> None:
+            scheduled_refresh["id"] = None
+            matches, total = filter_cec_equipment_names(names, query.get())
+            visible_names[:] = matches
+            results.delete(0, tk.END)
+            for name in matches:
+                results.insert(tk.END, format_cec_equipment_name(name))
+            select_button.configure(state="disabled")
+            if total > len(matches):
+                status.set(
+                    f"Showing {len(matches):,} of {total:,} matching {noun}. "
+                    "Add another search term to narrow the results."
+                )
+            else:
+                status.set(f"{total:,} matching {noun}.")
+
+        def schedule_refresh(*_args) -> None:
+            pending = scheduled_refresh["id"]
+            if pending is not None:
+                dialog.after_cancel(pending)
+            scheduled_refresh["id"] = dialog.after(120, refresh_results)
+
+        def update_selection_state(_event=None) -> None:
+            select_button.configure(
+                state="normal" if results.curselection() else "disabled"
+            )
+
+        def use_selected(_event=None) -> None:
+            selection = results.curselection()
+            if not selection:
+                return
+            variable.set(visible_names[int(selection[0])])
+            self._update_equipment_summary()
+            dialog.destroy()
+
+        query.trace_add("write", schedule_refresh)
+        results.bind("<<ListboxSelect>>", update_selection_state)
+        results.bind("<Double-Button-1>", use_selected)
+        select_button.configure(command=use_selected)
+        query_entry.bind("<Return>", lambda _event: refresh_results())
+        refresh_results()
+        query_entry.focus_set()
 
     def _search_site_location(self) -> None:
         """Geocode the typed place and fill in the coordinates.
@@ -2498,6 +2694,8 @@ class MicrogridApplication:
 
         self.analysis_export_parameters = self._current_export_parameters()
 
+        if self.analysis_messages is None:
+            self.analysis_messages = self.process_context.Queue()
         self.analysis_process = self.process_context.Process(
             target=_run_csv_worker_process,
             args=(self.analysis_messages, worker_kind, worker_arguments),
@@ -2531,7 +2729,7 @@ class MicrogridApplication:
     def _poll_analysis_messages(self) -> None:
         """Process a completed worker message without blocking Tkinter."""
 
-        if self.is_closing:
+        if self.is_closing or self.analysis_messages is None:
             return
 
         if self.analysis_started_at is not None:
@@ -2926,8 +3124,11 @@ class MicrogridApplication:
                 process.close()
             self.analysis_process = None
 
-        self.analysis_messages.close()
-        self.analysis_messages.join_thread()
+        messages = self.analysis_messages
+        if messages is not None:
+            messages.close()
+            messages.join_thread()
+            self.analysis_messages = None
         self.window.destroy()
 
     def _set_analysis_message(self, message: str) -> None:

@@ -219,8 +219,20 @@ def align_to_index(
     present = pd.DatetimeIndex(aligned[TIMESTAMP])
     missing = interval_index.index.difference(present)
 
+    # Reindex before branching. Data finer than the grid leaves nothing
+    # missing -- a 30-minute series covers every hourly stamp -- so a
+    # "nothing missing" shortcut that returned the clipped frame handed back
+    # the source's own resolution instead of the grid's, and the result no
+    # longer had one row per interval. Reindexing here drops the off-grid
+    # rows and makes the returned length the interval count in every case.
+    reindexed = (
+        aligned.set_index(TIMESTAMP)
+        .reindex(interval_index.index)
+        .rename_axis(TIMESTAMP)
+    )
+
     if len(missing) == 0:
-        return aligned, 0
+        return reindexed.reset_index(), 0
 
     if missing_data_policy == MissingDataPolicy.REJECT:
         raise IntervalTableError(
@@ -230,11 +242,6 @@ def align_to_index(
             f"missing-data policy "
             f"({[p.value for p in MissingDataPolicy if p != MissingDataPolicy.REJECT]})."
         )
-
-    reindexed = (
-        aligned.set_index(TIMESTAMP)
-        .reindex(interval_index.index)
-    )
 
     if missing_data_policy == MissingDataPolicy.FORWARD_FILL:
         reindexed = reindexed.ffill().bfill()
@@ -249,12 +256,7 @@ def align_to_index(
             f"{missing_data_policy.value} policy."
         )
 
-    filled = (
-        reindexed.reset_index()
-        .rename(columns={"index": TIMESTAMP})
-    )
-
-    return filled, len(missing)
+    return reindexed.reset_index(), len(missing)
 
 
 def build_normalized_table(

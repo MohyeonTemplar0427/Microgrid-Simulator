@@ -27,6 +27,7 @@ from src.timeseries import (
     IntervalTableError,
     MissingDataPolicy,
     PowerUnit,
+    align_to_index,
     build_interval_index,
     build_interval_index_from_days,
     build_normalized_table,
@@ -109,6 +110,128 @@ def test_day_count_helper_matches_inclusive_form():
 
     assert by_days.interval_count == by_dates.interval_count
     assert by_days.end == by_dates.end
+
+
+## Alignment onto the grid -------------------------------------------------
+
+
+def _series_on(index, value=1.0):
+    return pd.DataFrame({"timestamp": index, "value": value})
+
+
+def test_alignment_puts_finer_data_onto_the_grid():
+    # A 30-minute source covers every hourly stamp, so nothing is "missing".
+    # The result must still be one row per hourly interval, not the source's
+    # own 48 rows a day.
+    grid = build_interval_index(
+        start_date="2026-06-01",
+        end_date="2026-06-01",
+        timezone=PACIFIC,
+        timestep_minutes=60,
+    )
+    half_hourly = pd.date_range(
+        grid.start, grid.end, freq="30min", inclusive="left"
+    )
+
+    aligned, filled = align_to_index(
+        _series_on(half_hourly), grid, label="Test"
+    )
+
+    assert len(half_hourly) == 2 * grid.interval_count
+    assert len(aligned) == grid.interval_count
+    assert filled == 0
+    assert list(aligned["timestamp"]) == list(grid.index)
+
+
+def test_alignment_drops_off_grid_rows_rather_than_averaging_them():
+    # The on-grid value is kept as measured; the intervening one is discarded.
+    grid = build_interval_index(
+        start_date="2026-06-01",
+        end_date="2026-06-01",
+        timezone=PACIFIC,
+        timestep_minutes=60,
+    )
+    half_hourly = pd.date_range(
+        grid.start, grid.end, freq="30min", inclusive="left"
+    )
+    # 10.0 on the hour, 999.0 on the half hour.
+    values = [10.0 if stamp.minute == 0 else 999.0 for stamp in half_hourly]
+
+    aligned, _ = align_to_index(
+        pd.DataFrame({"timestamp": half_hourly, "value": values}),
+        grid,
+        label="Test",
+    )
+
+    assert (aligned["value"] == 10.0).all()
+
+
+def test_alignment_returns_one_row_per_interval_when_data_matches():
+    grid = build_interval_index(
+        start_date="2026-06-01",
+        end_date="2026-06-02",
+        timezone=PACIFIC,
+        timestep_minutes=15,
+    )
+
+    aligned, filled = align_to_index(_series_on(grid.index), grid, label="Test")
+
+    assert len(aligned) == grid.interval_count
+    assert filled == 0
+    assert list(aligned["timestamp"]) == list(grid.index)
+
+
+def test_alignment_reports_the_grid_length_across_a_dst_day():
+    # Spring forward: 92 intervals, and a finer source must not inflate it.
+    grid = build_interval_index(
+        start_date="2026-03-08",
+        end_date="2026-03-08",
+        timezone=PACIFIC,
+        timestep_minutes=60,
+    )
+    half_hourly = pd.date_range(
+        grid.start, grid.end, freq="30min", inclusive="left"
+    )
+
+    aligned, filled = align_to_index(
+        _series_on(half_hourly), grid, label="Test"
+    )
+
+    assert len(aligned) == grid.interval_count
+    assert filled == 0
+
+
+def test_alignment_still_fills_and_counts_under_a_policy():
+    grid = build_interval_index(
+        start_date="2026-06-01",
+        end_date="2026-06-01",
+        timezone=PACIFIC,
+        timestep_minutes=15,
+    )
+    gapped = grid.index.delete([4, 5, 6])
+
+    aligned, filled = align_to_index(
+        _series_on(gapped),
+        grid,
+        label="Test",
+        missing_data_policy=MissingDataPolicy.FORWARD_FILL,
+    )
+
+    assert len(aligned) == grid.interval_count
+    assert filled == 3
+    assert list(aligned["timestamp"]) == list(grid.index)
+
+
+def test_alignment_rejects_a_gap_by_default():
+    grid = build_interval_index(
+        start_date="2026-06-01",
+        end_date="2026-06-01",
+        timezone=PACIFIC,
+        timestep_minutes=15,
+    )
+
+    with pytest.raises(IntervalTableError, match="missing"):
+        align_to_index(_series_on(grid.index.delete(4)), grid, label="Test")
 
 
 ## Unit conversion --------------------------------------------------------

@@ -10,6 +10,7 @@ input rather than against an idea of it.
 
 import io
 import socket
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -69,10 +70,20 @@ def no_ambient_credentials(monkeypatch):
 
     Without this a developer who has a real key in ``.env`` would exercise
     different code paths than continuous integration does.
+
+    Clearing the variables is not enough on its own. ``_credentials`` loads
+    ``src/.env`` with ``override=False``, which leaves an existing variable
+    alone but still *sets* a missing one -- so a deleted variable would be
+    restored straight from the developer's file. Pointing ``ENV_PATH`` at a
+    path that does not exist makes that load a no-op.
     """
 
     monkeypatch.delenv(NSRDB_API_KEY_ENV_VAR, raising=False)
     monkeypatch.delenv(NSRDB_EMAIL_ENV_VAR, raising=False)
+    monkeypatch.setattr(
+        "src.profiles.nsrdb.ENV_PATH",
+        Path(__file__).resolve().parent / "no-such-directory" / ".env",
+    )
 
 
 def psm4_response(

@@ -44,6 +44,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import pandas as pd
+from dotenv import load_dotenv
 
 from .weather import (
     DHI_W_PER_M2,
@@ -56,6 +57,12 @@ from .weather import (
     prepare_weather_frame,
 )
 from ..timeseries.schema import TIMESTAMP
+
+#: The repository keeps its ``.env`` beside the packages, at ``src/.env``.
+#: Resolved from this file rather than through ``find_dotenv``, whose search
+#: starts at the caller's frame or the working directory and so depends on how
+#: the process was launched. Same expression as ``database.connector``.
+ENV_PATH = Path(__file__).resolve().parents[1] / ".env"
 
 #: Environment variables holding the NSRDB credentials. Never logged, never
 #: written into a cached file, never included in provenance.
@@ -190,7 +197,16 @@ def _credentials(
 
     Read only when a fetch is actually about to happen, so importing this
     module or building a request needs no credential at all.
+
+    The ``.env`` file is loaded here rather than by the caller. Only
+    ``interface_analysis`` used to load it, and only inside the run-analysis
+    path, so a fetch requested before any analysis had run saw no credential
+    at all. ``override=False`` keeps a real environment variable ahead of the
+    file, matching how the rest of the repository loads it.
     """
+
+    if not (api_key and email):
+        load_dotenv(ENV_PATH, override=False)
 
     resolved_key = api_key or os.getenv(NSRDB_API_KEY_ENV_VAR)
     resolved_email = email or os.getenv(NSRDB_EMAIL_ENV_VAR)

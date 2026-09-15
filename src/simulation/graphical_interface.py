@@ -1,5 +1,6 @@
 """Provide a graphical interface for microgrid simulations."""
 
+import signal
 import tkinter as tk
 from tkinter import messagebox, ttk
 from tkinter.scrolledtext import ScrolledText
@@ -440,12 +441,19 @@ def main() -> None:
     window = create_guided_application_window()
     application = window.microgrid_application
     print("\nSimulator window is open....")
+
+    def close_on_interrupt(_signal_number, _frame) -> None:
+        application._close_application()
+
+    previous_sigint_handler = signal.signal(
+        signal.SIGINT,
+        close_on_interrupt,
+    )
     try:
         window.mainloop()
-    except KeyboardInterrupt:
-        pass
     finally:
         application._close_application()
+        signal.signal(signal.SIGINT, previous_sigint_handler)
 
 
 if __name__ == "__main__":
