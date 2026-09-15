@@ -1127,7 +1127,7 @@ class MicrogridApplication:
             text=(
                 "Retrieval runs only when Fetch Weather is pressed, because "
                 "it makes a network request against a metered account. It "
-                "uses the coordinates from Site Location below, needs "
+                "uses the coordinates from Site Location above, needs "
                 f"{NSRDB_API_KEY_ENV_VAR} and {NSRDB_EMAIL_ENV_VAR} in the "
                 "environment or .env, and saves a weather CSV that later runs "
                 "read offline."
@@ -1340,17 +1340,20 @@ class MicrogridApplication:
         # Snapshotting row membership once, while everything is still
         # gridded, is what makes every selection reversible.
         # Ordered: the four questions in the order the interface asks them.
+        # Site location comes before Weather source: the NSRDB fetch reads
+        # the coordinates set there, so asking for them first is the order a
+        # person actually fills the form in.
         self.pv_section_frames = {
             "profile": self.pv_profile_frame,
+            "location": self.pv_location_frame,
             "weather": self.pv_weather_frame,
             "model": self.pv_model_frame,
-            "location": self.pv_location_frame,
         }
         self.pv_section_rows = {
             "profile": self._snapshot_rows(self.pv_profile_frame, 4),
+            "location": self._snapshot_rows(self.pv_location_frame, 6),
             "weather": self._snapshot_rows(self.pv_weather_frame, 8),
             "model": self._snapshot_rows(self.pv_model_frame, 12),
-            "location": self._snapshot_rows(self.pv_location_frame, 6),
         }
         self._update_battery_controls()
         self._update_pv_controls()

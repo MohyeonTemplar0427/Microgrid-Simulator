@@ -1402,7 +1402,7 @@ def test_the_built_page_keeps_the_pv_sections_above_the_load_section(
 
     tops = [
         application.pv_section_frames[name].winfo_y()
-        for name in ("profile", "weather", "model", "location")
+        for name in ("profile", "location", "weather", "model")
     ]
 
     assert tops == sorted(tops), tops
