@@ -779,3 +779,129 @@ def test_equipment_configuration_derives_gui_plant_ratings():
     assert configuration.rated_dc_capacity_kw == pytest.approx(117.0, rel=0.01)
     assert configuration.inverter_ac_capacity_kw == pytest.approx(100.0, rel=0.01)
     assert configuration.dc_ac_ratio == pytest.approx(1.17, rel=0.02)
+
+
+def _write_clear_sky_weather_csv(path, horizon):
+    """A physically consistent weather CSV for the horizon, from pvlib.
+
+    Offline: irradiance comes from the clear-sky model, not a provider.
+    """
+
+    from pvlib.location import Location
+
+    location = Location(37.77, -122.42, tz=horizon.timezone)
+    sky = location.get_clearsky(pd.DatetimeIndex(horizon.index), model="ineichen")
+
+    pd.DataFrame(
+        {
+            "timestamp": horizon.index,
+            "ghi_w_per_m2": sky["ghi"].to_numpy(),
+            "dni_w_per_m2": sky["dni"].to_numpy(),
+            "dhi_w_per_m2": sky["dhi"].to_numpy(),
+            "temperature_c": 20.0,
+            "wind_speed_m_per_s": 2.0,
+        }
+    ).to_csv(path, index=False)
+
+    return path
+
+
+def test_generic_selection_routes_to_the_phase_one_weather_model(tmp_path):
+    # The GUI asks three questions; this pins that the generic answer still
+    # reaches the PVWatts-style model and not the equipment one.
+    from src.simulation.application_interface import resolve_pv_profile_mode
+
+    horizon = build_horizon("2026-06-21", 1, "America/Los_Angeles", 15)
+    weather_path = _write_clear_sky_weather_csv(
+        tmp_path / "weather.csv", horizon
+    )
+
+    profile = create_site_profile(
+        horizon,
+        load_kw=25,
+        pv_capacity_kw=30,
+        load_profile_mode="constant",
+        load_archetype="office",
+        load_variability_fraction=0.0,
+        pv_profile_mode=resolve_pv_profile_mode("weather", "generic"),
+        weather_csv_path=weather_path,
+        pv_latitude=37.77,
+        pv_longitude=-122.42,
+        pv_tilt_degrees=20.0,
+        pv_azimuth_degrees=180.0,
+        pv_dc_ac_ratio=1.2,
+    )
+
+    provenance = profile.attrs["pv_provenance"]
+
+    assert provenance["model_version"].startswith("phase1-")
+    assert provenance["inverter_model"] == "pvwatts"
+    assert profile["pv_kw"].max() > 0
+    assert (profile["pv_kw"] >= 0).all()
+
+
+def test_equipment_selection_routes_to_the_phase_two_weather_model(tmp_path):
+    from src.simulation.application_interface import resolve_pv_profile_mode
+
+    horizon = build_horizon("2026-06-21", 1, "America/Los_Angeles", 15)
+    weather_path = _write_clear_sky_weather_csv(
+        tmp_path / "weather.csv", horizon
+    )
+
+    profile = create_site_profile(
+        horizon,
+        load_kw=25,
+        pv_capacity_kw=0.0,
+        load_profile_mode="constant",
+        load_archetype="office",
+        load_variability_fraction=0.0,
+        pv_profile_mode=resolve_pv_profile_mode("weather", "cec_equipment"),
+        weather_csv_path=weather_path,
+        pv_latitude=37.77,
+        pv_longitude=-122.42,
+        pv_tilt_degrees=20.0,
+        pv_azimuth_degrees=180.0,
+        pv_module_name="Canadian_Solar_Inc__CS6X_300M",
+        pv_inverter_name="SMA_America__STP_50_US_41__480V_",
+        pv_modules_per_string=15,
+        pv_strings=13,
+        pv_inverter_count=1,
+        pv_mppt_input_count=2,
+    )
+
+    provenance = profile.attrs["pv_provenance"]
+
+    assert provenance["model_version"].startswith("phase2-")
+    assert provenance["inverter_model"] == "sandia"
+    assert provenance["control_mode"] == "grid_following"
+    assert profile["pv_kw"].max() > 0
+
+
+def test_the_weather_source_does_not_change_the_pv_model(tmp_path):
+    # Upload and API retrieval both end at a weather CSV on disk, so the
+    # system model is free to vary independently of where weather came from.
+    from src.simulation.application_interface import resolve_pv_profile_mode
+
+    horizon = build_horizon("2026-06-21", 1, "America/Los_Angeles", 15)
+    uploaded = _write_clear_sky_weather_csv(tmp_path / "uploaded.csv", horizon)
+    retrieved = _write_clear_sky_weather_csv(tmp_path / "retrieved.csv", horizon)
+
+    profiles = [
+        create_site_profile(
+            horizon,
+            load_kw=25,
+            pv_capacity_kw=30,
+            load_profile_mode="constant",
+            load_archetype="office",
+            load_variability_fraction=0.0,
+            pv_profile_mode=resolve_pv_profile_mode("weather", "generic"),
+            weather_csv_path=path,
+            pv_latitude=37.77,
+            pv_longitude=-122.42,
+        )
+        for path in (uploaded, retrieved)
+    ]
+
+    pd.testing.assert_series_equal(
+        profiles[0]["pv_kw"], profiles[1]["pv_kw"]
+    )

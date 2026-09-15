@@ -438,8 +438,14 @@ def main() -> None:
     )
 
     window = create_guided_application_window()
+    application = window.microgrid_application
     print("\nSimulator window is open....")
-    window.mainloop()
+    try:
+        window.mainloop()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        application._close_application()
 
 
 if __name__ == "__main__":

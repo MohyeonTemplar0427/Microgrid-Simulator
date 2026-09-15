@@ -6,6 +6,7 @@ import json
 import multiprocessing
 from pathlib import Path
 import queue
+import threading
 import time
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
@@ -32,7 +33,17 @@ from ..signal_pipeline.region_config import (
     supported_regions,
 )
 from ..dispatch.battery import Battery
-from ..profiles import cec_inverter_names, cec_module_names
+from ..profiles import (
+    NSRDB_API_KEY_ENV_VAR,
+    NSRDB_EMAIL_ENV_VAR,
+    NSRDBError,
+    NSRDBRequest,
+    cec_inverter_names,
+    cec_module_names,
+    fetch_nsrdb_weather,
+    save_weather_csv,
+)
+from .geocoding import GeocodingError, LocationSearch
 from .interface_analysis import (
     build_analysis_details,
     build_equipment_pv_configuration,
@@ -124,11 +135,59 @@ LOAD_PROFILE_LABELS = {
     "synthetic": "Synthetic building profile",
 }
 
+# Step 2 separates three questions that an earlier single "PV profile source"
+# selector ran together: how the available-PV profile is obtained, where the
+# weather behind it comes from, and how the physical system is modelled. They
+# are independent -- a named-equipment plant can be driven by an uploaded CSV
+# or by a satellite retrieval -- so combining them produced a list that grew
+# multiplicatively and hid the fact that only one axis was changing.
+
+PV_PROFILE_METHOD_LABELS = {
+    "capacity_factor_csv": "Capacity-factor CSV",
+    "weather": "Calculate from weather",
+}
+
+WEATHER_SOURCE_LABELS = {
+    "csv": "Upload weather CSV",
+    "nsrdb": "Retrieve weather from API (NSRDB)",
+}
+
+PV_SYSTEM_MODEL_LABELS = {
+    "generic": "Generic array",
+    "cec_equipment": "Named CEC equipment",
+}
+
+#: Backend profile modes, which :mod:`src.simulation.interface_analysis` still
+#: keys on. The GUI derives one from the independent selections rather than
+#: asking the user for it, so the analysis contract is unchanged.
 PV_PROFILE_LABELS = {
-    "synthetic": "Synthetic clear-sky profile",
     "capacity_factor_csv": "PV profile CSV — capacity factor",
-    "weather_generic": "Weather CSV — generic array",
-    "weather_equipment": "Weather CSV — named CEC equipment",
+    "weather_generic": "Weather — generic array",
+    "weather_equipment": "Weather — named CEC equipment",
+}
+
+#: Saved preferences from before the split. Each legacy value maps onto one
+#: combination of the three independent selections.
+#:
+#: ``synthetic`` has no successor: the redesigned Step 2 offers no synthetic
+#: clear-sky option, so a preference file naming it falls back to the
+#: capacity-factor CSV method. The backend still implements ``SyntheticPV``;
+#: only the control is gone.
+LEGACY_PV_PROFILE_MODES = {
+    "synthetic": ("capacity_factor_csv", "csv", "generic"),
+    "capacity_factor_csv": ("capacity_factor_csv", "csv", "generic"),
+    "weather_generic": ("weather", "csv", "generic"),
+    "weather_equipment": ("weather", "csv", "cec_equipment"),
+}
+
+#: NSRDB retrieval options offered in the interface. The adapter supports
+#: more; these are the combinations the product actually publishes for the
+#: continental United States.
+NSRDB_TIME_STEP_LABELS = {
+    "60": "60 minutes (hourly)",
+    "30": "30 minutes",
+    "15": "15 minutes",
+    "5": "5 minutes",
 }
 
 LOAD_ARCHETYPE_LABELS = {
@@ -156,7 +215,126 @@ GUI_PREFERENCES_PATH = (
     / ".cache"
     / "gui_preferences.json"
 )
-GUI_PREFERENCES_VERSION = 2
+GUI_PREFERENCES_VERSION = 3
+
+
+def describe_pv_explanation(
+    *,
+    pv_profile_method: str,
+    weather_source: str,
+    pv_system_model: str,
+) -> str:
+    """Plain-language sentence saying where available PV power will come from."""
+
+    if pv_profile_method == "capacity_factor_csv":
+        return (
+            "PV available power comes from the selected capacity-factor CSV "
+            "multiplied by the rated PV capacity."
+        )
+
+    if pv_profile_method != "weather":
+        return "Select a supported PV profile method."
+
+    origin = (
+        "an uploaded weather CSV"
+        if weather_source == "csv"
+        else "weather retrieved from the NSRDB API"
+    )
+    model = (
+        "a generic array described by capacity, tilt, azimuth and DC/AC ratio"
+        if pv_system_model == "generic"
+        else "the named CEC module and inverter wired as configured"
+    )
+
+    return (
+        f"PV available power is calculated from {origin} using {model}. "
+        f"Inverter clipping is applied; operational curtailment is not."
+    )
+
+
+def describe_equipment_ratings(configuration) -> str:
+    """Summarise what the selected modules and inverters actually add up to."""
+
+    module_count = sum(
+        subarray.module_count * unit.count
+        for unit in configuration.inverter_units
+        for subarray in unit.subarrays
+    )
+
+    return (
+        f"Derived plant: {module_count} modules, "
+        f"{configuration.rated_dc_capacity_kw:.2f} kW DC, "
+        f"{configuration.inverter_ac_capacity_kw:.2f} kW AC "
+        f"(DC/AC {configuration.dc_ac_ratio:.2f}); grid-following control."
+    )
+
+
+def resolve_pv_profile_mode(
+    pv_profile_method: str,
+    pv_system_model: str,
+) -> str:
+    """Map the independent Step 2 selections onto one backend profile mode.
+
+    The interface asks three separate questions; the analysis layer still
+    takes a single ``pv_profile_mode``. Deriving it here keeps the backend
+    contract and its tests untouched while the interface stops pretending the
+    three questions are one.
+    """
+
+    if pv_profile_method == "capacity_factor_csv":
+        return "capacity_factor_csv"
+
+    if pv_profile_method != "weather":
+        raise ValueError(
+            f"Unsupported PV profile method: {pv_profile_method!r}. "
+            f"Supported: {list(PV_PROFILE_METHOD_LABELS)}."
+        )
+
+    if pv_system_model == "generic":
+        return "weather_generic"
+
+    if pv_system_model == "cec_equipment":
+        return "weather_equipment"
+
+    raise ValueError(
+        f"Unsupported PV system model: {pv_system_model!r}. "
+        f"Supported: {list(PV_SYSTEM_MODEL_LABELS)}."
+    )
+
+
+def migrate_legacy_pv_profile_mode(
+    legacy_mode: str,
+) -> tuple[str, str, str] | None:
+    """Split a pre-redesign ``pv_profile_mode`` into the three selections.
+
+    Returns ``(pv_profile_method, weather_source, pv_system_model)``, or
+    ``None`` when the saved value is not one this interface ever wrote --
+    in which case the defaults stand rather than a guess being restored.
+    """
+
+    return LEGACY_PV_PROFILE_MODES.get(str(legacy_mode))
+
+
+def describe_pv_selection(
+    *,
+    pv_profile_method: str,
+    weather_source: str,
+    pv_system_model: str,
+) -> str:
+    """One readable line naming all three selections, for review and export."""
+
+    method = PV_PROFILE_METHOD_LABELS.get(
+        pv_profile_method, pv_profile_method
+    )
+
+    if pv_profile_method != "weather":
+        return method
+
+    return (
+        f"{method} — "
+        f"{WEATHER_SOURCE_LABELS.get(weather_source, weather_source)} — "
+        f"{PV_SYSTEM_MODEL_LABELS.get(pv_system_model, pv_system_model)}"
+    )
 
 
 class MicrogridApplication:
@@ -169,6 +347,16 @@ class MicrogridApplication:
         self.window.minsize(780, 700)
 
         self.values = self._create_variables()
+        # Coordinates are correct but rarely interesting, so they start folded
+        # away behind the location search that fills them in.
+        self.show_coordinates = tk.BooleanVar(value=False)
+        self.location_search = LocationSearch()
+        self.nsrdb_fetch_thread: threading.Thread | None = None
+        # The CEC databases are ~25,000 entries and cost about a second to
+        # parse, so they are loaded the first time equipment is selected
+        # rather than at startup. Initialised here, not in the page builder,
+        # so a layout change cannot drop it and crash on first selection.
+        self._cec_options_loaded = False
         self.strategy_values = {
             name: tk.BooleanVar(
                 value=name in {"no_battery", "cost_optimal"}
@@ -180,6 +368,8 @@ class MicrogridApplication:
         self.preferences_path = GUI_PREFERENCES_PATH
         self._load_preferences()
         self.pages: dict[str, ttk.Frame] = {}
+        self.page_canvases: dict[str, tk.Canvas] = {}
+        self.current_page_name: str | None = None
         self.battery_entries: list[ttk.Entry] = []
         self.analysis_result: InterfaceAnalysisResult | None = None
         self.analysis_export_parameters: dict[str, object] | None = None
@@ -205,6 +395,11 @@ class MicrogridApplication:
         self._build_microgrid_page()
         self._build_review_page()
         self._build_results_page()
+        self.window.bind(
+            "<MouseWheel>",
+            self._scroll_current_page,
+            add="+",
+        )
 
         self.show_page("analysis")
 
@@ -241,9 +436,20 @@ class MicrogridApplication:
             "battery_max_charge": tk.StringVar(value="10"),
             "battery_max_discharge": tk.StringVar(value="10"),
             "pv_capacity": tk.StringVar(value="20"),
-            "pv_profile_mode": tk.StringVar(value="synthetic"),
+            # Three independent Step 2 selections. The backend's single
+            # pv_profile_mode is derived from them by
+            # resolve_pv_profile_mode() rather than stored.
+            "pv_profile_method": tk.StringVar(value="weather"),
+            "weather_source": tk.StringVar(value="csv"),
+            "pv_system_model": tk.StringVar(value="generic"),
             "pv_capacity_factor_csv_path": tk.StringVar(),
             "weather_csv_path": tk.StringVar(),
+            "nsrdb_year": tk.StringVar(value="2023"),
+            "nsrdb_time_step_minutes": tk.StringVar(value="60"),
+            # Typed text is a convenience for finding coordinates. The
+            # coordinates themselves stay the stored truth, and a failed
+            # search must never overwrite them.
+            "location_query": tk.StringVar(value="San Francisco, CA"),
             "pv_latitude": tk.StringVar(value="37.77"),
             "pv_longitude": tk.StringVar(value="-122.42"),
             "pv_tilt_degrees": tk.StringVar(value="20"),
@@ -285,7 +491,10 @@ class MicrogridApplication:
         except (OSError, ValueError, TypeError):
             return
 
-        if saved.get("version") != GUI_PREFERENCES_VERSION:
+        # Version 2 predates the Step 2 split. Its values are still readable,
+        # and its combined pv_profile_mode is migrated below, so it is
+        # accepted rather than discarded.
+        if saved.get("version") not in {2, GUI_PREFERENCES_VERSION}:
             return
 
         saved_values = saved.get("values", {})
@@ -299,10 +508,25 @@ class MicrogridApplication:
             "carbon_weight_mode": set(CARBON_WEIGHT_MODE_LABELS),
             "load_profile_mode": set(LOAD_PROFILE_LABELS),
             "load_archetype": set(LOAD_ARCHETYPE_LABELS),
-            "pv_profile_mode": set(PV_PROFILE_LABELS),
+            "pv_profile_method": set(PV_PROFILE_METHOD_LABELS),
+            "weather_source": set(WEATHER_SOURCE_LABELS),
+            "pv_system_model": set(PV_SYSTEM_MODEL_LABELS),
+            "nsrdb_time_step_minutes": set(NSRDB_TIME_STEP_LABELS),
             "tariff_id": set(TARIFF_LABELS) | {""},
             "meter_topology_mode": set(METER_TOPOLOGY_LABELS),
         }
+
+        # A file written before Step 2 was split carries one combined
+        # pv_profile_mode. Restoring the three selections it stood for is what
+        # keeps an existing setup from silently reverting to the defaults.
+        legacy_mode = saved_values.get("pv_profile_mode")
+        if isinstance(legacy_mode, str) and "pv_profile_method" not in saved_values:
+            migrated = migrate_legacy_pv_profile_mode(legacy_mode)
+            if migrated is not None:
+                method, weather_source, system_model = migrated
+                self.values["pv_profile_method"].set(method)
+                self.values["weather_source"].set(weather_source)
+                self.values["pv_system_model"].set(system_model)
 
         for name, value in saved_values.items():
             if name not in self.values or not isinstance(value, str):
@@ -348,10 +572,51 @@ class MicrogridApplication:
         return True
 
     def _new_page(self, name: str) -> ttk.Frame:
-        page = ttk.Frame(self.page_container)
-        page.grid(row=0, column=0, sticky="nsew")
-        self.pages[name] = page
+        """Create one vertically scrollable wizard page."""
+
+        page_container = ttk.Frame(self.page_container)
+        page_container.grid(row=0, column=0, sticky="nsew")
+        page_container.rowconfigure(0, weight=1)
+        page_container.columnconfigure(0, weight=1)
+
+        canvas = tk.Canvas(page_container, highlightthickness=0)
+        canvas.grid(row=0, column=0, sticky="nsew")
+        scrollbar = ttk.Scrollbar(
+            page_container,
+            orient="vertical",
+            command=canvas.yview,
+        )
+        scrollbar.grid(row=0, column=1, sticky="ns")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        page = ttk.Frame(canvas)
+        page_window = canvas.create_window((0, 0), window=page, anchor="nw")
+        page.bind(
+            "<Configure>",
+            lambda _event, page_canvas=canvas: page_canvas.configure(
+                scrollregion=page_canvas.bbox("all")
+            ),
+        )
+        canvas.bind(
+            "<Configure>",
+            lambda event, page_canvas=canvas, item=page_window: (
+                page_canvas.itemconfigure(item, width=event.width)
+            ),
+        )
+
+        self.pages[name] = page_container
+        self.page_canvases[name] = canvas
         return page
+
+    def _scroll_current_page(self, event):
+        """Scroll the visible wizard page with a mouse wheel or trackpad."""
+
+        canvas = self.page_canvases.get(self.current_page_name or "")
+        if canvas is None or not event.delta:
+            return None
+        direction = -1 if event.delta > 0 else 1
+        canvas.yview_scroll(direction, "units")
+        return "break"
 
     @staticmethod
     def _page_title(
@@ -623,79 +888,246 @@ class MicrogridApplication:
         ):
             self.battery_entries.append(self._add_entry(battery_frame, label, name, row))
 
-        pv_frame = ttk.LabelFrame(page, text="PV", padding=18)
-        pv_frame.pack(fill="x", pady=8)
-        pv_frame.columnconfigure(1, weight=1)
-        self.pv_profile_combobox = self._add_combobox(
-            pv_frame,
-            "PV profile source",
-            self.values["pv_profile_mode"],
-            tuple(PV_PROFILE_LABELS),
-            0,
-            option_labels=PV_PROFILE_LABELS,
+        # --- Step 2 PV sections --------------------------------------
+        #
+        # The four sections answer four separate questions and are shown or
+        # hidden as a unit. They live in their own container so a section can
+        # be re-packed without landing after the Load frame: pack() appends,
+        # so hiding and restoring a sibling of Load would reorder the page.
+        pv_container = ttk.Frame(page)
+        pv_container.pack(fill="x")
+        self.pv_container = pv_container
+
+        profile_frame = ttk.LabelFrame(
+            pv_container, text="PV profile method", padding=18
         )
-        self.pv_profile_combobox.bind(
+        profile_frame.columnconfigure(1, weight=1)
+        self.pv_profile_frame = profile_frame
+        self.pv_profile_method_combobox = self._add_combobox(
+            profile_frame,
+            "PV profile method",
+            self.values["pv_profile_method"],
+            tuple(PV_PROFILE_METHOD_LABELS),
+            0,
+            option_labels=PV_PROFILE_METHOD_LABELS,
+        )
+        self.pv_profile_method_combobox.bind(
             "<<ComboboxSelected>>", self._update_pv_controls
         )
-        self.pv_frame = pv_frame
-        self._cec_options_loaded = False
         self.pv_capacity_entry = self._add_entry(
-            pv_frame, "Rated PV capacity (kW)", "pv_capacity", 1
-        )
-        self.weather_csv_widgets = self._add_file_row(
-            pv_frame, "Weather CSV", self.values["weather_csv_path"], 2
-        )
-        self.pv_generic_entries = [
-            self._add_entry(pv_frame, "Latitude", "pv_latitude", 3),
-            self._add_entry(pv_frame, "Longitude", "pv_longitude", 4),
-            self._add_entry(pv_frame, "Array tilt (degrees)", "pv_tilt_degrees", 5),
-            self._add_entry(pv_frame, "Array azimuth (degrees)", "pv_azimuth_degrees", 6),
-        ]
-        self.pv_dc_ac_ratio_entry = self._add_entry(
-            pv_frame, "DC/AC ratio", "pv_dc_ac_ratio", 7
-        )
-        self.pv_module_combobox = self._add_combobox(
-            pv_frame, "CEC module", self.values["pv_module_name"], (), 8
-        )
-        self.pv_inverter_combobox = self._add_combobox(
-            pv_frame, "CEC inverter", self.values["pv_inverter_name"], (), 9
-        )
-        self.pv_equipment_entries = [
-            self._add_entry(pv_frame, "Modules per string", "pv_modules_per_string", 10),
-            self._add_entry(pv_frame, "Parallel strings", "pv_strings", 11),
-            self._add_entry(pv_frame, "Inverter count", "pv_inverter_count", 12),
-            self._add_entry(pv_frame, "MPPT inputs per inverter", "pv_mppt_input_count", 13),
-        ]
-        self.pv_equipment_summary = ttk.Label(
-            pv_frame,
-            text="",
-            wraplength=740,
-        )
-        self.pv_equipment_summary.grid(
-            row=14,
-            column=0,
-            columnspan=3,
-            sticky="w",
-            padx=6,
-            pady=(8, 0),
+            profile_frame, "Rated PV capacity (kW)", "pv_capacity", 1
         )
         self.pv_capacity_factor_csv_widgets = self._add_file_row(
-            pv_frame,
+            profile_frame,
             "PV profile CSV",
             self.values["pv_capacity_factor_csv_path"],
-            15,
+            2,
         )
         self.pv_capacity_factor_csv_hint = ttk.Label(
-            pv_frame,
+            profile_frame,
             text=(
-                "Required columns: timestamp, capacity_factor. Timestamps must "
-                "include a timezone and match the selected analysis interval."
+                "Required columns: timestamp, capacity_factor. Timestamps "
+                "must include a timezone and match the selected analysis "
+                "interval. Available PV power is capacity_factor multiplied "
+                "by the rated PV capacity above."
             ),
             wraplength=740,
         )
         self.pv_capacity_factor_csv_hint.grid(
-            row=16, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 8)
+            row=3, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
         )
+
+        weather_frame = ttk.LabelFrame(
+            pv_container, text="Weather source", padding=18
+        )
+        weather_frame.columnconfigure(1, weight=1)
+        self.pv_weather_frame = weather_frame
+        self.weather_source_combobox = self._add_combobox(
+            weather_frame,
+            "Weather source",
+            self.values["weather_source"],
+            tuple(WEATHER_SOURCE_LABELS),
+            0,
+            option_labels=WEATHER_SOURCE_LABELS,
+        )
+        self.weather_source_combobox.bind(
+            "<<ComboboxSelected>>", self._update_pv_controls
+        )
+        self.weather_csv_widgets = self._add_file_row(
+            weather_frame, "Weather CSV", self.values["weather_csv_path"], 1
+        )
+        self.weather_csv_hint = ttk.Label(
+            weather_frame,
+            text=(
+                "Required columns: timestamp, ghi_w_per_m2, dni_w_per_m2, "
+                "dhi_w_per_m2, temperature_c, wind_speed_m_per_s. Timestamps "
+                "must include a timezone and be interval starts."
+            ),
+            wraplength=740,
+        )
+        self.weather_csv_hint.grid(
+            row=2, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
+        )
+        self.nsrdb_year_entry = self._add_entry(
+            weather_frame, "NSRDB year", "nsrdb_year", 3
+        )
+        self.nsrdb_time_step_combobox = self._add_combobox(
+            weather_frame,
+            "NSRDB time step",
+            self.values["nsrdb_time_step_minutes"],
+            tuple(NSRDB_TIME_STEP_LABELS),
+            4,
+            option_labels=NSRDB_TIME_STEP_LABELS,
+        )
+        self.fetch_weather_button = ttk.Button(
+            weather_frame,
+            text="Fetch Weather",
+            command=self._fetch_nsrdb_weather,
+        )
+        self.fetch_weather_button.grid(
+            row=5, column=1, sticky="w", padx=6, pady=(8, 4)
+        )
+        self.nsrdb_status_label = ttk.Label(
+            weather_frame,
+            text="",
+            wraplength=740,
+        )
+        self.nsrdb_status_label.grid(
+            row=6, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
+        )
+        self.nsrdb_hint = ttk.Label(
+            weather_frame,
+            text=(
+                "Retrieval runs only when Fetch Weather is pressed, because "
+                "it makes a network request against a metered account. It "
+                "uses the coordinates from Site Location below, needs "
+                f"{NSRDB_API_KEY_ENV_VAR} and {NSRDB_EMAIL_ENV_VAR} in the "
+                "environment or .env, and saves a weather CSV that later runs "
+                "read offline."
+            ),
+            wraplength=740,
+        )
+        self.nsrdb_hint.grid(
+            row=7, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
+        )
+
+        model_frame = ttk.LabelFrame(
+            pv_container, text="PV system model", padding=18
+        )
+        model_frame.columnconfigure(1, weight=1)
+        self.pv_model_frame = model_frame
+        self.pv_system_model_combobox = self._add_combobox(
+            model_frame,
+            "PV system model",
+            self.values["pv_system_model"],
+            tuple(PV_SYSTEM_MODEL_LABELS),
+            0,
+            option_labels=PV_SYSTEM_MODEL_LABELS,
+        )
+        self.pv_system_model_combobox.bind(
+            "<<ComboboxSelected>>", self._update_pv_controls
+        )
+        # A second entry bound to the same variable as the one in the profile
+        # section. Only ever one of them is visible, and sharing the variable
+        # means there is still exactly one rated capacity.
+        self.pv_generic_capacity_entry = self._add_entry(
+            model_frame, "Rated PV capacity (kW)", "pv_capacity", 1
+        )
+        # Tilt and azimuth describe how the array is mounted, which is true of
+        # a named-equipment plant exactly as much as a generic one -- both
+        # models transpose irradiance onto that plane. They are kept separate
+        # from the genuinely generic-only fields so both selections can show
+        # them.
+        self.pv_orientation_entries = [
+            self._add_entry(model_frame, "Array tilt (degrees)", "pv_tilt_degrees", 2),
+            self._add_entry(
+                model_frame, "Array azimuth (degrees)", "pv_azimuth_degrees", 3
+            ),
+        ]
+        self.pv_generic_only_entries = [
+            self.pv_generic_capacity_entry,
+            self._add_entry(model_frame, "DC/AC ratio", "pv_dc_ac_ratio", 4),
+        ]
+        #: Every field the generic model owns, orientation included.
+        self.pv_generic_entries = [
+            *self.pv_generic_only_entries,
+            *self.pv_orientation_entries,
+        ]
+        self.pv_module_combobox = self._add_combobox(
+            model_frame, "CEC module", self.values["pv_module_name"], (), 5
+        )
+        self.pv_inverter_combobox = self._add_combobox(
+            model_frame, "CEC inverter", self.values["pv_inverter_name"], (), 6
+        )
+        self.pv_equipment_entries = [
+            self._add_entry(model_frame, "Modules per string", "pv_modules_per_string", 7),
+            self._add_entry(model_frame, "Parallel strings", "pv_strings", 8),
+            self._add_entry(model_frame, "Inverter count", "pv_inverter_count", 9),
+            self._add_entry(
+                model_frame, "MPPT inputs per inverter", "pv_mppt_input_count", 10
+            ),
+        ]
+        self.pv_equipment_summary = ttk.Label(
+            model_frame,
+            text="",
+            wraplength=740,
+        )
+        self.pv_equipment_summary.grid(
+            row=11, column=0, columnspan=3, sticky="w", padx=6, pady=(8, 0)
+        )
+
+        location_frame = ttk.LabelFrame(
+            pv_container, text="Site location", padding=18
+        )
+        location_frame.columnconfigure(1, weight=1)
+        self.pv_location_frame = location_frame
+        ttk.Label(location_frame, text="Search for a place").grid(
+            row=0, column=0, sticky="w", padx=6, pady=5
+        )
+        self.location_query_entry = ttk.Entry(
+            location_frame, textvariable=self.values["location_query"]
+        )
+        self.location_query_entry.grid(row=0, column=1, sticky="ew", padx=6, pady=5)
+        self.location_search_button = ttk.Button(
+            location_frame,
+            text="Search Location",
+            command=self._search_site_location,
+        )
+        self.location_search_button.grid(row=0, column=2, padx=6, pady=5)
+        self.location_result_label = ttk.Label(
+            location_frame,
+            text="",
+            wraplength=740,
+        )
+        self.location_result_label.grid(
+            row=1, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
+        )
+        self.show_coordinates_checkbutton = ttk.Checkbutton(
+            location_frame,
+            text="Advanced: edit latitude and longitude directly",
+            variable=self.show_coordinates,
+            command=self._update_pv_controls,
+        )
+        self.show_coordinates_checkbutton.grid(
+            row=2, column=0, columnspan=3, sticky="w", padx=6, pady=(4, 4)
+        )
+        self.pv_coordinate_entries = [
+            self._add_entry(location_frame, "Latitude", "pv_latitude", 3),
+            self._add_entry(location_frame, "Longitude", "pv_longitude", 4),
+        ]
+        self.location_hint = ttk.Label(
+            location_frame,
+            text=(
+                "Searching fills in the latitude and longitude. The analysis "
+                "uses those numbers and not the text, so they can always be "
+                "typed directly instead."
+            ),
+            wraplength=740,
+        )
+        self.location_hint.grid(
+            row=5, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
+        )
+
         self.pv_module_combobox.bind(
             "<<ComboboxSelected>>", self._update_equipment_summary, add="+"
         )
@@ -768,11 +1200,22 @@ class MicrogridApplication:
         )
 
         self._navigation(page, previous_page="analysis", next_page="review")
-        # grid_slaves() stops returning widgets after grid_remove(). Keep the
-        # original row membership so every PV mode can restore its own fields.
-        self.pv_widgets_by_row = {
-            row: tuple(self.pv_frame.grid_slaves(row=row))
-            for row in range(17)
+        # grid_slaves() stops returning a widget once it has been
+        # grid_remove()d, so a section could be hidden but never restored.
+        # Snapshotting row membership once, while everything is still
+        # gridded, is what makes every selection reversible.
+        # Ordered: the four questions in the order the interface asks them.
+        self.pv_section_frames = {
+            "profile": self.pv_profile_frame,
+            "weather": self.pv_weather_frame,
+            "model": self.pv_model_frame,
+            "location": self.pv_location_frame,
+        }
+        self.pv_section_rows = {
+            "profile": self._snapshot_rows(self.pv_profile_frame, 4),
+            "weather": self._snapshot_rows(self.pv_weather_frame, 8),
+            "model": self._snapshot_rows(self.pv_model_frame, 12),
+            "location": self._snapshot_rows(self.pv_location_frame, 6),
         }
         self._update_battery_controls()
         self._update_pv_controls()
@@ -1041,7 +1484,9 @@ class MicrogridApplication:
 
         if name == "review":
             self._refresh_review()
+        self.current_page_name = name
         self.pages[name].tkraise()
+        self.page_canvases[name].yview_moveto(0)
 
     def _add_entry(
         self,
@@ -1357,91 +1802,309 @@ class MicrogridApplication:
                 if synthetic
                 else "The entered load power is repeated at every interval."
             )
-            pv_explanations = {
-                "synthetic": "PV uses a synthetic clear-sky profile.",
-                "capacity_factor_csv": (
-                    "PV available power comes from the selected capacity-factor CSV "
-                    "multiplied by rated PV capacity."
-                ),
-                "weather_generic": (
-                    "PV available power is calculated from the weather CSV and "
-                    "generic array settings."
-                ),
-                "weather_equipment": (
-                    "PV available power is calculated from the weather CSV and "
-                    "named CEC equipment."
-                ),
-            }
-            pv_explanation = pv_explanations.get(
-                str(self.values["pv_profile_mode"].get()),
-                "Select a supported PV profile source.",
+            pv_explanation = describe_pv_explanation(
+                pv_profile_method=str(self.values["pv_profile_method"].get()),
+                weather_source=str(self.values["weather_source"].get()),
+                pv_system_model=str(self.values["pv_system_model"].get()),
             )
             explanation = f"{load_explanation} {pv_explanation}"
         self.profile_explanation.configure(text=explanation)
 
-    def _update_pv_controls(self, _event=None) -> None:
-        """Show only the inputs used by the selected offline PV model."""
+    @staticmethod
+    def _snapshot_rows(frame, row_count: int) -> dict[int, tuple]:
+        """Record which widgets sit on each grid row, while all are visible.
 
-        live = self.values["source_mode"].get() == "live_api"
-        mode = str(self.values["pv_profile_mode"].get())
-        self.pv_profile_combobox.configure(
-            state="readonly" if live else "disabled"
-        )
-        visible_rows = {0}
-        if live and mode == "synthetic":
-            visible_rows.add(1)
-        elif live and mode == "capacity_factor_csv":
-            visible_rows.update({1, 15, 16})
-        elif live and mode == "weather_generic":
-            visible_rows.update(range(1, 8))
-        elif live and mode == "weather_equipment":
-            visible_rows.update({2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14})
-            if not self._cec_options_loaded:
-                self.pv_module_combobox.configure(values=cec_module_names())
-                self.pv_inverter_combobox.configure(values=cec_inverter_names())
-                self._cec_options_loaded = True
+        ``grid_slaves()`` stops returning a widget once it has been
+        ``grid_remove()``d, so a section read back later would look empty and
+        could never be restored. Taking the snapshot once at build time is
+        what makes hiding reversible.
+        """
 
-        widgets_by_row = getattr(self, "pv_widgets_by_row", None)
-        for row in range(17):
-            widgets = (
-                widgets_by_row.get(row, ())
-                if widgets_by_row is not None
-                else self.pv_frame.grid_slaves(row=row)
-            )
+        return {row: tuple(frame.grid_slaves(row=row)) for row in range(row_count)}
+
+    def _apply_row_visibility(
+        self,
+        section: str,
+        visible_rows: set[int],
+    ) -> None:
+        """Show exactly ``visible_rows`` of one PV section."""
+
+        rows = getattr(self, "pv_section_rows", {}).get(section, {})
+
+        for row, widgets in rows.items():
             for widget in widgets:
                 if row in visible_rows:
                     widget.grid()
                 else:
                     widget.grid_remove()
 
-        state = "normal" if live and mode in {
-            "weather_generic", "weather_equipment"
-        } else "disabled"
-        for widget in self.weather_csv_widgets:
-            widget.configure(state=state)
-        capacity_factor_state = (
-            "normal" if live and mode == "capacity_factor_csv" else "disabled"
+    def _show_pv_sections(self, visible: tuple[str, ...]) -> None:
+        """Pack the named sections, in order, and hide the rest.
+
+        Every section is unpacked first and the visible ones re-packed in a
+        fixed order, because ``pack`` appends: restoring one section without
+        re-packing the others would move it below its siblings.
+        """
+
+        frames = getattr(self, "pv_section_frames", None)
+
+        if frames is None:
+            return
+
+        for frame in frames.values():
+            frame.pack_forget()
+
+        for name, frame in frames.items():
+            if name in visible:
+                frame.pack(fill="x", pady=8)
+
+    def _update_pv_controls(self, _event=None) -> None:
+        """Reveal only the fields the current three selections actually use."""
+
+        live = self.values["source_mode"].get() == "live_api"
+        method = str(self.values["pv_profile_method"].get())
+        weather_source = str(self.values["weather_source"].get())
+        system_model = str(self.values["pv_system_model"].get())
+
+        weather_method = live and method == "weather"
+        capacity_factor = live and method == "capacity_factor_csv"
+        generic = weather_method and system_model == "generic"
+        equipment = weather_method and system_model == "cec_equipment"
+        weather_csv = weather_method and weather_source == "csv"
+        weather_api = weather_method and weather_source == "nsrdb"
+
+        # Integrated CSV supplies load_kw and pv_kw directly, so Step 2's
+        # profile controls describe nothing and stay collapsed.
+        sections = ("profile",)
+        if weather_method:
+            sections = ("profile", "weather", "model", "location")
+        self._show_pv_sections(sections)
+
+        profile_rows = {0}
+        if capacity_factor:
+            profile_rows.update({1, 2, 3})
+        self._apply_row_visibility("profile", profile_rows)
+
+        weather_rows = {0}
+        if weather_csv:
+            weather_rows.update({1, 2})
+        elif weather_api:
+            weather_rows.update({3, 4, 5, 6, 7})
+        self._apply_row_visibility("weather", weather_rows)
+
+        model_rows = {0}
+        if generic:
+            model_rows.update({1, 2, 3, 4})
+        elif equipment:
+            # Rows 2 and 3 are tilt and azimuth. The equipment model reads
+            # them too, so hiding them would let a stored orientation change
+            # the answer with nothing on screen to explain it.
+            model_rows.update({2, 3, 5, 6, 7, 8, 9, 10, 11})
+            if not self._cec_options_loaded:
+                self.pv_module_combobox.configure(values=cec_module_names())
+                self.pv_inverter_combobox.configure(values=cec_inverter_names())
+                self._cec_options_loaded = True
+        self._apply_row_visibility("model", model_rows)
+
+        location_rows = {0, 1, 2, 5}
+        if bool(self.show_coordinates.get()):
+            location_rows.update({3, 4})
+        self._apply_row_visibility("location", location_rows)
+
+        self.pv_profile_method_combobox.configure(
+            state="readonly" if live else "disabled"
         )
+        self.weather_source_combobox.configure(
+            state="readonly" if weather_method else "disabled"
+        )
+        self.pv_system_model_combobox.configure(
+            state="readonly" if weather_method else "disabled"
+        )
+
         for widget in self.pv_capacity_factor_csv_widgets:
-            widget.configure(state=capacity_factor_state)
-        for entry in self.pv_generic_entries:
-            entry.configure(state=state)
+            widget.configure(state="normal" if capacity_factor else "disabled")
         self.pv_capacity_entry.configure(
-            state="normal" if live and mode != "weather_equipment" else "disabled"
+            state="normal" if capacity_factor else "disabled"
         )
-        self.pv_dc_ac_ratio_entry.configure(
-            state="normal" if live and mode == "weather_generic" else "disabled"
+
+        for widget in self.weather_csv_widgets:
+            widget.configure(state="normal" if weather_csv else "disabled")
+        self.nsrdb_year_entry.configure(
+            state="normal" if weather_api else "disabled"
         )
-        equipment_state = "readonly" if live and mode == "weather_equipment" else "disabled"
+        self.nsrdb_time_step_combobox.configure(
+            state="readonly" if weather_api else "disabled"
+        )
+        self.fetch_weather_button.configure(
+            state="normal" if weather_api else "disabled"
+        )
+
+        for entry in self.pv_generic_only_entries:
+            entry.configure(state="normal" if generic else "disabled")
+        for entry in self.pv_orientation_entries:
+            entry.configure(
+                state="normal" if generic or equipment else "disabled"
+            )
+
+        equipment_state = "readonly" if equipment else "disabled"
         self.pv_module_combobox.configure(state=equipment_state)
         self.pv_inverter_combobox.configure(state=equipment_state)
         for entry in self.pv_equipment_entries:
-            entry.configure(
-                state="normal" if live and mode == "weather_equipment" else "disabled"
-            )
+            entry.configure(state="normal" if equipment else "disabled")
+
+        for widget in (
+            self.location_query_entry,
+            self.location_search_button,
+            self.show_coordinates_checkbutton,
+        ):
+            widget.configure(state="normal" if weather_method else "disabled")
+        for entry in self.pv_coordinate_entries:
+            entry.configure(state="normal" if weather_method else "disabled")
+
         self._update_equipment_summary()
         if hasattr(self, "profile_explanation"):
             self._update_profile_controls()
+
+    def _search_site_location(self) -> None:
+        """Geocode the typed place and fill in the coordinates.
+
+        A failure leaves the existing latitude and longitude exactly as they
+        were: the search is a convenience for finding coordinates, and a
+        provider being unreachable is no reason to lose ones that were already
+        correct.
+        """
+
+        query = str(self.values["location_query"].get())
+
+        try:
+            location = self.location_search.search(query)
+        except GeocodingError as error:
+            self.location_result_label.configure(
+                text=f"Location search failed: {error}"
+            )
+            return
+
+        # Fixed decimals, not significant figures: %g would render a
+        # longitude near -122 with three decimal places and quietly throw away
+        # about a hundred metres of the provider's answer.
+        self.values["pv_latitude"].set(f"{location.latitude:.6f}")
+        self.values["pv_longitude"].set(f"{location.longitude:.6f}")
+        self.location_result_label.configure(
+            text=f"Selected: {location.summary()}"
+        )
+
+    def _nsrdb_request(self) -> NSRDBRequest:
+        """Build the retrieval described by the form, or raise ValueError."""
+
+        try:
+            year = int(str(self.values["nsrdb_year"].get()).strip())
+        except (TypeError, ValueError) as error:
+            raise ValueError(
+                "NSRDB year must be a whole calendar year, for example 2023."
+            ) from error
+
+        try:
+            latitude = float(self.values["pv_latitude"].get())
+            longitude = float(self.values["pv_longitude"].get())
+        except (TypeError, ValueError) as error:
+            raise ValueError(
+                "Latitude and longitude must be numbers. Search for the site "
+                "in Site Location, or open Advanced and type them in."
+            ) from error
+
+        return NSRDBRequest(
+            latitude=latitude,
+            longitude=longitude,
+            year=year,
+            timezone=str(self.values["timezone"].get()),
+            time_step_minutes=int(
+                str(self.values["nsrdb_time_step_minutes"].get())
+            ),
+        )
+
+    def _fetch_nsrdb_weather(self) -> None:
+        """Retrieve NSRDB weather, on an explicit press, off the GUI thread.
+
+        Retrieval is never triggered by a field changing. It reaches a metered
+        external service, so it happens when a person asks for it and at no
+        other time.
+        """
+
+        if self.nsrdb_fetch_thread is not None and self.nsrdb_fetch_thread.is_alive():
+            return
+
+        try:
+            request = self._nsrdb_request()
+        except (ValueError, NSRDBError) as error:
+            self.nsrdb_status_label.configure(text=f"Cannot fetch: {error}")
+            return
+
+        destination = (
+            GUI_PREFERENCES_PATH.parent
+            / "weather"
+            / f"nsrdb_{request.latitude:.4f}_{request.longitude:.4f}"
+            f"_{request.year}_{request.time_step_minutes}min.csv"
+        )
+
+        self.fetch_weather_button.configure(state="disabled")
+        self.nsrdb_status_label.configure(
+            text=(
+                f"Requesting {request.year} NSRDB weather for "
+                f"{request.latitude:.4f}, {request.longitude:.4f}…"
+            )
+        )
+
+        results: queue.Queue = queue.Queue()
+
+        def retrieve() -> None:
+            try:
+                weather = fetch_nsrdb_weather(request)
+                saved = save_weather_csv(weather.frame, destination)
+                results.put(("ok", weather, saved))
+            except Exception as error:  # surfaced verbatim below
+                results.put(("error", error, None))
+
+        self.nsrdb_fetch_thread = threading.Thread(target=retrieve, daemon=True)
+        self.nsrdb_fetch_thread.start()
+        self.window.after(200, lambda: self._poll_nsrdb_fetch(results))
+
+    def _poll_nsrdb_fetch(self, results: "queue.Queue") -> None:
+        """Report a finished retrieval without blocking the interface."""
+
+        try:
+            outcome, payload, saved_path = results.get_nowait()
+        except queue.Empty:
+            self.window.after(200, lambda: self._poll_nsrdb_fetch(results))
+            return
+
+        self._update_pv_controls()
+
+        if outcome == "error":
+            self.nsrdb_status_label.configure(
+                text=f"Weather retrieval failed: {payload}"
+            )
+            return
+
+        # The retrieval is saved as a weather CSV and the CSV path is what the
+        # analysis reads, so a fetched year costs one request and every later
+        # run is offline.
+        self.values["weather_csv_path"].set(str(saved_path))
+
+        message = (
+            f"Retrieved {len(payload.frame)} intervals and saved "
+            f"{Path(saved_path).name}."
+        )
+        if payload.warnings:
+            message += " " + " ".join(payload.warnings)
+        self.nsrdb_status_label.configure(text=message)
+
+    def _selected_pv_profile_mode(self) -> str:
+        """The backend profile mode the current three selections describe."""
+
+        return resolve_pv_profile_mode(
+            str(self.values["pv_profile_method"].get()),
+            str(self.values["pv_system_model"].get()),
+        )
 
     def _equipment_configuration(self):
         """Build and validate the Phase 2 plant currently shown in the form."""
@@ -1468,18 +2131,15 @@ class MicrogridApplication:
 
         active = (
             self.values["source_mode"].get() == "live_api"
-            and self.values["pv_profile_mode"].get() == "weather_equipment"
+            and self.values["pv_profile_method"].get() == "weather"
+            and self.values["pv_system_model"].get() == "cec_equipment"
         )
         if not active:
             self.pv_equipment_summary.configure(text="")
             return
         try:
             configuration = self._equipment_configuration()
-            text = (
-                f"Derived plant rating: {configuration.rated_dc_capacity_kw:.2f} "
-                f"kW DC, {configuration.inverter_ac_capacity_kw:.2f} kW AC "
-                f"(DC/AC {configuration.dc_ac_ratio:.2f}); grid-following control."
-            )
+            text = describe_equipment_ratings(configuration)
         except (TypeError, ValueError) as error:
             text = f"Equipment design needs attention: {error}"
         self.pv_equipment_summary.configure(text=text)
@@ -1503,7 +2163,8 @@ class MicrogridApplication:
         pv_equipment_rating = ""
         if (
             source_mode == "live_api"
-            and self.values["pv_profile_mode"].get() == "weather_equipment"
+            and self.values["pv_profile_method"].get() == "weather"
+            and self.values["pv_system_model"].get() == "cec_equipment"
         ):
             try:
                 configuration = self._equipment_configuration()
@@ -1533,11 +2194,16 @@ class MicrogridApplication:
             battery_max_discharge=str(self.values["battery_max_discharge"].get()),
             pv_capacity=str(self.values["pv_capacity"].get()),
             pv_equipment_rating=pv_equipment_rating,
-            pv_profile_mode=str(self.values["pv_profile_mode"].get()),
+            pv_profile_method=str(self.values["pv_profile_method"].get()),
+            weather_source=str(self.values["weather_source"].get()),
+            pv_system_model=str(self.values["pv_system_model"].get()),
             pv_capacity_factor_csv_path=str(
                 self.values["pv_capacity_factor_csv_path"].get()
             ),
             weather_csv_path=str(self.values["weather_csv_path"].get()),
+            location_query=str(self.values["location_query"].get()),
+            pv_tilt_degrees=str(self.values["pv_tilt_degrees"].get()),
+            pv_azimuth_degrees=str(self.values["pv_azimuth_degrees"].get()),
             pv_latitude=str(self.values["pv_latitude"].get()),
             pv_longitude=str(self.values["pv_longitude"].get()),
             pv_module_name=str(self.values["pv_module_name"].get()),
@@ -1641,7 +2307,7 @@ class MicrogridApplication:
                 max_charge_kw=float(self.values["battery_max_charge"].get()),
                 max_discharge_kw=float(self.values["battery_max_discharge"].get()),
             )
-            pv_profile_mode = str(self.values["pv_profile_mode"].get())
+            pv_profile_mode = self._selected_pv_profile_mode()
             pv_capacity_kw = (
                 0.0
                 if pv_profile_mode == "weather_equipment"
@@ -1656,7 +2322,7 @@ class MicrogridApplication:
             pv_model_arguments = {}
             if str(self.values["source_mode"].get()) == "live_api":
                 if pv_profile_mode not in PV_PROFILE_LABELS:
-                    raise ValueError("Select a supported PV profile source.")
+                    raise ValueError("Select a supported PV profile method.")
                 if pv_profile_mode == "capacity_factor_csv":
                     pv_profile_path = str(
                         self.values["pv_capacity_factor_csv_path"].get()
@@ -1668,10 +2334,19 @@ class MicrogridApplication:
                     pv_model_arguments = {
                         "pv_capacity_factor_csv_path": pv_profile_path,
                     }
-                elif pv_profile_mode != "synthetic":
+                else:
                     weather_path = str(self.values["weather_csv_path"].get()).strip()
                     if not weather_path:
-                        raise ValueError("Select a weather CSV for the PV model.")
+                        # Both weather sources end at a CSV on disk: an
+                        # upload names one directly, and a retrieval saves
+                        # one. Saying which is missing depends on which
+                        # source the user picked.
+                        raise ValueError(
+                            "Select a weather CSV for the PV model."
+                            if str(self.values["weather_source"].get()) == "csv"
+                            else "Press Fetch Weather to retrieve NSRDB data "
+                            "before running the analysis."
+                        )
                     pv_model_arguments = {
                         "weather_csv_path": weather_path,
                         "pv_latitude": float(self.values["pv_latitude"].get()),
@@ -2023,12 +2698,13 @@ class MicrogridApplication:
             live
             and self.values["load_profile_mode"].get() == "synthetic"
         )
-        pv_profile_mode = str(self.values["pv_profile_mode"].get())
-        weather_pv = live and pv_profile_mode in {
-            "weather_generic", "weather_equipment"
-        }
-        capacity_factor_pv = live and pv_profile_mode == "capacity_factor_csv"
-        equipment_pv = live and pv_profile_mode == "weather_equipment"
+        pv_profile_method = str(self.values["pv_profile_method"].get())
+        weather_source = str(self.values["weather_source"].get())
+        pv_system_model = str(self.values["pv_system_model"].get())
+        pv_profile_mode = self._selected_pv_profile_mode()
+        weather_pv = live and pv_profile_method == "weather"
+        capacity_factor_pv = live and pv_profile_method == "capacity_factor_csv"
+        equipment_pv = weather_pv and pv_system_model == "cec_equipment"
         equipment = self._equipment_configuration() if equipment_pv else None
 
         return {
@@ -2108,8 +2784,34 @@ class MicrogridApplication:
                 if equipment is not None
                 else float(self.values["pv_capacity"].get())
             ),
+            # The derived backend mode is kept for continuity with earlier
+            # exports; the three selections beside it are what the interface
+            # actually asked, and are what a later reader needs to reproduce
+            # the run.
             "input_pv_profile_mode": (
                 pv_profile_mode if live else "integrated_csv"
+            ),
+            "input_pv_profile_method": (
+                pv_profile_method if live else "integrated_csv"
+            ),
+            "input_weather_source": (
+                weather_source if weather_pv else ""
+            ),
+            "input_pv_system_model": (
+                pv_system_model if weather_pv else ""
+            ),
+            "input_pv_location_query": (
+                str(self.values["location_query"].get()) if weather_pv else ""
+            ),
+            "input_nsrdb_year": (
+                str(self.values["nsrdb_year"].get())
+                if weather_pv and weather_source == "nsrdb"
+                else ""
+            ),
+            "input_nsrdb_time_step_minutes": (
+                str(self.values["nsrdb_time_step_minutes"].get())
+                if weather_pv and weather_source == "nsrdb"
+                else ""
             ),
             "input_weather_csv_path": (
                 str(self.values["weather_csv_path"].get())
@@ -2121,8 +2823,12 @@ class MicrogridApplication:
                 if capacity_factor_pv
                 else ""
             ),
-            "input_pv_latitude": str(self.values["pv_latitude"].get()) if live else "",
-            "input_pv_longitude": str(self.values["pv_longitude"].get()) if live else "",
+            "input_pv_latitude": (
+                str(self.values["pv_latitude"].get()) if weather_pv else ""
+            ),
+            "input_pv_longitude": (
+                str(self.values["pv_longitude"].get()) if weather_pv else ""
+            ),
             "input_pv_module_name": (
                 str(self.values["pv_module_name"].get())
                 if equipment_pv
@@ -2141,7 +2847,7 @@ class MicrogridApplication:
             ),
             "input_pv_dc_ac_ratio": (
                 float(self.values["pv_dc_ac_ratio"].get())
-                if live and pv_profile_mode == "weather_generic"
+                if weather_pv and pv_system_model == "generic"
                 else (equipment.dc_ac_ratio if equipment is not None else "")
             ),
             "input_pv_inverter_ac_capacity_kw": (
@@ -2544,9 +3250,14 @@ def build_review_rows(
     meter_topology_mode: str,
     submeter_count: str,
     previous_peak_kw: str,
-    pv_profile_mode: str = "synthetic",
+    pv_profile_method: str = "capacity_factor_csv",
+    weather_source: str = "csv",
+    pv_system_model: str = "generic",
     pv_capacity_factor_csv_path: str = "",
     weather_csv_path: str = "",
+    location_query: str = "",
+    pv_tilt_degrees: str = "",
+    pv_azimuth_degrees: str = "",
     pv_latitude: str = "",
     pv_longitude: str = "",
     pv_module_name: str = "",
@@ -2589,25 +3300,56 @@ def build_review_rows(
             if load_profile_mode == "synthetic"
             else f"{load_power} kW at every interval"
         )
-        pv_profile_label = PV_PROFILE_LABELS[pv_profile_mode]
-        if pv_profile_mode == "capacity_factor_csv":
+        weather_derived = pv_profile_method == "weather"
+        equipment_model = weather_derived and pv_system_model == "cec_equipment"
+
+        pv_profile_label = PV_PROFILE_METHOD_LABELS.get(
+            pv_profile_method, pv_profile_method
+        )
+        if pv_profile_method == "capacity_factor_csv":
             pv_profile_label += (
                 f"; {Path(pv_capacity_factor_csv_path).name}; "
                 f"rated {pv_capacity} kW"
             )
-        elif pv_profile_mode != "synthetic":
-            pv_profile_label += (
-                f"; {Path(weather_csv_path).name}; "
-                f"{pv_latitude}, {pv_longitude}"
+
+        if weather_derived:
+            pv_weather_label = WEATHER_SOURCE_LABELS.get(
+                weather_source, weather_source
             )
-        if pv_profile_mode == "weather_equipment":
-            pv_profile_label += (
-                f"; module {pv_module_name}; inverter {pv_inverter_name}"
+            if weather_csv_path:
+                pv_weather_label += f"; {Path(weather_csv_path).name}"
+            pv_system_label = PV_SYSTEM_MODEL_LABELS.get(
+                pv_system_model, pv_system_model
             )
+            if equipment_model:
+                pv_system_label += (
+                    f"; module {pv_module_name}; inverter {pv_inverter_name}"
+                )
+            else:
+                pv_system_label += f"; rated {pv_capacity} kW"
+            # Orientation feeds both models and moves the answer by a large
+            # fraction, so it belongs in the review whichever one is selected.
+            pv_system_label += (
+                f"; tilt {pv_tilt_degrees} deg, azimuth "
+                f"{pv_azimuth_degrees} deg"
+            )
+            # The coordinates are what the model actually uses, so they are
+            # shown even when a place name found them.
+            pv_location_label = f"{pv_latitude}, {pv_longitude}"
+            if location_query.strip():
+                pv_location_label += f" (searched: {location_query.strip()})"
+        else:
+            pv_weather_label = "Not used"
+            pv_system_label = "Not used"
+            pv_location_label = "Not used"
     else:
         load_profile_label = "Integrated CSV load_kw"
         load_detail = "Read from the selected integrated signal file"
         pv_profile_label = "Integrated CSV pv_kw"
+        pv_weather_label = "Included in integrated CSV"
+        pv_system_label = "Included in integrated CSV"
+        pv_location_label = "Not used"
+        equipment_model = False
 
     return (
         ("Analysis", "Data source", source_label),
@@ -2668,10 +3410,13 @@ def build_review_rows(
             "Microgrid",
             "PV capacity",
             pv_equipment_rating or "Invalid equipment design"
-            if source_mode == "live_api" and pv_profile_mode == "weather_equipment"
+            if equipment_model
             else f"{pv_capacity} kW",
         ),
-        ("Profiles", "PV source", pv_profile_label),
+        ("Profiles", "PV profile method", pv_profile_label),
+        ("Profiles", "PV weather source", pv_weather_label),
+        ("Profiles", "PV system model", pv_system_label),
+        ("Profiles", "PV site location", pv_location_label),
         ("Profiles", "Load source", load_profile_label),
         ("Profiles", "Load details", load_detail),
     )
@@ -2787,5 +3532,6 @@ def create_guided_application_window() -> tk.Tk:
     """Create the main guided microgrid-analysis window."""
 
     window = tk.Tk()
-    MicrogridApplication(window)
+    application = MicrogridApplication(window)
+    window.microgrid_application = application
     return window
