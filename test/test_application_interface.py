@@ -1496,3 +1496,92 @@ def test_every_input_the_equipment_model_reads_is_visible_and_editable(
             f"{argument} is read by the equipment model but no control for "
             f"{variable_name} is visible and editable."
         )
+
+
+## NSRDB year follows the horizon ------------------------------------------
+
+
+def _weather_application(
+    start="2026-05-31",
+    end="2026-06-02",
+    year="2026",
+    timezone="America/Los_Angeles",
+):
+    application = MicrogridApplication.__new__(MicrogridApplication)
+    application.values = {
+        "start_date": FakeValueVariable(start),
+        "end_date_inclusive": FakeValueVariable(end),
+        "timezone": FakeValueVariable(timezone),
+        "timestep_minutes": FakeValueVariable("15"),
+        "nsrdb_year": FakeValueVariable(year),
+    }
+    application.nsrdb_year_notice = FakeConfigurableWidget()
+    application._nsrdb_year_auto_value = year
+    return application
+
+
+def test_a_year_matching_the_horizon_shows_no_notice():
+    application = _weather_application(year="2026")
+
+    application._refresh_nsrdb_year_notice()
+
+    assert application.nsrdb_year_notice.configuration["text"] == ""
+
+
+def test_a_mismatched_year_is_explained_before_any_fetch():
+    application = _weather_application(year="2025")
+
+    application._refresh_nsrdb_year_notice()
+
+    text = application.nsrdb_year_notice.configuration["text"]
+    assert "2025" in text and "2026" in text
+    assert "proxy" in text
+
+
+def test_the_year_follows_the_start_date_while_untouched():
+    application = _weather_application(start="2026-05-31", year="2026")
+
+    application.values["start_date"].set("2024-03-01")
+    application._on_horizon_changed()
+
+    assert application.values["nsrdb_year"].get() == "2024"
+
+
+def test_an_edited_year_is_not_overwritten_by_the_start_date():
+    # A deliberate proxy year must survive a change to the horizon; this is
+    # the only way to study a period NSRDB has no weather for.
+    application = _weather_application(start="2026-05-31", year="2026")
+    application.values["nsrdb_year"].set("2023")   # the person edits it
+
+    application.values["start_date"].set("2024-03-01")
+    application._on_horizon_changed()
+
+    assert application.values["nsrdb_year"].get() == "2023"
+
+
+def test_a_half_typed_date_produces_no_notice_rather_than_an_error():
+    application = _weather_application(start="2026-0")
+
+    application._refresh_nsrdb_year_notice()
+
+    assert application.nsrdb_year_notice.configuration["text"] == ""
+
+
+def test_a_non_numeric_year_produces_no_notice():
+    application = _weather_application(year="")
+
+    application._refresh_nsrdb_year_notice()
+
+    assert application.nsrdb_year_notice.configuration["text"] == ""
+
+
+def test_a_horizon_crossing_new_year_says_one_fetch_is_not_enough():
+    application = _weather_application(
+        start="2025-12-30", end="2026-01-02", year="2025"
+    )
+
+    application._refresh_nsrdb_year_notice()
+
+    text = application.nsrdb_year_notice.configuration["text"]
+    assert "2025 and 2026" in text
+    assert "separately" in text

@@ -56,6 +56,7 @@ from .weather import (
     WeatherError,
     prepare_weather_frame,
 )
+from ..timeseries.interval_table import IntervalIndex
 from ..timeseries.schema import TIMESTAMP
 
 #: The repository keeps its ``.env`` beside the packages, at ``src/.env``.
@@ -229,6 +230,62 @@ def _credentials(
         )
 
     return resolved_key, resolved_email
+
+
+def horizon_years(interval_index: IntervalIndex) -> tuple[int, ...]:
+    """Calendar years the horizon touches, in the site's own timezone.
+
+    Taken from the generated index rather than from the two date strings, so
+    the inclusive end date and any daylight-saving transition are handled by
+    the one place that already decides them.
+    """
+
+    return tuple(sorted({int(year) for year in interval_index.index.year}))
+
+
+def year_coverage_problem(
+    year: int | str,
+    interval_index: IntervalIndex,
+) -> str | None:
+    """Explain why ``year`` will not cover the horizon, or return ``None``.
+
+    NSRDB is addressed by whole calendar year -- there is no start or end
+    date -- so the only question that can be asked ahead of a fetch is
+    whether the requested year is the one the horizon lives in. Answering it
+    here means a mismatch costs nothing, instead of being discovered after a
+    metered request has already been spent.
+
+    A typical-year name is not a calendar year and carries no opinion, so it
+    is passed over rather than judged.
+    """
+
+    if not isinstance(year, int):
+        return None
+
+    needed = horizon_years(interval_index)
+
+    if len(needed) > 1:
+        # Horizon years are contiguous, so more than two read better as a
+        # range than as a chain of "and"s.
+        span = (
+            f"{needed[0]} and {needed[1]}"
+            if len(needed) == 2
+            else f"{needed[0]} through {needed[-1]}"
+        )
+        return (
+            f"This horizon spans {span}. NSRDB serves one calendar year per "
+            f"request, so {year} covers only part of it; fetch each year "
+            f"separately."
+        )
+
+    if year != needed[0]:
+        return (
+            f"Year {year} does not cover a horizon in {needed[0]}. A run will "
+            f"reject the gap unless {year} is being used deliberately as a "
+            f"proxy weather year."
+        )
+
+    return None
 
 
 def default_fetcher(request: NSRDBRequest, api_key: str, email: str):

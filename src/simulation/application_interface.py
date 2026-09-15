@@ -42,7 +42,9 @@ from ..profiles import (
     cec_module_names,
     fetch_nsrdb_weather,
     save_weather_csv,
+    year_coverage_problem,
 )
+from ..timeseries.interval_table import build_interval_index
 from .geocoding import GeocodingError, LocationSearch
 from .interface_analysis import (
     build_analysis_details,
@@ -437,7 +439,88 @@ class MicrogridApplication:
             add="+",
         )
 
+        # The NSRDB year is a second statement of the study period, so it
+        # follows the start date until a person overrides it, and any
+        # remaining disagreement is shown before a metered fetch is spent.
+        self._nsrdb_year_auto_value = str(self.values["nsrdb_year"].get())
+        for field in ("start_date", "end_date_inclusive", "timezone"):
+            self.values[field].trace_add(
+                "write", self._on_horizon_changed
+            )
+        self.values["nsrdb_year"].trace_add(
+            "write", self._on_nsrdb_year_changed
+        )
+        self._refresh_nsrdb_year_notice()
+
         self.show_page("analysis")
+
+    def _on_horizon_changed(self, *_: object) -> None:
+        """Track the start date with the NSRDB year, unless it was edited."""
+
+        current = str(self.values["nsrdb_year"].get()).strip()
+
+        if current == self._nsrdb_year_auto_value:
+            start = str(self.values["start_date"].get()).strip()
+            derived = start[:4]
+
+            if len(derived) == 4 and derived.isdigit():
+                self._nsrdb_year_auto_value = derived
+                # Assigning re-enters through the year trace, which refreshes
+                # the notice; setting it only when it differs keeps that to
+                # one pass.
+                if current != derived:
+                    self.values["nsrdb_year"].set(derived)
+                    return
+
+        self._refresh_nsrdb_year_notice()
+
+    def _on_nsrdb_year_changed(self, *_: object) -> None:
+        self._refresh_nsrdb_year_notice()
+
+    def _horizon_for_notice(self):
+        """Build the interval grid the form describes, or ``None``.
+
+        A half-typed date is the normal state of a text field, so an invalid
+        horizon is not an error here -- it simply means there is nothing to
+        compare the year against yet.
+        """
+
+        try:
+            return build_interval_index(
+                start_date=str(self.values["start_date"].get()).strip(),
+                end_date=str(self.values["end_date_inclusive"].get()).strip(),
+                timezone=str(self.values["timezone"].get()).strip(),
+                timestep_minutes=int(
+                    str(self.values["timestep_minutes"].get()).strip()
+                ),
+            )
+        except Exception:
+            return None
+
+    def _nsrdb_year_mismatch(self) -> str | None:
+        """Describe a year that will not cover the horizon, if any."""
+
+        horizon = self._horizon_for_notice()
+
+        if horizon is None:
+            return None
+
+        try:
+            year = int(str(self.values["nsrdb_year"].get()).strip())
+        except (TypeError, ValueError):
+            return None
+
+        return year_coverage_problem(year, horizon)
+
+    def _refresh_nsrdb_year_notice(self) -> None:
+        """Show the coverage advisory beside the year field."""
+
+        notice = getattr(self, "nsrdb_year_notice", None)
+
+        if notice is None:
+            return
+
+        notice.configure(text=self._nsrdb_year_mismatch() or "")
 
     def _create_variables(self) -> dict[str, tk.Variable]:
         """Create shared variables so page values survive navigation."""
@@ -1006,6 +1089,14 @@ class MicrogridApplication:
         )
         self.nsrdb_year_entry = self._add_entry(
             weather_frame, "NSRDB year", "nsrdb_year", 3
+        )
+        self.nsrdb_year_notice = ttk.Label(
+            weather_frame,
+            text="",
+            wraplength=740,
+        )
+        self.nsrdb_year_notice.grid(
+            row=8, column=0, columnspan=3, sticky="w", padx=6, pady=(0, 4)
         )
         self.nsrdb_time_step_combobox = self._add_combobox(
             weather_frame,

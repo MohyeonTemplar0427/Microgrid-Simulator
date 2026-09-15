@@ -29,6 +29,8 @@ from src.profiles import (
 )
 from src.profiles.nsrdb import (
     INTERVAL_MIDPOINT,
+    horizon_years,
+    year_coverage_problem,
     INTERVAL_START,
     default_fetcher,
     detect_interval_label_convention,
@@ -218,6 +220,82 @@ def test_importing_the_module_needs_no_credentials():
     request = make_request()
 
     assert request.latitude == LATITUDE
+
+
+## Horizon years and coverage ---------------------------------------------
+
+
+def _horizon(start, end, timezone="America/Los_Angeles"):
+    from src.timeseries.interval_table import build_interval_index
+
+    return build_interval_index(
+        start_date=start, end_date=end, timezone=timezone
+    )
+
+
+def test_a_horizon_inside_one_year_needs_that_year():
+    assert horizon_years(_horizon("2025-06-01", "2025-06-03")) == (2025,)
+
+
+def test_the_inclusive_end_date_is_respected():
+    # 31 December is the last billed day, so the horizon is 2025 alone even
+    # though the exclusive end instant falls in 2026.
+    assert horizon_years(_horizon("2025-12-30", "2025-12-31")) == (2025,)
+
+
+def test_a_horizon_crossing_new_year_needs_both_years():
+    assert horizon_years(_horizon("2025-12-30", "2026-01-02")) == (2025, 2026)
+
+
+def test_the_matching_year_has_no_problem():
+    horizon = _horizon("2025-06-01", "2025-06-03")
+
+    assert year_coverage_problem(2025, horizon) is None
+
+
+def test_a_mismatched_year_is_named_as_a_proxy():
+    horizon = _horizon("2026-05-31", "2026-06-02")
+
+    problem = year_coverage_problem(2025, horizon)
+
+    assert problem is not None
+    assert "2025" in problem
+    assert "2026" in problem
+    assert "proxy" in problem
+
+
+def test_a_horizon_spanning_two_years_says_one_fetch_is_not_enough():
+    horizon = _horizon("2025-12-30", "2026-01-02")
+
+    problem = year_coverage_problem(2025, horizon)
+
+    assert problem is not None
+    assert "2025 and 2026" in problem
+    assert "separately" in problem
+
+
+def test_three_or_more_years_read_as_a_range():
+    horizon = _horizon("2024-03-01", "2026-06-02")
+
+    problem = year_coverage_problem(2024, horizon)
+
+    assert "2024 through 2026" in problem
+    assert "and 2025 and" not in problem
+
+
+def test_a_typical_year_name_carries_no_opinion():
+    # tmy is not a calendar year, so it is never called a mismatch.
+    horizon = _horizon("2026-05-31", "2026-06-02")
+
+    assert year_coverage_problem("tmy-2020", horizon) is None
+
+
+def test_coverage_is_judged_in_the_site_timezone():
+    # The same instants are a different calendar date in Honolulu, but the
+    # horizon is stated in local dates, so the year is the local one.
+    horizon = _horizon("2025-01-01", "2025-01-02", timezone="Pacific/Honolulu")
+
+    assert horizon_years(horizon) == (2025,)
 
 
 ## Credentials ------------------------------------------------------------

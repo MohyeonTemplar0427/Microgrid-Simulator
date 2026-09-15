@@ -18,7 +18,9 @@ from .nsrdb import (
     NSRDBRequest,
     NSRDBWeather,
     fetch_nsrdb_weather,
+    horizon_years,
     save_weather_csv,
+    year_coverage_problem,
 )
 from .pv_equipment import (
     CONTROL_BEHAVIOUR_NOT_MODELLED,
@@ -125,7 +127,9 @@ __all__ = [
     "cec_inverter_names",
     "cec_module_names",
     "fetch_nsrdb_weather",
+    "horizon_years",
     "load_weather_csv",
     "prepare_weather_frame",
     "save_weather_csv",
+    "year_coverage_problem",
 ]
