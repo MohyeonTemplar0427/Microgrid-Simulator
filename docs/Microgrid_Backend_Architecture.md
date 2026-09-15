@@ -16,6 +16,7 @@ cannot recover from the code alone.
 | Rate plans | `src/billing/plans.py` | Which filed version applies on each service date? |
 | Baselines | `src/billing/baseline.py` | How much usage is priced at the baseline tier? |
 | Billing | `src/billing/charges.py` | What does it cost? |
+| AC replay | `src/opendss/ac_replay.py` | What does each inverter actually put on the network? |
 
 Tariff definitions themselves live in `src/billing/pge_commercial.py` and
 `src/billing/pge_residential.py`, split because the two families differ
@@ -249,6 +250,59 @@ accumulation when *rates* change mid-cycle. Where that happens, each version's
 days are billed as their own sub-period with their own prorated baseline, and
 the result carries an explicit warning that this is a documented
 approximation rather than a filed rule.
+
+## Production and network physics are separate models
+
+`pvlib` owns production; OpenDSS owns network physics. The PV chain in
+`src/profiles/` converts weather, module and inverter configuration into an AC
+availability schedule, and `src/opendss/ac_replay.py` hands that schedule to
+OpenDSS as constant-P/Q `Generator` elements (model 1), one per **physical**
+inverter. OpenDSS does not repeat the solar conversion.
+
+This matters because the alternative — an OpenDSS `PVSystem` with its own
+irradiance-to-power model — would compute production twice, from two models
+that disagree, and the disagreement would surface as a network result rather
+than as a modelling error. One model owns each question.
+
+**These are steady-state grid-following equivalents, not inverter dynamics.**
+The Generator elements do not run `InvControl`, Volt-Var or Volt-Watt. QSTS
+stays a one-way validation of a dispatch schedule: it answers "is this
+schedule electrically acceptable?", never "what would the inverter have done
+instead?".
+
+### The replay contract
+
+- **Availability is indexed by instant, not wall clock.** A missing timestamp
+  raises rather than being filled by position. On the autumn daylight-saving
+  transition a local hour occurs twice, and the two folds are different
+  instants carrying different availability — see *Interval counts are never
+  assumed* above for the same principle on the input side.
+- **Requested PV cannot exceed availability.** Where dispatch asks for less,
+  the reduction is allocated in proportion to each inverter's available
+  power. The interface can replay curtailment but adds no optimizer variable.
+- **P and Q must satisfy each inverter's kVA circle before solving.** A
+  setpoint that cannot physically be met is rejected rather than handed to
+  the solver, which would otherwise converge on something else and report
+  success.
+- **Tracking is measured, not assumed.** Every interval compares requested
+  against delivered P and Q at each terminal. A mismatch beyond 0.01
+  kW/kvar makes the interval infeasible *even when the power flow converged* —
+  convergence alone is not evidence the schedule was followed.
+
+### Inverter night tare
+
+A CEC inverter draws a small standby power at night. That draw is added once
+to site load before dispatch and billing, because it is a real import the
+meter sees. The PV diagnostics keep it as a separate series, so the building
+load and the inverter's self-consumption never become indistinguishable.
+
+### Assumptions currently baked in
+
+The GUI path uses the representative balanced 12.47 kV / 480 V network with a
+750 kVA transformer and a common load bus. CEC `Paco` is an AC **kW** rating
+and says nothing about installation wiring, so GUI replay assumes kVA equals
+kW and Q is zero, and reports that assumption in the run's warnings.
+Programmatic callers can supply real kVA, bus and connection details instead.
 
 ## Demand and customer charges
 

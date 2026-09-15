@@ -10,6 +10,7 @@ from .opendss_analysis import (
 )
 
 from ..dispatch.battery import Battery
+from .ac_replay import PVReplayConfiguration
 
 from .qsts_analysis import (
     create_qsts_scenario_comparison,
@@ -77,6 +78,7 @@ def replay_required_dispatch_scenarios(
         *,
         battery: Battery,
         pv_capacity_kw: float,
+        pv_replay: PVReplayConfiguration | None = None,
 ) -> dict[str, pd.DataFrame]:
     """Replay every dispatch scenario with common equipment."""
     if not isinstance(battery, Battery):
@@ -104,6 +106,7 @@ def replay_required_dispatch_scenarios(
                 dispatch_data,
                 battery=battery,
                 pv_capacity_kw=pv_capacity_kw,
+                pv_replay=pv_replay,
             )
         )
 

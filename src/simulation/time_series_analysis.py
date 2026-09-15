@@ -201,7 +201,7 @@ def run_microgrid_timeseries_analysis(
     canonical_analysis_data = normalize_any_frame(
         analysis_data,
         timestep_minutes=timestep_minutes,
-        rated_pv_capacity_kw=specification.pv_capacity_kw,
+        rated_pv_capacity_kw=specification.pv_ac_capacity_kw,
     )
     analysis_data = to_legacy_columns(canonical_analysis_data)
 
@@ -227,6 +227,20 @@ def run_microgrid_timeseries_analysis(
             scenario_names=scenario_names,
         )
     )
+
+    electrical_columns = [column for column in signal_data.columns
+                          if column in ("load_kvar", "load_power_factor")
+                          or (column.startswith("pv_") and column.endswith("_requested_kvar"))]
+    if electrical_columns:
+        electrical = _normalize_signal_timestamps(
+            signal_data, expected_timezone=expected_timezone
+        ).set_index("timestamp")[electrical_columns]
+        for dispatch in dispatch_scenarios.values():
+            aligned = electrical.reindex(pd.DatetimeIndex(dispatch["timestamp"]))
+            if aligned.isna().any().any():
+                raise ValueError("Electrical setpoints must cover every dispatch timestamp.")
+            for column in electrical_columns:
+                dispatch[column] = aligned[column].to_numpy()
 
     if progress_callback is not None:
         progress_callback("Replaying dispatch through the OpenDSS network")

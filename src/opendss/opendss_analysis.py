@@ -7,6 +7,10 @@ from enum import Enum
 from collections.abc import Sequence
 import pandas as pd
 from ..dispatch.battery import Battery
+from .ac_replay import (
+    PVReplayConfiguration, replay_inverters, add_ac_inverters,
+    inverter_setpoints, replay_measurements, load_reactive_power,
+)
 
 from .opendss_models import (
     FeederMetrics,
@@ -118,7 +122,8 @@ def create_base_circuit(
 def add_replay_resources(
         *,
         battery: Battery,
-        pv_capacity_kw: float = 30
+        pv_capacity_kw: float = 30,
+        pv_replay: PVReplayConfiguration | None = None,
 )-> None:
     """Add the PV system and battery used for dispatch replay"""
 
@@ -155,20 +160,7 @@ def add_replay_resources(
         battery.discharge_efficiency * 100.0
     )
 
-    if pv_capacity_kw > 0:
-        dss.Text.Command(
-            "New PVSystem.RooftopPV "
-            "bus1=load_bus.1.2.3 "
-            "phases=3 "
-            "conn=wye "
-            "kv=0.48 "
-            f"kVA={pv_capacity_kw} "
-            f"Pmpp={pv_capacity_kw} "
-            "irradiance=0 "
-            "pf=1.0 "
-            "%CutIn=0 "
-            "%CutOut=0"
-        )
+    add_ac_inverters(replay_inverters(pv_capacity_kw, pv_replay))
 
     dss.Text.Command(
         "New Storage.Battery "
@@ -195,6 +187,7 @@ def replay_dispatch_timeseries(
         *,
         battery: Battery,
         pv_capacity_kw: float,
+        pv_replay: PVReplayConfiguration | None = None,
 )-> pd.DataFrame:
     """Replay an optimizer dispatch schedule through OpenDSS"""
 
@@ -221,6 +214,15 @@ def replay_dispatch_timeseries(
         raise ValueError(
             "Dispatch replay data must not be empty."
         )
+    numeric_columns = sorted(required_columns - {"timestamp"})
+    if not dispatch_data[numeric_columns].map(lambda x: math.isfinite(float(x))).all().all():
+        raise ValueError("Dispatch power and energy values must be finite.")
+    if (dispatch_data["load_kw"] < 0).any():
+        raise ValueError("Load power must not be negative.")
+    inverters = replay_inverters(pv_capacity_kw, pv_replay)
+    # Validate availability for the whole schedule before altering OpenDSS.
+    points_by_interval = [inverter_setpoints(row, inverters, pv_replay)
+                          for _, row in dispatch_data.iterrows()]
     initial_load_kw = float(
         dispatch_data.iloc[0]["load_kw"]
     )
@@ -232,6 +234,7 @@ def replay_dispatch_timeseries(
     add_replay_resources(
         battery=battery,
         pv_capacity_kw=pv_capacity_kw,
+        pv_replay=pv_replay,
     )
 
     line_found = dss.Circuit.SetActiveElement(
@@ -257,15 +260,17 @@ def replay_dispatch_timeseries(
 
     replay_records = []
 
-    for _, dispatch_row in dispatch_data.iterrows():
+    for (_, dispatch_row), points in zip(dispatch_data.iterrows(), points_by_interval):
         apply_dispatch_operating_point(
             dispatch_row,
             pv_rated_kw = pv_capacity_kw,
+            pv_replay=pv_replay,
             battery_capacity_kWh=(
                 battery.capacity_kWh
             ),
         )
 
+        measurements = replay_measurements(dispatch_row, points)
         feeder_metrics = calculate_feeder_metrics()
 
         transformer_metrics = calculate_transformer_metrics()
@@ -318,6 +323,8 @@ def replay_dispatch_timeseries(
             and not voltage_violation
             and not line_overload
             and not transformer_overload
+            and not measurements["setpoint_mismatch"]
+            and not measurements["inverter_capability_violation"]
         )
 
         receiving_end_real_power_kw = (
@@ -331,6 +338,7 @@ def replay_dispatch_timeseries(
 
         replay_records.append(
             {
+                **measurements,
                 "load_kw": float(
                 dispatch_row["load_kw"]
                 ),
@@ -393,6 +401,11 @@ def replay_dispatch_timeseries(
                 "receiving_end_real_power_kw": (
                     receiving_end_real_power_kw
                 ),
+                "network_real_loss_kw": dss.Circuit.Losses()[0] / 1000.0,
+                "pcc_balance_error_kw": (
+                    pcc_metrics.grid_net_import_kw - scheduled_grid_import_kw
+                    - dss.Circuit.Losses()[0] / 1000.0
+                ),
                 "grid_import_error_kw": (
                     receiving_end_real_power_kw
                     - scheduled_grid_import_kw
@@ -409,6 +422,7 @@ def apply_dispatch_operating_point(
         pv_rated_kw: float = 30.0,
         battery_capacity_kWh: float = 20.0,
         zero_tolerance_kw: float = 1e-6,
+        pv_replay: PVReplayConfiguration | None = None,
 )-> None:
     """Apply one optimizer dispatch row to the OpenDSS circuit"""
 
@@ -438,23 +452,16 @@ def apply_dispatch_operating_point(
         dispatch_row["battery_soc_kWh"]
     )
 
-    if not 0.0 <= pv_kw <= pv_rated_kw:
-        raise ValueError(
-            "PV power must be set between zero and its rating."
-        )
-
-    if not 0.0 <= battery_soc_kWh <= battery_capacity_kWh:
-        raise ValueError(
-            "Battery Energy must be between zero and capacity."
-        )
-    
-    if pv_rated_kw < 0:
-        raise ValueError("PV rating must not be negative.")
-
-    # Irradiance is effectively a normalized solar availability value because
-    # OpenDSS defines 1.0 as the reference irradiance of 1 kW/m^2. A zero
-    # rating represents a site where no PV system is installed.
-    pv_irradiance = pv_kw / pv_rated_kw if pv_rated_kw > 0 else None
+    if not math.isfinite(load_kw) or load_kw < 0:
+        raise ValueError("Load power must be finite and nonnegative.")
+    if not math.isfinite(battery_net_injection_kw):
+        raise ValueError("Battery power must be finite.")
+    if battery_capacity_kWh <= 0 or not 0 <= battery_soc_kWh <= battery_capacity_kWh:
+        raise ValueError("Battery Energy must be between zero and capacity.")
+    points = inverter_setpoints(
+        dispatch_row, replay_inverters(pv_rated_kw, pv_replay), pv_replay
+    )
+    load_kvar = load_reactive_power(dispatch_row)
 
     battery_soc_percent = (
         battery_soc_kWh
@@ -472,14 +479,11 @@ def apply_dispatch_operating_point(
 
     dss.Text.Command(
         "Edit Load.Building "
-        f"kW={load_kw}"
+        f"kW={load_kw} kvar={load_kvar}"
     )
 
-    if pv_irradiance is not None:
-        dss.Text.Command(
-            "Edit PVSystem.RooftopPV "
-            f"irradiance={pv_irradiance}"
-        )
+    for item, available, p, q in points:
+        dss.Text.Command(f"Edit Generator.{item.name} kW={p} kvar={q}")
 
     dss.Text.Command(
         "Edit Storage.Battery "

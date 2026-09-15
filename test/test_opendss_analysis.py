@@ -384,7 +384,7 @@ def test_add_replay_resources_creates_pv_and_battery(
         pv_capacity_kw=30.0,
     )
 
-    assert dss.PVsystems.AllNames() == [
+    assert dss.Generators.AllNames() == [
         "rooftoppv"
     ]
     assert dss.Storages.AllNames() == [
@@ -392,7 +392,7 @@ def test_add_replay_resources_creates_pv_and_battery(
     ]
 
     dss.Text.Command(
-        "? PVSystem.RooftopPV.kV"
+        "? Generator.RooftopPV.kV"
     )
     pv_voltage_kv = float(
         dss.Text.Result()
@@ -426,7 +426,7 @@ def test_add_replay_resources_omits_pv_when_capacity_is_zero(
         pv_capacity_kw=0.0,
     )
 
-    assert not dss.PVsystems.AllNames()
+    assert not dss.Generators.AllNames()
     assert dss.Storages.AllNames() == ["battery"]
     assert dss.Solution.Converged()
 
@@ -456,8 +456,8 @@ def test_apply_dispatch_operating_point_uses_real_dispatch_row(
     dss.Text.Command("? Load.Building.kW")
     load_kw = float(dss.Text.Result())
 
-    dss.Text.Command("? PVSystem.RooftopPV.irradiance")
-    pv_irradiance = float(dss.Text.Result())
+    dss.Text.Command("? Generator.RooftopPV.kW")
+    pv_ac_kw = float(dss.Text.Result())
 
     dss.Text.Command("? Storage.Battery.kW")
     battery_kw = float(dss.Text.Result())
@@ -474,8 +474,8 @@ def test_apply_dispatch_operating_point_uses_real_dispatch_row(
 
     assert dss.Solution.Converged()
     assert load_kw == pytest.approx(25.0)
-    assert pv_irradiance == pytest.approx(
-        24.944088 / 30.0
+    assert pv_ac_kw == pytest.approx(
+        24.944088
     )
     assert battery_kw == pytest.approx(
         -4.308915

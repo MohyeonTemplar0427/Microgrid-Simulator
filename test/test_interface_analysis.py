@@ -875,6 +875,26 @@ def test_equipment_selection_routes_to_the_phase_two_weather_model(tmp_path):
     assert provenance["inverter_model"] == "sandia"
     assert provenance["control_mode"] == "grid_following"
     assert profile["pv_kw"].max() > 0
+    config = profile.attrs["pv_replay"]
+    assert config.rated_ac_kw == pytest.approx(provenance["inverter_ac_capacity_kw"])
+    assert config.available_power_kw.sum(axis=1).to_numpy() == pytest.approx(profile.pv_kw)
+    assert profile.load_kw.to_numpy() == pytest.approx(
+        25 + profile.attrs["pv_diagnostics"]["pv_inverter_night_tare_kw"].to_numpy()
+    )
+    from src.opendss.opendss_analysis import replay_dispatch_timeseries
+    from src.dispatch.battery import Battery
+    replay_input = profile.copy()
+    replay_input["battery_net_injection_kw"] = 0.
+    replay_input["battery_soc_kWh"] = 10.
+    replay_input["grid_net_import_kw"] = profile.load_kw - profile.pv_kw
+    result = replay_dispatch_timeseries(
+        replay_input,
+        battery=Battery(capacity_kWh=20., SOC_min=0.1, SOC_max=0.9,
+                        energy_kWh=10., max_charge_kw=5., max_discharge_kw=5.),
+        pv_capacity_kw=provenance["rated_dc_capacity_kw"], pv_replay=config,
+    )
+    assert result.pv_actual_kw.to_numpy() == pytest.approx(profile.pv_kw, abs=0.01)
+    assert not result.setpoint_mismatch.any()
 
 
 def test_the_weather_source_does_not_change_the_pv_model(tmp_path):
@@ -905,3 +925,43 @@ def test_the_weather_source_does_not_change_the_pv_model(tmp_path):
     pd.testing.assert_series_equal(
         profiles[0]["pv_kw"], profiles[1]["pv_kw"]
     )
+
+
+@pytest.mark.parametrize("mode", ["weather_generic", "weather_equipment"])
+def test_gui_weather_selection_reaches_qsts_ac_ratings(tmp_path, monkeypatch, mode):
+    horizon = build_horizon("2026-06-21", 1, "America/Los_Angeles", 15)
+    weather = _write_clear_sky_weather_csv(tmp_path / "weather.csv", horizon)
+    def offline_signals(config, horizon, *, site_profile, **kwargs):
+        frame = site_profile.copy()
+        frame["price_per_kWh"] = 0.2
+        frame["gCO2/kWh"] = 300.
+        return frame
+    monkeypatch.setattr(interface_analysis, "load_signal_data", offline_signals)
+    result = interface_analysis.run_live_api_analysis(
+        MicrogridSpecification(
+            battery=Battery(capacity_kWh=20, energy_kWh=10,
+                            max_charge_kw=5, max_discharge_kw=5),
+            pv_capacity_kw=30, load_kw=25,
+        ),
+        start_date="2026-06-21", number_of_days=1, timestep_minutes=15,
+        region_id="caiso_np15", market_provider=None, market_location=None,
+        carbon_provider=None, carbon_zone=None, timezone=None,
+        price_mode="fixed_retail", fixed_retail_price=0.2, price_csv_path=None,
+        selected_scenarios=("no_battery", "cost_optimal"), carbon_weights=(0.2,),
+        degradation_cost_per_kWh=0.03,
+        pv_profile_mode=mode, weather_csv_path=weather,
+        pv_latitude=37.77, pv_longitude=-122.42, pv_dc_ac_ratio=1.2,
+        pv_module_name="Canadian_Solar_Inc__CS6X_300M",
+        pv_inverter_name="SMA_America__STP_50_US_41__480V_",
+        pv_modules_per_string=15, pv_strings=13, pv_inverter_count=2,
+        pv_mppt_input_count=2,
+    )
+    for replay in result.runs_by_carbon_weight[0.2].powerflow_scenarios.values():
+        assert replay.pv_actual_kw.to_numpy() == pytest.approx(replay.pv_kw, abs=0.01)
+        assert not replay.setpoint_mismatch.any()
+        rating_columns = [c for c in replay if c.startswith("pv_") and c.endswith("_rated_ac_kw")]
+        assert len(rating_columns) == (2 if mode == "weather_equipment" else 1)
+        assert replay[rating_columns].iloc[0].sum() == pytest.approx(
+            result.pv_provenance["inverter_ac_capacity_kw"]
+        )
+    assert any("representative balanced 480 V" in w for w in result.warnings)

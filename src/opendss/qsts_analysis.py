@@ -135,6 +135,12 @@ def create_qsts_scenario_comparison(
                     results["feeder_real_loss_kw"].sum()
                     * timestep_hours
                 ),
+                "setpoint_mismatch_intervals": int(
+                    results.get("setpoint_mismatch", pd.Series(False, index=results.index)).sum()
+                ),
+                "inverter_capability_violation_intervals": int(
+                    results.get("inverter_capability_violation", pd.Series(False, index=results.index)).sum()
+                ),
                 "feasible_intervals": int(
                     results["feasible"].sum()
                 ),

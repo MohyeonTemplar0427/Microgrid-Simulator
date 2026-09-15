@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from ..dispatch.battery import Battery
+from ..opendss.ac_replay import PVReplayConfiguration
 
 @dataclass
 class MicrogridSpecification:
@@ -8,6 +9,12 @@ class MicrogridSpecification:
     battery: Battery
     pv_capacity_kw: float
     load_kw: float
+    pv_replay: PVReplayConfiguration | None = None
+
+    @property
+    def pv_ac_capacity_kw(self) -> float:
+        """AC terminal limit; legacy profiles use their supplied capacity."""
+        return self.pv_replay.rated_ac_kw if self.pv_replay else self.pv_capacity_kw
 
     def __post_init__(self) -> None:
         """Validate the specification immediately after creation."""

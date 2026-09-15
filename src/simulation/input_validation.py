@@ -33,7 +33,7 @@ def validate_snapshot_inputs(
     if not (
         0.0
         <= pv_output_kw
-        <= specification.pv_capacity_kw
+        <= specification.pv_ac_capacity_kw
     ):
         raise ValueError(
             "PV output must be between zero and the PV capacity."
@@ -162,7 +162,7 @@ def _validate_pv_dispatch_limits(
         )
 
     if (
-        pv_output_kw > specification.pv_capacity_kw
+        pv_output_kw > specification.pv_ac_capacity_kw
     ).any():
         raise ValueError(
             "PV output exceeds the configured PV capacity."

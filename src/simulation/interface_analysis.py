@@ -1,6 +1,6 @@
 """Connect guided-interface requests to the time-series analysis backend."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date, timedelta
 import math
 import os
@@ -57,6 +57,7 @@ from ..signal_pipeline.source_config import resolve_live_api_config
 from ..signal_pipeline.region_config import get_region_config
 from ..timeseries import build_interval_index_from_days
 from .model_specifications import MicrogridSpecification
+from ..opendss.ac_replay import PVInverterReplay, PVReplayConfiguration
 from .time_series_analysis import (
     TimeSeriesAnalysisResult,
     run_microgrid_timeseries_analysis,
@@ -390,12 +391,15 @@ def run_live_api_analysis(
         pv_mppt_input_count=pv_mppt_input_count,
     )
     analysis_specification = specification
-    if pv_profile_mode == "weather_equipment":
-        provenance = site_profile.attrs.get("pv_provenance", {})
-        analysis_specification = MicrogridSpecification(
-            battery=specification.battery,
-            pv_capacity_kw=float(provenance["rated_dc_capacity_kw"]),
-            load_kw=specification.load_kw,
+    if "pv_replay" in site_profile.attrs:
+        provenance = site_profile.attrs["pv_provenance"]
+        analysis_specification = replace(
+            specification,
+            pv_capacity_kw=float(provenance[
+                "rated_dc_capacity_kw" if pv_profile_mode == "weather_equipment"
+                else "rated_pv_capacity_kw"
+            ]),
+            pv_replay=site_profile.attrs["pv_replay"],
         )
 
     price_source = _build_live_price_source(
@@ -637,7 +641,31 @@ def create_site_profile(
     )
     detailed = getattr(pv_source, "last_result", None)
     if detailed is not None:
-        profile.attrs["pv_warnings"] = detailed.warnings
+        inverters = []
+        available = pd.DataFrame(index=horizon.index)
+        if isinstance(pv_source, EquipmentSpecificPV):
+            for unit_index, unit in enumerate(pv_source.configuration.inverter_units, 1):
+                unit_frame = detailed.inverter_diagnostics[unit.name].set_index("timestamp")
+                for instance in range(1, unit.count + 1):
+                    name = f"PV_{unit_index}_{instance}"
+                    rating = unit.inverter.ac_capacity_kw
+                    inverters.append(PVInverterReplay(name, rating, rating))
+                    available[name] = unit_frame["pv_available_kw"] / unit.count
+        else:
+            rating = float(detailed.provenance["inverter_ac_capacity_kw"])
+            if rating > 0:
+                inverters.append(PVInverterReplay("RooftopPV", rating, rating))
+                available["RooftopPV"] = pv_values.to_numpy(dtype=float)
+        if inverters:
+            profile.attrs["pv_replay"] = PVReplayConfiguration(tuple(inverters), available)
+        tare = detailed.diagnostics.get("pv_inverter_night_tare_kw")
+        if tare is not None:
+            # Self-consumption is added once before dispatch and billing.
+            profile["load_kw"] += tare.to_numpy(dtype=float)
+        profile.attrs["pv_warnings"] = (*detailed.warnings,
+            "QSTS uses the representative balanced 480 V circuit. Inverter kVA "
+            "is assumed equal to its AC kW rating, with unity power factor; "
+            "actual installation wiring and reactive capability are not specified.")
         profile.attrs["pv_provenance"] = detailed.provenance
         profile.attrs["pv_diagnostics"] = detailed.diagnostics
         profile.attrs["pv_subarray_diagnostics"] = getattr(
@@ -1030,6 +1058,8 @@ def format_comparison_for_display(comparison: pd.DataFrame) -> str:
         "maximum_line_loading_percent",
         "maximum_transformer_loading_percent",
         "feasible_intervals",
+        "setpoint_mismatch_intervals",
+        "inverter_capability_violation_intervals",
         "interval_count",
     ]
     available = [column for column in columns if column in comparison.columns]
@@ -1104,6 +1134,8 @@ RESULT_TABLE_COLUMNS = (
     ("emissions_kgCO2", "Emissions (kgCO2)"),
     ("carbon_adjusted_operating_cost", "Carbon-adjusted cost ($)"),
     ("pcc_grid_import_energy_kWh", "Grid import (kWh)"),
+    ("setpoint_mismatch_intervals", "Power tracking failures"),
+    ("inverter_capability_violation_intervals", "Inverter limit violations"),
     ("minimum_voltage_pu", "Min voltage (pu)"),
     ("maximum_line_loading_percent", "Max line (%)"),
     (

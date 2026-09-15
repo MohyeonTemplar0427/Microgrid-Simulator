@@ -67,7 +67,8 @@ def simulate_microgrid_snapshot(
     return replay_dispatch_timeseries(
         dispatch_data,
         battery=specification.battery,
-        pv_capacity_kw=specification.pv_capacity_kw,
+        pv_capacity_kw=specification.pv_ac_capacity_kw,
+        pv_replay=specification.pv_replay,
     )
 
 
@@ -88,5 +89,6 @@ def simulate_microgrid_scenarios(
     return replay_required_dispatch_scenarios(
         dispatch_scenarios,
         battery=specification.battery,
-        pv_capacity_kw=specification.pv_capacity_kw,
+        pv_capacity_kw=specification.pv_ac_capacity_kw,
+        pv_replay=specification.pv_replay,
     )
