@@ -12,7 +12,6 @@ dispatch and a utility bill, validated against a distribution power flow.
 
 ---
 
-<<<<<<< HEAD
 ## About this project
 
 Hi, I am [MohyeonTemplar0427](https://github.com/MohyeonTemplar0427), a UC
@@ -102,9 +101,6 @@ MySQL and supports engineering queries. Schema and queries live in
 [`sql/`](sql).
 
 ### How the pieces connect
-=======
-## What the model does 
->>>>>>> a4710a73f6c7b7168635eb41ce515a6ec8841684
 
 ```text
   INPUTS                DATA SYSTEM            DECISION              VALIDATION
