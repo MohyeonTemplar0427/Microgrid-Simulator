@@ -7,3 +7,4 @@ __pycache__/
 # Local-only notes for Claude; not shared to the repository.
 CLAUDE.md
 gui_preferences.json
+.DS_Store
