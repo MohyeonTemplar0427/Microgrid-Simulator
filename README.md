@@ -28,7 +28,7 @@ seem even more vague to me.
 
 This project is my first effort to take those separate pieces of knowledge and
 build the seemingly vague concept of a *microgrid* into a structured, specific
-program that helps users understand the system easily. The process of
+program that helps users understand how their system operates more intuitively. The process of
 combining the very things that made my profession feel vague turned out to be
 fruitful: I revisited every concept I had learned but nearly lost from memory,
 consolidated my understanding of each one, and ultimately of the system
