@@ -119,10 +119,23 @@ MySQL and supports engineering queries. Schema and queries live in
 
 ## Quick start
 
-Install dependencies:
+Create and activate a project-specific Python environment, then install the
+dependencies. Run these commands from the repository root. If your prompt starts with `(base)`, run `conda deactivate` first so the environment is based on your
+normal Python installation. After activation, the shorter `python` command
+selects the project environment:
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Your prompt should now begin with `(.venv)`. Confirm that the required
+OpenDSS package is available before launching the application:
+
+```bash
+python -c "import opendssdirect; print('OpenDSS is available')"
 ```
 
 Create `src/.env` with your own API keys. The file is gitignored and is never
@@ -147,28 +160,31 @@ CSV.
 Launch the guided GUI:
 
 ```bash
-python3 -m src.simulation.graphical_interface
+python -m src.simulation.graphical_interface
 ```
 
-Run the test suite — **785 tests**:
+Run the test suite — **797 tests**:
 
 ```bash
-python3 -m pytest -q
+python -m pytest -q
 ```
 
-> **Interpreter note.** Use a Python that has `opendssdirect` and
-> `mysql-connector` installed. Without them nine test modules fail to
-> *collect*, and the suite looks broken when it is not — check the interpreter
-> before debugging a low collected count.
+> **Conda note.** If your terminal initially shows `(base)`, the bare
+> `python3` command may select Conda's Python, whose installed packages are
+> separate from this project. Activating `.venv` makes `python` select the
+> repository environment instead. If `which python` does not end in
+> `Microgrid_Simulator/.venv/bin/python`, reactivate it with
+> `source .venv/bin/activate`. Missing `opendssdirect` or `mysql-connector`
+> means dependency installation did not complete; it is not a GUI error.
 
 Other entry points:
 
 ```bash
-python3 -m src.opendss.validation
+python -m src.opendss.validation
 ```
 
 ```bash
-python3 -m src.signal_pipeline.market_data_integration
+python -m src.signal_pipeline.market_data_integration
 ```
 
 **No test ever calls a live API.** Every provider is mocked, and the weather
