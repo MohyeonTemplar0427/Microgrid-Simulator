@@ -53,16 +53,6 @@ api_key = os.getenv(
 )
 
 
-def load_previous_runtime() -> float | None:
-    if not RUNTIME_FILE.exists():
-        return None
-
-    with open(RUNTIME_FILE, "r") as file:
-        data = json.load(file)
-
-    return float(data["runtime"])
-
-
 def save_runtime(runtime:float) -> None:
     RUNTIME_FILE.parent.mkdir(
         parents=True,
@@ -175,7 +165,6 @@ def calculate_cost_with_external_price(
     ).sum()
 
     return float(cost)
-
 
 
 def create_real_dispatch_summary(
@@ -517,7 +506,6 @@ def run_multi_day_experiment(
                 + demand_charge_cost
             ),
         }
-
 
 
     #5. No-battery baseline
@@ -1023,77 +1011,6 @@ def create_scenario_comparison_table(
     return comparison
     
 
-def experiment_result_to_dict(
-        experiment_name: str,
-        carbon_weight: float,
-        result: ExperimentResult,
-        number_of_days: int,
-) -> dict[str, float | str]:
-
-    kpis = calculate_normalized_kpis(
-        result = result,
-        number_of_days=number_of_days,
-    )
-
-    return{
-        "experiment_name": experiment_name,
-
-        "carbon_weight": carbon_weight,
-
-        "no_battery_cost": (
-            result.no_battery_cost
-        ),
-
-        "real_market_cost": (
-            result.real_market_cost
-        ),
-
-        "battery_throughput_kWh": (
-            result.real_market_usage[
-                "throughput_kWh"
-            ]
-        ),
-
-        "degradation_cost": (
-            result.real_market_degradation_cost
-        ),
-
-        "total_operating_cost": (
-            result.real_market_total_operating_cost
-        ),
-
-        "operating_cost_savings": (
-            result.operating_cost_savings
-        ),
-
-        "cost_savings_percentage": (
-            kpis["cost_savings_percentage"]
-        ),
-
-        "real_market_emissions": (
-            result.real_market_emissions
-        ),
-
-        "emissions_reduction": (
-            result.emissions_reduction
-        ),
-
-        "emissions_reduction_percentage": (
-            kpis["emissions_reduction_percentage"]
-        ),
-
-        "equivalent_full_cycles": (
-            result.real_market_usage[
-                "equivalent_full_cycles"
-            ]
-        ),
-
-        "equivalent_full_cycles_per_day": (
-            kpis[
-                "equivalent_full_cycles_per_day"
-            ]
-        ),
-    }
 
 def calculate_sensitivity_metrics(
         comparison_table: pd.DataFrame,

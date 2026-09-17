@@ -96,7 +96,6 @@ def create_price_profile(
     return price_values
 
 
-
 def create_load_profile(
         timestamps: pd.DatetimeIndex,
 ) -> list[float]:
@@ -388,7 +387,6 @@ def run_carbon_optimization(
     return data
 
 
-
 def run_cost_optimization(
         data: pd.DataFrame,
         battery_parameters: dict[str, float],
@@ -557,8 +555,6 @@ def run_cost_optimization(
     )
 
     return data
-
-
 
 
 # This function returns data table updated with updated grid parameter histories
@@ -958,59 +954,6 @@ def _build_monthly_demand_charge_cost(
 
 
 #Plotting Results----------------------------------------------------------------------- 
-def plot_dispatch_results(
-        data: pd.DataFrame,
-)-> None:
-    figure, axes = plt.subplots(
-        3,
-        1,
-        figsize = (10, 8),
-        sharex=True,
-    )
-
-    axes[0].plot(
-        data["timestamp"],
-        data["battery_soc_kWh"],
-    )
-
-    axes[0].set_title("Battery State of Charge")
-    axes[0].set_ylabel("Energy (kWh)")
-
-    axes[1].plot(
-        data["timestamp"],
-        data["battery_discharge_kw"],
-        label="Discharge"
-    )
-    axes[1].plot(
-            data["timestamp"],
-            data["battery_charge_kw"],
-            label="Charge"
-        )    
-
-    axes[1].set_title("Battery Power")
-    axes[1].set_ylabel("Power (kW)")
-    axes[1].legend()
-
-    axes[2].plot(
-        data["timestamp"],
-        data["grid_import_kw"],
-        label="Import",
-    )
-    axes[2].plot(
-        data["timestamp"],
-        data["grid_export_kw"],
-        label="Export",
-    )
-
-    axes[2].set_title("Grid Exchange")
-    axes[2].set_ylabel("Power (kW)")
-    axes[2].set_xlabel("Time")
-    axes[2].legend()
-
-    figure.autofmt_xdate()
-    figure.tight_layout()
-
-    plt.show()
 
 def plot_degradation_sensitivity(
         results: pd.DataFrame,
@@ -1044,115 +987,6 @@ def plot_degradation_sensitivity(
         bbox_inches="tight"
         )
 
-
-
-
-#Plotting the input signals-------------------------------------------------------------
-def plot_input_profiles(
-        data: pd.DataFrame
-    ) -> None:
-    figure, axes = plt.subplots(
-        4,
-        1,
-        figsize=(9,7.5),
-        sharex = True
-    )
-    axes[0].plot(
-        data["timestamp"],
-        data["load_kw"],
-    )
-
-    axes[1].plot(
-        data["timestamp"],
-        data["pv_kw"],
-    )
-
-    axes[2].plot(
-        data["timestamp"],
-        data["price_per_kWh"],
-    )
-    axes[3].plot(
-        data["timestamp"],
-        data["gCO2/kWh"],
-    )
-    axes[0].set_title("Electrical Load")
-    axes[0].set_ylabel("Load (kW)")
-
-    axes[1].set_title("Solar PV Generation")
-    axes[1].set_ylabel("PV (kW)")
-
-    axes[2].set_title("Electricity Price")
-    axes[2].set_ylabel("Price ($/kWh)")
-
-    axes[3].set_title("Grid Carbon Intensity")
-    axes[3].set_ylabel("gCO2/kWh")
-    axes[3].set_xlabel("Time")
-
-    figure.autofmt_xdate()
-    figure.tight_layout()
-    figure.savefig(
-        "results/input_profiles.png",
-        dpi = 300,
-    )
-
-def plot_cost_emissions_tradeoff(
-    results: pd.DataFrame,
-) -> None:
-
-    plt.figure()
-
-    plt.plot(
-        results["emissions_kgCO2"],
-        results["cost"],
-        marker="o",
-    )
-
-    label_offsets = {
-        0.00: (8, 5),
-        0.02: (8, 5),
-        0.05: (8, 18),
-        0.10: (8, 31),
-        0.20: (8, 5),
-    }
-
-    for index, row in results.iterrows():
-
-        carbon_weight = row[
-            "carbon_weight_$_per_kgCO2"
-        ]
-
-        offset = label_offsets.get(
-            carbon_weight,
-            (5, 5),
-        )
-
-        plt.annotate(
-            f"{carbon_weight:.2f}",
-            (
-                row["emissions_kgCO2"],
-                row["cost"],
-            ),
-            xytext=offset,
-            textcoords="offset points",
-        )
-
-    plt.xlabel(
-        "Emissions (kgCO2)"
-    )
-
-    plt.ylabel(
-        "Cost ($)"
-    )
-
-    plt.title(
-        "Cost–Emissions Tradeoff"
-    )
-
-    plt.grid(True)
-    plt.savefig("data/cost_emissions_tradeoff.png",
-                dpi = 300,
-                bbox_inches="tight"
-    )
 
 def validate_dispatch(
     data: pd.DataFrame,
@@ -1190,7 +1024,6 @@ def validate_dispatch(
         raise ValueError(
             "Power balance error exceeded tolerance."
         )
-
 
 
 ##Main-------------------------------------------------------------------------------
@@ -1371,10 +1204,6 @@ if __name__ == "__main__":
     plot_degradation_sensitivity(
         degradation_results_df
     )
-
-
-
-
 
 
         

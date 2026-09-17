@@ -100,21 +100,6 @@ def fetch_region_prices(
     return prices
 
 
-def build_expected_index(
-    start_time: pd.Timestamp,
-    end_time: pd.Timestamp,
-    timestep_minutes: int = TARGET_INTERVAL_MINUTES,
-) -> pd.DatetimeIndex:
-    """Build the interval grid for a window without assuming 96 per day."""
-
-    return pd.date_range(
-        start=start_time,
-        end=end_time,
-        freq=f"{timestep_minutes}min",
-        inclusive="left",
-    )
-
-
 ## Compatibility wrappers -------------------------------------------------
 
 
