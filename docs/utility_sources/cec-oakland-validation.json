@@ -1,0 +1,46 @@
+{
+  "interface_version": 1,
+  "coordinates": {
+    "latitude": 37.8044,
+    "longitude": -122.2712
+  },
+  "status": "approximate",
+  "delivery_utility": "pge",
+  "delivery_candidates": [
+    {
+      "utility_id": "pge",
+      "name": "Pacific Gas & Electric Company",
+      "agency_number": 71021,
+      "object_id": 4
+    }
+  ],
+  "generation_candidates": [
+    {
+      "id": "cec:other:1",
+      "name": "Western Area Power Administration"
+    },
+    {
+      "id": "cec:other:9",
+      "name": "Ava Community Energy (Ava)"
+    }
+  ],
+  "manual_confirmation": null,
+  "retrieved_at": "2026-09-17T20:33:22.602208+00:00",
+  "sources": [
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+      "item_id": "30410214d637434ba1003cbdcc32cf55",
+      "data_last_edit_epoch_ms": 1788541732680,
+      "response_sha256": "0ce49077ac1ed7c78cf6cf5cf25b0af08562084fe9cca5e73879bab257cf7213",
+      "precision": "approximate CEC service areas"
+    },
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+      "response_sha256": "7971b64a370c69e4c679524b2eeacdd1ea307bf541df6331748469c7976d7059",
+      "role": "generation suggestions; not enrollment"
+    }
+  ],
+  "boundary_buffer_meters": 100,
+  "explanation": "Interior CEC polygon match, not address-level account verification. Confirm actual electricity service and generation enrollment.",
+  "provenance_sha256": "f526bad867cf8edc0da77e565a8517f25d20a40058570919b42bf61ae82e8655"
+}

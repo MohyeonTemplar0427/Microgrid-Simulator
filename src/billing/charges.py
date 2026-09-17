@@ -289,6 +289,7 @@ def calculate_meter_billing(
             "billing months are defined in local time."
         )
 
+    tariff.validate_demand_interval(timestep_hours * 60)
     rates = tariff.energy_rates(timestamps).to_numpy(dtype=float)
     energy_categories = tariff.billing_categories(timestamps).to_numpy()
     seasons = tariff.season_for(timestamps).to_numpy()

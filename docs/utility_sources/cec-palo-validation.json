@@ -1,0 +1,48 @@
+{
+  "interface_version": 1,
+  "coordinates": {
+    "latitude": 37.4419,
+    "longitude": -122.143
+  },
+  "status": "ambiguous",
+  "delivery_utility": null,
+  "delivery_candidates": [
+    {
+      "utility_id": "cec:distribution:23",
+      "name": "Power and Water Resource Pooling Authority",
+      "agency_number": 35722,
+      "object_id": 23
+    },
+    {
+      "utility_id": "cec:distribution:28",
+      "name": "City of Palo Alto",
+      "agency_number": 71290,
+      "object_id": 28
+    }
+  ],
+  "generation_candidates": [
+    {
+      "id": "cec:other:1",
+      "name": "Western Area Power Administration"
+    }
+  ],
+  "manual_confirmation": null,
+  "retrieved_at": "2026-09-17T20:33:26.006461+00:00",
+  "sources": [
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+      "item_id": "30410214d637434ba1003cbdcc32cf55",
+      "data_last_edit_epoch_ms": 1788541732680,
+      "response_sha256": "dd4348bd14c76cf9b0fc70adacc92ae89dd4580f31cc66df0a86e8be8a9826f1",
+      "precision": "approximate CEC service areas"
+    },
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+      "response_sha256": "473eb06f97687cac09ca235a35a6259be519a71c72fbe961f7c1b0fc6021d0b7",
+      "role": "generation suggestions; not enrollment"
+    }
+  ],
+  "boundary_buffer_meters": 100,
+  "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+  "provenance_sha256": "8a1303292676e8bc1b54317fe853d44745a8f6de2cbba27a942da6cb15d5fd76"
+}

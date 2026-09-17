@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 
 from .contract import validate_request
+from ..billing.services import SERVICES, tariff_service
 
 
 def write_json(path, value):
@@ -17,13 +18,14 @@ def write_json(path, value):
 
 
 def capabilities():
+    from .municipal_service import capabilities as municipal_capabilities
     from ..simulation.interface_analysis import retail_tariff_ids_for_region
     from ..billing import get_tariff
     from .contract import DEFAULT_SITE_REQUEST, DEFAULT_CANDIDATE_REQUEST, NSRDB_YEARS
     from ..equipment.ess import search
-    return {"candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
+    return {"municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
-         "service": "hetch_hetchy" if key.startswith("hetch_hetchy_") else "cleanpowersf" if key.startswith("cleanpowersf_") else "pge",
+         "service": tariff_service(key),
          "notes": get_tariff(key).notes,
          "effective_start": str(get_tariff(key).effective_start),
          "effective_end": str(get_tariff(key).effective_end) if get_tariff(key).effective_end else None}
@@ -39,6 +41,9 @@ def execute(directory):
 
     directory = Path(directory)
     request = validate_request(json.loads((directory / "request.json").read_text()))
+    if request["schema_version"] == 4:
+        from .municipal_study import execute_study
+        return execute_study(directory, request)
     source = directory / "input.csv"
     site_run = request["schema_version"] >= 2
     if not site_run and hashlib.sha256(source.read_bytes()).hexdigest() != request["dataset_id"]:
@@ -114,6 +119,7 @@ def execute(directory):
         "scenario", "energy_cost", "demand_charge", "customer_charge", "export_credit",
         "cleanpowersf_generation_charge", "pge_delivery_charge", "pcia_charge", "franchise_fee_charge",
         "hetch_hetchy_energy_charge", "hetch_hetchy_premium_charge",
+        "cca_generation_charge", "cca_product_premium_charge", "cca_vintage_adjustment_charge",
         "total_utility_charge", "total_explicit_cost", "billed_peak_kw", "degradation_cost",
     }]
     save_table("costs", "Cost summary", result.comparison[billing_columns])
@@ -158,7 +164,10 @@ def main():
         directory = Path(sys.argv[2])
         task = json.loads((directory / "resource-request.json").read_text())
         try:
-            if task["kind"] == "ess":
+            if task["kind"] in ("utility-resolution", "municipal-eligibility", "municipal-bill"):
+                from .municipal_service import execute as municipal_execute
+                result = municipal_execute(task["kind"], task["request"])
+            elif task["kind"] == "ess":
                 from ..equipment.ess import resolve
                 result = resolve(**task["request"])
             else:

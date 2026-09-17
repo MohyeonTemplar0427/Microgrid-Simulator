@@ -1,0 +1,42 @@
+{
+  "interface_version": 1,
+  "coordinates": {
+    "latitude": 37.7652,
+    "longitude": -122.2416
+  },
+  "status": "approximate",
+  "delivery_utility": "amp",
+  "delivery_candidates": [
+    {
+      "utility_id": "amp",
+      "name": "Alameda Municipal Power",
+      "agency_number": 10500,
+      "object_id": 16
+    }
+  ],
+  "generation_candidates": [
+    {
+      "id": "cec:other:1",
+      "name": "Western Area Power Administration"
+    }
+  ],
+  "manual_confirmation": null,
+  "retrieved_at": "2026-09-17T20:33:21.050635+00:00",
+  "sources": [
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+      "item_id": "30410214d637434ba1003cbdcc32cf55",
+      "data_last_edit_epoch_ms": 1788541732680,
+      "response_sha256": "432084082b6354265d63f569582d6a24d9014f8132e2a297648b837a3c9ead15",
+      "precision": "approximate CEC service areas"
+    },
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+      "response_sha256": "473eb06f97687cac09ca235a35a6259be519a71c72fbe961f7c1b0fc6021d0b7",
+      "role": "generation suggestions; not enrollment"
+    }
+  ],
+  "boundary_buffer_meters": 100,
+  "explanation": "Interior CEC polygon match, not address-level account verification. Confirm actual electricity service and generation enrollment.",
+  "provenance_sha256": "a00e629660300f5092f0ed8d018759260873bef04c6f8955ab45317f3f416896"
+}

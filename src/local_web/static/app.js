@@ -5,17 +5,17 @@ const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"C
 let capabilities, selectedDatasetId, datasets = [], activeStudy = null, activeId = null, pollTimer, offset = 0, tableRequest = 0;
 const PAGE_SIZE = 100;
 let essResolution=null, essKey=null, annualResult=null, annualKey=null;
-let utilityTimer, strategiesEdited=false;
+let utilityTimer, strategiesEdited=false, locationResolution=null;
 let template, siteLabel, weatherId = null, weatherMeta = null, locationGeneration = 0;
 const field = name => form.elements.namedItem(name);
 function weatherRequest() { return {latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),year:Number(field("start_date").value.slice(0,4)),timezone:field("timezone").value,timestep_minutes:Number(field("timestep_minutes").value)}; }
 function weatherMatches(meta) { const wanted=weatherRequest(); return meta && Object.keys(wanted).every(k=>meta.request[k]===wanted[k]) && Number(field("end_date").value.slice(0,4))===wanted.year; }
 function updateSiteControls() {
   const utility=field("utility").value;
-  const service=["cleanpowersf","cec:other:12"].includes(utility)?"cleanpowersf":["hetch_hetchy","cec:distribution:52"].includes(utility)?"hetch_hetchy":utility;
+  const service=serviceForSelection(utility)?.id || utility;
   for(const opt of field("tariff_id").options) {
     if(!opt.value || opt.value==="__unset__") continue;
-    opt.hidden=template?.schema_version>=2 && (opt.value.startsWith("hetch_hetchy_")?"hetch_hetchy":opt.value.startsWith("cleanpowersf_")?"cleanpowersf":"pge")!==service;
+    opt.hidden=template?.schema_version>=2 && capabilities?.tariffs.find(t=>t.id===opt.value)?.service!==service;
     opt.disabled=opt.hidden;
   }
 
@@ -29,9 +29,11 @@ function updateSiteControls() {
   $("fixed-price-label").hidden=!!field("tariff_id").value;
   field("tariff_id").querySelector('option[value=""]').textContent=site?"Flat energy-price assumption · no utility bill":"Profile energy prices · no utility bill";
   $("pv-note").textContent=site?"AC rating limits the weather-derived output. Temperature and inverter losses are calculated separately from system losses.":"PV AC capacity sets the inverter rating; generation uses the saved profile.";
-  $("price-note").textContent=field("tariff_id").value.startsWith("hetch_hetchy_")?"Hetch Hetchy retail C-1: confirm an eligible small-commercial account below 75 kW and Premium enrollment if selected. Generation and delivery are included. FY2026–27 rates; calendar-month billing with partial-month cost allocation, not an actual meter-cycle bill. Taxes, discounts and export settlements are excluded.":field("tariff_id").value.startsWith("cleanpowersf_")?"CleanPowerSF B-1 + PG&E delivery. Choose the phase, Green/SuperGreen product, and PCIA vintage shown on your bill (not the simulation year). Non-exempt commercial accounts only. Verified March 1–September 16, 2026; taxes, discounts, standby and NEM/NBT settlements excluded.":site?"A selected tariff supplies both dispatch energy prices and billing. Its effective dates must cover the study. Confirm your account first.":"Dispatch uses saved profile prices; the selected tariff applies to billing.";
-  if (site) $("dataset-info").textContent="Location studies generate solar and load inputs from the settings below.";
+  const selectedTariff=capabilities?.tariffs.find(t=>t.id===field("tariff_id").value);
+  $("price-note").textContent=selectedTariff && selectedTariff.service!=="pge" ? selectedTariff.notes : site?"A selected tariff supplies both dispatch energy prices and billing. Its effective dates must cover the study. Confirm your account first.":"Dispatch uses saved profile prices; the selected tariff applies to billing.";
+  if (site) $("dataset-info").textContent=window.municipalUI?.active()?"Use the complete account billing cycle.":"Location studies generate solar and load inputs from the settings below.";
   if(weatherMeta && !weatherMatches(weatherMeta)) { weatherId=null; weatherMeta=null; }
+  window.municipalUI?.sync();
   $("weather-status").textContent=field("weather_source").value==="nsrdb" ? (weatherId?"Historical weather ready. A copy will be saved with the study.":"Retrieve matching historical weather before running."):"Clear-sky estimates are calculated locally when the simulation runs.";
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
@@ -68,7 +70,7 @@ form.addEventListener("input",event=>{
     if(event.target.name!=="location_query") {
       siteLabel=`Coordinates ${field("latitude").value}, ${field("longitude").value}`;
       $("location-status").textContent=siteLabel; $("utility-suggestion").textContent="Coordinates changed. Confirm the timezone and electricity service.";
-      resetUtilityOptions(); field("tariff_id").value="";
+      resetUtilityOptions(); field("tariff_id").value="__unset__";
       clearTimeout(utilityTimer); utilityTimer=setTimeout(()=>refreshUtilities(locationGeneration),600);
     }
   }
@@ -87,6 +89,8 @@ function badge(status) { const span=document.createElement("span"); span.classNa
 function option(value, label) { const node=document.createElement("option"); node.value=value; node.textContent=label; return node; }
 
 function fillForm(request, lookup=true) {
+  if(request.schema_version===4) {window.municipalUI.restore(request); return;}
+  locationResolution=null;window.municipalUI?.invalidateResolution();
   strategiesEdited=true;
   locationGeneration++;
   clearTimeout(utilityTimer);
@@ -149,7 +153,7 @@ form.addEventListener("submit",async event=>{
   if(wizardIndex < wizardPages().length-1) { advanceWizard(); return; }
   if(!validateWizard()) return;
   $("form-error").hidden=true; $("run-button").disabled=true;
-  try { const study=await api("/api/studies",readRequest()); await selectStudy(study.id); await history(); }
+  try { const study=window.municipalUI?.active()?await window.municipalUI.submit():await api("/api/studies",readRequest()); await selectStudy(study.id); await history(); }
   catch(error) { showError("form-error",error); }
   finally { $("run-button").disabled=false; }
 });
@@ -181,7 +185,7 @@ async function refreshStudy(id) {
     $("run-name").textContent=study.name;
     $("run-meta").textContent=`${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}`;
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
-    $("progress").textContent=study.status==="completed" ? "Calculation complete. Inspect AC validation for electrical feasibility." : study.progress;
+    $("progress").textContent=study.status==="completed" ? (study.request.schema_version===4 ? "Calculation complete. Municipal bills reconciled; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.") : study.progress;
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
     else if (study.status==="completed") {
@@ -197,7 +201,7 @@ async function refreshStudy(id) {
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["scenario","total_explicit_cost","energy_cost","demand_charge","emissions_kgCO2","peak_grid_import_kw","minimum_voltage_pu","feasible_intervals","interval_count"];
+const summaryColumns=["scenario","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","feasible_intervals","interval_count"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -314,6 +318,7 @@ let wizardIndex=0, wizardReached=0;
 async function initialize() {
   try {
     capabilities=await api("/api/capabilities");
+    window.municipalUI?.init(capabilities);
     for(const entry of capabilities.ess_catalog || []) field("equipment_id").append(option(entry.id,`${entry.manufacturer} · ${entry.model}`));
     for(const year of [...(capabilities.nsrdb_years || [])].reverse()) field("orientation_year").append(option(year,String(year)));
     showEssFacts(capabilities.ess_catalog?.[0]);
@@ -348,38 +353,56 @@ async function refreshPipeline() {
 refreshPipeline();
 
 
-function resetUtilityOptions(saved="unconfirmed") {
-  field("utility").replaceChildren(option("unconfirmed","Choose your electricity service"),
-    option("pge","PG&E bundled service · manual confirmation"), option("cleanpowersf","CleanPowerSF + PG&E delivery · confirm account"), option("hetch_hetchy","Hetch Hetchy Power · confirm eligible account"), option("other","Other / CCA service · manual"));
-  if(saved.startsWith("cec:")) field("utility").append(option(saved,`Saved provider (${saved})`));
-  field("utility").value=saved;
+function serviceForSelection(selection) {
+  return capabilities?.services?.find(s=>s.id===selection || s.aliases.includes(selection));
 }
-async function refreshUtilities(generation, saved="unconfirmed") {
-  const latitude=field("latitude"), longitude=field("longitude");
-  if(!latitude.value || !longitude.value || !latitude.checkValidity() || !longitude.checkValidity()) return;
-  $("utility-suggestion").textContent="Matching utility service territories…";
-  try {
-    const result=await api("/api/utilities",{latitude:Number(latitude.value),longitude:Number(longitude.value)});
-    if(generation!==locationGeneration) return;
-    // Preserve an explicit account choice made while the lookup was in flight.
-    const chosen=field("utility").value || saved;
-    const options=[option("unconfirmed","Choose your electricity service")];
-    for(const item of result.candidates) options.push(option(item.id,
-      item.id==="pge"?`${item.name} · confirm bundled service`:item.id==="cec:other:12"?"CleanPowerSF + PG&E delivery · B-1 supported":item.id==="cec:distribution:52"?"Hetch Hetchy Power · C-1 supported; confirm eligibility":`${item.name} · ${item.type} · tariff not yet modeled`));
-    if(!result.candidates.some(x=>x.id==="pge")) options.push(option("pge","PG&E bundled service · manual override"));
-    if(chosen==="cleanpowersf" || !result.candidates.some(x=>x.id==="cec:other:12")) options.push(option("cleanpowersf","CleanPowerSF + PG&E delivery · confirm account"));
-    if(chosen==="hetch_hetchy" || !result.candidates.some(x=>x.id==="cec:distribution:52")) options.push(option("hetch_hetchy","Hetch Hetchy Power · confirm eligible account"));
-    options.push(option("other","Other / CCA service · manual"));
-    if(chosen.startsWith("cec:") && !result.candidates.some(x=>x.id===chosen)) options.push(option(chosen,`Saved provider (${chosen}) · not in current matches`));
-    field("utility").replaceChildren(...options); field("utility").value=chosen;
-    $("utility-suggestion").textContent=result.message;
-  } catch(error) {
-    if(generation===locationGeneration) $("utility-suggestion").textContent="Utility lookup unavailable. Select your service manually.";
+function resetUtilityOptions(saved="unconfirmed") {
+  locationResolution=null;window.municipalUI?.invalidateResolution();
+  field("utility").replaceChildren(option("unconfirmed","Choose a location in Step 2 first"));
+  if(saved && saved!=="unconfirmed")field("utility").append(option(saved,`${serviceForSelection(saved)?.label||saved} · saved choice, awaiting location check`));
+  field("utility").value=saved||"unconfirmed";
+}
+function setLocationChoices(result,saved="unconfirmed") {
+  locationResolution=result;
+  const choices=new Map();
+  const delivery=result.delivery_candidates||[];
+  for(const item of delivery){
+    const id=item.utility_id;
+    choices.set(id,{label:(serviceForSelection(id)?.label||item.name)+(item.match==='nearby_boundary'?' · near boundary, verify address':''),supported:['amp','svp'].includes(id)||!!serviceForSelection(id)});
+  }
+  // Keep unsupported CCAs visible: a PG&E delivery match does not imply
+  // bundled generation. Only validated identities enable implemented billing.
+  const pgeAtPoint=delivery.some(item=>item.utility_id==='pge'&&item.match==='point');
+  for(const item of result.generation_candidates||[]){
+    if(item.type!=='CCA')continue;
+    const service=capabilities.services.find(s=>s.id===item.service_id);
+    choices.set(service?.id||item.id,{label:service?.label||item.name,supported:!!service&&pgeAtPoint});
+  }
+  const options=[option('unconfirmed','Choose the service shown on your account')];
+  for(const [id,item]of choices){const node=option(id,item.label+(item.supported?' · confirm account':' · billing not supported'));node.disabled=!item.supported;options.push(node);}
+  field('utility').replaceChildren(...options);
+  const selected=serviceForSelection(saved)?.id||saved;
+  field('utility').value=choices.get(selected)?.supported?selected:'unconfirmed';
+  $('utility-suggestion').textContent=`${result.explanation} Choices below follow the Step 2 location; map matches do not confirm account eligibility.`;
+  window.municipalUI?.serviceChanged();updateSiteControls();
+}
+async function refreshUtilities(generation,saved="unconfirmed") {
+  const latitude=field('latitude'),longitude=field('longitude');
+  if(!latitude.value||!longitude.value||!latitude.checkValidity()||!longitude.checkValidity())return;
+  const coordinates={latitude:Number(latitude.value),longitude:Number(longitude.value)};
+  $('utility-suggestion').textContent='Matching Step 2 coordinates to electricity territories…';
+  try{
+    const result=await api('/api/v1/utility-resolution',coordinates);
+    if(generation!==locationGeneration||coordinates.latitude!==Number(latitude.value)||coordinates.longitude!==Number(longitude.value))return;
+    setLocationChoices(result,field('utility').value!=='unconfirmed'?field('utility').value:saved);
+  }catch(error){
+    if(generation!==locationGeneration)return;
+    resetUtilityOptions();updateSiteControls();
+    $('utility-suggestion').textContent='Territory lookup unavailable. Retry the Step 2 location lookup; no provider is inferred.';
   }
 }
-field("utility").addEventListener("change",()=>{
-  field("tariff_id").value="__unset__";
-  updateSiteControls();
+field('utility').addEventListener('change',()=>{
+  field('tariff_id').value='__unset__';window.municipalUI?.serviceChanged();updateSiteControls();
 });
 
 
@@ -414,10 +437,14 @@ function renderWizard(focus=false) {
 }
 function validateWizardPage(page) {
   $("form-error").hidden=true;
+  if(page.dataset.step==='2'&&template?.schema_version>=2&&(!field('utility').value||field('utility').value==='unconfirmed'||!locationResolution)){
+    showError('form-error',new Error('Wait for the Step 2 territory lookup, then choose a supported electricity service.'));return false;
+  }
+  if(window.municipalUI && !window.municipalUI.validate(page))return false;
   for(const input of page.querySelectorAll("input,select")) {
     let hidden=false;
     for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.hidden) hidden=true;
-    if(input.disabled || hidden) continue;
+    if(input.disabled || hidden || input.name.startsWith("m_")) continue;
     const optional=["location_query","orientation_year","ess_basis","ess_charge_override","ess_discharge_override"];
     if(input.type!=="checkbox" && !optional.includes(input.name) && ((input.value==="" && input.name!=="tariff_id") || input.value==="__unset__")) {
       for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.tagName==="DETAILS") parent.open=true;
@@ -430,7 +457,7 @@ function validateWizardPage(page) {
   }
   let error=null;
   if(page.contains(field("end_date")) && field("end_date").value<field("start_date").value) error="End date must be on or after the start date.";
-  if(page.contains(field("weather_source")) && template?.schema_version>=2 && field("weather_source").value==="nsrdb" && !weatherId) error="Retrieve matching historical weather before continuing.";
+  if(!window.municipalUI?.active() && page.contains(field("weather_source")) && template?.schema_version>=2 && field("weather_source").value==="nsrdb" && !weatherId) error="Retrieve matching historical weather before continuing.";
   if(page.contains(field("capacity_kWh"))) {
     if(field("ess_mode").value==="equipment" && !essResolution?.ready) error="Review and apply the equipment settings before continuing.";
     else {
@@ -476,10 +503,12 @@ $("step-next").addEventListener("click",advanceWizard);
 function defaultSettings() { return capabilities.candidate_defaults || capabilities.site_defaults || capabilities.defaults; }
 function startBlankStudy() {
   fillForm(defaultSettings(),false);
+  window.municipalUI?.reset();
   strategiesEdited=false;
   locationGeneration++; clearTimeout(utilityTimer); siteLabel="";
   weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
   for(const input of form.querySelectorAll("input[name],select[name]")) {
+    if(input.name.startsWith("m_"))continue;
     if(input.type==="checkbox") input.checked=false;
     else if(input.name==="utility") input.value="unconfirmed";
     else input.value=input.name==="tariff_id"?"__unset__":"";
@@ -490,8 +519,24 @@ function startBlankStudy() {
   $("orientation-status").textContent="";
   updateSiteControls();resetWizard();
 }
+function defaultDateRange(start,end,defaults,municipal=false) {
+  // Preserve entered dates; derive missing boundaries as one coherent range.
+  const monthEnd=value=>{
+    const [year,month]=value.split('-').map(Number);
+    return new Date(Date.UTC(year,month,0)).toISOString().slice(0,10);
+  };
+  if(!start && !end)return municipal?{start:'2026-08-01',end:'2026-08-31'}:{start:defaults.start_date,end:defaults.end_date<defaults.start_date?defaults.start_date:defaults.end_date};
+  if(!start)start=municipal?end.slice(0,7)+'-01':(defaults.start_date>end?end:defaults.start_date);
+  if(!end)end=municipal?monthEnd(start):(defaults.end_date<start?start:defaults.end_date);
+  return {start,end};
+}
 function applyStepDefaults(page) {
   const defaults=defaultSettings();
+  if(page.contains(field('start_date'))) {
+    const dates=defaultDateRange(field('start_date').value,field('end_date').value,defaults,window.municipalUI?.active());
+    field('start_date').value=dates.start;field('end_date').value=dates.end;
+  }
+  window.municipalUI?.defaults(page);
   const hadCoordinates=field("latitude").value!=="" || field("longitude").value!=="";
   const values={...defaults,...defaults.battery,...defaults.solar,
     latitude:defaults.site?.latitude,longitude:defaults.site?.longitude,location_query:defaults.site?.label,
@@ -499,7 +544,7 @@ function applyStepDefaults(page) {
     archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),
     ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2};
   for(const input of page.querySelectorAll("input[name],select[name]")) {
-    if(input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
+    if(input.name.startsWith("m_") || input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
     if(input.name==="location_query" && hadCoordinates) continue;
     if(Object.hasOwn(values,input.name)) input.value=values[input.name] ?? "";
   }
@@ -509,7 +554,11 @@ function applyStepDefaults(page) {
     $("location-status").textContent=siteLabel;refreshUtilities(locationGeneration);
   }
   $("form-error").hidden=true;updateSiteControls();
+  if(page.contains(field('start_date')) && field('start_date').value>field('end_date').value)
+    showError('form-error',new Error('The entered start date is later than the end date. Adjust one date; defaults preserve your existing entries.'));
 }
 for(const button of document.querySelectorAll(".use-defaults")) button.addEventListener("click",()=>applyStepDefaults(button.closest(".wizard-page")));
 
 $("strategies").addEventListener("change",()=>{strategiesEdited=true;});
+
+$('refresh-services').addEventListener('click',()=>refreshUtilities(++locationGeneration));

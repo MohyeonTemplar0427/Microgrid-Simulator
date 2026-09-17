@@ -28,8 +28,11 @@ main{max-width:1540px;margin:auto;padding:42px 5% 60px}.intro{display:flex;justi
 #study-summary dl{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:12px}
 #study-summary dd{margin:0;overflow-wrap:anywhere}
 
-.use-defaults{background:#18743b;border-color:#18743b;color:#fff;font-weight:650}
-.use-defaults:hover{background:#125b2e;border-color:#125b2e;color:#fff}
-.use-defaults:focus-visible{outline:3px solid #79bd8d;outline-offset:3px}
+.use-defaults,#search-location{background:#18743b;border-color:#18743b;color:#fff;font-weight:650}
+.use-defaults:hover,#search-location:hover{background:#125b2e;border-color:#125b2e;color:#fff}
+.use-defaults:focus-visible,#search-location:focus-visible{outline:3px solid #79bd8d;outline-offset:3px}
 
 .location-note-asterisk{color:#c62828;font-weight:700}
+
+#municipal-eligibility { white-space: pre-line; }
+[data-municipal] fieldset { margin: 1rem 0; }

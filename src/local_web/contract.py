@@ -5,6 +5,7 @@ import re
 from copy import deepcopy
 import math
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+from ..billing.services import SERVICES, validate_service_pairing
 
 SCENARIOS = ("no_battery", "rule_based", "cost_optimal", "carbon_optimal", "combined_optimal")
 DEFAULT_REQUEST = {
@@ -59,17 +60,10 @@ def validate_site_fields(data):
         raise ValueError("Provide a site description.")
     number(site["latitude"], "Latitude", -90, 90)
     number(site["longitude"], "Longitude", -180, 180)
-    if not isinstance(site["utility"], str) or (site["utility"] not in ("unconfirmed", "pge", "cleanpowersf", "hetch_hetchy", "other") and not re.fullmatch(r"cec:(distribution|other):[0-9]+", site["utility"])):
+    if not isinstance(site["utility"], str) or (site["utility"] not in ("unconfirmed", "other", *(s["id"] for s in SERVICES)) and not re.fullmatch(r"cec:(distribution|other):[0-9]+", site["utility"])):
         raise ValueError("Choose a supported utility selection.")
     if data["tariff_id"]:
-        is_cpsf = data["tariff_id"].startswith("cleanpowersf_")
-        if is_cpsf and site["utility"] not in ("cleanpowersf", "cec:other:12"):
-            raise ValueError("Confirm CleanPowerSF generation with PG&E delivery for this tariff.")
-        is_hhp = data["tariff_id"].startswith("hetch_hetchy_")
-        if is_hhp and site["utility"] not in ("hetch_hetchy", "cec:distribution:52"):
-            raise ValueError("Confirm an eligible Hetch Hetchy Power account for this tariff.")
-        if not is_cpsf and not is_hhp and site["utility"] != "pge":
-            raise ValueError("Confirm PG&E bundled service before applying a bundled PG&E tariff.")
+        validate_service_pairing(data["tariff_id"], site["utility"])
     if data["weather_source"] not in ("clear_sky", "nsrdb"):
         raise ValueError("Choose clear-sky estimates or historical NSRDB weather.")
     if data["weather_source"] == "nsrdb":
@@ -103,6 +97,9 @@ def number(value, label, minimum=0, maximum=None):
 
 def validate_request(data):
     """Reject unknown fields and unsupported versions rather than dropping inputs."""
+    if isinstance(data, dict) and type(data.get("schema_version")) is int and data["schema_version"] == 4:
+        from .municipal_study import validate_study
+        return validate_study(data)
     if not isinstance(data, dict) or type(data.get("schema_version")) is not int or data["schema_version"] not in (1, 2, 3):
         raise ValueError("Unsupported study schema version; this application accepts versions 1, 2 and 3.")
     template = {1: DEFAULT_REQUEST, 2: DEFAULT_SITE_REQUEST, 3: DEFAULT_CANDIDATE_REQUEST}[data["schema_version"]]
@@ -129,6 +126,9 @@ def validate_request(data):
         raise ValueError("Select supported strategies once each, including the no-battery baseline.")
     if data["tariff_id"] is not None and not isinstance(data["tariff_id"], str):
         raise ValueError("Tariff must be a supported identifier or null.")
+    if data["tariff_id"] and data["tariff_id"].startswith("hetch_hetchy_c2"):
+        from ..billing import get_tariff
+        get_tariff(data["tariff_id"]).validate_demand_interval(data["timestep_minutes"])
     for key in ("carbon_weight", "degradation_cost_per_kWh", "pv_capacity_kw"):
         number(data[key], key)
     battery = data["battery"]

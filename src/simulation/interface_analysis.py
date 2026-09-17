@@ -71,6 +71,7 @@ DEFAULT_SIGNAL_CACHE_DIRECTORY = (
 
 from ..billing.cleanpowersf import CLEANPOWERSF_TARIFFS
 from ..billing.hetch_hetchy import HETCH_HETCHY_TARIFFS
+from ..billing.bay_area_cca import BAY_AREA_CCA_TARIFFS
 
 REGION_RETAIL_TARIFF_IDS = {
     "caiso_np15": (
@@ -88,6 +89,7 @@ REGION_RETAIL_TARIFF_IDS = {
         PGE_B20_SECONDARY_OPTION_S_BUNDLED.tariff_id,
         *(t.tariff_id for t in CLEANPOWERSF_TARIFFS),
         *(t.tariff_id for t in HETCH_HETCHY_TARIFFS),
+        *(t.tariff_id for t in BAY_AREA_CCA_TARIFFS),
     ),
 }
 
@@ -773,6 +775,9 @@ def _run_selected_signal_analysis(
 ) -> InterfaceAnalysisResult:
     """Run backend scenarios and prepare the comparison selected by the GUI."""
 
+    if tariff_id is not None:
+        get_tariff(tariff_id).validate_demand_interval(timestep_minutes)
+
     runs: dict[float, TimeSeriesAnalysisResult] = {}
 
     for run_index, weight in enumerate(carbon_weights):
@@ -1009,8 +1014,12 @@ def _apply_tariff_billing(
                     "reviews three consecutive months in the latest 12 "
                     "months."
                 )
-        if tariff_id.startswith("hetch_hetchy_") and any(p.simulated_peak_kw >= 75 for p in billing.periods):
+        if tariff_id.startswith("hetch_hetchy_c1_") and any(p.simulated_peak_kw >= 75 for p in billing.periods):
             warnings.append(f"C-1 ELIGIBILITY CHECK: {display_name} reaches 75 kW or more. Confirm SFPUC account classification using the prior twelve months; a simulated peak does not establish reassignment.")
+        if tariff_id.startswith("hetch_hetchy_c2") and billing.periods:
+            highest_peak = max(p.simulated_peak_kw for p in billing.periods)
+            if highest_peak < 75 or highest_peak >= 500:
+                warnings.append(f"C-2 ELIGIBILITY CHECK: {display_name} has a simulated maximum of {highest_peak:,.1f} kW. Confirm the medium-commercial classification and the 500 kW boundary with SFPUC using prior twelve-month history; simulation does not establish reassignment.")
         warnings.extend(billing.warnings)
         for period in billing.periods:
             warnings.extend(period.warnings)
@@ -1137,6 +1146,9 @@ RESULT_TABLE_COLUMNS = (
     ("peak_grid_import_kw", "Peak import (kW)"),
     ("billed_peak_kw", "Billed peak (kW)"),
     ("cleanpowersf_generation_charge", "CleanPowerSF generation ($)"),
+    ("cca_generation_charge", "CCA base generation ($)"),
+    ("cca_product_premium_charge", "CCA product premium ($)"),
+    ("cca_vintage_adjustment_charge", "CCA vintage adjustment ($)"),
     ("pge_delivery_charge", "PG&E delivery energy ($)"),
     ("pcia_charge", "Vintage PCIA ($)"),
     ("franchise_fee_charge", "Franchise fee ($)"),

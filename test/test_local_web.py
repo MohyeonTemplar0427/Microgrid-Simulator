@@ -231,7 +231,7 @@ def test_site_contract_historical_requires_weather_and_bundled_service():
     with pytest.raises(ValueError,match="Retrieve historical"):
         validate_request(request)
     request["weather_id"]="a"*64
-    request["tariff_id"]="pge-example"
+    request["tariff_id"]="pge_b1_secondary_single_phase_bundled_2026_03_01"
     with pytest.raises(ValueError,match="Confirm PG&E"):
         validate_request(request)
     with pytest.raises(ValueError,match="2018"):
@@ -414,3 +414,104 @@ def test_catalog_study_tracks_ac_terminals_and_retains_resolution(service,quanti
     assert ac.battery_actual_injection_kw.abs().max()>1
     assert any('not residential split-phase' in x for x in finished['result']['warnings'])
     with pytest.raises(HTTPError):call('/api/studies',{**request,'battery':{**request['battery'],'max_charge_kw':100}},headers)
+
+
+@pytest.mark.parametrize("provider,product,vintage", [
+    ("peninsula", "eco100", 2016), ("svce", "greenprime", 2017), ("sjce", "totalgreen", 2019)])
+def test_bay_area_cca_http_run_prices_and_exported_bill(service, provider, product, vintage):
+    from src.billing.bay_area_cca import build_b1
+    application, call, headers = service
+    request = site_request()
+    t = build_b1(provider=provider, product=product, vintage=vintage, phase="polyphase")
+    request["site"]["utility"] = provider
+    request["tariff_id"] = t.tariff_id
+    study = call("/api/studies", request, headers)
+    finished = wait_for_study(call, study["id"])
+    assert finished["status"] == "completed", finished.get("error")
+    table = call(f'/api/studies/{study["id"]}/tables/inputs')
+    inputs = pd.DataFrame(table["data"], columns=table["columns"])
+    stamps = pd.DatetimeIndex(pd.to_datetime(inputs.timestamp, utc=True)).tz_convert(request["timezone"])
+    assert inputs.price_per_kWh.to_list() == t.energy_rates(stamps).to_list()
+    table = call(f'/api/studies/{study["id"]}/tables/costs')
+    costs = pd.DataFrame(table["data"], columns=table["columns"])
+    parts = ["cca_generation_charge", "cca_product_premium_charge", "pge_delivery_charge", "pcia_charge", "franchise_fee_charge"]
+    if provider == "sjce":
+        parts.append("cca_vintage_adjustment_charge")
+        assert (costs.cca_vintage_adjustment_charge <= 0).all()
+    assert costs[parts].sum(axis=1).to_numpy() == pytest.approx(costs.energy_cost.to_numpy())
+    assert (costs.energy_cost+costs.customer_charge).to_numpy() == pytest.approx(costs.total_utility_charge.to_numpy())
+    assert costs.demand_charge.eq(0).all()
+
+
+def test_municipal_api_uses_saved_resolution_and_pinned_engine(service):
+    from src.local_web.worker import write_json
+    application, call, headers = service
+    caps=call('/api/capabilities')
+    assert caps['municipal']['interface_version']==1
+    assert len(caps['municipal']['tariffs'])==8
+    # A deterministic saved resolver result avoids live APIs in tests. The bill
+    # itself runs through HTTP and the real pinned subprocess, not a stub.
+    resolution_id='9'*32
+    directory=application.store.directory/'candidate'/resolution_id
+    directory.mkdir(parents=True,exist_ok=True)
+    write_json(directory/'resource-request.json',{'kind':'utility-resolution','request':{'latitude':37.7652,'longitude':-122.2416}})
+    write_json(directory/'resource.json',{'status':'verified','delivery_utility':'amp','manual_confirmation':{'reference':'fixture bill'}})
+    df=pd.DataFrame({'timestamp':pd.date_range('2026-08-01','2026-09-01',tz='America/Los_Angeles',freq='15min',inclusive='left'), 'grid_import_kw':1})
+    df['timestamp']=df.timestamp.map(lambda t:t.isoformat())
+    body=dict(interface_version=1,mode='actual_service',resolution_id=resolution_id,
+        arrangement=dict(delivery_utility='amp',generation_provider='amp',tariff_id='amp_a1_2026_07_01',export_program='none'),
+        account=dict(customer_class='commercial',phase='single',voltage='secondary',metered=True,
+            onsite_generation=False,special_riders=[],billing_cycle_confirmed=True,state_surcharge_exempt=False,
+            confirmed_schedule='A-1',schedule_confirmation_reference='Fixture August electricity bill',uut_status='standard'),
+        start='2026-08-01',end='2026-09-01',dispatch=df.to_dict('records'))
+    result=call('/api/v1/municipal/bill',body,headers)
+    assert result['engine_id']==application.engine['id']
+    assert result['bill']['total']==pytest.approx((41.99+744*.20946)*1.075+744*.0003)
+    saved=json.loads((application.store.directory/'candidate'/result['resource_id']/'resource-request.json').read_text())
+    assert saved['request']['resolution']['manual_confirmation']['reference']=='fixture bill'
+    body['resolution']={'status':'verified','delivery_utility':'svp'}
+    with pytest.raises(HTTPError) as error:
+        call('/api/v1/municipal/bill',body,headers)
+    assert error.value.code==400
+
+
+def test_municipal_queued_study_csv_exports_and_evidence(service):
+    from src.local_web.worker import write_json
+    from test_municipal import account, frame
+    from test_municipal_dispatch import BATTERY
+    application,call,headers=service
+    rid='8'*32
+    directory=application.store.directory/'candidate'/rid
+    directory.mkdir(parents=True,exist_ok=True)
+    resolution={'status':'verified','delivery_utility':'amp','coordinates':{'latitude':37.7652,'longitude':-122.2416},
+        'manual_confirmation':{'reference':'Municipal integration fixture'}}
+    write_json(directory/'resource-request.json',{'kind':'utility-resolution'})
+    write_json(directory/'resource.json',resolution)
+    data=frame(kw=20)
+    data.loc[(data.timestamp.dt.hour>=17)&(data.timestamp.dt.hour<19),'grid_import_kw']=90
+    body=dict(schema_version=4,name='Municipal queued CSV study',resolution_id=rid,mode='actual_service',
+        arrangement=dict(delivery_utility='amp',generation_provider='amp',tariff_id='amp_a2_2026_07_01',export_program='none'),
+        account=account('A-2'),start_date='2026-08-01',end_date='2026-08-31',timezone='America/Los_Angeles',
+        timestep_minutes=15,battery=BATTERY,load={'mode':'csv','csv':data.to_csv(index=False)},degradation_cost_per_kWh=.03)
+    for invalid in ({**body,'resolution':resolution},{**body,'resolution_id':'f'*32},
+                    {**body,'load':{'mode':'csv','csv':'timestamp,grid_import_kw\n2026-08-01,20'}}):
+        with pytest.raises(HTTPError):
+            call('/api/v1/municipal/studies',invalid,headers)
+    with pytest.raises(HTTPError):
+        call('/api/studies',body,headers)
+    study=call('/api/v1/municipal/studies',body,headers)
+    finished=wait_for_study(call,study['id'])
+    assert finished['status']=='completed',finished.get('error')
+    assert finished['request']['resolution']==resolution
+    assert finished['engine_id']==application.engine['id']
+    result=finished['result']
+    assert result['schema_version']==4
+    assert result['bills']['cost_optimal']['total']<result['bills']['no_battery']['total']
+    assert any('No AC' in warning for warning in result['warnings'])
+    table=call(f"/api/studies/{study['id']}/tables/dispatch-cost_optimal")
+    assert table['total']==2976
+    table=call(f"/api/studies/{study['id']}/tables/comparison")
+    comparison=pd.DataFrame(table['data'],columns=table['columns'])
+    assert (comparison.total_utility_charge+comparison.degradation_cost).tolist()==pytest.approx(comparison.total_explicit_cost.tolist())
+    assert comparison.peak_grid_import_kw.iloc[1]<90
+    assert (application.store.directory/'runs'/study['id']/'dispatch-cost_optimal.csv').is_file()

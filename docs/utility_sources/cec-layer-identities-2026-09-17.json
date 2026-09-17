@@ -1,0 +1,1652 @@
+{
+  "distribution": {
+    "objectIdFieldName": "OBJECTID",
+    "uniqueIdField": {
+      "name": "OBJECTID",
+      "isSystemMaintained": true
+    },
+    "globalIdFieldName": "",
+    "geometryProperties": {
+      "shapeAreaFieldName": "Shape__Area",
+      "shapeLengthFieldName": "Shape__Length",
+      "units": "esriMeters"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "fields": [
+      {
+        "name": "OBJECTID",
+        "type": "esriFieldTypeOID",
+        "alias": "OBJECTID",
+        "sqlType": "sqlTypeOther",
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Acronym",
+        "type": "esriFieldTypeString",
+        "alias": "Acronym",
+        "sqlType": "sqlTypeOther",
+        "length": 20,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Utility",
+        "type": "esriFieldTypeString",
+        "alias": "Utility",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "AgencyNum",
+        "type": "esriFieldTypeDouble",
+        "alias": "AgencyNum",
+        "sqlType": "sqlTypeOther",
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Type",
+        "type": "esriFieldTypeString",
+        "alias": "Type",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "URL",
+        "type": "esriFieldTypeString",
+        "alias": "URL",
+        "sqlType": "sqlTypeOther",
+        "length": 2000,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Phone",
+        "type": "esriFieldTypeString",
+        "alias": "Phone",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Address",
+        "type": "esriFieldTypeString",
+        "alias": "Address",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "HIFLD_ID",
+        "type": "esriFieldTypeString",
+        "alias": "HIFLD ID",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "OnlineName",
+        "type": "esriFieldTypeString",
+        "alias": "OnlineName",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Audit",
+        "type": "esriFieldTypeString",
+        "alias": "Audit",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Shape__Area",
+        "type": "esriFieldTypeDouble",
+        "alias": "Shape__Area",
+        "sqlType": "sqlTypeDouble",
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Shape__Length",
+        "type": "esriFieldTypeDouble",
+        "alias": "Shape__Length",
+        "sqlType": "sqlTypeDouble",
+        "domain": null,
+        "defaultValue": null
+      }
+    ],
+    "features": [
+      {
+        "attributes": {
+          "OBJECTID": 1,
+          "Acronym": " ",
+          "Utility": "PacifiCorp",
+          "AgencyNum": 71026,
+          "Type": "IOU",
+          "URL": "https://www.pacificorp.com/",
+          "Phone": "(503) 813-5000",
+          "Address": "825 NE Multnomah Street, Suite 2000 Portland, OR 97232",
+          "HIFLD_ID": "14354",
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 51407609783.35547,
+          "Shape__Length": 1555986.5281362494
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 2,
+          "Acronym": " ",
+          "Utility": "Liberty Utilities",
+          "AgencyNum": 84372,
+          "Type": "IOU",
+          "URL": "http://www.libertyutilities.com/west/?region=CA&utility=Electricity",
+          "Phone": "800.782.2506",
+          "Address": "933 Eloise Ave South Lake Tahoe, CA 96150",
+          "HIFLD_ID": "57483",
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 6275109258.488281,
+          "Shape__Length": 634257.6504507875
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 3,
+          "Acronym": "SCE",
+          "Utility": "Southern California Edison",
+          "AgencyNum": 86250,
+          "Type": "IOU",
+          "URL": "https://www.sce.com/",
+          "Phone": "(818) 302-1212",
+          "Address": "2244 Walnut Grove Avenue Rosemead, CA 91770-3714",
+          "HIFLD_ID": "17609",
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 200795244137.73828,
+          "Shape__Length": 6001024.115992781
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 4,
+          "Acronym": "PG&E",
+          "Utility": "Pacific Gas & Electric Company",
+          "AgencyNum": 71021,
+          "Type": "IOU",
+          "URL": "https://www.pge.com/",
+          "Phone": "(415) 973-7000",
+          "Address": "77 Beale Street San Francisco, CA 94105",
+          "HIFLD_ID": "14328",
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 281713795761.125,
+          "Shape__Length": 9409111.003806278
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 5,
+          "Acronym": "SDG&E",
+          "Utility": "San Diego Gas & Electric",
+          "AgencyNum": 80402,
+          "Type": "IOU",
+          "URL": "https://www.sdge.com/",
+          "Phone": "(619) 696-2000",
+          "Address": "P.O. Box 129831 San Diego, CA 92112-9831",
+          "HIFLD_ID": "16609",
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 15099422242.132812,
+          "Shape__Length": 901197.0061907441
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 6,
+          "Acronym": "BVES",
+          "Utility": "Bear Valley Electric Service",
+          "AgencyNum": 86252,
+          "Type": "IOU",
+          "URL": "http://www.bves.com/",
+          "Phone": "(909) 866-4678",
+          "Address": "42020 Garstin Road Big Bear Lake, CA 92315",
+          "HIFLD_ID": "17612",
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 323409883.9609375,
+          "Shape__Length": 85792.53796178167
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 7,
+          "Acronym": " ",
+          "Utility": "Biggs Municipal Utilities",
+          "AgencyNum": 15272,
+          "Type": "POU",
+          "URL": "https://www.biggs-ca.gov/City-Services/Utilities/index.html",
+          "Phone": "530.868.5493",
+          "Address": "P.O. Box 307 3016 Sixth Street Biggs, CA 95917",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 2722594.078125,
+          "Shape__Length": 13639.953133036366
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 8,
+          "Acronym": "IID",
+          "Utility": "Imperial Irrigation District",
+          "AgencyNum": 47591,
+          "Type": "POU",
+          "URL": "https://www.iid.com/",
+          "Phone": "760.335.3640",
+          "Address": "333 E. Barioni Blvd Imperial, CA 92251",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 24525679487.11328,
+          "Shape__Length": 826495.2810546136
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 9,
+          "Acronym": " ",
+          "Utility": "Port of Stockton",
+          "AgencyNum": 35117,
+          "Type": "POU",
+          "URL": "https://www.portofstockton.com/",
+          "Phone": "209.946.0246",
+          "Address": "P.O. Box 2089 Stockton, CA 95201-2089",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 7361246.1640625,
+          "Shape__Length": 19689.206891525086
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 10,
+          "Acronym": " ",
+          "Utility": "City of Pittsburg",
+          "AgencyNum": 34684,
+          "Type": "POU",
+          "URL": "http://www.ci.pittsburg.ca.us/",
+          "Phone": "925.252.4180",
+          "Address": "Pittsburg Power Company Island Energy 65 Civic Drive Pittsburg, CA 94565-3814",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 17753743.03515625,
+          "Shape__Length": 26813.41605153648
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 11,
+          "Acronym": " ",
+          "Utility": "Lathrop Irrigation District",
+          "AgencyNum": 25192,
+          "Type": "POU",
+          "URL": "https://www.lathropirrigation.com/",
+          "Phone": "209.323.5000",
+          "Address": "c/o SSJID PO BOX 747 Ripon, CA 95366",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 27562967.01171875,
+          "Shape__Length": 30109.17418802526
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 12,
+          "Acronym": " ",
+          "Utility": "City of Riverside",
+          "AgencyNum": 77742,
+          "Type": "POU",
+          "URL": "https://www.riversideca.gov/",
+          "Phone": "951.826.5311",
+          "Address": "Public Utilities Department 3750 University Avenue Riverside, CA 92501",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 310309969.7421875,
+          "Shape__Length": 125474.60017463008
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 13,
+          "Acronym": " ",
+          "Utility": "Rancho Cucamonga Municipal Utility",
+          "AgencyNum": 36282,
+          "Type": "POU",
+          "URL": "https://www.cityofrc.us/rcmu/residential-power-service",
+          "Phone": "909.477.2740",
+          "Address": "10500 Civic Center Drive Rancho Cucamonga, CA 91730",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 3779024.56640625,
+          "Shape__Length": 15130.787998106702
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 14,
+          "Acronym": " ",
+          "Utility": "City of Industry",
+          "AgencyNum": 32555,
+          "Type": "POU",
+          "URL": "https://www.cityofindustry.org/city-hall/departments/industry-public-utilities",
+          "Phone": "626.330.2126",
+          "Address": "112 N 1st St, La Puente, CA 91744",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 45667661.05078125,
+          "Shape__Length": 133199.22833017862
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 15,
+          "Acronym": " ",
+          "Utility": "Lassen Municipal Utility District",
+          "AgencyNum": 51755,
+          "Type": "POU",
+          "URL": "http://www.lmud.org/",
+          "Phone": "530.257.4174",
+          "Address": "65 South Roop Street Susanville, CA 96130",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 10266533427.417969,
+          "Shape__Length": 573872.3511424679
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 16,
+          "Acronym": " ",
+          "Utility": "Alameda Power & Telecom",
+          "AgencyNum": 10500,
+          "Type": "POU",
+          "URL": "http://www.alamedamp.com/",
+          "Phone": "510.748.3905",
+          "Address": "P.O. Box H 2000 Grand Street Alameda, CA 94501-0263",
+          "HIFLD_ID": null,
+          "OnlineName": "Alameda Municipal Power",
+          "Audit": "Present",
+          "Shape__Area": 43750763.65234375,
+          "Shape__Length": 63765.737785253405
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 17,
+          "Acronym": " ",
+          "Utility": "Redding Electric Utility",
+          "AgencyNum": 76010,
+          "Type": "POU",
+          "URL": "http://www.reupower.com/index.asp",
+          "Phone": "530.339.7300",
+          "Address": "777 Cypress Avenue Redding, CA 96049-6071",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 275245212.5625,
+          "Shape__Length": 192929.18184930665
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 18,
+          "Acronym": " ",
+          "Utility": "Colton Electric Utility Department",
+          "AgencyNum": 23451,
+          "Type": "POU",
+          "URL": "http://www.coltononline.com/",
+          "Phone": "909.370.5104",
+          "Address": "650 N La Cadena Dr Colton, Ca 92324-2823",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 67618047.08984375,
+          "Shape__Length": 67454.98415403439
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 19,
+          "Acronym": "MVU",
+          "Utility": "Moreno Valley Utility",
+          "AgencyNum": 33712,
+          "Type": "POU",
+          "URL": "http://www.moval.org/mvu/index.html",
+          "Phone": "877.811.8700",
+          "Address": "14325 Frederick Street, Suite 9 Moreno Valley, CA 92553",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 118344457.05078125,
+          "Shape__Length": 83403.86299705229
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 20,
+          "Acronym": " ",
+          "Utility": "City of Lompoc Electric Division",
+          "AgencyNum": 58691,
+          "Type": "POU",
+          "URL": "https://www.cityoflompoc.com/government/departments/utilities/electric",
+          "Phone": "805.875.8296",
+          "Address": "P.O. Box 8001 City Hall, 100 Civic Center Plaza Lompoc, CA 93438-8001",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 44825133.16796875,
+          "Shape__Length": 45717.45123071398
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 21,
+          "Acronym": " ",
+          "Utility": "Port of Oakland",
+          "AgencyNum": 34941,
+          "Type": "POU",
+          "URL": "http://www.portofoakland.com/",
+          "Phone": "510.627.1100",
+          "Address": "530 Water Street, Ste 3 Oakland, CA 94607-3814",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 21520958.90234375,
+          "Shape__Length": 38961.33097767763
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 22,
+          "Acronym": "MID",
+          "Utility": "Modesto Irrigation District",
+          "AgencyNum": 65951,
+          "Type": "POU",
+          "URL": "https://www.mid.org/",
+          "Phone": "209.526.7373",
+          "Address": "P.O. Box 4060 Modesto, CA 95352-4060",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 3285719180.65625,
+          "Shape__Length": 377751.8328360038
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 23,
+          "Acronym": "PWRPA",
+          "Utility": "Power and Water Resource Pooling Authority",
+          "AgencyNum": 35722,
+          "Type": "POU",
+          "URL": "http://www.pwrpa.org/",
+          "Phone": "916.483.5368",
+          "Address": "3514 West Lehman Road Tracy, CA 95304-9336",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 20156540721.73047,
+          "Shape__Length": 2388952.5944390534
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 24,
+          "Acronym": " ",
+          "Utility": "City of Healdsburg Electric Department",
+          "AgencyNum": 43022,
+          "Type": "POU",
+          "URL": "http://www.gridley.ca.us/city-departments/electric-department",
+          "Phone": "707.431.3174",
+          "Address": "City Hall, 401 Grove Street (435 Allan Court Delivery address) Healdsburg, CA 95448-4723",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 18656955.18359375,
+          "Shape__Length": 41408.98608850366
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 25,
+          "Acronym": " ",
+          "Utility": "Roseville Electric",
+          "AgencyNum": 78985,
+          "Type": "POU",
+          "URL": "http://www.roseville.ca.us/electric/",
+          "Phone": "916.774.5600",
+          "Address": "311 Vernon Street Roseville, CA 95678",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 183842269.1171875,
+          "Shape__Length": 102838.52518414866
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 26,
+          "Acronym": " ",
+          "Utility": "Pasadena Water & Power",
+          "AgencyNum": 71750,
+          "Type": "POU",
+          "URL": "https://ww5.cityofpasadena.net/water-and-power/",
+          "Phone": "626.744.4409",
+          "Address": "150 South Los Robles Ave, Suite 200 Pasadena, CA 91101-4613",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 87531789.640625,
+          "Shape__Length": 108739.33170933825
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 27,
+          "Acronym": "TID",
+          "Utility": "Turlock Irrigation District",
+          "AgencyNum": 92621,
+          "Type": "POU",
+          "URL": "http://www.tid.com/",
+          "Phone": "209.883.8300",
+          "Address": "P.O. Box 949 Turlock, CA 95381-0949",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 2785215270.8125,
+          "Shape__Length": 449863.5171581048
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 28,
+          "Acronym": " ",
+          "Utility": "City of Palo Alto",
+          "AgencyNum": 71290,
+          "Type": "POU",
+          "URL": "http://www.cityofpaloalto.org/gov/depts/utl/default.asp",
+          "Phone": "650.329.2161",
+          "Address": "P.O. Box 10250 Palo Alto, CA 94303",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 100708711.83984375,
+          "Shape__Length": 122775.7393682712
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 29,
+          "Acronym": " ",
+          "Utility": "Trinity Public Utilities District",
+          "AgencyNum": null,
+          "Type": "POU",
+          "URL": "https://www.trinitypud.com/",
+          "Phone": "530.623.4564",
+          "Address": "P.O. Box 1216 Weaverville, CA 96093",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 14448679791.835938,
+          "Shape__Length": 802465.3010815998
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 30,
+          "Acronym": "SVP",
+          "Utility": "Silicon Valley Power",
+          "AgencyNum": 80560,
+          "Type": "POU",
+          "URL": "http://www.siliconvalleypower.com/",
+          "Phone": "408.615.2300",
+          "Address": "1500 Warburton Avenue Santa Clara, CA 95050",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 76083685.3203125,
+          "Shape__Length": 50349.65800066997
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 31,
+          "Acronym": "LADWP",
+          "Utility": "Los Angeles Department of Water & Power",
+          "AgencyNum": 58970,
+          "Type": "POU",
+          "URL": "http://www.ladwp.com/",
+          "Phone": "800.342.5397",
+          "Address": "111 North Hope Street Los Angeles, CA 90012-2607",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 9209433745.105469,
+          "Shape__Length": 1316148.2861214366
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 32,
+          "Acronym": " ",
+          "Utility": "City of Needles",
+          "AgencyNum": 67360,
+          "Type": "POU",
+          "URL": "http://cityofneedles.com/services/electric-department/",
+          "Phone": "760.326.2113",
+          "Address": "817 Third Street Needles, CA 92363-2933",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 3266020580.4960938,
+          "Shape__Length": 275100.66642524104
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 33,
+          "Acronym": "SMUD",
+          "Utility": "Sacramento Municipal Utility District",
+          "AgencyNum": 80042,
+          "Type": "POU",
+          "URL": "http://www.smud.org/",
+          "Phone": "916.452.3211",
+          "Address": "6201 S Street Sacramento, CA 95817-1818",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 3874829117.03125,
+          "Shape__Length": 340711.51893485856
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 34,
+          "Acronym": " ",
+          "Utility": "City of Cerritos",
+          "AgencyNum": null,
+          "Type": "POU",
+          "URL": "http://www.cerritos.us/GOVERNMENT/city_organization/departments/water_and_power.php",
+          "Phone": "562.860.0311",
+          "Address": "P.O. Box 3130 Cerritos, CA 90703 Location: 18125 Bloomfield Avenue",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 33250304.5234375,
+          "Shape__Length": 45828.619759446934
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 35,
+          "Acronym": "MeID",
+          "Utility": "Merced Irrigation District",
+          "AgencyNum": 64510,
+          "Type": "POU",
+          "URL": "http://www.mercedid.org/",
+          "Phone": "209.722.5761",
+          "Address": "744 West 20th Street Merced, CA 95340",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 1010778285.6289062,
+          "Shape__Length": 474233.9966515722
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 36,
+          "Acronym": null,
+          "Utility": "Eastside Power Authority",
+          "AgencyNum": null,
+          "Type": "POU",
+          "URL": "http://robertson-bryan.com/contact/",
+          "Phone": "661.725.0396",
+          "Address": "14181 Avenue 24 Delano, CA 93215",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 2599469462.3789062,
+          "Shape__Length": 389066.97006790136
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 37,
+          "Acronym": " ",
+          "Utility": "Truckee Donner Public Utilities District",
+          "AgencyNum": 92412,
+          "Type": "POU",
+          "URL": "https://www.tdpud.org/",
+          "Phone": "530.587.3896",
+          "Address": "P.O. Box 309 Truckee, CA 96160",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 190827104.96875,
+          "Shape__Length": 65457.252160247255
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 38,
+          "Acronym": " ",
+          "Utility": "Azusa Light & Power",
+          "AgencyNum": 11991,
+          "Type": "POU",
+          "URL": "http://www.ci.azusa.ca.us/index.aspx?nid=132",
+          "Phone": "626.812.5225",
+          "Address": "P.O. Box 9500 729 North Azusa Avenue Azusa, CA 91702",
+          "HIFLD_ID": null,
+          "OnlineName": "Azusa Light and Water",
+          "Audit": "Present",
+          "Shape__Area": 38018881.16015625,
+          "Shape__Length": 50006.079943537996
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 39,
+          "Acronym": " ",
+          "Utility": "City of Corona Department of Water & Power",
+          "AgencyNum": 9627747,
+          "Type": "POU",
+          "URL": "https://www.coronaca.gov/government/department-of-water-and-power",
+          "Phone": "626.333.2211",
+          "Address": "15625 East Stafford Street Ste 100 City of Industry, CA 91744",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 5155978.4296875,
+          "Shape__Length": 25468.626432844187
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 40,
+          "Acronym": " ",
+          "Utility": "City of Banning Electric Department",
+          "AgencyNum": 12962,
+          "Type": "POU",
+          "URL": "http://banning.ca.us/index.aspx?nid=57",
+          "Phone": "951.922.3260",
+          "Address": "176 E Lincoln St, Banning, CA 92220",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 88066446.24609375,
+          "Shape__Length": 98691.13540517031
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 41,
+          "Acronym": " ",
+          "Utility": "City of Anaheim Public Utilities Department",
+          "AgencyNum": 11000,
+          "Type": "POU",
+          "URL": "http://www.anaheim.net/226/Public-Utilities/",
+          "Phone": "714.765.5156",
+          "Address": "Anaheim City Hall West 201 South Anaheim Blvd., Suite 802 Anaheim, CA 92805",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 198807407.7578125,
+          "Shape__Length": 150517.69490904568
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 42,
+          "Acronym": " ",
+          "Utility": "Lodi Electric Utility",
+          "AgencyNum": 58411,
+          "Type": "POU",
+          "URL": "http://www.lodielectric.com/352/Electric-Utility",
+          "Phone": "209.333.6762",
+          "Address": "1331 South Ham Lane Lodi, CA 95242-3995",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 51697104.57421875,
+          "Shape__Length": 47795.039822243016
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 43,
+          "Acronym": " ",
+          "Utility": "City of Ukiah Electric Utilities Division",
+          "AgencyNum": 93022,
+          "Type": "POU",
+          "URL": "http://www.cityofukiah.com/electric-utility/",
+          "Phone": "707.463.6200",
+          "Address": "Electric Utilities Division 300 Seminary Avenue Ukiah, CA 95482-2680",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 20609875,
+          "Shape__Length": 36950.79166837329
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 44,
+          "Acronym": " ",
+          "Utility": "Gridley Electric Utility",
+          "AgencyNum": 39202,
+          "Type": "POU",
+          "URL": "http://www.gridley.ca.us/city-departments/electric-department",
+          "Phone": "530.846.3631",
+          "Address": "685 Kentucky Street Gridley, CA 95948",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 9102491.59765625,
+          "Shape__Length": 21374.883929111005
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 45,
+          "Acronym": " ",
+          "Utility": "City of Vernon Municipal Light Department",
+          "AgencyNum": 93642,
+          "Type": "POU",
+          "URL": "http://www.cityofvernon.org/departments/gas-and-electric",
+          "Phone": "323.583.8811",
+          "Address": "Gas & Electric Department 4305 S. Santa Fe Avenue Vernon, CA 90058-1714",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 19587114.9296875,
+          "Shape__Length": 29599.99929479394
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 46,
+          "Acronym": " ",
+          "Utility": "Burbank Water & Power",
+          "AgencyNum": 19201,
+          "Type": "POU",
+          "URL": "http://www.burbankwaterandpower.com/",
+          "Phone": "818.238.3700",
+          "Address": "164 West Magnolia Boulevard, Burbank, CA 503-0631",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 68361657.234375,
+          "Shape__Length": 38293.43617646473
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 47,
+          "Acronym": " ",
+          "Utility": "Glendale Water & Power",
+          "AgencyNum": 37452,
+          "Type": "POU",
+          "URL": "https://www.glendaleca.gov/government/departments/glendale-water-and-power",
+          "Phone": "818.548.2107",
+          "Address": "141 N. Glendale Ave, Level 4 Glendale, CA 91206",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 116331882.78125,
+          "Shape__Length": 72273.95651865655
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 48,
+          "Acronym": " ",
+          "Utility": "City of Shasta Lake",
+          "AgencyNum": 83372,
+          "Type": "POU",
+          "URL": "https://cityofshastalake.org/868/Electric-Utility",
+          "Phone": "530.275.7400",
+          "Address": "P.O. Box 777 4332 Vallecito Street Shasta Lake, CA 96019",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 49051748.73046875,
+          "Shape__Length": 36037.45093358008
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 49,
+          "Acronym": " ",
+          "Utility": "Victorville Municipal Utilities Services",
+          "AgencyNum": 36725,
+          "Type": "POU",
+          "URL": "http://www.ci.victorville.ca.us/Site/CityDepartments.aspx?id=5534",
+          "Phone": "760.243.6344",
+          "Address": "14343 Civic Drive Victorville, CA 92392-5001",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 16844094.5546875,
+          "Shape__Length": 25885.800670709967
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 50,
+          "Acronym": " ",
+          "Utility": "Shelter Cove Resort Improvement District",
+          "AgencyNum": null,
+          "Type": "POU",
+          "URL": "http://sheltercove-ca.gov/",
+          "Phone": "707.986.7447",
+          "Address": "9126 Shelter Cove Road Whitethorn, CA 95589-9079",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 18937537.24609375,
+          "Shape__Length": 23215.70082639628
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 51,
+          "Acronym": " ",
+          "Utility": "Kirkwood Meadows Public Utility District",
+          "AgencyNum": 67056,
+          "Type": "POU",
+          "URL": "https://www.kmpud.com/",
+          "Phone": "(209) 258-4444",
+          "Address": "33540 Loop Rd, Kirkwood, CA 95646",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": "Present",
+          "Shape__Area": 5139633.96484375,
+          "Shape__Length": 11618.892976741203
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 52,
+          "Acronym": "CCSF",
+          "Utility": "City and County of San Francisco - Hetch Hetchy Water and Power",
+          "AgencyNum": 80522,
+          "Type": "POU",
+          "URL": "https://www.sfwater.org/index.aspx?page=1241",
+          "Phone": "415.551.4720",
+          "Address": "525 Golden Gate Avenue (at Polk St.) San Francisco, CA 94102",
+          "HIFLD_ID": null,
+          "OnlineName": "CCSF",
+          "Audit": "Present",
+          "Shape__Area": 671585073.1289062,
+          "Shape__Length": 2244030.256064271
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 53,
+          "Acronym": " ",
+          "Utility": "Metropolitan Water District of So. Cal",
+          "AgencyNum": 64842,
+          "Type": "POU",
+          "URL": "https://www.mwdh2o.com/",
+          "Phone": "(916) 538-4663",
+          "Address": "1121 L St Ste 900, Sacramento, CA 95814",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 19596947505.41797,
+          "Shape__Length": 3224849.020997238
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 54,
+          "Acronym": " ",
+          "Utility": "City of Vernon Municipal Light Department",
+          "AgencyNum": 93642,
+          "Type": "POU",
+          "URL": "http://www.cityofvernon.org/departments/gas-and-electric",
+          "Phone": "323.583.8811",
+          "Address": "Gas & Electric Department 4305 S. Santa Fe Avenue Vernon, CA 90058-1714",
+          "HIFLD_ID": null,
+          "OnlineName": null,
+          "Audit": null,
+          "Shape__Area": 19587114.9296875,
+          "Shape__Length": 29599.99929479394
+        }
+      }
+    ]
+  },
+  "other": {
+    "objectIdFieldName": "OBJECTID",
+    "uniqueIdField": {
+      "name": "OBJECTID",
+      "isSystemMaintained": true
+    },
+    "globalIdFieldName": "",
+    "geometryProperties": {
+      "shapeAreaFieldName": "Shape__Area",
+      "shapeLengthFieldName": "Shape__Length",
+      "units": "esriMeters"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "spatialReference": {
+      "wkid": 3310,
+      "latestWkid": 3310
+    },
+    "fields": [
+      {
+        "name": "OBJECTID",
+        "type": "esriFieldTypeOID",
+        "alias": "OBJECTID",
+        "sqlType": "sqlTypeOther",
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Acronym",
+        "type": "esriFieldTypeString",
+        "alias": "Acronym",
+        "sqlType": "sqlTypeOther",
+        "length": 20,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Utility",
+        "type": "esriFieldTypeString",
+        "alias": "Utility",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "AgencyNum",
+        "type": "esriFieldTypeDouble",
+        "alias": "AgencyNum",
+        "sqlType": "sqlTypeOther",
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Type",
+        "type": "esriFieldTypeString",
+        "alias": "Type",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "URL",
+        "type": "esriFieldTypeString",
+        "alias": "URL",
+        "sqlType": "sqlTypeOther",
+        "length": 2000,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Phone",
+        "type": "esriFieldTypeString",
+        "alias": "Phone",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Address",
+        "type": "esriFieldTypeString",
+        "alias": "Address",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "HIFLD_ID",
+        "type": "esriFieldTypeString",
+        "alias": "HIFLD ID",
+        "sqlType": "sqlTypeOther",
+        "length": 255,
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Shape__Area",
+        "type": "esriFieldTypeDouble",
+        "alias": "Shape__Area",
+        "sqlType": "sqlTypeDouble",
+        "domain": null,
+        "defaultValue": null
+      },
+      {
+        "name": "Shape__Length",
+        "type": "esriFieldTypeDouble",
+        "alias": "Shape__Length",
+        "sqlType": "sqlTypeDouble",
+        "domain": null,
+        "defaultValue": null
+      }
+    ],
+    "features": [
+      {
+        "attributes": {
+          "OBJECTID": 1,
+          "Acronym": "WAPA",
+          "Utility": "Western Area Power Administration",
+          "AgencyNum": null,
+          "Type": "ADMIN",
+          "URL": "https://www.wapa.gov/About/Pages/about.aspx",
+          "Phone": "916.353.4470",
+          "Address": "P.O. Box 281213 Lakewood, CO 80228-8213",
+          "HIFLD_ID": null,
+          "Shape__Area": 223018975423.7604,
+          "Shape__Length": 6069494.606911285
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 2,
+          "Acronym": " ",
+          "Utility": "Morongo Band of Mission Indians",
+          "AgencyNum": null,
+          "Type": "Tribal",
+          "URL": "https://morongonation.org/",
+          "Phone": "(951) 849-4697",
+          "Address": "12700 Pumarra Rd, Banning, CA 92220",
+          "HIFLD_ID": null,
+          "Shape__Area": 2667587.9152526855,
+          "Shape__Length": 6552.644079262061
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 3,
+          "Acronym": "AMPS",
+          "Utility": "Aha Macav Power Service",
+          "AgencyNum": null,
+          "Type": "Tribal",
+          "URL": "http://www.ahamacav.com/",
+          "Phone": "(928) 768-2200",
+          "Address": "8780 S Highway 95, Mohave Valley, AZ 86440",
+          "HIFLD_ID": "58123",
+          "Shape__Area": 24598105.883895874,
+          "Shape__Length": 21536.36185468724
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 4,
+          "Acronym": "",
+          "Utility": "Surprise Valley Electrification Corporation",
+          "AgencyNum": 89512,
+          "Type": "CO-OP",
+          "URL": "http://www.surprisevalleyelectric.org/",
+          "Phone": "530.233.3511",
+          "Address": "516 US Hwy 395E Alturas, CA 96101-4228",
+          "HIFLD_ID": "18260",
+          "Shape__Area": 10090395800.857655,
+          "Shape__Length": 529519.0141214875
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 5,
+          "Acronym": "",
+          "Utility": "Plumas-Sierra Rural Electric Cooperative",
+          "AgencyNum": 73842,
+          "Type": "CO-OP",
+          "URL": "https://www.psrec.coop/",
+          "Phone": "530.832.4261",
+          "Address": "73233 State Route 70, Suite A Portola, CA 96122-7069",
+          "HIFLD_ID": "15308",
+          "Shape__Area": 4127512644.4265447,
+          "Shape__Length": 571180.1956902556
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 6,
+          "Acronym": " ",
+          "Utility": "Valley Electrical Association",
+          "AgencyNum": 93222,
+          "Type": "CO-OP",
+          "URL": "https://vea.coop/",
+          "Phone": "(775) 727-5312",
+          "Address": "800 E. Highway 372 Pahrump, NV 89048-4624",
+          "HIFLD_ID": "19840",
+          "Shape__Area": 327953694.784132,
+          "Shape__Length": 101888.61738651512
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 7,
+          "Acronym": " ",
+          "Utility": "Anza Electric Cooperative, Inc.",
+          "AgencyNum": 11352,
+          "Type": "CO-OP",
+          "URL": "https://www.anzaelectric.org/",
+          "Phone": "951.763.4333",
+          "Address": "58470 Highway 371 Anza, CA 92539-1909",
+          "HIFLD_ID": "694",
+          "Shape__Area": 1240945978.0141754,
+          "Shape__Length": 157785.64255474167
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 8,
+          "Acronym": "AVCE",
+          "Utility": "Apple Valley Choice Energy (AVCE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.applevalley.org/your-government/public-services/electric-utility",
+          "Phone": "1-760-573-AVCE (2823)",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 199645843.46444702,
+          "Shape__Length": 86035.42169267927
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 9,
+          "Acronym": "Ava",
+          "Utility": "Ava Community Energy (Ava)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://avaenergy.org/",
+          "Phone": "1-833-699-EBCE (3223)",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 1954244460.3512878,
+          "Shape__Length": 437231.13730946643
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 10,
+          "Acronym": "CEA",
+          "Utility": "Clean Energy Alliance (CEA)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.cleanenergyalliance.org/",
+          "Phone": "1-833-232-3110",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 429245696.66306305,
+          "Shape__Length": 387002.8990377621
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 11,
+          "Acronym": "CPA",
+          "Utility": "Clean Power Alliance (CPA)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://cleanpoweralliance.org/",
+          "Phone": "1-888-585-3788",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 11809945614.456055,
+          "Shape__Length": 2300223.8053521183
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 12,
+          "Acronym": "CPSF",
+          "Utility": "CleanPowerSF (CPSF)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "http://cleanpowersf.org",
+          "Phone": "1-415-554-0773",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 122089054.7705419,
+          "Shape__Length": 100044.69486481468
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 13,
+          "Acronym": "DCE",
+          "Utility": "Desert Community Energy (DCE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "http://desertcommunityenergy.org",
+          "Phone": "1-855-357-9240",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 237166995.39001465,
+          "Shape__Length": 140150.50382150395
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 14,
+          "Acronym": "EPIC",
+          "Utility": "Energy for Palmdale's Independent Choice (EPIC)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://palmdaleepicenergy.com/",
+          "Phone": "1-661-267-5419",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 275448891.23226166,
+          "Shape__Length": 205740.7718756368
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 15,
+          "Acronym": "King City",
+          "Utility": "King City Community Power (KCCP)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.kingcitycommunitypower.org/",
+          "Phone": "1-833-888-KING (5464)",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 10138605.369764328,
+          "Shape__Length": 24755.87647258699
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 16,
+          "Acronym": "Lancaster Energy",
+          "Utility": "Lancaster Energy (LE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.lancasterchoiceenergy.com/",
+          "Phone": "1-844-288-4LCE (4523)",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 244944253.4474678,
+          "Shape__Length": 205487.38951218352
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 17,
+          "Acronym": "MCE",
+          "Utility": "MCE",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.mcecleanenergy.org/",
+          "Phone": "1-888-632-3674",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 7159660512.179599,
+          "Shape__Length": 1957808.4872649717
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 18,
+          "Acronym": "OCPA",
+          "Utility": "Orange County Power Authority (OCPA)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.ocpower.org/",
+          "Phone": "1-866-262-7693",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 326056452.62947845,
+          "Shape__Length": 234442.0500660462
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 19,
+          "Acronym": "Peninsula Clean Ener",
+          "Utility": "Peninsula Clean Energy",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.peninsulacleanenergy.com/",
+          "Phone": "1-866-966-0110",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 1189556721.9790492,
+          "Shape__Length": 360336.43635562656
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 20,
+          "Acronym": "PRIME",
+          "Utility": "Pico Rivera Innovative Municipal Energy (PRIME)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.pico-rivera.org/147/PRIME",
+          "Phone": "1-800-GO-PRIME (467-7463)",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 23050453.873397827,
+          "Shape__Length": 28153.82798702349
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 21,
+          "Acronym": "Pioneer",
+          "Utility": "Pioneer Community Energy (Pioneer)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://pioneercommunityenergy.ca.gov/",
+          "Phone": "1-844-YES-PIONEER (937-7466)",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 7208097087.788885,
+          "Shape__Length": 492227.4133134344
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 22,
+          "Acronym": "Pomona Choice",
+          "Utility": "Pomona Choice Energy (Pomona Choice)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "http://www.pomonachoiceenergy.org",
+          "Phone": "1-909-620-2079",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 59559929.493629456,
+          "Shape__Length": 48833.246142624885
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 23,
+          "Acronym": "RMEA",
+          "Utility": "Rancho Mirage Energy Authority (RMEA)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.ranchomirageenergy.org/",
+          "Phone": "1-760-578-6092",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 64663085.55541992,
+          "Shape__Length": 51257.150578347224
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 24,
+          "Acronym": "RCEA",
+          "Utility": "Redwood Coast Energy Authority (RCEA)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://redwoodenergy.org/",
+          "Phone": "1-707-269-1700",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 9276983703.316875,
+          "Shape__Length": 649589.0232495761
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 25,
+          "Acronym": "SDCP",
+          "Utility": "San Diego Community Power (SDCP)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.sdcommunitypower.org/",
+          "Phone": "1-888-382-0169",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 9583577040.83432,
+          "Shape__Length": 1148249.891983818
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 26,
+          "Acronym": "SJP",
+          "Utility": "San Jacinto Power (SJP)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.sjpca.com/",
+          "Phone": "1-951-665-6812",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 67485863.23938751,
+          "Shape__Length": 58696.29154262501
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 27,
+          "Acronym": "SJCE",
+          "Utility": "San Jose Clean Energy (SJCE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.sanjosecleanenergy.org/",
+          "Phone": "1-833-432-2454",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 464470797.6618576,
+          "Shape__Length": 426342.1421555074
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 28,
+          "Acronym": "SBCE",
+          "Utility": "Santa Barbara Clean Energy (SBCE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "http://sbcleanenergy.org",
+          "Phone": "1-808-897-1979",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 50963392.422203064,
+          "Shape__Length": 78700.93275664694
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 29,
+          "Acronym": "SVCE",
+          "Utility": "Silicon Valley Clean Energy (SVCE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://svcleanenergy.org/",
+          "Phone": "1-844-474-SVCE (7823)",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 2786819123.977765,
+          "Shape__Length": 745984.7943547922
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 30,
+          "Acronym": "SCP",
+          "Utility": "Sonoma Clean Power (SCP)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "http://sonomacleanpower.org",
+          "Phone": "1-855-202-2139",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 13208542989.457401,
+          "Shape__Length": 963849.5339041612
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 31,
+          "Acronym": "VCE",
+          "Utility": "Valley Clean Energy (VCE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "https://www.valleycleanenergy.org/",
+          "Phone": "1-855-699-8232",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 2587265022.4990015,
+          "Shape__Length": 323600.6647940616
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 32,
+          "Acronym": "CCCE",
+          "Utility": "Central Coast Community Energy (CCCE)",
+          "AgencyNum": null,
+          "Type": "CCA",
+          "URL": "http://3cenergy.org",
+          "Phone": "1-888-909-6227",
+          "Address": null,
+          "HIFLD_ID": null,
+          "Shape__Area": 28405409491.00873,
+          "Shape__Length": 1435904.9842024175
+        }
+      }
+    ]
+  }
+}

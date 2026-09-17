@@ -1,0 +1,48 @@
+{
+  "interface_version": 1,
+  "coordinates": {
+    "latitude": 37.3541,
+    "longitude": -121.9552
+  },
+  "status": "ambiguous",
+  "delivery_utility": null,
+  "delivery_candidates": [
+    {
+      "utility_id": "cec:distribution:23",
+      "name": "Power and Water Resource Pooling Authority",
+      "agency_number": 35722,
+      "object_id": 23
+    },
+    {
+      "utility_id": "svp",
+      "name": "Silicon Valley Power",
+      "agency_number": 80560,
+      "object_id": 30
+    }
+  ],
+  "generation_candidates": [
+    {
+      "id": "cec:other:1",
+      "name": "Western Area Power Administration"
+    }
+  ],
+  "manual_confirmation": null,
+  "retrieved_at": "2026-09-17T20:33:23.636695+00:00",
+  "sources": [
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+      "item_id": "30410214d637434ba1003cbdcc32cf55",
+      "data_last_edit_epoch_ms": 1788541732680,
+      "response_sha256": "1f5dd9fec70b0c98ad7d7645328f00c33e579e4c9cb05b59a7e4cdeacca31bd4",
+      "precision": "approximate CEC service areas"
+    },
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+      "response_sha256": "473eb06f97687cac09ca235a35a6259be519a71c72fbe961f7c1b0fc6021d0b7",
+      "role": "generation suggestions; not enrollment"
+    }
+  ],
+  "boundary_buffer_meters": 100,
+  "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+  "provenance_sha256": "37889ab63704da27906555bd6297fb99050978c697e66a47162af5379d62d1c2"
+}

@@ -166,7 +166,7 @@ class Store:
         sources = {}
         if request["schema_version"] == 1:
             sources["input.csv"] = self.directory / "datasets" / (request["dataset_id"] + ".csv")
-        elif request["weather_source"] == "nsrdb":
+        elif request.get("weather_source") == "nsrdb":
             from .site_inputs import check_weather_matches
             cached = self.directory / "weather" / request["weather_id"]
             if not (cached / "weather.json").is_file():
@@ -287,6 +287,20 @@ class Application:
             raise ValueError("This pinned engine does not support the candidate equipment/orientation contract.")
         if not isinstance(request, dict):
             raise ValueError("Supply a configuration object.")
+        municipal = kind in ("utility-resolution", "municipal-eligibility", "municipal-bill")
+        if municipal and "municipal" not in self.capabilities:
+            raise ValueError("Refresh the pinned engine to enable municipal bill replay.")
+        if municipal and kind != "utility-resolution":
+            resolution_id = request.get("resolution_id", "")
+            if not isinstance(resolution_id, str) or len(resolution_id) != 32 or any(c not in "0123456789abcdef" for c in resolution_id):
+                raise ValueError("Resolve utility service first and supply resolution_id.")
+            source = self.store.directory / "candidate" / resolution_id
+            if "resolution" in request or not (source / "resource.json").is_file():
+                raise ValueError("Use a saved utility resolution; client-supplied resolution evidence is not accepted.")
+            original = json.loads((source / "resource-request.json").read_text())
+            if original["kind"] != "utility-resolution":
+                raise ValueError("The referenced result is not a utility resolution.")
+            request = {**request, "resolution": json.loads((source / "resource.json").read_text())}
         if kind == "ess" and "record" in request:
             raise ValueError("Select equipment from this engine's catalog.")
         directory = self.store.directory / "candidate" / uuid.uuid4().hex
@@ -308,7 +322,23 @@ class Application:
         if result.returncode:
             error_path = directory / "error.json"
             raise ValueError(json.loads(error_path.read_text())["error"] if error_path.exists() else "Candidate calculation failed.")
-        return json.loads((directory / "resource.json").read_text())
+        output = json.loads((directory / "resource.json").read_text())
+        return {**output, "resource_id": directory.name, "engine_id": self.engine["id"],
+                **({"resolution_id": directory.name} if kind == "utility-resolution" else {})} if municipal else output
+
+    def submit_municipal(self, request):
+        if not self.capabilities.get("municipal", {}).get("optimized_studies"):
+            raise ValueError("Refresh the engine to enable optimized municipal studies.")
+        if not isinstance(request, dict) or "resolution" in request:
+            raise ValueError("Supply resolution_id; client-supplied location evidence is not accepted.")
+        rid = request.get("resolution_id", "")
+        if not isinstance(rid, str) or len(rid) != 32 or any(c not in "0123456789abcdef" for c in rid):
+            raise ValueError("Resolve and confirm electricity service first.")
+        source = self.store.directory / "candidate" / rid
+        if not (source / "resource.json").is_file() or json.loads((source / "resource-request.json").read_text())["kind"] != "utility-resolution":
+            raise ValueError("Saved utility resolution not found.")
+        request = {**request, "resolution": json.loads((source / "resource.json").read_text())}
+        return self.store.submit(request, self.engine)
 
     def utilities(self, request):
         from .utilities import lookup_utilities

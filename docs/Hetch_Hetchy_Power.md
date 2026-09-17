@@ -1,8 +1,8 @@
-# Hetch Hetchy Power retail C-1
+# Hetch Hetchy Power retail C-1 and C-2
 
-The initial implementation covers retail small-commercial C-1, standard and
-confirmed Premium enrollment. It does not represent residential, municipal
-CG-1, Enterprise A-1U, medium/large commercial, industrial or special accounts.
+Supported retail schedules are small-commercial C-1 and medium-commercial
+C-2S/C-2P, Standard or confirmed Premium enrollment. Residential, municipal,
+Enterprise, large-commercial, industrial and special accounts are excluded.
 Coordinates suggest providers; users must confirm actual account eligibility.
 
 Source: [SFPUC FY2026-27 Rate Schedules and Fees](https://www.sfpuc.gov/sites/default/files/accounts-and-services/Rates_Schedule_HHP_CleanPowerSF_2026-7.pdf),
@@ -46,7 +46,35 @@ energy, optional Premium and separate customer charge. The representative
 OpenDSS network remains a study assumption, not validation of the site's
 actual service connection.
 
-Next extensions need their own published rates and eligibility mapping:
-C-2S/C-2P monthly maximum demand, then larger TOU schedules (including Hetch
-Hetchy's half-hour boundaries and holiday rules), residential tiers, and the
-separate municipal/Enterprise families. No such tariff is approximated by C-1.
+## C-2S / C-2P extension
+
+Verified September 17, 2026 against the same official source: printed page 13
+(rates), iv–vi (demand/voltage), 1 (classification), and 32 (Premium).
+
+| Component | C-2S secondary | C-2P primary |
+|---|---:|---:|
+| Monthly customer charge | $350.00 | $350.00 |
+| Summer energy, $/kWh | 0.24654 | 0.22247 |
+| Winter energy, $/kWh | 0.19723 | 0.17798 |
+| Monthly maximum demand, $/kW | 28.50 | 23.94 |
+
+Medium-commercial demand is 75–500 kW. Classification considers the prior
+12 months; exceeding the assigned maximum for more than three months triggers
+subsequent transfer. The shared 500 kW boundary requires account confirmation.
+Primary service is from a single customer substation or untransformed standard
+primary voltage. Secondary is below 2,400 V or outside primary/transmission
+definitions. The representative network does not establish service class.
+
+The same FY coverage, Premium, exclusions and customer-charge approximation
+above apply. Billing and optimization require 15-minute inputs. Each calendar
+month incurs its full demand rate on its maximum import; a supplied earlier
+peak floors the first month's peak. Unknown outside-study peaks may increase
+actual charges. Demand is never prorated for partial studies.
+
+Both interfaces use the shared registry and display schedule-specific notes.
+Location studies optimize with tariff energy and demand costs; legacy CSV
+studies retain their explicitly supplied energy prices. Fixed customer costs
+do not change dispatch. Account eligibility is advisory, never reassigned.
+
+Next: larger TOU schedules (half-hour boundaries and holidays), residential,
+and separate municipal/Enterprise families. Export settlement remains excluded.

@@ -293,6 +293,15 @@ class TariffDefinition:
     # Additive $/kWh components aligned with tou_periods. Credits may be negative.
     energy_components: tuple[tuple[str, tuple[float, ...]], ...] = ()
     calendar_month_customer_charge: bool = False
+    # Where specified, require this resolution rather than approximating demand.
+    demand_interval_minutes: int | None = None
+
+    def validate_demand_interval(self, timestep_minutes: float) -> None:
+        if self.demand_interval_minutes is not None and timestep_minutes != self.demand_interval_minutes:
+            raise TariffError(
+                f"{self.name} requires {self.demand_interval_minutes}-minute intervals "
+                "for monthly demand billing and dispatch optimization."
+            )
 
     def __post_init__(self) -> None:
         if self.energy_components:

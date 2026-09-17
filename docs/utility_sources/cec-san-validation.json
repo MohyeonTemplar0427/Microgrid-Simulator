@@ -1,0 +1,52 @@
+{
+  "interface_version": 1,
+  "coordinates": {
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  "status": "ambiguous",
+  "delivery_utility": null,
+  "delivery_candidates": [
+    {
+      "utility_id": "pge",
+      "name": "Pacific Gas & Electric Company",
+      "agency_number": 71021,
+      "object_id": 4
+    },
+    {
+      "utility_id": "cec:distribution:23",
+      "name": "Power and Water Resource Pooling Authority",
+      "agency_number": 35722,
+      "object_id": 23
+    }
+  ],
+  "generation_candidates": [
+    {
+      "id": "cec:other:1",
+      "name": "Western Area Power Administration"
+    },
+    {
+      "id": "cec:other:27",
+      "name": "San Jose Clean Energy (SJCE)"
+    }
+  ],
+  "manual_confirmation": null,
+  "retrieved_at": "2026-09-17T20:33:24.722505+00:00",
+  "sources": [
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+      "item_id": "30410214d637434ba1003cbdcc32cf55",
+      "data_last_edit_epoch_ms": 1788541732680,
+      "response_sha256": "f4d8cc113ffc480f2d9d591240be19badf1b3162af739466f3c8a1732015f8fd",
+      "precision": "approximate CEC service areas"
+    },
+    {
+      "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+      "response_sha256": "0fb4dfc28329a8370e32e7a46786c1472a47a94c1ee1a342af9da7f002e5a82a",
+      "role": "generation suggestions; not enrollment"
+    }
+  ],
+  "boundary_buffer_meters": 100,
+  "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+  "provenance_sha256": "2cdd32b7e40613cb88fb9b431fed4aa8f4177daf24325e4e5a93b436cb9ce9db"
+}

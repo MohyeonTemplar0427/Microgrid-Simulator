@@ -1,0 +1,653 @@
+{
+  "san_francisco": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.7793,
+      "longitude": -122.4193
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      },
+      {
+        "utility_id": "hetch_hetchy",
+        "name": "Hetch Hetchy Power",
+        "agency_number": 80522,
+        "object_id": 52,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:12",
+        "name": "CleanPowerSF (CPSF)",
+        "service_id": "cleanpowersf",
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:49.472701+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "3e9c4c51620824e10490ef4b7dec56a4bfb69cdf06d8f4fa81e12a25f4d96a6b",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "2a18f603e5e54ecf0d987b76786d64aae05b74ddf8f4e6ebcfa1ea2904000888",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "2a376efdc15d007400de30c03b6ecdee9a9b944785391edec39255c6139597ac"
+  },
+  "san_mateo": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.563,
+      "longitude": -122.3255
+    },
+    "status": "approximate",
+    "delivery_utility": "pge",
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:19",
+        "name": "Peninsula Clean Energy",
+        "service_id": "peninsula",
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:49.473012+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "0ce49077ac1ed7c78cf6cf5cf25b0af08562084fe9cca5e73879bab257cf7213",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "b8bcdf0a498f92957da26edee0723b91c50de9e808bd6e465924daf68096ac31",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Interior CEC polygon match, not address-level account verification. Confirm actual electricity service and generation enrollment.",
+    "provenance_sha256": "4e92cd3efd5e942dbc61556308225a88ca790801a1e16dcb042e6585cd7e0ce7"
+  },
+  "redwood_city": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.4852,
+      "longitude": -122.2364
+    },
+    "status": "approximate",
+    "delivery_utility": "pge",
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:19",
+        "name": "Peninsula Clean Energy",
+        "service_id": "peninsula",
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:49.473193+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "0ce49077ac1ed7c78cf6cf5cf25b0af08562084fe9cca5e73879bab257cf7213",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "b8bcdf0a498f92957da26edee0723b91c50de9e808bd6e465924daf68096ac31",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Interior CEC polygon match, not address-level account verification. Confirm actual electricity service and generation enrollment.",
+    "provenance_sha256": "df9848f9ccaf9b39eb677feb863e6ca0309304f449dbcc05ab1039a5690ab42b"
+  },
+  "sunnyvale": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.3688,
+      "longitude": -122.0363
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      },
+      {
+        "utility_id": "cec:distribution:23",
+        "name": "Power and Water Resource Pooling Authority",
+        "agency_number": 35722,
+        "object_id": 23,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:29",
+        "name": "Silicon Valley Clean Energy (SVCE)",
+        "service_id": "svce",
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:49.473293+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "f4d8cc113ffc480f2d9d591240be19badf1b3162af739466f3c8a1732015f8fd",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "3d3617b43a9295761039b2b4ac1be208b0ef362537aca7caf42460193f5b7d99",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "6deb3aa9ec04fabd034ba7732a3911ea52a31a0fc5eabc6116fdb645912c7547"
+  },
+  "milpitas": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.4323,
+      "longitude": -121.8996
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      },
+      {
+        "utility_id": "cec:distribution:23",
+        "name": "Power and Water Resource Pooling Authority",
+        "agency_number": 35722,
+        "object_id": 23,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:29",
+        "name": "Silicon Valley Clean Energy (SVCE)",
+        "service_id": "svce",
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:50.981743+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "f4d8cc113ffc480f2d9d591240be19badf1b3162af739466f3c8a1732015f8fd",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "3d3617b43a9295761039b2b4ac1be208b0ef362537aca7caf42460193f5b7d99",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "11a670bffe8fb526786e51c2f8abb90f0cc4ff81e137e9ea4bfc39a2ff0946f6"
+  },
+  "san_jose": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.3382,
+      "longitude": -121.8863
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      },
+      {
+        "utility_id": "cec:distribution:23",
+        "name": "Power and Water Resource Pooling Authority",
+        "agency_number": 35722,
+        "object_id": 23,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:27",
+        "name": "San Jose Clean Energy (SJCE)",
+        "service_id": "sjce",
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:51.004747+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "f4d8cc113ffc480f2d9d591240be19badf1b3162af739466f3c8a1732015f8fd",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "0fb4dfc28329a8370e32e7a46786c1472a47a94c1ee1a342af9da7f002e5a82a",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "0e9078dc9befc876b6445db8c32bd66660965358ddbee7aabeab1f9669d268ab"
+  },
+  "santa_clara": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.3541,
+      "longitude": -121.9552
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "cec:distribution:23",
+        "name": "Power and Water Resource Pooling Authority",
+        "agency_number": 35722,
+        "object_id": 23,
+        "match": "point"
+      },
+      {
+        "utility_id": "svp",
+        "name": "Silicon Valley Power",
+        "agency_number": 80560,
+        "object_id": 30,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:51.110380+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "1f5dd9fec70b0c98ad7d7645328f00c33e579e4c9cb05b59a7e4cdeacca31bd4",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "473eb06f97687cac09ca235a35a6259be519a71c72fbe961f7c1b0fc6021d0b7",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "1b0365499b4e92749cc84e61f587a7590a94a9452727172a69eb371e6c98aca6"
+  },
+  "alameda": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.7652,
+      "longitude": -122.2416
+    },
+    "status": "approximate",
+    "delivery_utility": "amp",
+    "delivery_candidates": [
+      {
+        "utility_id": "amp",
+        "name": "Alameda Municipal Power",
+        "agency_number": 10500,
+        "object_id": 16,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:51.118691+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "432084082b6354265d63f569582d6a24d9014f8132e2a297648b837a3c9ead15",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "473eb06f97687cac09ca235a35a6259be519a71c72fbe961f7c1b0fc6021d0b7",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Interior CEC polygon match, not address-level account verification. Confirm actual electricity service and generation enrollment.",
+    "provenance_sha256": "dfac11d35e18e3f6aef3019255d9bee935a9fe8113f7a26f4e0a33095011b809"
+  },
+  "oakland": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.8044,
+      "longitude": -122.2712
+    },
+    "status": "approximate",
+    "delivery_utility": "pge",
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:9",
+        "name": "Ava Community Energy (Ava)",
+        "service_id": null,
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:51.860001+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "0ce49077ac1ed7c78cf6cf5cf25b0af08562084fe9cca5e73879bab257cf7213",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "7971b64a370c69e4c679524b2eeacdd1ea307bf541df6331748469c7976d7059",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Interior CEC polygon match, not address-level account verification. Confirm actual electricity service and generation enrollment.",
+    "provenance_sha256": "93ee95295c8fce59edea5b71f06aa0a029ade7927a26b2f4b9f2e7b85272d8b3"
+  },
+  "palo_alto": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.4419,
+      "longitude": -122.143
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "cec:distribution:23",
+        "name": "Power and Water Resource Pooling Authority",
+        "agency_number": 35722,
+        "object_id": 23,
+        "match": "point"
+      },
+      {
+        "utility_id": "cec:distribution:28",
+        "name": "City of Palo Alto",
+        "agency_number": 71290,
+        "object_id": 28,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:52.052171+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "dd4348bd14c76cf9b0fc70adacc92ae89dd4580f31cc66df0a86e8be8a9826f1",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "473eb06f97687cac09ca235a35a6259be519a71c72fbe961f7c1b0fc6021d0b7",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "163b02c183ac818088b9adeacdd70fcb8b691eb3d9986d864580dae4560b378d"
+  },
+  "los_banos": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 37.0583,
+      "longitude": -120.8499
+    },
+    "status": "approximate",
+    "delivery_utility": "pge",
+    "delivery_candidates": [
+      {
+        "utility_id": "pge",
+        "name": "Pacific Gas & Electric Company",
+        "agency_number": 71021,
+        "object_id": 4,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:19",
+        "name": "Peninsula Clean Energy",
+        "service_id": "peninsula",
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:52.105938+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "0ce49077ac1ed7c78cf6cf5cf25b0af08562084fe9cca5e73879bab257cf7213",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "1c231c35446250af01ee83007e0d7cd82ad1ad02a567de29c5c1d3fe2707cffa",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Interior CEC polygon match, not address-level account verification. Confirm actual electricity service and generation enrollment.",
+    "provenance_sha256": "abe6c52705aff62294a2d3896abd7c9f5b7109b808ef6038d9bdabcc1a81ca1c"
+  },
+  "sacramento": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 38.5816,
+      "longitude": -121.4944
+    },
+    "status": "unsupported",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "cec:distribution:33",
+        "name": "Sacramento Municipal Utility District",
+        "agency_number": 80042,
+        "object_id": 33,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:52.198085+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "35646e605068b1e4ee606f0ef195302c4d2610f368fb9835b348b7734beccd20",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "473eb06f97687cac09ca235a35a6259be519a71c72fbe961f7c1b0fc6021d0b7",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "No supported electricity territory verified. No PG&E fallback is applied.",
+    "provenance_sha256": "432ffd3b16bb3df3761ad71591dbeeb8ff5579b12f3ffbb030995f3a76ff490a"
+  },
+  "los_angeles": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "cec:distribution:31",
+        "name": "Los Angeles Department of Water & Power",
+        "agency_number": 58970,
+        "object_id": 31,
+        "match": "point"
+      },
+      {
+        "utility_id": "cec:distribution:53",
+        "name": "Metropolitan Water District of So. Cal",
+        "agency_number": 64842,
+        "object_id": 53,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:52.851027+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "7c1b62b9fa13f732c8c90c5f790ec66b43cf160f1e8e0b92033ff899fee2e597",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "c3f69cfbb81a187cee098fac489eaaf482e882608202b67411015cfd7c7e3f38",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "5591d81300cbb681cbc603a737bc07193b5b8db84977cd4c309b5b2e85e86c08"
+  },
+  "san_diego": {
+    "interface_version": 1,
+    "coordinates": {
+      "latitude": 32.7157,
+      "longitude": -117.1611
+    },
+    "status": "ambiguous",
+    "delivery_utility": null,
+    "delivery_candidates": [
+      {
+        "utility_id": "cec:distribution:5",
+        "name": "San Diego Gas & Electric",
+        "agency_number": 80402,
+        "object_id": 5,
+        "match": "point"
+      },
+      {
+        "utility_id": "cec:distribution:53",
+        "name": "Metropolitan Water District of So. Cal",
+        "agency_number": 64842,
+        "object_id": 53,
+        "match": "point"
+      }
+    ],
+    "generation_candidates": [
+      {
+        "id": "cec:other:25",
+        "name": "San Diego Community Power (SDCP)",
+        "service_id": null,
+        "type": "CCA"
+      }
+    ],
+    "manual_confirmation": null,
+    "retrieved_at": "2026-09-17T21:29:53.009086+00:00",
+    "sources": [
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0",
+        "item_id": "30410214d637434ba1003cbdcc32cf55",
+        "data_last_edit_epoch_ms": 1788541732680,
+        "response_sha256": "b216aa6a613666af3b45cb5dbdf56d5e5f54109381936c41211649f2850f4229",
+        "precision": "approximate CEC service areas"
+      },
+      {
+        "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0",
+        "response_sha256": "2d1fc4a6ca2c126677d20f48e35de9e9f2c297731969b377689365f6eb183cdb",
+        "role": "generation suggestions; not enrollment"
+      }
+    ],
+    "boundary_buffer_meters": 100,
+    "explanation": "Overlapping territories or a boundary within the 100 m screening buffer. Confirm the electricity provider using a bill or the utility.",
+    "provenance_sha256": "b49b2283918d1e3a890e688a55d12e25dd5629eee3c2a127305f40124a02f7a6"
+  }
+}

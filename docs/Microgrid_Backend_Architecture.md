@@ -427,3 +427,18 @@ system-sizing study may add battery and PV capital cost, installation cost,
 inverter replacement, fixed maintenance, project lifetime, discount rate,
 incentives, tax credits, and battery replacement schedules. Those lifecycle
 cash flows are intentionally excluded from present operating-cost results.
+
+
+### Municipal import-only storage extension (2026-09-17)
+
+Schema 4 municipal studies enter through `POST /api/v1/municipal/studies`.
+The server attaches immutable saved utility-resolution evidence and validates the
+complete cycle/account/load before enqueueing in the existing SQLite store.
+The pinned worker calls `src/local_web/municipal_study.py`, which invokes
+`src/dispatch/municipal.py`. The numerical bill and CVXPY objective share
+`src/billing/municipal.py:charge_lines`; an authoritative post-dispatch bill
+checks reconciliation. Vectorized tier-regime optimization includes an optional
+binary charging-mode fallback when required for physical exclusivity.
+Results use existing table/CSV/manifest routes. This path does not run OpenDSS
+and rejects PV/export/standby cases. See `Municipal_Utilities.md` for coverage,
+TOU optimality bounds, PF-threshold exclusions and browser controls.
