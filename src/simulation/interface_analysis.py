@@ -69,6 +69,9 @@ DEFAULT_SIGNAL_CACHE_DIRECTORY = (
     / "signal_data"
 )
 
+from ..billing.cleanpowersf import CLEANPOWERSF_TARIFFS
+from ..billing.hetch_hetchy import HETCH_HETCHY_TARIFFS
+
 REGION_RETAIL_TARIFF_IDS = {
     "caiso_np15": (
         PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id,
@@ -83,6 +86,8 @@ REGION_RETAIL_TARIFF_IDS = {
         PGE_B19_SECONDARY_OPTION_S_BUNDLED.tariff_id,
         PGE_B20_SECONDARY_OPTION_R_BUNDLED.tariff_id,
         PGE_B20_SECONDARY_OPTION_S_BUNDLED.tariff_id,
+        *(t.tariff_id for t in CLEANPOWERSF_TARIFFS),
+        *(t.tariff_id for t in HETCH_HETCHY_TARIFFS),
     ),
 }
 
@@ -917,13 +922,11 @@ def _apply_tariff_billing(
 
     billed = comparison.copy()
     billed["tariff_has_demand_charge"] = bool(tariff.demand_charges)
-    warnings: list[str] = []
+    warnings: list[str] = [tariff.notes] if tariff.energy_components else []
 
     if not tariff.demand_charges:
         warnings.append(
-            "Demand charges are omitted because standard PG&E B-1 has no "
-            "demand charge. Peak import remains an operating and tariff-"
-            "eligibility metric."
+            f"Demand charges are omitted because {tariff.name} has no demand charge. Peak import remains an operating and tariff-eligibility metric."
         )
 
     for row_index, row in billed.iterrows():
@@ -945,6 +948,9 @@ def _apply_tariff_billing(
             battery_degradation_cost=float(row["degradation_cost"]),
         )
 
+        for name, _ in tariff.energy_components:
+            billed.loc[row_index, f"{name}_charge"] = sum(
+                period.import_energy_charge_by_component[name] for period in billing.periods)
         billed.loc[row_index, "customer_charge"] = billing.customer_charge
         billed.loc[row_index, "energy_cost"] = billing.import_energy_charge
         billed.loc[row_index, "demand_charge"] = billing.demand_charge
@@ -974,6 +980,7 @@ def _apply_tariff_billing(
                     row_index,
                     f"{category}_energy_charge",
                 ] = energy_charge
+        if not tariff.demand_charges and not tariff_id.startswith("hetch_hetchy_"):
             b1_periods_at_or_above_threshold = {
                 pd.Period(period.period_label, freq="M")
                 for period in billing.periods
@@ -1002,6 +1009,8 @@ def _apply_tariff_billing(
                     "reviews three consecutive months in the latest 12 "
                     "months."
                 )
+        if tariff_id.startswith("hetch_hetchy_") and any(p.simulated_peak_kw >= 75 for p in billing.periods):
+            warnings.append(f"C-1 ELIGIBILITY CHECK: {display_name} reaches 75 kW or more. Confirm SFPUC account classification using the prior twelve months; a simulated peak does not establish reassignment.")
         warnings.extend(billing.warnings)
         for period in billing.periods:
             warnings.extend(period.warnings)
@@ -1127,6 +1136,12 @@ RESULT_TABLE_COLUMNS = (
     ("demand_charge", "Demand charge ($)"),
     ("peak_grid_import_kw", "Peak import (kW)"),
     ("billed_peak_kw", "Billed peak (kW)"),
+    ("cleanpowersf_generation_charge", "CleanPowerSF generation ($)"),
+    ("pge_delivery_charge", "PG&E delivery energy ($)"),
+    ("pcia_charge", "Vintage PCIA ($)"),
+    ("franchise_fee_charge", "Franchise fee ($)"),
+    ("hetch_hetchy_energy_charge", "Hetch Hetchy energy incl. delivery ($)"),
+    ("hetch_hetchy_premium_charge", "Hetch Hetchy Premium ($)"),
     ("customer_charge", "Customer charge ($)"),
     ("export_credit", "Export credit ($)"),
     ("degradation_cost", "Degradation ($)"),

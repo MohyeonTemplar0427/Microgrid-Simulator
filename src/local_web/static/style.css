@@ -9,3 +9,27 @@ main{max-width:1540px;margin:auto;padding:42px 5% 60px}.intro{display:flex;justi
 @media(max-width:740px){.workspace{grid-template-columns:1fr}.masthead{height:64px;padding:0 20px}.brand{font-size:16px}.local-badge{font-size:10px;padding:7px 9px}main{padding:30px 16px}h1{font-size:31px}.subtitle{font-size:12px}.intro{margin-bottom:24px}.output-column{gap:16px}#study-output{padding:18px}.table-toolbar label{max-width:none;width:100%}.configuration form{padding:23px}.strategy-list{gap:13px}.pagination{align-items:flex-start;flex-direction:column}.empty-tags{gap:5px}}
 
 .settings-subheading{font-size:12px;font-weight:650;letter-spacing:0;margin:0 0 12px;color:var(--ink)}
+
+/* One form page at a time; values remain in the DOM between steps. */
+.workspace{grid-template-columns:minmax(0,1fr)}
+.wizard-header{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:20px}
+#step-progress{font-weight:650;color:var(--teal)}
+#step-navigation{display:flex;flex-wrap:wrap;gap:7px}
+#step-navigation button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;padding:8px 10px;font-size:12px}
+#step-navigation button[aria-current="step"]{background:var(--teal);color:white}
+#step-navigation button:disabled{opacity:.45;cursor:default}
+.wizard-page{max-width:760px;margin:24px auto;min-height:220px}
+.wizard-page[hidden],.wizard-actions [hidden]{display:none!important}
+.wizard-page fieldset{border:0}.wizard-page legend{font-size:20px;margin-bottom:22px}
+.wizard-actions{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding-top:20px}
+.wizard-actions .primary{width:auto;min-width:150px;margin:0}
+#study-summary details{border-bottom:1px solid var(--line);padding:12px 0}
+#study-summary summary{cursor:pointer;font-weight:600}
+#study-summary dl{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:12px}
+#study-summary dd{margin:0;overflow-wrap:anywhere}
+
+.use-defaults{background:#18743b;border-color:#18743b;color:#fff;font-weight:650}
+.use-defaults:hover{background:#125b2e;border-color:#125b2e;color:#fff}
+.use-defaults:focus-visible{outline:3px solid #79bd8d;outline-offset:3px}
+
+.location-note-asterisk{color:#c62828;font-weight:700}

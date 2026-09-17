@@ -57,6 +57,8 @@ from .plans import (
     register_plan,
     supported_plans,
 )
+from .cleanpowersf import CLEANPOWERSF_TARIFFS
+from .hetch_hetchy import HETCH_HETCHY_TARIFFS
 from .pge_residential import (
     PGE_E_ELEC_RESIDENTIAL_TIER1_BUNDLED,
     PGE_E_ELEC_RESIDENTIAL_TIER2_BUNDLED,

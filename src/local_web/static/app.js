@@ -5,11 +5,20 @@ const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"C
 let capabilities, selectedDatasetId, datasets = [], activeStudy = null, activeId = null, pollTimer, offset = 0, tableRequest = 0;
 const PAGE_SIZE = 100;
 let essResolution=null, essKey=null, annualResult=null, annualKey=null;
+let utilityTimer, strategiesEdited=false;
 let template, siteLabel, weatherId = null, weatherMeta = null, locationGeneration = 0;
 const field = name => form.elements.namedItem(name);
 function weatherRequest() { return {latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),year:Number(field("start_date").value.slice(0,4)),timezone:field("timezone").value,timestep_minutes:Number(field("timestep_minutes").value)}; }
 function weatherMatches(meta) { const wanted=weatherRequest(); return meta && Object.keys(wanted).every(k=>meta.request[k]===wanted[k]) && Number(field("end_date").value.slice(0,4))===wanted.year; }
 function updateSiteControls() {
+  const utility=field("utility").value;
+  const service=["cleanpowersf","cec:other:12"].includes(utility)?"cleanpowersf":["hetch_hetchy","cec:distribution:52"].includes(utility)?"hetch_hetchy":utility;
+  for(const opt of field("tariff_id").options) {
+    if(!opt.value || opt.value==="__unset__") continue;
+    opt.hidden=template?.schema_version>=2 && (opt.value.startsWith("hetch_hetchy_")?"hetch_hetchy":opt.value.startsWith("cleanpowersf_")?"cleanpowersf":"pge")!==service;
+    opt.disabled=opt.hidden;
+  }
+
   updateCandidateControls();
   const site=template?.schema_version>=2;
   for (const node of document.querySelectorAll("[data-site]")) { node.hidden=!site; for(const input of node.querySelectorAll("input,select,button")) input.disabled=!site; }
@@ -18,14 +27,14 @@ function updateSiteControls() {
   $("historical-settings").hidden=field("weather_source").value!=="nsrdb";
   $("archetype-label").hidden=field("load_mode").value!=="synthetic";
   $("fixed-price-label").hidden=!!field("tariff_id").value;
-  field("tariff_id").options[0].textContent=site?"Flat energy-price assumption · no utility bill":"Profile energy prices · no utility bill";
+  field("tariff_id").querySelector('option[value=""]').textContent=site?"Flat energy-price assumption · no utility bill":"Profile energy prices · no utility bill";
   $("pv-note").textContent=site?"AC rating limits the weather-derived output. Temperature and inverter losses are calculated separately from system losses.":"PV AC capacity sets the inverter rating; generation uses the saved profile.";
-  $("price-note").textContent=site?"A selected tariff supplies both dispatch energy prices and billing. Its effective dates must cover the study. Confirm your account first.":"Dispatch uses saved profile prices; the selected tariff applies to billing.";
+  $("price-note").textContent=field("tariff_id").value.startsWith("hetch_hetchy_")?"Hetch Hetchy retail C-1: confirm an eligible small-commercial account below 75 kW and Premium enrollment if selected. Generation and delivery are included. FY2026–27 rates; calendar-month billing with partial-month cost allocation, not an actual meter-cycle bill. Taxes, discounts and export settlements are excluded.":field("tariff_id").value.startsWith("cleanpowersf_")?"CleanPowerSF B-1 + PG&E delivery. Choose the phase, Green/SuperGreen product, and PCIA vintage shown on your bill (not the simulation year). Non-exempt commercial accounts only. Verified March 1–September 16, 2026; taxes, discounts, standby and NEM/NBT settlements excluded.":site?"A selected tariff supplies both dispatch energy prices and billing. Its effective dates must cover the study. Confirm your account first.":"Dispatch uses saved profile prices; the selected tariff applies to billing.";
   if (site) $("dataset-info").textContent="Location studies generate solar and load inputs from the settings below.";
   if(weatherMeta && !weatherMatches(weatherMeta)) { weatherId=null; weatherMeta=null; }
   $("weather-status").textContent=field("weather_source").value==="nsrdb" ? (weatherId?"Historical weather ready. A copy will be saved with the study.":"Retrieve matching historical weather before running."):"Clear-sky estimates are calculated locally when the simulation runs.";
 }
-$("new-site").addEventListener("click",()=>fillForm(capabilities.candidate_defaults || capabilities.site_defaults || capabilities.defaults));
+$("new-site").addEventListener("click",()=>startBlankStudy());
 $("search-location").addEventListener("click",async()=>{
   const generation=++locationGeneration, query=field("location_query").value;
   $("search-location").disabled=true; $("location-status").textContent="Finding location…";
@@ -33,10 +42,10 @@ $("search-location").addEventListener("click",async()=>{
     const match=await api("/api/location",{query});
     if(generation!==locationGeneration) { $("location-status").textContent="Location settings changed during lookup. Search again to apply a match."; return; }
     siteLabel=match.display_name; field("latitude").value=match.latitude; field("longitude").value=match.longitude;
-    field("utility").value="unconfirmed"; field("tariff_id").value="";
+    resetUtilityOptions(); field("tariff_id").value="";
     if(match.suggestion.timezone) field("timezone").value=match.suggestion.timezone;
     $("location-status").textContent=match.display_name;
-    $("utility-suggestion").textContent=match.suggestion.message;
+    refreshUtilities(generation);
     updateSiteControls();
   }catch(error){$("location-status").textContent=error.message;}
   finally{$("search-location").disabled=false;}
@@ -59,7 +68,8 @@ form.addEventListener("input",event=>{
     if(event.target.name!=="location_query") {
       siteLabel=`Coordinates ${field("latitude").value}, ${field("longitude").value}`;
       $("location-status").textContent=siteLabel; $("utility-suggestion").textContent="Coordinates changed. Confirm the timezone and electricity service.";
-      field("utility").value="unconfirmed"; field("tariff_id").value="";
+      resetUtilityOptions(); field("tariff_id").value="";
+      clearTimeout(utilityTimer); utilityTimer=setTimeout(()=>refreshUtilities(locationGeneration),600);
     }
   }
   updateSiteControls();
@@ -76,8 +86,11 @@ function showError(id, error) { $(id).textContent = error.message || String(erro
 function badge(status) { const span=document.createElement("span"); span.className=`status ${status}`; span.textContent=status; return span; }
 function option(value, label) { const node=document.createElement("option"); node.value=value; node.textContent=label; return node; }
 
-function fillForm(request) {
+function fillForm(request, lookup=true) {
+  strategiesEdited=true;
   locationGeneration++;
+  clearTimeout(utilityTimer);
+  resetUtilityOptions(request.site?.utility);
   template=structuredClone(request);
   selectedDatasetId=request.dataset_id;
   weatherId=request.weather_id || null;
@@ -97,6 +110,8 @@ function fillForm(request) {
   for (const box of $("strategies").querySelectorAll("input")) box.checked=request.strategies.includes(box.value);
   restoreCandidate(request);
   updateDatasetInfo(); updateSiteControls();
+  resetWizard();
+  if(lookup && request.schema_version>=2) refreshUtilities(locationGeneration,request.site.utility);
 }
 function updateDatasetInfo() {
   const dataset=datasets.find(d=>d.id===selectedDatasetId);
@@ -118,8 +133,8 @@ function readRequest() {
   if(request.schema_version>=2) {
     request.site={label:siteLabel,latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),utility:field("utility").value};
     request.weather_source=field("weather_source").value; request.weather_id=request.weather_source==="nsrdb"?weatherId:null;
-    for(const key of Object.keys(request.solar)) request.solar[key]=Number(field(key).value);
-    request.load={mode:field("load_mode").value,power_kw:Number(field("load_power_kw").value),archetype:field("archetype").value};
+    for(const key of Object.keys(request.solar)) request.solar[key]=request.weather_source==="nsrdb" && ["temperature_c","wind_speed_m_per_s"].includes(key)?template.solar[key]:Number(field(key).value);
+    request.load={mode:field("load_mode").value,power_kw:Number(field("load_power_kw").value),archetype:field("load_mode").value==="constant"?template.load.archetype:field("archetype").value};
     for(const key of ["fixed_price_per_kWh","carbon_intensity_g_per_kWh"]) request[key]=Number(field(key).value);
   }
   if(request.schema_version===3) {
@@ -130,7 +145,10 @@ function readRequest() {
   return request;
 }
 form.addEventListener("submit",async event=>{
-  event.preventDefault(); $("form-error").hidden=true; $("run-button").disabled=true;
+  event.preventDefault();
+  if(wizardIndex < wizardPages().length-1) { advanceWizard(); return; }
+  if(!validateWizard()) return;
+  $("form-error").hidden=true; $("run-button").disabled=true;
   try { const study=await api("/api/studies",readRequest()); await selectStudy(study.id); await history(); }
   catch(error) { showError("form-error",error); }
   finally { $("run-button").disabled=false; }
@@ -276,6 +294,8 @@ $("resolve-ess").addEventListener("click",async()=>{
 $("optimize-orientation").addEventListener("click",async()=>{
   $("optimize-orientation").disabled=true; const key=orientationKey();
   try {
+    const required=["latitude","longitude","timezone","orientation_year","pv_capacity_kw","dc_capacity_kw","tilt_degrees","azimuth_degrees","system_losses_fraction","inverter_efficiency"];
+    if(required.some(name=>field(name).value==="")) throw new Error("Set the location, time range, PV and inverter values first, then return here to optimize orientation.");
     const study=readRequest();study.weather_source="clear_sky";study.weather_id=null;
     $("orientation-status").textContent="Retrieving the full historical year…";
     const weather=await api("/api/weather",{latitude:study.site.latitude,longitude:study.site.longitude,year:Number(field("orientation_year").value),timezone:study.timezone,timestep_minutes:60});
@@ -289,6 +309,8 @@ $("optimize-orientation").addEventListener("click",async()=>{
   finally{$("optimize-orientation").disabled=false;}
 });
 
+let wizardIndex=0, wizardReached=0;
+
 async function initialize() {
   try {
     capabilities=await api("/api/capabilities");
@@ -301,7 +323,7 @@ async function initialize() {
       label.className="checkbox"; box.type="checkbox"; box.value=name; box.disabled=name==="no_battery";
       label.append(box,document.createTextNode(names[name] || name)); $("strategies").append(label);
     }
-    await loadDatasets(); fillForm(capabilities.candidate_defaults || capabilities.site_defaults || capabilities.defaults); await history();
+    await loadDatasets(); startBlankStudy(); await history();
     $("engine-info").textContent=`Engine ${capabilities.engine.id.slice(0,12)} · Local development snapshot · Studies saved on this computer`;
     $("credentials-note").textContent=capabilities.nsrdb_configured?"NSRDB credentials are configured on the local server. Retrieval contacts NSRDB.":"Historical retrieval needs NSRDB credentials. Start the server with --env-file pointing to your existing src/.env.";
     $("run-button").disabled=false;
@@ -309,3 +331,185 @@ async function initialize() {
   } catch(error) {showError("connection",error);}
 }
 initialize();
+
+
+async function refreshPipeline() {
+  try {
+    const health = await api("/api/health");
+    $("pipeline-status").textContent = health.worker === "connected"
+      ? `Simulation service connected · ${health.running} running · ${health.queued} queued`
+      : `Simulation worker offline · ${health.queued} queued. Submitted studies are saved and will run when the worker starts.`;
+  } catch (_) {
+    $("pipeline-status").textContent = "Simulation service disconnected. Reconnecting…";
+  } finally {
+    setTimeout(refreshPipeline, 5000);
+  }
+}
+refreshPipeline();
+
+
+function resetUtilityOptions(saved="unconfirmed") {
+  field("utility").replaceChildren(option("unconfirmed","Choose your electricity service"),
+    option("pge","PG&E bundled service · manual confirmation"), option("cleanpowersf","CleanPowerSF + PG&E delivery · confirm account"), option("hetch_hetchy","Hetch Hetchy Power · confirm eligible account"), option("other","Other / CCA service · manual"));
+  if(saved.startsWith("cec:")) field("utility").append(option(saved,`Saved provider (${saved})`));
+  field("utility").value=saved;
+}
+async function refreshUtilities(generation, saved="unconfirmed") {
+  const latitude=field("latitude"), longitude=field("longitude");
+  if(!latitude.value || !longitude.value || !latitude.checkValidity() || !longitude.checkValidity()) return;
+  $("utility-suggestion").textContent="Matching utility service territories…";
+  try {
+    const result=await api("/api/utilities",{latitude:Number(latitude.value),longitude:Number(longitude.value)});
+    if(generation!==locationGeneration) return;
+    // Preserve an explicit account choice made while the lookup was in flight.
+    const chosen=field("utility").value || saved;
+    const options=[option("unconfirmed","Choose your electricity service")];
+    for(const item of result.candidates) options.push(option(item.id,
+      item.id==="pge"?`${item.name} · confirm bundled service`:item.id==="cec:other:12"?"CleanPowerSF + PG&E delivery · B-1 supported":item.id==="cec:distribution:52"?"Hetch Hetchy Power · C-1 supported; confirm eligibility":`${item.name} · ${item.type} · tariff not yet modeled`));
+    if(!result.candidates.some(x=>x.id==="pge")) options.push(option("pge","PG&E bundled service · manual override"));
+    if(chosen==="cleanpowersf" || !result.candidates.some(x=>x.id==="cec:other:12")) options.push(option("cleanpowersf","CleanPowerSF + PG&E delivery · confirm account"));
+    if(chosen==="hetch_hetchy" || !result.candidates.some(x=>x.id==="cec:distribution:52")) options.push(option("hetch_hetchy","Hetch Hetchy Power · confirm eligible account"));
+    options.push(option("other","Other / CCA service · manual"));
+    if(chosen.startsWith("cec:") && !result.candidates.some(x=>x.id===chosen)) options.push(option(chosen,`Saved provider (${chosen}) · not in current matches`));
+    field("utility").replaceChildren(...options); field("utility").value=chosen;
+    $("utility-suggestion").textContent=result.message;
+  } catch(error) {
+    if(generation===locationGeneration) $("utility-suggestion").textContent="Utility lookup unavailable. Select your service manually.";
+  }
+}
+field("utility").addEventListener("change",()=>{
+  field("tariff_id").value="__unset__";
+  updateSiteControls();
+});
+
+
+function wizardPages() {
+  return [...document.querySelectorAll(".wizard-page")].filter(page=>
+    template?.schema_version>=2 || !page.querySelector(":scope > fieldset[data-site]"));
+}
+function resetWizard() { wizardIndex=0; wizardReached=0; renderWizard(); }
+function renderWizard(focus=false) {
+  const pages=wizardPages();
+  for(const page of document.querySelectorAll(".wizard-page")) page.hidden=page!==pages[wizardIndex];
+  const review=wizardIndex===pages.length-1;
+  $("step-progress").textContent=review ? "Review your study before running" : `Step ${wizardIndex+1} of ${pages.length-1}`;
+  $("step-navigation").replaceChildren(...pages.map((page,index)=>{
+    const button=document.createElement("button");button.type="button";
+    button.textContent=page.querySelector("legend,h3").textContent;
+    button.disabled=index>wizardReached;
+    if(index===wizardIndex) button.setAttribute("aria-current","step");
+    button.addEventListener("click",()=>{
+      if(index>wizardIndex && !validateWizardPage(pages[wizardIndex])) return;
+      wizardIndex=index;renderWizard(true);
+    });return button;
+  }));
+  $("step-back").disabled=wizardIndex===0;
+  $("step-next").hidden=review; $("run-button").hidden=!review;
+  $("step-next").textContent=wizardIndex===pages.length-2?"Review study":"Next";
+  if(review) renderStudySummary();
+  if(focus) {
+    const heading=pages[wizardIndex].querySelector("legend,h3");heading.tabIndex=-1;heading.focus();
+    $("step-progress").scrollIntoView({behavior:"smooth",block:"start"});
+  }
+}
+function validateWizardPage(page) {
+  $("form-error").hidden=true;
+  for(const input of page.querySelectorAll("input,select")) {
+    let hidden=false;
+    for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.hidden) hidden=true;
+    if(input.disabled || hidden) continue;
+    const optional=["location_query","orientation_year","ess_basis","ess_charge_override","ess_discharge_override"];
+    if(input.type!=="checkbox" && !optional.includes(input.name) && ((input.value==="" && input.name!=="tariff_id") || input.value==="__unset__")) {
+      for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.tagName==="DETAILS") parent.open=true;
+      showError("form-error",new Error("Enter the required values or choose Use Default Values for this step."));input.focus();return false;
+    }
+    if(!input.checkValidity()) {
+      for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.tagName==="DETAILS") parent.open=true;
+      input.reportValidity();return false;
+    }
+  }
+  let error=null;
+  if(page.contains(field("end_date")) && field("end_date").value<field("start_date").value) error="End date must be on or after the start date.";
+  if(page.contains(field("weather_source")) && template?.schema_version>=2 && field("weather_source").value==="nsrdb" && !weatherId) error="Retrieve matching historical weather before continuing.";
+  if(page.contains(field("capacity_kWh"))) {
+    if(field("ess_mode").value==="equipment" && !essResolution?.ready) error="Review and apply the equipment settings before continuing.";
+    else {
+      const capacity=Number(field("capacity_kWh").value), energy=Number(field("energy_kWh").value), min=Number(field("SOC_min").value), max=Number(field("SOC_max").value);
+      if(min>=max || energy<capacity*min || energy>capacity*max) error="Initial battery energy must lie between its minimum and maximum SOC limits.";
+    }
+  }
+  if(error) {showError("form-error",new Error(error));return false;}
+  return true;
+}
+function advanceWizard() {
+  if(!capabilities || !validateWizardPage(wizardPages()[wizardIndex])) return;
+  wizardIndex++;wizardReached=Math.max(wizardReached,wizardIndex);renderWizard(true);
+}
+function validateWizard() {
+  const pages=wizardPages();
+  for(let index=0;index<pages.length;index++) {
+    wizardIndex=index;renderWizard();
+    if(!validateWizardPage(pages[index])) {renderWizard(true);return false;}
+  }
+  return true;
+}
+function renderStudySummary() {
+  const summary=$("study-summary");summary.replaceChildren();
+  for(const page of wizardPages().slice(0,-1)) {
+    const details=document.createElement("details"), title=document.createElement("summary"), list=document.createElement("dl");
+    title.textContent=page.querySelector("legend").textContent;details.append(title,list);
+    for(const input of page.querySelectorAll("input,select")) {
+      if(input.disabled || input.closest("[hidden]") && input.closest("[hidden]")!==page) continue;
+      const label=input.closest("label");if(!label) continue;
+      const name=document.createElement("dt"), value=document.createElement("dd");
+      name.textContent=[...label.childNodes].filter(node=>node.nodeType===Node.TEXT_NODE).map(node=>node.textContent).join("").trim();
+      value.textContent=input.tagName==="SELECT"?input.selectedOptions[0]?.textContent || "—":input.type==="checkbox"?(input.checked?"Yes":"No"):input.value || "—";
+      list.append(name,value);
+    }
+    summary.append(details);
+  }
+}
+$("step-back").addEventListener("click",()=>{if(wizardIndex>0){wizardIndex--;$("form-error").hidden=true;renderWizard(true);}});
+$("step-next").addEventListener("click",advanceWizard);
+
+
+function defaultSettings() { return capabilities.candidate_defaults || capabilities.site_defaults || capabilities.defaults; }
+function startBlankStudy() {
+  fillForm(defaultSettings(),false);
+  strategiesEdited=false;
+  locationGeneration++; clearTimeout(utilityTimer); siteLabel="";
+  weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
+  for(const input of form.querySelectorAll("input[name],select[name]")) {
+    if(input.type==="checkbox") input.checked=false;
+    else if(input.name==="utility") input.value="unconfirmed";
+    else input.value=input.name==="tariff_id"?"__unset__":"";
+  }
+  for(const box of $("strategies").querySelectorAll("input")) box.checked=box.value==="no_battery";
+  $("location-status").textContent="Enter coordinates or search for your microgrid location.";
+  $("utility-suggestion").textContent="Utility choices will appear after you set a location.";
+  $("orientation-status").textContent="";
+  updateSiteControls();resetWizard();
+}
+function applyStepDefaults(page) {
+  const defaults=defaultSettings();
+  const hadCoordinates=field("latitude").value!=="" || field("longitude").value!=="";
+  const values={...defaults,...defaults.battery,...defaults.solar,
+    latitude:defaults.site?.latitude,longitude:defaults.site?.longitude,location_query:defaults.site?.label,
+    utility:"unconfirmed",load_mode:defaults.load?.mode,load_power_kw:defaults.load?.power_kw,
+    archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),
+    ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2};
+  for(const input of page.querySelectorAll("input[name],select[name]")) {
+    if(input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
+    if(input.name==="location_query" && hadCoordinates) continue;
+    if(Object.hasOwn(values,input.name)) input.value=values[input.name] ?? "";
+  }
+  if(page.contains($("strategies")) && !strategiesEdited) for(const box of $("strategies").querySelectorAll("input")) box.checked=defaults.strategies.includes(box.value);
+  if(page.contains(field("latitude"))) {
+    locationGeneration++;siteLabel=field("location_query").value || `Coordinates ${field("latitude").value}, ${field("longitude").value}`;
+    $("location-status").textContent=siteLabel;refreshUtilities(locationGeneration);
+  }
+  $("form-error").hidden=true;updateSiteControls();
+}
+for(const button of document.querySelectorAll(".use-defaults")) button.addEventListener("click",()=>applyStepDefaults(button.closest(".wizard-page")));
+
+$("strategies").addEventListener("change",()=>{strategiesEdited=true;});

@@ -1585,3 +1585,44 @@ def test_a_horizon_crossing_new_year_says_one_fetch_is_not_enough():
     text = application.nsrdb_year_notice.configuration["text"]
     assert "2025 and 2026" in text
     assert "separately" in text
+
+
+def test_cleanpowersf_gui_preserves_account_choice_and_shows_scope():
+    from src.billing.cleanpowersf import build_b1
+    tariff = build_b1(phase="polyphase", product="supergreen", vintage=2019)
+    application = MicrogridApplication.__new__(MicrogridApplication)
+    application.values = {key: FakeValueVariable(value) for key, value in {
+        "source_mode": "live_api", "region_id": "caiso_np15",
+        "price_mode": "time_of_use", "tariff_id": tariff.tariff_id,
+        "meter_topology_mode": "single_pcc"}.items()}
+    for key in ("price_mode_combobox", "tariff_combobox", "fixed_price_entry",
+                "price_csv_entry", "price_csv_button", "meter_topology_combobox",
+                "submeter_count_entry", "previous_peak_entry", "tariff_explanation"):
+        setattr(application, key, FakeConfigurableWidget())
+    application._update_region_pricing_options()
+    assert application.values["tariff_id"].get() == tariff.tariff_id
+    assert tariff.name in application.tariff_combobox.configuration["values"]
+    assert application.tariff_combobox.configuration["state"] == "readonly"
+    assert application.previous_peak_entry.configuration["state"] == "disabled"
+    assert "PCIA vintage 2019" in application.tariff_explanation.configuration["text"]
+    assert "non-exempt" in application.tariff_explanation.configuration["text"]
+
+
+def test_hetch_hetchy_gui_shows_c1_account_scope():
+    from src.billing.hetch_hetchy import build_c1
+    tariff = build_c1(premium=True)
+    application = MicrogridApplication.__new__(MicrogridApplication)
+    application.values = {key: FakeValueVariable(value) for key, value in {
+        "source_mode": "live_api", "region_id": "caiso_np15",
+        "price_mode": "time_of_use", "tariff_id": tariff.tariff_id,
+        "meter_topology_mode": "single_pcc"}.items()}
+    for key in ("price_mode_combobox", "tariff_combobox", "fixed_price_entry",
+                "price_csv_entry", "price_csv_button", "meter_topology_combobox",
+                "submeter_count_entry", "previous_peak_entry", "tariff_explanation"):
+        setattr(application, key, FakeConfigurableWidget())
+    application._update_region_pricing_options()
+    assert application.values["tariff_id"].get() == tariff.tariff_id
+    assert tariff.name in application.tariff_combobox.configuration["values"]
+    assert application.previous_peak_entry.configuration["state"] == "disabled"
+    assert "Hetch Hetchy retail C-1" in application.tariff_explanation.configuration["text"]
+    assert "Premium requires confirmed enrollment" in application.tariff_explanation.configuration["text"]

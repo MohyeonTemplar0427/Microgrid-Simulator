@@ -1,6 +1,7 @@
 """Versioned, JSON-safe study requests shared by application adapters."""
 
 from datetime import date
+import re
 from copy import deepcopy
 import math
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
@@ -58,10 +59,17 @@ def validate_site_fields(data):
         raise ValueError("Provide a site description.")
     number(site["latitude"], "Latitude", -90, 90)
     number(site["longitude"], "Longitude", -180, 180)
-    if site["utility"] not in ("unconfirmed", "pge", "other"):
+    if not isinstance(site["utility"], str) or (site["utility"] not in ("unconfirmed", "pge", "cleanpowersf", "hetch_hetchy", "other") and not re.fullmatch(r"cec:(distribution|other):[0-9]+", site["utility"])):
         raise ValueError("Choose a supported utility selection.")
-    if data["tariff_id"] and site["utility"] != "pge":
-        raise ValueError("Confirm PG&E bundled service before applying a bundled PG&E tariff. CCA and other utilities' bills are not modelled.")
+    if data["tariff_id"]:
+        is_cpsf = data["tariff_id"].startswith("cleanpowersf_")
+        if is_cpsf and site["utility"] not in ("cleanpowersf", "cec:other:12"):
+            raise ValueError("Confirm CleanPowerSF generation with PG&E delivery for this tariff.")
+        is_hhp = data["tariff_id"].startswith("hetch_hetchy_")
+        if is_hhp and site["utility"] not in ("hetch_hetchy", "cec:distribution:52"):
+            raise ValueError("Confirm an eligible Hetch Hetchy Power account for this tariff.")
+        if not is_cpsf and not is_hhp and site["utility"] != "pge":
+            raise ValueError("Confirm PG&E bundled service before applying a bundled PG&E tariff.")
     if data["weather_source"] not in ("clear_sky", "nsrdb"):
         raise ValueError("Choose clear-sky estimates or historical NSRDB weather.")
     if data["weather_source"] == "nsrdb":

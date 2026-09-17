@@ -67,6 +67,8 @@ def make_server(application, port=8765):
                 name = {"/": "index.html", "/app.js": "app.js", "/style.css": "style.css"}[url.path]
                 mime = {"index.html": "text/html; charset=utf-8", "app.js": "text/javascript; charset=utf-8", "style.css": "text/css; charset=utf-8"}[name]
                 return self.respond(200, (STATIC / name).read_bytes(), mime)
+            if url.path == "/api/health":
+                return self.respond(200, application.health())
             if url.path == "/api/capabilities":
                 defaults = deepcopy(DEFAULT_REQUEST)
                 defaults["dataset_id"] = next(d["id"] for d in application.store.datasets() if d["name"] == "default_small_business_week.csv")
@@ -119,6 +121,8 @@ def make_server(application, port=8765):
                 if not 0 < length <= MAX_BODY:
                     raise ValueError("Request must be nonempty and at most 20 MB.")
                 body = json.loads(self.rfile.read(length))
+                if urlsplit(self.path).path == "/api/utilities":
+                    return self.respond(200, application.utilities(body))
                 if urlsplit(self.path).path in ("/api/location", "/api/weather"):
                     kind = "location" if urlsplit(self.path).path == "/api/location" else "weather"
                     return self.respond(200, application.resource(kind, body))
@@ -155,6 +159,7 @@ def main():
     parser.add_argument("--data-dir", type=Path, default=ROOT / ".cache" / "local_web")
     parser.add_argument("--env-file", type=Path, default=ROOT / "src" / ".env", help="Read only NSRDB credentials from this local .env file.")
     parser.add_argument("--refresh-engine", action="store_true", help="Explicitly pin the current source and dependencies as a development snapshot.")
+    parser.add_argument("--external-worker", action="store_true", help="Queue studies for a separately started src.local_web.runner process.")
     args = parser.parse_args()
     if args.env_file.is_file():
         from dotenv import dotenv_values
@@ -162,7 +167,7 @@ def main():
         for key in ("NSRDB_API_KEY", "NSRDB_API_EMAIL"):
             if values.get(key):
                 os.environ.setdefault(key, values[key])
-    application = Application(args.data_dir, refresh=args.refresh_engine)
+    application = Application(args.data_dir, refresh=args.refresh_engine, embedded_worker=not args.external_worker)
     try:
         server = make_server(application, args.port)
         print(f"Microgrid Simulator: http://127.0.0.1:{server.server_port}", flush=True)

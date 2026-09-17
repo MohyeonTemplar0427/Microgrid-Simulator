@@ -132,6 +132,10 @@ TARIFF_LABELS = {
     ),
 }
 
+from ..billing.cleanpowersf import CLEANPOWERSF_TARIFFS
+from ..billing.hetch_hetchy import HETCH_HETCHY_TARIFFS
+TARIFF_LABELS.update({t.tariff_id: t.name for t in (*CLEANPOWERSF_TARIFFS, *HETCH_HETCHY_TARIFFS)})
+
 LOAD_PROFILE_LABELS = {
     "constant": "Constant load",
     "synthetic": "Synthetic building profile",
@@ -1899,6 +1903,8 @@ class MicrogridApplication:
                 "Tariff pricing adds TOU energy, customer, and demand charges. "
                 "A blank earlier peak uses only the simulated partial-month peak."
             )
+        if tariff_active and selected_tariff_id.startswith(("cleanpowersf_", "hetch_hetchy_")):
+            explanation = get_tariff(selected_tariff_id).notes
         self.tariff_explanation.configure(
             text=explanation,
             foreground="" if tariff_active else "#777777",

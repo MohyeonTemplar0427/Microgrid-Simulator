@@ -246,3 +246,98 @@ See [ESS equipment catalog](ESS_Equipment_Catalog.md) for the source-backed
 ESS resolver, schema 3, manual/equipment flow, and full-year historical
 integer orientation optimization. These features are prepared under a separate
 candidate engine. Existing pinned engines are not upgraded automatically.
+
+
+## Frontend/backend pipeline and independent worker
+
+The browser sends validated study settings to `POST /api/studies`. The API
+returns HTTP 202 with the saved study ID. SQLite retains the queued job while
+its immutable request, engine manifest and inputs live in the run directory.
+A single worker atomically claims jobs and invokes the pinned simulation engine
+in a separate subprocess. The browser polls `GET /api/studies/{id}` and loads
+`GET /api/studies/{id}/tables/{table}` or its `.csv` download when complete.
+`GET /api/health` exposes worker connectivity and queued/running counts; the
+browser updates this status every five seconds. Submission while the worker
+is offline remains valid: the job waits durably in the queue.
+
+The existing one-command launch still runs an embedded worker. For independent
+processes, run these commands from the main project folder in two terminals:
+
+```sh
+/usr/local/bin/python3 -m src.local_web.server --port 8767 --data-dir .cache/local_web_pipeline --external-worker
+```
+
+```sh
+/usr/local/bin/python3 -m src.local_web.runner --data-dir .cache/local_web_pipeline
+```
+
+Open <http://127.0.0.1:8767>. Both processes must use the same data directory.
+This separate directory creates a new engine snapshot without changing an
+existing preview's pin. Subsequent source updates still require the explicit
+`--refresh-engine` option; each previously queued study retains its own engine.
+
+In external mode, restarting the web/API server does not stop the worker or
+mark its active job failed. Worker startup alone recovers interrupted running
+records as failed, with saved inputs available for explicit resubmission.
+Stopping the worker interrupts its active job; queued jobs remain queued.
+The worker holds an exclusive lock, inherited by the simulation subprocess,
+so a replacement cannot recover a job while an orphaned engine is still running.
+Once that child exits, restart the worker to recover the interrupted record.
+Only one worker per directory is supported. SIGINT/SIGTERM shut down the
+standalone worker gracefully. Separate processes do not yet provide multi-host
+execution, automatic retries, authentication or production hosting. Location,
+weather and annual orientation requests still use their existing synchronous
+API paths; study execution is the durable asynchronous pipeline.
+
+Run `python -m pytest -q test/test_local_web_pipeline.py test/test_local_web.py`
+to verify independent-worker execution, restart persistence, locking, failure
+recovery and actual result-table retrieval without provider network calls.
+
+
+## Utility territory choices
+
+`POST /api/utilities` accepts latitude/longitude and queries the California
+Energy Commission's ArcGIS polygon layers for IOU/POU and other load-serving
+entities (including CCAs). The frontend retrieves choices on form initialization,
+after location search, and after coordinate edits. It rejects stale lookup
+responses and clears the prior account selection when coordinates change.
+Successful matches are cached locally for 24 hours, with source URLs and retrieval
+time. Partial/provider failures stay explicit and are not cached as complete.
+Outside California, manual selection remains available; no bounding-box utility
+assignment is used. The coverage bounding box only avoids unnecessary requests.
+
+Sources: https://www.arcgis.com/home/item.html?id=30410214d637434ba1003cbdcc32cf55
+and https://www.arcgis.com/home/item.html?id=07224640a2fe42f89399be796e7b8810.
+CEC warns boundaries are approximate and not all entities are represented.
+Multiple matches remain choices, not automatic enrollment. Selecting PG&E bundled
+service still requires the user to identify that account arrangement. CCA/other
+provider identifiers are retained in the saved site; their tariffs are not yet
+modeled, so they use the explicit flat-price assumption. No CCA rate is inferred.
+The reset button is labeled “Reset study inputs”; it does not delete saved runs.
+
+## Multi-step setup
+
+The form shows nine setup screens (study name, location, electricity service,
+simulation time range, solar weather, PV, inverter, battery/ESS, economics)
+followed by Review & run. Back/Next preserves values in the same form; visited
+steps can be revisited from the step navigation. Reset and loading saved settings
+start at the first applicable step. Legacy CSV studies skip location-only steps.
+Native field constraints and key date/weather/battery checks run before advancing;
+submission rechecks all steps and reveals the first invalid one. The review screen
+summarizes settings and retains load and strategy controls. Inputs remain in memory
+while navigating; they are durably saved only when a study is submitted.
+
+
+### Explicit defaults
+
+New/reset studies start with blank editable parameters and unselected configuration
+choices. Each step offers **Use Default Values**, filling only empty fields on that
+step. Existing entries and manually chosen comparison strategies are preserved.
+The no-battery reference remains mandatory. Saved studies still restore their
+stored inputs. Utility matches and calculated orientation retain their existing
+lookup/calculation flows. Annual orientation requires the later PV/inverter fields
+to be configured first. Required blank numbers are rejected rather than treated
+as zero. Unused fields required by the legacy request schema (for example constant
+weather assumptions in historical mode) retain internal placeholders only; they
+are not active user assumptions in those modes. Defaults remain the current static
+values; context-dependent recommendations are future work.

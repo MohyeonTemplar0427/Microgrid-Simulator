@@ -23,6 +23,8 @@ def capabilities():
     from ..equipment.ess import search
     return {"candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
+         "service": "hetch_hetchy" if key.startswith("hetch_hetchy_") else "cleanpowersf" if key.startswith("cleanpowersf_") else "pge",
+         "notes": get_tariff(key).notes,
          "effective_start": str(get_tariff(key).effective_start),
          "effective_end": str(get_tariff(key).effective_end) if get_tariff(key).effective_end else None}
         for key in retail_tariff_ids_for_region("caiso_np15")
@@ -110,6 +112,8 @@ def execute(directory):
     save_table("comparison", "Scenario comparison", result.comparison)
     billing_columns = [c for c in result.comparison if c in {
         "scenario", "energy_cost", "demand_charge", "customer_charge", "export_credit",
+        "cleanpowersf_generation_charge", "pge_delivery_charge", "pcia_charge", "franchise_fee_charge",
+        "hetch_hetchy_energy_charge", "hetch_hetchy_premium_charge",
         "total_utility_charge", "total_explicit_cost", "billed_peak_kw", "degradation_cost",
     }]
     save_table("costs", "Cost summary", result.comparison[billing_columns])

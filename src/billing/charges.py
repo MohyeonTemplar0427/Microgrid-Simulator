@@ -65,6 +65,7 @@ class BillingPeriodResult:
     is_partial_period: bool = False
     previous_peak_was_known: bool = True
     warnings: tuple[str, ...] = field(default_factory=tuple)
+    import_energy_charge_by_component: dict[str, float] = field(default_factory=dict)
     demand_charge_by_component: dict[str, float] = field(default_factory=dict)
     import_energy_kWh_by_period: dict[str, float] = field(
         default_factory=dict
@@ -154,6 +155,7 @@ class BillingResult:
                     "customer_charge": period.customer_charge,
                     "import_energy_kWh": period.import_energy_kWh,
                     "import_energy_charge": period.import_energy_charge,
+                    **{f"{name}_charge": value for name, value in period.import_energy_charge_by_component.items()},
                     "billed_peak_kw": period.billed_peak_kw,
                     "demand_charge": period.demand_charge,
                     "export_energy_kWh": period.export_energy_kWh,
@@ -397,6 +399,8 @@ def calculate_meter_billing(
         )
 
         warnings = []
+        if tariff.calendar_month_customer_charge and billing_days < pd.Period(label, freq="M").days_in_month:
+            warnings.append("APPROXIMATION: monthly customer charge allocated by service days in the calendar month; not an actual meter-cycle bill.")
 
         if is_partial and tariff.demand_charges and not previous_known:
             warnings.append(
@@ -447,6 +451,13 @@ def calculate_meter_billing(
                 (import_kWh[category_mask] * period_rates[category_mask]).sum()
             )
 
+        component_charges = {}
+        if tariff.energy_components:
+            period_names = tariff.period_names(period_timestamps)
+            for name, component_rates in tariff.energy_components:
+                by_name = dict(zip((p.name for p in tariff.tou_periods), component_rates))
+                component_charges[name] = float((import_kWh * period_names.map(by_name).to_numpy()).sum())
+
         results.append(
             BillingPeriodResult(
                 meter_id=meter_id,
@@ -454,7 +465,7 @@ def calculate_meter_billing(
                 period_label=label,
                 billing_days=billing_days,
                 customer_charge=(
-                    tariff.customer_charge_for(billing_days)
+                    tariff.customer_charge_for(billing_days, days_in_month=pd.Period(label, freq="M").days_in_month)
                     * utility_account_count
                 ),
                 import_energy_kWh=float(import_kWh.sum()),
@@ -469,6 +480,7 @@ def calculate_meter_billing(
                 is_partial_period=is_partial,
                 previous_peak_was_known=previous_known,
                 warnings=tuple(warnings),
+                import_energy_charge_by_component=component_charges,
                 demand_charge_by_component=demand_charge_by_component,
                 import_energy_kWh_by_period=energy_kWh_by_period,
                 import_energy_charge_by_period=energy_charge_by_period,
@@ -940,7 +952,7 @@ def calculate_timeline_billing(
                     import_energy_charge=float(
                         sum(charge_by_category.values())
                     ),
-                    customer_charge=version.customer_charge_for(segment_days),
+                    customer_charge=version.customer_charge_for(segment_days, days_in_month=pd.Timestamp(segment_dates[0]).days_in_month),
                     minimum_bill_floor=version.minimum_bill_for(segment_days),
                     import_energy_kWh_by_category=kWh_by_category,
                     import_energy_charge_by_category=charge_by_category,

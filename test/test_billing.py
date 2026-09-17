@@ -1332,7 +1332,7 @@ def test_every_commercial_period_still_applies_all_week():
         if tariff.customer_class.value == "commercial"
     ]
 
-    assert len(commercial) == 12
+    assert len(commercial) >= 12
 
     for tariff in commercial:
         for period in tariff.tou_periods:

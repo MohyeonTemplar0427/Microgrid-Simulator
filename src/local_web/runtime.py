@@ -220,7 +220,7 @@ class Store:
 
 
 class Application:
-    def __init__(self, directory, refresh=False, root=ROOT):
+    def __init__(self, directory, refresh=False, root=ROOT, *, embedded_worker=True):
         self.store = Store(directory)
         self.lock = (self.store.directory / "server.lock").open("a+")
         try:
@@ -235,17 +235,16 @@ class Application:
             self.capabilities = json.loads(result.stdout)
             for name in ("default_small_business_week.csv", "default_microgrid_week.csv"):
                 self.store.add_dataset((root / "data" / name).read_bytes(), name)
-            with self.store.connect() as db:
-                db.execute("UPDATE studies SET status = 'failed', error = ?, finished_at = ? WHERE status = 'running'",
-                           ("The local server stopped during this run. Submit the saved settings again to retry.", now()))
         except BaseException:
             self.lock.close()
             raise
-        self.stop = threading.Event()
         self.resource_lock = threading.Lock()
         self.last_lookup = 0
-        self.thread = threading.Thread(target=self.work, daemon=True)
-        self.thread.start()
+        try:
+            self.runner = JobRunner(self.store) if embedded_worker else None
+        except BaseException:
+            self.lock.close()
+            raise
 
     def resource(self, kind, request):
         from .site_inputs import validate_weather_request
@@ -311,6 +310,71 @@ class Application:
             raise ValueError(json.loads(error_path.read_text())["error"] if error_path.exists() else "Candidate calculation failed.")
         return json.loads((directory / "resource.json").read_text())
 
+    def utilities(self, request):
+        from .utilities import lookup_utilities
+        # Validate before hashing, including nonfinite coordinates.
+        from .contract import number
+        if not isinstance(request, dict) or set(request) != {"latitude", "longitude"}:
+            raise ValueError("Supply latitude and longitude for utility matching.")
+        number(request["latitude"], "Latitude", -90, 90)
+        number(request["longitude"], "Longitude", -180, 180)
+        key = hashlib.sha256(json.dumps(request, sort_keys=True).encode()).hexdigest()
+        directory = self.store.directory / "utilities"
+        directory.mkdir(exist_ok=True)
+        path = directory / (key + ".json")
+        with self.resource_lock:
+            if path.exists() and time.time() - path.stat().st_mtime < 86400:
+                return {**json.loads(path.read_text()), "cached": True}
+            result = lookup_utilities(request)
+            if result["status"] not in ("unavailable", "partial"):
+                write_json(path, result)
+            return {**result, "cached": False}
+
+    def health(self):
+        with self.store.connect() as db:
+            counts = {row["status"]: row["count"] for row in db.execute(
+                "SELECT status, COUNT(*) AS count FROM studies GROUP BY status")}
+        return {"api": "ready", "worker": "connected" if worker_connected(self.store.directory) else "offline",
+                "execution_mode": "embedded" if self.runner else "external",
+                "queued": counts.get("queued", 0), "running": counts.get("running", 0)}
+
+    def close(self):
+        if self.runner:
+            self.runner.close()
+        self.lock.close()
+
+
+def worker_connected(directory):
+    """Probe the exclusive worker lease, including an orphaned active child."""
+    with (Path(directory) / "worker.lock").open("a+") as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            return True
+        return False
+
+
+class JobRunner:
+    """Single durable-queue consumer, independent of the HTTP application."""
+    def __init__(self, store):
+        self.store = store
+        self.lock = (store.directory / "worker.lock").open("a+")
+        try:
+            fcntl.flock(self.lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            self.lock.close()
+            raise ValueError("Another simulation worker is using this study directory.") from None
+        self.stop = threading.Event()
+        try:
+            with store.connect() as db:
+                db.execute("UPDATE studies SET status = 'failed', error = ?, finished_at = ? WHERE status = 'running'",
+                           ("The worker or server stopped during this run. Submit the saved settings again to retry.", now()))
+            self.thread = threading.Thread(target=self.work, daemon=True)
+            self.thread.start()
+        except BaseException:
+            self.lock.close()
+            raise
+
     def work(self):
         while not self.stop.is_set():
             study = self.store.claim()
@@ -326,7 +390,7 @@ class Application:
                 verify_snapshot(self.store.directory, engine)
                 with (directory / "worker.log").open("w") as log:
                     process = subprocess.Popen(command(self.store.directory, study["engine_id"], directory),
-                                               stdout=log, stderr=log, cwd=directory)
+                                               stdout=log, stderr=log, cwd=directory, pass_fds=(self.lock.fileno(),))
                     import time
                     deadline = time.monotonic() + 1800
                     while process.poll() is None:
@@ -337,7 +401,7 @@ class Application:
                             except subprocess.TimeoutExpired:
                                 process.kill()
                                 process.wait()
-                            raise RuntimeError("Run interrupted by server shutdown or the 30-minute local run limit.")
+                            raise RuntimeError("Run interrupted by worker shutdown or the 30-minute run limit.")
                     if process.returncode != 0:
                         error_path = directory / "error.json"
                         error = json.loads(error_path.read_text())["error"] if error_path.exists() else f"Simulation worker exited with code {process.returncode}."
@@ -349,5 +413,5 @@ class Application:
 
     def close(self):
         self.stop.set()
-        self.thread.join(timeout=10)
+        self.thread.join()
         self.lock.close()

@@ -290,8 +290,22 @@ class TariffDefinition:
         default_factory=ExportCompensationRule
     )
     notes: str = ""
+    # Additive $/kWh components aligned with tou_periods. Credits may be negative.
+    energy_components: tuple[tuple[str, tuple[float, ...]], ...] = ()
+    calendar_month_customer_charge: bool = False
 
     def __post_init__(self) -> None:
+        if self.energy_components:
+            import math
+            names = [name for name, _ in self.energy_components]
+            if len(names) != len(set(names)) or self.energy_tiers:
+                raise TariffError("Energy components need unique names and an untiered tariff.")
+            for _, rates in self.energy_components:
+                if len(rates) != len(self.tou_periods) or not all(math.isfinite(r) for r in rates):
+                    raise TariffError("Energy components must cover every TOU block with finite rates.")
+            for i, period in enumerate(self.tou_periods):
+                if not math.isclose(sum(r[i] for _, r in self.energy_components), period.rate_per_kWh, abs_tol=1e-9):
+                    raise TariffError("Energy components must sum to each combined TOU rate.")
         if not self.tou_periods:
             raise TariffError(
                 f"Tariff {self.tariff_id!r} defines no TOU periods."
@@ -483,7 +497,7 @@ class TariffDefinition:
 
         return split
 
-    def customer_charge_for(self, billing_days: float) -> float:
+    def customer_charge_for(self, billing_days: float, *, days_in_month: int | None = None) -> float:
         """Customer charge for one meter over ``billing_days`` days."""
 
         if billing_days < 0:
@@ -493,7 +507,11 @@ class TariffDefinition:
             return self.daily_customer_charge * billing_days
 
         if self.monthly_customer_charge is not None:
-            # A monthly charge is prorated on a 30-day month.
+            if self.calendar_month_customer_charge:
+                if days_in_month not in (28, 29, 30, 31):
+                    raise TariffError("Calendar-month charges require the billing month's length.")
+                return self.monthly_customer_charge * billing_days / days_in_month
+            # Legacy monthly charges retain their existing 30-day convention.
             return self.monthly_customer_charge * (billing_days / 30.0)
 
         # A schedule whose only fixed provision is a minimum bill adds
