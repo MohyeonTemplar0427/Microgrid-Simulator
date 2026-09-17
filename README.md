@@ -46,8 +46,14 @@ Ten major components, each one a package under `src/`.
 
 ### 1. Application and simulation workflow — [`src/simulation/`](src/simulation)
 Provides desktop and console interfaces, collects simulation settings,
-coordinates analyses, and displays results. Use the local GUI for the current
-version; later updates will move these functions to the web.
+coordinates analyses, and displays results. A local browser application now
+supports location-based historical weather and clear-sky PV studies, preserves
+legacy CSV studies, and runs the same engine in isolated worker processes.
+It returns weather, solar, comparison, cost, dispatch, and AC validation tables.
+Launch it with `/usr/local/bin/python3 -m src.local_web.server` and open
+<http://127.0.0.1:8765>. See [Local web application](docs/Local_Web_Application.md)
+for setup, saved studies, and engine snapshot behavior. See also the [candidate ESS catalog and annual solar optimization](docs/ESS_Equipment_Catalog.md). The Tkinter GUI remains
+available for the broader set of existing profile controls.
 
 ### 2. Load and solar profiles — [`src/profiles/`](src/profiles)
 Creates building demand and PV generation profiles from synthetic inputs,

@@ -456,8 +456,16 @@ def apply_dispatch_operating_point(
         raise ValueError("Load power must be finite and nonnegative.")
     if not math.isfinite(battery_net_injection_kw):
         raise ValueError("Battery power must be finite.")
-    if battery_capacity_kWh <= 0 or not 0 <= battery_soc_kWh <= battery_capacity_kWh:
+    # Convex solvers can return tiny residuals at an active energy bound.
+    # Clamp only sub-milliwatt-hour roundoff for the replay state, retaining
+    # the original dispatch table. Real violations and nonfinite values fail.
+    energy_tolerance_kwh = 1e-6
+    if (not math.isfinite(battery_capacity_kWh) or battery_capacity_kWh <= 0
+            or not math.isfinite(battery_soc_kWh)
+            or battery_soc_kWh < -energy_tolerance_kwh
+            or battery_soc_kWh > battery_capacity_kWh + energy_tolerance_kwh):
         raise ValueError("Battery Energy must be between zero and capacity.")
+    battery_soc_kWh = min(battery_capacity_kWh, max(0.0, battery_soc_kWh))
     points = inverter_setpoints(
         dispatch_row, replay_inverters(pv_rated_kw, pv_replay), pv_replay
     )

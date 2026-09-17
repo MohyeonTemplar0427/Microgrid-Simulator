@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "catalog_revision": "2026-09-16.2",
+  "reviewed_on": "2026-09-16",
+  "scope": "The three currently cataloged North American equipment choices; not the complete CEC list.",
+  "operating_defaults": {
+    "quantity": 1,
+    "initial_soc": 0.5,
+    "backup_reserve": 0.2
+  },
+  "usage": "Only records with ready=true have usable engine battery parameters. Assumptions must be reviewed. Metadata such as temperature limits is not an implemented derating model.",
+  "resolutions": [
+    {
+      "resolver_version": "ac-equivalent-v1",
+      "catalog_revision": "2026-09-16.2",
+      "equipment": {
+        "id": "tesla.powerwall2.1092170.na",
+        "catalog_revision": "2026-09-16.2",
+        "manufacturer": "Tesla",
+        "model": "Powerwall 2 AC — 1092170-xx-y",
+        "region": "North America, 120/240 V",
+        "market": "residential",
+        "architecture": {
+          "value": "ac_connected",
+          "status": "published",
+          "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+          "document_revision": "NA-BACKUP-2024-07-02",
+          "section": "p.1 performance; footnotes 1,3",
+          "retrieved_on": "2026-09-16",
+          "note": ""
+        },
+        "fields": {
+          "usable_energy_kwh": {
+            "value": 13.5,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "total_energy_kwh": {
+            "value": 14,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "energy_basis": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1: usable energy, measurement boundary not explicitly stated",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "charge_kw": {
+            "value": 5,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "discharge_kw": {
+            "value": 5,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "inverter_kva": {
+            "value": 5.8,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "round_trip_efficiency": {
+            "value": 0.9,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "efficiency_path": {
+            "value": "ac_battery_ac",
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "voltage_v": {
+            "value": [
+              120,
+              240
+            ],
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "phase": {
+            "value": "split_phase",
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "frequency_hz": {
+            "value": 60,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "max_units": {
+            "value": 10,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/InstallManual/BackupGateway/2/en-us/GUID-64A56007-BAD1-4482-90DE-C957756553CA.html",
+            "document_revision": "undated live manual; retrieved 2026-09-16",
+            "section": "Service Type and Capacity Requirements",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "surge_kw": {
+            "value": 7,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1: 10 seconds off-grid/backup",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "test_conditions": {
+            "value": "25 C, 3.3 kW charge/discharge; efficiency at beginning of life",
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 performance; footnotes 1,3",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "operating_temperature_c": {
+            "value": [
+              -20,
+              50
+            ],
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 environmental specifications",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "thermal_derating_note": {
+            "value": "Derating possible below 10 C or above 43 C; no numerical curve provided",
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/2/Datasheet/en-us/Powerwall-2-Datasheet.pdf",
+            "document_revision": "NA-BACKUP-2024-07-02",
+            "section": "p.1 footnote 5",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          }
+        },
+        "discovery": {
+          "value": "AC Powerwall 1092170-XX-Y",
+          "status": "published",
+          "source_url": "https://solarequipment.energy.ca.gov/Home/DownloadtoExcel?filename=EnergyStorage",
+          "document_revision": "2026-09-11",
+          "section": "Model Number",
+          "retrieved_on": "2026-09-16",
+          "note": ""
+        },
+        "unresolved": [
+          "Usable-energy AC versus internal measurement boundary requires an explicit user assumption. Warranty footnote 'AC output' describes throughput, not capacity."
+        ],
+        "configuration_note": "Identical complete AC units with one Backup Gateway, maximum 10. Site impedance, panel/gateway limits and installation approval are not simulated."
+      },
+      "selection": {
+        "equipment_id": "tesla.powerwall2.1092170.na",
+        "quantity": 1,
+        "initial_soc": 0.5,
+        "backup_reserve": 0.2,
+        "capacity_basis": null,
+        "efficiency_approximation": false,
+        "overrides": {}
+      },
+      "ready": false,
+      "battery": null,
+      "requirements": [
+        "Choose an explicit usable-energy measurement assumption; the source does not resolve it.",
+        "Accept equal square-root splitting of AC round-trip efficiency; one-way efficiencies are not published measurements."
+      ],
+      "assumptions": [
+        "Equipment voltage/phase metadata is retained, but OpenDSS uses the representative balanced 480 V circuit. This is not residential split-phase installation validation. Battery terminal P is replayed at Q=0; physical inverter kVA and site/gateway constraints are not validated.",
+        "Identical complete AC units with one Backup Gateway, maximum 10. Site impedance, panel/gateway limits and installation approval are not simulated."
+      ],
+      "provenance": {}
+    },
+    {
+      "resolver_version": "ac-equivalent-v1",
+      "catalog_revision": "2026-09-16.2",
+      "equipment": {
+        "id": "franklinwh.apower2.apr10k15v2us.240",
+        "catalog_revision": "2026-09-16.2",
+        "manufacturer": "FranklinWH",
+        "model": "aPower 2 — APR-10K15V2-US / aPower X-20",
+        "region": "US/Canada, selected 120/240 V variant",
+        "market": "residential",
+        "architecture": {
+          "value": "ac_connected",
+          "status": "published",
+          "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+          "document_revision": "2025-12-16",
+          "section": "p.1 performance; footnotes 1,2",
+          "retrieved_on": "2026-09-16",
+          "note": ""
+        },
+        "fields": {
+          "usable_energy_kwh": {
+            "value": 15,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "total_energy_kwh": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "not stated",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "energy_basis": {
+            "value": "ac_deliverable",
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "charge_kw": {
+            "value": 8,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "discharge_kw": {
+            "value": 10,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "inverter_kva": {
+            "value": 11.5,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "round_trip_efficiency": {
+            "value": 0.9,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "efficiency_path": {
+            "value": "ac_battery_ac",
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "voltage_v": {
+            "value": [
+              120,
+              240
+            ],
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "phase": {
+            "value": "2 W+N+PE",
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "frequency_hz": {
+            "value": 60,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "max_units": {
+            "value": 15,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "surge_kw": {
+            "value": 15,
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1: 10 seconds off-grid; 11.5 kVA configuration",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "test_conditions": {
+            "value": "25 C, 3 kW charge/discharge, beginning of life; 8/10 kW ratings require 11.5 kVA setting",
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 performance; footnotes 1,2",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "chemistry": {
+            "value": "LFP",
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.1 battery chemistry",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "operating_temperature_c": {
+            "value": [
+              -20,
+              50
+            ],
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.2 environmental specifications",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "thermal_derating_note": {
+            "value": "Operation up to 55 C at 5 kW derated output; no full numerical curve provided",
+            "status": "published",
+            "source_url": "https://www.franklinwh.com/document/apower-2-datasheet",
+            "document_revision": "2025-12-16",
+            "section": "p.2 environmental specifications",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          }
+        },
+        "discovery": {
+          "value": "aPower Xyyy {240V, 10kW}",
+          "status": "published",
+          "source_url": "https://solarequipment.energy.ca.gov/Home/DownloadtoExcel?filename=EnergyStorage",
+          "document_revision": "2026-09-11",
+          "section": "Model Number",
+          "retrieved_on": "2026-09-16",
+          "note": ""
+        },
+        "unresolved": [
+          "CEC also lists other Xyyy powers/voltages. They are not interchangeable with this SKU/configuration.",
+          "Site-specific aGate/service throughput limits remain installation inputs."
+        ],
+        "configuration_note": "Identical complete AC units, up to 15 per aGate. Battery-only, mixed-product and 208 V arrangements are deferred."
+      },
+      "selection": {
+        "equipment_id": "franklinwh.apower2.apr10k15v2us.240",
+        "quantity": 1,
+        "initial_soc": 0.5,
+        "backup_reserve": 0.2,
+        "capacity_basis": null,
+        "efficiency_approximation": false,
+        "overrides": {}
+      },
+      "ready": false,
+      "battery": null,
+      "requirements": [
+        "Accept equal square-root splitting of AC round-trip efficiency; one-way efficiencies are not published measurements."
+      ],
+      "assumptions": [
+        "Equipment voltage/phase metadata is retained, but OpenDSS uses the representative balanced 480 V circuit. This is not residential split-phase installation validation. Battery terminal P is replayed at Q=0; physical inverter kVA and site/gateway constraints are not validated.",
+        "Identical complete AC units, up to 15 per aGate. Battery-only, mixed-product and 208 V arrangements are deferred."
+      ],
+      "provenance": {}
+    },
+    {
+      "resolver_version": "ac-equivalent-v1",
+      "catalog_revision": "2026-09-16.2",
+      "equipment": {
+        "id": "tesla.powerwall3.1707000.na",
+        "catalog_revision": "2026-09-16.2",
+        "manufacturer": "Tesla",
+        "model": "Powerwall 3 — 1707000-xx-y (informational)",
+        "region": "US/Canada",
+        "market": "residential",
+        "architecture": {
+          "value": "hybrid_shared_inverter",
+          "status": "published",
+          "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+          "document_revision": "2025 edition",
+          "section": "p.1 integrated solar and battery system",
+          "retrieved_on": "2026-09-16",
+          "note": ""
+        },
+        "fields": {
+          "nominal_ac_energy_kwh": {
+            "value": 13.5,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 system specifications; footnote 1",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "usable_energy_kwh": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 calls energy nominal AC; usable-window mapping requires review",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "total_energy_kwh": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "not stated",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "energy_basis": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "usable-window mapping unresolved",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "charge_kw": {
+            "value": 5,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 continuous AC charging, no Expansion",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "discharge_kw": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 lists system AC output settings; separate battery-only mapping not established",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "inverter_kva": {
+            "value": 11.5,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 selected maximum on-grid inverter setting",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "shared_ac_output_kw": {
+            "value": 11.5,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 selected maximum on-grid system output",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "ac_output_settings_kw": {
+            "value": [
+              5.8,
+              7.6,
+              10,
+              11.5
+            ],
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 system specifications; footnote 1",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "round_trip_efficiency": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "AC-to-battery-to-AC efficiency not stated",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "efficiency_path": {
+            "value": null,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "AC-to-battery-to-AC efficiency not stated",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "solar_battery_home_efficiency": {
+            "value": 0.89,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 footnotes 1,4; solar shifting path only",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "solar_home_efficiency": {
+            "value": 0.975,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 footnote 5; CEC-weighted PV conversion",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "voltage_v": {
+            "value": [
+              120,
+              240
+            ],
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 system specifications; footnote 1",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "phase": {
+            "value": "split_phase",
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 system specifications; footnote 1",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "frequency_hz": {
+            "value": 60,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 system specifications; footnote 1",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "max_units": {
+            "value": 4,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 complete Powerwall 3 units",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "max_expansion_units": {
+            "value": 3,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 maximum 3 Expansions, 7 total units",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "charge_with_expansion_kw": {
+            "value": 8,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 with up to 3 Expansion units",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "pv_stc_input_kw": {
+            "value": 20,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.3 solar specifications",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "pv_mppt_voltage_range_v": {
+            "value": [
+              60,
+              480
+            ],
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.3 solar specifications",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "mppt_count": {
+            "value": 6,
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.3 solar specifications",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "operating_temperature_c": {
+            "value": [
+              -20,
+              50
+            ],
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.3 environmental specifications",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "thermal_derating_note": {
+            "value": "Derating possible above 40 C; no numerical curve provided",
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.3 footnote 9",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          },
+          "test_conditions": {
+            "value": "25 C, 3.3 kW charge/discharge, beginning of life; efficiency paths must remain separate",
+            "status": "published",
+            "source_url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+            "document_revision": "2025 edition",
+            "section": "p.2 system specifications; footnote 1",
+            "retrieved_on": "2026-09-16",
+            "note": ""
+          }
+        },
+        "discovery": null,
+        "unresolved": [
+          "Shared PV/storage inverter constraints are not implemented.",
+          "Published solar-to-battery-to-home efficiency is not AC-to-AC battery efficiency.",
+          "Nominal AC energy and system AC output are retained separately from unresolved usable-window and battery-only discharge mappings."
+        ],
+        "configuration_note": "Data-only record for 11.5 kW on-grid setting, no Expansion. Unsupported by current resolver; Expansions do not add inverter power."
+      },
+      "selection": {
+        "equipment_id": "tesla.powerwall3.1707000.na",
+        "quantity": 1,
+        "initial_soc": 0.5,
+        "backup_reserve": 0.2,
+        "capacity_basis": null,
+        "efficiency_approximation": false,
+        "overrides": {}
+      },
+      "ready": false,
+      "battery": null,
+      "requirements": [
+        "Shared PV/storage inverter constraints are not implemented.",
+        "Published solar-to-battery-to-home efficiency is not AC-to-AC battery efficiency.",
+        "Nominal AC energy and system AC output are retained separately from unresolved usable-window and battery-only discharge mappings."
+      ],
+      "assumptions": [
+        "Equipment voltage/phase metadata is retained, but OpenDSS uses the representative balanced 480 V circuit. This is not residential split-phase installation validation. Battery terminal P is replayed at Q=0; physical inverter kVA and site/gateway constraints are not validated.",
+        "Data-only record for 11.5 kW on-grid setting, no Expansion. Unsupported by current resolver; Expansions do not add inverter power."
+      ],
+      "provenance": {}
+    }
+  ]
+}

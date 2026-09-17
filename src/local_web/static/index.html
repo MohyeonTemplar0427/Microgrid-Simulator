@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Microgrid Simulator · Local studies</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header class="masthead"><a class="brand" href="/" aria-label="Microgrid Simulator home"><span class="brand-mark">M</span><span>Microgrid <strong>Simulator</strong></span></a><span class="local-badge"><span class="dot"></span> Local workspace</span></header>
+<main>
+  <div class="intro"><div><p class="eyebrow">STUDY WORKSPACE</p><h1>From energy inputs<br>to operating decisions.</h1><p class="subtitle">Compare battery strategies, operating costs, and network feasibility.</p></div><div class="intro-note"><span class="note-number">01</span><p>Configure a study.<br>Run your engine.<br>Explore the results.</p></div></div>
+  <div id="connection" class="notice" role="status" hidden></div>
+  <div class="workspace">
+    <section class="panel configuration" aria-labelledby="configure-title">
+      <div class="panel-heading"><div><p class="eyebrow">INPUTS</p><h2 id="configure-title">Configure study</h2></div><span class="step">01</span></div>
+      <form id="study-form">
+        <button id="new-site" type="button" class="secondary">New location study</button><p id="legacy-note" class="hint" hidden>These saved settings use the original sample inputs. Start a new location study to use weather-derived PV.</p>
+        <label>Study name<input name="name" maxlength="120" required></label>
+        <fieldset data-site><legend>Microgrid location</legend>
+          <label>Search city or address<input name="location_query" maxlength="300"></label><button id="search-location" class="secondary" type="button">Find location</button>
+          <p class="hint">Search sends this location to OpenStreetMap Nominatim. <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a></p>
+          <p id="location-status" class="hint" role="status"></p>
+          <div class="form-grid"><label>Latitude<input name="latitude" type="number" step="any" min="-90" max="90"></label><label>Longitude<input name="longitude" type="number" step="any" min="-180" max="180"></label></div>
+          <p id="utility-suggestion" class="hint"></p>
+          <label>Electricity service<select name="utility"><option value="unconfirmed">Account not confirmed</option><option value="pge">Confirmed PG&E bundled service</option><option value="other">CCA or another utility</option></select></label>
+        </fieldset>
+        <fieldset><legend>Time horizon</legend><p id="dataset-info" class="hint"></p><div class="form-grid"><label>Start date<input name="start_date" type="date" required></label><label>End date · inclusive<input name="end_date" type="date" required></label></div><div class="form-grid"><label>Interval<select name="timestep_minutes"><option value="5">5 minutes</option><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="60">60 minutes</option></select></label><label>Timezone<input name="timezone" required></label></div></fieldset>
+        <fieldset data-site><legend>Solar weather</legend>
+          <label>Weather source<select name="weather_source"><option value="clear_sky">Clear-sky estimate</option><option value="nsrdb">Historical weather · NSRDB</option></select></label>
+          <div id="clear-sky-settings"><p class="hint">Estimates cloud-free irradiance for your site and dates. Not observed weather or a forecast.</p><div class="form-grid"><label>Assumed air temp · °C<input name="temperature_c" type="number" step="any" min="-95" max="65"></label><label>Assumed wind · m/s<input name="wind_speed_m_per_s" type="number" step="any" min="0" max="120"></label></div></div>
+          <div id="historical-settings" hidden><p class="hint">Contiguous United States · 2018–2025. Use dates within one historical year. Retrieves and caches that year at your chosen interval. No year shifting or fallback estimates.</p><p id="credentials-note" class="hint"></p><button id="retrieve-weather" class="secondary" type="button">Retrieve historical weather</button></div>
+          <p id="weather-status" class="hint" role="status"></p>
+        </fieldset>
+        <fieldset><legend>PV</legend>
+          <label>PV AC capacity · kW<input name="pv_capacity_kw" type="number" step="any" min="0" required></label>
+          <div data-site><label>PV DC nameplate · kW<input name="dc_capacity_kw" type="number" min="0" step="any"></label><div class="form-grid"><label>Panel tilt · degrees<input name="tilt_degrees" type="number" min="0" max="90" step="any"></label><label>Azimuth · degrees<input name="azimuth_degrees" type="number" min="0" max="359.999" step="any"></label></div><p class="hint">Azimuth: 180° south, 90° east. Weather and panel orientation determine available solar generation.</p><details class="help"><summary>PV losses & efficiency</summary><label>System losses · fraction<input name="system_losses_fraction" type="number" min="0" max="0.999" step="any"></label><label>PV inverter efficiency<input name="inverter_efficiency" type="number" min="0.001" max="1" step="any"></label></details></div><p id="pv-note" class="hint"></p>
+          <div id="orientation-controls" hidden><label>Full-year historical weather<select name="orientation_year"></select></label><p class="hint">Searches every whole-degree orientation for maximum annual AC energy using NSRDB hourly weather. Retrieves the year if needed; may take several minutes. Roof constraints and directional shading are not included.</p><button id="optimize-orientation" type="button" class="secondary">Optimize tilt & azimuth</button><p id="orientation-status" class="hint" role="status"></p></div>
+        </fieldset>
+        <fieldset><legend>Battery & inverter</legend>
+          <div id="ess-controls" hidden>
+            <label>Battery configuration<select name="ess_mode"><option value="manual">Manual configuration</option><option value="equipment">Select equipment</option></select></label>
+            <div id="ess-selection" hidden>
+              <label>Manufacturer / model<select name="equipment_id"></select></label>
+              <div class="form-grid"><label>Complete system units<input name="ess_quantity" type="number" min="1" step="1" value="1"></label><label>Initial usable charge · fraction<input name="ess_initial" type="number" min="0" max="1" step="any" value="0.5"></label></div>
+              <label>Backup reserve · fraction<input name="ess_reserve" type="number" min="0" max="0.999" step="any" value="0.2"></label>
+              <label>Energy basis if unresolved<select name="ess_basis"><option value="">Use published basis / unresolved</option><option value="ac_deliverable">Assume usable energy delivered at AC</option><option value="usable_internal">Assume usable internal battery energy</option></select></label>
+              <label class="checkbox"><input name="ess_efficiency" type="checkbox"> Accept equal one-way efficiency approximation from AC round-trip efficiency</label>
+              <details class="help"><summary>Optional power derates</summary><p class="hint">Aggregate kW across selected units. Leave blank for published continuous ratings. Overrides are saved and labelled.</p><label>Override maximum charge · kW<input name="ess_charge_override" type="number" step="any" min="0.001"></label><label>Override maximum discharge · kW<input name="ess_discharge_override" type="number" step="any" min="0.001"></label></details>
+              <button id="resolve-ess" type="button" class="secondary">Review & apply equipment</button>
+              <p id="ess-review" class="hint" role="status"></p>
+              <details class="help"><summary>Published specifications & sources</summary><div id="ess-facts"></div></details>
+            </div>
+          </div>
+          <h3 class="settings-subheading">Battery storage</h3>
+          <div class="form-grid"><label>Battery capacity · kWh<input name="capacity_kWh" type="number" step="any" min="0.001" required></label><label>Initial energy · kWh<input name="energy_kWh" type="number" step="any" min="0" required></label></div>
+          <details class="help"><summary>State-of-charge limits</summary><div class="form-grid"><label>Minimum SOC · fraction<input name="SOC_min" type="number" min="0.001" max="1" step="any" required></label><label>Maximum SOC · fraction<input name="SOC_max" type="number" min="0.001" max="1" step="any" required></label></div></details>
+          <h3 class="settings-subheading">Power conversion</h3>
+          <p class="hint">Effective limits and efficiencies for the combined battery/inverter system.</p>
+          <div class="form-grid"><label>Max charge · kW<input name="max_charge_kw" type="number" step="any" min="0.001" required></label><label>Max discharge · kW<input name="max_discharge_kw" type="number" step="any" min="0.001" required></label><label>Charge efficiency<input name="charge_efficiency" type="number" min="0.001" max="1" step="any" required></label><label>Discharge efficiency<input name="discharge_efficiency" type="number" min="0.001" max="1" step="any" required></label></div>
+        </fieldset>
+        <fieldset data-site><legend>Building load</legend><label>Load model<select name="load_mode"><option value="constant">Constant demand</option><option value="synthetic">Synthetic daily pattern</option></select></label><label id="load-power-label">Demand / synthetic peak · kW<input name="load_power_kw" type="number" min="0.001" step="any"></label><label id="archetype-label">Building type<select name="archetype"><option value="office">Office</option><option value="retail">Retail</option><option value="school">School</option><option value="industrial">Industrial</option><option value="residential">Residential</option><option value="multifamily">Multifamily</option></select></label><p class="hint">An explicit load assumption; demand is not inferred from the site's weather.</p></fieldset>
+        <fieldset><legend>Economics</legend><label>Utility tariff<select name="tariff_id"><option value="">Flat energy-price assumption · no utility bill</option></select></label><p id="price-note" class="hint">Single PCC meter. A selected tariff supplies both dispatch energy prices and billing. Tariff dates must cover the study.</p><div data-site><label id="fixed-price-label">Assumed energy price · $/kWh<input name="fixed_price_per_kWh" type="number" min="0" step="any"></label><label>Assumed grid carbon · gCO₂/kWh<input name="carbon_intensity_g_per_kWh" type="number" min="0" step="any"></label><p class="hint">Carbon intensity is a constant assumption, not retrieved regional data.</p></div><div class="form-grid"><label>Carbon weight · $/kgCO₂<input name="carbon_weight" type="number" min="0" step="any" required></label><label>Degradation · $/kWh<input name="degradation_cost_per_kWh" type="number" min="0" step="any" required></label></div></fieldset>
+        <fieldset><legend>Compare strategies</legend><div id="strategies" class="strategy-list"></div></fieldset>
+        <div id="form-error" class="notice error" role="alert" hidden></div><button id="run-button" class="primary" type="submit" disabled>Run simulation <span aria-hidden="true">↗</span></button><p class="hint run-hint">Runs on this computer. Keep the local service running; you may close this browser tab.</p>
+      </form>
+    </section>
+    <div class="output-column">
+      <section class="panel results" aria-labelledby="results-title">
+        <div class="panel-heading"><div><p class="eyebrow">OUTPUTS</p><h2 id="results-title">Study results</h2></div><span id="status-badge" class="status">Ready</span></div>
+        <div id="empty-state"><div class="empty-grid" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div><h3>Your next study starts here.</h3><p>Run a location study to compare five strategies.<br>Results will include costs, interval dispatch,<br>and OpenDSS network validation.</p><div class="empty-tags"><span>Operating cost</span><span>Emissions</span><span>AC feasibility</span></div></div>
+        <div id="study-output" hidden>
+          <div class="run-heading"><h3 id="run-name"></h3><p id="run-meta" class="hint"></p></div>
+          <p id="progress" role="status" aria-live="polite"></p>
+          <div id="run-error" class="notice error" role="alert" hidden></div>
+          <div class="links"><button id="reuse" class="secondary" type="button">Load these settings</button><a id="request-download" class="text-link">Download settings</a><a id="manifest-download" class="text-link" hidden>Result manifest</a></div>
+          <div id="results-content" hidden>
+            <div class="table-toolbar"><label>Result table<select id="table-select"></select></label><a id="csv-download" class="secondary">Download CSV ↓</a></div>
+            <label class="checkbox compact"><input id="all-columns" type="checkbox"> Show all comparison columns</label>
+            <div id="table-container" class="table-scroll" tabindex="0" aria-label="Simulation result table"></div>
+            <div class="pagination"><span id="row-count" class="hint"></span><div><button id="previous" class="secondary" type="button">← Previous</button><button id="next" class="secondary" type="button">Next →</button></div></div>
+            <details id="warnings" class="warnings" open><summary>Assumptions & warnings</summary><ul id="warning-list"></ul></details>
+          </div>
+        </div>
+      </section>
+      <section class="panel history-panel" aria-labelledby="history-title"><div class="panel-heading"><div><p class="eyebrow">SAVED LOCALLY</p><h2 id="history-title">Recent studies</h2></div><button id="refresh-history" class="text-button" type="button">Refresh ↻</button></div><div id="history"><p class="hint">No studies yet. Your completed runs will appear here.</p></div></section>
+      <footer><span class="dot"></span><span id="engine-info">Connecting to the local engine…</span></footer>
+    </div>
+  </div>
+</main>
+</body></html>

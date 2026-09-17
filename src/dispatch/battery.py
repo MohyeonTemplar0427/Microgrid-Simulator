@@ -1,4 +1,5 @@
 from dataclasses import dataclass,field
+import math
 
 @dataclass
 class Battery:
@@ -19,6 +20,12 @@ class Battery:
 
     def __post_init__(self) -> None:
 
+        for name in ("capacity_kWh", "SOC_min", "SOC_max", "energy_kWh", "max_charge_kw", "max_discharge_kw", "charge_efficiency", "discharge_efficiency"):
+            value = getattr(self, name)
+            if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+                raise ValueError(f"{name} must be finite.")
+        if not 0 <= self.SOC_min < self.SOC_max <= 1:
+            raise ValueError("SOC must satisfy 0 <= minimum < maximum <= 1.")
         if self.capacity_kWh <= 0:
             raise ValueError("Capacity must be positive.")
 
@@ -26,8 +33,8 @@ class Battery:
         self.maximum_energy_kWh = self.capacity_kWh * self.SOC_max
         self.SOC_range = self.SOC_max - self.SOC_min
 
-        if self.minimum_energy_kWh <= 0:
-            raise ValueError("Minimumenergy must be positive.")
+        if self.minimum_energy_kWh < 0:
+            raise ValueError("Minimum energy must be non-negative.")
         
         if self.maximum_energy_kWh <= 0:
             raise ValueError("Maximumenergy must be positive.")
@@ -82,6 +89,9 @@ class Battery:
         discharge_kw: float,
         dt_hours: float,
     ) -> None:
+        for value in (charge_kw, discharge_kw, dt_hours):
+            if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+                raise ValueError("Power and timestep must be finite numbers.")
         if charge_kw < 0:
             raise ValueError("Charge power must be non-negative.")
 
