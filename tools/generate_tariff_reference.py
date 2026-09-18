@@ -26,6 +26,8 @@ OUTPUT_PATH = REPOSITORY_ROOT / "docs" / "PGE_Tariff_Reference.md"
 
 # Display order: smallest schedule first, each family's options after its base.
 TARIFF_ORDER = (
+    "pge_b6_secondary_single_phase_bundled_2025_09_01",
+    "pge_b6_secondary_polyphase_bundled_2025_09_01",
     "pge_b1_secondary_single_phase_bundled_2026_03_01",
     "pge_b1_secondary_polyphase_bundled_2026_03_01",
     "pge_b6_secondary_single_phase_bundled_2026_03_01",
@@ -516,7 +518,7 @@ def render_tariff(tariff_id: str) -> list[str]:
 
 
 def build_document() -> str:
-    registered = set(supported_tariffs())
+    registered = {key for key in supported_tariffs() if key.startswith("pge_")}
     missing = registered - set(TARIFF_ORDER)
     if missing:
         raise SystemExit(

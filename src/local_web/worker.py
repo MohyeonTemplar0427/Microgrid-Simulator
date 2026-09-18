@@ -23,7 +23,9 @@ def capabilities():
     from ..billing import get_tariff
     from .contract import DEFAULT_SITE_REQUEST, DEFAULT_CANDIDATE_REQUEST, NSRDB_YEARS
     from ..equipment.ess import search
-    return {"municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
+    from .site_profile import SITE_OPTIONS, SERVICE_CLASSES
+    from .carbon import REGION_MAPPINGS
+    return {"carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
          "service": tariff_service(key),
          "notes": get_tariff(key).notes,
@@ -41,6 +43,9 @@ def execute(directory):
 
     directory = Path(directory)
     request = validate_request(json.loads((directory / "request.json").read_text()))
+    if request["schema_version"] == 5:
+        from .grid_only import execute as execute_grid_only
+        return execute_grid_only(directory, request)
     if request["schema_version"] == 4:
         from .municipal_study import execute_study
         return execute_study(directory, request)

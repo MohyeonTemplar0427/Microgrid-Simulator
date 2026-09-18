@@ -21,8 +21,8 @@
       <label class="checkbox"><input name="delivery_confirmed" type="checkbox"> I verified electricity delivery from the stated evidence.</label></div>
 <button type="button" class="secondary" id="municipal-resolve">Save account confirmation</button><p id="municipal-resolution" class="hint" role="status"></p>`);
   panel(8,`
-      <label>Customer class<select name="customer_class"><option value="commercial">Commercial</option><option value="residential">Residential dwelling</option><option value="industrial">Industrial</option></select></label>
-      <label>Municipal rate schedule<select name="tariff_id"></select></label><p class="hint" id="municipal-coverage"></p>
+      <label hidden>Customer class from Step 2<select name="customer_class"><option value="commercial">Commercial</option><option value="residential">Residential dwelling</option><option value="industrial">Industrial</option></select></label>
+      <label>Billing Plan<select name="tariff_id"></select></label><p class="hint" id="municipal-coverage"></p>
       <div class="form-grid"><label>Service phase<select name="phase"><option value="single">Single phase</option><option value="three">Three phase</option></select></label><label>Service voltage<select name="voltage"><option value="secondary">Secondary</option><option value="primary_12kv">12 kV primary</option></select></label></div>
       <label class="checkbox"><input name="rate_confirmed" type="checkbox"> Existing schedule is verified, or explicitly assumed for an alternative-location scenario.</label>
       <label>Schedule confirmation reference<input name="schedule_reference" maxlength="500"></label>
@@ -42,7 +42,7 @@
   panel(9,`<fieldset><legend>Building load</legend>      <label>Native load source<select name="load_mode"><option value="daily_peak">Daily peak assumption</option><option value="constant">Constant assumption</option><option value="csv">Upload 15-minute load CSV</option></select></label>
       <div id="municipal-load-manual"><label>Base load · kW<input name="base_kw" type="number" min="0" step="any"></label><div id="municipal-daily"><label>Daily peak load · kW<input name="peak_kw" type="number" min="0" step="any"></label><div class="form-grid"><label>Peak begins · local hour<input name="peak_start_hour" type="number" min="0" max="23" step="1"></label><label>Peak ends · local hour<input name="peak_end_hour" type="number" min="1" max="24" step="1"></label></div></div></div>
       <label id="municipal-csv" hidden>Load CSV<input name="load_file" type="file" accept=".csv,text/csv"><span class="hint">Exactly timestamp,grid_import_kw columns. Timestamp includes timezone offset. Complete cycle, no PV or export.</span></label><p id="municipal-csv-status" class="hint"></p>
-    </fieldset><p class="hint">Compare no battery with cost-optimal storage, including throughput degradation. The battery finishes at its starting energy. No AC network validation is performed.</p>`);
+    </fieldset><p class="hint" id="municipal-strategy-note">Compare no battery with cost-optimal storage, including throughput degradation. The battery finishes at its starting energy. No AC network validation is performed.</p>`);
   panel(3,`<p class="hint">Municipal billing requires 15-minute intervals in America/Los_Angeles. AMP: complete 27–33 day cycle. SVP: complete calendar month, within verified coverage.</p><label class="checkbox"><input name="cycle_confirmed" type="checkbox">These are complete billing-cycle boundaries, or explicit scenario assumptions.</label>`);
   panel(4,`<p class="hint">Weather is not used for the supported municipal storage study. Solar and standby billing are not yet implemented for AMP/SVP.</p>`);
   panel(5,`<p class="hint">Onsite generation and exports are unavailable for municipal billing until the applicable standby and settlement rules are implemented. This study uses grid-charged storage only.</p>`);
@@ -63,10 +63,12 @@
     for(const i of [4,5])page(i).querySelector('.default-actions').hidden=enabled;
     if(enabled){field('ess_mode').value='manual';for(const input of [field('capacity_kWh'),field('energy_kWh'),field('SOC_min'),field('SOC_max'),field('max_charge_kw'),field('max_discharge_kw'),field('charge_efficiency'),field('discharge_efficiency')])input.readOnly=false;}
     update();
+    updateEquipmentChoice();
   }
   const batteryLabels={capacity_kWh:1,energy_kWh:1,max_charge_kw:1,max_discharge_kw:1,SOC_min:1,SOC_max:1,charge_efficiency:1,discharge_efficiency:1};
   function rate(){return caps?.tariffs.find(t=>t.id===f('tariff_id').value);}
   function tariffs(saved){
+    f("customer_class").value=siteCustomerClass()||"commercial";
     const residential=f('customer_class').value==='residential';
     const choices=(caps?.tariffs||[]).filter(t=>t.utility===f('utility').value && (t.schedule==='D-1')===residential);
     f('tariff_id').replaceChildren(...choices.map(t=>option(t.id,`${t.utility.toUpperCase()} ${t.schedule}`)));
@@ -85,6 +87,9 @@
   }
   function update(){
     const r=rate(),amp=f('utility').value==='amp',s=r?.schedule;
+    for(const opt of f('phase').options)opt.disabled=opt.hidden=s==='D-1' && opt.value!=='single';
+    for(const opt of f('voltage').options)opt.disabled=opt.hidden=!amp && ['D-1','C-1'].includes(s) && opt.value==='primary_12kv';
+    for(const name of ['phase','voltage'])if(f(name).selectedOptions[0]?.disabled)f(name).value='';
     el('municipal-mode-note').textContent=f('mode').value==='actual_service'?'Actual billing requires saved bill/utility-confirmed delivery and account facts.':'Hypothetical alternative-location comparison. This does not establish utility service at the original site.';
     el('municipal-evidence').hidden=f('mode').value!=='actual_service';
     el('municipal-resolve').hidden=f('mode').value!=='actual_service';
@@ -169,11 +174,11 @@
   f('load_file').addEventListener('change',async()=>{csvText=null;const file=f('load_file').files[0];if(file){const text=await file.text();if(f('load_file').files[0]!==file)return;csvText=text;el('municipal-csv-status').textContent=`Loaded ${file.name}; interval validation runs before submission.`;}});
   async function submit(){
     await check();
-    const battery=Object.fromEntries(Object.keys(batteryLabels).map(k=>[k,numeric(k)]));
+    const battery=gridOnly()?null:Object.fromEntries(Object.keys(batteryLabels).map(k=>[k,numeric(k)]));
     let load;
     if(f('load_mode').value==='csv'){if(!csvText)throw new Error('Choose a load CSV.');load={mode:'csv',csv:csvText};}
     else{load={mode:f('load_mode').value,base_kw:numeric('base_kw')};if(load.mode==='daily_peak')for(const k of ['peak_kw','peak_start_hour','peak_end_hour'])load[k]=numeric(k);}
-    return api('/api/v1/municipal/studies',{schema_version:4,name:f('name').value,resolution_id:savedResolution(),mode:f('mode').value,arrangement:arrangement(),account:account(),start_date:f('start_date').value,end_date:f('end_date').value,timezone:field('timezone').value,timestep_minutes:Number(field('timestep_minutes').value),battery,load,degradation_cost_per_kWh:numeric('degradation_cost_per_kWh')});
+    return api('/api/v1/municipal/studies',{schema_version:4,carbon:carbonSettings(),grid_only:gridOnly(),site_profile:siteProfile(),name:f('name').value,resolution_id:savedResolution(),mode:f('mode').value,arrangement:arrangement(),account:account(),start_date:f('start_date').value,end_date:f('end_date').value,timezone:field('timezone').value,timestep_minutes:Number(field('timestep_minutes').value),battery:gridOnly()?null:battery,load,degradation_cost_per_kWh:gridOnly()?0:numeric('degradation_cost_per_kWh')});
   }
   function validate(page){
     if(!active())return true;
@@ -191,12 +196,16 @@
   function defaults(page){
     if(!active())return;
     // Fill simulation assumptions only. Never fabricate account history or confirmations.
-    const values={base_kw:20,peak_kw:90,peak_start_hour:17,peak_end_hour:19};
+    const residential=siteCustomerClass()==='residential';
+    const values={base_kw:residential?1:20,peak_kw:residential?3:90,peak_start_hour:17,peak_end_hour:19};
     for(const [k,v]of Object.entries(values))if(page.contains(f(k))&&!f(k).value)f(k).value=v;
     if(page.dataset.step==='3'){if(!field('timestep_minutes').value)field('timestep_minutes').value='15';if(!field('timezone').value)field('timezone').value='America/Los_Angeles';peakFields();}
   }
   function restore(request){
     fillForm(defaultSettings(),false);
+    field('pv_choice').value=request.grid_only?'no':'storage';
+    restoreSiteProfile(request.site_profile || (request.account.customer_class==='residential'
+      ? {site_type:'residential',subtype:null} : {site_type:'commercial',subtype:null}));
     locationGeneration++;clearTimeout(utilityTimer);
     setLocationChoices({...request.resolution,resolution_id:request.resolution_id},request.arrangement.delivery_utility);
     siteLabel=`Coordinates ${request.resolution.coordinates.latitude}, ${request.resolution.coordinates.longitude}`;field('location_query').value=siteLabel;el('location-status').textContent=siteLabel;
@@ -214,7 +223,11 @@
     else for(const k of ['base_kw','peak_kw','peak_start_hour','peak_end_hour'])f(k).value=load[k]??'';
     el('municipal-csv-status').textContent=csvText?'Saved interval inputs restored.':'';revision++;sync();resetWizard();
   }
+  function clearLoad(){
+    csvText=null;f('load_file').value='';el('municipal-csv-status').textContent='';
+    for(const name of ['base_kw','peak_kw','peak_start_hour','peak_end_hour'])f(name).value='';
+  }
   function reset(){for(const input of form.querySelectorAll('[name^=m_]')){if(input.type==='checkbox')input.checked=false;else if(input.tagName==='SELECT')input.selectedIndex=0;else input.value='';}csvText=null;el('municipal-csv-status').textContent='';el('municipal-peak-fields').replaceChildren();invalidateResolution();sync();}
-  window.municipalUI={reset,active,sync,serviceChanged,invalidateResolution,acceptResolution,validate,defaults,submit,restore,init(all){caps=all.municipal;tariffs();sync();}};
+  window.municipalUI={clearLoad,reset,active,sync,serviceChanged,invalidateResolution,acceptResolution,validate,defaults,submit,restore,init(all){caps=all.municipal;tariffs();sync();}};
   if(typeof capabilities!=='undefined'&&capabilities)window.municipalUI.init(capabilities);
 })();

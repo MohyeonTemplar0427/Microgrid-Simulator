@@ -97,13 +97,16 @@ def number(value, label, minimum=0, maximum=None):
 
 def validate_request(data):
     """Reject unknown fields and unsupported versions rather than dropping inputs."""
+    if isinstance(data, dict) and type(data.get("schema_version")) is int and data["schema_version"] == 5:
+        from .grid_only import validate
+        return validate(data)
     if isinstance(data, dict) and type(data.get("schema_version")) is int and data["schema_version"] == 4:
         from .municipal_study import validate_study
         return validate_study(data)
     if not isinstance(data, dict) or type(data.get("schema_version")) is not int or data["schema_version"] not in (1, 2, 3):
         raise ValueError("Unsupported study schema version; this application accepts versions 1, 2 and 3.")
     template = {1: DEFAULT_REQUEST, 2: DEFAULT_SITE_REQUEST, 3: DEFAULT_CANDIDATE_REQUEST}[data["schema_version"]]
-    if set(data) != set(template):
+    if set(data) - {"site_profile", "carbon"} != set(template) or (data["schema_version"] == 1 and ({"site_profile", "carbon"} & set(data))):
         raise ValueError(f"Supply exactly the fields in the version {data['schema_version']} study request.")
     if not isinstance(data["name"], str) or not 1 <= len(data["name"].strip()) <= 120:
         raise ValueError("Study name must contain 1–120 characters.")
@@ -126,6 +129,16 @@ def validate_request(data):
         raise ValueError("Select supported strategies once each, including the no-battery baseline.")
     if data["tariff_id"] is not None and not isinstance(data["tariff_id"], str):
         raise ValueError("Tariff must be a supported identifier or null.")
+    if data["tariff_id"]:
+        from ..billing import get_tariff
+        tariff = get_tariff(data["tariff_id"])
+        if not tariff.is_effective_on(start) or not tariff.is_effective_on(end):
+            raise ValueError(
+                f"Billing Plan coverage is {tariff.effective_start} through "
+                f"{tariff.effective_end or 'the current catalog window'}; "
+                f"it does not cover {start} through {end}. "
+                "Choose a verified version covering the entire study."
+            )
     if data["tariff_id"] and data["tariff_id"].startswith("hetch_hetchy_c2"):
         from ..billing import get_tariff
         get_tariff(data["tariff_id"]).validate_demand_interval(data["timestep_minutes"])
@@ -161,4 +174,8 @@ def validate_request(data):
             for key in ("tilt_degrees", "azimuth_degrees"):
                 if type(result.get(key)) is not int or result[key] != data["solar"][key]:
                     raise ValueError("Optimized angles changed; clear optimization provenance for manual settings.")
+    from .site_profile import validate_profile_request
+    validate_profile_request(data)
+    from .carbon import validate as validate_carbon
+    validate_carbon(data)
     return data

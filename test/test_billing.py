@@ -1997,3 +1997,21 @@ def test_the_2024_weekday_peak_rule_survives_into_history():
 
     assert etoud.period_names(saturday).iloc[18] == "summer_off_peak"
     assert ev2.period_names(saturday).iloc[18] == "summer_peak"
+
+
+@pytest.mark.parametrize("phase,daily", [("single_phase", .32854), ("polyphase", .82136)])
+def test_historical_b6_season_change_and_coverage(phase, daily):
+    tariff = get_tariff(f"pge_b6_secondary_{phase}_bundled_2025_09_01")
+    index, dispatch = make_dispatch("2025-09-17", "2025-10-17", 10.0)
+    periods = calculate_meter_billing(dispatch, tariff, meter_id="pcc",
+                                      timestep_hours=index.timestep_hours)
+    # 14 summer days and 17 winter days, 5 peak hours every day.
+    expected = 10 * (14 * (5 * .67220 + 19 * .41458)
+                     + 17 * (5 * .42551 + 19 * .38192)) + 31 * daily
+    assert sum(p.total_utility_charge for p in periods) == pytest.approx(expected)
+    assert all(p.demand_charge == 0 for p in periods)
+    for day in [date(2025, 9, 1), date(2025, 12, 31)]:
+        assert tariff.is_effective_on(day)
+    for day in [date(2025, 8, 31), date(2026, 1, 1)]:
+        with pytest.raises(ValueError):
+            get_tariff(tariff.tariff_id, day)

@@ -166,14 +166,14 @@ def main():
     parser = argparse.ArgumentParser(description="Run the local Microgrid Simulator web application.")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--data-dir", type=Path, default=ROOT / ".cache" / "local_web")
-    parser.add_argument("--env-file", type=Path, default=ROOT / "src" / ".env", help="Read only NSRDB credentials from this local .env file.")
+    parser.add_argument("--env-file", type=Path, default=ROOT / "src" / ".env", help="Read only weather and Electricity Maps credentials from this local .env file.")
     parser.add_argument("--refresh-engine", action="store_true", help="Explicitly pin the current source and dependencies as a development snapshot.")
     parser.add_argument("--external-worker", action="store_true", help="Queue studies for a separately started src.local_web.runner process.")
     args = parser.parse_args()
     if args.env_file.is_file():
         from dotenv import dotenv_values
         values = dotenv_values(args.env_file)
-        for key in ("NSRDB_API_KEY", "NSRDB_API_EMAIL"):
+        for key in ("NSRDB_API_KEY", "NSRDB_API_EMAIL", "ELECTRICITY_MAPS_API_KEY"):
             if values.get(key):
                 os.environ.setdefault(key, values[key])
     application = Application(args.data_dir, refresh=args.refresh_engine, embedded_worker=not args.external_worker)

@@ -1004,6 +1004,8 @@ Superseded versions, kept so a study of a past year stays reproducible. A simula
 
 | Version | Schedule | Effective | Tier 1 $/kWh | Tier 2 $/kWh | Fixed provision |
 | --- | --- | --- | ---: | ---: | --- |
+| `2025-09-01` | PG&E B-6 Small General Time-of-Use Service (Single-Phase) | 2025-09-01 to 2025-12-31 | — | — | customer charge $0.32854/day |
+| `2025-09-01` | PG&E B-6 Small General Time-of-Use Service (Polyphase) | 2025-09-01 to 2025-12-31 | — | — | customer charge $0.82136/day |
 | `2024-01-01` | E-1 | 2024-01-01 to 2024-02-29 | 0.42009 | 0.52566 | minimum bill $0.37612/day |
 | `2024-03-01` | E-1 | 2024-03-01 to 2024-03-31 | 0.42101 | 0.52708 | minimum bill $0.39167/day |
 | `2024-04-01` | E-1 | 2024-04-01 to 2024-05-31 | 0.42676 | 0.53406 | minimum bill $0.39167/day |

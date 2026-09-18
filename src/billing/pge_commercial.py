@@ -11,6 +11,7 @@ Every period here applies every day, including weekends and holidays,
 which is why none of them sets ``TOUPeriod.days``.
 """
 
+from dataclasses import replace
 from datetime import date
 
 from .pge_common import PGE_SEASONS
@@ -966,3 +967,32 @@ PGE_B20_SECONDARY_OPTION_S_BUNDLED = register_tariff(
 
 def default_commercial_tariff() -> TariffDefinition:
     return PGE_B10_SECONDARY_BUNDLED
+
+
+# PG&E historical Commercial (B) workbook, September–December 2025.
+# First worksheet C16:C17 / J15:J19; final worksheet B-6 TOU periods.
+B6_2025_SOURCE_URL = (
+    "https://www.pge.com/assets/rates/tariffs/Commercial_B_Sch_250901-251231.xlsx"
+)
+
+
+def _historical_b6_2025(current: TariffDefinition) -> TariffDefinition:
+    rates = {
+        "summer_peak": 0.67220, "summer_off_peak": 0.41458,
+        "winter_peak": 0.42551, "winter_off_peak": 0.38192,
+        "winter_super_off_peak": 0.34584,
+    }
+    return register_tariff(replace(
+        current,
+        tariff_id=current.tariff_id.replace("2026_03_01", "2025_09_01"),
+        effective_start=date(2025, 9, 1), effective_end=date(2025, 12, 31),
+        version="2025-09-01", source_url=B6_2025_SOURCE_URL,
+        tou_periods=tuple(replace(period, rate_per_kWh=rates[period.name])
+                          for period in current.tou_periods),
+    ))
+
+
+PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED_2025 = _historical_b6_2025(
+    PGE_B6_SECONDARY_SINGLE_PHASE_BUNDLED)
+PGE_B6_SECONDARY_POLYPHASE_BUNDLED_2025 = _historical_b6_2025(
+    PGE_B6_SECONDARY_POLYPHASE_BUNDLED)

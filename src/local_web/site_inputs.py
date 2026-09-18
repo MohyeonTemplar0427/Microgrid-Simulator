@@ -154,13 +154,18 @@ def build_site_inputs(request, directory):
     frame = pd.DataFrame({"timestamp": grid.index, "load_kw": values.to_numpy(),
         "pv_kw": pv.pv_available_kw.to_numpy(), "price_per_kWh": prices,
         "gCO2/kWh": request["carbon_intensity_g_per_kWh"]})
+    from .carbon import values as carbon_values
+    carbon, carbon_provenance = carbon_values(request, directory, grid.index)
+    frame['gCO2/kWh'] = carbon
+    warnings = [w for w in warnings if not w.startswith('Grid carbon intensity')]
+    warnings.append(carbon_provenance['warning'])
     replay = PVReplayConfiguration((PVInverterReplay("RooftopPV", request["pv_capacity_kw"], request["pv_capacity_kw"]),),
                                    pd.DataFrame({"RooftopPV": pv.pv_available_kw.to_numpy()}, index=grid.index))
     weather_table = weather.copy()
     weather_table["timestamp"] = pd.to_datetime(weather_table["timestamp"], utc=True)
     weather_table = weather_table.loc[weather_table.timestamp.isin(grid.index)].reset_index(drop=True)
     return frame, replay, {"weather": weather_table, "pv": pv.diagnostics}, {
-        "site": site, "weather": provenance, "pv": pv.provenance, "load": load,
+        "site": site, "carbon": carbon_provenance, "weather": provenance, "pv": pv.provenance, "load": load,
         "price_source": "tariff" if request["tariff_id"] else "fixed_assumption",
         "warnings": warnings,
     }

@@ -8,17 +8,94 @@ let essResolution=null, essKey=null, annualResult=null, annualKey=null;
 let utilityTimer, strategiesEdited=false, locationResolution=null;
 let template, siteLabel, weatherId = null, weatherMeta = null, locationGeneration = 0;
 const field = name => form.elements.namedItem(name);
+function carbonSettings() {return {source:'electricity_maps',region:'from_location'};}
+function syncLocationTimezone() {
+  if(template?.schema_version===1)return;
+  const lat=field('latitude').value, lon=field('longitude').value;
+  const mapping=lat!=='' && lon!=='' && capabilities?.carbon_regions?.find(r=>Number(lat)>=r.south && Number(lat)<=r.north && Number(lon)>=r.west && Number(lon)<=r.east);
+  field('timezone').value=mapping?.timezone || '';
+}
+function gridOnly() {return template?.schema_version>=2 && field('pv_choice').value==='no';}
+function updateEquipmentChoice() {
+  const municipal=window.municipalUI?.active();
+  field('pv_choice').querySelector('option[value="yes"]').disabled=!!municipal;
+  field('pv_choice').querySelector('option[value="storage"]').disabled=!municipal;
+  if(field('pv_choice').selectedOptions[0]?.disabled)field('pv_choice').value='';
+  $('pv-presence').hidden=template?.schema_version===1;
+  for(const page of document.querySelectorAll('.wizard-page')) {
+    const skip=gridOnly() && ['4','5','6','7'].includes(page.dataset.step);
+    if(skip)for(const input of page.querySelectorAll('input,select,button'))input.disabled=true;
+    else if(['4','5','6','7'].includes(page.dataset.step))for(const input of page.querySelectorAll('input,select,button'))input.disabled=false;
+  }
+  field('degradation_cost_per_kWh').closest('label').hidden=gridOnly();
+  $('strategies').closest('fieldset').hidden=gridOnly() || !!municipal;
+  for(const name of ['degradation_cost_per_kWh','carbon_weight']) {field(name).disabled=gridOnly();field(name).closest('label').hidden=gridOnly() || (name==='carbon_weight' && !!municipal);}
+  if($('municipal-strategy-note'))$('municipal-strategy-note').textContent=gridOnly()?'Grid-only load and utility bill. No battery optimization or AC network validation is performed.':'Compare no battery with cost-optimal storage, including throughput degradation. The battery finishes at its starting energy. No AC network validation is performed.';
+  if(gridOnly())$('dataset-info').textContent='Grid-only study: native load is supplied entirely by the electricity grid.';
+  $('pv-choice-note').textContent=municipal
+    ? 'PV billing is not supported for AMP/SVP. Choose grid-only to skip all equipment, or battery-only to keep the storage controls.'
+    : 'Choose No to skip Solar weather, PV, Inverter and Battery / ESS. The study will calculate load and grid electricity costs.';
+}
+field('pv_choice').addEventListener('change',()=>{
+  weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
+  updateSiteControls();wizardReached=wizardIndex;renderWizard();
+});
+function siteProfile() {
+  return {site_type:field('site_type').value,subtype:field('site_type').value==='residential'?field('site_subtype').value:null};
+}
+function siteCustomerClass() {
+  const profile=siteProfile(), spec=capabilities?.site_options?.[profile.site_type];
+  return spec?.customer_class || spec?.subtypes.find(s=>s.id===profile.subtype)?.customer_class || null;
+}
+function restoreSiteProfile(profile) {
+  field('site_type').value=profile?.site_type||'';
+  field('site_subtype').value=profile?.subtype||'';
+}
+function updateSiteProfile() {
+  const profile=siteProfile(), common=profile.subtype==='common_areas';
+  $('site-subtype-label').hidden=profile.site_type!=='residential';
+  $('site-profile-note').textContent=common
+    ? 'Common-area load only, on a separate nonresidential account. Confirm its assigned commercial schedule; dwelling meters and shared-generation billing are excluded.'
+    : siteCustomerClass()==='residential'
+      ? 'House and individual-unit billing currently supports AMP and SVP import-only storage. Other residential utility integrations are not yet available. Confirm the actual account and meter.'
+      : 'Site type and location filter the available services. A map match does not establish account eligibility.';
+  for(const opt of field('archetype').options) {
+    opt.hidden=opt.disabled=!!siteCustomerClass() && !['office','retail','school','industrial'].includes(opt.value);
+  }
+  const synthetic=field('load_mode').querySelector('option[value="synthetic"]');
+  synthetic.disabled=synthetic.hidden=common;
+  if(common && field('load_mode').value==='synthetic')field('load_mode').value='';
+}
+function changeSiteProfile() {
+  field('tariff_id').value='__unset__';
+  for(const name of ['load_power_kw','archetype'])field(name).value='';
+  window.municipalUI?.clearLoad();
+  if(locationResolution)setLocationChoices(locationResolution);
+  else window.municipalUI?.serviceChanged();
+  updateSiteControls();
+}
+for(const name of ['site_type','site_subtype'])field(name).addEventListener('change',changeSiteProfile);
 function weatherRequest() { return {latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),year:Number(field("start_date").value.slice(0,4)),timezone:field("timezone").value,timestep_minutes:Number(field("timestep_minutes").value)}; }
 function weatherMatches(meta) { const wanted=weatherRequest(); return meta && Object.keys(wanted).every(k=>meta.request[k]===wanted[k]) && Number(field("end_date").value.slice(0,4))===wanted.year; }
 function updateSiteControls() {
+  updateSiteProfile();
+  syncLocationTimezone();
   const utility=field("utility").value;
   const service=serviceForSelection(utility)?.id || utility;
   for(const opt of field("tariff_id").options) {
     if(!opt.value || opt.value==="__unset__") continue;
     opt.hidden=template?.schema_version>=2 && capabilities?.tariffs.find(t=>t.id===opt.value)?.service!==service;
-    opt.disabled=opt.hidden;
+    opt.hidden ||= gridOnly() && /_option_[rs]_/.test(opt.value);
+    const tariff=capabilities?.tariffs.find(t=>t.id===opt.value);
+    const start=field("start_date").value,end=field("end_date").value;
+    const outside=tariff && ((start && tariff.effective_start && start<tariff.effective_start) ||
+      (end && tariff.effective_start && end<tariff.effective_start) ||
+      (start && tariff.effective_end && start>tariff.effective_end) ||
+      (end && tariff.effective_end && end>tariff.effective_end));
+    opt.disabled=opt.hidden || !!outside;
   }
 
+  if(field("tariff_id").selectedOptions[0]?.disabled && field("tariff_id").value!=="__unset__")field("tariff_id").value="__unset__";
   updateCandidateControls();
   const site=template?.schema_version>=2;
   for (const node of document.querySelectorAll("[data-site]")) { node.hidden=!site; for(const input of node.querySelectorAll("input,select,button")) input.disabled=!site; }
@@ -34,6 +111,7 @@ function updateSiteControls() {
   if (site) $("dataset-info").textContent=window.municipalUI?.active()?"Use the complete account billing cycle.":"Location studies generate solar and load inputs from the settings below.";
   if(weatherMeta && !weatherMatches(weatherMeta)) { weatherId=null; weatherMeta=null; }
   window.municipalUI?.sync();
+  updateEquipmentChoice();
   $("weather-status").textContent=field("weather_source").value==="nsrdb" ? (weatherId?"Historical weather ready. A copy will be saved with the study.":"Retrieve matching historical weather before running."):"Clear-sky estimates are calculated locally when the simulation runs.";
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
@@ -69,7 +147,7 @@ form.addEventListener("input",event=>{
     locationGeneration++;
     if(event.target.name!=="location_query") {
       siteLabel=`Coordinates ${field("latitude").value}, ${field("longitude").value}`;
-      $("location-status").textContent=siteLabel; $("utility-suggestion").textContent="Coordinates changed. Confirm the timezone and electricity service.";
+      $("location-status").textContent=siteLabel; $("utility-suggestion").textContent="Coordinates changed. Confirm the electricity service.";
       resetUtilityOptions(); field("tariff_id").value="__unset__";
       clearTimeout(utilityTimer); utilityTimer=setTimeout(()=>refreshUtilities(locationGeneration),600);
     }
@@ -90,12 +168,18 @@ function option(value, label) { const node=document.createElement("option"); nod
 
 function fillForm(request, lookup=true) {
   if(request.schema_version===4) {window.municipalUI.restore(request); return;}
+  if(request.schema_version===5) {
+    fillForm({...structuredClone(defaultSettings()),...request,schema_version:3},lookup);
+    field('pv_choice').value='no';updateSiteControls();resetWizard();return;
+  }
   locationResolution=null;window.municipalUI?.invalidateResolution();
   strategiesEdited=true;
   locationGeneration++;
   clearTimeout(utilityTimer);
   resetUtilityOptions(request.site?.utility);
   template=structuredClone(request);
+  field("pv_choice").value="yes";
+  restoreSiteProfile(request.site_profile);
   selectedDatasetId=request.dataset_id;
   weatherId=request.weather_id || null;
   weatherMeta=request.schema_version>=2 && weatherId?{request:{latitude:request.site.latitude,longitude:request.site.longitude,year:Number(request.start_date.slice(0,4)),timezone:request.timezone,timestep_minutes:request.timestep_minutes}}:null;
@@ -127,6 +211,12 @@ async function loadDatasets() {
 }
 
 function readRequest() {
+  if(gridOnly())return {schema_version:5,carbon:carbonSettings(),name:field('name').value,
+    site:{label:siteLabel,latitude:Number(field('latitude').value),longitude:Number(field('longitude').value),utility:field('utility').value},
+    site_profile:siteProfile(),start_date:field('start_date').value,end_date:field('end_date').value,
+    timezone:field('timezone').value,timestep_minutes:Number(field('timestep_minutes').value),tariff_id:field('tariff_id').value||null,
+    load:{mode:field('load_mode').value,power_kw:Number(field('load_power_kw').value),archetype:field('load_mode').value==='constant'?'office':field('archetype').value},
+    fixed_price_per_kWh:Number(field('fixed_price_per_kWh').value),carbon_intensity_g_per_kWh:0};
   const request=structuredClone(template);
   if(request.schema_version===1) request.dataset_id=selectedDatasetId;
   for (const key of ["name","start_date","end_date","timezone"]) request[key]=form.elements.namedItem(key).value;
@@ -135,11 +225,14 @@ function readRequest() {
   request.strategies=[...$("strategies").querySelectorAll("input:checked")].map(box=>box.value);
   for (const key of Object.keys(request.battery)) request.battery[key]=Number(form.elements.namedItem(key).value);
   if(request.schema_version>=2) {
+    request.site_profile=siteProfile();
+    request.carbon=carbonSettings();
     request.site={label:siteLabel,latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),utility:field("utility").value};
     request.weather_source=field("weather_source").value; request.weather_id=request.weather_source==="nsrdb"?weatherId:null;
     for(const key of Object.keys(request.solar)) request.solar[key]=request.weather_source==="nsrdb" && ["temperature_c","wind_speed_m_per_s"].includes(key)?template.solar[key]:Number(field(key).value);
-    request.load={mode:field("load_mode").value,power_kw:Number(field("load_power_kw").value),archetype:field("load_mode").value==="constant"?template.load.archetype:field("archetype").value};
-    for(const key of ["fixed_price_per_kWh","carbon_intensity_g_per_kWh"]) request[key]=Number(field(key).value);
+    request.load={mode:field("load_mode").value,power_kw:Number(field("load_power_kw").value),archetype:field("load_mode").value==="constant"?"office":field("archetype").value};
+    request.fixed_price_per_kWh=Number(field("fixed_price_per_kWh").value);
+    request.carbon_intensity_g_per_kWh=0; // Legacy schema field; historical carbon is authoritative.
   }
   if(request.schema_version===3) {
     if(field("ess_mode").value==="equipment" && !essResolution?.ready) throw new Error("Review and apply the equipment settings first.");
@@ -185,7 +278,7 @@ async function refreshStudy(id) {
     $("run-name").textContent=study.name;
     $("run-meta").textContent=`${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}`;
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
-    $("progress").textContent=study.status==="completed" ? (study.request.schema_version===4 ? "Calculation complete. Municipal bills reconciled; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.") : study.progress;
+    $("progress").textContent=study.status==="completed" ? ((study.request.schema_version===4 || study.request.schema_version===5) ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.") : study.progress;
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
     else if (study.status==="completed") {
@@ -378,12 +471,13 @@ function setLocationChoices(result,saved="unconfirmed") {
     const service=capabilities.services.find(s=>s.id===item.service_id);
     choices.set(service?.id||item.id,{label:service?.label||item.name,supported:!!service&&pgeAtPoint});
   }
+  for(const [id,item] of choices)item.supported=item.supported && !!capabilities.service_classes?.[id]?.includes(siteCustomerClass());
   const options=[option('unconfirmed','Choose the service shown on your account')];
-  for(const [id,item]of choices){const node=option(id,item.label+(item.supported?' · confirm account':' · billing not supported'));node.disabled=!item.supported;options.push(node);}
+  for(const [id,item]of choices){const node=option(id,item.label+(item.supported?' · confirm account':' · billing not supported for selected site type'));node.disabled=!item.supported;options.push(node);}
   field('utility').replaceChildren(...options);
   const selected=serviceForSelection(saved)?.id||saved;
   field('utility').value=choices.get(selected)?.supported?selected:'unconfirmed';
-  $('utility-suggestion').textContent=`${result.explanation} Choices below follow the Step 2 location; map matches do not confirm account eligibility.`;
+  $('utility-suggestion').textContent=`${result.explanation} Choices below follow the Step 2 location and site type; map matches do not confirm account eligibility.`;
   window.municipalUI?.serviceChanged();updateSiteControls();
 }
 async function refreshUtilities(generation,saved="unconfirmed") {
@@ -398,7 +492,7 @@ async function refreshUtilities(generation,saved="unconfirmed") {
   }catch(error){
     if(generation!==locationGeneration)return;
     resetUtilityOptions();updateSiteControls();
-    $('utility-suggestion').textContent='Territory lookup unavailable. Retry the Step 2 location lookup; no provider is inferred.';
+    $('utility-suggestion').textContent=`Territory lookup unavailable: ${error.message}. Retry the Step 2 location lookup; no provider is inferred.`;
   }
 }
 field('utility').addEventListener('change',()=>{
@@ -408,11 +502,14 @@ field('utility').addEventListener('change',()=>{
 
 function wizardPages() {
   return [...document.querySelectorAll(".wizard-page")].filter(page=>
-    template?.schema_version>=2 || !page.querySelector(":scope > fieldset[data-site]"));
+    (template?.schema_version>=2 || !page.querySelector(":scope > fieldset[data-site]")) &&
+    !(gridOnly() && ['4','5','6','7'].includes(page.dataset.step)) &&
+    !(field('pv_choice').value==='storage' && ['4','5'].includes(page.dataset.step)));
 }
 function resetWizard() { wizardIndex=0; wizardReached=0; renderWizard(); }
 function renderWizard(focus=false) {
   const pages=wizardPages();
+  pages.forEach((page,index)=>{const legend=page.querySelector('legend');if(legend)legend.textContent=legend.textContent.replace(/^\d+\. /,`${index+1}. `);});
   for(const page of document.querySelectorAll(".wizard-page")) page.hidden=page!==pages[wizardIndex];
   const review=wizardIndex===pages.length-1;
   $("step-progress").textContent=review ? "Review your study before running" : `Step ${wizardIndex+1} of ${pages.length-1}`;
@@ -519,26 +616,37 @@ function startBlankStudy() {
   $("orientation-status").textContent="";
   updateSiteControls();resetWizard();
 }
-function defaultDateRange(start,end,defaults,municipal=false) {
-  // Preserve entered dates; derive missing boundaries as one coherent range.
-  const monthEnd=value=>{
-    const [year,month]=value.split('-').map(Number);
-    return new Date(Date.UTC(year,month,0)).toISOString().slice(0,10);
-  };
-  if(!start && !end)return municipal?{start:'2026-08-01',end:'2026-08-31'}:{start:defaults.start_date,end:defaults.end_date<defaults.start_date?defaults.start_date:defaults.end_date};
-  if(!start)start=municipal?end.slice(0,7)+'-01':(defaults.start_date>end?end:defaults.start_date);
-  if(!end)end=municipal?monthEnd(start):(defaults.end_date<start?start:defaults.end_date);
+function shiftCalendarMonths(value,months) {
+  const [year,month,day]=value.split('-').map(Number);
+  const base=new Date(Date.UTC(year,month-1+months,1));
+  const last=new Date(Date.UTC(base.getUTCFullYear(),base.getUTCMonth()+1,0)).getUTCDate();
+  base.setUTCDate(Math.min(day,last));
+  return base.toISOString().slice(0,10);
+}
+function defaultDateRange(start,end,today) {
+  // Preserve entered values; clamp leap days and month ends without UTC drift.
+  if(!start && !end){start=shiftCalendarMonths(today,-12);end=shiftCalendarMonths(start,1);}
+  else if(!start)start=shiftCalendarMonths(end,-1);
+  else if(!end)end=shiftCalendarMonths(start,1);
   return {start,end};
+}
+function todayAtSite() {
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:field('timezone').value||'UTC',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const date=Object.fromEntries(parts.map(part=>[part.type,part.value]));
+  return `${date.year}-${date.month}-${date.day}`;
 }
 function applyStepDefaults(page) {
   const defaults=defaultSettings();
   if(page.contains(field('start_date'))) {
-    const dates=defaultDateRange(field('start_date').value,field('end_date').value,defaults,window.municipalUI?.active());
+    const dates=defaultDateRange(field('start_date').value,field('end_date').value,todayAtSite());
     field('start_date').value=dates.start;field('end_date').value=dates.end;
   }
   window.municipalUI?.defaults(page);
   const hadCoordinates=field("latitude").value!=="" || field("longitude").value!=="";
+  const residential=siteCustomerClass()==='residential';
   const values={...defaults,...defaults.battery,...defaults.solar,
+    ...(residential?{capacity_kWh:10,energy_kWh:5,max_charge_kw:5,max_discharge_kw:5}:{}),
+    site_type:"commercial",site_subtype:field("site_type").value==="residential"?"house":"",
     latitude:defaults.site?.latitude,longitude:defaults.site?.longitude,location_query:defaults.site?.label,
     utility:"unconfirmed",load_mode:defaults.load?.mode,load_power_kw:defaults.load?.power_kw,
     archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),

@@ -94,6 +94,8 @@ PRICE_MODE_LABELS = {
 }
 
 TARIFF_LABELS = {
+    "pge_b6_secondary_single_phase_bundled_2025_09_01": "PG&E B-6 — Single-Phase (Sep–Dec 2025)",
+    "pge_b6_secondary_polyphase_bundled_2025_09_01": "PG&E B-6 — Polyphase (Sep–Dec 2025)",
     PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED.tariff_id: (
         "PG&E B-1 — Secondary Single-Phase Bundled"
     ),

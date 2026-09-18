@@ -297,9 +297,10 @@ def test_site_http_run_returns_weather_solar_and_actual_tariff_prices(service):
     assert inputs.load_kw.nunique()>1
     assert result["input_provenance"]["weather"]["source"]=="pvlib_ineichen_clear_sky"
     request["start_date"]=request["end_date"]="2025-08-01"
-    bad=call("/api/studies",request,headers)
-    failed=wait_for_study(call,bad["id"])
-    assert failed["status"]=="failed" and "effective" in failed["error"]
+    with pytest.raises(HTTPError) as rejected:
+        call("/api/studies",request,headers)
+    assert rejected.value.code == 400
+    assert "Billing Plan coverage" in rejected.value.read().decode()
 
 
 def test_location_cache_and_weather_validation_without_network(service,monkeypatch):
@@ -489,7 +490,7 @@ def test_municipal_queued_study_csv_exports_and_evidence(service):
     write_json(directory/'resource.json',resolution)
     data=frame(kw=20)
     data.loc[(data.timestamp.dt.hour>=17)&(data.timestamp.dt.hour<19),'grid_import_kw']=90
-    body=dict(schema_version=4,name='Municipal queued CSV study',resolution_id=rid,mode='actual_service',
+    body=dict(schema_version=4,site_profile={'site_type':'commercial','subtype':None},name='Municipal queued CSV study',resolution_id=rid,mode='actual_service',
         arrangement=dict(delivery_utility='amp',generation_provider='amp',tariff_id='amp_a2_2026_07_01',export_program='none'),
         account=account('A-2'),start_date='2026-08-01',end_date='2026-08-31',timezone='America/Los_Angeles',
         timestep_minutes=15,battery=BATTERY,load={'mode':'csv','csv':data.to_csv(index=False)},degradation_cost_per_kWh=.03)
@@ -502,6 +503,7 @@ def test_municipal_queued_study_csv_exports_and_evidence(service):
     study=call('/api/v1/municipal/studies',body,headers)
     finished=wait_for_study(call,study['id'])
     assert finished['status']=='completed',finished.get('error')
+    assert finished['request']['site_profile']==body['site_profile']
     assert finished['request']['resolution']==resolution
     assert finished['engine_id']==application.engine['id']
     result=finished['result']
