@@ -1,0 +1,34 @@
+area,utility,month,plan,variant,kwh,intervals,study_id,mapping_status,assumed_zone,independent_grid_bill,status,grid_bill,independent_error,objective_gap,operating_cost,max_power_balance_error,error
+West Los Angeles,ladwp,7,ladwp_r-1a,grid,474.4541488266027,2976,ea4e7f639bc34f9c8cc05f25af72d83c,ambiguous,1,130.6549302381927,completed,130.6549302381927,0.0,0.0,130.6549302381927,,
+West Los Angeles,ladwp,7,ladwp_r-1b,grid,474.4541488266027,2976,58cf5d4f493b4c1cbd6d7d24a14cba62,ambiguous,1,137.28341242770472,completed,137.2834124277047,-2.842170943040401e-14,0.0,137.2834124277047,,
+West Los Angeles,ladwp,7,ladwp_r-1b,battery,474.4541488266027,2976,4535b844d0ae42a78ce93b51ec96a445,ambiguous,1,137.28341242770472,completed,137.2834124277047,-2.842170943040401e-14,0.0,134.44145812046872,6.661338147750939e-16,
+West Los Angeles,ladwp,11,ladwp_r-1a,grid,456.7215376261433,2884,d3b128cb349843638d745b86f41ee3b2,ambiguous,1,126.66159846833988,completed,126.66159846833989,1.4210854715202004e-14,0.0,126.66159846833988,,
+West Los Angeles,ladwp,11,ladwp_r-1b,grid,456.7215376261433,2884,619f187b8d88449ca8ba0212c73e5c40,ambiguous,1,130.0069578261802,completed,130.0069578261802,0.0,0.0,130.0069578261802,,
+Van Nuys,ladwp,7,ladwp_r-1a,grid,474.4541488266027,2976,d8c730746ba0497eb49e48a83941467e,ambiguous,2,123.36316165844204,completed,123.36316165844204,0.0,0.0,123.36316165844204,,
+Van Nuys,ladwp,7,ladwp_r-1b,grid,474.4541488266027,2976,35fa5579e3a84231a8123fdffbc651f2,ambiguous,2,137.28341242770472,completed,137.2834124277047,-2.842170943040401e-14,0.0,137.2834124277047,,
+Van Nuys,ladwp,7,ladwp_r-1b,battery,474.4541488266027,2976,2e7118469ff94618b55340179b8d4c84,ambiguous,2,137.28341242770472,completed,137.2834124277047,-2.842170943040401e-14,0.0,134.44145812046872,6.661338147750939e-16,
+Van Nuys,ladwp,11,ladwp_r-1a,grid,456.7215376261433,2884,96d6b28681584c4494d1ee017db3a2d6,ambiguous,2,120.40878357882414,completed,120.40878357882416,1.4210854715202004e-14,0.0,120.40878357882416,,
+Van Nuys,ladwp,11,ladwp_r-1b,grid,456.7215376261433,2884,5cd2ea10c70646519dbcfc324be7b855,ambiguous,2,130.0069578261802,completed,130.0069578261802,0.0,0.0,130.0069578261802,,
+San Pedro,ladwp,7,ladwp_r-1a,grid,474.4541488266027,2976,dcf3973da5ca4c23867fc00f10e4afe2,ambiguous,1,130.6549302381927,completed,130.6549302381927,0.0,0.0,130.6549302381927,,
+San Pedro,ladwp,7,ladwp_r-1b,grid,474.4541488266027,2976,1eb4d82fd5204f348b5af1035b9e48ce,ambiguous,1,137.28341242770472,completed,137.2834124277047,-2.842170943040401e-14,0.0,137.2834124277047,,
+San Pedro,ladwp,7,ladwp_r-1b,battery,474.4541488266027,2976,e1f5d314e3cb4d0f9f37a9d3bd38d997,ambiguous,1,137.28341242770472,completed,137.2834124277047,-2.842170943040401e-14,0.0,134.44145812046872,6.661338147750939e-16,
+San Pedro,ladwp,11,ladwp_r-1a,grid,456.7215376261433,2884,590c22ef928a4a8f9e53bbc222b75f33,ambiguous,1,126.66159846833988,completed,126.66159846833989,1.4210854715202004e-14,0.0,126.66159846833988,,
+San Pedro,ladwp,11,ladwp_r-1b,grid,456.7215376261433,2884,46de97d03fcd4dbea39618c270076780,ambiguous,1,130.0069578261802,completed,130.0069578261802,0.0,0.0,130.0069578261802,,
+Santa Monica,sce,7,sce_d,grid,612.6928101817413,2976,,ambiguous,6,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Santa Monica,sce,7,sce_tou-d-4-9,grid,612.6928101817413,2976,,ambiguous,6,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Santa Monica,sce,7,sce_tou-d-5-8,grid,612.6928101817413,2976,,ambiguous,6,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Santa Monica,sce,11,sce_d,grid,468.45010242345296,2884,,ambiguous,6,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Santa Monica,sce,11,sce_tou-d-4-9,grid,468.45010242345296,2884,,ambiguous,6,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Santa Monica,sce,11,sce_tou-d-5-8,grid,468.45010242345296,2884,,ambiguous,6,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Irvine,sce,7,sce_d,grid,612.6928101817413,2976,,ambiguous,8,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Irvine,sce,7,sce_tou-d-4-9,grid,612.6928101817413,2976,,ambiguous,8,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Irvine,sce,7,sce_tou-d-5-8,grid,612.6928101817413,2976,,ambiguous,8,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Irvine,sce,11,sce_d,grid,468.45010242345296,2884,,ambiguous,8,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Irvine,sce,11,sce_tou-d-4-9,grid,468.45010242345296,2884,,ambiguous,8,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Irvine,sce,11,sce_tou-d-5-8,grid,468.45010242345296,2884,,ambiguous,8,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Palm Desert,sce,7,sce_d,grid,612.6928101817413,2976,,approximate,15,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Palm Desert,sce,7,sce_tou-d-4-9,grid,612.6928101817413,2976,,approximate,15,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Palm Desert,sce,7,sce_tou-d-5-8,grid,612.6928101817413,2976,,approximate,15,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Palm Desert,sce,11,sce_d,grid,468.45010242345296,2884,,approximate,15,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Palm Desert,sce,11,sce_tou-d-4-9,grid,468.45010242345296,2884,,approximate,15,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"
+Palm Desert,sce,11,sce_tou-d-5-8,grid,468.45010242345296,2884,,approximate,15,,coverage_rejected,,,,,,"{""error"": ""Verified coverage: 2026-06-25 through 2026-09-17; current rates are never extended backward.""}"

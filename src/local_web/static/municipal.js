@@ -55,6 +55,7 @@
   legacyNode(el('ess-controls'));
   for(const node of page(9).querySelectorAll(':scope > fieldset'))legacyNode(node);
   function sync(){
+    if(window.socalUI?.active()){for(const node of form.querySelectorAll("[data-municipal]"))node.hidden=true;window.socalUI.sync();return;}
     const enabled=active();
     for(const node of legacy)node.hidden=enabled;
     for(const node of form.querySelectorAll('[data-municipal]'))node.hidden=!enabled;

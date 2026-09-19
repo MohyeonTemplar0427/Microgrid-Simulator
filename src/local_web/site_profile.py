@@ -16,7 +16,7 @@ SERVICE_CLASSES = {
     key: ['commercial'] for key in
     ('pge', 'cleanpowersf', 'hetch_hetchy', 'peninsula', 'svce', 'sjce')
 }
-SERVICE_CLASSES.update(amp=['commercial', 'residential'], svp=['commercial', 'residential'])
+SERVICE_CLASSES.update(amp=['commercial', 'residential'], svp=['commercial', 'residential'], ladwp=['commercial', 'residential'], sce=['commercial', 'residential'])
 
 
 def customer_class(profile):

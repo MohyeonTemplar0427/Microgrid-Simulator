@@ -326,6 +326,20 @@ class Application:
         return {**output, "resource_id": directory.name, "engine_id": self.engine["id"],
                 **({"resolution_id": directory.name} if kind == "utility-resolution" else {})} if municipal else output
 
+    def submit_socal(self, request):
+        if not self.capabilities.get("socal"):
+            raise ValueError("Refresh the engine after validating Southern California compatibility.")
+        if not isinstance(request, dict) or request.get("schema_version") != 6 or "resolution" in request:
+            raise ValueError("Supply schema 6 and saved resolution_id, not client location evidence.")
+        rid = request.get("resolution_id", "")
+        if not isinstance(rid, str) or len(rid) != 32 or any(c not in "0123456789abcdef" for c in rid):
+            raise ValueError("Resolve electricity delivery first.")
+        source = self.store.directory / "candidate" / rid
+        if not (source / "resource.json").is_file() or json.loads((source / "resource-request.json").read_text())["kind"] != "utility-resolution":
+            raise ValueError("Saved utility resolution not found.")
+        request = {**request, "resolution": json.loads((source / "resource.json").read_text())}
+        return self.store.submit(request, self.engine)
+
     def submit_municipal(self, request):
         if not self.capabilities.get("municipal", {}).get("optimized_studies"):
             raise ValueError("Refresh the engine to enable optimized municipal studies.")

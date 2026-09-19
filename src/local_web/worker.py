@@ -18,6 +18,7 @@ def write_json(path, value):
 
 
 def capabilities():
+    from .socal_study import capabilities as socal_capabilities
     from .municipal_service import capabilities as municipal_capabilities
     from ..simulation.interface_analysis import retail_tariff_ids_for_region
     from ..billing import get_tariff
@@ -25,7 +26,7 @@ def capabilities():
     from ..equipment.ess import search
     from .site_profile import SITE_OPTIONS, SERVICE_CLASSES
     from .carbon import REGION_MAPPINGS
-    return {"carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
+    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
          "service": tariff_service(key),
          "notes": get_tariff(key).notes,
@@ -43,6 +44,10 @@ def execute(directory):
 
     directory = Path(directory)
     request = validate_request(json.loads((directory / "request.json").read_text()))
+    if request["schema_version"] == 6:
+        from .socal_study import execute as execute_socal
+        execute_socal(directory, request)
+        return
     if request["schema_version"] == 5:
         from .grid_only import execute as execute_grid_only
         return execute_grid_only(directory, request)

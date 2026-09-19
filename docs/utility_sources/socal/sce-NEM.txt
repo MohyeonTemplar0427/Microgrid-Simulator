@@ -1,0 +1,3006 @@
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 64409-E
+Cancelling Revised Cal. P.U.C. Sheet No. 58722-E
+Schedule NEM Sheet 1
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3846-E Caroline Choi Date Submitted Aug 16, 2018
+Decision Senior Vice President Effective Sep 15, 2018
+Resolution
+APPLICABILITY 
+ 
+Applicable to Eligible Customer-Generators (Customers) as defined in Special Condition 7.a, pursuant 
+to Public Utilities (PU) Code Section 2827, where the total Renewable Electrical Generating Facility 
+capacity does not exceed 1 MW at a single Premise except as provided in Special Condition 7.a.ii or 
+7.a.iii below. 
+ 
+This Schedule is closed to new Customers as of July 1, 2017.  Customers who are receiving service on 
+this Schedule, or who have submitted all documentation necessary for receiving service on this 
+Schedule, prior to July 1, 2017, are subject to the transition provisions as provided in Special Condition 
+11 below. 
+ 
+This Schedule is also applicable to Customers whose Renewable Electrical Generation Facilities meet 
+the definition of a NEM-Paired Storage System, as defined in Special Condition 7.l below. Such 
+Customers shall be additionally subject to the provisions of Special Condition 6 below. 
+ 
+This Schedule is also applicable to a Customer whose generating facility meets the definition of a 
+Multiple Tariff Generating Facility, as defined in Special Condition 7.h of this Schedule, and shall 
+additionally be subject to the provisions of Special Condition 4 of this Schedule. 
+ 
+Except for Customers utilizing a Multiple Tariff Generating Facility that includes one or more Non-
+Renewable Electrical Generating Facilities, Customers eligible for service under this Schedule are 
+exempt from: (1) any new or additional charges not included in their Otherwise Applicable Tariff (OAT), 
+and (2) Standby Charges (Schedules S, TOU-8-S, or TOU-8-RTP-S).  Customers electing to 
+participate in NEM Aggregation, pursuant to Special Condition 5 of this Schedule, are subject to 
+additional billing services charges, as defined therein.  Customers as defined in Special Condition 7.a.ii 
+or 7.a.iii below may be subject to Network and/or Distribution Upgrade costs if those costs arise solely 
+from the interconnection of a Renewable Electrical Generating Facility with a capacity greater than 1 
+MW per Premises, in accordance with Section D.13.e of Rule 21. 
+ 
+Customers utilizing a Multiple Tariff Generating Facility may be subject to Standby Charges, pursuant 
+to the provisions of Schedules S, TOU-8-S, or TOU-8-RTP-S, as well as other applicable charges (e.g., 
+Schedule CGDL-CRS and Schedule DL-NBC) included in their OAT. 
+ 
+Pursuant to Decision 08-02-002 and notwithstanding all applicable terms and conditions contained 
+herein, to the extent a Community Choice Aggregator offers net energy metering service, SCE shall 
+provide applicable NEM services under this Schedule to a Community Choice Aggregation (CCA) 
+Service Eligible Customer-Generator consistent with services provided to its Bundled Service Eligible 
+Customer-Generator.  As a condition of receiving service under this Schedule, the Community Choice 
+Aggregator shall be responsible for timely providing the applicable generation-related bill charges or 
+credits for each CCA Service Eligible Customer Generator to SCE.  Each CCA Service Eligible 
+Customer-Generator shall look to its Community Choice Aggregator for NEM services related to the 
+electric generation charges and credits that result from receiving services under this schedule. The 
+Community Choice Aggregator shall also be responsible for the applicable generation-related bill credit 
+structure associated with this service option and providing the CCA Service Eligible Customer-
+Generator with the applicable generation-related bill credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+  | 
+  | 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+. 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 68846-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60442-E
+Schedule NEM Sheet 2
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4175-E Carla Peterman Date Submitted Mar 19, 2020
+Decision 19-07-015 Senior Vice President Effective Apr 15, 2021
+Resolution E-5118
+ 
+ 
+APPLICABILITY (Continued) 
+ 
+This Schedule is applicable to Direct Access (DA) Customers provided the DA Customer’s Electric 
+Service Provider (ESP) offers a NEM tariff consistent with the provisions of this Schedule.  Eligible 
+DA Customers should look to their ESPs for NEM services related to the energy generation charges 
+and credits that may result from receiving NEM service.   
+ 
+DA and CCA Customers, Customers electing to participate in NEM Aggregation, and Customers 
+defined in Special Condition 7.a.iii below are not eligible to receive Net Surplus Compensation 
+(NSC) from SCE. 
+ 
+A new Customer of Record or New Party In (NPI), who owns, rents or leases a premises that 
+includes a Renewable Electrical Generating Facility with a capacity of 30 kW or less, that were 
+approved by SCE for Parallel Operation prior to the new Customer or NPI moving in and/or taking 
+electric service with SCE, will not have to submit a new interconnection agreement, will take service 
+on this tariff as long as the requirements of this Schedule, including Special Condition 11, are met.  
+This will also apply to premises where the developer/contractor establishes the interconnection, so 
+that the Customer who buys/rents/leases the Premises will not have to re-submit and sign a new 
+interconnection agreement.  To be eligible, the new Customer or NPI must 1) ensure that the 
+Renewable Electrical Generating Facility is compliant with all applicable safety and performance 
+standards as delineated in SCE’s Electric Rule 21 and other applicable tariffs in effect at the time of 
+initial approval for Parallel Operation; 2) keep in force the amount of property, commercial general 
+liability and /or  personal liability insurance the NPI or new Customer has in place at the time it 
+initiates service on this tariff; 3) understand that SCE may from time to time release to the California 
+Energy Commission and/or the California Public Utilities Commission, information regarding the 
+new Customer or NPI’s facility, including the NPI or new Customer’s name and the location, 
+capacity and operational characteristics of the Renewable Electrical Generating Facility. SCE will 
+provide the NPI or new Customer with a copy of the interconnection agreement in effect and as 
+signed by the previous customer, which will remain unchanged, (ii) a copy of the NEM Fact Sheet of 
+operation and billing, and (iii) SCE’s website information on the NEM tariff.  A NPI or a new 
+customer may need to sign an Affidavit certifying that it meets the requirement for an Eligible 
+Customer-Generator and is an Eligible Renewable Electrical Generation Facility pursuant to PU 
+Code Section 2827. 
+ 
+A new Customer or NPI who owns rents or leases a Premises that includes Renewable Electrical 
+Generating Facility above 30 kW will need to sign a new interconnection agreement.  If no changes 
+are made to the interconnection facilities, the agreement will have identical terms and conditions as 
+the ones approved for the previous Customer, subject to the provisions of Special Condition 11 of 
+this Schedule. 
+ 
+NEM Transition Eligible Customer-Generators, as defined in Special Condition 11, who replace a 
+Renewable Electrical Generating Facility due to impacts of a Natural Disaster will remain eligible 
+under this Schedule pursuant to Special Condition 12. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+(N) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 57742-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57519-E
+Schedule NEM Sheet 3
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3308-E R.O. Nichols Date Submitted Nov 13, 2015
+Decision Senior Vice President Effective Dec 13, 2015
+Resolution
+ 
+ 
+TERRITORY 
+ 
+Within the entire territory served. 
+ 
+RATES 
+ 
+As determined in each billing period, when a Customer is a net consumer of energy, E s is greater 
+than E F, where E s is energy supplied by SCE and E F is energy generated by the Customers’ 
+Renewable Electrical Generating Facility and exported into SCE’s electrical system, the resulting 
+net consumed energy will be used in the calculation of all applicable energy charges, calculated by 
+1) multiplying the Customer’s net consumed kWh by the applicable energy rate components of the 
+Customer’s OAT, in each Time-Of-Use (TOU) period when applicable, for Bundled Service 
+Customers, or 2) (a) multiplying the Customer’s net consumed kWh by the applicable Delivery 
+Service rate components of the Customer’s OAT, in each TOU period when applicable, and (b) 
+multiplying the Customer’s net consumed kWh by the applicable Cost Responsibility Surcharge 
+(CRS) rate components of Schedule DA-CRS or Schedule CCA-CRS for DA and CCA Service 
+Customers (the Customer’s ESP or Community Choice Aggregator is responsible for providing the 
+generation-related energy charges). 
+ 
+As determined in each billing period, when a Customer is a net producer of energy, E F is greater 
+than Es, where E s is energy supplied by SCE and E F is energy generated by the Customer’s 
+Renewable Electrical Generating Facility, the resulting net produced energy will be used in the 
+calculation of energy credits, calculated by 1) multiplying the Customer’s net produced kWh by the 
+applicable energy rate components of the Customer’s OAT, in each TOU period when applicable, 
+for Bundled Service Customers, or 2) (a) multiplying the Customer’s net produced kWh by the 
+applicable Delivery Service rate components of the customer’s OAT, in each TOU period when 
+applicable, and (b) multiplying the Customer’s net produced kWh by the applicable CRS rate 
+components of Schedule DA-CRS or Schedule CCA-CRS for DA and CCA Service Customers (the 
+Customer’s ESP or Community Choice Aggregator is responsible for providing the generation-
+related energy credits).  
+ 
+For DA and CCA Service Customers, generation credits, if any, do not reduce the charges owed to 
+SCE for energy supplied to such customer, and Delivery Service and/or CRS credits, if any, do not 
+reduce the charges owed to the ESP or Community Choice Aggregator for energy supplied to such 
+customer. 
+ 
+For all customers served under this Schedule, Special Condition 3.h shall apply to any remaining 
+energy credits at the end of each Relevant Period. 
+ 
+Net Surplus Compensation (NSC) is equal to the Net Surplus Compensation Rate (NSCR) 
+multiplied by Net Surplus Energy.  Pursuant to PU Code Section 2827(h)(5)(A), NSC is designed to 
+compensate NEM customers for Net Surplus Energy they produced in excess of their on-site load 
+over their Relevant Period.  The NSCR is based on the default load aggregation point (DLAP) price.  
+See Special Condition 3.h.6 for calculation of NSCR.   
+ 
+Renewable Energy Credits (RECs) are equal to Renewable Attribute Adder (RAA) multiplied by Net 
+Surplus Energy.  See Special Condition 3.h.7. 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+(N) 
+  | 
+(N) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+ 
+(N) 
+(N) 
+ 
+ 
+ 
+ 
+(N) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(L) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 64410-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60443-E
+Schedule NEM Sheet 4
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3846-E Caroline Choi Date Submitted Aug 16, 2018
+Decision Senior Vice President Effective Sep 15, 2018
+Resolution
+ 
+ 
+RATES (Continued) 
+ 
+For Customers defined in Special Condition 7.a.iii below, energy supplied by SCE (E S) shall be billed 
+monthly based on the Customer’s OAT and shall not be netted with energy generated by the 
+Customer’s Renewable Electrical Generating Facility that is exported to SCE’s electrical system (EF).  
+Any energy produced by the Customer’s Renewable Electrical Generating Facility that is exported to 
+SCE’s electrical system (EF) is not eligible for compensation, including NSC, from SCE or any third-
+party. 
+ 
+SPECIAL CONDITIONS 
+ 
+1. Required Application and Contract:  An executed Net Energy Metering (NEM) Generating 
+Facility Interconnection Application (Form 14-957) and an executed Net Energy Metering And 
+Interconnection Agreement (Form 16-344 or Form 14-923) are required prior to receiving 
+service under this Schedule.  Customers electing to participate in NEM Aggregation pursuant to 
+Special Condition 5 of this Schedule must also complete Form 14-937.      
+ 
+Eligible customers electing NSC must execute;  
+ 
+a. A Net Surplus Compensation Rate and Renewable Energy Credits Compensation 
+Selection Form (Form 14-906) to: 
+ 
+1a) Certify the Customer’s generating facility is a Qualifying Facility pursuant to the 
+Public Utility Regulatory Policies Act of 1978 that is exempt from certification at 
+the Federal Energy Regulatory Commission (FERC), or 
+ 
+1b) Provide notice to SCE that the Customer self-certified its Renewable Electrical 
+Generating Facility as a Qualifying Facility pursuant to the Public Utility 
+Regulatory Policies Act of 1978 by properly completing and filing FERC Form No. 
+556 with the FERC.  This requirement applies only to Eligible Customer-
+Generators as defined in Special Condition 7.a.ii below who interconnect a 
+Renewable Electrical Generating Facility with a capacity greater than 1 MW, and 
+is only required if the Customer elects to be eligible to receive NSC, in 
+accordance with the provisions of Special Condition 3 of this Schedule; and 
+ 
+2)  Select compensation in the form of either a check payment or a credit rollover.   
+ 
+Eligible customers must provide SCE all required forms in order to receive 
+compensation.  
+ 
+b. Renewable Energy Compensation Form (Form 14-935) at the end of each Relevant 
+Period to receive Renewable Energy Compensation.  See Special Condition 3.h.7. 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 60444-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57520-E
+Schedule NEM Sheet 5
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3490-E Caroline Choi Date Submitted Oct 18, 2016
+Decision 14-05-033; 16-04-
+020
+Senior Vice President Effective Feb 22, 2017
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+2. Metering Requirements for all Customer Served Under This Schedule:   
+ 
+a. For Customers whose OAT does not require a TOU meter, net energy shall be 
+measured (metered) using a single meter capable of registering the flow of energy in 
+two directions.  If the customer’s existing meter is not capable of measuring the flow 
+of energy in two directions, an appropriate meter shall be provided at the expense of 
+the Customer.  SCE may elect to install an additional meter or meters, at SCE’s 
+expense, with the Customer’s consent.  Such additional metering shall be used only 
+to provide the information necessary to accurately bill or credit the Customer. 
+ 
+b. For Customers whose OAT requires a TOU meter, net energy shall be measured 
+(metered) using a single TOU meter capable of registering the flow of energy in two 
+directions.  If the Customer’s existing meter is not a TOU meter capable of measuring 
+the flow of energy in two directions, an appropriate TOU meter shall be provided at 
+the expense of the Customer.  SCE may elect to install an additional meter or meters, 
+at SCE’s expense, with the Customer’s consent.  Such additional metering shall be 
+used only to provide the information necessary to accurately bill or credit the 
+Customer. 
+ 
+c. Customers defined in Special Condition 7.a.iii below shall be metered to allow for E s, 
+as defined in the Rates section above, to be billed pursuant to the Customer’s OAT. 
+ 
+d.  Where additional meters are required to accurately bill and/or credit the Customer, if 
+authorization is not granted by the Customer, SCE shall have the right to refuse 
+interconnection. 
+ 
+e. For NEM Aggregation accounts receiving service pursuant to Special Condition 5 of 
+this Schedule, the account directly interconnected to the Renewable Electrical 
+Generating Facility must have a single meter that is capable of registering the flow of 
+energy in two directions in 15-minute intervals.  If the customer’s existing meter is not 
+capable of recording the flow of energy in two directions at the 15-minute interval 
+level or if the customer’s existing meter is unable to register the amount of energy 
+exported to the grid by the Renewable Electrical Generating Facility, an appropriate 
+meter shall be provided at the expense of the customer.  All other aggregated 
+accounts must have a standard SCE billing meter capable of registering the flow of 
+energy in 15-minute intervals. 
+ 
+f. Additional metering provisions specific to Customers served under this Schedule who 
+utilize a Multiple Tariff Generating Facility or a NEM-Paired Storage System are 
+included in Special Conditions 4 and 6, respectively. 
+ 
+ 
+ 
+ 
+(T) 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+ 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+(N) 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 85955-E
+Cancelling Revised Cal. P.U.C. Sheet No. 62006-E
+Schedule NEM Sheet 6
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5026-E Michael Backstrom Date Submitted May 1, 2023
+Decision Vice President Effective May 30, 2023
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+3. Billing: 
+ 
+a. SCE shall provide all Customers served under this Schedule with net energy 
+consumption information and/or net energy export information with each monthly bill.  
+For CCA Service Customers, the CCA is responsible for providing SCE the billing CCA 
+generation charges or credits applicable to NEM CCA Service Customers.  For DA 
+Customers served under the Consolidated SCE Billing option, as defined in SCE’s Rule 
+22, the ESP is responsible for providing SCE the generation-related energy charges or 
+credits applicable to those DA Customers.   
+ 
+b. For all Customers served under this Schedule, all applicable Monthly Customer 
+Charges, Minimum Charges, Demand Charges, and/or other non-energy related 
+charges, excluding any adjustments due to power factor provisions, as defined in the 
+Customer’s OAT, shall apply, when applicable, regardless of the Customer’s monthly 
+net energy consumption or export. 
+ 
+c. For all Customers who meet the definition of a Residential or Small Commercial 
+Customer (as defined in SCE’s Rule 1), the monthly valued energy related charges and 
+credits are accumulated until the end of a Relevant Period.  Customers will be defaulted 
+to pay applicable charges monthly, referred to as the Monthly Billing Option (MBO).  
+However, upon a Customer’s request, SCE shall permit a Residential or Small 
+Commercial Customer to pay all applicable energy charges annually, referred to as the 
+Annual Billing Option (ABO).  The request must be made by the Customer upon 
+initiation of service under this Schedule or upon written notice to SCE no later than thirty 
+(30) days prior to the end of a Relevant Period, whichever applies.   
+ 
+d. For all Customers who do not meet the definition of a Residential or Small Commercial 
+Customer, and for those customers participating in NEM Aggregation it is mandatory to 
+pay all applicable charges, both energy and non-energy related, on a monthly basis, in 
+accordance with the Customer’s OAT.   
+ 
+e. For all Customers who meet the definition of a Residential or Small Commercial 
+Customer, the monthly bills shall show the accrued energy charges owed to SCE, or 
+accrued energy credits for net energy exported, whichever applies, until the end of a 
+Relevant Period. 
+ 
+f. For all Customers served under this Schedule, the value of energy credits will be used 
+to offset other time or TOU periods’ and/or subsequent billing periods’ energy related 
+charges when they exist.  However, at no time will energy credits be applied towards 
+any non-energy related charges, and such credits cannot be carried over to a new 
+Relevant Period except as provided in Special Condition 3.h.3. 
+ 
+g. For DA and CCA Service Customers, SCE will provide the applicable Delivery Service 
+and CRS charges or credits, and the Customer’s ESP or Community Choice Aggregator 
+is responsible for providing the applicable generation charges or credits. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+(T) 
+ 
+(T) 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 60445-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57745-E
+Schedule NEM Sheet 7
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3490-E Caroline Choi Date Submitted Oct 18, 2016
+Decision 14-05-033; 16-04-
+020
+Senior Vice President Effective Feb 22, 2017
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+3. Billing: (Continued) 
+ 
+h. At the end of each Relevant Period (as defined in Special Condition 7.g of this Schedule) 
+following the Date of Parallel Operation of the Customer’s generator(s) with SCE’s electrical 
+system, SCE shall proceed as follows: 
+ 
+1) For all Customers who meet the definition of a Residential or Small Commercial Customer 
+who did not choose to be billed monthly for their energy related charges, SCE will 1) 
+subtract all monthly valued accrued energy credits from all accrued energy charges from 
+Bundled Service Customers, or 2) subtract all monthly valued accrued Delivery Service 
+energy credits from all accrued Delivery Service energy charges and all monthly valued 
+CRS energy credits from all accrued CRS energy charges from DA and CCA Service 
+Customers.  If this calculation results in monies owed to SCE, such energy charges shall 
+be due and payable in accordance with the Customer’s OAT.  However, if this calculation 
+results in an excess energy credit, SCE shall neither pay the Customer for any unused 
+energy credit nor carry forward any unused energy credit.  The unused energy credit shall 
+be zeroed out and a new Relevant Period shall commence.  Eligible Customers electing 
+Net Surplus Compensation as provided for in part h.3 of this Special Condition may 
+receive additional credit or compensation.  Additionally, Special Condition 10 may apply 
+for Residential Customers.  For CCA Service Customers, SCE and the Community Choice 
+Aggregator shall complete an annual true-up of all charges and credits calculated 
+monthly, consistent with the provisions set forth under this Schedule.  Credits and charges 
+related to the Community Choice Aggregator’s generation services shall be based on the 
+information provided by the Community Choice Aggregator to SCE.  Any net balance 
+related to generation charges that are collected from an eligible NEM CCA Service 
+customer-generator will be paid annually by SCE to the Community Choice Aggregator as 
+set forth in Rule 23, Section Q, which describes the payment and collection terms 
+between the SCE and a CCA Service Customer.  For DA Customers, separate annual 
+true-ups of all charges and credits, consistent with the provisions set forth under this 
+Schedule, will be calculated by SCE for the applicable SCE charges and credits, and by 
+the ESP for the applicable ESP charges and credits.  Any net balance related to 
+generation charges that are collected from an eligible DA Customer will be paid annually 
+by SCE to the ESP as set forth in Rule 22, Section L. 
+ 
+2) For all Customers who do not meet the definition of a Residential or Small Commercial 
+Customer, and all Residential and Small Commercial Customers who choose to be billed 
+monthly for their energy related charges, an annual true-up occurs at the end of the 
+Relevant Period.  Upon completion of the annual true-up, any remaining credits will be 
+zeroed out and a new Relevant Period shall commence.  Eligible Customers electing Net 
+Surplus Compensation as provided for in part h.3 of this Special Condition may receive 
+additional credit or compensation.  Additionally, Special Condition 10 may apply for 
+Residential Customers.  For DA and CCA Service Customers who are billed monthly for 
+their energy-related charges, any unused Delivery Service or CRS energy credits shall not 
+be carried forward to the start of a new Relevant Period; rather, the unused Delivery 
+Service or CRS energy credits shall be zeroed out and a new Relevant Period will 
+commence.  DA and CCA Service Customers should look to their ESP or Community 
+Choice Aggregator for the treatment of unused generation energy credits.  
+ 
+ 
+ 
+ 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 69923-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60446-E
+Schedule NEM Sheet 8
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4325-E Carla Peterman Date Submitted Oct 29, 2020
+Decision Senior Vice President Effective Nov 28, 2020
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+3. Billing: (Continued) 
+ 
+h. (Continued) 
+ 
+3) Effective January 1, 2010, Eligible Bundled Service Customer-Generators who 
+qualify as Net Surplus Generators (as defined in Special Condition 7) may be 
+eligible for compensation for Net Surplus Energy produced during a Relevant 
+Period commencing in 2010 or thereafter.  Net Surplus Generators must elect 
+compensation by executing NEM Generating Facilities Interconnection 
+Application (Form 14-957).  Customers are eligible to revise their Net Surplus 
+Energy elections, annually, as provided under Rule 12. 
+ 
+4) Bundled Service Customers, except those included in an NEM Aggregation 
+arrangement, are eligible to receive NSC if at the conclusion of the Relevant 
+Period the true-up process indicates that the customer is a Net Surplus 
+Generator, and if the customer has executed all forms identified in Special 
+Condition 1.  If no Net Surplus Energy is produced, the customer is not eligible to 
+receive NSC.  Eligible customers from whom SCE has not obtained all required 
+forms at the time of the processing of the final bill of the Relevant Period will not 
+receive NSC. 
+ 
+5) To calculate NSC, the kilowatt hours of Net Surplus Energy are multiplied by the 
+NSCR.  For the customer that elects the payment option, the NSC will be 
+reduced by any amount that the customer owes to SCE before a check is issued 
+to the customer.  For the customer that elects the rollover option, the NSC will be 
+applied to future charges (customer’s bill account) in the next Relevant Period.  
+Net Surplus Energy is set to zero at the start of the next Relevant Period. 
+ 
+The customer may choose to change the compensation option from a check 
+payment to a rollover or vice versa once a year.  
+ 
+6) NSCR is equal to the simple rolling average of SCE hourly $-per-kWh prices 
+from Hour Ending 08 through Hour Ending 17 (7 a.m. to 5 p.m.) for each day for 
+the 12 month period corresponding to the customer’s 12-month Relevant Period.  
+The rolling average is calculated on a monthly basis to be effective the first of 
+each month and is applied to all customers with a Relevant Period ending in that 
+month. SCE uses a full 12 months (365 days, or 366 days for leap years) of 
+DLAP prices, as published on the CAISO Open Access Same-time Information 
+System (OASIS), ending the twentieth (20 th) day of each month.  SCE then 
+calculates the NSCR within five days of the first of the month to allow the CAISO 
+to finalize the day-ahead DLAP prices.  This rate will be applied to all eligible Net 
+Surplus Generators, irrespective of their rate class.  The NSCR will be posted on 
+SCE’s website and updated monthly. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 66582-E
+Cancelling Revised Cal. P.U.C. Sheet No. 55667-E
+Schedule NEM Sheet 9
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3964-E R.O. Nichols Date Submitted Mar 7, 2019
+Decision President Effective Mar 7, 2019
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+3. Billing: (Continued) 
+ 
+h. (Continued) 
+ 
+7) The California Energy Commission (CEC) has determined the eligibility of NEM 
+customer facilities for the Renewables Portfolio Standard (RPS) and has 
+developed an ownership verification, tracking and certification process for 
+Renewable Energy Credits (RECs) created by net surplus generators, which is 
+set forth in the CEC’s RPS Eligibility Guidebook, available at: 
+http://www.energy.ca.gov/renewables/documents/#rps.   
+ 
+Pursuant to D.11-06-016, SCE will include a Renewable Attribute Adder (RAA) 
+with the NSC rate if the eligible Customer or the Customer’s aggregator 
+provides a competed Form 14-935 (see Special Condition 1.b) verifying that the 
+Customer:  (1) has registered the generation facility at the WREGIS system; (2) 
+has obtained RPS ownership certification from the CEC for the Customer’s Net 
+Surplus Energy and provides this certification to SCE; and (3) allows for the 
+ownership of the RECs associated with the Customer’s Net Surplus Energy to 
+be transferred to SCE.  For details on the CEC and WREGIS certification 
+process, refer to the CEC’s RPS Eligibility Guidebook, which can be found at 
+the link shown above.  
+ 
+The RAA will be calculated using the most recent Western Electricity 
+Coordinating Council (WECC) average renewable premium, based on United 
+States Department of Energy (DOE) published data.  The RAA will only be paid 
+to those Net Surplus Generators who provide RECs to SCE.  
+ 
+Value of RECs = Net Surplus kWhs x RAA. See RATES section. 
+ 
+At the conclusion of each Relevant Period, the eligible Customer will notify SCE 
+that the Customer has transferred in WREGIS the RECs associated with the 
+Net Surplus Energy by completing Form 14-935 and will send the CEC RPS 
+certificate with the form to SCE. 
+ 
+The RAA will be updated annually and is available at: 
+ 
+https://www.sce.com/wps/portal/home/regulatory/tariff-books/rates-pricing-
+choices/renewable-energy-credit 
+ 
+i. If any Customer terminates service under this Schedule prior to the end of a Relevant 
+Period, SCE shall reconcile the Customer’s consumption and production of electricity 
+and bill the Customer for positive Net Energy charges, if any, as provided in Special 
+Condition 3.h.  Except for customers who opted out of CCA Service during the CCA’s 
+Follow-up Notification Period in accordance with Rule 23 Section I, an Eligible 
+Customer switching from CCA Service or DA Service to Bundled Service or from 
+Bundled Service to CCA Service or DA Service during the Relevant Period shall be 
+deemed as terminating service under this Schedule prior to the end of the Relevant 
+Period, and SCE shall reconcile the Customer’s consumption and production of 
+electricity and bill the Customer for positive Net Energy charges, if any, as provided in 
+Special Condition 3.h.  Upon switching, the Customer shall begin a new Relevant 
+Period. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+(N) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 60447-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57522-E
+Schedule NEM Sheet 10
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3490-E Caroline Choi Date Submitted Oct 18, 2016
+Decision 14-05-033; 16-04-
+020
+Senior Vice President Effective Feb 22, 2017
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+3.  Billing: (Continued) 
+ 
+j. If interval meters are employed, the total energy of the aggregated intervals over a     
+billing period is valued before offsetting energy charges with energy credits, in each 
+aggregated TOU period separately, when applicable. 
+ 
+k. Special Conditions 3.a through 3.j do not apply to Customers defined in Special 
+Condition 7.a.iii below.  Rather, pursuant to the Rates section above, all charges and 
+provisions of the Customer’s OAT apply, and all energy and non-energy charges are 
+due and payable each billing period with no true-up at the end of the Relevant Period.  
+For DA and CCA Service Customers, SCE will provide the applicable delivery service 
+charges, and the Customer’s ESP or Community Choice Aggregator is responsible for 
+the applicable generation charges.  For Customers defined in Special Condition 7.a.iii 
+below who also receive service pursuant to Special Conditions 4 and 6 below, the 
+provisions of this Special Condition 3.k also apply. 
+ 
+l. The energy charges and credits for Customers utilizing NEM-Paired Storage Systems 
+are billed in accordance with the provisions of Special Condition 6 below. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+ 
+ 
+ 
+ 
+(T) 
+(T) 
+ 
+ 
+(N) 
+(N) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 58723-E
+Cancelling Original Cal. P.U.C. Sheet No. 57523-E, 
+60448-E
+Schedule NEM Sheet 11
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3371-E R.O. Nichols Date Submitted Feb 29, 2016
+Decision 16-01-044 Senior Vice President Effective Jul 1, 2017
+Resolution E-4792
+ 
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+4. Customers with a Multiple Tariff Generating Facility:  Where a Customer utilizes a Multiple 
+Tariff Generating Facility (defined in Special Condition 7.h) the applicable provisions of this 
+Special Condition 4 shall apply.  Additionally, where this Special Condition conflicts with any 
+other Special Condition within this Schedule, the provisions contained in this Special 
+Condition shall prevail.  Multiple Tariff Generating Facilities consisting of generating facilities 
+served under Schedule FC-NEM or BG-NEM that receive service pursuant to Special 
+Condition 4.a below are not eligible to concurrently participate in an NEM Aggregation 
+arrangement pursuant to Special Condition 5 of this Schedule. 
+ 
+a. A Customer utilizing a Multiple Tariff Generating Facility consisting of all NEM 
+Renewable Electrical Generating Facilities, where at least one NEM Renewable 
+Electrical Generating Facility is served under this Schedule shall adhere to the 
+following: 
+ 
+1. Where a Customer chooses not to install separate Net Generation Output 
+Metering (NGOM) on each group of NEM Eligible Generators (as defined in 
+Special Condition 7), all energy exported to SCE’s system from any group of 
+NEM Eligible Generators shall receive only the generation component energy 
+credits per the Customer’s OAT.  The NEM credits will not include any portion 
+of the Delivery Service energy rate components, or any other component of 
+the Customer’s OAT, unless separate NGOMs are installed on each group of 
+NEM Eligible Generators.  A Customer with a Multiple Tariff Generating 
+Facility that includes a Renewable Electrical Generating Facility served on 
+Schedule NEM-ST shall be responsible for all nonbypassable charges as 
+specified therein. 
+ 
+2. Where a Customer chooses to install NGOM on a group of NEM Eligible 
+Generators, the NGOM must conform to the requirements set forth in SCE’s 
+Rule 21, Section J.  The total energy exported to SCE’s system, as 
+determined at the point of common coupling meter (SCE billing meter) will be 
+allocated to each group based on its NGOM reading to the total of all NGOM 
+readings.  As an example, if the SCE billing meter registered 900 kWh of 
+energy exported to SCE’s system, and during that same time period a group 
+of NEM Eligible Generators (group 1) had an NGOM registration of 2,000 
+kWh, while another group of NEM Eligible Generators (group 2) had an 
+NGOM registration of 4,000 kWh, then group 1 would be allocated 300 kWh, 
+and group 2 would be allocated 600 kWh, for NEM crediting purpose. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+(N) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 58724-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57524-E, 
+60449-E
+Schedule NEM Sheet 12
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3371-E R.O. Nichols Date Submitted Feb 29, 2016
+Decision 16-01-044 Senior Vice President Effective Jul 1, 2017
+Resolution E-4792
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+4. A Customer with a Multiple Tariff Generating Facility: (Continued) 
+ 
+b. A Customer with a Multiple Tariff Generating Facility consisting of one or more NEM 
+Eligible Generators served under this Schedule, and one or more Non-NEM Eligible 
+Generators (defined in Special Condition 7.j), shall adhere to the following: 
+ 
+1. Where all Non-NEM Eligible Generators have a non-export relay (Reverse or 
+minimum power protection), per tariff Rule 21, Section G.1.i, Screen 2 (option 1 
+or 2), thus assuring no export to SCE’s system from any Non-NEM Eligible 
+Generator, the Customer is not required to install NGOM on their NEM Eligible 
+Generator(s).  However, where a Customer’s Multiple Tariff Generating Facility 
+includes more than one group of NEM Eligible Generators, NGOM in 
+accordance with Special Condition 4.a.2 above, must be installed to determine 
+what percentage of the measured excess energy exported to SCE’s system will 
+receive NEM energy credits at the full bundled rate (Delivery Service plus 
+Generation) and what percentage of the measured excess energy exported to 
+SCE’s system will receive NEM generation energy credits at the generation rate 
+component only.  Otherwise, unallocated NEM-eligible excess energy exported 
+to SCE’s system will be subject to the provisions of Special Condition 4.a.1 
+above. 
+ 
+2. Where one or more of the Customer’s Non-NEM Eligible Generators does not 
+have a non-export relay, and where each group of the NEM Eligible Generators 
+does not have NGOM installed in accordance with Special Condition 4.a.2 
+above, NEM credits will only be applicable on the NEM Eligible Generators that 
+do have NGOM. 
+ 
+Monthly valued NEM credits for each of the NEM-Eligible Generator groups with 
+NGOM will be the lesser of its proportion of the NGOM reading to the total of all 
+NEM-eligible generators’ NGOM readings multiplied at the PCC, or its NGOM 
+readings. 
+ 
+3. The value of energy credits will be applied consistent with the appropriate NEM 
+tariff as follows, including the requirement that Customers with a Multiple Tariff 
+Generating Facility that includes a Renewable Electrical Generating Facility 
+served on Schedule NEM-ST shall be responsible for all nonbypassable 
+charges as specified therein: 
+ 
+I) First, apply BG-NEM and/or FC-NEM generation rate component credits (if 
+any) to generation rate component charges on any aggregated account(s) 
+served by the Generation Facility. 
+ 
+II) Second, apply any remaining BG-NEM and/or FC-NEM credits from (I) 
+above to the remainder of generation rate component charges on the 
+account served by the Generation Facility. 
+ 
+III) Third, apply NEM-ST energy (generation and delivery service rate 
+component) credits to any remaining energy charges of the account that is 
+served by the Renewable Electrical Generation Facility. 
+ 
+IV) Fourth, apply NEM energy (generation and delivery service rate 
+component) credits to any remaining energy charges of the account that is 
+served by the Renewable Electrical Generation Facility. 
+ 
+4. For purposes of tariff administration, other metering configurations may be 
+allowed at SCE’s discretion. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+(N) 
+ 
+(T) 
+(T) 
+ 
+ 
+(T) 
+ 
+ 
+ 
+(N) 
+  | 
+(N) 
+ 
+(T) 
+  | 
+(T) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 57525-E
+Cancelling Revised Cal. P.U.C. Sheet No. 55429-E
+Schedule NEM Sheet 13 (T)
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3282-E R.O. Nichols Date Submitted Oct 2, 2015
+Decision Senior Vice President Effective Nov 1, 2015
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+5. Multiple Meter Aggregation (NEM Aggregation).  Pursuant to PU Code Section 2827(h)(4), 
+Customers served under this Schedule who have additional metered service accounts located 
+on property where the Renewable Electrical Generating Facility is located and/or on property 
+adjacent or contiguous to the property on which the Renewable Electrical Generating Facility is 
+located, if those properties are all solely owned, leased, or rented by the Customer, may choose 
+to have the electrical load (kWh) served by such meters aggregated for the purposes of 
+determining if the Customer is a net consumer or a net producer of energy.  For the purposes of 
+NEM Aggregation only, parcels that are divided by a street, highway, or public thoroughfare are 
+considered contiguous, provided they are within an unbroken chain of otherwise contiguous 
+parcels and are all solely owned, leased or rented by the Customer, as verified in Form 14-937.  
+Customers are also eligible to participate in NEM Aggregation where all meters in an NEM 
+Aggregation arrangement are located within an unbroken chain of contiguous parcels that are all 
+solely owned, leased, or rented by the Customer.  For example, if there are three parcels (A, B 
+and C), all of which are solely owned, leased or rented by the Customer, where A contains the 
+Renewable Electrical Generating Facility and abuts B, B abuts C, but A and C are separated by 
+B, then the loads of all three parcels shall be eligible to participate in NEM Aggregation.  Refer to 
+Diagram 1 (for illustrative purposes only).  In addition, if there are five parcels (A, B, C, D and E) 
+that form a cluster of contiguous parcels, where A contains the Renewable Electrical Generating 
+Facility, and D and E are separated from A, B, and C by a street, highway or public 
+thoroughfare, for the purposes of participating in NEM Aggregation only, all five parcels are 
+considered contiguous, provided they are otherwise contiguous and all solely owned, leased or 
+rented by the Customer.  Refer to Diagram 2 (for illustrative purposes only). 
+ 
+ Diagram 1             Diagram 2 
+ 
+ 
+ 
+                    
+ 
+ 
+ 
+                                                                        
+ 
+ 
+  
+ 
+ 
+Pursuant to PU Code Section 2827(h)(4)(G), the maximum capacity of the Renewable Electrical 
+Generating Facility, or a combination of those facilities, eligible for participation under this 
+Special Condition 5 is 1 MW.  The Customer must provide SCE with a list of additional metered 
+service accounts on Form 14-937 (subject to eligibility verification by SCE) that are to be 
+included in the NEM Aggregation arrangement, which consists of the account directly 
+interconnected to and located on the same property as the Renewable Electrical Generating 
+Facility (the generating account) and all aggregated accounts.  A Customer may have more than 
+one NEM Aggregation arrangement, but accounts may not be shared across multiple 
+arrangements.  Aggregated accounts may not have any other NEM-Eligible Generators directly 
+interconnected to them, but are permitted to have Non-NEM Eligible Generators directly 
+interconnected to them.  All accounts in an NEM Aggregation arrangement must be (1) all 
+Bundled Service accounts; or (2) all DA Service accounts served by the same ESP; or (3) all 
+Community Choice Aggregation Service accounts served by the same CCA.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+(N) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(L) 
+ 
+
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 58557-E
+Cancelling Revised Cal. P.U.C. Sheet No. 62007-E
+Schedule NEM Sheet 14
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3351-E-A Caroline Choi Date Submitted Apr 21, 2017
+Decision Senior Vice President Effective Oct 13, 2017
+Resolution E-4665
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+5. Multiple Meter Aggregation (NEM Aggregation) (Continued) 
+ 
+A Customer may elect to modify the aggregated accounts included in an NEM Aggregation 
+arrangement, provided a minimum of 60-days’ notice is provided to SCE prior to the change 
+taking effect, and such change remains in effect for a minimum of 12 months and doesn’t result 
+in the Renewable Electrical Generating Facility being oversized compared to the electrical 
+requirements of the NEM Aggregation arrangement.   
+Customers electing to participate in NEM Aggregation are required to pay all applicable 
+charges, both energy and non-energy charges, on a monthly basis in accordance with their 
+OAT, pursuant to the provisions of Special Condition 3.d. All accounts in an NEM Aggregation 
+arrangement will be placed on the same billing cycle, and will be billed individually pursuant to 
+Special Condition 3 of this Schedule.  The electrical consumption (kWh) registered on each 
+account’s meter will be reduced, for NEM billing purposes, by a proportional allocation, at the 
+15-minute interval level, of the electricity generated by the Renewable Electrical Generating 
+Facility that is exported to SCE’s grid.  The proportional allocation is determined per billing 
+period based on the cumulative consumption of each aggregated account compared to the 
+cumulative consumption of the NEM Aggregation arrangement since the start of the Relevant 
+Period, and the cumulative generation exported from the Renewable Electrical Generating 
+Facility since the start of the Relevant Period.  The Customer is required to designate one 
+account in the NEM Aggregation arrangement to receive any remaining kWh not allocated due 
+to rounding after the proportional allocation methodology described above is completed.  All 
+accounts included in an NEM Aggregation arrangement are ineligible to receive NSC from 
+SCE.  However, if an aggregated account that is not a generating account is separated from 
+the NEM Aggregation arrangement, and subsequently qualifies for NEM, that account is eligible 
+to receive NSC on a going-forward basis, provided it meets all other NEM eligibility criteria.   
+ 
+ Customers served under this Special Condition are subject to the following additional billing 
+services charges: 
+ 
+Manually Billed Accounts –  
+a. Account Set-Up Fee: $25.00 per account in the NEM Aggregation arrangement.               
+Any account added to an NEM Aggregation arrangement is subject to this one-time fee.   
+b. Monthly Billing Fee: $20.00 per month per account in the NEM Aggregation arrangement.  
+ 
+Automated Billed Accounts –  
+a. Account Set-Up Fee: $16.00 per account in the NEM Aggregation arrangement.               
+Any account added to an NEM Aggregation arrangement is subject to this one-time fee.   
+b. Monthly Billing Fee: $2.70 per month per account in the NEM Aggregation arrangement.  
+ 
+Aggregated accounts are eligible for the same demand response programs as NEM customers.  
+All demand response programmatic elements (e.g., eligibility) and payments to aggregated 
+accounts are based on the metered usage disregarding any contributions from kWh allocated to 
+the aggregated accounts based on the proportional allocation methodology described above. 
+ 
+Customers electing to participate in NEM Aggregation are not eligible to concurrently participate 
+under the terms of Special Condition 4.a. of this Schedule, as provided.  Customers may dual 
+participate under the terms of Special Condition 4.b. of this Schedule, provided there is only one 
+NEM Renewable Electrical Generating Facility behind the same meter as the Non-NEM Eligible 
+Generator(s). 
+ 
+ 
+ 
+ 
+ 
+   
+  
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+ 
+ 
+ 
+ 
+(T) 
+ 
+ 
+ 
+(D) 
+ 
+(I) 
+ 
+(N) 
+  | 
+  | 
+(N) 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 89873-E
+Cancelling Revised Cal. P.U.C. Sheet No. 69391-E
+Schedule NEM Sheet 15
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5497-E Michael Backstrom Date Submitted May 2, 2025
+Decision Sr. Vice President Effective Jun 2, 2025
+Resolution
+SPECIAL CONDITIONS (Continued) 
+ 
+5. Multiple Meter Aggregation (NEM Aggregation)(Continued) 
+ 
+Existing NEM customers electing NEM Aggregation who also have executed NEM 
+interconnection agreements and who are making no modifications to their Renewable Electrical 
+Generating Facilities other than electing NEM Aggregation will not be required to complete new 
+interconnection agreements, nor conduct new interconnection studies. 
+  
+ In lieu of interconnecting the Renewable Electrical Generating Facility to an existing metered 
+service account, Customers electing to participate in NEM Aggregation may request an 
+additional service from SCE for the purposes of interconnecting the Renewable Electrical 
+Generating Facility.  This additional service and associated metering must be located on the 
+same property as the Renewable Electrical Generating Facility at a location approved by SCE 
+and must not result in adverse impacts to SCE’s electrical system, as determined by SCE.  No 
+additional load other than incidental load related to the inverters and support of the Renewable 
+Electrical Generating Facility may be registered on this additional metered service.  This 
+additional service and associated metering are provided under the Added Facilities provisions of 
+Rule 2.H and are at the Customer’s expense.  The new service will be billed monthly for any 
+charges of its OAT not already provided for under Added Facilities. 
+ 
+6. NEM-Paired Storage Systems. 
+ 
+Pursuant to D.16-04-020 and D.14-05-033, where a Customer utilizes a NEM-Paired Storage 
+System (as defined in Special Condition 7.l), the applicable provisions of this Special Condition 
+6 shall apply.  Additionally, where this Special Condition conflicts with any other Special 
+Condition within this Schedule, the provisions contained in this Special Condition shall prevail.  
+Customers with NEM-Paired Storage Systems who take service under this Special Condition 
+are exempt from Interconnection Request fees, Supplemental Review fees, Detailed Study 
+costs, the costs associated with any Distribution or Network upgrades triggered by the 
+Interconnection Request,i and Standby charges. 
+ 
+a. Sizing Requirements.  The size of the Integrated or Directly Connected Energy Storage 
+Device is determined by the inverter alternating current (AC) nameplate rating. 
+ 
+i. Small NEM-Paired Storage Systems: There are no additional sizing 
+requirements for the Integrated or Directly Connected Energy Storage Device(s) 
+relative to the size of the Renewable Generator. 
+ 
+ 
+ 
+ 
+i In the event the Integrated or Directly Connected Energy Storage Device is added subsequent to the date that the 
+Renewable Generator received Permission to Operate, the same interconnection cost categories applicable to the 
+Renewable Generator shall apply to the Integrated or Directly Connected Energy Storage Device.  Customers defined in 
+Special Conditions 7.a.ii and 7.a.iii below are responsible for the costs of Distribution and Network Upgrades triggered 
+solely by their Interconnection Requests. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(L) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 89874-E
+Cancelling Revised Cal. P.U.C. Sheet No. 69391-E, 
+66669-E
+Schedule NEM Sheet 16
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5497-E Michael Backstrom Date Submitted May 2, 2025
+Decision Sr. Vice President Effective Jun 2, 2025
+Resolution
+SPECIAL CONDITIONS (Continued) 
+ 
+6. NEM-Paired Storage Systems. (Continued) 
+ 
+a. Sizing Requirements. (Continued) 
+ 
+ii. Large NEM-Paired Storage Systems: The maximum aggregate output 
+capacity of the Integrated or Directly Connected Energy Storage Device(s) 
+can be no greater than 150 percent of the Renewable Generator’s maximum 
+output capacity.  For example, if the maximum output capacity of the 
+Renewable Generator is 15 kW, the maximum aggregate output capacity of 
+the Integrated or Directly Connected Energy Storage Device(s) can be no 
+greater than 22.5 kW.  Pursuant to D.20-06-017, the maximum aggregate 
+output capacity limitation shall not apply for a period of three years beginning 
+August 16, 2020 and ending August 15, 2023. A request to extend this 
+deadline was granted by the Executive Director of the California Public 
+Utilities Commission on September 5, 2023, and the maximum aggregate 
+output capacity limitation shall not apply until on and after August 16, 2025. 
+ 
+iii. Direct Current-Coupled NEM-Paired Storage System: The system size shall 
+be determined as the lesser of the shared inverter’s nameplate capacity and 
+the storage device’s maximum continuous output rating.  Continuous output 
+of a storage device is determined by referring to the device’s technical 
+specifications sheets. If that metric is not included, the inverter nameplate 
+rating will be used. 
+ 
+b. Metering Requirements. 
+ 
+i. Small NEM-Paired Storage Systems. 
+ 
+A. Solar Photovoltaic (PV): Where the Renewable Generator(s) utilizes 
+solar PV only, an estimation methodology, as described in Section 
+6.c below, shall apply in lieu of additional metering.  As an alternative 
+option, at the start of a new Relevant Period, a Customer may elect to 
+adhere to the metering and billing requirements applicable to Large 
+NEM-Paired Storage Systems.  Customers who elect this option shall 
+not be subject to the estimation methodology so long as they adhere 
+to the necessary metering requirements.  The cost of the metering 
+required under this option shall not exceed $600, unless Complex 
+Metering, as described below, is required.  For Small NEM-Paired 
+Storage Systems that are unable to meet the metering requirements 
+of Large NEM-Paired Storage Systems, the estimation methodology 
+shall apply. Where the Small NEM-Paired Storage System is 
+combined in a Multiple Tariff Generating Facility pursuant to Special 
+Condition 4 of this Schedule and the Renewable Generator(s) utilizes 
+NGOM, the billing provisions of Special Condition 4 will apply and not 
+the estimation methodology described in Section 6.c below. 
+ 
+B. Non-Solar PV: Where the Renewable Generator(s) utilizes a 
+technology other than only solar PV, the Customer must adhere to 
+the metering and billing requirements applicable to Large NEM-
+Paired Storage Systems.  The cost of the metering required under 
+this provision shall not exceed $600, unless Complex Metering, as 
+described below, is required. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(L) 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+(L)(N) 
+      | 
+      | 
+    (N) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+  
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 66670-E
+Cancelling Original Cal. P.U.C. Sheet No. 60452-E
+Schedule NEM Sheet 17
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3973-E-A R.O. Nichols Date Submitted Apr 25, 2019
+Decision 19-01-030 President Effective Apr 21, 2019
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+6. NEM-Paired Storage Systems. (Continued) 
+ 
+b. Metering Requirements. (Continued) 
+ 
+ii. Large NEM-Paired Storage Systems.   
+ 
+ A.    Customers must adhere to the metering and billing requirements 
+contained within Special Condition 4.b of this Schedule or use power 
+control-based options described below. For metering and billing 
+purposes only, the Integrated or Directly Connected Energy Storage 
+Device is treated as the Non-NEM Eligible Generator when applying 
+the provisions of Special Condition 4.b of this Schedule.  The cost of 
+the metering required under this provision shall not exceed $600, 
+unless Complex Metering, as described below, is required.  
+Renewable Electrical Generation Facilities that are unable to meet 
+the metering requirements of Special Condition 4.b of this Schedule 
+are ineligible for service under this Schedule as a NEM-Paired 
+Storage System. 
+ 
+B.         Power control-based firmware or software options shall be certified to 
+a national standard. Power control-based options include using 
+equipment that prevents electricity to be exported from the storage 
+device to the grid, and using equipment that prevents electricity 
+imported from the grid to charge the storage device. Open loop 
+response time outlined in the control technical specification 
+documentation must not be greater than 10 seconds. 
+ 
+iii. Complex Metering.  A NEM-Paired Storage System that utilizes more than 
+two self-contained meters in addition to the SCE revenue meter(s) or any 
+non-self-contained meters (i.e., those that include CTs/PTs) (not including the 
+SCE revenue meter(s)) is considered as having Complex Metering for the 
+purposes of this Special Condition. 
+ 
+ 
+ 
+ 
+(L) 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+  | 
+  | 
+  | 
+(N) 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Original Cal. P.U.C. Sheet No. 63494-E
+Schedule NEM Sheet 18
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+6. NEM-Paired Storage Systems. (Continued) 
+ 
+c. Estimation Methodology for Small NEM-Paired Storage Systems (where storage is < or = 
+10 kW rated capacity). 
+ 
+Small NEM-Paired Storage billing uses an “estimation method” that caps maximum 
+allowable NEM bill credits based on solar photovoltaic (PV) generation estimates. The 
+approach used to develop the generation estimates applied to NEM-Paired Storage billing 
+is as follows: 
+ 
+i. SCE has established a maximum cap for NEM‐eligible exports by California Energy 
+Commission (CEC) Climate Zone for each calendar month based on standardized 
+monthly estimates that are scaled for a given NEM customer based on the size of the 
+customer’s solar system.  
+ 
+ii. To develop the generation estimates, SCE used the California Solar Initiative 
+Expected Performance-Based Buydown (CSI EPBB) calculator to produce a single, 
+scalable, production factor table.  This table captures the estimated amount of kWh 
+generated per installed kW of solar PV capacity (kWh/kW production factor) for each 
+calendar month and each of the nine CEC Climate Zones in SCE’s service area.  
+Climate Zones are referred to as Baseline Regions in SCE’s tariffs. 
+ 
+iii. For a given NEM-Paired Storage customer, the NEM-eligible cap on exports is 
+calculated by multiplying the Customer-appropriate production factor for a given 
+month and Climate Zone (based on billing period and location) and scaling the kWh 
+by the customer’s PV installed capacity (in kW). 
+ 
+iv. The solar PV configuration assumptions used in the CSI EPBB calculator to generate 
+the scalable production factor table are the following: 
+ 
+ Tilt: If Optimal Tilt as defined by the EPBB Calculator was <20 degrees for a given 
+Climate Zone, then 20 degree tilt was used, otherwise Optimal Tilt as defined by 
+the EPBB Calculator was used 
+ Azimuth: 180 degrees 
+ For each climate zone, identified the three zip codes with the most residential PV 
+installations; chose the zip code with the highest generation estimate per the 
+EPBB calculator 
+ Panel: SunPower.SPR-327NE-WHT-D 
+ Inverter: SPR-X20-327-C-AC (240V) or any other micro-inverter designed to 
+match the panels. 
+o As a reference, inverter efficiency is 96%. 
+ Mounting Method: > 6 “ average standoff (EPBB default) 
+ Shade: Minimal (EPBB default) 
+ 
+ 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 63495-E
+Cancelling Original Cal. P.U.C. Sheet No. 60453-E
+Schedule NEM Sheet 19 (T)
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+6. NEM-Paired Storage Systems. (Continued) 
+ 
+c. Estimation Methodology for Small NEM-Paired Storage Systems…(Continued) 
+ 
+v. Once implemented in SCE’s billing system, Customers subject to this provision shall 
+have a maximum monthly generation output cap established for each calendar month 
+based on the “production factor table.” 
+ 
+vi.  In all cases, the first day of the Customer’s Billing Period determines which calendar 
+month cap is used for that Billing Period. For example, if the Customer’s Billing Period 
+starts on January 15 and ends on February 15, the January cap is used.  
+ 
+vii. Any export (E F) registered on SCE’s revenue meter(s) that exceeds the monthly cap 
+is not eligible for credit as outlined in the Rates section above (i.e., NEM credit) and is 
+forfeited by the Customer.  For example, if a Customer’s monthly cap amount for 
+January is 500 kWh and the Customer exports 525 kWh for that monthly Billing 
+Period, 25 kWh are not eligible for NEM credit and are forfeited.  The forfeited kWh 
+are assumed to have occurred during the Customer’s highest priced TOU period, 
+regardless of when the energy was actually exported.  If the amount of forfeited kWh 
+for a Billing Period exceeds the amount of E F registered during the Customer’s 
+highest priced TOU period, the remaining kWh subject to forfeit are then removed 
+from the next highest priced TOU period and so on until all kWh subject to forfeit are 
+accounted for.  For example, if a Customer has a July monthly cap amount of 700 
+kWh and exports 1,000 kWh, 300 kWh must be forfeited.  If the Customer exported 
+200 kWh in the Summer On-peak period and 800 kWh in the Summer Mid-Peak 
+period, 200 kWh of the forfeited 300 kWh are removed from the Summer On-Peak 
+period (so the Customer’s EF during the Summer On-Peak period is billed at zero); the 
+remaining 100 kWh of the forfeited 300 kWh are removed from the Summer Mid-Peak 
+period (so the Customer’s E F during the Summer Mid-Peak period is billed at 700 
+kWh).  Forfeited kWh are not eligible for NSC. 
+ 
+d. Interconnection and Safety Requirements.  NEM-Paired Storage Systems must meet 
+the technical and safety standards required for interconnection under Rule 21.  This 
+includes evaluation under the same technical interconnection standards currently 
+applied to Generating Facilities that are not paired with energy storage devices. 
+ 
+e. NEM Transition Provisions.  NEM-Paired Storage Systems are subject to the 
+transition provisions included in Special Condition 11 below.  In regards to Special 
+Condition 11.b, NEM-Paired Storage Systems shall remain eligible for service under 
+this Schedule provided the capacity of the Integrated or Directly Connected Energy 
+Storage Device is not increased by more than 10 percent of its original maximum 
+aggregate output capacity. 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+(N) 
+ 
+(T) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 63496-E
+Cancelling Original Cal. P.U.C. Sheet No. 60454-E
+Schedule NEM Sheet 20 (T)
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+ 
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+7. Definitions:  The following definitions are applicable to service provided under this Schedule. 
+ 
+a. Eligible Customer-Generator:  
+ 
+i. A Residential, Small Commercial (as defined in SCE’s Rule 1), commercial, 
+industrial, or agricultural customer who uses a Renewable Electrical Generation 
+Facility, or a combination of those facilities, with a total capacity of not more 
+than 1 MW, that is located on the customer’s Premises, that is interconnected 
+and operates in parallel with SCE’s electric system, intended primarily to offset 
+part or all of the Customer’s own electrical requirements, and that meets all 
+applicable safety and performance standards established by the National 
+Electrical Code, the Institute of Electrical and Electronics Engineers, and 
+accredited testing laboratories such as Underwriters Laboratories and, where 
+applicable, rules of the Public Utilities Commission regarding safety and 
+reliability.  A Customer with an electrical generating facility that meets these 
+standards and rules shall not be required to install additional controls, perform 
+or pay for additional tests, or purchase additional liability insurance. 
+ 
+ii. The California Department of Corrections and Rehabilitation (CDCR) using a 
+Renewable Electrical Generating Facility, or a combination of those facilities, 
+with a total capacity of not more than 8 MW, that is located on the CDCR’s 
+owned, leased or rented Premises, that is interconnected and operates in 
+parallel with SCE’s electric system, and that is intended primarily to offset part 
+or all of the CDCR’s own electrical requirements.  The amount of any wind 
+generation exported to SCE’s electric grid by a Renewable Electrical 
+Generating Facility with a total capacity greater than 1 MW must not exceed 
+1.35 MW at any time to qualify for service hereunder.   
+ 
+ 
+  
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 63497-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60455-E
+Schedule NEM Sheet 21 (T)
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+ 
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+7. Definitions: (Continued) 
+ 
+a. Eligible Customer-Generator: (Continued) 
+ 
+iii. An establishment under the jurisdiction of the United States Army, Navy, Air 
+Force, Marine Corps or Coast Guard (hereinafter referred to as a “United States 
+Armed Forces base or facility”) where the total capacity of all Renewable 
+Electrical Generation Facilities exceeds 1 MW and where the United States 
+Armed Forces base or facility uses a Renewable Electrical Generation Facility, 
+or combination of those facilities, that is located on the United States Armed 
+Forces base or facility’s owned, leased or rented Premises, interconnected and 
+operates in parallel with SCE’s electric system, and intended primarily to offset 
+part or all of the United States Armed Forces base or facility’s own electrical 
+requirements with a total capacity per Premises that does not exceed the lesser 
+of (A) 12 MW or (B) 1 MW greater that the minimum load of the base or facility 
+over the preceding 36 months.  Renewable Electrical Generation Facilities shall 
+not be sized in excess of the load of the meter to which they are directly 
+interconnected.  If the total capacity of the Renewable Electrical Generation 
+Facility(ies) does not exceed 1 MW at the United States Armed Forces base or 
+facility, this provision does not apply and the Customer shall be served as an 
+Eligible Customer-Generator pursuant to Special Condition 7.a.i above.   
+ 
+ For the sole purpose of determining the capacity of the Renewable Electrical 
+Generation Facility eligible to receive service under this Special Condition 
+7.a.iii, minimum load is defined as the lowest registered demand of the United 
+States Armed Forces base or facility during the 36 months preceding the date 
+that the Customer’s NEM Interconnection Request is received by SCE (or 
+November 1, 2015, on a one-time basis, for eligible generating facilities that are 
+already interconnected as of November 1, 2015).  An adjustment will be made 
+by SCE, using existing telemetry data where available or information provided 
+by the Customer, to account for load served by existing on-site generation (so 
+that the determination of minimum load is not reduced by load served by on-site 
+generation).  SCE may make additional adjustments, if necessary, to account 
+for anomalies, such as outages, and may rely on mode minimum load 
+registrations, daytime minimum load registrations, or other methods to 
+reasonably determine the Customer’s minimum load for the sole purpose 
+outlined above.  A Customer’s minimum load determination shall only be 
+updated at the request of the Customer or any time a new NEM Interconnection 
+Request for the United States Armed Forces base or facility is submitted. 
+ 
+Customers served under this Special Condition 7.a.iii must adhere to the 
+applicable sourcing provisions for the Renewable Electrical Generation 
+Facility(ies) as outlined in PU Code Section 2827(b)(4)(C)(ii). 
+  
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 63498-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60456-E
+Schedule NEM Sheet 22 (T)
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+SPECIAL CONDITIONS (Continued) 
+ 
+7. Definitions:  (Continued) 
+ 
+b. Renewable Electrical Generation Facility.  
+ 
+A facility that generates electricity from a renewable source listed below pursuant to 
+paragraph (1) of subdivision (a) of Section 25741 of the Public Resources Code.  
+These renewable sources are further defined in the CEC’s RPS Guidebooks.ii, iii 
+ 
+Biomass, solar thermal, photovoltaic, wind, geothermal, fuel cells using renewable 
+fuels, small hydroelectric generation, digester gas, municipal solid waste conversion, 
+landfill gas, ocean wave, ocean thermal, or tidal current (Renewable Generator), and 
+any additions or enhancements to the facility using that technology. 
+ 
+Customers will be required to sign an affidavit (Form 14-912) certifying that they are 
+an Eligible Customer-Generator.  In addition, a Customer using municipal solid waste 
+conversion, fuel cells using renewable fuel, or small hydroelectric generation will need 
+to certify that the following technology specific criteria have been met:   
+ 
+1. For purposes of this schedule, qualifying "municipal solid waste conversion" is 
+as defined in PR Code Section 25741(b). 
+ 
+2. For purposes of qualifying under “fuel cells using renewable fuels,” the 
+Customer’s fuel cell is powered solely with renewable fuel. 
+ 
+3. For purposes of qualifying as a “small hydroelectric generation facility,” the 
+Customer must certify that the facility will neither cause an adverse impact on 
+instream beneficial uses nor cause a change in the volume or timing of 
+streamflow. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ii RPS Eligibility Guidebook: http://www.energy.ca.gov/renewables/documents/#rps  
+iii http://www.energy.ca.gov/2010publications/CEC-300-2010-008/CEC-300-2010-008-CMF.PDF 
+ 
+  
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 63499-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60457-E
+Schedule NEM Sheet 23 (T)
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+7. Definitions: (Continued) 
+ 
+c. Date of Parallel Operation.  The date SCE provides the Customer with SCE’s written 
+approval to commence parallel operation of the electrical generation facility. 
+ 
+d. Net Energy:  The difference between the electric energy supplied and/or delivered 
+through SCE, and the electric energy produced by the Customer’s Renewable 
+Electrical Generating Facility and exported into SCE’s electric system, measured over 
+the Relevant Period.  Thus, where E S is energy supplied and/or delivered by SCE, 
+and E F is energy generated by the Customer’s Renewable Electrical Generating 
+Facility and fed back into SCE’s system: 
+ 
+Net Energy = ES minus EF 
+ 
+e. Otherwise Applicable Tariff:  The Customer’s regularly filed rate schedule under 
+which service is rendered. 
+ 
+f. Generator Size: Nothing in this Special Condition alters the existing NEM system 
+sizing requirements and limitations.  To be eligible for NSC, a system must meet the 
+definition of an Eligible Customer-Generator within Section 2827(b)(4), including that 
+it be intended primarily to offset part or all of the Customer’s own electrical 
+requirements.  Systems that are sized larger than the Customer’s electrical 
+requirements are not eligible for NEM and, therefore, are not eligible for NSC.  For 
+Customers electing to participate in NEM Aggregation, pursuant to Special Condition 
+5 of this Schedule and PU Code Section 2827(h)(4)(B), the Renewable Electrical 
+Generating Facility may be sized to aggregate the electrical requirements of all of the 
+accounts in the NEM Aggregation arrangement, but is permanently ineligible to 
+receive NSC from SCE.  However, if an aggregated account that is not a generating 
+account is separated from the NEM Aggregation arrangement, and subsequently 
+qualifies for NEM, that account is eligible to receive NSC on a going-forward basis, 
+provided it meets all other NEM eligibility criteria. 
+  
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 63500-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60458-E
+Schedule NEM Sheet 24 (T)
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+7. Definitions:  (Continued) 
+ 
+g. Relevant Period:  A twelve-month period, or portion thereof, commencing on the 
+anniversary Date of Final Interconnection of the Customer’s generator to SCE’s electric 
+system and on every subsequent anniversary thereof.  For eligible Customers electing 
+to receive service under Schedule NEM for an Eligible Renewable Electrical Generating 
+Facility that is already interconnected to SCE’s electrical system, the Relevant Period 
+will commence on the date the Customer begins receiving service under Schedule NEM 
+and on every subsequent anniversary thereof.  If an Eligible Customer-Generator 
+terminates service, or experiences a change from SCE Bundled Service to CCA Service 
+or DA Service or from CCA Service or DA Service to SCE Bundled Service prior to the 
+end of the 12-month period, the Relevant Period will consist of that period from the 
+anniversary date until the effective date of the termination or change in service.  The 
+initial Relevant Period of an aggregated account added to an NEM Aggregation 
+arrangement, pursuant to Special Condition 5 of this Schedule, during an arrangement’s 
+ongoing Relevant Period may be less than 12 months to align with the other accounts in 
+the NEM Aggregation arrangement. 
+ 
+Customers may elect to change the start date of their Relevant Period on a one-time 
+prospective basis by completing and returning Form 14-936, NEM One-Time Relevant 
+Period Change Request Form, to SCE.  SCE must receive this form at least 60 days 
+prior to the requested start date of the new Relevant Period.  When the start date 
+change is effectuated, it will cause a shortened existing Relevant Period and the new 
+12-month Relevant Period will begin.  In no case will a Relevant Period extend beyond 
+12 months. 
+ 
+h. Multiple Tariff Generating Facility:  A Generating Facility consisting of one or more NEM 
+Eligible Generators served under this Schedule and one or more NEM Eligible 
+Generators served under Schedules NEM-ST, BG-NEM and/or FC-NEM, or consisting 
+of one or more NEM Eligible Generators served under this Schedule and one or more 
+Non-NEM Eligible Generators. 
+ 
+i. NEM Eligible Generator:  A Renewable Electrical Generating Facility served under this 
+Schedule or Schedule NEM-ST, or a facility served under Schedule FC-NEM or 
+Schedule BG-NEM. 
+ 
+j. Non-NEM Eligible Generator:  An electrical generator that does not meet the definition 
+of Special Condition 7.i above. 
+ 
+k. Group of NEM-Eligible Generators:  Generators meeting the definition of Special 
+Condition 7.i above qualifying under the same NEM tariff provisions.  Thus, a 
+Renewable Electrical Generating Facility served under this Schedule would form one 
+group, a Renewable Electrical Generating Facility served under Schedule NEM-ST 
+would form a second group, biogas and fuel cell generators served under Schedule BG-
+NEM or FC-NEM without aggregated accounts would form a third group, while biogas 
+and fuel cell generators served under Schedule BG-NEM or FC-NEM with aggregated 
+accounts would form a fourth group. 
+  
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 63501-E
+Cancelling Original Cal. P.U.C. Sheet No. 60459-E
+Schedule NEM Sheet 25 (T)
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 3765-E Caroline Choi Date Submitted Mar 12, 2018
+Decision 18-02-008 Senior Vice President Effective Apr 6, 2018
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+7. Definitions: (Continued) 
+ 
+l. NEM-Paired Storage System: A Renewable Electrical Generation Facility that 
+includes a Renewable Generator(s) and an Integrated or Directly Connected Energy 
+Storage Device(s) behind the same SCE revenue meter and/or Service Account.  
+Integrated or Directly Connected Energy Storage Devices are considered an addition 
+or enhancement to the Renewable Generator and not a separate generating facility 
+for the purposes of applying the cost exemptions specified in Special Condition 6 
+above when interconnecting at the same time as the Renewable Generator. 
+ 
+An energy storage device shall be considered an addition or enhancement to the 
+Renewable Generator if the energy storage device is either: 
+ 
+i. Integrated into the Renewable Electrical Generation Facility, such that the 
+energy storage device is capable of storing only energy produced by the 
+Renewable Generator, either as an intermediary form of energy during the 
+generation cycle or after electricity has been generated (Integrated Energy 
+Storage Device); or, 
+ 
+ii. Directly connected to the Renewable Electrical Generation Facility, such that 
+electricity is delivered from the Renewable Generator to the energy storage 
+device behind the meter used for RPS purposes and any electricity from a 
+source other than the Renewable Generator is included as an energy input to 
+the Renewable Electrical Generation Facility; the energy storage device must 
+be operated as part of the Renewable Electrical Generation Facility 
+represented in the application and not in conjunction with any other facility, 
+renewable or otherwise (Directly Connected Energy Storage Device). As 
+such, a Directly Connected Energy Storage Device is not required to be 
+charged exclusively from the Renewable Generator and may also be charged 
+from the grid. 
+ 
+m. Large NEM-Paired Storage System: A NEM-Paired Storage System where the 
+Integrated or Directly Connected Energy Storage Device(s) is sized larger than 10 kW 
+(AC) (i.e., maximum aggregate discharge capacity) and that meets the applicable 
+sizing and metering requirements included in Special Condition 6 above. 
+ 
+n. Small NEM-Paired Storage System: A NEM-Paired Storage System where the 
+Integrated or Directly Connected Energy Storage Device(s) is sized 10 kW (AC) or 
+smaller (i.e., maximum aggregate discharge capacity) and that meets the applicable 
+sizing and metering requirements included in Special Condition 6 above. 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 88769-E
+Cancelling Revised Cal. P.U.C. Sheet No. 63502-E
+Schedule NEM Sheet 26
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5353-E Michael Backstrom Date Submitted Aug 13, 2024
+Decision D.23-11-068 Vice President Effective Jan 1, 2024
+Resolution
+SPECIAL CONDITIONS (Continued) 
+ 
+7. Definitions: (Continued) 
+ 
+o. Net Surplus Energy: All electricity generated by an Eligible Customer-Generator 
+measured in kilowatt hours (kWh) over the Relevant Period that exceeds the amount of 
+electricity consumed by that Eligible Customer-Generator.iv 
+ 
+p. Net Surplus Generator: An Eligible Customer-Generator that generates more electricity 
+during a Relevant Period than is supplied by the electric utility to the Eligible Customer-
+Generator during the same Relevant Period. 
+ 
+q. Aggregate Customer Peak Demand: Aggregate Customer Peak Demand is defined as 
+the highest sum of all Customers’ non-coincident peak demands that occur in any 
+calendar year (i.e., the aggregation, or sum, of each individual Customer’s peak 
+demand in any calendar year) and is the denominator used in the formula to calculate 
+progress toward reaching the NEM trigger level.  For this purpose, SCE utilizes load 
+research studies based on a four-year moving average (e.g., 2012 calculations are 
+based on 2007-2010 annual load research data, and 2013 calculations are based on 
+2008-2011 annual load research data) using 15-minute interval data.  Aggregate 
+Customer Peak Demand, when used for determining the NEM trigger level, is updated 
+annually but may not decrease below the most recent level determined. 
+ 
+r. Modular Home: Modular home, although better constructed, is like manufactured home 
+(as defined in the California Health and Safety Code) where both are constructed offsite. 
+Unlike manufactured home, modular home must meet the same local or state building 
+codes as an on-site home. Modular home does not have the requirement to have a 
+wheeled chassis permanently attached. 
+ 
+s. Modular Home Community: A community with two or more Modular Homes. 
+ 
+8. Pursuant to PU Code Section 2827(c)(2), any customer with an existing electrical generating 
+facility and meter who enters into a new NEM contract (for example, Form 16-344 Net Energy 
+Metering and Generating Facility Interconnection Agreement) shall complete and submit a copy 
+of Form 14-903 NEM/MASH-VNM Inspection Report to SCE, unless the electrical generating 
+facility and meter have been installed or inspected within the previous three years. The 
+NEM/MASH Inspection Report shall be prepared by a California licensed contractor who is not 
+the owner or operator of the facility and meter.  A California licensed electrician shall perform the 
+inspection of the electrical portion of the facility and meter and sign the NEM/MASH-VNM 
+Inspection Report. If an inspection is required, the Customer shall submit the fully completed 
+NEM/MASH-VNM Inspection Report to SCE within 90 days of the Customer becoming the 
+Customer of record at this account, or else the Customer agrees to disconnect their Generating 
+Facility and inform SCE it no longer will take service on Schedule NEM.  By signing the 
+interconnection agreement, the NEM/MASH-VNM Inspection Report shall be incorporated into it.  
+ 
+9. ESP Charges:  Where SCE provides metering and billing for a DA Customer, SCE may recover 
+the incremental costs related to net energy metering and billing services from the Customer’s 
+ESP, as set forth in Schedule ESP-DSF. SCE will not charge ESPs for metering and billing 
+costs related to NEM customers that it would similarly incur if the Customer was on Bundled 
+Service.  
+ 
+ 
+iv kWh subject to forfeit under the NEM-Paired Storage System estimation methodology provisions of Special Condition 6 
+above are not considered EF for the purposes of determining Net Surplus Energy. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+| 
+| 
+| 
+| 
+| 
+(N) 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 85443-E
+Cancelling Revised Cal. P.U.C. Sheet No. 63503-E
+Schedule NEM Sheet 27
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4963-E Michael Backstrom Date Submitted Jan 30, 2023
+Decision 22-12-056 Vice President Effective Mar 1, 2023
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+10. California Climate Credit Cash-Out Provision for Residential Customers:  Customers receiving 
+service on a Residential rate schedule receive a semi-annual California Climate Credit from 
+the State of California.  In the event that a portion or all of the dollar value of the California 
+Climate Credit cannot be consumed by the end of the Customer’s Relevant Period, one of the 
+following will occur: 1) for Residential Net Surplus Generators eligible to receive NSC via the 
+separate check option – any remaining California Climate Credit balance will be added to the 
+NSC owed the Customer and sent with the NSC check, or 2) for all other Residential 
+Customers – any remaining California Climate Credit balance will be sent to the Customer via 
+a separate check after the final billing statement for the current Relevant Period is issued. 
+ 
+11. NEM Transition Provisions.  This Special Condition is applicable to all Customers who are 
+receiving service on this Schedule, or who have submitted all documentation necessary for 
+receiving service on this Schedule, prior to SCE reaching its NEM trigger level or July 1, 2017, 
+whichever is earlier. 
+ 
+a. 20-Year Transition Period. 
+ 
+Pursuant to Decision 14-03-041, Customers who are receiving service on this Schedule 
+prior to SCE reaching its NEM trigger level or July 1, 2017, whichever is earlier, are 
+eligible to continue receiving service on this Schedule for a period of 20 years from the 
+original year in which their Renewable Electrical Generating Facility was interconnected to 
+SCE’s grid, indicated by and measured from the date on which the Customer initially 
+received permission to operate (PTO) the Renewable Electrical Generating Facility from 
+SCE and ending at the conclusion of the Customer’s applicable Relevant Period that ends 
+immediately on or after the 20 th anniversary of the original PTO date.  For example, if a 
+Customer initially received PTO on April 1, 2014, the Customer is eligible to continue 
+receiving service on this Schedule through the conclusion of the Relevant Period ending 
+immediately on or after March 31, 2034.  Customers that complete and submit all required 
+documentation for service on this Schedule to SCE prior to SCE reaching its NEM trigger 
+level or July 1, 2017, whichever is earlier, are eligible for the 20-year transition period, 
+which will commence on the Customer’s PTO date, even if the PTO date is on or after 
+when SCE reaches its NEM trigger level or July 1, 2017, whichever is earlier.  Customers 
+have the option of transitioning to the successor tariff to this Schedule prior to the 
+conclusion of their 20-year transition period.  However, Customers electing this option 
+permanently forfeit any of their Renewable Electrical Generating Facility’s remaining 
+transition period eligibility on this Schedule and may not later change back to receiving 
+service under this Schedule. 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+ 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 89083-E
+Cancelling Revised Cal. P.U.C. Sheet No. 85444-E
+Schedule NEM Sheet 28
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5394-E Michael Backstrom Date Submitted Oct 25, 2024
+Decision 24-03-071 Vice President Effective Oct 25, 2024
+Resolution
+SPECIAL CONDITIONS (Continued) 
+ 
+11. NEM Transition Provisions. (Continued)  
+ 
+b. Modifications. 
+ 
+Renewable Electrical Generating Facilities eligible for the 20-year transition period that 
+are modified and/or repaired on or after when SCE reaches its NEM trigger level or July 
+1, 2017, whichever is earlier, shall remain eligible for the remainder of their 20-year 
+transition period as long as the modifications and/or repairs do not increase the 
+Renewable Electrical Generating Facility by more than the greater of (1) 10 percent of 
+the Renewable Electrical Generating Facility’s nameplate rating capacity, as established 
+when the Renewable Electrical Generating Facility was originally interconnected, or (2) 1 
+kW; and provided the modifications and/or repairs do not result in the Renewable 
+Electrical Generating Facility exceeding a total generation capacity of 1 MW and the 
+Customer’s annual onsite load. v Customers making modifications and/or additions to 
+their Renewable Electrical Generating Facilities on or after when SCE reaches its NEM 
+trigger level or July 1, 2017, whichever is earlier, that exceed the 10 percent or 1 kW limit 
+referenced above have the option of either metering the additions and/or modifications 
+separately under the successor tariff, or having the entire Renewable Electrical 
+Generating Facility served under the successor tariff, subject to the terms and conditions 
+contained therein. 
+ 
+c. Transferability. 
+ 
+Renewable Electrical Generating Facilities eligible for the 20-year transition period shall 
+not lose their eligibility if transferred to a new owner, operator, or SCE account, provided 
+the Renewable Electrical Generating Facility remains at its original location and the 
+Customer has not elected or does not elect to transition to the successor tariff. vi The 
+transfer of an existing Renewable Electrical Generating Facility to a new location is 
+considered a new installation requiring a new interconnection agreement and would not 
+qualify for the 20-year transition period if the relocation occurs on or after when SCE 
+reaches its NEM trigger level or July 1, 2017, whichever is earlier. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+v  For Customers qualifying for service pursuant to Special Condition 7.a.ii or 7.a.iii above, any modifications 
+and/or repairs must not result in the Renewable Electrical Generating Facility exceeding the total generation 
+capacity allowed for under those Special Conditions and the Customer’s annual onsite load. 
+vi  The Renewable Electrical Generating Facility must at all times serve an Eligible Customer-Generator as 
+defined in Special Condition 7.a above. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(L) 
+ 
+ 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 89084-E
+Cancelling Revised Cal. P.U.C. Sheet No. 71190-E
+Schedule NEM Sheet 29
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5394-E Michael Backstrom Date Submitted Oct 25, 2024
+Decision 24-03-071 Vice President Effective Oct 25, 2024
+Resolution
+SPECIAL CONDITIONS (Continued) 
+ 
+11. NEM Transition Provisions (Continued) 
+ 
+d.  Integrated or Directly Connected Energy Storage Devices shall be treated in the 
+same way, and be subject to the same transition period, as the Renewable Generator 
+to which they are connected.  Customers adding only energy storage to their existing 
+Generating Facility shall remain eligible for the remainder of their 20-year Transition 
+Period; however, customers adding storage to their existing Generating Facility 
+through participation in the Self-Generation Incentive Program (SGIP) will be required 
+to transition to the Net Billing Tariff pursuant to D.24-03-071 if they apply and have a 
+reservation accepted on or after June 4, 2024. Customers participating in the following 
+SGIP budget categories, as defined in D.24-03-071, are exempt from this requirement: 
+Residential Solar and Storage Equity, low-income qualified Equity Resiliency 
+residential, and San Joaquin Valley Residential. 
+ 
+12. Natural Disaster (Disaster):  NEM Transition Eligible Customer-Generators impacted by an 
+event in affected areas declared in a state of emergency vii and included in either the California 
+Governor’s Proclamation of a State of Emergency or the President of the United States’. 
+Disaster impacted customers will retain their original permission to operate (PTO) date. The 
+original 20-Year Transition Period will remain in effect under this Schedule as defined in Special 
+Condition 11. 
+ 
+Disaster impacted Eligible Customer-Generators must: 
+ 
+a.  Submit a new Interconnection Request with a replacement Renewable Electrical 
+Generating Facility for capacity size (i) that does not exceed 1 MW at a single Premise 
+except as provided in Special Condition 7.a.ii or 7.a.iii, and (ii) to generate no more than 
+12 months of historic, or estimated, usage (kWh), and 
+ 
+b.  Submit proof of destruction of the Renewable Electrical Generating Facility, if 
+requested by SCE. 
+ 
+c.  If the Renewable Electrical Generating Facility needs to be replaced due to a 
+Disaster, SCE will true-up all charges and credits pursuant to Special Condition 3.h up 
+to the date of the Disaster, unless the Eligible Customer-Generator requests that SCE 
+continue to bill through the end of the Relevant Period. 
+ 
+d.  The period from destruction of the Renewable Electrical Generating Facility to PTO of 
+the replacement Renewable Electrical Generating Facility must not exceed four years, 
+unless reasonable documentation acceptable to SCE is provided showing that a new 
+Interconnection Request has been submitted. The new Interconnection Request must 
+be completed by the same Customer of Record who was taking service under Schedule 
+NEM prior to the Disaster. If the Renewable Electrical Generating Facility is not 
+replaced by the Customer, but the property is sold to a new Customer after the 
+destruction of the Renewable Electrical Generating Facility, this provision does not 
+extend to the new Customer of Record or New Party In. 
+ 
+ 
+ 
+ 
+vii Government Code 8558(b) - 
+https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=8558 
+ 
+ 
+ 
+(L) 
+  | 
+  | 
+  | 
+  | 
+(L)(N) 
+      | 
+      | 
+      | 
+      | 
+      | 
+      | 
+    (N) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Original Cal. P.U.C. Sheet No. 88770-E
+Schedule NEM Sheet 30
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5353-E Michael Backstrom Date Submitted Aug 13, 2024
+Decision D.23-11-068 Vice President Effective Jan 1, 2024
+Resolution
+ 
+SPECIAL CONDTIONS (Continued) 
+ 
+13. Prevailing Wage 
+ 
+California Public Utilities (PU) Code Section 769.2 requires a contractor that installs a 
+Renewable Electrical Generation Facility or associated battery storage to comply with 
+prevailing wage requirements in order for the facility to participate in a tariff developed 
+pursuant to PU Code Section 2827 or 2827.1. These requirements are stated in PU Code 
+Section 769.2 and in case of any discrepancy between tariff language and the PU Code, the 
+language in the PU Code prevails. 
+ 
+The requirements are: 
+ 
+(1) The contractor shall pay each construction worker employed, at minimum, the general 
+prevailing rate of per diem wages, except that an apprentice registered in a program 
+approved by the Chief of the Division of Apprenticeship Standards shall be paid, at 
+minimum, the applicable apprentice prevailing rate. 
+ 
+(2) The contractor shall maintain and verify payroll records pursuant to Section 1776 of the 
+Labor Code and make those records available for inspection and copying as provided in 
+that Section. The contractor shall not be required to provide copies of certified payroll 
+records to any entity other than the Department of Industrial Relations or the California 
+Public Utilities Commission (Commission).viii 
+ 
+(3) The contractor shall biannually, on July 1 and December 31 of each year, submit to the 
+Commission digital copies of its certified payroll records for projects. ix The contractor’s 
+submission of payroll records is a condition to access tariffs developed pursuant to PU 
+Code Section 2827 or 2827.1 for a Customer’s Renewable Electrical Generating Facility 
+subject to PU Code Section 769.2.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+viii Pursuant to Decision 23-11-068 the contractor may also be required to provide these records to any entity that the 
+Commission designates to act on its behalf to implement this requirement. 
+ix Contractors may submit their records on a voluntary basis more often than the biannual requirement stated in the PU 
+Code 769.2. 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+(N) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+(N) 
+ 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Original Cal. P.U.C. Sheet No. 88771-E
+Schedule NEM Sheet 31
+NET ENERGY METERING
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5353-E Michael Backstrom Date Submitted Aug 13, 2024
+Decision D.23-11-068 Vice President Effective Jan 1, 2024
+Resolution
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+13. Prevailing Wage (Continued) 
+ 
+The requirements of PU Code Section 769.2 do not apply to projects with a complete 
+interconnection application submission date before January 1, 2024. x All projects with an 
+interconnection application submission date on or after January 1, 2024, including 
+applications to modify an existing Renewable Electrical Generating Facility, are subject to 
+the PU Code Section 769.2 requirements with the following exceptions: 
+ 
+(1) A residential Renewable Electrical Generating Facility that has a maximum generating 
+capacity of 15 kilowatts or less of electricity. 
+ 
+(2) A residential Renewable Electrical Generating Facility that is installed on a single-
+family home. 
+  
+(3) A project that is a public work, as defined in Section 1720 of the Labor Code, and that 
+is subject to Article 2 (commencing with Section 1770) of Chapter 1 of Part 7 of 
+Division 2 of the Labor Code. 
+  
+(4) A Renewable Electrical Generating Facility that serves only a Modular Home, a 
+Modular Home Community, or multiunit housing that has two or fewer stories. 
+  
+If PU Code Section 769.2 applies, the Customer must execute the “Prevailing Wage 
+Disclosure Form” and submit the form with their interconnection application, and Customer’s 
+contractor shall confirm to SCE that it is up to date with their past required submittals of 
+payroll records. 
+ 
+If Customer's contractor has been found to have willfully violated PU Code Section 769.2 in 
+connection with the construction of Customer's Renewable Electrical Generating Facility, that 
+facility shall not be eligible to receive service pursuant to a tariff developed based on PU Code 
+Sections 2827 or 2827.1. Only in the case of multi-tariff configuration, where there is more 
+than one renewable generator behind the same utility billing meter, SCE will treat all the 
+generators as one system and therefore none of the renewable generators will be served on 
+tariffs developed based on PU Code Section 2827 or 2827.1, and those renewable generators 
+will be compensated based on PURPA compliant tariff, regardless which facility is subject to 
+the violation of PU Code 769.2. 
+ 
+ 
+ 
+x If a Customer or contractor provides documentation confirming that the facility that they are applying for was built on or 
+before December 31, 2023, the prevailing wage requirements will not apply to that project. 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+(N) 
+ 
+ 
+ 
+(N) 
+(N) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Original Cal. P.U.C. Sheet No. 88772-E
+Schedule NEM Sheet 32
+NET ENERGY METERING
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5353-E Michael Backstrom Date Submitted Aug 13, 2024
+Decision D.23-11-068 Vice President Effective Jan 1, 2024
+Resolution
+ 
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+13. Prevailing Wage (Continued) 
+ 
+If a willful wage violation is alleged, the Customer’s Renewable Electrical Generating Facility 
+will remain on the tariff until the Department of Industrial Relations (Department) or a court 
+completes their assessment and makes a final determination. At that time, if the contractor is 
+found in willful violation, then SCE will be required to remove the Customer’s Renewable 
+Electrical Generating Facility implicated by the violation from this Schedule and transition the 
+Customer to the PURPA compliant tariff on the next billing cycle (after the required 30/60-day 
+notification). While on the PURPA compliant tariff, the Renewable Electrical Generating 
+Facility will be compensated based on that tariff and the Renewable Electrical Generating 
+Facility shall be subject to SCE Schedule Customer Generation Departing Load Cost 
+Responsibility Surcharge and SCE Schedule Standby charges as the Renewable Electrical 
+Generating Facility is no longer eligible to be served on tariffs developed pursuant to PU Code 
+Section 2827 or 2827.1. The Customer’s Renewable Electrical Generating Facility billing 
+meter will be trued up at the end of the billing cycle (after the required 30/60-day notification) 
+before transitioning to the PURPA compliant tariff and any credits remaining after the true-up 
+(including all benefitting/ aggregated accounts) will be forfeited. 
+ 
+If the violation occurs on a single generating account and there are no benefitting/aggregated 
+account(s), SCE will notify the Customer at least 30-days in advance of automatically 
+transitioning the Customer's Renewable Electrical Generating Facility on their next billing 
+cycle to a PURPA compliant tariff. 
+ 
+If the violation occurs on a single generating with benefitting/aggregated accounts SCE will 
+notify the Customer(s) at least 60-days in advance of automatically transitioning the 
+Customer's Renewable Electrical Generating Facility on their next billing cycle to a PURPA 
+compliant tariff. 
+ 
+If a willful wage violation is reversed or nullified by the determining body and the generation 
+account holder or Customer/property owner provides documentation to the utility evidencing 
+such reversal/nullification, then the Renewable Electrical Generating Facility (or the whole 
+system for multi-tariff) will be able to regain access to the applicable NEM/NBT tariff as of the 
+next billing cycle or within 30-days after receiving the notification of the reversal of the willful 
+wage violation. 
+ 
+Beginning January 1, 2025, contractors who have been found in willful violation of the 
+prevailing wage rule in PU Code Section 769.2 will not be permitted to apply to interconnect 
+facilities utilizing tariffs established pursuant to PU Code Sections 2827 or 2827.1. 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+(N) 
+ 
+Southern California Edison
+Rosemead, California       (U 338-E)
+Original Cal. P.U.C. Sheet No. 88773-E
+Schedule NEM Sheet 33
+NET ENERGY METERING
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5353-E Michael Backstrom Date Submitted Aug 13, 2024
+Decision D.23-11-068 Vice President Effective Jan 1, 2024
+Resolution
+ 
+ 
+ 
+REQUIRED DISCLOSURE 
+ 
+All customers must: Accept that SCE may release to the California Energy Commission, the 
+California Public Utilities Commission, and/or other state agencies, information regarding the 
+Customer’s facility, including such Customer’s name and Renewable Electrical Generating Facility 
+location, capacity, and operational characteristics. Pursuant to CPUC Decisions 14-11-001, 21-06-
+026, and 23-11-068, SCE is required to provide certain data, including, but not limited to, 
+confidential Customer information, to the CPUC, its contractors, the California Department of 
+Consumer Affairs Contractors State License Board, the California Department of Financial 
+Protection & Innovation, and the California Department of Industrial Relations. As a condition of 
+receiving service under this tariff, the eligible customer authorizes SCE to release any and all 
+information provided in the Interconnection Request to the entities identified above without further 
+notification or consent. For Renewable Electrical Generating Facilities that are subject to Pub. Util. 
+Code § 769.2, in addition to consenting to SCE sharing the data or information with those regulatory 
+entities, Customer also consents to those entities making that information publicly available. 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+  | 
+(N) 
+ 

@@ -1,0 +1,104 @@
+[
+  {
+    "document": "ladwp",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "1280dd0769f0912922d718fe64843545e6af4be7456fa76fb2bf99bf5bd8f625",
+    "text_sha256": "af7fc7d6e3de8525045a97c0c484b1d6479069770024d277f06a6b5633ee8708",
+    "url": "https://www.ladwp.com/sites/default/files/documents/Electric_Rate_Summary_effective_7_1_2019_with_factors_referenced_rev1.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-D",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "b05ca349a0056aa90886e5ba0f3dfd7ec5ec1d5f85485712877cb31a87207e55",
+    "text_sha256": "3011f44846b254ae859dd3440ffb054e8d1685973e65772c438cce42e82ead95",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Residential%20Rates/ELECTRIC_SCHEDULES_D.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-TOU-D",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "fad123e7d0e36c8db28ef0d9480a13b6828d52f3d0e8d3ea947db7ae17967faa",
+    "text_sha256": "2e9733f252c0b1c1afe84a89cbc85c4070937b194b6468538e05db9da50335e6",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Residential%20Rates/ELECTRIC_SCHEDULES_TOU-D.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-TOU-GS-1",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "26000c8f42b2be298286a0b8316bcb3f69f70e7e888d8da01fa8436d157c7512",
+    "text_sha256": "d251dc3ab0be3127c4b41fe27a58cd835947df59e9b227220fcf6be11dbd38aa",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/General%20Service%20%26%20Industrial%20Rates/ELECTRIC_SCHEDULES_TOU-GS-1.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-TOU-GS-2",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "d13572b1e5c11cd832caeb14c5a1fadaee620bd23724bdf7f1ef35badb888efb",
+    "text_sha256": "e9da2e20b4b3bb5dbffa8cdccbfbb0d0dece20d54f8c98601c04db7d8510c855",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/General%20Service%20%26%20Industrial%20Rates/ELECTRIC_SCHEDULES_TOU-GS-2.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-TOU-GS-3",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "abcddc5e8500c4bf7b824b927525a119b163d99d1c0675e1a2fd5ccb7beebd8c",
+    "text_sha256": "dd4a4f24c0a396dcdcda2b3044c5fc53c483bd0c11be79ea78473037823174f8",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/General%20Service%20%26%20Industrial%20Rates/ELECTRIC_SCHEDULES_TOU-GS-3.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-TOU-8",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "22b78e73f5c1ee8d54ed1544cf80f8b756bfa7d957267dba82f24e3201762a7c",
+    "text_sha256": "bb32f0db183c07bae15adace887d53500965d5bec0dbb3fda83771ca7e7fd341",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/General%20Service%20%26%20Industrial%20Rates/ELECTRIC_SCHEDULES_TOU-8.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-baseline",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "2bc05af8701a91f797d90170ddc2c719b938769cae4c80e37cb8a614d12c250a",
+    "text_sha256": "26422a4bb47e66e45d25f660791d577817181134ff192fcee4179445f406d384",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Preliminary%20Statements/ELECTRIC_PRELIM_H.pdf",
+    "role": "implemented base rates"
+  },
+  {
+    "document": "sce-NEM",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "324262819f61e3a0857b7f4f96f8abb2ed68f6f7ed7d15c97d6fee8b9086a372",
+    "text_sha256": "4046e22c8f92b4f75d9679596bff9f57b6769479db03e49d206e70b052ed79db",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Other%20Rates/ELECTRIC_SCHEDULES_NEM.pdf",
+    "role": "research only; settlement unsupported"
+  },
+  {
+    "document": "sce-NEM-ST",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "2e9f7be084936e5797f20076492279195fd72bbd2a820afa8cb360d4c8b05f91",
+    "text_sha256": "d6ce3096ba9ced3cd4469662f99f8cff4bbda1cc7ea7ed35dea5553fb6d4c92d",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Other%20Rates/ELECTRIC_SCHEDULES_NEM-ST.pdf",
+    "role": "research only; settlement unsupported"
+  },
+  {
+    "document": "sce-NBT",
+    "retrieved": "2026-09-17",
+    "pdf_sha256": "fd6508608353e22cae2fa98ef0dc9b486330a0613b718d19f84569d41050afa6",
+    "text_sha256": "9231c10d9e20b9e2bbe6346489448d51853fb049de15e7e94e8a3db17d49a7ff",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Other%20Rates/ELECTRIC_SCHEDULES_NBT.pdf",
+    "role": "research only; settlement unsupported"
+  },
+  {
+    "document": "commercial-adjustments",
+    "url": "https://www.ladwp.com/account/customer-service/electric-rates/commercial-adjustment-billing-factors",
+    "retrieved": "2026-09-17",
+    "text_sha256": "ded28fe924d696d0f45fa4764205af40b561ae663829dd6f0fa41d56f95404f6",
+    "role": "independent quarterly adjustment factors"
+  },
+  {
+    "document": "SCE EEC Pacific Time workbook",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/Misc/Shared%20Documents/documents/Solar/Energy%20Export%20Credit%20Prices/EEC%20Factors_Upload%20File%20-%20Pacific%20Time%20Zone%20-%20FINAL.xlsx",
+    "retrieved": "2026-09-17",
+    "xlsx_sha256": "c88229eccf67e78f5e86c9ad4e1a8de7f946e585f49b39139621e70b55e211c7",
+    "role": "research only; not loaded as a settlement tariff"
+  }
+]

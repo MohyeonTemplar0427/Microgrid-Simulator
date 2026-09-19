@@ -63,9 +63,9 @@ def make_server(application, port=8765):
 
         def get_route(self):
             url = urlsplit(self.path)
-            if url.path in ("/", "/app.js", "/municipal.js", "/style.css"):
-                name = {"/": "index.html", "/app.js": "app.js", "/municipal.js": "municipal.js", "/style.css": "style.css"}[url.path]
-                mime = {"index.html": "text/html; charset=utf-8", "app.js": "text/javascript; charset=utf-8", "municipal.js": "text/javascript; charset=utf-8", "style.css": "text/css; charset=utf-8"}[name]
+            if url.path in ("/", "/app.js", "/municipal.js", "/socal.js", "/style.css"):
+                name = {"/": "index.html", "/app.js": "app.js", "/municipal.js": "municipal.js", "/socal.js": "socal.js", "/style.css": "style.css"}[url.path]
+                mime = {"index.html": "text/html; charset=utf-8", "app.js": "text/javascript; charset=utf-8", "municipal.js": "text/javascript; charset=utf-8", "socal.js": "text/javascript; charset=utf-8", "style.css": "text/css; charset=utf-8"}[name]
                 return self.respond(200, (STATIC / name).read_bytes(), mime)
             if url.path == "/api/health":
                 return self.respond(200, application.health())
@@ -121,6 +121,8 @@ def make_server(application, port=8765):
                 if not 0 < length <= MAX_BODY:
                     raise ValueError("Request must be nonempty and at most 20 MB.")
                 body = json.loads(self.rfile.read(length))
+                if urlsplit(self.path).path == "/api/v1/socal/studies":
+                    return self.respond(202, application.submit_socal(body))
                 if urlsplit(self.path).path == "/api/v1/municipal/studies":
                     return self.respond(202, application.submit_municipal(body))
                 municipal_routes = {"/api/v1/utility-resolution": "utility-resolution",
@@ -142,7 +144,7 @@ def make_server(application, port=8765):
                     dataset = application.store.add_dataset(body["csv"].encode("utf-8"), body["name"])
                     return self.respond(201, dataset)
                 if urlsplit(self.path).path == "/api/studies":
-                    if isinstance(body, dict) and body.get("schema_version") == 4:
+                    if isinstance(body, dict) and body.get("schema_version") in (4, 6):
                         raise ValueError("Submit municipal studies through /api/v1/municipal/studies.")
                     if isinstance(body, dict) and body.get("schema_version") == 3 and "candidate_defaults" not in application.capabilities:
                         raise ValueError("This pinned engine does not support candidate studies.")

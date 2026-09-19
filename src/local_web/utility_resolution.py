@@ -9,8 +9,10 @@ from .contract import number
 from .utilities import LAYERS
 
 # Stable agency identifiers from the CEC layer, not city/county text matching.
-AGENCIES = {71021:'pge',10500:'amp',80560:'svp',80522:'hetch_hetchy'}
-NAMES = {'pge':'Pacific Gas & Electric Company','amp':'Alameda Municipal Power','svp':'Silicon Valley Power','hetch_hetchy':'Hetch Hetchy Power'}
+AGENCIES = {71021:'pge',10500:'amp',80560:'svp',80522:'hetch_hetchy',
+            58970:'ladwp',86250:'sce'}
+NAMES = {'pge':'Pacific Gas & Electric Company','amp':'Alameda Municipal Power','svp':'Silicon Valley Power','hetch_hetchy':'Hetch Hetchy Power',
+         'ladwp':'Los Angeles Department of Water & Power','sce':'Southern California Edison'}
 
 
 # CCA IDs are checked against the official identity, not trusted on their own.

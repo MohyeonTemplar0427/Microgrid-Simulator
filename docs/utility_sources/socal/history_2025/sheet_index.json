@@ -1,0 +1,492 @@
+[
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 1,
+    "effective_start": "2025-01-01",
+    "sheet": "89274-E",
+    "supersedes_sheet": "88852-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 2,
+    "effective_start": "2025-06-01",
+    "sheet": "90097-E",
+    "supersedes_sheet": "89524-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 3,
+    "effective_start": "2025-10-01",
+    "sheet": "90340-E",
+    "supersedes_sheet": "90097-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 4,
+    "effective_start": "2025-11-15",
+    "sheet": "90634-E",
+    "supersedes_sheet": "90340-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 5,
+    "effective_start": "2025-03-01",
+    "sheet": "89524-E",
+    "supersedes_sheet": "89274-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 6,
+    "effective_start": "2025-01-01",
+    "sheet": "89275-E",
+    "supersedes_sheet": "88853-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 7,
+    "effective_start": "2025-06-01",
+    "sheet": "90079-E",
+    "supersedes_sheet": "89525-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 8,
+    "effective_start": "2025-10-01",
+    "sheet": "90341-E",
+    "supersedes_sheet": "90079-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 9,
+    "effective_start": "2025-11-15",
+    "sheet": "90635-E",
+    "supersedes_sheet": "90341-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 10,
+    "effective_start": "2025-03-01",
+    "sheet": "89525-E",
+    "supersedes_sheet": "89275-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 11,
+    "effective_start": "2025-11-15",
+    "sheet": "90638-E",
+    "supersedes_sheet": "70525-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 12,
+    "effective_start": "2025-01-01",
+    "sheet": "89276-E",
+    "supersedes_sheet": "88854-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 13,
+    "effective_start": "2025-06-01",
+    "sheet": "90080-E",
+    "supersedes_sheet": "89526-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 14,
+    "effective_start": "2025-10-01",
+    "sheet": "90342-E",
+    "supersedes_sheet": "90080-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 15,
+    "effective_start": "2025-11-15",
+    "sheet": "90639-E",
+    "supersedes_sheet": "90342-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+    "pdf_page": 16,
+    "effective_start": "2025-03-01",
+    "sheet": "89526-E",
+    "supersedes_sheet": "89276-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 1,
+    "effective_start": "2025-01-01",
+    "sheet": "89278-E",
+    "supersedes_sheet": "88856-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 2,
+    "effective_start": "2025-06-01",
+    "sheet": "89963-E",
+    "supersedes_sheet": "89528-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 3,
+    "effective_start": "2025-10-01",
+    "sheet": "90407-E",
+    "supersedes_sheet": "89963-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 4,
+    "effective_start": "2025-11-15",
+    "sheet": "90669-E",
+    "supersedes_sheet": "90407-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 5,
+    "effective_start": "2025-03-01",
+    "sheet": "89528-E",
+    "supersedes_sheet": "89278-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 6,
+    "effective_start": "2025-01-01",
+    "sheet": "89279-E",
+    "supersedes_sheet": "88857-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 7,
+    "effective_start": "2025-06-01",
+    "sheet": "89964-E",
+    "supersedes_sheet": "89529-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 8,
+    "effective_start": "2025-10-01",
+    "sheet": "90408-E",
+    "supersedes_sheet": "89964-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 9,
+    "effective_start": "2025-11-15",
+    "sheet": "90670-E",
+    "supersedes_sheet": "90408-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 10,
+    "effective_start": "2025-03-01",
+    "sheet": "89529-E",
+    "supersedes_sheet": "89279-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 11,
+    "effective_start": "2025-01-01",
+    "sheet": "89280-E",
+    "supersedes_sheet": "88858-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 12,
+    "effective_start": "2025-06-01",
+    "sheet": "89965-E",
+    "supersedes_sheet": "89530-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 13,
+    "effective_start": "2025-10-01",
+    "sheet": "90409-E",
+    "supersedes_sheet": "89965-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 14,
+    "effective_start": "2025-11-15",
+    "sheet": "90671-E",
+    "supersedes_sheet": "90409-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 15,
+    "effective_start": "2025-03-01",
+    "sheet": "89530-E",
+    "supersedes_sheet": "89280-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 16,
+    "effective_start": "2025-01-01",
+    "sheet": "89281-E",
+    "supersedes_sheet": "88859-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 17,
+    "effective_start": "2025-06-01",
+    "sheet": "89966-E",
+    "supersedes_sheet": "89531-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 18,
+    "effective_start": "2025-10-01",
+    "sheet": "90410-E",
+    "supersedes_sheet": "89966-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 19,
+    "effective_start": "2025-11-15",
+    "sheet": "90672-E",
+    "supersedes_sheet": "90410-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 20,
+    "effective_start": "2025-03-01",
+    "sheet": "89531-E",
+    "supersedes_sheet": "89281-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 21,
+    "effective_start": "2025-01-01",
+    "sheet": "89282-E",
+    "supersedes_sheet": "88860-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 22,
+    "effective_start": "2025-06-01",
+    "sheet": "89967-E",
+    "supersedes_sheet": "89532-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 23,
+    "effective_start": "2025-10-01",
+    "sheet": "90411-E",
+    "supersedes_sheet": "89967-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 24,
+    "effective_start": "2025-11-15",
+    "sheet": "90673-E",
+    "supersedes_sheet": "90411-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 25,
+    "effective_start": "2025-03-01",
+    "sheet": "89532-E",
+    "supersedes_sheet": "89282-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 26,
+    "effective_start": "2025-01-01",
+    "sheet": "89283-E",
+    "supersedes_sheet": "88861-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 27,
+    "effective_start": "2025-06-01",
+    "sheet": "89968-E",
+    "supersedes_sheet": "89533-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 28,
+    "effective_start": "2025-10-01",
+    "sheet": "90412-E",
+    "supersedes_sheet": "89968-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 29,
+    "effective_start": "2025-11-15",
+    "sheet": "90674-E",
+    "supersedes_sheet": "90412-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 30,
+    "effective_start": "2025-03-01",
+    "sheet": "89533-E",
+    "supersedes_sheet": "89283-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 31,
+    "effective_start": "2025-01-01",
+    "sheet": "89284-E",
+    "supersedes_sheet": "88862-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 32,
+    "effective_start": "2025-06-01",
+    "sheet": "89969-E",
+    "supersedes_sheet": "89534-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 33,
+    "effective_start": "2025-10-01",
+    "sheet": "90413-E",
+    "supersedes_sheet": "89969-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 34,
+    "effective_start": "2025-03-01",
+    "sheet": "89534-E",
+    "supersedes_sheet": "89284-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 35,
+    "effective_start": "2025-01-01",
+    "sheet": "89285-E",
+    "supersedes_sheet": "88863-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 36,
+    "effective_start": "2025-06-01",
+    "sheet": "89970-E",
+    "supersedes_sheet": "89535-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 37,
+    "effective_start": "2025-10-01",
+    "sheet": "90414-E",
+    "supersedes_sheet": "89970-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 38,
+    "effective_start": "2025-03-01",
+    "sheet": "89535-E",
+    "supersedes_sheet": "89285-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 39,
+    "effective_start": "2025-01-01",
+    "sheet": "89286-E",
+    "supersedes_sheet": "88864-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 40,
+    "effective_start": "2025-06-01",
+    "sheet": "89971-E",
+    "supersedes_sheet": "89536-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 41,
+    "effective_start": "2025-10-01",
+    "sheet": "90415-E",
+    "supersedes_sheet": "89971-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 42,
+    "effective_start": "2025-03-01",
+    "sheet": "89536-E",
+    "supersedes_sheet": "89286-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 43,
+    "effective_start": "2025-01-01",
+    "sheet": "89287-E",
+    "supersedes_sheet": "88865-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 44,
+    "effective_start": "2025-06-01",
+    "sheet": "89972-E",
+    "supersedes_sheet": "89537-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 45,
+    "effective_start": "2025-10-01",
+    "sheet": "90416-E",
+    "supersedes_sheet": "89972-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 46,
+    "effective_start": "2025-03-01",
+    "sheet": "89537-E",
+    "supersedes_sheet": "89287-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 47,
+    "effective_start": "2025-06-02",
+    "sheet": "89841-E",
+    "supersedes_sheet": "73727-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 48,
+    "effective_start": "2025-06-02",
+    "sheet": "89842-E",
+    "supersedes_sheet": "69880-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 49,
+    "effective_start": "2025-01-01",
+    "sheet": "89288-E",
+    "supersedes_sheet": "88866-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 50,
+    "effective_start": "2025-06-01",
+    "sheet": "89973-E",
+    "supersedes_sheet": "89538-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 51,
+    "effective_start": "2025-10-01",
+    "sheet": "90417-E",
+    "supersedes_sheet": "89973-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 52,
+    "effective_start": "2025-11-15",
+    "sheet": "90675-E",
+    "supersedes_sheet": "90417-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 53,
+    "effective_start": "2025-03-01",
+    "sheet": "89538-E",
+    "supersedes_sheet": "89288-E"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+    "pdf_page": 54,
+    "effective_start": "2025-11-15",
+    "sheet": "90676-E",
+    "supersedes_sheet": "74515-E"
+  }
+]

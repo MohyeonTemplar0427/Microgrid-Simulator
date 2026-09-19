@@ -1,0 +1,27 @@
+[
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2026.pdf",
+    "sha256": "e4d2231346c0f4cf80bb7f8b36c375094a87814726b3fdb99ed8f60cd3d4bdad",
+    "role": "Adjacent cancellation dates / inherited conditions; not newly loaded 2026 prices"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2026.pdf",
+    "sha256": "0f0144390eda84274e17e026608971a4e1605f493f67199627383fb513e57394",
+    "role": "Adjacent cancellation dates / inherited conditions; not newly loaded 2026 prices"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_D_2024.pdf",
+    "sha256": "3ffae6638b1cc9835d7d4f9fdbc9fa2ede9f0b4596311724b24e55abca9fde19",
+    "role": "Adjacent cancellation dates / inherited conditions; not newly loaded 2026 prices"
+  },
+  {
+    "file": "ELECTRIC_SCHEDULES_TOU-D_2024.pdf",
+    "sha256": "edd622e060fb578b6eefc776115a628e8e084578dd4fc7ee556a574c03ac3d42",
+    "role": "Adjacent cancellation dates / inherited conditions; not newly loaded 2026 prices"
+  },
+  {
+    "file": "rule9.pdf",
+    "sha256": "129110f68e0917a4b8f63a0d31061b80c187d440aab997a1e0554802c096581f",
+    "role": "Adjacent cancellation dates / inherited conditions; not newly loaded 2026 prices"
+  }
+]

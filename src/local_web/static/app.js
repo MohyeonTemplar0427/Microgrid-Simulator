@@ -19,7 +19,7 @@ function gridOnly() {return template?.schema_version>=2 && field('pv_choice').va
 function updateEquipmentChoice() {
   const municipal=window.municipalUI?.active();
   field('pv_choice').querySelector('option[value="yes"]').disabled=!!municipal;
-  field('pv_choice').querySelector('option[value="storage"]').disabled=!municipal;
+  field('pv_choice').querySelector('option[value="storage"]').disabled=!(municipal||window.socalUI?.active());
   if(field('pv_choice').selectedOptions[0]?.disabled)field('pv_choice').value='';
   $('pv-presence').hidden=template?.schema_version===1;
   for(const page of document.querySelectorAll('.wizard-page')) {
@@ -57,7 +57,7 @@ function updateSiteProfile() {
   $('site-profile-note').textContent=common
     ? 'Common-area load only, on a separate nonresidential account. Confirm its assigned commercial schedule; dwelling meters and shared-generation billing are excluded.'
     : siteCustomerClass()==='residential'
-      ? 'House and individual-unit billing currently supports AMP and SVP import-only storage. Other residential utility integrations are not yet available. Confirm the actual account and meter.'
+      ? 'Residential choices follow the location and the supported account billing models. Confirm the actual account and meter.'
       : 'Site type and location filter the available services. A map match does not establish account eligibility.';
   for(const opt of field('archetype').options) {
     opt.hidden=opt.disabled=!!siteCustomerClass() && !['office','retail','school','industrial'].includes(opt.value);
@@ -112,6 +112,7 @@ function updateSiteControls() {
   if(weatherMeta && !weatherMatches(weatherMeta)) { weatherId=null; weatherMeta=null; }
   window.municipalUI?.sync();
   updateEquipmentChoice();
+  window.socalUI?.sync();
   $("weather-status").textContent=field("weather_source").value==="nsrdb" ? (weatherId?"Historical weather ready. A copy will be saved with the study.":"Retrieve matching historical weather before running."):"Clear-sky estimates are calculated locally when the simulation runs.";
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
@@ -167,12 +168,13 @@ function badge(status) { const span=document.createElement("span"); span.classNa
 function option(value, label) { const node=document.createElement("option"); node.value=value; node.textContent=label; return node; }
 
 function fillForm(request, lookup=true) {
+  if(request.schema_version===6) {window.socalUI.restore(request); return;}
   if(request.schema_version===4) {window.municipalUI.restore(request); return;}
   if(request.schema_version===5) {
     fillForm({...structuredClone(defaultSettings()),...request,schema_version:3},lookup);
     field('pv_choice').value='no';updateSiteControls();resetWizard();return;
   }
-  locationResolution=null;window.municipalUI?.invalidateResolution();
+  locationResolution=null;window.municipalUI?.invalidateResolution();window.socalUI?.invalidate();
   strategiesEdited=true;
   locationGeneration++;
   clearTimeout(utilityTimer);
@@ -246,7 +248,7 @@ form.addEventListener("submit",async event=>{
   if(wizardIndex < wizardPages().length-1) { advanceWizard(); return; }
   if(!validateWizard()) return;
   $("form-error").hidden=true; $("run-button").disabled=true;
-  try { const study=window.municipalUI?.active()?await window.municipalUI.submit():await api("/api/studies",readRequest()); await selectStudy(study.id); await history(); }
+  try { const study=window.socalUI?.active()?await window.socalUI.submit():window.municipalUI?.active()?await window.municipalUI.submit():await api("/api/studies",readRequest()); await selectStudy(study.id); await history(); }
   catch(error) { showError("form-error",error); }
   finally { $("run-button").disabled=false; }
 });
@@ -278,7 +280,7 @@ async function refreshStudy(id) {
     $("run-name").textContent=study.name;
     $("run-meta").textContent=`${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}`;
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
-    $("progress").textContent=study.status==="completed" ? ((study.request.schema_version===4 || study.request.schema_version===5) ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.") : study.progress;
+    $("progress").textContent=study.status==="completed" ? ((study.request.schema_version===4 || study.request.schema_version===5 || study.request.schema_version===6) ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.") : study.progress;
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
     else if (study.status==="completed") {
@@ -294,7 +296,7 @@ async function refreshStudy(id) {
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["scenario","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","feasible_intervals","interval_count"];
+const summaryColumns=["scenario","utility_bill","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","feasible_intervals","interval_count"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -450,7 +452,7 @@ function serviceForSelection(selection) {
   return capabilities?.services?.find(s=>s.id===selection || s.aliases.includes(selection));
 }
 function resetUtilityOptions(saved="unconfirmed") {
-  locationResolution=null;window.municipalUI?.invalidateResolution();
+  locationResolution=null;window.municipalUI?.invalidateResolution();window.socalUI?.invalidate();
   field("utility").replaceChildren(option("unconfirmed","Choose a location in Step 2 first"));
   if(saved && saved!=="unconfirmed")field("utility").append(option(saved,`${serviceForSelection(saved)?.label||saved} · saved choice, awaiting location check`));
   field("utility").value=saved||"unconfirmed";
@@ -461,7 +463,7 @@ function setLocationChoices(result,saved="unconfirmed") {
   const delivery=result.delivery_candidates||[];
   for(const item of delivery){
     const id=item.utility_id;
-    choices.set(id,{label:(serviceForSelection(id)?.label||item.name)+(item.match==='nearby_boundary'?' · near boundary, verify address':''),supported:['amp','svp'].includes(id)||!!serviceForSelection(id)});
+    choices.set(id,{label:(serviceForSelection(id)?.label||item.name)+(item.match==='nearby_boundary'?' · near boundary, verify address':''),supported:['amp','svp',...(capabilities.socal?['ladwp','sce']:[])].includes(id)||!!serviceForSelection(id)});
   }
   // Keep unsupported CCAs visible: a PG&E delivery match does not imply
   // bundled generation. Only validated identities enable implemented billing.
@@ -538,10 +540,11 @@ function validateWizardPage(page) {
     showError('form-error',new Error('Wait for the Step 2 territory lookup, then choose a supported electricity service.'));return false;
   }
   if(window.municipalUI && !window.municipalUI.validate(page))return false;
+  if(window.socalUI && !window.socalUI.validate(page))return false;
   for(const input of page.querySelectorAll("input,select")) {
     let hidden=false;
     for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.hidden) hidden=true;
-    if(input.disabled || hidden || input.name.startsWith("m_")) continue;
+    if(input.disabled || hidden || input.name.startsWith("m_") || input.name.startsWith("sc_")) continue;
     const optional=["location_query","orientation_year","ess_basis","ess_charge_override","ess_discharge_override"];
     if(input.type!=="checkbox" && !optional.includes(input.name) && ((input.value==="" && input.name!=="tariff_id") || input.value==="__unset__")) {
       for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.tagName==="DETAILS") parent.open=true;
@@ -554,7 +557,7 @@ function validateWizardPage(page) {
   }
   let error=null;
   if(page.contains(field("end_date")) && field("end_date").value<field("start_date").value) error="End date must be on or after the start date.";
-  if(!window.municipalUI?.active() && page.contains(field("weather_source")) && template?.schema_version>=2 && field("weather_source").value==="nsrdb" && !weatherId) error="Retrieve matching historical weather before continuing.";
+  if(!window.socalUI?.active() && !window.municipalUI?.active() && page.contains(field("weather_source")) && template?.schema_version>=2 && field("weather_source").value==="nsrdb" && !weatherId) error="Retrieve matching historical weather before continuing.";
   if(page.contains(field("capacity_kWh"))) {
     if(field("ess_mode").value==="equipment" && !essResolution?.ready) error="Review and apply the equipment settings before continuing.";
     else {
@@ -600,12 +603,12 @@ $("step-next").addEventListener("click",advanceWizard);
 function defaultSettings() { return capabilities.candidate_defaults || capabilities.site_defaults || capabilities.defaults; }
 function startBlankStudy() {
   fillForm(defaultSettings(),false);
-  window.municipalUI?.reset();
+  window.municipalUI?.reset();window.socalUI?.reset();
   strategiesEdited=false;
   locationGeneration++; clearTimeout(utilityTimer); siteLabel="";
   weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
   for(const input of form.querySelectorAll("input[name],select[name]")) {
-    if(input.name.startsWith("m_"))continue;
+    if(input.name.startsWith("m_") || input.name.startsWith("sc_"))continue;
     if(input.type==="checkbox") input.checked=false;
     else if(input.name==="utility") input.value="unconfirmed";
     else input.value=input.name==="tariff_id"?"__unset__":"";
@@ -642,6 +645,7 @@ function applyStepDefaults(page) {
     field('start_date').value=dates.start;field('end_date').value=dates.end;
   }
   window.municipalUI?.defaults(page);
+  window.socalUI?.defaults(page);
   const hadCoordinates=field("latitude").value!=="" || field("longitude").value!=="";
   const residential=siteCustomerClass()==='residential';
   const values={...defaults,...defaults.battery,...defaults.solar,
@@ -652,7 +656,7 @@ function applyStepDefaults(page) {
     archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),
     ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2};
   for(const input of page.querySelectorAll("input[name],select[name]")) {
-    if(input.name.startsWith("m_") || input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
+    if(input.name.startsWith("m_") || input.name.startsWith("sc_") || input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
     if(input.name==="location_query" && hadCoordinates) continue;
     if(Object.hasOwn(values,input.name)) input.value=values[input.name] ?? "";
   }

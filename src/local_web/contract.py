@@ -97,6 +97,9 @@ def number(value, label, minimum=0, maximum=None):
 
 def validate_request(data):
     """Reject unknown fields and unsupported versions rather than dropping inputs."""
+    if isinstance(data, dict) and type(data.get("schema_version")) is int and data["schema_version"] == 6:
+        from .socal_study import validate
+        return validate(data)
     if isinstance(data, dict) and type(data.get("schema_version")) is int and data["schema_version"] == 5:
         from .grid_only import validate
         return validate(data)

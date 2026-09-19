@@ -1,0 +1,1577 @@
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 91386-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66231-E
+Schedule TOU-GS-3 Sheet 1
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5837-E Michael Backstrom Date Submitted Jun 25, 2026
+Decision Sr. Vice President Effective Jun 25, 2026
+Resolution
+APPLICABILITY 
+ 
+Applicable to single- and three-phase general service including lighting and power Customers whose 
+monthly Maximum Demand registers, or in the opinion of SCE is expected to register 200 kW through 
+500 kW. The Customer whose monthly Maximum Demand, in the opinion of SCE, is expected to 
+exceed 500 kW or has exceeded 500 kW for any three months during the preceding 12 months is 
+ineligible for service under this Schedule and effective with the date of ineligibility, such Customer's 
+account shall be transferred to Schedule TOU-8. Further, any Customer served under this Schedule 
+whose monthly Maximum Demand has registered below 200 kW for 12 consecutive months is 
+ineligible for service under this Schedule and shall be transferred to Schedule TOU-GS-2.  Except for 
+interruptible Customers, a Customer who makes a permanent change in operating conditions that 
+SCE, in its sole opinion, anticipates will reduce the Customer’s demand to below 200 kW, may transfer 
+to Schedule TOU-GS-2 before completing 12 consecutive months at the reduced demand levels.  
+Such Customer shall be required to sign the Permanent Change in Operating Conditions Declaration, 
+Form 14-548.  Service under this Schedule is subject to meter availability.   
+ 
+This Schedule contains six rate structures; Option D-Critical Peak Pricing (CPP), Option D, Option E, 
+and TOU Period Grandfathering Options, Option B, Option B-CPP and Option R.   
+ 
+Option D-CPP  
+ 
+Option D-CPP is the default Option for this Schedule. Effective with the Customer’s next 
+scheduled billing date immediately on or after March 1, 2019, Bundled Service Customers who 
+have at least 24 months of experience on a TOU Option, who were served on Option B will be 
+defaulted to Option D-CPP. Customers who lack 24 months of TOU experience will be defaulted 
+to Option D. However, Customers may elect another Option for which they are eligible.  
+ 
+Except as detailed below, Bundled Service Customers taking service on Option D, with 24 
+months of TOU experience by August 1 of each year, will be eligible for CPP default once per 
+year during the Annual CPP Default Window. The Annual CPP Default Window will occur each 
+October beginning in 2020.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(D) 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 89852-E
+Cancelling Revised Cal. P.U.C. Sheet No. 86398-E
+Schedule TOU-GS-3 Sheet 2
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5497-E Michael Backstrom Date Submitted May 2, 2025
+Decision Sr. Vice President Effective Jun 2, 2025
+Resolution
+APPLICABILITY (Continued) 
+ 
+Option D-CPP (Continued) 
+ 
+Customers are not eligible for default to Option D-CPP  if they: 
+ 
+a. have previously been on CPP;  
+b. have elected to opt-out of Option D-CPP; 
+c. are not taking service on Option D; 
+d. are taking service under Direct Access, Community Aggregation, Community Choice 
+Aggregation service; or,  
+e. are taking service under a Demand Response Schedule (e.g., GS-APS-E, CBP-E, TOU-
+BIP, or a third party administered demand response program, etc.)   
+ 
+For Customers who are either defaulted or elect D-CPP, one-time Bill Protection, as further defined in 
+Special Condition 3.f., will be provided for up to the first 12 months of participation on a CPP Option. 
+ 
+Pursuant to Decision 18-11-029, except for the Customers grandfathered to continue the existing 
+dual participation in accordance with Special Condition 3.e., all Customers served under CPP of this 
+Schedule are not eligible to enroll in any other demand response program offered by SCE or any 
+third-party administered demand response program. 
+ 
+Grandfathered Options 
+ 
+Pursuant to CPUC Decisions (D.)17-01-006 and D.17-10-018, solar Customers meeting the eligibility 
+criteria outlined in Special Condition 15 below are eligible to continue receiving service on a TOU 
+Option with Legacy TOU Periods as described below:    
+ 
+a. Option A (Generating Account’s) Customers will be transitioned to the grandfathered Option R;  
+b. Option A (Benefitting Account’s) Customers will be transitioned to grandfathered Option B; 
+c. Option B Customers will be transitioned to the grandfathered Option B; or 
+d. Option R Customers will be transitioned to the grandfathered Option R. 
+ 
+However, Customers may elect a Change of Rate Schedule between grandfathered Options, as 
+applicable, in accordance with Rule 12 D. 
+ 
+TERRITORY 
+ 
+Within the entire territory served. 
+ 
+RATES 
+ 
+The rates below will apply to all Customer’s receiving service under this Schedule. In addition, the 
+Customer will be charged the applicable rates under Option D-CPP, Option D, Option E, Option B-
+CPP, Option B, Option R, or Option A as listed below. CPP Event Energy Charges will apply to all 
+energy usage (kWh) during CPP Event periods and CPP Non-Event Demand Credits will apply to 
+Demand (kW) on CPP Non-Event Credit Periods during the Summer Season weekdays, 4:00 p.m. to 
+9:00 p.m. as described in Special Conditions 1 and 3, below. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 91228-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90970-E
+Schedule TOU-GS-3 Sheet 3
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+RATES (Continued) 
+Trans 1 Distrbtn 2 NSGC 3 NDC 4 PPPC 5 WFC6 DWRA 11 PUCRF 7 Total 8 UG** DWREC 10
+Op t i o n D  /  Op t i o n D - C PP
+Energy Charge - $/kWh
+Summer Season - On-Peak (0.00051 ) (R) 0.02028 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.05374 (R) 0.1 01 60 0.00000
+M id-Peak (0.00051 ) (R) 0.01 854 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.05200 (R) 0.09264 0.00000
+Off-Peak (0.00051 ) (R) 0.01 820 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.051 66 (R) 0.06256 0.00000
+Winter Season
+M id-Peak (0.00051 ) (R) 0.02028 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.05374 (R) 0.07221 0.00000
+Off-Peak (0.00051 ) (R) 0.01 854 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.05200 (R) 0.07264 0.00000
+Super-Off-Peak (0.00051 ) (R) 0.01 757 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.051 03 (R) 0.0381 4 0.00000
+Fixed Recovery Charge - $/kWh 0.00400
+M CAM  Charge12 - $/kWh 0.001 70
+Customer Charge - $/M eter/M onth 780.37 (I) 780.37 (I)
+Demand Charge - $/kW of Billing Demand/M eter/M onth
+Facilities Related 5.60 21 .1 5 (I) 26.75 (I)
+Time Related
+Summer Season - On-Peak 21 .1 5 (I) 21 .1 5 (I) 1 7.45
+Winter Season - M id-Peak - Weekdays (4-9pm) 3.76 (I) 3.76 (I) 6.31
+Voltage Discount, Demand - $/kW
+Facilities Related
+From 2 kV to 50 kV 0.00 (0.40) (I) (0.40) (I)
+Above 50 kV but below 220 kV 0.00 (8.76) (I) (8.76) (I)
+At 220 kV 0.00 (21 .1 5) (I) (21 .1 5) (I)
+Voltage Discount, Summer On Peak Demand - $/kW
+From 2 kV to 50 kV 0.00 (0.39) (I) (0.39) (I) (0.40)
+Above 50 kV but below 220 kV 0.00 (7.29) (I) (7.29) (I) (0.93)
+At 220 kV 0.00 (21 .1 5) (I) (21 .1 5) (I) (0.94)
+Voltage Discount, Winter Weekdays (4-9pm) Demand - $/kW
+From 2 kV to 50 kV 0.00 (0.07) (0.07) (0.1 6)
+Above 50 kV but below 220 kV 0.00 (1 .29) (I) (1 .29) (I) (0.34)
+At 220 kV 0.00 (3.76) (I) (3.76) (I) (0.34)
+Voltage Discount, Energy  - $/kWh
+From 2 kV to 50 kV 0.00000 (0.00033) (I) (0.00033) (I) (0.00090)
+Above 50 kV but below 220 kV 0.00000 (0.00596) (I) (0.00596) (I) (0.001 97)
+At 220 kV 0.00000 (0.01 741 ) (I) (0.01 741 ) (I) (0.00201 )
+Power Factor Adjustment - $/kVAR
+Greater than 50 kV 0.66 0.66
+50 kV or less 0.52 0.52
+California Alternate Rates for 1 00.00* 1 00.00*
+Energy Discount - %
+Opt io n D -C P P
+CPP Event Energy Charge - $/kWh 0.80000
+Summer CPP Non-Event Credit
+On-Peak Demand Credit - $/kW (7.55)
+M aximum Available Credit - $/kW**
+Summer (4-9pm) (20.08)
+Delivery Service Generation 9
+ 
+ 
+ 
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.  
+** The ongoing Competition Transition Charge (CTC) of $0.00010 per kWh is recovered in the UG component of Generation.  
+*** The Maximum Available Credit is the capped credit amount for CPP Customers dual participating in other demand response programs              
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The TOTCA 
+represents the Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability Services Balancing 
+Account Adjustment (RSBAA) of $0.00010 per kWh, and Transmission Access Charge Balancing Account Adjustment (TACBAA) of 
+$0.00161 per kWh.  
+2 Distrbtn = Distribution  
+3 NSGC = New System Generation Charge  
+4 NDC =  Nuclear Decommissioning Charge  
+5 PPPC = Public Purpose Programs Charge (including Diablo Canyon Power Plant charge and California Alternate Rates for Energy 
+Surcharge where applicable.) 
+ 
+6 WFC = Wildfire Fund Non-Bypassable Charge.  The Wildfire Fund Non-Bypassable Charge supports the California Wildfire Fund and is not 
+applicable to exempt Customers pursuant to D.19-10-056. 
+ 
+ 
+7 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.  
+8 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation Service 
+(CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this Schedule but 
+instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS. 
+ 
+9 Generation = The Generation rates are applicable only to Bundled Service Customers.  See Special Condition below for PCIA recovery.  
+10 DWREC = Department of Water Resources (DWR) Energy Credit – For more information on the DWR Energy Credit, see the Billing 
+Calculation Special Condition of this Schedule. 
+ 
+11 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the 2000-2001 
+energy crisis. 
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement ordered by 
+the CPUC that SCE has procured on behalf of customers whose generation services are provided by certain Electric Service Providers or 
+Community Choice Aggregators  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(R) 
+ 
+ 
+ 
+   
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 91229-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90971-E
+Schedule TOU-GS-3 Sheet 4
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+RATES (Continued) 
+Opt io n E Trans 1 Distrbtn 2 NSGC 3 NDC 4 PPPC 5 WFC6 DWRA 11 PUCRF 7 Total 8 UG** DWREC 10
+Energy Charge - $/kWh
+Summer Season - On-Peak (0.00051 ) (R) 0.42585 (I) 0.00582 0.00003 0.021 21  (R) 0.00591 0.00000 0.001 00 0.45931  (I) 0.301 00 0.00000
+M id-Peak (0.00051 ) (R) 0.22394 (I) 0.00582 0.00003 0.021 21  (R) 0.00591 0.00000 0.001 00 0.25740 (I) 0.09264 0.00000
+Off-Peak (0.00051 ) (R) 0.1 1 243 (I) 0.00582 0.00003 0.021 21  (R) 0.00591 0.00000 0.001 00 0.1 4589 (R) 0.06256 0.00000
+Winter Season - M id-Peak (0.00051 ) (R) 0.03825 (I) 0.00582 0.00003 0.021 21  (R) 0.00591 0.00000 0.001 00 0.071 71  (R) 0.1 1 658 0.00000
+Off-Peak (0.00051 ) (R) 0.01 629 (I) 0.00582 0.00003 0.021 21  (R) 0.00591 0.00000 0.001 00 0.04975 (R) 0.07264 0.00000
+Super-Off-Peak (0.00051 ) (R) 0.031 63 (I) 0.00582 0.00003 0.021 21  (R) 0.00591 0.00000 0.001 00 0.06509 (R) 0.0381 4 0.00000
+Fixed Recovery Charge - $/kWh 0.00400
+M CAM  Charge12 - $/kWh 0.001 70
+Customer Charge - $/M eter/M onth 780.37 (I) 780.37 (I)
+Demand Charge - $/kW of Billing Demand/M eter/M onth
+Facilities Related 5.60 1 0.72 (I) 1 6.32 (I)
+Time Related
+Summer Season - On-Peak 0.00 0.00 4.85
+Winter Season - M id-Peak - Weekdays (4-9pm) 0.00 0.00 2.58
+Voltage Discount, Facilities Related Demand - $/kW
+From 2 kV to 50 kV 0.00 (0.20) (0.20)
+Above 50 kV but below 220 kV 0.00 (4.44) (I) (4.44) (I)
+At 220 kV 0.00 (1 0.72) (I) (1 0.72) (I)
+Voltage Discount, Summer On Peak Demand - $/kW
+From 2 kV to 50 kV 0.00 0.00 0.00 (0.1 6)
+Above 50 kV but below 220 kV 0.00 0.00 0.00 (0.38)
+At 220 kV 0.00 0.00 0.00 (0.38)
+Voltage Discount, Winter Weekdays (4-9pm) Demand - $/kW
+From 2 kV to 50 kV 0.00 0.00 0.00 (0.07)
+Above 50 kV but below 220 kV 0.00 0.00 0.00 (0.1 4)
+At 220 kV 0.00 0.00 0.00 (0.1 4)
+Voltage Discount, Energy  - $/kWh
+From 2 kV to 50 kV 0.00000 (0.001 37) (I) (0.001 37) (I) (0.001 66)
+Above 50 kV but below 220 kV 0.00000 (0.02843) (I) (0.02843) (I) (0.00371 )
+At 220 kV 0.00000 (0.07649) (I) (0.07649) (I) (0.00376)
+Power Factor Adjustment - $/kVAR
+Greater than 50 kV 0.66 0.66
+50 kV or less 0.52 0.52
+California Alternate Rates for
+Energy Discount - % 1 00.00* 1 00.00*
+Delivery Service Generation 9
+ 
+ 
+ 
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.  
+** The ongoing Competition Transition Charge (CTC) of $0.00010 per kWh is recovered in the UG component of Generation.  
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The TOTCA 
+represents the Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability Services Balancing 
+Account Adjustment (RSBAA) of $0.00010 per kWh, and Transmission Access Charge Balancing Account Adjustment (TACBAA) of 
+$0.00161 per kWh. 
+  
+  
+(R) 
+2 Distrbtn = Distribution  
+3 NSGC = New System Generation Charge  
+4 NDC =  Nuclear Decommissioning Charge  
+5 PPPC = Public Purpose Programs Charge (including Diablo Canyon Power Plant charge and California Alternate Rates for Energy 
+Surcharge where applicable.) 
+  
+6 WFC = Wildfire Fund Non-Bypassable Charge.  The Wildfire Fund Non-Bypassable Charge supports the California Wildfire Fund and is not 
+applicable to exempt Customers pursuant to D.19-10-056. 
+ 
+7 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.  
+8 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation Service 
+(CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this Schedule but 
+instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS. 
+ 
+9 Generation = The Generation rates are applicable only to Bundled Service Customers.  See Special Condition below for PCIA recovery  
+10 DWREC = Department of Water Resources (DWR) Energy Credit – For more information on the DWR Energy Credit, see the Billing 
+Calculation Special Condition of this Schedule. 
+ 
+11 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the 2000-2001 
+energy crisis. 
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement ordered by 
+the CPUC that SCE has procured on behalf of customers whose generation services are provided by certain Electric Service Providers or 
+Community Choice Aggregators 
+ 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 91230-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90972-E
+Schedule TOU-GS-3 Sheet 5
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+ 
+RATES (Continued) 
+ 
+Trans 1 Distrbtn 2 NSGC 3 NDC 4 PPPC 5 WFC6 DWRA 11 PUCRF 7 Total 8 UG** DWREC 10
+Opt io n B  /  Opt io n B -C P P
+Energy Charge - $/kWh
+Summer Season - On-Peak (0.00051 ) (R) 0.001 1 3 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.03459 (R) 0.07558 0.00000
+M id-Peak (0.00051 ) (R) 0.001 1 3 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.03459 (R) 0.07058 0.00000
+Off-Peak (0.00051 ) (R) 0.001 1 3 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.03459 (R) 0.06802 0.00000
+Winter Season
+M id-Peak (0.00051 ) (R) 0.001 1 3 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.03459 (R) 0.09592 0.00000
+Off-Peak (0.00051 ) (R) 0.001 1 3 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.03459 (R) 0.05589 0.00000
+Fixed Recovery Charge - $/kWh 0.00400
+M CAM  Charge12 - $/kWh 0.001 70
+Customer Charge - $/M eter/M onth 780.37 (I) 780.37 (I)
+Demand Charge - $/kW of Billing Demand/M eter/M onth
+Facilities Related 5.60 35.74 (I) 41 .34 (I)
+Time Related
+Summer Season - On-Peak 0.00 0.00 1 1 .69
+M id-Peak 0.00 0.00 3.90
+Winter Season - M id-Peak 0.00 0.00 0.00
+Off-Peak 0.00 0.00 0.00
+Voltage Discount, Demand - $/kW
+Facilities Related
+From 2 kV to 50 kV 0.00 (0.84) (I) (0.84) (I)
+Above 50 kV but below 220 kV 0.00 (1 6.98) (I) (1 6.98) (I)
+At 220 kV 0.00 (35.74) (I) (35.74) (I)
+Voltage Discount, Summer On and M id Peak Demand - $/kW
+From 2 kV to 50 kV 0.00 0.00 0.00 (0.48)
+Above 50 kV but below 220 kV 0.00 0.00 0.00 (1 .1 2)
+At 220 kV 0.00 0.00 0.00 (1 .1 4)
+Voltage Discount, Energy  - $/kWh
+From 2 kV to 50 kV 0.00000 0.00000 0.00000 (0.00090)
+Above 50 kV but below 220 kV 0.00000 0.00000 0.00000 (0.001 97)
+At 220 kV 0.00000 0.00000 0.00000 (0.00201 )
+Power Factor Adjustment - $/kVAR
+Greater than 50 kV 0.66 0.66
+50 kV or less 0.52 0.52
+California Alternate Rates for 1 00.00* 1 00.00*
+Energy Discount - %
+Opt io n B -C P P
+CPP Event Energy Charge - $/kWh 0.80000
+Summer CPP Non-Event Credit
+On-Peak Demand Credit - $/kW (7.55)
+M aximum Available Credit - $/kW**
+Summer (4-9pm) (20.08)
+Delivery Service Generation 9
+ 
+ 
+ 
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.  
+** The ongoing Competition Transition Charge (CTC) of $0.00010 per kWh is recovered in the UG component of Generation.  
+*** The Maximum Available Credit is the capped credit amount for CPP Customers dual participating in other demand response programs.                                             
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The TOTCA represents the 
+Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability Services Balancing Account Adjustment (RSBAA) 
+of $0.00010 per kWh, and Transmission Access Charge Balancing Account Adjustment (TACBAA) of $0.00161 per kWh. 
+ 
+ 
+(R) 
+2 Distrbtn = Distribution  
+3 NSGC = New System Generation Charge  
+4 NDC =  Nuclear Decommissioning Charge  
+5 PPPC = Public Purpose Programs Charge (including Diablo Canyon Power Plant charge and California Alternate Rates for Energy Surcharge where 
+applicable.) 
+ 
+6 WFC = Wildfire Fund Non-Bypassable Charge.  The Wildfire Fund Non-Bypassable Charge supports the California Wildfire Fund and is not applicable 
+to exempt Customers pursuant to D.19-10-056. 
+ 
+ 
+7 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.  
+8 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation Service (CCA 
+Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this Schedule but instead pay the 
+DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS. 
+ 
+9 Generation = The Generation rates are applicable only to Bundled Service Customers.  See Special Condition below for PCIA recovery.  
+10 DWREC = Department of Water Resources (DWR) Energy Credit – For more information on the DWR Energy Credit, see the Billing Calculation 
+Special Condition of this Schedule. 
+ 
+11 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the 2000-2001 energy crisis. 
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement ordered by the CPUC 
+that SCE has procured on behalf of customers whose generation services are provided by certain Electric Service Providers or Community Choice 
+Aggregators 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 91231-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90973-E
+Schedule TOU-GS-3 Sheet 6
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+RATES (Continued) 
+ 
+ 
+Opt io n R Trans 1 Distrbtn 2 NSGC 3 NDC 4 PPPC 5 WFC6 DWRA 11 PUCRF 7 Total 8 UG** DWREC 10
+Energy Charge - $/kWh
+Summer Season - On-Peak (0.00051 ) (R) 0.26895 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.30241  (I) 0.21 954 0.00000
+M id-Peak (0.00051 ) (R) 0.1 3325 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.1 6671  (R) 0.1 0824 0.00000
+Off-Peak (0.00051 ) (R) 0.04728 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.08074 (R) 0.06802 0.00000
+Winter Season - M id-Peak (0.00051 ) (R) 0.02469 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.0581 5 (R) 0.09592 0.00000
+Off-Peak (0.00051 ) (R) 0.00660 (I) 0.00582 0.00003 0.021 21  (R)0.00591 0.00000 0.001 00 0.04006 (R) 0.05589 0.00000
+Fixed Recovery Charge - $/kWh 0.00400
+M CAM  Charge12 - $/kWh 0.001 70
+Customer Charge - $/M eter/M onth 780.37 (I) 780.37 (I)
+Demand Charge - $/kW of Billing Demand/M eter/M onth
+Facilities Related 5.60 1 9.25 (I) 24.85 (I)
+Voltage Discount, Facilities Related Demand - $/kW
+From 2 kV to 50 kV 0.00 (0.45) (I) (0.45) (I)
+Above 50 kV but below 220 kV 0.00 (9.1 4) (I) (9.1 4) (I)
+At 220 kV 0.00 (1 9.25) (I) (1 9.25) (I)
+Voltage Discount, Energy  - $/kWh
+From 2 kV to 50 kV 0.00000 (0.001 1 4) (I) (0.001 1 4) (I) (0.001 93)
+Above 50 kV but below 220 kV 0.00000 (0.02289) (I) (0.02289) (I) (0.00436)
+At 220 kV 0.00000 (0.0481 8) (I) (0.0481 8) (I) (0.00442)
+Power Factor Adjustment - $/kVAR
+Greater than 50 kV 0.66 0.66
+50 kV or less 0.52 0.52
+California Alternate Rates for
+Energy Discount - % 1 00.00* 1 00.00*
+Delivery Service Generation 9
+ 
+ 
+ 
+ 
+ 
+ 
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.  
+** The ongoing Competition Transition Charge (CTC) of $0.00010 per kWh is recovered in the UG component of Generation.    
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The TOTCA 
+represents the Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability Services Balancing 
+Account Adjustment (RSBAA) of $0.00010 per kWh, and Transmission Access Charge Balancing Account Adjustment (TACBAA) of 
+$0.00161 per kWh. 
+ 
+   
+   
+(R) 
+2 Distrbtn = Distribution  
+3 NSGC = New System Generation Charge  
+4 NDC =  Nuclear Decommissioning Charge  
+5 PPPC = Public Purpose Programs Charge (including Diablo Canyon Power Plant charge and California Alternate Rates for Energy 
+Surcharge where applicable.) 
+ 
+6 WFC = Wildfire Fund Non-Bypassable Charge.  The Wildfire Fund Non-Bypassable Charge supports the California Wildfire Fund and is not 
+applicable to exempt Customers pursuant to D.19-10-056. 
+ 
+ 
+7 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.  
+8 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation Service 
+(CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this Schedule but 
+instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS. 
+ 
+9 Generation = The Generation rates are applicable only to Bundled Service Customers.  See Special Condition below for PCIA recovery  
+10 DWREC = Department of Water Resources (DWR) Energy Credit – For more information on the DWR Energy Credit, see the Billing 
+Calculation Special Condition of this Schedule. 
+ 
+11 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the 2000-2001 
+energy crisis. 
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement ordered by 
+the CPUC that SCE has procured on behalf of customers whose generation services are provided by certain Electric Service Providers or 
+Community Choice Aggregators 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 73737-E
+Cancelling Revised Cal. P.U.C. Sheet No. 67107-E
+Schedule TOU-GS-3 Sheet 7
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4765-E Michael Backstrom Date Submitted Apr 7, 2022
+Decision 21-03-056 Vice President Effective Jun 1, 2022
+Resolution
+ 
+ 
+ 
+SPECIAL CONDITIONS 
+ 
+1. Applicable rate time periods are defined as follows: 
+ 
+Option D, Option D-CPP, Option E 
+ 
+Weekdays Weekends and Holidays TOU Period Summer Winter Summer Winter 
+On-Peak 4 p.m. - 9 p.m. N/A N/A N/A 
+Mid-Peak N/A 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 
+Off-Peak All other hours 9 p.m. - 8 a.m. All other hours 9 p.m. - 8 a.m. 
+Super-Off-Peak N/A 8 a.m. - 4 p.m. N/A 8 a.m. - 4 p.m. 
+CPP Event 
+Period 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 
+ 
+ 
+Option B, Option B-CPP, Option R (Legacy TOU Periods) 
+ 
+Weekdays Weekends and Holidays TOU Period Summer Winter Summer Winter 
+On-Peak 12 p.m. - 6 p.m. N/A N/A N/A 
+Mid-Peak 8 a.m. to 12 p.m. 
+6 p.m. to 11 p.m. 8 a.m. to 9 p.m. N/A N/A 
+Off-Peak All other hours All other hours All other hours All other hours 
+CPP Event 
+Period 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 4 p.m. - 9 p.m. 
+ 
+CPP 
+ 
+CPP Event Energy Charge Periods: 4:00 p.m. to 9:00 p.m. summer and winter days, 
+only when a CPP Event is called. 
+ 
+CPP Non-Event Demand Credit Period: Summer Season weekdays, 4:00 p.m. to 9:00 p.m., 
+when a CPP Event is not occurring. 
+ 
+Holidays are New Year's Day (January 1), Presidents’ Day (third Monday in February), Memorial 
+Day (last Monday in May), Independence Day (July 4), Labor Day (first Monday in September), 
+Veterans Day (November 11), Thanksgiving Day (fourth Thursday in November), and Christmas 
+(December 25). 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(C) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(C) 
+ 
+ 
+ 
+ 
+(C) 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 67108-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66240-E
+Schedule TOU-GS-3 Sheet 8 (T)
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4006-E R.O. Nichols Date Submitted May 29, 2019
+Decision President Effective Jun 1, 2019
+Resolution
+ 
+ 
+ 
+SPECIAL CONDITIONS 
+ 
+1. Applicable rate time periods are defined as follows: (Continued) 
+ 
+When any holiday listed above falls on Sunday, the following Monday will be recognized as a 
+holiday.  No change will be made for holidays falling on Saturday. 
+ 
+The Summer Season shall commence at 12:00 a.m. on June 1 and continue until 12:00 a.m. 
+on October 1 of each year.  The Winter Season shall commence at 12:00 a.m. on October 1 
+of each year and continue until 12:00 a.m. on June 1 of the following year.  
+ 
+2. Voltage:  Service will be supplied at one standard voltage.   
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 85428-E
+Cancelling Revised Cal. P.U.C. Sheet No. 73869-E
+Schedule TOU-GS-3 Sheet 9
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4963-E Michael Backstrom Date Submitted Jan 30, 2023
+Decision 22-12-056 Vice President Effective Mar 1, 2023
+Resolution
+ 
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+3. Critical Peak Pricing:  Critical Peak Pricing (CPP) is an event-based pricing option which 
+provides bill credits in the summer season from 4:00 p.m. to 9:00 p.m. during the                  
+CPP Non-Event Demand Credit Periods and incremental bill charges for load served by SCE 
+during CPP Event Energy Charge Periods. No CPP credits are provided for exported 
+generation, i.e., energy produced and exported by the Customer’s Generating Facility during 
+CPP Non-Event Credit Periods.  
+ 
+a. CPP Events:  SCE may, at its discretion, call a CPP Event any non-holiday weekday.  
+CPP Events will be called based on any one of the following criteria: 
+ 
+(1) California Independent System Operator (CAISO) Energy Emergency Alert (EEA) 
+Watch, EEA-1, or EEA-2 Notice, 
+(2) Forecasts of SCE system emergencies – may be declared at the generation, 
+transmission, or distribution circuit level 
+(3) Forecasts of extreme or unusual temperature conditions impacting system 
+demand 
+(4) Day-ahead load and/or price forecasts 
+ 
+b. Number of CPP Events:  There will be a minimum of 12 CPP events and a maximum of 
+15 CPP Events per calendar year. 
+ 
+c. Customers enrolled in a CPP Option under another Schedule who are moved to this 
+Schedule due to a permanent change in operating conditions and have a change in their 
+Maximum Demand will be enrolled in Option D-CPP or B-CPP of this Schedule as 
+applicable or may elect another applicable Option. 
+ 
+d. Notification of a CPP Event:  SCE will notify Customers of a CPP Event via SCE’s 
+notification system. Customers are responsible for providing SCE with contact 
+information consisting of a telephone number, electronic mail address, and/or SMS text 
+number for notification of Events.  Customers are responsible for updating Customer 
+contact information as necessary.  SCE will begin to notify Customers no later than 3:00 
+p.m. the business day before a CPP Event. Customers are responsible for all charges 
+incurred during a CPP Event, even if notice is not received. Customers who fail to 
+provide the necessary contact information prior to CPP Events are responsible for all 
+charges incurred during CPP Events. 
+ 
+e. Participation in other Programs: Only Bundled Service Customers shall be served under 
+CPP of this Schedule. Direct Access, Community Aggregation, and Community Choice 
+Aggregation Service Customers are ineligible for CPP. CPP Customers served under 
+this Schedule are eligible for service under Net Billing Tariff or Net Energy Metering 
+Schedules. CPP Customers served under this Schedule are not eligible for service 
+under Option E or Option R of this Schedule. Customers served under Schedule S are 
+not eligible for service under Option CPP of this Schedule. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(T) 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 86399-E
+Cancelling Revised Cal. P.U.C. Sheet No. 67110-E
+Schedule TOU-GS-3 Sheet 10
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4882-E-A Michael Backstrom Date Submitted Jun 28, 2023
+Decision Vice President Effective Jul 27, 2023
+Resolution
+ 
+ 
+ 
+  
+  
+SPECIAL CONDITIONS (Continued 
+ 
+3. Critical Peak Pricing (Continued) 
+ 
+e. Participation in other Programs (Continued)  
+ 
+Only Customers dually participating in CPP of this Schedule and another demand 
+response program prior to October 26, 2018 are grandfathered to continue the 
+existing dual participation. All other Customers served under CPP of this Schedule 
+are not eligible to dually enroll in any demand response program offered by SCE or 
+any third-party administered demand response program. 
+ 
+For CPP Customers grandfathered to continue to dually participate with another 
+demand response program, the sum of credits provided by the dual participating 
+demand response program and CPP of this Schedule will be capped, if applicable. 
+The capped credit amount, also known as the Maximum Available Credit, is listed in 
+the applicable CPP Option of this Schedule. These grandfathered Customers are 
+capped at the megawatt level as of December 10, 2018. 
+ 
+f. Bill Protection: The purpose of Bill Protection is to ensure that a Customer participating 
+on CPP is billed an amount no greater than what the Customer would otherwise be 
+billed under the applicable Options without CPP (e.g., Option D, or Option B) of this 
+Schedule, up to the first 12 months of service on CPP.  
+ 
+                      (1) A Customer participating on CPP will receive a one-time Bill Protection credit 
+for the positive sum, if any, in total CPP Event Charges and total Summer 
+CPP Non-Event Credits as calculated under the applicable CPP Option, and 
+as measured over a period of up to 12 months from the date the Customer is 
+defaulted to or elects an Option with CPP. 
+ 
+                      (2) If a Customer elects another Option without CPP within the first 12 months of 
+participating on CPP, Bill Protection will end on the Customer’s next regularly 
+scheduled billing date. 
+ 
+4. Food Bank Discount: Customers who meet the definition of an Eligible Food Bank as defined in 
+Form 14-984, Declaration of Eligibility for Food Bank Discount, qualify for a 20 percent discount 
+off their electric bill prior to application of the Public Utilities Commission Reimbursement Fee 
+(PUCRF) and any applicable user fees, taxes, and late payment charges. Eligible Food Bank 
+Customers are required to pay the PUCRF and any applicable user fees, taxes, and late 
+payment charges in full. An eligibility declaration, Form 14-984, Declaration of Eligibility for Food 
+Bank Discount, is required for service under this Special Condition. Eligible Customers shall 
+have the Food Bank Discount applied to this Schedule commencing no later than one billing 
+period after receipt and approval of the Customer's declaration of eligibility by SCE. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+(N) 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 74786-E
+Cancelling Revised Cal. P.U.C. Sheet No. 67111-E
+Schedule TOU-GS-3 Sheet 11
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4882-E Michael Backstrom Date Submitted Oct 27, 2022
+Decision Vice President Effective Jul 27, 2023
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+5. Maximum Demand:  Maximum Demand shall be established for all applicable TOU Periods.   
+The Maximum Demand for each TOU period shall be the measured maximum average 
+kilowatt (kW) input, indicated or recorded by instruments, such as SCE metering, during any 
+15-minute metered interval, but where applicable, not less than the diversified resistance 
+welder load computed in accordance with the section designated Welder Service in Rule 2.  
+Where the demand is intermittent or subject to violent fluctuations, a 5-minute interval may be 
+used. 
+ 
+6. Billing Demand:  The Billing Demand shall be the kW of Maximum Demand, determined to the 
+nearest kW. When applicable, the Time Related Demand (TRD) component shall be for the kW 
+of Maximum Demand recorded during (or established for) each of the TOU Periods, as 
+applicable according to the Customers TOU Option. The Facilities Related Demand (FRD) 
+component shall be for the kW of Maximum Demand recorded during (or established for) the 
+monthly billing period.  Separate Demand Charge(s) for each of the applicable TOU Periods 
+shall be established for each monthly billing period.  The Demand Charge for each time 
+period shall be based on the Maximum Demand for that time period occurring during the 
+respective monthly billing period.   
+ 
+7. Voltage Discount:  Bundled Service, CCA Service, and Direct Access customers will have the 
+Distribution rate component of the applicable Delivery Service charges reduced by the 
+corresponding Voltage Discount amount for service metered and delivered at the applicable 
+voltage level as shown in the RATES section above. In addition, Bundled Service Customers 
+will have the Utility Generation (UG) rate component of the applicable Generation charges 
+reduced by the corresponding Voltage Discount amount for service metered and delivered at 
+the applicable voltage level as shown in the RATES section. 
+ 
+8. Power Factor Adjustment:  The Customer’s bill will be increased each month for power factor by 
+the amount shown in the Rates section above for service metered and delivered at the 
+applicable voltage level, based on the per kilovar of maximum reactive demand imposed by 
+SCE. 
+ 
+ The maximum reactive demand shall be the highest measured maximum average kilovar 
+demand indicated or recorded by metering during any 15 minute metered interval in the month.  
+The kilovars shall be determined to the nearest unit. A device will be installed on each kilovar 
+meter to prevent reverse operation of the meter. 
+ 
+ Interconnection Customers who have entered into a FERC Large Generation Interconnection 
+Agreement with SCE and who are otherwise obligated to comply with SCE’s Voltage and VAR 
+schedule that requires the Interconnection Customer to operate its facility in a manner that 
+maintains system voltage within allowable limits, shall be exempt from the Power Factor 
+Adjustment provided that the Interconnection Customer is in compliance with all valid SCE 
+voltage orders. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(D) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 91232-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90974-E
+Schedule TOU-GS-3 Sheet 12
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+ 
+ 
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+SPECIAL CONDITIONS (Continued) 
+8. Power Factor Adjustment:  (Continued) 
+ 
+An Interconnection Customer shall mean the entity that interconnects its generating facility 
+with SCE’s transmission system. 
+ 
+9. Temporary Discontinuance of Service:  When the use of energy is seasonal or intermittent, no 
+adjustments will be made for a temporary discontinuance of service.  Any Customer prior to 
+resuming service within twelve months after such service was discontinued will be required to 
+pay all charges which would have been billed if service had not been discontinued.   
+ 
+10. Customer-Owned Electrical Generating Facilities: 
+ 
+a. Where Customer-owned electrical Generating Facilities are used to meet a part or all 
+of the Customer's electrical requirements, service shall be provided concurrently 
+under the terms and conditions of Schedule S and this Schedule.  Parallel operation 
+of such generating facilities with SCE’s electrical system is permitted. A generation 
+interconnection agreement is required for such operation. 
+b. Customer-owned electrical Generating Facilities used solely for auxiliary, emergency, 
+or standby purposes (auxiliary/emergency generating facilities) to serve the 
+Customer's load during a period when SCE’s service is unavailable and when such 
+load is isolated from the service of SCE are not subject to Schedule S.  However, 
+upon approval by SCE, momentary parallel operation may be permitted to allow the 
+Customer to test the auxiliary/emergency generating facilities.  A Momentary Parallel 
+Generation Contract is required for this type of service. 
+ 
+11. California Alternate Rates for Energy (CARE) Discount:  Customers who meet the definition of 
+a Group Living Facility, Agricultural Employee Housing, or Migrant Farm Worker Housing 
+Center as defined in Preliminary Statement, Part O, Section 3, qualify for a 32.5 percent 
+discount off of their electric bill prior to application of the Public Utilities Commission 
+Reimbursement Fee (PUCRF) and any applicable user fees, taxes, and late payment 
+charges.  Eligible CARE Customers are required to pay the PUCRF and any applicable user 
+fees, taxes, and late payment charges in full. In addition, eligible CARE Customers are 
+exempt from paying the CARE Surcharge of $0.01358 per kWh, the Wildfire Fund Non-
+Bypassable Charge of $0.00591 per kWh, and the Fixed Recovery Charge of $0.00400 per 
+kWh. An application and eligibility declaration, as defined in Preliminary Statement, Part O, 
+Section 3, is required for service under this Special Condition.  Eligible Customers shall have 
+the CARE Discount applied to this Schedule commencing no later than one billing period after 
+receipt and approval of the Customer's application by SCE. Customers may be rebilled on the 
+applicable rate schedule for periods in which they do not meet the eligibility requirements for 
+the CARE discount as defined in Preliminary Statement, Part O, Section 3. 
+ 
+12. Removal From Schedule: Customers receiving service under this Schedule whose monthly 
+Maximum Demand has registered 200 kW or less for 12 consecutive months shall be 
+changed to an applicable rate schedule effective with the date the Customer became 
+ineligible for service under this Schedule. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(I) 
+ 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 67113-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66245-E
+Schedule TOU-GS-3 Sheet 13 (T)
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4006-E R.O. Nichols Date Submitted May 29, 2019
+Decision President Effective Jun 1, 2019
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+13. Billing Calculation:  A Customer’s bill is calculated according to the rates and conditions above.   
+ 
+ The charges listed in the Rates section are calculated by multiplying the Total Delivery Service 
+rates and the Generation rates, when applicable, by the billing determinants (e.g., per kilowatt 
+[kW], kilowatthour [kWh], kilovar [kVAR], etc.).  
+ 
+As of January 1, 2012, all generation supplied to Bundled Service Customers is provided by 
+SCE. The DWR Energy Credit provided to Bundled Service Customers is determined by 
+multiplying the DWR Energy Credit rate component by the customer’s total kWhs. 
+ 
+a. Bundled Service Customers receive Delivery Service and Generation service from SCE.  
+The Customer’s bill is the sum of the charges for Delivery Service and Generation 
+service determined, as described in this Special Condition, and subject to applicable 
+discounts or adjustments provided under SCE’s tariff schedules. 
+ 
+b. Direct Access Customers receive Delivery Service from SCE and purchase energy from 
+an Energy Service Provider.  The Customer’s bill is the sum of the charges for Delivery 
+Service determined as described in this Special Condition except that the DWRBC rate 
+component is subtracted from the Total Delivery Service rates before the billing 
+determinants are multiplied by such resulting Total rates; plus the applicable charges as 
+shown in Schedule DA-CRS and subject to applicable discounts or adjustments provided 
+under SCE’s tariff schedules.  
+ 
+c. CCA Service Customers receive Delivery Service from SCE and purchase energy from 
+their Community Choice Aggregator (CCA).  SCE will read the meters and present the 
+bill for both Delivery and Generation Services to the CCA Service Customer.  The 
+customer’s bill is the sum of the charges for Delivery Service as displayed in this Rate 
+Schedule and Generation charges determined by the CCA plus the applicable charges 
+as shown in Schedule CCA-CRS, and subject to applicable discounts or adjustments 
+provided under SCE’s tariff schedules. 
+ 
+14. Customers with Service Metered and Delivered at Voltages above 50 kV (Sub-transmission 
+Customers) Included in Rotating Outages. 
+ 
+Sub-transmission Customers, except for those Customers exempt from rotating outages, are to 
+be included in controlled, rotating outages when required by the California Independent System 
+Operator (CAISO) and/or SCE.  To the extent feasible, SCE will coordinate rotating outages 
+applicable to Sub-transmission Customers who are fossil fuel producers and pipeline operators 
+and users to minimize disruption to public health and safety.  SCE shall not include a Sub-
+transmission Customer in an applicable rotating outage group if the Customer’s inclusion would 
+jeopardize electric system integrity. Sub-transmission Customers who are not exempt from 
+rotating outages, and seek such exemption, may submit an Optional Binding Mandatory 
+Curtailment (OBMC) Plan to SCE in accordance with Schedule OBMC. If SCE approves a 
+Customer’s OBMC Plan, the Customer will become exempt from rotating outages and will be 
+subject to the terms and conditions of Schedule OBMC and its associated contract. 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 67114-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66246-E
+Schedule TOU-GS-3 Sheet 14 (T)
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4006-E R.O. Nichols Date Submitted May 29, 2019
+Decision President Effective Jun 1, 2019
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+14. Customers with Service Metered and Delivered at Voltages above 50 kV (Sub-transmission 
+Customers) Included in Rotating Outages.  (Continued) 
+ 
+Non-exempt Sub-transmission Customers shall be required to drop their entire electrical load 
+during applicable rotating outages by either (1) implementing the load reduction on their own 
+initiative, in accordance with subsection a, below; or (2) having SCE implement the load 
+reduction through remote-controlled load drop equipment (control equipment) in accordance 
+with subsection b, below. A Sub-transmission Customer shall normally be subject to the 
+provisions of subsection a. If SCE approves a Customer’s request to have SCE implement the 
+load reduction or if the Customer does not did not comply with prior required load reductions, 
+as specified in subsection c, the Customer will be subject to the provisions of subsection b. 
+ 
+a. Customer-Implemented Load Reduction.  
+ 
+(1) Notification of Required Load Reduction.  At the direction of the CAISO or 
+when SCE otherwise determines there is a need for Rotating Outage, SCE 
+shall notify each Sub-transmission Customers in an affected rotating outage 
+group to drop its entire load. Within 30 minutes of such notification, the 
+Customer must drop its entire load. The Customer shall not return the 
+dropped load to service until 90 minutes after SCE sent the notification to the 
+Customer to drop its load, unless SCE notifies the Customer that it may return 
+its load to service prior to the expiration of the 90 minutes.   
+ 
+ (2) Method of Notification.  The method in which SCE will notify Sub-transmission 
+Customers, who are required to implement their own load reduction, includes 
+email, phone, and/or text message. The Customer is responsible for providing 
+SCE their designated contact(s) information and preferred method for 
+notifications. Customers must ensure the notification delivery method is 
+functional at all times and are responsible for their charges incurred with the 
+notification delivery service. Failure to provide at least one functional 
+notification contact may result in Excess Energy Charges. When SCE sends 
+the notification to the designated contact(s) the Customer is responsible for 
+dropping its entire load in accordance with subsection a., above.  
+ 
+(3) Excess Energy Charges. If a Sub-transmission Customer fails to drop its 
+entire load within 30 minutes of notification by SCE, and/or fails to maintain 
+the entire load drop until 90 minutes after the time notification was sent to the 
+Customer, unless SCE otherwise notified the Customer that it may return its 
+load to service earlier in accordance with subsection a.(1) above, SCE shall 
+assess Excess Energy Charges of $6 per kWh for all kWh usage in excess of 
+the Authorized Residual Ancillary Load.  Such charges will be based on the 
+total kWh usage during the applicable rotating outage penalty period, less the 
+product of Authorized Residual Ancillary Load in kW and the applicable 
+rotating outage penalty period in hours.  Excess Energy Charges will be 
+determined and applied by SCE subsequent to the Sub-transmission 
+Customer’s regularly scheduled meter read date following the applicable 
+rotating outage.   
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 67115-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66247-E
+Schedule TOU-GS-3 Sheet 15 (T)
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4006-E R.O. Nichols Date Submitted May 29, 2019
+Decision President Effective Jun 1, 2019
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+14. Customers with Service Metered and Delivered at Voltages above 50 kV (Sub-transmission 
+Customers) Included in Rotating Outages.  (Continued) 
+ 
+a. Customer-Implemented Load Reduction.   (Continued) 
+ 
+ (4) Authorized Residual Ancillary Load.  Authorized Residual Ancillary Load is 
+load that is deemed to be equivalent to five percent of the Sub-transmission 
+Customer’s prior billing month’s recorded Maximum Demand. This minimum 
+load level is used as a proxy to allow for no-load transformer losses and/or 
+load attributed to minimum grid parallel operation for generators connected 
+under Rule 21.  
+ 
+b. SCE-Implemented Load Reduction.   
+ 
+  Non-exempt Sub-transmission Customers may request, in writing, to have SCE drop 
+the Customer’s entire load during all applicable rotating outages using SCE’s remote-
+controlled load drop equipment (control equipment). If SCE agrees to such 
+arrangement, SCE will implement the load drop by using one of the following 
+methods:   
+ 
+(1) Control Equipment Installed.  For a Sub-transmission Customer whose load can 
+be dropped by SCE’s existing control equipment, SCE will implement the load 
+drop during a rotating outage applicable to the Customer.  The Customer will 
+not be subject to the Notification and or Excess Energy Charge provisions set 
+forth in subsection a, above. 
+ 
+(2) Control Equipment Pending Installation.  For a Sub-transmission Customer 
+whose load cannot be dropped by SCE’s existing control equipment, the 
+Customer must request the installation of such equipment at the Customer’s 
+expense in accordance with SCE’s Rule 2, Section H, Added Facilities.  
+Pending the installation of the control equipment, the Customer will be 
+responsible for dropping load in accordance with the provisions of subsection a, 
+above, including subject the Notification and Excess Energy Charge provisions. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 67116-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66248-E
+Schedule TOU-GS-3 Sheet 16 (T)
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4006-E R.O. Nichols Date Submitted May 29, 2019
+Decision President Effective Jun 1, 2019
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+14. Customers with Service Metered and Delivered at Voltages above 50 kV (Sub-transmission 
+Customers) Included in Rotating Outages.  (Continued) 
+ 
+ c. Non-compliance:  A non-exempt Sub-transmission Customer subject to subsection a, 
+above, who fails to drop load during three rotating outages in a three year period to a 
+demand level of 20% or less of the Customer’s prior billing month’s recorded 
+Maximum Demand averaged over the applicable rotating outage period, is not in 
+compliance with this tariff.  The three year period shall commence with the first failure 
+to drop load as specified in this subsection.  A Customer not in compliance with this 
+condition will be placed at the top of the Sub-transmission Customer rotating outage 
+group list and will be expected to comply with subsequent applicable rotating outages.  
+In addition, the Customer must select one of the two options below within fifteen days 
+after receiving written notice of non-compliance from SCE. A Customer failing to 
+make a selection within the specified time frame will be subject to subsection c. (2) 
+below. 
+ 
+(1) Subject to Schedule OBMC:  The Customer shall submit an OBMC Plan, in 
+accordance with Schedule OBMC, within 30 calendar days of receiving 
+written notice of non-compliance from SCE.  Pending the submittal of the 
+OBMC Plan by the Customer and pending the review and acceptance of the 
+OBMC Plan by SCE, the Customer will remain responsible for dropping load 
+in accordance with the provisions of subsection a, above, including the 
+Notification and Excess Energy charge provisions.  If the Customer fails to 
+submit an OBMC Plan within 30 days of receiving notice of non-compliance 
+from SCE, or if the customer’s OBMC Plan is not approved by SCE, or if the 
+customer fails to meet the requirements of Schedule OBMC once the OBMC 
+Plan is approved, the Customer shall be subject subsection c. (2), below. 
+ 
+(2) Installation of Control Equipment.  The Customer shall be subject to the 
+installation of control equipment at the Customer’s expense in accordance 
+with SCE’s Rule 2, Section H, Added Facilities, if such equipment is not 
+currently installed.  If such switching capability is installed, SCE will drop the 
+customer’s load for all applicable subsequent rotating outages in accordance 
+with the provisions of subsection b, above.  Pending the installation of control 
+equipment, the Customer will remain responsible for dropping load in 
+accordance with the provisions of subsection a, above, including the 
+Notification and Excess Energy Charge provisions.  
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 67117-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66249-E
+Schedule TOU-GS-3 Sheet 17 (T)
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4006-E R.O. Nichols Date Submitted May 29, 2019
+Decision President Effective Jun 1, 2019
+Resolution
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+14. Customers with Service Metered and Delivered at Voltages above 50 kV (Sub-transmission 
+Customers) Included in Rotating Outages.  (Continued) 
+ 
+d. Net-Generators 
+ 
+Sub-transmission Customers who are also net-generators are normally exempt from 
+rotating outages, but they must be net suppliers of power to the grid during all rotating 
+outages.  For the purpose of this Special Condition, a net-generator is an SCE 
+Customer who operates an electric Generating Facility as part of its industrial or 
+commercial process, and the Generating Facility normally produces more electrical 
+power than is consumed in the industrial or commercial process, with the excess 
+power supplied to the grid. Sub-transmission Customers whose primary business 
+purpose is to generate power are not included in this Special Condition. 
+ 
+(1) Notification of Rotating Outages.  SCE will notify sub-transmission Customers 
+who are net-generators of all rotating outages applicable to Customers within 
+SCE’s service territory.  Within 30 minutes of notification, the Customer must 
+ensure it is a net supplier of power to the grid throughout the entire rotating 
+outage period.  Failure to do so will result in the customer losing its exemption 
+from rotating outages, and the customer will be subject to Excess Energy 
+Charges, as provided below. 
+ 
+(2) Excess Energy Charges.  Net generators who are not net suppliers to the grid 
+during each rotating outage period will be subject to Excess Energy Charges 
+of $6 per kWh for all kWh usage in excess of the Authorized Residual 
+Ancillary Load. Such charges will be based on the total kWh usage during a 
+rotating outage penalty period, less the product of Authorized Residual 
+Ancillary Load in kW and the applicable rotating outage period hours.  Excess 
+Energy Charges will be determined and applied by SCE subsequent to the 
+customer’s regularly scheduled meter read date following the applicable 
+rotating outage.  Excess Energy Charges shall not apply during periods of 
+verifiable scheduled generator maintenance or if the Customer’s generator 
+suffers a verifiable forced outage. The scheduled maintenance must be 
+approved in advance by either the CAISO or SCE, but approval may not be 
+unreasonably withheld. 
+ 
+15.  TOU Period Grandfathering: Pursuant to D.17-01-006 and D.17-10-018, behind-the-meter 
+(BTM) solar Customers who meet the eligibility criteria described below are eligible to continue 
+receiving service on a TOU Option with Legacy TOU Periods for the Duration outlined below.  
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 67118-E
+Cancelling Revised Cal. P.U.C. Sheet No. 66250-E
+Schedule TOU-GS-3 Sheet 18 (T)
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(Continued)
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4006-E R.O. Nichols Date Submitted May 29, 2019
+Decision President Effective Jun 1, 2019
+Resolution
+ 
+ 
+ 
+ SPECIAL CONDITIONS (Continued) 
+ 
+15.  TOU Period Grandfathering: (Continued) 
+ 
+a. Customer Eligibility:  
+ 
+(1) Customers, excluding public agencies (as defined below), must have submitted 
+their initial solar Generating Facility interconnection application by January 31, 
+2017. 
+ 
+    (2)     Customers meeting the definition of a public agency must have submitted their 
+initial solar Generating Facility interconnection application by December 31, 
+2017. For the purposes of this Special Condition only, public agencies are 
+defined as public or private schools, colleges and universities; federal, state, 
+county and city government agencies; municipal utilities; public water and/or 
+sanitation agencies; and joint powers authorities. 
+ 
+b. System Eligibility:  
+ 
+(1) This provision is only applicable to BTM solar Generating Facilities. 
+ 
+                   (2)   The solar Generating Facility must have been designed to offset at least 15 
+percent of the Customer’s current annual load, as determined by SCE.  
+ 
+c. Duration: 
+ 
+(1) Customers are permitted to be served on TOU Options with Legacy TOU 
+Periods and be billed under the Legacy TOU Periods for a period of ten years 
+from their solar Generating Facility’s original permission to operate date. 
+ 
+(2) In no event shall the duration of this TOU Period Grandfathering extend 
+beyond July 31, 2027 (December 31, 2027 for schools) for any Customer 
+served on this Schedule, regardless of whether the Customer has received the 
+full ten years of TOU Period Grandfathering.  Customers will be transitioned to 
+Options with current TOU Periods at the start of their next billing period that 
+occurs immediately on or after October 1 (Annual Migration Date), as outlined 
+in Advice 3582-E-A. (as approved in Resolution E-4946) 
+ 
+(3) Customers who elect to change to Option D, Option D-CPP, Option E, or 
+another applicable Rate Schedule with updated TOU Periods, will no longer be 
+eligible to return to an Option with Legacy TOU Periods.  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Southern California Edison
+Rosemead, California       (U 338-E)
+Revised Cal. P.U.C. Sheet No. 74027-E
+Cancelling Revised Cal. P.U.C. Sheet No. 72967-E
+Schedule TOU-GS-3 Sheet 19
+TIME-OF-USE - GENERAL SERVICE - DEMAND METERED
+(To be inserted by utility)    Issued By (To be inserted by Cal. PUC)
+Advice 4796-E Michael Backstrom Date Submitted May 16, 2022
+Decision Vice President Effective Jun 1, 2022
+Resolution
+ 
+ 
+ 
+SPECIAL CONDITIONS (Continued) 
+ 
+15. TOU Period Grandfathering: (Continued) 
+ 
+d. Attributes:  
+ 
+The TOU Period Grandfathering described herein allows the Customer to maintain Legacy 
+TOU Periods for the duration of their TOU Grandfathering Period.  Other changes in rate 
+design, including allocating marginal costs to TOU periods and setting specific rate levels, will 
+be litigated in utility-specific rate proceedings. 
+ 
+ 
+        e.     Legacy TOU Periods: Applicable time periods are defined as follows:  
+ 
+Weekdays Weekends and Holidays TOU Period Summer Winter Summer Winter 
+On-Peak 12 p.m. - 6 p.m. N/A N/A N/A 
+Mid-Peak 
+8 a.m. to 12 p.m. 
+6 p.m. to 11 p.m. 8 a.m. to 9 p.m. N/A N/A 
+Off-Peak  All other hours All other hours All other hours All other hours 
+ 
+ 
+ Holidays are New Year’s Day (January 1), Presidents’ Day (third Monday in February), 
+ Memorial Day (last Monday in May), Independence Day (July 4), Labor Day (first Monday in 
+ September), Veterans Day (November 11), Thanksgiving Day (fourth Thursday in November), 
+ and Christmas (December 25). 
+ 
+ When any holiday listed above falls on Sunday, the following Monday will be recognized as a  
+ holiday period. No change will be made for holidays falling on Saturday.  
+ 
+The Summer Season shall commence at 12:00 a.m. on June 1 and continue until 12:00 a.m. on 
+October 1 of each year. The Winter Season shall commence at 12:00 a.m. on October 1 of each 
+year and continue until 12:00 a.m. on June 1 of the following year. 
+ 
+16. PCIA Recovery in Bundled Generation Rates: Bundled Service Customer Generation charges 
+include an amount to recover the above-market portion of SCE’s generation portfolio. ‘Above 
+market’ refers to the difference between what the utility pays for electric generation and current 
+market prices for the sale of those resources. This above-market portion is referred to as the 
+Power Charge Indifference Adjustment (PCIA) amount and is shown on Bundled Service 
+Customers’ bills under the description of the Generation charge.  
+ 
+17. Fixed Recovery Charge.  SCE has been permitted to issue bonds that enable it to recover more 
+quickly certain costs related to preventing and mitigating catastrophic wildfires, while reducing the 
+total cost to its customers. The Fixed Recovery Charge (FRC) has been approved by the CPUC 
+to repay those bonds. The right to recover the FRC has been transferred to a separate entity 
+(called the Special Purpose Entity) that issued the bonds and recovery does not belong to SCE. 
+SCE is collecting the FRC on behalf of the Special Purpose Entity. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(N) 
+  | 
+  | 
+  |  
+  | 
+  | 
+(N) 
+  

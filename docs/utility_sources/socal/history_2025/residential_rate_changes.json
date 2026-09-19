@@ -1,0 +1,1013 @@
+{
+  "status": "Research extraction; not registered in the runtime billing engine",
+  "retrieved_on": "2026-09-19",
+  "archive_url": "https://www.sce.com/regulatory/regulatory-information/tariff-books/historical-rates/historical-rate-schedules-for-2025",
+  "sources": [
+    {
+      "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+      "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared Documents/Public/Regulatory/Historical-SCE Historical Books/Electric/2025/Schedules/Residential Rates/ELECTRIC_SCHEDULES_D_2025.pdf",
+      "sha256": "f3c9fb47aa313448882f04f000bf6f66f2db3fadc4886ef80a556943a48fd3c5",
+      "page_count": 16
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared Documents/Public/Regulatory/Historical-SCE Historical Books/Electric/2025/Schedules/Residential Rates/ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "sha256": "a401429d1a89da15263bbe13fc6476e01b3db12eee2f8d0f6f36e1c4a922b60e",
+      "page_count": 54
+    }
+  ],
+  "versions": [
+    {
+      "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+      "pdf_page": 1,
+      "effective_start": "2025-01-01",
+      "sheet": "89274-E",
+      "supersedes_sheet": "88852-E",
+      "plan_id": "sce_d",
+      "advice_letter": "5449-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_baseline": [
+          0.21974,
+          0.11136,
+          0.0
+        ],
+        "winter_baseline": [
+          0.21974,
+          0.11136,
+          0.0
+        ],
+        "summer_above_baseline": [
+          0.31487,
+          0.11136,
+          0.0
+        ],
+        "winter_above_baseline": [
+          0.31487,
+          0.11136,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-02-28"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+      "pdf_page": 5,
+      "effective_start": "2025-03-01",
+      "sheet": "89524-E",
+      "supersedes_sheet": "89274-E",
+      "plan_id": "sce_d",
+      "advice_letter": "5484-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_baseline": [
+          0.21733,
+          0.11136,
+          0.0
+        ],
+        "winter_baseline": [
+          0.21733,
+          0.11136,
+          0.0
+        ],
+        "summer_above_baseline": [
+          0.31179,
+          0.11136,
+          0.0
+        ],
+        "winter_above_baseline": [
+          0.31179,
+          0.11136,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-05-31"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+      "pdf_page": 2,
+      "effective_start": "2025-06-01",
+      "sheet": "90097-E",
+      "supersedes_sheet": "89524-E",
+      "plan_id": "sce_d",
+      "advice_letter": "5555-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_baseline": [
+          0.21047,
+          0.11136,
+          0.0
+        ],
+        "winter_baseline": [
+          0.21047,
+          0.11136,
+          0.0
+        ],
+        "summer_above_baseline": [
+          0.30297,
+          0.11136,
+          0.0
+        ],
+        "winter_above_baseline": [
+          0.30297,
+          0.11136,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-09-30"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+      "pdf_page": 3,
+      "effective_start": "2025-10-01",
+      "sheet": "90340-E",
+      "supersedes_sheet": "90097-E",
+      "plan_id": "sce_d",
+      "advice_letter": "5643-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_baseline": [
+          0.23208,
+          0.1317,
+          0.0
+        ],
+        "winter_baseline": [
+          0.23208,
+          0.1317,
+          0.0
+        ],
+        "summer_above_baseline": [
+          0.33657,
+          0.1317,
+          0.0
+        ],
+        "winter_above_baseline": [
+          0.33657,
+          0.1317,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-11-14"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_D_2025.pdf",
+      "pdf_page": 4,
+      "effective_start": "2025-11-15",
+      "sheet": "90634-E",
+      "supersedes_sheet": "90340-E",
+      "plan_id": "sce_d",
+      "advice_letter": "5654-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_baseline": [
+          0.18534,
+          0.1317,
+          0.0
+        ],
+        "winter_baseline": [
+          0.18534,
+          0.1317,
+          0.0
+        ],
+        "summer_above_baseline": [
+          0.28983,
+          0.1317,
+          0.0
+        ],
+        "winter_above_baseline": [
+          0.28983,
+          0.1317,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "base_services_charge_per_day": 0.794,
+      "minimum_charge_per_day": 0,
+      "effective_end": null,
+      "coverage_note": "Next superseding filing not established by this 2025 archive; null is not authorization for unlimited coverage."
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 1,
+      "effective_start": "2025-01-01",
+      "sheet": "89278-E",
+      "supersedes_sheet": "88856-E",
+      "plan_id": "sce_tou-d-4-9",
+      "advice_letter": "5449-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.35546,
+          0.24264,
+          0.0
+        ],
+        "summer_mid": [
+          0.35546,
+          0.12948,
+          0.0
+        ],
+        "summer_off": [
+          0.30374,
+          0.06976,
+          0.0
+        ],
+        "winter_mid": [
+          0.35546,
+          0.17237,
+          0.0
+        ],
+        "winter_off": [
+          0.30374,
+          0.09602,
+          0.0
+        ],
+        "winter_super_off": [
+          0.28513,
+          0.07779,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.09514,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-02-28"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 5,
+      "effective_start": "2025-03-01",
+      "sheet": "89528-E",
+      "supersedes_sheet": "89278-E",
+      "plan_id": "sce_tou-d-4-9",
+      "advice_letter": "5484-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.35189,
+          0.24193,
+          0.0
+        ],
+        "summer_mid": [
+          0.35189,
+          0.12958,
+          0.0
+        ],
+        "summer_off": [
+          0.30078,
+          0.07004,
+          0.0
+        ],
+        "winter_mid": [
+          0.35189,
+          0.17208,
+          0.0
+        ],
+        "winter_off": [
+          0.30078,
+          0.09606,
+          0.0
+        ],
+        "winter_super_off": [
+          0.28239,
+          0.07787,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.09444,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-05-31"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 2,
+      "effective_start": "2025-06-01",
+      "sheet": "89963-E",
+      "supersedes_sheet": "89528-E",
+      "plan_id": "sce_tou-d-4-9",
+      "advice_letter": "5555-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.34197,
+          0.23967,
+          0.0
+        ],
+        "summer_mid": [
+          0.34197,
+          0.12962,
+          0.0
+        ],
+        "summer_off": [
+          0.29227,
+          0.07093,
+          0.0
+        ],
+        "winter_mid": [
+          0.34197,
+          0.17099,
+          0.0
+        ],
+        "winter_off": [
+          0.29227,
+          0.09622,
+          0.0
+        ],
+        "winter_super_off": [
+          0.27439,
+          0.07829,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.0925,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-09-30"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 3,
+      "effective_start": "2025-10-01",
+      "sheet": "90407-E",
+      "supersedes_sheet": "89963-E",
+      "plan_id": "sce_tou-d-4-9",
+      "advice_letter": "5643-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.38103,
+          0.27519,
+          0.0
+        ],
+        "summer_mid": [
+          0.38103,
+          0.15107,
+          0.0
+        ],
+        "summer_off": [
+          0.32438,
+          0.08548,
+          0.0
+        ],
+        "winter_mid": [
+          0.38103,
+          0.19933,
+          0.0
+        ],
+        "winter_off": [
+          0.32438,
+          0.11521,
+          0.0
+        ],
+        "winter_super_off": [
+          0.304,
+          0.0951,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.10449,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-11-14"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 4,
+      "effective_start": "2025-11-15",
+      "sheet": "90669-E",
+      "supersedes_sheet": "90407-E",
+      "plan_id": "sce_tou-d-4-9",
+      "advice_letter": "5654-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.33428,
+          0.27519,
+          0.0
+        ],
+        "summer_mid": [
+          0.33428,
+          0.15107,
+          0.0
+        ],
+        "summer_off": [
+          0.27763,
+          0.08548,
+          0.0
+        ],
+        "winter_mid": [
+          0.33428,
+          0.19933,
+          0.0
+        ],
+        "winter_off": [
+          0.27763,
+          0.11521,
+          0.0
+        ],
+        "winter_super_off": [
+          0.25725,
+          0.0951,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.10449,
+      "base_services_charge_per_day": 0.794,
+      "minimum_charge_per_day": 0,
+      "effective_end": null,
+      "coverage_note": "Next superseding filing not established by this 2025 archive; null is not authorization for unlimited coverage."
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 11,
+      "effective_start": "2025-01-01",
+      "sheet": "89280-E",
+      "supersedes_sheet": "88858-E",
+      "plan_id": "sce_tou-d-5-8",
+      "advice_letter": "5449-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.361,
+          0.38676,
+          0.0
+        ],
+        "summer_mid": [
+          0.361,
+          0.19804,
+          0.0
+        ],
+        "summer_off": [
+          0.31171,
+          0.06032,
+          0.0
+        ],
+        "winter_mid": [
+          0.361,
+          0.25794,
+          0.0
+        ],
+        "winter_off": [
+          0.31171,
+          0.09434,
+          0.0
+        ],
+        "winter_super_off": [
+          0.28502,
+          0.06781,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.09513,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-02-28"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 15,
+      "effective_start": "2025-03-01",
+      "sheet": "89530-E",
+      "supersedes_sheet": "89280-E",
+      "plan_id": "sce_tou-d-5-8",
+      "advice_letter": "5484-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.35731,
+          0.38513,
+          0.0
+        ],
+        "summer_mid": [
+          0.35731,
+          0.19775,
+          0.0
+        ],
+        "summer_off": [
+          0.30867,
+          0.06071,
+          0.0
+        ],
+        "winter_mid": [
+          0.35731,
+          0.25712,
+          0.0
+        ],
+        "winter_off": [
+          0.30867,
+          0.09441,
+          0.0
+        ],
+        "winter_super_off": [
+          0.28233,
+          0.06792,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.09446,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-05-31"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 12,
+      "effective_start": "2025-06-01",
+      "sheet": "89965-E",
+      "supersedes_sheet": "89530-E",
+      "plan_id": "sce_tou-d-5-8",
+      "advice_letter": "5555-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.34719,
+          0.38001,
+          0.0
+        ],
+        "summer_mid": [
+          0.34719,
+          0.19646,
+          0.0
+        ],
+        "summer_off": [
+          0.29994,
+          0.06184,
+          0.0
+        ],
+        "winter_mid": [
+          0.34719,
+          0.25432,
+          0.0
+        ],
+        "winter_off": [
+          0.29994,
+          0.09466,
+          0.0
+        ],
+        "winter_super_off": [
+          0.27435,
+          0.06852,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.0925,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-09-30"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 13,
+      "effective_start": "2025-10-01",
+      "sheet": "90409-E",
+      "supersedes_sheet": "89965-E",
+      "plan_id": "sce_tou-d-5-8",
+      "advice_letter": "5643-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.38713,
+          0.43326,
+          0.0
+        ],
+        "summer_mid": [
+          0.38713,
+          0.22625,
+          0.0
+        ],
+        "summer_off": [
+          0.33311,
+          0.07516,
+          0.0
+        ],
+        "winter_mid": [
+          0.38713,
+          0.29337,
+          0.0
+        ],
+        "winter_off": [
+          0.33311,
+          0.1134,
+          0.0
+        ],
+        "winter_super_off": [
+          0.30385,
+          0.08416,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.10449,
+      "basic_charge_single_family_per_day": 0.031,
+      "basic_charge_multifamily_per_day": 0.024,
+      "minimum_charge_per_day": 0.346,
+      "effective_end": "2025-11-14"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 14,
+      "effective_start": "2025-11-15",
+      "sheet": "90671-E",
+      "supersedes_sheet": "90409-E",
+      "plan_id": "sce_tou-d-5-8",
+      "advice_letter": "5654-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.34038,
+          0.43326,
+          0.0
+        ],
+        "summer_mid": [
+          0.34038,
+          0.22625,
+          0.0
+        ],
+        "summer_off": [
+          0.28636,
+          0.07516,
+          0.0
+        ],
+        "winter_mid": [
+          0.34038,
+          0.29337,
+          0.0
+        ],
+        "winter_off": [
+          0.28636,
+          0.1134,
+          0.0
+        ],
+        "winter_super_off": [
+          0.2571,
+          0.08416,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0.10449,
+      "base_services_charge_per_day": 0.794,
+      "minimum_charge_per_day": 0,
+      "effective_end": null,
+      "coverage_note": "Next superseding filing not established by this 2025 archive; null is not authorization for unlimited coverage."
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 21,
+      "effective_start": "2025-01-01",
+      "sheet": "89282-E",
+      "supersedes_sheet": "88860-E",
+      "plan_id": "sce_tou-d-prime",
+      "advice_letter": "5449-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.28716,
+          0.28317,
+          0.0
+        ],
+        "summer_mid": [
+          0.28716,
+          0.10077,
+          0.0
+        ],
+        "summer_off": [
+          0.20039,
+          0.06728,
+          0.0
+        ],
+        "winter_mid": [
+          0.29246,
+          0.24759,
+          0.0
+        ],
+        "winter_off": [
+          0.19215,
+          0.05686,
+          0.0
+        ],
+        "winter_super_off": [
+          0.19215,
+          0.05686,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_per_day": 0.539,
+      "minimum_charge_per_day": 0,
+      "effective_end": "2025-02-28"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 25,
+      "effective_start": "2025-03-01",
+      "sheet": "89532-E",
+      "supersedes_sheet": "89282-E",
+      "plan_id": "sce_tou-d-prime",
+      "advice_letter": "5484-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.28441,
+          0.28317,
+          0.0
+        ],
+        "summer_mid": [
+          0.28441,
+          0.10077,
+          0.0
+        ],
+        "summer_off": [
+          0.19835,
+          0.06728,
+          0.0
+        ],
+        "winter_mid": [
+          0.28971,
+          0.24759,
+          0.0
+        ],
+        "winter_off": [
+          0.19022,
+          0.05686,
+          0.0
+        ],
+        "winter_super_off": [
+          0.19022,
+          0.05686,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_per_day": 0.532,
+      "minimum_charge_per_day": 0,
+      "effective_end": "2025-05-31"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 22,
+      "effective_start": "2025-06-01",
+      "sheet": "89967-E",
+      "supersedes_sheet": "89532-E",
+      "plan_id": "sce_tou-d-prime",
+      "advice_letter": "5555-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.27693,
+          0.28317,
+          0.0
+        ],
+        "summer_mid": [
+          0.27693,
+          0.10077,
+          0.0
+        ],
+        "summer_off": [
+          0.19236,
+          0.06728,
+          0.0
+        ],
+        "winter_mid": [
+          0.28223,
+          0.24759,
+          0.0
+        ],
+        "winter_off": [
+          0.18446,
+          0.05686,
+          0.0
+        ],
+        "winter_super_off": [
+          0.18446,
+          0.05686,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_per_day": 0.516,
+      "minimum_charge_per_day": 0,
+      "effective_end": "2025-09-30"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 23,
+      "effective_start": "2025-10-01",
+      "sheet": "90411-E",
+      "supersedes_sheet": "89967-E",
+      "plan_id": "sce_tou-d-prime",
+      "advice_letter": "5643-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.30413,
+          0.33489,
+          0.0
+        ],
+        "summer_mid": [
+          0.30413,
+          0.11918,
+          0.0
+        ],
+        "summer_off": [
+          0.21216,
+          0.07957,
+          0.0
+        ],
+        "winter_mid": [
+          0.30943,
+          0.29281,
+          0.0
+        ],
+        "winter_off": [
+          0.20314,
+          0.06725,
+          0.0
+        ],
+        "winter_super_off": [
+          0.20314,
+          0.06725,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "basic_charge_per_day": 0.589,
+      "minimum_charge_per_day": 0,
+      "effective_end": "2025-11-14"
+    },
+    {
+      "file": "ELECTRIC_SCHEDULES_TOU-D_2025.pdf",
+      "pdf_page": 24,
+      "effective_start": "2025-11-15",
+      "sheet": "90673-E",
+      "supersedes_sheet": "90411-E",
+      "plan_id": "sce_tou-d-prime",
+      "advice_letter": "5654-E",
+      "energy_columns": [
+        "delivery",
+        "generation",
+        "dwr_energy_credit"
+      ],
+      "energy_rows": {
+        "summer_on": [
+          0.2929,
+          0.33489,
+          0.0
+        ],
+        "summer_mid": [
+          0.2929,
+          0.11918,
+          0.0
+        ],
+        "summer_off": [
+          0.20093,
+          0.07957,
+          0.0
+        ],
+        "winter_mid": [
+          0.2982,
+          0.29281,
+          0.0
+        ],
+        "winter_off": [
+          0.19191,
+          0.06725,
+          0.0
+        ],
+        "winter_super_off": [
+          0.19191,
+          0.06725,
+          0.0
+        ]
+      },
+      "fixed_recovery_per_kwh": 0.00198,
+      "baseline_credit_per_kwh": 0,
+      "base_services_charge_per_day": 0.794,
+      "minimum_charge_per_day": 0,
+      "effective_end": null,
+      "coverage_note": "Next superseding filing not established by this 2025 archive; null is not authorization for unlimited coverage."
+    }
+  ],
+  "limitations": [
+    "Unchanged tariff sheets are not included in annual change archives. Reconstruct historical terms and baseline rules before billing.",
+    "Pre-BSC minimum charge rules differ between D and TOU-D; D excludes WFC from its minimum-charge comparison.",
+    "MCAM shown in source tables is not a bundled-customer charge.",
+    "Climate credits, special riders, taxes and meter-read proration are not fully represented in this extraction."
+  ]
+}

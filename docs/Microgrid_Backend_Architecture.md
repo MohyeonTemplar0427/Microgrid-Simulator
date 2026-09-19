@@ -442,3 +442,7 @@ binary charging-mode fallback when required for physical exclusivity.
 Results use existing table/CSV/manifest routes. This path does not run OpenDSS
 and rejects PV/export/standby cases. See `Municipal_Utilities.md` for coverage,
 TOU optimality bounds, PF-threshold exclusions and browser controls.
+
+### Utility-specific dated residential versions
+
+`RatePlan` accepts versions satisfying `DatedRateVersion`, retaining the shared gap, overlap and coverage checks. SCE's `ResidentialRateVersion` carries structured historical prices and terms; `sce_residential.charges` supplies the same numeric/convex expression to billing and dispatch. Source data are included in Python engine snapshots. Effective dates are bounded by verified filings, and applied versions appear in result tables. The SCE cross-rate/season baseline allocation remains a disclosed study approximation; see `Southern_California.md`.

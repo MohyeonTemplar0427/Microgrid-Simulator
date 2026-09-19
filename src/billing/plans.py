@@ -21,6 +21,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, timedelta
 
+from typing import Generic, Protocol, TypeVar
+
 import pandas as pd
 
 from .tariffs import TariffDefinition, TariffError
@@ -67,12 +69,25 @@ class RatePlanIdentity:
         )
 
 
+class DatedRateVersion(Protocol):
+    """Shared timeline contract, independent of utility-specific charge structure."""
+
+    tariff_id: str
+    effective_start: date
+    effective_end: date | None
+
+    def is_effective_on(self, service_date: date) -> bool: ...
+
+
+VersionT = TypeVar("VersionT", bound=DatedRateVersion)
+
+
 @dataclass(frozen=True)
-class RatePlan:
+class RatePlan(Generic[VersionT]):
     """One plan and every filed version of it, in effective-date order."""
 
     identity: RatePlanIdentity
-    versions: tuple[TariffDefinition, ...]
+    versions: tuple[VersionT, ...]
 
     def __post_init__(self) -> None:
         if not self.versions:
@@ -110,7 +125,7 @@ class RatePlan:
             for v in self.versions
         )
 
-    def version_on(self, service_date: date) -> TariffDefinition:
+    def version_on(self, service_date: date) -> VersionT:
         """The version effective on one local service date."""
 
         for version in self.versions:
@@ -154,7 +169,7 @@ class RatePlan:
     def segments_for(
         self,
         timestamps: pd.DatetimeIndex,
-    ) -> tuple[tuple[TariffDefinition, tuple[date, ...]], ...]:
+    ) -> tuple[tuple[VersionT, tuple[date, ...]], ...]:
         """Group the horizon's local service dates by the version that bills them.
 
         Dates come from the timestamps themselves, so a daylight-saving day
@@ -172,7 +187,7 @@ class RatePlan:
 
         self.require_coverage(service_dates[0], service_dates[-1])
 
-        segments: list[tuple[TariffDefinition, list[date]]] = []
+        segments: list[tuple[VersionT, list[date]]] = []
 
         for service_date in service_dates:
             version = self.version_on(service_date)

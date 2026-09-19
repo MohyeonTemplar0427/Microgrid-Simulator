@@ -1,0 +1,6 @@
+effective_start,effective_end,delivery_baseline_per_kwh,delivery_above_baseline_per_kwh,generation_per_kwh,fixed_recovery_per_kwh,basic_single_family_per_day,base_services_charge_per_day,minimum_per_day,sheet,advice_letter
+2025-01-01,2025-02-28,0.21974,0.31487,0.11136,0.00198,0.031,0,0.346,89274-E,5449-E
+2025-03-01,2025-05-31,0.21733,0.31179,0.11136,0.00198,0.031,0,0.346,89524-E,5484-E
+2025-06-01,2025-09-30,0.21047,0.30297,0.11136,0.00198,0.031,0,0.346,90097-E,5555-E
+2025-10-01,2025-11-14,0.23208,0.33657,0.1317,0.00198,0.031,0,0.346,90340-E,5643-E
+2025-11-15,,0.18534,0.28983,0.1317,0.00198,0,0.794,0,90634-E,5654-E
