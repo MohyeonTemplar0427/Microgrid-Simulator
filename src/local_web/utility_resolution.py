@@ -10,13 +10,22 @@ from .utilities import LAYERS
 
 # Stable agency identifiers from the CEC layer, not city/county text matching.
 AGENCIES = {71021:'pge',10500:'amp',80560:'svp',80522:'hetch_hetchy',
-            58970:'ladwp',86250:'sce'}
+            58970:'ladwp',86250:'sce',37452:'gwp',71750:'pwp',19201:'bwp',
+            11991:'alw',93642:'vpu',32555:'ipu'}
 NAMES = {'pge':'Pacific Gas & Electric Company','amp':'Alameda Municipal Power','svp':'Silicon Valley Power','hetch_hetchy':'Hetch Hetchy Power',
-         'ladwp':'Los Angeles Department of Water & Power','sce':'Southern California Edison'}
+         'ladwp':'Los Angeles Department of Water & Power','sce':'Southern California Edison',
+         'gwp':'Glendale Water & Power','pwp':'Pasadena Water and Power',
+         'bwp':'Burbank Water and Power','alw':'Azusa Light & Water',
+         'vpu':'Vernon Public Utilities','ipu':'Industry Public Utilities'}
 
 
 # CCA IDs are checked against the official identity, not trusted on their own.
 CCA_IDENTITIES = {
+    11: ('cpa', {'Clean Power Alliance (CPA)'}),
+    14: ('epic', {"Energy for Palmdale's Independent Choice (EPIC)"}),
+    16: ('lancaster', {'Lancaster Energy (LE)'}),
+    20: ('pico_prime', {'Pico Rivera Innovative Municipal Energy (PRIME)'}),
+    22: ('pomona', {'Pomona Choice Energy (Pomona Choice)'}),
     12: ('cleanpowersf', {'CleanPowerSF (CPSF)'}),
     19: ('peninsula', {'Peninsula Clean Energy', 'WestLight Energy'}),
     27: ('sjce', {'San Jose Clean Energy (SJCE)'}),
@@ -56,17 +65,31 @@ def resolve_service(request, *, get=None):
             raise ValueError('Missing boundary version metadata.')
         exact=query(url+'/query',params)
         nearby=query(url+'/query',{**params,'distance':100,'units':'esriSRUnit_Meter'})
+        ceu_match = False
         def records(data):
+            nonlocal ceu_match
             entries=[]
             for feature in data['features']:
                 a=feature['attributes']
                 if not isinstance(a.get('Utility'),str) or not isinstance(a.get('OBJECTID'),int):
                     raise ValueError('Invalid utility boundary record.')
+                # The CEC distribution layer includes CEU, but the city's
+                # electric-service application identifies SCE as delivery.
+                # Preserve the source record as generation evidence only.
+                if a['OBJECTID']==34 and a['Utility']=='City of Cerritos' and a.get('AgencyNum') is None:
+                    ceu_match = True
+                    continue
                 utility=AGENCIES.get(a.get('AgencyNum'))
                 entries.append(dict(utility_id=utility or f"cec:distribution:{a['OBJECTID']}",
                                     name=NAMES.get(utility,a['Utility']),agency_number=a.get('AgencyNum'),object_id=a['OBJECTID']))
             return entries
         hits, near = records(exact),records(nearby)
+        if ceu_match:
+            result['generation_candidates'].append(dict(id='ceu',service_id='ceu',name='Cerritos Electric Utility',
+                type='community_aggregation',enrollment_required=True,delivery_utility='sce',
+                source='https://www.cerritos.gov/media/ugmlrene/cerritos-electric-service-application.pdf',
+                limitation='Approximate availability only. Utility acceptance required; residential onsite generation/storage excluded. No SCE delivery inferred by exclusion.'))
+            result['territory_role_corrections']=[dict(object_id=34,source_role='distribution',resolved_role='generation',provider='ceu')]
         result['sources'].append(dict(url=url,item_id=meta['serviceItemId'],data_last_edit_epoch_ms=edited,
                                       response_sha256=_digest({'exact':exact,'nearby':nearby}),precision='approximate CEC service areas'))
         exact_ids={r['utility_id'] for r in hits}
@@ -83,6 +106,10 @@ def resolve_service(request, *, get=None):
     except (requests.RequestException,ValueError,KeyError,TypeError):
         result.update(status='unsupported',delivery_utility=None,explanation='Authoritative geographic data unavailable or incomplete. Manual bill/utility confirmation is available; no inferred provider.')
     try:
+        other_meta=query(LAYERS['other'],{})
+        edited=other_meta['editingInfo']['dataLastEditDate']
+        if not isinstance(edited,(int,float)) or not other_meta.get('serviceItemId'):
+            raise ValueError('Missing generation-boundary version metadata.')
         other=query(LAYERS['other']+'/query',params)
         generation=[]
         for feature in other['features']:
@@ -94,8 +121,9 @@ def resolve_service(request, *, get=None):
             identity=CCA_IDENTITIES.get(a['OBJECTID'])
             service_id=identity[0] if identity and a['Utility'] in identity[1] else None
             generation.append(dict(id=f"cec:other:{a['OBJECTID']}",name=a['Utility'],service_id=service_id,type='CCA'))
-        result['generation_candidates']=generation
-        result['sources'].append(dict(url=LAYERS['other'],response_sha256=_digest(other),role='generation suggestions; not enrollment'))
+        result['generation_candidates'].extend(generation)
+        result['sources'].append(dict(url=LAYERS['other'],item_id=other_meta['serviceItemId'],
+            data_last_edit_epoch_ms=edited,response_sha256=_digest(other),role='generation suggestions; not enrollment'))
     except (requests.RequestException,ValueError,KeyError,TypeError):
         result['generation_lookup_limitation']='Generation territory data unavailable; confirm account provider.'
     manual=request.get('manual_confirmation')

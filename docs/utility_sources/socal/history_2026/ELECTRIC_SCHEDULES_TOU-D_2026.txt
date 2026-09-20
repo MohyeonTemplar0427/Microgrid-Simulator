@@ -1,0 +1,613 @@
+PDF PAGE 1
+Revised Cal. P.U.C. Sheet No. 90937-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90669-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 2
+TIME-OF-USE
+DOMESTIC
+RATES
+Customers receiving service under this Schedule will be charged the applicable rates under Option 4-9 PM,
+Option 4-9 PM-CPP, Option 5-8 PM, Option 5-8 PM-CPP, Option PRIME, Option PRIME-CPP Option A,
+Option A-CPP, Option B, or Option B-CPP, as listed below. CPP Event Charges will apply to all energy
+usage during CPP Event Energy Charge periods and CPP Non-Event Energy Credits will apply as a
+reduction on CPP Non-Event Energy Credit Periods during Summer Season days, 4:00 p.m. to 9:00 p.m., as
+described in Special Conditions 1 and 3, below:
+Delivery Service Generation2
+Optio n 4-9 P M / Optio n 4-9 P M -CP P Total1 UG*** DWREC3
+Energy Charge - $/kWh
+Summer Season - On-Peak 0.33082 (R) 0.25448 (R) 0.00000
+Mid-Peak 0.33082 (R) 0.13441 (R) 0.00000
+Off-Peak 0.27338 (R) 0.07360 (R) 0.00000
+Winter Season - Mid-Peak 0.33082 (R) 0.18077 (R) 0.00000
+Off-Peak 0.27338 (R) 0.10212 (R) 0.00000
+Super-Off-Peak 0.25272 (R) 0.08364 (R) 0.00000
+Baseline Credit**** - $/kWh (0.10108) (I)
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.794
+BSC Adjustment - Deed Restricted - $/Meter/Day (0.332) (I)
+California Climate Credit10 (36.00) (R)
+California Alternate Rates for
+Energy Discount - % 100.00**
+Family Electric Rate Assistance Discount - % 100.00
+Optio n 4-9 P M -CP P
+CPP Event Energy Charge - $/kWh 0.80000
+Summer CPP Non-Event Credit
+On-Peak Energy Credit - $/kWh (0.15170)
+Maximum Available Credit - $/kWh***
+Summer Season (0.58794) (I)
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.
+** The ongoing Competition Transition Charge CTC of $0.00014 per kWh is recovered in the UG component of Generation. (I)
+*** The Baseline Credit applies up to 100% of the Baseline Allocation, regardless of Time-of-Use time period. Additional Baseline Allocations apply for
+Customers with Heat Pump Water Heaters served under this Option. The Baseline Allocations are set forth in Preliminary Statement, Part H.
+****The Maximum Available Credit is the capped credit amount for CPP Customers dual participating in other demand response programs.
+1 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation Service (CCA Service)
+Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this Schedule but instead pay the DWRBC as
+provided by Schedule DA-CRS or Schedule CCA-CRS.
+2 Generation = The Gen rates are applicable only to Bundled Service Customers. See Special Condition below for PCIA recovery.
+3 DWREC = Department of Water Resources (DWR) Energy Credit – For more information on the DWR Energy Credit, see the Billing Calculation Special
+Condition of this Schedule.
+4 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+5 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement ordered by the CPUC
+that SCE has procured on behalf of customers whose generation services are provided by certain Electric Service Providers or Community Choice
+Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 2
+Revised Cal. P.U.C. Sheet No. 90938-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90670-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 3
+TIME-OF-USE
+DOMESTIC
+RATES (Continued)
+Delivery Service
+Option 4-9 PM / Option 4-9 PM-CPP Trans1 Distrbtn2 NSGC3 NDC4 PPPC5 CIA6 WFC7 DWRA10 PUCRF8 Total9
+Energy Charge - $/kWh
+Summer Season - On-Peak 0.02586 (I) 0.28446 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.33082 (R)
+Mid-Peak 0.02586 (I) 0.28446 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.33082 (R)
+Off-Peak 0.02586 (I) 0.22702 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.27338 (R)
+Winter Season - Mid-Peak 0.02586 (I) 0.28446 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.33082 (R)
+Off-Peak 0.02586 (I) 0.22702 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.27338 (R)
+Super-Off-Peak 0.02586 (I) 0.20636 (R) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.25272 (R)
+Baseline Credit**** - $/kWh (0.10108) (I) (0.10108) (I)
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.424 (I)** 0.000 0.000 0.370 (R) 0.794
+BSC Adjustment - Deed Restricted - $/Meter/Day (0.332) (I) (0.332) (I)
+California Climate Credit10 (36.00) (R) (36.00) (R)
+California Alternate Rates for
+Energy Discount - % 100.00** 100.00**
+Family Electric Rate Assistance Discount - % 100.00 100.00
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.
+** Includes BSC Distribution Charge of $0.360/meter/day and BSC Surcharge of $0.064/meter/day. (I)
+***The Baseline Credit applies up to 100% of the Baseline Allocation, regardless of Time-of-Use time period. Additional
+Baseline Allocations apply for Customers with Heat Pump Water Heaters served under this Option. The Baseline Allocation
+is set forth in Preliminary Statement, Part H.
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The
+TOTCA represents the Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability (I)
+Services Balancing Account Adjustment (RSBAA) of $0.00016 per kWh, and Transmission Access Charge Balancing (I)
+Account Adjustment (TACBAA) of $0.00266 per kWh.
+2 Distrbtn = Distribution. Includes recovery for California Solar Initiative costs.
+3 NSGC = New System Generation Charge
+4 NDC = Nuclear Decommissioning Charge
+5 PPPC = Public Purpose Programs Charge (includes Diablo Canyon Power Plant charge and California Alternate Rates for (T)
+Energy Surcharge where applicable.)
+6 CIA = Conservation Incentive Adjustment
+7 WFC = Wildfire Fund Non-Bypassable Charge. The Wildfire Fund Non-Bypassable Charge supports the California Wildfire
+Fund and is not applicable to exempt Customers pursuant to D.19-10-056.
+8 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.
+9 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice
+Aggregation Service (CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate
+component of this Schedule but instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS.
+10 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the
+2000-2001 energy crisis.
+11 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability
+procurement ordered by the CPUC that SCE has procured on behalf of customers whose generation services are provided
+by certain Electric Service Providers or Community Choice Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 3
+Revised Cal. P.U.C. Sheet No. 90939-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90671-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 4
+TIME-OF-USE
+DOMESTIC
+RATES (Continued)
+Delivery Service Generation2
+Optio n 5-8 P M / Optio n 5-8 P M -CP P Total1 UG*** DWREC3
+Energy Charge - $/kWh
+Summer Season - On-Peak 0.33150 (R) 0.41297 (R) 0.00000
+Mid-Peak 0.33150 (R) 0.21262 (R) 0.00000
+Off-Peak 0.28277 (R) 0.06285 (R) 0.00000
+Winter Season - Mid-Peak 0.33150 (R) 0.27710 (R) 0.00000
+Off-Peak 0.28277 (R) 0.09955 (R) 0.00000
+Super-Off-Peak 0.25638 (R) 0.06937 (R) 0.00000
+Baseline Credit**** - $/kWh (0.10108) (I)
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.794
+BSC Adjustment - Deed Restricted - $/Meter/Day (0.332) (I)
+California Climate Credit10 (36.00) (R)
+California Alternate Rates for
+Energy Discount - % 100.00**
+Family Electric Rate Assistance Discount - % 100.00
+Optio n 5-8 P M -CP P
+CPP Event Energy Charge - $/kWh 0.80000
+Summer CPP Non-Event Credit
+On-Peak Energy Credit - $/kWh (0.15170)
+Maximum Available Credit - $/kWh***
+Summer Season (0.58794) (I)
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.
+** The ongoing Competition Transition Charge (CTC) of $0.00014 per kWh is recovered in the UG component of Generation. (I)
+*** The Baseline Credit applies up to 100% of the Baseline Allocation, regardless of Time-of-Use time period. Additional Baseline
+Allocations apply for Customers with Heat Pump Water Heaters served under this Option. The Baseline Allocation is set forth in
+Preliminary Statement, Part H.
+**** The Maximum Available Credit is the capped credit amount for CPP Customers dual participating in other demand response
+programs.
+1 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation
+Service (CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this
+Schedule but instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS.
+2 Generation = The Gen rates are applicable only to Bundled Service Customers. See Special Condition below for PCIA recovery.
+3 DWREC = Department of Water Resources (DWR) Energy Credit – For more information on the DWR Energy Credit, see the Billing
+Calculation Special Condition of this Schedule.
+4 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+5 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement
+ordered by the CPUC that SCE has procured on behalf of customers whose generation services are provided by certain Electric
+Service Providers or Community Choice Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 4
+Revised Cal. P.U.C. Sheet No. 90940-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90672-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 5
+TIME-OF-USE
+DOMESTIC
+RATES (Continued)
+Delivery Service
+Option 5-8 PM / Option 5-8 PM-CPP Trans1 Distrbtn2 NSGC3 NDC4 PPPC5 CIA6 WFC7 DWRA10 PUCRF8 Total9
+Energy Charge - $/kWh
+Summer Season - On-Peak 0.02586 (I) 0.28514 (R) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.33150 (R)
+Mid-Peak 0.02586 (I) 0.28514 (R) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.33150 (R)
+Off-Peak 0.02586 (I) 0.23641 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.28277 (R)
+Winter Season - Mid-Peak 0.02586 (I) 0.28514 (R) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.33150 (R)
+Off-Peak 0.02586 (I) 0.23641 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.28277 (R)
+Super-Off-Peak 0.02586 (I) 0.21002 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.25638 (R)
+Baseline Credit**** - $/kWh (0.10108) (I) (0.10108) (I)
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.424 (I)** 0.000 0.000 0.370 (R) 0.794
+BSC Adjustment - Deed Restricted - $/Meter/Day (0.332) (I) (0.332) (I)
+California Climate Credit10 (36.00) (R) (36.00) (R)
+California Alternate Rates for
+Energy Discount - % 100.00** 100.00**
+Family Electric Rate Assistance Discount - % 100.00 100.00
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.
+** Includes BSC Distribution Charge of $0.360/meter/day and BSC Surcharge of $0.064/meter/day.. (I)
+*** The Baseline Credit applies up to 100% of the Baseline Allocation, regardless of Time-of-Use time period. Additional Baseline Allocations apply for
+Customers with Heat Pump Water Heaters served under this Option. The Baseline Allocation is set forth in Preliminary Statement, Part H.
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The TOTCA represents the
+Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability Services Balancing Account Adjustment (RSBAA) (I)
+of $0.00016 per kWh, and Transmission Access Charge Balancing Account Adjustment (TACBAA) of $0.00266 per kWh. (I)
+2 Distrbtn = Distribution. Includes recovery for California Solar Initiative costs.
+3 NSGC = New System Generation Charge
+4 NDC = Nuclear Decommissioning Charge
+5 PPPC = Public Purpose Programs Charge (includes Diablo Canyon Power Plant charge and California Alternate Rates for Energy Surcharge where (T)
+applicable.)
+6 CIA = Conservation Incentive Adjustment
+7 WFC = Wildfire Fund Non-Bypassable Charge. The Wildfire Fund Non-Bypassable Charge supports the California Wildfire Fund and is not
+applicable to exempt Customers pursuant to D.19-10-056.
+8 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.
+9 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation Service (CCA
+Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this Schedule but instead pay the
+DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS.
+10 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the 2000-2001 energy crisis.
+11 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement ordered by the CPUC
+that SCE has procured on behalf of customers whose generation services are provided by certain Electric Service Providers or Community Choice
+Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 5
+Revised Cal. P.U.C. Sheet No. 90941-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90673-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 6
+TIME-OF-USE
+DOMESTIC
+RATES (Continued)
+Delivery Service Generation2
+Option PRIME / Option PRIME-CPP Total1 UG*** DWREC3
+Energy Charge - $/kWh/Meter/Day
+Summer Season
+On-Peak 0.29558 (I) 0.29667 (R) 0.00000
+Mid-Peak 0.29558 (I) 0.10558 (R) 0.00000
+Off-Peak 0.19737 (R) 0.07049 (R) 0.00000
+Winter Season
+Mid-Peak 0.30091 (I) 0.26489 (R) 0.00000
+Off-Peak 0.18785 (R) 0.05958 (R) 0.00000
+Super-Off-Peak 0.18785 (R) 0.05958 (R) 0.00000
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.794
+BSC Adjustment - Deed Restricted - $/Meter/Day (0.332) (I)
+EV Meter Credit (Separately Metered EV Option) - $/Met(e0r/.4D5a1y) (R)
+EV Submeter Credit - $/Meter/Day (0.152)
+California Climate Credit10 (36.00) (R)
+California Alternate Rates for
+Energy Discount - % 100.00**
+Family Electric Rate Assistance Discount - % 100.00
+Medical Baseline Credit - % Discount 100.00
+Option PRIME-CPP
+CPP Event Energy Charge - $/kWh 0.80000
+Summer CPP Non-Event Credit
+On-Peak Energy Credit - $/kWh (0.15170)
+Maximum Available Credit - $/kWh***
+Summer Season (0.58794) (I)
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.
+** The ongoing Competition Transition Charge (CTC) of $0.00014 per kWh is recovered in the UG component of Generation. (I)
+**** The Maximum Available Credit is the capped credit amount for CPP Customers dual participating in other demand response programs.
+1 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation Service (CCA Service)
+Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this Schedule but instead pay the DWRBC as
+provided by Schedule DA-CRS or Schedule CCA-CRS.
+2 Generation = The Gen rates are applicable only to Bundled Service Customers. See Special Condition below for PCIA recovery.
+3 DWREC = Department of Water Resources (DWR) Energy Credit – For more information on the DWR Energy Credit, see the Billing Calculation
+Special Condition of this Schedule.
+4 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+5 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement ordered by the CPUC
+that SCE has procured on behalf of customers whose generation services are provided by certain Electric Service Providers or Community Choice
+Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 6
+Revised Cal. P.U.C. Sheet No. 90942-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90674-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 7
+TIME-OF-USE
+DOMESTIC
+RATES (Continued)
+Delivery Service
+Option PRIME / Option PRIME-CPP Trans1 Distrbtn2 NSGC3 NDC4 PPPC5 CIA6 WFC7 DWRA10 PUCRF8 Total9
+Energy Charge - $/kWh/Meter/Day
+Summer Season
+On-Peak 0.02586 (I) 0.24922 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.29558 (I)
+Mid-Peak 0.02586 (I) 0.24922 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.29558 (I)
+Off-Peak 0.02586 (I) 0.15101 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.19737 (R)
+Winter Season
+Mid-Peak 0.02586 (I) 0.25455 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.30091 (I)
+Off-Peak 0.02586 (I) 0.14149 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.18785 (R)
+Super-Off-Peak 0.02586 (I) 0.14149 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.00000 0.00591 (R) 0.00000 0.00100 (I) 0.18785 (R)
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.424 (I)** 0.000 0.000 0.370 (R) 0.794
+BSC Adjustment - Deed Restricted - $/Meter/Day (0.332) (I) (0.332) (I)
+EV Meter Credit (Separately Metered EV Option) - $/Meter/Day (0.451) (R) (0.451) (R)
+EV Submeter Credit - $/Meter/Day (0.152) (0.152)
+California Climate Credit10 (36.00) (R) (36.00) (R)
+California Alternate Rates for
+Energy Discount - % 100.00** 100.00**
+Family Electric Rate Assistance Discount - % 100.00 100.00
+Medical Baseline Credit - % Discount 100.00 100.00
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.
+** Includes BSC Distribution Charge of $0.360/meter/day and BSC Surcharge of $0.064/meter/day. (I)
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The
+TOTCA represents the Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability (I)
+Services Balancing Account Adjustment (RSBAA) of $0.00016 per kWh, and Transmission Access Charge Balancing (I)
+Account Adjustment (TACBAA) of $0.00266 per kWh.
+2 Distrbtn = Distribution
+3 NSGC = New System Generation Charge
+4 NDC = Nuclear Decommissioning Charge
+5 PPPC = Public Purpose Programs Charge (includes Diablo Canyon Power Plant charge and California Alternate Rates for (T)
+Energy Surcharge where applicable.)
+6 CIA = Conservation Incentive Adjustment
+7 WFC = Wildfire Fund Non-Bypassable Charge. The Wildfire Fund Non-Bypassable Charge supports the California Wildfire
+Fund and is not applicable to exempt Customers pursuant to D.19-10-056.
+8 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.
+9 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice
+Aggregation Service (CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate
+component of this Schedule but instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS.
+10 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the
+2000-2001 energy crisis.
+11 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability
+procurement ordered by the CPUC that SCE has procured on behalf of customers whose generation services are provided
+by certain Electric Service Providers or Community Choice Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 7
+Revised Cal. P.U.C. Sheet No. 91201-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90942-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 7
+TIME-OF-USE
+DOMESTIC
+RATES (Continued)
+Delivery Service
+Option PRIME / Option PRIME-CPP Trans1 Distrbtn2 NSGC3 NDC4 PPPC5 CIA6 WFC7 DWRA10 PUCRF8 Total9
+Energy Charge - $/kWh/Meter/Day
+Summer Season
+On-Peak 0.02481 (R) 0.25449 (I) 0.00829 0.00003 0.00171 (R) 0.00000 0.00591 0.00000 0.00100 0.29624 (I)
+Mid-Peak 0.02481 (R) 0.25449 (I) 0.00829 0.00003 0.00171 (R) 0.00000 0.00591 0.00000 0.00100 0.29624 (I)
+Off-Peak 0.02481 (R) 0.15474 (I) 0.00829 0.00003 0.00171 (R) 0.00000 0.00591 0.00000 0.00100 0.19649 (R)
+Winter Season
+Mid-Peak 0.02481 (R) 0.25982 (I) 0.00829 0.00003 0.00171 (R) 0.00000 0.00591 0.00000 0.00100 0.30157 (I)
+Off-Peak 0.02481 (R) 0.14500 (I) 0.00829 0.00003 0.00171 (R) 0.00000 0.00591 0.00000 0.00100 0.18675 (R)
+Super-Off-Peak 0.02481 (R) 0.14500 (I) 0.00829 0.00003 0.00171 (R) 0.00000 0.00591 0.00000 0.00100 0.18675 (R)
+Fixed Recovery Charge - $/kWh 0.00619
+MCAM Charge - $/kWh 0.00223
+Base Services Charge (BSC) - $/Meter/Day 0.429 (I)** 0.000 0.000 0.365 (R) 0.794
+BSC Adjustment - Deed Restricted - $/Meter/Day (0.327) (R) (0.327) (R)
+EV Meter Credit (Separately Metered EV Option) - $/Meter/Day (0.461) (R) (0.461) (R)
+EV Submeter Credit - $/Meter/Day (0.152) (0.152)
+California Climate Credit10 (36.00) (36.00)
+California Alternate Rates for
+Energy Discount - % 100.00** 100.00**
+Family Electric Rate Assistance Discount - % 100.00 100.00
+Medical Baseline Credit - % Discount 100.00 100.00
+Option PRIME-CPP
+CPP Event Energy Charge - $/kWh
+Summer CPP Non-Event Credit
+On-Peak Energy Credit - $/kWh
+Maximum Available Credit - $/kWh***
+Summer Season
+* Represents 100% of the discount percentage as shown in the applicable Special Condition of this Schedule.
+** Includes BSC Distribution Charge of $0.360/meter/day and BSC Surcharge of $0.069/meter/day. (I)
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The
+TOTCA represents the Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability
+Services Balancing Account Adjustment (RSBAA) of $0.00016 per kWh, and Transmission Access Charge Balancing
+Account Adjustment (TACBAA) of $0.00161 per kWh. (R)
+2 Distrbtn = Distribution
+3 NSGC = New System Generation Charge
+4 NDC = Nuclear Decommissioning Charge
+5 PPPC = Public Purpose Programs Charge (includes Diablo Canyon Power Plant charge and California Alternate Rates for
+Energy Surcharge where applicable.)
+6 CIA = Conservation Incentive Adjustment
+7 WFC = Wildfire Fund Non-Bypassable Charge. The Wildfire Fund Non-Bypassable Charge supports the California Wildfire
+Fund and is not applicable to exempt Customers pursuant to D.19-10-056.
+8 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.
+9 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice
+Aggregation Service (CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate
+component of this Schedule but instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS.
+10 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the
+2000-2001 energy crisis.
+11 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability
+procurement ordered by the CPUC that SCE has procured on behalf of customers whose generation services are provided
+by certain Electric Service Providers or Community Choice Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+
+PDF PAGE 8
+Revised Cal. P.U.C. Sheet No. 90943-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90675-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 18
+TIME-OF-USE
+DOMESTIC
+SPECIAL CONDITIONS (Continued)
+7. Change of Rate Schedule: At any time, a Customer on this Schedule may elect to leave
+his/her Option (e.g., Option 4-9 PM, Option 5-8 PM, Option PRIME, Option A, Option B) and
+elect to either: (1) switch to another Option of this Schedule for which they are eligible, or (2)
+transfer from this Schedule to another applicable residential rate schedule. The elected rate
+change will become effective on the next regularly scheduled meter read date following the
+Customer's notice to SCE. Unless the Customer was placed on an Option by SCE (i.e.,
+defaulted), the Customer shall not be allowed to make an additional change in rate until 12
+months of service has been provided under the elected rate, unless otherwise specified in that
+rate schedule.
+8. California Alternate Rates for Energy (CARE) Discount: Customers who meet the definition of
+a CARE Household, as defined in Schedule D-CARE, may qualify for a 32.5 percent discount
+off of their electric bill prior to the application of the Public Utilities Commission
+Reimbursement Fee (PUCRF) and any applicable user fees, taxes, and late payment
+charges. Eligible CARE Customers are required to pay the PUCRF and any applicable user
+fees, taxes, and late payment charges in full. In addition, eligible CARE Customers are
+exempt from paying the CARE Surcharge of $0.208 per meter per day, the Wildfire Fund Non- (R)
+Bypassable Charge of $0.00591 per kWh, and the Fixed Recovery Charge of $0.00619 per (R)
+kWh. CARE Customers are exempt from the Base Services Charge Surcharge of $0.064 per (I)
+meter per day and are provided a Base Services Charge Discount of $(0.155) per meter per |
+day to reduce their Base Services Charge. An application and eligibility declaration is required (I)
+for service under this Special Condition. Eligible Customers shall have the CARE Discount
+applied to this Schedule commencing no later than one billing period after receipt and
+approval of the Customer’s application by SCE. Customers may be rebilled for periods in
+which they do not meet the eligibility requirements for the CARE Discount. Customers
+receiving service under the Family Electric Rate Assistance (FERA) Discount Special
+Condition of this Schedule are not eligible to take service under this Special Condition.
+9. Family Electric Rate Assistance Discount: Customers who meet the definition of a FERA
+household, as defined in Schedule D-FERA, may qualify for an 18.0 percent discount off of
+their bill prior to the application of any applicable taxes and late payment charges. In addition,
+FERA Customers are exempt from the Base Services Charge Surcharge of $0.064 per meter
+per day and are provided a Base Services Charge credit adjustment of $(0.201) per meter per (I)
+day to reduce their Base Services Charge. An application and eligibility declaration is required (R)
+for service under this Special Condition. Eligible Customers shall be billed on this Special
+Condition commencing no later than one billing period after receipt and approval of the
+Customer’s application by SCE. Customers may be rebilled for periods in which they do not
+meet the eligibility requirements for the CARE Discount. Customers receiving service under
+the CARE Discount Special Condition of this Schedule are not eligible to take service under
+this Special Condition.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 9
+Revised Cal. P.U.C. Sheet No. 91202-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90943-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 18
+TIME-OF-USE
+DOMESTIC
+SPECIAL CONDITIONS (Continued)
+7. Change of Rate Schedule: At any time, a Customer on this Schedule may elect to leave
+his/her Option (e.g., Option 4-9 PM, Option 5-8 PM, Option PRIME, Option A, Option B) and
+elect to either: (1) switch to another Option of this Schedule for which they are eligible, or (2)
+transfer from this Schedule to another applicable residential rate schedule. The elected rate
+change will become effective on the next regularly scheduled meter read date following the
+Customer's notice to SCE. Unless the Customer was placed on an Option by SCE (i.e.,
+defaulted), the Customer shall not be allowed to make an additional change in rate until 12
+months of service has been provided under the elected rate, unless otherwise specified in that
+rate schedule.
+8. California Alternate Rates for Energy (CARE) Discount: Customers who meet the definition of
+a CARE Household, as defined in Schedule D-CARE, may qualify for a 32.5 percent discount
+off of their electric bill prior to the application of the Public Utilities Commission
+Reimbursement Fee (PUCRF) and any applicable user fees, taxes, and late payment
+charges. Eligible CARE Customers are required to pay the PUCRF and any applicable user
+fees, taxes, and late payment charges in full. In addition, eligible CARE Customers are
+exempt from paying the CARE Surcharge of $0.209 per meter per day, the Wildfire Fund Non- (I)
+Bypassable Charge of $0.00591 per kWh, and the Fixed Recovery Charge of $0.00619 per
+kWh. CARE Customers are exempt from the Base Services Charge Surcharge of $0.069 per (I)
+meter per day and are provided a Base Services Charge Discount of $(0.168) per meter per (R)
+day to reduce their Base Services Charge. An application and eligibility declaration is required
+for service under this Special Condition. Eligible Customers shall have the CARE Discount
+applied to this Schedule commencing no later than one billing period after receipt and
+approval of the Customer’s application by SCE. Customers may be rebilled for periods in
+which they do not meet the eligibility requirements for the CARE Discount. Customers
+receiving service under the Family Electric Rate Assistance (FERA) Discount Special
+Condition of this Schedule are not eligible to take service under this Special Condition.
+9. Family Electric Rate Assistance Discount: Customers who meet the definition of a FERA
+household, as defined in Schedule D-FERA, may qualify for an 18.0 percent discount off of
+their bill prior to the application of any applicable taxes and late payment charges. In addition,
+FERA Customers are exempt from the Base Services Charge Surcharge of $0.069 per meter (I)
+per day and are provided a Base Services Charge credit adjustment of $0.197 per meter per (R)
+day to reduce their Base Services Charge. An application and eligibility declaration is required
+for service under this Special Condition. Eligible Customers shall be billed on this Special
+Condition commencing no later than one billing period after receipt and approval of the
+Customer’s application by SCE. Customers may be rebilled for periods in which they do not
+meet the eligibility requirements for the CARE Discount. Customers receiving service under
+the CARE Discount Special Condition of this Schedule are not eligible to take service under
+this Special Condition.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+
+PDF PAGE 10
+Revised Cal. P.U.C. Sheet No. 91203-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90676-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 20
+TIME-OF-USE
+DOMESTIC
+SPECIAL CONDITIONS (Continued)
+11. Billing Calculation: A Customer’s bill is calculated according to the rates and conditions above.
+The residential Base Services Charge is a fixed daily charge designed to cover the costs
+connecting each Customer to the electric grid and providing state programs to assist income-
+qualified Customers. Customers enrolled in CARE or FERA, or living in Deed Restricted
+Affordable Housing (DRAH) are provided a discount to reduce their Base Services Charge.
+DRAH will be identified by the California Housing Partnership database. For properties with less
+than 80 percent of units identified as DRAH, Customers or tenants must contact SCE or visit
+www.sce.com and self-attest to living in a DRAH to qualify for the DRAH discount to reduce their
+Base Services Charge. DRAH Customers or tenants are exempt from the Base Services Charge
+(I)
+Surcharge of $0.069 per meter per day and are provided a Base Services Charge Discount of
+(I)
+$(0.327) per meter per day to reduce the Base Services Charge.
+The charges listed in the Rates section are calculated by multiplying the total Delivery Service
+rates and the Generation rates, when applicable, by the billing determinants (e.g., per kilowatt
+[kW], kilowatt-hour [kWh], etc.). The Energy Charge varies each month based on how much
+electricity a Customer uses.
+As of January 1, 2012, all generation supplied to Bundled Service Customers is provided by
+SCE. The DWR Energy Credit provided to Bundled Service Customers is determined by
+multiplying the DWR Energy Credit rate component by the Customer’s total kWhs.
+a. Bundled Service Customers receive Delivery Service and Generation service from SCE.
+The Customer’s bill is the sum of the charges for Delivery Service and Generation
+service determined, as described in this Special Condition, and subject to applicable
+discounts or adjustments provided under SCE’s tariff schedules.
+b. Direct Access Customers receive Delivery Service from SCE and purchase energy from
+an Energy Service Provider. The Customer’s bill is the sum of the charges for Delivery
+Service determined as described in this Special Condition except that the DWRBC rate
+component is subtracted from the total Delivery Service rate before the billing
+determinants are multiplied by such resulting total rate; plus the applicable charges as
+shown in Schedule DA-CRS and subject to applicable discounts or adjustments provided
+under SCE’s tariff schedules.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5829-E Michael Backstrom Date Submitted May 27, 2026
+Decision Sr. Vice President Effective Jun 1, 2026
+Resolution
+
+PDF PAGE 11
+Revised Cal. P.U.C. Sheet No. 91040-E
+Cancelling Revised Cal. P.U.C. Sheet No. 88512-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule TOU-D Sheet 21
+TIME-OF-USE
+DOMESTIC
+SPECIAL CONDITIONS (Continued)
+11. Billing Calculation (Continued)
+c. CCA Service Customers receive Delivery Service from SCE and purchase energy
+from their Community Choice Aggregator (CCA). SCE will read the meters and
+present the bill for both Delivery Service and Generation to the CCA Service
+Customer. The Customer’s bill is the sum of the charges for Delivery Service as
+displayed in this Rate Schedule and Generation charges determined by the CCA plus
+the applicable charges as shown in Schedule CCA-CRS, and subject to applicable
+discounts or adjustments provided under SCE’s tariff schedules.
+12. Residential California Climate Credit: A credit from the State of California to fight climate (T)
+change. The credit is applied after the calculation of city and county utility users' taxes on
+customers' utility bills and prior to the application of franchise fees on an equal basis, per
+household, to the billing statements of Customers receiving service under this schedule at the (T)
+time the California Climate Credit is disbursed. Any California Climate Credit not consumed in (T)
+the billing period in which the credit is applied will roll over to each subsequent billing period
+until the credit is fully consumed.
+13. Customer-Owned Electrical Generating Facilities:
+a. For customers not eligible for service under Schedule NEM, Net Energy Metering,
+Schedule NEM-ST or Schedule NBT, Net Billing Tariff, and where customer-owned
+electrical generating facilities are used to meet a part or all of the customer's electrical
+requirements, service shall be provided concurrently under the terms and conditions
+of Schedule S and this Schedule. Parallel operation of such generating facilities with
+SCE’s electrical system is permitted. A generation interconnection agreement is
+required for such operation. In response to the COVID-19 pandemic, the October
+2020 California Climate Credit of $37 per residential household will be advanced and
+divided into two equal credits of $18.50. The first credit will be applied to either the
+May or June 2020 billing statement of customers receiving service under this
+schedule depending on the customers’ billing cycle. The second credit will be applied
+to either the June or July 2020 billing statement of customers receiving service under
+this schedule depending on the customers’ billing cycle. As a result, a California
+Climate Credit will not be applied to customers’ October 2020 billing statements.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5771-E Michael Backstrom Date Submitted Mar 20, 2026
+Decision 26-03-013 Sr. Vice President Effective Mar 20, 2026
+Resolution

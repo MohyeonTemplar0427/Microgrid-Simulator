@@ -1,16 +1,16 @@
 # Southern California billing candidate
 
-Tariff data version: `socal-2026-09-19.1`. This is a bounded recurring-bill and non-export dispatch implementation, not complete reproduction of every account bill. See the handoff for the tested engine pin and browser cases.
+Tariff data version: `socal-2026-09-19.2`. This is a bounded recurring-bill and non-export dispatch implementation, not complete reproduction of every account bill. See the handoff for the tested engine pin and browser cases.
 
 ## Implemented schedules and coverage
 
 | Utility | Residential | Ordinary commercial | Verified study dates |
 |---|---|---|---|
 | LADWP | R-1A standard; R-1B TOU | A-1A, A-1B secondary; A-2B 4.8 kV; A-3A 34.5 kV | 2025-01-01 through 2026-09-17 |
-| SCE bundled residential | D; TOU-D 4–9, 5–8, PRIME, non-CPP | — | 2025-01-01 through 2025-12-31; 2026-06-25 through 2026-09-17 |
+| SCE bundled residential | D; TOU-D 4–9, 5–8, PRIME, non-CPP | — | 2025-01-01 through 2026-09-17 |
 | SCE bundled commercial | — | TOU-GS-1 E/D; TOU-GS-2 D; TOU-GS-3 D; TOU-8 D, secondary service, non-CPP | 2026-06-25 through 2026-09-17 |
 
-SCE's downloaded price sheets are effective June 1, 2026 (5829-E); some current terms and component sheets are effective June 25 (5837-E). The intersection is deliberately used. SCE residential 2025 uses five verified historical versions per plan. The January 1–June 24, 2026 gap remains unsupported. No current tariff is silently backdated. LADWP's July 2019 base prices are combined with separately versioned 2025–2026 quarterly adjustments.
+SCE's downloaded price sheets are effective June 1, 2026 (5829-E); some current terms and component sheets are effective June 25 (5837-E). The intersection is deliberately used for commercial schedules. SCE residential uses five verified 2025 versions plus January 1 and June 1, 2026 versions per plan. Explicit cancellation links establish continuous residential coverage; see [2026 audit](utility_sources/socal/history_2026/README.md). No current tariff is silently backdated. LADWP's July 2019 base prices are combined with separately versioned 2025–2026 quarterly adjustments.
 
 The study covers one account billing cycle, with inclusive end date. SCE is limited to 40 days, LADWP to 93 days. Supply complete 15-minute interval-start timestamps with explicit UTC offsets; hourly data and missing/duplicate intervals are rejected. DST uses actual instants. Daily load shapes are explicitly hypothetical, not inferred meter data.
 

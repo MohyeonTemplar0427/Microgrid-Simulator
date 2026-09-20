@@ -18,3 +18,7 @@ November Santa Monica TOU-D-4–9: grid bill $184.633165; battery bill $167.6668
 Across rate/season boundaries, day-prorated baseline/minimum subperiod allocation remains a study approximation, explicitly warned in results. Exact utility meter-read reconciliation is unfinished. Climate credits are bill-confirmed manual inputs applied once after tax; no automatic entitlement or multi-cycle ledger. CARE/FERA/medical/deed-restricted/CPP cases, unsupported generation providers and exports remain excluded. Export-vs-storage optimization requires complete settlement rules before activation.
 
 CCA and further municipal expansion remain deferred while the current structure is refined.
+
+## Subsequent early-2026 extension
+
+The earlier gap described above is now filled for residential plans using verified January 1 and June 1 price sheets, with explicit cancellation chains. See `../utility_sources/socal/history_2026/README.md`. The original 2025 replay and its recorded engine identity remain unchanged.

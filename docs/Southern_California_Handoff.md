@@ -72,3 +72,14 @@ Supersedes the SCE residential coverage and engine pin above. See `Southern_Cali
 - Browser restoration/run tested. Corrected outdated SCE date help and restored battery-only choice enablement. New optional climate-credit field requires bill confirmation; apartment profile selects multifamily basic charge.
 - Cross-rate/season allowance and minimum allocation remains an explicit approximation. No export settlement, automatic climate-credit eligibility, or multi-cycle credit ledger. CCA and new municipalities deferred.
 - Main branch, no commit or push; existing work preserved.
+
+## Early-2026 residential gap filled — September 19, 2026
+
+The preceding gap notes are superseded: D, TOU-D-4–9, 5–8 and PRIME now cover January 1, 2025–September 17, 2026 continuously. Commercial coverage is unchanged. See `utility_sources/socal/history_2026/README.md` for explicit cancellation chains and the March 20 / June 25 rule review.
+
+- Tariff data `socal-2026-09-19.2`; engine `dc35d428ca013098e67f93a04875fa656babd7aa9eb0d49feeb5c6c487eb1b44`.
+- Full regression: **1,128 passed** in 61 seconds, `/usr/local/bin/python3 -m pytest -q`.
+- 16 API/queue/worker simulations completed: four plans × January, March DST, June 1–24 and May/June battery boundary cases. Reconciliation errors below $0.005; see `validation/sce_2026_gap_fill.csv`. These are constant-1-kW synthetic validation loads, not average household forecasts.
+- Ports 8878 and 8876 refreshed only after idle checks, with prior pointers backed up as `engine-before-2026-gap-fill.json`. Existing saved results and old engines preserved. Other servers and independent browser clone untouched.
+- Main preview study `498b3b48ea26446890aa40ccb92d2466`: January 2026 SCE D, synthetic 1 kW / region 6 basic / no local tax. Completed bill $295.18572, matching independent test. Original SF historical result still readable.
+- Main branch; no commit or push. Existing allocation and credit-ledger limitations remain.

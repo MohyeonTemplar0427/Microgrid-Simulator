@@ -12,7 +12,9 @@ FIELDS={'schema_version','name','resolution_id','resolution','mode','account','t
 
 
 def capabilities():
+ from ..billing.la_coverage import coverage
  return {'schema_version':6,'tariff_data_version':VERSION,'plans':list(PLANS.values()),
+ 'la_county_coverage':coverage(),
  'solar_programs':[{'id':'none','label':'No solar'},{'id':'approved_non_export','label':'Approved non-export PV · self-consumption only'}],
  'unsupported':['SCE CCA generation tariffs','NEM/NBT export credits and true-up','CARE/FERA/medical or other special riders','CPP events','Reactive-power charges'],
  'baseline_regions':['5','6','8','9','10','13','14','15','16']}
@@ -36,6 +38,7 @@ def validate(r):
  if r['mode'] not in ('actual_service','hypothetical_bundled'):raise ValueError('Choose actual service or an explicitly hypothetical bundled comparison.')
  p=eligibility(r['tariff_id'],billing_account(r),r['start_date'],r['end_date'])
  if r['account'].get('actual_generation_provider') not in ('bundled','cca'):raise ValueError('Confirm generation enrollment separately from delivery.')
+ if p['utility']=='gwp' and r['account']['actual_generation_provider']!='bundled':raise ValueError('GWP ordinary accounts require bundled GWP generation; SCE CCA/CEU pairing is not applicable.')
  if r['mode']=='actual_service' and r['account']['actual_generation_provider']!='bundled':raise ValueError('Actual CCA billing is unsupported; an explicitly hypothetical bundled comparison is required.')
  if customer_class(r['site_profile'])!=p['customer_class']:raise ValueError('Location-step customer type must match the account.')
  resolution=r['resolution']
@@ -43,6 +46,8 @@ def validate(r):
  if r['mode']=='actual_service' and (resolution.get('status')!='verified' or resolution.get('delivery_utility')!=p['utility']):raise ValueError('Actual service requires saved bill/utility-confirmed delivery.')
  if r['mode']=='hypothetical_bundled' and p['utility'] not in [c['utility_id'] for c in resolution.get('delivery_candidates',[])]+[resolution.get('delivery_utility')]:raise ValueError('Selected comparison utility must match the resolved location or confirmed override.')
  if r['battery'] is not None:Battery(**r['battery'])
+ if p['utility']=='gwp' and r['battery'] is not None and r['account'].get('storage_schedule_confirmed') is not True:
+  raise ValueError('Confirm GWP accepts this storage installation on the selected ordinary import schedule without a standby rider.')
  number(r['degradation_cost_per_kWh'],'Battery degradation cost',0,10)
  solar=r['solar']
  if not isinstance(solar,dict) or set(solar)!={'capacity_kw','tilt','azimuth'}:raise ValueError('Specify PV capacity, tilt and azimuth.')
@@ -105,6 +110,6 @@ def execute(directory,r):
   costs.extend({'scenario':name,'component':k,'amount':v} for k,v in b['line_items'].items());bills[name]=b
  warnings=result['bill']['warnings']+['PV uses the existing PVWatts/temperature/inverter model with clear-sky irradiance, 20 °C air, 1 m/s wind, 14% system losses, 96% inverter efficiency and 1.2 DC/AC ratio; not measured weather.','Savings are operating costs only, excluding capital cost, incentives and lifecycle payback.']
  if not solar['capacity_kw']:warnings=[w for w in warnings if not w.startswith('PV uses')]
- if r['mode']=='hypothetical_bundled':warnings.insert(0,'HYPOTHETICAL bundled generation comparison — not the actual CCA customer bill.')
+ if r['mode']=='hypothetical_bundled':warnings.insert(0,'HYPOTHETICAL bundled generation comparison — account enrollment and eligibility are study assumptions, not an actual customer bill.')
  if versions:tables.append(('rate_versions','Applied rate versions',pd.DataFrame(versions)))
  save_results(directory,r,[('comparison','Scenario operating costs',pd.DataFrame(rows)),('costs','Itemized bills',pd.DataFrame(costs)),('dispatch','15-minute dispatch',result['dispatch'])]+tables,warnings,bills=bills,tariff_data_version=VERSION,objective_reconciliation_error=result['objective_gap'],solar_program=r['account']['solar_program'])

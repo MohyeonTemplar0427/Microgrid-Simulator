@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import cvxpy as cp
-from ..billing.socal import bill, charge_lines, interval_index, number
+from ..billing.socal import PLANS, bill, charge_lines, interval_index, number
 from .battery import Battery
 
 
@@ -10,6 +10,7 @@ def optimize(key,inputs,account,start,end,battery,wear):
  idx=interval_index(inputs,start,end);n=len(idx)
  load=np.asarray(inputs.native_load_kw,dtype=float);pv=np.asarray(inputs.pv_available_kw,dtype=float)
  if not np.isfinite(load).all() or not np.isfinite(pv).all() or min(load.min(),pv.min())<0:raise ValueError('Invalid load/PV profile.')
+ if PLANS.get(key,{}).get('solar_programs')==['none'] and np.any(pv>0):raise ValueError('This Billing Plan does not support PV/customer-generation settlement.')
  number(wear,'Degradation cost',0,10)
  baseline=inputs.copy();baseline['grid_import_kw']=load;baseline['grid_export_kw']=0.
  baseline_bill=bill(key,baseline,account,start,end)
@@ -28,6 +29,8 @@ def optimize(key,inputs,account,start,end,battery,wear):
  if key.startswith('sce_tou-gs-1'):constraints.append(grid<=20)
  if key=='sce_tou-gs-2-d':constraints.append(grid<=199.999999)
  if key=='sce_tou-gs-3-d':constraints.append(grid<=500)
+ if key.startswith('gwp_l-2'):
+  constraints.extend([grid<=19.999999,cp.sum(grid)*.25<=5000*len(idx.normalize().unique())/30-1e-5])
  lines=charge_lines(key,idx,grid,account,convex=True,constraints=constraints)
  degradation=wear*.25*cp.sum(charge+discharge)
  problem=cp.Problem(cp.Minimize(sum(lines.values())+degradation),constraints)

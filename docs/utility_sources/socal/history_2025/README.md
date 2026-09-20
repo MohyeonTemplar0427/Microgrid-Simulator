@@ -41,3 +41,5 @@ Twenty expected rate tables, each with four D rows or six TOU rows, and sixteen 
 `additional_evidence.json` records 2024 and 2026 archive hashes and Rule 9 evidence. `baseline_h.txt` contains the filed baseline allowances; `rule9_daily_billing.txt` establishes actual daily-charge counting. January 2026 sheets 90841-E, 90937-E, 90939-E and 90941-E cancel the November 2025 price sheets. This closes 2025 coverage without extrapolating into the unimplemented 2026 interval.
 
 Across rate/season changes, baseline and minimum allocation remains an explicit day-prorated study approximation. Climate credits require a user-supplied, bill-confirmed amount; automatic award eligibility and carry-forward ledgers are not included.
+
+The later [2026 audit](../history_2026/README.md) now establishes and integrates January 1–June 24, 2026 continuity. Earlier statements in this retrieval log describe the previous implementation state.

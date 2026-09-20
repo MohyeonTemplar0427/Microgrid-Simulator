@@ -1,0 +1,37 @@
+[
+  {
+    "file": "gwp_ordinance.pdf",
+    "url": "https://glendaleca.primegov.com/api/compilemeetingattachmenthistory/historyattachment/?historyId=4f4442fd-ccdf-48f8-a90b-6a180fec22bc",
+    "retrieved": "2026-09-19",
+    "sha256": "a53f9e47b7efcce2e3012c7b219a66a09797e1a9c462c3d54898e6fe1ac2bc7d",
+    "status": "research; see coverage matrix"
+  },
+  {
+    "file": "minutes60082.pdf",
+    "url": "https://glendaleca.primegov.com/Portal/Meeting?meetingTemplateId=39970",
+    "retrieved": "2026-09-19",
+    "sha256": "a6463674e2a3558d7d48f54936e7359a06deb1aad814a2f81d86f450f4287303",
+    "status": "research; see coverage matrix"
+  },
+  {
+    "file": "gwp_resolutions20241001.pdf",
+    "url": "https://glendaleca.primegov.com/Portal/Meeting?meetingTemplateId=37477",
+    "retrieved": "2026-09-19",
+    "sha256": "f0b497a73c7c0b52d4b5a9ed9e808f56492f61c72b98b41840e01655e4ca14c1",
+    "status": "research; see coverage matrix"
+  },
+  {
+    "file": "ceu_application.pdf",
+    "url": "https://www.cerritos.gov/media/ugmlrene/cerritos-electric-service-application.pdf",
+    "retrieved": "2026-09-19",
+    "sha256": "1d791be7cedb1ed055ecc1c557596c6efd8aabda829f53dbee7aaf2124541957",
+    "status": "research; see coverage matrix"
+  },
+  {
+    "file": "pwp_rates.pdf",
+    "url": "https://pwp.cityofpasadena.net/wp-content/uploads/2026/07/Summary-Rates-2026_07_updated.pdf",
+    "retrieved": "2026-09-19",
+    "sha256": "f8ded30de00a5eb63d187c93349a1023a8402b66d11982791a2ce9a262ef236a",
+    "status": "research; see coverage matrix"
+  }
+]

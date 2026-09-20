@@ -62,7 +62,7 @@ def test_missing_eligibility_or_unsupported_fails(changes):
 
 
 def test_no_historical_rate_extrapolation_or_hourly_demand():
- with pytest.raises(ValueError,match='coverage'):bill('sce_d',frame('2026-05-01','2026-05-31'),account('sce'),'2026-05-01','2026-05-31')
+ with pytest.raises(ValueError,match='coverage'):bill('sce_d',frame('2024-05-01','2024-05-31'),account('sce'),'2024-05-01','2024-05-31')
  with pytest.raises(ValueError,match='15-minute'):bill('sce_d',frame().iloc[::4],account('sce'),'2026-07-01','2026-07-31')
  with pytest.raises(ValueError,match='Export'):bill('sce_d',frame().assign(grid_export_kw=1),account('sce'),'2026-07-01','2026-07-31')
 

@@ -281,7 +281,7 @@ def test_point_match_is_distinct_from_nearby_pge_boundary():
 def test_cca_identity_and_nonretail_overlay_filter(oid,name,kind,expected):
     base=geo_get([feature(71021)])
     def get(url,params,timeout):
-        if 'Other' in url:return Response({'features':[{'attributes':{'OBJECTID':oid,'Utility':name,'Type':kind}}]})
+        if 'Other' in url and url.endswith('/query'):return Response({'features':[{'attributes':{'OBJECTID':oid,'Utility':name,'Type':kind}}]})
         return base(url,params,timeout)
     result=resolve_service({'latitude':37.7,'longitude':-122.2},get=get)
     if kind!='CCA':assert result['generation_candidates']==[]

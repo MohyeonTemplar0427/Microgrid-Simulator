@@ -83,7 +83,8 @@ def test_shared_plan_gap_overlap_and_effective_dates():
  p=RESIDENTIAL_PLANS['sce_d'];assert isinstance(p,RatePlan)
  assert p.version_on(date(2025,11,14)).data['sheet']=='90340-E'
  assert p.version_on(date(2025,11,15)).data['sheet']=='90634-E'
- with pytest.raises(PlanError):p.require_coverage(date(2025,12,31),date(2026,6,25))
+ p.require_coverage(date(2025,12,31),date(2026,6,25))
+ with pytest.raises(PlanError):p.require_coverage(date(2024,12,31),date(2026,6,25))
  with pytest.raises(PlanError,match='overlap'):RatePlan(p.identity,(p.versions[0],p.versions[0]))
 
 

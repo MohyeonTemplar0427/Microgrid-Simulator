@@ -1,0 +1,197 @@
+PDF PAGE 1
+Revised Cal. P.U.C. Sheet No. 90841-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90634-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule D Sheet 2
+DOMESTIC SERVICE
+RATES
+Delivery Service Generation2
+Total1 UG*** DWREC3
+Energy Charge- $/kWh/Meter/Day
+Baseline Service
+Summer 0.18482 (R) 0.11761 (R) 0.00000
+Winter 0.18482 (R) 0.11761 (R) 0.00000
+Over Baseline Service*
+Summer 0.28590 (R) 0.11761 (R) 0.00000
+Winter 0.28590 (R) 0.11761 (R) 0.00000
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.794
+BSC Discount - Deed Restricted - $/Meter/Day (0.332) (I)
+California Climate Credit (36.00) (R)
+* Nonbaseline Service includes all kWh in excess of applicable Baseline allocations as described in Preliminary Statement, Part H,
+Baseline Service.
+** The ongoing Competition Transition Charge (CTC) of $0.00014 per kWh is recovered in the UG component of Generation. (I)
+1 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation
+Service (CCA Service) Customers, except DA and CCA Service Customers are not subject to the DWRBC rate component of this
+Schedule but instead pay the DWRBC as provided by Schedule DA-CRS or Schedule CCA-CRS.
+2 Generation = The Generation rates are applicable only to Bundled Service Customers. See Special Condition below for PCIA
+recovery.
+3 DWREC = Department of Water Resources (DWR) Energy Credit - For more information on the DWR Energy Credit, see the
+Billing Calculation Special Condition of this Schedule.
+4 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+5 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement
+ordered by the CPUC that SCE has procured on behalf of customers whose generation services are provided by certain Electric
+Service Providers or Community Choice Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 2
+Revised Cal. P.U.C. Sheet No. 90842-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90635-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule D Sheet 3
+DOMESTIC SERVICE
+RATES (Continued)
+Delivery Service
+Trans1 Distrbtn2 NSGC3 NDC4 PPPC5 CIA6 WFC7 DWRA10 PUCRF8 Total9
+Energy Charge- $/kWh/Meter/Day
+Baseline Service
+Summer 0.02586 (I) 0.17586 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) (0.03740) (I) 0.00591 (R) 0.00000 0.00100 (I) 0.18482 (R)
+Winter 0.02586 (I) 0.17586 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) (0.03740) (I) 0.00591 (R) 0.00000 0.00100 (I) 0.18482 (R)
+Over Baseline Service*
+Summer 0.02586 (I) 0.17586 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.06368 (R) 0.00591 (R) 0.00000 0.00100 (I) 0.28590 (R)
+Winter 0.02586 (I) 0.17586 (I) 0.00829 (R) 0.00003 (I) 0.00527 (R) 0.06368 (R) 0.00591 (R) 0.00000 0.00100 (I) 0.28590 (R)
+Fixed Recovery Charge - $/kWh 0.00619 (I)
+MCAM Charge12 - $/kWh 0.00223 (I)
+Base Services Charge (BSC) - $/Meter/Day 0.424 (I)** 0.000 0.000 0.370 (R) 0.794
+BSC Discount - Deed Restricted - $/Meter/Day (0.332) (I) (0.332) (I)
+California Climate Credit11 (36.00) (R) (36.00) (R)
+* Nonbaseline Service includes all kWh in excess of applicable Baseline allocations as described in Preliminary Statement, Part H,
+Baseline Service.
+** Includes BSC Distribution Charge of $0.360/meter/day and BSC Surcharge of $0.064/meter/day. (I)
+1 Trans = Transmission and the Transmission Owners Tariff Charge Adjustments (TOTCA) which are FERC approved. The TOTCA
+represents the Transmission Revenue Balancing Account Adjustment (TRBAA) of $(0.00222) per kWh, Reliability Services (I)
+Balancing Account Adjustment (RSBAA) of $0.00016 per kWh, and Transmission Access Charge Balancing Account Adjustment (I)
+(TACBAA) of $0.00266 per kWh.
+2 Distrbtn = Distribution. Includes recovery for California Solar Initiative costs.
+3 NSGC = New System Generation Charge
+4 NDC = Nuclear Decommissioning Charge
+5 PPPC = Public Purpose Programs Charge (includes Diablo Canyon Power Plant charge and California Alternate Rates for Energy (T)
+Surcharge where applicable.)
+6 CIA = Conservation Incentive Adjustment
+7 WFC = Wildfire Fund Non-Bypassable Charge. The Wildfire Fund Non-Bypassable Charge supports the California Wildfire Fund
+and is not applicable to exempt Customers pursuant to D.19-10-056.
+8 PUCRF = The PUC Reimbursement Fee is described in Schedule RF-E.
+9 Total = Total Delivery Service rates are applicable to Bundled Service, Direct Access (DA) and Community Choice Aggregation
+Service (CCA Service) Customers, except DA and CCA Service Customers are not subject to the WFC rate component of this
+Schedule but instead pay the WFC as provided by Schedule DA-CRS or Schedule CCA-CRS.
+10 DWRA = A refund from the California Department of Water Resources (DWR) relating to the purchase of power during the 2000-
+2001 energy crisis.
+11 Applied on an equal basis, per household, semi-annually. See the Special Conditions of this Schedule for more information.
+12 The Modified Cost Allocation Mechanism (MCAM) charge recovers the net cost associated with system reliability procurement
+ordered by the CPUC that SCE has procured on behalf of customers whose generation services are provided by certain Electric
+Service Providers or Community Choice Aggregators.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 3
+Revised Cal. P.U.C. Sheet No. 90843-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90639-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule D Sheet 7
+DOMESTIC SERVICE
+SPECIAL CONDITIONS (Continued)
+4. Billing Calculation: (Continued)
+California Alternate Rates for Energy (CARE) Discount: Customers who meet the definition of a
+CARE Household, as defined in Schedule D-CARE, may qualify for a 32.5 percent discount off of
+their electric bill prior to the application of the Public Utilities Commission Reimbursement Fee
+(PUCRF) and any applicable user fees, taxes, and late payment charges. Eligible CARE
+Customers are required to pay the PUCRF and any applicable user fees, taxes, and late payment
+charges in full. In addition, eligible CARE Customers are exempt from paying the CARE Surcharge
+of $0.208 per meter per day, the Wildfire Fund Non-Bypassable Charge of $0.00591 per kWh, and (R)
+the Fixed Recovery Charge of $0.00619 per kWh. CARE Customers are exempt from the Base (I)(R)
+Services Charge Surcharge of $0.064 per meter per day and are provided a Base Services Charge |
+Discount of $(0.155) per meter per day to reduce their Base Services Charge. An application and (I)
+eligibility declaration is required for service under this Special Condition. Eligible Customers shall
+have the CARE Discount applied to this Schedule commencing no later than one billing period after
+receipt and approval of the Customer's application by SCE. Customers may be rebilled for periods
+in which they do not meet the eligibility requirements for the CARE Discount. Customers receiving
+the Family Electric Rate Assistance (FERA) Discount are not eligible for the CARE Discount.
+Family Electric Rate Assistance Discount (FERA): Customers who meet the definition of a FERA
+household, as defined in Schedule D-FERA, may qualify for an 18.0 percent discount off of their bill
+prior to the application of any applicable taxes and late payment charges. In addition, FERA
+Customers are exempt from the Base Services Charge Surcharge of $0.064 per meter per day and
+are provided a Base Services Charge credit adjustment of $(0.201) per meter per day to reduce (I)
+their Base Services Charge. An application and eligibility declaration is required for service under (R)
+this Special Condition. Eligible Customers shall be billed on this Special Condition commencing no
+later than one billing period after receipt and approval of the Customer's application by SCE.
+Customers may be rebilled for periods in which they do not meet the eligibility requirements for the
+FERA Discount. Customers receiving the CARE Discount are not eligible for the FERA Discount.
+5. Residential California Climate Credit: A semi-annual credit from the State of California to fight
+climate change. The credit is applied after the calculation of city and county utility users' taxes on
+customers' utility bills and prior to the application of franchise fees on an equal basis, per
+household, to the April and October billing statements of customers receiving service under this
+schedule at the time the California Climate Credit is disbursed (April 1 and October 1). Any
+California Climate Credit not consumed in the billing period in which the credit is applied will roll
+over to each subsequent billing period until the credit is fully consumed.
+6. Change of Rate Schedule: A Customer who was placed on a time-of-use (TOU) rate schedule by
+SCE (i.e., defaulted) and subsequently elects this Schedule, shall be allowed an additional rate
+schedule change within a 12-month period of being defaulted. The Customer shall not be allowed
+to make an additional (i.e., third) change in rate schedule until 12 months of service has been
+provided under the elected rate schedule, unless otherwise specified in that rate schedule.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5725-E Michael Backstrom Date Submitted Dec 30, 2025
+Decision Sr. Vice President Effective Jan 1, 2026
+Resolution E-5217
+
+PDF PAGE 4
+Revised Cal. P.U.C. Sheet No. 91033-E
+Cancelling Revised Cal. P.U.C. Sheet No. 90843-E
+Southern California Edison
+Rosemead, California (U 338-E)
+Schedule D Sheet 7
+DOMESTIC SERVICE
+SPECIAL CONDITIONS (Continued)
+4. Billing Calculation: (Continued)
+California Alternate Rates for Energy (CARE) Discount: Customers who meet the definition of a
+CARE Household, as defined in Schedule D-CARE, may qualify for a 32.5 percent discount off of
+their electric bill prior to the application of the Public Utilities Commission Reimbursement Fee
+(PUCRF) and any applicable user fees, taxes, and late payment charges. Eligible CARE
+Customers are required to pay the PUCRF and any applicable user fees, taxes, and late payment
+charges in full. In addition, eligible CARE Customers are exempt from paying the CARE Surcharge
+of $0.208 per meter per day, the Wildfire Fund Non-Bypassable Charge of $0.00591 per kWh, and
+the Fixed Recovery Charge of $0.00619 per kWh. CARE Customers are exempt from the Base
+Services Charge Surcharge of $0.064 per meter per day and are provided a Base Services Charge
+Discount of $(0.155) per meter per day to reduce their Base Services Charge. An application and
+eligibility declaration is required for service under this Special Condition. Eligible Customers shall
+have the CARE Discount applied to this Schedule commencing no later than one billing period after
+receipt and approval of the Customer's application by SCE. Customers may be rebilled for periods
+in which they do not meet the eligibility requirements for the CARE Discount. Customers receiving
+the Family Electric Rate Assistance (FERA) Discount are not eligible for the CARE Discount.
+Family Electric Rate Assistance Discount (FERA): Customers who meet the definition of a FERA
+household, as defined in Schedule D-FERA, may qualify for an 18.0 percent discount off of their bill
+prior to the application of any applicable taxes and late payment charges. In addition, FERA
+Customers are exempt from the Base Services Charge Surcharge of $0.064 per meter per day and
+are provided a Base Services Charge credit adjustment of $(0.201) per meter per day to reduce
+their Base Services Charge. An application and eligibility declaration is required for service under
+this Special Condition. Eligible Customers shall be billed on this Special Condition commencing no
+later than one billing period after receipt and approval of the Customer's application by SCE.
+Customers may be rebilled for periods in which they do not meet the eligibility requirements for the
+FERA Discount. Customers receiving the CARE Discount are not eligible for the FERA Discount.
+5. Residential California Climate Credit: A credit from the State of California to fight climate change. (T)
+The credit is applied after the calculation of city and county utility users' taxes on customers' utility
+bills and prior to the application of franchise fees on an equal basis, per household, to the billing
+statements of customers receiving service under this schedule at the time the California Climate (T)
+Credit is disbursed). Any California Climate Credit not consumed in the billing period in which the (T)
+credit is applied will roll over to each subsequent billing period until the credit is fully consumed.
+6. Change of Rate Schedule: A Customer who was placed on a time-of-use (TOU) rate schedule by
+SCE (i.e., defaulted) and subsequently elects this Schedule, shall be allowed an additional rate
+schedule change within a 12-month period of being defaulted. The Customer shall not be allowed
+to make an additional (i.e., third) change in rate schedule until 12 months of service has been
+provided under the elected rate schedule, unless otherwise specified in that rate schedule.
+(Continued)
+(To be inserted by utility) Issued By (To be inserted by Cal. PUC)
+Advice 5771-E Michael Backstrom Date Submitted Mar 20, 2026
+Decision 26-03-013 Sr. Vice President Effective Mar 20, 2026
+Resolution

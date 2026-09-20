@@ -10,6 +10,7 @@ from types import MappingProxyType
 import numpy as np
 from .plans import RatePlan, RatePlanIdentity
 from .sce_residential_data import HISTORICAL_RATES
+from .sce_residential_2026_data import RATES_2026
 
 BASELINES = {'5':(17,16.8,18.4,27),'6':(11.4,8.7,11,12.6),'8':(12.8,9.9,10.3,12.3),
  '9':(16.9,12.5,12,13.9),'10':(19.3,15.9,12.1,16.4),'13':(22.2,24.2,12.2,23),
@@ -27,21 +28,8 @@ class ResidentialRateVersion:
         return self.effective_start <= service_date <= self.effective_end
 
 
-def build_plans(current_energy):
-    records = [dict(r) for r in HISTORICAL_RATES]
-    for key in dict.fromkeys(r['plan_id'] for r in records):
-        schedule = key.removeprefix('sce_').upper()
-        if schedule == 'D':
-            rows = {season+'_'+tier: (rate,.11761,0.) for season in ('summer','winter')
-                    for tier,rate in [('baseline',.18453),('above_baseline',.28552)]}
-        else:
-            delivery,generation = current_energy[schedule]
-            rows = {name:(delivery[i],generation[i],0.) for i,name in enumerate(ROW_NAMES)}
-        records.append(dict(plan_id=key,effective_start='2026-06-25',effective_end='2026-09-17',
-            sheet='5829-E/5837-E',advice_letter='5829-E/5837-E',energy_rows=rows,
-            fixed_recovery_per_kwh=.00619,baseline_credit_per_kwh=0 if schedule in ('D','TOU-D-PRIME') else .10099,
-            base_services_charge_per_day=.794,minimum_charge_per_day=0.,
-            source_url='https://www.sce.com/regulatory/regulatory-information/tariff-books/rates-pricing-choices'))
+def build_plans():
+    records = [dict(r) for r in (*HISTORICAL_RATES, *RATES_2026)]
     plans = {}
     for key in dict.fromkeys(r['plan_id'] for r in records):
         versions=[]

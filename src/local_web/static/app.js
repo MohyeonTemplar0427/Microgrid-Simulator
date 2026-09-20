@@ -463,13 +463,13 @@ function setLocationChoices(result,saved="unconfirmed") {
   const delivery=result.delivery_candidates||[];
   for(const item of delivery){
     const id=item.utility_id;
-    choices.set(id,{label:(serviceForSelection(id)?.label||item.name)+(item.match==='nearby_boundary'?' · near boundary, verify address':''),supported:['amp','svp',...(capabilities.socal?['ladwp','sce']:[])].includes(id)||!!serviceForSelection(id)});
+    choices.set(id,{label:(serviceForSelection(id)?.label||item.name)+(item.match==='nearby_boundary'?' · near boundary, verify address':''),supported:['amp','svp',...(capabilities.socal?.plans||[]).map(p=>p.utility)].includes(id)||!!serviceForSelection(id)});
   }
   // Keep unsupported CCAs visible: a PG&E delivery match does not imply
   // bundled generation. Only validated identities enable implemented billing.
   const pgeAtPoint=delivery.some(item=>item.utility_id==='pge'&&item.match==='point');
   for(const item of result.generation_candidates||[]){
-    if(item.type!=='CCA')continue;
+    if(!['CCA','community_aggregation'].includes(item.type))continue;
     const service=capabilities.services.find(s=>s.id===item.service_id);
     choices.set(service?.id||item.id,{label:service?.label||item.name,supported:!!service&&pgeAtPoint});
   }
@@ -479,7 +479,10 @@ function setLocationChoices(result,saved="unconfirmed") {
   field('utility').replaceChildren(...options);
   const selected=serviceForSelection(saved)?.id||saved;
   field('utility').value=choices.get(selected)?.supported?selected:'unconfirmed';
-  $('utility-suggestion').textContent=`${result.explanation} Choices below follow the Step 2 location and site type; map matches do not confirm account eligibility.`;
+  const coverage=capabilities.socal?.la_county_coverage?.providers||[];
+  const providerIds=new Set([...delivery.map(x=>x.utility_id),...(result.generation_candidates||[]).map(x=>x.service_id)]);
+  const limitations=coverage.filter(x=>providerIds.has(x.id)&&x.status!=='bounded_import_support').map(x=>x.id.toUpperCase()+': '+x.reason);
+  $('utility-suggestion').textContent=`${result.explanation} Choices below follow the Step 2 location and site type; map matches do not confirm account eligibility. ${limitations.join(' ')}`;
   window.municipalUI?.serviceChanged();updateSiteControls();
 }
 async function refreshUtilities(generation,saved="unconfirmed") {
