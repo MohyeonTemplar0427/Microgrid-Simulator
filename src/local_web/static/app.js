@@ -80,11 +80,13 @@ function weatherMatches(meta) { const wanted=weatherRequest(); return meta && Ob
 function updateSiteControls() {
   updateSiteProfile();
   syncLocationTimezone();
+  syncExportControls();
   const utility=field("utility").value;
   const service=serviceForSelection(utility)?.id || utility;
   for(const opt of field("tariff_id").options) {
     if(!opt.value || opt.value==="__unset__") continue;
     opt.hidden=template?.schema_version>=2 && capabilities?.tariffs.find(t=>t.id===opt.value)?.service!==service;
+    if(template?.schema_version>=2 && capabilities?.tariffs.some(t=>t.id===opt.value))opt.hidden ||= siteCustomerClass()==='residential' ? !opt.value.startsWith('pge_e_elec_residential_tier3_') : opt.value.startsWith('pge_e_elec_residential_tier3_');
     opt.hidden ||= gridOnly() && /_option_[rs]_/.test(opt.value);
     const tariff=capabilities?.tariffs.find(t=>t.id===opt.value);
     const start=field("start_date").value,end=field("end_date").value;
@@ -199,6 +201,7 @@ function fillForm(request, lookup=true) {
   for (const [key,value] of Object.entries(request.battery)) form.elements.namedItem(key).value=value;
   for (const box of $("strategies").querySelectorAll("input")) box.checked=request.strategies.includes(box.value);
   restoreCandidate(request);
+  restoreExportControls(request.solar_export);
   updateDatasetInfo(); updateSiteControls();
   resetWizard();
   if(lookup && request.schema_version>=2) refreshUtilities(locationGeneration,request.site.utility);
@@ -241,6 +244,8 @@ function readRequest() {
     request.ess=field("ess_mode").value==="equipment"?essResolution:null;
     request.solar_optimization=annualResult;
   }
+  delete request.solar_export;
+  if(exportActive())request.solar_export=readExportControls(request);
   return request;
 }
 form.addEventListener("submit",async event=>{
@@ -280,7 +285,7 @@ async function refreshStudy(id) {
     $("run-name").textContent=study.name;
     $("run-meta").textContent=`${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}`;
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
-    $("progress").textContent=study.status==="completed" ? ((study.request.schema_version===4 || study.request.schema_version===5 || study.request.schema_version===6) ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.") : study.progress;
+    $("progress").textContent=study.status==="completed" ? ((study.request.solar_export || study.request.schema_version===4 || study.request.schema_version===5 || study.request.schema_version===6) ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.") : study.progress;
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
     else if (study.status==="completed") {
@@ -296,7 +301,7 @@ async function refreshStudy(id) {
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["scenario","utility_bill","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","feasible_intervals","interval_count"];
+const summaryColumns=["scenario","utility_bill","amount_due","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","feasible_intervals","interval_count"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -677,3 +682,29 @@ for(const button of document.querySelectorAll(".use-defaults")) button.addEventL
 $("strategies").addEventListener("change",()=>{strategiesEdited=true;});
 
 $('refresh-services').addEventListener('click',()=>refreshUtilities(++locationGeneration));
+
+function exportAvailable(){return !!capabilities?.solar_export && template?.schema_version>=2 && !gridOnly() && field('utility').value==='pge' && siteCustomerClass()==='residential';}
+function exportActive(){return exportAvailable() && field('export_enabled').checked;}
+function syncExportControls(){
+  if(!field('export_enabled'))return;
+  $('export-controls').hidden=!exportAvailable();
+  $('export-account').hidden=!exportActive();
+  if($('strategies'))$('strategies').closest('fieldset').hidden=exportActive();
+  if($('export-strategy-note'))$('export-strategy-note').hidden=!exportActive();
+  for(const input of $('export-account').querySelectorAll('input,select')){input.disabled=!exportActive();input.required=exportActive();}
+}
+function readExportControls(request){
+  if(!field('export_confirm').checked)throw new Error('Confirm the solar export account, credit balances and bounded study assumptions.');
+  const account={utility:'pge',generation_provider:'pge',customer_class:'residential',billing_plan:'E-ELEC',program:'NBT',income_tier:3,
+    application_year:Number(field('export_application_year').value),pto_date:field('export_pto').value,next_true_up_date:field('export_true_up').value,
+    reference:field('export_reference').value,cycle_start:request.start_date,cycle_end:request.end_date,storage:'renewable_only',
+    enrollment_confirmed:true,ordinary_account_confirmed:true,cycle_confirmed:true,no_local_tax_confirmed:true,no_other_adjustments_confirmed:true,bonus_eligible_confirmed:true};
+  return {account,export_limit_kw:Number(field('export_limit').value),opening_balance:Object.fromEntries(['generation','delivery','bonus'].map(k=>[k,Number(field('export_open_'+k).value)]))};
+}
+function restoreExportControls(config){
+  field('export_enabled').checked=!!config;field('export_confirm').checked=!!config;
+  if(config){const a=config.account;for(const [name,value] of Object.entries({export_application_year:a.application_year,export_pto:a.pto_date,export_true_up:a.next_true_up_date,export_reference:a.reference,export_limit:config.export_limit_kw,...Object.fromEntries(Object.entries(config.opening_balance).map(([k,v])=>['export_open_'+k,v]))}))field(name).value=value;}
+  syncExportControls();
+}
+field('export_enabled').addEventListener('change',syncExportControls);
+for(const name of ['utility','site_type','site_subtype','latitude','longitude','start_date','end_date','tariff_id','export_application_year','export_pto','export_true_up','export_limit','export_open_generation','export_open_delivery','export_open_bonus'])field(name).addEventListener('change',()=>{field('export_confirm').checked=false;syncExportControls();});

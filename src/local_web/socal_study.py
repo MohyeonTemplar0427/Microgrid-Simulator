@@ -38,7 +38,7 @@ def validate(r):
  if r['mode'] not in ('actual_service','hypothetical_bundled'):raise ValueError('Choose actual service or an explicitly hypothetical bundled comparison.')
  p=eligibility(r['tariff_id'],billing_account(r),r['start_date'],r['end_date'])
  if r['account'].get('actual_generation_provider') not in ('bundled','cca'):raise ValueError('Confirm generation enrollment separately from delivery.')
- if p['utility']=='gwp' and r['account']['actual_generation_provider']!='bundled':raise ValueError('GWP ordinary accounts require bundled GWP generation; SCE CCA/CEU pairing is not applicable.')
+ if p['utility'] in ('gwp','pwp','alw','bwp','ipu') and r['account']['actual_generation_provider']!='bundled':raise ValueError('Municipal ordinary accounts require bundled generation; SCE CCA/CEU pairing is not applicable.')
  if r['mode']=='actual_service' and r['account']['actual_generation_provider']!='bundled':raise ValueError('Actual CCA billing is unsupported; an explicitly hypothetical bundled comparison is required.')
  if customer_class(r['site_profile'])!=p['customer_class']:raise ValueError('Location-step customer type must match the account.')
  resolution=r['resolution']
@@ -48,6 +48,12 @@ def validate(r):
  if r['battery'] is not None:Battery(**r['battery'])
  if p['utility']=='gwp' and r['battery'] is not None and r['account'].get('storage_schedule_confirmed') is not True:
   raise ValueError('Confirm GWP accepts this storage installation on the selected ordinary import schedule without a standby rider.')
+ if p['utility']=='pwp' and r['battery'] is not None and r['account'].get('pwp_storage_confirmed') is not True:
+  raise ValueError('Confirm PWP accepts this storage installation on the ordinary flat schedule without a standby rider or TOU transition.')
+ if p['utility'] in ('bwp','ipu') and r['battery'] is not None and r['account'].get('municipal_storage_confirmed') is not True:
+  raise ValueError('Confirm the utility permits storage on this ordinary schedule without a standby rider or reassignment.')
+ if p['utility']=='alw' and r['battery'] is not None and r['account'].get('alw_storage_confirmed') is not True:
+  raise ValueError('Confirm ALW accepts this storage installation without a standby rider or demand-meter reassignment.')
  number(r['degradation_cost_per_kWh'],'Battery degradation cost',0,10)
  solar=r['solar']
  if not isinstance(solar,dict) or set(solar)!={'capacity_kw','tilt','azimuth'}:raise ValueError('Specify PV capacity, tilt and azimuth.')

@@ -7,7 +7,7 @@ from datetime import date, timedelta
 import numpy as np
 import pandas as pd
 
-VERSION = 'socal-2026-09-19.3'
+VERSION = 'socal-2026-09-20.1'
 SCE_SOURCE = 'https://www.sce.com/regulatory/regulatory-information/tariff-books/rates-pricing-choices'
 LADWP_SOURCE = 'https://www.ladwp.com/account/customer-service/electric-rates/residential-rates'
 # Separate quarterly adjustment versions; base rates effective 2019-07-01.
@@ -76,6 +76,10 @@ def periods(index,utility,schedule):
 
 
 def eligibility(key,account,start,end):
+ if key in industry.PLANS:return industry.eligibility(key,account,start,end)
+ if key in burbank.PLANS:return burbank.eligibility(key,account,start,end)
+ if key in azusa.PLANS:return azusa.eligibility(key,account,start,end)
+ if key in pasadena.PLANS:return pasadena.eligibility(key,account,start,end)
  if key in glendale.PLANS:return glendale.eligibility(key,account,start,end)
  if key not in PLANS: raise ValueError('Unsupported Southern California Billing Plan.')
  p=PLANS[key];s=p['schedule'];u=p['utility'];a=account
@@ -152,8 +156,12 @@ SCE_DEMAND={'TOU-GS-1-D':(22.61,21.38,4.92),'TOU-GS-2-D':(28.18,39.60,8.46),'TOU
 
 
 RESIDENTIAL_PLANS = build_plans()
-from . import glendale
+from . import glendale, pasadena, azusa, burbank, industry
 PLANS.update(glendale.PLANS)
+PLANS.update(pasadena.PLANS)
+PLANS.update(azusa.PLANS)
+PLANS.update(burbank.PLANS)
+PLANS.update(industry.PLANS)
 for key,plan in RESIDENTIAL_PLANS.items():
  PLANS[key]['effective_start']=plan.versions[0].effective_start.isoformat()
  PLANS[key]['coverage_windows']=[{'start':v.effective_start.isoformat(),'end':v.effective_end.isoformat(),'version_id':v.tariff_id} for v in plan.versions]
@@ -167,6 +175,10 @@ def charge_lines(key,index,imports,account,*,convex=False,constraints=None):
  SCE rounded demand uses integer epigraphs in the optimizer.
  """
  if key in glendale.PLANS:return glendale.charge_lines(key,index,imports,account,convex=convex,constraints=constraints)
+ if key in pasadena.PLANS:return pasadena.charge_lines(key,index,imports,account,convex=convex,constraints=constraints)
+ if key in burbank.PLANS:return burbank.charge_lines(key,index,imports,account,convex=convex,constraints=constraints)
+ if key in industry.PLANS:return industry.charge_lines(key,index,imports,account,convex=convex,constraints=constraints)
+ if key in azusa.PLANS:return azusa.charge_lines(key,index,imports,account,convex=convex,constraints=constraints)
  import cvxpy as cp
  p=PLANS[key];s=p['schedule'];u=p['utility'];a=account
  total=cp.sum(imports)*.25 if convex else float(np.sum(imports)*.25)
@@ -259,6 +271,10 @@ def bill(key,frame,account,start,end):
  if s=='TOU-GS-2-D' and maximum>=200:raise ValueError('GS-2 requires confirmed 20–200 kW classification.')
  if s=='TOU-GS-3-D' and maximum>500:raise ValueError('GS-3 requires confirmed 200–500 kW classification.')
  lines={k:float(v) for k,v in charge_lines(key,idx,imports,account).items()}
+ if key in pasadena.PLANS:return pasadena.bill_details(key,idx,imports,account,lines)
+ if key in burbank.PLANS:return burbank.bill_details(key,idx,imports,account,lines)
+ if key in industry.PLANS:return industry.bill_details(key,idx,imports,account,lines)
+ if key in azusa.PLANS:return azusa.bill_details(key,idx,imports,account,lines)
  if key in glendale.PLANS:
   if s.startswith('L-2') and (maximum>=20 or imports.sum()*.25>=5000*len(idx.normalize().unique())/30):
    raise ValueError('GWP small-business scope requires <20 kW and <5000 kWh per study month; transition accounts need utility review.')

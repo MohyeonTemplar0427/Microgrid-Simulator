@@ -1,17 +1,17 @@
 # LA County expansion — implementation and research coverage
 
-Reviewed 2026-09-19. This is an **incomplete expansion**, not a declaration that all LA utilities are supported. The executable registry and API coverage metadata distinguish working plans from research records. Existing SCE/LADWP support remains separate.
+Reviewed 2026-09-20. This is an **incomplete expansion**, not a declaration that all LA utilities are supported. The executable registry and API coverage metadata distinguish working plans from research records. Existing SCE/LADWP support remains separate.
 
 ## Coverage matrix
 
 | Provider | Executable schedules | Verified implemented dates | Solar | Remaining work |
 |---|---|---|---|---|
 | Glendale GWP | L-1-A, L-1-B, L-2-A, L-2-B, LD-2-A | 2025-01-01–2026-09-19 | Rejected | Other L-1 options, master meters, special riders/assistance, standby/export; see bounded scope below |
-| Pasadena PWP | None | None | Rejected | June 2026 restructuring, meter-dependent TOU, street-light tax exemption allocation, demand rounding/PF |
-| Burbank BWP | None | None | Rejected | Adopted full schedules/riders, kVA demand, ECAC history, taxes/transfer treatment |
-| Azusa ALW | None | None | Rejected | D/G/GL/TOU, independently dated PCA/PBC, minimum bills, declining tiers, rounded demand/ratchets and reactive charges |
-| Vernon VPU | None | None | Rejected | Official directory includes residential D/TOU-D; exact filed schedules/riders not retrieved |
-| Industry IPU | None | None | Rejected | Partial-city territory, full tariff book and account-specific requirements |
+| Pasadena PWP | R-1/R-2/S-1 legacy flat | 2026-06-01–2026-07-31 | Deferred | Confirmed flat enrollment; TOU/CPP, demand/PF and partial-service rules not enabled |
+| Burbank BWP | Residential Basic/EV TOU; commercial C | 2026-07-01–2026-09-20 | Deferred | Confirmed $0.034 ECAC, ordinary monthly service; kVA demand plans not enabled |
+| Azusa ALW | Residential D; non-demand G-1 | 2025-01-01–2025-06-30; 2026-01-01–2026-09-20 | Deferred | Full monthly cycle within one rider window; 2025H2 PCA missing; G-2/GL/TOU not enabled |
+| Vernon VPU | None | None | Deferred | Base D and adopted ECA procedure retrieved; actual dated ECA/renewable factors and tax rules remain incomplete |
+| Industry IPU | Individual domestic D | 2025-01-01–2026-09-20 | Deferred | Confirmed ordinary contract; commercial seasons/contract rules not verified; general posted rules are draft |
 | Cerritos CEU | None | None | Rejected | Generation agreement + separate SCE delivery bill; enrollment acceptance required |
 | CPA | None | None | Rejected | Generation products/vintages plus complete unbundled SCE delivery/CCA-CRS/GMS |
 | Lancaster Energy | None | None | Rejected | Same independent generation/delivery/rider reconciliation |
@@ -45,27 +45,43 @@ Tier allowances accrue 10 kWh per local service day for each of the first two ti
 
 The same charge expressions price final bills and dispatch. All five implemented plans have bill/objective reconciliation tests. Storage requires confirmation that the ordinary import schedule applies without a standby rider. PV/export/customer-generation schedules, assistance, reactive charges, master meters and special account adjustments are rejected/excluded, not replaced with other utilities’ rules. Operating costs exclude equipment capital costs. Electrical network feasibility is not evaluated by this study path.
 
-## Remaining source and modeling work
+## Newly implemented billing scope
+
+All four new providers use the shared SoCal bill/dispatch interface and the existing location-first browser wizard. Account qualification, dates and ordinary service restrictions are validated in the backend. Unsupported dates reject before a job is queued. These are bounded import implementations, not complete tariff books. Solar export settlement is deferred by user instruction until utility-region coverage is finished.
 
 ### Pasadena
 
-[June 2026 electric rate card](https://pwp.cityofpasadena.net/wp-content/uploads/2026/07/Summary-Rates-2026_07_updated.pdf), [rate archive](https://pwp.cityofpasadena.net/rate-card-archive/), and March 23, 2026 agenda attachments [resolution](https://ww2.cityofpasadena.net/2026%20Agendas/Mar_23_26/AR%2016%20RESOLUTON.pdf) / [ordinance](https://ww2.cityofpasadena.net/2026%20Agendas/Mar_23_26/AR%2017%20ORDINANCE.pdf) were inspected. Agenda drafts alone are not adoption proof. Current code identifies Ordinance 7466 adopted March 30; exact final provisions still need reconciliation.
+The [June 2026 electric rate card](https://pwp.cityofpasadena.net/wp-content/uploads/2026/07/Summary-Rates-2026_07_updated.pdf) and [adopted code](https://library.municode.com/ca/pasadena/codes/code_of_ordinances?nodeId=TIT13UTSE_CH13.04PORARE) establish the implemented June–July window. Current code identifies Ordinance 7466 adopted March 30. R-1, R-2 and S-1 require confirmed legacy flat enrollment; a new interval-meter account cannot silently use the flat schedule. R-2 requires the specified multifamily qualification; S-1 is restricted below 30 kW.
 
-The rate card includes a per-kWh PBC, UUT, SLATS with the first 1,000 kWh exempt, and declining-block underground surcharge. Public-benefit charges are excluded from local taxes. The street-light exemption’s allocation across energy/fixed/demand charges remains unresolved. Four-month demand history (including the current month), rounding, power-factor discounts/penalties, and meter-dependent TOU transition require new objective/state treatment. Do not simply add the printed tax percentages to all charges. The website and PDF flat-energy decimal differ; the PDF/base-plus-PCA arithmetic must be reconciled against adopted records before use.
+Fixed, distribution, energy/PCA, transmission, public-benefit, UUT, SLATS and underground charges are itemized. The printed energy price includes PCA, so it is split rather than added twice. PMC 4.54.020(D) exempts energy and periodic schedule adjustment charges for the first 1,000 kWh from SLATS; it does not exempt the whole first portion of the bill. PBC is excluded from municipal tax bases under 13.04.230(G). Underground charges use declining dollar blocks. Complete monthly/bimonthly cycles use an explicit 1/2-month factor; opening/closing proration is excluded. Only ordinary 7.67% UUT accounts are supported.
+
+**Outstanding modeling:** TOU/CPP meter transition, M-class demand history and rounding, power-factor treatment, special assistance and partial-service proration. These rules require implementation; they are not all missing source data.
 
 ### Burbank
 
-The [official 2026/2027 summary](https://www.burbankwaterandpower.com/documents/d/guest/Summary-of-Electric-Rates-by-Customer-Type_Commercial_all) lists residential and C/D/L/XL schedules. It separates ECAC from base energy. Its commercial “composite” rows mix demand and energy units and must not become kWh prices. Commercial demand is kVA, requiring apparent/reactive-power inputs and physical constraints, not a relabeled kW peak. The [bill explanation](https://www.burbankwaterandpower.com/residential-tou-bill) says ECAC may change monthly and identifies the in-lieu transfer; do not assume a year header proves an unchanged adjustment all year or add an embedded transfer again. Full adopted rules, tax bases, service-size classification, holidays and demand minimums remain to verify.
+The [adopted FY2026–27 fee schedule](https://www.burbankwaterandpower.com/documents/d/guest/burbank_adopted_fee_schedule) supplies Basic, EV TOU and non-demand commercial C. Current support is July 1–September 20, 2026. Published $0.034/kWh ECAC must be confirmed for the account/cycle; it may change monthly and is not extrapolated across earlier history. Residential service-size charges and C phase charges are explicit inputs.
+
+The [official bill example](https://www.burbankwaterandpower.com/residential-tou-bill) independently confirms that 7% in-lieu transfer and 7% UUT both apply to the pre-tax service subtotal, without tax-on-tax. EV/C energy periods and adopted holidays are implemented, including Sunday observance and no Friday substitution for Saturday holidays. Billing and dispatch use identical cost expressions. Public-benefit revenue obligations are not added again as a fabricated separate bill charge.
+
+**Outstanding modeling:** D/L/XL demand is kVA, not kW. These plans need apparent/reactive-power inputs, physical constraints, demand minimums and qualification history. Historical ECAC/rule coverage and special account programs also remain incomplete.
 
 ### Azusa
 
-The [January 2025 rule book](https://azusaca.gov/DocumentCenter/View/48871/Rules-and-Regulations-01-1-2025) provides D/G/GL/TOU and rider schedules. Web text is readable, but direct archival download returned HTTP 404; no fabricated local PDF is recorded. [PCA](https://azusaca.gov/1254/Schedule-PCA) and [PBC](https://www.azusaca.gov/1252/Schedule-PBC) change independently. The current PCA page explicitly covers July–December 2026; PBC covers July 2026–June 2027. Historical rider coverage must be sourced separately. Rule 8 uses monthly billing with specific proration exceptions. G has declining energy blocks; G-2 uses 15-minute demand with an 11-month ratchet and 0.1-kW rounding; GL includes interval transitions and reactive charges. These require explicit implementation, not approximating with Glendale’s cost function. The [tax page](https://www.azusaca.gov/696/Electric-and-Water-Users-Tax) distinguishes residential/commercial rates. Its water-service jurisdictions cannot establish electric service.
+Official [January 2025](https://www.azusaca.gov/DocumentCenter/View/48871/Rules-and-Regulations-01-1-2025), [January 2026](https://www.azusaca.gov/DocumentCenter/View/49491/Rules-and-Regulations-01-1-2026) and [June 2026](https://www.azusaca.gov/DocumentCenter/View/50568/Rules-and-Regulations-6-1-2026) rule books were retrieved successfully. D/G-1 base rates and independently dated PCA/PBC records are implemented. D minimum base energy is applied before riders. G-1 declining energy blocks are preserved. Full 25–35-day monthly cycles must stay within a single verified rider window. 2025H2 PCA remains missing, so those dates reject. July 2026 changes PBC from .00528 to .00536; PCA remains .05000. Residential/commercial tax is separately confirmed at 4%/8%, or documented zero.
 
-### Vernon and Industry
+**Outstanding modeling:** heating/assistance and meter opt-out, G-2 rounded 15-minute demand with prior 11-month ratchet, GL/TOU/reactive charges and partial-service proration. D/G-1 have flat monotone import costs; with no PV and equal initial/final SOC, idle storage is analytically optimal even with declining tiers.
 
-[Vernon’s official schedule directory](https://www.cityofvernonca.gov/government/public-utilities/electric-rate-schedule) lists July 1, 2026 residential and commercial schedules. The live page returned HTTP 403; cached directory names do not provide filed coefficients. A public hearing notice is not an adopted tariff.
+### Industry
 
-[Industry’s electric page](https://www.cityofindustry.org/191/Electric) links a territory map and large tariff/rule PDFs. Direct downloads returned HTTP 404 and the web reader could not retrieve the large rate book. Current displayed solar factors have explicit expiry dates and were not extended. Both utilities remain source-incomplete, distinct from PWP/BWP/ALW modeling work.
+The [signed rate book](https://www.cityofindustry.org/DocumentCenter/View/226/IPU-Rate-Information-PDF), Resolution 2023-01 effective February 1, 2023, verifies domestic D. The supported study window is January 2025–September 20, 2026. Daily customer charges distinguish individual single-family and multifamily meters; energy, public-purpose and state charges are itemized. No local UUT is applied for ordinary Industry service. Eligibility requires a confirmed ordinary domestic contract and complete 27–33-day cycle. Flat positive import prices make idle storage optimal with equal terminal SOC.
+
+The official site’s general rules are marked **Draft March 2002**. They are not treated as adopted authority. Commercial A/B/C tables were retrieved, but season definitions and binding contract/rule terms still need verification. IPU serves only part of Industry; overlapping SCE/IPU map evidence remains ambiguous until account confirmation.
+
+### Vernon — required source inputs still missing
+
+The [July 2026 domestic D sheet](https://www.cityofvernonca.gov/home/showpublisheddocument/5269/639173912746630000) was retrieved through the browser despite direct HTTP errors. It contains base charges and points to separate ECA/renewable adjustments; the 3% in-lieu amount is already embedded in base rates.
+
+The [August 15, 2023 council packet](https://cityofvernon.primegov.com/Public/CompiledDocument/4701) and [adopted minutes](https://cityofvernon.primegov.com/Public/CompiledDocument/5016) establish Resolution 2023-19. It sets prospective ECA factors but expressly permits monthly recalculation and true-up. Those coefficients alone do not prove actual monthly billing factors. The official June 2025 newsletter, archived with the [state water report](https://ear.waterboards.ca.gov/Home/ViewCCR?PwsID=CA1910167&Year=2024&isCert=true), verifies renewable adjustment .0200/kWh for July–December 2025. It does not supply the complete matching ECA history or 2026 renewable values. VPU remains disabled pending matching dated adjustments, application/tax rules and complete schedule reconciliation; missing riders are not assumed zero.
 
 ### SCE generation providers
 

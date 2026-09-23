@@ -1,0 +1,129 @@
+bldg_id,in.cec_climate_zone,in.city,in.puma,in.vacancy_status,in.hvac_cooling_type,in.geometry_building_type_recs,in.weather_file_city,weight,study_weight,stratum,out.electricity.total.energy_consumption..kwh
+6088,12,"CA, Pleasanton",G06000110,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181819,Multi-Family with 5+ Units | no cooling,1649.990125226
+6460,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,8465.9440048674
+10253,12,"CA, Livermore",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,6515.8491037566
+12266,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,15873.3153041724
+12578,12,"CA, Livermore",G06000110,Occupied,Central AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,761.7110181818181,Multi-Family with 2 - 4 Units | cooling installed,5397.7829709436
+15357,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,4491.314150815
+16852,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7740.006963982
+24927,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,6514.0906773354
+31112,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,21042.209769289802
+32138,12,"CA, Livermore",G06000110,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,2513.3774980352
+33456,12,Not in a census Place,G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,4303.748665887
+35999,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,9920.1626551998
+36026,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,19373.463095571
+38809,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,4773.8346624878
+42302,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,10097.177581600601
+52595,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,3152.5655021414
+60375,12,Not in a census Place,G06000110,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,5933.8099583394005
+63881,12,"CA, Livermore",G06000110,Occupied,Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,14476.8316546694
+68848,12,"CA, Livermore",G06000110,Occupied,Room AC,Mobile Home,Hayward Air Term,253.90367272727272,380.8555090909091,Mobile Home | cooling installed,6525.520449073199
+75449,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,19309.5736022674
+87904,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,4476.3675262348
+88437,12,"CA, Dublin",G06000110,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,1779.5275382544
+91688,12,"CA, Livermore",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,3546.7460915604
+95088,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,11923.889562157201
+95570,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,13211.057702475602
+99131,12,"CA, Dublin",G06000110,Occupied,Ducted Heat Pump,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,5846.76785049
+106390,12,"CA, Dublin",G06000110,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,3813.1476943722
+112947,12,"CA, Livermore",G06000110,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,5787.2744232394
+115590,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,18972.2488004672
+117642,12,"CA, Pleasanton",G06000110,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 2 - 4 Units | no cooling,2033.913227188
+120126,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,4168.3498314546005
+121535,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,3991.627976124
+122649,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7635.6736629908
+129473,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,10481.686825703
+132452,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,6299.2695828788
+134771,12,"CA, Pleasanton",G06000110,Occupied,None,Single-Family Attached,Hayward Air Term,253.90367272727272,592.441903030303,Single-Family Attached | no cooling,8048.3177298324
+136172,12,"CA, Pleasanton",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,7509.6531028048
+136237,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,8895.5861937806
+139954,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7949.552779175
+169461,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,7550.096910492401
+174554,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,5218.130404911
+174908,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7945.4497841922
+180773,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,5144.276495220601
+182540,12,"CA, Pleasanton",G06000110,Occupied,Ducted Heat Pump,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,5140.466571308
+184990,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,3533.5578934014
+189364,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7481.5182800656
+195975,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,5018.842077175
+196074,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,12325.6899994014
+205432,12,"CA, Livermore",G06000110,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,3543.5223097882
+209411,12,"CA, Pleasanton",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,3214.989640094
+215005,12,"CA, Pleasanton",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,11090.102367438201
+222982,12,"CA, Pleasanton",G06000110,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,18154.5805146092
+223420,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,4228.7224719158
+231448,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,12769.985741824601
+231823,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,13842.625858756599
+235772,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,12913.2974951524
+238183,12,"CA, Pleasanton",G06000110,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,3808.7516283192003
+240863,12,"CA, Pleasanton",G06000110,Occupied,None,Single-Family Attached,Hayward Air Term,253.90367272727272,592.441903030303,Single-Family Attached | no cooling,4669.7944325667995
+245059,12,"CA, Livermore",G06000110,Occupied,Non-Ducted Heat Pump,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,10015.9968951552
+245540,12,"CA, Pleasanton",G06000110,Occupied,Non-Ducted Heat Pump,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,6012.0599340828
+245716,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,12586.8163229496
+248946,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,5812.1854642064
+251213,12,"CA, Pleasanton",G06000110,Occupied,Non-Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,9819.0531359808
+253922,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,11721.377452649
+260812,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,10739.589367479
+264439,12,"CA, Livermore",G06000110,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181819,Multi-Family with 5+ Units | no cooling,3223.4887011298
+274140,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,18860.295651650802
+278271,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,5746.8306155518
+284345,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,11683.8643556634
+288315,12,"CA, Livermore",G06000110,Occupied,Central AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,761.7110181818181,Multi-Family with 2 - 4 Units | cooling installed,3130.8782429466
+296151,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,9011.3492665096
+299958,12,"CA, Dublin",G06000110,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,4999.792457611999
+316954,12,"CA, Pleasanton",G06000110,Occupied,Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,5426.7970068934
+321549,12,"CA, Livermore",G06000110,Occupied,Central AC,Mobile Home,Hayward Air Term,253.90367272727272,380.8555090909091,Mobile Home | cooling installed,4287.9228280962
+323573,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,12836.805945830201
+325455,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,8469.4608577098
+329903,12,"CA, Livermore",G06000110,Occupied,Ducted Heat Pump,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,6265.5664098058005
+330564,12,"CA, Livermore",G06000110,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,4052.0006165852
+330811,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,5578.3147501868
+333727,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,9068.498125198601
+340378,12,"CA, Dublin",G06000110,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7446.056680571401
+347158,12,"CA, Pleasanton",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,9196.2771118058
+348518,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,8691.608728921401
+354127,12,"CA, Pleasanton",G06000110,Occupied,Room AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,761.7110181818181,Multi-Family with 2 - 4 Units | cooling installed,2553.2351635824
+369689,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,7260.5426931348
+371528,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7694.8740191712
+374362,12,"CA, Livermore",G06000110,Occupied,Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,9786.8153182588
+385645,12,"CA, Pleasanton",G06000110,Occupied,Non-Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,10918.362720301002
+394509,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,11472.267042979001
+401234,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,4500.6924250614
+401672,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,20129.000314546603
+402264,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,8335.2343075582
+408353,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,14793.9345526258
+414858,12,"CA, Pleasanton",G06000110,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181819,Multi-Family with 5+ Units | no cooling,2669.877449522
+418004,12,"CA, Livermore",G06000110,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181819,Multi-Family with 5+ Units | no cooling,3367.9727387384005
+423729,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,18823.0756257354
+425496,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,6009.129223380801
+426020,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,6141.0112049708005
+428633,12,"CA, Pleasanton",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,7497.344117856401
+430591,12,"CA, Livermore",G06000110,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,4353.2776767508
+432502,12,"CA, Livermore",G06000110,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,4590.6652436128
+433765,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7042.4978169060005
+436024,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7172.3283010046
+444669,12,"CA, Livermore",G06000110,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181819,Multi-Family with 5+ Units | no cooling,3890.8115279752
+459117,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,9356.293916135
+463779,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,10064.6466928084
+468283,12,"CA, Livermore",G06000110,Occupied,Room AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,3210.3005029708
+471937,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,10537.077257970801
+473513,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,14185.5190108906
+483816,12,"CA, Livermore",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,6794.2666204466
+486121,12,"CA, Pleasanton",G06000110,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,10847.1464502424
+486992,12,"CA, Dublin",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7656.1886379048
+488062,12,"CA, Livermore",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,6488.8865652981995
+488564,12,"CA, Livermore",G06000110,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181819,Multi-Family with 5+ Units | no cooling,4419.218667545801
+495154,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,9911.0774520236
+495596,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,5806.9101849428
+508609,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,8875.3642899368
+509193,12,"CA, Livermore",G06000110,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,622.0639981818182,Single-Family Detached | no cooling,9817.587780629801
+516579,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,10233.455629243601
+516883,12,"CA, Livermore",G06000110,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,7014.3629941668005
+518298,12,"CA, Livermore",G06000110,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,3307.0139561368005
+520220,12,"CA, Pleasanton",G06000110,Occupied,Ducted Heat Pump,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,9067.618911988
+523363,12,"CA, Dublin",G06000110,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 5+ Units | cooling installed,2734.6461560362
+534516,12,"CA, Pleasanton",G06000110,Occupied,Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,11179.4890438492
+536122,12,"CA, Dublin",G06000110,Occupied,None,Single-Family Attached,Hayward Air Term,253.90367272727272,592.441903030303,Single-Family Attached | no cooling,5727.1948538484
+544705,12,"CA, Livermore",G06000110,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,624.9936559440561,Single-Family Detached | cooling installed,7580.283230723
+548687,12,"CA, Dublin",G06000110,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,634.7591818181818,Multi-Family with 2 - 4 Units | no cooling,2692.7369929976003
+549137,12,"CA, Pleasanton",G06000110,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,646.3002578512395,Single-Family Attached | cooling installed,22313.2590007472

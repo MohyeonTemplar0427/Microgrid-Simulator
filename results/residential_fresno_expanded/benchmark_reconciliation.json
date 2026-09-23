@@ -1,0 +1,54 @@
+{
+  "cec_2018_residential_gwh": 2655.410678667845,
+  "cec_2024_residential_gwh": 3133.381846188961,
+  "cec_documentation": "https://www.energy.ca.gov/data-reports/energy-almanac/california-electricity-data/california-energy-consumption-dashboards-0",
+  "acs_cross_check": {
+    "total_housing_units": 328577,
+    "occupied_housing_units": 304624,
+    "vacant_housing_units": 23953,
+    "period": "2014\u20132018 ACS five-year estimates",
+    "source": "https://labormarketinfo.edd.ca.gov/file/Census2018/fresndp2018.pdf",
+    "page": 6,
+    "source_sha256": "f1f6f59bc700a0f9064e7a19cf422cdec870cbda609ec79fd00ab4d19446ae06"
+  },
+  "model_represented_units_by_occupancy": {
+    "Occupied": 313824.9394909091,
+    "Vacant": 23359.13789090909
+  },
+  "annual_comparison": [
+    {
+      "basis": "gross_before_pv",
+      "mean_kwh_per_model_dwelling": 10118.025130387181,
+      "model_gwh": 3411.6369685156533,
+      "model_gwh_at_external_housing_count": 3324.5503432672285,
+      "cec_to_model_ratio": 0.7783391677289656
+    },
+    {
+      "basis": "signed_net_after_modeled_pv",
+      "mean_kwh_per_model_dwelling": 9320.993638141035,
+      "model_gwh": 3142.890640158382,
+      "model_gwh_at_external_housing_count": 3062.6641266394668,
+      "cec_to_model_ratio": 0.8448943926773185
+    }
+  ],
+  "sampling_comparison": [
+    {
+      "sample_models": 64,
+      "sample_mean_kwh": 9099.384363126483,
+      "full_county_mean_kwh": 10118.025130387181,
+      "sample_discrepancy_pct": -10.067584870899793,
+      "sampling_standard_error_kwh": 532.4413886253388
+    },
+    {
+      "sample_models": 256,
+      "sample_mean_kwh": 9749.141899824905,
+      "full_county_mean_kwh": 10118.025130387181,
+      "sample_discrepancy_pct": -3.645802672049303,
+      "sampling_standard_error_kwh": 263.621404624422
+    }
+  ],
+  "calibration_applied": false,
+  "calibration_status": "Not eligible: county-export self-generation coverage and matched-year housing denominator require confirmation",
+  "signed_net_is_grid_import": false,
+  "reason": "Signed net subtracts all modeled PV, including possible exports; it is not the sum of positive grid imports."
+}

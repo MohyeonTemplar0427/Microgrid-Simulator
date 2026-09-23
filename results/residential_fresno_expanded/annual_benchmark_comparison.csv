@@ -1,0 +1,3 @@
+basis,mean_kwh_per_model_dwelling,model_gwh,model_gwh_at_external_housing_count,cec_to_model_ratio
+gross_before_pv,10118.025130387181,3411.6369685156533,3324.5503432672285,0.7783391677289656
+signed_net_after_modeled_pv,9320.993638141035,3142.890640158382,3062.6641266394668,0.8448943926773185

@@ -109,7 +109,7 @@ def validate_request(data):
     if not isinstance(data, dict) or type(data.get("schema_version")) is not int or data["schema_version"] not in (1, 2, 3):
         raise ValueError("Unsupported study schema version; this application accepts versions 1, 2 and 3.")
     template = {1: DEFAULT_REQUEST, 2: DEFAULT_SITE_REQUEST, 3: DEFAULT_CANDIDATE_REQUEST}[data["schema_version"]]
-    if set(data) - {"site_profile", "carbon"} != set(template) or (data["schema_version"] == 1 and ({"site_profile", "carbon"} & set(data))):
+    if set(data) - {"site_profile", "carbon", "solar_export"} != set(template) or (data["schema_version"] == 1 and ({"site_profile", "carbon", "solar_export"} & set(data))):
         raise ValueError(f"Supply exactly the fields in the version {data['schema_version']} study request.")
     if not isinstance(data["name"], str) or not 1 <= len(data["name"].strip()) <= 120:
         raise ValueError("Study name must contain 1–120 characters.")
@@ -181,4 +181,7 @@ def validate_request(data):
     validate_profile_request(data)
     from .carbon import validate as validate_carbon
     validate_carbon(data)
+    if "solar_export" in data:
+        from .export_study import validate as validate_export
+        validate_export(data)
     return data

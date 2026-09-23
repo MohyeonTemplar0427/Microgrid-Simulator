@@ -1,0 +1,2481 @@
+PAGE 1
+Revised Cal. P.U.C. Sheet No. 61546-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60433-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 1
+NET BILLING TARIFF (NBT) SERVICE
+APPLICABILITY: This Net Billing Tariff (NBT) Schedule pursuant to Decision (D.) 22-12-056 is
+applicable to a customer (hereinafter “eligible customer-generator” or “customer”)
+who uses a Renewable Electrical Generation Facility (REGF), as defined below.
+The NBT schedule may also be referred to as the “Solar Billing Plan” in customer-
+facing communications.
+Residential customers, including Load Aggregation Generating/Aggregated
+Accounts, taking service on NBT must take service on the E-ELEC (ELECTRIC
+HOME) rate schedule and if applicable may choose to enroll in critical peak
+pricing (PG&E’s SmartRate). Non-Residential customers may take service on any
+open applicable time-of-use rate schedule and may choose to enroll in Peak Day
+Pricing, if applicable.
+To be eligible on this NBT Schedule, customer’s REGF (as defined below) must
+be (a) located on the customer’s owned, leased, or rented Premises (as defined
+in PG&E’s Electric Rule 1); (b) interconnected to, and operating in parallel with,
+PG&E’s transmission and distribution systems; and (c) intended primarily to offset
+the customer’s own electrical requirements. However, customer is allowed to
+oversize their REGF to meet expected increased future electrical usage (i.e.,
+increased electrical usage resulting from an electric vehicle or other electrical
+appliances to support electrification) by executing the NBT Oversized Generating
+Facility Attestation. Under such circumstances, the REGF’s estimated annual
+production should be no larger than:
+a. 150 percent of the Customer’s most recent 12 months of total
+usage; or
+b. 150 percent of the Customer’s estimated annual usage (for new
+construction and/or customers that do not yet have 12 months of
+usage only); or
+c. If the Customer attests to having recently increased their usage,
+150 percent of the Customer’s current usage projected over 12
+months.
+The expected increased electrical usage should correspond with the size of the
+REGF and should be expected to materialize within 12 months from issuance of (T)
+Permission to Operate (PTO).
+Pursuant to Decision (D.) 22-12-056, Electric Schedule NEM2 (Net Energy
+Metering Service (the NEM2 tariff)1 will close to customers requesting
+interconnection for new REGFs, or modified REGFs exceeding the allowable
+threshold (10% of original REGF or 1 kW), after April 14, 2023. Customers
+applying for interconnection after April 14, 2023, will take service on this NBT
+Schedule, unless they are applying for NEM2 Load Aggregation. Customers who
+do not submit complete applications for interconnection by April 14, 2023, will
+interconnect under the terms of this NBT Schedule.
+1 https://www.pge.com/tariffs/assets/pdf/tariffbook/ELEC_SCHEDS_NEM2.pdf
+(Continued)
+Advice 7975-E Issued by Submitted August 28, 2026
+Decision Shilpa Ramaiya Effective August 28, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 2
+Revised Cal. P.U.C. Sheet No. 60434-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57349-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 2
+NET BILLING TARIFF (NBT) SERVICE
+APPLICABILITY Pursuant to Decision (D.) 23-11-068, Electric Schedule NEM2 Load Aggregation
+(Cont’d.) (NEM2A) will close to customers requesting interconnection for new REGFs, or
+modified REGFs exceeding the allowable threshold (10% of original REGF or 1
+kW), after February 14, 2024. Customers applying for interconnection after
+February 14, 2024, will take service on this NBT Schedule under the Load
+Aggregation Special Condition (NBTA). Customers who do not submit complete
+applications for interconnection by February 14, 2024, will interconnect under the
+terms of this NBT Schedule and be served under the Load Aggregation as NBTA.
+Customers who submit complete applications on or after April 15, 2023, or if for
+Load Aggregation on or after February 15, 2024, will interconnect under this NBT
+Schedule but will be temporarily billed on the NEM2 tariff until the NBT or the
+NBTA, as applicable, is operationalized in PG&E’s billing system. Once the NBT,
+or NBTA, as applicable, is operationalized any customers who interconnected
+under the NBT Schedule (including Load Aggregation) but were being billed
+temporarily on NEM2 will transition to billing on NBT/NBTA at the end of their
+Relevant Period (the term “Relevant Period” is defined in Special Condition 2.g. of
+this tariff schedule).
+Cost Responsibility for REGFs larger than 1 MW
+All Customers with Renewable Electrical Generation Facilities larger than 1 MW
+are subject to Interconnection, Network and/or Distribution Upgrade costs in
+accordance with Electric Rule 21.
+Compliance with Electric Rule 21 and Other Tariffs
+All Customers must ensure that the generating facility is compliant with all
+applicable safety and performance standards as delineated in PG&E’s Electric
+Rule 21 and other applicable tariffs.
+Release of Information
+All Customers must: (T)
+Accept that PG&E may release to the California Energy Commission, the
+California Public Utilities Commission, and/or other state agencies, information
+regarding the Customer’s facility, including such Customer’s name and REGF (T)
+location, capacity, and operational characteristics. Pursuant to CPUC Decisions
+14-11-001, 21-06-026, and 23-11-068, PG&E is required to provide certain data, (T)
+including, but not limited to, confidential Customer information, to the CPUC, its (T)
+contractors, the California Department of Consumer Affairs Contractors State
+License Board, the California Department of Financial Protection & Innovation, and
+the California Department of Industrial Relations. As a condition of receiving
+service under this tariff, the eligible Customer authorizes PG&E to release any and (T)
+all information provided in the Interconnection Request to the entities identified
+above without further notification or consent. For REGFs that are subject to Pub. (T)
+Util. Code § 769.2, in addition to consenting to PG&E sharing the data or |
+information with those regulatory entities, Customer also consents to those entities |
+making that information publicly available. (T)
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 3
+Original Cal. P.U.C. Sheet No. 55440-E
+U 39 San Francisco, California
+ELECTRIC SCHEDULE NBT Sheet 3 (N)
+NET BILLING TARIFF (NBT) SERVICE (N)
+APPLICABILITY Interconnection Agreement Requirements for Change of Party (when a new (N)
+Customer acquires an existing REGF) and for a Customer transitioning to |
+(Cont’d.) Schedule NBT from NEM/NEM2. |
+|
+These requirements apply to the following types of customers: |
+|
+a) Change of Party Customer: A Customer who owns, rents or leases a |
+Premises that includes solar and/or wind turbine electrical generating |
+facilities, with a capacity of 30kW or less, that was previously approved by |
+PG&E for NEM/NEM2 or NBT interconnection prior to the Customer |
+moving in and/or taking electric service with PG&E (Change of Party |
+Customer); or |
+|
+b) NEM/NEM2 Transition Eligible Customers: A Customer that was |
+previously approved by PG&E for NEM/NEM2 interconnection, but is |
+transitioning to the NBT Rate Schedule because their legacy treatment |
+under NEM/NEM2 has expired (NEM/NEM2 Transition Eligible Customer); |
+or |
+|
+c) NEM/NEM2 Voluntary Transition Customers: A Customer that was |
+previously approved by PG&E for NEM/NEM2 interconnection, but who |
+has voluntarily enrolled on this NBT Schedule from the NEM/NEM2 tariffs |
+(NEM/NEM2 Voluntary Transition Customer). |
+|
+The Change of Party Customers, NEM/NEM2 Transition Eligible Customers, or |
+NEM/NEM2 Voluntary Transition Customers will take service on this tariff, or other |
+appropriate tariffs as determined by the Commission, if the requirements of this |
+section, regarding tariff compliance and release of information, are met. These |
+customers will not be required to upgrade their generating facility and must only |
+ensure that the generating facility is compliant with all applicable safety and |
+performance standards as delineated in PG&E’s Electric Rule 21 at the time the |
+customer generator was first interconnected unless otherwise specified. |
+|
+Any type of REGF other than either a solar and/or wind turbine electrical |
+generating facility with a capacity of 30kW or less, may at PG&E’s request be |
+required to complete and submit to PG&E a new NBT Interconnection Agreement (N)
+as indicated in Special Condition 3.
+(Continued)
+Advice 6848-E Issued by Submitted January 30, 2023
+Decision D.22-12-056 Meredith Allen Effective March 1, 2023
+Vice President, Regulatory Affairs Resolution
+PAGE 4
+Revised Cal. P.U.C. Sheet No. 59899-E
+Cancelling Revised Cal. P.U.C. Sheet No. 55792-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 4
+NET BILLING TARIFF (NBT) SERVICE
+APPLICABILITY Change of party Customers, NEM/NEM2 Transition Eligible Customers, or
+NEM/NEM2 Voluntary Transition Customers making any Material Modification (e.g.,
+(Cont’d.) upgrade the inverter, pursuant to Rule 21) to previously approved PG&E
+NEM/NEM2/NBT solar and/or wind turbine electrical generating facilities or other
+Renewable Electrical Generation Facility are not eligible for this provision and must,
+where required by Rule 21, complete the interconnection process in Special
+Condition 3 of this tariff.
+When the builder/developer of a home or commercial property sells a new property
+during the NBT application process, after the builder/developer completes the NBT
+Application and Interconnection Agreement and otherwise meets all of PG&E’s
+requirements for the NBT project, but prior to PG&E providing final written approval
+for Parallel Operation on Schedule NBT, PG&E may treat the new
+homeowner/Customer as a Change of-party Customer, as defined above.
+Demand Response Programs
+NBT customers may choose to enroll in Peak Day Pricing or Critical Peak Pricing
+rates. Demand Response program elements that are affected by a customer’s load, (N)
+such as program eligibility, would be assessed without consideration of any impacts |
+the Generator account’s generation may have on the customer’s load. (N)
+(D)
+|
+|
+(D)
+(Continued)
+Advice 7155-E-A Issued by Submitted August 25, 2025
+Decision Shilpa Ramaiya Effective July 1, 2024
+Vice President Resolution Res.E-5301
+Regulatory Proceedings and Rates
+PAGE 5
+Revised Cal. P.U.C. Sheet No. 61547-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60435-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 5
+NET BILLING TARIFF (NBT) SERVICE
+DEFINITIONS Key Definitions:
+Renewable Electrical Generating Facility (REGF)
+A REGF means a generating facility that generates electricity by using:
+a) biomass,
+b) solar thermal,
+c) photovoltaic,
+d) wind,
+e) geothermal,
+f) fuel cells and/or linear generators using fuels, described in Public
+Resource Code Section 25741(a)(1) that otherwise meet the
+requirements of this same subdivision,
+g) small hydroelectric generation (but a small hydroelectric generation
+facility is not an eligible REGF if it will cause an adverse impact on
+instream beneficial uses or cause a change in the volume or timing of
+streamflow),
+h) digester gas,
+i) municipal solid waste conversion,
+j) landfill gas,
+k) ocean wave,
+l) ocean thermal, or
+m) tidal current,
+and any additions or enhancements to the facility using that technology pursuant
+to paragraph (1) of subdivision (a) of Section 25741 of the Public Resources Code.
+These renewable sources are defined in the latest version of the California Energy
+Commission’s (CEC’s) Renewables Portfolio Standard (RPS) Eligibility Guidebook
+and the Overall Program Guidebook2.
+Low-Income Customers
+For the purposes of the NBT, a Low-Income customer is defined as residential
+customers who are one or more of the following:
+a) Enrolled in California Alternate Rates for Energy (CARE) or the Family
+Electric Rates Assistance (FERA) programs; or
+b) Resident-owners of single-family homes living in disadvantaged
+communities3 (as defined in D.18-06-027); or (T)
+c) Residential customers who live in California Indian Country (as defined in
+D.20-12-003).
+2 The RPS Guidebooks can be found at: https://www.energy.ca.gov/programs-and-topics/programs/renewables-
+portfolio-standard
+3 Pursuant to Ordering Paragraph 4 of Resolution E-5301, to establish that a customer is a resident-owner of a (T)
+single-family home in a disadvantaged community eligible for low-income treatment (higher ACC Plus), PG&E |
+will verify that the customer has a single electric meter that is on an applicable residential electric rate (i.e., has |
+residential account). (T)
+(Continued)
+Advice 7975-E Issued by Submitted August 28, 2026
+Decision Shilpa Ramaiya Effective August 28, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 6
+Original Cal. P.U.C. Sheet No. 55443-E
+U 39 San Francisco, California
+ELECTRIC SCHEDULE NBT Sheet 6 (N)
+NET BILLING TARIFF (NBT) SERVICE (N)
+DEFINITIONS Community Choice Aggregation and Direct Access (N)
+|
+(Cont’d.) Customers who participate in Direct Access (DA), or Community Choice |
+Aggregation (CCA) Service are eligible for service under this Schedule except as |
+otherwise provided herein and specified in Special Condition 2. Service under this |
+NBT Schedule is not applicable to a Direct Access (DA) customer where the |
+customer’s Energy Service Provider (ESP) does not offer a Net Billing tariff. In |
+addition, if the tariffs for the customer’s ESP do not permit any of the sub- |
+schedules under NBT, these options are not available to the CCA or DA |
+customers. In addition, if an eligible customer-generator participates in direct |
+transactions with an ESP that does not provide distribution service for the direct |
+transactions, the ESP, and not PG&E, is obligated to provide a Net Billing tariff to |
+the customer. |
+|
+Export Compensation Rate |
+|
+The Export Compensation rate is a cents per kilowatt-hour ($/kWh) value for |
+exports to the grid. This value is calculated using the CPUC Avoided Cost |
+Calculator (ACC). The Export Compensation Rate varies by month and hour, and |
+it is differentiated by weekdays and weekends/holidays. In PG&E customer-facing |
+materials, the “Export Compensation Rate” may be referred to as the “Energy |
+Export Credit”. (N)
+(Continued)
+Advice 6848-E Issued by Submitted January 30, 2023
+Decision D.22-12-056 Meredith Allen Effective March 1, 2023
+Vice President, Regulatory Affairs Resolution
+PAGE 7
+Revised Cal. P.U.C. Sheet No. 57350-E
+Cancelling Original Cal. P.U.C. Sheet No. 55444-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 7
+NET BILLING TARIFF (NBT) SERVICE
+OVERVIEW of Overview of Special Conditions (SC)
+SPECIAL
+CONDITIONS 1 METERING
+2 BILLING
+3 INTERCONNECTION
+4 MULTIPLE TARIFF FACILITIES (NBT-MT)
+5 NET SURPLUS ELECTRICITY COMPENSATION (NSC)
+(T)
+6 LOAD AGGREGATION
+|
+7 NBT LEGACY PROVISIONS
+|
+8 NBT PAIRED STORAGE (NBT-PS) |
+9 NATURAL OR MAN-MADE DISASTERS |
+(T)
+10 PREVAILING WAGE
+Metering
+NBT Customers must have metering and data communication capabilities necessary
+to render accurate bills under this NBT Schedule. The metering requirements are
+detailed in Special Condition 1.
+Billing
+The imports and exports (in kWhs) are independently recorded by the utility revenue
+meter, Import Channel and Export Channel, and are not netted. NBT Customers
+must pay all incurred charges monthly and will be trued-up on an annual basis. The
+billing details are described in Special Condition 2.
+Interconnection Requirements
+This schedule is available to customers that provide PG&E with:
+(a) A completed, signed Net Billing Application and Interconnection Agreement
+as described in Special Condition 3 including all supporting documents and
+required payments; AND
+(b) Evidence of the customer’s final inspection clearance from the
+governmental authority having jurisdiction over the REGF.
+Customers seeking generator interconnections in portions of San Francisco and
+Oakland where PG&E has a network grid must contact PG&E about generation
+export limitations. The Interconnection details are described in Special Condition 3.
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 8
+Revised Cal. P.U.C. Sheet No. 57351-E
+Cancelling Original Cal. P.U.C. Sheet No. 55445-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 8
+NET BILLING TARIFF (NBT) SERVICE
+OVERVIEW of Multiple Tariff Facilities
+SPECIAL
+CONDITIONS Schedule NBT applies to specified NBT-eligible generators in an REGF comprised
+of multiple NBT- and non-NBT-eligible generators, served through the same utility
+(Cont’d.) revenue meter. Such facilities will be referred to as “Multiple Tariff Facilities”, and
+any group of generators within such a facility that is subject to the same tariff
+provisions for billing and metering purposes will be referred to as a “Constituent
+Generator Group”. To be eligible for this rate schedule in a Multiple Tariff Facility,
+the customer-generator must meet all the requirements of Special Condition 4 and
+must also meet requirements of any other applicable tariffs. For more information,
+please refer to Special Condition 4.
+Net Surplus Compensation (NSC)
+An NBT customer may be entitled to NSC when the customer-generator exports
+more electricity in kilowatt-hours to the grid than the customer consumes within the
+same Relevant Period. The NSC details are described in Special Condition 5.
+Load Aggregation (N)
+|
+Schedule NBT applies to customer-generators who apply for this tariff on or after |
+February 15, 2024 with a Load Aggregation Arrangement as described in Special |
+Condition 6. Such customers are referred to as NBTA Customers. Certain |
+incremental billing and metering costs set forth in this schedule are applicable to |
+Electric Service Providers (ESPs) serving eligible customer-generators. (N)
+Legacy Provisions
+Pursuant to Decision (D.) 22-12-056 the legacy period, meaning the length of time
+a customer can benefit from the elements of this tariff structure, is nine years. For
+more information, please refer to Special Condition 7. (T)
+REGF Paired with Storage
+Customers who take service on this NBT Schedule for an REGF paired with
+storage will be subject to the requirements described in Special Condition 8. (T)
+Natural or Human-Made Disasters
+This Section of the tariff describes the provisions for natural or human-made
+disasters. For more information, please refer to Special Condition 9. (T)
+Prevailing Wage (N)
+|
+This Section of the tariff describes the requirements of PU Code 769.2. For more |
+information, please refer to Special Condition 10. (N)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 9
+Revised Cal. P.U.C. Sheet No. 60436-E
+Cancelling Revised Cal. P.U.C. Sheet No. 59455-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 9
+NET BILLING TARIFF (NBT) SERVICE
+TERRITORY: The entire territory served.
+RATES: All rates charged under this schedule will be in accordance with the eligible
+customer-generator’s PG&E otherwise-applicable rate schedule (OAS).
+A. Rate Eligibility Requirements
+Residential customers taking service on the NBT tariff must take service on the E-
+ELEC rate as their OAS3. Non-Residential customers must take an applicable TOU (T)
+rate as their OAS.
+B. Import Charges
+Under this schedule, customers will be charged at the eligible customer-generator’s
+PG&E otherwise-applicable rate schedule (OAS) for electricity consumed by the
+customer, as measured by the import channel on the customer meter. An eligible
+customer-generator served under this schedule is responsible for all charges
+applicable to its OAS including monthly minimum charges (if applicable), base
+services (fixed) charges, customer charges, meter charges, facilities charges,
+demand charges and surcharges.
+The “Average Rate Limiter” for a general service OAS and all other demand
+charges will be based on the demand in kilowatts as measured only on the energy
+being consumed by the customer from PG&E (Import Channel, all usage). The
+power factor, when it applies on the OAS, will be based on the energy consumed by
+the customer-generator from PG&E and the average power factor over the past 12
+billing months of operation prior to starting on NBT. Customer-generators without
+12 billing months of power factor history, will have their power factor estimated
+based on the nature of the connected facilities and their hours of operation. The
+power factor will be subsequently applied to the customer-generator’s bill until the
+customer-generator demonstrates to PG&E’s satisfaction that adequate correction
+has been provided. PG&E will continue to monitor and review the power factor and
+if warranted, change the power factor correction on the customer-generator’s bills.
+For PG&E NBT customers for whom PG&E provides bundled service (generation
+and delivery), the energy charges will be in accordance with the customer-
+generator’s OAS. For ESP or CCA customer-generators being billed on
+Consolidated PG&E Billing service, the ESP or CCA is responsible for providing the
+billing information regarding the applicable generation-related bill charges or credits
+to PG&E on a timely basis. Charges for energy (kWh) supplied by PG&E, the ESP
+or Community Choice Aggregator (CCA), as applicable, will be calculated in
+accordance with Billing (Special Condition 2).
+C. Export Credits
+Under this schedule, customers will accrue credits for electricity exported to the
+grid. The exports will be measured by the export channel on the customer meter.
+To determine the “Export Credit”, exported electricity will be multiplied by the hourly
+avoided costs values calculated by the Avoided Cost Calculator (Export
+Compensation Rates).
+3 Master Metered Customers on Schedules such as ET, ES, and ESR, which have no corresponding TOU Rate, (T)
+are not required to switch to TOU rates, unless and until such a rate becomes available. Master Metered
+Customers on EM-TOU rate can continue this rate and transition to NBT when billing is implemented as specified
+in Special Condition 13 of NEM2 tariff.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 10
+Revised Cal. P.U.C. Sheet No. 59900-E
+Cancelling Revised Cal. P.U.C. Sheet No. 56815-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 10
+NET BILLING TARIFF (NBT) SERVICE
+RATES: For both residential and nonresidential customers who submit a complete
+interconnection application on or after April 15, 2023 and no later than December 31,
+(Cont’d.) 2027, Export Compensation Rates will be based on a “locked-in” nine-year schedule
+of values for each hour from the most recent CPUC Avoided Cost Calculator,
+adopted as of January 1 of the calendar year of the customer’s completed (T)
+interconnection application date. After the nine-year lock-in period, measured from (T)
+the date of issuance of PTO, the Export Compensation Rates will be based on
+averaged hourly avoided cost values from the most recent Avoided Cost Calculator,
+adopted as of January 1 of the applicable calendar year. Customers enrolling on
+NBT after its initial five years of availability will not receive a locked-in nine-year
+schedule for their Export Compensation Rate and will instead be compensated at the
+average hourly avoided cost values from the most recent Avoided Cost Calculator,
+adopted as of January 1 of the applicable calendar year in which the compensation
+is being provided. The Export Compensation Rate values are posted at
+https://www.pge.com/energyexportcredit.
+Pursuant to Decision 22-12-056, section 8.5.1, NBT customers: (1) may choose to
+exit their lock-in periods early but may not re-enter them after exiting; and (2) who
+exit their lock-in period early will subsequently receive export compensation rates
+calculated using the most recently adopted Avoided Cost Calculator.
+For Customers enrolled in the California Alternate Rates for Energy (CARE) and
+Family Electric Rates Assistance (FERA), the CARE and FERA discount shall not be
+applied to the retail export compensation rate.
+Methodology for calculating the Export Compensation Rate based on ACC:
+The Export Compensation Rates for a given installation vintage of customers in a
+given calendar year are based on the applicable vintage of Avoided Cost Calculator
+(ACC) forecast of values for that year. Export rates are split into generation (N)
+components (based on the Energy, Generation Capacity, Cap and Trade, Ancillary |
+Services, and Losses components of the ACC) and delivery components (based on |
+the Distribution Capacity, Transmission Capacity, GHG Adder, GHG Rebalancing, |
+and Methane Leakage components of the ACC). Bundled customers are eligible to |
+receive both generation components and delivery components from PG&E, while |
+unbundled customers will only receive delivery components from PG&E. Because (N)
+the ACC outputs different values by climate zone and for every hour of the year, the
+generation components and delivery components are each aggregated into a single (T)
+set of values for each month, day-type, and hour for all PG&E customers.
+1. For each Climate Zone, create a set of 8760 hourly avoided costs using
+the ACC value for the Delivery components. Generation components do not
+vary by climate zone, so only a single set for generation Export
+Compensation Rate is necessary to collect.
+2. Create a simple average value for each hour of the climate zone specific
+delivery components.
+3. Because the Avoided Cost Calculator output is in Pacific Standard Time,
+adjust time and hour labels to account for daylight savings time, and identify
+weekdays and weekend/holidays.
+(L)
+(L)
+(Continued)
+Advice 7155-E-A Issued by Submitted August 25, 2025
+Decision Shilpa Ramaiya Effective July 1, 2024
+Vice President Resolution Res.E-5301
+Regulatory Proceedings and Rates
+PAGE 11
+Revised Cal. P.U.C. Sheet No. 57255-E
+Cancelling Revised Cal. P.U.C. Sheet No. 55794-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 11
+NET BILLING TARIFF (NBT) SERVICE
+RATES: Methodology for calculating the Export Compensation Rate based on ACC (Cont’d):
+(Cont’d.) 4. For each monthly Delivery and Generation components, calculate the (L)
+average of all prices by hour, per weekday and weekend. This calculation |
+|
+will render the Export Compensation Rate components (Delivery and
+|
+Generation) for each month’s weekday and weekend values.
+|
+|
+5. Apply floor of $0/kWh to Delivery and Generation components of the |
+Export Compensation Rate. (L)
+6. For each hour and weekday/weekend, the full Export Compensation
+Rate will then be the sum of the corresponding Generation and the
+Delivery components for that hour/ weekday/ weekend.
+D. Avoided Cost Calculator Plus (ACC Plus)
+An Avoided Cost Calculator Plus (ACC Plus) adder, in the form of a credit in cents
+per kilowatt-hour exported, is available to residential NBT customers who
+interconnect during the first five years of the tariff. The ACC Plus applicable to a
+given customer will be based on the customer’s calendar year of completed (T)
+interconnection application date. The ACC Plus available to new NBT customers (T)
+will decrease over five years as shown in the table below. The applicable ACC
+Plus adder will remain constant for a customer for nine years from the customer’s
+Permission to Operate (PTO) date. The ACC Plus may also be referred to as the
+“Energy Export Bonus Credit” in customer-facing materials.
+Adopted Avoided Cost Calculator Plus Adder (ACC Plus)
+Customer 2023 2024 2025 2026 2027
+Segment $/kWh $/kWh $/kWh $/kWh $/kWh
+0.0220 0.0176
+Residential 0.01320 0.00880 0.00440
+0 0
+Residential
+Low
+0.0900 0.0720
+0.05400 0.03600 0.01800
+Income
+0 0
+Non- Not Eligible
+Residential
+The adder will decrease by 20 percent annually, for newly enrolled tariff
+customers, as measured by the first-year adder rate until the adder reaches zero.
+The adder will be a discrete line on the customer’s utility bill, will apply to all
+charges, and will apply to future bills until the credit is used.
+The ACC Plus is not available to:
+(i). Customers transitioning from the NEM/NEM2 tariff to NBT tariff at the end
+of their legacy period;
+(L)
+(L)
+(Continued)
+Advice 7155-E Issued by Submitted January 29, 2024
+Decision Shilpa Ramaiya Effective July 1, 2024
+Vice President Resolution E-5301
+Regulatory Proceedings and Rates
+PAGE 12
+Revised Cal. P.U.C. Sheet No. 61548-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57256-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 12
+NET BILLING TARIFF (NBT) SERVICE
+RATES: D. Avoided Cost Calculator Plus (ACC Plus) (Cont’d)
+(Cont’d.) The ACC Plus is not available to (Cont’d):
+(ii). Customers who have purchased a building with an existing system
+(Change of Party Customers);
+(iii). Non-Residential Customers; and
+(iv). Customers who are required to add solar (e.g., by California’s building
+code).
+E. Standby Service
+Customer-generators eligible for service under this schedule are exempt from the
+requirements of Schedule SB—Standby Service, except Multiple Tariff Facilities
+interconnected under the terms of Special Condition 4, which may be subject to
+the requirements of Schedule SB.
+F. Rates for Multiple Tariff Facilities
+The charges for Multiple Tariff Facilities taking service on this rate schedule under
+the provisions of Special Condition 4 will be calculated using the applicable OAS
+identified by the customer-generator in its application for interconnection and its
+interconnection agreement with PG&E or as subsequently changed by the
+customer-generator in accordance with PG&E’s electric Rule 12. Per Special
+Condition 4, only the Renewable Portion of the exports to the grid will be credited
+and the value will be calculated the same as specified in Export Credits (section C,
+above).
+G. Changes to the Relevant Period
+Existing customer-generators billed under sub-schedules NBT-S, NBT-EXP or
+NBT-EXP-OTR who only add storage and are eligible to use the estimation
+methodology described in Special Condition 8 (“NBT Paired Storage”) will be billed (T)
+using the estimation methodology as of their scheduled True-Up, provided that a
+True-Up is not required for any other reason. All other customer-generators with
+Multiple Tariff Facilities or NBT Paired Storage interconnecting additional
+generators/storage, will receive a bill true-up prior to taking service under Special
+Condition 4. This ensures that all NBT accounts have the same Relevant Period,
+as defined in Special Condition 2, going forward.
+H. Potential for Future Rate Changes
+PG&E rates and rate design, including the rates and rate design reflected in this
+Tariff, are subject to change from time to time. Customers should take this into
+consideration when making any long-term decisions based on rate structures that
+are currently in place.
+(Continued)
+Advice 7975-E Issued by Submitted August 28, 2026
+Decision Shilpa Ramaiya Effective August 28, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 13
+Revised Cal. P.U.C. Sheet No. 57355-E
+Cancelling Original Cal. P.U.C. Sheet No. 55450-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 13
+NET BILLING TARIFF (NBT) SERVICE
+SUB- Eligible customer-generators will be placed on the appropriate sub-schedule as
+SCHEDULES: described below:
+1. NBT-S – For Small Customer (as defined in PG&E’s Electric Rule 1)
+customer-generators taking service with solar and/or wind generating
+facilities of 30 kilowatts or less.
+2. NBT-EXP – For Small Customer (as defined in Rule 1) customer-
+generators with (i) solar and/or wind generating facilities of 1,000 kilowatts
+or less, other than facilities of 30 kilowatts or less, or (ii) any other REGF
+of 1,000 kilowatts or less.
+3. NBT-EXP-OTR – For all other commercial, industrial customer-generators,
+and agricultural customers.
+4. NBT-MT – For customer-generators taking service as a Multiple Tariff
+Facility under Special Condition 4 of this tariff.
+5. NBT-PS – For customer-generators adding storage to their renewable
+generators pursuant to Special Condition 8. (T)
+6. NBTA – For a customer-generator with a Load Aggregation Arrangement (N)
+pursuant to Special Condition 6 of this tariff. |
+(N)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 14
+Revised Cal. P.U.C. Sheet No. 60437-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57356-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 14
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 1. METERING: Customers receiving service on this tariff must have metering and
+CONDITIONS: data communication capabilities necessary to render accurate bills under NBT.
+Multiple Tariff Facilities will be metered under one of the options described in
+Special Condition 4. All other net billing shall be accomplished using a single
+meter capable of:
+a. separately registering the flow of electricity in two directions (imports
+and exports);
+b. metering intervals required for billing under NBT (Non-Residential is
+15 Min and Residential is 1hr4.); and (T)
+c. meeting PG&E’s requirements for transferring usage interval data to
+PG&E for billing.
+If the eligible customer-generator’s existing electrical meter does not meet the
+requirements described in paragraph 1 above of Special Condition 1, the
+eligible customer-generator shall be responsible for all expenses involved in
+purchasing and installing an acceptable meter with data communication
+capabilities required to enable accurate billing under NBT.
+If none of the metering and data communication options available to PG&E
+that are necessary to render accurate billing under NBT requirements are
+acceptable to the customer–generator, PG&E shall have the right to refuse
+interconnection for new customers.
+Customer-generators with Load Aggregation Arrangements will need metering
+on the Generating Account capable of separately measuring imports and
+exports in a manner commensurate with the smallest time interval used by
+PG&E to establish billing determinants for any of the Aggregated Account
+meters. If a newly installed REGF can use the existing metering, the metering
+charges will be based on applicable meter charges in the Generating Account
+TOU OAS; if a new meter is requested by the customer for a new service as
+allowed in Special Condition 3, it must be installed at the customer’s expense
+as a Special Facility using incremental costs, pursuant to Section I, Electric
+Rule 2.
+For each Aggregated Account other than the Generating Account, an
+appropriate load account meter is required, consistent with the TOU rate
+schedule and NBT billing requirements for that account. The customer is
+responsible for all metering charges associated with each Aggregated
+Account’s OAS.
+4 PG&E will provide 15-Min data to Residential customers at their request.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 15
+Revised Cal. P.U.C. Sheet No. 60438-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57357-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 15
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL For NEM/NEM2 Transition Eligible Customers, or SmartMeter Opt-Out (T)
+CONDITIONS: customers, if none of the metering options available to PG&E that are
+(Cont’d.) necessary to render accurate billing under NBT requirements are acceptable
+to the customer–generator, PG&E shall reserve the right to transition such
+customers to a Rule 21 Uncompensated Export arrangement instead of NBT.
+Under Rule 21 Uncompensated Export arrangement, the customer may incur
+departing load and standby charges, if applicable. Customers who will be
+transitioned to Rule 21 Uncompensated Export may require updated meter
+programming to allow for accurate billing under Rule 21. Per Electric Rule No.
+16 Section A.12, customers are required to provide PG&E access to metering
+equipment for such purposes. If a customer refuses to grant access to PG&E,
+such customer’s permission to operate (PTO) under NEM/NEM2/NBT will
+terminate, and such customer will need to disconnect their generating facility
+from the grid. PG&E reserves the right to disconnect the customer’s service if
+customer does not comply with PG&E rules within a reasonable period of
+time.
+Additional metering requirements for NBT Paired Storage are described in
+Special Condition 8.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 16
+Revised Cal. P.U.C. Sheet No. 57358-E
+Cancelling Original Cal. P.U.C. Sheet No. 55452-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 16
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 2. BILLING: (L)
+CONDITIONS: |
+Net Billing Tariff customers will be billed based on no netting of imports |
+(Cont’d.)
+(consumption) and exports (generation to the grid). Charges owed to PG&E net of |
+any eligible credits will be paid each month and all charges and credits will be |
+trued-up on an annual basis. Export credits will be applicable toward all import |
+volumetric (kwh) charges, except the non-bypassable charges (NBCs) described |
+in sub-section “f” below, and if applicable, subject to the Net Surplus Electricity and |
+Net Surplus Compensation provisions described in Special Condition 5. |
+|
+Facilities qualifying under Multiple Tariffs Facilities, see Special Condition 4. |
+|
+For customer-generators, monthly charges will be determined as follows: |
+|
+a. Billing on Imported Electricity: |
+|
+Imported electricity, as measured by the import channel on the eligible |
+customer-generator’s meter, shall be billed in accordance with the |
+eligible customer-generator’s OAS as described in the “RATES” section, |
+of this schedule, sub-section “B”. The customer will be charged for NBCs |
+as described in section “f” of this Special Condition 2. |
+|
+If the eligible customer-generator is being served under DA or CCA |
+Service, ESP or CCA charges will be specified by their ESP or CCA in |
+accordance with the eligible customer-generator’s OAS and PG&E’s |
+Direct Access or Community Choice Aggregation tariffs. Applicable |
+PG&E charges or credits will be valued as described in this Special |
+Condition 2. |
+|
+For a DA or CCA Service customer-generator, credits associated with |
+the generation components of a customer’s export credits, if any, do not |
+reduce the charges owed to PG&E for energy supplied to the eligible |
+customer-generator, including the NBC calculations addressed in 2.f. |
+|
+b. Value of Export Credits: |
+|
+Exported electricity, as measured by the export channel on the eligible |
+customer-generator’s meter, will be valued at the applicable CPUC |
+avoided cost as described in the “RATES” section of this schedule, sub- |
+section “C”. |
+|
+For Customers enrolled in California Alternate Rates for Energy (CARE) |
+and/or Family Electric Rates Assistance (FERA), the CARE and FERA |
+discount shall not be applied to the export compensation rate. |
+|
+c. ACC Plus: |
+|
+For the first five years of this tariff, residential NBT customers will receive |
+additional export compensation, as an adder called ACC Plus, |
+described in the “RATES” section of this schedule, sub-section “D”. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 17
+Revised Cal. P.U.C. Sheet No. 57359-E
+Cancelling Original Cal. P.U.C. Sheet No. 55453-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 17
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 2. BILLING: (Cont’d.) (L)
+CONDITIONS: |
+(Cont’d.) c. ACC Plus: (Cont’d) |
+|
+Low-income residential customers will receive a slightly higher ACC Plus |
+|
+adder for their exports.
+|
+|
+The ACC Plus adder will decrease by 20 percent annually, for newly
+|
+enrolled tariff customers, as measured by the first-year adder rate until the
+|
+adder reaches zero. The adder will be a discrete line on the customer’s
+|
+utility bill. Export credits associated with the ACC Plus adder will apply to |
+all charges (including NBC charges) and will apply to future bills until the |
+credit is used. |
+|
+d. Limitations on what Export Credits may offset: |
+|
+Export credits at the Export Compensation Rate described in the “RATES” |
+section of this schedule, may be used to offset volumetric (kwh) import |
+charges but may not offset monthly minimum charges, customer charges, |
+meter charges, facilities charges, base service charges, demand charges |
+|
+and surcharges, non-bypassable and any fixed charges associated with
+|
+the OAS. However, export credits associated with the ACC plus adder
+|
+may be used to offset any charges incurred by the customer.
+|
+|
+Export credits will be accrued separately for avoided costs attributable to
+|
+generation and delivery. Export credits for generation avoided costs will |
+only offset volumetric (kwh) generation charges accrued per the |
+customers’ OAS, and export credits for delivery avoided costs will only |
+offset volumetric (kwh) delivery charges associated with the customer’s |
+OAS. (L)
+e. Application of export credits within the Relevant Period: (L)
+|
+Export credits at the Export Compensation Rate for generation and |
+delivery will be applied to the corresponding generation and delivery |
+|
+volumetric (kwh) import charges accrued in a given month. The amount
+|
+owed by the customer in that month for generation and delivery charges
+|
+will be reduced by the corresponding export credits accrued in that month.
+|
+Unused generation and delivery export credits accrued in a given month |
+can be applied to offset generation and delivery volumetric (kWh) charges (L)
+within a customers’ Relevant Period. Any excess generation credits or (L)/(T)
+excess delivery credits remaining at the end of a customer’s Relevant |
+Period, after debit for excess energy (kwh) if NSC is applicable, will be |
+carried forward to the customer’s next Relevant Period. The excess |
+|
+generation and delivery credits will only carry forward while the customer
+|
+is on the NBT. If the customer is not served under the NBT, then the
+|
+customer’s excess credits will be forfeited on the last true-up on NBT.
+(L)/(T)
+f. Non-Bypassable Charges
+(L)
+|
+Customers on this tariff must pay non-bypassable charges (NBCs) for
+|
+each kilowatt-hour of electricity they consume from the grid (based on the |
+metered import channel). The following NBCs may not be reduced by any |
+credits for exports to the grid, except for the ACC Plus credit: Public Purpose |
+Program, Nuclear Decommissioning Charge, Competition Transition |
+Charge, and Wildfire Fund Charge. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 18
+Revised Cal. P.U.C. Sheet No. 57360-E
+Cancelling Original Cal. P.U.C. Sheet No. 55454-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 18
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 2. BILLING: (Cont’d.) (L)
+|
+CONDITIONS: g. Relevant Period |
+|
+A Relevant Period typically consists of any twelve-monthly billing cycles |
+(Cont’d.) |
+commencing on the date PG&E provides a customer-generator with
+|
+PG&E’s written approval to begin parallel operation of the REGF (i.e.,
+|
+Permission To Operate (PTO)) for purposes of participating in NBT, and
+|
+on every subsequent anniversary thereof. |
+|
+If an eligible customer-generator terminates service or experiences a |
+change in ESP or CCA prior to the end of the 12 monthly billing cycles |
+within their Relevant Period, a new Relevant Period will be established |
+starting on the monthly billing cycle after the change in ESP or CCA and |
+continuing each anniversary date until the effective date of that |
+termination for ESP or CCA change. |
+|
+If an eligible customer-generator opts out of a SmartMeter™ per PG&E’s |
+|
+E- SOP schedule, the customer’s Relevant Period will be adjusted to
+|
+start on the monthly billing cycle after the alternative meter is installed.
+(L)
+If an NBT eligible customer-generator applies for NBT-MT or NBT-PS or (L)/(T)
+NBTA sub-schedules under this tariff, a new Relevant Period will be (L)/(T)
+established starting on the monthly billing cycle after the change in the (L)
+applicable sub-schedule and continue every subsequent anniversary |
+thereof. (L)
+For Load Aggregation, the Generating Account and all Aggregated (N)
+Accounts will have the same billing cycle and Relevant Period, based on |
+|
+PTO date or anniversary thereof. However, if an Aggregated Account
+|
+terminates service, or experiences a change in ESP or CCA prior to the
+|
+end of any 12 monthly billing cycle, its Relevant Period will consist of
+|
+that period from the anniversary date until the effective date of that |
+termination or ESP or CCA change. If an Aggregated Account is |
+subsequently added, its Relevant Period will consist of that period from |
+its effective date of inclusion in Load. (N)
+h. Energy True-up (L)
+|
+A true up is performed by PG&E and/or the customer’s ESP or CCA, as |
+|
+applicable, at the end of each Relevant Period following the date the
+|
+customer-generator was first eligible for Schedule NBT, or the date of
+|
+PG&E’s written approval to begin parallel operation of the REGF for
+|
+purposes of participating in NBT, whichever is later, and at each |
+anniversary date thereafter. At True up, the eligible customer-generator |
+shall be billed as follows: (L)
+For all NBT customers, if the export credits (not including the ACC Plus (L)/(T)
+credit) are larger than the import charges within the Relevant Period, |
+after debit for excess energy (kwh), if NSC is applicable, the excess |
+credits (generation and/or delivery) will be carried forward to the |
+(L)/(T)
+customer’s next Relevant Period. NBT customers may make a one-time
+(L)
+request that their annual true-up date be changed going forward. In the
+|
+event the energy (kWh) generated exceeds the energy (kWh) consumed
+|
+during the Relevant Period, compensation shall be made for the excess |
+energy (kWh), as described and allowed for in Special Condition 5. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 19
+Revised Cal. P.U.C. Sheet No. 57361-E
+Cancelling Original Cal. P.U.C. Sheet No. 55455-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 19
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 2. BILLING: (Cont’d.) (L)
+|
+CONDITIONS: If the customer-generator is taking service under DA or CCA Service, |
+separate true-up will be calculated for the applicable PG&E charges and |
+(Cont’d.) credits and the ESP or CCA charges and credits. |
+|
+For a DA or CCA Service customer-generator, Generation Rate |
+Component credits, if any, do not reduce the charges owed to PG&E for |
+energy supplied to the eligible customer-generator including NBCs |
+calculated in 2.f. |
+|
+Once the true-up is completed at the end of the Relevant Period, any |
+overpayment for energy (kWh) from the true-up will be credited to the |
+customer on their future bill charges. |
+|
+The ACC Plus credit can offset all charges including the NBC charges |
+and will not expire until the credits are used. If a customer terminates |
+service with PG&E before the credits are utilized, PG&E will provide the |
+customer’s payment for the remaining credits. |
+|
+i. Payment Process |
+|
+All NBT customers will pay monthly for all applicable charges including |
+the fixed charges within the OAS and any additional net charges due to |
+PG&E. Customers will have net charges due in a given month if the sum |
+of their import charges, export credits, and ACC Plus (if applicable) is |
+greater than zero. |
+|
+j. Billing Information |
+|
+PG&E shall provide the eligible customer-generator with information on |
+energy imported and exported with each regular bill. That information |
+shall include the current monetary balance owed PG&E for charges net |
+of credits since the last Relevant Period ended. |
+|
+k. Electric Service Provider Charges |
+|
+If PG&E provides direct access (DA) metering for the ESP, consolidated |
+Utility Distribution Company (UDC) billing (that is, Consolidated PG&E |
+Billing as described in PG&E’s Rule 22), Separate or Consolidated ESP |
+Billing support services for DA customer-generators served under |
+PG&E’s rates or their ESP’s rates, PG&E may recover the incremental |
+costs related to NBT from the customer’s ESP, as described in Schedule |
+E-ESP – Services To Electric Service Providers, and Schedule E-EUS – |
+End User Service. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 20
+Revised Cal. P.U.C. Sheet No. 57362-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 20
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL l. For a Customer-generator electing Load Aggregation: (N)
+CONDITIONS: |
+(Cont’d.) Load Aggregation Customers (for both Generating and Aggregated |
+|
+Accounts) will be billed based on no netting of imports (consumption) and
+|
+exports (generation to the grid). Customers are billed based on their full |
+usage from the grid. The generation (for both Generating Account and |
+allocated generation for Aggregated Accounts) is valued the same as an |
+|
+NBT customer.
+|
+|
+For each monthly billing period, the dollar amount (based on the ACC and
+|
+ACC Plus if applicable) associated with the energy (kWh) exported to the |
+grid (in kilowatt-hours or kWh) by the REGF shall be allocated to each of |
+the Aggregated Account meters, as well as the Generating Account if it has |
+|
+load, based on the proportion of cumulative usage at each aggregated
+|
+account, and the cumulative generation from the generating account from
+|
+the start of the Relevant Period. NBCs are calculated as specified in |
+Section 2.f for both Generating and Aggregated accounts. (N)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 21
+Revised Cal. P.U.C. Sheet No. 60439-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57363-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 21
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 3. INTERCONNECTION: Prior to receiving approval for Parallel Operation,
+CONDITIONS the customer-generator must submit a completed PG&E application form
+(Cont’d.): and interconnection agreement as follows: (T)
+Rate Option Application Interconnection Agreement
+NBT-S For Solar and/or Wind Electric Generating Facilities of 30 Kilowatts
+or Less:
+Application - Net Billing Tariff Agreement and Customer
+(NBT) Interconnection for Solar Authorization – Net Billing Tariff
+and/or Wind Electric Generating (NBT) Interconnection for Solar
+Facilities of 30 Kilowatts or Less and/or Wind Electric Generating
+(Form 79-1151B-03)5 Facilities of 30 Kilowatts or Less
+(Form 79-1151A-03)
+NBT-EXP For Solar and/or Wind Net Billing Tariff (NBT) Generating
+NBT- Facilities of 1,000 Kilowatts or Less, other than Facilities of 30
+EXPOTR Kilowatts or Less:
+Generating Facility Interconnection Agreement for
+Interconnection Application, Net Billing Tariff (NBT) of Solar
+(Form 79-1174-03) or Wind Electric Generating
+Facilities of 1,000 kW or Less,
+other than Facilities of 30
+Kilowatts or Less (form 79-
+1220-03),
+For Net Billing Tariff (NBT) non-Solar and/or Wind Generating
+Facilities of any size, and Solar and/or Wind Generating Facilities
+greater than 1,000 kW:
+Generating Facility Interconnection Agreement For
+Interconnection Application, Net Billing Tariff (NBT) non-
+(Form 79-1174-03) Solar and/or Wind Generating
+Facilities of any size, and Solar
+and/or Wind Generating
+Facilities greater than 1,000 kW
+(Form 79-1198-03)
+_________________________________________________
+5Both the Agreement and Customer Authorization (79-1151A-03) and Application (79-1151B-03) forms must be
+submitted before PG&E will issue the Permission to Operation (PTO) letter. Information in the Application can be
+submitted by the Company (as that term is defined in the Application) or Customer in an electronic format, subject
+to approval by PG&E.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 22
+Revised Cal. P.U.C. Sheet No. 57364-E
+Cancelling Original Cal. P.U.C. Sheet No. 55457-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 22
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 3. INTERCONNECTION: (Cont’d.) (L)
+CONDITIONS: |
+(Cont’d.) |
+Rate Option Application Interconnection Agreement |
+(L)
+NBT-PS For NBT-PS (Special Condition 8) for projects that meet NBT (L)/(T)
+integrity requirements. (L)
+Generating Facility 79-1193-03- Agreement And (L)
+Interconnection Application, Customer Authorization Net Billing |
+(Form 79 1174-03) Tariff (NBT) Interconnection For |
+Solar And/Or Wind Electric |
+Generating Facilities Of 30 |
+Kilowatts Or Less with Energy |
+Storage of 10 Kilowatts Or Less or |
+Energy Storage with Power |
+Control System Certification |
+|
+NBT, Generating Facility Rule 21 Generator Interconnection |
+NBTEXP, Interconnection Application Agreement for New Net Billing |
+(Form 79-1174-03) Tariff (NBT) Generating Facilities |
+or NBTMT > Greater than 1,000 Kilowatts |
+1,000 kW Interconnecting Under the Fast |
+Track Process |
+(Form 79-1198-03) |
+|
+Rule 21 Generator |
+Interconnection Agreement (GIA) |
+for Net Billing Tariff (NBT) |
+Generating Facilities Greater than |
+1,000 Kilowatts Interconnecting |
+Under the Independent Study, |
+Distribution Study, or Transmission |
+Cluster Process |
+(Form 79-1198-03) |
+|
+NBT-MT For customer-generators ≤ 1 MW taking service as a Multiple Tariff |
+Facility under Special Condition 4 of this tariff: |
+|
+Generating Facility Generating Facility Interconnection |
+Interconnection Application Agreement (NBT-MT - Multiple |
+(Form 79-1174-03) Tariff) (Form 79-1069-03) (L)
+NBTA NBT Load Aggregation ≤ 1 MW (N)
+|
+Along with the applicable interconnection form above, also submit: |
+NBT Load Aggregation Appendix (Form 79-1202-03) (N)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 23
+Revised Cal. P.U.C. Sheet No. 57365-E
+Cancelling Revised Cal. P.U.C. Sheet No. 55795-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 23
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 3. Interconnection: (Cont’d.) (L)
+CONDITIONS:
+(Cont’d.) Customers with an interconnection application date after the NEM2 Sunset Date (L)/(T)
+(April 14, 2023), or for Load Aggregation after the NEM2A Sunset Date (February |
+14, 2024), will take service and be billed on the NEM2 tariff on an interim basis |
+and transition to the Net Billing Tariff, once it is operational. The NEM2 tariff or |
+NEM2A subtariff legacy periods are not applicable in this case. (L)/(T)
+The interconnection application date is defined as the submission date of an (L)
+application that is free of major deficiencies and includes a complete application, a |
+single-line diagram (for systems smaller than or equal to 30 kW, applicant does not |
+need to upload a site-specific single-line diagram, but can instead select a |
+template single-line diagram in the portal if applicable), and, if applicable, a |
+complete California Contractors State License Board Solar Energy System |
+Disclosure Document, a signed California Solar Consumer Protection Guide, a |
+signed Agreement and Authorization form, and an NBT oversizing attestation. (L)
+For Load Aggregation Arrangements Requesting an additional service for the (N)
+Generator: Subject to all other applicable rules, an additional service may be |
+allowed for the Generating Account if it has no load other than that associated |
+directly with the REGF. However, a customer may not subsequently add load to |
+that additional service, and if the REGF is removed, the additional service may not |
+be converted to a load account. (N)
+For Load Aggregation, a completed and signed “NBT Load Aggregation Appendix” (N)
+(Form 79-1202-03) must be submitted together with the appropriate NBT |
+interconnection agreement listed above. (N)
+The eligible customer-generator must meet all applicable safety, and performance (L)
+standards established by the National Electrical Code, the Institute of Electrical |
+and Electronics Engineers, and accredited testing laboratories such as |
+Underwriters Laboratories and, where applicable, rules of the California Public |
+Utilities Commission regarding safety, reliability, and consumer protection. |
+|
+To promote the safety and reliability of the customer REGF, the customer- |
+generator shall comply with Electric Rule No. 21 Sections L.2-L.4 and Section L.7. |
+for interconnecting to the electrical grid. Equipment on the California Energy |
+Commission (CEC) list will meet this requirement and does not need to be verified. |
+Other equipment, as determined by PG&E, should be verified by the customer as |
+having safety certification from a nationally recognized testing laboratory. |
+|
+Applicant is required to verify as a part of each interconnection request for this |
+tariff that (i) a warranty of at least 10 years, or (ii) a 10-year service warranty or |
+executed “agreement” ensuring proper maintenance and continued system |
+performance has been provided on all equipment and on its installation. (L)
+Pursuant to Decision (D.) 22-12-056 and (D.) 23-11-068 (for NBTA) customers on (L)/(T)
+this tariff must pay for the interconnection of their REGF as provided in Electric |
+Rule 21, including an application fee. This application fee must be paid through |
+PG&E’s online application portal in order to complete the application, unless |
+otherwise directed by PG&E. For application fees for Customers impacted by a |
+Natural or Human-Made Disasters6, see Special Condition 9. (L)/(T)
+____________________________________________
+6Natural or human-made disasters includes such events as a fire, earthquake, flood, or severe storms.
+(L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 24
+Revised Cal. P.U.C. Sheet No. 61549-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57366-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 24
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 3. Interconnection: (Cont’d.)
+CONDITIONS:
+(Cont’d.) For the purpose of the NBT tariff, the rating of the generating facility, for the
+purposes of comparing its size relative to the 1-megawatt (MW) limit, will be
+determined based on:
+(a) For each PV generator, the lesser of inverter nameplate capacity (kW) or (T)
+maximum solar output (CEC‐AC rating), as referenced in Section F |
+(Table F.1, footnote 2). (T)
+(b) For each inverter-based generator, except solar, the gross nameplate (T)
+rating of the inverter.
+(c) For each non-inverter-based generator, the generator gross nameplate.
+(D)
+(D)
+The aggregate nameplate capacity of the facility is calculated by adding the (T)
+capacity of all generators located at the Customer’s Premises (including Integrated |
+or Directly Connected Energy Storage Devices, if any). For the purposes of |
+calculating the size as over or under 1MW for NBT, the capacity calculation |
+excludes the capacity of a paired energy storage system that is: |
+|
+(1) certified as non-export storage, |
+|
+(2) has a non-export relay installed, |
+|
+(3) has a power control system that ensures exports do not exceed the |
+capacity of the REGF, or |
+|
+(4) has a power control system that ensures exports do not exceed 1 MW. (T)
+(Continued)
+Advice 7975-E Issued by Submitted August 28, 2026
+Decision Shilpa Ramaiya Effective August 28, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 25
+Revised Cal. P.U.C. Sheet No. 60440-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57367-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 25
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 4. MULTIPLE TARIFF FACILITIES:
+CONDITIONS
+(Cont’d.): Multiple Tariff Facilities have the following additional provisions: (T)
+a. When Net Generation Output Metering (NGOM) is required on the REGF,
+such NGOM must conform to the requirements set forth in Electric Rule
+21, Section J.
+b. An NBT-eligible Constituent Generator Group is defined as one or more
+generators within a facility served behind the same utility revenue meter
+and subject to this NBT Schedule for billing purposes that is eligible for
+service under the provisions of either NBT, NEM (except for Load
+Aggregation), NEM2 (except for Load Aggregation), NEMFC (except for
+Load Aggregation), NEMBIO or their sub-Schedules.
+c. A non-NBT-eligible Constituent Generator Group is defined as one or
+more generators within a facility served behind the same utility revenue
+meter that does not take service under NBT, NEM, NEM2, NEMFC or
+NEMBIO, but interconnects under the provisions of Electric Rule 21.
+d. All metering for Multiple Tariff Facilities called for in this Special Condition
+must meet the requirements needed to bill under the customer-generator’s
+OAS. All metering, equipment and non-Export relays necessary to
+implement the provisions in this section will be provided at the Customer-
+Generator’s expense.
+e. Customers who take service on NBT-MT by adding an NBT-eligible
+generator to a facility (behind the same utility revenue meter) with existing
+NEM/NEM2/NEMFC/NEMBIO eligible REGF(s) will be billed under NBT-
+MT, and all eligible REGFs will be combined into one Constituent
+Generator Group(s), which will be transitioned to and billed under the
+NBT.
+f. Customers with NEMA/NEM2A/NBTA are not eligible for this provision.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 26
+Revised Cal. P.U.C. Sheet No. 57368-E
+Cancelling Original Cal. P.U.C. Sheet No. 55461-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 26
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 4. MULTIPLE TARIFF FACILITIES: (Cont’d.) (L)
+CONDITIONS: g. Multiple Tariff Facility Configurations and Metering. For all eligible (L)/(T)
+combinations of NBT-Eligible Constituent Generator Groups and non- (L)
+(Cont’d.) NBT-eligible Constituent Generator Groups, the Customer-Generator |
+must select one of the following options: |
+|
+1) The Non-Export Relay Option: A Customer-Generator must |
+install a Non-Export relay on their non-NBT Constituent |
+Generator Group(s). |
+|
+2) The Net Generation Output Metering (NGOM) Option: The |
+customer-generator will receive NBT credits only for NBT- |
+eligible Constituent Generator Group(s) for which the |
+customer has installed interval NGOM on that Constituent |
+Generator Group. (L)
+h. Multiple Tariff Facilities, served under DA or CCA Service, may only (L)/(T)
+participate to the extent their ESP or CCA offers net billing for the specific (L)
+constituent generator group(s). All accounts for each specific constituent |
+generator group must be served by the same ESP. (L)
+i. An existing NEM/NEM2/NEMFC or NEMBIO customer can install an NBT (L)/(T)
+eligible Generator and stay on their respective tariffs if the NBT generator (L)
+would have a Non-Export Relay that would prevent the NBT generator to |
+export to the grid. With this option the NBT eligible generator will be |
+taking service under Rule 21 and will be subject to Schedule Standby |
+(SB) and Departing Load. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 27
+Revised Cal. P.U.C. Sheet No. 60441-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57369-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 27
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 5. NET SURPLUS COMPENSATION (NSC):
+CONDITIONS
+Pursuant to P.U. Code Sections 2827 (h)(3), this Special Condition was (T)
+(Cont’d.):
+established to provide a NEM customer having Net Surplus Electricity
+(defined as all electricity generated by an eligible customer measured in
+kilowatt-hours over a Relevant Period that exceeds the amount of electricity
+consumed by that eligible customer), with Net Surplus Compensation for the
+Net Surplus Electricity. This benefit is extended to NBT customers pursuant to
+Decision (D). 22-12-056.
+An NBT customer who has Net Surplus Electricity will be known as a Net
+Surplus Generator.
+a. NSC Applicability – All bundled Net Surplus Generators that satisfy the
+conditions in the Applicability Section of this tariff and take service under
+this rate schedule are eligible to receive NSC at the end of the Relevant
+Period, i.e. at the time of their true-up. This includes Net Surplus
+Generators on sub-schedules NBT-S, NBTA, NBT-EXP, NBT-PS and
+NBT-EXP-OTR. An NBT-MT Net Surplus Generator is also eligible to
+receive NSC but only for the one or more generators at the same
+metered account eligible for billing treatment under Special Condition 2.a
+through 2.f of this NBT schedule, or the applicable tariff for the non-NBT
+generator.
+Net Surplus Generators who receive Direct Access (DA) Service from an
+ESP or who receive Community Choice Aggregation (CCA) Service from
+a CCA are not eligible to receive NSC from PG&E but may contact their
+ESP or CCA Provider to see if they provide NSC.
+b. The NSC Rate – The NSC Rate is defined as the simple rolling average
+of PG&E’s default load aggregation point (DLAP) price from 7 a.m. to 5
+p.m., for a 12-month period. PG&E shall use the NSC Rate as the value
+of the electricity portion of its net surplus compensation rate.
+PG&E will calculate the NSC Rate each month. It will be effective on the
+first day of that month and PG&E will use it in the NSC Calculation for
+any Net Surplus Generators with a Relevant Period completed in that
+month (True-Up Month).
+The DLAP Cutoff Date will be defined as the twentieth (20th) day of the
+month prior to the True-Up Month.
+PG&E will wait five (5) days after the DLAP Cutoff Date for the CAISO to
+have time to finalize the day-ahead PG&E DLAP prices. The NSC Rate
+will then be calculated as the simple average of the prices for all hours
+between 7 a.m. and 5 p.m. over a one (1) year period ending on the
+DLAP Cutoff Date.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 28
+Revised Cal. P.U.C. Sheet No. 57370-E
+Cancelling Original Cal. P.U.C. Sheet No. 55463-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 28
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 5. NET SURPLUS ELECTRICITY COMPENSATION (NSC): (Cont’d.) (L)
+CONDITIONS: |
+c. Pursuant to D. 11-06-016, PG&E includes a Renewable Attribute Adder |
+(Cont’d.)
+(RAA) based on the California Energy Commission (CEC) implementation |
+methodology. |
+|
+Under the CEC’s Renewables Portfolio Standard (RPS) Eligibility |
+Guidebook7, an ownership verification and tracking process is set forth for |
+Renewable Energy Credits (RECs) created by Net Surplus Generators. |
+|
+PG&E will pay a RAA for Net Surplus Electricity if the Net Surplus |
+Generator completes Form 79-1155-02 - Schedules NBT, Net Surplus |
+Electricity (NSE) Renewable Energy Credits Compensation Form which |
+requires that at each true-up a Net Surplus Generator confirm it or its |
+REC aggregator has: |
+|
+1) certified ownership of Net Surplus Electricity Renewable Energy |
+Credits associated with their Net Surplus Electricity; |
+|
+2) obtained certification for the Renewable Portfolio Standards (RPS) |
+eligibility of the Electrical Generation Facility from the CEC and |
+provide evidence of this certification to PG&E; and |
+|
+3) transferred the ownership of the WREGIS Certificates to PG&E. |
+|
+The RAA will be calculated using the most recent Western Electricity |
+Coordinating Council (WECC) average renewable premium, based on |
+United States Department of Energy (DOE) published data as submitted |
+via advice letter annually in compliance with Resolution E-4475 and |
+Decision 11-12-018. |
+|
+d. Calculation of the NSC – Pursuant to Decision 22-12-056, PG&E is |
+directed to calculate NSC as follows: At the customer’s 12-month annual |
+true-up, PG&E shall determine if the customer has Net Surplus Electricity, |
+i.e., if the customer exported more electricity than they imported over the |
+Relevant Period. If the customer has Net Surplus Electricity, the kilowatt |
+hours of Net Surplus Electricity will be debited from the customer’s |
+account at a rate equal to the utility’s average real-world retail export |
+compensation rates for all NBT customers in their service territory over |
+the past 12 months. The customer will then be credited at the NSC rate |
+described in (b) and (c) above for the same number of kilowatt hours. |
+|
+The ACC Plus paid to the customer on Net Surplus Electricity will not be |
+debited from the customer. |
+|
+|
+_______________________________________ |
+7 The CEC RPS Eligibility Guidebook is available at: https://www.energy.ca.gov/programs-and-topics/programs/renewables- |
+portfolio-standard (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 29
+Revised Cal. P.U.C. Sheet No. 57371-E
+Cancelling Original Cal. P.U.C. Sheet No. 55464-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 29
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 5. NET SURPLUS ELECTRICITY COMPENSATION (NSC): (Cont’d.) (L)
+CONDITIONS: |
+e. Options for receiving NSC – An NBT customer with NSC will |
+(Cont’d.)
+automatically have their NSC applied to any amounts owed to PG&E |
+and then may choose to: |
+|
+1) take no action and roll any remaining NSC amounts forward to |
+offset subsequent PG&E charges; |
+|
+2) request that PG&E issue a check if the remaining NSC amount is |
+greater than one dollar ($1). A customer can select this option by |
+calling PG&E. If the customer is closing all their accounts with |
+PG&E, PG&E will automatically send a check; or |
+|
+3) elect not to receive any NSC by completing and submitting Form |
+79-1130 (Customer Request Form not to Receive Net Surplus |
+Compensation) to PG&E to confirm that they do not want to |
+participate. In this case PG&E will zero out any NSC the NBT |
+customer may be otherwise eligible to receive. |
+|
+f. Qualifying Facility Status – Customers must comply with the appropriate |
+conditions below to first demonstrate to PG&E that they are Qualifying |
+Facilities (QFs) in order to receive NSC. |
+|
+1) No documentation of QF status is required of any NBT customer- |
+generators with a net power production capacity of one megawatt |
+or less, consistent with Federal Energy Regulatory Commission |
+(FERC) regulations 18 C.F.R. §292.203. |
+|
+2) NBT customer-generators with a net power production capacity |
+greater than one megawatt shall self-certify QF status by submitting |
+FERC Form 556 to FERC pursuant to 18 C.F. R. §292.207(a). |
+Notice to PG&E as the utility with which the facility will interconnect |
+and/or transact shall be provided in accordance with FERC Form |
+556 instructions. Filing Form No. 556 is not a requirement for |
+interconnection under this provision. |
+|
+g. Generator Size – Nothing in this Special Condition alters the existing |
+NBT system sizing requirement. Specifically, to be eligible for NSC, a |
+|
+system must be intended primarily to offset part or all of the customer’s
+|
+own electrical requirements, or if applicable, subject to the terms of the
+|
+Oversized Generating Facility Attestation. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 30
+Revised Cal. P.U.C. Sheet No. 60442-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57372-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 30
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 6. Load Aggregation - NBTA:
+CONDITIONS
+Load Aggregation is available to an eligible customer-generator, that has load (T)
+(Cont’d.):
+served by multiple meters (“Aggregated Accounts”) located on the property
+where the REGF (“Generating Account”) is located and on property adjacent
+or contiguous to the property on which the REGF is located, only if those
+properties are solely owned, leased, or rented by the eligible customer-
+generator, subject to the terms of this Special Condition and elsewhere in this
+tariff. An Arrangement, consisting of a single Generating Account and all of
+the Aggregated Accounts, will be billed under this Special Condition.
+Customer-generators are eligible to participate in Load Aggregation provided
+that all meters in a Load Aggregation Arrangement are located (i) on the
+property where the REGF is located, or (ii) are located within an unbroken
+chain of contiguous parcels that are all solely owned, leased or rented by the
+customer-generator. For purposes of Load Aggregation, parcels that are
+divided by a street, highway, or public thoroughfare are considered
+contiguous, provided they are within an unbroken chain of otherwise
+contiguous parcels that are all solely owned leased or rented by the
+customer-generator, as verified in Form 79-1202-03. For purposes of
+determining parcel contiguity under this provision, “public thoroughfare” will
+include a canal, railroad track or transmission right-of-way, when these
+features are isolated on third party owned property. When a third party owned
+easement is located on a NBTA customer-generator’s property, there is no
+impairment to parcel contiguity. In addition, an irrevocable easement granting
+sole use and control to the NBT customer-generator for an entire parcel can
+be used to establish contiguity. Otherwise, a customer-generator’s easement
+on a third party owned parcel will not be sufficient to establish parcel
+contiguity for NBTA.
+NBT Load Aggregation Customer-generators are qualified for Net Surplus
+Compensation (NSC). The eligible customer-generator participating in Load
+Aggregation option is eligible to add energy storage to their generator or add
+a Non REGF generator, in accordance with all the applicable PG&E tariffs,
+including but not limited to Rule 21, and any other regulations and laws
+governing the interconnection.
+Billing Service Charges – An eligible customer-generator electing Load
+Aggregation shall remit service charges for the cost of providing billing
+services as follows. These charges shall include:
+1) One-Time Setup Charge of $25.00 per Aggregated Account and for the
+Generating Account, as defined in this Special Condition, and
+cumulatively, shall be limited to no more than $500 per Load Aggregation
+Arrangement. Any change to the number of accounts included in a NBTA
+arrangement is subject to this one-time fee. This Setup Charge shall be
+assessed without regard to the $500 limit for accounts added after the
+PTO date.
+Plus,
+2) Monthly Charge of $5 Per Aggregated Account and for the Generating
+Account as defined in this Special Condition.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 31
+Revised Cal. P.U.C. Sheet No. 57373-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 31
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 6. Load Aggregation - NBTA: (Cont’d.) (N)
+CONDITIONS: |
+(Cont’d.) Example of NBTA – Assume there are five parcels (A, B, C, D, E, and F) that form a |
+|
+cluster of contiguous parcels and D and E are separated from A, B, C and F by a street,
+|
+highway, or public thoroughfare. For the purposes of participating in Load Aggregation,
+|
+all five parcels are considered contiguous, provided they are otherwise contiguous, and
+|
+all are solely owned, leased or rented by the Customer-generator. Refer to Diagram 1
+|
+(for illustrative purposes only)
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+Diagram 1
+|
+|
+Two parcels that are separated by a parcel that is only a stream or river or
+|
+slough owned by a third party are considered contiguous if:
+|
+|
+1A. The two parcels are otherwise eligible for NBTA, and
+|
+|
+1B. The third party is a public entity, and
+|
+|
+1C. The third-party owned parcel containing the stream or river or slough is
+|
+no wider than one thousand feet across as measured at the narrowest
+|
+point between the two parcels, and
+|
+|
+1D. Customer provides documentation that they meet these criteria if
+(N)
+requested by PG&E.
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 32
+Revised Cal. P.U.C. Sheet No. 61550-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60443-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 32
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 7. NBT Legacy Provisions
+CONDITIONS
+(Cont’d.): This Special Condition is applicable to all Customers receiving service on this
+NBT Schedule, and who have submitted all documentation necessary to
+receive service on this schedule.
+a. 9-Year Transition Period. Pursuant to Decision 22-12-056, and 23-11-
+068 (for NBTA), customers who receive service on the NBT Schedule, or
+who have submitted all documentation necessary to receive service on
+the NBT Schedule, are eligible to continuously stay enrolled on the NBT
+Schedule for a period of up to 9 years from the original permission to
+operate (PTO) date. The 9-year enrollment period ends at the
+conclusion of the Customer’s applicable Relevant Period on or after the
+9th anniversary of the original PTO date. For example, if a Customer
+initially received PTO on May 1, 2023, the Customer is eligible to
+continue receiving service on the NBT Schedule through the conclusion
+of the Relevant Period ending immediately on or after April 30, 2032.
+Customers electing to switch to this NBT Schedule prior to the
+conclusion of their Schedule NEM or NEM2 Legacy Period permanently
+forfeit any of their Generating Facility’s remaining transition period
+eligibility on Schedule NEM or NEM2 and may not later change back to
+receiving service under these schedules. Customers at the end of their
+NEM/NEMA or NEM2/NEM2A Legacy Period enrollment who
+transitioned to the NBT/NBTA Schedule may not restart a new Legacy
+Period under NBT. These customers will not receive a 9-year legacy
+treatment under NBT. They will remain on this NBT Schedule and will be
+transitioned to the applicable successor tariff required for customers
+installing eligible renewable technologies if and when a new successor
+tariff becomes effective.
+b. Modifications8. REGFs eligible for the 9-year transition period outlined
+above that are modified and/or repaired shall remain eligible for the
+remainder of their 9-year transition period as long as the modifications
+and/or repairs do not increase the REGF by more than the greater of:
+1) 10 percent of the REGF’s nameplate rating capacity, as established
+when the REGF was originally interconnected, or
+2) 1 kW;
+and provided the modifications and/or repairs do not result in the REGF
+exceeding the Customer’s annual onsite load unless customer executed
+the oversizing attestation.
+(T)
+NEM or NEM2 customers who increased their REGF system size due to
+|
+modifications and/or repairs exceeding the tariff threshold specified
+|
+within their applicable tariff, and therefore transitioned to this NBT tariff
+|
+will begin a new 9-year legacy period from the PTO date of their
+(T)
+modification and/or repairs.
+(L)
+______________________________________________
+8 Customers making modifications and/or additions to their REGF that exceed the 10 percent, or 1 kW limit
+referenced above shall remain on this tariff until the Commission develops a successor tariff to this or directs
+these customers to another tariff. This requirement will only be enforced upon the development of a new NBT
+Successor Tariff, or by the direction of the CPUC.
+(Continued)
+Advice 7975-E Issued by Submitted August 28, 2026
+Decision Shilpa Ramaiya Effective August 28, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 33
+Revised Cal. P.U.C. Sheet No. 59902-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57375-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 33
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 7. NBT Legacy Provision (Cont’d.)
+CONDITIONS:
+(Cont’d.) b. Modifications (Cont’d.) (L)
+|
+Pursuant to D.22-12-056, the addition of energy storage to the |
+Customer’s existing Generating Facility shall not disqualify Customer |
+from the remainder of their 9-year Transition Period on this Schedule. (L)
+c. Transferability. The 9-year legacy period is linked to the customer who
+originally causes the system to be installed, not to the system itself. If
+the original customer moves away within nine years from the system’s
+permission to operate (PTO) and another utility customer takes control
+of (e.g., buys, leases, or pays a power purchase agreement for) the
+system9, the subsequent utility customer does not have a legacy period.
+There are three exceptions to this:
+1. For residential customers: when the subsequent customer is or
+was the legal partner (e.g., spouse or domestic partner of the
+customer who installed the REGF).
+2. For non-residential customers: when the account-holding entity
+continues to be majority controlled by the same underlying
+individuals or entities from the time the legacy system was
+installed by the original customer.
+3. When a builder/contractor constructs a new building and receives
+PTO in their name, the new owner following a sale of the building
+(whether the sale is completed before or after issuance of PTO)
+is eligible to retain the 9-year legacy period starting from the date
+of PTO, provided that the builder/contractor does not reside in or
+conduct business from the building after its construction.
+For these exceptions, the legacy period does not restart when the
+subsequent customer takes control of the system. Rather, the legacy
+period remains based on the REGF’s PTO date.
+_____________________________________________
+9The transfer of an existing REGF to a new location is considered a new installation requiring a new
+Interconnection Agreement that is subject to the applicable tariffs in place at the time the new Interconnection
+Request is completed.
+(Continued)
+Advice 7155-E-A Issued by Submitted August 25, 2025
+Decision Shilpa Ramaiya Effective July 1, 2024
+Vice President Resolution Res.E-5301
+Regulatory Proceedings and Rates
+PAGE 34
+Revised Cal. P.U.C. Sheet No. 60444-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57376-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 34
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage
+CONDITIONS
+a. Definitions:
+(Cont’d.):
+(T)
+NBT Paired Storage:
+NBT Paired Storage is defined as qualifying energy storage equipment
+(“storage system” or “storage device”) paired with a REGF that either:
+(i) meets the Renewables Portfolio Standard (RPS) Guidebook10
+requirements as an “addition or enhancement” as described in Section c.
+below, or
+(ii) is eligible to receive certain benefits as described in this Special
+Condition because it is paired with an REGF even if it is not exclusively
+charged by renewable energy, pursuant to California Public Utilities
+Commission (CPUC) Decision (D.) 14-05-033 and D.19-01-030.
+NBT Paired Storage is considered “Small NBT Paired Storage” when the
+storage system size is ≤10kW and “Large NBT Paired Storage” when
+the storage system size is >10kW.
+AC-Coupled Paired Storage:
+In an AC-Couple Paired Storage system, the REGF has its own inverter
+or set of inverters; and separately, the storage system has its own
+inverter or set of inverters, pursuant to CPUC D.19-01-030.
+For an AC-coupled REGF paired with a storage device, storage device
+capacity is determined as the (AC) maximum discharge capacity. The
+size of the storage system for AC-coupled REGF plus storage systems
+is the inverter’s (or inverters’) nameplate capacity (or nameplate
+capacities summed).
+DC-Coupled Paired Storage:
+In a DC-Couple Paired Storage system, the REGF and the storage
+share the same inverter, or set of inverters, pursuant to CPUC D.19-01-
+030.
+The size of the storage system is the lesser of the shared inverter’s (or
+inverters’) nameplate capacity (or capacities summed) and the storage
+device’s (devices’) maximum continuous discharge capacity (or
+capacities summed) listed on the storage device’s (devices’) technical
+specifications sheets. A storage device’s maximum continuous
+discharge capacity may be listed on technical specification sheets using
+different terminology; PG&E will use common sense to determine
+whether a device’s technical specification sheet includes the appropriate
+metric for purposes of determining system size, regardless of the
+terminology used. If that metric is not included, PG&E will rely on the
+inverter’s nameplate rating.
+________________________
+10The RPS Guidebooks can be found at: https://www.energy.ca.gov/programs-and-topics/programs/renewables-
+portfolio-standard.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 35
+Revised Cal. P.U.C. Sheet No. 57377-E
+Cancelling Original Cal. P.U.C. Sheet No. 55468-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 35
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.) (L)/(T)
+CONDITIONS:
+(Cont’d.) a. Definitions: (Cont’d.) (L)
+|
+NBT Integrity |
+|
+NBT Integrity refers to the requirement that a customer only receive |
+Export Credits for renewably generated exports from an NBT- |
+eligible REGF. |
+|
+Certified Power Control System (Certified PCS) |
+|
+A Certified PCS storage system is one that has received UL1741 |
+CRD11 or utility-approved certification for Power Control systems |
+(PCS) that will comply with either No Grid Charging or No Storage |
+Export as defined below. These systems do not require an NGOM |
+as the PCS is certified to preserve NBT Integrity, as defined above. |
+|
+No Grid Charging: |
+|
+No Grid Charging describes when a storage system uses a |
+Certified PCS, as defined above, to ensure that the storage system |
+cannot be charged from the PG&E grid12. A PG&E-approved |
+physical non-import relay or a functionally equivalent non-import |
+configuration to prevent grid power from flowing to the storage |
+device is also permitted. Inadvertent but minor instances of grid |
+import are permitted. Such inadvertent grid imports must not |
+exceed durations of ten seconds. |
+|
+________________________________________ |
+11CRD refers to an Underwriters Laboratories (UL) Certification Requirement Decision, in this case the one |
+issued on 3/8/2019. |
+12In the event of an expected PSPS (Public Safety Power Shutoff) outage, as evidenced by a 48-hour notice from |
+PG&E to the expected outage start, a storage system defined as “No Grid Charging” and designed for |
+resiliency, meaning it is capable of providing back-up power safely and in compliance with all relevant tariffs, |
+electric rules, other requirements, and is qualified by PG&E to participate, will be temporarily permitted to |
+charge from the grid in order to prepare for the PSPS outage. The notification must specify an impact to the |
+customer generator location. This temporary permission will begin at the publication of the 48-hour notification |
+and will end 24 hours after the end of the PSPS event, as marked by the restoration of power at the site. If |
+power is not shutoff, the temporary permission will end 72 hours after the original 48-hour notice. At the end of |
+the temporary permission period as described above, the storage system will need to revert to “No Grid |
+Charging” operation mode in order to maintain compliance with the NBT tariff, notwithstanding additional PSPS |
+Alerts. At no point during the temporary permission period will the system be permitted to violate the |
+interconnection agreement. Specifically, the storage system must not increase the host facility’s historical |
+peak demand. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 36
+Revised Cal. P.U.C. Sheet No. 57378-E
+Cancelling Original Cal. P.U.C. Sheet No. 55469-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 36
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.) (L)
+CONDITIONS: |
+(Cont’d.) a. Definitions: (Cont’d.) |
+|
+No Storage Export: |
+|
+No Storage Export describes when a storage system uses a |
+Certified PCS, as defined above, to ensure that the storage system |
+cannot export to PG&E’s grid and therefore will not result in |
+additional credits. A PG&E-approved physical non-export relay or a |
+functionally equivalent non-export configuration to prevent grid |
+power from flowing to the storage device is also permitted. |
+Inadvertent but minor instances of storage export are permitted. |
+Such inadvertent grid exports must not exceed durations of ten |
+seconds. |
+|
+b. Interconnection Cost Responsibility |
+|
+NBT Paired Storage will have the same interconnection cost |
+responsibility as the NBT generator with which it is paired, including |
+charges or fees related to the interconnection application, Rule 21 |
+engineering study/review, and/or any associated distribution |
+upgrades. |
+|
+See Section c.5. below for additional information |
+|
+c. Interconnection and Billing Requirements for different types of NBT |
+Paired Storage |
+|
+Interconnection and billing requirements for facilities that use |
+storage devices differ depending on the type and size of NBT |
+Paired Storage system. These requirements are described here |
+and summarized in Table 1 and Table 2 of this Special Condition. |
+|
+The Renewables Portfolio Standard (RPS) Guidebook8 establishes |
+two categories of energy storage that may be considered an |
+addition or enhancement to a renewable electrical generation |
+facility: “integrated” and “directly connected” storage. |
+|
+1) Integrated Storage: |
+|
+Integrated Energy Storage is defined in the RPS guidelines as |
+methods of storing energy from a renewable energy resource |
+that are integrated into the REGF as part of the generation |
+process. |
+|
+Note that, for battery-based storage, the storage device must |
+only be capable of storing energy from the REGF to be |
+considered Integrated Storage. Table 1 of this schedule |
+summarizes integrated storage billing and interconnection |
+requirements. (L)
+(Continued)
+Advice 7174-E Issued by Submitted February 14, 2024
+Decision D.23-11-068 Shilpa Ramaiya Effective February 15, 2024
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 37
+Revised Cal. P.U.C. Sheet No. 61551-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57379-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 37
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.)
+CONDITIONS:
+(Cont’d.) c. Types of NBT Paired Storage (Cont’d.)
+1) Integrated Storage: (Cont’d.)
+Table 1. Integrated Storage Billing and Interconnection Requirements.
+INTEGRATED STORAGE
+(By definition, the storage device must only be
+capable of storing energy from the REGF)
+SCENARIO Billed As Applicable Interconnection Applicable
+Application and Interconnection
+Agreements Costs (Section
+9.c.)
+REGF < 1 MW Per 5.i of this
+Special Condition
+AC-Coupled billed as if apply with
+NBT Paired storage 79-1174-03 and
+Storage and REGF Interconnection agreement
+were all 79-1193-03 or 79-1220-03 (T)
+Or one
+generator REGF > 1 MW Per 5.ii or iii of this
+DC-Coupled (e.g.
+Special Condition
+NBT Paired NBTS,
+Storage NBTEXP) apply with
+79-1174-03 and
+Interconnection agreement
+79-1198-03
+2) Directly Connected:
+Directly Connected NBT Paired Storage is defined in the RPS
+guidelines as meeting the following requirements:
+(i) The storage device is directly connected to the REGF via an
+internal power line (i.e., power may not be transmitted from the
+renewable facility to the energy storage via an external
+distribution line); and
+(ii) The storage device must be operated as part of the NBT
+eligible facility.
+Note that the storage device is not required to be exclusively charged by the
+REGF.
+(Continued)
+Advice 7975-E Issued by Submitted August 28, 2026
+Decision Shilpa Ramaiya Effective August 28, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 38
+Revised Cal. P.U.C. Sheet No. 60473-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57380-E
+U 39 San Francisco, California
+ELECTRIC SCHEDULE NBT Sheet 38
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.)
+CONDITIONS:
+c. Types of NBT Paired Storage (Cont’d.)
+(Cont’d.)
+2) Directly Connected: (Cont’d.)
+Directly Connected Cases:
+(i) Small (≤10kW) DC-Coupled NBT Paired Storage system:
+Small DC-Coupled storage systems are not required to meet
+either the “No Grid Charging” or “No Storage Export”
+requirements. Customers must apply with 79-1174-03, and
+either complete interconnection agreement Form 79-1193-03
+(solar and/or wind electric facilities of 30kW or less) or Form
+79-1069-03 (all other REGF with a storage system
+configuration fulfilling the requirements of “No Grid Charging”).
+All configurations will be billed using the estimation
+methodology as described in sub-section c.3)(ii) of this special
+condition unless; additional metering is installed, as described
+in “Large NBT Paired Storage” below, or the system is
+operating with a Certified PCS.
+(ii) Large (>10kW) DC-Coupled NBT Paired Storage system:
+Large DC-Coupled storage systems must satisfy the definition
+of “No Storage Export”. Customers must apply with 79-1174-
+03, complete Form 79-1069-03. Customers will be billed as
+described for Large NBT Paired Storage in sub-section c.3)(iii)
+of this special condition, unless using a Certified PCS, in which
+case they will be billed as described in sub-section c.3)(i).
+For this case, there are no restrictions on the maximum storage
+system size (kW).
+(iii) Large (>10kW) AC-Coupled NBT Paired Storage system
+Large AC-Coupled NBT Paired Storage systems shall have a
+maximum power output no larger than 150% of the NBT-
+eligible generator’s maximum output capacity. Pursuant to
+Decision 20-06-017 the maximum output capacity limit was (T)
+temporarily waived for a period of 3 years. This waiver period |
+was extended to August 16, 2025, and has been further |
+extended pending a future Commission decision. (T)
+(Continued)
+Advice 7733-E Issued by Submitted October 27, 2025
+Decision Shilpa Ramaiya Effective August 14, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 39
+Revised Cal. P.U.C. Sheet No. 60445-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57381-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 39
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.)
+CONDITIONS
+(Cont’d.): c. Types of NBT Paired Storage (Cont’d.) (T)
+2) Directly Connected: (Cont’d.)
+Large AC-Coupled NBT Paired Storage are required to select
+one of the following:
+a) install a non-export relay on the storage device(s);
+b) install an interval meter for the NBT-eligible generation,
+meter the load, and meter total energy flows at the
+point of common coupling;
+c) install an interval meter directly to the NBT-eligible
+generator(s); or
+d) operate using a Certified PCS.
+(iv) Large (>10kW) AC-Coupled NBT Paired Storage system:
+Large AC-Coupled NBT Paired Storage Systems must apply
+with PG&E Electric Form 79-1174-03, and either complete
+interconnection agreement Form 79-1193-03 (solar and/or wind
+electric facilities of 30kW or less) or Form 79-1069-03 (all other
+REGF with a storage system configurations). Customers will be
+billed as described in sub-section c.3)(iii) of this special
+condition unless operating using a Certified PCS, in which
+case, they will be billed as described in sub-section c.3)(i).
+(v) Small (≤10kW) AC-Coupled storage systems:
+Small AC-Coupled NBT Paired Storage is not required to be
+sized to the customer’s demand or the NBT generator. Small
+NBT Paired Storage systems have the option to install
+metering as required for Large NBT Paired Storage, or use a
+Certified PCS, as defined above, to be billed as described in
+sub-section c.3)(i) of this special condition. Otherwise, they will
+be billed using the estimation methodology described in sub-
+section c.3)(ii) of this special condition.
+Small AC-Coupled NBT Paired Storage systems eligible must
+apply with the 79-1174-03 (NBT) and complete the 79-1193-03
+(NBT) when the NBT-Eligible GF is sized 30kW or less or apply
+with the 79-1174-03 (NBT) and complete the 79-1069-03 (NBT)
+when the NBT-eligible GF exceeds 30kW.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 40
+Revised Cal. P.U.C. Sheet No. 60474-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60446-E
+U 39 San Francisco, California
+ELECTRIC SCHEDULE NBT Sheet 40
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.)
+CONDITIONS:
+c. Types of NBT Paired Storage (Cont’d.)
+(Cont’d.)
+Table 2. Directly Connected Billing and Interconnection Requirements
+(This table covers storage that is NOT required to be 100% REGF charged)
+For Both DC and AC-Coupled NBT Paired Storage
+Storage Size Applicable Interconnection Agreements and Applic Notes
+Costs able
+Billing
+PV/Wind Non-PV/Wind REGF costs Billed NBT Integrity
+< 30 kw REGF <1MW >1Mw (Secti as Requirements
+on
+>30kW 9.c.)
+PV/Wind
+<1MW
+DC-Coupled or Small 79-1069-03 79- Per 5.i §3i Certified PCS,
+AC-Coupled (≤10kW) 79- 1078- as defined
+NBT Paired 1093-03 03 above, required
+Storage with a Large
+PCS (>10kW) 79-
+1069-03
+DC-Coupled or 79-1093-03 79-1069-03 79- Per §3ii Billed using
+AC-Coupled 1078- 5.i Estimation
+Small NBT 03 Methodology
+Paired Storage
+with no PCS (≤
+10kW)
+DC-Coupled or 79-1069-03 79-1069-03 79- Per §3iii NGOM, No
+AC-Coupled 1078- 5.ii or Storage Export,
+Large NBT 03 iii or additional
+Paired Storage metering
+with no PCS
+required, as
+sized >10kW
+described
+And
+above
+≤150%
+DC-Coupled or Set up and bill as NBTMT
+AC-Coupled (not under NBT-Paired Storage section)
+Large NBT
+Paired Storage
+with no PCS
+sized >10kW
+And
+> 150%13
+______________________________________________________
+13The storage system shall have a maximum output power no larger than 150% of the NEM-eligible generator’s maximum
+output capacity. Pursuant to Decision 20-06-017 the maximum output capacity limit was temporarily waived for a period of 3 (T)
+years. The waiver period was extended to August 16, 2025, and has been further extended pending a future Commission |
+decision. (T)
+(Continued)
+Advice 7733-E Issued by Submitted October 27, 2025
+Decision Shilpa Ramaiya Effective August 14, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 41
+Revised Cal. P.U.C. Sheet No. 60447-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57383-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 41
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.)
+CONDITIONS:
+c. Types of NBT Paired Storage (Cont’d.)
+(Cont’d.)
+3) Billing for NBT Paired Storage
+(i) Large or Small NBT Paired Storage with Certified PCS
+Large or Small NBT Paired Storage operating with a Certified
+PCS to ensure NBT Integrity, as defined above, can be billed
+as if storage and REGF were all one generator (e.g., NBTS,
+NBTEXP).
+(ii) Estimation Methodology For Small NBT Paired Storage
+(≤10kW)14 (T)
+Small NBT Paired Storage without metering installed (as
+required for Large NBT Paired Storage) and not using a
+Certified PCS will be billed using an estimation methodology,
+which caps maximum allowable NBT bill credits based on a
+monthly output profile. For REGFs that utilize a technology
+other than only solar PV, the Customer must adhere to the
+metering and billing requirements applicable to Large NEM-
+Paired Storage Systems
+Solar PV estimation method
+a. PG&E will establish a maximum cap for NBT‐eligible
+exports for each monthly billing period based on the
+California Solar Initiative Expected Performance-Based
+Buydown (CSI EPBB) calculator production estimate
+for the customer’s NBT‐eligible generator. The
+production estimate is scaled to the customer’s solar
+PV generation system size.
+The monthly output estimation should align with the
+month from the start of the customer’s billing period
+(e.g., if the customer’s billing period is from January 15
+to February 15, the maximum allowed NBT export
+should be based on a January output estimation.)
+b. Any export exceeding this limit would not be eligible for
+NBT credit and would be forfeited. The forfeited
+exports are assumed to have occurred during the
+highest price billing period during the Customers’ billing
+cycle, regardless of when the excess energy was
+actually exported.
+(L)
+(L)
+14 Starting on April 15, 2024, residential customers billed utilizing the Estimation Methodology will be temporarily (T)
+billed on NBT as if storage and REGF were all one generator, until the billing is operational for these |
+customers. (T)
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 42
+Revised Cal. P.U.C. Sheet No. 60448-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57384-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 42
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.)
+CONDITIONS:
+c. Types of NBT Paired Storage (Cont’d.)
+(Cont’d.)
+3) Billing for NBT Paired Storage (Cont’d.)
+b. For example, if there was an export to the grid of 150 (L)
+kWh and the EPBB‐based limit for the month was set |
+at 100 kWh, then the excess 50 kWh would be |
+deducted from the actual exports recorded. (L)
+c. In the event the Small NBT-eligible GF is combined
+with other generation facilities pursuant to Special
+Condition 4, the billing provision of Special Condition 4
+will apply, not this billing estimation methodology.
+Should a customer decide to opt-out of using this
+estimation methodology, the customer must install one
+of the metering requirements described in the Large
+NBT Paired Storage section of this Special Condition,
+or a Certified PCS, as described above. The customer
+may only switch at the start of a new NBT Relevant
+Period.
+(iii) Large NBT Paired Storage systems without a Certified PCS are
+billed consistent with Special Condition 4 with the storage
+treated as a non-NBT eligible generator.15 (T)
+4) NBT Paired Storage Output Metering Costs
+PG&E will install standard metering equipment whenever possible
+while interconnecting NBT Paired Storage systems. Standard
+metering equipment for this purpose comprises a single meter
+which is a self-contained, single phase, SmartMeter. The fee for
+installation of standard metering equipment is no more than
+$600.00.
+However, this fee cap does not apply to NBT Paired Storage
+requiring complex metering solutions. Complex metering solutions
+include any configuration other than the standard equipment
+described above. The cost for complex metering varies and is
+based on actual costs which will be described in the customer’s
+invoice.
+5) NBT Paired Storage Interconnection Cost Responsibility
+For the purpose of determining if a NBT Paired Storage REGF
+exceeds 1 MW criterion, refer to the sizing definition included in the
+AC-Coupled and DC-Coupled definition at the beginning of this
+Special Condition.
+(L)
+(L)
+15 Starting on April 15, 2024, residential customers billed utilizing the Estimation Methodology will be temporarily (T)
+billed on NBT as if storage and REGF were all one generator, until the billing is operational for these |
+customers. (T)
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 43
+Revised Cal. P.U.C. Sheet No. 60475-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60449-E
+U 39 San Francisco, California
+ELECTRIC SCHEDULE NBT Sheet 43
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 8. NBT Paired Storage (Cont’d.)
+CONDITIONS:
+c. Types of NBT Paired Storage (Cont’d.)
+(Cont’d.)
+5) NBT Paired Storage Interconnection Cost Responsibility (Cont’d.)
+i) NBT Paired Storage REGF < 1 MW - The storage will have the
+same interconnection cost responsibility as the NBT-eligible
+generating facility that it is paired with a REGF less than or
+equal to 1 MW.
+ii) NBT Paired Storage REGF > 1 MW - The storage will have the
+same interconnection cost responsibility as the NBT-eligible
+generating facility that it is paired with a REGF greater than 1
+MW.
+iii) In the event the storage is added at a later date after the
+permission to operate is issued for the NBT-eligible generating
+facility, the storage applicant will be required to pay the same
+interconnection fees and costs that the NBT-eligible generating
+facility would be required to pay, per the requirements of PG&E
+Electric Rule 21.
+d. Requirements for Large NBT Paired Storage (i.e., All NBT Paired Storage
+Devices except Solar NBT paired with Storage Sized 10 KW and Smaller).
+For NBT-paired storage systems with storage devices larger than 10 kW,
+the NBT Paired Storage shall have a maximum output power no larger
+than 150% of the NBT-eligible generator’s maximum output capacity.
+Pursuant to Decision 20-06-017 the maximum output capacity limit was (T)
+temporarily waived for a period of 3 years. This waiver period was |
+extended to August 16, 2025, and has been further extended pending a |
+future Commission decision. (T)
+Large NBT Paired Storage systems are required to either:
+1) install a non-export relay on the storage device(s);
+2) install an interval meter directly to the NBT-eligible generator(s); or
+3) Operate using a Certified PCS.
+e. Requirements for Small NBT Paired Storage (i.e., Solar NBT Paired with
+Storage Devices Sized 10 KW or Smaller).
+Small NBT Paired Storage is not required to be sized to the customer
+demand or the NBT generator. Customers with Small NBT Paired Storage
+have the option to install metering as required for Large NBT Paired
+Storage or use a Certified PCS to ensure NBT Integrity, otherwise they will
+be billed using the estimation methodology described in Section 3(ii) of
+this special condition.
+(Continued)
+Advice 7733-E Issued by Submitted October 27, 2025
+Decision Shilpa Ramaiya Effective August 14, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 44
+Revised Cal. P.U.C. Sheet No. 60450-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57386-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 44
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 9. Natural or Human-Made Disasters
+CONDITIONS
+Pursuant to the Special Condition 7 (NBT Legacy Provisions), all Customers
+(Cont’d.):
+receiving service on this NBT Schedule who are impacted by a natural or (T)
+human-made disaster may request service on this tariff from (i) the date of the
+issuance of their original pre-natural or human-made disaster “permission to
+operate” (PTO) letter until (ii) the date of the customer’s first Energy True Up
+in the tenth (10th) year.
+Impacted Customers must:
+(i) reapply for interconnection with a replacement system sized to generate
+no more than 12 months of historic, or estimated, usage (kWh), and
+(ii) when reapplying for interconnection, submit proof of destruction of the
+renewable generator, if requested by PG&E.
+Customers with natural or human-made disasters who are reapplying to this
+tariff are also eligible to oversize their system per the applicability of this tariff
+by executing the NBT Oversized Generating Facility Attestation.
+If the generator needs to be replaced due to a natural or human-made
+disaster PG&E will true-up the NBT account(s) pursuant to Special Condition
+”Billing”, and Net Surplus Compensation (NSC) will be issued, if any, pursuant
+to Special Condition “Net Surplus Compensation”, up to the date of the natural
+or human-made disaster, unless the Customer requests that PG&E continue
+to bill the Customer on NBT through the Customer’s next regular true-up date.
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 45
+Revised Cal. P.U.C. Sheet No. 60451-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57387-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 45
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 9. Natural or Human-Made Disasters (Cont’d)
+CONDITIONS:
+The intervening period from destruction of the generator to PTO of the
+(Cont’d.)
+replacement generator must be no longer than four years, unless reasonable
+documentation acceptable to PG&E is provided showing that the new
+interconnection is in process. The interconnection application must be
+completed by the same NBT customer who was taking service on NBT prior
+to the Natural or Human-Made Disaster. If the generator is not replaced by the
+same NBT Customer, but the property is sold to a new owner after the
+destruction of the generator, this provision does not extend to the new owner.
+The new owner must apply and take service under the effective tariff at the
+time of interconnection and is subject to all the requirements of a new
+customer seeking interconnection for that tariff.
+Customers impacted by Natural or Human-Made Disasters who meet the
+requirements included in this Special Condition and whose replacement
+system is sized16 no greater than 1 megawatt (MW) are exempt from the (T)
+interconnection application fee when reapplying.
+Customers impacted by Natural or Human-Made Disasters must comply with
+all requirements including and not limited to the installation of Smart Inverter
+technology, in Electric Rule 21.
+___________________________________________
+16 Sized as defined in Special Condition 3. (T)
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 46
+Revised Cal. P.U.C. Sheet No. 60452-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57388-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 46
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 10. Prevailing Wage
+CONDITIONS
+(Cont’d.): California Public Utilities (PU) Code Section 769.2 requires a contractor that (T)
+installs a Renewable Electrical Generation Facility (REGF) or associated |
+battery storage to comply with prevailing wage requirements in order for the |
+facility to participate in a tariff developed pursuant to PU Code Section 2827 or |
+2827.1. These requirements are stated in PU Code Section 769.2 and in case |
+of any discrepancy between tariff language and the PU Code, the language in |
+the PU Code prevails. |
+|
+The requirements are: |
+|
+(1) The contractor shall pay each construction worker employed, at |
+minimum, the general prevailing rate of per diem wages, except that |
+an apprentice registered in a program approved by the Chief of the |
+Division of Apprenticeship Standards shall be paid, at minimum, the |
+applicable apprentice prevailing rate. |
+|
+(2) The contractor shall maintain and verify payroll records pursuant to |
+Section 1776 of the Labor Code and make those records available for |
+inspection and copying as provided in that Section. The contractor |
+shall not be required to provide copies of certified payroll records to |
+any entity other than the Department of Industrial Relations or the |
+California Public Utilities Commission (Commission)17. |
+|
+(3) The contractor shall biannually, on July 1 and December 31 of each |
+year, submit to the Commission digital copies of its certified payroll |
+records for projects18. The contractor’s submission of payroll records |
+is a condition to access tariffs developed pursuant to PU Code |
+Section 2827 or 2827.1 for a customer REGF subject to PU Code |
+Section 769.2. |
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+17 Pursuant to Decision 23-11-068 the contractor may also be required to provide these records to any entity that |
+the Commission designates to act on its behalf to implement this requirement. |
+18 Contractors may submit their records on a voluntary basis more often than the biannual requirement stated in |
+the PU Code 769.2. |
+(T)
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 47
+Revised Cal. P.U.C. Sheet No. 60453-E
+Cancelling Revised Cal. P.U.C. Sheet No. 57389-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 47
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 10. Prevailing Wage (Cont’d.)
+CONDITIONS:
+(Cont’d.) The requirements of PU Code Section 769.2 do not apply to projects with a (T)
+complete interconnection application submission date before January 1, |
+202419. All projects with an interconnection application submission date on or |
+after January 1, 2024, including applications to modify an existing REGF, are |
+subject to the PU Code Section 769.2 requirements with the following |
+exceptions: |
+|
+(1) A residential REGF that has a maximum generating capacity of 15 |
+kilowatts or less of electricity. |
+|
+(2) A residential REGF that is installed on a single-family home. |
+|
+(3) A project that is a public work, as defined in Section 1720 of the Labor |
+Code, and that is subject to Article 2 (commencing with Section 1770) |
+of Chapter 1 of Part 7 of Division 2 of the Labor Code. |
+|
+(4) A REGF that serves only a Modular Home20, a Modular Home |
+Community21, or multiunit housing that has two or fewer stories. |
+|
+If PU Code Section 769.2 applies, the Customer must execute the “Prevailing |
+Wage Disclosure Form” and submit the form with their interconnection |
+application, and customer’s contractor shall confirm to PG&E that it is up to |
+date with their past required submittals of payroll records. |
+|
+If customer’s contractor has been found to have willfully violated PU Code |
+Section 769.2 in connection with the construction of customer’s REGF, that |
+facility shall not be eligible to receive service pursuant to a tariff developed |
+based on PU Code Sections 2827 or 2827.1. Only in the case of multi-tariff |
+configuration, where there is more than one generator behind the same utility |
+billing meter (renewable or not), PG&E will treat all the generators as one |
+system and therefore none of the renewable generators will be served on |
+tariffs developed based on PU Code Section 2827 or 2827.1, and those |
+renewable generators will be compensated based on PURPA compliant tariff, |
+regardless which facility is subject to the violation of PU Code 769.2. |
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+19 If a customer or contractor provides documentation confirming that the facility that they are applying for was |
+built on or before December 31, 2023, the prevailing wage requirements will not apply to that project. |
+20 Modular Home: Modular home, although better constructed, is like manufactured home (as defined in the |
+California Health and Safety Code) where both are constructed offsite. Unlike manufactured home, modular |
+home must meet the same local or state building codes as an on-site home. Modular home does not have the |
+requirement to have a wheeled chassis permanently attached. |
+21 Modular Home Community: A community with two or more Modular Homes. (T)
+(Continued)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates
+PAGE 48
+Revised Cal. P.U.C. Sheet No. 60454-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE NBT Sheet 48
+NET BILLING TARIFF (NBT) SERVICE
+SPECIAL 10. Prevailing Wage (Cont’d.) (T)
+CONDITIONS: |
+(Cont’d.) If a willful wage violation is alleged, the customer’s REGF will remain on the |
+tariff until the Department of Industrial Relations (Department) or a court |
+completes their assessment and makes a final determination. At that time, if |
+the contractor is found in willful violation, then PG&E will be required to |
+remove the customer’s REGF implicated by the violation from this Schedule |
+(and in the case of multiple REGFs behind the same utility meter, all such |
+REGFs as explained above) and transition the Customer to the PURPA |
+compliant tariff on the next billing cycle (after the required 30/60-day |
+notification). While on the PURPA compliant tariff, the REGF will be |
+compensated based on that tariff and the REGF shall be subject to Departing |
+load and Standby charges as the REGF is no longer served under the |
+applicable NEM/NBT tariffs. The customer’s REGF billing meter will be trued |
+up at the end of the billing cycle (after the required 30/60-day notification) |
+before transitioning to the PURPA compliant tariff and any credits remaining |
+after the true-up (including all aggregated accounts) will be forfeited. |
+|
+If the violation occurs on a single generating account and there are no |
+aggregated account(s), PG&E will notify the Customer at least 30-days in |
+advance of automatically transitioning the customer’s REGF on their next |
+billing cycle to a PURPA compliant tariff. |
+|
+If the violation occurs on a single generating account with aggregated |
+accounts, PG&E will notify the Customer(s) at least 60-days in advance of |
+automatically transitioning the customer’s REGF on their next billing cycle to a |
+PURPA compliant tariff. |
+|
+If a willful wage violation is reversed or nullified by the determining body and |
+the generation account holder or Customer/property owner provides |
+documentation to the utility evidencing such reversal/nullification, then the |
+REGF (or the whole system for multi-tariff) will be able to regain access to the |
+applicable NEM/NBT tariff as of the next billing cycle or within 30-days after |
+receiving the notification of the reversal of the willful wage violation. |
+|
+Beginning January 1, 2025, contractors who have been found in violation of |
+the prevailing wage rule in PU Code Section 769.2 will not be permitted to |
+apply to interconnect facilities utilizing tariffs established pursuant to PU Code |
+Sections 2827 or 2827.1. |
+(T)
+Advice 7730-E Issued by Submitted October 17, 2025
+Decision Shilpa Ramaiya Effective October 17, 2025
+Vice President Resolution
+Regulatory Proceedings and Rates

@@ -1,0 +1,160 @@
+{
+  "region": "Fresno County, CA (G0600190)",
+  "release": "ResStock 2025.1; stock circa 2018; upgrade 0",
+  "population_models": 1236,
+  "population_basis": "occupied_housing_units",
+  "sample_models": 256,
+  "seed": 20260920,
+  "county_represented_dwellings": 313824.9394909091,
+  "full_county_mean_kwh": 10574.383355729631,
+  "sample_mean_kwh": 10397.815747869285,
+  "sample_discrepancy_pct": -1.669767417356538,
+  "sampling_standard_error_kwh": 247.54883897637228,
+  "climate_zone_model_counts": {
+    "13": 1218,
+    "16": 17,
+    "12": 1
+  },
+  "installed_cooling_weighted_pct": 75.88996763754045,
+  "held_out": {
+    "rmse_kw": 16.523412699414965,
+    "mae_kw": 13.569395600641307,
+    "energy_bias_kwh": 5240.948777608815,
+    "peak_bias_kw": 1.5460998754584239,
+    "reference": "Held-out ResStock simulated Sep-Dec loads; NOT measured-household validation",
+    "relative_energy_bias_pct": 1.6773362885454668,
+    "normalized_rmse_pct": 15.468060012439494,
+    "extrapolated_intervals": 0
+  },
+  "scenarios": [
+    {
+      "scenario": "published_2018_full",
+      "hours": 8760,
+      "households": 100.0,
+      "kwh_per_home": 10397.814126443407,
+      "cooling_kwh_per_home": 3802.481752266562,
+      "peak_kw_per_home": 3.2822704832663656,
+      "extrapolated_hours": 0
+    },
+    {
+      "scenario": "noaa_summer_2018",
+      "hours": 2928,
+      "households": 100.0,
+      "kwh_per_home": 4637.576108865865,
+      "cooling_kwh_per_home": 2641.138958605148,
+      "peak_kw_per_home": 3.377250905359083,
+      "extrapolated_hours": 0
+    },
+    {
+      "scenario": "noaa_summer_2024",
+      "hours": 2928,
+      "households": 100.0,
+      "kwh_per_home": 4938.856659259994,
+      "cooling_kwh_per_home": 2948.4453914023143,
+      "peak_kw_per_home": 3.8517772074219625,
+      "extrapolated_hours": 66
+    },
+    {
+      "scenario": "temperature_only_2024",
+      "hours": 2928,
+      "households": 100.0,
+      "kwh_per_home": 4938.86607684032,
+      "cooling_kwh_per_home": 2948.4467689293724,
+      "peak_kw_per_home": 3.8517772074219625,
+      "extrapolated_hours": 66
+    }
+  ],
+  "weather_comparison": {
+    "station_minus_simulation_mean_c": 0.0005742942850636455,
+    "station_vs_simulation_rmse_c": 0.5963242725146376,
+    "noaa_summer_mean_c": {
+      "2018": 27.789691484517306,
+      "2024": 28.88337887067395
+    }
+  },
+  "eia_california_context": {
+    "year": 2020,
+    "geography": "California",
+    "housing_units_million": 13.18,
+    "electricity_billion_kwh": 85.4,
+    "shares_pct": {
+      "space_heating": 4,
+      "water_heating": 5.0,
+      "air_conditioning": 18,
+      "refrigerators": 13.0,
+      "other": 60.0
+    }
+  },
+  "eia_raw_rows": [
+    {
+      "sheet": "Btu",
+      "values": [
+        "California                                                                        ",
+        13.18,
+        291.5,
+        10.6,
+        4,
+        15,
+        5.0,
+        53.6,
+        18,
+        37.2,
+        13.0,
+        175.1,
+        60.0
+      ]
+    },
+    {
+      "sheet": "physical units",
+      "values": [
+        "California                                                                        ",
+        13.18,
+        85.4,
+        3.1,
+        4,
+        4.4,
+        5.0,
+        15.7,
+        18,
+        10.9,
+        13.0,
+        51.3,
+        60.0
+      ]
+    },
+    {
+      "sheet": "rse",
+      "values": [
+        "California                                                                        ",
+        0,
+        1.47,
+        8.66,
+        8.06,
+        8.64,
+        8.36,
+        3.3,
+        2.64,
+        1.41,
+        1.66,
+        1.56,
+        0.96
+      ]
+    }
+  ],
+  "cec_annual_context_gwh": {
+    "2018": 2655.410678667845,
+    "2024": 3133.381846188961
+  },
+  "calibration_applied": false,
+  "empirical_household_validation": false,
+  "timestamp_audit": "Published EST interval-end; 3 wrapped hours excluded from fitting; exact embedded simulation temperatures used",
+  "limitations": [
+    "256-model study; stock sampling uncertainty remains.",
+    "Fresno County is not an exact PG&E service-area boundary and includes more than one climate zone.",
+    "County simulation weather and airport observations are not identical.",
+    "RECS California 2020 and CEC county statistics retained as context, not forced gross-load calibration.",
+    "PG&E E-1/RES is a class-average profile; not a Fresno-specific validation series.",
+    "Temperature-only fixed-stock scenarios; no adoption, efficiency, humidity, lag or capacity-limit model.",
+    "Held-out reference is a building simulation, not independent measured demand."
+  ]
+}

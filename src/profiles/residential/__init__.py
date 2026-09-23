@@ -13,3 +13,6 @@ __all__ = [
     "coarsen_profile", "read_resstock_csv", "read_noaa_global_hourly", "read_benchmarks_csv",
     "TemperatureWeather", "WeatherResponseModel",
 ]
+
+from .annual_weather import annual_noaa_weather
+__all__.append('annual_noaa_weather')

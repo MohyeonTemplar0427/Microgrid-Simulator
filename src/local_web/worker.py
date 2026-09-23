@@ -26,13 +26,13 @@ def capabilities():
     from ..equipment.ess import search
     from .site_profile import SITE_OPTIONS, SERVICE_CLASSES
     from .carbon import REGION_MAPPINGS
-    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "tariffs": [
+    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "solar_export": {"program":"pge_nbt_monthly","scope":"Monthly comparison only; annual true-up and NSC not implemented"}, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
          "service": tariff_service(key),
          "notes": get_tariff(key).notes,
          "effective_start": str(get_tariff(key).effective_start),
          "effective_end": str(get_tariff(key).effective_end) if get_tariff(key).effective_end else None}
-        for key in retail_tariff_ids_for_region("caiso_np15")
+        for key in (*retail_tariff_ids_for_region("caiso_np15"), "pge_e_elec_residential_tier3_bundled_2026_06_01")
     ]}
 
 
@@ -85,6 +85,10 @@ def execute(directory):
     if selected[pv_column].max() > request["pv_capacity_kw"] + 1e-8:
         raise ValueError("PV AC capacity must be at least the largest available PV value in the selected CSV intervals.")
     selected.to_csv(directory / "normalized.csv", index=False)
+    if "solar_export" in request:
+        from .export_study import execute as execute_export
+        execute_export(directory, request, selected, provenance)
+        return
     specification = MicrogridSpecification(
         battery=Battery(**request["battery"]),
         pv_capacity_kw=request["pv_capacity_kw"], load_kw=float(selected[load_column].max()),

@@ -1,0 +1,37 @@
+{
+  "county": "Alameda County, CA",
+  "county_gisjoin": "G0600010",
+  "population_basis": "occupied_housing_units",
+  "weather_year": 2024,
+  "fixed_stock_year": 2018,
+  "sample_models": 256,
+  "population_models": 2306,
+  "occupied_homes": 100,
+  "full_population_mean_kwh": 7093.399915299045,
+  "sample_mean_kwh": 7158.194830706631,
+  "sample_discrepancy_pct": 0.9134535791198939,
+  "hours": 8784,
+  "start_utc": "2024-01-01T08:00:00+00:00",
+  "end_exclusive_utc": "2025-01-01T08:00:00+00:00",
+  "annual_kwh_per_occupied_home": 7348.723053675742,
+  "coincident_peak_kw_per_occupied_home": 2.431255165491535,
+  "interpolated_weather_hours": 2,
+  "temperature_extrapolated_hours": 20,
+  "station": "72493023230",
+  "station_name": "Oakland International Airport",
+  "held_out_simulation_metrics": {
+    "rmse_kw": 10.005772140462502,
+    "mae_kw": 7.661173223873822,
+    "energy_bias_kwh": 2771.691053544559,
+    "peak_bias_kw": 18.21424618371944,
+    "reference": "Excluded Sep\u2013Dec ResStock simulation, not customer measurements",
+    "energy_bias_pct": 1.1601341215569838,
+    "normalized_rmse_pct": 12.250106356245077
+  },
+  "calibration_applied": false,
+  "empirical_validation": false,
+  "climate_zones": {
+    "3": 1990,
+    "12": 316
+  }
+}

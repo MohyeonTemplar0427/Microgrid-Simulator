@@ -33,5 +33,80 @@
     "retrieved": "2026-09-19",
     "sha256": "f8ded30de00a5eb63d187c93349a1023a8402b66d11982791a2ce9a262ef236a",
     "status": "research; see coverage matrix"
+  },
+  {
+    "file": "alw2025_extract.txt",
+    "url": "https://www.azusaca.gov/DocumentCenter/View/48871/Rules-and-Regulations-01-1-2025",
+    "retrieved": "2026-09-20",
+    "sha256": "268194b6cf68be2366caf794e97c0acceb9cbd58f4e18c520534e9f85b22f6a3",
+    "original_pdf_sha256": "3d0c0eb3d421cbbca1eee8f1c9ef16143da39a7887c7e7c63ae28fd24d7e9100",
+    "status": "Selected official PDF pages; see coverage matrix for supported rules."
+  },
+  {
+    "file": "alw2026_extract.txt",
+    "url": "https://www.azusaca.gov/DocumentCenter/View/49491/Rules-and-Regulations-01-1-2026",
+    "retrieved": "2026-09-20",
+    "sha256": "88816c9c7e087367ff699b84226bdc1db64eeb73970d43172faf8994800518db",
+    "original_pdf_sha256": "251c109a680aa6d24ba34837473b3a515a29e08059a677c4230be4eca1ed453a",
+    "status": "Selected official PDF pages; see coverage matrix for supported rules."
+  },
+  {
+    "file": "alw2026jun_extract.txt",
+    "url": "https://www.azusaca.gov/DocumentCenter/View/50568/Rules-and-Regulations-6-1-2026",
+    "retrieved": "2026-09-20",
+    "sha256": "fd4f142b793b5adeab2486d5d74c414998f7cc166a75a50969e9525459497519",
+    "original_pdf_sha256": "8cbaeef2329f187353eeadc520879a9194434a48a5651a501c98e910bc82f188",
+    "status": "Selected official PDF pages; see coverage matrix for supported rules."
+  },
+  {
+    "file": "bwp_adopted_extract.txt",
+    "url": "https://www.burbankwaterandpower.com/documents/d/guest/burbank_adopted_fee_schedule",
+    "retrieved": "2026-09-20",
+    "sha256": "fd42fd335573eac750573c2986aad3d0e97ab8f9a8aab3f9c31806205cb9b13a",
+    "original_pdf_sha256": "5b1f8b81927d519f2cf039835a1675fbc42c1b8aa8243f303faff516496cb3db",
+    "status": "Selected official PDF pages; see coverage matrix for supported rules."
+  },
+  {
+    "file": "ipu_domestic_adoption_extract.pdf",
+    "url": "https://www.cityofindustry.org/DocumentCenter/View/226/IPU-Rate-Information-PDF",
+    "retrieved": "2026-09-20",
+    "sha256": "38505d0efcb623801a588aeea734304df24543e59982f8933cfec1d9dba6b2bd",
+    "original_pdf_sha256": "75800f84772ddc50df50b6ff1907f26fda35fdf3bac3e31277b7dc54422bebf0",
+    "original_pages": [
+      1,
+      2,
+      3,
+      4,
+      11
+    ],
+    "status": "Resolution adoption and domestic schedule; general draft rules not treated as adopted."
+  },
+  {
+    "file": "pwp_current_code.txt",
+    "url": "https://library.municode.com/ca/pasadena/codes/code_of_ordinances?nodeId=TIT13UTSE_CH13.04PORARE",
+    "retrieved": "2026-09-20",
+    "sha256": "d08949b0df35318795bf7b4674ab765a3446fbc38ef009910784084dd09d3a1c",
+    "status": "Public Municode reader API text; adopted Ordinance 7466."
+  },
+  {
+    "file": "pwp_tax_code.txt",
+    "url": "https://library.municode.com/ca/pasadena/codes/code_of_ordinances?nodeId=TIT4REFI",
+    "retrieved": "2026-09-20",
+    "sha256": "b3f99472e97b0001e7ae296e5a64cd795d0bbe04d2d650e3d828d10e948f5d0e",
+    "status": "Public code text: underground, street-light and utility tax chapters; rates from dated electric card."
+  },
+  {
+    "file": "bwp_sample_bill.png",
+    "url": "https://www.burbankwaterandpower.com/documents/33530/79811/BWP-Small-business-Bill-1-2.png/1c687e98-28c0-2575-9dcb-034d08769a75?version=1.0&t=1753824473444",
+    "retrieved": "2026-09-20",
+    "sha256": "c1d716101f73c0bf4c85ad374c57bc8bf6c2b4467ba7b8e976f7cd52e6ca03c0",
+    "status": "Official example verifies tax bases, not current energy coefficients."
+  },
+  {
+    "file": "vpu_ecabf_research.txt",
+    "url": "https://cityofvernon.primegov.com/Public/CompiledDocument/4701",
+    "retrieved": "2026-09-20",
+    "sha256": "064c63b2a15b9cd5ed288c6d29a7caba46ce59cce5fa9121fc0295eb00f52924",
+    "status": "Research only. Adoption confirmed by official minutes CompiledDocument/5016. Monthly recalculation means prospective base factors alone do not establish an actual monthly charge."
   }
 ]

@@ -1,0 +1,38 @@
+{
+  "county": "Fresno County, CA",
+  "county_gisjoin": "G0600190",
+  "population_basis": "occupied_housing_units",
+  "weather_year": 2024,
+  "fixed_stock_year": 2018,
+  "sample_models": 256,
+  "population_models": 1236,
+  "occupied_homes": 100,
+  "full_population_mean_kwh": 10574.383355729631,
+  "sample_mean_kwh": 10397.815747869285,
+  "sample_discrepancy_pct": -1.669767417356538,
+  "hours": 8784,
+  "start_utc": "2024-01-01T08:00:00+00:00",
+  "end_exclusive_utc": "2025-01-01T08:00:00+00:00",
+  "annual_kwh_per_occupied_home": 11018.192099157868,
+  "coincident_peak_kw_per_occupied_home": 3.8517772074219625,
+  "interpolated_weather_hours": 2,
+  "temperature_extrapolated_hours": 66,
+  "station": "72389093193",
+  "station_name": "Fresno Yosemite International Airport",
+  "held_out_simulation_metrics": {
+    "rmse_kw": 16.523412699414965,
+    "mae_kw": 13.569395600641307,
+    "energy_bias_kwh": 5240.948777608815,
+    "peak_bias_kw": 1.5460998754584239,
+    "reference": "Excluded Sep\u2013Dec ResStock simulation, not customer measurements",
+    "energy_bias_pct": 1.6773362885454668,
+    "normalized_rmse_pct": 15.468060012439494
+  },
+  "calibration_applied": false,
+  "empirical_validation": false,
+  "climate_zones": {
+    "13": 1218,
+    "16": 17,
+    "12": 1
+  }
+}

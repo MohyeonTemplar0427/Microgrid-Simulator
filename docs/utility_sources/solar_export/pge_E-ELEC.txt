@@ -1,0 +1,303 @@
+PAGE 1
+Revised Cal. P.U.C. Sheet No. 61545-E
+Cancelling Revised Cal. P.U.C. Sheet No. 61116-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE E-ELEC Sheet 1
+RESIDENTIAL TIME-OF-USE (ELECTRIC HOME)
+SERVICE FOR CUSTOMERS WITH QUALIFYING ELECTRIC TECHNOLOGIES
+APPLICABILITY: This optional schedule applies to individually-metered electric service to residential
+customers who have one or more of the following qualifying electric technologies:
+• Electric vehicle charging;
+• Energy storage; or
+• Electric heat pump for water heating or climate control (space heating and/or
+cooling).
+To qualify as electric vehicle charging, a customer must have a currently registered Motor
+Vehicle, as defined by the California Motor Vehicle Code, which is a battery electric
+vehicle (BEV) or plug-in hybrid electric vehicle (PHEV) recharged via a recharging outlet
+at the customer’s premises. This schedule is not available to customers with a
+conventional, charge sustaining (battery recharged solely from the vehicle’s on-board
+generator) hybrid electric vehicle (HEV). Low speed electric vehicles and electrically
+powered motorcycles or bicycles, as defined by the California Motor Vehicle Code, are not
+eligible for this rate option. Service under this schedule is provided at the sole option of
+PG&E and based upon the availability of metering equipment and customer infrastructure
+improvements necessary for charging.
+To qualify as energy storage, a customer must apply for interconnection and be granted
+permission to operate in order to take service on Schedule E-ELEC. The installed storage
+capacity, in kWh, must be at least 0.05% of the customer’s annual consumption from the
+previous twelve months for customers with more than 6,000 kWh of annual usage. The
+installed storage capacity for customers with 6,000 kWh or less of annual usage must be
+at least 2 kWh. Customers with less than 12 months of usage history must install storage
+capacity, in kWh, of at least 2 kWh to be eligible for this rate schedule.
+To qualify as an electric heat pump, a customer must use an electric heat pump as its
+primary means for either: (a) water heating or (b) climate control (i.e., space heating
+and/or cooling).
+This rate schedule applies to whole-house service where the residential usage and the
+qualifying electric technology usage are metered together (that is, the qualifying electric
+technology usage is not metered separately).
+Schedule E-ELEC is also available to Net Energy Metering (both Schedule NEM and
+NEM2) customers.1 These customers must have one or more of the eligible technologies
+listed above to qualify for this rate.
+Residential customers billed on the Net Billing Tariff must be served under this schedule
+and are not required to have any of the eligible technologies listed above. If a NBT (T)
+residential customer is transitioned to the PURPA Compliant tariff due to a willful |
+prevailing wage violation by their contractor, that customer may continue to be served |
+under this rate schedule without the technology requirements. (T)
+The provisions of Schedule S/SB—Standby Service Special Conditions 1 through 6 shall (T)
+also apply to customers whose premises are regularly supplied in part (but not in whole)
+by electric energy from a nonutility source of supply. These customers will pay monthly
+reservation charges as specified under Section 1 of Schedule S/SB, in addition to all (T)
+applicable Schedule E-ELEC charges. See Special Condition 6 of this rate schedule for
+exemptions to standby charges.
+TERRITORY: This rate schedule applies everywhere PG&E provides electric service.
+1 With the exception of customers taking service on: Multiple Tariff (NEMMT/NEM2MT); Aggregation (NEMA/NEM2A); or Virtual
+NEM Tariffs (NEMV/NEMVMASH/NEM2V/NEM2VMSH/NEM2VSOM).
+(Continued)
+Advice 7975-E Issued by Submitted August 28, 2026
+Decision Shilpa Ramaiya Effective August 28, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 2
+Revised Cal. P.U.C. Sheet No. 61363-E
+Cancelling Revised Cal. P.U.C. Sheet No. 61248-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE E-ELEC Sheet 2
+RESIDENTIAL TIME-OF-USE (ELECTRIC HOME)
+SERVICE FOR CUSTOMERS WITH QUALIFYING ELECTRIC TECHNOLOGIES
+RATES: Total bundled service charges are calculated using the total rates below. Total bundled charges
+will include applicable generation charges per kWh for all kWh usage. Customers on this
+schedule will pay a monthly base services charge, with the base services charge revenue used to
+reduce their $ per kWh energy rates. For the purposes of assessing the base services charge,
+customers are assigned to one of the following income tiers and pay the associated monthly base
+services charge amount for their income tier:
+• Income Tier 1: Customers with incomes of 0 to 200 percent of the Federal Poverty
+Guideline levels applicable to households taking service on PG&E’s California Alternate
+Rates for Energy (CARE) program; or
+• Income Tier 2: Customers either (a) with incomes above 200 percent and below 250
+percent of the Federal Poverty Guideline levels applicable to households who take
+service on PG&E’s Family Electric Rate Assistance (FERA) program or (b) who live in an
+affordable rental unit within a property listed in the California Housing Partnership’s
+database that is restricted by the rules of federal or state subsidies to residents who
+have incomes at or below 80 percent of Area Median Income; or,
+• Income Tier 3: Customers who do not qualify for Tier 1 or Tier 2.
+Direct Access (DA) and Community Choice Aggregation (CCA) charges shall be calculated in accordance with the
+paragraph in this rate schedule titled Billing.
+TOTAL BUNDLED RATES
+Total Energy Rates ($ per kWh) PEAK PART-PEAK OFF-PEAK
+Summer Usage $0.55214 (R) $0.39026 (R) $0.33358 (R)
+Winter Usage $0.32063 (R) $0.29854 (R) $0.28468 (R)
+Base Services Charge Rates ($ per customer per
+day)
+Income Tier 1 $0.19713 (N)
+Income Tier 2 $0.39688 (N)
+Income Tier 3 $0.79343 (N)
+California Climate Credit (per household, semi- ($36.18) (N)
+annual payment occurring in the August and |
+September bill cycles) (N)
+Total bundled service charges shown on a customer’s bills are unbundled according to the component rates shown below.
+(Continued)
+Advice 7921-E Issued by Submitted June 1, 2026
+Decision D.26-04-036 Shilpa Ramaiya Effective June 1, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 3
+Revised Cal. P.U.C. Sheet No. 61118-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE E-ELEC Sheet 3
+RESIDENTIAL TIME-OF-USE (ELECTRIC HOME)
+SERVICE FOR CUSTOMERS WITH QUALIFYING ELECTRIC TECHNOLOGIES
+RATES:(Cont’d.) (L)
+UNBUNDLING OF TOTAL RATES |
+|
+Energy Rates by Component ($ per kWh) PEAK PART-PEAK OFF-PEAK |
+Generation: |
+Summer Usage $0.26299 $0.16388 $0.11878 |
+Winter Usage $0.10086 $0.08089 $0.06754 |
+Distribution**: |
+Summer Usage $0.23199 (I) $0.16922 (I) $0.15764 (I) |
+Winter Usage $0.16261 (I) $0.16049 (I) $0.15998 (I) |
+|
+Transmission* (all usage) $0.04638 $0.04638 $0.04638 |
+Transmission Rate Adjustments* (all usage) $0.00453 (I) $0.00453 (I) $0.00453 (I) |
+Reliability Services* (all usage) $0.00013 $0.00013 $0.00013 |
+Public Purpose Programs (all usage) $0.00614 (R) $0.00614 (R) $0.00614 (R) |
+Nuclear Decommissioning (all usage) ($0.00002) ($0.00002) ($0.00002) |
+Competition Transition Charges (all usage) $0.00027 $0.00027 $0.00027 |
+Energy Cost Recovery Amount (all usage) $0.00002 $0.00002 $0.00002 |
+Wildfire Fund Charge (all usage) $0.00591 $0.00591 $0.00591 |
+New System Generation Charge (all usage)** $0.00000 (R) $0.00000 (R) $0.00000 (R) |
+Wildfire Hardening Charge (all usage) $0.00391 (I) $0.00391 (I) $0.00391 (I) |
+Recovery Bond Charge (all usage) $0.00857 (I) $0.00857 (I) $0.00857 (I) |
+Recovery Bond Credit (all usage) ($0.00857) (R) ($0.00857) (R) ($0.00857) (R) |
+Bundled Power Charge Indifference ($0.01011) ($0.01011) ($0.01011) (L)
+Adjustment (all usage)***
+Base Services Charge Rates by Component ($
+per customer per day)
+Distribution
+Income Tier 1 ($0.10751) (N)
+Income Tier 2 ($0.02710) (N)
+Income Tier 3 $0.36945 (N)
+Public Purpose Program
+Income Tier 1 $0.19131 (N)
+Income Tier 2 $0.31065 (N)
+Income Tier 3 $0.31065 (N)
+Nuclear Decommissioning
+Income Tier 1 $0.00000 (N)
+Income Tier 2 $0.00000 (N)
+Income Tier 3 $0.00000 (N)
+New System Generation Charge
+Income Tier 1 $0.11333 (N)
+Income Tier 2 $0.11333 (N)
+Income Tier 3 $0.11333 (N)
+_____________ (L)
+|
+* Transmission, Transmission Rate Adjustments and Reliability Service charges are combined for presentation on customer
+|
+bills.
+|
+** Distribution and New System Generation Charges are combined for presentation on customer bills.
+|
+*** Direct Access, Community Choice Aggregation and Transitional Bundled Service Customers pay the applicable Vintaged
+|
+Power Charge Indifference Adjustment. Generation and Bundled PCIA are combined for presentation on bundled customer
+(L)
+bills.
+(Continued)
+Advice 7846-E Issued by Submitted February 27, 2026
+Decision Shilpa Ramaiya Effective March 1, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 4
+Revised Cal. P.U.C. Sheet No. 61119-E
+Cancelling Original Cal. P.U.C. Sheet No. 54738-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE E-ELEC Sheet 4
+RESIDENTIAL TIME-OF-USE (ELECTRIC HOME)
+SERVICE FOR CUSTOMERS WITH QUALIFYING ELECTRIC TECHNOLOGIES
+SPECIAL 1. TIME PERIODS: Times of the year and times of the day are defined as follows: (L)
+CONDITIONS: |
+All Year: |
+|
+Peak: 4:00 p.m. to 9:00 p.m. every day including weekends and holidays. |
+|
+Partial-Peak: 3:00 p.m. to 4:00 p.m. and 9:00 p.m. to 12:00 a.m. every day including |
+weekends and holidays. |
+|
+Off-Peak: All other hours. |
+|
+2. SEASONAL CHANGES: The summer season is June 1 through September 30 and |
+the winter season is October 1 through May 31. When billing includes use in both the |
+summer and winter periods, charges will be prorated based upon the number of days |
+in each period. |
+|
+3. ADDITIONAL METERS: If a residential dwelling unit is served by more than one |
+electric meter, the customer must designate which meter is the primary meter and |
+which is (are) the additional meter(s). |
+|
+4. BILLING: A customer’s bill is calculated based on the option applicable to the |
+customer. |
+|
+Bundled Service Customers receive generation and delivery services solely from |
+PG&E. The customer’s bill is based on the Unbundling of Total Rates set forth above. |
+|
+Transitional Bundled Service (TBS) Customers take TBS as prescribed in Rules |
+22.1 and 23.1, or take PG&E bundled service prior to the end of the six (6) month |
+advance notice period required to elect PG&E bundled service as prescribed in Rules |
+22.1 and 23.1. TBS customers shall pay all charges shown in the Unbundling of Total |
+Rates except for the Bundled Power Charge Indifference Adjustment and the |
+generation charge. TBS customers shall also pay for their applicable Vintaged Power |
+Charge Indifference Adjustment provided in the table below, and the short-term |
+commodity prices as set forth in Schedule TBCC. |
+(L)
+(Continued)
+Advice 7846-E Issued by Submitted February 27, 2026
+Decision Shilpa Ramaiya Effective March 1, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 5
+Revised Cal. P.U.C. Sheet No. 61120-E
+Cancelling Revised Cal. P.U.C. Sheet No. 60703-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE E-ELEC Sheet 5
+RESIDENTIAL TIME-OF-USE (ELECTRIC HOME)
+SERVICE FOR CUSTOMERS WITH QUALIFYING ELECTRIC TECHNOLOGIES
+SPECIAL 4. BILLING (Cont’d.): (L)
+CONDITIONS: |
+(Cont’d.) Direct Access (DA) and Community Choice Aggregation (CCA) Generation Service |
+Customers purchase energy from their non-utility provider and continue receiving delivery |
+services from PG&E. These customers shall pay all charges shown in the Unbundling of |
+Total Rates except for the Bundled Power Charge Indifference Adjustment and the |
+generation charge. These customers shall also pay for their applicable Vintaged Power |
+Charge Indifference Adjustment provided in the table below, the franchise fee surcharge |
+provided in Schedule E-FFS, and the Generation Service from their non-utility provider. |
+Exemptions to charges for DA and CCA customers, including exemptions continuous DA |
+service, are set forth in Schedules DA CRS and CCA CRS. |
+|
+|
+|
+Vintage Power Charge Indifference Adjustment (per kWh) Rate |
+2009 Vintage $0.02973 (I) |
+2010 Vintage $0.03366 (I) |
+2011 Vintage $0.03492 (I) |
+2012 Vintage $0.03676 (I) |
+2013 Vintage $0.03708 (I) |
+2014 Vintage $0.03686 (I) |
+2015 Vintage $0.03680 (I) |
+2016 Vintage $0.03687 (I) |
+2017 Vintage $0.03661 (I) |
+2018 Vintage $0.03679 (I) |
+2019 Vintage $0.03725 (I) |
+2020 Vintage $0.03632 (I) |
+2021 Vintage $0.05264 (I) |
+2022 Vintage $0.05272 (I) |
+2023 Vintage $0.05380 (I) |
+2024 Vintage $0.05066 (I) |
+2025 Vintage ($0.01011) (I) |
+2026 Vintage ($0.01011) (N) (L)
+(Continued)
+Advice 7846-E Issued by Submitted February 27, 2026
+Decision Shilpa Ramaiya Effective March 1, 2026
+Vice President Resolution
+Regulatory and Rates
+PAGE 6
+Revised Cal. P.U.C. Sheet No. 61121-E
+Cancelling Original Cal. P.U.C. Sheet No. 54740-E
+U 39 Oakland, California
+ELECTRIC SCHEDULE E-ELEC Sheet 6
+RESIDENTIAL TIME-OF-USE (ELECTRIC HOME)
+SERVICE FOR CUSTOMERS WITH QUALIFYING ELECTRIC TECHNOLOGIES
+SPECIAL 5. SOLAR GENERATION FACILITIES EXEMPTION: Customers who utilize solar (L)
+CONDITIONS: generating facilities which are less than or equal to one megawatt to serve load and who |
+(Cont’d.) do not sell power or make more than incidental export of power into PG&E’s power grid |
+and who have not elected service under Schedule NEM, will be exempt from paying the |
+otherwise applicable standby reservation charges. |
+|
+6. DISTRIBUTED ENERGY RESOURCES EXEMPTION: Any customer under a time-of- |
+use rate schedule using electric generation technology that meets the criteria as defined |
+in Electric Rule 1 for Distributed Energy Resources is exempt from the otherwise |
+applicable standby reservation charges. Customers qualifying for this exemption shall |
+be subject to the following requirements. Customers qualifying for an exemption from |
+standby charges under Public Utilities (PU) Code Sections 353.1 and 353.3, as |
+described above, must take service on a time-of-use (TOU) schedule in order to receive |
+this exemption until a real-time pricing program, as described in PU Code 353.3, is made |
+available. Once available, customers qualifying for the standby charge exemption must |
+participate in the real-time program referred to above. Qualification for and receipt of |
+this distributed energy resources exemption does not exempt the customer from |
+metering charges applicable to time-of-use (TOU) and real-time pricing, or exempt the |
+customer from reasonable interconnection charges, non-bypassable charges as required |
+in Preliminary Statement BB - Competition Transition Charge Responsibility for All |
+Customers and CTC Procurement, or obligations determined by the Commission to |
+result from participation in the purchase of power through the California Department of |
+Water Resources, as provided in PU Code Section 353.7. |
+|
+7. WILDFIRE FUND CHARGE: The Wildfire Fund Charge was imposed by California |
+Public Utilities Commission Decisions 19-10-056, 20-07-014, 20-09-005, and 20-09-023 |
+and is property of Department of Water Resources (DWR) for all purposes under |
+California law. The Charge became effective October 1, 2020, and applies to all retail |
+sales, excluding CARE and Medical Baseline sales. The Wildfire Fund Charge (where |
+applicable) is included in customers’ total billed amounts. The Wildfire Fund Charge |
+replaces the DWR Bond Charge imposed by California Public Utilities Commission |
+Decisions 02-10-063 and 02-12-082. (L)
+Advice 7846-E Issued by Submitted February 27, 2026
+Decision Shilpa Ramaiya Effective March 1, 2026
+Vice President Resolution
+Regulatory and Rates

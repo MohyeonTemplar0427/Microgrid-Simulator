@@ -18,6 +18,17 @@ def optimize(key,inputs,account,start,end,battery,wear):
  solar_bill=bill(key,solar,account,start,end)
  if battery is None:return {'baseline_bill':baseline_bill,'solar_bill':solar_bill,'bill':solar_bill,'dispatch':solar,'degradation_cost':0.,'objective_gap':0.}
  b=Battery(**battery)
+ if PLANS[key].get('dispatch_kind')=='monotone_energy_only':
+  # No PV, TOU, demand charge or export. With equal initial/final SOC and
+  # efficiencies <=1, any cycling weakly increases imported energy. Every
+  # marginal bill component is nonnegative, including declining surtax.
+  # Idling is therefore a global optimum, without convexifying the tariff.
+  if np.any(pv):raise ValueError('Monotone-energy dispatch requires no PV.')
+  out=solar.copy()
+  for column in ('pv_output_kw','pv_curtailed_kw','battery_charge_kw','battery_discharge_kw'):out[column]=0.
+  out['energy_kWh']=b.energy_kWh
+  return {'baseline_bill':baseline_bill,'solar_bill':solar_bill,'bill':solar_bill,'dispatch':out,
+          'degradation_cost':0.,'objective_gap':0.,'optimization_method':'analytic monotone-energy optimum'}
  charge=cp.Variable(n,nonneg=True);discharge=cp.Variable(n,nonneg=True);energy=cp.Variable(n+1)
  grid=cp.Variable(n,nonneg=True);output=cp.Variable(n,nonneg=True)
  constraints=[charge<=b.max_charge_kw,discharge<=b.max_discharge_kw,output<=pv,

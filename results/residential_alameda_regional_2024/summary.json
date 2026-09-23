@@ -1,0 +1,266 @@
+{
+  "year": 2024,
+  "households": 100,
+  "hours": 8784,
+  "population_basis": "occupied_housing_units",
+  "groups": [
+    {
+      "group": "bay_side",
+      "cec_zone": "3",
+      "population_models": 1990,
+      "sample_models": 128,
+      "county_occupied_share": 0.8629661751951431,
+      "represented_homes": 86.29661751951431,
+      "population_cooling_installed_pct": 70.0,
+      "sample_discrepancy_pct": 1.0180701286386817,
+      "annual_kwh_per_occupied_home": 7177.373261061093,
+      "cooling_kwh_per_occupied_home": 878.0963821639303,
+      "temperature_extrapolated_hours": 20,
+      "weather_quality_counts": {
+        "observed": 8782,
+        "interpolated": 2
+      },
+      "baseline_weather_cities": {
+        "Hayward Air Term": 1990
+      },
+      "cities": {
+        "CA, Oakland": 654,
+        "CA, Fremont": 297,
+        "In another census Place": 220,
+        "CA, Berkeley": 189,
+        "CA, Hayward": 189,
+        "CA, San Leandro": 132,
+        "CA, Alameda": 122,
+        "CA, Castro Valley": 94,
+        "CA, Union City": 86,
+        "Not in a census Place": 7
+      },
+      "held_out_simulation_metrics": {
+        "rmse_kw": 10.546440001381546,
+        "mae_kw": 8.314506467000218,
+        "energy_bias_kwh": 3954.359045673239,
+        "peak_bias_kw": 1.1456714150583593,
+        "energy_bias_pct": 1.6999540362377323,
+        "normalized_rmse_pct": 13.261505694233984
+      },
+      "weather_diagnostics": {
+        "station": "72493023230",
+        "sources": [
+          {
+            "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72493023230_2024.csv",
+            "sha256": "abbaabc997c54134f335df645c838753919a5f73af861a6c528be8ac3b165535"
+          },
+          {
+            "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72493023230_2025.csv",
+            "sha256": "de6a7b5a41299cf383930fabf681a8330bbe1a3c275959198b4ff9ade920d04a"
+          }
+        ],
+        "accepted_quality": [
+          "1",
+          "5"
+        ],
+        "interpolated_hours": 2,
+        "interpolation_limit_hours": 1,
+        "interpolated_timestamps": [
+          "2024-05-01 07:00:00+00:00",
+          "2024-06-12 10:00:00+00:00"
+        ],
+        "gap_policy": "Linear elapsed-time interpolation for bounded interior gaps only; no edge filling",
+        "calendar_timezone": "America/Los_Angeles",
+        "year": 2024,
+        "aggregation": "Mean of accepted reports per UTC hour; not a time-weighted temperature integral"
+      }
+    },
+    {
+      "group": "inland",
+      "cec_zone": "12",
+      "population_models": 316,
+      "sample_models": 128,
+      "county_occupied_share": 0.1370338248048569,
+      "represented_homes": 13.70338248048569,
+      "population_cooling_installed_pct": 75.9493670886076,
+      "sample_discrepancy_pct": -2.045839168143404,
+      "annual_kwh_per_occupied_home": 9493.496900481696,
+      "cooling_kwh_per_occupied_home": 2326.840117115417,
+      "temperature_extrapolated_hours": 378,
+      "weather_quality_counts": {
+        "observed": 8718,
+        "backup_bias_adjusted": 65,
+        "backup_bias_adjusted_interpolated": 1
+      },
+      "baseline_weather_cities": {
+        "Hayward Air Term": 316
+      },
+      "cities": {
+        "CA, Livermore": 123,
+        "CA, Pleasanton": 108,
+        "CA, Dublin": 76,
+        "Not in a census Place": 7,
+        "In another census Place": 2
+      },
+      "held_out_simulation_metrics": {
+        "rmse_kw": 12.658584813527522,
+        "mae_kw": 9.358256822315308,
+        "energy_bias_kwh": -274.81093413192593,
+        "peak_bias_kw": 4.725139585211821,
+        "energy_bias_pct": -0.1012814476916547,
+        "normalized_rmse_pct": 13.646048742920815
+      },
+      "weather_diagnostics": {
+        "method": "Backup plus mean primary-minus-backup difference by local month/hour",
+        "replaced_hours": 66,
+        "validation": "Days 10\u201311 each month withheld from offsets",
+        "validation_hours": 574,
+        "held_out_mae_c": 2.0062109326344872,
+        "held_out_rmse_c": 2.5906848552299775,
+        "held_out_bias_c": -0.4188692479860636,
+        "held_out_max_abs_error_c": 7.807142857142857,
+        "min_pairs_per_month_hour": 10,
+        "limitation": "Validation measures typical withheld days, not error at unobserved outage temperatures",
+        "backup_gap_policy": {
+          "station": "72493023230",
+          "sources": [
+            {
+              "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72493023230_2024.csv",
+              "sha256": "abbaabc997c54134f335df645c838753919a5f73af861a6c528be8ac3b165535"
+            },
+            {
+              "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72493023230_2025.csv",
+              "sha256": "de6a7b5a41299cf383930fabf681a8330bbe1a3c275959198b4ff9ade920d04a"
+            }
+          ],
+          "accepted_quality": [
+            "1",
+            "5"
+          ],
+          "interpolated_hours": 2,
+          "interpolation_limit_hours": 1,
+          "interpolated_timestamps": [
+            "2024-05-01 07:00:00+00:00",
+            "2024-06-12 10:00:00+00:00"
+          ],
+          "gap_policy": "Linear elapsed-time interpolation for bounded interior gaps only; no edge filling",
+          "calendar_timezone": "America/Los_Angeles",
+          "year": 2024,
+          "aggregation": "Mean of accepted reports per UTC hour; not a time-weighted temperature integral"
+        },
+        "station": "72492723285",
+        "backup_station": "72493023230",
+        "sources": [
+          {
+            "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72492723285_2024.csv",
+            "sha256": "6cbb194022b735f362ef19c0d1bb362ec69a77def6c7eff968a0b4e3c23f61f3"
+          },
+          {
+            "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72492723285_2025.csv",
+            "sha256": "0cee19871bffce624b17184f4d97cad590e39a264bc0de02c63ce45a4e115522"
+          }
+        ],
+        "backup_sources": [
+          {
+            "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72493023230_2024.csv",
+            "sha256": "abbaabc997c54134f335df645c838753919a5f73af861a6c528be8ac3b165535"
+          },
+          {
+            "path": "/Users/junhayang/Desktop/EnergyEngineerSession/Microgrid_Simulator/.cache/residential_fresno/noaa_72493023230_2025.csv",
+            "sha256": "de6a7b5a41299cf383930fabf681a8330bbe1a3c275959198b4ff9ade920d04a"
+          }
+        ],
+        "replaced_timestamps": [
+          "2024-03-04 20:00:00+00:00",
+          "2024-04-30 04:00:00+00:00",
+          "2024-04-30 22:00:00+00:00",
+          "2024-04-30 23:00:00+00:00",
+          "2024-05-01 00:00:00+00:00",
+          "2024-05-01 01:00:00+00:00",
+          "2024-05-01 02:00:00+00:00",
+          "2024-05-01 03:00:00+00:00",
+          "2024-05-01 04:00:00+00:00",
+          "2024-05-01 05:00:00+00:00",
+          "2024-05-01 06:00:00+00:00",
+          "2024-05-01 07:00:00+00:00",
+          "2024-05-08 18:00:00+00:00",
+          "2024-06-22 21:00:00+00:00",
+          "2024-06-27 23:00:00+00:00",
+          "2024-06-28 00:00:00+00:00",
+          "2024-07-06 21:00:00+00:00",
+          "2024-07-11 20:00:00+00:00",
+          "2024-08-06 18:00:00+00:00",
+          "2024-08-06 21:00:00+00:00",
+          "2024-08-07 19:00:00+00:00",
+          "2024-09-05 21:00:00+00:00",
+          "2024-09-06 14:00:00+00:00",
+          "2024-09-06 15:00:00+00:00",
+          "2024-09-06 16:00:00+00:00",
+          "2024-09-06 17:00:00+00:00",
+          "2024-09-06 18:00:00+00:00",
+          "2024-09-06 19:00:00+00:00",
+          "2024-09-06 20:00:00+00:00",
+          "2024-09-06 21:00:00+00:00",
+          "2024-09-06 22:00:00+00:00",
+          "2024-09-06 23:00:00+00:00",
+          "2024-09-07 00:00:00+00:00",
+          "2024-09-07 01:00:00+00:00",
+          "2024-09-07 02:00:00+00:00",
+          "2024-09-07 03:00:00+00:00",
+          "2024-09-07 04:00:00+00:00",
+          "2024-09-07 05:00:00+00:00",
+          "2024-09-07 06:00:00+00:00",
+          "2024-09-07 07:00:00+00:00",
+          "2024-09-07 08:00:00+00:00",
+          "2024-09-07 09:00:00+00:00",
+          "2024-09-07 10:00:00+00:00",
+          "2024-09-07 11:00:00+00:00",
+          "2024-09-07 12:00:00+00:00",
+          "2024-09-07 13:00:00+00:00",
+          "2024-09-07 21:00:00+00:00",
+          "2024-09-24 20:00:00+00:00",
+          "2024-09-24 21:00:00+00:00",
+          "2024-09-27 21:00:00+00:00",
+          "2024-10-03 20:00:00+00:00",
+          "2024-10-04 20:00:00+00:00",
+          "2024-10-06 20:00:00+00:00",
+          "2024-10-07 20:00:00+00:00",
+          "2024-10-08 20:00:00+00:00",
+          "2024-11-09 20:00:00+00:00",
+          "2024-11-18 18:00:00+00:00",
+          "2024-11-19 02:00:00+00:00",
+          "2024-11-19 03:00:00+00:00",
+          "2024-11-19 04:00:00+00:00",
+          "2024-11-19 05:00:00+00:00",
+          "2024-11-19 06:00:00+00:00",
+          "2024-11-19 08:00:00+00:00",
+          "2024-11-20 06:00:00+00:00",
+          "2024-11-20 07:00:00+00:00",
+          "2024-11-20 08:00:00+00:00"
+        ],
+        "accepted_quality": [
+          "1",
+          "5"
+        ]
+      }
+    }
+  ],
+  "annual_kwh_per_occupied_home": 7494.7605420918435,
+  "coincident_peak_kw_per_occupied_home": 2.361719146109441,
+  "same_stock_all_oakland_kwh_per_home": 7328.474061680629,
+  "regional_weather_change_pct": 2.26904644830086,
+  "previous_county_comparison": {
+    "previous_annual_kwh": 734872.3053675741,
+    "change_pct": 1.9872498575525421,
+    "warning": "Includes changed sampling and separate regional fits; not a pure weather effect",
+    "input_sha256": "60861d053cbc841dcaa34d892fd65f44eeeeeb77ff21a449b89f6f935232809b"
+  },
+  "gap_temperature_sensitivity": [
+    {
+      "temperature_shift_sign": -1,
+      "county_energy_change_kwh": -100.45779220659871
+    },
+    {
+      "temperature_shift_sign": 1,
+      "county_energy_change_kwh": 121.5802046988674
+    }
+  ],
+  "calibration_applied": false,
+  "empirical_accuracy_improvement_demonstrated": false
+}

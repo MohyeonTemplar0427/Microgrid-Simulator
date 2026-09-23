@@ -17,7 +17,12 @@ SERVICE_CLASSES = {
     ('pge', 'cleanpowersf', 'hetch_hetchy', 'peninsula', 'svce', 'sjce')
 }
 SERVICE_CLASSES.update(amp=['commercial', 'residential'], svp=['commercial', 'residential'], ladwp=['commercial', 'residential'], sce=['commercial', 'residential'])
+SERVICE_CLASSES['pge'] = ['commercial', 'residential']
 SERVICE_CLASSES['gwp'] = ['commercial', 'residential']
+SERVICE_CLASSES['pwp'] = ['commercial', 'residential']
+SERVICE_CLASSES['alw'] = ['commercial', 'residential']
+SERVICE_CLASSES['bwp'] = ['commercial', 'residential']
+SERVICE_CLASSES['ipu'] = ['residential']
 
 
 def customer_class(profile):
@@ -46,10 +51,10 @@ def validate_profile_request(request):
         selection = request['site']['utility']
         service = next((s['id'] for s in SERVICES if selection == s['id'] or selection in s['aliases']), selection)
         # Residential tier/minimum-bill dispatch is not connected to this path.
-        if classification == 'residential':
+        if classification == 'residential' and not (service=='pge' and 'solar_export' in request):
             raise ValueError('Residential billing and dispatch are currently supported only through AMP/SVP municipal studies; no commercial or flat-price fallback is applied.')
         if request['load']['mode'] == 'synthetic':
-            allowed = () if request['site_profile']['subtype'] == 'common_areas' else ('office', 'retail', 'school', 'industrial')
+            allowed = ('residential', 'multifamily') if classification=='residential' else (() if request['site_profile']['subtype'] == 'common_areas' else ('office', 'retail', 'school', 'industrial'))
             if request['load']['archetype'] not in allowed:
                 raise ValueError('Load archetype does not match the Step 2 site profile.')
     if classification not in SERVICE_CLASSES.get(service, []):

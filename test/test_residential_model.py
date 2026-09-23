@@ -289,3 +289,46 @@ def test_cli_rejects_weather_settings_in_published_mode_before_writing(tmp_path)
     with pytest.raises(ResidentialError, match="Published mode"):
         run_study(tmp_path / "study.json", tmp_path / "output")
     assert not (tmp_path / "output").exists()
+
+
+def test_expanded_sample_weights_cover_full_strata():
+    from tools.run_fresno_residential_study import select_population, TOTAL
+    stock = pd.DataFrame({'bldg_id': range(400), 'weight': [2.]*400,
+        'in.geometry_building_type_recs': ['detached']*300+['apartment']*100,
+        'in.hvac_cooling_type': ['AC']*400, TOTAL: np.arange(400)})
+    sample, strata = select_population(stock, size=256)
+    assert len(sample) == 256
+    assert sample.bldg_id.is_unique
+    assert sample.study_weight.sum() == pytest.approx(800)
+    for row in strata:
+        assert row['sample_models'] <= row['population_models']
+    full, _ = select_population(stock, size=400)
+    assert np.average(full[TOTAL], weights=full.study_weight) == pytest.approx(stock[TOTAL].mean())
+
+
+def test_benchmark_diagnostics_keep_gross_net_and_population_separate():
+    from tools.reconcile_fresno_benchmarks import compare_annual, TOTAL, NET
+    county = pd.DataFrame({'weight': [100., 200.], TOTAL: [1000., 2000.], NET: [800., 1500.]})
+    before = county.copy(deep=True)
+    gross, net = compare_annual(county, cec_gwh=.4, housing_units=600)
+    assert gross['model_gwh'] == pytest.approx(.5)
+    assert net['model_gwh'] == pytest.approx(.38)
+    assert gross['model_gwh_at_external_housing_count'] == pytest.approx(1)
+    assert gross['cec_to_model_ratio'] == pytest.approx(.8)
+    pd.testing.assert_frame_equal(before, county)
+    with pytest.raises(ValueError):
+        compare_annual(county, .4, 0)
+
+
+def test_occupied_population_excludes_vacant_failed_and_other_counties():
+    from tools.run_fresno_residential_study import county_population
+    stock = pd.DataFrame({'in.county': ['G0600190']*3+['other'],
+                          'completed_status': ['Success','Success','Fail','Success'],
+                          'in.vacancy_status': ['Occupied','Vacant','Occupied','Occupied'],
+                          'weight': [10.,1000.,1000.,1000.]})
+    occupied = county_population(stock, occupied_only=True)
+    assert occupied.index.tolist() == [0]
+    assert occupied.weight.sum() == 10
+    assert county_population(stock).index.tolist() == [0,1]
+    with pytest.raises(ValueError, match='No successful'):
+        county_population(stock.iloc[1:], occupied_only=True)

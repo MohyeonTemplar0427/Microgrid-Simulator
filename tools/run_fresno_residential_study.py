@@ -137,16 +137,25 @@ def save_profile(profile, output, name):
     (output / f"{name}.json").write_text(json.dumps(profile.manifest(), indent=2, allow_nan=False))
 
 
-def run(output, download=False):
+def county_population(metadata, occupied_only=False):
+    county = metadata.loc[(metadata["in.county"] == "G0600190") & (metadata.completed_status == "Success")].copy()
+    if occupied_only:
+        county = county.loc[county["in.vacancy_status"] == "Occupied"].copy()
+    if county.empty:
+        raise ValueError("No successful county models for the requested occupancy basis")
+    return county
+
+
+def run(output, download=False, sample_size=64, occupied_only=False):
     output.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
     for name, url in SOURCE_URLS.items():
         fetch(url, CACHE / name, download)
     metadata = pd.read_parquet(CACHE / "metadata.parquet")
-    county = metadata.loc[(metadata["in.county"] == "G0600190") & (metadata.completed_status == "Success")].copy()
-    selected, strata = select_population(county)
+    county = county_population(metadata, occupied_only)
+    selected, strata = select_population(county, size=sample_size)
     metadata_columns = ["bldg_id", "weight", "study_weight", "stratum", "inclusion_probability",
-                        "in.county", "in.county_name", "in.cec_climate_zone",
+                        "in.county", "in.county_name", "in.cec_climate_zone", "in.vacancy_status",
                         "in.geometry_building_type_recs", "in.hvac_cooling_type", "in.heating_fuel", TOTAL]
     selected[metadata_columns].to_csv(output / "selected_households.csv", index=False)
     pd.DataFrame(strata).to_csv(output / "sampling_strata.csv", index=False)
@@ -174,6 +183,7 @@ def run(output, download=False):
     if not all(np.allclose(t, temp_frames[0], atol=1e-5) for t in temp_frames):
         raise ValueError("County homes have different weather; model separate weather groups.")
     population = aggregate_population(profiles, selected.study_weight, households=100)
+    population.diagnostics["population_basis"] = "occupied_housing_units" if occupied_only else "all_housing_units"
     weather = TemperatureWeather(pd.DataFrame({"temperature_c": temp_frames[0]}, index=population.end_uses_kw.index),
         60, REGION, "amy2018", "ResStock embedded outdoor-air temperature (same simulation intervals)",
         {"origin": "ResStock weather constructed from NOAA ISD, NSRDB and MesoWest",
@@ -272,6 +282,7 @@ def run(output, download=False):
             space_heating=eia_physical[4], water_heating=eia_physical[6],
             air_conditioning=eia_physical[8], refrigerators=eia_physical[10], other=eia_physical[12]))
     summary = dict(region=REGION, release=PROVENANCE.release, population_models=len(county),
+        population_basis="occupied_housing_units" if occupied_only else "all_housing_units",
         sample_models=len(selected), seed=20260920, county_represented_dwellings=float(county.weight.sum()),
         full_county_mean_kwh=county_mean, sample_mean_kwh=sample_mean,
         sample_discrepancy_pct=100*(sample_mean/county_mean-1), sampling_standard_error_kwh=float(np.sqrt(variance)),
@@ -282,7 +293,7 @@ def run(output, download=False):
         cec_annual_context_gwh=cec.groupby("YEAR").GWH.sum().to_dict(),
         calibration_applied=False, empirical_household_validation=False,
         timestamp_audit="Published EST interval-end; 3 wrapped hours excluded from fitting; exact embedded simulation temperatures used",
-        limitations=["64-model pilot; stock sampling uncertainty remains.",
+        limitations=[f"{len(selected)}-model study; stock sampling uncertainty remains.",
           "Fresno County is not an exact PG&E service-area boundary and includes more than one climate zone.",
           "County simulation weather and airport observations are not identical.",
           "RECS California 2020 and CEC county statistics retained as context, not forced gross-load calibration.",
@@ -305,10 +316,13 @@ def draw_report(population, prediction, reference, scenarios, summary, output):
     energy = population.energy_kwh().sort_values(ascending=False).head(10)/population.households
     energy.iloc[::-1].plot.barh(ax=axes[0,0], color="#357a9c")
     axes[0,0].set(title="Published 2018: largest electricity end uses", xlabel="kWh per represented home")
-    for name, p in [("Published ResStock", population), ("Held-out reference", reference), ("Held-out prediction", prediction)]:
+    for name, p in [("Published ResStock", population), ("Held-out prediction", prediction)]:
         local = p.native_load_kw.tz_convert("Etc/GMT+8")
         local = local.loc[local.index >= pd.Timestamp("2018-01-01", tz="Etc/GMT+8")]
         local.resample("MS").mean().plot(ax=axes[0,1], label=name)
+    axes[0,1].axvline(pd.Period("2018-09", freq="M").ordinal, color="gray", linestyle=":")
+    axes[0,1].text(.03, .93, "Training: Jan–Aug", transform=axes[0,1].transAxes)
+    axes[0,1].text(.76, .93, "Test: Sep–Dec", transform=axes[0,1].transAxes)
     axes[0,1].set(title="Monthly average demand — 100-home community", ylabel="kW", xlabel="Month");axes[0,1].legend()
     for year, p in scenarios.items():
         local = p.native_load_kw.tz_convert("America/Los_Angeles") / p.households
@@ -318,7 +332,7 @@ def draw_report(population, prediction, reference, scenarios, summary, output):
     axes[1,1].scatter(x,y,s=12,alpha=.7);bound=[min(x.min(),y.min()),max(x.max(),y.max())]
     axes[1,1].plot(bound,bound,"k--",linewidth=1)
     axes[1,1].set(title="Held-out September–December daily means", xlabel="ResStock reference kW", ylabel="Surrogate prediction kW")
-    fig.suptitle("Fresno County residential pilot • 64 sampled models • simulated loads", fontsize=16)
+    fig.suptitle(f"Fresno County residential study • {summary['sample_models']} sampled models • simulated loads", fontsize=16)
     fig.savefig(output / "study_overview.png", dpi=160)
     plt.close(fig)
     rows = "\n".join(f"| {s['scenario']} | {s['hours']} | {s['kwh_per_home']:.1f} | {s['cooling_kwh_per_home']:.1f} | {s['peak_kw_per_home']:.3f} |" for s in summary["scenarios"])
@@ -329,9 +343,11 @@ Real ResStock and NOAA inputs; **simulated electricity demand**, not measured Fr
 ## Scope and sampling
 
 ResStock 2025.1 baseline, circa-2018 housing stock, AMY2018. County G0600190.
-64 seeded, stratified samples from {summary['population_models']} county models;
+{summary['sample_models']} seeded, stratified samples from {summary['population_models']} county models;
 dwelling type and installed cooling shares are preserved by expansion weights.
 The study produces a 100-home expected community profile, not 100 independent occupant simulations.
+Population basis: **{summary.get("population_basis", "all_housing_units")}**.
+Vacant units are excluded when the occupied-only option is selected.
 Full county modeled mean: {summary['full_county_mean_kwh']:.1f} kWh/home/year.
 Sample mean: {summary['sample_mean_kwh']:.1f}; discrepancy {summary['sample_discrepancy_pct']:+.2f}%.
 Estimated sampling standard error: {summary['sampling_standard_error_kwh']:.1f} kWh/home/year;
@@ -387,8 +403,8 @@ They are therefore contextual evidence, not a validation target.
 
 Next: inspect the held-out error by end use and season, then reconcile a local
 gross-consumption benchmark before applying calibration. Increase the sample
-before adopting the absolute load level: this pilot underestimates the full
-county simulation mean by about 10%. Browser code and
+as needed before adopting the absolute load level; assess the sampling
+discrepancy and standard error reported above. Browser code and
 existing reference datasets are unchanged.
 
 ## Reproduce
@@ -397,11 +413,12 @@ From the repository root, with pyarrow==19.0.1 available (the study also looks
 in .cache/residential_python):
 
 ```bash
-/usr/local/bin/python3 tools/run_fresno_residential_study.py --download
+/usr/local/bin/python3 tools/run_fresno_residential_study.py --download --sample-size {summary['sample_models']} {"--occupied-only" if summary.get("population_basis") == "occupied_housing_units" else ""} --output {output}
 ```
 
 Omit --download to replay from cache without network access. Data selection,
-seed, source release, sample size and fitting split are fixed in the script.
+seed, source release and fitting split are fixed in the script.
+Use --sample-size to change the sample size (default 64).
 Outputs are overwritten in results/residential_fresno_pilot (or --output).
 """
     (output / "README.md").write_text(report)
@@ -411,5 +428,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--download", action="store_true")
     parser.add_argument("--output", type=Path, default=ROOT/"results/residential_fresno_pilot")
+    parser.add_argument("--sample-size", type=int, default=64)
+    parser.add_argument("--occupied-only", action="store_true", help="Exclude vacant units before sampling and normalization")
     args = parser.parse_args()
-    run(args.output, args.download)
+    run(args.output, args.download, args.sample_size, args.occupied_only)

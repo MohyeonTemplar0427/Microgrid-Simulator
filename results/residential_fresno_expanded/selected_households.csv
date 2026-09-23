@@ -1,0 +1,257 @@
+bldg_id,weight,study_weight,stratum,inclusion_probability,in.county,in.county_name,in.cec_climate_zone,in.geometry_building_type_recs,in.hvac_cooling_type,in.heating_fuel,out.electricity.total.energy_consumption..kwh
+4524,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,14673.4823427736
+10233,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,24911.9201802106
+13077,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,17956.464471154002
+15182,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7593.1783578118
+15584,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Non-Ducted Heat Pump,Electricity,16585.7710758286
+18940,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,8982.62830163
+21174,253.90367272727272,1142.5665272727272,Mobile Home | no cooling,0.2222222222222222,G0600190,Fresno County,13,Mobile Home,None,Propane,4107.391048853
+23224,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Propane,9906.9744570408
+27276,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,15213.319254082
+27679,253.90367272727272,1218.7376290909092,Single-Family Attached | cooling installed,0.20833333333333334,G0600190,Fresno County,13,Single-Family Attached,Central AC,Natural Gas,8665.8184747438
+30343,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,18325.734019606
+32690,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Electricity,7117.5240108772
+34838,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,16085.205687927
+35936,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Central AC,Electricity,12172.706900756999
+36959,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,14162.659467415002
+37851,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,16498.435896909003
+41682,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,21020.522510094997
+44629,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Electricity,4056.103611568
+44803,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Central AC,Natural Gas,4954.0733706608
+45176,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,6632.1983186259995
+45863,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,4126.440668416
+51921,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,8037.1810291648
+52805,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,11057.2784075758
+56390,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,12964.8780035076
+57145,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Electricity,10892.572466123402
+58613,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,3543.229238718
+61522,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,4857.0668464246
+62256,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12305.4680955576
+64533,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Wood,16028.6429713784
+65859,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,7358.1353595114
+66026,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Room AC,Natural Gas,4261.8395028484
+69918,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Electricity,4284.699046324
+70486,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Room AC,Natural Gas,3180.7003248806
+72160,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,14409.1322374532
+80324,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,15301.5336462122
+83221,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,13255.8975762162
+83870,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,13343.525826206002
+86433,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,13376.349786068402
+87969,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,10513.924643425
+88197,253.90367272727272,1142.5665272727272,Single-Family Attached | no cooling,0.2222222222222222,G0600190,Fresno County,13,Single-Family Attached,None,Natural Gas,10579.572563149799
+90098,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,9157.8848016096
+92006,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,14846.980416331999
+93712,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9415.494272315402
+96026,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,13833.5406555804
+96468,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9309.9886870434
+97084,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,2558.8035139162002
+97851,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,18611.7713841212
+99529,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Electricity,9797.9520189264
+99653,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,2336.0695005642
+103716,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Electricity,4119.7000338014
+103875,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7434.333837763401
+106192,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,16040.3658141864
+107655,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Electricity,4347.1231842766
+108402,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,2282.7305657878
+114164,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,15972.9594680404
+115796,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Other Fuel,13959.5612157664
+122431,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,3544.6945940690002
+128282,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Room AC,Electricity,2778.6068165662
+128293,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,11680.0544317508
+128472,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,22582.298243190802
+131817,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,7314.1746989814
+132669,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,5158.050835520001
+134219,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Other Fuel,5897.176074564401
+134337,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Electricity,6747.961391355
+135453,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Non-Ducted Heat Pump,Electricity,5994.768740941
+135806,253.90367272727272,1142.5665272727272,Mobile Home | no cooling,0.2222222222222222,G0600190,Fresno County,13,Mobile Home,None,Natural Gas,3493.407156784
+138847,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9315.5570373772
+139032,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Electricity,14072.393577793402
+139280,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Electricity,10727.2803825306
+140308,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,14645.0544489642
+140965,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,2067.616400261
+144311,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9224.7050056152
+148338,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Propane,4442.0782110214
+148915,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Electricity,8539.7979145578
+155478,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Natural Gas,4332.7627018368
+156412,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Non-Ducted Heat Pump,Electricity,15708.0232205796
+162311,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,2713.838110052
+163706,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12641.620613077
+170478,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,14855.4794773678
+171233,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,3162.8229895984
+171956,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,5612.0179232598
+173985,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12418.0073865144
+174703,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Wood,5774.3792961506
+176117,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,1298.8909831264002
+176569,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9287.422214638
+179391,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Central AC,Electricity,7264.3526170474
+179958,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Electricity,4029.72721525
+181768,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Room AC,Natural Gas,4638.4358280554
+187389,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,4670.087503637
+188941,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Other Fuel,6968.6439072156
+190645,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Propane,16832.536916937002
+190751,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,22459.208393706802
+192761,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,2203.894447904
+193272,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,4486.3319426216
+193604,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,5451.1219057200005
+197450,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,5526.7342418316
+197934,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,6001.2163044854005
+199151,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,7537.2017834036005
+199538,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,5692.6124675648
+204790,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,17849.2004594608
+207942,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,16,Single-Family Detached,Central AC,Propane,12771.744168245801
+208239,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,5862.8867593509995
+209120,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12198.4971549346
+210342,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Propane,4869.3758313729995
+211437,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7989.9965868626
+211959,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9887.045624267199
+214183,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Propane,4039.3985605666
+214389,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,11812.5225554812
+214836,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,12876.077469237001
+220718,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Central AC,Natural Gas,2017.794318327
+225105,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,6827.9697935196
+226133,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,21105.513120453
+226385,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,7330.2936078424
+227972,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,9038.0187338978
+229264,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Central AC,Natural Gas,3692.9885555902006
+233264,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,8317.943114416401
+233439,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Natural Gas,3719.0718808379997
+234895,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12983.9276230706
+237667,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,20051.6295520138
+238689,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Central AC,Natural Gas,10710.5753315292
+240802,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,18235.4681299844
+241376,253.90367272727272,1218.7376290909092,Single-Family Attached | cooling installed,0.20833333333333334,G0600190,Fresno County,13,Single-Family Attached,Central AC,Natural Gas,11996.5711875668
+241863,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Central AC,Natural Gas,11308.147243667001
+241956,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,11434.167803853
+242468,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Electricity,2837.5141016764
+243064,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Ducted Heat Pump,Electricity,21929.042827715002
+243681,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Ducted Heat Pump,Electricity,4425.6662310902
+245583,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,13240.657880565801
+246210,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7018.759060219801
+252369,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,7447.228964852201
+252821,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Natural Gas,1430.4798936462
+253571,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9533.308842535802
+254126,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,5461.6724642472
+256781,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,8419.6387757758
+264246,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7468.623152976801
+264248,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,11409.256762886
+265360,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,17258.3691819376
+270123,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Electricity,10652.2541885594
+274148,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,1996.9862723428
+274980,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,8058.8682883596
+276577,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Other Fuel,2366.2558207948
+279703,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,10898.433887527399
+282454,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,8250.5367682704
+282931,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,14047.7756078966
+283077,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,20352.6135411092
+285202,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Natural Gas,8283.653799203
+287648,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Electricity,3223.7817722
+292506,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Natural Gas,2347.2062012318
+297151,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Central AC,Natural Gas,6160.353895604
+300177,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Other Fuel,13517.023899764401
+302209,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,16,Single-Family Detached,Central AC,Electricity,16069.6729212064
+303079,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,8024.5789731462
+305401,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,27350.2714842746
+306773,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Other Fuel,4187.3994510176
+312790,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,20683.1977082948
+315192,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,11148.130439337801
+317135,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,13501.1980619736
+317861,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Non-Ducted Heat Pump,Electricity,3277.4137780466
+318115,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Propane,10617.085660135399
+318948,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,2648.1901903272
+329144,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,16516.020161121
+329666,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9247.2714780206
+331955,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,10717.3159661438
+332947,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12814.2394734248
+332998,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,15414.3660082392
+338761,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,6552.7760586018
+346435,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,4028.5549309692
+348727,253.90367272727272,1218.7376290909092,Single-Family Attached | cooling installed,0.20833333333333334,G0600190,Fresno County,13,Single-Family Attached,Central AC,Natural Gas,8033.6641763224
+348821,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,28686.0894222462
+348965,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,4582.4592536472
+351267,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,7974.7568912122
+351971,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Room AC,Natural Gas,4135.5258715922
+352337,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,22778.6558602248
+355915,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Electricity,4626.126843107
+359289,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,12818.3424684076
+361038,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,3792.0465773178003
+363958,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,5134.3120788338
+364374,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,31958.8140631696
+366428,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7276.3685309256
+367454,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,32324.273687709003
+375103,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Room AC,Natural Gas,6353.4877308658
+375806,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Room AC,Natural Gas,4583.0453957876
+375838,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Electricity,5893.073079581601
+375952,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,3253.6750213604
+378077,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9195.9840407356
+380083,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,4330.4181332752005
+380630,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,3671.5943674656
+384204,253.90367272727272,1218.7376290909092,Single-Family Attached | cooling installed,0.20833333333333334,G0600190,Fresno County,13,Single-Family Attached,Central AC,Natural Gas,6841.1579916786
+388890,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,18430.0673205972
+388992,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,13,Single-Family Detached,None,Natural Gas,1868.9142146654
+392309,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9962.951031449
+392615,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,8009.9254196362
+395669,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Electricity,2060.8757656464
+395777,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,11811.350271200401
+396162,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Room AC,Natural Gas,7477.4152850828
+397754,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,3122.3791819108
+406441,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,10281.519284756401
+410670,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7393.3038879354
+412070,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Natural Gas,2626.2098600622003
+416083,253.90367272727272,1329.260404278075,Single-Family Detached | no cooling,0.19101123595505617,G0600190,Fresno County,16,Single-Family Detached,None,Natural Gas,7055.0998729246
+417024,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,5313.964644866401
+421333,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Propane,10905.174522142
+421735,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9344.8641443972
+423236,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12451.4174885172
+425409,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,11226.087344011
+428269,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,16,Single-Family Detached,Central AC,Natural Gas,9619.7648082448
+433414,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Central AC,Electricity,8875.657361007
+433754,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Electricity,2431.6106694494
+433847,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Propane,12356.4624617724
+439133,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,4651.9170972846
+440339,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Natural Gas,3832.1973139352003
+440898,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,22632.999538335403
+441155,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,9087.8408158318
+441221,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,16,Multi-Family with 5+ Units,None,Natural Gas,3370.3173073000003
+443954,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,9945.9529093774
+447057,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Ducted Heat Pump,Electricity,14908.818412144201
+449980,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Electricity,3997.489397528
+452121,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Propane,12242.7508865348
+452288,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Ducted Heat Pump,Electricity,8237.934712251801
+452975,253.90367272727272,1218.7376290909092,Single-Family Attached | cooling installed,0.20833333333333334,G0600190,Fresno County,13,Single-Family Attached,Central AC,Natural Gas,10473.1877646672
+453449,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Ducted Heat Pump,Electricity,8365.1275567186
+454305,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,18673.023237793
+456071,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,429.93525998340004
+459097,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,5356.459950045401
+465206,253.90367272727272,1332.9942818181817,Multi-Family with 5+ Units | no cooling,0.19047619047619047,G0600190,Fresno County,13,Multi-Family with 5+ Units,None,Natural Gas,2193.9300315172
+473118,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,11196.194094850602
+474076,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,8552.3999705764
+475368,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,16301.4921377346
+476885,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,5100.608905760801
+481465,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12555.7507895084
+482612,253.90367272727272,1364.7322409090907,Mobile Home | cooling installed,0.18604651162790697,G0600190,Fresno County,13,Mobile Home,Room AC,Electricity,16709.1539963828
+484676,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Central AC,Natural Gas,4312.8338690632
+485433,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,21046.312764272603
+485508,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,17306.1397663802
+487690,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,12787.570006036602
+488749,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Propane,4964.3308581178
+490573,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Central AC,Natural Gas,9305.2995499202
+490886,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Room AC,Electricity,10720.539747916
+491474,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,13385.4349892446
+492194,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,2486.4149595768
+497794,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Electricity,9172.2452840494
+505345,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,19602.058530327
+509689,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,18071.3483306724
+513070,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Natural Gas,6083.276204141401
+513615,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,20704.005754279
+522912,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,14243.25401172
+524345,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,20935.824970807203
+524534,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Room AC,Electricity,14783.3839940986
+528426,253.90367272727272,1142.5665272727272,Single-Family Attached | no cooling,0.2222222222222222,G0600190,Fresno County,13,Single-Family Attached,None,Natural Gas,4960.8140052754
+530488,253.90367272727272,1344.1959144385028,Multi-Family with 2 - 4 Units | cooling installed,0.18888888888888888,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,Ducted Heat Pump,Electricity,8162.6154472104
+530498,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,7146.5380468270005
+530812,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Natural Gas,5911.829628074401
+531273,253.90367272727272,1354.1529212121213,Multi-Family with 2 - 4 Units | no cooling,0.1875,G0600190,Fresno County,13,Multi-Family with 2 - 4 Units,None,Natural Gas,2921.6254988237997
+542989,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Electricity,18134.3586107654
+544727,253.90367272727272,1320.2990981818182,Multi-Family with 5+ Units | cooling installed,0.19230769230769232,G0600190,Fresno County,13,Multi-Family with 5+ Units,Central AC,Electricity,6100.274326213001
+546282,253.90367272727272,1311.5312015696536,Single-Family Detached | cooling installed,0.1935933147632312,G0600190,Fresno County,13,Single-Family Detached,Central AC,Natural Gas,10430.399388418002

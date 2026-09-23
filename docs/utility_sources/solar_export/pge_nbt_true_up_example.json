@@ -1,0 +1,25 @@
+{
+  "period_start": "2024-01-31",
+  "period_end": "2025-01-31",
+  "annual_import_kwh": 3000.0,
+  "annual_export_kwh": 5000.0,
+  "bank": {
+    "generation": 136.94,
+    "delivery": 22.0,
+    "bonus": 1.05
+  },
+  "offsettable_paid": {
+    "generation": 4.0,
+    "delivery": 500.0
+  },
+  "account_confirmed": true,
+  "history_reference": "PG&E published hypothetical guide example",
+  "rates": {
+    "month": "2025-01",
+    "generation_recoupment_per_kwh": 0.04,
+    "delivery_recoupment_per_kwh": 0.01,
+    "nsc_per_kwh": 0.02965,
+    "source_reference": "PG&E guide example; not a production rate table",
+    "evidence_kind": "hypothetical"
+  }
+}

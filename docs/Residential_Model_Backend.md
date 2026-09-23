@@ -285,3 +285,135 @@ The pilot computes its bound from the source's five-decimal kWh precision.
 and exclusive `end` arguments. Every hour in that window must have an accepted
 temperature observation, including boundary hours; missing hours are never
 filled. This allows a complete summer study despite gaps elsewhere in a year.
+
+### Expanded Fresno study and benchmark audit
+
+The expanded run is saved separately in `results/residential_fresno_expanded`,
+preserving the 64-model pilot. Reproduce it with `--sample-size 256 --output
+results/residential_fresno_expanded`. The sample size is chosen before inspecting
+annual energy. This is a new stratified draw with the same seed and design,
+not a nested extension of the pilot. The plot shows the published reference
+for all twelve months, one held-out prediction line, and the train/test divider.
+
+Run `python3 tools/reconcile_fresno_benchmarks.py` after that study to compare
+sampling uncertainty and local benchmark accounting. Its report records CEC
+annual county totals, full-population ResStock gross and signed-net energy,
+and a Census housing-count cross-check. Signed-net energy is not positive grid
+imports. ResStock includes vacant housing units; counts of occupied households
+and utility accounts cannot silently replace its denominator. The CEC export
+does not isolate residential self-generation. Diagnostic ratios are therefore
+exported without modifying the load profiles or enabling calibration.
+
+### Occupied-home study
+
+For community load estimates, exclude vacant units before sampling and
+recomputing expansion weights:
+
+```bash
+python3 tools/run_fresno_residential_study.py --occupied-only --sample-size 256 --download --output results/residential_fresno_occupied
+```
+
+The selected-household export includes vacancy status; the summary and profile
+provenance diagnostics record `occupied_housing_units`. The reference annual
+mean and sampling error are computed against occupied county models only.
+The earlier all-unit studies remain available as historical comparisons.
+County-wide CEC energy still includes vacant-unit consumption and must not be
+divided by occupied households and used as an exact calibration target without
+reconciling that contribution.
+
+## Full local-year hourly generator: Fresno and Alameda
+
+The reusable CLI defaults to occupied homes, 256 stock models, 100 represented
+homes, and weather year 2024. Available counties are `fresno` and `alameda`:
+
+```bash
+python3 tools/build_county_residential_year.py --county fresno --download
+python3 tools/build_county_residential_year.py --county alameda --download
+```
+
+Use `--year`, `--sample-size`, `--households`, and `--output` to configure a run.
+Omit `--download` for cache-only operation. The shared California source cache
+uses the existing `.cache/residential_fresno` directory; building IDs and station
+IDs keep counties' data distinct. No UI registration or browser code is changed.
+
+Each output directory contains:
+
+- `hourly_load_with_quality.csv`: UTC interval start, local timestamp with offset,
+  disjoint end-use kW, `native_load_kw`, temperature, weather quality,
+  temperature-extrapolation flag, and represented occupied-home count.
+- `hourly_load.csv.gz` and `hourly_load.json`: the existing profile format and
+  manifest, including coefficients, weather source, and occupied-stock basis.
+- `weather_hourly_audit.csv`: observed and used temperatures; interpolated
+  observations remain blank in the observed column.
+- `monthly_energy.csv`: local-month kWh, elapsed hours, average kW, kWh/home.
+- `summary.json`, `sources.json`, and selected model IDs/weights for audit.
+
+`annual_noaa_weather` constructs the full local-calendar-year UTC index. For
+2024, it contains 8,784 elapsed hours, including both fall-back hours. It reads
+adjoining 2025 UTC observations for the end of December 31 in Pacific time.
+It accepts temperature QC flags 1/5, averages duplicate timestamps and then
+reports within each hour, and rejects missing boundary hours. The generator
+explicitly permits only isolated interior one-hour gaps, linearly interpolated
+between adjacent accepted hours; longer gaps fail without partial filling.
+Every replacement is flagged. The original strict NOAA reader is unchanged.
+
+The 2024 Fresno and Oakland station series each require two such replacements.
+Oakland International Airport is the initial Alameda proxy. Alameda's inland
+microclimates are not spatially weighted in this first county scenario; do not
+treat Oakland weather as equally representative of every Alameda household.
+Livermore's checked 2024 series has a longer gap and is not silently substituted.
+
+The population and equipment remain circa 2018. Weather-year changes do not
+imply updated heat-pump/EV adoption, efficiency or occupancy distributions.
+The estimates remain uncalibrated, and held-out tests compare to simulation,
+not customer meters. County-total calibration requires accounting reconciliation.
+
+Offline verification:
+
+```bash
+python3 -m pytest -q test/test_residential_annual_weather.py test/test_residential_model.py test/test_site_profile.py
+```
+
+## Alameda regional stock and weather split
+
+```bash
+python3 tools/build_alameda_regional_year.py --download
+```
+
+The regional study selects occupied Alameda stock by `in.cec_climate_zone`:
+zone 3 is the Bay-side proxy group; zone 12 metadata identifies Livermore,
+Pleasanton and Dublin. It draws 128 models per group, with dwelling-type and
+cooling-ownership strata inside each group. Actual stock expansion weights,
+not sample counts, determine county shares (approximately 86.3% / 13.7%).
+Per-group profiles represent 100 occupied homes; the county profile represents
+100 occupied homes distributed across the two groups. `--households` changes
+the county total, while per-group exports remain normalized to 100 homes.
+
+`combine_regional_profiles` sums already-scaled regional loads on identical
+grids and checks their occupied-home basis, stock release and end-use mapping.
+It does not average temperatures before estimating demand. Contribution
+manifests record scaling and the 100-home coefficient basis.
+
+Zone 3 uses Oakland temperatures. Zone 12 uses Livermore, whose 2024 record
+has 66 missing accepted hourly values. `regional_noaa_weather` replaces them
+with Oakland plus month/hour mean Livermore-minus-Oakland offsets. Offset
+validation withholds days 10–11 of each month; only observed paired data fit
+offsets. Final gap reconstruction uses all valid pairs. The held-out weather
+RMSE is approximately 2.59°C; replacements are estimates and are flagged.
+One replacement relies on an isolated interpolated Oakland temperature,
+which is separately flagged. Raw observed temperatures remain available.
+Missing backup coverage or fewer than 10 month/hour pairs fails explicitly.
+
+The study compares against both the previous county model and a controlled
+same-stock/same-regional-model all-Oakland counterfactual. Only the latter
+isolates prediction-weather effects. It also shifts replacement temperatures
+by plus/minus held-out RMSE as a sensitivity check, not a confidence interval.
+
+Both stock groups' original simulations used county-assigned Hayward weather.
+The regional split preserves those matched training pairs; it does not rerun
+EnergyPlus under inland baseline weather. Extrapolation flags remain material,
+particularly inland. Empirical accuracy improvement and local calibration
+have not been established. No browser integration is changed by this study.
+
+Outputs: `results/residential_alameda_regional_2024/`, including per-region
+and combined hourly CSVs, quality flags, monthly energy, summaries and hashes.

@@ -1,0 +1,10 @@
+stratum,population_models,sample_models,represented_dwellings
+Mobile Home | cooling installed,3,2,761.7110181818182
+Multi-Family with 2 - 4 Units | cooling installed,9,3,2285.1330545454543
+Multi-Family with 2 - 4 Units | no cooling,5,2,1269.5183636363636
+Multi-Family with 5+ Units | cooling installed,40,16,10156.146909090909
+Multi-Family with 5+ Units | no cooling,15,6,3808.555090909091
+Single-Family Attached | cooling installed,28,11,7109.302836363635
+Single-Family Attached | no cooling,7,3,1777.3257090909092
+Single-Family Detached | cooling installed,160,65,40624.58763636364
+Single-Family Detached | no cooling,49,20,12441.279963636363

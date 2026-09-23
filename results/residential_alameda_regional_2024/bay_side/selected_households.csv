@@ -1,0 +1,129 @@
+bldg_id,in.cec_climate_zone,in.city,in.puma,in.vacancy_status,in.hvac_cooling_type,in.geometry_building_type_recs,in.weather_file_city,weight,study_weight,stratum,out.electricity.total.energy_consumption..kwh
+2932,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,6971.5746179176
+6855,3,"CA, Alameda",G06000105,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,2586.9383366554002
+7874,3,"CA, Oakland",G06000103,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,11811.6433422706
+8895,3,"CA, Oakland",G06000103,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,5980.4082585012
+10414,3,"CA, Berkeley",G06000101,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,5918.570262689001
+15379,3,"CA, Hayward",G06000107,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,6095.8782601600005
+16273,3,"CA, Oakland",G06000102,Occupied,Ducted Heat Pump,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,2451.8325732932
+22065,3,"CA, Hayward",G06000106,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,27217.8033605442
+25061,3,"CA, Castro Valley",G06000106,Occupied,Room AC,Mobile Home,Hayward Air Term,253.90367272727272,2539.0367272727267,Mobile Home | cooling installed,6027.885771873601
+29526,3,"CA, Oakland",G06000102,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,2408.4580549036
+32272,3,"CA, Alameda",G06000105,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,7577.352520021001
+37056,3,"CA, Oakland",G06000102,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4464.3516123566005
+42872,3,"CA, Hayward",G06000107,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,3895.2075940282
+44609,3,"CA, Hayward",G06000107,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,7744.1099589648
+46563,3,"CA, Oakland",G06000103,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,2683.065647681
+50085,3,In another census Place,G06000108,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,5561.9027702556
+55916,3,"CA, Oakland",G06000103,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,4452.3356984784
+59505,3,"CA, Oakland",G06000103,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,3299.6871793818
+62134,3,"CA, Oakland",G06000103,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,7295.7112215587995
+68451,3,"CA, Oakland",G06000104,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,10033.581159367199
+70618,3,In another census Place,G06000102,Occupied,Non-Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,15023.116129522201
+72150,3,"CA, Alameda",G06000105,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,4147.093321212122,Multi-Family with 2 - 4 Units | no cooling,7018.4659891496
+75376,3,"CA, Castro Valley",G06000106,Occupied,None,Single-Family Attached,Hayward Air Term,253.90367272727272,4443.3142727272725,Single-Family Attached | no cooling,3581.328477844
+79288,3,In another census Place,G06000108,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,18757.134634940398
+87205,3,"CA, Oakland",G06000102,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,8738.7931712236
+96456,3,"CA, San Leandro",G06000105,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,12177.3960378802
+99681,3,"CA, Oakland",G06000103,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,5635.1705378056
+105160,3,"CA, Berkeley",G06000101,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,6212.813617169801
+105807,3,In another census Place,G06000108,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,4171.866684297
+107092,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,10756.5874895506
+108870,3,"CA, Castro Valley",G06000106,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,6172.9559516226
+110892,3,"CA, Hayward",G06000107,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4681.224204304601
+115789,3,"CA, San Leandro",G06000105,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,9572.8734370128
+121594,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,9031.5711703534
+122149,3,"CA, Berkeley",G06000101,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,2860.6667162221997
+122426,3,"CA, San Leandro",G06000105,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4470.5061048308
+124991,3,"CA, Berkeley",G06000101,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,4147.093321212122,Multi-Family with 2 - 4 Units | no cooling,3988.9903364922
+125095,3,In another census Place,G06000103,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,11250.4122428376
+126445,3,"CA, Oakland",G06000102,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,4076.618586482
+127698,3,"CA, Castro Valley",G06000106,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,7413.232720709001
+152006,3,"CA, Oakland",G06000102,Occupied,Room AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,2937.1582655444004
+154041,3,"CA, Castro Valley",G06000107,Occupied,None,Mobile Home,Hayward Air Term,253.90367272727272,634.7591818181818,Mobile Home | no cooling,5638.1012485076
+166840,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,6446.098189049
+173858,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,8667.869972235201
+174043,3,"CA, Oakland",G06000102,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,4147.093321212122,Multi-Family with 2 - 4 Units | no cooling,9715.012906059801
+182916,3,"CA, Hayward",G06000107,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,6870.1720276284
+183452,3,"CA, Hayward",G06000106,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,7133.349848668
+184031,3,"CA, Hayward",G06000107,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,7163.8292399688
+190797,3,"CA, San Leandro",G06000105,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,4167.470618244
+196185,3,"CA, Berkeley",G06000101,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,22525.735526642202
+197778,3,"CA, Fremont",G06000108,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,5026.4619250002
+199029,3,"CA, Berkeley",G06000101,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,7178.775864549
+204195,3,"CA, Hayward",G06000107,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,8585.8100725792
+207000,3,"CA, Oakland",G06000103,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,3975.2159961928
+207407,3,"CA, Fremont",G06000109,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,5284.950608916601
+210928,3,"CA, Oakland",G06000103,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,9378.8603885404
+212861,3,"CA, Oakland",G06000104,Occupied,Central AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,7455.728025888001
+217203,3,"CA, Oakland",G06000103,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,4147.093321212122,Multi-Family with 2 - 4 Units | no cooling,6384.553264307
+217759,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,18649.2844811068
+218531,3,"CA, Oakland",G06000103,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,5255.057359756201
+218778,3,"CA, Hayward",G06000106,Occupied,Room AC,Mobile Home,Hayward Air Term,253.90367272727272,2539.0367272727267,Mobile Home | cooling installed,5940.2575218838
+220228,3,"CA, Oakland",G06000105,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,22256.1101420582
+220554,3,In another census Place,G06000107,Occupied,None,Single-Family Attached,Hayward Air Term,253.90367272727272,4443.3142727272725,Single-Family Attached | no cooling,5274.693121459601
+223625,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,11413.652828939
+228726,3,"CA, Fremont",G06000109,Occupied,Central AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,4634.918975213
+235713,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,20068.6276740854
+235789,3,"CA, Fremont",G06000109,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4223.154121582
+236834,3,In another census Place,G06000106,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,2698.3053433314003
+245470,3,In another census Place,G06000108,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,4443.2504953022
+246967,3,"CA, Oakland",G06000104,Occupied,Non-Ducted Heat Pump,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,4475.195241954
+249607,3,"CA, Fremont",G06000109,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4061.965032972
+302787,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,12076.8726608016
+306048,3,In another census Place,G06000101,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,4054.638256217
+306833,3,"CA, Berkeley",G06000101,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,6313.6300653186
+331040,3,"CA, Berkeley",G06000101,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,5403.9374634178
+337772,3,"CA, Hayward",G06000107,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,15221.8183151178
+339667,3,"CA, Fremont",G06000109,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,3421.0186024446
+341561,3,"CA, Berkeley",G06000101,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,4195.6054409832
+344443,3,In another census Place,G06000101,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,7833.203564305601
+350086,3,In another census Place,G06000102,Occupied,Room AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,6519.0728855288
+354079,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,5782.5852861162
+361113,3,"CA, Union City",G06000108,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,11869.964485240402
+367043,3,"CA, Oakland",G06000102,Occupied,Ducted Heat Pump,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4579.5285429452
+368821,3,"CA, Berkeley",G06000101,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,6785.4744883406
+370333,3,"CA, Oakland",G06000102,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,7495.878762505401
+375329,3,"CA, Oakland",G06000104,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,3791.1673641072002
+376644,3,"CA, San Leandro",G06000105,Occupied,Ducted Heat Pump,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,7380.9949029869995
+377576,3,In another census Place,G06000106,Occupied,None,Mobile Home,Hayward Air Term,253.90367272727272,634.7591818181818,Mobile Home | no cooling,4134.0605162412
+387550,3,"CA, Oakland",G06000102,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,2649.6555456782003
+387941,3,"CA, Castro Valley",G06000106,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,9394.979297401402
+401847,3,"CA, Hayward",G06000107,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,11107.100489509801
+423808,3,In another census Place,G06000103,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,3444.4642880606
+428636,3,In another census Place,G06000106,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,5836.5103630329995
+431414,3,"CA, Berkeley",G06000101,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,8122.7577816632
+436607,3,"CA, Berkeley",G06000101,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,3142.0149436142
+438095,3,"CA, Oakland",G06000102,Occupied,Room AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,6486.2489256664
+441249,3,"CA, Hayward",G06000107,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,5729.2463513398
+446158,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,9333.4343726594
+454082,3,"CA, Oakland",G06000102,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,5930.586176567201
+454535,3,"CA, Castro Valley",G06000106,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,5731.2978488312
+465916,3,"CA, Hayward",G06000107,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,4798.7457034548
+467438,3,"CA, Oakland",G06000103,Occupied,Room AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,7551.5622658434
+468854,3,In another census Place,G06000106,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,15421.399713924
+474661,3,"CA, Berkeley",G06000101,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,4418.6325254054
+476350,3,"CA, Alameda",G06000105,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,3654.596245394
+476821,3,"CA, Hayward",G06000107,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,7135.9874882998
+482494,3,"CA, Oakland",G06000102,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,3905.7581525554
+484045,3,"CA, Oakland",G06000104,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,13917.652052727799
+485045,3,In another census Place,G06000103,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,2537.7023968618005
+486260,3,"CA, Alameda",G06000105,Occupied,Central AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,3258.0710874134
+487672,3,"CA, San Leandro",G06000105,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,4147.093321212122,Multi-Family with 2 - 4 Units | no cooling,5753.5712501664
+489541,3,"CA, Fremont",G06000109,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,4618.5069952818
+493724,3,"CA, Alameda",G06000105,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,5702.5768839515995
+499393,3,"CA, Alameda",G06000105,Occupied,None,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,3923.9658512396695,Multi-Family with 5+ Units | no cooling,2982.2912103552003
+505032,3,"CA, San Leandro",G06000105,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,1941.595840075
+509360,3,In another census Place,G06000106,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4900.148293744
+513265,3,"CA, Union City",G06000108,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4631.988264511
+521051,3,"CA, Oakland",G06000104,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,5740.0899809371995
+523911,3,"CA, Fremont",G06000109,Occupied,Room AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,13044.886405672201
+529601,3,"CA, Oakland",G06000104,Occupied,Central AC,Single-Family Detached,Hayward Air Term,253.90367272727272,3990.7033778656128,Single-Family Detached | cooling installed,4901.0275069546
+529914,3,In another census Place,G06000106,Occupied,Central AC,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,3967.244886363637,Multi-Family with 2 - 4 Units | cooling installed,3440.0682220076
+530663,3,"CA, Oakland",G06000102,Occupied,Central AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,6804.817178973801
+533680,3,"CA, Oakland",G06000104,Occupied,None,Multi-Family with 2 - 4 Units,Hayward Air Term,253.90367272727272,4147.093321212122,Multi-Family with 2 - 4 Units | no cooling,4372.0342252436
+533824,3,In another census Place,G06000106,Occupied,None,Single-Family Detached,Hayward Air Term,253.90367272727272,4076.564523232324,Single-Family Detached | no cooling,5396.0245445224
+534471,3,"CA, San Leandro",G06000105,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4275.906914218
+538753,3,"CA, Fremont",G06000109,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,2149.3832288467997
+538951,3,"CA, Berkeley",G06000101,Occupied,Room AC,Multi-Family with 5+ Units,Hayward Air Term,253.90367272727272,4021.8341760000003,Multi-Family with 5+ Units | cooling installed,4841.534079704
+542041,3,"CA, Oakland",G06000102,Occupied,Central AC,Single-Family Attached,Hayward Air Term,253.90367272727272,4094.196722727273,Single-Family Attached | cooling installed,5553.4037092198005

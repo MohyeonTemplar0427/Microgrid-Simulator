@@ -125,7 +125,7 @@ def test_la_coverage_distinguishes_research_from_executable_billing():
     c = capabilities()
     assert {p['id'] for p in c['la_county_coverage']['providers']} == {
         'gwp','pwp','bwp','alw','vpu','ipu','ceu','cpa','lancaster','pico_prime','pomona','epic'}
-    assert not any(p['utility'] in {'pwp','bwp','alw','vpu','ipu','ceu'} for p in c['plans'])
+    assert not any(p['utility'] in {'vpu','ceu'} for p in c['plans'])
 
 
 def test_glendale_independent_rider_percentage_is_used(monkeypatch):
