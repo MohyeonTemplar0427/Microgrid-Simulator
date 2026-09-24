@@ -1,8 +1,11 @@
 """Annual NBT statement replay through the shared desktop/browser study path."""
 
 from calendar import monthrange
+from http.client import HTTPConnection
 import json
 import math
+import secrets
+import socket
 import threading
 import time
 from urllib.error import HTTPError
@@ -11,6 +14,7 @@ from urllib.request import Request, urlopen
 import pytest
 
 from src.local_web.pge_annual_study import validate_request
+from src.local_web.auth import OIDCConfig, Sessions, digest
 from src.local_web.runtime import Application
 from src.local_web.server import make_server
 
@@ -105,9 +109,53 @@ def test_annual_replay_is_saved_and_exports_tables_via_local_http(tmp_path):
         monthly_csv, csv_headers = get(f"/api/studies/{study['id']}/tables/monthly-ledger.csv")
         assert csv_headers["Content-Type"].startswith("text/csv")
         assert len(monthly_csv.decode().splitlines()) == 13
+        assert (application.store.directory / "runs" / study["id"] / "monthly-ledger.meta.json").is_file()
+        assert not (application.store.directory / "runs" / study["id"] / "monthly-ledger.json").exists()
         assert json.loads(get(f"/api/studies/{study['id']}/request.json")[0]) == annual_request()
     finally:
         server.shutdown()
-        server.server_close()
         thread.join()
+        server.server_close()
+        application.close()
+
+
+def test_annual_route_keeps_member_ownership_and_temporary_policy(tmp_path):
+    application = Application(tmp_path, embedded_worker=False)
+    with socket.socket() as sock:
+        sock.bind(("127.0.0.1", 0))
+        port = sock.getsockname()[1]
+    auth = Sessions(application.store, OIDCConfig(
+        "https://identity.example", "client", "test-secret",
+        f"http://127.0.0.1:{port}/auth/callback"), provider=object())
+    server = make_server(application, port, auth=auth, allow_guests=True)
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+
+    def member(name):
+        token, csrf = secrets.token_urlsafe(32), secrets.token_urlsafe(32)
+        with application.store.connect() as db:
+            db.execute("INSERT INTO auth_sessions VALUES (?, ?, ?, ?, ?)",
+                       (digest(token), digest(name), csrf, time.time(), time.time()))
+        return {"Cookie": f"{auth.COOKIE}={token}", "X-Study-Token": csrf}
+
+    def call(path, headers, body=None):
+        connection = HTTPConnection("127.0.0.1", port, timeout=10)
+        connection.request("POST" if body is not None else "GET", path,
+                           json.dumps(body) if body is not None else None,
+                           {"Content-Type": "application/json", **headers})
+        response = connection.getresponse()
+        status, payload = response.status, json.loads(response.read())
+        connection.close()
+        return status, payload
+
+    try:
+        alice, bob = member("alice"), member("bob")
+        status, study = call("/api/v1/pge/annual-studies", alice, annual_request())
+        assert status == 202 and study["owner_id"] == digest("alice") and study["saved"] == 0
+        assert call(f"/api/studies/{study['id']}", bob)[0] == 404
+        assert call(f"/api/studies/{study['id']}", alice)[0] == 200
+    finally:
+        server.shutdown()
+        thread.join()
+        server.server_close()
         application.close()

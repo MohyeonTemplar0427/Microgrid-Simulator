@@ -13,8 +13,42 @@ from ..billing.services import SERVICES, tariff_service
 def write_json(path, value):
     path = Path(path)
     temporary = path.with_suffix(".tmp")
-    temporary.write_text(json.dumps(value, allow_nan=False, indent=2), encoding="utf-8")
+    from .privacy import redact
+    temporary.write_text(redact(json.dumps(value, allow_nan=False, indent=2)), encoding="utf-8")
     temporary.replace(path)
+
+
+def summarize_ac_validation(scenarios, sample_limit=5):
+    """Keep a bounded failure trace without persisting interval OpenDSS tables."""
+    summaries = []
+    reasons = (
+        ("converged", False, "OpenDSS did not converge"),
+        ("voltage_violation", True, "Voltage outside limits"),
+        ("line_overload", True, "Line overload"),
+        ("transformer_overload", True, "Transformer overload"),
+        ("setpoint_mismatch", True, "Power setpoint mismatch"),
+        ("inverter_capability_violation", True, "Inverter capability violation"),
+    )
+    for scenario, table in scenarios.items():
+        failed = table.loc[~table["feasible"].astype(bool)]
+        samples = []
+        for _, row in failed.head(sample_limit).iterrows():
+            found = [label for key, expected, label in reasons
+                     if key in row and bool(row[key]) is expected]
+            timestamp = row["timestamp"]
+            samples.append({
+                "timestamp": timestamp.isoformat() if hasattr(timestamp, "isoformat") else str(timestamp),
+                "reasons": found or ["Other electrical feasibility failure"],
+            })
+        summaries.append({
+            "scenario": scenario,
+            "checked_intervals": len(table),
+            "passed_intervals": len(table) - len(failed),
+            "failed_intervals": len(failed),
+            "failure_samples": samples,
+        })
+    return {"all_intervals_feasible": all(s["failed_intervals"] == 0 for s in summaries),
+            "scenarios": summaries}
 
 
 def capabilities():
@@ -127,11 +161,9 @@ def execute(directory):
     tables = []
 
     def save_table(key, label, table):
-        # pandas emits JSON null for unavailable numeric diagnostics, never NaN.
-        payload = json.loads(table.to_json(orient="split", index=False, date_format="iso", double_precision=15))
-        payload["labels"] = [labels.get(c, c.replace("_", " ")) for c in payload["columns"]]
-        write_json(directory / f"{key}.json", payload)
-        table.to_csv(directory / f"{key}.csv", index=False)
+        from .table_store import save_table as save_csv_table
+        save_csv_table(directory, key,
+                       [labels.get(c, c.replace("_", " ")) for c in table.columns], table)
         tables.append({"id": key, "label": label, "row_count": len(table)})
 
     save_table("comparison", "Scenario comparison", result.comparison)
@@ -150,8 +182,7 @@ def execute(directory):
     run = next(iter(result.runs_by_carbon_weight.values()))
     for scenario, table in run.dispatch_scenarios.items():
         save_table(f"dispatch-{scenario}", f"Dispatch · {scenario.replace('_', ' ')}", table)
-    for scenario, table in run.powerflow_scenarios.items():
-        save_table(f"ac-{scenario}", f"AC validation · {scenario.replace('_', ' ')}", table)
+    ac_validation = summarize_ac_validation(run.powerflow_scenarios)
     warnings = list(result.warnings) + [
         "AC replay uses the representative balanced 12.47 kV / 480 V network and 750 kVA transformer.",
         "CSV load and PV values are used directly. PV capacity sets the AC rating; it does not scale the CSV profile.",
@@ -161,10 +192,14 @@ def execute(directory):
         warnings.extend(provenance["warnings"])
     if request.get("ess"):
         warnings.extend(request["ess"]["assumptions"])
-    for _, row in result.comparison.iterrows():
-        if row.get("feasible_intervals", 0) < row.get("interval_count", 0):
-            count = int(row["interval_count"] - row["feasible_intervals"])
-            warnings.append(f"{row['scenario']}: {count} interval(s) did not pass electrical feasibility checks. Inspect this scenario's AC validation table.")
+    for scenario in ac_validation["scenarios"]:
+        if scenario["failed_intervals"]:
+            first = scenario["failure_samples"][0]
+            warnings.append(
+                f"{scenario['scenario']}: {scenario['failed_intervals']} interval(s) did not pass "
+                f"electrical feasibility checks. First failure at {first['timestamp']}: "
+                f"{', '.join(first['reasons'])}. See the result manifest for more examples."
+            )
     if request["tariff_id"] is None and not site_run:
         warnings.append("Costs use CSV energy prices plus battery degradation; no utility tariff bill is calculated.")
     write_json(directory / "result.json", {
@@ -172,6 +207,7 @@ def execute(directory):
         "engine": json.loads((directory / "engine.json").read_text()),
         "dataset_sha256": request.get("dataset_id", hashlib.sha256((directory / "normalized.csv").read_bytes()).hexdigest()), "request": request,
         "input_provenance": provenance, "ess": request.get("ess"), "solar_optimization": request.get("solar_optimization"),
+        "ac_validation": ac_validation,
     })
     progress("Results saved")
 
@@ -215,7 +251,7 @@ def main():
         execute(directory)
     except Exception as exc:
         write_json(directory / "error.json", {"error": f"{type(exc).__name__}: {exc}"})
-        raise
+        raise SystemExit(1) from None
 
 
 if __name__ == "__main__":

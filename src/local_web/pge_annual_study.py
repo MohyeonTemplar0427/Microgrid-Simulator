@@ -58,13 +58,10 @@ def validate_request(request):
 
 
 def _save_table(directory, tables, key, label, rows):
-    from .worker import write_json
+    from .table_store import save_table
 
     frame = pd.DataFrame(rows)
-    payload = json.loads(frame.to_json(orient="split", index=False, double_precision=15))
-    payload["labels"] = [column.replace("_", " ") for column in payload["columns"]]
-    write_json(directory / f"{key}.json", payload)
-    frame.to_csv(directory / f"{key}.csv", index=False)
+    save_table(directory, key, [column.replace("_", " ") for column in frame.columns], frame)
     tables.append({"id": key, "label": label, "row_count": len(frame)})
 
 

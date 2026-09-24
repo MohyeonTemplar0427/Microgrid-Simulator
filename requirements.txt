@@ -10,3 +10,10 @@ pvlib==0.15.2
 pytest==9.1.1
 python-dotenv==1.2.3
 requests==2.34.2
+
+# Web sign-in (provider-neutral OIDC)
+Authlib==1.8.0
+joserfc==1.7.5
+
+# Production WSGI transport
+waitress==3.0.2

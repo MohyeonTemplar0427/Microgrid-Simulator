@@ -171,12 +171,32 @@ form.addEventListener("input",event=>{
 async function api(path, body) {
   const options = body === undefined ? {} : {method:"POST", headers:{"Content-Type":"application/json", "X-Study-Token":capabilities.token}, body:JSON.stringify(body)};
   const response = await fetch(path, options);
+  const session = response.headers.get("X-Study-Session");
+  if (capabilities?.auth_mode === "oidc" && session && session !== capabilities.token) {
+    $("usage-status").hidden=true;
+    window.location.replace("/");
+    throw new Error("Your sign-in changed. Reloading your workspace.");
+  }
   const result = await response.json();
+  if (response.status === 401) {
+    document.getElementById("auth-panel").hidden=false;
+    document.getElementById("pipeline-status").hidden=true;
+    document.getElementById("usage-status").hidden=true;
+    document.getElementById("sign-out").hidden=true;
+    document.querySelector(".workspace").hidden=true;
+    throw new Error("Sign in to access your private studies.");
+  }
   if (!response.ok) throw new Error(result.error || `Request failed (${response.status})`);
   return result;
 }
 function showError(id, error) { $(id).textContent = error.message || String(error); $(id).hidden = false; }
 function badge(status) { const span=document.createElement("span"); span.className=`status ${status}`; span.textContent=status; return span; }
+function formatRuntime(seconds) {
+  if(typeof seconds!=="number" || !Number.isFinite(seconds) || seconds<0) return null;
+  if(seconds<60) return `${seconds.toFixed(2)} s`;
+  const whole=Math.round(seconds), hours=Math.floor(whole/3600), minutes=Math.floor((whole%3600)/60), remainder=whole%60;
+  return hours ? `${hours} h ${minutes} min ${remainder} s` : `${minutes} min ${remainder} s`;
+}
 function option(value, label) { const node=document.createElement("option"); node.value=value; node.textContent=label; return node; }
 
 function fillForm(request, lookup=true) {
@@ -282,11 +302,13 @@ form.addEventListener("submit",async event=>{
 
 async function history() {
   const studies=await api("/api/studies");
-  if (!studies.length) return;
+  if (!studies.length) { $("history").replaceChildren(); return; }
   $("history").replaceChildren(...studies.map(study=>{
     const row=document.createElement("button"); row.type="button"; row.className=`history-row ${study.id===activeId?"selected":""}`;
     const info=document.createElement("span"), name=document.createElement("strong"), date=document.createElement("small");
-    name.textContent=study.name; date.textContent=new Date(study.created_at).toLocaleString();
+    name.textContent=study.name;
+    const runtime=formatRuntime(study.runtime_seconds);
+    date.textContent=new Date(study.created_at).toLocaleString()+(runtime?` · Run time ${runtime}`:"")+(study.expires_at&&!study.saved?" · Temporary":"");
     info.append(name,date); row.append(info,badge(study.status));
     row.addEventListener("click",()=>selectStudy(study.id).catch(error=>showError("connection",error))); return row;
   }));
@@ -296,6 +318,7 @@ async function selectStudy(id) {
   window.location.hash=id;
   $("empty-state").hidden=true; $("study-output").hidden=false;
   $("results-content").hidden=true; $("run-error").hidden=true; $("manifest-download").hidden=true;
+  $("cancel-study").hidden=true;
   $("progress").textContent="Loading study…";
   $("results-title").scrollIntoView({behavior:"smooth",block:"start"});
   await refreshStudy(id);
@@ -305,15 +328,30 @@ async function refreshStudy(id) {
     const study=await api(`/api/studies/${id}`); if (id!==activeId) return;
     activeStudy=study; $("connection").hidden=true;
     $("run-name").textContent=study.name;
+    const runtime=formatRuntime(study.runtime_seconds);
     $("run-meta").textContent=study.request.schema_version===7
       ? `${study.request.records[0].period_start} → ${study.request.records.at(-1).period_end} · PG&E NBT annual statement replay · Engine ${study.engine_id.slice(0,12)}`
       : `${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}`;
+    if(runtime) $("run-meta").textContent+=` · Run time ${runtime}`;
+    if(study.expires_at && !study.saved) $("run-meta").textContent+=` · Temporary result expires ${new Date(study.expires_at).toLocaleString()}`;
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
-    $("progress").textContent=study.status==="completed" ? (study.request.schema_version===7 ? "Annual statement replay complete. Inspect monthly credits and the true-up adjustment; no interval dispatch was simulated." : ((study.request.solar_export || study.request.schema_version===4 || study.request.schema_version===5 || study.request.schema_version===6) ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated." : "Calculation complete. Inspect AC validation for electrical feasibility.")) : study.progress;
+    $("cancel-study").hidden=!["queued","running"].includes(study.status);
+    $("save-study").hidden=!(study.status==="completed" && capabilities?.auth_mode==="oidc" && !study.saved);
+    $("save-study").textContent=capabilities?.account_type==="guest" ? "Save to my profile · Sign in" : "Save to my profile";
+    $("cancel-study").disabled=false;
+    $("progress").textContent=study.status==="completed"
+      ? (study.request.schema_version===7
+          ? "Annual statement replay complete. Inspect monthly credits and the true-up adjustment; no interval dispatch was simulated."
+          : (study.request.solar_export || [4,5,6].includes(study.request.schema_version))
+            ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated."
+            : "Calculation complete. Check electrical feasibility in the scenario comparison.")
+      : study.progress;
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
+    else if (study.status==="cancelled") { await history(); }
     else if (study.status==="completed") {
       $("manifest-download").hidden=false; $("manifest-download").href=`/api/studies/${id}/result.json`;
+      $("bundle-download").href=`/api/studies/${id}/tables.zip`;
       $("results-content").hidden=false;
       $("table-select").replaceChildren(...study.result.tables.map(t=>option(t.id,t.label)));
       $("warning-list").replaceChildren(...study.result.warnings.map(w=>{const li=document.createElement("li");li.textContent=w;return li;}));
@@ -321,11 +359,11 @@ async function refreshStudy(id) {
     } else pollTimer=setTimeout(()=>refreshStudy(id),1200);
   } catch(error) {
     if (id!==activeId) return;
-    showError("connection",new Error(`Cannot reach the study service: ${error.message} Keep the local server running. Retrying…`));
+    showError("connection",new Error(`Cannot reach the study service: ${error.message} ${capabilities?.hosting_mode === "hosted" ? "Please try again shortly." : "Keep the local server running."} Retrying…`));
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","feasible_intervals","interval_count"];
+const summaryColumns=["scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -376,6 +414,18 @@ $("table-select").addEventListener("change",tableAction(()=>{offset=0;}));
 $("all-columns").addEventListener("change",tableAction(()=>{}));
 $("previous").addEventListener("click",tableAction(()=>{offset=Math.max(0,offset-PAGE_SIZE);}));
 $("next").addEventListener("click",tableAction(()=>{offset+=PAGE_SIZE;}));
+$("cancel-study").addEventListener("click",async()=>{
+  if(!activeId || !["queued","running"].includes(activeStudy?.status)) return;
+  $("cancel-study").disabled=true;
+  clearTimeout(pollTimer);
+  try {
+    await api(`/api/studies/${activeId}/cancel`,{});
+    await refreshStudy(activeId);
+  } catch(error) {
+    showError("run-error",error);
+    await refreshStudy(activeId);
+  }
+});
 $("reuse").addEventListener("click",()=>{if(activeStudy){fillForm(activeStudy.request);$("configure-title").scrollIntoView({behavior:"smooth"});}});
 $("refresh-history").addEventListener("click",()=>history().catch(error=>showError("connection",error)));
 
@@ -456,6 +506,17 @@ let wizardIndex=0, wizardReached=0;
 async function initialize() {
   try {
     capabilities=await api("/api/capabilities");
+    document.getElementById("sign-out").hidden=capabilities.account_type!=="member";
+    const pendingSave=sessionStorage.getItem("microgrid-pending-save");
+    if(pendingSave && capabilities.account_type==="member") {
+      sessionStorage.removeItem("microgrid-pending-save");
+      try {
+        await api(`/api/studies/${pendingSave}/save`,{});
+        window.location.hash=pendingSave;
+      } catch(error) {
+        showError("connection",new Error(`The temporary study could not be saved: ${error.message}`));
+      }
+    }
     $("annual-replay").hidden=!capabilities.pge_annual_replay;
     window.municipalUI?.init(capabilities);
     for(const entry of capabilities.ess_catalog || []) field("equipment_id").append(option(entry.id,`${entry.manufacturer} · ${entry.model}`));
@@ -468,21 +529,46 @@ async function initialize() {
       label.append(box,document.createTextNode(names[name] || name)); $("strategies").append(label);
     }
     await loadDatasets(); startBlankStudy(); await history();
-    $("engine-info").textContent=`Engine ${capabilities.engine.id.slice(0,12)} · Local development snapshot · Studies saved on this computer`;
-    $("credentials-note").textContent=capabilities.nsrdb_configured?"NSRDB credentials are configured on the local server. Retrieval contacts NSRDB.":"Historical retrieval needs NSRDB credentials. Start the server with --env-file pointing to your existing src/.env.";
+    const hosted = capabilities.hosting_mode === "hosted";
+    $("workspace-label").textContent = hosted ? (capabilities.account_type==="guest" ? "Temporary guest workspace" : "Private workspace") : "Local workspace";
+    document.querySelector(".history-panel .eyebrow").textContent = hosted ? (capabilities.account_type==="guest" ? "TEMPORARY STUDIES" : "MY STUDIES") : "SAVED LOCALLY";
+    document.title = hosted ? "Microgrid Simulator · Private studies" : "Microgrid Simulator · Local studies";
+    $("engine-info").textContent=`Engine ${capabilities.engine.id.slice(0,12)} · Development snapshot · ${hosted ? "Private studies on the server" : "Studies saved on this computer"}`;
+    document.querySelector(".run-hint").textContent = hosted
+      ? (capabilities.temp_result_hours ? `Runs on the server. Unsaved results expire ${capabilities.temp_result_hours} hours after completion.` : "Runs on the server. You may close this browser tab and return to your saved study later.")
+      : "Runs on this computer. Keep the local service running; you may close this browser tab.";
+    $("credentials-note").textContent=capabilities.nsrdb_configured
+      ? "Historical weather retrieval is configured on the server. Retrieval contacts NSRDB."
+      : hosted ? "Historical weather retrieval is not configured. Contact the site administrator."
+      : "Historical retrieval needs NSRDB credentials. Start the server with --env-file pointing to your existing src/.env.";
     $("run-button").disabled=false;
     const id=window.location.hash.slice(1); if (/^[0-9a-f]{32}$/.test(id)) await selectStudy(id);
   } catch(error) {showError("connection",error);}
 }
 initialize();
+$("save-study").addEventListener("click",async()=>{
+  if(!activeId || activeStudy?.status!=="completed") return;
+  if(capabilities?.account_type==="guest") {
+    sessionStorage.setItem("microgrid-pending-save",activeId);
+    window.location.assign("/auth/login");
+  } else if(capabilities?.account_type==="member") {
+    try { await api(`/api/studies/${activeId}/save`,{}); await refreshStudy(activeId); }
+    catch(error) { showError("run-error",error); }
+  }
+});
 
 
 async function refreshPipeline() {
   try {
     const health = await api("/api/health");
     $("pipeline-status").textContent = health.worker === "connected"
-      ? `Simulation service connected · ${health.running} running · ${health.queued} queued`
+      ? `Simulation service connected · ${health.running} running · ${health.cancelling || 0} cancelling · ${health.queued} queued`
       : `Simulation worker offline · ${health.queued} queued. Submitted studies are saved and will run when the worker starts.`;
+    if(capabilities?.auth_mode==="oidc") {
+      const usage=await api("/api/usage");
+      $("usage-status").hidden=!usage.enabled;
+      if(usage.enabled) $("usage-status").textContent=`Today (UTC): ${usage.submitted_studies}/${usage.study_limit} simulations submitted. Resets at 00:00 UTC.`;
+    }
   } catch (_) {
     $("pipeline-status").textContent = "Simulation service disconnected. Reconnecting…";
   } finally {
@@ -749,3 +835,12 @@ function restoreExportControls(config){
 }
 field('export_enabled').addEventListener('change',()=>{syncExportControls();syncPvBatteryConnection();});
 for(const name of ['utility','site_type','site_subtype','latitude','longitude','start_date','end_date','tariff_id','export_application_year','export_pto','export_true_up','export_limit','export_open_generation','export_open_delivery','export_open_bonus'])field(name).addEventListener('change',()=>{field('export_confirm').checked=false;syncExportControls();});
+
+// Clear the page on logout so the next account never inherits visible study data.
+const authEvents = typeof BroadcastChannel === "function" ? new BroadcastChannel("microgrid-auth") : null;
+if (authEvents) authEvents.onmessage = () => window.location.replace("/");
+window.addEventListener("pageshow", event => { if(event.persisted) window.location.reload(); });
+document.getElementById("sign-out").addEventListener("click", async () => {
+  try { await api("/auth/logout", {}); $("usage-status").hidden=true; authEvents?.postMessage("signed-out"); window.location.replace("/"); }
+  catch(error) { showError("connection", error); }
+});
