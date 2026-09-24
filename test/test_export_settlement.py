@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from src.billing.export_settlement import CreditBalance, monthly_credit_ledger, compare_one_kwh
 from src.billing import pge_export
-from src.dispatch.solar_export import compare
+from src.dispatch.solar_export import compare, benefit_breakdown
 
 
 def account():
@@ -80,6 +80,30 @@ def test_optimized_export_physics_and_ledger():
  assert results['storage_self_consumption']['dispatch'].grid_export_kw.max()<1e-6
 
 
+def test_solar_benefits_separate_behind_meter_savings_and_unspent_export_credits():
+ opening=CreditBalance(generation=10000,delivery=10000)
+ results=compare(frame(),account(),export_limit_kw=3,opening=opening)
+ flows,bridges,components=benefit_breakdown(results)
+ assert [row['scenario'] for row in flows]==['grid_only','pv_self_consumption','pv_with_export']
+ assert flows[0]['solar_ac_available_kwh']==0
+ assert flows[0]['solar_ac_curtailed_kwh']==0
+ assert flows[1]['grid_export_kwh']==0
+ assert flows[1]['solar_ac_generated_kwh']>0
+ on_site,export=bridges
+ assert on_site['comparison']=='Solar panel + inverter, on-site use only'
+ assert 'surplus export' in export['comparison']
+ assert flows[2]['grid_export_kwh']<flows[2]['solar_ac_generated_kwh']
+ assert on_site['current_bill_savings']==pytest.approx(results['grid_only']['bill']['amount_due']-results['pv_self_consumption']['bill']['amount_due'])
+ assert export['avoided_import_charges']==pytest.approx(0)
+ assert export['current_bill_savings']==pytest.approx(export['change_in_credits_used'])
+ assert export['current_bill_savings']>0  # ACC Plus can pay protected charges.
+ assert results['pv_with_export']['bill']['credits_used']['generation']==results['pv_self_consumption']['bill']['credits_used']['generation']
+ assert results['pv_with_export']['bill']['credits_used']['delivery']==results['pv_self_consumption']['bill']['credits_used']['delivery']
+ assert export['change_in_export_credits_earned']>0
+ assert export['unspent_credit_change']>0
+ assert sum(row['dollars'] for row in components if row['comparison']==on_site['comparison'] and row['category'] in ('avoided_import_charge','change_in_credit_used'))==pytest.approx(on_site['current_bill_savings'])
+
+
 def test_web_contract_rejects_wrong_service_and_preserves_export_settings():
  from copy import deepcopy
  from src.local_web.contract import DEFAULT_SITE_REQUEST,validate_request
@@ -121,4 +145,10 @@ def test_worker_export_tables_reconcile_with_saved_bills(tmp_path):
   assert row.operating_cost==pytest.approx(row.amount_due+row.degradation_cost)
  manifest=json.loads((tmp_path/'result.json').read_text())
  assert manifest['tables'][0]['id']=='comparison'
+ assert {'solar-benefits','solar-benefit-components','solar-energy-flows'} <= {table['id'] for table in manifest['tables']}
+ benefits=pd.read_csv(tmp_path/'solar-benefits.csv')
+ assert benefits.iloc[0].comparison=='Solar panel + inverter, on-site use only'
+ assert np.allclose(benefits.current_bill_savings,benefits.avoided_import_charges+benefits.change_in_credits_used)
+ assert np.allclose(benefits.operating_savings,benefits.current_bill_savings-benefits.battery_wear_change)
  assert any('annual true-up' in warning for warning in manifest['warnings'])
+ assert any('Exporting all solar output' in warning for warning in manifest['warnings'])

@@ -432,7 +432,19 @@ def _run_snapshot_from_entries(
 
 
 def main() -> None:
-    """Launch the guided graphical microgrid-analysis application."""
+    """Launch the shared desktop study UI, or the previous Tkinter workflow."""
+
+    import argparse
+    import sys
+
+    parser = argparse.ArgumentParser(description="Launch the Microgrid Simulator desktop application.")
+    parser.add_argument("--legacy", action="store_true", help="Open the previous engineering-focused Tkinter GUI.")
+    args = parser.parse_args()
+    if not args.legacy and sys.platform == "darwin":
+        from .desktop_application import run_desktop_application
+
+        run_desktop_application()
+        return
 
     from .application_interface import (
         create_guided_application_window,

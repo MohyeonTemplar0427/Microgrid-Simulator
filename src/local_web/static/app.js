@@ -1,7 +1,7 @@
 "use strict";
 const $ = (id) => document.getElementById(id);
 const form = $("study-form");
-const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"Cost optimal", carbon_optimal:"Carbon optimal", combined_optimal:"Combined optimal"};
+const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"Cost optimal", carbon_optimal:"Carbon optimal", combined_optimal:"Combined optimal", grid_only:"Grid only", pv_self_consumption:"Solar + inverter · no export", pv_with_export:"Solar + inverter · surplus export", storage_self_consumption:"Solar + battery · no export", storage_with_export:"Solar + battery · surplus export"};
 let capabilities, selectedDatasetId, datasets = [], activeStudy = null, activeId = null, pollTimer, offset = 0, tableRequest = 0;
 const PAGE_SIZE = 100;
 let essResolution=null, essKey=null, annualResult=null, annualKey=null;
@@ -35,6 +35,13 @@ function updateEquipmentChoice() {
   $('pv-choice-note').textContent=municipal
     ? 'PV billing is not supported for AMP/SVP. Choose grid-only to skip all equipment, or battery-only to keep the storage controls.'
     : 'Choose No to skip Solar weather, PV, Inverter and Battery / ESS. The study will calculate load and grid electricity costs.';
+}
+function syncPvBatteryConnection() {
+  const batteryCompared=exportActive() || [...$('strategies').querySelectorAll('input:checked')].some(box=>box.value!=='no_battery');
+  const show=template?.schema_version>=2 && siteCustomerClass()==='residential' && field('pv_choice').value==='yes' && batteryCompared && !window.municipalUI?.active() && !window.socalUI?.active();
+  $('pv-battery-connection').hidden=!show;
+  field('pv_battery_connection').disabled=!show;
+  if(show)field('pv_battery_connection').value='ac_coupled';
 }
 field('pv_choice').addEventListener('change',()=>{
   weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
@@ -115,6 +122,7 @@ function updateSiteControls() {
   window.municipalUI?.sync();
   updateEquipmentChoice();
   window.socalUI?.sync();
+  syncPvBatteryConnection();
   $("weather-status").textContent=field("weather_source").value==="nsrdb" ? (weatherId?"Historical weather ready. A copy will be saved with the study.":"Retrieve matching historical weather before running."):"Clear-sky estimates are calculated locally when the simulation runs.";
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
@@ -183,6 +191,7 @@ function fillForm(request, lookup=true) {
   resetUtilityOptions(request.site?.utility);
   template=structuredClone(request);
   field("pv_choice").value="yes";
+  field("pv_battery_connection").value=request.pv_battery_connection || "ac_coupled";
   restoreSiteProfile(request.site_profile);
   selectedDatasetId=request.dataset_id;
   weatherId=request.weather_id || null;
@@ -238,6 +247,8 @@ function readRequest() {
     request.load={mode:field("load_mode").value,power_kw:Number(field("load_power_kw").value),archetype:field("load_mode").value==="constant"?"office":field("archetype").value};
     request.fixed_price_per_kWh=Number(field("fixed_price_per_kWh").value);
     request.carbon_intensity_g_per_kWh=0; // Legacy schema field; historical carbon is authoritative.
+    delete request.pv_battery_connection;
+    if(!$('pv-battery-connection').hidden)request.pv_battery_connection=field('pv_battery_connection').value;
   }
   if(request.schema_version===3) {
     if(field("ess_mode").value==="equipment" && !essResolution?.ready) throw new Error("Review and apply the equipment settings first.");
@@ -622,6 +633,7 @@ function startBlankStudy() {
     else input.value=input.name==="tariff_id"?"__unset__":"";
   }
   for(const box of $("strategies").querySelectorAll("input")) box.checked=box.value==="no_battery";
+  field('pv_battery_connection').value='ac_coupled';
   $("location-status").textContent="Enter coordinates or search for your microgrid location.";
   $("utility-suggestion").textContent="Utility choices will appear after you set a location.";
   $("orientation-status").textContent="";
@@ -662,7 +674,7 @@ function applyStepDefaults(page) {
     latitude:defaults.site?.latitude,longitude:defaults.site?.longitude,location_query:defaults.site?.label,
     utility:"unconfirmed",load_mode:defaults.load?.mode,load_power_kw:defaults.load?.power_kw,
     archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),
-    ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2};
+    ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2,pv_battery_connection:"ac_coupled"};
   for(const input of page.querySelectorAll("input[name],select[name]")) {
     if(input.name.startsWith("m_") || input.name.startsWith("sc_") || input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
     if(input.name==="location_query" && hadCoordinates) continue;
@@ -674,12 +686,13 @@ function applyStepDefaults(page) {
     $("location-status").textContent=siteLabel;refreshUtilities(locationGeneration);
   }
   $("form-error").hidden=true;updateSiteControls();
+  if(page.contains($("strategies")))renderStudySummary();
   if(page.contains(field('start_date')) && field('start_date').value>field('end_date').value)
     showError('form-error',new Error('The entered start date is later than the end date. Adjust one date; defaults preserve your existing entries.'));
 }
 for(const button of document.querySelectorAll(".use-defaults")) button.addEventListener("click",()=>applyStepDefaults(button.closest(".wizard-page")));
 
-$("strategies").addEventListener("change",()=>{strategiesEdited=true;});
+$("strategies").addEventListener("change",()=>{strategiesEdited=true;syncPvBatteryConnection();renderStudySummary();});
 
 $('refresh-services').addEventListener('click',()=>refreshUtilities(++locationGeneration));
 
@@ -706,5 +719,5 @@ function restoreExportControls(config){
   if(config){const a=config.account;for(const [name,value] of Object.entries({export_application_year:a.application_year,export_pto:a.pto_date,export_true_up:a.next_true_up_date,export_reference:a.reference,export_limit:config.export_limit_kw,...Object.fromEntries(Object.entries(config.opening_balance).map(([k,v])=>['export_open_'+k,v]))}))field(name).value=value;}
   syncExportControls();
 }
-field('export_enabled').addEventListener('change',syncExportControls);
+field('export_enabled').addEventListener('change',()=>{syncExportControls();syncPvBatteryConnection();});
 for(const name of ['utility','site_type','site_subtype','latitude','longitude','start_date','end_date','tariff_id','export_application_year','export_pto','export_true_up','export_limit','export_open_generation','export_open_delivery','export_open_bonus'])field(name).addEventListener('change',()=>{field('export_confirm').checked=false;syncExportControls();});

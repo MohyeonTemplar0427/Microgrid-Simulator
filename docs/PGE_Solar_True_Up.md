@@ -42,6 +42,50 @@ with generation/delivery/bonus, `offsettable_paid` has generation/delivery, and
 nsc_per_kwh, source_reference and evidence_kind. Rates can be null for a net
 consumer because no NSC/recoupment rates are used.
 
+## Twelve-cycle statement replay
+
+`src/billing/pge_annual_replay.py` connects twelve contiguous, documented
+monthly NBT records to the true-up calculation. It rolls separate generation,
+delivery and ACC Plus balances forward, totals metered import/export kWh, checks
+the remaining eligible charges paid after monthly credits, and passes the
+derived annual totals and closing bank to `reconcile_nbt`. Optional stated
+monthly electricity amounts due and closing balances can be checked within two
+cents. The result reports each month's amount due, the pre-true-up bank, the
+separate true-up adjustment, and the next-period bank **before any optional
+application of remaining ACC Plus**. A negative adjustment is a bill credit,
+not necessarily an immediate refund.
+
+Run a JSON replay with:
+
+```
+/usr/local/bin/python3 -m tools.solar_export.replay_pge_annual INPUT.json
+```
+
+The top-level JSON has `account_confirmed`, `records` (exactly twelve) and
+`rates` (the existing `TrueUpRates` fields, or `null` for a net consumer). Each
+record has `period_start`, `period_end`, `import_kwh`, `export_kwh`, `charges`
+(`generation`, `delivery`, `protected`), `credits_earned` (`generation`,
+`delivery`, `bonus`), `offsettable_paid` (`generation`, `delivery`),
+`source_reference`, and `evidence_kind` (`statement_transcription` or
+`hypothetical`). Optional `stated_amount_due` and `stated_closing_balance` allow
+monthly statement reconciliation. `offsettable_paid` is the remaining eligible
+paid amount after *all* monthly credits, including ACC Plus; it cannot be
+reconstructed from an undifferentiated bill total. This first replay starts with
+zero prior-period credit and covers ordinary continued bundled service only.
+
+The records supply billed dollar components from verified statements or clearly
+marked hypothetical fixtures. The general `PGE_E_ELEC_PLAN_TIER3` already has
+dated total time-of-use import prices for all of 2025 and January–February 2026.
+The solar adapter additionally needs the dated generation/delivery/protected
+charge split, export-credit values by application vintage, and true-up-month
+factors. It currently has those import components only for its June–September
+2026 window and its bundled export dataset only for 2026. The general E-ELEC
+plan also has an explicit March–May 2026 coverage gap. This replay does **not**
+infer any missing component from a total rate, derive annual hourly export
+credits, authenticate a user-entered source reference, or optimize battery
+dispatch over a year. It is a backend annual statement replay, not a full annual
+simulation.
+
 ## Independent reference case
 
 [PG&E Solar Billing Plan Guide, printed page 27](https://www.pge.com/assets/pge/localized/en/docs/clean-energy/solar/pge-solar-billing-plan-guide.pdf)
@@ -58,8 +102,10 @@ missing evidence, wrong-month rates, negative/nonfinite inputs and partial perio
 ## Still unfinished
 
 This is a backend reconciliation component, not complete PG&E solar support.
-Annual interval billing needs complete verified dated import/export coverage and
-monthly ledger history. Annual dispatch must account for credit value and annual
+Annual interval billing needs a complete verified dated solar component split
+and export-credit coverage in addition to the existing total import rates;
+the twelve-cycle replay accepts documented monthly bill components instead.
+Annual dispatch must account for credit value and annual
 settlement rather than simply chaining monthly optimizations. Web and desktop
 annual controls are not enabled. Existing monthly web studies retain their
 explicit pre-true-up restriction.

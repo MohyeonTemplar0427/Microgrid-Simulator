@@ -6,6 +6,15 @@ from src.local_web.contract import DEFAULT_SITE_REQUEST, validate_request
 from src.local_web.site_profile import customer_class
 
 
+def test_advanced_pv_battery_connection_accepts_only_modeled_ac_path():
+    request = deepcopy(DEFAULT_SITE_REQUEST)
+    request["pv_battery_connection"] = "ac_coupled"
+    assert validate_request(request)["pv_battery_connection"] == "ac_coupled"
+    request["pv_battery_connection"] = "dc_coupled"
+    with pytest.raises(ValueError, match="Only AC-coupled"):
+        validate_request(request)
+
+
 @pytest.mark.parametrize('profile,expected', [
     ({'site_type': 'commercial', 'subtype': None}, 'commercial'),
     ({'site_type': 'residential', 'subtype': 'house'}, 'residential'),

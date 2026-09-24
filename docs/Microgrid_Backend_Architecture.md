@@ -253,6 +253,25 @@ approximation rather than a filed rule.
 
 ## Production and network physics are separate models
 
+### PV–battery connection
+
+The current location-study dispatch is **AC-coupled**: the PV production model
+provides available AC power after inverter conversion and clipping, while the
+battery's charge/discharge efficiencies are effective AC-side values. The
+residential browser form records this under Advanced settings when a PV and
+battery comparison is configured. Older saved studies omit the field and retain
+the same AC-coupled behavior. A DC-coupled selection is deliberately unavailable.
+
+Future DC-coupled charging must pass PV power **before** inverter conversion and
+clipping into dispatch. Each interval must allocate that DC power among the
+DC-to-DC battery charger, the shared inverter, and curtailment; model charger
+losses and battery state of charge; and constrain the combined PV and battery AC
+output by the shared inverter rating. Grid charging, if enabled, needs its own
+AC-to-DC path and eligibility rules. Validate interval energy balance, clipping
+recovery, meter imports/exports, bill reconciliation, and compatibility with
+equipment specifications before enabling the browser choice. Do not reinterpret
+AC equipment-catalog efficiencies or ratings as DC-side specifications.
+
 `pvlib` owns production; OpenDSS owns network physics. The PV chain in
 `src/profiles/` converts weather, module and inverter configuration into an AC
 availability schedule, and `src/opendss/ac_replay.py` hands that schedule to

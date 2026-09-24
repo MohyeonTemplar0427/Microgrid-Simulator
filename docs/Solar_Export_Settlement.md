@@ -1,6 +1,6 @@
 # Solar export settlement implementation
 
-Status reviewed 2026-09-21. **The request to cover every utility is not complete.**
+Status reviewed 2026-09-23. **The request to cover every utility is not complete.**
 The current executable adapter is a bounded monthly PG&E bundled residential
 Solar Billing Plan (NBT) comparison. It is not a complete annual bill or legacy
 NEM implementation. Existing import-only utilities remain import-only.
@@ -27,6 +27,40 @@ provider inventory, code evidence and completion criteria.
   have no assumed terminal cash value, so this is not annual optimal dispatch.
 - Shared credit restrictions in billing and optimization, with final numerical
   bill reconciliation. Web form, durable worker, result tables and CSV exports.
+
+## Solar benefit breakdown
+
+The browser's solar comparison now includes three additional result tables:
+
+- **Solar bill savings:** direct comparisons of grid only → solar panel and
+  inverter for on-site use, then on-site use → export enabled. Battery rows show
+  the separate effects of adding storage or enabling export with storage. These
+  are alternative paths and must not be summed together.
+- **Solar savings components:** avoided generation, delivery and protected
+  import charges; change in generation, delivery and ACC Plus credits actually
+  used; and newly earned export credits. For each comparison,
+  `current_bill_savings = avoided_import_charges + change_in_credits_used` and
+  `operating_savings = current_bill_savings - battery_wear_change`.
+- **Solar energy flows:** AC solar available, generated and curtailed; grid
+  import/export; and battery charge/discharge for each scenario. The grid-only
+  case has no installed solar, so its PV availability and curtailment are zero.
+
+Both solar cases assume panels and an inverter **behind the meter**. The
+export-enabled case sends only surplus crossing the household meter; it does
+not sell all PV generation. A dedicated generation meter or other approved
+"export all" arrangement has different connection and billing rules and is
+not enabled by this PG&E residential NBT adapter. An existing compatible
+inverter would not necessarily require another inverter, but all-export is not
+just a dispatch toggle. See [CPUC's NBT description](https://www.cpuc.ca.gov/NEM/)
+and [PG&E's virtual net billing metering description](https://www.pge.com/en/about/doing-business-with-pge/interconnections/virtual-net-energy-metering.html).
+`change_in_export_credits_earned`
+can exceed `change_in_credits_used` because restricted credits may remain in the
+bank. `unspent_credit_change` is carried value, not current bill savings.
+Opening credits can also change the amount of newly earned credit used, so the
+cash bridge compares total credits *used* in the two scenarios rather than
+treating all newly earned export credit as cash. All comparisons use the same
+E-ELEC billing plan and one confirmed monthly cycle; equipment purchase,
+installation, maintenance and financing costs are excluded.
 
 Excluded: CCA generation, CARE/FERA/medical accounts, unconfirmed bonus
 eligibility, local taxes/other adjustments, grid-charged storage exports,

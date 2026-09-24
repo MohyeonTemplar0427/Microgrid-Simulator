@@ -4,7 +4,7 @@ import json
 import pandas as pd
 from ..billing import pge_export
 from ..billing.export_settlement import CreditBalance,nonnegative
-from ..dispatch.solar_export import compare
+from ..dispatch.solar_export import compare, benefit_breakdown
 
 TARIFF='pge_e_elec_residential_tier3_bundled_2026_06_01'
 
@@ -49,14 +49,20 @@ def execute(directory,request,frame,provenance):
         for group in ('import_charges','opening_balance','credits_earned','credits_used','closing_balance'):
             for component,value in bill[group].items():credits.append(dict(scenario=name,category=group,component=component,dollars=value))
         save('dispatch-'+name.replace('_','-'),name.replace('_',' ')+' · dispatch',result['dispatch'])
-    save('comparison','Solar use, storage and export comparison',pd.DataFrame(rows))
+    save('comparison','Solar use, storage and surplus export comparison',pd.DataFrame(rows))
     # Default to comparison, preserving the existing result table convention.
     tables.insert(0,tables.pop())
     save('credits','Credit balances and eligible charges',pd.DataFrame(credits))
+    flows,benefits,benefit_components=benefit_breakdown(results)
+    save('solar-benefits','Solar bill savings · panel, inverter, export and battery',pd.DataFrame(benefits))
+    save('solar-benefit-components','Solar savings · charge and credit components',pd.DataFrame(benefit_components))
+    save('solar-energy-flows','Solar production, grid purchases and exports',pd.DataFrame(flows))
     write_json(directory/'solar_bills.json',{k:{x:y for x,y in v.items() if x!='dispatch'} for k,v in results.items()})
     write_json(directory/'result.json',dict(schema_version=request['schema_version'],tables=tables,request=request,
        engine=json.loads((directory/'engine.json').read_text()),input_provenance=provenance,
        warnings=list(provenance.get('warnings',[]))+results['grid_only']['bill']['warnings']+[
        results['grid_only']['optimization_scope'],'These five comparisons replace the generic strategy choices for this export study.',
+       'Solar benefit rows are separate comparisons; do not add alternate battery/export paths together. Unspent credits are not current bill savings.',
+       'This study credits only net surplus crossing the household meter. Exporting all solar output through a dedicated generation meter is a separate arrangement and is not modeled.',
        'Costs exclude equipment capital cost. Electrical network feasibility and inverter controls are not evaluated by this export dispatch path.']))
     write_json(directory/'progress.json',dict(message='Solar export comparison complete'))
