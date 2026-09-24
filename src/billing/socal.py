@@ -189,7 +189,9 @@ def charge_lines(key,index,imports,account,*,convex=False,constraints=None):
   value=cp.max(imports[mask]) if convex else float(np.max(imports[mask]))
   if not rounded:return value
   if not convex:return np.floor(value+.5)
-  d=cp.Variable(integer=True);constraints.extend([d>=0,value<=d+.49999999]);return d
+  # Keep a numerical margin below the half-kW rounding boundary; a solver
+  # tolerance of a few micro-kW must not turn an optimized 10 kW bill into 11.
+  d=cp.Variable(integer=True);constraints.extend([d>=0,value<=d+.4999]);return d
  days=len(index.normalize().unique());factor=a.get('billing_month_factor',days/30)
  number(factor,'Billing month factor',.01,3)
  lines={name:0. for name in ['energy_charge','generation_charge','baseline_credit','fixed_charge','facilities_demand','tou_demand','minimum_adjustment','export_credit']}

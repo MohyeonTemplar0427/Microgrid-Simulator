@@ -57,6 +57,11 @@ class DemandChargeBasis(StrEnum):
     PART_PEAK_PERIOD = "part_peak_period"
 
 
+class DemandChargeFrequency(StrEnum):
+    MONTHLY = "monthly"
+    DAILY = "daily"
+
+
 #: Pandas weekday numbers, Monday 0 through Sunday 6. Same convention as
 #: :data:`src.signal_pipeline.price_sources.ALL_DAYS`, deliberately, so the
 #: two places that describe a time-of-use window agree.
@@ -180,18 +185,47 @@ class TOUPeriod:
 
 @dataclass(frozen=True)
 class DemandChargeComponent:
-    """One demand-charge line item, billed per kW of billing-period peak."""
+    """One demand-charge line item, using a monthly or local-day peak."""
 
     name: str
     rate_per_kW: float
     basis: DemandChargeBasis = DemandChargeBasis.MAXIMUM
     season: Season | None = None
+    frequency: DemandChargeFrequency = DemandChargeFrequency.MONTHLY
+    excluded_local_hours: frozenset[int] = frozenset()
 
     def __post_init__(self) -> None:
         if self.rate_per_kW < 0:
             raise TariffError(
                 f"Demand rate for {self.name!r} must be nonnegative."
             )
+        if any(not 0 <= hour <= 23 for hour in self.excluded_local_hours):
+            raise TariffError("Excluded local demand hours must be in 0–23.")
+
+    def scope_mask(
+        self,
+        timestamps: pd.DatetimeIndex,
+        demand_bases,
+        seasons,
+    ):
+        """Select intervals charged by this component in local wall time."""
+        mask = pd.Series(True, index=range(len(timestamps))).to_numpy()
+        if self.basis != DemandChargeBasis.MAXIMUM:
+            mask &= demand_bases == self.basis
+        if self.season is not None:
+            mask &= seasons == self.season.value
+        if self.excluded_local_hours:
+            mask &= ~timestamps.hour.isin(self.excluded_local_hours)
+        return mask
+
+    @property
+    def uses_prior_overall_peak(self) -> bool:
+        return (
+            self.frequency == DemandChargeFrequency.MONTHLY
+            and self.basis == DemandChargeBasis.MAXIMUM
+            and self.season is None
+            and not self.excluded_local_hours
+        )
 
 
 @dataclass(frozen=True)

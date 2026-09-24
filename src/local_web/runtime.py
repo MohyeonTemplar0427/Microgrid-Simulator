@@ -162,7 +162,11 @@ class Store:
         return [json.loads(p.read_text()) for p in sorted((self.directory / "datasets").glob("*.json"))]
 
     def submit(self, request, engine):
-        validate_request(request)
+        if isinstance(request, dict) and request.get("schema_version") == 7:
+            from .pge_annual_study import validate_request as validate_annual
+            validate_annual(request)
+        else:
+            validate_request(request)
         sources = {}
         if request["schema_version"] == 1:
             sources["input.csv"] = self.directory / "datasets" / (request["dataset_id"] + ".csv")
@@ -352,6 +356,11 @@ class Application:
         if not (source / "resource.json").is_file() or json.loads((source / "resource-request.json").read_text())["kind"] != "utility-resolution":
             raise ValueError("Saved utility resolution not found.")
         request = {**request, "resolution": json.loads((source / "resource.json").read_text())}
+        return self.store.submit(request, self.engine)
+
+    def submit_pge_annual(self, request):
+        if not self.capabilities.get("pge_annual_replay"):
+            raise ValueError("Refresh the engine to enable PG&E annual statement replay.")
         return self.store.submit(request, self.engine)
 
     def utilities(self, request):

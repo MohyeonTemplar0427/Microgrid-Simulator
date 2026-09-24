@@ -19,6 +19,7 @@ from .tariffs import (
     CustomerClass,
     DemandChargeBasis,
     DemandChargeComponent,
+    DemandChargeFrequency,
     ExportCompensationRule,
     Season,
     SeasonDefinition,
@@ -688,6 +689,7 @@ def _pge_large_demand_tou(
     winter_off_peak: float,
     source_url: str,
     notes: str,
+    demand_charges_override: tuple[DemandChargeComponent, ...] | None = None,
 ) -> TariffDefinition:
     """Build one B-19/B-20 family tariff.
 
@@ -749,7 +751,11 @@ def _pge_large_demand_tou(
         service_type=ServiceType.BUNDLED,
         season_definition=PGE_SEASONS,
         daily_customer_charge=daily_customer_charge,
-        demand_charges=tuple(demand_charges),
+        demand_charges=(
+            demand_charges_override
+            if demand_charges_override is not None
+            else tuple(demand_charges)
+        ),
         tou_periods=(
             TOUPeriod(
                 name="summer_peak",
@@ -832,7 +838,7 @@ _FAMILY_NOT_MODELLED = (
     "Secondary voltage, bundled service only. Not modelled: Primary and "
     "Transmission voltage classes, the power-factor adjustment, Peak Day "
     "Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover "
-    "applies only to the maximum-demand component."
+    "applies only to the all-hours monthly maximum-demand component."
 )
 
 # The Voluntary tier is the same rate schedule as Mandatory B-19 with a much
@@ -887,11 +893,38 @@ PGE_B19_SECONDARY_OPTION_R_BUNDLED = register_tariff(
     )
 )
 
-# Option S cuts demand charges hard in exchange for much higher energy rates,
-# which is what makes it a storage rate. Its maximum-demand charge is printed
-# as two rows -- a voltage-dependent distribution part and a flat combined
-# transmission and reliability-services part -- which sum to the total below
-# (Sheet 11 total table, itemised on Sheet 12).
+def _option_s_demand_charges(
+    *, excluded_hours_rate: float, all_hours_rate: float,
+    summer_peak_rate: float, summer_part_peak_rate: float,
+    winter_peak_rate: float,
+) -> tuple[DemandChargeComponent, ...]:
+    """Filed Option S: two distinct monthly maxima and daily TOU peaks."""
+    return (
+        DemandChargeComponent(
+            "maximum_demand_excluding_09_to_14", excluded_hours_rate,
+            excluded_local_hours=frozenset(range(9, 14)),
+        ),
+        DemandChargeComponent("maximum_demand_all_hours", all_hours_rate),
+        DemandChargeComponent(
+            "peak_period_demand_summer_daily", summer_peak_rate,
+            basis=DemandChargeBasis.PEAK_PERIOD, season=Season.SUMMER,
+            frequency=DemandChargeFrequency.DAILY,
+        ),
+        DemandChargeComponent(
+            "part_peak_period_demand_summer_daily", summer_part_peak_rate,
+            basis=DemandChargeBasis.PART_PEAK_PERIOD, season=Season.SUMMER,
+            frequency=DemandChargeFrequency.DAILY,
+        ),
+        DemandChargeComponent(
+            "peak_period_demand_winter_daily", winter_peak_rate,
+            basis=DemandChargeBasis.PEAK_PERIOD, season=Season.WINTER,
+            frequency=DemandChargeFrequency.DAILY,
+        ),
+    )
+
+
+# Option S trades lower monthly demand rates for daily peak charges and
+# higher energy rates. These two monthly maxima must not be combined.
 PGE_B19_SECONDARY_OPTION_S_BUNDLED = register_tariff(
     _pge_large_demand_tou(
         tariff_id="pge_b19_secondary_option_s_bundled_2026_03_01",
@@ -901,6 +934,11 @@ PGE_B19_SECONDARY_OPTION_S_BUNDLED = register_tariff(
         peak_demand_summer=1.60,
         part_peak_demand_summer=0.08,
         peak_demand_winter=1.22,
+        demand_charges_override=_option_s_demand_charges(
+            excluded_hours_rate=6.35, all_hours_rate=9.13,
+            summer_peak_rate=1.60, summer_part_peak_rate=0.08,
+            winter_peak_rate=1.22,
+        ),
         summer_peak=0.43568,
         summer_part_peak=0.25184,
         summer_off_peak=0.19137,
@@ -949,6 +987,11 @@ PGE_B20_SECONDARY_OPTION_S_BUNDLED = register_tariff(
         peak_demand_summer=1.30,
         part_peak_demand_summer=0.07,
         peak_demand_winter=1.02,
+        demand_charges_override=_option_s_demand_charges(
+            excluded_hours_rate=5.56, all_hours_rate=11.06,
+            summer_peak_rate=1.30, summer_part_peak_rate=0.07,
+            winter_peak_rate=1.02,
+        ),
         summer_peak=0.40620,
         summer_part_peak=0.22337,
         summer_off_peak=0.16434,

@@ -65,8 +65,8 @@ installation, maintenance and financing costs are excluded.
 Excluded: CCA generation, CARE/FERA/medical accounts, unconfirmed bonus
 eligibility, local taxes/other adjustments, grid-charged storage exports,
 annual retrospective credit application, NSC, termination, virtual/aggregate
-accounts, equipment capital cost and electrical-network feasibility. The desktop
-GUI has not yet been connected to this new export comparison.
+accounts, equipment capital cost and electrical-network feasibility. The current
+desktop GUI opens the same local app as the browser, so it shares this comparison.
 
 ## Sources and reproducibility
 
@@ -124,13 +124,14 @@ calculation; this monthly operating comparison does not establish it.
 
 ## Remaining utility work (do not substitute PG&E rules)
 
-PG&E now has a separate [annual statement reconciliation component](PGE_Solar_True_Up.md).
-It reproduces the published guide example but does not yet provide annual
-interval billing, annual dispatch or annual browser/GUI controls.
+PG&E now has a separate [annual statement reconciliation workflow](PGE_Solar_True_Up.md)
+in the shared local browser and desktop GUI. It reproduces the published guide
+example from twelve documented monthly records, but does not yet provide annual
+interval billing or annual dispatch.
 
 | Utility/provider | Required work before enabling full settlement |
 |---|---|
-| PG&E | Annual true-up/NSC and verified historical average-export debit; NEM/NEM2; commercial and special accounts; GUI |
+| PG&E | Full-year interval billing/dispatch with verified dated component rates and export credits; NEM/NEM2; commercial and special accounts |
 | SCE | Import component and EEC vintage mapping, monthly/annual NBT, NEM/NEM-ST, taxes and GUI/web integration |
 | LADWP | OAS-specific NEM netting, credit restrictions, minimum bills and termination |
 | CleanPowerSF, Peninsula, SVCE, SJCE, Ava | Provider-specific generation program plus separate PG&E delivery settlement; do not use PG&E generation credits |

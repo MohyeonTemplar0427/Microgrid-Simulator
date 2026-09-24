@@ -32,7 +32,8 @@ def billing_account(r):
 
 def validate(r):
  from .site_profile import customer_class
- if not isinstance(r,dict) or set(r)!=FIELDS or r['schema_version']!=6:raise ValueError('Supply exactly the schema 6 Southern California study fields.')
+ if not isinstance(r,dict) or set(r)-{'include_degradation_in_optimization'}!=FIELDS or r['schema_version']!=6:raise ValueError('Supply exactly the schema 6 Southern California study fields.')
+ if type(r.get('include_degradation_in_optimization',False)) is not bool:raise ValueError('Choose whether battery degradation is included in optimization.')
  if not isinstance(r['name'],str) or not 1<=len(r['name'].strip())<=120:raise ValueError('Enter a study name.')
  if r['timezone']!='America/Los_Angeles' or r['timestep_minutes']!=15:raise ValueError('Southern California studies require local Pacific time and 15-minute intervals.')
  if r['mode'] not in ('actual_service','hypothetical_bundled'):raise ValueError('Choose actual service or an explicitly hypothetical bundled comparison.')
@@ -103,7 +104,7 @@ def execute(directory,r):
    dc_ac_ratio=1.2,system_losses_fraction=.14,nominal_inverter_efficiency=.96),weather,
    weather_source='Explicit clear-sky study assumption').build_detailed(grid)
   frame['pv_available_kw']=pv.pv_available_kw.to_numpy()
- result=optimize(r['tariff_id'],frame,billing_account(r),r['start_date'],r['end_date'],r['battery'],r['degradation_cost_per_kWh'])
+ result=optimize(r['tariff_id'],frame,billing_account(r),r['start_date'],r['end_date'],r['battery'],r['degradation_cost_per_kWh'],include_degradation_in_optimization=r.get('include_degradation_in_optimization',False))
  tables=[];rows=[];costs=[];bills={};versions=[]
  if solar['capacity_kw']:tables=[('weather','Clear-sky study weather',weather),('pv','PV model diagnostics',pv.diagnostics)]
  scenarios=[('grid_only','baseline_bill')]
@@ -111,10 +112,12 @@ def execute(directory,r):
  if r['battery']:scenarios.append(('pv_storage' if solar['capacity_kw'] else 'battery_storage','bill'))
  for name,key in scenarios:
   b=result[key];wear=result['degradation_cost'] if key=='bill' else 0
-  rows.append({'scenario':name,'utility_bill':b['total'],'degradation_cost':wear,'total_explicit_operating_cost':b['total']+wear,'savings_vs_grid':result['baseline_bill']['total']-b['total']-wear})
+  rows.append({'scenario':name,'utility_bill':b['total'],'degradation_cost':wear,'total_explicit_operating_cost':b['total']+wear,'bill_savings_vs_grid':result['baseline_bill']['total']-b['total'],'savings_vs_grid':result['baseline_bill']['total']-b['total']-wear})
   versions.extend({'scenario':name,**v} for v in b.get('rate_versions',[]))
   costs.extend({'scenario':name,'component':k,'amount':v} for k,v in b['line_items'].items());bills[name]=b
- warnings=result['bill']['warnings']+['PV uses the existing PVWatts/temperature/inverter model with clear-sky irradiance, 20 °C air, 1 m/s wind, 14% system losses, 96% inverter efficiency and 1.2 DC/AC ratio; not measured weather.','Savings are operating costs only, excluding capital cost, incentives and lifecycle payback.']
+ warnings=result['bill']['warnings']+[
+  'Battery wear is included in optimization.' if r.get('include_degradation_in_optimization',False) else 'Storage dispatch minimizes the utility bill; estimated battery wear is reported separately.',
+  'PV uses the existing PVWatts/temperature/inverter model with clear-sky irradiance, 20 °C air, 1 m/s wind, 14% system losses, 96% inverter efficiency and 1.2 DC/AC ratio; not measured weather.','Savings are operating costs only, excluding capital cost, incentives and lifecycle payback.']
  if not solar['capacity_kw']:warnings=[w for w in warnings if not w.startswith('PV uses')]
  if r['mode']=='hypothetical_bundled':warnings.insert(0,'HYPOTHETICAL bundled generation comparison — account enrollment and eligibility are study assumptions, not an actual customer bill.')
  if versions:tables.append(('rate_versions','Applied rate versions',pd.DataFrame(versions)))

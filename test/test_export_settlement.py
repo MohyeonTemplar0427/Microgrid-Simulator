@@ -80,6 +80,16 @@ def test_optimized_export_physics_and_ledger():
  assert results['storage_self_consumption']['dispatch'].grid_export_kw.max()<1e-6
 
 
+def test_export_study_can_optimize_bill_without_pricing_reported_battery_wear():
+ b=dict(capacity_kWh=4,energy_kWh=.8,SOC_min=.2,SOC_max=.8,max_charge_kw=2,max_discharge_kw=2,charge_efficiency=.95,discharge_efficiency=.95)
+ bill_only=compare(frame(),account(),export_limit_kw=3,battery=b,wear_per_kwh=10)
+ wear_aware=compare(frame(),account(),export_limit_kw=3,battery=b,wear_per_kwh=10,
+                    include_degradation_in_optimization=True)
+ assert bill_only['storage_with_export']['bill']['amount_due'] < wear_aware['storage_with_export']['bill']['amount_due']-1
+ assert bill_only['storage_with_export']['degradation_cost'] > 0
+ assert wear_aware['storage_with_export']['degradation_cost'] == pytest.approx(0,abs=1e-5)
+
+
 def test_solar_benefits_separate_behind_meter_savings_and_unspent_export_credits():
  opening=CreditBalance(generation=10000,delivery=10000)
  results=compare(frame(),account(),export_limit_kw=3,opening=opening)

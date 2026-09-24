@@ -121,6 +121,8 @@ def make_server(application, port=8765):
                 if not 0 < length <= MAX_BODY:
                     raise ValueError("Request must be nonempty and at most 20 MB.")
                 body = json.loads(self.rfile.read(length))
+                if urlsplit(self.path).path == "/api/v1/pge/annual-studies":
+                    return self.respond(202, application.submit_pge_annual(body))
                 if urlsplit(self.path).path == "/api/v1/socal/studies":
                     return self.respond(202, application.submit_socal(body))
                 if urlsplit(self.path).path == "/api/v1/municipal/studies":
@@ -144,6 +146,8 @@ def make_server(application, port=8765):
                     dataset = application.store.add_dataset(body["csv"].encode("utf-8"), body["name"])
                     return self.respond(201, dataset)
                 if urlsplit(self.path).path == "/api/studies":
+                    if isinstance(body, dict) and body.get("schema_version") == 7:
+                        raise ValueError("Submit PG&E annual statement replays through /api/v1/pge/annual-studies.")
                     if isinstance(body, dict) and body.get("schema_version") in (4, 6):
                         raise ValueError("Submit municipal studies through /api/v1/municipal/studies.")
                     if isinstance(body, dict) and body.get("schema_version") == 3 and "candidate_defaults" not in application.capabilities:

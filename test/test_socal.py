@@ -96,6 +96,19 @@ def test_storage_bill_reconciliation_and_physics(key):
  assert d.energy_kWh.min()>=2-1e-5 and d.energy_kWh.max()<=8+1e-5
 
 
+def test_socal_bill_only_mode_reports_wear_without_pricing_it():
+ f=frame('2026-07-06','2026-07-07')
+ f['pv_available_kw']=np.where((f.timestamp.dt.hour>=10)&(f.timestamp.dt.hour<15),3.,0.)
+ a=account('sce');a.update(solar_program='approved_non_export',interconnection_confirmed=True,billing_month_factor=2/30)
+ b=dict(capacity_kWh=10,energy_kWh=5,SOC_min=.2,SOC_max=.8,max_charge_kw=3,max_discharge_kw=3,charge_efficiency=.95,discharge_efficiency=.95)
+ bill_only=optimize('sce_tou-d-4-9',f,a,'2026-07-06','2026-07-07',b,10)
+ wear_aware=optimize('sce_tou-d-4-9',f,a,'2026-07-06','2026-07-07',b,10,
+                     include_degradation_in_optimization=True)
+ assert bill_only['bill']['total'] < wear_aware['bill']['total']-1
+ assert bill_only['degradation_cost'] > 0
+ assert wear_aware['degradation_cost'] == pytest.approx(0,abs=1e-4)
+
+
 def study_request(utility='ladwp'):
  return dict(schema_version=6,name='Synthetic SoCal verification',resolution_id='a'*32,
   resolution={'status':'approximate','delivery_utility':utility,'delivery_candidates':[{'utility_id':utility}],

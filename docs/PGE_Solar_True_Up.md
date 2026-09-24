@@ -61,8 +61,19 @@ Run a JSON replay with:
 /usr/local/bin/python3 -m tools.solar_export.replay_pge_annual INPUT.json
 ```
 
-The top-level JSON has `account_confirmed`, `records` (exactly twelve) and
-`rates` (the existing `TrueUpRates` fields, or `null` for a net consumer). Each
+The local browser and current desktop GUI (which opens the same local app)
+also expose **Annual statement replay** below the main study form. Import or
+paste the annual JSON, confirm the account conditions, and run the replay. The
+result is saved in ordinary study history with an annual summary, a twelve-cycle
+credit ledger, a true-up component table, downloadable CSV files, and reusable
+settings. The dedicated local endpoint is `POST /api/v1/pge/annual-studies`;
+it accepts schema version 7 and uses the durable study queue. This control does
+not turn the ordinary monthly solar comparison into a full-year simulation.
+
+The CLI JSON has `account_confirmed`, `records` (exactly twelve) and `rates`
+(the existing `TrueUpRates` fields, or `null` for a net consumer). The browser
+JSON editor/import accepts `records` and `rates`; its separate name and account
+confirmation controls supply those remaining request fields. Each
 record has `period_start`, `period_end`, `import_kwh`, `export_kwh`, `charges`
 (`generation`, `delivery`, `protected`), `credits_earned` (`generation`,
 `delivery`, `bonus`), `offsettable_paid` (`generation`, `delivery`),
@@ -83,7 +94,7 @@ factors. It currently has those import components only for its June–September
 plan also has an explicit March–May 2026 coverage gap. This replay does **not**
 infer any missing component from a total rate, derive annual hourly export
 credits, authenticate a user-entered source reference, or optimize battery
-dispatch over a year. It is a backend annual statement replay, not a full annual
+dispatch over a year. It is an annual statement replay, not a full annual
 simulation.
 
 ## Independent reference case
@@ -101,15 +112,15 @@ missing evidence, wrong-month rates, negative/nonfinite inputs and partial perio
 
 ## Still unfinished
 
-This is a backend reconciliation component, not complete PG&E solar support.
+This is a saved statement reconciliation workflow, not complete PG&E solar support.
 Annual interval billing needs a complete verified dated solar component split
 and export-credit coverage in addition to the existing total import rates;
 the twelve-cycle replay accepts documented monthly bill components instead.
-Annual dispatch must account for credit value and annual
-settlement rather than simply chaining monthly optimizations. Web and desktop
-annual controls are not enabled. Existing monthly web studies retain their
-explicit pre-true-up restriction.
+Annual dispatch must account for credit value and annual settlement rather than
+simply chaining monthly optimizations. Existing monthly web studies retain their
+explicit pre-true-up restriction; the annual control requires twelve separately
+documented monthly records.
 
 NEM and NEM2 require their own retail-netting, NBC, minimum-bill, eligibility and
-true-up rules; neither is implemented by this NBT component. They remain the
-next PG&E work after annual NBT integration, not alternative names for NBT.
+true-up rules; neither is implemented by this NBT component. They remain future
+PG&E work, not alternative names for NBT.

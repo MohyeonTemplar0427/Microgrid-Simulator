@@ -229,6 +229,7 @@ def run_integrated_csv_analysis(
     selected_scenarios: tuple[str, ...],
     carbon_weights: tuple[float, ...],
     degradation_cost_per_kWh: float,
+    include_degradation_in_optimization: bool = False,
     tariff_id: str | None = None,
     meter_topology_mode: str = "single_pcc",
     submeter_count: int = 1,
@@ -284,6 +285,7 @@ def run_integrated_csv_analysis(
         selected_scenarios=selected_scenarios,
         carbon_weights=weights_to_run,
         degradation_cost_per_kWh=degradation_cost_per_kWh,
+        include_degradation_in_optimization=include_degradation_in_optimization,
         tariff_id=tariff_id,
         meter_topology_mode=meter_topology_mode,
         submeter_count=submeter_count,
@@ -330,6 +332,7 @@ def run_live_api_analysis(
     selected_scenarios: tuple[str, ...],
     carbon_weights: tuple[float, ...],
     degradation_cost_per_kWh: float,
+    include_degradation_in_optimization: bool = False,
     load_profile_mode: str = "constant",
     load_archetype: str = "multifamily",
     load_variability_fraction: float = 0.0,
@@ -469,6 +472,7 @@ def run_live_api_analysis(
         selected_scenarios=selected_scenarios,
         carbon_weights=weights_to_run,
         degradation_cost_per_kWh=degradation_cost_per_kWh,
+        include_degradation_in_optimization=include_degradation_in_optimization,
         tariff_id=(tariff_id if price_mode == "time_of_use" else None),
         meter_topology_mode=meter_topology_mode,
         submeter_count=submeter_count,
@@ -773,6 +777,7 @@ def _run_selected_signal_analysis(
     selected_scenarios: tuple[str, ...],
     carbon_weights: tuple[float, ...],
     degradation_cost_per_kWh: float,
+    include_degradation_in_optimization: bool = False,
     tariff_id: str | None = None,
     meter_topology_mode: str = "single_pcc",
     submeter_count: int = 1,
@@ -810,15 +815,12 @@ def _run_selected_signal_analysis(
             timestep_minutes=timestep_minutes,
             carbon_weight=weight,
             degradation_cost_per_kWh=degradation_cost_per_kWh,
+            include_degradation_in_optimization=include_degradation_in_optimization,
             expected_timezone=expected_timezone,
             start_time=start_date,
             end_time=end_date,
             scenario_names=scenarios_for_run,
-            demand_charge_rate_per_kw=(
-                _maximum_demand_rate(tariff_id)
-                if tariff_id is not None
-                else 0.0
-            ),
+            demand_tariff=get_tariff(tariff_id) if tariff_id is not None else None,
             previous_peak_kw=previous_peak_kw,
             progress_callback=report_stage,
         )
@@ -901,7 +903,12 @@ def _run_selected_signal_analysis(
     return InterfaceAnalysisResult(
         comparison=comparison,
         runs_by_carbon_weight=runs,
-        warnings=tuple(dict.fromkeys(billing_warnings)),
+        warnings=tuple(dict.fromkeys((
+            *billing_warnings,
+            "Battery wear is included in cost and combined optimization."
+            if include_degradation_in_optimization else
+            "Cost optimization excludes battery wear and minimizes modeled electricity charges; estimated wear is reported separately in total operating cost.",
+        ))),
     )
 
 

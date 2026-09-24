@@ -38,7 +38,8 @@ def test_peak_shaving_reconciles_physics_and_exact_bill(utility,schedule):
 def test_tiers_and_tou_have_exact_bills_and_certified_gap(schedule,kw,tou):
     a=account(schedule)
     a.update(time_of_use=tou,tou_enrollment_confirmed=tou)
-    result=optimize('svp_'+schedule.lower().replace('-','')+'_2026_01_01',frame(kw=kw),a)
+    result=optimize('svp_'+schedule.lower().replace('-','')+'_2026_01_01',frame(kw=kw),a,
+                    include_degradation_in_optimization=True)
     assert result['total_explicit_cost']<=result['baseline_bill']['total']+1e-6
     assert result['optimality_gap_bound_dollars']<.009
     assert result['bill']['total']==pytest.approx(sum(result['bill']['line_items'].values()))
@@ -50,6 +51,18 @@ def test_offpeak_spike_does_not_create_svp_demand_savings():
     result=optimize('svp_cb1_2026_01_01',data,a)
     assert result['bill']['billing_demand_kw']==pytest.approx(60)
     assert result['degradation_cost']==pytest.approx(0,abs=1e-5)
+
+
+def test_municipal_bill_only_and_wear_aware_objectives_diverge():
+    data=frame(kw=20)
+    data.loc[(data.timestamp.dt.hour>=17)&(data.timestamp.dt.hour<19),'grid_import_kw']=90
+    a=account('CB-1');a['previous_11_month_peaks_kw']=history(kw=100)
+    bill_only=optimize('svp_cb1_2026_01_01',data,a,degradation_cost_per_kWh=100)
+    wear_aware=optimize('svp_cb1_2026_01_01',data,a,degradation_cost_per_kWh=100,
+                        include_degradation_in_optimization=True)
+    assert bill_only['bill']['total'] < wear_aware['bill']['total']-1
+    assert bill_only['degradation_cost'] > 0
+    assert wear_aware['degradation_cost'] == pytest.approx(0,abs=1e-4)
 
 def test_cb3_discontinuous_pf_boundary_is_rejected():
     a=account('CB-3');a.update(phase='three',secondary_service_approved=True,

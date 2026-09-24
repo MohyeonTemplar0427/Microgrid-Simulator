@@ -1,6 +1,7 @@
 """Build the dispatch-strategy scenarios for Week 4."""
 
 import pandas as pd
+from ..billing.tariffs import TariffDefinition
 
 from ..analysis.no_battery import create_no_battery_dispatch
 from ..opendss.opendss_handoff import create_opendss_handoff
@@ -39,9 +40,11 @@ def create_optimized_dispatch_scenarios(
         *,
         carbon_weight: float,
         degradation_cost_per_kWh: float,
+        include_degradation_in_optimization: bool = False,
         timestep_minutes: int = 15,
         demand_charge_rate_per_kw: float = 0.0,
         previous_peak_kw: float | None = None,
+        demand_tariff: TariffDefinition | None = None,
         scenario_names: tuple[str, ...] | None = None,
 ) -> dict[str, pd.DataFrame]:
     """Create rule-based and optimized dispatch schedules."""
@@ -97,6 +100,7 @@ def create_optimized_dispatch_scenarios(
             f"{sorted(unsupported_names)}"
         )
 
+    tariff_kwargs = {"demand_tariff": demand_tariff} if demand_tariff is not None else {}
     builders = {
         "rule_based": lambda: sda.run_rule_based_dispatch(
             data.copy(),
@@ -108,9 +112,11 @@ def create_optimized_dispatch_scenarios(
             data.copy(),
             battery_parameters,
             degradation_cost_per_kWh=degradation_cost_per_kWh,
+            include_degradation_in_optimization=include_degradation_in_optimization,
             timestep_hours=timestep_hours,
             demand_charge_rate_per_kw=demand_charge_rate_per_kw,
             previous_peak_kw=previous_peak_kw,
+            **tariff_kwargs,
         ),
         "carbon_optimal": lambda: sda.run_carbon_optimization(
             data.copy(),
@@ -122,9 +128,11 @@ def create_optimized_dispatch_scenarios(
             battery_parameters,
             carbon_weight=carbon_weight,
             degradation_cost_per_kWh=degradation_cost_per_kWh,
+            include_degradation_in_optimization=include_degradation_in_optimization,
             timestep_hours=timestep_hours,
             demand_charge_rate_per_kw=demand_charge_rate_per_kw,
             previous_peak_kw=previous_peak_kw,
+            **tariff_kwargs,
         ),
     }
 
@@ -141,10 +149,12 @@ def create_required_dispatch_scenarios(
         *,
         carbon_weight: float,
         degradation_cost_per_kWh: float,
+        include_degradation_in_optimization: bool = False,
         time_step_minutes: int = 15,
         expected_timezone: str = "America/Los_Angeles",
         demand_charge_rate_per_kw: float = 0.0,
         previous_peak_kw: float | None = None,
+        demand_tariff: TariffDefinition | None = None,
         scenario_names: tuple[str, ...] | None = None,
 ) -> dict[str, pd.DataFrame]:
     """Create only the requested OpenDSS-ready dispatch schedules."""
@@ -173,9 +183,11 @@ def create_required_dispatch_scenarios(
             battery_parameters,
             carbon_weight=carbon_weight,
             degradation_cost_per_kWh=(degradation_cost_per_kWh),
+            include_degradation_in_optimization=include_degradation_in_optimization,
             timestep_minutes=time_step_minutes,
             demand_charge_rate_per_kw=demand_charge_rate_per_kw,
             previous_peak_kw=previous_peak_kw,
+            demand_tariff=demand_tariff,
             scenario_names=tuple(
                 name
                 for name in requested_names

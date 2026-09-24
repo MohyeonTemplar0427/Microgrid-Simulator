@@ -557,6 +557,7 @@ class MicrogridApplication:
             "carbon_weight_end": tk.StringVar(value="0.50"),
             "carbon_weight_interval": tk.StringVar(value="0.10"),
             "degradation_cost": tk.StringVar(value="0.03"),
+            "include_degradation_in_optimization": tk.StringVar(value="false"),
             "battery_capacity": tk.StringVar(value="100"),
             "battery_initial_energy": tk.StringVar(value="50"),
             "battery_max_charge": tk.StringVar(value="10"),
@@ -933,17 +934,25 @@ class MicrogridApplication:
 
         self._add_entry(
             strategy_tab,
-            "Battery degradation cost ($/kWh throughput)",
+            "Estimated battery wear ($/kWh throughput)",
             "degradation_cost",
             7,
         )
+
+        ttk.Checkbutton(
+            strategy_tab,
+            text="Include battery wear in cost optimization (otherwise minimize utility bill)",
+            variable=self.values["include_degradation_in_optimization"],
+            onvalue="true",
+            offvalue="false",
+        ).grid(row=8, column=0, columnspan=2, sticky="w", pady=3)
 
         self.weight_mode_combobox = self._add_combobox(
             strategy_tab,
             "Combined carbon-weight input",
             self.values["carbon_weight_mode"],
             ("single", "list", "range"),
-            8,
+            9,
             option_labels=CARBON_WEIGHT_MODE_LABELS,
         )
         self.weight_mode_combobox.bind("<<ComboboxSelected>>", self._update_weight_controls)
@@ -953,31 +962,31 @@ class MicrogridApplication:
                 strategy_tab,
                 "Single weight ($/kgCO2)",
                 "carbon_weight_single",
-                9,
+                10,
             ),
             "list": self._add_entry(
                 strategy_tab,
                 "Weight list (comma-separated)",
                 "carbon_weight_list",
-                10,
+                11,
             ),
             "range_start": self._add_entry(
                 strategy_tab,
                 "Range start",
                 "carbon_weight_start",
-                11,
+                12,
             ),
             "range_end": self._add_entry(
                 strategy_tab,
                 "Range end (inclusive)",
                 "carbon_weight_end",
-                12,
+                13,
             ),
             "range_interval": self._add_entry(
                 strategy_tab,
                 "Range interval",
                 "carbon_weight_interval",
-                13,
+                14,
             ),
         }
 
@@ -2746,6 +2755,9 @@ class MicrogridApplication:
             "selected_scenarios": strategies,
             "carbon_weights": tuple(float(weight) for weight in weights),
             "degradation_cost_per_kWh": degradation_cost,
+            "include_degradation_in_optimization": (
+                str(self.values["include_degradation_in_optimization"].get()) == "true"
+            ),
         }
 
         if source_mode == "integrated_csv":
@@ -3067,6 +3079,10 @@ class MicrogridApplication:
             ),
             "input_degradation_cost_per_kwh": float(
                 self.values["degradation_cost"].get()
+            ),
+            "input_include_degradation_in_optimization": (
+                "include_degradation_in_optimization" in self.values
+                and str(self.values["include_degradation_in_optimization"].get()) == "true"
             ),
             "input_battery_capacity_kwh": float(
                 self.values["battery_capacity"].get()

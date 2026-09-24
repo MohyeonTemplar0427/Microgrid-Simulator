@@ -5,6 +5,7 @@ from typing import Callable
 
 import pandas as pd
 
+from ..billing.tariffs import TariffDefinition
 from ..timeseries import normalize_any_frame, to_legacy_columns
 
 from ..dispatch.config import to_optimizer_parameters
@@ -144,12 +145,14 @@ def run_microgrid_timeseries_analysis(
     timestep_minutes: int = 15,
     carbon_weight: float = 0.20,
     degradation_cost_per_kWh: float = 0.03,
+    include_degradation_in_optimization: bool = False,
     expected_timezone: str = "America/Los_Angeles",
     start_time: str | pd.Timestamp | None = None,
     end_time: str | pd.Timestamp | None = None,
     scenario_names: tuple[str, ...] | None = None,
     demand_charge_rate_per_kw: float = 0.0,
     previous_peak_kw: float | None = None,
+    demand_tariff: TariffDefinition | None = None,
     progress_callback: Callable[[str], None] | None = None,
 ) -> TimeSeriesAnalysisResult:
     """Run dispatch, power flow, and performance analysis."""
@@ -220,10 +223,12 @@ def run_microgrid_timeseries_analysis(
             degradation_cost_per_kWh=(
                 degradation_cost_per_kWh
             ),
+            include_degradation_in_optimization=include_degradation_in_optimization,
             time_step_minutes=timestep_minutes,
             expected_timezone=expected_timezone,
             demand_charge_rate_per_kw=demand_charge_rate_per_kw,
             previous_peak_kw=previous_peak_kw,
+            demand_tariff=demand_tariff,
             scenario_names=scenario_names,
         )
     )

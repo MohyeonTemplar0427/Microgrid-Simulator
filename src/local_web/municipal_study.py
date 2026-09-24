@@ -46,8 +46,10 @@ def load_frame(request):
 
 
 def validate_study(request):
-    if not isinstance(request,dict) or set(request) - {"site_profile", "grid_only", "carbon"} != FIELDS or request.get('schema_version')!=4:
+    if not isinstance(request,dict) or set(request) - {"site_profile", "grid_only", "carbon", "include_degradation_in_optimization"} != FIELDS or request.get('schema_version')!=4:
         raise ValueError('Supply exactly the schema 4 municipal study fields.')
+    if type(request.get('include_degradation_in_optimization',False)) is not bool:
+        raise ValueError('Choose whether battery degradation is included in optimization.')
     if not isinstance(request['name'],str) or not 1<=len(request['name'].strip())<=120:
         raise ValueError('Study name must contain 1–120 characters.')
     from .site_profile import validate_profile_request
@@ -126,7 +128,8 @@ def execute_study(directory,request):
 
     write_json(directory/'progress.json',{'message':'Optimizing storage against municipal tiers, demand history, taxes and adjustments'})
     result=optimize_storage(request['arrangement']['tariff_id'],inputs,cycle_start=start,cycle_end=end,
-        account=request['account'],battery=request['battery'],degradation_cost_per_kWh=request['degradation_cost_per_kWh'])
+        account=request['account'],battery=request['battery'],degradation_cost_per_kWh=request['degradation_cost_per_kWh'],
+        include_degradation_in_optimization=request.get('include_degradation_in_optimization',False))
     tables=[]
     def save(key,label,frame):
         payload=json.loads(frame.to_json(orient='split',index=False,date_format='iso',double_precision=15))
@@ -139,6 +142,7 @@ def execute_study(directory,request):
     for scenario,bill in bills.items():
         wear=result['degradation_cost'] if scenario=='cost_optimal' else 0
         comparison.append(dict(scenario=scenario,total_explicit_cost=bill['total']+wear,
+            bill_savings_vs_grid=result['baseline_bill']['total']-bill['total'],
             energy_cost=bill['line_items']['energy_charge'],demand_charge=bill['line_items']['demand_charge'],
             customer_charge=bill['line_items']['customer_charge'],total_utility_charge=bill['total'],
             degradation_cost=wear,peak_grid_import_kw=float((result['dispatch'] if scenario=='cost_optimal' else inputs).grid_import_kw.max()),
@@ -158,6 +162,7 @@ def execute_study(directory,request):
     save('inputs','Native load inputs',inputs)
     save('dispatch-cost_optimal','Optimized battery dispatch',result['dispatch'])
     warnings=result['warnings']+[
+        ('Battery wear is included in optimization.' if request.get('include_degradation_in_optimization',False) else 'Storage dispatch minimizes the utility bill; estimated battery wear is reported separately.'),
         'Import-only load and storage study. Solar generation, export settlement and standby service are not modeled.',
         'No AC power-flow replay is performed for this municipal billing study; electrical network feasibility is not established.',
         'Existing assignment is confirmed or explicitly assumed for this scenario; no automatic utility rate transfer.']
