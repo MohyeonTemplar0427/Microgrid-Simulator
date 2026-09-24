@@ -18,29 +18,29 @@ Spread is summer peak minus summer off-peak — the per-kWh margin a battery cap
 
 ### Charges at a glance
 
-| Schedule | Eligibility | Customer $/day | Demand $/kW | Summer peak $/kWh | Summer off-peak $/kWh | Summer spread $/kWh |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| PG&E B-1 Small General Service (Single-Phase) | Under 75 kW | 0.32854 | 0.00 | 0.47087 | 0.40083 | 0.07004 |
-| PG&E B-1 Small General Service (Polyphase) | Under 75 kW | 0.82136 | 0.00 | 0.47087 | 0.40083 | 0.07004 |
-| PG&E B-6 Small General Time-of-Use Service (Single-Phase) | Under 75 kW | 0.32854 | 0.00 | 0.64253 | 0.38491 | 0.25762 |
-| PG&E B-6 Small General Time-of-Use Service (Polyphase) | Under 75 kW | 0.82136 | 0.00 | 0.64253 | 0.38491 | 0.25762 |
-| PG&E B-10 Medium General Demand-Metered Service | 75-499 kW (voluntary below 75 kW) | 11.36882 | 20.50 | 0.33947 | 0.24522 | 0.09425 |
-| PG&E B-19 Medium General Demand-Metered TOU Service (Mandatory) | 500-999 kW | 58.62824 | 96.36 | 0.18648 | 0.12037 | 0.06611 |
-| PG&E B-19 Medium General Demand-Metered TOU Service (Voluntary) | Opt-in below 500 kW | 11.36882 | 96.36 | 0.18648 | 0.12037 | 0.06611 |
-| PG&E B-19 Option R (Renewables), Mandatory Tier | B-19 accounts with renewables | 58.62824 | 44.98 | 0.43568 | 0.19137 | 0.24431 |
-| PG&E B-19 Option S (Storage), Mandatory Tier | B-19 accounts with storage | 58.62824 | 18.38 | 0.43568 | 0.19137 | 0.24431 |
-| PG&E B-20 Large General Demand-Metered TOU Service | 1,000 kW or more | 107.36636 | 92.02 | 0.17702 | 0.11482 | 0.06220 |
-| PG&E B-20 Option R (Renewables) | B-20 accounts with renewables | 107.36636 | 45.46 | 0.40620 | 0.16434 | 0.24186 |
-| PG&E B-20 Option S (Storage) | B-20 accounts with storage | 107.36636 | 19.01 | 0.40620 | 0.16434 | 0.24186 |
-| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 1) | Residential, opt-in; income tier 1 (CARE-level) | 0.19713 | 0.00 | 0.47708 | 0.34212 | 0.13496 |
-| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 2) | Residential, opt-in; income tier 2 (FERA-level) | 0.39688 | 0.00 | 0.47708 | 0.34212 | 0.13496 |
-| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 3) | Residential, opt-in; income tier 3 (all others) | 0.79343 | 0.00 | 0.47708 | 0.34212 | 0.13496 |
-| PG&E E-ELEC Residential Electric Home (Income Tier 1) | Electrified home, opt-in; income tier 1 (CARE-level) | 0.19713 | 0.00 | 0.55214 | 0.33358 | 0.21856 |
-| PG&E E-ELEC Residential Electric Home (Income Tier 2) | Electrified home, opt-in; income tier 2 (FERA-level) | 0.39688 | 0.00 | 0.55214 | 0.33358 | 0.21856 |
-| PG&E E-ELEC Residential Electric Home (Income Tier 3) | Electrified home, opt-in; income tier 3 (all others) | 0.79343 | 0.00 | 0.55214 | 0.33358 | 0.21856 |
-| PG&E EV2-A Residential Electric Vehicle (Income Tier 1) | Household with an EV; income tier 1 (CARE-level) | 0.19713 | 0.00 | 0.53809 | 0.22558 | 0.31251 |
-| PG&E EV2-A Residential Electric Vehicle (Income Tier 2) | Household with an EV; income tier 2 (FERA-level) | 0.39688 | 0.00 | 0.53809 | 0.22558 | 0.31251 |
-| PG&E EV2-A Residential Electric Vehicle (Income Tier 3) | Household with an EV; income tier 3 (all others) | 0.79343 | 0.00 | 0.53809 | 0.22558 | 0.31251 |
+| Schedule | Eligibility | Customer $/day | Summer peak $/kWh | Summer off-peak $/kWh | Summer spread $/kWh |
+| --- | --- | ---: | ---: | ---: | ---: |
+| PG&E B-1 Small General Service (Single-Phase) | Under 75 kW | 0.32854 | 0.47087 | 0.40083 | 0.07004 |
+| PG&E B-1 Small General Service (Polyphase) | Under 75 kW | 0.82136 | 0.47087 | 0.40083 | 0.07004 |
+| PG&E B-6 Small General Time-of-Use Service (Single-Phase) | Under 75 kW | 0.32854 | 0.64253 | 0.38491 | 0.25762 |
+| PG&E B-6 Small General Time-of-Use Service (Polyphase) | Under 75 kW | 0.82136 | 0.64253 | 0.38491 | 0.25762 |
+| PG&E B-10 Medium General Demand-Metered Service | 75-499 kW (voluntary below 75 kW) | 11.36882 | 0.33947 | 0.24522 | 0.09425 |
+| PG&E B-19 Medium General Demand-Metered TOU Service (Mandatory) | 500-999 kW | 58.62824 | 0.18648 | 0.12037 | 0.06611 |
+| PG&E B-19 Medium General Demand-Metered TOU Service (Voluntary) | Opt-in below 500 kW | 11.36882 | 0.18648 | 0.12037 | 0.06611 |
+| PG&E B-19 Option R (Renewables), Mandatory Tier | B-19 accounts with renewables | 58.62824 | 0.43568 | 0.19137 | 0.24431 |
+| PG&E B-19 Option S (Storage), Mandatory Tier | B-19 accounts with storage | 58.62824 | 0.43568 | 0.19137 | 0.24431 |
+| PG&E B-20 Large General Demand-Metered TOU Service | 1,000 kW or more | 107.36636 | 0.17702 | 0.11482 | 0.06220 |
+| PG&E B-20 Option R (Renewables) | B-20 accounts with renewables | 107.36636 | 0.40620 | 0.16434 | 0.24186 |
+| PG&E B-20 Option S (Storage) | B-20 accounts with storage | 107.36636 | 0.40620 | 0.16434 | 0.24186 |
+| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 1) | Residential, opt-in; income tier 1 (CARE-level) | 0.19713 | 0.47708 | 0.34212 | 0.13496 |
+| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 2) | Residential, opt-in; income tier 2 (FERA-level) | 0.39688 | 0.47708 | 0.34212 | 0.13496 |
+| PG&E E-TOU-D Residential TOU 5-8 p.m. (Income Tier 3) | Residential, opt-in; income tier 3 (all others) | 0.79343 | 0.47708 | 0.34212 | 0.13496 |
+| PG&E E-ELEC Residential Electric Home (Income Tier 1) | Electrified home, opt-in; income tier 1 (CARE-level) | 0.19713 | 0.55214 | 0.33358 | 0.21856 |
+| PG&E E-ELEC Residential Electric Home (Income Tier 2) | Electrified home, opt-in; income tier 2 (FERA-level) | 0.39688 | 0.55214 | 0.33358 | 0.21856 |
+| PG&E E-ELEC Residential Electric Home (Income Tier 3) | Electrified home, opt-in; income tier 3 (all others) | 0.79343 | 0.55214 | 0.33358 | 0.21856 |
+| PG&E EV2-A Residential Electric Vehicle (Income Tier 1) | Household with an EV; income tier 1 (CARE-level) | 0.19713 | 0.53809 | 0.22558 | 0.31251 |
+| PG&E EV2-A Residential Electric Vehicle (Income Tier 2) | Household with an EV; income tier 2 (FERA-level) | 0.39688 | 0.53809 | 0.22558 | 0.31251 |
+| PG&E EV2-A Residential Electric Vehicle (Income Tier 3) | Household with an EV; income tier 3 (all others) | 0.79343 | 0.53809 | 0.22558 | 0.31251 |
 
 ### Energy rates side by side ($/kWh)
 
@@ -70,33 +70,33 @@ The two summer part-peak blocks (afternoon and evening) always carry the same ra
 | pge_ev2_residential_tier2_bundled_2026_06_01 | 0.53809 | 0.42760 | 0.22558 | 0.41099 | — | 0.22558 |
 | pge_ev2_residential_tier3_bundled_2026_06_01 | 0.53809 | 0.42760 | 0.22558 | 0.41099 | — | 0.22558 |
 
-### Demand charges side by side ($/kW)
+### Monthly demand charges side by side ($/kW per billing month)
 
-Components apply together, so a summer peak-hour kilowatt on B-19 or B-20 can attract three of them at once. A dash means the schedule does not bill that component; both Option R schedules price winter peak-period demand at zero.
+Components apply together, so a summer peak-hour kilowatt on B-19 or B-20 can attract three of them at once. A dash means the schedule does not bill that component; both Option R schedules price winter peak-period demand at zero. Option S has separate daily and monthly charges and is listed below this table.
 
-| Schedule | Maximum | Summer peak-period | Summer part-peak-period | Winter peak-period | Total |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| B-1 single-phase | — | — | — | — | **0.00** |
-| B-1 polyphase | — | — | — | — | **0.00** |
-| B-6 single-phase | — | — | — | — | **0.00** |
-| B-6 polyphase | — | — | — | — | **0.00** |
-| B-10 | 20.50 | — | — | — | **20.50** |
-| B-19 mandatory | 37.37 | 46.16 | 10.52 | 2.31 | **96.36** |
-| B-19 voluntary | 37.37 | 46.16 | 10.52 | 2.31 | **96.36** |
-| B-19 Option R | 36.61 | 6.50 | 1.87 | — | **44.98** |
-| B-19 Option S | 15.48 | 1.60 | 0.08 | 1.22 | **18.38** |
-| B-20 | 39.08 | 41.35 | 9.27 | 2.32 | **92.02** |
-| B-20 Option R | 38.23 | 5.62 | 1.61 | — | **45.46** |
-| B-20 Option S | 16.62 | 1.30 | 0.07 | 1.02 | **19.01** |
-| pge_e_tou_d_residential_tier1_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_e_tou_d_residential_tier2_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_e_tou_d_residential_tier3_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_e_elec_residential_tier1_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_e_elec_residential_tier2_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_e_elec_residential_tier3_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_ev2_residential_tier1_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_ev2_residential_tier2_bundled_2026_06_01 | — | — | — | — | **0.00** |
-| pge_ev2_residential_tier3_bundled_2026_06_01 | — | — | — | — | **0.00** |
+| Schedule | Maximum | Summer peak-period | Summer part-peak-period | Winter peak-period | Summer sum | Winter sum |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| B-1 single-phase | — | — | — | — | 0.00 | 0.00 |
+| B-1 polyphase | — | — | — | — | 0.00 | 0.00 |
+| B-6 single-phase | — | — | — | — | 0.00 | 0.00 |
+| B-6 polyphase | — | — | — | — | 0.00 | 0.00 |
+| B-10 | 20.50 | — | — | — | 20.50 | 20.50 |
+| B-19 mandatory | 37.37 | 46.16 | 10.52 | 2.31 | 94.05 | 39.68 |
+| B-19 voluntary | 37.37 | 46.16 | 10.52 | 2.31 | 94.05 | 39.68 |
+| B-19 Option R | 36.61 | 6.50 | 1.87 | — | 44.98 | 36.61 |
+| B-20 | 39.08 | 41.35 | 9.27 | 2.32 | 89.70 | 41.40 |
+| B-20 Option R | 38.23 | 5.62 | 1.61 | — | 45.46 | 38.23 |
+| pge_e_tou_d_residential_tier1_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_e_tou_d_residential_tier2_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_e_tou_d_residential_tier3_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_e_elec_residential_tier1_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_e_elec_residential_tier2_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_e_elec_residential_tier3_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_ev2_residential_tier1_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_ev2_residential_tier2_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+| pge_ev2_residential_tier3_bundled_2026_06_01 | — | — | — | — | 0.00 | 0.00 |
+
+Option S: B-19 bills $6.35/kW monthly excluding 09:00–14:00, $9.13/kW monthly across all hours, $1.60/kW **per day** at the summer peak, $0.08/kW per day at summer part-peak, and $1.22/kW per day at the winter peak. B-20 has the same scopes at $5.56, $11.06, $1.30, $0.07, and $1.02 respectively. Summer and winter daily charges do not apply together.
 
 Seasons are the same on every schedule: **summer is June 1 through September 30**, winter is October 1 through May 31. Every *commercial* period applies *every day, including weekends and holidays*. The residential time-of-use schedules do not: their peak is weekday-only, and the Hours column says so. Holidays are not modelled anywhere — a holiday falling on a weekday is priced at the ordinary weekday rate.
 
@@ -271,12 +271,11 @@ Small General Time-of-Use Service, secondary voltage, bundled service. The accou
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 20.50 |
-| **Total if every component peaks together** | | | **20.50** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand | All year | highest interval demand in the billing month | monthly | 20.50 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -311,15 +310,14 @@ Secondary voltage means service below 2,400 V, which includes the modelled 480 V
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 37.37 |
-| peak_period_demand_summer | Summer | highest demand inside peak hours | 46.16 |
-| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | 10.52 |
-| peak_period_demand_winter | Winter | highest demand inside peak hours | 2.31 |
-| **Total if every component peaks together** | | | **96.36** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand | All year | highest interval demand in the billing month | monthly | 37.37 |
+| peak_period_demand_summer | Summer | highest demand inside peak hours | monthly | 46.16 |
+| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | monthly | 10.52 |
+| peak_period_demand_winter | Winter | highest demand inside peak hours | monthly | 2.31 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -354,15 +352,14 @@ Mandatory tier, secondary voltage, bundled service only. The Voluntary tier and 
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 37.37 |
-| peak_period_demand_summer | Summer | highest demand inside peak hours | 46.16 |
-| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | 10.52 |
-| peak_period_demand_winter | Winter | highest demand inside peak hours | 2.31 |
-| **Total if every component peaks together** | | | **96.36** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand | All year | highest interval demand in the billing month | monthly | 37.37 |
+| peak_period_demand_summer | Summer | highest demand inside peak hours | monthly | 46.16 |
+| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | monthly | 10.52 |
+| peak_period_demand_winter | Winter | highest demand inside peak hours | monthly | 2.31 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -370,7 +367,7 @@ Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure a
 
 ### Notes
 
-Voluntary tier: identical rates to Mandatory B-19 apart from the customer charge ($11.36882 rather than $58.62824 per day). Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the maximum-demand component.
+Voluntary tier: identical rates to Mandatory B-19 apart from the customer charge ($11.36882 rather than $58.62824 per day). Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the all-hours monthly maximum-demand component.
 
 ---
 
@@ -397,14 +394,13 @@ Voluntary tier: identical rates to Mandatory B-19 apart from the customer charge
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 36.61 |
-| peak_period_demand_summer | Summer | highest demand inside peak hours | 6.50 |
-| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | 1.87 |
-| **Total if every component peaks together** | | | **44.98** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand | All year | highest interval demand in the billing month | monthly | 36.61 |
+| peak_period_demand_summer | Summer | highest demand inside peak hours | monthly | 6.50 |
+| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | monthly | 1.87 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -412,7 +408,7 @@ Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure a
 
 ### Notes
 
-Option R, mandatory-tier customer charge. Eligibility rules for Option R enrolment are not modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the maximum-demand component.
+Option R, mandatory-tier customer charge. Eligibility rules for Option R enrolment are not modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the all-hours monthly maximum-demand component.
 
 ---
 
@@ -439,15 +435,15 @@ Option R, mandatory-tier customer charge. Eligibility rules for Option R enrolme
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 15.48 |
-| peak_period_demand_summer | Summer | highest demand inside peak hours | 1.60 |
-| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | 0.08 |
-| peak_period_demand_winter | Winter | highest demand inside peak hours | 1.22 |
-| **Total if every component peaks together** | | | **18.38** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand_excluding_09_to_14 | All year | highest interval demand in the billing month, excluding 09:00–14:00 local time | monthly | 6.35 |
+| maximum_demand_all_hours | All year | highest interval demand in the billing month | monthly | 9.13 |
+| peak_period_demand_summer_daily | Summer | highest demand inside peak hours | daily | 1.60 |
+| part_peak_period_demand_summer_daily | Summer | highest demand inside part-peak hours | daily | 0.08 |
+| peak_period_demand_winter_daily | Winter | highest demand inside peak hours | daily | 1.22 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -455,7 +451,7 @@ Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure a
 
 ### Notes
 
-Option S, mandatory-tier customer charge. Requires a storage system rated at least 10 percent of the account's peak demand over the previous twelve months, and is subject to an enrolment cap; neither condition is modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the maximum-demand component.
+Option S, mandatory-tier customer charge. Requires a storage system rated at least 10 percent of the account's peak demand over the previous twelve months, and is subject to an enrolment cap; neither condition is modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the all-hours monthly maximum-demand component.
 
 ---
 
@@ -482,15 +478,14 @@ Option S, mandatory-tier customer charge. Requires a storage system rated at lea
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 39.08 |
-| peak_period_demand_summer | Summer | highest demand inside peak hours | 41.35 |
-| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | 9.27 |
-| peak_period_demand_winter | Winter | highest demand inside peak hours | 2.32 |
-| **Total if every component peaks together** | | | **92.02** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand | All year | highest interval demand in the billing month | monthly | 39.08 |
+| peak_period_demand_summer | Summer | highest demand inside peak hours | monthly | 41.35 |
+| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | monthly | 9.27 |
+| peak_period_demand_winter | Winter | highest demand inside peak hours | monthly | 2.32 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -525,14 +520,13 @@ Secondary voltage, bundled service only. Option R and Option S are registered se
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 38.23 |
-| peak_period_demand_summer | Summer | highest demand inside peak hours | 5.62 |
-| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | 1.61 |
-| **Total if every component peaks together** | | | **45.46** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand | All year | highest interval demand in the billing month | monthly | 38.23 |
+| peak_period_demand_summer | Summer | highest demand inside peak hours | monthly | 5.62 |
+| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | monthly | 1.61 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -540,7 +534,7 @@ Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure a
 
 ### Notes
 
-Option R. Eligibility rules for Option R enrolment are not modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the maximum-demand component.
+Option R. Eligibility rules for Option R enrolment are not modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the all-hours monthly maximum-demand component.
 
 ---
 
@@ -567,15 +561,15 @@ Option R. Eligibility rules for Option R enrolment are not modelled. Secondary v
 
 ### Demand charges
 
-| Component | Season | Measured over | $/kW |
-| --- | --- | --- | ---: |
-| maximum_demand | All year | highest interval demand in the billing month | 16.62 |
-| peak_period_demand_summer | Summer | highest demand inside peak hours | 1.30 |
-| part_peak_period_demand_summer | Summer | highest demand inside part-peak hours | 0.07 |
-| peak_period_demand_winter | Winter | highest demand inside peak hours | 1.02 |
-| **Total if every component peaks together** | | | **19.01** |
+| Component | Season | Measured over | Frequency | Rate ($/kW) |
+| --- | --- | --- | --- | ---: |
+| maximum_demand_excluding_09_to_14 | All year | highest interval demand in the billing month, excluding 09:00–14:00 local time | monthly | 5.56 |
+| maximum_demand_all_hours | All year | highest interval demand in the billing month | monthly | 11.06 |
+| peak_period_demand_summer_daily | Summer | highest demand inside peak hours | daily | 1.30 |
+| part_peak_period_demand_summer_daily | Summer | highest demand inside part-peak hours | daily | 0.07 |
+| peak_period_demand_winter_daily | Winter | highest demand inside peak hours | daily | 1.02 |
 
-Components apply together on the same bill. A summer peak-hour kilowatt can attract the maximum-demand, peak-period and part-peak-period charges at once.
+Each component is calculated in its own stated time scope; summer and winter components are mutually exclusive. Daily rates apply to each local day's applicable peak, while monthly rates apply once to the billing month's applicable peak.
 
 ### Export compensation
 
@@ -583,7 +577,7 @@ Export compensation (NEM or the Net Billing Tariff) is not modelled. Configure a
 
 ### Notes
 
-Option S. Requires a storage system rated at least 10 percent of the account's peak demand over the previous twelve months, and is subject to an enrolment cap; neither condition is modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the maximum-demand component.
+Option S. Requires a storage system rated at least 10 percent of the account's peak demand over the previous twelve months, and is subject to an enrolment cap; neither condition is modelled. Secondary voltage, bundled service only. Not modelled: Primary and Transmission voltage classes, the power-factor adjustment, Peak Day Pricing, and Schedule SB standby charges. `previous_peak_kw` carryover applies only to the all-hours monthly maximum-demand component.
 
 ---
 

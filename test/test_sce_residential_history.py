@@ -92,7 +92,7 @@ def test_shared_plan_gap_overlap_and_effective_dates():
 @pytest.mark.parametrize('kw',[.01,1.])
 def test_transition_dispatch_uses_same_historical_bill(plan,kw):
  f=frame('2025-11-13','2025-11-16',kw)
- r=optimize(plan,f,account('sce'),'2025-11-13','2025-11-16',dict(capacity_kWh=10,energy_kWh=5,SOC_min=.2,SOC_max=.8,max_charge_kw=3,max_discharge_kw=3,charge_efficiency=.95,discharge_efficiency=.95),.01)
+ r=optimize(plan,f,account('sce'),'2025-11-13','2025-11-16',dict(capacity_kWh=10,energy_kWh=5,SOC_min=.2,SOC_max=.8,max_charge_kw=3,max_discharge_kw=3,charge_efficiency=.95,discharge_efficiency=.95),.01,include_degradation_in_optimization=True)
  assert r['objective_gap']<.005
  assert r['bill']['total']+r['degradation_cost']<=r['baseline_bill']['total']+.005
  d=r['dispatch'];assert np.allclose(d.grid_import_kw+d.battery_discharge_kw,d.native_load_kw+d.battery_charge_kw,atol=1e-6)

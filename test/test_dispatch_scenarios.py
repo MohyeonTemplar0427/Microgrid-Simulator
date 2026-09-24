@@ -173,12 +173,14 @@ def test_cost_optimizer_receives_demand_charge_inputs(monkeypatch):
         battery_parameters,
         *,
         degradation_cost_per_kWh,
+        include_degradation_in_optimization,
         timestep_hours,
         demand_charge_rate_per_kw,
         previous_peak_kw,
     ):
         received["rate"] = demand_charge_rate_per_kw
         received["previous_peak"] = previous_peak_kw
+        received["include_degradation"] = include_degradation_in_optimization
         return data
 
     monkeypatch.setattr(sda, "run_cost_optimization", fake_cost)
@@ -193,7 +195,7 @@ def test_cost_optimizer_receives_demand_charge_inputs(monkeypatch):
         scenario_names=("cost_optimal",),
     )
 
-    assert received == {"rate": 20.50, "previous_peak": 275.0}
+    assert received == {"rate": 20.50, "previous_peak": 275.0, "include_degradation": False}
 
 
 def test_save_required_dispatch_scenarios(

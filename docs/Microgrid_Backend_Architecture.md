@@ -4,6 +4,28 @@ Reference for the time-series, surplus, metering and tariff layers. Covers the
 conventions that are decisions rather than derivations — the things a reader
 cannot recover from the code alone.
 
+## Dispatch cost objective
+
+Cost-optimal dispatch minimizes modeled electricity charges by default. The
+browser and desktop GUI expose an unchecked **Include battery wear in cost
+optimization** choice. When checked, the optimizer adds the specified
+throughput-based degradation estimate to its objective. The estimate remains
+visible in results in either mode, and `total_explicit_cost` includes it; that
+reported total is therefore distinct from the bill-only optimization target.
+Combined carbon-and-cost dispatch uses the same wear choice but also includes
+the user's carbon weight. A customer charge that is fixed for the selected
+plan does not alter dispatch.
+
+PG&E B-19/B-20 Option S uses two separate monthly maximum-demand measurements:
+one over all hours and one excluding 09:00–14:00 local time. Its summer peak,
+summer part-peak, and winter peak demand rates apply to each local day's
+maximum in the respective TOU window. Billing and dispatch both use these
+same scopes. The study's calendar-month periods are an approximation of actual
+meter-read billing cycles, particularly when a cycle straddles a season or
+rate-change boundary. For a partial period, `previous_peak_kw` can carry in
+only the all-hours monthly peak; prior daily peaks and the prior excluded-hour
+maximum are unknown, so a partial-period Option S bill may understate charges.
+
 ## Layer separation
 
 | Layer | Package | Answers |
@@ -135,6 +157,27 @@ When rates change, **add a new definition** with its own effective window
 rather than editing the numbers in place, so historical analyses stay
 reproducible.
 
+### Historical coverage target
+
+When adding or retrieving a billing plan, research a **rolling ten calendar
+years of history** ending on the latest verified effective date. Store each
+actual filed rate or rule change as a dated version with its source, effective
+window and account-eligibility conditions. Ten annual averages are not ten
+years of billing coverage: fixed charges, energy and demand rates, seasonal and
+TOU rules, baselines, riders, generation/delivery splits and solar settlement
+rules may change on different dates. A plan introduced less than ten years ago
+starts at its documented inception; a retired predecessor is a separate plan
+unless a filing establishes continuity.
+
+Publish the verified coverage window and any gaps for each plan. A ten-year
+research target does **not** mean the simulator may fill missing periods by
+carrying a neighboring version backward or forward. Unsupported dates still
+raise. PG&E's [historical electric-rate index](https://www.pge.com/tariffs/en/rate-information/electric-rates.html)
+is one source for this work, but every applicable component and rule must be
+checked against its dated filing. Current implemented plans have varying,
+often much shorter, historical coverage; this target is future research scope,
+not a claim that ten years are already supported.
+
 ### A plan is not a version
 
 A **plan** is what a customer is on and stays on: "PG&E E-1 bundled, income
@@ -195,10 +238,9 @@ Winter (Oct 1 – May 31): peak 4–9 p.m. $0.26321; super off-peak 9 a.m.–2 p
 Rates match on **local wall-clock hour**, so a 4 p.m. peak stays at 4 p.m.
 local on both sides of a DST transition.
 
-**B-19 is deliberately not implemented.** It uses several distinct demand
-components — maximum plus separate peak-period and part-peak-period demand —
-which cannot be approximated by B-10's single maximum-demand charge without
-materially misstating cost in a way that would look plausible.
+B-19 and B-20 now have separate maximum, peak-period and part-peak-period
+demand components. Their registered options retain their own rates and
+eligibility limits; they must not be approximated by B-10's one component.
 
 ## Residential is not commercial
 
@@ -253,6 +295,25 @@ approximation rather than a filed rule.
 
 ## Production and network physics are separate models
 
+### PV–battery connection
+
+The current location-study dispatch is **AC-coupled**: the PV production model
+provides available AC power after inverter conversion and clipping, while the
+battery's charge/discharge efficiencies are effective AC-side values. The
+residential browser form records this under Advanced settings when a PV and
+battery comparison is configured. Older saved studies omit the field and retain
+the same AC-coupled behavior. A DC-coupled selection is deliberately unavailable.
+
+Future DC-coupled charging must pass PV power **before** inverter conversion and
+clipping into dispatch. Each interval must allocate that DC power among the
+DC-to-DC battery charger, the shared inverter, and curtailment; model charger
+losses and battery state of charge; and constrain the combined PV and battery AC
+output by the shared inverter rating. Grid charging, if enabled, needs its own
+AC-to-DC path and eligibility rules. Validate interval energy balance, clipping
+recovery, meter imports/exports, bill reconciliation, and compatibility with
+equipment specifications before enabling the browser choice. Do not reinterpret
+AC equipment-catalog efficiencies or ratings as DC-side specifications.
+
 `pvlib` owns production; OpenDSS owns network physics. The PV chain in
 `src/profiles/` converts weather, module and inverter configuration into an AC
 availability schedule, and `src/opendss/ac_replay.py` hands that schedule to
@@ -306,10 +367,12 @@ Programmatic callers can supply real kVA, bus and connection details instead.
 
 ## Demand and customer charges
 
-**Demand charges are never summed across intervals.** A demand charge bills the
-single highest 15-minute average import per billing period, once. Summing
-per-interval demand overstates cost by roughly the interval count, and is the
-most common way this calculation goes wrong.
+**Demand charges are never summed across intervals.** Each component bills its
+highest eligible 15-minute average import per billing period, once: the
+overall maximum uses every interval, while peak and part-peak components use
+their tariff-defined hours and season. Multiple components may apply to the
+same interval. Summing per-interval demand overstates cost by roughly the
+interval count.
 
 Billing periods are calendar months. A multi-month horizon gets a separate peak
 *and* a separate customer charge per month.
@@ -323,6 +386,14 @@ billed_peak = max(previous_peak, simulated_peak)
 When the previous peak is unknown the simulated peak is used and the period is
 flagged `is_partial_period` with a warning, because a real bill can only be
 higher.
+
+The general cost and combined dispatch objectives now use the selected
+tariff's demand components, TOU basis and local seasons, matching those peak
+scopes in numeric billing. The supplied `previous_peak_kw` applies only to the
+first period's **overall** maximum; prior peak/part-peak history is not inferred.
+Callers without a tariff can still provide one flat maximum-demand rate.
+Energy-price sources and other tariff provisions remain separate from this
+demand-component alignment.
 
 Customer charge:
 

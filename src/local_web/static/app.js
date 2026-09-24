@@ -1,7 +1,7 @@
 "use strict";
 const $ = (id) => document.getElementById(id);
 const form = $("study-form");
-const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"Cost optimal", carbon_optimal:"Carbon optimal", combined_optimal:"Combined optimal"};
+const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"Cost optimal", carbon_optimal:"Carbon optimal", combined_optimal:"Combined optimal", grid_only:"Grid only", pv_self_consumption:"Solar + inverter · no export", pv_with_export:"Solar + inverter · surplus export", storage_self_consumption:"Solar + battery · no export", storage_with_export:"Solar + battery · surplus export"};
 let capabilities, selectedDatasetId, datasets = [], activeStudy = null, activeId = null, pollTimer, offset = 0, tableRequest = 0;
 const PAGE_SIZE = 100;
 let essResolution=null, essKey=null, annualResult=null, annualKey=null;
@@ -28,13 +28,22 @@ function updateEquipmentChoice() {
     else if(['4','5','6','7'].includes(page.dataset.step))for(const input of page.querySelectorAll('input,select,button'))input.disabled=false;
   }
   field('degradation_cost_per_kWh').closest('label').hidden=gridOnly();
+  field('include_degradation_in_optimization').closest('label').hidden=gridOnly();
+  field('include_degradation_in_optimization').disabled=gridOnly();
   $('strategies').closest('fieldset').hidden=gridOnly() || !!municipal;
   for(const name of ['degradation_cost_per_kWh','carbon_weight']) {field(name).disabled=gridOnly();field(name).closest('label').hidden=gridOnly() || (name==='carbon_weight' && !!municipal);}
-  if($('municipal-strategy-note'))$('municipal-strategy-note').textContent=gridOnly()?'Grid-only load and utility bill. No battery optimization or AC network validation is performed.':'Compare no battery with cost-optimal storage, including throughput degradation. The battery finishes at its starting energy. No AC network validation is performed.';
+  if($('municipal-strategy-note'))$('municipal-strategy-note').textContent=gridOnly()?'Grid-only load and utility bill. No battery optimization or AC network validation is performed.':'Compare no battery with bill-minimizing storage. Battery wear is included in the objective only when selected; it is always estimated in results. The battery finishes at its starting energy. No AC network validation is performed.';
   if(gridOnly())$('dataset-info').textContent='Grid-only study: native load is supplied entirely by the electricity grid.';
   $('pv-choice-note').textContent=municipal
     ? 'PV billing is not supported for AMP/SVP. Choose grid-only to skip all equipment, or battery-only to keep the storage controls.'
     : 'Choose No to skip Solar weather, PV, Inverter and Battery / ESS. The study will calculate load and grid electricity costs.';
+}
+function syncPvBatteryConnection() {
+  const batteryCompared=exportActive() || [...$('strategies').querySelectorAll('input:checked')].some(box=>box.value!=='no_battery');
+  const show=template?.schema_version>=2 && siteCustomerClass()==='residential' && field('pv_choice').value==='yes' && batteryCompared && !window.municipalUI?.active() && !window.socalUI?.active();
+  $('pv-battery-connection').hidden=!show;
+  field('pv_battery_connection').disabled=!show;
+  if(show)field('pv_battery_connection').value='ac_coupled';
 }
 field('pv_choice').addEventListener('change',()=>{
   weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
@@ -115,6 +124,7 @@ function updateSiteControls() {
   window.municipalUI?.sync();
   updateEquipmentChoice();
   window.socalUI?.sync();
+  syncPvBatteryConnection();
   $("weather-status").textContent=field("weather_source").value==="nsrdb" ? (weatherId?"Historical weather ready. A copy will be saved with the study.":"Retrieve matching historical weather before running."):"Clear-sky estimates are calculated locally when the simulation runs.";
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
@@ -190,6 +200,13 @@ function formatRuntime(seconds) {
 function option(value, label) { const node=document.createElement("option"); node.value=value; node.textContent=label; return node; }
 
 function fillForm(request, lookup=true) {
+  if(request.schema_version===7) {
+    $("annual-name").value=request.name;
+    $("annual-json").value=JSON.stringify({records:request.records,rates:request.rates},null,2);
+    $("annual-confirm").checked=request.account_confirmed===true;
+    $("annual-replay").scrollIntoView({behavior:"smooth",block:"start"});
+    return;
+  }
   if(request.schema_version===6) {window.socalUI.restore(request); return;}
   if(request.schema_version===4) {window.municipalUI.restore(request); return;}
   if(request.schema_version===5) {
@@ -202,7 +219,9 @@ function fillForm(request, lookup=true) {
   clearTimeout(utilityTimer);
   resetUtilityOptions(request.site?.utility);
   template=structuredClone(request);
+  field('include_degradation_in_optimization').checked=request.include_degradation_in_optimization===true;
   field("pv_choice").value="yes";
+  field("pv_battery_connection").value=request.pv_battery_connection || "ac_coupled";
   restoreSiteProfile(request.site_profile);
   selectedDatasetId=request.dataset_id;
   weatherId=request.weather_id || null;
@@ -247,6 +266,7 @@ function readRequest() {
   for (const key of ["name","start_date","end_date","timezone"]) request[key]=form.elements.namedItem(key).value;
   for (const key of ["timestep_minutes","carbon_weight","degradation_cost_per_kWh","pv_capacity_kw"]) request[key]=Number(form.elements.namedItem(key).value);
   request.tariff_id=form.elements.tariff_id.value || null;
+  request.include_degradation_in_optimization=field('include_degradation_in_optimization').checked;
   request.strategies=[...$("strategies").querySelectorAll("input:checked")].map(box=>box.value);
   for (const key of Object.keys(request.battery)) request.battery[key]=Number(form.elements.namedItem(key).value);
   if(request.schema_version>=2) {
@@ -258,6 +278,8 @@ function readRequest() {
     request.load={mode:field("load_mode").value,power_kw:Number(field("load_power_kw").value),archetype:field("load_mode").value==="constant"?"office":field("archetype").value};
     request.fixed_price_per_kWh=Number(field("fixed_price_per_kWh").value);
     request.carbon_intensity_g_per_kWh=0; // Legacy schema field; historical carbon is authoritative.
+    delete request.pv_battery_connection;
+    if(!$('pv-battery-connection').hidden)request.pv_battery_connection=field('pv_battery_connection').value;
   }
   if(request.schema_version===3) {
     if(field("ess_mode").value==="equipment" && !essResolution?.ready) throw new Error("Review and apply the equipment settings first.");
@@ -307,14 +329,23 @@ async function refreshStudy(id) {
     activeStudy=study; $("connection").hidden=true;
     $("run-name").textContent=study.name;
     const runtime=formatRuntime(study.runtime_seconds);
-    $("run-meta").textContent=`${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}${runtime?` · Run time ${runtime}`:""}`;
+    $("run-meta").textContent=study.request.schema_version===7
+      ? `${study.request.records[0].period_start} → ${study.request.records.at(-1).period_end} · PG&E NBT annual statement replay · Engine ${study.engine_id.slice(0,12)}`
+      : `${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}`;
+    if(runtime) $("run-meta").textContent+=` · Run time ${runtime}`;
     if(study.expires_at && !study.saved) $("run-meta").textContent+=` · Temporary result expires ${new Date(study.expires_at).toLocaleString()}`;
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
     $("cancel-study").hidden=!["queued","running"].includes(study.status);
     $("save-study").hidden=!(study.status==="completed" && capabilities?.auth_mode==="oidc" && !study.saved);
     $("save-study").textContent=capabilities?.account_type==="guest" ? "Save to my profile · Sign in" : "Save to my profile";
     $("cancel-study").disabled=false;
-    $("progress").textContent=study.status==="completed" ? ((study.request.solar_export || study.request.schema_version===4 || study.request.schema_version===5 || study.request.schema_version===6) ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated." : "Calculation complete. Check electrical feasibility in the scenario comparison.") : study.progress;
+    $("progress").textContent=study.status==="completed"
+      ? (study.request.schema_version===7
+          ? "Annual statement replay complete. Inspect monthly credits and the true-up adjustment; no interval dispatch was simulated."
+          : (study.request.solar_export || [4,5,6].includes(study.request.schema_version))
+            ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated."
+            : "Calculation complete. Check electrical feasibility in the scenario comparison.")
+      : study.progress;
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
     else if (study.status==="cancelled") { await history(); }
@@ -332,7 +363,7 @@ async function refreshStudy(id) {
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["scenario","utility_bill","amount_due","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count"];
+const summaryColumns=["scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -365,6 +396,20 @@ async function loadTable() {
   $("previous").disabled=offset===0; $("next").disabled=offset+PAGE_SIZE>=table.total;
 }
 function tableAction(action) { return ()=>{action();loadTable().catch(error=>showError("run-error",error));}; }
+$("annual-file").addEventListener("change",async event=>{
+  const file=event.target.files?.[0];if(!file)return;
+  try {const raw=JSON.parse(await file.text());$("annual-json").value=JSON.stringify({records:raw.records,rates:raw.rates},null,2);$("annual-name").value=raw.name||file.name.replace(/\.json$/i,"");$("annual-error").hidden=true;}
+  catch(error){showError("annual-error",new Error(`Read a valid annual records JSON file: ${error.message}`));}
+});
+$("annual-run").addEventListener("click",async()=>{
+  const button=$("annual-run");button.disabled=true;$("annual-error").hidden=true;
+  try {
+    const raw=JSON.parse($("annual-json").value);
+    const request={schema_version:7,name:$("annual-name").value.trim(),account_confirmed:$("annual-confirm").checked,records:raw.records,rates:raw.rates};
+    const study=await api("/api/v1/pge/annual-studies",request);
+    await selectStudy(study.id);await history();
+  }catch(error){showError("annual-error",error);}finally{button.disabled=false;}
+});
 $("table-select").addEventListener("change",tableAction(()=>{offset=0;}));
 $("all-columns").addEventListener("change",tableAction(()=>{}));
 $("previous").addEventListener("click",tableAction(()=>{offset=Math.max(0,offset-PAGE_SIZE);}));
@@ -472,6 +517,7 @@ async function initialize() {
         showError("connection",new Error(`The temporary study could not be saved: ${error.message}`));
       }
     }
+    $("annual-replay").hidden=!capabilities.pge_annual_replay;
     window.municipalUI?.init(capabilities);
     for(const entry of capabilities.ess_catalog || []) field("equipment_id").append(option(entry.id,`${entry.manufacturer} · ${entry.model}`));
     for(const year of [...(capabilities.nsrdb_years || [])].reverse()) field("orientation_year").append(option(year,String(year)));
@@ -701,6 +747,7 @@ function startBlankStudy() {
     else input.value=input.name==="tariff_id"?"__unset__":"";
   }
   for(const box of $("strategies").querySelectorAll("input")) box.checked=box.value==="no_battery";
+  field('pv_battery_connection').value='ac_coupled';
   $("location-status").textContent="Enter coordinates or search for your microgrid location.";
   $("utility-suggestion").textContent="Utility choices will appear after you set a location.";
   $("orientation-status").textContent="";
@@ -741,7 +788,7 @@ function applyStepDefaults(page) {
     latitude:defaults.site?.latitude,longitude:defaults.site?.longitude,location_query:defaults.site?.label,
     utility:"unconfirmed",load_mode:defaults.load?.mode,load_power_kw:defaults.load?.power_kw,
     archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),
-    ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2};
+    ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2,pv_battery_connection:"ac_coupled"};
   for(const input of page.querySelectorAll("input[name],select[name]")) {
     if(input.name.startsWith("m_") || input.name.startsWith("sc_") || input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
     if(input.name==="location_query" && hadCoordinates) continue;
@@ -753,12 +800,13 @@ function applyStepDefaults(page) {
     $("location-status").textContent=siteLabel;refreshUtilities(locationGeneration);
   }
   $("form-error").hidden=true;updateSiteControls();
+  if(page.contains($("strategies")))renderStudySummary();
   if(page.contains(field('start_date')) && field('start_date').value>field('end_date').value)
     showError('form-error',new Error('The entered start date is later than the end date. Adjust one date; defaults preserve your existing entries.'));
 }
 for(const button of document.querySelectorAll(".use-defaults")) button.addEventListener("click",()=>applyStepDefaults(button.closest(".wizard-page")));
 
-$("strategies").addEventListener("change",()=>{strategiesEdited=true;});
+$("strategies").addEventListener("change",()=>{strategiesEdited=true;syncPvBatteryConnection();renderStudySummary();});
 
 $('refresh-services').addEventListener('click',()=>refreshUtilities(++locationGeneration));
 
@@ -785,7 +833,7 @@ function restoreExportControls(config){
   if(config){const a=config.account;for(const [name,value] of Object.entries({export_application_year:a.application_year,export_pto:a.pto_date,export_true_up:a.next_true_up_date,export_reference:a.reference,export_limit:config.export_limit_kw,...Object.fromEntries(Object.entries(config.opening_balance).map(([k,v])=>['export_open_'+k,v]))}))field(name).value=value;}
   syncExportControls();
 }
-field('export_enabled').addEventListener('change',syncExportControls);
+field('export_enabled').addEventListener('change',()=>{syncExportControls();syncPvBatteryConnection();});
 for(const name of ['utility','site_type','site_subtype','latitude','longitude','start_date','end_date','tariff_id','export_application_year','export_pto','export_true_up','export_limit','export_open_generation','export_open_delivery','export_open_bonus'])field(name).addEventListener('change',()=>{field('export_confirm').checked=false;syncExportControls();});
 
 // Clear the page on logout so the next account never inherits visible study data.

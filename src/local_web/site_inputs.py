@@ -151,6 +151,8 @@ def build_site_inputs(request, directory):
         warnings.append("Energy price is a user assumption; no utility tariff bill is calculated.")
     warnings.append("Grid carbon intensity is a constant user assumption, not location-retrieved emissions data.")
     warnings.append("PV replay assumes inverter kVA equals its AC kW rating and Q = 0; it is steady-state grid-following validation.")
+    if request.get("pv_battery_connection") == "ac_coupled":
+        warnings.append("PV–battery connection is AC-coupled: PV is converted to AC before battery charging; battery efficiencies are effective AC-side values.")
     frame = pd.DataFrame({"timestamp": grid.index, "load_kw": values.to_numpy(),
         "pv_kw": pv.pv_available_kw.to_numpy(), "price_per_kWh": prices,
         "gCO2/kWh": request["carbon_intensity_g_per_kWh"]})

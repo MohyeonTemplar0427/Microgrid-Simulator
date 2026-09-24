@@ -13,7 +13,8 @@ from .battery import Battery
 
 
 def optimize_storage(tariff_id, load, *, cycle_start, cycle_end, account, battery,
-                     degradation_cost_per_kWh=0.03):
+                     degradation_cost_per_kWh=0.03,
+                     include_degradation_in_optimization=False):
     """Return baseline, feasible cyclic dispatch, exact bills and objective bound.
 
     No exports, PV, changed PF activation state or invented demand history.
@@ -85,7 +86,7 @@ def optimize_storage(tariff_id, load, *, cycle_start, cycle_end, account, batter
         else:
             constraints.append(billed==0)
         lines=charge_lines(rate,energy_cost,billed,q,account,cb3_pf_active=pf_active,maximum=cp.maximum)
-        objective=sum(lines.values())+degradation*.25*cp.sum(charge+discharge)
+        objective=sum(lines.values())+(degradation if include_degradation_in_optimization else 0)*.25*cp.sum(charge+discharge)
         problem=cp.Problem(cp.Minimize(objective),constraints)
         problem.solve(solver='SCIPY',scipy_options={'method':'highs'})
         if problem.status=='infeasible':
@@ -123,21 +124,21 @@ def optimize_storage(tariff_id, load, *, cycle_start, cycle_end, account, batter
         wear=degradation*.25*float((c+d).sum())
         # The bill remains authoritative: objective approximation cannot leak
         # into exports or itemized utility charges.
-        objective_actual=bill['total']+wear
+        objective_actual=bill['total']+(wear if include_degradation_in_optimization else 0)
         scale=1.0285 if rate.utility=='svp' else 1.075
         if objective_actual-float(problem.value)>residual_bound*scale+1e-4:
             raise ValueError('Dispatch objective and authoritative bill do not reconcile.')
         candidates.append(dict(dispatch=dispatch,bill=bill,degradation_cost=wear,
-                               total_explicit_cost=objective_actual,regime=regime))
+                               total_explicit_cost=bill['total']+wear,objective_cost=objective_actual,regime=regime))
     if not candidates:
         raise ValueError('No feasible battery dispatch for the complete billing cycle.')
-    best=min(candidates,key=lambda x:x['total_explicit_cost'])
+    best=min(candidates,key=lambda x:x['objective_cost'])
     # Baseline is a feasible zero-throughput candidate; never offer worse costs.
-    if baseline['total']<best['total_explicit_cost']:
+    if baseline['total']<best['objective_cost']:
         best=dict(dispatch=pd.DataFrame({'timestamp':stamps,'native_load_kw':native,'grid_import_kw':native,
             'charge_kw':0.,'discharge_kw':0.,'energy_start_kwh':battery.energy_kWh,'energy_end_kwh':battery.energy_kWh}),
-            bill=baseline,degradation_cost=0.,total_explicit_cost=baseline['total'],regime='no_cycling')
-    gap=max(0,best['total_explicit_cost']-min(lower_bounds))
+            bill=baseline,degradation_cost=0.,total_explicit_cost=baseline['total'],objective_cost=baseline['total'],regime='no_cycling')
+    gap=max(0,best['objective_cost']-min(lower_bounds))
     return {**best,'baseline_bill':baseline,'objective_lower_bound':min(lower_bounds),
             'optimality_gap_bound_dollars':gap,'solver':'scipy-highs',
             'warnings':['Storage finishes at its starting energy; grid export and onsite generation are disabled.',

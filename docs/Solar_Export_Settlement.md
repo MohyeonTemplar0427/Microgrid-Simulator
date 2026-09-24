@@ -1,6 +1,6 @@
 # Solar export settlement implementation
 
-Status reviewed 2026-09-21. **The request to cover every utility is not complete.**
+Status reviewed 2026-09-23. **The request to cover every utility is not complete.**
 The current executable adapter is a bounded monthly PG&E bundled residential
 Solar Billing Plan (NBT) comparison. It is not a complete annual bill or legacy
 NEM implementation. Existing import-only utilities remain import-only.
@@ -28,11 +28,45 @@ provider inventory, code evidence and completion criteria.
 - Shared credit restrictions in billing and optimization, with final numerical
   bill reconciliation. Web form, durable worker, result tables and CSV exports.
 
+## Solar benefit breakdown
+
+The browser's solar comparison now includes three additional result tables:
+
+- **Solar bill savings:** direct comparisons of grid only → solar panel and
+  inverter for on-site use, then on-site use → export enabled. Battery rows show
+  the separate effects of adding storage or enabling export with storage. These
+  are alternative paths and must not be summed together.
+- **Solar savings components:** avoided generation, delivery and protected
+  import charges; change in generation, delivery and ACC Plus credits actually
+  used; and newly earned export credits. For each comparison,
+  `current_bill_savings = avoided_import_charges + change_in_credits_used` and
+  `operating_savings = current_bill_savings - battery_wear_change`.
+- **Solar energy flows:** AC solar available, generated and curtailed; grid
+  import/export; and battery charge/discharge for each scenario. The grid-only
+  case has no installed solar, so its PV availability and curtailment are zero.
+
+Both solar cases assume panels and an inverter **behind the meter**. The
+export-enabled case sends only surplus crossing the household meter; it does
+not sell all PV generation. A dedicated generation meter or other approved
+"export all" arrangement has different connection and billing rules and is
+not enabled by this PG&E residential NBT adapter. An existing compatible
+inverter would not necessarily require another inverter, but all-export is not
+just a dispatch toggle. See [CPUC's NBT description](https://www.cpuc.ca.gov/NEM/)
+and [PG&E's virtual net billing metering description](https://www.pge.com/en/about/doing-business-with-pge/interconnections/virtual-net-energy-metering.html).
+`change_in_export_credits_earned`
+can exceed `change_in_credits_used` because restricted credits may remain in the
+bank. `unspent_credit_change` is carried value, not current bill savings.
+Opening credits can also change the amount of newly earned credit used, so the
+cash bridge compares total credits *used* in the two scenarios rather than
+treating all newly earned export credit as cash. All comparisons use the same
+E-ELEC billing plan and one confirmed monthly cycle; equipment purchase,
+installation, maintenance and financing costs are excluded.
+
 Excluded: CCA generation, CARE/FERA/medical accounts, unconfirmed bonus
 eligibility, local taxes/other adjustments, grid-charged storage exports,
 annual retrospective credit application, NSC, termination, virtual/aggregate
-accounts, equipment capital cost and electrical-network feasibility. The desktop
-GUI has not yet been connected to this new export comparison.
+accounts, equipment capital cost and electrical-network feasibility. The current
+desktop GUI opens the same local app as the browser, so it shares this comparison.
 
 ## Sources and reproducibility
 
@@ -90,13 +124,14 @@ calculation; this monthly operating comparison does not establish it.
 
 ## Remaining utility work (do not substitute PG&E rules)
 
-PG&E now has a separate [annual statement reconciliation component](PGE_Solar_True_Up.md).
-It reproduces the published guide example but does not yet provide annual
-interval billing, annual dispatch or annual browser/GUI controls.
+PG&E now has a separate [annual statement reconciliation workflow](PGE_Solar_True_Up.md)
+in the shared local browser and desktop GUI. It reproduces the published guide
+example from twelve documented monthly records, but does not yet provide annual
+interval billing or annual dispatch.
 
 | Utility/provider | Required work before enabling full settlement |
 |---|---|
-| PG&E | Annual true-up/NSC and verified historical average-export debit; NEM/NEM2; commercial and special accounts; GUI |
+| PG&E | Full-year interval billing/dispatch with verified dated component rates and export credits; NEM/NEM2; commercial and special accounts |
 | SCE | Import component and EEC vintage mapping, monthly/annual NBT, NEM/NEM-ST, taxes and GUI/web integration |
 | LADWP | OAS-specific NEM netting, credit restrictions, minimum bills and termination |
 | CleanPowerSF, Peninsula, SVCE, SJCE, Ava | Provider-specific generation program plus separate PG&E delivery settlement; do not use PG&E generation credits |

@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import cvxpy as cp
 from typing import cast
 
+from ..billing.tariffs import DemandChargeFrequency, TariffDefinition, TariffError
+
 from .dispatch_metrics import (
     calculate_battery_usage_metrics,
     calculate_dispatch_metrics,
@@ -392,9 +394,11 @@ def run_cost_optimization(
         battery_parameters: dict[str, float],
         *,
         degradation_cost_per_kWh: float = 0.0,
+        include_degradation_in_optimization: bool = False,
         timestep_hours: float = 0.25,
         demand_charge_rate_per_kw: float = 0.0,
         previous_peak_kw: float | None = None,
+        demand_tariff: TariffDefinition | None = None,
 ) -> pd.DataFrame:
 
     number_of_steps = len(data)
@@ -512,11 +516,13 @@ def run_cost_optimization(
         data,
         demand_charge_rate_per_kw=demand_charge_rate_per_kw,
         previous_peak_kw=previous_peak_kw,
+        demand_tariff=demand_tariff,
+        timestep_hours=timestep_hours,
     )
 
     objective = cp.Minimize(
         grid_import_cost
-        + battery_degradation_cost
+        + (battery_degradation_cost if include_degradation_in_optimization else 0)
         + demand_charge_cost
     )
 
@@ -743,9 +749,11 @@ def run_combined_optimization(
         battery_parameters: dict[str, float],
         carbon_weight: float,
         degradation_cost_per_kWh: float,
+        include_degradation_in_optimization: bool = False,
         timestep_hours: float = 0.25,
         demand_charge_rate_per_kw: float = 0.0,
         previous_peak_kw: float | None = None,
+        demand_tariff: TariffDefinition | None = None,
 )->pd.DataFrame:
 
     number_of_steps = len(data)
@@ -871,6 +879,8 @@ def run_combined_optimization(
         data,
         demand_charge_rate_per_kw=demand_charge_rate_per_kw,
         previous_peak_kw=previous_peak_kw,
+        demand_tariff=demand_tariff,
+        timestep_hours=timestep_hours,
     )
 
     objective = cp.Minimize(
@@ -878,7 +888,7 @@ def run_combined_optimization(
         + demand_charge_cost
         + carbon_weight
         * grid_import_emission_kgCO2
-        + battery_degradation_cost
+        + (battery_degradation_cost if include_degradation_in_optimization else 0)
     )
 
     problem = cp.Problem(
@@ -924,10 +934,22 @@ def _build_monthly_demand_charge_cost(
     *,
     demand_charge_rate_per_kw: float,
     previous_peak_kw: float | None,
+    demand_tariff: TariffDefinition | None = None,
+    timestep_hours: float = 0.25,
 ):
-    """Build one maximum-demand charge term per represented calendar month."""
+    """Use the bill's monthly peak scopes for every tariff demand component.
 
-    if demand_charge_rate_per_kw == 0:
+    A flat rate remains available to callers without a registered tariff. The
+    tariff path uses the same TOU priority, local season and calendar-month
+    grouping as ``calculate_meter_billing``. Only the overall maximum receives
+    the known prior peak, matching the bill's partial-period convention.
+    """
+
+    if demand_tariff is not None and demand_charge_rate_per_kw:
+        raise ValueError("Choose a tariff or a flat demand rate, not both.")
+    if demand_tariff is None and demand_charge_rate_per_kw == 0:
+        return 0.0
+    if demand_tariff is not None and not demand_tariff.demand_charges:
         return 0.0
 
     if "timestamp" not in data.columns:
@@ -936,6 +958,17 @@ def _build_monthly_demand_charge_cost(
         )
 
     timestamps = pd.DatetimeIndex(data["timestamp"])
+    if demand_tariff is not None:
+        if timestamps.tz is None:
+            raise ValueError("Tariff demand optimization requires timezone-aware timestamps.")
+        demand_tariff.validate_demand_interval(timestep_hours * 60)
+        for timestamp in timestamps:
+            if not demand_tariff.is_effective_on(timestamp.date()):
+                raise TariffError(
+                    f"Tariff {demand_tariff.tariff_id!r} is not effective on {timestamp.date()}."
+                )
+        bases = demand_tariff.demand_basis_for(timestamps).to_numpy()
+        seasons = demand_tariff.season_for(timestamps).to_numpy()
     period_labels = timestamps.strftime("%Y-%m")
     demand_cost = 0.0
 
@@ -945,10 +978,30 @@ def _build_monthly_demand_charge_cost(
             for index, label in enumerate(period_labels)
             if label == period_label
         ]
-        period_peak = cp.max(grid_import_kw[positions])
-        if period_index == 0 and previous_peak_kw is not None:
-            period_peak = cp.maximum(period_peak, previous_peak_kw)
-        demand_cost += demand_charge_rate_per_kw * period_peak
+        if demand_tariff is None:
+            period_peak = cp.max(grid_import_kw[positions])
+            if period_index == 0 and previous_peak_kw is not None:
+                period_peak = cp.maximum(period_peak, previous_peak_kw)
+            demand_cost += demand_charge_rate_per_kw * period_peak
+            continue
+        period_timestamps = timestamps[positions]
+        for component in demand_tariff.demand_charges:
+            scope = component.scope_mask(
+                period_timestamps, bases[positions], seasons[positions]
+            )
+            selected = [position for position, included in zip(positions, scope) if included]
+            if not selected:
+                continue
+            if component.frequency == DemandChargeFrequency.DAILY:
+                selected_dates = timestamps[selected].normalize()
+                for day in selected_dates.unique():
+                    daily_positions = [position for position, local_day in zip(selected, selected_dates) if local_day == day]
+                    demand_cost += component.rate_per_kW * cp.max(grid_import_kw[daily_positions])
+            else:
+                component_peak = cp.max(grid_import_kw[selected])
+                if component.uses_prior_overall_peak and period_index == 0 and previous_peak_kw is not None:
+                    component_peak = cp.maximum(component_peak, previous_peak_kw)
+                demand_cost += component.rate_per_kW * component_peak
 
     return demand_cost
 

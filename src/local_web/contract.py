@@ -109,8 +109,13 @@ def validate_request(data):
     if not isinstance(data, dict) or type(data.get("schema_version")) is not int or data["schema_version"] not in (1, 2, 3):
         raise ValueError("Unsupported study schema version; this application accepts versions 1, 2 and 3.")
     template = {1: DEFAULT_REQUEST, 2: DEFAULT_SITE_REQUEST, 3: DEFAULT_CANDIDATE_REQUEST}[data["schema_version"]]
-    if set(data) - {"site_profile", "carbon", "solar_export"} != set(template) or (data["schema_version"] == 1 and ({"site_profile", "carbon", "solar_export"} & set(data))):
+    optional = {"site_profile", "carbon", "solar_export", "pv_battery_connection", "include_degradation_in_optimization"}
+    if set(data) - optional != set(template) or (data["schema_version"] == 1 and ((optional - {"include_degradation_in_optimization"}) & set(data))):
         raise ValueError(f"Supply exactly the fields in the version {data['schema_version']} study request.")
+    if type(data.get("include_degradation_in_optimization", False)) is not bool:
+        raise ValueError("Choose whether battery degradation is included in optimization.")
+    if "pv_battery_connection" in data and data["pv_battery_connection"] != "ac_coupled":
+        raise ValueError("Only AC-coupled PV and battery operation is currently modeled.")
     if not isinstance(data["name"], str) or not 1 <= len(data["name"].strip()) <= 120:
         raise ValueError("Study name must contain 1–120 characters.")
     if data["schema_version"] == 1 and not identifier(data["dataset_id"]):

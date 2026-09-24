@@ -179,7 +179,7 @@
     let load;
     if(f('load_mode').value==='csv'){if(!csvText)throw new Error('Choose a load CSV.');load={mode:'csv',csv:csvText};}
     else{load={mode:f('load_mode').value,base_kw:numeric('base_kw')};if(load.mode==='daily_peak')for(const k of ['peak_kw','peak_start_hour','peak_end_hour'])load[k]=numeric(k);}
-    return api('/api/v1/municipal/studies',{schema_version:4,carbon:carbonSettings(),grid_only:gridOnly(),site_profile:siteProfile(),name:f('name').value,resolution_id:savedResolution(),mode:f('mode').value,arrangement:arrangement(),account:account(),start_date:f('start_date').value,end_date:f('end_date').value,timezone:field('timezone').value,timestep_minutes:Number(field('timestep_minutes').value),battery:gridOnly()?null:battery,load,degradation_cost_per_kWh:gridOnly()?0:numeric('degradation_cost_per_kWh')});
+    return api('/api/v1/municipal/studies',{schema_version:4,carbon:carbonSettings(),grid_only:gridOnly(),site_profile:siteProfile(),name:f('name').value,resolution_id:savedResolution(),mode:f('mode').value,arrangement:arrangement(),account:account(),start_date:f('start_date').value,end_date:f('end_date').value,timezone:field('timezone').value,timestep_minutes:Number(field('timestep_minutes').value),battery:gridOnly()?null:battery,load,degradation_cost_per_kWh:gridOnly()?0:numeric('degradation_cost_per_kWh'),include_degradation_in_optimization:!gridOnly()&&field('include_degradation_in_optimization').checked});
   }
   function validate(page){
     if(!active())return true;
@@ -204,6 +204,7 @@
   }
   function restore(request){
     fillForm(defaultSettings(),false);
+    field('include_degradation_in_optimization').checked=request.include_degradation_in_optimization===true;
     field('pv_choice').value=request.grid_only?'no':'storage';
     restoreSiteProfile(request.site_profile || (request.account.customer_class==='residential'
       ? {site_type:'residential',subtype:null} : {site_type:'commercial',subtype:null}));

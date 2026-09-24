@@ -60,7 +60,7 @@ def capabilities():
     from ..equipment.ess import search
     from .site_profile import SITE_OPTIONS, SERVICE_CLASSES
     from .carbon import REGION_MAPPINGS
-    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "solar_export": {"program":"pge_nbt_monthly","scope":"Monthly comparison only; annual true-up and NSC not implemented"}, "tariffs": [
+    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "solar_export": {"program":"pge_nbt_monthly","scope":"Monthly comparison only; annual true-up and NSC not implemented"}, "pge_annual_replay": {"program": "pge_nbt_statement_replay", "scope": "Twelve documented monthly statements and annual true-up; no annual interval simulation or dispatch"}, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
          "service": tariff_service(key),
          "notes": get_tariff(key).notes,
@@ -77,7 +77,12 @@ def execute(directory):
     from ..simulation.interface_analysis import run_integrated_csv_analysis, RESULT_TABLE_COLUMNS
 
     directory = Path(directory)
-    request = validate_request(json.loads((directory / "request.json").read_text()))
+    raw_request = json.loads((directory / "request.json").read_text())
+    if isinstance(raw_request, dict) and raw_request.get("schema_version") == 7:
+        from .pge_annual_study import execute as execute_pge_annual
+        execute_pge_annual(directory, raw_request)
+        return
+    request = validate_request(raw_request)
     if request["schema_version"] == 6:
         from .socal_study import execute as execute_socal
         execute_socal(directory, request)
@@ -135,6 +140,7 @@ def execute(directory):
         timestep_minutes=request["timestep_minutes"], expected_timezone=request["timezone"],
         selected_scenarios=tuple(request["strategies"]), carbon_weights=(request["carbon_weight"],),
         degradation_cost_per_kWh=request["degradation_cost_per_kWh"],
+        include_degradation_in_optimization=request.get("include_degradation_in_optimization", False),
         tariff_id=request["tariff_id"], progress_callback=progress,
     )
     labels = dict(RESULT_TABLE_COLUMNS)

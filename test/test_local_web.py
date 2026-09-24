@@ -83,6 +83,16 @@ def test_csv_only_result_pages_keep_types_and_nulls(tmp_path):
     ]
 
 
+def test_battery_wear_objective_choice_defaults_off_and_requires_boolean():
+    request = request_for("a" * 64)
+    assert "include_degradation_in_optimization" not in validate_request(request)
+    request["include_degradation_in_optimization"] = True
+    assert validate_request(request)["include_degradation_in_optimization"] is True
+    request["include_degradation_in_optimization"] = "true"
+    with pytest.raises(ValueError, match="battery degradation"):
+        validate_request(request)
+
+
 def test_csv_preserves_repeated_dst_hour_by_instant():
     csv = b"timestamp,load_kw,pv_kw,price_per_kWh,gCO2/kWh\n2026-11-01T01:00:00-07:00,10,0,0.2,200\n2026-11-01T01:00:00-08:00,10,0,0.2,200\n"
     assert inspect_csv(csv)["timestep_minutes"] == 60
@@ -120,6 +130,7 @@ def test_saved_request_and_inputs_are_immutable_and_claimed_once(tmp_path):
     content = (ROOT / "data/default_small_business_week.csv").read_bytes()
     dataset = store.add_dataset(content, "sample.csv")
     request = request_for(dataset["id"])
+    request["include_degradation_in_optimization"] = True
     study = store.submit(request, {"id": "test-engine"})
     request["battery"]["capacity_kWh"] = 900
     assert store.get(study["id"])["request"]["battery"]["capacity_kWh"] == 100
@@ -183,6 +194,7 @@ def test_real_run_matches_existing_engine_and_returns_paged_tables(service):
     dataset = call("/api/datasets", {"csv": content, "name": "browser-upload.csv"}, headers)
     request = request_for(dataset["id"])
     # Exercise actual utility billing as well as optimization and AC replay.
+    request["include_degradation_in_optimization"] = True
     request["tariff_id"] = next(t["id"] for t in application.capabilities["tariffs"] if "b6" in t["id"])
     study = call("/api/studies", request, headers)
     finished = wait_for_study(call, study["id"])
@@ -196,6 +208,7 @@ def test_real_run_matches_existing_engine_and_returns_paged_tables(service):
         start_date=request["start_date"], number_of_days=1, timestep_minutes=15,
         expected_timezone=request["timezone"], selected_scenarios=tuple(request["strategies"]),
         carbon_weights=(request["carbon_weight"],), degradation_cost_per_kWh=0.03,
+        include_degradation_in_optimization=True,
         tariff_id=request["tariff_id"],
     )
     pd.testing.assert_frame_equal(actual, direct.comparison, check_dtype=False, atol=1e-7, rtol=1e-7)

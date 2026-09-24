@@ -237,6 +237,7 @@ def test_gui_preferences_round_trip_latest_valid_selections(tmp_path):
         "price_mode": FakeValueVariable("wholesale_market"),
         "start_date": FakeValueVariable("2026-09-01"),
         "pv_capacity": FakeValueVariable("0"),
+        "include_degradation_in_optimization": FakeValueVariable("true"),
     }
     writer.strategy_values = {
         "no_battery": FakeBooleanVariable(True),
@@ -252,6 +253,7 @@ def test_gui_preferences_round_trip_latest_valid_selections(tmp_path):
         "price_mode": FakeValueVariable("time_of_use"),
         "start_date": FakeValueVariable("2026-08-25"),
         "pv_capacity": FakeValueVariable("150"),
+        "include_degradation_in_optimization": FakeValueVariable("false"),
     }
     reader.strategy_values = {
         "no_battery": FakeBooleanVariable(False),
@@ -264,6 +266,7 @@ def test_gui_preferences_round_trip_latest_valid_selections(tmp_path):
     assert reader.values["price_mode"].get() == "wholesale_market"
     assert reader.values["start_date"].get() == "2026-09-01"
     assert reader.values["pv_capacity"].get() == "0"
+    assert reader.values["include_degradation_in_optimization"].get() == "true"
     assert reader.strategy_values["no_battery"].get() is True
     assert reader.strategy_values["cost_optimal"].get() is True
 

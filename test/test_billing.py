@@ -41,7 +41,7 @@ from src.billing import (
     supported_tariffs,
 )
 from src.billing.meter_topology import ConnectionLocation, UtilityMeter
-from src.billing.tariffs import Season, ServiceVoltageClass
+from src.billing.tariffs import DemandChargeFrequency, Season, ServiceVoltageClass
 from src.timeseries import build_interval_index
 
 PACIFIC = "America/Los_Angeles"
@@ -1198,15 +1198,76 @@ def test_option_r_omits_the_zero_rated_winter_peak_demand_component():
         assert "peak_period_demand_winter" not in demand_of(option_r)
 
 
-def test_option_s_maximum_demand_sums_the_printed_rows():
-    # The total-rate table prints maximum demand as a distribution row plus a
-    # combined transmission/reliability row; the bill applies their sum.
-    assert demand_of(B19_OPTION_S)["maximum_demand"] == pytest.approx(
-        6.35 + 9.13
+@pytest.mark.parametrize("tariff,excluded_rate,all_rate,peak_rate,part_rate", [
+    (B19_OPTION_S, 6.35, 9.13, 1.60, .08),
+    (B20_OPTION_S, 5.56, 11.06, 1.30, .07),
+])
+def test_option_s_separate_monthly_maxima_and_daily_summer_peaks(
+    tariff, excluded_rate, all_rate, peak_rate, part_rate,
+):
+    local = lambda day, hour: pd.Timestamp(
+        f"2026-07-{day:02d} {hour:02d}:00", tz=PACIFIC
     )
-    assert demand_of(B20_OPTION_S)["maximum_demand"] == pytest.approx(
-        5.56 + 11.06
+    timestamps = pd.DatetimeIndex([
+        local(1, 10), local(1, 14), local(1, 17), local(1, 21), local(1, 23),
+        local(2, 10), local(2, 14), local(2, 17), local(2, 21), local(2, 23),
+    ])
+    # 09:00–13:59 is excluded only from the first monthly maximum.
+    imports = [300., 100., 200., 150., 80., 50., 190., 120., 220., 80.]
+    dispatch = pd.DataFrame({"timestamp": timestamps, "grid_import_kw": imports})
+    (bill,) = calculate_meter_billing(
+        dispatch, tariff, meter_id="pcc", timestep_hours=.25,
+        expect_full_periods=False,
     )
+    expected = {
+        "maximum_demand_excluding_09_to_14": excluded_rate * 220.,
+        "maximum_demand_all_hours": all_rate * 300.,
+        "peak_period_demand_summer_daily": peak_rate * (200. + 120.),
+        "part_peak_period_demand_summer_daily": part_rate * (150. + 220.),
+        "peak_period_demand_winter_daily": 0.,
+    }
+    assert bill.demand_charge_by_component == pytest.approx(expected)
+    assert bill.demand_charge == pytest.approx(sum(expected.values()))
+    assert [c.frequency for c in tariff.demand_charges[2:]] == [
+        DemandChargeFrequency.DAILY
+    ] * 3
+
+
+@pytest.mark.parametrize("tariff,excluded_rate,all_rate,winter_peak_rate", [
+    (B19_OPTION_S, 6.35, 9.13, 1.22),
+    (B20_OPTION_S, 5.56, 11.06, 1.02),
+])
+def test_option_s_full_winter_month_and_effective_date(
+    tariff, excluded_rate, all_rate, winter_peak_rate,
+):
+    timestamps = pd.date_range(
+        "2026-03-01", "2026-04-01", freq="15min", tz=PACIFIC,
+        inclusive="left",
+    )
+    dispatch = pd.DataFrame({
+        "timestamp": timestamps,
+        "grid_import_kw": np.full(len(timestamps), 100.),
+    })
+    (bill,) = calculate_meter_billing(
+        dispatch, tariff, meter_id="pcc", timestep_hours=.25,
+    )
+    assert not bill.is_partial_period
+    assert bill.demand_charge == pytest.approx(
+        100 * (excluded_rate + all_rate + 31 * winter_peak_rate)
+    )
+    assert bill.demand_charge_by_component[
+        "peak_period_demand_summer_daily"
+    ] == 0
+    with pytest.raises(TariffError):
+        calculate_meter_billing(
+            pd.DataFrame({
+                "timestamp": pd.DatetimeIndex([
+                    pd.Timestamp("2026-02-28 23:45", tz=PACIFIC)
+                ]),
+                "grid_import_kw": [100.],
+            }),
+            tariff, meter_id="pcc", timestep_hours=.25,
+        )
 
 
 def test_option_s_cuts_demand_charges_far_below_the_base_schedule():

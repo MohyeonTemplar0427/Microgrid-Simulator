@@ -305,6 +305,9 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                         raise ValueError("Send an empty cancellation request.")
                     study = application.store.cancel(cancel[1], self.owner_id)
                     return self.respond(202 if study["status"] == "cancelling" else 200, study)
+                if urlsplit(self.path).path == "/api/v1/pge/annual-studies":
+                    return self.respond(202, application.submit_pge_annual(body, self.owner_id,
+                                                                           temporary=allow_guests))
                 if urlsplit(self.path).path == "/api/v1/socal/studies":
                     return self.respond(202, application.submit_socal(body, self.owner_id, temporary=allow_guests))
                 if urlsplit(self.path).path == "/api/v1/municipal/studies":
@@ -328,6 +331,8 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                     dataset = application.store.add_dataset(body["csv"].encode("utf-8"), body["name"], self.owner_id)
                     return self.respond(201, dataset)
                 if urlsplit(self.path).path == "/api/studies":
+                    if isinstance(body, dict) and body.get("schema_version") == 7:
+                        raise ValueError("Submit PG&E annual statement replays through /api/v1/pge/annual-studies.")
                     if isinstance(body, dict) and body.get("schema_version") in (4, 6):
                         raise ValueError("Submit municipal studies through /api/v1/municipal/studies.")
                     if isinstance(body, dict) and body.get("schema_version") == 3 and "candidate_defaults" not in application.capabilities:

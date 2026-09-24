@@ -19,6 +19,7 @@ from src.billing import get_tariff, supported_tariffs  # noqa: E402
 from src.billing.tariffs import (  # noqa: E402
     ALL_DAYS,
     DemandChargeBasis,
+    DemandChargeFrequency,
     Season,
 )
 
@@ -351,30 +352,45 @@ def comparison_tables() -> list[str]:
 
     lines += [
         "",
-        "### Demand charges side by side ($/kW)",
+        "### Monthly demand charges side by side ($/kW per billing month)",
         "",
         "Components apply together, so a summer peak-hour kilowatt on B-19 or "
         "B-20 can attract three of them at once. A dash means the schedule "
         "does not bill that component; both Option R schedules price winter "
-        "peak-period demand at zero.",
+        "peak-period demand at zero. Option S has separate daily and monthly "
+        "charges and is listed below this table.",
         "",
         "| Schedule | "
         + " | ".join(label for _, label in DEMAND_COLUMNS)
-        + " | Total |",
-        "| --- | " + " | ".join("---:" for _ in DEMAND_COLUMNS) + " | ---: |",
+        + " | Summer sum | Winter sum |",
+        "| --- | " + " | ".join("---:" for _ in DEMAND_COLUMNS) + " | ---: | ---: |",
     ]
 
     for tariff_id in time_priced_order():
         tariff = get_tariff(tariff_id)
+        if any(c.frequency == DemandChargeFrequency.DAILY for c in tariff.demand_charges):
+            continue
         rates = {c.name: c.rate_per_kW for c in tariff.demand_charges}
-        total = sum(rates.values())
+        summer_sum = sum(c.rate_per_kW for c in tariff.demand_charges
+                         if c.season in (None, Season.SUMMER))
+        winter_sum = sum(c.rate_per_kW for c in tariff.demand_charges
+                         if c.season in (None, Season.WINTER))
         lines.append(
             f"| {short_name(tariff_id)} | "
             + " | ".join(cell(rates.get(key), 2) for key, _ in DEMAND_COLUMNS)
-            + f" | **{total:.2f}** |"
+            + f" | {summer_sum:.2f} | {winter_sum:.2f} |"
         )
 
-    lines.append("")
+    lines += [
+        "",
+        "Option S: B-19 bills $6.35/kW monthly excluding 09:00–14:00, "
+        "$9.13/kW monthly across all hours, $1.60/kW **per day** at the "
+        "summer peak, $0.08/kW per day at summer part-peak, and $1.22/kW "
+        "per day at the winter peak. B-20 has the same scopes at $5.56, "
+        "$11.06, $1.30, $0.07, and $1.02 respectively. Summer and winter "
+        "daily charges do not apply together.",
+        "",
+    ]
     return lines
 
 
@@ -478,8 +494,8 @@ def render_tariff(tariff_id: str) -> list[str]:
         ]
     else:
         lines += [
-            "| Component | Season | Measured over | $/kW |",
-            "| --- | --- | --- | ---: |",
+            "| Component | Season | Measured over | Frequency | Rate ($/kW) |",
+            "| --- | --- | --- | --- | ---: |",
         ]
         total = 0.0
         for component in tariff.demand_charges:
@@ -488,19 +504,20 @@ def render_tariff(tariff_id: str) -> list[str]:
                 if component.season
                 else "All year"
             )
-            total += component.rate_per_kW
+            scope = BASIS_LABELS[component.basis]
+            if component.excluded_local_hours == frozenset(range(9, 14)):
+                scope += ", excluding 09:00–14:00 local time"
             lines.append(
                 f"| {component.name} | {season} | "
-                f"{BASIS_LABELS[component.basis]} | "
+                f"{scope} | {component.frequency.value} | "
                 f"{component.rate_per_kW:.2f} |"
             )
         lines += [
-            f"| **Total if every component peaks together** | | | "
-            f"**{total:.2f}** |",
             "",
-            "Components apply together on the same bill. A summer peak-hour "
-            "kilowatt can attract the maximum-demand, peak-period and "
-            "part-peak-period charges at once.",
+            "Each component is calculated in its own stated time scope; "
+            "summer and winter components are mutually exclusive. Daily "
+            "rates apply to each local day's applicable peak, while monthly "
+            "rates apply once to the billing month's applicable peak.",
             "",
         ]
 
@@ -565,19 +582,17 @@ def build_document() -> str:
         "",
         "### Charges at a glance",
         "",
-        "| Schedule | Eligibility | Customer $/day | Demand $/kW | Summer peak $/kWh | Summer off-peak $/kWh | Summer spread $/kWh |",
-        "| --- | --- | ---: | ---: | ---: | ---: | ---: |",
+        "| Schedule | Eligibility | Customer $/day | Summer peak $/kWh | Summer off-peak $/kWh | Summer spread $/kWh |",
+        "| --- | --- | ---: | ---: | ---: | ---: |",
     ]
 
     for tariff_id in time_priced_order():
         tariff = get_tariff(tariff_id)
         rates = {p.name: p.rate_per_kWh for p in tariff.tou_periods}
         spread = rates["summer_peak"] - rates["summer_off_peak"]
-        demand_total = sum(c.rate_per_kW for c in tariff.demand_charges)
         lines.append(
             f"| {tariff.name} | {ELIGIBILITY.get(tariff_id, '')} "
             f"| {tariff.daily_customer_charge:,.5f} "
-            f"| {demand_total:,.2f} "
             f"| {rates['summer_peak']:.5f} "
             f"| {rates['summer_off_peak']:.5f} "
             f"| {spread:.5f} |"

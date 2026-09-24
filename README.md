@@ -163,11 +163,17 @@ satellite irradiance. Neither is needed to run the simulator — CAISO and ERCOT
 prices require no credentials, and the weather path works fully offline from a
 CSV.
 
-Launch the guided GUI:
+Launch the desktop application on macOS. It opens the same study setup and
+results interface as the local browser, with the same billing and dispatch
+backend, in a native window. Its studies are saved under
+`.cache/local_web_desktop`:
 
 ```bash
-python -m src.simulation.graphical_interface
+/usr/local/bin/python3 -m src.simulation.graphical_interface
 ```
+
+The previous engineering-focused Tkinter GUI remains available with
+`/usr/local/bin/python3 -m src.simulation.graphical_interface --legacy`.
 
 Run the test suite — **797 tests**:
 
