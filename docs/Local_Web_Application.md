@@ -1,6 +1,6 @@
 # Local browser application
 
-The browser interface is labeled **Web UI v1.0.0**. This identifies the current
+The browser interface is labeled **Web UI v1.0.1**. This identifies the current
 website page design; the simulation engine snapshot, request schema, and future
 hosted deployment have separate version or configuration lifecycles.
 
