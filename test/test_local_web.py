@@ -15,6 +15,8 @@ import pytest
 from src.local_web.contract import DEFAULT_REQUEST, validate_request
 from src.local_web.runtime import Application, ROOT, Store, inspect_csv, snapshot
 from src.local_web.server import make_server
+from src.local_web.table_store import read_page, save_table
+from src.local_web.worker import summarize_ac_validation
 
 
 def request_for(dataset_id):
@@ -41,6 +43,44 @@ def test_reject_initial_energy_outside_soc():
     request["battery"]["energy_kWh"] = 90
     with pytest.raises(ValueError, match="Initial battery energy"):
         validate_request(request)
+
+
+def test_ac_validation_keeps_bounded_failure_examples():
+    frame = pd.DataFrame({
+        "timestamp": pd.date_range("2025-01-01", periods=8, freq="15min", tz="UTC"),
+        "feasible": [True, False, False, False, False, False, False, False],
+        "converged": [True, False, True, True, True, True, True, True],
+        "voltage_violation": [False, False, True, False, False, False, False, False],
+        "line_overload": [False] * 8,
+        "transformer_overload": [False] * 8,
+        "setpoint_mismatch": [False] * 8,
+        "inverter_capability_violation": [False] * 8,
+    })
+    summary = summarize_ac_validation({"test": frame})
+    assert summary["all_intervals_feasible"] is False
+    scenario = summary["scenarios"][0]
+    assert (scenario["checked_intervals"], scenario["passed_intervals"], scenario["failed_intervals"]) == (8, 1, 7)
+    assert len(scenario["failure_samples"]) == 5
+    assert scenario["failure_samples"][0] == {
+        "timestamp": "2025-01-01T00:15:00+00:00", "reasons": ["OpenDSS did not converge"]}
+    assert scenario["failure_samples"][1]["reasons"] == ["Voltage outside limits"]
+    assert summarize_ac_validation({"test": frame.iloc[:1]})["all_intervals_feasible"] is True
+
+
+def test_csv_only_result_pages_keep_types_and_nulls(tmp_path):
+    frame = pd.DataFrame({
+        "timestamp": pd.date_range("2025-01-01", periods=3, freq="15min", tz="UTC"),
+        "feasible": [True, False, True], "count": [1, 2, 3],
+        "value": [1.25, None, 3.5], "scenario": ["a", "b", "c"],
+    })
+    save_table(tmp_path, "example", list(frame.columns), frame)
+    assert not (tmp_path / "example.json").exists()
+    page = read_page(tmp_path, "example", 1, 2)
+    assert page["total"] == 3 and page["offset"] == 1
+    assert page["data"] == [
+        ["2025-01-01 00:15:00+00:00", False, 2, None, "b"],
+        ["2025-01-01 00:30:00+00:00", True, 3, 3.5, "c"],
+    ]
 
 
 def test_csv_preserves_repeated_dst_hour_by_instant():
@@ -177,8 +217,12 @@ def test_bad_horizon_fails_without_blocking_next_queued_study(service):
     request["start_date"] = request["end_date"] = "2026-08-01"
     request["strategies"] = ["no_battery"]
     good = call("/api/studies", request, headers)
-    assert wait_for_study(call, failed["id"])["status"] == "failed"
-    assert wait_for_study(call, good["id"])["status"] == "completed"
+    failed_result = wait_for_study(call, failed["id"])
+    good_result = wait_for_study(call, good["id"])
+    assert failed_result["status"] == "failed"
+    assert good_result["status"] == "completed"
+    assert failed_result["runtime_seconds"] is not None and failed_result["runtime_seconds"] > 0
+    assert good_result["runtime_seconds"] is not None and good_result["runtime_seconds"] > 0
 
 
 def test_startup_marks_interrupted_run_failed_and_keeps_history(tmp_path):
@@ -394,7 +438,7 @@ def test_nsrdb_wrapper_uses_current_endpoint_and_requested_resolution(monkeypatc
 
 
 @pytest.mark.parametrize("quantity,reserve", [(1, .2), (2, 0)])
-def test_catalog_study_tracks_ac_terminals_and_retains_resolution(service,quantity,reserve):
+def test_catalog_study_retains_resolution_and_compact_ac_validation(service,quantity,reserve):
     from src.equipment.ess import resolve
     from src.local_web.contract import DEFAULT_CANDIDATE_REQUEST
     application,call,headers=service
@@ -409,10 +453,25 @@ def test_catalog_study_tracks_ac_terminals_and_retains_resolution(service,quanti
     finished=wait_for_study(call,study['id'])
     assert finished['status']=='completed',finished.get('error')
     assert finished['result']['ess']==resolved
-    table=call(f"/api/studies/{study['id']}/tables/ac-cost_optimal")
-    ac=pd.DataFrame(table['data'],columns=table['columns'])
-    assert ac.battery_error_kw.abs().max()<.01
-    assert ac.battery_actual_injection_kw.abs().max()>1
+    assert not any(item['id'].startswith('ac-') for item in finished['result']['tables'])
+    assert not list((application.store.directory/'runs'/study['id']).glob('ac-*.json'))
+    assert not list((application.store.directory/'runs'/study['id']).glob('ac-*.csv'))
+    assert (application.store.directory/'runs'/study['id']/'comparison.meta.json').is_file()
+    assert not (application.store.directory/'runs'/study['id']/'comparison.json').exists()
+    with pytest.raises(HTTPError) as missing:
+        call(f"/api/studies/{study['id']}/tables/ac-cost_optimal")
+    assert missing.value.code==404
+    validation=next(item for item in finished['result']['ac_validation']['scenarios'] if item['scenario']=='cost_optimal')
+    assert validation['checked_intervals']==96
+    assert validation['passed_intervals']+validation['failed_intervals']==96
+    comparison=call(f"/api/studies/{study['id']}/tables/comparison")
+    costs=pd.DataFrame(comparison['data'],columns=comparison['columns'])
+    selected=costs.loc[costs.scenario=='cost_optimal'].iloc[0]
+    assert selected.setpoint_mismatch_intervals==0
+    assert selected.inverter_capability_violation_intervals==0
+    dispatch=call(f"/api/studies/{study['id']}/tables/dispatch-cost_optimal")
+    frame=pd.DataFrame(dispatch['data'],columns=dispatch['columns'])
+    assert frame.battery_net_injection_kw.abs().max()>1
     assert any('not residential split-phase' in x for x in finished['result']['warnings'])
     with pytest.raises(HTTPError):call('/api/studies',{**request,'battery':{**request['battery'],'max_charge_kw':100}},headers)
 

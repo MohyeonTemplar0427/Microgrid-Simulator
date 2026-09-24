@@ -1,5 +1,6 @@
 """Real HTTP submission and independent process execution across API restarts."""
 from contextlib import contextmanager
+from datetime import datetime
 from copy import deepcopy
 import json
 import subprocess
@@ -68,6 +69,9 @@ def test_external_process_delivers_tables_after_api_restart(tmp_path):
             result = until(lambda: call('/api/studies/' + study['id'])[1],
                            lambda x: x['status'] in ('completed', 'failed'))
             assert result['status'] == 'completed', result.get('error')
+            assert result['runtime_seconds'] is not None and result['runtime_seconds'] > 0
+            assert datetime.fromisoformat(result['created_at']) <= datetime.fromisoformat(result['started_at']) <= datetime.fromisoformat(result['finished_at'])
+            assert call('/api/studies')[1][0]['runtime_seconds'] == result['runtime_seconds']
             table_id = result['result']['tables'][0]['id']
             assert call(f"/api/studies/{study['id']}/tables/{table_id}?limit=2")[0] == 200
             assert call(f"/api/studies/{study['id']}/tables/{table_id}.csv")[1]

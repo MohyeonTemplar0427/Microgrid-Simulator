@@ -3,10 +3,12 @@
 <html lang="en">
 <head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Microgrid Simulator · Local studies</title><link href="/style.css" rel="stylesheet"/><script defer="" src="/app.js"></script><script defer="" src="/municipal.js"></script><script defer="" src="/socal.js"></script></head>
 <body>
-<header class="masthead"><a aria-label="Microgrid Simulator home" class="brand" href="/"><span class="brand-mark">M</span><span>Microgrid <strong>Simulator</strong></span></a><span class="local-badge"><span class="dot"></span> Local workspace</span></header>
+<header class="masthead"><a aria-label="Microgrid Simulator home" class="brand" href="/"><span class="brand-mark">M</span><span>Microgrid <strong>Simulator</strong></span></a><span class="local-badge"><span class="dot"></span><span id="workspace-label">Local workspace</span></span></header>
 <main>
+<section id="auth-panel" class="panel" hidden><h2>Your private study workspace</h2><p>Sign in to create studies and access your saved results.</p><a href="/auth/login">Sign in</a></section>
+<button id="sign-out" class="secondary" type="button" hidden>Sign out</button>
 <div class="intro"><div><p class="eyebrow">STUDY WORKSPACE</p><h1>From energy inputs<br/>to operating decisions.</h1><p class="subtitle">Compare battery strategies, operating costs, and network feasibility.</p></div><div class="intro-note"><span class="note-number">01</span><p>Configure a study.<br/>Run your engine.<br/>Explore the results.</p></div></div>
-<p class="hint" id="pipeline-status" role="status">Connecting to simulation service…</p>
+<p class="hint" id="pipeline-status" role="status">Connecting to simulation service…</p><p class="hint" id="usage-status" role="status" hidden></p>
 <div class="notice" hidden="" id="connection" role="status"></div>
 <div class="workspace">
 <section aria-labelledby="configure-title" class="panel configuration">
@@ -82,9 +84,9 @@
 <div class="run-heading"><h3 id="run-name"></h3><p class="hint" id="run-meta"></p></div>
 <p aria-live="polite" id="progress" role="status"></p>
 <div class="notice error" hidden="" id="run-error" role="alert"></div>
-<div class="links"><button class="secondary" id="reuse" type="button">Load these settings</button><a class="text-link" id="request-download">Download settings</a><a class="text-link" hidden="" id="manifest-download">Result manifest</a></div>
+<div class="links"><button class="secondary" id="cancel-study" type="button" hidden>Cancel study</button><button class="secondary" id="save-study" type="button" hidden>Save to my profile · Sign in</button><button class="secondary" id="reuse" type="button">Load these settings</button><a class="text-link" id="request-download">Download settings</a><a class="text-link" hidden="" id="manifest-download">Result manifest</a></div>
 <div hidden="" id="results-content">
-<div class="table-toolbar"><label>Result table<select id="table-select"></select></label><a class="secondary" id="csv-download">Download CSV ↓</a></div>
+<div class="table-toolbar"><label>Result table<select id="table-select"></select></label><a class="secondary" id="csv-download">Download CSV ↓</a><a class="secondary" id="bundle-download">Download all result tables ↓</a></div>
 <label class="checkbox compact"><input id="all-columns" type="checkbox"/> Show all comparison columns</label>
 <div aria-label="Simulation result table" class="table-scroll" id="table-container" tabindex="0"></div>
 <div class="pagination"><span class="hint" id="row-count"></span><div><button class="secondary" id="previous" type="button">← Previous</button><button class="secondary" id="next" type="button">Next →</button></div></div>
@@ -94,7 +96,7 @@
 </section>
 <section aria-labelledby="history-title" class="panel history-panel"><div class="panel-heading"><div><p class="eyebrow">SAVED LOCALLY</p><h2 id="history-title">Recent studies</h2></div><button class="text-button" id="refresh-history" type="button">Refresh ↻</button></div><div id="history"><p class="hint">No studies yet. Your completed runs will appear here.</p></div></section>
 <p class="hint">Search sends this location to OpenStreetMap Nominatim. <a href="https://www.openstreetmap.org/copyright" rel="noreferrer" target="_blank">© OpenStreetMap contributors</a></p>
-<footer><span class="dot"></span><span id="engine-info">Connecting to the local engine…</span></footer>
+<footer><span class="dot"></span><span>Web UI v1.0.0</span><span aria-hidden="true">·</span><span id="engine-info">Connecting to the local engine…</span></footer>
 </div>
 </div>
 </main>

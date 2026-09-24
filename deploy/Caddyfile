@@ -1,0 +1,29 @@
+# TEMPLATE ONLY: requires a chosen domain and a reviewed hosting environment.
+# Run Caddy on the SAME host as Waitress. Never expose port 8765 publicly.
+# MICROGRID_SITE_ADDRESS must match MICROGRID_PUBLIC_ORIGIN (https://YOUR_DOMAIN).
+{
+	# Remove request URLs/headers from operational errors too: OIDC callbacks
+	# include temporary codes, and requests include session cookies.
+	log default {
+		format filter {
+			wrap json
+			fields {
+				request delete
+				resp_headers delete
+			}
+		}
+	}
+}
+
+{$MICROGRID_SITE_ADDRESS} {
+	reverse_proxy 127.0.0.1:8765 {
+		# Ignore visitor-supplied forwarding values; set transport at this boundary.
+		header_up -Forwarded
+		header_up -X-Forwarded-Host
+		header_up -X-Forwarded-Port
+		header_up -X-Forwarded-For
+		header_up X-Forwarded-Proto {scheme}
+	}
+	# Access logging is intentionally not enabled. Operational errors use the
+	# global privacy filter above.
+}

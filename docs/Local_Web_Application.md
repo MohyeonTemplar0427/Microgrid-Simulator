@@ -1,9 +1,31 @@
 # Local browser application
 
+The browser interface is labeled **Web UI v1.0.0**. This identifies the current
+website page design; the simulation engine snapshot, request schema, and future
+hosted deployment have separate version or configuration lifecycles.
+
+## Current server transport
+
+The launcher now uses Waitress. Explicit hosted mode prepares a same-host HTTPS
+proxy and requires OIDC; the backend still binds only to 127.0.0.1. See
+[Web hosting preparation](Web_Hosting.md) for configuration and remaining release
+requirements. Nothing is publicly deployed by these changes.
+
+## Current access-control checkpoint
+
+Provider-neutral OIDC sign-in and per-user authorization are available for a
+loopback rehearsal. See [Web access control](Web_Access_Control.md) for setup,
+legacy-data quarantine, session behavior, and migration. Authentication is no
+longer wholly deferred, but production hosting and HTTPS remain unimplemented.
+The original local-mode instructions below still apply to a separate trusted
+local store. Some feature descriptions below are historical; the access-control
+document and current route handlers describe the new security boundaries.
+
+
 This application runs the existing Python simulation engine on the local
-computer and displays its result tables in a browser. It uses the standard
-library HTTP server and SQLite; no Node build, cloud account, PostgreSQL
-server, or additional Python dependency is required. The current launcher
+computer and displays its result tables in a browser. It uses Waitress and SQLite; no Node build, cloud account, or PostgreSQL
+server is required. Install requirements.txt, which now includes Authlib and
+joserfc for OIDC sign-in, plus Waitress for HTTP serving. The current launcher
 supports macOS and Linux (the single-server lock uses `fcntl`).
 
 ## Start
@@ -74,12 +96,19 @@ process environment values take precedence. The default path is this checkout's
 `src/.env`; credential files are not copied into engine snapshots. Retrieving
 weather requires internet; clear-sky studies and cached weather run offline.
 
-Results include scenario comparison, cost summary, normalized simulation
-inputs, weather (GHI/DNI/DHI, temperature, wind), PV model diagnostics,
-per-scenario dispatch, and OpenDSS AC validation. Each table has full CSV
-export; the result manifest records model assumptions and provenance.
+New results include scenario comparison, cost summary, normalized simulation
+inputs, weather (GHI/DNI/DHI, temperature, wind), PV model diagnostics, and
+per-scenario dispatch. Each saved table has full CSV export. OpenDSS replay
+contributes compact feasibility counts and extrema to scenario comparison;
+the result manifest stores up to five failure timestamps and reasons per
+scenario, rather than full interval-by-interval AC tables. New tables are stored
+once as CSV with small column metadata; the server builds browser pages from
+that CSV and offers an on-demand ZIP of all result tables. Previously saved
+studies still expose their existing AC/JSON tables. The manifest also records model
+assumptions and provenance.
 **Completed means the calculation finished, not that every interval is
-electrically feasible.** Inspect feasibility counts and AC tables.
+electrically feasible.** Inspect the comparison's feasibility counts and any
+failure warnings.
 
 A selected tariff supplies both dispatch energy prices and billing; its
 version must cover the study dates. In particular, a 2026 tariff cannot be
@@ -168,11 +197,15 @@ Although this directory is under `.cache`, it holds persistent study history:
 do not clear it if you need those studies. Use `--data-dir` for a dedicated
 storage location and back up that complete directory while the server is stopped.
 
-Local limits: 20 MB HTTP bodies, 110,000 CSV intervals,
-1–366 calendar days per study, one active worker, and 30 minutes per run.
+Local limits: 20 MB HTTP bodies, 16 MiB per CSV upload by default,
+110,000 CSV intervals, 1–366 calendar days per study, one active worker,
+and 30 minutes per run. The default CSV store cap is 1 GiB. Saved study results
+and retrieved weather have separate provisional storage limits; see
+[Web resource controls](Web_Resource_Controls.md) for their values and scope.
 There is no automatic data deletion. The database contains job metadata;
-large interval tables remain files. Table pagination currently reads each
-table file before slicing; it is intended for local studies, not large-scale
+large interval tables remain files. New CSV-only results are paged from the
+CSV without loading a full JSON copy; legacy JSON pages still read the whole
+file before slicing. This is intended for local studies, not large-scale
 analytics.
 
 ## Engine snapshots and upgrades
@@ -212,6 +245,8 @@ separate locked dependency environment and a broader saved-study acceptance set.
 | GET | `/api/studies/<id>` | Status, request, progress, result manifest when completed |
 | GET | `/api/studies/<id>/tables/<table>?offset=0&limit=100` | Page of numeric result data |
 | GET | `/api/studies/<id>/tables/<table>.csv` | Full table download |
+| GET | `/api/studies/<id>/tables.zip` | On-demand ZIP of CSV result tables and manifest |
+| POST | `/api/studies/<id>/save` | In guest-enabled OIDC mode, make a completed temporary study permanent; guest claims require sign-in and its original cookie |
 | GET | `/api/studies/<id>/request.json` | Saved request download |
 | GET | `/api/studies/<id>/result.json` | Result/provenance manifest download |
 
@@ -253,12 +288,19 @@ candidate engine. Existing pinned engines are not upgraded automatically.
 The browser sends validated study settings to `POST /api/studies`. The API
 returns HTTP 202 with the saved study ID. SQLite retains the queued job while
 its immutable request, engine manifest and inputs live in the run directory.
+The worker records `started_at` on claim and `runtime_seconds` on finish;
+the browser shows Run time in completed study details and history. Queue waiting
+is excluded from that runtime.
 A single worker atomically claims jobs and invokes the pinned simulation engine
 in a separate subprocess. The browser polls `GET /api/studies/{id}` and loads
 `GET /api/studies/{id}/tables/{table}` or its `.csv` download when complete.
-`GET /api/health` exposes worker connectivity and queued/running counts; the
+`GET /api/health` exposes worker connectivity and queued/running/cancelling counts; the
 browser updates this status every five seconds. Submission while the worker
-is offline remains valid: the job waits durably in the queue.
+is offline remains valid until the bounded queue fills; then the API returns
+HTTP 429 with a retry message. The owner can cancel a queued or running study
+from the result view; a running process stops before the status becomes cancelled.
+See [Web resource controls](Web_Resource_Controls.md) for the per-user daily
+study and measured simulation/orientation budgets in signed-in mode.
 
 The existing one-command launch still runs an embedded worker. For independent
 processes, run these commands from the main project folder in two terminals:
