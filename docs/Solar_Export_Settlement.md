@@ -1,6 +1,9 @@
 # Solar export settlement implementation
 
 Status reviewed 2026-09-23. **The request to cover every utility is not complete.**
+The [non-PG&E program consolidation](Solar_Export_Program_Consolidation.md)
+now records source-backed program families for Bay Area and Southern California
+utilities and CCAs. These are identified programs, not enabled billing plans.
 The current executable adapter is a bounded monthly PG&E bundled residential
 Solar Billing Plan (NBT) comparison. It is not a complete annual bill or legacy
 NEM implementation. Existing import-only utilities remain import-only.
@@ -124,10 +127,11 @@ calculation; this monthly operating comparison does not establish it.
 
 ## Remaining utility work (do not substitute PG&E rules)
 
-PG&E now has a separate [annual statement reconciliation workflow](PGE_Solar_True_Up.md)
-in the shared local browser and desktop GUI. It reproduces the published guide
-example from twelve documented monthly records, but does not yet provide annual
-interval billing or annual dispatch.
+PG&E has a separate [annual statement reconciliation workflow](PGE_Solar_True_Up.md)
+through the CLI and a dedicated local API endpoint. Its setup was removed from
+the main browser study form pending a separate page. It reproduces the published
+guide example from twelve documented monthly records, but does not yet provide
+annual interval billing or annual dispatch.
 
 | Utility/provider | Required work before enabling full settlement |
 |---|---|
