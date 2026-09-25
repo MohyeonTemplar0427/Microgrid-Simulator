@@ -814,6 +814,17 @@ function exportAvailable(){return !!capabilities?.solar_export && template?.sche
 function exportActive(){return exportAvailable() && field('export_enabled').checked;}
 function syncExportControls(){
   if(!field('export_enabled'))return;
+  const status=$('solar-program-status'),provider=field('utility').value;
+  const programs=(capabilities?.solar_export_programs||[]).filter(p=>p.generation_provider===provider);
+  status.hidden=!programs.length;
+  if(programs.length){
+    const supported=programs.filter(p=>p.simulation_status==='bounded_monthly');
+    status.textContent=supported.length&&exportAvailable()
+      ? `Solar export: ${supported.map(p=>p.label).join(', ')} has a limited monthly comparison. Confirm the account program, billing plan and study dates in Step 9.`
+      : supported.length
+      ? 'Solar export comparison is currently available only for PG&E bundled residential NBT on a supported plan and study date.'
+      : `Solar export: ${programs.map(p=>p.label).join(', ')} identified for this provider, but export billing and dispatch are not yet implemented. Confirm your actual program on the account bill.`;
+  }
   $('export-controls').hidden=!exportAvailable();
   $('export-account').hidden=!exportActive();
   if($('strategies'))$('strategies').closest('fieldset').hidden=exportActive();

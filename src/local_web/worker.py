@@ -60,7 +60,8 @@ def capabilities():
     from ..equipment.ess import search
     from .site_profile import SITE_OPTIONS, SERVICE_CLASSES
     from .carbon import REGION_MAPPINGS
-    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "solar_export": {"program":"pge_nbt_monthly","scope":"Monthly comparison only; annual true-up and NSC not implemented"}, "pge_annual_replay": {"program": "pge_nbt_statement_replay", "scope": "Twelve documented monthly statements and annual true-up; no annual interval simulation or dispatch"}, "tariffs": [
+    from ..billing.solar_programs import PROGRAMS
+    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "solar_export": {"program":"pge_nbt_monthly","scope":"Monthly comparison only; annual true-up and NSC not implemented"}, "solar_export_programs": [p.public() for p in PROGRAMS], "pge_annual_replay": {"program": "pge_nbt_statement_replay", "scope": "Twelve documented monthly statements and annual true-up; no annual interval simulation or dispatch"}, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
          "service": tariff_service(key),
          "notes": get_tariff(key).notes,

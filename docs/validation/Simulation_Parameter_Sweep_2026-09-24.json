@@ -1,0 +1,1782 @@
+{
+  "schema_version": 1,
+  "scope": "Hypothetical offline consistency checks; not bill calibration or field validation",
+  "groups": {
+    "commercial": 36,
+    "pge_residential": 12,
+    "residential_nbt": 13,
+    "socal": 24,
+    "municipal": 6,
+    "boundaries": 6
+  },
+  "cases": 97,
+  "passed": 97,
+  "failed": 0,
+  "results": [
+    {
+      "id": "pge_b10-summer-flat-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "summer",
+        "load_shape": "flat",
+        "pv": false,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4039.5624,
+        "optimized_bill": 4039.5624,
+        "balance_error_kw": 0.0,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-summer-flat-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "summer",
+        "load_shape": "flat",
+        "pv": true,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 3944.8212,
+        "optimized_bill": 3919.7952,
+        "balance_error_kw": 0.0,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-summer-evening-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "summer",
+        "load_shape": "evening",
+        "pv": false,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4899.7716,
+        "optimized_bill": 4835.3918,
+        "balance_error_kw": 2.3e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-summer-evening-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "summer",
+        "load_shape": "evening",
+        "pv": true,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4805.0304,
+        "optimized_bill": 4707.0565,
+        "balance_error_kw": 6e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-summer-midday-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "summer",
+        "load_shape": "midday",
+        "pv": false,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4865.8416,
+        "optimized_bill": 4803.3639,
+        "balance_error_kw": 3e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-summer-midday-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "summer",
+        "load_shape": "midday",
+        "pv": true,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4423.2039,
+        "optimized_bill": 4257.0358,
+        "balance_error_kw": 3e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-winter-flat-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "winter",
+        "load_shape": "flat",
+        "pv": false,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 3837.0384,
+        "optimized_bill": 3837.0384,
+        "balance_error_kw": 0.0,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-winter-flat-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "winter",
+        "load_shape": "flat",
+        "pv": true,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 3752.5836,
+        "optimized_bill": 3728.1231,
+        "balance_error_kw": 1.7e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-winter-evening-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "winter",
+        "load_shape": "evening",
+        "pv": false,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4669.794,
+        "optimized_bill": 4607.1434,
+        "balance_error_kw": 7e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-winter-evening-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "winter",
+        "load_shape": "evening",
+        "pv": true,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4585.3392,
+        "optimized_bill": 4489.0944,
+        "balance_error_kw": 4e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-winter-midday-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "winter",
+        "load_shape": "midday",
+        "pv": false,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4657.0212,
+        "optimized_bill": 4595.1185,
+        "balance_error_kw": 0.0,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b10-winter-midday-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b10",
+        "season": "winter",
+        "load_shape": "midday",
+        "pv": true,
+        "battery_kwh": 20.0,
+        "battery_kw": 10.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 4224.6699,
+        "optimized_bill": 4059.0768,
+        "balance_error_kw": 1.7e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-summer-flat-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "summer",
+        "load_shape": "flat",
+        "pv": false,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 18688.8285,
+        "optimized_bill": 18685.5125,
+        "balance_error_kw": 0.0,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-summer-flat-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "summer",
+        "load_shape": "flat",
+        "pv": true,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 18283.4764,
+        "optimized_bill": 18221.4005,
+        "balance_error_kw": 3e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-summer-evening-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "summer",
+        "load_shape": "evening",
+        "pv": false,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 22835.4525,
+        "optimized_bill": 22676.4883,
+        "balance_error_kw": 1.14e-06,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-summer-evening-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "summer",
+        "load_shape": "evening",
+        "pv": true,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 22430.1004,
+        "optimized_bill": 22183.4144,
+        "balance_error_kw": 5.3e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-summer-midday-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "summer",
+        "load_shape": "midday",
+        "pv": false,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 20676.6945,
+        "optimized_bill": 20631.9544,
+        "balance_error_kw": 5.1e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-summer-midday-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "summer",
+        "load_shape": "midday",
+        "pv": true,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 19496.6362,
+        "optimized_bill": 19226.7413,
+        "balance_error_kw": 2.7e-07,
+        "soc_error_kwh": 3e-08
+      }
+    },
+    {
+      "id": "pge_b19_option_s-winter-flat-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "winter",
+        "load_shape": "flat",
+        "pv": false,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 15167.8485,
+        "optimized_bill": 15167.8486,
+        "balance_error_kw": 0.0,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-winter-flat-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "winter",
+        "load_shape": "flat",
+        "pv": true,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 14904.6179,
+        "optimized_bill": 14849.8399,
+        "balance_error_kw": 1e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-winter-evening-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "winter",
+        "load_shape": "evening",
+        "pv": false,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 18722.4165,
+        "optimized_bill": 18584.1614,
+        "balance_error_kw": 1.03e-06,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-winter-evening-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "winter",
+        "load_shape": "evening",
+        "pv": true,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 18459.1859,
+        "optimized_bill": 18236.7779,
+        "balance_error_kw": 7e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-winter-midday-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "winter",
+        "load_shape": "midday",
+        "pv": false,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 17064.0405,
+        "optimized_bill": 17016.0175,
+        "balance_error_kw": 2.4e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b19_option_s-winter-midday-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b19_option_s",
+        "season": "winter",
+        "load_shape": "midday",
+        "pv": true,
+        "battery_kwh": 50.0,
+        "battery_kw": 25.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 16026.1038,
+        "optimized_bill": 15771.4358,
+        "balance_error_kw": 1.4e-07,
+        "soc_error_kwh": 2e-08
+      }
+    },
+    {
+      "id": "pge_b20-summer-flat-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "summer",
+        "load_shape": "flat",
+        "pv": false,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 115478.2847,
+        "optimized_bill": 115228.4217,
+        "balance_error_kw": 7e-08,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-summer-flat-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "summer",
+        "load_shape": "flat",
+        "pv": true,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 115021.2411,
+        "optimized_bill": 114453.6742,
+        "balance_error_kw": 3.5e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-summer-evening-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "summer",
+        "load_shape": "evening",
+        "pv": false,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 145070.3567,
+        "optimized_bill": 143840.2518,
+        "balance_error_kw": 4.4e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-summer-evening-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "summer",
+        "load_shape": "evening",
+        "pv": true,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 144613.3131,
+        "optimized_bill": 142627.8051,
+        "balance_error_kw": 2.71e-06,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-summer-midday-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "summer",
+        "load_shape": "midday",
+        "pv": false,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 129960.4367,
+        "optimized_bill": 129127.1562,
+        "balance_error_kw": 6.7e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-summer-midday-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "summer",
+        "load_shape": "midday",
+        "pv": true,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 122871.2972,
+        "optimized_bill": 119893.9129,
+        "balance_error_kw": 1.44e-06,
+        "soc_error_kwh": 1.7e-07
+      }
+    },
+    {
+      "id": "pge_b20-winter-flat-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "winter",
+        "load_shape": "flat",
+        "pv": false,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 56996.3327,
+        "optimized_bill": 56996.3331,
+        "balance_error_kw": 0.0,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-winter-flat-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "winter",
+        "load_shape": "flat",
+        "pv": true,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 56564.7566,
+        "optimized_bill": 56312.1023,
+        "balance_error_kw": 2.1e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-winter-evening-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "winter",
+        "load_shape": "evening",
+        "pv": false,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 72463.0847,
+        "optimized_bill": 71829.3452,
+        "balance_error_kw": 8.7e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-winter-evening-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "winter",
+        "load_shape": "evening",
+        "pv": true,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 72031.5086,
+        "optimized_bill": 71008.9379,
+        "balance_error_kw": 1.7e-07,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-winter-midday-pv0",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "winter",
+        "load_shape": "midday",
+        "pv": false,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 71477.6927,
+        "optimized_bill": 70845.8353,
+        "balance_error_kw": 4.28e-06,
+        "soc_error_kwh": 0.0
+      }
+    },
+    {
+      "id": "pge_b20-winter-midday-pv1",
+      "group": "commercial",
+      "inputs": {
+        "plan": "pge_b20",
+        "season": "winter",
+        "load_shape": "midday",
+        "pv": true,
+        "battery_kwh": 100.0,
+        "battery_kw": 50.0,
+        "intervals": 192
+      },
+      "status": "passed",
+      "metrics": {
+        "idle_bill": 64414.0207,
+        "optimized_bill": 62399.4949,
+        "balance_error_kw": 8.68e-06,
+        "soc_error_kwh": 9.8e-07
+      }
+    },
+    {
+      "id": "pge-e1-flat",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e1",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "flat",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 159.6037,
+        "high_load_bill": 462.4265
+      }
+    },
+    {
+      "id": "pge-e1-midday",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e1",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "midday",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 175.3757,
+        "high_load_bill": 509.7426
+      }
+    },
+    {
+      "id": "pge-e1-evening",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e1",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "evening",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 175.3757,
+        "high_load_bill": 509.7426
+      }
+    },
+    {
+      "id": "pge-e_tou_d-flat",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e_tou_d",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "flat",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 156.5211,
+        "high_load_bill": 420.3706
+      }
+    },
+    {
+      "id": "pge-e_tou_d-midday",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e_tou_d",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "midday",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 169.7782,
+        "high_load_bill": 460.1421
+      }
+    },
+    {
+      "id": "pge-e_tou_d-evening",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e_tou_d",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "evening",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 172.1063,
+        "high_load_bill": 467.1262
+      }
+    },
+    {
+      "id": "pge-e_elec-flat",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e_elec",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "flat",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 169.1406,
+        "high_load_bill": 458.2293
+      }
+    },
+    {
+      "id": "pge-e_elec-midday",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e_elec",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "midday",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 182.0669,
+        "high_load_bill": 497.008
+      }
+    },
+    {
+      "id": "pge-e_elec-evening",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "e_elec",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "evening",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 189.2815,
+        "high_load_bill": 518.6519
+      }
+    },
+    {
+      "id": "pge-ev2-flat",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "ev2",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "flat",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 145.2569,
+        "high_load_bill": 386.5779
+      }
+    },
+    {
+      "id": "pge-ev2-midday",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "ev2",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "midday",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 153.9981,
+        "high_load_bill": 412.8016
+      }
+    },
+    {
+      "id": "pge-ev2-evening",
+      "group": "pge_residential",
+      "inputs": {
+        "plan": "ev2",
+        "income_tier": 3,
+        "baseline_territory": "T",
+        "cycle": "2026-07",
+        "shape": "evening",
+        "load_levels_kw": [
+          0.5,
+          1.5
+        ],
+        "pv": false
+      },
+      "status": "passed",
+      "metrics": {
+        "low_load_bill": 165.2515,
+        "high_load_bill": 446.562
+      }
+    },
+    {
+      "id": "nbt-load0.5-pv1",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 0.5,
+        "pv_peak_kw": 1.0,
+        "cycle": "2026-07",
+        "battery": false
+      },
+      "status": "passed",
+      "metrics": {
+        "grid_bill": 169.2522,
+        "on_site_bill": 112.4935,
+        "export_bill": 107.6956
+      }
+    },
+    {
+      "id": "nbt-load0.5-pv3",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 0.5,
+        "pv_peak_kw": 3.0,
+        "cycle": "2026-07",
+        "battery": false
+      },
+      "status": "passed",
+      "metrics": {
+        "grid_bill": 169.2522,
+        "on_site_bill": 103.6219,
+        "export_bill": 69.5646
+      }
+    },
+    {
+      "id": "nbt-load1-pv1",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 1.0,
+        "pv_peak_kw": 1.0,
+        "cycle": "2026-07",
+        "battery": false
+      },
+      "status": "passed",
+      "metrics": {
+        "grid_bill": 313.9082,
+        "on_site_bill": 229.8649,
+        "export_bill": 229.8649
+      }
+    },
+    {
+      "id": "nbt-load1-pv3",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "cycle": "2026-07",
+        "battery": false
+      },
+      "status": "passed",
+      "metrics": {
+        "grid_bill": 313.9082,
+        "on_site_bill": 191.3144,
+        "export_bill": 168.3226
+      }
+    },
+    {
+      "id": "nbt-load2-pv1",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 2.0,
+        "pv_peak_kw": 1.0,
+        "cycle": "2026-07",
+        "battery": false
+      },
+      "status": "passed",
+      "metrics": {
+        "grid_bill": 603.22,
+        "on_site_bill": 519.1767,
+        "export_bill": 519.1767
+      }
+    },
+    {
+      "id": "nbt-load2-pv3",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 2.0,
+        "pv_peak_kw": 3.0,
+        "cycle": "2026-07",
+        "battery": false
+      },
+      "status": "passed",
+      "metrics": {
+        "grid_bill": 603.22,
+        "on_site_bill": 394.9277,
+        "export_bill": 387.1775
+      }
+    },
+    {
+      "id": "nbt-storage-wear0.01-False",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "battery_kwh": 4.0,
+        "wear_per_kwh": 0.01,
+        "optimize_wear": false,
+        "cycle": "2026-07"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 133.6084,
+        "wear": 1.49,
+        "operating_cost": 135.0984,
+        "objective_gap": 0.0
+      }
+    },
+    {
+      "id": "nbt-storage-wear0.01-True",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "battery_kwh": 4.0,
+        "wear_per_kwh": 0.01,
+        "optimize_wear": true,
+        "cycle": "2026-07"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 133.6084,
+        "wear": 1.49,
+        "operating_cost": 135.0984,
+        "objective_gap": 0.0
+      }
+    },
+    {
+      "id": "nbt-storage-wear0.25-False",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "battery_kwh": 4.0,
+        "wear_per_kwh": 0.25,
+        "optimize_wear": false,
+        "cycle": "2026-07"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 133.6084,
+        "wear": 37.2489,
+        "operating_cost": 170.8574,
+        "objective_gap": 0.0
+      }
+    },
+    {
+      "id": "nbt-storage-wear0.25-True",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "battery_kwh": 4.0,
+        "wear_per_kwh": 0.25,
+        "optimize_wear": true,
+        "cycle": "2026-07"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 168.3226,
+        "wear": 0.0,
+        "operating_cost": 168.3226,
+        "objective_gap": 0.0
+      }
+    },
+    {
+      "id": "nbt-storage-0.5kwh-high-pv",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 0.2,
+        "pv_peak_kw": 10.0,
+        "battery_kwh": 0.5,
+        "battery_kw": 0.25,
+        "export_limit_kw": 3.0,
+        "cycle": "2026-07"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 16.6482,
+        "objective_gap": 0.0
+      }
+    },
+    {
+      "id": "nbt-storage-40kwh-high-pv",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 0.2,
+        "pv_peak_kw": 10.0,
+        "battery_kwh": 40.0,
+        "battery_kw": 10.0,
+        "export_limit_kw": 3.0,
+        "cycle": "2026-07"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 8.3044,
+        "objective_gap": 0.0
+      }
+    },
+    {
+      "id": "nbt-high-pv-credit-bank",
+      "group": "residential_nbt",
+      "inputs": {
+        "load_kw": 0.2,
+        "pv_peak_kw": 10.0,
+        "export_limit_kw": 3.0
+      },
+      "status": "passed",
+      "metrics": {
+        "amount_due": 19.282,
+        "closing_credit": 40.155
+      }
+    },
+    {
+      "id": "ladwp_r-1a-load1-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1a",
+        "load_kw": 1.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 14.2888,
+        "optimized_bill": 14.2888,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-08
+      }
+    },
+    {
+      "id": "ladwp_r-1a-load1-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1a",
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 7.3728,
+        "optimized_bill": 4.1683,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "ladwp_r-1a-load2-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1a",
+        "load_kw": 2.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 32.0536,
+        "optimized_bill": 32.0536,
+        "balance_error_kw": 0.0,
+        "objective_gap": 0.0
+      }
+    },
+    {
+      "id": "ladwp_r-1a-load2-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1a",
+        "load_kw": 2.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 17.7253,
+        "optimized_bill": 15.2592,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "ladwp_r-1b-load1-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1b",
+        "load_kw": 1.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 14.5696,
+        "optimized_bill": 14.1125,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "ladwp_r-1b-load1-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1b",
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 8.0034,
+        "optimized_bill": 4.835,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "ladwp_r-1b-load2-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1b",
+        "load_kw": 2.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 28.3392,
+        "optimized_bill": 27.6879,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "ladwp_r-1b-load2-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "ladwp_r-1b",
+        "load_kw": 2.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 16.8373,
+        "optimized_bill": 14.5208,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_d-load1-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_d",
+        "load_kw": 1.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 18.9472,
+        "optimized_bill": 18.9472,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-08
+      }
+    },
+    {
+      "id": "sce_d-load1-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_d",
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 10.1757,
+        "optimized_bill": 6.2749,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_d-load2-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_d",
+        "load_kw": 2.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 38.6089,
+        "optimized_bill": 38.6089,
+        "balance_error_kw": 0.0,
+        "objective_gap": 2e-08
+      }
+    },
+    {
+      "id": "sce_d-load2-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_d",
+        "load_kw": 2.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 23.3056,
+        "optimized_bill": 20.178,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-4-9-load1-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-4-9",
+        "load_kw": 1.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 18.6177,
+        "optimized_bill": 16.6182,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-4-9-load1-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-4-9",
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 10.3514,
+        "optimized_bill": 5.4356,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-4-9-load2-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-4-9",
+        "load_kw": 2.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 37.95,
+        "optimized_bill": 35.6705,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-4-9-load2-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-4-9",
+        "load_kw": 2.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 23.9363,
+        "optimized_bill": 18.7059,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-5-8-load1-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-5-8",
+        "load_kw": 1.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 18.5619,
+        "optimized_bill": 16.3989,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-5-8-load1-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-5-8",
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 10.6405,
+        "optimized_bill": 5.3965,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-5-8-load2-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-5-8",
+        "load_kw": 2.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 37.8383,
+        "optimized_bill": 33.7287,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-5-8-load2-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-5-8",
+        "load_kw": 2.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 24.3074,
+        "optimized_bill": 17.3934,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-prime-load1-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-prime",
+        "load_kw": 1.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 17.9739,
+        "optimized_bill": 15.01,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-prime-load1-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-prime",
+        "load_kw": 1.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 11.1541,
+        "optimized_bill": 5.7608,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-prime-load2-pv0",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-prime",
+        "load_kw": 2.0,
+        "pv_peak_kw": 0.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 34.3597,
+        "optimized_bill": 30.9809,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "sce_tou-d-prime-load2-pv3",
+      "group": "socal",
+      "inputs": {
+        "plan": "sce_tou-d-prime",
+        "load_kw": 2.0,
+        "pv_peak_kw": 3.0,
+        "service_days": 2
+      },
+      "status": "passed",
+      "metrics": {
+        "solar_bill": 23.0203,
+        "optimized_bill": 17.3564,
+        "balance_error_kw": 0.0,
+        "objective_gap": 1e-05
+      }
+    },
+    {
+      "id": "amp_d1_2026_07_01-bill",
+      "group": "municipal",
+      "inputs": {
+        "tariff": "amp_d1_2026_07_01",
+        "base_kw": 0.5,
+        "cycle": "2026-08"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 108.5158,
+        "import_kwh": 387.5
+      }
+    },
+    {
+      "id": "amp_a2_2026_07_01-bill",
+      "group": "municipal",
+      "inputs": {
+        "tariff": "amp_a2_2026_07_01",
+        "base_kw": 20.0,
+        "cycle": "2026-08"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 3256.74,
+        "import_kwh": 15500.0
+      }
+    },
+    {
+      "id": "amp_a2_2026_07_01-storage",
+      "group": "municipal",
+      "inputs": {
+        "tariff": "amp_a2_2026_07_01",
+        "base_kw": 20.0,
+        "battery_kwh": 200.0,
+        "cycle": "2026-08"
+      },
+      "status": "passed",
+      "metrics": {
+        "baseline_bill": 3256.74,
+        "optimized_bill": 3123.9947,
+        "balance_error_kw": 0.0
+      }
+    },
+    {
+      "id": "svp_d1_2026_01_01-bill",
+      "group": "municipal",
+      "inputs": {
+        "tariff": "svp_d1_2026_01_01",
+        "base_kw": 2.0,
+        "cycle": "2026-08"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 284.6097,
+        "import_kwh": 1550.0
+      }
+    },
+    {
+      "id": "svp_cb1_2026_01_01-bill",
+      "group": "municipal",
+      "inputs": {
+        "tariff": "svp_cb1_2026_01_01",
+        "base_kw": 20.0,
+        "cycle": "2026-08"
+      },
+      "status": "passed",
+      "metrics": {
+        "bill": 3492.3912,
+        "import_kwh": 15500.0
+      }
+    },
+    {
+      "id": "svp_cb1_2026_01_01-storage",
+      "group": "municipal",
+      "inputs": {
+        "tariff": "svp_cb1_2026_01_01",
+        "base_kw": 20.0,
+        "battery_kwh": 200.0,
+        "cycle": "2026-08"
+      },
+      "status": "passed",
+      "metrics": {
+        "baseline_bill": 3492.3912,
+        "optimized_bill": 3439.303,
+        "balance_error_kw": 0.0
+      }
+    },
+    {
+      "id": "pge-option-s-dst-2026-03-08",
+      "group": "boundaries",
+      "inputs": {
+        "start": "2026-03-08",
+        "expected_intervals": 92
+      },
+      "status": "passed",
+      "metrics": {
+        "intervals": 92,
+        "demand_charge": 10020.0
+      }
+    },
+    {
+      "id": "pge-option-s-dst-2026-11-01",
+      "group": "boundaries",
+      "inputs": {
+        "start": "2026-11-01",
+        "expected_intervals": 100
+      },
+      "status": "passed",
+      "metrics": {
+        "intervals": 100,
+        "demand_charge": 10020.0
+      }
+    },
+    {
+      "id": "sce-2025-november-bsc",
+      "group": "boundaries",
+      "inputs": {
+        "plan": "sce_d",
+        "cycle": "2025-11"
+      },
+      "status": "passed",
+      "metrics": {
+        "intervals": 2884,
+        "bill": 299.9747,
+        "pre_bsc_days": 14,
+        "bsc_days": 16
+      }
+    },
+    {
+      "id": "pge-option-s-before-effective",
+      "group": "boundaries",
+      "inputs": {
+        "date": "2026-02-28",
+        "expected": "rejection"
+      },
+      "status": "passed",
+      "metrics": {
+        "rejected": 1
+      }
+    },
+    {
+      "id": "sce-before-verified-coverage",
+      "group": "boundaries",
+      "inputs": {
+        "date": "2024-05",
+        "expected": "rejection"
+      },
+      "status": "passed",
+      "metrics": {
+        "rejected": 1
+      }
+    },
+    {
+      "id": "sce-2025-bsc-version-switch",
+      "group": "boundaries",
+      "inputs": {
+        "before": "2025-11-14",
+        "after": "2025-11-15"
+      },
+      "status": "passed",
+      "metrics": {
+        "switched_versions": 1
+      }
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 # Solar export settlement implementation
 
 Status reviewed 2026-09-23. **The request to cover every utility is not complete.**
+The [non-PG&E program consolidation](Solar_Export_Program_Consolidation.md)
+now records source-backed program families for Bay Area and Southern California
+utilities and CCAs. These are identified programs, not enabled billing plans.
 The current executable adapter is a bounded monthly PG&E bundled residential
 Solar Billing Plan (NBT) comparison. It is not a complete annual bill or legacy
 NEM implementation. Existing import-only utilities remain import-only.

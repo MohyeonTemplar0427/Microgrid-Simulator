@@ -1,6 +1,9 @@
 # Bay Area solar billing coverage audit
 
 Reviewed 2026-09-21 against the main working tree (uncommitted changes retained).
+The 2026-09-24 [program consolidation](Solar_Export_Program_Consolidation.md)
+adds a source-backed catalog including CCAs but does not enable their export
+billing. The current desktop GUI opens the same local app as the browser.
 **Result: FAIL — the Bay Area is not fully covered. LA expansion must not be
 presented as the next completed regional milestone.**
 
@@ -24,7 +27,7 @@ adapter; there is no other utility adapter behind this comparison.
 
 `src/local_web/export_study.py` additionally restricts the web path to individual
 houses/apartments, 15-minute data and the current E-ELEC tariff ID. Web controls
-are PG&E-residential only. The desktop GUI does not expose this new adapter.
+are PG&E-residential only and are shared by the desktop GUI's local app.
 
 `src/billing/municipal.py` explicitly rejects exporting AMP/SVP accounts;
 `src/local_web/municipal_service.py` only accepts export_program=none.
