@@ -127,10 +127,11 @@ calculation; this monthly operating comparison does not establish it.
 
 ## Remaining utility work (do not substitute PG&E rules)
 
-PG&E now has a separate [annual statement reconciliation workflow](PGE_Solar_True_Up.md)
-in the shared local browser and desktop GUI. It reproduces the published guide
-example from twelve documented monthly records, but does not yet provide annual
-interval billing or annual dispatch.
+PG&E has a separate [annual statement reconciliation workflow](PGE_Solar_True_Up.md)
+through the CLI and a dedicated local API endpoint. Its setup was removed from
+the main browser study form pending a separate page. It reproduces the published
+guide example from twelve documented monthly records, but does not yet provide
+annual interval billing or annual dispatch.
 
 | Utility/provider | Required work before enabling full settlement |
 |---|---|

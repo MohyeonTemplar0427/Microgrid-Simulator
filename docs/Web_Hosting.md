@@ -175,7 +175,8 @@ limits are now prepared. Controls for long interactive requests remain pending
 in workstream 3.
 Waitress's parser limits and fixed thread count do not replace those controls.
 
-Backups, restore testing, retention/deletion and storage deployment policy remain
+Finished-study deletion and short-lived quota tombstones are prepared. Backups,
+restore testing, dataset/weather deletion, and storage deployment policy remain
 workstream 4; reproducible packaging, service supervision and full server-environment
 validation remain workstream 5. No automatic deployment, container infrastructure,
 or public firewall changes are included here. Billing rates, date coverage, and

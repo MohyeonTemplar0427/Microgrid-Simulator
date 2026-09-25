@@ -125,9 +125,9 @@ quota but still has the per-file and server limits.
 The API validates CSV content, then checks ownership and physical storage in a
 SQLite write transaction before storing a new file. Concurrent uploads cannot
 both take the last quota space. A rejected upload returns HTTP 429 with a clear
-error and does not create a dataset grant. The owner limit currently requires an
-administrator to change the limit or remove old data; user deletion is planned
-in the retention/deletion workstream.
+error and does not create a dataset grant. The owner limit for uploads currently
+requires an administrator to change the limit or remove old data; self-service
+dataset deletion is still pending.
 
 ## Annual result and weather storage
 
@@ -186,8 +186,9 @@ one-API-process interactive slot serializes weather retrievals.
 
 The 200-per-day study count is an upper bound on submissions, not a promise of
 200 full-year studies being stored. At the 8 GiB owner cap, repeated annual
-5-minute saved studies will reach the storage limit first until deletion of
-saved studies is available.
+5-minute saved studies can reach the storage limit first. A user can delete a
+finished study and its result files to reclaim run storage; an active study
+must first be cancelled and stopped.
 In optional guest mode, guest sessions have a two-study daily limit and the
 server has a 20-study global guest daily limit. New studies by signed-in users
 are also temporary in that mode until explicitly saved. Unsaved results expire
@@ -197,7 +198,24 @@ Queued temporary jobs are also removed after 24 hours if they never run.
 These limits are provisional and must be reviewed against the selected host and
 actual workload. Candidate data, utility caches, engine snapshots, the SQLite
 database, and backups are not covered by these category caps; backups,
-retention/deletion, and host-level disk controls remain deployment blockers.
+dataset/weather deletion, and host-level disk controls remain deployment blockers.
+
+## Deleting a finished study
+
+The selected study's **Delete study and results** button sends an owner-checked,
+CSRF-protected request to `POST /api/studies/<id>/delete` with `{}`. It removes
+the study from history and blocks further downloads through all study routes.
+Queued, running, and cancelling studies must finish or be cancelled first.
+The server then removes the run directory, including copied inputs and result
+CSVs. If the filesystem is temporarily busy, the API reports cleanup pending
+and the janitor retries. Separate uploaded datasets and cached weather remain
+available to their owners; this action does not delete those resources.
+
+For two days the database retains only a minimal quota record: opaque owner ID,
+timestamps, duration and a scrubbed study name. This prevents deleting a study
+from resetting the daily simulation limit. The janitor then removes that record.
+Deletion does not reach any independently retained administrator backup;
+backup retention and restore policy still need to be defined before hosting.
 
 ## Verification
 

@@ -73,10 +73,10 @@ These are editable assumptions, not measured site data.
 3. Choose **Clear-sky estimate** for locally calculated cloud-free irradiance
    and explicit constant temperature/wind assumptions. This is neither observed
    weather nor a forecast.
-4. Alternatively choose **Historical weather · NSRDB**, set dates within one
-   year (2018–2025, CONUS coverage), then click **Retrieve historical weather**.
-   The app uses the existing NSRDB adapter and current provider endpoint,
-   retrieves the year at the selected resolution, and caches it locally.
+4. Alternatively choose **Historical weather · NSRDB** with dates within one
+   year (2018–2025, CONUS coverage). The app automatically retrieves weather
+   for that year at the selected resolution and caches it locally. A retry
+   button appears if retrieval fails.
    Matching location/year/timezone/interval and complete interval coverage are
    required. No year shifting, resampling, or silent clear-sky fallback occurs.
 5. Set constant or synthetic building load, PV nameplate/orientation/losses,
@@ -202,7 +202,9 @@ Local limits: 20 MB HTTP bodies, 16 MiB per CSV upload by default,
 and 30 minutes per run. The default CSV store cap is 1 GiB. Saved study results
 and retrieved weather have separate provisional storage limits; see
 [Web resource controls](Web_Resource_Controls.md) for their values and scope.
-There is no automatic data deletion. The database contains job metadata;
+Unsaved temporary studies expire in hosted guest mode, and users can delete
+finished studies and their result files. Saved studies otherwise remain until
+deleted. The database contains job metadata;
 large interval tables remain files. New CSV-only results are paged from the
 CSV without loading a full JSON copy; legacy JSON pages still read the whole
 file before slicing. This is intended for local studies, not large-scale
@@ -241,12 +243,16 @@ separate locked dependency environment and a broader saved-study acceptance set.
 | POST | `/api/location` | Geocode an explicit `{query}` with cached results |
 | POST | `/api/weather` | Retrieve/cache `{latitude, longitude, year, timezone, timestep_minutes}` |
 | GET / POST | `/api/datasets` | List datasets / upload `{name, csv}` |
-| GET / POST | `/api/studies` | List the most recent 100 / submit a version 1 or 2 request |
+| GET / POST | `/api/studies` | List the most recent 100 / submit a supported legacy, location, or grid-only study request |
+| POST | `/api/v1/pge/annual-studies` | Submit a PG&E NBT annual statement replay |
+| POST | `/api/v1/municipal/studies` | Submit a supported municipal study |
+| POST | `/api/v1/socal/studies` | Submit a supported Southern California study |
 | GET | `/api/studies/<id>` | Status, request, progress, result manifest when completed |
 | GET | `/api/studies/<id>/tables/<table>?offset=0&limit=100` | Page of numeric result data |
 | GET | `/api/studies/<id>/tables/<table>.csv` | Full table download |
 | GET | `/api/studies/<id>/tables.zip` | On-demand ZIP of CSV result tables and manifest |
 | POST | `/api/studies/<id>/save` | In guest-enabled OIDC mode, make a completed temporary study permanent; guest claims require sign-in and its original cookie |
+| POST | `/api/studies/<id>/delete` | Delete an owned finished study and its run files; send `{}`; active studies must be cancelled first |
 | GET | `/api/studies/<id>/request.json` | Saved request download |
 | GET | `/api/studies/<id>/result.json` | Result/provenance manifest download |
 
@@ -360,7 +366,7 @@ The reset button is labeled “Reset study inputs”; it does not delete saved r
 ## Multi-step setup
 
 The form shows nine setup screens (study name, location, electricity service,
-simulation time range, solar weather, PV, inverter, battery/ESS, economics)
+simulation time range, PV, inverter, Sunlight & weather, battery/ESS, economics)
 followed by Review & run. Back/Next preserves values in the same form; visited
 steps can be revisited from the step navigation. Reset and loading saved settings
 start at the first applicable step. Legacy CSV studies skip location-only steps.

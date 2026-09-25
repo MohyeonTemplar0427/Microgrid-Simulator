@@ -208,6 +208,8 @@ class Store:
                 db.execute("ALTER TABLE studies ADD COLUMN expires_at TEXT")
             if "guest_origin_owner" not in columns:
                 db.execute("ALTER TABLE studies ADD COLUMN guest_origin_owner TEXT")
+            if "deleted_at" not in columns:
+                db.execute("ALTER TABLE studies ADD COLUMN deleted_at TEXT")
             db.execute("CREATE INDEX IF NOT EXISTS studies_owner ON studies(owner_id, created_at)")
             db.execute("""CREATE TABLE IF NOT EXISTS resource_owners (
                 kind TEXT NOT NULL, id TEXT NOT NULL, owner_id TEXT NOT NULL, metadata TEXT,
@@ -514,7 +516,8 @@ class Store:
     def get(self, study_id, owner_id=None):
         with self.connect() as db:
             row = db.execute("SELECT * FROM studies WHERE id = ?", (study_id,)).fetchone()
-        if (row is None or (owner_id is not None and row["owner_id"] != owner_id)
+        if (row is None or row["status"] == "deleted"
+                or (owner_id is not None and row["owner_id"] != owner_id)
                 or (row is not None and row["expires_at"] is not None and row["expires_at"] <= now())):
             raise FileNotFoundError("Study not found.")
         result = dict(row)
@@ -532,8 +535,8 @@ class Store:
     def list(self, owner_id=None):
         with self.connect() as db:
             if owner_id is not None:
-                return [dict(row) for row in db.execute("SELECT * FROM studies WHERE owner_id=? AND (expires_at IS NULL OR expires_at>?) ORDER BY created_at DESC LIMIT 100", (owner_id, now()))]
-            return [dict(row) for row in db.execute("SELECT * FROM studies ORDER BY created_at DESC LIMIT 100")]
+                return [dict(row) for row in db.execute("SELECT * FROM studies WHERE owner_id=? AND status!='deleted' AND (expires_at IS NULL OR expires_at>?) ORDER BY created_at DESC LIMIT 100", (owner_id, now()))]
+            return [dict(row) for row in db.execute("SELECT * FROM studies WHERE status!='deleted' ORDER BY created_at DESC LIMIT 100")]
 
     def claim(self):
         with self.connect() as db:
@@ -548,7 +551,7 @@ class Store:
         with self.connect() as db:
             db.execute("BEGIN IMMEDIATE")
             row = db.execute("SELECT status, owner_id, saved FROM studies WHERE id=?", (study_id,)).fetchone()
-            if row is None or (owner_id is not None and row["owner_id"] != owner_id):
+            if row is None or row["status"] == "deleted" or (owner_id is not None and row["owner_id"] != owner_id):
                 raise FileNotFoundError("Study not found.")
             if row["status"] == "queued":
                 finished = datetime.now(timezone.utc)
@@ -560,6 +563,28 @@ class Store:
             elif row["status"] != "cancelling":
                 raise StudyConflict("This study has already finished.")
         return self.get(study_id, owner_id)
+
+    def delete_study(self, study_id, owner_id=None):
+        """Hide a finished study, then remove its files; retain only short-lived quota accounting."""
+        with self.connect() as db:
+            db.execute("BEGIN IMMEDIATE")
+            row = db.execute("SELECT status, owner_id FROM studies WHERE id=?", (study_id,)).fetchone()
+            if row is None or row["status"] == "deleted" or (owner_id is not None and row["owner_id"] != owner_id):
+                raise FileNotFoundError("Study not found.")
+            if row["status"] in {"queued", "running", "cancelling"}:
+                raise StudyConflict("Cancel the study and wait for it to stop before deleting it.")
+            db.execute("""UPDATE studies SET name='Deleted study', status='deleted', error=NULL,
+                          saved=0, expires_at=NULL, deleted_at=? WHERE id=?""", (now(), study_id))
+        directory = self.directory / "runs" / study_id
+        try:
+            if directory.is_symlink():
+                directory.unlink()
+            elif directory.exists():
+                shutil.rmtree(directory)
+        except OSError:
+            # The study is already inaccessible. The janitor retries file removal.
+            return {"deleted": True, "storage_cleanup_pending": True}
+        return {"deleted": True, "storage_cleanup_pending": False}
 
     def cancellation_requested(self, study_id):
         with self.connect() as db:
@@ -656,9 +681,18 @@ class Store:
         return self.get(study_id, member_owner)
 
     def purge_expired_studies(self):
-        """Remove expired temporary studies and abandoned guest resources."""
+        """Remove deleted/expired studies and abandoned guest resources."""
         with self.connect() as db:
             db.execute("BEGIN IMMEDIATE")
+            deleted = list(db.execute("SELECT id,deleted_at FROM studies WHERE status='deleted'"))
+            for row in deleted:
+                run_directory = self.directory / "runs" / row["id"]
+                if run_directory.is_symlink():
+                    run_directory.unlink()
+                elif run_directory.exists():
+                    shutil.rmtree(run_directory)
+                if row["deleted_at"] <= (datetime.now(timezone.utc) - timedelta(days=2)).isoformat():
+                    db.execute("DELETE FROM studies WHERE id=?", (row["id"],))
             db.execute("DELETE FROM guest_interactions WHERE created_at<?",
                        ((datetime.now(timezone.utc) - timedelta(days=2)).isoformat(),))
             expired = [row[0] for row in db.execute(
