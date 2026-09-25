@@ -7,6 +7,7 @@ const PAGE_SIZE = 100;
 let essResolution=null, essKey=null, annualResult=null, annualKey=null;
 let utilityTimer, strategiesEdited=false, locationResolution=null;
 let template, siteLabel, weatherId = null, weatherMeta = null, locationGeneration = 0;
+let weatherRequestInFlight=null, weatherAttemptedKey=null, weatherFailure=null, weatherSuccess=null;
 const field = name => form.elements.namedItem(name);
 function carbonSettings() {return {source:'electricity_maps',region:'from_location'};}
 function syncLocationTimezone() {
@@ -23,10 +24,14 @@ function updateEquipmentChoice() {
   if(field('pv_choice').selectedOptions[0]?.disabled)field('pv_choice').value='';
   $('pv-presence').hidden=template?.schema_version===1;
   for(const page of document.querySelectorAll('.wizard-page')) {
-    const skip=gridOnly() && ['4','5','6','7'].includes(page.dataset.step);
+    const skip=gridOnly() && ['4','6','7'].includes(page.dataset.step);
     if(skip)for(const input of page.querySelectorAll('input,select,button'))input.disabled=true;
     else if(['4','5','6','7'].includes(page.dataset.step))for(const input of page.querySelectorAll('input,select,button'))input.disabled=false;
   }
+  const showPvSettings=template?.schema_version>=2 && field('pv_choice').value==='yes';
+  $('pv-settings').hidden=!showPvSettings;
+  $('pv-note').hidden=template?.schema_version>=2 && !showPvSettings;
+  for(const input of $('pv-settings').querySelectorAll('input,select,button'))input.disabled=!showPvSettings;
   field('degradation_cost_per_kWh').closest('label').hidden=gridOnly();
   field('include_degradation_in_optimization').closest('label').hidden=gridOnly();
   field('include_degradation_in_optimization').disabled=gridOnly();
@@ -36,7 +41,7 @@ function updateEquipmentChoice() {
   if(gridOnly())$('dataset-info').textContent='Grid-only study: native load is supplied entirely by the electricity grid.';
   $('pv-choice-note').textContent=municipal
     ? 'PV billing is not supported for AMP/SVP. Choose grid-only to skip all equipment, or battery-only to keep the storage controls.'
-    : 'Choose No to skip Solar weather, PV, Inverter and Battery / ESS. The study will calculate load and grid electricity costs.';
+    : 'Choose No for a grid-only study. The inverter, weather, and battery steps will be skipped.';
 }
 function syncPvBatteryConnection() {
   const batteryCompared=exportActive() || [...$('strategies').querySelectorAll('input:checked')].some(box=>box.value!=='no_battery');
@@ -125,7 +130,7 @@ function updateSiteControls() {
   updateEquipmentChoice();
   window.socalUI?.sync();
   syncPvBatteryConnection();
-  $("weather-status").textContent=field("weather_source").value==="nsrdb" ? (weatherId?"Historical weather ready. A copy will be saved with the study.":"Retrieve matching historical weather before running."):"Clear-sky estimates are calculated locally when the simulation runs.";
+  syncWeatherStatus();
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
 $("search-location").addEventListener("click",async()=>{
@@ -143,18 +148,63 @@ $("search-location").addEventListener("click",async()=>{
   }catch(error){$("location-status").textContent=error.message;}
   finally{$("search-location").disabled=false;}
 });
-$("retrieve-weather").addEventListener("click",async()=>{
-  $("retrieve-weather").disabled=true; $("weather-status").textContent="Retrieving weather… This can take a few minutes.";
+function historicalWeatherIssue() {
+  if(!capabilities?.nsrdb_configured) return "Historical weather needs NSRDB credentials on the server.";
+  if(!field("latitude").value || !field("longitude").value ||
+     !field("latitude").checkValidity() || !field("longitude").checkValidity())
+    return "Set a valid location before retrieving historical weather.";
+  const start=field("start_date").value, end=field("end_date").value;
+  if(!start || !end || end<start || start.slice(0,4)!==end.slice(0,4))
+    return "Choose valid dates within one historical year.";
+  if(!capabilities.nsrdb_years.includes(Number(start.slice(0,4))))
+    return "Choose an available historical NSRDB year.";
+  if(!field("timezone").value || !field("timestep_minutes").value)
+    return "Set a timezone and interval before retrieving historical weather.";
+  return null;
+}
+function syncWeatherStatus() {
+  const historical=field("weather_source").value==="nsrdb";
+  const key=JSON.stringify(weatherRequest());
+  $("retrieve-weather").hidden=!historical || weatherFailure?.key!==key;
+  if(!historical) $("weather-status").textContent="Clear-sky estimates are calculated locally when the simulation runs.";
+  else if(weatherId && weatherMatches(weatherMeta))
+    $("weather-status").textContent=weatherSuccess?.key===key ? weatherSuccess.message : "Historical weather ready. A copy will be saved with the study.";
+  else if(weatherRequestInFlight===key)
+    $("weather-status").textContent="Retrieving historical weather automatically… This can take a few minutes.";
+  else if(weatherRequestInFlight)
+    $("weather-status").textContent="Finishing the earlier weather request before retrieving data for these settings.";
+  else if(weatherFailure?.key===key) $("weather-status").textContent=weatherFailure.message;
+  else $("weather-status").textContent="Historical weather will download automatically when you reach this step.";
+}
+async function maybeRetrieveWeather(force=false) {
+  if(!capabilities || template?.schema_version<2 || window.socalUI?.active() ||
+     window.municipalUI?.active() || wizardPages()[wizardIndex]?.dataset.step!=="4" ||
+     field("weather_source").value!=="nsrdb") return;
+  if(weatherId && weatherMatches(weatherMeta)) {syncWeatherStatus();return;}
+  const issue=historicalWeatherIssue();
+  if(issue) {$("weather-status").textContent=issue;return;}
+  const request=weatherRequest(), key=JSON.stringify(request);
+  if(weatherRequestInFlight || (!force && weatherAttemptedKey===key)) return;
+  weatherAttemptedKey=key;weatherRequestInFlight=key;weatherFailure=null;weatherSuccess=null;
+  syncWeatherStatus();
   try {
-    const request=weatherRequest();
-    if(Number(field("end_date").value.slice(0,4))!==request.year) throw new Error("Use dates within one historical year.");
     const metadata=await api("/api/weather",request);
-    if(!weatherMatches(metadata)) throw new Error("Settings changed during retrieval. Retrieve weather for the current settings.");
-    weatherId=metadata.id; weatherMeta=metadata; updateSiteControls();
-    $("weather-status").textContent=`${metadata.cached?"Cached":"Retrieved"} historical weather ready · ${metadata.row_count.toLocaleString()} intervals for ${metadata.request.year}.`;
-  }catch(error){$("weather-status").textContent=error.message;}
-  finally{$("retrieve-weather").disabled=false;}
-});
+    if(field("weather_source").value==="nsrdb" && weatherMatches(metadata)) {
+      weatherId=metadata.id;weatherMeta=metadata;
+      weatherSuccess={key,message:(metadata.cached?"Cached":"Retrieved")+" historical weather ready · "+metadata.row_count.toLocaleString()+" intervals for "+metadata.request.year+"."};
+      updateSiteControls();
+    }
+  }catch(error){
+    if(field("weather_source").value==="nsrdb" && key===JSON.stringify(weatherRequest()))
+      weatherFailure={key,message:"Historical weather retrieval failed: "+error.message};
+  }finally{
+    weatherRequestInFlight=null;
+    syncWeatherStatus();
+    if(field("weather_source").value==="nsrdb" && key!==JSON.stringify(weatherRequest()))
+      maybeRetrieveWeather();
+  }
+}
+$("retrieve-weather").addEventListener("click",()=>maybeRetrieveWeather(true));
 form.addEventListener("input",event=>{
   if(["latitude","longitude","location_query"].includes(event.target.name)) {
     locationGeneration++;
@@ -165,7 +215,10 @@ form.addEventListener("input",event=>{
       clearTimeout(utilityTimer); utilityTimer=setTimeout(()=>refreshUtilities(locationGeneration),600);
     }
   }
+  if(event.target.name==="weather_source" && field("weather_source").value!=="nsrdb")
+    weatherAttemptedKey=null;
   updateSiteControls();
+  maybeRetrieveWeather();
 });
 
 async function api(path, body) {
@@ -200,13 +253,7 @@ function formatRuntime(seconds) {
 function option(value, label) { const node=document.createElement("option"); node.value=value; node.textContent=label; return node; }
 
 function fillForm(request, lookup=true) {
-  if(request.schema_version===7) {
-    $("annual-name").value=request.name;
-    $("annual-json").value=JSON.stringify({records:request.records,rates:request.rates},null,2);
-    $("annual-confirm").checked=request.account_confirmed===true;
-    $("annual-replay").scrollIntoView({behavior:"smooth",block:"start"});
-    return;
-  }
+  if(request.schema_version===7) return;
   if(request.schema_version===6) {window.socalUI.restore(request); return;}
   if(request.schema_version===4) {window.municipalUI.restore(request); return;}
   if(request.schema_version===5) {
@@ -224,6 +271,7 @@ function fillForm(request, lookup=true) {
   field("pv_battery_connection").value=request.pv_battery_connection || "ac_coupled";
   restoreSiteProfile(request.site_profile);
   selectedDatasetId=request.dataset_id;
+  weatherAttemptedKey=null;weatherFailure=null;weatherSuccess=null;
   weatherId=request.weather_id || null;
   weatherMeta=request.schema_version>=2 && weatherId?{request:{latitude:request.site.latitude,longitude:request.site.longitude,year:Number(request.start_date.slice(0,4)),timezone:request.timezone,timestep_minutes:request.timestep_minutes}}:null;
   if(request.schema_version>=2) {
@@ -318,7 +366,7 @@ async function selectStudy(id) {
   window.location.hash=id;
   $("empty-state").hidden=true; $("study-output").hidden=false;
   $("results-content").hidden=true; $("run-error").hidden=true; $("manifest-download").hidden=true;
-  $("cancel-study").hidden=true;
+  $("cancel-study").hidden=true; $("delete-study").hidden=true;
   $("progress").textContent="Loading study…";
   $("results-title").scrollIntoView({behavior:"smooth",block:"start"});
   await refreshStudy(id);
@@ -336,6 +384,8 @@ async function refreshStudy(id) {
     if(study.expires_at && !study.saved) $("run-meta").textContent+=` · Temporary result expires ${new Date(study.expires_at).toLocaleString()}`;
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
     $("cancel-study").hidden=!["queued","running"].includes(study.status);
+    $("delete-study").hidden=!["completed","failed","cancelled"].includes(study.status);
+    $("reuse").hidden=study.request.schema_version===7;
     $("save-study").hidden=!(study.status==="completed" && capabilities?.auth_mode==="oidc" && !study.saved);
     $("save-study").textContent=capabilities?.account_type==="guest" ? "Save to my profile · Sign in" : "Save to my profile";
     $("cancel-study").disabled=false;
@@ -396,20 +446,6 @@ async function loadTable() {
   $("previous").disabled=offset===0; $("next").disabled=offset+PAGE_SIZE>=table.total;
 }
 function tableAction(action) { return ()=>{action();loadTable().catch(error=>showError("run-error",error));}; }
-$("annual-file").addEventListener("change",async event=>{
-  const file=event.target.files?.[0];if(!file)return;
-  try {const raw=JSON.parse(await file.text());$("annual-json").value=JSON.stringify({records:raw.records,rates:raw.rates},null,2);$("annual-name").value=raw.name||file.name.replace(/\.json$/i,"");$("annual-error").hidden=true;}
-  catch(error){showError("annual-error",new Error(`Read a valid annual records JSON file: ${error.message}`));}
-});
-$("annual-run").addEventListener("click",async()=>{
-  const button=$("annual-run");button.disabled=true;$("annual-error").hidden=true;
-  try {
-    const raw=JSON.parse($("annual-json").value);
-    const request={schema_version:7,name:$("annual-name").value.trim(),account_confirmed:$("annual-confirm").checked,records:raw.records,rates:raw.rates};
-    const study=await api("/api/v1/pge/annual-studies",request);
-    await selectStudy(study.id);await history();
-  }catch(error){showError("annual-error",error);}finally{button.disabled=false;}
-});
 $("table-select").addEventListener("change",tableAction(()=>{offset=0;}));
 $("all-columns").addEventListener("change",tableAction(()=>{}));
 $("previous").addEventListener("click",tableAction(()=>{offset=Math.max(0,offset-PAGE_SIZE);}));
@@ -424,6 +460,23 @@ $("cancel-study").addEventListener("click",async()=>{
   } catch(error) {
     showError("run-error",error);
     await refreshStudy(activeId);
+  }
+});
+$("delete-study").addEventListener("click",async()=>{
+  if(!activeId || !["completed","failed","cancelled"].includes(activeStudy?.status)) return;
+  if(!window.confirm("Delete this study and its saved results from this server? Download anything you need first. This cannot be undone.")) return;
+  const id=activeId;
+  $("delete-study").disabled=true;
+  try {
+    const result=await api(`/api/studies/${id}/delete`,{});
+    clearTimeout(pollTimer); activeId=null; activeStudy=null; tableRequest++;
+    window.history.replaceState(null,"",window.location.pathname+window.location.search);
+    $("study-output").hidden=true; $("empty-state").hidden=false;
+    if(result.storage_cleanup_pending) showError("connection",new Error("The study is no longer accessible. Server file cleanup will retry shortly."));
+    await history();
+  } catch(error) {
+    showError("run-error",error);
+    $("delete-study").disabled=false;
   }
 });
 $("reuse").addEventListener("click",()=>{if(activeStudy){fillForm(activeStudy.request);$("configure-title").scrollIntoView({behavior:"smooth"});}});
@@ -517,7 +570,6 @@ async function initialize() {
         showError("connection",new Error(`The temporary study could not be saved: ${error.message}`));
       }
     }
-    $("annual-replay").hidden=!capabilities.pge_annual_replay;
     window.municipalUI?.init(capabilities);
     for(const entry of capabilities.ess_catalog || []) field("equipment_id").append(option(entry.id,`${entry.manufacturer} · ${entry.model}`));
     for(const year of [...(capabilities.nsrdb_years || [])].reverse()) field("orientation_year").append(option(year,String(year)));
@@ -612,7 +664,8 @@ function setLocationChoices(result,saved="unconfirmed") {
   const coverage=capabilities.socal?.la_county_coverage?.providers||[];
   const providerIds=new Set([...delivery.map(x=>x.utility_id),...(result.generation_candidates||[]).map(x=>x.service_id)]);
   const limitations=coverage.filter(x=>providerIds.has(x.id)&&x.status!=='bounded_import_support').map(x=>x.id.toUpperCase()+': '+x.reason);
-  $('utility-suggestion').textContent=`${result.explanation} Choices below follow the Step 2 location and site type; map matches do not confirm account eligibility. ${limitations.join(' ')}`;
+  const explanation=result.explanation.startsWith('Interior CEC polygon match,')?'':result.explanation;
+  $('utility-suggestion').textContent=[explanation,...limitations].filter(Boolean).join(' ');
   window.municipalUI?.serviceChanged();updateSiteControls();
 }
 async function refreshUtilities(generation,saved="unconfirmed") {
@@ -638,8 +691,8 @@ field('utility').addEventListener('change',()=>{
 function wizardPages() {
   return [...document.querySelectorAll(".wizard-page")].filter(page=>
     (template?.schema_version>=2 || !page.querySelector(":scope > fieldset[data-site]")) &&
-    !(gridOnly() && ['4','5','6','7'].includes(page.dataset.step)) &&
-    !(field('pv_choice').value==='storage' && ['4','5'].includes(page.dataset.step)));
+    !(gridOnly() && ['4','6','7'].includes(page.dataset.step)) &&
+    !(field('pv_choice').value==='storage' && page.dataset.step==='4'));
 }
 function resetWizard() { wizardIndex=0; wizardReached=0; renderWizard(); }
 function renderWizard(focus=false) {
@@ -666,6 +719,7 @@ function renderWizard(focus=false) {
     const heading=pages[wizardIndex].querySelector("legend,h3");heading.tabIndex=-1;heading.focus();
     $("step-progress").scrollIntoView({behavior:"smooth",block:"start"});
   }
+  maybeRetrieveWeather();
 }
 function validateWizardPage(page) {
   $("form-error").hidden=true;
@@ -690,7 +744,7 @@ function validateWizardPage(page) {
   }
   let error=null;
   if(page.contains(field("end_date")) && field("end_date").value<field("start_date").value) error="End date must be on or after the start date.";
-  if(!window.socalUI?.active() && !window.municipalUI?.active() && page.contains(field("weather_source")) && template?.schema_version>=2 && field("weather_source").value==="nsrdb" && !weatherId) error="Retrieve matching historical weather before continuing.";
+  if(!window.socalUI?.active() && !window.municipalUI?.active() && page.contains(field("weather_source")) && template?.schema_version>=2 && field("weather_source").value==="nsrdb" && !weatherId) error=weatherRequestInFlight ? "Automatic historical weather retrieval is still running. Wait for it to finish." : weatherFailure?.key===JSON.stringify(weatherRequest()) ? "Historical weather retrieval failed. Use Retry weather retrieval." : "Historical weather will download automatically when these settings are valid.";
   if(page.contains(field("capacity_kWh"))) {
     if(field("ess_mode").value==="equipment" && !essResolution?.ready) error="Review and apply the equipment settings before continuing.";
     else {
@@ -740,6 +794,7 @@ function startBlankStudy() {
   strategiesEdited=false;
   locationGeneration++; clearTimeout(utilityTimer); siteLabel="";
   weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
+  weatherAttemptedKey=null;weatherFailure=null;weatherSuccess=null;
   for(const input of form.querySelectorAll("input[name],select[name]")) {
     if(input.name.startsWith("m_") || input.name.startsWith("sc_"))continue;
     if(input.type==="checkbox") input.checked=false;
@@ -804,7 +859,7 @@ function applyStepDefaults(page) {
   if(page.contains(field('start_date')) && field('start_date').value>field('end_date').value)
     showError('form-error',new Error('The entered start date is later than the end date. Adjust one date; defaults preserve your existing entries.'));
 }
-for(const button of document.querySelectorAll(".use-defaults")) button.addEventListener("click",()=>applyStepDefaults(button.closest(".wizard-page")));
+for(const button of document.querySelectorAll(".use-defaults")) button.addEventListener("click",()=>{applyStepDefaults(button.closest(".wizard-page"));maybeRetrieveWeather();});
 
 $("strategies").addEventListener("change",()=>{strategiesEdited=true;syncPvBatteryConnection();renderStudySummary();});
 

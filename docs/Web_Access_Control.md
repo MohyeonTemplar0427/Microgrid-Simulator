@@ -163,10 +163,11 @@ rejection, PKCE, callback binding/replay, cookie rotation, restart/expiry/logout
 CSRF/origin checks, ownerless migration, cross-user routes/IDs/downloads,
 credential redaction, and authorized real worker completion.
 
-Next checkpoints remain: production server/HTTPS; queue/concurrency/cancellation
-and usage controls; backups/retention/deletion; reproducible deployment and server
-validation. There is no rate limiting or provider-based account administration in
-this checkpoint. Do not expose this server publicly yet.
+Later checkpoints added Waitress/HTTPS-proxy preparation, queue and usage
+controls, and owner-checked deletion of finished studies. Backups and restore
+testing, deletion of uploaded datasets and cached weather, reproducible
+deployment, and validation on the selected host remain. There is no
+provider-based account administration yet. Do not expose this server publicly.
 
 Billing/modeling scope is unchanged: PG&E solar billing is a bounded monthly
 bundled residential NBT comparison. Annual statement reconciliation is distinct

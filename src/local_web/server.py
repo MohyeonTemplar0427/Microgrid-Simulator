@@ -305,6 +305,12 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                         raise ValueError("Send an empty cancellation request.")
                     study = application.store.cancel(cancel[1], self.owner_id)
                     return self.respond(202 if study["status"] == "cancelling" else 200, study)
+                delete = re.fullmatch(r"/api/studies/([0-9a-f]{32})/delete", urlsplit(self.path).path)
+                if delete:
+                    if body != {}:
+                        raise ValueError("Send an empty deletion request.")
+                    result = application.store.delete_study(delete[1], self.owner_id)
+                    return self.respond(202 if result["storage_cleanup_pending"] else 200, result)
                 if urlsplit(self.path).path == "/api/v1/pge/annual-studies":
                     return self.respond(202, application.submit_pge_annual(body, self.owner_id,
                                                                            temporary=allow_guests))

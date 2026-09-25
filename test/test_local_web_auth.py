@@ -610,6 +610,39 @@ def test_cancel_route_requires_owner_and_csrf(service):
     assert call(path, {}, alice)[0] == 409
 
 
+def test_delete_study_is_owner_only_and_keeps_daily_submission_count(service):
+    app, auth, call = service
+    app.store.daily_study_limit = 1
+    alice, caps = client(auth, call, 'alice')
+    bob, _ = client(auth, call, 'bob')
+    study = call('/api/studies', caps['defaults'], alice)[1]
+    directory = app.store.directory / 'runs' / study['id']
+    (directory / 'private-result.csv').write_text('private result')
+    path = '/api/studies/' + study['id'] + '/delete'
+    assert call(path, {})[0] == 401
+    assert call(path, {}, bob)[0] == 404
+    assert call(path, {}, {'Cookie': alice['Cookie']})[0] == 403
+    assert call(path, {'unexpected': True}, alice)[0] == 400
+    assert call(path, {}, alice)[0] == 409  # A queued job must be cancelled first.
+    assert app.store.claim()['id'] == study['id']
+    write_json(directory / 'result.json', {'tables': []})
+    assert app.store.finish(study['id']) == 'completed'
+    assert call('/api/studies/' + study['id'], headers=alice)[0] == 200
+    status, deleted, _ = call(path, {}, alice)
+    assert status == 200 and deleted == {'deleted': True, 'storage_cleanup_pending': False}
+    assert not directory.exists()
+    assert call('/api/studies/' + study['id'], headers=alice)[0] == 404
+    assert call('/api/studies/' + study['id'] + '/request.json', headers=alice)[0] == 404
+    assert call(path, {}, alice)[0] == 404
+    assert all(item['id'] != study['id'] for item in call('/api/studies', headers=alice)[1])
+    assert call('/api/usage', headers=alice)[1]['submitted_studies'] == 1
+    assert call('/api/studies', caps['defaults'], alice)[0] == 429
+    with app.store.connect() as db:
+        row = db.execute('SELECT name,status,error,deleted_at FROM studies WHERE id=?', (study['id'],)).fetchone()
+    assert row['name'] == 'Deleted study' and row['status'] == 'deleted'
+    assert row['error'] is None and row['deleted_at']
+
+
 def test_running_cancel_stops_simulation_subprocess(service, monkeypatch):
     import sys
     import src.local_web.runtime as runtime

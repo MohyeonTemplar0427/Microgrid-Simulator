@@ -61,14 +61,15 @@ Run a JSON replay with:
 /usr/local/bin/python3 -m tools.solar_export.replay_pge_annual INPUT.json
 ```
 
-The local browser and current desktop GUI (which opens the same local app)
-also expose **Annual statement replay** below the main study form. Import or
-paste the annual JSON, confirm the account conditions, and run the replay. The
-result is saved in ordinary study history with an annual summary, a twelve-cycle
-credit ledger, a true-up component table, downloadable CSV files, and reusable
-settings. The dedicated local endpoint is `POST /api/v1/pge/annual-studies`;
-it accepts schema version 7 and uses the durable study queue. This control does
-not turn the ordinary monthly solar comparison into a full-year simulation.
+The annual replay has no setup control on the main browser study page; a
+separate setup is planned. The CLI and dedicated local endpoint
+`POST /api/v1/pge/annual-studies` remain available. The endpoint accepts schema
+version 7 and uses the durable study queue. Existing replay results remain in
+ordinary study history with an annual summary, a twelve-cycle credit ledger, a
+true-up component table, and downloadable CSV files. Saved input settings can
+still be downloaded, but cannot be loaded into the main simulation form. This
+replay does not turn the ordinary monthly solar comparison into a full-year
+simulation.
 
 The CLI JSON has `account_confirmed`, `records` (exactly twelve) and `rates`
 (the existing `TrueUpRates` fields, or `null` for a net consumer). The browser

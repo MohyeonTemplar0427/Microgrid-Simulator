@@ -202,6 +202,34 @@ def test_stale_queued_temporary_study_is_removed(tmp_path):
     assert store.list("guest:temporary") == []
 
 
+def test_deleted_study_files_retry_cleanup_and_quota_tombstone_expires(tmp_path, monkeypatch):
+    from src.local_web import runtime
+
+    store = Store(tmp_path)
+    sample, _ = samples()
+    dataset = store.add_dataset(sample, "sample.csv", "alice")
+    request = deepcopy(DEFAULT_REQUEST)
+    request["dataset_id"] = dataset["id"]
+    study = store.submit(request, {"id": "engine"}, "alice")
+    store.cancel(study["id"], "alice")
+    directory = tmp_path / "runs" / study["id"]
+    with monkeypatch.context() as temporary_patch:
+        temporary_patch.setattr(runtime.shutil, "rmtree", lambda path: (_ for _ in ()).throw(OSError("busy")))
+        assert store.delete_study(study["id"], "alice") == {
+            "deleted": True, "storage_cleanup_pending": True}
+    assert directory.exists()
+    with pytest.raises(FileNotFoundError):
+        store.get(study["id"], "alice")
+    assert store.daily_usage("alice")["submitted_studies"] == 1
+    store.purge_expired_studies()
+    assert not directory.exists()
+    with store.connect() as db:
+        db.execute("UPDATE studies SET deleted_at='2000-01-01T00:00:00+00:00' WHERE id=?", (study["id"],))
+    store.purge_expired_studies()
+    with store.connect() as db:
+        assert db.execute("SELECT 1 FROM studies WHERE id=?", (study["id"],)).fetchone() is None
+
+
 def test_weather_storage_counts_owned_and_orphaned_files(tmp_path, monkeypatch):
     monkeypatch.setenv("MICROGRID_MAX_WEATHER_BYTES", "100")
     monkeypatch.setenv("MICROGRID_MAX_OWNER_WEATHER_BYTES", "200")
