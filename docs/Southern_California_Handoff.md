@@ -1,5 +1,7 @@
 # Southern California implementation handoff — 2026-09-17
 
+Historical checkpoint. The September 27 update in [Southern_California.md](Southern_California.md) now enables bounded SCE bundled NBT23–NBT26 and legacy NEM monthly-cycle studies, plus LADWP R-1A NEM net-import studies. The 2026-09-17 research-only statements below describe the earlier engine pin and browser verification, not current solar availability.
+
 Main development folder: `~/Desktop/EnergyEngineerSession/Microgrid_Simulator`; main branch. No files copied from the browser clone. No commit, staging, push or public deployment.
 
 ## Delivered and remaining scope

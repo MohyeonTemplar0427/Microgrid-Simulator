@@ -7,6 +7,18 @@ from .battery import Battery
 
 
 def optimize(key,inputs,account,start,end,battery,wear,*,include_degradation_in_optimization=False):
+ if account.get('solar_program')=='sce_nbt':
+  from .sce_nbt import optimize as optimize_nbt
+  return optimize_nbt(key,inputs,account,start,end,battery,wear,
+   include_degradation_in_optimization=include_degradation_in_optimization)
+ if account.get('solar_program')=='sce_nem':
+  from .sce_nem import optimize as optimize_nem
+  return optimize_nem(key,inputs,account,start,end,battery,wear,
+   include_degradation_in_optimization=include_degradation_in_optimization)
+ if account.get('solar_program')=='ladwp_nem':
+  from .ladwp_nem import optimize as optimize_nem
+  return optimize_nem(key,inputs,account,start,end,battery,wear,
+   include_degradation_in_optimization=include_degradation_in_optimization)
  idx=interval_index(inputs,start,end);n=len(idx)
  load=np.asarray(inputs.native_load_kw,dtype=float);pv=np.asarray(inputs.pv_available_kw,dtype=float)
  if not np.isfinite(load).all() or not np.isfinite(pv).all() or min(load.min(),pv.min())<0:raise ValueError('Invalid load/PV profile.')

@@ -692,6 +692,7 @@ function wizardPages() {
   return [...document.querySelectorAll(".wizard-page")].filter(page=>
     (template?.schema_version>=2 || !page.querySelector(":scope > fieldset[data-site]")) &&
     !(gridOnly() && ['4','6','7'].includes(page.dataset.step)) &&
+    !(window.socalUI?.active() && !window.socalUI.batteryEnabled() && ['6','7'].includes(page.dataset.step)) &&
     !(field('pv_choice').value==='storage' && page.dataset.step==='4'));
 }
 function resetWizard() { wizardIndex=0; wizardReached=0; renderWizard(); }
@@ -871,7 +872,7 @@ function syncExportControls(){
   if(!field('export_enabled'))return;
   const status=$('solar-program-status'),provider=field('utility').value;
   const programs=(capabilities?.solar_export_programs||[]).filter(p=>p.generation_provider===provider);
-  status.hidden=!programs.length;
+  status.hidden=!!window.socalUI?.active()||!programs.length;
   if(programs.length){
     const supported=programs.filter(p=>p.simulation_status==='bounded_monthly');
     status.textContent=supported.length&&exportAvailable()

@@ -69,7 +69,7 @@
     "pdf_sha256": "324262819f61e3a0857b7f4f96f8abb2ed68f6f7ed7d15c97d6fee8b9086a372",
     "text_sha256": "4046e22c8f92b4f75d9679596bff9f57b6769479db03e49d206e70b052ed79db",
     "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Other%20Rates/ELECTRIC_SCHEDULES_NEM.pdf",
-    "role": "research only; settlement unsupported"
+    "role": "bounded bundled TOU-D-PRIME monthly-cycle legacy settlement; annual true-up unsupported"
   },
   {
     "document": "sce-NEM-ST",
@@ -77,7 +77,7 @@
     "pdf_sha256": "2e9f7be084936e5797f20076492279195fd72bbd2a820afa8cb360d4c8b05f91",
     "text_sha256": "d6ce3096ba9ced3cd4469662f99f8cff4bbda1cc7ea7ed35dea5553fb6d4c92d",
     "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Other%20Rates/ELECTRIC_SCHEDULES_NEM-ST.pdf",
-    "role": "research only; settlement unsupported"
+    "role": "bounded bundled TOU-D-PRIME monthly-cycle legacy settlement; annual true-up unsupported"
   },
   {
     "document": "sce-NBT",
@@ -85,7 +85,7 @@
     "pdf_sha256": "fd6508608353e22cae2fa98ef0dc9b486330a0613b718d19f84569d41050afa6",
     "text_sha256": "9231c10d9e20b9e2bbe6346489448d51853fb049de15e7e94e8a3db17d49a7ff",
     "url": "https://edisonintl.sharepoint.com/teams/Public/TM2/Shared%20Documents/Public/Regulatory/Tariff-SCE%20Tariff%20Books/Electric/Schedules/Other%20Rates/ELECTRIC_SCHEDULES_NBT.pdf",
-    "role": "research only; settlement unsupported"
+    "role": "bounded NBT23–NBT26 monthly-cycle settlement; annual true-up unsupported"
   },
   {
     "document": "commercial-adjustments",
@@ -99,6 +99,26 @@
     "url": "https://edisonintl.sharepoint.com/teams/Public/Misc/Shared%20Documents/documents/Solar/Energy%20Export%20Credit%20Prices/EEC%20Factors_Upload%20File%20-%20Pacific%20Time%20Zone%20-%20FINAL.xlsx",
     "retrieved": "2026-09-17",
     "xlsx_sha256": "c88229eccf67e78f5e86c9ad4e1a8de7f946e585f49b39139621e70b55e211c7",
-    "role": "research only; not loaded as a settlement tariff"
+    "verified_again": "2026-09-27",
+    "role": "NBT23–NBT26 2025–2026 delivery and bundled generation EEC runtime source; bounded monthly-cycle settlement"
+  },
+  {
+    "document": "SCE NBT26 MIDAS file",
+    "url": "https://edisonintl.sharepoint.com/teams/Public/Misc/Shared%20Documents/documents/Solar/Energy%20Export%20Credit%20Prices/NBT26%20MIDAS%20File.zip",
+    "retrieved": "2026-09-27",
+    "zip_sha256": "bede133b7ebe5afdb5e57152f55e17a116087b7cc82f337dbd9ea56306368957",
+    "role": "independent check that Pacific workbook Hour 1–24 corresponds to MIDAS HS0–HS23"
+  },
+  {
+    "document": "LADWP residential NEM rider",
+    "url": "https://www.ladwp.com/account/customer-service/electric-rates/residential-rates",
+    "retrieved": "2026-09-27",
+    "role": "bounded R-1A net-import cycle billing, protected credits and eligibility"
+  },
+  {
+    "document": "LADWP NEM guidelines",
+    "url": "https://www.ladwp.com/sites/default/files/documents/LADWP_Amended_Net_Energy_Metering_Guidelines_Document_January_2021_.pdf",
+    "retrieved": "2026-09-27",
+    "role": "bounded NEM net-import cycle and meter eligibility; net-export credit pricing remains unsupported"
   }
 ]

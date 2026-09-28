@@ -7,7 +7,7 @@ from datetime import date, timedelta
 import numpy as np
 import pandas as pd
 
-VERSION = 'socal-2026-09-20.1'
+VERSION = 'socal-2026-09-27.4'
 SCE_SOURCE = 'https://www.sce.com/regulatory/regulatory-information/tariff-books/rates-pricing-choices'
 LADWP_SOURCE = 'https://www.ladwp.com/account/customer-service/electric-rates/residential-rates'
 # Separate quarterly adjustment versions; base rates effective 2019-07-01.
@@ -48,6 +48,10 @@ for p in PLANS.values():
   'Requires qualifying EV, battery storage or heat-pump technology.' if s=='TOU-D-PRIME' else
   'Assigned schedule, service voltage and 11 prior monthly peaks required; reactive/standby charges excluded.' if p['utility']=='ladwp' else
   'Assigned demand class and non-CPP enrollment required; secondary service only, no optional metering or reactive charges.')
+ if p['utility']=='sce' and s=='TOU-D-PRIME':
+  p['solar_programs']=['none','approved_non_export','sce_nbt','sce_nem']
+ if p['utility']=='ladwp' and s=='R-1A':
+  p['solar_programs']=['none','approved_non_export','ladwp_nem']
 
 
 def number(value,name,low=0,high=1e9):
@@ -100,8 +104,17 @@ def eligibility(key,account,start,end):
   if a.get(field) is not True: raise ValueError(f'Confirm {field.replace("_"," ")}; special riders are unsupported.')
  if not isinstance(a.get('reference'),str) or not a['reference'].strip(): raise ValueError('Supply the bill/utility eligibility reference or explicit hypothetical assumption.')
  if a.get('generation_provider')!=u: raise ValueError('CCA generation billing is unsupported. Select an explicitly hypothetical bundled comparison, never substitute SCE automatically.')
- if a.get('solar_program') not in ('none','approved_non_export'): raise ValueError('NEM/NBT export settlement is not yet supported; do not substitute PG&E export rules.')
+ if a.get('solar_program') not in ('none','approved_non_export','sce_nbt','sce_nem','ladwp_nem'): raise ValueError('This solar-export program is unsupported; do not substitute another utility’s rules.')
  if a['solar_program']=='approved_non_export' and a.get('interconnection_confirmed') is not True: raise ValueError('Confirm approved non-export interconnection and applicable standby exemption.')
+ if a['solar_program']=='sce_nbt':
+  from .sce_nbt import validate_account
+  validate_account(key,a,start,end)
+ if a['solar_program']=='sce_nem':
+  from .sce_nem import validate_account
+  validate_account(key,a,start,end)
+ if a['solar_program']=='ladwp_nem':
+  from .ladwp_nem import validate_account
+  validate_account(key,a)
  if a.get('voltage') not in ('secondary','ladwp_4.8kv','ladwp_34.5kv'): raise ValueError('Select the verified service voltage.')
  if u=='sce' and a['voltage']!='secondary': raise ValueError('Only SCE below-2-kV rates have been loaded.')
  if a.get('phase') not in ('single','three'): raise ValueError('Select service phase.')
@@ -266,6 +279,18 @@ def bill(key,frame,account,start,end):
  p=eligibility(key,account,start,end);idx=interval_index(frame,start,end)
  imports=np.asarray(frame['grid_import_kw'],dtype=float)
  if not np.isfinite(imports).all() or (imports<0).any():raise ValueError('Imports must be nonnegative finite kW.')
+ if account['solar_program']=='sce_nbt':
+  from .sce_nbt import bill as nbt_bill
+  if 'grid_export_kw' not in frame:raise ValueError('SCE NBT requires a separate export meter channel.')
+  return nbt_bill(key,idx,imports,np.asarray(frame['grid_export_kw'],dtype=float),account,p)
+ if account['solar_program']=='sce_nem':
+  from .sce_nem import bill as nem_bill
+  if 'grid_export_kw' not in frame:raise ValueError('SCE NEM requires a separate export meter channel.')
+  return nem_bill(key,idx,imports,np.asarray(frame['grid_export_kw'],dtype=float),account,p)
+ if account['solar_program']=='ladwp_nem':
+  from .ladwp_nem import bill as nem_bill
+  if 'grid_export_kw' not in frame:raise ValueError('LADWP NEM requires a separate export meter channel.')
+  return nem_bill(key,idx,imports,np.asarray(frame['grid_export_kw'],dtype=float),account,p)
  if 'grid_export_kw' in frame and (not np.isfinite(frame.grid_export_kw).all() or (np.abs(frame.grid_export_kw)>1e-7).any()):raise ValueError('Export settlement is unsupported; exported energy cannot be silently ignored.')
  s=p['schedule'];maximum=float(imports.max())
  if s.startswith('A-1') and maximum>=30:raise ValueError('A-1 study scope requires demand below 30 kW.')

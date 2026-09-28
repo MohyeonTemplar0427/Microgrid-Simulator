@@ -4,6 +4,18 @@ The browser interface is labeled **Web UI v1.0.1**. This identifies the current
 website page design; the simulation engine snapshot, request schema, and future
 hosted deployment have separate version or configuration lifecycles.
 
+The Southern California setup offers account-confirmed SCE bundled TOU-D-PRIME
+NBT23–NBT26 billing-cycle comparisons and SCE legacy NEM 1.0/NEM-ST 2.0
+monthly-cycle comparisons from January 1, 2025 through September 17, 2026.
+NBT uses vintage-specific export prices, dated import components and separate
+delivery, generation and ACC Plus credit balances. Legacy NEM uses retail TOU
+netting and, for NEM 2.0, interval nonbypassable charges. Annual true-up and
+paired storage on legacy NEM are outside scope. The same local page is used by
+the desktop GUI. See [Southern California billing](Southern_California.md) for
+exact account qualifications and date boundaries. LADWP R-1A also offers a
+bounded NEM net-import cycle with a confirmed opening credit and saved credit
+ledger; net-export cycles and R-1B NEM remain unsupported.
+
 ## Current server transport
 
 The launcher now uses Waitress. Explicit hosted mode prepares a same-host HTTPS

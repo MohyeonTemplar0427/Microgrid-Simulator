@@ -15,8 +15,11 @@ def capabilities():
  from ..billing.la_coverage import coverage
  return {'schema_version':6,'tariff_data_version':VERSION,'plans':list(PLANS.values()),
  'la_county_coverage':coverage(),
- 'solar_programs':[{'id':'none','label':'No solar'},{'id':'approved_non_export','label':'Approved non-export PV · self-consumption only'}],
- 'unsupported':['SCE CCA generation tariffs','NEM/NBT export credits and true-up','CARE/FERA/medical or other special riders','CPP events','Reactive-power charges'],
+ 'solar_programs':[{'id':'none','label':'No solar'},{'id':'approved_non_export','label':'Approved non-export PV · self-consumption only'},
+                   {'id':'sce_nbt','label':'SCE bundled NBT23–NBT26 · confirmed billing cycle'},
+                   {'id':'sce_nem','label':'SCE legacy NEM 1.0 / 2.0 · monthly cycle'},
+                   {'id':'ladwp_nem','label':'LADWP R-1A NEM · net-import cycle'}],
+ 'unsupported':['SCE CCA generation tariffs','SCE NBT annual true-up; SCE legacy NEM annual true-up, paired storage and CCA generation; LADWP NEM net-export and R-1B cycles','CARE/FERA/medical or other special riders','CPP events','Reactive-power charges'],
  'baseline_regions':['5','6','8','9','10','13','14','15','16']}
 
 
@@ -47,6 +50,8 @@ def validate(r):
  if r['mode']=='actual_service' and (resolution.get('status')!='verified' or resolution.get('delivery_utility')!=p['utility']):raise ValueError('Actual service requires saved bill/utility-confirmed delivery.')
  if r['mode']=='hypothetical_bundled' and p['utility'] not in [c['utility_id'] for c in resolution.get('delivery_candidates',[])]+[resolution.get('delivery_utility')]:raise ValueError('Selected comparison utility must match the resolved location or confirmed override.')
  if r['battery'] is not None:Battery(**r['battery'])
+ if r['account']['solar_program']=='sce_nem' and r['battery'] is not None:
+  raise ValueError('SCE legacy NEM paired-storage settlement is not implemented.')
  if p['utility']=='gwp' and r['battery'] is not None and r['account'].get('storage_schedule_confirmed') is not True:
   raise ValueError('Confirm GWP accepts this storage installation on the selected ordinary import schedule without a standby rider.')
  if p['utility']=='pwp' and r['battery'] is not None and r['account'].get('pwp_storage_confirmed') is not True:
@@ -59,7 +64,12 @@ def validate(r):
  solar=r['solar']
  if not isinstance(solar,dict) or set(solar)!={'capacity_kw','tilt','azimuth'}:raise ValueError('Specify PV capacity, tilt and azimuth.')
  number(solar['capacity_kw'],'PV DC kW',0,10000);number(solar['tilt'],'PV tilt',0,90);number(solar['azimuth'],'PV azimuth',0,360)
- if solar['capacity_kw']>0 and r['account']['solar_program']!='approved_non_export':raise ValueError('PV requires confirmed non-export interconnection; export settlement is unsupported.')
+ if solar['capacity_kw']>0 and r['account']['solar_program'] not in ('approved_non_export','sce_nbt','sce_nem','ladwp_nem'):
+  raise ValueError('PV requires an executable, account-confirmed solar program.')
+ if r['account']['solar_program'] in ('sce_nbt','sce_nem','ladwp_nem') and solar['capacity_kw']<=0:
+  raise ValueError('Solar export billing requires a renewable generator.')
+ if r['account']['solar_program']=='ladwp_nem' and solar['capacity_kw']>1000:
+  raise ValueError('LADWP NEM is limited to at most 1 MW of eligible generation.')
  # Validate complete input and account classification before durable submission.
  frame=inputs(r);test=frame.assign(grid_import_kw=frame.native_load_kw,grid_export_kw=0.)
  bill(r['tariff_id'],test,billing_account(r),r['start_date'],r['end_date'])
@@ -105,7 +115,7 @@ def execute(directory,r):
    weather_source='Explicit clear-sky study assumption').build_detailed(grid)
   frame['pv_available_kw']=pv.pv_available_kw.to_numpy()
  result=optimize(r['tariff_id'],frame,billing_account(r),r['start_date'],r['end_date'],r['battery'],r['degradation_cost_per_kWh'],include_degradation_in_optimization=r.get('include_degradation_in_optimization',False))
- tables=[];rows=[];costs=[];bills={};versions=[]
+ tables=[];rows=[];costs=[];bills={};versions=[];credit_ledgers=[]
  if solar['capacity_kw']:tables=[('weather','Clear-sky study weather',weather),('pv','PV model diagnostics',pv.diagnostics)]
  scenarios=[('grid_only','baseline_bill')]
  if solar['capacity_kw']:scenarios.append(('pv_only','solar_bill'))
@@ -114,6 +124,8 @@ def execute(directory,r):
   b=result[key];wear=result['degradation_cost'] if key=='bill' else 0
   rows.append({'scenario':name,'utility_bill':b['total'],'degradation_cost':wear,'total_explicit_operating_cost':b['total']+wear,'bill_savings_vs_grid':result['baseline_bill']['total']-b['total'],'savings_vs_grid':result['baseline_bill']['total']-b['total']-wear})
   versions.extend({'scenario':name,**v} for v in b.get('rate_versions',[]))
+  if b.get('credit_ledger'):
+   credit_ledgers.extend({'scenario':name,'component':k,'amount':v} for k,v in b['credit_ledger'].items())
   costs.extend({'scenario':name,'component':k,'amount':v} for k,v in b['line_items'].items());bills[name]=b
  warnings=result['bill']['warnings']+[
   'Battery wear is included in optimization.' if r.get('include_degradation_in_optimization',False) else 'Storage dispatch minimizes the utility bill; estimated battery wear is reported separately.',
@@ -121,4 +133,5 @@ def execute(directory,r):
  if not solar['capacity_kw']:warnings=[w for w in warnings if not w.startswith('PV uses')]
  if r['mode']=='hypothetical_bundled':warnings.insert(0,'HYPOTHETICAL bundled generation comparison — account enrollment and eligibility are study assumptions, not an actual customer bill.')
  if versions:tables.append(('rate_versions','Applied rate versions',pd.DataFrame(versions)))
+ if credit_ledgers:tables.append(('solar_credit_ledger','Solar credit ledger',pd.DataFrame(credit_ledgers)))
  save_results(directory,r,[('comparison','Scenario operating costs',pd.DataFrame(rows)),('costs','Itemized bills',pd.DataFrame(costs)),('dispatch','15-minute dispatch',result['dispatch'])]+tables,warnings,bills=bills,tariff_data_version=VERSION,objective_reconciliation_error=result['objective_gap'],solar_program=r['account']['solar_program'])

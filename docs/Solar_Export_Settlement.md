@@ -1,12 +1,12 @@
 # Solar export settlement implementation
 
-Status reviewed 2026-09-23. **The request to cover every utility is not complete.**
+Status reviewed 2026-09-27. **The request to cover every utility is not complete.**
 The [non-PG&E program consolidation](Solar_Export_Program_Consolidation.md)
 now records source-backed program families for Bay Area and Southern California
 utilities and CCAs. These are identified programs, not enabled billing plans.
-The current executable adapter is a bounded monthly PG&E bundled residential
-Solar Billing Plan (NBT) comparison. It is not a complete annual bill or legacy
-NEM implementation. Existing import-only utilities remain import-only.
+Executable adapters include bounded PG&E and SCE NBT comparisons and one
+LADWP residential R-1A NEM net-import billing cycle. These are not complete
+annual bills or universal solar settlement. Other import-only utilities remain import-only.
 See [the Bay Area coverage audit](Bay_Area_Solar_Coverage_Audit.md) for the
 provider inventory, code evidence and completion criteria.
 
@@ -136,8 +136,8 @@ annual interval billing or annual dispatch.
 | Utility/provider | Required work before enabling full settlement |
 |---|---|
 | PG&E | Full-year interval billing/dispatch with verified dated component rates and export credits; NEM/NEM2; commercial and special accounts |
-| SCE | Import component and EEC vintage mapping, monthly/annual NBT, NEM/NEM-ST, taxes and GUI/web integration |
-| LADWP | OAS-specific NEM netting, credit restrictions, minimum bills and termination |
+| SCE | Bounded bundled residential TOU-D-PRIME NBT23–NBT26 and legacy NEM 1.0/NEM-ST 2.0 cycles are implemented for 2025–September 17, 2026; extend pre-2025 service rates, other schedules, annual true-up, NSC, paired-storage export, and jurisdiction-specific tax reconciliation |
+| LADWP | R-1A net-import cycle, protected minimum and confirmed opening-credit use are implemented; add net-export credit pricing, R-1B TOU allocation, automatic multi-cycle carryover, termination and bill reconciliation |
 | CleanPowerSF, Peninsula, SVCE, SJCE, Ava | Provider-specific generation program plus separate PG&E delivery settlement; do not use PG&E generation credits |
 | Hetch Hetchy | Confirm actual connection/eligibility; PG&E WDT-connected nonmunicipal accounts are not automatically eligible for SFPUC NEM |
 | AMP | Adopted current ERG rider, tax ordering, carryover/payout and legacy NEM |
