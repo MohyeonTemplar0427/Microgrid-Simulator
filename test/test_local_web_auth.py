@@ -135,15 +135,17 @@ def test_guest_study_is_private_then_saved_after_sign_in(tmp_path):
         assert call('/api/studies/'+sid+'/save', {}, both)[0] == 429
         assert call('/api/studies/'+sid, headers=guest)[0] == 200
         app.store.max_owner_run_bytes = prior_cap
-        status, saved, _ = call('/api/studies/'+sid+'/save', {}, both)
+        status, saved, _ = call('/api/studies/'+sid+'/save', {'name': 'Guest solar result'}, both)
         assert status == 200 and saved['owner_id'] == digest('alice')
         assert saved['saved'] == 1 and saved['expires_at'] is None
+        assert saved['name'] == 'Guest solar result' and saved['request']['name'] == saved['name']
         status, member_study, _ = call('/api/studies', request, both)
         assert status == 202 and member_study['saved'] == 0
         write_json(app.store.directory/'runs'/member_study['id']/'result.json', {'tables': []})
         app.store.finish(member_study['id'])
-        status, retained, _ = call('/api/studies/'+member_study['id']+'/save', {}, both)
+        status, retained, _ = call('/api/studies/'+member_study['id']+'/save', {'name': 'Member result'}, both)
         assert status == 200 and retained['saved'] == 1 and retained['expires_at'] is None
+        assert retained['name'] == 'Member result'
         status, expiring, _ = call('/api/studies', request, both)
         assert status == 202 and expiring['saved'] == 0
         write_json(app.store.directory/'runs'/expiring['id']/'result.json', {'tables': []})

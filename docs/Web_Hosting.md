@@ -99,7 +99,8 @@ limits of 20 per guest and 100 globally per UTC day. These are configurable thro
 environment file. Sign-in through the configured OIDC provider is required to
 save a guest result to a profile; signed-in users can save their own temporary
 results directly.
-The browser keeps the pending study ID through that redirect, and the server
+The browser asks for the result name when Save is selected and keeps the pending
+study ID and name through that redirect. The server
 requires both the signed-in session and original guest cookie to transfer it.
 Downloads create a ZIP from the saved CSV tables only on request; the temporary
 ZIP is removed after transfer. The API permits one ZIP transfer at a time and

@@ -26,8 +26,12 @@ provider inventory, code evidence and completion criteria.
   E-ELEC schedule as a counterfactual, not an asserted no-PV account assignment.
 - Renewable-only charging, charge/discharge and import/export exclusivity,
   export-power limit, efficiency losses, throughput wear, cyclic minimum SOC.
-  Dispatch minimizes cash due plus wear for this cycle. Unused closing credits
-  have no assumed terminal cash value, so this is not annual optimal dispatch.
+  Dispatch minimizes cycle cost before inherited credits, optionally adding
+  wear. The actual bill then applies inherited credits and reports the closing
+  bank. Changing only the inherited balance does not change battery dispatch.
+  Newly earned export credits can still affect dispatch when usable in this
+  cycle; unused closing credits have no assumed terminal cash value. This is
+  not annual optimal dispatch or necessarily the smallest current cash payment.
 - Shared credit restrictions in billing and optimization, with final numerical
   bill reconciliation. Web form, durable worker, result tables and CSV exports.
 
@@ -142,7 +146,7 @@ annual interval billing or annual dispatch.
 | Hetch Hetchy | Confirm actual connection/eligibility; PG&E WDT-connected nonmunicipal accounts are not automatically eligible for SFPUC NEM |
 | AMP | Adopted current ERG rider, tax ordering, carryover/payout and legacy NEM |
 | SVP | NM/NEM program eligibility, retail netting, annual NSC/REC and aggregation exclusions |
-| BWP | New 2026 net billing versus grandfathered NEM, ACOE, tax ordering and annual payout |
+| BWP | Residential EV TOU new net billing is bounded to one confirmed July 1–September 20, 2026 cycle. Import energy and ECAC are reduced by solar dollar credits; customer/service-size charges, taxes and state surcharge remain. The optimizer uses newly earned credits but excludes inherited balances. Add other schedules, legacy NEM, automatic linked cycles and optional annual cash-out separately. |
 | PWP/GWP/ALW/IPU | Individual adopted export riders, enrollment, credit restrictions, taxes and annual settlement |
 
 Research links: [SCE export pricing](https://www.sce.com/customer-service-center/help-center/solar/solar-billing-plan/understanding-export-pricing),

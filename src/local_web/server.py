@@ -286,19 +286,24 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 }:
                     application.store.admit_guest_interaction(self.owner_id)
                 save = re.fullmatch(r"/api/studies/([0-9a-f]{32})/save", urlsplit(self.path).path)
-                if save and allow_guests:
-                    if body != {}:
-                        raise ValueError("Send an empty save request.")
+                if save:
+                    if not isinstance(body, dict) or set(body) - {"name"}:
+                        raise ValueError("Supply only an optional study name.")
+                    name = body.get("name")
+                    if auth is None:
+                        return self.respond(200, application.store.save_local_study(save[1], name))
                     if self.is_guest:
                         raise AuthenticationRequired("Sign in to save this study to your profile.")
-                    guest, _ = auth.guest(self.headers)
-                    if guest is not None:
-                        try:
-                            saved = application.store.save_guest_study(save[1], guest["owner_id"], self.owner_id)
-                            return self.respond(200, saved)
-                        except FileNotFoundError:
-                            pass
-                    return self.respond(200, application.store.save_member_study(save[1], self.owner_id))
+                    if allow_guests:
+                        guest, _ = auth.guest(self.headers)
+                        if guest is not None:
+                            try:
+                                saved = application.store.save_guest_study(
+                                    save[1], guest["owner_id"], self.owner_id, name)
+                                return self.respond(200, saved)
+                            except FileNotFoundError:
+                                pass
+                    return self.respond(200, application.store.save_member_study(save[1], self.owner_id, name))
                 cancel = re.fullmatch(r"/api/studies/([0-9a-f]{32})/cancel", urlsplit(self.path).path)
                 if cancel:
                     if body != {}:
@@ -314,10 +319,11 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 if urlsplit(self.path).path == "/api/v1/pge/annual-studies":
                     return self.respond(202, application.submit_pge_annual(body, self.owner_id,
                                                                            temporary=allow_guests))
+                draft = parse_qs(urlsplit(self.path).query).get("draft") == ["1"]
                 if urlsplit(self.path).path == "/api/v1/socal/studies":
-                    return self.respond(202, application.submit_socal(body, self.owner_id, temporary=allow_guests))
+                    return self.respond(202, application.submit_socal(body, self.owner_id, temporary=allow_guests or draft))
                 if urlsplit(self.path).path == "/api/v1/municipal/studies":
-                    return self.respond(202, application.submit_municipal(body, self.owner_id, temporary=allow_guests))
+                    return self.respond(202, application.submit_municipal(body, self.owner_id, temporary=allow_guests or draft))
                 municipal_routes = {"/api/v1/utility-resolution": "utility-resolution",
                                     "/api/v1/municipal/eligibility": "municipal-eligibility",
                                     "/api/v1/municipal/bill": "municipal-bill"}
@@ -348,7 +354,7 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                     if isinstance(body, dict) and body.get("tariff_id") not in {None, *(t["id"] for t in application.capabilities["tariffs"])}:
                         raise ValueError("Choose a supported tariff.")
                     return self.respond(202, application.store.submit(body, application.engine, self.owner_id,
-                                                                       temporary=allow_guests))
+                                                                       temporary=allow_guests or draft))
                 raise FileNotFoundError("Resource not found.")
             except AuthenticationRequired as exc:
                 self.respond(401, {"error": str(exc)})

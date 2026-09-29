@@ -34,6 +34,13 @@ main{max-width:1540px;margin:auto;padding:42px 5% 60px}.intro{display:flex;justi
 
 .location-note-asterisk{color:#c62828;font-weight:700}
 
+#save-name-dialog{width:min(440px,calc(100vw - 32px));border:1px solid var(--line);border-radius:14px;padding:26px;background:#fff;color:var(--ink);box-shadow:0 18px 60px #172d3733}
+#save-name-dialog::backdrop{background:#172d3766}
+#save-name-dialog h2{margin-bottom:8px}
+#save-name-dialog label{margin:20px 0}
+.dialog-actions{display:flex;justify-content:flex-end;gap:10px}
+.dialog-actions button{width:auto;min-width:100px}
+
 
 #municipal-eligibility { white-space: pre-line; }
 [data-municipal] fieldset { margin: 1rem 0; }

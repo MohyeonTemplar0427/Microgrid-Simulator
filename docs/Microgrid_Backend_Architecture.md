@@ -16,6 +16,15 @@ Combined carbon-and-cost dispatch uses the same wear choice but also includes
 the user's carbon weight. A customer charge that is fixed for the selected
 plan does not alter dispatch.
 
+For bounded PG&E and SCE NBT solar studies, carried-in credit balances are
+accounting inputs rather than dispatch incentives. The optimizer evaluates
+the applicable cycle charges and newly earned credits with inherited balances
+set to zero; the authoritative bill then applies the confirmed inherited
+balances and records the closing bank. A change only to the opening bank must
+not change the battery schedule. Because unused newly earned credits have no
+modeled future value, this operating-cost proxy does not claim the minimum
+current cash payment or a full-year optimum.
+
 PG&E B-19/B-20 Option S uses two separate monthly maximum-demand measurements:
 one over all hours and one excluding 09:00–14:00 local time. Its summer peak,
 summer part-peak, and winter peak demand rates apply to each local day's

@@ -263,7 +263,7 @@ separate locked dependency environment and a broader saved-study acceptance set.
 | GET | `/api/studies/<id>/tables/<table>?offset=0&limit=100` | Page of numeric result data |
 | GET | `/api/studies/<id>/tables/<table>.csv` | Full table download |
 | GET | `/api/studies/<id>/tables.zip` | On-demand ZIP of CSV result tables and manifest |
-| POST | `/api/studies/<id>/save` | In guest-enabled OIDC mode, make a completed temporary study permanent; guest claims require sign-in and its original cookie |
+| POST | `/api/studies/<id>/save` | Save a completed draft with optional `{name}` (1–120 characters); hosted guest claims require sign-in and the original cookie |
 | POST | `/api/studies/<id>/delete` | Delete an owned finished study and its run files; send `{}`; active studies must be cancelled first |
 | GET | `/api/studies/<id>/request.json` | Saved request download |
 | GET | `/api/studies/<id>/result.json` | Result/provenance manifest download |
@@ -377,7 +377,7 @@ The reset button is labeled “Reset study inputs”; it does not delete saved r
 
 ## Multi-step setup
 
-The form shows nine setup screens (study name, location, electricity service,
+The form shows eight setup screens (location, electricity service,
 simulation time range, PV, inverter, Sunlight & weather, battery/ESS, economics)
 followed by Review & run. Back/Next preserves values in the same form; visited
 steps can be revisited from the step navigation. Reset and loading saved settings
@@ -385,7 +385,11 @@ start at the first applicable step. Legacy CSV studies skip location-only steps.
 Native field constraints and key date/weather/battery checks run before advancing;
 submission rechecks all steps and reveals the first invalid one. The review screen
 summarizes settings and retains load and strategy controls. Inputs remain in memory
-while navigating; they are durably saved only when a study is submitted.
+while navigating. Run creates an unnamed temporary result; after completion,
+**Save result** asks for a study name and retains the result. Unsaved local and
+hosted results expire after the configured temporary-result period (24 hours by
+default). The original run request keeps its generated placeholder name for
+provenance; study and settings API responses show the chosen saved title.
 
 
 ### Explicit defaults

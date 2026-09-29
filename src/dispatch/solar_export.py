@@ -33,11 +33,12 @@ def compare(frame,account,*,export_limit_kw,battery=None,wear_per_kwh=0.,opening
         bill=pge_export.bill(out,account,opening)
         wear=float(.25*np.sum(charge+discharge)*wear_per_kwh)
         cost=bill['amount_due']+wear
-        optimized_cost=bill['amount_due']+(wear if include_degradation_in_optimization else 0)
+        dispatch_bill=pge_export.bill(out,account,CreditBalance()) if objective is not None else bill
+        optimized_cost=dispatch_bill['amount_due']+(wear if include_degradation_in_optimization else 0)
         gap=None if objective is None else abs(optimized_cost-objective)
         if gap is not None and gap>.02:raise ValueError('Export ledger/dispatch objective does not reconcile.')
         results[name]=dict(bill=bill,dispatch=out,degradation_cost=wear,operating_cost=cost,objective_gap=gap,
-            optimization_scope=('One billing cycle cash due plus throughput wear' if include_degradation_in_optimization else 'One billing cycle cash due only')+'; estimated battery wear is reported separately. Unused closing credits have no assumed cash value. Not annual optimality or lifecycle payback.')
+            optimization_scope=('One billing cycle cost before inherited credits plus throughput wear' if include_degradation_in_optimization else 'One billing cycle cost before inherited credits')+'; opening credits affect the reported bill and closing balance, not battery dispatch. Unused newly earned credits have no assumed terminal cash value. Not annual optimality or lifecycle payback.')
     zeros=np.zeros(n)
     record('grid_only',load,zeros,zeros,zeros,zeros,zeros)
     direct=np.minimum(load,pv);surplus=np.minimum(np.maximum(pv-load,0),export_limit_kw)
@@ -58,7 +59,7 @@ def compare(frame,account,*,export_limit_kw,battery=None,wear_per_kwh=0.,opening
           energy>=b.minimum_energy_kWh,energy<=b.maximum_energy_kWh,
           energy[1:]==energy[:-1]+.25*(b.charge_efficiency*charge-discharge/b.discharge_efficiency)]
         charges,earned=pge_export.charge_expressions(imp,exp,rates,convex=True)
-        objective=monthly_credit_objective(charges,earned,opening,constraints)+(wear_per_kwh if include_degradation_in_optimization else 0)*.25*cp.sum(charge+discharge)
+        objective=monthly_credit_objective(charges,earned,CreditBalance(),constraints)+(wear_per_kwh if include_degradation_in_optimization else 0)*.25*cp.sum(charge+discharge)
         problem=cp.Problem(cp.Minimize(objective),constraints)
         problem.solve(solver='SCIPY',scipy_options={'mip_rel_gap':1e-8})
         if problem.status!='optimal':raise ValueError('Export dispatch did not reach optimality: '+str(problem.status))
