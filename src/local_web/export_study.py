@@ -15,7 +15,7 @@ def validate(request):
     if request['schema_version'] not in (2,3) or request['site']['utility']!='pge' or request['tariff_id']!=TARIFF:raise ValueError('Export study currently requires PG&E bundled E-ELEC residential site inputs.')
     if request.get('site_profile',{}).get('subtype') not in ('house','apartment_unit'):raise ValueError('Export study requires an individually metered residence.')
     if request['timestep_minutes']!=15:raise ValueError('Solar export studies require 15-minute inputs.')
-    if request['carbon_weight']!=0:raise ValueError('This export comparison optimizes current bill cash due, with optional battery wear; set carbon weight to zero.')
+    if request['carbon_weight']!=0:raise ValueError('This export comparison optimizes cycle cost before inherited credits, with optional battery wear; set carbon weight to zero.')
     nonnegative(config['export_limit_kw'],'Confirmed export limit')
     CreditBalance(**config['opening_balance'])
     start=pd.Timestamp(request['start_date'],tz=request['timezone']);end=pd.Timestamp(request['end_date'],tz=request['timezone'])+pd.DateOffset(days=1)

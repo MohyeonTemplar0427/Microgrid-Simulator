@@ -1,5 +1,5 @@
 "use strict";
-// Account-specific controls embedded in the common nine-step wizard.
+// Account-specific controls embedded in the common study wizard.
 (() => {
   let caps, resolution=null, revision=0, csvText=null;
   const shared=new Set(['name','latitude','longitude','utility','start_date','end_date','capacity_kWh','energy_kWh','max_charge_kw','max_discharge_kw','SOC_min','SOC_max','charge_efficiency','discharge_efficiency','degradation_cost_per_kWh']);
@@ -21,7 +21,7 @@
       <label class="checkbox"><input name="delivery_confirmed" type="checkbox"> I verified electricity delivery from the stated evidence.</label></div>
 <button type="button" class="secondary" id="municipal-resolve">Save account confirmation</button><p id="municipal-resolution" class="hint" role="status"></p>`);
   panel(8,`
-      <label hidden>Customer class from Step 2<select name="customer_class"><option value="commercial">Commercial</option><option value="residential">Residential dwelling</option><option value="industrial">Industrial</option></select></label>
+      <label hidden>Customer class from Step 1<select name="customer_class"><option value="commercial">Commercial</option><option value="residential">Residential dwelling</option><option value="industrial">Industrial</option></select></label>
       <label>Billing Plan<select name="tariff_id"></select></label><p class="hint" id="municipal-coverage"></p>
       <div class="form-grid"><label>Service phase<select name="phase"><option value="single">Single phase</option><option value="three">Three phase</option></select></label><label>Service voltage<select name="voltage"><option value="secondary">Secondary</option><option value="primary_12kv">12 kV primary</option></select></label></div>
       <label class="checkbox"><input name="rate_confirmed" type="checkbox"> Existing schedule is verified, or explicitly assumed for an alternative-location scenario.</label>
@@ -179,14 +179,14 @@
     let load;
     if(f('load_mode').value==='csv'){if(!csvText)throw new Error('Choose a load CSV.');load={mode:'csv',csv:csvText};}
     else{load={mode:f('load_mode').value,base_kw:numeric('base_kw')};if(load.mode==='daily_peak')for(const k of ['peak_kw','peak_start_hour','peak_end_hour'])load[k]=numeric(k);}
-    return api('/api/v1/municipal/studies',{schema_version:4,carbon:carbonSettings(),grid_only:gridOnly(),site_profile:siteProfile(),name:f('name').value,resolution_id:savedResolution(),mode:f('mode').value,arrangement:arrangement(),account:account(),start_date:f('start_date').value,end_date:f('end_date').value,timezone:field('timezone').value,timestep_minutes:Number(field('timestep_minutes').value),battery:gridOnly()?null:battery,load,degradation_cost_per_kWh:gridOnly()?0:numeric('degradation_cost_per_kWh'),include_degradation_in_optimization:!gridOnly()&&field('include_degradation_in_optimization').checked});
+    return api('/api/v1/municipal/studies?draft=1',{schema_version:4,carbon:carbonSettings(),grid_only:gridOnly(),site_profile:siteProfile(),name:f('name').value,resolution_id:savedResolution(),mode:f('mode').value,arrangement:arrangement(),account:account(),start_date:f('start_date').value,end_date:f('end_date').value,timezone:field('timezone').value,timestep_minutes:Number(field('timestep_minutes').value),battery:gridOnly()?null:battery,load,degradation_cost_per_kWh:gridOnly()?0:numeric('degradation_cost_per_kWh'),include_degradation_in_optimization:!gridOnly()&&field('include_degradation_in_optimization').checked});
   }
   function validate(page){
     if(!active())return true;
     try{
       const i=Number(page.dataset.step);
       if(i===2){
-        if(!resolution)throw new Error('Resolve the Step 2 location first.');
+        if(!resolution)throw new Error('Resolve the Step 1 location first.');
         if(f('mode').value==='actual_service'&&(resolution.status!=='verified'||resolution.delivery_utility!==f('utility').value))throw new Error('Save matching bill or utility confirmation, or explicitly choose a hypothetical scenario.');
       }
       if(i===3){if(field('timestep_minutes').value!=='15'||field('timezone').value!=='America/Los_Angeles')throw new Error('Municipal billing requires 15-minute intervals and America/Los_Angeles.');if(!f('cycle_confirmed').checked)throw new Error('Confirm the complete billing cycle.');}

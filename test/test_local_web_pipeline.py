@@ -47,6 +47,38 @@ def until(read, predicate):
     pytest.fail(f"Pipeline timed out: {value}")
 
 
+def test_local_draft_gets_name_only_when_result_is_saved(tmp_path):
+    from urllib.error import HTTPError
+    from src.local_web.worker import write_json
+
+    with api_service(tmp_path) as (app, call):
+        caps = call('/api/capabilities')[1]
+        request = deepcopy(caps['defaults'])
+        request['name'] = 'Untitled study'
+        code, draft = call('/api/studies?draft=1', request, caps['token'])
+        assert code == 202 and draft['saved'] == 0
+        assert draft['name'] == 'Untitled study'
+        write_json(app.store.directory/'runs'/draft['id']/'result.json', {'tables': []})
+        app.store.finish(draft['id'])
+        assert call('/api/studies/'+draft['id'])[1]['expires_at'] is not None
+        with pytest.raises(HTTPError) as invalid:
+            call('/api/studies/'+draft['id']+'/save', {'name': '   '}, caps['token'])
+        assert invalid.value.code == 400
+        assert call('/api/studies/'+draft['id'])[1]['saved'] == 0
+
+        code, saved = call('/api/studies/'+draft['id']+'/save',
+                           {'name': '  My Burbank solar comparison  '}, caps['token'])
+        assert code == 200 and saved['saved'] == 1
+        assert saved['name'] == 'My Burbank solar comparison'
+        assert saved['expires_at'] is None
+        assert saved['request']['name'] == saved['name']
+        assert call('/api/studies/'+draft['id']+'/request.json')[1]['name'] == saved['name']
+        assert call('/api/studies')[1][0]['name'] == saved['name']
+        # The original calculation input remains immutable on disk.
+        original = json.loads((app.store.directory/'runs'/draft['id']/'request.json').read_text())
+        assert original['name'] == 'Untitled study'
+
+
 def test_external_process_delivers_tables_after_api_restart(tmp_path):
     process = None
     try:

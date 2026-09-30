@@ -22,7 +22,7 @@ def test_capabilities_do_not_advertise_unimplemented_export_billing():
     published = capabilities()["solar_export_programs"]
     assert {p["id"] for p in published} == {p.id for p in PROGRAMS}
     enabled = [p for p in published if p["simulation_status"] != "research_only"]
-    assert [p["id"] for p in enabled] == ["pge_nbt_monthly", "sce_nbt", "sce_legacy_nem", "ladwp_nem"]
+    assert [p["id"] for p in enabled] == ["pge_nbt_monthly", "sce_nbt", "sce_legacy_nem", "ladwp_nem", "bwp_net_billing"]
     assert {p["generation_provider"] for p in published if p["family"].startswith("cca_")} >= {
         "cleanpowersf", "peninsula", "svce", "sjce", "ava", "mce", "sonoma", "cpa", "ocpa"
     }

@@ -1,6 +1,8 @@
 """Waitress-hosted browser/API with explicit local or HTTPS-proxy mode."""
 
 import argparse
+import base64
+import binascii
 from copy import deepcopy
 from email.message import Message
 from http import HTTPStatus
@@ -162,7 +164,7 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
             self.owner_id = None
             self.csrf = token
             self.is_guest = False
-            public = urlsplit(self.path).path in {"/", "/app.js", "/municipal.js", "/socal.js", "/style.css", "/auth/login", "/auth/callback"}
+            public = urlsplit(self.path).path in {"/", "/app.js", "/municipal.js", "/socal.js", "/bills.js", "/style.css", "/auth/login", "/auth/callback"}
             if auth is not None and not public:
                 session = None
                 if allow_guests and auth.cookie_value(self.headers, auth.COOKIE):
@@ -196,9 +198,9 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
 
         def get_route(self):
             url = urlsplit(self.path)
-            if url.path in ("/", "/app.js", "/municipal.js", "/socal.js", "/style.css"):
-                name = {"/": "index.html", "/app.js": "app.js", "/municipal.js": "municipal.js", "/socal.js": "socal.js", "/style.css": "style.css"}[url.path]
-                mime = {"index.html": "text/html; charset=utf-8", "app.js": "text/javascript; charset=utf-8", "municipal.js": "text/javascript; charset=utf-8", "socal.js": "text/javascript; charset=utf-8", "style.css": "text/css; charset=utf-8"}[name]
+            if url.path in ("/", "/app.js", "/municipal.js", "/socal.js", "/bills.js", "/style.css"):
+                name = {"/": "index.html", "/app.js": "app.js", "/municipal.js": "municipal.js", "/socal.js": "socal.js", "/bills.js": "bills.js", "/style.css": "style.css"}[url.path]
+                mime = {"index.html": "text/html; charset=utf-8", "app.js": "text/javascript; charset=utf-8", "municipal.js": "text/javascript; charset=utf-8", "socal.js": "text/javascript; charset=utf-8", "bills.js": "text/javascript; charset=utf-8", "style.css": "text/css; charset=utf-8"}[name]
                 return self.respond(200, (STATIC / name).read_bytes(), mime)
             if url.path == "/auth/login" and auth is not None:
                 try:
@@ -279,6 +281,33 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 if not 0 < length <= MAX_BODY:
                     raise ValueError("Request must be nonempty and at most 20 MB.")
                 body = json.loads(self.rfile.read(length))
+                bill_path = urlsplit(self.path).path
+                if bill_path in {"/api/v1/bills/extract", "/api/v1/bills/review", "/api/v1/bills/analyze"}:
+                    # Raw PDFs are processed in memory and never enter the
+                    # dataset/run store, including when called from the browser.
+                    if self.is_guest:
+                        raise AuthenticationRequired("Sign in before analyzing a private bill.")
+                    if not isinstance(body, dict):
+                        raise ValueError("Supply a bill-analysis JSON object.")
+                    if bill_path.endswith("/extract"):
+                        if set(body) != {"pdf_base64"} or not isinstance(body["pdf_base64"], str):
+                            raise ValueError("Supply only pdf_base64 for extraction.")
+                        try:
+                            content = base64.b64decode(body["pdf_base64"], validate=True)
+                        except (binascii.Error, ValueError) as exc:
+                            raise ValueError("pdf_base64 must contain valid base64 PDF bytes.") from exc
+                        from ..bill_analysis import extract_bill
+                        return self.respond(200, application.interactive(extract_bill, content))
+                    if bill_path.endswith("/review"):
+                        if set(body) != {"draft", "corrections", "approve"} or not isinstance(body["approve"], bool):
+                            raise ValueError("Supply draft, corrections and approve.")
+                        from ..bill_analysis import apply_corrections
+                        return self.respond(200, apply_corrections(body["draft"], body["corrections"],
+                                                                    approve=body["approve"]))
+                    if set(body) != {"bills"}:
+                        raise ValueError("Supply only approved bills for analysis.")
+                    from ..bill_analysis import analyze_bills
+                    return self.respond(200, analyze_bills(body["bills"]))
                 if allow_guests and self.is_guest and urlsplit(self.path).path in {
                     "/api/location", "/api/weather", "/api/utilities", "/api/ess/resolve",
                     "/api/solar/optimize", "/api/v1/utility-resolution",
@@ -286,19 +315,24 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 }:
                     application.store.admit_guest_interaction(self.owner_id)
                 save = re.fullmatch(r"/api/studies/([0-9a-f]{32})/save", urlsplit(self.path).path)
-                if save and allow_guests:
-                    if body != {}:
-                        raise ValueError("Send an empty save request.")
+                if save:
+                    if not isinstance(body, dict) or set(body) - {"name"}:
+                        raise ValueError("Supply only an optional study name.")
+                    name = body.get("name")
+                    if auth is None:
+                        return self.respond(200, application.store.save_local_study(save[1], name))
                     if self.is_guest:
                         raise AuthenticationRequired("Sign in to save this study to your profile.")
-                    guest, _ = auth.guest(self.headers)
-                    if guest is not None:
-                        try:
-                            saved = application.store.save_guest_study(save[1], guest["owner_id"], self.owner_id)
-                            return self.respond(200, saved)
-                        except FileNotFoundError:
-                            pass
-                    return self.respond(200, application.store.save_member_study(save[1], self.owner_id))
+                    if allow_guests:
+                        guest, _ = auth.guest(self.headers)
+                        if guest is not None:
+                            try:
+                                saved = application.store.save_guest_study(
+                                    save[1], guest["owner_id"], self.owner_id, name)
+                                return self.respond(200, saved)
+                            except FileNotFoundError:
+                                pass
+                    return self.respond(200, application.store.save_member_study(save[1], self.owner_id, name))
                 cancel = re.fullmatch(r"/api/studies/([0-9a-f]{32})/cancel", urlsplit(self.path).path)
                 if cancel:
                     if body != {}:
@@ -314,10 +348,11 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 if urlsplit(self.path).path == "/api/v1/pge/annual-studies":
                     return self.respond(202, application.submit_pge_annual(body, self.owner_id,
                                                                            temporary=allow_guests))
+                draft = parse_qs(urlsplit(self.path).query).get("draft") == ["1"]
                 if urlsplit(self.path).path == "/api/v1/socal/studies":
-                    return self.respond(202, application.submit_socal(body, self.owner_id, temporary=allow_guests))
+                    return self.respond(202, application.submit_socal(body, self.owner_id, temporary=allow_guests or draft))
                 if urlsplit(self.path).path == "/api/v1/municipal/studies":
-                    return self.respond(202, application.submit_municipal(body, self.owner_id, temporary=allow_guests))
+                    return self.respond(202, application.submit_municipal(body, self.owner_id, temporary=allow_guests or draft))
                 municipal_routes = {"/api/v1/utility-resolution": "utility-resolution",
                                     "/api/v1/municipal/eligibility": "municipal-eligibility",
                                     "/api/v1/municipal/bill": "municipal-bill"}
@@ -348,7 +383,7 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                     if isinstance(body, dict) and body.get("tariff_id") not in {None, *(t["id"] for t in application.capabilities["tariffs"])}:
                         raise ValueError("Choose a supported tariff.")
                     return self.respond(202, application.store.submit(body, application.engine, self.owner_id,
-                                                                       temporary=allow_guests))
+                                                                       temporary=allow_guests or draft))
                 raise FileNotFoundError("Resource not found.")
             except AuthenticationRequired as exc:
                 self.respond(401, {"error": str(exc)})

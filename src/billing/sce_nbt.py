@@ -198,7 +198,7 @@ def bill(key, index, imports, exports, account, plan):
             'credit_ledger': ledger, 'rate_versions': details, 'tariff': plan,
             'adjustment_versions': [d['version_id'] for d in details],
             'warnings': ['SCE NBT one confirmed billing cycle only: account opening EEC and ACC Plus balances are inputs; annual true-up and NSC are not projected.',
-                         'Dispatch minimizes this cycle’s amount due; it does not assign future value to unused export-credit balances, so it is not a full-year optimum.',
+                         'Dispatch minimizes this cycle’s cost before inherited credits; those credits reduce the reported bill but do not change dispatch. Unused newly earned credits have no assigned future value, so this is not a full-year optimum.',
                          'SCE bundled delivery and generation credits have separate banks. Ordinary EEC cannot offset NBCs, base services, fixed recovery, taxes or state surcharge.',
                          'Paired storage, if modeled, charges only from surplus PV and does not export battery energy or model SCE paired-storage export caps.',
                          'Local utility tax uses the existing confirmed/assumed study rate on import charges before export credits; jurisdiction-specific solar tax treatment is not modeled.',

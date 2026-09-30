@@ -27,11 +27,13 @@ process.stdout.write(JSON.stringify(request));
 """
 
 
-def browser_payload(capabilities, resolution_id, program, start_date, *, pv_choice='yes', include_battery=False):
+def browser_payload(capabilities, resolution_id, program, start_date, *,
+                    end_date=None, value_overrides=None, check_overrides=None,
+                    pv_choice='yes', include_battery=False):
     values = {
         'name': f'Synthetic {program} browser submission',
         'utility': 'sce', 'pv_choice': pv_choice,
-        'start_date': start_date, 'end_date': start_date,
+        'start_date': start_date, 'end_date': end_date or start_date,
         'degradation_cost_per_kWh': '0',
         'sc_generation': 'bundled', 'sc_tariff_id': 'sce_tou-d-prime',
         'sc_solar_program': program, 'sc_reference': 'Synthetic SCE account',
@@ -69,6 +71,8 @@ def browser_payload(capabilities, resolution_id, program, start_date, *, pv_choi
         'sce_nem_credit_confirmed',
     )}
     checks['sc_include_battery'] = include_battery
+    values.update(value_overrides or {})
+    checks.update(check_overrides or {})
     fixture = dict(values=values, checks=checks, capabilities=capabilities,
                    resolution_id=resolution_id)
     result = subprocess.run(['node', '-e', NODE_DRIVER, str(FORM_SCRIPT)],
@@ -141,6 +145,64 @@ def test_sce_solar_form_submission_reaches_saved_worker_result(
             opening = ('opening_delivery_eec' if program == 'sce_nbt'
                        else 'opening_energy_credit')
             assert pv_ledger[opening] == (1 if program == 'sce_nbt' else 2.5)
+            comparison = call('/api/studies/' + job['id']
+                              + '/tables/comparison')[1]
+            scenarios = {row['scenario']: row for row in
+                         (dict(zip(comparison['columns'], values))
+                          for values in comparison['data'])}
+            assert set(scenarios) == {'grid_only', 'pv_only'}
+            assert scenarios['pv_only']['utility_bill'] < scenarios['grid_only']['utility_bill']
+        finally:
+            runner.close()
+
+
+def test_bwp_solar_form_submission_reaches_saved_worker_result(tmp_path):
+    from test_socal import study_request
+    resolution = study_request('sce')['resolution']
+    resolution['delivery_utility'] = 'bwp'
+    resolution['delivery_candidates'] = [{'utility_id': 'bwp'}]
+    resolution_id = 'b' * 32
+    source = tmp_path / 'candidate' / resolution_id
+    source.mkdir(parents=True)
+    (source / 'resource-request.json').write_text(
+        json.dumps({'kind': 'utility-resolution'}))
+    (source / 'resource.json').write_text(json.dumps(resolution))
+    overrides = dict(utility='bwp', sc_tariff_id='bwp_ev',
+                     sc_reference='Synthetic BWP EV solar account',
+                     sc_local_tax_percent='7', sc_month_factor='1',
+                     sc_bwp_service_size='medium',
+                     sc_bwp_solar_capacity_kw='4',
+                     sc_bwp_permit_issue_date='2026-02-01',
+                     sc_bwp_upgrade_date='', sc_bwp_account_transfer_date='',
+                     sc_bwp_opening_credit='10')
+    checks = {f'sc_{name}': True for name in (
+        'bwp_ecac_confirmed', 'bwp_ev_confirmed',
+        'bwp_opening_balance_confirmed')}
+    with api_service(tmp_path) as (app, call):
+        caps = call('/api/capabilities')[1]
+        payload = browser_payload(caps, resolution_id, 'bwp_net_billing',
+                                  '2026-07-01', end_date='2026-07-25',
+                                  value_overrides=overrides,
+                                  check_overrides=checks)
+        assert payload['account']['solar_capacity_kw'] == 4
+        assert payload['account']['permit_issue_date'] == '2026-02-01'
+        assert payload['account']['bwp_opening_credit'] == 10
+        assert payload['account']['bwp_opening_balance_confirmed']
+        code, job = call('/api/v1/socal/studies', payload, caps['token'])
+        assert code == 202
+        runner = JobRunner(app.store)
+        try:
+            saved = until(lambda: call('/api/studies/' + job['id'])[1],
+                          lambda value: value['status'] in ('completed', 'failed'))
+            assert saved['status'] == 'completed', saved.get('error')
+            ledger = call('/api/studies/' + job['id']
+                          + '/tables/solar_credit_ledger')[1]
+            rows = [dict(zip(ledger['columns'], row)) for row in ledger['data']]
+            pv_ledger = {row['component']: row['amount'] for row in rows
+                         if row['scenario'] == 'pv_only'}
+            assert pv_ledger['opening_credit'] == 10
+            assert pv_ledger['earned_export_credit'] > 0
+            assert pv_ledger['closing_credit'] >= 0
             comparison = call('/api/studies/' + job['id']
                               + '/tables/comparison')[1]
             scenarios = {row['scenario']: row for row in

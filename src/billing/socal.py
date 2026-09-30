@@ -7,7 +7,7 @@ from datetime import date, timedelta
 import numpy as np
 import pandas as pd
 
-VERSION = 'socal-2026-09-27.4'
+VERSION = 'socal-2026-09-29.1'
 SCE_SOURCE = 'https://www.sce.com/regulatory/regulatory-information/tariff-books/rates-pricing-choices'
 LADWP_SOURCE = 'https://www.ladwp.com/account/customer-service/electric-rates/residential-rates'
 # Separate quarterly adjustment versions; base rates effective 2019-07-01.
@@ -291,6 +291,10 @@ def bill(key,frame,account,start,end):
   from .ladwp_nem import bill as nem_bill
   if 'grid_export_kw' not in frame:raise ValueError('LADWP NEM requires a separate export meter channel.')
   return nem_bill(key,idx,imports,np.asarray(frame['grid_export_kw'],dtype=float),account,p)
+ if account['solar_program']=='bwp_net_billing':
+  from .bwp_net_billing import bill as bwp_solar_bill
+  if 'grid_export_kw' not in frame:raise ValueError('BWP net billing requires a separate export meter channel.')
+  return bwp_solar_bill(key,idx,imports,np.asarray(frame['grid_export_kw'],dtype=float),account,p)
  if 'grid_export_kw' in frame and (not np.isfinite(frame.grid_export_kw).all() or (np.abs(frame.grid_export_kw)>1e-7).any()):raise ValueError('Export settlement is unsupported; exported energy cannot be silently ignored.')
  s=p['schedule'];maximum=float(imports.max())
  if s.startswith('A-1') and maximum>=30:raise ValueError('A-1 study scope requires demand below 30 kW.')

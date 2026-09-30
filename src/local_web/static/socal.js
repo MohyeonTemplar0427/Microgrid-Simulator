@@ -12,11 +12,16 @@ function buildSocalRequest({field,siteCustomerClass,siteProfile,gridOnly,capabil
   if(f('generation').value==='cca'&&f('mode').value!=='hypothetical_bundled')throw new Error('Actual CCA bills are unsupported; choose an explicitly hypothetical bundled comparison.');
   if(pvChoice==='yes'&&['sce_nbt','sce_nem'].includes(f('solar_program').value)&&f('generation').value!=='bundled')throw new Error('SCE bundled solar settlement requires confirmed SCE generation. CCA solar settlement is separate.');
   const a={customer_class:siteCustomerClass(),reference:f('reference').value,generation_provider:field('utility').value,actual_generation_provider:f('generation').value,solar_program:pvChoice==='yes'?f('solar_program').value:'none',voltage:f('voltage').value,phase:f('phase').value,local_tax_percent:numeric('local_tax_percent'),billing_month_factor:numeric('month_factor')};
-  for(const n of ['eligibility_confirmed','ordinary_account_confirmed','cycle_confirmed','tax_confirmed','region_confirmed','interconnection_confirmed','nem_credit_confirmed','nbt_first_cycle_confirmed','nbt_opening_balances_confirmed','nbt_bonus_confirmed','sce_nem_legacy_confirmed','sce_nem_credit_confirmed','heat_pump_water','non_cpp_confirmed','reactive_charge_exempt_confirmed','gwp_individual_meter_confirmed','gwp_allocation_confirmed','storage_schedule_confirmed','gwp_demand_history_confirmed','pwp_flat_enrollment_confirmed','pwp_r2_qualification_confirmed','pwp_storage_confirmed','alw_ordinary_meter_confirmed','alw_storage_confirmed','bwp_ecac_confirmed','bwp_ev_confirmed','bwp_c_confirmed','ipu_domestic_confirmed','municipal_storage_confirmed'])a[n]=f(n).checked;
+  for(const n of ['eligibility_confirmed','ordinary_account_confirmed','cycle_confirmed','tax_confirmed','region_confirmed','interconnection_confirmed','nem_credit_confirmed','nbt_first_cycle_confirmed','nbt_opening_balances_confirmed','nbt_bonus_confirmed','sce_nem_legacy_confirmed','sce_nem_credit_confirmed','heat_pump_water','non_cpp_confirmed','reactive_charge_exempt_confirmed','gwp_individual_meter_confirmed','gwp_allocation_confirmed','storage_schedule_confirmed','gwp_demand_history_confirmed','pwp_flat_enrollment_confirmed','pwp_r2_qualification_confirmed','pwp_storage_confirmed','alw_ordinary_meter_confirmed','alw_storage_confirmed','bwp_ecac_confirmed','bwp_ev_confirmed','bwp_c_confirmed','bwp_first_cycle_confirmed','bwp_opening_balance_confirmed','transfer_to_new_customer_confirmed','ipu_domestic_confirmed','municipal_storage_confirmed'])a[n]=f(n).checked;
   if(a.solar_program==='ladwp_nem')a.nem_opening_credit=numeric('nem_opening_credit');
   for(const n of ['nbt_vintage','nbt_interconnection_request_date','nbt_pto_date','nbt_bonus_status'])a[n]=f(n).value;
   if(a.solar_program==='sce_nbt'&&!a.nbt_first_cycle_confirmed){for(const n of ['nbt_opening_delivery_eec','nbt_opening_generation_eec','nbt_opening_acc_plus'])a[n]=numeric(n);a.nbt_relevant_period_end=f('nbt_relevant_period_end').value;}
   if(a.solar_program==='sce_nem'){for(const n of ['sce_nem_version','sce_nem_request_date','sce_nem_pto_date','sce_nem_relevant_period_end'])a[n]=f(n).value;a.sce_nem_opening_energy_credit=numeric('sce_nem_opening_energy_credit');a.sce_nem_billing_option='monthly';}
+  if(a.solar_program==='bwp_net_billing'){
+    a.solar_capacity_kw=numeric('bwp_solar_capacity_kw');
+    for(const n of ['permit_issue_date','upgrade_date','account_transfer_date'])a[n]=f('bwp_'+n).value||null;
+    if(!a.bwp_first_cycle_confirmed)a.bwp_opening_credit=numeric('bwp_opening_credit');
+  }
   for(const n of ['temperature_zone','baseline_region','baseline_type','prime_qualification'])a[n]=f(n).value;
   a.climate_credit_amount=!climateCreditVisible?0:f('climate_credit_amount').value===''?0:numeric('climate_credit_amount');a.climate_credit_confirmed=f('climate_credit_confirmed').checked;
   if(siteCustomerClass()==='residential')a.accommodation=siteProfile().subtype==='apartment_unit'?'multifamily':'single_family';
@@ -47,7 +52,7 @@ if(typeof document!=='undefined')(() => {
  panel(4,`<p class="hint">This Southern California candidate uses a local clear-sky estimate with the existing PVWatts, cell-temperature and inverter model (20 °C air, 1 m/s wind, 14% system losses, 96% inverter efficiency and 1.2 DC/AC ratio). It does not substitute historical weather. PV operating savings exclude installation costs and incentives.</p>`);
  panel(5,`${input('pv_kw','PV DC capacity · kW')}${input('tilt','Array tilt · degrees')}${input('azimuth','Array azimuth · degrees')}
  <label class="checkbox" id="socal-include-battery"><input name="include_battery" type="checkbox">Include battery / ESS</label>
- <label>Solar compensation program<select name="solar_program"><option value="none">No solar</option><option value="approved_non_export">Approved non-export PV · curtail surplus</option><option value="ladwp_nem">LADWP R-1A NEM · net-import billing cycle</option><option value="sce_nbt">SCE bundled NBT23–NBT26 · confirmed cycle</option><option value="sce_nem">SCE legacy NEM 1.0 / 2.0 · monthly cycle</option></select></label>
+ <label>Solar compensation program<select name="solar_program"><option value="none">No solar</option><option value="approved_non_export">Approved non-export PV · curtail surplus</option><option value="ladwp_nem">LADWP R-1A NEM · net-import billing cycle</option><option value="sce_nbt">SCE bundled NBT23–NBT26 · confirmed cycle</option><option value="sce_nem">SCE legacy NEM 1.0 / 2.0 · monthly cycle</option><option value="bwp_net_billing">BWP EV TOU solar net billing · confirmed cycle</option></select></label>
  <label class="checkbox"><input name="interconnection_confirmed" type="checkbox"><span id="socal-interconnection-label">Non-export interconnection and standby exemption are confirmed.</span></label>
  <div id="socal-nem"><p class="hint">LADWP R-1A only. The cycle must import at least as many kWh as it exports. Export surplus, R-1B TOU settlement and multi-meter credits are not yet priced.</p>
  ${input('nem_opening_credit','Opening NEM credit balance · $ from this meter')}
@@ -69,7 +74,16 @@ if(typeof document!=='undefined')(() => {
  <label>Next annual true-up date<input name="sce_nem_relevant_period_end" type="date"></label>
  ${input('sce_nem_opening_energy_credit','Opening NEM energy-credit balance · $')}
  <label class="checkbox"><input name="sce_nem_legacy_confirmed" type="checkbox">SCE confirms this account remains on the selected legacy NEM schedule.</label>
- <label class="checkbox"><input name="sce_nem_credit_confirmed" type="checkbox">I confirmed this meter's opening energy-credit balance, or explicitly assume zero.</label></div>`);
+ <label class="checkbox"><input name="sce_nem_credit_confirmed" type="checkbox">I confirmed this meter's opening energy-credit balance, or explicitly assume zero.</label></div>
+ <div id="socal-bwp-solar"><p class="hint">BWP residential EV TOU only; verified July 1–September 20, 2026. Confirm utility net-billing enrollment and a qualifying 2026 permit, upgrade or transfer. Solar credits offset usage and ECAC, with unused dollars carried forward. Service charges, tax and surcharge remain payable. Annual cash-out is outside this study.</p>
+ ${input('bwp_solar_capacity_kw','Confirmed interconnected generator AC nameplate · kW')}
+ <label>Original permit issue date<input name="bwp_permit_issue_date" type="date"></label>
+ <label>System upgrade date<input name="bwp_upgrade_date" type="date"></label>
+ <label>Account transfer date<input name="bwp_account_transfer_date" type="date"></label>
+ <label class="checkbox"><input name="transfer_to_new_customer_confirmed" type="checkbox">The transfer was to a new customer.</label>
+ <label class="checkbox"><input name="bwp_first_cycle_confirmed" type="checkbox">This is the first BWP solar cycle; opening credit is zero.</label>
+ <div id="socal-bwp-opening">${input('bwp_opening_credit','Confirmed opening solar credit · $')}
+ <label class="checkbox"><input name="bwp_opening_balance_confirmed" type="checkbox">I confirmed this opening credit from the account, or explicitly assume zero.</label></div></div>`);
  panel(8,`<label>Billing Plan<select name="tariff_id"></select></label><p id="socal-coverage" class="hint"></p>
  <label class="checkbox"><input name="eligibility_confirmed" type="checkbox">Utility confirms this assigned schedule and required qualification history; or these are explicit hypothetical assumptions.</label>
  <label class="checkbox"><input name="ordinary_account_confirmed" type="checkbox">Ordinary account: no CARE/FERA, medical baseline, deed-restricted discount, CPP, EV meter credit, special riders or dedicated residential transformer.</label>
@@ -116,17 +130,19 @@ if(typeof document!=='undefined')(() => {
   for(const g of ['ladwp-region','sce-region','prime','commercial','gwp','gwp-demand','pwp','alw','bwp','ipu','municipal-storage'])$('socal-'+g).hidden=!(p?.input_groups||[]).includes(g);
   $('socal-region-confirm').hidden=$('socal-ladwp-region').hidden&&$('socal-sce-region').hidden;
   $('socal-history').hidden=field('utility').value!=='ladwp';
-  for(const o of f('solar_program').options)o.disabled=(!!p?.solar_programs&&!p.solar_programs.includes(o.value))||(['sce_nbt','sce_nem'].includes(o.value)&&(field('utility').value!=='sce'||siteCustomerClass()!=='residential'||!!p&&p.id!=='sce_tou-d-prime'||f('generation').value!=='bundled'))||(o.value==='ladwp_nem'&&(field('utility').value!=='ladwp'||siteCustomerClass()!=='residential'||!!p&&p.id!=='ladwp_r-1a'||f('generation').value!=='bundled'));
+  for(const o of f('solar_program').options)o.disabled=(!!p?.solar_programs&&!p.solar_programs.includes(o.value))||(['sce_nbt','sce_nem'].includes(o.value)&&(field('utility').value!=='sce'||siteCustomerClass()!=='residential'||!!p&&p.id!=='sce_tou-d-prime'||f('generation').value!=='bundled'))||(o.value==='ladwp_nem'&&(field('utility').value!=='ladwp'||siteCustomerClass()!=='residential'||!!p&&p.id!=='ladwp_r-1a'||f('generation').value!=='bundled'))||(o.value==='bwp_net_billing'&&(field('utility').value!=='bwp'||siteCustomerClass()!=='residential'||!!p&&p.id!=='bwp_ev'||f('generation').value!=='bundled'));
   if(field('pv_choice').value!=='yes')f('solar_program').value='none';
   $('socal-nem').hidden=f('solar_program').value!=='ladwp_nem';
   $('socal-nbt').hidden=f('solar_program').value!=='sce_nbt';
   $('socal-sce-nem').hidden=f('solar_program').value!=='sce_nem';
+  $('socal-bwp-solar').hidden=f('solar_program').value!=='bwp_net_billing';
+  $('socal-bwp-opening').hidden=f('bwp_first_cycle_confirmed').checked;
   $('socal-include-battery').hidden=field('pv_choice').value!=='yes'||f('solar_program').value==='sce_nem';
   if(f('solar_program').value==='sce_nem')f('include_battery').checked=false;
   field('pv_choice').querySelector('option[value="yes"]').textContent='Yes — configure PV and optional battery / ESS';
   $('socal-nbt-opening').hidden=f('nbt_first_cycle_confirmed').checked;
-  $('socal-interconnection-label').textContent=f('solar_program').value==='sce_nbt'?'SCE NBT interconnection and bidirectional 15-minute metering are confirmed.':f('solar_program').value==='sce_nem'?'SCE legacy NEM interconnection and bidirectional 15-minute metering are confirmed.':f('solar_program').value==='ladwp_nem'?'LADWP NEM interconnection and bidirectional metering are confirmed.':'Non-export interconnection and standby exemption are confirmed.';
-  $('socal-export-note').textContent=f('solar_program').value==='sce_nbt'?'SCE NBT compares one bill with vintage-specific hourly export credits and a separate credit ledger; annual settlement is not projected.':f('solar_program').value==='sce_nem'?'SCE legacy NEM compares one monthly cycle with retail netting and protected NEM 2.0 import charges; annual true-up and paired storage are outside scope.':f('solar_program').value==='ladwp_nem'?'LADWP R-1A compares billing-cycle net imports, applies a confirmed opening credit balance and exports a credit ledger. Net-export cycles are rejected.':'Compare grid-only, PV-only and PV plus storage operating costs. Exports are disabled. Inspect itemized bills and dispatch in the existing result tables.';
+  $('socal-interconnection-label').textContent=f('solar_program').value==='sce_nbt'?'SCE NBT interconnection and bidirectional 15-minute metering are confirmed.':f('solar_program').value==='sce_nem'?'SCE legacy NEM interconnection and bidirectional 15-minute metering are confirmed.':f('solar_program').value==='ladwp_nem'?'LADWP NEM interconnection and bidirectional metering are confirmed.':f('solar_program').value==='bwp_net_billing'?'BWP net-billing interconnection, permits and bidirectional metering are confirmed.':'Non-export interconnection and standby exemption are confirmed.';
+  $('socal-export-note').textContent=f('solar_program').value==='sce_nbt'?'SCE NBT compares one bill with vintage-specific hourly export credits and a separate credit ledger; annual settlement is not projected.':f('solar_program').value==='sce_nem'?'SCE legacy NEM compares one monthly cycle with retail netting and protected NEM 2.0 import charges; annual true-up and paired storage are outside scope.':f('solar_program').value==='ladwp_nem'?'LADWP R-1A compares billing-cycle net imports, applies a confirmed opening credit balance and exports a credit ledger. Net-export cycles are rejected.':f('solar_program').value==='bwp_net_billing'?'BWP EV TOU compares grid, PV and optional storage using avoided-cost export credits; the saved bill shows credit carried forward. Annual cash-out is not projected.':'Compare grid-only, PV-only and PV plus storage operating costs. Exports are disabled. Inspect itemized bills and dispatch in the existing result tables.';
   // Keep a stale selection visible until corrected; never silently turn PV into zero PV.
   const windows=p?.coverage_windows|| (p?[{start:p.effective_start,end:p.effective_end}]:[]);
   let covered=field('start_date').value;
@@ -151,7 +167,7 @@ if(typeof document!=='undefined')(() => {
  }
  function request(){return buildSocalRequest({field,siteCustomerClass,siteProfile,gridOnly,capabilities,savedResolution,loadCsv,climateCreditVisible:!$('socal-climate-credit').hidden});}
  function defaults(p){if(!active())return;const vals={month_factor:1,pv_kw:5,tilt:20,azimuth:180,base_kw:siteCustomerClass()==='residential'?.4:5,peak_kw:siteCustomerClass()==='residential'?2:10,peak_start_hour:16,peak_end_hour:21};for(const [k,v]of Object.entries(vals))if(p.contains(f(k)))f(k).value=v;sync();}
- function invalidate(){confirmationRevision++;savedResolution=null;for(const n of ['eligibility_confirmed','region_confirmed','tax_confirmed','interconnection_confirmed','ordinary_account_confirmed','non_cpp_confirmed','reactive_charge_exempt_confirmed','gwp_individual_meter_confirmed','gwp_allocation_confirmed','storage_schedule_confirmed','gwp_demand_history_confirmed','pwp_flat_enrollment_confirmed','pwp_r2_qualification_confirmed','pwp_storage_confirmed','alw_ordinary_meter_confirmed','alw_storage_confirmed','bwp_ecac_confirmed','bwp_ev_confirmed','bwp_c_confirmed','ipu_domestic_confirmed','municipal_storage_confirmed'])f(n).checked=false;$('socal-resolution').textContent='Location or account changed. Confirm again.';}
+ function invalidate(){confirmationRevision++;savedResolution=null;for(const n of ['eligibility_confirmed','region_confirmed','tax_confirmed','interconnection_confirmed','ordinary_account_confirmed','non_cpp_confirmed','reactive_charge_exempt_confirmed','gwp_individual_meter_confirmed','gwp_allocation_confirmed','storage_schedule_confirmed','gwp_demand_history_confirmed','pwp_flat_enrollment_confirmed','pwp_storage_confirmed','alw_ordinary_meter_confirmed','alw_storage_confirmed','bwp_ecac_confirmed','bwp_ev_confirmed','bwp_c_confirmed','bwp_first_cycle_confirmed','bwp_opening_balance_confirmed','transfer_to_new_customer_confirmed','ipu_domestic_confirmed','municipal_storage_confirmed'])f(n).checked=false;$('socal-resolution').textContent='Location or account changed. Confirm again.';}
  function reset(){invalidate();lastChoice='';loadCsv=null;for(const x of form.querySelectorAll('[name^=sc_]')){if(x.type==='checkbox')x.checked=false;else if(x.tagName==='SELECT')x.selectedIndex=0;else x.value='';}}
  function restore(r){
   reset();
@@ -159,7 +175,12 @@ if(typeof document!=='undefined')(() => {
   for(const n of ['name','start_date','end_date'])field(n).value=r[n];field('latitude').value=r.resolution.coordinates.latitude;field('longitude').value=r.resolution.coordinates.longitude;field('location_query').value='';siteLabel='Saved site coordinates';$('location-status').textContent=siteLabel;
   field('pv_choice').value=r.solar.capacity_kw?'yes':r.battery?'storage':'no';locationResolution={...r.resolution,resolution_id:r.resolution_id};lastChoice='';sync();
   for(const [k,v]of Object.entries(r.account)){const x=f(k);if(x){if(x.type==='checkbox')x.checked=v;else x.value=v;}}
-  f('include_battery').checked=!!r.battery;
+  if(r.account.solar_program==='bwp_net_billing'){
+    f('bwp_solar_capacity_kw').value=r.account.solar_capacity_kw;
+    for(const name of ['permit_issue_date','upgrade_date','account_transfer_date'])
+      f('bwp_'+name).value=r.account[name]||'';
+  }
+  f('include_battery').checked=!!r.battery&&r.solar.capacity_kw>0;
   f('baseline_region').value=r.account.baseline_region||'';f('month_factor').value=r.account.billing_month_factor;f('history').value=(r.account.previous_11_month_peaks_kw||[]).join(',');f('tariff_id').value=r.tariff_id;f('mode').value=r.mode;f('generation').value=r.account.actual_generation_provider||'bundled';
   for(const [k,v]of Object.entries(r.battery||{}))field(k).value=v;
   for(const k of ['base_kw','peak_kw','peak_start_hour','peak_end_hour'])if(r.load[k]!==undefined)f(k).value=r.load[k];f('load_mode').value=r.load.mode;loadCsv=r.load.csv||null;
@@ -170,5 +191,5 @@ if(typeof document!=='undefined')(() => {
  f('load_file').addEventListener('change',async()=>{loadCsv=f('load_file').files[0]?await f('load_file').files[0].text():null;});
  $('socal-confirm').addEventListener('click',async()=>{const button=$('socal-confirm');button.disabled=true;$('form-error').hidden=true;$('socal-resolution').textContent='Saving service evidence…';try{await confirm();}catch(e){showError('form-error',e);}finally{button.disabled=false;}});
  function validatePage(p){if(!active())return true;if(p.dataset.step==='2'&&f('generation').value==='cca'&&f('mode').value==='actual_service'){showError('form-error',new Error('Actual CCA billing is unsupported. Choose a separately labeled hypothetical bundled comparison.'));return false;}if(p.dataset.step==='2'&&!savedResolution){showError('form-error',new Error('Save service confirmation and wait for the evidence status before continuing.'));return false;}return true;}
- window.socalUI={validate:validatePage,active,sync,restore,reset,defaults,invalidate,batteryEnabled:()=>field('pv_choice').value==='storage'||(field('pv_choice').value==='yes'&&f('include_battery').checked),submit:()=>api('/api/v1/socal/studies',request())};
+ window.socalUI={validate:validatePage,active,sync,restore,reset,defaults,invalidate,batteryEnabled:()=>field('pv_choice').value==='storage'||(field('pv_choice').value==='yes'&&f('include_battery').checked),submit:()=>api('/api/v1/socal/studies?draft=1',request())};
 })();

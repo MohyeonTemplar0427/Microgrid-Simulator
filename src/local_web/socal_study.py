@@ -18,7 +18,8 @@ def capabilities():
  'solar_programs':[{'id':'none','label':'No solar'},{'id':'approved_non_export','label':'Approved non-export PV · self-consumption only'},
                    {'id':'sce_nbt','label':'SCE bundled NBT23–NBT26 · confirmed billing cycle'},
                    {'id':'sce_nem','label':'SCE legacy NEM 1.0 / 2.0 · monthly cycle'},
-                   {'id':'ladwp_nem','label':'LADWP R-1A NEM · net-import cycle'}],
+                   {'id':'ladwp_nem','label':'LADWP R-1A NEM · net-import cycle'},
+                   {'id':'bwp_net_billing','label':'BWP EV TOU solar net billing · verified cycle'}],
  'unsupported':['SCE CCA generation tariffs','SCE NBT annual true-up; SCE legacy NEM annual true-up, paired storage and CCA generation; LADWP NEM net-export and R-1B cycles','CARE/FERA/medical or other special riders','CPP events','Reactive-power charges'],
  'baseline_regions':['5','6','8','9','10','13','14','15','16']}
 
@@ -64,9 +65,9 @@ def validate(r):
  solar=r['solar']
  if not isinstance(solar,dict) or set(solar)!={'capacity_kw','tilt','azimuth'}:raise ValueError('Specify PV capacity, tilt and azimuth.')
  number(solar['capacity_kw'],'PV DC kW',0,10000);number(solar['tilt'],'PV tilt',0,90);number(solar['azimuth'],'PV azimuth',0,360)
- if solar['capacity_kw']>0 and r['account']['solar_program'] not in ('approved_non_export','sce_nbt','sce_nem','ladwp_nem'):
+ if solar['capacity_kw']>0 and r['account']['solar_program'] not in ('approved_non_export','sce_nbt','sce_nem','ladwp_nem','bwp_net_billing'):
   raise ValueError('PV requires an executable, account-confirmed solar program.')
- if r['account']['solar_program'] in ('sce_nbt','sce_nem','ladwp_nem') and solar['capacity_kw']<=0:
+ if r['account']['solar_program'] in ('sce_nbt','sce_nem','ladwp_nem','bwp_net_billing') and solar['capacity_kw']<=0:
   raise ValueError('Solar export billing requires a renewable generator.')
  if r['account']['solar_program']=='ladwp_nem' and solar['capacity_kw']>1000:
   raise ValueError('LADWP NEM is limited to at most 1 MW of eligible generation.')
@@ -128,7 +129,8 @@ def execute(directory,r):
    credit_ledgers.extend({'scenario':name,'component':k,'amount':v} for k,v in b['credit_ledger'].items())
   costs.extend({'scenario':name,'component':k,'amount':v} for k,v in b['line_items'].items());bills[name]=b
  warnings=result['bill']['warnings']+[
-  'Battery wear is included in optimization.' if r.get('include_degradation_in_optimization',False) else 'Storage dispatch minimizes the utility bill; estimated battery wear is reported separately.',
+  'Battery wear is included in optimization.' if r.get('include_degradation_in_optimization',False) else 'Battery wear is reported separately from the dispatch objective.',
+  'Inherited solar credits reduce the saved bill but do not change storage dispatch; newly earned export credits enter the cycle objective.' if r['account']['solar_program'] in ('sce_nbt','bwp_net_billing') else 'Storage dispatch minimizes the modeled utility bill for this cycle.',
   'PV uses the existing PVWatts/temperature/inverter model with clear-sky irradiance, 20 °C air, 1 m/s wind, 14% system losses, 96% inverter efficiency and 1.2 DC/AC ratio; not measured weather.','Savings are operating costs only, excluding capital cost, incentives and lifecycle payback.']
  if not solar['capacity_kw']:warnings=[w for w in warnings if not w.startswith('PV uses')]
  if r['mode']=='hypothetical_bundled':warnings.insert(0,'HYPOTHETICAL bundled generation comparison — account enrollment and eligibility are study assumptions, not an actual customer bill.')

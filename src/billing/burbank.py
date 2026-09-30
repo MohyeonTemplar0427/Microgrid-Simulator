@@ -14,7 +14,7 @@ PLANS={
     key:dict(id=key,utility='bwp',schedule=s,label='Burbank '+label,
              customer_class=customer,effective_start=START,effective_end=END,
              tariff_data_version=VERSION,source=SOURCE,demand=False,
-             input_groups=['bwp','municipal-storage'],solar_programs=['none'],
+             input_groups=['bwp','municipal-storage'],solar_programs=['none','bwp_net_billing'] if key=='bwp_ev' else ['none'],
              qualification_note='Ordinary complete monthly cycle, published $0.034/kWh ECAC confirmed for the cycle. No assistance, green premium, meter opt-out, demand-metered or standby service.')
     for key,s,label,customer in [('bwp_basic','Basic','Residential Basic','residential'),
                                ('bwp_ev','EV','Residential EV TOU','residential'),
@@ -47,7 +47,12 @@ def eligibility(key,a,start,end):
     for f in ('eligibility_confirmed','ordinary_account_confirmed','cycle_confirmed','tax_confirmed','bwp_ecac_confirmed'):
         if a.get(f) is not True:raise ValueError('Confirm '+f.replace('_',' ')+'.')
     if not isinstance(a.get('reference'),str) or not a['reference'].strip():raise ValueError('Supply BWP qualification reference or explicit study assumption.')
-    if a.get('generation_provider')!='bwp' or a.get('solar_program')!='none':raise ValueError('BWP ordinary bundled import scope excludes PV/export settlement.')
+    if a.get('generation_provider')!='bwp':raise ValueError('BWP requires bundled generation.')
+    if a.get('solar_program')=='bwp_net_billing':
+        if key!='bwp_ev':raise ValueError('BWP solar net billing is currently verified only for EV TOU.')
+        from .bwp_net_billing import validate_account
+        validate_account(a,start,end)
+    elif a.get('solar_program')!='none':raise ValueError('This BWP solar program is not executable.')
     if a.get('voltage')!='secondary' or a.get('phase') not in ('single','three'):raise ValueError('Ordinary secondary metered service only.')
     if number(a.get('local_tax_percent'),'BWP UUT')!=7 or a.get('climate_credit_amount',0):raise ValueError('Ordinary 7% Burbank UUT required; SCE credits and tax-exempt accounts are excluded.')
     if number(a.get('billing_month_factor'),'Billed months')!=1 or not 25<=(finish-begin).days+1<=35:raise ValueError('BWP requires one complete monthly billing cycle; partial-service proration is unsupported.')

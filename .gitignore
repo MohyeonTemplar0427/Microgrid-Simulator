@@ -21,6 +21,10 @@ gui_preferences.json
 # Root-level PDFs only, so filed tariff documents under docs/ can still be tracked.
 /*.pdf
 
+# --- Generated synthetic billing PDFs (tests recreate them in memory) ---
+/output/pdf/synthetic_bill_march_2026_*min.pdf
+/test/fixtures/synthetic_bills/*.pdf
+
 # --- Runtime-generated data (recreated on demand by the code) ---
 data/cache/
 data/runtime.json

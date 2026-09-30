@@ -124,6 +124,31 @@ def test_pv_storage_dispatch_bills_and_obeys_pv_only_charging(start, end, pto):
     assert np.max(np.minimum(d.grid_import_kw, d.grid_export_kw)) < 1e-5
 
 
+def test_inherited_credits_change_bill_but_not_battery_dispatch():
+    start = end = '2026-07-06'
+    f = frame(start, end, kw=1.)
+    f['pv_available_kw'] = np.where((f.timestamp.dt.hour >= 10) &
+                                    (f.timestamp.dt.hour < 15), 3., 0.)
+    common = dict(billing_month_factor=1/30, nbt_first_cycle_confirmed=False,
+                  nbt_opening_balances_confirmed=True,
+                  nbt_relevant_period_end='2026-08-01')
+    no_credit = nbt_account(**common, nbt_opening_delivery_eec=0.,
+                            nbt_opening_generation_eec=0., nbt_opening_acc_plus=0.)
+    inherited = nbt_account(**common, nbt_opening_delivery_eec=100.,
+                            nbt_opening_generation_eec=100., nbt_opening_acc_plus=100.)
+    battery = dict(capacity_kWh=10, energy_kWh=5, SOC_min=.2, SOC_max=.8,
+                   max_charge_kw=3, max_discharge_kw=3,
+                   charge_efficiency=.95, discharge_efficiency=.95)
+    first = optimize('sce_tou-d-prime', f, no_credit, start, end, battery, .01)
+    second = optimize('sce_tou-d-prime', f, inherited, start, end, battery, .01)
+    for column in ('grid_import_kw', 'grid_export_kw', 'battery_charge_kw',
+                   'battery_discharge_kw'):
+        assert np.allclose(first['dispatch'][column], second['dispatch'][column], atol=1e-5)
+    assert second['bill']['total'] < first['bill']['total']
+    assert second['bill']['credit_ledger']['opening_delivery_eec'] == 100.
+    assert first['objective_gap'] < .02 and second['objective_gap'] < .02
+
+
 def test_cross_june_bill_uses_both_nonbypassable_import_rates():
     start, end = '2026-05-31', '2026-06-01'
     f = frame(start, end, kw=1.).assign(grid_export_kw=0.)

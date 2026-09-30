@@ -7,6 +7,10 @@ from .battery import Battery
 
 
 def optimize(key,inputs,account,start,end,battery,wear,*,include_degradation_in_optimization=False):
+ if account.get('solar_program')=='bwp_net_billing':
+  from .bwp_net_billing import optimize as optimize_bwp
+  return optimize_bwp(key,inputs,account,start,end,battery,wear,
+   include_degradation_in_optimization=include_degradation_in_optimization)
  if account.get('solar_program')=='sce_nbt':
   from .sce_nbt import optimize as optimize_nbt
   return optimize_nbt(key,inputs,account,start,end,battery,wear,

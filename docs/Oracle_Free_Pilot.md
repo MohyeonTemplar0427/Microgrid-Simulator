@@ -6,7 +6,7 @@ Caddy are installed on the VM; the Auth0 client secret is stored only in its
 private API settings file. No application source or public website has been
 deployed, and the API, worker, and Caddy services remain stopped. The pilot uses
 the reviewed deployment package in
-[Web_Deployment_Package.md](Web_Deployment_Package.md). Keep Web UI v1.0.1 and
+[Web_Deployment_Package.md](Web_Deployment_Package.md). Keep Web UI v1.0.2 and
 the engine snapshot tied to the reviewed release; do not deploy an uncommitted
 working tree.
 

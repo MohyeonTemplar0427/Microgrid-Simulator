@@ -45,7 +45,13 @@ def optimize(key, inputs, account, start, end, battery, wear, *, include_degrada
                    energy <= b.capacity_kWh * b.SOC_max,
                    energy[1:] == energy[:-1] + .25 * (charge * b.charge_efficiency - discharge / b.discharge_efficiency)]
     lines = charge_lines(key, index, grid, account, convex=True, constraints=constraints)
-    due = settlement(lines, grid, exports, index, account, convex=True)
+    # Carried-in credits settle the bill but must not change this cycle's
+    # operating schedule. Newly earned export credits still enter the objective.
+    dispatch_account = dict(account)
+    for name in ('nbt_opening_delivery_eec', 'nbt_opening_generation_eec',
+                 'nbt_opening_acc_plus'):
+        dispatch_account[name] = 0.
+    due = settlement(lines, grid, exports, index, dispatch_account, convex=True)
     degradation = wear * .25 * cp.sum(charge + discharge)
     objective = due + (degradation if include_degradation_in_optimization else 0)
     problem = cp.Problem(cp.Minimize(objective), constraints)
@@ -70,10 +76,11 @@ def optimize(key, inputs, account, start, end, battery, wear, *, include_degrada
     out['battery_discharge_kw'] = np.maximum(discharge.value, 0.)
     out['energy_kWh'] = energy.value[:-1]
     authoritative = bill(key, out, account, start, end)
+    dispatch_bill = bill(key, out, dispatch_account, start, end)
     wear_cost = float(degradation.value)
-    gap = abs(authoritative['total'] + (wear_cost if include_degradation_in_optimization else 0) - optimal)
+    gap = abs(dispatch_bill['total'] + (wear_cost if include_degradation_in_optimization else 0) - optimal)
     if gap > max(.02, abs(optimal) * 1e-6):
         raise ValueError(f'SCE NBT bill and dispatch objective disagree by ${gap:.4f}.')
     return {'baseline_bill': baseline_bill, 'solar_bill': solar_bill, 'bill': authoritative,
             'dispatch': out, 'degradation_cost': wear_cost, 'objective_gap': gap,
-            'optimization_method': 'SCE NBT first-cycle convex bill optimum'}
+            'optimization_method': 'SCE NBT cycle cost before inherited credits'}

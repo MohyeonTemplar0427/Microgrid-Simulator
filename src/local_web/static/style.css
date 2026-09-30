@@ -34,6 +34,37 @@ main{max-width:1540px;margin:auto;padding:42px 5% 60px}.intro{display:flex;justi
 
 .location-note-asterisk{color:#c62828;font-weight:700}
 
+#save-name-dialog{width:min(440px,calc(100vw - 32px));border:1px solid var(--line);border-radius:14px;padding:26px;background:#fff;color:var(--ink);box-shadow:0 18px 60px #172d3733}
+#save-name-dialog::backdrop{background:#172d3766}
+#save-name-dialog h2{margin-bottom:8px}
+#save-name-dialog label{margin:20px 0}
+.dialog-actions{display:flex;justify-content:flex-end;gap:10px}
+.dialog-actions button{width:auto;min-width:100px}
+
 
 #municipal-eligibility { white-space: pre-line; }
 [data-municipal] fieldset { margin: 1rem 0; }
+
+.intro #open-bills{margin-top:18px;font-size:12px}
+.bill-workspace{max-width:990px;margin:0 auto 24px}
+.bill-content{padding:26px;line-height:1.6;font-size:13px}
+.bill-content>p{max-width:750px}
+.bill-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:18px 0}
+.bill-actions .primary{width:auto;margin:0}
+#bill-draft,#bill-reviewed,#bill-report{border-top:1px solid var(--line);margin-top:25px;padding-top:24px}
+#bill-fields,#bill-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin-bottom:20px}
+#bill-fields h4,#bill-services h4{grid-column:1/-1;margin:12px 0 0}
+.bill-service{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;padding:14px;border:1px solid var(--line);border-radius:8px}
+.bill-service h4,.bill-service h5{grid-column:1/-1}
+.bill-line-item{border-top:1px solid var(--line);grid-column:1/-1;padding:12px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}
+.bill-line-item strong{grid-column:1/-1;font-size:12px}
+.bill-field{border:1px solid #e3eae6;border-radius:7px;padding:12px;min-width:0}
+.bill-field label{margin:0 0 7px;font-size:12px;text-transform:none}
+.bill-field-status{font-size:10px;border-radius:10px;padding:3px 7px;background:#eef5ef;color:#365e4b}
+.bill-field-status.missing,.bill-field-status.ambiguous{background:#fff1d9;color:#79540b}
+.bill-evidence{font-size:11px;margin-top:10px;color:var(--muted);overflow-wrap:anywhere}
+.bill-evidence summary{font-weight:600}.bill-evidence p{border-left:2px solid #d7e3dc;padding-left:8px}
+.bill-issue{font-size:12px;margin:7px 0}.bill-issue.error{color:#9d382b}
+.bill-reviewed-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+#bill-report-table td,#bill-report-table th{text-align:left}
+@media(max-width:740px){.bill-content{padding:18px}.bill-workspace .panel-heading{gap:10px;align-items:start;flex-direction:column}}

@@ -80,6 +80,20 @@ def test_optimized_export_physics_and_ledger():
  assert results['storage_self_consumption']['dispatch'].grid_export_kw.max()<1e-6
 
 
+def test_inherited_credits_change_reported_bill_not_storage_dispatch():
+ b=dict(capacity_kWh=4,energy_kWh=.8,SOC_min=.2,SOC_max=.8,max_charge_kw=2,max_discharge_kw=2,charge_efficiency=.95,discharge_efficiency=.95)
+ no_credit=compare(frame(),account(),export_limit_kw=3,battery=b,wear_per_kwh=.01)
+ inherited=compare(frame(),account(),export_limit_kw=3,battery=b,wear_per_kwh=.01,
+                   opening=CreditBalance(generation=1000,delivery=1000,bonus=1000))
+ for scenario in ('storage_self_consumption','storage_with_export'):
+  first,second=no_credit[scenario],inherited[scenario]
+  for column in ('grid_import_kw','grid_export_kw','battery_charge_kw','battery_discharge_kw'):
+   assert np.allclose(first['dispatch'][column],second['dispatch'][column],atol=1e-5)
+  assert second['bill']['amount_due']<=first['bill']['amount_due']
+  assert first['objective_gap']<.02 and second['objective_gap']<.02
+ assert inherited['storage_with_export']['bill']['opening_balance']['generation']==1000
+
+
 def test_export_study_can_optimize_bill_without_pricing_reported_battery_wear():
  b=dict(capacity_kWh=4,energy_kWh=.8,SOC_min=.2,SOC_max=.8,max_charge_kw=2,max_discharge_kw=2,charge_efficiency=.95,discharge_efficiency=.95)
  bill_only=compare(frame(),account(),export_limit_kw=3,battery=b,wear_per_kwh=10)

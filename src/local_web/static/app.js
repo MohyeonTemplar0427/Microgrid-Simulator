@@ -237,6 +237,8 @@ async function api(path, body) {
     document.getElementById("usage-status").hidden=true;
     document.getElementById("sign-out").hidden=true;
     document.querySelector(".workspace").hidden=true;
+    document.getElementById("bill-workspace").hidden=true;
+    window.billUI?.clear(false);
     throw new Error("Sign in to access your private studies.");
   }
   if (!response.ok) throw new Error(result.error || `Request failed (${response.status})`);
@@ -343,7 +345,8 @@ form.addEventListener("submit",async event=>{
   if(wizardIndex < wizardPages().length-1) { advanceWizard(); return; }
   if(!validateWizard()) return;
   $("form-error").hidden=true; $("run-button").disabled=true;
-  try { const study=window.socalUI?.active()?await window.socalUI.submit():window.municipalUI?.active()?await window.municipalUI.submit():await api("/api/studies",readRequest()); await selectStudy(study.id); await history(); }
+  field('name').value='Untitled study';
+  try { const study=window.socalUI?.active()?await window.socalUI.submit():window.municipalUI?.active()?await window.municipalUI.submit():await api("/api/studies?draft=1",readRequest()); await selectStudy(study.id); await history(); }
   catch(error) { showError("form-error",error); }
   finally { $("run-button").disabled=false; }
 });
@@ -386,8 +389,8 @@ async function refreshStudy(id) {
     $("cancel-study").hidden=!["queued","running"].includes(study.status);
     $("delete-study").hidden=!["completed","failed","cancelled"].includes(study.status);
     $("reuse").hidden=study.request.schema_version===7;
-    $("save-study").hidden=!(study.status==="completed" && capabilities?.auth_mode==="oidc" && !study.saved);
-    $("save-study").textContent=capabilities?.account_type==="guest" ? "Save to my profile · Sign in" : "Save to my profile";
+    $("save-study").hidden=!(study.status==="completed" && !study.saved);
+    $("save-study").textContent=capabilities?.account_type==="guest" ? "Save result · Sign in" : "Save result";
     $("cancel-study").disabled=false;
     $("progress").textContent=study.status==="completed"
       ? (study.request.schema_version===7
@@ -559,13 +562,17 @@ let wizardIndex=0, wizardReached=0;
 async function initialize() {
   try {
     capabilities=await api("/api/capabilities");
+    window.billUI?.setAccount(capabilities.account_type);
     document.getElementById("sign-out").hidden=capabilities.account_type!=="member";
     const pendingSave=sessionStorage.getItem("microgrid-pending-save");
     if(pendingSave && capabilities.account_type==="member") {
       sessionStorage.removeItem("microgrid-pending-save");
       try {
-        await api(`/api/studies/${pendingSave}/save`,{});
-        window.location.hash=pendingSave;
+        let pending;
+        try {pending=JSON.parse(pendingSave);} catch {pending={id:pendingSave};}
+        if(!/^[0-9a-f]{32}$/.test(pending.id))throw new Error('The pending study identifier is invalid.');
+        await api(`/api/studies/${pending.id}/save`,pending.name?{name:pending.name}:{});
+        window.location.hash=pending.id;
       } catch(error) {
         showError("connection",new Error(`The temporary study could not be saved: ${error.message}`));
       }
@@ -587,8 +594,8 @@ async function initialize() {
     document.title = hosted ? "Microgrid Simulator · Private studies" : "Microgrid Simulator · Local studies";
     $("engine-info").textContent=`Engine ${capabilities.engine.id.slice(0,12)} · Development snapshot · ${hosted ? "Private studies on the server" : "Studies saved on this computer"}`;
     document.querySelector(".run-hint").textContent = hosted
-      ? (capabilities.temp_result_hours ? `Runs on the server. Unsaved results expire ${capabilities.temp_result_hours} hours after completion.` : "Runs on the server. You may close this browser tab and return to your saved study later.")
-      : "Runs on this computer. Keep the local service running; you may close this browser tab.";
+      ? (capabilities.temp_result_hours ? `Runs on the server. Select Save result after completion to name and keep it. Unsaved results expire ${capabilities.temp_result_hours} hours after completion.` : "Runs on the server. Select Save result after completion to name and keep it.")
+      : `Runs on this computer. Select Save result after completion to name and keep it. Unsaved results expire ${capabilities.temp_result_hours || 24} hours after completion.`;
     $("credentials-note").textContent=capabilities.nsrdb_configured
       ? "Historical weather retrieval is configured on the server. Retrieval contacts NSRDB."
       : hosted ? "Historical weather retrieval is not configured. Contact the site administrator."
@@ -598,13 +605,27 @@ async function initialize() {
   } catch(error) {showError("connection",error);}
 }
 initialize();
+function askStudyName() {
+  const dialog=$('save-name-dialog'),input=$('save-name-input');
+  input.value='';dialog.returnValue='';dialog.showModal();input.focus();
+  return new Promise(resolve=>dialog.addEventListener('close',()=>resolve(
+    dialog.returnValue==='save'?input.value.trim():null),{once:true}));
+}
+const saveNameInput=$('save-name-input');
+saveNameInput.addEventListener('input',()=>saveNameInput.setCustomValidity(''));
+$('save-name-dialog').querySelector('form').addEventListener('submit',event=>{
+  if(event.submitter?.value==='save'&&!saveNameInput.value.trim()){
+    event.preventDefault();saveNameInput.setCustomValidity('Enter a study name.');saveNameInput.reportValidity();
+  }
+});
 $("save-study").addEventListener("click",async()=>{
   if(!activeId || activeStudy?.status!=="completed") return;
+  const name=await askStudyName();if(!name)return;
   if(capabilities?.account_type==="guest") {
-    sessionStorage.setItem("microgrid-pending-save",activeId);
+    sessionStorage.setItem("microgrid-pending-save",JSON.stringify({id:activeId,name}));
     window.location.assign("/auth/login");
-  } else if(capabilities?.account_type==="member") {
-    try { await api(`/api/studies/${activeId}/save`,{}); await refreshStudy(activeId); }
+  } else {
+    try { await api(`/api/studies/${activeId}/save`,{name}); await refreshStudy(activeId); await history(); }
     catch(error) { showError("run-error",error); }
   }
 });
@@ -635,7 +656,7 @@ function serviceForSelection(selection) {
 }
 function resetUtilityOptions(saved="unconfirmed") {
   locationResolution=null;window.municipalUI?.invalidateResolution();window.socalUI?.invalidate();
-  field("utility").replaceChildren(option("unconfirmed","Choose a location in Step 2 first"));
+  field("utility").replaceChildren(option("unconfirmed","Choose a location in Step 1 first"));
   if(saved && saved!=="unconfirmed")field("utility").append(option(saved,`${serviceForSelection(saved)?.label||saved} · saved choice, awaiting location check`));
   field("utility").value=saved||"unconfirmed";
 }
@@ -672,7 +693,7 @@ async function refreshUtilities(generation,saved="unconfirmed") {
   const latitude=field('latitude'),longitude=field('longitude');
   if(!latitude.value||!longitude.value||!latitude.checkValidity()||!longitude.checkValidity())return;
   const coordinates={latitude:Number(latitude.value),longitude:Number(longitude.value)};
-  $('utility-suggestion').textContent='Matching Step 2 coordinates to electricity territories…';
+  $('utility-suggestion').textContent='Matching Step 1 coordinates to electricity territories…';
   try{
     const result=await api('/api/v1/utility-resolution',coordinates);
     if(generation!==locationGeneration||coordinates.latitude!==Number(latitude.value)||coordinates.longitude!==Number(longitude.value))return;
@@ -680,7 +701,7 @@ async function refreshUtilities(generation,saved="unconfirmed") {
   }catch(error){
     if(generation!==locationGeneration)return;
     resetUtilityOptions();updateSiteControls();
-    $('utility-suggestion').textContent=`Territory lookup unavailable: ${error.message}. Retry the Step 2 location lookup; no provider is inferred.`;
+    $('utility-suggestion').textContent=`Territory lookup unavailable: ${error.message}. Retry the Step 1 location lookup; no provider is inferred.`;
   }
 }
 field('utility').addEventListener('change',()=>{
@@ -725,7 +746,7 @@ function renderWizard(focus=false) {
 function validateWizardPage(page) {
   $("form-error").hidden=true;
   if(page.dataset.step==='2'&&template?.schema_version>=2&&(!field('utility').value||field('utility').value==='unconfirmed'||!locationResolution)){
-    showError('form-error',new Error('Wait for the Step 2 territory lookup, then choose a supported electricity service.'));return false;
+    showError('form-error',new Error('Wait for the Step 1 territory lookup, then choose a supported electricity service.'));return false;
   }
   if(window.municipalUI && !window.municipalUI.validate(page))return false;
   if(window.socalUI && !window.socalUI.validate(page))return false;
@@ -802,6 +823,7 @@ function startBlankStudy() {
     else if(input.name==="utility") input.value="unconfirmed";
     else input.value=input.name==="tariff_id"?"__unset__":"";
   }
+  field('name').value='Untitled study';
   for(const box of $("strategies").querySelectorAll("input")) box.checked=box.value==="no_battery";
   field('pv_battery_connection').value='ac_coupled';
   $("location-status").textContent="Enter coordinates or search for your microgrid location.";
@@ -876,7 +898,7 @@ function syncExportControls(){
   if(programs.length){
     const supported=programs.filter(p=>p.simulation_status==='bounded_monthly');
     status.textContent=supported.length&&exportAvailable()
-      ? `Solar export: ${supported.map(p=>p.label).join(', ')} has a limited monthly comparison. Confirm the account program, billing plan and study dates in Step 9.`
+      ? `Solar export: ${supported.map(p=>p.label).join(', ')} has a limited monthly comparison. Confirm the account program, billing plan and study dates in Economics.`
       : supported.length
       ? 'Solar export comparison is currently available only for PG&E bundled residential NBT on a supported plan and study date.'
       : `Solar export: ${programs.map(p=>p.label).join(', ')} identified for this provider, but export billing and dispatch are not yet implemented. Confirm your actual program on the account bill.`;

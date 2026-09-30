@@ -523,6 +523,10 @@ class Store:
         result = dict(row)
         directory = self.directory / "runs" / study_id
         result["request"] = json.loads((directory / "request.json").read_text())
+        if result["saved"]:
+            # A saved title is presentation metadata. Keep the original run
+            # request on disk as provenance while downloads show its title.
+            result["request"]["name"] = result["name"]
         progress = directory / "progress.json"
         result["progress"] = (
             "Stopping the simulation…" if result["status"] == "cancelling" else
@@ -613,7 +617,28 @@ class Store:
                        (status, error, finished.isoformat(), runtime_seconds, expiry, study_id))
             return status
 
-    def save_guest_study(self, study_id, guest_owner, member_owner):
+    @staticmethod
+    def _saved_name(name, existing):
+        if name is None:
+            return existing
+        if not isinstance(name, str) or not 1 <= len(name.strip()) <= 120:
+            raise ValueError("Study name must contain 1–120 characters.")
+        return name.strip()
+
+    def save_local_study(self, study_id, name=None):
+        with self.connect() as db:
+            db.execute("BEGIN IMMEDIATE")
+            row = db.execute("SELECT status,name,saved,expires_at FROM studies WHERE id=? AND owner_id IS NULL",
+                             (study_id,)).fetchone()
+            if row is None or row["status"] != "completed" or (
+                    not row["saved"] and row["expires_at"] <= now()):
+                raise FileNotFoundError("Temporary study not found or no longer available.")
+            title = self._saved_name(name, row["name"])
+            db.execute("UPDATE studies SET name=?, saved=1, expires_at=NULL WHERE id=?",
+                       (title, study_id))
+        return self.get(study_id)
+
+    def save_guest_study(self, study_id, guest_owner, member_owner, name=None):
         if not is_guest(guest_owner) or is_guest(member_owner) or member_owner is None:
             raise FileNotFoundError("Study not found.")
         with self.connect() as db:
@@ -661,23 +686,25 @@ class Store:
                     and (kind, resource["id"]) not in already and path_for(resource["id"]).exists())
                 if existing + added > cap:
                     raise CapacityError("Your profile storage is full. Contact the site administrator.", None)
-            db.execute("UPDATE studies SET owner_id=?, saved=1, expires_at=NULL WHERE id=?",
-                       (member_owner, study_id))
+            title = self._saved_name(name, row["name"])
+            db.execute("UPDATE studies SET owner_id=?, name=?, saved=1, expires_at=NULL WHERE id=?",
+                       (member_owner, title, study_id))
             for resource in grants:
                 db.execute("INSERT OR IGNORE INTO resource_owners VALUES (?,?,?,?)",
                            (resource["kind"], resource["id"], member_owner, resource["metadata"]))
         return self.get(study_id, member_owner)
 
-    def save_member_study(self, study_id, member_owner):
+    def save_member_study(self, study_id, member_owner, name=None):
         if member_owner is None or is_guest(member_owner):
             raise FileNotFoundError("Temporary study not found.")
         with self.connect() as db:
             db.execute("BEGIN IMMEDIATE")
-            row = db.execute("SELECT status,saved,expires_at FROM studies WHERE id=? AND owner_id=?",
+            row = db.execute("SELECT status,name,saved,expires_at FROM studies WHERE id=? AND owner_id=?",
                              (study_id, member_owner)).fetchone()
             if row is None or row["status"] != "completed" or (not row["saved"] and row["expires_at"] <= now()):
                 raise FileNotFoundError("Temporary study not found or no longer available.")
-            db.execute("UPDATE studies SET saved=1, expires_at=NULL WHERE id=?", (study_id,))
+            title = self._saved_name(name, row["name"])
+            db.execute("UPDATE studies SET name=?, saved=1, expires_at=NULL WHERE id=?", (title, study_id))
         return self.get(study_id, member_owner)
 
     def purge_expired_studies(self):
