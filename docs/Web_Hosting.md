@@ -175,11 +175,13 @@ limits are now prepared. Controls for long interactive requests remain pending
 in workstream 3.
 Waitress's parser limits and fixed thread count do not replace those controls.
 
-Finished-study deletion and short-lived quota tombstones are prepared. Backups,
-restore testing, dataset/weather deletion, and storage deployment policy remain
-workstream 4; reproducible packaging, service supervision and full server-environment
-validation remain workstream 5. No automatic deployment, container infrastructure,
-or public firewall changes are included here. Billing rates, date coverage, and
+Finished-study deletion and short-lived quota tombstones are prepared. A
+[provider-neutral deployment package](Web_Deployment_Package.md) now includes
+Linux service templates and offline backup/restore with seven-day pruning.
+Automated backup scheduling, dataset/weather deletion, host-specific storage
+sizing, transitive dependency locking, and full server validation remain. No
+automatic deployment, container infrastructure, or public firewall changes are
+included here. Billing rates, date coverage, and
 solar-model limitations remain unchanged.
 
 Sources: [Waitress proxy settings](https://docs.pylonsproject.org/projects/waitress/en/latest/reverse-proxy.html),

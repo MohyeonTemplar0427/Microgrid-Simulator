@@ -27,10 +27,10 @@ process.stdout.write(JSON.stringify(request));
 """
 
 
-def browser_payload(capabilities, resolution_id, program, start_date):
+def browser_payload(capabilities, resolution_id, program, start_date, *, pv_choice='yes', include_battery=False):
     values = {
         'name': f'Synthetic {program} browser submission',
-        'utility': 'sce', 'pv_choice': 'yes',
+        'utility': 'sce', 'pv_choice': pv_choice,
         'start_date': start_date, 'end_date': start_date,
         'degradation_cost_per_kWh': '0',
         'sc_generation': 'bundled', 'sc_tariff_id': 'sce_tou-d-prime',
@@ -57,6 +57,9 @@ def browser_payload(capabilities, resolution_id, program, start_date):
         'sc_pac_tier': '1', 'sc_annual_average_kwh': '500',
         'sc_load_mode': 'daily_peak', 'sc_base_kw': '1', 'sc_peak_kw': '2',
         'sc_peak_start_hour': '16', 'sc_peak_end_hour': '21',
+        'capacity_kWh': '10', 'energy_kWh': '5', 'SOC_min': '0.1',
+        'SOC_max': '0.9', 'max_charge_kw': '3', 'max_discharge_kw': '3',
+        'charge_efficiency': '0.95', 'discharge_efficiency': '0.95',
     }
     checks = {f'sc_{name}': True for name in (
         'eligibility_confirmed', 'ordinary_account_confirmed',
@@ -65,12 +68,26 @@ def browser_payload(capabilities, resolution_id, program, start_date):
         'nbt_bonus_confirmed', 'sce_nem_legacy_confirmed',
         'sce_nem_credit_confirmed',
     )}
+    checks['sc_include_battery'] = include_battery
     fixture = dict(values=values, checks=checks, capabilities=capabilities,
                    resolution_id=resolution_id)
     result = subprocess.run(['node', '-e', NODE_DRIVER, str(FORM_SCRIPT)],
                             input=json.dumps(fixture), text=True,
                             capture_output=True, check=True)
     return json.loads(result.stdout)
+
+
+def test_socal_battery_only_and_grid_only_choices_survive_form_submission():
+    capabilities = {'socal': {'plans': [{'id': 'sce_tou-d-prime'}]}}
+    storage = browser_payload(capabilities, 'a' * 32, 'sce_nbt', '2025-07-07', pv_choice='storage')
+    assert storage['account']['solar_program'] == 'none'
+    assert storage['solar']['capacity_kw'] == 0
+    assert storage['battery']['capacity_kWh'] == 10
+    grid = browser_payload(capabilities, 'a' * 32, 'sce_nbt', '2025-07-07',
+                           pv_choice='no', include_battery=True)
+    assert grid['account']['solar_program'] == 'none'
+    assert grid['solar']['capacity_kw'] == 0
+    assert grid['battery'] is None
 
 
 @pytest.mark.parametrize('program,start_date', [

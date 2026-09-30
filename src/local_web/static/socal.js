@@ -6,11 +6,12 @@ function buildSocalRequest({field,siteCustomerClass,siteProfile,gridOnly,capabil
 
   if(!savedResolution)throw new Error('Save service confirmation first.');
   if(!f('generation').value)throw new Error('Select your generation provider.');
+  const pvChoice=field('pv_choice').value;
   const selectedPlan=capabilities.socal.plans.find(p=>p.id===f('tariff_id').value);
-  if(field('pv_choice').value==='yes'&&(f('solar_program').value==='none'||selectedPlan?.solar_programs&&!selectedPlan.solar_programs.includes(f('solar_program').value)))throw new Error('The selected Billing Plan does not support this PV program. Choose a supported plan or explicitly select no PV / storage only.');
+  if(pvChoice==='yes'&&(f('solar_program').value==='none'||selectedPlan?.solar_programs&&!selectedPlan.solar_programs.includes(f('solar_program').value)))throw new Error('The selected Billing Plan does not support this PV program. Choose a supported plan or explicitly select no PV / storage only.');
   if(f('generation').value==='cca'&&f('mode').value!=='hypothetical_bundled')throw new Error('Actual CCA bills are unsupported; choose an explicitly hypothetical bundled comparison.');
-  if(['sce_nbt','sce_nem'].includes(f('solar_program').value)&&f('generation').value!=='bundled')throw new Error('SCE bundled solar settlement requires confirmed SCE generation. CCA solar settlement is separate.');
-  const a={customer_class:siteCustomerClass(),reference:f('reference').value,generation_provider:field('utility').value,actual_generation_provider:f('generation').value,solar_program:f('solar_program').value,voltage:f('voltage').value,phase:f('phase').value,local_tax_percent:numeric('local_tax_percent'),billing_month_factor:numeric('month_factor')};
+  if(pvChoice==='yes'&&['sce_nbt','sce_nem'].includes(f('solar_program').value)&&f('generation').value!=='bundled')throw new Error('SCE bundled solar settlement requires confirmed SCE generation. CCA solar settlement is separate.');
+  const a={customer_class:siteCustomerClass(),reference:f('reference').value,generation_provider:field('utility').value,actual_generation_provider:f('generation').value,solar_program:pvChoice==='yes'?f('solar_program').value:'none',voltage:f('voltage').value,phase:f('phase').value,local_tax_percent:numeric('local_tax_percent'),billing_month_factor:numeric('month_factor')};
   for(const n of ['eligibility_confirmed','ordinary_account_confirmed','cycle_confirmed','tax_confirmed','region_confirmed','interconnection_confirmed','nem_credit_confirmed','nbt_first_cycle_confirmed','nbt_opening_balances_confirmed','nbt_bonus_confirmed','sce_nem_legacy_confirmed','sce_nem_credit_confirmed','heat_pump_water','non_cpp_confirmed','reactive_charge_exempt_confirmed','gwp_individual_meter_confirmed','gwp_allocation_confirmed','storage_schedule_confirmed','gwp_demand_history_confirmed','pwp_flat_enrollment_confirmed','pwp_r2_qualification_confirmed','pwp_storage_confirmed','alw_ordinary_meter_confirmed','alw_storage_confirmed','bwp_ecac_confirmed','bwp_ev_confirmed','bwp_c_confirmed','ipu_domestic_confirmed','municipal_storage_confirmed'])a[n]=f(n).checked;
   if(a.solar_program==='ladwp_nem')a.nem_opening_credit=numeric('nem_opening_credit');
   for(const n of ['nbt_vintage','nbt_interconnection_request_date','nbt_pto_date','nbt_bonus_status'])a[n]=f(n).value;
@@ -23,7 +24,7 @@ function buildSocalRequest({field,siteCustomerClass,siteProfile,gridOnly,capabil
   a.bwp_service_size=f('bwp_service_size').value;
   a.gwp_historical_peak_floor_kw=f('gwp_historical_peak_floor_kw').value===''?null:Number(f('gwp_historical_peak_floor_kw').value);
   a.previous_11_month_peaks_kw=f('history').value.trim()?f('history').value.split(',').map(Number):[];
-  const battery=f('include_battery').checked?Object.fromEntries(['capacity_kWh','energy_kWh','SOC_min','SOC_max','max_charge_kw','max_discharge_kw','charge_efficiency','discharge_efficiency'].map(k=>[k,Number(field(k).value)])):null;
+  const battery=pvChoice==='storage'||(pvChoice==='yes'&&f('include_battery').checked)?Object.fromEntries(['capacity_kWh','energy_kWh','SOC_min','SOC_max','max_charge_kw','max_discharge_kw','charge_efficiency','discharge_efficiency'].map(k=>[k,Number(field(k).value)])):null;
   const load=f('load_mode').value==='csv'?{mode:'csv',csv:loadCsv}:{mode:'daily_peak',...Object.fromEntries(['base_kw','peak_kw','peak_start_hour','peak_end_hour'].map(k=>[k,numeric(k)]))};
   return {schema_version:6,name:field('name').value,resolution_id:savedResolution.resolution_id,mode:f('mode').value,tariff_id:f('tariff_id').value,account:a,site_profile:siteProfile(),start_date:field('start_date').value,end_date:field('end_date').value,timezone:'America/Los_Angeles',timestep_minutes:15,load,solar:{capacity_kw:a.solar_program==='none'?0:numeric('pv_kw'),tilt:a.solar_program==='none'?20:numeric('tilt'),azimuth:a.solar_program==='none'?180:numeric('azimuth')},battery,degradation_cost_per_kWh:gridOnly()?0:Number(field('degradation_cost_per_kWh').value),include_degradation_in_optimization:!gridOnly()&&field('include_degradation_in_optimization').checked};
 }
@@ -116,10 +117,11 @@ if(typeof document!=='undefined')(() => {
   $('socal-region-confirm').hidden=$('socal-ladwp-region').hidden&&$('socal-sce-region').hidden;
   $('socal-history').hidden=field('utility').value!=='ladwp';
   for(const o of f('solar_program').options)o.disabled=(!!p?.solar_programs&&!p.solar_programs.includes(o.value))||(['sce_nbt','sce_nem'].includes(o.value)&&(field('utility').value!=='sce'||siteCustomerClass()!=='residential'||!!p&&p.id!=='sce_tou-d-prime'||f('generation').value!=='bundled'))||(o.value==='ladwp_nem'&&(field('utility').value!=='ladwp'||siteCustomerClass()!=='residential'||!!p&&p.id!=='ladwp_r-1a'||f('generation').value!=='bundled'));
+  if(field('pv_choice').value!=='yes')f('solar_program').value='none';
   $('socal-nem').hidden=f('solar_program').value!=='ladwp_nem';
   $('socal-nbt').hidden=f('solar_program').value!=='sce_nbt';
   $('socal-sce-nem').hidden=f('solar_program').value!=='sce_nem';
-  $('socal-include-battery').hidden=f('solar_program').value==='sce_nem';
+  $('socal-include-battery').hidden=field('pv_choice').value!=='yes'||f('solar_program').value==='sce_nem';
   if(f('solar_program').value==='sce_nem')f('include_battery').checked=false;
   field('pv_choice').querySelector('option[value="yes"]').textContent='Yes — configure PV and optional battery / ESS';
   $('socal-nbt-opening').hidden=f('nbt_first_cycle_confirmed').checked;
@@ -157,7 +159,7 @@ if(typeof document!=='undefined')(() => {
   for(const n of ['name','start_date','end_date'])field(n).value=r[n];field('latitude').value=r.resolution.coordinates.latitude;field('longitude').value=r.resolution.coordinates.longitude;field('location_query').value='';siteLabel='Saved site coordinates';$('location-status').textContent=siteLabel;
   field('pv_choice').value=r.solar.capacity_kw?'yes':r.battery?'storage':'no';locationResolution={...r.resolution,resolution_id:r.resolution_id};lastChoice='';sync();
   for(const [k,v]of Object.entries(r.account)){const x=f(k);if(x){if(x.type==='checkbox')x.checked=v;else x.value=v;}}
-  f('include_battery').checked=!!r.battery&&r.solar.capacity_kw>0;
+  f('include_battery').checked=!!r.battery;
   f('baseline_region').value=r.account.baseline_region||'';f('month_factor').value=r.account.billing_month_factor;f('history').value=(r.account.previous_11_month_peaks_kw||[]).join(',');f('tariff_id').value=r.tariff_id;f('mode').value=r.mode;f('generation').value=r.account.actual_generation_provider||'bundled';
   for(const [k,v]of Object.entries(r.battery||{}))field(k).value=v;
   for(const k of ['base_kw','peak_kw','peak_start_hour','peak_end_hour'])if(r.load[k]!==undefined)f(k).value=r.load[k];f('load_mode').value=r.load.mode;loadCsv=r.load.csv||null;
@@ -168,5 +170,5 @@ if(typeof document!=='undefined')(() => {
  f('load_file').addEventListener('change',async()=>{loadCsv=f('load_file').files[0]?await f('load_file').files[0].text():null;});
  $('socal-confirm').addEventListener('click',async()=>{const button=$('socal-confirm');button.disabled=true;$('form-error').hidden=true;$('socal-resolution').textContent='Saving service evidence…';try{await confirm();}catch(e){showError('form-error',e);}finally{button.disabled=false;}});
  function validatePage(p){if(!active())return true;if(p.dataset.step==='2'&&f('generation').value==='cca'&&f('mode').value==='actual_service'){showError('form-error',new Error('Actual CCA billing is unsupported. Choose a separately labeled hypothetical bundled comparison.'));return false;}if(p.dataset.step==='2'&&!savedResolution){showError('form-error',new Error('Save service confirmation and wait for the evidence status before continuing.'));return false;}return true;}
- window.socalUI={validate:validatePage,active,sync,restore,reset,defaults,invalidate,batteryEnabled:()=>f('include_battery').checked,submit:()=>api('/api/v1/socal/studies',request())};
+ window.socalUI={validate:validatePage,active,sync,restore,reset,defaults,invalidate,batteryEnabled:()=>field('pv_choice').value==='storage'||(field('pv_choice').value==='yes'&&f('include_battery').checked),submit:()=>api('/api/v1/socal/studies',request())};
 })();

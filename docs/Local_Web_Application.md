@@ -20,8 +20,9 @@ ledger; net-export cycles and R-1B NEM remain unsupported.
 
 The launcher now uses Waitress. Explicit hosted mode prepares a same-host HTTPS
 proxy and requires OIDC; the backend still binds only to 127.0.0.1. See
-[Web hosting preparation](Web_Hosting.md) for configuration and remaining release
-requirements. Nothing is publicly deployed by these changes.
+[Web hosting preparation](Web_Hosting.md) and the
+[provider-neutral deployment package](Web_Deployment_Package.md) for configuration
+and remaining release requirements. Nothing is publicly deployed by these changes.
 
 ## Current access-control checkpoint
 

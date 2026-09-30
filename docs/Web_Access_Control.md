@@ -164,9 +164,10 @@ CSRF/origin checks, ownerless migration, cross-user routes/IDs/downloads,
 credential redaction, and authorized real worker completion.
 
 Later checkpoints added Waitress/HTTPS-proxy preparation, queue and usage
-controls, and owner-checked deletion of finished studies. Backups and restore
-testing, deletion of uploaded datasets and cached weather, reproducible
-deployment, and validation on the selected host remain. There is no
+controls, and owner-checked deletion of finished studies. Offline backup/restore
+and Linux service templates are now prepared, but scheduled backups, deletion
+of uploaded datasets and cached weather, reproducible host-specific dependencies,
+and validation on the selected host remain. There is no
 provider-based account administration yet. Do not expose this server publicly.
 
 Billing/modeling scope is unchanged: PG&E solar billing is a bounded monthly

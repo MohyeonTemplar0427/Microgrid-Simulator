@@ -197,8 +197,10 @@ indefinitely; all temporary files still count against storage quotas until then.
 Queued temporary jobs are also removed after 24 hours if they never run.
 These limits are provisional and must be reviewed against the selected host and
 actual workload. Candidate data, utility caches, engine snapshots, the SQLite
-database, and backups are not covered by these category caps; backups,
-dataset/weather deletion, and host-level disk controls remain deployment blockers.
+database, and backups are not covered by these category caps. The
+[deployment package](Web_Deployment_Package.md) prepares offline backups and
+seven-day pruning, but scheduling, dataset/weather deletion, and host-level disk
+controls remain deployment blockers.
 
 ## Deleting a finished study
 
@@ -214,8 +216,9 @@ available to their owners; this action does not delete those resources.
 For two days the database retains only a minimal quota record: opaque owner ID,
 timestamps, duration and a scrubbed study name. This prevents deleting a study
 from resetting the daily simulation limit. The janitor then removes that record.
-Deletion does not reach any independently retained administrator backup;
-backup retention and restore policy still need to be defined before hosting.
+Deletion does not reach an independently retained administrator backup. The
+provider-neutral package sets a seven-day backup retention procedure and an
+offline restore check; automatic scheduling and host validation remain pending.
 
 ## Verification
 
