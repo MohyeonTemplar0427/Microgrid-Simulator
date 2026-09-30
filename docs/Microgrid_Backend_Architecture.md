@@ -1,5 +1,8 @@
 # Microgrid backend architecture
 
+Customer PDF observations are handled separately from simulated tariffs and
+interval-native load; see [Measured bill analysis](Measured_Bill_Analysis.md).
+
 Reference for the time-series, surplus, metering and tariff layers. Covers the
 conventions that are decisions rather than derivations — the things a reader
 cannot recover from the code alone.

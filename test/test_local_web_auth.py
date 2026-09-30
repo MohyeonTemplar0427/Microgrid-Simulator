@@ -104,6 +104,7 @@ def test_guest_study_is_private_then_saved_after_sign_in(tmp_path):
         status, caps, headers = call('/api/capabilities')
         assert status == 200 and caps['account_type'] == 'guest'
         guest = {'Cookie': headers['Set-Cookie'].split(';')[0], 'X-Study-Token': caps['token']}
+        assert call('/api/v1/bills/extract', {'pdf_base64': 'not-a-bill'}, guest)[0] == 401
         _, other_caps, other_headers = call('/api/capabilities')
         other = {'Cookie': other_headers['Set-Cookie'].split(';')[0], 'X-Study-Token': other_caps['token']}
         request = deepcopy(caps['defaults'])

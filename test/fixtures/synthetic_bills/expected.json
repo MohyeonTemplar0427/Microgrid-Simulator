@@ -1,0 +1,107 @@
+{
+  "synthetic_bill_march_2026_5min.pdf": {
+    "minutes": 5,
+    "interval_count": 8916,
+    "period_start": "2026-03-01",
+    "period_end": "2026-03-31",
+    "billing_days": 31,
+    "timezone": "America/Los_Angeles",
+    "utility": "Sample Grid",
+    "tariff": "SYN-COM-TOU-D",
+    "tou_kwh": {
+      "Peak": 299.417,
+      "Part Peak": 60.3,
+      "Off Peak": 439.9
+    },
+    "meter_import_kwh": 799.617,
+    "maximum_demand_kw": 2.7,
+    "export_kwh": 186.25,
+    "export_credit_usd": -12.11,
+    "electric_charges_usd": 200.07,
+    "interval_attachment_sha256": "5fa99281cd466935f44cf0242cb883f270a6700d69d7a2e4eba9f1b6991beba6"
+  },
+  "synthetic_bill_march_2026_10min.pdf": {
+    "minutes": 10,
+    "interval_count": 4458,
+    "period_start": "2026-03-01",
+    "period_end": "2026-03-31",
+    "billing_days": 31,
+    "timezone": "America/Los_Angeles",
+    "utility": "Sample Grid",
+    "tariff": "SYN-COM-TOU-D",
+    "tou_kwh": {
+      "Peak": 299.417,
+      "Part Peak": 60.3,
+      "Off Peak": 439.9
+    },
+    "meter_import_kwh": 799.617,
+    "maximum_demand_kw": 2.3,
+    "export_kwh": 186.25,
+    "export_credit_usd": -12.11,
+    "electric_charges_usd": 196.87,
+    "interval_attachment_sha256": "3bb6d82dd5d7af052d462405d4419fba64b7d1b4f38f44385afbc642079ee563"
+  },
+  "synthetic_bill_march_2026_15min.pdf": {
+    "minutes": 15,
+    "interval_count": 2972,
+    "period_start": "2026-03-01",
+    "period_end": "2026-03-31",
+    "billing_days": 31,
+    "timezone": "America/Los_Angeles",
+    "utility": "Sample Grid",
+    "tariff": "SYN-COM-TOU-D",
+    "tou_kwh": {
+      "Peak": 299.417,
+      "Part Peak": 60.3,
+      "Off Peak": 439.9
+    },
+    "meter_import_kwh": 799.617,
+    "maximum_demand_kw": 2.433,
+    "export_kwh": 186.25,
+    "export_credit_usd": -12.11,
+    "electric_charges_usd": 197.93,
+    "interval_attachment_sha256": "05db18769aac7d4c44a5a428a7ccf06effbd938b29a44addbe4cdd626e5121da"
+  },
+  "synthetic_bill_march_2026_30min.pdf": {
+    "minutes": 30,
+    "interval_count": 1486,
+    "period_start": "2026-03-01",
+    "period_end": "2026-03-31",
+    "billing_days": 31,
+    "timezone": "America/Los_Angeles",
+    "utility": "Sample Grid",
+    "tariff": "SYN-COM-TOU-D",
+    "tou_kwh": {
+      "Peak": 299.417,
+      "Part Peak": 60.3,
+      "Off Peak": 439.9
+    },
+    "meter_import_kwh": 799.617,
+    "maximum_demand_kw": 2.167,
+    "export_kwh": 186.25,
+    "export_credit_usd": -12.11,
+    "electric_charges_usd": 195.81,
+    "interval_attachment_sha256": "42c25c6c6481aa1f1d7688b7eb101a1ee79fe02d866b9b8109bea949bdf0fa53"
+  },
+  "synthetic_bill_march_2026_60min.pdf": {
+    "minutes": 60,
+    "interval_count": 743,
+    "period_start": "2026-03-01",
+    "period_end": "2026-03-31",
+    "billing_days": 31,
+    "timezone": "America/Los_Angeles",
+    "utility": "Sample Grid",
+    "tariff": "SYN-COM-TOU-D",
+    "tou_kwh": {
+      "Peak": 299.417,
+      "Part Peak": 60.3,
+      "Off Peak": 439.9
+    },
+    "meter_import_kwh": 799.617,
+    "maximum_demand_kw": 2.033,
+    "export_kwh": 186.25,
+    "export_credit_usd": -12.11,
+    "electric_charges_usd": 194.73,
+    "interval_attachment_sha256": "a389c6684b0ba1c5069a246f4e00101571384ad18d1d242bf0037661fca561df"
+  }
+}

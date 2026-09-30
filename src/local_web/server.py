@@ -1,6 +1,8 @@
 """Waitress-hosted browser/API with explicit local or HTTPS-proxy mode."""
 
 import argparse
+import base64
+import binascii
 from copy import deepcopy
 from email.message import Message
 from http import HTTPStatus
@@ -279,6 +281,33 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 if not 0 < length <= MAX_BODY:
                     raise ValueError("Request must be nonempty and at most 20 MB.")
                 body = json.loads(self.rfile.read(length))
+                bill_path = urlsplit(self.path).path
+                if bill_path in {"/api/v1/bills/extract", "/api/v1/bills/review", "/api/v1/bills/analyze"}:
+                    # These endpoints are backend-only for now. Raw PDFs are
+                    # processed in memory and never enter the dataset/run store.
+                    if self.is_guest:
+                        raise AuthenticationRequired("Sign in before analyzing a private bill.")
+                    if not isinstance(body, dict):
+                        raise ValueError("Supply a bill-analysis JSON object.")
+                    if bill_path.endswith("/extract"):
+                        if set(body) != {"pdf_base64"} or not isinstance(body["pdf_base64"], str):
+                            raise ValueError("Supply only pdf_base64 for extraction.")
+                        try:
+                            content = base64.b64decode(body["pdf_base64"], validate=True)
+                        except (binascii.Error, ValueError) as exc:
+                            raise ValueError("pdf_base64 must contain valid base64 PDF bytes.") from exc
+                        from ..bill_analysis import extract_bill
+                        return self.respond(200, application.interactive(extract_bill, content))
+                    if bill_path.endswith("/review"):
+                        if set(body) != {"draft", "corrections", "approve"} or not isinstance(body["approve"], bool):
+                            raise ValueError("Supply draft, corrections and approve.")
+                        from ..bill_analysis import apply_corrections
+                        return self.respond(200, apply_corrections(body["draft"], body["corrections"],
+                                                                    approve=body["approve"]))
+                    if set(body) != {"bills"}:
+                        raise ValueError("Supply only approved bills for analysis.")
+                    from ..bill_analysis import analyze_bills
+                    return self.respond(200, analyze_bills(body["bills"]))
                 if allow_guests and self.is_guest and urlsplit(self.path).path in {
                     "/api/location", "/api/weather", "/api/utilities", "/api/ess/resolve",
                     "/api/solar/optimize", "/api/v1/utility-resolution",
