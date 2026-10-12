@@ -1,0 +1,51 @@
+Schedule TOU-DR2 - Residential Time of Use Service Effective 6/1/2025
+This schedule provides a time-of-use option for residential customers.
+
+SCHEDULE TOU-DR2                                                                                                                                                                                 Schedule           Schedule            Total
+                                                                                                                                                                                                 WF-NBC +         EECC Rate        Electric Rate
+                                                                                                                                                                                              DWR-BC Rate
+Energy Charges ($/kWh)                                        Transm          Distr          PPP            ND            CTC           LGC             RS           TRAC        UDC Total
+Summer
+On-Peak                                                        0.07503       0.19568        0.02101       0.00001        0.00030       0.00758        0.00001       0.00092        0.30054            0.00595          0.43635           0.74284
+Off-Peak                                                       0.07503       0.19568        0.02101       0.00001        0.00030       0.00758        0.00001      (0.00738)       0.29224            0.00595          0.14442           0.44261
+
+Up to 130% of Baseline Adjustment Credit                       0.00000       0.00000        0.00000       0.00000        0.00000       0.00000        0.00000      (0.11017)      (0.11017)                                             (0.11017)
+Winter
+On-Peak                                                        0.07503       0.19568        0.02101       0.00001        0.00030       0.00758        0.00001       0.13340        0.43302            0.00595          0.14748           0.58645
+Off-Peak                                                       0.07503       0.19568        0.02101       0.00001        0.00030       0.00758        0.00001       0.13340        0.43302            0.00595          0.07412           0.51309
+
+Up to 130% of Baseline Adjustment Credit                       0.00000       0.00000        0.00000       0.00000        0.00000       0.00000        0.00000      (0.11017)      (0.11017)                                             (0.11017)
+
+Other Charges/Discounts
+   Minimum Bill                                                  0.000          0.402         0.000          0.000         0.000          0.000         0.000          0.000         0.402              0.000             0.000             0.402
+Notes:
+1) The total rates presented reflect the UDC rates associated with service under Schedule TOU-DR2 and the generation rates associated with Schedule EECC, in addition to the rates associated with Schedules
+DWR-BC and WF-NBC. The UDC rate-by-rate components presented are associated with service under Schedule TOU-DR2 as presented in the utility’s tariff book.
+2) Unbundled customers are those who take generation from other providers, such as Direct Access (DA) or Community Choice Aggregation (CCA). Unbundled customers do not pay SDG&E’s commodity rates. The
+Total Energy Charge for an unbundled customer includes UDC, WF-NBC, DWR-BC and Power Charge Indifference Adjustment (PCIA) rates. PCIA rates by vintage are included below. Please see Schedules DA-
+CRS or CCA-CRS for more information regarding PCIA rates.
+
+
+
+
+RESIDENTIAL PCIA RATE
+                                                  DA           CCA
+Vintage                                        ($/kWh)       ($/kWh)
+2001 Legacy Vintage                           $0.00008
+2009 Vintage                                                ($0.00996)
+2010 Vintage                                                ($0.00629)
+2011 Vintage                                                ($0.00282)
+2012 Vintage                                                 $0.00081
+2013 Vintage                                                 $0.00084
+2014 Vintage                                                 $0.00096
+2015 Vintage                                                 $0.00112
+2016 Vintage                                                 $0.00094
+2017 Vintage                                                ($0.00017)
+2018 Vintage                                                ($0.00713)
+2019 Vintage                                                ($0.01191)
+2020 Vintage                                                ($0.01107)
+2021 Vintage                                                ($0.01364)
+2022 Vintage                                                ($0.01778)
+2023 Vintage                                                ($0.03161)
+2024 Vintage                                                 $0.00210
+2025 Vintage                                                $0.00210

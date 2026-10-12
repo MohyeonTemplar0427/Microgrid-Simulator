@@ -1,6 +1,6 @@
 # Southern California billing candidate
 
-Tariff data version: `socal-2026-09-29.1`. This is a bounded recurring-bill and dispatch implementation, not complete reproduction of every account bill. See the handoff for the tested engine pin and browser cases.
+Tariff data version: `socal-2026-10-11.1`. This is a bounded recurring-bill and dispatch implementation, not complete reproduction of every account bill. See the handoff for the tested engine pin and browser cases.
 
 ## Implemented schedules and coverage
 
@@ -85,3 +85,13 @@ The November 15, 2025 boundary switches the pre-BSC basic/minimum rules to the d
 **Remaining allocation limitation:** baseline quantities and minimum charges across rate or seasonal changes use day-prorated subperiods. Preliminary H includes consumption-based seasonal allocation; exact utility meter-read reconciliation across these boundaries is not implemented. The result explicitly warns about this approximation. A negative bill exposes amount due and remaining credit separately, without claiming a multi-bill carry-forward ledger.
 
 See [historical sources](utility_sources/socal/history_2025/README.md) and [validation](validation/SCE_Residential_Refinement.md). CCA, additional municipal providers and export settlement remain deferred.
+
+## San Diego residential extension
+
+The shared Southern California workflow also supports bounded SDG&E TOU-DR1,
+TOU-DR2 and EV-TOU-5 imports with separately confirmed SDCP/CEA generation.
+See [San Diego scope, dated sources and exclusions](San_Diego.md). June
+1–October 11, 2026 coverage is distinct from the LADWP/SCE windows above.
+CCA accounts inside City of San Diego limits and nonzero local UUT are not
+enabled until their fee/tax ordering is reconciled. Solar export and commercial
+plans are separate future work.

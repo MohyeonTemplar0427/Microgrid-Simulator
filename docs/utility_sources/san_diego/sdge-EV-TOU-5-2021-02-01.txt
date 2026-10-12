@@ -1,0 +1,25 @@
+Service for Residential Customers with Electric Vehicles
+SDG&E provides additional options available for residential customers with electric vehicles.  Schedule EV-TOU-5 is SDG&E's residential rate with a basic service fee for customers with an electric car or
+who use electricity to run a natural gas home fueling pump. The car must be registered with the California Department of Motor Vehicles.
+
+Schedule EV-TOU-5 - DOMESTIC TIME-OF-USE FOR HOUSEHOLDS WITH ELECTRIC VEHICLES provides domestic residential service for customers who own qualifying electric vehicles.
+Effective 2/1/2021
+
+SCHEDULE EV-TOU-5                                                                                                                                                                                Schedule          Schedule           Total
+                                                                                                                                                                                                                    EECC +
+                                                                                                                                                                                              DWR-BC Rate            DWR         Electric Rate
+                                                                                                                                                                                                                 Credit Rate
+Energy Charges ($/kWh)                                           Transm          Distr          PPP           ND            CTC           LGC            RS          TRAC       UDC Total
+Summer
+    On-Peak                                                       0.06444       0.11227       0.01363       0.00007       0.00119       0.01009       (0.00001)      0.00000       0.20168            0.00580        0.35635          0.56383               -
+    Off-Peak                                                      0.06444       0.11227       0.01363       0.00007       0.00119       0.01009       (0.00001)      0.00000       0.20168            0.00580        0.11423          0.32171               -
+    Super Off-Peak                                                0.00000       0.00000       0.01363       0.00007       0.00119       0.01009       (0.00001)      0.00000       0.02497            0.00580        0.05835          0.08912               -
+Winter
+    On-Peak                                                       0.06444       0.11227       0.01363       0.00007       0.00119       0.01009       (0.00001)      0.00000       0.20168            0.00580        0.07755          0.28503               -
+    Off-Peak                                                      0.06444       0.11227       0.01363       0.00007       0.00119       0.01009       (0.00001)      0.00000       0.20168            0.00580        0.06884          0.27632               -
+    Super Off-Peak                                                0.00000       0.00000       0.01363       0.00007       0.00119       0.01009       (0.00001)      0.00000       0.02497            0.00580        0.05918          0.08995               -
+
+Other Charges/Discounts
+    Basic Service Fee                                                 0.00         16.00          0.00           0.00          0.00          0.00          0.00          0.00         16.00                                              16.00              -
+The total rates presented reflect the UDC rates associated with service under Schedule EV-TOU-5 and the generation rates associated with Schedules EECC and DWR-BC. The UDC rate-by-rate
+components presented are associated with service under Schedule EV-TOU-5 as presented in the utility’s tariff book.

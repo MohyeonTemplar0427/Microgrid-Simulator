@@ -1,7 +1,7 @@
 "use strict";
 const $ = (id) => document.getElementById(id);
 const form = $("study-form");
-const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"Cost optimal", carbon_optimal:"Carbon optimal", combined_optimal:"Combined optimal", grid_only:"Grid only", pv_self_consumption:"Solar + inverter · no export", pv_with_export:"Solar + inverter · surplus export", storage_self_consumption:"Solar + battery · no export", storage_with_export:"Solar + battery · surplus export"};
+const names = {no_battery:"No battery", rule_based:"Rule based", cost_optimal:"Cost optimal", carbon_optimal:"Carbon optimal", combined_optimal:"Combined optimal", grid_only:"Grid only", pv_only:"Solar + inverter", pv_battery:"Solar + battery", pv_self_consumption:"Solar + inverter · no export", pv_with_export:"Solar + inverter · surplus export", storage_self_consumption:"Solar + battery · no export", storage_with_export:"Solar + battery · surplus export"};
 let capabilities, selectedDatasetId, datasets = [], activeStudy = null, activeId = null, pollTimer, offset = 0, tableRequest = 0;
 const PAGE_SIZE = 100;
 let essResolution=null, essKey=null, annualResult=null, annualKey=null;
@@ -386,7 +386,7 @@ async function refreshStudy(id) {
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
     $("cancel-study").hidden=!["queued","running"].includes(study.status);
     $("delete-study").hidden=!["completed","failed","cancelled"].includes(study.status);
-    $("reuse").hidden=study.request.schema_version===7;
+    $("reuse").hidden=[7,8].includes(study.request.schema_version);
     $("save-study").hidden=!(study.status==="completed" && !study.saved);
     $("save-study").textContent=capabilities?.account_type==="guest" ? "Save result · Sign in" : "Save result";
     $("cancel-study").disabled=false;
@@ -414,7 +414,7 @@ async function refreshStudy(id) {
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count"];
+const summaryColumns=["scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count","all_intervals_feasible"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -560,6 +560,7 @@ let wizardIndex=0, wizardReached=0;
 async function initialize() {
   try {
     capabilities=await api("/api/capabilities");
+    if($("pjm-candidate-link"))$("pjm-candidate-link").hidden=!capabilities.pjm_candidate || capabilities.hosting_mode!=="local";
     document.getElementById("sign-out").hidden=capabilities.account_type!=="member";
     const pendingSave=sessionStorage.getItem("microgrid-pending-save");
     if(pendingSave && capabilities.account_type==="member") {
@@ -668,8 +669,10 @@ function setLocationChoices(result,saved="unconfirmed") {
   // Keep unsupported CCAs visible: a PG&E delivery match does not imply
   // bundled generation. Only validated identities enable implemented billing.
   const pgeAtPoint=delivery.some(item=>item.utility_id==='pge'&&item.match==='point');
+  const sdgeAtPoint=delivery.some(item=>item.utility_id==='sdge'&&item.match==='point');
   for(const item of result.generation_candidates||[]){
     if(!['CCA','community_aggregation'].includes(item.type))continue;
+    if(sdgeAtPoint&&['sdcp','cea'].includes(item.service_id))continue; // Confirm in the SDG&E generation controls.
     const service=capabilities.services.find(s=>s.id===item.service_id);
     choices.set(service?.id||item.id,{label:service?.label||item.name,supported:!!service&&pgeAtPoint});
   }
@@ -683,7 +686,8 @@ function setLocationChoices(result,saved="unconfirmed") {
   const providerIds=new Set([...delivery.map(x=>x.utility_id),...(result.generation_candidates||[]).map(x=>x.service_id)]);
   const limitations=coverage.filter(x=>providerIds.has(x.id)&&x.status!=='bounded_import_support').map(x=>x.id.toUpperCase()+': '+x.reason);
   const explanation=result.explanation.startsWith('Interior CEC polygon match,')?'':result.explanation;
-  $('utility-suggestion').textContent=[explanation,...limitations].filter(Boolean).join(' ');
+  const sanDiegoSuggestions=sdgeAtPoint?(result.generation_candidates||[]).filter(x=>['sdcp','cea'].includes(x.service_id)).map(x=>x.name):[];
+  $('utility-suggestion').textContent=[explanation,...limitations,sanDiegoSuggestions.length?`${sanDiegoSuggestions.join(', ')} suggested. Choose SDG&E delivery, then confirm the generation provider shown on your bill.`:''].filter(Boolean).join(' ');
   window.municipalUI?.serviceChanged();updateSiteControls();
 }
 async function refreshUtilities(generation,saved="unconfirmed") {

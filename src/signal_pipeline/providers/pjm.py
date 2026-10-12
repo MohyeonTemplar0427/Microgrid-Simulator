@@ -7,8 +7,9 @@ three into the pipeline's 15-minute grid.
 Locations are numeric **pnode ids**, not names -- Western Hub is ``51288``.
 Use ``gridstatus.PJM().get_pnode_ids()`` to look others up.
 
-Requires ``PJM_API_KEY``. PJM keeps only ~186 days of 5-minute real-time data
-online, so older windows are rejected up front rather than returning empty.
+Live retrieval requires ``PJM_API_KEY``. Older five-minute data are archived,
+not deleted. This bounded live path rejects archive-wide downloads; use the
+validated historical-file path for older dates without downloading every node.
 """
 
 import os
@@ -70,10 +71,21 @@ class PJMProvider(MarketProvider):
 
         if start < oldest_available:
             raise RangeLimitError(
-                f"PJM keeps only {self.archive_limit_days} days of "
-                f"5-minute real-time LMPs. Requested start {start} is older "
-                f"than {oldest_available.date()}."
+                f"PJM archives 5-minute data after {self.archive_limit_days} days. "
+                f"Requested start {start} is older than {oldest_available.date()}. "
+                "Use import_historical_file with an official Data Miner CSV; "
+                "this live path does not download all archived pricing nodes."
             )
+
+    @staticmethod
+    def import_historical_file(csv_text, metadata, start_time, end_time, location):
+        """Preserve native hourly/five-minute observations and revisions.
+
+        Archive age does not restrict validated local imports. Market data
+        remain a separate internal-use signal, never a bundled retail price.
+        """
+        from .pjm_file import import_pjm_csv
+        return import_pjm_csv(csv_text, metadata, start_time, end_time, location)
 
     def fetch_energy_prices(
         self,

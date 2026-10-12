@@ -85,6 +85,15 @@ PROGRAMS = (
                  "https://cityofindustry.org/191/Electric"),
     SolarProgram("ipu_erg", "ipu", "ipu", "Industry eligible renewable generation", "municipal_avoided_cost",
                  "https://cityofindustry.org/191/Electric"),
+    SolarProgram("sdge_sbp", "sdge", "sdge", "SDG&E Solar Billing Plan", "net_billing",
+                 "https://www.sdge.com/solar/solar-billing-plan",
+                 scope="Identification only. Ordinary import billing does not implement SDG&E export prices, non-nettable charges, credit banks or annual settlement."),
+    SolarProgram("sdge_legacy_nem", "sdge", "sdge", "SDG&E legacy NEM", "net_metering",
+                 "https://www.sdge.com/solar/net-energy-metering"),
+    SolarProgram("sdcp_sbp", "sdge", "sdcp", "SDCP Solar Billing Plan", "cca_net_billing",
+                 "https://sdcommunitypower.org/solar-billing-plan/"),
+    SolarProgram("cea_nem", "sdge", "cea", "CEA Personal / Solar Impact NEM", "cca_net_metering",
+                 "https://thecleanenergyalliance.org/wp-content/uploads/2026/06/CEA-Adopted-Residential-Rate-Schedule-Effective-2026_06_01-1.pdf"),
 )
 
 

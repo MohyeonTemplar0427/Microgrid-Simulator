@@ -1,0 +1,1094 @@
+                                                                    Revised        Cal. P.U.C. Sheet No.                                   61667-E
+  San Diego Gas & Electric Company
+          San Diego, California                     Canceling       Revised        Cal. P.U.C. Sheet No.                                   33484-E
+                                                                    RULE 1                                                                Sheet 1
+
+                                                                 DEFINITIONS
+
+
+ACTUAL   COST   BILLING:             A   billing   method   where   Applicants   are   billed   for   estimated   project   costs   prior   to            N
+commencement  of  a  building  project,  when  applicable.  If  estimated  project  costs  exceed  the  actual  project  costs,  a                        N
+refund will be issued. If estimated project costs are less than actual project costs, the Applicant will be billed for the                                N
+incremental project costs.                                                                                                                                N
+
+AGGREGATOR:  Any marketer, broker, public agency, city, county, or special district, that combines the loads of
+multiple end-use customers in facilitating the sale and purchase of electric energy, transmission, and other services on
+behalf of these customers.
+
+APPLICATION:    Request  to  the  Utility  for  electric  service;  not  an  inquiry  as  to  the  availability  or  charges  for  such
+service.
+
+ARREARAGE MANAGEMENT PAYMENT (AMP) PLAN:  A debt forgiveness payment plan.  See also Rule 9.
+
+BALANCING ACCOUNT: Account in which expenses are compared with actual revenues derived from rates designed
+to  recover  those  expenses.  Any  resulting  over- or  undercollection,  plus  interest,  is  due  to  or  owed  from  ratepayers,
+respectively. Account balances are amortized in future rates, as approved by the Commission.
+
+BASELINE:  A rate structure mandated by the California Legislature that ensures all residential customers are provided
+a minimum necessary amount of electricity at the lowest possible cost.
+
+BILLING AGENT:  Any party who prepares and submits bills to end-use customers, collects and processes payments,
+and remits aggregate funds and records to its clients.
+
+BILLING CYCLE:  The regular periodic interval for reading a Customer’s meter for billing purposes.  Usually meters are
+scheduled to be read monthly.
+
+BROKER:  An entity that arranges the sale and purchase of electric energy, transmission, and other services between
+buyers and sellers, but does not take title to any of the power sold.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                      (Continued)
+1C9                                                                    Issued by                            Submitted                     Jan 29, 2024
+Advice Ltr. No.        4375-E                                       Dan Skopec                              Effective                       Jul 1, 2024
+                                                                Senior Vice President
+Decision No.           23-12-037                                  Regulatory Affairs                        Resolution No.
+
+                                                                   Original      Cal. P.U.C. Sheet No.                                  61668-E
+  San Diego Gas & Electric Company
+          San Diego, California                    Canceling                     Cal. P.U.C. Sheet No.
+                                                                  RULE 1                                                               Sheet 2
+
+                                                               DEFINITIONS
+
+
+CALIFORNIA ALTERNATE RATES FOR ENERGY (CARE) PROGRAM: A CPUC program that offers reduced rates to                                                       L
+qualified low-income customers.  The household income of customers qualifying for CARE assistance shall not exceed
+200% of the Federal poverty level as established by the CPUC and set forth in the applicable Utility rate schedules.  The
+CARE Program was previously known as the Low-Income Ratepayer Assistance (LIRA) Program.
+
+COMBINED SERVICE VOLTAGE:  Combined Service Voltage occurs when two or more meters are used to determine a
+customer’s billing.  In such a case, an adjustment shall be made to the metered information between the voltages prior to
+billing.  When Secondary and Primary voltages are combined, the metered data from Secondary will be increased by 4%
+prior to being added to the metered data at the Primary level.  When Primary and Transmission voltages are combined,
+metered data from Primary will be increased by 3% prior to being added to the metered data at the Transmission level.
+When SDG&E, at the customer’s expense, has conducted a customer specific loss study it may apply a percentage other
+than above.  When an alternative percentage is developed it may be rounded to the nearest whole percentage.
+
+COMMISSION:    Public  Utilities  Commission  of  the  State  of  California,  sometimes  referred  to  as  the  Public  Utilities
+Commission (PUC) or the California Public Utilities Commission (CPUC).
+
+COMMON USE AREAS:  Those areas that may be shared or used by occupants within a multifamily accommodation,
+including, but not limited to, recreation room, swimming pool, tennis courts, gardens, hall/outdoor lighting.
+
+COMMUNITY CHOICE AGGREGATION SERVICE (CCA Service):  CCA service permits cities, counties, or combinations
+thereof, whose governing board(s) have elected to acquire their electric power commodity requirements, hereinafter referred to
+as Community Choice Aggregator (CCAs) to provide such services on behalf of Utility end-use customers located within their
+service area(s) subject to the requirements specified in AB 117 and other CPUC directives.
+
+COMMUNITY  CHOICE  AGGREGATOR  (CCA):                        Any  city,  county,  or  combination  thereof,  whose  governing  board(s)
+have elected to combine the loads of its residents, businesses, and municipal facilities in a community wide electricity
+buyers’ program, known as CCA Service.                                                                                                                  L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                     (Continued)
+2C8                                                                   Issued by                           Submitted                    Jan 29, 2024
+Advice Ltr. No.        4375-E                                     Dan Skopec                              Effective                      Jul 1, 2024
+                                                               Senior Vice President
+Decision No.           23-12-037                                 Regulatory Affairs                       Resolution No.
+
+                                                                    Revised        Cal. P.U.C. Sheet No.                                   61669-E
+  San Diego Gas & Electric Company
+          San Diego, California                     Canceling       Revised        Cal. P.U.C. Sheet No.                                   20585-E
+                                                                    RULE 1                                                                Sheet 3
+
+                                                                 DEFINITIONS
+
+
+COMMUNITY CHOICE AGGREGATION CUSTOMER (CCA Customer):  A Customer located within the service area                                                           L
+of a CCA who receives electric power procurement services from the CCA.
+
+COMPANY:  See Utility.
+
+COMPANY’S OPERATING CONVENIENCE:  Use, under certain circumstances, of facilities or practices not ordinarily
+employed  which  contribute  to  the  overall  efficiency  of  the  Utility’s  operations;  term  does  not  refer  to  customer
+convenience nor to the use of facilities or adoption of practices required to comply with applicable laws, ordinances,
+rules, regulations, or similar requirements of public authorities.
+
+COMPETITION  TRANSITION  CHARGES  (CTC):    Under  the  electric  industry  restructuring  order,  the  Commission
+authorized utilities to collect Competition Transition Charge (CTC) from all customers to offset:  (1) the reasonable costs
+utilities incurred in building generation plants to serve their customers, (2) above-market costs associated with nuclear
+power plant settlements and power purchase contracts, and (3) costs arising from regulatory obligations such as
+employee early retirement or retraining programs.  These costs were previously collected in rates from all customers.
+To  ensure  Utility  financial  viability  and  recovery  of  approved  past  expenses,  all  Utility  retail  customers  who  were
+customers on and after December 20, 1995 would be obligated to pay the CTC.
+
+CONTACT CLOSURE SERVICE:  This service is the provision of an electronic signal to a customer that indicates the
+ starting and ending of a signaled period.
+CRITICAL CUSTOMER:  Customer facility where the interruption of electric service would cause a danger to human
+life,  health  or  safety,  and  includes  customers  such  as  hospitals,  other  state-licensed  health  care  facilities,  medical
+research facilities, medical facilities at military installations and detention facilities, municipal water pumping plants and
+
+ sanitation facilities.
+CUSTOMER        :  Generally, the end     -users of electricity, who may be served either by the UDC or retail electric service
+providers. Specifically, the person or entity in whose name service is rendered as evidenced by the signature on the
+application,  contract,  or  agreement  for  that  service,  or,  in  the  absence  of  a  signed  instrument,  by  the  receipt  and
+
+ payment of bills regularly issued in their name.
+CUSTOMER SERVICE POINT:  The point of connection between the facilities of the serving Utility and the wiring of the
+customer's premises.
+
+DEPARTMENT OF WATER RESOURCES (DWR):  California State agency that is authorized to sell power to the retail
+customers of the three investor-owned electric utilities in the State (i.e., San Diego Gas & Electric Company, Southern
+California  Edison  Company,  and  Pacific  Gas  &  Electric  Company)  beginning  January  19,  2001  (Senate  Bill  7X  and
+Assembly Bill 1X).
+
+DEPARTMENT OF WATER RESOURCES BOND CHARGE (DWR-BC):  Pursuant to Commission Decision 02-10-063
+as modified by Decision 02-12-082, the Utility is required to impose this charge on its electric commodity customers to
+repay the California Department of Water Resources (DWR) for bond-related costs associated with purchasing power
+on behalf of California energy consumers.  In addition, the bond charge is applicable to 1) Direct Access customers who
+took bundled service on or after February 1, 2001 as adopted by D.02-11-022, 2) Customer Generation Departing Load
+as adopted by D.03-04-030 and Resolution E-3831 and 3) Community Choice Aggregation customers as adopted by
+D.04-12-046.  The DWR-BC does not apply to California Alternate Rates for Energy (CARE) customers and medical
+baseline allowance customers.
+
+DEPARTMENT OF WATER RESOURCES POWER CHARGE: For purposes of Schedule DA-CRS, the power charge
+represents  Direct  Access  customers’  share  of  the  Department  of  Water  Resources  (DWR)    procurement  costs                                       L
+beginning September 21, 2001.
+
+
+
+
+                                                                      (Continued)
+3C7                                                                     Issued by                           Submitted                     Jan 29, 2024
+Advice Ltr. No.        4375-E                                       Dan Skopec                              Effective                       Jul 1, 2024
+                                                                Senior Vice President
+Decision No.           23-12-037                                  Regulatory Affairs                        Resolution No.
+
+                                                                    Revised        Cal. P.U.C. Sheet No.                                  64609-E
+  San Diego Gas & Electric Company
+          San Diego, California                     Canceling       Revised        Cal. P.U.C. Sheet No.                                  61670-E
+                                                                    RULE 1                                                                Sheet 4
+
+                                                                DEFINITIONS
+
+
+DIRECT ACCESS (DA): Any end-use Utility customer electing to procure its electricity, and any other CPUC-authorized
+energy services, directly from energy service providers (ESP).  “Non-continuous” DA customers are those who took bundled
+service on or after February 1, 2001.  “Continuous” DA customers are those who were DA customers both before and after
+February 1, 2001.  Effective December 4, 2003, DA customers who received DA service from February 1, 2001 through
+September 20, 2001 shall be considered “continuous” DA.
+
+DIRECT ACCESS SERVICE REQUEST (DASR):  Request for enrollment, termination, or other change for Direct Access.
+The DASR transaction outlined in Rule No. 25 was implemented pursuant to CPUC Decision D.98-02-108.
+
+DISTANCE ADJUSTMENT FEE:  The charge for wire cost and line losses associated with the distance calculated from the
+nearest  transmission  level  line  (69kV  or  higher)  to  the  Customer  Service  Point  for  customers  who  have  completed  a
+Request  for  Service  at  Secondary/Primary  Substation  Level  Rates,  Form  106-3859.    The  Distance  Adjustment  Fee  for
+customers taking Secondary Substation or Primary Substation Level Rates shall apply only to the customer’s measured
+distance in excess of 100 feet.  For customers taking service under the provisions of Special Condition 14 of Schedule AL-                                 T
+TOU-M and Special Condition 16 of AL-TOU-L, the Distance Adjustment Fee shall apply to the customer’s entire measured                                      T
+distance between each of the meters involved using normal utility position to determine that distance.
+
+DISTRIBUTION  CHARGES:  Charges  for  use  of  the  Utility’s  distribution  facilities.    Charges  are  intended  to  recover  the
+Utility’s costs of owning, operating, and maintaining the electrical distribution facilities including billing, meter reading, and
+other revenue cycle functions.
+
+DOMESTIC  SERVICE:    Electric  service  for  the  residential  operations  incident  to  domestic  life  on  the  premises  of  a
+residential dwelling unit, excluding service to vessels, other than vessels which are authorized as live aboard vessels.
+
+ELECTRIC SERVICE PROVIDER: An entity which provides electric service to a retail or end-use customer, but which does
+not fall within the definition of an electrical corporation. See also Energy Service Provider and Rule No. 25 for Direct Access
+and Rule No. 27 for Community Choice Aggregation.
+
+ELECTRONIC BILLING:              Also referred to as “Paperless Billing.” An option that customers can elect whereby the Utility
+provides billing information to the customer by means of a computer network such as the Internet or in a form to be used by
+a computer or similar electronic device to destinations mutually agreed upon between Utility and the customer, such as the
+Utility’s web page, or a home banking, bill aggregator or financial institution website.
+
+ELECTRONIC TRANSFER:  Paperless exchange of data and/or funds, usually involving computer and telecommunication
+technology.
+
+ELIGIBLE CUSTOMER: As determined by the Utility, those customers having special skills and equipment necessary to
+participate with Utility on special services.
+
+ELIGIBLE FOOD BANK CUSTOMER:  is an ‘Eligible Recipient Agency’ as defined in Section 251.3(d) of Title 7 of the
+Code of Federal Regulations; and has executed an agreement in compliance with Section 251.2 of Title 7 of the Code of
+Federal  Regulations  with  the  State  Department  of  Social  Services  in  order  to  participate  in  The  Emergency  Food
+Assistance Program administered by the Food and Nutrition Service of the United States Department of Agriculture.
+                                                                                                                                                           D
+
+
+
+
+
+
+
+
+
+
+                                                                      (Continued)
+4C7                                                                    Issued by                            Submitted                     Mar 2, 2026
+Advice Ltr. No.        4791-E                                      Dan Skopec                               Effective                      Apr 1, 2026
+                                                                Senior Vice President
+Decision No.           D.25-09-006                                Regulatory Affairs                        Resolution No.
+
+                                                                      Revised         Cal. P.U.C. Sheet No.                                    64610-E
+   San Diego Gas & Electric Company
+           San Diego, California                      Canceling       Revised         Cal. P.U.C. Sheet No.                                    61671-E
+                                                                      RULE 1                                                                  Sheet 5
+
+                                                                   DEFINITIONS
+
+
+                                                                                                                                                                D
+ENERGY SERVICE PROVIDER (ESP): An entity which provides electric service to a retail or end-use customer, but which
+does  not  fall  within  the  definition  of  an  electrical  corporation.  See  Rule  No.  25  for  Direct  Access  and  Rule  No.  27  for
+Community Choice Aggregation.
+
+ENTERPRISE: Business corporation, partnership, or sole ownership established for the purpose of engaging in a single
+business or commerce.
+
+EXISTING  FACILITIES:  The  term  existing  facilities  refers  to  existing  buildings/facilities/projects  that  are  undergoing
+upgrades  to  service  lines  and/or  distribution  system  infrastructure  under  Electric  Tariff  Rules  15/16  and  are  not  new
+construction projects.
+
+EXISTING  UDC  METERS:    Existing  UDC  Meters  shall  refer  to  all  UDC-owned  meters  used  to  comply  with  the  billing
+requirements  of  UDC  distribution  and  transmission  services.  Existing  UDC  Meters  shall  not  include  any  UDC-owned
+interval data recorder (IDR) meters that have been installed after November 1, 1997 to bill or monitor EECC hourly pricing
+effective January 1, 1998. In general, Existing UDC Meters will not be eligible for sale unless such meters can be retrofitted
+and used as IDR meters. And, in all cases, the UDC has the discretion to sell or not to sell its meters.
+
+EXTERNALLY  MANAGED  COSTS  (EMCs):  Pursuant  to  Commission  Decision  99-05-031,  the  Utility  is  authorized  to
+recover electric restructuring related implementation costs deemed eligible to receive such treatment under Public Utilities
+Code Section 376.  EMCs consist of the EECC initial charge, and the costs for the Consumer Education Program and
+Electric Education Trust.
+
+FORCE  MAJEURE:    Unanticipated  events  or  conditions  beyond  the  reasonable  control  of  the  party  claiming  Force
+Majeure which could not have been prevented by the exercise of due diligence.  Force Majeure, as it applies to the Tariff
+Rate  Schedules,  specifically  does  not  include  required  maintenance  of  customer's  facilities,  plant  closures,  economic
+conditions or variations in agricultural crop production.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                        (Continued)
+5C6                                                                       Issued by                             Submitted                      Mar 2, 2026
+Advice Ltr. No.         4791-E                                        Dan Skopec                                Effective                       Apr 1, 2026
+                                                                  Senior Vice President
+Decision No.            D.25-09-006                                 Regulatory Affairs                          Resolution No.
+
+                                                                  Original      Cal. P.U.C. Sheet No.                                 61672-E
+  San Diego Gas & Electric Company
+          San Diego, California                   Canceling                     Cal. P.U.C. Sheet No.
+                                                                 RULE 1                                                              Sheet 6
+
+                                                              DEFINITIONS
+
+
+                                                                                                                                                     L
+FRANCHISE FEES:  A financial obligation collected from the customer by the Utility and remitted in whole to a city or a
+county government for the Utility’s nonexclusive right to install and maintain equipment on that government’s highway and
+street property, or public rights of way.
+
+GENERATORS:  Those entities which will design, construct, own, operate, and maintain generation assets to supply
+energy and ancillary services to the competitive market.
+
+HIGH RISE BUILDING:  A structure having floors used for human occupancy located more than 75 feet above the lowest
+level for fire department vehicle access.
+
+HOLIDAYS:  The Time-of-Use Holidays are New Year's  Day  (January 1), President's  Day (third Monday in February),
+Memorial Day (last Monday in May), Independence Day (July 4), Labor Day (first Monday in September), Veterans Day
+(November 11), Thanksgiving Day (fourth Thursday in November), and Christmas Day (December 25). When a Holiday
+listed above falls on Sunday, the following Monday shall be defined as a Holiday.  No change will be made for Holidays
+falling on Saturday.
+
+HOURLY METERING:  Hourly metering shall refer to “Interval Metering” as defined herein.
+
+HOUSING PROJECT:  Building or group of buildings located on single premises and containing more than one family
+dwelling unit.
+
+IMPUTED AND EFFECTIVE UTILITY RATES: The Imputed Utility Rate is the amount the utility is authorized to receive
+for its own account for the kWhs that it supplies to retail customers from its URG, and is to be recovered from the fixed
+retail tariff rates in Schedule EECC designed to recover the DWR revenue requirement.  The initial Imputed Utility Rate is
+authorized in D. 01-09-059. The Effective Utility Rate is the amount the utility actually receives for its own account for the
+kWhs that it supplies to retail customers from its URG. The Effective Utility Rate is equal to total revenues received less                          L
+payment made to DWR (residual revenue) divided by the utility’s URG sales to customers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    (Continued)
+6C7                                                                  Issued by                          Submitted                    Jan 29, 2024
+Advice Ltr. No.        4375-E                                    Dan Skopec                             Effective                      Jul 1, 2024
+                                                              Senior Vice President
+Decision No.           23-12-037                                Regulatory Affairs                      Resolution No.
+
+                                                                    Revised       Cal. P.U.C. Sheet No.                                   64611-E
+  San Diego Gas & Electric Company
+          San Diego, California                    Canceling        Revised       Cal. P.U.C. Sheet No.                                   61673-E
+                                                                   RULE 1                                                                Sheet 7
+
+                                                                DEFINITIONS
+
+
+INDEPENDENT SYSTEM OPERATOR (ISO):  The ISO is responsible for the operation and control of the California
+statewide transmission grid.
+
+INDIVIDUALLY  METERED  SERVICE:  Service  whereby  each  single  family                        dwelling  unit,  each  dwelling  unit  within  a
+multi-family structure, or nonresidential occupancy, is separately metered and billed by the Utility.
+
+INITIAL FROZEN RATE (IFR): In accordance with Assembly Bill (AB) X1 43, an initial frozen rate of 6.5 cents per kWh
+is set on the energy component  (commodity charges) of electric bill of all bundled customers of SDG&E not covered
+under the rate ceiling required under Assembly Bill (AB) 265.  The initial frozen rate, retroactive to February 7, 2001, will
+terminate  concurrently  with  the  end  of  the  rate  freeze  for  Pacific  Gas  and  Electric  Company  (PG&E)  and  Southern
+California Edison Company (SCE) pursuant to Section 368 of the California Public Utilities Code, and will be applicable
+to the following customers:
+
+1.         All accounts with Maximum Monthly Demand of 100 kW or greater, for at least nine out of the preceding 12
+           months, that are taking service on one of the following rate schedules: AD, AL-TOU-L, AL-TOU-M, AY-TOU, or                                    T
+           AL-TOU-CP; and
+
+2.         All accounts on Rate Schedules A6-TOU, PA, PA-T-1, and PA-TOU.
+
+Adjustments shall be applied retroactively to February 7, 2001 in the form of credits on future bills. The EERA will be
+recorded in the Large Customer Revenue Shortfall Memorandum Account (LCRSMA).
+
+INTERNALLY MANAGED COSTS (IMCs):  Pursuant to Commission  Decision  99-05-031, the Utility is authorized to
+recover  electric  restructuring  related  implementation  costs  deemed  eligible  to  receive  such  treatment  under  Public
+Utilities  Code  Section  376.    IMCs  consist  of  the  following  items:    Direct  Access  implementation  activities;  PX  load
+bidding  and  demand  settlement;  ISO/PX  interfaces;  hourly  interval  meter  install  and  reading;  UDC  billing  systems
+modification; customer information release system; and, environmental impact report.
+
+INTERVAL METERING:  The purchase, installation and maintenance of a metering device capable of recording energy
+use at 15-minute intervals, at a minimum, including any communication systems needed to allow the customer access
+to  meter  read  usage  data.    To  the  extent  that  the  customer’s  UDC  distribution  tariff  charges  requires  meter  reads
+smaller  than  15  minutes,  “Interval  Metering”  will  refer  to  metering  devices,  including  any  related  communication
+systems, capable of recording energy use at the intervals required by the customer’s UDC distribution tariff(s).
+
+KILOWATT (kW):  A unit of electrical power equal to 1,000 watts.  A watt is a basic unit to measure the transfer of
+electric power from one source to another, and a watt is equal to one ampere flowing under one volt of pressure with a
+power factor of 100%.
+
+KILOWATT-HOUR (kWh):  A common unit to measure electric energy consumption.  A kWh equals 1,000 watts of
+electric power consumed (or transferred from one source to another) for one hour of time.
+
+LARGE CUSTOMER:  A Large Customer is a customer that is not eligible, and has not been eligible to have the Energy
+Rate  Ceiling  (ERC),  as  mandated  by  Assembly  Bill  265,  applied  to  their  bill.    After  December  31,  2002  a  Large
+Customer also excludes any customer that would be eligible for the ERC were it still available.  A Large Customer shall
+also exclude any Direct Access customer that meets the eligibility requirements of ERC save for being Direct Access.
+
+LATE PAYMENT CHARGE:  Charge that is added to non-residential accounts to offset the expenses created by late
+payments.
+
+
+
+
+
+
+
+
+
+
+                                                                      (Continued)
+7C6                                                                    Issued by                           Submitted                      Mar 2, 2026
+Advice Ltr. No.        4791-E                                      Dan Skopec                              Effective                      Apr 1, 2026
+                                                                Senior Vice President
+Decision No.           D.25-09-006                                Regulatory Affairs                       Resolution No.
+
+                                              Revised   Cal. P.U.C. Sheet No.                 64612-E
+ San Diego Gas & Electric Company
+       San Diego, California       Canceling  Revised   Cal. P.U.C. Sheet No.                 61674-E
+                                              RULE 1                                          Sheet 8
+
+                                            DEFINITIONS
+
+
+
+LIFE-SUPPORT DEVICE:  Medical device using Utility-supplied electricity for its operation that is regularly
+required to sustain, restore, or supplant a vital function of a person residing in a residential unit.  Term does
+not  include  apparatus  or  appliances  used  in  a  hospital  or  medical  clinic,  nor  does  it  include  therapeutic
+devices such as pool or tank heaters, saunas, or hot tubs.
+
+LOAD  PROFILE:  An  estimate  of  a  group  of  customers’  (e.g.,  residential,  small  commercial,  large
+commercial) hourly consumption over a period of time.  Load profiles are statistical sampling techniques
+which allows customers that have common end-use characteristics but with load variances to be represented
+by a single measurement.  Load profiles will be used by UDC to determine monthly average EECC and CTC
+energy charges for customers.  Small Customers, as defined herein, will be eligible for load profiles.  In
+addition, commercial customers with a Maximum Demand below 50 kW for at least nine out of the preceding
+12 months, and with an Maximum Annual Demand below 80 kW, will be eligible for load profiles for at least a
+full nine months from the start of Direct Access, unless extended by the CPUC.
+
+LOW-INCOME RATEPAYER ASSISTANCE (LIRA) PROGRAM:  See California Alternate Rates for Energy
+(CARE) Program above.
+
+MAILED:  Notice or other communication to the customer will be considered "mailed" when received into the
+customer's electronic mail box via electronic data interchange or when it is enclosed in a sealed envelope,
+properly addressed, and deposited in any authorized United States Postal Service receptacle, postage
+prepaid. Postcards may be utilized to convey information that is not confidential and will be considered
+“mailed” when it is properly addressed and deposited in any authorized United States Postal Service
+receptacle, postage prepaid1.
+
+MARKETER:  Any entity that buys electric energy, transmission, and other services from traditional utilities
+and other suppliers, and then resells those services at wholesale to an end-use customer.
+
+MASTER-METERED SERVICE: Service whereby the Utility installs a meter to register the consumption of
+two or more occupancies.
+
+MAXIMUM ANNUAL DEMAND:  The Maximum Annual Demand shall be  the highest  Maximum Monthly
+Demand for the current and prior eleven months.  If during the prior eleven months there is a month(s) when
+there was not a demand registering device in place then no Maximum Demand shall be assumed.
+
+MAXIMUM DEMAND:  The Maximum Demand shall be the average kilowatt input during the fifteen-minute
+interval in which the consumption of electric energy is greater than any other fifteen-minute interval in the
+billing period as indicated or recorded by instruments installed, owned and maintained by the Utility, but not
+less than the diversified resistance welder load computed in accordance with the Utility's Rule 2.  In the case
+of hoists, elevators, furnaces, or other loads where the energy demand is intermittent or subject to violent
+fluctuations,  the  Utility  may  base  the  Maximum  Demand  upon  a  five  minute  interval  instead  of  a  fifteen
+minute interval.  In case the Maximum Demand has not been measured, it may be determined by test at the
+option of  the Utility.   Other than as  provided in Special Condition 13 of Schedule AL-TOU-L, where the T
+customer delivers power to the Utility’s system during any fifteen-minute period those deliveries shall not be
+credited against the power received by the customer for determination of Maximum Demand.
+
+
+1 Pursuant to D.20-06-003 and AL 3516-E-C-/2854-G-C, SDG&E will begin providing disconnection notices via email to
+customers who have opted to receive electronic communications at the expiration of the COVID-19 customer protections.
+The customer protections are in effect through April 16, 2021.
+
+                                                (Continued)
+8C6                                             Issued by                Submitted            Mar 2, 2026
+Advice Ltr. No. 4791-E                        Dan Skopec                 Effective             Apr 1, 2026
+                                           Senior Vice President
+Decision No.    D.25-09-006                  Regulatory Affairs          Resolution No.
+
+                                                              Revised       Cal. P.U.C. Sheet No.                              64755-E
+  San Diego Gas & Electric Company
+         San Diego, California                 Canceling      Revised       Cal. P.U.C. Sheet No.                              61675-E
+                                                              RULE 1                                                          Sheet 9
+
+                                                           DEFINITIONS
+
+
+
+MAXIMUM KILOVAR DEMAND:  The Maximum Kilovar Demand shall be the average kilovar input during
+the  fifteen  minute  interval  in  which  the  consumption  of  reactive  energy  is  higher  than  in  any  other  fifteen
+minute interval.
+
+MAXIMUM  KILOVAR  BILLING  DEMAND:    The  Maximum  Kilovar  Billing  Demand  shall  be  the  maximum
+kilovar demand less 48% of the maximum demand.
+
+MAXIMUM MONTHLY DEMAND:  The Maximum Monthly Demand shall be the Maximum Demand occurring
+during the current billing period.  If the Utility has at its election not obtained a separate maximum demand
+read  for  each  billing  period  then  the  Utility  shall  use  95%  of  the  last  metered  Maximum  Demand  in
+determining the Maximum Monthly Demand.  Where customers paying for standby service under Schedules
+S  or  S-I  experience  a  forced  or  scheduled  outage  of  the  customer's  generating  system  during  the  billing
+period as demonstrated to the reasonable satisfaction of the Utility, within 60 days of occurrence, the level of
+that outage (not to exceed the amount of the contracted standby level), on a kw basis, is to be subtracted
+from the recorded demand in the applicable month.
+
+MAXIMUM ON-PEAK PERIOD DEMAND:  The Maximum On-Peak Period Demand shall be the Maximum
+Demand measured during the billing period limited to the hours specified for the on-peak period.  Demands
+created by the scheduled maintenance of a customer's self generation system (not to exceed the amount of
+the  contracted  standby  level)  will  be  subtracted  from  the  measured  on-peak  period  Maximum  Demand
+provided  that  the  maintenance  schedule  has  been  approved  by  the  Utility  prior  to  the  start  of  the  billing
+period.
+
+MEMORANDUM  ACCOUNT:    Account  authorized  by  the  Commission  for  the  purpose  of  tracking  certain
+costs  and  revenues.    Each  individual  memorandum  account  may  have  specific  accounting  treatment
+applicable to that account.
+
+METER DATA MANAGEMENT AGENT (MDMA):  An entity that takes raw meter outputs; validates these
+outputs using validation, editing, and estimating rules; adds corollary information needed to characterize the
+customer; and makes complete customer information available to others for use in various applications.
+
+METER SERVICE PROVIDER:  An entity that installs, validates, registers, and maintains the physical meter
+required on a premise to measure the required variables associated with energy demand or consumption.
+
+MIXED-FUEL:        Building  projects  that  use  or  are  stubbed  for  use  of  gas  service  and/or  propane  service  in                 T
+addition to electricity.
+
+MOBILEHOME:    Structure  designed  as  a  residence,  in  one  or  more  sections,  and  of  a  width  and  length,
+which  when  moved  over  a  public  highway  requires  a  special  permit  from  the  California  Department  of
+Transportation. They are located in mobilehome parks and on residential lots in California where they comply
+with the requirement of the local ordinances of permanent housing. Mobilehomes first sold prior to July 1,
+1980, are licensed by the California Department of Housing and Community Development. Mobilehomes first
+sold  new  on  and  after  July  1,  1980,  for  installation  as  a  residence,  are  all  automatically  subject  to  local
+property taxation.
+
+MOBILEHOME  PARK:  Area  of  land  where  two  or  more  mobilehome  sites  are  rented  to  accommodate
+mobilehomes used for permanent residency.  Homeowner and mobilehome park management are subject to
+the Civil Code requirements of the "Mobilehome Residency Law". This law only applies to a mobilehome that
+requires a permit to be moved on a street or highway.
+
+
+
+                                                                (Continued)
+9C4                                                              Issued by                         Submitted                  Apr 22, 2026
+Advice Ltr. No.      4804-E-A                                 Dan Skopec                           Effective                  Apr 22, 2026
+                                                           Senior Vice President
+Decision No.         D.23-12-037                             Regulatory Affairs                    Resolution No.                   E-5352
+
+                                                             Revised       Cal. P.U.C. Sheet No.                            62827-E
+  San Diego Gas & Electric Company
+         San Diego, California                 Canceling     Revised       Cal. P.U.C. Sheet No.                            61676-E
+                                                             RULE 1                                                        Sheet 10
+
+                                                          DEFINITIONS
+
+
+
+MULTI-FAMILY ACCOMMODATION:  Apartment building, duplex,  mobilehome park or any other group of
+permanent  residential  single-family  dwelling  units  located  upon  a  single  premises,  provided  that  the
+residential   dwellings   therein   meet   the   requirements   for   a   single-family   accommodation.   Multi-family
+accommodation does not include: hotels, motels, residential hotels, guest or resort ranches, marinas, tourist
+camps,  recreational  vehicle  parks,  campgrounds,  halfway  houses,  rooming  houses,  boarding  houses,
+institutions, dormitories, rest or nursing homes, adult residential facilities and residential-care facilities for the
+elderly,  military  barracks  or  any  enterprise  that  includes  or  rents  to  either  transient  tenants  or  transient
+accommodations.
+
+NET  ENERGY  CREDIT:    The  Net  Energy  Credit  is  only  applicable  to  customers  eligible  for  Net  Energy
+Metering (NEM).  NEM customers will receive credits valued at the same rate as they would be billed.
+
+NEW CONSTRUCTION:  A newly constructed building is one that has never been used or occupied for any
+purpose.
+
+NON-PROFIT GROUP LIVING FACILITY:  Non-profit homeless shelter that may be government-subsidized
+with six (6) or more beds that provides lodging day or night for a minimum of 180 days of the year; other non-
+profit  residential-type facilities  (excluding government-owned and privately-owned, "for profit" government-
+subsidized  housing)  that  provide  a  service  in  addition  to  lodging  and  which  may  be  licensed  by  the
+appropriate  state  agency  to  care  for  residents  who  temporarily  or  permanently  cannot  function  normally
+outside of the group home environment; and non-licensed, separately metered affiliated facilities where the
+primary facility is eligible for CARE and is the customer of record for the affiliate, and at least 70% of the
+energy consumed by the affiliate is used for residential purposes.  All residents (except migrant and non-
+profit farm worker housing centers pursuant to AB 868) must meet the CARE income eligibility standards,
+however a caregiver who lives in the group facility is not a resident for purposes of determining the facility's
+eligibility.    Non-profit  group  living  facilities  that  are  not  licensed  or  certified  must  provide  any  other
+documentation the Utility may reasonably require.
+
+NUCLEAR DECOMMISSIONING CHARGES:  These charges include costs related to the decommissioning
+of a nuclear power plant.  These costs will be nonbypassable until such time as the costs are fully recovered.
+
+ON-GOING COMPETITION TRANSITION CHARGES (CTC):                                The Utility is permitted to recover authorized
+post rate freeze transition costs, including qualifying facilities and purchased power contracts, nuclear costs,
+and other transition costs incurred after the rate freeze period.  These costs will be recovered through a non                      -
+residual CTC rate component on customer bills, to be determined annually.
+
+OPTIONAL RATE:  An Optional Rate or optional schedule is a tariff identified in the Schedule of Rates in the
+Table  of  Contents  that  is  generally  available  and  has  no  limitations  regarding  the  number  or  location  of
+customers.
+
+PAID OR PAYMENT:  Funds received by Utility through postal service, Utility authorized agent, or deposited                                 T
+in Utility bank account by electronic transfer.
+
+PARALLEL GENERATION ELIGIBILITY:  All such customers operating standby emergency generators in
+parallel with the  electric system exclusively for the purpose of maintaining service reliability during system
+outages  and  other  emergencies  must  comply  with  all  applicable  provisions  of  Rule  21  except  for  being  a
+Qualifying Facility.
+
+
+
+
+
+                                                               (Continued)
+10C11                                                           Issued by                        Submitted                   Feb 4, 2025
+Advice Ltr. No.      4600-E                                  Dan Skopec                          Effective                   Feb 4, 2025
+                                                         Senior Vice President
+Decision No.         D. 22-06-008                           Regulatory Affairs                   Resolution No.
+
+                                                                Revised       Cal. P.U.C. Sheet No.                               61677-E
+  San Diego Gas & Electric Company
+          San Diego, California                  Canceling      Revised       Cal. P.U.C. Sheet No.                               14854-E
+                                                                RULE 1                                                          Sheet 11
+
+                                                            DEFINITIONS
+
+
+
+PARALLEL GENERATION LIMITATION:  Unless explicitly waived either by contract or on the schedule on                                               L
+which the customer is taking service, a customer with any source of generation is limited to the operation of
+that generation such that it does not operate in parallel with the Utility electric system.  This limitation against
+parallel operation is waived when the customer has installed emergency standby generators exclusively for
+the  purpose  of  maintaining  service  reliability  during  system  outages  and  other  emergencies  provided  the
+customer  agrees  to  limit  the  parallel  operation  of  their  generator  exclusively  for  the  purposes  of  Parallel
+Generation Testing and Parallel Generation Service Restoration.  For billing purposes, net energy, defined
+as the energy supplied by the Utility minus energy generated by the customer and fed back into the Utility’s
+electric system at any instant in time, shall in no case be negative.  The customer must satisfy the Parallel
+Generation  Notification  requirements  before  a  waiver  is  granted.    The  Utility  reserves  the  right  to  deny
+parallel operation for any customer at any time when it determines that to do so would jeopardize the safe
+and reliable operation of the Utility’s electric system.
+
+PARALLEL  GENERATION  NOTIFICATION:    The  customer  must  specify  in  writing  to  the  Company’s
+assigned representative the intention to operate standby generators in parallel and obtain Utility's approval
+and a written contract.  The contract should provide specific information needed by the Utility to ensure the
+safe and reliable operation of the electric system.  The information required may include, but is not limited to,
+the rated capacity of the standby generator and the expected hours of operation for testing of the equipment,
+excluding  emergencies.    This  notification  must  demonstrate  how  the  customer  meets  Parallel  Generation
+Eligibility requirements.
+
+PARALLEL GENERATION SERVICE RESTORATION:  Following a system emergency when Utility service
+has  been  interrupted  and  the  customer’s  standby/auxiliary  generators  have  been  operated  to  maintain
+electric service reliability, the customer may synchronize and operate its own standby generators in parallel
+with the electric system until Utility service has been restored.  Where parallel operation of the customer’s
+emergency  generators  is  conducted  to  facilitate  the  restoration  of  Utility  electric  service  without                    further
+service interruption, the customer must shut down the standby generator within 15 minutes after service has
+been restored.
+
+PARALLEL GENERATION TESTING:  Testing of emergency standby generators, limited to four hours per
+month, is permitted for those customers who meet the requirements for Parallel Generation Eligibility.  The
+customer must provide written notification to the Utility of the intention to conduct a test at least five days in
+advance of the test.  The written notification must include the expected number of hours of operation during
+the  test  and  the  four-hour  window  during  which  the  test  will  be  conducted.    The  customer  may  not  test
+standby generators in parallel during the on-peak hours defined in the applicable tariff, except on those tariffs
+where the restriction on parallel operation is waived.  The customer may not conduct more than one test of
+the  emergency  standby  or  auxiliary  generators  per  week.    The  Utility  reserves  the  right  to  have  a  Utility
+representative present at such tests.
+
+PERMANENT  SERVICE:  Service  which,  in  the  opinion  of  the  Utility,  is  of  a  permanent  and  established
+character. The customer's use of electricity may be continuous, intermittent, or seasonal in nature.
+
+POWER  FACTOR  METERING:    The  Power  Factor  Metering  shall  include,  but  not  be  limited  to,  such
+facilities  as  fuses,  meter  sockets,  meter  and  instrument  transformer  housings  required  with  the  meter
+installation, all of which will be installed and maintained in accordance with the Utility's standards.                                          L
+
+
+
+
+
+
+
+                                                                  (Continued)
+11C9                                                               Issued by                          Submitted                  Jan 29, 2024
+Advice Ltr. No.       4375-E                                   Dan Skopec                             Effective                    Jul 1, 2024
+                                                            Senior Vice President
+Decision No.          23-12-037                               Regulatory Affairs                      Resolution No.
+
+                                                                Revised       Cal. P.U.C. Sheet No.                               61678-E
+  San Diego Gas & Electric Company
+          San Diego, California                  Canceling      Revised       Cal. P.U.C. Sheet No.                               24475-E
+                                                                RULE 1                                                          Sheet 12
+
+                                                             DEFINITIONS
+
+
+POWER  FACTOR  TEST  FAILURE:    A  Power  Factor  Test  Failure  is  when  a  customer  with  a  Maximum                                        L
+Annual  Demand  of  greater  than  300  kilowatts  has  a  Maximum  Kilovar  Demand  that  exceeds  48%  of  the
+Maximum  Demand.    The  customer  is  to  receive               notice  of  the  failure,  and  if  correction  doesn't  take  place
+within 6 months of the notice, then a power factor test failure shall exist.
+
+PREMISES:  All of the real property and apparatus employed in a single enterprise on an integral parcel of
+land  undivided,  excepting  in  the  case  of  industrial,  agricultural,  oil  field,  resort  enterprises  and  public  or
+quasi-public  institutions,  by  a  dedicated  or  undedicated  street,  highway  or  other  public  thoroughfare  or  a
+railway. Automobile parking lots constituting a part of and adjacent to a single enterprise may be separated
+by an alley from the remainder of the premises served.
+
+PRIMARY:  Is service that is taken at or above 2.00 kv, but, below 25.00 kv provided that the service is taken
+from regularly available service voltages. The Utility retains the right to change the voltage level that is to be
+considered to be regularly available upon reasonable written notice to the customer.
+
+PRIMARY  SUBSTATION:    Is  service  taken  at  a  standard  primary  voltage  level,  where  the  customer  has
+completed  a  Request  for  Service  at  Secondary/Primary  Substation  Level  Rates,  Form  106-3859,  and  the
+Utility has verified the information on the form.
+
+PUBLIC  PURPOSE  PROGRAMS  CHARGE  (PPPC):      A  separate  charge  that  all  electric  customers  are
+required  to  pay  that  funds       various  public  purpose  programs  including:    1)  renewable  resource  energy
+technologies   2)   energy   efficiency   3)   research,   development   and   demonstration,   and   4)   low-income
+programs.
+
+QUALIFIED        CONTRACTOR/SUBCONTRACTOR  (QC/S):  Applicant's  contractor  or  subcontractor  who:
+1) Is licensed in California for the appropriate type of work such as, but not limited to, electrical and general;
+2)  Employs  electric  workmen  properly  qualified  (Qualified  Electrical  Worker,  Qualified  Person,  etc.)  as
+defined   in   State   of   California   High   Voltage   Safety   Orders   (Title   8,   Subchapter   5,   Group   2).
+3) Complies with applicable laws such as, but not limited to, Equal Opportunity Regulations, OSHA and EPA.
+
+
+RECORDER MALFUNCTION CORRECTION:  A Recorder Malfunction Correction is when the Utility must
+utilize a mechanical meter read to make corrections to the readings from a digital pulse recorder (DPR) or an
+electronic recorder (ER).  Where a DPR, or ER, failure occurs for 25% or less of the meter read period, then
+that meter read period's energy usage is used for prorating the mechanical meter reading to the appropriate
+time periods.  When the DPR, or ER, fails for more than 25% of the meter read period, then the mechanical
+meter reading will be prorated to the appropriate time periods based on the average of the prior three meter
+reads having the same on-peak periods. In determining the maximum monthly demand, the same procedure
+will be used for energy, except 75% will be substituted for 25% in the calculations.                                                             L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                  (Continued)
+12C8                                                               Issued by                          Submitted                   Jan 29, 2024
+Advice Ltr. No.       4375-E                                    Dan Skopec                            Effective                     Jul 1, 2024
+                                                            Senior Vice President
+Decision No.          23-12-037                               Regulatory Affairs                      Resolution No.
+
+                                                  Revised    Cal. P.U.C. Sheet No.                    61679-E
+  San Diego Gas & Electric Company
+        San Diego, California         Canceling   Revised    Cal. P.U.C. Sheet No.                    19394-E
+                                                  RULE 1                                             Sheet 13
+
+                                                DEFINITIONS
+
+
+RECREATIONAL VEHICLE: A motor home, travel trailer, camper or camping trailer, with or without motive                L
+power, designed for recreational or emergency occupancy. Travel trailer or camping trailer may be moved
+on a public highway without a special permit or chauffeur’s license. Recreational Vehicles are licensed by
+the Department of Motor Vehicles, and must comply with traffic laws.
+
+RECREATIONAL VEHICLE PARK: Area or tract of land within an area zoned for recreational use; or a
+separate  designated  section  within  a  mobilehome  park.  Lots  are  customarily  occupied  for  temporary
+purposes (less than 30 days), and there is displayed in plain view a sign indicating  that the recreational
+vehicle may be removed from the premises, for the reason specified in the Civil Code "Recreational Vehicle
+Park Occupancy Law".  Sign must also contain the number of the local traffic law enforcement agency.
+
+RELIABILITY SERVICES (RS) COSTS:  RS costs are those costs passed on to SDG&E as a Participating
+Transmission Owner (PTO) by the ISO for services provided by generators to maintain system reliability.
+RS  costs  are  subject  to  Federal  Energy  Regulatory  Commission  (FERC)  jurisdiction  and  are  recovered
+through a separate rate component on customers’ bills.  RS costs and revenues are subject to balancing
+account treatment as authorized by the PTO tariff filed with the FERC.
+
+RESIDENTIAL AND SMALL COMMERCIAL CUSTOMER:  Residential and Small Commercial shall mean
+all residential customers and any commercial customer that has a maximum peak demand of less than 20
+kilowatts per P.U.Code § 331(h).  Demand of less than 20 kilowatts shall be determined as having been
+met if: (1) SDG&E has a demand meter in place and the customer has had maximum demands below 20
+kW for at least nine out of the preceding 12 months, or, (2) where SDG&E does not have a demand meter
+in place and the customer's maximum monthly consumption has been below 12,000 kwh for at least nine
+out of the preceding 12 months.  In addition it shall mean any customer served on Schedule A or Schedule
+A-TC.
+
+RESIDENTIAL  CUSTOMERS:  For purposes  of determining who is eligible for  a 10% rate reduction
+pursuant to PU Code Section 368(a), Residential Customers will mean all customers served on SDG&E’s
+residential schedules, irrespective of electric load usage.
+
+RESIDENTIAL  DWELLING  UNIT:    Group  of  rooms,  such  as  a  house,  a  flat,  an  apartment,  or  a
+mobilehome which provides complete single-family living facilities in which the occupant normally cooks
+meals, eats, sleeps, and carries on the household operations incident to domestic life.
+
+RESIDENTIAL HOTEL:  Hotel establishment which provides lodging as a primary or permanent residence
+and has at least 50 percent of the units or rooms leased for a minimum period of one month and said units
+are occupied for nine months of the year.  Residential Hotels do not include establishments such as guest
+or resort hotels, resort motels or resort ranches, tourist camps, recreational vehicle parks, half-way houses,
+rooming  houses,  boarding  houses,  dormitories,  rest  homes,  convalescent  or  care  facilities,  military
+barracks, or a house, apartment flat or any residential unit which is used as a residence by a single family
+or group of persons.
+
+RESIDENTIAL SERVICE:  Classes of customers whose end-use is classified as residential and who reside
+in  the  following  type  dwellings:  single-family  units,  multi-family  units,  mobilehomes  or  similar  living
+establishments.
+
+RETAILERS:  An electric service provider who enters into a direct access transaction with an end-use
+customer, i.e., aggregators, brokers, and marketers.
+
+RULES:  Tariff  sheets  which  set  forth  the  application  of  all  rates,  charges  and  service  when  such
+applicability is not set forth in and as a part of the rate schedules.
+
+SCHEDULING COORDINATORS (SC):  Entities certified by the Federal Energy Regulatory Commission
+(FERC) that act as a go-between with the ISO on behalf of generators, supply aggregators (wholesale      L
+marketers), retailers, and customers to schedule the distribution of electricity.
+
+
+
+                                                    (Continued)
+13C8                                                 Issued by                  Submitted             Jan 29, 2024
+Advice Ltr. No.  4375-E                           Dan Skopec                    Effective              Jul 1, 2024
+                                               Senior Vice President
+Decision No.     23-12-037                       Regulatory Affairs             Resolution No.
+
+                                                        Revised     Cal. P.U.C. Sheet No.                         61680-E
+  San Diego Gas & Electric Company
+        San Diego, California              Canceling    Revised     Cal. P.U.C. Sheet No.                         24671-E
+                                                        RULE 1                                                  Sheet 14
+
+                                                     DEFINITIONS
+
+
+ SDG&E:  San Diego Gas & Electric Company (also referred to as “Utility”).                                                      L
+SECONDARY:    Is  service  that  is  taken  below  2.00  kv  and  service  that  does  not  qualify  as  Primary  or
+Transmission service.
+SECONDARY SUBSTATION             :  Is service taken at a standard secondary voltage level, where the customer
+has completed a Request for Service at Secondary/Primary Substation Level Rates, Form 106-3859, and the
+Utility has verified the information on the form.
+
+SERVICE EXTENSION:  Consists of the service as above defined when provided for a new customer at a
+ premises not heretofore served in accordance with the service extension rule.
+SIGNALED PERIOD 1G:  This period will commence when the utility's on-system sendout exceeds a 3996
+MW or when there is a Signaled Period Alert.  Each year the MW level shall be updated to be the greater of
+the current value determined by the prior years on-system retail sales divided by 8760, and then the product
+divided by .55.  Once initiated the signaled period shall remain in effect until the on-system sendout drops at
+least 25 MW below the level at which the signal commences.  This period will also commence on the second
+Monday after September 1, starting at 1:00 p.m., and continuing each week day for one hour until at least 5
+hours of this signaled period has occurred during the most current 365 days.  The utility will limit this signaled
+period to the constraints set forth within the Signaled Period Alert definition.
+SIGNALED PERIOD ALERT            :  A Signaled Period Alert is when the Utility declares a local emergency or the
+California Independent System Operator (ISO) calls a Stage 2 or Stage 3 Emergency. Signaled Period Alerts
+shall be limited to no more than a single 6-hour period in any day, to no more than 4 days in any week, and
+to no more than 40 hours in any calendar month. Signaled Period Alerts are limited to 120 hours in a year.
+
+SMALL BUSINESS CUSTOMER:  Nonresidential metered service customers whose annual usage is equal
+to or less than 40,000 kWh or whose demand is equal to or less than 20kW.  Small Business Customers
+shall also include customers who self-certify that they fully meet the criteria for “Micro business”, as set forth
+in Section 14837 (d)(2) of the California Government Code.  For the purposes of Schedule GHG-ARR, a
+small business customer is defined as an entity “with monthly demand not exceeding 20 kilowatts in more
+ than three months in a twelve-month period”.
+SMALL COMMERCIAL:  For purposes of determining who is eligible for a 10% rate reduction pursuant to
+PU Code Section 368(a), Small Commercial will mean all commercial customers, except those served on
+SDG&E’s agricultural and street lighting rate schedules, that have a Maximum Demand of less than 20 kW
+(PU Code Section 331).  This peak demand criteria shall be determined as having been met if: (1) there is a
+demand meter in place and the customer’s Maximum Monthly Demand has been below 20 kW for at least
+nine out of the preceding 12 months, or (2) there is no demand meter in place and the customer’s monthly
+consumption has been below 12,000 kWh for at least nine out of the preceding 12 months.  For customers of
+record as of November 1, 1997, the preceding 12 months shall refer to the 12-month period ending October
+1997.  In addition, Small Commercial shall mean all customers served on Schedule A or Schedule A-TC,
+irrespective of electric load usage.
+
+SMALL CUSTOMER:  For purposes of determining who is eligible for load profiling and non-UDC meter
+services, Small Customer will mean all residential customers and all commercial customers, including those
+served on SDG&E’s agricultural and street lighting rate schedules, that have a Maximum Demand of less
+than 20 kW.  This peak demand criteria shall be determined as having been met if: (1) there is a demand
+meter in place and the customer’s Maximum Monthly Demand has been below 20 kW for at least nine out of
+the preceding 12 months, or (2) there is no demand meter in place and the customer’s monthly consumption
+has been below 12,000 kWh for at least nine out of the preceding 12 months.  Customers who meet the
+criteria  for Small Customer will be  eligible for statistical load  profiling (See Load Profiles) and will not be
+eligible  for  non-UDC  meter  services  until  January 1,  1999,  or  until  such  time  as  the  CPUC  approves  the
+expansion of non-utility meter services to these customers.                                                                    L
+
+
+
+
+                                                         (Continued)
+14C8                                                       Issued by                     Submitted               Jan 29, 2024
+Advice Ltr. No.    4375-E                              Dan Skopec                        Effective                 Jul 1, 2024
+                                                    Senior Vice President
+Decision No.       23-12-037                          Regulatory Affairs                 Resolution No.
+
+                                      Revised Cal. P.U.C. Sheet No.           64613-E
+ San Diego Gas & Electric Company
+      San Diego, California  Canceling Revised Cal. P.U.C. Sheet No.          61681-E
+                                      RULE 1                                Sheet 15
+
+                                    DEFINITIONS
+
+
+SUBMETERED SERVICE: Service from metering furnished, owned, installed, maintained, read and tested
+by the customer who is served through a master meter.
+
+SUMMARY BILL: A billing statement that includes charges for multiple service accounts.
+
+SUPPLY  AGGREGATORS:  Also  known  as  wholesale  marketers.    These  entities  act  on  behalf  of
+generators to arrange and implement commercial transactions in the generation supply market.
+
+SURFACE REPAIR: Replacement to the satisfaction of the Utility, appropriate governmental agency, or
+property owner, of existing asphalt, concrete, decorative surfaces, landscaping, etc., removed for trenching
+and/or construction purposes.
+
+TARIFF SCHEDULES: Entire body of effective rates, charges, and rules collectively of the Utility, as set
+forth herein, and including title page, preliminary statements, rate schedules, rules and sample forms.
+
+TARIFF SHEET: Individual sheet of the tariff schedules.
+
+TEMPORARY SERVICE:  Service for enterprises or activities which are temporary in character or where it is
+known in advance that service will be of a limited duration.  Service which, in the opinion of the Utility, is for
+operations of a speculative character or the permanency of which has not been established, also is
+considered Temporary Service.
+
+TENANT: One who holds or possesses real estate (as a condominium) or sometimes personal property by
+any kind of right; one who has the occupation or temporary possession of lands or tenements of another;
+one who rents or leases (as a house or apartment) from a landlord.
+
+TOTAL RATE ADJUSTMENT COMPONENT:  This charge achieves legislative and CPUC subsidies such
+as maintaining the Commission approved tier differential between rates for usage up to 130% of baseline
+and usage above 130% of baseline and discounted rates for assistance programs.         T
+
+TRANSMISSION:  Is service that is taken at above 25.00 kv provided that the service is taken at regularly
+available service voltages.  The Utility retains the right to change the voltage level that is to be considered to
+be regularly available upon reasonable written notice to the customer.
+
+TRANSMISSION CHARGES:  Charges to use SDG&E’s transmission facilities shall go into effect on the
+first day of the Independent System Operator (ISO) operation.  The costs of transmission facilities placed in
+service after the date of initial implementation of the Independent System Operator shall be recovered using
+the rate methodology in effect at the time the facilities go into operation.  SDG&E’s rates shall reflect all of
+the terms and conditions of existing transmission service contracts and shall recognize any wheeling
+revenues of existing transmission service arrangements.
+
+UTILITY: San Diego Gas & Electric Company (also referred to as “SDG&E”).
+
+
+
+
+
+
+
+
+
+
+
+                                       (Continued)
+15C6                                    Issued by            Submitted        Mar 2, 2026
+Advice Ltr. No. 4791-E                Dan Skopec             Effective        Apr 1, 2026
+                                    Senior Vice President
+Decision No. D.25-09-006             Regulatory Affairs      Resolution No.
+
+                                                                Revised       Cal. P.U.C. Sheet No.                               61682-E
+  San Diego Gas & Electric Company
+          San Diego, California                  Canceling      Revised       Cal. P.U.C. Sheet No.                               22068-E
+                                                               RULE 1                                                           Sheet 16
+
+                                                            DEFINITIONS
+
+
+
+UTILITY DISTRIBUTION COMPANY (UDC):  The entity which will continue to provide regulated services for                                            L
+the distribution of electricity to customers and serve customers who do not choose direct access.
+
+UTILITY'S METERED SERVICE:  See Individually Metered Service.
+
+UTILITY RETAINED GENERATION (URG):  Generation resources under the control of the utilities.
+
+UTILITY SYSTEM:  Electric  transmission  and  distribution  system  and  related  facilities  located  in  California
+and operated by Utility.
+
+UTILITY USERS TAX: Tax imposed by local governments on the Utility’s customers.  Utility is required to bill
+customers within the city or county for  the taxes  due, collect the taxes  from customers, and then pay the
+taxes to the city or county.
+
+VESSEL:  A means of transportation on water used for recreational, navigational or commercial purposes.
+
+VIOLENCE:  Types of violence are to include, but are not limited to, death or injury with a weapon, inflicting
+bodily harm, allowing animals to attack, physically detaining an employee against his/her will, and/or tearing
+employee’s clothing, or damaging or destroying Utility equipment or property.                                                                    L
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16C8                                                               Issued by                         Submitted                   Jan 29, 2024
+Advice Ltr. No.       4375-E                                   Dan Skopec                            Effective                     Jul 1, 2024
+                                                            Senior Vice President
+Decision No.          23-12-037                               Regulatory Affairs                     Resolution No.

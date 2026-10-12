@@ -529,3 +529,27 @@ TOU optimality bounds, PF-threshold exclusions and browser controls.
 ### Utility-specific dated residential versions
 
 `RatePlan` accepts versions satisfying `DatedRateVersion`, retaining the shared gap, overlap and coverage checks. SCE's `ResidentialRateVersion` carries structured historical prices and terms; `sce_residential.charges` supplies the same numeric/convex expression to billing and dispatch. Source data are included in Python engine snapshots. Effective dates are bounded by verified filings, and applied versions appear in result tables. The SCE cross-rate/season baseline allocation remains a disclosed study approximation; see `Southern_California.md`.
+
+## San Diego residential account studies
+
+`src/billing/san_diego.py` extends the existing Southern California billing
+adapter with dated SDG&E residential import plans and separately confirmed
+SDCP/CEA generation. Its shared numerical/convex expressions feed
+`src/dispatch/socal.py`; schema-6 validation and the existing pinned worker
+provide the local browser and native desktop GUI results. Runtime rate literals
+are Python files included in engine snapshots, rebuilt offline from official
+source extractions. See [San Diego scope and assumptions](San_Diego.md) for
+coverage, baseline allocation, PCIA, fees and explicit rejected accounts.
+
+## PJM regional candidate
+
+`src/regional/account.py` separates distribution, jurisdiction, supply, tariff,
+transmission zone and wholesale pricing location. The bounded Dominion GS-2T
+adapter shares numeric/convex billing expressions, uses the filed 30-minute
+measurement and parallel-service contract, and never adds wholesale LMP or PJM
+capacity/NSPL obligations to a bundled retail bill. Strict historical PJM files
+preserve native timestamps, node identity and revisions. Schema 8 uses the
+existing immutable worker and representative OpenDSS replay; historical
+perfect foresight is identified separately from PV self-consumption. This
+local candidate has no complete verified historical tariff year and is not
+automatically promoted. See [PJM candidate scope](PJM_Dominion_Candidate.md).

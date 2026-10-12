@@ -1,0 +1,64 @@
+PAGE 1
+
+Virginia Electric and Power Company
+
+Filed 04-16-25
+Electric-Virginia
+Superseding Filing Effective For Usage On and After 0 5-01-25.
+This Filing Effective For Usage On and After 05-01-26.
+
+RIDER CE
+CLEAN ENERGY PROJECTS AND POWER PURCHASE AGREEMENTS
+
+I. APPLICABILITY & AVAILABILITY
+
+This rider is applicable to all retail Customers of the Company located in the Commonwealth as a
+non-bypassable charge, irrespective of the generation supplier of such Customer, pursuant to Virginia Code § 56-585.5
+F, and notwithstanding any other tariff provision or contract term applicable to such Customer, except for the
+following:
+
+A.  A Customer meeting the accelerated renewable energy buyer requirements pursuant to Virginia Code
+§ 56-585.5 G; and
+ B.  A Customer with a peak demand in calendar year 2019 that exceeded 100 MW and that elected to purchase
+Electric Supply Service from a Competitive Service Provider prior to April 1, 2019 pursuant to Virginia Code
+§ 56- 577 A 3.
+
+II. MONTHLY RATE
+
+The following Virginia Electric and Power Company filed Rate Schedules and special rates, contracts or
+incentives approved by the State Corporation Commission pursuant to Virginia Code § 56 -235.2 shall be increased
+by the applicable cents per kilowatt-hour or dollars per kilowatt charge.
+
+Rate Schedules
+Cents per
+Electricity Supply
+kWh Charge
+Dollars per kW
+Demand Charge
+Schedules 1, 1G, 1P, 1S, 1T, 1W, DP-R, 1EV, EV 0.6054¢/kWh
+Schedules GS-1, DP-1 0.4673¢/kWh
+Schedule GS-2 0.4480¢/kWh1 $1.633/kW1
+Schedule GS-2T 0.4480¢/kWh2 $1.633/kW2
+Schedule DP-2 0.3774¢/kWh
+Schedules GS-3, MBR, SCR (Secondary)  $1.090/kW3
+Schedule GS-3 EV 0.3158¢/kWh1 $1.151/kW1
+Schedules GS-4, MBR, SCR (Primary)  $0.507/kW3
+Schedules GS-4, MBR, SCR (Transmission)  $0.499/kW3
+Schedule 5 0.3774¢/kWh
+Schedule 5C 0.7423¢/kWh
+Schedule 5P 0.7423¢/kWh
+Schedule 6 0.2126¢/kWh
+Schedule 6TS 0.2126¢/kWh
+Schedule 7 0.4673¢/kWh
+Schedule 8 0.0826¢/kWh
+Schedule 10 (Secondary) 0.2126¢/kWh
+Schedule 10 (Primary and Transmission) 0.0826¢/kWh
+Schedules 24, 25, 27, 28, 29 0.3768¢/kWh
+
+1 If the monthly Load Factor is less than or equal to 50% then Energy Rate (kWh) applies; otherwise the Demand Charge (kW) applies to kW
+  of Demand.  Load Factor is calculated as Monthly kWh ÷ the number of Days in the Billing Month ÷ 24 ÷ the Maximum Measured kW of
+  Demand.
+2 If the monthly Load Factor is less than or equal to 50% then Energy Rate (kWh) applies; otherwise the Demand Charge (kW) applies to
+  On-Peak Electricity Supply Demand.  Load Factor is calculated as Monthly kWh ÷ the number of Days in the Billing Month ÷ 24  ÷ the
+  Maximum Measured kW of Demand.
+3 Applied to On-Peak Electricity Supply Demand.

@@ -52,6 +52,7 @@ def summarize_ac_validation(scenarios, sample_limit=5):
 
 
 def capabilities():
+    from .pjm_study import capabilities as pjm_capabilities
     from .socal_study import capabilities as socal_capabilities
     from .municipal_service import capabilities as municipal_capabilities
     from ..simulation.interface_analysis import retail_tariff_ids_for_region
@@ -61,7 +62,7 @@ def capabilities():
     from .site_profile import SITE_OPTIONS, SERVICE_CLASSES
     from .carbon import REGION_MAPPINGS
     from ..billing.solar_programs import PROGRAMS
-    return {"socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "solar_export": {"program":"pge_nbt_monthly","scope":"Monthly comparison only; annual true-up and NSC not implemented"}, "solar_export_programs": [p.public() for p in PROGRAMS], "pge_annual_replay": {"program": "pge_nbt_statement_replay", "scope": "Twelve documented monthly statements and annual true-up; no annual interval simulation or dispatch"}, "tariffs": [
+    return {"pjm_candidate": pjm_capabilities(), "socal": socal_capabilities(), "carbon_regions": REGION_MAPPINGS, "site_options": SITE_OPTIONS, "service_classes": SERVICE_CLASSES, "municipal": municipal_capabilities(), "services": SERVICES, "candidate_defaults": DEFAULT_CANDIDATE_REQUEST, "ess_catalog": search(), "annual_orientation": True, "site_defaults": DEFAULT_SITE_REQUEST, "nsrdb_years": NSRDB_YEARS, "solar_export": {"program":"pge_nbt_monthly","scope":"Monthly comparison only; annual true-up and NSC not implemented"}, "solar_export_programs": [p.public() for p in PROGRAMS], "pge_annual_replay": {"program": "pge_nbt_statement_replay", "scope": "Twelve documented monthly statements and annual true-up; no annual interval simulation or dispatch"}, "tariffs": [
         {"id": key, "label": getattr(get_tariff(key), "name", key),
          "service": tariff_service(key),
          "notes": get_tariff(key).notes,
@@ -84,6 +85,9 @@ def execute(directory):
         execute_pge_annual(directory, raw_request)
         return
     request = validate_request(raw_request)
+    if request["schema_version"] == 8:
+        from .pjm_study import execute as execute_pjm
+        return execute_pjm(directory, request)
     if request["schema_version"] == 6:
         from .socal_study import execute as execute_socal
         execute_socal(directory, request)

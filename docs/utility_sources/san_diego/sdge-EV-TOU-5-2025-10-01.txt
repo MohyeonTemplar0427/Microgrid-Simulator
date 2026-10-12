@@ -1,0 +1,58 @@
+Service for Residential Customers with Electric Vehicles
+SDG&E provides additional options available for residential customers with electric vehicles. Schedule EV-TOU-5 is SDG&E's residential rate with a basic service fee for customers with an electric car or who use electricity to
+run a natural gas home fueling pump. The car must be registered with the California Department of Motor Vehicles.
+
+
+
+Schedule EV-TOU-5 - DOMESTIC TIME-OF-USE FOR HOUSEHOLDS WITH ELECTRIC VEHICLES provides domestic residential service for customers who own qualifying electric vehicles. Effective 10/1/2025
+
+SCHEDULE EV-TOU-5                                                                                                                                                                                    Schedule           Schedule              Total
+                                                                                                                                                                                                    WF-NBC +           EECC Rate         Electric Rate
+                                                                                                                                                                                                  DWR-BC Rate
+Energy Charges ($/kWh)                                         Transm           Distr          PPP            ND            CTC            LGC             RS           TRAC        UDC Total
+Summer
+   On-Peak                                                      0.07503        0.21922        0.00663        0.00001       0.00030        0.00000        0.00001        0.00000       0.30120            0.00595            0.40592            0.71307
+   Off-Peak                                                     0.07503        0.21922        0.00663        0.00001       0.00030        0.00000        0.00001        0.00000       0.30120            0.00595            0.14946            0.45661
+   Super Off-Peak                                               0.00000        0.02163        0.00663        0.00001       0.00030        0.00000        0.00001        0.00000       0.02858            0.00595            0.07035            0.10488
+Winter
+   On-Peak                                                      0.07503        0.21922        0.00663        0.00001       0.00030        0.00000        0.00001        0.00000       0.30120            0.00595            0.17258            0.47973
+   Off-Peak                                                     0.07503        0.21922        0.00663        0.00001       0.00030        0.00000        0.00001        0.00000       0.30120            0.00595            0.12379            0.43094
+   Super Off-Peak                                               0.00000        0.02163        0.00663        0.00001       0.00030        0.00000        0.00001        0.00000       0.02858            0.00595            0.06399            0.09852
+
+Other Charges/Discounts
+   Base Services Charge ($/Day)                                 0.00000        0.48321        0.22173        0.00000       0.00000        0.08849        0.00000        0.00000       0.79343            0.00000            0.00000            0.79343
+   Base Services Charge - DRAH ($/Day)                          0.00000        0.08666        0.22173        0.00000       0.00000        0.08849        0.00000        0.00000       0.39688            0.00000            0.00000            0.39688
+   Base Services Charge - FERA ($/Day)                          0.00000        0.08666        0.22173        0.00000       0.00000        0.08849        0.00000        0.00000       0.39688            0.00000            0.00000            0.39688
+Notes:
+1) The total rates presented reflect the UDC rates associated with service under Schedule EV-TOU-5 and the generation rates associated with Schedule EECC, in addition to the rates associated with Schedules DWR-BC and
+WF-NBC. The UDC rate-by-rate components presented are associated with service under Schedule EV-TOU-5 as presented in the utility’s tariff book.
+2) Unbundled customers are those who take generation from other providers, such as Direct Access (DA) or Community Choice Aggregation (CCA). Unbundled customers do not pay SDG&E’s commodity rates. The Total
+Energy Charge for an unbundled customer includes UDC, WF-NBC, DWR-BC and Power Charge Indifference Adjustment (PCIA) rates. PCIA rates by vintage are included below. Please see Schedules DA-CRS or CCA-CRS
+for more information regarding PCIA rates.
+3) Customers enrolled in Family Electric Rate Assistance (FERA) Program will receive a separate line-item bill discount of 18% applied to the total bill (less any minimum bill amount or base services charge) as calculated for
+bundled service customers.
+
+
+
+
+RESIDENTIAL PCIA RATE                              DA            CCA
+
+Vintage                                         ($/kWh)        ($/kWh)
+2001 Legacy Vintage                            $0.00008
+2009 Vintage                                                  ($0.00996)
+2010 Vintage                                                  ($0.00629)
+2011 Vintage                                                  ($0.00282)
+2012 Vintage                                                  $0.00081
+2013 Vintage                                                  $0.00084
+2014 Vintage                                                  $0.00096
+2015 Vintage                                                  $0.00112
+2016 Vintage                                                  $0.00094
+2017 Vintage                                                  ($0.00017)
+2018 Vintage                                                  ($0.00713)
+2019 Vintage                                                  ($0.01191)
+2020 Vintage                                                  ($0.01107)
+2021 Vintage                                                  ($0.01364)
+2022 Vintage                                                  ($0.01778)
+2023 Vintage                                                  ($0.03161)
+2024 Vintage                                                  $0.00210
+2025 Vintage                                                  $0.00210

@@ -1,0 +1,556 @@
+                                                                 Revised       Cal. P.U.C. Sheet No.                                 65130-E
+  San Diego Gas & Electric Company
+          San Diego, California                   Canceling                    Cal. P.U.C. Sheet No.
+                                                          SCHEDULE DR                                                               Sheet 1
+
+                                                      RESIDENTIAL SERVICE
+
+
+APPLICABILITY
+
+This Schedule is optionally available to domestic service for lighting, heating, cooking, water heating, and power,
+or  combination thereof,  in  single  family  dwellings, flats, and  apartments,  separately  metered  by the  utility;  to
+service  used  in  common  for  residential  purposes  by  tenants  in  multi-family  dwellings  under General                        Special          T
+Condition 8; to any approved combination of residential and nonresidential service on the same meter; and to
+incidental farm service under General Special Condition 7.                                                                                             T
+
+This schedule is also applicable to customers qualifying for the California Alternate Rates for Energy (CARE)
+Program and/or Medical Baseline, residing in single-family accommodations, separately metered by the Utility,
+and  may  include  Non-profit  Group  Living  Facilities  and  Qualified  Agricultural  Employee  Housing  Facilities,  if
+such facilities qualify to receive service under the terms and conditions of Schedule E-CARE or E-MEDICAL.
+The rates for CARE and Medical Baseline customers are identified in the rates tables below as DR-CARE and
+DR-MB rates, respectively.
+
+Customers on this schedule may also qualify for a semi-annual California Climate Credit $(49.36) per Schedule
+GHG-ARR.
+
+TERRITORY
+
+Within the entire territory served by the Utility.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                   (Continued)
+1C21                                                                Issued by                           Submitted                   Sep 30, 2026
+Advice Ltr. No.       4874-E                                     Dan Skopec                             Effective                  Sep 30, 2026
+                                                             Senior Vice President
+Decision No.          D.25-09-006                              Regulatory Affairs                       Resolution No.
+
+                                                                        Revised         Cal. P.U.C. Sheet No.                                     65131-E
+    San Diego Gas & Electric Company
+            San Diego, California                      Canceling                        Cal. P.U.C. Sheet No.
+                                                                 SCHEDULE DR                                                                     Sheet 2
+
+                                                            RESIDENTIAL SERVICE
+
+
+RATES
+                             TOTAL RATES FOR UNBUNDLED AND BUNDLED CUSTOMERS
+
+ All Customers
+                                                                             DR              DR-CARE               DR-FERA              DR-MB
+ Base Services Charge                                                $/Day
+    Base Services Charge                                                    0.79343            0.19713               0.39688             0.79343
+
+    Base Services Charge - DRAH                                             0.39688                  N/A                  N/A            0.39688
+
+ Unbundled Customers (Total UDC + WF-NBC + DWR-BC)1
+                                                                             DR              DR-CARE               DR-FERA              DR-MB
+
+ Total Energy Rates                                                  $/kWh
+    <= 130% of Baseline                                                     0.22491            0.21900               0.22491             0.21900
+    Above 130% of Baseline                                                  0.33192            0.32601               0.33192             0.32601
+
+
+ Total Effective Energy Rates2                                       $/kWh
+    <= 130% of Baseline                                                          N/A           0.13673               0.18443             0.17161
+    Above 130% of Baseline                                                       N/A           0.20629               0.27217             0.25546
+
+
+ Bundled Customers on EECC (Total UDC + WF-NBC + DWR-BC + EECC)
+                                                                             DR              DR-CARE               DR-FERA              DR-MB
+ Total Energy Rates                                                  $/kWh
+    <= 130% of Baseline                                                     0.41299            0.40708               0.41299             0.40708
+
+    Above 130% of Baseline                                                  0.52000            0.51409               0.52000             0.51409
+
+ Total Effective Energy Rates2                                       $/kWh
+    <= 130% of Baseline                                                          N/A           0.25899               0.33865             0.31899
+    Above 130% of Baseline                                                       N/A           0.32854               0.42640             0.40284
+
+
+ 1. Direct Access, Community Choice Aggregation and Transitional Bundled Service Customers pay the applicable
+     Vintaged Power Charge Indifference Adjustment (PCIA). Bundled PCIA is embedded within the bundled generation rates.
+ 2. Total Effective Rates are presented for illustrative purposes only and reflect applicable discounts
+      under Schedule E-CARE, FERA, or E-MEDICAL.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                          (Continued)
+ 2C18                                                                       Issued by                             Submitted                      Sep 30, 2026
+ Advice Ltr. No.          4874-E                                        Dan Skopec                                Effective                     Sep 30, 2026
+                                                                    Senior Vice President
+ Decision No.             D.25-09-006                                 Regulatory Affairs                          Resolution No.
+
+                                                                         Original         Cal. P.U.C. Sheet No.                                       65132-E
+   San Diego Gas & Electric Company
+           San Diego, California                        Canceling                         Cal. P.U.C. Sheet No.
+                                                                  SCHEDULE DR                                                                        Sheet 3
+
+                                                             RESIDENTIAL SERVICE
+
+
+RATES (Continued)
+
+                                                              DETAILED UDC RATES
+                                                                           DR               DR-CARE               DR-FERA                DR-MB
+ Base Services Charge                                      $/Day
+ Distribution
+    Base Services Charge                                                  0.63391               0.06674              0.23736              0.63391
+    Base Services Charge - DRAH                                           0.23736                    N/A                  N/A             0.23736
+ PPP1
+    Base Services Charge                                                  0.02913               0.00000              0.02913              0.02913
+    Base Services Charge       - DRAH                                     0.02913                    N/A                  N/A             0.02913
+ LGC
+    Base Services Charge                                                  0.13039               0.13039              0.13039              0.13039
+    Base Services Charge       - DRAH                                     0.13039                    N/A                  N/A             0.13039
+
+ Energy (All Seasons)                                      $/kWh
+ Transmission2                                                            0.09096               0.09096              0.09096              0.09096
+ Distribution                                                             0.15348               0.15348              0.15348              0.15348
+ PPP3                                                                     0.01515               0.01515              0.01515              0.01515
+ ND                                                                       0.00000               0.00000              0.00000              0.00000
+ CTC                                                                    (0.00007)             (0.00007)            (0.00007)             (0.00007)
+ LGC                                                                      0.00000               0.00000              0.00000              0.00000
+ RS                                                                       0.00005               0.00005              0.00005              0.00005
+ TRAC
+    <= 130% of Baseline                                                 (0.04057)             (0.04057)            (0.04057)             (0.04057)
+    Above 130% of Baseline                                                0.06644               0.06644              0.06644              0.06644
+
+ 1. PPP Base Services Charge includes Low Income PPP (LI                 -PPP) and Non-low Income PPP (Non-LI-PPP):
+       LI-PPP                                              $/Day          0.02913               0.00000              0.02913              0.02913
+       Non-LI-PPP                                          $/Day          0.00000               0.00000              0.00000              0.00000
+ 2. Transm. Energy charges include Transmission Revenue Balancing Account Adjustment (TRBAA) and
+     Transmission Access Charge Balancing Account Adjustment (TACBAA):
+       TRBAA                                               $/kWh        (0.00304)             (0.00304)            (0.00304)             (0.00304)
+       TACBAA                                              $/kWh        (0.00993)             (0.00993)            (0.00993)             (0.00993)
+ 3. PPP Energy charges include Low Income PPP (LI-PPP) and Non-low Income PPP (Non-LI-PPP):
+       LI-PPP                                              $/kWh          0.00976               0.00976              0.00976              0.00976
+       Non-LI-PPP                                          $/kWh          0.00531               0.00531              0.00531              0.00531
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                            (Continued)
+3C20                                                                         Issued by                               Submitted                       Sep 30, 2026
+Advice Ltr. No.          4874-E                                          Dan Skopec                                  Effective                      Sep 30, 2026
+                                                                     Senior Vice President
+Decision No.             D.25-09-006                                    Regulatory Affairs                           Resolution No.
+
+                                                                     Original        Cal. P.U.C. Sheet No.                                    65133-E
+  San Diego Gas & Electric Company
+           San Diego, California                     Canceling                       Cal. P.U.C. Sheet No.
+                                                              SCHEDULE DR                                                                    Sheet 4
+
+                                                          RESIDENTIAL SERVICE
+
+
+RATES (Continued)
+
+                                                                 OTHER RATES
+                                                                      DR              DR-CARE               DR-FERA                 DR-MB
+ Wildfire Non-Bypassable Charge1                       $/kWh        0.00591                   N/A               0.00591                   N/A
+ DWR Bond Charge2                                      $/kWh        0.00000                   N/A               0.00000                   N/A
+ PCIA - Unbundled3                                     $/kWh       See Schedule DA-CRS and Schedule CCA-CRS
+
+                                                       DETAILED COMMODITY RATES
+ Bundled Customers on EECC
+                                                                      DR              DR-CARE               DR-FERA                 DR-MB
+ Energy (All Seasons)                                  $/kWh
+ EECC                                                               0.18808              0.18808                0.18808              0.18808
+
+ 1. See Schedule WF-NBC for applicability.
+ 2. See Schedule DWR-BC for applicability.
+ 3. Direct Access, Community Choice Aggregation and Transitional Bundled Service Customers pay the applicable
+    Vintaged Power Charge Indifference Adjustment (PCIA). Bundled PCIA is embedded within the bundled generation rates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                        (Continued)
+4C21                                                                     Issued by                             Submitted                     Sep 30, 2026
+Advice Ltr. No.         4874-E                                       Dan Skopec                                Effective                    Sep 30, 2026
+                                                                 Senior Vice President
+Decision No.            D.25-09-006                                 Regulatory Affairs                         Resolution No.
+
+                                                               Original      Cal. P.U.C. Sheet No.                               65134-E
+  San Diego Gas & Electric Company
+          San Diego, California                 Canceling                    Cal. P.U.C. Sheet No.
+                                                         SCHEDULE DR                                                             Sheet 5
+
+                                                     RESIDENTIAL SERVICE
+
+
+RATES (Continued)
+
+Customers taking service under this schedule may be eligible for a CARE discount on their bill.  Qualification
+is based on participation in certain public assistance programs or by income guidelines. In addition, qualified
+CARE  customers  are  exempt  from  paying  the  CARE  surcharge.                       Please  refer  to  Schedule  E-CARE  for
+applicability requirements.
+
+Base Services Charge (BSC)
+
+The BSC is a daily charge to recover certain fixed UDC costs and does not vary with customer usage. The
+total monthly BSC amount is calculated as the BSC  multiplied by the number  of days in the billing cycle.
+There  are  four  BSCs  (Base  Services  Charge,  Base  Services  Charge                     –  DRAH,  Base  Services  Charge –
+FERA, and Base Services Charge – CARE). BSC placement will be determined by participation in CARE,
+FERA,  and/or  successfully  meeting  the  deed-restricted  affordable  housing  (DRAH)  requirement.  All  other
+customers will receive the Base Services Charge.
+
+Rate Components
+
+The  Utility  Distribution  Company  Total  Rates  (UDC  Total)  shown  above  are  comprised  of  the  following
+components  (if  applicable):  (1)  Transmission  (Trans)  Charges,  (2)  Distribution  (Distr)  Charges,  (3)  Public
+Purpose  Program  (PPP)  Charges,  (4)  Nuclear  Decommissioning  (ND)  Charge,  (5)  Ongoing  Competition
+Transition  Charges  (CTC),  (6)  Local  Generation  Charge  (LGC),  (7)  Reliability  Services  (RS),  and  (8)  the
+Total Rate Adjustment Component (TRAC).
+
+
+Certain Direct Access customers are exempt from the TRAC, as defined in Rule 1-Definitions.
+
+Customers that are eligible and receive both CARE and medical baseline will be given the additional medical
+baseline allotment for which they qualify and will receive the CARE and Medical Baseline discounts identified
+in Schedule E-CARE and Schedule E-MEDICAL, respectively.
+
+Franchise Fee Differential
+
+A Franchise Fee Differential of 5.78% will be applied to the monthly billings calculated under this schedule for
+all customers within the corporate limits of the City of San Diego.  Such Franchise Fee Differential shall be so
+indicated and added as a separate item to bills rendered to such customers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 (Continued)
+5C20                                                               Issued by                         Submitted                   Sep 30, 2026
+Advice Ltr. No.       4874-E                                   Dan Skopec                            Effective                  Sep 30, 2026
+                                                            Senior Vice President
+Decision No.          D.25-09-006                             Regulatory Affairs                     Resolution No.
+
+                                                                  Original       Cal. P.U.C. Sheet No.                                 65135-E
+  San Diego Gas & Electric Company
+          San Diego, California                    Canceling                     Cal. P.U.C. Sheet No.
+                                                           SCHEDULE DR                                                                 Sheet 6
+
+                                                        RESIDENTIAL SERVICE
+
+
+GENERAL SPECIAL CONDITIONS                                                                                                                              T
+
+1.      Load Checks: The utility has the right to make load checks to verify the possession and use of appliances
+        for which baseline quantities are being allowed.  In the event that a customer is found, by load check, not
+        to  have  the  necessary  appliances  to  qualify  for a  specific  baseline quantity  previously  declared  by  the
+        customer,  the  utility  shall  have  the  right  to  rebill  the  customer's  previous  11  months'  bills  using  the
+        baseline quantities found to be appropriate.
+
+2.      Baseline Rates: Baseline rates are applicable only to separately metered residential usage.
+
+3.      Baseline Usage: The following quantities of electricity are to be billed at the rates for baseline usage:
+
+                                                                 Baseline Allowance for Climatic Zones*
+                                                      Coastal               Inland               Mountain              Desert
+        Basic Allowance
+          Summer (June 1 to October 31)                            9.0                10.4                   13.6                 15.9
+          Winter (November 1 to May 31)                               9.2               9.6                  12.9                 10.9
+
+        All Electric**
+          Summer (June 1 to October 31)                             6.0                8.7                   15.2                 17.0
+          Winter (November 1 to May 31)                           8.8                 12.2                   22.1                 17.1
+
+             *  Climatic Zones are shown on the Territory Served, Map No. 1.
+
+             ** All Electric allowances are available upon application to those customers who have permanently
+                installed  space  heating  or  who  have  electric  water  heating  and  receive  no  energy  from  another
+                source.
+
+4.      Medical Baseline Usage          : For more details on the Medical Baseline allowance for residential electric rate
+        schedules, refer to Schedule E            -MEDICAL. By granting the medical rates set forth in E                     -MEDICAL, the
+        utility does not guarantee a continuous and sufficient supply of energy. The supply of all energy by the
+        utility is subject to the provisions of Rule 14.
+
+5.      Voltage: Service under this schedule will be supplied at the standard lighting voltage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    (Continued)
+6C22                                                                  Issued by                           Submitted                    Sep 30, 2026
+Advice Ltr. No.        4874-E                                     Dan Skopec                              Effective                   Sep 30, 2026
+                                                               Senior Vice President
+Decision No.           D.25-09-006                               Regulatory Affairs                       Resolution No.
+
+                                                               Original      Cal. P.U.C. Sheet No.                               65136-E
+  San Diego Gas & Electric Company
+          San Diego, California                 Canceling                    Cal. P.U.C. Sheet No.
+                                                         SCHEDULE DR                                                             Sheet 7
+
+                                                     RESIDENTIAL SERVICE
+
+
+GENERAL SPECIAL CONDITIONS (Continued)                                                                                                          T
+
+6.     Welder Service: Service under this schedule will be supplied to a welder load of 2.9                        kVA or less at 240
+       volts, and to 0.5 kVA or less at 120 volts.  Welders will be rated in accordance with Rule 2F                    -1.
+
+7.     Incidental Farm Service       :  Incidental farm service used in the production of farm crops and produce will be
+       supplied  under  this  schedule  when  combined  with  domestic  service  and  supplied  through  the  same
+       meter  as  the  domestic  service  for  the  farm  operator's  residence,  provided  the  transformer  capacity
+       required for the combined load does not exceed twice the normal capacity required for the single                           -family
+       domestic load of that residence.
+
+8.     Common Use Service:  Service used in common for residential purposes in a multi-family dwelling, on a
+       single premises, whether separately metered or combined with service to an individual dwelling unit, will
+       be  supplied  under  this  schedule.    Non-profit  group  living  facilities  are  eligible  to  receive  the  CARE
+       discount in both separately metered and non-separately metered common use areas provided the facility
+       meets the eligibility criteria set forth in PU Code §739.1
+
+9.     Billing: A customer’s bill is first calculated according to the total rates and conditions listed above.  The
+       following adjustments are made depending on the option applicable to the customer:
+
+       a.      UDC Bundled Service Customers                  receive supply and delivery services solely from the Utility.
+               The  customer’s  bill  is  based  on  the  Total  Rates  set  forth  above.    The  EECC  component  is
+               determined  by  multiplying  the  EECC  price  for  this  schedule  during  the  last  month  by  the
+               customer’s  total  usage.    The  DWR         -BC  component  is  determined  by  multiplying  the  DWR               -BC
+               rate by the customer’s total usage
+
+       b.      Direct  Access  (DA)  and  Community  Choice  Aggregation  (CCA)  Customers                                    purchase
+               energy from a non-utility provider and continue to receive delivery services from the Utility.  The
+               bills  for  a  DA  and  CCA  Customer  will  be  calculated  as  if  it  were  a  UDC  Bundled  Service
+               Customer,  then  crediting  the  bill  by  the  amount  of  the  EECC  component  and  DWR                            -BC
+               component  for  continuous  DA  customers  that  are  exempt  from  the  DWR                          -BC  charge,  as
+               determined  for  a  UDC  Bundled  Customer,  and  including  the  appropriate  Cost  Responsibility
+               Surcharge (CRS), if applicable.
+
+               Nothing in this service schedule prohibits a marketer or broker from negotiating with customers
+               the method by which their customer will pay the CTC charge.
+
+10.    Other Applicable Tariffs:        Rules 21, 23 and Schedule E           -DEPART apply to customers with generators.
+       Schedules NEM, and NEM             -FC apply to Net Energy Metering customers.  Customers on Schedule E                           -
+       DEPART are not eligible for Schedule GHG                -ARR.
+
+11.    Deed-Restricted Affordable  Housing  Requirement                :  DRAH  placement constitutes those  customers  who
+       live in an affordable rental home that is restricted by the rules of federal or state subsidies to residents
+       who have incomes at or below 80 percent of Area Median Income based on the statewide database of
+       such  homes  maintained  by  the  California  Housing  Partnership  and,  subject  to  attestation  where
+       applicable.
+
+
+
+                                                                 (Continued)
+7C20                                                              Issued by                          Submitted                  Sep 30, 2026
+Advice Ltr. No.       4874-E                                   Dan Skopec                            Effective                  Sep 30, 2026
+                                                            Senior Vice President
+Decision No.          D.25-09-006                             Regulatory Affairs                     Resolution No.
+
+                                                                 Original      Cal. P.U.C. Sheet No.                                65137-E
+  San Diego Gas & Electric Company
+          San Diego, California                  Canceling                     Cal. P.U.C. Sheet No.
+                                                          SCHEDULE DR                                                               Sheet 8
+
+                                                      RESIDENTIAL SERVICE
+
+
+EECC SPECIAL CONDITIONS                                                                                                                            T
+
+1.        Definitions:    The  definitions  of  principle  terms  used  in  this  schedule  are  found  either  herein  or  in
+          Rule 1, Definitions.
+
+2.        Service  Restrictions:       Service  under  this  schedule  is  restricted  to  the  entire  load  served  by  single
+          meters.  The electric load of a single meter may not be partitioned among services rendered under
+          this schedule and services rendered by a non                -utility party under Direct Access or Community Choice
+          Aggregation (CCA).
+
+3.        Terms of Service: A customer receiving optional service under this Schedule may elect to change to
+          another  applicable  rate  schedule,  but  only  after  receiving  service  on  this  Schedule  for  at  least  12
+          consecutive  months,  except  as  specified  in  EECC  Special  Condition  4.  If  a  customer  elects  to                               T
+          discontinue service on this Schedule, the customer will not be permitted to return to this Schedule for
+          a  period  of  one  year,  unless  returning  to  service  from  a  Direct  Access  Provider  or  a  Community
+          Choice Aggregator (CCA) in less than              one year.
+
+4.        Early Termination: An eligible customer may elect to take commodity from a Direct Access provider
+          or  from  a  CCA  during  its  Term  of  Service  granted  it  has  complied  with  all  other  applicable  tariff
+          requirements, including, but not limited to the terms and conditions set forth in Rules 25.1 and 27,
+          respectively.
+
+5.        TOU Period Grandfathering           : Pursuant to D.17-01-006 and D.17-10-018 TOU Period Grandfathering
+          permits  certain  eligible  behind       -the-meter  solar  customers  to  continue  billing  under  grandfathered
+          TOU period definitions after new TOU Periods are implemented, for a specific period of time.
+
+          TOU   Period   Grandfathering   Eligible   Customer   Generator   (Non                   -Residential):     A   non-residential
+          customer with an on        -site solar system, who has filed an initial interconnection application by January
+          31, 2017. The on-site solar system must be designed to offset at least 15% of the customer’s current
+          annual load. For Public Agency customers, defined here as public schools, colleges and universities;
+          federal, state, county and city government agencies; municipal utilities; public water and/or sanitation
+          agencies;  and  joint  powers  authorities,  the  non              -residential  account  must  have  filed             an  initial
+          interconnection application by December 31, 2017.
+
+          TOU  Period  Grandfathering  Term  (Non               -Residential):  Upon  SDG&E’s  implementation  of  updated
+          TOU  periods  adopted  in  D.17            -08-030,  TOU  Grandfathering  Eligible  Customer  Generators  will
+          continue to be billed under prior existing TOU periods and resulting rates for the remainder of their
+          applicable  TOU  Grandfathering  Term,  which  begins  upon  issuance  of  a  permission  to  operate
+          customer’s  on-site  solar  system  and  continues  for  10  years.  In  no  event  shall  the  duration  of  a
+          customer’s  grandfathering  term  extend  beyond  July  31,  2027  (December  31,  2027,  for  schools).
+          Upon expiration of a customer’s TOU Period Grandfathering Term, the customer will be billed using
+          his otherwise applicable TOU periods and associated rates beginning with the customer’s next billing
+          cycle.
+
+6.        PCIA  Recovery  in  Bundled  EECC  Rates                :  Bundled  Service  customers           on  Schedule      EECC  rates           T
+          include an amount to recover the above              -market portion of SDG&E’s generation portfolio. This above                    -     T
+          market  portion  is  referred  to  as  the  Power  Charge  Indifference  Adjustment  (PCIA)  amount  and  is
+          shown  on  Bundled  Service  customers’  bills  under  the  Breakout  of  Current  Charges  panel  and
+          embedded in Electric Generation charges.
+
+
+
+
+                                                                   (Continued)
+8C19                                                                Issued by                          Submitted                   Sep 30, 2026
+Advice Ltr. No.       4874-E                                    Dan Skopec                             Effective                   Sep 30, 2026
+                                                             Senior Vice President
+Decision No.          D.25-09-006                              Regulatory Affairs                      Resolution No.

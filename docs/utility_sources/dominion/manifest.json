@@ -1,0 +1,115 @@
+{
+  "retrieved_on": "2026-10-11",
+  "sources": [
+    {
+      "label": "Entire Filed Tariff",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/entire-filed-tariff.pdf",
+      "sha256": "b6a2fa0612183c27d839df336a9d555085757f2bbb0d698a2f21c902af0098dd"
+    },
+    {
+      "label": "Schedule GS-2 - Intermediate General Service (30-500 kW)",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/large-business/schedule-gs2.pdf",
+      "sha256": "ab80c44ee6b65abb22e076af042fe7529928e4bca58def0b3daea6767bdc6aa9"
+    },
+    {
+      "label": "Schedule GS-2T - TOU Intermediate General Service",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/large-business/schedule-gs2t.pdf",
+      "sha256": "1ff1867d76d284d694917824b9b98e8e75e132aee535118a3b0251561cbe412f"
+    },
+    {
+      "label": "Exhibit of Applicable Riders",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/exhibit-of-applicable-riders.pdf",
+      "sha256": "5c3eff837f08c357779da2ef50e33d85c13745164aa9808d73fe6de2866f07e9"
+    },
+    {
+      "label": "Rider A - Fuel Charge Rider",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-a.pdf",
+      "sha256": "96097154988738c37a0628b4baafb3a6d370ee1830e73afb4db22864f937285c"
+    },
+    {
+      "label": "Rider C1A - Peak-Shaving Increment Rider",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-c1a.pdf",
+      "sha256": "2cba13c188c1a24258fc05715702537076d787d9b5ac23057aee74e7690a9a74"
+    },
+    {
+      "label": "Rider C4A - Energy Efficiency Increment Rider",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-c4a.pdf",
+      "sha256": "b1876bfe74b60dfaea6780ab588103e04aa84e31799ae74bf5133b093e312d06"
+    },
+    {
+      "label": "Rider CCR - Coal Ash Closure",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-ccr.pdf",
+      "sha256": "1fa63d20063f4c1e0af47bf4a91de192dcb220d19441641f991d0d07fe31ff63"
+    },
+    {
+      "label": "Rider CE - Clean Energy Projects and Power Purchase Agreements",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-ce.pdf",
+      "sha256": "fd92b2fc7761d1bb5ddfc088671eb2922f866f624cf9870f7866c4a12551fb2e"
+    },
+    {
+      "label": "Rider CERC - Chesterfield Energy Reliability Center",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-cerc.pdf",
+      "sha256": "73ae65cf53d454207708fe9f7abab1c553e6f1c9025aac30c466780c9f53ff26"
+    },
+    {
+      "label": "Rider CRC - Manufacturing and Commercial Competitiveness Retention Credit Rider",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/large-business/rider-crc.pdf",
+      "sha256": "a1755bcb8fe0afeaf8dc2b4e033adcb8cf76ab122dd5f22ec5c373e88de60b04"
+    },
+    {
+      "label": "Rider D - Tax Effect Recovery",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-d.pdf",
+      "sha256": "0486c5caf79447a049f8361dedc190e0c4eb6ea63f665b6fadbd197d9b19dd0e"
+    },
+    {
+      "label": "Rider DIST - Distribution Facilities Projects",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-dist.pdf",
+      "sha256": "71e5a766efddcc5dae25280ce5e325a8eadc536d2e806f951547ad894a225119"
+    },
+    {
+      "label": "Rider E - Environmental Projects",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-e.pdf",
+      "sha256": "5975ff6625ea803f856537b9ecc413060e736eb138c397864517c4e133550a40"
+    },
+    {
+      "label": "Rider GEN - Generation Facilities Projects",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-gen.pdf",
+      "sha256": "65ab51ce65fe892f32946580fc781ccf73f3fe774f436690a9323ce477d4d819"
+    },
+    {
+      "label": "Rider OSW - Coastal Virginia Offshore Wind",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-osw.pdf",
+      "sha256": "a10866e32d66f58fb30086c9cbe74b20fbdab3867c36408be624d86b9e3202c3"
+    },
+    {
+      "label": "Rider PIPP - Universal Service Fee",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-pipp.pdf",
+      "sha256": "df45c7b795c7d259cfcb608670868c6a0a255f70a66d6f872466f9ea80860857"
+    },
+    {
+      "label": "Rider RGGI - Regional Greenhouse Gas Initiative",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-rggi.pdf",
+      "sha256": "4245a838d68f36ecf8e34976177142fb49e314e0f58fd3c40f09011dbdcf8e5f"
+    },
+    {
+      "label": "Rider RPS - Renewable Energy Portfolio Standard",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-rps.pdf",
+      "sha256": "d4bc6761e8a5eb58a4a34d7bd0e80b1a71925b8bec9fddc20d12a2c9a39fe07a"
+    },
+    {
+      "label": "Rider SMR - Small Modular Reactor",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-smr.pdf",
+      "sha256": "0be6e9fc3ce40ae2f7948b381407e6574d4272fee2d2be2027e726d72066ee59"
+    },
+    {
+      "label": "Rider SNA - Surry and North Anna Nuclear Life Extension Program",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-sna.pdf",
+      "sha256": "4ce1d42d0b1683b6bc519d0c7af6cb10014eb579bd3a2354c2d495fe2832334a"
+    },
+    {
+      "label": "Rider T1 - Transmission",
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-t1.pdf",
+      "sha256": "dece3d79a5493f64b0b82088ce3075d3e09f80b3245b3c43a3d4af8108889c5b"
+    }
+  ]
+}

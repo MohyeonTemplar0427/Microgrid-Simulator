@@ -1,0 +1,192 @@
+                                          ADOPTED RATES
+                                EFFECTIVE FEBRUARY 1, 2026
+
+The rates below reflect Clean Energy Alliance’s (CEA) generation rate, and do not include San Diego Gas
+& Electric (SDG&E) delivery charge, General Municipal Surcharge (GMS), or the Power Charge
+Indifference Adjustment (Exit Fees) on SDG&E’s CCA-CRS rate tariff.  Information for these charges can
+be found at www.sdge.com.
+
+SDG&E to CEA Rate Mapping
+
+The table below maps SDG&E rates to CEA rates
+
+ SDG&E RATE                                                               CEA RATE
+ RESIDENTIAL
+ Schedule DR-LI and Medical Baseline Customers                            DR-LI-MB
+ DR TOU, DR TOU CARE, DR TOU MB                                           DR-TOU
+ DR-SES, DR-SES-CARE, DR-SES-MB                                           DR-SES
+ EV-TOU                                                                   EV-TOU
+ EV-TOU-2, EV-TOU-2-CARE, EV-TOU-2-MB                                     EV-TOU-2
+ EV-TOU-5, EV-TOU-5-CARE, EV-TOU-5-MB                                     EV-TOU-5
+ TOU-DR-1, TOU-DR-1-CARE, TOU-DR-1-MB                                     TOU-DR-1
+ TOU-DR-2, TOU-DR-CARE, TOU-DR-2-MB                                       TOU-DR-2
+ TOU-DR, TOU-DR-CARE, TOU-DR-MB                                           TOU-DR
+ DR-SES (Grandfathered)                                                   G-DR-SES
+ EV-TOU (Grandfathered)                                                   G-EV-TOU
+ EV-TOU-2, EV-TOU-2-CARE, EV-TOU-2-MB (Grandfathered)                     G-EV-TOU-2
+ TOU-DR, TOU-DR-CARE, TOU-DR-MB (Grandfathered)                           G-TOU-DR
+TIME-OF-USE PERIODS
+
+ Weekdays                                        Summer                                Winter
+                                         June 1 – October 31                November 1 – May 31
+ On-Peak                              4pm – 9pm                           4pm – 9pm
+ Off-Peak                             6am – 4pm;                          6am – 4pm Excluding
+                                      9pm – midnight                      10am-2pm in March &
+                                                                          April;
+                                                                          9pm – midnight
+ Super Off-Peak                       Midnight – 6am                      Midnight- 6am
+                                                                          10am – 2pm in March &
+                                                                          April
+
+ Weekends                                 Summer                           Winter
+                                   June 1 – October 31            November 1 – May 31
+ On-Peak                        4pm – 9pm                       4pm – 9pm
+ Off-Peak                       2pm – 4pm;                      2pm – 4pm
+                                9pm – midnight                  9pm – midnight
+ Super Off-Peak                 Midnight – 2pm                  Midnight- 2pm
+
+
+GRANDFATHERED TIME-OF-USE PERIODS
+
+                                          Summer                           Winter
+                                   June 1 – October 31            November 1 – May 31
+ On-Peak                        11am-6pm Monday
+                                through Friday, excluding                   N/A
+                                Holidays
+ Semi-Peak                      6am-11am and 6pm-               6am-6pm weekdays, and
+                                10pm Monday through             all hours on weekends
+                                Friday, excluding               and Holidays
+                                Holidays
+ Off-Peak                       10pm-6am weekdays,              6pm-6am weekdays, and
+                                and all hours weekends          all hours on weekends
+                                and Holidays                    and Holidays
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CEA Adopted Rate Schedule                                                                     2
+Effective February 1, 2026
+                           CLEAN ENERGY ALLIANCE ADOPTED RATES
+
+
+
+                                                                            SUMMER RATE                WINTER
+                                                                                June 1 –           November 1 –
+                CEA RATE                       TIME-OF-USE PERIOD             October 31               May 31
+                                                                                Per kWh               Per kWh
+ RESIDENTIAL
+ DR                                          Total                                  $0.27829               $0.10921
+ DR-LI-MB                                    Total                                  $0.27829               $0.10921
+ E-LI-TOU                                    Total                                  $0.08451               $0.10048
+ E-LI-NR                                     Total                                  $0.08483               $0.10258
+ DR-SES                                      On-Peak                                $0.51684               $0.24430
+ DR-SES                                      Off-Peak                               $0.15975               $0.15782
+ DR-SES                                      Super Off-Peak                         $0.04961               $0.05187
+ EV-TOU                                      On-Peak                                $0.51684               $0.24430
+ EV-TOU                                      Off-Peak                               $0.15975               $0.15782
+ EV-TOU                                      Super Off-Peak                         $0.04961               $0.05187
+ EV-TOU-2                                    On-Peak                                $0.51684               $0.24430
+ EV-TOU-2                                    Off-Peak                               $0.15975               $0.15782
+ EV-TOU-2                                    Super Off-Peak                         $0.04961               $0.05187
+ EV-TOU-5                                    On-Peak                                $0.51684               $0.24430
+ EV-TOU-5                                    Off-Peak                               $0.15975               $0.15782
+ EV-TOU-5                                    Super Off-Peak                         $0.04961               $0.05187
+ TOU-DR-1                                    On-Peak                                $0.55922               $0.19979
+ TOU-DR-1                                    Off-Peak                               $0.22509               $0.08513
+ TOU-DR-1                                    Super Off-Peak                         $0.04961               $0.05187
+ TOU-DR-2                                    On-Peak                                $0.55922               $0.19979
+ TOU-DR-2                                    Off-Peak                               $0.15274               $0.06982
+ TOU-DR                                      On-Peak                                $0.38044               $0.19928
+ TOU-DR                                      Off-Peak                               $0.27762               $0.08483
+ TOU-DR                                      Super Off-Peak                         $0.16618               $0.05163
+ PEAK SMART SAVERS PROGRAM - RESIDENTIAL
+ NON-EVENT ENERGY CHARGES
+ TOU-DR-P                                    On-Peak                                $0.26631               $0.13950
+ TOU-DR-P                                    Off-Peak                               $0.19433               $0.05938
+ TOU-DR-P                                    Super Off-Peak                         $0.16618               $0.05163
+                                             Event Day Load
+ TOU-DR-P                                    Reduction Adder                            $1.10                  $1.10
+ TOU-DR-1-P                                  On-Peak                                $0.39145               $0.13985
+ TOU-DR-1-P                                  Off-Peak                               $0.15756               $0.05959
+ TOU-DR-1-P                                  Super Off-Peak                         $0.04961               $0.05187
+
+
+
+
+
+CEA Adopted Rate Schedule                                                                                          3
+Effective February 1, 2026
+                                                                             SUMMER RATE                WINTER
+                                                                                 June 1 –            November 1 –
+                CEA RATE                       TIME-OF-USE PERIOD              October 31               May 31
+                                                                                 Per kWh                Per kWh
+                                             Event Day Load
+ TOU-DR-1-P                                  Reduction Adder                             $1.10                   $1.10
+ TOU-DR-2-P                                  On-Peak                                 $0.39145                $0.13985
+ TOU-DR-2-P                                  Off-Peak                                $0.10692                $0.04887
+                                             Event Day Load
+ TOU-DR-2-P                                  Reduction Adder                             $1.10                   $1.10
+ EV-TOU, EV-TOU-2 and EV-TOU-5               On-Peak                                 $0.36179                $0.17101
+ EV-TOU, EV-TOU-2 and EV-TOU-5               Off-Peak                                 $0.1183                $0.11047
+ EV-TOU, EV-TOU-2 and EV-TOU-5               Super Off-Peak                          $0.04961                $0.05187
+                                             Event Day Load
+ EV-TOU, EV-TOU-2 and EV-TOU-5               Reduction Adder                             $1.10                   $1.10
+ CLEAN IMPACT RESIDENTIAL RATE RELIEF CREDIT                                          Per kWh               -$0.03871
+ SOLAR PLUS – RESIDENTIAL PROGRAM
+ Per kWh with Pre-Construction Costs up to $750.00                                      $0.145                 $0.145
+ Per kWh with Pre-Construction Costs $751.00 - $2,500.00                                 $0.15                   $0.15
+ Per kWh with Pre-Construction Costs $2,501.00 - $5,000.000                             $0.155                 $0.155
+ First Battery – per Month                                                                $115                    $115
+ Each Additional Battery – Per Month                                                       $75                     $75
+ BATTERY BONUS PROGRAM                                                Per Month Rate Range                 $50 - $115
+ POWER SUPPLY PREMIUMS and NET ENERGY METERING SURPLUS COMPENSATION
+ Clean Impact Plus Premium –
+ 75% Carbon Free                                                                     $0.00100                $0.00100
+ Green Impact Premium –
+ 100% Renewable                                                                      $0.00750                $0.00750
+ Personal Impact/ Solar Impact –
+      Net Surplus Compensation Per kWh                                                   $0.06                   $0.06
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CEA Adopted Rate Schedule                                                                                            4
+Effective February 1, 2026

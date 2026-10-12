@@ -13,7 +13,9 @@ FIELDS={'schema_version','name','resolution_id','resolution','mode','account','t
 
 def capabilities():
  from ..billing.la_coverage import coverage
+ from ..billing.san_diego import PROVIDERS
  return {'schema_version':6,'tariff_data_version':VERSION,'plans':list(PLANS.values()),
+ 'san_diego_generation':PROVIDERS,'san_diego_pcia_vintages':list(range(2009,2027)),
  'la_county_coverage':coverage(),
  'solar_programs':[{'id':'none','label':'No solar'},{'id':'approved_non_export','label':'Approved non-export PV · self-consumption only'},
                    {'id':'sce_nbt','label':'SCE bundled NBT23–NBT26 · confirmed billing cycle'},
@@ -26,6 +28,8 @@ def capabilities():
 
 def billing_account(r):
  account=dict(r['account'])
+ if r['tariff_id'].startswith('sdge_') and r['mode']=='hypothetical_bundled':
+  account['actual_generation_provider']='bundled'
  if account.get('customer_class')=='residential':
   accommodation='multifamily' if r['site_profile']['subtype']=='apartment_unit' else 'single_family'
   if account.get('accommodation',accommodation)!=accommodation:
@@ -42,15 +46,18 @@ def validate(r):
  if r['timezone']!='America/Los_Angeles' or r['timestep_minutes']!=15:raise ValueError('Southern California studies require local Pacific time and 15-minute intervals.')
  if r['mode'] not in ('actual_service','hypothetical_bundled'):raise ValueError('Choose actual service or an explicitly hypothetical bundled comparison.')
  p=eligibility(r['tariff_id'],billing_account(r),r['start_date'],r['end_date'])
- if r['account'].get('actual_generation_provider') not in ('bundled','cca'):raise ValueError('Confirm generation enrollment separately from delivery.')
+ providers=('bundled','sdcp','cea') if p['utility']=='sdge' else ('bundled','cca')
+ if r['account'].get('actual_generation_provider') not in providers:raise ValueError('Confirm generation enrollment separately from delivery.')
  if p['utility'] in ('gwp','pwp','alw','bwp','ipu') and r['account']['actual_generation_provider']!='bundled':raise ValueError('Municipal ordinary accounts require bundled generation; SCE CCA/CEU pairing is not applicable.')
- if r['mode']=='actual_service' and r['account']['actual_generation_provider']!='bundled':raise ValueError('Actual CCA billing is unsupported; an explicitly hypothetical bundled comparison is required.')
+ if p['utility']!='sdge' and r['mode']=='actual_service' and r['account']['actual_generation_provider']!='bundled':raise ValueError('Actual CCA billing is unsupported; an explicitly hypothetical bundled comparison is required.')
  if customer_class(r['site_profile'])!=p['customer_class']:raise ValueError('Location-step customer type must match the account.')
  resolution=r['resolution']
  if not isinstance(resolution,dict):raise ValueError('Saved location resolution required.')
  if r['mode']=='actual_service' and (resolution.get('status')!='verified' or resolution.get('delivery_utility')!=p['utility']):raise ValueError('Actual service requires saved bill/utility-confirmed delivery.')
  if r['mode']=='hypothetical_bundled' and p['utility'] not in [c['utility_id'] for c in resolution.get('delivery_candidates',[])]+[resolution.get('delivery_utility')]:raise ValueError('Selected comparison utility must match the resolved location or confirmed override.')
  if r['battery'] is not None:Battery(**r['battery'])
+ if p['utility']=='sdge' and r['battery'] is not None and r['account'].get('sdge_storage_confirmed') is not True:
+  raise ValueError('Confirm SDG&E permits this storage installation on the ordinary import schedule without a standby rider or event program.')
  if r['account']['solar_program']=='sce_nem' and r['battery'] is not None:
   raise ValueError('SCE legacy NEM paired-storage settlement is not implemented.')
  if p['utility']=='gwp' and r['battery'] is not None and r['account'].get('storage_schedule_confirmed') is not True:

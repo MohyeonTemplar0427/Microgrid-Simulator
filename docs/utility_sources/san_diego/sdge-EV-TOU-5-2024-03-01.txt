@@ -1,0 +1,55 @@
+Service for Residential Customers with Electric Vehicles
+SDG&E provides additional options available for residential customers with electric vehicles.  Schedule EV-TOU-5 is SDG&E's residential rate with a basic service fee for customers with an electric car or who use electricity
+to run a natural gas home fueling pump. The car must be registered with the California Department of Motor Vehicles.
+
+
+Schedule EV-TOU-5 - DOMESTIC TIME-OF-USE FOR HOUSEHOLDS WITH ELECTRIC VEHICLES provides domestic residential service for customers who own qualifying electric vehicles. Effective 3/1/2024
+
+SCHEDULE EV-TOU-5                                                                                                                                                                                                  Schedule         Schedule            Total
+
+                                                                                                                                                                                                                  WF-NBC +         EECC Rate       Electric Rate
+                                                                                                                                                                                                                DWR-BC Rate
+
+Energy Charges ($/kWh)                                                        Transm          Distr          PPP             ND            CTC           LGC             RS           TRAC        UDC Total
+Summer
+   On-Peak                                                                     0.05840        0.18081       0.01620        0.00007        0.00054       0.02516        0.00001        0.00000        0.28119           0.00561        0.38826            0.67506
+   Off-Peak                                                                    0.05840        0.18081       0.01620        0.00007        0.00054       0.02516        0.00001        0.00000        0.28119           0.00561        0.14305            0.42985
+   Super Off-Peak                                                              0.00000        0.01496       0.01620        0.00007        0.00054       0.02516        0.00001        0.00000        0.05694           0.00561        0.06741            0.12996
+Winter
+   On-Peak                                                                     0.05840        0.18081       0.01620        0.00007        0.00054       0.02516        0.00001        0.00000        0.28119           0.00561        0.16516            0.45196
+   Off-Peak                                                                    0.05840        0.18081       0.01620        0.00007        0.00054       0.02516        0.00001        0.00000        0.28119           0.00561        0.11850            0.40530
+   Super Off-Peak                                                              0.00000        0.01496       0.01620        0.00007        0.00054       0.02516        0.00001        0.00000        0.05694           0.00561        0.06133            0.12388
+
+Other Charges/Discounts
+   Basic Service Fee                                         ($/month)             0.00         16.00            0.00          0.00           0.00           0.00          0.00           0.00          16.00                                               16.00
+Notes:
+1) The total rates presented reflect the UDC rates associated with service under Schedule EV-TOU-5 and the generation rates associated with Schedule EECC, in addition to the rates associated with Schedules DWR-BC
+and WF-NBC. The UDC rate-by-rate components presented are associated with service under Schedule EV-TOU-5 as presented in the utility’s tariff book.
+2) Unbundled customers are those who take generation from other providers, such as Direct Access (DA) or Community Choice Aggregation (CCA). Unbundled customers do not pay SDG&E’s commodity rates. The Total
+Energy Charge for an unbundled customer includes UDC, WF-NBC, DWR-BC and Power Charge Indifference Adjustment (PCIA) rates.  PCIA rates by vintage are included below. Please see Schedules DA-CRS or CCA-
+CRS for more information regarding  PCIA rates.
+
+
+
+
+
+RESIDENTIAL PCIA  RATE
+                                                                  DA            CCA
+Vintage                                                         ($/kWh)        ($/kWh)
+2001 Legacy Vintage                                            $0.00010
+2009 Vintage                                                                  $0.00237
+2010 Vintage                                                                  $0.00775
+2011 Vintage                                                                  $0.00989
+2012 Vintage                                                                  $0.00925
+2013 Vintage                                                                  $0.01349
+2014 Vintage                                                                  $0.01360
+2015 Vintage                                                                  $0.00873
+2016 Vintage                                                                  $0.01323
+2017 Vintage                                                                  $0.00733
+2018 Vintage                                                                  $0.00330
+2019 Vintage                                                                  $0.00554
+2020 Vintage                                                                 ($0.00026)
+2021 Vintage                                                                  $0.00726
+2022 Vintage                                                                  $0.02358
+2023 Vintage                                                                  $0.00207
+2024 Vintage                                                                  $0.00207

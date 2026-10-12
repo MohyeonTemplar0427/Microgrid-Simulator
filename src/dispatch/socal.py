@@ -26,6 +26,9 @@ def optimize(key,inputs,account,start,end,battery,wear,*,include_degradation_in_
  idx=interval_index(inputs,start,end);n=len(idx)
  load=np.asarray(inputs.native_load_kw,dtype=float);pv=np.asarray(inputs.pv_available_kw,dtype=float)
  if not np.isfinite(load).all() or not np.isfinite(pv).all() or min(load.min(),pv.min())<0:raise ValueError('Invalid load/PV profile.')
+ if key.startswith('sdge_'):
+  if battery is not None and account.get('sdge_storage_confirmed') is not True:raise ValueError('Confirm ordinary SDG&E storage enrollment without standby or event riders.')
+  if np.any(pv>0) and account.get('solar_program')!='approved_non_export':raise ValueError('SDG&E PV requires approved non-export interconnection; solar settlement is not yet supported.')
  if PLANS.get(key,{}).get('solar_programs')==['none'] and np.any(pv>0):raise ValueError('This Billing Plan does not support PV/customer-generation settlement.')
  number(wear,'Degradation cost',0,10)
  baseline=inputs.copy();baseline['grid_import_kw']=load;baseline['grid_export_kw']=0.

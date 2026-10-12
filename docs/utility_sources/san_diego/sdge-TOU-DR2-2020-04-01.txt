@@ -1,0 +1,22 @@
+Schedule TOU-DR2 - Residential Time of Use Service Effective 4/1/2020
+This schedule provides a time-of-use option for residential customers.
+
+SCHEDULE  TOU-DR2                                                                                                                                                  Schedule          Schedule            Total
+                                                                                                                                                                DWR-BC Rate        EECC + DWR        Electric Rate
+                                                                                                                                                                                    Credit Rate
+Energy Charges ($/kWh)                                Transm       Distr       PPP          ND         CTC         LGC         RS        TRAC      UDC Total
+Summer
+On-Peak                                              0.04871     0.11448     0.01717     0.00005    0.00096     0.01009    0.00004      0.00517     0.19667            0.00580           0.29042          0.49289               -
+Off-Peak                                             0.04871     0.11448     0.01717     0.00005    0.00096     0.01009    0.00004      0.04260     0.23410            0.00580           0.07576          0.31566               -
+
+Up to 130% of Baseline Adjustment Credit             0.00000     0.00000     0.00000     0.00000    0.00000     0.00000    0.00000     (0.07506)   (0.07506)                                              (0.07506)             -
+Winter
+On-Peak                                              0.04871     0.11448     0.01717     0.00005    0.00096     0.01009    0.00004      0.06584     0.25734            0.00580           0.07844          0.34158               -
+Off-Peak                                             0.04871     0.11448     0.01717     0.00005    0.00096     0.01009    0.00004      0.06584     0.25734            0.00580           0.06528          0.32842               -
+
+Up to 130% of Baseline Adjustment Credit             0.00000     0.00000     0.00000     0.00000    0.00000     0.00000    0.00000     (0.06833)   (0.06833)                                              (0.06833)             -
+
+Other Charges/Discounts
+  Minimum Bill                                          0.000       0.338      0.000        0.000      0.000       0.000      0.000        0.000       0.338              0.000             0.000            0.338              -
+ The total rates presented reflect the UDC rates associated with service under Schedule TOU-DR-E1 and the generation rates associated with Schedules EECC and DWR-BC. The UDC
+                                rate-by-rate components presented are associated with service under Schedule TOU-DR-E1 as presented in the utility’s tariff book.

@@ -23,6 +23,7 @@ SERVICE_CLASSES['pwp'] = ['commercial', 'residential']
 SERVICE_CLASSES['alw'] = ['commercial', 'residential']
 SERVICE_CLASSES['bwp'] = ['commercial', 'residential']
 SERVICE_CLASSES['ipu'] = ['residential']
+SERVICE_CLASSES['sdge'] = ['residential']
 
 
 def customer_class(profile):

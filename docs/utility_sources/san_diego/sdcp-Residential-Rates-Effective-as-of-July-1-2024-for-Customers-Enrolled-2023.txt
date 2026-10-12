@@ -1,0 +1,544 @@
+                                 2024 Current Residential Rates
+
+
+                    For Residential customers in National City and Unincorporated County of San Diego
+
+
+
+         TABLE OF CONTENTS
+         Introduction
+         Rate Period Definitions
+         Rate Schedule for Residential Customers
+         Rate Schedule for Lighting
+
+         INTRODUCTION
+         San Diego Community Power (SDCP) Rates rates are established to meet standard bill comparison targets
+         approved by our Board of Directors. Any changes to SDCP’s rates are adopted at public meetings of our
+         Board. The rates shown in this document are for electric generation/supply only. Please visit
+         https://www.sdge.com/rates-and-regulations/current-and-effective-tariffs for delivery rates and schedules.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Effective July 1, 2024
+These rates are applicable to all customers in all jurisdictions served by SDCP and do not include SDGE transmission and delivery charges.
+          RATE PERIOD DEFINITIONS
+         Seasonal Periods
+         For all rate schedules, seasons are defined as follows:
+         ● Summer:  June 1 – October 31
+         ● Winter:  November 1 – May 31
+
+          TIME-OF-USE PERIODS
+         All time periods listed are applicable to local time. The definition of time will be based upon the date service is
+
+
+              TOU Period                                 Summer                                                     Winter
+              Weekdays                            June 1 – October 31                                      November 1 – May 31
+
+                On-Peak                          4:00 p.m. – 9:00 p.m.                                        4:00 p.m. – 9:00 p.m.
+                                                                                                           6:00 a.m. – 4:00 p.m.
+               Off-Peak                         6:00 a.m. – 4:00 p.m.;                              Excluding 10:00 a.m. – 2:00 p.m.
+                                                 9:00 p.m. – midnight                                       in March and April;
+                                                                                                            9:00 p.m. – midnight
+           Super-Off Peak                        Midnight – 6:00 a.m.                                      Midnight – 6:00 a.m.
+
+
+              TOU Period                                 Summer                                                     Winter
+           Weekends and                           June 1 – October 31                                      November 1 – May 31
+               Holidays
+                On-Peak                          4:00 p.m. – 9:00 p.m.                                     4:00 p.m. – 9:00 p.m.
+               Off-Peak                         2:00 p.m. – 4:00 p.m.;                                    2:00 p.m. – 4:00 p.m.;
+                                                 9:00 p.m. – midnight                                      9:00 p.m. – midnight
+           Super-Off Peak                        Midnight – 2:00 p.m.                                          Midnight – 2:00 p.m.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Effective July 1, 2024
+These rates are applicable to all customers in all jurisdictions served by SDCP and do not include SDGE transmission and delivery charges.
+           Rate Key:
+           Your SDCP rate schedule may not exactly match your SDG&E rate, as SDCP offers simplified, consolidated
+           rate options. This will not impact service, billing, or CARE/FERA status.  The table below maps SDG&E rates
+           to their equivalent SDCP rates:
+
+                SDG&E Rate                 SDCP Rate                 Customer Type
+                    DM                                 DR                          Residential
+                    DR                                 DR                          Residential
+                    DRLI                            DR-LI                        Residential
+                   DRSES                        DR-SES                       Residential
+                  DRTOD                       TOU-DR                      Residential
+                DRTODPSH                  TOU-DR                      Residential
+                    DS                                 DR                          Residential
+                    DT                                 DR                          Residential
+                   DTRV                             DR                          Residential
+                  EVTOU                       EV-TOU                      Residential
+                  EVTOU2                    EV-TOU-2                    Residential
+                  EVTOU5                    EV-TOU-5                    Residential
+                  TOUDR1                     TOU-DR-1                     Residential
+                  TOUDR2                    TOU-DR-2                    Residential
+                  TOUELEC                  TOU-ELEC                    Residential
+                   DWL                               LS                           Residential
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Effective July 1, 2024
+These rates are applicable to all customers in all jurisdictions served by SDCP and do not include SDGE transmission and delivery charges.
+           CHARGE TYPE UNITS
+           Generation is charged on a per kilowatt-hour (kWh) basis.
+
+           SDCP Rates Effective 7/1/2024
+
+           Power100 Rate
+           All Rate Schedules
+                    Season                  Charge Type            Time of Use Period              Power100
+                       All                        Generation                         Total                             $0.01
+                *Power100 premium increased from $0.0075/kWh to $0.01/kWh as of 7/1/2024
+
+
+           Residential Rate Schedule
+
+
+                       DR               Standard Residential Service
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                         Total                          $0.23190                       $0.19282
+                    Winter                    Generation                         Total                          $0.06643                      $0.06539
+
+
+                  DR-LI-MB              Standard Residential Service Low-Income Medical Baseline
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                         Total                          $0.23190                       $0.19282
+                    Winter                    Generation                         Total                          $0.06643                      $0.06539
+
+                   DR-SES               Domestic Time-Of-Use For Households With A Solar Energy
+                                        System
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                        $0.41814                       $0.35075
+                   Summer                   Generation                      Off-Peak                       $0.13935                       $0.11434
+                   Summer                   Generation                Super Off-Peak                 $0.05335                       $0.04141
+                    Winter                    Generation                      On-Peak                       $0.13729                       $0.13565
+                    Winter                    Generation                      Off-Peak                       $0.09193                      $0.09067
+                    Winter                    Generation                Super Off-Peak                 $0.03634                      $0.03555
+
+
+                   EV-TOU               Domestic Time-Of-Use For EV Charging
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                        $0.41814                       $0.35075
+                   Summer                   Generation                      Off-Peak                       $0.13935                       $0.11434
+                   Summer                   Generation                Super Off-Peak                 $0.05335                       $0.04141
+                    Winter                    Generation                      On-Peak                       $0.13729                       $0.13565
+                    Winter                    Generation                      Off-Peak                       $0.09193                      $0.09067
+                    Winter                    Generation                Super Off-Peak                 $0.03634                      $0.03555
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Effective July 1, 2024
+These rates are applicable to all customers in all jurisdictions served by SDCP and do not include SDGE transmission and delivery charges.
+                  EV-TOU-2               Domestic Time-Of-Use For Households With EVs
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                        $0.41814                       $0.35075
+                   Summer                   Generation                      Off-Peak                       $0.13935                       $0.11434
+                   Summer                   Generation                Super Off-Peak                 $0.05335                       $0.04141
+                     Winter                    Generation                      On-Peak                       $0.13729                       $0.13565
+                     Winter                    Generation                      Off-Peak                       $0.09193                      $0.09067
+                     Winter                    Generation                Super Off-Peak                 $0.03634                      $0.03555
+
+
+                  EV-TOU-5               Cost-Based Domestic Time-Of-Use For Households With EVs
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                        $0.41814                       $0.35075
+                   Summer                   Generation                      Off-Peak                       $0.13935                       $0.11434
+                   Summer                   Generation                Super Off-Peak                 $0.05335                       $0.04141
+                     Winter                    Generation                      On-Peak                       $0.13729                       $0.13565
+                     Winter                    Generation                      Off-Peak                       $0.09193                      $0.09067
+                     Winter                    Generation                Super Off-Peak                 $0.03634                      $0.03555
+
+
+                  TOU-DR-1               Residential Time-Of-Use
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                       $0.45123                       $0.37880
+                   Summer                   Generation                      Off-Peak                       $0.19036                       $0.15760
+                   Summer                   Generation                Super Off-Peak                 $0.05335                       $0.04141
+                     Winter                    Generation                      On-Peak                        $0.11394                        $0.11251
+                     Winter                    Generation                      Off-Peak                       $0.05379                      $0.05286
+                     Winter                    Generation                Super Off-Peak                 $0.03634                      $0.03555
+
+
+                  TOU-DR-2               Residential Time-Of-Use
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                       $0.45123                       $0.37880
+                   Summer                   Generation                      Off-Peak                       $0.13387                       $0.10969
+                     Winter                    Generation                      On-Peak                        $0.11394                        $0.11251
+                     Winter                    Generation                      Off-Peak                       $0.04576                      $0.04489
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Effective July 1, 2024
+These rates are applicable to all customers in all jurisdictions served by SDCP and do not include SDGE transmission and delivery charges.
+                   TOU-DR               Residential Time-Of-Use
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                        $0.30119                       $0.25158
+                   Summer                   Generation                      Off-Peak                       $0.22343                       $0.18563
+                   Summer                   Generation                Super Off-Peak                  $0.13914                        $0.11415
+                    Winter                    Generation                      On-Peak                       $0.10939                       $0.10799
+                    Winter                    Generation                      Off-Peak                       $0.05124                      $0.05033
+                    Winter                    Generation                Super Off-Peak                 $0.03437                      $0.03359
+
+
+                 TOU-ELEC               Domestic Time-Of-Use For Households With EVs,  Storage, or Electric Heat Pumps
+
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                   Summer                   Generation                      On-Peak                                    $0.40567                           $0.34017
+                   Summer                   Generation                      Off-Peak                       $0.09838                      $0.07960
+                   Summer                   Generation                Super Off-Peak                 $0.05795                      $0.04531
+                    Winter                    Generation                      On-Peak                        $0.17197                       $0.17004
+                    Winter                    Generation                      Off-Peak                       $0.07136                      $0.07028
+                    Winter                    Generation                Super Off-Peak                                 $0.03991                           $0.03910
+
+           Lighting Rate Schedule
+
+                       LS               Residential Walkway Lighting
+                    Season                  Charge Type            Time of Use Period               PowerOn                     PowerBase
+                       All                        Generation                         Total                          $0.08313                      $0.07534
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Effective July 1, 2024
+These rates are applicable to all customers in all jurisdictions served by SDCP and do not include SDGE transmission and delivery charges.

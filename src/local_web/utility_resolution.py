@@ -11,16 +11,18 @@ from .utilities import LAYERS
 # Stable agency identifiers from the CEC layer, not city/county text matching.
 AGENCIES = {71021:'pge',10500:'amp',80560:'svp',80522:'hetch_hetchy',
             58970:'ladwp',86250:'sce',37452:'gwp',71750:'pwp',19201:'bwp',
-            11991:'alw',93642:'vpu',32555:'ipu'}
+            11991:'alw',93642:'vpu',32555:'ipu',80402:'sdge'}
 NAMES = {'pge':'Pacific Gas & Electric Company','amp':'Alameda Municipal Power','svp':'Silicon Valley Power','hetch_hetchy':'Hetch Hetchy Power',
          'ladwp':'Los Angeles Department of Water & Power','sce':'Southern California Edison',
          'gwp':'Glendale Water & Power','pwp':'Pasadena Water and Power',
          'bwp':'Burbank Water and Power','alw':'Azusa Light & Water',
-         'vpu':'Vernon Public Utilities','ipu':'Industry Public Utilities'}
+         'vpu':'Vernon Public Utilities','ipu':'Industry Public Utilities','sdge':'San Diego Gas & Electric'}
 
 
 # CCA IDs are checked against the official identity, not trusted on their own.
 CCA_IDENTITIES = {
+    10: ('cea', {'Clean Energy Alliance (CEA)'}),
+    25: ('sdcp', {'San Diego Community Power (SDCP)'}),
     11: ('cpa', {'Clean Power Alliance (CPA)'}),
     14: ('epic', {"Energy for Palmdale's Independent Choice (EPIC)"}),
     16: ('lancaster', {'Lancaster Energy (LE)'}),

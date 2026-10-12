@@ -164,7 +164,7 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
             self.owner_id = None
             self.csrf = token
             self.is_guest = False
-            public = urlsplit(self.path).path in {"/", "/app.js", "/municipal.js", "/socal.js", "/style.css", "/auth/login", "/auth/callback"}
+            public = urlsplit(self.path).path in {"/", "/app.js", "/municipal.js", "/socal.js", "/pjm.html", "/pjm.js", "/style.css", "/auth/login", "/auth/callback"}
             if auth is not None and not public:
                 session = None
                 if allow_guests and auth.cookie_value(self.headers, auth.COOKIE):
@@ -198,9 +198,9 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
 
         def get_route(self):
             url = urlsplit(self.path)
-            if url.path in ("/", "/app.js", "/municipal.js", "/socal.js", "/style.css"):
-                name = {"/": "index.html", "/app.js": "app.js", "/municipal.js": "municipal.js", "/socal.js": "socal.js", "/style.css": "style.css"}[url.path]
-                mime = {"index.html": "text/html; charset=utf-8", "app.js": "text/javascript; charset=utf-8", "municipal.js": "text/javascript; charset=utf-8", "socal.js": "text/javascript; charset=utf-8", "style.css": "text/css; charset=utf-8"}[name]
+            if url.path in ("/", "/app.js", "/municipal.js", "/socal.js", "/pjm.html", "/pjm.js", "/style.css"):
+                name = {"/": "index.html", "/app.js": "app.js", "/municipal.js": "municipal.js", "/socal.js": "socal.js", "/pjm.html": "pjm.html", "/pjm.js": "pjm.js", "/style.css": "style.css"}[url.path]
+                mime = {"index.html": "text/html; charset=utf-8", "app.js": "text/javascript; charset=utf-8", "municipal.js": "text/javascript; charset=utf-8", "socal.js": "text/javascript; charset=utf-8", "pjm.js": "text/javascript; charset=utf-8", "pjm.html": "text/html; charset=utf-8", "style.css": "text/css; charset=utf-8"}[name]
                 return self.respond(200, (STATIC / name).read_bytes(), mime)
             if url.path == "/auth/login" and auth is not None:
                 try:
@@ -235,6 +235,8 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
             if not match:
                 raise FileNotFoundError("Resource not found.")
             study = application.store.get(match[1], self.owner_id)
+            if public_origin and study["request"].get("schema_version") == 8:
+                raise PermissionError("PJM candidate studies and their inputs remain local-only pending licensing and release review.")
             suffix = match[2]
             directory = application.store.directory / "runs" / match[1]
             if suffix is None:
@@ -349,6 +351,23 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                     return self.respond(202, application.submit_pge_annual(body, self.owner_id,
                                                                            temporary=allow_guests))
                 draft = parse_qs(urlsplit(self.path).query).get("draft") == ["1"]
+                if urlsplit(self.path).path in {"/api/v1/pjm/weather", "/api/v1/pjm/studies"}:
+                    if public_origin:
+                        raise ValueError("PJM candidate is local-only pending market/weather licensing and release review.")
+                    if not application.capabilities.get("pjm_candidate"):
+                        raise ValueError("This engine does not support the PJM candidate. Use a separate candidate preview.")
+                    if urlsplit(self.path).path.endswith("/weather"):
+                        if not isinstance(body, dict) or set(body) != {"latitude", "longitude", "start_date", "end_date"}:
+                            raise ValueError("Supply only site coordinates and service dates.")
+                        from .contract import number
+                        from ..timeseries.interval_table import build_interval_index
+                        from ..billing.dominion import validate_index
+                        from ..profiles.era5 import fetch_era5
+                        number(body["latitude"], "Latitude", -90, 90)
+                        number(body["longitude"], "Longitude", -180, 180)
+                        validate_index(build_interval_index(body["start_date"], body["end_date"], "America/New_York", 30).index)
+                        return self.respond(200, application.interactive(fetch_era5, body["start_date"], body["end_date"], body["latitude"], body["longitude"]))
+                    return self.respond(202, application.store.submit(body, application.engine, self.owner_id, temporary=True))
                 if urlsplit(self.path).path == "/api/v1/socal/studies":
                     return self.respond(202, application.submit_socal(body, self.owner_id, temporary=allow_guests or draft))
                 if urlsplit(self.path).path == "/api/v1/municipal/studies":
@@ -374,8 +393,8 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 if urlsplit(self.path).path == "/api/studies":
                     if isinstance(body, dict) and body.get("schema_version") == 7:
                         raise ValueError("Submit PG&E annual statement replays through /api/v1/pge/annual-studies.")
-                    if isinstance(body, dict) and body.get("schema_version") in (4, 6):
-                        raise ValueError("Submit municipal studies through /api/v1/municipal/studies.")
+                    if isinstance(body, dict) and body.get("schema_version") in (4, 6, 8):
+                        raise ValueError("Submit regional studies through their municipal, socal or pjm study endpoint.")
                     if isinstance(body, dict) and body.get("schema_version") == 3 and "candidate_defaults" not in application.capabilities:
                         raise ValueError("This pinned engine does not support candidate studies.")
                     if isinstance(body, dict) and body.get("schema_version") == 2 and "site_defaults" not in application.capabilities:

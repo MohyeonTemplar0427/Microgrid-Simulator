@@ -1,0 +1,284 @@
+                                                                          Revised         Cal. P.U.C. Sheet No.                                        65011-E
+   San Diego Gas & Electric Company
+           San Diego, California                        Canceling         Revised         Cal. P.U.C. Sheet No.                                        64678-E
+                                                            SCHEDULE CCA                    -CRS                                                      Sheet 1
+
+                    COMMUNITY CHOICE AGGREGATION COST RESPONSIBILITY SURCHARGE
+
+
+APPLICABILITY
+
+The   Community   Choice   Aggregation   Cost   Responsibility   Surcharge   (CCA-CRS)   is   applicable   to   all
+Community  Choice  Aggregation  (CCA)  customers,  as  defined  in  Rule  1,  who  receive  procured  energy
+services  from  a  Community  Choice  Aggregator.    Pursuant  to  Senate  Bill  (SB)  423,  qualified  nonprofit
+charitable  organizations eligible to enter into an  agreement for Direct Access (DA) service with an electric
+Energy Service Provider (ESP) to receive electric commodity service free of charge from the ESP will be
+subject to the provisions and applicable charges under this schedule.
+
+TERRITORY
+
+Within the entire territory served by the Utility.
+
+RATES
+
+            POWER CHARGE INDIFFERENCE ADJUSTMENT (PCIA) ($/kWh)
+    Customer
+       Class             2009                2010                 2011                2012                  2013                 2014                 2015
+    CCA-CRS            Vintage             Vintage              Vintage              Vintage              Vintage               Vintage             Vintage
+
+
+    Residential       $0.01400      R      $0.01872      R      $0.02893      R     $0.03422       R     $0.03356       R      $0.03356       R    $0.03472      R
+
+       Small          $0.01006      R      $0.01345      R      $0.02081      R     $0.02463       R     $0.02415       R      $0.02416       R    $0.02499      R
+    Commercial
+
+    Med/Large
+  Commercial &        $0.01271      R      $0.01708      R      $0.02684      R     $0.03199       R     $0.03135       R      $0.03135       R    $0.03247      R
+     Industrial
+
+    Agricultural      $0.01176      R      $0.01572      R      $0.02465      R     $0.02930       R     $0.02872       R      $0.02872       R    $0.02974      R
+
+      Lighting        $0.01054      R      $0.01410      R      $0.02179      R     $0.02578       R     $0.02528       R      $0.02529       R    $0.02616      R
+
+    Customer            2016                 2017                 2018                2019                  2020                 2021                 2022
+      Class            Vintage             Vintage              Vintage              Vintage              Vintage               Vintage             Vintage
+    CCA-CRS
+
+    Residential       $0.03379      R      $0.03360      R    $0.03454        R     $0.03234       R     $0.03389       R      $0.03348       R     $0.02789      R
+
+       Small          $0.02432      R      $0.02419      R     $0.02486       R     $0.02326       R     $0.02439       R      $0.02377       R     $0.01894      R
+   Commercial
+
+    Med/Large
+  Commercial &        $0.03156      R      $0.03137      R     $0.03231       R     $0.03004       R     $0.03166       R      $0.03074       R     $0.02260      R
+     Industrial
+
+    Agricultural      $0.02892      R      $0.02876      R    $0.02958        R     $0.02765       R     $0.02901       R      $0.02847       R     $0.02428      R
+
+     Lighting         $0.02546      R      $0.02532      R    $0.02602        R     $0.02436       R     $0.02554       R      $0.02483       R     $0.01949      R
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                            (Continued)
+1C10                                                                          Issued by                               Submitted                        Jul 31, 2026
+Advice Ltr. No.           4868-E                                          Dan Skopec                                  Effective                        Aug 1, 2026
+                                                                      Senior Vice President
+Decision No.                                                            Regulatory Affairs                            Resolution No.
+
+                                                                           Revised          Cal. P.U.C. Sheet No.                                         65012-E
+   San Diego Gas & Electric Company
+           San Diego, California                          Canceling        Revised          Cal. P.U.C. Sheet No.                                         64679-E
+                                                             SCHEDULE CCA                     -CRS                                                       Sheet 2
+
+                    COMMUNITY CHOICE AGGREGATION COST RESPONSIBILITY SURCHARGE
+
+
+
+RATES (continued)
+
+  Customer Class            2023                    2024                   2025                  2026
+      CCA-CRS              Vintage                Vintage                 Vintage              Vintage
+
+
+     Residential          $0.02613        R      $0.04840        R       $0.04771       R      $0.04771       R
+
+        Small             $0.01745        R      $0.03698        R       $0.03638       R      $0.03638       R
+     Commercial
+
+     Med/Large
+    Commercial &          $0.02064        R      $0.04427        R       $0.04354       R      $0.04354       R
+      Industrial
+
+     Agricultural         $0.02291        R      $0.03799        R       $0.03752       R      $0.03752       R
+
+       Lighting           $0.01822        R      $0.03345        R       $0.03298       R      $0.03298       R
+
+Notes: As noted in Schedule EDR Special Condition 11, DA and CCA customers will receive a monthly bill credit in the amount                 $(0.00003)/kWh for the
+Economic Development Rate (EDR) discount.
+
+Customers may also be subject to a Modified Cost Allocation Mechanism (MCAM) charge, depending on their Energy Service Provid                 er (ESP). The MCAM
+rates and applicable ESPs are noted below in Special Condition 6.
+
+The rate shown above is in addition to Utility Distribution Company Total Rates (UDC Total) shown under the CCA customer’s ot               herwise applicable rate
+schedule, and is in addition to the Department of Water Resources Bond Charge shown on Schedule DWR                   -BC and the Wildfire Fund Non     -Bypassable
+Charge shown on Schedule WF      -NBC.
+
+MAPPING OF RATE SCHEDULES TO CUSTOMER CLASS
+
+                          Customer Class                                                                    Rate Schedule
+ Residential                                                               DR, DM, DS, DT, DT-RV, EV-TOU, EV-TOU-2, EV-TOU-5, TOU-DR,
+                                                                           DR-SES, TOU-DR1, TOU-DR2, TOU-ELEC
+ Commercial - Small                                                        TOU-A, TOU-A2, TOU-A3, A-TC, UM
+ Commercial - Medium                                                       AL-TOU-M, DG-R-M, OL-TOU, EV-HP, TOU-M, S
+ Commercial - Large                                                        AL-TOU-L, AL-TOU2, DG-R-L, A6-TOU, VGI, PUBLIC GIR, S
+ Agricultural                                                              PA-T-1; TOU-PA, TOU-PA2, TOU-PA3
+ Outdoor Lighting     - residential                                        OL-1, OL-2, DWL
+ Outdoor Lighting – Small Commercial                                       LS-1, LS-2, LS-3, LS-2DS, LS-2AD, OL-1, OL-2
+
+Municipal Surcharge:  Amounts calculated under this Schedule are subject to a municipal surcharge as provided in Sections 6350
+through 6354.1 of the Public Utilities Code.
+
+SPECIAL CONDITIONS
+
+1.          Definitions: The definitions of principal terms used in this Schedule are found either herein or in Rule 1, Definitions.
+
+2.          Direct  Access  (DA)  Non-Continuous  customers  transferring  to  CCA  service  will  retain  the  Old                  World  Generation  Rate  in
+            Schedule DA-CRS
+
+
+
+
+
+2C12                                                                           Issued by                                Submitted                         Jul 31, 2026
+Advice Ltr. No.           4868-E                                           Dan Skopec                                   Effective                         Aug 1, 2026
+                                                                       Senior Vice President
+Decision No.                                                              Regulatory Affairs                            Resolution No.
+
+                                                                 Revised        Cal. P.U.C. Sheet No.                                35837-E
+  San Diego Gas & Electric Company
+          San Diego, California                   Canceling      Revised        Cal. P.U.C. Sheet No.                                33594-E
+                                                     SCHEDULE CCA                -CRS                                                Sheet 3
+
+                 COMMUNITY CHOICE AGGREGATION COST RESPONSIBILITY SURCHARGE
+
+
+
+ 3.       Composition  of  Rate:    The  CCA-CRS  is  comprised  of  the  following  components:                           1)  DWR  Bond            T
+          Charge  as  shown  on  Schedule  DWR                -BC,    2)  Ongoing  Competition  Transition  Charge  (CTC)  as
+          shown  on  the  customer’s   otherwise  applicable  rate  schedule,   and  3)  DWR                              Power  Charge
+          Indifference     Adjustment  (PCIA)1,  formerly  the  DWR  Power  Charge  and  4)  Wildfire  Fund  Non-
+          Bypassable Charge as shown on Scheduled WF-NBC.
+
+                    For example, for CCA customers,
+
+                     Applicable CCA-CRS = DWR-BC + CTC + Applicable PCIA + WF                              -NBC
+
+  4.      Vintaging: The CCA-CRS will be calculated based upon the departure date of CCA load from the                                              T
+          Utility or based upon the Utility’s receipt of a Binding Notice of Intent (BNI), pursuant to Rule 27.2
+
+              a      If the Utility receives a BNI from a CCA or the CCA load transfers from the Utility to the CCA
+                     on or before June 30th, the CCA             -CRS shall be vintaged based on the total Utility resource
+                     commitments effective in the preceding calendar year.   If the Utility receives a BNI from a
+                     CCA or the CCA load transfers from the Utility to the CCA on or after July 1st , the CCA                                -
+                     CRS  shall  be  vintaged  based  on  the  total  Utility  resource  commitments  effective  in  the
+                     calendar  year  the  BNI  was  received  by  the  Utility  or  that  t          he  load  was  transferred  to  the
+                     CCA.
+
+               b.     Total  Utility  resource  commitments  in  a  given  year  include  the  Utility’s  total  procurement
+                     portfolio  set  forth  in  the  applicable  ERRA  filing,  DWR  power  contracts,  and  all  resources
+                     committed to by the Utility through effective contracts or construction that commences in the
+                     applicable year..
+
+
+  5.           Exemptions and Discounts:                                                                                                            T
+
+             a.      Continuous Direct Access Customers               :  Continuous DA customers are those customers who
+                     took DA service both before and after February 1, 2001.  In addition, pursuant to Resolution
+                     E-3843, effective December 4, 2003, a customer who was DA prior to February 1, 2001 that
+                     returned to bundled service after September 20, 2001 shall be considered continuous DA.
+                     Continuous DA customers who take service from a CCA are exempt from the CCA                                 -CRS and
+                     DWR Bond Charge and Wildfire Fund Non                    -Bypassable Charge.  Continuous DA customers
+                     who  take  service  from  a        CCA  are  not  exempt  from  other  charges  under  the  customer’s
+                     otherwise applicable rate schedule.
+
+
+
+
+
+
+_____________________________________________________________________________________
+
+1 The Power Charge Indifference Adjustment or “PCIA” is calculated by subtracting the ongoing CTC differentiated by class from             the
+Utility’s above or below market total portfolio power costs.  If the PCIA is positive then Direct Access and Departing Load c    ustomers are
+responsible for the balance.  If the PCIA is negative then the balance is tracked by the Utility and used to offset future ab      ove market
+costs.  The Utility’s total portfolio power costs consist of its retained generation power costs and the Utility’s allocated DWR power costs
+compared to the approved market price benchmark.
+2       DWR-BC as presented is now used for collecting the California Wildfire Fund Charge effective Oct 1, 2020 (See Schedule WF            –
+NBC). DWR BC will be renamed at implementation of SDG&E’s new customer information system.
+
+
+                                                                   (Continued)
+3C10                                                                Issued by                           Submitted                   Dec 30, 2021
+Advice Ltr. No.       3928-E                                     Dan Skopec                             Effective                    Jan 1, 2022
+                                                                  Vice President
+Decision No.                                                    Regulatory Affairs                      Resolution No.
+
+                                                                  Revised        Cal. P.U.C. Sheet No.                                 64247-E
+  San Diego Gas & Electric Company
+          San Diego, California                    Canceling      Revised        Cal. P.U.C. Sheet No.                                 62700-E
+                                                      SCHEDULE CCA                -CRS                                                 Sheet 4
+
+                  COMMUNITY CHOICE AGGREGATION COST RESPONSIBILITY SURCHARGE
+
+
+SPECIAL CONDITIONS (continued)
+
+6         Modified Cost Allocation Mechanism (MCAM) Charges:
+
+          Applicability:   The   Modified   Cost   Allocation   Mechanism   Cost   Responsibility   Surcharge   (MCAM-CRS)   is
+          applicable  to  customers  of  non-SDG&E  Electric  Service  Providers  (ESP)  customers,  as  defined  in  Rule  1,
+          whose ESP, pursuant to Decision (D.) 19-11-016, D.21-06-035, and/or any future decision requiring backstop
+          procurement in the integrated resources planning process: 1) opted out of procuring resources, 2) was found
+          deficient in procurement of resources (backstop procurement).
+
+          Rates:
+          MODIFIED COST ALLOCATION MECHANISM (MCAM) ($/kWh)
+
+                           Customer             Opt-Out           Backstop
+                           Class                ESPs              ESPs
+                           MCAM-CRS
+
+                           Residential          0.00006      I
+
+                           Small                0.00009      I
+                           Commercial
+
+                           Med/Large
+                           Commercial &         0.00012      I
+                           Industrial
+
+                           Agricultural         0.00006      I
+
+                           Lighting             0.00004      I
+
+          Applicable Opt-Out ESPs:
+          -     3 Phase Renewables LLC
+          -     Solana Energy Alliance (now Clean Energy Alliance)
+          -     Commercial Energy of California
+          -     Constellation NewEnergy Inc.
+          -     BP Energy Retail Company California LLC
+          -     Pilot Power Group Inc.
+
+          Applicable Backstop ESPs: n/a at this time
+
+          The rate shown above is in addition to Utility Distribution Company Total Rates (UDC Total) shown under the
+          CCA customer’s otherwise applicable rate schedule, and is in addition to the Department of Water Resources
+          Bond  Charge  shown  on  Schedule  DWR-BC,  the  Wildfire  Fund  Non-Bypassable  Charge  shown  on  Schedule
+          WF-NBC, and the Power Charge Indifference Adjustment shown on Schedule CCA-CRS.
+
+
+
+
+
+
+
+
+
+
+
+
+4C15                                                                  Issued by                           Submitted                    Dec 31, 2025
+Advice Ltr. No.        4757-E                                     Dan Skopec                              Effective                     Jan 1, 2026
+                                                              Senior Vice President
+Decision No.                                                     Regulatory Affairs                       Resolution No.                     E-5217

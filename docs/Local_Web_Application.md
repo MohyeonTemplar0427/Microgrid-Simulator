@@ -16,6 +16,13 @@ exact account qualifications and date boundaries. LADWP R-1A also offers a
 bounded NEM net-import cycle with a confirmed opening credit and saved credit
 ledger; net-export cycles and R-1B NEM remain unsupported.
 
+The same account setup includes SDG&E residential TOU-DR1, TOU-DR2 and
+EV-TOU-5 imports with SDG&E, San Diego Community Power or Clean Energy
+Alliance generation, within June 1–October 11, 2026. Provider enrollment,
+baseline allowance, PCIA vintage and fee jurisdiction remain explicit account
+confirmations. See [San Diego billing](San_Diego.md) for the city-CCA fee,
+local-tax and solar-export exclusions. Desktop GUI uses these same controls.
+
 ## Current server transport
 
 The launcher now uses Waitress. Explicit hosted mode prepares a same-host HTTPS
@@ -223,6 +230,16 @@ file before slicing. This is intended for local studies, not large-scale
 analytics.
 
 ## Engine snapshots and upgrades
+
+The local-only PJM / Dominion GS-2T candidate uses schema 8, the shared queue,
+result tables and save-after-results flow. `/pjm.html` and a homepage link are
+enabled only when the pinned engine advertises `pjm_candidate`. Start a separate
+candidate data directory; existing pins are not changed. See
+[verified scope, source permissions and validation](PJM_Dominion_Candidate.md).
+Candidate endpoints are `POST /api/v1/pjm/weather` and
+`POST /api/v1/pjm/studies`; hosted submission and saved-study retrieval are
+disabled pending release/licensing review. The modern desktop wrapper uses this
+same local service and capability gate.
 
 The first launch saves a copy of the Python source and records SHA-256 hashes,
 Python version, and numerical-engine dependency versions. Subsequent launches

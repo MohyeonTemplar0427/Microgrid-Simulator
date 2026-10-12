@@ -1,0 +1,1026 @@
+[
+  {
+    "id": "sdge-EV-TOU-5-2026-08-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/8-1-26%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "8/1/26 - Current, Schedule EV-TOU-5",
+    "sha256": "19d38eef4ce84e184c93b8c913c4b6f8ffbb3c35b3c17dff10f3e01e710ecc95",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2026-08-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2026-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-26%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "6/1/26 - 7/31/26, Schedule EV-TOU-5",
+    "sha256": "8054ad0b35bba4bb870d180034e4b96de5dec2d4bff67e44f37586a154f962d2",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2026-06-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2026-04-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/4-1-26%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "4/1/26 - 5/31/26, Schedule EV-TOU-5",
+    "sha256": "701e6ed9566ede8364da1e9e71935260ec4b5d01bd91a6b32c12641d51651814",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2026-04-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2026-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-26%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "1/1/26 - 3/31/26, Schedule EV-TOU-5",
+    "sha256": "14cd8899b1a0df0a99e6fe49e452e465116bb84be863b4c14d3c47ce3672eac6",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2026-01-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2025-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-25%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "10/1/25 - 12/31/25, Schedule EV-TOU-5",
+    "sha256": "d44126bd1903676e3d37e0712a7920cfe1fdf1e174db850136da30e8359c96dc",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2025-10-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2025-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-25%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "6/1/25 - 9/30/25, Schedule EV-TOU-5",
+    "sha256": "7bdc5e5bc08a8a2baebf7f9f344492d328f6c9acaf0f05af2d22763a1c3e66c0",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2025-06-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2025-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-25%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "2/1/25 - 05/31/25, Schedule EV-TOU-5",
+    "sha256": "274690439924d26a7b7f56f9274651b316d32ae2031f1740e8e8840076031e83",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2025-02-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2024-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-24%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "10/1/24 \u2013 1/31/25, Schedule EV-TOU-5",
+    "sha256": "3f8bddc28f2626ee9bc2b711999c1863a3acbcd4d67199e7fd3445495237a28f",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2024-10-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2024-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-24%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "3/1/24 \u2013 9/30/24, Schedule EV-TOU-5",
+    "sha256": "c30d8999d879400b83a23ca405c9532ae390f29cdbce685417472ab8fe6039b2",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2024-03-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2024-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-24%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "1/1/24 \u2013 2/29/24, Schedule EV-TOU-5",
+    "sha256": "e34200229884f9412123b33348ddf7d4ec7771569e6cacb982b3f1056110be1a",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2024-01-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2023-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-23%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "1/1/23 \u2013 12/31/23, Schedule EV-TOU-5",
+    "sha256": "bbec56066d040818712b8c8c609ed59c056e808e9745b5438d8e4f375e13bc15",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2023-01-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2022-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-22%20Schedule%20EV-TOU-5%20Total%20Rates%20Table_1.pdf",
+    "label": "6/1/22 \u2013 12/31/22, Schedule EV-TOU-5",
+    "sha256": "70112858b9d2412b8bc6d3e012e94cd6020d0fda9da21b847c2c58ee68f158f7",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2022-06-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2022-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-22%20Schedule%20EV-TOU-5%20Total%20Rates%20Table%20no%20HUC.pdf",
+    "label": "1/1/22 \u2013 5/31/22, Schedule EV-TOU-5",
+    "sha256": "364e70e1bebc8efe5da7c51602d7da6d53d9868e857e2668906b77b6fdf1c2bc",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2022-01-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2021-11-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/11-1-21%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "11/1/21 \u2013 12/31/21, Schedule EV-TOU-5",
+    "sha256": "b6b1f605ea01340c67a1289e2a3ff03b7a44ee3cb35c47be08020c8985fd8018",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2021-11-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2021-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-21%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "6/1/21 \u2013 10/31/21, Schedule EV-TOU-5",
+    "sha256": "780a6ad42b5933ab5318675d7f495eed435f1d7fa1ee5e43bb267d5d8533ebb6",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2021-06-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2021-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-21%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "3/1/21 \u2013 5/31/21, Schedule EV-TOU-5",
+    "sha256": "fabee3b267e7b879d8967473ad91a8833552e275886f98f50fc8c0aaccaa9168",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2021-03-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2021-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-21%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "02/01/21 -2/28/21, Schedule EV-TOU-5",
+    "sha256": "2b3284083f556b71b4986a7554671185759a8d6c0cdbeff6b756ce2d24628690",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2021-02-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2020-04-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/4-1-20%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "04/01/20 - 01/31/21, Schedule EV-TOU-5",
+    "sha256": "fa87c23fb9fd0a2aedb0b4bb25cf235ff9951833d9a68004e8da22686f156d75",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2020-04-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2020-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-20%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "02/01/20 - 3/31/20, Schedule EV-TOU-5",
+    "sha256": "8dee48b6bdf422fef2b8595184d57c694e269e556a2b0b6322e0ed8326e06bfe",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2020-02-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2020-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-20%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "01/01/20 - 01/31/20, Schedule EV-TOU-5",
+    "sha256": "49300dd6e53e9acd385c8f11870da4c45e6ae39b59bb4cbf3683d5fb0bb4030f",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2020-01-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2019-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-19%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "06/01/19 - 12/31/19, Schedule EV-TOU-5",
+    "sha256": "97e59adffbc85bc82f1660b0be8cfa3c1b6180a035f1773fc30fde9c88438c31",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2019-06-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2019-05-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/5-1-19%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "05/01/19 - 05/31/19, Schedule EV-TOU-5",
+    "sha256": "afe1d933dbeb0bee9978477f4c0df3e194b890060993e899d081fc0fbaf2fae4",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2019-05-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2019-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-19%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "03/01/19 - 04/30/19, Schedule EV-TOU-5",
+    "sha256": "55552c009b42478dbe60d21e2c12232a0925d1bdd0e432b7b6607aa8f13fbdc3",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2019-03-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2019-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-19%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "01/01/19 - 02/28/19, Schedule EV-TOU-5",
+    "sha256": "472f47467be2dd8ad8ceb2f7f96e0128e3db55f03b3dd0c3bd956deaa19f4059",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2019-01-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2018-11-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/11-1-18%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf",
+    "label": "11/01/18 - 12/31/18, Schedule EV-TOU-5",
+    "sha256": "8661627de3b00a01e6767990280b0491409aa0751936182c6828bc840ce39637",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2018-11-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2018-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-18%20Schedule%20EV-TOU-5%20Total%20Rates%20Table_0.pdf",
+    "label": "10/01/18 - 10/31/18, Schedule EV-TOU-5",
+    "sha256": "16ed92fef603d99fc2a1be07a16ccfd6d120cd72c74e926d37a8e0f098b6dcc1",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2018-10-01.txt"
+  },
+  {
+    "id": "sdge-EV-TOU-5-2018-07-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/7-1-18%20Schedule%20EV-TOU-5_Total_Rates_Table.pdf",
+    "label": "07/01/18 - 09/30/18, Schedule EV-TOU-5",
+    "sha256": "29e225171cd2028d6008cf6c3ba96ccece9426b8501778115f016c821716559b",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-EV-TOU-5-2018-07-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2026-08-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/8-1-26%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "8/1/26 - Current, Schedule TOU-DR1",
+    "sha256": "e99e3875990a4968db0fef661687d667f96d7675b5cfb035aa9f2aa2b9fe9950",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2026-08-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2026-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-26%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "6/1/26 - 7/31/26, Schedule TOU-DR1",
+    "sha256": "c998a29f4585c89f0cc78b0614abefbe1caccef9875de024a2477f7b0fc39ced",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2026-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2026-04-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/4-1-26%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "4/1/26 - 5/31/26, Schedule TOU-DR1",
+    "sha256": "0c589c531323972ab7357a244834fb78a6dce7d2cc698087d1d24c26240f8da2",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2026-04-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2026-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-26%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "1/1/26 - 3/31/26, Schedule TOU-DR1",
+    "sha256": "1dff3c51ab2383dd7c3a57445cbd230111002cda84e36e6ff3e82923b69f9ef4",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2026-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2025-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-25%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "10/1/25 - 12/31/25, Schedule TOU-DR1",
+    "sha256": "ae382ff0e5be95653fcfe24f0be057b8ebd68c7301abcd77451d284121793f73",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2025-10-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2025-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-25%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "6/1/25 - 9/30/25, Schedule TOU-DR1",
+    "sha256": "b831e93646b694a40bea70650408a7795a5268a823d967a31b4798cac4611d52",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2025-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2025-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-25%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "2/1/25 - 05/31/25 \u2013 Schedule TOU-DR1",
+    "sha256": "44241429ca531ac6c361ccdd73e7d4317c0f3188ceccbf2bbfcd17208ed1f83a",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2025-02-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2024-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-24%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "10/1/24 \u2013 1/31/25, Schedule TOU-DR1",
+    "sha256": "86bca14ead1444bdd7755b76825ede69b9fe19d2c63492ba87b74cacc602e29d",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2024-10-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2024-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-24%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "3/1/24 \u2013 9/30/24, Schedule TOU-DR1",
+    "sha256": "4047586a791505f98c5f9fcdddf2eab1b5b31bbf77f979cb9a7d883f3802c646",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2024-03-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2024-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-24%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "1/1/24 \u2013 2/29/24, Schedule TOU-DR1",
+    "sha256": "bd2cce7ea1b7dd74975a769706f19b6705d667145eaf6ee50e93a59fe3a31d7e",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2024-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2023-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-23%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "1/1/23 \u2013 12/31/23, Schedule TOU-DR1",
+    "sha256": "fb0d0cf4925a5caf7b4638361f4259ba13708f1406b232aaeb421854d3311f2b",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2023-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2022-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-22%20Schedule%20TOU-DR1%20Total%20Rates%20Table_0.pdf",
+    "label": "6/1/22 \u2013 12/31/22,\u2013 Schedule TOU-DR1",
+    "sha256": "93fa27a2417d87023f776d48ed8617e57f8840c46eebf57ea17edf7d13270fe1",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2022-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2022-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-22%20Schedule%20TOU-DR1%20Total%20Rates%20Table%20no%20HUC.pdf",
+    "label": "1/1/22 \u2013 5/31/22 \u2013 Schedule TOU-DR1",
+    "sha256": "3368b1117b337cde46d4c27a224f318cee39918fde33af03d0b052db98edcb46",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2022-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2021-11-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/11-1-21%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "11/1/21 \u2013 12/31/21,  Schedule TOU-DR1",
+    "sha256": "6a8f0db568c4db69bd415291974274f2b80e1900ba89855ddef293f261bed02c",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2021-11-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2021-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-21%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "6/1/21 \u2013 10/31/21, Schedule TOU-DR1",
+    "sha256": "6299c95911c482d16cc349e1b9eb646312f51282736a7c20df211f4aeb616c04",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2021-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2021-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-21%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "3/1/21 \u2013 5/31/21, Schedule TOU-DR1",
+    "sha256": "662129831c0cef0c208b251234fe60614874dcc4160bfc242fe81ba5566946e4",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2021-03-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2021-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-21%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "02/01/21 - 2/28/21, Schedule TOU-DR1",
+    "sha256": "c88517850b7c6a6cd4c021f2766596b30ee37ab5242d257e0bab867ac65f95f1",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2021-02-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2020-07-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/7-1-20%20Schedule%20TOU-DR1%20Total%20Rates%20Table_1.pdf",
+    "label": "07/01/20 - 01/31/21, Schedule TOU-DR1",
+    "sha256": "7ac8a5e50eaa237068145ccc31d93c8d88a22ed98b6c6d3f0a1fb67a0d6124da",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2020-07-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2020-04-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/4-1-20%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "04/01/20 - 06/30/20, Schedule TOU-DR1",
+    "sha256": "0335d8e82c442efdcf1cb7774ab29ae11685df46381e41b62f71bcba6c6e7eb7",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2020-04-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2020-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-20%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "02/01/20 - 3/31/20, Schedule TOU-DR1",
+    "sha256": "24731cf34da1784528aed7531fdace1366458e5544d7798e24453d384f068235",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2020-02-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2020-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-20%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "01/01/20 - 01/31/20, Schedule TOU-DR1",
+    "sha256": "02cf6ad78c3122a2b7c069933cf2b76b017c9974923ea156aaaab0ade0176751",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2020-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2019-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-19%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "06/01/19 - 12/31/19, Schedule TOU-DR1",
+    "sha256": "c5fdd6df5125ea05070250941b57aa6a9ea66caf8db38289bd55323f65fe2fd9",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2019-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2019-05-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/5-1-19%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "05/01/19 - 05/31/19, Schedule TOU-DR1",
+    "sha256": "e0a972ba4fe5d92a9c4168a269e07cf48ff91cbab28554171646e9ba35448599",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2019-05-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2019-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-19%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "03/01/19 - 04/30/19, Schedule TOU-DR1",
+    "sha256": "4768665977b1c99b0375af5ad586022441b5c6261b4e1090c3a6a1f08ef2ca11",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2019-03-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2019-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-19%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "01/01/19 - 02/28/19, Schedule TOU-DR1",
+    "sha256": "12ce2833fe2a5caf7cbf2ba8efc90c45edb0e9b9b8e50b202837d47d2c05256f",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2019-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2018-11-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/11-1-18%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "11/01/18 - 12/31/18, Schedule TOU-DR1",
+    "sha256": "b79727de9b7dab7167e7625dffe6e2170fc9c8a3c777cc99e5602d9f4469db5a",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2018-11-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2018-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-18%20Schedule%20TOU-DR1%20Total%20Rates%20Table_0.pdf",
+    "label": "10/01/18 - 10/31/18, Schedule TOU-DR1",
+    "sha256": "0d422f80aa9d12918752b59e273554c62c5bff29350749d37f394840c1eb3a5e",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2018-10-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2018-07-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/7-1-18%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "07/01/18 - 09/30/18, Schedule TOU-DR1",
+    "sha256": "e1eafbc401f58a197c2639e5812c4e594ea7bc03581f809b06cff78941bd6085",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2018-07-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR1-2018-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-18%20Schedule%20TOU-DR1%20Total%20Rates%20Table.pdf",
+    "label": "01/01/18 - 06/30/18, 3/1/21 \u2013 Schedule TOU-DR1",
+    "sha256": "80ad13e4953af2023bbed759639df4ea009b2d9892f5bb4c4365241494d53a6c",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR1-2018-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2026-08-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/8-1-26%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "8/1/26 - Current, Schedule TOU-DR2",
+    "sha256": "0adcf66d1d2051cccfe55431286489266ec7290e6d70caa44db27c20bedba5db",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2026-08-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2026-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-26%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "6/1/26 - 7/31/26, Schedule TOU-DR2",
+    "sha256": "49e37523f6cf3e04c3675a28176bf70f44dd17b18c0d9acc50239d85665b77b6",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2026-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2026-04-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/4-1-26%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "4/1/26 - 5/31/26, Schedule TOU-DR2",
+    "sha256": "973176ad67e182d451fda8b97589dac812f96fa8496ba012eec7b06f13b40787",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2026-04-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2026-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-26%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "1/1/26 - 3/31/26, Schedule TOU-DR2",
+    "sha256": "13304ccf14afb386d86c227058b35f72965e992d1f6d03d4ab51d5e181e13aa0",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2026-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2025-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-25%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "10/1/25 - 12/31/25, Schedule TOU-DR2",
+    "sha256": "b9dc855de2894b78a24b7a1b2f679a9b65603514eee4e9011785c6de1de1141d",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2025-10-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2025-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-25%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "6/1/25 - 9/30/25, Schedule TOU-DR2",
+    "sha256": "513d6639c4afd09aa7ac0c0d0388933e10424ed23fdb7d58aadb09e8e43660b5",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2025-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2025-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-25%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "2/1/25 - 5/31/25, Schedule TOU-DR2",
+    "sha256": "3a1bad73ca450da8df6a1d8ae623d0f45c98d7f04e4b0b907eff9a8f9909dd9e",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2025-02-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2024-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-24%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "10/1/24 \u2013 1/31/25, Schedule TOU-DR2",
+    "sha256": "95ce469795213159e9fd2670bde1bf3feb2df48cade167bf5d8b6291d1ee03f7",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2024-10-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2024-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-24%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "3/1/24 \u2013 9/30/24, Schedule TOU-DR2",
+    "sha256": "574d074759d96ba3e8ad7d1bd499e9fe5a4af1a71102ab3f78ef647d392c29d2",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2024-03-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2024-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-24%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "1/1/24 \u2013 2/29/24, Schedule TOU-DR2",
+    "sha256": "ba0d252c4a942e1c04f8b0a2319e6eeef479082ac0ef9d27d1f100b8b8f572b9",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2024-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2023-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-23%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "1/1/23 \u2013 12/31/23, Schedule TOU-DR2",
+    "sha256": "6bcec1fb94aaae00f564132c42a30be6804d34bc4e09e49ae1a9265320abf987",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2023-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2022-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-22%20Schedule%20TOU-DR2%20Total%20Rates%20Table_0.pdf",
+    "label": "6/1/22 \u2013 12/31/22, Schedule TOU-DR2",
+    "sha256": "e31e32172acb28a3fb2d445cf41b62469ddb167012b326a56379d001ca398605",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2022-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2022-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-22%20Schedule%20TOU-DR2%20Total%20Rates%20Table%20no%20HUC.pdf",
+    "label": "1/1/22 \u2013 5/31/22, Schedule TOU-DR2",
+    "sha256": "dc1d4a4e9f39e9558a1f6acbb2c3c4efade79dffbacbc3a4e4ac8d507ea4fa5a",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2022-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2021-11-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/11-1-21%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "11/1/21 \u2013 12/31/21,  Schedule TOU-DR2",
+    "sha256": "a68788694c1a5b16ffabe9888113e760f0823a1c89b1e8fd036ace9243c5b2ca",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2021-11-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2021-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-21%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "6/1/21 \u2013 10/31/21, Schedule TOU-DR2",
+    "sha256": "b3752a20a6bfaedb386a03316a459486bb619a317983aec0a6944bf23d87499e",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2021-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2021-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-21%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "3/1/21 \u2013 5/31/21, Schedule TOU-DR2",
+    "sha256": "91a1948ecfb8644d544050d93ad318b1cd4d3b8f09284419147eaed1cec05906",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2021-03-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2021-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-21%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "02/01/21 - 2/28/21, Schedule TOU-DR2",
+    "sha256": "a38134cea93aa68515a7b21ff133bfacef2a0a1ab3bf5d6883b1df3c60602023",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2021-02-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2020-04-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/4-1-20%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "04/01/20 - 01/31/21, Schedule TOU-DR2",
+    "sha256": "1037ac56d12fc02d3740981e8d6d8526854afb4d64d5a9e4f5a36f155b9955c9",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2020-04-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2020-02-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/2-1-20%20Schedule%20TOU-DR2%20Total%20Rates%20Table_0.pdf",
+    "label": "02/01/20 - 3/31/20, Schedule TOU-DR2",
+    "sha256": "884a50f029ecb49cb826549a1dbaf0110cf126dccb82a52a260bd2783ef924a1",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2020-02-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2020-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-20%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "01/01/20 - 01/31/20, Schedule TOU-DR2",
+    "sha256": "a4c7da1b98d84f8d68a0e436e1d6a4673037c4e40ee6579d82c83b54a3c679ea",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2020-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2019-06-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/6-1-19%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "06/01/19 - 12/31/19, Schedule TOU-DR2",
+    "sha256": "7a86ff757226ba0a37da26b97c75af05548bf8df98fe96bead8895b7a40c1306",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2019-06-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2019-05-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/5-1-19%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "05/01/19 - 05/31/19, Schedule TOU-DR2",
+    "sha256": "9431e4ed104eaa073cfa0b1804f71876371c14476c0e771ab1de6de5a93309a6",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2019-05-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2019-03-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/3-1-19%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "03/01/19 - 04/30/19, Schedule TOU-DR2",
+    "sha256": "4cf27060329fb8d3b14670118f78f8c6631b2452e571085d6d417cbe9b4c288c",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2019-03-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2019-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-19%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "01/01/19 - 02/28/19, Schedule TOU-DR2",
+    "sha256": "8422f61fa4e0d1b44e402bfa2f3959e5b610d5e67107d6644101dc98047adf42",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2019-01-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2018-11-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/11-1-18%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "11/01/18 - 12/31/18, Schedule TOU-DR2",
+    "sha256": "a459f58a1560c8d2a4258d260816ea5941c61755b2ce7579a4becb918aaa407a",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2018-11-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2018-10-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/10-1-18%20Schedule%20TOU-DR2%20Total%20Rates%20Table_0.pdf",
+    "label": "10/01/18 - 10/31/18, Schedule TOU-DR2",
+    "sha256": "bf7b43d74ee1e7a2fb1f4ce4d25bbc9775d8063d079dafaddc5c30cc427defca",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2018-10-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2018-07-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/7-1-18%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "07/01/18 - 09/30/18, Schedule TOU-DR2",
+    "sha256": "d5bbac97f7bba2953034418adb345dec6bdc8275db5e7c6074915d2848c36096",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2018-07-01.txt"
+  },
+  {
+    "id": "sdge-TOU-DR2-2018-01-01",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/1-1-18%20Schedule%20TOU-DR2%20Total%20Rates%20Table.pdf",
+    "label": "01/01/18 - 06/30/18, Schedule TOU-DR2",
+    "sha256": "b3a845fac33d29b4e67740589e9de547fcf0f626d58d4d288c7d8a0beb8cd5d7",
+    "pages": 1,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdge-TOU-DR2-2018-01-01.txt"
+  },
+  {
+    "id": "sdge-filed-EECC",
+    "url": "https://tariff.sdge.com/tm2/pdf/tariffs/ELEC_ELEC-SCHEDS_EECC.pdf",
+    "label": "Current filed schedule",
+    "error": "HTTPSConnectionPool(host='tariff.sdge.com', port=443): Max retries exceeded with url: /tm2/pdf/tariffs/ELEC_ELEC-SCHEDS_EECC.pdf (Caused by NameResolutionError(\"HTTPSConnection(hos"
+  },
+  {
+    "id": "sdge-filed-CCA",
+    "url": "https://tariff.sdge.com/tm2/pdf/tariffs/ELEC_ELEC-SCHEDS_CCA.pdf",
+    "label": "Current filed schedule",
+    "error": "HTTPSConnectionPool(host='tariff.sdge.com', port=443): Max retries exceeded with url: /tm2/pdf/tariffs/ELEC_ELEC-SCHEDS_CCA.pdf (Caused by NameResolutionError(\"HTTPSConnection(host"
+  },
+  {
+    "id": "sdcp-Res_2021V_2026",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2026/01/Res_2021V_2026.pdf",
+    "label": "Residential Rates Effective as of Jan. 1, 2026 for Customers Enrolled 2022",
+    "sha256": "8ed48896526ab634361a93f146f0512556f7b082c7c46ad404956e8bd6c4a03f",
+    "pages": 4,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Res_2021V_2026.txt"
+  },
+  {
+    "id": "sdcp-Res_2022V_2026",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2026/01/Res_2022V_2026.pdf",
+    "label": "Residential Rates Effective as of Jan. 1, 2026 for Customers Enrolled 2023",
+    "sha256": "f366ca0a646d4c0306a34b6b4f94c5553367c9f3f355a3a402fefcb3879dc2ec",
+    "pages": 4,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Res_2022V_2026.txt"
+  },
+  {
+    "id": "sdcp-Schedule-for-WebsiteRes_2021V",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/02/Schedule-for-WebsiteRes_2021V.pdf",
+    "label": "Residential Rates Effective as of Feb. 1, 2025 for Customers Enrolled 2022",
+    "sha256": "894f30611932a6f3e059293f3c923aca50942a3f3786f4e2e8e3cfcfa13e53b8",
+    "pages": 3,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Schedule-for-WebsiteRes_2021V.txt"
+  },
+  {
+    "id": "sdcp-Schedule-for-WebsiteRes_2022V",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/02/Schedule-for-WebsiteRes_2022V.pdf",
+    "label": "Residential Rates Effective as of Feb. 1, 2025 for Customers Enrolled 2023",
+    "sha256": "ee934dd549c15ef903f334bc57966b2afc10403465cdb3235e9c57e3813b4727",
+    "pages": 3,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Schedule-for-WebsiteRes_2022V.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-July-1-2024-for-Customers-Enrolled-2022",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-July-1-2024-for-Customers-Enrolled-2022.pdf",
+    "label": "Residential Rates Effective as of July 1, 2024 for Customers Enrolled 2022",
+    "sha256": "2655b0da63e5bc8450444341470e84090e4df156d17ff7ddecc09a05a9c3584b",
+    "pages": 6,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-July-1-2024-for-Customers-Enrolled-2022.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-July-1-2024-for-Customers-Enrolled-2023",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-July-1-2024-for-Customers-Enrolled-2023.pdf",
+    "label": "Residential Rates Effective as of July 1, 2024 for Customers Enrolled 2023",
+    "sha256": "729a07376dfce8b797639eb2e507f8ca4222e933ae52b159d50a9b175edcfc93",
+    "pages": 6,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-July-1-2024-for-Customers-Enrolled-2023.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-February-1-2024-for-Customers-Enrolled-2022",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-February-1-2024-for-Customers-Enrolled-2022.pdf",
+    "label": "Residential Rates Effective as of February 1, 2024 for Customers Enrolled 2022",
+    "sha256": "09441a10144fe738558d20b906b644b6d8a47fe8569087328a7ce58a48aad856",
+    "pages": 5,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-February-1-2024-for-Customers-Enrolled-2022.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-February-1-2024-for-Customers-Enrolled-2023",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-February-1-2024-for-Customers-Enrolled-2023.pdf",
+    "label": "Residential Rates Effective as of February 1, 2024 for Customers Enrolled 2023",
+    "sha256": "46a5cbb216e7654913094e504107ee2dfaa439a2bfdc6a0ebb912aac8edbff71",
+    "pages": 5,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-February-1-2024-for-Customers-Enrolled-2023.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-February-1-2023-for-Customers-Enrolled-2022",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-February-1-2023-for-Customers-Enrolled-2022.pdf",
+    "label": "Residential Rates Effective as of February 1, 2023 for Customers Enrolled 2022",
+    "sha256": "f352713bb00a65888d43fb69f1b897239ed6e2cfdd73026cc3efa177a4d994f5",
+    "pages": 6,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-February-1-2023-for-Customers-Enrolled-2022.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-February-1-2023-for-Customers-Enrolled-2023",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-February-1-2023-for-Customers-Enrolled-2023.pdf",
+    "label": "Residential Rates Effective as of February 1, 2023 for Customers Enrolled 2023",
+    "sha256": "e54ba76c883570c43a6ba86396b9fe112843ea9f16599b7393d6fd1fbe3ddcab",
+    "pages": 5,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-February-1-2023-for-Customers-Enrolled-2023.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-February-1-2022",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-February-1-2022.pdf",
+    "label": "Residential Rates Effective as of February 1, 2022",
+    "sha256": "89c5a73fd06990b9f3b25111a76ee2cf372a689e4c2dddfc192e2950972c20d7",
+    "pages": 7,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-February-1-2022.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-June-1-2021",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-June-1-2021.pdf",
+    "label": "Residential Rates Effective as of June 1, 2021",
+    "sha256": "27099072c8bf806914e98c224a556c81f5187383730e2ef2a9fea8c7c2ee0f34",
+    "pages": 7,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-June-1-2021.txt"
+  },
+  {
+    "id": "sdcp-Residential-Rates-Effective-as-of-March-1-2021",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2025/10/Residential-Rates-Effective-as-of-March-1-2021.pdf",
+    "label": "Residential Rates Effective as of March 1, 2021",
+    "sha256": "9b5a54d41bdc01ab72a26b4bd7f412f2e327cffa61ac4ef92bc4d728de4fcf9f",
+    "pages": 8,
+    "retrieved_on": "2026-10-11",
+    "text_file": "sdcp-Residential-Rates-Effective-as-of-March-1-2021.txt"
+  },
+  {
+    "id": "cea-2026-06-01",
+    "url": "https://thecleanenergyalliance.org/wp-content/uploads/2026/06/CEA-Adopted-Residential-Rate-Schedule-Effective-2026_06_01-1.pdf",
+    "label": "Adopted residential rates",
+    "sha256": "f3fc2841a0618dcfbfedfbb4e4a3083bd5ddf03cd963650126898f1f19c61871",
+    "pages": 4,
+    "retrieved_on": "2026-10-11",
+    "text_file": "cea-2026-06-01.txt"
+  },
+  {
+    "id": "cea-2026-04-01",
+    "url": "https://thecleanenergyalliance.org/wp-content/uploads/2026/04/CEA-Adopted-Residential-Rate-Schedule-Effective-2026_04_01-1.pdf",
+    "label": "Adopted residential rates",
+    "sha256": "45e14d7b032fe5322b04bb632ea3975d54756cdfa53c93c17a4a66838160c252",
+    "pages": 4,
+    "retrieved_on": "2026-10-11",
+    "text_file": "cea-2026-04-01.txt"
+  },
+  {
+    "id": "cea-2026-02-01",
+    "url": "https://thecleanenergyalliance.org/wp-content/uploads/2026/03/CEA-Adopted-Rate-Schedule-Effective-2026_02_01-Residential.pdf",
+    "label": "Adopted residential rates",
+    "sha256": "65955fb45e3d4adb752c853774cf29355fac880abfd39b37d1663490b0b30be9",
+    "pages": 4,
+    "retrieved_on": "2026-10-11",
+    "text_file": "cea-2026-02-01.txt"
+  },
+  {
+    "id": "sdge-filed-TOU-DR1",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=898",
+    "sha256": "cb049f06149797622e3595df03a591c1258eaad47c83ad7ec1da18d59a7ccd26",
+    "pages": 10,
+    "text_file": "sdge-filed-TOU-DR1.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-filed-TOU-DR2",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=899",
+    "sha256": "66eea2f15782d8c2be72a640607f75086a028f30e7f5eba1e051a4a111918ece",
+    "pages": 9,
+    "text_file": "sdge-filed-TOU-DR2.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-filed-EV-TOU-5",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=930",
+    "sha256": "2341d66641dec14ad05d369d66965ca1bf816857c274dc23b86c060d8bf503af",
+    "pages": 15,
+    "text_file": "sdge-filed-EV-TOU-5.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-filed-DR",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=8",
+    "sha256": "636953c5c18c35ee2a008bdf346d3a750e5f41cd49a45e485f877aecd0b1e832",
+    "pages": 8,
+    "text_file": "sdge-filed-DR.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-filed-CCA-CRS",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=339",
+    "sha256": "4eebc1a9701d65d9ec3b0bb91ba983b977cd67a72e18ccaa636b67f7fce91606",
+    "pages": 4,
+    "text_file": "sdge-filed-CCA-CRS.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-filed-general",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=1",
+    "sha256": "9ca0da828946bdef8c077e75a06bdf517636276863e81adf99175cab2a81034e",
+    "pages": 3,
+    "text_file": "sdge-filed-general.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdcp-current-2021",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2026/04/Res_2021V_042026.pdf",
+    "sha256": "da3058707c9c1b5e8d085e5846630ae91a4a0ae1c0b8c3d24ab26e27f80e216d",
+    "pages": 4,
+    "text_file": "sdcp-current-2021.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdcp-current-2022",
+    "url": "https://sdcommunitypower.org/wp-content/uploads/2026/04/Res_2022V_042026.pdf",
+    "sha256": "aaaafd8e8bb23f19812f60c5f72cfaf17e391b8cb2eeee2d09167a4623b36ec6",
+    "pages": 4,
+    "text_file": "sdcp-current-2022.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "cea-2024-11-01",
+    "url": "https://thecleanenergyalliance.org/wp-content/uploads/2025/07/CEA-Adopted-Residential-Rate-Schedule-Effective-2024_11_01_corrected-7-7-2025-1.pdf",
+    "sha256": "2f85831fc2311c2fb83fcbd868c26e10774ad39084e998b81db567cb4714d543",
+    "pages": 3,
+    "text_file": "cea-2024-11-01.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdcp-jrc-2026-08-01",
+    "url": "https://www.sdge.com/sites/default/files/SDCP_SDGE%20JRC%2008.01.2026_Final.pdf",
+    "sha256": "6cb484fd33dd795091d59818166417bd1c3d81bc607affd7366e63ec4953a75b",
+    "pages": 18,
+    "text_file": "sdcp-jrc-2026-08-01.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-rule-1",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=77",
+    "sha256": "4fd4577aadfe2af30c109daaaf1e4bcdafc21a03812c4f8f30e37e16e8b0db51",
+    "pages": 16,
+    "text_file": "sdge-rule-1.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-rule-9",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=85",
+    "sha256": "ba39faab94cc3733a378d6d29df327cb46a35fee156f6f5e5931f0174db240c9",
+    "pages": 6,
+    "text_file": "sdge-rule-9.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-rule-27",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=342",
+    "sha256": "91f9c6b5dfe52af4a44da828114af993b08d38a7866edadf67360cd21c9b8230",
+    "pages": 60,
+    "text_file": "sdge-rule-27.txt",
+    "retrieved_on": "2026-10-11"
+  },
+  {
+    "id": "sdge-E-PUC",
+    "url": "https://scg-uofa-api-prd-hzczb4hja0g6dcfv.a03.azurefd.net/scg-uofa-wpubtm-prd/tariff/?utilId=SDGE&bookId=ELEC&tarfKey=53",
+    "sha256": "09403b511f19cf2c3a253635f6dedb4fa395026aa7a383209fac8fc37c13d7d3",
+    "pages": 1,
+    "text_file": "sdge-E-PUC.txt",
+    "retrieved_on": "2026-10-11"
+  }
+]

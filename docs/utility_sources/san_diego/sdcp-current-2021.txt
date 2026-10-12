@@ -1,0 +1,345 @@
+                                                           2026 Current Residential Rates
+
+                                                                         For residential customers in the cities of
+                                                          Chula Vista, Encinitas, Imperial Beach, La Mesa and San Diego
+
+
+
+              Table of Contents
+
+              ● Introduction
+
+              ● Rate Period Definitions
+
+              ● Rate Schedule for Residential Customers
+
+              ● Rate Schedule for Lighting
+
+
+              Introduction
+
+              San Diego Community Power (Community Power) rates are established to meet standard bill comparison targets approved by our Board of
+              Directors. Any changes to Community Power’s rates are adopted at public meetings of our Board. The rates shown in this document are for electric
+              generation/supply only. Please visit: www.sdge.com/rates-and-regulations/current-and-effective-tariffs for delivery rates and schedules.
+
+
+
+              Rate Period Definitions
+
+              Seasonal Periods
+
+              For all rate schedules, seasons are defined as follows:
+              ● Summer:  June 1 – October 31
+
+              ● Winter:  November 1 – May 31
+
+
+              Time-of-Use (TOU) Periods
+
+              All time periods listed are applicable to local time. The definition of time will be based upon the date service is rendered.
+
+
+                  TOU Period  Weekdays                                          Summer                                                              Winter
+                                                                          June 1 – October 31                                               November 1 – May 31
+
+                          On-Peak                                       4:00 p.m. - 9:00 p.m.                                               4:00 p.m. - 9:00 p.m.
+
+                          Off-Peak                                          All other hours                                                     All other hours
+
+                      Super-Off Peak                                    Midnight - 6:00 a.m.;                                               Midnight - 6:00 a.m.;
+                                                                       10:00 a.m. - 2:00 p.m.                                              10:00 a.m. - 2:00 p.m.
+
+
+
+                TOU Period  Weekends &                                          Summer                                                              Winter
+                          Holidays                                        June 1 – October 31                                               November 1 – May 31
+
+                          On-Peak                                       4:00 p.m. – 9:00 p.m.                                              4:00 p.m. – 9:00 p.m.
+
+                          Off-Peak                                          All other hours                                                     All other hours
+
+                      Super-Off Peak                                    Midnight – 2:00 p.m.                                                Midnight – 2:00 p.m.
+
+
+
+
+
+
+
+
+
+
+
+Effective May 1, 2026
+These rates are applicable to all customers in all jurisdictions served by Community Power and do not include SDGE transmission and delivery charges.
+                        Rate Key
+
+                        Your Community Power rate schedule may not exactly match your SDG&E rate, as Community Power offers simplified, consolidated rate options.
+                        This will not impact service, billing, or CARE/FERA status.  The table below maps SDG&E rates to their equivalent Community Power rates:
+
+
+                                      SDG&E Rate                       Community Power Rate                Customer Type
+
+                                           DM                                                         DR                                     Residential
+
+                                            DR                                                         DR                                     Residential
+
+                                           DRLI                                                   DR-LI                                   Residential
+
+                                         DRSES                                               DR-SES                                 Residential
+
+                                         DRTOD                                           TOU-DR                                Residential
+
+                                      DRTODPSH                                      TOU-DR                                Residential
+
+                                            DS                                                         DR                                     Residential
+
+                                            DT                                                         DR                                     Residential
+
+                                          DTRV                                                     DR                                     Residential
+
+                                         EVTOU                                                EV-TOU                                 Residential
+
+                                        EVTOU2                                            EV-TOU-2                               Residential
+
+                                        EVTOU5                                            EV-TOU-5                               Residential
+
+                                        TOUDR1                                        TOU-DR-1                               Residential
+
+                                        TOUDR2                                       TOU-DR-2                              Residential
+
+                                        TOUELEC                                      TOU-ELEC                               Residential
+
+                                          DWL                                               LS                                     Residential
+
+
+                        Charge Type Units
+
+                        ● Generation is charged on a per kilowatt-hour (kWh) basis.
+
+                        ● Demand is charged on a per kilowatt (kW) basis.
+
+                        Community Power Rates Effective May 1, 2026
+
+
+                        Power100 Rate
+
+
+                                 All Rate Schedules
+
+                                          Season                                    Charge Type                         Time-of-Use Period                 Power100
+
+                                              All                                                     Generation                                          Total                                               $0.01
+
+
+                        Residential Rate Schedule
+
+
+rge Type                                      DR                          Standard Residential Service
+
+                                          Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ ration - 2021 V                         Summer                                               Generation                                          Total                                          $0.13780                                       $0.12684
+
+ ration - 2021 V                          Winter                                                Generation                                          Total                                          $0.13780                                       $0.12684
+
+
+
+                                       DR-LI-MB                           Standard Residential Service Low-Income Medical Baseline
+
+                                          Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ ration - 2021 V                         Summer                                               Generation                                          Total                                          $0.13780                                       $0.12684
+
+ ration - 2021 V                          Winter                                                Generation                                          Total                                          $0.13780                                       $0.12684
+
+
+
+
+    Effective May 1, 2026
+    These rates are applicable to all customers in all jurisdictions served by Community Power and do not include SDGE transmission and delivery charges.
+                                             DR-SES                               Domestic Time-of-Use for Households With a Solar Energy System
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                              Summer                                               Generation                                           On-Peak                                      $0.41063                                      $0.38242
+
+ration - 2021 V                              Summer                                               Generation                                           Off-Peak                                      $0.12866                                        $0.11828
+
+ration - 2021 V                              Summer                                               Generation                                    Super Off-Peak                              $0.04168                                      $0.03680
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                      $0.15409                                       $0.14210
+ration - 2021 V                               Winter                                                Generation                                           Off-Peak                                     $0.10044                                      $0.09183
+
+ration - 2021 V                               Winter                                                Generation                                    Super Off-Peak                              $0.03469                                     $0.03024
+
+
+
+                                             EV-TOU                               Domestic Time-of-Use for EV Charging
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                              Summer                                               Generation                                           On-Peak                                      $0.41063                                      $0.38242
+
+ration - 2021 V                              Summer                                               Generation                                           Off-Peak                                      $0.12866                                        $0.11828
+
+ration - 2021 V                              Summer                                               Generation                                    Super Off-Peak                              $0.04168                                      $0.03680
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                      $0.15409                                       $0.14210
+
+ration - 2021 V                               Winter                                                Generation                                           Off-Peak                                     $0.10044                                      $0.09183
+
+ration - 2021 V                               Winter                                                Generation                                    Super Off-Peak                              $0.03469                                     $0.03024
+
+
+
+                                           EV-TOU-2                               Domestic Time-of-Use for Households With EVs
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                              Summer                                               Generation                                           On-Peak                                      $0.41063                                      $0.38242
+
+ration - 2021 V                              Summer                                               Generation                                           Off-Peak                                      $0.12866                                        $0.11828
+
+ration - 2021 V                              Summer                                               Generation                                    Super Off-Peak                              $0.04168                                      $0.03680
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                      $0.15409                                       $0.14210
+
+ration - 2021 V                               Winter                                                Generation                                           Off-Peak                                     $0.10044                                      $0.09183
+
+ration - 2021 V                               Winter                                                Generation                                    Super Off-Peak                              $0.03469                                     $0.03024
+
+
+
+                                           EV-TOU-5                               Cost-Based Domestic Time-of-Use for Households With EVs
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                              Summer                                               Generation                                           On-Peak                                      $0.41063                                      $0.38242
+
+ration - 2021 V                              Summer                                               Generation                                           Off-Peak                                      $0.12866                                        $0.11828
+
+ration - 2021 V                              Summer                                               Generation                                    Super Off-Peak                              $0.04168                                      $0.03680
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                      $0.15409                                       $0.14210
+
+ration - 2021 V                               Winter                                                Generation                                           Off-Peak                                     $0.10044                                      $0.09183
+
+ration - 2021 V                               Winter                                                Generation                                    Super Off-Peak                              $0.03469                                     $0.03024
+
+
+
+                                           TOU-DR-1                               Residential Time-of-Use
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                              Summer                                               Generation                                           On-Peak                                      $0.29579                                      $0.27484
+
+ration - 2021 V                              Summer                                               Generation                                           Off-Peak                                     $0.08635                                     $0.07864
+
+ration - 2021 V                              Summer                                               Generation                                    Super Off-Peak                             $0.01000                                    $0.01000
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                       $0.22513                                       $0.20865
+
+ration - 2021 V                               Winter                                                Generation                                           Off-Peak                                      $0.14758                                       $0.13600
+
+ration - 2021 V                               Winter                                                Generation                                    Super Off-Peak                              $0.06144                                     $0.05530
+
+
+
+
+   Effective May 1, 2026
+   These rates are applicable to all customers in all jurisdictions served by Community Power and do not include SDGE transmission and delivery charges.
+                                          TOU-DR-2                               Residential Time-of-Use
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                             Summer                                               Generation                                           On-Peak                                      $0.29579                                      $0.27484
+
+ration - 2021 V                             Summer                                               Generation                                           Off-Peak                                     $0.04439                                     $0.03933
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                       $0.22513                                       $0.20865
+
+ration - 2021 V                               Winter                                                Generation                                           Off-Peak                                      $0.09512                                      $0.08685
+
+
+
+                                            TOU-DR                               Residential Time-of-Use
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                             Summer                                               Generation                                           On-Peak                                       $0.18166                                        $0.16792
+
+ration - 2021 V                             Summer                                               Generation                                          Off-Peak                                      $0.12578                                        $0.11557
+
+ration - 2021 V                             Summer                                               Generation                                   Super Off-Peak                               $0.07310                                      $0.06623
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                      $0.22492                                      $0.20845
+
+ration - 2021 V                               Winter                                                Generation                                          Off-Peak                                      $0.14743                                       $0.13585
+
+ration - 2021 V                               Winter                                                Generation                                   Super Off-Peak                               $0.06136                                      $0.05523
+
+
+
+                                          TOU-ELEC                               Domestic Time-of-Use for Households With EVs,  Storage, or Electric Heat Pumps
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                             Summer                                               Generation                                           On-Peak                                      $0.39801                                      $0.37060
+
+ration - 2021 V                             Summer                                               Generation                                          Off-Peak                                     $0.08722                                      $0.07946
+
+ration - 2021 V                             Summer                                               Generation                                   Super Off-Peak                              $0.04634                                      $0.04115
+
+ration - 2021 V                               Winter                                                Generation                                           On-Peak                                       $0.19510                                        $0.18051
+
+ration - 2021 V                               Winter                                                Generation                                          Off-Peak                                       $0.07611                                      $0.06904
+
+ration - 2021 V                               Winter                                                Generation                                   Super Off-Peak                              $0.03892                                      $0.03421
+
+
+                         Lighting Rate Schedule
+
+
+                                                  LS                             Residential Walkway Lighting
+
+                                              Season                                    Charge Type                         Time-of-Use Period                  PowerOn                           PowerBase
+
+ration - 2021 V                                   All                                                     Generation                                          Total                                         $0.08740                                    $0.08020
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Effective May 1, 2026
+   These rates are applicable to all customers in all jurisdictions served by Community Power and do not include SDGE transmission and delivery charges.
