@@ -1,0 +1,71 @@
+Incremental 
+Distribution 
+Uncollectible 
+Cost Factor (2)
+Excess 
+Deferred 
+Income Tax 
+Factor (2)
+Retail Customer 
+Assessment (3)
+Determination of 
+Delivery Reconciliation 
+Adjustment (2)
+Revenue Balancing 
+Adjustment Factor (2,4)
+Total Plan Adjustment 
+Factor (2)
+Distributed 
+Generation 
+Rebate 
+Adjustment
+IDUF EDAF RCA DSPR RBAF TPAF DGRA
+1.009 0.00000 0.000000 0.007668 0.065510
+0.011682
+0.069810
+0.064486
+A B C D E F G H
+  Customer Charge $13.26 $0.12 $0.00 $0.91 $0.00 $0.10 $0.87 $15.26
+  Standard Metering Service Charge $3.52 $0.03 $0.00 $0.00 $0.03 $0.23 $3.81
+  Distribution Facilities Charge ($/kWh) $0.05698 $0.00051 $0.00000 $0.00000 $0.00044 $0.00373 $0.00062 $0.06228 x kWh
+  IEDT ($/kWh) $0.00124 $0.00001 $0.00001 $0.00126 x kWh
+  Customer Charge $9.76 $0.09 $0.00 $0.91 $0.00 $0.11 $0.64 $11.51
+  Standard Metering Service Charge $3.52 $0.03 $0.00 $0.00 $0.04 $0.23 $3.82
+  Distribution Facilities Charge ($/kWh) $0.04354 $0.00039 $0.00000 $0.00000 $0.00051 $0.00285 $0.00062 $0.04791 x kWh
+  IEDT ($/kWh) $0.00124 $0.00001 $0.00001 $0.00126 x kWh
+  Customer Charge $15.09 $0.14 $0.00 $0.91 $0.00 $1.05 $0.99 $18.18
+  Standard Metering Service Charge $3.52 $0.03 $0.00 $0.00 $0.25 $0.23 $4.03
+  Distribution Facilities Charge ($/kWh) $0.02712 $0.00024 $0.00000 $0.00000 $0.00189 $0.00178 $0.00062 $0.03165 x kWh
+  IEDT ($/kWh) $0.00124 $0.00001 $0.00009 $0.00134 x kWh
+  Customer Charge $10.57 $0.10 $0.00 $0.91 $0.00 $0.68 $0.69 $12.95
+  Standard Metering Service Charge $3.52 $0.03 $0.00 $0.00 $0.23 $0.23 $4.01
+  Distribution Facilities Charge ($/kWh) $0.02576 $0.00023 $0.00000 $0.00000 $0.00166 $0.00169 $0.00062 $0.02996 x kWh
+  IEDT ($/kWh) $0.00124 $0.00001 $0.00008 $0.00133 x kWh
+Table 1
+Calculations of Delivery Service Charges for Residential Customers (1)
+(1)  X.XXX denotes a charge, and (X.XXX) denotes a credit. 
+(2) Factors are multiplied times the Base Charge with rounding.  Single monthly charges and per kilowatt charges are rounded to two decimal places. Charges per kilowatthour are rounded to five decimal places.
+(3) Rider RCA combines both the: (1) Renewable Energy Resources and Coal Technology Development Assistance Charge; and (2) Energy Assistance Charge for the Supplemental Low-Income Energy Assistance Fund. The latter is calculated using a Base Energy Assistance Charge and a multiplier 
+specific to a customer's delivery class. Rider RCA also charges a Residential Real Time Pricing Program Cost Recovery Charge to all residential customers. For more information, please refer to the complete Rider RCA tariff in the Company's Schedule of Rates for Electric Service.
+(4) All RBAF's are in the order of the delivery classes listed.
+The following table is an instructional tool that provides how each delivery charge is calculated from the Base Charge to the charge shown on the bill. The tariff sheets with the different 
+components follow the table.
+Base Charge
+Residential Single 
+Family Without Electric 
+Space Heat Delivery 
+Class
+Residential Multi Family 
+Without Electric Space 
+Heat Delivery Class
+Residential Single 
+Family With Electric 
+Space Heat Delivery 
+Class
+Type of ChargeDelivery Class Resultant Charge   
+beginning with January 
+2026 bill = A +  B + C + D + 
+E + F + G + H   
+Residential Multi Family 
+With Electric Space 
+Heat Delivery Class

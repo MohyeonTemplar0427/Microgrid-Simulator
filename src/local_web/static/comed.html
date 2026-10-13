@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Microgrid Simulator · ComEd bills</title><link rel="stylesheet" href="/style.css"><script defer src="/comed.js"></script></head>
+<body class="comed-page"><header class="masthead"><a class="brand" href="/"><span class="brand-mark">M</span><span>Microgrid <strong>Simulator</strong></span></a><span class="local-badge">ComEd · local billing studies</span></header><main>
+<div class="intro"><div><p class="eyebrow">ILLINOIS · ELECTRICITY BILLING</p><h1>ComEd residential<br>and commercial bills.</h1><p class="subtitle">Explore fixed-price or hourly supply with the delivery class on your account.</p></div></div>
+<div class="notice">September–October 2026 · one complete calendar month. Results are <strong>subtotals before state excise tax, municipal taxes and franchise fees</strong>. Ordinary import-only accounts; no export settlement or battery optimization.</div>
+<p id="status" role="status">Connecting to the billing engine…</p>
+<div class="workspace"><section class="panel configuration"><div class="panel-heading"><h2>Configure your bill</h2></div><form id="comed-form">
+<fieldset><legend>1. Customer and supply</legend><div class="form-grid">
+<label>Customer type<select name="customer_type"><option value="residential">Residential</option><option value="commercial">Commercial</option></select></label>
+<label>Supply plan<select name="supply"><option value="BES">BES · fixed-price supply</option><option value="BESH">BESH · hourly supply</option></select></label>
+<label>Delivery class<select name="delivery_class"></select></label>
+<label>Billing month<select name="billing_month"><option value="2026-09-01">September 2026</option><option value="2026-10-01">October 2026</option></select></label>
+</div><label>ComEd service confirmation or study assumption<input name="utility_reference" maxlength="500" required></label>
+<p class="hint">Confirm ComEd service and tariff eligibility from the account. A city or PJM location alone does not establish retail utility service.</p>
+<div id="commercial-fields" hidden><div class="form-grid">
+<label>Service voltage<select name="service_voltage"><option value="secondary">Secondary · utility transforms below 2.4 kV</option><option value="primary">Primary · 4 kV to below 69 kV</option><option value="high_voltage">High voltage · 69 kV or above</option></select></label>
+<label>Utility supplies transformation<select name="utility_transformer"><option value="true">Yes</option><option value="false">No · customer transformer</option></select></label>
+<label>Highest demand in previous 12 billing months (kW)<input name="previous_12_month_peak_kw" type="number" min="0" step="any"></label>
+<label>High Voltage only: highest billed MKD in prior 12 months (kW)<input name="previous_12_month_mkd_kw" type="number" min="0" step="any" placeholder="High Voltage class only"></label>
+<label>Highest demand in previous calendar year (kW)<input name="previous_calendar_year_peak_kw" type="number" min="0" step="any"></label>
+<label>Previous-year months at or above 100 kW<input name="previous_year_months_ge_100kw" type="number" min="0" max="12" step="1"></label>
+<label>Utility competitively declared status<select name="competitively_declared"><option value="false">Not competitively declared</option><option value="true">Competitively declared · BESH only</option></select></label>
+<label>Electric space-heating supply subgroup<select name="electric_space_heat"><option value="false">No</option><option value="true">Yes · utility-confirmed subgroup</option></select></label>
+<label>Watt-Hour class eligibility<select name="watt_hour_eligibility"><option value="not_applicable">Not applicable</option><option value="legacy_pre_2022">Legacy account established before 2022</option><option value="dedicated_ev">Separately metered EV charging service</option></select></label>
+</div><label>Commercial eligibility reference<input name="eligibility_source" maxlength="500"></label>
+<p class="hint">Delivery classes use prior 12-month demand: Small ≤100 kW; Medium &gt;100–400; Large &gt;400–1,000; Very Large &gt;1,000–10,000; Extra Large &gt;10,000. Billed demand uses 30-minute averages, weekdays 9 a.m.–6 p.m., excluding NERC holidays. This differs from the overall peak and supply eligibility.</p></div>
+<label class="checkbox"><input name="account_confirmed" type="checkbox" required> I confirm these account facts or label them as hypothetical. One standard, non-exempt meter; no special contract, discount, standby or generation/export settlement.</label>
+</fieldset>
+<fieldset><legend>2. Meter imports</legend><div class="form-grid">
+<label>Load input<select name="load_mode"><option value="constant_example">Synthetic constant import example</option><option value="csv">Upload interval meter CSV</option></select></label>
+<label id="load-kw-label">Example import power (kW)<input name="load_kw" type="number" min="0" max="1000000" step="any" value="1"></label>
+</div><label id="load-file-label" hidden>Meter CSV<input id="load-file" type="file" accept=".csv,text/csv"></label>
+<label>Load source or assumption<input name="load_source" maxlength="500" required></label>
+<p class="hint">CSV columns: timestamp,grid_import_kw. Use ISO interval-start timestamps with Z or a UTC offset. Commercial requires 15- or 30-minute data; residential also accepts hourly data. The file must cover the full selected month in America/Chicago. Values are average meter-import kW.</p>
+</fieldset>
+<fieldset id="hourly-fields" hidden><legend>3. Hourly supply inputs</legend><div class="form-grid">
+<label>Account capacity obligation (kW)<input name="capacity_obligation_kw" type="number" min="0" step="any" value="2"></label>
+<label>Capacity source or assumption<input name="capacity_source" maxlength="500" value="Synthetic account capacity obligation: 2 kW"></label>
+<label>Hourly energy prices<select name="price_mode"><option value="constant_example">Synthetic constant-price example</option><option value="csv">Upload verified hourly price CSV</option></select></label>
+<label id="price-value-label">Example residual LMP ($/MWh)<input name="price_value" type="number" min="-1000000" max="1000000" step="any" value="50"></label>
+</div><label id="price-file-label" hidden>Hourly price CSV<input id="price-file" type="file" accept=".csv,text/csv"></label>
+<label>Hourly price source or assumption<input name="price_source" maxlength="500" value="Synthetic constant hourly residual LMP, not observed PJM data"></label>
+<p class="hint">CSV columns: timestamp,residual_lmp_usd_per_mwh. Exactly one interval-start value per hour. Use PJM real-time residual LMP for the ComEd zone, in $/MWh. Do not use a different hub, day-ahead price or an already-adjusted retail price. Capacity is the account’s billed obligation, not this month’s maximum import.</p>
+<label class="checkbox"><input name="price_confirmed" type="checkbox"> I confirm the price basis and source, or explicitly use the labeled synthetic example.</label>
+</fieldset>
+<button id="run" class="primary" type="submit" disabled>Calculate ComEd subtotal</button>
+</form></section>
+<section class="panel"><div class="panel-heading"><h2>Billing results</h2></div><div id="results" aria-live="polite"><p class="hint">Choose a customer type and enter a complete month of meter imports. Charges, credits and excluded costs will appear here.</p></div><div class="actions"><button id="save" class="secondary" type="button" hidden>Save bill study</button><a id="all-results" hidden>Open saved tables and downloads</a></div><p class="hint">Engine snapshot: <span id="engine">—</span></p><a id="source" target="_blank" rel="noreferrer">Filed ComEd tariff source</a></section></div></main></body></html>

@@ -553,3 +553,47 @@ existing immutable worker and representative OpenDSS replay; historical
 perfect foresight is identified separately from PV self-consumption. This
 local candidate has no complete verified historical tariff year and is not
 automatically promoted. See [PJM candidate scope](PJM_Dominion_Candidate.md).
+
+## ComEd residential and commercial subtotal adapters
+
+`src/billing/comed_residential.py` adds standalone residential BES and BESH
+calculations for the four standard delivery classes. Coverage is September
+and October 2026 utility billing months, initially restricted to complete
+calendar-month import series. BESH requires explicitly identified hourly
+ComEd-zone real-time residual LMPs and a documented account capacity obligation;
+BES never receives a separate wholesale or capacity charge. Decimal billing
+retains signed credits and individually rounded delivery adjustments.
+
+This returns a subtotal with an explicit incomplete-bill status: state excise
+tax, municipal taxes and franchise costs still require verified local rules.
+It is not registered in the generic service-date tariff catalog. The main
+simulation candidate compiles costs from its validated charge lines rather
+than forcing BESH into a flat tariff. See [residential scope and sources](ComEd_Residential_Billing.md).
+
+`src/billing/comed_commercial.py` adds ordinary Watt-Hour, Small, Medium, Large,
+Very Large, Extra Large and single-service-point High Voltage delivery with
+eligible BES/BESH supply. It distinguishes current MKD, all-hours demand, prior
+12-month class history, prior High Voltage MKD, previous-calendar-year rider
+thresholds and account capacity obligation. Unsupported eligibility, months,
+voltage combinations and incomplete intervals fail explicitly.
+
+`src/local_web/comed_study.py` defines schema 9 and the local queued bill-replay
+workflow for both customer types. `/comed.html` accepts source-labeled constant
+examples or complete meter CSVs; BESH requires explicit hourly price and capacity
+inputs. The capability-gated main-browser link and dedicated endpoint require a
+compatible pinned engine. Results use the shared saved-study/table/download
+workflow, with incomplete-bill status and excluded costs visible throughout.
+No PV/battery dispatch or OpenDSS replay is implied. See
+[commercial API and browser scope](ComEd_Commercial_Billing.md).
+
+Schema 10 (`comed_simulation.py`) integrates ComEd with the main location,
+customer, native-load, PV/inverter/weather and ESS workflow. A separate regional
+capability preserves the existing California `services` registry contract.
+`comed_costs.py` derives fixed/energy/demand expressions from authoritative bill
+lines; `dispatch/comed.py` enforces non-export balance, binary storage modes,
+equal terminal energy and fixed account histories/obligations. Every schedule
+is recalculated and cent rounding is reconciled explicitly. Shared
+`build_site_generation` contains weather/PV physics without California carbon
+or retail assumptions. OpenDSS supports truly absent storage, with secondary
+representative-circuit replay; primary/HV service is explicitly unsupported by
+that circuit. See [integration, limits and release procedure](ComEd_Simulation_Integration.md).

@@ -12,6 +12,7 @@ const field = name => form.elements.namedItem(name);
 function carbonSettings() {return {source:'electricity_maps',region:'from_location'};}
 function syncLocationTimezone() {
   if(template?.schema_version===1)return;
+  if(window.comedUI?.active()){field('timezone').value='America/Chicago';return;}
   const lat=field('latitude').value, lon=field('longitude').value;
   const mapping=lat!=='' && lon!=='' && capabilities?.carbon_regions?.find(r=>Number(lat)>=r.south && Number(lat)<=r.north && Number(lon)>=r.west && Number(lon)<=r.east);
   field('timezone').value=mapping?.timezone || '';
@@ -20,7 +21,7 @@ function gridOnly() {return template?.schema_version>=2 && field('pv_choice').va
 function updateEquipmentChoice() {
   const municipal=window.municipalUI?.active();
   field('pv_choice').querySelector('option[value="yes"]').disabled=!!municipal;
-  field('pv_choice').querySelector('option[value="storage"]').disabled=!(municipal||window.socalUI?.active());
+  field('pv_choice').querySelector('option[value="storage"]').disabled=!(municipal||window.socalUI?.active()||window.comedUI?.active());
   if(field('pv_choice').selectedOptions[0]?.disabled)field('pv_choice').value='';
   $('pv-presence').hidden=template?.schema_version===1;
   for(const page of document.querySelectorAll('.wizard-page')) {
@@ -74,7 +75,8 @@ function updateSiteProfile() {
       ? 'Residential choices follow the location and the supported account billing models. Confirm the actual account and meter.'
       : 'Site type and location filter the available services. A map match does not establish account eligibility.';
   for(const opt of field('archetype').options) {
-    opt.hidden=opt.disabled=!!siteCustomerClass() && !['office','retail','school','industrial'].includes(opt.value);
+    const allowed=window.comedUI?.active()&&siteCustomerClass()==='residential'?['residential','multifamily']:['office','retail','school','industrial'];
+    opt.hidden=opt.disabled=!!siteCustomerClass() && !allowed.includes(opt.value);
   }
   const synthetic=field('load_mode').querySelector('option[value="synthetic"]');
   synthetic.disabled=synthetic.hidden=common;
@@ -92,6 +94,7 @@ for(const name of ['site_type','site_subtype'])field(name).addEventListener('cha
 function weatherRequest() { return {latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),year:Number(field("start_date").value.slice(0,4)),timezone:field("timezone").value,timestep_minutes:Number(field("timestep_minutes").value)}; }
 function weatherMatches(meta) { const wanted=weatherRequest(); return meta && Object.keys(wanted).every(k=>meta.request[k]===wanted[k]) && Number(field("end_date").value.slice(0,4))===wanted.year; }
 function updateSiteControls() {
+  window.comedUI?.leaving();
   updateSiteProfile();
   syncLocationTimezone();
   syncExportControls();
@@ -99,6 +102,7 @@ function updateSiteControls() {
   const service=serviceForSelection(utility)?.id || utility;
   for(const opt of field("tariff_id").options) {
     if(!opt.value || opt.value==="__unset__") continue;
+    if(window.comedUI?.active()&&opt.value.startsWith('comed_')){opt.hidden=opt.disabled=false;continue;}
     opt.hidden=template?.schema_version>=2 && capabilities?.tariffs.find(t=>t.id===opt.value)?.service!==service;
     if(template?.schema_version>=2 && capabilities?.tariffs.some(t=>t.id===opt.value))opt.hidden ||= siteCustomerClass()==='residential' ? !opt.value.startsWith('pge_e_elec_residential_tier3_') : opt.value.startsWith('pge_e_elec_residential_tier3_');
     opt.hidden ||= gridOnly() && /_option_[rs]_/.test(opt.value);
@@ -131,6 +135,7 @@ function updateSiteControls() {
   window.socalUI?.sync();
   syncPvBatteryConnection();
   syncWeatherStatus();
+  window.comedUI?.sync();
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
 $("search-location").addEventListener("click",async()=>{
@@ -254,6 +259,7 @@ function option(value, label) { const node=document.createElement("option"); nod
 
 function fillForm(request, lookup=true) {
   if(request.schema_version===7) return;
+  if(request.schema_version===10) {window.comedUI.restore(request);return;}
   if(request.schema_version===6) {window.socalUI.restore(request); return;}
   if(request.schema_version===4) {window.municipalUI.restore(request); return;}
   if(request.schema_version===5) {
@@ -344,7 +350,7 @@ form.addEventListener("submit",async event=>{
   if(!validateWizard()) return;
   $("form-error").hidden=true; $("run-button").disabled=true;
   field('name').value='Untitled study';
-  try { const study=window.socalUI?.active()?await window.socalUI.submit():window.municipalUI?.active()?await window.municipalUI.submit():await api("/api/studies?draft=1",readRequest()); await selectStudy(study.id); await history(); }
+  try { const study=window.comedUI?.active()?await window.comedUI.submit():window.socalUI?.active()?await window.socalUI.submit():window.municipalUI?.active()?await window.municipalUI.submit():await api("/api/studies?draft=1",readRequest()); await selectStudy(study.id); await history(); }
   catch(error) { showError("form-error",error); }
   finally { $("run-button").disabled=false; }
 });
@@ -378,7 +384,9 @@ async function refreshStudy(id) {
     activeStudy=study; $("connection").hidden=true;
     $("run-name").textContent=study.name;
     const runtime=formatRuntime(study.runtime_seconds);
-    $("run-meta").textContent=study.request.schema_version===7
+    $("run-meta").textContent=study.request.schema_version===9
+      ? `${study.request.account.billing_month.slice(0,7)} · ComEd ${study.request.customer_type} ${study.request.account.supply} · America/Chicago · Engine ${study.engine_id.slice(0,12)}`
+      : study.request.schema_version===7
       ? `${study.request.records[0].period_start} → ${study.request.records.at(-1).period_end} · PG&E NBT annual statement replay · Engine ${study.engine_id.slice(0,12)}`
       : `${study.request.start_date} → ${study.request.end_date} · ${study.request.timezone} · ${study.request.timestep_minutes} min · Engine ${study.engine_id.slice(0,12)}`;
     if(runtime) $("run-meta").textContent+=` · Run time ${runtime}`;
@@ -386,12 +394,16 @@ async function refreshStudy(id) {
     $("status-badge").textContent=study.status; $("status-badge").className=`status ${study.status}`;
     $("cancel-study").hidden=!["queued","running"].includes(study.status);
     $("delete-study").hidden=!["completed","failed","cancelled"].includes(study.status);
-    $("reuse").hidden=[7,8].includes(study.request.schema_version);
+    $("reuse").hidden=[7,8,9].includes(study.request.schema_version);
     $("save-study").hidden=!(study.status==="completed" && !study.saved);
     $("save-study").textContent=capabilities?.account_type==="guest" ? "Save result · Sign in" : "Save result";
     $("cancel-study").disabled=false;
-    $("progress").textContent=study.status==="completed"
-      ? (study.request.schema_version===7
+    $("progress").textContent=study.status==="completed" && study.request.schema_version===10
+      ? "ComEd modeled subtotal comparison complete. Taxes and fees listed below are excluded; inspect representative electrical feasibility separately."
+      : study.status==="completed"
+      ? (study.request.schema_version===9
+          ? "ComEd billing subtotal complete. Excluded taxes and fees are not included; no dispatch or network feasibility was evaluated."
+          : study.request.schema_version===7
           ? "Annual statement replay complete. Inspect monthly credits and the true-up adjustment; no interval dispatch was simulated."
           : (study.request.solar_export || [4,5,6].includes(study.request.schema_version))
             ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated."
@@ -414,7 +426,7 @@ async function refreshStudy(id) {
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count","all_intervals_feasible"];
+const summaryColumns=["customer_type","supply","delivery_class","billing_month","import_kwh","subtotal_usd","billed_mkd_kw","overall_30min_peak_kw","complete_bill","scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count","all_intervals_feasible"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -424,11 +436,14 @@ async function loadTable() {
   if (generation!==tableRequest || id!==activeId) return;
   $("run-error").hidden=true;
   $("all-columns").parentElement.hidden=selected!=="comparison";
-  const priority=selected==="comparison" ? summaryColumns : selected.startsWith("ac-") ? ["timestamp","feasible","converged","minimum_voltage_pu","maximum_voltage_pu","setpoint_mismatch","inverter_capability_violation"] : ["timestamp"];
+  const comedColumns=["scenario","subtotal_usd","subtotal_savings_vs_grid_usd","import_kwh","billed_mkd_kw","overall_30min_peak_kw","degradation_cost_usd","all_intervals_feasible","is_complete_bill"];
+  const displayedSummary=activeStudy?.request.schema_version===10?comedColumns:summaryColumns;
+  const priority=selected==="comparison" ? displayedSummary : selected.startsWith("ac-") ? ["timestamp","feasible","converged","minimum_voltage_pu","maximum_voltage_pu","setpoint_mismatch","inverter_capability_violation"] : ["timestamp"];
   const order=[...priority.filter(c=>table.columns.includes(c)),...table.columns.filter(c=>!priority.includes(c))];
-  const indices=order.filter(c=>selected!=="comparison" || $("all-columns").checked || summaryColumns.includes(c)).map(c=>table.columns.indexOf(c));
+  const indices=order.filter(c=>selected!=="comparison" || $("all-columns").checked || displayedSummary.includes(c)).map(c=>table.columns.indexOf(c));
   const element=document.createElement("table"), head=document.createElement("thead"), body=document.createElement("tbody"), header=document.createElement("tr");
-  for (const i of indices) {const cell=document.createElement("th");cell.scope="col";cell.textContent=table.columns[i]==="timestamp"?"Time (UTC)":table.labels[i];cell.title=table.columns[i];header.append(cell);}
+  const comedLabels={scenario:"Scenario",subtotal_usd:"Modeled subtotal ($)",subtotal_savings_vs_grid_usd:"Subtotal savings ($)",import_kwh:"Imports (kWh)",billed_mkd_kw:"Billed MKD (kW)",overall_30min_peak_kw:"All-hours peak (kW)",degradation_cost_usd:"Battery wear ($)",all_intervals_feasible:"AC feasible",is_complete_bill:"Complete bill"};
+  for (const i of indices) {const cell=document.createElement("th");cell.scope="col";cell.textContent=table.columns[i]==="timestamp"?"Time (UTC)":activeStudy?.request.schema_version===10&&selected==="comparison"?(comedLabels[table.columns[i]]||table.labels[i]):table.labels[i];cell.title=table.columns[i];header.append(cell);}
   head.append(header);
   for (const row of table.data) {
     const tr=document.createElement("tr");
@@ -560,6 +575,7 @@ let wizardIndex=0, wizardReached=0;
 async function initialize() {
   try {
     capabilities=await api("/api/capabilities");
+    if($("comed-link"))$("comed-link").hidden=!capabilities.comed || capabilities.hosting_mode!=="local";
     if($("pjm-candidate-link"))$("pjm-candidate-link").hidden=!capabilities.pjm_candidate || capabilities.hosting_mode!=="local";
     document.getElementById("sign-out").hidden=capabilities.account_type!=="member";
     const pendingSave=sessionStorage.getItem("microgrid-pending-save");
@@ -650,17 +666,19 @@ refreshPipeline();
 
 
 function serviceForSelection(selection) {
-  return capabilities?.services?.find(s=>s.id===selection || s.aliases.includes(selection));
+  return [...(capabilities?.services||[]),...(capabilities?.regional_services||[])].find(s=>s.id===selection || s.aliases.includes(selection));
 }
 function resetUtilityOptions(saved="unconfirmed") {
   locationResolution=null;window.municipalUI?.invalidateResolution();window.socalUI?.invalidate();
   field("utility").replaceChildren(option("unconfirmed","Choose a location in Step 1 first"));
-  if(saved && saved!=="unconfirmed")field("utility").append(option(saved,`${serviceForSelection(saved)?.label||saved} · saved choice, awaiting location check`));
+  if(capabilities?.comed_simulation&&capabilities.hosting_mode==='local')field('utility').append(option('comed','ComEd · manual service confirmation required'));
+  if(saved && saved!=="unconfirmed"&&saved!=='comed')field("utility").append(option(saved,`${serviceForSelection(saved)?.label||saved} · saved choice, awaiting location check`));
   field("utility").value=saved||"unconfirmed";
 }
 function setLocationChoices(result,saved="unconfirmed") {
   locationResolution=result;
   const choices=new Map();
+  if(capabilities?.comed_simulation&&capabilities.hosting_mode==='local')choices.set('comed',{label:'ComEd · manual service confirmation required; no mapped match',supported:true});
   const delivery=result.delivery_candidates||[];
   for(const item of delivery){
     const id=item.utility_id;
@@ -715,6 +733,7 @@ function wizardPages() {
     (template?.schema_version>=2 || !page.querySelector(":scope > fieldset[data-site]")) &&
     !(gridOnly() && ['4','6','7'].includes(page.dataset.step)) &&
     !(window.socalUI?.active() && !window.socalUI.batteryEnabled() && ['6','7'].includes(page.dataset.step)) &&
+    !(window.comedUI?.active() && !window.comedUI.batteryEnabled() && page.dataset.step==='7') &&
     !(field('pv_choice').value==='storage' && page.dataset.step==='4'));
 }
 function resetWizard() { wizardIndex=0; wizardReached=0; renderWizard(); }
@@ -746,15 +765,16 @@ function renderWizard(focus=false) {
 }
 function validateWizardPage(page) {
   $("form-error").hidden=true;
-  if(page.dataset.step==='2'&&template?.schema_version>=2&&(!field('utility').value||field('utility').value==='unconfirmed'||!locationResolution)){
+  if(page.dataset.step==='2'&&template?.schema_version>=2&&!window.comedUI?.active()&&(!field('utility').value||field('utility').value==='unconfirmed'||!locationResolution)){
     showError('form-error',new Error('Wait for the Step 1 territory lookup, then choose a supported electricity service.'));return false;
   }
   if(window.municipalUI && !window.municipalUI.validate(page))return false;
   if(window.socalUI && !window.socalUI.validate(page))return false;
+  if(window.comedUI && !window.comedUI.validate(page))return false;
   for(const input of page.querySelectorAll("input,select")) {
     let hidden=false;
     for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.hidden) hidden=true;
-    if(input.disabled || hidden || input.name.startsWith("m_") || input.name.startsWith("sc_")) continue;
+    if(input.disabled || hidden || input.name.startsWith("m_") || input.name.startsWith("sc_") || input.name.startsWith("ce_")) continue;
     const optional=["location_query","orientation_year","ess_basis","ess_charge_override","ess_discharge_override"];
     if(input.type!=="checkbox" && !optional.includes(input.name) && ((input.value==="" && input.name!=="tariff_id") || input.value==="__unset__")) {
       for(let parent=input.parentElement;parent && parent!==page;parent=parent.parentElement) if(parent.tagName==="DETAILS") parent.open=true;
@@ -813,7 +833,7 @@ $("step-next").addEventListener("click",advanceWizard);
 function defaultSettings() { return capabilities.candidate_defaults || capabilities.site_defaults || capabilities.defaults; }
 function startBlankStudy() {
   fillForm(defaultSettings(),false);
-  window.municipalUI?.reset();window.socalUI?.reset();
+  window.municipalUI?.reset();window.socalUI?.reset();window.comedUI?.reset();
   strategiesEdited=false;
   locationGeneration++; clearTimeout(utilityTimer); siteLabel="";
   weatherId=null;weatherMeta=null;annualResult=null;essResolution=null;
@@ -854,11 +874,14 @@ function todayAtSite() {
 function applyStepDefaults(page) {
   const defaults=defaultSettings();
   if(page.contains(field('start_date'))) {
-    const dates=defaultDateRange(field('start_date').value,field('end_date').value,todayAtSite());
+    const dates=window.comedUI?.active()
+      ? {start:field('start_date').value||'2026-09-01',end:field('end_date').value||(field('start_date').value.startsWith('2026-10')?'2026-10-31':'2026-09-30')}
+      : defaultDateRange(field('start_date').value,field('end_date').value,todayAtSite());
     field('start_date').value=dates.start;field('end_date').value=dates.end;
   }
   window.municipalUI?.defaults(page);
   window.socalUI?.defaults(page);
+  window.comedUI?.defaults(page);
   const hadCoordinates=field("latitude").value!=="" || field("longitude").value!=="";
   const residential=siteCustomerClass()==='residential';
   const values={...defaults,...defaults.battery,...defaults.solar,
@@ -867,9 +890,9 @@ function applyStepDefaults(page) {
     latitude:defaults.site?.latitude,longitude:defaults.site?.longitude,location_query:defaults.site?.label,
     utility:"unconfirmed",load_mode:defaults.load?.mode,load_power_kw:defaults.load?.power_kw,
     archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),
-    ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2,pv_battery_connection:"ac_coupled"};
+    ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2,pv_battery_connection:"ac_coupled",...window.comedUI?.mainDefaults()};
   for(const input of page.querySelectorAll("input[name],select[name]")) {
-    if(input.name.startsWith("m_") || input.name.startsWith("sc_") || input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
+    if(input.name.startsWith("m_") || input.name.startsWith("sc_") || input.name.startsWith("ce_") || input.disabled || input.readOnly || input.type==="checkbox" || !["","__unset__"].includes(input.value)) continue;
     if(input.name==="location_query" && hadCoordinates) continue;
     if(Object.hasOwn(values,input.name)) input.value=values[input.name] ?? "";
   }

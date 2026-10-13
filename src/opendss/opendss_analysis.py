@@ -121,7 +121,7 @@ def create_base_circuit(
 
 def add_replay_resources(
         *,
-        battery: Battery,
+        battery: Battery | None,
         pv_capacity_kw: float = 30,
         pv_replay: PVReplayConfiguration | None = None,
 )-> None:
@@ -132,6 +132,10 @@ def add_replay_resources(
             "PV capacity must not be negative."
         )
 
+    if battery is None:
+        add_ac_inverters(replay_inverters(pv_capacity_kw, pv_replay))
+        dss.Solution.Solve()
+        return
     if not isinstance(battery, Battery):
         raise TypeError(
             "battery must be a Battery object."
@@ -185,7 +189,7 @@ def add_replay_resources(
 def replay_dispatch_timeseries(
         dispatch_data: pd.DataFrame,
         *,
-        battery: Battery,
+        battery: Battery | None,
         pv_capacity_kw: float,
         pv_replay: PVReplayConfiguration | None = None,
 )-> pd.DataFrame:
@@ -219,6 +223,9 @@ def replay_dispatch_timeseries(
         raise ValueError("Dispatch power and energy values must be finite.")
     if (dispatch_data["load_kw"] < 0).any():
         raise ValueError("Load power must not be negative.")
+    if battery is None and ((dispatch_data.battery_net_injection_kw.abs() > 1e-6).any()
+                            or (dispatch_data.battery_soc_kWh.abs() > 1e-6).any()):
+        raise ValueError("A replay without storage must have zero battery power and energy.")
     inverters = replay_inverters(pv_capacity_kw, pv_replay)
     # Validate availability for the whole schedule before altering OpenDSS.
     points_by_interval = [inverter_setpoints(row, inverters, pv_replay)
@@ -266,11 +273,11 @@ def replay_dispatch_timeseries(
             pv_rated_kw = pv_capacity_kw,
             pv_replay=pv_replay,
             battery_capacity_kWh=(
-                battery.capacity_kWh
+                battery.capacity_kWh if battery is not None else None
             ),
         )
 
-        measurements = replay_measurements(dispatch_row, points)
+        measurements = replay_measurements(dispatch_row, points, battery_present=battery is not None)
         feeder_metrics = calculate_feeder_metrics()
 
         transformer_metrics = calculate_transformer_metrics()
@@ -420,7 +427,7 @@ def apply_dispatch_operating_point(
         dispatch_row: pd.Series,
         *,
         pv_rated_kw: float = 30.0,
-        battery_capacity_kWh: float = 20.0,
+        battery_capacity_kWh: float | None = 20.0,
         zero_tolerance_kw: float = 1e-6,
         pv_replay: PVReplayConfiguration | None = None,
 )-> None:
@@ -456,6 +463,16 @@ def apply_dispatch_operating_point(
         raise ValueError("Load power must be finite and nonnegative.")
     if not math.isfinite(battery_net_injection_kw):
         raise ValueError("Battery power must be finite.")
+    if battery_capacity_kWh is None:
+        if (not math.isfinite(battery_soc_kWh) or abs(battery_soc_kWh) > 1e-6
+                or abs(battery_net_injection_kw) > zero_tolerance_kw):
+            raise ValueError("Absent storage cannot have power or stored energy.")
+        points = inverter_setpoints(dispatch_row, replay_inverters(pv_rated_kw, pv_replay), pv_replay)
+        dss.Text.Command(f"Edit Load.Building kW={load_kw} kvar={load_reactive_power(dispatch_row)}")
+        for item, available, p, q in points:
+            dss.Text.Command(f"Edit Generator.{item.name} kW={p} kvar={q}")
+        dss.Solution.Solve()
+        return
     # Convex solvers can return tiny residuals at an active energy bound.
     # Clamp only sub-milliwatt-hour roundoff for the replay state, retaining
     # the original dispatch table. Real violations and nonfinite values fail.

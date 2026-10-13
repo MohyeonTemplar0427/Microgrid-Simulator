@@ -128,11 +128,11 @@ def terminal_power(element):
     return sum(values[::2]), sum(values[1::2])
 
 
-def replay_measurements(row, points, tolerance_kw=0.01):
+def replay_measurements(row, points, tolerance_kw=0.01, *, battery_present=True):
     load_p, load_q = terminal_power("Load.Building")
     requested_load = float(row["load_kw"])
     requested_q = load_reactive_power(row)
-    battery_p, _ = terminal_power("Storage.Battery")
+    battery_p = terminal_power("Storage.Battery")[0] if battery_present else 0.
     result = {
         "load_requested_kvar": requested_q,
         "load_actual_kw": load_p, "load_actual_kvar": load_q,

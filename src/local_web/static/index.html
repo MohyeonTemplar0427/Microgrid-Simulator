@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Microgrid Simulator · Local studies</title><link href="/style.css" rel="stylesheet"/><script defer="" src="/app.js"></script><script defer="" src="/municipal.js"></script><script defer="" src="/socal.js"></script></head>
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Microgrid Simulator · Local studies</title><link href="/style.css" rel="stylesheet"/><script defer="" src="/app.js"></script><script defer="" src="/municipal.js"></script><script defer="" src="/socal.js"></script><script defer src="/comed_simulation.js"></script></head>
 <body>
 <header class="masthead"><a aria-label="Microgrid Simulator home" class="brand" href="/"><span class="brand-mark">M</span><span>Microgrid <strong>Simulator</strong></span></a><span class="local-badge"><span class="dot"></span><span id="workspace-label">Local workspace</span></span></header>
 <main>
 <section id="auth-panel" class="panel" hidden><h2>Your private study workspace</h2><p>Sign in to create studies and access your saved results.</p><a href="/auth/login">Sign in</a></section>
 <button id="sign-out" class="secondary" type="button" hidden>Sign out</button>
 <div class="intro"><div><p class="eyebrow">STUDY WORKSPACE</p><h1>From energy inputs<br/>to operating decisions.</h1><p class="subtitle">Compare battery strategies, operating costs, and network feasibility.</p></div><div class="intro-note"><span class="note-number">01</span><p>Configure a study.<br/>Run your engine.<br/>Explore the results.</p></div></div>
+<p id="comed-link" hidden><a href="/comed.html">ComEd · residential and commercial billing</a></p>
 <p id="pjm-candidate-link" hidden><a href="/pjm.html">PJM · Dominion Virginia candidate study</a></p>
 <p class="hint" id="pipeline-status" role="status">Connecting to simulation service…</p><p class="hint" id="usage-status" role="status" hidden></p>
 <div class="notice" hidden="" id="connection" role="status"></div>

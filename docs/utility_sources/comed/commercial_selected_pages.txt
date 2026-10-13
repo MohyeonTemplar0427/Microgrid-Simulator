@@ -1,0 +1,854 @@
+ORIGINAL PDF PAGE 22
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 5th Revised Sheet No. 19 
+Edison Company  (Canceling 4th Revised Sheet No. 19) 
+ 
+RATE BES 
+BASIC ELECTRIC SERVICE 
+ 
+(Continued on Sheet No. 20) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  August 29, 2025 
+August 21, 2025.  Issued pursuant to the   Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order on Rehearing Post Office Box 805379 
+dated July 17, 2025, in Docket No. 24-0378.  Chicago, Illinois 60680-5379 
+Asterisk (*) indicates change.   
+APPLICABILITY. 
+This tariff is applicable to any retail customer (a) using electric service for which the Company is providing 
+bundled electric service; (b) to which the Residential Customer Group, Watt-Hour Customer Group, 
+Demand Customer Group, Dusk to Dawn Lighting Customer Group, or General Lighting Customer Group, 
+as defined in the Supply Groups section of the Retail Customer Categorizations part of the General Terms 
+and Conditions of the Company's Schedule of Rates, is applicable, or would be applicable based upon the 
+Company’s judgment with respect to such retail customer’s expected electric power and energy 
+requirements; and (c) that meets the prerequisites of service, as applicable, provided in the Prerequisites 
+of Service section of this tariff. 
+ 
+ Service hereunder is not applicable to a retail customer to which the Competitively Declared Customer 
+Group is applicable. 
+ 
+* Notwithstanding the aforementioned provisions of this Applicability section, service hereunder is not 
+applicable to any retail customer that elects to be served, and during such time that service is taken, under 
+Rate BESH - Basic Electric Service Hourly Pricing (Rate BESH), Rate RDS - Retail Delivery Service (Rate 
+RDS), or Rate BEST – Basic Electric Service Time of Use Pricing (Rate BEST). 
+ 
+DEFINITIONS. 
+Definitions of terms used in this tariff are provided in the Definitions part of the General Terms and 
+Conditions of the Company’s Schedule of Rates. 
+ 
+PREREQUISITES OF SERVICE. 
+For a situation in which a retail customer requesting service hereunder is currently receiving service from 
+the Company under a different tariff, such retail customer must fulfill all obligations, except timely payment 
+for service, for which it is responsible under such other tariff prior to terminating service under such other 
+tariff and commencing service hereunder. 
+ 
+NATURE OF SERVICE. 
+ Bundled Electric Service 
+ Bundled electric service is the provision to the retail customer of electric power and energy by the 
+Company in accordance with the terms of this Bundled Electric Service subsection.  Such provision 
+includes (1) procurement of all the component services the Company requires to meet retail customer 
+instantaneous electric power and energy requirements at any given time under the Company’s tariffs, 
+applicable tariffs on file with the Federal Energy Regulatory Commission (FERC), and other applicable 
+law, including, without limitation, all required electric energy, energy to satisfy losses, electric 
+generation capacity, volumetric risk management, transmission services, ancillary transmission 
+services, administrative services, and other necessary services procured by the Company; (2) delivery 
+of the electric power and energy via the Company’s distribution facilities, including the provision of 
+reactive power and voltage support using distribution facilities, at the rates and subject to the terms, 
+conditions, and limitations provided in the Company’s tariffs on file with the Illinois Commerce 
+Commission (ICC); and (3) the Company’s standard metering and billing that are necessary to permit 
+eligible retail customers to receive service hereunder as permitted by law and by tariffs approved by 
+the ICC and the FERC.  No component of bundled electric service may be provided to a retail 
+customer by a third party, and components of this bundled electric service are not available separately 
+from the Company under this tariff. 
+ 
+
+ORIGINAL PDF PAGE 25
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 2nd Revised Sheet No. 20.2 
+Edison Company  (Canceling 1st Revised Sheet No. 20.2) 
+ 
+RATE BES 
+BASIC ELECTRIC SERVICE 
+ 
+(Continued from Sheet No. 20.1) 
+ 
+(Continued on Sheet No. 21) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  February 6, 2025 
+January 30, 2025.  Filed pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+January 16, 2025, in Docket No. 24-0378.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+MONTHLY CHARGES (CONTINUED). 
+Distribution Facilities Charge 
+The Distribution Facilities Charge provided on a $/kWh basis is applicable to the kWhs provided to the 
+retail customer during the monthly billing period and is equal to the applicable Distribution Facilities 
+Charge listed in the Delivery Service Charges Informational Sheets of the Company’s Schedule of 
+Rates for the delivery class applicable to the retail customer for the monthly billing period.  
+ 
+* Notwithstanding the above, beginning with the January 2026 monthly billing period, for a residential 
+retail customer electing to take service under time of use (TOU) differentiated Distribution Facilities 
+Charges, such residential retail customer’s Distribution Facilities Charges are provided on a $/kWh 
+basis and differentiated by four TOU periods (shown in Central Prevailing Time, CPT): the Morning 
+Period from 6:00 a.m. to 1:00 p.m., the Mid-Day Peak Period from 1:00 p.m. to 7:00 p.m., the Evening 
+Period from 7:00 p.m. to 9:00 p.m., and the Overnight Period from 9:00 p.m. to 6:00 a.m. of the 
+subsequent day.  The TOU Distribution Facilities Charges are listed in the Time of Use Distribution 
+Facilities Charges Informational Sheets of the Company’s Schedule of Rates for the delivery class 
+applicable to such residential retail customer for the monthly billing period.  Each TOU Distribution 
+Facilities Charge for the monthly billing period is applicable to the kWhs provided to the residential 
+retail customer during the corresponding TOU period of the monthly billing period. 
+ 
+The Secondary Voltage Distribution Facilities Charge provided on a $/kW basis is applicable to the 
+portion of the Maximum Kilowatts Delivered (MKD) established by the retail customer during the 
+monthly billing period served by electric conductors entering the retail customer’s premises below 
+69,000 volts with transformation to below 2,400 volts provided by the Company, as applicable, and is 
+equal to the applicable Secondary Voltage Distribution Facilities Charge listed in the Delivery Service 
+Charges Informational Sheets of the Company’s Schedule of Rates for the delivery class applicable to 
+the retail customer for the monthly billing period.   
+ 
+The Primary Voltage Distribution Facilities Charge provided on a $/kW basis is applicable to the 
+portion of the MKD established by the retail customer during the monthly billing period served by 
+electric conductors entering the retail customer’s premises at or above 4,000 volts but below 69,000 
+volts with either no transformation provided by the Company or transformation to 2,400 volts or above 
+provided by the Company, as applicable, and is equal to the applicable Primary Voltage Distribution 
+Facilities Charge listed in the Delivery Service Charges Informational Sheets of the Company’s 
+Schedule of Rates for the delivery class applicable to the retail customer for the monthly billing period.    
+ 
+The High Voltage Distribution Facilities Charge provided on a $/kW basis is applicable to the portion of 
+the MKD established by the retail customer during the monthly billing period served by electric 
+conductors entering the retail customer’s premises at or above 69,000 volts, as applicable, and is 
+equal to the applicable High Voltage Distribution Facilities Charge listed in the Delivery Service 
+Charges Informational Sheets of the Company’s Schedule of Rates applicable to the retail customer 
+for the monthly billing period. 
+ 
+The Distribution Facilities Charge provided on a $/fixture basis is applicable to the number of 
+corresponding fixture units in place for the retail customer at the beginning of the monthly billing period 
+and is equal to the applicable Distribution Facilities Charge listed in the Delivery Service Charges 
+Informational Sheets of the Company’s Schedule of Rates for such corresponding fixture unit.  
+
+ORIGINAL PDF PAGE 26
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 6th Revised Sheet No. 21 
+Edison Company  (Canceling 4th Revised Sheet No. 21) 
+ 
+RATE BES 
+BASIC ELECTRIC SERVICE 
+ 
+*  (Continued from Sheet No. 20.2) 
+ 
+(Continued on Sheet No. 22) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  June 20, 2012 
+June 6, 2012.  Issued pursuant to the  Issued by A. R. Pramaggiore, President and CEO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+May 29, 2012, in Docket No. 11-0721.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+* MONTHLY CHARGES (CONTINUED). 
+Transformer Charge 
+The Primary Voltage Transformer Charge is applicable to the portion of the MKD established by the 
+retail customer during the monthly billing period served by electric conductors entering the retail 
+customer’s premises at or above 4,000 volts but below 69,000 volts with transformation to 2,400 volts 
+or above provided by the Company, as applicable, and is equal to the applicable Primary Voltage 
+Transformer Charge listed in the Delivery Service Charges Informational Sheets of the Company’s 
+Schedule of Rates for the delivery class applicable to the retail customer for the monthly billing period.  
+ 
+The High Voltage Transformer Charge is applicable to the portion of the MKD established by the retail 
+customer during the monthly billing period served by electric conductors entering the retail customer’s 
+premises at or above 69,000 volts with transformation provided by the Company, as applicable, and is 
+equal to the applicable High Voltage Transformer Charge listed in the Delivery Service Charges 
+Informational Sheets of the Company’s Schedule of Rates for the delivery class applicable to the retail 
+customer for the monthly billing period. 
+ 
+Illinois Electricity Distribution Tax Charge 
+The Illinois Electricity Distribution Tax Charge (IEDT) provided on a $/kWh basis is applicable to the 
+kWhs provided to the retail customer during the monthly billing period and is equal to the applicable 
+IEDT listed in the Delivery Service Charges Informational Sheets of the Company’s Schedule of Rates 
+for the delivery class applicable to the retail customer for the monthly billing period.  
+ 
+
+ORIGINAL PDF PAGE 56
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 5th Revised Sheet No. 32 
+Edison Company (Canceling 3rd Revised Sheet No. 32) 
+ 
+RATE BESH 
+BASIC ELECTRIC SERVICE HOURLY PRICING 
+ 
+(Continued from Sheet No. 31) 
+(Continued on Sheet No. 32.1) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  February 13, 2014 
+February 10, 2014.  Issued pursuant to the  Issued by A. R. Pramaggiore, President and CEO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+February 5, 2014, in Docket No. 13-0552.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+NATURE OF SERVICE (CONTINUED). 
+Service and Facilities (Continued) 
+* In the provision of electric service hereunder, the Company furnishes, installs, owns, operates, 
+replaces, and maintains meter-related facilities adequate to measure the kilowatt-hours (kWhs) 
+delivered to the retail customer and the rate at which such electricity is delivered to such retail 
+customer in each half hour in the monthly billing period.  To the extent that such meter -related facilities 
+are larger, more, or different from facilities provided in a standard metering installation, such meter -
+related facilities are provided in accordance with the provisions for providing nonstandard services and 
+facilities.  To the extent that such meter-related facilities are designated as non AMI metering, such 
+meter-related facilities are provided in accordance with the provisions for providing non AMI metering, 
+as applicable.  To the extent that such meter-related facilities are not installed at the retail customer's 
+premises when service hereunder commences, the Company and such retail customer must 
+reasonably cooperate to ensure that such meter-related facilities are installed and in operating 
+condition in a timely manner.  Notwithstanding the previous provisions of this paragraph, the Company 
+may elect to provide no metering installation in the provision of electric service hereunder to a retail 
+customer because such retail customer uses electric service on a continuous or regularly scheduled 
+basis. 
+ 
+ MONTHLY CHARGES. 
+A retail customer served hereunder is subject to each charge described in this Monthly Charges section 
+for each monthly billing period. 
+ 
+Customer Charge 
+The Customer Charge is applicable to the retail customer for the monthly billing period and is equal to 
+the applicable Customer Charge listed in the Delivery Service Charges Informational Sheets of the 
+Company’s Schedule of Rates for the delivery class applicable to the retail customer for the monthly 
+billing period.  Notwithstanding the previous provisions of this Customer Charge subsection, there is 
+no Customer Charge for the Fixture-Included Lighting Delivery Class, Dusk to Dawn Lighting Delivery 
+Class, or General Lighting Delivery Class. 
+ 
+Standard Metering Service Charge 
+The Standard Metering Service Charge provided on a $/kWh basis is applicable to the kWhs provided 
+to the retail customer during the monthly billing period and is equal to the applicable Standard 
+Metering Service Charge listed in the Delivery Service Charges Informational Sheets of the 
+Company’s Schedule of Rates for the delivery class applicable to the retail customer for the monthly 
+billing period.  Otherwise, the Standard Metering Service Charge is applicable to the retail customer 
+for the monthly billing period and is equal to the applicable Standard Metering Service Charge listed in 
+the Delivery Service Charges Informational Sheets of the Company’s Schedule of Rates for the 
+delivery class applicable to the retail customer for the monthly billing period.  Notwithstanding the 
+previous provisions of this paragraph, there is no Standard Metering Service Charge for the Fixture-
+Included Lighting Delivery Class. 
+ 
+ 
+ 
+
+ORIGINAL PDF PAGE 57
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 2nd Revised Sheet No. 32.1 
+Edison Company (Canceling 1st Revised Sheet No. 32.1) 
+ 
+RATE BESH 
+BASIC ELECTRIC SERVICE HOURLY PRICING 
+ 
+ (Continued from Sheet No. 32) 
+(Continued on Sheet No. 32.2) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  February 6, 2025 
+January 30, 2025.  Filed pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+January 16, 2025, in Docket No. 24-0378.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+MONTHLY CHARGES (CONTINUED). 
+Distribution Facilities Charge 
+The Distribution Facilities Charge provided on a $/kWh basis is applicable to the kWhs provided to the 
+retail customer during the monthly billing period and is equal to the applicable Distribution Facilities 
+Charge listed in the Delivery Service Charges Informational Sheets of the Company’s Schedule of 
+Rates for the delivery class applicable to the retail customer for the monthly billing period.  
+ 
+* Notwithstanding the above, beginning with the January 2026 monthly billing period, for a residential 
+retail customer electing to take service under time of use (TOU) differentiated Distribution Facilities 
+Charges, such residential retail customer’s Distribution Facilities Charges are provided on a $/kWh 
+basis and differentiated by four TOU periods (shown in Central Prevailing Time, CPT): the Morning 
+Period from 6:00 a.m. to 1:00 p.m., the Mid-Day Peak Period from 1:00 p.m. to 7:00 p.m., the Evening 
+Period from 7:00 p.m. to 9:00 p.m., and the Overnight Period from 9:00 p.m. to 6:00 a.m. of the 
+subsequent day.  The TOU Distribution Facilities Charges are listed in the Time of Use Distribution 
+Facilities Charges Informational Sheets of the Company’s Schedule of Rates for the delivery class 
+applicable to such residential retail customer for the monthly billing period.  Each TOU Distribution 
+Facilities Charge for the monthly billing period is applicable to the kWhs provided to the residential 
+retail customer during the corresponding TOU period of the monthly billing period. 
+ 
+The Secondary Voltage Distribution Facilities Charge provided on a $/kW basis is applicable to the 
+portion of the Maximum Kilowatts Delivered (MKD) established by the retail customer during the 
+monthly billing period served by electric conductors entering the retail customer’s premises below 
+69,000 volts with transformation to below 2,400 volts provided by the Company, as applicable, and is 
+equal to the applicable Secondary Voltage Distribution Facilities Charge listed in the Delivery Service 
+Charges Informational Sheets of the Company’s Schedule of Rates for the delivery class applicable to 
+the retail customer for the monthly billing period. 
+ 
+The Primary Voltage Distribution Facilities Charge provided on a $/kW basis is applicable to the 
+portion of the MKD established by the retail customer during the monthly billing period served by 
+electric conductors entering the retail customer’s premises at or above 4,000 volts but below 69,000 
+volts with either no transformation provided by the Company or transformation to 2,400 volts or above 
+provided by the Company, as applicable, and is equal to the applicable Primary Voltage Distribution 
+Facilities Charge listed in the Delivery Service Charges Informational Sheets of the Company’s 
+Schedule of Rates for the delivery class applicable to the retail customer for the monthly billing period.    
+ 
+The High Voltage Distribution Facilities Charge provided on a $/kW basis is applicable to the portion of 
+the MKD established by the retail customer during the monthly billing period served by electric 
+conductors entering the retail customer’s premises at or above 69,000 volts, as applicable, and is 
+equal to the applicable High Voltage Distribution Facilities Charge listed in the Delivery Service 
+Charges Informational Sheets of the Company’s Schedule of Rates applicable to the retail customer 
+for the monthly billing period. 
+ 
+The Distribution Facilities Charge provided on a $/fixture basis is applicable to the number of 
+corresponding fixture units in place for the retail customer at the beginning of the monthly billing period 
+and is equal to the applicable Distribution Facilities Charge listed in the Delivery Service Charges 
+Informational Sheets of the Company’s Schedule of Rates for such corresponding fixture unit.  
+ 
+
+ORIGINAL PDF PAGE 58
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY  
+Edison Company 1st Revised Sheet No. 32.2 
+ 
+RATE BESH 
+BASIC ELECTRIC SERVICE HOURLY PRICING 
+ 
+ (Continued from Sheet No. 32.1) 
+(Continued on Sheet No. 33) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  June 20, 2012 
+June 6, 2012.  Issued pursuant to the  Issued by A. R. Pramaggiore, President and CEO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+May 29, 2012, in Docket No. 11-0721.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+* MONTHLY CHARGES (CONTINUED). 
+Transformer Charge 
+The Primary Voltage Transformer Charge is applicable to the portion of the MKD established by the 
+retail customer during the monthly billing period served by electric conductors entering the retail 
+customer’s premises at or above 4,000 volts but below 69,000 volts with transformation to 2,400 volts 
+or above provided by the Company, as applicable, and is equal to the applicable Primary Voltage 
+Transformer Charge listed in the Delivery Service Charges Informational Sheets of the Company’s 
+Schedule of Rates for the delivery class applicable to the retail customer for the monthly billing period.  
+ 
+The High Voltage Transformer Charge is applicable to the portion of the MKD established by the retail 
+customer during the monthly billing period served by electric conductors entering the retail customer’s 
+premises at or above 69,000 volts with transformation provided by the Company, as applicable, and is 
+equal to the applicable High Voltage Transformer Charge listed in the Delivery Service Charges 
+Informational Sheets of the Company’s Schedule of Rates for the delivery class applicable to the retail 
+customer for the monthly billing period. 
+ 
+Illinois Electricity Distribution Tax Charge 
+The Illinois Electricity Distribution Tax Charge (IEDT) provided on a $/kWh basis is applicable to the 
+kWhs provided to the retail customer during the monthly billing period and is equal to the applicable 
+IEDT listed in the Delivery Service Charges Informational Sheets of the Company’s Schedule of Rates 
+for the delivery class applicable to the retail customer for the monthly billing period.  
+ 
+ 
+
+ORIGINAL PDF PAGE 174
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Sheet No. 129.1 
+Edison Company  (Canceling 2nd Revised Sheet No. 129.1) 
+ 
+GENERAL TERMS AND CONDITIONS 
+ 
+ (Continued from Sheet No. 129) 
+(Continued on Sheet No. 130) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  March 31, 2026 
+March 30, 2026. Filed pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+March 19, 2025, in Docket Nos. 25-0677/25-0679 (Consol.).  Chicago, Illinois  60680-5379 
+ 
+ 
+DEFINITIONS (CONTINUED) 
+Lighting Retail Customer 
+Lighting retail customer means a retail customer in the lighting sector, as described in the Sectors section 
+of the Retail Customer Categorizations part of these General Terms and Conditions.  
+ 
+Meter Exchange Date 
+Meter Exchange Date means the date of a meter’s removal from or installation at a retail customer’s 
+premises to implement a switch in providers of metering service. 
+ 
+ Metering Service 
+Metering Service means the sixteen (16) processes described in the Metering Services section of the 
+Nature of Service part of Rate MSPS, and in accordance with the provisions of 83 Illinois Administrative 
+Code Section 460.15.  
+ 
+MKD 
+MKD means Maximum Kilowatts Delivered.  A retail customer's MKD for a monthly billing period is the 
+highest thirty (30) minute demand for electric power and energy established by the retail customer and 
+delivered by the Company during such monthly billing period during the periods from 9:00 A.M. until 
+6:00 P.M. on Monday through Friday, except on days designated as holidays by the North American 
+Electric Reliability Corporation (NERC). 
+ 
+Monthly Billing Cycle 
+ With respect to any retail customer (a) to which the AMI Metering subsection of the Standard Metering 
+section of the Metering part of these General Terms and Conditions is not applicable or (b) (i) to which 
+such AMI Metering subsection is applicable and (ii) for which non AMI metering is provided, the monthly 
+billing cycle means the monthly periods associated with a set of monthly meter reading dates.  The 
+Company arranges the accounts of its retail customers into one of twenty-one (21) separate meter reading 
+groups it utilizes to read electric meters on a monthly basis. 
+ 
+ With respect to any retail customer (a) to which such AMI Metering subsection is applicable and (b) for 
+which an AMI metering installation is provided, the monthly billing cycle means the monthly periods 
+associated with a set of monthly meter usage data acquisition dates to compile meter usage data for 
+regularly scheduled electric service billing purposes.  The Company arranges the accounts of its retail 
+customers into one of twenty-one (21) separate meter usage data acquisition groups it utilizes to compile 
+electric meter usage data for monthly billing purposes. 
+ 
+Monthly Billing Period 
+ Monthly billing period means the period of approximately thirty (30) days during which the Company 
+provides electric service to a retail customer and at the end of which the Company compiles the meter 
+usage data for the electric service provided to the retail customer and assesses charges for such electric 
+service.  The start and end of a retail customer's monthly billing period are determined by the date that the 
+data from the electric meter(s) at the retail customer's premises is (are) read or compiled for regularly 
+scheduled electric service billing purposes. 
+ 
+
+ORIGINAL PDF PAGE 181
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Sheet No. 136 
+Edison Company  (Canceling 2nd Revised Sheet No. 136) 
+ 
+GENERAL TERMS AND CONDITIONS 
+ 
+(Continued from Sheet No. 135) 
+(Continued on Sheet No. 137) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  September 23, 2023  
+September 8, 2023.    Issued by T. R. Donnelly, President and COO 
+Issued pursuant to the Order dated  Post Office Box 805379 
+March 23, 2023, in Docket No. 22-0432.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+ 
+RETAIL CUSTOMER CATEGORIZATIONS (CONTINUED) 
+ 
+DELIVERY CLASSES (CONTINUED). 
+* Watt-Hour Delivery Class 
+Watt-Hour Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector, as described in the Sectors section of this Retail Customer Categorizations part, 
+using electric service for nonresidential purposes, and either (a) for which no metering equipment or 
+only watt-hour metering equipment is installed at the retail customer's premises that generally uses 
+less than 2,000 kWhs during a monthly billing period, or (b) a separately metered delivery service point 
+for the provision of electric vehicle charging services and electric vehicle charging ancillary support 
+equipment including, but not necessarily limited to, site safety, immediate site lighting, security, 
+customer interface and transaction processing, networking, equipment heating and cooling, and co-
+located energy storage and solar systems in support of electric vehicle charging station operation and 
+load optimization.  Customer accounts for separately metered delivery service points for electric 
+vehicle charging services will be eligible for service in the Watt-Hour Delivery Service Class beginning 
+no later than the October 2023 Monthly Billing Period through a period not ending sooner than the 
+September 2033 Monthly Billing Period.  Notwithstanding the previous provisions, beginning with the 
+January 2022 Monthly Billing Period no new metered customer accounts other than electric vehicle 
+charging will be eligible for service in the Watt-Hour Delivery Class.  
+ 
+Small Load Delivery Class 
+Small Load Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, and for which (a) the voltage 
+of the electricity entering the retail customer’s premises is below 69,000 volts, (b) demand metering is 
+installed at the retail customer’s premises, and (c) the highest thirty (30) minute demand for electricity 
+established by the retail customer did not exceed 100 kW during the most recent twelve (12) 
+consecutive monthly billing periods prior to the current monthly billing period.  
+ 
+Medium Load Delivery Class 
+Medium Load Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, and for which (a) the voltage 
+of the electricity entering the retail customer’s premises is below 69,000 volts, (b) demand metering is 
+installed at the retail customer’s premises, and (c) the highest thirty (30) minute demand established 
+by the retail customer was more than 100 kW but did not exceed 400 kW during the most recent 
+twelve (12) consecutive monthly billing periods prior to the current monthly billing period.  
+ 
+Large Load Delivery Class 
+Large Load Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, and for which (a) the voltage 
+of the electricity entering the retail customer’s premises is below 69,000 volts, (b) demand metering is 
+installed at the retail customer’s premises, and (c) the highest thirty (30) minute demand established 
+by the retail customer was more than 400 kW but did not exceed 1,000 kW during the most recent 
+twelve (12) consecutive monthly billing periods prior to the current monthly billing period.  
+ 
+ 
+ 
+
+ORIGINAL PDF PAGE 182
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 
+Edison Company  Original Sheet No. 137 
+ 
+GENERAL TERMS AND CONDITIONS 
+ 
+(Continued from Sheet No. 136) 
+(Continued on Sheet No. 138) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  January 15, 2009 
+December 16, 2008.  Issued pursuant to the  Issued by A. R. Pramaggiore, Exec. Vice President 
+Illinois Commerce Commission Orders  Post Office Box 805379 
+entered July 26, 2006, in Docket No. 05-0597  Chicago, Illinois  60680-5379 
+and August 15, 2007, in Docket No. 07-0432. 
+ 
+RETAIL CUSTOMER CATEGORIZATIONS (CONTINUED) 
+ 
+DELIVERY CLASSES (CONTINUED). 
+Very Large Load Delivery Class 
+Very Large Load Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, and for which (a) the voltage 
+of the electricity entering the retail customer’s premises is below 69,000 volts, (b) demand metering is 
+installed at the retail customer’s premises, and (c) the highest thirty (30) minute demand established 
+by the retail customer was more than 1,000 kW but did not exceed 10,000 kW during the most recent 
+twelve (12) consecutive monthly billing periods prior to the current monthly billing period.  
+ 
+Extra Large Load Delivery Class 
+Extra Large Load Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, and for which (a) the voltage 
+of the electricity entering the retail customer’s premises is below 69,000 volts, (b) demand metering is 
+installed at the retail customer’s premises, and (c) the highest thirty (30) minute demand established 
+by the retail customer was more than 10,000 kW during the most recent twelve (12) consecutive 
+monthly billing periods prior to the current monthly billing period. 
+ 
+High Voltage Delivery Class 
+High Voltage Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, and for which the voltage of 
+the electricity entering the retail customer’s premises is at or above 69,000 volts.  
+ 
+Railroad Delivery Class 
+Railroad Delivery Class means the delivery class applicable to any retail customer in the 
+nonresidential sector using electric service for traction power in the operation of trains and to  
+which either (a) the Electric Service Agreement Between Commonwealth Edison Company and 
+Northeast Illinois Regional Commuter Railroad Corporation dated June 1, 1986, as amended 
+(NIRCRC Agreement), or (b) the Electric Service Agreement Between Commonwealth Edison 
+Company and Chicago Transit Authority, dated August 1, 1958, as amended (CTA Agreement),  
+is applicable. 
+ 
+ 
+
+ORIGINAL PDF PAGE 183
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 2nd Revised Sheet No. 138 
+Edison Company  (Canceling Original Sheet No. 138) 
+ 
+GENERAL TERMS AND CONDITIONS 
+ 
+(Continued from Sheet No. 137) 
+(Continued on Sheet No. 139) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  June 1, 2011 
+May 25, 2011.  Issued pursuant to the  Issued by A. R. Pramaggiore, President 
+Illinois Commerce Commission Order entered Post Office Box 805379 
+May 24, 2011, in Docket No. 10-0467.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+RETAIL CUSTOMER CATEGORIZATIONS (CONTINUED) 
+ 
+DELIVERY CLASSES (CONTINUED). 
+Fixture-Included Lighting Delivery Class 
+Fixture-Included Lighting Delivery Class means the delivery class applicable to any retail customer in 
+the lighting sector, as described in the Sectors section of this Retail Customer Categorizations part,  
+(a) located outside the City of Chicago, (b) using electric service for a public street lighting system that 
+operates on a dusk to dawn basis, and (c) for which the Company furnishes, installs, owns, operates, 
+and maintains the facilities required to provide such dusk to dawn lighting.  The Fixture- Included 
+Lighting Delivery Class is also applicable to the portion of electric service provided to a retail customer 
+in the residential sector or nonresidential sector, (1) located outside the City of Chicago, (2) using such 
+portion for private, outdoor, dusk to dawn lighting purposes, and (3) for which the Company furnishes, 
+installs, owns, operates, and maintains the facilities required to provide such dusk to dawn lighting.  
+ 
+Dusk to Dawn Lighting Delivery Class 
+* Dusk to Dawn Lighting Delivery Class means the delivery class applicable to any retail customer in the 
+lighting sector (a) using electric service for a lighting system that operates during hours that occur 
+between dusk and dawn, and (b) for which the Fixture-Included Lighting Delivery Class is not 
+applicable. 
+ 
+General Lighting Delivery Class 
+* General Lighting Delivery Class means the delivery class applicable to any retail customer in the 
+lighting sector using electric service for a lighting system other than a lighting system that operates 
+during hours that occur between dusk and dawn. 
+ 
+With respect to the Small Load Delivery Class, Medium Load Delivery Class, Large Load Delivery Class, 
+Very Large Load Delivery Class, and Extra Large Load Delivery Class for a situation in which no historical 
+electric power and energy consumption data exist for a retail customer, the Company determines the 
+delivery class applicable to such retail customer based upon the highest thirty (30) minute demand 
+expected, in the Company's judgment, to be established by the retail customer.  
+ 
+ 
+ 
+
+ORIGINAL PDF PAGE 184
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 5th Revised Sheet No. 139 
+Edison Company  (Canceling 4th Revised Sheet No. 139) 
+ 
+GENERAL TERMS AND CONDITIONS 
+ 
+(Continued from Sheet No. 138) 
+(Continued on Sheet No. 140) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  September 23, 2023  
+September 8, 2023.    Issued by T. R. Donnelly, President and COO 
+Issued pursuant to the Order dated  Post Office Box 805379 
+March 23, 2023, in Docket No. 22-0432.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+ 
+ 
+RETAIL CUSTOMER CATEGORIZATIONS (CONTINUED) 
+ 
+ SUPPLY GROUPS. 
+Customer supply groups are designations for retail customers located in the Company’s service territory 
+so that retail customers can be categorized for the purposes of computing charges for the procurement of 
+electric power and energy and applying such charges to retail customers.  The following customer supply 
+groups are defined for such purposes: 
+ 
+Residential Customer Group 
+Residential Customer Group means the customer supply group applicable to any retail customer in the 
+residential sector and using electric service for residential purposes.   
+ 
+ Watt-Hour Customer Group 
+Watt-Hour Customer Group means the customer supply group applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, and for which no metering 
+equipment or only watt-hour metering equipment is installed at the retail customer’s premises.  
+Generally, a retail customer in this customer supply group uses less than 2,000 kWhs  during a 
+monthly billing period.  Notwithstanding the previous provisions, beginning with the January 2022 
+Monthly Billing Period no new metered customer accounts will be eligible for service in the Watt -Hour 
+Customer Group. 
+ 
+* Demand Customer Group 
+Demand Customer Group means the customer supply group applicable to any retail customer in the 
+nonresidential sector, using electric service for nonresidential purposes, including retail customers in 
+the Watt-Hour Delivery Class whose primary purpose is to provide electric vehicle charging services , 
+and for which (a) the Competitively Declared Customer Group is not applicable and (b) demand 
+metering is installed at the retail customer’s premises. 
+
+ORIGINAL PDF PAGE 185
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Sheet No. 140 
+Edison Company  (Canceling 2nd Revised Sheet No. 140) 
+ 
+GENERAL TERMS AND CONDITIONS 
+ 
+(Continued from Sheet No. 139) 
+ 
+(Continued on Sheet No. 141) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  September 23, 2023  
+September 8, 2023.    Issued by T. R. Donnelly, President and COO 
+Issued pursuant to the Order dated  Post Office Box 805379 
+March 23, 2023, in Docket No. 22-0432.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+RETAIL CUSTOMER CATEGORIZATIONS (CONTINUED) 
+ 
+* SUPPLY GROUPS (CONTINUED). 
+Competitively Declared Customer Group 
+Competitively Declared Customer Group means the customer group applicable to any retail customer for which 
+electric service has been declared competitive, including retail customers in the Watt -Hour Delivery Class 
+whose primary purpose is to provide electric vehicle charging services.  The Competitively Declared Customer 
+Group applies to a retail customer determined to have electric power and energy requirements of at least 100 
+kW, as determined by the Company.  A retail customer is determined to have electric power and energy 
+requirements of at least 100 kW if (a) for any such retail customer that had been taking service from the 
+Company during the preceding January through December monthly billing periods, such retail customer 
+established a thirty (30) minute demand for electricity of at least 100 kW in at least two (2) monthly billing 
+periods during such preceding monthly billing periods; or (b) in the Company’s reasonable judgment there 
+exists comparable usage information or a sufficient basis to determine that such retail customer has electric 
+power and energy requirements of at least 100 kW; or (c) (i) such retail customer had previously been 
+determined to have electric power and energy requirements of at least 100 kW pursuant to either of the 
+aforementioned items (a) or (b), and (ii) such retail customer established a thirty (30) minute demand for 
+electricity of at least 100 kW at least one (1) time during such preceding monthly billing periods.  For a retail 
+customer for which the Company has been providing electric service, the Company determines the electric 
+power and energy requirements of such retail customer on or before March 15 each year.  For an applicant or a 
+successor retail customer at a premises, such determination is made prior to the date that electric service 
+begins to be provided to such applicant or successor retail customer.  In accordance with Section 16- 103.1 of 
+the Act, in determining if a retail customer has electric power and energy requirements of at least 100 kW, the 
+Company does not consider a retail customer that is a unit owners’ association, as defined in Section 2 of the 
+Condominium Property Act.  In addition, in determining if a retail customer has electric power and energy 
+requirements of at least 100 kW, the Company does not consider a retail customer for which the residential 
+customer group is applicable. 
+ 
+For a retail customer (a) that has been taking bundled electric service from the Company continuously under a 
+tariff that does not have provisions for hourly pricing since prior to the date on or before March 15 that such 
+retail customer is determined to have electric power and energy requirements of at least 100 kW; and (b) that 
+continues to take service under such tariff through the May monthly billing period following such date, the 
+Competitively Declared Customer Group applies to such retail customer immediately following such May 
+monthly billing period.  Otherwise, the Competitively Declared Customer Group applies to such retail customer 
+immediately after such retail customer is determined to have electric power and energy requirements of at least 
+100 kW. 
+
+ORIGINAL PDF PAGE 258
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 2nd Revised Sheet No. 198 
+Edison Company  (Canceling Original Sheet No. 198) 
+ 
+GENERAL TERMS AND CONDITIONS 
+ 
+(Continued from Sheet No. 197) 
+(Continued on Sheet No. 199) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  February 13, 2014 
+February 10, 2014.  Issued pursuant to the  Issued by A. R. Pramaggiore, President and CEO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+February 5, 2014, in Docket No. 13-0552.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change. 
+ 
+BILLING AND PAYMENT (CONTINUED) 
+  
+CONTINUING ELECTRIC SERVICE (CONTINUED). 
+Electronic Billing 
+A retail customer may voluntarily elect to be billed through a paperless electronic billing system using 
+standard forms and protocols established and maintained by the Company.  In administering this 
+electronic billing option, the Company does not send such retail customer paper bills.  Required 
+information that otherwise accompanies a paper bill is transmitted to such retail customer 
+electronically, or the Internet link access to such information is transmitted electronically to such retail 
+customer.  Any applicable disconnection notice continues to be sent to such retail customer via United 
+States mail.  The Company may utilize unaffiliated third parties to electronically transmit bills to such 
+retail customer.  The Company is not responsible for any loss resulting from such retail customer's 
+election to receive bills electronically, including but not limited to, any loss associated with damage to 
+the retail customer's computer equipment or facilities and any loss associated with a third party's 
+unauthorized use of such retail customer's information.  Either the Company or such retail customer 
+may, upon thirty (30) days notice to the other party, terminate electronic transmission of bills without 
+any liability to the terminating party resulting from such termination, and without affecting such retail 
+customer’s obligation to pay all amounts due the Company.  In such event, the Company begins to 
+issue paper bills via United States mail to such retail customer as soon as reasonably practical.  The 
+Company reserves the right to determine whether or not a retail customer is eligible to be billed 
+through its paperless electronic system.  The provisions of this Electronic Billing subsection are not 
+applicable to a retail customer that receives bills for electric service from a RES pursuant to  
+Rider SBO. 
+ 
+Measurement of Energy and Demand 
+* Generally, on a monthly billing period basis, the Company compiles meter usage data measurements 
+of the electricity, in kWhs, provided to a retail customer, and as applicable, the maximum demand 
+established by such retail customer, which is the maximum thirty (30) minute rate, in kWs , at which 
+electricity is provided to such retail customer and the MKD established by such retail customer.  These 
+measurements are applied, as applicable, to unit charges included in the Company's tariffs on file with 
+the ICC to develop monthly charges applicable to such retail customer. 
+ 
+For a situation in which the demand register for a metering installation is an interval demand recording 
+register, the thirty (30) minute periods over which electricity is measured begin at either the beginning 
+of the hour (XX:00) or at the half-hour (XX:30) and end thirty (30) minutes later at (XX:30) or 
+(XX+1:00), respectively. 
+ 
+For a situation in which there are two (2) or more watt-hour metering installations at a retail customer’s 
+premises, the kWhs provided to such retail customer are determined by adding together the kWhs 
+metered at each such metering installation. 
+ 
+For a situation in which the Company elects to provide no metering installation in the provision of 
+electric service to a nonresidential retail customer because such retail customer uses electric service 
+on a continuous or regularly scheduled basis that does not exceed two (2) kW, the kWhs  provided to 
+such retail customer during a monthly billing period are determined by multiplying the total rated or 
+nameplate wattage of the retail customer's electrical equipment by the hours such equipment is 
+operated during the monthly billing period, and dividing such product by one thousand (1,000) . 
+
+ORIGINAL PDF PAGE 850
+ 
+ILL. C.C. No. 10 
+Commonwealth ELECTRICITY 5th Revised Informational Sheet No. 64.3 
+Edison Company (Canceling 4th Revised Informational Sheet No. 64.3) 
+ 
+ DELIVERY SERVICE CHARGES 
+ 
+(Continued from Informational Sheet No. 64.2) 
+  
+ (Continued on Informational Sheet No. 64.4) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  February 28, 2025 
+February 21, 2025.  Filed pursuant to the   Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+January 16, 2025, in Docket No. 24-0378.  Chicago, Illinois 60680-5379 
+NONRESIDENTIAL DELIVERY SERVICE CHARGES (CONTINUED). 
+ 
+Applicable for the Monthly Billing Periods In 
+2025 2026 2027 
+Watt-Hour Delivery Class 
+CC $14.74 & ADJ $15.01 & ADJ $15.22 & ADJ 
+SMSC $2.65 & ADJ $2.66 & ADJ $2.64 & ADJ 
+DFC ($/kWh) $0.02883 & ADJ $0.02854 & ADJ $0.02958 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Small Load Delivery Class 
+CC  $14.42 & ADJ $14.62 & ADJ $14.77 & ADJ 
+SMSC  $6.74 & ADJ $6.71 & ADJ $6.66 & ADJ 
+SV DFC ($/kW) $12.71 & ADJ $12.50 & ADJ $13.07 & ADJ 
+PV DFC ($/kW) $5.60 & ADJ $5.53 & ADJ $5.71 & ADJ 
+PV TC ($/kW) $0.35 & ADJ $0.36 & ADJ $0.37 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Medium Load Delivery Class 
+CC  $24.32 & ADJ $24.78 & ADJ $25.15 & ADJ 
+SMSC  $11.63 & ADJ $11.56 & ADJ $11.49 & ADJ 
+SV DFC ($/kW) $13.02 & ADJ $12.78 & ADJ $13.34 & ADJ 
+PV DFC ($/kW) $7.36 & ADJ $7.18 & ADJ $7.52 & ADJ 
+PV TC ($/kW) $0.35 & ADJ $0.36 & ADJ $0.38 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+
+ORIGINAL PDF PAGE 852
+ILL. C.C. No. 10 
+Commonwealth ELECTRICITY 5th Revised Informational Sheet No. 64.5 
+Edison Company (Canceling 4th Revised Informational Sheet No. 64.5) 
+ 
+ DELIVERY SERVICE CHARGES 
+ 
+ (Continued from Informational Sheet No. 64.4) 
+ 
+(Continued on Informational Sheet No. 64.6) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  February 28, 2025 
+February 21, 2025.  Filed pursuant to the   Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+January 16, 2025, in Docket No. 24-0378.  Chicago, Illinois 60680-5379 
+NONRESIDENTIAL DELIVERY SERVICE CHARGES (CONTINUED). 
+ 
+Applicable for the Monthly Billing Periods In 
+2025 2026 2027 
+Large Load Delivery Class 
+CC  $143.55 & ADJ $145.77 & ADJ $147.75 & ADJ 
+SMSC  $11.94 & ADJ $11.88 & ADJ $11.81 & ADJ 
+SV DFC ($/kW) $12.72 & ADJ $12.47 & ADJ $13.02 & ADJ 
+PV DFC ($/kW) $10.04 & ADJ $9.78 & ADJ $10.24 & ADJ 
+PV TC ($/kW) $0.44 & ADJ $0.45 & ADJ $0.47 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Very Large Load Delivery Class 
+CC  $878.23 & ADJ $898.11 & ADJ $917.17 & ADJ 
+SMSC  $12.39 & ADJ $12.33 & ADJ $12.26 & ADJ 
+SV DFC ($/kW) $11.77 & ADJ $11.49 & ADJ $11.87 & ADJ 
+PV DFC ($/kW) $9.63 & ADJ $9.33 & ADJ $9.63 & ADJ 
+PV TC ($/kW) $0.44 & ADJ $0.45 & ADJ $0.47 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Extra Large Load Delivery Class 
+CC  $2,011.40 & ADJ $2,051.45 & ADJ $2,108.12 & ADJ 
+SMSC  $35.10 & ADJ $35.00 & ADJ $34.78 & ADJ 
+SV DFC ($/kW) $11.43 & ADJ $11.63 & ADJ $12.01 & ADJ 
+PV DFC ($/kW) $10.71 & ADJ $10.83 & ADJ $11.19 & ADJ 
+PV TC ($/kW) $0.48 & ADJ $0.50 & ADJ $0.54 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+ 
+ 
+ 
+
+ORIGINAL PDF PAGE 854
+ 
+ILL. C.C. No. 10 
+Commonwealth ELECTRICITY 5th Revised Informational Sheet No. 64.7 
+Edison Company (Canceling 4th Revised Informational Sheet No. 64.7) 
+ 
+ DELIVERY SERVICE CHARGES 
+ 
+ (Continued from Informational Sheet No. 64.6) 
+ 
+ (Continued on Informational Sheet No. 64.8) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  February 28, 2025 
+February 21, 2025.  Filed pursuant to the   Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+January 16, 2025, in Docket No. 24-0378.  Chicago, Illinois 60680-5379 
+NONRESIDENTIAL DELIVERY SERVICE CHARGES (CONTINUED). 
+ 
+Applicable for the Monthly Billing Periods In 
+2025 2026 2027 
+High Voltage Delivery Class 
+CC  $701.57 & ADJ $710.36 & ADJ $738.00 & ADJ 
+SMSC  $32.11 & ADJ $32.06 & ADJ $31.80 & ADJ 
+SV DFC ($/kW) $17.65 & ADJ $10.72 & ADJ $11.10 & ADJ 
+PV DFC ($/kW) $22.18 & ADJ $12.10 & ADJ $12.51 & ADJ 
+PV TC ($/kW) $0.72 & ADJ 
+ 
+$0.78 & ADJ $0.81 & ADJ 
+ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+High Voltage DFCs and Transformer Charges are Applicable to the portion of the MKD that is served by electric 
+conductors entering the retail customer's premises at or above 69,000 volts. 
+The retail customer’s MKD during the most recent twelve (12) consecutive monthly billing periods prior to the current 
+monthly billing period never exceeded 10,000 kW. 
+HV DFC ($/kW) $0.66 & ADJ $0.71 & ADJ $0.86 & ADJ 
+HV TC ($/kW) $4.76 & ADJ $4.61 & ADJ $4.61 & ADJ 
+The retail customer’s MKD during the most recent twelve (12) consecutive monthly billing periods prior to the current 
+monthly billing period exceeded 10,000 kW 
+HV DFC ($/kW) $0.62 & ADJ $0.44 & ADJ $0.53 & ADJ 
+HV TC ($/kW) $2.56 & ADJ $2.46 & ADJ $2.46 & ADJ 
+Railroad Delivery Class 
+CC  $6,338.28 & ADJ $6,438.68 & ADJ $6,581.83 & ADJ 
+SMSC  $27.83 & ADJ $27.67 & ADJ $27.50 & ADJ 
+DFC ($/kW) $5.91 & ADJ $6.47 & ADJ $6.78 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 

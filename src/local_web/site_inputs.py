@@ -91,18 +91,14 @@ def check_weather_matches(request, metadata):
         raise ValueError("Saved weather does not match the site, year, timezone, or interval. Retrieve matching weather; historical years are never shifted onto other study dates.")
 
 
-def build_site_inputs(request, directory):
+def build_site_generation(request, directory, grid):
+    """Shared weather/PV physics, without retail or carbon-region assumptions."""
     import pandas as pd
     from pvlib.location import Location
-    from ..timeseries import build_interval_index_from_days
-    from ..profiles import ConstantLoad, SyntheticLoad, BuildingArchetype, LoadScaling, WeatherDerivedPV, WeatherDerivedPVConfiguration
+    from ..profiles import WeatherDerivedPV, WeatherDerivedPVConfiguration
     from ..profiles.weather import load_weather_csv
-    from ..opendss.ac_replay import PVInverterReplay, PVReplayConfiguration
-    from ..billing import get_tariff
 
-    site, solar, load = request["site"], request["solar"], request["load"]
-    count = (date.fromisoformat(request["end_date"]) - date.fromisoformat(request["start_date"])).days + 1
-    grid = build_interval_index_from_days(request["start_date"], count, request["timezone"], request["timestep_minutes"])
+    site, solar = request["site"], request["solar"]
     warnings = []
     if request["weather_source"] == "nsrdb":
         metadata = json.loads((directory / "weather.json").read_text())
@@ -134,6 +130,19 @@ def build_site_inputs(request, directory):
         nominal_inverter_efficiency=solar["inverter_efficiency"],
     ), weather_data=weather, weather_source=source_name).build_detailed(grid)
     warnings.extend(pv.warnings)
+    return pv, weather, provenance, warnings
+
+
+def build_site_inputs(request, directory):
+    import pandas as pd
+    from ..timeseries import build_interval_index_from_days
+    from ..profiles import ConstantLoad, SyntheticLoad, BuildingArchetype, LoadScaling
+    from ..opendss.ac_replay import PVInverterReplay, PVReplayConfiguration
+    from ..billing import get_tariff
+    site, load = request["site"], request["load"]
+    count = (date.fromisoformat(request["end_date"]) - date.fromisoformat(request["start_date"])).days + 1
+    grid = build_interval_index_from_days(request["start_date"], count, request["timezone"], request["timestep_minutes"])
+    pv, weather, provenance, warnings = build_site_generation(request, directory, grid)
     if load["mode"] == "constant":
         values = ConstantLoad(load["power_kw"]).build_load_kw(grid)
         warnings.append("Building demand is the user-specified constant load; it is not estimated from location or weather.")
