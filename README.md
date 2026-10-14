@@ -46,93 +46,29 @@ development.
 
 ## What's in the repo
 
-Ten major components, each one a package under `src/`.
+| Component | Purpose |
+|---|---|
+| [Application](src/simulation) | Configures studies, runs simulations, and displays results. |
+| [Load and solar profiles](src/profiles) | Generates electricity demand and solar production profiles. |
+| [Market and carbon data](src/signal_pipeline) | Retrieves and aligns electricity prices and grid carbon intensity. |
+| [Metering and billing](src/billing) | Calculates electricity charges using meter arrangements and utility tariffs. |
+| [Battery dispatch](src/dispatch) | Compares operating strategies and optimizes battery schedules. |
+| [Time-series framework](src/timeseries) | Standardizes data and validates timestamps, units, and missing values. |
+| [PV surplus allocation](src/surplus) | Models excess solar allocation; not connected to the GUI. |
+| [Baseline analysis](src/analysis) | Provides no-battery baselines and cost–emissions comparisons. |
+| [Electrical validation](src/opendss) | Checks voltage, equipment loading, and losses using OpenDSS. |
+| [Database storage](src/database) | Stores study inputs, sources, and results in MySQL. |
 
-### 1. Application and simulation workflow — [`src/simulation/`](src/simulation)
-Provides desktop, browser, and command-line interfaces for configuring studies,
-running simulations, and reviewing results. The local browser workflow supports
-location-based weather and solar studies, CSV inputs, and saved studies.
-Results include comparisons of operating strategies, electricity costs, battery
-schedules, and electrical network checks.
-
-See [Local web application](docs/Local_Web_Application.md) for setup, saved
-studies, and engine snapshot behavior. See also the
-[candidate ESS catalog and annual solar optimization](docs/ESS_Equipment_Catalog.md).
-
-### 2. Load and solar profiles — [`src/profiles/`](src/profiles)
-Creates building demand and PV generation profiles from synthetic inputs,
-weather data, and PV equipment models. The PV chain runs solar position →
-Hay-Davies plane-of-array transposition → SAPM cell temperature → PVWatts or a
-CEC single-diode module → inverter conversion and clipping. Named CEC module
-and inverter part numbers are supported when they are known.
-
-### 3. Market and carbon data — [`src/signal_pipeline/`](src/signal_pipeline)
-Loads electricity prices and grid carbon intensity from external providers or
-files and aligns them to the study period. I used **Electricity Maps** and
-**[GridStatus.io](https://gridstatus.io)**. The current version requires you
-to set up your own API keys in `src/.env` (see [Quick start](#quick-start)).
-Regions available: CAISO NP15, ERCOT Houston Hub, and PJM Western Hub, the
-last reachable either through PJM directly or through GridStatus.io.
-
-### 4. Time-series framework — [`src/timeseries/`](src/timeseries)
-Defines a common interval-table format and validates timestamps, units, and
-missing data. Every other layer speaks this format.
-
-### 5. Battery dispatch — [`src/dispatch/`](src/dispatch)
-Models battery operation and compares five strategies: no-battery,
-rule-based, cost-optimal, carbon-optimal, and combined. Optimization uses
-CVXPY and includes degradation cost, SOC continuity across multi-day horizons,
-and monthly demand charges in the objective.
-
-### 6. PV surplus allocation — [`src/surplus/`](src/surplus)
-Accounts for excess solar energy sent to battery charging, flexible loads,
-export, or curtailment. *(Implemented and tested, but not yet reachable from
-the GUI — see [Known gaps](#known-gaps-and-limitations).)*
-
-### 7. Metering and billing — [`src/billing/`](src/billing)
-Represents meter arrangements and tariffs, then calculates electricity
-charges. Twelve PG&E commercial tariffs are registered — B-1, B-6, B-10, B-19
-(mandatory, voluntary, Option R, Option S), and B-20 (standard, Option R,
-Option S) — with seasonal time-of-use periods, demand-charge bases, effective
-dating, and per-period bill breakdowns.
-
-### 8. Baseline analysis — [`src/analysis/`](src/analysis)
-Supports no-battery analysis and configuration of carbon weights for comparing
-cost against emissions.
-
-### 9. Electrical network validation — [`src/opendss/`](src/opendss)
-Replays dispatch schedules through OpenDSS to assess voltage, equipment
-loading, losses, and operating violations, at 15-minute resolution across the
-full schedule.
-
-### 10. Database storage — [`src/database/`](src/database)
-Stores study inputs, provenance, dispatch decisions, and power-flow results in
-MySQL and supports engineering queries. Schema and queries live in
-[`sql/`](sql).
-
-### How the pieces connect
-
-```text
-  INPUTS                DATA SYSTEM            DECISION              VALIDATION
-  ----------------      -----------------      ----------------      ------------------
-  Load profile     (2)  Interval table    (4)  Rule-based or    (5)  OpenDSS QSTS    (9)
-  PV / weather     (2)  validation,            CVXPY dispatch        voltage, loading,
-  Wholesale price  (3)  provenance,            cost / carbon /       losses, reverse
-  Grid carbon      (3)  MySQL           (10)   combined              flow, violations
-  Utility tariff   (7)  surplus alloc.   (6)   demand-aware               |
-                                                     |                    v
-                                                     +------------> Utility bill  (7)
-                                                                    vs. baseline   (8)
-```
+Documentation: [Local web application](docs/Local_Web_Application.md) · [ESS catalog and annual solar optimization](docs/ESS_Equipment_Catalog.md)
 
 ---
 
 ## Quick start
 
-Create and activate a project-specific Python environment, then install the
-dependencies. Run these commands from the repository root. If your prompt starts with `(base)`, run `conda deactivate` first so the environment is based on your
-normal Python installation. After activation, the shorter `python` command
-selects the project environment:
+Run from the repository root. If Conda’s `(base)` environment is active, run
+`conda deactivate` first.
+
+**1. Install dependencies**
 
 ```bash
 python3 -m venv .venv
@@ -141,158 +77,56 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Your prompt should now begin with `(.venv)`. Confirm that the required
-OpenDSS package is available before launching the application:
+**2. Configure API access**
 
-```bash
-python -c "import opendssdirect; print('OpenDSS is available')"
-```
+Create `src/.env`, which is excluded from Git:
 
-Create `src/.env` with your own API keys. The file is gitignored and is never
-committed:
-
-```bash
+```dotenv
+# Required: historical grid carbon data
 ELECTRICITY_MAPS_API_KEY=your_key_here
-GRIDSTATUS_API_KEY=your_key_here
-MYSQL_HOST=localhost
-MYSQL_PORT=3306
-MYSQL_DATABASE=your_database
-MYSQL_USER=your_user
-MYSQL_PASSWORD=your_password
+
+# Needed only for NSRDB historical weather
+NSRDB_API_KEY=your_key_here
+NSRDB_API_EMAIL=you@example.com
 ```
 
-Optional keys: `PJM_API_KEY` for reaching PJM directly rather than through
-GridStatus.io, and `NSRDB_API_KEY` plus `NSRDB_API_EMAIL` for fetching
-satellite irradiance. Neither is needed to run the simulator — CAISO and ERCOT
-prices require no credentials, and the weather path works fully offline from a
-CSV.
+Your Electricity Maps key must provide access to the requested historical
+data. Clear-sky solar calculations do not require NSRDB access.
 
-Launch the desktop application on macOS. It opens the same study setup and
-results interface as the local browser, with the same billing and dispatch
-backend, in a native window. Its studies are saved under
-`.cache/local_web_desktop`:
+**3. Launch the application**
 
 ```bash
-/usr/local/bin/python3 -m src.simulation.graphical_interface
+python -m src.local_web.server
 ```
 
-The previous engineering-focused Tkinter GUI remains available with
-`/usr/local/bin/python3 -m src.simulation.graphical_interface --legacy`.
+Open <http://127.0.0.1:8765>. Keep the terminal running; press `Ctrl+C` to stop.
 
-Run the test suite — **797 tests**:
+**4. Run tests (optional)**
 
 ```bash
 python -m pytest -q
 ```
 
-> **Conda note.** If your terminal initially shows `(base)`, the bare
-> `python3` command may select Conda's Python, whose installed packages are
-> separate from this project. Activating `.venv` makes `python` select the
-> repository environment instead. If `which python` does not end in
-> `Microgrid_Simulator/.venv/bin/python`, reactivate it with
-> `source .venv/bin/activate`. Missing `opendssdirect` or `mysql-connector`
-> means dependency installation did not complete; it is not a GUI error.
-
-Other entry points:
-
-```bash
-python -m src.opendss.validation
-```
-
-```bash
-python -m src.signal_pipeline.market_data_integration
-```
-
-**No test ever calls a live API.** Every provider is mocked, and the weather
-and price paths run from committed fixtures and an on-disk cache, so the suite
-costs no API quota and needs no secret.
+See the [Local web application guide](docs/Local_Web_Application.md) for
+configuration and saved studies.
 
 ---
 
 ## Engineering conventions
 
-Three conventions are repeated here because violating them is silent and
-costly:
+- **Time intervals:** Generate timestamps explicitly; do not assume every day
+  has 96 fifteen-minute intervals.
+- **Calendar days:** Use `pd.DateOffset(days=n)` to preserve local time across
+  daylight saving changes.
+- **Demand charges:** Calculate each demand component from its applicable
+  billing-period peak.
+- **Optimization:** Keep CVXPY battery constraints vectorized for efficient
+  time-series studies.
 
-- **Never compute intervals as `days * 96`.** DST days have 92 or 100
-  intervals. Counts come from the generated index.
-- **Use `pd.DateOffset(days=n)`, never `pd.Timedelta(days=n)`** for calendar
-  days. `Timedelta` adds exactly 24 h and drifts an hour across DST.
-- **Never sum demand charges across intervals.** One peak per billing month.
-
-A fourth is a performance cliff rather than a correctness one: the CVXPY
-constraints in `single_day_analysis.py` are **vectorized** — the SOC recursion
-and the interval power balance are two array constraints, not two per
-interval. The loop form produces an identical feasible set and fails no test,
-but at 2,880 intervals it builds 5,766 constraint objects instead of 8 and
-runs roughly 40× slower (16.2 s → 1.15 s for a 30-day, 5-scenario run).
-
-**Read [`docs/Microgrid_Backend_Architecture.md`](docs/Microgrid_Backend_Architecture.md)
-before changing the backend.** It documents the decisions that cannot be
-inferred from the code: PV-first allocation, the inclusive→exclusive date
-conversion, demand-charge rules, and tariff versioning.
-
-Tariff rates and structures are documented in
-[`docs/PGE_Tariff_Reference.md`](docs/PGE_Tariff_Reference.md), generated from
-the registry by `tools/generate_tariff_reference.py` — regenerate it rather
-than editing it by hand.
-
----
-
-## Learning roadmap
-
-The project doubles as the vehicle for a 12-week energy-engineering learning
-plan, in which Python, pandas, optimization, real grid data, OpenDSS, SQL, Git,
-SPICE, C++, and Arduino each extend this same model rather than becoming
-disconnected tutorials. Each week ends with an evidence-based completion gate.
-
-| Week | Focus | Status |
-|---|---|---|
-| 1 | Dispatch and optimization foundation | ✅ Complete |
-| 2 | Real-data consolidation and software gate | ✅ [Recap](docs/Week_2_Completion_Recap.md) |
-| 3 | OpenDSS fundamentals | ✅ [Recap](docs/Week_3_Completion_Recap.md) |
-| 4 | OpenDSS with DER dispatch | ✅ [Recap](docs/Week_4_Completion_Recap.md) |
-| 5 | SQL, provenance, reproducibility | ✅ [Recap](docs/Week_5_Completion_Recap.md) |
-| 6 | SPICE fundamentals | ⏳ [Curriculum revised](docs/Weeks_6_7_SPICE_Curriculum_Revision.md); KiCad project scaffolded |
-| 7 | SPICE for power electronics | ⏳ Planned |
-| 8 | Rolling control and operational robustness | ⬜ Not started |
-| 9 | Network-aware dispatch | ⬜ Not started |
-| 10 | C++ fundamentals through model translation | ⬜ Not started |
-| 11 | Arduino and embedded monitoring | ⬜ Not started |
-| 12 | Integrated capstone | ⬜ Not started |
-
-Gates **A**, **B**, and **C** have passed. Gate D (network-aware control) and
-Gate E (capstone) remain open.
-
-### Beyond the original plan
-
-Several capabilities were added because the modelling demanded them, and
-belong to no numbered week:
-
-- **A utility billing layer** — twelve PG&E commercial tariffs with TOU
-  seasons, demand-charge bases, effective dating, and carbon monetization.
-  This is what turns "kWh shifted" into "dollars saved."
-- **Demand-charge-aware optimization**, which changed the character of the
-  problem: the binding economics of a commercial site are the monthly peak,
-  not the energy arbitrage spread. Putting `cp.max(grid_import_kw[month])` in
-  the objective cut the peak from 228 kW to 113.5 kW under PG&E B-10.
-- **A guided Tkinter GUI** covering region, price mode, tariff, load and PV
-  source, meter topology, carbon weighting, and CSV export, with preferences
-  saved between runs.
-- **Multi-ISO price adapters** behind one provider interface.
-- **A physical PV and inverter model** in two phases — a PVWatts-style generic
-  array, and an equipment-specific CEC single-diode model with real part
-  numbers, string arrangement, and MPPT distribution.
-
-### Planned next
-
-- **Move the application to the web**, so the workflow is not limited to a
-  local desktop GUI.
-- **Residential support.** Residential and multifamily load archetypes already
-  exist, but every registered tariff is a PG&E *commercial* schedule; the
-  residential case needs residential rate schedules before the bills mean
-  anything.
-- **Finer and more realistic daily load and PV trends.**
+Read the [backend architecture](docs/Microgrid_Backend_Architecture.md) before
+changing the backend. Regenerate the [PG&E tariff reference](docs/PGE_Tariff_Reference.md)
+using [the reference generator](tools/generate_tariff_reference.py) after tariff
+changes.
 
 ---
 
