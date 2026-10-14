@@ -36,7 +36,7 @@ function updateEquipmentChoice() {
   field('degradation_cost_per_kWh').closest('label').hidden=gridOnly();
   field('include_degradation_in_optimization').closest('label').hidden=gridOnly();
   field('include_degradation_in_optimization').disabled=gridOnly();
-  $('strategies').closest('fieldset').hidden=gridOnly() || !!municipal;
+  $('strategies').closest('fieldset').hidden=gridOnly() || !!municipal || !!window.comedUI?.active();
   for(const name of ['degradation_cost_per_kWh','carbon_weight']) {field(name).disabled=gridOnly();field(name).closest('label').hidden=gridOnly() || (name==='carbon_weight' && !!municipal);}
   if($('municipal-strategy-note'))$('municipal-strategy-note').textContent=gridOnly()?'Grid-only load and utility bill. No battery optimization or AC network validation is performed.':'Compare no battery with bill-minimizing storage. Battery wear is included in the objective only when selected; it is always estimated in results. The battery finishes at its starting energy. No AC network validation is performed.';
   if(gridOnly())$('dataset-info').textContent='Grid-only study: native load is supplied entirely by the electricity grid.';
@@ -436,13 +436,17 @@ async function loadTable() {
   if (generation!==tableRequest || id!==activeId) return;
   $("run-error").hidden=true;
   $("all-columns").parentElement.hidden=selected!=="comparison";
-  const comedColumns=["scenario","subtotal_usd","subtotal_savings_vs_grid_usd","import_kwh","billed_mkd_kw","overall_30min_peak_kw","degradation_cost_usd","all_intervals_feasible","is_complete_bill"];
-  const displayedSummary=activeStudy?.request.schema_version===10?comedColumns:summaryColumns;
+  const comedColumns=["scenario","subtotal_usd","subtotal_savings_vs_grid_usd","import_kwh","billed_mkd_kw","overall_interval_peak_kw","degradation_cost_usd","all_intervals_feasible","is_complete_bill"];
+  const displayedSummary=activeStudy?.request.schema_version===10
+    ? comedColumns.filter(c=>c!=="billed_mkd_kw" || Object.hasOwn(activeStudy.request.account,"service_voltage"))
+    : summaryColumns;
   const priority=selected==="comparison" ? displayedSummary : selected.startsWith("ac-") ? ["timestamp","feasible","converged","minimum_voltage_pu","maximum_voltage_pu","setpoint_mismatch","inverter_capability_violation"] : ["timestamp"];
   const order=[...priority.filter(c=>table.columns.includes(c)),...table.columns.filter(c=>!priority.includes(c))];
   const indices=order.filter(c=>selected!=="comparison" || $("all-columns").checked || displayedSummary.includes(c)).map(c=>table.columns.indexOf(c));
   const element=document.createElement("table"), head=document.createElement("thead"), body=document.createElement("tbody"), header=document.createElement("tr");
   const comedLabels={scenario:"Scenario",subtotal_usd:"Modeled subtotal ($)",subtotal_savings_vs_grid_usd:"Subtotal savings ($)",import_kwh:"Imports (kWh)",billed_mkd_kw:"Billed MKD (kW)",overall_30min_peak_kw:"All-hours peak (kW)",degradation_cost_usd:"Battery wear ($)",all_intervals_feasible:"AC feasible",is_complete_bill:"Complete bill"};
+  comedLabels.overall_interval_peak_kw="Maximum import · interval (kW)";
+  comedLabels.overall_30min_peak_kw="30-minute demand measurement (kW)";
   for (const i of indices) {const cell=document.createElement("th");cell.scope="col";cell.textContent=table.columns[i]==="timestamp"?"Time (UTC)":activeStudy?.request.schema_version===10&&selected==="comparison"?(comedLabels[table.columns[i]]||table.labels[i]):table.labels[i];cell.title=table.columns[i];header.append(cell);}
   head.append(header);
   for (const row of table.data) {
@@ -508,7 +512,10 @@ function orientationKey() {
 }
 function updateCandidateControls() {
   const enabled=!!capabilities?.candidate_defaults && template?.schema_version===3;
-  $("ess-controls").hidden=!enabled; $("orientation-controls").hidden=!enabled;
+  $("ess-controls").hidden=!enabled;
+  // Other utility adapters also call this visibility helper after ComEd's
+  // sync. Never expose the general orientation-study contract for ComEd.
+  $("orientation-controls").hidden=!enabled || !!window.comedUI?.active();
   const equipment=enabled && field("ess_mode").value==="equipment";
   $("ess-selection").hidden=!equipment;
   if(essResolution && essKey!==JSON.stringify(essSelection())) {essResolution=null; $("ess-review").textContent="Settings changed. Review & apply again.";}
@@ -929,7 +936,7 @@ function syncExportControls(){
   }
   $('export-controls').hidden=!exportAvailable();
   $('export-account').hidden=!exportActive();
-  if($('strategies'))$('strategies').closest('fieldset').hidden=exportActive();
+  if($('strategies'))$('strategies').closest('fieldset').hidden=exportActive() || !!window.comedUI?.active();
   if($('export-strategy-note'))$('export-strategy-note').hidden=!exportActive();
   for(const input of $('export-account').querySelectorAll('input,select')){input.disabled=!exportActive();input.required=exportActive();}
 }

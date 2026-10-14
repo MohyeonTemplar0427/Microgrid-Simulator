@@ -68,13 +68,16 @@ Native CSVs require `timestamp,native_load_kw`, timezone-aware starts matching
 the exact study grid, a source reference and confirmation of native consumption
 **before** PV/battery. Utility purchases from a site already containing PV or
 storage cannot silently become native demand. No scaling, interpolation, gap
-filling or resampling is performed. Files are limited to 2 MiB/4,000 rows.
+filling or resampling is performed. Schema 10 accepts one year, up to 366 service
+days and 35,136 native records within 2 MiB. Schema 9 retains its 6,000-row limit.
 
 PV uses the same `build_site_generation` weather/PV physics and the main form's
 DC rating, inverter AC rating/efficiency, orientation and losses. The shared
-weather/PV helper is independent of retail price and carbon mapping. A reviewed historical-weather import path for this ComEd contract is not yet
-enabled, even though rates now cover 2025; the workflow supports explicitly
-labeled **clear-sky** studies.
+weather/PV helper is independent of retail price and carbon mapping. Matching
+historical NSRDB resources are now enabled through the existing owner-checked,
+checksum-verified cache and immutable worker. The actual study year, coordinates,
+timezone and interval must match; explicitly labeled **clear-sky** studies remain
+available. See [historical annual inputs and validation](ComEd_Historical_Annual_Inputs.md).
 There is no shifted historical weather, CAISO carbon assignment or emissions
 claim. Historical 2026 weather is remaining work.
 
@@ -95,14 +98,23 @@ once. Filed capacity/procurement/transmission amounts are not multiplied again.
 
 Supply data may be a clearly synthetic assumption or an identified hourly CSV
 with source/basis confirmation. Source declarations do not authenticate a
-dataset. Actual historical-price retrieval is not implemented. Raw prices stay
+dataset. Official PJM hourly file imports additionally validate node
+116472935 / COMED_RESID_AGG, residual EDC type, native blank zone, exact hourly
+coverage and current revisions through the shared PJM adapter. Browser-side
+automatic market retrieval is not enabled; the 2025 validation uses the official
+Data Miner CSV export. Raw prices stay
 in local saved inputs; hosted schema-10 submission and result/request access
 are blocked pending market-data permission and candidate release review.
 
 `src/dispatch/comed.py` uses SciPy HiGHS through CVXPY. Non-export balance is
 `grid + PV + discharge = native load + charge`. PV output is bounded by its
-available AC power; all curtailed energy is reported. Battery mode is binary:
-charging and discharging cannot occur together, including at negative prices.
+available AC power; all curtailed energy is reported. Charging and discharging
+cannot occur together. Binary modes are retained where negative total marginal
+costs can reward conversion-loss cycling; elsewhere an equivalent continuous
+formulation removes dominated simultaneous flows while preserving SOC and
+reducing imports or curtailing PV. Negative demand costs would conservatively
+restore binary modes everywhere. The [annual input extension](ComEd_Historical_Annual_Inputs.md)
+documents this reduction and its all-binary reference checks.
 Discharge is bounded by native load as well as inverter rating, tightening the
 non-export feasible set. SOC limits, both efficiencies and charge/discharge
 power are retained. Terminal energy equals initial energy; energy cannot be

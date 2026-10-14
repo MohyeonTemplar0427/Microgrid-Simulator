@@ -38,6 +38,7 @@ class ComEdHourlyPrices:
     price_basis: str
     unit: str
     timestamp_convention: str
+    provenance: dict | None = None
 
 
 def _round(value: D, quantum: str = ".01") -> D:

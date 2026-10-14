@@ -17,6 +17,14 @@ function buildComedSimulationRequest(base, v) {
       kind:v.ce_cycle_kind||"regular",source:v.ce_cycle_source,
       charge_factors:v.ce_cycle_kind==="short_service"?JSON.parse(v.ce_charge_factors||"{}"):null}];
     r.account.billing_month=r.billing_cycles[0]?.billing_month;
+  } else if(v.ce_cycle_mode==="calendar_year") {
+    const year=Number(r.start_date.slice(0,4));
+    if(r.start_date!==`${year}-01-01`||r.end_date!==`${year}-12-31`)throw new Error("A calendar-year study requires January 1 through December 31 of the same year.");
+    r.billing_cycles=Array.from({length:12},(_,m)=>({
+      start_date:`${year}-${String(m+1).padStart(2,"0")}-01`,
+      end_date:new Date(Date.UTC(year,m+1,0)).toISOString().slice(0,10),
+      billing_month:`${year}-${String(m+1).padStart(2,"0")}-01`,kind:"regular",charge_factors:null,
+      source:"Hypothetical calendar-designated billing cycle; not an actual utility meter-reading schedule"}));
   }
   r.account.ordinary_import_only_confirmed=v.ce_account_confirmed===true;
   if(r.site_profile.site_type==="commercial"||r.site_profile.subtype==="common_areas") {
@@ -32,7 +40,10 @@ function buildComedSimulationRequest(base, v) {
     r.account.capacity_obligation_kw=Number(v.ce_capacity);r.account.capacity_source=v.ce_capacity_source;
     r.prices={mode:v.ce_price_mode,source:v.ce_price_source,basis_confirmed:v.ce_price_confirmed===true,
       usd_per_mwh:v.ce_price_mode==="constant_example"?Number(v.ce_price):null,
-      csv:v.ce_price_mode==="csv"?v.price_csv:null};
+      csv:["csv","pjm_csv"].includes(v.ce_price_mode)?v.price_csv:null};
+    if(v.ce_price_mode==="pjm_csv")r.prices.pjm_metadata={market:"REAL_TIME_HOURLY",
+      source_url:"https://dataminer2.pjm.com/feed/rt_hrl_lmps",retrieved_at:v.ce_price_retrieved_at,
+      unit:"$/MWh",usage_permission:"internal_use_only"};
   } else {r.account.capacity_obligation_kw=null;r.account.capacity_source=null;r.prices=null;}
   r.load={mode:v.load_mode,power_kw:v.load_mode==="csv"?null:Number(v.load_power_kw),
     archetype:v.load_mode==="csv"?null:v.load_mode==="constant"?base.load.archetype:v.archetype,csv:v.load_mode==="csv"?v.native_csv:null,
@@ -86,7 +97,7 @@ if(typeof document!=="undefined") {
   document.querySelector('[data-step="2"]').append(account);
   const cycles=document.createElement("fieldset");cycles.id="comed-cycles";cycles.hidden=true;
   cycles.innerHTML=`<legend>ComEd billing cycle</legend>
-    <label>Billing period basis<select name="ce_cycle_mode"><option value="calendar_month">Calendar-month study</option><option value="meter_cycles">Documented utility meter cycle(s)</option></select></label>
+    <label>Billing period basis<select name="ce_cycle_mode"><option value="calendar_month">Calendar-month study</option><option value="calendar_year">Full calendar-year study · hypothetical billing cycles</option><option value="meter_cycles">Documented utility meter cycle(s)</option></select></label>
     <div id="comed-cycle-details"><label>Utility-designated billing month<select name="ce_billing_month"></select></label>
     <label>Cycle type<select name="ce_cycle_kind"><option value="regular">Regular cycle · monthly charges once</option><option value="short_service">Shortened first/final service bill · documented allocations</option></select></label>
     <label>Cycle designation and allocation source<input name="ce_cycle_source" maxlength="500" placeholder="Bill/cycle schedule, or explicitly hypothetical study; omit identifiers"/></label>
@@ -113,12 +124,13 @@ if(typeof document!=="undefined") {
   pricing.innerHTML=`<legend>ComEd supply and optimization</legend><p class="hint">Compare grid-only, PV without storage and PV plus optimized storage using identical native loads, dates and account history. Minimize the modeled subtotal before line-cent rounding; optional wear is separate. Perfect foresight is a benchmark, not a deployable controller.</p>
     <p class="hint"><a id="comed-rate-source" target="_blank" rel="noreferrer">Official ComEd ratebook and billing rules</a> · Rate version, source pages and excluded costs are preserved in results.</p>
     <div id="comed-hourly"><label>BESH billed capacity obligation · kW<input name="ce_capacity" type="number" min="0" step="any"/></label><label>Capacity obligation source<input name="ce_capacity_source" maxlength="500"/></label>
-    <label>ComEd-zone residual hourly LMP source<select name="ce_price_mode"><option value="constant_example">Explicit synthetic constant assumption</option><option value="csv">Identified hourly CSV · observed or synthetic</option></select></label>
+    <label>ComEd-zone residual hourly LMP source<select name="ce_price_mode"><option value="constant_example">Explicit synthetic constant assumption</option><option value="csv">Identified hourly CSV · observed or synthetic</option><option value="pjm_csv">Official PJM hourly CSV · COMED_RESID_AGG</option></select></label>
     <label id="comed-price-constant">Synthetic residual LMP · USD/MWh<input name="ce_price" type="number" step="any"/></label>
-    <label id="comed-price-file">Hourly price CSV · timestamp,residual_lmp_usd_per_mwh<input name="ce_price_file" type="file" accept=".csv,text/csv"/></label>
+    <label id="comed-price-file"><span id="comed-price-format">Hourly price CSV · timestamp,residual_lmp_usd_per_mwh</span><input name="ce_price_file" type="file" accept=".csv,text/csv"/></label>
+    <label id="comed-price-retrieved">PJM file retrieval time · ISO timestamp with UTC offset<input name="ce_price_retrieved_at" maxlength="60" placeholder="2026-10-13T18:00:00Z"/></label>
     <label>Hourly price source or synthetic assumption<input name="ce_price_source" maxlength="500"/></label>
     <label><input name="ce_price_confirmed" type="checkbox"/> Verified COMED PJM real-time residual hourly LMP in USD/MWh at interval starts, or an explicitly synthetic assumption. No hub, day-ahead or adjusted-retail substitution.</label>
-    <p id="comed-price-status" class="hint">Prices and raw market inputs stay local; actual data retrieval is not enabled. Capacity is fixed across scenarios.</p></div>
+    <p id="comed-price-status" class="hint">Official PJM files must include UTC interval starts, node 116472935 / COMED_RESID_AGG, RESIDUAL_METERED_EDC, native blank zone, prices and revision fields. At most 8 MiB; normalized two-column CSVs at most 2 MiB. Prices stay local; no automatic market API download. Capacity is fixed across scenarios.</p></div>
     <p class="hint" id="comed-verified-months">Only the engine's listed verified billing months are supported; historical gaps reject explicitly. Calendar studies and documented meter cycles are supported. America/Chicago boundaries. Commercial demand uses aligned 30-minute averages from 15/30-minute records, weekday 09:00–18:00 excluding NERC holidays. Excluded taxes and fees remain visible in results.</p>`;
   document.querySelector('[data-step="8"]').append(pricing);
   field("load_mode").append(option("csv","Uploaded native-load CSV · ComEd"));
@@ -142,6 +154,7 @@ if(typeof document!=="undefined") {
     const supply=field("tariff_id").value==="comed_BESH"?"BESH":"BES";
     const months=comedBillingMonths(capabilities,supply);
     f("cycle_mode").querySelector('option[value="meter_cycles"]').disabled=!capabilities.comed_simulation.billing_cycle_support;
+    f("cycle_mode").querySelector('option[value="calendar_year"]').disabled=!capabilities.comed_simulation.annual_calendar_support;
     if(!capabilities.comed_simulation.billing_cycle_support)f("cycle_mode").value="calendar_month";
     if([...f("billing_month").options].slice(1).map(o=>o.value).join()!==months.join()){
       const previous=f("billing_month").value;
@@ -159,7 +172,10 @@ if(typeof document!=="undefined") {
     for(const supply of ["BES","BESH"]){if(!field("tariff_id").querySelector(`option[value="comed_${supply}"]`))field("tariff_id").append(option("comed_"+supply,"ComEd "+supply+(supply==="BES"?" · eligible fixed supply":" · Hourly Pricing")));const o=field("tariff_id").querySelector(`option[value="comed_${supply}"]`);o.hidden=o.disabled=false;}
     $("fixed-price-label").hidden=true;$("price-note").textContent="ComEd modeled subtotal, with fixed account charges, signed riders and applicable distribution/transformer demand. Excludes state excise tax, municipal taxes and franchise fees.";
     $("comed-hourly").hidden=field("tariff_id").value!=="comed_BESH";
-    $("comed-price-constant").hidden=f("price_mode").value!=="constant_example";$("comed-price-file").hidden=f("price_mode").value!=="csv";
+    f("price_mode").querySelector('option[value="pjm_csv"]').disabled=!capabilities.comed_simulation.pjm_file_support;
+    $("comed-price-constant").hidden=f("price_mode").value!=="constant_example";$("comed-price-file").hidden=f("price_mode").value==="constant_example";
+    $("comed-price-retrieved").hidden=f("price_mode").value!=="pjm_csv";
+    $("comed-price-format").textContent=f("price_mode").value==="pjm_csv"?"Original PJM Data Miner real-time hourly CSV · retain all columns":"Hourly price CSV · timestamp,residual_lmp_usd_per_mwh";
     $("comed-native-file").hidden=field("load_mode").value!=="csv";
     field("load_power_kw").closest("label").hidden=field("load_mode").value==="csv";field("load_power_kw").disabled=field("load_mode").value==="csv";
     $("archetype-label").hidden=field("load_mode").value!=="synthetic";
@@ -177,7 +193,7 @@ if(typeof document!=="undefined") {
     $("strategies").closest("fieldset").hidden=true;$("orientation-controls").hidden=true;
     field("carbon_weight").closest("label").hidden=true;
     $("pv-battery-connection").hidden=!(pv&&storage);field("pv_battery_connection").value="ac_coupled";
-    field("weather_source").querySelector('option[value="nsrdb"]').disabled=true;
+    field("weather_source").querySelector('option[value="nsrdb"]').disabled=!capabilities.comed_simulation.historical_weather_support;
     $("pv-choice-note").textContent="Choose grid-only, approved non-export PV, or storage without PV. Uncheck battery comparison for a zero-storage case.";
   }
   function defaults(page){if(!active())return;if(page.contains(f("verification"))&&!f("verification").value)f("verification").value="hypothetical_case";const hypothetical=f("verification").value==="hypothetical_case";
@@ -198,22 +214,26 @@ if(typeof document!=="undefined") {
       if(page.dataset.step==="3") {const start=field("start_date").value,end=field("end_date").value;
         if(f("cycle_mode").value==="calendar_month") {
           if(!comedBillingMonths(capabilities,field("tariff_id").value==="comed_BESH"?"BESH":"BES").includes(start)||end!==new Date(Date.UTC(Number(start.slice(0,4)),Number(start.slice(5,7)),0)).toISOString().slice(0,10))throw new Error("Use one complete verified billing month for this supply plan, or select documented meter cycles.");
+        } else if(f("cycle_mode").value==="calendar_year") {
+          const year=start.slice(0,4),months=comedBillingMonths(capabilities,field("tariff_id").value==="comed_BESH"?"BESH":"BES");
+          if(start!==`${year}-01-01`||end!==`${year}-12-31`||!Array.from({length:12},(_,i)=>`${year}-${String(i+1).padStart(2,"0")}-01`).every(m=>months.includes(m)))throw new Error("Use one complete calendar year with all twelve verified billing months; cycles are hypothetical calendar designations.");
         } else if(!f("cycles_json").value.trim()&&(!f("billing_month").value||!f("cycle_source").value.trim()))throw new Error("Confirm the utility billing month and cycle source; do not infer it from calendar dates.");
       }
       if(page.dataset.step==="9"&&field("load_mode").value==="csv"&&(!nativeCsv||!f("native_confirmed").checked))throw new Error("Upload the exact native-load CSV and confirm its basis.");
       const required=page.querySelectorAll('#comed-account input,#comed-account select,#comed-load input,#comed-operating-confirmations input,#comed-hourly input');
       for(const input of required){if(input.disabled||input.closest('[hidden]')||input.type==="file")continue;
         if(input.type==="checkbox"&&!input.checked||input.type!=="checkbox"&&input.value==="")throw new Error("Enter and confirm the relevant ComEd account/source fields, or apply explicitly hypothetical defaults.");}
-      if(page.dataset.step==="8") {if(!["comed_BES","comed_BESH"].includes(field("tariff_id").value))throw new Error("Choose ComEd BES or BESH.");if(field("tariff_id").value==="comed_BESH"&&f("price_mode").value==="csv"&&!priceCsv)throw new Error("Upload the complete identified residual hourly price CSV.");}
+      if(page.dataset.step==="8") {if(!["comed_BES","comed_BESH"].includes(field("tariff_id").value))throw new Error("Choose ComEd BES or BESH.");if(field("tariff_id").value==="comed_BESH"&&["csv","pjm_csv"].includes(f("price_mode").value)&&!priceCsv)throw new Error("Upload the complete identified residual hourly price CSV.");}
       return true;
     }catch(e){showError("form-error",e);return false;}
   }
-  async function file(name,set,status){const item=f(name).files[0];if(!item){set(null);return;}if(item.size>2*1024*1024){set(null);$(status).textContent="File exceeds 2 MiB.";return;}set(await item.text());$(status).textContent="Loaded "+item.name+" · validated against study timestamps on submission.";}
+  async function file(name,set,status){const item=f(name).files[0];if(!item){set(null);return;}const limit=name==="price_file"&&f("price_mode").value==="pjm_csv"?8:2;if(item.size>limit*1024*1024){set(null);$(status).textContent=`File exceeds ${limit} MiB.`;return;}set(await item.text());$(status).textContent="Loaded "+item.name+" · validated against study timestamps on submission.";}
   f("native_file").addEventListener("change",()=>file("native_file",v=>nativeCsv=v,"comed-native-status"));
   f("price_file").addEventListener("change",()=>file("price_file",v=>priceCsv=v,"comed-price-status"));
   form.addEventListener("change",event=>{
     if(["latitude","longitude","utility","site_type","site_subtype","ce_class","ce_voltage","ce_transformer","ce_competitive","ce_heat","ce_verification"].includes(event.target.name))f("account_confirmed").checked=false;
     if(event.target.name.startsWith("ce_")||event.target.name==="tariff_id"){sync();if(event.target.name==="ce_include_battery")renderWizard();}
+    if(event.target.name==="ce_price_mode"){priceCsv=null;f("price_file").value="";f("price_confirmed").checked=false;}
   });
   function restore(r){template=structuredClone(defaultSettings());restoreSiteProfile(r.site_profile);lastKind=null;
     resetUtilityOptions("comed");field("utility").value="comed";siteLabel=r.site.label;
@@ -236,7 +256,7 @@ if(typeof document!=="undefined") {
     f("voltage").value=a.service_voltage||"";f("transformer").value=a.utility_transformer?"yes":"no";f("heat").value=a.electric_space_heat?"yes":"no";f("competitive").value=a.competitively_declared?"yes":"no";f("watt").value=a.watt_hour_eligibility;f("hv_mkd").value=a.previous_12_month_mkd_kw??"";
     f("load_source").value=r.load.source;f("native_confirmed").checked=r.load.native_basis_confirmed;
     field("tariff_id").value="comed_"+a.supply;f("capacity").value=a.capacity_obligation_kw??"";f("capacity_source").value=a.capacity_source??"";
-    if(r.prices){f("price_mode").value=r.prices.mode;f("price").value=r.prices.usd_per_mwh??"";f("price_source").value=r.prices.source;f("price_confirmed").checked=r.prices.basis_confirmed;}
+    if(r.prices){f("price_mode").value=r.prices.mode;f("price").value=r.prices.usd_per_mwh??"";f("price_source").value=r.prices.source;f("price_confirmed").checked=r.prices.basis_confirmed;f("price_retrieved_at").value=r.prices.pjm_metadata?.retrieved_at||"";}
     for(const [key,target] of [["interconnection_confirmed","nonexport"],["standard_tariff_confirmed","standard"],["grid_charging_confirmed","grid_charge"]])f(target).checked=r.operating_contract[key];f("operation_reference").value=r.operating_contract.reference;
     updateSiteControls();resetWizard();
   }

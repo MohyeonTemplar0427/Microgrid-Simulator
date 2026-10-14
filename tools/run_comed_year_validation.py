@@ -1,7 +1,8 @@
 """Reproduce two offline 2025 ComEd comparisons using the immutable study worker.
 
-Uses the existing synthetic-load, clear-sky PV, billing, dispatch and OpenDSS
-paths without substituting rates or market prices. Output is ignored study data.
+Uses existing billing, dispatch and OpenDSS paths. The offline default uses
+synthetic loads and clear-sky BES; --historical-inputs uses full-year load imports,
+actual NSRDB weather and official PJM BESH prices. Output is private ignored data.
 The full-year MILP must satisfy the engine's existing optimality/time limits.
 """
 from __future__ import annotations
@@ -36,7 +37,7 @@ def require(condition, message):
         raise AssertionError(message)
 
 
-def request(kind):
+def request(kind, *, historical_inputs=None):
     r = defaults(kind)
     r.update(name=f"ComEd 2025 {kind} BES full-year validation",
              start_date="2025-01-01", end_date="2025-12-31")
@@ -64,6 +65,30 @@ def request(kind):
         billing_month=str(date(2025, m, 1)), kind="regular", charge_factors=None,
         source="Synthetic calendar-designated billing cycle for validation; not an actual meter-reading schedule")
         for m in range(1, 13)]
+    if historical_inputs is not None:
+        from src.local_web.comed_inputs import import_residual_prices
+        grid, native, _, _ = prepare(r)
+        # Serialize and read back the exact native profile through the same
+        # import contract as user files. This remains synthetic consumption.
+        text = pd.DataFrame({"timestamp":grid.index,"native_load_kw":native}).to_csv(index=False)
+        path = historical_inputs/f"synthetic-native-{kind}-2025.csv"
+        if path.exists():
+            require(path.read_bytes()==text.encode(),"Existing synthetic validation CSV differs; choose a new input folder.")
+        else:
+            path.write_bytes(text.encode())
+        r["load"].update(mode="csv",power_kw=None,archetype=None,csv=text,native_basis_confirmed=True)
+        r["account"].update(supply="BESH",capacity_obligation_kw=2. if kind=="residential" else 40.,
+            capacity_source="Explicit hypothetical fixed billed capacity obligation; not inferred from this year's demand")
+        raw = (historical_inputs/"pjm-residual-2025.csv").read_bytes().decode("utf-8")
+        metadata = json.loads((historical_inputs/"pjm-metadata.json").read_text())
+        import_residual_prices(raw,metadata,grid.index)
+        r["prices"] = dict(mode="pjm_csv",usd_per_mwh=None,csv=raw,basis_confirmed=True,
+            source="Official PJM Data Miner real-time hourly COMED_RESID_AGG export, node 116472935; current revisions; internal study only",
+            pjm_metadata=metadata)
+        r["name"] = f"ComEd 2025 {kind} BESH historical-weather full-year validation"
+        r["operating_contract"]["reference"] = "Hypothetical approved non-export account with ordinary BESH import tariff; no special DER or standby charges"
+        # Resource ownership/caching and matching are handled by Application
+        # after it pins a new candidate, before submitting this request.
     prepare(r)
     return r
 
@@ -133,7 +158,18 @@ def audit(directory, r, engine_id):
             subtotal = sum((Decimal(str(x["amount_usd"])) for x in one["lines"]), Decimal(0))
             require(subtotal == Decimal(str(one["subtotal_usd"])), "Monthly itemized charges do not sum")
             require(abs(one["import_kwh"]-float(d.loc[mask, "grid_import_kw"].sum()*dt)) < 1e-5, "Monthly kWh mismatch")
-            require(not any(x["name"] in ("capacity", "hourly_electricity_supply") for x in one["lines"]), "BES received wholesale/capacity charges")
+            if account.supply == "BES":
+                require(not any(x["name"] in ("capacity", "hourly_electricity_supply") for x in one["lines"]), "BES received wholesale/capacity charges")
+            else:
+                hourly = prices.values.reindex(index[mask].tz_convert("UTC").floor("h")).to_numpy()
+                multiplier = Decimal(str(one["source"]["hourly_energy_multiplier"]))
+                energy_cost = sum((Decimal(str(power))*Decimal(str(dt))*Decimal(str(price))/Decimal(1000)*multiplier
+                    for power,price in zip(d.loc[mask,"grid_import_kw"],hourly)),Decimal(0)).quantize(Decimal(".01"),rounding="ROUND_HALF_UP")
+                supply_line = next(x for x in one["lines"] if x["name"]=="hourly_electricity_supply")
+                require(abs(energy_cost-Decimal(str(supply_line["amount_usd"]))) <= Decimal(".01"),"Independent hourly supply benchmark failed")
+                capacity_line = next(x for x in one["lines"] if x["name"]=="capacity")
+                expected_capacity = (Decimal(str(account.capacity_obligation_kw))*Decimal(str(capacity_line["rate_usd"]))).quantize(Decimal(".01"),rounding="ROUND_HALF_UP")
+                require(expected_capacity == Decimal(str(capacity_line["amount_usd"])),"Fixed capacity benchmark failed")
             peak = None
             if r["site_profile"]["site_type"] == "commercial":
                 eligible = mkd_mask(index[mask])
@@ -169,8 +205,16 @@ def audit(directory, r, engine_id):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT/".cache/comed_2025_year_validation")
+    parser.add_argument("--historical-inputs",type=Path,help="Private folder containing pjm-residual-2025.csv and pjm-metadata.json; retrieve matching NSRDB weather using configured credentials")
+    parser.add_argument("--env-file",type=Path,default=ROOT/"src/.env",help="Read only NSRDB credentials for historical weather retrieval")
     args = parser.parse_args()
     output = args.output.resolve()
+    if args.historical_inputs and args.env_file.is_file():
+        import os
+        from dotenv import dotenv_values
+        values = dotenv_values(args.env_file)
+        for key in ("NSRDB_API_KEY","NSRDB_API_EMAIL"):
+            if values.get(key):os.environ.setdefault(key,values[key])
     app = Application(output)  # Creates a new pin, or reuses an existing immutable pin.
     try:
         current_files = {p.relative_to(ROOT).as_posix(): digest(p) for p in (ROOT/"src").rglob("*.py")}
@@ -182,12 +226,24 @@ def main():
     manifest = {"year": 2025, "engine_id": app.engine["id"], "cases": [],
                 "driver_sha256": digest(__file__),
                 "scope": "Synthetic loads, clear-sky PV, non-export BES subtotals; historical perfect foresight with continuous annual SOC and annual terminal constraint; excludes taxes, franchise fees, capital costs and forecast-driven operation"}
+    weather = None
+    if args.historical_inputs:
+        manifest["scope"] = "Imported synthetic native loads, actual 2025 NSRDB satellite weather and official PJM residual hourly prices; non-export BESH subtotals; perfect foresight with continuous annual SOC; fixed hypothetical capacity obligations; excludes taxes, capital costs and forecasting"
+        manifest["historical_inputs"] = {name:digest(args.historical_inputs/name)
+            for name in ("pjm-residual-2025.csv","pjm-metadata.json")}
     manifest["driver_path"] = "validation-driver-"+manifest["driver_sha256"][:12]+".py"
     (output/manifest["driver_path"]).write_bytes(Path(__file__).read_bytes())
     monthly, components, summaries, failures = [], [], [], []
     try:
         for kind in ("residential", "commercial"):
-            r = request(kind)
+            r = request(kind,historical_inputs=args.historical_inputs)
+            if args.historical_inputs:
+                if weather is None:
+                    weather = app.resource("weather",dict(latitude=r["site"]["latitude"],longitude=r["site"]["longitude"],
+                        year=2025,timezone=r["timezone"],timestep_minutes=r["timestep_minutes"]))
+                    manifest["weather"] = weather
+                r.update(weather_source="nsrdb",weather_id=weather["id"])
+                prepare(r)
             job = app.store.submit(r, app.engine)
             entry = {"case": kind, "study_id": job["id"], "status": "queued"}
             manifest["cases"].append(entry)

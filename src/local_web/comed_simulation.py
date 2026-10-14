@@ -49,6 +49,9 @@ def capabilities():
             "billing_months": bill_capabilities()["billing_months"],
             "billing_months_by_supply": bill_capabilities()["billing_months_by_supply"],
             "billing_cycle_support": True,
+            "historical_weather_support": True, "annual_calendar_support": True,
+            "csv_limits": {"bytes": 2*1024*1024, "native_rows": 35136, "hourly_rows": 8784, "pjm_bytes":8*1024*1024},
+            "pjm_file_support": True,
             "scope": "Non-export ComEd subtotals; only listed, complete verified billing-month composites. Documented meter cycles or calendar studies; short-service allocations require explicit evidence; local candidate only"}
 
 
@@ -77,6 +80,8 @@ def prepare(r):
         raise ValueError("Supply the exact account facts for this customer class.")
     try:
         month = date.fromisoformat(a["billing_month"])
+        if not 0 <= (date.fromisoformat(r["end_date"])-date.fromisoformat(r["start_date"])).days < 366:
+            raise ValueError("ComEd studies support at most 366 consecutive service days.")
         grid = build_interval_index(r["start_date"], r["end_date"], r["timezone"], r["timestep_minutes"])
     except (TypeError, ValueError) as exc:
         raise ValueError("Supply valid ComEd service dates and the confirmed utility billing month.") from exc
@@ -86,7 +91,7 @@ def prepare(r):
         _month_grid(grid.index, month)
     cls = ComEdResidentialAccount if kind == "residential" else ComEdCommercialAccount
     account = cls(**{**a, "billing_month": month})
-    prices = parse_prices(r["prices"], grid.index)
+    prices = parse_prices(r["prices"], grid.index, max_rows=len(grid.index.tz_convert("UTC").floor("h").unique()))
     # Authoritative validation covers eligibility, historical account facts,
     # applicable versions, external price coverage and fixed capacity charges.
     calculate(pd.Series(0., index=grid.index), account, prices, cycles)
@@ -97,7 +102,7 @@ def prepare(r):
     if load["mode"] == "csv":
         if load["native_basis_confirmed"] is not True or load["power_kw"] is not None or load["archetype"] is not None:
             raise ValueError("Confirm native consumption before PV/storage; meter purchases cannot silently become native load or carry scaling.")
-        series = _csv_series(load["csv"], "native_load_kw")
+        series = _csv_series(load["csv"], "native_load_kw", max_rows=min(35136, len(grid.index)))
         if not series.index.equals(grid.index.tz_convert("UTC")):
             raise ValueError("Native-load CSV must match the exact complete study grid; no resampling or gap filling.")
         _numeric_series(series, grid.index.tz_convert("UTC"), "native load", nonnegative=True)
@@ -127,9 +132,15 @@ def prepare(r):
     if r["weather_source"] not in ("clear_sky", "nsrdb") or (r["weather_source"] == "clear_sky" and r["weather_id"] is not None):
         raise ValueError("Choose the shared clear-sky or historical-weather contract.")
     if r["weather_source"] == "nsrdb":
-        # Historical rate availability does not establish a reviewed weather
-        # import path. Keep the existing candidate's clear-sky limitation.
-        raise ValueError("NSRDB weather import is not enabled for ComEd studies yet. Use a labeled clear-sky study; no weather year shifting.")
+        from .contract import identifier
+        from .site_inputs import validate_weather_request
+        if not identifier(r["weather_id"]):
+            raise ValueError("Retrieve matching historical weather before running a ComEd study.")
+        year = date.fromisoformat(r["start_date"]).year
+        if date.fromisoformat(r["end_date"]).year != year:
+            raise ValueError("Historical weather must cover one actual calendar year; no year shifting or missing-year substitution.")
+        validate_weather_request({"latitude": site["latitude"], "longitude": site["longitude"],
+            "year": year, "timezone": r["timezone"], "timestep_minutes": r["timestep_minutes"]})
     battery = r["battery"]
     if battery is not None:
         Battery(**battery)
@@ -268,6 +279,7 @@ def execute(directory, r):
             "native_csv_sha256": hashlib.sha256(r["load"]["csv"].encode()).hexdigest() if r["load"]["csv"] else None,
             "price_csv_sha256": hashlib.sha256(r["prices"]["csv"].encode()).hexdigest() if r["prices"] and r["prices"]["csv"] else None,
             "request_sha256": hashlib.sha256(json.dumps(r, sort_keys=True).encode()).hexdigest(),
-            "wholesale_pricing_location": {"zone": prices.zone, "basis": prices.price_basis, "source": prices.source} if prices else None},
+            "wholesale_pricing_location": {"zone": prices.zone, "basis": prices.price_basis, "source": prices.source,
+                "file_provenance": prices.provenance} if prices else None},
         "engine_id": json.loads((directory/"engine.json").read_text())["id"]})
     write_json(directory/"progress.json", {"message": "ComEd subtotal comparisons and dispatch saved"})

@@ -5,6 +5,7 @@ Physics stays in src/profiles. This module owns application wiring only.
 
 from dataclasses import asdict
 from datetime import date
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -77,7 +78,8 @@ def retrieve_weather(directory, request, fetcher=None):
     save_weather_csv(weather.frame, path)
     metadata = {"request": request, "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
                 "row_count": len(weather.frame), "provenance": weather.provenance,
-                "warnings": list(weather.warnings), "provider_url": NSRDB_URL}
+                "warnings": list(weather.warnings), "provider_url": NSRDB_URL,
+                "retrieved_at": datetime.now(timezone.utc).isoformat()}
     write_json(Path(directory) / "weather.json", metadata)
     return metadata
 

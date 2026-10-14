@@ -85,7 +85,9 @@ def test_secondary_solver_failure_is_visible_in_shared_saved_results(monkeypatch
     original=cp.Problem.solve;storage_solves=0
     def solve(problem,*args,**kwargs):
         nonlocal storage_solves
-        if any(v.attributes['boolean'] for v in problem.variables()):
+        # The energy-state vector identifies storage even when nonnegative
+        # prices permit an equivalent continuous formulation.
+        if any(v.shape == (1441,) for v in problem.variables()):
             storage_solves+=1
             if storage_solves==2:raise cp.error.SolverError('Synthetic cycling tie-break failure')
         return original(problem,*args,**kwargs)

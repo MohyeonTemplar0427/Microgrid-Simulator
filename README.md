@@ -1,42 +1,46 @@
 # Microgrid Simulator
 
-**How can a microgrid optimize its operation for a specific goal set by the
-consumer?**
+Microgrid Simulator is a Python project for studying how solar generation and
+battery storage affect electricity bills, grid-related carbon emissions, and
+electrical network operation.
 
-That goal might be minimizing life-cycle carbon emissions over a given
-operating range, minimizing explicit cost — the bill you actually pay the
-utility — or the more ambitious case: minimizing your bill while accounting
-for the social cost of the carbon you cause. This repository is a working
-answer to that question, from real market and carbon signals through battery
-dispatch and a utility bill, validated against a distribution power flow.
+It combines load and solar profiles, electricity prices, grid carbon intensity,
+and utility tariffs to compare battery operating strategies. CVXPY optimizes
+battery schedules for cost, emissions, or a weighted combination of both.
+OpenDSS evaluates those schedules through time-series power-flow simulations
+to check voltage, equipment loading, and network losses.
+
+The central question is: **How should a microgrid operate to meet a user's
+cost and emissions goals while respecting battery limits, and what electrical
+constraints does the resulting schedule reveal?**
 
 ---
 
 ## About this project
 
-Hi, I am [MohyeonTemplar0427](https://github.com/MohyeonTemplar0427), a UC
-Berkeley Energy Engineering 2026 grad. This repo is a personal project marking
-a milestone in my undergraduate journey, combining what I learned as an energy
-engineer at Cal.
+Hi, my name is Junha Yang, and I’m a 2026 UC Berkeley graduate with a B.S. in
+Energy Engineering. This repository is a personal extension of a class team
+project on microgrids and my undergraduate capstone research.
 
-Being an energy engineer still feels vague to me. My interests during my
-undergraduate were power electronics, circuit design, signal processing,
-control, and programming — so I defined myself as something closer to an
-electrical engineer. But I still feel I lack fundamental capabilities I
-assumed most electrical engineers would have, which makes my own abilities
-seem even more vague to me.
+Due to the broad range of disciplines within the field, being an energy
+engineer still feels vague to me, even after graduation. This project is my
+first effort to bring separate pieces of knowledge together and translate
+abstract concepts within energy engineering into a structured program that
+helps me organize and strengthen my foundational knowledge. The process has
+been rewarding: revisiting, applying, and connecting concepts from my studies
+within this project helped me develop a more concrete understanding of the
+system as a whole.
 
-This project is my first effort to take those separate pieces of knowledge and
-build the seemingly vague concept of a *microgrid* into a structured, specific
-program that helps users understand how their system operates more intuitively. The process of
-combining the very things that made my profession feel vague turned out to be
-fruitful: I revisited every concept I had learned but nearly lost from memory,
-consolidated my understanding of each one, and ultimately of the system
-itself.
-
-The project is an extension of a class team project and my undergraduate
-capstone research. Although it has "microgrid" in the name, it can be used for
-residential cases as well — a feature I will be updating soon.
+The simulator combines electricity demand, solar generation, electricity
+prices, grid carbon intensity, and utility tariffs to optimize battery
+schedules for cost, emissions, or both. It compares the resulting electricity
+bills and emissions across operating strategies, then uses OpenDSS to evaluate
+voltage, equipment loading, and network losses. This allows users to explore
+how operating decisions affect both economic outcomes and electrical
+performance. The current electrical feasibility check uses quasi-static
+power-flow snapshots at individual simulation time steps. The model does not
+yet evaluate the system’s transient response; that analysis is left for future
+development.
 
 ---
 
@@ -45,15 +49,15 @@ residential cases as well — a feature I will be updating soon.
 Ten major components, each one a package under `src/`.
 
 ### 1. Application and simulation workflow — [`src/simulation/`](src/simulation)
-Provides desktop and console interfaces, collects simulation settings,
-coordinates analyses, and displays results. A local browser application now
-supports location-based historical weather and clear-sky PV studies, preserves
-legacy CSV studies, and runs the same engine in isolated worker processes.
-It returns weather, solar, comparison, cost, dispatch, and AC validation tables.
-Launch it with `/usr/local/bin/python3 -m src.local_web.server` and open
-<http://127.0.0.1:8765>. See [Local web application](docs/Local_Web_Application.md)
-for setup, saved studies, and engine snapshot behavior. See also the [candidate ESS catalog and annual solar optimization](docs/ESS_Equipment_Catalog.md). The Tkinter GUI remains
-available for the broader set of existing profile controls.
+Provides desktop, browser, and command-line interfaces for configuring studies,
+running simulations, and reviewing results. The local browser workflow supports
+location-based weather and solar studies, CSV inputs, and saved studies.
+Results include comparisons of operating strategies, electricity costs, battery
+schedules, and electrical network checks.
+
+See [Local web application](docs/Local_Web_Application.md) for setup, saved
+studies, and engine snapshot behavior. See also the
+[candidate ESS catalog and annual solar optimization](docs/ESS_Equipment_Catalog.md).
 
 ### 2. Load and solar profiles — [`src/profiles/`](src/profiles)
 Creates building demand and PV generation profiles from synthetic inputs,

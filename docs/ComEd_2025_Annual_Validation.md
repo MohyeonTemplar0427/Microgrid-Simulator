@@ -1,5 +1,10 @@
 # ComEd 2025 annual billing and dispatch validation
 
+This records the earlier synthetic-load/clear-sky **BES** benchmark. The subsequent
+[historical-weather and actual-price BESH validation](ComEd_Historical_Annual_Inputs.md)
+uses different supply inputs; its results should not be treated as a weather-only
+comparison with this run.
+
 Development validation, October 13, 2026. Two hypothetical accounts compare
 grid-only, PV-only and PV plus battery using the shared schema-10 study worker.
 No stable engine pin or Web UI v1.0.1 designation is changed. Account service

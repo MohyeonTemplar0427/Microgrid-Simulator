@@ -44,13 +44,15 @@ def capabilities():
             "scope": "One complete calendar month, ordinary import-only accounts. Subtotals exclude state excise tax, municipal taxes and franchise fees. No storage optimization or export settlement."}
 
 
-def _csv_series(text, value_column):
+def _csv_series(text, value_column, *, max_rows=6000):
     if not isinstance(text, str) or not text.strip() or len(text.encode()) > 2*1024*1024:
         raise ValueError("Provide a nonempty CSV of at most 2 MiB.")
     try:
-        frame = pd.read_csv(StringIO(text))
-        if list(frame.columns) != ["timestamp", value_column] or len(frame) > 6000:
-            raise ValueError("CSV requires timestamp," + value_column + " in that order, at most 6000 rows.")
+        # Bound parsing before allocating a potentially large frame. Schema 9
+        # retains its monthly limit; schema 10 supplies its exact annual grid.
+        frame = pd.read_csv(StringIO(text), nrows=max_rows+1)
+        if list(frame.columns) != ["timestamp", value_column] or not 0 < len(frame) <= max_rows:
+            raise ValueError(f"CSV requires timestamp,{value_column} in that order, 1–{max_rows} rows.")
         # utc=True alone would silently interpret naive inputs as UTC.
         if not frame.timestamp.astype(str).str.match(r"^\d{4}-\d{2}-\d{2}[T ].*(?:Z|[+-]\d{2}:\d{2})$").all():
             raise ValueError("Every timestamp must be an ISO interval start with Z or an explicit UTC offset.")
@@ -101,15 +103,19 @@ def prepare(request):
     return imports, result
 
 
-def parse_prices(prices, grid):
+def parse_prices(prices, grid, *, max_rows=6000):
     """Shared source/coverage contract for billing replay and dispatch studies."""
     from .contract import number
     parsed_prices = None
     if prices is not None:
-        if not isinstance(prices, dict) or set(prices) != {"mode", "usd_per_mwh", "csv", "source", "basis_confirmed"}:
+        fields = {"mode", "usd_per_mwh", "csv", "source", "basis_confirmed"}
+        if isinstance(prices, dict) and prices.get("mode") == "pjm_csv":
+            fields.add("pjm_metadata")
+        if not isinstance(prices, dict) or set(prices) != fields:
             raise ValueError("Supply the exact ComEd hourly price fields.")
         if not isinstance(prices["source"], str) or not 1 <= len(prices["source"].strip()) <= 500 or prices["basis_confirmed"] is not True:
             raise ValueError("Confirm real-time residual ComEd-zone LMP in USD/MWh and document the source or synthetic assumption.")
+        provenance = None
         if prices["mode"] == "constant_example":
             number(prices["usd_per_mwh"], "Example hourly LMP", -1000000, 1000000)
             if prices["csv"] is not None:
@@ -118,10 +124,15 @@ def parse_prices(prices, grid):
         elif prices["mode"] == "csv":
             if prices["usd_per_mwh"] is not None:
                 raise ValueError("CSV prices must not carry a constant-price assumption.")
-            series = _csv_series(prices["csv"], "residual_lmp_usd_per_mwh")
+            series = _csv_series(prices["csv"], "residual_lmp_usd_per_mwh", max_rows=max_rows)
+        elif prices["mode"] == "pjm_csv":
+            from .comed_inputs import import_residual_prices
+            if prices["usd_per_mwh"] is not None:
+                raise ValueError("PJM files must not carry a constant-price assumption.")
+            series, provenance = import_residual_prices(prices["csv"], prices["pjm_metadata"], grid)
         else:
             raise ValueError("Choose synthetic hourly prices or a verified CSV.")
-        parsed_prices = ComEdHourlyPrices(series, prices["source"], "COMED", "pjm_real_time_residual_lmp", "USD/MWh", "interval_start")
+        parsed_prices = ComEdHourlyPrices(series, prices["source"], "COMED", "pjm_real_time_residual_lmp", "USD/MWh", "interval_start", provenance)
     return parsed_prices
 
 

@@ -33,6 +33,7 @@ def import_pjm_csv(csv_text, metadata, start, end, location):
                "Pricing Node Name": "pnode_name", "Transmission Zone": "zone",
                "Total LMP Real Time": "total_lmp_rt", "Total LMP Day Ahead": "total_lmp_da",
                "Version Number": "version_nbr", "Latest Version": "row_is_current"}
+    aliases["Pricing Node Type"] = "type"
     if any(k in frame and v in frame for k, v in aliases.items()):
         raise ValueError("Ambiguous duplicate PJM column aliases.")
     frame = frame.rename(columns=aliases)
@@ -40,6 +41,10 @@ def import_pjm_csv(csv_text, metadata, start, end, location):
                 "version_nbr", "row_is_current"}
     if not required <= set(frame):
         raise ValueError("PJM file lacks timestamp, node, zone, price or revision fields: " + str(sorted(required-set(frame))))
+    # Residual EDC aggregates have a blank native transmission-zone field.
+    # Preserve it; the caller must explicitly verify the aggregate identity.
+    # Do not relabel it from a customer's distribution utility or location.
+    frame["zone"] = frame.zone.fillna("")
     if len(frame) > 110000 or frame.empty:
         raise ValueError("PJM file must contain 1–110,000 rows.")
     # This source column explicitly denotes UTC, including when PJM omits Z.

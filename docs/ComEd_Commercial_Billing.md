@@ -119,7 +119,9 @@ An old pinned engine hides the navigation and rejects ComEd submissions.
   hour, with the explicitly confirmed PJM real-time residual ComEd-zone basis.
 - Timestamps require ISO dates/times plus `Z` or an explicit UTC offset.
   `T` and a space separator are accepted. Missing/duplicate/out-of-order data
-  are rejected. Each file is bounded to 2 MiB and 4,000 rows.
+  are rejected. Schema 9 normalized files are bounded to 2 MiB and 6,000 rows.
+  Schema 10 [annual imports](ComEd_Historical_Annual_Inputs.md) support full-year
+  native records and official PJM residual hourly CSVs with revision provenance.
 - POST `/api/v1/comed/studies` uses schema 9 and the shared CSRF-protected local
   queue. Execution uses the existing isolated, immutable engine worker.
 - Results show charges/credits, subtotal, energy, and both commercial peak
