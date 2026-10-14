@@ -76,7 +76,7 @@ def test_october_columbus_day_is_not_a_nerc_holiday():
     ('medium',400,'12.78','-.070968','1.0042','.15'),
     ('large',1000,'12.47','-.054212','1.0042','.15'),
     ('very_large',10000,'11.49','-.004777','1.0005','.13'),
-    ('extra_large',10001,'11.63','-.139901','1.0005','.14'),
+    ('extra_large',10001,'11.63','-.139901','1.0005','.13'),
 ])
 def test_delivery_bands_and_independently_transcribed_adjustments(delivery,peak,base,rbaf,iduf,dgra):
     from decimal import Decimal as D, ROUND_HALF_UP
@@ -155,4 +155,4 @@ def test_hourly_commercial_preserves_negative_prices_and_separate_capacity():
 def test_plan_catalog_commercial_versions_and_coverage():
     plans=build_comed_commercial_plans();assert len(plans)==14
     assert all(p.version_on(date(2026,10,1)).bes_demand_energy==__import__('decimal').Decimal('.08470') for p in plans)
-    with pytest.raises(ValueError,match='no filed version'):bill(meter(8),account(billing_month=date(2026,8,1)))
+    with pytest.raises(ValueError,match='no filed version'):bill(meter(11),account(billing_month=date(2026,11,1)))

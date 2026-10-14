@@ -138,11 +138,14 @@ def test_calendar_grid_handles_dst_without_inventing_rate_coverage(month, hours)
     utc, interval_hours = _month_grid(meter(month).index, date(2026, month, 1))
     assert len(utc) * interval_hours == hours
     assert len(utc.floor("h").unique()) == hours
-    with pytest.raises(ValueError, match="no filed version"):
-        bill(meter(month), account(month))
+    if month == 3:
+        assert bill(meter(month), account(month))['import_kwh'] == hours
+    else:
+        with pytest.raises(ValueError, match="no filed version"):
+            bill(meter(month), account(month))
 
 
-@pytest.mark.parametrize("month", [1, 8, 11, 12])
+@pytest.mark.parametrize("month", [11, 12])
 def test_unsupported_months_reject(month):
     with pytest.raises(ValueError, match="no filed version"):
         bill(meter(month), account(month))
@@ -227,7 +230,7 @@ def test_plan_catalog_has_eight_choices_and_bounded_versions():
     plans = build_comed_residential_plans()
     assert len({p.identity.plan_id for p in plans}) == 8
     for plan in plans:
-        assert len(plan.versions) == 2
+        assert len(plan.versions) == 22
         assert plan.version_on(date(2026, 9, 1)).bes_energy == Decimal(".08678")
         assert plan.version_on(date(2026, 10, 31)).bes_energy == Decimal(".08413")
         with pytest.raises(ValueError): plan.version_on(date(2026, 11, 1))

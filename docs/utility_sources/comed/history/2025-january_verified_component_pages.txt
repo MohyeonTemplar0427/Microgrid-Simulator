@@ -1,0 +1,497 @@
+=== ORIGINAL PDF PAGE 743 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 8th Revised Informational Sheet No. 18 
+Edison Company (Canceling 5th Revised Informational Sheet No. 18) 
+ 
+REVENUE BALANCING ADJUSTMENT FACTOR 
+Filed with the Illinois Commerce Commission on Date Effective:  December 22, 2022 
+December 21, 2022.  Filed pursuant to the   Issued by T. R. Donnelly, President and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 1, 2022, in Docket No. 22-0138.  Chicago, Illinois  60680-5379 
+ 
+ 
+Supplement to Rider RBA (1) 
+ 
+Delivery Class 
+ 
+Revenue Balancing 
+Adjustment Factor (RBAF) 
+Applicable Prior to the 
+January 2026 Monthly Billing 
+Period (2) (3) 
+Residential Single Family Without Electric Space Heat Delivery Class Not Applicable 
+Residential Multi Family Without Electric Space Heat Delivery Class Not Applicable 
+Residential Single Family With Electric Space Heat Delivery Class Not Applicable 
+Residential Multi Family With Electric Space Heat Delivery Class Not Applicable 
+Watt-Hour Delivery Class Not Applicable 
+Small Load Delivery Class Not Applicable 
+Medium Load Delivery Class Not Applicable 
+Large Load Delivery Class Not Applicable 
+Very Large Load Delivery Class Not Applicable 
+Extra Large Load Delivery Class Not Applicable 
+High Voltage Delivery Class Not Applicable 
+Fixture-Included Lighting Delivery Class Not Applicable 
+Dusk to Dawn Lighting Delivery Class Not Applicable 
+General Lighting Delivery Class Not Applicable 
+Railroad Delivery Class Not Applicable 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider RBA – Revenue Balancing Adjustment (Rider RBA). 
+(2) The RBAF is included in Base Delivery Service Charge line items on retail customer bills pursuant to 
+Rider RBA. 
+(3) In the above tables, XX.XXXX denotes a charge, and (XX.XXXX) denotes a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 758 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY  10th Revised Informational Sheet No. 33 
+Edison Company (Canceling 9th Revised Informational Sheet No. 33) 
+ 
+DISTRIBUTION LOSS FACTORS 
+Filed with the Illinois Commerce Commission on Date Effective:  December 21, 2023 
+December 20, 2023. Issued pursuant to the            Issued by T. R. Donnelly, President and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 14, 2023, in Docket Nos. 22-0486/23-0055 (Cons.). Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BESH, Rate RDS, and Rider PE (1) 
+ 
+ 
+ 
+ 
+Delivery Class 
+Distribution Loss Factor 
+(DLF) 
+Beginning with the 
+January 2022 
+Monthly Billing Period 
+and Extending Through 
+the 
+December 2022 
+Monthly Billing Period 
+(2)(3) 
+ 
+DLF 
+Beginning with the 
+January 2023 
+Monthly Billing Period 
+and Extending Through 
+the 
+December 2025 
+Monthly Billing Period 
+(2)(4) 
+Residential Single Family Without Electric Space Heat 0.0520 0.0517 
+Residential Multi Family Without Electric Space Heat 0.0533 0.0532 
+Residential Single Family With Electric Space Heat 0.0540 0.0554 
+Residential Multi Family With Electric Space Heat 0.0551 0.0567 
+Watt-Hour 0.0534 0.0532 
+Small Load 0.0509 0.0506 
+Medium Load 0.0553 0.0542 
+Large Load 0.0488 0.0481 
+Very Large Load 0.0481 0.0475 
+Extra Large Load 0.0408 0.0399 
+High Voltage 
+Applicable provided at least one service point is 
+metered for billing purposes at or above 
+138,000 volts 
+Otherwise, applicable provided the highest 
+Maximum Kilowatts Delivered (MKD) established 
+during the most recent twelve (12) consecutive 
+monthly billing periods prior to the current monthly 
+billing period exceeded 10,000 kilowatts (kW) 
+Otherwise 
+ 
+ 
+ 
+0.0041  
+ 
+ 
+ 
+ 
+0.0072  
+0.0068 
+ 
+ 
+ 
+0.0039 
+ 
+ 
+ 
+ 
+0.0068 
+0.0074 
+Railroad 0.0217 0.0226 
+Fixture-Included Lighting 0.0759 0.0770 
+Dusk to Dawn Lighting 0.0759 0.0770 
+General Lighting 0.0668 0.0681 
+System Average (5)  0.0477 0.0470 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BESH – Basic Electric Service Hourly Pricing  
+ (Rate BESH), Rate RDS – Retail Delivery Service (Rate RDS), and Rider PE – Purchased Electricity 
+(Rider PE). 
+(2) DLFs are applied in accordance with the provisions of Rate RDS and Rider PE except as noted in (5). 
+(3) DLFs are determined in accordance with the Illinois Commerce Commission’s (ICC’s) Order in  
+ Docket No. 21-0367.  
+(4) DLFs are determined in accordance with the ICC’s Order in Docket No. 22-0302. 
+(5) DLF is applied in accordance with the provisions of Rate BESH. 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 761 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 8th Revised Informational Sheet No. 36 
+Edison Company  (Canceling 7th Revised Informational Sheet No. 36) 
+  
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  August 17, 2024 
+August 16, 2024.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+   Chicago, Illinois 60680-5379 
+ 
+RENEWABLE ENERGY ADJUSTMENTS 
+ 
+ 
+Supplement to Rider REA (1) 
+ 
+ 
+ 
+ 
+ 
+ 
+RE Adjustment Applicability (2) 
+ 
+RE Adjustment 
+Applicable for the  
+June 2024 Monthly Billing Period  
+and Extending Through the  
+August 2024 Monthly Billing Period (3) 
+ 
+All Retail Customers 0.502 ¢/kWh 
+ 
+ 
+RE Adjustment Applicability (2) 
+ 
+RE Adjustment 
+Applicable Beginning with the  
+September 2024 Monthly Billing Period 
+and Extending Through the  
+May 2025 Monthly Billing Period (3) 
+ 
+All Retail Customers 0.502 ¢/kWh 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider REA - Renewable Energy Adjustment (Rider REA). 
+(2)  The RE Adjustment is designated on retail customer bills as the Renewable Portfolio Standard.  
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 762 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 28th Revised Informational Sheet No. 36.1 
+Edison Company (Canceling 27th Revised Informational Sheet No. 36.1) 
+ 
+CARBON-FREE RESOURCE ADJUSTMENTS 
+AND 
+CARBON-FREE RESOURCE MONTHLY RECONCILIATION FACTORS 
+ 
+Supplement to Rider CFRA (1) 
+ 
+Filed with the Illinois Commerce Commission on  Date Effective:  January 18, 2025 
+January 17, 2025.  Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois  60680-5379 
+ 
+Applicable to All 
+Retail Customers 
+During the Monthly 
+Billing Period 
+Carbon-Free Resource 
+(CFR) Adjustment 
+(¢/kWh) (3) 
+CFR Monthly 
+Reconciliation (CFRMR) 
+Factor (¢/kWh) (3) 
+Total of CFR 
+Adjustment 
+and 
+CFRMR Factor (¢/kWh) 
+(2) (3)  
+June 2024 (0.395) 1.275 0.880 
+July 2024 (0.395) 1.093 0.698 
+August 2024 (0.395) 1.001 0.606 
+September 2024 (0.395) 1.270 0.875 
+October 2024 (0.173) 1.279 1.106 
+November 2024 (0.173) 0.726 0.553 
+December 2024 (0.173) 0.853 0.680 
+January 2025 (0.173) 0.550 0.377 
+February 2025 (0.111) 0.586 0.475 
+March 2025 (0.111) 
+To Be Determined 
+(TBD) TBD 
+April 2025 (0.111) TBD TBD 
+May 2025 (0.111) TBD TBD 
+ 
+ 
+NOTES:  
+(1) This informational sheet is supplemental to Rider CFRA – Carbon-Free Resource Adjustment (Rider 
+CFRA). 
+(2) The total of the CFR Adjustment and the CFRMR Factor is designated on retail customer bills as the 
+Carbon-Free Energy Resource Adj. 
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 790 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Informational Sheet No. 63  
+Edison Company (Canceling 2nd Revised Informational Sheet No. 63) 
+ 
+COAL TO SOLAR ADJUSTMENT 
+Filed with the Illinois Commerce Commission on Date Effective:  November 13, 2024 
+November 12, 2024.     Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+   Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider CTS (1) 
+ 
+Coal to Solar Adjustment (CTSA) Applicable Beginning with the October 2024 Monthly Billing 
+Period and Extending Through the December 2024 Monthly Billing Period (2) 
+ 
+0.000 ¢/kWh 
+ 
+CTSA Applicable Beginning with the January 2025 Monthly Billing Period and Extending Through 
+the May 2025 Monthly Billing Period (2) 
+ 
+0.000 ¢/kWh 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider CTS – Coal to Solar (Rider CTS). 
+(2) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+
+
+=== ORIGINAL PDF PAGE 792 ===
+ILL. C.C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Informational Sheet No. 64.1 
+Edison Company (Canceling 2nd Revised Informational Sheet No. 64.1) 
+ 
+ DELIVERY SERVICE CHARGES 
+ 
+ (Continued from Informational Sheet No. 64) 
+ 
+ (Continued on Informational Sheet No. 64.2) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  January 1, 2025 
+December 23, 2024.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order on Refiled Plan Post Office Box 805379 
+dated December 19, 2024, in  Chicago, Illinois 60680-5379 
+Docket Nos. 22-0486/23-0055/24-0181 (Consol.) 
+ 
+Supplement to Rate MRPP (1)(2)(3)(4) 
+ 
+RESIDENTIAL DELIVERY SERVICE CHARGES (CONTINUED). 
+ 
+Applicable for the Monthly Billing Periods In 
+2025 2026 2027 
+Residential Single Family Without Electric Space Heat Delivery Class 
+CC $12.97 & ADJ $13.23 & ADJ $13.48 & ADJ  
+SMSC $3.52 & ADJ $3.52 & ADJ $3.50 & ADJ  
+DFC ($/kWh) $0.05269 & ADJ $0.05497 & ADJ $0.05709 & ADJ  
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ  
+Residential Multi Family Without Electric Space Heat Delivery Class 
+CC $9.61 & ADJ $9.74 & ADJ $9.90 & ADJ 
+SMSC $3.52 & ADJ $3.52 & ADJ $3.50 & ADJ 
+DFC ($/kWh) $0.04025 & ADJ $0.04194 & ADJ $0.04353 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Residential Single Family With Electric Space Heat Delivery Class 
+CC $14.84 & ADJ $15.07 & ADJ $15.23 & ADJ 
+SMSC $3.52 & ADJ $3.52 & ADJ $3.50 & ADJ 
+DFC ($/kWh) $0.02523 & ADJ $0.02617 & ADJ $0.02715 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Residential Multi Family With Electric Space Heat Delivery Class 
+CC $10.44 & ADJ $10.55 & ADJ $10.66 & ADJ 
+SMSC $3.52 & ADJ $3.52 & ADJ $3.50 & ADJ 
+DFC ($/kWh) $0.02399 & ADJ $0.02487 & ADJ $0.02581 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+
+
+=== ORIGINAL PDF PAGE 794 ===
+ 
+ILL. C.C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Informational Sheet No. 64.3 
+Edison Company (Canceling 2nd Revised Informational Sheet No. 64.3) 
+ 
+ DELIVERY SERVICE CHARGES 
+ 
+(Continued from Informational Sheet No. 64.2) 
+  
+ (Continued on Informational Sheet No. 64.4) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  January 1, 2025 
+December 23, 2024.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order on Refiled Plan Post Office Box 805379 
+dated December 19, 2024, in  Chicago, Illinois 60680-5379 
+Docket Nos. 22-0486/23-0055/24-0181 (Consol.) 
+NONRESIDENTIAL DELIVERY SERVICE CHARGES (CONTINUED). 
+ 
+Applicable for the Monthly Billing Periods In 
+2025 2026 2027 
+Watt-Hour Delivery Class 
+CC $14.74 & ADJ $14.98 & ADJ $15.22 & ADJ 
+SMSC $2.65 & ADJ $2.65 & ADJ $2.64 & ADJ 
+DFC ($/kWh) $0.02883 & ADJ $0.02952 & ADJ $0.03056 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Small Load Delivery Class 
+CC  $14.42 & ADJ $14.59 & ADJ $14.77 & ADJ 
+SMSC  $6.74 & ADJ $6.69 & ADJ $6.66 & ADJ 
+SV DFC ($/kW) $12.71 & ADJ $12.94 & ADJ $13.50 & ADJ 
+PV DFC ($/kW) $5.60 & ADJ $5.71 & ADJ $5.93 & ADJ 
+PV TC ($/kW) $0.35 & ADJ $0.36 & ADJ $0.38 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Medium Load Delivery Class 
+CC  $24.32 & ADJ $24.73 & ADJ $25.15 & ADJ 
+SMSC  $11.63 & ADJ $11.54 & ADJ $11.49 & ADJ 
+SV DFC ($/kW) $13.02 & ADJ $13.24 & ADJ $13.79 & ADJ 
+PV DFC ($/kW) $7.36 & ADJ $7.45 & ADJ $7.76 & ADJ 
+PV TC ($/kW) $0.35 & ADJ $0.36 & ADJ $0.38 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+
+
+=== ORIGINAL PDF PAGE 796 ===
+ILL. C.C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Informational Sheet No. 64.5 
+Edison Company (Canceling 2nd Revised Informational Sheet No. 64.5) 
+ 
+ DELIVERY SERVICE CHARGES 
+ 
+ (Continued from Informational Sheet No. 64.4) 
+ 
+(Continued on Informational Sheet No. 64.6) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  January 1, 2025 
+December 23, 2024.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order on Refiled Plan Post Office Box 805379 
+dated December 19, 2024, in  Chicago, Illinois 60680-5379 
+Docket Nos. 22-0486/23-0055/24-0181 (Consol.) 
+NONRESIDENTIAL DELIVERY SERVICE CHARGES (CONTINUED). 
+ 
+Applicable for the Monthly Billing Periods In 
+2025 2026 2027 
+Large Load Delivery Class 
+CC  $143.55 & ADJ $145.48 & ADJ $147.75 & ADJ 
+SMSC  $11.94 & ADJ $11.85 & ADJ $11.81 & ADJ 
+SV DFC ($/kW) $12.72 & ADJ $12.93 & ADJ $13.47 & ADJ 
+PV DFC ($/kW) $10.04 & ADJ $10.14 & ADJ $10.56 & ADJ 
+PV TC ($/kW) $0.44 & ADJ $0.46 & ADJ $0.48 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Very Large Load Delivery Class 
+CC  $878.23 & ADJ $896.34 & ADJ $917.18 & ADJ 
+SMSC  $12.39 & ADJ $12.31 & ADJ $12.26 & ADJ 
+SV DFC ($/kW) $11.77 & ADJ $11.91 & ADJ $12.27 & ADJ 
+PV DFC ($/kW) $9.63 & ADJ $9.72 & ADJ $10.01 & ADJ 
+PV TC ($/kW) $0.44 & ADJ $0.46 & ADJ $0.48 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+Extra Large Load Delivery Class 
+CC  $2,011.40 & ADJ $2,049.91 & ADJ $2,093.24 & ADJ 
+SMSC  $35.10 & ADJ $34.93 & ADJ $34.78 & ADJ 
+SV DFC ($/kW) $11.43 & ADJ $11.57 & ADJ $11.92 & ADJ 
+PV DFC ($/kW) $10.71 & ADJ $10.81 & ADJ $11.14 & ADJ 
+PV TC ($/kW) $0.48 & ADJ $0.49 & ADJ $0.51 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 798 ===
+ 
+ILL. C.C. No. 10 
+Commonwealth ELECTRICITY 3rd Revised Informational Sheet No. 64.7 
+Edison Company (Canceling 2nd Revised Informational Sheet No. 64.7) 
+ 
+ DELIVERY SERVICE CHARGES 
+ 
+ (Continued from Informational Sheet No. 64.6) 
+ 
+ (Continued on Informational Sheet No. 64.8) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  January 1, 2025 
+December 23, 2024.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order on Refiled Plan Post Office Box 805379 
+dated December 19, 2024, in  Chicago, Illinois 60680-5379 
+Docket Nos. 22-0486/23-0055/24-0181 (Consol.) 
+NONRESIDENTIAL DELIVERY SERVICE CHARGES (CONTINUED). 
+ 
+Applicable for the Monthly Billing Periods In 
+2025 2026 2027 
+High Voltage Delivery Class 
+CC  $701.57 & ADJ $719.73 & ADJ $738.66 & ADJ 
+SMSC  $32.11 & ADJ $32.00 & ADJ $31.80 & ADJ 
+SV DFC ($/kW) $17.65 & ADJ $15.21 & ADJ $15.00 & ADJ 
+PV DFC ($/kW) $22.18 & ADJ $18.57 & ADJ $18.16 & ADJ 
+PV TC ($/kW) $0.72 & ADJ 
+ 
+$0.75 & ADJ $0.78 & ADJ 
+ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+High Voltage DFCs and Transformer Charges are Applicable to the portion of the MKD that is served by electric 
+conductors entering the retail customer's premises at or above 69,000 volts. 
+The retail customer’s MKD during the most recent twelve (12) consecutive monthly billing periods prior to the current 
+monthly billing period never exceeded 10,000 kW. 
+HV DFC ($/kW) $0.66 & ADJ $0.59 & ADJ $0.59 & ADJ 
+HV TC ($/kW) $4.76 & ADJ $5.00 & ADJ $5.22 & ADJ 
+The retail customer’s MKD during the most recent twelve (12) consecutive monthly billing periods prior to the current 
+monthly billing period exceeded 10,000 kW 
+HV DFC ($/kW) $0.62 & ADJ $0.51 & ADJ $0.49 & ADJ 
+HV TC ($/kW) $2.56 & ADJ $2.65 & ADJ $2.77 & ADJ 
+Railroad Delivery Class 
+CC  $6,338.28 & ADJ $6,450.59 & ADJ $6,580.97 & ADJ 
+SMSC  $27.83 & ADJ $27.63 & ADJ $27.50 & ADJ 
+DFC ($/kW) $5.91 & ADJ $6.24 & ADJ $6.51 & ADJ 
+IEDT ($/kWh) $0.00124 & ADJ $0.00124 & ADJ $0.00124 & ADJ 
+
+

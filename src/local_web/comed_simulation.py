@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from .comed_study import defaults as bill_defaults, parse_prices, _csv_series
+from .comed_study import defaults as bill_defaults, capabilities as bill_capabilities, parse_prices, _csv_series
 from .contract import DEFAULT_SITE_REQUEST, number
 from .site_profile import customer_class
 from ..billing.comed_residential import ComEdResidentialAccount, _month_grid, _numeric_series
@@ -46,11 +46,14 @@ def defaults(kind="residential"):
 
 def capabilities():
     return {"schema_version": 10, "defaults": {k: defaults(k) for k in ("residential", "commercial")},
-            "scope": "Main-workflow, non-export ComEd subtotal comparison; September/October 2026 complete months; local candidate only"}
+            "billing_months": bill_capabilities()["billing_months"],
+            "billing_months_by_supply": bill_capabilities()["billing_months_by_supply"],
+            "billing_cycle_support": True,
+            "scope": "Non-export ComEd subtotals; only listed, complete verified billing-month composites. Documented meter cycles or calendar studies; short-service allocations require explicit evidence; local candidate only"}
 
 
 def prepare(r):
-    if not isinstance(r, dict) or set(r) != set(defaults()) or type(r.get("schema_version")) is not int or r["schema_version"] != 10:
+    if not isinstance(r, dict) or set(r)-{"billing_cycles"} != set(defaults()) or type(r.get("schema_version")) is not int or r["schema_version"] != 10:
         raise ValueError("Supply exactly the ComEd simulation schema 10 fields.")
     if not isinstance(r["name"], str) or not 1 <= len(r["name"].strip()) <= 120:
         raise ValueError("Supply a draft or saved study name.")
@@ -76,14 +79,17 @@ def prepare(r):
         month = date.fromisoformat(a["billing_month"])
         grid = build_interval_index(r["start_date"], r["end_date"], r["timezone"], r["timestep_minutes"])
     except (TypeError, ValueError) as exc:
-        raise ValueError("Supply complete September/October 2026 calendar-month dates.") from exc
-    _month_grid(grid.index, month)
+        raise ValueError("Supply valid ComEd service dates and the confirmed utility billing month.") from exc
+    from ..billing.comed_cycles import parse_cycles
+    cycles = parse_cycles(r.get("billing_cycles"))
+    if cycles is None:
+        _month_grid(grid.index, month)
     cls = ComEdResidentialAccount if kind == "residential" else ComEdCommercialAccount
     account = cls(**{**a, "billing_month": month})
     prices = parse_prices(r["prices"], grid.index)
     # Authoritative validation covers eligibility, historical account facts,
     # applicable versions, external price coverage and fixed capacity charges.
-    calculate(pd.Series(0., index=grid.index), account, prices)
+    calculate(pd.Series(0., index=grid.index), account, prices, cycles)
     load = r["load"]
     if not isinstance(load, dict) or set(load) != set(defaults(kind)["load"]) or not isinstance(load["source"], str) or not 1 <= len(load["source"].strip()) <= 500 or type(load["native_basis_confirmed"]) is not bool:
         raise ValueError("Supply a labeled native-load source and basis.")
@@ -121,8 +127,9 @@ def prepare(r):
     if r["weather_source"] not in ("clear_sky", "nsrdb") or (r["weather_source"] == "clear_sky" and r["weather_id"] is not None):
         raise ValueError("Choose the shared clear-sky or historical-weather contract.")
     if r["weather_source"] == "nsrdb":
-        # Existing published years end in 2025; verified ComEd rates are 2026.
-        raise ValueError("NSRDB's supported years do not overlap this ComEd tariff window. Use a labeled clear-sky study; no weather year shifting.")
+        # Historical rate availability does not establish a reviewed weather
+        # import path. Keep the existing candidate's clear-sky limitation.
+        raise ValueError("NSRDB weather import is not enabled for ComEd studies yet. Use a labeled clear-sky study; no weather year shifting.")
     battery = r["battery"]
     if battery is not None:
         Battery(**battery)
@@ -171,11 +178,13 @@ def execute(directory, r):
         source_tables = {"weather": weather, "pv-production": pv.diagnostics}
         pv_provenance = {"weather": weather_source, "pv": pv.provenance}
     inputs = pd.DataFrame({"timestamp": grid.index, "native_load_kw": load, "pv_available_kw": available})
-    results = {"grid_only": optimize(inputs.assign(pv_available_kw=0.), account, prices),
-               "pv_only": optimize(inputs, account, prices),
+    from ..billing.comed_cycles import parse_cycles
+    cycles = parse_cycles(r.get("billing_cycles"))
+    results = {"grid_only": optimize(inputs.assign(pv_available_kw=0.), account, prices, billing_cycles=cycles),
+               "pv_only": optimize(inputs, account, prices, billing_cycles=cycles),
                "pv_battery": optimize(inputs, account, prices, r["battery"],
-                   wear=r["degradation_cost_per_kWh"], include_wear=r["include_degradation_in_optimization"])}
-    comparisons, items, tables, ac = [], [], [], {}
+                   wear=r["degradation_cost_per_kWh"], include_wear=r["include_degradation_in_optimization"], billing_cycles=cycles)}
+    comparisons, items, tables, ac, cycle_rows = [], [], [], {}, []
     def save(key, label, data):
         data = data.copy()
         if "timestamp" in data:
@@ -184,6 +193,15 @@ def execute(directory, r):
         tables.append({"id": key, "label": label, "row_count": len(data)})
     for key, result in results.items():
         bill, dispatch = result["bill"], result["dispatch"]
+        warnings.extend(key+": "+message for message in result["warnings"])
+        for i, cycle_bill in enumerate(bill.get("cycles", [])):
+            cycle_rows.append({"scenario": key, "cycle_index": i,
+                **cycle_bill["billing_cycle"], "version_id": cycle_bill["version_id"],
+                "import_kwh": cycle_bill["import_kwh"], "subtotal_usd": cycle_bill["subtotal_usd"],
+                "billed_mkd_kw": cycle_bill.get("billed_mkd_kw"),
+                "overall_30min_peak_kw": cycle_bill.get("overall_30min_peak_kw"),
+                "charge_factors": json.dumps(cycle_bill["billing_cycle"]["charge_factors"]),
+                "is_complete_bill": False})
         battery = Battery(**r["battery"]) if key == "pv_battery" and r["battery"] is not None else None
         replay = dispatch.rename(columns={"native_load_kw": "load_kw", "pv_output_kw": "pv_kw"})
         handoff = create_opendss_handoff(replay, timestep_minutes=r["timestep_minutes"], expected_timezone=r["timezone"])
@@ -205,12 +223,16 @@ def execute(directory, r):
             "optimization_objective_usd": result["objective_usd"], "recalculated_objective_usd": result["recalculated_objective_usd"],
             "rounding_difference_usd": result["rounding_difference_usd"], "rounding_bound_usd": result["rounding_bound_usd"],
             "solver_gap_usd": result["solver_gap_usd"], "terminal_energy_kwh": result["terminal_energy_kwh"],
+            "cost_optimum_proven": result["cost_optimum_proven"],
+            "throughput_tie_break_status": result["throughput_tie_break_status"],
             "all_intervals_feasible": bool(ac[key].feasible.all()) if supported_ac else None})
-        base_lines = {x["name"]: x["amount_usd"] for x in results["grid_only"]["bill"]["lines"]}
-        items.extend({**line, "scenario": key, "subtotal_savings_vs_grid_usd": base_lines[line["name"]]-line["amount_usd"],
+        base_lines = {(x.get("cycle_index"), x["name"]): x["amount_usd"] for x in results["grid_only"]["bill"]["lines"]}
+        items.extend({**line, "scenario": key, "subtotal_savings_vs_grid_usd": base_lines[(line.get("cycle_index"), line["name"])]-line["amount_usd"],
                       "source_pdf_pages": ", ".join(map(str, line["source_pdf_pages"]))} for line in bill["lines"])
     save("comparison", "ComEd modeled subtotal comparison", pd.DataFrame(comparisons))
     save("billing-components", "Itemized modeled charges, credits and savings", pd.DataFrame(items))
+    if cycle_rows:
+        save("billing-cycles", "Subtotals and demand by documented meter cycle", pd.DataFrame(cycle_rows))
     save("inputs", "Native load and available AC PV", inputs)
     for key, result in results.items():
         save("dispatch-"+key, "Dispatch · "+key, result["dispatch"])
@@ -228,6 +250,10 @@ def execute(directory, r):
                  "Representative balanced 12.47 kV/480 V, 750 kVA OpenDSS circuit; Q=0 inverter and assumed 0.95 load PF. Losses are reported, not added to ideal-meter bills; no site-specific or dynamic validation."]
     if not ac:
         warnings.append("AC replay is unsupported for primary/high-voltage service; retail subtotals do not imply electrical feasibility.")
+    if cycles:
+        warnings.append("Rates use each explicitly designated utility billing month, not service-date calendar splits. Demand and fixed charges are assessed once per documented cycle. The comparison peak is the maximum across cycles; inspect the billing-cycles table for separate charged peaks.")
+        if any(c.kind == "short_service" for c in cycles):
+            warnings.append("Short-service charge factors are documented account inputs. The model has not verified a universal proration rule or the authenticity of the supplied allocation source; it never assumes days/30. Every actual-cycle interval is required.")
     if prices and r["prices"]["mode"] == "constant_example":
         warnings.append("BESH prices are explicitly synthetic assumptions, not observed ComEd-zone market data.")
     if prices:
@@ -236,6 +262,8 @@ def execute(directory, r):
         "total_usd": None, "is_complete_bill": False, "excluded_components": results["grid_only"]["bill"]["excluded_components"],
         "regional_account": r["regional_account"], "account": r["account"], "operating_contract": r["operating_contract"],
         "billing": {k: v["bill"] for k, v in results.items()}, "ac_validation": summarize_ac_validation(ac) if ac else None,
+        "optimization": {k: {field: v[field] for field in ("cost_optimum_proven", "throughput_tie_break_status", "strategy", "solver")}
+                         for k, v in results.items()},
         "input_provenance": {"load": {k: v for k, v in r["load"].items() if k != "csv"}, "pv": pv_provenance,
             "native_csv_sha256": hashlib.sha256(r["load"]["csv"].encode()).hexdigest() if r["load"]["csv"] else None,
             "price_csv_sha256": hashlib.sha256(r["prices"]["csv"].encode()).hexdigest() if r["prices"] and r["prices"]["csv"] else None,

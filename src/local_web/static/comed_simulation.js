@@ -10,6 +10,14 @@ function buildComedSimulationRequest(base, v) {
   r.account.supply=v.tariff_id==="comed_BESH"?"BESH":"BES";
   if(!["comed_BES","comed_BESH"].includes(v.tariff_id))throw new Error("Choose ComEd BES or BESH in Economics.");
   r.account.delivery_class=v.ce_class;r.account.billing_month=r.start_date.slice(0,7)+"-01";
+  delete r.billing_cycles;
+  if(v.ce_cycle_mode==="meter_cycles") {
+    if(v.ce_cycles_json?.trim())r.billing_cycles=JSON.parse(v.ce_cycles_json);
+    else r.billing_cycles=[{start_date:r.start_date,end_date:r.end_date,billing_month:v.ce_billing_month,
+      kind:v.ce_cycle_kind||"regular",source:v.ce_cycle_source,
+      charge_factors:v.ce_cycle_kind==="short_service"?JSON.parse(v.ce_charge_factors||"{}"):null}];
+    r.account.billing_month=r.billing_cycles[0]?.billing_month;
+  }
   r.account.ordinary_import_only_confirmed=v.ce_account_confirmed===true;
   if(r.site_profile.site_type==="commercial"||r.site_profile.subtype==="common_areas") {
     for(const key of ["previous_12_month_peak_kw","previous_calendar_year_peak_kw","previous_year_months_ge_100kw"])
@@ -46,7 +54,12 @@ function buildComedSimulationRequest(base, v) {
     grid_charging_confirmed:v.ce_grid_charge===true,reference:v.ce_operation_reference||""};
   return r;
 }
-if(typeof module!=="undefined")module.exports={buildComedSimulationRequest};
+function comedBillingMonths(capabilities, supply) {
+  return capabilities.comed_simulation.billing_months_by_supply?.[supply]
+    || capabilities.comed.billing_months_by_supply?.[supply]
+    || capabilities.comed_simulation.billing_months || capabilities.comed.billing_months;
+}
+if(typeof module!=="undefined")module.exports={buildComedSimulationRequest,comedBillingMonths};
 
 if(typeof document!=="undefined") {
   const f=name=>field("ce_"+name);
@@ -71,6 +84,16 @@ if(typeof document!=="undefined") {
     <label id="comed-hv">Prior 12 billing periods · maximum MKD kW<input name="ce_hv_mkd" type="number" min="0" step="any"/></label>
     <p class="hint">Class history, previous-year rider thresholds, current all-hours demand, current billed MKD and BESH capacity are distinct quantities. Histories remain fixed across every scenario. Select BES/BESH in Economics.</p></div>`;
   document.querySelector('[data-step="2"]').append(account);
+  const cycles=document.createElement("fieldset");cycles.id="comed-cycles";cycles.hidden=true;
+  cycles.innerHTML=`<legend>ComEd billing cycle</legend>
+    <label>Billing period basis<select name="ce_cycle_mode"><option value="calendar_month">Calendar-month study</option><option value="meter_cycles">Documented utility meter cycle(s)</option></select></label>
+    <div id="comed-cycle-details"><label>Utility-designated billing month<select name="ce_billing_month"></select></label>
+    <label>Cycle type<select name="ce_cycle_kind"><option value="regular">Regular cycle · monthly charges once</option><option value="short_service">Shortened first/final service bill · documented allocations</option></select></label>
+    <label>Cycle designation and allocation source<input name="ce_cycle_source" maxlength="500" placeholder="Bill/cycle schedule, or explicitly hypothetical study; omit identifiers"/></label>
+    <label id="comed-allocation">Short-service charge factors · JSON<textarea name="ce_charge_factors" placeholder='{"customer":0.5,"standard_metering":0.5,"low_income_discount_recovery":0.5}'></textarea></label>
+    <details><summary>Advanced: consecutive billing-cycle list</summary><label>Cycle list · JSON<textarea name="ce_cycles_json" placeholder="Optional documented cycles; include start_date, end_date, billing_month, kind, source, charge_factors for each"></textarea></label></details></div>
+    <p class="hint">Start date is the first service day after the previous meter read; end date includes the current read day. The utility billing month is a separate designation. Calendar boundaries do not automatically split monthly rates or demand peaks. Include every study interval; missing records are not a partial bill. Short-service factors must come from documented billing rules or bill allocations; no days/30 assumption is made.</p>`;
+  document.querySelector('[data-step="3"]').append(cycles);
   const load=document.createElement("fieldset");load.id="comed-load";load.hidden=true;
   load.innerHTML=`<legend>ComEd native building load</legend><p class="hint">Use the shared constant or generic synthetic load, or upload native consumption before PV/storage. Generic shapes are study assumptions, not Illinois reference data or appliance/HVAC estimates.</p>
     <label>Native-load source or assumption<input name="ce_load_source" maxlength="500" required/></label>
@@ -96,7 +119,7 @@ if(typeof document!=="undefined") {
     <label>Hourly price source or synthetic assumption<input name="ce_price_source" maxlength="500"/></label>
     <label><input name="ce_price_confirmed" type="checkbox"/> Verified COMED PJM real-time residual hourly LMP in USD/MWh at interval starts, or an explicitly synthetic assumption. No hub, day-ahead or adjusted-retail substitution.</label>
     <p id="comed-price-status" class="hint">Prices and raw market inputs stay local; actual data retrieval is not enabled. Capacity is fixed across scenarios.</p></div>
-    <p class="hint">Verified September and October 2026 complete calendar months only. America/Chicago boundaries. Commercial demand uses aligned 30-minute averages from 15/30-minute records, weekday 09:00–18:00 excluding NERC holidays. Excluded taxes and fees remain visible in results.</p>`;
+    <p class="hint" id="comed-verified-months">Only the engine's listed verified billing months are supported; historical gaps reject explicitly. Calendar studies and documented meter cycles are supported. America/Chicago boundaries. Commercial demand uses aligned 30-minute averages from 15/30-minute records, weekday 09:00–18:00 excluding NERC holidays. Excluded taxes and fees remain visible in results.</p>`;
   document.querySelector('[data-step="8"]').append(pricing);
   field("load_mode").append(option("csv","Uploaded native-load CSV · ComEd"));
   for(const k of ["residential","multifamily"])if(![...field("archetype").options].some(o=>o.value===k))field("archetype").append(option(k,"Generic synthetic "+k));
@@ -112,10 +135,21 @@ if(typeof document!=="undefined") {
   function mainDefaults(){if(!active())return {};const d=capabilities.comed_simulation.defaults[siteCustomerClass()||"residential"];return {...d.solar,...(d.battery||{}),pv_capacity_kw:d.pv_capacity_kw,load_mode:d.load.mode,load_power_kw:d.load.power_kw,archetype:d.load.archetype,weather_source:"clear_sky",degradation_cost_per_kWh:d.degradation_cost_per_kWh};}
   function sync(){
     const on=active(), commercial=siteCustomerClass()==="commercial";
-    for(const panel of [account,load,operation,pricing]){panel.hidden=!on;for(const c of panel.querySelectorAll("input,select"))c.disabled=!on;}
+    for(const panel of [account,cycles,load,operation,pricing]){panel.hidden=!on;for(const c of panel.querySelectorAll("input,select,textarea"))c.disabled=!on;}
     const csvOption=field("load_mode").querySelector('option[value="csv"]');csvOption.disabled=csvOption.hidden=!on;
     if(!on){if(field("load_mode").value==="csv")field("load_mode").value="";lastKind=null;return;}
     wasActive=true;
+    const supply=field("tariff_id").value==="comed_BESH"?"BESH":"BES";
+    const months=comedBillingMonths(capabilities,supply);
+    f("cycle_mode").querySelector('option[value="meter_cycles"]').disabled=!capabilities.comed_simulation.billing_cycle_support;
+    if(!capabilities.comed_simulation.billing_cycle_support)f("cycle_mode").value="calendar_month";
+    if([...f("billing_month").options].slice(1).map(o=>o.value).join()!==months.join()){
+      const previous=f("billing_month").value;
+      f("billing_month").replaceChildren(option("","Choose confirmed billing month…"),...months.map(m=>option(m,m.slice(0,7))));
+      f("billing_month").value=months.includes(previous)?previous:"";
+    }
+    $("comed-cycle-details").hidden=f("cycle_mode").value!=="meter_cycles";
+    $("comed-allocation").hidden=f("cycle_kind").value!=="short_service";
     field("timezone").value="America/Chicago";
     $("comed-rate-source").href=capabilities.comed.source_url;
     const kind=commercial?"commercial":"residential";
@@ -129,7 +163,9 @@ if(typeof document!=="undefined") {
     $("comed-native-file").hidden=field("load_mode").value!=="csv";
     field("load_power_kw").closest("label").hidden=field("load_mode").value==="csv";field("load_power_kw").disabled=field("load_mode").value==="csv";
     $("archetype-label").hidden=field("load_mode").value!=="synthetic";
-    $("dataset-info").textContent="One complete September/October 2026 calendar month. Supply native loads; meter purchases may differ at sites with PV/storage.";
+    const coverage=months.map(m=>m.slice(0,7)).join(", ");
+    $("comed-verified-months").textContent=`Verified ${supply} billing months: ${coverage}. Gaps remain unsupported. America/Chicago boundaries; documented cycles may cross calendar months. Commercial demand uses aligned 30-minute averages, weekday 09:00–18:00 excluding NERC holidays. Excluded taxes and fees remain visible in results.`;
+    $("dataset-info").textContent=`Verified billing months: ${coverage}. Supply complete native loads; meter purchases may differ at PV/storage sites.`;
     field("timestep_minutes").querySelector('option[value="5"]').disabled=true;field("timestep_minutes").querySelector('option[value="60"]').disabled=commercial;
     const storage=batteryEnabled(),pv=field("pv_choice").value==="yes",equipment=storage||pv;
     field("pv_choice").querySelector('option[value="storage"]').disabled=false;
@@ -159,7 +195,11 @@ if(typeof document!=="undefined") {
   function request(){if(field("ess_mode").value==="equipment"&&batteryEnabled()&&!essResolution?.ready)throw new Error("Review and apply ESS equipment first.");return buildComedSimulationRequest(capabilities.comed_simulation.defaults[siteCustomerClass()],values());}
   function validate(page){if(!active())return true;
     try{
-      if(page.dataset.step==="3") {const start=field("start_date").value,end=field("end_date").value;if(!["2026-09-01","2026-10-01"].includes(start)||end!==({"2026-09-01":"2026-09-30","2026-10-01":"2026-10-31"}[start]))throw new Error("Use one complete September or October 2026 calendar month.");}
+      if(page.dataset.step==="3") {const start=field("start_date").value,end=field("end_date").value;
+        if(f("cycle_mode").value==="calendar_month") {
+          if(!comedBillingMonths(capabilities,field("tariff_id").value==="comed_BESH"?"BESH":"BES").includes(start)||end!==new Date(Date.UTC(Number(start.slice(0,4)),Number(start.slice(5,7)),0)).toISOString().slice(0,10))throw new Error("Use one complete verified billing month for this supply plan, or select documented meter cycles.");
+        } else if(!f("cycles_json").value.trim()&&(!f("billing_month").value||!f("cycle_source").value.trim()))throw new Error("Confirm the utility billing month and cycle source; do not infer it from calendar dates.");
+      }
       if(page.dataset.step==="9"&&field("load_mode").value==="csv"&&(!nativeCsv||!f("native_confirmed").checked))throw new Error("Upload the exact native-load CSV and confirm its basis.");
       const required=page.querySelectorAll('#comed-account input,#comed-account select,#comed-load input,#comed-operating-confirmations input,#comed-hourly input');
       for(const input of required){if(input.disabled||input.closest('[hidden]')||input.type==="file")continue;
@@ -186,6 +226,11 @@ if(typeof document!=="undefined") {
     field("pv_choice").value=r.solar.dc_capacity_kw>0?"yes":r.battery?"storage":"no";f("include_battery").checked=!!r.battery;
     nativeCsv=r.load.csv;priceCsv=r.prices?.csv||null;restoreCandidate(r);weatherId=r.weather_id;sync();
     f("verification").value=r.regional_account.verification_kind;f("reference").value=r.regional_account.reference;
+    f("cycle_mode").value=r.billing_cycles?"meter_cycles":"calendar_month";
+    const cycle=r.billing_cycles?.[0];f("billing_month").value=cycle?.billing_month||"";
+    f("cycle_kind").value=cycle?.kind||"regular";f("cycle_source").value=cycle?.source||"";
+    f("charge_factors").value=cycle?.charge_factors?JSON.stringify(cycle.charge_factors):"";
+    f("cycles_json").value=r.billing_cycles?.length>1?JSON.stringify(r.billing_cycles,null,2):"";
     const a=r.account;f("class").value=a.delivery_class;f("account_confirmed").checked=a.ordinary_import_only_confirmed;
     for(const k of ["previous_12_month_peak_kw","previous_calendar_year_peak_kw","previous_year_months_ge_100kw"])f(k).value=a[k]??"";
     f("voltage").value=a.service_voltage||"";f("transformer").value=a.utility_transformer?"yes":"no";f("heat").value=a.electric_space_heat?"yes":"no";f("competitive").value=a.competitively_declared?"yes":"no";f("watt").value=a.watt_hour_eligibility;f("hv_mkd").value=a.previous_12_month_mkd_kw??"";
@@ -196,6 +241,6 @@ if(typeof document!=="undefined") {
     updateSiteControls();resetWizard();
   }
   window.comedUI={active,batteryEnabled,sync,leaving,defaults,mainDefaults,validate,restore,request,
-    reset:()=>{nativeCsv=priceCsv=null;lastKind=null;},
+    reset:()=>{nativeCsv=priceCsv=null;lastKind=null;f("cycle_mode").value="calendar_month";f("cycles_json").value="";},
     submit:()=>api("/api/v1/comed/simulations?draft=1",request())};
 }

@@ -1,0 +1,1588 @@
+=== ORIGINAL PDF PAGE 390 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 10th Revised Sheet No. 256 
+Edison Company  (Canceling 9th Revised Sheet No. 256) 
+ 
+RIDER RCA 
+RETAIL CUSTOMER ASSESSMENTS 
+ 
+ (Continued on Sheet No. 256.1) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  December 7, 2025 
+October 23, 2025.     Issued by David R. Perez, EVP and COO 
+Asterisk (*) indicates change.  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Applicable to Rate BES, Rate BESH, Rate BEST, and Rate RDS 
+ 
+RENEWABLE ENERGY RESOURCES AND 
+COAL TECHNOLOGY DEVELOPMENT ASSISTANCE CHARGE. 
+ Pursuant to the provisions of the Renewable Energy, Energy Efficiency, and Coal Resources Development 
+Law of 1997, enacted on December 16, 1997, authorizing the assessment of charges for renewable 
+energy resources and coal technology development assistance on retail customers' monthly bills for 
+electric service, and as amended on August 20, 2021, the Company includes the following Renewable 
+Energy Resources and Coal Technology Development Assistance Charge, as applicable, on each retail 
+customer’s monthly bill: 
+ 
+For a residential retail customer $0.05 
+ 
+For any other retail customer 
+If such retail customer's highest demand during the previous calendar year  
+was less than 10,000 kilowatts (kWs) $0.50 
+If such retail customer's highest demand during the previous calendar year  
+was at least 10,000 kWs $37.50 
+ 
+* The Renewable Energy Resources and Coal Technology Development Assistance Charge is assessed 
+through December 31, 2030, in accordance with Illinois Public Act 104-10. 
+ 
+
+
+=== ORIGINAL PDF PAGE 392 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 8th Revised Sheet No. 257 
+Edison Company  Canceling 7th Revised Sheet No. 257 
+ 
+RIDER RCA 
+RETAIL CUSTOMER ASSESSMENTS 
+ 
+*  (Continued from Sheet No. 256.1) 
+  (Continued on Sheet No. 257.1) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  January 8, 2022 
+January 7, 2022.  Issued pursuant to the  Issued by T. R. Donnelly, President and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+January 5, 2022, in Docket No. 21-0868.  Chicago, Illinois  60680-5379 
+Asterisk (*) indicates change.   
+ 
+ 
+ RESIDENTIAL REAL TIME PRICING PROGRAM COST RECOVERY CHARGES.  
+Pursuant to subsection 16-107(b-25) of the Act and the Illinois Commerce Commission’s (ICC’s) Order in 
+Docket No. 11-0546, authorizing the Company to recover the reasonable costs it incurs in complying with 
+Section 16-107 of the Act, the Company includes the following Residential Real Time Pricing Program 
+Cost Recovery Charges (RRTPCRCs), on each retail customer’s monthly bill, as applicable:  
+ 
+For Bills Issued Beginning with the July 2012 Monthly Billing Period and 
+Extending Through the December 2015 Monthly Billing Period RRTPCRC 
+ For a residential retail customer $0.04 
+Additionally, for a residential retail customer served under 
+Rider RRTP - Residential Real Time Pricing Program (Rider RRTP) $0.39 
+For Bills Issued Beginning with the January 2016 Monthly Billing Period and RRTPCRC 
+Extending Through the January 2018 Monthly Billing Period 
+ For a residential retail customer $0.04 
+Additionally, for a residential retail customer served under Rider RRTP $0.39 
+For Bills Issued Beginning with the February 2018 Monthly Billing Period  RRTPCRC 
+For a residential retail customer $0.06 
+ 
+ 
+Notwithstanding any other provision of this rider, such RRTPCRCs are included on monthly bills until 
+Rider RRTP is terminated.   
+ 
+ PURCHASE OF RECEIVABLES ADJUSTMENT. 
+Pursuant to Section 16-118(c) of the Act, authorizing the recovery of the Company's prudently incurred 
+costs associated with the provision of services in accordance with such Section 16 -118(c), the Company 
+includes a Purchase of Receivables (POR) Adjustment on retail customer monthly bills, as applicable, 
+determined in accordance with the following equation: 
+ 
+POREB
+PORORPORBFBalancePORAdjustmentPOR ++=
+ 
+Where: 
+POR Adjustment = Purchase of Receivables (POR) Adjustment, in $ rounded to the cent, included on 
+retail customers’ monthly bills, as applicable.  The POR Adjustment during the 
+initial POR Application Period, as described in Rider PORCB - Purchase of 
+Receivables with Consolidated Billing (Rider PORCB) is zero (0).  The POR 
+Adjustment is zero (0) for the first three (3) monthly billing periods of any 
+subsequent POR Application Period. 
+ 
+POR Balance = Purchase of Receivables Balance, in $, equal to the (a) unrecovered portion of the 
+accrued Developmental and Implementation Costs (DICs) and accrued 
+Administrative and Operating Costs (AOCs) intended to be recovered through the 
+remittance of Discounted Receivables (DRECCs) during the previous POR 
+Application Period under Rider PORCB; or (b) excess amount, or applicable 
+portion of such excess amount, recovered through the remittance of DREC Cs 
+during the previous POR Application Period under Rider PORCB to provide 
+reimbursement to retail customers for amounts previously recovered from retail 
+customers through the application of POR Adjustments that were charges. 
+
+
+=== ORIGINAL PDF PAGE 766 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 82nd Revised Informational Sheet No. 1 
+Edison Company  (Canceling 81st Revised Informational Sheet No. 1) 
+ 
+PURCHASED ELECTRICITY CHARGES 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Filed pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket 25-0383.  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BES and Rider PE (1) 
+ 
+ 
+ 
+Customer Group or Subgroup 
+ 
+ 
+Units 
+Purchased Electricity Charges (PECs) 
+Applicable Beginning with the October 2025 
+Monthly Billing Period and Extending Through the 
+December 2025 Monthly Billing Period 
+(2) (3) (4) (6) 
+Summer PEC (5) Nonsummer PEC 
+Residential ¢/kWh 8.134 7.873 
+Watt-hour Non-Electric Space Heating ¢/kWh 8.185 7.914 
+Demand Non-Electric Space Heating ¢/kWh 8.300 7.946 
+Nonresidential Electric Space Heating ¢/kWh 7.247 7.567 
+Dusk to Dawn Lighting ¢/kWh 2.950 3.522 
+General Lighting ¢/kWh 6.821 7.146 
+ 
+ 
+ 
+Customer Group or Subgroup 
+ 
+ 
+Units 
+PECs  
+Applicable Beginning with the January 2026 
+Monthly Billing Period and Extending Through the 
+May 2026 Monthly Billing Period 
+(2) (3) (4) (7) 
+Summer PEC (5) Nonsummer PEC  
+Residential  ¢/kWh 8.099 7.841 
+Watt-hour Non-Electric Space Heating ¢/kWh 8.141 7.870 
+Demand Non-Electric Space Heating ¢/kWh 8.251 7.899 
+Nonresidential Electric Space Heating ¢/kWh 7.245 7.565 
+Dusk to Dawn Lighting ¢/kWh 3.023 3.608 
+General Lighting ¢/kWh 6.989 7.322 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BES - Basic Electric Service 
+(Rate BES) and Rider PE - Purchased Electricity (Rider PE). 
+(2) PECs are designated on retail customer bills as the Electricity Supply Charge pursuant to Rate BES.  
+(3) PECs include Supply Base Uncollectible Cost Factors (Supply BUFs) as listed in Informational Sheet 
+No. 21. 
+(4) PECs incorporate Incremental Supply Uncollectible Cost Factors (ISUFs) as listed in Informational 
+Sheet No. 20, which include a Supply Balancing Factor (SBF) in accordance with the provisions of 
+Rider UF - Uncollectible Factors (Rider UF). 
+(5) The Summer PECs are applicable in the months of June, July, August, and September. 
+(6) PECs incorporate the results of the Fall 2025 Procurement Event approved by the ICC on September 
+11, 2025. 
+(7) PECs developed in compliance with the final order dated December 18, 2025, in ICC Docket No. 25-
+0383. 
+
+
+=== ORIGINAL PDF PAGE 767 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 73rd Revised Informational Sheet No. 2 
+Edison Company (Canceling 72nd Revised Informational Sheet No. 2) 
+ 
+PJM SERVICES CHARGES 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket No. 25-0383.  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BES and Rider PE (1) 
+ 
+ 
+Customer Group or Subgroup 
+ 
+Units 
+PJM Services Charges (PSCs) Applicable 
+Beginning with the October 2025 Monthly Billing 
+Period and Extending Through the December 2025 
+Monthly Billing Period (2) (3) (4) 
+ 
+Residential  
+ 
+¢/kWh 
+ 
+1.816 
+ 
+Watt-hour Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.805 
+ 
+Demand Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.805 
+ 
+Nonresidential Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.805 
+ 
+Dusk to Dawn Lighting 
+ 
+¢/kWh 
+ 
+1.705 
+ 
+General Lighting 
+ 
+¢/kWh 
+ 
+1.705 
+ 
+ 
+Customer Group or Subgroup 
+ 
+Units 
+PSCs Applicable Beginning with the January 2026 
+Monthly Billing Period and Extending Through the 
+May 2026 Monthly Billing Period (2) (3) (4) 
+ 
+Residential  
+ 
+¢/kWh 
+ 
+1.819 
+ 
+Watt-hour Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.805 
+ 
+Demand Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.805 
+ 
+Nonresidential Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.805 
+ 
+Dusk to Dawn Lighting 
+ 
+¢/kWh 
+ 
+1.747 
+ 
+General Lighting 
+ 
+¢/kWh 
+ 
+1.747 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BES - Basic Electric Service (Rate BES) and 
+ Rider PE - Purchased Electricity (Rider PE). 
+(2) PSCs are designated on retail customer bills as the Transmission Services Charge pursuant to  
+Rate BES. 
+(3) PSCs include Supply Base Uncollectible Cost Factors (SBUFs) listed in Informational  
+Sheet No. 21.   
+(4) PSCs incorporate Incremental Supply Uncollectible Cost Factors (ISUFs) listed in Informational  
+Sheet No. 20.  
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 768 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 205th Revised Informational Sheet No. 3 
+Edison Company (Canceling 204th Revised Informational Sheet No. 3) 
+ 
+PURCHASED ELECTRICITY ADJUSTMENT FACTOR 
+Filed with the Illinois Commerce Commission on Date Effective:  December 19, 2025 
+December 18, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+     Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BES and Rider PE (1) 
+ 
+Purchased Electricity Adjustment (PEA) Factor Applicable for the December 2025 Monthly Billing 
+Period (2) (3) 
+ 
+(0.849) ¢/kWh 
+ 
+PEA Factor Applicable for the January 2026 Monthly Billing Period (2) (3) 
+ 
+0.357 ¢/kWh 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Sheet No. 22 in Rate BES - Basic Electric Service 
+(Rate BES) and Sheet No. 326 through Sheet No. 328 in Rider PE - Purchased Electricity (Rider PE). 
+(2) The PEA Factor is designated on retail customer bills as the Purchased Electricity Adjustment 
+pursuant to Rate BES. 
+(3) In the above tables, X.XXX denotes a charge, and (X.XXX) denotes a credit. 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 769 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 70th Revised Informational Sheet No. 4 
+Edison Company (Canceling 69th Revised Informational Sheet No. 4) 
+ 
+CAPACITY CHARGE 
+ 
+Supplement to Rate BESH and Rider PPO (1) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket No. 25-0383.  Chicago, Illinois 60680-5379 
+Monthly Capacity Charge (MCC) Applicable Beginning with 
+the September 2025 Monthly Billing Period and  
+Extending Through the December 2025 Monthly Billing 
+Period (2) (3) 
+8.31935 $/kW-Month 
+ 
+MCC Applicable Beginning with the  
+January 2026 Monthly Billing Period and Extending 
+Through the May 2026 Monthly Billing Period  
+(2) (3) 
+8.32925 $/kW-Month 
+ 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BESH - Basic Electric Service Hourly Pricing (Rate 
+BESH) and Rider PPO - Power Purchase Option (Rider PPO). 
+(2)  The MCC includes the System Average Supply Base Uncollectible Cost Factor ( SBUFsys) listed in 
+Informational Sheet No. 21.   
+(3)  The MCC includes the System Average Incremental Supply Uncollectible Cost Factor (ISUFsys) listed 
+in Informational Sheet No. 20. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 770 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 71st Revised Informational Sheet No. 5 
+Edison Company (Canceling 70th Revised Informational Sheet No. 5) 
+ 
+PJM SERVICES CHARGE 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket No. 25-0383.  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BESH and Rider PPO (1) 
+ 
+PJM Services Charge (PSC) Applicable Beginning with the 
+October 2025 Monthly Billing Period and  
+Extending Through the December 2025 Monthly Billing 
+Period (2) (3) (4) 
+ 
+1.088 ¢/kWh 
+ 
+ 
+PSC Applicable Beginning with the  
+January 2026 Monthly Billing Period and  
+Extending Through the May 2026 Monthly Billing Period  
+(2) (3) (4) 
+1.083 ¢/kWh 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BESH - Basic Electric Service Hourly Pricing (Rate 
+BESH) and Rider PPO - Power Purchase Option (Rider PPO). 
+ 
+(2) The PSC is designated on retail customer bills as the Transmission Services Charge pursuant to  
+Rate BESH and Rider PPO. 
+(3) The PSC includes the System Average Supply Base Uncollectible Cost Factor (SBUF sys) listed in  
+Informational Sheet No. 21.  
+(4) The PSC includes the System Average Incremental Supply Uncollectible Cost Factor (ISUFsys) listed 
+in Informational Sheet No. 20.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+=== ORIGINAL PDF PAGE 771 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 75th Revised Informational Sheet No. 6 
+Edison Company (Canceling 74th Revised Informational Sheet No. 6) 
+ 
+MISCELLANEOUS PROCUREMENT COMPONENTS CHARGE 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket No. 25-0383.  Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rate BESH and Rider PPO (1) 
+ 
+ 
+Miscellaneous Procurement Components Charge (MPCC) 
+Applicable Beginning with the October 2025 Monthly Billing 
+Period and Extending Through the December 2025 Monthly 
+Billing Period (2) (3) 
+ 
+ 
+0.063 ¢/kWh 
+ 
+ 
+MPCC  
+Applicable Beginning with the January 2026 Monthly Billing 
+Period and Extending Through the May 2026 Monthly Billing 
+Period (2) (3) 
+ 
+ 
+0.062 ¢/kWh 
+ 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BESH - Basic Electric Service Hourly Pricing (Rate 
+BESH) and Rider PPO - Power Purchase Option (Rider PPO). 
+(2) The MPCC includes the System Average Supply Base Uncollectible Cost Factor (SBUF sys) listed in 
+Informational Sheet No. 21.   
+(3) The MPCC includes the System Average Incremental Supply Uncollectible Cost Factor (ISUFsys) 
+listed in Informational Sheet No. 20.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 772 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 205th Revised Informational Sheet No. 7 
+Edison Company (Canceling 204th Revised Informational Sheet No. 7) 
+ 
+HOURLY PURCHASED ELECTRICITY ADJUSTMENT FACTOR 
+Filed with the Illinois Commerce Commission on Date Effective:  December 19, 2025 
+December 18, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+    
+Supplement to Rate BESH and Rider PPO (1) 
+ 
+Hourly Purchased Electricity Adjustment Factor (HPEA) Applicable for the December 2025 
+Monthly Billing Period (2) (3) 
+ 
+0.474 ¢/kWh 
+ 
+HPEA Applicable for the January 2026 Monthly Billing Period (2) (3) 
+ 
+0.743 ¢/kWh 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Sheet No. 37 through Sheet No. 39 in Rate BESH - Basic 
+Electric Service Hourly Pricing (Rate BESH) and Sheet No. 332 in Rider PPO - Power Purchase 
+Option (Rider PPO). 
+(2) The HPEA is designated on retail customer bills as the Purchased Electricity Adjustment pursuant to 
+Rate BESH and Rider PPO. 
+(3) In the above tables, X.XXX denotes a charge, and (X.XXX) denotes a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 773 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 52nd Revised Informational Sheet No. 8 
+Edison Company (Canceling 51st Revised Informational Sheet No. 8) 
+ 
+ENVIRONMENTAL COST RECOVERY ADJUSTMENT 
+Filed with the Illinois Commerce Commission  Date Effective: November 19, 2025 
+on November 18, 2025.    Issued by David R. Perez, EVP and COO
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider ECR (1) 
+ 
+ECR Applicable Beginning with the August 2025 Monthly Billing Period and Extending Through 
+the December 2025 Monthly Billing Period (2) 
+ 
+0.010 ¢/kWh 
+ 
+ECR Applicable Beginning with the January 2026 Monthly Billing Period and Extending Through 
+the December 2026 Monthly Billing Period (2) 
+ 
+0.010 ¢/kWh 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider ECR - Environmental Cost Recovery Adjustment 
+(Rider ECR). 
+(2) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+
+
+=== ORIGINAL PDF PAGE 774 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 32nd Revised Informational Sheet No. 9 
+Edison Company (Canceling 31st Revised Informational Sheet No. 9) 
+ 
+DELIVERY RECONCILIATION ADJUSTMENT FACTOR 
+Filed with the Illinois Commerce Commission on Date Effective:  December 9, 2025 
+December 8, 2025.          Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois  60680-5379 
+ 
+ 
+Supplement to Rider DSPR (1) 
+ 
+ 
+Delivery Reconciliation Adjustment Factor (DRAF) Applicable for the 
+December 2025 Monthly Billing Period 
+(2) (3) 
+ 
+14.0883% 
+DRAF Applicable Beginning with the January 2026 Monthly Billing Period and  
+Extending Through the December 2026 Monthly Billing Period 
+(2) (3) 
+ 
+0.0000% 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider DSPR – Delivery Service Pricing Reconciliation 
+(Rider DSPR). 
+(2) The DRAF is included in Base Delivery Service Charge line items on retail customer bills pursuant to 
+Rider DSPR. 
+(3) In the above tables, XX.XXXX denotes a charge, and (XX.XXX) denotes a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 785 ===
+   
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 56th Revised Informational Sheet No. 20 
+Edison Company (Canceling 55th Revised Informational Sheet No. 20) 
+ 
+INCREMENTAL UNCOLLECTIBLE COST FACTORS 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Filed pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket No. 25-0383.  Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rider UF (1) 
+ 
+Incremental Distribution Uncollectible Cost Factors (IDUFs) (2) 
+ 
+ 
+IDUFs 
+Applicable Beginning with the 
+September 2025 
+Monthly Billing Period and 
+Extending Through the  
+December 2025  
+Monthly Billing Period (5) 
+IDUFs 
+Applicable Beginning with the 
+January 2026 
+Monthly Billing Period 
+And Extending Through the  
+May 2026 
+Monthly Billing Period (5) 
+IDUFR 1.0091 1.0090 
+IDUFN 1.0064 1.0065 
+IDUFA 1.0014 1.0014 
+Incremental Supply Uncollectible Cost Factors (ISUFs) 
+ 
+ISUFs  
+Applicable Beginning with the 
+September 2025 
+Monthly Billing Period 
+and Extending Through the 
+December 2025 
+Monthly Billing Period (6) 
+ISUFs  
+Applicable Beginning with the 
+January 2026 
+Monthly Billing Period 
+and Extending Through the 
+May 2026 
+Monthly Billing Period (6) 
+ISUFR (3) (7) 1.0016 1.0015 
+ISUFN (3) 1.0008 1.0008 
+ISUFA (3) 0.9485 0.9739 
+ISUFSYS (4) 1.0000 1.0002 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider UF - Uncollectible Factors (Rider UF). 
+(2) IDUFs are applied as shown in the Delivery Service Charges Informational Sheets ( Informational Sheet 
+No. 64 through Informational Sheet No. 64.18 and Informational Sheet No. 67 through Informational 
+Sheet No. 67.1) and in accordance with the provisions of the Zero Standard Credit subsection of the 
+Monthly Credit and Charge section of Rider ZSS - Zero Standard Service (Rider ZSS).  
+(3) ISUFs are applied in accordance with the provisions of the Monthly Charges section of  
+Rate BES - Basic Electric Service (Rate BES). 
+(4) ISUFSYS is applied in accordance with the provisions of the Monthly Charges section of Rate BESH - 
+Basic Electric Service Hourly Pricing (Rate BESH). 
+(5) IDUFs incorporate a Distribution Balancing Factor (DBF) in accordance with the provisions of Rider UF. 
+(6) ISUFs incorporate a Supply Balancing Factor (SBF) in accordance with the provisions in Rider UF.  
+(7) ISUFR is applied in accordance with the provisions of the Monthly Charges section of Rate BEST – 
+Basic Electric Service Time of Use Pricing (Rate BEST). 
+  
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 786 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 17th Revised Informational Sheet No. 21 
+Edison Company (Canceling 16th Revised Informational Sheet No. 21) 
+ 
+SUPPLY BASE UNCOLLECTIBLE COST FACTORS 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket No. 25-0383.  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider UF (1) 
+ 
+Supply Base Uncollectible Cost Factors (SBUFs) 
+ 
+SBUFs  
+Applicable for Service Provided 
+Beginning with the 
+January 2025 
+Monthly Billing Period 
+and Extending Through the 
+December 2025 
+Monthly Billing Period 
+SBUFs  
+Applicable for Service Provided 
+Beginning with the 
+January 2026 
+Monthly Billing Period 
+and Extending Through the 
+December 2026 
+Monthly Billing Period 
+SBUFR (2) (3) 1.0128 1.0146 
+SBUFN (2) 1.0079 1.0076 
+SBUFA (2) 1.0042 1.0021 
+SBUFSYS (4) 1.0114 1.0124 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider UF - Uncollectible Factors (Rider UF). 
+(2) SBUFs are applied in accordance with the provisions of the Monthly Charges section of  
+ Rate BES - Basic Electric Service (Rate BES). 
+ (3)  SBUFR is applied in accordance with the provisions of the Monthly Charges section of Rate BEST  
+ – Basic Electric Service Time of Use Pricing (Rate BEST). 
+(4) SBUFSYS is applied in accordance with the provisions of the Monthly Charges section of  
+ Rate BESH - Basic Electric Service Hourly Pricing (Rate BESH). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 787 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 14th Revised Informational Sheet No. 22 
+Edison Company (Canceling 13th Revised Informational Sheet No. 22) 
+  
+ CONSOLIDATED BILLING ADJUSTMENT AND PURCHASE OF RECEIVABLES ADJUSTMENT 
+Filed with the Illinois Commerce Commission on  Date Effective: December 10, 2025 
+December 9, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider RCA (1) 
+ 
+Consolidated Billing (CB) Adjustment 
+Applicable Beginning with the January 2025 Monthly Billing Period 
+and Extending Through the December 2025 Monthly Billing Period (2) (3) 
+ 
+There is no CB Adjustment applicable during these monthly billing periods. 
+CB Adjustment 
+Applicable Beginning with the January 2026 Monthly Billing Period 
+and Extending Through the December 2026 Monthly Billing Period (2) (3)  
+ 
+There is no CB Adjustment applicable during these monthly billing periods.  
+ 
+ 
+Purchase of Receivables (POR) Adjustment 
+Applicable Beginning with the January 2025 Monthly Billing Period  
+and Extending Through the December 2025 Monthly Billing Period (2) (3) 
+ 
+There is no POR Adjustment applicable during these monthly billing periods.  
+POR Adjustment 
+Applicable Beginning with the January 2026 Monthly Billing Period  
+and Extending Through the December 2026 Monthly Billing Period (2) (3)  
+ 
+There is no POR Adjustment applicable during these monthly billing periods.  
+ 
+NOTES: 
+(1) This informational sheet is supplemental to the provisions in the Consolidated Billing Adjustment 
+section and Purchase of Receivables Adjustment section of Rider RCA - Retail Customer 
+Assessments (Rider RCA). 
+(2) The CB Adjustment and POR Adjustment are included on a retail customer's monthly bill provided 
+such retail customer is (a) a residential retail customer, (b) a nonresidential retail customer to which 
+the (i) Watt-Hour Delivery Class, (ii) Small Load Delivery Class, or (iii) Medium Load Delivery Class is 
+applicable, or (c) a lighting retail customer for which the highest demand for electricity established by 
+such lighting retail customer is less than 400 kW. 
+(3) The CB Adjustment and POR Adjustment are incorporated with the retail customer’s Customer 
+Charge.  For a retail customer for which no Customer Charge is applied in accordance with the 
+provisions of the electric service tariff under which such retail customer is taking service, a Customer 
+Charge that includes the CB Adjustment and POR Adjustment, as described in Rider RCA, is included 
+on such retail customer’s monthly bill. 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 801 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 10th Revised Informational Sheet No. 36 
+Edison Company  (Canceling 9th Revised Informational Sheet No. 36) 
+  
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  August 20, 2025 
+August 19, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+   Chicago, Illinois 60680-5379 
+ 
+RENEWABLE ENERGY ADJUSTMENTS 
+ 
+ 
+Supplement to Rider REA (1) 
+ 
+ 
+ 
+ 
+ 
+ 
+RE Adjustment Applicability (2) 
+ 
+RE Adjustment 
+Applicable for the  
+June 2025 Monthly Billing Period  
+and Extending Through the  
+August 2025 Monthly Billing Period (3) 
+ 
+All Retail Customers 0.502 ¢/kWh 
+ 
+ 
+RE Adjustment Applicability (2) 
+ 
+RE Adjustment 
+Applicable Beginning with the  
+September 2025 Monthly Billing Period 
+and Extending Through the  
+May 2026 Monthly Billing Period (3) 
+ 
+All Retail Customers 0.502 ¢/kWh 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider REA - Renewable Energy Adjustment (Rider REA). 
+(2)  The RE Adjustment is designated on retail customer bills as the Renewable Portfolio Standard.  
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 802 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 40th Revised Informational Sheet No. 36.1 
+Edison Company (Canceling 39th Revised Informational Sheet No. 36.1) 
+ 
+CARBON-FREE RESOURCE ADJUSTMENTS 
+AND 
+CARBON-FREE RESOURCE MONTHLY RECONCILIATION FACTORS 
+ 
+Supplement to Rider CFRA (1) 
+ 
+Filed with the Illinois Commerce Commission on  Date Effective:  December 24, 2025 
+December 23, 2025.  Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Applicable to All 
+Retail Customers 
+During the Monthly 
+Billing Period 
+Carbon-Free Resource 
+(CFR) Adjustment 
+(¢/kWh) (3) 
+CFR Monthly 
+Reconciliation (CFRMR) 
+Factor (¢/kWh) (3) 
+Total of CFR 
+Adjustment 
+and 
+CFRMR Factor (¢/kWh) 
+(2) (3)  
+June 2025 (1.354) (0.349) (1.703) 
+July 2025 (1.354) 0.461 (0.893) 
+August 2025 (1.354) 0.573 (0.781) 
+September 2025 (1.354) 0.323 (1.031) 
+October 2025 (0.973) 0.885 (0.088) 
+November 2025 (0.973) 0.126 (0.847) 
+December 2025 (0.973) 0.697 (0.276) 
+January 2026 (2.613) 0.232 (2.381) 
+February 2026 (2.613) 
+To Be Determined 
+(TBD) TBD 
+March 2026 (2.613) TBD TBD 
+April 2026 (2.613) TBD TBD 
+May 2026 (2.613) TBD TBD 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider CFRA – Carbon-Free Resource Adjustment (Rider 
+CFRA). 
+(2) The total of the CFR Adjustment and the CFRMR Factor is designated on retail customer bills as the 
+Carbon-Free Energy Resource Adj. 
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 804 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 18th Revised Informational Sheet No. 37 
+Edison Company                                                   (Canceling 17th Revised Informational Sheet No. 37) 
+ 
+ZERO EMISSION ADJUSTMENTS 
+ 
+Supplement to Rider ZEA (1) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective: August 20, 2025 
+August 19, 2025.  Issued by David R. Perez, EVP and COO
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Zero Emission (ZE) Adjustment (2) 
+Applicable Beginning with the June 2025 Monthly Billing Period 
+and Extending Through the August 2025 Monthly Billing Period (5) 
+Retail Customers to Which the Opt-out Group is Applicable (3) 0.195 ¢/kWh 
+All Other Residential Retail Customers 0.195 ¢/kWh 
+All Other Nonresidential Retail Customers 0.195 ¢/kWh 
+ZE Adjustment (2) 
+Applicable Beginning with the September 2025 Monthly Billing Period 
+and Extending Through the May 2026 Monthly Billing Period (5) 
+Retail Customers to Which the Opt-out Group is Applicable (3) 0.189 ¢/kWh 
+All Other Residential Retail Customers 0.189 ¢/kWh 
+All Other Nonresidential Retail Customers 0.189 ¢/kWh 
+  
+  
+ZE Adjustment Reduction (4) 
+Applicable Beginning with the June 2025 Monthly Billing Period 
+and Extending Through the August 2025 Monthly Billing Period (5) 
+Retail Customers to Which the Opt-out Group is Applicable (3) 0.000 ¢/kWh 
+ZE Adjustment Reduction (4) 
+Applicable Beginning with the September 2025 Monthly Billing Period 
+and Extending Through the May 2026 Monthly Billing Period (5) 
+ 
+Retail Customers to Which the Opt-out Group is Applicable (3) 0.000 ¢/kWh 
+ 
+   NOTES: 
+(1) This informational sheet is supplemental to Rider ZEA – Zero Emission Adjustment (Rider ZEA). 
+(2) The ZE Adjustment is designated on retail customer bills as the Zero Emission Standard. 
+(3) Opt-out Group is as defined in the Definitions part of the General Terms and Conditions of the 
+Company’s Schedule of Rates. 
+(4) The Zero Emission Standard Reduction is designated on retail customer bills for which the Opt-out 
+Group is applicable as the Zero Emission Standard Adjustment. 
+(5) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 805 ===
+   
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 10th Revised Informational Sheet No. 38 
+Edison Company  (Canceling 9th Revised Informational Sheet No. 38)
+  
+ENERGY EFFICIENCY ADJUSTMENTS 
+Filed with the Illinois Commerce Commission on Date Effective:  November 25, 2025 
+November 24, 2025.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+November 19, 2025, in Docket No. 25-0518.  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider EEPP (1) 
+ 
+ 
+ 
+ 
+Customer Group 
+ 
+EE Adjustment 
+Applicable for the  
+January 2025 Monthly Billing Period  
+and Extending Through the  
+December 2025 Monthly Billing 
+Period (2)(3) 
+ 
+Residential 0.376 ¢/kWh 
+ 
+Small N&L (4) 0.835 ¢/kWh 
+ 
+Large N (5) 0.444 ¢/kWh 
+ 
+ 
+ 
+Customer Group 
+ 
+EE Adjustment 
+Applicable Beginning with the  
+January 2026 Monthly Billing Period  
+and Extending Through the  
+December 2026 Monthly Billing 
+Period (2)(3)  
+ 
+Residential 0.369 ¢/kWh 
+ 
+Small N&L (4) 0.876 ¢/kWh 
+ 
+Large N (5) 0.482 ¢/kWh 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider EEPP – Energy Efficiency Pricing and Performance 
+(Rider EEPP). 
+(2)  The EE Adjustment is designated on retail customer bills as the Energy Efficiency Programs. 
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+(4) Small N&L Group means the designation applicable to retail customers, each to which (a) one of the (i) 
+Watt-Hour Delivery Class, (ii) Small Load Delivery Class, (iii) Medium Load Delivery Class, (iv) Large 
+Load Delivery Class, (v) Fixture-Included Lighting Delivery Class, (vi) Dusk to Dawn Lighting Delivery 
+Class, or (vii) General Lighting Delivery Class is applicable, and (b) the Opt-out Group is not applicable. 
+(5) Large N Group means the designation applicable to retail customers, each to which (a) one of the (i)  Very 
+Large Load Delivery Class, (ii) Extra Large Load Delivery Class, or (iii) High Voltage Delivery Class, is 
+applicable, and (b) the Opt-out Group is not applicable. 
+ 
+
+
+=== ORIGINAL PDF PAGE 806 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 8th Revised Informational Sheet No. 39 
+Edison Company (Canceling 7th Revised Informational Sheet No. 39) 
+ 
+ENERGY TRANSITION ASSISTANCE CHARGE 
+Filed with the Illinois Commerce Commission on  Date Effective: December 5, 2025 
+December 4, 2025.  Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider ETAC (1) 
+ 
+Energy Transition Assistance Charge (ETAC) Applicable Beginning with the January 2025 
+Monthly Billing Period and Extending Through the December 2025 Monthly Billing Period (2) 
+ 
+0.072 ¢/kWh 
+ 
+ETAC Applicable Beginning with the January 2026 Monthly Billing Period and Extending Through 
+the December 2026 Monthly Billing Period (2) 
+ 
+0.084 ¢/kWh 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider ETAC – Energy Transition Assistance Charge (Rider 
+ETAC). 
+(2) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+
+
+=== ORIGINAL PDF PAGE 808 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 5th Revised Informational Sheet No. 41 
+Edison Company  (Canceling 4th Revised Informational Sheet No. 41)
+  
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  December 5, 2025 
+December 4, 2025.  Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois  60680-5379 
+ ENERGY ASSISTANCE CHARGE FOR  
+ THE SUPPLEMENTAL LOW-INCOME ENERGY ASSISTANCE FUND 
+ 
+Supplement to Rider RCA (1) 
+ 
+ 
+ 
+ 
+Customer Group 
+ 
+Energy Assistance Charge for the 
+Supplemental Low-Income Energy 
+Assistance Charge Applicable 
+beginning with the January 2025 
+Monthly Billing Period and Extending 
+Through the December 2025 Monthly 
+Billing Period (2)(3) 
+ 
+Residential Retail Customer $0.64 /month 
+ 
+Nonresidential Retail Customer With Highest Demand That Was 
+Less Than 10 MW During the Previous Calendar Year 
+$6.40 /month 
+ 
+Nonresidential Retail Customer With Highest Demand That Was 
+At Least 10 MW During the Previous Calendar Year 
+$240.00 /month 
+ 
+ 
+ 
+Customer Group 
+ 
+Energy Assistance Charge for the 
+Supplemental Low-Income Energy 
+Assistance Charge Applicable 
+Beginning with the January 2026 
+Monthly Billing (2)(3)  
+ 
+Residential Retail Customer $0.80 /month 
+ 
+Nonresidential Retail Customer With Highest Demand That Was 
+Less Than 10 MW During the Previous Calendar Year 
+$8.00 /month 
+ 
+Nonresidential Retail Customer With Highest Demand That Was 
+At Least 10 MW During the Previous Calendar Year 
+$300.00 /month 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider RCA – Retail Customer Assessments (Rider RCA). 
+(2)  The Energy Assistance Charge is included within the Customer Charge on retail customer bills.  
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 823 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 7th Revised Informational Sheet No. 56 
+Edison Company  (Canceling 6th Revised Informational Sheet No. 56) 
+ 
+DISTRIBUTED GENERATION (DG) REBATE ADJUSTMENTS 
+ 
+Filed with the Illinois Commerce Commission  Date Effective:  November 25, 2025 
+on November 24, 2025.  Issued pursuant to the Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+November 19, 2025, in Docket No. 25-0411.   Chicago, Illinois  60680-5379 
+ 
+Supplement to Rider DG REBATE ADJUSTMENT (1) 
+ 
+ 
+ 
+Delivery Class 
+ 
+DG Rebate Adjustment 
+Applicable Beginning with the  
+January 2025 Monthly 
+ Billing Period  
+and Extending Through the  
+December 2025 Monthly Billing 
+Period (2)(3) 
+DG Rebate Adjustment 
+Applicable Beginning with the  
+January 2026 Monthly 
+ Billing Period  
+and Extending Through the  
+December 2026 Monthly Billing 
+Period (2)(3) 
+ 
+Residential Delivery Class 0.043 ¢/kWh 0.062 ¢/kWh 
+ 
+Watt-Hour Delivery Class 0.026¢/kWh 0.034 ¢/kWh 
+ 
+Small Load Delivery Class 11 ¢/kW 15 ¢/kW 
+Medium Load Delivery Class 12 ¢/kW 15 ¢/kW 
+Large Load Delivery Class 11 ¢/kW 15 ¢/kW 
+Very Large Load Delivery Class 10 ¢/kW 13 ¢/kW 
+Extra Large Load Delivery Class 10 ¢/kW 13 ¢/kW 
+High Voltage Delivery Class 20 ¢/kW 14 ¢/kW 
+Fixture-Included Lighting Delivery Class 0 ¢/Component 0 ¢/Component 
+Dusk to Dawn Lighting Delivery Class 0.004 ¢/kWh 0.006 ¢/kWh 
+General Lighting Delivery Class 0.016 ¢/kWh 0.022 ¢/kWh 
+Railroad Delivery Class 6 ¢/kW 9 ¢/kW 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider DG Rebate Adjustment – Renewable Energy 
+Distributed Generation Rebate Adjustment (Rider DG Rebate Adjustment). 
+(2)  The DG Rebate Adjustment is included in the Secondary and Primary Voltage Distribution Facilities 
+Charges (DFCs) or Fixture and Equipment DFCs line item on retail customer bills, as applicable. 
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 829 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 10th Revised Informational Sheet No. 62 
+Edison Company  (Canceling 9th Revised Informational Sheet No. 62) 
+ 
+EXCESS DEFERRED INCOME TAX ADJUSTMENT FACTOR 
+Filed with the Illinois Commerce Commission on Date Effective:  December 9, 2025 
+December 8, 2025.   Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rider EDITA (1) 
+ 
+Excess Deferred Income Tax Adjustment Factor (EDAF) Applicable for the  
+December 2025 Monthly Billing Period 
+(2)(3) 
+ 
+(0.0327) 
+ 
+EDAF Applicable Beginning with the January 2026 Monthly Billing Period  
+(2)(3) 
+ 
+0.0000 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider EDITA – Excess Deferred Income Tax Adjustment 
+(Rider EDITA). 
+(2)  The EDAF is applied to delivery service charges other than the Illinois Electricity Distribution Tax (IEDT) 
+Charge, as applicable. 
+(3) In the above table, X.XXXX denotes a charge, and (X.XXXX) denotes a credit. 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 830 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 7th Revised Informational Sheet No. 63 
+Edison Company (Canceling 6th Revised Informational Sheet No. 63) 
+ 
+COAL TO SOLAR ADJUSTMENT 
+Filed with the Illinois Commerce Commission on Date Effective:  November 13, 2026  
+November 12, 2025.     Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+   Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider CTS (1) 
+ 
+Coal to Solar Adjustment (CTSA) Applicable Beginning with the October 2025 Monthly Billing 
+Period and Extending Through the December 2025 Monthly Billing Period (2) 
+ 
+0.007 ¢/kWh 
+ 
+CTSA Applicable Beginning with the January 2026 Monthly Billing Period and Extending Through 
+the March 2026 Monthly Billing Period (2) 
+ 
+0.007 ¢/kWh 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider CTS – Coal to Solar (Rider CTS). 
+(2) An X.XXXX value is a charge, while an (X.XXXX) value is a credit. 
+
+
+=== ORIGINAL PDF PAGE 850 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 1st Revised Informational Sheet No. 65 
+Edison Company (Canceling Original Informational Sheet No. 65) 
+ 
+TOTAL PLAN ADJUSTMENT FACTOR 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Issued pursuant to the  Issued by David R. Perez, EVP and COO 
+Illinois Commerce Commission Order dated  Post Office Box 805379 
+December 18, 2025, in Docket No. 25-0383.  Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rate MRPP (1) 
+ 
+Total Plan Adjustment Factor (TPAF) Applicable Beginning with the January 2026 Monthly Billing 
+Period and Extending Through the December 2026 Monthly Billing Period (2)(3) 
+ 
+6.551% 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate MRPP – Multi-Year Rate Plan Pricing (Rate MRPP). 
+(2) The TPAF is included in the delivery service charge line items on retail customer bills pursuant to Rate 
+MRPP. 
+(3) In the above table, X.XXXX denotes a charge, and (X.XXXX) denotes a credit. 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+=== ORIGINAL PDF PAGE 859 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 1st Revised Informational Sheet No. 73 
+Edison Company (Canceling Original Informational Sheet No. 73) 
+ 
+LOW-INCOME DISCOUNT 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.  Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+   Chicago, Illinois 60680-5379 
+ 
+Supplement to Rider LID (1) 
+ 
+Discount Tier 
+Household Income as a Percentage 
+of Federal Poverty Level (FPL) 
+Percentage Discount Applicable Beginning with the January 
+2026 Monthly Billing Period and Extending Through the 
+December 2026 Monthly Billing Period (2) (3) (4)  
+SFNH MFNH SFH MFH 
+Tier 1: 0% – up to 50% FPL 81% 67% 76% 59% 
+Tier 2: Over 50% - up to 100% FPL 61% 23% 54% 8% 
+Tier 3: Over 100% - up to 150% FPL 32% 5% 26% 5% 
+Tier 4: Over 150% - up to 200% FPL 8% 5% 5% 5% 
+Tier 5: Up to 300% FPL 5% 5% 5% 5% 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider LID – Low-income Discount (Rider LID). 
+(2) The abbreviated terms for the residential delivery classes defined in the Company’s General Terms 
+and Conditions: 
+SFNH:  Residential Single Family Without Electric Space Heat Delivery Class 
+MFNH: Residential Multi Family Without Electric Space Heat Delivery Class 
+SFH: Residential Single Family With Electric Space Heat Delivery Class 
+MFH: Residential Multi Family With Electric Space Heat Delivery Class. 
+(3) The Low-income Discount (LID) provided to a Low-income Qualified Customer (LIQC) is equal to the 
+amount determined by applying the percentage discount applicable to the LIQC for the monthly billing 
+period to the LIQC’s Total Company Bill as defined in Rider LID. 
+(4) The Low-income Discount is designated on LIQC bills as the Low-income Discount. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 860 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 1st Revised Informational Sheet No. 74 
+Edison Company (Canceling Original Informational Sheet No. 74) 
+ 
+LOW-INCOME DISCOUNT RECOVERY 
+Filed with the Illinois Commerce Commission on Date Effective:  December 23, 2025 
+December 22, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+   Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rider LID (1) 
+ 
+ 
+  
+Customer Group 
+ 
+Low-income Recovery Adjustments 
+Applicable Beginning with the 
+January 2026 Monthly Billing Period 
+and Extending Through the 
+December 2026 Monthly Billing 
+Period (2) (3) 
+Residential Retail Customer $1.17 
+Nonresidential Retail Customer With Highest Demand That Was 
+Less Than 10 MW During the Previous Calendar Year $11.70 
+Nonresidential Retail Customer With Highest Demand That Was 
+At Least 10 MW During the Previous Calendar Year $438.75 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider LID – Low-income Discount (Rider LID). 
+(2) The Low-income Discount Recovery is designated on retail customer bills as the Low-income Discount 
+Recovery. 
+(3) An X.XXX value is a charge, while an (X.XXX) value is a credit. 
+ 
+ 
+
+
+=== ORIGINAL PDF PAGE 876 ===
+ 
+ Page 16 of 16 
+ 
+INDEX OF FILINGS WITH THE ILLINOIS COMMERCE COMMISSION 
+2025 YEAR TO DATE 
+ 
+ 
+ 
+12/23/2025 
+ Last Updated:  May 4, 2000 
+  Page 16 of 1 
+ 
+ PUBLIC FILE DOCUMENT LISTING 
+ Last Updated:  May 4, 2000 
+  Page 16 of 1 
+ 
+ PUBLIC FILE DOCUMENT LISTING 
+ 
+Filing Date:          12/22/2025 
+Effective Date:     12/23/2025 
+Filing of ComEd’s  
+Compliance Filing  
+ICC Dkt. No. 25-0383 
+  Order Dated December 18, 2025 
+Multi-Year Rate Plan Pricing 
+(MRPP) Reconciliation   
+ 
+Purchased Electricity Charges 
+82nd Revised Informational Sheet No. 1 
+ 
+PJM Services Charges  
+73rd Revised Informational Sheet No. 2 
+ 
+Capacity Charge 
+70th Revised Informational Sheet No. 4 
+ 
+PJM Services Charge  
+71st Revised Informational Sheet No. 5 
+ 
+Miscellaneous Procurement 
+Components Charge 
+75th Revised Informational Sheet No. 6 
+ 
+Incremental Uncollectable Cost Factor 
+56th Revised Informational Sheet No. 20 
+ 
+Supply Base Uncollectable Cost Factor 
+17th Revised Informational Sheet No. 21 
+ 
+Transmission Services Adjustment 
+Factor and Miscellaneous Procurement 
+Component Adjustment Factor 
+58th Revised Informational Sheet No. 35 
+ 
+Total Plan Adjustment Factor 
+1st Revised Informational Sheet No. 65 
+ 
+Rate MRPP 
+1st Revised Sheet No. 621 
+Filing Date:          12/22/2025 
+Effective Date:     12/23/2025 
+Filing of ComEd’s  
+Informational Filing  
+Rider Low-Income  
+Discount (Rider LID) 
+ 
+Low-Income Discount 
+ Informational Sheet 
+1st Revised Informational Sheet No. 73 
+ 
+Low-Income Discount Recovery 
+ Informational Sheet 
+1st Revised Informational Sheet No. 74 
+Filing Date:          12/23/2025 
+Effective Date:     12/24/2025 
+Filing of ComEd’s Rider  
+Carbon-Free Resource  
+Adjustment (Rider CFRA) 
+Carbon-Free Resource Adjustments 
+40th Revised Informational Sheet No. 36.1 
+ 
+ 
+ 
+ 
+ 

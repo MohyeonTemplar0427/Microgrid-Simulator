@@ -36,7 +36,10 @@ def defaults(customer_type="residential"):
 def capabilities():
     return {"schema_version": 9, "defaults": {c: defaults(c) for c in ("residential", "commercial")},
             "residential_classes": list(comed_rates.DELIVERY), "commercial_classes": list(COMMERCIAL_CLASSES),
-            "billing_months": ["2026-09-01", "2026-10-01"], "supplies": ["BES", "BESH"],
+            "billing_months": [v.effective_start.isoformat() for v in comed_rates.VERSIONS],
+            "billing_months_by_supply": {s: [v.effective_start.isoformat() for v in comed_rates.VERSIONS
+                                             if s == "BES" or v.besh_adjustment is not None]
+                                        for s in ("BES", "BESH")}, "supplies": ["BES", "BESH"],
             "source_url": comed_rates.RATEBOOK_URL,
             "scope": "One complete calendar month, ordinary import-only accounts. Subtotals exclude state excise tax, municipal taxes and franchise fees. No storage optimization or export settlement."}
 
@@ -46,8 +49,8 @@ def _csv_series(text, value_column):
         raise ValueError("Provide a nonempty CSV of at most 2 MiB.")
     try:
         frame = pd.read_csv(StringIO(text))
-        if list(frame.columns) != ["timestamp", value_column] or len(frame) > 4000:
-            raise ValueError("CSV requires timestamp," + value_column + " in that order, at most 4000 rows.")
+        if list(frame.columns) != ["timestamp", value_column] or len(frame) > 6000:
+            raise ValueError("CSV requires timestamp," + value_column + " in that order, at most 6000 rows.")
         # utc=True alone would silently interpret naive inputs as UTC.
         if not frame.timestamp.astype(str).str.match(r"^\d{4}-\d{2}-\d{2}[T ].*(?:Z|[+-]\d{2}:\d{2})$").all():
             raise ValueError("Every timestamp must be an ISO interval start with Z or an explicit UTC offset.")
@@ -70,8 +73,9 @@ def prepare(request):
         raise ValueError("Supply the exact account fields for this customer type.")
     if not isinstance(request["utility_reference"], str) or not 1 <= len(request["utility_reference"].strip()) <= 500:
         raise ValueError("Document ComEd service confirmation or explicitly label a hypothetical account.")
-    if not isinstance(account["billing_month"], str) or account["billing_month"] not in capabilities()["billing_months"]:
-        raise ValueError("Verified ComEd coverage is September and October 2026 billing months only.")
+    months = capabilities()["billing_months_by_supply"].get(account["supply"], [])
+    if not isinstance(account["billing_month"], str) or account["billing_month"] not in months:
+        raise ValueError("Choose a verified ComEd billing month listed in capabilities; historical gaps remain unsupported.")
     month = date.fromisoformat(account["billing_month"])
     cls = ComEdResidentialAccount if kind == "residential" else ComEdCommercialAccount
     parsed_account = cls(**{**account, "billing_month": month})

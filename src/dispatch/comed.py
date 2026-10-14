@@ -7,9 +7,9 @@ from .battery import Battery
 from ..billing.comed_costs import compile_costs, calculate
 
 
-def optimize(inputs, account, prices=None, battery=None, *, wear=0., include_wear=False):
+def optimize(inputs, account, prices=None, battery=None, *, wear=0., include_wear=False, billing_cycles=None):
     index = pd.DatetimeIndex(inputs.timestamp)
-    costs = compile_costs(index, account, prices)
+    costs = compile_costs(index, account, prices, billing_cycles)
     if type(include_wear) is not bool or isinstance(wear, bool) or not np.isfinite(wear) or wear < 0:
         raise ValueError("Choose a nonnegative wear rate and explicit objective setting.")
     load, pv = (inputs[k].to_numpy(dtype=float) for k in ("native_load_kw", "pv_available_kw"))
@@ -41,16 +41,28 @@ def optimize(inputs, account, prices=None, battery=None, *, wear=0., include_wea
     if problem.status != "optimal":
         raise ValueError("ComEd optimizer did not prove optimality within 60 seconds: " + str(problem.status))
     optimum = float(problem.value)
+    def value(x):
+        return np.asarray(x.value if isinstance(x, cp.Expression) else x, dtype=float)
+    # A second solve can erase/replace Variable.value even on failure. Keep
+    # independent copies of the already-proven primary optimum beforehand.
+    selected = tuple(value(x).copy() for x in (charge, discharge, grid, output, energy))
+    tie_status = "not_applicable"
+    warnings = []
     # A bill-neutral tie break removes unnecessary cycling. Exclusivity is
     # enforced in the original MILP as well, including at negative prices.
     if b is not None:
         tie = cp.Problem(cp.Minimize(throughput), constraints+[objective <= optimum+1e-6])
-        tie.solve(solver="SCIPY", scipy_options=options)
-        if tie.status != "optimal":
-            raise ValueError("ComEd storage tie-break did not prove optimality.")
-    def value(x):
-        return np.asarray(x.value if isinstance(x, cp.Expression) else x, dtype=float)
-    c, d, g, p, e = (value(x) for x in (charge, discharge, grid, output, energy))
+        try:
+            tie.solve(solver="SCIPY", scipy_options=options)
+            tie_status = tie.status
+        except cp.error.SolverError:
+            tie_status = "solver_error"
+        if tie_status == "optimal":
+            selected = tuple(value(x).copy() for x in (charge, discharge, grid, output, energy))
+        else:
+            warnings.append("The cost solve proved optimal, but the cycling tie-break did not complete. "
+                            "Dispatch retains the proven cost solution; minimum cycling among equally priced schedules is not established.")
+    c, d, g, p, e = selected
     if (np.minimum(c, d).max() > 1e-6 or g.min() < -1e-6
             or np.max(abs(g+p+d-load-c)) > 1e-5
             or (b and (e.min() < b.minimum_energy_kWh-1e-5 or e.max() > b.maximum_energy_kWh+1e-5
@@ -58,7 +70,7 @@ def optimize(inputs, account, prices=None, battery=None, *, wear=0., include_wea
         raise ValueError("ComEd dispatch violates a physical power or energy constraint.")
     # Remove solver-scale negatives only, then recalculate using Decimal bills.
     g, c, d, p = [np.maximum(x, 0.) for x in (g, c, d, p)]
-    bill = calculate(pd.Series(g, index=index), account, prices)
+    bill = calculate(pd.Series(g, index=index), account, prices, billing_cycles)
     raw_subtotal = costs.subtotal(g)
     rounding = bill["subtotal_usd"]-raw_subtotal
     if abs(rounding) > costs.rounding_bound_usd:
@@ -79,4 +91,5 @@ def optimize(inputs, account, prices=None, battery=None, *, wear=0., include_wea
             "recalculated_objective_usd": bill["subtotal_usd"]+(degradation if include_wear else 0),
             "solver_optimum_usd": optimum, "solver_gap_usd": actual_objective-optimum,
             "terminal_energy_kwh": float(e[-1]), "solver": "SciPy HiGHS; proven MILP optimum before cent rounding",
-            "strategy": "historical perfect foresight"}
+            "strategy": "historical perfect foresight", "cost_optimum_proven": True,
+            "throughput_tie_break_status": tie_status, "warnings": warnings}

@@ -99,7 +99,7 @@ def _numeric_series(values, index, name, *, nonnegative):
     return array
 
 
-def _hourly_energy_cost(prices, utc, energy):
+def _hourly_energy_cost(prices, utc, energy, multiplier=rates.HEC_MULTIPLIER):
     if not isinstance(prices, ComEdHourlyPrices):
         raise ValueError("BESH requires ComEdHourlyPrices.")
     if (prices.zone, prices.price_basis, prices.unit, prices.timestamp_convention) != (
@@ -112,20 +112,23 @@ def _hourly_energy_cost(prices, utc, energy):
     raw = _numeric_series(prices.values, hours, "hourly prices", nonnegative=False)
     # Index-based mapping, including distinct UTC hours across a DST fold.
     positions = hours.get_indexer(utc.floor("h"))
-    return sum((kwh * D(str(raw[pos])) / D(1000) * rates.HEC_MULTIPLIER
+    return sum((kwh * D(str(raw[pos])) / D(1000) * multiplier
                 for kwh, pos in zip(energy, positions)), D(0))
 
 
-def _delivery_rates(delivery):
+def _delivery_rates(delivery, version=None):
     """Round each adjustment before adding, as the official billing guide does."""
     def adjusted(base, quantum, factors):
         return base + sum((_round(base * factor, quantum) for factor in factors), D(0))
-    factors = (rates.IDUF - 1, rates.DRAF, rates.EDAF, rates.TPAF, delivery.revenue_balancing_factor)
+    iduf = version.residential_iduf if version else rates.IDUF
+    factors = (iduf - 1, version.delivery_reconciliation if version else rates.DRAF,
+               version.excess_deferred_income_tax if version else rates.EDAF,
+               version.total_plan_adjustment if version else rates.TPAF, delivery.revenue_balancing_factor)
     return {
-        "customer": adjusted(delivery.customer, ".01", factors) + rates.RCA,
+        "customer": adjusted(delivery.customer, ".01", factors) + (version.residential_assessment if version else rates.RCA),
         "standard_metering": adjusted(delivery.meter, ".01", factors),
-        "distribution_facilities": adjusted(delivery.distribution, ".00001", factors) + rates.DGRA,
-        "illinois_distribution_tax": adjusted(delivery.iedt, ".00001", (rates.IDUF - 1, delivery.revenue_balancing_factor)),
+        "distribution_facilities": adjusted(delivery.distribution, ".00001", factors) + (version.distributed_generation_adjustment if version else rates.DGRA),
+        "illinois_distribution_tax": adjusted(delivery.iedt, ".00001", (iduf - 1, delivery.revenue_balancing_factor)),
     }
 
 
@@ -134,6 +137,7 @@ def calculate_comed_residential_bill(
     account: ComEdResidentialAccount,
     *,
     hourly_prices: ComEdHourlyPrices | None = None,
+    billing_cycle=None,
 ) -> dict:
     """Return itemized USD subtotal, provenance and explicit completeness limits.
 
@@ -144,18 +148,28 @@ def calculate_comed_residential_bill(
     plan, version = _validate_account(account)
     if not isinstance(grid_import_kw, pd.Series):
         raise ValueError("grid_import_kw must be a timestamped pandas Series.")
-    utc, hours = _month_grid(grid_import_kw.index, account.billing_month)
+    if billing_cycle is None:
+        utc, hours = _month_grid(grid_import_kw.index, account.billing_month)
+    else:
+        from .comed_cycles import cycle_grid
+        if billing_cycle.billing_month != account.billing_month:
+            raise ValueError("Account and documented cycle billing-month designations differ.")
+        utc, hours = cycle_grid(grid_import_kw.index, billing_cycle)
     power = _numeric_series(grid_import_kw, utc, "grid_import_kw", nonnegative=True)
     energy = tuple(D(str(kw)) * hours for kw in power)
     kwh = sum(energy, D(0))
     lines = []
 
     def add(name, quantity, rate, pages, category):
+        factor = billing_cycle.factor(name) if billing_cycle else D(1)
+        documents = rates.line_sources(version, name, list(pages))
         lines.append({"name": name, "category": category, "quantity": float(quantity),
-                      "rate_usd": float(rate), "amount_usd": float(_round(quantity * rate)),
-                      "source_pdf_pages": list(pages)})
+                      "rate_usd": float(rate), "amount_usd": float(_round(quantity * rate * factor)),
+                      "billing_multiplier": float(factor),
+                      "source_pdf_pages": documents[0]["pdf_pages"],
+                      "source_documents": documents})
 
-    for name, rate in _delivery_rates(rates.DELIVERY[account.delivery_class]).items():
+    for name, rate in _delivery_rates(rates.DELIVERY_BY_YEAR[version.delivery_year][account.delivery_class], version).items():
         fixed = name in ("customer", "standard_metering")
         pages = [848, 864, 865, 801, 799]
         if name != "illinois_distribution_tax":
@@ -173,32 +187,37 @@ def calculate_comed_residential_bill(
         add("transmission_services", kwh, version.bes_transmission, [783], "supply")
         add("purchased_electricity_adjustment", kwh, version.bes_adjustment, [784], "supply")
     else:
-        hourly_cost = _hourly_energy_cost(hourly_prices, utc, energy)
+        hourly_cost = _hourly_energy_cost(hourly_prices, utc, energy, version.hec_multiplier)
         lines.append({"name": "hourly_electricity_supply", "category": "supply",
                       "quantity": float(kwh), "rate_usd": None,
                       "amount_usd": float(_round(hourly_cost)),
-                      "source_pdf_pages": [60, 801, 802, 814]})
-        add("capacity", D(str(account.capacity_obligation_kw)), rates.CAPACITY, [785], "supply")
+                      "source_pdf_pages": rates.line_sources(version, "hourly_electricity_supply", [60, 801, 802, 814])[0]["pdf_pages"],
+                      "source_documents": rates.line_sources(version, "hourly_electricity_supply", [60, 801, 802, 814])})
+        add("capacity", D(str(account.capacity_obligation_kw)), version.capacity, [785], "supply")
         add("transmission_services", kwh, version.besh_transmission, [786], "supply")
         add("miscellaneous_procurement", kwh, version.besh_procurement, [787], "supply")
         add("purchased_electricity_adjustment", kwh, version.besh_adjustment, [788], "supply")
 
     for name, (rate, page) in rates.COMMON_ENERGY.items():
+        rate = getattr(version, name)
         add(name, kwh, rate, [page], "riders")
     add("carbon_free_resource_adjustment", kwh, version.carbon_free_adjustment, [818], "riders")
     add("coal_to_solar", kwh, version.coal_to_solar, [846], "riders")
-    add("low_income_discount_recovery", D(1), rates.LID_RECOVERY, [876], "riders")
+    if version.residential_lid_recovery is not None:
+        add("low_income_discount_recovery", D(1), version.residential_lid_recovery, [876], "riders")
     subtotal = sum((D(str(line["amount_usd"])) for line in lines), D(0))
     return {
         "plan_id": plan.identity.plan_id, "version_id": version.tariff_id,
         "billing_month": account.billing_month.isoformat(), "timezone": TIMEZONE,
+        "billing_cycle": rates.cycle_source(billing_cycle, version),
         "import_kwh": float(kwh), "lines": lines, "subtotal_usd": float(subtotal),
         "total_usd": None, "is_complete_bill": False,
         "excluded_components": ["state_electricity_excise_tax", "municipal_utility_taxes", "franchise_costs"],
-        "source": {"ratebook_url": rates.RATEBOOK_URL, "ratebook_sha256": rates.RATEBOOK_SHA256,
-                   "verified_on": "2026-10-12", "applicability_basis": "utility_billing_month",
+        "source": {**rates.primary_source(version),
+                   "verified_on": "2026-10-13", "applicability_basis": "utility_billing_month",
                    "capacity_obligation_kw": account.capacity_obligation_kw,
                    "capacity_source": account.capacity_source,
                    "hourly_price_source": hourly_prices.source if hourly_prices else None,
-                   "hourly_energy_multiplier": float(rates.HEC_MULTIPLIER) if hourly_prices else None},
+                   "hourly_energy_multiplier": float(version.hec_multiplier) if hourly_prices else None,
+                   "historical_source_references": list(version.source_references)},
     }

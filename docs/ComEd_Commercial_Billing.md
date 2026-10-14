@@ -1,8 +1,11 @@
 # ComEd commercial billing and browser integration
 
-Implemented October 12, 2026. The verified composite rate window is **September
-and October 2026 billing months**, restricted to complete calendar-month study
-cases. These are itemized subtotals, not complete utility bills. No actual
+Updated October 13, 2026. Verified composites cover **January–October 2026**,
+**January–December 2025 for BES and BESH**, subject to account eligibility. Calendar studies
+and documented meter cycles are supported; shortened service bills require
+documented per-charge allocations. See
+[historical rates and billing cycles](ComEd_Historical_Rates_and_Billing_Cycles.md).
+These are itemized subtotals, not complete utility bills. No actual
 customer statement has yet been reconciled end to end.
 
 ## Supported commercial accounts
@@ -139,7 +142,7 @@ OpenDSS validation or cross-month meter cycles are modeled by this standalone
 adapter. The main simulation candidate separately supports bounded non-export
 dispatch and representative secondary-service replay, with explicit eligibility
 assumptions and incomplete-subtotal labels.
-Periods outside September–October 2026 fail rather than reusing current rates.
+Unverified utility billing months fail rather than reusing neighboring rates.
 
 ## Evidence and verification
 

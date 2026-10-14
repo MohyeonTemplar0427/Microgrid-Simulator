@@ -16,11 +16,13 @@ building size or a heat-pump checkbox. The account must have one ordinary
 residential meter, ComEd supply, standard delivery, and no special contracts,
 means-tested discounts, or generation/export settlement.
 
-Verified composite coverage is **September and October 2026 billing months**.
-The first adapter accepts one complete calendar month at 15-, 30-, or 60-minute
-resolution. This is suitable for calendar-month study cases; an actual meter
-cycle that straddles months is **not yet supported**. Fixed charges apply once;
-there is no invented daily proration or inferred billing month.
+Verified composite coverage is **January–December 2025** and **January–October 2026**
+for both **BES and BESH**. Gaps reject per supply plan. The original interface accepts one complete
+calendar month. The optional documented-cycle interface now supports regular
+meter cycles crossing calendar boundaries and shortened service bills with
+documented per-charge allocations. See
+[historical rates and billing cycles](ComEd_Historical_Rates_and_Billing_Cycles.md).
+There is no invented daily proration or inferred billing-month designation.
 
 The result has `subtotal_usd`, `total_usd=None`, `is_complete_bill=False`, and
 explicit exclusions: state electricity excise tax, municipal utility taxes,
@@ -160,9 +162,13 @@ No network access is required to calculate bills or run tests.
 The ten-calendar-year research target is **2017–2026**. The initial search
 located the ICC [historical PEA index](https://icc.illinois.gov/ormd/purchased-electricity-adjustment)
 and [historical price-to-compare workbook](https://icc.illinois.gov/downloads/public/pluginillinois/1HistoricalPricestoCompare.xlsx).
-The web reader returned 502 for the former and could not retrieve the latter;
-neither is treated as verified historical rate data in this release. Price to
-compare alone also omits delivery and other riders. The filed ratebook contains
+The initial web reader returned 502 for the former and could not retrieve the latter.
+The October 13 extension successfully retrieved and hashed the official
+[historical PDF](https://icc.illinois.gov/downloads/public/pluginillinois/HistoricalPriceToCompare.pdf)
+through ordinary HTTPS. Its PEA column is used with the applicable filed
+delivery/supply/rider components; the combined price-to-compare is never used
+as a commercial subgroup price or a complete tariff. Price to
+compare alone omits delivery and other riders. The filed ratebook contains
 some older base rates and rule revisions, but they do not establish complete
 historical composite coverage.
 
@@ -170,7 +176,12 @@ For every one of the eight plan/class combinations:
 
 | Billing months | Status |
 |---|---|
-| January 2017–August 2026 | Unsupported; full component history unverified |
+| 2017–2024 | Unsupported; full component history unverified |
+| 2025 BES | January–December implemented |
+| 2025 BESH | January–December implemented |
+| January–May 2026 | Implemented subtotal; filed supply, delivery and monthly rider changes verified |
+| June 2026 | Implemented subtotal; separately verified dated factors |
+| July–August 2026 | Implemented subtotal; signed monthly PEA/HPEA, ECR and CFRA verified |
 | September–October 2026 | Implemented subtotal for the scope above |
 | November–December 2026 | Unsupported; PEA/HPEA and CFRA reconciliation not verified |
 | 2027 onward | Unsupported; some BESH charge structures change in January 2027 |
@@ -182,7 +193,7 @@ billing-month selection. They are intentionally not registered in the generic
 service-date `TariffDefinition` catalog, which cannot express BESH's external
 hourly series and account capacity obligation without losing information.
 
-Next work: verified tax/franchise geography and real-cycle billing; actual
+Next work: verified tax/franchise geography and universal short-service rules; actual
 customer bill reconciliation; complete historical monthly composites; separately
 verified commercial and TOU eligibility/rates; export settlement; then shared
 further historical/operational modeling. The main-workflow candidate reuses the

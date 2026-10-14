@@ -110,6 +110,43 @@ def test_zero_storage_and_zero_pv_are_real_absent_equipment():
     assert out['dispatch'].grid_import_kw.to_numpy()==pytest.approx(f.native_load_kw.to_numpy())
 
 
+@pytest.mark.parametrize('failure',['solver_error','user_limit'])
+def test_failed_secondary_solve_keeps_proven_solution_even_if_variable_values_are_overwritten(monkeypatch,failure):
+    import cvxpy as cp
+    original=cp.Problem.solve;calls=0;saved={}
+    r=request();f,a,p=frame(r)
+    def solve(problem,*args,**kwargs):
+        nonlocal calls
+        calls+=1
+        if calls==1:
+            answer=original(problem,*args,**kwargs)
+            saved['cost']=problem.value
+            return answer
+        for variable in problem.variables():
+            variable.value=np.zeros(variable.shape)
+        if failure=='solver_error':raise cp.error.SolverError('Synthetic secondary failure')
+        problem._status='user_limit'
+    monkeypatch.setattr(cp.Problem,'solve',solve)
+    out=optimize(f,a,p,r['battery']);d=out['dispatch']
+    assert calls==2 and out['cost_optimum_proven']
+    assert out['throughput_tie_break_status']==failure and out['warnings']
+    assert out['unrounded_subtotal_usd']==pytest.approx(saved['cost'],abs=1e-5)
+    assert abs(out['rounding_difference_usd'])<=out['rounding_bound_usd']
+    assert d.battery_soc_kWh.iloc[0]==pytest.approx(r['battery']['energy_kWh'])
+    assert out['terminal_energy_kwh']==pytest.approx(r['battery']['energy_kWh'])
+    assert np.max(np.minimum(d.battery_charge_kw,d.battery_discharge_kw))<1e-6
+    assert np.max(abs(d.grid_import_kw+d.pv_output_kw+d.battery_discharge_kw-d.native_load_kw-d.battery_charge_kw))<1e-5
+
+
+def test_unproven_primary_solve_still_rejects(monkeypatch):
+    import cvxpy as cp
+    def incomplete(problem,*args,**kwargs):problem._status='user_limit'
+    monkeypatch.setattr(cp.Problem,'solve',incomplete)
+    r=request();f,a,p=frame(r)
+    with pytest.raises(ValueError,match='did not prove optimality'):
+        optimize(f,a,p,r['battery'])
+
+
 @pytest.mark.parametrize('variant',['primary_transformer','hv_low_history','hv_high_history'])
 def test_transformer_and_hv_history_rates_are_compiled_from_authoritative_lines(variant):
     r=request('commercial','BESH')
@@ -128,7 +165,7 @@ def test_transformer_and_hv_history_rates_are_compiled_from_authoritative_lines(
 def test_scope_rejects_incomplete_or_unconfirmed_cases(bad):
     r=request('commercial','BESH')
     if bad=='partial':r['end_date']='2026-09-29'
-    if bad=='old_date':r.update(start_date='2025-09-01',end_date='2025-09-30');r['account']['billing_month']='2025-09-01'
+    if bad=='old_date':r.update(start_date='2024-09-01',end_date='2024-09-30');r['account']['billing_month']='2024-09-01'
     if bad=='hourly_commercial':r['timestep_minutes']=60
     if bad=='missing_capacity':r['account']['capacity_obligation_kw']=None
     if bad=='unapproved':r['operating_contract']['interconnection_confirmed']=False

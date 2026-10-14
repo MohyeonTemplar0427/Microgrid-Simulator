@@ -1,5 +1,13 @@
 # ComEd main simulation integration — October 12, 2026 candidate
 
+The subsequent [historical-rate and documented-cycle extension](ComEd_Historical_Rates_and_Billing_Cycles.md)
+adds January–October 2026, complete verified 2025 coverage for BES/BESH, and optional explicit meter cycles to schema 10. The
+September/October calendar cases and prior verification below remain valid;
+read the extension for the expanded date/cycle contract and remaining gaps.
+Full-year residential and commercial BES comparisons, the secondary-solver
+repair and reproducible validation artifacts are documented in
+[2025 annual validation](ComEd_2025_Annual_Validation.md).
+
 ComEd is now selectable in the **main location/customer → service → dates →
 PV/inverter/weather → ESS → Economics → review/results workflow**. The separate
 `/comed.html` calculator and schema-9 meter-bill studies remain supported. The
@@ -18,11 +26,16 @@ evidence; it does not authenticate a bill or issue a utility eligibility ruling.
 
 Residential and commercial classes, heating subgroups, voltage, transformer
 ownership, competitive-supply eligibility and capacity obligations retain the
-existing authoritative adapter checks. Complete **September or October 2026
-calendar months** only, with America/Chicago boundaries. Residential intervals
+existing authoritative adapter checks. The engine lists verified billing months
+**per supply plan**: January–December 2025 and January–October 2026 for both BES and BESH.
+Calendar months and explicitly documented meter cycles use America/Chicago boundaries. Residential intervals
 may be 15/30/60 minutes; commercial intervals must be 15/30 minutes. No hourly
-demand reconstruction, actual cross-month meter-cycle proration, neighboring
-rate substitution or historical-year shifting is introduced.
+demand reconstruction, inferred cross-month meter-cycle proration, neighboring
+rate substitution or historical-year shifting is introduced. A twelve-cycle 2025 billing replay is supported with explicit month designations;
+this does not establish measured weather coverage or guarantee solver convergence
+for a full-year battery study.
+The browser and shared desktop service list only months verified for the
+selected supply plan, with fallbacks for older pinned capability formats.
 
 Current billed MKD is the maximum aligned 30-minute weekday 09:00–18:00
 import, excluding NERC holidays. Fifteen-minute pairs are averaged before
@@ -59,9 +72,9 @@ filling or resampling is performed. Files are limited to 2 MiB/4,000 rows.
 
 PV uses the same `build_site_generation` weather/PV physics and the main form's
 DC rating, inverter AC rating/efficiency, orientation and losses. The shared
-weather/PV helper is independent of retail price and carbon mapping. Current
-NSRDB years end in 2025 and do not overlap this 2026 tariff window; the initial
-main workflow therefore supports explicitly labeled **clear-sky** studies.
+weather/PV helper is independent of retail price and carbon mapping. A reviewed historical-weather import path for this ComEd contract is not yet
+enabled, even though rates now cover 2025; the workflow supports explicitly
+labeled **clear-sky** studies.
 There is no shifted historical weather, CAISO carbon assignment or emissions
 claim. Historical 2026 weather is remaining work.
 
@@ -104,9 +117,14 @@ savings compare against **optimized PV without storage**, rather than assigning
 all curtailment-control benefits to the battery.
 
 The model is historical perfect foresight, not a forecast-driven controller.
-Each solve and throughput tie-break has a 60-second limit. An unproven optimum
-or failed physical/billing reconciliation rejects the case; a relaxed schedule
-is never substituted. Long, strongly negative-price blocks can be difficult for
+Each solve and throughput tie-break has a 60-second limit. An unproven primary
+cost optimum or failed physical/billing reconciliation rejects the case. If the
+secondary throughput solve errors or fails to prove optimality, independent
+copies of the proven primary solution are retained and fully reconciled. Results
+report `cost_optimum_proven`, `throughput_tie_break_status` and an explicit warning:
+least cycling among equally priced schedules is not established. This preserves
+the original binary modes and SOC constraints; no relaxed schedule is substituted.
+Long, strongly negative-price blocks can be difficult for
 the MILP. Faster solve policies/operational controllers remain future work.
 
 The objective is the filed subtotal **before final line-cent rounding**, plus
@@ -159,10 +177,11 @@ form-to-pinned-worker tests, ownership/hosted restrictions, saving and downloads
 
 No staging, commit, push, deployment or stable-release replacement is authorized
 by this implementation. Existing uncommitted ComEd billing and browser work is
-preserved; the two original authoritative bill calculators and rate file remain
-unchanged. Generated CSVs, study files and screenshots stay under ignored cache.
+preserved. The following original integration verification records the earlier
+candidate; the historical extension subsequently dates the authoritative bill
+calculators and rate catalog. Generated CSVs, study files and screenshots stay under ignored cache.
 
-### Final verification and reviewed cases
+### Original integration verification and reviewed cases
 
 Final `/usr/local/bin/python3 -m pytest -q`: **1,714 passed, 1 skipped**.
 `node --check` passed for `app.js` and `comed_simulation.js`; `git diff --check`

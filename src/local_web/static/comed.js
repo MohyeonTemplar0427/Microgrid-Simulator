@@ -28,6 +28,13 @@ if(typeof document!=="undefined"){
   function status(text){$("status").textContent=text;}
   async function api(path,body){const res=await fetch(path,{method:body===undefined?"GET":"POST",headers:{"Content-Type":"application/json","X-Study-Token":caps?.token||""},...(body===undefined?{}:{body:JSON.stringify(body)})});const out=await res.json();if(!res.ok)throw new Error(out.error||"Request failed");return out;}
   function visibility(){
+    if(caps){
+      const months=caps.comed.billing_months_by_supply?.[field("supply").value]||caps.comed.billing_months;
+      const previous=field("billing_month").value;
+      field("billing_month").replaceChildren(new Option("Choose verified billing month…",""),...months.map(m=>new Option(m.slice(0,7),m)));
+      field("billing_month").value=months.includes(previous)?previous:"";
+      $("coverage").textContent="Verified "+field("supply").value+" billing months: "+months.map(m=>m.slice(0,7)).join(", ");
+    }
     $("commercial-fields").hidden=field("customer_type").value!=="commercial";
     $("hourly-fields").hidden=field("supply").value!=="BESH";
     $("load-file-label").hidden=field("load_mode").value!=="csv";
@@ -84,5 +91,5 @@ if(typeof document!=="undefined"){
     const study=await api("/api/v1/comed/studies",request);studyId=study.id;status("Queued · ComEd billing study");clearInterval(timer);timer=setInterval(poll,1000);await poll();
   }catch(error){busy(false);status(error.message);}};
   $("save").onclick=async()=>{const name=prompt("Name this bill study:");if(name===null)return;try{await api("/api/studies/"+studyId+"/save",{name});status("Saved: "+name);}catch(error){status(error.message);}};
-  (async()=>{try{caps=await api("/api/capabilities");if(!caps.comed||caps.hosting_mode!=="local")throw new Error("This engine does not offer local ComEd billing. Open the updated development browser.");configureCustomer();$("engine").textContent=caps.engine.id.slice(0,12);$("source").href=caps.comed.source_url;$("run").disabled=false;status("Ready · September–October 2026 rates. Example inputs are explicitly synthetic.");}catch(error){status(error.message);busy(true);}})();
+  (async()=>{try{caps=await api("/api/capabilities");if(!caps.comed||caps.hosting_mode!=="local")throw new Error("This engine does not offer local ComEd billing. Open the updated development browser.");configureCustomer();$("engine").textContent=caps.engine.id.slice(0,12);$("source").href=caps.comed.source_url;$("run").disabled=false;status("Ready · select a verified month for this supply plan. Example inputs are explicitly synthetic.");}catch(error){status(error.message);busy(true);}})();
 }

@@ -3,6 +3,13 @@
 Customer PDF observations are handled separately from simulated tariffs and
 interval-native load; see [Measured bill analysis](Measured_Bill_Analysis.md).
 
+ComEd's utility-designated billing month is separate from its service dates.
+Documented meter cycles and dated composite coverage are described in
+[ComEd historical rates and billing cycles](ComEd_Historical_Rates_and_Billing_Cycles.md).
+Calendar month boundaries must not split ComEd monthly rates or demand peaks
+without a filed applicability rule. Short-service allocations require explicit
+documented per-charge factors; no general daily proration is assumed.
+
 Reference for the time-series, surplus, metering and tariff layers. Covers the
 conventions that are decisions rather than derivations — the things a reader
 cannot recover from the code alone.
@@ -557,9 +564,12 @@ automatically promoted. See [PJM candidate scope](PJM_Dominion_Candidate.md).
 ## ComEd residential and commercial subtotal adapters
 
 `src/billing/comed_residential.py` adds standalone residential BES and BESH
-calculations for the four standard delivery classes. Coverage is September
-and October 2026 utility billing months, initially restricted to complete
-calendar-month import series. BESH requires explicitly identified hourly
+calculations for the four standard delivery classes. Current coverage is
+January–December 2025 and January–October 2026 for both BES and BESH.
+Coverage is supply-specific and requires complete dated supply, delivery and
+rider components. No HPEA is borrowed from BES. The original calendar-month
+interface and explicit documented meter-cycle interface share these rates.
+BESH requires explicitly identified hourly
 ComEd-zone real-time residual LMPs and a documented account capacity obligation;
 BES never receives a separate wholesale or capacity charge. Decimal billing
 retains signed credits and individually rounded delivery adjustments.
@@ -592,7 +602,11 @@ capability preserves the existing California `services` registry contract.
 `comed_costs.py` derives fixed/energy/demand expressions from authoritative bill
 lines; `dispatch/comed.py` enforces non-export balance, binary storage modes,
 equal terminal energy and fixed account histories/obligations. Every schedule
-is recalculated and cent rounding is reconciled explicitly. Shared
+is recalculated and cent rounding is reconciled explicitly. If a secondary
+cycling tie-break fails, the separately saved proven primary cost solution is
+retained, reconciled and identified with a warning and solver-selection metadata.
+An unproven primary solution still rejects. See the reproducible
+[2025 annual validation](ComEd_2025_Annual_Validation.md). Shared
 `build_site_generation` contains weather/PV physics without California carbon
 or retail assumptions. OpenDSS supports truly absent storage, with secondary
 representative-circuit replay; primary/HV service is explicitly unsupported by

@@ -1,0 +1,1264 @@
+{
+  "retrieved_on": "2026-10-13",
+  "verified_composite_billing_months": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "research_target": "2017-2026",
+  "retained_files": [
+    {
+      "file": "399143.pdf",
+      "sha256": "825a7bc953cead4944ad74c73eca2f351ff1a3ee15ce218c036a228a26288ad1"
+    },
+    {
+      "file": "399143.txt",
+      "sha256": "eb402122c967ba8239a704fe0992abaa2e67444ab66dd5948080ddc6e7f9dd89"
+    },
+    {
+      "file": "399174.pdf",
+      "sha256": "df2b629ffab80a46b260b6d76b5fd373a33c7b0e65e32ea7741f4e6bbf65f385"
+    },
+    {
+      "file": "399174.txt",
+      "sha256": "58f980493c921414b6ff17e35b853a6e461b9ce87ddfefe7475bafe864df5862"
+    },
+    {
+      "file": "399171.pdf",
+      "sha256": "0c6cc3a264c15dae1e91a182567bfffaf1083a08e0825c9328030d5d06bc7a23"
+    },
+    {
+      "file": "399171.txt",
+      "sha256": "3610d580cd8db603c99580b5ab4432b69d5cd6412fa579a411473c2f39961e3e"
+    },
+    {
+      "file": "2026_verified_component_pages.txt",
+      "sha256": "900efdf8552307a3cdeca0a1a1348c358d9370bfa8317f491af4593db4e37ff1",
+      "original_pdf_pages": [
+        24,
+        27,
+        174,
+        178,
+        257,
+        258,
+        789,
+        799,
+        801,
+        802,
+        814,
+        817,
+        818,
+        820,
+        821,
+        822,
+        824,
+        839,
+        845,
+        846,
+        848,
+        850,
+        852,
+        854,
+        864,
+        865,
+        866,
+        876
+      ]
+    },
+    {
+      "file": "2025_verified_component_pages.txt",
+      "sha256": "dbf7796634a5f163b2ae8f9ea3f59a4e45543179fda57da5882f656ef4680f72",
+      "original_pdf_pages": [
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        743,
+        790,
+        791,
+        793,
+        794,
+        795,
+        796,
+        798,
+        810
+      ]
+    },
+    {
+      "file": "2025-january_verified_component_pages.txt",
+      "sha256": "e94fa9f7866b161dad1fc13c81f8595109d013ab4e68e3c7a94ba5d4faa04463",
+      "original_pdf_pages": [
+        743,
+        758,
+        761,
+        762,
+        790,
+        792,
+        794,
+        796,
+        798
+      ],
+      "source_id": "2025-january"
+    },
+    {
+      "file": "2025-july_verified_component_pages.txt",
+      "sha256": "0978ee0cefb82091c206eb944b29f7a7aeab2d2231f13c3ae5f9aec400257c6e",
+      "original_pdf_pages": [
+        23,
+        25,
+        26,
+        56,
+        58,
+        165,
+        169,
+        245,
+        246,
+        382,
+        384,
+        727,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        749,
+        750,
+        751,
+        765,
+        766,
+        768,
+        787,
+        793,
+        794,
+        796,
+        798,
+        800,
+        802,
+        812,
+        813
+      ],
+      "source_id": "2025-july"
+    },
+    {
+      "file": "2025-december_verified_component_pages.txt",
+      "sha256": "b7b3b5c3e1757c8e9b03b56194c6af6c1c6dad592e1af4666a3483b36fa7da5b",
+      "original_pdf_pages": [
+        390,
+        392,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        785,
+        786,
+        787,
+        801,
+        802,
+        804,
+        805,
+        806,
+        808,
+        823,
+        829,
+        830,
+        850,
+        859,
+        860,
+        876
+      ],
+      "source_id": "2025-december"
+    },
+    {
+      "file": "2025-pea-history.pdf",
+      "sha256": "c688268ee23a1d0678971a606b3bc6a9746572d1ac00477d57c0c342a61042ca",
+      "source_id": "2025-pea-history"
+    },
+    {
+      "file": "2025-pea-history.txt",
+      "sha256": "4c7b200fd33eb5445ee46e04baae3bf9e87794caa9f4f4ec9b95a0090c071b9e",
+      "source_id": "2025-pea-history"
+    },
+    {
+      "file": "2026-pea-history.pdf",
+      "sha256": "13a9dc7e16a56b7ff58fdcd6f7d2ec7fd4f7a86e2afe9f9fdf3c9a2572a4b31c",
+      "source_id": "2026-pea-history"
+    },
+    {
+      "file": "2026-pea-history.txt",
+      "sha256": "016f3922d6246038654748f45754204e90e49cca922168ddc58aef906ed343be",
+      "source_id": "2026-pea-history"
+    },
+    {
+      "file": "ICC-price-history.pdf",
+      "sha256": "c40f0f1e58482a4cc52b561ce6c2bccd431aa981a8c7538f42fbabfcb6f72f18",
+      "source_id": "ICC-price-history"
+    },
+    {
+      "file": "ICC-price-history.txt",
+      "sha256": "ffc19b15cb69e4a6160ed0cdd9a3daebf1513f0fe81f0d0c8bcaf0405e3bdeae",
+      "source_id": "ICC-price-history"
+    },
+    {
+      "file": "ERM25-131.pdf",
+      "sha256": "036ece98dcb4024eb333c1eb2160ac52cfea4c319ef71279f990b7ed45be5ac1",
+      "source_id": "ERM25-131"
+    },
+    {
+      "file": "ERM25-131.txt",
+      "sha256": "a1bed151a81e14f90f3446801ff51c383f1a596ef405efec38d11d36c5543ab9",
+      "source_id": "ERM25-131"
+    },
+    {
+      "file": "2025-November-DRAF.pdf",
+      "sha256": "07350de5a74e58c5ba0a4db25e0a692f5c58f01ebae9ecb15aea8502df205fb3",
+      "source_id": "2025-November-DRAF"
+    },
+    {
+      "file": "2025-November-DRAF.txt",
+      "sha256": "a45c6abcb4aab5b3a0d3cd8d863c3a659c18fcd0306a87fd44a0665e0ea4a27d",
+      "source_id": "2025-November-DRAF"
+    },
+    {
+      "file": "2025-November-EDAF.pdf",
+      "sha256": "52e1bfa9864e1cc3f958736e9eb52e07f807a77216848c2dc2719c1424ddca36",
+      "source_id": "2025-November-EDAF"
+    },
+    {
+      "file": "2025-November-EDAF.txt",
+      "sha256": "043fdf40934dc33f71de29c60cacdc5d676d8a09157f4ba2c02a7dbf93acb207",
+      "source_id": "2025-November-EDAF"
+    },
+    {
+      "file": "ERM25-166.pdf",
+      "sha256": "03f4085e7337a1c36e530346be680617058d1f92bce20fa4f8e5a8e2a49fd353",
+      "source_id": "ERM25-166"
+    },
+    {
+      "file": "ERM25-166.txt",
+      "sha256": "e1cb79c6f4aea590e3aa4ef4a5bc5c061578e885d33fd36f938f58db223b316e",
+      "source_id": "ERM25-166"
+    },
+    {
+      "file": "ERM25-154.pdf",
+      "sha256": "e7918a6d3f8370f0118a5b42a80793dda537eb630063247ea1522b57aab87e8c",
+      "source_id": "ERM25-154"
+    },
+    {
+      "file": "ERM25-154.txt",
+      "sha256": "e8dab121e3f995b8d728d0086a888abca15ec52b27c8d61717e670355d527970",
+      "source_id": "ERM25-154"
+    },
+    {
+      "file": "ERM25-132.pdf",
+      "sha256": "c91eee8f5651cde18aef267d587e3a023ee961f6e230422c3cb3a241ae9a6b89",
+      "source_id": "ERM25-132"
+    },
+    {
+      "file": "ERM25-132.txt",
+      "sha256": "8235aba8c70c56f9a22489247b5ed6b1e7e6e288f361c85b3d8c9e3c92ee1daa",
+      "source_id": "ERM25-132"
+    },
+    {
+      "file": "ERM25-121.pdf",
+      "sha256": "55a7a42ec74854224a4c00e7155c0389f11e6c88cafe043117f062a6b15f1dca",
+      "source_id": "ERM25-121"
+    },
+    {
+      "file": "ERM25-121.txt",
+      "sha256": "4a2a2903a7d6878c9f62b6a3128add7cdbce75032af8c40b7969d700dfa25372",
+      "source_id": "ERM25-121"
+    },
+    {
+      "file": "ERM25-056.pdf",
+      "sha256": "3d79ce8a3c5b53d6a7dfbec862325f232ce37160dd235d5fa1e4051f6c431c4b",
+      "source_id": "ERM25-056"
+    },
+    {
+      "file": "ERM25-056.txt",
+      "sha256": "f39b0cc0707f88a0549e3b0604656526e00306afb14e84b8b65f78012b89cd73",
+      "source_id": "ERM25-056"
+    },
+    {
+      "file": "ERM25-047.pdf",
+      "sha256": "eeeabacebf4e5383b030fa232f7181ed03f329a64b06a92939e372fd7c40d1b9",
+      "source_id": "ERM25-047"
+    },
+    {
+      "file": "ERM25-047.txt",
+      "sha256": "9954ef81ad5a52e87cabfbac95fe4d470fdadc75399f75f917abd6329e7b2789",
+      "source_id": "ERM25-047"
+    },
+    {
+      "file": "ERM25-033.pdf",
+      "sha256": "18f401faa710133bd189c34673ba9e91153bbbe7902da1a3705a5b02b61eabf0",
+      "source_id": "ERM25-033"
+    },
+    {
+      "file": "ERM25-033.txt",
+      "sha256": "12a7f4b370c6e6b2e5287dfd0796650175448d1d1499070f36d6a05c2820d919",
+      "source_id": "ERM25-033"
+    },
+    {
+      "file": "ERM25-031.pdf",
+      "sha256": "bd0d37479419eec0410ba2927d9222bc6b797975e865039f1cf7c90b35108326",
+      "source_id": "ERM25-031"
+    },
+    {
+      "file": "ERM25-031.txt",
+      "sha256": "d8174466d3b9b91ac0149723eebea600d7832a2080e9ea87242eeea00855ef1a",
+      "source_id": "ERM25-031"
+    },
+    {
+      "file": "ERM25-027.pdf",
+      "sha256": "4ec8341af8bbb1c2fc932684853425f94cd3a47a22daae2f0c18e78f1483a913",
+      "source_id": "ERM25-027"
+    },
+    {
+      "file": "ERM25-027.txt",
+      "sha256": "6215603590ba332ac8f1fd26419a7f8204ede847887cd7a929635e521bd76b55",
+      "source_id": "ERM25-027"
+    },
+    {
+      "file": "ERM25-026.pdf",
+      "sha256": "1ccad3dc39bdacc967b6c7c42dba82af91e54f10feb4d918e8e93e9b96eb2cae",
+      "source_id": "ERM25-026"
+    },
+    {
+      "file": "ERM25-026.txt",
+      "sha256": "ee246b75773cf7aa4aab0d80df3c2580798a4a802a44a85ba0e8ae026f7edeb0",
+      "source_id": "ERM25-026"
+    },
+    {
+      "file": "ERM25-015.pdf",
+      "sha256": "e03c9bb814f9c1c8f08d894b65f986afde06d0e16fce173d0853796db1b708d4",
+      "source_id": "ERM25-015"
+    },
+    {
+      "file": "ERM25-015.txt",
+      "sha256": "a6aa9a240d7726a5fc924c6a60e00116ec8e8f725cd1f9d54eacbaa73f4b254e",
+      "source_id": "ERM25-015"
+    },
+    {
+      "file": "ERM26-068.pdf",
+      "sha256": "c68da57127d185d4174f9112c5a14e1b6e5c5e6415108dda93d7e8f2209e1f19",
+      "source_id": "ERM26-068"
+    },
+    {
+      "file": "ERM26-068.txt",
+      "sha256": "ffbefbd2997bb041c03613ce833911b9677a6244ef1408d7614c575109f946fc",
+      "source_id": "ERM26-068"
+    },
+    {
+      "file": "ERM26-063.pdf",
+      "sha256": "fcd1edaeea1138ff4b8eae74c6b5ee833f1469860d2cea4f4ab6277c97dd6392",
+      "source_id": "ERM26-063"
+    },
+    {
+      "file": "ERM26-063.txt",
+      "sha256": "3684bf54ce834639c749283e6f70182bef5ad525815c2a12bc0da6b3131dcc1a",
+      "source_id": "ERM26-063"
+    },
+    {
+      "file": "ERM26-059.pdf",
+      "sha256": "f093bc7201cddbbd787907373eb8daf066dde773b80c09d21a4ac4481d2dbc89",
+      "source_id": "ERM26-059"
+    },
+    {
+      "file": "ERM26-059.txt",
+      "sha256": "9ba0e4334854758d16d38f2cf868c4128a2b690599b6a225b6a755fc7956169f",
+      "source_id": "ERM26-059"
+    },
+    {
+      "file": "ERM26-058.pdf",
+      "sha256": "e1e7214fa5c9f7c418baacbe8b96373e42cdcb7c3d5595d64de6b5550e07e958",
+      "source_id": "ERM26-058"
+    },
+    {
+      "file": "ERM26-058.txt",
+      "sha256": "01b7293fb50f0a64ddc5efd636ddc67bf736fff835310fbb5e0ad151f98e9060",
+      "source_id": "ERM26-058"
+    },
+    {
+      "file": "ERM26-039.pdf",
+      "sha256": "98bd5c3dd70547e4bc67c100a5dd4bca6ad2852a59f844b02f8ee8d38719e3a4",
+      "source_id": "ERM26-039"
+    },
+    {
+      "file": "ERM26-039.txt",
+      "sha256": "b0a39a4250848c0bbead866dcc7ca330261934af17aca1bb0245898845cb5e16",
+      "source_id": "ERM26-039"
+    },
+    {
+      "file": "ERM26-037.pdf",
+      "sha256": "5a969053c8cb834a6333b4280bd36234e2c2b9c8a95e3f51a35a2eaaad182d57",
+      "source_id": "ERM26-037"
+    },
+    {
+      "file": "ERM26-037.txt",
+      "sha256": "39d895ccead554c96acab0667c64b7623f068fd423be0cceb6c86c699e3a160e",
+      "source_id": "ERM26-037"
+    },
+    {
+      "file": "ERM26-034.pdf",
+      "sha256": "0105dc3c62a793e55c4894b53407a67ea47a08b89b874d41ceaab1993f059fa2",
+      "source_id": "ERM26-034"
+    },
+    {
+      "file": "ERM26-034.txt",
+      "sha256": "25b5e6a3b38516c6a342f6ca0b089dc6d9341568310844de00290f7a0a92b5c7",
+      "source_id": "ERM26-034"
+    },
+    {
+      "file": "ERM26-033.pdf",
+      "sha256": "709ef0ff790abd436e01ad65ff4c070da5ede3a70c12792bac1914a842d04b4b",
+      "source_id": "ERM26-033"
+    },
+    {
+      "file": "ERM26-033.txt",
+      "sha256": "3b266d3f0a1af28dac402950ec2ca01e9c16ce58b7ce47d3b2d2c72115181579",
+      "source_id": "ERM26-033"
+    },
+    {
+      "file": "ERM26-031.pdf",
+      "sha256": "910f93f286456d51d11102378cc0e583ddae497cfc878e26ef73c1503151c793",
+      "source_id": "ERM26-031"
+    },
+    {
+      "file": "ERM26-031.txt",
+      "sha256": "ea9f37dbe8c28988fbb629b3d1378a156d995aa3ea9d681bd4a5da538708e5d7",
+      "source_id": "ERM26-031"
+    },
+    {
+      "file": "ERM26-020.pdf",
+      "sha256": "4ec896883c4f95fbc9f48b65fee199a2b8b64bd564fe58b39644ef853a8f6b98",
+      "source_id": "ERM26-020"
+    },
+    {
+      "file": "ERM26-020.txt",
+      "sha256": "ed2558fe180c481366606733c710f5c7d6f5911ce191a46e8fc099d0a2652fd2",
+      "source_id": "ERM26-020"
+    },
+    {
+      "file": "ERM26-019.pdf",
+      "sha256": "9b2ed61d2edc1813dfe2a6974e71e4530f724111d5a1be1e08a631b5ab66070c",
+      "source_id": "ERM26-019"
+    },
+    {
+      "file": "ERM26-019.txt",
+      "sha256": "0d325e1bad40fcdc826813aa408b4dc87ae0c150501a36be76a8fe7a8c0dadc9",
+      "source_id": "ERM26-019"
+    },
+    {
+      "file": "ERM26-008.pdf",
+      "sha256": "9a75e7a3eba1afc6f194c0664699fa6b29c99c1583669aefb79218d541bc7277",
+      "source_id": "ERM26-008"
+    },
+    {
+      "file": "ERM26-008.txt",
+      "sha256": "24370352ff0ee09abc2d9a7126a5ec9f4901014f2943e759251d6dea7bd3d8b7",
+      "source_id": "ERM26-008"
+    },
+    {
+      "file": "ERM26-007.pdf",
+      "sha256": "7a601c03be1ee5124b0d6de23ee9d07b84ac40b9a1371396e4a1a99acd397d0f",
+      "source_id": "ERM26-007"
+    },
+    {
+      "file": "ERM26-007.txt",
+      "sha256": "bda25cbe6eca0bce4f14cef71234afbf7dfe53a2fb8bbfa3da149ce01dac2bc8",
+      "source_id": "ERM26-007"
+    },
+    {
+      "file": "ERM26-005.pdf",
+      "sha256": "b9aaba8da6ad404b9f467bb145d4f1f7636e14312247438b2ea9724a3692984e",
+      "source_id": "ERM26-005"
+    },
+    {
+      "file": "ERM26-005.txt",
+      "sha256": "030d6b4bbe117499e280db03202029c5bd792b13d5774b512a08fa7c00290a2c",
+      "source_id": "ERM26-005"
+    },
+    {
+      "file": "2026_annual_delivery_and_riders.txt",
+      "sha256": "3c12436a050abd0c369429816ce0b2b749613526ec7e1da6d7116caa44e9216d",
+      "source_id": "2026-ratebook",
+      "original_pdf_pages": [
+        24,
+        26,
+        27,
+        58,
+        60,
+        174,
+        178,
+        257,
+        258,
+        394,
+        396,
+        789,
+        799,
+        802,
+        814,
+        821,
+        822,
+        824,
+        839,
+        845,
+        848,
+        850,
+        852,
+        854,
+        864,
+        865,
+        866
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ERM26-082",
+      "url": "https://www.icc.illinois.gov/downloads/public/filing/4/399143.pdf",
+      "sha256": "825a7bc953cead4944ad74c73eca2f351ff1a3ee15ce218c036a228a26288ad1",
+      "filed": "2026-05-15",
+      "informational_effective_date": "2026-05-16",
+      "applicability": "Explicit utility billing-month tables, not the filing date",
+      "implemented_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "ERM26-087",
+      "url": "https://www.icc.illinois.gov/downloads/public/filing/4/399174.pdf",
+      "sha256": "df2b629ffab80a46b260b6d76b5fd373a33c7b0e65e32ea7741f4e6bbf65f385",
+      "filed": "2026-05-19",
+      "informational_effective_date": "2026-05-20",
+      "implemented_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "ERM26-086",
+      "url": "https://www.icc.illinois.gov/downloads/public/filing/4/399171.pdf",
+      "sha256": "0c6cc3a264c15dae1e91a182567bfffaf1083a08e0825c9328030d5d06bc7a23",
+      "filed": "2026-05-19",
+      "informational_effective_date": "2026-05-20",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-ratebook",
+      "url": "https://www.comed.com/cdn/assets/v3/assets/blt3ebb3fed6084be2a/blt86ebee5fe6ed02f8/6ab16afb15d5b73190b00e59/2026_Ratebook.pdf?branch=prod_alias",
+      "sha256": "0e3f2ee2fcd2658e41312bc50afbda08a5830f8efaf761430c83e09abff65de1",
+      "pages": 885,
+      "implemented_pages": [
+        24,
+        26,
+        27,
+        58,
+        60,
+        174,
+        178,
+        257,
+        258,
+        394,
+        396,
+        789,
+        799,
+        802,
+        814,
+        821,
+        822,
+        824,
+        839,
+        845,
+        848,
+        850,
+        852,
+        854,
+        864,
+        865,
+        866
+      ]
+    },
+    {
+      "id": "2025-ratebook",
+      "url": "https://www.comed.com/cdn/assets/v3/assets/blt3ebb3fed6084be2a/blt86ebee5fe6ed02f8/678aca912c996f726133ec1e/2025_Ratebook.pdf?branch=prod_alias",
+      "sha256": "c21cff91a15fca94ba0e550337b882f3548c79d6f773ae885c83fa1f54818b5e",
+      "pages": 823,
+      "status": "January revision; components corroborated with later revised sheets. See supply-specific coverage."
+    },
+    {
+      "id": "2025-january",
+      "url": "https://www.comed.com/cdn/assets/v3/assets/blt3ebb3fed6084be2a/blt86ebee5fe6ed02f8/678aca912c996f726133ec1e/2025_Ratebook.pdf?branch=prod_alias",
+      "sha256": "c21cff91a15fca94ba0e550337b882f3548c79d6f773ae885c83fa1f54818b5e",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        743,
+        758,
+        761,
+        762,
+        790,
+        792,
+        794,
+        796,
+        798
+      ]
+    },
+    {
+      "id": "2025-july",
+      "url": "https://www.comed.com/cdn/assets/v3/assets/blt3ebb3fed6084be2a/blt86ebee5fe6ed02f8/6866e86afa0c450033ffa359/2025_Ratebook.pdf?branch=prod_alias",
+      "sha256": "4f0c86402a10a21e85207b5e437539fc262344d6cebc7f997bc2b04ecaccb899",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        23,
+        25,
+        26,
+        56,
+        58,
+        165,
+        169,
+        245,
+        246,
+        382,
+        384,
+        727,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        749,
+        750,
+        751,
+        765,
+        766,
+        768,
+        787,
+        793,
+        794,
+        796,
+        798,
+        800,
+        802,
+        812,
+        813
+      ]
+    },
+    {
+      "id": "2025-december",
+      "url": "https://www.comed.com/cdn/assets/v3/assets/blt3ebb3fed6084be2a/blt86ebee5fe6ed02f8/694b1d0b094e9c8247157ab7/2025_Ratebook.pdf?branch=prod_alias",
+      "sha256": "fecd978ca0a0a2dba8f84800888ba93fa9fffb56ed078c2dcd215fb3baba8716",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        390,
+        392,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        785,
+        786,
+        787,
+        801,
+        802,
+        804,
+        805,
+        806,
+        808,
+        823,
+        829,
+        830,
+        850,
+        859,
+        860,
+        876
+      ]
+    },
+    {
+      "id": "2025-pea-history",
+      "url": "https://www.comed.com/cdn/assets/v3/assets/blt3ebb3fed6084be2a/bltd0031ae7271bf238/682c9fe866e148d5541a49fe/2025_PEA_record_for_rate_book.pdf?branch=prod_alias",
+      "sha256": "c688268ee23a1d0678971a606b3bc6a9746572d1ac00477d57c0c342a61042ca",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-pea-history",
+      "url": "https://www.comed.com/cdn/assets/v3/assets/blt3ebb3fed6084be2a/bltd0031ae7271bf238/6ac685e1ff666ce7a12a40f7/2026_PEA_record_for_rate_book.pdf?branch=prod_alias",
+      "sha256": "13a9dc7e16a56b7ff58fdcd6f7d2ec7fd4f7a86e2afe9f9fdf3c9a2572a4b31c",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        1
+      ]
+    },
+    {
+      "id": "ICC-price-history",
+      "url": "https://icc.illinois.gov/downloads/public/pluginillinois/HistoricalPriceToCompare.pdf",
+      "sha256": "c40f0f1e58482a4cc52b561ce6c2bccd431aa981a8c7538f42fbabfcb6f72f18",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        1
+      ]
+    },
+    {
+      "id": "ERM25-131",
+      "url": "https://www.icc.illinois.gov/downloads/public/filing/4/393526.pdf",
+      "sha256": "036ece98dcb4024eb333c1eb2160ac52cfea4c319ef71279f990b7ed45be5ac1",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "2025-November-DRAF",
+      "url": "https://www.icc.illinois.gov/downloads/public/filing/4/394253.pdf",
+      "sha256": "07350de5a74e58c5ba0a4db25e0a692f5c58f01ebae9ecb15aea8502df205fb3",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "2025-November-EDAF",
+      "url": "https://www.icc.illinois.gov/downloads/public/filing/4/394254.pdf",
+      "sha256": "52e1bfa9864e1cc3f958736e9eb52e07f807a77216848c2dc2719c1424ddca36",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM25-166",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/394224.pdf",
+      "sha256": "03f4085e7337a1c36e530346be680617058d1f92bce20fa4f8e5a8e2a49fd353",
+      "pages": 4,
+      "index_text": "ERM #25-166\nFiling Information sheets for Purchased Electricity Adjustment Factor and Hourly Purchase Electricity Adjustment Factor.\nIll. C.C. No. 10 203rd Rev. Informational Sheet No. 3 (Supp. to Rate BES and Rider PE (1))\nIll. C.C. No. 10 203rd Rev. Informational Sheet No. 7 (Supp. to Rate BESH and Rider PPO (1))\n\n\nFiled: October 16, 2025\nEffective: October 17, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3,
+        4
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-10-16",
+      "informational_effective_date": "2025-10-17"
+    },
+    {
+      "id": "ERM25-154",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/393873.pdf",
+      "sha256": "e7918a6d3f8370f0118a5b42a80793dda537eb630063247ea1522b57aab87e8c",
+      "pages": 4,
+      "index_text": "ERM #25-154\nFiling Information sheets for Purchased Electricity Adjustment Factor and Hourly Purchase Electricity Adjustment Factor.\nIll. C.C. No. 10 202nd Rev. Informational Sheet No. 3 (Supp. to Rate BES and Rider PE (1))\nIll. C.C. No. 10 202nd Rev. Informational Sheet No. 7 (Supp. to Rate BESH and Rider PPO (1))\n\n\nFiled: September 18, 2025\nEffective: September 19, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3,
+        4
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-09-18",
+      "informational_effective_date": "2025-09-19"
+    },
+    {
+      "id": "ERM25-132",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/393564.pdf",
+      "sha256": "c91eee8f5651cde18aef267d587e3a023ee961f6e230422c3cb3a241ae9a6b89",
+      "pages": 4,
+      "index_text": "ERM #25-132\nFiling of the Purchased Electricity Adjustment Factor (PEA), Hourly Purchased Electricity Adjustment Factor (HPEA) applicable for the September 2025 billing period.\nIll. C.C. No. 10 201st Rev. Informational Sheet No. 3 (Supp. to Rate BES and Rider PE (1))\nIll. C.C. No. 10 201st Rev. Informational Sheet No. 7 (Supp. to Rate BESH and Rider PPO (1))\n\n\nFiled: August 19, 2025\nEffective: August 20, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3,
+        4
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-08-19",
+      "informational_effective_date": "2025-08-20"
+    },
+    {
+      "id": "ERM25-121",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/393256.pdf",
+      "sha256": "55a7a42ec74854224a4c00e7155c0389f11e6c88cafe043117f062a6b15f1dca",
+      "pages": 4,
+      "index_text": "ERM #25-121\nFiling of the Purchased Electricity Adjustment Factor (PEA) and Hourly Purchased Electricity Adjustment Factor (HPEA) applicable for the August 2025 billing period.\nIll. C.C. No. 10 200th Rev. Sheet No. 3 (Supp. to Rate BES and Rider PE (1))\nIll. C.C. No. 10 200th Rev. Sheet No. 7 (Supp. to Rate BESH and Rider PPO (1))\n\n\nFiled: July 17, 2025\nEffective: July 18, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3,
+        4
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-07-17",
+      "informational_effective_date": "2025-07-18"
+    },
+    {
+      "id": "ERM25-056",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/390849.pdf",
+      "sha256": "3d79ce8a3c5b53d6a7dfbec862325f232ce37160dd235d5fa1e4051f6c431c4b",
+      "pages": 3,
+      "index_text": "ERM #25-056\nRider CFRA \u2013 Carbon-Free Resource Adjustments (Rider CFRA) to update the non-summer Carbon-Free Resource (CFR) Adjustment effective beginning with the May 2025 monthly billing period\nIll. C.C. No. 10 31st Rev.Informational Sheet No. 36.1 (Supp to Rider CFRA (1))\n\n\nFiled: April 17, 2025\nEffective: April 18, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-04-17",
+      "informational_effective_date": "2025-04-18"
+    },
+    {
+      "id": "ERM25-047",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/390605.pdf",
+      "sha256": "eeeabacebf4e5383b030fa232f7181ed03f329a64b06a92939e372fd7c40d1b9",
+      "pages": 9,
+      "index_text": "ERM #25-047\nFiling for informational purposes, (1) the Purchased Electricity Charges as provided for Rate BES and Rider PE (2) the PJM Services Charges as provided for in Rider PE and Rate BES (3) the Capacity Charge as provided in Rate BESH and Rider PPO (4) PJM Services Charge as provided to Rate BESH and Rider PPO (5) Miscellaneous Procurement Components Charge (MPCC) as provided for in Rate BESH and Rider PPO (6) Incremental Uncollectible Cost Factor (7) the Transmission Services Adjustment (TSA) Factor and Miscellaneous Procurement components adjustment Factor as provided for Rider MSS (1) .\nIll. C.C. No. 10 78th Rev Informational Sheet No. 1 (Supp. to Rider BES and Rider PE(1))\nIll. C.C. No. 10 69th Rev Informational Sheet No. 2 (supp. to Rider BES and Rider PE(1))\nIll. C.C. No. 10 67th Rev Informational Sheet No. 4 (supp. to Rider BES and Rider PE(1))\nIll. C.C. No. 10 67th Rev Informational Sheet No. 5 (supp. to Rider BESH and Rider PPO(1))\nIll. C.C. No. 10 71st Rev Informational Sheet No. 6 (supp. to Rider BESH and Rider PPO(1))\nIll. C.C. No. 10 54th Rev Informational Sheet No. 35 (supp. to Rider MSS(1))\n\n\nFiled: April 11, 2025\nEffective: April 12, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-04-11",
+      "informational_effective_date": "2025-04-12"
+    },
+    {
+      "id": "ERM25-033",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/389486.pdf",
+      "sha256": "18f401faa710133bd189c34673ba9e91153bbbe7902da1a3705a5b02b61eabf0",
+      "pages": 3,
+      "index_text": "ERM #25-033\nFiling Rider CFRA \u2013 Carbon-Free Resource Adjustments (Rider CFRA) to update the non-summer Carbon-Free Resource (CFR) Adjustment effective with the April 2025 monthly billing period.\nIll. C.C. No. 10 30th Rev. Informational Sheet No. 36.1 (Supp. to Rider CFRA (1))\n\n\nFiled: March 19, 2025\nEffective: March 21, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-03-19",
+      "informational_effective_date": "2025-03-21",
+      "pdf_footer_filed": "2025-03-20",
+      "date_discrepancy": "ICC receipt/index March19 versus footer March20; explicit April2025 applicability unchanged."
+    },
+    {
+      "id": "ERM25-031",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/389345.pdf",
+      "sha256": "bd0d37479419eec0410ba2927d9222bc6b797975e865039f1cf7c90b35108326",
+      "pages": 3,
+      "index_text": "ERM #25-031\nFiling Rider Coal to Solar Adjustment.\nIll. C.C. No. 10 4th Rev. Informational Sheet No. 63 (Supp to Rider CTS (1))\n\n\nFiled: March 17, 2025\nEffective: March 18, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-03-17",
+      "informational_effective_date": "2025-03-18"
+    },
+    {
+      "id": "ERM25-027",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/389302.pdf",
+      "sha256": "4ec8341af8bbb1c2fc932684853425f94cd3a47a22daae2f0c18e78f1483a913",
+      "pages": 3,
+      "index_text": "ERM #25-027\nFiling Rider DSPR - Delivery Service Pricing Reconiliation Adjustment.\nIll. C.C. No. 10 29th Rev. Informational Sheet No. 9 (Supp. to Rider DSPR (1))\n\n\nFiled: March 14, 2025\nEffective: March 15, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-03-14",
+      "informational_effective_date": "2025-03-15",
+      "pdf_footer_filed": "2024-03-14",
+      "pdf_footer_effective": "2024-03-15",
+      "date_discrepancy": "ICC receipt/index March2025 versus footer March2024; explicit 2025 DRAF table corroborated by later filing."
+    },
+    {
+      "id": "ERM25-026",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/389292.pdf",
+      "sha256": "1ccad3dc39bdacc967b6c7c42dba82af91e54f10feb4d918e8e93e9b96eb2cae",
+      "pages": 2,
+      "index_text": "ERM #25-026\nFiling of Rider ECR - Environmental Cost Recovery Adjustment applicable beginning with the April 2025 billing period and extending through the December 2025 billing period.\nIll. C.C. No. 10 50th Rev. Informational Sheet No. 8 (Supplement to Rider ECR (1))\n\n\nFiled: March 13, 2025\nEffective: March 14, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        2
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-03-13",
+      "informational_effective_date": "2025-03-14"
+    },
+    {
+      "id": "ERM25-015",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/388714.pdf",
+      "sha256": "e03c9bb814f9c1c8f08d894b65f986afde06d0e16fce173d0853796db1b708d4",
+      "pages": 3,
+      "index_text": "ERM #25-015\nFiling Rider CFRA \u2013 Carbon-Free Resource Adjustments (Rider CFRA) to update the non-summer Carbon-Free Resource (CFR) Adjustment effective with the March 2025 billing period.\nIll. C.C. No. 10 29th Rev Informational Sheet No. 36.1 (Supp. to Rdier CFRA (1))\n\n\nFiled: February 19, 2025\nEffective: February 20, 2025\n\nDocuments\nStamped Tariff Pages",
+      "retrieved_on": "2026-10-13",
+      "implemented_pages": [
+        3
+      ],
+      "applicability": "Explicit billing-month tables; do not use filing date as rate start. Later forecast columns are not implemented.",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2025",
+      "filed": "2025-02-19",
+      "informational_effective_date": "2025-02-20"
+    },
+    {
+      "id": "ERM26-068",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/398491.pdf",
+      "sha256": "c68da57127d185d4174f9112c5a14e1b6e5c5e6415108dda93d7e8f2209e1f19",
+      "pages": 9,
+      "index_text": "ERM #26-068\nFiling for informational purposes, (1) the Purchased Electricity Charges as provided for Rate BES and Rider PE (2) the PJM Services Charges as provided for in Rider PE and Rate BES (3) the Capacity Charge as provided in Rate BESH and Rider PPO (4) PJM Services Charge as provided to Rate BESH and Rider PPO (5) Miscellaneous Procurement Components Charge (MPCC) as provided for in Rate BESH and Rider PPO (6) the Transmission Services Adjustment (TSA) Factor and Miscellaneous Procurement components adjustment Factor as provided for Rider MSS (1).\nIll. C.C. No. 10 83rd Rev. Informational Sheet No. 1 (Supp. to Rate BES and Rider PE (1)\nIll. C.C. No. 10 74th Rev. Informational Sheet No. 2 (Supp. to Rate BES and Rider PE (1)\nIll. C.C. No. 10 71st Rev. Informational Sheet No. 4 (Supp. to Rate BESH and Rider PPO (1)\nIll. C.C. No. 10 72nd Rev. Informational Sheet No. 5 (Supp. to Rate BESH and Rider PPO (1)\nIll. C.C. No. 10 76th Rev. Informational Sheet No. 6 (Supp. to Rate BESH and Rider PPO (1)\nIll. C.C. No. 10 59th Rev. Informational Sheet No. 35 (Supp. to Rider MSS (1)\n\n\nFiled: April 24, 2026\nEffective: April 25, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-04-24",
+      "informational_effective_date": "2026-04-25",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "ERM26-063",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/398278.pdf",
+      "sha256": "fcd1edaeea1138ff4b8eae74c6b5ee833f1469860d2cea4f4ab6277c97dd6392",
+      "pages": 3,
+      "index_text": "ERM #26-063\nFiling of Rider CTS \u2013 Coal to Solar Adjustment (Rider CTS).\nIll. C.C. No. 10 9th Revised Informational Sheet No. 63\n\n\nFiled: April 17, 2026\nEffective: April 18, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-04-17",
+      "informational_effective_date": "2026-04-18",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM26-059",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/398271.pdf",
+      "sha256": "f093bc7201cddbbd787907373eb8daf066dde773b80c09d21a4ac4481d2dbc89",
+      "pages": 3,
+      "index_text": "ERM #26-059\nFiling Rider CFRA - Carbon-Free Resource Adjustments.\nIll. C.C. No. 10 44th Revised Informational Sheet No. 36.1\n\n\nFiled: April 17, 2026\nEffective: April 18, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-04-17",
+      "informational_effective_date": "2026-04-18",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM26-058",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/398254.pdf",
+      "sha256": "e1e7214fa5c9f7c418baacbe8b96373e42cdcb7c3d5595d64de6b5550e07e958",
+      "pages": 4,
+      "index_text": "ERM #26-058\nFiling of the Purchased Electricity Adjustment Factor (PEA), Hourly Purchased Electricity Adjustment Factor (HPEA) applicable for the May 2026 billing period.\nIll. C.C. No. 10 209th Rev. Informational Sheet No. 3 (supp. to rate bes and rider pe (1))\nIll. C.C. No. 10 209th Rev. Informational Sheet No. 7 (supp. to rate besh and rider ppo (1))\n\n\nFiled: April 16, 2026\nEffective: April 17, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-04-16",
+      "informational_effective_date": "2026-04-17",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "ERM26-039",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/396796.pdf",
+      "sha256": "98bd5c3dd70547e4bc67c100a5dd4bca6ad2852a59f844b02f8ee8d38719e3a4",
+      "pages": 3,
+      "index_text": "ERM #26-039\nFiling Rider CFRA - Carbon-Free Resource Adjustments.\nIll. C.C. No. 10 43rd Rev. Informational Sheet No. 36.1 (supp. to Rider CFRA (1))\n\n\nFiled: March 20, 2026\nEffective: March 21, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-03-20",
+      "informational_effective_date": "2026-03-21",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM26-037",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/396728.pdf",
+      "sha256": "5a969053c8cb834a6333b4280bd36234e2c2b9c8a95e3f51a35a2eaaad182d57",
+      "pages": 4,
+      "index_text": "ERM #26-037\nFiling of the Purchased Electricity Adjustment Factor (PEA), Hourly Purchased Electricity Adjustment Factor (HPEA) applicable for the April 2026 billing period.\nIll. C.C. No. 10 208th Rev. Informational Sheet No. 3 (Supp. to Rate BES and Rider PE (1))\nIll. C.C. No. 10 208th Rev. Informational Sheet No. 7 (Supp. to Rate BESH and Rider PPO (1))\n\n\nFiled: March 19, 2026\nEffective: March 20, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-03-19",
+      "informational_effective_date": "2026-03-20",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "ERM26-034",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/396598.pdf",
+      "sha256": "0105dc3c62a793e55c4894b53407a67ea47a08b89b874d41ceaab1993f059fa2",
+      "pages": 3,
+      "index_text": "ERM #26-034\nFiling updates the Rider Coal to Solar - Coal to Solar Adjusment.\nIll. C.C. No. 10 8th Rev. Informational Sheet No. 63 (Supp. to Rider CTS (1))\n\n\nFiled: March 17, 2026\nEffective: March 18, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-03-17",
+      "informational_effective_date": "2026-03-18",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM26-033",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/396597.pdf",
+      "sha256": "709ef0ff790abd436e01ad65ff4c070da5ede3a70c12792bac1914a842d04b4b",
+      "pages": 4,
+      "index_text": "ERM #26-033\nFiling updates Rider LID - Low-Income Discount.\nIll. C.C. No. 10 3rd Rev. Informational Sheet No. 73 (Supp. to Rider LID (1)\nIll. C.C. No. 10 3rd Rev. Informational Sheet No. 74 (Supp. to Rider LID (1)\n\n\nFiled: March 17, 2026\nEffective: March 18, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-03-17",
+      "informational_effective_date": "2026-03-18",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        4
+      ]
+    },
+    {
+      "id": "ERM26-031",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/396435.pdf",
+      "sha256": "910f93f286456d51d11102378cc0e583ddae497cfc878e26ef73c1503151c793",
+      "pages": 3,
+      "index_text": "ERM #26-031\nFiling Rider DSPR \u2013 Delivery Service Pricing Reconciliation Adjustment.\nIll. C.C. No. 10 33rd Rev. Informational Sheet No. 9 (Supp. to Rider DSPR (1))\n\n\nFiled: March 12, 2026\nEffective: March 13, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-03-12",
+      "informational_effective_date": "2026-03-13",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM26-020",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/395863.pdf",
+      "sha256": "4ec896883c4f95fbc9f48b65fee199a2b8b64bd564fe58b39644ef853a8f6b98",
+      "pages": 3,
+      "index_text": "ERM #26-020\nFiling CFRA \u2013 Carbon-Free Resource Adjustments (Rider CFRA).\nIll. C.C. No. 10 42nd Rev. Informational Sheet No. 36.1 (Supp, to Rider CFRA (1)\n\n\nFiled: February 20, 2026\nEffective: February 21, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-02-20",
+      "informational_effective_date": "2026-02-21",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM26-019",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/395844.pdf",
+      "sha256": "9b2ed61d2edc1813dfe2a6974e71e4530f724111d5a1be1e08a631b5ab66070c",
+      "pages": 4,
+      "index_text": "ERM #26-019\nFiling of the Purchased Electricity Adjustment Factor (PEA), Hourly Purchased Electricity Adjustment Factor (HPEA) for the March 2026 billing period.\nIll. C.C. No. 10 207th Rev. Informational Sheet No. 3 (supp. to Rate BES and Rider PE (1))\nIll. C.C. No. 10 207th Rev. Informational Sheet No. 7 (supp. to Rate BESH and Rider PPO (1))\n\n\nFiled: February 19, 2026\nEffective: February 20, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-02-19",
+      "informational_effective_date": "2026-02-20",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "ERM26-008",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/395230.pdf",
+      "sha256": "9a75e7a3eba1afc6f194c0664699fa6b29c99c1583669aefb79218d541bc7277",
+      "pages": 3,
+      "index_text": "ERM #26-008\nFiling Rider CFRA \u2013 Carbon-Free Resource Adjustments (Rider CFRA) to update the non-summer Carbon-Free Resource (CFR) Adjustment effective beginning with the February 2026 monthly billing period to include the Carbon-Free Resource Monthly Reconciliation (CFRMR) Factor effective in February 2026 based on October 2025 actuals\nIll. C.C. No. 10 41st Rev. Informational Sheet No. 36.1 (Supp. to Rder CFRA (1))\n\n\nFiled: January 20, 2026\nEffective: January 21, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-01-20",
+      "informational_effective_date": "2026-01-21",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3
+      ]
+    },
+    {
+      "id": "ERM26-007",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/395227.pdf",
+      "sha256": "7a601c03be1ee5124b0d6de23ee9d07b84ac40b9a1371396e4a1a99acd397d0f",
+      "pages": 4,
+      "index_text": "ERM #26-007\nFiling Rider LID - Low Income discount to update the Low-Income Discount (LID) percentages and Low-Income Discount Recovery (LIDR) charges based on the 2026 Federal Poverty Guidelines and the updated number of low-income customers receiving discounts.\nIll. C.C. No. 10 2nd Rev. Informational Sheet Nos. 73 & 74 (Supp. to Rdier LID (1))\n\n\nFiled: January 20, 2026\nEffective: January 21, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-01-20",
+      "informational_effective_date": "2026-01-21",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        4
+      ]
+    },
+    {
+      "id": "ERM26-005",
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/395199.pdf",
+      "sha256": "b9aaba8da6ad404b9f467bb145d4f1f7636e14312247438b2ea9724a3692984e",
+      "pages": 4,
+      "index_text": "ERM #26-005\nFiling of the Purchased Electricity Adjustment Factor (PEA), Hourly Purchased Electricity Adjustment Factor (HPEA) applicable for the February 2026 billing period.\nIll. C.C. No. 10 206th Rev. Informational Sheet No. 3 (Supp. to Rate BES and Rider PE (1))\nIll. C.C. No. 10 206th Rev. Informational Sheet No. 3 (Supp. to Rate BESH and Rider PPO (1))\n\n\nFiled: January 15, 2026\nEffective: January 16, 2026\n\nDocuments\nStamped Tariff Pages",
+      "index_url": "https://icc.illinois.gov/emdb/ucdb/entity/U295/filing-list?year=2026",
+      "filed": "2026-01-15",
+      "informational_effective_date": "2026-01-16",
+      "retrieved_on": "2026-10-13",
+      "applicability": "Explicit utility billing-month tables; later TBD or forecast columns are not implemented.",
+      "implemented_pages": [
+        3,
+        4
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "months": "2017-2024",
+      "reason": "Complete historical composites unverified."
+    },
+    {
+      "months": "2026-11 onward",
+      "reason": "Monthly adjustments not verified; no TBD is filled."
+    }
+  ],
+  "retrieval_limits": [
+    "Human completed ICC CAPTCHA; the unlocked 2025 index was read through the browser. Exact public PDF links were downloaded, hashed and rendered for review; no CAPTCHA bypass.",
+    "The web reader returned 502 for the historical ICC price table; ordinary direct HTTPS retrieval succeeded. Its current revision is hashed and retained.",
+    "The bare Contentstack Ratebook.pdf and ICC currentbooks [186] informational-sheet URL now return 2026 revisions despite cached 2025 search text. Their former 2025 snippets were not used as rates.",
+    "2025 July book sheet9 footer says March 2024 but its applicability tables identify 2025; the stamped October revision confirms April-October 2025 DRAF17.0696%.",
+    "2025 December book sheet63 footer says November13,2026 although filed November12,2025. Its table identifies Oct-Dec2025; the year index records the 2025 filing. The application window is retained without silently editing the source.",
+    "RBAF explicitly not applicable before Jan2026. TPAF first reconciliation follows the May2025 annual proceeding and is filed Dec2025 for Jan2026. LID initial informational tables begin Jan2026. No 2026 factor is backfilled into 2025.",
+    "ERM25-033 ICC receipt stamp/index date is March19,2025; PDF footer says March20,2025. Effective date is March21; explicit April2025 table establishes applicability. Both original dates preserved.",
+    "ERM25-027 ICC receipt stamp/index is March14,2025; PDF footer says March14/15,2024. Explicit Jan-Mar2025/Apr-Dec2025 tables and later ERM25-168 corroborate the 2025 DRAF. No footer is silently edited.",
+    "January-May2026 supply/UF/REA/ZEA and monthly PEA/HPEA/CFRA/LID/CTS/ECR were verified separately. Annual delivery bases, RBAF, TPAF, EDAF, DGRA, EE, ETAC and RCA tables explicitly identify2026 applicability. June forecast supply values in ERM26-068 are superseded and not used."
+  ],
+  "cycle_rules": {
+    "ratebook_pages": [
+      24,
+      27,
+      174,
+      178,
+      257,
+      258
+    ],
+    "applicability": "Utility-designated billing month and whole meter cycle. Fixed charges once; MKD once per documented cycle.",
+    "short_service": "Universal proration unverified. Require explicit source and per-charge allocation factors. These are documented account inputs, not an implemented universal utility proration rule."
+  },
+  "verified_billing_months_by_supply": {
+    "BES": [
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "BESH": [
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ]
+  }
+}

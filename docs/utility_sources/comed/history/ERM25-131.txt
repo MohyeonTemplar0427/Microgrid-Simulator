@@ -1,0 +1,621 @@
+=== PAGE 1 ===
+ 
+ 
+ 
+ 
+VIA E-TARIFF DELIVERY 
+ 
+August 15, 2025 
+ 
+Ms. Stephanie Cook 
+Chief Clerk 
+Illinois Commerce Commission 
+527 East Capitol Avenue 
+Springfield, IL 62701 
+ 
+Subject: Informational Filing of Charges and Factors Determined by Formulae  
+ 
+Dear Ms. Cook: 
+ 
+Commonwealth Edison Company (Company) submits the following informational sheets for 
+filing with the Illinois Commerce Commission (ICC) on August 15, 2025, for informational 
+purposes: 
+ 
+COMMONWEALTH EDISON COMPANY 
+ELECTRICITY 
+ILL. C. C. No. 10 
+ 
+ Purchased Electricity Charges 
+80th Revised Informational Sheet No. 1 canceling 79th Revised Informational Sheet No. 1 
+ 
+ PJM Services Charges 
+71st Revised Informational Sheet No. 2      canceling      70th Revised Informational Sheet No. 2 
+ 
+ Capacity Charge 
+69th Revised Informational Sheet No. 4 canceling  68th Revised Informational Sheet No. 4 
+ 
+ PJM Services Charge 
+69th Revised Informational Sheet No. 5 canceling 68th Revised Informational Sheet No. 5 
+ 
+ Miscellaneous Procurement Components Charge 
+73rd Revised Informational Sheet No. 6 canceling 72nd Revised Informational Sheet No. 6 
+ 
+Incremental Uncollectible Cost Factor 
+54th Revised Informational Sheet No. 20  canceling  53rd Revised Informational Sheet No. 20 
+ 
+ Transmission Services Adjustment Factor and 
+ Miscellaneous Procurement Components Adjustment Factor 
+56th Revised Informational Sheet No. 35  canceling 55th Revised Informational Sheet No. 35 
+ 
+ 
+=== PAGE 2 ===
+Ms. Stephanie Cook        August 15, 2025 
+Informational Filing of Charges and Factors Determined by Formulae  
+ 
+2 
+ 
+These informational sheets are to become effective August 16, 2025. Informational Sheet  
+No. 20 is being filed to identify the Incremental Distribution Uncollectible Cost Factors (IDUFs)  
+and Incremental Supply Uncollectible Cost Factors (ISUFs). Informational Sheet Nos. 1, 2, 4, 5, 
+6, and 35 are being filed to incorporate the changes in the ISUFs. 
+ 
+Electronic copies of this Transmittal Letter and associated Informational Sheets are being sent 
+to Mr. Torsten Clausen (Director: Policy Division), Ms. Tanya Capellan (Director: Office of Retail 
+Market Development), Ms. Gina Tuminello (Assistant: Office of Retail Market Development), Ms. 
+Reonna Harrison (Associate: Office of Retail Market Development), Mr. Richard Bridal II 
+(Director: Financial Analysis Division), Ms. Rochelle Phipps (Assistant Director: Financial 
+Analysis Division), Mr. Steve Knepler (Supervisor: Accounting Department - Financial Analysis 
+Division), Ms. Bonnie Pearce (Accountant: Accounting Department - Financial Analysis 
+Division), Mr. Scott Tolsdorf (Accountant: Accounting Department), Mr. Kenrick Au (Accountant: 
+Accounting Department) and Mr. Sam McClerren (Tariff Analyst: Rates Department - Financial 
+Analysis Division), all of the Bureau of Public Utilities of the ICC. 
+ 
+Work papers documenting the determination of the Purchased Electricity Charges and the four 
+Purchased Electricity Prices, PJM Services Charges, Capacity Charge, Miscellaneous 
+Procurement Components Charge, Transmission Services Adjustment Factor, and 
+Miscellaneous Procurement Components Adjustment Factor are being sent electronically to Mr. 
+Clausen, Ms. Capellan, Ms. Tuminello, Ms. Harrison, and Mr. Tolsdorf. 
+ 
+Work papers documenting the determination of the Incremental Uncollectable Cost Factors, 
+ISUFs and IDUFs, are being sent electronically to Mr. Clausen, Ms. Phipps, Mr. Knepler, 
+Ms. Pearce, Ms. Harrison, and Mr. Au. 
+ 
+Sincerely,  
+ 
+ 
+ 
+John L. Leick  
+Senior Manager Retail Rates 
+ComEd 
+(779) 231-2375 
+   
+ 
+cc: K. Au 
+ R. Bridal II 
+ T. Clausen 
+ T. Capellan 
+ R. Harrison 
+ S. Knepler 
+ S. McClerren 
+ R. Phipps 
+ B. Pearce 
+ S. Tolsdorf  
+ G. Tuminello 
+ 
+ 
+ 
+
+=== PAGE 3 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 80th Revised Informational Sheet No. 1 
+Edison Company  (Canceling 79th Revised Informational Sheet No. 1) 
+ 
+PURCHASED ELECTRICITY CHARGES 
+Filed with the Illinois Commerce Commission on Date Effective:  August 16, 2025 
+August 15, 2025.  Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BES and Rider PE (1) 
+ 
+ 
+ 
+Customer Group or Subgroup 
+ 
+ 
+Units 
+Purchased Electricity Charges (PECs) 
+Applicable for the  
+June 2025 Monthly Billing Period and Extending 
+Through the  
+August 2025 
+Monthly Billing Period (2) (3) (4) (6) 
+Summer PEC (5) Nonsummer PEC 
+Residential ¢/kWh 8.261 8.384 
+Watt-hour Non-Electric Space Heating ¢/kWh 8.304 8.435 
+Demand Non-Electric Space Heating ¢/kWh 8.416 8.472 
+Nonresidential Electric Space Heating ¢/kWh 7.578 7.913 
+Dusk to Dawn Lighting ¢/kWh 3.246 3.873 
+General Lighting ¢/kWh 7.503 7.860 
+ 
+ 
+ 
+Customer Group or Subgroup 
+ 
+ 
+Units 
+PECs  
+Applicable Beginning with the  
+September 2025 
+Monthly Billing Period 
+and Extending Through the  
+May 2026  
+Monthly Billing Period (2) (3) (4) (6) 
+Summer PEC (5) Nonsummer PEC  
+Residential  ¢/kWh 8.260 8.383 
+Watt-hour Non-Electric Space Heating ¢/kWh 8.304 8.435 
+Demand Non-Electric Space Heating ¢/kWh 8.416 8.472 
+Nonresidential Electric Space Heating ¢/kWh 7.578 7.913 
+Dusk to Dawn Lighting ¢/kWh 3.085 3.682 
+General Lighting ¢/kWh 7.133 7.472 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BES - Basic Electric Service 
+(Rate BES) and Rider PE - Purchased Electricity (Rider PE). 
+(2) PECs are designated on retail customer bills as the Electricity Supply Charge pursuant to Rate BES.  
+(3)  PECs include Supply Base Uncollectible Cost Factors (Supply BUFs) as listed in Informational Sheet 
+No. 21. 
+(4)  PECs incorporate Incremental Supply Uncollectible Cost Factors (ISUFs) as listed in Informational 
+Sheet No. 20, which include a Supply Balancing Factor (SBF) in accordance with the provisions of 
+Rider UF - Uncollectible Factors (Rider UF). 
+(5) The Summer PECs are applicable in the months of June, July, August, and September. 
+(6) PECs incorporate the results of the Spring 2025 Procurement Event approved by the ICC on April 10, 
+2025, and the PJM Financial Transmission Rights (FTR) Auctions finalized on May 6, 2025.   
+=== PAGE 4 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 71st Revised Informational Sheet No. 2 
+Edison Company (Canceling 70th Revised Informational Sheet No. 2) 
+ 
+PJM SERVICES CHARGES 
+Filed with the Illinois Commerce Commission on Date Effective:  August 16, 2025 
+August 15, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BES and Rider PE (1) 
+ 
+ 
+Customer Group or Subgroup 
+ 
+Units 
+PJM Services Charges (PSCs) 
+Applicable Beginning with the 
+June 2025 Monthly Billing Period 
+and Extending Through the 
+August 2025 Monthly Billing Period (2) (3) (4) 
+ 
+Residential  
+ 
+¢/kWh 
+ 
+1.767 
+ 
+Watt-hour Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.757 
+ 
+Demand Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.757 
+ 
+Nonresidential Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.757 
+ 
+Dusk to Dawn Lighting 
+ 
+¢/kWh 
+ 
+1.745 
+ 
+General Lighting 
+ 
+¢/kWh 
+ 
+1.745 
+ 
+ 
+Customer Group or Subgroup 
+ 
+Units 
+PSCs 
+Applicable Beginning with the 
+September 2025 Monthly Billing Period 
+and Extending Through the 
+May 2026 Monthly Billing Period (2) (3) (4) 
+ 
+Residential  
+ 
+¢/kWh 
+ 
+1.767 
+ 
+Watt-hour Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.757 
+ 
+Demand Non-Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.757 
+ 
+Nonresidential Electric Space Heating 
+ 
+¢/kWh 
+ 
+1.757 
+ 
+Dusk to Dawn Lighting 
+ 
+¢/kWh 
+ 
+1.659 
+ 
+General Lighting 
+ 
+¢/kWh 
+ 
+1.659 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BES - Basic Electric Service (Rate BES) and 
+ Rider PE - Purchased Electricity (Rider PE). 
+(2) PSCs are designated on retail customer bills as the Transmission Services Charge pursuant to 
+Rate BES. 
+(3) PSCs include Supply Base Uncollectible Cost Factors (SBUFs) listed in Informational  
+Sheet No. 21.   
+(4) PSCs incorporate Incremental Supply Uncollectible Cost Factors (ISUFs) listed in Informational  
+Sheet No. 20.  
+ 
+ 
+ 
+ 
+=== PAGE 5 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 69th Revised Informational Sheet No. 4 
+Edison Company (Canceling 68th Revised Informational Sheet No. 4) 
+ 
+CAPACITY CHARGE 
+ 
+Supplement to Rate BESH and Rider PPO (1) 
+ 
+Filed with the Illinois Commerce Commission on Date Effective:  August 16, 2025 
+August 15, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+Monthly Capacity Charge (MCC) 
+Applicable with the  
+June 2025 Monthly Billing Period 
+and Extending Through the 
+August 2025 Monthly Billing Period (2) (3) 
+ 
+ 
+ 
+8.33100 $/kW-Month 
+ 
+ 
+MCC  
+Applicable Beginning with the 
+September 2025 Monthly Billing Period 
+and Extending Through the 
+May 2026 Monthly Billing Period (2) (3) 
+ 
+ 
+ 
+8.31935 $/kW-Month 
+ 
+ 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BESH - Basic Electric Service Hourly Pricing (Rate 
+BESH) and Rider PPO - Power Purchase Option (Rider PPO). 
+(2)  The MCC includes the System Average Supply Base Uncollectible Cost Factor ( SBUFsys) listed in 
+Informational Sheet No. 21.   
+(3)  The MCC includes the System Average Incremental Supply Uncollectible Cost Factor (ISUFsys) listed 
+in Informational Sheet No. 20. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+=== PAGE 6 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 69th Revised Informational Sheet No. 5 
+Edison Company (Canceling 68th Revised Informational Sheet No. 5) 
+ 
+PJM SERVICES CHARGE 
+Filed with the Illinois Commerce Commission on Date Effective:  August 16, 2025 
+August 15, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+Supplement to Rate BESH and Rider PPO (1) 
+ 
+PJM Services Charge (PSC) 
+Applicable Beginning with the 
+June 2025 Monthly Billing Period 
+and Extending Through the 
+August 2025 Monthly Billing Period (2) (3) (4) 
+ 
+ 
+1.101 ¢/kWh 
+ 
+PSC  
+Applicable Beginning with the 
+September 2025 Monthly Billing Period 
+and Extending Through the 
+May 2026 Monthly Billing Period (2) (3) (4) 
+ 
+ 
+1.099 ¢/kWh 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BESH - Basic Electric Service Hourly Pricing (Rate 
+BESH) and Rider PPO - Power Purchase Option (Rider PPO). 
+ 
+(2) The PSC is designated on retail customer bills as the Transmission Services Charge pursuant to  
+Rate BESH and Rider PPO. 
+(3) The PSC includes the System Average Supply Base Uncollectible Cost Factor (SBUF sys) listed in  
+Informational Sheet No. 21.  
+(4) The PSC includes the System Average Incremental Supply Uncollectible Cost Factor (ISUFsys) listed 
+in Informational Sheet No. 20.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+=== PAGE 7 ===
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 73rd Revised Informational Sheet No. 6 
+Edison Company (Canceling 72nd Revised Informational Sheet No. 6) 
+ 
+MISCELLANEOUS PROCUREMENT COMPONENTS CHARGE 
+Filed with the Illinois Commerce Commission on Date Effective:  August 16, 2025 
+August 15, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rate BESH and Rider PPO (1) 
+ 
+ 
+Miscellaneous Procurement Components Charge (MPCC) 
+Applicable Beginning with the 
+June 2025 Monthly Billing Period 
+and Extending Through the August 2025 
+Monthly Billing Period (2) (3) 
+ 
+ 
+0.073 ¢/kWh 
+ 
+ 
+MPCC  
+Applicable Beginning with the 
+September 2025 Monthly Billing Period 
+and Extending Through the May 2026  
+Monthly Billing Period (2) (3) 
+ 
+ 
+0.073 ¢/kWh 
+ 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rate BESH - Basic Electric Service Hourly Pricing (Rate 
+BESH) and Rider PPO - Power Purchase Option (Rider PPO). 
+(2) The MPCC includes the System Average Supply Base Uncollectible Cost Factor (SBUF sys) listed in 
+Informational Sheet No. 21.   
+(3) The MPCC includes the System Average Incremental Supply Uncollectible Cost Factor (ISUFsys) 
+listed in Informational Sheet No. 20.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+=== PAGE 8 ===
+   
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 54th Revised Informational Sheet No. 20 
+Edison Company (Canceling 53rd Revised Informational Sheet No. 20) 
+ 
+INCREMENTAL UNCOLLECTIBLE COST FACTORS 
+Filed with the Illinois Commerce Commission on Date Effective:  August 16, 2025 
+August 15, 2025.  Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rider UF (1) 
+ 
+Incremental Distribution Uncollectible Cost Factors (IDUFs) (2) 
+ 
+ 
+IDUFs 
+Applicable Beginning with the 
+June 2025 
+Monthly Billing Period and 
+Extending Through the  
+August 2025  
+Monthly Billing Period (5) 
+IDUFs 
+Applicable Beginning with the 
+September 2025 
+Monthly Billing Period 
+And Extending Through the  
+May 2026 
+Monthly Billing Period (5) 
+IDUFR 1.0084 1.0091 
+IDUFN 1.0041 1.0064 
+IDUFA 1.0003 1.0014 
+Incremental Supply Uncollectible Cost Factors (ISUFs) 
+ 
+ISUFs  
+Applicable Beginning with the 
+June 2025 
+Monthly Billing Period 
+and Extending Through the 
+August 2025 
+Monthly Billing Period (6) 
+ISUFs  
+Applicable Beginning with the 
+September 2025 
+Monthly Billing Period 
+and Extending Through the 
+May 2026 
+Monthly Billing Period (6) 
+ISUFR (3) 1.0017 1.0016 
+ISUFN (3) 1.0008 1.0008 
+ISUFA (3) 0.9977 0.9485 
+ISUFSYS (4) 1.0014 1.0000 
+ 
+ 
+NOTES: 
+(1) This informational sheet is supplemental to Rider UF - Uncollectible Factors (Rider UF). 
+(2) IDUFs are applied as shown in the Delivery Service Charges Informational Sheets ( Informational 
+Sheet No. 64 through Informational Sheet No. 64.18) and in accordance with the provisions of the 
+Zero Standard Credit subsection of the Monthly Credit and Charge section of Rider ZSS - Zero 
+Standard Service (Rider ZSS).  
+(3) ISUFs are applied in accordance with the provisions of the Monthly Charges section of  
+Rate BES - Basic Electric Service (Rate BES). 
+(4) ISUFSYS is applied in accordance with the provisions of the Monthly Charges section of Rate BESH - 
+Basic Electric Service Hourly Pricing (Rate BESH). 
+(5) IDUFs incorporate a Distribution Balancing Factor (DBF) in accordance with the provisions in       
+Rider UF. 
+(6) ISUFs incorporate a Supply Balancing Factor (SBF) in accordance with the provisions in Rider UF.  
+ 
+  
+ 
+ 
+ 
+=== PAGE 9 ===
+   
+  ILL. C. C. No. 10 
+Commonwealth ELECTRICITY 56th Revised Informational Sheet No. 35 
+Edison Company (Canceling 55th Revised Informational Sheet No. 35) 
+  
+TRANSMISSION SERVICES ADJUSTMENT FACTOR 
+AND 
+MISCELLANEOUS PROCUREMENT COMPONENTS ADJUSTMENT FACTOR 
+Filed with the Illinois Commerce Commission on Date Effective:  August 16, 2025 
+August 15, 2025.    Issued by David R. Perez, EVP and COO 
+  Post Office Box 805379 
+  Chicago, Illinois 60680-5379 
+ 
+ 
+Supplement to Rider MSS (1) 
+ 
+ 
+ 
+ 
+Billing Adjustment Applicability Period  
+ 
+Transmission 
+Services 
+Adjustment 
+(TSA) 
+Factor  
+Miscellaneous 
+Procurement 
+Components 
+Adjustment 
+(MPCA) 
+Factor 
+For the September 2023 Monthly Billing Period $3.701/kW 0.079 ¢/kWh 
+Beginning with the October 2023 Monthly Billing Period and 
+Extending Through the December 2023 Monthly Billing Period 
+$3.731/kW 0.067 ¢/kWh 
+Beginning with the January 2024 Monthly Billing Period and 
+Extending Through the May 2024 Monthly Billing Period 
+$3.729/kW 0.060 ¢/kWh 
+Beginning with the June 2024 Monthly Billing Period and Extending 
+Through the August 2024 Monthly Billing Period 
+$3.692/kW 0.063 ¢/kWh 
+For the September 2024 Monthly Billing Period  $3.679/kW 0.063 ¢/kWh 
+Beginning with the October 2024 Monthly Billing Period and 
+Extending Through the December 2024 Monthly Billing Period 
+$3.683/kW 0.064 ¢/kWh 
+Beginning with the January 2025 Monthly Billing Period and 
+Extending Through the May 2025 Monthly Billing Period 
+$3.710/kW 0.067 ¢/kWh 
+Beginning with the June 2025 Monthly Billing Period and Extending 
+Through the August 2025 Monthly Billing Period 
+$4.347/kW 0.090 ¢/kWh 
+Beginning with the September 2025 Monthly Billing Period and 
+Extending Through the May 2026 Monthly Billing Period 
+$4.341/kW 0.090 ¢/kWh 
+ 
+ 
+NOTE: 
+(1) This informational sheet is supplemental to the provisions in Rider MSS - Market Settlement Service 
+(Rider MSS). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

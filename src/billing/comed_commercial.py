@@ -46,9 +46,21 @@ DELIVERY = MappingProxyType({
     "medium": _delivery("24.78", "11.56", "12.78", "7.18", ".36", "-.070968", ".15", "1.0042", 850),
     "large": _delivery("145.77", "11.88", "12.47", "9.78", ".45", "-.054212", ".15", "1.0042", 852),
     "very_large": _delivery("898.11", "12.33", "11.49", "9.33", ".45", "-.004777", ".13", "1.0005", 852),
-    "extra_large": _delivery("2051.45", "35.00", "11.63", "10.83", ".50", "-.139901", ".14", "1.0005", 852),
+    "extra_large": _delivery("2051.45", "35.00", "11.63", "10.83", ".50", "-.139901", ".13", "1.0005", 852),
     "high_voltage": _delivery("710.36", "32.06", "0", "0", "0", "-.036869", "0", "1.0005", 854),
 })
+DELIVERY_2025 = MappingProxyType({
+    "watt_hour": _delivery("14.74", "2.65", ".02883", "0", "0", "0", ".00026", "1.0017", 850),
+    "small": _delivery("14.42", "6.74", "12.71", "5.60", ".35", "0", ".11", "1.0017", 850),
+    "medium": _delivery("24.32", "11.63", "13.02", "7.36", ".35", "0", ".12", "1.0017", 850),
+    "large": _delivery("143.55", "11.94", "12.72", "10.04", ".44", "0", ".11", "1.0017", 852),
+    "very_large": _delivery("878.23", "12.39", "11.77", "9.63", ".44", "0", ".10", "1.0005", 852),
+    "extra_large": _delivery("2011.40", "35.10", "11.43", "10.71", ".48", "0", ".10", "1.0005", 852),
+    "high_voltage": _delivery("701.57", "32.11", "0", "0", "0", "0", "0", "1.0005", 854),
+})
+DELIVERY_BY_YEAR = MappingProxyType({2025: DELIVERY_2025, 2026: DELIVERY})
+HV_BASES = MappingProxyType({2025: ((D(".66"), D("4.76")), (D(".62"), D("2.56"))),
+                            2026: ((D(".71"), D("4.61")), (D(".44"), D("2.46")))})
 
 
 @dataclass(frozen=True)
@@ -86,6 +98,7 @@ class ComEdCommercialVersion:
     besh_adjustment: D
     carbon_free_adjustment: D
     coal_to_solar: D
+    common: rates.ComEdVersion
 
     def is_effective_on(self, day):
         return self.effective_start <= day <= self.effective_end
@@ -94,17 +107,15 @@ class ComEdCommercialVersion:
 # Share only the verified common monthly riders with residential; supply
 # subgroups and the version identity are explicitly commercial.
 VERSIONS = tuple(ComEdCommercialVersion(
-    f"comed_commercial_2026_{v.effective_start.month:02}", v.effective_start, v.effective_end,
-    *(D(x) for x in supply), v.bes_adjustment, v.besh_transmission,
-    v.besh_procurement, v.besh_adjustment, v.carbon_free_adjustment, v.coal_to_solar,
-) for v, supply in zip(rates.VERSIONS, (
-    (".08704", ".08813", ".07649", ".01704"),
-    (".08433", ".08470", ".08111", ".01672"),
-)))
+    f"comed_commercial_{v.effective_start.year}_{v.effective_start.month:02}", v.effective_start, v.effective_end,
+    *v.commercial_supply, v.bes_adjustment, v.besh_transmission,
+    v.besh_procurement, v.besh_adjustment, v.carbon_free_adjustment, v.coal_to_solar, v,
+) for v in rates.VERSIONS)
 
 
 def build_comed_commercial_plans():
-    return tuple(RatePlan(RatePlanIdentity("ComEd", supply, "bundled", "commercial", delivery), VERSIONS)
+    return tuple(RatePlan(RatePlanIdentity("ComEd", supply, "bundled", "commercial", delivery),
+                          tuple(v for v in VERSIONS if supply == "BES" or v.besh_adjustment is not None))
                  for supply in ("BES", "BESH") for delivery in DELIVERY)
 
 
@@ -176,48 +187,63 @@ def mkd_mask(index):
     return (local.dayofweek < 5) & (local.hour >= 9) & (local.hour < 18) & ~np.isin(local.date, list(holidays))
 
 
-def calculate_comed_commercial_bill(grid_import_kw, account, *, hourly_prices: ComEdHourlyPrices | None = None):
+def calculate_comed_commercial_bill(grid_import_kw, account, *, hourly_prices: ComEdHourlyPrices | None = None, billing_cycle=None):
     plan, version = validate_account(account)
     if not isinstance(grid_import_kw, pd.Series):
         raise ValueError("Supply a timestamped meter-import Series.")
-    utc, duration = _month_grid(grid_import_kw.index, account.billing_month)
+    if billing_cycle is None:
+        utc, duration = _month_grid(grid_import_kw.index, account.billing_month)
+    else:
+        from .comed_cycles import cycle_grid
+        if billing_cycle.billing_month != account.billing_month:
+            raise ValueError("Account and cycle billing-month designations differ.")
+        utc, duration = cycle_grid(grid_import_kw.index, billing_cycle)
     power = _numeric_series(grid_import_kw, utc, "grid_import_kw", nonnegative=True)
     if duration > D(".5"):
         raise ValueError("Commercial demand requires 15- or 30-minute meter data; hourly peaks cannot establish 30-minute demand.")
     # Align non-overlapping XX:00/XX:30 blocks. Energy is preserved.
     half_hour = pd.Series(power, index=utc).resample("30min").mean()
-    mkd = D(str(float(half_hour[mkd_mask(half_hour.index)].max())))
+    eligible = half_hour[mkd_mask(half_hour.index)]
+    mkd = D(str(float(eligible.max()))) if len(eligible) else D(0)
     overall_peak = float(half_hour.max())
     energy = tuple(D(str(v)) * duration for v in power)
-    kwh = sum(energy, D(0)); a = account; d = DELIVERY[a.delivery_class]
+    kwh = sum(energy, D(0)); a = account; common = version.common
+    d = DELIVERY_BY_YEAR[common.delivery_year][a.delivery_class]
     lines = []
 
     def add(name, quantity, rate, category, pages, unit="kWh"):
+        factor = billing_cycle.factor(name) if billing_cycle else D(1)
+        documents = rates.line_sources(version.common, name, pages)
         lines.append({"name": name, "category": category, "quantity": float(quantity),
                       "quantity_unit": unit, "rate_usd": float(rate),
-                      "amount_usd": float(_round(quantity * rate)), "source_pdf_pages": pages})
+                      "amount_usd": float(_round(quantity * rate * factor)),
+                      "billing_multiplier": float(factor), "source_pdf_pages": documents[0]["pdf_pages"],
+                      "source_documents": documents})
 
-    factors = (d.iduf - 1, rates.DRAF, rates.EDAF, rates.TPAF, d.rbaf)
+    iduf = version.common.large_iduf if a.delivery_class in ("very_large", "extra_large", "high_voltage") else version.common.nonresidential_iduf
+    factors = (iduf - 1, common.delivery_reconciliation, common.excess_deferred_income_tax,
+               common.total_plan_adjustment, d.rbaf)
     def adjusted(base, quantum=".01", factors=factors):
         return base + sum((_round(base*f, quantum) for f in factors), D(0))
     # RCA pp394/824 and LID p876 use PREVIOUS CALENDAR YEAR, not rolling year.
     big = a.previous_calendar_year_peak_kw >= 10000
-    add("customer", D(1), adjusted(d.customer) + D("337.50" if big else "8.50"), "delivery", [d.source_page, 394, 803, 824], "month")
-    add("standard_metering", D(1), adjusted(d.meter), "delivery", [d.source_page], "month")
+    adjustment_pages = [790, 799, 801, 845, 864, 865, 866]
+    add("customer", D(1), adjusted(d.customer) + (common.large_commercial_assessment if big else common.small_commercial_assessment), "delivery", [d.source_page, 394, 803, 824] + adjustment_pages, "month")
+    add("standard_metering", D(1), adjusted(d.meter), "delivery", [d.source_page] + adjustment_pages, "month")
     if a.delivery_class == "watt_hour":
-        add("distribution_facilities", kwh, adjusted(d.secondary, ".00001") + d.dgra, "delivery", [850, 839])
+        add("distribution_facilities", kwh, adjusted(d.secondary, ".00001") + d.dgra, "delivery", [850, 839] + adjustment_pages)
     else:
         if a.service_voltage == "high_voltage":
             # No DGRA added to HV DFC or HV transformer: sheet64.17 formula.
-            base, transformer = (D(".44"), D("2.46")) if a.previous_12_month_mkd_kw > 10000 else (D(".71"), D("4.61"))
+            base, transformer = HV_BASES[common.delivery_year][int(a.previous_12_month_mkd_kw > 10000)]
         else:
             base = d.secondary if a.service_voltage == "secondary" else d.primary
             transformer = d.transformer if a.service_voltage == "primary" else D(0)
         rate = adjusted(base) + (D(0) if a.service_voltage == "high_voltage" else d.dgra)
-        add("distribution_demand", mkd, rate, "delivery", [d.source_page, 174, 839, 864], "kW")
+        add("distribution_demand", mkd, rate, "delivery", [d.source_page, 174, 839] + adjustment_pages, "kW")
         if a.utility_transformer and transformer:
-            add("transformer_demand", mkd, adjusted(transformer), "delivery", [d.source_page, 26, 58], "kW")
-    add("illinois_distribution_tax", kwh, adjusted(D(".00124"), ".00001", (d.iduf-1, d.rbaf)), "delivery", [d.source_page, 864])
+            add("transformer_demand", mkd, adjusted(transformer), "delivery", [d.source_page, 26, 58] + adjustment_pages, "kW")
+    add("illinois_distribution_tax", kwh, adjusted(D(".00124"), ".00001", (iduf-1, d.rbaf)), "delivery", [d.source_page, 864, 799, 801])
     if a.supply == "BES":
         if hourly_prices is not None:
             raise ValueError("BES uses filed supply rates, not hourly prices.")
@@ -230,29 +256,36 @@ def calculate_comed_commercial_bill(grid_import_kw, account, *, hourly_prices: C
         add("transmission_services", kwh, version.bes_transmission, "supply", [783])
         add("purchased_electricity_adjustment", kwh, version.bes_adjustment, "supply", [784])
     else:
-        cost = _hourly_energy_cost(hourly_prices, utc, energy)
+        cost = _hourly_energy_cost(hourly_prices, utc, energy, version.common.hec_multiplier)
         lines.append({"name": "hourly_electricity_supply", "category": "supply", "quantity": float(kwh),
                       "quantity_unit": "kWh", "rate_usd": None, "amount_usd": float(_round(cost)),
-                      "source_pdf_pages": [60, 801, 802, 814]})
-        add("capacity", D(str(a.capacity_obligation_kw)), rates.CAPACITY, "supply", [785], "kW")
+                      "source_pdf_pages": rates.line_sources(common, "hourly_electricity_supply", [60, 801, 802, 814])[0]["pdf_pages"],
+                      "source_documents": rates.line_sources(version.common, "hourly_electricity_supply", [60, 801, 802, 814])})
+        add("capacity", D(str(a.capacity_obligation_kw)), version.common.capacity, "supply", [785], "kW")
         add("transmission_services", kwh, version.besh_transmission, "supply", [786])
         add("miscellaneous_procurement", kwh, version.besh_procurement, "supply", [787])
         add("purchased_electricity_adjustment", kwh, version.besh_adjustment, "supply", [788])
     for name, (rate, page) in rates.COMMON_ENERGY.items():
+        rate = getattr(common, name)
         if name == "energy_efficiency_programs":
-            rate = D(".00482" if a.delivery_class in ("very_large", "extra_large", "high_voltage") else ".00876")
+            rate = common.large_commercial_efficiency if a.delivery_class in ("very_large", "extra_large", "high_voltage") else common.small_commercial_efficiency
         add(name, kwh, rate, "riders", [page])
     add("carbon_free_resource_adjustment", kwh, version.carbon_free_adjustment, "riders", [818])
     add("coal_to_solar", kwh, version.coal_to_solar, "riders", [846])
-    add("low_income_discount_recovery", D(1), D("506.25" if big else "13.50"), "riders", [876], "month")
+    lid = common.large_commercial_lid_recovery if big else common.small_commercial_lid_recovery
+    if lid is not None:
+        add("low_income_discount_recovery", D(1), lid, "riders", [876], "month")
     return {"plan_id": plan.identity.plan_id, "version_id": version.tariff_id,
             "billing_month": a.billing_month.isoformat(), "timezone": "America/Chicago",
+            "billing_cycle": rates.cycle_source(billing_cycle, common),
             "import_kwh": float(kwh), "overall_30min_peak_kw": overall_peak, "billed_mkd_kw": float(mkd),
             "lines": lines, "subtotal_usd": float(sum((D(str(x["amount_usd"])) for x in lines), D(0))),
             "total_usd": None, "is_complete_bill": False,
             "excluded_components": ["state_electricity_excise_tax", "municipal_utility_taxes", "franchise_costs"],
-            "source": {"ratebook_url": rates.RATEBOOK_URL, "ratebook_sha256": rates.RATEBOOK_SHA256,
-                       "verified_on": "2026-10-12", "eligibility_source": a.eligibility_source,
-                       "delivery_adjustment_pages": [790, 799, 801, 839, 845, 864, 865, 866],
-                       "holiday_source": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/2026-business-calendar.pdf",
-                       "capacity_source": a.capacity_source, "hourly_price_source": hourly_prices.source if hourly_prices else None}}
+            "source": {**rates.primary_source(common),
+                       "verified_on": "2026-10-13", "eligibility_source": a.eligibility_source,
+                       "delivery_adjustment_sources": rates.line_sources(common, "delivery_adjustments", adjustment_pages + [839]),
+                       "holiday_source": "ComEd GTC MKD definition; NERC holiday calendar for the service year",
+                       "capacity_source": a.capacity_source, "hourly_price_source": hourly_prices.source if hourly_prices else None,
+                       "hourly_energy_multiplier": float(version.common.hec_multiplier) if hourly_prices else None,
+                       "historical_source_references": list(version.common.source_references)}}
