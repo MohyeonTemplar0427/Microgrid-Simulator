@@ -1,21 +1,5 @@
 # Microgrid Simulator
 
-Microgrid Simulator is a Python project for studying how solar generation and
-battery storage affect electricity bills, grid-related carbon emissions, and
-electrical network operation.
-
-It combines load and solar profiles, electricity prices, grid carbon intensity,
-and utility tariffs to compare battery operating strategies. CVXPY optimizes
-battery schedules for cost, emissions, or a weighted combination of both.
-OpenDSS evaluates those schedules through time-series power-flow simulations
-to check voltage, equipment loading, and network losses.
-
-The central question is: **How should a microgrid operate to meet a user's
-cost and emissions goals while respecting battery limits, and what electrical
-constraints does the resulting schedule reveal?**
-
----
-
 ## About this project
 
 Hi, my name is Junha Yang, and I’m a 2026 UC Berkeley graduate with a B.S. in
@@ -31,16 +15,13 @@ been rewarding: revisiting, applying, and connecting concepts from my studies
 within this project helped me develop a more concrete understanding of the
 system as a whole.
 
-The simulator combines electricity demand, solar generation, electricity
-prices, grid carbon intensity, and utility tariffs to optimize battery
-schedules for cost, emissions, or both. It compares the resulting electricity
-bills and emissions across operating strategies, then uses OpenDSS to evaluate
-voltage, equipment loading, and network losses. This allows users to explore
-how operating decisions affect both economic outcomes and electrical
-performance. The current electrical feasibility check uses quasi-static
-power-flow snapshots at individual simulation time steps. The model does not
-yet evaluate the system’s transient response; that analysis is left for future
-development.
+The simulator provides framework to analyze how solar and battery operating
+strategies affect electricity bills, grid-import emissions, and electrical
+performance. It combines load and PV profiles with electricity prices, grid
+carbon intensity, and utility tariffs, using CVXPY to optimize battery schedules
+for cost, emissions, or a weighted combination of both. OpenDSS checks voltage,
+equipment loading, and losses at each simulation interval through quasi-static
+power flow. Dynamic and transient analysis remain future development.
 
 ---
 
@@ -132,95 +113,40 @@ changes.
 
 ## Known gaps and limitations
 
-Stated plainly, because a simulator that hides its boundaries is worse than
-one that does not.
-
-- **`src/surplus/` has no production consumer.** The allocation logic, both
-  power-balance validators, and the carbon monetization are imported only by
-  their tests and are unreachable from the GUI. This is the largest open item.
-- **The optimizer targets only `MAXIMUM`-basis demand.** It sums maximum-basis
-  demand components and ignores peak-period ones, so on B-20 it chases
-  $39.08/kW of an $80.43/kW summer peak-hour cost. The mechanism works; the
-  coverage is incomplete.
-- **Two meter topologies are built but not offered** in the GUI.
-  `individual_meters` is implemented and merely unwired; `shared_generation`
-  is blocked on unmodelled NEM/NBT credit rules.
-- **Holidays are priced at the ordinary weekday rate.** Harmless for the PG&E
-  B-series, whose periods all apply "every day, including weekends and
-  holidays"; it matters for ISO price shaping and any future weekday-only
-  tariff.
-- **`dispatch_scenarios.py` uses none of the four backend layers**, and
-  `market_data_integration.py` reaches into billing for a single function.
-
-### Deliberately not implemented
-
-These raise `NotImplementedError` **on purpose**, so that no GUI control can
-silently produce an invented number:
-
-- Measured load adapters (Green Button, Modbus, SunSpec, MQTT)
-- Measured inverter PV — delivered ≠ available power, and the modelling is
-  unresolved
-- `ExportCompensationMode.TARIFF` — NEM and NBT are not modelled
-- Shared-generation billing — allocation percentages exist, but splitting PCC
-  flow without the credit rules would fabricate per-meter bills
-
-Unverified placeholder parameters are not presented as real system data.
-Anything used for future work should come from manufacturer documentation,
-utility filings, applicable standards, or a clearly identified engineering
-assumption.
+- **Interface coverage:** The standalone `src/surplus/` module and multi-account
+  billing are not exposed in the GUI.
+- **Measured inputs:** Direct meter/device integrations and measured inverter
+  PV modeling remain unimplemented.
+- **Billing scope:** Tariff and export-credit support is limited to documented
+  utilities, account types, and dates. Shared solar billing across separate
+  utility accounts remains unsupported.
+- **Network assumptions:** Electrical validation uses representative three-phase
+  and residential network models with assumed equipment parameters.
+- **Analysis scope:** Electrical checks run after optimization.
+  Network-constrained dispatch and transient analysis remain future development.
 
 ---
 
-## Future development: dynamic and transient analysis
+## Future Development Plan
 
-Dynamic and transient electrical analysis are **not implemented**. The current
-OpenDSS workflow uses 15-minute quasi-static time-series (QSTS) simulation:
-each interval is solved as a separate steady-state power flow, evaluating
-settled voltage, current, equipment loading, and losses once the network has
-reached a new operating point.
+### Location-specific load forecasting
 
-### Why QSTS is appropriate today
+Location-specific load forecasting is not yet complete. Current studies use
+modeled or imported demand profiles. Future work includes developing and
+validating forecasts for a selected location using historical electricity
+consumption, weather, and calendar data.
 
-- The dispatch schedule that drives the simulation operates on 15-minute
-  intervals, so there is no need to resolve behavior faster than that.
-- Most electromagnetic transients — switching surges, fault-current spikes,
-  controller response — settle in milliseconds to a few seconds, far shorter
-  than one interval.
-- The current objective is to characterize sustained operating conditions
-  across a full schedule, not sub-second behavior.
-- This is a scoping choice, not a claim that transients do not occur. They
-  happen between the snapshots QSTS solves; they are simply outside the
-  analysis boundary.
+### Dynamic and transient analysis
 
-### Proposed future workflow
+Current electrical checks use quasi-static time-series (QSTS) power flow to
+evaluate steady-state voltage, equipment loading, and losses at each simulation
+interval. Dynamic and transient analysis remain future work.
 
-1. Run QSTS across the complete operating schedule, as today.
-2. Identify critical intervals — maximum charging, maximum discharging,
-   minimum voltage, maximum equipment loading.
-3. Use the solved network state from each critical interval as the initial
-   condition for a dynamic or transient study.
-4. Apply an event of interest: a fault, an inverter trip, a sudden load
-   change, a switching event, or a grid disconnection.
-5. Evaluate current peaks, voltage recovery, protection timing, stability, and
-   inverter ride-through.
-6. Feed any operational restriction discovered back into the dispatch
-   optimizer, so the schedule respects limits QSTS alone cannot reveal.
+Proposed development:
 
-### Data that would improve the existing QSTS model
-
-Line resistance, reactance, length, and ampacity; transformer voltage ratio,
-impedance, and kVA rating; load real and reactive power and power factor; PV
-and battery inverter kVA and reactive capability; bus-voltage limits;
-equipment-loading limits; and explicit load, PV, and battery sign conventions.
-
-### Data required for transient studies
-
-Protection curves and clearing times; fault type, location, and impedance;
-inverter current limits and controller parameters; PLL and inner-control
-behavior; voltage and frequency ride-through settings; trip and reconnection
-timing; transformer saturation and inrush data; motor inertia and dynamic-load
-models; and subsecond input and measurement profiles.
-
-OpenDSS itself supports fault studies, harmonic analysis, duty-cycle studies,
-and basic dynamics. Detailed electromagnetic-transient (EMT) work may require
-a dedicated EMT tool.
+1. **Select critical operating points** from QSTS results, such as maximum
+   battery discharge, low voltage, or heavy equipment loading.
+2. **Study disturbances** such as faults, inverter trips, sudden load changes,
+   and grid disconnection to assess voltage recovery, protection operation,
+   and stability.
+3. **Refine operating limits** and dispatch constraints using the findings.
