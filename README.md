@@ -2,7 +2,7 @@
 
 ## About this project
 
-Hi, my name is Junha Yang, and I’m a 2026 UC Berkeley graduate with a B.S. in
+Hi, my name is Junha Yang, a 2026 UC Berkeley graduate with a B.S. in
 Energy Engineering. This repository is a personal extension of a class team
 project on microgrids and my undergraduate capstone research.
 

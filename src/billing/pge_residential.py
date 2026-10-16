@@ -6,16 +6,15 @@ files new rates, add a new :class:`TariffDefinition` with its own effective
 window rather than editing these numbers in place, so historical analyses stay
 reproducible.
 
-Residential service differs from the B-series structurally, not just in
-price: peaks are weekday-only, there is no demand charge, and the fixed
-charge is income-graduated. Schedules whose energy price depends on
-cumulative usage against a baseline allowance (E-1, E-TOU-C) are not
-here yet -- the tariff model has no tier concept.
+Residential schedules have no demand charge. E-TOU-D peaks apply only on
+non-holiday weekdays; E-TOU-C, EV2 and E-ELEC use every-day periods. E-1 and
+E-TOU-C also depend on baseline allowances. Fixed provisions vary by version.
 """
 
 from datetime import date
 
-from .pge_common import PGE_SEASONS
+from src.tou_calendar import HolidayCalendar, HolidayTreatment
+from .pge_common import PGE_SEASONS, PGE_TOU_HOLIDAYS
 from .baseline import BaselineAllowance, BaselineCode, BaselineTerritory
 from .plans import RatePlan, RatePlanIdentity, register_plan
 from .tariffs import (
@@ -67,6 +66,7 @@ def _pge_e_tou_d_bundled(
         customer_class=CustomerClass.RESIDENTIAL,
         service_type=ServiceType.BUNDLED,
         season_definition=PGE_SEASONS,
+        holiday_calendar=PGE_TOU_HOLIDAYS,
         # $ per customer per day, by income tier.
         daily_customer_charge=daily_customer_charge,
         # Residential service is not demand metered.
@@ -79,6 +79,7 @@ def _pge_e_tou_d_bundled(
                 end_hour=20,
                 season=Season.SUMMER,
                 days=WEEKDAYS,
+                holiday_treatment=HolidayTreatment.EXCLUDE,
                 priority=30,
             ),
             TOUPeriod(
@@ -96,6 +97,7 @@ def _pge_e_tou_d_bundled(
                 end_hour=20,
                 season=Season.WINTER,
                 days=WEEKDAYS,
+                holiday_treatment=HolidayTreatment.EXCLUDE,
                 priority=30,
             ),
             TOUPeriod(
@@ -121,9 +123,9 @@ def _pge_e_tou_d_bundled(
         notes=(
             "Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. "
             "Monday through Friday; all other hours, weekends and holidays "
-            "are off-peak. Holidays are NOT modelled -- a public holiday "
-            "falling on a weekday is priced at the weekday peak rate, which "
-            "overstates the bill for those few days. Also not modelled: the "
+            "are off-peak. The eight tariff holidays use PG&E TOU observance: "
+            "Sunday moves to Monday; Saturday has no weekday substitute. "
+            "Not modelled: the "
             "California Climate Credit ($36.18 per household, paid in the "
             "August and September bill cycles), CARE and FERA discounts, "
             "Standby Service under Schedule S, CCA and Direct Access."
@@ -805,6 +807,7 @@ def _historical_tou_version(
     tou_periods: tuple[TOUPeriod, ...],
     source_sheet: str,
     schedule_note: str,
+    holiday_calendar: HolidayCalendar | None = None,
 ) -> TariffDefinition:
     if daily_minimum_bill is not None:
         fixed = (
@@ -830,6 +833,7 @@ def _historical_tou_version(
         season_definition=PGE_SEASONS,
         daily_minimum_bill=daily_minimum_bill,
         daily_customer_charge=daily_customer_charge,
+        holiday_calendar=holiday_calendar,
         demand_charges=(),
         tou_periods=tou_periods,
         export_rule=ExportCompensationRule(
@@ -860,17 +864,19 @@ def _weekday_peak_periods(
     winter_peak: float,
     winter_off_peak: float,
 ) -> tuple[TOUPeriod, ...]:
-    """E-TOU-D's shape: a 5-8 p.m. weekday peak, everything else off-peak."""
+    """E-TOU-D's 5-8 p.m. non-holiday weekday peak."""
 
     return (
         TOUPeriod(name="summer_peak", rate_per_kWh=summer_peak,
                   start_hour=17, end_hour=20, season=Season.SUMMER,
-                  days=WEEKDAYS, priority=30),
+                  days=WEEKDAYS, priority=30,
+                  holiday_treatment=HolidayTreatment.EXCLUDE),
         TOUPeriod(name="summer_off_peak", rate_per_kWh=summer_off_peak,
                   start_hour=0, end_hour=0, season=Season.SUMMER, priority=0),
         TOUPeriod(name="winter_peak", rate_per_kWh=winter_peak,
                   start_hour=17, end_hour=20, season=Season.WINTER,
-                  days=WEEKDAYS, priority=30),
+                  days=WEEKDAYS, priority=30,
+                  holiday_treatment=HolidayTreatment.EXCLUDE),
         TOUPeriod(name="winter_off_peak", rate_per_kWh=winter_off_peak,
                   start_hour=0, end_hour=0, season=Season.WINTER, priority=0),
     )
@@ -929,9 +935,11 @@ for (
             winter_peak=_d_wp, winter_off_peak=_d_wo,
         ),
         source_sheet=_sheet,
+        holiday_calendar=PGE_TOU_HOLIDAYS,
         schedule_note=(
-            "Historical E-TOU-D: peak 5-8 p.m. Monday through Friday, all "
-            "other hours and weekends off-peak."
+            "Historical E-TOU-D: peak 5-8 p.m. non-holiday Monday through Friday, "
+            "all other hours off-peak. The eight tariff holidays use PG&E TOU "
+            "observance: Sunday moves to Monday; Saturday has no weekday substitute."
         ),
     )))
 

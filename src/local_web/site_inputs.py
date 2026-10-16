@@ -149,9 +149,12 @@ def build_site_inputs(request, directory):
         values = ConstantLoad(load["power_kw"]).build_load_kw(grid)
         warnings.append("Building demand is the user-specified constant load; it is not estimated from location or weather.")
     else:
-        values = SyntheticLoad(archetype=BuildingArchetype(load["archetype"]), scaling=LoadScaling.PEAK_KW,
-                               peak_kw=load["power_kw"], variability_fraction=0, random_seed=20260101).build_load_kw(grid)
+        scaling = ({"scaling": LoadScaling.TOTAL_ENERGY_KWH, "total_energy_kWh": load["total_energy_kWh"]}
+                   if "total_energy_kWh" in load else {"scaling": LoadScaling.PEAK_KW, "peak_kw": load["power_kw"]})
+        values = SyntheticLoad(archetype=BuildingArchetype(load["archetype"]), **scaling,
+                               variability_fraction=0, random_seed=20260101).build_load_kw(grid)
         warnings.append("Building load uses the existing synthetic daily archetype. It is not measured demand and does not model weather-driven HVAC response.")
+        warnings.append("Synthetic load values are hourly shape blocks sampled on the study grid, with a flatter weekend shape; they do not establish actual 15-minute behavior or appliance use.")
     prices = request["fixed_price_per_kWh"]
     if request["tariff_id"]:
         tariff = get_tariff(request["tariff_id"], grid.index[0].date())
@@ -178,7 +181,12 @@ def build_site_inputs(request, directory):
     weather_table["timestamp"] = pd.to_datetime(weather_table["timestamp"], utc=True)
     weather_table = weather_table.loc[weather_table.timestamp.isin(grid.index)].reset_index(drop=True)
     return frame, replay, {"weather": weather_table, "pv": pv.diagnostics}, {
-        "site": site, "carbon": carbon_provenance, "weather": provenance, "pv": pv.provenance, "load": load,
+        "site": site, "carbon": carbon_provenance, "weather": provenance, "pv": pv.provenance,
+        "load": {**load, "is_synthetic": load["mode"] == "synthetic", "measured": False,
+                 "native_load_energy_kWh": float(values.sum() * grid.timestep_hours),
+                 "native_load_peak_kw": float(values.max()), "timezone": request["timezone"],
+                 "profile_model": "synthetic_daily_archetype_v1" if load["mode"] == "synthetic" else "constant",
+                 "quantity": "native building demand before PV and battery"},
         "price_source": "tariff" if request["tariff_id"] else "fixed_assumption",
         "warnings": warnings,
     }

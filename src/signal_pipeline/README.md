@@ -56,6 +56,7 @@ neither ISO's identifier is an Electricity Maps zone.
 | `caiso_np15` | `caiso` | `TH_NP15_GEN-APND` (LMP node *name*) | `US-CAL-CISO` | `America/Los_Angeles` |
 | `ercot_houston_hub` | `ercot` | `HB_HOUSTON` (*settlement point* name) | `US-TEX-ERCO` | `America/Chicago` |
 | `pjm_western_hub` | `pjm` | `51288` (numeric *pnode id*) | `US-MIDA-PJM` | `America/New_York` |
+| `pjm_western_hub_gridstatus` | `gridstatus_io` | `WESTERN HUB` (hosted location name) | `US-MIDA-PJM` | `America/New_York` |
 
 Select one on the experiment config:
 
@@ -69,6 +70,41 @@ config = ExperimentConfig(
 
 Individual fields (`market_location`, `electricity_maps_zone`, `timezone`) can
 be overridden and take precedence over the region's defaults.
+
+### Shared configuration resolution
+
+`source_config.resolve_region_config` resolves and validates the preset and
+overrides for both `ExperimentConfig` and the guided `resolve_live_api_config`
+path. `fetch_region_prices` uses the same resolver for explicit `RegionConfig`
+objects. Each result owns a copy of its provider options; changing it cannot
+change the registry or another study.
+
+The hosted PJM preset explicitly selects `pjm_lmp_real_time_5_min`, its source
+timezone, and a five-minute native interval. Those options now survive the
+guided workflow into adapter construction and the price-cache identity, along
+with any explicit dataset/column overrides. Previously that workflow dropped
+the options and could retrieve the raw adapter's default dataset instead.
+Old optionless hosted cache entries are not reused for the corrected preset.
+
+`provider_options` contains non-secret adapter settings. Unknown fields,
+credentials in configuration, empty datasets and invalid native intervals are
+rejected before retrieval. Switching `market_provider` requires a location
+explicitly expressed in that provider's format and discards the old provider's
+options. Switching to a hosted provider also requires its dataset, source
+timezone and native interval, or selection of its complete region preset.
+Changing only the study timezone does not reinterpret the source timezone.
+
+Direct PJM and hosted GridStatus remain separate choices. Missing credentials,
+archive limits, missing intervals and retrieval errors propagate from the
+selected adapter; they never trigger a switch of provider, dataset or node.
+The low-level `get_provider` compatibility API still filters irrelevant
+constructor options, such as a CAISO throttle passed while iterating providers.
+Region-based configuration is stricter and rejects unknown options.
+
+CSV, retail tariff and fixed-retail price sources retain their own paths.
+This refactor does not change weather/carbon source selection, retrieval
+limits, units, or utility coverage; wholesale LMP remains separate from retail
+billing. Configuration resolution performs no I/O and never loads credentials.
 
 ### Provider differences that matter
 
@@ -94,17 +130,25 @@ adapter queries every location type by default; narrow it by constructing
 
 ## Environment variables
 
-Copy `src/.env.example` to `.env` at the project root and fill in:
+Use private process environment variables or this checkout's ignored `src/.env`:
 
 | Variable | Required for |
 |---|---|
 | `ELECTRICITY_MAPS_API_KEY` | all carbon retrieval |
 | `PJM_API_KEY` | the `pjm` market provider only |
+| `GRIDSTATUS_API_KEY` | the explicitly selected `gridstatus_io` provider only |
 
 The `caiso` and `ercot` providers need no credentials.
 
-Keys are read from the environment and never logged, printed, or committed.
-`.env` is already gitignored.
+Signal CLI entry points and the legacy guided analysis use the shared
+`src/credentials.py` loader at execution time, restricted to these three names.
+Existing process values win over file values, including during dotenv variable
+interpolation. Provider imports do not read dotenv files or snapshot keys into
+module globals. Direct provider callers supply credentials explicitly or through
+their environment. Keys are never logged, printed, or committed; `.env` is ignored.
+
+Weather retrieval and the browser/desktop launchers use their own narrower
+allowlists. Authentication and database settings are never loaded by this helper.
 
 ## Integrated schema
 

@@ -206,15 +206,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT/".cache/comed_2025_year_validation")
     parser.add_argument("--historical-inputs",type=Path,help="Private folder containing pjm-residual-2025.csv and pjm-metadata.json; retrieve matching NSRDB weather using configured credentials")
-    parser.add_argument("--env-file",type=Path,default=ROOT/"src/.env",help="Read only NSRDB credentials for historical weather retrieval")
+    from src.credentials import DEFAULT_ENV_PATH, WEATHER_CREDENTIALS, load_credentials
+    parser.add_argument("--env-file",type=Path,default=DEFAULT_ENV_PATH,help="Read only NSRDB credentials for historical weather retrieval")
     args = parser.parse_args()
     output = args.output.resolve()
-    if args.historical_inputs and args.env_file.is_file():
-        import os
-        from dotenv import dotenv_values
-        values = dotenv_values(args.env_file)
-        for key in ("NSRDB_API_KEY","NSRDB_API_EMAIL"):
-            if values.get(key):os.environ.setdefault(key,values[key])
+    if args.historical_inputs:
+        load_credentials(args.env_file, names=WEATHER_CREDENTIALS)
     app = Application(output)  # Creates a new pin, or reuses an existing immutable pin.
     try:
         current_files = {p.relative_to(ROOT).as_posix(): digest(p) for p in (ROOT/"src").rglob("*.py")}

@@ -24,7 +24,8 @@ from .providers.base import (
     check_intervals,
     normalize_price_frame,
 )
-from .region_config import RegionConfig, get_region_config
+from .region_config import RegionConfig
+from .source_config import resolve_region_config
 
 LOCAL_TIMEZONE = "America/Los_Angeles"
 
@@ -68,11 +69,7 @@ def fetch_region_prices(
     daylight-saving transition is 23 or 25 hours long rather than a fixed 24.
     """
 
-    region_config = (
-        region
-        if isinstance(region, RegionConfig)
-        else get_region_config(region)
-    )
+    region_config = resolve_region_config(region)
 
     start_time = pd.Timestamp(
         start_date,
@@ -83,13 +80,13 @@ def fetch_region_prices(
     # 24 hours and drift by an hour across a daylight-saving transition.
     end_time = start_time + pd.DateOffset(days=number_of_days)
 
+    options = {"sleep_seconds": sleep_seconds, **(region_config.provider_options or {})}
     prices = fetch_energy_prices(
         start_time,
         end_time,
         region_config.market_location,
         provider=region_config.market_provider,
-        sleep_seconds=sleep_seconds,
-        **(region_config.provider_options or {}),
+        **options,
     )
 
     validate_price_data(

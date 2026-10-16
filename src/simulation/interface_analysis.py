@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Callable
 
 import pandas as pd
-from dotenv import find_dotenv, load_dotenv
+from ..credentials import SIGNAL_CREDENTIALS, load_credentials
 
 from ..analysis.carbon_weights import build_scenario_name
 from ..billing import (
@@ -426,7 +426,7 @@ def run_live_api_analysis(
         tariff_id=tariff_id,
     )
 
-    load_dotenv(find_dotenv(), override=False)
+    load_credentials(names=SIGNAL_CREDENTIALS)
     carbon_api_key = os.getenv("ELECTRICITY_MAPS_API_KEY")
     carbon_sensitive_scenarios = {
         "carbon_optimal",

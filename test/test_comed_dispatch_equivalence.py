@@ -29,6 +29,10 @@ def test_reduced_modes_match_all_binary_objective_and_physics(monkeypatch,kind,p
     monkeypatch.setattr(comed,"_exclusive_intervals",lambda costs,n:np.ones(n,dtype=bool))
     oracle=comed.optimize(inputs,account,prices,r["battery"],wear=.03,include_wear=include_wear,billing_cycles=cycles)
     assert reduced["objective_usd"]==pytest.approx(oracle["objective_usd"],abs=1e-4)
+    assert reduced["throughput_refinement"]["minimum_throughput_proven"]
+    assert oracle["throughput_refinement"]["minimum_throughput_proven"]
+    assert reduced["throughput_refinement"]["selected_throughput_kwh"]==pytest.approx(
+        oracle["throughput_refinement"]["selected_throughput_kwh"],abs=1e-4)
     assert abs(reduced["bill"]["subtotal_usd"]-oracle["bill"]["subtotal_usd"]) <= reduced["rounding_bound_usd"]+oracle["rounding_bound_usd"]
     d=reduced["dispatch"];dt=.5;b=r["battery"]
     assert np.max(np.minimum(d.battery_charge_kw,d.battery_discharge_kw))<1e-6

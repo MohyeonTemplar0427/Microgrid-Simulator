@@ -20,6 +20,10 @@ from dataclasses import dataclass
 import numpy as np
 import pandas as pd
 
+from src.tou_calendar import (
+    HolidayCalendar, HolidayTreatment, match_days, validate_holiday_calendar,
+)
+
 from .gridstatus_data import fetch_energy_prices
 from .horizon import AnalysisHorizon, align_to_horizon
 from .providers.base import SignalProviderError
@@ -134,6 +138,8 @@ class TimeOfUsePeriod:
     ``start_hour`` is inclusive and ``end_hour`` exclusive, both in local
     hours. A period may wrap past midnight (``start_hour=22, end_hour=6``).
     ``days`` holds pandas weekday numbers, Monday 0 through Sunday 6.
+    ``holiday_treatment`` selects how the schedule's explicit calendar
+    overrides those weekday restrictions; ``regular`` leaves them unchanged.
     """
 
     name: str
@@ -141,8 +147,17 @@ class TimeOfUsePeriod:
     start_hour: int
     end_hour: int
     days: frozenset[int] = ALL_DAYS
+    holiday_treatment: HolidayTreatment = HolidayTreatment.REGULAR
 
     def __post_init__(self) -> None:
+        try:
+            object.__setattr__(
+                self, "holiday_treatment", HolidayTreatment(self.holiday_treatment)
+            )
+        except ValueError as error:
+            raise PriceScheduleError(
+                f"Unknown holiday treatment: {self.holiday_treatment!r}."
+            ) from error
         object.__setattr__(
             self,
             "price_per_kWh",
@@ -188,6 +203,7 @@ class TimeOfUsePeriod:
         self,
         hours: pd.Series,
         weekdays: pd.Series,
+        holidays: pd.Series | None = None,
     ) -> pd.Series:
         """Boolean mask of the intervals this period covers."""
 
@@ -196,7 +212,12 @@ class TimeOfUsePeriod:
         else:
             in_hours = (hours >= self.start_hour) & (hours < self.end_hour)
 
-        return in_hours & weekdays.isin(list(self.days))
+        try:
+            return in_hours & match_days(
+                weekdays, self.days, self.holiday_treatment, holidays
+            )
+        except ValueError as error:
+            raise PriceScheduleError(str(error)) from error
 
 
 @dataclass
@@ -211,19 +232,26 @@ class TimeOfUseSchedule(PriceSource):
 
     **Weekends** are expressed through each period's ``days`` set.
 
-    **Holidays are not implemented.** A public holiday is priced with its
-    normal weekday rate. Real utility tariffs usually bill holidays at
-    off-peak rates, so results for a horizon containing one will overstate
-    cost. Adding this needs a holiday calendar per utility, not per ISO.
+    **Holidays** require an explicit utility ``holiday_calendar`` and
+    per-period ``holiday_treatment``. The default is ordinary weekday
+    matching, preserving schedules that apply the same periods every day.
+    A holiday-aware period without a calendar is rejected.
     """
 
     periods: tuple[TimeOfUsePeriod, ...]
     default_price_per_kWh: float | None = None
+    holiday_calendar: HolidayCalendar | None = None
 
     mode = TIME_OF_USE
 
     def __post_init__(self) -> None:
         self.periods = tuple(self.periods)
+        try:
+            validate_holiday_calendar(
+                self.holiday_calendar, (p.holiday_treatment for p in self.periods)
+            )
+        except ValueError as error:
+            raise PriceScheduleError(str(error)) from error
 
         if not self.periods:
             raise PriceScheduleError(
@@ -250,11 +278,12 @@ class TimeOfUseSchedule(PriceSource):
         # written against.
         hours = timestamps.dt.hour
         weekdays = timestamps.dt.dayofweek
+        holidays = self.holiday_calendar.mask(horizon.index) if self.holiday_calendar else None
 
         prices = pd.Series(np.nan, index=timestamps.index)
 
         for period in self.periods:
-            covered = period.matches(hours, weekdays)
+            covered = period.matches(hours, weekdays, holidays)
             prices = prices.mask(covered & prices.isna(), period.price_per_kWh)
 
         uncovered = prices.isna()

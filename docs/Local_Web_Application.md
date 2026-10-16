@@ -110,10 +110,14 @@ credential values. Start with an existing environment file if needed:
 /usr/local/bin/python3 -m src.local_web.server --refresh-engine --env-file /absolute/path/to/src/.env
 ```
 
-Only `NSRDB_API_KEY` and `NSRDB_API_EMAIL` are read from that file. Existing
-process environment values take precedence. The default path is this checkout's
-`src/.env`; credential files are not copied into engine snapshots. Retrieving
-weather requires internet; clear-sky studies and cached weather run offline.
+The browser and native desktop share `src/credentials.py`: only `NSRDB_API_KEY`,
+`NSRDB_API_EMAIL`, and `ELECTRICITY_MAPS_API_KEY` are read from that file. Existing
+process values take precedence, including intentionally empty values and dotenv
+variable interpolation. Empty or unassigned file values remain unset. The default
+path is this checkout's `src/.env`; no parent-directory dotenv discovery occurs,
+and credential files are not copied into engine snapshots. Importing provider
+modules does not load credentials. Retrieving weather requires internet;
+clear-sky studies and cached weather run offline.
 
 New results include scenario comparison, cost summary, normalized simulation
 inputs, weather (GHI/DNI/DHI, temperature, wind), PV model diagnostics, and

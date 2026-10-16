@@ -52,10 +52,15 @@ def identifier(value):
 def validate_site_fields(data):
     site, solar, load = data["site"], data["solar"], data["load"]
     for value, template, label in ((site, DEFAULT_SITE_REQUEST["site"], "site"),
-                                   (solar, DEFAULT_SITE_REQUEST["solar"], "solar"),
-                                   (load, DEFAULT_SITE_REQUEST["load"], "load")):
+                                   (solar, DEFAULT_SITE_REQUEST["solar"], "solar")):
         if not isinstance(value, dict) or set(value) != set(template):
             raise ValueError(f"Supply all supported {label} settings.")
+    load_keys = {"mode", "archetype", "total_energy_kWh"}
+    energy_scaled = isinstance(load, dict) and set(load) == load_keys
+    if not isinstance(load, dict) or (not energy_scaled and set(load) != set(DEFAULT_SITE_REQUEST["load"])):
+        raise ValueError("Supply load mode, archetype and exactly one of power_kw or total_energy_kWh.")
+    if energy_scaled and load["mode"] != "synthetic":
+        raise ValueError("Study-total energy scaling requires a synthetic load pattern.")
     if not isinstance(site["label"], str) or not 1 <= len(site["label"]) <= 500:
         raise ValueError("Provide a site description.")
     number(site["latitude"], "Latitude", -90, 90)
@@ -82,7 +87,10 @@ def validate_site_fields(data):
         raise ValueError("PV inverter AC rating must be positive.")
     if load["mode"] not in ("constant", "synthetic") or load["archetype"] not in ("office", "retail", "school", "multifamily", "industrial", "residential"):
         raise ValueError("Choose a supported load model and archetype.")
-    number(load["power_kw"], "Load power", 0.000001)
+    if energy_scaled:
+        number(load["total_energy_kWh"], "Study-total load energy", 0.000001)
+    else:
+        number(load["power_kw"], "Load power", 0.000001)
     number(data["fixed_price_per_kWh"], "Assumed electricity price")
     number(data["carbon_intensity_g_per_kWh"], "Assumed grid carbon intensity")
 

@@ -30,8 +30,9 @@ contain no equipment-specific wiring information.
   Missing timestamps raise. Matching uses instants, preserving DST repeated hours.
 - Dispatch `pv_kw`: requested aggregate AC output. It cannot exceed the sum of
   availability at the selected timestamp. Reduction is allocated in proportion
-  to each inverter's available power. The optimizer still supplies fixed PV;
-  this interface can replay curtailment but does not add an optimizer variable.
+  to each inverter's available power. The general optimizer supplies fixed PV;
+  the PG&E solar-export optimizer supplies its separately scheduled, possibly
+  curtailed output. Replay does not introduce an optimizer variable.
 - Optional `pv_<ID>_requested_kvar`: reactive injection, positive supplying vars.
   Default zero. P/Q must satisfy the specified kVA circle before solving.
 - Optional `load_kvar`: reactive consumption, positive inductive. Alternatively
@@ -60,11 +61,22 @@ not specify installation topology. CEC Paco is an AC **kW** rating; GUI replay
 assumes kVA = kW and Q = 0 and reports that assumption. Programmatic callers
 can supply actual kVA and an existing bus/connection through the replay types.
 
-Future work: residential split-phase service and site wiring configuration,
+The dedicated PG&E residential export comparison now selects the
+[residential split-phase service](Residential_Service_Replay.md). Other general
+workflows retain the three-phase default above; this does not infer wiring from
+a residential label across every utility workflow.
+
+Future work: customer-specific service and site wiring configuration,
 verified inverter reactive capability curves, Volt-Var/Volt-Watt controls,
 and dispatch feedback when network constraints alter delivered power.
 The present Generator elements do not run OpenDSS PVSystem InvControl models.
 QSTS remains a one-way validation of a dispatch schedule.
+
+The [PG&E export comparison](Solar_Export_Settlement.md#pge-comparison-electrical-validation)
+uses the same residential service across all five scenarios, omits absent PV/storage elements,
+maps interval-start SOC explicitly, and saves full interval electrical results.
+Circuit setup now starts at no load so an infeasible first scheduled point is
+reported by the replay loop rather than failing before interval reporting.
 
 Hourly historical loads remain hourly information even when repeated at finer
 simulation intervals. This change does not implement a residential load adapter

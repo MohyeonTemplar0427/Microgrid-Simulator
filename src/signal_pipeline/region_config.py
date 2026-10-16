@@ -5,7 +5,8 @@ are deliberately not interchangeable: a CAISO node name is meaningless to
 PJM, and neither ISO's identifier is an Electricity Maps zone.
 """
 
-from dataclasses import dataclass
+from copy import deepcopy
+from dataclasses import dataclass, replace
 
 from .providers import UnknownRegionError, supported_providers
 
@@ -24,8 +25,12 @@ class RegionConfig:
 
     # Construction options for the adapter, for providers that front more
     # than one market and so cannot infer dataset or timezone from the
-    # provider name alone. Options an adapter does not accept are dropped.
+    # provider name alone. The shared resolver validates these non-secret
+    # options before either guided or legacy workflows retrieve data.
     provider_options: dict | None = None
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "provider_options", deepcopy(self.provider_options))
 
 
 REGION_REGISTRY: dict[str, RegionConfig] = {
@@ -93,7 +98,8 @@ def get_region_config(region: str) -> RegionConfig:
             f"Supported market providers: {supported_providers()}."
         )
 
-    return REGION_REGISTRY[key]
+    # Nested option dictionaries must not let a caller modify the preset.
+    return replace(REGION_REGISTRY[key])
 
 
 def supported_regions() -> list[str]:

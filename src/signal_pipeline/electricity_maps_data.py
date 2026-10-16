@@ -1,18 +1,10 @@
 import requests
-import os
 import pandas as pd
-from dotenv import load_dotenv
 from .timeseries_validation import merge_complete_time_series
 from .horizon import combine_chunks_strictly
 
 
 CARBON_API_CHUNK_DAYS_15_MINUTES = 2
-
-load_dotenv()
-
-api_key = os.getenv(
-    "ELECTRICITY_MAPS_API_KEY"
-)
 
 pd.set_option(
     "display.max_columns",

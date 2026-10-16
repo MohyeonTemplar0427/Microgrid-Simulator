@@ -127,8 +127,10 @@ retains the proven primary cost optimum and reports its warning; it does not pro
 the least-wearing schedule among equal-cost optima.
 
 Primary solve limits are 60 seconds for one cycle and 60 seconds per explicitly
-linked cycle capped at 300 seconds; the optional cycling solve remains capped at
-60 seconds. The original 60-second annual commercial attempt was preserved as a
+linked cycle capped at 300 seconds. New cycling-refinement candidates use the
+same bounded secondary budget and retain validated cost-neutral improvements;
+the original validation below used a 60-second secondary limit. See
+[ComEd cycling refinement](ComEd_Cycling_Refinement.md). The original 60-second annual commercial attempt was preserved as a
 failed candidate. Increasing the compute budget does not accept an inaccurate or
 unproven optimum, relax battery modes, or replace a year with monthly solves.
 

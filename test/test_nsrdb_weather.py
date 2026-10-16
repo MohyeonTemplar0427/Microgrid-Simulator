@@ -76,7 +76,7 @@ def no_ambient_credentials(monkeypatch):
     Clearing the variables is not enough on its own. ``_credentials`` loads
     ``src/.env`` with ``override=False``, which leaves an existing variable
     alone but still *sets* a missing one -- so a deleted variable would be
-    restored straight from the developer's file. Pointing ``ENV_PATH`` at a
+    restored by the shared allowlisted loader. Pointing ``ENV_PATH`` at a
     path that does not exist makes that load a no-op.
     """
 

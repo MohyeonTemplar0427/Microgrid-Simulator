@@ -605,10 +605,11 @@ def build_document() -> str:
         "Seasons are the same on every schedule: **summer is June 1 through "
         "September 30**, winter is October 1 through May 31. Every "
         "*commercial* period applies *every day, including weekends and "
-        "holidays*. The residential time-of-use schedules do not: their peak "
-        "is weekday-only, and the Hours column says so. Holidays are not "
-        "modelled anywhere — a holiday falling on a weekday is priced at the "
-        "ordinary weekday rate.",
+        "holidays*. E-TOU-D alone uses non-holiday weekday peaks, with the "
+        "eight PG&E tariff holidays off-peak. Sunday holidays are observed "
+        "Monday; Saturday holidays have no weekday substitute. E-TOU-C, "
+        "EV2 and E-ELEC retain every-day periods. See "
+        "[TOU_Holiday_Rules.md](TOU_Holiday_Rules.md) for sources and scope.",
         "",
         "Schedules priced by usage tier rather than by hour (E-1) are "
         "compared separately below; peak and off-peak have no meaning for "

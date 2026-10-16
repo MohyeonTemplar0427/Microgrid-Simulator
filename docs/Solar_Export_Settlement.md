@@ -72,8 +72,75 @@ installation, maintenance and financing costs are excluded.
 Excluded: CCA generation, CARE/FERA/medical accounts, unconfirmed bonus
 eligibility, local taxes/other adjustments, grid-charged storage exports,
 annual retrospective credit application, NSC, termination, virtual/aggregate
-accounts, equipment capital cost and electrical-network feasibility. The current
+accounts and equipment capital cost. The current
 desktop GUI opens the same local app as the browser, so it shares this comparison.
+
+## PG&E comparison electrical validation
+
+The PG&E export comparison now replays **every returned scenario and every
+15-minute interval** through the shared OpenDSS workflow after dispatch and
+settlement. It does not change the optimization objective, bills, credit banks,
+or solar-benefit bridges. Scheduled grid import/export remains the billing
+basis; OpenDSS PCC measurements and network losses are separate diagnostics.
+
+The adapter maps native load, **actual** `pv_output_kw` (not available solar),
+positive battery charging/discharging and positive grid import/export into the
+shared replay contract. Battery injection is discharge minus charge; signed
+grid import is import minus export. `energy_kWh` from export dispatch is energy
+at the **start** of each interval. Replay sets that energy before solving;
+`battery_soc_end_kWh` is a diagnostic calculated with the dispatch efficiencies,
+and must reconcile with the next interval's starting energy. Instants stay
+timezone-aware and consecutive at 15 minutes, including DST changes. This
+adapter does not extend the tariff's supported dates.
+
+Grid-only has neither a PV generator nor a Storage element. PV-only cases
+have no Storage element; zero PV capacity produces no generator. Site inverter
+ratings and timestamped availability are forwarded to replay. Actual curtailed
+output is allocated among configured inverters in proportion to availability.
+
+New PG&E export comparisons use a **25 kVA, 120/240 V split-phase service**
+with a 100 A three-wire service. A three-winding transformer has opposing
+120 V secondary polarities; a 240 V inverter/storage connection spans both hot
+legs. The 120 V load fractions are 40% per leg, with 20% at 240 V. This is an
+explicit allocation assumption, not information inferred from monthly or
+aggregate interval demand. See [Residential service replay](Residential_Service_Replay.md)
+for transformer sources, conductor assumptions, neutral treatment and limits.
+This is **not a verified customer installation** or a shared neighborhood model.
+Load defaults to 0.95 lagging power factor; explicit reactive-load inputs take
+precedence. PV uses constant-P/Q AC Generator equivalents, Q=0 by default;
+aggregate inverter ratings assume kVA=kW. Storage uses external AC dispatch,
+configured efficiencies and zero idling power. Each solve is a snapshot, with
+SOC supplied by dispatch rather than integrated by OpenDSS. See
+[QSTS AC replay](QSTS_AC_Replay.md) for the common electrical assumptions.
+
+The comparison and `result.json.ac_validation` include convergence, feasible
+and failed interval counts, load-bus voltage extrema/violations (0.95–1.05 pu),
+line and transformer loading/overloads, tracking and inverter-limit failures,
+and network/feeder/transformer loss energy. New residential results also retain
+both line-to-neutral voltages, line-to-line voltage, neutral displacement,
+all three service currents and each secondary half-winding's loading. The
+transformer overload check includes both half-windings as well as primary kVA.
+Each scenario has an `ac-<scenario>`
+table and CSV with timestamps, scheduled flows, start/end SOC, actual inverter
+outputs, measured PCC flows, losses and failure flags. The manifest stores a
+bounded sample of failure timestamps/reasons and links to the complete table.
+PCC energy columns in the comparison have the `replay_pcc_` prefix and are
+never used for billing.
+
+Nonconverged measurements are null in the interval results and excluded from
+electrical extrema/energy totals; `electrical_measurements_complete=false`
+identifies incomplete totals. All-failed totals are null, not zero. A completed
+study can remain electrically infeasible; warnings and the browser status say
+so explicitly. Older saved export results without `ac_validation` remain
+unvalidated and must be rerun to obtain these checks. No saved results are
+silently migrated or recalculated.
+Previously saved validation-version-1 studies retain their original 750 kVA
+three-phase network. Version 2 records the residential model and its parameters
+in `ac_validation.network_configuration`; network changes require a new run.
+
+This is post-optimization quasi-static validation. It does not implement
+network-constrained dispatch, corrective controls, protection studies,
+Volt-Var/Volt-Watt behavior, inverter dynamics, or transient stability.
 
 ## Sources and reproducibility
 

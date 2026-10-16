@@ -448,6 +448,7 @@ def test_build_analysis_details_describes_live_study_horizon():
     [
         ("ercot_houston_hub", "America/Chicago"),
         ("pjm_western_hub", "America/New_York"),
+        ("pjm_western_hub_gridstatus", "America/New_York"),
     ],
 )
 def test_live_regional_analysis_reaches_opendss_results(
@@ -457,6 +458,14 @@ def test_live_regional_analysis_reaches_opendss_results(
     expected_timezone,
 ):
     def fake_prices(self, horizon):
+        if region_id == "pjm_western_hub_gridstatus":
+            assert self.market_provider == "gridstatus_io"
+            assert self.market_location == "WESTERN HUB"
+            assert self.provider_options == {
+                "dataset": "pjm_lmp_real_time_5_min",
+                "timezone": "America/New_York",
+                "native_interval_minutes": 5,
+            }
         return pd.DataFrame(
             {
                 "timestamp": horizon.index,
@@ -499,6 +508,8 @@ def test_live_regional_analysis_reaches_opendss_results(
         "DEFAULT_SIGNAL_CACHE_DIRECTORY",
         tmp_path,
     )
+    monkeypatch.setattr(interface_analysis, "load_credentials", lambda **kwargs: None)
+    monkeypatch.setenv("ELECTRICITY_MAPS_API_KEY", "test-carbon-key")
 
     specification = MicrogridSpecification(
         battery=Battery(

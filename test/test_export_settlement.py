@@ -149,11 +149,18 @@ def test_leap_day_pto_and_invalid_true_up_horizon():
   pge_export.prices(a,pd.DatetimeIndex(frame().timestamp))
 
 
-def test_worker_export_tables_reconcile_with_saved_bills(tmp_path):
+def test_worker_export_tables_reconcile_with_saved_bills(tmp_path,monkeypatch):
  from copy import deepcopy
  import json
  from src.local_web.contract import DEFAULT_SITE_REQUEST
  from src.local_web.export_study import execute
+ from src.local_web import export_study
+ captured={}
+ def original_comparison(*args,**kwargs):
+  results=compare(*args,**kwargs)
+  captured.update(deepcopy(results))
+  return results
+ monkeypatch.setattr(export_study,'compare',original_comparison)
  r=deepcopy(DEFAULT_SITE_REQUEST)
  r.update(start_date='2026-07-01',end_date='2026-07-31',tariff_id='pge_e_elec_residential_tier3_bundled_2026_06_01',carbon_weight=0)
  r['site']['utility']='pge';r['site_profile']=dict(site_type='residential',subtype='house')
@@ -167,8 +174,20 @@ def test_worker_export_tables_reconcile_with_saved_bills(tmp_path):
  for row in summary.itertuples():
   assert row.amount_due==pytest.approx(bills[row.scenario]['bill']['amount_due'])
   assert row.operating_cost==pytest.approx(row.amount_due+row.degradation_cost)
+  assert bills[row.scenario]==json.loads(json.dumps({key:value for key,value in captured[row.scenario].items() if key!='dispatch'}))
+  dispatch=pd.read_csv(tmp_path/('dispatch-'+row.scenario.replace('_','-')+'.csv'))
+  for column in ('grid_import_kw','grid_export_kw','pv_output_kw','pv_curtailed_kw','energy_kWh'):
+   assert np.allclose(dispatch[column],captured[row.scenario]['dispatch'][column],atol=1e-12,rtol=0)
+  ac=pd.read_csv(tmp_path/('ac-'+row.scenario.replace('_','-')+'.csv'))
+  assert len(ac)==len(frame())==row.interval_count==row.converged_intervals
+  assert np.allclose(ac.scheduled_grid_import_kw,dispatch.grid_import_kw,atol=1e-12,rtol=0)
+  assert np.allclose(ac.pv_actual_kw,dispatch.pv_output_kw,atol=.01,rtol=0)
+  assert ac.feasible.all() and row.failed_intervals==0
  manifest=json.loads((tmp_path/'result.json').read_text())
  assert manifest['tables'][0]['id']=='comparison'
+ assert manifest['ac_validation']['all_intervals_feasible'] is True
+ assert manifest['ac_validation']['soc_convention']=='start_of_interval'
+ assert len(manifest['ac_validation']['scenarios'])==5
  assert {'solar-benefits','solar-benefit-components','solar-energy-flows'} <= {table['id'] for table in manifest['tables']}
  benefits=pd.read_csv(tmp_path/'solar-benefits.csv')
  assert benefits.iloc[0].comparison=='Solar panel + inverter, on-site use only'

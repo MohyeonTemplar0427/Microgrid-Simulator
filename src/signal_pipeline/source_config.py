@@ -1,4 +1,4 @@
-"""Data-source configuration for the guided analysis workflow.
+"""Shared data-source configuration for guided and legacy analysis workflows.
 
 Two source modes are supported:
 
@@ -17,12 +17,14 @@ result is validated. Registry entries are never mutated: resolution always
 returns a new object.
 """
 
+from copy import deepcopy
 from dataclasses import dataclass, replace
 
 import pandas as pd
 
 from .providers import (
     UnsupportedProviderError,
+    provider_configuration_schema,
     supported_providers,
 )
 from .providers.base import (
@@ -69,6 +71,10 @@ class ResolvedSignalConfig:
     carbon_zone: str | None = None
 
     timezone_source: str = "explicit"
+    provider_options: dict | None = None
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "provider_options", deepcopy(self.provider_options))
 
     @property
     def requires_market_api(self) -> bool:
@@ -83,6 +89,7 @@ def resolve_live_api_config(
     carbon_provider: str | None = None,
     carbon_zone: str | None = None,
     timezone: str | None = None,
+    provider_options: dict | None = None,
 ) -> ResolvedSignalConfig:
     """Resolve a region preset, then apply and validate overrides.
 
@@ -90,13 +97,67 @@ def resolve_live_api_config(
     region still sees the original preset.
     """
 
+    resolved = resolve_region_config(
+        region, market_provider=market_provider, market_location=market_location,
+        carbon_provider=carbon_provider, carbon_zone=carbon_zone,
+        timezone=timezone, provider_options=provider_options,
+    )
+    return ResolvedSignalConfig(
+        source_mode=LIVE_API,
+        timezone=resolved.timezone,
+        region=resolved.region,
+        market_provider=resolved.market_provider,
+        market_location=resolved.market_location,
+        carbon_provider=resolved.carbon_provider,
+        carbon_zone=resolved.carbon_zone,
+        timezone_source="override" if timezone else "region_preset",
+        provider_options=resolved.provider_options,
+    )
+
+
+def resolve_region_config(
+    region: str | RegionConfig,
+    *,
+    market_provider: str | None = None,
+    market_location: str | None = None,
+    carbon_provider: str | None = None,
+    carbon_zone: str | None = None,
+    timezone: str | None = None,
+    provider_options: dict | None = None,
+) -> RegionConfig:
+    """One resolver for guided studies, legacy experiments and region retrieval.
+
+    Options belong to the selected provider. Switching providers discards the
+    old options and requires an explicit location in the new provider's format.
+    No adapter is constructed, credential read or data fetched here.
+    """
     if region is None or not str(region).strip():
         raise SourceConfigurationError(
             f"Source mode {LIVE_API!r} requires a region. "
             f"Known regions: {supported_regions()}."
         )
 
-    preset = get_region_config(region)
+    preset = region if isinstance(region, RegionConfig) else get_region_config(region)
+    selected_provider = preset.market_provider if market_provider is None else market_provider
+    # Preserve the existing typed unsupported-provider error before checking
+    # any dependent location or adapter options.
+    if selected_provider not in supported_providers():
+        raise UnsupportedProviderError(
+            f"Unsupported market provider {selected_provider!r}. "
+            f"Supported providers: {supported_providers()}."
+        )
+    changed_provider = selected_provider != preset.market_provider
+    if changed_provider and market_location is None:
+        raise SourceConfigurationError(
+            "Changing market provider requires an explicit market location; "
+            "location identifiers are not interchangeable between providers."
+        )
+    if provider_options is not None and not isinstance(provider_options, dict):
+        raise SourceConfigurationError("Provider options must be a dictionary.")
+    if not changed_provider and preset.provider_options is not None and not isinstance(preset.provider_options, dict):
+        raise SourceConfigurationError("Provider options must be a dictionary.")
+    options = {} if changed_provider else deepcopy(preset.provider_options or {})
+    options.update(deepcopy(provider_options or {}))
 
     overrides = {
         "market_provider": market_provider,
@@ -112,31 +173,15 @@ def resolve_live_api_config(
         if value is not None
     }
 
-    resolved: RegionConfig = replace(preset, **applied)
+    resolved: RegionConfig = replace(preset, **applied, provider_options=options or None)
 
     _validate_resolved_region(resolved)
 
-    return ResolvedSignalConfig(
-        source_mode=LIVE_API,
-        timezone=resolved.timezone,
-        region=resolved.region,
-        market_provider=resolved.market_provider,
-        market_location=resolved.market_location,
-        carbon_provider=resolved.carbon_provider,
-        carbon_zone=resolved.carbon_zone,
-        timezone_source="override" if timezone else "region_preset",
-    )
+    return resolved
 
 
 def _validate_resolved_region(resolved: RegionConfig) -> None:
-    if resolved.market_provider not in supported_providers():
-        raise UnsupportedProviderError(
-            f"Unsupported market provider "
-            f"{resolved.market_provider!r}. "
-            f"Supported providers: {supported_providers()}."
-        )
-
-    if not str(resolved.market_location).strip():
+    if resolved.market_location is None or not str(resolved.market_location).strip():
         raise SourceConfigurationError(
             "Market location must not be empty."
         )
@@ -148,12 +193,35 @@ def _validate_resolved_region(resolved: RegionConfig) -> None:
             f"{sorted(SUPPORTED_CARBON_PROVIDERS)}."
         )
 
-    if not str(resolved.carbon_zone).strip():
+    if resolved.carbon_zone is None or not str(resolved.carbon_zone).strip():
         raise SourceConfigurationError(
             "Carbon zone must not be empty."
         )
 
     _require_named_timezone(resolved.timezone)
+    options = resolved.provider_options or {}
+    allowed, required = provider_configuration_schema(resolved.market_provider)
+    if set(options) - allowed:
+        raise SourceConfigurationError(
+            "Unsupported or secret provider options; use only these configuration "
+            f"fields for {resolved.market_provider}: {sorted(allowed)}. "
+            "Supply credentials through the credential loader or environment."
+        )
+    missing = [name for name in required if options.get(name) in (None, "")]
+    if missing:
+        raise SourceConfigurationError(
+            f"Provider {resolved.market_provider!r} requires explicit configuration "
+            f"for {sorted(missing)}. Choose its region preset or supply provider_options."
+        )
+    if "timezone" in options:
+        _require_named_timezone(options["timezone"])
+    if "native_interval_minutes" in options:
+        interval = options["native_interval_minutes"]
+        if type(interval) is not int or interval <= 0:
+            raise SourceConfigurationError("Native provider interval must be a positive integer in minutes.")
+    for name in ("dataset", "location_column", "price_column", "timestamp_column"):
+        if name in options and (not isinstance(options[name], str) or not options[name].strip()):
+            raise SourceConfigurationError(f"Provider {name} must be a nonempty string.")
 
 
 def resolve_integrated_csv_config(

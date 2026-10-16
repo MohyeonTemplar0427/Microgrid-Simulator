@@ -97,10 +97,13 @@ def test_secondary_solver_failure_is_visible_in_shared_saved_results(monkeypatch
     result=json.loads((tmp_path/'result.json').read_text())
     status=result['optimization']['pv_battery']
     assert status['cost_optimum_proven'] and status['throughput_tie_break_status']=='solver_error'
+    assert status['throughput_refinement']['minimum_throughput_proven'] is False
+    assert result['optimization']['grid_only']['throughput_refinement']['minimum_throughput_proven'] is None
     assert any('pv_battery' in w and 'cycling tie-break' in w for w in result['warnings'])
     comparison=pd.read_csv(tmp_path/'comparison.csv').set_index('scenario')
     assert comparison.loc['pv_battery','cost_optimum_proven']
     assert comparison.loc['pv_battery','throughput_tie_break_status']=='solver_error'
+    assert not comparison.loc['pv_battery','minimum_throughput_proven']
     assert result['ac_validation']['all_intervals_feasible']
 
 

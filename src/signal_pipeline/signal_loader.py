@@ -164,6 +164,7 @@ def _load_from_live_api(
     source = price_source or WholesaleMarketPrice(
         market_provider=config.market_provider,
         market_location=config.market_location,
+        provider_options=config.provider_options,
     )
 
     cache_path = (

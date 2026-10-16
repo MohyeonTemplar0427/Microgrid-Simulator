@@ -269,17 +269,21 @@ never exercised.
 
 | | Commercial (B-series) | Residential |
 |---|---|---|
-| Peak days | Every day, including weekends and holidays | Weekday-only on E-TOU-D |
+| Peak days | Every day, including weekends and holidays | Non-holiday weekdays on E-TOU-D; every day on E-TOU-C/EV2/E-ELEC |
 | Demand charges | Central to the bill | None |
 | Energy price | Per-interval TOU rate | Per-interval **or** tiered on period volume |
 | Fixed charge | Daily customer charge | Customer charge *or* a minimum bill |
 
-**Day-of-week (`TOUPeriod.days`).** Every B-series period applies every day,
-which is why the commercial work never needed this field and why its absence
-went unnoticed. E-TOU-D's peak is 5–8 p.m. Monday through Friday; without day
-matching, every weekend evening would bill at the peak rate. Holidays are
-still **not** modelled — a holiday falling on a weekday is priced at the
-ordinary weekday rate, which overstates those few days.
+**Day matching (`TOUPeriod.days`, `holiday_treatment`, `holiday_calendar`).**
+Every B-series period applies every day. E-TOU-D's 5–8 p.m. peak excludes
+weekends and its eight tariff holidays, including Sunday-to-Monday observance
+and no Friday substitution for Saturday holidays. The generic retail signal
+and billing models share `src/tou_calendar.py`; a period can keep ordinary
+weekday matching, exclude holidays, include holidays, or apply only on holidays.
+Holiday-aware periods require an explicit calendar. Energy prices, billing
+categories and demand bases use the same matching rules; dispatch consumes
+those rates and demand bases. Other utilities' calendars remain independent.
+See [TOU_Holiday_Rules.md](TOU_Holiday_Rules.md) for historical scope and sources.
 
 **Tiered energy (`EnergyTier`).** E-1 has no time-of-use periods at all. The
 price of a kWh depends on how much came before it in the billing period,
@@ -604,7 +608,12 @@ lines; `dispatch/comed.py` enforces non-export balance, binary storage modes,
 equal terminal energy and fixed account histories/obligations. Every schedule
 is recalculated and cent rounding is reconciled explicitly. If a secondary
 cycling tie-break fails, the separately saved proven primary cost solution is
-retained, reconciled and identified with a warning and solver-selection metadata.
+retained or replaced by an independently validated cost-neutral improvement,
+reconciled and identified with a warning and solver-selection metadata. A cheap
+fixed-mode LP can improve the incumbent, but only the full secondary solve
+establishes global minimum throughput. See
+[ComEd cycling refinement](ComEd_Cycling_Refinement.md) for proof scope, budgets
+and private cached-input reproduction.
 An unproven primary solution still rejects. See the reproducible
 [2025 annual validation](ComEd_2025_Annual_Validation.md). Shared
 `build_site_generation` contains weather/PV physics without California carbon

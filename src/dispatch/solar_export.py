@@ -29,6 +29,7 @@ def compare(frame,account,*,export_limit_kw,battery=None,wear_per_kwh=0.,opening
         out['pv_available_kw']=available
         out['grid_import_kw']=np.maximum(imports,0);out['grid_export_kw']=np.maximum(exports,0)
         out['pv_output_kw']=np.maximum(output,0);out['pv_curtailed_kw']=np.maximum(available-output,0)
+        # energy.value[:-1] is interval-START energy, including in AC replay.
         out['battery_charge_kw']=np.maximum(charge,0);out['battery_discharge_kw']=np.maximum(discharge,0);out['energy_kWh']=energy
         bill=pge_export.bill(out,account,opening)
         wear=float(.25*np.sum(charge+discharge)*wear_per_kwh)

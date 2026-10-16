@@ -1,6 +1,6 @@
 from .battery import Battery
 from dataclasses import dataclass
-from ..signal_pipeline.region_config import get_region_config
+from ..signal_pipeline.source_config import resolve_region_config
 
 battery = Battery(
     capacity_kWh = 20.0,
@@ -35,26 +35,24 @@ class ExperimentConfig:
     caiso_node: str | None = None
 
     sleep_seconds: float = 1.0
+    provider_options: dict | None = None
 
     def __post_init__(self) -> None:
 
-        region_config = get_region_config(self.region)
+        location = self.market_location if self.market_location is not None else self.caiso_node
+        region_config = resolve_region_config(
+            self.region, market_location=location,
+            carbon_zone=self.electricity_maps_zone, timezone=self.timezone,
+            provider_options=self.provider_options,
+        )
 
         self.market_provider = region_config.market_provider
         self.carbon_provider = region_config.carbon_provider
 
-        if self.caiso_node is not None and self.market_location is None:
-            self.market_location = self.caiso_node
-
-        if self.market_location is None:
-            self.market_location = region_config.market_location
-
-        if self.electricity_maps_zone is None:
-            self.electricity_maps_zone = region_config.carbon_zone
-
-        if self.timezone is None:
-            self.timezone = region_config.timezone
-
+        self.market_location = region_config.market_location
+        self.electricity_maps_zone = region_config.carbon_zone
+        self.timezone = region_config.timezone
+        self.provider_options = region_config.provider_options
         self.caiso_node = self.market_location
 
         if self.number_of_days <= 0:

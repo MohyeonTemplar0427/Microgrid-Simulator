@@ -40,6 +40,9 @@ class GridStatusIOProvider(MarketProvider):
     max_chunk_days = None
     requires_credentials = True
     credential_env_var = GRIDSTATUS_API_KEY_ENV_VAR
+    # A hosted provider spans markets. Region-based workflows must declare
+    # these explicitly, rather than relying on the raw adapter's defaults.
+    required_configuration_options = frozenset({"dataset", "timezone", "native_interval_minutes"})
 
     def __init__(
         self,

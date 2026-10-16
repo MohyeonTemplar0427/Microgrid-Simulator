@@ -236,6 +236,12 @@ def execute(directory, r):
             "solver_gap_usd": result["solver_gap_usd"], "terminal_energy_kwh": result["terminal_energy_kwh"],
             "cost_optimum_proven": result["cost_optimum_proven"],
             "throughput_tie_break_status": result["throughput_tie_break_status"],
+            "minimum_throughput_proven": result["throughput_refinement"]["minimum_throughput_proven"],
+            "throughput_refinement_status": result["throughput_refinement"]["status"],
+            "primary_battery_throughput_kwh": result["throughput_refinement"]["primary_throughput_kwh"],
+            "battery_throughput_kwh": result["throughput_refinement"]["selected_throughput_kwh"],
+            "throughput_reduction_kwh": result["throughput_refinement"]["throughput_reduction_kwh"],
+            "throughput_optimality_gap_kwh": result["throughput_refinement"]["optimality_gap_kwh"],
             "all_intervals_feasible": bool(ac[key].feasible.all()) if supported_ac else None})
         base_lines = {(x.get("cycle_index"), x["name"]): x["amount_usd"] for x in results["grid_only"]["bill"]["lines"]}
         items.extend({**line, "scenario": key, "subtotal_savings_vs_grid_usd": base_lines[(line.get("cycle_index"), line["name"])]-line["amount_usd"],
@@ -273,7 +279,7 @@ def execute(directory, r):
         "total_usd": None, "is_complete_bill": False, "excluded_components": results["grid_only"]["bill"]["excluded_components"],
         "regional_account": r["regional_account"], "account": r["account"], "operating_contract": r["operating_contract"],
         "billing": {k: v["bill"] for k, v in results.items()}, "ac_validation": summarize_ac_validation(ac) if ac else None,
-        "optimization": {k: {field: v[field] for field in ("cost_optimum_proven", "throughput_tie_break_status", "strategy", "solver")}
+        "optimization": {k: {field: v[field] for field in ("cost_optimum_proven", "throughput_tie_break_status", "throughput_refinement", "strategy", "solver")}
                          for k, v in results.items()},
         "input_provenance": {"load": {k: v for k, v in r["load"].items() if k != "csv"}, "pv": pv_provenance,
             "native_csv_sha256": hashlib.sha256(r["load"]["csv"].encode()).hexdigest() if r["load"]["csv"] else None,

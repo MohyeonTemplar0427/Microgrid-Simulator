@@ -5,12 +5,15 @@ import signal
 import threading
 
 from .runtime import JobRunner, ROOT, Store
+from ..credentials import CARBON_CREDENTIALS, load_credentials
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=ROOT / ".cache" / "local_web")
+    parser.add_argument("--env-file", type=Path, help="Optionally read only Electricity Maps credentials; existing environment values take precedence.")
     args = parser.parse_args()
+    load_credentials(args.env_file, names=CARBON_CREDENTIALS)
     stopped = threading.Event()
     for signum in (signal.SIGINT, signal.SIGTERM):
         signal.signal(signum, lambda *_: stopped.set())

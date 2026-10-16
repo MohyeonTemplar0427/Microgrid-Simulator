@@ -3,7 +3,7 @@
 import os
 from pathlib import Path
 
-from dotenv import load_dotenv
+from ..credentials import SIGNAL_CREDENTIALS, load_credentials
 
 from .battery import Battery
 from .config import(
@@ -33,9 +33,7 @@ REAL_INPUT_PATH = (
 def main() -> None:
     """Generate and save the five real-signal schedules."""
 
-    load_dotenv(
-        PROJECT_ROOT / "src" / ".env"
-    )
+    load_credentials(names=SIGNAL_CREDENTIALS)
 
     api_key = os.getenv(
         "ELECTRICITY_MAPS_API_KEY"

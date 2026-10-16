@@ -16,23 +16,17 @@ import threading
 
 from ..local_web.runtime import Application, ROOT
 from ..local_web.server import make_server
+from ..credentials import DEFAULT_ENV_PATH, LOCAL_STUDY_CREDENTIALS, load_credentials
 
 
 DESKTOP_DATA_DIR = ROOT / ".cache" / "local_web_desktop"
 NATIVE_WINDOW = Path(__file__).with_name("native_webview.swift")
 
 
-def load_local_credentials(env_file: Path = ROOT / "src" / ".env") -> None:
+def load_local_credentials(env_file: Path = DEFAULT_ENV_PATH) -> None:
     """Read only the credentials used by the local study server."""
 
-    if not env_file.is_file():
-        return
-    from dotenv import dotenv_values
-
-    values = dotenv_values(env_file)
-    for key in ("NSRDB_API_KEY", "NSRDB_API_EMAIL", "ELECTRICITY_MAPS_API_KEY"):
-        if values.get(key):
-            os.environ.setdefault(key, values[key])
+    load_credentials(env_file, names=LOCAL_STUDY_CREDENTIALS)
 
 
 def open_native_window(url: str) -> None:
@@ -65,7 +59,7 @@ def run_desktop_application(
     *,
     data_dir: Path = DESKTOP_DATA_DIR,
     refresh_engine: bool = True,
-    env_file: Path = ROOT / "src" / ".env",
+    env_file: Path = DEFAULT_ENV_PATH,
 ) -> None:
     """Own the local server for exactly the lifetime of the desktop window."""
 

@@ -41,6 +41,7 @@ class LoadScaling(StrEnum):
 
     PEAK_KW = "peak_kw"
     DAILY_ENERGY_KWH = "daily_energy_kWh"
+    TOTAL_ENERGY_KWH = "total_energy_kWh"
 
 
 class LoadSourceError(ValueError):
@@ -131,7 +132,7 @@ class ConstantLoad(LoadProfileSource):
 
 @dataclass
 class SyntheticLoad(LoadProfileSource):
-    """A stylized archetype shape scaled to a peak or a daily energy.
+    """A stylized archetype shape scaled to peak, daily or horizon energy.
 
     Variability, when enabled, is drawn from a seeded generator so a rerun of
     the same configuration reproduces the same profile exactly.
@@ -143,6 +144,7 @@ class SyntheticLoad(LoadProfileSource):
     daily_energy_kWh: float | None = None
     variability_fraction: float = 0.0
     random_seed: int = 20260101
+    total_energy_kWh: float | None = None
 
     mode = LoadSourceMode.SYNTHETIC
     is_synthetic = True
@@ -157,7 +159,7 @@ class SyntheticLoad(LoadProfileSource):
                     "Peak-scaled synthetic load requires peak_kw."
                 )
             self.peak_kw = _validate_power(self.peak_kw, "Peak load")
-        else:
+        elif self.scaling == LoadScaling.DAILY_ENERGY_KWH:
             if self.daily_energy_kWh is None:
                 raise LoadSourceError(
                     "Energy-scaled synthetic load requires daily_energy_kWh."
@@ -166,6 +168,10 @@ class SyntheticLoad(LoadProfileSource):
                 self.daily_energy_kWh,
                 "Daily energy",
             )
+        else:
+            if self.total_energy_kWh is None:
+                raise LoadSourceError("Horizon-energy synthetic load requires total_energy_kWh.")
+            self.total_energy_kWh = _validate_power(self.total_energy_kWh, "Total energy")
 
         if not 0.0 <= self.variability_fraction <= 1.0:
             raise LoadSourceError(
@@ -220,11 +226,16 @@ class SyntheticLoad(LoadProfileSource):
             raise LoadSourceError("Synthetic load shape collapsed to zero.")
 
         horizon_days = interval_index.billing_days
-        target_energy_kWh = self.daily_energy_kWh * horizon_days
+        target_energy_kWh = (self.total_energy_kWh
+                             if self.scaling == LoadScaling.TOTAL_ENERGY_KWH
+                             else self.daily_energy_kWh * horizon_days)
 
         return shape * (target_energy_kWh / total_energy_kWh)
 
     def describe(self) -> str:
+        if self.scaling == LoadScaling.TOTAL_ENERGY_KWH:
+            return (f"Synthetic {self.archetype.value} ({self.total_energy_kWh:.2f} kWh "
+                    f"over the study horizon, seed {self.random_seed}) - SYNTHETIC DATA")
         basis = (
             f"peak {self.peak_kw:.2f} kW"
             if self.scaling == LoadScaling.PEAK_KW

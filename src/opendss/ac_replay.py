@@ -128,8 +128,10 @@ def terminal_power(element):
     return sum(values[::2]), sum(values[1::2])
 
 
-def replay_measurements(row, points, tolerance_kw=0.01, *, battery_present=True):
-    load_p, load_q = terminal_power("Load.Building")
+def replay_measurements(row, points, tolerance_kw=0.01, *, battery_present=True,
+                        load_elements=("Building",)):
+    loads = [terminal_power("Load." + name) for name in load_elements]
+    load_p, load_q = (sum(values) for values in zip(*loads))
     requested_load = float(row["load_kw"])
     requested_q = load_reactive_power(row)
     battery_p = terminal_power("Storage.Battery")[0] if battery_present else 0.

@@ -98,7 +98,7 @@ Components apply together, so a summer peak-hour kilowatt on B-19 or B-20 can at
 
 Option S: B-19 bills $6.35/kW monthly excluding 09:00–14:00, $9.13/kW monthly across all hours, $1.60/kW **per day** at the summer peak, $0.08/kW per day at summer part-peak, and $1.22/kW per day at the winter peak. B-20 has the same scopes at $5.56, $11.06, $1.30, $0.07, and $1.02 respectively. Summer and winter daily charges do not apply together.
 
-Seasons are the same on every schedule: **summer is June 1 through September 30**, winter is October 1 through May 31. Every *commercial* period applies *every day, including weekends and holidays*. The residential time-of-use schedules do not: their peak is weekday-only, and the Hours column says so. Holidays are not modelled anywhere — a holiday falling on a weekday is priced at the ordinary weekday rate.
+Seasons are the same on every schedule: **summer is June 1 through September 30**, winter is October 1 through May 31. Every *commercial* period applies *every day, including weekends and holidays*. E-TOU-D alone uses non-holiday weekday peaks, with the eight PG&E tariff holidays off-peak. Sunday holidays are observed Monday; Saturday holidays have no weekday substitute. E-TOU-C, EV2 and E-ELEC retain every-day periods. See [TOU_Holiday_Rules.md](TOU_Holiday_Rules.md) for sources and scope.
 
 Schedules priced by usage tier rather than by hour (E-1) are compared separately below; peak and off-peak have no meaning for them.
 
@@ -609,7 +609,7 @@ E-TOU-D export compensation (NEM or the Net Billing Tariff) is not modelled. Con
 
 ### Notes
 
-Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. Holidays are NOT modelled -- a public holiday falling on a weekday is priced at the weekday peak rate, which overstates the bill for those few days. Also not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. The eight tariff holidays use PG&E TOU observance: Sunday moves to Monday; Saturday has no weekday substitute. Not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
 
 ---
 
@@ -641,7 +641,7 @@ E-TOU-D export compensation (NEM or the Net Billing Tariff) is not modelled. Con
 
 ### Notes
 
-Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. Holidays are NOT modelled -- a public holiday falling on a weekday is priced at the weekday peak rate, which overstates the bill for those few days. Also not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. The eight tariff holidays use PG&E TOU observance: Sunday moves to Monday; Saturday has no weekday substitute. Not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
 
 ---
 
@@ -673,7 +673,7 @@ E-TOU-D export compensation (NEM or the Net Billing Tariff) is not modelled. Con
 
 ### Notes
 
-Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. Holidays are NOT modelled -- a public holiday falling on a weekday is priced at the weekday peak rate, which overstates the bill for those few days. Also not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
+Residential time-of-use, voluntary opt-in. Peak is 5-8 p.m. Monday through Friday; all other hours, weekends and holidays are off-peak. The eight tariff holidays use PG&E TOU observance: Sunday moves to Monday; Saturday has no weekday substitute. Not modelled: the California Climate Credit ($36.18 per household, paid in the August and September bill cycles), CARE and FERA discounts, Standby Service under Schedule S, CCA and Direct Access.
 
 ---
 

@@ -75,7 +75,7 @@ function updateSiteProfile() {
       ? 'Residential choices follow the location and the supported account billing models. Confirm the actual account and meter.'
       : 'Site type and location filter the available services. A map match does not establish account eligibility.';
   for(const opt of field('archetype').options) {
-    const allowed=window.comedUI?.active()&&siteCustomerClass()==='residential'?['residential','multifamily']:['office','retail','school','industrial'];
+    const allowed=siteCustomerClass()==='residential'?['residential','multifamily']:['office','retail','school','industrial'];
     opt.hidden=opt.disabled=!!siteCustomerClass() && !allowed.includes(opt.value);
   }
   const synthetic=field('load_mode').querySelector('option[value="synthetic"]');
@@ -84,7 +84,7 @@ function updateSiteProfile() {
 }
 function changeSiteProfile() {
   field('tariff_id').value='__unset__';
-  for(const name of ['load_power_kw','archetype'])field(name).value='';
+  for(const name of ['load_power_kw','load_total_energy_kWh','archetype'])field(name).value='';
   window.municipalUI?.clearLoad();
   if(locationResolution)setLocationChoices(locationResolution);
   else window.municipalUI?.serviceChanged();
@@ -123,6 +123,7 @@ function updateSiteControls() {
   $("clear-sky-settings").hidden=field("weather_source").value!=="clear_sky";
   $("historical-settings").hidden=field("weather_source").value!=="nsrdb";
   $("archetype-label").hidden=field("load_mode").value!=="synthetic";
+  $("load-power-label").hidden=false;
   $("fixed-price-label").hidden=!!field("tariff_id").value;
   field("tariff_id").querySelector('option[value=""]').textContent=site?"Flat energy-price assumption · no utility bill":"Profile energy prices · no utility bill";
   $("pv-note").textContent=site?"AC rating limits the weather-derived output. Temperature and inverter losses are calculated separately from system losses.":"PV AC capacity sets the inverter rating; generation uses the saved profile.";
@@ -136,6 +137,21 @@ function updateSiteControls() {
   syncPvBatteryConnection();
   syncWeatherStatus();
   window.comedUI?.sync();
+  syncLoadScaling();
+}
+function energyLoadAvailable() {
+  return capabilities?.load_energy_scaling===true && [2,3].includes(template?.schema_version) &&
+    !gridOnly() && !window.municipalUI?.active() && !window.socalUI?.active() && !window.comedUI?.active();
+}
+function syncLoadScaling() {
+  const available=energyLoadAvailable(), synthetic=field('load_mode').value==='synthetic';
+  $('load-scaling-label').hidden=!(available && synthetic);
+  field('load_scaling').disabled=!(available && synthetic);
+  const energy=available && synthetic && field('load_scaling').value==='energy';
+  $('load-energy-label').hidden=!energy; field('load_total_energy_kWh').disabled=!energy;
+  if(available) {
+    $('load-power-label').hidden=energy; field('load_power_kw').disabled=energy;
+  }
 }
 $("new-site").addEventListener("click",()=>startBlankStudy());
 $("search-location").addEventListener("click",async()=>{
@@ -284,7 +300,9 @@ function fillForm(request, lookup=true) {
     siteLabel=request.site.label;
     field("location_query").value=siteLabel; field("latitude").value=request.site.latitude; field("longitude").value=request.site.longitude; field("utility").value=request.site.utility;
     for(const [key,value] of Object.entries(request.solar)) field(key).value=value;
-    field("load_mode").value=request.load.mode; field("load_power_kw").value=request.load.power_kw; field("archetype").value=request.load.archetype;
+    field("load_mode").value=request.load.mode; field("load_power_kw").value=request.load.power_kw ?? ''; field("archetype").value=request.load.archetype;
+    field('load_scaling').value=Object.hasOwn(request.load,'total_energy_kWh')?'energy':'peak';
+    field('load_total_energy_kWh').value=request.load.total_energy_kWh ?? '';
     $("location-status").textContent=siteLabel;
     $("utility-suggestion").textContent="Utility service depends on your account. Search the location for an available locality hint; confirm bundled service before choosing a tariff.";
   }
@@ -330,6 +348,10 @@ function readRequest() {
     request.weather_source=field("weather_source").value; request.weather_id=request.weather_source==="nsrdb"?weatherId:null;
     for(const key of Object.keys(request.solar)) request.solar[key]=request.weather_source==="nsrdb" && ["temperature_c","wind_speed_m_per_s"].includes(key)?template.solar[key]:Number(field(key).value);
     request.load={mode:field("load_mode").value,power_kw:Number(field("load_power_kw").value),archetype:field("load_mode").value==="constant"?"office":field("archetype").value};
+    if(energyLoadAvailable() && request.load.mode==='synthetic' && field('load_scaling').value==='energy') {
+      delete request.load.power_kw;
+      request.load.total_energy_kWh=Number(field('load_total_energy_kWh').value);
+    }
     request.fixed_price_per_kWh=Number(field("fixed_price_per_kWh").value);
     request.carbon_intensity_g_per_kWh=0; // Legacy schema field; historical carbon is authoritative.
     delete request.pv_battery_connection;
@@ -368,6 +390,17 @@ async function history() {
     row.addEventListener("click",()=>selectStudy(study.id).catch(error=>showError("connection",error))); return row;
   }));
 }
+function solarExportCompletionMessage(result) {
+  const validation=result?.ac_validation;
+  if(validation?.status!=="completed" || !validation.scenarios?.length ||
+     !validation.scenarios.every(s=>s.checked_intervals>0)) {
+    return "Calculation complete. Electricity costs calculated; electrical network feasibility was not evaluated for this saved study.";
+  }
+  if(validation.all_intervals_feasible===true) {
+    return "Calculation complete. All intervals passed the representative OpenDSS electrical checks; this is not site-specific validation.";
+  }
+  return "Calculation complete with electrical feasibility failures. Inspect the scenario comparison and electrical-validation interval tables; bills use the scheduled flows.";
+}
 async function selectStudy(id) {
   clearTimeout(pollTimer); activeId=id; activeStudy=null; offset=0; tableRequest++;
   window.location.hash=id;
@@ -405,7 +438,9 @@ async function refreshStudy(id) {
           ? "ComEd billing subtotal complete. Excluded taxes and fees are not included; no dispatch or network feasibility was evaluated."
           : study.request.schema_version===7
           ? "Annual statement replay complete. Inspect monthly credits and the true-up adjustment; no interval dispatch was simulated."
-          : (study.request.solar_export || [4,5,6].includes(study.request.schema_version))
+          : study.request.solar_export
+            ? solarExportCompletionMessage(study.result)
+          : [4,5,6].includes(study.request.schema_version)
             ? "Calculation complete. Electricity costs calculated; electrical network feasibility is not evaluated."
             : "Calculation complete. Check electrical feasibility in the scenario comparison.")
       : study.progress;
@@ -426,7 +461,7 @@ async function refreshStudy(id) {
     pollTimer=setTimeout(()=>refreshStudy(id),3000);
   }
 }
-const summaryColumns=["customer_type","supply","delivery_class","billing_month","import_kwh","subtotal_usd","billed_mkd_kw","overall_30min_peak_kw","complete_bill","scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","interval_count","all_intervals_feasible"];
+const summaryColumns=["customer_type","supply","delivery_class","billing_month","import_kwh","subtotal_usd","billed_mkd_kw","overall_30min_peak_kw","complete_bill","scenario","utility_bill","amount_due","bill_savings_vs_grid","operating_cost","credits_used","closing_credit_balance","total_explicit_operating_cost","savings_vs_grid","total_explicit_cost","energy_cost","demand_charge","total_utility_charge","degradation_cost","battery_throughput_kwh","throughput_reduction_kwh","minimum_throughput_proven","throughput_refinement_status","throughput_optimality_gap_kwh","optimality_gap_bound_dollars","emissions_kgCO2","peak_grid_import_kw","billed_peak_kw","minimum_voltage_pu","maximum_voltage_pu","maximum_line_loading_percent","maximum_transformer_loading_percent","setpoint_mismatch_intervals","inverter_capability_violation_intervals","converged_intervals","feasible_intervals","failed_intervals","interval_count","all_intervals_feasible","network_loss_energy_kWh","electrical_measurements_complete"];
 async function loadTable() {
   const generation=++tableRequest, id=activeId, selected=$("table-select").value;
   $("table-container").textContent="Loading table…";
@@ -436,7 +471,7 @@ async function loadTable() {
   if (generation!==tableRequest || id!==activeId) return;
   $("run-error").hidden=true;
   $("all-columns").parentElement.hidden=selected!=="comparison";
-  const comedColumns=["scenario","subtotal_usd","subtotal_savings_vs_grid_usd","import_kwh","billed_mkd_kw","overall_interval_peak_kw","degradation_cost_usd","all_intervals_feasible","is_complete_bill"];
+  const comedColumns=["scenario","subtotal_usd","subtotal_savings_vs_grid_usd","import_kwh","billed_mkd_kw","overall_interval_peak_kw","degradation_cost_usd","battery_throughput_kwh","throughput_reduction_kwh","minimum_throughput_proven","throughput_refinement_status","all_intervals_feasible","is_complete_bill"];
   const displayedSummary=activeStudy?.request.schema_version===10
     ? comedColumns.filter(c=>c!=="billed_mkd_kw" || Object.hasOwn(activeStudy.request.account,"service_voltage"))
     : summaryColumns;
@@ -447,13 +482,19 @@ async function loadTable() {
   const comedLabels={scenario:"Scenario",subtotal_usd:"Modeled subtotal ($)",subtotal_savings_vs_grid_usd:"Subtotal savings ($)",import_kwh:"Imports (kWh)",billed_mkd_kw:"Billed MKD (kW)",overall_30min_peak_kw:"All-hours peak (kW)",degradation_cost_usd:"Battery wear ($)",all_intervals_feasible:"AC feasible",is_complete_bill:"Complete bill"};
   comedLabels.overall_interval_peak_kw="Maximum import · interval (kW)";
   comedLabels.overall_30min_peak_kw="30-minute demand measurement (kW)";
+  Object.assign(comedLabels,{battery_throughput_kwh:"Battery throughput (kWh)",throughput_reduction_kwh:"Cycling reduction (kWh)",minimum_throughput_proven:"Minimum cycling proven",throughput_refinement_status:"Cycling refinement"});
+  const refinementNames={optimal:"Proven minimum",improved_unproven:"Improved · minimum unproven",retained_primary:"Primary retained",not_applicable:"Not applicable"};
   for (const i of indices) {const cell=document.createElement("th");cell.scope="col";cell.textContent=table.columns[i]==="timestamp"?"Time (UTC)":activeStudy?.request.schema_version===10&&selected==="comparison"?(comedLabels[table.columns[i]]||table.labels[i]):table.labels[i];cell.title=table.columns[i];header.append(cell);}
   head.append(header);
   for (const row of table.data) {
     const tr=document.createElement("tr");
     for (const i of indices) {
       const td=document.createElement("td"), value=row[i];
-      const text=typeof value==="string" && value.startsWith("combined_optimal_") ? `Combined · $${value.slice("combined_optimal_".length)}/kgCO₂` : (names[value] || String(value));
+      const text=activeStudy?.request.schema_version===10 && table.columns[i]==="throughput_refinement_status"
+        ? refinementNames[value] || String(value)
+        : activeStudy?.request.schema_version===10 && table.columns[i]==="minimum_throughput_proven" && ["True","False"].includes(value)
+        ? value==="True"?"Yes":"No"
+        : typeof value==="string" && value.startsWith("combined_optimal_") ? `Combined · $${value.slice("combined_optimal_".length)}/kgCO₂` : (names[value] || String(value));
       td.textContent=value===null ? "—" : typeof value==="number" ? value.toLocaleString(undefined,{maximumFractionDigits:4}) : typeof value==="boolean" ? (value?"Yes":"No") : text;
       tr.append(td);
     }
@@ -895,7 +936,7 @@ function applyStepDefaults(page) {
     ...(residential?{capacity_kWh:10,energy_kWh:5,max_charge_kw:5,max_discharge_kw:5}:{}),
     site_type:"commercial",site_subtype:field("site_type").value==="residential"?"house":"",
     latitude:defaults.site?.latitude,longitude:defaults.site?.longitude,location_query:defaults.site?.label,
-    utility:"unconfirmed",load_mode:defaults.load?.mode,load_power_kw:defaults.load?.power_kw,
+    utility:"unconfirmed",load_mode:defaults.load?.mode,load_power_kw:defaults.load?.power_kw,load_scaling:"peak",
     archetype:defaults.load?.archetype,orientation_year:Math.max(...(capabilities.nsrdb_years || [2025])),
     ess_mode:"manual",ess_quantity:1,ess_initial:.5,ess_reserve:.2,pv_battery_connection:"ac_coupled",...window.comedUI?.mainDefaults()};
   for(const input of page.querySelectorAll("input[name],select[name]")) {

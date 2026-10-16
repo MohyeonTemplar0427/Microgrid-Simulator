@@ -19,6 +19,10 @@ from typing import TYPE_CHECKING
 
 import pandas as pd
 
+from src.tou_calendar import (
+    HolidayCalendar, HolidayTreatment, match_days, validate_holiday_calendar,
+)
+
 if TYPE_CHECKING:  # avoids a cycle: baseline imports this module
     from .baseline import BaselineAllowance
 
@@ -84,10 +88,9 @@ class TOUPeriod:
     block to specific calendar months (1-12); empty means all months.
 
     ``days`` restricts the block to weekdays (Monday 0 through Sunday 6);
-    it defaults to all seven. The PG&E B-series never needed it -- every one
-    of its periods applies "every day, including weekends and holidays" --
-    but residential time-of-use peaks are Monday-to-Friday, and charging a
-    weekend evening at the peak rate would overstate the bill.
+    it defaults to all seven. ``holiday_treatment`` optionally excludes,
+    includes, or selects only dates in the tariff's explicit holiday calendar.
+    The default preserves ordinary day matching, including every-day tariffs.
 
     ``demand_basis`` marks which demand-charge basis this block's *hours*
     also define, if any -- e.g. the same 4-9pm window priced for energy is
@@ -107,8 +110,17 @@ class TOUPeriod:
     priority: int = 0
     demand_basis: DemandChargeBasis | None = None
     billing_category: str | None = None
+    holiday_treatment: HolidayTreatment = HolidayTreatment.REGULAR
 
     def __post_init__(self) -> None:
+        try:
+            object.__setattr__(
+                self, "holiday_treatment", HolidayTreatment(self.holiday_treatment)
+            )
+        except ValueError as error:
+            raise TariffError(
+                f"Unknown holiday treatment: {self.holiday_treatment!r}."
+            ) from error
         if self.rate_per_kWh < 0:
             raise TariffError(
                 f"TOU rate for {self.name!r} must be nonnegative."
@@ -154,12 +166,14 @@ class TOUPeriod:
         months,
         seasons,
         weekdays=None,
+        holidays=None,
     ):
         """Boolean mask of intervals this block covers.
 
         ``weekdays`` is optional so a caller that predates day-of-week
         support keeps working; when it is omitted the block is treated as
         applying every day, which is what every all-week period means.
+        Holiday-aware periods require both weekdays and a calendar mask.
         """
 
         if self.start_hour == self.end_hour:
@@ -177,8 +191,17 @@ class TOUPeriod:
         if self.season is not None:
             mask = mask & (seasons == self.season.value)
 
-        if weekdays is not None and self.days != ALL_DAYS:
-            mask = mask & weekdays.isin(list(self.days))
+        if weekdays is not None:
+            try:
+                mask = mask & match_days(
+                    weekdays, self.days, self.holiday_treatment, holidays
+                )
+            except ValueError as error:
+                raise TariffError(str(error)) from error
+        elif self.holiday_treatment != HolidayTreatment.REGULAR:
+            raise TariffError(
+                "Holiday-aware TOU matching requires weekdays and a holiday calendar mask."
+            )
 
         return mask
 
@@ -329,6 +352,7 @@ class TariffDefinition:
     calendar_month_customer_charge: bool = False
     # Where specified, require this resolution rather than approximating demand.
     demand_interval_minutes: int | None = None
+    holiday_calendar: HolidayCalendar | None = None
 
     def validate_demand_interval(self, timestep_minutes: float) -> None:
         if self.demand_interval_minutes is not None and timestep_minutes != self.demand_interval_minutes:
@@ -338,6 +362,12 @@ class TariffDefinition:
             )
 
     def __post_init__(self) -> None:
+        try:
+            validate_holiday_calendar(
+                self.holiday_calendar, (p.holiday_treatment for p in self.tou_periods)
+            )
+        except ValueError as error:
+            raise TariffError(str(error)) from error
         if self.energy_components:
             import math
             names = [name for name, _ in self.energy_components]
@@ -432,6 +462,7 @@ class TariffDefinition:
         months = pd.Series(timestamps.month)
         weekdays = pd.Series(timestamps.weekday)
         seasons = self.season_for(timestamps)
+        holidays = self.holiday_calendar.mask(timestamps) if self.holiday_calendar else None
 
         rates = pd.Series(float("nan"), index=range(len(timestamps)))
 
@@ -442,7 +473,7 @@ class TariffDefinition:
             key=lambda p: p.priority,
             reverse=True,
         ):
-            covered = period.matches(hours, months, seasons, weekdays)
+            covered = period.matches(hours, months, seasons, weekdays, holidays)
             rates = rates.mask(covered & rates.isna(), period.rate_per_kWh)
 
         if rates.isna().any():
@@ -460,6 +491,7 @@ class TariffDefinition:
         months = pd.Series(timestamps.month)
         weekdays = pd.Series(timestamps.weekday)
         seasons = self.season_for(timestamps)
+        holidays = self.holiday_calendar.mask(timestamps) if self.holiday_calendar else None
 
         names = pd.Series(None, index=range(len(timestamps)), dtype=object)
 
@@ -468,7 +500,7 @@ class TariffDefinition:
             key=lambda p: p.priority,
             reverse=True,
         ):
-            covered = period.matches(hours, months, seasons, weekdays)
+            covered = period.matches(hours, months, seasons, weekdays, holidays)
             names = names.mask(covered & names.isna(), period.name)
 
         return names

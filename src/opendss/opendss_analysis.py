@@ -124,6 +124,7 @@ def add_replay_resources(
         battery: Battery | None,
         pv_capacity_kw: float = 30,
         pv_replay: PVReplayConfiguration | None = None,
+        residential_service=None,
 )-> None:
     """Add the PV system and battery used for dispatch replay"""
 
@@ -166,12 +167,11 @@ def add_replay_resources(
 
     add_ac_inverters(replay_inverters(pv_capacity_kw, pv_replay))
 
+    connection = (residential_service.storage_connection if residential_service is not None
+                  else "bus1=load_bus.1.2.3 phases=3 conn=wye kv=0.48")
     dss.Text.Command(
         "New Storage.Battery "
-        "bus1=load_bus.1.2.3 "
-        "phases=3 "
-        "conn=wye "
-        "kv=0.48 "
+        f"{connection} "
         f"kVA={battery_power_rating_kw} "
         f"kWrated={battery_power_rating_kw} "
         f"kWhrated={battery.capacity_kWh} "
@@ -192,6 +192,7 @@ def replay_dispatch_timeseries(
         battery: Battery | None,
         pv_capacity_kw: float,
         pv_replay: PVReplayConfiguration | None = None,
+        residential_service=None,
 )-> pd.DataFrame:
     """Replay an optimizer dispatch schedule through OpenDSS"""
 
@@ -226,22 +227,24 @@ def replay_dispatch_timeseries(
     if battery is None and ((dispatch_data.battery_net_injection_kw.abs() > 1e-6).any()
                             or (dispatch_data.battery_soc_kWh.abs() > 1e-6).any()):
         raise ValueError("A replay without storage must have zero battery power and energy.")
+    if residential_service is not None:
+        pv_replay = residential_service.pv_configuration(pv_capacity_kw, pv_replay, dispatch_data)
     inverters = replay_inverters(pv_capacity_kw, pv_replay)
     # Validate availability for the whole schedule before altering OpenDSS.
     points_by_interval = [inverter_setpoints(row, inverters, pv_replay)
                           for _, row in dispatch_data.iterrows()]
-    initial_load_kw = float(
-        dispatch_data.iloc[0]["load_kw"]
-    )
-
-    create_base_circuit(
-        load_kw=initial_load_kw,
-    )
+    # Initialize voltage bases at no load. An infeasible first scheduled load
+    # must be evaluated and reported in the interval loop, not abort setup.
+    if residential_service is None:
+        create_base_circuit(load_kw=0.0)
+    else:
+        residential_service.create_circuit()
 
     add_replay_resources(
         battery=battery,
         pv_capacity_kw=pv_capacity_kw,
         pv_replay=pv_replay,
+        residential_service=residential_service,
     )
 
     line_found = dss.Circuit.SetActiveElement(
@@ -272,12 +275,14 @@ def replay_dispatch_timeseries(
             dispatch_row,
             pv_rated_kw = pv_capacity_kw,
             pv_replay=pv_replay,
+            residential_service=residential_service,
             battery_capacity_kWh=(
                 battery.capacity_kWh if battery is not None else None
             ),
         )
 
-        measurements = replay_measurements(dispatch_row, points, battery_present=battery is not None)
+        measurements = replay_measurements(dispatch_row, points, battery_present=battery is not None,
+            load_elements=residential_service.load_elements if residential_service is not None else ("Building",))
         feeder_metrics = calculate_feeder_metrics()
 
         transformer_metrics = calculate_transformer_metrics()
@@ -294,6 +299,17 @@ def replay_dispatch_timeseries(
             )
 
         phase_voltages_pu = voltage_values[0::2]
+
+        residential_measurements = {}
+        transformer_loading_percent = transformer_metrics.loading_percent
+        if residential_service is not None:
+            residential_measurements = residential_service.measurements()
+            phase_voltages_pu = [residential_measurements["voltage_l1_neutral_v"] / 120,
+                                 residential_measurements["voltage_l2_neutral_v"] / 120,
+                                 residential_measurements["voltage_l1_l2_v"] / 240]
+            # Net primary kVA alone can hide an overloaded half-winding.
+            transformer_loading_percent = max(residential_measurements[key] for key in (
+                "transformer_primary_loading_percent", "transformer_l1_loading_percent", "transformer_l2_loading_percent"))
 
         voltage_assessment = assess_voltage_limits(
             phase_voltages_pu
@@ -312,7 +328,7 @@ def replay_dispatch_timeseries(
         )
 
         transformer_overload = (
-            transformer_metrics.loading_percent
+            transformer_loading_percent
             > 100.0
         )
 
@@ -346,6 +362,7 @@ def replay_dispatch_timeseries(
         replay_records.append(
             {
                 **measurements,
+                **residential_measurements,
                 "load_kw": float(
                 dispatch_row["load_kw"]
                 ),
@@ -379,7 +396,7 @@ def replay_dispatch_timeseries(
                     transformer_metrics.apparent_power_kva
                 ),
                 "transformer_loading_percent": (
-                    transformer_metrics.loading_percent
+                    transformer_loading_percent
                 ),
                 "transformer_real_loss_kw": (
                     transformer_metrics.real_loss_kw
@@ -430,6 +447,7 @@ def apply_dispatch_operating_point(
         battery_capacity_kWh: float | None = 20.0,
         zero_tolerance_kw: float = 1e-6,
         pv_replay: PVReplayConfiguration | None = None,
+        residential_service=None,
 )-> None:
     """Apply one optimizer dispatch row to the OpenDSS circuit"""
 
@@ -468,7 +486,10 @@ def apply_dispatch_operating_point(
                 or abs(battery_net_injection_kw) > zero_tolerance_kw):
             raise ValueError("Absent storage cannot have power or stored energy.")
         points = inverter_setpoints(dispatch_row, replay_inverters(pv_rated_kw, pv_replay), pv_replay)
-        dss.Text.Command(f"Edit Load.Building kW={load_kw} kvar={load_reactive_power(dispatch_row)}")
+        if residential_service is None:
+            dss.Text.Command(f"Edit Load.Building kW={load_kw} kvar={load_reactive_power(dispatch_row)}")
+        else:
+            residential_service.set_load(load_kw, load_reactive_power(dispatch_row))
         for item, available, p, q in points:
             dss.Text.Command(f"Edit Generator.{item.name} kW={p} kvar={q}")
         dss.Solution.Solve()
@@ -502,10 +523,10 @@ def apply_dispatch_operating_point(
         battery_state = "IDLING"
         battery_net_injection_kw = 0.0
 
-    dss.Text.Command(
-        "Edit Load.Building "
-        f"kW={load_kw} kvar={load_kvar}"
-    )
+    if residential_service is None:
+        dss.Text.Command(f"Edit Load.Building kW={load_kw} kvar={load_kvar}")
+    else:
+        residential_service.set_load(load_kw, load_kvar)
 
     for item, available, p, q in points:
         dss.Text.Command(f"Edit Generator.{item.name} kW={p} kvar={q}")

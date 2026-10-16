@@ -6,15 +6,15 @@ from . import electricity_maps_data as emd
 from . import gridstatus_data as gsd
 from ..dispatch import multi_day_analysis as mda
 from pathlib import Path
-from dotenv import load_dotenv, find_dotenv
+from ..credentials import SIGNAL_CREDENTIALS, load_credentials
 from ..dispatch.battery import Battery
 from ..billing import calculate_flat_demand_charge
 from ..dispatch.config import ExperimentConfig, to_optimizer_parameters
 from ..dispatch.results import ExperimentResult
 from .experiment_data import ExperimentData
-from dataclasses import replace
 from .timeseries_validation import merge_complete_time_series
-from .region_config import RegionConfig, get_region_config
+from .region_config import RegionConfig
+from .source_config import resolve_region_config as resolve_signal_region
 from ..opendss.opendss_handoff import create_opendss_handoff
 
 
@@ -23,15 +23,16 @@ def resolve_region_config(
 ) -> RegionConfig:
     """Apply any per-field overrides on top of the named region's defaults."""
 
-    return replace(
-        get_region_config(config.region),
+    return resolve_signal_region(
+        config.region,
+        market_provider=config.market_provider,
         market_location=config.market_location,
+        carbon_provider=config.carbon_provider,
         carbon_zone=config.electricity_maps_zone,
         timezone=config.timezone,
+        provider_options=config.provider_options,
     )
 
-
-env_path = find_dotenv()
 
 PROJECT_ROOT = (
     Path(__file__).resolve().parents[2]
@@ -42,16 +43,6 @@ RUNTIME_FILE = (
     / "data"
     / "runtime.json"
 )
-
-load_dotenv(
-    env_path, 
-    override=True,
-)
-
-api_key = os.getenv(
-    "ELECTRICITY_MAPS_API_KEY"
-)
-
 
 def save_runtime(runtime:float) -> None:
     RUNTIME_FILE.parent.mkdir(
@@ -1062,7 +1053,8 @@ def calculate_sensitivity_metrics(
     
 # Main--------------------------------------------------------------------------------------------
 def main() -> None:
-
+    load_credentials(names=SIGNAL_CREDENTIALS)
+    api_key = os.getenv("ELECTRICITY_MAPS_API_KEY")
     if api_key is None:
         raise ValueError(
             "Electricity Maps API key not loaded."

@@ -129,15 +129,17 @@ savings compare against **optimized PV without storage**, rather than assigning
 all curtailment-control benefits to the battery.
 
 The model is historical perfect foresight, not a forecast-driven controller.
-Each solve and throughput tie-break has a 60-second limit. An unproven primary
-cost optimum or failed physical/billing reconciliation rejects the case. If the
-secondary throughput solve errors or fails to prove optimality, independent
-copies of the proven primary solution are retained and fully reconciled. Results
-report `cost_optimum_proven`, `throughput_tie_break_status` and an explicit warning:
+Each stage has a 60-second budget for one cycle, increasing to at most 300 seconds
+for explicitly linked cycles. An unproven primary cost optimum or failed
+physical/billing reconciliation rejects the case. If the secondary throughput
+solve errors or fails to prove optimality, independent copies of the primary
+or a validated cost-neutral improvement are retained and fully reconciled. Results
+report `cost_optimum_proven`, `throughput_tie_break_status`, refinement metadata and an explicit warning:
 least cycling among equally priced schedules is not established. This preserves
 the original binary modes and SOC constraints; no relaxed schedule is substituted.
-Long, strongly negative-price blocks can be difficult for
-the MILP. Faster solve policies/operational controllers remain future work.
+Long, strongly negative-price blocks can be difficult for the MILP. The
+[cycling refinement](ComEd_Cycling_Refinement.md) documents the fixed-mode
+incumbent, global proof distinction and offline cached-input replay.
 
 The objective is the filed subtotal **before final line-cent rounding**, plus
 wear when selected. Every completed schedule is recalculated by the Decimal

@@ -35,6 +35,24 @@ PROVIDER_REGISTRY: dict[str, type[MarketProvider]] = {
 }
 
 
+def _provider_class(provider_name: str) -> type[MarketProvider]:
+    key = str(provider_name).strip().lower()
+    if key not in PROVIDER_REGISTRY:
+        raise UnsupportedProviderError(
+            f"Unsupported market provider {provider_name!r}. "
+            f"Supported providers: {sorted(PROVIDER_REGISTRY)}."
+        )
+    return PROVIDER_REGISTRY[key]
+
+
+def provider_configuration_schema(provider_name: str) -> tuple[frozenset, frozenset]:
+    """Describe non-secret configuration without constructing a client."""
+    adapter = _provider_class(provider_name)
+    options = frozenset(inspect.signature(adapter.__init__).parameters) - {"self", "api_key"}
+    required = getattr(adapter, "required_configuration_options", frozenset())
+    return options, required
+
+
 def get_provider(
     provider_name: str,
     **provider_options,
@@ -48,15 +66,7 @@ def get_provider(
     to branch on which provider they happen to be talking to.
     """
 
-    key = str(provider_name).strip().lower()
-
-    if key not in PROVIDER_REGISTRY:
-        raise UnsupportedProviderError(
-            f"Unsupported market provider {provider_name!r}. "
-            f"Supported providers: {sorted(PROVIDER_REGISTRY)}."
-        )
-
-    adapter_class = PROVIDER_REGISTRY[key]
+    adapter_class = _provider_class(provider_name)
 
     accepted = inspect.signature(adapter_class.__init__).parameters
 
@@ -94,5 +104,6 @@ __all__ = [
     "UnknownRegionError",
     "UnsupportedProviderError",
     "get_provider",
+    "provider_configuration_schema",
     "supported_providers",
 ]

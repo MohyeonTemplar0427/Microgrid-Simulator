@@ -79,6 +79,14 @@ through the API, and historical carbon may be fetched by the simulation worker.
 Do not give the independent worker OIDC secrets. Engine subprocesses also remove
 OIDC and MySQL credentials from their inherited environment.
 
+The independent runner remains environment-only by default. For local operation,
+it also accepts `--env-file /absolute/path/to/src/.env`; this loads only
+`ELECTRICITY_MAPS_API_KEY`, using the same allowlisted helper as the browser and
+desktop launchers. It does not load weather, market, authentication, database or
+hosting settings from that file. Process values (including empty values) take
+precedence. Missing credentials retain the existing explicit provider error;
+the worker does not discover a dotenv file or select a substitute data source.
+
 A new data directory pins current source automatically. For an existing directory,
 use `--refresh-engine` explicitly only after validation to adopt new engine code;
 previous queued jobs keep their saved snapshots. Do not automatically refresh

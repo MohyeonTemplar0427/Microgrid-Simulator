@@ -23,6 +23,7 @@ from .contract import DEFAULT_REQUEST, SCENARIOS
 from .runtime import Application, CapacityError, ROOT, StudyConflict
 from .auth import AuthenticationRequired, OIDCConfig, Sessions
 from .privacy import redact
+from ..credentials import DEFAULT_ENV_PATH, LOCAL_STUDY_CREDENTIALS, load_credentials
 
 MAX_BODY = 20 * 1024 * 1024
 STATIC = Path(__file__).with_name("static")
@@ -514,18 +515,13 @@ def main():
     parser = argparse.ArgumentParser(description="Run the local Microgrid Simulator web application.")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--data-dir", type=Path, default=ROOT / ".cache" / "local_web")
-    parser.add_argument("--env-file", type=Path, default=ROOT / "src" / ".env", help="Read only weather and Electricity Maps credentials from this local .env file.")
+    parser.add_argument("--env-file", type=Path, default=DEFAULT_ENV_PATH, help="Read only weather and Electricity Maps credentials from this local .env file.")
     parser.add_argument("--refresh-engine", action="store_true", help="Explicitly pin the current source and dependencies as a development snapshot.")
     parser.add_argument("--external-worker", action="store_true", help="Queue studies for a separately started src.local_web.runner process.")
     parser.add_argument("--hosted", action="store_true", help="Require OIDC and MICROGRID_PUBLIC_ORIGIN behind an HTTPS proxy on this host; API remains loopback-only.")
     parser.add_argument("--allow-guests", action="store_true", help="Allow temporary cookie-bound studies before sign-in; requires OIDC.")
     args = parser.parse_args()
-    if args.env_file.is_file():
-        from dotenv import dotenv_values
-        values = dotenv_values(args.env_file)
-        for key in ("NSRDB_API_KEY", "NSRDB_API_EMAIL", "ELECTRICITY_MAPS_API_KEY"):
-            if values.get(key):
-                os.environ.setdefault(key, values[key])
+    load_credentials(args.env_file, names=LOCAL_STUDY_CREDENTIALS)
     config = OIDCConfig.from_environment()
     if args.allow_guests and config is None:
         parser.error("--allow-guests requires MICROGRID_AUTH_MODE=oidc and OIDC configuration.")
