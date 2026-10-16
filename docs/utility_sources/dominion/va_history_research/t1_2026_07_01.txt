@@ -1,0 +1,51 @@
+PAGE 1
+Virginia Electric and Power Company               
+   
+ 
+Filed 06-18-26    Superseding Filing Effective For Usage On and After 09-01-25. 
+Electric - Virgina    This Filing Effective For Usage On and After 07-01-26. 
+ 
+RIDER T1 
+TRANSMISSION 
+ The following Virginia Electric and Power Company  filed Bundled Rate Schedules an d special 
+contracts approved by the State Corporation Commission pursuant to Virginia Code § 56-235.2 shall be 
+increased by the applicable cents per kilowatt-hour and/or dollars per kilowatt charge. 
+ 
+Rate Schedules Cents per Electricity Supply 
+kWh Charge 
+Dollars per kW 
+Demand Charge 
+Schedules 1, 1G, 1P, 1S, 1T, 1W, DP-R, 1EV, EV 1.1789¢/kWh $1.605/kW1 
+Schedules GS-1, DP-1 1.0069¢/kWh  
+Schedule GS-2 (Non-Demand Billing) 2.4751¢/kWh  
+Schedule GS-2 (Demand Billing)   $2.929/kW2 
+Schedule GS-2T    $3.526/kW3 
+Schedule DP-2 0.8588¢/kWh  
+Schedule GS-3 (Secondary)  $3.774/kW3 
+Schedule GS-3 EV (Non-Demand Billing) 1.7351¢/kWh  
+Schedule GS-3 EV (Demand Billing)  $2.013/kW2 
+Schedules MBR, SCR (Secondary) 0.0297¢/kWh6 $8.318/kW6 
+Schedule GS-4 (Primary)   $4.175/kW3 
+Schedules MBR, SCR (Primary) 0.0297¢/kWh6 $8.203/kW6 
+Schedule GS-4 (Transmission)   $4.129/kW3 
+Schedules MBR, SCR (Transmission) 0.0297¢/kWh6 $8.068/kW6 
+Schedule 8 (Primary)  $4.175/kW4 
+Schedule 8 (Transmission)  $4.129/kW4 
+Schedule 10 (Secondary)  $2.880/kW5 
+Schedule 10 (Primary and Transmission)   $3.201/kW5 
+Schedule 5  0.8648¢/kWh   
+Schedule 5C  0.9874¢/kWh   
+Schedule 5P  0.9874¢/kWh   
+Schedule 6  0.7023¢/kWh   
+Schedule 6TS  0.7073¢/kWh   
+Schedule 7  0.9859¢/kWh   
+Schedules 24, 25, 27, 28, 29  0.1771¢/kWh   
+                                   
+1Applied to kW of Demand only for Schedules 1, 1G, and 1S net-metering applications where the aggregate nameplate capacity of generation is sized above 20 kW of  
+  alternating current. Such installations will pay the Rider T1 energy charge or the Rider T1 demand charge, whichever is greater. 
+2Applied to kW of Demand 
+3Applied to kW of On-peak Electricity Supply Demand 
+4Applied to kW of Contract Supplementary - Standby Demand 
+5Applied to kW of Electricity Supply Peak Demand  
+6Applied to Customer’s NSPL (12CP Based) kW Demand and kWh Energy 
+  

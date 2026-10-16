@@ -45,7 +45,7 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-from pvlib import inverter, irradiance, pvsystem, solarposition, temperature
+from pvlib import irradiance, pvsystem, solarposition, temperature
 
 from ..timeseries.interval_table import IntervalIndex
 from ..timeseries.schema import TIMESTAMP
@@ -319,31 +319,6 @@ def ac_before_clipping_kw(
     ).clip(lower=0.0)
 
 
-def ac_power_kw(
-    dc_after_losses_kw: pd.Series,
-    *,
-    inverter_ac_capacity_kw: float,
-    nominal_inverter_efficiency: float,
-) -> pd.Series:
-    """Convert DC to AC and clip at the inverter's AC rating.
-
-    Equivalent to :func:`pvlib.inverter.pvwatts` with ``pdc0`` set to the
-    inverter's DC input limit, which places the clip exactly at the requested
-    AC rating.
-    """
-
-    unclipped = ac_before_clipping_kw(
-        dc_after_losses_kw,
-        inverter_ac_capacity_kw=inverter_ac_capacity_kw,
-        nominal_inverter_efficiency=nominal_inverter_efficiency,
-    )
-
-    return pd.Series(
-        unclipped.to_numpy().clip(0.0, max(inverter_ac_capacity_kw, 0.0)),
-        name=PV_AVAILABLE_KW,
-    )
-
-
 def simulate_pv_stages(
     interval_index: IntervalIndex,
     weather_frame: pd.DataFrame,
@@ -436,18 +411,4 @@ def simulate_pv_stages(
             PV_INVERTER_CLIPPING_KW: clipping_kw.to_numpy(),
             PV_AVAILABLE_KW: available_kw.to_numpy(),
         }
-    )
-
-
-def simulate_available_ac_kw(
-    interval_index: IntervalIndex,
-    weather_frame: pd.DataFrame,
-    **configuration,
-) -> pd.Series:
-    """Return only ``pv_available_kw``, for callers that want nothing else."""
-
-    stages = simulate_pv_stages(interval_index, weather_frame, **configuration)
-
-    return pd.Series(
-        stages[PV_AVAILABLE_KW].to_numpy(), name=PV_AVAILABLE_KW
     )

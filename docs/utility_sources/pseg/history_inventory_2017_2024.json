@@ -1,0 +1,871 @@
+{
+  "research_target": "2017-01-01 through latest verified2026-10-15",
+  "retrieved_date": "2026-10-15",
+  "status": "Official source indexes located. Pre2025rate values and full composite timelines not compiled or executable.",
+  "indexes": [
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/bpunjno16nov12018november302018",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "Effective 10/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electrictariff16usfeffective10012024.ashx"
+        },
+        {
+          "label": "Effective 09/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-nits-tec-effective-09012024.ashx"
+        },
+        {
+          "label": "Effective 08/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2024-ecip-effective-08012024.ashx"
+        },
+        {
+          "label": "Effective 07/15/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-meter-collar-effective-07152024.ashx"
+        },
+        {
+          "label": "Effective 07/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2023-gprc-effective-07012024.ashx"
+        },
+        {
+          "label": "Effective 06/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2024-bgs-auction-and-2023-iap-effective-06012024.ashx"
+        },
+        {
+          "label": "Effective 05/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-es-ii-effective-05012024.ashx"
+        },
+        {
+          "label": "Effective 04/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgs-nitstecsbcsprczec-effective-04012024.ashx"
+        },
+        {
+          "label": "03/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu-2023-tac-effective-03012024.ashx"
+        },
+        {
+          "label": "01/01/2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu-ecip-final-effective-01012024-w-rec-chg-updaterev.ashx"
+        },
+        {
+          "label": "10/01/2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu-sbcusf--lifeline-effective-10012023.ashx"
+        },
+        {
+          "label": "09/01/2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu-bgs-nitstec-effective-09012023.ashx"
+        },
+        {
+          "label": "08/01/2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu-tac-2022-effective-08012023.ashx"
+        },
+        {
+          "label": "06/01/2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu-bgs-auction--ev-tou-cip-gprc-effective-06012023.ashx"
+        },
+        {
+          "label": "05/01/2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu--es-ii-rate-changes-effective-05012023.ashx"
+        },
+        {
+          "label": "03/01/2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bpu--final-approval-ecip-effective-03012023.ashx"
+        },
+        {
+          "label": "02/01/2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgs-roe-exp-sprc-zec-effective-02012023.ashx"
+        },
+        {
+          "label": "10/01/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-sbc-usfrac-29-effective-10012022-rev.ashx"
+        },
+        {
+          "label": "Effective 09/01/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgstransmission-nitstec-effective-09012022-rev.ashx"
+        },
+        {
+          "label": "Effective 07/01/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2021-gprc-w-community-solar-energy-effective-07012022-rev.ashx"
+        },
+        {
+          "label": "Effective 06/15/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2021-tac--gprc-w-susi-cip-effective-06152022-rev.ashx"
+        },
+        {
+          "label": "Effective 06/01/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2022-bgs-auction-es-ii-effective-06012022.ashx"
+        },
+        {
+          "label": "Effective 05/01/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2022-zec-refund-effective-05012022.ashx"
+        },
+        {
+          "label": "Effective 04/01/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgs-nitstec-hts-mason-sub-effective-04012022.ashx"
+        },
+        {
+          "label": "Effective 02/01/2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgs-nitstec-sprc-effective-02012022.ashx"
+        },
+        {
+          "label": "Effective 12/15/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgsferc-680--715-credit-removal-effective-12152021r.ashx"
+        },
+        {
+          "label": "Effective 10/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-sbcusf-effective-10012021.ashx"
+        },
+        {
+          "label": "Effective 09/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgstec-tac-ngc-sbc-effective-09012021.ashx"
+        },
+        {
+          "label": "Effective 08/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-sbc--rac-28-effective-08012021.ashx"
+        },
+        {
+          "label": "Effective 07/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgs-nitstec--gprc-effective-07012021.ashx"
+        },
+        {
+          "label": "Effective 06/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-2021-bgs-auction--rec-chg-qtrly-effective-06012021-v2.ashx"
+        },
+        {
+          "label": "Effective 05/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-es-ii-effective-05012021.ashx"
+        },
+        {
+          "label": "Effective 02/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgsnit--tec-gprc-sprc-cefeves-special-provisions-effective-02012021.ashx"
+        },
+        {
+          "label": "Effective 01/01/2021",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-zec-refund-01012021.ashx"
+        },
+        {
+          "label": "Effective 12/15/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgstec-ferc-680--715-12152020.ashx"
+        },
+        {
+          "label": "Effective 12/01/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-ngcst-lawrence-to-zero-12012020.ashx"
+        },
+        {
+          "label": "Effective 10/01/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-sbc--usflifeline--rac-27-gprc--cefee-10012020.ashx"
+        },
+        {
+          "label": "Effective 09/01/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgssilver-run-nips-co--joint-tec-gprctrec-09012020.ashx"
+        },
+        {
+          "label": "Effective 07/16/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-tac-07162020.ashx"
+        },
+        {
+          "label": "Effective 06/01/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-bgsrscp--ciep-2020-auction-ngc-st-lawrence-06012020.ashx"
+        },
+        {
+          "label": "Effective 02/01/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-gprc-sbc-tac-bgs-nitstec-02012020.ashx"
+        },
+        {
+          "label": "Effective 01/01/2020",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-ngc-sprc-010120.ashx"
+        },
+        {
+          "label": "Effective 10/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-mm-sbc-100119.ashx"
+        },
+        {
+          "label": "Effective 09/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16-sbc-bgs-090119.ashx"
+        },
+        {
+          "label": "Effective 07/15/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_0715.ashx"
+        },
+        {
+          "label": "Effective 07/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_july1.ashx"
+        },
+        {
+          "label": "Effective 06/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_june1.ashx"
+        },
+        {
+          "label": "Effective 05/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_may12019.ashx"
+        },
+        {
+          "label": "Effective 04/18/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_apr18.ashx"
+        },
+        {
+          "label": "Effective 04/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_apr.ashx"
+        },
+        {
+          "label": "Effective 03/15/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_-march152019.ashx"
+        },
+        {
+          "label": "Effective 02/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_feb19.ashx"
+        },
+        {
+          "label": "Effective 01/01/2019",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-16_jan19.ashx"
+        },
+        {
+          "label": "Effective 12/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_dec18.ashx"
+        },
+        {
+          "label": "ORIGINAL Effective 11/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric-tariff-16_nov12018.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2017monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2018monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2018/2018e_81_16.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/81oct.ashx"
+        },
+        {
+          "label": "Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2018/2018e_84_16.ashx"
+        },
+        {
+          "label": "Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2018/2018e_81_15.ashx"
+        },
+        {
+          "label": "Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2018/2018e_84_15.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2019monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2019/81_annual.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/81oct.ashx"
+        },
+        {
+          "label": "Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2019/84_annual.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2020monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2020/81_annual-2020.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/81oct.ashx"
+        },
+        {
+          "label": "Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/2020/84_annual-2020.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2021monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_annual-2021.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets-2018/81oct.ashx"
+        },
+        {
+          "label": "Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/84_annual-2021.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2022monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets/2021/84_jan-2021.ashx"
+        },
+        {
+          "label": "Thirty-Seventh Revised Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_dec-2022-qtr.ashx"
+        },
+        {
+          "label": "Thirty-Seventh Revised Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/84_dec-2022-qtr.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets/2021/84_jan-2021.ashx"
+        },
+        {
+          "label": "Download all sheets",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_dec-2022-qtr.ashx"
+        },
+        {
+          "label": "January 1, 2022 through February 28, 2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_dec-2021-qtr.ashx"
+        },
+        {
+          "label": "March 1, 2022 through May 31, 2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_mar-2022-qtr.ashx"
+        },
+        {
+          "label": "June 1, 2022 through August 31, 2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_jun-2022-qtr.ashx"
+        },
+        {
+          "label": "September 1, 2022 through November 30, 2022",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_sep-2022-qtr.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2023monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets/2021/84_jan-2021.ashx"
+        },
+        {
+          "label": "Forty-First Revised Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_dec-2023-qtr.ashx"
+        },
+        {
+          "label": "Forty-First Revised Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/84_dec-2023-qtr.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets/2021/84_jan-2021.ashx"
+        },
+        {
+          "label": "Download all sheets",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_dec-2023-qtr.ashx"
+        },
+        {
+          "label": "December 1, 2022 through February 28, 2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_dec-2022-qtr.ashx"
+        },
+        {
+          "label": "March 1, 2023 through May 31, 2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_mar-2023-qtr.ashx"
+        },
+        {
+          "label": "June 1, 2023 through August 31, 2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_jun-2023-qtr.ashx"
+        },
+        {
+          "label": "September 1, 2023 through November 30, 2023",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_sep-2023-qtr.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/2024monthlyelectricreconciliationcharges",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Electric Service Map",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/psegserviceareamm/electric-service-map.ashx"
+        },
+        {
+          "label": "Current Electric Tariff B.P.U.N.J. No.17",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric-tariff-17-cefev-iap-nits-usf-effective-20261001.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets/2021/84_jan-2021.ashx"
+        },
+        {
+          "label": "First Revised\u00a0Sheet No. 81",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/12-01-2024-electric-sheet-81.ashx"
+        },
+        {
+          "label": "First Revised Sheet No. 84",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/12-01-2024-electric-sheet-84.ashx"
+        },
+        {
+          "label": "",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/monthly-electric-tariff-sheets/2021/84_jan-2021.ashx"
+        },
+        {
+          "label": "Download all sheets",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/12-01-2024-electric-sheets-81-84.ashx"
+        },
+        {
+          "label": "October 15, 2024 through November 30, 2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_sep-2024-qtr-postrc.ashx"
+        },
+        {
+          "label": "December 1, 2023 through February 29, 2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_dec-2023-qtr.ashx"
+        },
+        {
+          "label": "March 1, 2024 through May 31, 2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_mar-2024-qtr.ashx"
+        },
+        {
+          "label": "June 1, 2024 through August 31, 2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_jun_2024_qtr.ashx"
+        },
+        {
+          "label": "September 1, 2024 through October 14, 2024",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/81_84_sep_2024_qtr.ashx"
+        }
+      ]
+    },
+    {
+      "index_url": "https://nj.pseg.com/aboutpseg/regulatorypage/electrictariffs/bpunjno15june72010september302017",
+      "http_status": 200,
+      "links": [
+        {
+          "label": "Effective 10/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric_tariffoct.ashx"
+        },
+        {
+          "label": "Effective 09/08/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric_tariff_sep8.ashx"
+        },
+        {
+          "label": "Effective 09/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric_tariff_sept1.ashx"
+        },
+        {
+          "label": "Effective 07/03/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/current-electric-tariff/electric_2018_july3.ashx"
+        },
+        {
+          "label": "Effective 06/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric_tariff_2018_jun---2.ashx"
+        },
+        {
+          "label": "Effective 04/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2electrictariffs/electric_tariff_apr01_2018.ashx"
+        },
+        {
+          "label": "Effective 03/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric_2018_mar1.ashx"
+        },
+        {
+          "label": "Effective 2/10/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/electric-prior-tariffs/electric_2018_feb10.ashx"
+        },
+        {
+          "label": "Effective 01/01/2018",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2018_jan1.ashx"
+        },
+        {
+          "label": "Effective 10/01/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_oct1.ashx"
+        },
+        {
+          "label": "Effective 09/01/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_sept1.ashx"
+        },
+        {
+          "label": "Effective 07/10/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_jul10.ashx"
+        },
+        {
+          "label": "Effective 06/10/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_jun10.ashx"
+        },
+        {
+          "label": "Effective 06/01/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_jun1.ashx"
+        },
+        {
+          "label": "Effective 05/01/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_may1.ashx"
+        },
+        {
+          "label": "Effective 04/04/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_apr4.ashx"
+        },
+        {
+          "label": "Effective 03/06/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_mar6.ashx"
+        },
+        {
+          "label": "Effective 03/01/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_mar1.ashx"
+        },
+        {
+          "label": "Effective 02/01/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_feb1.ashx"
+        },
+        {
+          "label": "Effective 01/01/2017",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2017_jan1.ashx"
+        },
+        {
+          "label": "Effective 12/01/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_dec1.ashx"
+        },
+        {
+          "label": "Effective 10/01/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_oct1.ashx"
+        },
+        {
+          "label": "Effective 09/01/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_sept1.ashx"
+        },
+        {
+          "label": "Effective 06/24/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_jun24r.ashx"
+        },
+        {
+          "label": "Effective 06/01/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_jun1.ashx"
+        },
+        {
+          "label": "Effective 05/07/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_may7.ashx"
+        },
+        {
+          "label": "Effective 03/01/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_mar1.ashx"
+        },
+        {
+          "label": "Effective 02/01/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_feb1.ashx"
+        },
+        {
+          "label": "Effective 01/01/2016",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2016_jan1.ashx"
+        },
+        {
+          "label": "Effective 12/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_dec1.ashx"
+        },
+        {
+          "label": "Effective 10/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_oct1.ashx"
+        },
+        {
+          "label": "Effective 09/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_sept1.ashx"
+        },
+        {
+          "label": "Effective 08/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_aug1.ashx"
+        },
+        {
+          "label": "Effective 06/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_jun1.ashx"
+        },
+        {
+          "label": "Effective 05/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_may1.ashx"
+        },
+        {
+          "label": "Effective 03/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_mar1.ashx"
+        },
+        {
+          "label": "Effective 01/01/2015",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/electric_2015_jan1.ashx"
+        },
+        {
+          "label": "Effective 10/01/2014",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2014_oct1.ashx"
+        },
+        {
+          "label": "Effective 09/01/2014",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2014_sep1.ashx"
+        },
+        {
+          "label": "Effective 07/01/2014",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2014_jul1.ashx"
+        },
+        {
+          "label": "Effective 06/01/2014",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2014_jun1.ashx"
+        },
+        {
+          "label": "Effective 03/03/2014",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2014_mar3.ashx"
+        },
+        {
+          "label": "Effective 01/01/2014",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2014_jan1.ashx"
+        },
+        {
+          "label": "Effective 10/01/2013",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2013_oct1.ashx"
+        },
+        {
+          "label": "Effective 09/01/2013",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2013_sept1.ashx"
+        },
+        {
+          "label": "Effective 06/01/2013",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2013_june1.ashx"
+        },
+        {
+          "label": "Effective 02/01/2013",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2013_feb1.ashx"
+        },
+        {
+          "label": "Effective 01/01/2013",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2013_jan1.ashx"
+        },
+        {
+          "label": "Effective 10/25/2012",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2012_october25.ashx"
+        },
+        {
+          "label": "Effective 10/01/2012",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2012_october1.ashx"
+        },
+        {
+          "label": "Effective 08/01/2012",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2012_august1.ashx"
+        },
+        {
+          "label": "Effective 06/07/2012",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2012_june7.ashx"
+        },
+        {
+          "label": "Effective 06/01/2012",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2012_june1.ashx"
+        },
+        {
+          "label": "Effective 01/19/2012",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2012_jan19.ashx"
+        },
+        {
+          "label": "Effective 01/01/2012",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2012_jan1.ashx"
+        },
+        {
+          "label": "Effective 11/01/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_nov1.ashx"
+        },
+        {
+          "label": "Effective 10/01/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_oct1.ashx"
+        },
+        {
+          "label": "Effective 7/24/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_july24.ashx"
+        },
+        {
+          "label": "Effective 7/1/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_july1.ashx"
+        },
+        {
+          "label": "Effective 6/1/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_june1.ashx"
+        },
+        {
+          "label": "Effective 4/1/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_april1.ashx"
+        },
+        {
+          "label": "Effective 3/1/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_march1.ashx"
+        },
+        {
+          "label": "Effective 2/9/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_feb9.ashx"
+        },
+        {
+          "label": "Effective 1/1/2011",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2011_jan1.ashx"
+        },
+        {
+          "label": "Effective 11/1/2010",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2010_nov1.ashx"
+        },
+        {
+          "label": "Effective 9/1/2010",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2010_sept1.ashx"
+        },
+        {
+          "label": "Effective 8/9/2010",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2010_aug9.ashx"
+        },
+        {
+          "label": "Effective 6/23/2010",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2010_june23.ashx"
+        },
+        {
+          "label": "ORIGINAL Effective 6/7/2010",
+          "url": "https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-2-2bpunjno15june7-2010-september30-2017/etariff_2010_june07.ashx"
+        }
+      ]
+    }
+  ]
+}

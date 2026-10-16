@@ -116,6 +116,13 @@ def test_sce_solar_form_submission_reaches_saved_worker_result(
             assert saved['status'] == 'completed', saved.get('error')
             assert saved['request']['account'] == payload['account']
             assert saved['request']['battery'] is None
+            validation=saved['result']['ac_validation']
+            assert validation['status']=='completed'
+            assert {s['scenario'] for s in validation['scenarios']}=={'grid_only','pv_only'}
+            assert all(s['checked_intervals']==96 for s in validation['scenarios'])
+            ac=call('/api/studies/'+job['id']+'/tables/ac-pv_only')[1]
+            assert ac['total']==96
+            assert 'scheduled_grid_export_kw' in ac['columns']
             assert any(t['id'] == 'solar_credit_ledger'
                        for t in saved['result']['tables'])
             ledger = call('/api/studies/' + job['id']
@@ -177,6 +184,11 @@ def test_bwp_solar_form_submission_reaches_saved_worker_result(tmp_path):
             saved = until(lambda: call('/api/studies/' + job['id'])[1],
                           lambda value: value['status'] in ('completed', 'failed'))
             assert saved['status'] == 'completed', saved.get('error')
+            validation=saved['result']['ac_validation']
+            assert validation['status']=='completed'
+            assert {s['scenario'] for s in validation['scenarios']}=={'grid_only','pv_only'}
+            assert all(s['checked_intervals']==25*96 for s in validation['scenarios'])
+            assert 'pv_actual_kw' in call('/api/studies/'+job['id']+'/tables/ac-pv_only')[1]['columns']
             ledger = call('/api/studies/' + job['id']
                           + '/tables/solar_credit_ledger')[1]
             rows = [dict(zip(ledger['columns'], row)) for row in ledger['data']]

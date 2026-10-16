@@ -1,0 +1,105 @@
+{
+  "research_target_calendar_years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "sources": [
+    {
+      "plan": "1",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-1.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "2cdf263c0f3c65d347efcb784dbed00c4519e2f8a1f12755b53a0cb938cb1bdf",
+      "pdf_bytes": 75831,
+      "text_file": "1.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    },
+    {
+      "plan": "1g",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-1g.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "626a242783e6c63644a5368dbb09d3ebb5def49111f33dca554a2fc97676fbf2",
+      "pdf_bytes": 120709,
+      "text_file": "1g.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    },
+    {
+      "plan": "1s",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-1s.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "76a5889f8119f13524ad00fffb94e57e107bdb501e21f1e598d95379587bd9dc",
+      "pdf_bytes": 81771,
+      "text_file": "1s.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    },
+    {
+      "plan": "gs1",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-gs1.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "19f4532e6583d425c46a92772e05881b19e3e2ea98ded57c200fc71881e3e75f",
+      "pdf_bytes": 88047,
+      "text_file": "gs1.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    },
+    {
+      "plan": "gs2",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-gs2.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "191e5d9b8696ed00bf3702dc780a1f6288b83e2666b134546b442f69ae60c9d5",
+      "pdf_bytes": 131946,
+      "text_file": "gs2.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    },
+    {
+      "plan": "gs2t",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-gs2t.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "3502adc9323c397af912dd94b4651373b0e41e2e9c3e35ab1971389fae8bbc6a",
+      "pdf_bytes": 86705,
+      "text_file": "gs2t.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    },
+    {
+      "plan": "gs3",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-gs3.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "380a8a477762db9738aa59de98874ef8cfac0ad0a4a5c9f3ca35b240e20e3ae1",
+      "pdf_bytes": 111544,
+      "text_file": "gs3.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    },
+    {
+      "plan": "gs4",
+      "url": "https://www.dominionenergy.com/-/media/content/renewable-energy-programs/pdfs/virginia/net-metering/schedule-gs4.pdf",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "902cd2abc8df711a6e7158b9287839d255aebbc834e6a38371340ed302c2e205",
+      "pdf_bytes": 125763,
+      "text_file": "gs4.txt",
+      "status": "verified historical base only; not a complete composite bill",
+      "effective_start": "2025-01-01",
+      "historical_rule_note": "Preserve filed sheet text; superseded by dated2026base, and 2025rider history still incomplete."
+    }
+  ],
+  "not_executable": "No2025billing claims are made without every applicable rider, deferred-fuel and tax version."
+}

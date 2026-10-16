@@ -242,6 +242,8 @@ def execute(directory, r):
             "battery_throughput_kwh": result["throughput_refinement"]["selected_throughput_kwh"],
             "throughput_reduction_kwh": result["throughput_refinement"]["throughput_reduction_kwh"],
             "throughput_optimality_gap_kwh": result["throughput_refinement"]["optimality_gap_kwh"],
+            "throughput_lower_bound_kwh": result["throughput_refinement"].get("global_lower_bound_kwh"),
+            "throughput_proof_method": result["throughput_refinement"].get("proof_method", "not_applicable"),
             "all_intervals_feasible": bool(ac[key].feasible.all()) if supported_ac else None})
         base_lines = {(x.get("cycle_index"), x["name"]): x["amount_usd"] for x in results["grid_only"]["bill"]["lines"]}
         items.extend({**line, "scenario": key, "subtotal_savings_vs_grid_usd": base_lines[(line.get("cycle_index"), line["name"])]-line["amount_usd"],

@@ -1,0 +1,804 @@
+PAGE 1
+PUR-2023-00172Case Number (if already assigned)
+Case Name (if known)
+J
+TAADocument Type
+Document Description Summary
+Total Number of Pages 17
+31239Submission ID
+7/24/2024 4:32:29PMeFiling Date Stamp
+&
+Enclosed is the Table of Contents tariff revised to 
+reflect the August 1, 2024 effective date for the 
+Rider U and the Deferred Fuel Cost Charge tariffs. 
+Also enclosed is the revised Exhibit of
+Applicable Riders tariff reflecting the August 1,2024 
+effective date for the Rider U tariff.
+Application of Virginia Electric and Power Company
+For revision of a rate adjustment clause: Rider U, new 
+underground distribution facilities,
+for the rate year commencing August 1, 2024
+Virginia State Corporation Commission 
+eFiling CASE Document Cover Sheet
+r-
+
+
+PAGE 2
+BY ELECTRONIC FILING
+July 24, 2024
+Dear Mr. Logan:
+Sincerely,
+/s/Lisa R. Crabtree
+Enclosures
+cc:
+Lisa R. Crabtree 
+Senior Counsel
+Pursuant to the State Corporation Commission of Virginia’s (“Commission”) July 3, 2024 Final 
+Order in the above-referenced case, Virginia Electric and Power Company filed on July 11,2024 
+a Rider LI - Strategic Underground Program (“Rider U”) tariff effective for usage on and after 
+August 1,2024. On July 12,2024, the Commission Staff accepted the Rider U tariff.
+Dominion Energy Services, Inc.
+Law Department
+120 Tredegar Street, Richmond, VA 23219
+DominionEnergy.com
+William H. Chambliss, Esq.
+Kimberly B. Pate
+John A. Ellis
+Lisa R. Crabtree
+Senior Counsel
+Direct: (804) 819-2612; Facsimile: (804)819-2183
+Email: iisa.r.crabtree@dominionenergy.com
+Enclosed is the Table of Contents tariff revised to reflect the August 1, 2024 effective date for the 
+Rider U and the Deferred Fuel Cost Charge tariffs. Also enclosed is the revised Exhibit of 
+Applicable Riders tariff reflecting the August 1,2024 effective date for the Rider U tariff.
+If you have any questions, please contact Michele Grant at (804) 513-8623.
+Mr. Bernard Logan, Clerk
+Document Control Center
+State Corporation Commission of Virginia
+1300 East Main Street
+Richmond, Virginia 23219
+Application of Virginia Electric and Power Company
+For revision of a rate adjustment clause: Rider U, new underground distribution facilities, 
+for the rate year commencing August 1, 2024 
+Case No. PUR-2023-00172
+Dominion
+Energy-
+
+
+PAGE 3
+Table of Contents 
+(Clean and Redline Versions)
+■a 
+h
+ss
+
+
+PAGE 4
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+L.
+II. 01-19-16
+IX.
+X.
+XI.
+XU.
+01-25-14
+XV. 01-25-14
+XXIV.
+XXV.
+XXVI. 10-15-20
+Rate Schedules
+Schedule 1 Residential Service For Usage On and After 01-01-24
+Schedule 1G - Residential Service (Experimental) For Usage On and After 01-01-24
+Schedule 1G - Residential Service (Experimental) Rebate Program For Usage On and After 01-29-21
+Schedule IP - Residential Service-(Closed) For Usage On and After 01-01-24
+Schedule IS Residential Service For Usage On and After 01-01-24
+Schedule IT Residential Service For Usage On and After 01-01-24
+Schedule 1W For Usage On and After 01-01-24
+Schedule DP-R - Residential Service (Experimental) - (Closed) For Usage On and After 01-01-24
+Electric-Virginia Revised 08-01-24
+1
+&
+XIII.
+XIV.
+- Time-Controlled Storage Water
+Heating Residential
+07-01-18
+07-01-18
+07-01-18
+07-01-18
+01-01-24
+02-01-02
+VII.
+VIII.
+111.
+IV.
+v.
+VI.
+Introduction
+Definitions
+07-01-18
+01-01-22
+01-19-16
+01-01-24
+01-01-22
+01-25-14
+Effective Date
+04-30-87
+Application for Electric Service
+Inspection
+Service Connections
+Location of Company’s Equipment
+Characteristics of Electric Delivery Service
+Voltage
+Selection of Schedule
+Deposits
+Billing and Re-billing of Metered and Unmetered Services
+Master Metering and Submetering
+Payments
+Use of Electricity by Customers
+Customer's Responsibility
+Right of Access
+Discontinuance of Electric Service
+Reconnection of Electric Service
+Interruptions of Electric Service
+Testing Facilities and Metering Equipment
+Periodic Tests and Checks
+Request Tests
+Electric Line Extensions and Installations
+Temporary Service
+Retail Access
+Net Metering Customers and Small Agricultural Generators
+Electric Generator Interconnections Other Than Net Metering
+Agreement for Overhead Electric Line Extension - Form G Plan 
+Agreement for Electric Service
+Agreement for the Installation of Underground Distribution Facilities on Private Property 
+Customer's Private Underground Service Connection Agreement
+Communities Served in Virginia
+Terms and Conditions for the Provision of Electric Service
+01-01-22
+07-01-24
+04-01-19
+02-01-02
+XVI.
+XV II. 
+XVIII.
+XIX.
+XX.
+XXL 
+XXII.
+XXIII.
+07-01-24
+01-01-24
+01-19-16
+01-01-22
+01-25-14
+04-01-19
+04-01-24
+01-01-24
+01-25-14
+01-25-14
+01-25-14
+^5
+ISS!
+
+
+PAGE 5
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 1EV For Usage On and After 01-01-24
+For Usage On and After 01-01-24Schedule EV
+For Usage On and After 01-01-23Schedule EVCF Electric Vehicle Charging Fleet Service
+For Usage On and After 01-01-23Schedule EVCL2 Electric Vehicle Level 2 Charging Service
+For Usage On and After 09-01-22Electric Vehicle Residential Charging ServiceSchedule EVCR
+For Usage On and After 07-12-24Electric Vehicle Direct Current Fast Charging Pricing TariffSchedule EVFCP
+For Usage On and After 07-12-24Electric Vehicle Level Two Pricing TariffSchedule EVL2P
+For Usage On and After 01-01-24Schedule 5 Small General Service - (Closed)
+For Usage On and After 01-01-24Schedule 5C Church and Synagogue Service
+For Usage On and After 01-01-24Church, Synagogue and Charitable Institution ServiceSchedule 5P
+For Usage On and After01-01-24Schedule 6 Large General Service - (Closed)
+For Usage On and After 01-01-24Schedule GS-1 Small General Service
+For Usage On and After 01-01 -24Small General Service (Experimental) - (Closed)Schedule DP-1
+For Usage On and After 01-01-24Schedule GS-2 Intermediate General Service
+For Usage On and After 01-01-24Schedule GS-2T Intermediate General Service - Time of Usage
+For Usage On and After 01-01-24Schedule DP-2 Intermediate General Service (Experimental) - (Closed)
+For Usage On and After 01-01-24Schedule GS-3 Large General Service Secondary Voltage
+For Usage On and After01-01-24Schedule GS-4 Large General Service Primary Voltage
+For Usage On and After 01-01-24Large General Service Market-Based Rate (Experimental)Schedule MBR
+For Usage On and After 01-01-24Schedule SCR Large General Service
+For Usage On and After 01-01-24Schedule 6TS Thermal Storage
+For Usage On and After 01-01 -24Schedule 7 Electric Heating - (Closed)
+Schedule 8 For Usage On and After 01-01-24
+For Usage On and After 01-01-24Schedule 10 Large General Service
+Schedule 19 For Usage On and After 01-01 -24
+For Usage On and After 01-01-23Schedule RF
+For Usage On and After 01-01-24Schedule SP
+For Usage On and After 01-01-24Outdoor Lighting Service Solid State Outdoor LightingSchedule 24
+For Usage On and After 01-01-24Privately Owned Outdoor LightingSchedule 25
+Revised 08-01-24Electric-Virginia
+2
+Supplementary, Maintenance, Standby
+Service for Customers with Power Plants
+Residential Service With Electric Vehicle
+Charging (Experimental) - (Closed)
+Residential Electric Vehicle Charging (Experimental) - (Closed)
+Power Purchases From Cogeneration and
+Small Power Production Qualifying Facilities
+Environmental Attributes Purchase From Renewable 
+Energy Facilities (Experimental)
+Solar Purchase (Experimental) - (Closed)
+@8
+
+
+PAGE 6
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 27 For Usage On and After 01-01-24
+Schedule 28 For Usage On and After 01-01-24
+12-18-85
+For Usage On and After 01-01-24Schedule 29
+Shared Solar Rate Schedules
+Schedule Multi-Family Shared Solar For Production On and After 03-01 -24
+Schedule SO-MSS - Subscriber Organization - Multi-Family Shared Solar For Production On and After 01-01-24
+Schedule SS-Shared Solar For Production On and After 03-01-24
+Schedule SO-SS - Subscriber Organization - Shared Solar For Production On and After 01-01-24
+Fuel Deferral Schedules
+Pro-Rata Share of Fuel Deferral Charges For Usage On and After 12-01-23
+Deferred Fuel Cost Charge For Usage On and After 08-01-24
+Riders
+Exhibit of Applicable Riders 08-01-24
+Rider A Fuel Charge Rider
+Rider B Biomass Conversions For Usage On and A tier 04-01-24
+Rider BW Brunswick County Power Station For Usage On and After 09-01 -23
+Rider CIA Peak-Shaving Increment Rider For Usage On and After 09-01-23
+Rider C2A Energy Efficiency Increment Rider For Usage On and After 09-01-23
+Rider C3A Energy Efficiency Increment Rider For Usage On and After 09-01-23
+Rider C4A Energy Efficiency Increment Rider For Usage On and After 09-01-23
+Rider CCR Closure of Coal Combustion Residuals Impoundments For Usage On and After 12-01-23
+Rider CE Clean Energy Projects and Power Purchase Agreements For Usage On and After 05-01-24
+Rider CRC For Usage On and After 05-01-19
+Rider D Tax Effect Recovery 04-01-24
+Rider E Environmental Projects For Usage On and After 11-01-23
+Rider EDR Economic Development Rate 01-01-22
+Rider F Receiversor Trustees 03-01-54
+Rider G Renewable Energy Program For Bills Rendered On and After 02-01-22
+Electric-Virginia Revised 08-01-24
+2
+- Outdoor Lighting Service
+High Pressure Sodium Vapor 
+(Closed to New Installations)
+For Usage On and After 07-01-24 
+On An Interim Basis
+Manufacturing and Commercial Competitiveness 
+Retention Credit Rider
+- Outdoor Lighting Service
+(Closed to New Installations)
+- Customer Charges for Outdoor Lighting Served on
+Schedule 28 (Not Filed with Virginia Commission)
+- Privately Owned Outdoor Lighting
+(Wl
+
+
+PAGE 7
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+Riders (Continued) Effective Date
+Rider GT Grid Transformation For Usage On and After 06-01-24
+For Usage On and After 04-01-24Rider GV Greensville Power Station
+Rider OSW Coastal Virginia Offshore Wind For Usage On and After 09-01-23
+Universal Service Fee For Usage On and After 12-01-23Rider PIPP
+Rural Broadband Pilot Projects For Usage On and After 05-01-24Rider RBB
+Rider REC Renewable Energy Certificate Purchase Program For Bills Rendered On and After 01-01-22
+Rider RGG1 Regional Greenhouse Gas Initiative For Usage On and After 07-12-24
+For Usage On and After 09-01-23Rider RPS Renewable Energy Portfolio Standard
+Rider SNA Surry and North Anna Nuclear Life Extension Program For Usage On and After 09-01-23
+For Usage On and After 09-01-23Rider T1 Transmission
+Rider TRG 100 Percent Total Renewable Generation 07-12-24
+For Usage On and After 08-01-24Rider U Strategic Underground Program
+Rider US-2 US-2 Solar Projects For Usage On and After 09-01-23
+Rider US-3 US-3 Solar Projects For Usage On and After 06-01-24
+US-4 Solar Projects For Usage On and After 06-01-24Rider US-4
+ForUsage On and After 01-01-23Rider VCS Virginia Community Solar Pilot Program
+Revised 08-01-24Electric-Virginia
+2
+@3
+©
+
+
+PAGE 8
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+07-01-18
+1.
+II.
+VI.
+VII.
+XI.
+XVII.
+XVIII.
+XIX.
+XX.
+XXIV. 01-01-22
+07-01-24
+07-01-18
+07-01-18
+Rate Schedules
+For Usage On and After 01-01-24Schedule 1 Residential Service
+Schedule 1G Residential Service (Experimental) For Usage On and After 01-01-24
+Schedule 1G - Residential Service (Experimental) Rebate Program For Usage On and After 01-29-21
+For Usage On and After 01-01-24Schedule IP - Residential Service - (Closed)
+Schedule IS - Residential Service For Usage On and After01-01-24
+For Usage On and After 01-01-24Schedule IT Residential Service
+Schedule 1W For Usage On and After 01-01-24
+Schedule DP-R - Residential Service (Experimental) - (Closed) For Usage On and After 01 -01 -24
+Electric-Virginia Revised 07-1-2-2408-01-24
+1
+- Time-Controlled Storage Water
+Heating Residential
+01-25-14
+01-25-14
+XXV.
+XXVI.
+XII.
+XIII.
+XIV.
+XV.
+XVI.
+111.
+IV.
+V.
+VIII.
+IX.
+X.
+04-01-19
+04-01-24
+01-01-24
+Introduction
+Definitions
+Application for Electric Service
+Inspection
+Service Connections
+Location of Company's Equipment
+Characteristics of Electric Delivery Service
+Voltage
+Selection of Schedule
+Deposits
+Billing and Re-billing of Metered and Unmetered Services
+Master Metering and Submetering
+Payments
+Use of Electricity by Customers
+Customer's Responsibility
+Right of Access
+Discontinuance of Electric Service
+Reconnection of Electric Service
+Interruptions of Electric Service
+Testing Facilities and Metering Equipment
+Periodic Tests and Checks
+Request Tests
+Electric Line Extensions and Installations
+Temporary Service
+Retail Access
+Net Metering Customers and Small Agricultural Generators
+Electric Generator Interconnections Other Than Net Metering
+Agreement for Overhead Electric Line Extension - Form G Plan 
+Agreement for Electric Service
+Agreement for the Installation of Underground Distribution Facilities on Private Property
+Customer's Private Underground Service Connection Agreement
+01-01-22
+01-19-16
+01-19-16
+01-01-24
+01-01-22
+01-25-14
+Communities Served in Virginia
+Terms and Conditions for the Provision of Electric Service
+XXL
+xxn.
+XXIII.
+10-15-20
+07-01-18
+07-01-18
+01-25-14 
+01-01-24
+02-01-02
+04-01-19
+02-01-02
+01-25-14
+01-25-14
+07-01-24
+01-01-24 
+01-19-16
+01-01-22
+01-25-14
+Effective Date
+04-30-87
+M
+IM)
+i®
+@9
+
+
+PAGE 9
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 1EV For Usage On and After 01-01-2'4
+For Usage On and After 01-01-24Schedule EV
+For Usage On and After 01-01-23Schedule EVCF - Electric Vehicle Charging Fleet Service
+For Usage On and After 01-01-23Schedule EVCL2 - Electric Vehicle Level 2 Charging Service
+For Usage On and After 09-01-22Schedule EVCR - Electric Vehicle Residential Charging Service
+For Usage On and After 07-12-24Schedule EVFCP - Electric Vehicle Direct Current Fast Charging Pricing Tariff
+For Usage On and After 07-12-24Schedule EVL2P - Electric Vehicle Level Two Pricing Tariff
+For Usage On and After 01-01-24Schedule 5 - Small General Service - (Closed)
+For Usage On and After 01-01 -24Schedule 5C - Church and Synagogue Service
+For Usage On and After 01-01-24Schedule 5P - Church, Synagogue and Charitable Institution Service
+For Usage On and After 01-01-24Schedule 6 - Large General Service - (Closed)
+For Usage On and After 01-01-24Schedule GS-1 - Small General Service
+For Usage On and After 01-01-24Schedule DP-1 - Small General Service (Experimental) - (Closed)
+For Usage On and After 01-01-24Schedule GS-2 - Intermediate General Service
+For Usage On and After 01-01-24Schedule GS-2T - Intennediate General Service - Time of Usage
+For Usage On and After 01-01-24Schedule DP-2 - Intermediate General Service (Experimental) - (Closed)
+For Usage On and After 01-01-24Schedule GS-3 - Large General Service Secondary Voltage
+For Usage On and After 01-01-24Schedule GS-4 - Large General Service Primary Voltage
+For Usage On and After 01-01-24Schedule MBR - Large General Service Market-Based Rate (Experimental)
+For Usage On and After 01-01-24Schedule SCR - Large General Service
+For Usage On and After 01-01-24Schedule 6TS - Thermal Storage
+For Usage On and After 01-01-24Schedule 7 - Electric Heating - (Closed)
+Schedule 8 For Usage On and After 01-01-24
+For Usage On and A fter 01 -01 -24Schedule 10 - Large General Service
+Schedule 19 For Usage On and After 01-01-24
+Schedule RF For Usage On and After 01-01 -23
+For Usage On and After 01-01-24Schedule SP
+For Usage On and After 01-01 -24Schedule 24 - Outdoor Lighting Service Solid State Outdoor Lighting
+For Usage On and After 01-01-24Schedule 25 - Privately Owned Outdoor Lighting
+Electric-Virginia -24
+2
+I
+- Supplementary, Maintenance, Standby
+Service for Customers with Power Plants
+A
+- Power Purchases From Cogeneration and
+Small Power Production Qualifying Facilities
+- Environmental Attributes Purchase From Renewable
+Energy Facilities (Experimental)
+- Solar Purchase (Experimental) - (Closed)
+- Residential Service With Electric Vehicle
+Charging (Experimental) - (Closed)
+- Residential Electric Vehicle Charging (Experimental) - (Closed)
+@9
+
+
+PAGE 10
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 27 For Usage On and After 01-01-24
+Schedule 28 For Usage On and After 01-01-24
+12-18-85
+For Usage On and After 01-01-24Schedule 29
+Shared Solar Rate Schedules
+For Production On and After 03-01-24Schedule Multi-Family Shared Solar
+Schedule SO-MSS - Subscriber Organization - Multi-Family Shared Solar For Production On and After 01-01-24
+For Production On and After 03-01-24Schedule SS-Shared Solar
+Schedule SO-SS - Subscriber Organization - Shared Solar For Production On and After 01-01-24
+Fuel Deferral Schedules
+Pro-Rata Share of Fuel Deferral Charges For Usage On and After 12-01-23
+Deferred Fuel Cost Charge
+Riders
+Exhibit of Applicable Riders 07-12 2408-01-24
+Fuel Charge RiderRider A
+Rider B Biomass Conversions For Usage On and After 04-01-24
+Rider BW Brunswick County Power Station For Usage On and After 09-01 -23
+Peak-Shaving Increment Rider For Usage On and After 09-01-23Rider CIA
+Rider C2A Energy Efficiency Increment Rider For Usage On and After 09-01-23
+Rider C3A For Usage On and After 09-01-23Energy Efficiency Increment Rider
+Rider C4A For Usage On and After 09-01-23Energy Efficiency Increment Rider
+Rider CCR Closure of Coal Combustion Residuals Impoundments For Usage On and After 12-01-23
+Rider CE Clean Energy Projects and Power Purchase Agreements For Usage On and After 05-01-24
+Rider CRC For Usage On and After 05-01-19
+Tax Effect Recovery 04-01-24Rider D
+Rider E Environmental Projects For Usage On and After 11-01-23
+Rider EDR Economic Development Rate 01-01-22
+Rider F Receivers or Trustees 03-01-54
+Rider G For Bills Rendered On and After 02-01-22Renewable Energy Program
+Electric-Virginia Revised 07-4 408-01-24
+2
+For Usage On and After 07-01-24 
+On An Interim Basis
+Manufacturing and Commercial Competitiveness 
+Retention Credit Rider
+- Outdoor Lighting Service
+High Pressure Sodium Vapor
+(Closed to New Installations)
+- Outdoor Lighting Service
+(Closed to New Installations)
+- Customer Charges for Outdoor Lighting Served on
+Schedule 28 (Not Filed with Virginia Commission)
+- Privately Owned Outdoor Lighting
+
+
+PAGE 11
+Virginia Electric and Power Company
+TABLE OF CONTENTS
+Riders (Continued) Effective Date
+Rider GT Grid Transformation For Usage On and After 06-01-24
+Rider GV Greensville Power Station For Usage On and After 04-01-24
+Rider OSW Coastal Virginia Offshore Wind For Usage On and After 09-01-23
+Rider P1PP Universal Service Fee For Usage On and After 12-01-23
+Rider RBB Rural Broadband Pilot Projects For Usage On and After 05-01-24
+Rider REC Renewable Energy Certificate Purchase Program For Bills Rendered On and After 01-01-22
+Rider RGGI Regional Greenhouse Gas Initiative For Usage On and After 07-12-24
+Rider RPS Renewable Energy Portfolio Standard For Usage On and After 09-01-23
+Rider SNA Surry and North Anna Nuclear Life Extension Program For Usage On and After 09-01-23
+Rider T1 Transmission For Usage On and After 09-01-23
+Rider TRG 100 Percent Total Renewable Generation 07-12-24
+I Rider U Strategic Underground Program For Usage On and After 04 -01 -2308-01 -24
+Rider US-2 US-2 Solar Projects For Usage On and After 09-01-23
+Rider US-3 US-3  Solar Projects For Usage On and After 06-01 -24
+Rider US-4 US-4 Solar Projects For Usage On and After 06-01-24
+Rider VCS - Virginia Community Solar Pilot Program For Usage On and After 01-01-23
+Electric-Virginia
+2
+^11
+@9
+
+
+PAGE 12
+Exhibit of Applicable Riders 
+(Clean and Redline Versions)
+P
+
+
+PAGE 13
+Virginia Electric and Power Company
+EXHIBIT OF APPLICABLE RIDERS
+I.
+Rider Description
+Electricity SupplyA Fuel Charge
+B Biomass Conversions Electricity Supply04-01-24
+Electricity SupplyBW Brunswick County Power Station 09-01-23
+CIA Peak-Shaving Increment Rider 09-01-23 Distribution
+C2A Energy Efficiency Increment Rider 09-01-23 Distribution
+C3A Energy Efficiency Increment Rider Distribution09-01-23
+C4A Energy Efficiency Increment Rider Distribution09-01-23
+E Environmental Projects 11-01-23 Electricity Supply
+GT Grid Transformation 06-01-24 Distribution
+GV Greensville Power Station 04-01-24 Electricity Supply
+RBB Rural Broadband Pilot Projects 05-01-24 Distribution
+RGGI Regional Greenhouse Gas Initiative Electricity Supply07-12-24
+SNA 09-01-23 Electricity Supply
+T1 Transmission 09-01-23 Electricity Supply
+U Strategic Underground Program 08-01-24 Distribution
+US-2 US-2 Solar Projects 09-01-23 Electricity Supply
+(Continued)
+Effective 08-01-24
+Surry and North Anna Nuclear Life 
+Extension Program
+Applicable
+Service Type
+Effective for Usage 
+On and After
+Filed 07-24-24
+Electric-Virginia
+07-01-24
+On An Interim Basis
+^rl
+w
+pThe riders listed below are applicable to Virginia Electric and Power Company's Filed Rate Schedules 
+1, 1G, IP, IS, IT, 1W, DP-R, 1EV, EV, 5, 5C, 5P, 6, GS-1, DP-1, GS-2, GS-2T, DP-2, GS-3, GS-4, 
+6TS, 7, 8, 10, 24, 25, 27, 28, and 29, as well as applicable charges specified in any special rates, 
+contracts or incentives approved by the State Corporation Commission pursuant to Virginia Code 
+§ 56-235.2 on a per kilowatt and/or per kilowatt-hour basis as indicated in the individual rider.
+
+
+PAGE 14
+(Continued)
+Rider Description
+US-3 US-3  Solar Projects 06-01-24 Electricity Supply
+US-4 US-4  Solar Projects 06-01-24 Electricity Supply
+Rider Description
+CIA Peak-Shaving Increment Rider 09-01-23 Distribution
+Energy Efficiency Increment RiderC2A 09-01-23 Distribution
+C3A Energy Efficiency Increment Rider 09-01-23 Distribution
+C4A Energy Efficiency Increment Rider 09-01-23 Distribution
+GT Grid Transformation 06-01-24 Distribution
+RBB Rural Broadband Pilot Projects 05-01-24 Distribution
+TransmissionT1 09-01-23 Electricity Supply
+U Strategic Underground Program 08-01-24 Distribution
+(Continued)
+Effective 08-01-24
+Effective for Usage
+On and After
+Applicable
+Service Type
+Applicable
+Service Type
+Effective for Usage 
+On and After
+Virginia Electric and Power Company
+EXHIBIT OF APPLICABLE RIDERS 
+II. The riders listed below are applicable to Virginia Electric and Power Company's Filed Rate Schedules 
+MBR and SCR.
+Filed 07-24-24
+Electric-Virginia
+I. The riders listed below are applicable to Virginia Electric and Power Company's Filed Rate Schedules
+1, 1G, IP, IS, IT, 1W, DP-R, 1EV, EV, 5, 5C, 5P, 6, GS-1, DP-1, GS-2, GS-2T, DP-2, GS-3, GS-4, 
+6TS, 7, 8, 10, 24, 25, 27, 28, and 29, as well as applicable charges specified in any special rates, 
+contracts or incentives approved by the State Corporation Commission pursuant to Virginia Code 
+§ 56-235.2 on a per kilowatt and-or per kilowatt-hour basis as indicated in the individual rider. 
+(Continued)
+00
+
+
+PAGE 15
+Virginia Electric and Power Company
+EXHIBIT OF APPLICABLE RIDERS 
+Effective DateRider Description
+CRC 05-01-19
+D Tax Effect Recovery 04-01-24
+Economic Development Rate 01-01-22EDR
+03-01-54F Receivers or Trustees
+G Renewable Energy Program
+Universal Service Fee 12-01-23P1PP
+REC
+100 Percent Total Renewable Generation 07-12-24TRG
+VCS Virginia Community Solar Pilot Program 01-01-23
+Rider Description
+CCR 12-01-23 Non-bypassable
+Non-bypassableCE 05-01-24
+09-01-23Coastal Virginia Offshore Wind Non-bypassableOSW
+Renewable Energy Portfolio Standard Non-bypassableRPS 09-01-23
+Effective 08-01-24
+Clean Energy Projects and Power Purchase 
+Agreements
+Closure of Coal Combustion Residuals 
+Impoundments
+Manufacturing and Commercial Competitiveness
+Retention Credit Rider
+Applicable
+Service Type
+Renewable Energy Certificate
+Purchase Program
+Filed 07-24-24
+Electric-Virginia
+For Bills Rendered On and 
+After 01-01-22
+For Bills Rendered On and 
+After 02-01-22
+IV. The riders listed below are non-bypassable and may apply based upon the circumstances as indicated 
+according to each specific rider.
+(Continued)
+III. The riders listed below may apply based upon the circumstances as indicated in the applicability section 
+of the specific rider.
+Effective For
+Usage
+On and After
+p
+@3
+
+
+PAGE 16
+Virginia Electric and Power Company
+EXHIBIT OF APPLICABLE RIDERS
+Rider Description
+A Fuel Charge Electricity Supply
+B Biomass Conversions Electricity Supply04-01-24
+BW Brunswick County Power Station Electricity Supply09-01-23
+CIA Peak-Shaving Increment Rider Distribution09-01-23
+Energy Efficiency Increment Rider DistributionC2A 09-01-23
+C3A Energy Efficiency Increment Rider Distribution09-01-23
+C4A Energy Efficiency Increment Rider 09-01-23 Distribution
+E Environmental Projects 11-01-23 Electricity Supply
+GT Grid Transformation 06-01-24 Distribution
+GV Greensville Power Station Electricity Supply04-01-24
+RBB Rural Broadband Pilot Projects 05-01-24 Distribution
+RGGI Regional Greenhouse Gas Initiative Electricity Supply07-12-24
+SNA 09-01-23 Electricity Supply
+T1 Transmission 09-01-23 Electricity Supply
+U Strategic Underground Program 04-01-2308-01-24 Distribution
+US-2 Solar Projects Electricity SupplyUS-2 09-01-23
+(Continued)
+Effective 07-12-24 08-01-24
+Effective for Usage 
+On and After
+Applicable
+Service Type
+Surry and North Anna Nuclear Life 
+Extension Program
+07-01-24
+On An Interim Basis
+Filed 07-03-2407-24-24
+Electric-Virginia
+I. The riders listed below are applicable to Virginia Electric and Power Company's Filed Rate Schedules 
+I, IG, IP, IS, IT, 1W, DP-R, 1EV, EV, 5, 5C, 5P, 6, GS-1, DP-1, GS-2, GS-2T, DP-2, GS-3, GS-4, 
+6TS, 7, 8, 10, 24, 25, 27, 28, and 29, as well as applicable charges specified in any special rates, 
+contracts or incentives approved by the State Corporation Commission pursuant to Virginia Code 
+§ 56-235.2 on a per kilowatt and/or per kilowatt-hour basis as indicated in the individual rider.
+p
+@3
+
+
+PAGE 17
+Virginia Electric and Power Company
+EXHIBIT OF APPLICABLE RIDERS 
+(Continued)
+Rider Description
+Electricity SupplyUS-3 US-3 Solar Projects 06-01-24
+US-4 US-4 Solar Projects 06-01-24 Electricity Supply
+Rider Description
+CIA Peak-Shaving Increment Rider 09-01-23 Distribution
+C2A Energy Efficiency Increment Rider 09-01-23 Distribution
+Energy Efficiency Increment RiderC3A 09-01-23 Distribution
+C4A Energy Efficiency Increment Rider 09-01-23 Distribution
+GT Grid Transformation 06-01-24 Distribution
+RBB Rural Broadband Pilot Projects 05-01-24 Distribution
+T1 Transmission 09-01-23 Electricity Supply
+Strategic Underground Program 01 01 2308-01-24 DistributionU
+(Continued)
+Effective 07 12 2108-01-24
+Effective for Usage
+On and After
+Applicable
+Service Type
+Effective for Usage 
+On and After
+Applicable
+Service Type
+Filed 07-03-2407-24-24
+Electric-Virginia
+II. The riders listed below are applicable to Virginia Electric and Power Company's Filed Rate Schedules 
+MBR and SCR.
+&
+69I. The riders listed below are applicable to Virginia Electric and Power Company's Filed Rate Schedules
+1, 1G, IP, IS, IT, 1W, DP-R, 1EV, EV, 5, 5C, 5P, 6, GS-1, DP-1, GS-2, GS-2T, DP-2, GS-3, GS-4, 
+6TS, 7, 8, 10, 24, 25, 27, 28, and 29, as well as applicable charges specified in any special rates, 
+contracts or incentives approved by the State Corporation Commission pursuant to Virginia Code 
+§ 56-235.2 on a per kilowatt and-or per kilowatt-hour basis as indicated in the individual rider. 
+(Continued)
+
+
+PAGE 18
+Virginia Electric and Power Company
+EXHIBIT OF APPLICABLE RIDERS 
+Effective DateRider Description
+CRC 05-01-19
+Tax Effect RecoveryD 04-01-24
+EDR Economic Development Rate 01-01-22
+F Receivers or Trustees 03-01-54
+G Renewable Energy Program
+PIPP Universal Service Fee 12-01-23
+REC
+TRG 100 Percent Total Renewable Generation 07-12-24
+VCS Virginia Community Solar Pilot Program 01-01-23
+Rider Description
+Non-bypassableCCR 12-01-23
+CE 05-01-24 Non-bypassable
+09-01-23Coastal Virginia Offshore Wind Non-bypassableOSW
+RPS Renewable Energy Portfolio Standard 09-01-23 Non-bypassable
+Effective 07-1-2-2408-01-24
+Electric-Virginia
+Manufacturing and Commercial Competitiveness
+Retention Credit Rider
+Applicable
+Service Type
+Closure of Coal Combustion Residuals 
+Impoundments
+Clean Energy Projects and Power Purchase 
+Agreements
+Renewable Energy Certificate
+Purchase Program
+For Bills Rendered On and 
+After 02-01-22
+For Bills Rendered On and 
+After 01-01-22
+IV. The riders listed below are non-bypassable and may apply based upon the circumstances as indicated 
+according to each specific rider.
+(Continued)
+III. The riders listed below may apply based upon the circumstances as indicated in the applicability section 
+of the specific rider.
+Effective For
+Usage
+On and After
+

@@ -105,8 +105,11 @@ def inputs(r):
 
 def execute(directory,r):
  from ..dispatch.socal import optimize
+ from .electrical_replay import replay_study
+ from .worker import write_json
  import pvlib
  validate(r);frame=inputs(r);solar=r['solar']
+ ac_capacity=0.
  if solar['capacity_kw']:
   from ..timeseries import build_interval_index_from_days
   from ..profiles import WeatherDerivedPV, WeatherDerivedPVConfiguration
@@ -122,12 +125,14 @@ def execute(directory,r):
    dc_ac_ratio=1.2,system_losses_fraction=.14,nominal_inverter_efficiency=.96),weather,
    weather_source='Explicit clear-sky study assumption').build_detailed(grid)
   frame['pv_available_kw']=pv.pv_available_kw.to_numpy()
+  ac_capacity=pv.provenance['inverter_ac_capacity_kw']
  result=optimize(r['tariff_id'],frame,billing_account(r),r['start_date'],r['end_date'],r['battery'],r['degradation_cost_per_kWh'],include_degradation_in_optimization=r.get('include_degradation_in_optimization',False))
  tables=[];rows=[];costs=[];bills={};versions=[];credit_ledgers=[]
  if solar['capacity_kw']:tables=[('weather','Clear-sky study weather',weather),('pv','PV model diagnostics',pv.diagnostics)]
  scenarios=[('grid_only','baseline_bill')]
  if solar['capacity_kw']:scenarios.append(('pv_only','solar_bill'))
  if r['battery']:scenarios.append(('pv_storage' if solar['capacity_kw'] else 'battery_storage','bill'))
+ replay_scenarios={}
  for name,key in scenarios:
   b=result[key];wear=result['degradation_cost'] if key=='bill' else 0
   rows.append({'scenario':name,'utility_bill':b['total'],'degradation_cost':wear,'total_explicit_operating_cost':b['total']+wear,'bill_savings_vs_grid':result['baseline_bill']['total']-b['total'],'savings_vs_grid':result['baseline_bill']['total']-b['total']-wear})
@@ -135,12 +140,31 @@ def execute(directory,r):
   if b.get('credit_ledger'):
    credit_ledgers.extend({'scenario':name,'component':k,'amount':v} for k,v in b['credit_ledger'].items())
   costs.extend({'scenario':name,'component':k,'amount':v} for k,v in b['line_items'].items());bills[name]=b
- warnings=result['bill']['warnings']+[
+  if name=='grid_only':
+   schedule=frame.assign(pv_available_kw=0.,grid_import_kw=frame.native_load_kw,grid_export_kw=0.)
+  elif name=='pv_only':
+   exports=r['account']['solar_program'] in ('sce_nbt','sce_nem','ladwp_nem','bwp_net_billing')
+   schedule=frame.assign(grid_import_kw=np.maximum(frame.native_load_kw-frame.pv_available_kw,0.),
+    grid_export_kw=np.maximum(frame.pv_available_kw-frame.native_load_kw,0.) if exports else 0.)
+  else:
+   schedule=result['dispatch'].copy()
+  replay_scenarios[name]=(schedule,r['battery'] if key=='bill' else None,ac_capacity if name!='grid_only' else 0.)
+ electrical,metrics,validation,electrical_warnings=replay_study(replay_scenarios,billing_account(r),
+  progress=lambda message:write_json(Path(directory)/'progress.json',{'message':message}))
+ for row,metric in zip(rows,metrics):row.update(metric)
+ tables.extend(electrical)
+ # Legacy bill warnings describe the calculator, not the new post-bill replay.
+ # Correct only the study's display text; retain the original bill payload.
+ billing_warnings=[w.replace(' and AC network feasibility are not modeled.',
+  ' is not modeled; electrical checks are reported separately.').replace(
+  ' or AC network feasibility.','. Electrical checks are reported separately.') for w in result['bill']['warnings']]
+ warnings=billing_warnings+[
   'Battery wear is included in optimization.' if r.get('include_degradation_in_optimization',False) else 'Battery wear is reported separately from the dispatch objective.',
   'Inherited solar credits reduce the saved bill but do not change storage dispatch; newly earned export credits enter the cycle objective.' if r['account']['solar_program'] in ('sce_nbt','bwp_net_billing') else 'Storage dispatch minimizes the modeled utility bill for this cycle.',
   'PV uses the existing PVWatts/temperature/inverter model with clear-sky irradiance, 20 °C air, 1 m/s wind, 14% system losses, 96% inverter efficiency and 1.2 DC/AC ratio; not measured weather.','Savings are operating costs only, excluding capital cost, incentives and lifecycle payback.']
  if not solar['capacity_kw']:warnings=[w for w in warnings if not w.startswith('PV uses')]
+ warnings.extend(electrical_warnings)
  if r['mode']=='hypothetical_bundled':warnings.insert(0,'HYPOTHETICAL bundled generation comparison — account enrollment and eligibility are study assumptions, not an actual customer bill.')
  if versions:tables.append(('rate_versions','Applied rate versions',pd.DataFrame(versions)))
  if credit_ledgers:tables.append(('solar_credit_ledger','Solar credit ledger',pd.DataFrame(credit_ledgers)))
- save_results(directory,r,[('comparison','Scenario operating costs',pd.DataFrame(rows)),('costs','Itemized bills',pd.DataFrame(costs)),('dispatch','15-minute dispatch',result['dispatch'])]+tables,warnings,bills=bills,tariff_data_version=VERSION,objective_reconciliation_error=result['objective_gap'],solar_program=r['account']['solar_program'])
+ save_results(directory,r,[('comparison','Scenario operating costs',pd.DataFrame(rows)),('costs','Itemized bills',pd.DataFrame(costs)),('dispatch','15-minute dispatch',result['dispatch'])]+tables,warnings,bills=bills,tariff_data_version=VERSION,objective_reconciliation_error=result['objective_gap'],solar_program=r['account']['solar_program'],ac_validation=validation)

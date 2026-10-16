@@ -1,0 +1,223 @@
+--- PDF page 1 ---
+Virginia Electric and Power Company
+
+Schedule 5P
+SMALL GENERAL SERVICE
+___________
+
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+I. APPLICABILITY
+
+Service under this schedule is available to nonresidential Customers requiring permanent
+service and requiring less than 500 kW of demand as determined by actual measurement or by
+estimation based on connected load.  If the Customer equals or exceeds 500 kW during the current
+billing month, this schedule will not be available to the Customer for the succeeding twelve (12)
+billing months.
+
+Any Customer receiving service under this schedule prior to March 9, 1983, may continue to
+be served under this schedule without a demand restriction until such time as service is terminated or
+service is elected under another applicable schedule.
+
+II. MONTHLY RATE
+
+A. Basic Customer Charge
+
+1. Single-phase services sized at 200 amperes or less -
+Basic Customer Charge $27.00 per billing month
+
+2. All other services
+Basic Customer Charge $96.93 per billing month
+
+B. Plus Power Supply Demand Charge
+
+1. For summer billing months of June through September:
+All on-peak kW of power supply demand @  $11.761 per kW
+
+2. For base billing months of October through May:
+All on-peak kW of power supply demand @  $8.708 per kW
+
+C. Plus Distribution Demand Charge
+All kW of distribution billing demand  @  $2.260 per kW
+
+D. Plus Energy Charge
+All on-peak kWh   @  6.4306¢ per kWh
+All off-peak kWh  @  4.6025¢ per kWh
+
+The energy charges in this schedule contain a base fuel cost of 2.3011 cents per
+kilowatt-hour.
+
+E. The energy charges in II. D., above, shall be increased or decreased by any applicable
+Riders.
+
+--- PDF page 2 ---
+Virginia Electric and Power Company
+
+Schedule 5P
+SMALL GENERAL SERVICE
+___________
+
+(Continued)
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+II. MONTHLY RATE (Continued)
+
+F. The minimum charge shall be such as may be contracted for, but not less than the sum
+of the charges in A., B., and C., above.  The minimum charge shall be increased or
+decreased by any applicable Riders.
+
+III. LATE PAYMENT CHARGE
+
+Current bills are due and payable from the billing date.  When bills are not paid in full within
+twenty-five (25) days from the billing date, a late payment charge of 1% per month, based on the
+unpaid balance, will be added to the current bill.
+
+IV. DETERMINATION OF POWER SUPPLY DEMAND
+
+The kW of on-peak demand to be billed under II.B., above, will be determined as the highest
+average kW load measured in any 30-minute interval during the on-peak hours of the current billing
+month.
+
+V. DETERMINATION OF POWER SUPPLY DEMAND ON-PEAK HOURS
+
+On-Peak Hours (Except Certain Holidays)
+
+A. For the period of June 1 through September 30:
+10 A.M. to 10 P.M., Monday through Friday.
+
+B. For the period of October 1 through May 31:
+6 A.M. to 12 Noon and 5 P.M. to 10 P.M., Monday through Friday.
+
+VI. DETERMINATION OF ENERGY ON-PEAK HOURS
+
+On-Peak Hours (Except Certain Holidays)
+
+A. For the period of June 1 through September 30:
+10 A.M. to 10 P.M., Monday through Friday
+
+B. For the period of October 1, through May 31:
+6 A.M. to 10 P.M., Monday through Friday
+
+--- PDF page 3 ---
+Virginia Electric and Power Company
+
+Schedule 5P
+SMALL GENERAL SERVICE
+___________
+
+(Continued)
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+VII. DETERMINATION OF POWER SUPPLY DEMAND AND ENERGY OFF -PEAK
+ HOURS
+
+A. Power Supply Demand off-peak hours are defined as all hours other than those listed in
+Paragraph V., above.
+
+B. Energy off-peak hours are defined as all hours other than those listed in Paragraph VI.,
+above.
+
+C. The following holidays are observed as off -peak for Power Supply Demand and
+Energy:  New Year's Day, Good Friday, Memorial Day (observed), July 4, Labor Day,
+Thanksgiving (Thursday and Friday), Christmas Eve and Christmas.
+
+VIII. DETERMINATION OF DISTRIBUTION DEMAND
+
+A. The distribution demand billed under II.C. shall be the higher of:
+
+1. The highest average kW measured at the location during any 30-minute interval
+of the current billing month, or
+
+2. The contract demand.
+
+B. The minimum distribution demand will be such as may be contracted for.  However,
+when the Customer's power factor during the current billing month is less than 85
+percent, the Company may render billing based on a distribution demand of not less
+than 85 percent of the Customer's peak kVA demand during the current billing month.
+
+
+IX. SERVICE AVAILABLE
+
+ Normally the Company will supply the equipment necessary and will deliver to the
+Customer, in accordance with the Company's applicable Terms and Conditions at one Delivery Point
+mutually satisfactory to the Customer and the Company, 60 Hertz alternating current electricity of
+the phase and voltage desired by the Customer at said Delivery Point, provided electricity of the
+phase and voltage desired by the Customer is available generally in the area in which electricity is
+desired.
+
+--- PDF page 4 ---
+Virginia Electric and Power Company
+
+Schedule 5P
+SMALL GENERAL SERVICE
+___________
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+X. STANDBY, MAINTENANCE , OR PARALLEL OPERATION AND/OR
+INTERCONNECTION SERVICE
+
+A Customer, operating a Generating Facility (as defined in Section XXIV of the Company’s
+filed Terms and Conditions) and requiring standby, maintenance , or parallel operation and/or
+interconnection service, may elect service under this schedule provided the Customer contracts for
+the maximum kW which the Company is to supply.  Standby, maintenance , or parallel operation
+and/or interconnection service is subject to the following provisions:
+
+A. For a Generating Facility interconnected pursuant to Section XXIV, the Customer shall
+install, own, and maintain relays and protective apparatus in accordance with Section
+XXIV.  If Section XXIV does not apply to the Customer’s interconnection of its
+Generating Facility , suitable relays and protective apparatus shall be furnished,
+installed, and maintained at the Customer's expense in accordance with specifications
+furnished by the Company.  The relays and protective apparatus shall be subject, at all
+reasonable times, to inspection by the Company's authorized representative.
+
+B. In case the maximum measured kW demand, or 85% of any kVA demand measured,
+exceeds the contract demand, the contract demand shall be increased by such excess
+demand.
+
+C. The demand billed under II.C. shall be the contract demand.
+
+D. A contract demand pursuant to this Paragraph X. shall not be required for non -
+residential Customer-Generators who net meter in accordance with Section XXV of the
+Company’s Terms and Conditions and whose Generating Facility has a capacity of no
+more than 100 kW.
+
+XI. TERM OF CONTRACT
+
+The term of contract for the purchase of electricity under this schedule shall be such as may
+be mutually agreed upon, but for not less than one year.  A written agreement may be required as the
+Company or Customer from time to time may deem necessary.
+
+
+

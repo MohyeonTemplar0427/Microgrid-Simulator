@@ -129,6 +129,14 @@ once as CSV with small column metadata; the server builds browser pages from
 that CSV and offers an on-demand ZIP of all result tables. Previously saved
 studies still expose their existing AC/JSON tables. The manifest also records model
 assumptions and provenance.
+
+The dedicated Southern California (schema 6) and AMP/SVP (schema 4) workflows
+add full `ac-<scenario>.csv` interval tables and `ac-summary.csv`, alongside the
+compact failure manifest. Their [electrical-validation adapter](Utility_Electrical_Validation.md)
+selects explicit representative secondary-service circuits and reports unsupported
+service without implying feasibility. Older saved studies without these checks
+remain unevaluated. Bills and dispatch continue to use the original schedules.
+
 **Completed means the calculation finished, not that every interval is
 electrically feasible.** Inspect the comparison's feasibility counts and any
 failure warnings.
@@ -426,3 +434,56 @@ as zero. Unused fields required by the legacy request schema (for example consta
 weather assumptions in historical mode) retain internal placeholders only; they
 are not active user assumptions in those modes. Defaults remain the current static
 values; context-dependent recommendations are future work.
+
+## Dominion Virginia / North Carolina and PSE&G candidate
+
+The main wizard exposes schema-11 retail studies only when the active immutable
+engine advertises `regional_simulation` and the app runs locally. Choose the site
+class and coordinates, then manually confirm the distribution utility from the
+account or identify an explicitly hypothetical study. The account panel preserves
+jurisdiction, supplier, PJM zone and a separate optional wholesale location.
+It shows plan eligibility, verified dates, official sources and unavailable
+special arrangements. Source dates are component coverage, not plan inception.
+PSE&G selects its filed book by the utility bill date; other adapters validate
+service-date component coverage. Server-side validation remains authoritative.
+
+Complete meter cycles can be supplied as documented JSON records, or explicitly
+hypothetical calendar cycles. They are not inferred actual reading schedules.
+Review account histories, contract floors, voltage, enrollments and any capacity
+or transmission obligations. The hypothetical-facts button labels assumptions;
+it does not verify real account eligibility. Unknown local taxes or partial-cycle
+block allocations remain explicit incomplete bills instead of guessed charges.
+
+Use shared PV/inverter/ESS controls, or choose grid-only/storage-only where
+eligible. Non-export operation curtails surplus. Net metering requires both the
+correct account fields and explicit operating approval; the hypothetical NEM
+button only applies to hypothetical accounts. It does not approve a real project.
+Opening ledgers, annual boundaries and battery-source restrictions are utility
+specific. The absent-PV reference is explicitly an ordinary-account
+counterfactual without NEM credits, while original contracts/history are retained.
+
+Historical solar weather is explicitly selected: NSRDB or ERA5 via Open-Meteo.
+ERA5 retrieval is tied to the exact coordinates and date range; changing either
+requires matching weather again. Hourly reanalysis held over quarter hours is not
+measured subhourly radiation. There is no California weather/carbon assignment
+or silent fallback. Native CSVs require explicit-offset interval starts and
+native building consumption before PV/storage; net meter purchases are not
+silently relabeled. Synthetic profiles remain generic assumptions.
+
+PSE&G CIEP additionally requires the original permitted PJM real-time hourly
+CSV, provenance and the filed PSEG_RESID_AGG identity. Capacity and transmission
+obligations are separate utility-assigned account inputs. Missing hourly data do
+not block bundled retail plans, and no hub or auction price replaces CIEP data.
+Source bytes and price-derived outputs remain private local data.
+
+Results include scenario bill charts, itemized component savings, meter flows,
+curtailment, demand/credit history, SOC, proof metadata and electrical interval
+tables. An optional alternative tariff is independently optimized using the same
+site/equipment and initial account facts; eligibility must hold for both plans.
+Electrical infeasibility is separate from a completed economic calculation.
+Save result asks for a name only after completion; reopening, restoring settings,
+rerunning and downloads use existing controls. Earlier saved results without
+validation/proof fields are not retroactively described as validated or proven.
+See [current plan/evidence matrix](Regional_Utility_Coverage.md) and
+[reproduction instructions](Regional_Validation.md). The candidate is not a
+published release or a stable-engine promotion.

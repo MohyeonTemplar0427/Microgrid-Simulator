@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "file": "nem_terms.txt",
+      "source_url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/rates-and-tariffs/pdfs/virginia/terms-conditions/vatc25ra.pdf",
+      "retrieved_on": "2026-10-15",
+      "source_sha256": "3fb7332d7545806c9220fac4bff1e3bd00cf721342691935a9969168daeddacd",
+      "text_sha256": "6e2e560f149cad0177b8dfad742eb86e12786a433dcd622f8aa7c263675ed998"
+    },
+    {
+      "file": "nem_der_manual.txt",
+      "source_url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/renewable-energy-programs/net-metering/pdfs/virginia/nem-der-interconnection-parameters-manual.pdf",
+      "retrieved_on": "2026-10-15",
+      "source_sha256": "5137004cfa4a670e26b1acaef7455575287e26306a7306c4461580c49d9acbe3",
+      "text_sha256": "d4ffae560d199c531cc1a045a8a88111d17f8654aa4345ca85dc576966637e2e"
+    },
+    {
+      "file": "nem_consumption_tax_definition.txt",
+      "source_url": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2900/",
+      "retrieved_on": "2026-10-15",
+      "source_sha256": "8823896dbd06fec8e1d28ade045bbe85c32f87d4a66f07e4db52c25c14cb3112",
+      "text_sha256": "70be21d8f1f5488a42c29903213de6e81111388970d1d0a934aa73f5b925b6c6"
+    },
+    {
+      "file": "nem_local_tax_definition.txt",
+      "source_url": "https://law.lis.virginia.gov/vacode/title58.1/chapter38/section58.1-3814/",
+      "retrieved_on": "2026-10-15",
+      "source_sha256": "6c275e45861deeaba87ce8b4a7272cb13f9e4c9d5e354f08f6fcbab1a74a6c71",
+      "text_sha256": "45c9c918f14fedbca8fa92b7f3af6f45cc1b8f402d86b6c4e0452a1d6fcbd453"
+    }
+  ],
+  "scope": "Verified primary-source text; implementation capability is described separately."
+}

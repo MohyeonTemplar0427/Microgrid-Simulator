@@ -33,7 +33,7 @@ def test_fixed_mode_incumbent_survives_failed_global_search(monkeypatch,include_
     def solve(problem,*args,**kwargs):
         nonlocal calls
         calls+=1
-        if calls==3:
+        if calls==4:
             for var in problem.variables():var.value=np.zeros(var.shape)
             raise cp.error.SolverError("Synthetic interrupted global refinement")
         result=original(problem,*args,**kwargs)
@@ -41,11 +41,16 @@ def test_fixed_mode_incumbent_survives_failed_global_search(monkeypatch,include_
         if calls==2:
             assert not problem.is_mixed_integer()
             captured["local_throughput"]=problem.value
+        if calls==3:
+            # Force an open relaxation gap so this fixture exercises the
+            # interrupted full search, rather than the valid fast certificate.
+            problem._value-=1.
+            for var in problem.variables():var.value=np.zeros(var.shape)
         return result
     monkeypatch.setattr(cp.Problem,"solve",solve)
     result=comed.optimize(inputs,a,p,r["battery"],wear=.03,include_wear=include_wear,billing_cycles=cycles)
     info=result["throughput_refinement"]
-    assert calls==3
+    assert calls==4
     assert result["cost_optimum_proven"] and not info["minimum_throughput_proven"]
     assert info["fixed_mode_status"]=="optimal" and info["global_status"]=="solver_error"
     assert info["selected_solution"]=="primary_modes_refined"
@@ -57,7 +62,85 @@ def test_fixed_mode_incumbent_survives_failed_global_search(monkeypatch,include_
     energy=np.r_[d.battery_soc_kWh,result["terminal_energy_kwh"]]
     assert np.diff(energy)==pytest.approx(.5*(d.battery_charge_kw*b["charge_efficiency"]-
                                            d.battery_discharge_kw/b["discharge_efficiency"]),abs=1e-5)
-    assert info["optimality_gap_kwh"] is None  # No invented bound after solver error.
+    assert info["global_lower_bound_source"]=="continuous_relaxation"
+    assert info["optimality_gap_kwh"]>=0
+    assert info["optimality_gap_kwh"]==pytest.approx(
+        info["selected_throughput_kwh"]-info["global_lower_bound_kwh"],abs=1e-5)
+
+
+@pytest.mark.parametrize("include_wear",[False,True])
+def test_physical_relaxation_certifies_original_problem_without_mip_search(monkeypatch,include_wear):
+    r,inputs,a,p,cycles=short_case()
+    original=cp.Problem.solve;calls=[]
+    def solve(problem,*args,**kwargs):
+        calls.append(problem.is_mixed_integer())
+        return original(problem,*args,**kwargs)
+    monkeypatch.setattr(cp.Problem,"solve",solve)
+    out=comed.optimize(inputs,a,p,r["battery"],wear=.03,include_wear=include_wear,billing_cycles=cycles)
+    info=out["throughput_refinement"]
+    assert calls==[True,False,False]
+    assert info["minimum_throughput_proven"] and info["global_status"]=="optimal"
+    assert info["proof_method"]=="continuous_relaxation_bound"
+    assert info["optimality_gap_kwh"]<=info["proof_tolerance_kwh"]
+    assert info["global_lower_bound_source"]=="continuous_relaxation"
+    assert not out["warnings"]
+
+
+@pytest.mark.parametrize("outcome",["error","inaccurate","inconsistent"])
+def test_unreliable_relaxation_bound_never_claims_proof(monkeypatch,outcome):
+    r,inputs,a,p,cycles=short_case()
+    original=cp.Problem.solve;calls=0
+    def solve(problem,*args,**kwargs):
+        nonlocal calls
+        calls+=1
+        if calls==4:raise cp.error.SolverError("Synthetic global failure")
+        if calls==3 and outcome=="error":raise cp.error.SolverError("Synthetic relaxation failure")
+        result=original(problem,*args,**kwargs)
+        if calls==3:
+            if outcome=="inaccurate":problem._status="optimal_inaccurate"
+            else:problem._value+=100.
+            # Independent incumbent snapshots must survive overwritten values.
+            for var in problem.variables():var.value=np.zeros(var.shape)
+        return result
+    monkeypatch.setattr(cp.Problem,"solve",solve)
+    out=comed.optimize(inputs,a,p,r["battery"],billing_cycles=cycles)
+    info=out["throughput_refinement"]
+    assert calls==4 and not info["minimum_throughput_proven"]
+    assert info["global_lower_bound_kwh"] is None and info["optimality_gap_kwh"] is None
+    assert info["proof_method"]=="not_proven" and out["cost_optimum_proven"]
+    assert info["relaxation_status"]==dict(error="solver_error",inaccurate="optimal_inaccurate",
+        inconsistent="inconsistent_bound")[outcome]
+
+
+def test_real_simultaneous_relaxation_is_only_a_bound_after_mip_failure(monkeypatch):
+    r,inputs,a,p,cycles=short_case()
+    rng=np.random.default_rng(0)
+    p.values[:]=rng.choice([-600.,-150.,40.,200.],len(p.values))
+    inputs["native_load_kw"]=rng.choice([3.,20.,40.],len(inputs))
+    inputs["pv_available_kw"]=0.
+    original=cp.Problem.solve;calls=0;observed=[]
+    validator=comed._validated_refinement
+    def check(values,**kwargs):
+        checked=validator(values,**kwargs)
+        observed.append((np.minimum(values[0],values[1]).max(),checked is not None))
+        return checked
+    def solve(problem,*args,**kwargs):
+        nonlocal calls
+        calls+=1
+        if calls==4:raise cp.error.SolverError("Synthetic interrupted full MIP")
+        return original(problem,*args,**kwargs)
+    monkeypatch.setattr(cp.Problem,"solve",solve)
+    monkeypatch.setattr(comed,"_validated_refinement",check)
+    out=comed.optimize(inputs,a,p,r["battery"],billing_cycles=cycles)
+    info=out["throughput_refinement"]
+    assert calls==4 and info["relaxation_status"]=="optimal"
+    assert observed[1][0]>1e-6 and observed[1][1] is False
+    assert info["optimality_gap_kwh"]>info["proof_tolerance_kwh"]
+    assert info["global_lower_bound_source"]=="continuous_relaxation"
+    assert not info["minimum_throughput_proven"]
+    assert info["selected_solution"]=="primary_modes_refined"
+    d=out["dispatch"]
+    assert np.minimum(d.battery_charge_kw,d.battery_discharge_kw).max()<1e-6
 
 
 @pytest.mark.parametrize("corrupt",["soc","cost","simultaneous","pv","power_limit","missing"])

@@ -6,7 +6,7 @@ from copy import deepcopy
 import hashlib
 import json
 import math
-from .ess_catalog import CATALOG, REVISION
+from .ess_catalog import CATALOG
 from ..dispatch.battery import Battery
 
 RESOLVER_VERSION = "ac-equivalent-v1"

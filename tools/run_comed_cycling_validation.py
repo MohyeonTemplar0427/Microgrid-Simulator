@@ -97,6 +97,13 @@ def main():
             prior=pd.read_csv(source/"comparison.csv").set_index("scenario")
             refinement=new["optimization"]["pv_battery"]["throughput_refinement"]
             require(refinement["selected_throughput_kwh"]<=refinement["primary_throughput_kwh"]+1e-6,"Refinement increased throughput")
+            lower=refinement.get("global_lower_bound_kwh")
+            if lower is not None:
+                selected=refinement["selected_throughput_kwh"]
+                require(np.isfinite(lower) and lower<=selected+refinement["proof_tolerance_kwh"],"Invalid cycling lower bound")
+                require(abs(refinement["optimality_gap_kwh"]-max(0.,selected-lower))<1e-6,"Cycling gap does not reconcile")
+                if refinement["minimum_throughput_proven"]:
+                    require(refinement["optimality_gap_kwh"]<=refinement["proof_tolerance_kwh"],"Minimum cycling claim exceeds numerical proof tolerance")
             dt=r["timestep_minutes"]/60
             for scenario in table.index:
                 old_dispatch=pd.read_csv(source/("dispatch-"+scenario+".csv"))

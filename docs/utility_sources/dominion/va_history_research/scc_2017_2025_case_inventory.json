@@ -1,0 +1,1272 @@
+{
+  "retrieved_on": "2026-10-15",
+  "status": "Discovery inventory only. Established dates are docket creation dates, not rate effective dates. Each actual filing and approval must be inspected before enabling rates.",
+  "source_endpoint": "https://www.scc.virginia.gov/DocketSearchAPI/breeze/CASES_ESTABDATE/GetCasesEstDateByParticipant",
+  "source_participant_query": "VIRGINIA ELECTRIC",
+  "source_established_date_ranges": [
+    "1990-01-01 through2022-12-31",
+    "2023-01-01 through2025-12-31"
+  ],
+  "research_target_calendar_years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "cases": [
+    {
+      "MATTER_NO": 137122,
+      "Case_Number": "PUR-2017-00038",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Application for determination of the fair rate of return on common equity to be used as the general rate of return applicable to its rate adjustment clauses pursuant to \u00a7 56-585.1:1 C of the Code of Virginia",
+      "EstablishedDate": "2017-04-25T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137182,
+      "Case_Number": "PUR-2017-00057",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Application of Virginia Electric and Power Company For approval of a rate adjustment clause pursuant to \u00a7 56-585.1 A 4 of the Code of Virginia",
+      "EstablishedDate": "2017-05-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137183,
+      "Case_Number": "PUR-2017-00058",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its fuel factor pursuant to Va. Code \u00a7 56-249.6",
+      "EstablishedDate": "2017-05-05T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 137189,
+      "Case_Number": "PUR-2017-00060",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of 100 percent renewable energy tariffs pursuant to VA Code section 56-577 A 5 and 56-234",
+      "EstablishedDate": "2017-05-10T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137368,
+      "Case_Number": "PUR-2017-00071",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider GV, Greensville County Power Station For the Rate Year Commencing April 1, 2018\r\n",
+      "EstablishedDate": "2017-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137369,
+      "Case_Number": "PUR-2017-00072",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider R, Bear Garden Generating Station For the Rate Year Commencing April 1, 2018\r\n",
+      "EstablishedDate": "2017-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137370,
+      "Case_Number": "PUR-2017-00073",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider S, Virginia City Hybrid Energy Center For the Rate Year Commencing April 1, 2018\r\n",
+      "EstablishedDate": "2017-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137367,
+      "Case_Number": "PUR-2017-00070",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider B, Biomass Conversions of the Altavista, Hopewell, and Southampton Power Stations\r\nFor the Rate Year Commencing April 1, 2018\r\n",
+      "EstablishedDate": "2017-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137371,
+      "Case_Number": "PUR-2017-00074",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider W, Warren County Power Station For the Rate Year Commencing April 1, 2018\r\n",
+      "EstablishedDate": "2017-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137784,
+      "Case_Number": "PUR-2017-00127",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company  - Application for revision of rate adjustment clause: Rider US-2, Scott, Whitehouse, and Woodland Solar Power Stations",
+      "EstablishedDate": "2017-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137785,
+      "Case_Number": "PUR-2017-00128",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Application for revision of rate adjustment clause: Rider BW, Brunswick County Power Station",
+      "EstablishedDate": "2017-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137786,
+      "Case_Number": "PUR-2017-00129",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company  - Petition for approval to extend an existing demand-side management program and for approval of two updated rate adjustment clauses pursuant to \u00a7 56-585.1 A 5 of the Code of Virginia\r\n\r\n",
+      "EstablishedDate": "2017-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 137877,
+      "Case_Number": "PUR-2017-00137",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Application of for approval to establish experimental companion tariff, designated Schedule RF, pursuant to VA Code section 56-234 B",
+      "EstablishedDate": "2017-10-24T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 137984,
+      "Case_Number": "PUR-2017-00157",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Application for approval of 100 percent renewable energy tariffs for residential and non-residential customers pursuant to VA Code sections 56-577 A 5 and 56-234",
+      "EstablishedDate": "2017-11-20T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138006,
+      "Case_Number": "PUR-2017-00163",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Application for approval to establish a companion tariff, designated Schedule RG pursuant to \u00a7 56-234 of the Code of Virginia.",
+      "EstablishedDate": "2017-12-05T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 138067,
+      "Case_Number": "PUR-2017-00165",
+      "Case_Name": "CENTRAL VIRGINIA ELECTRIC COOP",
+      "Case_Caption": "Central Virginia Electric Cooperative - Application for approval of a Community Solar Tariff pursuant to Virginia Code Section 56-585.1:3 (C)",
+      "EstablishedDate": "2017-12-07T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138097,
+      "Case_Number": "PUR-2017-00179",
+      "Case_Name": "APPALACHIAN POWER COMPANY",
+      "Case_Caption": "Appalachian Power Company - Application for approval of an 100% renewable energy rider pursuant to Sec. 56-577.A.5 of the Code of Virginia",
+      "EstablishedDate": "2017-12-29T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138346,
+      "Case_Number": "PUR-2018-00042",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - for revision of a rate adjustment clause: Rider U, new underground distribution facilities, for the Rate Year Commencing February 1, 2019                            \r\n",
+      "EstablishedDate": "2018-03-19T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 138498,
+      "Case_Number": "PUR-2018-00066",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause Rider T pursuant to \u00a7 56-585.1 A 4 of the Code of Virginia\r\n\r\n",
+      "EstablishedDate": "2018-05-07T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138499,
+      "Case_Number": "PUR-2018-00067",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its fuel factor pursuant to VA Code \u00a7 56-249.6",
+      "EstablishedDate": "2018-05-07T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 138681,
+      "Case_Number": "PUR-2018-00084",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider GV, Greensville County Power Station for the Rate Year Commencing April 1, 2019",
+      "EstablishedDate": "2018-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138682,
+      "Case_Number": "PUR-2018-00085",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider R, Bear Garden Generating Station for the Rate Year Commencing April 1, 2019",
+      "EstablishedDate": "2018-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138683,
+      "Case_Number": "PUR-2018-00086",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company -For revision of rate adjustment clause: Rider S, Virginia City Hybrid Energy Center for the Rate Year Commencing April 1, 2019",
+      "EstablishedDate": "2018-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138684,
+      "Case_Number": "PUR-2018-00087",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider W, Warren County Power Station for the Rate Year Commencing April 1, 2019",
+      "EstablishedDate": "2018-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138680,
+      "Case_Number": "PUR-2018-00083",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider B, Biomass Conversions of the Altavista, Hopewell, and Southampton Power Stations for the Rate Year Commencing April 1, 2019",
+      "EstablishedDate": "2018-06-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138743,
+      "Case_Number": "PUR-2018-00091",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval to modify an experimental tariff to facilitate customer-owned distributed solar generation pursuant to Chapter 771 of the 2011 Virginia Acts of Assembly               \r\n",
+      "EstablishedDate": "2018-06-11T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138778,
+      "Case_Number": "PUR-2018-00101",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric & Power Company - For approval & certification of proposed US-3 Solar Projects pursuant to VA Code sections 56-580 D et al. and for approval of a rate adjustment clause, designated Rider US-3, under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2018-07-24T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138951,
+      "Case_Number": "PUR-2018-00133",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Application for approval to establish voluntary rate, designated Rider CRC, pursuant to VA Code section 56-234 B",
+      "EstablishedDate": "2018-08-17T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 138956,
+      "Case_Number": "PUR-2018-00135",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Petition for a prudency determination with respect to the Water Strider Solar Purchase Power Agreement pursuant to VA Code section 56-585.1:4 F",
+      "EstablishedDate": "2018-08-21T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139122,
+      "Case_Number": "PUR-2018-00166",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Co - For revision of rate adjustment clause: Rider BW,  Brunswick County Power Station, for the Rate Year Commencing September 1, 2019.",
+      "EstablishedDate": "2018-10-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139129,
+      "Case_Number": "PUR-2018-00168",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Application of Virginia Electric and Power Company For approval to implement demand-side management programs and for approval of two updated rate adjustment clauses pursuant to \u00a7 56-585.1 A 5 of the Code of Virginia\r\n\r\n",
+      "EstablishedDate": "2018-10-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139123,
+      "Case_Number": "PUR-2018-00167",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Co - For revision of rate adjustment clause: Rider US-2. Scott, Whitehouse, and Woodland Solar Power Stations, for the Rate Year Commencing September 1, 2019.",
+      "EstablishedDate": "2018-10-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139348,
+      "Case_Number": "PUR-2018-00195",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric & Power Company - For approval of a rate adjustment clause, designated Rider E, for the recovery of costs incurred to comply with state and federal environmental regulations pursuant to \u00a7 56-585.1 A 5 e of the Code of Virginia",
+      "EstablishedDate": "2018-12-17T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139405,
+      "Case_Number": "PUR-2019-00016",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO",
+      "Case_Caption": "Virginia Electric and Power Co - Approval to Modify Experimental Companion Tariff, Designated Schedule RF",
+      "EstablishedDate": "2019-02-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139578,
+      "Case_Number": "PUR-2019-00046",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause: Rider U, new underground distribution facilities, for the Rate Year Commencing February 1, 2020                            \r\n",
+      "EstablishedDate": "2019-03-27T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 139712,
+      "Case_Number": "PUR-2019-00069",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause pursuant to section 56-585.1 A 4 of the Code of Virginia          \r\n",
+      "EstablishedDate": "2019-05-07T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139713,
+      "Case_Number": "PUR-2019-00070",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its fuel factor pursuant to VA Code section 56-249.6                                                                         \r\n",
+      "EstablishedDate": "2019-05-07T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 139744,
+      "Case_Number": "PUR-2019-00081",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a voluntary renewable energy rate, designated Rider REC, pursuant to \u00a7 56-234 A of the Code of Virginia",
+      "EstablishedDate": "2019-05-20T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139783,
+      "Case_Number": "PUR-2019-00094",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a 100 percent renewable energy tariff, designated Rider TRG, pursuant to Virginia Code section 56-577 A 5, et al.",
+      "EstablishedDate": "2019-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139769,
+      "Case_Number": "PUR-2019-00085",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider B, Biomass Conversions of the Altavista, Hopewell, and Southampton Power Stations, for the Rate Year commencing April 1, 2020",
+      "EstablishedDate": "2019-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139770,
+      "Case_Number": "PUR-2019-00086",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider GV, Greensville County Power Station, for the Rate Year commencing April 1, 2020\r\n\r\n",
+      "EstablishedDate": "2019-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139771,
+      "Case_Number": "PUR-2019-00087",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider R, Bear Garden Generating Station, for the Rate Year commencing April 1, 2020\r\n\r\n",
+      "EstablishedDate": "2019-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139772,
+      "Case_Number": "PUR-2019-00088",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider S, Virginia City Hybrid Energy Center, for the Rate Year commencing April 1, 2020\r\n\r\n",
+      "EstablishedDate": "2019-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139773,
+      "Case_Number": "PUR-2019-00089",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider W, Warren County Power Station, for the Rate Year commencing April 1, 2020\r\n\r\n",
+      "EstablishedDate": "2019-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139891,
+      "Case_Number": "PUR-2019-00104",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider US-3, Colonial Trail West and Spring Grove 1 Solar Projects, for the rate year commencing June 1, 2020",
+      "EstablishedDate": "2019-07-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 139892,
+      "Case_Number": "PUR-2019-00105",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval and certification of the proposed US-4 Solar Project pursuant to VA Code sections 56-580 D, et al., and for approval of a rate adjustment clause, designated Rider US-4, under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2019-07-24T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140126,
+      "Case_Number": "PUR-2019-00160",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider BW, Brunswick County Power Station, for the Rate Year Commencing September 1, 2020",
+      "EstablishedDate": "2019-10-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140125,
+      "Case_Number": "PUR-2019-00159",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider US-2, Scott, Whitehouse, and Woodland Solar Power Stations for the Rate Year Commencing September 1, 2020",
+      "EstablishedDate": "2019-10-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140515,
+      "Case_Number": "PUR-2020-00003",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider E, for the recovery of costs incurred to comply with state and federal environmental regulations pursuant to VA Code section 56-585.1 A 5",
+      "EstablishedDate": "2020-01-10T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140640,
+      "Case_Number": "PUR-2020-00031",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its fuel factor pursuant to VA Code section 56-249.6",
+      "EstablishedDate": "2020-02-21T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 140810,
+      "Case_Number": "PUR-2020-00084",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER",
+      "Case_Caption": "Virginia Electric and Power - For approval of a rate adjustment clause pursuant  to VA  Code section 56-585.1 A 4     \r\n                \r\n",
+      "EstablishedDate": "2020-05-13T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140842,
+      "Case_Number": "PUR-2020-00101",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider R, Bear Garden Generating Station for the Rate Year Commencing April 1, 2021",
+      "EstablishedDate": "2020-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140843,
+      "Case_Number": "PUR-2020-00102",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider S, Virginia City Hybrid Energy Center for the Rate Year Commencing April 1, 2021\r\n",
+      "EstablishedDate": "2020-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140844,
+      "Case_Number": "PUR-2020-00103",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider W, Warren County Power Station for the Rate Year Commencing April 1, 2021",
+      "EstablishedDate": "2020-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140837,
+      "Case_Number": "PUR-2020-00096",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause: Rider U, new underground distribution facilities, for the Rate Year Commencing April 1, 2021",
+      "EstablishedDate": "2020-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140840,
+      "Case_Number": "PUR-2020-00099",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider B, Biomass Conversions of the Altavista, Hopewell, and Southampton Power Stations for the Rate Year Commencing April 1, 2021",
+      "EstablishedDate": "2020-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140841,
+      "Case_Number": "PUR-2020-00100",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider GV, Greensville County Power Station for the Rate Year Commencing April 1, 2021\r\n",
+      "EstablishedDate": "2020-06-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140919,
+      "Case_Number": "PUR-2020-00123",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause:  Rider US-4, Sadler Solar Project, for the rate year commencing June 1, 2021",
+      "EstablishedDate": "2020-07-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 140918,
+      "Case_Number": "PUR-2020-00122",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause:  Rider US-3, Colonial Trail West and Spring Grove 1 Solar Projects, for the rate year commencing June 1, 2021",
+      "EstablishedDate": "2020-07-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141015,
+      "Case_Number": "PUR-2020-00156",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "In Re: Base line determination, methodologies evaluation, measurement, & verification existing demand-side management programs, &  the consideration of standardized presentation of summary data  Virginia Electric & Power Company",
+      "EstablishedDate": "2020-08-28T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141318,
+      "Case_Number": "PUR-2020-00169",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of rate adjustment clause, designated rider RGGI, under section 55-585.1 A 5 e of the Code of Virginia",
+      "EstablishedDate": "2020-09-09T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141319,
+      "Case_Number": "PUR-2020-00170",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause, Rider RPS",
+      "EstablishedDate": "2020-09-09T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141401,
+      "Case_Number": "PUR-2020-00197",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of broadband capacity pilot projects pursuant to VA Code se56-585.1:9 , and for approval of a rate adjustment clause, designated, Rider RBB under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2020-10-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141436,
+      "Case_Number": "PUR-2020-00230",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider BW, Brunswick County Power Station, for the Rate Year Commencing September 1, 2021",
+      "EstablishedDate": "2020-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141437,
+      "Case_Number": "PUR-2020-00231",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider US-2,  Scott, Whitehouse, and Woodland Solar Power Stations, for the Rate Year Commencing September 1, 2021",
+      "EstablishedDate": "2020-10-06T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141727,
+      "Case_Number": "PUR-2021-00013",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Co. - For revision of rate adjustment clause: Rider E, for the recovery of costs incurred to comply with state and federal environmental regulations \r\n",
+      "EstablishedDate": "2021-01-19T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141870,
+      "Case_Number": "PUR-2021-00045",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause, designated rider CCR, for recovery of costs incurred to comply with VA Code section 10.1-1402.03",
+      "EstablishedDate": "2021-03-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 141907,
+      "Case_Number": "PUR-2021-00058",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric and Power Company - For a 2021 triennial review of the rates, terms and conditions for the provision of generation, distribution and transmission services pursuant to \u00a7 56-585.1 A of the Code of Virginia",
+      "EstablishedDate": "2021-03-31T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142070,
+      "Case_Number": "PUR-2021-00083",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause, designated Rider GT, under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2021-04-27T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142088,
+      "Case_Number": "PUR-2021-00097",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To Revise its Fuel Factor Pursuant to VA Code section 56-249.6",
+      "EstablishedDate": "2021-05-13T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 142103,
+      "Case_Number": "PUR-2021-00102",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For Approval of a Rate Adjustment Clause Pursuant to VA Code Section 56-585.1 A 4",
+      "EstablishedDate": "2021-05-24T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142116,
+      "Case_Number": "PUR-2021-00110",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Application of Virginia Electric and Power Company for Revision of a Rate Adjustment Clause: Rider U, New Underground Distribution Facilities, for the Rate Year Commencing April 1, 2022",
+      "EstablishedDate": "2021-06-09T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 142117,
+      "Case_Number": "PUR-2021-00111",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Application of Virginia Electric and Power Company for Revision of a Rate Adjustment Clause: Rider B, Biomass Conversions of the Altavista, Hopewell, and Southampton Power Stations, for the Rate Year Commencing April 1, 2022",
+      "EstablishedDate": "2021-06-09T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142118,
+      "Case_Number": "PUR-2021-00112",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Application of Virginia Electric and Power Company for Revision of a Rate Adjustment Clause: Rider GV, Greensville County Power Station, for the Rate Years Commencing April 1, 2022 and April 1, 2023",
+      "EstablishedDate": "2021-06-09T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142121,
+      "Case_Number": "PUR-2021-00115",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Application of Virginia Electric and Power Company for Revision of a Rate Adjustment Clause: Rider W, Warren County Power Station, for the Rate Year commencing April 1, 2022",
+      "EstablishedDate": "2021-06-09T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142119,
+      "Case_Number": "PUR-2021-00113",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Application of Virginia Electric and Power Company for Revision of a Rate Adjustment Clause: Rider R, Bear Garden Generating Station, for the Rate Years commencing April 1, 2022 and April 1, 2023",
+      "EstablishedDate": "2021-06-09T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142227,
+      "Case_Number": "PUR-2021-00138",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For an update of the 100 percent renewable energy tariff, designated Rider TRG, pursuant to \u00a7\u00a7 56-577 A 5 and 56-234 of the Code of Virginia                                                         \r\n",
+      "EstablishedDate": "2021-07-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142243,
+      "Case_Number": "PUR-2021-00146",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of RPS Development Plan, approval & certification of proposed CE-2 Solar Projects, revision of rate adjustment clause, designated Rider CE & a prudence determination to enter into power purchase agreement",
+      "EstablishedDate": "2021-07-14T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142253,
+      "Case_Number": "PUR-2021-00151",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of five voluntary tariffs to support transportation electrification, pursuant to section 56-234 A of the Code of Virginia",
+      "EstablishedDate": "2021-07-23T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 142236,
+      "Case_Number": "PUR-2021-00142",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval and certification of the Coastal Virginia Offshore Wind Commercial Project and Rider Offshore Wind",
+      "EstablishedDate": "2021-07-26T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142124,
+      "Case_Number": "PUR-2021-00118",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of rate adjustment clause Rider - US 3",
+      "EstablishedDate": "2021-08-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142125,
+      "Case_Number": "PUR-2021-00119",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of rate adjustment clause US-4",
+      "EstablishedDate": "2021-08-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142423,
+      "Case_Number": "PUR-2021-00220",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its cogeneration and small power production tariff pursuant to PURPA Section 210",
+      "EstablishedDate": "2021-09-16T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142458,
+      "Case_Number": "PUR-2021-00238",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider US-2, Scott, Whitehouse, and Woodland Solar Power Stations, for the Rate Year Commencing September 1, 2022",
+      "EstablishedDate": "2021-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142459,
+      "Case_Number": "PUR-2021-00239",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider BW, Brunswick County Power Station, for the Rate Years Commencing September 1, 2022 and September 1, 2023",
+      "EstablishedDate": "2021-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142439,
+      "Case_Number": "PUR-2021-00229",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause designated Rider SNA under \u00a7 56-585.1 A 6 of the Code of Virginia",
+      "EstablishedDate": "2021-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142614,
+      "Case_Number": "PUR-2021-00248",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause, designated Rider PPA, under \u00a7 56-585.1 A 5 d of the Code of Virginia, for the Rate Year commencing September 1, 2022",
+      "EstablishedDate": "2021-10-12T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142611,
+      "Case_Number": "PUR-2021-00247",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric & Power Company - For approval to continue existing and/or to design & operate new peak-shaving & energy efficiency programs or pilots as Phase X of Company's Demand Side Management Portfolio pursuant to VA Code section 56-585.1 A 5",
+      "EstablishedDate": "2021-10-18T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 142456,
+      "Case_Number": "PUR-2021-00237",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For Revision of its Renewable Energy Tariff, Rider G\r\n",
+      "EstablishedDate": "2021-10-28T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142676,
+      "Case_Number": "PUR-2021-00281",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider RGGI, pursuant to \u00a7 56-585.1 A 5 e of the Code of Virginia \r\n",
+      "EstablishedDate": "2021-12-06T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 142679,
+      "Case_Number": "PUR-2021-00282",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company: For revision of a rate adjustment clause,   designated Rider RPS, under section 56-585.1 A 5 d  of the Code of Virginia for the Rate Year commencing 9/1/22                                             \r\n",
+      "EstablishedDate": "2021-12-06T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142840,
+      "Case_Number": "PUR-2022-00006",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider E, for the recovery of costs incurred to comply with state and federal environmental regulations pursuant to VA Code section 56-585.1 A 5 e",
+      "EstablishedDate": "2022-01-26T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 142945,
+      "Case_Number": "PUR-2022-00033",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider CCR, for the recovery of costs incurred to comply with VA Code section 10.1-1402.03 and 56-585.1 A 5 e \r\n",
+      "EstablishedDate": "2022-02-28T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143112,
+      "Case_Number": "PUR-2022-00064",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its fuel factor",
+      "EstablishedDate": "2022-05-05T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 143113,
+      "Case_Number": "PUR-2022-00065",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment rider T-1",
+      "EstablishedDate": "2022-05-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143124,
+      "Case_Number": "PUR-2022-00070",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For authority to suspend a rate adjustment clause, designated Rider RGGI, under VA Code section 56-585.1 A 5 e, and for alternate recovery mechanism of certain compliance costs",
+      "EstablishedDate": "2022-05-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143080,
+      "Case_Number": "PUR-2022-00062",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of new broadband capacity projects pursuant to VA Code section  56-585.1:9 and for revision of rate adjustment clause: Rider RBB for the Rate Year Commencing Dec. 1, 2022",
+      "EstablishedDate": "2022-05-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143171,
+      "Case_Number": "PUR-2022-00088",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider B, Biomass Conversions of the Altavista, Hopewell and Southampton Power Stations for the Rate Years commencing April 1, 2023 and April 1, 2024",
+      "EstablishedDate": "2022-06-13T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143172,
+      "Case_Number": "PUR-2022-00089",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause: Rider U, new underground distribution facilities, for the Rate Year Commencing April 1, 2023",
+      "EstablishedDate": "2022-06-13T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143173,
+      "Case_Number": "PUR-2022-00090",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider W, Warren County Power Station, For the Rate Years Commencing April 1, 2023 and April 1, 2024",
+      "EstablishedDate": "2022-06-13T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143267,
+      "Case_Number": "PUR-2022-00101",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - Application for an update of the 100 percent renewable energy tariff, designated Rider TRG, pursuant to VA Code section 56-577 A 5 and 56-234",
+      "EstablishedDate": "2022-07-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143309,
+      "Case_Number": "PUR-2022-00120",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of rate adjustment clause  designated Rider US-3",
+      "EstablishedDate": "2022-08-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143310,
+      "Case_Number": "PUR-2022-00121",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of rate adjustment clause  designated Rider US-4",
+      "EstablishedDate": "2022-08-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143314,
+      "Case_Number": "PUR-2022-00124",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company d/b/a Dominion Energy - For approval of its 2022 RPS Development Plan under 56-585.5 D 4 of the Code of Virginia and related requests \r\n",
+      "EstablishedDate": "2022-08-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143389,
+      "Case_Number": "PUR-2022-00140",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of Rate Adjustment Clause, Designated Rider GT, under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2022-08-17T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143497,
+      "Case_Number": "PUR-2022-00164",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of adjustment clause: Rider US-2, Scott, Whitehouse, and Woodland Solar Power Stations, for the rate years Commencing Sept. 1, 2023 to Sept. 1, 2024",
+      "EstablishedDate": "2022-10-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143493,
+      "Case_Number": "PUR-2022-00162",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause designated Rider SNA under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2022-10-07T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143648,
+      "Case_Number": "PUR-2022-00187",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider OSW, Coastal Virginia Offshore Wind Commercial Project, for the Rate Year commencing September 1, 2023.",
+      "EstablishedDate": "2022-11-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143695,
+      "Case_Number": "PUR-2022-00202",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause, designated Rider PPA, under VA Code section 56-585.1.A 5, for the Rate Year commencing September 1, 2023",
+      "EstablishedDate": "2022-12-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143704,
+      "Case_Number": "PUR-2022-00208",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause, Rider RPS, under VA Code section 56-585.1 A 5 D for rate year commencing September 1, 2023",
+      "EstablishedDate": "2022-12-08T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143807,
+      "Case_Number": "PUR-2023-00005",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider E, for the recovery of costs incurred to comply with state and federal environmental regulations pursuant to VA Code section 56-585.1 A 5 e \r\n",
+      "EstablishedDate": "2023-01-25T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 143912,
+      "Case_Number": "PUR-2023-00022",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider CCR, for the recovery of costs incurred to comply with \u00a7 10.1-1402.03 of the Code of Virginia, pursuant to \u00a7 56-585.1 A 5 e",
+      "EstablishedDate": "2023-03-06T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144079,
+      "Case_Number": "PUR-2023-00067",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its fuel factor pursuant to VA Code section 56-249.6                                                                      \r\n",
+      "EstablishedDate": "2023-05-02T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 144077,
+      "Case_Number": "PUR-2023-00065",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause pursuant to  56-585.1 A 4 of the Code of Virginia\r\n",
+      "EstablishedDate": "2023-05-08T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144121,
+      "Case_Number": "PUR-2023-00094",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider GV, Greensville County Power Station, For the Rate Years Commencing April 1, 2024 and April 1, 2025",
+      "EstablishedDate": "2023-06-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144136,
+      "Case_Number": "PUR-2023-00101",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For a 2023 biennial review of the rates, terms \r\nand conditions for the provision of generation, distribution and transmission services pursuant to VA Code section 56-585",
+      "EstablishedDate": "2023-06-12T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144207,
+      "Case_Number": "PUR-2023-00112",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For a financing order authorizing the issuance of deferred fuel cost bonds",
+      "EstablishedDate": "2023-07-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144323,
+      "Case_Number": "PUR-2023-00136",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For a revision of a rate adjustment clause, designated Rider GT, under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2023-08-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144324,
+      "Case_Number": "PUR-2023-00137",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause, Rider US-3 Colonial Trail West and Spring Grove 1 Solar Facilities, for the rate year commencing June 1, 2023",
+      "EstablishedDate": "2023-08-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144325,
+      "Case_Number": "PUR-2023-00138",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause, Rider US-4, Sadler Solar Facility, for the rate year commencing June 1, 2024",
+      "EstablishedDate": "2023-08-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144424,
+      "Case_Number": "PUR-2023-00142",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of its 2023 RPS Development Plan under VA Code section 56-585.5 D 4",
+      "EstablishedDate": "2023-08-08T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144488,
+      "Case_Number": "PUR-2023-00171",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause          \r\ndesignated Rider SNA under  VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2023-10-04T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144489,
+      "Case_Number": "PUR-2023-00172",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause: Rider U, new underground distribution facilities,for the Rate Year Commencing August 1, 2024",
+      "EstablishedDate": "2023-10-04T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144509,
+      "Case_Number": "PUR-2023-00184",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Co - For approval of new broadband capacity projects pursuant to Va Code section 56-585.1:9 and for revision of rate adjustment clause: Rider RBB for the Rate Year Commencing May 1, 2024",
+      "EstablishedDate": "2023-10-16T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144643,
+      "Case_Number": "PUR-2023-00195",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause; Rider OSW, Coastal Virginia Offshore Wind Commercial Project, for the Rate Year commencing September 1, 2024",
+      "EstablishedDate": "2023-11-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144744,
+      "Case_Number": "PUR-2023-00221",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause, \r\ndesignated Rider RPS, under VA Code section 56-585.1 A 5 d for the Rate Year commencing Sept  1, 2024                 \r\n",
+      "EstablishedDate": "2023-12-08T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144830,
+      "Case_Number": "PUR-2023-00227",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER",
+      "Case_Caption": "In the matter of establishing energy efficiency savings targets for Virginia Electric and Power Company pursuant to VA Code sections 56-596.2 B 3, et al.",
+      "EstablishedDate": "2024-01-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144865,
+      "Case_Number": "PUR-2024-00013",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider E, for the recovery of costs incurred to comply with state and federal environmental regulations pursuant to VA Code section 56-585.1 A5e \r\n",
+      "EstablishedDate": "2024-01-25T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 144972,
+      "Case_Number": "PUR-2024-00029",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause: Rider CCR, for the recovery of costs incurred to comply with \u00a7 10.1-1402.03 of the Code of Virginia, pursuant to \u00a7 56-585.1 A5e",
+      "EstablishedDate": "2024-03-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145165,
+      "Case_Number": "PUR-2024-00078",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - To revise its Fuel Factor pursuant to VA Code section 56-249.6",
+      "EstablishedDate": "2024-05-01T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 145154,
+      "Case_Number": "PUR-2024-00071",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause Rider T-1",
+      "EstablishedDate": "2024-05-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145185,
+      "Case_Number": "PUR-2024-00088",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric and Power Company - For authority to reset its rate adjustment clause, designated Rider RGGI",
+      "EstablishedDate": "2024-05-16T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145201,
+      "Case_Number": "PUR-2024-00097",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of rate adjustment clause, designated Rider GEN, and the consolidation of Riders, B, BW, GV, US-2, US-3, and US-4 pursuant to VA Code sections 56-586.1 A 7, et al.",
+      "EstablishedDate": "2024-06-10T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145308,
+      "Case_Number": "PUR-2024-00123",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For an update of the 100 percent renewable energy tariff, designated Rider TRG                                                                                                                               \r\n",
+      "EstablishedDate": "2024-07-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145354,
+      "Case_Number": "PUR-2024-00134",
+      "Case_Name": "ENERGY EFFF SAVINGS",
+      "Case_Caption": "Ex Parte: In the matter of establishing energy efficiency savings targets pursuant to VA Code section 56-596.2 B 3",
+      "EstablishedDate": "2024-07-26T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145411,
+      "Case_Number": "PUR-2024-00137",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER C",
+      "Case_Caption": "Virginia Electric and Power Company  -  For approval of a rate adjustment clause, designated Rider DIST, VA Code section 56-585.1 A 6 and the consolidation of Riders GT and U pursuant to VA Code section 56-585.1 A 7",
+      "EstablishedDate": "2024-08-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145489,
+      "Case_Number": "PUR-2024-00147",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of its 2024 RPS Development Plan under VA Code section 56-585.5 D 4 and related requests",
+      "EstablishedDate": "2024-08-20T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145501,
+      "Case_Number": "PUR-2024-00154",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause, designated Rider SNA, under VA Code section 56-585.1 A 6",
+      "EstablishedDate": "2024-08-23T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145286,
+      "Case_Number": "PUR-2024-00114",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval to establish a voluntary, experimental companion tariff to support carbon-free and renewable energy generation, designated Schedule CFG",
+      "EstablishedDate": "2024-08-27T00:00:00.000",
+      "STATUS": "A"
+    },
+    {
+      "MATTER_NO": 145508,
+      "Case_Number": "PUR-2024-00157",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval to establish a new experimental electric vehicle tariff designated as Schedule GS-3 EV Public Charging, pursuant to VA Code section 56-234 B",
+      "EstablishedDate": "2024-08-29T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145546,
+      "Case_Number": "PUR-2024-00180",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of new broadband capacity projects pursuant to \u00a7 56-585.1:9 of the Code of Virginia and for revision of rate adjustment clause: Rider RBB for the Rate Year commencing May 1, 2025",
+      "EstablishedDate": "2024-10-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145642,
+      "Case_Number": "PUR-2024-00205",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company -  For approval of a rate adjustment clause    \r\ndesignated Rider SMR under Virginia Code sections 56-585.1:14 and 56-585.1 A 6",
+      "EstablishedDate": "2024-11-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145643,
+      "Case_Number": "PUR-2024-00206",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company & OSW Project LLC - For revision of rate adjustment clause: Rider OSW, Coastal Virginia Offshore Wind Commercial Project,    \r\nfor the Rate Year commencing September 1, 2025\r\n",
+      "EstablishedDate": "2024-11-01T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145732,
+      "Case_Number": "PUR-2024-00215",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of a rate adjustment clause, designated Rider RPS, under VA Code section 56-585.1 A 5 d for Rate Year commencing September 1, 2025",
+      "EstablishedDate": "2024-12-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145856,
+      "Case_Number": "PUR-2025-00017",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company -  For revision of rate adjustment clause: Rider E, for the recovery of costs incurred to comply with state and federal environmental regulations pursuant to \u00a7 56-585.1 A 5 e of the Code of Virginia\r\n",
+      "EstablishedDate": "2025-01-24T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 145916,
+      "Case_Number": "PUR-2025-00037",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company -  For approval of a Certificates of Public Convenience and Necessity to construct/operate the proposed Chesterfield Energy and approval of designated Rider CERC",
+      "EstablishedDate": "2025-03-04T00:00:00.000",
+      "STATUS": "U"
+    },
+    {
+      "MATTER_NO": 146026,
+      "Case_Number": "PUR-2025-00059",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Co - To revise its fuel factor pursuant to VA Code section 56-249.6",
+      "EstablishedDate": "2025-04-01T00:00:00.000",
+      "STATUS": "P"
+    },
+    {
+      "MATTER_NO": 146054,
+      "Case_Number": "PUR-2025-00063",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause Rider CCR, for recovery of costs incurred to comply with section 10.1-1402.3 of the Code of Virginia pursuant to section 56-585.1 A 5 e",
+      "EstablishedDate": "2025-04-04T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 146107,
+      "Case_Number": "PUR-2025-00076",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause pursuant to Va Code section 56-585.1 A 4       \r\n",
+      "EstablishedDate": "2025-05-02T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 146339,
+      "Case_Number": "PUR-2025-00136",
+      "Case_Name": "VIRGINIA ELECTRIC & POWER CO.",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause, designated Rider DIST, under \u00a7 56-585.1 A 6 of the Code of Virginia and the consolidation of Riders DIST and RBB pursuant to \u00a7 56-585.1 A 7 of the Code of Virginia",
+      "EstablishedDate": "2025-08-12T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 146407,
+      "Case_Number": "PUR-2025-00148",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of its 2025 RPS Development Plan under VA Code section 56-585.5 D 4 and related requests\r\n",
+      "EstablishedDate": "2025-08-18T00:00:00.000",
+      "STATUS": "U"
+    },
+    {
+      "MATTER_NO": 146025,
+      "Case_Number": "PUR-2025-00058",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For a 2025 biennial review of the rates, terms and conditions for the provision of generation, distribution and transmission services pursuant to VA Code section 56-585.1",
+      "EstablishedDate": "2025-08-22T00:00:00.000",
+      "STATUS": "U"
+    },
+    {
+      "MATTER_NO": 146502,
+      "Case_Number": "PUR-2025-00164",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of Rate Adjustment Clause, designated Rider SNA",
+      "EstablishedDate": "2025-09-09T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 146574,
+      "Case_Number": "PUR-2025-00195",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company and OSW Project LLC - For revision of rate adjustment clause: Rider OSW, Coastal Virginia Offshore Wind Commercial Project, for the Rate Year commencing September 1, 2026\r\n",
+      "EstablishedDate": "2025-11-03T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 146575,
+      "Case_Number": "PUR-2025-00196",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For approval of a rate adjustment clause    designated Rider SMR under \u00a7\u00a7 56-585.1:14 and 56-585.1 A 6 of the Code of Virginia",
+      "EstablishedDate": "2025-11-05T00:00:00.000",
+      "STATUS": "C"
+    },
+    {
+      "MATTER_NO": 146630,
+      "Case_Number": "PUR-2025-00221",
+      "Case_Name": "VIRGINIA ELECTRIC AND POWER CO",
+      "Case_Caption": "Virginia Electric and Power Company - For revision of rate adjustment clause, designated clause Rider RPS for the Rate Year commencing September 1, 2026",
+      "EstablishedDate": "2025-12-10T00:00:00.000",
+      "STATUS": "C"
+    }
+  ]
+}

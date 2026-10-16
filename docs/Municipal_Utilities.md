@@ -17,7 +17,7 @@ The objective includes the same customer charges, energy tiers, eligible-window 
 
 SVP proportional TOU tier allocation contains a small nonlinear term from the published rate rounding. Optimization uses a rigorous lower bound and reports the resulting dollar optimality-gap bound; final bills always use exact filed prices. The energy-term bound is $0.006 for D-1 and $0.008 for C-1, before the 2.85% public benefits charge. The optimizer rejects CB-3 cases where storage could cross the historical low-load PF exemption threshold. These cases remain available for bill replay. Monthly PF values and account activation states are held fixed.
 
-This is an import-only billing/storage study, with no AC power-flow validation or claim of network feasibility. It does not determine whether a different schedule should be assigned by the utility.
+This remains an import-only billing/storage study. Each returned no-battery/storage scenario now receives [shared OpenDSS QSTS checks](Utility_Electrical_Validation.md) under explicit representative secondary-service assumptions. Full interval results, comparison metrics and failure summaries are saved without changing bills or dispatch. Primary/high-voltage or unspecified service is reported as electrically unevaluated. Passing checks is not site-specific validation and does not determine whether a different schedule should be assigned by the utility.
 
 ## Geographic resolution
 

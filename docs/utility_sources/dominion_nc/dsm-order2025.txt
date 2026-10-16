@@ -1,0 +1,568 @@
+--- PDF page 1 ---
+1
+STATE OF NORTH CAROLINA
+UTILITIES COMMISSION
+RALEIGH
+DOCKET NO. E-22, SUB 711
+BEFORE THE NORTH CAROLINA UTILITIES COMMISSION
+In the Matter of
+Application of Virginia Electric and Power
+Company, d/b/a Dominion Energy North
+Carolina for Approval of Demand-Side
+Management and Energy Efficiency Cost
+Recovery Rider pursuant to N.C.G.S.
+§ 62-133.9 and Commission Rule R8-69
+
+)
+)
+)
+)
+)
+)
+ORDER APPROVING DSM/EE
+RIDER AND REQUIRING FILING OF
+PROPOSED CUSTOMER NOTICE
+HEARD: Tuesday, November 19, 2024 , at 10:00 a.m., in Commission Hearing
+Room 2115, Dobbs Building, 430 North Salisbury Street, Raleigh,
+North Carolina 27603
+BEFORE: Commissioner Kimberly W. Duffley, Presiding; Chair Charlotte A. Mitchell,
+and Commissioners Jeffrey A. Hughes, Floyd B. McKissick, Jr., Karen M.
+Kemerait, William M. Brawley, and Tommy Tucker
+APPEARANCES:
+For Dominion Energy North Carolina:
+Andrea R. Kells , McGuireWoods, LLP, 501 Fayetteville Street, Suite 500,
+Raleigh, North Carolina 27601
+For the Using and Consuming Public:
+Anne M. Keyworth and Thomas J. Felling , Public Staff  – North Carolina
+Utilities Commission , 4326 Mail Service Center , Raleigh, North Carolina
+27699-4300
+BY THE COMMISSION: Section 62-133.9(d) of the North Carolina General
+Statutes authorizes the Commission to approve an annual rider to the rates of electric
+utilities to recover all reasonable and prudent costs incurred for the adoption and
+implementation of new demand -side management (DSM) and energy efficiency  (EE)
+programs (together DSM/EE). In accordance with Commission Rule R8 -69(b), the
+DSM/EE rider consists of the utility’s reasonable and appropriate estimate of expenses
+expected to be incurred during  the rate period and a DSM/EE experience modification
+factor (EMF) rider to collect or refund the difference between the utility’s actual reasonable
+
+--- PDF page 2 ---
+2
+and prudent costs incurred during the test period and actual revenues realized during the
+test period under the DSM/EE rider then in effect. The Commission is also authorized to
+award incentives to electric utilities for adopting and implementing new DSM/E E
+programs, including appropriate rewards based on the sharing of savings achieved by the
+programs. These utility incentives are added to the utility’s reasonable and appropriate
+estimate of expenses expected to be incurred during the rate period and DSM/E E EMF
+riders described above.
+Further, Commission Rule R8-69(b) provides that, each year, the Commission will
+conduct a proceeding for each electric utility to establish an annual DSM/EE rider to
+recover DSM/EE related costs and utility incentives. Commission Rule R8-69(e) provides
+that the annual DSM/EE cost recovery rider hearing for each public utility will be
+scheduled as soon as practicable after the annual fuel and fuel-related charge adjustment
+proceeding held by the Commission for the electric public utility under Commission
+Rule R8-55.
+On August 13, 2024, Virginia Electric and Power Company, d/b/a Dominion Energy
+North Carolina (DENC) filed in this docket its application for Commission approval of its
+proposed DSM/EE rider  (Application), seeking approval of new DSM/EE rider rates to
+recover the DENC’s reasonable and prudent DSM/EE costs, net lost revenues (NLR),
+and a DSM/EE Portfolio Performance Incentive (PPI).
+Pertinent Proceedings in Prior Dockets
+On October 14, 2011, in Docket No. E -22, Sub 464, the Commission issued its
+Order Approving Agreement and Stipulation of Settlement, Approving DSM/EE Rider, and
+Requiring Compliance Filing (2010 Cost Recovery Order). In the 2010 Cost Recovery
+Order, the Commission approved the Agreement and Stipulation of Settlement between
+the Public Staff and DENC (Stipulation), filed on March 2, 2011, as well as the Cost
+Recovery and Incentive Mechanism (Mechanism), attached as Stipulation Exhibit 1 to the
+Stipulation (collectively, Stipulation and Mechanism).
+On December 13, 2011, in Docket No. E-22, Sub 473, the Commission issued its
+Order Approving DSM/EE Rider and Requiring Customer Notice in DENC’s 2011 DSM/EE
+cost recovery proceeding (2011 Cost Recovery Order). The 2011 Cost Recovery Order
+also approved a first Addendum to the Stipulation and Mechanism (Addendum I) related
+to jurisdictional allocation of DSM/EE costs. Addendum I was then incorporated as part
+of the Stipulation and Mechanism.
+On April 29, 2013, in Docket No. E-22, Sub 486, the Commission issued its Order
+Granting Conditional Approval of Cost Assignment Proposal that approved a cost
+assignment methodology for allocating 100% of the incremental costs of DENC’s
+prospective North C arolina-only Commercial Lighting Program and HVAC Upgrade
+Program to the North Carolina retail jurisdiction. On December 18, 2013, in Docket
+No. E-22, Sub 494, the Commission approved this cost assignment methodology for
+programs offered only in North Carolina as the second Addendum to the Stipulation and
+
+--- PDF page 3 ---
+3
+Mechanism (Addendum II). Addendum II was then incorporated as part of the Stipulation
+and Mechanism.
+On May 7, 2015, in Docket No. E -22, Sub 464, the Commission issued its Order
+Approving Revised Cost Recovery and Incentive Mechanism and Granting Waiver (Order
+on Revised Mechanism). The Order on Revised Mechanism approved an updated Cost
+Recovery and Ince ntive Mechanism for DSM/EE programs (Revised Mechanism). The
+Revised Mechanism was effective for projected DSM/EE costs and utility incentives on
+and after January 1, 2016, and for true -up of DSM/EE costs and utility incentives for the
+period beginning Jul y 1, 2014, through December 31, 2014, and on a lagging calendar
+year basis thereafter. The Revised Mechanism replaced the similar Mechanism that had
+been in effect since 2011. However, it also contained a provision stating that, beginning
+with 2017, DENC would switch the calculation of the bonus utility incentive approved for
+inclusion in its DSM/EE and DSM/EE EMF riders from a Program Performance Incentive
+to a Portfolio Performance Incentive.
+On May 22, 2017, in Docket No. E-22, Sub 464, the Commission issued its Order
+Approving Revised Cost Recovery and Incentive Mechanism (2017 Mechanism), which
+implemented the change to the PPI. The 2017 Mechanism became effective as of May 22,
+2017, for projected costs and utility incentives beginning January 1, 2018, and for true-ups
+of costs and utility incentives beginning January 1, 2017, and it is used in this proceeding
+to calculate the Rider CE billing rates related to DSM and EE measures implemented
+during Vintage Year 2022.
+On March 22, 2022, in Docket No. E-22, Sub 464, the Commission issued its Order
+Approving Revised Demand-Side Management and Energy Efficiency Cost Recovery and
+Incentive Mechanism (2022 Mechanism). The 2022 Mechanism adapted the
+methodology of the 2017 Mechanism with revisions as enumerated in the Public Staff’s
+September 16, 2021 update report in Docket No. E -22, Sub 464. The 2022 Mechanism
+adds specification that DENC’s recovery of PPI in the percentages listed in the
+2022 Mechanism is subject to a different determination by the Commission in DENC’s
+annual DSM/EE rider proceedings as well as the addition of a cap and floor on PPI based
+on margin of PPI revenue over program cost. The 2022 Mechanism is effective for vintage
+years beginnin g January 1, 2023, and will remain in effect until a new mechanism is
+established. The 2022 Mechanism will be used in this rider proceeding to determine the
+Rider C billing rates related to DSM and EE measures projected to be installed during
+Vintage Year 2025.
+The Commission most recently approved DENC’s recovery of its reasonable and
+prudent DSM/EE costs and utility incentives by Order issued on January 17, 2024, in
+Docket No. E-22, Sub 676 (2024 Order).
+Proceedings in the Present Docket
+On August 13, 2024, with its Application, DENC filed the direct testimony of
+Michael T. Hubbard, and the direct testimonies and exhibits of Rachel L. Hagerman,
+
+--- PDF page 4 ---
+4
+Jarvis E. Bates, Elizabeth B. Lecky, Emilia L. Catron, and Eleanor K. Keeton. In summary,
+DENC’s Application seeks recovery of DENC’s reasonable and appropriate estimate of
+expenses and utility incentives expected to be incurred during the rate period (Rid er C)
+and a DSM/EE EMF rider (Rider CE) to collect or refund the difference between DENC’s
+actual reasonable and prudent costs and utility incentives incurred during the test period
+and actual revenues realized during the test period under the DSM/EE rider then in effect.
+The intervention and participation in this docket by the Public Staff is recognized
+pursuant to N.C.G.S. § 62-15(d) and Commission Rule R1-19(e).
+On September 3, 2024, the Commission issued an Order Scheduling Hearing,
+Establishing Procedural and Filing Requirements, and Requiring Public Notice
+(Procedural Order). In the Procedural Order, the Commission (1) ordered DENC to file a
+revenue requirement schedule demonstrating the amount of revenue that would be
+collected during the billing period under both existing and proposed rates and the revenue
+requirement approved in DENC’s last annual DSM/EE rider proceed ing; and
+(2) established deadlines for the filing of petitions to intervene, intervenor testimony and
+exhibits, and DENC’s rebuttal testimony and exhibits. The Procedural Order scheduled
+the hearing in this proceeding for Tuesday, November 19, 2024.
+On September 6, 2024, the Carolina Industrial Group for Fair Utility Rates I
+(CIGFUR I) filed a Petition to Intervene. The Commission granted this petition to intervene
+on September 13, 2024.
+On September 13, 2024, DENC filed the revenue requirement schedule pursuant
+to the Procedural Order.
+On October 29, 2024, DENC filed an Affidavit of Publication indicating that it had
+provided notice of the hearing in newspapers of general circulation in its service territory.
+Also on October 29, 2024, the Public Staff filed the testimony and exhibits of
+Tommy Williamson, Jr., and the notice of affidavit and the affidavit of Vevian Fang. No
+other intervening party filed testimony.
+On November 7, 2024, DENC filed a letter in lieu of rebuttal testimony.
+Also on November 7, 2024, DENC and the Public Staff filed a Joint Motion to
+Excuse Witnesses and Cancel Evidentiary Hearing.
+On November 14, 2024, the Commission issued its Order Excusing Witnesses,
+Accepting Testimony, Canceling Expert Witness Hearing, and Requiring Proposed
+Orders. In the Order, the Commission found good cause to excuse all DENC and Public
+Staff witnesses from  testifying at the expert witness hearing, to receive the witnesses’
+pre-filed testimony, exhibits, and affidavit into evidence, and to cancel the expert witness
+hearing scheduled for November 19, 2024. The Commission also directed that proposed
+orders should be filed on or before December 13, 2024.
+
+--- PDF page 5 ---
+5
+This matter came on for public hearing as scheduled on November 19, 2024,
+before Hearing Examiner Warren Hicks. No public witnesses appeared at the hearing.
+On December 13, 2024, DENC and the Public Staff filed a Joint Proposed Order.
+Based upon DENC’s Application; the testimony, exhibits, and affidavit received into
+evidence; and the record as a whole, the Commission makes the following
+FINDINGS OF FACT
+1. Virginia Electric and Power Company operates in the State of North
+Carolina as DENC. DENC is engaged in the business of generating, transmitting,
+distributing, and selling electric power and energy to the public for compensation in North
+Carolina and is subject to the jurisdiction of the Commission as a public utility.
+2. DENC is lawfully before the Commission based upon its Application filed
+pursuant to N.C.G.S. § 62-133.9 and Commission Rule R8-69.
+3. The test period for purposes of this proceeding is the 12 -month period of
+January 1, 2023, through December 31, 2023.
+4. The rate period for purposes of this proceeding is the 12 -month period of
+February 1, 2025, through January 31, 2026.
+5. DENC has requested rate period recovery of costs and utility incentives (PPI)
+related to the following previously approved DSM/EE programs: (a) the Phase I Residential
+Air Conditioner Cycling Program; (b) the Phase VII Programs: Non-Residential Heating and
+Cooling Efficiency, Non-Residential Lighting Systems & Controls, Non-Residential Window
+Film, Non-Residential Office, Non-Residential Small Manufacturing, Residential Appliance
+Recycling, Residential Home Energy Assessment, and Resi dential Efficient Produ cts
+Marketplace; (c) the Phase VIII Programs: Residential Smart Thermostat EE, Residential
+Smart Thermostat DR, Residential Energy Efficiency Kits, Residential Home Retrofit, Small
+Business Enhanced, and Non-Residential New Construction; (d) the Phase IX Programs:
+Residential Income Age Qualifying  Home Impr ovement, Residential Smart Home,
+Residential Virtual Audit, Residential Water Savings Energy Efficiency, Residential Water
+Savings Demand Response, Non -Residential Building Automati on, Non -Residential
+Building Optimization, Non -Residential Engagement, and Non -Residential Enhanced
+Prescriptive; (e) the Phase X Non-Residential Lighting Systems and Controls Program; and
+(f) the Phase XI Residential Income and Age Qualifying Bundle and Residential Efficient
+Products Marketplace Programs.
+6. In addition, DENC has requested test period recovery of costs and utility
+incentives (NLR and PPI) related to the following approved DSM/EE Programs: (a) the Phase
+I DSM/EE Residential Air Conditioner Cycling Program and Commercial Lighting; (b) Phase
+II p rograms: Residential Heat Pump Upgrade, Residential Home Energy Check -up,
+Non-Residential Duct Testing & Sealing, and Non-Residential Energy Audit; (c) the Phase III
+
+--- PDF page 6 ---
+6
+DSM/EE Programs: Non -Residential Lighting Systems and Controls, Non -Residential
+Heating and Cooling Efficiency, and Non -Residential Window Film; (d)  the Phase IV
+Residential Income & Age Qualifying Home Improvement Program; (e)  the Phase V
+Non-Residential Small Business Improvement Program; (f) the NC-only Residential Retail
+LED Lighting Program; (g)  the Phase VI Non -Residential Prescriptive Program; (h)  the
+Phase VII Programs: Non -Residential Heating and Cooling Efficiency, Non -Residential
+Lighting Systems  & Controls, Non -residential Window Film, Non -Residential Office,
+Non-Residential Small Manufacturing, Residential Appliance Recycling, Residential Home
+Energy Assessment, and Residential Efficient Products Marketplace; (i)  the previously
+approved Phase VIII Programs: Non-Residential New Construction, Non-Residential Small
+Business Improvement Enhanced, Residential EE Kits, Residential Smart Thermostat DR,
+Residential Smart Thermostat EE, and Residential Home Retrofit; (j) the previously approved
+Phase IX P rograms: Non -Residential Building Automation, Non -residential Building
+Optimization, Non -Residential Engagement, Non -Residential Prescriptive, Residential
+Income and Age Qualifying Home Improvement, Residential Smart Home, Residential Virtual
+Audit, Residential Water Savings EE, and Residential Water Savings DR; and (k)  the
+previously approved Phase X Program: Non-Residential Lighting Systems and Controls.
+7. Recovery of DENC’s forecasted DSM/EE program costs, common costs,
+NLR, and PPI is subject to the terms of the 2022 Mechanism. Recovery of the true-up of
+DENC’s test period DSM/EE program costs, common costs, NLR, and PPI, is subject to
+the terms of the 201 7 and 2022 Mechanisms. DENC should be allowed to recover its
+projected rate period and actual test period costs and utility incentives associated with
+offering each of its approved programs as requested in its Application. The requested
+cost recovery of pr ogram costs, common costs, NLR, and PPI is reasonable and
+consistent with the 2017 and 2022 Mechanisms.
+8. DENC is not seeking recovery of projected rate period NLR in Rider C, and
+its request to true up NLR in Rider CE in future proceedings is reasonable.
+9. DENC’s proposed North Carolina retail DSM/EE Rider C rate period
+revenue requirement of $4,035,376, consisting of DSM/EE program costs, common
+costs, and a PPI, is reasonable.
+10. For purposes of determining its DSM/EE EMF, Rider CE, DENC’s
+reasonable and prudent North Carolina retail total revenue requirement for the DSM/EE
+EMF test period, consisting of DSM/EE program costs, common costs, and utility
+incentives, as reduced by Ride r C revenues collected for the test year, is a net
+under-recovery of $198,863.
+11. Rider C as proposed in the Application is reasonable and appropriate and
+consists of the following increment customer class billing factors, including the North
+Carolina regulatory fee: Residential – 0.1520 ¢/kilowatt -hour (kWh); Small General
+Service and Public Authority – 0.1559 ¢/kWh; Large General Service – 0.1217 ¢/kWh;
+and no charge for 6VP, NS, Outdoor Lighting, and Traffic Lighting. It is reasonable and
+appropriate for Rider C to become effective for usage on and after February 1, 2025.
+
+--- PDF page 7 ---
+7
+12. Rider CE as proposed in the Application is reasonable and appropriate and
+consists of the following increment customer class billing factors, including the North
+Carolina regulatory fee: Residential – 0.0063 ¢/kWh; Small General Service and Public
+Authority – 0.0096 ¢/kWh; Large General Service – 0.0075 ¢/kWh; and no charge for
+6VP, NS, Outdoor Lighting, and Traffic Lighting. It is reasonable and appropriate for Rider
+CE to become effective for usage on and after February 1, 2025.
+13. DENC requested the recovery of NLR in the amount of $ 539,676 and PPI
+in the amount of $ 344,538 for the test period, and a projected PPI of $298,286, but no
+NLR, for the rate period. DENC’s calculation and proposed recovery of NLR and a PPI is
+consistent with both the 2017 and 2022 Mechanisms and is appropriate for recovery in
+this proceeding.
+14. The jurisdictional and customer class cost allocations for Rider C and
+Rider CE included in the testimony and exhibits of DENC witness Catron are acceptable
+for purposes of this proceeding and are consistent with the 2017 and 2022 Mechanisms.
+15. DENC satisfactorily explained its sponsorship and consumer education and
+awareness activities, and the volume of activity associated with such initiatives during the
+test period, as directed by the Commission in its final order issued in DENC’s 2016
+DSM/EE cost recovery proceeding. It is appropriate for DENC to continue to provide such
+information to the Commission in future rider proceedings.
+16. The evaluation, measurement, and verification (EM&V) analyses and
+reports prepared by DENC are reasonable for purposes of this proceeding. The EM&V
+data provided by DENC and reviewed by the Public Staff for Vintage Year 2023 and
+earlier vintages are suffic ient to consider those vintage years complete for all programs
+operating in those years.
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 1–4
+These findings of fact are essentially informational, procedural, and jurisdictional
+in nature and are uncontroverted. The test period used by DENC is consistent with the
+2017 and 2022 Mechanisms and with Commission Rule R8 -69. In addition, the
+February 1, 2025, through January 31, 2026, rate period proposed by DENC is consistent
+with the Commission’s January 10, 2019 Order Approving DSM/EE Rider and Requiring
+Filing of Proposed Customer Notice, which was issued in Docket No. E-22, Sub 556.
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 5–8
+The evidence supporting these findings of fact is contained in DENC’s Application;
+the direct testimony and exhibits of DENC witnesses Lecky, Bates, Hagerman, and
+Hubbard; and the testimony of Public Staff witness Williamson.
+DENC witness Lecky testified that she included in the Rider C (rate period) revenue
+requirement certain projected costs associated with the following previously approved
+
+--- PDF page 8 ---
+8
+DSM/EE programs: (a) the Phase I Air Conditioner Cycling Program; (b) the Phase VII
+Programs: Residential Appliance Recycling, Residential Efficient Products Marketplace,
+Residential Home Energy Assessment, Non-Residential Lighting Systems & Controls, Non-
+Residential Heating and Cooling Efficiency, Non-Residential Window Film, Non-Residential
+Small Manufacturing, and Non-Residential Office; (c) the Phase VIII Programs: Residential
+Energy Efficiency Kit, Residential Smart Thermostat Management Demand Response,
+Residential Smart Thermostat Management Energy Efficiency, Residential Home Retrofit,
+Non-Residential New Construction, and Small Business Improvement Enhanced; (d) the
+Phase IX Programs: Residential Income Age Qualifying, Residential Smart Home,
+Residential Virtual Audit, Residential Water Savings Energy Efficiency, Residential Water
+Savings Demand Response, Non -Residential Building Automation, Non -Residential
+Building Optimization, Non -Residential Engagement, and Non -Residential Enhanced
+Prescriptive; (e) the Phase X Non-Residential Lighting Systems and Controls; and (f) the
+Phase XI Residential Income and Age Qualifying Bundle and Residential Efficient Products
+Marketplace. Lecky Direct Test. at 2–3.
+DENC witness Lecky also testified that the Rider CE revenue requirement in the
+present case includes true-ups for the Phase I, Phase III, Phase V, Phase VI, Phase VII,
+Phase VIII, and Phase IX Programs during the January 1, 2023, through December 31,
+2023, test period, incorporating actual costs, NLR, and PPI.  Id. at 3. Witness Lecky’s
+Schedule 2, page 3, line 13, provides a list of the programs included for cost recovery in
+the Rider CE revenue requirement , which include: (a) the Phase I DSM/EE Residential
+Air Conditioner Cycling Program and Commercial Lighting; (b)  Phase II programs:
+Residential Heat Pump Upgrade, Residential Home Energy Check -up, Non-Residential
+Duct Testing & Sealing, and Non -Residential Energy Audit; (c)  the Phase III DSM/EE
+Programs: Non-Residential Lighting Systems and Controls, Non-Residential Heating and
+Cooling Efficiency, and Non -Residential Window Film; (d)  the Phase IV Residential
+Income & Age Qualifying Home Improvement Program; (e) the Phase V Non-Residential
+Small Business Improvement Program; (f)  the NC-only Residential Retail LED Lighting
+Program; (g)  the Phase VI Non -Residential Prescriptive Program; (h)  the Phase VII
+Programs: Non -residential Heating and Cooling Efficiency, Non -Residential Lighting
+Systems & Controls, Non -Residential Window Film, Non -residential Office,
+Non-residential Small Manufacturing, Residential Appliance Recycling, Residential Home
+Energy Assessment, and Residential Efficient Products Marketplace; (i)  the previously
+approved Phase VIII Programs: Non -Residential New Construction, Non -Residential
+Small Business Improvement Enhanced,  Residential EE Kits, Residential Smart
+Thermostat DR, Residential Smart Thermostat EE, and Residential Home Retrofit; (j) the
+previously approved Phase IX Programs: Non -Residential Building Automation,
+Non-Residential Building Optimization, Non -residential Engagement, Non -Residential
+Prescriptive, Residential Income and Age Qualifying Home Improvement, Residential
+Smart Home, Residential Virtual Audit, Residential Water Savings EE, and Residential
+Water Savings DR; and (k)  the previously approved Phase X P rogram: Non-Residential
+Lighting Systems and Controls.
+
+--- PDF page 9 ---
+9
+DENC witness Bates identified and explained the nature of common costs that are
+incurred to support DSM/EE programs generally but are not tied to specific programs.
+Bates Direct Test. at 5.
+DENC witness Hagerman presented testimony and exhibits setting forth DENC’s
+estimated Utility Cost Test (UCT) and Total Resource Cost (TRC) results for Vintage Year
+2025 for the active DSM and EE programs that are not subject to closure or suspension.
+Hagerman Direct Test . at  5–7. Witness Hagerman explained that because DENC’s
+system for modeling projected costs and benefits is based on the calendar year, she
+applied the projected costs for calendar year 2025 to the proposed February 1, 2025,
+through January 31, 2026 rate period. Id.
+DENC witness Hubbard also testified that DENC has not projected NLR for the
+rate period, consistent with its approach in the DSM/EE cost recovery riders since 2014.
+Hubbard Direct Test. at 21. He proposed to true up NLR in future proceedings. Id. Witness
+Hubbard also stated that DENC had not identified any found revenues. Id. at 21-22.
+Public Staff witness Williamson concurred with the programs listed by DENC for
+cost and incentive recovery in this proceeding. Williamson Test. at 13.
+Based upon the foregoing competent, material, and substantial evidence in the
+whole record, the Commission finds DENC’s proposed approach to recovery of NLR and
+found revenues to be reasonable in this proceeding. Consistent with the Commission’s
+previous orders approving DENC’s DSM/EE programs and the evidence in the record,
+the Commission finds and concludes that DENC should be allowed to recover its
+projected rate period and actual test period costs and utility incentives (NLR and PPI)
+associated with off ering each of its approved Programs as requested in its Application
+and its direct testimony and exhibits. The Commission also finds and concludes that the
+requested cost recovery of program costs, common costs, NLR, and PPI is consistent
+with the 2017 and 2022 Mechanisms. Finally, the Commission concludes that DENC’s
+request to true up NLR in Rider CE in future proceedings is reasonable.
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 9–14
+The evidence supporting these findings of fact is contained in DENC’s Application;
+the direct testimony and exhibits of DENC witnesses Bates, Catron, Lecky, and Keeton;
+and the affidavit of Public Staff affiant Fang.
+DENC witness Bates determined the system-wide program and common costs for
+the DSM/EE programs in the rate period and in the test period. Bates Direct Test. at 2–3.
+He also calculated the PPI for each program. Id.
+DENC witness Catron allocated the common costs among the DSM/EE programs.
+Catron Direct Test . at 3-4. Witness Catron then allocated a share of the system -wide
+program costs (including common costs as allocated to the individual programs) to the
+North Carolina retail jurisdiction. Id. at 4-5. Pursuant to the 2017 and 2022 Mechanisms,
+
+--- PDF page 10 ---
+10
+DSM costs were allocated on the basis of DENC’s coincident peak, and EE costs were
+allocated on the basis of energy.  Id. at 5.  Finally, witness Catron allocated the North
+Carolina retail jurisdictional costs among the North Carolina retail customer classes
+pursuant to the methodology set out in the 2017 and 2022 Mechanisms. Id. at 5–6.
+DENC witness Lecky used the operating expenses, capital costs, and PPI as
+provided by witness Bates, and as allocated jurisdictionally by witness Catron, to develop
+a rate period revenue requirement for Rider C.  Lecky Direct Test. at 4, 9 –10. Witness
+Lecky indicated DENC was not requesting any projected NLR amount be included in
+Rider C for recovery during the rate period. Id. at 5. For capital costs, witness Lecky used
+the 9.75% rate of return on common equity as provided in DENC’s June 30, 2024 ES -1
+Report. Id. at 6.
+Likewise, witness Lecky developed the test period true -up revenue requirement
+for Rider CE by comparing the test period actual revenues, received from DENC’s
+accounting department, with the test period costs, NLR, and PPI, as provided by witness
+Bates and as allocated jurisdictionally by witness Catron. Id. at 11. For Rider CE, witness
+Lecky determined the amount of NLR by taking the applicable monthly non -fuel average
+base rates provided by witness Keeton, and the jurisdictional energy savings as provided
+by witness Hagerman, and then excluding lost revenues (1) outside the 36-month window
+established in the 2017 Mechanism, and (2)  already recognized through non -fuel base
+rates. Id. at 13-15. Further, witness Lecky determined the carrying costs on deferrals and
+the financing costs on any over- or under-recoveries. Id. at 12-13.
+On DENC Exhibit EBL-1, Schedule 1, page 1, witness Lecky calculated DENC’s
+requested North Carolina retail rate period (February 1, 2025, through January 31, 2026)
+revenue requirement (for Rider C) as follows:
+Projected Operating Expense  $3,731,762
+Projected Capital Cost $5,329
+Projected NLR $0
+Projected PPI $298,286
+Total Rider C revenue requirement $4,035,376
+On DENC Exhibit EBL-1, Schedule 2 (and as also reflected in the affidavit of Public
+Staff affiant Fang), witness Lecky calculated DENC’s requested North Carolina retail test
+period DSM/EE EMF (January 1, 2023, through December 31, 2023) revenue
+requirement (for Rider CE) as follows:
+Program Costs (including common costs) $3,026,848
+NLR $539,676
+PPI $344,538
+Test period Rider C revenues ($3,679,264)
+Carrying costs ($32,935)
+Total Rider CE revenue requirement $198,863
+
+--- PDF page 11 ---
+11
+DENC witness Catron, in Exhibit ELC-1, Schedule 3, pages 2 and 4, allocated the
+Rider C and Rider CE revenue requirements among the North Carolina retail customer
+classes. The results of witness Catron’s allocations are shown below:
+Rate Class Rider C Amount  Rider CE Amount
+Residential $2,459,338 $102,007
+SGS Co & Muni $1,187,773 $72,995
+LGS $388,265 $23,861
+6VP $0 $0
+NS $0 $0
+ST & Outdoor Lighting $0 $0
+Traffic Lighting $0 $0
+DENC witness Keeton discussed how she calculated the Rider C and Rider CE
+rates proposed for the rate period. Witness Keeton determined the North Carolina retail
+forecasted net kWh sales for the rate period by revenue class, and further allocated those
+forecasted sales down to customer (rate) classes, less the kWh sales for customers who
+have opted out of the DSM/EE rider.  Keeton Direct Test. at 3. Witness Keeton testified
+that she then divided the customer class revenue requirements by customer class
+forecasted kWh sales to calculate Rider C. Id. at 2–3. Witness Keeton used the same
+methodology to calculate Rider CE for the test period. Id. at 5.
+DENC witness Keeton also testified that she provided witness Lecky with the
+monthly non-fuel average base rates for her use in determining lost revenues. Id. at 6.
+The Application; witness Keeton’s DENC Exhibit EKK-1, Schedule 1, page 11; and
+DENC Exhibit EKK-1, Schedule 4, page 2 support the following customer class Rider C
+and Rider CE billing factors to be put into effect on February 1, 2025:
+Customer Class Rider C Rate
+(cents/kwh)
+Rider CE Rate
+(cents/kwh)
+Residential 0.1520 0.0063
+Small General Service &
+Public Authority
+0.1559 0.0096
+Large General Service 0.1217 0.0075
+6VP 0 0
+NS 0 0
+Outdoor Lighting 0 0
+Traffic Lighting 0 0
+The billing factors include the Regulatory Fee.
+
+--- PDF page 12 ---
+12
+Public Staff affiant Fang did not oppose DENC’s proposed revenue requirements
+or billing factors and stated  that her investigation of DENC’s filing in this proceeding
+focused on determining whether the proposed DSM/EE and DSM/EE EMF billing rates
+were calculated in accordance with the 2022 Mechanism, and otherwise adhered to
+sound ratemaking concepts and principles. Fang Aff. at 3. Affiant Fang stated that among
+the other procedures performed by the Public Staff, the investigation included a review of
+the actual DSM/EE program costs incurred by DENC during the 12 -month period ended
+December 31, 2023, including the sampling of source documentation for test year costs
+for which DENC seeks recovery. Id. at 4. Affiant Fang recommended approval of the Rider
+C and CE rates as proposed by DENC in its Application and that billing rates be approved
+subject to any true -ups in future cost recovery proceedin gs consistent with the 2022
+Mechanism, N.C.G.S. §  62-133.9, Commission Rule R8 -69, and future Commission
+Orders. Id.
+Based upon the foregoing competent, material, and substantial evidence in the
+whole record , the Commission finds and concludes that the DSM/EE EMF revenue
+requirement and proposed Rider CE billing factors to be charged during the rate period,
+as proposed in DENC’s Application and direct testimony, are appropriate. The
+Commission also finds and concludes that the projected DSM/EE rate period revenue
+requirement and Rider C billing factors to be charged during the rate period, as proposed
+in DENC’s Applicatio n, are appropriate. Regarding the requested recovery of NLR and
+PPI, the Commission finds and concludes that the amounts as proposed by DENC are
+appropriate for recovery in this proceeding and are calculated in a manner consistent with
+the 2017 and 2022 Mechanisms.
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 15
+The evidence supporting this finding of fact is contained in the direct testimony of
+DENC witness Hubbard.
+In response to Ordering Paragraph No. 5 of the Commission’s 2024 Order, which
+required DENC to continue to provide a listing of its event sponsorship and consumer
+education and awareness initiatives during the test period in future DSM/EE rider
+proceedings, DENC witness Hubbard provided information on consumer education and
+awareness initiatives conducted by DENC’s Energy Conservation (EC) department during
+the test period. Hubbard Direct Test. at 14–16. Witness Hubbard explained that most of
+DENC’s communi cation and outreach activities are tied directly to specific DSM/EE
+programs, so actual costs for general education and awareness are limited. Id. at 14. The
+EC department relies heavily on online tools for general education; its web pages
+received around 440,000 visits in the test period, and the web pages for the
+implementation contractor, Honeywell, also received over 789,000 visits.  Id. at 14–15.
+Witness Hubbard stated that DENC is continually growing its social media presence,
+gaining over 166,000, 65,500, and 12,000 followers on Facebook, X (formerly Twitter),
+and Instagram, respectively. Id. at 15.
+
+--- PDF page 13 ---
+13
+The Public Staff did not oppose DENC’s consumer education and awareness
+activities or costs.
+Based on the foregoing competent, material, and substantial evidence in the whole
+record, the Commission finds and concludes that DENC’s consumer education and
+awareness activities and costs are reasonable for purposes of this proceeding. Further,
+the Commission will require DENC to continue to report on its consumer education and
+awareness activities and the volume of activity associated with each during the test period
+in its annual DSM/EE cost recovery filing.
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 16
+The evidence supporting this finding of fact is contained in the direct testimony and
+schedules of DENC witness Hagerman; the EM&V report filed by DENC  on June 15,
+2024, in Docket No. E-22, Sub 676; and the testimony of Public Staff witness Williamson.
+DENC witness Hagerman testified to DENC’s projected EM&V costs during
+calendar year 2025 and actual EM&V costs during the 2023 test period. Hagerman Direct
+Testimony at 7. Witness Hagerman noted that DENC plans to continue to file its annual
+EM&V report with the Commission on June 15 each year. Id.
+Public Staff witness Williamson testified that he had reviewed DENC’s 2024 EM&V
+report for calendar year 2023 with the assistance of GDS Associates, Inc.  Williamson
+Testimony at 12. Based on the Public Staff’s review, witness Williamson did not raise any
+issues concerning DENC’s EM&V Report, and stated that through a meeting with DENC
+and additional sampling, he confirmed that the information in the 2024 EM&V Report flows
+into the PPI calculations of both Riders C and CE, and the NLR calculations included i n
+Rider CE. Id. at 12–13. Based on this information, he testified that DENC appropriately
+incorporated the results of its EM&V efforts into its DSM/EE rider calculations. Id.
+Based on the foregoing competent, material, and substantial evidence in the whole
+record, the Commission finds and concludes that the EM&V analyses and reports
+prepared by DENC are reasonable for purposes of this proceeding.
+IT IS, THEREFORE, ORDERED as follows:
+1. That the appropriate annual DSM/EE rider, Rider C, to become effective on
+and after February 1, 2025, consists of the following customer class billing factor
+increments (including Regulatory Fee): Residential – 0.1520 ¢/kWh; Small General
+Service and Publi c Authority – 0.1559 ¢/kWh; Large General Service – 0.1217 ¢/kWh;
+and no charge for 6VP, NS, Outdoor Lighting, and Traffic Lighting;
+2. That the appropriate annual DSM/EE EMF rider, Rider CE, to become
+effective on and after February 1, 2025, consists of the following customer class
+increment billing factors (including Regulatory Fee): Residential – 0.0063 ¢/kWh; Small
+
+--- PDF page 14 ---
+14
+General Service and Public Authority – 0.0096 ¢/kWh; Large General Service – 0.0075
+¢/kWh; and no increment for 6VP, NS, Outdoor Lighting, and Traffic Lighting;
+3. That DENC shall work with the Public Staff to prepare a joint notice to
+customers of the rate changes ordered by the Commission in this docket, as well as in
+Docket No. E -22, Subs 694, 710, and 712, and DENC shall file such notice for
+Commission approval as soon as practicable, but not later than five working days after
+the Commission issues the last of its orders in the above-referenced dockets;
+4. That DENC shall file appropriate rate schedules and riders with the
+Commission to implement the provisions of this Order as soon as practicable; and
+5. That DENC shall continue to provide a listing of DENC’s event sponsorship
+and consumer education and awareness initiatives during the test period in future
+DSM/EE rider proceedings.
+ISSUED BY ORDER OF THE COMMISSION.
+This the 10th day of January, 2025.
+NORTH CAROLINA UTILITIES COMMISSION
+
+
+A. Shonta Dunston, Chief Clerk

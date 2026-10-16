@@ -19,7 +19,7 @@ from joserfc import jwk, jwt
 
 from src.local_web.auth import AuthenticationRequired, OIDCConfig, OIDCProvider, Sessions, digest
 from src.local_web.runtime import Application, Store, ROOT, JobRunner
-from src.local_web.server import make_server
+from src.local_web.server import make_server, TemporaryFileResponse
 from src.local_web.worker import write_json
 
 CONFIG = OIDCConfig('https://identity.example', 'client', 'test-client-secret', 'http://127.0.0.1:8765/auth/callback')
@@ -79,7 +79,15 @@ def client(auth, call, user):
     return headers, caps
 
 
-def test_guest_study_is_private_then_saved_after_sign_in(tmp_path):
+def test_guest_study_is_private_then_saved_after_sign_in(tmp_path, monkeypatch):
+    bundle_closed = threading.Event()
+    original_close = TemporaryFileResponse.close
+
+    def record_bundle_close(response):
+        original_close(response)
+        bundle_closed.set()
+
+    monkeypatch.setattr(TemporaryFileResponse, 'close', record_bundle_close)
     app = Application(tmp_path, embedded_worker=False)
     with socket.socket() as sock:
         sock.bind(('127.0.0.1', 0))
@@ -118,6 +126,9 @@ def test_guest_study_is_private_then_saved_after_sign_in(tmp_path):
         assert call('/api/studies/'+sid, headers=guest)[1]['expires_at'] is not None
         status, bundle, _ = call('/api/studies/'+sid+'/tables.zip', headers=guest)
         assert status == 200 and bundle.startswith(b'PK')
+        # Reading Content-Length bytes can finish before the WSGI iterator is
+        # closed. Verify actual finalization, not a client/server scheduling race.
+        assert bundle_closed.wait(timeout=5), 'ZIP response did not finalize'
         assert not list(app.store.directory.glob('*.zip'))
         assert app.bundle_slot.acquire(blocking=False)
         try:

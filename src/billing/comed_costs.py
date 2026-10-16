@@ -10,7 +10,6 @@ import pandas as pd
 
 from .comed_residential import calculate_comed_residential_bill, ComEdResidentialAccount
 from .comed_commercial import calculate_comed_commercial_bill, mkd_mask
-from . import comed_rates
 
 FIXED = {"customer", "standard_metering", "capacity", "low_income_discount_recovery"}
 DEMAND = {"distribution_demand", "transformer_demand"}

@@ -1,0 +1,187 @@
+PAGE 1
+250420131
+PUR-2024-00180Case Number (if already assigned)
+Case Name (if known)
+Document Type
+Revised Rider RBB Tariff and Supporting WorkpapersDocument Description Summary
+Total Number of Pages 4
+33527Submission ID
+4/16/2025 10:56:48AMeFiling Date Stamp
+Virginia State Corporation Commission 
+eFiling CASE Document Cover Sheet
+Petition of Virginia Electric and Power Company For 
+approval of new broadband capacity projects pursuant 
+to §56-585.1:9
+of the Code of Virginia and for revision of rate
+adjustment clause: Rider RBB for the Rate Year 
+commencing May 1, 2025
+TAFI
+
+
+PAGE 2
+250420131
+BY ELECTRONIC FILING
+April 16, 2025
+Dear Mr. Logan:
+For questions related to this Filing, please contact Michele Grant at (804) 513-8623.
+Sincerely, 
+Enclosures
+cc:
+/s/ David J. DePippo 
+David J. DePippo 
+Managing Counsel
+Mr. Bernard Logan, Clerk
+Document Control Center
+State Corporation Commission of Virginia
+1300 East Main Street
+Richmond, Virginia 23219
+Dominion 
+Energy
+Dominion Energy Services, Inc.
+Law Department
+120 Tredegar Street, Richmond, VA 23219 
+D ominionEnergy. c om
+William H. Chambliss, Esq. 
+Kimberly B. Pate
+R. Davis Little
+Pursuant to Ordering Paragraph No. (5) of the State Corporation Commission’s March 26, 2025 
+Final Order in the above-referenced proceeding, Virginia Electric and Power Company filed on 
+April 11,2025, the Rider RBB tariff and supporting workpapers. Enclosed are revised Rider RBB 
+Rate Design workpapers, which have been updated to correct labeling on certain rate design 
+workpapers. Please replace the Rider RBB workpapers filed on April 11, 2025 with the enclosed 
+Rider RBB workpapers. There are no changes to the Rider RBB tariff filed on April 11, 2025.
+David J. DePippo
+Managing Counsel
+Phone: 804-418-2421
+Email: david.j.depippo@dominionenergy.com
+Petition of Virginia Electric and Power Company
+For approval of new broadband capacity projects pursuant to § 56-585.1:9 
+of the Code of Virginia and for revision of rate adjustment clause: 
+Rider RBB for the Rate Year commencing May 1, 2025
+Case No. PUR-2024-00180
+
+
+PAGE 3
+250420131
+
+
+PAGE 4
+250420131
+The following develops the Rider RBB charges for Rate Schedules hi the GS-3 and GS-4 Classes.
+(1! (3) (4) (5) (7)(2) (6) (8)
+GS-3 CLASS
+(Column 7 / Column 6)
+Schedule 6 S1 2,640.983 3.250,885 1.2309 3,434.47 4,227.6 0.050
+Schedule 6TS S2 125,218.231 142.249,189 1.1360 357,911.90 406,591.6 0.050
+Schedule 10- Sec S3 1.922,975.091 2.197.070,897 1.1425 8.011,168.00 9,153,058.8 0.050
+Schedule GS-3 10.174,644.202 (1) S4 12.673.876,794 1.2456 27.528,519.20 34,290,443.4 0.050
+Total 12,225,478,507 43,854321.33 52,208,458
+GS-4 CLASS
+(Column 7 / Column 6)
+Schedule 10- Pti (2) S1 828.412,061 878,241.583 1.0602 4,279.199.00 4,536.595.6 0.039
+Schedule OS-4- Pri (3) S2 21,025.937,370 24,487,722.794 1.1646 43,803.629.97 51,015.616.1 0.039
+STotal 21,854349,431 55,552,211.64 2,167,122
+Notes:
+(1) Includes 2023 kWhs from MBR, SCR Secondary
+(4) Ther e are no customers currently enrolled on Schedule 8. so it is not shown above. The rate for Schedule 8 equals the rate for Schedule GS-4.
+GS-3 Class Rate 
+Schedules
+V1RGINLA ELECTRIC AND POWER COMPANY 
+RIDER RBB 
+RATE DESIGN FOR GS-3 AND GS-4 CLASSES
+Rate Year Distribution 
+Demand kW (Column
+4 * Column 5)
+Schedule 10 (Primary) 
+Schedule 10 (Transmission) 
+Total
+Schedule GS-4 (Primary). MBR, SCR 
+Schedule GS-4 (Transmission), MBR. SCR 
+Total
+GS-4 Class Rate 
+Schedules
+2023 Rate Schedule 
+kWh
+2023 Rate Schedule 
+kWh
+Rate Year Fareeast 
+kWh
+Rate Year Forecast 
+kWh
+Ratio (Rate Year Forecasted 
+kWh/2023 Rate Schedule 
+kWh) (Column 3 >’ Column 2)
+Rate Year Forecast kWh 
+878,241,583
+202,025,628 
+1,080.267.211
+Rate Year Forecast kWh 
+24,487.722.794
+1,876,671.638 
+26.364,394,432
+Ratio (Rate Year Forecasted 
+kWli/2023 Rate Schedule 
+kWh) (Column 3 Column 2)
+2023 Distribution 
+Demand kW
+2023 Distribution 
+Demand kW'
+Rate Year Distribution 
+Demand kW (Column
+4 * Column 5)
+Rider RBB GS-3 Rider RBB Rate S per 
+Class Revenue Dist. Demand kW 
+Requirement
+Rider RBB GS-4 Rider RBB Rate 5 per 
+Class Revenue Dist Demand kW 
+Requirement
+(3) Forecast adjusted to exclude transmission customers using the following information:
+2023 Rate Schedule kWh
+21,025.937,370
+1,611.369,937 
+22,637,307.307
+(2) Forecast adjusted to exclude transmission customers using the following information:
+2023 Rate Schedule kWh
+828,412.061 
+190,563.132 
+1.018.975,193
+
+
+PAGE 5
+250420131
+Rider RBB GS-3 EV Rates Eff. 5/1/25
+Effective
+DemandDate
+5/1/2025 $ $0.000201 0.072
+2025 2025
+Rate Year Rate Year
+Rate Determinant
+$Sch GS-3 0.050 kW of Dist Demand 25,151,726
+TOTAL
+0.000201
+0.072
+TOTAL
+$0.000.95900107 CheckRatio
+52,919,701
+17,336,495
+$10,658 
+$1,246,929 
+$1,257,586
+Proposed 
+Rider Rates
+Proposed 
+Revenue
+$11,113 $ 
+$1,300,237 $ 
+$1,311,350
+Revenue 
+$1,257,586 
+$1,257,586
+Proposed Rider Prices 
+Non Demand
+Billing 
+Determinant
+Sch 2 GS-2 Billing Det for GS-3 Class Sch GS-2 Rate as Proxy
+Total Non-Demand kWh GS-3 $ 0.000210 kWh
+Total Demand kW GS-3 $ 0.075 kW of Demand
+

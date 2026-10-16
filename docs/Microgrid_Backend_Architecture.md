@@ -533,8 +533,14 @@ The pinned worker calls `src/local_web/municipal_study.py`, which invokes
 `src/billing/municipal.py:charge_lines`; an authoritative post-dispatch bill
 checks reconciliation. Vectorized tier-regime optimization includes an optional
 binary charging-mode fallback when required for physical exclusivity.
-Results use existing table/CSV/manifest routes. This path does not run OpenDSS
-and rejects PV/export/standby cases. See `Municipal_Utilities.md` for coverage,
+Results use existing table/CSV/manifest routes. This path rejects PV/export/standby
+cases. After dispatch and billing, `src/local_web/electrical_replay.py` maps
+municipal interval-start SOC and directional flows into shared OpenDSS replay;
+schema 6 Southern California studies use the same adapter with explicit actual
+PV output/curtailment. Representative secondary-service circuits, unsupported
+voltage classes and saved electrical tables are documented in
+`Utility_Electrical_Validation.md`. Replay measurements do not change bills or
+dispatch. See `Municipal_Utilities.md` for coverage,
 TOU optimality bounds, PF-threshold exclusions and browser controls.
 
 ### Utility-specific dated residential versions
@@ -620,3 +626,51 @@ An unproven primary solution still rejects. See the reproducible
 or retail assumptions. OpenDSS supports truly absent storage, with secondary
 representative-circuit replay; primary/HV service is explicitly unsupported by
 that circuit. See [integration, limits and release procedure](ComEd_Simulation_Integration.md).
+
+## Eastern retail account studies (schema 11 candidate)
+
+`billing/regional.py` registers three independent utility/jurisdiction adapters:
+Dominion Virginia, Dominion North Carolina and PSE&G New Jersey. Retail supplier,
+customer class, electrical service, tariff, PJM transmission zone and wholesale
+pricing location remain separate account facts. Manual service confirmation or
+an explicit hypothetical account is required; coordinates do not assign service.
+`billing/regional_math.py` supplies bounded numeric/exact optimization operations;
+all filed prices, holidays, eligibility and settlement expressions stay in the
+utility modules. Immutable Python rate data are included in source snapshots.
+
+`local_web/regional_study.py` connects the existing main wizard, native-load CSV
+contract, shared PV/ESS and explicit weather sources to isolated queued workers.
+Each complete utility meter cycle carries its own bill date and billing month.
+Annual studies roll cycle by cycle with continuous battery energy and endogenous
+demand/credit histories. Only the final boundary restores initial energy. This
+is historical perfect foresight per cycle, not a jointly optimized annual bill.
+An optional alternative tariff receives the same initial account facts and
+physical inputs but is optimized independently, rather than repricing one fixed
+schedule. Save/reopen/settings/CSV/ZIP use the existing result store.
+
+`dispatch/regional.py` calls each utility's authoritative charge expressions.
+A fast outer relaxation retains tariff and grid-direction integer selectors and
+relaxes only battery duty integrality. A schedule is accepted only after an
+independent physical check and numeric rebill attain the proven lower bound
+within saved tolerances. Otherwise the strict mixed-integer model is required.
+Primary cost proof, cycling proof, fallback, bounds and reconciliation are saved
+separately. Failed/unproven primary solves do not become successful studies.
+Wear is optional in the objective and always separately reported. Opening credit
+banks affect the reported bill only by default; an explicit cash-bill policy is
+available. No future cash value is invented for unused ending energy banks.
+
+An absent-PV grid reference cannot retain NEM enrollment. The explicit
+`regional_counterfactual.py` transformation removes solar eligibility and banks
+while retaining the tariff, supplier, demand history and existing contractual
+obligations; its changes are recorded in the result. PV scenarios retain the
+actual enrolled account and evolve their own ledgers.
+
+Shared electrical replay consumes actual delivered PV and start-of-interval SOC.
+Scheduled meter flows remain authoritative for billing; replay PCC flows/losses
+are separate. Residential split-phase and compatible secondary commercial
+circuits are representative assumptions. Primary/HV billing can be valid while
+replay is explicitly unavailable. Schema 11 is local-only, including saved
+settings/results/download routes: private PJM inputs or derived CIEP results are
+not exposed by hosted mode. The stable engine is not automatically promoted.
+See [coverage matrix](Regional_Utility_Coverage.md),
+[validation driver](Regional_Validation.md) and the three utility source documents.

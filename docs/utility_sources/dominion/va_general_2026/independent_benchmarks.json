@@ -1,0 +1,1884 @@
+[
+  {
+    "plan": "VA-1",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 1.0,
+    "account": {
+      "tariff": "VA-1",
+      "customer_class": "residential",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "single",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.24,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 12.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 3.9442092621463587,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 7.58,
+      "distribution_energy": 25.6968,
+      "generation_energy": 22.47264,
+      "transmission_energy": 6.984,
+      "rider_A": 27.10656,
+      "rider_C1A": 0.32688,
+      "rider_C4A": 0.95184,
+      "rider_CCR": 1.2708000000000002,
+      "rider_CE": 4.35888,
+      "rider_CERC": 0.54288,
+      "rider_DIST": 5.5332,
+      "rider_E": 0.45,
+      "rider_GEN": 4.12488,
+      "rider_OSW": 8.18064,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 3.9743999999999997,
+      "rider_SMR": 0.10583999999999999,
+      "rider_SNA": 2.8994400000000002,
+      "rider_T1": 9.1656,
+      "deferred_fuel": 2.08872,
+      "sales_use_tax_surcharge": 0.66312,
+      "consumption_tax": 1.1268,
+      "henrico_utility_tax": 1.0
+    },
+    "total_usd_unrounded": 136.60392,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-1G",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 1.0,
+    "account": {
+      "tariff": "VA-1G",
+      "customer_class": "residential",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "single",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.24,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 12.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 3.9442092621463587,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 7.58,
+      "distribution_energy": 22.90242899999998,
+      "generation_energy": 14.435684999999994,
+      "transmission_energy": 6.984,
+      "rider_A": 27.10656,
+      "rider_C1A": 0.32688,
+      "rider_C4A": 0.95184,
+      "rider_CCR": 1.2708000000000002,
+      "rider_CE": 4.35888,
+      "rider_CERC": 0.54288,
+      "rider_DIST": 5.5332,
+      "rider_E": 0.45,
+      "rider_GEN": 4.12488,
+      "rider_OSW": 8.18064,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 3.9743999999999997,
+      "rider_SMR": 0.10583999999999999,
+      "rider_SNA": 2.8994400000000002,
+      "rider_T1": 9.1656,
+      "deferred_fuel": 2.08872,
+      "sales_use_tax_surcharge": 0.66312,
+      "consumption_tax": 1.1268,
+      "henrico_utility_tax": 1.0
+    },
+    "total_usd_unrounded": 125.77259399999998,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-1S",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 1.0,
+    "account": {
+      "tariff": "VA-1S",
+      "customer_class": "residential",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "single",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.24,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 12.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 3.9442092621463587,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 12.99,
+      "distribution_energy": 11.1348,
+      "distribution_demand": 2.478,
+      "generation_demand": 2.407,
+      "generation_energy": 8.682423,
+      "transmission_energy": 6.984,
+      "rider_A": 27.10656,
+      "rider_C1A": 0.32688,
+      "rider_C4A": 0.95184,
+      "rider_CCR": 1.2708000000000002,
+      "rider_CE": 4.35888,
+      "rider_CERC": 0.54288,
+      "rider_DIST": 5.5332,
+      "rider_E": 0.45,
+      "rider_GEN": 4.12488,
+      "rider_OSW": 8.18064,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 3.9743999999999997,
+      "rider_SMR": 0.10583999999999999,
+      "rider_SNA": 2.8994400000000002,
+      "rider_T1": 9.1656,
+      "deferred_fuel": 2.08872,
+      "sales_use_tax_surcharge": 0.66312,
+      "consumption_tax": 1.1268,
+      "henrico_utility_tax": 1.0
+    },
+    "total_usd_unrounded": 118.546703,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-1T",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 1.0,
+    "account": {
+      "tariff": "VA-1T",
+      "customer_class": "residential",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "single",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.24,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 12.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 3.9442092621463587,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 12.0,
+          "on_peak_kw": 12.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 12.99,
+      "distribution_energy": 22.725431999999998,
+      "generation_energy": 20.03552700000001,
+      "transmission_energy": 6.984,
+      "rider_A": 27.10656,
+      "rider_C1A": 0.32688,
+      "rider_C4A": 0.95184,
+      "rider_CCR": 1.2708000000000002,
+      "rider_CE": 4.35888,
+      "rider_CERC": 0.54288,
+      "rider_DIST": 5.5332,
+      "rider_E": 0.45,
+      "rider_GEN": 4.12488,
+      "rider_OSW": 8.18064,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 3.9743999999999997,
+      "rider_SMR": 0.10583999999999999,
+      "rider_SNA": 2.8994400000000002,
+      "rider_T1": 9.1656,
+      "deferred_fuel": 2.08872,
+      "sales_use_tax_surcharge": 0.66312,
+      "consumption_tax": 1.1268,
+      "henrico_utility_tax": 1.0
+    },
+    "total_usd_unrounded": 136.605439,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-GS1",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 10.0,
+    "account": {
+      "tariff": "VA-GS1",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "single",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.24,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 20.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 6.573682103577264,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 20.0,
+          "on_peak_kw": 20.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 13.39,
+      "distribution_energy": 145.5174,
+      "generation_energy": 282.9332,
+      "transmission_energy": 41.903999999999996,
+      "rider_A": 271.0656,
+      "rider_C1A": 2.7648,
+      "rider_C4A": 8.0352,
+      "rider_CCR": 12.708,
+      "rider_CE": 33.6456,
+      "rider_CERC": 3.8952000000000004,
+      "rider_DIST": 41.616,
+      "rider_E": 3.2832000000000003,
+      "rider_GEN": 29.520000000000003,
+      "rider_OSW": 66.44879999999999,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 39.744,
+      "rider_SMR": 0.8928,
+      "rider_SNA": 24.6888,
+      "rider_T1": 85.8888,
+      "deferred_fuel": 20.8872,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 6.0984,
+      "consumption_tax": 8.871,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 1153.798,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-GS2",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 90.0,
+    "account": {
+      "tariff": "VA-GS2",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.48,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 90.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 29.58156946609769,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 31.9,
+      "distribution_demand": 446.67,
+      "distribution_energy": 5.119199999999999,
+      "generation_energy": 1005.9228,
+      "generation_demand": 162.26999999999998,
+      "transmission_energy": 0.0,
+      "transmission_demand": 177.39000000000001,
+      "rider_A": 2439.5904,
+      "rider_C1A": 21.708000000000002,
+      "rider_C4A": 62.6616,
+      "rider_CCR": 114.372,
+      "rider_CE": 146.97,
+      "rider_CERC": 18.72,
+      "rider_DIST": 133.38,
+      "rider_E": 16.38,
+      "rider_GEN": 142.29,
+      "rider_OSW": 302.94,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 357.69599999999997,
+      "rider_SMR": 4.14,
+      "rider_SNA": 118.98,
+      "rider_T1": 341.82,
+      "deferred_fuel": 187.9848,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 46.1376,
+      "consumption_tax": 66.531,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 6361.5734,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-GS2T",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 90.0,
+    "account": {
+      "tariff": "VA-GS2T",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.48,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 90.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 29.58156946609769,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 37.08,
+      "distribution_demand": 446.67,
+      "distribution_energy": 5.119199999999999,
+      "generation_demand": 407.34,
+      "generation_adjustment_demand": 0.0,
+      "generation_energy": 889.2504000000005,
+      "transmission_demand": 208.17000000000002,
+      "rider_A": 2439.5904,
+      "rider_C1A": 21.708000000000002,
+      "rider_C4A": 62.6616,
+      "rider_CCR": 114.372,
+      "rider_CE": 146.97,
+      "rider_CERC": 18.72,
+      "rider_DIST": 105.21000000000001,
+      "rider_E": 16.38,
+      "rider_GEN": 142.29,
+      "rider_OSW": 302.94,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 357.69599999999997,
+      "rider_SMR": 4.14,
+      "rider_SNA": 118.98,
+      "rider_T1": 409.86,
+      "deferred_fuel": 187.9848,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 46.1376,
+      "consumption_tax": 66.531,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 6565.801000000001,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-GS3",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 600.0,
+    "account": {
+      "tariff": "VA-GS3",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.48,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 600.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 525.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 197.21046310731793,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 185.34,
+      "distribution_demand": 1989.6,
+      "reactive_demand": 46.344458830219715,
+      "distribution_energy": 47.952,
+      "generation_demand": 5385.6,
+      "off_peak_generation_demand": 19.2,
+      "generation_energy": 1638.849599999999,
+      "transmission_demand": 1366.2,
+      "rider_A": 16263.936,
+      "rider_C1A": 117.07199999999999,
+      "rider_C4A": 360.288,
+      "rider_CCR": 762.48,
+      "rider_CE": 654.0,
+      "rider_CERC": 113.4,
+      "rider_DIST": 241.8,
+      "rider_E": 100.2,
+      "rider_GEN": 670.8000000000001,
+      "rider_OSW": 1746.6,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 2384.64,
+      "rider_SMR": 26.4,
+      "rider_SNA": 643.8,
+      "rider_T1": 2383.2,
+      "deferred_fuel": 1253.232,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 233.71200000000002,
+      "consumption_tax": 376.815,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 39021.46105883022,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-GS4-primary",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 600.0,
+    "account": {
+      "tariff": "VA-GS4-primary",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "primary",
+      "delivery_voltage_kv": 12.47,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 600.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 525.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 197.21046310731793,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 343.54,
+      "distribution_demand": 1630.2,
+      "reactive_demand": 77.50371200117596,
+      "distribution_energy": 67.824,
+      "generation_demand": 5661.6,
+      "off_peak_generation_demand": 33.480000000000004,
+      "generation_energy": 1638.849599999999,
+      "transmission_demand": 1422.6,
+      "rider_A": 16263.936,
+      "rider_C1A": 91.584,
+      "rider_C4A": 301.536,
+      "rider_CCR": 762.48,
+      "rider_CE": 304.2,
+      "rider_CERC": 96.60000000000001,
+      "rider_DIST": 186.6,
+      "rider_E": 88.19999999999999,
+      "rider_GEN": 595.8,
+      "rider_OSW": 1462.1999999999998,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 2384.64,
+      "rider_SMR": 24.6,
+      "rider_SNA": 540.6,
+      "rider_T1": 2837.4,
+      "deferred_fuel": 1253.232,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 190.08,
+      "consumption_tax": 376.815,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 38646.100312001174,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-GS4-transmission",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 600.0,
+    "account": {
+      "tariff": "VA-GS4-transmission",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "transmission",
+      "delivery_voltage_kv": 69.0,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 600.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 525.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 197.21046310731793,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 343.54,
+      "distribution_demand": 0.0,
+      "reactive_demand": 77.50371200117596,
+      "distribution_energy": 67.824,
+      "generation_demand": 5568.0,
+      "off_peak_generation_demand": 33.480000000000004,
+      "generation_energy": 1638.849599999999,
+      "transmission_demand": 1386.0,
+      "rider_A": 16263.936,
+      "rider_C1A": 91.584,
+      "rider_C4A": 301.536,
+      "rider_CCR": 762.48,
+      "rider_CE": 299.4,
+      "rider_CERC": 94.8,
+      "rider_DIST": 0.0,
+      "rider_E": 87.0,
+      "rider_GEN": 580.1999999999999,
+      "rider_OSW": 1437.6,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 2384.64,
+      "rider_SMR": 24.0,
+      "rider_SNA": 531.6,
+      "rider_T1": 2803.8,
+      "deferred_fuel": 1253.232,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 190.08,
+      "consumption_tax": 376.815,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 36607.90031200118,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-10-secondary",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 600.0,
+    "account": {
+      "tariff": "VA-10-secondary",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.48,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 600.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 525.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 1.0,
+      "reactive_peak_kvar": 0.0,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": true,
+      "unity_power_factor_model_confirmed": true
+    },
+    "lines_usd": {
+      "customer": 201.65,
+      "distribution_demand": 1989.6,
+      "distribution_energy": 726.6239999999999,
+      "generation_energy": 6660.8508,
+      "generation_adjustment_demand": 0.0,
+      "transmission_demand": 656.4000000000001,
+      "rider_A": 16263.936,
+      "rider_C1A": 117.07199999999999,
+      "rider_C4A": 360.288,
+      "rider_CCR": 762.48,
+      "rider_CE": 918.4319999999999,
+      "rider_CERC": 157.67999999999998,
+      "rider_DIST": 241.8,
+      "rider_E": 139.104,
+      "rider_GEN": 934.4159999999999,
+      "rider_OSW": 2452.8959999999997,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 2384.64,
+      "rider_SMR": 37.584,
+      "rider_SNA": 907.632,
+      "rider_T1": 2338.2,
+      "deferred_fuel": 1253.232,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 233.71200000000002,
+      "consumption_tax": 376.815,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 40125.0438,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-10-primary",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 600.0,
+    "account": {
+      "tariff": "VA-10-primary",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "primary",
+      "delivery_voltage_kv": 12.47,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 600.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 525.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 1.0,
+      "reactive_peak_kvar": 0.0,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": true,
+      "unity_power_factor_model_confirmed": true
+    },
+    "lines_usd": {
+      "customer": 201.65,
+      "distribution_demand": 1630.2,
+      "distribution_energy": 765.072,
+      "generation_energy": 6660.8508,
+      "generation_adjustment_demand": 0.0,
+      "transmission_demand": 387.6,
+      "rider_A": 16263.936,
+      "rider_C1A": 91.584,
+      "rider_C4A": 301.536,
+      "rider_CCR": 762.48,
+      "rider_CE": 356.832,
+      "rider_CERC": 118.80000000000001,
+      "rider_DIST": 186.6,
+      "rider_E": 108.864,
+      "rider_GEN": 734.4,
+      "rider_OSW": 1715.904,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 2384.64,
+      "rider_SMR": 30.24,
+      "rider_SNA": 660.9599999999999,
+      "rider_T1": 2392.8,
+      "deferred_fuel": 1253.232,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 190.08,
+      "consumption_tax": 376.815,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 37585.075800000006,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-10-transmission",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 600.0,
+    "account": {
+      "tariff": "VA-10-transmission",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "transmission",
+      "delivery_voltage_kv": 69.0,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 600.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 525.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 1.0,
+      "reactive_peak_kvar": 0.0,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 600.0,
+          "on_peak_kw": 600.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": false,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": true,
+      "unity_power_factor_model_confirmed": true
+    },
+    "lines_usd": {
+      "customer": 201.65,
+      "distribution_demand": 0.0,
+      "distribution_energy": 765.072,
+      "generation_energy": 6660.8508,
+      "generation_adjustment_demand": 0.0,
+      "transmission_demand": 387.6,
+      "rider_A": 16263.936,
+      "rider_C1A": 91.584,
+      "rider_C4A": 301.536,
+      "rider_CCR": 762.48,
+      "rider_CE": 356.832,
+      "rider_CERC": 118.80000000000001,
+      "rider_DIST": 0.0,
+      "rider_E": 108.864,
+      "rider_GEN": 734.4,
+      "rider_OSW": 1715.904,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 2384.64,
+      "rider_SMR": 30.24,
+      "rider_SNA": 660.9599999999999,
+      "rider_T1": 2392.8,
+      "deferred_fuel": 1253.232,
+      "minimum_bill_adjustment": 0.0,
+      "sales_use_tax_surcharge": 190.08,
+      "consumption_tax": 376.815,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 35768.2758,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-5C",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 10.0,
+    "account": {
+      "tariff": "VA-5C",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.48,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 90.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 29.58156946609769,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": true,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 13.88,
+      "distribution_energy": 191.3958,
+      "generation_energy": 290.2194,
+      "transmission_energy": 63.864,
+      "rider_A": 271.0656,
+      "rider_C1A": 3.6936,
+      "rider_C4A": 10.656,
+      "rider_CCR": 12.708,
+      "rider_CE": 53.4456,
+      "rider_CERC": 5.4432,
+      "rider_DIST": 45.3168,
+      "rider_E": 4.579199999999999,
+      "rider_GEN": 46.224000000000004,
+      "rider_OSW": 95.112,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 39.744,
+      "rider_SMR": 1.1952,
+      "rider_SNA": 33.7752,
+      "rider_T1": 92.3256,
+      "deferred_fuel": 20.8872,
+      "sales_use_tax_surcharge": 6.602399999999999,
+      "consumption_tax": 8.871,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 1321.0038,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  },
+  {
+    "plan": "VA-5P",
+    "period_start": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "interval_minutes": 15,
+    "constant_import_kw": 10.0,
+    "account": {
+      "tariff": "VA-5P",
+      "customer_class": "commercial",
+      "supply_arrangement": "bundled",
+      "eligibility_confirmed": true,
+      "ordinary_use_confirmed": true,
+      "special_riders": false,
+      "metering_side": "customer",
+      "locality": "henrico",
+      "billing_month": 9,
+      "phase": "three",
+      "voltage": "secondary",
+      "delivery_voltage_kv": 0.48,
+      "primary_service_confirmed": true,
+      "parallel_service": false,
+      "parallel_operation_approved": false,
+      "contract_demand_kw": 90.0,
+      "contract_minimum_charge": 0.0,
+      "established_minimum_kw": 0.0,
+      "minimum_demand_basis_confirmed": true,
+      "power_factor": 0.95,
+      "reactive_peak_kvar": 29.58156946609769,
+      "history": [
+        {
+          "billing_month": 10,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 11,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 12,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 1,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 2,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 3,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 4,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 5,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 6,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 7,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        },
+        {
+          "billing_month": 8,
+          "maximum_kw": 90.0,
+          "on_peak_kw": 90.0
+        }
+      ],
+      "ami": true,
+      "demand_response_enrolled": false,
+      "tou_reenrollment_eligible": true,
+      "worship_charity_eligible": true,
+      "solar_mode": "non_export",
+      "nem": null,
+      "schedule10_original_enrollment_confirmed": false,
+      "unity_power_factor_model_confirmed": false
+    },
+    "lines_usd": {
+      "customer": 23.01,
+      "distribution_energy": 72.6336,
+      "distribution_demand": 40.55,
+      "generation_demand": 63.32,
+      "generation_energy": 69.25283999999999,
+      "transmission_energy": 63.864,
+      "rider_A": 271.0656,
+      "rider_C1A": 3.6936,
+      "rider_C4A": 10.656,
+      "rider_CCR": 12.708,
+      "rider_CE": 53.4456,
+      "rider_CERC": 5.4432,
+      "rider_DIST": 45.3168,
+      "rider_E": 4.579199999999999,
+      "rider_GEN": 46.224000000000004,
+      "rider_OSW": 95.112,
+      "rider_PIPP": 0.0,
+      "rider_RGGI": 0.0,
+      "rider_RPS": 39.744,
+      "rider_SMR": 1.1952,
+      "rider_SNA": 33.7752,
+      "rider_T1": 92.3256,
+      "deferred_fuel": 20.8872,
+      "sales_use_tax_surcharge": 6.602399999999999,
+      "consumption_tax": 8.871,
+      "henrico_utility_tax": 10.0
+    },
+    "total_usd_unrounded": 1094.27504,
+    "validation": "Separate independent arithmetic expectations are asserted in test/test_dominion_va_general.py; this artifact records their calculator output, not an observed customer bill."
+  }
+]

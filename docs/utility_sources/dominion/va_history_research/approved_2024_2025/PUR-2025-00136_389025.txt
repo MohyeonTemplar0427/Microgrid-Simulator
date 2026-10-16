@@ -1,0 +1,2071 @@
+PAGE 1
+260540027
+PUR-2025-00136Case Number (if already assigned)
+Case Name (if known)
+APTFDocument Type
+19Total Number of Pages
+37883Submission ID
+5/13/2026 3:26:57PMeFiling Date Stamp
+Virginia State Corporation Commission 
+eFiling CASE Document Cover Sheet
+Petition of Virginia Electric and Power Company For 
+revision of a rate adjustment clause, designated Rider 
+DIST, under § 56-585.1 A 6 of the Code of Virginia and 
+the consolidation of Riders DIST and RBB 
+pursuant to § 56-585.1 A 7 of the Code of VA
+Document Description Summary The Rider DIST - Distribution Facilities Projects tariff 
+sheet, withdrawn Rider RBB - Rural Broadband Pilot
+Projects tariff sheet, and supporting workpapers.
+
+
+PAGE 2
+260540027
+BY ELECTRONIC FILING
+May 13,2026
+Dear Mr. Logan:
+Sincerely,
+/s/ Lauren E. Wood
+Enclosures
+cc:
+Mr. Bernard Logan, Clerk
+Document Control Center
+State Corporation Commission of Virginia
+1300 East Main Street
+Richmond, Virginia 23219
+Dominion 
+Energy
+Dominion Energy Services, Inc.
+Law Department
+120 Tredegar Street, Richmond, VA 23219 
+DominionEnergy.com
+William H. Chambliss, Esq. 
+Kimberly B. Pate 
+Tanner S. Katsarelis
+Lauren E. Wood
+Assistant General Counsel
+(804) 819-2396 phone 
+lauren.e.wood@domimonenergy.com
+Petition of Virginia Electric and Power Company
+For revision of a rate adjustment clause, designated Rider DIST, 
+under § 56-585.1 A 6 of the Code of Virginia and 
+the consolidation of Riders DIST and RBB 
+pursuant to § 56-585.1 A 7 of the Code of Virginia
+Case No. PUR-2025-00136
+Lauren E. Wood
+Assistant General Counsel
+Pursuant to Ordering Paragraph No. (4) of the State Corporation Commission of Virginia’s Final 
+Order issued on May 11,2026, enclosed for filing in the above-referenced case are the Rider DIST 
+- Distribution Facilities Projects tariff sheet, withdrawn Rider RBB - Rural Broadband Pilot 
+Projects tariff sheet, and supporting workpapers. The Rider DIST rates are designed based on a 
+revenue requirement of $326.53 million for the rate year beginning June 1, 2026 through 
+May 31, 2027. If you have any questions related to this filing, please contact Michele Grant at 
+(804) 513-8623.
+
+
+PAGE 3
+260540027
+Rider dist
+Tariff Sheet 
+and Workpapers
+
+
+PAGE 4
+260540027Virginia Electric and Power Company
+RIDER DIST
+DISTRIBUTION FACILITIES PROJECTS
+Rate Schedules
+Schedule DP-2 0.37250/kWh
+0.16340/kWh
+Schedule 5C
+Schedule 5P
+Schedule 6
+Schedule 6TS
+Schedule 7 0.57800/kWh
+Schedule 8
+3.05660/kWh
+'Applied to kW of Demand.
+2 Applied to kW of Distribution Demand.
+Superseding Filing Effective For Usage On and After 06-01-25. 
+This Filing Effective For Usage On and After 06-01-26.
+The following Virginia Electric and Power Company filed Rate Schedules and special contracts approved 
+by the State Corporation Commission pursuant to Virginia Code § 56-235.2 shall be increased by the applicable 
+cents per kilowatt-hour or dollars per kilowatt charge.
+Schedules GS-4, MBR, SCR (Primary)
+Schedules GS-4, MBR, SCR (Transmission) 
+Schedule 5 0.3725p/kWh
+0.62940/kWh
+0.62940/kWh
+51.482/kW1
+$l.I69/kW2
+$0.403/kW2
+SO^O/kW1
+$0.311/kW2 
+$0.000/kW2
+$0.403/kW2
+$0.403/kW2
+$0.311/kW2
+$0.403/kW2
+$0.311/kW2
+$0.000/kW2
+Schedules 1, 1G, IP, IS, IT, 1W, DP-R, 1EV, EV 
+Schedules GS-1,DP-1
+Schedule GS-2 (Non-Demand Billing)
+Schedule GS-2 (Demand Billing)
+Schedule GS-2T
+Schedule 10 (Secondary)
+Schedule 10 (Primary)
+Schedule 10 (Transmission) 
+Schedules 24, 25, 27, 28, 29
+Schedules GS-3, MBR, SCR (Secondary)
+Schedule GS-3 EV
+Cents per 
+Distribution 
+kWh Charge
+0.76850/kWh
+0.57800/kWh
+0.41740/kWh
+Filed 05-13-26
+Electric-Virginia
+Dollars per kW 
+Demand 
+Charge
+
+
+PAGE 5
+260540027
+REVENUE CLASS=A. RESIDENTIAL
+YR MONTH FORECAST CUST FORECAST KWH
+TOTAL 28,891,117,991
+REVENUE CLASS=B. COMMERCIAL
+YR MONTH FORECAST CUST FORECAST KWH
+TOTAL 58,215,716,377
+REVENUE CLASS=C. INDUSTRIAL
+YR MONTH FORECAST CUST FORECAST KWH
+TOTAL 5,281,528,234
+92,388,362,601
+NOTE: FORECAST CUSTOMERS HAVE NOT BEEN ADJUSTED TO REFLECT CHOICE CUSTOMERS.
+2026
+2026
+2026
+2026
+2026
+2026
+2026
+2027
+2027
+2027
+2027
+2027
+2026
+2026
+2026
+2026
+2026
+2026
+2026
+2027
+2027
+2027
+2027
+2027
+2026
+2026
+2026
+2026
+2026
+2026
+2026
+2027
+2027
+2027
+2027
+2027
+6
+7
+8
+9
+10
+11
+12
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 
+11
+12
+1
+2
+3
+4
+5
+2,422,209
+2,424,394
+2,427,610
+2,429,159
+2,431,311
+2,434,201
+2,437,369
+2,439,768
+2,441,447
+2,442,824
+2,443,601
+2,444,933
+236,868
+236,758
+236,654
+236,496
+236,350
+236,228
+236,124
+235,908
+235,707
+235,580
+235.401
+235.402
+727
+728
+726
+726
+725
+725
+724
+724
+723
+723
+722
+722
+2,552,184,025
+3,133,630,281
+2,870,791,292
+2,263,929,626
+1,594,406,202
+1,929,622,530
+2,800,336,393
+3,299,101,011
+2,734,085,216
+2,249,602,349
+1,689,157,000
+1,774,272,064
+4,882,355,674
+5,268,057,001
+5,218,867,827
+4,856,826,889
+4,585,024,705
+4,660,721,205
+4,916,176,176
+5,037,526,336
+4,492,726,707
+4,690,041,429
+4,681,788,963
+4,925,603,463
+390,899,061
+516,119,062
+467,463,256
+432,317,237
+390,968,210
+498,026,304
+424,325,181
+431,747,472
+435,749,128
+411,214,761
+432,768,939
+449,929,624
+VIRGINIA ELECTRIC AND POWER COMPANY 
+RIDER DIST
+FORECAST KWH SALES AND CUSTOMERS BY REVENUE CLASS 
+INCLUDES CHOICE CUSTOMERS
+12 MONTHS ENDED May 31, 2027
+
+
+PAGE 6
+260540027
+REVENUE CLASS=A. RESIDENTIAL
+TOTAL 28,891,117,991
+REVENUE CLASS=B. COMMERCIAL
+TOTAL 58,215,716,377
+REVENUE CLASS=C. INDUSTRIAL
+RATE 
+SCHEDULE
+RATE
+SCHEDULE
+RATE
+SCHEDULE
+1
+1G 
+1P
+1S
+1T
+1W
+24
+27
+28
+29
+GS1 
+GS2 
+GS2T 
+GS3
+GS4
+5 
+5C 
+5P
+6 
+6TS 
+7
+10
+24
+25
+27
+28
+29
+GS1
+GS2 
+GS2T 
+GS3
+GS4
+5 
+6TS
+10
+24 
+27
+28,552,131,505
+153,148,382
+15,483,556
+137,115,510 
+7,747,660 
+479,045 
+3,063,487 
+18,257,643 
+3,658,476 
+32,727
+3,857,047,536
+8,516,696,242
+1,893,886,611
+11,010,018,986
+29,875,724,725
+20,236,078
+155,648,307
+49,598,458 
+2,681,085
+137,593,558
+5,878,558
+2,597,398,725 
+6,489,560 
+174,248
+61 ,026,166 
+21,990,154 
+3,627,380
+8,893,528
+108,981,813 
+12,599,501
+607,909,612
+3,492,033,907 
+107,940
+895,717
+1,049,141,223 
+47,548
+545,918
+12 MONTHS ENDED 
+05/31/2027 
+FORECAST KWH
+12 MONTHS ENDED 
+05/31/2027 
+FORECAST KWH
+12 MONTHS ENDED 
+05/31/2027 
+FORECAST KWH
+VIRGINIA ELECTRIC AND POWER COMPANY
+RIDER DIST
+FORECAST KWH SALES BY REVENUE CLASS AND RATE SCHEDULE
+INCLUDES CHOICE CUSTOMERS
+
+
+PAGE 7
+260540027
+REVENUE CLASS=C. INDUSTRIAL 
+(continued)
+RATE
+SCHEDULE
+28 371,526
+TOTAL 5,281,528,234
+92,388,362,601
+FORECAST KWH SALES BY REVENUE CLASS AND RATE SCHEDULE 
+INCLUDES CHOICE CUSTOMERS
+12 MONTHS ENDED 
+05/31/2027 
+FORECAST KWH
+VIRGINIA ELECTRIC AND POWER COMPANY 
+RIDER DIST
+
+
+PAGE 8
+260540027
+92,388,362,601 0 92,388,362,601
+RATE
+SCHEDULE
+1
+1G 
+1P
+1S 
+1T
+1W 
+GS1 
+GS2 
+GS2T 
+GS3
+GS4
+5
+5C
+5P
+6
+6TS
+7
+10
+24
+25
+27
+28
+29
+28,552,131,505
+153,148,382
+15,483,556
+137,115,510 
+7,747,660 
+479,045 
+3,865,941,064 
+8,625,678,055
+1,906,486,113
+11,617,928,598
+33,367,758,632 
+20,344,019
+155,648,307 
+49,598,458 
+2,681,085 
+138,489,275 
+5,878,558
+3,646,539,948 
+9,600,595 
+174,248 
+79,829,727 
+26,020,155 
+3,660,107
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+28,552,131,505
+153,148,382
+15,483,556
+137,115,510 
+7,747,660 
+479,045 
+3,865,941,064 
+8,625,678,055
+1,906,486,113
+11,617,928,598
+33,367,758,632 
+20,344,019
+155,648,307 
+49,598,458 
+2,681,085 
+138,489,275 
+5,878,558
+3,646,539,948 
+9,600,595 
+174,248 
+79,829,727 
+26,020,155 
+3,660,107
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+12 MONTHS ENDED
+05/31/2027
+TOT FORECAST KWH
+VIRGINIA ELECTRIC AND POWER COMPANY
+RIDER DIST
+SUMMARY OF FORECAST KWH SALES BY RATE SCHEDULE
+2024
+KWH
+
+
+PAGE 9
+260540027
+ CUSTOMER CLASS=A. RES 
+CLASS 28,866,105,659
+ CUSTOMER CLASS=B. GS-1 
+CLASS 3,871,819,622
+ CUSTOMER CLASS=C. GS-2 
+CLASS 10,552,508,186
+ CUSTOMER CLASS=D. GS-3 
+CLASS 14,276,230,654
+ CUSTOMER CLASS=E. GS-4 
+CLASS 34,497,166,884
+7 
+GS1
+10 
+GS4
+RATE
+SCHEDULE
+RATE
+SCHEDULE
+RATE
+SCHEDULE
+RATE 
+SCHEDULE
+1,129,408,252
+33,367,758,632
+5,878,558
+3,865,941,064
+RATE
+SCHEDULE
+5
+GS2
+GS2T
+10
+6
+6TS 
+GS3
+1
+1G 
+1P
+1S
+1T
+1W
+28,552,131,505
+153,148,382
+15,483,556
+137,115,510 
+7,747,660 
+479,045
+2,517,131,696 
+2,681,085
+138,489,275
+11,617,928,598
+20,344,019
+8,625,678,055 
+1,906,486,113
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+12 MONTHS ENDED
+05/31/2027 
+NET FORECAST KWH
+12 MONTHS ENDED
+05/31/2027 
+NET FORECAST KWH
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+VIRGINIA ELECTRIC AND POWER COMPANY
+CALCULATION OF RIDER DIST RECOVERY FACTORS
+REFLECTS FORECASTED KWH SALES FOR THE 12 MONTHS ENDED May 31, 2027
+RATE SCHEDULES CATEGORIZED INTO CUSTOMER CLASSES
+
+
+PAGE 10
+260540027
+ CUSTOMER CLASS=F. CHURCH 
+CLASS
+205,246,765
+ CUSTOMER CLASS=G. OD LIGHT 
+CLASS
+119,284,831
+92,388,362,601
+RATE 
+SCHEDULE
+RATE 
+SCHEDULE
+5C
+5P
+155,648,307
+49,598,458
+24
+25
+27
+28
+29
+9,600,595
+174,248
+79,829,727
+26,020,155 
+3,660,107
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+12 MONTHS ENDED
+05/31/2027 
+NET FORECAST KWH
+VIRGINIA ELECTRIC AND POWER COMPANY
+CALCULATION OF RIDER DIST RECOVERY FACTORS
+REFLECTS FORECASTED KWH SALES FOR THE 12 MONTHS ENDED May 31, 2027
+RATE SCHEDULES CATEGORIZED INTO CUSTOMER CLASSES
+
+
+PAGE 11
+260540027
+$326,534,1961.00000000 92,388,362,601
+NOTE: CUSTOMER CLASS REVENUE REQUIREMENT LESS THAN 100% DUE TO ALLOCATION ROUNDING
+CUSTOMER
+CLASS
+CUST CLASS 
+ALLOCATION
+FACTOR
+CUSTOMER 
+CLASS
+RATE
+A.
+B.
+C.
+D.
+E.
+F.
+G.
+$326,534,196
+$326,534,196
+$326,534,196
+$326,534,196
+$326,534,196
+$326,534,196
+$326,534,196
+0.67934400
+0.06853100
+0.12037600
+0.05224800
+0.06437900
+0.00395600
+0.01116600
+$221,829,047 
+$22,377,715
+$39,306,880 
+$17,060,759 
+$21,021,945 
+$1,291,769 
+$3,646,081
+28,866,105,659
+3,871,819,622
+10,552,508,186
+14,276,230,654
+34,497,166,884
+205,246,765
+119,284,831
+$.00768476
+$.00577964
+$.00372489
+$.00119505
+$.00060938
+$.00629374
+$.03056617
+VA JURIS 
+REVENUE 
+REQUIREMENT
+CUST CLASS 
+ALLOCATED 
+REVENUE REQ
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+RES 
+GS-1 
+GS-2 
+GS-3 
+GS-4
+CHURCH 
+OD LIGHT
+VIRGINIA ELECTRIC AND POWER COMPANY 
+RIDER DIST 
+ALLOCATION OF VA JURISDICTIONAL REVENUE REQUIREMENT
+TO THE CUSTOMER CLASSES AND CALCULATION OF RIDER DIST RECOVERY FACTORS 
+REFLECTS FORECASTED KWH SALES FOR THE 12 MONTHS ENDED May 31, 2027
+
+
+PAGE 12
+260540027
+$326,534,19692,388,362,601
+NOTE: CUSTOMER CLASS REVENUE REQUIREMENT LESS THAN 100% DUE TO ALLOCATION ROUNDING
+RATE 
+SCHEDULE
+CUSTOMER
+CLASS
+1 
+1G 
+1P
+1S 
+1T 
+1W 
+GS1 
+GS2 
+GS2T 
+GS3
+GS4
+5
+5C
+5P
+6
+6TS
+7
+10
+10
+24
+25
+27
+28
+29
+28,552,131,505
+153,148,382
+15,483,556
+137,115,510 
+7,747,660 
+479,045
+3,865,941,064 
+8,625,678,055
+1,906,486,113
+11,617,928,598
+33,367,758,632 
+20,344,019
+155,648,307 
+49,598,458 
+2,681,085 
+138,489,275
+5,878,558
+2,517,131,696
+1,129,408,252 
+9,600,595 
+174,248 
+79,829,727 
+26,020,155 
+3,660,107
+$.00768476 
+$.00768476 
+$.00768476 
+$.00768476 
+$.00768476 
+$.00768476 
+$.00577964 
+$.00372489 
+$.00372489 
+$.00119505 
+$.00060938 
+$.00372489 
+$.00629374 
+$.00629374 
+$.00119505 
+$.00119505 
+$.00577964 
+$.00119505
+$.00060938 
+$.03056617 
+$.03056617 
+$.03056617 
+$.03056617 
+$.03056617
+CUSTOMER
+CLASS
+RATE
+$219,416,231 
+$1,176,908 
+$118,987 
+$1,053,700 
+$59,539 
+$3,681 
+$22,343,739 
+$32,129,660 
+$7,101,442 
+$13,883,964 
+$20,333,704 
+$75,779 
+$979,610 
+$312,160 
+$3,204 
+$165,501 
+$33,976 
+$3,008,089 
+$688,241 
+$293,453 
+$5,326 
+$2,440,089 
+$795,337 
+$111,875
+REVENUE REQ 
+BY SCHEDULE 
+AND CLASS
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+VIRGINIA ELECTRIC AND POWER COMPANY 
+CALCULATION OF RIDER DIST RECOVERY FACTORS 
+CALCULATION OF REVENUE REQUIREMENT BY RATE SCHEDULE
+RES 
+RES 
+RES 
+RES 
+RES 
+RES 
+GS-1 
+GS-2 
+GS-2 
+GS-3 
+GS-4 
+GS-2 
+CHURCH 
+CHURCH 
+GS-3 
+GS-3 
+GS-1
+GS-3
+GS-4 
+OD LIGHT 
+OD LIGHT 
+OD LIGHT 
+OD LIGHT 
+OD LIGHT
+
+
+PAGE 13
+260540027
+NOTE
+$326,534,196 92,388,362,601
+RATE 
+SCHEDULE
+1 
+1G 
+1P
+1S 
+1T
+1W 
+GS1 
+GS2 
+GS2T 
+GS3
+GS4
+5 
+5C 
+5P
+6 
+6TS 
+7
+10 S 
+10 P
+24
+25
+27
+28
+29
+$219,416,231 
+$1,176,908 
+$118,987 
+$1,053,700 
+$59,539 
+$3,681 
+$22,343,739 
+$32,129,660 
+$7,101,442 
+$13,883,964 
+$20,333,704 
+$75,779 
+$979,610 
+$312,160 
+$3,204 
+$165,501 
+$33,976 
+$3,008,089 
+$688,241 
+$293,453 
+$5,326 
+$2,440,089 
+$795,337 
+$111,875
+28,552,131,505
+153,148,382
+15,483,556
+137,115,510 
+7,747,660 
+479,045 
+3,865,941,064 
+8,625,678,055
+1,906,486,113
+11,617,928,598
+33,367,758,632 
+20,344,019
+155,648,307 
+49,598,458 
+2,681,085 
+138,489,275 
+5,878,558
+2,517,131,696
+1,129,408,252 
+9,600,595 
+174,248 
+79,829,727 
+26,020,155 
+3,660,107
+.007685 
+.007685 
+.007685 
+.007685 
+.007685 
+.007685 
+.005780 
+.003725 
+.003725 
+.001195 
+.000609 
+.003725 
+.006294 
+.006294 
+.001195
+.001195 
+.005780 
+.001195 
+.000609 
+.030566 
+.030566 
+.030566 
+.030566 
+.030566
+THE RATE DESIGN FOR THESE SCHEDULES ARE SHOWN ON THE 
+NEXT PAGE OF THIS EXHIBIT AND REFLECT DEMAND BILLING.
+REVENUE REQ 
+BY RATE 
+SCHEDULE
+RATE BY 
+SCHEDULE 
+(ROUNDED)
+12 MONTHS ENDED
+05/31/2027
+NET FORECAST KWH
+VIRGINIA ELECTRIC AND POWER COMPANY 
+RIDER DIST 
+RATE SCHEDULE REVENUE REQUIREMENT 
+RATES PER KWH BY RATE SCHEDULE
+
+
+PAGE 14
+260540027
+co co co
+a jy
+o
+■S
+co co
+co
+co
+&
+2
+oo
+co'
+Ch
+Ch
+Ch
+CM
+OO
+■5o'
+co
+CM*
+HZ
+44
+CM 
+CO
+0
+-g
+*
+<zo
+oH
+CM
+OO
+ti-
+CM
+vo
+O
+g
+o
+oo'
+CM
+CM
+CO
+0
+ju
+I
+0
+co
+0 <5
+2 2HQ s 
+w 
+<1
+2 os 
+g
+44
+to cd J I
+1^
+g
+o
+o
+oo
+Ch
+oo
+§
+V.CM
+S
+o
+o
+g
+j
+a
+-o
+44
+1
+i
+44
+5
+0
+g
+5
+C4 
+vs<u75
+Pi 
+CM 
+CO 
+0 
+<u
+1
+43
+CO 
+<U
+tI
+I
+IPi
+i
+c§
+CM 
+CO
+0
+•g 
+£ 
+co
+75
+oH
+CO
+O
+CM
+O
+CO
+Ch
+g
+■S 0
+L «■
+75 o
+0 0
+co
+CO
+CM
+co
+g 
+f 
+m 
+-e
+I
+Q
+CM
+CO 0
+1
+0 
+co
+44
+1
+■C
+i 
+<uQ
+CM 
+CO
+0
+<u
+I
+0
+CO
+4k
+1 £
+^TS
+< «
+0
+3
+CM
+Oo'
+oo
+CM
+3
+co
+co
+CM
+co
+I 
+g 8 
+§ 2
+1!
+<u
+0
+§ 
+s
+CM
+CO
+0
+<L»
+I
+<V
+0
+§ 
+£
+CM
+CO0
+<u
+<70
+I a
+1
+I
+<u Pi
+V<u
+s 
+o
+<z><uQ
+£
+to 
+■-U1 
+<
+o
+g 
+-g
+cc
+(N </)
+CA £
+O £
+-
+I I
+0 55 
+P 3 
+■d 0 a S
+co
+vo
+CM
+£
+o
+o
+1
+1
+<D1 
+T> O
+2 0 
+B H
+< 0
+53
+"O2
+£ 2
+I §
+4> t-<> <u O > 
+Qi <
+co
+CMco
+00
+cm'
+MQ
+CM
+CO
+CM
+s
+cm'
+CO
+co
+co
+CM
+cm'
+o
+VO
+s
+CO
+Ch
+CM
+cm'
+CO
+§ 0 
+s s 
+CM
+s
+MP
+Ch
+CM
+cm'
+co
+vo
+o
+oo
+MQ
+vo'
+CM
+MP
+oo'
+CO
+OO
+CO
+t";
+oo'
+CO
+<N
+CM
+42
+5
+Ig 
+4— <r; cc o 
+8g
+3 £
+01
+• ■—<
+m
+tocd
+i
+0
+a
+g
+■a s0 
+<u g
+£ 
+<u
+Pi
+O 0 « I 
+2h H HH , Q « 5 < ■- > O 
+2 0 
+s § 
+|e
+0 (Z) W H s
+CM
+CO
+Ch
+wo'
+CM
+VO
+oo'
+VO
+o 
+oo'
+£
+VO
+CM
+MP
+00
+o 0J ■a E
+X <
+00 X 
+CM [5
+S g
+11
+s ® 
+s s 
+•S -75
+g 
+<w 0
+&
+81
+ai «
+O <L>
+§ 2
+00<N £) 
+Q C/2I g
+53 K
+75 o 
+O Q
+0
+32 
+C ~
+3 1
+o az
+5 2
+I 3 da
+
+
+PAGE 15
+260540027
+$
+Total GS-2T Revenue Requirement
+Total GS-2T Forecasted Billing kW Demand 
+GS-2T Distribution kW Rate
+VIRGINIA ELECTRIC AND POWER COMPANY 
+Rider DIST
+RATE SCHEDULE REVENUE REQUIREMENT 
+WITH MICRON REMOVED
+$ 7,101,442
+6,073,833
+1.169
+
+
+PAGE 16
+260540027
+Rider DIST GS-3 EV Rates Eff. 6/1/26
+6/1/2026 $ 0.001634 $ 0.580
+Rate
+$Sch GS-3
+TOTAL
+TOTAL
+$0.000.39143445 CheckRatio
+Proposed
+Rider Rates
+0.001634
+0.580
+$86,463 
+$10,057,002 
+$10,143,465
+Proposed
+Revenue
+$220,887 $ 
+$25,692,685 $ 
+$25,913,572
+Proposed Rider Prices 
+Non Demand Demand
+52,919,701
+17,336,495
+Effective 
+Date
+Sch 2 GS-2 Billing Det for GS-3 Class Sch GS-2 Rate as Proxy 
+Total Non-Demand kWh GS-3 $ 0.004174 kWh
+Total Demand kW GS-3 $ 1.482 kW of Demand
+Billing
+Determinant
+0.403 kW of Dist Demand
+2025
+Revenue 
+$10,143,465 
+$10,143,465
+2025
+Determinant 
+25,151,726
+
+
+PAGE 17
+260540027
+s
+CD
+s
+GO GO GO GO GO GO
+I i
+s s
+a « a a
+OO Tt
+'’T 00
+s
+11
+o.
+3
+*1
+s
+cd ~= & -
+8
+S
+CM ’T CMCD
+3
+o
+CD
+o
+'-r
+o
+g
+so
+cm
+'/•)
+ri
+Os
+o
+I
+CD
+CD
+o
+s
+00 
+CD
+3
+r-i
+r'
+cm
+Os"
+PC)
+oo'
+o
+1
+•n
+Os"
+CD
+n
+GO
+CD
+©
+Os
+OS
+T>
+2
+Tj
+SO 
+CD
+00
+CD
+cm
+o
+<§
+•S
+j
+ri
+•r,
+cm
+oo
+o.
+Os
+CM
+CD
+SO
+1
+£
+CD
+CD
+J)
+o
+I£
+cd
+’f
+CD
+o
+i
+cd
+o
+Os
+so
+r~
+oo
+sb
+S
+s
+S
+I
+s J
+Bl
+co
+o
+so
+3
+'O
+o
+CD
+vy
+00
+oo"
+CM
+SO
+ID
+SO
+s
+SO
+§
+so
+OS
+CD
+OS
+2
+<7
+o
+i
+&
+£
+o
+i
+00
+2
+2
+g
+1
+—
+2
+2
+2
+?!
+r-
+g
+r-"
+<7
+1
+°°.
+I
+I
+I
+s
+IT.
+SO
+p
+SO*
+CD
+cd
+«r,
+00
+00
+co
+CD
+«n
+co"
+so
+<-»
+</>
+8
+g
+I
+a£
+H
+S
+w
+8 
+o
+49
+P 
+a>
+1
+I
+</>
+i
+s
+5
+a
+f
+rei
+£
+s
+.2<s>
+I
+1
+g
+2
+2
+5-t
+■s
+ces
+£
+3
+00
+Os
+'/■)
+oo"
+cm
+Os
+r-"
+SO
+CD
+CD
+<
+0
+0
+Tf
+CD
+0
+I
+1
+£
+CD
+2 
+£
+§ 8
+Tf CD
+cc cn
+so p
+o cm"
+CD
+§
+h
+2 g3 2
+o
+w
+o 
+b 49 
+“ I
+2
+00
+ds
+cm
+o
+CD
+CD
+0
+0
+CD
+CD
+0
+CD
+%
+CD
+J
+0
+’t
+CD
+0
+1 
+*? 
+to
+oh
+7.
+2
+</>
+w
+a
+w
+o
+S
+CD
+£
+03
+I
+so
+I£
+CD
+?.
+8
+o>o
+£
+a
+V
+o
+<u1 
+£ 
+CD
+2
+Q
+cS
+I
+I
+1CD
+2
+£
+£H
+<u
+§
+■s
+h
+S a
+3 Q
+©
+r-
+r-'
+co
+oo'
+so
+so
+o'
+CD
+CD
+00
+•D
+CD t
+0 -o 
+2 2 
+H
+G
+W J4J
+<
+CD
+00
+r'
+oo
+CM
+o
+£ 8
+o o
+SO
+rD
+CD
+<zs
+so
+OS
+£
+•J2
+g
+oo' 
+•2
+T5
+£
+CD
+§
+•o 
+£
+s
+00
+OS
+Os'
+g
+oo"
+<r>
+cd'
+CM
+I
+I
+Ip
+Os.
+o
+CD
+v>a>
+’t 
+CD
+o
+I 
+CD
+CD
+o
+.a
+05Cl)
+I 
+£
+CD
+1
+i2
+<2 
+</>8> 
+s
+Q
+5>
+2
+I
+§•
+I
+S'
+12 
+£
+o
+r-
+$
+o
+Os
+§
+so
+!■
+P
+3
+! 1 
+a I « 
+S-EQ " 
+■- o 
+si-
+7 S -r
+ft
+S
+o u 
+at 
+g 
+so 
+a< H 
+a 2
+I
+1
+—
+2
+o
+a
+2
+I a 
+a I « HUH iff
+II;
+if
+1 2 S’ 
+t 3 g 
+5 « s * £ f 
+w <z> G 
+3“ i 
+^sf
+CM
+CD
+SO
+oo"
+oo w-,
+so o r- 
+SO
+CD,
+CD
+CD
+II
+s e
+V T
+CD CD
+o o
+li 
+£ s s 
+O Q ,O 
+CD CD H
+t S' 
+a > g 
+Zl 4 s 
+IIS 
+s z f- 
+Q fl ° I 
+£ a 3 
+2 Si 
+CD
+0 I S 
+h a s«j 
+'z w Z 
+a3“
+$ i I 
+H > 8 
+s«i
+'z c? 8“ 
+§ = “
+Z S' 
+®- > H 
+5 a * £ | 
+« g 5 
+S S r- 
+?“! 
+■e a o 
+2 Si
+1 2 S' 
+H i
+S G
+£ 2
+1 
+^-S I 
+I s Si
+i i „ 
+£ £ s 
+Q Q P CD CD H
+I
+1
+CD
+•8CD
+3
+2
+s
+1 °
+2
+.a
+op
+£mS
+Ji
+o
+I ?
+il
+p
+c*l
+»C)
+cm"
+■n
+8
+SO*
+S
+•ci
+CM
+i 
+t; °. “3 
+cc r-'- «-h O . „
+£
+£
+<u
+<D
+oo r- 
+Tf OS 
+Osr O O 
+Os' Tt Tf 
+os r* 
+oo" cd
+os 
+a
+I
+'C
+J 
+« 2 
+©
+a g 
+S 3
+2 ■» 
+U £ 
+T
+CD
+0
+—
+■5
+J 
+« 2 
+CM
+© 
+<1>
+0 A
+CD
+3
+i
+i
+u<
+<D
+at
+•n oo
+so ( -
+SO* Os'
+P 2
+cd' Os'
+•d> so
+
+
+PAGE 18
+260540027
+Rider rbb
+Tariff Sheet
+
+
+PAGE 19
+260540027Virginia Electric and Power Company
+RIDER RBB
+RURAL BROADBAND PILOT PROJECTS
+Rate Schedules
+Schedule DP-2 0.0187^/kWh
+0.02010/kWh
+Schedule 5C
+Schedule 5P
+Schedule 6
+Schedule 6TS
+Schedule 7 0.03480/kWh
+Schedule 8
+0.20310/kWh
+‘Applied to kW of Demand.
+2 Applied to kW of Distribution Demand.
+Superseding Filing Effective For Usage On and After 05-01-25. 
+This Filing Effective For Usage On and After 05-01-25 Through 
+and Including 05-31 -26. This Rider Withdrawn Effective For Usage 
+On and After 06-01-26.
+Dollars per kW 
+Demand 
+Charge
+The following Virginia Electric and Power Company filed Rate Schedules and special contracts approved 
+by the State Corporation Commission pursuant to Virginia Code § 56-235.2 shall be increased by the applicable 
+cents per kilowatt-hour or dollars per kilowatt charge.
+Schedules GS-4, MBR, SCR (Primary)
+Schedules GS-4, MBR, SCR (Transmission) 
+Schedule 5 0.01870/kWh
+0.03680/kWh
+0.03680/kWh
+$0.050/kW2
+S0.050/kW2
+S0.039/kW2
+$0.050/kW2
+S0.039/kW2
+$0.000/kW2
+Schedule 10 (Secondary)
+Schedule 10 (Primary)
+Schedule 10 (Transmission) 
+Schedules 24, 25, 27, 28, 29
+Schedules GS-3, MBR, SCR (Secondary) 
+Schedule GS-3 EV
+Cents per
+Distribution
+kWh Charge
+0.05310/kWh
+0.03480/kWh
+0.02100/kWh
+Filed 05-13-26
+Electric-V irginia
+Schedules 1, 1G, IP, IS, IT, 1W, DP-R, 1EV, EV 
+Schedules GS-I, DP-1
+Schedule GS-2 (Non-Demand Billing)
+Schedule GS-2 (Demand Billing)
+Schedule GS-2T
+$0.050/kW2
+50.072/kW1
+S0.039/kW2
+$0.000/kW2
+50.075/kW1
+S0.058/kW2
+
+
+PAGE 20
+260540027Virginia Electric and Power Company
+RIDER RBB
+RURAL BROADBAND PILOT PROJECTS
+Rate Schedules
+Schedule DP-2 0.0187p/kWh
+0.02010/kWh
+Schedule 5C
+Schedule 5P
+Schedule 6
+Schedule 6TS
+Schedule 7 0.03480/kWh
+Schedule 8
+0.20310/kWh
+‘Applied to kW of Demand.
+2 Applied to kW of Distribution Demand.
+Dollars per kW 
+Demand 
+Charge
+The following Virginia Electric and Power Company filed Rate Schedules and special contracts approved 
+by the State Corporation Commission pursuant to Virginia Code § 56-235.2 shall be increased by the applicable 
+cents per kilowatt-hour or dollars per kilowatt charge.
+Schedules GS-4, MBR, SCR (Primary)
+Schedules GS-4, MBR, SCR (Transmission) 
+Schedule 5 0.0187p/kWh
+0.03680/kWh
+0.03680/kWh
+$0.050/kW2
+S0.050/kW2
+S0.039/kW2
+$0.050/kW2
+S0.039/kW2
+$0.000/kW2
+Schedules 1, 1G, IP, IS, IT, 1W, DP-R, 1EV, EV 
+Schedules GS-l.DP-l
+Schedule GS-2 (Non-Demand Billing)
+Schedule GS-2 (Demand Billing)
+Schedule GS-2T
+Schedule 10 (Secondary)
+Schedule 10 (Primary)
+Schedule 10 (Transmission) 
+Schedules 24, 25, 27, 28, 29
+Schedules GS-3, MBR, SCR (Secondary) 
+Schedule GS-3 EV
+Cents per
+Distribution
+kWh Charge
+0.05310/kWh
+0.03480/kWh
+0.02100/kWh
+Filed 04-11-2505-13-26
+Electric-V irginia
+Superseding Filing Effective For Usage On and After 04-01-2505-01-25. 
+This Filing Effective For Usage On and After 05-01-25 Through and 
+Including 05-31-26. This Rider Withdrawn Effective For Usage On 
+and After 06-01-26.
+$0.050/kW2
+50.072/kW1
+S0.039/kW2
+$0.000/kW2
+50.075/kW1
+S0.058/kW2
+

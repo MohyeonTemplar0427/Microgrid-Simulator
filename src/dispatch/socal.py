@@ -1,6 +1,5 @@
 """PV self-consumption and storage with the authoritative SoCal bill objective."""
 import numpy as np
-import pandas as pd
 import cvxpy as cp
 from ..billing.socal import PLANS, bill, charge_lines, interval_index, number
 from .battery import Battery

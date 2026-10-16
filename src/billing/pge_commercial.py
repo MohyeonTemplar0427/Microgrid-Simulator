@@ -22,12 +22,10 @@ from .tariffs import (
     DemandChargeFrequency,
     ExportCompensationRule,
     Season,
-    SeasonDefinition,
     ServiceType,
     ServiceVoltageClass,
     TOUPeriod,
     TariffDefinition,
-    WEEKDAYS,
     register_tariff,
 )
 

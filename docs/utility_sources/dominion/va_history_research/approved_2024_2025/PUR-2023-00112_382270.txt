@@ -1,0 +1,476 @@
+PAGE 1
+250740118
+PUR-2023-00112Case Number (if already assigned)
+Case Name (if known)
+TAFIDocument Type
+10Total Number of Pages
+34709Submission ID
+7/25/2025 4:27:30PMeFiling Date Stamp
+Petition of Virginia Electric and Power Company, For a 
+financing order authorizing the issuance of deferred fue 
+cost bonds
+pursuant to Va. Code § 56-249.6:1
+Virginia State Corporation Commission 
+eFiling CASE Document Cover Sheet
+Document Description Summary Revised Table of Contents, which reflects the
+August 1, 2025 effective date for the Deferred Fuel Cos
+Charge tariff
+
+
+PAGE 2
+250740118
+BY ELECTRONIC FILING
+July 25, 2025
+Dear Mr. Logan:
+Sincerely, 
+/s/Nicole M. Allaband
+Enclosures
+cc:
+Nicole M. Allaband 
+Senior Counsel
+Petition of Virginia Electric and Power Company,
+For a financing order authorizing the issuance of deferred fuel cost bonds 
+pursuant to Va. Code § 56-249.6:1
+Case No. PUR-2023-00112
+Mr. Bernard Logan, Clerk
+Document Control Center
+State Corporation Commission of Virginia
+1300 East Main Street
+Richmond, Virginia 23219
+Dominion Energy Services, Inc.
+Law Department
+120 Tredegar Street, Richmond, VA 23219 
+DominionEnergy. c om
+William H. Chambliss, Esq. 
+Kimberly B. Pate 
+Marc Tufaro
+Nicole Allaband
+Senior Counsel
+Direct: (804) 819-2602
+Email: nicole.m.allaband@dominionenergy.com
+On June 13, 2025, Virginia Electric and Power Company filed its Semi-Annual True-Up 
+Adjustment letter and Deferred Fuel Cost Charge tariff sheet in the above-referenced proceeding. 
+On July 3, 2025, the State Corporation Commission’s Staff accepted for filing the Deferred Fuel 
+Cost Charge tariff sheet. Enclosed for filing is the revised Table of Contents, which reflects the 
+August 1, 2025 effective date for the Deferred Fuel Cost Charge tariff.
+For questions related to this filing, please contact Michele Grant at (804) 513-8623.
+Dominion
+Energy
+
+
+PAGE 3
+250740118
+Table of Contents 
+(Clean and Redline Versions)
+
+
+PAGE 4
+250740118Virginia Electric and Power Company
+TABLE OF CONTENTS
+Communities Served in Virginia
+Terms and Conditions for the Provision of Electric Service
+Introduction 07-01-18
+DefinitionsI. 01-01-22
+n. 01-19-16
+III. 01-19-16
+IV7. 01-01-25
+V. 01-01-22
+VI. 01-25-14
+VII. 01-25-14
+VIII. 01-25-14
+IX. 01-25-14
+X. 01-01-25
+XI. 02-01-02
+XII. 04-01-19
+XIII. 02-01-02
+XIV7. 01-25-14
+XV. 01-25-14
+XVI. 07-01-24
+Reconnection of Electric ServiceXVII. 01-01-25
+XVIII. 01-19-16
+XIX. 01-01-22
+XX. 01-25-14
+XXI. 04-01-19
+XXII. 04-01-24
+XXIII. 01-01-25
+XXIV7. 01-01-22
+XXV. 07-01-24
+XXV7!. 10-15-20
+07-01-18
+07-01-18
+07-01-18
+07-01-18
+Rate Schedules
+Schedule 1 Residential Service For Usage On and After 01-01-25
+Schedule 1G - Residential Service (Experimental) For Usage On and After 01-01-25
+Schedule 1G - Residential Service (Experimental) Rebate Program For Usage On and After 01-29-21
+Schedule IP - Residential Service - (Closed) For Usage On and After 01-01-25
+Schedule IS - Residential Service For Usage On and After 01-01-25
+Schedule IT - Residential Service For Usage On and After 01-01-25
+Schedule 1W For Usage On and After 01-01-25
+Schedule DP-R - Residential Service (Experimental) - (Closed) For Usage On and After 01-01-25
+Electric-Virginia Revised 08-01-25
+1
+Application for Electric Service 
+Inspection
+Service Connections
+- Time-Controlled Storage Water 
+Heating Residential
+Deposits
+Billing and Re-billing of Metered and Unmetered Services 
+Master Metering and Submetering
+Payments
+Use of Electricity by Customers
+Customer's Responsibility
+Right of Access
+Discontinuance of Electric Service
+Location of Company's Equipment
+Characteristics of Electric Delivery Service 
+Voltage
+Selection of Schedule
+Interruptions of Electric Service 
+Testing Facilities and Metering Equipment
+Periodic Tests and Checks
+Request Tests
+Electric Line Extensions and Installations
+Temporary Service
+Retail Access
+Net Metering Customers and Small Agricultural Generators 
+Electric Generator Interconnections Other Than Net Metering 
+Agreement for Overhead Electric Line Extension - Form G Plan 
+Agreement for Electric Service
+Agreement for the Installation of Underground Distribution Facilities on Pr ivate Property 
+Customer's Private Underground Service Connection Agreement
+Effective Date
+04-30-87
+
+
+PAGE 5
+250740118Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 1EV For Usage On and After 01-01-25
+For Usage On and After 01-01-25Schedule EV - Residential Electric Vehicle Charging (Experimental) - (Closed)
+For Usage On and After 01-01-23Schedule EVCF - Electric Vehicle Charging Fleet Service
+For Usage On and After 01-01-23Schedule EVCL2 - Electric Vehicle Level 2 Charging Service
+For Usage On and After 09-01-22Schedule EVCR - Electric Vehicle Residential Charging Service
+For Usage On and After 07-01-25Schedule EVFCP - Electric Vehicle Direct Current Fast Charging Pricing Tariff
+For Usage On and After 07-01-25Schedule EVL2P - Electric Vehicle Level Two Pricing Tariff
+For Usage On and After 01-01-25Schedule 5 - Small General Service - (Closed)
+For Usage On and After 01-01-25Schedule 5C - Church and Synagogue Sendee
+For Usage On and After 01-01-25Schedule 5P - Church, Synagogue and Charitable Institution Service
+For Usage On and After 01-01-25Schedule 6 - Large General Service - (Closed)
+For Usage On and After 01-01-25Schedule GS-1 - Small General Service
+For Usage On and After 01-01-25Schedule DP-1 - Small General Service (Experimental) - (Closed)
+For Usage On and After 01-01-25Schedule GS-2 - Intermediate General Service
+For Usage On and After 01-01-25Schedule GS-2T - Intermediate General Service - Time of Usage
+For Usage On and After 01-01-25Schedule DP-2 - Intermediate General Service (Experimental) - (Closed)
+For Usage On and After 01-01-25Schedule GS-3 - Large General Service Secondary Voltage
+For Usage On and After 04-01-25Schedule GS-3 EV - Public Charging (Experimental)
+For Usage On and After 01-01-25Schedule GS-4 - Large General Service Primary Voltage
+For Usage On and After 01-01-25Schedule MBR - Large General Service Market-Based Rate (Experimental)
+For Usage On and After 01-01-25Schedule SCR - Large General Service
+For Usage On and After 01-01-25Schedule 6TS - Thermal Storage
+For Usage On and After 01-01-25Schedule 7 - Electric Heating - (Closed)
+Schedule 8 For Usage On and After 01-01-25
+For Usage On and After 01-01-25Schedule 10 - Large General Service
+Schedule 19 For Usage On and After 01-01-24
+Schedule CFG For Usage On and After 02-01-25
+Schedule RF For Usage On and After 01-01-23
+For Usage On and After 01-01-25Schedule SP - Solar Purchase (Experimental) - (Closed)
+For Usage On and After 01-01-25Schedule 24 - Outdoor Lighting Service Solid State Outdoor Lighting
+For Usage On and After 01-01-25Schedule 25 - Privately Owned Outdoor Lighting
+Electric-Virginia Revised 08-01-253
+- Supplementary, Maintenance, Standby 
+Service for Customers with Power Plants
+- Pow'er Purchases From Cogeneration and 
+Small Power Production Qualifying Facilities
+- Environmental Attributes Purchase From Renewable 
+Energy Facilities (Experimental)
+- Carbon-Free or Renewable Generation Supply 
+Service (Experimental)
+- Residential Service With Electric Vehicle 
+Charging (Experimental) - (Closed)
+
+
+PAGE 6
+250740118Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 27 For Usage On and After 01-01-25
+Schedule 28 For Usage On and After 01-01-25
+12-18-85
+For Usage On and After 01-01-25Schedule 29 - Privately Owned Outdoor Lighting
+Shared Solar Rate Schedules
+Schedule Multi-Family Shared Solar For Pr oduction On and .After-09-01-24
+Schedule SO-MSS - Subscriber Organization - Multi-Family Shared Solar For Production On and After 01-01-24
+Schedule SS-Shared Solar For Production On and After 02-14-25
+Schedule SO-SS - Subscriber Organization - Shared Solar For Production On and After 02-14-25
+Fuel Deferral Schedules
+Pro-Rata Share of Fuel Deferral Charges For Usage On and After 12-01-23
+Deferred Fuel Cost Charge For Usage On and After 08-01-25
+Riders
+Exhibit of Applicable Riders 07-01-25
+Rider A - Fuel Charge Rider
+Rider CIA - Peak-Shavinglncrement Rider For Usage On and After 04-01-25
+Rider C2A - Energy Efficiency Increment Rider For Usage On and After 04-01-25
+Rider C4A - Energy Efficiency Increment Rider For Usage On and After 04-01-25
+Rider CCR - Closure of Coal Combustion Residuals Impoundments For Usage On and After' 04-01-25
+Rider CE - CleanEnergy Projects and Power Purchase Agreements For Usage On and After 05-01-25
+Rider CRC For Usage On and After 05-01-19
+Rider D - Tax Effect Recovery 04-01-24
+Rider- DIST - Distribution Facilities Projects 06-01-25
+Rider E - Environmental Projects For Usage On and After 04-01-25
+Rider EDR - Economic Development Rate 01-01-22
+Rider' F Receivers or Trustees 03-01-54
+Electric-Virginia Revised 08-01-25
+4
+- Outdoor Lighting Service 
+High Pressure Sodium Vapor 
+(Closed to New Installations)
+For Usage On and After 07-01-25 
+On An Interim Basis
+- Manufacturing and Commercial Competitiveness 
+Retention Credit Rider
+- Outdoor Lighting Service
+(Closed to New Installations)
+- Customer Charges for Outdoor Lighting Served on
+Schedule 28 (Not Filed with Virginia Commission)
+
+
+PAGE 7
+250740118
+table of contents
+- Renewable Energy Program
+Rider GEN -25Generation Facilities Projects
+Rider OSW
+Rider PIPP
+Rider RBB
+Rider REC Renewable Energy Certificate Purchase Pr ogram
+Rider RGGI Regional Greenhouse Gas Initiative
+Rider RPS
+Rider SNA
+Rider T1 - Transmission
+Rider TRG
+Rider VCS
+For Usage On and After 04-01-25
+Elechic-Virginia
+Revised 08-01-254
+Renewable Energy Portfolio Standard
+- Suny and North Anna Nuclear Life Extension Program
+Riders (Continued)
+Rider G
+100 Percent Total Renewable Generation
+- Coastal Virginia Offshore Wind
+- Universal Service Fee
+- Rural BroadbandPiiot Projects
+Virginia Electric and Power Company
+- Virginia Community Solai Pilot Program
+Effective Date
+For Bills Rendered On and After 04-01 
+For Usage On and After 04-01-25 
+For Usage On and After 04-01-25 
+For Usage On and After 04-01-25 
+For Usage On and After 05-01-25 
+For Bills Rendered On and After 01-01-22 
+For Usage On and After 04-01-25 
+For Usage On and After 04-01-25 
+For Usage On and After 04-01-25 
+For Usage On and After 04-01-25
+07-01-25
+
+
+PAGE 8
+250740118Virginia Electric and Power Company
+TABLE OF CONTENTS
+Communities Served in Virginia
+Terms and Conditions for the Provision of Electric Service
+Introduction 07-01-18
+DefinitionsI. 01-01-22
+II. 01-19-16
+III. 01-19-16
+IV. 01-01-25
+V. 01-01-22
+VI. 01-25-14
+VII. 01-25-14
+vm. 01-25-14
+IX. 01-25-14
+X. 01-01-25
+XI. 02-01-02
+XII. 04-01-19
+xni. 02-01-02
+XIV. 01-25-14
+XV. 01-25-14
+XVI. 07-01-24
+Reconnection of Electric Servicexvn. 01-01-25
+XVIII. 01-19-16
+XIX. 01-01-22
+XX. 01-25-14
+XXI. 04-01-19
+XXII. 04-01-24
+XXIII. 01-01-25
+XXIV. 01-01-22
+XXV. 07-01-24
+XXVI. 10-15-20
+07-01-18
+07-01-18
+07-01-18
+07-01-18
+Rate Schedules
+Schedule 1 Residential Service For Usage On and After 01-01-25
+Schedule 1G - Residential Seivice (Experimental) For Usage On and After 01-01-25
+Schedule 1G - Residential Seivice (Experimental) Rebate Program For Usage On and After 01-29-21
+Schedule IP - Residential Seivice - (Closed) For Usage On and After 01-01-25
+Schedule IS Residential Seivice For Usage On and After 01-01-25
+Schedule IT - Residential Service For Usage On and After 01-01-25
+Schedule 1W For Usage On and After 01-01-25
+Schedule DP-R - Residential Seivice (Experimental) - (Closed) For Usage On and After 01-01-25
+Electric-Virginia Revised 07-01-2508-01-25
+1
+Application for Electric Seivice 
+Inspection
+Seivice Connections
+- Time-Controlled Storage Wa ter 
+Heating Residential
+Location of Company's Equipment
+Characteristics of Electric Delivery Seivice 
+Voltage
+Selection of Schedule
+Deposits
+Billing and Re-billing of Metered and Unmetered Services 
+Master Metering and Submetering
+Payments
+Use of Electricity by Customers
+Customer's Responsibility
+Right of Access
+Discontinuance of Electric Seivice
+Interruptions of Electric Seivice 
+Testing Facilities and Metering Equipment
+Periodic Tests and Checks
+Request Tests
+Electric Line Extensions and Installations
+Temporary Seivice
+Retail Access
+Net Metering Customers and Small Agricultural Generators 
+Electric Generator Interconnections Other Than Net Metering 
+Agreement for Overhead Electric Line Extension - Form G Plan 
+Agreement for Electric Seivice
+Agreement for the Installation of Underground Distribution Facilities on Private Property 
+Customer's Private Underground Seivice Connection Agreement
+Effective Date 
+04-30-87
+
+
+PAGE 9
+250740118Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 1EV For Usage On and After 01-01-25
+For Usage On and After 01-01-25Schedule EV - Residential Electric Vehicle Charging (Experimental) - (Closed)
+For Usage On and After 01-01-23Schedule EVCF - Electric Vehicle Charging Fleet Service
+For Usage On and After 01-01-23Schedule EVCL2 - Electric Vehicle Level 2 Charging Service
+For Usage On and After 09-01-22Schedule EVCR - Electric Vehicle Residential Charging Service
+For Usage On and After 07-01-25Schedule EVFCP - Electric Vehicle Direct Cunent Fast Charging Pricing Tariff
+For Usage On and After 07-01-25Schedule EVL2P - Electric Vehicle Level Two Pricing Tariff
+For Usage On and After 01-01-25Schedule 5 - Small General Service - (Closed)
+For Usage On and After 01-01-25Schedule 5C - Church and Synagogue Service
+For Usage On and After 01-01-25Schedule 5P - Church, Synagogue and Charitable Institution Service
+For Usage On and After 01-01-25Schedule 6 - Large General Service - (Closed)
+For Usage On and After 01-01-25Schedule GS-1 - Small General Service
+For Usage On and After 01-01-25Schedule DP-1 - Small General Service (Experimental) - (Closed)
+For Usage On and After 01-01-25Schedule GS-2 - Intermediate General Service
+For Usage On and After 01-01-25Schedule GS-2T - Intermediate General Service - Time of Usage
+For Usage On and After 01-01-25Schedule DP-2 - Intermediate General Service (Experimental) - (Closed)
+For Usage On and After 01-01-25Schedule GS-3 - Large General Service Secondary Voltage
+For Usage On and After 04-01-25Schedule GS-3 EV - Public Charging (Experimental)
+For Usage On and After 01-01-25Schedule GS-4 - Large General Service Primary Voltage
+For Usage On and After 01-01-25Schedule MBR - Large General Service Market-Based Rate (Experimental)
+For Usage On and After 01-01-25Schedule SCR - Large General Service
+For Usage On and After 01-01-25Schedule 6TS - Thermal Storage
+For Usage On and After 01-01-25Schedule 7 - Electric Heating - (Closed)
+Schedule 8 For Usage On and After 01-01-25
+For Usage On and After 01-01-25Schedule 10 - Large General Service
+Schedule 19 For Usage On and After 01-01-24
+Schedule CFG For Usage On and After 02-01-25
+Schedule RE For Usage On and After 01-01-23
+For Usage On and After 01-01-25Schedule SP - Solar Purchase (Experimental) - (Closed)
+For Usage On and After 01-01-25Schedule 24 - Outdoor Lighting Service Solid State Outdoor Lighting
+For Usage On and After 01-01-25Schedule 25 - Privately Owned Outdoor Lighting
+Electric-Virginia Revised 07-04-2-508-01-25
+3
+- Residential Service With Electric Vehicle 
+Charging (Experimental) - (Closed)
+- Supplementary, Maintenance, Standby 
+Service for Customers with Power Plants
+- Power Purchases From Cogeneration and 
+Small Power Production Qualifying Facilities
+- Environmental Attributes Purchase From Renewable 
+Energy Facilities (Experimental)
+- Carbon-Free or Renewable Generation Supply 
+Service (Experimental)
+
+
+PAGE 10
+250740118Virginia Electric and Power Company
+TABLE OF CONTENTS
+Rate Schedules (Continued) Effective Date
+Schedule 27 For Usage On and After 01-01-25
+Schedule 28 For Usage On and After 01-01-25
+12-18-85
+For Usage On and After 01-01-25Schedule 29 - Privately Owned Outdoor Lighting
+Shared Solar Rate Schedules
+Schedule Multi-Family Shared Solar For Production On and After 09-01-24
+Schedule SO-MSS - Subscriber Organization - Multi-Family Shared Solar For Production On and After 01-01-24
+Schedule SS-Shared Solar For Production On and After 02-14-25
+Schedule SO-SS - Subscriber Organization - Shared Solar For Production On and After 02-14-25
+Fuel Deferral Schedules
+Pro-Rata Share of Fuel Deferral Charges For Usage On and After 12-01-23
+Deferred Fuel Cost Charge For Usage On and After 04-01-2508-01-25
+Riders
+Exhibit of Applicable Riders 07-01-25
+Rider A - Fuel Charge Rider
+Rider CIA - Peak-Shaving Increment Rider For Usage On and After 04-01-25
+Rider C2A - Energy Efficiency Increment Rider For Usage On and After 04-01-25
+Rider C4A - Energy Efficiency Increment Rider For Usage On and After 04-01-25
+Rider CCR - Closure of Coal Combustion Residuals Impoundments For Usage On and After 04-01-25
+Rider CE - Clean Energy Projects and Power Purchase Agreements For Usage On and After 05-01-25
+Rider CRC For Usage On and After 05-01-19
+Rider D - Tax Effect Recovery 04-01-24
+Rider DIST - Distribution Facilities Projects 06-01-25
+Rider E - Environmental Projects For Usage On and After 04-01-25
+Rider EDR - Economic Development Rate 01-01-22
+Rider F Receivers or Trustees 03-01-54
+Electric-Virginia Revised 07-01-2508-01-25
+4
+- Outdoor Lighting Service 
+High Pressure Sodium Vapor 
+(Closed to New Installations)
+For Usage On and After 07-01-25 
+On An Interim Basis
+- Manufacturing and Commercial Competitiveness 
+Retention Credit Rider
+- Outdoor Lighting Service
+(Closed to New Installations)
+- Customer Charges for Outdoor Lighting Served on
+Schedule 28 (Not Filed with Virginia Commission)
+
+
+PAGE 11
+250740118Virginia Electric and Power Company
+TABLE OF CONTENTS
+Riders (Continued) Effective Date
+Rider G - Renewable Energy Program For Bills Rendered On and After 04-01-25
+Rider GEN - Generation Facilities Projects For Usage On and After 04-01-25
+Rider OSW - Coastal Virginia Offshore Wind For Usage On and After 04-01-25
+Rider PIPP Universal Service Fee For Usage On and After 04-01-25
+Rider RBB - Rural Broadband Pilot Projects For Usage On and After 05-01-25
+Rider REC - Renewable Energy Certificate Purchase Program For Bills Rendered On and After 01-01-22
+Rider RGGI - Regional Greenhouse Gas Initiative For Usage On and After 04-01-25
+Rider RPS - Renewable Energy Portfolio Standard For Usage On and After 04-01-25
+Rider SNA - Surry and North Anna Nuclear Life Extension Program For Usage On and After 04-01-25
+Rider T1 Transmission For Usage On and After 04-01-25
+Rider TRG 100 Percent Total Renewable Generation 07-01-25
+Rider VCS - Virginia Community Solar Pilot Program For Usage On and After 04-01-25
+Electric-Virginia Revised 07-01-2508-01-25
+4
+

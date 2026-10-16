@@ -1,0 +1,449 @@
+PAGE 24
+___________________ 
+Virginia Electric and Power Company 
+TERMS AND CONDITIONS 
+VI. CHARACTERISTICS OF ELECTRIC DELIVERY SERVICE 
+A. The Company’s normal Electric Delivery Service is single-phase, 60-hertz (cycle) 
+alternating current at approximately 120/240 V olts, or three-phase, four-wire at approximately 
+208Y/120 V olts, and in some instances three-phase, four-wire at approximately 480Y/277 V olts.  
+When other voltages are desired the Company should be contacted. 
+B. The characteristics at which Electric Delivery Service will be provided at each 
+installation will be given in writing to the Applicant. 
+C. To eliminate the possibility of error or loss, the Applicant or Customer, before 
+purchasing motors or other equipment or undertaking to install wiring, should secure from the 
+Company in writing all necessary data relating to the characteristics of the Electric Delivery 
+Service and the related connections which are supplied, or will be supplied in the future. 
+Filed 12-12-13 Superseding Filing Effective 09-01-09. 
+Electric – Virginia This Filing Effective 01-25-14. 
+
+
+PAGE 28
+(Continued) 
+Filed 12-09-25 
+Electric – Virginia 
+Superseding Filing Effective 01-01-25. 
+This Filing Effective 01-01-26. 
+Virginia Electric and Power Company 
+TERMS AND CONDITIONS 
+ 
+ 
+X. BILLING AND RE-BILLING OF METERED AND UNMETERED SERVICES 
+A. When meters are installed by the Company to measure the Electric Service used by 
+the Company’s Customers, all charges for Electric Service used, except certain minimum charges, 
+shall be calculated from the readings of such meters. All meters used to determine billing will be 
+solely owned and operated by the Company. The Company may for its own purposes use meters 
+that are read remotely. 
+B. Normally, Electric Service will be furnished and metered through one Delivery 
+Point and will be billed separately on the applicable Rate Schedule selected by the Customer. 
+However, the Company reserves the right where for the Company’s own purposes because of the 
+amount or characteristics of electricity required, to install two or more sets of metering apparatus, 
+to combine the readings of meters so installed for billing purposes, and to bill these combined 
+readings on the applicable Rate Schedule selected by the Customer. When the number of days in 
+the billing period are less than 26 or more than 40 on a “Monthly Rate” Rate Schedule, the Rate 
+Schedule is subject to proration of the Basic Customer Charge, any Demand Charge, and each 
+kWh block size for all kWh blocks with the exception of the last kWh block. If the Rate Schedule 
+does not include blocked kWh charges, proration is not required as the kWh charge does not change 
+with usage. For all “30-Day Rate” Rate Schedules, prorate according to the instructions stated in 
+the rate schedule. 
+ 
+C. When one or more transformers are installed at one Delivery Point by the Company 
+for the Company’s convenience to provide Electric Service to a single Customer at one nominal 
+voltage, the Company reserves the right, where for the Company’s own purposes because of the 
+amount or characteristics of electricity required, to meter the electricity on the Company’s side of 
+the transformer or transformers, but the Customer will then be allowed a discount of 2% in the 
+Company’s charges that are priced per kilowatt-hour. 
+D. Meters in service may be tested by the Company, the Commission or any other 
+lawfully constituted authority having jurisdiction. When, as a result of such a test, a meter is found 
+to be no more than 2% fast or slow, no adjustment will be made in the Customer’s bills. If the 
+meter is found to be more than 2% fast or slow because of incorrect calibration, the Company will 
+rebill the Customer for the correct amount as calculated for a period equal to the lesser of: 
+1. One-half of the time elapsed since the most recent test of the metering 
+apparatus. 
+2. 150 days for Customers having a maximum demand below 50 kW during 
+the past year. 
+3. 12 months for Customers having a maximum demand of 50 kW or more 
+during the past year. 
+The percentage registration of a meter will be calculated by the “weighted average” of light load 
+and full load, which is calculated by giving a value of 1 to the light load and a value of 4 to the full 
+load. 
+
+
+PAGE 72
+Virginia Electric and Power Company  
+ 
+TERMS AND CONDITIONS  
+____________________ 
+ 
+ 
+(Continued) 
+Filed 03-05-26   Superseding Filing Effective 07-01-24. 
+Electric – Virginia   This Filing Effective 02-05-26. 
+ 
+XXV. NET METERING CUSTOMERS AND SMALL AGRICULTURAL GENERATORS 
+(Continued) 
+ 
+b. If one or more – but not all – of the Company-owned multiple meters, to be 
+included in the Small Agricultural Generator ’s One Account measures 
+demand, all such meters must measure demand when (i) the Small 
+Agricultural Generator Rate Schedule includes a demand charge and/or (ii) 
+any determination of demand provision in the Small Agricultural 
+Generator’s Rate Schedule applies to the anticipated demand and/or 
+anticipated kilowatt- hours to be billed on the Small Agricultural 
+Generator’s One Account.  Accordingly, the Company shall exchange each 
+such Company-owned meter that measures only kilowatt-hour usage with a 
+Company-owned meter capable of measuring demand. 
+ 
+c. The Small Agricultural Generator shall pay to the Company the Company’s 
+incremental cost associated with each such meter exchange, as described in 
+Paragraph XXV.E.6.b., above. 
+ 
+d. For purposes of applying any appropriate Excess Facilities Charge 
+percentage pursuant to Section IV – Service Connections, Paragraph IV.E.3 
+or Paragraph IV.E.4, of the Company’s Terms and Conditions to the Small 
+Agricultural Generator’s One Account, the definition of Contiguous Sites 
+pursuant to Rule 20 VAC 5-315-20 shall be used. 
+ 
+F. Net Metering Billing and Payment Considerations 
+ 
+1. Definitions used in this section: 
+ 
+a. “Net Metering Period” – each successive 12-month period beginning with 
+the first meter reading date following the date of final interconnection of the 
+Generator with the Company. 
+ 
+b. “Excess Generation” – the amount by which electricity generated by the 
+Generator exceeds electricity consumed by the Customer for the Net 
+Metering Period.  
+
+
+PAGE 73
+Virginia Electric and Power Company  
+ 
+TERMS AND CONDITIONS  
+____________________ 
+ 
+ 
+(Continued) 
+Filed 03-05-26   Superseding Filing Effective 07-01-24. 
+Electric – Virginia   This Filing Effective 02-05-26. 
+ 
+XXV. NET METERING CUSTOMERS AND SMALL AGRICULTURAL GENERATORS 
+(Continued) 
+ 
+2. Compensation for Excess Generation 
+ 
+a. If the Customer purchases Electricity Supply Service from the Company, 
+and the Customer has Excess Generation during a Net Metering Period, the 
+Customer will receive no compensation from the Company unless the 
+Customer enters into a power purchase agreement, as may be revised from 
+time to time, with the Company. 
+ 
+b. If the Company provides the Customer Electricity Supply Service , the 
+Company shall enter into a power purchase agreement for the Customer’s 
+Excess Generation, upon the written request of the Customer. 
+ 
+3. The power purchase agreement shall meet the following criteria: 
+ 
+a. The power purchase agreement shall be consistent with Rule 20  VAC 5-
+315-50; 
+ 
+b. The Customer shall submit the written request for a power purchase 
+agreement to the Company prior to the beginning of the Customer’s first 
+Net Metering Period covered by the power purchase agreement ; 
+ 
+c. The Company shall purchase the Customer’s Excess Generation  for the 
+Net Metering Period(s) under the power purchase agreement at a price 
+equal to the PJM Interconnection, L.L.C. (PJM) DOMZONE day- ahead 
+annual, simple average LMP (locational marginal price), as published by 
+the PJM Market Monitoring Unit, for the most recent calendar year ending 
+on or before the end of each Net Metering Period; 
+ 
+d. The price, as referenced in Paragraph XXV.F.3.c., above, shall remain in 
+effect unless, after notice and opportunity for hearing, the 
+Commission establishes a different price or pricing methodology.  
+ 
+4. The C ompany shall credit the Customer’s account  annually for the Excess 
+Generation during the Net Metering Period within 30 days following the latter of 
+the following: 
+ 
+a. The end of the Net Metering Period; or 
+ 
+b. The date of the PJM Market Monitoring Unit's publication of the previous 
+calendar-year's PJM DOMZONE day-ahead annual, simple average LMP 
+(locational marginal price).  The Customer may choose to receive a direct 
+payment in lieu of an account credit. 
+ 
+  
+
+
+PAGE 74
+Virginia Electric and Power Company  
+ 
+TERMS AND CONDITIONS  
+____________________ 
+ 
+ 
+(Continued) 
+Filed 03-05-26   Superseding Filing Effective 07-01-24. 
+Electric – Virginia   This Filing Effective 02-05-26. 
+ 
+XXV. NET METERING CUSTOMERS AND SMALL AGRICULTURAL GENERATORS 
+(Continued) 
+ 
+5. If electricity generated by the Customer and fed back to the electric grid exceeds 
+the electricity supplied to the Customer by the Company or a CSP during any 
+Billing Period (“Billing Period Credit”), the Customer will pay only the 
+Company’s non- usage sensitive charges, including any applicable standby 
+charges, for that Billing Period.  If a Time-of-Use Customer has Billing Period 
+Credits in all Time -of-Use Tiers, during any Billing Period, the Time -of-Use 
+Customer will pay only the Company’s demand char ge(s) (where applicable), 
+non-usage sensitive charges, and any applicable standby charges for that Billing 
+Period. 
+ 
+6. Billing Period Credits will be accumulated, carried forward and applied at the 
+first opportunity to any billing periods having positive net consumption (by 
+Time-of-Use Tiers in the case of a Time- of-Use Customer) .  However, any 
+accumulated Billing Period Credits remaining unused at the end of a Net 
+Metering Period shall be carried forward into the next Net Metering Period only 
+to the extent that such accumulated Billing Period Credits carried forward do 
+not exceed the Customer’s billed consumption for the current Net Metering 
+Period, adjusted to exclude accumulated Billing Period Credits carried forward 
+and applied from the previous Net Metering Period (recognizing Time-of-Use 
+Tiers for a Time-of-Use Customer). 
+ 
+G. Small Agricultural Generator Billing and Payment Considerations 
+ 
+1. The Small Agricultural Generator electing to interconnect to the Company’s 
+distribution system as a Small Agricultural Generator – as opposed to an 
+Agricultural Net Metering Customer -  shall enter into a power purchase 
+agreement with the Company for the purchase, by the Company, of the 
+electricity generated by the Small Agricultural Generating Facility.   
+ 
+2. Under the power purchase agreement, the Company will pay the Small 
+Agricultural Generator a price that is mutually agreed upon by the Company 
+and the Small Agricultural Generator but not less than Company’s Rate 
+Schedule 19 - Power Purchases from Cogeneration and Small Power Production 
+Qualifying Facilities approved as the Company’s avoided cost tariff for energy 
+and capacity. 
+  
+
+
+PAGE 75
+Virginia Electric and Power Company  
+ 
+TERMS AND CONDITIONS  
+____________________ 
+ 
+ 
+(Continued) 
+Filed 03-05-26   Superseding Filing Effective 07-01-24. 
+Electric – Virginia   This Filing Effective 02-05-26. 
+ 
+XXV. NET METERING CUSTOMERS AND SMALL AGRICULTURAL GENERATORS 
+ (Continued) 
+ 
+H. Renewable Energy Certificates 
+ 
+1. General 
+The Customer owns any Renewable Energy Certificate (“REC” or “RECs”), 
+associated with the total output of the Generator. 
+ 
+2. Company’s Obligation to Purchase the Customer’s RECs 
+ The Company is obligated to purchase the Customer’s RECs only when both 
+of the following occur: 
+ 
+a. The Customer signs a power purchase agreement with the Company; 
+ 
+b. At the time the power purchase agreement is signed – the Customer 
+exercises Customer’s one- time option to include a provision in the power 
+purchase agreement that requires the Company to purchase all generated 
+RECs over the duration of the power purchase agreement. 
+ 
+3. Company Payment for the Customer’s REC 
+ 
+a. When the Company is obligated to purchase the Customer’s RECs and 
+where the Customer has not requested the Company to meter the total output 
+of the Generator, the Company will purchase the RECs associated with the 
+Excess Generation purchased in accordance with the power purchase 
+agreement. 
+ 
+b. When the Company is obligated to purchase the Customer’s RECs and 
+where the Customer has requested the Company to meter the total output of 
+the Generator, the Company will purchase the RECs associated with the 
+total generation over the Net Metering Period, in accordance with the power 
+purchase agreement. 
+ 
+c. For each REC the Company is obligated to purchase from the Customer 
+during the Net Metering Period, in accordance with the power purchase 
+agreement, the Company will make payment to the Customer for all whole 
+RECs at the same time that the Company pays the Customer for any Excess 
+Generation. 
+ 
+d. The Company will post a credit to the Customer’s account.  In lieu of a 
+credit, the Customer may request a direct payment. 
+  
+
+
+PAGE 76
+Virginia Electric and Power Company  
+ 
+TERMS AND CONDITIONS  
+____________________ 
+ 
+ 
+(Continued) 
+Filed 03-05-26   Superseding Filing Effective 07-01-24. 
+Electric – Virginia   This Filing Effective 02-05-26. 
+ 
+XXV. NET METERING CUSTOMERS AND SMALL AGRICULTURAL GENERATORS 
+ (Continued) 
+ 
+e. The Company will not make an immediate payment to the Customer for any 
+remaining fractional REC.  Such fractional REC may be carried forward to 
+subsequent Net Metering Periods for the duration of the power purchase 
+agreement. 
+ 
+4. Rate to be Paid for Customer’s RECs 
+ For each whole REC that the Company is obligated to purchase from the 
+Customer, the Company will pay the Customer the daily unweighted average 
+for the CR component, as described in Paragraph IV of the Company’s Rider G 
+– Renewable Energy Program, which applies during the time period for which 
+Excess Generation is determined. 
+ 
+5. Registration and Tracking of RECs 
+  
+ The Customer agrees to all of the following criteria regarding the registration 
+and tracking of RECs: 
+ 
+a. The Customer shall be solely responsible for registering the Generator in 
+the PJM Environmental Information Services (“EIS”) Generation Attribute 
+Tracking System ( “GATS”) and with any PJM state renewable energy 
+programs under which the Generator qualifies, as determined by the 
+Company: and 
+ 
+b. The Customer shall use reasonable efforts to maintain the registration of the 
+Generator with GATS and the state programs; and 
+ 
+c. The Customer shall take any other reasonable actions to maintain the 
+validity of the RECs for compliance purposes and to avoid revocation of 
+any of the RECs for a period of five (5) years from the delivery dates. 
+ 
+6. Small Agricultural Generators who own RECs or other environmental 
+attributes, which were created by the generation of renewable energy from the 
+Small Agricultural Generating Facility, shall have the rights pursuant to this 
+Paragraph XXV.H., and Rule 20 VAC 5-315-50. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 77
+Virginia Electric and Power Company  
+ 
+TERMS AND CONDITIONS  
+____________________ 
+ 
+ 
+(Continued) 
+Filed 03-05-26   Superseding Filing Effective 07-01-24. 
+Electric – Virginia   This Filing Effective 02-05-26. 
+ 
+XXV. NET METERING CUSTOMERS AND SMALL AGRICULTURAL GENERATORS 
+ (Continued) 
+ 
+I. Additional Controls and Tests 
+ 
+A Customer’s Generator shall meet all applicable safety and performance standards 
+established by the National Electrical Code, the Institute of Electrical and 
+Electronics Engineers, and accredited testing laboratories such as Underwriters 
+Laboratories.  Beyond the requirements set forth in this Section XXV, and to insure 
+public safety, power quality, and reliability of the Company’s electric distribution 
+system, the Customer whose Generator meets those standards and rules shall bear 
+all reasonable costs of equipment required for the interconnection to the Company’s 
+electric distribution system, including costs, if any, to (i) install additional controls 
+and (ii) perform additional tests. 
+ 
+J. Direct Transfer Trip (DTT) Requirements 
+ 
+During the system impact study, Electric Transmission System Protection 
+Engineering ( “SPE”) determines what substations upgrades are required for a 
+generation site to interconnect to D ominion Energy’s system safely and reliably.  
+This study is required for any Chapter 315 net energy metering ( “NEM”) project 
+250 kW or greater. 
+ 
+1. The particular system upgrades that are required are based on several criteria 
+including but not limited to the characteristics of the generation site itself, the 
+make-up of the circuit feeding the generation site, and any existing substation 
+equipment. 
+ 
+2. A Distributed Energy Resource ( “DER”) Panel, including SEL -451 and SEL-
+735 relays, is required whenever fiber based direct transfer trip (“ DTT”) is 
+required from any substation protective device to any device up until the point 
+of Interconnection due to the addition of the generation site under consideration.  
+ 
+3. To determine whether DTT is required, SPE examines the historical light load 
+value and aggregate amount of generation (not counting generation sites that 
+have DTT installed) at each three -phase interrupting device upline of the 
+proposed generation site. 
+ 
+a. For proposed inverter -based generation ( “IBR”), at any device where the 
+light load to generation ratio is less than three to one (3:1), DTT is required. 
+ 
+b. For proposed synchronous generation that plans to export power, at any 
+device where the light load to generation ratio is less than five to one  (5:1), 
+DTT is required. 
+ 
+
+
+PAGE 78
+Virginia Electric and Power Company  
+ 
+TERMS AND CONDITIONS  
+____________________ 
+ 
+ 
+(Continued) 
+Filed 03-05-26   Superseding Filing Effective 07-01-24. 
+Electric – Virginia   This Filing Effective 02-05-26. 
+XXV. NET METERING CUSTOMERS AND SMALL AGRICULTURAL GENERATORS 
+ (Continued) 
+ 
+4. DTT may also be required for other considerations beyond the light load 
+screening. 
+ 
+a. If there is existing generation (that does not have DTT) on the same circuit 
+as the proposed generation site, and the generation type, synchronous or 
+IBR, of the proposed site is different than the existing generation, then DTT 
+is required. 
+ 
+b. If there is a POI recloser whose proximity to the substation would cause the 
+removal of the circuit feeder instantaneous protection, then a recloser 
+reverse interlock scheme is needed.  This scheme requires that the circuit 
+breaker relay be digital (as opposed to electromechanical) and that there is 
+a communications path between the substation and the POI. 
+ 
+c. DTT is required for the interconnection of all IBRs that are not certified to 
+UL 1741 / IEEE 1547 standards. 
+ 
+5. DTT may also be required for a non-export generation site. 
+ 
+a. For proposed synchronous generation where power export is not a design 
+goal (e.g., generation used for backup power or peak- shaving), SPE 
+examines the light load at each three-phase interrupting device upline of the 
+proposed generation site minus the site’s light load.  If there is not sufficient 
+light load to properly implement a reverse power scheme at the POI, or if 
+the Customer does not wish to utilize a reverse power scheme, then DTT is 
+required. 
+ 
+b. For non-exporting generation, if any required basic protection schemes such 
+as reverse power cannot be applied, DTT is required at any protective 
+devices identified as needing the reverse power protection. 
+ 
+6. Currently, the only approved communication medium for DTT is point-to-point 
+fiber, which the proposed generation site developer is responsible for providing. 
+ 
+ 
+ 

@@ -1,0 +1,92 @@
+{
+  "completed_on": "2026-10-16",
+  "rate_coverage_end": "2026-10-15",
+  "scope": "2026 ordinary Dominion VA retail composite normalization. No source is extended to unverified dates. Earlier20261015 audit describes the prior359beabc source pin and its hashes remain preserved.",
+  "enabled_2026_plans": [
+    "VA-1",
+    "VA-1G",
+    "VA-1S",
+    "VA-1T",
+    "VA-GS1",
+    "VA-GS2",
+    "VA-GS2T",
+    "VA-GS3",
+    "VA-GS4-primary",
+    "VA-GS4-transmission",
+    "VA-10-secondary",
+    "VA-10-primary",
+    "VA-10-transmission",
+    "VA-5C",
+    "VA-5P"
+  ],
+  "continuous_2026_coverage": {
+    "start": "2026-01-01",
+    "end": "2026-10-15"
+  },
+  "complete_bill_scope": "Ordinary Henrico bundled account satisfying each plan eligibility and meter facts; otherlocalities incomplete by exact localtax exclusion. Demand-rate crossings require explicit verified allocation/source. NEM has separate dated terms, standby thresholds and no cross-price credit allocation.",
+  "scc_full_text_package_hashes_verified": 64,
+  "current_selected_extract_hashes_verified": 13,
+  "july_t1_complete_original": {
+    "source_url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-t1.pdf",
+    "archive_url": "https://web.archive.org/web/20260719064330id_/https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-t1.pdf",
+    "retrieved_on": "2026-10-15",
+    "pdf_sha256": "d95972e31c015c58983634cbad1cfbf41298dccfbf7bca64f0a6e7bdd2f76651",
+    "pdf_bytes": 107031,
+    "text_file": "t1_2026_07_01.txt",
+    "text_sha256": "65c6aa6c6f94e92b174afd40da97fd81eb1e3a34764b214ba82221d56a93cdaa",
+    "filed_on": "2026-06-18",
+    "effective_start": "2026-07-01",
+    "supersedes": "2025-09-01",
+    "page": 1,
+    "notes": "Actual original PDF; ordinary printed coefficients unchanged; residential NEM footnote changes standby threshold to above20kW. Complete page retained, not a search snippet.",
+    "retrieved_at": "2026-10-16T06:58:39.723100+00:00",
+    "archive_timestamp": "20260719064330",
+    "archive_cdx_sha1": "BBVMK3377EUFVNEDW4VHQ7JE4M4LLKAS"
+  },
+  "2026_components": 19,
+  "dated_versions": 35,
+  "normalized_coefficient_records": 262,
+  "missing_2026_base_or_rider_original_dependencies": [],
+  "missing_2025_tax_originals_unchanged": [
+    "sales_use_tax_surcharge",
+    "local_utility_consumer_tax",
+    "consumption_tax_before_2025_08_16"
+  ],
+  "focused_test_command": "/usr/local/bin/python3 -m pytest -q test/test_dominion.py test/test_dominion_va_general.py test/test_dominion_va_historical.py test/test_dominion_va_2026.py test/test_regional_dispatch.py",
+  "focused_test_result": {
+    "passed": 431,
+    "seconds": 13.52
+  },
+  "file_sha256": {
+    "src/billing/dominion_va_general.py": "5dbe29c3dfba3f8b6c8886742649e0d80174b4b0e26c39db82645c6135bf278f",
+    "src/billing/dominion_va_2026.py": "9e800c2aeb117bb9f829c94ff780d1f48efef4b8ab00aae7f93782a96059886b",
+    "src/billing/dominion_va_2026_data.py": "dc3f6eba940a52dcdf661d0b0cce3b42164c058295d0d9ba18d2ce011a30857e",
+    "src/billing/dominion_va_historical.py": "aa686e3213e6b6639f7eb318d4f3fe9ecdc68af372c792d746665b96d09a228e",
+    "src/billing/dominion_va_historical_data.py": "73edcaa117ab8625b9ef08cd60206adca15a520fc9e7dd7f18f2ba972e5c14c8",
+    "test/test_dominion_va_general.py": "4b59f8230df2f6bf35ee614dd27520093ed0ca8960a6d1cd309bce6a0f65523b",
+    "test/test_dominion_va_historical.py": "62a588fd29fa70872f5254387db850a77b57d7a7b613748eee1a1bffdd8fea07",
+    "test/test_dominion_va_2026.py": "82fbd05a54aa965a67a7a4a3e28c05100ab9c2a4955cbdb651aea0fd81daea12",
+    "docs/utility_sources/dominion/va_history_research/normalized_2026_components.csv": "15448c99714db98014046c49b98fc31eed0c70a95e68d937c66490fc49156df5",
+    "docs/utility_sources/dominion/va_history_research/historical_2026_independent_benchmarks.json": "9651948a11cbb44f298ca2a8c6385dacbc922350c11983fb8317b07a657e968d"
+  },
+  "source_visual_clarifications": [
+    {
+      "component": "CERC",
+      "document_id": 386988,
+      "rate_page": 5,
+      "supporting_pages": [
+        2,
+        5
+      ],
+      "note": "January filing suspended and never implemented; actual clean rate beginsMarch1. Page4 is divider."
+    },
+    {
+      "component": "GEN",
+      "document_id": 378661,
+      "rate_page": 4,
+      "printed_effective_start": "2025-04-01",
+      "extracted_ocr_text": "01-01-25",
+      "note": "Actual rendered04misreadas01 by embeddedOCR; original extraction preserved and printedAprildate used."
+    }
+  ]
+}

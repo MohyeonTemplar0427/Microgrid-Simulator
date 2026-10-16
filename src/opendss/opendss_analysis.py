@@ -2,8 +2,6 @@
 
 import opendssdirect as dss
 import math
-from dataclasses import dataclass
-from enum import Enum 
 from collections.abc import Sequence
 import pandas as pd
 from ..dispatch.battery import Battery

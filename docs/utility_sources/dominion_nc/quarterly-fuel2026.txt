@@ -1,0 +1,303 @@
+--- PDF page 1 ---
+
+
+June 26, 2026
+
+VIA ELECTRONIC FILING
+
+Ms. A. Shonta Dunston, Chief Clerk
+North Carolina Utilities Commission
+4325 Mail Service Center
+Raleigh, North Carolina 27699-4325
+
+Re: Dominion Energy North Carolina’s Updated Quarterly Fuel Status
+Report: First Quarter of Billing Period covering February 1, 2026,
+through April 30, 2026
+Docket No. E-22, Sub 753B
+
+Dear Ms. Dunston:
+
+On June 15, 2026, pursuant to North Carolina General Statute (“N.C. Gen. Stat.”)
+§ 62-133.2(d2), Virginia Electric and Power Company, d/b/a Dominion Energy North
+Carolina filed its Quarterly Fuel Status Report (“Quarterly Report”) for its current billing
+period, February 1, 2026, through January 31, 2027, as established by the North Carolina
+Utilities Commission’s (“Commission”) Order Approving Fuel Charge Adjustment and
+Requiring Filing of Proposed Customer Notice, issued on January 13, 2026, in Docket
+No. E-22, Sub 753 (“2025 Fuel Order”).  The Quarterly Report filing represented results
+through the first quarter of the billing period ending April 30, 2026.
+
+As discussed in the Quarterly Report filing, actual recovered amounts for the first
+quarter and an updated projection of the cumulative recovered amount at the end of the
+current 12-month recovery period (February 1, 2026, through January 31, 2027) indicated
+an under-recovery exceeding ten percent of the total revenue requirement, which is based
+on the Commission-approved fuel factors in the 2025 Fuel Order.  Accordingly, the
+Company calculated an adjustment to the fuel factors approved in the 2025 Fuel Order.
+The Company presented the incremental fuel factors necessary to recover the under-
+recovery over a 12-month billing period, as required by N.C. Gen. Stat. § 62-133.2(d2).
+The 12-month recovery period would begin August 1, 2026, and end July 31, 2027.  The
+Company also presented a new tariff, Rider B1, to complement the existing Rider A and
+Rider B that have historically detailed the Company’s annual fuel factors.
+
+Subsequent to the Company’s filing of the Quarterly Report, on June 23, 2026,
+the Commission issued its Order Decreasing Regulatory Fee Effective July 1, 2026 in
+Docket No. M-100, Sub 142 (“June 23 Order”).  In the June 23 Order, the Commission
+decreased the regulatory fee for noncompetitive jurisdictional revenues from 0.17% to
+
+McGuireWoods LLP
+501 Fayetteville St.
+Suite 500
+Raleigh, NC 27601
+Phone: 919.755.6600
+Fax: 919.755.6699
+www.mcguirewoods.com
+
+
+Andrea R. Kells
+Direct: 919.755.6614
+akells@mcguirewoods.com
+McGuireWoods
+
+
+--- PDF page 2 ---
+
+
+
+2
+
+0.15%, effective July 1, 2026.  The adjustment to the fuel factors presented in the
+Quarterly Report was based on the currently effective regulatory fee.  Due to the August
+1, 2026, effective date of the adjusted fuel factors, the Company has updated the
+adjustment to reflect the 0.15% regulatory fee that will take effect July 1, 2026.
+
+With this updated adjustment filing, the Company is submitting updated
+incremental fuel factors and an updated Rider B1 in redline and clean versions to reflect
+the decreased regulatory fee.
+
+As indicated in the Quarterly Report, the Company will file its annual fuel
+adjustment application on August 11, 2026, for the test period ending June 30, 2026, and
+the prospective billing period February 1, 2027, through January 31, 2028.  The proposed
+fuel factors and customer bill impacts that will be presented in that filing, and the current
+fuel factors that were approved in the 2025 Fuel Order, are and will be separate from the
+fuel factors presented in this quarterly filing.
+
+The following table summarizes the updated quarterly fuel adjustment and
+customer bill impacts presented with this filing together with the currently effective fuel
+factors as approved in the 2025 Fuel Order.
+
+
+
+Thank you for your assistance with this matter. Feel free to contact me with any
+questions.
+Very truly yours,
+/s/ Andrea R. Kells
+
+
+cc: Lauren E. Wood – Dominion Energy Services, Inc.
+
+CUSTOMER CLASS ANNUAL FUEL FACTOR 12-MONTH REDOVERY FUEL FACTORS TOTAL FUEL FACTORS
+Al'PROVED E·22SUB 753 PROPOSED RIDER Bl PROPOSED
+NORTH CAROLINA JURISDICTION $0.027045 $0.005548 $0.032593
+RESIDENTIAL $0.029254 $0.005602 $0.034856
+SGS&PA $0.026492 $0.005593 $0.032085
+LGS $0.026091 $0.005578 $0.031669
+SCHEDULE NS $0.024313 $0.005385 $0.029698
+6VP $0.024681 $0.005455 $0.030136
+OUTDOOR LIGHTING $0.028392 $0.005602 $0.033994
+TRAFFIC $0.021687 $0.005602 $0.027289
+
+
+--- PDF page 3 ---
+EXPENSE: CURRENT PROJECTED FEBRUARY 1, 2026 - JANUARY 31, 2027 NC JURISDICTIONAL
+FUEL EXPENSE UNDER RECOVERY 22,902,554$
+SALES: NORTH CAROLINA SALES
+ACTUAL with FORECAST FOR THE RATE PERIOD (NO NORMALIZATION) 4,133,889,000
+FEE: NORTH CAROLINA REGULATORY FEE ADJUSTMENT FACTOR 1.001500
+$22,902,554
+4,133,889,000
+FACTOR = $0.005548  / KWH  (A)
+NOTES
+(A) WITHOUT NC REGULATORY FEE $0.005540 / KWH
+FACTOR = x 1.0015
+DOMINION ENERGY NORTH CAROLINA
+CALCULATION OF PROJECTED EXPERIENCE MODIFICATION FACTOR - RIDER B1
+TO BE EFFECTIVE AUGUST 1, 2026
+QUARTERLY ADJUSTMENT - DOCKET NO. E-22 SUB 753B
+Updated Exhibit LCY-1
+Page 1 of 3
+
+
+--- PDF page 4 ---
+(1) (2) (3) (4) (5) (6) (7) (8)
+UNIFORM VOLTAGE
+KWH ADJUSTED FUEL REVENUE CLASS CLASS KWH EMF DIFFERENTIATED
+SALES KWH NC JURISDICTIONAL UNIFORM EXPANSION @ GENERATION @ GENERATION EMF
+CUSTOMER CLASS E-22 SUB 753 SALES EMF EMF FACTOR LEVEL LEVEL @ SALES LEVEL
+(A) (B) (2) x (3) (C) (2) x (5) (4a) / (6a) (5) x (7)
+RESIDENTIAL 1,655,538,605 1,657,608,009 $0.005548 $9,196,409 1.054723 1,748,317,292 $0.005311 $0.005602
+SGS & PA 837,986,941 839,034,416 $0.005548 $4,654,963 1.053068 883,560,294 $0.005311 $0.005593
+LGS 604,567,341 605,323,044 $0.005548 $3,358,332 1.050348 635,799,848 $0.005311 $0.005578
+SCHEDULE NS 716,853,053 717,749,111 $0.005548 $3,982,072 1.013865 727,700,702 $0.005311 $0.005385
+6VP 291,621,574 291,986,098 $0.005548 $1,619,939 1.027183 299,923,156 $0.005311 $0.005455
+OUTDOOR LIGHTING 21,660,627 21,687,703 $0.005548 $120,323 1.054723 22,874,519 $0.005311 $0.005602
+TRAFFIC 499,995 500,620 $0.005548 $2,777 1.054723 528,015 $0.005311 $0.005602
+TOTAL 4,128,728,136 4,133,889,000 $22,934,816 (4a) 4,318,703,827 (6a)
+NOTES
+(A) FROM E-22 SUB 753 COMPANY EXHIBIT NO. LCY-1 SCHEDULE 2, PAGE 2
+(B) COMPANY EXHIBIT NO. LCY-1 SCHEDULE 1, PAGE 1
+(C) FOR THE 12 MONTHS ENDING DECEMBER 31, 2025
+DOMINION ENERGY NORTH CAROLINA
+CALCULATION OF PROJECTED EXPERIENCE MODIFICATION FACTOR - RIDER B1
+TO BE EFFECTIVE AUGUST 1, 2026
+QUARTERLY ADJUSTMENT - DOCKET NO. E-22 SUB 753B
+Updated Exhibit LCY-1
+Page 2 of 3
+
+
+--- PDF page 5 ---
+DOMINION ENERGY NORTH CAROLINA
+PROPOSED TOTAL FUEL FACTORS
+TO BE EFFECTIVE AUGUST 1, 2026
+QUARTERLY ADJUSTMENT - DOCKET NO. E-22 SUB 753B
+ANNUAL FUEL FACTOR 12-MONTH REDOVERY FUEL FACTORS TOTAL FUEL FACTORS
+CUSTOMER CLASS APPROVED E-22 SUB 753 PROPOSED RIDER B1 PROPOSED
+NORTH CAROLINA JURISDICTION $0.027045 $0.005548 $0.032593
+RESIDENTIAL $0.029254 $0.005602 $0.034856
+SGS & PA $0.026492 $0.005593 $0.032085
+LGS $0.026091 $0.005578 $0.031669
+SCHEDULE NS $0.024313 $0.005385 $0.029698
+6VP $0.024681 $0.005455 $0.030136
+OUTDOOR LIGHTING $0.028392 $0.005602 $0.033994
+TRAFFIC $0.021687 $0.005602 $0.027289
+Updated Exhibit LCY-1
+Page 3 of 3
+
+
+--- PDF page 6 ---
+Virginia Electric and Power Company
+Filed 06-2615-26
+Electric-North Carolina
+
+This Filing Effective For Usage On and After 08-
+01-26 Through and Including 07-31-27.
+Docket No. E-22, Sub 753B
+
+
+RIDER B1
+FUEL COST QUARTERLY ADJUSTMENT RIDER
+The applicable cents per kilowatt-hour charge 1 shall be added to the base fuel cost, Rider A, and Rider B
+charges contained in the energy charges within each  of the following Dominion Energy North Carolina
+filed Rate Schedules.
+
+Rate Schedule Customer Class Cents per
+kWh Charge
+Schedule 1 Residential 0. 56035602¢/kWh
+Schedule 1DF Residential 0.56035602¢/kWh
+Schedule 1E Residential 0.56035602¢/kWh
+Schedule 1P Residential 0.56035602¢/kWh
+Schedule 1T Residential 0.56035602¢/kWh
+Schedule 1W Residential 0.56035602¢/kWh
+Schedule 5 SGS & Public Authority 0.55945593¢/kWh
+Schedule SGS-EV SGS & Public Authority 0.55945593¢/kWh
+Schedule 5C SGS & Public Authority 0.55945593¢/kWh
+Schedule 5P SGS & Public Authority 0.55945593¢/kWh
+Schedule 7 SGS & Public Authority 0.55945593¢/kWh
+Schedule 30 SGS & Public Authority 0.55945593¢/kWh
+Schedule 42 SGS & Public Authority 0.55945593¢/kWh
+Schedule 6C Large General Service 0. 55795578¢/kWh
+Schedule 6L Large General Service 0.55795578¢/kWh
+Schedule 6P Large General Service 0.55795578¢/kWh
+Schedule 10  Large General Service 0.55795578¢/kWh
+Schedule LGS – RTP
+With Customer Baseline Load Large General Service 0.55795578¢/kWh
+Schedule 26 Outdoor Lighting 0. 56035602¢/kWh
+Schedule 30T Traffic Control 0. 56035602¢/kWh
+Schedule 6VP 6VP 0. 54565455¢/kWh
+Schedule NS Tier 2-Type A and Tier 3
+Energy Charges Schedule NS 0. 53865385¢/kWh
+Schedule NS Tier 1 Type A & B, and
+Tier 2-Type B Energy Charges Schedule NS 0. 53865385¢/kWh
+
+1This charge is not a part of the base fuel cost incl uded in the energy prices stated in the Rate Schedules
+and should, therefore, be applied in addition to the prices stated in the Rate Schedules.
+
+
+
+
+--- PDF page 7 ---
+Virginia Electric and Power Company
+Filed 06-26-26
+Electric-North Carolina
+
+This Filing Effective For Usage On and After 08-
+01-26 Through and Including 07-31-27.
+Docket No. E-22, Sub 753B
+
+
+RIDER B1
+FUEL COST QUARTERLY ADJUSTMENT RIDER
+The applicable cents per kilowatt-hour charge1 shall be added to the base fuel cost , Rider A, and Rider B
+charges contained in the energy charges within each of the following Dominion Energy North Carolina
+filed Rate Schedules.
+
+Rate Schedule Customer Class Cents per
+kWh Charge
+Schedule 1 Residential 0.5602¢/kWh
+Schedule 1DF Residential 0.5602¢/kWh
+Schedule 1E Residential 0.5602¢/kWh
+Schedule 1P Residential 0.5602¢/kWh
+Schedule 1T Residential 0.5602¢/kWh
+Schedule 1W Residential 0.5602¢/kWh
+Schedule 5 SGS & Public Authority 0.5593¢/kWh
+Schedule SGS-EV SGS & Public Authority 0.5593¢/kWh
+Schedule 5C SGS & Public Authority 0.5593¢/kWh
+Schedule 5P SGS & Public Authority 0.5593¢/kWh
+Schedule 7 SGS & Public Authority 0.5593¢/kWh
+Schedule 30 SGS & Public Authority 0.5593¢/kWh
+Schedule 42 SGS & Public Authority 0.5593¢/kWh
+Schedule 6C Large General Service 0.5578¢/kWh
+Schedule 6L Large General Service 0.5578¢/kWh
+Schedule 6P Large General Service 0.5578¢/kWh
+Schedule 10  Large General Service 0.5578¢/kWh
+Schedule LGS – RTP
+With Customer Baseline Load Large General Service 0.5578¢/kWh
+Schedule 26 Outdoor Lighting 0.5602¢/kWh
+Schedule 30T Traffic Control 0.5602¢/kWh
+Schedule 6VP 6VP 0.5455¢/kWh
+Schedule NS Tier 2-Type A and Tier 3
+Energy Charges Schedule NS 0.5385¢/kWh
+Schedule NS Tier 1 Type A & B, and
+Tier 2-Type B Energy Charges Schedule NS 0.5385¢/kWh
+
+1This charge is not a part of the base fuel cost included in the energy prices stated in the R ate Schedules
+and should, therefore, be applied in addition to the prices stated in the Rate Schedules.
+
+
+
+
+--- PDF page 8 ---
+
+
+
+3
+
+CERTIFICATE OF SERVICE
+
+ I hereby certify that a copy of the foregoing Updated Quarterly Fuel Status
+Report of Dominion Energy North Carolina, as filed in Docket No. E-22, Sub 753B, was
+served electronically or via U.S. Mail, first-class postage prepaid, upon all parties of
+record.
+ This the 26th day of June, 2026.
+
+      /s/Andrea R. Kells
+Andrea R. Kells
+McGuireWoods LLP
+501 Fayetteville Street, Suite 500
+PO Box 27507 (27611)
+Raleigh, North Carolina 27601
+Telephone: (919) 755.6614
+akells@mcguirewoods.com
+
+Attorney for Virginia Electric and Power
+Company, d/b/a Dominion Energy North
+Carolina
+

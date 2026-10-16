@@ -62,15 +62,24 @@ assumes kVA = kW and Q = 0 and reports that assumption. Programmatic callers
 can supply actual kVA and an existing bus/connection through the replay types.
 
 The dedicated PG&E residential export comparison now selects the
-[residential split-phase service](Residential_Service_Replay.md). Other general
-workflows retain the three-phase default above; this does not infer wiring from
-a residential label across every utility workflow.
+[residential split-phase service](Residential_Service_Replay.md). The
+[Southern California, AMP and SVP study adapters](Utility_Electrical_Validation.md)
+also select a representative secondary-service circuit from explicit account
+phase and customer class, with unsupported service reported as unevaluated.
+Other general workflows retain the three-phase default above; this does not
+infer wiring from a residential label across every utility workflow.
 
 Future work: customer-specific service and site wiring configuration,
 verified inverter reactive capability curves, Volt-Var/Volt-Watt controls,
 and dispatch feedback when network constraints alter delivered power.
 The present Generator elements do not run OpenDSS PVSystem InvControl models.
 QSTS remains a one-way validation of a dispatch schedule.
+
+Adding electrical constraints inside dispatch optimization is a shared backend
+development direction across utilities. The PG&E residential comparison is its
+initial electrical stress-test workflow, not the intended limit of that work.
+Current ComEd and PG&E replay results both validate schedules after optimization;
+neither claims network-constrained dispatch.
 
 The [PG&E export comparison](Solar_Export_Settlement.md#pge-comparison-electrical-validation)
 uses the same residential service across all five scenarios, omits absent PV/storage elements,

@@ -21,7 +21,7 @@ SCENARIOS = {
 TOLERANCE = 1e-5  # Match the export optimizer's energy/power reconciliation.
 
 
-def export_handoff(dispatch, *, battery=None):
+def export_handoff(dispatch, *, battery=None, timestep_minutes=15, timezone="America/Los_Angeles"):
     """Map interval-start energy and positive directional powers explicitly.
 
     ``solar_export.compare`` records energy.value[:-1]: START of each interval.
@@ -49,8 +49,8 @@ def export_handoff(dispatch, *, battery=None):
 
     mapped = dispatch.rename(columns={"native_load_kw": "load_kw", "pv_output_kw": "pv_kw",
                                       "energy_kWh": "battery_soc_kWh"}).copy()
-    handoff = create_opendss_handoff(mapped, timestep_minutes=15,
-                                   expected_timezone="America/Los_Angeles")
+    handoff = create_opendss_handoff(mapped, timestep_minutes=timestep_minutes,
+                                   expected_timezone=timezone)
     # The shared handoff intentionally selects a small core schema. Retain
     # availability, curtailment and optional electrical inputs for this replay.
     for column in mapped:
@@ -64,7 +64,7 @@ def export_handoff(dispatch, *, battery=None):
             raise ValueError("Export scenario without storage must have zero battery power and energy.")
         end = start.copy()
     else:
-        end = start + .25 * (battery.charge_efficiency * handoff.battery_charge_kw.to_numpy()
+        end = start + timestep_minutes/60 * (battery.charge_efficiency * handoff.battery_charge_kw.to_numpy()
                             - handoff.battery_discharge_kw.to_numpy() / battery.discharge_efficiency)
         if not np.allclose(end[:-1], start[1:], atol=TOLERANCE, rtol=0):
             raise ValueError("Export replay interval-start SOC does not reconcile with the next interval.")
@@ -79,8 +79,9 @@ def export_handoff(dispatch, *, battery=None):
 
 
 def replay_export_scenario(name, dispatch, *, battery, pv_capacity_kw, pv_replay=None,
-                           residential_service=ResidentialService()):
-    """Replay every 15-minute operating point with only the scenario's equipment."""
+                           residential_service=ResidentialService(), timestep_minutes=15,
+                           timezone="America/Los_Angeles"):
+    """Replay every actual operating point with only the scenario's equipment."""
     if name not in SCENARIOS:
         raise ValueError(f"Unknown export replay scenario: {name}")
     has_pv, has_storage = SCENARIOS[name]
@@ -89,7 +90,7 @@ def replay_export_scenario(name, dispatch, *, battery, pv_capacity_kw, pv_replay
     storage = Battery(**battery) if has_storage else None
     capacity = pv_capacity_kw if has_pv else 0.
     configuration = pv_replay if capacity > 0 else None
-    handoff = export_handoff(dispatch, battery=storage)
+    handoff = export_handoff(dispatch, battery=storage, timestep_minutes=timestep_minutes, timezone=timezone)
     if capacity == 0 and (handoff[["pv_kw", "pv_available_kw"]].abs() > TOLERANCE).any().any():
         raise ValueError("Export scenario without PV equipment must have zero solar power.")
     if configuration is not None:

@@ -165,7 +165,7 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
             self.owner_id = None
             self.csrf = token
             self.is_guest = False
-            public = urlsplit(self.path).path in {"/", "/app.js", "/municipal.js", "/socal.js", "/pjm.html", "/pjm.js", "/comed.html", "/comed.js", "/comed_simulation.js", "/style.css", "/auth/login", "/auth/callback"}
+            public = urlsplit(self.path).path in {"/", "/app.js", "/municipal.js", "/socal.js", "/pjm.html", "/pjm.js", "/comed.html", "/comed.js", "/comed_simulation.js", "/regional.js", "/style.css", "/auth/login", "/auth/callback"}
             if auth is not None and not public:
                 session = None
                 if allow_guests and auth.cookie_value(self.headers, auth.COOKIE):
@@ -199,6 +199,8 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
 
         def get_route(self):
             url = urlsplit(self.path)
+            if url.path == "/regional.js":
+                return self.respond(200, (STATIC / "regional.js").read_bytes(), "text/javascript; charset=utf-8")
             if url.path == "/comed_simulation.js":
                 return self.respond(200, (STATIC / "comed_simulation.js").read_bytes(), "text/javascript; charset=utf-8")
             if url.path in ("/", "/app.js", "/municipal.js", "/socal.js", "/pjm.html", "/pjm.js", "/comed.html", "/comed.js", "/style.css"):
@@ -238,7 +240,7 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
             if not match:
                 raise FileNotFoundError("Resource not found.")
             study = application.store.get(match[1], self.owner_id)
-            if public_origin and study["request"].get("schema_version") in (8, 9, 10):
+            if public_origin and study["request"].get("schema_version") in (8, 9, 10, 11):
                 raise PermissionError("PJM candidate studies and their inputs remain local-only pending licensing and release review.")
             suffix = match[2]
             directory = application.store.directory / "runs" / match[1]
@@ -354,6 +356,16 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                     return self.respond(202, application.submit_pge_annual(body, self.owner_id,
                                                                            temporary=allow_guests))
                 draft = parse_qs(urlsplit(self.path).query).get("draft") == ["1"]
+                if urlsplit(self.path).path in ("/api/v1/regional/studies", "/api/v1/regional/weather"):
+                    if public_origin:
+                        raise ValueError("Regional retail candidate studies remain local-only pending data permissions and release review.")
+                    if not application.capabilities.get("regional_simulation"):
+                        raise ValueError("This pinned engine does not advertise the regional study capability; use a separate candidate preview.")
+                    if urlsplit(self.path).path.endswith("/weather"):
+                        return self.respond(200, application.interactive(application.regional_weather, body, self.owner_id))
+                    if not isinstance(body,dict) or type(body.get("schema_version")) is not int or body["schema_version"]!=11:
+                        raise ValueError("Use regional main-study schema 11.")
+                    return self.respond(202,application.store.submit(body,application.engine,self.owner_id,temporary=True))
                 if urlsplit(self.path).path == "/api/v1/comed/simulations":
                     if public_origin:
                         raise ValueError("ComEd simulations are local-only pending market-data permission and candidate release review.")
@@ -412,7 +424,7 @@ def make_wsgi_app(application, port=8765, *, auth=None, public_origin=None, allo
                 if urlsplit(self.path).path == "/api/studies":
                     if isinstance(body, dict) and body.get("schema_version") == 7:
                         raise ValueError("Submit PG&E annual statement replays through /api/v1/pge/annual-studies.")
-                    if isinstance(body, dict) and body.get("schema_version") in (4, 6, 8, 9, 10):
+                    if isinstance(body, dict) and body.get("schema_version") in (4, 6, 8, 9, 10, 11):
                         raise ValueError("Submit regional studies through their municipal, socal, pjm or comed study endpoint.")
                     if isinstance(body, dict) and body.get("schema_version") == 3 and "candidate_defaults" not in application.capabilities:
                         raise ValueError("This pinned engine does not support candidate studies.")

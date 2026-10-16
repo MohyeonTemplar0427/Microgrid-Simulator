@@ -111,6 +111,13 @@ def build_site_generation(request, directory, grid):
         provenance = {**metadata["provenance"], "saved_weather_sha256": metadata["sha256"]}
         warnings.extend(metadata["warnings"])
         source_name = "NSRDB historical satellite weather"
+    elif request["weather_source"] == "era5":
+        from ..profiles.era5 import parse_era5
+        weather, provenance = parse_era5(request["weather"]["raw_json"], grid,
+            site["latitude"], site["longitude"])
+        provenance["retrieved_at"] = request["weather"]["retrieved_at"]
+        source_name = "ERA5 hourly historical reanalysis via Open-Meteo"
+        warnings.append(provenance["sampling"]+" "+provenance["attribution"]+"; "+provenance["license"])
     else:
         midpoints = grid.index + pd.Timedelta(minutes=request["timestep_minutes"] / 2)
         location = Location(site["latitude"], site["longitude"], tz=request["timezone"])

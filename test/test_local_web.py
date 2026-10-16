@@ -581,7 +581,11 @@ def test_municipal_queued_study_csv_exports_and_evidence(service):
     result=finished['result']
     assert result['schema_version']==4
     assert result['bills']['cost_optimal']['total']<result['bills']['no_battery']['total']
-    assert any('No AC' in warning for warning in result['warnings'])
+    assert result['ac_validation']['status']=='completed'
+    assert {s['scenario'] for s in result['ac_validation']['scenarios']}=={'no_battery','cost_optimal'}
+    assert all(s['checked_intervals']==2976 for s in result['ac_validation']['scenarios'])
+    assert not any('No AC' in warning for warning in result['warnings'])
+    assert call(f"/api/studies/{study['id']}/tables/ac-cost_optimal")['total']==2976
     table=call(f"/api/studies/{study['id']}/tables/dispatch-cost_optimal")
     assert table['total']==2976
     table=call(f"/api/studies/{study['id']}/tables/comparison")

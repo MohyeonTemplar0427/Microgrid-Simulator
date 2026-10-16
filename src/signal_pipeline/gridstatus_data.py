@@ -5,11 +5,10 @@ normalized ``timestamp`` / ``price_per_kWh`` schema regardless of which ISO
 served the request. Provider-specific quirks live in
 :mod:`src.signal_pipeline.providers`.
 
-The ``get_caiso_*`` functions are kept as compatibility wrappers so existing
-CAISO callers keep working unchanged.
+The ``get_caiso_real_time_prices_range`` function remains a compatibility
+wrapper for existing CAISO callers.
 """
 
-import gridstatus
 import pandas as pd
 
 from .providers import (
@@ -98,23 +97,6 @@ def fetch_region_prices(
 
 
 ## Compatibility wrappers -------------------------------------------------
-
-
-def get_caiso_real_time_prices(
-    date: str,
-    location: str,
-) -> pd.DataFrame:
-    """Raw single-day CAISO LMPs, straight from gridstatus."""
-
-    caiso = gridstatus.CAISO()
-
-    data = caiso.get_lmp(
-        date=date,
-        market="REAL_TIME_15_MIN",
-        locations=[location],
-    )
-
-    return data
 
 
 def get_caiso_real_time_prices_range(

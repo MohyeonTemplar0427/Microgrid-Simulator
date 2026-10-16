@@ -1,0 +1,228 @@
+Rate Worksheet!E2	Schedule 1 - North Carolina Residential Service Rate Worksheet
+Rate Worksheet!E3	Refer to effective dates listed in left hand column.
+Rate Worksheet!E4	Dominion Energy Virginia is providing this Rate Worksheet to its Virginia residential customers as a tool to help in better understanding their Schedule 1 – Residential Service electric bill. This Rate Worksheet is only a guide, and Dominion Energy Virginia is not responsible for any errors resulting from its use. For example, rounding differences may occur between the charges listed on your electric bill itself and this worksheet. If there is a discrepancy, the Customer Bill governs. Please refer to the Customer Bill for the actual charges.
+Rate Worksheet!E8	NOTE: The basic customer charge and kWh tiers are prorated when the number of billing days is < 26 or > 40 days. The rates per kWh are prorated when the measured usage period spans over two rate filing dates. If one or more of these conditions exist, this worksheet may not accurately calculate the charges on your bill. In certain instances, when your bill date falls on the last few business days of either May or September or the first few business days of either June or October, the current reading date may be used to determine the billing month.
+Rate Worksheet!E12	Required fields.
+Rate Worksheet!A13	Click on the Sample Bill tab at the bottom of this worksheet to see where this information can be found on the bill.
+Rate Worksheet!D13	1
+Rate Worksheet!E13	Billing Month:
+Rate Worksheet!K13	Using your bill, complete all of the required fields on the left; then scroll down to view the calculations.
+Rate Worksheet!D14	2
+Rate Worksheet!E14	Current Billing Days:
+Rate Worksheet!D15	3
+Rate Worksheet!E15	Total kWh:
+Rate Worksheet!L17	kWh
+Rate Worksheet!M17	@
+Rate Worksheet!N17	Rate per kWh
+Rate Worksheet!P17	Subtotal
+Rate Worksheet!Q17	Charges
+Rate Worksheet!A18	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E5,"MM/DD/YYYY")
+Rate Worksheet!E18	A. Electric Charges
+Rate Worksheet!E19	   1. Basic Customer Charge
+Rate Worksheet!L19	n/a
+Rate Worksheet!M19	@
+Rate Worksheet!N19	flat charge
+Rate Worksheet!O19	=
+Rate Worksheet!P19	=ROUND(IF(F14<=25,'Rate Update Sheet'!B5/30*F14,IF(F14<=40,'Rate Update Sheet'!B5,IF(F14<=50,'Rate Update Sheet'!B5/30*F14,IF(F14<=70,'Rate Update Sheet'!B5*2,IF(F14<=75,'Rate Update Sheet'!B5/30*F14,IF(F14<=105,'Rate Update Sheet'!B5*3,IF(F14<=135,'Rate Update Sheet'!B5*4))))))),2)
+Rate Worksheet!E20	   2. Energy Charge
+Rate Worksheet!E21	All kWh
+Rate Worksheet!L21	=F15
+Rate Worksheet!M21	@
+Rate Worksheet!N21	=IF('Rate Update Sheet'!D9=1, 'Rate Update Sheet'!C8, 'Rate Update Sheet'!E8)
+Rate Worksheet!O21	=
+Rate Worksheet!P21	=ROUND(L21*N21,2)
+Rate Worksheet!E23	   3. Applicable Rider(s)
+Rate Worksheet!A24	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E11,"MM/DD/YYYY")
+Rate Worksheet!E24	   Rider C - Demand Side Management/Energy Efficiency Rider
+Rate Worksheet!L24	=F15
+Rate Worksheet!M24	@
+Rate Worksheet!N24	='Rate Update Sheet'!C11
+Rate Worksheet!P24	=ROUND(L24*N24,2)
+Rate Worksheet!A25	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E13,"MM/DD/YYYY")
+Rate Worksheet!E25	   Rider CE - DSM/EE Experience Modification Factor
+Rate Worksheet!L25	=F15
+Rate Worksheet!M25	@
+Rate Worksheet!N25	='Rate Update Sheet'!C13
+Rate Worksheet!P25	=ROUND(L25*N25,2)
+Rate Worksheet!A26	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E12,"MM/DD/YYYY")
+Rate Worksheet!E26	   Rider CCR - Coal Combustion Residuals Rider
+Rate Worksheet!L26	=F15
+Rate Worksheet!M26	@
+Rate Worksheet!N26	='Rate Update Sheet'!C12
+Rate Worksheet!P26	=ROUND(L26*N26,2)
+Rate Worksheet!A27	="Effective for usage on and after "&TEXT('Rate Update Sheet'!C18,"MM/DD/YYYY")
+Rate Worksheet!E27	   Rider RP - Clean Energy & Energy  Efficiency Portfolio Standard Rider
+Rate Worksheet!P27	='Rate Update Sheet'!C17
+Rate Worksheet!A28	="Effective for usage on and after "&TEXT('Rate Update Sheet'!D18,"MM/DD/YYYY")
+Rate Worksheet!E28	   Rider RPE - CEPS Experience Modification Factor
+Rate Worksheet!P28	='Rate Update Sheet'!D17
+Rate Worksheet!E30	Subtotal
+Rate Worksheet!P30	=SUM(P19+P21+P24+P25+P26+P27+P28)
+Rate Worksheet!L32	kWh
+Rate Worksheet!M32	@
+Rate Worksheet!N32	Rate per kWh
+Rate Worksheet!P32	Subtotal
+Rate Worksheet!Q32	Charges
+Rate Worksheet!E33	Fuel
+Rate Worksheet!A34	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E20,"MM/DD/YYYY")
+Rate Worksheet!E34	          Rider A - Fuel Cost Rider
+Rate Worksheet!L34	=F15
+Rate Worksheet!M34	@
+Rate Worksheet!N34	='Rate Update Sheet'!C20
+Rate Worksheet!O34	=
+Rate Worksheet!P34	=ROUND(L34*N34,2)
+Rate Worksheet!A35	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E21,"MM/DD/YYYY")
+Rate Worksheet!E35	          Rider A1 - Fuel Cost Rider
+Rate Worksheet!L35	=F15
+Rate Worksheet!M35	@
+Rate Worksheet!N35	='Rate Update Sheet'!C21
+Rate Worksheet!O35	=
+Rate Worksheet!P35	=ROUND(L35*N35,2)
+Rate Worksheet!A36	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E22,"MM/DD/YYYY")
+Rate Worksheet!E36	          Rider B - Experience Modification Factor (EMF)
+Rate Worksheet!L36	=F15
+Rate Worksheet!M36	@
+Rate Worksheet!N36	='Rate Update Sheet'!C22
+Rate Worksheet!O36	=
+Rate Worksheet!P36	=ROUND(L36*N36,2)
+Rate Worksheet!A37	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E23,"MM/DD/YYYY")
+Rate Worksheet!E37	          Rider B1 - Experience Modification Factor (EMF)
+Rate Worksheet!L37	=F15
+Rate Worksheet!M37	@
+Rate Worksheet!N37	='Rate Update Sheet'!C23
+Rate Worksheet!O37	=
+Rate Worksheet!P37	=ROUND(L37*N37,2)
+Rate Worksheet!P39	Fuel
+Rate Worksheet!Q39	=SUM(P34:P37)
+Rate Worksheet!Z40	http://www.dom.com/dominion-virginia-power/customer-service/rates-and-tariffs/index.jsp
+Rate Worksheet!L41	Subtotal
+Rate Worksheet!M41	@
+Rate Worksheet!N41	Rate per kWh
+Rate Worksheet!P41	Subtotal
+Rate Worksheet!Q41	Charges
+Rate Worksheet!A42	="Effective for usage on and after "&TEXT('Rate Update Sheet'!E25,"MM/DD/YYYY")
+Rate Worksheet!E42	NC State Sales Tax
+Rate Worksheet!L42	=SUM(P30+Q39)
+Rate Worksheet!M42	@
+Rate Worksheet!N42	='Rate Update Sheet'!C25
+Rate Worksheet!O42	=
+Rate Worksheet!P42	=ROUND(L42*N42,2)
+Rate Worksheet!Z42	http://www.dom.com/dominion-virginia-power/customer-service/your-bill/understanding-your-bill.jsp
+Rate Worksheet!P44	Sales and Use Surcharge
+Rate Worksheet!Q44	=P42
+Rate Worksheet!E47	SUBTOTAL
+Rate Worksheet!Q47	=P30+Q39+Q44
+Rate Worksheet!X48	.
+Rate Worksheet!E50	Warning - an entry is missing in one or more of the required fields ('Billing Months', 'Current Billing Days', 'Total kWh') at the top of this worksheet.
+Rate Worksheet!P53	Revised
+Rate Worksheet!Q53	='Rate Update Sheet'!C1
+Rate Update Sheet!B1	Last Updated
+Rate Update Sheet!C1	2026-07-29 00:00:00
+Rate Update Sheet!E1	Katie Gulick
+Rate Update Sheet!B3	Residential Schedule 1
+Rate Update Sheet!G3	Month
+Rate Update Sheet!N3	Residential Schedule 1
+Rate Update Sheet!B4	Basic Customer Charge
+Rate Update Sheet!H4	0
+Rate Update Sheet!N4	Basic Customer Charge
+Rate Update Sheet!B5	14.4
+Rate Update Sheet!E5	2024-11-01 00:00:00
+Rate Update Sheet!G5	October - May
+Rate Update Sheet!H5	2
+Rate Update Sheet!N5	10.67
+Rate Update Sheet!Q5	2019-11-01 00:00:00
+Rate Update Sheet!B6	Energy Charge
+Rate Update Sheet!G6	June - September
+Rate Update Sheet!H6	1
+Rate Update Sheet!N6	Energy Charge
+Rate Update Sheet!B7	All kWh
+Rate Update Sheet!C7	June - Sept
+Rate Update Sheet!E7	Oct - May
+Rate Update Sheet!N7	All kWh
+Rate Update Sheet!O7	June - Sept
+Rate Update Sheet!Q7	Oct - May
+Rate Update Sheet!C8	0.121533
+Rate Update Sheet!E8	0.105123
+Rate Update Sheet!O8	0.108312
+Rate Update Sheet!Q8	0.093796
+Rate Update Sheet!C9	Month
+Rate Update Sheet!D9	=VLOOKUP('Rate Worksheet'!F13,'Rate Update Sheet'!G5:H6,2,FALSE)
+Rate Update Sheet!O9	Month
+Rate Update Sheet!P9	=VLOOKUP('Rate Worksheet'!R13,'Rate Update Sheet'!S5:T6,2,FALSE)
+Rate Update Sheet!B10	Riders
+Rate Update Sheet!N10	Riders
+Rate Update Sheet!B11	Rider C
+Rate Update Sheet!C11	0.001394
+Rate Update Sheet!E11	2026-02-01 00:00:00
+Rate Update Sheet!N11	Rider C
+Rate Update Sheet!O11	0.000926
+Rate Update Sheet!Q11	2021-02-01 00:00:00
+Rate Update Sheet!B12	Rider CCR
+Rate Update Sheet!C12	0.001027
+Rate Update Sheet!E12	2026-02-01 00:00:00
+Rate Update Sheet!N12	Rider CE
+Rate Update Sheet!O12	0.000125
+Rate Update Sheet!Q12	2021-02-01 00:00:00
+Rate Update Sheet!B13	Rider CE
+Rate Update Sheet!C13	0.000133
+Rate Update Sheet!E13	2026-02-01 00:00:00
+Rate Update Sheet!N13	Rider EDIT
+Rate Update Sheet!O13	0.00021
+Rate Update Sheet!Q13	2020-09-01 00:00:00
+Rate Update Sheet!B14	Rider EDIT
+Rate Update Sheet!C14	0
+Rate Update Sheet!E14	2021-11-01 00:00:00
+Rate Update Sheet!N14	Rate Class
+Rate Update Sheet!B15	Rate Class
+Rate Update Sheet!O15	Rider RP
+Rate Update Sheet!P15	Rider RPE
+Rate Update Sheet!Q15	RP
+Rate Update Sheet!C16	Rider RP
+Rate Update Sheet!D16	Rider RPE
+Rate Update Sheet!N16	Residential
+Rate Update Sheet!O16	0.25
+Rate Update Sheet!P16	-0.12
+Rate Update Sheet!Q16	2021-02-01 00:00:00
+Rate Update Sheet!B17	Residential
+Rate Update Sheet!C17	0.84
+Rate Update Sheet!D17	-0.26
+Rate Update Sheet!N17	Commercial
+Rate Update Sheet!O17	1.4
+Rate Update Sheet!P17	-0.69
+Rate Update Sheet!Q17	RPE
+Rate Update Sheet!C18	2026-02-01 00:00:00
+Rate Update Sheet!D18	2026-02-01 00:00:00
+Rate Update Sheet!N18	Fuel Riders
+Rate Update Sheet!B19	Fuel Riders
+Rate Update Sheet!N19	Rider A
+Rate Update Sheet!O19	-0.0026
+Rate Update Sheet!Q19	2021-02-01 00:00:00
+Rate Update Sheet!B20	Rider A
+Rate Update Sheet!C20	0.005198
+Rate Update Sheet!E20	2026-02-01 00:00:00
+Rate Update Sheet!N20	Rider A1
+Rate Update Sheet!O20	0
+Rate Update Sheet!Q20	2021-02-01 00:00:00
+Rate Update Sheet!B21	Rider A1
+Rate Update Sheet!C21	0
+Rate Update Sheet!E21	2025-02-01 00:00:00
+Rate Update Sheet!N21	Rider B
+Rate Update Sheet!O21	-0.00115
+Rate Update Sheet!Q21	2021-02-01 00:00:00
+Rate Update Sheet!B22	Rider B
+Rate Update Sheet!C22	0.001023
+Rate Update Sheet!E22	2026-02-01 00:00:00
+Rate Update Sheet!N22	Rider B2
+Rate Update Sheet!O22	0
+Rate Update Sheet!Q22	2021-02-01 00:00:00
+Rate Update Sheet!B23	Rider B1
+Rate Update Sheet!C23	0.005602
+Rate Update Sheet!E23	2026-08-01 00:00:00
+Rate Update Sheet!N23	Taxes
+Rate Update Sheet!B24	Taxes
+Rate Update Sheet!N24	NC State Sales Tax
+Rate Update Sheet!O24	0.07
+Rate Update Sheet!Q24	2020-09-01 00:00:00
+Rate Update Sheet!B25	NC State Sales Tax
+Rate Update Sheet!C25	0.07
+Rate Update Sheet!E25	2020-09-01 00:00:00

@@ -75,13 +75,15 @@ def _validated_refinement(values, *, load, pv, battery, costs, mask,
 
 
 def _refine_throughput(*, variables, constraints, modes, primary_modes,
-                       throughput, selected, validate, time_limit, hours):
+                       throughput, selected, validate, time_limit, hours,
+                       relaxation_constraints=None):
     """Keep a validated incumbent if the global secondary solve is interrupted.
 
     The first LP fixes only the negative-price binary choices from the proven
-    primary solution. Its scope is conditional on those choices. The subsequent
-    MILP retains every original binary, the original cost bound and full-year SOC
-    coupling. Only its optimal result establishes global minimum throughput.
+    primary solution. Its scope is conditional on those choices. An outer LP
+    can certify a validated incumbent that matches its lower bound. Otherwise
+    the full MILP retains every original binary, the original cost bound and
+    full-year SOC coupling. Unmatched bounds never establish minimum cycling.
     """
     started = time.monotonic()
     def measure(values):
@@ -90,6 +92,8 @@ def _refine_throughput(*, variables, constraints, modes, primary_modes,
     metadata = dict(method="cost_neutral_incumbent_and_global_refinement", status="retained_primary",
                     minimum_throughput_proven=False, selected_solution="primary",
                     fixed_mode_status="not_needed", global_status="not_started",
+                    relaxation_status="not_needed", proof_method="not_proven",
+                    global_lower_bound_source=None,
                     primary_throughput_kwh=initial, selected_throughput_kwh=initial,
                     throughput_reduction_kwh=0., global_lower_bound_kwh=None,
                     optimality_gap_kwh=None, time_limit_seconds=time_limit)
@@ -116,8 +120,44 @@ def _refine_throughput(*, variables, constraints, modes, primary_modes,
                     metadata["fixed_mode_status"] = "invalid_solution"
         except cp.error.SolverError:
             metadata["fixed_mode_status"] = "solver_error"
+    # Dropping mode integrality gives an outer relaxation, not an executable
+    # dispatch. Its optimum is a lower bound for every physical schedule. A
+    # validated incumbent that meets this bound certifies the original problem,
+    # even if the relaxed optimizer itself contains simultaneous flows.
+    def record_bound(lower, source):
+        actual = measure(selected)
+        tolerance = max(1e-5, abs(actual)*1e-8)
+        if lower is None or not np.isfinite(lower) or lower > actual+tolerance:
+            return False
+        previous = metadata["global_lower_bound_kwh"]
+        if previous is None or lower > previous:
+            metadata["global_lower_bound_kwh"] = float(lower)
+            metadata["global_lower_bound_source"] = source
+        return actual-metadata["global_lower_bound_kwh"] <= tolerance
+
     remaining = time_limit-(time.monotonic()-started)
-    if remaining > 0:
+    if relaxation_constraints is not None and remaining > 0:
+        relaxed = cp.Problem(cp.Minimize(throughput), constraints+relaxation_constraints)
+        try:
+            relaxed.solve(solver="SCIPY", scipy_options={"time_limit":min(10.,remaining)})
+            metadata["relaxation_status"] = relaxed.status
+            # An interrupted/inaccurate primal objective is not a lower bound.
+            if relaxed.status == "optimal" and np.isfinite(relaxed.value):
+                lower = float(relaxed.value)
+                improved = candidate(measure(selected))
+                if improved is not None and measure(improved) < measure(selected):
+                    selected = improved
+                    metadata["selected_solution"] = "physical_relaxation_incumbent"
+                if record_bound(lower, "continuous_relaxation"):
+                    metadata.update(minimum_throughput_proven=True, global_status="optimal",
+                                    proof_method="continuous_relaxation_bound",
+                                    selected_solution="global_minimum_throughput")
+                elif lower > measure(selected)+max(1e-5,abs(measure(selected))*1e-8):
+                    metadata["relaxation_status"] = "inconsistent_bound"
+        except cp.error.SolverError:
+            metadata["relaxation_status"] = "solver_error"
+    remaining = time_limit-(time.monotonic()-started)
+    if remaining > 0 and not metadata["minimum_throughput_proven"]:
         bound = measure(selected)
         global_constraints = constraints+(modes[0] if modes is not None else [])
         tie = cp.Problem(cp.Minimize(throughput),global_constraints+[throughput <= bound+1e-6])
@@ -134,20 +174,18 @@ def _refine_throughput(*, variables, constraints, modes, primary_modes,
                     metadata["selected_solution"] = ("global_minimum_throughput" if tie.status=="optimal"
                                                      else "global_feasible_incumbent")
                     metadata["minimum_throughput_proven"] = tie.status=="optimal"
+                    if tie.status=="optimal":
+                        metadata["proof_method"] = "full_milp"
                 elif tie.status=="optimal":
                     metadata["global_status"] = "invalid_solution"
             stats = tie.solver_stats.extra_stats if tie.solver_stats else None
             lower = stats.get("mip_dual_bound") if isinstance(stats,dict) else None
             if metadata["minimum_throughput_proven"]:
                 lower = float(tie.value)
-            if lower is not None and np.isfinite(lower):
-                actual = measure(selected)
-                if lower <= actual+max(1e-5,abs(actual)*1e-8):
-                    metadata["global_lower_bound_kwh"] = float(lower)
-                    metadata["optimality_gap_kwh"] = float(max(0.,actual-lower))
+            record_bound(lower, "full_milp")
         except cp.error.SolverError:
             metadata["global_status"] = "solver_error"
-    else:
+    elif not metadata["minimum_throughput_proven"]:
         metadata["global_status"] = "time_limit"
     actual = measure(selected)
     metadata.update(selected_throughput_kwh=actual,
@@ -156,6 +194,8 @@ def _refine_throughput(*, variables, constraints, modes, primary_modes,
                     status="optimal" if metadata["minimum_throughput_proven"] else
                            "improved_unproven" if actual < initial-1e-6 else "retained_primary",
                     elapsed_seconds=time.monotonic()-started)
+    if metadata["global_lower_bound_kwh"] is not None:
+        metadata["optimality_gap_kwh"] = max(0.,actual-metadata["global_lower_bound_kwh"])
     return selected,metadata
 
 
@@ -228,12 +268,23 @@ def optimize(inputs, account, prices=None, battery=None, *, wear=0., include_wea
         def fixed_modes(assignment):
             return [charge[exclusive]<=b.max_charge_kw*assignment,
                     discharge[exclusive]<=cp.multiply(discharge_limit[exclusive],1-assignment)]
+        relaxation = None
+        if exclusive.any():
+            relaxed_modes = cp.Variable(int(exclusive.sum()))
+            # Valid for every exclusive schedule: energy available at interval
+            # start bounds discharge, and empty space bounds charging. These
+            # cuts strengthen the relaxation without fixing an incumbent mode
+            # or introducing artificial month-end SOC boundaries.
+            relaxation = fixed_modes(relaxed_modes)+[
+                relaxed_modes >= 0, relaxed_modes <= 1,
+                charge <= (b.maximum_energy_kWh-energy[:-1])/(dt*b.charge_efficiency),
+                discharge <= (energy[:-1]-b.minimum_energy_kWh)*b.discharge_efficiency/dt]
         selected,refinement = _refine_throughput(variables=(charge,discharge,grid,output,energy),
             constraints=constraints+[objective<=optimum+1e-6],
             modes=(mode_constraints,fixed_modes) if exclusive.any() else None,
             primary_modes=np.rint(value(charging)) if exclusive.any() else None,
             throughput=throughput,selected=selected,validate=validate,
-            time_limit=primary_limit,hours=dt)
+            time_limit=primary_limit,hours=dt,relaxation_constraints=relaxation)
         tie_status = refinement["global_status"]
         if not refinement["minimum_throughput_proven"]:
             warnings.append("The cost solve proved optimal, but the global cycling tie-break did not complete. "

@@ -1,0 +1,223 @@
+--- PDF page 1 ---
+Virginia Electric and Power Company
+
+Schedule 6L
+LARGE GENERAL SERVICE
+___________
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+I. AVAILABILITY AND APPLICABILITY
+
+Service under this schedule is available to nonresidential Customers (a) who received
+service from the Company in accordance with Rate Schedule 6C, 6P, 10, or 6VP immediately
+prior to the Customer’s effective date for service under this schedule; and (b) whose actual peak
+measured average 30 -minute interval demand reached or exceeded 3,000 kW during at least
+three billing months within the current and previous 11 consecutive billing months, occurring
+immediately prior to the Customer’s effective date for service under this schedule.
+
+Discontinuance of service under this schedule shall be in accordance with Paragraph X of
+this schedule.  This schedule is not applicable to temporary service.
+
+II. 30-DAY RATE
+
+A. Basic Customer Charge
+Basic Customer Charge $106.01 per billing month
+
+B. Plus Power Supply Demand Charge
+All kW of on-peak power supply billing demand  @ $21.708 per kW
+
+C. Plus Distribution Contract Demand Charge
+
+1. Primary Service
+All kW of distribution contract billing demand @ $1.124 per kW
+
+2. Secondary Service
+All kW of distribution contract billing demand @ $1.686 per kW
+
+D. Plus Energy Charge
+All on-peak kWh        @ 2.8606¢ per kWh
+All off-peak kWh       @ 2.6774¢ per kWh
+
+The energy charges in this schedule contain a base fuel cost of 2.2909 cents per
+kilowatt-hour.
+
+E. The energy charges in Paragraph II.D., above, shall be increased or decreased by
+any applicable Riders.
+
+F. The minimum charge shall be as may be contracted for, but not less than the sum of
+the charges in Paragraphs II.A., II.B., and II.C., above.  The minimum charge shall
+be increased or decreased by any applicable Riders.
+
+--- PDF page 2 ---
+Virginia Electric and Power Company
+
+Schedule 6L
+LARGE GENERAL SERVICE
+___________
+
+(Continued)
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+III. DETERMINATION OF ON-PEAK AND OFF-PEAK HOURS
+
+The following on- peak and off -peak hours are applicable to the billing of all charges
+stated in this schedule.
+
+A. On-peak hours are as follows:
+
+ 1. For the period of June 1 through September 30, 10 a.m. to 10 p.m.
+
+ 2. For the period of October 1 through May 31, 7 a.m. to 10 p.m.
+
+B. All hours not specified in Paragraph III.A., above, are off-peak.
+
+IV. DETERMINATION OF POWER SUPPLY DEMAND
+
+The kW of demand billed under Paragraph II.B., above, shall be the highest of:
+
+A. The highest average kW measured in any 30- minute interval of the current billing
+month during the on-peak hours;
+
+B. 75% percent of the highest kW of demand at this location as determined under
+Paragraph IV.A., above, during the billing months of June through September of the
+preceding 11 billing months;
+
+C. 1,000 kW.
+
+V. DETERMINATION OF DISTRIBUTION PEAK DEMAND AND DISTRIBUTION
+CONTRACT DEMAND
+
+A. The Company may install metering equipment necessary to determine both the
+average kW demand during a 30- minute interval and the average kVA demand
+during a 30-minute interval.  The Distribution Peak Demand for the current billing
+month shall be the higher of:
+
+1. The highest average kW demand measured during the current billing month; or
+
+2. 85% of the highest average kVA demand measured during the current billing
+month.
+
+--- PDF page 3 ---
+Virginia Electric and Power Company
+
+Schedule 6L
+LARGE GENERAL SERVICE
+___________
+
+(Continued)
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+V. DETERMINATION OF DISTRIBUTION PEAK DEMAND AND DISTRIBUTION
+CONTRACT DEMAND (Continued)
+
+B. The Distribution Contract Demand billed under Paragraph II.C., above, shall be the
+maximum demand the Company is to supply, but not less than 3,000 kW.  In the
+event that the Distribution Peak Demand determined for the current billing month
+exceeds the Distribution Contract Demand, the Distribution Contract Demand shall
+be increased by such excess demand.
+
+C. Where the service voltage is equal to or greater than 2,000 Volts, the Distribution
+Contract Demand will be billed at the charge in Paragraph II.C.1., above.  Where
+the service voltage is less than 2,000 Volts, the Distribution Contract Demand will
+be billed at the charge in Paragraph II.C.2., above.  The Distribution Contract
+Demand shall be billed only where the service voltage is less than 69 kV.
+
+VI. METER READING AND BILLING
+
+When the actual number of days between meter readings is more or less than 30 days, the
+Basic Customer Charge, the Power Supply Demand Charge, the Distribution Contract Demand
+Charge, and the minimum charge of the 30-day rate will each be multiplied by the actual number
+of days in the billing period and divided by 30.
+
+VII. LATE PAYMENT CHARGE
+
+Current bills are due and payable from the billing date.  When bills are not paid in full
+within twenty-five (25) days from the billing date, a late payment charge of 1% per month, based
+on the unpaid balance, will be added to the current bill.
+
+VIII. SERVICE AVAILABLE
+
+Normally the Company will supply the equipment necessary and will deliver to the
+Customer, in accordance with the Company's applicable Terms and Conditions at one Delivery
+Point mutually satisfactory to the Customer and the Company, 60- Hertz alternating current
+electricity of the phase and voltage desired by the Customer at said Delivery Point, provided
+electricity of the phase and voltage desired by the Customer is available generally in the area in
+which electricity is desired.
+
+--- PDF page 4 ---
+Virginia Electric and Power Company
+
+Schedule 6L
+LARGE GENERAL SERVICE
+___________
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+IX. STANDBY, MAINTENANCE, OR PARALLEL OPERATION AND/OR
+INTERCONNECTION SERVICE
+
+A Customer, operating a Generating Facility (as defined in Section  XXIV of the
+Company’s filed Terms and Conditions) and requiring standby, maintenance, or parallel
+operation and/or interconnection service, may elect service under this schedule provided the
+Customer contracts for the maximum kW which the Company is to supply, but not less than
+3,000 kW.  Standby, maintenance, or parallel operation and/or interconnection service is subject
+to the following provisions:
+
+A. For a Generating Facility interconnected pursuant to Section XXIV, the Customer
+shall install, own, and maintain relays and protective apparatus in accordance with
+Section XXIV.  If Section XXIV does not apply to the Customer’s interconnection
+of its Generating Facility, suitable relays and protective apparatus shall be
+furnished, installed and maintained at the Customer's expense in accordance with
+specifications furnished by the Company.  The relays and protective apparatus shall
+be subject, at all reasonable times, to inspection by the Company’s authorized
+representative.
+
+B. In case the maximum measured kW demand, or 85% of any kVA demand
+measured, exceeds the contract demand, the contract demand shall be increased by
+such excess demand.
+
+C. The demand billed under Paragraph II.C. shall be the contract demand.
+
+D. A contract demand pursuant to this Paragraph IX. shall not be required for non-
+residential Customer-Generators who net meter in accordance with Section XXV of
+the Company’s Terms and Conditions and whose Generating Facility has a capacity
+of no more than 100 kW.
+
+X. TERM OF CONTRACT
+
+ The contract shall be open order unless (a) parallel operation service is provided, or (b)  the
+Customer or the Company requests a written contract.  In such case, the term of contract for the
+purchase of electricity under this schedule shall be as mutually agreed upon, but for not less than
+one year.
+

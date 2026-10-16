@@ -148,6 +148,8 @@ if(typeof document!=="undefined") {
   function sync(){
     const on=active(), commercial=siteCustomerClass()==="commercial";
     for(const panel of [account,cycles,load,operation,pricing]){panel.hidden=!on;for(const c of panel.querySelectorAll("input,select,textarea"))c.disabled=!on;}
+    // Regional adapters share this native-load selector and own its value.
+    if(!on&&window.regionalUI?.active()){lastKind=null;return;}
     const csvOption=field("load_mode").querySelector('option[value="csv"]');csvOption.disabled=csvOption.hidden=!on;
     if(!on){if(field("load_mode").value==="csv")field("load_mode").value="";lastKind=null;return;}
     wasActive=true;

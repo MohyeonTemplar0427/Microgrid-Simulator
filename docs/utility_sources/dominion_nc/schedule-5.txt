@@ -1,0 +1,157 @@
+--- PDF page 1 ---
+Virginia Electric and Power Company
+
+Schedule 5
+SMALL GENERAL SERVICE
+___________
+
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+I. APPLICABILITY
+
+This schedule is applicable to the supply of alternating current electricity to any
+nonresidential Customer.  This schedule is not applicable for breakdown, relay, or parallel operation
+service, except as described in Paragraph VI., below.
+
+II. MONTHLY RATE
+
+A. Basic Customer Charge
+Basic Customer Charge $22.97 per billing month
+
+B.  Plus kW Demand Charge
+First 100 kW or less Included in kWh Charge
+All kW over 100 @ $4.110 per kW
+
+C.  Plus Energy Charge
+
+1.  For billing months of June through September:
+First 800 kWh   @ 11.0172¢ per kWh
+Next 2200 kWh* @ 10.9334¢ per kWh
+Additional kWh @   8.4338¢ per kWh
+
+2.  For billing months of October through May:
+First 800 kWh  @ 10.1258¢ per kWh
+Next 2200 kWh* @ 10.0431¢ per kWh
+Additional kWh  @   7.5615¢ per kWh
+
+*Add 200 kWh for each kW of demand over 10 kW through 30 kW and add
+100 kWh for each kW of demand over 30 kW.
+
+The energy charges in this schedule contain a base fuel cost of 2.3011 cents
+per kilowatt-hour.
+
+D.  The energy charges in II.C., above, shall be increased or decreased by any applicable
+Riders.
+
+E.  The Minimum Charge shall be determined as the highest of the following amounts,
+and as may be increased or decreased by any applicable Riders:
+
+--- PDF page 2 ---
+Virginia Electric and Power Company
+
+Schedule 5
+SMALL GENERAL SERVICE
+___________
+
+(Continued)
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+
+II. MONTHLY RATE (Continued)
+
+1. The Basic Customer Charge in Paragraph II.A.;
+
+2. The kW of Demand determined under Paragraph IV. of this Rate Schedule,
+multiplied by $6.782 per kW for the billing months of June through September or
+$2.791 per kW for the billing months of October through May;
+
+3. Any Contract Minimum Dollar amount provided for in the Agreement for the
+Purchase of Electricity executed between the Company and the Customer.
+
+III. LATE PAYMENT CHARGE
+
+Current bills are due and payable from the billing date.  When bills are not paid in full
+within twenty-five (25) days from the billing date, a late payment charge of 1% per month, based on
+the unpaid balance, will be added to the current bill.
+
+IV. DETERMINATION OF DEMAND
+
+When a demand meter is present and when the use of electricity exceeds 3,000 kWh for any
+billing month or has exceeded 3,000 kWh for any billing month during the preceding eleven months,
+the kW of demand will be determined as the highest average kW load measured in any 30-minute
+interval during the billing month.  When a Customer transfers from another schedule to this
+schedule, the use of electricity under the former schedule will be used to determine the applicability
+of the demand provisions of this schedule.
+
+V. METER READING AND BILLING
+
+
+A. The Company shall have the option of reading meters monthly or bimonthly.  When the
+meter is read at other than monthly intervals, the Company may render an interim
+monthly bill based on estimated kWh use during periods for which the meter was not
+read.
+
+B. When bills are calculated for a bimonthly period, the Basic Customer Charge shall be
+multiplied by two; the number of kWh specified in each block of the Monthly Rate shall
+be multiplied by two before the rates per kWh are applied to the usage for the bimonthly
+period; the Demand Charge for all kW in excess of 100 kW shall be multiplied by two;
+and the Minimum Charge, excluding all applicable Riders, shall be multiplied by two.
+All applicable Riders shall be added to such modified Minimum Charge.
+
+--- PDF page 3 ---
+Virginia Electric and Power Company
+
+Schedule 5
+SMALL GENERAL SERVICE
+___________
+
+(Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+
+VI. PARALLEL OPERATION AND/OR INTERCONNECTION SERVICE
+
+ A Customer, operating a Generating Facility (as defined in Section XXIV of the Company’s
+filed Terms and Conditions) with alternating current capacity of no more than 20 kW, participating
+in the NC GreenPower’s Solar+ Schools program, and requiring parallel operation and/or
+interconnection service, may elect service under this schedule provided that the Customer’s
+interconnection with the Company’s facilities shall be made in accordance with the following
+provisions:
+
+ A. For a Generating Facility interconnected pursuant to Section XXIV, the Customer shall
+install, own, and maintain relays and protective apparatus in accordance with
+Section XXIV.
+
+B. If Section XXIV does not apply to the Customer’s interconnection of its Generating
+Facility, suitable relays and protective apparatus shall be furnished, installed, and
+maintained at the Customer’s expense in accordance with specifications furnished by
+the Company.  The relays and protective apparatus shall be subject, at all reasonable
+times, to inspection by the Company’s authorized representative.
+
+VII. TERM OF CONTRACT
+
+Open order, unless the Customer or the Company requests a written contract.  In such case,
+the term of contract for the purchase of electricity under this schedule shall be such as may be
+mutually agreed upon, but not less than one year.

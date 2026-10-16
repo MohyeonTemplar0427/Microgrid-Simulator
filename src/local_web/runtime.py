@@ -836,6 +836,42 @@ class Application:
             for content, name in self.samples:
                 self.store.add_dataset(content, name, owner_id)
 
+    def regional_weather(self, request, owner_id=None):
+        """Explicit local ERA5 retrieval with owner-scoped, engine-scoped caching."""
+        from .contract import number
+        from ..profiles.era5 import fetch_era5, parse_era5
+        from ..timeseries import build_interval_index
+        if not isinstance(request,dict) or set(request)!={"latitude","longitude","start_date","end_date"}:
+            raise ValueError("Supply ERA5 site coordinates and exact service dates.")
+        number(request["latitude"],"Latitude",-90,90);number(request["longitude"],"Longitude",-180,180)
+        try:
+            days=(datetime.fromisoformat(request["end_date"])-datetime.fromisoformat(request["start_date"])).days+1
+            if not 1<=days<=366 or any(len(request[k])!=10 for k in ("start_date","end_date")):
+                raise ValueError("Invalid weather range.")
+            grid=build_interval_index(request["start_date"],request["end_date"],"America/New_York",15)
+        except (TypeError,ValueError) as exc:
+            raise ValueError("ERA5 candidate retrieval requires 1–366 whole local service days.") from exc
+        digest=hashlib.sha256(json.dumps([self.engine["id"],"regional_era5",request,owner_id],sort_keys=True).encode()).hexdigest()
+        folder=self.store.directory/"weather"/digest
+        payload_path=folder/"era5.json"
+        with self.resource_lock:
+            if payload_path.exists():
+                data=json.loads(payload_path.read_text())
+                if hashlib.sha256(data["weather"]["raw_json"].encode()).hexdigest()!=data["raw_sha256"]:
+                    raise ValueError("Cached ERA5 bytes changed; refusing to replace or use that weather record.")
+                self.store.grant("weather",digest,owner_id)
+                return {**data,"cached":True}
+            self.store.require_weather_storage(owner_id,digest)
+            payload=fetch_era5(request["start_date"],request["end_date"],request["latitude"],request["longitude"])
+            _,provenance=parse_era5(payload["raw_json"],grid,request["latitude"],request["longitude"])
+            data={"weather":payload,"raw_sha256":provenance["raw_sha256"],"provenance":provenance,"cached":False}
+            if len(json.dumps(data).encode())>self.store.max_weather_bytes:
+                raise CapacityError("ERA5 weather exceeds the configured weather-resource limit.")
+            folder.mkdir(parents=True,exist_ok=True)
+            write_json(payload_path,data)
+            self.store.grant("weather",digest,owner_id)
+            return data
+
     def resource(self, kind, request, owner_id=None):
         from .site_inputs import validate_weather_request
         if "site_defaults" not in self.capabilities:

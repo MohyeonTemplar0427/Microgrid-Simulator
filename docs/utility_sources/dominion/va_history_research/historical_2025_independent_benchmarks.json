@@ -1,0 +1,409 @@
+{
+  "scope": "Independent flat-load tariff benchmarks, not weather-driven facility simulations or actual bills. No PV, storage or export.",
+  "rates": "Actual dated 2025 supply/delivery/riders/deferred fuel; historical tax gaps excluded explicitly.",
+  "reproduce": "/usr/local/bin/python3 -m pytest -q test/test_dominion_va_historical.py",
+  "monthly_benchmarks": [
+    {
+      "tariff": "VA-1",
+      "start": "2025-01-01",
+      "end_exclusive": "2025-02-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 744.0,
+      "independent_expected_usd": 106.62872,
+      "calculator_subtotal_usd": 106.62871999999997,
+      "difference_usd": -2.842170943040401e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-02-01",
+      "end_exclusive": "2025-03-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 672.0,
+      "independent_expected_usd": 97.095776,
+      "calculator_subtotal_usd": 97.09577599999999,
+      "difference_usd": -1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-03-01",
+      "end_exclusive": "2025-04-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 743.0,
+      "independent_expected_usd": 106.55354399999999,
+      "calculator_subtotal_usd": 106.553544,
+      "difference_usd": 1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-04-01",
+      "end_exclusive": "2025-05-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 720.0,
+      "independent_expected_usd": 104.21191999999999,
+      "calculator_subtotal_usd": 104.21191999999999,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-05-01",
+      "end_exclusive": "2025-06-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 744.0,
+      "independent_expected_usd": 108.095888,
+      "calculator_subtotal_usd": 108.09588799999999,
+      "difference_usd": -1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-06-01",
+      "end_exclusive": "2025-07-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 720.0,
+      "independent_expected_usd": 104.77279999999999,
+      "calculator_subtotal_usd": 104.77280000000002,
+      "difference_usd": 2.842170943040401e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-07-01",
+      "end_exclusive": "2025-08-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 744.0,
+      "independent_expected_usd": 114.66764,
+      "calculator_subtotal_usd": 114.66763999999999,
+      "difference_usd": -1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-08-01",
+      "end_exclusive": "2025-09-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 744.0,
+      "independent_expected_usd": 115.428008,
+      "calculator_subtotal_usd": 115.42800799999999,
+      "difference_usd": -1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-09-01",
+      "end_exclusive": "2025-10-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 720.0,
+      "independent_expected_usd": 119.27432000000002,
+      "calculator_subtotal_usd": 119.27432,
+      "difference_usd": -1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-10-01",
+      "end_exclusive": "2025-11-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 744.0,
+      "independent_expected_usd": 122.229656,
+      "calculator_subtotal_usd": 122.22965600000002,
+      "difference_usd": 1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-11-01",
+      "end_exclusive": "2025-12-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 721.0,
+      "independent_expected_usd": 118.16193299999999,
+      "calculator_subtotal_usd": 118.16193299999998,
+      "difference_usd": -1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-1",
+      "start": "2025-12-01",
+      "end_exclusive": "2026-01-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 1.0,
+      "kwh": 744.0,
+      "independent_expected_usd": 121.68951200000001,
+      "calculator_subtotal_usd": 121.68951200000002,
+      "difference_usd": 1.4210854715202004e-14,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-01-01",
+      "end_exclusive": "2025-02-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7440.0,
+      "independent_expected_usd": 766.9168,
+      "calculator_subtotal_usd": 766.9168000000002,
+      "difference_usd": 2.2737367544323206e-13,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-02-01",
+      "end_exclusive": "2025-03-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 6720.0,
+      "independent_expected_usd": 695.90176,
+      "calculator_subtotal_usd": 695.90176,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-03-01",
+      "end_exclusive": "2025-04-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7430.0,
+      "independent_expected_usd": 766.50274,
+      "calculator_subtotal_usd": 766.5027399999999,
+      "difference_usd": -1.1368683772161603e-13,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-04-01",
+      "end_exclusive": "2025-05-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7200.0,
+      "independent_expected_usd": 754.612,
+      "calculator_subtotal_usd": 754.612,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-05-01",
+      "end_exclusive": "2025-06-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7440.0,
+      "independent_expected_usd": 785.4052,
+      "calculator_subtotal_usd": 785.4052,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-06-01",
+      "end_exclusive": "2025-07-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7200.0,
+      "independent_expected_usd": 864.1726,
+      "calculator_subtotal_usd": 864.1726,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-07-01",
+      "end_exclusive": "2025-08-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7440.0,
+      "independent_expected_usd": 959.44948,
+      "calculator_subtotal_usd": 959.4494800000001,
+      "difference_usd": 1.1368683772161603e-13,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax",
+        "consumption_tax_before_2025_08_16"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-08-01",
+      "end_exclusive": "2025-09-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7440.0,
+      "independent_expected_usd": 964.53376,
+      "calculator_subtotal_usd": 964.53376,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-09-01",
+      "end_exclusive": "2025-10-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7200.0,
+      "independent_expected_usd": 990.2308000000002,
+      "calculator_subtotal_usd": 990.2307999999998,
+      "difference_usd": -3.410605131648481e-13,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-10-01",
+      "end_exclusive": "2025-11-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7440.0,
+      "independent_expected_usd": 914.0158,
+      "calculator_subtotal_usd": 914.0158,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-11-01",
+      "end_exclusive": "2025-12-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7210.0,
+      "independent_expected_usd": 883.39608,
+      "calculator_subtotal_usd": 883.3960800000001,
+      "difference_usd": 1.1368683772161603e-13,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    },
+    {
+      "tariff": "VA-GS1",
+      "start": "2025-12-01",
+      "end_exclusive": "2026-01-01",
+      "interval_minutes": 30,
+      "constant_import_kw": 10.0,
+      "kwh": 7440.0,
+      "independent_expected_usd": 910.65292,
+      "calculator_subtotal_usd": 910.65292,
+      "difference_usd": 0.0,
+      "is_complete_bill": false,
+      "excluded_components": [
+        "sales_use_tax_surcharge",
+        "local_utility_consumer_tax"
+      ]
+    }
+  ],
+  "annual_verified_subtotals_usd": {
+    "VA-1": 1338.8097169999999,
+    "VA-GS1": 10255.78994
+  }
+}

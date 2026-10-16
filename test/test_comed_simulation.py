@@ -53,6 +53,13 @@ def test_main_builder_through_worker_comparison_save_and_download(service,kind,s
     assert len({x['capacity_obligation_kw'] for x in data})==1
     assert all(abs(x['rounding_difference_usd'])<=x['rounding_bound_usd'] for x in data)
     assert data[2]['subtotal_usd']<=data[1]['subtotal_usd']+.1
+    refinement=result['optimization']['pv_battery']['throughput_refinement']
+    assert data[2]['throughput_proof_method']==refinement['proof_method']
+    assert data[2]['throughput_lower_bound_kwh']==pytest.approx(refinement['global_lower_bound_kwh'])
+    assert data[2]['throughput_optimality_gap_kwh']==pytest.approx(refinement['optimality_gap_kwh'])
+    assert data[0]['throughput_proof_method']=='not_applicable'
+    assert data[0]['throughput_lower_bound_kwh'] is None
+    assert b'Remaining cycling gap' in call('/app.js')
     base='/api/studies/'+study['id']
     assert b'pv_curtailed_kw' in call(base+'/tables/dispatch-pv_battery.csv')
     assert b'timestamp' in call(base+'/tables/inputs.csv')

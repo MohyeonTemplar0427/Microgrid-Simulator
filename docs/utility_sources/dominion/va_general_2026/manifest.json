@@ -1,0 +1,197 @@
+{
+  "source_url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/entire-filed-tariff.pdf",
+  "retrieved_on": "2026-10-15",
+  "document": "Entire filed tariff, TOC revised2026-10-01",
+  "pdf_sha256": "b6a2fa0612183c27d839df336a9d555085757f2bbb0d698a2f21c902af0098dd",
+  "pdf_bytes": 15078887,
+  "extracts": [
+    {
+      "file": "residential.txt",
+      "pages": [
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ],
+      "sha256": "be5161b2538bcdeac040d9c528bcfa54fe307da95454798c25bf2a37f834345d"
+    },
+    {
+      "file": "small_commercial.txt",
+      "pages": [
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "sha256": "692e37594d05a8661ecf87b7794ae4d31b20c2b8af9c8f2c8f20441679d29765"
+    },
+    {
+      "file": "gs1.txt",
+      "pages": [
+        160,
+        161,
+        162,
+        163,
+        164
+      ],
+      "sha256": "5dca6c980c4695d5edaecca0b4458f9141e45897e81701e7dff0cc99c72c870d"
+    },
+    {
+      "file": "gs2.txt",
+      "pages": [
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176
+      ],
+      "sha256": "4b8600d1668182784946dbdde28eb7e3c8e980f0ac2f0c0cb177084f4e897e8e"
+    },
+    {
+      "file": "gs2t.txt",
+      "pages": [
+        177,
+        178,
+        179,
+        180
+      ],
+      "sha256": "a31bb8ba40f166a66143dd1234822c189b8481d22627df9777c07336dc840814"
+    },
+    {
+      "file": "gs3.txt",
+      "pages": [
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194
+      ],
+      "sha256": "e68cc49f54ce22420e4c9a8fa5989a9f8aadab544dbce32669540751cff680c1"
+    },
+    {
+      "file": "gs4.txt",
+      "pages": [
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210
+      ],
+      "sha256": "c9b43ade680dba8accac4c8a328af254aac4267214d580307d76b4befe2f1c9d"
+    },
+    {
+      "file": "general_terms.txt",
+      "pages": [
+        24,
+        28,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "sha256": "d1e02d2df9a3be1b422183aeabe26636426d3b1f9a2cfb9cbce3fb5ece6b3fc4"
+    },
+    {
+      "file": "riders.txt",
+      "pages": [
+        318,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        331,
+        332,
+        344,
+        345,
+        346,
+        349,
+        350,
+        351,
+        352,
+        353
+      ],
+      "sha256": "6fc27b7bd9d57de1c82985b6b9b60723505549305cc29093cdfdcda3869439db"
+    },
+    {
+      "file": "sales_use_tax.txt",
+      "pages": [
+        374
+      ],
+      "sha256": "8b24d2df95f2d40f8b31ad7cbead3ee826c1608a6c07565806c9dfb93a0dcd3b"
+    },
+    {
+      "file": "consumption_tax.txt",
+      "pages": [
+        375,
+        376
+      ],
+      "sha256": "b6956b103cc435d372f451720199706d5448aa1dae4e77b7166bf18b7b3d213c"
+    },
+    {
+      "file": "schedule10.txt",
+      "pages": [
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257
+      ],
+      "sha256": "88e8fc26769bf0b52b79b3512e6bb34e346acf17dd2318421a9cad1c42d1c3e1"
+    },
+    {
+      "file": "special_schedule_inventory.txt",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235
+      ],
+      "sha256": "0a8d2d8f79735869c4ec2f0ae68f1457d906f2350fa6709249779f3825834b23"
+    }
+  ],
+  "notes": [
+    "Current PDF downloaded from official CDN matches the prior2026-10-11archived PDF byte-for-byte.",
+    "The actual dated predecessor chain for January1\u2013October15,2026 is normalized separately in va_history_research/normalized_2026_components.csv; this current PDF alone is not a historical ratebook."
+  ]
+}

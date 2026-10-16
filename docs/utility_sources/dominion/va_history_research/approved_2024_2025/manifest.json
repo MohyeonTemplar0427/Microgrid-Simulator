@@ -1,0 +1,1066 @@
+{
+  "retrieved_on": "2026-10-15",
+  "discovery": "Official SCC public DocketSearchAPI/breeze case/document indexes; filings are not enabled until effective-date/component validation.",
+  "filings": [
+    {
+      "case_number": "PUR-2024-00147",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider CE - Clean Energy Projects and Power Purchase Agreements tariff sheet and supporting workpapers.",
+        "Date_Filed": "2025-04-17T00:00:00.000",
+        "DocID": 379768,
+        "FileName": "851401!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/851401%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "13aaad4f1b753d4a2d7b8a5b80288ff716bd70c9e2b30f1e63ce243a487ad809",
+      "pdf_bytes": 3054585,
+      "pages": 18,
+      "text_file": "PUR-2024-00147_379768.txt",
+      "text_sha256": "81130e1d74f546120c2d54b6713d0773e9881802ec3ed8547cc17f6f78b56bf2"
+    },
+    {
+      "case_number": "PUR-2023-00171",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider SNA tariff and rate design workpapers filing.",
+        "Date_Filed": "2024-07-18T00:00:00.000",
+        "DocID": 373529,
+        "FileName": "807t01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/807t01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "8ac84ce1d7656e02b56ab9b76059cf53b6e19d598453a5174621e29aeb6f9c80",
+      "pdf_bytes": 403542,
+      "pages": 18,
+      "text_file": "PUR-2023-00171_373529.txt",
+      "text_sha256": "4c1a0191acf84dd3584fef26945377c48a0697534dd5d974963b85427395927f"
+    },
+    {
+      "case_number": "PUR-2023-00172",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Enclosed is the Table of Contents tariff revised to reflect the 8/1/24 effective date for the Rider U and the Deferred Fuel Cost Charge tariffs. Also enclosed is the revised Exhibit of Applicable Riders",
+        "Date_Filed": "2024-07-24T00:00:00.000",
+        "DocID": 373695,
+        "FileName": "80cf01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80cf01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "dc4afad41a74412dbde033ef39f3981f3196a9422fb65023b9a49607d288f533",
+      "pdf_bytes": 695107,
+      "pages": 18,
+      "text_file": "PUR-2023-00172_373695.txt",
+      "text_sha256": "612cfe73b7f279ecac89a467cf19d08d53d9c4bd8ce2a50cd8888568d7c20c1a"
+    },
+    {
+      "case_number": "PUR-2023-00172",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider U - Strategic Underground Program tariff with revised rates effective for usage on and after 8/1/24; and Rider U rate design workpapers to support the $149.546 million revenue requirement.",
+        "Date_Filed": "2024-07-11T00:00:00.000",
+        "DocID": 373381,
+        "FileName": "803p01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/803p01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "f9def47b75f102c4e9333b312c84628b9a30487f0dfde40f3e75a6dd29f1cc98",
+      "pdf_bytes": 356581,
+      "pages": 16,
+      "text_file": "PUR-2023-00172_373381.txt",
+      "text_sha256": "4f04f3e66107666c78493ceb6dada526f77b529884a6599ccad71a60574e3e4a"
+    },
+    {
+      "case_number": "PUR-2024-00180",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Rider RBB Tariff and Supporting Workpapers.",
+        "Date_Filed": "2025-04-16T00:00:00.000",
+        "DocID": 379749,
+        "FileName": "850l01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/850l01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "674a6d849541e9add8eea9ef705f2efccd4e0bdf3d8a76fafb6bdda972538f96",
+      "pdf_bytes": 548042,
+      "pages": 5,
+      "text_file": "PUR-2024-00180_379749.txt",
+      "text_sha256": "b59c8cbdb44886b96ce83184c65d8bfa587598b72b2ead36f9c0b81c47e0e2f3"
+    },
+    {
+      "case_number": "PUR-2024-00180",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider RBB Tariff Sheet and Rider RBB Rate Design workpapers.",
+        "Date_Filed": "2025-04-11T00:00:00.000",
+        "DocID": 379690,
+        "FileName": "84yy01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/84yy01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "cd1adb5bccead63e1f75d8099a5718be50508b5bf21ffce064a02e61003b009a",
+      "pdf_bytes": 2374961,
+      "pages": 20,
+      "text_file": "PUR-2024-00180_379690.txt",
+      "text_sha256": "1adbabd59ac51b5754dbdb7ffdc60ee80b05c11001176e98e9818a41ac5c5613"
+    },
+    {
+      "case_number": "PUR-2023-00136",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Co. - Rider GT - Grid Transformation  tariff with rates effective for usage on and after June 1, 2024; and Rider GT rate design workpapers supporting a revenue requirement of $144.726 million.",
+        "Date_Filed": "2024-05-08T00:00:00.000",
+        "DocID": 372082,
+        "FileName": "7z3m01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7z3m01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "29b57fb3fbdeb6b40c1273d1b8dce25c6679455d9d656918dd9a66eea6a5ce46",
+      "pdf_bytes": 401727,
+      "pages": 17,
+      "text_file": "PUR-2023-00136_372082.txt",
+      "text_sha256": "19e0a1691eb61ee433dd17d72358ae1908552e62130eab6a32c9472543526456"
+    },
+    {
+      "case_number": "PUR-2023-00137",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider US-3 - US-3 Solar Projects tariff with rates effective for usage on and after 6/1/24 and US-3 rate design workpapers supporting a revenue requirement totaling $36.68 million.",
+        "Date_Filed": "2024-05-08T00:00:00.000",
+        "DocID": 372083,
+        "FileName": "7z3n01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7z3n01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "aa6dd055fd15f255a98f23f9603b1e892b36c909b39b5efbb9b63073147b9ac8",
+      "pdf_bytes": 403963,
+      "pages": 18,
+      "text_file": "PUR-2023-00137_372083.txt",
+      "text_sha256": "7333481aa51e70a55fa1a8e3c4b808eb54a5678de353b3d95b3a686a449104a9"
+    },
+    {
+      "case_number": "PUR-2023-00138",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider US-4 - US-4 Solar Projects tariff with rates effective for usage on and after 6/1/24; and Rider US-4 rate design workpapers supporting revenue requirement total $14,185,401.",
+        "Date_Filed": "2024-05-08T00:00:00.000",
+        "DocID": 372080,
+        "FileName": "7z3k01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7z3k01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "630d0d5f9ebb81a244ead052cef9cfd682026caec2f8e0a491753470c347d168",
+      "pdf_bytes": 400548,
+      "pages": 18,
+      "text_file": "PUR-2023-00138_372080.txt",
+      "text_sha256": "8b3da18fefa906879f7cdaa320295a1bb7016e6940431826a35298dec82dd153"
+    },
+    {
+      "case_number": "PUR-2023-00094",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Rider GV -Greensville Power Station (\"Rider GV\") tariff sheets with rates effective for usage on and after 4/1/2024 and 4/1/2025.",
+        "Date_Filed": "2024-05-07T00:00:00.000",
+        "DocID": 372011,
+        "FileName": "7z1n01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7z1n01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "f1f9df7d7d89d0db83a3a2b75f3ff3286f9d6919da7561dc6c3dfeba102484f6",
+      "pdf_bytes": 169226,
+      "pages": 5,
+      "text_file": "PUR-2023-00094_372011.txt",
+      "text_sha256": "3e421cb73402eaf5f82da2241cea67bae45e33a1bfc54bacf094c91c5ec64863"
+    },
+    {
+      "case_number": "PUR-2023-00094",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Greensville Power Station tariff sheet with revised rates effective for usage on and after 4/1/24.",
+        "Date_Filed": "2024-02-29T00:00:00.000",
+        "DocID": 370095,
+        "FileName": "7xkf01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7xkf01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "5136b85f6fd94e4fa4ad5c750af20aadbb707a417c0f7d17716eae48c0775c44",
+      "pdf_bytes": 723917,
+      "pages": 32,
+      "text_file": "PUR-2023-00094_370095.txt",
+      "text_sha256": "0d7023e64af44cc9fe3760860d87fd264e2d401dea23f7836e7bb8674493e980"
+    },
+    {
+      "case_number": "PUR-2023-00217",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider C1A, Rider C2A, and Rider C4A tariff sheets effective for usage on and after September 1, 2024, along with Rider C3A tariff withdrawn effective September 1, 2024 & the rate design workpapers for",
+        "Date_Filed": "2024-08-08T00:00:00.000",
+        "DocID": 374146,
+        "FileName": "80_y01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80_y01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "e263f55e6e22b4a4deb7ee66fa87637589046ee19cf0da75a4f1fd0b55858a8d",
+      "pdf_bytes": 795005,
+      "pages": 29,
+      "text_file": "PUR-2023-00217_374146.txt",
+      "text_sha256": "012dde4a52bf067882f59cd9b649f7a791e2ef4fba7a504378d5e0f2496f0688"
+    },
+    {
+      "case_number": "PUR-2023-00221",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider RPS tariff sheet effective for usage on and after September 1, 2024; and Rider RPS rate design workpapers supporting a revenue requirement of $358,138,438 for the year beginning September 1, 2024.",
+        "Date_Filed": "2024-08-09T00:00:00.000",
+        "DocID": 374160,
+        "FileName": "80pc01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80pc01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "37ef364cf4465c8dd1348f8f44ef811adc44601582e5f837066795e7e99ed876",
+      "pdf_bytes": 141646,
+      "pages": 6,
+      "text_file": "PUR-2023-00221_374160.txt",
+      "text_sha256": "8b875233ede1dfab7cfaadcd7446b56b654180d9c4a0f8ebca226b4f58bf6cf5"
+    },
+    {
+      "case_number": "PUR-2023-00195",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider OSW tariff will become effective for usage on and after September 1, 2024.",
+        "Date_Filed": "2024-08-07T00:00:00.000",
+        "DocID": 374129,
+        "FileName": "80_h01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80_h01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "145bd1186f9783990446751ffcc7a12710ce862c35b8eaa66b7e97d7706352ec",
+      "pdf_bytes": 432259,
+      "pages": 17,
+      "text_file": "PUR-2023-00195_374129.txt",
+      "text_sha256": "40c38a6f8686e25c573d20bbeebd968585e8040a56a7dce34cb03baadbcfe9e1"
+    },
+    {
+      "case_number": "PUR-2025-00058",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Schedule 10 tariff.",
+        "Date_Filed": "2025-12-18T00:00:00.000",
+        "DocID": 385824,
+        "FileName": "89pc01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/89pc01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "68312889aad82127e8d097b4bd07e6274ffb5dc8237ce36b19c5bc35be201f3d",
+      "pdf_bytes": 5727286,
+      "pages": 21,
+      "text_file": "PUR-2025-00058_385824.txt",
+      "text_sha256": "044fe4c1dc32eb85bded27ee4861b2f1ad97c1cf9b12ea5c9dc351410a131f4d"
+    },
+    {
+      "case_number": "PUR-2025-00058",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Terms & Conditions, Rate Schedules, & Rider D - TERF, with supporting workpapers, effective 1/1/2026.",
+        "Date_Filed": "2025-12-09T00:00:00.000",
+        "DocID": 385680,
+        "FileName": "89lc01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/89lc01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "5381b259167254e31a3a8264e5e786b14a00359c312c1cfb6f0fdc4238576c83",
+      "pdf_bytes": 138563953,
+      "pages": 591,
+      "text_file": "PUR-2025-00058_385680.txt",
+      "text_sha256": "bef404bc4257c8562cbcf38fb261c4d17cdf35a68305dce4bc1dc535b9f2b24f"
+    },
+    {
+      "case_number": "PUR-2025-00059",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised fuel charge Rider A, Table of Contents, and Exhibit of Applicable Riders tariff sheets.",
+        "Date_Filed": "2026-02-04T00:00:00.000",
+        "DocID": 386767,
+        "FileName": "8@fj01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8%40fj01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "7e65def2535e2944e82acaf42493502372db9dcd34bb29d2fd5e0c826fbe3e1b",
+      "pdf_bytes": 3498772,
+      "pages": 19,
+      "text_file": "PUR-2025-00059_386767.txt",
+      "text_sha256": "ac67e4a5f3ebcdfb81711914e005d3f7854a3bb2a5c2faebaba4f260d1a1dcc6"
+    },
+    {
+      "case_number": "PUR-2025-00059",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Fuel Charge Rider A tariff sheet effective for usage on and after 7/1/25, on an interim basis.",
+        "Date_Filed": "2025-05-16T00:00:00.000",
+        "DocID": 380535,
+        "FileName": "85mf01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85mf01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "64d83cf89adb39a84c246733f2f7ad68ecfc89d47134cfdec84455ed872ad453",
+      "pdf_bytes": 852401,
+      "pages": 5,
+      "text_file": "PUR-2025-00059_380535.txt",
+      "text_sha256": "c5da2cd71a84ffd847d61f60a53ff34a0f8898c59af0295ddf33bac89d08678d"
+    },
+    {
+      "case_number": "PUR-2024-00123",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Updated Rider TRG Rate and Balancing Charge; Updated Table of Contents and Exhibit of Applicable Riders tariffs effective May 1, 2025.",
+        "Date_Filed": "2025-04-17T00:00:00.000",
+        "DocID": 379773,
+        "FileName": "851901!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/851901%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "0ad53902ab7fe60c305c98098eca96a3389dbdba33bb722ea7d3ceadf15b49b7",
+      "pdf_bytes": 7736358,
+      "pages": 36,
+      "text_file": "PUR-2024-00123_379773.txt",
+      "text_sha256": "c9b2a43c9a0f31f7f38b49394f265fe9121332c0eb0c384d177a50af01a4ae76"
+    },
+    {
+      "case_number": "PUR-2025-00037",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Rider CERC tariff sheet and rate design workpapers supporting an approved revenue requirement of $35,739,807. Rider CERC tariff sheet will become effective for usage on and after 3/1/26.",
+        "Date_Filed": "2026-02-17T00:00:00.000",
+        "DocID": 386988,
+        "FileName": "8@l_01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8%40l_01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "5784ff0d6201404733449af3152fc2c447933ebc3433b64ee876063f592aeb75",
+      "pdf_bytes": 3311584,
+      "pages": 19,
+      "text_file": "PUR-2025-00037_386988.txt",
+      "text_sha256": "453fbeddf51d4ce4d272d175267accec7afb280d4bba45f9ec57fb202a939ae8"
+    },
+    {
+      "case_number": "PUR-2025-00037",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider CERC tariff sheet and rate design workpapers supporting an approved revenue requirement of $35,739,807, effective for usage on and after 1/1/26.",
+        "Date_Filed": "2025-12-01T00:00:00.000",
+        "DocID": 385555,
+        "FileName": "89hv01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/89hv01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "f54dd6383ce200fa28a970b078021f95a16475abb5c4f462fbf04de633ede8bd",
+      "pdf_bytes": 3204288,
+      "pages": 18,
+      "text_file": "PUR-2025-00037_385555.txt",
+      "text_sha256": "8abade8787ff10d579bafb3e52d7a0a09df14552f00b22c909f827cc6b17b576"
+    },
+    {
+      "case_number": "PUR-2025-00017",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider E tariff sheet effective for usage on and after 11/1/25; and  Rider E rate design workpapers supporting a revenue requirement of $37,243,743 for the rate year beginning 11/1/25 through 10/31/26.",
+        "Date_Filed": "2025-10-09T00:00:00.000",
+        "DocID": 384214,
+        "FileName": "88gm01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/88gm01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "8c876e8761be69f1425418b3c620ae96097e5f7c72310ec526a120a06b7f08fa",
+      "pdf_bytes": 3398302,
+      "pages": 18,
+      "text_file": "PUR-2025-00017_384214.txt",
+      "text_sha256": "d6f66319ef5472a7d4b0706f562f5654cb26a296b115340d691ec6ca1dc3cf10"
+    },
+    {
+      "case_number": "PUR-2024-00078",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Letter enclosing Revised Fuel Charge Rider A tariff sheet, effective for usage on and after 7/1/24.",
+        "Date_Filed": "2025-01-17T00:00:00.000",
+        "DocID": 377624,
+        "FileName": "83dk01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/83dk01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "1376890d4302651f78a5f57e7abd8ff245781c3cf07e53ef60600da552a2ac31",
+      "pdf_bytes": 5592620,
+      "pages": 21,
+      "text_file": "PUR-2024-00078_377624.txt",
+      "text_sha256": "80ed4da19659bc879e742a98ebe12da3fddc0b973822d1058fd351118e554a17"
+    },
+    {
+      "case_number": "PUR-2024-00078",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Fuel Charge Rider A tariff effective for usage on & after 7/1/2024, on an interim basis.",
+        "Date_Filed": "2024-06-03T00:00:00.000",
+        "DocID": 372685,
+        "FileName": "7zkd01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7zkd01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "650165a967ee9a7723716c79c1b1e3caf4b07977c7caff5dcf8c9402172924c2",
+      "pdf_bytes": 112768,
+      "pages": 5,
+      "text_file": "PUR-2024-00078_372685.txt",
+      "text_sha256": "3373418b42529d86ea940ef0758b1e7b9c0b0775fb32aa8096d2aa5b411b3020"
+    },
+    {
+      "case_number": "PUR-2024-00013",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider E tariff sheet effective for usage on and after 11/1/24; and Rider E rate design workpapers supporting a revenue requirement of $71,992,470 for the rate year beginning 11/1/24 through 10/31/25.",
+        "Date_Filed": "2024-10-08T00:00:00.000",
+        "DocID": 375602,
+        "FileName": "81t#01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/81t%2301%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "f8191e1867519c9dd56be2aad2952c2353225d72049a46c71af22216c56e674c",
+      "pdf_bytes": 399811,
+      "pages": 17,
+      "text_file": "PUR-2024-00013_375602.txt",
+      "text_sha256": "bb65de1eb9f3238cae7c9f8b94e0c11127f8d973601502a1c9c55f0a14428db8"
+    },
+    {
+      "case_number": "PUR-2024-00071",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - e Rider T1 -- Transmission tariff and rate design workpapers supporting an approved revenue requirement of $1,169,592,808, of which $638,238,346 is collected through RiderT1. The Rider T1 tariff will be",
+        "Date_Filed": "2024-08-08T00:00:00.000",
+        "DocID": 374147,
+        "FileName": "80_z01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80_z01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "974e1a29425d91d1106fc607a3af5d18b3a97acc5b368945ce2de4f8c40bd1af",
+      "pdf_bytes": 642170,
+      "pages": 20,
+      "text_file": "PUR-2024-00071_374147.txt",
+      "text_sha256": "20c8ae5d16d9795ebdcb84069abd58672192c22bf068933368f145ecb9874e0e"
+    },
+    {
+      "case_number": "PUR-2024-00205",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider SMR Tariff Sheet and Supporting Workpapers.",
+        "Date_Filed": "2025-08-06T00:00:00.000",
+        "DocID": 382534,
+        "FileName": "875y01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/875y01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "ffa2dc173923f7a3ac1e5a572a5f3c4daf4237268466a7f475e55857cec2ac3b",
+      "pdf_bytes": 3063856,
+      "pages": 18,
+      "text_file": "PUR-2024-00205_382534.txt",
+      "text_sha256": "19c5c6c0985204f9a01b7a195e69d12e9e9784287750ad10edacff37b453f2d5"
+    },
+    {
+      "case_number": "PUR-2024-00206",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider OSW tariff sheet and workpapers is effective for usage on and after September 1, 2025.",
+        "Date_Filed": "2025-08-14T00:00:00.000",
+        "DocID": 382729,
+        "FileName": "87bd01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/87bd01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "707d608c11d087b4c8b995455545be381f79d2242f4aaa96db4f32a6e9f41fad",
+      "pdf_bytes": 3495992,
+      "pages": 17,
+      "text_file": "PUR-2024-00206_382729.txt",
+      "text_sha256": "24887db8ac59b8477d9413f47805376cfa0c721342c3d13b05e481aa8c0f190e"
+    },
+    {
+      "case_number": "PUR-2024-00222",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Rider C1A and Rider C4A (\u201cDSM Riders\u201d) tariff sheets and rate design workpapers for DSM Riders.",
+        "Date_Filed": "2025-08-15T00:00:00.000",
+        "DocID": 382750,
+        "FileName": "87by01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/87by01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "c33244857f9f3fdc9a1ee5b8bfe8f348e1190e84f1302c36c67515b4cc15be86",
+      "pdf_bytes": 3641208,
+      "pages": 22,
+      "text_file": "PUR-2024-00222_382750.txt",
+      "text_sha256": "f80da44c61b47ba594615cd1adadcde75a4ab860d27b826bf7c9041c2a94fd20"
+    },
+    {
+      "case_number": "PUR-2024-00137",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - 2024 Rider DIST Tariff Filing and Working Papers Errata.",
+        "Date_Filed": "2025-05-14T00:00:00.000",
+        "DocID": 380454,
+        "FileName": "85k601!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85k601%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "c4ef302e39a31e9248d940fd8bf80b882ed5bf0eda9d1f289cb67051d8de4549",
+      "pdf_bytes": 1912658,
+      "pages": 7,
+      "text_file": "PUR-2024-00137_380454.txt",
+      "text_sha256": "09129aa3db0dca5bdd64a4279d468a1a5d3d62e9ace7c859bcb1f929fd5d381f"
+    },
+    {
+      "case_number": "PUR-2024-00137",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - 2024 Rider DIST Tariff and Workpapers.",
+        "Date_Filed": "2025-05-13T00:00:00.000",
+        "DocID": 380444,
+        "FileName": "85jw01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85jw01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "f3da5d89b9e2d7ab78f81b70be9eddc54944ed4984292273159010fea8023c3a",
+      "pdf_bytes": 5381785,
+      "pages": 38,
+      "text_file": "PUR-2024-00137_380444.txt",
+      "text_sha256": "0ddc3aec2b5c848bf7b1ebea12659dd876dca75c4c8b2f0d1de82bab16fed178"
+    },
+    {
+      "case_number": "PUR-2024-00097",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - New Rider GEN tariff sheet and supporting workpapers; and Withdrawn Riders B, BW, GV, US-2, US-3, and US-4 tariff sheets.",
+        "Date_Filed": "2025-03-04T00:00:00.000",
+        "DocID": 378661,
+        "FileName": "846d01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/846d01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "78861ab66e70690476e66345ffe71bf9a046df773d05f449b4a777ad78e75c7c",
+      "pdf_bytes": 17288850,
+      "pages": 49,
+      "text_file": "PUR-2024-00097_378661.txt",
+      "text_sha256": "4fab7ddfaa1dd59d856a677521289da94c20c0dc8bbc44031960a3641deaec08"
+    },
+    {
+      "case_number": "PUR-2024-00154",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Rider SNA tariff sheet.",
+        "Date_Filed": "2025-08-08T00:00:00.000",
+        "DocID": 382597,
+        "FileName": "877p01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/877p01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "a6111026fbce470fd2aae34a447be90b1bcb72e1cef4af6feaffa7cfacc5a06f",
+      "pdf_bytes": 565424,
+      "pages": 4,
+      "text_file": "PUR-2024-00154_382597.txt",
+      "text_sha256": "05923206f6cdc78408dee48cd86ab84e263481c100c49a66af70f36549f4a760"
+    },
+    {
+      "case_number": "PUR-2024-00154",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider SNA tariff and rate design workpapers effective for usage on and after 9/1/25.",
+        "Date_Filed": "2025-07-18T00:00:00.000",
+        "DocID": 382118,
+        "FileName": "86%#01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/86%25%2301%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "2367bcf6674c97ae9b45153da94da9e93806440d39e5749eaf75ed29dd766f1c",
+      "pdf_bytes": 2869130,
+      "pages": 18,
+      "text_file": "PUR-2024-00154_382118.txt",
+      "text_sha256": "4f384b5066eb92500d938dbe95906a10f010bdd6c5a3a1244f7a64dcc96c477b"
+    },
+    {
+      "case_number": "PUR-2024-00215",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider RPS tariff sheet and rate design workpapers supporting an approved revenue requirement of $608.7 million.",
+        "Date_Filed": "2025-08-08T00:00:00.000",
+        "DocID": 382594,
+        "FileName": "877m01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/877m01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "ef047f498f6dad61b73794f15bd8966e3444c9733a50f38490b1a12a95092e7b",
+      "pdf_bytes": 692868,
+      "pages": 6,
+      "text_file": "PUR-2024-00215_382594.txt",
+      "text_sha256": "c582bea66ea1c639542bfb2917d38c1325252f405e2799aa5b11d33c5006782a"
+    },
+    {
+      "case_number": "PUR-2023-00067",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Fuel Charge Rider A tariff sheet, which is effective for usage on and after 7/1/23.",
+        "Date_Filed": "2024-03-15T00:00:00.000",
+        "DocID": 370621,
+        "FileName": "7xz101!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7xz101%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "c44cfeb2e0936e69168384fba84db9900eb6c4b6acb2526c91778e2e79274caf",
+      "pdf_bytes": 112630,
+      "pages": 5,
+      "text_file": "PUR-2023-00067_370621.txt",
+      "text_sha256": "21a779c56bce0fdd70476308b9155383bc3bc88acc9454ab6b138c4ad3b37f3b"
+    },
+    {
+      "case_number": "PUR-2023-00101",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Errata replacement of experimental Schedule MBR tariff submitted on August 20, 2024.",
+        "Date_Filed": "2024-10-28T00:00:00.000",
+        "DocID": 376241,
+        "FileName": "82b501!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/82b501%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "4dfb653add84bedc0f8b4596a7a4c2159c410b72d6cf0048a708c5a853855be7",
+      "pdf_bytes": 21454189,
+      "pages": 43,
+      "text_file": "PUR-2023-00101_376241.txt",
+      "text_sha256": "6229c4e5403df60c89d33e1180d7be41c333c8c08f749037a4d6235871407bc2"
+    },
+    {
+      "case_number": "PUR-2023-00101",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - The Revised terms and conditions, rate schedules, and supporting workpapers. (part 4 of 4)",
+        "Date_Filed": "2024-08-20T00:00:00.000",
+        "DocID": 374487,
+        "FileName": "80yf01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80yf01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "d95159947005ed590b1805a06fab94bfbdb3d8fc0316a7a98472c18b3f804f04",
+      "pdf_bytes": 5660279,
+      "pages": 130,
+      "text_file": "PUR-2023-00101_374487.txt",
+      "text_sha256": "4d2008153227da6560227bb2f8ca8a99630321d665f6dae93dca58dc74d62c74"
+    },
+    {
+      "case_number": "PUR-2023-00101",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - The Revised terms and conditions, rate schedules, and supporting workpapers.",
+        "Date_Filed": "2024-08-20T00:00:00.000",
+        "DocID": 374486,
+        "FileName": "80y#01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80y%2301%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "58775d9ea1cdfef72c6a70974e7e9d12879f0ba2fb3a31bda079519db34781da",
+      "pdf_bytes": 2358725,
+      "pages": 41,
+      "text_file": "PUR-2023-00101_374486.txt",
+      "text_sha256": "b37c726edece168514ec9085f32609fc4e5623d86f82b74f23802c427cee9c05"
+    },
+    {
+      "case_number": "PUR-2023-00101",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - The Revised terms and conditions, rate schedules, and supporting workpapers. (part 2 of 4)",
+        "Date_Filed": "2024-08-20T00:00:00.000",
+        "DocID": 374485,
+        "FileName": "80yd01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80yd01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "3877eb8cdc1ef54bb417dd1eb43ed7f9d9ef3e43b0d8d21ad66292846beb43e2",
+      "pdf_bytes": 6329069,
+      "pages": 113,
+      "text_file": "PUR-2023-00101_374485.txt",
+      "text_sha256": "5aeeb9cfb8ed7653c2b1c45ac59950b4206f527b2691005d42be1d04be3c67b5"
+    },
+    {
+      "case_number": "PUR-2023-00101",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - The Revised terms and conditions, rate schedules, and supporting workpapers. (part 1 of 4)",
+        "Date_Filed": "2024-08-20T00:00:00.000",
+        "DocID": 374484,
+        "FileName": "80yc01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80yc01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "dd43733ac4fb9b0d778cb029e59e4bb6d8f0882d9e550b6ffeb5a120768dc80c",
+      "pdf_bytes": 11483684,
+      "pages": 230,
+      "text_file": "PUR-2023-00101_374484.txt",
+      "text_sha256": "94481bfec2ef2ddca13d2d03a525268ab76b2fdcb25ff16241d749ef1c7e4f89"
+    },
+    {
+      "case_number": "PUR-2023-00101",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - The 2023 Biennial Review Credit tariff and supporting workpapers.",
+        "Date_Filed": "2024-08-13T00:00:00.000",
+        "DocID": 374211,
+        "FileName": "80qr01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/80qr01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "ecd4aafad0e625a6904350ed8baf129c2c21f75c15e1f93dec21bf712b5a4195",
+      "pdf_bytes": 148478,
+      "pages": 6,
+      "text_file": "PUR-2023-00101_374211.txt",
+      "text_sha256": "a233af3b45fdd957fdaa4a770ca74f92ade64dbef31501e69bf9c052798495f4"
+    },
+    {
+      "case_number": "PUR-2023-00101",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Section XXII - Electric Line Extensions and Installations and Rider D - Tax Effect Recovery tariffs effective for April 1, 2024.",
+        "Date_Filed": "2024-03-08T00:00:00.000",
+        "DocID": 370290,
+        "FileName": "7xp%01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7xp%2501%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "f0aeec9afe7c7e53cf03004fcbc4a632176def0bb1bb312361bffa0a66a6e1d1",
+      "pdf_bytes": 2005205,
+      "pages": 38,
+      "text_file": "PUR-2023-00101_370290.txt",
+      "text_sha256": "1ca27a74050394e219d93caa64c677559d57a445876b135afd86a7c7b067d9be"
+    },
+    {
+      "case_number": "PUR-2023-00142",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Letter enclosing The Rider CE tariff sheet with supporting workpapers and The Rider PPA tariff sheet.",
+        "Date_Filed": "2024-04-11T00:00:00.000",
+        "DocID": 371349,
+        "FileName": "7yj901!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7yj901%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "42c0e624530e5d34adb2bbccd5c2608c3b2f0994e8e319d15242ec507351ab64",
+      "pdf_bytes": 491341,
+      "pages": 19,
+      "text_file": "PUR-2023-00142_371349.txt",
+      "text_sha256": "893f918206afd0bbd956be47bf3c08f4a80cc577f41b48f12e5927a0dbd3b526"
+    },
+    {
+      "case_number": "PUR-2024-00088",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Letter enclosing Rider RGGI tariff effective for usage on and after July 12, 2024.",
+        "Date_Filed": "2024-07-03T00:00:00.000",
+        "DocID": 373272,
+        "FileName": "800_01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/800_01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "3c0a046b5172930fcd02e236345f645c9ba55fd08c4ffdcfe94ef430afc927b7",
+      "pdf_bytes": 107328,
+      "pages": 5,
+      "text_file": "PUR-2024-00088_373272.txt",
+      "text_sha256": "184ba7f131c2cff03b812da0838e42f3cf699441eebc9f157c7f3e538194bf47"
+    },
+    {
+      "case_number": "PUR-2025-00063",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider CCR rate design workpapers supporting a revenue requirement of $165,962,219; and Revised Rider CCR tariff sheet, to become effective January 1, 2026.",
+        "Date_Filed": "2025-12-08T00:00:00.000",
+        "DocID": 385644,
+        "FileName": "89kc01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/89kc01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "e00a453bf9ac8b16d916fbfe8daba6f48f15db579a0352ee4fe1f3d443ca1238",
+      "pdf_bytes": 635666,
+      "pages": 6,
+      "text_file": "PUR-2025-00063_385644.txt",
+      "text_sha256": "a854d25a3d1e8d388e201b579f34a1d0a7363b91664817a346f5b651fb036679"
+    },
+    {
+      "case_number": "PUR-2023-00184",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider RBB tariff supporting a revenue requirement totaling $17.535 million; and Rider RBB Rate Design workpapers.",
+        "Date_Filed": "2024-04-05T00:00:00.000",
+        "DocID": 371285,
+        "FileName": "7yhh01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7yhh01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "2edcb3758ec0198b472a6e6c3af9280ff60ab3bf0c92df9b28c90a3c16fdf4e8",
+      "pdf_bytes": 364350,
+      "pages": 16,
+      "text_file": "PUR-2023-00184_371285.txt",
+      "text_sha256": "abc921fb2c5df197ecb93877d2ae7c0735629507f854a38926801d052fbe3470"
+    },
+    {
+      "case_number": "PUR-2025-00164",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Revised Rider SNA tariff sheet and workpapers supporting a revenue requirement of $232,768,323 to be effective for usage on and after 09/01/2026.",
+        "Date_Filed": "2026-07-21T00:00:00.000",
+        "DocID": 390846,
+        "FileName": "8dk%01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dk%2501%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "876948af209d22c877fff035afecb0fe6dfc2fbf4d9e3fccb34f36fd37fa47ba",
+      "pdf_bytes": 3290289,
+      "pages": 18,
+      "text_file": "PUR-2025-00164_390846.txt",
+      "text_sha256": "c6d8ff7af6e61733e9d5772ec638d1a78f17e80eb96394adb6cf753578554a90"
+    },
+    {
+      "case_number": "PUR-2025-00076",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider T1 tariff sheet and rate design workpapers supporting an approved Rider T1 revenue requirement of $782,419,277. The Rider T1 tariff sheet will become effective for usage on and after 9/1/25.",
+        "Date_Filed": "2025-08-07T00:00:00.000",
+        "DocID": 382537,
+        "FileName": "876101!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/876101%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "58d1e8b08ddd08a9c49a973140f2e4013cd1be8beb35e55f11124348503b3de6",
+      "pdf_bytes": 2860196,
+      "pages": 16,
+      "text_file": "PUR-2025-00076_382537.txt",
+      "text_sha256": "2864e57159cc5ebe03e56759ddd3f6543fe02112ce48395118f4ca3167433cef"
+    },
+    {
+      "case_number": "PUR-2025-00136",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider DIST \u2013 Distribution Facilities Projects tariff sheet, withdrawn Rider RBB \u2013 Rural Broadband Pilot Projects tariff sheet, and supporting workpapers.",
+        "Date_Filed": "2026-05-13T00:00:00.000",
+        "DocID": 389025,
+        "FileName": "8c6901!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8c6901%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "ef9729f4070a2bb652cbe7707bad57f95c03c4715bb979112e00330f73837d11",
+      "pdf_bytes": 4002046,
+      "pages": 20,
+      "text_file": "PUR-2025-00136_389025.txt",
+      "text_sha256": "489083bfb4fe8cd36afd5f89f8ed8935cd71b1e6b89340b4af4a8bb10d6c3a50"
+    },
+    {
+      "unavailable": true,
+      "case_number": "PUR-2025-00148",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider CE \u2013 Clean Energy Projects and Power Purchase Agreements - tariff sheet and supporting workpapers.",
+        "Date_Filed": "2026-04-16T00:00:00.000",
+        "DocID": 388453,
+        "FileName": "8bqd01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8bqd01%21.PDF",
+      "error": "404 Client Error: Not Found for url: https://www.scc.virginia.gov/docketsearch/DOCS/8bqd01%21.PDF"
+    },
+    {
+      "case_number": "PUR-2024-00029",
+      "document": {
+        "Document_Name": "Virginia Electric & Power Co. - Letter Enclosing Rider CCR Tariff Effective for Usage on and After 12/1/24 and Rider CCR Rate Design Workpapers.",
+        "Date_Filed": "2024-11-07T00:00:00.000",
+        "DocID": 376438,
+        "FileName": "82gm01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/82gm01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "315df4e690673db84d159f6d945177f28dffdb6634e42cc531e08713c306c838",
+      "pdf_bytes": 1005911,
+      "pages": 6,
+      "text_file": "PUR-2024-00029_376438.txt",
+      "text_sha256": "f918a3b93729c96c5013133d4f6e9b8c897b83f7fc6ee1bd06325512f4577731"
+    },
+    {
+      "case_number": "PUR-2025-00196",
+      "document": {
+        "Document_Name": "Virginia Electric and Power Company - Rider SMR tariff sheet and workpapers supporting a revenue requirement of $9.01 million for service rendered from 09/01/2026 through 08/31/2027.",
+        "Date_Filed": "2026-07-27T00:00:00.000",
+        "DocID": 390963,
+        "FileName": "8d_301!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d_301%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "9c149fad81b5bfcb2f1a34acb3dd9cea80e43e84057bd9f9e124de3896dd5619",
+      "pdf_bytes": 3115587,
+      "pages": 18,
+      "text_file": "PUR-2025-00196_390963.txt",
+      "text_sha256": "52b8887655d03d20be3c0cab146f8747731a2296bea8a9619d5c93f17559147d"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "2",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Revised Table of Contents, which reflects the Deferred Fuel Cost Charge tariff sheet's 08/01/2026 effective date.",
+        "Date_Filed": "2026-07-29T00:00:00.000",
+        "DocID": 391038,
+        "FileName": "8dq601!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dq601%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "a5412f474e558ea0f7294a250712df4d450e6160c090aba9b243dab49947e7bd",
+      "pdf_bytes": 1924673,
+      "pages": 11,
+      "text_file": "PUR-2023-00112_391038.txt",
+      "text_sha256": "76afe499eadfbffac2bff9a82c136f83f7ff6a8ec7c482cc46b3eefccef67024"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "4",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Semi-Annual True-Up Adjustment.",
+        "Date_Filed": "2026-06-15T00:00:00.000",
+        "DocID": 389882,
+        "FileName": "8c%201!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8c%25201%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "3541220ec4caeff716de5b7841d23efd1a5721f74eb85f31a1447380a652f3e1",
+      "pdf_bytes": 2754615,
+      "pages": 42,
+      "text_file": "PUR-2023-00112_389882.txt",
+      "text_sha256": "7ba3a582998f8e74c83a029986ad73d5f74cef34a59cc36968e3ec0ab6fd7481"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "7",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Revised Table of Contents, which reflects the February 1, 2026 effective date for the Deferred Fuel Cost Charge tariff.",
+        "Date_Filed": "2026-01-28T00:00:00.000",
+        "DocID": 386522,
+        "FileName": "8@8q01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/8%408q01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "b69fb1921ac2837aa73cb2435732cf5ac6d5eee2cb28d167cb7191e2ae7fca79",
+      "pdf_bytes": 1915624,
+      "pages": 11,
+      "text_file": "PUR-2023-00112_386522.txt",
+      "text_sha256": "752b01ca35f65d401df252c0d35975afd4476737887c8c05cac6349a4a1d97b9"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "9",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Semi-Annual True-up Adjustment Filing.",
+        "Date_Filed": "2025-12-15T00:00:00.000",
+        "DocID": 385769,
+        "FileName": "89nt01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/89nt01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "61b1ad69d4541ce48a53907a7315506ee590c626339ba58cd65e03185987ecff",
+      "pdf_bytes": 3164268,
+      "pages": 32,
+      "text_file": "PUR-2023-00112_385769.txt",
+      "text_sha256": "0c9aa4d3f07211d911eed6da6ebb9b4a0b3fdbeaa82c9d25f7b039d63e458782"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "11",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Revised Table of Contents, which reflects the August 1, 2025 effective date for the Deferred Fuel Cost Charge tariff.",
+        "Date_Filed": "2025-07-25T00:00:00.000",
+        "DocID": 382270,
+        "FileName": "86ym01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/86ym01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "865a18be005a1285ff0060c96745daa630c201c789caca0871413dafe6d486f9",
+      "pdf_bytes": 1697358,
+      "pages": 11,
+      "text_file": "PUR-2023-00112_382270.txt",
+      "text_sha256": "4ea9b041a863ef4c0e8edb08552384eff865c39d1dc92d5949a157be7b103631"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "13",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Semi-Annual True-up Adjustment.",
+        "Date_Filed": "2025-06-13T00:00:00.000",
+        "DocID": 381286,
+        "FileName": "867@01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/867%4001%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "826a86f8fb5b60350070ce06504b97ddb035bbc2bd734ab5120dee6b8eef7d83",
+      "pdf_bytes": 1943965,
+      "pages": 26,
+      "text_file": "PUR-2023-00112_381286.txt",
+      "text_sha256": "b3da63c3cd501d2dd88d08c391094b189d6062bac881cc5d08d90dfb63691b20"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "16",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Semi-Annual True-up Adjustment.",
+        "Date_Filed": "2024-12-13T00:00:00.000",
+        "DocID": 377195,
+        "FileName": "831n01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/831n01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "a6462969ec8f62bcd3de6e6cd973b3db735173d3a6dbed0133873d232a81018d",
+      "pdf_bytes": 4260220,
+      "pages": 19,
+      "text_file": "PUR-2023-00112_377195.txt",
+      "text_sha256": "ed24d2a3f2bad2d6116ca85e17105a00715451af49a2e12854d36e103035a38f"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "18",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Semi-Annual True-up Adjustment.",
+        "Date_Filed": "2024-06-14T00:00:00.000",
+        "DocID": 372931,
+        "FileName": "7zr701!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7zr701%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "735ab5bdcd5cc1929b1346acc2350076fa19a0b2d7da440dac57910a948a6041",
+      "pdf_bytes": 620850,
+      "pages": 14,
+      "text_file": "PUR-2023-00112_372931.txt",
+      "text_sha256": "4a77758750045ad458bfb25e91a2b354850423f03f14f61c2be23cc308abb1ea"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "20",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - New tariff sheet to reflect the updated tariff for the Deferred Fuel Cost Charges in both clean & redline version.",
+        "Date_Filed": "2024-06-04T00:00:00.000",
+        "DocID": 372718,
+        "FileName": "7zl@01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7zl%4001%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "7a1818d647a9d435e3f21947a7867cdad2a59ecc5f070d924a2b9cd4cc1d0888",
+      "pdf_bytes": 229393,
+      "pages": 6,
+      "text_file": "PUR-2023-00112_372718.txt",
+      "text_sha256": "8dbd0a96f65705da4be0f37a170014be868d6503565b5939bcb44e1853d12870"
+    },
+    {
+      "case_number": "PUR-2023-00112",
+      "document": {
+        "$id": "23",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - Deferred Fuel Cost Charge (\"DFCC\") tariff and supporting workpapers, effective for usage on and after 3/1/2024.",
+        "Date_Filed": "2024-02-08T00:00:00.000",
+        "DocID": 369561,
+        "FileName": "7x5l01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/7x5l01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "cc27505eecd2dad6dadd25c232d3b6c1c0ff9007f4dac5554f65c94132dad274",
+      "pdf_bytes": 140422,
+      "pages": 6,
+      "text_file": "PUR-2023-00112_369561.txt",
+      "text_sha256": "59ef4b58b2115f5881dad2506fdba775780681a86a7b7b00d3743fa5ca28eb0d"
+    },
+    {
+      "case_number": "PUR-2024-00081",
+      "document": {
+        "$id": "6",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric & Power Company - Rider PIPP, Table of Contents, & Exhibits for Applicable Riders tariff sheets.",
+        "Date_Filed": "2024-10-16T00:00:00.000",
+        "DocID": 375867,
+        "FileName": "820r01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/820r01%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "fda1a143a79106c91d40f18616439f69630f5c735c5da198b8fa6421938918c9",
+      "pdf_bytes": 7562618,
+      "pages": 21,
+      "text_file": "PUR-2024-00081_375867.txt",
+      "text_sha256": "2681a742fc64870031094d318c2a60c550f0d18a8dd974a8803a5662db236a89"
+    },
+    {
+      "case_number": "PUR-2024-00157",
+      "document": {
+        "$id": "4",
+        "$type": "_IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA[[System.String, mscorlib],[System.Nullable`1[[System.DateTime, mscorlib]], mscorlib],[System.Nullable`1[[System.Int32, mscorlib]], mscorlib],[System.String, mscorlib]], _IB_nZnmmVj_pbfRO3h7cswwiS_pofnfA_IdeaBlade",
+        "Document_Name": "Virginia Electric and Power Company - New Schedule GS-3 EV tariff sheet;\rRevised Deferred Fuel Cost Charge tariff sheet to include Schedule GS-3 EV; Revised Riders A, C1A, C2A, C4A, CCR, CE, E, G, GT, OSW, PIPP, RBB, RGGI, RPS,",
+        "Date_Filed": "2025-03-04T00:00:00.000",
+        "DocID": 378662,
+        "FileName": "846#01!.PDF"
+      },
+      "source_url": "https://www.scc.virginia.gov/docketsearch/DOCS/846%2301%21.PDF",
+      "retrieved_on": "2026-10-15",
+      "pdf_sha256": "cbe4f28009f4b2b6731635a86afc7bf23cf0378158fbcbf2e439e194a104f7f5",
+      "pdf_bytes": 28950310,
+      "pages": 71,
+      "text_file": "PUR-2024-00157_378662.txt",
+      "text_sha256": "9f2d17fdf871f101176ef112c72f5940920797218aabe3b6aa3ebc41eb54a80c"
+    }
+  ]
+}

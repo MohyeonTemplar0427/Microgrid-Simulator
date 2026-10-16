@@ -105,6 +105,9 @@ def number(value, label, minimum=0, maximum=None):
 
 def validate_request(data):
     """Reject unknown fields and unsupported versions rather than dropping inputs."""
+    if isinstance(data, dict) and type(data.get("schema_version")) is int and data["schema_version"] == 11:
+        from .regional_study import validate
+        return validate(data)
     if isinstance(data, dict) and type(data.get("schema_version")) is int and data["schema_version"] == 10:
         from .comed_simulation import validate
         return validate(data)

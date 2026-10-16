@@ -1,0 +1,2455 @@
+PAGE 1
+PUR-2023-00101Case Number (if already assigned)
+Case Name (if known)
+APTFDocument Type
+Document Description Summary
+Total Number of Pages 37
+30043Submission ID
+3/8/2024 10:49:36AMeFiling Date Stamp
+Application of Virginia Electric and Power Company 
+For a 2023 biennial review of the rates, terms and 
+conditions for the provision of generation, distribution 
+and transmission services pursuant to § 56-585.1 A of 
+the Code of Virginia
+Revised Section XXII - Electric Line Extensions and 
+Installations and Rider D - Tax Effect Recovery tariffs 
+effective for April 1, 2024.
+Virginia State Corporation Commission 
+eFiling CASE Document Cover Sheet
+&
+
+
+PAGE 2
+BY ELECTRONIC DELIVERY
+March 8, 2024
+Dear Mr. Logan:
+If you have any questions related to this filing, please contact Michele Grant at (804) 513-8623.
+Sincerely, 
+/s/LisaR. Crabtree
+Enclosures
+cc:
+Lisa R. Crabtree 
+Senior Counsel
+Dominion Energy Services, Inc.
+Law Department
+120 Tredegar Street, Richmond, VA 23219 
+DominionEnergy.com
+Lisa R. Crabtree
+Senior Counsel
+Direct: (804) 819-2612; Facsimile: (804) 819-2183 
+Email: lisa.r.crabtree@dominionenergv.com
+On February 28, 2024, the State Corporation of Commission (“Commission”) issued its Final 
+Order in Case No. PUR-2023-00101, which approved and adopted a Proposed Stipulation and 
+Recommendation (“Stipulation”) relating to the application, direct testimony, exhibits and 
+schedules filed by Virginia Electric and Power Company in support of its 2023 biennial review 
+application. Pursuant to Ordering Paragraph No. 3 of the Final Order and Paragraph Nos. 15 and 
+18 of the Stipulation, enclosed for filing in the above-referenced proceeding are the revised Section 
+XXII - Electric Line Extensions and Installations and Rider D - Tax Effect Recovery tariffs 
+effective for April 1,2024.
+William H. Chambliss, Esq.
+Kimberly B. Pate
+Ruben Blevins
+Application of Virginia Electric and. Power Company 
+For a 2023 biennial review of the rates, terms and conditions 
+for the provision of generation, distribution and transmission services 
+pursuant to § 56-585.1 A of the Code of Virginia 
+Case No. PUR-2023-00101
+&
+yn)
+Mr. Bernard J. Logan, Clerk
+Document Control Center
+State Corporation Commission of Virginia
+Tyler Building - First Floor
+1300 East Main Street
+Richmond, Virginia 23219
+Dominion
+Energy-
+
+
+PAGE 3
+Section XXII.
+Electric Line Extensions 
+and Installations
+(Clean and Redline Versions)
+M
+(gj
+(§8
+
+
+PAGE 4
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS
+The following definitions apply to terms used in this Section XX1LA.
+7. Conversion - The replacement of overhead facilities with underground facilities 
+in essentially the same area.
+5. Bulk Feeder - A three-phase main feeder circuit with an ampacity greater than 
+200 Amperes that is required to serve a general area, or large load(s).
+8. Nonresidential Development - For nonresidential Customers, a recorded 
+development of multiple contiguous properties comprised of at least four 
+building sites.
+6. Company’s Preferred Route - The route required by the Company to meet the 
+Company’s obligation of providing reliable Electric Service at a reasonable 
+cost. The route selected will factor in accessibility, location of equipment, and 
+the economics of the installation while using the Company’s standard 
+engineering practices.
+4. Branch Feeder - Facilities installed on the property of the Customer or 
+developer (only includes property within the recorded development) requesting 
+Electric Delivery Service.
+Filed 03-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+1. Adequate - Facilities that have the capacity to serve the Customer’s load at the 
+existing service characteristics (i.e. voltage, single-phase or three-phase, wye 
+or delta). Facilities are considered inadequate when their capacity is not 
+sufficient to serve the load at the existing service characteristics.
+2. Adjacent - Contiguous to Public Right-of-Way. The Company reserves the 
+right to have final determination on the placement of the facilities.
+3. Approach Lines - Facilities installed from an existing source to the property of 
+the customer or developer requesting Electric Delivery Service.
+9. Permanent Residence - A single unit, providing complete and independent 
+living facilities for one or more persons, including permanent provisions for 
+sleeping, cooking, and sanitation.
+10. Public Right-of-Way - Publicly owned and/or maintained streets, roads and 
+highways.
+11. Residential Development - For detached single-family homes, a recorded 
+development of multiple contiguous properties comprised of at least four new 
+residences. For garden-type homes, apartments, condominiums, and town 
+homes a recorded development comprised of at least four new residences and 
+an average density of not less than four new residences per acre.
+
+
+PAGE 5
+XXn. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+B.
+12. Transitional Cost - The amount by which the estimated cost of providing 
+underground facilities exceeds the estimated cost of providing comparable 
+overhead facilities along the Company’s Preferred Route (switches, pads, 
+terminals, etc. required for this installation will be included in the comparison). 
+This cost difference in no event will be less than zero.
+d. Should a road/street crossing be necessary immediately preceding a Branch 
+Feeder, the Company will install a single-phase primary and secondary 
+Approach Line across such road/street underground at no charge to the 
+customer when the crossing is 75’ or less. If the crossing is greater than 75’, 
+and the customer requests, or is required, to install underground, the 
+Customer will pay the Company the amount by which the estimated cost of 
+providing the entire crossing of underground facilities exceeds the 
+estimated cost of providing 75’ of underground facilities.
+Filed 03-08-24
+Electric-Virginia
+New Residential - Single-Phase Not Within a Residential Development Contracted 
+to be Served Underground
+The Company will provide single-phase Electric Service to a Permanent Residence 
+not previously provided with Electric Service, and not located within an area designated 
+by the Company as an Underground Distribution Area, in accordance with the provisions 
+stated herein.
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+1. Primary Approach Lines located on or Adjacent to Public Rights-of-Way 
+normally will be installed overhead at no cost to the Customer.
+a. Should the Customer request or be required to install primary Approach 
+Line facilities located on or Adjacent to Public Rights-of-Way underground, 
+a payment equal to the Transitional Cost will be required.
+b. Secondary Approach Lines (600 Volts or less) located on or Adjacent to 
+Public Rights-of-Way will be installed underground at no charge to the 
+Customer if the Company deems the composition of the land where 
+facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation.
+c. Single-phase Approach Lines not located on or Adjacent to Public Rights- 
+of-Way normally will be installed underground at no charge to the 
+Customer, if the Company deems the composition of the land where 
+facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation. 
+The Company reserves the right to determine the operational feasibility and 
+effectiveness of this installation.
+©©
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+
+
+PAGE 6
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+a.
+C.
+4. In reference to installations in 1. and 2., above, should the Customer request 
+underground facilities when the composition of the land is such that normal 
+trenching cannot be used, then the Customer will pay the Company the amount 
+by which the estimated cost of providing underground facilities exceeds the 
+estimated cost of providing normal trenching, or receive overhead installation 
+at no charge.
+c. Branch Feeders installed on or Adjacent to Public Rights-of-Way that 
+cannot, or will not, be utilized to serve future customers will be installed 
+underground at no charge to the Customer, if the Company deems the 
+composition of the land where facilities are to be installed is such that the 
+Company’s standard underground trenching can be used to complete the 
+installation.
+b. Branch Feeders installed on or Adjacent to Public Rights-of-Way that can 
+or will be utilized to serve future customers will be installed overhead at no 
+charge to the Customer. Should the Customer request or be required to 
+install these facilities underground, a payment equal to the Transitional Cost 
+will be required.
+Filed 03-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+3. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the difference in 
+the estimated installed cost of the Company ’s Preferred Route and the agreed 
+upon route will be required. This cost difference in no event will be less than 
+zero.
+New Residential Development
+The Company will provide Electric Service to individually metered Permanent 
+Residences and or residential units within a Residential Development not previously 
+provided with Electric Service, and not located within an area designated by the Company 
+as an Underground Distribution Area, in accordance with the provisions stated herein.
+&
+kS
+<Sj
+@0
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+2. Branch Feeder facilities will be installed in accordance with the following:
+Branch Feeder facilities not located on or Adjacent to Public Rights-of-Way 
+normally will be installed underground at no charge to the Customer, if the 
+Company deems the composition of the land where facilities are to be 
+installed is such that the Company’s standard underground trenching 
+equipment can be used to complete the installation. The Company reserves 
+the right to determine the operational feasibility and effectiveness of this 
+installation.
+
+
+PAGE 7
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+i®
+Filed 03-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+1. Approach Lines normally will be installed overhead at no cost to the 
+Customer/Developer.
+a. Should the Customer/Developer request or be required to install Approach 
+Line facilities located on or Adjacent to Public Rights-of-Way underground, 
+a payment equal to the Transitional Cost will be required.
+b. Single-phase Approach Lines not located on or Adjacent to Public Rights- 
+of-Way normally will be installed underground at no charge to the 
+Customer/Developer if the Company deems the composition of the land 
+where facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation. 
+The Company reserves the right to determine the operational feasibility and 
+effectiveness of this installation.
+c. Should a road/street crossing be necessary immediately preceding a Branch 
+Feeder, the Company will install a single-phase primary and secondary 
+Approach Line across such road/street underground at no charge to the 
+customer when the crossing is 75’ or less. If the crossing is greater than 75’, 
+and the customer requests, or is required, to install underground, the 
+Customer will pay the Company the amount by which the estimated cost of 
+providing the entire crossing of underground facilities exceeds the 
+estimated cost of providing 75’ of underground facilities.
+2. Branch Feeder facilities installed on or Adjacent to Public Rights-of-Way (not 
+located within the Residential Development) that can or will be utilized to serve 
+future customers located outside the Residential Development will be installed 
+overhead. Should the Customer/Developer request or be required to install these 
+Branch Feeder facilities underground, and the Company deems it to be 
+operationally feasible, a payment equal to the Transitional Cost will be required.
+3. Branch Feeder facilities not defined in Paragraph C.2., above, will be installed 
+underground within the Residential Development (including Bulk Feeder) 
+along the Company’s Preferred Route at no charge to the Customer/Developer 
+when all the criteria below are met.
+a. The Customer/Developer, at the Customer/Developer’s own expense, 
+installs Company provided conduit, at locations specified by the Company, 
+within the new Residential Development. This is to include road crossings, 
+driveways, obstructions, etc. (If a Duct Bank/Conduit System installation is 
+required or requested, it will be installed in accordance with Paragraph V., 
+below).
+b. There is no residence and or residential unit with electric motors rated at 15 
+horsepower or more.
+c. The Customer/Developer executes an Underground Agreement and/or all 
+required easements before any lots or units in the development are sold.
+
+
+PAGE 8
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXIL ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+D. New Non-residential and New Residential Three-Phase Service
+6. If the Customer/Developer does not meet all the criteria in this Paragraph C.3., 
+above, overhead facilities will be provided at no charge utilizing the Company’s 
+Preferred Route.
+d. The Customer/Developer cuts and clears the Right-of-Way to Company 
+specifications.
+5. In reference to installations in this Paragraph C., above, when the composition 
+of the land is such that normal trenching equipment cannot be used, then the 
+Customer/Developer will pay the Company the amount by which the estimated 
+cost of providing underground facilities exceeds the estimated cost of providing 
+normal trenching.
+4. If the Customer/Developer requests or is required to install Branch Feeder 
+facilities not utilizing the Company’s Preferred Route, a payment equal to the 
+difference in the estimated installed cost of the Company’s Preferred Route and 
+the agreed upon route will be required. This cost difference in no event will be 
+less than zero.
+Filed 03-08-24
+Electric-Virginia
+U=i
+e. The delivery characteristics requested at each residential unit is single­
+phase 120/240 Volt.
+2. Primary Approach Lines located on or Adjacent to Public Rights-of-Way and 
+all multi-phase Approach Lines normally will be installed overhead along the 
+Company’s Preferred Route.
+The Company will provide Electric Service, to individually metered permanent 
+non-residential units (including garages, tool sheds, swimming pool pumps, well pumps, 
+etc.), or individually metered three-phase detached single-family residential homes not 
+previously provided with Electric Service, and not located within an area designated by the 
+Company as an Underground Distribution Area, in accordance with the provisions stated 
+herein.
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+1. The Customer will pay the Company the amount, if any, by which the cost 
+contained in Paragraphs D.2., D.3., D.5., D.7.a., D.7.b., D.7.C., D.7.d., and 
+D.7.e. exceeds four times the continuing estimated annual revenue - less fuel 
+charge revenue - that can reasonably be expected.
+
+
+PAGE 9
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+Filed 03-08-24
+Electric-Virginia
+&
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+3. Secondary Approach Lines (600 Volts or less) located on or Adjacent to Public 
+Rights-of-Way will be installed underground if the Company deems the 
+composition of the land where facilities are to be installed is such that the 
+Company’s standard underground trenching equipment can be used to complete 
+the installation.
+4. Should the Customer request or be required to install underground Approach 
+Line facilities defined in Paragraph D.2., above, a payment equal to the 
+Transitional Cost will be required for facilities located on or Adjacent to Public 
+Rights-of-Way, or any multi-phase extension.
+5. Single-phase Approach Lines not located on or Adjacent to Public Rights-of- 
+Way normally will be installed underground if the Company deems the 
+composition of the land where facilities are to be installed is such that the 
+Company’s standard underground trenching equipment can be used to complete 
+the installation; otherwise, overhead facilities will be installed. The Company 
+reserves the right to determine the operational feasibility and effectiveness of 
+these installations.
+6. Should a road/street crossing be necessary immediately preceding a Branch 
+Feeder, the Company will install a single-phase primary and secondary 
+Approach Line across such road/street underground at no charge to the 
+customer when the crossing is 75’ or less. If the crossing is greater than 75’, 
+and the customer requests, or is required, to install underground, the Customer 
+will pay the Company the amount by which the estimated cost of providing the 
+entire crossing of underground facilities exceeds the estimated cost of providing 
+75’ of underground facilities.
+7. Branch Feeder facilities will be installed in accordance with the following:
+a. Branch Feeder facilities with a rated voltage greater than 50 kV will be 
+installed overhead.
+b. Branch Feeder facilities located on or Adjacent to Public Rights-of-Way 
+installed to serve individually metered nonresidential Customers not located 
+within a Nonresidential Development, or individually metered residential 
+three-phase Customers will be installed overhead.
+c. Branch Feeder facilities within a Nonresidential Development located on or 
+Adjacent to Public Rights-of-Way, and that can or will be utilized to serve 
+future customers located outside the development, will be installed 
+overhead.
+d. Branch Feeder facilities where Bulk Feeder is not required and not defined 
+in Paragraphs D.7.a., D.7.b., and D.7.C., above, normally will be installed 
+underground if the Company deems the composition of the land where 
+facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation. 
+Otherwise, overhead facilities will be installed. The Company reserves the 
+right to determine the operational feasibility and effectiveness of this 
+installation.
+
+
+PAGE 10
+E.
+1.
+•1 '•
+Filed 03-08-24
+Electric-Virginia
+3. Should the Customer request or be required to install Approach Line facilities 
+underground, a payment equal to the Transitional Cost will be required.
+&
+kJ
+08
+(Continued)
+Superseding Filing Effective 01-01 -22.
+This Filing Effective 04-01-24.
+The Company will provide three-phase electric facilities to serve individually 
+metered residential units (garden-type homes5 apartments, condominiums, and town 
+homes) within a Residential Development not previously provided with Electric Service, 
+and not located within an area designated by the Company as an Underground Distribution 
+Area, in accordance with the provisions stated herein.
+XXU. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+e. Branch Feeder facilities wherein Bulk Feeder is required will normally be 
+installed overhead.
+f. Should the Customer request or be required to install underground Branch 
+Feeder facilities defined in Paragraphs D.7.a., D.7.b., and D.7.C., above, a 
+payment equal to the Transitional Cost will be required.
+g. Should the Customer request or be required to install Bulk Feeder 
+underground, a payment equal to the Transitional Cost will be required.
+8. When the Company deems the composition of the land is such that normal 
+trenching cannot be used, then the Customer will pay the Company the amount 
+by which the estimated cost of providing underground facilities exceeds the 
+estimated cost of providing such underground facilities with normal trenching.
+9. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the difference in the
+estimated installed cost of the Company’s Preferred Route and the agreed upon 
+route will be required. This cost difference in no event will be less than zero.
+New Residential Development Three Phase Service
+The Customer will receive a credit of four times the anticipated annual revenue, 
+excluding fuel charge revenue, per metered unit, which will be applied to the 
+applicable charges, if any, contained in Paragraphs E.2., E.4., and E.6.
+2. Approach Lines will normally be installed overhead along the Company’s 
+Preferred Route.
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+
+
+PAGE 11
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+F.
+Filed 03-08-24
+Electric-Virginia
+4. Branch Feeder facilities installed on or Adjacent to Public Rights-of-Way that 
+can or will be utilized to serve future customers located outside the Residential 
+Development will be installed overhead.
+5. Should the Customer request or be required to install these Branch Feeder 
+facilities underground, as defined in Paragraph E.4., above, a payment equal to 
+the Transitional Cost will be required.
+6. Branch Feeder facilities not defined in Paragraph E.4., above, will be installed 
+underground within the development along the Company’s Preferred Route 
+upon execution of an Underground Agreement and provided all required 
+easements are executed before any lots or units in the Residential Development 
+are sold.
+7. If the Company deems the composition of the land is such that normal trenching 
+cannot be used to install Branch Feeder facilities, the Customer will pay the 
+Company the amount by which the cost of providing estimated underground 
+facilities exceeds the estimated cost of providing normal trenching, or the 
+facilities will be installed overhead.
+&
+8. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the estimated 
+difference in the cost of the facilities utilizing the Company’s Preferred Route 
+versus the cost of the facilities utilizing the agreed upon route will be required. 
+This cost difference in no event will be less than zero. The Company reserves 
+the right to have final determination of location of facilities.
+1. Residential (not located within an area designated by the Company as an 
+Underground Distribution Area)
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01 -24.
+a. The Company will provide Electric Service to previously served 
+individually metered Permanent Residences in accordance with the 
+provisions stated herein.
+b. The Company will replace inadequate overhead facilities with adequate 
+overhead facilities at no cost to the Customer.
+9. Customers who do not qualify for service in accordance with the provisions of 
+this paragraph will be served in accordance with Paragraph D.
+Service Upgrades
+
+
+PAGE 12
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+2. Non-residential (not located within an area designated by the Company as an 
+Underground Distribution Area)
+c. The Company will replace inadequate underground facilities with adequate 
+underground facilities at no cost to the Customer, except as otherwise 
+provided in this subparagraph. When the Company deems the composition 
+of the land is such that normal trenching cannot be used, then the Customer 
+will pay the Company the amount by which the estimated cost of providing 
+underground facilities exceeds the estimated cost of providing normal 
+trenching. If the Customer requests or is required to install Branch Feeder 
+facilities not utilizing the Company’s Preferred Route, a payment equal to 
+the difference in the estimated initial installed cost of facilities in the 
+Company’s Preferred Route versus the estimated installation cost of 
+facilities in the agreed upon route will be required. This cost difference will 
+in no event be less than zero.
+c. The incremental revenue credit can also be applied to the estimated cost of 
+the removal of existing facilities that are being replaced with new facilities 
+as part of the upgrade. The total incremental revenue credit applied to a 
+nonresidential upgrade will not exceed four years.
+a. The Company will provide new facilities required to provide Electric 
+Service to previously served individually metered non-residential 
+Customers in accordance with Paragraph D.
+Filed 03-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+d. When the Company deems the composition of the land is such that normal 
+trenching equipment cannot be used then the Customer will pay the 
+Company the amount by which the estimated cost of providing underground 
+facilities exceeds the estimated cost of providing normal trenching.
+b. The estimated annual revenue credit in D.l will only include the 
+incremental continuing estimated annual revenue, less fuel charge revenue, 
+that can reasonably be expected. Incremental estimated revenue is defined 
+as the revenue associated with the additional usage that will be added after 
+the Company’s facilities are upgraded.
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+HT-J
+
+
+PAGE 13
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+G. Conversions
+Three-Phase Service Qualification:H.
+e. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the difference 
+in the estimated initial installed cost of the Company’s Preferred Route and 
+the agreed upon route will be required. This cost difference in no event will 
+be less than zero, and revenue, if any, will not be applied to this charge.
+Filed 03-08-24
+Electric-Virginia
+3. When a Customer requests the Company to convert existing overhead primary 
+facilities (greater than 600 Volts) to underground, the Customer will pay The 
+Company the estimated removal cost of the overhead primary facilities, less 
+salvage, plus the estimated installation cost of the underground facilities,
+1. When a Customer requests the Company to convert existing adequate overhead 
+secondary facilities to underground, such service will be furnished, provided 
+the Customer pays to the Company an amount equal to the estimated cost of 
+removing the adequate secondary overhead facilities, plus the charges, if any, 
+specified in the applicable paragraph for new service, above.
+2. When a Customer requests the Company to convert existing inadequate 
+overhead secondary facilities to underground, such service will be furnished, in 
+accordance with the applicable paragraphs for new service above. There will be 
+no charge for the removal of the inadequate overhead secondary facilities.
+The Company will provide three-phase service in accordance with the provisions 
+of the applicable paragraphs, above, to Customers having one three-phase motor larger than 
+five horsepower, or to a single metered Customer having multiple three-phase motors which 
+total at least 15 horsepower, provided the motors are properly sized for their expected use, 
+or to a single metered Customer having 50 kilowatts or more of lighting load. Customers 
+that request three-phase service but do not meet the foregoing minimums may receive three- 
+phase service upon payment of the amount, if any, by which the estimated cost of 
+constructing a three-phase extension exceeds the estimated cost of constructing a single­
+phase extension with capacity to serve the same kilovolt-ampere load. This charge shall be 
+in addition to any other charges normally applicable for a single-phase extension.
+(Continued)
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+
+
+PAGE 14
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+I.
+J.
+K.
+L.
+M.
+N.
+O.
+The Company shall not be required to make any electric delivery installations on 
+private property until the property owner shall have granted to the Company an easement 
+of Right-of-Way for the construction, operation and maintenance of such electric delivery 
+installation.
+W
+@3
+ILR
+The Company shall not be required to make any electric Line Extension until the 
+Customer or Customers to be supplied from such Line Extension have signed all applicable 
+applications or agreements, and fulfilled such other conditions for the connection to the 
+Company’s facilities and for receiving the Electric Service as may be required by the 
+Company, and until all premises to be supplied have been wired and made ready for 
+service.
+The Customer may be required to secure Rights-of-Way on private property 
+without cost to the Company, or to assist the Company in obtaining Rights-of-Way.
+Whenever it is determined that an electric delivery installation on private property 
+to serve one Customer will be built by the Customer, such installation (1) shall start within 
+100 feet of the Company's line, (2) shall be constructed in compliance with the Company's 
+standards and be approved by the Company, (3) shall be maintained by the Customer at all 
+times in a manner satisfactory to the Company, and (4) the Customer shall assume the 
+liability for the maintenance and operation of the line. If the line owned by the Customer 
+is not operated and maintained in a manner satisfactory to the Company, or, in the 
+Company's opinion, may interfere with or be detrimental to the Company’s facilities or to 
+the provision of Electric Service by the Company to any other Customer, then the Company 
+may discontinue Electric Service as provided in Section XVI—Discontinuance of Electric 
+Service. After such discontinuance the supply will not be restored until conditions are 
+made satisfactory to the Company as provided in Section 111 - Inspection and in Section 
+and/or XVII-Reconnection of Electric Service.
+Filed 03-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 01-01.-22.
+This Filing Effective 04-01-24.
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+Underground Distribution Area
+Within any major metropolitan, high-load, high density center which the Company 
+has designated as an “Underground Distribution Area,” the Customer requesting service 
+will pay the Company the amount, if any, by which the cost of the Approach Line exceeds 
+four times the continuing estimated annual revenue—less fuel charge revenue— that can 
+reasonably be expected, except that the Company shall not be obligated to construct or own 
+any electric underground facilities beyond the property line of the Customer.
+The Company will make electric delivery installations other than those specified in 
+Paragraphs B., C., D., E., F., and G., above, under conditions specified in the Company's 
+electric Line Extension agreements on file with the Commission.
+If a proposed electric Line Extension is of such great length or high cost, or if, in
+the Company's opinion, the anticipated Electric Delivery Service revenue from such Line 
+Extension is insufficient or temporary, or if the Customer or Customers to be supplied are 
+unable to establish a credit standing satisfactory to the Company, the Company reserves 
+the right to determine the advisability of making such Line Extension.
+
+
+PAGE 15
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXH. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+P.
+Q.
+R.
+S.
+T.
+U.
+V.
+Superseding Filing Effective 01-01-22.
+This Filing Effective 04-01-24.
+Should the Customer request a Duct Bank/ Conduit System installation, or the 
+Company determines the need for such is dictated by site conditions, obstructions or space 
+limitations restricting the installation, maintenance, or operation of the Company’s normal 
+underground facilities, the Customer will pay the Company the amount by which the 
+estimated cost of providing such underground facilities exceeds the estimated cost of 
+providing facilities normally required per the appropriate paragraph in Section XXII. The 
+Company should be contacted if the Customer desires to install the Duct Bank/Conduit 
+System, as a plan and profile submission may be required.
+These general rules and regulations shall not be construed as prohibiting the 
+Company from making electric delivery installations of greater length or higher cost, 
+provided there is no discrimination between Customers receiving Electric Service under 
+the same classification.
+&
+@S
+Filed 03-08-24
+Electric-Virginia
+When any governmental authority requires that electric lines and related facilities 
+be located or relocated underground, to the extent such installation or underground 
+facilities is not covered by this Section XXII the cost incurred by the Company properly 
+attributable to such installation will be charged, in a manner approved by the Commission, 
+pro rata to the Customers receiving Electric Service within the jurisdiction imposing the 
+requirement.
+The Company may require definite written guarantees of revenue to justify the
+provision of Electric Service when, in the Company’s opinion, the continuing revenue is 
+speculative or non-permanent in nature, or when the Company’s net investment in 
+distribution assets to provide new service exceeds $350,000. The net investment of the 
+Company is defined as the estimated non-betterment cost to provide electrical facilities at 
+the customer’s service location based on information provided by the Customer, less any 
+non-refundable Contribution in Aid of Construction (CIAC) paid upfront by the Customer. 
+This guarantee shall include a monthly contract dollar minimum which shall be based on 
+50% of the customer’s lowest anticipated monthly bill, less fuel, taxes, and facilities 
+charge. The term length of the guarantee shall be based on the Company’s net investment 
+in distribution assets divided by the monthly dollar minimum. The Customer has the option 
+to make contributions outside of revenues from bills payments should they want to 
+accelerate the termination of the contract dollar minimum. This contribution will be 
+subject to TERF. The contract dollar minimum will be removed from the Customer’s 
+account when the term expires, or when the total revenues collected (less taxes, fuel, and 
+facilities charges) exceed the Company’s net investment in distribution assets, whichever 
+is earliest.
+Where applicable, the Company will install, own and maintain electric line facilities 
+as provided in this Section XXII. The Company reserves the right to have final 
+determination of the location of the Company’s facilities.
+Cost Estimates will be in accordance with the Company's current design practices.
+The Company reserves the right to determine the operational feasibility and
+effectiveness of any installation.
+
+
+PAGE 16
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS
+The following definitions apply to terms used in this Section XXII:A.
+(Continued)
+This Filing Effective 2-204-01-24.
+10. Public Right-of-Way - Publicly owned and/or maintained streets, roads and 
+highways.
+11. Residential Development - For detached single-family homes, a recorded 
+development of multiple contiguous properties comprised of at least four new 
+residences. For garden-type homes, apartments, condominiums, and town 
+homes a recorded development comprised of at least four new residences and 
+an average density of not less than four new residences per acre.
+6. Company’s Preferred Route - The route required by the Company to meet the 
+Company’s obligation of providing reliable Electric Service at a reasonable 
+cost. The route selected will factor in accessibility, location of equipment, and 
+the economics of the installation while using the Company’s standard 
+engineering practices.
+7. Conversion - The replacement of overhead facilities with underground facilities 
+in essentially the same area.
+8. Nonresidential Development - For nonresidential Customers, a recorded 
+development of multiple contiguous properties comprised of at least four 
+building sites.
+5. Bulk Feeder - A three-phase main feeder circuit with an ampacity greater than 
+200 Amperes that is required to serve a general area, or large load(s).
+9. Permanent Residence - A single unit, providing complete and independent 
+living facilities for one or more persons, including permanent provisions for 
+sleeping, cooking, and sanitation.
+Filed 12 09 ■2103-08-24
+Electric-Virginia
+1. Adequate - Facilities that have the capacity to serve the Customer’s load at the 
+existing service characteristics (i.e. voltage, single-phase or three-phase, wye 
+or delta). Facilities are considered inadequate when their capacity is not 
+sufficient to serve the load at the existing service characteristics.
+2. Adjacent - Contiguous to Public Right-of-Way. The Company reserves the 
+right to have final determination on the placement of the facilities.
+3. Approach Lines - Facilities installed from an existing source to the property of 
+the customer or developer requesting Electric Delivery Service.
+4. Branch Feeder - Facilities installed on the property of the Customer or 
+developer (only includes property within the recorded development) requesting 
+Electric Delivery Service.
+(W1
+
+
+PAGE 17
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+B.
+12. Transitional Cost - The amount by which the estimated cost of providing 
+underground facilities exceeds the estimated cost of providing comparable 
+overhead facilities along the Company’s Preferred Route (switches, pads, 
+terminals, etc. required for this installation will be included in the comparison). 
+This cost difference in no event will be less than zero.
+New Residential - Single-Phase Not Within a Residential Development Contracted 
+to be Served Underground
+The Company will provide single-phase Electric Service to a Permanent Residence 
+not previously provided with Electric Service, and not located within an area designated 
+by the Company as an Underground Distribution Area, in accordance with the provisions 
+stated herein.
+1. Primary Approach Lines located on or Adjacent to Public Rights-of-Way 
+normally will be installed overhead at no cost to the Customer.
+a. Should the Customer request or be required to install primary Approach 
+Line facilities located on or Adjacent to Public Rights-of-Way underground, 
+a payment equal to the Transitional Cost will be required.
+b. Secondary Approach Lines (600 Volts or less) located on or Adjacent to 
+Public Rights-of-Way will be installed underground at no charge to the 
+Customer if the Company deems the composition of the land where 
+facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation.
+c. Single-phase Approach Lines not located on or Adjacent to Public Rights- 
+of-Way normally will be installed underground at no charge to the 
+Customer, if the Company deems the composition of the land where 
+facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation. 
+The Company reserves the right to determine the operational feasibility and 
+effectiveness of this installation.
+d. Should a road/street crossing be necessary immediately preceding a Branch 
+Feeder, the Company will install a single-phase primary and secondary 
+Approach Line across such road/street underground at no charge to the 
+customer when the crossing is 75’ or less. If the crossing is greater than 75’, 
+and the customer requests, or is required, to install underground, the 
+Customer will pay the Company the amount by which the estimated cost of 
+providing the entire crossing of underground facilities exceeds the 
+estimated cost of providing 75’ of underground facilities.
+Filed -12-09-24-03-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 04-2-5-1401-01-22.
+
+
+PAGE 18
+a.
+C.
+4. In reference to installations in 1. and 2., above, should the Customer request 
+underground facilities when the composition of the land is such that normal 
+trenching cannot be used, then the Customer will pay the Company the amount 
+by which the estimated cost of providing underground facilities exceeds the 
+estimated cost of providing normal trenching, or receive overhead installation 
+at no charge.
+c. Branch Feeders installed on or Adjacent to Public Rights-of-Way that 
+cannot, or will not, be utilized to serve future customers will be installed 
+underground at no charge to the Customer, if the Company deems the 
+composition of the land where facilities are to be installed is such that the 
+Company’s standard underground trenching can be used to complete the 
+installation.
+b. Branch Feeders installed on or Adjacent to Public Rights-of-Way that can 
+or will be utilized to serve future customers will be installed overhead at no 
+charge to the Customer. Should the Customer request or be required to 
+install these facilities underground, a payment equal to the Transitional Cost 
+will be required.
+Branch Feeder facilities not located on or Adjacent to Public Rights-of-Way 
+normally will be installed underground at no charge to the Customer, if the 
+Company deems the composition of the land where facilities are to be 
+installed is such that the Company’s standard underground trenching 
+equipment can be used to complete the installation. The Company reserves 
+the right to determine the operational feasibility and effectiveness of this 
+installation.
+Filed 12 09-2-103-08-24
+Electric-Virginia
+3. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the difference in 
+the estimated installed cost of the Company’s Preferred Route and the agreed 
+upon route will be required. This cost difference in no event will be less than 
+zero.
+(Continued)
+Superseding Filing Effective 01-25-1401-01-22.
+New Residential Development
+The Company will provide Electric Service to individually metered Permanent 
+Residences and or residential units within a Residential Development not previously 
+provided with Electric Service, and not located within an area designated by the Company 
+as an Underground Distribution Area, in accordance with the provisions stated herein.
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+2. Branch Feeder facilities will be installed in accordance with the following:'
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+
+
+PAGE 19
+a.
+Filed 12 09 2103-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 0-1-2-5-1401-01-22.
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+1. Approach Lines normally will be installed overhead at no cost to the 
+Customer/Developer.
+a. Should the Customer/Developer request or be required to install Approach 
+Line facilities located on or Adjacent to Public Rights-of-Way underground, 
+a payment equal to the Transitional Cost will be required.
+b. Single-phase Approach Lines not located on or Adjacent to Public Rights- 
+of-Way normally will be installed underground at no charge to the 
+Customer/Developer if the Company deems the composition of the land 
+where facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation. 
+The Company reserves the right to determine the operational feasibility and 
+effectiveness of this installation.
+c. Should a road/street crossing be necessary immediately preceding a Branch 
+Feeder, the Company will install a single-phase primary and secondary 
+Approach Line across such road/street underground at no charge to the 
+customer when the crossing is 75’ or less. If the crossing is greater than 75’, 
+and the customer requests, or is required, to install underground, the 
+Customer will pay the Company the amount by which the estimated cost of 
+providing the entire crossing of underground facilities exceeds the 
+estimated cost of providing 75’ of underground facilities.
+2. Branch Feeder facilities installed on or Adjacent to Public Rights-of-Way (not 
+located within the Residential Development) that can or will be utilized to serve 
+future customers located outside the Residential Development will be installed 
+overhead. Should the Customer/Developer request or be required to install these 
+Branch Feeder facilities underground, and the Company deems it to be 
+operationally feasible, a payment equal to the Transitional Cost will be required.
+3. Branch Feeder facilities not defined in Paragraph C.2., above, will be installed 
+underground within the Residential Development (including Bulk Feeder) 
+along the Company’s Preferred Route at no charge to the Customer/Developer 
+when all the criteria below are met.
+The Customer/Developer, at the Customer/Developer’s own expense, 
+installs Company provided conduit, at locations specified by the Company, 
+within the new Residential Development. This is to include road crossings, 
+driveways, obstructions, etc. (If a Duct Bank/Conduit System installation is 
+required or requested, it will be installed in accordance with Paragraph V., 
+below).
+b. There is no residence and or residential unit with electric motors rated at 15 
+horsepower or more.
+c. The Customer/Developer executes an Underground Agreement and/or all 
+required easements before any lots or units in the development are sold.
+&
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+
+
+PAGE 20
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+D. New Non-residential and New Residential Three-Phase Service
+6. If the Customer/Developer does not meet all the criteria in this Paragraph C.3., 
+above, overhead facilities will be provided at no charge utilizing the Company’s 
+Preferred Route.
+4. If the Customer/Developer requests or is required to install Branch Feeder 
+facilities not utilizing the Company’s Preferred Route, a payment equal to the 
+difference in the estimated installed cost of the Company’s Preferred Route and 
+the agreed upon route will be required. This cost difference in no event will be 
+less than zero.
+d. The Customer/Developer cuts and clears the Right-of-Way to Company 
+specifications.
+5. In reference to installations in this Paragraph C., above, when the composition 
+of the land is such that normal trenching equipment cannot be used, then the 
+Customer/Developer will pay the Company the amount by which the estimated 
+cost of providing underground facilities exceeds the estimated cost of providing 
+normal trenching.
+2. Primary Approach Lines located on or Adjacent to Public Rights-of-Way and 
+all multi-phase Approach Lines normally will be installed overhead along the 
+Company’s Preferred Route.
+The Company will provide Electric Service, to individually metered permanent 
+non-residential units (including garages, tool sheds, swimming pool pumps, well pumps, 
+etc.), or individually metered three-phase detached single-family residential homes not 
+previously provided with Electric Service, and not located within an area designated by the 
+Company as an Underground Distribution Area, in accordance with the provisions stated 
+herein.
+e. The delivery characteristics requested at each residential unit is single­
+phase 120/240 Volt.
+(Continued)
+Superseding Filing Effective 01 25 1401-01-22. 
+This Filing Effective 0-1 01 2204-01-24.
+Filed -10-09-2103-08-24
+Electric-Virginia
+1. The Customer will pay the Company the amount, if any, by which the cost 
+contained in Paragraphs D.2., D.3., D.5., D.7.a., D.7.b., D.7.C., D.7.d., and 
+D.7.e. exceeds four times the continuing estimated annual revenue - less fuel 
+charge revenue - that can reasonably be expected.
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+&
+051
+
+
+PAGE 21
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+(Continued)
+Electric-Virginia
+kJ
+&
+feS
+©
+09
+yi
+4401-01-22.
+-24.
+xxn. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+3. Secondary Approach Lines (600 Volts or less) located on or Adjacent to Public 
+Rights-of-Way will be installed underground if the Company deems the 
+composition of the land where facilities are to be installed is such that the 
+Company’s standard underground trenching equipment can be used to complete 
+the installation.
+4. Should the Customer request or be required to install underground Approach 
+Line facilities defined in Paragraph D.2., above, a payment equal to the 
+Transitional Cost will be required for facilities located on or Adjacent to Public 
+Rights-of-Way, or any multi-phase extension.
+5. Single-phase Approach Lines not located on or Adjacent to Public Rights-of- 
+Way normally will be installed underground if the Company deems the 
+composition of the land where facilities are to be installed is such that the 
+Company’s standard underground trenching equipment can be used to complete 
+the installation; otherwise, overhead facilities will be installed. The Company 
+reserves the right to determine the operational feasibility and effectiveness of 
+these installations.
+6. Should a road/street crossing be necessary immediately preceding a Branch 
+Feeder, the Company will install a single-phase primary and secondary 
+Approach Line across such road/street underground at no charge to the 
+customer when the crossing is 75’ or less. If the crossing is greater than 75’, 
+and the customer requests, or is required, to install underground, the Customer 
+will pay the Company the amount by which the estimated cost of providing the 
+entire crossing of underground facilities exceeds the estimated cost of providing 
+75’ of underground facilities.
+7. Branch Feeder facilities will be installed in accordance with the following:
+a. Branch Feeder facilities with a rated voltage greater than 50 kV will be 
+installed overhead.
+b. Branch Feeder facilities located on or Adjacent to Public Rights-of-Way 
+installed to serve individually metered nonresidential Customers not located 
+within a Nonresidential Development, or individually metered residential 
+three-phase Customers will be installed overhead.
+c. Branch Feeder facilities within aNonresidential Development located on or 
+Adjacent to Public Rights-of-Way, and that can or will be utilized to serve 
+future customers located outside the development, will be installed 
+overhead.
+d. Branch Feeder facilities where Bulk Feeder is not required and not defined 
+in Paragraphs D.7.a., D.7.b., and D.7.C., above, normally will be installed 
+underground if the Company deems the composition of the land where 
+facilities are to be installed is such that the Company’s standard 
+underground trenching equipment can be used to complete the installation. 
+Otherwise, overhead facilities will be installed. The Company reserves the 
+right to determine the operational feasibility and effectiveness of this 
+installation.
+
+
+PAGE 22
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+E.
+(Continued)
+lei
+-24.
+3. Should the Customer request or be required to install Approach Line facilities 
+underground, a payment equal to the Transitional Cost will be required.
+2. Approach Lines will normally be installed overhead along the Company’s 
+Preferred Route.
+1. The Customer will receive a credit of four times the anticipated annual revenue, 
+excluding fuel charge revenue, per metered unit, which will be applied to the 
+applicable charges, if any, contained in Paragraphs E.2., E.4., and E.6.
+The Company will provide three-phase electric facilities to serve individually 
+metered residential units (garden-type homes, apartments, condominiums, and town 
+homes) within a Residential Development not previously provided with Electric Service, 
+and not located within an area designated by the Company as an Underground Distribution 
+Area, in accordance with the provisions stated herein.
+©
+Filed 12 09 2103-08-24
+Electric-Virginia
+9. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the difference in the 
+estimated installed cost of the Company’s Preferred Route and the agreed upon 
+route will be required. This cost difference in no event will be less than zero.
+New Residential Development Three Phase Service
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+e. Branch Feeder facilities wherein Bulk Feeder is required will normally be 
+installed overhead.
+f. Should the Customer request or be required to install underground Branch 
+Feeder facilities defined in Paragraphs D.7.a., D.7.b., and D.7.C., above, a 
+payment equal to the Transitional Cost will be required.
+g. Should the Customer request or be required to install Bulk Feeder 
+underground, a payment equal to the Transitional Cost will be required.
+8. When the Company deems the composition of the land is such that normal 
+trenching cannot be used, then the Customer will pay the Company the amount 
+by which the estimated cost of providing underground facilities exceeds the 
+estimated cost of providing such underground facilities with normal trenching.
+
+
+PAGE 23
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+F.
+5. Should the Customer request or be required to install these Branch Feeder 
+facilities underground, as defined in Paragraph E.4., above, a payment equal to 
+the Transitional Cost will be required.
+4. Branch Feeder facilities installed on or Adjacent to Public Rights-of-Way that 
+can or will be utilized to serve future customers located outside the Residential 
+Development will be installed overhead.
+8. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the estimated 
+difference in the cost of the facilities utilizing the Company’s Preferred Route 
+versus the cost of the facilities utilizing the agreed upon route will be required. 
+This cost difference in no event will be less than zero. The Company reserves 
+the right to have final determination of location of facilities.
+1. Residential (not located within an area designated by the Company as an 
+Underground Distribution Area)
+6. Branch Feeder facilities not defined in Paragraph E.4., above, will be installed 
+underground within the development along the Company’s Preferred Route 
+upon execution of an Underground Agreement and provided all required 
+easements are executed before any lots or units in the Residential Development 
+are sold.
+7. If the Company deems the composition of the land is such that normal trenching 
+cannot be used to install Branch Feeder facilities, the Customer will pay the 
+Company the amount by which the cost of providing estimated underground 
+facilities exceeds the estimated cost of providing normal trenching, or the 
+facilities will be installed overhead.
+Filed 12-09-2-1-03-08-24
+Electric-Virginia
+a. The Company will provide Electric Service to previously served 
+individually metered Permanent Residences in accordance with the 
+provisions stated herein.
+b. The Company will replace inadequate overhead facilities with adequate 
+overhead facilities at no cost to the Customer.
+9. Customers who do not qualify for service in accordance with the provisions of 
+this paragraph will be served in accordance with Paragraph D.
+Service Upgrades
+@9
+On)
+(Continued)
+Superseding Filing Effective 01 25 1401-01-22.
+
+
+PAGE 24
+XXn. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+2. Non-residential (not located within an area designated by the Company as an 
+Underground Distribution Area)
+a. The Company will provide new facilities required to provide Electric 
+Service to previously served individually metered non-residential 
+Customers in accordance with Paragraph D.
+c. The incremental revenue credit can also be applied to the estimated cost of 
+the removal of existing facilities that are being replaced with new facilities 
+as part of the upgrade. The total incremental revenue credit applied to a 
+nonresidential upgrade will not exceed four years.
+c. The Company will replace inadequate underground facilities with adequate 
+underground facilities at no cost to the Customer, except as otherwise 
+provided in this subparagraph. When the Company deems the composition 
+of the land is such that normal trenching cannot be used, then the Customer 
+will pay the Company the amount by which the estimated cost of providing 
+underground facilities exceeds the estimated cost of providing normal 
+trenching. If the Customer requests or is required to install Branch Feeder 
+facilities not utilizing the Company’s Preferred Route, a payment equal to 
+the difference in the estimated initial installed cost of facilities in the 
+Company’s Preferred Route versus the estimated installation cost of 
+facilities in the agreed upon route will be required. This cost difference will 
+in no event be less than zero.
+d. When the Company deems the composition of the land is such that normal 
+trenching equipment cannot be used then the Customer will pay the 
+Company the amount by which the estimated cost of providing underground 
+facilities exceeds the estimated cost of providing normal trenching.
+b. The estimated annual revenue credit in D.l will only include the 
+incremental continuing estimated annual revenue, less fuel charge revenue, 
+that can reasonably be expected. Incremental estimated revenue is defined 
+as the revenue associated with the additional usage that will be added after 
+the Company’s facilities are upgraded.
+Filed 4-2-09-2-1-03-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 0125 1101-01-22.
+a
+tr-i
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+
+
+PAGE 25
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+XXn. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+G. Conversions
+Three-Phase Service Qualification:H.
+e. If the Customer requests or is required to install Branch Feeder facilities not 
+utilizing the Company’s Preferred Route, a payment equal to the difference 
+in the estimated initial installed cost of the Company’s Preferred Route and 
+the agreed upon route will be required. This cost difference in no event will 
+be less than zero, and revenue, if any, will not be applied to this charge.
+Filed -13-09-2-1-03-08-24
+Electric-Virginia
+1. When a Customer requests the Company to convert existing adequate overhead 
+secondary facilities to underground, such service will be furnished, provided 
+the Customer pays to the Company an amount equal to the estimated cost of 
+removing the adequate secondary overhead facilities, plus the charges, if any, 
+specified in the applicable paragraph for new service, above.
+2. When a Customer requests the Company to convert existing inadequate 
+overhead secondary facilities to underground, such service will be furnished, in 
+accordance with the applicable paragraphs for new service above. There will be 
+no charge for the removal of the inadequate overhead secondary facilities.
+3. When a Customer requests the Company to convert existing overhead primary 
+facilities (greater than 600 Volts) to underground, the Customer will pay The 
+Company the estimated removal cost of the overhead primary facilities, less 
+salvage, plus the estimated installation cost of the underground facilities.
+The Company will provide three-phase service in accordance with the provisions 
+of the applicable paragraphs, above, to Customers having one three-phase motor larger than 
+five horsepower, or to a single metered Customer having multiple three-phase motors which 
+total at least 15 horsepower, provided the motors are properly sized for their expected use, 
+or to a single metered Customer having 50 kilowatts or more of lighting load. Customers 
+that request three-phase service but do not meet the foregoing minimums may receive three- 
+phase service upon payment of the amount, if any, by which the estimated cost of 
+constructing a three-phase extension exceeds the estimated cost of constructing a single­
+phase extension with capacity to serve the same kilovolt-ampere load. This charge shall be 
+in addition to any other charges normally applicable for a single-phase extension.
+(Continued)
+Superseding Filing Effective 01 25 1401-01-22.
+This Filing Effective 01-01-2204-01-24.
+&
+
+
+PAGE 26
+I.
+J.
+K.
+L.
+M.
+N.
+O.
+The Company shall not be required to make any electric delivery installations on 
+private property until the property owner shall have granted to the Company an easement 
+of Right-of-Way for the construction, operation and maintenance of such electric delivery 
+installation.
+The Company will make electric delivery installations other than those specified in 
+Paragraphs B., C., D., E., F., and G., above, under conditions specified in the Company's 
+electric Line Extension agreements on file with the Commission.
+The Company shall not be required to make any electric Line Extension until the 
+Customer or Customers to be supplied from such Line Extension have signed all applicable 
+applications or agreements, and fulfilled such other conditions for the connection to the 
+Company’s facilities and for receiving the Electric Service as may be required by the 
+Company, and until all premises to be supplied have been wired and made ready for 
+service.
+If a proposed electric Line Extension is of such great length or high cost, or if, in 
+the Company's opinion, the anticipated Electric Delivery Service revenue from such Line 
+Extension is insufficient or temporary, or if the Customer or Customers to be supplied are 
+unable to establish a credit standing satisfactory to the Company, the Company reserves 
+the right to determine the advisability of making such Line Extension.
+Filed 12 09-2103-08-24
+Electric-Virginia
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+Underground Distribution Area
+Within any major metropolitan, high-load, high density center which the Company 
+has designated as an “Underground Distribution Area,” the Customer requesting service 
+will pay the Company the amount, if any, by which the cost of the Approach Line exceeds 
+four times the continuing estimated annual revenue—less fuel charge revenue— that can 
+reasonably be expected, except that the Company shall not be obligated to construct or own 
+any electric underground facilities beyond the property line of the Customer.
+The Customer may be required to secure Rights-of-Way on private property 
+without cost to the Company, or to assist the Company in obtaining Rights-of-Way.
+Whenever it is determined that an electric delivery installation on private property 
+to serve one Customer will be built by the Customer, such installation (1) shall start within 
+100 feet of the Company's line, (2) shall be constructed in compliance with the Company's 
+standards and be approved by the Company, (3) shall be maintained by the Customer at all 
+times in a manner satisfactory to the Company, and (4) the Customer shall assume the 
+liability for the maintenance and operation of the line. If the line owned by the Customer 
+is not operated and maintained in a manner satisfactory to the Company, or, in the 
+Company's opinion, may interfere with or be detrimental to the Company’s facilities or to 
+the provision of Electric Service by the Company to any other Customer, then the Company 
+may discontinue Electric Service as provided in Section XVI—Discontinuance of Electric 
+Service. After such discontinuance the supply will not be restored until conditions are 
+made satisfactory to the Company as provided in Section III - Inspection and in Section 
+and/or XVII-Reconnection of Electric Service.
+&
+©3
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+(Continued)
+Superseding Filing Effective 01 25 1401-01-22.
+
+
+PAGE 27
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+P.
+Q.
+Filed 12 09 2103-08-24
+Electric-Virginia
+(Continued)
+Superseding Filing Effective 01 25 M01-01-22.
+This Filing, Effective 01 01 2204-01-24.
+XXII. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+When any governmental authority requires that electric lines and related facilities 
+be located or relocated underground, to the extent such installation or underground 
+facilities is not covered by this Section XXII the cost incurred by the Company properly 
+attributable to such installation will be charged, in a manner approved by the Commission, 
+pro rata to the Customers receiving Electric Service within the jurisdiction imposing the 
+requirement.
+The Company may require definite written guarantees of revenue to justify the
+provision of Electric Service when, in the Company’s opinion, the continuing revenue is 
+speculative or non-permanent in nature?, or when the Company’s net investment in 
+distribution assets to provide new service exceeds $350.000. The net investment of the 
+Company is defined as the estimated non-betterment cost to provide electrical facilities at 
+the customer’s service location based on information provided by the Customer, less any 
+non-refundable Contribution in Aid of Construction (CIAC) paid upfront by the Customer. 
+This guarantee shall include a monthly contract dollar minimum which shall be based on 
+50% of the customer’s lowest anticipated monthly bill, less fuel, taxes, and facilities 
+charge. The term length of the guarantee shall be based on the Company’s net investment 
+in distribution assets divided by the monthly dollar minimum. The Customer has the option 
+to make contributions outside of revenues from bills payments should they want to 
+accelerate the termination of the contract dollar minimum. This contribution will be 
+subject to TERF. The contract dollar minimum will be removed from the Customer’s 
+account when the term expires, or when the total revenues collected (less taxes, fuel, and 
+facilities charges) exceed the Company’s net investment in distribution assets, whichever 
+is earliest.
+In conjunction with Paragraph D. above, when the net-cost-to provide service exceeds 
+$350,000, to ensure that actual revenue received from the Customer-(less-taxes, fuel and 
+facilities charges}supports the estimated-revenue credit, the-Customer will be required to 
+eentraet-fer-an-Agreement-for-Electric Service executed between the-Company and the 
+Customer to guarantee the Company recovers its initial net-investment over the first 4 years 
+of service. The contract value in -the Agreement for Electric Service will be set to equal-the 
+net investment of the Company, which is defined as the estimated non betterment-oest-to 
+provide-electrical facilities at the customer’s service location based-on-information 
+provided by-the-Customer, less any non refundable-Contribution in Aid- of Construction 
+(CIAC) paid upfront by the Customer-. -ln-the-event the Customer’s billing (less-taxes, fuel 
+and-faeitities-charges)-over the first I years does not cover-the-Gompany-s net investment^ 
+the Customer-win -be- required to compensate the Company for the difference between 
+actual revenues received and the-oontract value. If at any point during the-4-year-period-the 
+Customer satisfies the contract value for the-line-e-xtension it will no longer-be-applicable 
+to this Customer.
+Llpen-request by the Gtistomer, the-Gompany will provide the Customer a standing 
+quarterly update on the-Gustomer’s progress toward satisfying-the-contract-value fer-each 
+of the Customer’s affected acoeuntSi-Once-the-Company’s customer information platform 
+biUing-system-is-implemented, the update will be provided-on-a monthly-basis.-
+o
+
+
+PAGE 28
+XXH. ELECTRIC LINE EXTENSIONS AND INSTALLATIONS (Continued)
+R.
+S.
+Cost Estimates will be in accordance with the Company's current design practices.T.
+U.
+V.
+This Filing Effective 01 01 2204-01-24.Electric-Virginia
+Should the Customer request a Duct Bank/ Conduit System installation, or the 
+Company determines the need for such is dictated by site conditions, obstructions or space 
+limitations restricting the installation, maintenance, or operation of the Company’s normal 
+underground facilities, the Customer will pay the Company the amount by which the 
+estimated cost of providing such underground facilities exceeds the estimated cost of 
+providing facilities normally required per the appropriate paragraph in Section XXII. The 
+Company should be contacted if the Customer desires to install the Duct Bank/Conduit 
+System, as apian and profile submission may be required.
+The Company reserves the right to determine the operational feasibility and 
+effectiveness of any installation.
+These general rules and regulations shall not be construed as prohibiting the 
+Company from making electric delivery installations of greater length or higher cost, 
+provided there is no discrimination between Customers receiving Electric Service under 
+the same classification.
+Where applicable, the Company will install, own and maintain electric line facilities 
+as provided in this Section XXII. The Company reserves the right to have final 
+determination of the location of the Company’s facilities.
+Virginia Electric and Power Company
+TERMS AND CONDITIONS
+
+
+PAGE 29
+(Q 
+fe?
+Rider D
+Tax Effect Recovery Factor 
+(Clean and Redline Versions)
+
+
+PAGE 30
+Virginia Electric and Power Company
+RIDER D
+TAX EFFECT RECOVERY
+Section FV - Service Connections, Paragraph E.4.a.1.
+Section XXH - Electric Line Extensions and Installations2.
+3. Underground Electric Service Plan F
+Superseding Filing Effective For Usage On and After 01-01-22. 
+This Filing Effective For Usage On and After 04-01-24.
+For contributions made which are relative to transmission facilities, the Customer 
+shall pay the contribution plus an additional amount equal to the net cost of taxes to the Company 
+resulting from the contribution.
+Filed 03-08-24
+Electric-Virginia
+The TERF shall also be applied to other contributions that may occur from time to 
+time to the extent they are classified as taxable income to the Company. However, the TERF shall 
+not be applied to contributions for the provision of temporary service.
+Contributions in aid of construction (contributions) relative to distribution and substation 
+facilities which are made pursuant to the following provisions of the Terms and Conditions shall 
+be multiplied by a Tax Effect Recovery Factor (TERF) of 1.15003 to determine the total payment 
+amount due from the Customer (or Applicant):
+&
+
+
+PAGE 31
+Virginia Electric and Power Company
+RIDER D
+TAX EFFECT RECOVERY
+Section FV - Service Connections, Paragraph E.4.a.1.
+Section XXII - Electric Line Extensions and Installations2.
+Underground Electric Service Plan F3.
+Electric-Virginia
+For contributions made which are relative to transmission facilities, the Customer 
+shall pay the contribution plus an additional amount equal to the net cost of taxes to the Company 
+resulting from the contribution.
+The TERF shall also be applied to other contributions that may occur from time to 
+time to the extent they are classified as taxable income to the Company. However, the TERF shall 
+not be applied to contributions for the provision of temporary service.
+Contributions in aid of construction (contributions) relative to distribution and substation 
+facilities which are made pursuant to the following provisions of the Terms and Conditions shall 
+be multiplied by a Tax Effect Recovery Factor (TERF) of 1.148191.15003 to determine the total 
+payment amount due from the Customer (or Applicant):
+Superseding Filing Effective For Usage On and After 07 01 1801-01-22.
+<□
+I
+
+
+PAGE 32
+Rider D
+Tax Effect Recovery Factor 
+Workpapers
+&
+
+
+PAGE 33
+c = O Q
+> o z u. CD
+oo
+Jo 
+o N- O 
+o
+IO IO ID O>
+O
+d
+Q.
+ex
+co 
+CM
+CO 
+co o> o ID o 
+d
+co 
+£ 
+ID
+d d d d
+o o 
+d
+o o o o
+CM
+d
+3 
+ID ID COO
+d
+CM 
+CO 
+co
+o
+d
+b- co co o o
+d
+E
+(D 
+■u
+0) 
+IL
+CDC o
+co ID ST T- o 
+d
+O)
+c Q
+O) 
+c 
+O
+o 
+Z
+!»=
+LU
+X
+!z
+2
+0)
+U-
+<D 
+E
+8 c 
+a> 
+ro 
+W
+3
+ra
+£co
+a> 
+Z
+1
+•S
+c§
+E 
+3
+0) 
+ai 
+o
+3 
+co
+OC
+a> 
+ro x
+CD 
+ra 
+Ct
+$
+*o
+LU 
+X 
+(D
+'c s 
+c 
+o
+CL
+E 
+o
+U
+E 0) o
+E 
+.a>
+</>
+§. 
+L— ZJ 
+CL
+CO ID O x- CM O CO X- o * x- O o o o o o
+2
+co
+ex
+co
+O 
+o
+o c
+8.
+E 
+o o
+3
+er 
+w
+c o
+jU
+= 
+o to 
+o O
+<D *~ 
+E O’ 
+o C
+E8 
+o c 
+o — 
+s 1 
+a> J5 
+■D {/J
+c
+I 
+Ct 
+E
+3 S -g 
+g o § 8 
+<X .9 CO Q
+•52. S 
+"i H 
+to
+o 
+z
+Ct 
+O 
+Ct 
+(/> 
+tn 
+O’
+k3
+feS
+ya
+I 
+co
+C 0> 
+<D CO
+CL
+E 
+o
+° E
+S -n 
+O’
+Q u. 
+§ 
+.o>
+1
+« “ ra
+>7 H H a>
+.co ro H <
+o
+
+
+PAGE 34
+I- LU b-
+sssassssissssssssgsg?
+S'&sfS'gKffisS'S'S'sS'S'S'S’S'EEK 
+NVDnnNNNNOJOJNNNCNWNNNNr-
+O O
+ggggggsggsgssgsggsggg
+2 l- 
+IU
+SSSSggSSSSSggSSSSSSSS s
+I
+p*8*g*g*^£*s
+U)r>r-b>-^COCONffi(O(O<O<0<0<O<OCO<0<DC£>CO 
+K. 04 co r b. CM 00 in XT 5T x X X X X 
+cob-cDcDinin^^-’r^^-Trst^-xrtr^^-^-’tcM
+v> a:
+Bs
+So” UJ ? 
+CL
+o » 
+o
+O f> 
+O
+S 
+m 
+in 
+CD
+_i 
+q a> 
+O
+J 
+O «> 
+o
+co ffi 
+5 5 
+CM CM
+□ 
+O r- 
+O
+_J 
+O m 
+o
+O 'O- 
+o
+_J8-
+ooooooooooooooooooooog g g g g g g g g g g g g g I g g g g g g
+a*
+2
+8° 
+o
+in
+tn
+£
+o 
+§
+§
+»
+<0
+$
+g
+o
+o
+s 
+CM
+8
+&
+£ 
+a>
+E 
+o
+s b-
+O»
+«
+!- LU -7
+X -1 cn O
+OS« 
+z
+JT
+8 
+’3-'
+&
+fc
+§ 
+m 
+o
+d
+s0
+Si5
+i 
+s
+E 
+f 
+•6
+S
+S
+LU
+B
+8^
+k3
+@i
+©
+S32S$5SSSSSSSSSSSSSSS 
+inoOnJCOCOttCDCMCMCMCMCMCMCMCMCMCMCMCMCMv-
+gSSSSS^SS S3 3i8335583 3 g.
+0’-C'Jrt^‘intt)NCO®0’-Nn,3lD(Ob<0
+CMCMCMCMCMCM6JCMCM<MeOC*)COC*>COr>CO<ncn 
+OOOOOOOOOOOOOOOOOQO
+CMCMCMCMCMCMCMCMCMCMCMCMCMCMCMCMCMWCM
+£ 
+d
+12$
+CM
+&
+2 m O
+SB5
+UJ 
+z
+oc LU 
+X Q
+8*
+> LU O
+^2 J
+W @UJ
+<“S
+0>CM*-CMCDCMO0>4ocDcnQ><D«-<-CO<D^CMin
+3"-’-^|sg3 isSSSSlsgSg. 3»
+3
+CD
+tn
+co^mPoocoincncncnoocnoicncnGimcno 
+in^oktnin^-incocococococococococococob-. 
+a> co b- tn xr CO CM r-w r- t- T- T- T- T- r- 5- T- w- r- U) 
+•>>_x r <_x s_x •»—> s_z
+— I Mb O SySi ° 
+e>§ > 
+s °
+oa>r~b.cnmeo<'JCMT-CN»-<M»-cMr-cM*-wr-TTin«-N.|^«-CO0ON<DCQCO<p<OU><OCOU><p<O<On
+S fe 8 8 8 8 S 3 3 3 3 3 3 3 3 3 3 3 3 3 8
+h8§
+X
+o o o o o o o 
+O O O Q O O O
+ooooooooooooooooooooo ooooooooooooooooooooo
+’r*5— r— t— V-T“T-T-^-
+b; w” s
+3 o> o
+sl
+H in 
+“2
+t w 
+<0 s 
+<C O
+z
+o
+p LU
+Ct
+LU
+h 
+&
+s 
+CD
+$2
+22 
+ct cn 
+&
+Q
+
+
+PAGE 35
+CM
+8
+o(i> a> ®
+£ 
+CD
+2 
+<D
+X co
+2 
+a> 
+•u 
+a>
+£ 
+o o o o o o
+6 
+o
+00 
+CO
+05 
+r-
+05
+o 
+co 
+m
+£ 
+m 
+in 
+CM
+£ 
+co 
+co 
+CM 
+(D 
+in 
+CM
+s
+£
+3
+3
+CD
+£
+jg 
+w
+0
+0) E
+8 c
+■G
+0) 
+S' 
+Z5 
+CD 
+0) 
+E 
+o o c
+£ 
+o o o o o o
+£ £ £ 
+cm m o 
+in co o 
+CM O v" CM O 
+CO V- o 
+CD t- O 
+in o o
+o.
+D 
+co co
+2 
+o 
+Q
+U
+CD 
+O
+2 
+9*
+8 or
+X£
+0) 
+E
+8 c
+o o o o o o 
+o o
+0)
+X
+!z
+TO
+£
+©
+E E E
+111
+aj a> £
+i 
+co 
+a> 
+E 
+o o 
+c
+> 
+-z.
+CL 2 5 Q 
+o i- 03
+D £ O
+Sag
+Q Q: <? 
+Z ? -
+(T Qi
+£ £ 
+N in o 
+in co o 
+cm xr o 
+t- cm o 
+co ■<- o co 1- o 
+in o o
+< to -g O to S
+O E> 
+£ CC > 
+O 0
+LU P
+2 < 
+0 °
+>
+
+
+PAGE 36
+s I
+!hii§ £ < z K
+H W E <0
+-a
+ME £HO
+I
+2
+s
+£
+3
+£
+o(0 CO
+O>
+in
+8
+O'
+ra
+G?
+<o CT
+TT
+e
+@
+fe5
+Pi3
+<@
+@@
+£
+8 
+e 
+o 
+ffl£
+E 
+•8 §
+o 
+o
+s
+v>
+§i
+§
+§
+i
+CD 
+D 
+‘S 
+8
+1
+5 
+(A
+2
+CL 
+cZ 
+tn
+5
+£
+E 
+■oi£
+i
+□ 
+o 
+re
+1 
+in 
+CT
+•O
+K
+8X = = «® 2>
+s 
+w 
+75
+s
+<o
+< 
+o 
+c o 
+s 
+H 
+o
+8 
+o 
+z
+ts 
+tg 
+HI
+3
+I-
+N
+f 
+re
+Z
+5 
+•o
+2 
+D
+S' 
+or 
+•E re
+E 
+reCL 
+re 
+o
+c
+!
+re* 
+Q_
+I 
+s 
+p
+1- N O CO T- tft
+r
+§
+.5
+8
+a
+S
+E 
+.S
+‘S
+£
+c□
+8
+Q
+8 
+ra
+o> ra 
+c o
+E
+i 
+•5
+S
+I 
+of
+0 
+OT
+o
+I
+8 
+c
+re
+£ 
+ra 
+o
+o§
+in 
+to
+CT in 
+in
+Si
+S’ 
+E 
+8
+£
+o. 
+Z)
+i 
+o 
+•D 
+a 
+c
+8 
+wQ
+co
+s
+ID
+ta
+£ 
+re
+8
+s 
+to
+■g 
+re
+2 re
+li­
+re
+co
+t-
+co
+I 3 o CD 
+co'
+I 8
+2
+co a> ° 
+co
+ffii
+55 55 OT 52
+> „• > s
+I
+I
+§ 
+•g 
+□ 
+o Q 
+£ x 
+O ra
+h0
+y
+c ° 
+g o
+Q
+§ I 
+s i
+8§fl
+h|
+ill 
+o C o > fv .Q Z3 |S?«
+re
+E o 
+« d
+I 
+c o ■■§ 
+.a 
+■g o
+O 
+ra
+f 
+‘■6
+5
+££
+88 52
+c c S oj 
+o> OJ
+w K W
+I— UJ E to
+52 w a E e aza.?
+Ssis
+CL D O
+OJO
+
+
+PAGE 37
+^3?
+€0
+in -r- o o
+Me
+<
+Ee®®O3-
+g O £ s Q ? 5
+«•> 
+<n
+3?
+b.
+£
+!
+CM
+!
+s o
+ra fa
+g 
+o 
+o
+3*
+o 
+s 
+©
+o © 
+*) ©
+© 
+© 
+d
+c 
+© 
+■S' 
+u 
+Q 
+to
+0) 
+Q
+§ 
+o
+d
+$
+>
+I
+§ 
+oo 
+© 
+d
+1s
+s? a?“■ ©
+3.
+aS 
+© 
+R 
+©
+£ 
+© 
+R 
+©
+1
+ex
+ra O
+I
+d ©
+o'* o'* 0s" 
+CO O © *■ 
+© O CO 
+CO O Tf 
+d d d
+fe3
+iLfi
+g
+65 
+© ©
+©
+65
+3 
+u> 
+co
+65 g? S5 
+CM O CO 
+5SS^
+d d d
+^^^65
+CM O CO I* 
+oqSfe 
+o d o’ d
+?§ss
+CM
+5 
+<=.©
+o 
+o 
+■D
+3 
+X
+©
+i
+»
+c 
+£ 
+CD
+i
+o 
+O 
+«
+3 
+C
+<
+b- © 
+00 © 
+CO O 
+d
+fc 
+O
+3
+5
+CO
+6?
+s 
+©
+£ £ 6? 
+- — (O
+5.
+s2 w 
+ht
+o £ 
+o z
+a? a? ae s? a? a?
+CM T 5 « O -
+© t- CO O v
+b- co © o o
+d ej d d
+tn f 
+CT 5) 13 HI 
+c S£ 1
+65 62 65 65 
+o o o o o o o o o o 
+© © © © ©
+£ aS 65 
+o © © co b- co oo o © 
+v-’ d
+H
+U
+«
+■u
+e
+i
+a.
+5 
+o
+O fe
+as as aS aS 
+£ g ? * 
+o o o odd
+III
+5dd
+U) a
+s 
+ro
+JC
+■E 
+o
+5 A
+0) r- 
+’ - 
+g a> 
+o> 'O 
+§2Q
+2 O S 
+O -C o I- W H
+aS 65 65 
+M- © CM 
+CM © 00 
+r 9 
+Tf M" co
+S O 
+.H o 
+0> s « @§r
+So”
+•H ' 
+? §
+> O
+2
+2 
+ex
+S ■8I
+©
+S 
+c 
+£■
+1
+K 
+3
+2 
+W 
+<]) 
+CO 
+0) 
+£ 
+co 
+co 
+i
+I
+CO 
+0) 
+©
+t
+3 ra
+•s
+8
+S’
+I'
+TJ
+•1 
+o
+E 
+co 
+§
+I«
+O g. 
+*- © to a 
+© 2 ? £
+is
+E ° 
+m
+o> 
+.E 
+H
+fi
+fe 2 
+co
+t- d
+g aS aS g aS $
+!J 8 S 8 £
+5 ” g ■'
+o> o co o m <o 
+*-. °> °
+>. g
+H 
+O M o «s 
+11°''- 
+° m ” £ O fe 
+= ? E 
+•— m fll
+5
+o £
+;&
+3
+cr 
+m
+11 
+® E c I f 1 r I O
+s?
+■D
+2 o
+S
+OS'S = 
+g Q £ UJ | 
+p
+H
+
+
+PAGE 38
+5(N
+s
+s
+CM
+s
+d d d d d
+<N
+5
+S
+§ § § §
+co o o o S o o o
+g s s s sg m tn un o
+id d d d
+d
+= s
+<D (_>
+u  o o5 d S 2 Q (J Q Z
+£
+S § ‘
+o
+9
+X .ro
+o o o o o 
+d
+o 
+o
+QJ 
+a
+LO 
+o rsi
+to 
+o CM
+to 
+o CM
+C  a u
+c 
+Si 
+D 
+u
+I?
+c0) E c .2
+a;
+§
+o o o 
+.§§■ 
+Q O O
+« 
+W)
+o *& o 
+2 O Q Z
+< o
+> a a z
+00 o co m o m 
+r* m o m UW rl LA 
+O O (N CM
+£
+0)
+o
+S o o o to
+Wl   _) CMO O O rH "O CD 
+E
+x a:
+§ s s s 
+<d- o o o m ~ 
+co
+to to to d
+g 
+o o o
+d
+8888o o o o -> o o o
+o o
+§8
+c 
+u
+ u 
+c 
+o 
+z
+oo 
+d
+o 
+o 
+d
+o o 
+d
+m 
+to 
+m o 
+d
+ss’ - 
+tn tn li_ j—
+oo 
+d
+m 
+to
+LT) 
+o
+d
+m 
+to in 
+o
+d
+og 
+oo
+d
+o og 
+o
+d
+oo o oo 
+, co o m in o to 
+lh h in 
+O O CM CM 
+d d d d
+@0
+I f
+8=3
+o
+13
+OJ 
+•u
+o o
+s §
+5 f
+5 <3 o
+I £ 
+| g <3
+co o oo . m o cn 
+tn o tn 
+m <h m 
+o o <n rj 
+d d d d
+1H
+> □ 5 O
+2 in in in rd 
+A cm cm <n d 
+o
+5 2a. o. 
+ra
+5
+s 
+CD 
+CC 
+76 
+(U “J ro O 15 S “ G 
+oc H ra s 
+S £ -g c 
+IB 3 IS 2
+'S 
+o
+£
+l— 
+D
+O
+9
+o o o o o________g 
+o m tn m 
+o CM CM (N 
+o cd oo co
+

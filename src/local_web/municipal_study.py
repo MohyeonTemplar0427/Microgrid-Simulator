@@ -1,6 +1,5 @@
 """Schema 4: durable municipal import-only storage studies."""
-from copy import deepcopy
-from datetime import date, timedelta
+from datetime import date
 import json
 import io
 
@@ -96,6 +95,7 @@ def validate_study(request):
 
 def execute_study(directory,request):
     from .worker import write_json
+    from .electrical_replay import replay_study
     from pathlib import Path
     directory=Path(directory)
     validate_study(request)
@@ -115,15 +115,17 @@ def execute_study(directory,request):
             row['emissions_kgCO2'] = float((inputs.grid_import_kw.to_numpy() * carbon).sum() * .25 / 1000)
             inputs['gCO2/kWh'] = carbon
         row.update(energy_cost=bill['line_items']['energy_charge'], demand_charge=bill['line_items']['demand_charge'], customer_charge=bill['line_items']['customer_charge'])
-        warnings = ['Grid-only study: no PV, battery, weather or dispatch optimization.',
-                    'No AC power-flow replay is performed; electrical network feasibility is not evaluated.']
+        electrical,metrics,validation,electrical_warnings = replay_study({'no_battery':(
+            inputs.assign(native_load_kw=inputs.grid_import_kw,pv_available_kw=0.,grid_export_kw=0.),None,0.)},request['account'])
+        row.update(metrics[0])
+        warnings = ['Grid-only study: no PV, battery, weather or dispatch optimization.']+electrical_warnings
         if carbon_provenance:
             warnings.append(carbon_provenance['warning'])
         if request['mode']=='alternative_location':
             warnings.append('HYPOTHETICAL ALTERNATIVE LOCATION: account eligibility is assumed for this scenario.')
         save_results(directory, request, [('comparison','Grid-only operating cost',pd.DataFrame([row])),
             ('costs','Itemized utility bill',pd.DataFrame([dict(component=k,amount=v) for k,v in bill['line_items'].items()])),
-            ('inputs','Grid-only load and imports',inputs)], warnings, bills={'no_battery':bill}, input_provenance={'carbon':carbon_provenance})
+            ('inputs','Grid-only load and imports',inputs)]+electrical, warnings, bills={'no_battery':bill}, input_provenance={'carbon':carbon_provenance},ac_validation=validation)
         return
 
     write_json(directory/'progress.json',{'message':'Optimizing storage against municipal tiers, demand history, taxes and adjustments'})
@@ -138,6 +140,10 @@ def execute_study(directory,request):
         frame.to_csv(directory/(key+'.csv'),index=False)
         tables.append({'id':key,'label':label,'row_count':len(frame)})
     bills={'no_battery':result['baseline_bill'],'cost_optimal':result['bill']}
+    electrical,metrics,validation,electrical_warnings = replay_study({
+        'no_battery':(inputs.assign(native_load_kw=inputs.grid_import_kw,pv_available_kw=0.,grid_export_kw=0.),None,0.),
+        'cost_optimal':(result['dispatch'].assign(pv_available_kw=0.,grid_export_kw=0.),request['battery'],0.)},
+        request['account'],progress=lambda message:write_json(directory/'progress.json',{'message':message}))
     comparison=[]; costs=[]; details=[]
     for scenario,bill in bills.items():
         wear=result['degradation_cost'] if scenario=='cost_optimal' else 0
@@ -153,6 +159,7 @@ def execute_study(directory,request):
             comparison[-1]['emissions_kgCO2'] = float((dispatch.grid_import_kw.to_numpy() * carbon).sum() * .25 / 1000)
         costs.extend(dict(scenario=scenario,component=k,amount=v) for k,v in bill['line_items'].items())
         details.extend(dict(scenario=scenario,**row) for row in bill['energy_detail'])
+    for row,metric in zip(comparison,metrics):row.update(metric)
     save('comparison','Municipal strategy comparison',pd.DataFrame(comparison))
     save('costs','Itemized utility bills',pd.DataFrame(costs))
     save('energy','Energy tiers and TOU charges',pd.DataFrame(details))
@@ -161,11 +168,12 @@ def execute_study(directory,request):
         inputs['gCO2/kWh'] = carbon
     save('inputs','Native load inputs',inputs)
     save('dispatch-cost_optimal','Optimized battery dispatch',result['dispatch'])
+    for table in electrical:save(*table)
     warnings=result['warnings']+[
         ('Battery wear is included in optimization.' if request.get('include_degradation_in_optimization',False) else 'Storage dispatch minimizes the utility bill; estimated battery wear is reported separately.'),
         'Import-only load and storage study. Solar generation, export settlement and standby service are not modeled.',
-        'No AC power-flow replay is performed for this municipal billing study; electrical network feasibility is not established.',
         'Existing assignment is confirmed or explicitly assumed for this scenario; no automatic utility rate transfer.']
+    warnings.extend(electrical_warnings)
     if request['mode']=='alternative_location':
         warnings.insert(0,'HYPOTHETICAL ALTERNATIVE LOCATION: this utility is not claimed to serve the original site.')
     if carbon_provenance:
@@ -173,5 +181,5 @@ def execute_study(directory,request):
     write_json(directory/'result.json',dict(schema_version=4,tables=tables,warnings=warnings,
         request=request,engine=json.loads((directory/'engine.json').read_text()),bills=bills,
         optimization={k:result[k] for k in ('solver','objective_lower_bound','optimality_gap_bound_dollars','regime')},
-        tariff=result['bill']['tariff'],input_provenance={'resolution':request['resolution'],'account':request['account'],'carbon':carbon_provenance}))
+        tariff=result['bill']['tariff'],input_provenance={'resolution':request['resolution'],'account':request['account'],'carbon':carbon_provenance},ac_validation=validation))
     write_json(directory/'progress.json',{'message':'Municipal bills reconciled and dispatch saved'})

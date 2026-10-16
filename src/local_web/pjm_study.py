@@ -1,6 +1,5 @@
 """Schema 8 regional candidate; immutable inputs and ordinary queued workers."""
 from dataclasses import asdict
-from datetime import date
 import json
 from pathlib import Path
 import numpy as np

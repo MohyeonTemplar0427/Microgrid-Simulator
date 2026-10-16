@@ -1407,22 +1407,6 @@ def simulate_equipment_pv_stages(
     )
 
 
-def simulate_equipment_available_ac_kw(
-    interval_index: IntervalIndex,
-    weather_frame: pd.DataFrame,
-    configuration: EquipmentSpecificPVConfiguration,
-) -> pd.Series:
-    """Return only ``pv_available_kw``, for callers that want nothing else."""
-
-    stages = simulate_equipment_pv_stages(
-        interval_index, weather_frame, configuration
-    )
-
-    return pd.Series(
-        stages.diagnostics[PV_AVAILABLE_KW].to_numpy(), name=PV_AVAILABLE_KW
-    )
-
-
 def design_warnings(
     configuration: EquipmentSpecificPVConfiguration,
 ) -> tuple[str, ...]:

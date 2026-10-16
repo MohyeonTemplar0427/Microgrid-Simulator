@@ -1,0 +1,286 @@
+--- PDF page 1 ---
+Virginia Electric and Power Company
+
+Schedule 6VP
+LARGE GENERAL SERVICE
+VARIABLE PRICING
+
+_________
+
+
+        (Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+I. APPLICABILITY
+
+This Schedule is applicable, on a voluntary basis, to the supply of 10,000 kW or more to
+any Customer who requires permanent service and who has an annual average demand of 5,000
+kW or more as determined by dividing the historic annual kWh usage by the number of hours for
+the year.  Should the Customer’s annual average demand fall below 5,000 kW, the Customer
+may continue to be served under this Schedule, provided that the potential exists to average
+5,000 kW at the Customer’s facility.  Otherwise, service under this Schedule shall cease effective
+with the Customer’s anniversary date.
+
+II. 30-DAY RATE
+
+A. Basic Customer Charge
+Basic Customer Charge $193.68 per billing month
+
+B. Plus Contract Demand Charge
+
+First 12,000 kW of Contract Demand (included in the Capacity Surcharge)
+Additional kW of Contract Demand  @ $0.883 per kW
+
+Where the Customer is served at a voltage below 2 kV, the Contract Demand
+Charge will be increased by $0.883 per kW of Contract Demand.
+
+C. Plus Energy Charge
+
+1. All Base kWh @  5.5435¢ per kWh
+
+2. All Peak kWh will be categorized according to the
+following table and billed at the rates specified.
+
+
+
+
+--- PDF page 2 ---
+Virginia Electric and Power Company
+
+Schedule 6VP
+LARGE GENERAL SERVICE
+VARIABLE PRICING
+
+_________
+
+ (Continued)
+
+        (Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+II. 30-DAY RATE (Continued)
+
+ For the period May 1 through September 30:
+
+Day
+Classification
+On-Peak
+Period
+On-Peak
+Rate Per kWh
+Off-Peak
+Rate Per kWh
+
+A 10 a.m.-10 p.m. 13.4094¢ 6.0917¢
+B 10 a.m.-10 p.m.   6.0944¢ 4.6991¢
+C 6 a.m.-10 p.m.   5.0425¢ 4.0371¢
+
+ For the period October 1 through April 30:
+
+Day
+Classification
+On-Peak
+Period
+On-Peak
+Rate Per kWh
+Off-Peak
+Rate Per kWh
+
+A 6 a.m.-  1 p.m. &
+5 p.m.-10 p.m. 13.4094¢ 6.5640¢
+B 6 a.m.-  1 p.m. &
+5 p.m.-10 p.m.  6.6842¢ 5.3038¢
+C 6 a.m.-10 p.m.  5.5045¢ 4.4084¢
+
+(NOTE:  Classification A will apply for no more than 28 days during any calendar
+year, and classification C will apply for no less than 60 days during any calendar
+year.)
+
+The energy charges in this schedule contain a base fuel cost of 2.2462 cents per
+kilowatt-hour.
+
+
+--- PDF page 3 ---
+Virginia Electric and Power Company
+
+Schedule 6VP
+LARGE GENERAL SERVICE
+VARIABLE PRICING
+
+_________
+
+ (Continued)
+
+        (Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+II. 30-DAY RATE (Continued)
+
+D. Plus Capacity Surcharge (applicable hours only)
+
+All applicable kWh, up to a maximum of 12,000 times the number of applicable
+hours for the current billing month @ 42.6¢ per kWh
+
+Any additional kWh during applicable hours @ 36.0¢ per kWh
+
+E. The energy charges in II.C., above, shall be increased or decreased by any
+applicable Riders.
+
+F. Where the Customer is served at a voltage below 2 kV, the charges in
+Paragraphs II.C. and II.E. will be increased by 2%.
+
+G. The minimum charge shall be such as may be contracted for, but not less than the
+Basic Customer Charge, plus $ 0.883 ($1.766 for service below 2 kV) per kW of
+Contract Demand, plus the base fuel cost of 2.2462 cents per kWh, and increased
+or decreased by any applicable Riders
+
+III. LATE PAYMENT CHARGE
+
+Current bills are due and payable from the billing date.  When bills are not paid in full
+within twenty-five (25) days from the billing date, a late payment charge of 1% per month, based
+on the unpaid balance, will be added to the current bill.
+
+IV. DETERMINATION OF CONTRACT DEMAND
+
+The Contract Demand shall be the maximum demand the Company is to supply, but not
+less than 10,000 kW.  Should the highest average kW demand measured during any 30- minute
+interval of the current billing month, or 85% of the highest average kVA demand measured
+similarly, exceed the Contract Demand, then the Contract Demand shall be increased by such
+excess demand.
+
+--- PDF page 4 ---
+Virginia Electric and Power Company
+
+Schedule 6VP
+LARGE GENERAL SERVICE
+VARIABLE PRICING
+
+_________
+
+ (Continued)
+
+        (Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+V. DETERMINATION OF BASE DEMAND
+
+For each day of the current billing month, the Company will determine the lowest 30-
+minute average kW demand measured for the day.  From the daily minimum demands of the
+current billing month, the Company will select the highest daily minimum.  That value will be
+compared with the demand values determined similarly for the previous eleven billing months,
+and from these twelve values, the Base Demand is determined as the minimum of the twelve.
+
+VI. DETERMINATION OF BASE AND PEAK ENERGY
+
+For each 30 -minute interval of the current billing month, any energy purchased during
+that interval, up to 50% of the Base Demand, is determined to be Base kWh, with any additional
+energy purchased determined to be Peak kWh.  (The 50% value relates to the length of the
+demand interval.  Had such interval been 60 minutes, the percentage would have been 100%.)
+
+VII. NOTIFICATION OF DAY CLASSIFICATION
+
+The energy charge day classification for each day will be determined by the Company
+and will be available via the Internet (at a site to be designated by the Company) by 6 p.m. the
+preceding day.  Should the Company fail to update the Internet site by 6 p.m., the classification
+shall default to "C."
+
+VIII. APPLICATION / NOTIFICATION OF CAPACITY SURCHARGE RATE
+
+A. The Capacity Surcharge rate will apply for no more than 150 hours during any
+calendar year.  Typically, such hours will include those hours of requested
+curtailment in accordance with Schedule 6C.  Factors considered by the Company
+in determining whether or not the Capacity Surcharge rate will apply include, but
+are not limited to:  a) the Company's reserve margin, b) the Company's system
+load, c) unanticipated high marginal operating costs, d) the year -to-date number
+of Capacity Surcharge hours already applied, e) whether or not the Company has
+implemented curtailment under Schedule 6C and/or classified a day as "A" in
+accordance with Schedule 10.  The Company will provide no less than two hour's
+notice of application of the Capacity Surcharge rate.
+
+B. A primary and secondary notification procedure shall be established which are
+mutually agreeable to the Customer and the Company.  In the event that such
+procedures require a dedicated telephone line, such line shall be provided at the
+Customer's expense.
+
+--- PDF page 5 ---
+Virginia Electric and Power Company
+
+Schedule 6VP
+LARGE GENERAL SERVICE
+VARIABLE PRICING
+
+_________
+
+ (Continued)
+
+Filed 01-17-25
+Electric-North Carolina
+Superseding Filing Effective For Usage On and After
+11-01-24, On a Temporary Basis, Subject to Refund.
+This Filing Effective For Usage On and After 02-01-25.
+
+Docket No. E-22, Sub 694
+IX. METER READING AND BILLING
+
+When the actual number of days between meter readings is more or less than 30 days, the
+Basic Customer Charge, the Contract Demand Charge, and the fixed charge components of the
+minimum charge of the 30- day rate each will be multiplied by the actual number of days in the
+billing period and divided by 30.
+
+X. SERVICE AVAILABLE
+
+Normally the Company will supply the equipment necessary and will deliver to the
+Customer, in accordance with the Company's applicable Terms and Conditions at one Delivery
+Point mutually satisfactory to the Customer and the Company, 60 cycle alternating current
+electricity of the phase and voltage desired by the Customer at said Delivery Point, provided
+electricity of the phase and voltage desired by the Customer is available generally in the area in
+which electricity is desired.
+
+XI. PARALLEL OPERATION AND/OR INTERCONNECTION SERVICE
+
+A Customer , operating a  Generating Facility  (as defined in Section  XXIV of the
+Company’s filed Terms and Conditions)  in parallel with the Company's facilities , may elect
+service under this schedule provided that the Customer’s interconnection with the Company’s
+facilities shall be made in accordance with the following provisions:
+
+A. For a Generating Facility interconnected pursuant to Section XXIV , the Customer
+shall install, own, and maintain relays and protective apparatus in accordance with
+Section XXIV.
+
+B. If Section XXIV does not apply to the Customer’s interconnection of its
+Generating Facility , suitable relays and protective apparatus shall be furnished,
+installed, and maintained at the Customer's expense in accordance with
+specifications furnished by the Company.  The relays and protective apparatus
+shall be subject, at all reasonable times, to inspection by the Company's
+authorized representative.
+
+XII. TERM OF CONTRACT
+
+The term of contract for the purchase of electricity under this schedule shall be such as
+may be mutually agreed upon, but for not less than one year, continuing thereafter for additional
+one-year terms, unless either party provides at least thirty days written notice of termination prior
+to the end of any term.

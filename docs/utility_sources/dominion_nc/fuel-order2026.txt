@@ -1,0 +1,868 @@
+--- PDF page 1 ---
+STATE OF NORTH CAROLINA
+UTILITIES COMMISSION
+RALEIGH
+DOCKET NO. E-22, SUB 753
+BEFORE THE NORTH CAROLINA UTILITIES COMMISSION
+In the Matter of
+Application of Virginia Electric and Power
+Company, d/b/a Dominion Energy North
+Carolina for Authority to Adjust its Electric
+Rates and Charges and Revise its Fuel Factor
+)
+)
+)
+)
+ORDER APPROVING FUEL
+CHARGE ADJUSTMENT AND
+REQUIRING FILING OF PROPOSED
+CUSTOMER NOTICE
+HEARD: Tuesday, November 18, 2025, at 10:00 a.m., in Commission Hearing Room
+2115, Dobbs Building, 430 North Salisbury Street, Raleigh, North Carolina
+27603
+BEFORE: Commissioner Karen M. Kemerait, Presiding; Chairman William M. Brawley;
+and Commissioners Floyd B. McKissick, Jr., Tommy Tucker, and Donald van
+der Vaart
+APPEARANCES:
+For Virginia Electric and Power Company, d/b/a Dominion Energy North Carolina :
+Andrea R. Kells, McGuireWoods LLP, 501 Fayetteville Street, Suite  500,
+Raleigh, North Carolina 27601
+For the Using and Consuming Public:
+William E. H. Creech and William S. F. Freeman, Public Staff  – North
+Carolina Utilities Commission, 4326 Mail Service Center, Raleigh, North
+Carolina 27699-4300
+BY THE COMMISSION: North Carolina General Statute § 62-133.2 (Fuel Statute)
+requires the Commission to conduct annual fuel charge adjustment proceedings for electric
+utilities engaged in the generation or production of electricity by fossil or nuclear fuel s.
+Commission Rule R8 -55 schedules an annual fuel and fuel -related costs adjustment
+hearing for Virginia Electric and Power Company, d/b/a Dominion Energy North Carolina
+(DENC) and requires that DENC use a test period of 12 months ending June 30.
+On July 29, 2025, the North Carolina General Assembly enacted Senate Bill  266
+as Session Law 2025-78 (S.L. 2025-78). Section 3 of S.L. 2025-78, entitled “Fuel Cost
+Recovery Modifications,” amends the Fuel Statute  governing the framework for electric
+public utilities to recover their fuel and fuel-related costs through annual rider adjustment
+
+--- PDF page 2 ---
+2
+
+proceedings. Through S.L. 2025-78, the General Assembly amended the Fuel Statute by,
+among other things: (1)  expanding the scope  of fuel and fuel-related costs that can be
+recovered through annual fuel rider proceedings to include the total delivered cost of
+power purchases and emission expenses; and (2)  amending the procedure for seeking
+recovery of such costs, including requiring adjustments to avoid any potential double
+recovery between fuel  and base rates. See N.C.G.S. § 62-133.2(a1), (a4), and (d).
+S.L. 2025-78 did not introduce any new fuel or fuel-related costs that were not previously
+recoverable but instead shifted the recovery mechanism for certain portions of these costs
+from base rates to the fuel rider and established a new mechanism in subsection (a4) to
+ensure that there is no double recovery of costs.
+Commission Rule R8-55 provides that: (1) the fuel charge adjustment proceeding
+for DENC will be held the third Tuesday of November each year; (2)  DENC shall file its
+direct testimony; and (3) DENC shall publish notice prior to the hearing.
+PROCEDURAL HISTORY
+On August 12, 2025, DENC filed its application for a fuel charge adjustment, along
+with accompanying testimony and exhibits, pursuant to N.C.G.S. § 62-133.2 and
+Commission Rule R8-55 relating to fuel and fuel -related charge adjustments for electric
+utilities (Application). The Application requested a change in DENC’s fuel charges
+effective for service rendered on and after February 1, 2026. The Application was
+accompanied by the testimony and exhibits of Katherine  E. Farmer, Dale E. Hinson,
+Tom A. Brookmire, John Harrell, Richard A. DeJarnette, and Li-Chun (Cynthia) Yeh.
+The intervention and participation of the Public Staff – North Carolina Utilities
+Commission (Public Staff) in this docket is recognized pursuant to N.C.G.S. § 62 -15(d)
+and Commission Rule R1-19(e).
+On August 19, 2025, Carolina Industrial Group for Fair Utility Rates I (CIGFUR  I)
+filed a Petition to Intervene, which was granted by Commission order on August 29, 2025.
+On September 16, 2025, DENC filed Errata Testimonies for DENC witnesses
+Farmer and Yeh.
+On October 1, 2025, the Commission issued an Order Scheduling Hearings,
+Establishing Procedural and Filing Requirements, and Requiring Public Notice
+(Scheduling Order). The Scheduling Order, among other things, scheduled a hearing on
+November 18, 2025, for the purpose of receiving public and expert witness testimony,
+established discovery guidelines, and established deadlines for the  filing of petitions to
+intervene, intervenor testimony and exhibits, and DENC’s rebuttal testimony and exhibits.
+On October 13, 2025, DENC filed Supplemental Testimony and Schedules of
+DENC witnesses Farmer, DeJarnette, and Yeh.
+
+--- PDF page 3 ---
+3
+
+On October 14, 2025, DENC filed its Notice of Applications for Rider Rate
+Adjustments and Public Hearings and its Motion for Waiver of Notice Publication
+Requirements. DENC’s Motion for Waiver of Notice Publication Requirements requested
+that DENC be relieved from the requirements of Ordering Paragraph 3 of the Scheduling
+Order as DENC was not able to commence notice publication at least 30 days prior to the
+hearing. DENC further requested to be allowed to publish the Public Notice in newspapers
+of general circulation in its service territory as soon as practicable following Commission
+approval of the Public Notice. The Commission issued an Order Approving Public Notice
+and Granting Motion for Waiver on October 16, 2025.
+On October 22, 2025, the Public Staff filed  its notices and affidavits of witnesses
+Hemanth Meda and Caleb A. Hill.
+On October 22, 2025, Nucor Steel-Hertford filed a Petition to Intervene, which was
+granted by Commission order on October 24, 2025.
+On October 31, 2025, three filings were made: (1) the Public Staff filed an Errata
+Sheet showing corrections to the direct testimony of witness Hill; (2) DENC filed a Letter
+in Lieu of Rebuttal Testimony; and (3) DENC and the Public Staff filed a Joint Motion to
+Excuse Witnesses and Cancel Evidentiary Hearing (Joint Motion).
+On November 6, 2025, the Commission granted the Joint Motion and canceled the
+expert witness hearing scheduled for November 18, 2025 . The Commission also
+accepted into evidence the testimony and exhibits of DENC witnesses Farmer, Hinson,
+Brookmire, Harrell, DeJarnette, and Yeh ; the testimony and exhibits of  Public Staff
+witness Hill; and the affidavit of Public Staff affiant Meda. Further, the Commission directed
+that parties file proposed orders and briefs on or before December 22, 2025.
+This matter came on for public hearing as scheduled on November 18, 2025,
+before Hearing Examiner Erin Gibbs. No public witnesses appeared to testify at the hearing.
+On December 19, 2025, a Joint Proposed Order was filed by DENC and the Public
+Staff.
+JURISDICTION
+DENC is a duly organized public utility operating in the State of North Carolina that
+is engaged in the business of developing, generating, transmitting, distributing, and
+selling electric power to the public in North Carolina, and  is subject to the jurisdiction of
+the Commission as a public utility. DENC is lawfully before the Commission based upon
+its Application filed pursuant to the Fuel Statute and Commission Rule R8-55.
+STANDARD OF REVIEW
+N.C.G.S. § 62-60 provides that “[f]or the purpose of conducting hearings, making
+decisions and issuing orders, and in formal investigations where a record is made of
+
+--- PDF page 4 ---
+4
+
+testimony under oath, the Commission shall be deemed to exercise functions judicial in
+nature . . . .” When acting as a court of record, the Commission must apply the rules of
+evidence “in so far as practicable” and must base its decision upon competent, m aterial,
+and substantial evidence upon consideration of the whole record. N.C.G.S.  § 62-65(a).
+Further, “[a]ll evidence, including records and documents in the possession of the
+Commission of which it desires to avail itself, shall be made a part of the re cord in the
+case by definite reference thereto at the hearing.” Id.
+Based upon the foregoing, DENC’s verified Application, the testimony, exhibits,
+appendices, and workpapers received into evidence, and the entire record in this
+proceeding, the Commission makes the following
+FINDINGS OF FACT
+1. The appropriate test period for purposes of the deferral balance in this
+proceeding is the 12 months that ended June 30, 2025.
+2. DENC’s fuel procurement practices during the test period were
+reasonable and prudent.
+3. The per books test period system sales are approximately 97,581,697,514
+kilowatt-hours (kWh).  The per books test period system generation is 101,825,373
+megawatt-hours (MWh), which includes various types of generation as follows:
+Generation Types      MWh
+Nuclear 28,328,915
+Coal 6,103,090
+Heavy Oil  0
+Wood 888,993
+Combined Cycle and Combustion Turbine 41,603,258
+Solar, Wind, and Hydro – Conventional and
+Pumped Storage
+
+4,604,952
+Net Power Transactions 23,502,028
+Less: Energy for Pumping (3,205,863)
+4. DENC’s baseload plants were managed prudently and efficiently during the
+test period to minimize fuel and fuel-related costs.
+5. The nuclear capacity factor appropriate for use in this proceeding is 88.3%,
+which is the estimated nuclear capacity factor for the 12 months beginning
+February 1, 2026.
+6. The adjusted test period system sales for use in this proceeding are
+101,047,584,209 kWh.
+
+--- PDF page 5 ---
+5
+
+7. The adjusted test period system generation for use in this proceeding is
+105,440,502 MWh, which is categorized as follows:
+Generation Types        MWh
+Nuclear 25,966,140
+Coal and Wood 7,601,318
+Heavy Oil 0
+Combined Cycle and Combustion Turbine 45,228,434
+Solar/Wind/Hydro 4,604,952
+Net Power Transactions 25,245,522
+Less: Energy for Pumping (3,205,863)
+8. A marketer percentage serves as a proxy  for fuel costs when actual fuel
+costs associated with power purchases are not available. A marketer percentage
+of 62% should be applied in this proceeding to approximate the projected fuel cost of such
+power purchases.
+9. DENC appropriately accounted for purchased capacity expense in its
+updated Experience Modification Factor  (EMF) and projected rate year fuel expense
+consistent with N.C.G.S. § 62-133.2(a1), as amended by S.L. 2025-78.
+10. The adjusted test period system fuel expense for use in this proceeding is
+$2,604,879,597.
+11. DENC’s methodology for calculation of the billing period rate is reasonable
+and appropriate for this proceeding.
+12. The reasonable and appropriate North Carolina retail class -specific base
+fuel factors as approved in Docket No. E-22, Sub 694 (DENC’s 2024 Rate Case) including
+the regulatory fee are as follows:
+Customer Class Base Fuel Factor
+Residential 2.3033 ¢/kWh
+SGS & PA 2.3011 ¢/kWh
+LGS 2.2909 ¢/kWh
+Schedule NS 2.2144 ¢/kWh
+6VP 2.2462 ¢/kWh
+Outdoor Lighting 2.3033 ¢/kWh
+Traffic 2.3033 ¢/kWh
+
+--- PDF page 6 ---
+6
+
+13. The reasonable and appropriate prospective North Carolina retail
+class-specific Rider A fuel factors including the regulatory fee are as follows:
+Customer Class Prospective Fuel Factor (Rider A)
+Residential 0.5198 ¢/kWh
+SGS & PA 0.3000 ¢/kWh
+LGS 0.1750 ¢/kWh
+Schedule NS (0.0096 ¢/kWh)
+6VP (0.0119 ¢/kWh)
+Outdoor Lighting 0.4672 ¢/kWh
+Traffic (0.0143 ¢/kWh)
+14. The appropriate North Carolina retail test period jurisdictional fuel expense
+under-collection is $5,275,974 and the adjusted North Carolina retail jurisdictional test
+period system sales are 4,128,728,136 kWh.
+15. DENC has appropriately accounted for the over - and under -recoveries
+through Rider B1 of the EMF balance incurred during the test period for Docket
+No. E-22, Sub 644 as directed by the Commission in DENC’s 2024 fuel charge
+adjustment proceeding in Docket No. E-22, Sub 712 (2024 Fuel Case).
+16. The appropriate EMF or Rider B for this proceeding (including the regulatory
+fee and the Rider B1 balance) for the February  1, 2026, through January 31, 2027, fuel
+charge billing period is as follows:
+Customer Class EMF Billing Factor (Rider B)
+Residential 0.1023 ¢/kWh
+SGS &PA 0.0481 ¢/kWh
+LGS 0.1432 ¢/kWh
+Schedule NS 0.2265 ¢/kWh
+6VP 0.2338 ¢/kWh
+Outdoor Lighting 0.0687 ¢/kWh
+Traffic (0.1203 ¢/kWh)
+17. The total fuel factors to be billed to DENC’s North Carolina retail
+customers during the February 1, 2026, through January 31, 2027 fuel charge  billing
+period, including the regulatory fee, are as follows:
+Customer Class Total Fuel Factor
+Residential 2.9254 ¢/kWh
+SGS &PA 2.6492 ¢/kWh
+LGS 2.6091 ¢/kWh
+Schedule NS 2.4313 ¢/kWh
+6VP 2.4681 ¢/kWh
+Outdoor Lighting 2.8392 ¢/kWh
+Traffic 2.1687 ¢/kWh
+
+--- PDF page 7 ---
+7
+
+EVIDENCE AND CONCLUSION FOR FINDING OF FACT NO. 1
+This finding of fact is essentially procedural in nature and is not contested.
+N.C.G.S. § 62-133.2(c) sets out the verified, annualized information that each electric
+utility is required to provide to  the Commission in an annual fuel charge adjustment
+proceeding for an historical 12-month test period. Commission Rule R8-55(b) prescribes
+the 12 months ending June 30 as the test period for DENC.
+EVIDENCE AND CONCLUSION FOR FINDING OF FACT NO. 2
+The evidence supporting this finding of fact is contained in the direct testimony,
+exhibits, and workpapers of DENC witnesses Hinson and Brookmire.
+Commission Rule R8-52(b) requires each electric utility to file a Fuel Procurement
+Practices Report at least once every 10 years and each time the utility’s fuel procurement
+practices change. DENC’s current fuel procurement practices  for purposes of this
+proceeding were filed with the Commission in Docket No. E -100, Sub 47A, on
+November 30, 2023.
+In DENC witness Hinson’s direct testimony, he discussed the trends that affected
+fuel commodity markets during the test period. He stated that price volatility was, and will
+likely continue to be , prevalent across the natural gas, coal, oil, and biomass fuel
+commodities. Hinson Direct Test. at 2.  DENC witness Hinson stated that  key market
+fundamentals pointed to relatively strong pricing for natural gas when comparing the test
+period to the prior year . He further noted that the summer of 2024 began with relatively
+weak prices and a healthy domestic storage surplus alongside a production pullback .
+However, witness Hinson indicated that production did not keep pace with strong power
+generation demand and steady liquefied natural gas (LNG) exports, so the national
+storage surplus diminished.  He stated that p ost-winter 2024/25, both U.S. and E .U.
+storage inventories were lower than the prior year, supporting LNG export demand and
+higher domestic gas prices.  Id. at 2–3. Witness Hinson testified that, although domestic
+production had recently increased to near-record levels of about 106 billion cubic feet
+(Bcf)/day, steady LNG export demand (about 15 Bcf/day currently,  with export capacity
+additions that could reach up to 25 Bcf/day by 2028) and storage inventory shortfalls
+contributed to an approximate 25% increase in natural gas prices for the test period
+compared to the prior year. Id. at 3.
+DENC w itness Hinson described DENC’s fuel procurement practices and
+explained that DENC continued to follow the same procurement practices that it had in the
+past in accordance with its report filed in Docket No. E-100, Sub 47A. He testified that
+DENC continued to follow its fuel hedging program as discussed in its Fuel Procurement
+Strategy Report and that DENC’s comprehensive approach to hedging ( e.g., price
+hedging, diverse fuel supply access, and diverse generation portfolio) had, and continues
+to have, a material mitigating effect on fuel cost volatility. Id. at 5. He also discussed the
+activities that DENC deploys to mitigate fuel cost expenses while providing safe and
+reliable electricity for customers. Id. at 5–6.
+
+--- PDF page 8 ---
+8
+
+DENC witness Hinson testified that the completion of the Mountain Valley Pipeline
+(MVP) had resulted in lower natural gas supply costs for DENC. Id. at 6–7. He  explained
+the importance of both short-term and long-term pipeline capacity acquisitions to provide
+greater access to competitively priced natural gas supplies and greater fueling flexibility,
+given the Mid-Atlantic’s frequent pipeline constraints and high natural gas price volatility.
+He discussed how DENC had recently executed agreements to significantly improve fuel
+capabilities and stated that DENC continued to pursue incremental opportunities for firm
+pipeline transportation (including storage), natural gas peaking services, and on-site LNG
+and/or oil fuel to enhance its existing pipeline capacity portfolio and help s erve peak
+electric generation demand periods. Id. at 8–9.
+DENC w itness Hinson testified that DENC was recently awarded, through a
+FERC-approved competitive process, a new pipeline service encompassing natural gas
+liquefaction, 2.1 Bcf of storage capacity, and firm transportation on the Cove Point LNG,
+LP pipeline. Id. at 9.  He further noted that,  on February 24, 2025, the  Virginia State
+Corporation Commission amended Certificates of Public Convenience and Necessity for
+the Greensville County and Brunswick County  stations to allow DENC to construct and
+place into service a  2.0 Bcf LNG tank  with associated liquefaction  and vaporization
+capabilities adjacent to the Greensville County Power Station, serving both Brunswick and
+Greensville, with an  anticipated in-service date of late 2027.  Id. DENC witness Hinson
+stated that the Cove Point LNG service and the LNG tank project will  allow DENC to
+supplant third-party peaking supply, which was historically contracted at prevailing market
+prices, with flexible fueling and delivery characteristics that align well with generation plant
+fueling requirements using off-peak priced natural gas supplies. He concluded that these
+developments strengthen the reliability of DENC’s pipeline capacity portfolio, help mitigate
+gas fuel costs by providing a competitively priced firm supply during periods of high cost
+and high demand, and provide incremental fuel assurance across the natural gas -
+fired generation fleet. Id. at 9–10.
+Regarding natural gas procurement, DENC witness Hinson explained that DENC
+maintained a disciplined procurement plan to ensure a reliable supply of natural gas at
+competitive prices. He stated that DENC use d a combination of day -ahead, monthly,
+seasonal, and multiyear physical purchases obtained through periodic solicitations and the
+open market to serve its gas fleet. Id. at 10. DENC witness Hinson further testified that
+DENC evaluated its diverse portfolio of pipeline and storage contracts to determine the
+most reliable and economical delivered fuel options for each station and noted that DENC’s
+use of transportation contracts provided access to multiple supply regions and trading
+points from the Marcellus shale to the Southeast. He stated that DENC actively participated
+in short-term interstate capacity markets to (if available) buy capacity when needed or sell
+during low-generation periods or outages. Id. at 10–11. DENC witness Hinson testified that
+DENC-owned natural gas-fired generation accounted for as much as 59% and, on average,
+52% of DENC’s electricity generation during the test period. Id. at 11.
+Concerning coal procurement, DENC w itness Hinson testified that DENC
+employed a multiyear physical procurement plan to ensure a reliable supply of coal,
+delivered to  its generating stations by truck or rail, at competitive prices. He stated that
+
+--- PDF page 9 ---
+9
+
+DENC accomplished this by procuring its long -term coal supply needs primarily through
+periodic solicitations and secondarily on the open market for short-term or spot needs.
+DENC witness Hinson indicated that doing so created a layered portfolio with staggered
+terms and blended prices, supporting reliability and limiting exposure to dramatic market
+swings. He further noted that DENC optimized the operational flexibility of the coal fleet,
+including on -site fuel storage, to take advantage of commodity price differentials for
+customers’ benefit. Id. at 11–12.
+DENC witness Hinson also testified that DENC has a varied procurement strategy
+for its biomass stations depending on their geographical region. He stated that DENC’s
+biomass stations at Hopewell and Southampton continued to be served by multiple
+suppliers under both short- and long-term agreements, which enabled DENC to increase
+the reliability of its biomass supply by diversifying its supplier base. He also noted that
+DENC purchase d long-term fuel supply through one supplier  for its Altavista Power
+Station and procured biomass needs at the co-fired Virginia City Hybrid Energy Center via
+short- and long-term contracts with various suppliers. Id. at 12.
+Finally, DENC witness Hinson described DENC’s oil procurement practices,
+indicating that DENC purchased No. 2 fuel oil requirements on the spot market and
+optimized its inventory, storage, and transportation to ensure reliable supply at its power
+generating facilities. Id. at 12–13.
+In DENC witness Brookmire’s direct testimony, he testified that DENC continued to
+follow the same nuclear fuel procurement practices as it had in the past in accordance with
+the procedures filed in Docket No. E-100, Sub 47A. Brookmire Direct Test. at 2. Moreover,
+he reported that the 2022 Russian invasion of Ukraine and the resulting ongoing conflict
+has continued to impact the front-end nuclear fuel component markets, and he noted that
+the impacts on conversion and enrichment markets were the most pronounc ed. DENC
+witness Brookmire stated that both spot and term prices for conversion and enrichment
+were significantly higher and would likely remain higher than prior to the invasion due to
+the Russian supply becoming limited or unavailable. Id. at 3.
+DENC witness Brookmire further testified that Russia is a major global nuclear fuel
+supplier, particularly with respect to uranium enrichment, and that impacts to global supply
+affect global market pricing, while supply to the United States is limited by the Russian
+Suspension Agreement. He stated that the United States government ban on Russian
+imports of enriched uranium is expected to place ongoing additional pressure on
+conversion and enrichment supply to the U nited States  and other Western markets.
+DENC witness Brookmire further explained that to reduce dependence on Russian supply,
+the pricing required to support long-term investment in new Western production capacity
+is driving market pricing for conversion and enrichment. He noted that uranium
+pricing, especially term pricing, is also now more tied to the incremental pricing required
+for new production investment and to support anticipated future growth in global nuclear
+power generation, although this market change  was an expected and increasing trend
+prior to the Russian invasion of Ukraine. Id. at 3. Specifically, DENC witness Brookmire
+stated that spot and term prices for uranium stabilized in 2025,  that conversion prices
+
+--- PDF page 10 ---
+10
+
+reflected a tightness in near term availability, and that since May 2024, the spot price for
+enrichment and the term base escalated price had increased approximately 6% and 3%,
+respectively. Id. at 4–5.
+DENC w itness Brookmire stated that these changes in market costs ha d not
+significantly impacted DENC’s projected near-term costs because DENC’s mix of
+longer-term front-end component contracts reduced its exposure to the market  volatility
+that has been occurring over the past several years. He pointed out that DENC’s market
+activity in recent years and its ability to  execute more  market-based and fixed price
+contracts allowed it to take advantage of prior lower prices to customers’ benefit. DENC
+witness Brookmire further noted that the 18-month refueling schedule for DENC’s nuclear
+plants delayed the full effect of any significant changes in a component price. Id. at 5–6.
+No other party provided evidence on this issue in this proceeding.
+Based upon the competent, material, and substantial evidence in the record, the
+Commission concludes that DENC’s fuel procurement and power purchasing practices
+during the test period are reasonable and prudent.
+EVIDENCE AND CONCLUSION FOR FINDING OF FACT NO. 3
+The evidence supporting this finding  of fact is contained in  DENC’s verified
+Application and the direct testimony , exhibits, and workpapers  of DENC witnesses
+DeJarnette and Farmer.
+DENC Exhibit RAD-1, Schedule 3  identified that DENC’s per books test period
+system sales were approximately 97,581,697,514 kWh, and DENC Exhibit KEF -1,
+Schedule 3 identified that DENC’s per books test period system  generation was
+101,825,373 MWh. DENC Exhibit KEF-1, Schedule 3 further identified that the per books
+test period system generation is categorized as follows:
+Generation Types MWh
+Nuclear 28,328,915
+Coal 6,103,090
+Wood 888,993
+Combined Cycle and Combustion Turbine 41,603,258
+Solar, Wind, and Hydro Conventional and
+Pumped Storage 4,604,952
+Net Power Transactions 23,502,028
+Less: Energy for Pumping (3,205,863)
+No other party provided evidence on the level of per books test period system MWh
+sales or generation.
+
+--- PDF page 11 ---
+11
+
+Based on the competent, material, and substantial evidence in the record, the
+Commission concludes that the foregoing test period per books  levels of sales and
+generation are reasonable and appropriate for use in this proceeding.
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 4–5
+The evidence supporting these findings of fact is contained in  DENC’s verified
+Application; the direct testimony , exhibits, and workpapers  of DENC witnesses Farmer
+and Harrell; and the direct testimony of Public Staff witness Hill.
+For purposes of determining the EMF rider, Commission Rule R8-55(k) requires
+that a utility must achieve either: (1) an actual system-wide nuclear capacity factor in
+the test year that is at least equal to the national average capacity factor for nuclear
+production facilities based on the most recent five-year period available as reflected in the
+most recent Generating Availability Report of the North American Electric Reliability
+Corporation (NERC), appropriately weighted for size and type of plant; or (2) an average
+system-wide nuclear capacity factor, based upon  a two-year simple average of the
+system-wide capacity factors actually experienced in the test year and the preceding
+year, that is at least equal to the national  average capacity factor for nuclear production
+facilities based on the most recent five-year period available as reflected in the most recent
+NERC Generating Availability Report, appropriately weighted for size and type of plant.
+Commission Rule  R8-55(k) provides that, if a utility does not meet either
+standard, a rebuttable presumption is created that the increased cost of fuel was
+incurred imprudently, and a disallowance may be appropriate. Commission Rule
+R8-55(d)(1) provides that capacity factors for nuclear production facilities will be
+normalized based generally on the national average for nuclear production facilities as
+reflected in the most recent NERC Generating Availability Report, adjusted to reflect the
+unique, inherent characteristics of the utility facilities and any unusual events.
+In DENC witness Farmer ’s direct testimony, she described the performance of
+DENC’s major generating  units during the test period and testified that DENC’s net
+capacity factors during the test period for its four nuclear units were:
+North Anna Unit 1 102.1%
+North Anna Unit 2 92.2%
+Surry Unit 1 101.7%
+Surry Unit 2 89.6%
+Farmer Errata Direct. Test. at 2–3.
+DENC witness Farmer explained that the fleet -wide weighted average capacity
+factor for the test period was 96.3%. She noted that the aggregate capacity factor for
+DENC’s nuclear units during the test period and the preceding year was 93.7%. The
+five-year industry weighted average capacity factor for the period 2019–2023 for 800-999
+megawatt (MW) units, as reported by NERC in its latest  Generating Availability Report,
+
+--- PDF page 12 ---
+12
+
+was 93.3%. Based on these figures, DENC witness Farmer stated that DENC’s nuclear
+fleet performance was higher than the industry five -year average for comparable units
+based on both the two-year simple average metric and the test period metric. She
+additionally noted  that, for the same five -year period (i.e., 2019 –2023), DENC’s net
+nuclear capacity factor was 93.4%, compared to the national average of 93.3%.  Farmer
+Direct. Test. at 3–4.
+DENC witness Farmer also  testified that for the 12-month billing period ending
+January 31, 2027, North Anna Unit 1 was projected to operate at a net capacity factor of
+100.3%; North Anna Unit 2 was projected to operate at a net capacity factor of 70.1%; Surry
+Unit 1 was projected to operate at a net capacity factor of 100.3%; and Surry Unit 2 was
+projected to operate at a net capacity factor of 83.3%. She stated that  based on th ese
+projections, DENC normalized expected nuclear generation and fuel expenses in
+developing the proposed fuel cost rider. DENC Witness Farmer indicated that DENC’s
+projected fuel costs were based on an 88.3% nuclear capacity factor, which is what DENC
+anticipated for the 12 months from February 1, 2026, through January 31, 2027, the period
+the new rates will be in effect. Farmer Errata Direct. Test. at 4.
+In DENC witness Harrell’s direct testimony, he provided additional details regarding
+DENC’s nuclear performance during the test period ; discussed DENC’s primary
+objectives in the operation of its nuclear fleet , which are the safe, reliable, and efficient
+generation of electricity; and described the key elements DENC focuses on to achieve
+those objectives. He testified that DENC was prudent in its operations of the nuclear fleet
+and noted that capacity factor was just one metric used when determining prudent
+operations. DENC witness Harrell stated that both North Anna and Surry Power Stations
+had sustained high levels of plant performance and operated in a safe and reliable
+manner while maximizing generation. Harrell Direct. Test. at 3–4.
+DENC witness Harrell discussed how DENC schedule d and managed the impact
+to unit availability of refueling and maintenance outages for the nuclear fleet. He explained
+that DENC scheduled outages for refueling and maintenance in a systematic  manner to
+ensure that all planned activities were performed and that all scheduled repairs were
+completed. Id. at 4 –5. DENC witness Harrell  also described the work associated with
+DENC’s subsequent license renewal (SLR) requests for its nuclear units and how SLR
+work impacts planned refueling outages and nuclear unit capacity factors. Id. at 5–7. He
+addressed DENC’s approach to outage extensions and forced outages and  described
+how DENC analyzes such events.  Id. at 8 –9. Finally, DENC witness Harrell provided
+details regarding DENC’s planned outages during the test period, during which DENC
+completed refueling, planned maintenance, and inspection activities to ensure continued
+plant reliability. He testified that no unforced outages occurred during the test period.  Id.
+at 9 –11. DENC w itness Harrell concluded that DENC’s reasonable and prudent
+management of the  test period nuclear fleet outages demonstrated DENC’s continued
+commitment to achieving high nuclear fleet performance while maintaining safety and
+reliability. Id. at 11.
+
+--- PDF page 13 ---
+13
+
+In Public Staff witness Hill ’s direct testimony, he indicated that he had  reviewed
+DENC’s Application, prefiled testimony and exhibits, supplemental filings, fuel costs,
+baseload plant performance reports for the test period, documents related  to test year
+outages, and responses to data requests. He also indicated that he had  held conference
+calls with DENC. He concluded that DENC met the standards of Commission Rule
+R855(k), noting that a test-year nuclear capacity factor of 96.3% and a two-year average
+of 93.7% were both above the most recent NERC five-year weighted-average of 93.3%.
+Hill Direct Test. at 4–5.
+No other party provided evidence  contesting the projected normalized system
+nuclear capacity factor.
+Based on the competent, material, and substantial evidence in the record, the
+Commission concludes that DENC managed its baseload plants prudently and efficiently
+to minimize fuel and fuel -related costs , and that the 88.3% nuclear capacity factor is
+reasonable and appropriate for use in this proceeding.
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 6
+The evidence supporting this finding of fact is contained in DENC’s verified
+Application; the direct and supplemental testimony , exhibits, and workpapers  of DENC
+witness Yeh; and the affidavit of Public Staff affiant Meda.
+In DENC witness Yeh’s direct testimony, she indicated that she had calculated the
+proposed Fuel Rider Cost Rider A for the North Carolina jurisdiction and each customer
+class. She sponsored the calculation of the adjustment to DENC’s system sales for the
+twelve months that ended June 30, 2025, due to changes in usage, weather
+normalization, and customer growth, resulting in adjusted system sales of
+101,047,584,209 kWh.  Yeh Direct Test. at 1–3; DENC Direct Ex. LCY-1, sched. 1–2;
+DENC Supp. Ex. LCY-1, sched. 1–2. She stated that the adjustment was consistent with
+the methodology used in  the 2024 Fuel Case and DENC’s 2024 Rate Case . Yeh Direct
+Test. at 2.
+The Public Staff reviewed and did not oppose these adjustments. No other party
+provided evidence on these adjustments.
+Based on the foregoing competent, material, and substantial evidence in the
+record, the Commission concludes that the adjustments for changes in usage, weather
+normalization, and customer growth are reasonable and appropriate adjustments for use
+in this proceeding. The Commission further concludes that the adjusted system sales for
+the 12 months that ended June 30, 2025, are 101,047,584,209 kWh.
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 7
+The evidence supporting this finding of fact is contained in DENC’s verified
+Application and the direct testimony of DENC witness Farmer.
+
+--- PDF page 14 ---
+14
+
+In DENC witness Farmer ’s direct testimony, she presented an adjustment to per
+books MWh generation for the 12-month period that ended June 30, 2025, to incorporate
+nuclear generation based upon the expected future operating parameters for each unit.
+Other sources of generation were then normalized, including an adjustment for weather,
+customer growth, and increased usage. Farmer Direct Test. at 1–2. This methodology for
+normalizing test period generation resulted in an adjusted generation level of
+105,440,502 MWh, which is categorized as follows:
+Generation Types MWh
+Nuclear 25,966,140
+Coal and Wood 7,601,318
+Heavy Oil 0
+Combined Cycle and Combustion Turbine 45,228,434
+Solar/Wind/Hydro 4,604,952
+Net Power Transactions 25,245,522
+Less: Energy for Pumping (3,205,863)
+Farmer Direct Test. at 5–6; DENC Ex. KEF-1, sched. 4.
+No other party provided testimony on the adjusted test period system generation
+for use in this proceeding.
+Based upon the competent, material, and substantial evidence  in the record, the
+Commission concludes that the adjusted test period system generation level of
+105,440,502 MWh is reasonable and appropriate for use in this proceeding.
+EVIDENCE AND CONCLUSION FOR FINDING OF FACT NO. 8
+The evidence supporting this finding of fact is also contained in DENC’s verified
+Application and the direct testimony of DENC witness Farmer.
+In DENC w itness Farmer ’s direct testimony, she  testified that the system fuel
+expense included PJM Interconnection, LLC ’s (PJM) energy market purchases, energy
+power purchase agreements (PPAs) , and off -system sales . She further testified  that,
+generally, purchases from the PJM energy market and certain PPAs do not provide fuel
+cost data, and she explained that the marketer percentage is a proxy used to approximate
+the percentage of these purchase costs related to fuel and is applied to fuel expenses.
+DENC witness Farmer presented DENC’s updated calculation of the marketer percentage
+of 62%, which DENC included in the calculation of system projected fuel expense based
+on the PJM State of the Market Reports for 2023 and 2024 while using the same
+averaging method that was applied in the 2024 Fuel Case and DENC’s 2024 Rate Case.
+Farmer Direct. Test. at 7.
+No other party to the proceeding provided any evidence on this matter.
+
+--- PDF page 15 ---
+15
+
+Based on the competent, material, and substantial evidence in the record, the
+Commission concludes that it is reasonable for DENC to apply  a 62% marketer
+percentage to purchases from suppliers that do not provide DENC with actual fuel costs
+as a proxy for actual fuel costs associated with such purchases for the next EMF period.
+EVIDENCE AND CONCLUSION FOR FINDING OF FACT NO. 9
+The evidence supporting this  finding of fact is contained in the supplemental
+testimony of DENC witnesses Farmer and DeJarnette and the direct testimony of Public
+Staff witness Hill.
+As previously noted above, on July 29, 2025, the North Carolina General Assembly
+enacted S.L. 2025 -78. Although S.L. 2025.78 did not introduce any new fuel or
+fuel-related costs that were not previously recoverable, t he new law amended, among
+other things,  subsection (a1) of the Fuel Statute  to include the costs of purchases of
+capacity by the electric public utility in the “cost of fuel and fuel -related costs” that are
+recoverable through the Fuel Statute. Amended subsection (a3) of the Fuel Statute, the
+subsection that applies to DENC, further provides that the customer class components for
+purchased energy and capacity costs as permitted for recovery in subsection (4) of (a1)
+must be determined on a class demand basis.
+In DENC witness Farmer’s supplemental testimony, she updated DENC’s system
+fuel expense for the test period to include the impact of S.L. 2025 -78 on the proposed
+system fuel and fuel -related cost factors applicable to the February 1,  2026 through
+January 31, 2027 rate year. She further  testified that DENC is a member of PJM and
+participates in the PJM capacity market auctions to ensure that its capacity obligations
+are met. DENC witness Farmer explained that DENC’s purchased capacity expense was
+based on the cost of capacity resulting from those capacity auctions. She stated that a
+certain level of these purchased capacity costs was recovered in DENC’s base rates as
+approved in Docket No. E-22, Sub 694. DENC witness Farmer continued that, as enacted
+on July 29, 2025, S.L. 2025 -78 amended the North Carolina Fuel Statute to provide for
+recovery of purchased capacity related costs through the annual fuel factor proceeding.
+As a result, she stated that DENC is now permitted to recover purchased capacity
+expense through the annual fuel factor that is incremental to such expense already being
+recovered through base rates. Farmer Supp. Test. at 2–3.
+DENC witness Farmer further testified that as it relates to DENC, the revised Fuel
+Statute at subsection (a3) provides that the purchased energy and capacity costs must
+now be allocated among customer classes based on the electric public utility’s
+North Carolina peak demand for the prior year. As a result, she presented the total system
+fuel expense separated into two portions, with the first representing DENC owned
+generation fuel expense and the second deriving from the purchased energy and capacity
+fuel expense. DENC witness Farmer explained that the capacity costs included in the total
+system fuel expense are based on the forecasted purchased capacity expense  for the
+Rate Year based on the results of the PJM capacity auctions; this expense is reduced to
+
+--- PDF page 16 ---
+16
+
+remove the portion already being recovered in base rates to prevent double recovery of
+such expenses. Farmer Supp. Test. at 3–4.
+In the supplemental testimony of DENC witness DeJarnette, he presented DENC’s
+actual system fuel expenses and  North Carolina recovery experience for the fourteen
+months that ended August 31, 2025. He explained that in addition to updating the actual
+system fuel and purchased power energy expenses that DENC traditionally included in its
+annual fuel factor proceedings, he also included for the July 29, 2025 through
+August 31, 2025 time frame, purchased capacity expense incremental to the level of
+purchased capacity expense already reflected in DENC’s base rates as approved in
+Docket No. E-22, Sub 694. DeJarnette Supp. Test. at 1–3.
+In Public Staff witness Hill’s direct testimony, he testified that he did not take issue
+with the methodology utilized by DENC to apply S.L. 2025 -78. He recommended an
+adjustment to DENC’s projected billing period rates and specifically recommended the
+removal of purchased capacity expenses for the months of September 2025 through
+January 2026 from the billing period rates. Public Staff witness Hill further noted that the
+capacity costs for these months  are eligible for recovery in DENC’s next fuel rider
+proceeding. Hill Supp. Test. at 9–10.
+In DENC’s Letter in Lieu of Rebuttal Testimony, DENC did not object to Public Staff
+Witness Hill’s recommendation to remove purchased capacity expenses  for the period
+beginning September 2025 through January 2026.
+No other party provided evidence on this issue in this proceeding.
+Based upon the competent, material, and substantial evidence in the record , the
+Commission concludes that DENC reasonably accounted for purchased capacity
+expense through the annual fuel factor that is incremental to such expense already being
+recovered through base rates consistent with N.C.G.S. § 62 -133.2(a1) and (a3), as
+amended.
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 10–13
+The evidence supporting these  findings of fact is contained in DENC’s verified
+Application; the direct and supplemental testimony of DENC witnesses Farmer and Yeh;
+and the direct testimony of Public Staff witness Hill and the correction thereto.
+In DENC witness Farmer’s direct testimony, she initially presented DENC’s system
+fuel expense for the test period and testified that the normalized system fuel expenses
+are approximately $2.45 billion. Farmer Direct Test. at 9; DENC Ex. KEF-1, sched. 4. She
+testified that she used the expense normalization methodology that ha d been used by
+DENC and approved in previous North Carolina annual fuel factor proceedings.
+Specifically, DENC witness Farmer stated that the first step in computing normalized
+system fuel expense is to calculate nuclear generation based on the expected  future
+operating parameters for each unit, and she noted that the expected generation from the
+
+--- PDF page 17 ---
+17
+
+nuclear units was calculated for the 12-month period ending January 2027. She explained
+that other sources of generation were then normalized for the test period and that the total
+of coal, combustion turbine and combined cycles, and purchased energy during the test
+period was then calculated. DENC witness Farmer indicated that a  percentage of this
+total was calculated for each  of these resources, and n ormalized generation was
+computed by applying these percentages  to a new total, including an adjustment for
+weather, customer growth, increased usage, and the net change in nuclear and DENC’s
+solar generation. She stated that this methodology for normalizing the test period
+generation resulted in adjusted annual system energy requirements of 105,440,502 MWh.
+Farmer Direct Test. at 5–6; DENC Ex. KEF-1, sched. 4.
+DENC w itness Farmer testified further that approximately 315 MW of solar
+generation (DENC and PPA) were placed in service during the Test Period and that
+DENC anticipates adding approximately 1,200 MW of additional solar generation
+during the rate period. She additionally noted that  the Coastal Virginia Offshore Wind
+(CVOW) Commercial Project is scheduled to commence phased operations during the rate
+period. Farmer Direct Test. at 6.  DENC Witness Farmer incorporated an approximately
+$90.7 million incremental production adjustment to account for these expected additions.
+Farmer Direct Test. at 8; DENC Ex. KEF-1, sched. 4.
+In DENC witness Yeh’s direct testimony, she presented DENC’s calculation of the
+base fuel component for the North Carolina jurisdiction and each customer class. She
+first determined the average system fuel factor of $0.024244/kWh, based on system fuel
+expenses of $2,445,604,881, and system sales of 101,047,584,209 kWh, which reflected
+adjustments for changes in usage, weather normalization, and customer  growth. DENC
+witness Yeh also presented the calculations used to differentiate the jurisdictional base
+fuel component by voltage to determine the class fuel factors and testified that these are
+consistent with the methodology used in DENC’s 2024 Fuel Case. Yeh Direct Test. at 1–
+2.
+In DENC witness Farmer’s supplemental testimony, she updated DENC’s system
+fuel expense for the test period to include the impact of S.L. 2025-78 on the proposed
+system fuel and fuel-related cost factors applicable to the February 1, 2026 through
+January 31, 2027 Rate Year. As further discussed in Finding of Fact No. 9 above ,
+consistent with amended subsection (a3) , DENC witness Farmer presented the total
+system fuel expense separated into two portions, with the first representing DENC owned
+generation fuel expense and the second deriving from the purchased energy and capacity
+fuel expense. She explained that the first  portion, DENC Owned Generation Fuel
+Expense, represented the normalized system fuel expense previously shown in her direct
+testimony of $1.79 billion. DENC witness Farmer stated that the second portion included
+the revised purchased power expense, which included purchased capacity expenses to
+be recovered on a class demand basis. She testified that the additional purchased power
+expense was $205.3 million, resulting in total purchased energy and capacity expense of
+$857.9 million. Farmer Supp. Test. at 3–4; DENC Supp. Ex. KEF-1, sched. 4.
+
+--- PDF page 18 ---
+18
+
+In DENC witness Yeh’s supplemental testimony, she updated the proposed Rider
+A rates to incorporate the projected purchased capacity expenses supported by witness
+Farmer.
+In Public Staff witness Hill’s direct testimony, he  testified regarding DENC’s
+calculation of the billing period fuel rates in this proceeding. He explained that consistent
+with S.L. 2025-78, DENC continued to use its production cost model with test period fuel
+expense and  sales normalization adjustments. Additionally, he  indicated that the
+production cost model: (1) included incremental purchased capacity costs in the fuel rider
+on a prospective basis, and (2) reallocated projected purchased power and purchased
+capacity costs on a demand basis rather than an energy basis. While Public Staff witness
+Hill did not dispute DENC’s overall methodology, he recommended removing from Rider
+A the projected purchased capacity costs for September 2025 through January 2026
+(which fall outside the February 2026 –January 2027 billing period)  and suggested that
+those months be addressed in the next EMF. He quantified this recommendation as a
+system decrease of $46,063,722 and a North Carolina retail decrease of $1,868,621. Hill
+Direct Test. at 9 –10. In Public Staff witness Hill’s  corrected testimony, he presented
+updated total recommended rates by class to reflect a rounding difference between the
+Public Staff’s and DENC’s calculations.
+In its Letter in Lieu of Rebuttal Testimony, DENC stated that it did not object to the
+Public Staff’s removal of the September 2025 through January 2026 purchased capacity
+expense, which DENC will reflect in the determination of the updated  EMF Rider B for
+purposes of the 2026 fuel factor adjustment proceeding. DENC also stated that it did not
+object to the total fuel and fuel-related cost factors presented in Public Staff witness Hill’s
+Table 1 of his corrected testimony.
+No other party provided evidence on the adjusted test period system fuel expense
+for use in this proceeding.
+Based upon the competent, material, and substantial evidence in the record , the
+Commission concludes that DENC’s calculation of the billing period rate is reasonable for
+use in this proceeding and that the appropriate level of fuel expenses to be used to set
+the prospective, or forward-looking, fuel factor in this proceeding is $2,604,879,597 ; the
+appropriate prospective system average base fuel factor (including regulatory fee) is
+0.2949 ¢/kWh; and the appropriate class-specific prospective base fuel factors (including
+regulatory fee) are as set forth in Table 1 of Public Staff witness Hill’s corrected testimony.
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 14–16
+The evidence supporting these findings of fact is  contained in DENC’s verified
+Application; the direct and supplemental testimony, exhibits, and workpapers  of DENC
+witnesses Farmer, DeJarnette, and Yeh; the testimony, exhibits, and workpapers of Public
+Staff witness Hill; and the affidavit of Public Staff affiant Meda.
+
+--- PDF page 19 ---
+19
+
+In DENC witness DeJarnette ’s direct testimony, he  testified that DENC
+experienced a North Carolina retail under -recovery of fuel expense during the
+July 1, 2024 through June 30, 2025 test period of $4,286,822, excluding regulatory fee
+and interest. DeJarnette Direct. Test. at 3.
+In DENC witness Yeh’s direct testimony, she  testified that, consistent with the
+Commission’s directive in DENC’s 2024 Fuel Case, DENC incorporated the North
+Carolina Rider B1 jurisdictional over -recovery balance of $516,861 into the Rider B
+calculation for this case. She stated that, i n the initial filing, she calculated a uniform
+EMF Rider B of $0.001040/kWh (including regulatory fee) , and based on the June 30,
+2025, under-recovery of $4,286,822 and adjusted North Carolina sales of 4,128,728,136
+kWh after netting the $516,861 B1 over-recovery, she indicated that the resulting uniform
+EMF Rider B was $0.000915/kWh (including regulatory fee). Yeh Direct Test. at 6.
+In DENC  witness DeJarnette’s  supplemental testimony, he updated the EMF
+through August 31, 2025, which increased the under-recovery to $5,792,835. DeJarnette
+Supp. Test. at 3.
+In DENC witness Yeh’s supplemental testimony, she updated the EMF to reflect the
+14-month recovery experience through August 31, 2025. When netted with the Rider B1
+over-recovery of $516,861, she stated that the under-recovery of $5,792,835 presented
+by witness DeJarnette  yielded a net under -recovery of  $5,275,974, and  the revised
+uniform EMF Rider B equaled $0.001280/kWh, inclusive of the North Carolina regulatory
+fee. Yeh Supp. Test. at 6 –7. She also explained that while DENC did not include any
+accrued interest adjustments for the over- or under-recovery of reasonable fuel and fuel-
+related costs for the July 29 through August 31, 2025 period, this approach was specific
+to the current filing and does not establish a precedent for future  filings. DENC witness
+Yeh noted that DENC intended to incorporate interest costs in the next filing to capture
+over- and under-recoveries over the course of a full test year. Yeh Supp. Test. at 6.
+Public Staff affiant Meda reviewed DENC’s EMF calculations and updated
+recovery experience reflected in the supplemental filing, focusing on Rider B and the
+treatment of Rider B1. He explained that DENC updated the current period North Carolina
+jurisdictional EMF balance through August 31, 2025 and, consistent  with the
+Commission’s directive, incorporated the Rider B1 jurisdictional over -recovery balance
+into Rider B rather than billing a separate Rider B1. Public Staff affiant Meda stated that
+this netting yielded a jurisdiction wide net under-recovery to be collected via Rider B and
+resulted in a revised uniform EMF Rider B rate of $0.001280 per kWh inclusive of the
+North Carolina regulatory fee, which was then voltage differentiated to customer class
+rates using DENC’s standard methodology.  Hemanth Aff. at 3–5. He further stated that
+Rider B1 was set to zero for the February 1, 2026, through January 31, 2027, billing period
+because its balance was being recovered within Rider B. He noted that DENC’s
+calculations applied the regulatory fee and interest consistent with  Commission practice
+and used DENC-sponsored adjusted North Carolina retail sales denominator for the EMF.
+Public Staff affiant Meda  ultimately recommended approval of DENC’s supplemental
+Rider B as filed. Id.
+
+--- PDF page 20 ---
+20
+
+Based on the competent, material, and substantial evidence in the record , the
+Commission concludes that the appropriate North Carolina retail test period jurisdictional
+fuel expense under -collection is $5,275,974 and that the adjusted North Carolina
+jurisdictional test period  sales appropriate for computing the EMF rider (Rider B) are
+4,128,728,136 kWh. The Commission further concludes that the appropriate EMF (Rider
+B) for this proceeding, including the regulatory fee and interest and the over - and
+under-recoveries from Rider B1, are as follows:
+Customer Class EMF Billing Factor (Rider B)
+Residential 0.1023 ¢/kWh
+SGS &PA 0.0481 (¢/kWh
+LGS 0.1432 ¢/kWh
+Schedule NS 0.2265 ¢/kWh
+6VP 0.2338 ¢/kWh
+Outdoor Lighting 0.0687 ¢/kWh
+Traffic (0.1203 ¢/kWh)
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 17
+The evidence supporting this finding of fact is cumulative and is contained in
+DENC’s verified Application;  the direct and supplemental testimony, exhibits, and
+workpapers of DENC witnesses Farmer, Hinson, Brookmire, Harrell, DeJarnette, and Yeh;
+the testimony and exhibits of Public Staff witness Hill and the correction thereto; and the
+affidavit of Public Staff affiant Meda.
+No other party provided evidence on this issue in this proceeding.
+Based upon the competent, material, and substantial evidence in the record , the
+Commission concludes that the total net fuel factors (¢/kWh) are determined as follows
+(with Regulatory Fee):
+Customer Class Total Fuel Factor
+Residential 2.9254 ¢/kWh
+SGS &PA 2.6492 ¢/kWh
+LGS 2.6091 ¢/kWh
+Schedule NS 2.4313 ¢/kWh
+6VP 2.4681 ¢/kWh
+Outdoor Lighting 2.8392 ¢/kWh
+Traffic 2.1687 ¢/kWh
+IT IS THEREFORE ORDERED as follows:
+1. That effective beginning with usage on and after February 1, 2026, DENC
+shall implement a Fuel Cost Rider A for all classes as approved and set forth in the
+Evidence and Conclusions for Finding of Fact No. 13 above;
+
+--- PDF page 21 ---
+21
+
+2. That EMF Rider increment (Rider B) as approved and set forth in the
+Evidence and Conclusions for Findings of Fact Nos. 14–16 above, shall be instituted and
+remain in effect for usage from February 1, 2026, through January 31, 2027;
+3. That DENC shall file appropriate rate schedules and riders with the
+Commission in order to implement the fuel charge adjustments approved herein as soon
+as practicable; and
+4. That DENC shall work with the Public Staff to prepare a joint proposed
+Notice to Customers of the rate adjustments ordered by the Commission herein, as well as
+in Docket No. E -22, Subs 754, 755, and 756, and DENC shall file such proposed notice
+for Commission approval as soon as practicable, but not later than five working days after
+the Commission issues the last of its orders in the above-referenced dockets.
+ISSUED BY ORDER OF THE COMMISSION
+This the 13th day of January, 2026.
+NORTH CAROLINA UTILITIES COMMISSION
+
+Tamika D. Conyers, Deputy Clerk
+

@@ -15,27 +15,44 @@ continuous SOC across billing cycles and terminal energy apply throughout.
    their primary values replaced by numeric constants. This can remove extra
    cycling at the same primary cost. Its proof applies only to those fixed
    negative-price mode choices; it does not prove the global minimum throughput.
-3. Solve the original full secondary MILP, keeping every original mode choice
+3. Solve an outer continuous relaxation with the negative-price modes in
+   `[0, 1]`. Two valid physical bounds strengthen it: an interval cannot charge
+   more than its starting empty battery space, or discharge more than its
+   starting stored energy (after efficiency and interval-length conversion).
+   These bounds hold for every exclusive physical schedule. The relaxed
+   schedule is not automatically executable: simultaneous flows remain invalid.
+   Only an `optimal` relaxation supplies a lower bound. When an independently
+   validated incumbent matches it within the reported numerical tolerance,
+   global minimum throughput is certified and the full search is unnecessary.
+4. Otherwise solve the original full secondary MILP, keeping every original mode choice
    free. The validated incumbent supplies a throughput upper bound; every global
    minimum remains in the feasible set. No monthly decomposition, altered SOC
    boundaries, rounded prices or weighted replacement objective is used.
-4. Independently validate every candidate's finite values, power balance,
+5. Independently validate every candidate's finite values, power balance,
    exclusivity, power limits, PV curtailment, SOC transitions/bounds/endpoints,
    primary objective and throughput. Keep independent copies before another
    solve can overwrite mutable CVXPY variable values.
-5. If the full secondary solve proves optimality and its dispatch passes these
-   checks, report global minimum throughput. Otherwise retain the best validated
+6. If a matching relaxation bound or the full secondary solve proves optimality
+   and the selected dispatch passes these checks, report global minimum
+   throughput. Otherwise retain the best validated
    cost-neutral incumbent and report the limited proof scope. An unproven
    secondary result never makes the primary bill optimum unproven.
 
 An interrupted secondary search may supply a physically valid improved incumbent;
 it can be retained after the same independent checks. A relaxed result with
 simultaneous charging/discharging is rejected even if its objective is lower.
-The existing negative-marginal-price binary formulation is preserved.
+The existing negative-marginal-price binary formulation is preserved. If the
+full search fails, a valid relaxation lower bound is retained. Its difference
+from selected throughput bounds the possible further reduction, in kWh of
+charge plus discharge; it is not promised savings or a dollar estimate.
+Inaccurate/interrupted LP objectives and inconsistent or missing bounds never
+establish proof. The tolerance remains `max(0.00001 kWh, throughput * 1e-8)`;
+no bill-cost tolerance or battery constraint is relaxed.
 
 Both primary and secondary stages have a bounded solver budget: 60 seconds for
 one cycle and 60 seconds per linked cycle, capped at 300 seconds. The auxiliary
-LP uses at most 10 seconds of the secondary budget. Model construction and
+LP and relaxation each use at most 10 seconds of the same secondary budget.
+The full search receives only the remainder. Model construction and
 postprocessing add overhead outside the solver's time limit. These limits do
 not reduce the optimality standard. See the official
 [SciPy MILP status, gap and time-limit definitions](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.milp.html).
@@ -51,13 +68,19 @@ under each scenario's optimization metadata:
 - `selected_solution`: primary, fixed-mode refinement, feasible global incumbent
   or proven global minimum.
 - `fixed_mode_status` and `global_status`: independent solver outcomes.
+- `relaxation_status`, `proof_method` and `global_lower_bound_source` distinguish
+  a matched outer bound, full mixed-integer proof, and an unproven result.
 - Primary/selected throughput and reduction, in charge-plus-discharge kWh.
 - Global throughput lower bound and absolute gap, when the solver supplies a
   finite consistent bound; unavailable bounds remain null.
 - Budget and elapsed time. No battery means proof is not applicable, not true.
 
-`throughput_tie_break_status` continues to describe the full secondary solve for
-older consumers. Warnings explicitly distinguish cost optimality from unproven
+The default browser/modern desktop comparison additionally shows the remaining
+cycling-gap bound and proof method; detailed tables include the lower bound.
+Old result tables without these fields continue to render as before.
+`throughput_tie_break_status` describes the global secondary outcome for older
+consumers; `optimal` can now be established by a matched relaxation bound without
+running the full MILP. Warnings explicitly distinguish cost optimality from unproven
 minimum cycling. Older saved results lack the new fields and retain their
 original data and proof status. Both modern desktop and local browser consume
 the same worker/manifest/table path. Candidate development does not promote a

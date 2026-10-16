@@ -1,0 +1,269 @@
+PAGE 160
+Virginia Electric and Power Company 
+ 
+Schedule GS-1 
+ 
+SMALL GENERAL SERVICE 
+____________________ 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+I. APPLICABILITY AND AVAILABILITY  
+ 
+A. Except as modified herein, this schedule is applicable only to a non-residential 
+Customer (1) who elects (a) to receive Electricity Supply Service and Electric 
+Delivery Service from the Company or (b) who is eligible for and elects to purchase 
+Electricity Supply Service from a Competitive Service Provider in accordance with 
+Va. Code § 56-577 A, and (2) who has no more than two billing months with a peak 
+measured demand of 30 kW or more within the current and previous 11 billing 
+months. 
+ 
+B. At such time the Customer no longer meets the above applicability requirement, the 
+Customer will remain on this schedule for the period (not exceeding two additional 
+billing months) required to achieve an orderly transfer to the applicable schedule. 
+ 
+C. For Customers who elect to purchase Electricity Supply Service from a Competitive 
+Service Provider, the provision of Electric Delivery Service only under this 
+Schedule shall not continue to be available to the Customer until an “Agreement for 
+Electric Service” that the Company may require is executed between the Company 
+and the Customer.  Such agreement will be for Electric Delivery Service under this 
+Schedule or any other GS Rate Schedule (except Schedule GS-2T) the Customer 
+may migrate to during the term of the agreement.  Such agreement will have a  
+minimum term of at least one year. 
+ 
+II. MONTHLY RATE 
+ 
+A. Distribution Service Charges 
+ 
+ 1. Basic Customer Charge 
+For Single-phase Service  $13.39 per billing month 
+For Three-phase Service  $18.05 per billing month 
+ 
+  2. Plus Distribution kWh Charge       
+  First 1,400 kWh     @ 2.5525¢ per kWh 
+Over 1,400 kWh    @ 1.8928¢ per kWh 
+ 
+3. Plus each Distribution kilowatt-hour used is subject to all applicable riders in 
+ the Exhibit of Applicable Riders, including non-bypassable charges. 
+
+
+PAGE 161
+Virginia Electric and Power Company 
+ 
+Schedule GS-1 
+ 
+SMALL GENERAL SERVICE 
+____________________________ 
+ 
+(Continued) 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+II. MONTHLY RATE (Continued) 
+ 
+B. Electricity Supply (ES) Service Charges 
+ 
+Paragraph II.B. is not applicable to Customers receiving Electricity Supply Service 
+from a Competitive Service Provider, except for non-bypassable charges in the 
+Exhibit of Applicable Riders, as discussed in Paragraph VIII., below. 
+ 
+1. Generation kWh Charge 
+ 
+a. For the Billing Months of June – September 
+First 1,400 ES kWh   @  3.0788¢ per kWh 
+Over 1,400 ES kWh   @ 4.1350¢ per kWh 
+ 
+b. For the Billing Months of October – May 
+First 1,400 ES kWh   @ 3.0788¢ per kWh 
+Over 1,400 ES kWh   @ 1.9886¢ per kWh 
+ 
+  2. Plus Transmission kWh Charge 
+   All kWh      @ 0.582¢ per kWh  
+ 
+3. Plus each Electricity Supply kilowatt-hour used is subject to all applicable 
+riders in the Exhibit of Applicable Riders, including non-bypassable charges, 
+as discussed in Paragraph VIII., below.  
+ 
+C. The minimum Distribution Service Charge shall be the highest of: 
+ 
+1. The Basic Customer Charge in Paragraph II.A.1. 
+ 
+2. The amount as may have been contracted for prior to January 1, 2022 or may 
+be contracted for pursuant to the Terms and Conditions for the Provision of 
+Electric Service, Section XXII.Q.  
+ 
+3. The sum of the charges in Paragraphs II.A. through II.B., above, plus $2.092 
+multiplied by the number of kW by which any minimum demand established 
+exceeds the demand determined under Paragraph III. 
+ 
+4. If the demand determined under Paragraph III. is 50 kW or greater, the 
+minimum charge shall not be less than $4.35 per kW of demand determined. 
+ 
+
+
+PAGE 162
+Virginia Electric and Power Company 
+ 
+Schedule GS-1 
+ 
+SMALL GENERAL SERVICE 
+____________________________ 
+ 
+(Continued) 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+III. DETERMINATION OF DEMAND 
+ 
+A. A kW demand meter will be installed when the Customer has used 6,000 kWh or 
+more in any billing month, when the Customer's estimated demand is greater than 
+25 kW, or when the Customer has contracted for standby, maintenance, or parallel 
+operation service. 
+ 
+B. The kW of demand will be determined as the highest average kW load measured in 
+any 30-minute interval during the billing month. 
+ 
+IV. MINIMUM DEMAND 
+ 
+ The minimum demand shall be the highest of: 
+ 
+ A. When the kW demand determined has reached or exceeded 500 kW during the 
+current or preceding eleven billing months, the minimum demand shall not be less 
+than the highest demand determined during the current and previous eleven billing 
+months. 
+ 
+ B. For Customers new to this schedule served on or after January 1, 2022, and for 
+existing Customers served on this schedule where a minimum demand has not been 
+contracted for but an increase in capacity has been requested and where the 
+projected kW load is estimated to exceed 500 kW, the minimum demand shall not 
+be less than 70% of the kVA capacity of the normal service transformer required to 
+serve the Customer’s projected load. 
+ 
+ C. For Customers served prior to January 1, 2022, and where there presently is a 
+contracted minimum demand, the Customer will have the option to either (i) 
+continue at the contracted minimum demand level until such time as the existing 
+normal service transformer(s) requires replacement due to Customer load growth, at 
+which time the minimum demand will be set per IV.B., above, or (ii) immediately 
+set the contract minimum demand per IV.B., above. 
+ 
+ D. At the Customer’s request, after 12 months of active service, in lieu of IV.B. or 
+IV.C., above, the Customer has the option to execute an Agreement for Electric 
+Service and pay a Monthly Facilities Charge for any excess facilities in accordance 
+with Section IV.E. of the Terms and Conditions.  For purposes of this provision, 
+“excess facilities” shall mean such facilities as have been installed that are larger or 
+more than necessary to serve the Customer.  In the event the Customer selects this 
+option, the determination of the minimum demand pursuant to Paragraph IV. shall 
+be IV.A. above. 
+ 
+ E. When the Customer's power factor is less than 85 percent, a minimum demand of 
+not less than 85 percent of the Customer's maximum kVA demand may be 
+established. 
+  
+
+
+PAGE 163
+Virginia Electric and Power Company 
+ 
+Schedule GS-1 
+ 
+SMALL GENERAL SERVICE 
+____________________ 
+ 
+(Continued) 
+(Continued) 
+ 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+ 
+V. METER READING AND BILLING 
+ 
+A. The Company shall have the option of reading meters monthly or bimonthly.  When 
+the meter is read at other than monthly intervals, the Company may render an 
+interim monthly bill based on estimated kWh use during periods for which the 
+meter was not read. 
+ 
+B. When bills are calculated for a bimonthly period, the Basic Customer Charge shall 
+be multiplied by two; the number of kWh specified in the initial block of the 
+Distribution kWh Charge and the Generation kWh Charge shall be multiplied by 
+two before the rates per kWh are applied to the usage for the bimonthly period; the 
+minimum Distribution Service Charge shall be multiplied by two; and the charge 
+specified in Paragraph VII.C. shall be multiplied by two.   
+ 
+VI. UNMETERED SERVICE 
+ 
+A. The Company may, at its sole discretion, provide unmetered service when the 
+Company determines the characteristics of the service location are highly unsuitable 
+for the placement of a meter.  Impracticality may be caused by difficult or 
+dangerous meter access, high potential for vandalism, etc. 
+ 
+B. The monthly kWh usage for unmetered services shall be determined by multiplying 
+the connected load by the hours of operation in a month. 
+ 
+C. The monthly charge for unmetered service will include the charge in Paragraph 
+II.A.1. less $2.00 per billing month, plus the unmetered kWh usage as determined 
+in VI.B. above multiplied by the charges contained in Paragraphs II.A.2., II.B.1., 
+and II.B.2. 
+ 
+ D. Each point of connection shall be considered as a unique Customer and shall 
+receive separately calculated bill amounts. 
+ 
+
+
+PAGE 164
+Virginia Electric and Power Company 
+ 
+Schedule GS-1 
+ 
+SMALL GENERAL SERVICE 
+____________________________ 
+ 
+(Continued) 
+ 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+ 
+VII. STANDBY, MAINTENANCE OR PARALLEL OPERATION SERVICE 
+ 
+ A Customer requiring standby, maintenance or parallel operation service may elect 
+service under this schedule provided the Customer contracts for the maximum kW which the 
+Company is to supply.  Standby, maintenance or parallel operation service is subject to the 
+following provisions: 
+ 
+A. Suitable relays and protective apparatus shall be furnished, installed, and 
+maintained at the Customer's expense in accordance with specifications furnished 
+by the Company.  The relays and protective equipment shall be subject, at all 
+reasonable times, to inspection by the Company's authorized representative. 
+ 
+B. In case the maximum kW demand determined in Paragraph III. or the minimum 
+demand determined in Paragraph IV. exceeds the contract demand, the contract 
+demand shall be increased by such excess demand. 
+ 
+C. In addition to the charges in Paragraph II. the Customer will be charged an amount 
+equal to $6.588 multiplied by the number of kW by which the contract demand 
+exceeds the demand determined in Paragraph III. 
+ 
+VIII. NON-BYPASSABLE CHARGES 
+ 
+ Any Commission approved non-bypassable charges in the Exhibit of Applicable Riders 
+shall apply to all Customers, irrespective of generation supplier pursuant to Virginia Law, unless 
+the Customer meets the statutory requirements for exemption from such charges. 
+ 
+IX. TERM OF CONTRACT 
+ 
+ The contract shall be open order unless (a) standby, maintenance or parallel operation 
+service is provided, or (b) the Customer or the Company requests a written contract.  In such 
+cases, the term of contract for the purchase of electricity under this schedule shall be as mutually 
+agreed upon, but for not less than one year.   

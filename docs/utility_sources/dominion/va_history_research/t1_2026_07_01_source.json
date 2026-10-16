@@ -1,0 +1,17 @@
+{
+  "source_url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-t1.pdf",
+  "archive_url": "https://web.archive.org/web/20260719064330id_/https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/rates-and-tariffs/pdfs/virginia/shared/rider-t1.pdf",
+  "retrieved_on": "2026-10-15",
+  "pdf_sha256": "d95972e31c015c58983634cbad1cfbf41298dccfbf7bca64f0a6e7bdd2f76651",
+  "pdf_bytes": 107031,
+  "text_file": "t1_2026_07_01.txt",
+  "text_sha256": "65c6aa6c6f94e92b174afd40da97fd81eb1e3a34764b214ba82221d56a93cdaa",
+  "filed_on": "2026-06-18",
+  "effective_start": "2026-07-01",
+  "supersedes": "2025-09-01",
+  "page": 1,
+  "notes": "Actual original PDF; ordinary printed coefficients unchanged; residential NEM footnote changes standby threshold to above20kW. Complete page retained, not a search snippet.",
+  "retrieved_at": "2026-10-16T06:58:39.723100+00:00",
+  "archive_timestamp": "20260719064330",
+  "archive_cdx_sha1": "BBVMK3377EUFVNEDW4VHQ7JE4M4LLKAS"
+}

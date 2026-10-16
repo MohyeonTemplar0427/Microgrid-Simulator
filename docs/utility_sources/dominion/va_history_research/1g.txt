@@ -1,0 +1,222 @@
+PAGE 1
+Virginia Electric and Power Company 
+ 
+Schedule 1G 
+ 
+RESIDENTIAL SERVICE 
+(EXPERIMENTAL) 
+_________________ 
+ 
+(Continued) 
+ 
+ 
+Filed 01-02-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-25. 
+ 
+ 
+I. APPLICABILITY  
+ 
+  This schedule is applicable only to Customers electing to receive separately metered and 
+billed Electricity Supply Service and Electric Delivery Service from the Company for use in and 
+about (a) a single -family residence, flat or apartment, (b) a combination farm and one occupied 
+single-family residence, flat or apartment, (c) a private residence used as a boarding and/or 
+rooming house with no more than one cooking installation nor more than ten bedrooms, or (d) 
+separately metered service to detached accessory buildings appurtenant to residential dwellings 
+unless such buildings use electricity for commercial or industrial purposes. 
+ 
+  A combination residence and farm, having more than one single -family residence, flat or 
+apartment served electricity through a single meter, that was being billed under Schedule 1 prior 
+to April 1, 1971, may be supplied electricity under this schedule provided each such dwelling 
+unit is occupied by the owner or by a tenant working on the farm.  Such multiple-residence farms 
+connected on and after April 1, 1971, shall not be served under this schedule. 
+ 
+  This schedule is not applicable for (a) individual motors rated over 15 HP, and (b) 
+commercial use as in hotels, public inns, motels, auto courts, tourist courts, tourist camps, or 
+trailer camps. 
+ 
+II. AVAILABILITY 
+ 
+  Subject to a participation limitation of 20,000 accounts, this schedule is available only 
+where: 
+ 
+  A. The Company has installed and deployed its advanced metering infrastructure 
+(AMI); 
+ 
+  B. The Customer does not participate in a PJM Interconnection, LLC or Company-
+Sponsored demand response program or peak -shaving demand response program;  
+and 
+ 
+  C. The Company received the Customer’s voluntary request for service in accordance 
+with this schedule through and including December 31, 2025.  A Customer who 
+discontinues service under this schedule after less than one year of service may not 
+be served under this schedule for the Customer’s account at the same premise 
+within one year of such discontinuation of service. 
+  
+PAGE 2
+Virginia Electric and Power Company 
+ 
+Schedule 1G 
+ 
+RESIDENTIAL SERVICE 
+(EXPERIMENTAL) 
+________________ 
+ 
+(Continued) 
+(Continued) 
+ 
+Filed 01-02-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-25. 
+ 
+ 
+III. MONTHLY RATE 
+ 
+A. Distribution Service Charges 
+ 
+1. Basic Customer Charge    $7.58 per billing month 
+ 
+2. Plus Distribution kWh Charge   
+a. For the period beginning May 1 and extending through September 30 
+ 
+ All On-Peak kWh   @  3.5971¢ per kWh 
+     All Off-Peak kWh  @  2.4903¢ per kWh 
+     All Super Off-Peak kWh @  1.8218¢ per kWh 
+ 
+b. For the period beginning October 1 and extending through April 30 
+ 
+ All On-Peak kWh   @  3.1778¢ per kWh 
+ All Off-Peak kWh  @  2.1690¢ per kWh 
+ All Super Off-Peak kWh @  1.8712¢ per kWh 
+   
+3.  Plus each Distribution kilowatt-hour used is subject to all applicable riders in 
+ the Exhibit of Applicable Riders, including non-bypassable charges.  
+ 
+   4. Plus, where the Customer receives service in accordance with Section  XXV  – 
+NET METERING of the Company’s TERMS AND CONDITIONS and 
+where th e alternating current capacity of the Renewable Fuel Generator 
+exceeds 15 kW, the Customer shall be billed a Distribution Standby Charge of 
+$3.42 per kW of demand, minus the charge under II I.A.2., above, but not less 
+than zero. 
+ 
+B. Electricity Supply (ES) Service Charges 
+2 
+   1. Generation kWh Charge   
+ a.  For the period beginning May 1 and extending through September 30   
+ All On-Peak ES kWh   @        14.2473¢ per kWh 
+        All Off-Peak ES kWh  @   0.8612¢ per kWh 
+        All Super Off-Peak ES kWh @   0.0104¢ per kWh 
+ 
+        b. For the period beginning October 1 and extending through April 30   
+     All On-Peak ES kWh   @ 11.0986¢ per kWh 
+        All Off-Peak ES kWh  @   1.6533¢ per kWh 
+        All Super Off-Peak ES kWh @   1.4355¢ per kWh 
+ 
+   2. Plus Transmission kWh Charge 
+ 
+a.    All kWh    @   0.970¢ per kWh 
+ 
+b. Plus, where the Customer receives service in accordance with 
+Section XXV – NET METERING of the Company’s TERMS AND 
+CONDITIONS and where the alternating current capacity of the 
+Renewable Fuel Generator exceeds 15 kW, the Customer shall be billed a 
+Transmission Standby Charge of $1.32 per kW of demand, minus the 
+charge under III.B.2.a., above, but not less than zero. 
+PAGE 3
+Virginia Electric and Power Company 
+ 
+Schedule 1G 
+ 
+RESIDENTIAL SERVICE 
+(EXPERIMENTAL) 
+_________________ 
+ 
+(Continued) 
+(Continued) 
+ 
+Filed 01-02-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-25. 
+ 
+ 
+III. MONTHLY RATE (CONTINUED) 
+ 
+   3. Plus, where the Customer receives service in accordance with Section  XXV – 
+NET METERING of the Company’s TERMS AND CONDITIONS and 
+where the alternating current capacity of the Renewable Fuel Generator 
+exceeds 15 kW, each measured kW of Demand is subject to all  applicable 
+riders, included in the Exhibit of Applicable Riders.   
+ 
+ 
+   4. Plus each Electricity Supply kilowatt- hour used is subject to all applicable 
+riders in the Exhibit of Applicable Riders , including non- bypassable charges, 
+as discussed in Paragraph VII., below. 
+ 
+  C. The minimum charge shall be the Basic Customer Charge in Paragraph III.A.1., 
+   above. 
+ 
+IV.   DETERMINATION OF ON-PEAK, OFF-PEAK, AND SUPER OFF-PEAK HOURS 
+ 
+A. On-Peak Hours (Except certain holidays) 
+ 
+     1. For the period of May 1 through September 30, On-Peak hours are:   
+3 p.m. to 6 p.m., Mondays through Fridays. 
+ 
+   2. For the period of October 1 through April 30, On-Peak hours are:   
+6 a.m. to 9 a.m. and 5 p.m. to 8 p.m., Mondays through Fridays. 
+ 
+  B. Off-Peak and Super Off-Peak Hours 
+ 
+   1. For the period of May 1 through September 30, Off-Peak hours are:   
+  5 a.m. to 3 p.m. and 6 p.m. to 12 a.m., Mondays through Fridays. 
+ 
+   2. For the period of October 1 through April 30, Off-Peak hours are:   
+5 a.m. to 6 a.m.; 9 a.m. to 5 p.m.;  and, 8 p.m. to 12 a.m., Mondays through 
+Fridays. 
+ 
+   3. Off-Peak hours are:  5 a.m. to 12 a.m. on weekends and holidays, as identified 
+in Paragraph IV.B.5, below.     
+   4. Super Off-Peak hours are:  12 a.m. to 5 a.m. 
+ 
+   5. The following holidays are observed as Off-Peak and Super Off-Peak:   
+    New Year’s Day, Memorial Day, Independence Day, Labor Day, 
+Thanksgiving, and Christmas. 
+ 
+V. DETERMINATION OF DEMAND 
+ 
+  Where demand is measured by the Company, such demand will be determined as the 
+highest average kW measured during any 30- minute interval of the current billing month, 
+rounded to the nearest tenth. 
+PAGE 4
+Virginia Electric and Power Company 
+ 
+Schedule 1G 
+ 
+RESIDENTIAL SERVICE 
+(EXPERIMENTAL) 
+_________________ 
+ 
+(Continued) 
+ 
+ 
+Filed 01-02-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-25. 
+ 
+ 
+VI. METER READING AND BILLING 
+ 
+A. Meters may be read in units of 10 kilowatt-hours and bills rendered accordingly. 
+ 
+B. The Company may render an interim monthly bill based on estimated kWh usage 
+during periods for which the meter was not read. 
+ 
+  C. When bills are calculated for a bimonthly period, the Basic Customer Charge shall be  
+multiplied by two; and the minimum charge shall be the modified Basic Customer 
+Charge. 
+ 
+VII. NON-BYPASSABLE CHARGES 
+ 
+Any Commission approved non- bypassable charges in the Exhibit of Applicable Riders 
+shall apply to all Customers  pursuant to Virginia Law, unless the Customer meets the statutory 
+requirements for exemption from such charges. 
+ 
+VIII.  TERM OF CONTRACT 
+ 
+  Open order.  

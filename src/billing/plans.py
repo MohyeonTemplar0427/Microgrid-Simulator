@@ -25,7 +25,7 @@ from typing import Generic, Protocol, TypeVar
 
 import pandas as pd
 
-from .tariffs import TariffDefinition, TariffError
+from .tariffs import TariffError
 
 
 class PlanError(TariffError):

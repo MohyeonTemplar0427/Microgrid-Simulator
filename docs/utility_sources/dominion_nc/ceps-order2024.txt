@@ -1,0 +1,548 @@
+--- PDF page 1 ---
+STATE OF NORTH CAROLINA
+UTILITIES COMMISSION
+RALEIGH
+DOCKET NO. E-22, SUB 674
+BEFORE THE NORTH CAROLINA UTILITIES COMMISSION
+In the Matter of
+Application by Virginia Electric and Power
+Company, d/b/a Dominion Energy North
+Carolina, for Approval of Renewable Energy
+and Energy Efficiency Portfolio Standard
+(REPS) Compliance Report and Cost
+Recovery Rider Pursuant to North Carolina
+General Statute § 62-133.8 and Commission
+Rule R8-67
+
+
+)
+)
+)
+)
+)
+)
+)
+)
+
+
+
+
+ORDER APPROVING REPS
+AND REPS EMF RIDERS
+AND 2022 REPS COMPLIANCE
+REPORT
+HEARD: Wednesday, November 28, 202 3, in Commission Hearing Room 2115,
+Dobbs Building, 430 North Salisbury Street, Raleigh, North Carolina 27603
+(Public Witness Hearing, Hearing Examiner Warren Hicks presiding)
+BEFORE: Chair Charlotte A. Mitchell and Commissioners ToNola D. Brown -Bland,
+Kimberly W. Duffley, Jeffrey A. Hughes, Floyd B. McKissick, Jr., and Karen
+M. Kemerait1
+APPEARANCES:
+ For Virginia Electric and Power Company, d/b/a Dominion Energy North
+ Carolina:
+Andrea R. Kells , McGuireWoods LLP, 501 Fayetteville Street, Suite 500,
+Raleigh, North Carolina 27601
+ For Carolina Utility Customers Association, Inc.:
+Marcus W. Trath en and Christopher B. Dodd , Brooks, Pierce, McLendon,
+Humphrey & Leonard, LLP, Suite 1700, Wells Fargo Capitol Center,
+150 Fayetteville Street, P.O. Box 1800, 27602 Raleigh, North Carolina
+27601
+
+1 The term of Commissioner ToNola D. Brown-Bland ended prior to the decision in this docket and,
+therefore, she did not participate in the decision.
+
+--- PDF page 2 ---
+2
+ For Carolina Industrial Group for Fair Utility Rates I:
+Christina D. Cress and Douglas E. Conant, Bailey & Dixon, LLP, Post Office
+Box 1351, Raleigh, North Carolina 27602
+For the Using and Consuming Public:
+William Freeman, William E.H. Creech, Staff Attorneys, Public Staff – North
+Carolina Utilities Commission, 4326 Mail Service Center, Raleigh, North
+Carolina 27699-4300
+BY THE COMMISSION: On August 15, 2023, Virginia Electric and Power Company,
+d/b/a Dominion Energy North Carolina (DENC or the Company), filed its annual Renewable
+Energy and Energy Efficiency Portfolio Standard (REPS) Compliance Report 2 and
+Application seeking an adjustment to its North Carolina retail (NC Retail) rates and charges
+pursuant to N.C. Gen. Stat. § 62-133.8(h) and Commission Rule R8-67 (Application). The
+Commission is required to conduct an annual proceeding for the purpose of determining
+whether a rider should be established to permit the recovery of the incremental costs
+incurred to comply with the requirements of N.C.G.S. § 62-133.8(b), (d), (e), and (f), and to
+true-up any under recovery or over recovery of compliance costs. Thus, DENC’s annual
+REPS Rider has two components: (1)  a forward-looking component to recover DENC’s
+projected REPS compliance costs for the rate period of February 1, 2024 through
+January 31, 2025 (proposed by DENC as Rider RP); and (2)  a REPS Experience
+Modification Factor (EMF) to true-up any over or under recovery of the REPS compliance
+costs under the previous REPS Rider from July 1, 2022 through June 30, 2023 (proposed
+by DENC as Rider RPE). DENC’s Application was accompanied by the testimony and
+exhibits of George E. Hitch, Justin A. Wooldridge, and Jessica N. Chargois . In its
+Application and prefiled testimony, DENC sought approval of the proposed REPS Rider
+RP and REPS Rider RPE, which incorporated DENC’s proposed adjustments in its NC
+Retail rates. In addition, DENC requested Commission approval of its 2023 REPS
+Compliance Report for calendar year 2022 REPS compliance, filed as Company Exhibit
+GEH-1 attached to the prefiled direct testimony of DENC witness Hitch. DENC’s Application
+requested an annual revenue requirement of $1,418,718 for the rate period (billing period)
+of February 1, 2024, through January 31, 2025, to be recovered through updated Rider RP,
+as well as a REPS EMF revenue requirement of $ 51,496 to be recovered through Rider
+RPE.
+On August 23, 2023, the Carolina Utility Customers Association, Inc. (CUCA) filed a
+Petition to Intervene. The Commission granted this petition to intervene on August 28, 2023.
+
+2 Pursuant to Session Law 2023 -138, effective October 10, 2023, the Renewable Energy and
+Energy Efficiency Portfolio Standard is now titled the Clean Energy and Energy Efficiency Portfolio Standard
+(CEPS). Because this filing uses both a historic test period and a prospective billing period, the Commission
+will refer this matter as the REPS Rider, while noting that this will be titled the CEPS Rider in the upcoming
+2024 calendar year filings.
+
+--- PDF page 3 ---
+3
+On August 25, 2023, the Carolina Industrial Group for Fair Utility Rates I (CIGFUR I)
+filed a Petition to Intervene. The Commission granted this petition to intervene on
+August 28, 2023.
+The intervention and participation of the Public Staff – North Carolina Utilities
+Commission (Public Staff) in this docket are recognized pursuant to N.C.G.S. § 62-15(d)
+and Commission Rule R1-19(e).
+On August 30, 2023 , the Commission issued an Order Scheduling Hearing,
+Requiring Filing of Testimony, Establishing Discovery Guidelines, and Requiring Public
+Notice, which was amended by order issued September 7, 2023 (Amended Scheduling
+Order). Pursuant to th e Amended Scheduling Order, the Commission established
+deadlines for the filing of petitions to intervene, intervenor testimony and exhibits, and
+DENC rebuttal testimony and exhibits, and scheduled the public hearing to begin on
+November 28, 2023.
+On September 2 5, 202 3, DENC filed an errata to the Application and to the
+testimony and schedules of witness Jessica N. Chargois.
+On November 7, 2023 , the Public Staff filed the Affidavits of Jay B. Lucas ,
+Manager, Electric Section – Rates and Energy Services, Energy Division; and Darrus K.
+Cofield, Public Utilities Regulatory Analyst for the Accounting Division.
+On November 9, 2023, DENC filed its Affidavit of Publication  as directed by the
+Amended Scheduling Order.
+On November 16, 2023, DENC filed a letter in lieu of rebuttal testimony indicating
+that there were no issues in dispute between DENC and the Public Staff and intervenors
+based upon the Public Staff’s affidavits and the fact that intervenors did not file testimony.
+On November 17, 2023, DENC and the Public Staff filed a Joint Motion to Excuse
+Witnesses and Cancel Evidentiary Hearing (Joint Motion), stating that these parties had
+reached agreement on all issues in this docket and had agreed to waive cross -
+examination of each other’s witnesses , and that CIGFUR I and CUCA also agreed to
+waive cross-examination of the witnesses and did not object to the Joint Motion.
+On November 27, 2023, the Commission granted the Joint Motion. The Commission
+also canceled the expert witness hearing scheduled for November 28, 2023, and accepted
+into evidence the prefiled testimony, exhibits, and affidavits of DENC witnesses Hitch,
+Wooldridge, and Chargois, and Public Staff affiants Lucas and Cofield. The Commission
+also directed that proposed orders be filed on or before December 28, 2023.
+This matter came on for public witness hearing as scheduled on November 28,
+2023, before Hearing Examiner Warren Hicks. No public witnesses appeared at the
+hearing.
+
+--- PDF page 4 ---
+4
+DENC and the Public Staff filed a joint proposed order in this proceeding on
+December 21, 2023.
+Based upon the foregoing, including the testimonies, exhibits, and affidavits
+received into evidence, the records in the North Carolina Renewable Energy Tracking
+System (NC-RETS), and the entire record in this proceeding, the Commission makes the
+following:
+FINDINGS OF FACT
+1. DENC is duly organized as a public utility company under the laws of the
+State of North Carolina and is subject to the jurisdiction of the Commission. DENC is
+engaged in the business of generating, transmitting, distributing, and selling electric
+power and energy to the public for compensation in North Carolina. DENC is also an
+electric power supplier as defined in N.C.G.S. § 62 -133.8(a)(3). DENC is lawfully before
+this Commission based upon its Application filed pursuant to N.C.G.S. § 62 -133.8 and
+Commission Rule R8-67.
+2. Pursuant to the REPS statute, N.C.G.S. § 62-133.8, in 2022 electric public
+utilities were required to meet 12.5% of their previous year’s NC Retail electric sales by
+a combination of renewable energy and energy reductions due to the implementation of
+energy efficiency (EE) measures. In addition, electric power suppliers were required to
+acquire solar energy, or ren ewable energy certificates (RECs) for solar energy, by the
+end of 2022 in an amount equal to at least 0.2% of the previous year’s NC Retail sales .
+The 0.2% solar energy requirement is part of the 12.5% total REPS requirement. The
+solar energy sources can be a combination of new solar electric facilities and new
+metered solar thermal energy facilities. The electric power suppliers of North Carolina
+were initially required by N.C.G.S. § 62 -133.8 to procu re a certain portion of their
+renewable energy requirements beginning in 2012 from electricity generated by poultry
+and swine waste. However, by orders issued November 29, 2012, and March 26, 2014,
+in Docket No. E -100, Sub 113 (collectively, together with the Orders of November 13,
+2014, December 1, 2015, October 17, 2016, October 16, 2017, October 8, 2018,
+December 16, 2019, February 13, 2020, December 30, 2020, March 4, 2022 ,
+December 20, 2022 , and December 11, 2023 , the Delay Orders), the Commission
+delayed the initial swine and poultry waste resource requirements until 2014; in an order
+issued November 13, 2014, in the same docket, the Commission granted an additional
+delay of the initial swine waste requirement until 2015 and established an initial aggregate
+poultry waste resource requirement of 170,000 megawatt -hours (MWh) for 2014; in an
+order issued December 1, 2015, the Commission again granted a further delay of the
+initial swine waste requireme nt until 2016 and maintained the aggregate poultry waste
+resource requirement at 170,000 MWh for 2015; in an order issued October 17, 2016, the
+Commission further delayed the initial swine waste requirement for one additional year
+and maintained the aggregate poultry waste requirement at 170,000 MWh for 2016; in an
+order issued October 16, 2017, the Commission delayed the initial swine waste
+requirement for one additional year and maintained the aggregate poultry waste
+requirement at 170,000 MWh for 2017; i n an order issued October 8, 2018, the
+
+--- PDF page 5 ---
+5
+Commission delayed the initial swine waste requirement for one additional year for
+electric membership corporations and municipal electric systems but required the electric
+public utilities (including DENC) to meet 0.02% of their sales using swine waste resources
+and, relative to the increase required pursuant to N.C.G.S. § 62 -133.8(f), decreased the
+aggregate poultry waste requirement to 300,000 MWh; in an order issued December 16,
+2019, as clarified by a February 13, 2020 Errata Order, the Commission delayed the initial
+swine waste requirement for one additional year for electric membership corporations and
+municipal electric systems but required the electric public utilities (including DENC) to
+meet 0.04% of their sales using swine waste resources and, re lative to the increase
+required pursuant to N.C.G.S. § 62 -133.8(f), decreased the aggregate poultry waste
+requirement to 500,000 MWh; in an order issued December 30, 2020, the Commission
+delayed the initial swine waste requirement for one additional year f or electric
+membership corporations; in an order issued March 4, 2022, the Commission delayed
+the initial swine waste set-aside requirement until 2022 for electric membership
+corporations and municipal electric systems , and reduced the poultry waste set-aside
+requirements for all electric suppliers ; and in an order issued December 20, 2022, the
+Commission delayed the initial swine waste set -aside requirement until 2023 for electric
+membership corporations and municipal electric systems and modified the swine waste
+set-aside requirement for the elect ric public utilities ; in an order issued December 11,
+2023, the Commission modified the swine waste set-aside requirement for DENC, Duke
+Energy Progress, LLC (DEP) and Duke Energy Carolinas, LLC(DEC) by lowering the
+2023 compliance requirement to 0.05% of 2022 retail sales , delayed entirely the 2023
+swine waste set -aside requirement for the electric membership corporations and
+municipalities, and  imposed for 2024 -23 a requirement of 0.07%, for 2026 -27 a
+requirement of 0.14%, and for 2028 and thereafter a requirement of 0.20%.
+3. N.C.G.S. § 62-133.8(h)(4) provides that an electric power supplier shall be
+allowed to recover through an annual rider the incremental costs incurred to comply with
+the REPS.
+4. Pursuant to N.C.G.S. § 62 -133.8(b)(2)(e), DENC may use 100% of
+out-of-state RECs to achieve REPS compliance. Under Commission Rule R8 -67(e)(2),
+the total costs reasonably and prudently incurred during the test period to purchase
+unbundled RECs constitute incremental costs. The projected costs to purchase such
+RECs during the billing period constitute forecasted incremental costs.
+5. DENC has agreed to provide REPS compliance services, including the
+procurement of RECs, to the Town of Windsor pursuant to N.C.G.S. § 62-133.8(c)(2)(e).
+Town of Windsor’s 202 2 REPS compliance status is included in DENC’s 2023 REPS
+Compliance Report for compliance year 2022.
+6. Considering the Delay Orders, DENC, on its own behalf and on behalf of
+Town of Windsor, has complied with its 2022 REPS obligations. DENC’s 2023 REPS
+Compliance Report for compliance year 2022 should be approved.
+
+--- PDF page 6 ---
+6
+7. For purposes of DENC’s annual rider pursuant to N.C.G.S. §  62-133.8(h),
+the rate period is the 12-month period from February 1, 2024, through January 31, 2025.
+The test period is the 12-month period from July 1, 2022, through June 30, 2023.
+8. DENC’s approach of managing its retail REPS costs separately from the
+REPS costs for its wholesale customer, Town of Windsor, is reasonable.
+9. For purposes of estab lishing the REPS EMF charge (Rider RPE) in this
+proceeding, DENC’s actual incurred incremental costs of REPS compliance, during the
+REPS test period, were $830,411. DENC’s Rider RP revenues were $ 778,915. DENC’s
+under recovery of test-period compliance costs, including interest, was $51,496.
+10. For purposes of establishing the forecasted REPS charge (Rider RP) in this
+proceeding, DENC’s incremental costs of REPS compliance projected to be incurred
+during the rate period are $1,418,718.
+11. DENC’s projected total adjusted number of customer accounts for the Rate
+Year ending January 31, 2025, is 127,562, including 108,842 in the residential class,
+18,673 in the commercial class, and 47 in the industrial class.
+12. The appropriate monthly amount of the REPS EMF charge (Rider RPE) to
+be collected during the billing period, per customer account, including the regulatory fee,
+is $0.02 for residential accounts, $0.11 for commercial accounts, and $0.74 for industrial
+accounts.
+13. The appropriate monthly amount of the forecasted REPS charge (Rider RP)
+to be collected during the billing period, per customer account, including the regulatory
+fee, is $0. 55 for residential accounts, $ 3.07 for commercial accounts, and $ 20.46 for
+industrial accounts. The combined monthly Rider RP and Rider RPE charges to be
+collected during the billing period, per customer account, including the regulatory fee, are
+$0.57 for residential accounts, $3.18 for commercial accounts, and $ 21.20 for industrial
+accounts.
+14. DENC’s combined REPS riders to be charged to each customer account
+for the billing period are within  the annual cost caps established in N.C.G.S.
+§ 62-133.8(h)(4).
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 1-5
+These findings of fact are essentially informational, jurisdictional, and procedural
+in nature and are not contested.
+N.C.G.S. § 62-133.8(b)(1) and (c)(1) establish a REPS requirement for all electric
+power suppliers in the State. These provisions require each electric power supplier to
+provide a certain percentage of its North Carolina sales from various renewable energy
+or EE resources. Authorized methods of compliance with the REPS requirement for
+
+--- PDF page 7 ---
+7
+electric public utilities are listed in N.C.G.S. § 62 -133.8(b)(2) as follows: (a)  generate
+electric power at a new renewable energy facility; (b)  use a renewable energy resource
+to generate electric power at a generating facility other than the generation of electric
+power from waste heat derived from the combustion of fossil fuel; (c)  reduce energy
+consumption through the implementation of an EE measure; (d) purchase electric power
+from a new renewable energy facility; (e)  purchase RECs derived from in -state or
+out-of-state new renewable energy facilities; (f)  use electric power that is supplied by a
+new renewable energy facility or energy saved due to the implementation of an EE
+measure that exceeds the requirements of this section for any calendar year as a credit
+towards the requirements of this section in th e following calendar year; or (g)  electricity
+demand reduction. In 2022, the electric public utilities were required to meet 12.5% of
+their previous year’s North Carolina retail electric sales by a combination of the measures
+authorized by N.C.G.S. § 62 -133.8(b). Each of these compliance methods is subject to
+certain additional limitations and conditions.
+N.C.G.S. § 62 -133.8(c) has similar requirements for electric membership
+corporations and municipal electric systems.
+N.C.G.S. § 62 -133.8(d) requires a certain percentage of the total electric power
+sold to retail electric customers in the State, or an equivalent amount of energy, to be
+supplied by a combination of new solar electric facilities and new metered solar therm al
+energy facilities. The percentage requirement for solar resources is 0.2% for 2018 and
+subsequent years.
+N.C.G.S. § 62 -133.8(e) requires a certain percentage of the total electric power
+sold to retail electric customers in the State to be supplied by swine waste resources. The
+General Assembly established an initial aggregate 0.07% swine waste resources
+requirement in 2012, increasing thereafter. N.C.G.S. §  62-133.8(f) requires a specific
+amount of electric power sold to retail electric customers in the State, or an equivalent
+amount of energy, to be supplied, or contracted for supply in each year, by poultry waste
+resources. The General Assembly established an initial aggregate poultry waste
+resources requirement of 170,000 MWh in 2012, increasing thereafter. Pursuant to the
+Commission’s Order on Pro -Rata Allocation of Aggregate Swine and Poultry Waste
+Set-Aside Requirements and Motion for Clarification issued on March 31, 2010, in Docket
+No. E-100, Sub 113, DENC’s share of the aggregate State set -aside requirements for
+energy from poultry waste resources is based on the ratio of its North Carolina retail
+kilowatt-hour (kWh) sales from the previous year divided by the previous year’s total North
+Carolina retail kWh sales for all electric power suppliers. Pursuant to the Commission’s
+Order Establishing Method of Allocating the Aggregate Poultry Waste Resources Se t-
+Aside Requirement issued April 18, 2016, in Docket No. E -100, Sub 113, starting with
+compliance year 2016, the aggregate poultry waste set-aside obligation shall be allocated
+among the electric power suppliers by averaging three years of historical retail sales, with
+the resulting allocation being held constant for three years.
+At the joint request of the State’s electric power suppliers, including DENC, the
+Commission issued the Delay Orders in Docket No. E-100, Sub 113, pursuant to specific
+
+--- PDF page 8 ---
+8
+authority provided to the Commission by the General Assembly to modify the REPS
+requirements under N.C.G.S. § 62-133.8(i)(2).
+Specifically, the Commission’s November 29, 2012 Order Modifying the Poultry
+and Swine Waste Set -Aside Requirements and Granting Other Relief directed that the
+swine waste resource set-aside requirement for 2012 be eliminated and that the poultry
+waste resource requirements for 2012 and subsequent years be delayed for a year. On
+March 26, 2014, the Commission issued a Final Order Modifying the Poultry and Swine
+Waste Set-Aside Requirements and Providing Other Relief, approving another one -year
+delay for bot h the swine waste resource and poultry waste resource requirements and
+requiring certain additional reporting by all electric power suppliers, including DENC. On
+November 13, 2014, the Commission issued an Order Delaying Swine Set -Aside and
+Providing Other Relief, delaying DENC’s and other electric power suppliers’ swine waste
+resource requirement for one year and establishing an initial aggregate poultry waste
+resource requirement of 170,000 MWh for 2014, to be divided among the electric power
+suppliers. O n December 1, 2015, the Commission issued an Order Delaying Swine
+Set-Aside and Providing Other Relief, granting a further delay of the initial swine waste
+requirement until 2016, modifying the 2015 poultry waste set-aside requirement to remain
+at the same level as the 2014 aggregate requirement of 170,000 MWh, and delaying by
+one year the scheduled increases in the requirement (the requirement was scheduled to
+increase to 700,000 MWh in the aggregate for all electric power suppliers). On October
+16, 2016, the Commission issued an Order Modifying the Swine Waste Set -Aside
+Requirement and Providing Other Relief, which delayed for one additional year the
+commencement of the swine waste set -aside requirement. The Commission also
+modified the 2016 poultry waste set-aside requirement to remain at the same level as the
+2014 and 2015 aggregate requirement of 170,000 MWh and delayed by one additional
+year the scheduled increases in the requirement (increasing to 700,000 MWh for 2017,
+and 900,000 MWh for 2018 and each year thereafter).
+On October 16, 2017, the Commission issued an Order Modifying the Swine Waste
+Set-Aside Requirement and Providing Other Relief, which delayed for one additional year
+the initial compliance requirement under the swine waste set-aside. The Commission also
+modified the 2017 poultry waste set-aside requirement to remain at the same level as the
+2014 and 2015 aggregate requirement of 170,000 MWh and delayed by one additional
+year the scheduled increases in the requirement (increasing to 700,000 MWh for 2018
+and 900,000 MWh for 2019 and each year thereafter). Through its Delay Orders, the
+Commission established that the aggregate statewide poultry waste resource
+requirement for the State’s electric power suppliers, including DENC, is 170,000 MWh for
+2016 and 2017,  and delayed the initial swine waste requirement until 2018. In its
+October 8, 2018 Order, the Commission required the electric public utilities, including
+DENC, to meet 0.02% of their sales using swine waste resources and decreased the
+aggregate poultry waste requirement to 300,000 MWh. In its December 16, 2019 Order,
+the Commission required the electric public utilities, including DENC, to meet 0.04% of
+their sales using swine waste resources and decreased the aggregate poultry waste
+requirement to 500,000 MWh. In its December 30, 2020 Order, the Commission delayed
+the initial swine waste requirement for one additional year for electric membership
+
+--- PDF page 9 ---
+9
+corporations. In its March 4, 2022 Order, the Commission established modified aggregate
+statewide poultry waste set -aside requirements of 700,000 MWhs for 2022 and
+900,000 MWhs for 2023. In its December 2022 Delay Order, the Commission confirmed
+the 2022 and 2023 poultry waste set-aside requirements established in its March 4, 2022
+Order and modified the 2022 swine waste set -aside requirement for the electric public
+utilities. On December 11, 2023, the Commission issued an Order Modifying the Swine
+Waste Set-Aside Requirement and Granting Other Relief that modified the requirements
+of N.C.G.S. § 62 -133.8(e) for DEC, DEP, and DENC by lowering the 2023 compliance
+requirement to 0.05% of retail sales , delayed entirely the 2023 swine waste set -aside
+requirement for the electric membership corporations and municipalities and imposed for
+2024-25 a requirement of 0.07% for 2026-27 a requirement of 0.14%, and for 2028 and
+thereafter a requirement of 0.20%.
+N.C.G.S. § 62-133.8(b)(2)(e) provides that an electric power supplier shall achieve
+no more than 25% of its annual REPS compliance obligations using RECs from
+out-of-state new renewable energy facilities. However, paragraph (b)(2)(e) specifically
+exempts any electric public utility with less than 150,000 North Carolina retail jurisdictional
+customers as of December 31, 2006. The Commission held in its Order on Dominion ’s
+Motion for Further Clarification, issued September 22, 2009, in Docket No. E -100,
+Sub 113, that this exemption applies to DENC for purposes of both its general REPS
+obligation and individual set-aside requirements pursuant to N.C.G.S. § 62 -133.8(d)–(f).
+DENC may, therefore, achieve 100% of its REPS compliance using RECs generated by
+out-of-state new renewable energy facilities.
+N.C.G.S. § 62-133.8(b)(2)(c) provides that an electric public utility may use energy
+efficiency certificates (EECs) to meet no more than 25% of its total requirement  through
+2020 but allows no more than 40% for 2021 and thereafter . This limitation on the use of
+EECs to meet the total requirement does not apply to municipal suppliers such as Town
+of Windsor.
+N.C.G.S. § 62 -133.8(h)(4) requires the Commission to allow an electric power
+supplier to recover all of its incremental costs incurred to comply with N.C.G.S. § 62-133.8
+through an annual rider. N.C.G.S. § 62 -133.8(h)(1) provides that “incremental costs”
+means all reasonable and prudent costs incurred by an electric power supplier to comply
+with the REPS requirements that are in excess of the electric power supplier’s avoided
+costs, other than those costs recovered pursuant to N.C.G.S. § 62 -133.9. The term
+“avoided costs” includes both avoided energy costs and avoided capacity costs.
+Commission Rule R8-67(e)(2) provides that the reasonable and prudently incurred costs
+of unbundled RECs are incremental costs and have no avoided cost component.
+Commission Rule R8 -67(e)(5) provides that “[t]he REPS EMF will reflect the
+difference between reasonable and prudently incurred incremental costs and the
+revenues that were actually realized during the test period under the REPS rider then in
+effect.”
+
+--- PDF page 10 ---
+10
+DENC’s 2023 REPS Compliance Report for compliance year 2022 stated that
+pursuant to N.C.G.S. § 62 -133.8(c)(2)(e), DENC provided renewable energy resources
+and compliance reporting services for Town of Windsor.
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 6
+The evidence supporting this finding of fact appears in DENC’s 2023 REPS
+Compliance Report for compliance year 2022 and in the testimony and exhibits of DENC
+witness Hitch and the affidavit of Public Staff affiant Lucas. In addition, the Commission
+takes judicial notice of information contained in NC-RETS.
+DENC’s 2023 REPS Compliance Report was admitted into evidence as Company
+Exhibit GEH -1. This report provided the information required by Commission Rule
+R8-67(c) for DENC and Town of Windsor. Publi c Staff affiant Lucas stated that he
+reviewed DENC’s 2023 REPS Compliance Report and recommended that it be approved.
+DENC’s 2023 REPS Compliance Report stated that DENC’s 2021 retail electric
+sales were 4,222,019 MWh and Town of Windsor’s were 47,196 MWh. DENC’s 12.5%
+2021 total REPS obligation amounted to 527,752 RECs, including 459,575 general
+obligation RECs, 8,445 solar RECs (0.2% of 4,222,019), 22,134 poultry waste RECs,
+2,112 swine waste RECs, and 35,486 EECs from its portfolio of in -state EE programs
+approved pursuant to N.C.G.S. § 62 -133.9. Town of Windsor’s 10% 2021 total REPS
+obligation amounted to 4,720 RECs, including 4,379 general obligation RECs, 95 solar
+RECs (0.2% of 47,196), and 246 poultry waste RECs. The Commission’s December 16,
+2019; December 30, 2020; March 4, 2022; and December 20, 2022 Orders each delayed
+the initial swine waste set -aside requirement for municipalities until 202 3. The
+December 11, 2023 Delay Order delayed the swine waste set-aside requirements for
+electric membership corporations and municipalities until 2024. Town of Windsor did not
+use any EECs for compliance. Public Staff affiant Lucas stated that these numbers of
+RECs met the REPS requirement that 12.5% of 2021 retail sales must be matched with
+an equivalent number of RECs in 2022, including 0.2% of 2021 retail sales that must be
+matched with an equivalent number of RECs derived from solar energy. Witness Hitch
+testified that out-of-state RECs may be used for 100% of DENC’s REPS compliance but
+may not be used to meet more than 25% of Town of Windsor’s REPS requirements.
+DENC complied with these limitations. NC -RETS further indicates that DENC complied
+with the provisions of N.C.G.S. § 62-133.8(b)(2)(e) and (c)(2)(d).
+No party disputed that DENC and Town of Windsor complied with their 2022 REPS
+requirements, and witness Hitch and affiant Lucas both stated that DENC and Town of
+Windsor met the 2022 REPS requirements.
+Based on the foregoing and all the evidence of record, the Commission finds that
+DENC and its wholesale customer, Town of Windsor, for which DENC is providing REPS
+compliance services, have fully complied with the requirements of the REPS for 2022,
+and that DENC’s 2023 REPS Compliance Report for compliance year 202 2 should be
+approved.
+
+--- PDF page 11 ---
+11
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 7
+The evidence supporting this finding of fact appears in DENC’s Application; the
+testimony of DENC witnesses Hitch, Wooldridge, and Chargois; and the affidavits of
+Public Staff affiants Lucas and Cofield.
+Commission Rule R8 -67(e)(3) provides that the test period for REPS rider
+proceedings shall be the same as that used by the utility in its annual fuel charge
+adjustment proceedings, which is specified in Rule R8-55(c) for DENC to be the 12-month
+period ending each June 30. Therefore, the test period to be used for purposes of this
+proceeding is the period July 1, 2022, through June 30, 2023.
+Regarding the rate period, Rule R8 -67(e)(4) provides that the REPS and REPS
+EMF riders shall be in effect for a fixed period that “shall coincide, to the extent practical,
+with the recovery period for the cost of fuel and fuel-related cost rider established pursuant
+to Rule R8-55.” For DENC, this time period is February 1, and the subsequent 12-month
+period. In its current fuel proceeding, Docket No. E -22, Sub 675, and in this proceeding,
+DENC has proposed that its rate adjustments take effect on February 1, 2024, and remain
+in effect for a 12-month period.
+DENC’s test period and rate period were not challenged by any party. Therefore,
+the Commission finds that the test period and rate period proposed by DENC are
+appropriate for use in this proceeding.
+EVIDENCE AND CONCLUSIONS FOR FINDING OF FACT NO. 8
+The evidence supporting this finding of fact is found in the testimony and exhibits
+of DENC witness Hitch. DENC witness Hitch testified that DENC purchases RECs for use
+by Town of Windsor, its wholesale customer, to meet its REPS obligations. However, 75%
+of Town of Windsor’s RECs must be obtained from in -state sources, whereas DENC,
+pursuant to N.C.G.S. § 62-133.8(b)(2)(e), is exempt from this requirement and may obtain
+all of its RECs from outside North Carolina. Because of this difference in requirements ,
+DENC has directly assigned to the Town of Windsor the costs of RECs used for its REPS
+compliance and has excluded them from the REPS costs DENC is seeking to recover in
+this proceeding. Similarly, witness Hitch testified, other incremental REPS compliance
+costs reasonably attributable to Town of Windsor are excluded from the costs that DENC
+is seeking to recover. The Public Staff made no objectio n to the manner in which DENC
+separates its own REPS compliance costs from those incurred on behalf of Town of
+Windsor. Accordingly, the Commission finds that DENC’s practice of managing its retail
+REPS costs separately from the REPS costs for Town of Windsor is reasonable.
+EVIDENCE AND CONCLUSIONS FOR FINDINGS OF FACT NOS. 9-14
+The evidence supporting these findings of fact appears in the testimony and
+exhibits of DENC witnesses Wooldridge and Chargois and the affidavits of Public Staff
+affiants Lucas and Cofield.
+
+--- PDF page 12 ---
+12
+As shown in witness Wooldridge’s Exhibit JAW -1, Schedule 2, DENC’s
+incremental REPS compliance costs for the test period amounted to $ 830,411, while its
+test-period Rider RP revenues totaled $ 778,915, resulting in an under recovery  of
+$51,496, to be recovered through Rider RPE. The under recovery for each customer class
+is set forth on witness Chargois’ amended Exhibit JNC-1, Schedule 2, as follows: $26,152
+for the residential class, $ 24,926 for the commercial class, and $ 418 for the industrial
+class. These under recoveries  are divided by the total adjusted number of accounts,
+which are 108,842, 18,673, and 47 for the residential, commercial, and industrial classes,
+respectively, and further divided by 12 months to determine the monthly p er-account
+charge. The projected incremental costs for the billing period, which are recovered
+through Rider RP, amount to $ 1,417,810. These costs are set forth on  amended
+Exhibit JNC-1, Schedule 5, and are broken down by customer class as follows: $718,357
+for the residential class, $687,913 for the commercial class, and $11,539 for the industrial
+class. DENC acknowledges that the costs presented by customer class on Exhibit JNC-1,
+amended Schedule 5, do not equal the projected incremental costs for the billing period
+due to rounding in the calculations utilized to determine the costs per customer class.
+These incremental costs are divided by the projected total adjusted number of accounts
+for each cla ss, and further divided by 12 months to determine the monthly per -account
+charge.
+In her testimony, witness Chargois determined that the appropriate monthly rates
+for Riders RP and RPE, including the regulatory fee, are as follows:
+Customer Class Forecast Rate
+(Rider RP)
+EMF Rate
+(Rider RPE)
+Total REPS Rate
+Residential $0.55 $0.02 $0.57
+Commercial $3.07 $0.11 $3.18
+Industrial $20.46 $0.74 $21.20
+
+Public Staff affiants Lucas and Cofield described the Public Staff’s audit of DENC’s
+REPS costs and recommended approval of DENC’s proposed Rider RP and RPE rates.
+The Commission therefore finds DENC’s proposed rates to be reasonable.
+IT IS, THEREFORE, ORDERED as follows:
+1. That DENC shall establish a REPS Rider RP as described herein, in the
+amounts approved herein, and that this rider shall remain in effect for a 12-month period
+beginning February 1, 2024, and expiring January 31, 2025;
+2. That DENC shall establish a REPS EMF Rider RPE as described herein,
+and that this rider shall remain in effect for a 12-month period beginning February 1, 2024,
+and expiring January 31, 2025;
+3. That DENC shall work with the Public Staff to prepare a joint notice to
+customers of the rate changes ordered by the Commission in this docket, as well as in
+Docket No. E -22, Subs 675 and 676, and DENC shall file such notice for Commission
+
+--- PDF page 13 ---
+13
+approval as soon as practicable, but not later than five working days after the Commission
+issues orders in all of the above-referenced dockets;
+4. That DENC shall file appropriate rate schedules and riders with the
+Commission to implement the provisions of this Order as soon as practicable; and
+5. That DENC’s 2022 REPS Compliance Report is hereby approved, and the
+RECs and EECs in DENC’s and Town of Windsor’s 2022 compliance sub-accounts in
+NC-RETS shall be retired.
+6. That the Chief Clerk’s Office shall send a copy of this Order to the NC-RETS
+Administrator.
+ISSUED BY ORDER OF THE COMMISSION.
+This the 24th day of January, 2024.
+NORTH CAROLINA UTILITIES COMMISSION
+
+
+Taylor C. Berry, Deputy Clerk
+
+
+Commissioners William M. Brawley and Tommy Tucker did not participate in the decision
+in this docket.

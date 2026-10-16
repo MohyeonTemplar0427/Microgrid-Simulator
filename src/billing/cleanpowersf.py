@@ -6,12 +6,11 @@ that any provider's rates expire then. See docs/CleanPowerSF.md.
 """
 from dataclasses import replace
 from datetime import date
-from .pge_commercial import (PGE_B1_SECONDARY_SINGLE_PHASE_BUNDLED,
-                             PGE_B1_SECONDARY_POLYPHASE_BUNDLED, B1_SOURCE_URL)
+from .pge_commercial import B1_SOURCE_URL
 from .tariffs import ServiceType, register_tariff
 
 GENERATION_SOURCE = "https://cleanpowersf.org/commercial-rate-tables"
-from .pge_cca import PCIA, FFS, FFS_SOURCE, PGE_GENERATION, BUNDLED_PCIA, b1_components
+from .pge_cca import PCIA, FFS_SOURCE, b1_components
 
 GREEN = (.16197, .11958, .11958, .10166, .11440, .08638, .10052)
 VERIFIED_THROUGH = date(2026, 9, 16)

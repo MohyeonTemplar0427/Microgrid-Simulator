@@ -85,6 +85,25 @@ def on_peak(index):
     return (index.dayofweek < 5) & (index.hour >= np.where(summer, 10, 7)) & (index.hour < 22)
 
 
+def gs2t_base_lines(index, grid, distribution_demand, on_peak_demand,
+                   billing_month, factor, *, math):
+    """One GS-2T base-rate expression for legacy and general VA workflows.
+
+    Independently dated riders and account validation remain with each caller;
+    this helper never extends verified coverage or adds wholesale obligations.
+    """
+    total = math.sum(grid) * math.hours
+    rates = np.where(on_peak(index), .020278, .009928)
+    supply_rate = 4.526 if 6 <= billing_month <= 9 else 2.215
+    return {"customer": 37.08 * factor,
+            "distribution_demand": distribution_demand * 4.963 * factor,
+            "distribution_energy": total * .000079,
+            "generation_demand": on_peak_demand * supply_rate * factor,
+            "generation_adjustment_demand": 0.,
+            "generation_energy": math.dot(grid, rates) * math.hours,
+            "transmission_demand": on_peak_demand * 2.313 * factor}
+
+
 def charge_lines(index, grid, account, *, convex=False, tax_band=None):
     """Shared arithmetic; convex calls require a proven low-load-factor scope.
 
@@ -98,20 +117,17 @@ def charge_lines(index, grid, account, *, convex=False, tax_band=None):
     peak = cp.max(grid) if convex else float(np.max(grid))
     mask = on_peak(index)
     supply_peak = (cp.max(grid[mask]) if convex else float(np.max(grid[mask]))) if mask.any() else 0.
-    supply_rate = 4.526 if 6 <= account["billing_month"] <= 9 else 2.215
     factor = days / 30
     distribution = account["contract_demand_kw"]
     low_factor = True if convex else (total <= days*24*peak*.5 + 1e-8)
-    energy_rate = np.where(mask, .020278, .009928)
-    lines = {"customer": 37.08*factor,
-             "distribution_demand": distribution*4.963*factor,
-             "distribution_energy": total*.000079,
-             "generation_demand": supply_peak*supply_rate*factor,
-             "generation_adjustment_demand": 0.,
-             "generation_energy": (cp.sum(cp.multiply(grid, energy_rate)) if convex else float(np.dot(grid, energy_rate)))*.5,
-             "transmission_demand": supply_peak*2.313*factor,
-             "rider_DIST": distribution*1.169*factor,
-             "rider_T1": supply_peak*4.554*factor}
+    from types import SimpleNamespace
+    operations = SimpleNamespace(hours=.5,
+        sum=cp.sum if convex else np.sum,
+        dot=(lambda x, y: cp.sum(cp.multiply(x, y))) if convex else np.dot)
+    lines = gs2t_base_lines(index, grid, distribution, supply_peak,
+                            account["billing_month"], factor, math=operations)
+    lines.update(rider_DIST=distribution*1.169*factor,
+                 rider_T1=supply_peak*4.554*factor)
     lines.update({"rider_"+k: total*v for k, v in ENERGY_RIDERS.items()})
     lines.update({"rider_"+k: total*rates[0] if low_factor else supply_peak*rates[1]*factor
                   for k, rates in CONDITIONAL_RIDERS.items()})

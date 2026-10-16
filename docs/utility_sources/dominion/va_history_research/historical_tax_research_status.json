@@ -1,0 +1,19 @@
+{
+  "research_date": "2026-10-15",
+  "consumption_tax": {
+    "source_url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/consumption-tax.pdf",
+    "live_document_status": "Current PDF contains only meter readings on/after 2025-08-16 plus 2026 data-center provisions; retained in current tariff evidence.",
+    "discovery_note": "Search-index text exposes a prior July 2021-August 2025 table, but its actual original has not been retrieved. Cached snippets are not enabled historical rates."
+  },
+  "sales_use_tax_surcharge": {
+    "source_url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/sales-and-use.pdf",
+    "status": "Live PDF replaced by 2026 rates. Dated 2025 original and complete transition chain still required."
+  },
+  "henrico_local_tax": {
+    "discovery_urls": [
+      "https://henrico-eda-site-assets.s3.amazonaws.com/portal-uploads/34230-Henrico%20Tax%20Summary%202025.pdf",
+      "https://henrico-eda-site-assets.s3.amazonaws.com/portal-uploads/35032-Henrico%20Tax%20Summary%202025.pdf"
+    ],
+    "status": "Both public search-discovered 2025 upload URLs returned HTTP 403. Search snippets alone do not enable historical tax coverage."
+  }
+}

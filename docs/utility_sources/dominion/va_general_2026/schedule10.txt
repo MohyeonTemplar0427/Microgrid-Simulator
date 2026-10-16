@@ -1,0 +1,480 @@
+PAGE 250
+Virginia Electric and Power Company       
+ 
+ 
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+I. APPLICABILITY 
+ 
+A. Except as modified herein, t his schedule is applicable only to non- residential 
+Customers (1) who elect to receive Electricity Supply Service and Electric Delivery 
+Service from the Company  and (2) whose peak measured average 30 -minute interval 
+demand has reached or exceeded 500  kW during at least three billing months within 
+the previous 12 consecutive billing months  immediately prior to the Customer’s 
+effective date for service under this schedule.  Discontinuance of Electric Service 
+under this schedule shall be in accordance with Paragraph  I.B. or XII. of this 
+schedule. 
+ 
+B. For a Customer served under this schedule whose peak measured demand has 
+decreased to less than 500  kW, this schedule shall remain applicable to the Customer 
+and the Customer shall not have the option to purchase electricity under Schedule 
+GS-1, GS -2 or GS -2T until such time  as the maximum measured demand has 
+remained at less than 500  kW during all billing months within the current and 
+previous 11 billing months beginning with the first billing month of 2025. 
+ 
+C. Notwithstanding any other provisions of this schedule, if a Customer:  (1) received or 
+was eligible to receive service under this schedule during the preceding 24 months; 
+(2) installed and began operating bona fide automated load management equipment or 
+high-efficiency equipment which replaces standard -efficiency equipment; and (3)  is 
+currently ineligible for service under Paragraphs I.A. and I.B. because of the 
+installation and operation of such equipment, then the C ustomer shall be eligible for 
+service under this schedule.  Once service is provided under this Paragraph I.C., 
+service may continue to be supplied under this schedule only so long as the Customer 
+regularly operates such equipment in a bona  fide manner.  The type and design of 
+such equipment must be approved by the Company and the equipment shall be 
+subject to inspection by the Company. 
+ 
+D. At such time the Customer no longer meets the above applicability requirements, the 
+Customer will remain on this schedule for the period (not exceeding two additional 
+billing months) required to achieve an orderly transfer to the applicable schedule. 
+ 
+E. For new service, this schedule is applicable when the anticipated kW demand meets 
+the criteria of Paragraph I.A., above. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 251
+Virginia Electric and Power Company       
+ 
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+(Continued) 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+I. APPLICABILITY (Continued) 
+ 
+  F. Beginning January 1, 2027, the determination of distribution, transmission, and 
+generation demands, and Minimum Billable Generation Demand Charge described  
+in Paragraph VII. will apply to a non -residential Customer who (1) has a maximum 
+measured demand for at least three billing months during the current and previous 
+11 billing months or contracts for demand equal to or greater than 25 MW and ( 2) 
+does not qualify for Rate Schedule GS -5.  Such Customers are subject to Section 
+XXVII. of the Terms and Conditions for the Provision of Electric Service.   
+ 
+II. AVAILABILITY 
+ 
+ This schedule is not available at a location until such time that the Company has installed 
+all necessary metering equipment .  This schedule is not available to Customers electing to 
+participate, either directly or indirectly through a third -party curtailment service provider, in any 
+PJM Interconnection, LLC Demand Response P rogram or any Company- sponsored peak-
+shaving demand response program.   
+ 
+III. 30-DAY VARIABLE RATE 
+ 
+    A.     Distribution Service Charges 
+ 
+1. Basic Customer Charge  
+Basic Customer Charge $201.65 per billing month. 
+ 
+2. Plus Distribution Demand Charge 
+  
+a. Primary Voltage Customer 
+First 5,000 kW of Distribution Demand @ $2.717 per kW 
+Additional kW of Distribution Demand @ $2.076 per kW 
+ 
+b. Secondary Voltage Customer 
+All kW of Distribution Demand  @ $3.316 per kW 
+ 
+3. Plus Distribution kWh Charge 
+ 
+a. All kWh at Primary or Transmission 
+Service Voltage    @ 0.1771¢ per kWh 
+ 
+b. All kWh at Secondary Service Voltage @ 0.1682¢ per kWh 
+ 
+4. Plus each Distribution kilowatt-hour used is subject to all applicable riders   
+in the Exhibit of Applicable Riders, including non-bypassable charges.  
+
+PAGE 252
+ Virginia Electric and Power Company  
+      
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+(Continued) 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+ 
+III. 30-DAY VARIABLE RATE (Continued) 
+ 
+5. Plus each kW is subject to all applicable distribution riders in the Exhibit of 
+Applicable Riders, including non- bypassable charges.  Such kW shall be the 
+kW of Distribution Demand determined pursuant to Paragraph V. or VII. , 
+below. 
+  
+ B.     Electricity Supply (ES) Service Charges 
+ 
+1. Plus Generation Adjustment Demand Charge 
+ Secondary Voltage Customer 
+All kW of Demand   @ $0.000 per kW 
+ 
+2. Plus Generation kWh Charge 
+ 
+All ES kWh will be categorized according to the following table and billed at 
+the rates specified. 
+ 
+a. For the period May 1 through September 30: 
+ 
+Day 
+Classification 
+ On-Peak 
+Period 
+ On-Peak 
+Rate Per ES kWh 
+ Off-Peak 
+Rate Per ES kWh 
+       
+A  2 p.m. – 7 p.m.  27.8424¢  6.1924¢ 
+       
+B  11 a.m.- 9 p.m.  2.2304¢  0.5910¢ 
+       
+C  7 a.m.- 10 p.m.  0.9616¢  0.5546¢ 
+ 
+b. For the period October 1 through April 30: 
+ 
+Day 
+Classification 
+ On-Peak 
+Period 
+ On-Peak 
+Rate Per ES kWh 
+ Off-Peak 
+Rate Per ES kWh 
+       
+A  6 a.m.- noon & 
+5 p.m.- 9 p.m.  27.8424¢  7.4905¢ 
+       
+B  6 a.m.-noon & 
+5 p.m.- 9 p.m.  2.2304¢  1.0106¢ 
+       
+C  6 a.m.-noon & 
+5 p.m.- 9 p.m.  1.7001¢  0.9477¢ 
+ 
+ (NOTE:  Classification A will apply for no more than 28 days during any calendar 
+year, and classification C will apply for no less than 60 days during any calendar 
+year.) 
+
+PAGE 253
+ Virginia Electric and Power Company  
+      
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+(Continued) 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+ 
+III. 30-DAY VARIABLE RATE (Continued) 
+ 
+3. Plus Transmission Demand Charge 
+ 
+a. All kW of ES Peak Demand for Primary or  
+ Transmission Service Voltage @ $0.646 per kW 
+ 
+b. All kW of ES Peak Demand for  
+ Secondary Service Voltage  @ $1.094 per kW 
+ 
+4. Plus each Electricity Supply kilowatt- hour is subject to all applicable riders in 
+the Exhibit of Applicable Riders , including non- bypassable charges, as 
+discussed in Paragraph XI., below. 
+ 
+5. Plus each kW of Electricity Supply Peak Demand is subject to all applicable 
+riders in the Exhibit of Applicable Riders , including non-bypassable charges, as 
+discussed in Paragraph XI., below. 
+ 
+C. The minimum charge shall be such as may have been contracted for  prior to 
+January 1, 2022 or may be contracted for pursuant to the Terms and Conditions for 
+the Provision of Electric Service, Section XXII.Q. 
+ 
+IV. NOTIFICATION OF DAY CLASSIFICATION 
+ 
+The Generation kWh Charge day classification for each day will be determined by the 
+Company and will be available via the Company’s Internet website  by 5 p.m. the preceding day.  
+Should the Company fail to make its determination by 5 p.m., the classification shall default to 
+“C.”  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 254
+Virginia Electric and Power Company       
+ 
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+(Continued) 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+V. DETERMINATION OF DISTRIBUTION DEMAND 
+ 
+ The Distribution Demand shall be billed only where the service voltage is less than 
+69 kV.  Service voltage is defined as the voltage associated with facilities which the Company 
+would normally provide for the service required by the Customer.  The kW of demand billed 
+under III.A.2. shall be the highest of: 
+ 
+A. The highest average kW measured at the location during any 30-minute interval 
+   of the current and previous 11 billing months. 
+ 
+B.    500 kW. 
+ 
+C. For Customers new to this schedule served on or after January 1, 2022, and for   
+existing Customers served on this schedule where a minimum demand has not been 
+contracted for but an increase in capacity has been requested and where the 
+projected kW load is estimated to exceed 500 kW, the minimum demand shall not 
+be less than 70% of the kVA capacity of the normal service transformer required to 
+serve the Customer’s projected load.  
+ 
+D. For Customers served prior to January 1, 2022, and where there presently is a 
+contracted minimum demand, the Customer will have the option to either (i) 
+continue at the contracted minimum demand level until such time as the existing 
+normal service transformer(s) requires replacement due to Customer load growth, at 
+which time the minimum demand will be set per V.C., above, or (ii) immediately 
+set the contract minimum demand per V.C., above. 
+ 
+E. At the Customer’s request, after 12 months of active service, in lieu of V.C. or V.D. 
+above, the Customer has the option to execute an Agreement for Electric Service 
+and pay a Monthly Facilities Charge for any excess facilities in a ccordance with 
+Section IV.E. of the Terms and Conditions.  For purposes of this provision, “excess 
+facilities” shall mean such facilities as have been installed that are larger or more 
+than necessary to serve the Customer.  In the event the Customer selects this option, 
+the determination of the Distribution Demand pursuant to Paragraph V. shall be the 
+higher of V.A. or V.B., above. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 255
+Virginia Electric and Power Company       
+ 
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+(Continued) 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+VI. DETERMINATION OF ELECTRICITY SUPPLY PEAK DEMAND  
+ 
+ The Company may install metering equipment necessary to determine both the average 
+kW demand during a 30- minute interval and the average kVA demand during a 30- minute 
+interval.  The Electricity Supply Peak Demand for the current billing month shall be the higher 
+of: 
+1. The highest average kW demand measured during the current billing month, or 
+ 
+2. 85% of the highest average kVA demand measured during the current billing 
+month. 
+ 
+VII. DETERMINATION OF ELECTRIC SERVICE D EMANDS AND MINIMUM 
+BILLABLE GENERATION DEMAND CHARGE FOR HIGH LOAD CUSTOMERS 
+ 
+  For Customers who meet the applicability requirements per Paragraph I. F., the 
+distribution, transmission, and generation demands will be determined as described below.  
+Customers that elect to receive Electric Delivery Service from the Company under this Schedule 
+prior to January 1, 2016 are exempt from Paragraph VII. 
+ 
+A.  Distribution Demand  
+ 
+  1.   Distribution Demand shall be billed only where the normal service delivery 
+    voltage is less than 69 kV. 
+ 
+  2. The Distribution Demand billed under Paragraph III.A.2. will be the higher of: 
+ 
+    a.  The highest average kW measured at the location during any 30- minute 
+interval of the current and previous 11 billing months, or 
+ 
+    b. Eighty-five percent of the Customer’s contracted demand.  
+ 
+B. Transmission Electricity Supply Peak Demand  
+ 
+  1. The kW of demand billed under Paragraph III.B.3. will be the highest of: 
+ 
+  a. The highest average kW demand measured during the  current billing 
+month, or 
+ 
+b. Eighty-five percent of the highest average kVA demand measured during 
+the current billing month, or 
+ 
+  c. Eighty-five percent of the contracted demand. 
+
+PAGE 256
+Virginia Electric and Power Company       
+ 
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+(Continued) 
+ 
+(Continued) 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+VII. DETERMINATION OF ELECTRIC SERVICE DEMANDS AND MINIMUM 
+BILLABLE GENERATION DEMAND CHARGE  FOR HIGH LOAD CUSTOMERS 
+(Continued) 
+ 
+C. Minimum Billable Generation Electricity Supply Demand Determination and 
+Charge 
+ 
+1. A Minimum Billable Generation Demand Charge shall be applied when the 
+On-Peak Electricity Supply Demand determined in Paragraph VII.C . is less 
+than sixty percent of the contracted demand. Any Customer who meets the 
+qualification in Paragraph I.F. and (i) was taking service under Schedule 10 as 
+of January 1, 2025 or (ii) notified the Company in writing before 
+January 1, 2025 of its intent to take service under Schedule 10 prior to 
+January 1, 2026, will not be subject to Paragraph VII. C. The On -Peak 
+Electricity Supply Demand shall be determined as the highest of: 
+ 
+    a.  The highest average kW measured in any 30- minute interval of the current  
+billing month during the following On-Peak hours, or 
+ 
+1) From June 1 through September 30, On- Peak hours are 10 a.m. to 
+10 p.m., Mondays through Fridays. 
+ 
+2) From October 1 through May 31, On- Peak hours are 7 a.m. to 
+10 p.m., Mondays through Fridays. 
+ 
+3) All hours not specified above are Off-Peak. 
+ 
+    b.  Seventy-five percent of the highest kW of demand at this location as   
+determined under Paragraph VII.C.1.a. during the billing months of June 
+through September of the preceding 11 billing months. 
+ 
+2. a.  Minimum Billable Generation Demand Charge1  
+ 
+ Secondary Service Voltage        @   $X.XXX per kW 
+ 
+ Primary Service Voltage         @   $X.XXX per kW 
+ 
+ Transmission Service Voltage     @   $X.XXX per kW 
+ 
+  b.  Plus each kW of On-Peak Electricity Supply Demand determined pursuant 
+to Paragraph VII. C. is subject to all applicable riders in the Exhibit of 
+Applicable Riders, including non- bypassable charges, as discussed in 
+Paragraph XI. 
+ 
+1 The Minimum Billable Generation Demand Charge shall, pursuant to the Commission’s Final Order in Case No. 
+PUR-2025-00058, exclude PJM capacity expense. 
+
+PAGE 257
+Virginia Electric and Power Company       
+ 
+Schedule 10 
+LARGE GENERAL SERVICE 
+________________ 
+ 
+(Continued) 
+ 
+ 
+Filed 12-09-25 Superseding Filing Effective For Usage On and After 01-01-25. 
+Electric-Virginia This Filing Effective For Usage On and After 01-01-26. 
+ 
+VIII. METER READING AND BILLING 
+ 
+A. The Company may require that the Customer provide the Company with access to 
+the Customer's telephone service so that the Company may communicate with its 
+metering equipment. 
+ 
+B. When the actual number of days between meter readings is more or less than 30 
+days, the Basic Customer Charge, the Distribution Demand Charge, the 
+Transmission Demand Charge, and the minimum charge of the 30- day variable 
+rate will each be multiplied by the actual number of days in the billing period and 
+divided by 30. 
+ 
+IX. SERVICE AVAILABLE 
+  
+  Normally the Company will supply the equipment necessary and will deliver to the 
+Customer, in accordance with the Company's applicable Terms and Conditions at one Delivery 
+Point mutually satisfactory to the Customer and the Company, 60 cycle alternating current 
+electricity of the phase and voltage desired by the Customer at said Delivery Point, provided 
+electricity of the phase and voltage desired by the Customer is available generally in the area in 
+which electricity is desired. 
+ 
+X. PARALLEL OPERATION SERVICE 
+ 
+  A Customer operating an electric power plant in parallel with the Company's facilities 
+may elect service under this schedule provided that suitable relays and protective equipment are 
+furnished, installed, and maintained at the Customer's expense in accordance with specifications 
+furnished by the Company.  The relays and protection equipment shall be subject, at all 
+reasonable times, to inspection by the Company's authorized representative. 
+ 
+XI. NON-BYPASSABLE CHARGES 
+ 
+  Any Commission approved non- bypassable charges in the Exhibit of Applicable Riders 
+shall apply to all Customers pursuant to Virginia Law, unless the Customer meets the statutory 
+requirements for exemption from such charges. 
+ 
+XII. TERM OF CONTRACT 
+ 
+  The term of contract for the purchase of Electric Service under this schedule shall be in 
+multiples of one year, continuing thereafter for one -year terms unless either party provides sixty 
+days written notice of termination prior to the end of any term.   
+ 
+ 
+  

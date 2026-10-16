@@ -37,8 +37,6 @@ and the bus balance:
       = native_load + flexible_load + battery_charge + grid_export
 """
 
-from dataclasses import dataclass
-
 import numpy as np
 import pandas as pd
 
@@ -48,17 +46,6 @@ from .configuration import SurplusConfiguration
 
 class PowerBalanceError(ValueError):
     """An interval violates the power balance or a capability limit."""
-
-
-@dataclass
-class AllocationResult:
-    """Per-interval surplus allocation, all columns in kW."""
-
-    data: pd.DataFrame
-
-    @property
-    def frame(self) -> pd.DataFrame:
-        return self.data
 
 
 def allocate_surplus(

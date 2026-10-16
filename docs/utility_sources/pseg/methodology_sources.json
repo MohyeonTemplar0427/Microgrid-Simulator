@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/ciep/webciep-slides-for-website-for-06-01-2023.ashx",
+    "sha256": "e0774df3754faa09a627f161b582afebe43eeed07a54e7b79145d77bae44ed45",
+    "retrieved_date": "2026-10-15",
+    "format": "OLE PowerPoint",
+    "purpose": "Official CIEP methodology; illustrative prices, not historical supply data"
+  },
+  {
+    "url": "https://nj.pseg.com/-/media/pseg/public-site/documents/ciep/bgs-ciep_calculations_worksheet-june-2023.ashx",
+    "sha256": "2386b9e7ccaaf144243ffdb77ee5dd47a39332ea55c0eb2e3e2a9a90a8b89217",
+    "retrieved_date": "2026-10-15",
+    "format": "OLE Excel",
+    "purpose": "Official CIEP methodology; illustrative prices, not historical supply data"
+  }
+]

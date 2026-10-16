@@ -1,0 +1,1162 @@
+PAGE 1
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 Page 1 of 37 
+ 
+_____________________________________________________________________________________ 
+Dominion Energy  Virginia / North Carolina  
+Interconnection Parameters for Net 
+Metering Distributed Energy Resources  
+ 
+Contributing Group(s) Name(s) and Title(s) 
+DER Integration and Engineering 
+ 
+Richard LaVigne, Consulting Engineer 
+Stephen Guenther, Staff Engineer 
+DER Regulation & Compliance 
+Shaun R. Orton, DER Technical Coordinator 
+Hunter Wells, DG Contracts Administrator II 
+ 
+Reviewed By (Name and Title) Signature Date Reviewed 
+Mamadou Diong 
+Manager - DER Integration and Engineering 
+  
+Kaitlin Taylor 
+Manager - DER Regulation & Compliance 
+  
+ 
+ 
+Approved By (Name and Title) Signature Date Approved 
+Sean G. Stevens 
+Director - DER Integration and Management 
+  
+ 
+02/17/2026
+02/24/2026
+03/04/2026
+
+PAGE 2
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 2 of 37 
+ 
+_____________________________________________________________________________________ 
+REVISION HISTORY: 
+ 
+Version Date Revisions 
+1.0  Initial Release 
+2.0 12/12/2023 Midsize NEM Disclaimer 
+3.0 02/16/2026 
+Various editorial changes to 
+provide clarity 
+Update to estimated facilities 
+upgrade costs. Addition of 
+derating policy sub-section 
+  
+
+PAGE 3
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 3 of 37 
+ 
+_____________________________________________________________________________________ 
+Table of Contents 
+1 Scope .........................................................................................................................................6  
+1.1 Disclaimer: 6 
+         1.2       Inverter Derating Policy 
+2 Net Metering DER Study (Review) Parameters ............................................................................7  
+2.1 The Net Metering DER Study (Review) Generally 8 
+2.2 Net Metering DER <250 kW Study (review) Process. 9 
+2.3 Net Metering DER ≥ 250 kW and < 1,000 kW Study (review) Process. 10 
+2.4 Net Metering DER  ≥1,000 kW and ≤3,000 kW Study Process. 10 
+2.5 Net Metering DERs Energy Storage System (ESS) Review Parameters. 11 
+2.5.1 Loading and Discharging Restrictions ..................................................................... 11 
+2.5.2 ESS Parameters Review ........................................................................................... 11 
+2.5.2.1 Point of Electrical Connection Identification ........................................................... 11 
+2.5.2.2 ESS Inverter Specification ........................................................................................ 11 
+2.5.2.3 ESS Configuration and Operating Sequence Specifications .................................... 11 
+2.6 Net Metering DER Interconnection as it applies to IEEE Std. 1547-2018 12 
+2.6.1 Grid Support Capability Requirements .................................................................... 12 
+2.6.2 Ride-through Capability Requirements ................................................................... 12 
+Table 4: Dominion Energy Voltage Ride-Through Requirements 13 
+2.7 Other Net Metering DER Interconnection Study (Review) Parameters 13 
+2.7.1 Power Quality Requirements................................................................................... 13 
+2.7.1.1 Net Metering DER System’s RVC and Transformer Inrush Requirements ............... 13 
+2.7.1.2 Harmonics Requirements ........................................................................................ 13 
+2.7.1.2.1 Harmonics Study Process ........................................................................................ 14 
+2.7.2 Transformer Loading Limit Requirements ............................................................... 14 
+Table 1 : Transformer Chart - DER Limits ................................................................................ 15 
+       2.7.2.1 :   Service Transformer Requirements 
+
+PAGE 4
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 4 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+2.7.3 Circuit Loading Limit Requirements ........................................................................ 16 
+2.7.3.1 Thermal Limit/ Physical Circuit Capacity ................................................................. 16 
+Table 2 : Amps per Circuit Voltage and Equivalent MW ......................................................... 16 
+2.7.4 Equipment Reviews ................................................................................................. 17 
+3 Net Metering DER General Interconnection Parameters ............................................................ 17 
+3.1 Net Metering DER Interconnection Generator Step-up Transformer Requirements ............. 17 
+3.2 Interconnection Parameters for Net Metering DER < 250 kW 18 
+Figure 1: Typical Layout for Net Metering DER < 250 kW 18 
+3.3 Interconnection Parameters for Net Metering DER ≥250 kW and < 1,000 kW 18 
+3.3.1 Net Metering DER ≥250 kW and < 1,000 kW (with no DTT required) ..................... 18 
+Figure 2: Typical Layout for Net Metering DER ≥250 kW and < 1,000 kW (No DTT required) ........... 19 
+3.3.2 Net Metering DER ≥250 kW and < 1,000 kW (with DTT required) .......................... 19 
+Figure 3: Typical Layout for Net Metering DER ≥250 kW and < 1,000 kW (DTT Required) ............... 20 
+3.4 Interconnection Parameters for Net Metering DER ≥1,000 kW and ≤3,000 kW 20 
+3.4.1 Net Metering DER ≥1,000 kW and ≤3,000 kW (Existing Service Transformer) ....... 20 
+Figure 4: Typical Layout for Net Metering DER  ≥1,000 kW and ≤3,000 kW (Existing Service 
+Transformer) 21 
+3.4.2 Net Metering DER ≥1,000 kW and ≤3,000 kW (Dominion Energy owned 
+Transformer) ............................................................................................................................ 21 
+Figure 5: Typical Layout for Net Metering DER  ≥1,000 kW and ≤3,000 kW (Dominion Energy owned 
+Transformer) 22 
+3.4.3 External Power Supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (Dominion 
+Energy owned Transformer) .................................................................................................... 22 
+Figure 6: External Power Supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER customer-
+owned Transformer) 23 
+3.4.4 Net Metering DER ≥1,000 kW and ≤3,000 kW (DER customer-owned Transformer)
+ 23 
+
+PAGE 5
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 5 of 37 
+ 
+_____________________________________________________________________________________ 
+Figure 7: Typical Layout for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER customer-owned 
+Transformer) 24 
+3.4.5 External Power Supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER 
+customer-owned transformer) ................................................................................................ 24 
+Figure 8: External Power Supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER customer-
+owned Transformer) 25 
+4 Applicable Guides, Codes & Standards, State Jurisdictional Rules & Procedures ......................... 26 
+APPENDIX A:  Typical Layout of Connection Facilities ........................................................................ 28 
+Figure 1: Typical Primary Distribution Facility Layout (1,000 kW and above)......................... 29 
+Figure 2: Typical Primary Distribution Facility Layout with Additional Details (DER customer 
+owned transformer) ................................................................................................................ 31 
+Figure 3: Typical Primary and Secondary Distribution Facilities Layout (Dominion owned 
+transformer) ............................................................................................................................ 32 
+APPENDIX B: ESS Interconnection Configurations .............................................................................. 33 
+C1      DC coupled ESS 34 
+Figure 4: DC coupled ESS (Configuration 3) ............................................................................. 34 
+APPENDIX C: Estimated Facilities Costs for Typical DER Upgrades ...................................................... 35 
+Disclaimer: 36 
+Distribution Improvement: 36 
+ 
+
+PAGE 6
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 6 of 37 
+ 
+_____________________________________________________________________________________ 
+1 Scope 
+The scope of the Net Metering Interconnection Parameters for Distributed Energy Resources Guide 
+(Guide) is to provide technical background and guidance concerning the interconnection of Net Metering 
+Distributed Energy Resources (DER) . The primary purpose of a Net Metering DER is to offset customer 
+energy usage with the energy generated by a renewable fuel source.  With Net Metering DERs, 1 it is 
+expected that some amount of energy may flow onto Dominion Energy Virginia / North Carolina’s electric 
+distribution system, referred to in this guide as the Electric Power System (EPS), especially  during light 
+loading conditions. This guide provides a high-level overview of the interconnection study parameters to 
+form the basis of the engineering review of Net Metering DERs. 
+The interconnection parameters described in the Guide are based, as applicable, on Good Utility Practice, 
+industry standards, the North Carolina Utilities Commission (NCUC) Interconnection Rules and Procedures 
+associated with Net Metering, and the Virginia State Corporation Commission’s Regulations Governing 
+Net Energy Metering , which define and establish standardized interconnection and operating 
+requirements for the safe and reliable operation of the EPS and Net Metering DERs.  
+Any output capacity discussed in this Guide will be stated as kW or MW. 
+Estimated costs for typical Net Metering DER upgrades are attached as Appendix C.   
+ 
+1.1 Disclaimer:  
+The information contained within this Guide, including any standards, guidelines, criteria, or requirements 
+referenced therein or included in the Appendices, is intended to be used for information purposes only, 
+is provided “as is” without representation or warranty of any kind, expressed or implied, and is subject to 
+change.   
+Dominion Energy is not responsible for the user’s reliance on this Guide, or for any erroneous or 
+misleading material.  Dominion Energy may revise or withdraw this Guide at any time at its discretion 
+without notice.  It is the user’s responsibility to ensu re that it complies with all of Dominion Energy’s 
+current interconnection and operating requirements. To the extent that th e information in this Guide is 
+inconsistent with the Dominion Energy tariffs or agreements, the Dominion Energy tariffs or agreements, 
+as applicable, shall control.  Finally, this Guide is non-binding and confers no rights. 
+ 
+ 
+ 
+1 In this Guide, the term “Net Metering DERs” is used synonymously with “Generating Facility” or “Generator” as 
+those terms are defined in 20 VAC 5-315-20. 
+
+PAGE 7
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 7 of 37 
+ 
+_____________________________________________________________________________________ 
+1.2 Inverter Derating Policy for Net Metering Generators 
+Inverter Derating Policy for Net Metering Generators 
+The Utility will determine the generator’s AC capacity solely based on the inverters’ nameplate ratings. 
+Nameplate ratings include the nominal voltage, current, maximum active power, apparent power, and 
+reactive power, at which the inverter is capable of sustained operation. De-rating of inverters below 
+nameplate capacity will not be accepted as a method to reduce the generator’s AC capacity. The 
+capacity is defined as the total of all inverters’ maximum AC active power output. 
+The Utility will not recognize any customer-imposed limitations, including but not limited to: 
+- Power control devices 
+- Software or firmware settings 
+- Other software-based operational restrictions such as curtailment schedules and export limits. 
+ 
+Such limitations cannot be guaranteed to remain in place throughout the system’s lifespan and may be 
+altered without Utility oversight. Designing protection based on these limitations could adversely affect 
+the safety and reliability of the Utility’s Electric Power System (EPS). Therefore, all interconnection 
+requirements and studies will be based on the maximum AC active power output. 
+ 
+2 Net Metering DER Study (Review) Parameters 
+Dominion Energy’s Net Metering DER General Study Parameters are applicable to Net Metering DERs 3 
+MW and below and may consist of an in-depth review by Dominion Energy’s engineering team based on 
+the size. The in-depth review is driven by the fact that a Net Metering DER’s annual generation may exceed 
+its annual usage by up to 150%. The in -depth review is preceded by a Net Metering review (screening) 
+performed for all Net Metering DER applications regardless of size immediately following submittal of the 
+application and is based on the conditions of interconnection, as defined in Chapter 315, the Regulations 
+Governing Net Energy Metering -  20VAC5-315-40, and any other requirements as specified in  Dominion 
+Energy’s Blue Book . Additionally, the service transformer  supplying the customer will be assessed to 
+ensure that the proposed project size does not exceed the transformer's nameplate rating. Furthermore, 
+given the export capability of Net Metering DERs, any distribution operating device located upline from 
+Net Metering DER  1,000 kW and above will typically be required to have 3 phase tripping / operating 
+capability, which may involve some equipment upgrades or replacements.     
+The DER General Study Parameter sections in this Guide provide a detailed description of the following: 
+- Dominion Energy’s Net Metering DER Interconnection Study (review) process for projects 250 kW 
+and below. (see section 2.2) 
+
+PAGE 8
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 8 of 37 
+ 
+_____________________________________________________________________________________ 
+- Dominion Energy’s Net Metering DER Interconnection Study (review) process in general for  
+projects 250 kW and above but less than 1,000 kW. (see section 2.3) 
+- Dominion Energy’s Net Metering DER Interconnection Study process in general for projects 1,000 
+kW and above but less than or equal to 3,000 kW. (see section 2.4) 
+- Net Metering DER Interconnection Study Parameters in general and the applicability of IEEE Std. 
+1547-2018 requirements and certification to UL 1741 Edition 3 (see section 2.6) 
+- Dominion Energy’s approach to Net Metering DER grid support and ride-through capabilities (see 
+section 2.6.1 and 2.6.2 respectively) 
+- Net Metering DER Impact limitations in g eneral and the criteria that guide them , such as Power 
+Quality Requirements, Rapid Voltage Change (RVC), Transformer Inrush requirements, and 
+Harmonics. This section also discusses Transformer and circuit loading limitations and other 
+criteria applicable to Net Metering DER Interconnections . ( see sections 2.7.1, 2. 7.2, 2. 7.3 and 
+associated subsections) 
+- Equipment reviews performed throughout the DER study process (see section 2.7.4) 
+The Net Metering DER General Interconnection Parameter s section in this Guide provide s a detailed 
+description of the physical interconnection of the Net Metering DER with Dominion Energy ’s EPS. The 
+section focuses on the POI and associated attachment facilities, and includes the following: 
+- Dominion Energy’s D ER Interconnection Generator S tep-up Transformer Requirements (see 
+section 3.1) 
+- Interconnection parameters for Net Metering DER for 250 kW and below. (see section 3.2) 
+- Interconnection parameters for Net Metering DER 250 kW and above but less than 1,000 kW 
+(see section 3.3) 
+- Interconnection parameters for Net Metering DER 1,000 kW and above but less than or equal to 
+3,000 kW (see section 3.4) 
+2.1 The Net Metering DER Study (Review) Generally  
+Any DER that will operate in parallel with the EPS is required to meet applicable standards for 
+interconnection and be certified to applicable testing standard(s).  These standards include, but are not 
+limited to, IEEE Std. 1547 and UL 1741 standard.  Section 4 of this Guide includes a non-exhaustive list of 
+applicable guides, codes and standards, state jurisdictional rules , and procedures applicable to  the 
+interconnection of DER.  
+For any DER connecting to Dominion Energy’s EPS, regardless of its technology, the determination of 
+whether the DER can safely and reliably operate in parallel with the  EPS depends on several criteria 
+applied at different phases of the DER interconnection review and studies. These include the impact of 
+
+PAGE 9
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 9 of 37 
+ 
+_____________________________________________________________________________________ 
+DER on transformer and circuit loading and/or capacity, on conductor thermal rating, on v oltage profile 
+or power quality, on protective device coordination, and other criteria as described in the s ections 2.2 
+through 2.7 (including subsections) below.  
+In the preliminary review phase of Net Metering DERs of size 1,000 kW and above, but less than or equal 
+to 3,000 kW , the loading limit associated with a generator interconnection will be determined in the 
+preliminary review. The loading limit is dependent upon the size of the DER, the rating and capability of 
+the applicable distribution facilities, and associated control equipment. Applicable distribution facilities 
+include but are not limited to the following devices: substation transformer, load tap changer, circuit 
+conductor, substation and/or line regulator(s), distribution pole/pad-mounted transformer(s), breaker(s), 
+line recloser(s), and fuse(s). Please refer to sections 2.7.2 and 2.7.3 for additional information on loading 
+limit calculation.  
+ 
+During the study phase of Net Metering DERs of size 1,000 kW and above, but less than or equal to 3,000 
+kW, Dominion Energy performs voltage studies on all proposed DER sites using a power systems 
+simulation platform called Synergi Electric. Existing circuit models for Dominion Energy’s EPS are used and 
+the proposed DER sites are added to the model. Power flow studies are performed, and the DER power 
+output is varied from full output to no output to evaluate the worst-case voltage flicker. All proposed DER 
+interconnections are currently studied at a fixed power factor, typically unity (1.0 PF), which is considered 
+the base-case scenario for all DER regardless of the technology and/or the reactive or voltage support 
+capability. 
+ 
+The sections below provide additional guidance on the general parameters considered by Dominion 
+Energy during the Net Metering DER interconnection study (review) process. While the below sections 
+provide guidance on the parameters that have the most impact on the outcome of the study process, they 
+do not constitute an exhaustive list of all applicable study parameters. 
+ 
+2.2 Net Metering DER <250 kW Study (review) process. 
+For Net Metering DER < 250 kW, Dominion Energy does not perform voltage studies on the proposed DER 
+sites. However, the Net Metering DER will need to satisfy the eligibility criteria as described in the State 
+of Virginia Chapter 315, Regulations Governing Net Energy Metering, Condition of interconnection 
+(20VAC5-315-40) and any applicable requirements. Additional requirements for interconnection for sites 
+<250kW can be found in Dominion Energy’s Blue Book, under the Customer Generation section.  
+Please note that if the 250 kW threshold of total DER on a Distribution line section is reached or exceeded 
+due to existing or aggregate generation , the interconnection may be subject to other requirements 
+
+PAGE 10
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 10 of 37 
+ 
+_____________________________________________________________________________________ 
+typically applicable to Net Metering DERs ≥ 250 kW and < 1,000 kW or Net Metering DER ≥1,000 kW and 
+≤3,000 kW. See Section 2.3 or 2.4 below for more information. 
+2.3 Net Metering DER ≥ 250 kW and < 1,000 kW Study (review) process. 
+For Net Metering DER ≥ 250 kW and < 1,000 kW , Dominion Energy does not perform voltage studies on 
+the proposed DER sites. However, the Net Metering DER will need to satisfy the eligibility criteria as 
+described in the State of Virginia Chapter 315 - Regulations Governing Net Energy Metering - Condition of 
+interconnection (20VAC5-315-40), and any applicable requirements. Furthermore, a Net Metering DER ≥ 
+250 kW and < 1,000 kW, is considered as a significant size that can impact Safety  and Reliability of the 
+Power System, including protection. As a result, the associated load-to-generation ratio will be reviewed 
+to determine if any other system protection upgrades are needed. Load-to-generation ratio is defined as 
+the ratio between  the day-time light load and the total aggregate generation on the distribution line 
+segment. Additional information on requirements for interconnection can be found in Dominion Energy’s 
+Blue Book, under the Customer Generation section. 
+Please note that if the 1,000 kW threshold of total DER on a Distribution line section is reached or 
+exceeded due to existing or aggregate generation, the interconnection may be subject to other 
+requirements typically applicable to Net Metering DER ≥1,000 kW and ≤3,000 kW. See section 2.4 below 
+for more information. 
+2.4 Net Metering DER  ≥1,000 kW and ≤3,000 kW Study process. 
+For Net Metering DER ≥1,000 kW and ≤3,000 kW, Dominion Energy performs voltage studies on all 
+proposed DER sites using a power systems simulation platform called Synergi Electric. Existing circuit 
+models for Dominion Energy’s EPS are used and the proposed DER site are added to the model. Power 
+flow studies are performed, and the DER power output is varied from full output to no output to evaluate 
+the worst-case voltage flicker. All proposed DER interconnections are currently studied at a fixed power 
+factor, typically unity (1.0 PF), which is considered the base -case scenario for all DER regardless of the 
+technology and/or the reactive or voltage support capability. Furthermore, a Net Metering DER ≥1,000 
+kW and ≤3,000 kW is considered as a significant size that can impact Safety  and Reliability of the Power 
+System, including protection. As a result, the associated load -to-generation ratio will be reviewed to 
+determine if any other system protection upgrades are needed. Load-to-generation ratio is defined as the 
+ratio between the day-time light load and the total aggregate generation on the distribution line segment. 
+Additional information on power quality, transformer inrush, Rapid Voltage Change (RVC) and harmonics 
+requirements are provided in the subsections below. 
+
+PAGE 11
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 11 of 37 
+ 
+_____________________________________________________________________________________ 
+2.5 Net Metering DERs Energy Storage System (ESS) Review Parameters. 
+This Section 2.5 provides interconnection  review parameters for Energy Storage Systems (ESS) 
+used in conjunction with Net Metering. 
+An ESS is a particular type of DER that has the ability not only to store energy from the EPS but also 
+to inject its stored energy into the EPS. This makes it both a load and a generation source. Any energy 
+storage used in conjunction with Net Metering must be i nstalled in such a way that prevents charging 
+from the grid or discharging to the grid.  
+2.5.1 Loading and Discharging Restrictions 
+When the ESS is utilized in a Net Metering DER system, it is required per the Net Metering Interconnection 
+rules and procedures not to charge using the Dominion Energy’s EPS or back -feed into the EPS.  Back-
+feeding into the EPS may be allowed if ESS is solely charged from the PV.  
+If the ESS owner / operator desires to utilize the ESS as both a load (importing power from Dominion 
+Energy’s EPS) and a generator (back -feeding or exporting into Dominion Energy’s EPS), this may impact 
+eligibility under the Chapter 315 terms and conditions, and may implicate Chapter 314 of the regulations. 
+2.5.2 ESS Parameters Review 
+All ESS project customers are required to provide a set of relevant ESS study parameters as listed below. 
+These parameters should be provided for each proposed ESS application along with the operating mode 
+and configuration of the ESS. 
+2.5.2.1 Point of electrical connection Identification 
+The point of electrical connection should be provided.  
+2.5.2.2 ESS Inverter Specification 
+The ESS customer shall provide the ESS inverter specifications  and certifications. As discussed in section 
+2.1 of this Guide, any DER equipment paralleling with the EPS  which in this case  is an ESS inverter, 
+regardless of configuration, shall be certified to the UL 1741 standard. 
+2.5.2.3 ESS configuration and Operating Sequence Specifications 
+The ESS customer shall provide the ESS system’s specifications, including but not limited to the operating 
+manual, control and wiring diagram s, and a  detailed sequence of operations . Additionally, as the ESS 
+system associated with the Net Metering DER is typically not permitted to both charge from and discharge 
+(back-feed) into the Dominion Energy’s EPS , proof along with  certification from a qualified installer  or 
+technician that the ESS has been properly installed and set up, per the manufacturer’s specifications as to 
+prevent charging from or back-feeding into the Dominion Energy’s EPS will be required. 
+
+PAGE 12
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 12 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+2.6 Net Metering DER Interconnection as it applies to IEEE Std. 1547-2018 
+A Net Metering DER is a “generating facility” or “generator,” which is defined in the applicable regulations 
+as “an electrical generating facility consisting of one or more renewable fuel generators” (see 20VAC5-
+315-20). Renewable fueled generators are mostly inverter based, a generation technology that has the 
+capability of providing several smart functionalities.  
+2.6.1 Grid Support Capability Requirements    
+Dominion Energy defines grid support as DER equipment capabilities and functionalities required by IEEE 
+Std. 1547-2018 for purposes of maintaining reliable operation of the EPS and responding to the variability 
+of electric power supply and demand. These ca pabilities include real and reactive power support. 
+Dominion Energy acknowledges the capability of most DER to provide grid support within their design 
+specification(s) and limitation(s).  Although inverter-based DER may be capable of providing a higher level 
+of grid support using smart inverter functionalities, Dominion Energy is responsible for ensuring that EPS 
+voltage remains within the ranges allowed by the respective state jurisdiction. Accordingly, Dom inion 
+Energy designs its EPS without creating a dependency on DER grid support functions for normal day to 
+day operations of the EPS for reliability purposes, so that the safety and reliability of the EPS is not ceded 
+to a third party.  Dominion Energy has  established the following standard to ensure that result: DER 
+interconnection related upgrade(s) or infrastructure solutions shall initially be established to mitigate any 
+voltage, thermal, power quality, and other safety related issues, at the DER customer ’s expense, before 
+any DER is requested to provide grid support functionalities. Dominion Energy will use grid support 
+functionalities for future operational issues, including but not limited to adverse operating conditions, 
+after all infrastructure solutions and associated mitigation tools have been exhausted.  
+2.6.2 Ride-through Capability Requirements 
+Although Dominion Energy supports the IEEE 1547 -2018 ride-through capability requirements for DER, 
+Dominion Energy is not requiring the application or utilization of ride-through functionalities at this time. 
+Table 4 below outlines current Dominion Energy requirements associated with DER Voltage ride-through. 
+Please note any requirements within the table may be subject to change at Dominion Energy’s discretion. 
+Voltage Range (p.u.) Operating Mode Clearing time (s) 
+1.20 – 1.10 Momentary Cessation 2 
+1.10 – 0.88 Continuous Operation ∞ 
+0.88 – 0.50 Mandatory Operation 2 
+0.50 – 0.00 Momentary Cessation 0.16 
+
+PAGE 13
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 13 of 37 
+ 
+_____________________________________________________________________________________ 
+Table 4: Dominion Energy Voltage Ride-Through Requirements 
+(Source: IEEE Std. 1547a-2020, Category III) 
+ 
+2.7 Other Net Metering DER Interconnection Study (Review) Parameters 
+For Net Metering DER that go through the full study process, additional interconnection study (review) 
+parameters associated with Power Quality such as Rapid Voltage Change (RVC), flicker, harmonics typically 
+will apply. Those parameters are described in the subsections below. 
+2.7.1 Power quality requirements 
+The goal of the DER interconnection study process is to ensure that any DER connecting to the EPS does 
+not impact the power quality of Dominion Energy’s system. Important power quality criteria evaluated 
+during the DER interconnection study process include the following:  
+- Ensuring that voltage dip/rise or the Delta change in voltage does not exceed 3% of nominal 
+voltage due. 
+- Ensuring that harmonic distortion levels do not exceed limits as defined in IEEE Std. 519-2014 and 
+IEEE Std. 1547-2018. 
+- Ensuring simulated flicker on power system is maintained within the requirements defined in IEEE 
+Std. 1547-2018.   
+2.7.1.1 Net Metering DER system’s RVC and transformer inrush requirements 
+IEEE Std. 1547 -2018 requires DER not to cause voltages to exceed 3% of nominal and 3% per second 
+averaged over a period of one second when the Point of Interconnection (POI) is at medium voltage. 
+Medium voltage is typically defined as voltage above or equal to 1 kV but less than or equal to 35 kV.  
+For a POI at low voltage , which is defined as voltages 1000 V and less per IEEE C62.41.2, IEEE Std. 1547 -
+2018 requires DER not to cause voltages to exceed 5% of nominal and 5% per second averaged over a 
+period of one second.  
+An excessive amount of RVC, even if it is infrequent, can have negative impact on power quality. For 
+example, Dominion Energy customers with voltage sensitive processes or equipment have in the past 
+experienced significant disruption due to RVC.  Thus, Dom inion Energy requires RVC to be limited to 
+specific levels as described above and as established in the IEEE Std. 1547-2018.  
+2.7.1.2 Harmonics requirements 
+Dominion Energy has identified several areas of concern related to harmonics for DER such as harmonic 
+contributions. Harmonics can be generated by several components of DER , including soft start units, 
+
+PAGE 14
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 14 of 37 
+ 
+_____________________________________________________________________________________ 
+power electronics, transformer energization, and saturation.  The following subsections describe the 
+harmonic study process and some mitigation solutions utilized when harmonic issues are identified.  
+2.7.1.2.1 Harmonics study process 
+Presently, Dominion Energy installs a power quality (PQ) meter or device  at the POI to monitor 
+harmonics for all DERs 250 kW and above while also providing visibility. For DERs 1,000 kW and above, 
+PQ meters are typically  placed at the POI before the DER is energized to record “background” 
+harmonics. This allows Dominion Energy to study the harmonics that are contributed by the DER prior 
+to energization and once energized. 
+All equipment that can produce harmonics should meet regulations limiting Total Harmonic Distortion 
+(THD) to limits as defined in the latest revision of IEEE 519. If the power quality meters discussed 
+above reveal significant issues at a DER site, the DER customer must mitigate the harmonics issues.  
+2.7.2 Transformer Loading Limit requirements 
+Reverse flow on a substation transformer will be limited to the base  or Oil Natural Air Natural  (ONAN) 
+rating of the transformer. When evaluating the maximum aggregated DER on a distribution transformer, 
+Dominion Energy considers a light load factor in addition to the ONAN rating of the transformer.  The light 
+load factor is defined as either the actual transformer light load, which is limited to daytime light load for 
+PV only DER system, or 10% of the transformer top nameplate rating, whichever is the smallest. 
+Ultimately, the maximum aggregate generation connected on a substation transformer will be limited to 
+the summation of the transformer base rating and a light load factor, if any. This also ensures the 
+maximum DER sites can be safely connected the circuit. Table 1 pr ovides guidelines for a typical 
+distribution transformer maximum allowable reverse flow and total allowable aggregate DER with respect 
+to the transformer nameplate rating.  
+
+PAGE 15
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 15 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+Table 1 : Transformer Chart - DER Limits 
+ 
+2.7.2.1 Service Transformer Requirements 
+For NEM DERs being installed behind a Dominion Energy service transformer, the total AC inverter 
+(MVA) nameplate capacity cannot exceed the MVA rating of the service transformer. If this capacity is 
+exceeded, the service transformer will need to be upgraded at the developer’s expense to the next 
+largest size needed to handle the reverse power flow. 
+ 
+ 
+Transformer 
+Nameplate
+Maximum 
+Reverse Flow
+Maximum Allowed 
+Aggregate DER
+Rating (MVA) ONAN  (MVA) ONAN + LLF**(MVA)
+6.5 * 3.9 4.6
+6.5/7* 4.2 4.9
+ 6/8/10 6.0 7.0
+ 7.2/9.3/12 7.2 8.4
+ 8.4/10.2/14 8.4 9.8
+ 12/16/20 12.0 14.0
+13.4/17.9/22.4 13.4 15.7
+20.1/26.8/33.6 20.2 23.5
+24/40 24.0 28.0
+ 27/ 36/45 27.0 31.5
+30/40/50 30.0 35.0
+ 33.6/44.8/56 33.6 39.2
+45/60/75 45.0 52.5
+50.4/67/ 84 50.4 58.8
+* Reverse Flow Rating for non-standard transformer is the lower of the ONAN rating or the base impeadance test rating. 
+** LLF = Light load factor and is assumed, for reference purpose, to be equal to 10% of the top nameplate rating of the transformer .
+Highlighted - Standard Purchase Size
+
+PAGE 16
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 16 of 37 
+ 
+_____________________________________________________________________________________ 
+2.7.3 Circuit Loading Limit requirements 
+Dominion Energy has developed circuit loading limit criteria  corresponding to the rating of largest 
+conductors used in its  system. The circuit loading requirements are described in sections 2. 7.3.1 and 
+2.7.3.2 below. 
+2.7.3.1 Thermal Limit/ Physical Circuit Capacity 
+Dominion Energy standard 477 AAC wire size has a maximum rating of 644 A. However, given the 
+limitation of other components such as disconnects and bushings, Dominion Energy established the 
+standard circuit maximum ampere rating of 600 amps to be conservative. Table 2 below provides guidance 
+on some typical circuit thermal limits , which have different megawatt (MW) equivalents depending on 
+the distribution circuit operating voltage.  
+ 
+Table 2 : Amps per circuit voltage and equivalent MW 
+ 
+12.5 kV 13.2 kV 23 kV 34.5 kV
+MW Amps Amps Amps Amps
+1 46 44 25 17
+2 92 87 50 33
+3 139 131 75 50
+4 185 175 100 67
+5 231 219 126 84
+6 277 262 151 100
+7 323 306 176 117
+10 462 437 251 167
+12 554 525 301 201
+13 600 569 326 218
+13.7 600 344 230
+15 377 251
+20 502 335
+24 600 400
+28 469
+30 502
+32 536
+36 600
+
+PAGE 17
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 17 of 37 
+ 
+_____________________________________________________________________________________ 
+2.7.4 Equipment Reviews 
+As part of the interconnection study for a DER, Dominion Energy will assess the loading limit associated 
+with interconnecting a generator. If Dominion Energy determines that any of the limits described in 
+previous sections (i.e. sections 2.4, 2.5.1, and 2. 5.2) are exceeded, the following upgrade requirements 
+may apply prior to the interconnection of the DER. Those requirements include but are not limited to: 
+• Primary or secondary conductor upgrade 
+• Substation Transformer upgrade to the next size up that will accommodate the addition of 
+the DER 
+• Service Transformer upgrade to the next size up that will accommodate the addition of the 
+DER 
+• Substation regulator and/or associated control upgrade 
+• Line regulator and/or associated control upgrade 
+• Addition of new express feeder 
+• Addition and/or upgrade of line recloser(s) 
+• Addition or removal of line fuse(s) 
+• Protection and coordination reviews 
+• Other equipment upgrades due to fault duty 
+3 Net Metering DER General Interconnection Parameters 
+Dominion Energy has two typical Net Metering DER connections depending on the size of the DER. These 
+typical connections are DER less than 1MW in size and DER of size 1 MW and above. The connections and 
+typical equipment installation configurations are discussed in sections 3.2 and 3.3 below and are 
+applicable to all DER technologies. Appendix A provides additional information on the typical layout of 
+associated DER interconnection or attachment facilities. 
+3.1 Net Metering DER Interconnection Generator Step-up Transformer Requirements 
+The following generator step -up (GSU) transformer  requirements apply to all DER paralleling with the 
+Dominion Energy EPS regardless of their applicable interconnection parameters. Any Dominion Energy 
+supplied GSU transformer for use with the interconnection of a DER will have a Wye-ground / Wye-ground 
+winding configuration. If a DER customer elects to have Dominion Energy supply the GSU transformer, 
+steps must be taken to ensure that the DER protection system associated with inverters handles that type 
+of configuration. For any GSU transformer supplied by the DER customer, Dominion Energy will require a 
+GSU that has either a Wye-ground / Wye-ground or Wye-ground/Wye (DER Side) winding configuration. 
+
+PAGE 18
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 18 of 37 
+ 
+_____________________________________________________________________________________ 
+3.2 Interconnection Parameters for Net Metering DER < 250 kW 
+For an interconnection of a Net Metering DER less than 250 kW, a bi-directional meter and a Company 
+accessible, lockable load breaking disconnect  will be required prior to the interconnection.  Additional 
+requirements for interconnection can be found in Dominion Energy’s Blue Book . Details on the 
+interconnection parameters for DER < 250 kW are provided in Figure 1 below. 
+ 
+Figure 1: Typical Layout for Net Metering DER < 250 kW 
+ 
+ 
+3.3 Interconnection Parameters for Net Metering DER ≥250 kW and < 1,000 kW 
+The subsections below describe 2 different interconnection configurations for DER less than 1 MW and 
+equal or above 250 kW. 
+3.3.1 Net Metering DER ≥250 kW and < 1,000 kW (with no DTT required) 
+For the interconnection of a Net Metering DER 250 kW and above but less than 1,000  kW that do not 
+require Direct Transfer Trip (DTT), the same requirements as described in section 3.2 apply  along with a 
+PQ device prior to interconnection. The Dominion Energy owned PQ device will have shunt trip capability 
+of the customer owned breaker and will be  located at the lo ad side of the disconnect switch . The PQ 
+
+
+PAGE 19
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 19 of 37 
+ 
+_____________________________________________________________________________________ 
+device is meant to provide visibility of the Net Metering DER t o Dominion Energy ’s Regional Operation 
+Center (ROC) by providing real time status of the generation through constant polling. Further details on 
+the interconnection parameters for DER ≥250 kW and < 1,000 kW are provided in Figure 2 below. 
+ 
+ 
+ 
+Figure 2: Typical Layout for Net Metering DER ≥250 kW and < 1,000 kW (No DTT 
+required) 
+ 
+3.3.2   Net Metering DER ≥ 250 kW and < 1,000 kW (with DTT required) 
+For the interconnection of a Net Metering DER 250 kW and above but less than 1,000 kW that require 
+Direct Transfer Trip (DTT), the same requirements as described in section 3.2 apply along with a Customer 
+owned low voltage breaker and a Dominion Energy owned PQ device prior to interconnection. The 
+Dominion Energy owned PQ device will have shunt trip capability and will be located at the load side of 
+the disconnect switch. The PQ device is meant to bring visibility of the Net Metering DER to Dominion 
+Energy’s ROC by providing real time status of the generation through constant polling as well as control 
+capability of the low voltage breaker. Further details on the interconnection parameters for DER ≥250 kW 
+and < 1,000 kW that require DTT are provided in Figure 3 below.  
+ 
+
+
+PAGE 20
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 20 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+ 
+ 
+Figure 3: Typical Layout for Net Metering DER ≥250 kW and < 1,000 kW (DTT Required) 
+ 
+3.4 Interconnection Parameters for Net Metering DER ≥1,000 kW and ≤3,000 kW 
+The following subsections describe the typical interconnection configurations for Net Metering DER 
+≥1,000 kW and ≤3,000 kW. 
+3.4.1 Net Metering DER ≥1,000 kW and ≤3,000 kW (Existing Service Transformer) 
+For the interconnection of a Net Metering DER 1,000 kW and above but not exceeding 3,000 kW that is 
+connecting at the low voltage side of an existing service transformer, a customer owned low voltage 
+breaker and a Dominion owned PQ device will be required prior to interconnection. The Dominion Energy 
+owned PQ device will have shunt trip capability and will be located at the load side of the disconnect 
+switch. The PQ device is meant to bring visibility of the Net Metering DER to Dominion Energy ’s ROC by 
+providing real time status of the generation through constant polling as well as control capability of the 
+
+
+PAGE 21
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 21 of 37 
+ 
+_____________________________________________________________________________________ 
+low voltage breaker. Further details on the parameters of the external power supply are provided in Figure 
+4 below. 
+ 
+ 
+Figure 4: Typical Layout for Net Metering DER ≥1,000 kW and ≤3,000 kW (Existing Service 
+Transformer) 
+ 
+3.4.2 Net Metering DER ≥1,000 kW and ≤3,000 kW (Dominion Energy owned Transformer) 
+For the interconnection of a Net Metering DER  1,000 kW and above but not exceeding 3,000 kW that is 
+connecting at the low voltage side of a Dominion Energy owned transformer, a recloser with a SEL -651R 
+controller will be required at the medium voltage (primary) side of the transformer (i.e., typically 34.5 kV).  
+Also, a Dominion Energy owned PQ device will be required at the low voltage side prior to interconnection. 
+The PQ device will provide Dominion Energy’s ROC real time status of the generation through  constant 
+polling as well as control capability of the POI recloser. The typical winding configuration of a Dominion 
+Energy owned distribution transformer will be Wye -ground / Wye -ground. Further details on the 
+
+
+PAGE 22
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 22 of 37 
+ 
+_____________________________________________________________________________________ 
+parameters of the external power supply are provided in Figure 5 below. Please note that facilities charges 
+totalization/aggregation will typically apply. 
+ 
+Figure 5: Typical Layout for Net Metering DER ≥1,000 kW and ≤3,000 kW (Dominion Energy 
+owned Transformer) 
+ 
+3.4.3 External power supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (Dominion 
+Energy owned Transformer) 
+For interconnection of Net Metering DER 1,000 kW and above but not exceeding 3,000 kW, with Dominion 
+Energy owned transformer, the customer  has the option of obtaining an external power supply up -line 
+from the POI to the DER site for service power needs. This could be an alternate power supply to the site 
+for emergency/auxiliary load. Further details on the parameters of the external power supply are provided 
+in Figure 6 below. Please note that facilities charges for totalization/aggregation costs will typically apply. 
+
+
+PAGE 23
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 23 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+Figure 6: External Power Supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER 
+customer-owned Transformer) 
+ 
+ 
+3.4.4 Net Metering DER ≥1,000 kW and ≤3,000 kW (DER customer-owned Transformer) 
+For interconnection of Net Metering DER 1,000 kW and above but not exceeding 3,000 kW , a Dominion 
+Energy owned recloser with a SEL -651R controller and a PQ device will be required prior to 
+interconnection. The Dominion Energy owned PQ device will provide Dominion Energy ’s ROC real time 
+status of the generation through constant polling as well as control capability of the POI recloser. Further 
+details on the parameters of the external power supply are provided in Figure 7 below. 
+
+
+PAGE 24
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 24 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+Figure 7: Typical Layout for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER customer-
+owned Transformer) 
+ 
+3.4.5 External power supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER customer-
+owned transformer) 
+For interconnection of Net Metering DER 1,000 kW and above but not exceeding 3,000 kW, with customer 
+owned GSU, the customer has the option of obtaining an external power supply up -line from the POI to 
+the DER site for service power needs. This could be an alternate power supply to the site for 
+emergency/auxiliary load. Further details on the parameters of the external power supply are provided in 
+Figure 8 below. Please note that facilities charges for totalization/aggregation costs will typically apply. 
+
+
+PAGE 25
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 25 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+Figure 8: External Power Supply for Net Metering DER ≥1,000 kW and ≤3,000 kW (DER 
+customer-owned Transformer) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 26
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 26 of 37 
+ 
+_____________________________________________________________________________________ 
+4 Applicable Guides, Codes & Standards, State Jurisdictional Rules & 
+Procedures 
+The following list of applicable guides, codes and standards, state jurisdictional rules and procedures is 
+not meant to be exhaustive. Procurement and understanding of standards referenced within this 
+document are the responsibility of interconnection customer. 
+20 VAC 5-315: Code of Virginia, State Corporation Commission, Chapter 31 5, Regulation Governing Net 
+Energy Metering. 
+Docket No. E-100, Sub 101: North Carolina Utilities Commission, Interconnection Procedures, Forms and 
+Agreements, For State-Jurisdictional Generator Interconnections. 
+IEEE Std. 1547 -2018: IEEE Standard for Interconnection and Interoperability of Distributed Energy 
+Resources with Associated Electric Power Systems Interfaces. 
+IEEE Std. 1547a -2020: IEEE Standard for Interconnection and Interoperability of Distributed Energy 
+Resources with Associated Electric Power Systems Interfaces. 
+Amendment 1: To Provide More Flexibility for Adoption of Abnormal Operating Performance Category III. 
+IEEE Std. 1547.1: IEEE Standard Conformance Test Procedures for Equipment Interconnecting Distributed 
+Resources with Electric Power Systems. 
+UL 1741 : Inverters, Converters, Controllers,  and Interconnection System Equipment for Use with  
+Distributed Energy Resources. 
+UL 6141: Wind Turbines Permitting Entry of Personnel. 
+UL 6142: Small Wind Turbine Systems. 
+UL 1973: Standard for Batteries for Use in Stationary, Vehicle Auxiliary Power and Light Electric Rail (LER) 
+Applications. 
+UL 9540: Standard for Energy Storage Systems and Equipment. 
+IEEE 519-2014: IEEE Recommended Practices and Requirements for Harmonic Control in Electrical Power 
+Systems. 
+IEEE P2030.2.1/D7.0: IEEE Draft Guide for Design, Operation, and Maintenance of Battery Energy Storage 
+Systems, both Stationary and Mobile, and Applications Integrated with Electric Power Systems. 
+
+PAGE 27
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 27 of 37 
+ 
+_____________________________________________________________________________________ 
+IEEE 2032.2 -2015: IEEE Guide for the Interoperability of Energy Storage Systems Integrated with the 
+Electric Power Infrastructure. 
+ANSI C84.1: Electric Power Systems and Equipment—Voltage Ratings (60 Hz). 
+IEEE 1453 -2015:  IEEE Recommended Practice for the Analysis of Fluctuating Installations on Power 
+Systems. 
+IEEE C62.92.6-2017: IEEE Guide for Application of Neutral Grounding in Electrical Utility Systems, Part VI 
+– System Supplied by Current-Regulated Sources. 
+IEEE C62.41.2: Recommended Practice on Characterization of Surges in Low-Voltage (1000 V and less) AC 
+Power Circuits. 
+NFPA 70: National Electric Code (NEC). 
+NFPA 855: Standard for the Installation of Stationary Energy Storage Systems. 
+NESC: National Electrical Safety Code.  
+
+PAGE 28
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 28 of 37 
+ 
+_____________________________________________________________________________________ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX A:  
+Typical Layout of Connection 
+Facilities
+
+PAGE 29
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 29 of 37 
+ 
+ 
+Figure 1: Typical Primary Distribution Facility Layout (1,000 kW and above) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 30
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 30 of 37 
+ 
+ 
+  
+
+PAGE 31
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 31 of 37 
+ 
+ 
+Figure 2: Typical Primary Distribution Facility Layout with additional details (DER 
+customer owned transformer) 
+ 
+ 
+  
+
+
+PAGE 32
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 32 of 37 
+ 
+ 
+Figure 3: Typical Primary and Secondary Distribution Facilities Layout (Dominion 
+owned transformer) 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PAGE 33
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 33 of 37 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX B: ESS 
+Interconnection 
+Configurations 
+
+PAGE 34
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 34 of 37 
+ 
+ 
+This Appendix shows the typical ESS configurations. This is only an illustrative example of potential 
+configurations and is not an exhaustive list. Dominion Energy may add or modify configurations in the 
+future. 
+C1      DC coupled ESS 
+A DC coupled ESS consists of a uni -directional DC-AC inverter which is shared by both the ESS and the 
+renewable resource (i.e., typically Solar PV). Although, the ESS’s DC to DC converter is designed to be bi -
+directional, the design is such that the ESS can only be charged by the DC source. This configuration is 
+subject to Dominion Energy’s Net Metering DER interconnection study parameters. 
+ 
+ 
+Figure 4: DC coupled ESS (Configuration 3) 
+ 
+  
+
+
+PAGE 35
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 35 of 37 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX C: Estimated 
+facilities costs for typical 
+DER upgrades 
+ 
+ 
+ 
+ 
+ 
+ESTIMATED FACILITIES COSTS REVISION HISTORY: 
+Facilities Costs type Date Revisions 
+Distribution Improvement March 2021 Initial Release 
+Substation Improvement February 2021 Initial Release 
+Distribution Improvement January 2024 Update 2.0 
+Substation Improvement January 2024 Update 2.0 
+
+PAGE 36
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 36 of 37 
+ 
+ 
+ 
+ 
+ 
+Disclaimer: 
+The following cost estimates are not binding for actual facilities costs and are provided for informational 
+purposes only to assist customer s in their planning for DERs.  These cost estimates have not been 
+determined in connection with any particular interconnection and  are subject to change at any time by 
+Dominion Energy. In addition, other substation upgrades and protection facilities that are not identified 
+below may be required for transformers. The distribution and substation improvement estimates are for 
+materials only; engineering, labor, and construction costs are adders. Notwithstanding these cost 
+estimates, a customer shall be responsible for the actual costs for any required distribution and substation 
+improvements required for the interconnection of its DER. 
+Distribution Improvement:       
+1-Mile of Small 1-phase Wire Upgraded to 3-phase 477 AAC $ 700K - $ 900K 
+1-Mile 3-phase Re-Conductor from Small Wire to 477 AAC $ 700K - $ 1.1M 
+1-Mile Conversion to 34.5 kV - Same wire $ 700K - $ 900K 
+1-Mile Over-build Existing Line with 477 AAC $ 900K - $ 1.1M 
+1-Mile Conversion and Re-Conductor to 477 AAC $ 900K - $ 1.1M 
+Adder2 – Distribution Wire Upgrade, Overbuild, or Conversion $ 200K - $ 400K 
+(Engineering \ Mobilization \ Construction Management)  
+Install New or Replace Existing Recloser with G&W Unit $ 125K 
+Install New 1- 1-phase Regulator  $60k 
+Install New 3- 1-phase Regulators as a Bank $ 125K 
+Adder3 - Off-Road Work - 1- Mile - Varies $ 400K - $ 800K 
+ 
+2 This adder is applicable to the following distribution improvement work, and is not on a per mile basis: 
+o 1-Mile of Small 1-phase Wire Upgraded to 3-phase 477 AAC. 
+o 1-Mile 3-phase Re-Conductor from Small Wire to 477 AAC. 
+o 1-Mile Conversion to 34.5 kV - Same wire. 
+o 1-Mile Over-build Existing Line with 477 AAC. 
+o 1-Mile Conversion and Re-Conductor to 477 AAC. 
+3 4 5 These adders could apply to any distribution improvement work  
+
+PAGE 37
+ 
+Interconnection Parameters for 
+Net Metering Distributed Energy 
+Resources 
+Date: 02/16/2026 
+ Page 37 of 37 
+ 
+ 
+Adder4 - Permit/Hours Restrictions - 1-Mile of Work - Varies $ 80k - $120k 
+Adder5 - 2000 Feet of Environmental Matting $ 200K - $350k 
+Install Power Quality Equipment $ 20-25k 
+Install new over-head service transformer $ 4k –14k 
+Install new pad-mount service transformer $ 30k - $ 100k 
+1-Mile Fiber Install for Transfer Trip $150k - $250k 
+Install Low Voltage Breaker & associated devices/equipment $60k - $90k 
+Substation Improvement: 
+Adding New Circuit Breaker (34.5 kV) in Existing Bay $ 200K - $500k 
+Adding New Circuit Breaker (34.5 kV) and Adding New Bay $ 250K - $1.0M 
+Adding 115/34.5 kV, 20/27/33.6 MVA Transformer $ 2.6M - $ 2.9M 
+Adding 230/34.5 kV, 20/27/33.6 MVA Transformer $ 2.9M - $ 3.2M 
+Adding 230/34.5 kV, 33.6/44.8/56 MVA Transformer $ 3.4M- $ 3.6M 
+Adding 230/34.5 kV, 50.4/67/84 MVA Transformer $ 3.6M - $ 4.2M 
+DG Relay Panel Only $ 250K 
+Additional Typical Protection - Varies $ 150 - $ 250 K 
+10-Foot Control Enclosure Expansion $ 250K 
+New Control Enclosure $ 800K 
+Adder6 - TX Engineering \ Mobilization \ Construction 
+Management $ 200K - $ 1,200K  
+ 
+ 
+ 
+ 
+6 This adder is applicable to all substation improvement work. 

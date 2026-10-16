@@ -36,10 +36,11 @@ def parse_era5(text, interval_index, latitude, longitude):
     if not np.isfinite(weather.to_numpy(dtype=float)).all():
         raise ValueError("Missing historical weather; no gap filling.")
     weather.insert(0, "timestamp", interval_index.index)
+    minutes = interval_index.timestep_hours*60
     provenance = {"source": "ERA5 hourly reanalysis via Open-Meteo", "source_url": URL,
                   "raw_sha256": hashlib.sha256(text.encode()).hexdigest(), "requested_coordinates": [latitude, longitude],
                   "grid_coordinates": [raw["latitude"], raw["longitude"]], "native_interval_minutes": 60,
-                  "sampling": "Previous-hour radiation means shifted to interval starts and held over two 30-minute intervals; endpoint meteorology approximates that hour. Not on-site observations.",
+                  "sampling": f"Previous-hour radiation means shifted to interval starts and held over {60/minutes:g} {minutes:g}-minute intervals; endpoint meteorology approximates that hour. Not on-site observations.",
                   "license": "CC BY 4.0 attribution; hosted free API is for noncommercial use",
                   "attribution": "Open-Meteo and Copernicus Climate Change Service ERA5"}
     return weather, provenance
