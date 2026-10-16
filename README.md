@@ -40,7 +40,7 @@ power flow. Dynamic and transient analysis remain future development.
 | [Electrical validation](src/opendss) | Checks voltage, equipment loading, and losses using OpenDSS. |
 | [Database storage](src/database) | Stores study inputs, sources, and results in MySQL. |
 
-Documentation: [Local web application](docs/Local_Web_Application.md) · [ESS catalog and annual solar optimization](docs/ESS_Equipment_Catalog.md)
+Documentation: [Local web application](docs/Local_Web_Application.md) · [ESS catalog and annual solar optimization](docs/ESS_Equipment_Catalog.md) · [Utility and electricity provider guide](docs/Utility_User_Guide.md)
 
 ---
 
