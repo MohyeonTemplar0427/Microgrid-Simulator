@@ -398,7 +398,7 @@ def test_run_custom_identity_forwarding_and_catalog_based_scope(tmp_path,monkeyp
     monkeypatch.setattr(driver,"attach_weather",lambda *args:None)
     monkeypatch.setattr(driver,"summarize",lambda *args:None)
     monkeypatch.setattr(driver,"audit",lambda *args,**kwargs:(
-        pd.DataFrame([{"scenario":"grid_only","is_complete_bill":True}]),
+        pd.DataFrame([{"scenario":"grid_only","is_complete_bill":True,"objective_scope":"complete_utility_bill","rate_evidence_status":"not_recorded"}]),
         pd.DataFrame([{"scenario":"grid_only","component":"customer","amount_usd":10.}]),[]))
     result=driver.run(output,tmp_path/".cache"/"weather",cases=[("dominion_energy_virginia","residential","VA-1G")],
         periods=("custom",),start_date="2026-01-01",end_date="2026-06-30")

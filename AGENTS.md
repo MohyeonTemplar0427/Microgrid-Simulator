@@ -4,6 +4,24 @@ These rules apply throughout this repository in both the main development
 checkout and the independent web-browser clone. Keep this file in Git so the
 validation policy follows normal commits and merges between branches.
 
+## Primary interface and development scope
+
+- The local browser is the primary interface for development and local use.
+  Focus new work on the shared backend and browser workflows.
+- Desktop GUI development and design updates are paused unless explicitly
+  requested. Preserve existing GUI code and shared contracts; do not remove it.
+- Do not launch or leave a native desktop GUI open for routine development or
+  validation. GUI-specific tests are opt-in; report their exclusion clearly.
+- Public website deployment remains a separate workstream. Do not promote a
+  candidate, deploy, commit or push without the user's authorization.
+
+## Validation launcher
+
+Use `/usr/local/bin/python3 tools/validate.py` with explicit `focused`,
+`workflow` or `release` tiers; see `docs/Development_Validation.md`. GUI tests
+are excluded by default and require `--include-gui`. Historical matrices are
+opt-in with prepared inputs; use `--resume` only for matching frozen evidence.
+
 ## Validation workflow and browser limits
 
 - **Use local API, queued-worker tests and saved artifacts first.** Validate

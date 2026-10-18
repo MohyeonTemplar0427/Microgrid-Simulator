@@ -450,6 +450,7 @@ async function refreshStudy(id) {
             ? solarExportCompletionMessage(study.result)
             : "Calculation complete. Check electrical feasibility in the scenario comparison.")
       : study.progress;
+    if(study.status==="completed"&&study.request.schema_version===11&&study.result?.rate_evidence_status==="provisional"){$("progress").textContent="Provisional historical estimate. Bills and savings use documented rate and billing assumptions; inspect the assumptions table. "+$("progress").textContent;}
     if(study.status==="completed"&&study.request.schema_version===11&&study.result?.is_complete_bill===false){$("progress").textContent="Verified-charges subtotal only; missing or provisional bill components are listed below. "+$("progress").textContent;}
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
@@ -480,7 +481,7 @@ async function loadTable() {
   $("all-columns").parentElement.hidden=selected!=="comparison";
   const comedColumns=["scenario","subtotal_usd","subtotal_savings_vs_grid_usd","import_kwh","billed_mkd_kw","overall_interval_peak_kw","degradation_cost_usd","battery_throughput_kwh","throughput_reduction_kwh","minimum_throughput_proven","throughput_refinement_status","throughput_optimality_gap_kwh","throughput_proof_method","all_intervals_feasible","is_complete_bill"];
   const displayedSummary=activeStudy?.request.schema_version===11
-    ? ["tariff","scenario","utility_bill_usd","savings_vs_grid_usd","is_complete_bill","import_kwh","export_kwh","pv_curtailed_kwh","estimated_battery_wear_usd","all_cycle_cost_optima_proven","all_intervals_feasible","failed_intervals"]
+    ? ["tariff","scenario","utility_bill_usd","savings_vs_grid_usd","rate_evidence_status","is_complete_bill","import_kwh","export_kwh","pv_curtailed_kwh","estimated_battery_wear_usd","all_cycle_cost_optima_proven","all_intervals_feasible","failed_intervals"]
     : activeStudy?.request.schema_version===10
     ? comedColumns.filter(c=>c!=="billed_mkd_kw" || Object.hasOwn(activeStudy.request.account,"service_voltage"))
     : summaryColumns;
@@ -490,6 +491,7 @@ async function loadTable() {
   window.regionalUI?.comparisonChart(table,activeStudy?.request.schema_version===11&&selected==="comparison");
   const element=document.createElement("table"), head=document.createElement("thead"), body=document.createElement("tbody"), header=document.createElement("tr");
   const comedLabels={scenario:"Scenario",subtotal_usd:"Modeled subtotal ($)",subtotal_savings_vs_grid_usd:"Subtotal savings ($)",import_kwh:"Imports (kWh)",billed_mkd_kw:"Billed MKD (kW)",overall_30min_peak_kw:"All-hours peak (kW)",degradation_cost_usd:"Battery wear ($)",all_intervals_feasible:"AC feasible",is_complete_bill:"Complete bill"};
+  comedLabels.rate_evidence_status="Rate evidence";
   comedLabels.overall_interval_peak_kw="Maximum import · interval (kW)";
   comedLabels.overall_30min_peak_kw="30-minute demand measurement (kW)";
   Object.assign(comedLabels,{battery_throughput_kwh:"Battery throughput (kWh)",throughput_reduction_kwh:"Cycling reduction (kWh)",minimum_throughput_proven:"Minimum cycling proven",throughput_refinement_status:"Cycling refinement",throughput_optimality_gap_kwh:"Remaining cycling gap ≤ (kWh)",throughput_lower_bound_kwh:"Cycling lower bound (kWh)",throughput_proof_method:"Cycling proof"});

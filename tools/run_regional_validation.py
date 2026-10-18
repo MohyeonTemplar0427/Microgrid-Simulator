@@ -25,9 +25,11 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from src.billing.regional import adapter, calculate_cycle, cycle_account  # noqa: E402
+from src.billing.regional import adapter, calculate_cycle, cycle_account, bill_scope  # noqa: E402
 from src.local_web.regional_study import SITES, _load, calendar_cycles, defaults, prepare  # noqa: E402
 from src.timeseries import build_interval_index  # noqa: E402
+from tools.validation_support import atomic_json, output_lock, positive_seconds, utc_now, value_hash
+from tools.regional_validation_resume import previous_manifest, reusable, validator_files, archived_attempt
 
 SCENARIOS = ("grid_only", "pv_only", "pv_battery")
 DEFAULT_CASES = (("dominion_energy_north_carolina", "residential", "1T"),
@@ -37,6 +39,27 @@ DEFAULT_CASES = (("dominion_energy_north_carolina", "residential", "1T"),
                  ("dominion_energy_virginia", "commercial", "VA-GS2T"))
 VA_HISTORY_CASES = (("dominion_energy_virginia", "residential", "VA-1"),
                     ("dominion_energy_virginia", "commercial", "VA-GS1"))
+FIRSTENERGY_CASES = (("firstenergy_pa_west_penn", "residential", "RS"),
+                    ("firstenergy_pa_west_penn", "commercial", "GS-M"),
+                    ("firstenergy_ohio_edison", "residential", "RS"),
+                    ("firstenergy_ohio_edison", "commercial", "GS"))
+
+
+def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
+    selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
+    if utilities:
+        selected.extend(row for row in FIRSTENERGY_CASES if row[0] in utilities)
+    if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
+        selected.extend(VA_HISTORY_CASES)
+    if include_ciep:
+        if utilities and "pseg" not in utilities:
+            raise ValueError("--include-ciep requires PSE&G in the selected utilities")
+        selected.append(("pseg", "commercial", "GLP_CIEP"))
+    if plans:
+        selected = [row for row in selected if row[2] in plans]
+    if not selected:
+        raise ValueError("No selected representative plans match --plan; 2025 VA plans require --include-va-history")
+    return selected
 
 
 def require(condition, message):
@@ -49,7 +72,7 @@ def digest(path):
 
 
 def write_json(path, value):
-    Path(path).write_text(json.dumps(value, indent=2, default=str)+"\n")
+    atomic_json(path, value)
 
 
 def private_path(path):
@@ -99,7 +122,7 @@ def validation_periods(periods, start_date=None, end_date=None):
 
 
 def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None, allow_va_history=False,
-                 start_date=None, end_date=None):
+                 start_date=None, end_date=None, allow_ohio_provisional=False):
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
@@ -112,6 +135,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start, end = "2026-09-01", "2026-09-30"
     else:
         start, end = ("2025-01-01", "2025-12-31") if period == "annual" else ("2025-07-01", "2025-07-31")
+    if utility=="firstenergy_ohio_edison" and custom is None and period=="monthly":
+        start,end="2025-10-01","2025-10-31"
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
         raise ValueError("Custom2025 Virginia validation requires --include-va-history and an implemented VA-1/GS1 subtotal; no current-rate substitution.")
     va_history=va_history_plan and start.startswith("2025-")
@@ -119,6 +144,9 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     r.update(name=name, start_date=start, end_date=end,
              billing_cycles=calendar_cycles(start, end))
     account = r["account"]
+    if utility=="firstenergy_ohio_edison" and allow_ohio_provisional:
+        account.update(rate_evidence_mode="provisional_2025",provisional_assumptions_accepted=True)
+        r["name"] += " PROVISIONAL historical rates and billing assumptions"
     if utility == "dominion_energy_virginia":
         account.update(parallel_operation_approved=True, parallel_service=True)
         if va_history or custom is not None:
@@ -161,6 +189,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
             r["name"] += " CIEP"
     r["operating_contract"].update(interconnection_confirmed=True, grid_charging_confirmed=True,
         reference="Explicit hypothetical utility-approved non-export PV/storage account; no export compensation assumed")
+    if utility.startswith("firstenergy_"):
+        r["operating_contract"].update(grid_charging_confirmed=False,renewable_only_charging=True)
     r["solar"].update(tilt_degrees=30., azimuth_degrees=180., system_losses_fraction=.14,
                        inverter_efficiency=.96)
     # Read back the generated native series through the same CSV contract as
@@ -201,12 +231,13 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
     for utility in utilities:
         path = folder/utility
         path.mkdir(exist_ok=True)
-        if utility == "dominion_energy_virginia" and not va_history_only:
+        if utility.startswith("firstenergy_") or utility == "dominion_energy_virginia" and not va_history_only:
             file = path/"era5.json"
             expected = previous.get("sources", {}).get(utility, {}).get("sha256")
             if expected is not None:
                 require(file.exists() and digest(file) == expected, "Prepared ERA5 bytes changed; choose a new input folder")
-            request = dict(latitude=SITES[utility][0], longitude=SITES[utility][1], start_date="2026-09-01", end_date="2026-09-30")
+            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") else ("2026-09-01","2026-09-30")
+            request = dict(latitude=SITES[utility][0], longitude=SITES[utility][1], start_date=start, end_date=end)
             payload = json.loads(file.read_text()) if file.exists() else fetch_era5(**request)
             require(payload["request"]["latitude"] == request["latitude"] and payload["request"]["longitude"] == request["longitude"],
                     "Prepared ERA5 coordinates differ; retrieve the exact site in a new input folder")
@@ -246,7 +277,15 @@ def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
-    if utility == "dominion_energy_virginia" and not va_history:
+    if utility.startswith("firstenergy_"):
+        payload=json.loads((source/"era5.json").read_text())
+        from src.profiles.era5 import parse_era5
+        lat,lon,_=SITES[utility]
+        require(payload["request"]["models"]=="era5" and payload["request"]["latitude"]==lat
+            and payload["request"]["longitude"]==lon, "Prepared FirstEnergy ERA5 source/site mismatch")
+        parse_era5(payload["raw_json"],build_interval_index(request["start_date"],request["end_date"],request["timezone"],request["timestep_minutes"]),lat,lon)
+        request.update(weather_source="era5",weather_id=None,weather=payload)
+    elif utility == "dominion_energy_virginia" and not va_history:
         request.update(weather_source="era5", weather_id=None,
                        weather=json.loads((source/"era5.json").read_text()))
     else:
@@ -275,8 +314,19 @@ def attach_weather(app, request, inputs):
     return request
 
 
-def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False):
+def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if bill.get("rate_evidence_status")=="provisional":
+        from src.billing.firstenergy_oh_provisional import MODEL, evidence
+        expected=evidence(pd.DatetimeIndex(index),account)
+        require(allow_ohio_provisional and utility=="firstenergy_ohio_edison"
+                and account.get("rate_evidence_mode")=="provisional_2025"
+                and account.get("provisional_assumptions_accepted") is True
+                and bill.get("assumption_model")==MODEL and bill.get("rate_assumptions")
+                and bill["rate_assumptions"]==expected["rate_assumptions"]
+                and any("Provisional historical estimate" in w for w in bill.get("warnings",[])),
+                "Provisional historical bills require explicit Ohio opt-in and intact assumption provenance")
+        return "provisional_modeled_bill", []
     if bill["is_complete_bill"]:
         return "complete_utility_bill", []
     idx = pd.DatetimeIndex(index)
@@ -296,7 +346,7 @@ def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False)
     return "verified_charges_subtotal", sorted(expected)
 
 
-def audit(directory, request, engine_id, *, allow_va_history=False):
+def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_provisional=False):
     """Rebill each cycle and verify continuous physical and billing state."""
     directory = Path(directory)
     result = json.loads((directory/"result.json").read_text())
@@ -344,6 +394,7 @@ def audit(directory, request, engine_id, *, allow_va_history=False):
             require(np.max(abs(np.r_[charge, discharge, soc])) < 1e-6, "Absent battery operated")
         state = None
         total = 0.
+        scenario_bills=[]
         for i, block, cycle in cycles:
             a = cycle_account(request["account"], cycle)
             equipment_one = {**equipment, "pv": scenario != "grid_only", "battery": has_storage,
@@ -352,11 +403,24 @@ def audit(directory, request, engine_id, *, allow_va_history=False):
             bill = calculate_cycle(utility, index[block], dispatch.grid_import_kw.to_numpy()[block],
                 dispatch.grid_export_kw.to_numpy()[block], a, state=state, equipment=equipment_one)
             state = bill["next_state"]
-            scope, excluded = checked_bill_scope(bill, utility, a, index[block], allow_va_history=allow_va_history)
+            scenario_bills.append(bill)
+            scope, excluded = checked_bill_scope(bill, utility, a, index[block], allow_va_history=allow_va_history, allow_ohio_provisional=allow_ohio_provisional)
             require(abs(bill["total_usd"]-sum(bill["lines"].values())) < 1e-7, "Itemized bill does not sum")
             ledger = saved_cycles.loc[(saved_cycles.scenario == scenario)&(saved_cycles.cycle_index == i)].iloc[0]
             require(bool(ledger.is_complete_bill) == bill["is_complete_bill"], "Saved completeness flag differs")
             require(ledger.objective_scope == scope, "Saved objective scope differs")
+            if bill.get("rate_evidence_status"):
+                require(ledger.rate_evidence_status==bill["rate_evidence_status"],"Saved rate evidence differs")
+                require(json.loads(ledger.rate_assumption_ids)==[v["id"] for v in bill["rate_assumptions"]],"Saved assumption IDs differ")
+                saved=result["billing"][scenario][i]
+                require(all(saved.get(k)==bill.get(k) for k in ("rate_evidence_status","assumption_model","rate_assumptions")),"Saved assumption provenance differs")
+                if bill["rate_assumptions"]:
+                    assumptions=pd.read_csv(directory/"billing-assumptions.csv")
+                    selected_assumptions=assumptions.loc[(assumptions.scenario==scenario)&(assumptions.cycle_index==i)]
+                    require(set(selected_assumptions.assumption_id)=={v["id"] for v in bill["rate_assumptions"]},"Assumption download incomplete")
+                    for value in bill["rate_assumptions"]:
+                        row=selected_assumptions.loc[selected_assumptions.assumption_id==value["id"]].iloc[0]
+                        require(row.assumption_model==bill["assumption_model"] and json.loads(row.assumed_values)==value["assumed_values"],"Assumed values changed in download")
             require(abs(ledger.total_usd-bill["total_usd"]) < .00001, "Saved cycle bill differs")
             require(abs(outcomes[i]["reconciliation_difference_usd"]) < .0001, "Dispatch objective does not reconcile")
             if outcomes[i].get("cost_optimum_proven") and "primary_lower_bound_usd" in outcomes[i]:
@@ -382,6 +446,10 @@ def audit(directory, request, engine_id, *, allow_va_history=False):
             for name, value in bill["lines"].items():
                 selected = saved_lines.loc[(saved_lines.scenario == scenario)&(saved_lines.cycle_index == i)&(saved_lines.component == name)]
                 require(len(selected) == 1 and abs(selected.iloc[0].amount_usd-value) < .000001, "Saved bill component differs")
+                if bill.get("rate_evidence_status"):
+                    related=[x["id"] for x in bill["rate_assumptions"] if name in x["components"]]
+                    require(json.loads(selected.iloc[0].rate_assumption_ids)==related,"Saved component assumptions differ")
+                    require(selected.iloc[0].rate_evidence_status==("provisional" if related else "verified"),"Saved component evidence differs")
                 lines.append(dict(scenario=scenario, cycle_index=i, billing_month=cycle["billing_month"], component=name, amount_usd=value))
             start, stop = block.start, block.stop
             opening = float(soc[start])
@@ -393,6 +461,7 @@ def audit(directory, request, engine_id, *, allow_va_history=False):
                 native_kwh=float(native[block].sum()*dt), import_kwh=bill["import_kwh"],
                 utility_bill_usd=bill["total_usd"], opening_battery_kwh=opening, closing_battery_kwh=closing,
                 is_complete_bill=bill["is_complete_bill"], objective_scope=scope,
+                rate_evidence_status=bill.get("rate_evidence_status","not_recorded"),
                 excluded_components=json.dumps(excluded),
                 cost_proof_method=outcomes[i].get("cost_proof_method","legacy_not_recorded"),
                 primary_optimality_gap_usd=outcomes[i].get("primary_optimality_gap_usd"),
@@ -400,6 +469,9 @@ def audit(directory, request, engine_id, *, allow_va_history=False):
                 rate_metrics=json.dumps(bill["metrics"], sort_keys=True, default=str)))
             total += bill["total_usd"]
         require(abs(total-comparison.loc[scenario, "utility_bill_usd"]) < .00001, "Annual/monthly comparison differs")
+        if any(b.get("rate_evidence_status")=="provisional" for b in scenario_bills):
+            require(result.get("rate_evidence_status")==comparison.loc[scenario,"rate_evidence_status"]=="provisional"
+                    and comparison.loc[scenario,"objective_scope"]=="provisional_modeled_bill","Provisional scenario was mislabeled")
         ac = next(x for x in result["ac_validation"]["scenarios"] if x["scenario"] == scenario)
         require(ac["checked_intervals"] == len(index), "OpenDSS omitted intervals")
         replay = pd.read_csv(directory/f"{ac['interval_table']}.csv")
@@ -497,7 +569,8 @@ def summarize(directory):
             source_urls=sorted(sources),source_artifact_sha256=entry.get("source_artifacts",{}),
             input_provenance=result.get("input_provenance",{}),warnings=result.get("warnings",[]),
             is_complete_bill=result.get("is_complete_bill"),
-            reported_amount_kind=("verified charges subtotal; historical taxes incomplete" if result.get("is_complete_bill") is False
+            rate_evidence_status=result.get("rate_evidence_status","not_recorded"),
+            reported_amount_kind=("provisional historical estimate; inspect assumption ledger" if result.get("rate_evidence_status")=="provisional" else "verified charges subtotal; historical taxes incomplete" if result.get("is_complete_bill") is False
                 else "complete utility bill" if result.get("is_complete_bill") is True else "legacy completeness not recorded"),
             excluded_components=sorted({value for bills in result.get("billing",{}).values()
                 for bill in bills for value in bill.get("excluded_components",[])}),scenarios=[])
@@ -531,86 +604,188 @@ def summarize(directory):
 
 
 def run(output, inputs, *, include_ciep=False, ciep_inputs=None, include_va_history=False, cases=None, periods=("monthly", "annual"),
-        start_date=None, end_date=None):
-    periods=validation_periods(periods,start_date,end_date)
-    from src.local_web.runtime import Application
-    # Bind all utility calculators before creating/checking the source pin.
-    # Later unrelated development must not cause a previously unimported
-    # jurisdiction to enter the numeric audit halfway through the matrix.
-    for utility in SITES:
-        adapter(utility)
+        start_date=None, end_date=None, resume=False, case_timeout=2100, allow_ohio_provisional=False):
+    periods = validation_periods(periods, start_date, end_date)
+    case_timeout = positive_seconds(case_timeout)
     output, inputs = private_path(output), private_path(inputs)
     output.mkdir(parents=True, exist_ok=True)
+    with output_lock(output, ".regional-validation.lock"):
+        return _run(output, inputs, include_ciep=include_ciep, ciep_inputs=ciep_inputs,
+            include_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional, cases=cases, periods=periods,
+            start_date=start_date, end_date=end_date, resume=resume, case_timeout=case_timeout)
+
+
+def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases, periods,
+         start_date, end_date, resume, case_timeout, allow_ohio_provisional):
+    from src.local_web.runtime import Application
+    for utility in SITES:
+        adapter(utility)
+    selections = list(cases or DEFAULT_CASES)
+    if include_ciep:
+        selections.append(("pseg", "commercial", "GLP_CIEP"))
+    if include_va_history and cases is None:
+        selections.extend(VA_HISTORY_CASES)
+    require(any(period != "annual" or utility != "dominion_energy_virginia"
+        or (include_va_history and plan in ("VA-1", "VA-GS1"))
+        for utility, _, plan in selections for period in periods), "No executable cases in this selection")
+    execution = dict(cases=[list(c) for c in selections], periods=list(periods),
+        start_date=start_date, end_date=end_date, inputs=str(inputs),
+        ciep_inputs=str(private_path(ciep_inputs)) if ciep_inputs is not None else None,
+        include_va_history=include_va_history, case_timeout=case_timeout, allow_ohio_provisional=allow_ohio_provisional)
+    old = previous_manifest(output, resume, execution)
     app = Application(output)
+    started = time.monotonic()
     print("Pinned regional validation engine", app.engine["id"], flush=True)
-    manifest = {"engine_id": app.engine["id"], "driver_sha256": digest(__file__), "cases": [],
+    manifest = {"format_version": 2, "engine_id": app.engine["id"], "driver_sha256": digest(__file__),
+        "validator_files": validator_files(), "execution": execution, "cases": [], "sessions": [],
         "scope": "Actual site/year weather; imported synthetic native loads and hypothetical accounts; non-export; rolling-cycle perfect foresight with continuous SOC and actual evolving histories; no annual optimum or site-specific electrical claim",
         "blocked_scope": {"dominion_energy_virginia_2025": "VA-1/GS1 verified 2025 bundled charges are available only as explicit opt-in subtotals. Historical sales/use surcharge and local consumer-tax originals are missing; pre-August16 consumption tax is also excluded. Other 2025 plans remain unavailable; 2026 coverage follows the pinned Virginia catalog and rejects missing intermediate component versions."}}
-    if periods==("custom",):
-        manifest["custom_date_bounds"]={"start_date":start_date,"end_date":end_date,"interpretation":"Inclusive local dates; custom study, not an annual case"}
-    monthly, components, summaries = [], [], []
-    failures = []
+    session = {"started_at": utc_now(), "resumed": resume, "executed_cases": 0, "reused_cases": 0}
+    manifest["sessions"] = deepcopy(old.get("sessions", [])) if old else []
+    manifest["sessions"].append(session)
+    if periods == ("custom",):
+        manifest["custom_date_bounds"] = {"start_date": start_date, "end_date": end_date,
+            "interpretation": "Inclusive local dates; custom study, not an annual case"}
+    monthly, components, summaries, failures = [], [], [], []
+    validated = False
+    loop_finished = False
     try:
-        require({p.relative_to(ROOT).as_posix(): digest(p) for p in (ROOT/"src").rglob("*.py")} == app.engine["files"], "Store pins different source; select a fresh output directory")
+        require({p.relative_to(ROOT).as_posix(): digest(p) for p in (ROOT/"src").rglob("*.py")} == app.engine["files"],
+            "Store pins different source; select a fresh output directory")
+        if old is not None and old["engine_id"] != app.engine["id"]:
+            raise ValueError("Resume engine changed; use a fresh output directory")
+        if old:
+            manifest["cases"] = deepcopy(old["cases"])
+        validated = True
         (output/("validation-driver-"+manifest["driver_sha256"][:12]+".py")).write_bytes(Path(__file__).read_bytes())
-        selections = list(cases or DEFAULT_CASES)
-        if include_ciep:
-            selections.append(("pseg", "commercial", "GLP_CIEP"))
-        if include_va_history and cases is None:
-            selections.extend(VA_HISTORY_CASES)
+        write_json(output/"validation.json", manifest)
         for utility, kind, plan in selections:
             for period in periods:
                 if utility == "dominion_energy_virginia" and period == "annual" and not (include_va_history and plan in ("VA-1", "VA-GS1")):
                     continue
-                suffix=f"custom-{start_date}_to_{end_date}" if period=="custom" else period
+                suffix = f"custom-{start_date}_to_{end_date}" if period == "custom" else period
                 identity = f"{utility}-{plan}-{suffix}"
+                prior = next((e for e in manifest["cases"] if e["case"] == identity), None)
                 entry = {"case": identity, "utility": utility, "class": kind, "period": period}
-                manifest["cases"].append(entry)
+                if prior:
+                    entry["attempts"] = deepcopy(prior.get("attempts", []))+[archived_attempt(prior)]
+                case_started = time.monotonic()
+                timing = {}
+                reuse = False
+                preserve_prior = False
+                waiting = None
                 try:
                     r = case_request(utility, kind, period, plan="GLP" if plan == "GLP_CIEP" else plan,
-                        ciep_inputs=ciep_inputs if plan == "GLP_CIEP" else None, allow_va_history=include_va_history,
-                        start_date=start_date if period=="custom" else None,end_date=end_date if period=="custom" else None)
+                        ciep_inputs=ciep_inputs if plan == "GLP_CIEP" else None, allow_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional,
+                        start_date=start_date if period == "custom" else None, end_date=end_date if period == "custom" else None)
                     attach_weather(app, r, inputs)
-                    job = app.store.submit(r, app.engine)
-                    entry.update(study_id=job["id"], status="queued")
-                    marker = None
-                    while True:
-                        state = app.store.get(job["id"])
-                        current = (state["status"], state["progress"])
-                        if current != marker:
-                            print(identity, *current, flush=True)
-                            marker = current
-                        if state["status"] in ("completed", "failed", "cancelled"):
-                            break
-                        time.sleep(1)
-                    entry["status"] = state["status"]
-                    if state["status"] != "completed":
-                        raise ValueError(state.get("error") or "Worker did not complete")
-                    directory = output/"runs"/job["id"]
-                    rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history)
+                    timing["input_preparation_seconds"] = time.monotonic()-case_started
+                    if prior and prior.get("request_fingerprint") not in (None, value_hash(r)):
+                        raise ValueError("Prepared case inputs changed; use a fresh output directory.")
+                    if prior and prior.get("study_id"):
+                        directory = output/"runs"/prior["study_id"]
+                        if reusable(prior, r, directory, app.engine["id"]):
+                            audited = time.monotonic()
+                            try:
+                                rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional)
+                                reuse = True
+                            except (AssertionError, ValueError, OSError, KeyError):
+                                # Preserve the old attempt; a failed audit cannot stay a pass.
+                                reuse = False
+                            timing["resume_audit_seconds"] = time.monotonic()-audited
+                    if reuse:
+                        entry = deepcopy(prior)
+                        session["reused_cases"] += 1
+                        entry.setdefault("resume_checks", []).append({"checked_at": utc_now(), "timing": timing})
+                        print(identity, "reused after fingerprint and independent audit checks", flush=True)
+                    else:
+                        if prior:
+                            entry["attempts"] = deepcopy(prior.get("attempts", []))+[archived_attempt(prior)]
+                            if prior.get("study_id"):
+                                previous_state = app.store.get(prior["study_id"])
+                                if previous_state["status"] in ("queued", "running", "cancelling"):
+                                    app.store.cancel(prior["study_id"])
+                        entry["request_fingerprint"] = value_hash(r)
+                        job = app.store.submit(r, app.engine)
+                        session["executed_cases"] += 1
+                        entry.update(study_id=job["id"], status="queued", validation="pending", timing=timing)
+                        manifest["cases"] = [entry if e["case"] == identity else e for e in manifest["cases"]]
+                        if prior is None:
+                            manifest["cases"].append(entry)
+                        write_json(output/"validation.json", manifest)
+                        waiting = time.monotonic()
+                        deadline = waiting+case_timeout
+                        marker = None
+                        while True:
+                            state = app.store.get(job["id"])
+                            current = (state["status"], state["progress"])
+                            if current != marker:
+                                print(identity, *current, flush=True)
+                                marker = current
+                            if state["status"] in ("completed", "failed", "cancelled"):
+                                break
+                            if time.monotonic() >= deadline:
+                                app.store.cancel(job["id"])
+                                raise TimeoutError("Regional case exceeded its validation deadline; cancellation requested.")
+                            time.sleep(min(1., max(.01, deadline-time.monotonic())))
+                        timing["queue_and_worker_wait_seconds"] = time.monotonic()-waiting
+                        timing["worker_reported_seconds"] = state.get("runtime_seconds")
+                        entry["status"] = state["status"]
+                        if state["status"] != "completed":
+                            raise ValueError(state.get("error") or "Worker did not complete")
+                        directory = output/"runs"/job["id"]
+                        audited = time.monotonic()
+                        rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional)
+                        timing["artifact_audit_seconds"] = time.monotonic()-audited
+                        entry.update(validation="passed", physics=physics,
+                            is_complete_bill=bool(rows.is_complete_bill.all()),
+                            objective_scope="provisional_modeled_bill" if (rows.objective_scope=="provisional_modeled_bill").any() else "complete_utility_bill" if rows.is_complete_bill.all() else "verified_charges_subtotal",
+                            rate_evidence_status="provisional" if (rows.rate_evidence_status=="provisional").any() else "verified" if (rows.rate_evidence_status=="verified").all() else "not_recorded",
+                            request_sha256=digest(directory/"request.json"),
+                            source_artifacts={p.name: digest(p) for p in directory.iterdir() if p.suffix in (".csv", ".json")})
                     for frame in (rows, lines):
                         frame.insert(0, "case", identity)
                     monthly.append(rows); components.append(lines)
                     comparison = pd.read_csv(directory/"comparison.csv")
                     comparison.insert(0, "case", identity); summaries.append(comparison)
-                    entry.update(validation="passed", physics=physics,
-                        is_complete_bill=bool(rows.is_complete_bill.all()),
-                        objective_scope="complete_utility_bill" if rows.is_complete_bill.all() else "verified_charges_subtotal",
-                        request_sha256=digest(directory/"request.json"),
-                        source_artifacts={p.name: digest(p) for p in directory.iterdir() if p.suffix in (".csv", ".json")})
-                except (AssertionError, ValueError, OSError) as exc:
+                except (AssertionError, ValueError, OSError, KeyError) as exc:
+                    if "Prepared case inputs changed" in str(exc):
+                        # Never replace evidence with results from altered inputs.
+                        preserve_prior = True
+                        raise
                     entry.update(validation="failed", error=str(exc)); failures.append(identity)
-                write_json(output/"validation.json", manifest)
+                    if isinstance(exc, TimeoutError):
+                        entry["status"] = "timed_out"
+                except KeyboardInterrupt:
+                    entry.update(validation="interrupted", status="interrupted")
+                    raise
+                finally:
+                    if waiting is not None:
+                        timing.setdefault("queue_and_worker_wait_seconds", time.monotonic()-waiting)
+                    timing["total_seconds"] = time.monotonic()-case_started
+                    if not reuse:
+                        entry["timing"] = timing
+                    if preserve_prior:
+                        pass
+                    elif prior is None and not any(e["case"] == identity for e in manifest["cases"]):
+                        manifest["cases"].append(entry)
+                    elif prior is not None:
+                        manifest["cases"] = [entry if e["case"] == identity else e for e in manifest["cases"]]
+                    write_json(output/"validation.json", manifest)
+        loop_finished = True
     finally:
         app.close()
-        write_json(output/"validation.json", manifest)
+        session.update(finished_at=utc_now(), elapsed_seconds=time.monotonic()-started,
+            status="completed" if loop_finished and not failures else "failed_or_interrupted")
+        if validated:
+            write_json(output/"validation.json", manifest)
     for filename, frames in (("monthly-comparison.csv", monthly), ("billing-components.csv", components), ("study-comparison.csv", summaries)):
         if frames:
             pd.concat(frames, ignore_index=True).to_csv(output/filename, index=False)
     if components:
-        annual = pd.concat(components, ignore_index=True).groupby(["case","scenario","component"], as_index=False).amount_usd.sum()
-        baseline = annual.loc[annual.scenario=="grid_only"].set_index(["case","component"]).amount_usd
-        annual["savings_vs_grid_usd"] = [baseline.get((row.case,row.component),0.)-row.amount_usd for row in annual.itertuples()]
+        annual = pd.concat(components, ignore_index=True).groupby(["case", "scenario", "component"], as_index=False).amount_usd.sum()
+        baseline = annual.loc[annual.scenario == "grid_only"].set_index(["case", "component"]).amount_usd
+        annual["savings_vs_grid_usd"] = [baseline.get((row.case, row.component), 0.)-row.amount_usd for row in annual.itertuples()]
         annual.to_csv(output/"period-components.csv", index=False)
     summarize(output)
     if failures:
@@ -626,6 +801,9 @@ def main():
     parser.add_argument("--execute", action="store_true", help="Explicitly run all studies using a new immutable source pin")
     parser.add_argument("--summarize", action="store_true", help="Rebuild the private JSON summary from an existing validation folder, without API calls")
     parser.add_argument("--include-ciep", action="store_true")
+    parser.add_argument("--resume", action="store_true", help="Reuse only same-pin/input/validator cases after artifact verification and independent re-audit")
+    parser.add_argument("--case-timeout", type=positive_seconds, default=2100., help="Per-case queue/worker deadline in seconds; requests cancellation on expiry")
+    parser.add_argument("--allow-ohio-provisional", action="store_true", help="Explicitly accept documented Ohio Edison2025 provisional rate and billing assumptions; never verified coverage")
     parser.add_argument("--include-va-history", action="store_true", help="Also prepare/run 2025 VA-1/GS1 verified-charge subtotals, with explicitly missing historical taxes")
     parser.add_argument("--ciep-inputs", type=Path, default=ROOT/".cache/regional_historical_inputs/pseg")
     parser.add_argument("--utility", action="append", choices=tuple(SITES), help="Limit preparation/execution to named utility; repeatable")
@@ -641,24 +819,20 @@ def main():
         parser.error(str(exc))
     if "custom" in periods and (not args.execute or args.prepare_inputs):
         parser.error("Custom dates require --execute with explicitly prepared cached weather; custom weather preparation is not implemented.")
+    if args.resume and (not args.execute or args.prepare_inputs):
+        parser.error("--resume requires --execute without input retrieval")
     if args.prepare_inputs:
         prepare_inputs(args.inputs, env_file=args.env_file, utilities=args.utility, include_va_history=args.include_va_history,
             va_history_only=bool(args.include_va_history and args.plan and set(args.plan).issubset({"VA-1","VA-GS1"})))
     if args.execute:
-        selected = [row for row in DEFAULT_CASES if args.utility is None or row[0] in args.utility]
-        if args.include_va_history and (args.utility is None or "dominion_energy_virginia" in args.utility):
-            selected.extend(VA_HISTORY_CASES)
-        if args.include_ciep:
-            if args.utility and "pseg" not in args.utility:
-                parser.error("--include-ciep requires PSE&G in the selected utilities")
-            selected.append(("pseg","commercial","GLP_CIEP"))
-        if args.plan:
-            selected = [row for row in selected if row[2] in args.plan]
-            if not selected:
-                parser.error("No selected representative plans match --plan; 2025 VA plans require --include-va-history")
+        try:
+            selected = selected_cases(args.utility, args.plan, include_ciep=args.include_ciep,
+                                      include_va_history=args.include_va_history)
+        except ValueError as exc:
+            parser.error(str(exc))
         run(args.output, args.inputs, ciep_inputs=args.ciep_inputs,
-            include_va_history=args.include_va_history, cases=selected, periods=periods,
-            start_date=args.start_date,end_date=args.end_date)
+            include_va_history=args.include_va_history, allow_ohio_provisional=args.allow_ohio_provisional, cases=selected, periods=periods,
+            start_date=args.start_date,end_date=args.end_date, resume=args.resume, case_timeout=args.case_timeout)
     if args.summarize:
         summarize(args.output)
     if not args.prepare_inputs and not args.execute and not args.summarize:

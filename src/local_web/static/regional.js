@@ -47,7 +47,7 @@ if(typeof document!=="undefined") {
     <label>Service evidence / hypothetical assumption<input name="rg_reference" maxlength="500" placeholder="Omit account numbers and personal identifiers"/></label>
     <label>Account billing plan<select name="rg_plan"></select></label>
     <label>Optional tariff comparison<select name="rg_alternative"><option value="">No alternative</option></select></label><p class="hint">Each eligible plan is optimized independently using the same site, equipment and starting account facts. This is not repricing one fixed schedule. All eligibility conditions must hold for both plans.</p>
-    <p id="regional-coverage" class="hint"></p><div id="regional-sources" class="hint"></div>
+    <p id="regional-coverage" class="hint"></p><div id="regional-sources" class="hint"></div><details id="regional-assumptions" hidden><summary>Provisional historical rates and billing assumptions</summary><div id="regional-assumption-list" class="hint"></div></details>
     <button type="button" class="secondary" id="regional-hypothetical">Apply explicitly hypothetical account facts</button>
     <p class="hint">Review every account fact. Existing obligations, contracted demand and history remain the same across scenarios. A checked eligibility field is a user assertion, not verification by the simulator.</p>
     <div id="regional-fields" class="form-grid"></div>
@@ -102,7 +102,7 @@ if(typeof document!=="undefined") {
     $("regional-fields").replaceChildren();
     const advanced=document.createElement("details"),heading=document.createElement("summary"),advancedFields=document.createElement("div");
     heading.textContent="Advanced account facts · history, contracts and special eligibility";advancedFields.className="form-grid";advanced.style.gridColumn="1/-1";advanced.append(heading,advancedFields);
-    const basic=new Set(["supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
+    const basic=new Set(["rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
     const descriptors=selected()?.account_fields||[];
     const spec=Object.fromEntries(descriptors.map(d=>[typeof d==="string"?d:d.name,typeof d==="string"?{}:d]));
     for(const [key,v] of Object.entries(value)){
@@ -113,7 +113,7 @@ if(typeof document!=="undefined") {
       let input;
       const object=v!==null&&typeof v==="object"||desc.type==="number_array";
       if(object||v===null){input=document.createElement("textarea");input.rows=object?3:1;input.dataset.valueType="json";input.value=JSON.stringify(v);}
-      else if(desc.choices){input=document.createElement("select");for(const c of desc.choices)input.append(option(c,({bgs_rscp:"Default supply · BGS-RSCP",bgs_ciep:"Hourly default supply · BGS-CIEP",bundled:"Bundled utility supply"})[c]||c));input.value=String(v);input.dataset.valueType=typeof v;}
+      else if(desc.choices){input=document.createElement("select");for(const c of desc.choices)input.append(option(c,({bgs_rscp:"Default supply · BGS-RSCP",bgs_ciep:"Hourly default supply · BGS-CIEP",bundled:"Bundled utility supply",verified:"Verified dates only",provisional_2025:"Provisional 2025 · documented assumptions"})[c]||c));input.value=String(v);input.dataset.valueType=typeof v;}
       else {input=document.createElement("input");input.type=typeof v==="boolean"?"checkbox":typeof v==="number"?"number":"text";
         if(typeof v==="boolean")input.checked=v;else input.value=String(v);if(input.type==="number")input.step="any";input.dataset.valueType=typeof v;}
       input.name="rg_a_"+key;label.append(input);(basic.has(key)?$("regional-fields"):advancedFields).append(label);
@@ -150,6 +150,9 @@ if(typeof document!=="undefined") {
     $("regional-ciep").hidden=!ciep;
     $("regional-identity").textContent=`Distribution: ${utility().label} · Jurisdiction: ${utility().state} · Default retail supplier: ${utility().label} · PJM transmission zone: ${utility().transmission_zone} · Wholesale pricing identity is separate.`;
     $("regional-coverage").textContent=plan?`${plan.eligibility||"Confirm actual eligibility."} Verified: ${(plan.coverage||[]).map(w=>w.start+" → "+w.end).join(", ")}. ${(plan.limitations||[]).join(" ")}`:"Choose a plan to inspect its verified dates and requirements.";
+    if(plan?.provisional_coverage)$("regional-coverage").textContent+=" Provisional coverage, only with explicit acceptance: "+plan.provisional_coverage.map(w=>w.start+" → "+w.end).join(", ")+". These are assumed historical estimates, not verified tariffs.";
+    $("regional-assumptions").hidden=!plan?.provisional_assumptions?.length;
+    $("regional-assumption-list").replaceChildren();for(const item of plan?.provisional_assumptions||[]){const p=document.createElement("p");p.textContent=`${item.id} · ${item.start} → ${item.end} · ${item.basis}: ${item.explanation} Values: ${JSON.stringify(item.assumed_values)}`;$("regional-assumption-list").append(p);}
     $("regional-sources").replaceChildren();for(const source of (plan?.sources||[])){const url=typeof source==="string"?source:source.url;if(!url)continue;const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noreferrer";a.textContent="Official source";$("regional-sources").append(a,document.createTextNode(" · "));}
     $("regional-hypothetical").disabled=f("verification").value!=="hypothetical_case"||!plan;
     for(const opt of field("tariff_id").options)opt.disabled=opt.hidden=opt.value!=="__unset__";
@@ -171,7 +174,7 @@ if(typeof document!=="undefined") {
     for(const [value,allowed] of [["yes",modes.includes("pv_only")],["storage",modes.includes("storage_only")]]){const choice=field("pv_choice").querySelector(`option[value="${value}"]`);choice.disabled=!allowed;choice.dataset.regionalEquipment="true";}
     const solarModes=ciep?["non_export"]:plan?.solar_modes||(plan?.net_metering===false?["non_export"]:["non_export","net_metering"]);
     f("export").querySelector('option[value="net_metering"]').disabled=!solarModes.includes("net_metering");
-    $("dataset-info").textContent="Use complete utility cycles within the selected plan's verified dates. Calendar cycles are explicitly hypothetical; market data is unnecessary for bundled supply.";
+    $("dataset-info").textContent=field("rg_a_rate_evidence_mode")?.value==="provisional_2025"&&field("rg_a_provisional_assumptions_accepted")?.checked?"Use complete utility cycles within the explicitly accepted provisional 2025 coverage. Rates and bills use documented assumptions; calendar cycles remain hypothetical. Wholesale prices do not replace bundled retail rates.":"Use complete utility cycles within the selected plan's verified dates. Calendar cycles are explicitly hypothetical; market data is unnecessary for bundled supply.";
     $("pv-choice-note").textContent="Compare grid-only, PV-only and PV plus storage, or choose storage without PV. Surplus is curtailed unless verified net metering is explicitly enabled.";
   }
   function leaving(){if(wasActive&&!active()){wasActive=false;for(const choice of field("pv_choice").querySelectorAll("option[data-regional-equipment]")){choice.disabled=false;delete choice.dataset.regionalEquipment;}for(const name of ["max_charge_kw","max_discharge_kw","charge_efficiency","discharge_efficiency","capacity_kWh","energy_kWh","SOC_min","SOC_max","pv_capacity_kw","inverter_efficiency"])field(name).closest("label").hidden=false;
@@ -197,10 +200,10 @@ if(typeof document!=="undefined") {
       native_csv:nativeCsv,era5,weather_id:weatherId,ess:essResolution};}
   function request(){if(field("ess_mode").value==="equipment"&&batteryEnabled()&&!essResolution?.ready)throw new Error("Review and apply ESS equipment first.");return buildRegionalStudyRequest(base(),values());}
   function validate(page){if(!active())return true;try{
-    if(page.dataset.step==="2"){if(!selected()||!f("reference").value.trim())throw new Error("Choose the actual billing plan and document service or hypothetical assumptions.");accountValue();}
+    if(page.dataset.step==="2"){if(!selected()||!f("reference").value.trim())throw new Error("Choose the actual billing plan and document service or hypothetical assumptions.");const a=accountValue();if(a.rate_evidence_mode==="provisional_2025"&&!a.provisional_assumptions_accepted)throw new Error("Accept the documented provisional rates and billing assumptions before continuing.");}
     if(page.dataset.step==="3"){
       const list=f("cycle_mode").value==="documented"?JSON.parse(f("cycles").value):regionalCalendarCycles(field("start_date").value,field("end_date").value);
-      const coverage=selected()?.coverage||[];
+      const a=accountValue(),coverage=a.rate_evidence_mode==="provisional_2025"&&a.provisional_assumptions_accepted?(selected()?.provisional_coverage||[]):selected()?.coverage||[];
       const covered=day=>coverage.some(w=>w.start<=day&&day<=w.end);
       for(const cycle of list){if(field("utility").value==="pseg"){
         if(!covered(cycle.bill_date))throw new Error("The utility bill date is outside verified tariff coverage. PSE&G selects rates by bill date; review the documented cycles.");
@@ -259,9 +262,9 @@ if(typeof document!=="undefined") {
     const maximum=Math.max(1,...rows.map(r=>Math.abs(Number(r.utility_bill_usd))));
     rows.forEach((row,i)=>{const y=28+i*48,label=document.createElementNS(ns,"text"),bar=document.createElementNS(ns,"rect"),amount=document.createElementNS(ns,"text");
       label.setAttribute("x",0);label.setAttribute("y",y);label.setAttribute("font-size",12);label.textContent=(row.tariff||"")+" · "+pretty(row.scenario);
-      bar.setAttribute("x",255);bar.setAttribute("y",y-16);bar.setAttribute("width",Math.max(1,Math.abs(Number(row.utility_bill_usd))/maximum*350));bar.setAttribute("height",23);bar.setAttribute("fill",(row.is_complete_bill===false||row.is_complete_bill==="False")?"#a56038":"#35786a");
+      bar.setAttribute("x",255);bar.setAttribute("y",y-16);bar.setAttribute("width",Math.max(1,Math.abs(Number(row.utility_bill_usd))/maximum*350));bar.setAttribute("height",23);bar.setAttribute("fill",(row.rate_evidence_status==="provisional"||row.is_complete_bill===false||row.is_complete_bill==="False")?"#a56038":"#35786a");
       amount.setAttribute("x",620);amount.setAttribute("y",y);amount.setAttribute("font-size",13);amount.textContent=Number(row.utility_bill_usd).toLocaleString(undefined,{style:"currency",currency:"USD"});svg.append(label,bar,amount);});
-    const caption=document.createElement("figcaption");caption.className="hint";caption.textContent="Utility charges only. Each tariff is optimized independently; wear and electrical losses are reported separately. Incomplete bills are flagged in the table.";chart.append(svg,caption);
+    const caption=document.createElement("figcaption");caption.className="hint";caption.textContent="Utility charges only. Each tariff is optimized independently; wear and electrical losses are reported separately. Provisional historical estimates use the recorded rate and billing assumptions; completeness does not verify historical rates. Incomplete bills are flagged in the table.";chart.append(svg,caption);
   }
   window.regionalUI={comparisonChart,active,batteryEnabled,sync,leaving,mainDefaults,defaults,validate,restore,request,
     dateDefaults:()=>({start:field("start_date").value||base().start_date,end:field("end_date").value||base().end_date}),

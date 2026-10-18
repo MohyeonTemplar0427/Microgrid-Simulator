@@ -25,6 +25,8 @@ UTILITY_DOCS = {
     "dominion_energy_virginia": ("docs/Dominion_Virginia_General.md", "docs/utility_sources/dominion/va_general_2026/manifest.json", "test/test_dominion_va_general.py"),
     "dominion_energy_north_carolina": ("docs/Dominion_North_Carolina.md", "docs/utility_sources/dominion_nc/manifest.json", "test/test_dominion_nc.py"),
     "pseg": ("docs/PSEG_New_Jersey_Billing.md", "docs/utility_sources/pseg/manifest.json", "test/test_pseg_billing.py"),
+    "firstenergy_pa_west_penn": ("docs/FirstEnergy.md", "docs/utility_sources/firstenergy/manifest.json", "test/test_firstenergy.py"),
+    "firstenergy_ohio_edison": ("docs/FirstEnergy.md", "docs/utility_sources/firstenergy/manifest.json", "test/test_firstenergy.py"),
 }
 DEFAULT_EVIDENCE = (".cache/regional_validation_release_20261015/validation.json",
                     ".cache/regional_validation_va_history_20261015/validation.json")
@@ -177,6 +179,8 @@ def nc_eligibility(root):
 def unit_scope(utility, plan, supply, enabled):
     if not enabled:
         return "No executable-plan acceptance claim; rejection/catalog coverage only"
+    if utility.startswith("firstenergy_"):
+        return "Independent filed-arithmetic benchmarks, demand/state/date/DST tests and main-form queued-worker reconciliation; no customer-bill calibration claim"
     if utility == "dominion_energy_virginia":
         return "Defined: every supported numeric structure and fixed-schedule MILP parity fixtures"
     if utility == "dominion_energy_north_carolina":
@@ -228,7 +232,7 @@ def build_rows(catalogs=None, *, evidence=(), root=ROOT):
                         coverage_is_complete_bill=segment.get("is_complete_bill",True) if enabled else None,
                         coverage_scope=segment.get("scope","Complete bill supported within validated account restrictions" if enabled else "Unavailable"),
                         coverage_excluded_components="Dated historical taxes; see historical_tax_research_status.json" if segment.get("is_complete_bill") is False else "",
-                        coverage_basis="bill date" if utility == "pseg" else "service dates",
+                        coverage_basis="mixed service dates and bills-rendered components; see utility document" if utility.startswith("firstenergy_") else "bill date" if utility == "pseg" else "service dates",
                         base_effective_start=plan.get("base_effective_start", "See independent component timeline in utility document"),
                         billing="implemented verified-charges subtotal; incomplete taxes" if segment.get("is_complete_bill") is False else "implemented, eligibility bounded" if enabled else "disabled",
                         dispatch="implemented subtotal optimum only; complete-bill optimum unavailable" if segment.get("is_complete_bill") is False else "implemented, primary optimum required" if enabled else "disabled",

@@ -1,0 +1,784 @@
+{
+  "reviewed_on": "2026-10-17",
+  "documents": [
+    {
+      "filename": "papuc-1858451.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1858451.pdf",
+      "scope": "Approved Supp14, base rates effective2025-01-01",
+      "pdf_sha256": "b74772efdc7b2c5a7bb527f6b34b007826b8e17a1e9efd387d6f5777f1e0ae99",
+      "pdf_pages": 93,
+      "selected_pdf_pages": [
+        15,
+        16,
+        21,
+        22,
+        23,
+        24,
+        78,
+        79,
+        80,
+        81,
+        84,
+        85,
+        89
+      ],
+      "excerpt": "papuc-1858451-selected.txt",
+      "excerpt_sha256": "43cfedda03602453a65671c7408bc8f3e0b69b42d5ac0df3976791362bf5d4c9"
+    },
+    {
+      "filename": "pa-20250515174716.pdf",
+      "url": "https://web.archive.org/web/20250515174716id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf",
+      "scope": "Archived official 2025book: USC and original DSIC rules",
+      "pdf_sha256": "efccf0bf4bba2f5f43aad96d1e56ab2d77495abd2174335a39c25cee98193a2a",
+      "pdf_pages": 248,
+      "selected_pdf_pages": [
+        186,
+        242
+      ],
+      "excerpt": "pa-20250515174716-selected.txt",
+      "excerpt_sha256": "87ae0248971f8169f91d86126a4c8917044bc6bb792d2c35fd77185388af4a1d"
+    },
+    {
+      "filename": "pa-supp11.pdf",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FE-PA-Supp-No-11-PTC-HPS-Rider-Changes-12-1-2024.pdf",
+      "scope": "PTC2024-12-01 predecessor coveringJan\u2013May2025",
+      "pdf_sha256": "1f9ba4c52c8baf416018477039aff367396eb893f8479c8e668dee99a2633b39",
+      "pdf_pages": 4,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "excerpt": "pa-supp11-selected.txt",
+      "excerpt_sha256": "32d1ab5abf719d5caa70caf4bd9a0462785b8cfd06d356bc16c5de52ef6db039"
+    },
+    {
+      "filename": "pa-supp19.pdf",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-Supp-No-19-PTC-and-HPS-Rider.pdf",
+      "scope": "PTC2025-06-01",
+      "pdf_sha256": "d11bc4fd1e9254c2d4648410919b578cdc00608a80e46b8ea0d162effe57e4f0",
+      "pdf_pages": 5,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "excerpt": "pa-supp19-selected.txt",
+      "excerpt_sha256": "6acf03dfb1f87b1ecf0f13da33a2a641e1e4b5f37de5ea8b68c133402c455f57"
+    },
+    {
+      "filename": "oe-20250825000744.pdf",
+      "url": "https://web.archive.org/web/20250825000744id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2025-Electric-Service.pdf",
+      "scope": "Ohio Edison July components andAugust14LGR/SGFzero",
+      "pdf_sha256": "7cdbdc3132fe604357a6f3f27c00462f4e727c1b27b0a9334776bcbad5f2cfe5",
+      "pdf_pages": 167,
+      "selected_pdf_pages": [
+        9,
+        10,
+        27,
+        28,
+        29,
+        30,
+        75,
+        76,
+        77,
+        100,
+        103,
+        108,
+        109,
+        110,
+        113,
+        117,
+        124,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        137,
+        140,
+        145,
+        147,
+        148,
+        149,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        160,
+        163,
+        165,
+        166,
+        167
+      ],
+      "excerpt": "oe-20250825000744-selected.txt",
+      "excerpt_sha256": "fa0a640cb663dea9c8ac453120dbff350591b79122f1927645460aa7e7a0da67"
+    },
+    {
+      "filename": "oe-20251104135547.pdf",
+      "url": "https://web.archive.org/web/20251104135547id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2025-Electric-Service.pdf",
+      "scope": "Ohio Edison October components /SeptemberDCR",
+      "pdf_sha256": "217c2eec6a22945ad0a4587edcf4f40b78767e2ba4888c34fce54a92eedd2ea7",
+      "pdf_pages": 167,
+      "selected_pdf_pages": [
+        103,
+        108,
+        109,
+        110,
+        113,
+        117,
+        124,
+        127,
+        130,
+        131,
+        145,
+        147,
+        151,
+        156
+      ],
+      "excerpt": "oe-20251104135547-selected.txt",
+      "excerpt_sha256": "1a49266228539198775e0e58332282c55b0d61e8156f71e02579a0ec3b59914a"
+    },
+    {
+      "filename": "oe-2025.pdf",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-OE-Electric-Service-Tariff.pdf",
+      "scope": "Ohio Edison DecemberDCR",
+      "pdf_sha256": "08eecd8c1c75cbee559bad2c9f7927ce3a405a1ab8afcaf5d69f3874258ca2ac",
+      "pdf_pages": 167,
+      "selected_pdf_pages": [
+        156
+      ],
+      "excerpt": "oe-2025-selected.txt",
+      "excerpt_sha256": "35b113d57463f96e427aae2f2ec2c77b6dbc3ff3e8ebfa0624ad93097c7fbabc"
+    },
+    {
+      "filename": "papuc-1858401.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1858401.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "74d69b22c621e6d0242a90014c4ee6cb8629fcf295dc3ef50710c2bcb73a89da",
+      "pdf_pages": 5,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "excerpt": "papuc-1858401-selected.txt",
+      "excerpt_sha256": "342050f4e17479067b4cca7ef09040a5d67d348d3d99536db73d2823b7b53353"
+    },
+    {
+      "filename": "papuc-1859431.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1859431.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "ff9aacbc39dbfbba4571656cbad89d08a0d9798b372e1fc78f9fa3f4c2a9accb",
+      "pdf_pages": 27,
+      "selected_pdf_pages": [
+        1,
+        4,
+        5
+      ],
+      "excerpt": "papuc-1859431-selected.txt",
+      "excerpt_sha256": "5b76ec56e0b5b1bcabc4234555404309df9fa2c4b43b637ef97b1c47fc144cb8"
+    },
+    {
+      "filename": "papuc-1860381.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1860381.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "f712cb3ef7b7b248d9d68ba76c7d55751fa2cbac74b1e8e9924607ac27b5ef74",
+      "pdf_pages": 18,
+      "selected_pdf_pages": [
+        1,
+        5,
+        6
+      ],
+      "excerpt": "papuc-1860381-selected.txt",
+      "excerpt_sha256": "9085b40af170a7369bb4fabe7b5d7d300cf13df50387b7268cc2548f9aada4ff"
+    },
+    {
+      "filename": "papuc-1860899.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1860899.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "8477b46d9625816a7d1e73835022c5ff4bb322d5dd66cea3b39f4a436e23ea68",
+      "pdf_pages": 2,
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "excerpt": "papuc-1860899-selected.txt",
+      "excerpt_sha256": "833ae3ee86d5871d52553d5b23cad9961000e6a6a592c23478afdb29cea0db3d"
+    },
+    {
+      "filename": "papuc-1870842.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1870842.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "203abe5782eb1cf51bb3f081fbbd97a0944592df95120962a51e97a147f5e71a",
+      "pdf_pages": 6,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excerpt": "papuc-1870842-selected.txt",
+      "excerpt_sha256": "870724b804328947ffd1a4377e66710a7cb8c414c3a165dcf8a62158fb698340"
+    },
+    {
+      "filename": "papuc-1877401.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1877401.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "c0cf4ca81d8ec1daae70c0e9c65e7f0a3e639ece2d72ecb1ad039f0065a60405",
+      "pdf_pages": 14,
+      "selected_pdf_pages": [
+        1,
+        5,
+        6
+      ],
+      "excerpt": "papuc-1877401-selected.txt",
+      "excerpt_sha256": "a55942f6ea7b31db08864ec0f123097d4d01679881c242ee648cc7e54f0a2386"
+    },
+    {
+      "filename": "papuc-1879559.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1879559.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "0224004905ef71919756eb494fd27233d58ee014e50b8ee8d8c35c4eb6ea51eb",
+      "pdf_pages": 15,
+      "selected_pdf_pages": [
+        1,
+        4,
+        5
+      ],
+      "excerpt": "papuc-1879559-selected.txt",
+      "excerpt_sha256": "5e0a237fee5e32878e1cbcc42a4a69d0d92634d8b09f9bd9d8178fcdffac5938"
+    },
+    {
+      "filename": "papuc-1879719.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1879719.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "d6cc73ec9a35f2c812399625e1cf700771858162165ac56d742f67c1952e3bc7",
+      "pdf_pages": 9,
+      "selected_pdf_pages": [
+        1,
+        4,
+        5
+      ],
+      "excerpt": "papuc-1879719-selected.txt",
+      "excerpt_sha256": "0fb7d917f9e150e8f822554042b28eacfcc2bed255feba66127e5dd4d1817a92"
+    },
+    {
+      "filename": "papuc-1883054.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1883054.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "e605f32e3378416d98dd0b0b52c41ad105c284aeadff3f59401c0ed7e4f053b3",
+      "pdf_pages": 6,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excerpt": "papuc-1883054-selected.txt",
+      "excerpt_sha256": "172323de617f7cec147eb13bc51a2cf39d0e042f0ce43846cb763a84975d56e2"
+    },
+    {
+      "filename": "papuc-1885199.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1885199.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "b54c7f26cebe99bd930fd56793eda1453dd11c18c042a396d34d2220c211aedb",
+      "pdf_pages": 19,
+      "selected_pdf_pages": [
+        1,
+        6,
+        7
+      ],
+      "excerpt": "papuc-1885199-selected.txt",
+      "excerpt_sha256": "2559bd0e67e80b5e17eb199aac485ab88ccc7cd71468a087a8f1db63bdc589bd"
+    },
+    {
+      "filename": "papuc-1895067.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1895067.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "fa78c4150271aef61ff879a3f9776b86e95ad196df82d655cad5d1add3c4b926",
+      "pdf_pages": 6,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excerpt": "papuc-1895067-selected.txt",
+      "excerpt_sha256": "2788d3c0f76854480f72836d4a7eb8e71d6d0e93334e3cb2ce19d2dd69a41ca1"
+    },
+    {
+      "filename": "papuc-1898804.pdf",
+      "url": "https://www.puc.pa.gov/pcdocs/1898804.pdf",
+      "scope": "PA approved/replacement tariff filing; issued and effective dates retained in source excerpt",
+      "pdf_sha256": "d43554864a41b117411c385ea9ecbdc08d6710da0430a06656cda8e55381e5ea",
+      "pdf_pages": 43,
+      "selected_pdf_pages": [
+        1,
+        5,
+        6
+      ],
+      "excerpt": "papuc-1898804-selected.txt",
+      "excerpt_sha256": "3367fd45ea6868383e38875201f67688b5cb7e5de9f8583c36185449deea4cd8"
+    },
+    {
+      "filename": "direct-OE-2024-Electric-Service.pdf",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2024-Electric-Service.pdf",
+      "scope": "Complete January2025 ESP-V ordinary RS/GS components; filename is not its effective year",
+      "pdf_sha256": "d5f5a552f82c91e0ee05fb5ca5ce20f085518d403357b7f1d9518866b1f30440",
+      "pdf_pages": 151,
+      "selected_pdf_pages": [
+        9,
+        10,
+        26,
+        27,
+        28,
+        29,
+        30,
+        77,
+        93,
+        98,
+        103,
+        104,
+        108,
+        110,
+        116,
+        118,
+        119,
+        120,
+        126,
+        129,
+        133,
+        134,
+        135,
+        136,
+        137,
+        139,
+        140,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "excerpt": "direct-OE-2024-Electric-Service-selected.txt",
+      "excerpt_sha256": "757404f6fbedcbf0b86d2370819e774c9c2e732f4c0bfd9cd8f420ece2ca9fc3"
+    },
+    {
+      "filename": "oe-20250612032328.pdf",
+      "url": "https://web.archive.org/web/20250612032328id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2025-Electric-Service.pdf",
+      "scope": "Complete June2025 ESP-IV ordinary RS/GS components; not evidence for intervening February compliance composite",
+      "pdf_sha256": "7486abf2250df0da91043895239a54a387d941b3fcecb8feedbe65ad0049a9a5",
+      "pdf_pages": 167,
+      "selected_pdf_pages": [
+        9,
+        10,
+        27,
+        28,
+        29,
+        30,
+        77,
+        103,
+        108,
+        109,
+        113,
+        117,
+        124,
+        125,
+        127,
+        130,
+        131,
+        137,
+        140,
+        145,
+        147,
+        151,
+        152,
+        156,
+        157,
+        158,
+        160,
+        163,
+        165,
+        166,
+        167
+      ],
+      "excerpt": "oe-20250612032328-selected.txt",
+      "excerpt_sha256": "c37fa90bcf1e813306ff667589b334756d35038d0a19df03f81e96d553d64b8b"
+    },
+    {
+      "filename": "Testimony-Brandon-McMillen.pdf",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/OpCoHome/files/ohio-esp-vi/Testimony-Brandon-McMillen.pdf",
+      "scope": "Research only: current February2025 rates reproduced alongside proposed ESP-VI redlines; proposed rates are not enabled",
+      "pdf_sha256": "c43df3883661a3b1bff300c12c1d168864c52cf7fa12040bab10776411f91f30",
+      "pdf_pages": 68,
+      "selected_pdf_pages": [
+        1,
+        20,
+        23,
+        46,
+        56,
+        58,
+        59
+      ],
+      "excerpt": "Testimony-Brandon-McMillen-selected.txt",
+      "excerpt_sha256": "17b3ea7e7be40afded1f828d9403e9ab5aa34cf3dca227f6ea824fec8c789533"
+    },
+    {
+      "filename": "Testimony-Dhara-Patel.pdf",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/OpCoHome/files/ohio-esp-vi/Testimony-Dhara-Patel.pdf",
+      "scope": "Research only: current February2025 annualized benchmark and proposed ESP-VI comparisons; not a February actual bill",
+      "pdf_sha256": "9fc572fd640dad9117da9836819a7703281ab5a3aaeac137d04f25096b661ea1",
+      "pdf_pages": 45,
+      "selected_pdf_pages": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "excerpt": "Testimony-Dhara-Patel-selected.txt",
+      "excerpt_sha256": "0144f52e028b2f323e398bf9f79d5f0e08eb67fb41a559b948d579ba4aa8b657"
+    }
+  ],
+  "history_inventory": [
+    {
+      "jurisdiction": "pa",
+      "description": "STATEMENT OF REASONS",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/2024_FE_PA_Statement%20of%20Reasons.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "pa",
+      "description": "Met-Ed Rate District\u00a0 PTC & HP Illustrative Calculations 6-1-2026",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/ME-Rate-District-PTC-and-HP-Illustrative-6-1-2026.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "pa",
+      "description": "Penelec Rate District\u00a0 PTC & HP Illustrative Calculations\u00a06-1-2026",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/PN-Rate-District-PTC-and-HP-Illustrative-6-1-2026.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "pa",
+      "description": "Penn Power Rate District\u00a0 PTC & HP Illustrative Calculations 6-1-2026",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/PP-Rate-District-PTC-and-HP-Illustrative-6-1-2026.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "pa",
+      "description": "West Power Rate District\u00a0 PTC & HP Illustrative Calculations 6-1-2026",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/WPP-Rate-District-PTC-and-HP-Illustrative-6-1-2026.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2026-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2026-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2025 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-OE-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2024 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2024-OE-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2023 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2023-OE-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2022 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2022-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2021\u00a0Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2021-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2020 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2020-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2019 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2019-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2018 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2018-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2017\u00a0Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2017-Electric-Service-12-31-17.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2015 PUCO No. 11",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2015-Electric-Service-to-12-31-15.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2025 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-CEI-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2024 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2024-CEI-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2023 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2023-CEI-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2022 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2022-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2021\u00a0Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2021-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2020 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2020-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2019 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2019-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2018 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2018-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2017\u00a0Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2017-Electric-Service-12-31-17.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2015 PUCO No. 13",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2015-Electric-Service-to-12-31-2015.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2025 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-TE-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2024 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2024-TE-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2023 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2023-TE-Electric-Service-Tariff.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2022 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2022-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2021\u00a0Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2021-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2020 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2020-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2019 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2019-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2018 Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2018-Electric-Service.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2017\u00a0Electric Service Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2017-Electric-Service-12-31-17.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    },
+    {
+      "jurisdiction": "oh",
+      "description": "2015 PUCO No. 8",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2015-Electric-Service-to-12-31-15.pdf",
+      "status": "archive index identification only; not executable rate coverage"
+    }
+  ],
+  "unsupported": {
+    "ohio_2025": "Incomplete intermediate rider revisions, particularly LGR between January andAugust; no full-year claim",
+    "earlier_history": "Archive links identify files only; historical compiled books do not establish every intermediate rate date"
+  },
+  "notes": [
+    "Official PDF effective dates control over historical workbook column labels.",
+    "Partial/invalid archived PDFs were rejected and are not rate sources.",
+    "Do not infer rates from proposed redline placeholders.",
+    "Selected excerpts are supporting source text, not a substitute for original PDFs and eligibility review."
+  ],
+  "additional_official_references": [
+    {
+      "url": "https://www.firstenergycorp.com/content/dam/supplierservices/files/supplier-registration/PJMCapacityManualWP.pdf",
+      "scope": "West Penn membership in APS; utility PLC assignment differs from meter demand"
+    },
+    {
+      "url": "https://www.pjm.com/markets-and-operations/billing-settlements-and-credit/theo-plc-and-nspl",
+      "scope": "ATSI includes Ohio Edison; no automatic wholesale pricing-node assignment"
+    },
+    {
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax",
+      "scope": "Residential utility exemption and Pennsylvania state sales tax"
+    },
+    {
+      "url": "https://www.revenue.pa.gov/FormsandPublications/FormsforBusinesses/BusinessRegistration/Documents/rev-588.pdf",
+      "scope": "Commercial/mixed-use utility sales-tax eligibility; mixed-use excluded from first case"
+    },
+    {
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5751.03",
+      "scope": "Ohio CAT2.6mills, used only for SKT gross-up per Sheet92"
+    }
+  ],
+  "ohio_2025_research_status": {
+    "complete_bill_windows": [
+      "2025-01-01/2025-01-31",
+      "2025-06-01/2025-06-30",
+      "2025-08-14/2025-12-31"
+    ],
+    "remaining_gaps": [
+      "February-May: complete approved February1 ESP-IV composite and intermediate component continuity, including GEN Sheet114 revision18",
+      "July1-August13: LGR Sheet135 revision12; cycles crossingAugust14 also require verified fixed residential LGR allocation"
+    ],
+    "access_findings": [
+      "PUCO filing viewer previously unavailable after CAPTCHA handoff; no bypass attempted",
+      "Public regulator Tableau itemized-bill calculator visibly reports server unavailable for maintenance",
+      "FirstEnergy public calculator says current bills only; not historical verification",
+      "Additional official court exhibits and the2023-named Ohio Edison book were recovered; none contains missing GEN18 or LGR12. No CAPTCHA bypass or inferred rate."
+    ],
+    "full_year_simulation": "Rejected before queueing; no complete-year bill or savings claim"
+  },
+  "research_documents": [
+    {
+      "filename": "court-986449.pdf",
+      "url": "https://www.supremecourt.ohio.gov/pdf_viewer/pdf_viewer.aspx?pdf=986449.pdf&subdirectory=2025-0490%5CDocketItems&source=DL_Clerk",
+      "pdf_sha256": "428bd4d4a8c447f3f21c14a7988b34536514be3633dba2a7798eaa6d5abd4f6d",
+      "pdf_pages": 85,
+      "scope": "Appellants appendix: prior ESP orders and statutes; no GEN18 or LGR12",
+      "status": "Research context only; not an executable2025 rate source"
+    },
+    {
+      "filename": "court-988932.pdf",
+      "url": "https://www.supremecourt.ohio.gov/pdf_viewer/pdf_viewer.aspx?pdf=988932.pdf&subdirectory=2025-0490%5CDocketItems&source=DL_Clerk",
+      "pdf_sha256": "c34e8f7fcbbfe0dcb5ed17b17385181616bd60fda5e3c768cb1eb46897a25852",
+      "pdf_pages": 43,
+      "scope": "FirstEnergy merit brief: ESP return legal context; no missing filed rates",
+      "status": "Research context only; not an executable2025 rate source"
+    },
+    {
+      "filename": "court-988934.pdf",
+      "url": "https://www.supremecourt.ohio.gov/pdf_viewer/pdf_viewer.aspx?pdf=988934.pdf&subdirectory=2025-0490%5CDocketItems&source=DL_Clerk",
+      "pdf_sha256": "d50d82c393a35e1a7be9448255d6cf6570ef7d56e92e8df2fc355e10ec258962",
+      "pdf_pages": 19,
+      "scope": "Industry appellees merit brief: appendix index identifies earlier ESP orders and H.B.15, not2025 rate sheets",
+      "status": "Research context only; not an executable2025 rate source"
+    },
+    {
+      "filename": "court-988942.pdf",
+      "url": "https://www.supremecourt.ohio.gov/pdf_viewer/pdf_viewer.aspx?pdf=988942.pdf&subdirectory=2025-0490%5CDocketItems&source=DL_Clerk",
+      "pdf_sha256": "7cbebe39e08def9643483249f1f7a020feaf6b8308dbc073b2bc9289ae1f8fbd",
+      "pdf_pages": 198,
+      "scope": "Industry appellees appendix volume4: ESP-V order material and H.B.15; no missing GEN18 or LGR12",
+      "status": "Research context only; not an executable2025 rate source"
+    },
+    {
+      "filename": "oe-2023.pdf",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/OE-2023-Electric-Service.pdf",
+      "pdf_sha256": "450c75c12bd5a94aa80bb570a16cbc75e04e660f8d2ea2d04f5cce0f155ae601",
+      "pdf_pages": 167,
+      "scope": "Official2023-named book contains GEN16 effectiveJune1,2023 and LGR8 effectiveJanuary1,2024; not2025 gap evidence",
+      "status": "Research context only; not an executable2025 rate source"
+    }
+  ]
+}

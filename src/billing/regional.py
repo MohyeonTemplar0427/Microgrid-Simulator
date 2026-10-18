@@ -17,6 +17,8 @@ UTILITIES = {
     "dominion_energy_virginia": {"label":"Dominion Energy Virginia", "state":"VA", "zone":"DOM", "module":"dominion_va_general"},
     "dominion_energy_north_carolina": {"label":"Dominion Energy North Carolina", "state":"NC", "zone":"DOM", "module":"dominion_nc"},
     "pseg": {"label":"PSE&G", "state":"NJ", "zone":"PSEG", "module":"pseg"},
+    "firstenergy_pa_west_penn": {"label":"FirstEnergy Pennsylvania · West Penn district", "state":"PA", "zone":"APS", "module":"firstenergy_pa"},
+    "firstenergy_ohio_edison": {"label":"FirstEnergy Ohio · Ohio Edison", "state":"OH", "zone":"ATSI", "module":"firstenergy_oh"},
 }
 
 
@@ -83,7 +85,7 @@ def cycle_partitions(index, cycles):
         if (not len(selected) or selected[0]!=cursor or index[selected[0]]!=start
                 or index[selected[-1]]+pd.Timedelta(index[1]-index[0])!=stop):
             raise ValueError("Billing cycles must cover every study interval exactly, without gaps, overlaps or truncated meter cycles.")
-        if {"tariff","supply"}&set(cycle["account_overrides"]):
+        if {"tariff","supply","rate_evidence_mode","provisional_assumptions_accepted"}&set(cycle["account_overrides"]):
             raise ValueError("Tariff/supplier changes require independently configured studies; cycle overrides cannot change enrollment.")
         cursor=int(selected[-1])+1
         yield i,slice(int(selected[0]),cursor),cycle
@@ -118,3 +120,10 @@ def calculate_cycle(utility,index,imports,exports,account,*,state=None,equipment
             "export_kwh":float(exports.sum()*BillingMath(index).hours),"rounding_bound_usd":len(lines)*.005+1e-7,
             "rounding_policy":"Study component half-up cents; unrounded filed arithmetic also retained"}
     return result
+
+
+def bill_scope(bill):
+    """Component completeness and historical evidence are separate claims."""
+    if bill.get("rate_evidence_status")=="provisional":
+        return "provisional_modeled_bill"
+    return "complete_utility_bill" if bill["is_complete_bill"] else "verified_charges_subtotal"

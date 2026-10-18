@@ -12,6 +12,8 @@ MODES = {
     "dominion_energy_virginia": ("solar_mode", "non_export"),
     "dominion_energy_north_carolina": ("solar_program", "non_export"),
     "pseg": ("export_mode", "none"),
+    "firstenergy_pa_west_penn": ("export_mode", "none"),
+    "firstenergy_ohio_edison": ("export_mode", "none"),
 }
 
 
@@ -44,6 +46,14 @@ def grid_only_counterfactual(utility, account, state=None):
             inherited[key] = value
 
     applied = mode == "net_metering"
+    if utility.startswith("firstenergy_"):
+        applied = bool(result.get("der_ordinary_service_confirmed"))
+        set_account("der_ordinary_service_confirmed", False)
+        set_account("der_eligibility_source", "")
+        return {"account":result,"state":inherited,"applied":applied,
+                "label":"Ordinary absent-DER grid-only counterfactual; selected default tariff and demand history retained",
+                "changed_account_fields":changed_account,"changed_state_fields":[],
+                "warnings":["Grid-only removes the hypothetical renewable installation; no export credits, standby service or actual account transition is assumed."]}
     if applied:
         set_account(field, ordinary_mode)
         if utility == "dominion_energy_virginia":

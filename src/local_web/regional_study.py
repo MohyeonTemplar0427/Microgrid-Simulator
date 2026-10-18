@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from ..billing.regional import UTILITIES,adapter,account_region,cycle_partitions,cycle_account
+from ..billing.regional import UTILITIES,adapter,account_region,cycle_partitions,cycle_account,bill_scope
 from ..dispatch.battery import Battery
 from ..timeseries import build_interval_index
 from .contract import DEFAULT_SITE_REQUEST,number,identifier
@@ -21,7 +21,9 @@ from .site_profile import customer_class
 
 SITES={"dominion_energy_virginia":(37.63,-77.52,"Hypothetical Henrico-area Virginia site; locality independently confirmed"),
        "dominion_energy_north_carolina":(36.44,-76.50,"Hypothetical northeastern North Carolina site"),
-       "pseg":(40.74,-74.17,"Hypothetical Newark, New Jersey site")}
+       "pseg":(40.74,-74.17,"Hypothetical Newark, New Jersey site"),
+       "firstenergy_pa_west_penn":(40.30,-79.54,"Hypothetical Westmoreland County, Pennsylvania site; West Penn service independently confirmed"),
+       "firstenergy_ohio_edison":(41.16,-81.64,"Hypothetical unincorporated Summit County, Ohio site; Ohio Edison service and absence of municipal charges independently confirmed")}
 
 
 def calendar_cycles(start,end):
@@ -96,6 +98,8 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["solar"]["dc_capacity_kw"]=6.25
         request["pv_capacity_kw"]=5.
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
+    if utility.startswith("firstenergy_"):
+        request["operating_contract"]["renewable_only_charging"]=True
     return request
 
 
@@ -147,7 +151,7 @@ def _load(settings,grid,kind):
 def prepare(r):
     utility=r.get("site",{}).get("utility") if isinstance(r,dict) else None
     if utility not in UTILITIES:
-        raise ValueError("Choose Dominion Virginia, Dominion North Carolina or PSE&G with explicit jurisdiction confirmation.")
+        raise ValueError("Choose a supported regional utility with explicit district and jurisdiction confirmation.")
     if set(r)-{"tariff_comparisons"}!=set(defaults(utility)) - {"tariff_comparisons"} or type(r.get("schema_version")) is not int or r["schema_version"]!=11:
         raise ValueError("Supply exactly the regional main-study schema 11 fields.")
     if not isinstance(r["name"],str) or not 1<=len(r["name"].strip())<=120:
@@ -254,6 +258,8 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
+    if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
+        raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
@@ -304,7 +310,7 @@ def _execute_single_plan(directory,r):
     specs={"grid_only":(False,False)}
     if equipment["pv"]:specs["pv_only"]=(True,False)
     if r["battery"] is not None:specs["pv_battery" if equipment["pv"] else "storage_only"]=(equipment["pv"],True)
-    results={};cycle_rows=[];items=[];tables=[];replays={};baseline_semantics=None
+    results={};cycle_rows=[];items=[];tables=[];replays={};baseline_semantics=None;assumption_rows=[]
     for name,(has_pv,has_storage) in specs.items():
         state=None;parts=[];bills=[];outcomes=[];current=deepcopy(r["battery"]) if has_storage else None
         for i,block,cycle in cycles:
@@ -331,11 +337,22 @@ def _execute_single_plan(directory,r):
             warnings.extend(name+": "+text for text in bill.get("warnings",[])+result.get("warnings",[]))
             cycle_rows.append({"scenario":name,"cycle_index":i,**{k:v for k,v in cycle.items() if k!="account_overrides"},
                 "total_usd":bill["total_usd"],"unrounded_total_usd":bill["unrounded_total_usd"],
-                "is_complete_bill":bill["is_complete_bill"],"objective_scope":"complete_utility_bill" if bill["is_complete_bill"] else "verified_charges_subtotal", "import_kwh":bill["import_kwh"],"export_kwh":bill["export_kwh"],
+                "is_complete_bill":bill["is_complete_bill"],"objective_scope":bill_scope(bill),
+                "rate_evidence_status":bill.get("rate_evidence_status","not_recorded"),
+                "rate_assumption_ids":json.dumps([x["id"] for x in bill.get("rate_assumptions",[])]),
+                "import_kwh":bill["import_kwh"],"export_kwh":bill["export_kwh"],
                 "optimization_objective_usd":result["objective_usd"],"reconciliation_difference_usd":result["reconciliation_difference_usd"],
                 "closing_state":json.dumps(_json_value(state),sort_keys=True),"metrics":json.dumps(_json_value(bill.get("metrics",{})),sort_keys=True)})
-            items.extend({"scenario":name,"cycle_index":i,"billing_month":cycle["billing_month"],"bill_date":cycle["bill_date"],
-                "component":key,"amount_usd":amount,"unrounded_amount_usd":bill["unrounded_lines"][key]} for key,amount in bill["lines"].items())
+            for assumption in bill.get("rate_assumptions",[]):
+                assumption_rows.append({"scenario":name,"cycle_index":i,"billing_month":cycle["billing_month"],
+                    "assumption_model":bill["assumption_model"],"assumption_id":assumption["id"],
+                    **{k:json.dumps(v,sort_keys=True) if isinstance(v,(dict,list)) else v for k,v in assumption.items() if k!="id"}})
+            for key,amount in bill["lines"].items():
+                related=[x["id"] for x in bill.get("rate_assumptions",[]) if key in x["components"]]
+                items.append({"scenario":name,"cycle_index":i,"billing_month":cycle["billing_month"],"bill_date":cycle["bill_date"],
+                    "component":key,"amount_usd":amount,"unrounded_amount_usd":bill["unrounded_lines"][key],
+                    "rate_evidence_status":"provisional" if related else "verified" if bill.get("rate_evidence_status") in ("verified","provisional") else "not_recorded",
+                    "rate_assumption_ids":json.dumps(related)})
         dispatch=pd.concat(parts,ignore_index=True)
         results[name]={"dispatch":dispatch,"bills":bills,"outcomes":outcomes,"closing_state":state}
         replays[name]=(dispatch,r["battery"] if has_storage else None,r["pv_capacity_kw"] if has_pv else 0.)
@@ -355,7 +372,8 @@ def _execute_single_plan(directory,r):
         total=sum(b["total_usd"] for b in bills)
         comparisons.append({"scenario":name,"utility_bill_usd":total,"savings_vs_grid_usd":base-total,
             "is_complete_bill":all(b["is_complete_bill"] for b in bills),
-            "objective_scope":"complete_utility_bill" if all(b["is_complete_bill"] for b in bills) else "verified_charges_subtotal",
+            "objective_scope":"provisional_modeled_bill" if any(bill_scope(b)=="provisional_modeled_bill" for b in bills) else "complete_utility_bill" if all(b["is_complete_bill"] for b in bills) else "verified_charges_subtotal",
+            "rate_evidence_status":"provisional" if any(b.get("rate_evidence_status")=="provisional" for b in bills) else "verified" if all(b.get("rate_evidence_status")=="verified" for b in bills) else "not_recorded",
             "import_kwh":sum(b["import_kwh"] for b in bills),"export_kwh":sum(b["export_kwh"] for b in bills),
             "pv_curtailed_kwh":float(dispatch.pv_curtailed_kw.sum()*grid.timestep_hours),
             "battery_charge_kwh":float(dispatch.battery_charge_kw.sum()*grid.timestep_hours),
@@ -377,6 +395,7 @@ def _execute_single_plan(directory,r):
     save("comparison","Retail bills, operation and electrical comparison",pd.DataFrame(comparisons))
     save("billing-components","Itemized charges and component savings",pd.DataFrame(items))
     save("billing-cycles","Bills and closing state by confirmed cycle",pd.DataFrame(cycle_rows))
+    if assumption_rows:save("billing-assumptions","Provisional tariff rates and billing rules",pd.DataFrame(assumption_rows))
     save("inputs","Native demand and available AC PV",inputs)
     for name,result in results.items():save("dispatch-"+name,"Dispatch · "+name,result["dispatch"])
     for key,label,frame in ac_tables:save(key,label,frame)
@@ -396,6 +415,8 @@ def _execute_single_plan(directory,r):
         "grid_only_reference":baseline_semantics,
         "regional_account":r["regional_account"],"account":r["account"],"operating_contract":r["operating_contract"],
         "is_complete_bill":all(row["is_complete_bill"] for row in comparisons),
+        "rate_evidence_status":"provisional" if any(row["rate_evidence_status"]=="provisional" for row in comparisons) else comparisons[0]["rate_evidence_status"],
+        "billing_evidence_note":"Component completeness, historical rate evidence, solver proof and representative electrical feasibility are separate claims. Provisional savings use the recorded assumptions.",
         "input_provenance":{"load":{k:v for k,v in r["load"].items() if k!="csv"},"pv":pv_provenance,
             "native_csv_sha256":hashlib.sha256(r["load"]["csv"].encode()).hexdigest() if r["load"]["csv"] else None,
             "request_sha256":hashlib.sha256(json.dumps(r,sort_keys=True).encode()).hexdigest()},
@@ -454,6 +475,7 @@ def execute(directory,r):
         statuses=[result["ac_validation"].get("all_intervals_feasible"),other["ac_validation"].get("all_intervals_feasible")]
         result["ac_validation"]["all_intervals_feasible"]=False if False in statuses else None if None in statuses else True
         result["is_complete_bill"] &= other["is_complete_bill"]
+        if other.get("rate_evidence_status")=="provisional":result["rate_evidence_status"]="provisional"
         result["warnings"].extend("Alternative "+tariff+": "+w for w in other["warnings"])
     result["tariff_comparison"]={"method":"independently_optimized_per_tariff","primary":primary_tariff,
         "alternatives":r.get("tariff_comparisons",[]),"account_history_and_obligations":"same initial facts",
