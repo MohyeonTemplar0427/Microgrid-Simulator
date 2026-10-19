@@ -1,0 +1,33 @@
+{
+  "reviewed_on": "2026-10-19",
+  "status": "research_only_not_a_billing_allocation_policy",
+  "sources": [
+    {
+      "url": "https://www.puc.pa.gov/pcdocs/1822419.pdf",
+      "pdf_sha256": "91c537990cef3014b8f279194bd22a191416b6cc70313a9aec1cdfecdd821383",
+      "pdf_pages": 815,
+      "selected_pdf_pages": [
+        617,
+        618,
+        619,
+        620,
+        744,
+        745,
+        746,
+        747,
+        755,
+        756
+      ],
+      "excerpt": "2024-rate-design-research-notes.txt",
+      "excerpt_sha256": "4c2dab78fdddf38b44560b0c4476ebef3cb820a6072e19b04eec07132f0fb8fd",
+      "scope": "Proposed2024 rate design and tariff testimony inspected; no missing ordinary R/GS short-cycle calculation formula established."
+    }
+  ],
+  "public_pages": [
+    {
+      "url": "https://peco.my.site.com/s/article/PECO-Bill-Samples",
+      "method": "Browser article and public sample viewer inspected",
+      "finding": "Commercial sample page2: March14\u2013April15,2024,32days; billdateApril22. Normal cycle, competitive supply; not a partial-period/default-supply allocation benchmark."
+    }
+  ]
+}

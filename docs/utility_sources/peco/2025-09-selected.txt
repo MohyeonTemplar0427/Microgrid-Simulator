@@ -1,0 +1,612 @@
+PDF PAGE 36
+Supplement No. 11 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 35
+PECO Energy Company Supersedes Original Page No. 35
+INCREMENT AL COVID- 19 RELATED UNCOLLECTIBLE EXPENSE (ICUS)
+Purpose: The purpose of this surcharge is to refund to customers amounts of incremental COVID-19 related uncollectible accounts
+embedded in PECO’s current rates.
+Applicability: The surcharge shall be calculated to the nearest one- hundredth of a cent for billing purposes for all R and RH customers, for
+customers on all other rates it shall be the nearest one cent. The ICUS will become effective upon the effective date of rates for the electric
+distribution base rate case at Docket No. R-2024- 3046931 for a period of one year. The ICUS shall be credited to each rate schedule as follows:
+Rate R $(0.00313)/kWh
+Rate RH $(0.00274)/kWh
+Rate GS $(0.13)/billed kW
+Rate PD $(0.08)/billed kW
+Rate HT $(0.05)/billed kW
+Rate EP $0.00/billed kW
+Rate SL-E $0.00/location
+Rate SL-C $0.00/location
+Rate TLCL $(0.01)/location
+Rate AL $0.00/location (C)
+Rate POL $0.00lamp (C)
+Rate SL-S $0.00/lamp
+The Variable Distribution charges, for the above rate schedules shall include the above listed ICUS credits. For the lighting
+rate
+schedules, the applicable location or fixed distribution service charges shall include the ICUS credit.
+Calculation of ICUS:
+Billing Provisions: The credit was calculated by rate schedule using the following formula:
+ICUS = R(n)
+BU(n)
+R(n) - The total amount to be refunded to customers by rate class.
+BU(n) – The total estimated annual Billing Units for the rate class during the projected period when rates will be in effect.
+Filing and Reconciliations: The ICUS will be reconciled at the end of the recovery period above. A final reconciliation statement will be
+filed within 30 days after completion of the final over/under collection refund/recovery. The Company may file interim rate adjustments to
+eliminate any over or under recovery of the surcharge. Such adjustments would be filed on at least 10 days’ notice. The ICUS revenues and
+reconciliation will be subject to audit by the Commission’s Bureau of Audits.
+(C) Denotes Change
+Iss ued A ugust 20, 2025 Effective September 1, 2025
+
+PDF PAGE 37
+Supplement No. 12 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page NO. 36
+PECO Energy Company Supersedes Original Page No. 36
+FIBER AFFILIATE REVENUE SURCHARGE (FARS)
+Purpose: The purpose of this surcharge is to refund to customers amounts for network fees that the Company collected from former
+affiliates for use of its fiber network.
+Applicability: The surcharge shall be calculated to the nearest one- hundredth of a cent for billing purposes for all R and RH customers, for
+customers on all other rates it shall be the nearest one cent. The FARS will become effective upon the effective date of rates for the electric
+distribution base rate case at Docket No. R-2024- 3046931 for a period of one year. The FARS shall be credited to each rate schedule as follows:
+Rate R $(0.00072)/kWh
+Rate RH $(0.00074)/kWh
+Rate GS $(0.13)/billed kW
+Rate PD $(0.12)/billed kW
+Rate HT $(0.07)/billed kW
+Rate EP $(0.07)/billed kW
+Rate SL-E $(0.08)/location
+Rate SL-C $(0.07)/location
+Rate TLCL $(0.13)/location
+Rate AL $(0.03)/location (C)
+Rate POL $0.00/lamp (C)
+Rate SL-S $0.00/lamp
+The Variable Distribution charges, for the above rate schedules shall include the above listed FARS credits. For the lighting rate
+schedules, the applicable location or fixed distribution service charges shall include the FARS credit.
+Calculation of FARS:
+Billing Provisions: The credit was calculated by rate schedule using the following formula:
+FARS = R(n)
+BU(n)
+R(n) - The total amount to be refunded to customers by rate class.
+BU(n) – The total estimated annual Billing Units for the rate class during the projected period when rates will be in effect.
+Filing and Reconciliations: The FARS will be reconciled at the end of the recovery period above. A final reconciliation statement will be
+filed within 30 days after completion of the final over/under collection refund/recovery. The Company may file interim rate adjustments to
+eliminate any over or under recovery of the surcharge. Such adjustments would be filed on at least 10 days’ notice. The FARS credits and
+reconciliation will be subject to audit by the Commission’s Bureau of Audits.
+(C) Denotes Change
+Iss ued A ugust 20, 2025 Effective September 1, 2025
+
+PDF PAGE 38
+Supplement No. 4 to
+Tariff Electric Pa. P.U.C. No. 8
+Second Revised Page No. 37
+PECO Energy Company Supersedes First Revised t Page No. 37
+GENERATION SUPPLY ADJUSTMENT FOR PROCUREMENT CLASSES 1 AND 2
+LOADS UP T O 100KW
+Applicability: June 1, 2025 this adjustment shall apply to all customers taking default service from the Company with demands up to 1 00 (C)
+kW. The rate contained herein shall be calculated to the nearest one thousandth of a cent. The GSA shall contain the cost of generation
+supply for each tariff rate. The Company will apply Standard Pricing unless customers voluntarily request and are eligible to participate in
+the Time- Of-Use Pricing Option as detailed below.
+Standard Pricing: Standard Pricing provides default service to customers who have not selected or are not eligible for PECO’s
+Time-Of-Use Pricing Option. The rates below shall include the cost of procuring power to serve the default service customers including the
+cost of complying with the Alternative Energy Portfolio Standards Act (“AEPS” or the “Act”) plus associated administrative expenses incurred in
+acquiring power and gaining regulatory approval of any procurement strategy and plan. The standard pricing for default service will represent
+the estimate of the cost to serve the specific tariff rate for the next semi-annual period beginning with the s ix months ended (C )
+November 30, 2025.
+The rates in this tariff shall be updated s em i -annually on June 1 and December 1 commencing June 1, 2025 and are not prorated. (C)
+If the balance of over/(under) recovery gets too large, the Company can file a reconciliation that will mitigate the subsequent impact.
+The standard generation service charge shall be calculated using the following formula:
+Standard GSA(n) = (C- E+A)/S*1/(1-T )* (1-ALL)/(1-LL) +AEPS/S*1/(1 - T) + WC where;
+C= The sum of the amounts paid to the full requirements suppliers providing the power for the s emi-annual period, the spot (C)
+market purchases for the semi-annual period, plus the cost of any other energy acquired for the semi-annual period. Cost shall include
+energy, capacity and ancillary services, distribution line l oss es, cost of complying with the Alternative Energy Portfolio Standards, and any
+other load serving entity charges other than network transmission service and costs assigned under the Regional T ransmission Expansion
+Plan. Ancillary services shall include any allocation by PJM to PECO default service associated with the failure of a PJM member to pay its
+bill from PJM as well as the load serving entity charges listed in the Supply Master Agreement Exhibit D as the responsibility of the supplier.
+This component shall include the proceeds and costs from the exercise of Auction Revenue Rights granted to PECO by PJM.
+AEPS = The projected total cost of complying with the Alternative Energy Portfolio Standards Act (“AEPS” or the “Act”) not included
+in the component above for the s em i -annual period for each procurement class. Costs include the amount paid for Alternative Energy (C)
+and/or Alternative Energy Credits (“AEC’s”) purchased for compliance with the Act, the cost of administering and conducting any
+procurement of Alternative Energy and/or AEC’s, payments to the AEC program administrator for its costs of administering an alternative
+energy credits program, payments to a third party for its costs in operating an AEC registry, any charge levied by PECO’s regional
+transmission operator to ensure that alternative energy sources are reliable, a credit for the sale of any AEC’s sold during the calculation
+period, and the cost of Alternative Compliance Payments that are deemed recoverable by the Commission, plus any other direct or indirect
+cost of acquiring Alternative Energy and/or AEC’s and complying with the AEPS statute.
+E = Experienced over or under-collection calculated under the reconciliation provision of the tariff to be effective semiannually with recovery
+during the periods June 1 through November 30 of the current year and December 1 of the current year through M ay 31 of the following(C)
+year.
+A = Administrative Cost - This includes the cost of the Independent Evaluator, consultants providing guidance on the development of the
+procurement plan, legal fees incurred gaining approval of the plan and any other costs associated with designing and implementing a
+procurement plan including the cost of the pricing forecast necessary for estimating cost recoverable under this tariff. Also included in this
+component shall be the cost to implement real time pricing or other time sensitive pricing such as dynamic pricing that is required of the
+Company or is approved in its Act 129 filing. Administrative Costs also includes any other costs incurred to implement retail market
+enhancements directed by the Commission in its Retail Market Investigation at Docket No. I-2011- 2237952 or any other applicable docket
+that are not recovered from EGSs or through another rate.
+S = Estimated sales for the period the rate is in effect for the classes to which the rate is applicable. Six month sales are used for the E
+factor with effective periods June 1 through November 30 of the current year and December 1 of the current year through May 31 of the (C)
+following year.
+T = The currently effective gross receipts tax rate.
+n = The procurement class for which the GSA is being calculated.
+ALL = Average line losses for the procurement class.
+LL = Line losses for the specific rate class provided in the Company’s Electric Generation Supplier Coordination Tariff rule 6.6.
+WC = $0.000 35/kWh to represent the cash working capital for power purchases.
+Auction Revenue Rights (ARR) = Allocated annually by PJM to Firm transmission customers, the ARR’s allow a Company to select rights to
+specific transmission paths in order to avoid congestion charges. In general, the line loss adjustment is applicable to Procurement Class 2 only as
+those classes contain rate classes with three different line loss factors: Current Charges:
+Standard Standard
+Rate GSA Price (C)
+R GSA (1) $0.09508
+RH GSA (1) $0.09508
+GS GSA (2) $0.08651
+(C) Denot es Change
+Iss ued A pril 16, 2025 Effective June 1, 2025
+
+PDF PAGE 39
+Supplement No. 4 to
+Tariff Electric Pa. P.U.C. No. 8
+PECO Energy Company Second Revised Page No. 38
+Supersedes First Revised Page No. 38
+GENERAT ION SUPPLY ADJUST MENT FOR PROCUREMENT CLASSES 1 AND 2
+LOADS UP T O 100KW (CONT INUED)
+PD GSA (2) $0.08500 (C)
+HT GSA (2) $0.08154
+POL* GSA (2) $0.06052
+SL-S* GSA (2) $0.06052
+TLCL GSA (2) $0.08651
+SL-E* GSA (2) $0.06052
+AL* GSA (2) $0.06052
+SL-C*, ** GSA (2) $0.06052
+* Prices shall exclude capacity from the Procurement Class 2 RFP results.
+** Rate SL- C was effective July 1, 2019 pursuant to the Order at Docket No. R-2018- 3000164
+Procedure: For Procurement Classes 1 and 2 t he GSA shall be filed 45 days before the effective dates of June 1 and (C)
+December 1 in conjunction with the Reconciliation Schedule.
+Time-Of-Use (TOU) Pricing Option: The TOU Pricing Option provides eligible customers with an opportunity to shift energy usage away
+from peak periods, when wholesale electricity demand and prices are high, to off-peak periods, when demands and prices are lower.
+Customers may voluntarily request this option in lieu of Standard Pricing described above and must meet the TOU Eligibility Requirements
+below. (Customers electing this option are billed based on interval-metered consumption of usage within each TOU Pricing Period.
+Beginning and ending reads are not applicable TOU billing determinants.) Commencing June 1, 2025, TOU Pricing Option rates will be (C)
+updated s em i -annually in concurrence with the Standard GSA on June 1 and December 1 and are not prorated.
+The year- round TOU Pricing Periods, TOU Period Allocators [“PA-GSA(n)”], and TOU Pricing Multipliers [“PM-GSA(n)”] f rom June 1, 2025 (C)
+through May 31, 2026 are as follows:
+TOU Pricing P eriod Days/Hours Included TOU Period TOU Period TOU Pricing Multiplier TOU Pricing Multiplier
+Allocator Allocator PM-GSA (1) PM-GSA (2)
+PA-GSA(1) PA-GSA(2) (Ratio to Super Off-Peak) (Ratio to Super Off-Peak)
+2:00 – 6:00 p.m. (C)
+Peak (“PP”) Monday through Friday, 12,73% 14.15% 6.06-to-1 4.85- to-1
+excluding PJM holi day s
+Super Off-P eak (“S OPP”) Midni ght (12 a.m.) – 6 a.m. 19.76% 20.35% 1-to-1 1-to-1
+Every day
+Off-Peak (“OPP”) All other hours 67.51% 65.50% 1.44-to-1 1.47-to-1
+Commencing with the GSA and TOU rates effective June 1, 2022, PECO may update the TOU Pricing Multipliers in the above table annually,
+using a rolling five years of historical PJM Day-Ahead Spot Market Pricing energy data and Reliability Pricing Model capacity pricing data for the
+PECO zone. PECO will onl y update the applicable TOU Pricing Multipliers if the use of such data would result in no more than a 10% change
+from the prior- year’s TOU Pricing Multipliers. If these updates would exceed 10%, the applicable TOU Pricing Multipliers will be changed by
+exactly 10%.
+To calculate the s em i -annual TOU Pricing Option rates, the Company will first calculate the semi-annual TOU Super Off-Peak Price (“SOPP”) (C)
+in accordance with the formula set forth below:
+TOU SOPP GSA(n) = Standard GSA(n) * [ 1 / SOPP-F(n) ] where;
+Standard GSA(n) = Defined as above for Standard Pricing.
+SOPP-F(n) = Super Off-Peak Price Factor representing the ratio of the Standard GSA(n) to the Super Off-Peak Price, calculated as
+follows:
+TOU SOPP PA-GSA(n) + [ (T OU OPP PM-GSA(n) * T OU OPP PA-GSA(n) ] + [ (T OU PP PM-GSA(n) * TOU PP PA-GSA(n) ]
+The Company will then calculate the s emi -annual TOU Peak (“PP”) and Off-Peak (“OPP”) prices as follows: (C)
+TOU PP GSA(n) = TOU SOPP GSA(n) * TOU PP PM-GSA and;
+T OU OPP GSA(n) = T OU SOPP (GSA(n) * TOU OPP PM-GSA.
+(C) Denotes Change
+Iss ued April 16, 2025 Effective June 1, 2025
+
+PDF PAGE 40
+Supplement No. 4 to
+Tariff Electric Pa. P.U.C. No. 8
+Second Revised Page No. 39
+PECO Energy Company Supersedes First Revised Page No. 39
+GENERATION SUPPLY ADJUSTMENT FOR PROCUREMENT CLASSES 1 AND 2
+LOADS UP T O 100KW (CONT INUED)
+Current T OU Pricing Option Charges: (C)
+Peak (“PP”) Super Off-P eak (“S OPP”) Off-Peak (“OPP”)
+TOU Rate (2-6 PM Monday-Fri da y, e xc ludi ng holi da ys) (12-6 AM all days) (All other times)
+R (GSA 1) $0.29688 $0.04899 $0.07055
+RH (GSA 1) $0.29688 $0.04899 $0.07055
+GS (GSA 2) $0.22645 $0.04669 $0.06863
+PD (GSA 2) $0.22247 $0.04587 $0.06743
+HT (GSA 2) $0.21340 $0.04400 $0.06468
+TOU Eligibility Requirements and Switching Rules:
+The TOU Pricing Option is available to new and existing Customers in Procurement Classes 1 or 2 with a smart meter configured t o
+measure energy consumption in watt-hours. This includes Customers in the above referenced Procurement Classes taking default service
+from the Company and who also participate in the Company’s RS-2 (Net Metering) tariff, except for virtual net metered Customers.
+Residential Customers enrolled in the Company’s Customer Assistance Program (CAP) are not eligible for the TOU Pricing Option.
+As a prerequisite for enrollment, t he C ustomer must have a valid e- mail address to ensure the Company is able to provide the enrolled TOU
+Pricing Option Customer with timely and meaningful communications regarding their bill savings performance.
+Participating Customers will remain on the TOU Pricing Option rate until they affirmatively elect to return to PECO’s Standard GSA rate,
+switch to an EGS, or otherwise become ineligible.
+Customers who select the TOU Pricing Option may leave at any time without incurring related penalties or fees. However, Customers who
+select and subsequently leave the TOU Pricing Option for any reason may not re- enroll on the TOU Pricing Option rate for twelve billing
+months after switching off the TOU Pricing Option rate.
+(C) Denotes Change
+Iss ued April 16, 2025 Effective June 1, 2025
+
+PDF PAGE 47
+Suppl ement No. 6 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 46
+PECO Energy Company Supersedes Original Page No. 46
+T RANSMISSIO N SE RVI CE CHARGE (T SC)
+Purpose: T he purpos e of t his s urcharge is t o provi de for f ull and c urrent cost recov ery of all t ransm issi on servic e rel ated c osts i ncurred under
+t he PJM open acc ess transmissi on t ariff on behalf of t he Com pany’s defaul t servic e l oad.
+Appl icabil ity: The s urc harge shal l be ass essed t o all default servic e c ustom ers. T he cost shal l be al located t o eac h rate c lass based up on
+t he coinci dent peak us ed by PJM to est abl ish t he net work s ervic e obligat ion.
+Billing Provisions: T he s urcharge shal l be c alc ul at ed on a sem i -annual basis using the formula below:
+TSC(n) = (C+E+I) × __1 __
+S(n) (1-T)
+TSC(n) = t ransmiss ion s erv ice c ost f or cust om er cl ass n i ncl uding over or under rec overy and assoc iat ed i nt erest.
+C – the t ransm issi on s ervic e charges i ncurred by PE CO under t he PJM open access t ransm issi on tarif f. T hese c osts s hall inc lude the
+f ol lowi ng:
+Network Integration Transmission Service costs and Non- F i rm P oi nt to Poi nt T ransm issi on c osts . I ncl uded in the c ost t o be recov ered
+is a work ing c apit al (WC) c omponent as defi ned bel ow.
+Charges assess ed by PJM for network s ervice withi n the PE CO zone. I ncl uded i n s uch c harges are costs f or the base network serv ice
+c harge for t he zone as wel l as any l oad s ervi ng enti ty charges assessed to PE CO under t he PJM OA TT t hat are l isted in PE CO’s S upply
+M aster A greem ent Exhi bit D as the respons ibil ity of the B uyer. Inc luded i n t he c ost t o be rec overed is a work ing c apit al (WC) c omponent as
+defined below.
+WC – c ost f or worki ng c apit al associ at ed with the purc has e of t ransm issi on servic e f rom PJM at a rat e of $274 per m W. WC is a component
+of t he ‘ C” fact or
+E – T he est im ated over or under rec overy f rom t he applic able rec onci li at ion peri od.
+I - i nt erest on t he ov er or under collecti on at t he prim e rat e of i nt erest for comm erci al bank ing, not to exc eed the l egal rat e of
+i nt erest, i n ef fect on t he last day of t he mont h t he ov er coll ecti on or under c ol lect ion occurs, as reported in t he Wall S tre et Journal i n
+accordance with the Order at Docket No. L-2014-2421001. This i nt erest rat e bas is bec omes eff ectiv e wit h January 2016 over or under
+c oll ecti ons.
+n – rate class where: 1 = resi dent ial, 1a = RH, 2 = sm al l C&I, 3 = l arge C&I, 4 = st reet li ghti ng
+Res identi al – Rates R, RH (rec onc il ed as a group)
+Small C&I – Rat e GS
+Large C&I – Rates HT, P D, EP (rec onc il ed as a group)
+St reet Lighti ng – SLE, SLC, S LS, POL, A L, TLCL (rec onc il ed as a group)
+S – Esti mat ed def ault s erv ice s al es f or res identi al cl ass and t he st reet l ight ing cl ass i n t he applic abl e applic ati on peri od. F o r t he c omm erci al
+and i ndus trial cl ass it s hall be t he esti mat ed bil led dem and for t he applic abl e appl icat ion period. The applic ati on peri od wil l be t he peri od
+when rat es wi ll be i n ef fect.
+T – The current Pennsylvania gross receipt tax rate included in base rates.
+F ili ngs and Rec oncil iat i ons: The Company shal l s ubm it fi li ngs 15 days pri or to t he st art of the appl icat ion peri od begi nning J une 1, 201 5.
+T hereaft er, the Company wil l fi le a s urc harge adjustm ent 15 days pri or t o June 1 and Dec ember 1 of each year. If it is apparent that s uch
+m et hodol ogy would res ult in a si gnif icant over or under recov ery bef ore t he next 6 mont h fi li ng for an i ndivi dual cust om er cl ass, t he Company
+m ay propos e a rat e adjust ment 15 days pri or to the next eff ectiv e GSA rate adj ustm ent dat e (Effect ive date of Marc h 1, Sept ember 1). T he
+annual reconciliation statement will be made by December 31 each year.
+Current Transmission Service Rate:
+R= $. 00892 per kilowatt hour (I)
+RH= $.00892 per k il owatt hour (I)
+Small C&I = $2.05 per bi ll ed transmission kW (D)
+Large C&I = $1.69 per bi ll ed transmission kW (I)
+St reet Lighti ng = $. 00025 per kilowatt hour (D)
+(D) Denot es Dec reas e
+(I) Denotes I nc reas e
+Iss ued M ay 15, 2025 Effective June 1, 2025
+
+PDF PAGE 48
+Supplement No. 7 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 47
+PECO Energy Company Supersedes Original Page No. 47
+NON-BY PASS ABLE TRANSMISSION CHARGE (NBT )
+Purpose: T he purpos e of this surc harge is t o provi de for f ul l and c urrent c ost rec ov ery of certain t ransm ission s ervice rel at ed costs inc urred
+under the PJM open access t ransm ission t ariff on behalf of t he Company’s dist ributi on service load i n acc ordanc e wit h Dock et # P -2014-
+2409362.
+Appl icabil ity: The s urc harge shal l be ass essed t o all dist ributi on c ustomers. The c ost s hall be all ocat ed t o eac h rate c lass based upon the
+c oi nci dent peak used by PJM t o est ablis h t he net work s erv ice obl igation.
+Billing Provisions: T he NBT shall be i ncl uded i n dist ri buti on rat es charged t o c ustom ers t aki ng s ervic e under the Resi denti al , Small C&I and
+St reet Lighti ng cl ass rat e sc hedul es as desc ri bed bel ow.
+F or Rat es P D, HT, and E P (Large C&I class), a PJM Peak Load Contri buti on ( PLC) shal l be determ ined i n accordanc e wit h PJM rules and
+used t o calcul ate t he NBT. Custom er’s P LC will be c omput ed to the nearest kil owat t. T he NB T shal l be recov ered t hrough a s eparat e c harge
+l isted on cust om ers’ bil ls.
+T he surc harge shal l be c alc ul at ed on a s emi -annual bas is us ing t he formula bel ow:
+NBT (n ) = (C+E +I )/S (n ) * 1/ (1-T) where;
+NBT (n ) = t ransmissi on servic e c ost f or cust om er cl ass n i ncl uding over or under rec overy and assoc iat ed i nt erest.
+C – the t ransm issi on s ervic e charges i ncurred by PE CO under t he PJM open access t ransm issi on tarif f. T hese c osts s hall inc lude the
+f ol lowi ng:
+Regi onal T ransm issi on Expans ion Pl an charges, Ex pans ion Cost Recovery c harges, G enerati on Deact ivati on/Rel iability Must Run
+c harges and any costs to im pl ement t he Non -By passabl e T ransm ission c harge i n accordanc e wit h Dock et # P-2014- 2409362.
+E – T he est im ated over or under rec overy f rom t he applic able rec onci li at ion peri od.
+I – I nt erest on any over or under rec overy balanc e. I nterest s hall be comput ed mont hly at a 6% annual si mple interest rat e f rom t he mont h
+t hat the overc ol lect ion or underc ollecti on occ urs to t he mi d-point of t he rec overy period.
+n – rate class where: 1 = resi dent ial, 1a = RH, 2 = sm al l C&I, 3 = l arge C&I, 4 = st reet li ghti ng
+Res identi al – Rates R, RH (rec onc il ed as a group)
+Small C&I – Rat e GS
+Large C&I – Rates HT, P D, EP (rec onc il ed as a group)
+St reet Lighti ng – SLE, SLC, S LS, POL, A L, TLCL (rec onc il ed as a group)
+S – Esti mat ed dist ri but ion s ervic e sal es f or resi dent ial cl ass and t he street li ghti ng c lass in the appl icabl e appl icat i on period. For t he Sm all
+C&I class (Rat e GS ) it s hall be the estim at ed bi ll ed dem and f or t he applic abl e appl icat ion period. For t he Large C& I cl ass (Rat es PD, HT,
+and EP), the PJM P LC s hal l be used to c alc ul at e t he NBT . T he applic ati on peri od will be t he peri od when rat es wil l be in eff ect.
+T – T he c urrently effect ive gross rec ei pts t ax rat e.
+F ili ngs and Rec oncil iat i ons: The Company shal l s ubm it fi li ngs 15 days pri or to t he st art of the appl icat ion peri od begi nning J une 1, 201 5.
+T hereaft er, the Company wil l fi le a s urc harge adjustm ent 15 days pri or t o June 1 and Dec ember 1 of each year. If it is apparent that s uch
+m et hodol ogy would res ult in a si gnif icant over or under recov ery bef ore t he next 6 mont h fi li ng for an i ndivi dual cust om er cl ass, t he Company
+m ay propos e a rat e adjust ment 15 days pri or to the next eff ectiv e GSA rate adj ustm ent dat e (Effect ive date of Marc h 1, Sept ember 1). T he
+annual reconciliation statement will be made by December 31 each year.
+Current Non-By passabl e T ransm issi on Rat e:
+R= $.00414 per kil owatt hour (I )
+RH= $.00414 per k il owatt hour (I)
+Small C&I = $0.97 per bi ll ed distribution kW (D)
+Large C&I = $1.33 per k W bas ed on t he PJM PLC (I)
+St reet Lighti ng = $. 00041 per kilowatt hour (D)
+Iss ued M ay 15, 2025 Effective June 1, 2025
+
+PDF PAGE 49
+Supplement No. 5 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 48
+PECO Energy Company Supersedes Original Page No. 48
+PROVISION FOR THE RECOVERY OF ENERGY EFFICIENCY AND CONSERVATION PROGRAM COSTS (EEPC)
+Purpose: The purpose of this surcharge is to provide for full and current cost recovery of expenditures associated with the
+Company’s Phase IV Energy Efficiency and Conservation Program Costs (EEPC).
+Applicability: The surcharge shall be a calculated for billing purposes for all customers. The EEPC shall be charged to each rate schedule
+using the following units:
+Phase IV (C)
+Rates R, RS, RH: $0.00176/kWh
+Rates GS: $0.00392/kWh
+Rate SL-E, ($0.08)/location
+Rate SL-C ($0.07)/location
+Rate AL: ($0.02)/location
+Rate TLCL: ($0.00085)/kWh
+Rates HT, PD, EP: $1.18/kW based on PJM Peak Load Contribution (PLC)
+The Variable Distribution Service charges, for the residential rate schedules shall include the above listed EEPC surcharge.
+For the municipal lighting rate schedules, the applicable variable or fixed distribution service charges shall include the EEPC
+surcharge.
+For Rate GS, the EEPC shall be recovered through a separate variable distribution charge listed on customer’s bills. For
+Rates PD, HT and EP, a PJM PLC shall be determined in accordance with PJM rules and used to calculate the EEPC.
+Customer’s PLC will be computed to the nearest kilowatt. The EEPC shall be recovered through a separate variable distribution
+charge listed on customer bills.
+Calculation of EEPC Surcharge and the Over/Under Recovery:
+Billing Provisions: The surcharge and over/under recovery shall be calculated by rate schedule on an annual basis using the following
+formulas:
+EEPC(n) = (C-E)+(SWE) + (PDR) x (1)
+(BU) (1-T)
+C – The cost of the Energy Efficiency and Conservation Program includes: all expenditures, of the individual programs such as materials, equipment,
+installation, custom programs, evaluation measurement/verification, educating customers about availability to the extent not
+included in Consumer Education cost, not recovered through any separate recovery mechanism, and any other cost associated with
+implementation of the programs. Costs that relate to measures that are applicable to more than one rate class or that are shown to
+provide system-wide benefits, will be allocated to each class based on the ratio of class-specific projected program costs to the total
+projected program costs. The program costs are those approved by the PAPUC and audit costs for the Phase IV program ending
+May 31, 2026
+E - The over or (under) recovery from the applicable reconciliation period. Interest will not be applied to any over/under collections.
+SWE – The cost in dollars of the PaPUC’s Statewide Evaluator. These costs will be reconciled separately and added to the
+EEPC and will not be subject to the 2% spending limit of the EE&C Plan.
+PDR – The savings/costs from the portion of projected EE Peak Demand Resources (PDR) nominated into PJM’s Forward Capacity Market
+(FCM). The Company will apply any proceeds/deficiencies from nominated PDR to the appropriate customer classes. These costs will be
+reconciled separately and added to the EEPC and will not be subject to the 2% spending limit of the EE&C Plan.
+BU – The total Billing Units for the applicable recovery period.
+T – The current Pennsylvania gross receipts tax rate included in base rates.
+n - The rate class for which the EEPC is being calculated: 1 = Residential, 2 = Small C&I, 3 = LC&I, 4 = Street lighting
+Residential - Rates R, RH
+Small C&I – Rate GS
+Large C&I – Rates HT, PD, EP
+Street Lighting – Rates SLE, SLC, AL, TLCL
+Filings and Reconciliations: The estimated EEPC shall be filed by May 1 each year to be effective through May 31.
+The first surcharge, effective June 1, 2021 will contain “C” and “E” factors calculated as follows: The “C –factor” will have two components;
+one including Phase III costs and the other including Phase IV costs. The Phase IV component will be set using projected cos ts for the 12 month period
+from June 1, 2021 through May 31, 2022. The Phase III component will be set using any Phase III costs fr om projects started prior to the end of Phase III,
+but not yet billed as of June 1, 2021. For the “E -factor” over/under rate will include the Phase III costs for the 10 month period from June 1, 2020 through
+March 31, 2021.
+The second EEPC, effective June 1, 2022, will be calculated as follows: the “C -factor” will include Phase IV costs for the period June 1, 2022 through
+May 31, 2023 and the “E -factor” will include costs for 12 months comprising Phase III costs for the 2 mo nths of April and May 2021 and Phase IV
+costs for the 10 months of June 1, 2021 through March 31, 2022. Subsequent EEPC’s, effective June 1 each year will be calcul ated using a 12
+month “C factor” for the period June 1 through May 31 and an “E factor” for the period of April 1 through March 31.
+A reconciliation statement filing, in accordance with C.S. Title 66 §1307(e), will be made by April 30 of each year. The last Phase III
+only reconciliation statement will be for the 10 month period from June 1, 2020 through March 31, 2021. Phase IV reconciliation statements
+will be for the 12 month period April 1 through March 31 of each plan year. The first Phase IV reconciliation statement will cover the period
+April 1, 2021 through March 31, 2022 and include 2 months (April and May) of Phase III revenues and expenses and 10 months of Phase IV revenues and
+expenses (June through March). The EEPC mechanism is subject to annual audit review by the Bureau of Audits.
+(C) Denotes Change
+Issued April 30, 2025 Effective June 1, 2025
+
+PDF PAGE 50
+Supplement No. 9 to
+Tariff Electric Pa. P.U.C. No. 8
+Second Revised Page No. 49
+PECO Energy Company Supersedes First Revised Page No. 49
+DIST RIBUTION SYSTEM IMPROVEMENT CHARGE
+(DSIC)
+In addition to the net charges provided for in this Tariff, a value of 0.00 % will apply consistent with the Commission Order (C)
+dated October 22, 2015 at Docket No. P- 2015- 2471423, approving the DSIC.
+1. General Description
+A. Purpose: To recover the reasonable and prudent costs incurred to repair, improve, or replace eligible property which is
+completed and placed in service and recorded in the individual accounts, as noted below, between base rate cases and to provide
+the Company with the resources to accelerate the replacement of aging infrastructure, to comply with evolving regulatory requirements
+and to develop and implement solutions to regional supply problems.
+The costs of extending facilities to serve new customers are not recoverable through the DSIC.
+B. Eligible Property: The DSIC-eligible property will consist of the following:
+Poles and Tower (Account 364);
+Overhead conductor (Account 365) and underground conduit and conductors (Accounts 366 and 367);
+Line transformers (Account 368) and substation equipment (Account 362);
+Any fixture or device related to eligible property listed above, including insulators, circuit breakers, fuses, reclosers,
+grounding wires, crossarms and brackets, relays, capacitors, converters and condensers;
+Unreimbursed costs related to highway relocation projects where an electric distribution company must relocate
+its facilities; and
+Other related capitalized costs.
+C. Effective Date: The DSIC will become effective January 1, 2016.
+(C) Indicates Change
+Iss ued J une 20, 2025 Effective July 1, 2025
+
+PDF PAGE 53
+Supplement No. 7 to
+Tariff Electric Pa. P.U.C. No. 8
+Third Revised Page No. 52
+PECO Energy Company Supersedes Second Revised Page No. 52
+RATE R RESIDENCE SERVICE
+AVAILABILITY.
+Single phase service in the entire territory of the Company to the dwelling and appurtenances of a single private family (or to a multiple
+dwelling unit building consisting of two to five dwelling units, whether occupied or not), for the domestic requirements of its members when
+such service is supplied through one meter. Service is also available for related farm purposes when such service is supplied through one
+meter in conjunction with the farmhouse domestic requirements.
+Each dwelling unit connected after May 10, 1980 except those dwelling units under construction or under written contract for
+construction as of that date must be individually metered for their basic service supply. Centrally supplied master metered heati ng, cooling
+or water heating service may be provided if such supply will result in energy conservation.
+The term "residence service" includes service to: (a) the separate dwelling unit in an apartment house or condominium, but not the halls,
+basement, or other portions of such building common to more than one such unit; (b) the premises occupied as the living quarters of five
+persons or less who unite to establish a common dwelling place for their own personal comfort and convenience on a cost sharing basis; (c)
+the premises owned by a church, and primarily designated or set aside for, and actually occupied and used as, the dwelling place of a
+priest, rabbi, pastor, rector, nun or other functioning Church Divine, and the resident associates; (d) private dwellings in which a portion of
+the space is used for the conduct of business by a person residing therein; (e) A detached garage, located on the same premises as the
+customer’s dwelling unit, that is utilized solely for the domestic requirements of the dwelling unit’s members and is served through the same
+meter as the dwelling unit; (g) A detached garage, located on the same premises as the customer’s dwelling unit, that is utilized solely for
+the domestic requirements of the dwelling unit’s members and requires separate metering service as a result of wiring restric tions or legal
+requirements.
+The term does NOT include service to: (a) Premises institutional in character including Clubs, Fraternities, Orphanages or Homes; (b)
+premises defined as a rooming house or boarding house in the Municipal Code for Cities of the First Class enacted by Act of General
+Assembly; (c) a premises containing a residence unit but primarily devoted to a professional or other office, studio, or other gainful pursuit;
+(d) electric furnaces or welding apparatus other than a transformer type "limited input" arc welder wit h an input not to exceed 37 1/2
+amperes at 240 volts.
+CURRENT CHARACT ERISTICS. Standard single phase secondary service.
+MONT HLY RAT E T ABLE.
+FIXED DISTRIBUTION SERVICE CHARGE: $11.30
+FIXED DISTRIBUTION SERVICE CHARGE FOR FORMER OFF-PEAK METERS: $2.19
+VARIABLE DISTRIBUTION SERVICE CHARGE:
+All kWhs $0.09655 per kWh (I)
+ENERGY SUPPLY CHARGE:
+Refer to the Generation Supply Adjustment Procurement Class 1.
+T RANSMISSION SERVICE FOR CUST OMERS RECEIVING DEFAULT SERVICE: The Transmission Service Charge shall apply.
+MINIMUM CHARGE: The minimum charge per month will be the Fixed Distribution Service Charge.
+STATE TAX ADJUSTMENT CLAUSE, DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC), NUCLEAR DECOMMISSIONING
+COST ADJUSTMENT, UNIVERSAL SERVICE FUND CHARGE, NO N -BYPASSABLE TRANSMISSION CHARGE , PROVISION FOR THE
+RECOVERY OF ENERGY EFFICIENCY AND CONSERVATION PROGRAM COSTS, FIBER AFFILIATE REVENUE SURCHARGE,
+INCREMENTAL COVID- 19 RELATED UNCOLLECTIBLE SURCHARGE, AND PROVISION FOR THE RECOVERY OF CONSUMER
+EDUCATION PLAN COSTS APPLY TO THIS RATE.
+PAYMENT TERMS. Standard.
+(I) Denotes Increase
+Iss ued M ay 15, 2025 Effective June 1, 2025
+
+PDF PAGE 58
+Supplement No. 7 to
+T ariff Electric Pa. P.U.C. No. 8
+Second Revised Page No. 57
+PECO Energy Company Supersedes First Revised Page No. 57
+RATE-GS GENERAL SERVICE
+AVAILABILITY.
+Service for offices, professional, commercial or industrial establishments, governmental agencies, f arms and other applications outside the
+scope of the Residence Service rate schedules.
+Transformed service from the Company’s distribution system where the company installs, owns, and maintains any transforming, switching
+and other receiving equipment required.
+For service configurations that are nominally 120/208 volts, 3 phase, 4 wires – If either the service capacity or the parallel-
+generating capacity exceeds 750 kVA for transformers located inside the building, the only rate option available to the customer will
+be Rate HT. If either the service capacity or the parallel-generating capacity exceeds 750 kVA but remains at or below 1,500 kVA
+for transformers outside the building, the customer may request service at 277/480 volts, 3- phase 4- wires from transformers located
+outside the building. Otherwise the only rate option available to the customer will be Rate HT.
+For service configurations that are nominally 277/480 volts, 3 phase, 4 wires - If either the service capacity or the parallel-
+generating capacity exceeds either 750 kVA for transformers located inside the building or 1,500 kVA for transformers located
+outside the building, the only rate option available to the customer will be Rate HT.
+CURRENT CHARACT ERISTICS.
+Standard single- phase or polyphase secondary service.
+MONT HLY RAT E T ABLE.
+FIXED DISTRIBUTION SERVICE CHARGE:
+$ 24. 47 for single- phase service without demand measurement, or
+$ 31.20 for single- phase service with demand measurement, or
+$ 74. 66 for polyphase service.
+VARIABLE DISTRIBUTION SERVICE CHARGE:
+$11.34 per kW of billed demand (D)
+($0.0006) per kWh for all kWh
+ENERGY EFFICIENCY CHARGE: $0.00392 per kWh
+ENERGY SUPPLY CHARGE: Refer to the Generation Supply Adjustment Procurement Classes 2 and ¾.
+T RANSMISSION SERVICE FOR CUST OMERS RECEIVING DEFAULT SERVICE: The Transmission Service Charge shall
+apply.
+STATE TAX ADJUSTMENT CLAUSE, DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC), NUCLEAR
+DECOMMISSIONING COST ADJUSTMENT, NON- BYPASSABLE TRANSMISSION CHARGE, PROVISION FOR THE
+RECOVERY OF ENERGY EFFICIENCY AND CONSERVATION PROGRAM COSTS, FIBER AFFILIATE REVENUE
+SURCHARGE, INCREMENTAL COVID- 19 RELATED UNCOLLECTIBLE SURCHARGE AND PROVISION FOR THE RECOVERY
+OF CONSUMER EDUCATION PLAN COSTS APPLY TO T HI S
+RATE.
+DET ERMINAT ION OF BILLING DEMAND.
+The billing demand may be measured where consumption exceeds 1,100 kilowatt-hours per month for three consecutive months;
+or where load tests indicate a demand of five or more kilowatts; or where the customer requests demand measurement. Measured
+demands will be determined to the nearest 0.1 of a kilowatt but will not be less than 1.2 kilowatts, and will be adjusted for power
+factor in accordance with the Rules and Regulations.
+For those customers with demand measurement the billing demand will be determined as follows:
+(a) For customers with demand up to 500 kW, the billing demand shall be the measured demand, with a minimum billing
+demand of 1.2 kW.
+(b) For customers with measured demand or maximum demand greater than 500 kW, the billing demand shall be the greater
+of (i) the measured demand, or (ii) 40% of the maximum contract demand.
+If a measured demand customer has less than 1,100 monthly kilowatt-hours of use, the monthly billing demand will be the
+measured demand or the metered monthly kilowatt-hours divided by 175 hours, whichever is less, but not less than 1.2 kilowatts.
+For those customers without demand measurement, the monthly billing demand will be computed by dividing the metered
+monthly kilowatt-hours by 175 hours. The computed demand will be determined to the nearest 0.1 of a kilowatt, but will not be less
+than 1.2 kilowatts.
+MINIMUM CHARGE.
+The monthly minimum charge for customers without demand measurement will be the Fixed Distribution Service Charge, pl us t he
+Variable Distribution Service Charge per KW of minimum billing demand as described above. The monthly minimum charge for
+customers with demand measurement will be the Fixed Distribution Service Charge, plus per KW of billing demand. In addition t o
+the above, for customers in Procurement Class ¾ charges will be assessed on PJM’s reliability pricing model.
+(D) Denot es Dec reas e
+Iss ued M ay 15, 2025 Effective June 1, 2025
+
+PDF PAGE 76
+Tariff Electric Pa. P.U.C. No. 8
+PECOEnergyCompany OriginalPageNo.75
+PILOT CAPACITY RESERVATION RIDER (CRR)
+PURPOSE.
+This Rider sets forth the eligibility, terms and conditions applicable to Customers who operate generation in parallel with the Company
+distribution system and for whom the Company needs to reserve el ectric capacity to serve their load when the customer’s generation is
+offline.
+This Rider also sets forth the eligibility, terms and conditions applicable to Customers who want to reserve capacity in excess of their
+present demand from the PECO distribution system for new business growth or expansion.
+DEFINITIONS.
+Demand and billing demand are defined in tariff sections “Definitions of Terms and Explanation of Abbreviations” and Section 15 of “Rules
+and Regulations”.
+(1) Ability to Shed Load – The capability of the customer to reduce or interrupt its total connected load as a means of offsetting some
+or all of the loss of its Parallel Generation, in the event that its Parallel Generation goes offline or is not operating to full capacity.
+(2) Capacity Reservation – The contracted amount of firm electrical distribution capacity, expressed in kW, reserved by the Company
+solely to meet the capacity requirement for which a customer has contracted under the CRR.
+(3) CRR Level –
+a. For customers with Parallel Generation, the portion of their Capacity Reservation equal to the contracted percentage of
+the Generator Nameplate Capacity of their customer-owned Parallel Generation, determined pursuant to the provisions
+of the section of this Rider titled “Capacity Reservation vs. CRR Level Designation.”
+b. For customers seeking to reserve capacity for new business growth or expansion, the portion of their Capacity
+Reservation for which they have contracted under the CRR for that purpose.
+(4) “Failure To Shed Load” Penalty – A charge assessed to a customer with a Capacity Reservation, CRR Level, or both that were set
+in whole or part based upon Ability to Shed Load when that customer’s generator goes offline and the customer does not shed
+load as agreed upon.
+(5) Generator Nameplate Capacity – The maximum ra ted output of a generator under specific conditions designated by the
+manufacturer.
+(6) Operational Flexibility in Operation of Generation – The capability of the customer to flexibly operate multiple generating facilities
+as a means of offsetting some or all of the loss of its Parallel Generation, in the event that its Parallel Generation goes off line or is
+not operating to full capacity.
+(7) Parasitic Load – The power consumed by the equipment supporting the operation of a customer’s generation.
+(8) Parallel Generation – Non-utility generating facility(s) approved for Parallel Operation.
+(9) Parallel Operation – Occurs when a non-utility generating facility(s) interconnected with and operates while connected to PECO’s
+distribution system, where the potential exists for electricity to flow from said generating facility(s) into PECO’s electric distribution
+system.
+(10) Uncovered Demand – The difference between the customer’s CRR Level and the customer’s Capacity Reservation
+APPLICABILITY/AVAILABILITY.
+Applicable to customers, with customer generating facilities that have generating capacity of 100 kW or greater and are first placed online, or
+are granted approval for Parallel Operation, after January 1, 2016. This includes but is not limited to Qualifying Facilities or Small Power
+Producers and cogenerators as defined in the Public Utility Regulatory Policies Act, whose electrical requirements are partiall y or wholly
+provided by facilities not owned by the Company and when such facilities operate in parallel with the Company’s distribution system. All
+such customers will be supplied under the provisions of this rider, the customer’s applicable Base Rate, and other applicable riders.
+Customers who wish to reserve available electrical capacity in excess of their present demand for new business growth or expansion may
+do so under this rider.
+Issued December 18, 2024 Effective January 1, 2025
+
+PDF PAGE 77
+Tariff Electric Pa. P.U.C. No. 8
+PECOEnergyCompany OriginalPageNo.76
+PILOT CAPACITY RESERVATION RIDER (CRR) continued
+NOTICE BEFORE COMMENCEMENT OF CRR SERVICE.
+The customer shall not commence initial operation of any other source of supply in parallel with the Company’s distribution lines until written
+permission is given by the Company for such parallel operation. Before a customer is placed on the CRR, the Company must provide
+written notice to the customer that includes the Capacity Reservation under the CRR and informs the customer that, upon receiving service
+under the CRR, capacity beyond this amount may not be available to serve the customer. The Company shall have the right to inspect the
+customer’s installation prior to providing such written permission, and at any reasonable time thereafter in accordance with Tariff Rule 9.3.
+CAPACITY RESERVATION VS. CRR LEVEL DESIGNATION.
+The maximum firm capacity available to be reserved will be determined by the Company based upon its review of capacity available on its
+system at the time that a request for Capacity Reservation is made.
+In all cases, if the requested electric capacity is not available the customer shall pay all cost to the Company of any construction necessary
+to meet the customer’s Capacity Reservation requirement. To the extent that the requested capacity is needed for new business growth or
+expansion, the standard revenue test will apply when calculating the cost to be paid by the customer.
+The Company must reserve capacity for a customer based upon an amount that the Company and customer agree accurately reflects the
+maximum demand that the Company must stand ready to serve to that customer.
+For customers generating in parallel with the Company’s distribution system:
+For billing purposes, PECO will set the associated CRR Level as designated below:
+For customers who have Generator Nameplate Capacity of greater than 100 kW but less than or equal to 5,000 kW, the
+CRR Level will be 60% of the Generator Nameplate Capacity.
+For customers who have Generator Nameplate Capacity of greater than 5,000 kW but less than or equal to 10,000 kW,
+the CRR Level will be 50% of the Generator Nameplate Capacity.
+Any customer, regardless of size of load or generation, may initiate negotiation as set forth below to designate the CRR
+at a level other than these levels.
+Batteries and other electrical storage shall not be deemed to be generators for purpose of the CRR, and the nameplate capacity
+of storage or battery equipment shall not be included as, or treated as equivalent to, Parallel Generation for purposes of
+determining a customer’s Capacity Reservation or CRR Level.
+For customers who want to reserve capacity for new business growth or expansion, both the Capacity Reservation and the associated CRR
+Level will be determined by negotiation.
+Issued December 18, 2024 Effective January 1, 2025

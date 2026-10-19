@@ -1,0 +1,258 @@
+{
+  "utility": "peco",
+  "jurisdiction": "PA",
+  "reviewed_on": "2026-10-19",
+  "sources": [
+    {
+      "id": "2025-01",
+      "url": "https://www.peco.com/cdn/assets/v3/assets/blt1b5616c79bacadb4/blt9448ea371fcf175a/67784c8b1931fe6ea36c46e3/Current_Electric_Tariff_Eff_Jan_1_2025.pdf",
+      "pdf_sha256": "e7c91f9e4770bc38a20f30a868d0e8f159f439b44d2498100ee7b16593376e77",
+      "pdf_pages": 97,
+      "selected_pdf_pages": [
+        8,
+        9,
+        27,
+        28,
+        29,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        59,
+        77,
+        78,
+        12
+      ],
+      "excerpt": "2025-01-selected.txt",
+      "excerpt_sha256": "71cf3f36573054e576c6248bde86a748cf1b9a7fee933e03af68c64b5084407c",
+      "scope": "Filed sheets applied only from each printed effective date; no backdating from compilation dates."
+    },
+    {
+      "id": "2025-04",
+      "url": "https://www.peco.com/cdn/assets/v3/assets/blt1b5616c79bacadb4/blt9448ea371fcf175a/67e3ef1cac554b677e7fb714/Current_Electric_Tariff_Eff_April_1_2025.pdf?branch=prod_alias",
+      "pdf_sha256": "494815a395b71d63120495c092749609370eb945db40cfb42d43570e5b3f8862",
+      "pdf_pages": 96,
+      "selected_pdf_pages": [
+        38,
+        39,
+        40,
+        46,
+        53
+      ],
+      "excerpt": "2025-04-selected.txt",
+      "excerpt_sha256": "b2accd33b7ef3c3eb8486a4a36ca7be4d9e53c97b9a7cc4c74bffa88cdd38a2d",
+      "scope": "Filed sheets applied only from each printed effective date; no backdating from compilation dates."
+    },
+    {
+      "id": "2025-09",
+      "url": "https://www.peco.com/cdn/assets/v3/assets/blt1b5616c79bacadb4/blt9448ea371fcf175a/68b0cc75b3827834f7c7c272/Current_Electric_tariff_eff_Sept_1_2025.pdf",
+      "pdf_sha256": "a31bbfa7e4377e410931df9e52cffc30d831539cbac77c40cac974dfaa6599fc",
+      "pdf_pages": 96,
+      "selected_pdf_pages": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        47,
+        48,
+        49,
+        50,
+        53,
+        58,
+        76,
+        77
+      ],
+      "excerpt": "2025-09-selected.txt",
+      "excerpt_sha256": "3df119bdf2fd15c8aa193fad2d5540a151b707ed70b10a060101d713a808f165",
+      "scope": "Filed sheets applied only from each printed effective date; no backdating from compilation dates."
+    },
+    {
+      "id": "2026-01",
+      "url": "https://www.peco.com/cdn/assets/v3/assets/blt1b5616c79bacadb4/blt9448ea371fcf175a/695440103369913565ea1e0f/Current_Electric_Tariff_effective_January_1_2026.pdf?branch=prod_alias",
+      "pdf_sha256": "163e19a7a6bdfd247fb1f497e3f8636eb372f190ff404ad6096f3abd2eb62195",
+      "pdf_pages": 96,
+      "selected_pdf_pages": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        53,
+        58,
+        11
+      ],
+      "excerpt": "2026-01-selected.txt",
+      "excerpt_sha256": "cb1faa0f9c7ea751be15a7183aa96e6025760e6028dbce7c2f0dfde83620bb09",
+      "scope": "Filed sheets applied only from each printed effective date; no backdating from compilation dates."
+    },
+    {
+      "id": "pjm-calendar-2025",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/2025-business-calendar.pdf",
+      "scope": "Filed sheets applied only from each printed effective date; no backdating from compilation dates.",
+      "pdf_sha256": "242353a93737aceb91391028bf40b30ce8c89cde7c205ddea67edc34c61db9da",
+      "pdf_pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "excerpt": "pjm-2025-selected.txt",
+      "excerpt_sha256": "bdc96bc5983978d591f87b107832ac3ef5b35f7b43598cff9aaa842b1ade372c"
+    },
+    {
+      "id": "pa-sales-tax",
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax",
+      "scope": "6% PA sales tax; Philadelphia additional2%; residential electricity exempt."
+    },
+    {
+      "id": "2026-10",
+      "url": "https://www.peco.com/cdn/assets/v3/assets/blt1b5616c79bacadb4/bltc70b88d49d2a1491/6abbe397d463362a37c0f102/Current_Electric_tariff_eff_Oct_1_2026_(003).pdf?branch=prod_alias",
+      "pdf_sha256": "ecaf858ff150a0b238ab9bcf896a0811c46c763ac00d1efd58d2514d3fc020ec",
+      "pdf_pages": 96,
+      "selected_pdf_pages": [
+        1,
+        2,
+        26,
+        28,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        53,
+        58,
+        11
+      ],
+      "excerpt": "2026-10-selected.txt",
+      "scope": "Official effective-dated tariff/rider sheets; use printed effective date, not compilation date.",
+      "excerpt_sha256": "23aa968db8f05bbb835c0a32cb110b15f7dc84cfc654c668e660cab9b861f77f"
+    },
+    {
+      "id": "pjm-2026",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/2026-business-calendar.pdf",
+      "pdf_sha256": "37cb5e6f3ae48660ff7fa63f7e349d28a87f3b4adb1163d9cf6812f09d50016e",
+      "pdf_pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "excerpt": "pjm-2026-selected.txt",
+      "scope": "PJM 2026 business holidays; July4 Saturday is listed without Friday substitution.",
+      "excerpt_sha256": "624bf5d835436a5097e44ade0de6415a2d480176eac4f4cd04effb5a349e5d1c"
+    },
+    {
+      "id": "2026-04",
+      "url": "https://www.peco.com/cdn/assets/v3/assets/blt1b5616c79bacadb4/blt9448ea371fcf175a/69cbdc20a21ea55b33ba7d35/Current_Electric_tariff_effective_April_1_2026.pdf",
+      "pdf_sha256": "7c063450895f33d78c51b44e464412c50e217ec70aa9861a337deae4e2e0d622",
+      "pdf_pages": 96,
+      "selected_pdf_pages": [
+        1,
+        2,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        53,
+        58
+      ],
+      "excerpt": "2026-04-selected.txt",
+      "scope": "Official effective-dated tariff/rider sheets; use printed effective date, not compilation date.",
+      "excerpt_sha256": "2ac62ba9f55db3e676fcacfe4408a6fb66fabb38664758b5082cef863483838e"
+    },
+    {
+      "id": "2026-07-cleanup",
+      "url": "https://www.puc.pa.gov/pcdocs/1937866.pdf",
+      "pdf_sha256": "6904fdf857952cb2e73952f83baf43758d8049070f57f15e2b67fb8df9a26598",
+      "pdf_pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "excerpt": "2026-07-cleanup-selected.txt",
+      "scope": "Official effective-dated tariff/rider sheets; use printed effective date, not compilation date.",
+      "excerpt_sha256": "b01d7dabacfbc4441c9a3162e36a1f5aabf70cd155f0b3d44fc31d2a3230df0c"
+    },
+    {
+      "id": "2026-ptc",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt1b5616c79bacadb4/bltf7c1eb06cdfe6ab9/6a0e7050df378b4731251e82/2026_RESIDENTIAL_Final_Electric_PTC_Effective_06-01-2026.pdf",
+      "pdf_sha256": "a378ecda31ac2beca27d1bda249509f1d529c01acfd0787a83ad147d648a8abc",
+      "pdf_pages": 3,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "excerpt": "2026-ptc-selected.txt",
+      "scope": "Official effective-dated tariff/rider sheets; use printed effective date, not compilation date.",
+      "excerpt_sha256": "e1c4f1291e45b822c07ec57b11ee90501ac5d923a657f5f80e0a8b46d0b4c631"
+    },
+    {
+      "id": "2026-09",
+      "url": "https://www.peco.com/cdn/assets/v3/assets/blt1b5616c79bacadb4/bltf507baf8e5597bc1/6a8df16382f57bbb562dd5b2/Current_Electric_Tariff_Sept_1_2026_(003).pdf?branch=prod_alias",
+      "pdf_sha256": "ed294dc6ecb4fdd92fa7d3026211cb23a135cddf7e4e6d862344f1bb81f25587",
+      "pdf_pages": 96,
+      "selected_pdf_pages": [
+        36,
+        37,
+        50,
+        53,
+        58
+      ],
+      "excerpt": "2026-09-selected.txt",
+      "scope": "Official effective-dated tariff/rider sheets; use printed effective date, not compilation date.",
+      "excerpt_sha256": "f09570585b57c3689ea3c23d754ba6b3d260d6aebe020a79af4145e248ae4c4a"
+    }
+  ],
+  "capacity_transmission": "GSA includes energy, capacity, ancillary services, losses and AEPS. TSC separately recovers default-supply network transmission. NBT is embedded distribution. No additional wholesale LMP/PLC/NSPL charge.",
+  "rate_coverage": "2025-01-01 through2026-10-19, reviewed2026-10-19. Regular26\u201335-day cycles; only DSIC crossings supported (bills-rendered basis). Other applicable component crossings and partial/extended cycles reject.",
+  "distribution_derivation": {
+    "R_fixed_base": 11.25,
+    "R_variable_base": 0.09465,
+    "GS_demand_base": 10.63,
+    "basis": "Strip the explicitly included Jan2025 ICUS/FARS/NDCA/USFC/NBT/EEPC and consumer education from printed R and GS rates; recompose dated riders once. Jun2025 R .09655 and GS11.34 independently agree. Dec2025 NBT changes recompose R .09649 and GS11.24; Jan2026 clean-up agrees after removing ending ICUS/FARS and changing USFC. Jan2026 rates are NOT applied to2025."
+  },
+  "2026_changes": {
+    "January": "USFC .00287/kWh; ICUS/FARS0; STAS credit .04%; R .10276/kWh and fixed11.30; GS11.50/kW",
+    "April": "R consumer education .04/month (fixed11.29); DSIC .11%",
+    "June": "GSA R .10785/GS .10728; TOU R(.31430,.05767,.08362), GS(.26264,.06010,.08835) peak/super-off/off; TSC R .00974, GS2.20; NBT R .00322, GS .85; EEPC R .00232, GS .00121; R distribution .10246 and GS11.48/kW",
+    "July": "ICUS R -.00009; FARS R -.00001; R distribution .10236; GS unchanged; DSIC .42%",
+    "October": "R/GS ICUS/FARS unchanged; DSIC1.05%"
+  },
+  "percentage_charge_order": "STAS -.0004 times distribution base and riders, excluding GSA/TSC. DSIC applied to distribution plus STAS by bill date (sheet50). Ordinary commercial sales tax after both; residential exempt."
+}

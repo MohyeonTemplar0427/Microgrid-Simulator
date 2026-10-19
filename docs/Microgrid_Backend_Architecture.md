@@ -674,3 +674,11 @@ settings/results/download routes: private PJM inputs or derived CIEP results are
 not exposed by hosted mode. The stable engine is not automatically promoted.
 See [coverage matrix](Regional_Utility_Coverage.md),
 [validation driver](Regional_Validation.md) and the three utility source documents.
+
+PECO adds a separately accepted `provisional_cycles_v1` account mode for
+partial/extended periods and non-DSIC component crossings whose operational
+allocation rules remain unverified. Its versioned model uses the same numeric
+and symbolic charge expressions, records assumption provenance per bill and
+component, and labels both the comparison objective and savings provisional.
+It does not extend verified price coverage, enable exports or change old saved
+requests' verified-only default. See [PECO allocation assumptions](PECO_Provisional_Allocation.md).

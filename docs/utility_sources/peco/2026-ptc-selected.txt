@@ -1,0 +1,68 @@
+PDF PAGE 1
+Price to Compare (PTC) Table DISCLAIMER
+Disclaimer
+This document does not include factors/adders such as surcharges and sales taxes applicable to PECO distribution service. The PTC
+contained herein contains best-known values and will be updated as needed in accordance with PECO’s Default Service Plan (“DSP
+VI”) Order at Docket No. P-2024-3046008.
+PECO does NOT make any warranty, express or implied, or assume any legal liability for the accuracy, completeness, timeliness or
+usefulness of the data contained in this document. PECO expressly disclaims any and all liability for inaccuracies, errors, omissions,
+or lack of timeliness with respect to the information contained herein, and for any damages of any nature (including direct, indirect,
+incidental, and consequential) arising in connection with the use of the information contained herein.
+
+PDF PAGE 2
+Updated as of 5/15/2026
+PECO Price to Compare Effective December 1, 2025 through May 31, 2026
+(ACTUAL)
+Procurement Class 1 - Residential Customers
+Price to Compare Standard Generation Charge Transmission Charge
+Residential Rate Classes (cents/kWh) (1) (cents/kWh) (2) (cents/kWh) (3)
+(A) = (B) + (C) (B) (C)
+Residential (R) all kWhs 11.024 10.237 0.787
+Residential Heating (RH) all kWhs 11.024 10.237 0.787
+PECO Price to Compare Effective June 1, 2026 through November 30, 2026
+(ACTUAL)
+Procurement Class 1 - Residential Customers
+Price to Compare Standard Generation Charge Transmission Charge
+Residential Rate Classes (cents/kWh) (1) (cents/kWh) (2) (cents/kWh) (3)
+(A) = (B) + (C) (B) (C)
+Residential (R) all kWhs 11.759 10.785 0.974
+Residential Heating (RH) all kWhs 11.759 10.785 0.974
+Notes:
+(1) Price to Compare (PTC) includes an adjustment for Gross Receipts Tax of 5.90% effective 01/01/2012.
+(2) Alternative Energy Portfolio Standard (AEPS) Charge is the electric service charge for recovery of the costs associated with compliance with the AEPS Act.
+Effective June 1, 2013, AEPS is included in the Generation Charge per the Pennsylvania Public Utility Commission (PUC) order (Docket No. P-2012-2283641).
+(3) Transmission Charge is based on the PUC Orders, Docket No. R-2012-2318065, entered on September 27, 2012 and Docket No. P-2014-2409362, entered on December 4, 2014.
+
+PDF PAGE 3
+Updated as of 5/15/2026
+PECO Time-of-Use (TOU) Pricing Option Effective December 1, 2025 through May 31, 2026
+(ACTUAL)
+Procurement Class 1 - Residential Customers
+TOU Pricing Option TOU Generation Charge Transmission Charge
+Residential Rate Classes (cents/kWh) (1), (4), (5) (cents/kWh) (2) (cents/kWh) (3)
+(A) = (B) + (C) (B) (C)
+Peak kWhs 32.747 31.960 0.787
+Residential (R) Off-Peak kWhs 8.382 7.595 0.787
+Super Off-Peak kWhs 6.061 5.274 0.787
+Peak kWhs 32.747 31.960 0.787
+Residential Heating (RH) Off-Peak kWhs 8.382 7.595 0.787
+Super Off-Peak kWhs 6.061 5.274 0.787
+PECO Time-of-Use (TOU) Pricing Option Effective June 1, 2026 through November 30, 2026
+(ACTUAL)
+Procurement Class 1 - Residential Customers
+TOU Pricing Option TOU Generation Charge Transmission Charge
+Residential Rate Classes (cents/kWh) (1), (4), (5) (cents/kWh) (2) (cents/kWh) (3)
+(A) = (B) + (C) (B) (C)
+Peak kWhs 32.404 31.430 0.974
+Residential (R) Off-Peak kWhs 9.336 8.362 0.974
+Super Off-Peak kWhs 6.741 5.767 0.974
+Peak kWhs 32.404 31.430 0.974
+Residential Heating (RH) Off-Peak kWhs 9.336 8.362 0.974
+Super Off-Peak kWhs 6.741 5.767 0.974
+(1) Price to Compare (PTC) includes an adjustment for Gross Receipts Tax of 5.90% effective 01/01/2012.
+(2) Alternative Energy Portfolio Standard (AEPS) Charge is the electric service charge for recovery of the costs associated with compliance with the AEPS Act.
+Effective June 1, 2013, AEPS is included in the Generation Charge per the Pennsylvania Public Utility Commission (PUC) order (Docket No. P-2012-2283641).
+(3) Transmission Charge is based on the PUC Orders, Docket No. R-2012-2318065, entered on September 27, 2012 and Docket No. P-2014-2409362, entered on December 4, 2014.
+(4) Time-of-Use pricing option was implemented effective September 1, 2021 based on PUC’s Opinion and Order in PECO’s Fifth Default Service Plan (“DSP V”) at Docket No. P-2020-3019290.
+(5) Peak period refers to 2:00 p.m. through 6:00 p.m., Monday through Friday, excluding PJM holidays; Super Off-Peak period refers to midnight (12 a.m.) through 6 a.m., every day;
+Off-Peak period refers to all other hours that are not Peak and Super Off-Peak periods.

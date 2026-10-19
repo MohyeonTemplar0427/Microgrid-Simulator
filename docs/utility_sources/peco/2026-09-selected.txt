@@ -1,0 +1,214 @@
+PDF PAGE 36
+Supplement No. 29 to
+Tariff Electric Pa. P.U.C. No. 8
+Third Revised Page No. 35
+PECO Energy Company Supersedes Second Revised Page No. 35
+INCREMENTAL COVID-19 RELATED UNCOLLECTIBLE EXPENSE (ICUS)
+Purpose: The purpose of this surcharge is to refund to customers amounts of incremental COVID -19 related uncollectible
+accounts embedded in PECO’s current rates.
+Applicability: The surcharge shall be calculated to the nearest one -hundredth of a cent for billing purposes for all R and
+RH customers, for customers on all other rates it shall be the nearest one cent. The ICUS will become effective upon the
+effective date of rates for the electric distribution base rate case at Docket No. R -2024-3046931 for a period of one year.
+The ICUS shall be credited to each rate schedule as follows:
+Rate R ($0.00009)/kWh (C)
+Rate RH ($0.00030)/kWh
+Rate GS $0.00/billed kW
+Rate PD ($0.03)/billed kW
+Rate HT $0.00/billed kW
+Rate EP $0.00/billed kW
+Rate SL-E $0.00/location
+Rate SL-C $0.00/location
+Rate TLCL $0.01/location
+Rate AL $0.00/location
+Rate POL $0.14lamp
+Rate SL-S $0.06/lamp
+The Variable Distribution charges, for the above rate schedules shall include the above listed ICUS credits. For the lighting rate
+schedules, the applicable location or fixed distribution service charges shall include the ICUS credit.
+Calculation of ICUS:
+Billing Provisions: The credit was calculated by rate schedule using the following formula:
+ICUS = R(n)
+BU(n)
+R(n) - The total amount to be refunded to customers by rate class.
+BU(n) – The total estimated annual Billing Units for the rate class during the projected period when rates will be in effect.
+Filing and Reconciliations: The ICUS will be reconciled at the end of the recovery period above. A final reconciliation statement will be
+filed within 30 days after completion of the final over/under collection refund/recovery. The Company may file interim rate adjustments to
+eliminate any over or under recovery of the surcharge. Such adjustments would be filed on at least 10 days’ notice. The ICUS revenues and
+reconciliation will be subject to audit by the Commission’s Bureau of Audits.
+(C) Denotes Change
+Issued June 16, 2026 Effective July 1, 2026
+
+PDF PAGE 37
+Supplement No. 30 to
+Tariff Electric Pa. P.U.C. No. 8
+Third Revised Page No. 36
+PECO Energy Company Supersedes Second Revised Page No. 36
+FIBER AFFILIATE REVENUE SURCHARGE (FARS)
+Purpose: The purpose of this surcharge is to refund to customers amounts for network fees that the Company collected from former
+affiliates for use of its fiber network.
+Applicability: The surcharge shall be calculated to the nearest one -hundredth of a cent for billing purposes for all R and RH customers, for
+customers on all other rates it shall be the nearest one cent. The FARS will become effective upon the effective date of rat es for the electric
+distribution base rate case at Docket No. R -2024-3046931 for a period of one year. The FARS shall be credited to each rate schedule as follows:
+Rate R ($0.00001)/kWh (C)
+Rate RH ($0.00008)/kWh
+Rate GS $0.00/billed kW
+Rate PD $0.12/billed kW
+Rate HT $0.00/billed kW
+Rate EP ($0.01)/billed kW
+Rate SL-E $0.05/location
+Rate SL-C $0.03/location
+Rate TLCL $0.27/location
+Rate AL $0.01/location
+Rate POL $4.86lamp
+Rate SL-S $1.76/lamp
+The Variable Distribution charges, for the above rate schedules shall include the above listed FARS credits. For the lighting rate
+schedules, the applicable location or fixed distribution service charges shall include the FARS credit.
+Calculation of FARS:
+Billing Provisions: The credit was calculated by rate schedule using the following formula:
+FARS = R(n)
+BU(n)
+R(n) - The total amount to be refunded to customers by rate class.
+BU(n) – The total estimated annual Billing Units for the rate class during the projected period when rates will be in effect.
+Filing and Reconciliations: The FARS will be reconciled at the end of the recovery period above. A final reconciliation statement will be
+filed within 30 days after completion of the final over/under collection refund/recovery. The Company may file interim rate adjustments to
+eliminate any over or under recovery of the surcharge. Such adjustments would be filed on at least 10 days’ notice. The FARS credits and
+reconciliation will be subject to audit by the Commission’s Bureau of Audits.
+(C) Denotes Change
+Issued June 16, 2026 Effective July 1, 2026
+
+PDF PAGE 50
+Supplement No. 31 to
+Tariff Electric Pa. P.U.C. No. 8
+Fourth Revised Page No. 49
+PECOEnergyCompany SupersedesThirdRevisedPageNo.49
+DISTRIBUTION SYSTEM IMPROVEMENT CHARGE
+(DSIC)
+In addition to the net charges provided for in this Tariff, a value of 0.42 % will apply consistent with the Commission Order (C)
+dated October 22, 2015 at Docket No. P-2015-2471423, approving the DSIC.
+1. General Description
+A. Purpose: To recover the reasonable and prudent costs incurred to repair, improve, or replace eligible property which is
+completed and placed in service and recorded in the individual accounts, as noted below, between base rate cases and to provide
+the Company with the resources to accelerate the replacement of aging infrastructure, to comply with evolving regulatory requirements
+and to develop and implement solutions to regional supply problems.
+The costs of extending facilities to serve new customers are not recoverable through the DSIC.
+B. Eligible Property: The DSIC-eligible property will consist of the following:
+Poles and Tower (Account 364);
+Overhead conductor (Account 365) and underground conduit and conductors (Accounts 366 and 367);
+Line transformers (Account 368) and substation equipment (Account 362);
+Any fixture or device related to eligible property listed above, including insulators, circuit breakers, fuses, reclosers,
+grounding wires, crossarms and brackets, relays, capacitors, converters and condensers;
+Unreimbursed costs related to highway relocation projects where an electric distribution company must relocate
+its facilities; and
+Other related capitalized costs.
+C. Effective Date: The DSIC will become effective January 1, 2016.
+(C) Indicates Change
+Issued June 18, 2026 Effective July 1, 2026
+
+PDF PAGE 53
+Supplement No. 32 to
+Tariff Electric Pa. P.U.C. No. 8
+Fourteenth Revised Page No. 52
+PECO Energy Company Supersedes Thirteenth Revised Page No. 52
+RATE R RESIDENCE SERVICE
+AVAILABILITY.
+Single phase service in the entire territory of the Company to the dwelling and appurtenances of a single private family (or to a multiple
+dwelling unit building consisting of two to five dwelling units, whether occupied or not), for the domestic requireme nts of its members when
+such service is supplied through one meter. Service is also available for related farm purposes when such service is supplie d through one
+meter in conjunction with the farmhouse domestic requirements.
+Each dwelling unit connected after May 10, 1980 except those dwelling units under construction or under written contract for
+construction as of that date must be individually metered for their basic service supply. Centrally supplied master metered heating, cooling
+or water heating service may be provided if such supply will result in energy conservation.
+The term "residence service" includes service to: (a) the separate dwelling unit in an apartment house or condominium, but not the halls,
+basement, or other portions of such building common to more than one such unit; (b) the premises occupied as the living quarters of five
+persons or less who unite to establish a common dwelling place for their own personal comfort and convenience on a cost shari ng basis; (c)
+the premises owned by a church, and primarily designated or set aside for, and actually occupied and used as, the dwelling place of a
+priest, rabbi, pastor, rector, nun or other functioning Church Divine, and the resident associates; (d) private dwellings in which a portion of
+the space is used for the conduct of business by a person residing therein; (e) A detached garage, located on the same premises as the
+customer’s dwelling unit, that is utilized solely for the domestic requirements of the dwelling unit’s members and is served through the same
+meter as the dwelling unit; (g) A detached garage, locate d on the same premises as the customer’s dwelling unit, that is utilized solely for
+the domestic requirements of the dwelling unit’s members and requires separ ate metering service as a result of wiring restrictions or legal
+requirements.
+The term does NOT include service to: (a) Premises institutional in character including Clubs, Fraternities, Orphanages or Ho mes; (b)
+premises defined as a rooming house or boarding house in the Municipal Code for Cities of the First Class enacted by Act of General
+Assembly; (c) a premises containing a residence unit but primarily devoted to a professional or other office, studio, or othe r gainful pursuit;
+(d) electric furnaces or welding apparatus other than a transformer type "limited input" arc welder w ith an input not to exceed 37 1/2
+amperes at 240 volts .
+CURRENT CHARACTERISTICS . Standard single phase secondary service.
+MONTHLY RATE TABLE .
+FIXED DISTRIBUTION SERVICE CHARGE: $ 11.29
+FIXED DISTRIBUTION SERVICE CHARGE FOR FORMER OFF -PEAK METERS: $2.19
+VARIABLE DISTRIBUTION SERVICE CHARGE:
+All kWhs $0.10236 per kWh (D)
+ENERGY SUPPLY CHARGE:
+Refer to the Generation Supply Adjustment Procurement Class 1.
+TRANSMISSION SERVICE FOR CUSTOMERS RECEIVING DEFAULT SERVICE : The Transmission Service Charge shall apply.
+MINIMUM CHARGE: The minimum charge per month will be the Fixed Distribution Service Charge.
+STATE TAX ADJUSTMENT CLAUSE, DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC), NUCLEAR DECOMMISSIONING
+COST ADJUSTMENT, UNIVERSAL SERVICE FUND CHARGE, NON-BYPASSABLE TRANSMISSION CHARGE, PROVISION FOR THE
+RECOVERY OF ENERGY EFFICIENCY AND CONSERVATION PROGRAM COSTS, FIBER AFFILIATE REVENUE SURCHARGE,
+INCREMENTAL COVID-19 RELATED UNCOLLECTIBLE SURCHARGE, AND PROVISION FOR THE RECOVERY OF CONSUMER
+EDUCATION PLAN COSTS APPLY TO THIS RATE.
+PAYMENT TERMS. Standard.
+(D) Denotes Decrease
+Issued June 30, 2026 Effective July 1, 2026
+
+PDF PAGE 58
+Supplement No. 2 8 to
+T ariff Electric Pa. P.U.C. No. 8
+E i ghth Revised Page No. 57
+PECO Energy Company Supersedes Seventh Revised Page No. 5 7
+RATE-GS GENERAL SERVICE
+AVAILABILITY.
+Service for offices, professional, commercial or industrial establishments, governmental agencies, f arms and other applications outside the
+scope of the Residence Service rate schedules.
+Transformed service from the Company’s distribution system where the company installs, owns, and maintains any transforming, switching
+and other receiving equipment required.
+For service configurations that are nominally 120/208 volts, 3 phase, 4 wires – If either the service capacity or the parallel-
+generating capacity exceeds 750 kVA for transformers located inside the building, the only rate option available to the customer will
+be Rate HT. If either the service capacity or the parallel-generating capacity exceeds 750 kVA but remains at or below 1,500 kVA
+for transformers outside the building, the customer may request service at 277/480 volts, 3- phase 4- wires from transformers located
+outside the building. Otherwise the only rate option available to the customer will be Rate HT.
+For service configurations that are nominally 277/480 volts, 3 phase, 4 wires - If either the service capacity or the parallel-
+generating capacity exceeds either 750 kV A for transformers located inside the building or 1,500 kVA for transformers located
+outside the building, the only rate option available to the customer will be Rate HT.
+CURRENT CHARACT ERISTICS.
+Standard single- phase or polyphase secondary service.
+MONT HLY RAT E T ABLE.
+FIXED DISTRIBUTION SERVICE CHARGE:
+$ 24. 47 for single- phase service without demand measurement, or
+$ 31. 20 for single- phase service with demand measurement, or
+$ 74. 66 for polyphase service.
+VARIABLE DISTRIBUTION SERVICE CHARGE:
+$11. 48 per kW of billed demand (D)
+($0.0006) per kWh for all kWh
+ENERGY EFFICIENCY CHARGE: $0.00121 per kWh
+ENERGY SUPPLY CHARGE: Refer to the Generation Supply Adjustment Procurement Classes 2 and ¾.
+T RANSMISSION SERVICE FOR CUST OMERS RECEIVING DEFAULT SERVICE: The Transmission Service Charge shall
+apply.
+STATE TAX ADJUSTMENT CLAUSE, DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC), NUCLEAR
+DECOMMISSIONING COST ADJUSTMENT, NON- BYPASSABLE TRANSMISSION CHARGE, PROVISION FOR THE
+RECOVERY OF ENERGY EFFICIENCY AND CONSERVATION PROGRAM COSTS, FIBER AFFILIATE REVENUE
+SURCHARGE, INCREMENTAL COVID- 19 RELATED UNCOLLECTIBLE SURCHARGE AND PROVISION FOR THE RECOVERY
+OF CONSUMER EDUCATION PLAN COSTS APPLY TO T HI S
+RATE.
+DET ERMINAT ION OF BILLING DEMAND.
+The billing demand may be measured where consumption exceeds 1,100 kilowatt-hours per month for three consecutive months;
+or where load tests indicate a demand of five or more kilowatts; or where the customer requests demand measurement. Measured
+demands will be determined to the nearest 0.1 of a kilowatt but will not be less than 1.2 kilowatts, and will be adjusted for power
+factor in accordance with the Rules and Regulations.
+For those customers with demand measurement the billing demand will be determined as follows:
+(a) For customers with demand up to 500 kW, the billing demand shall be the measured demand, with a minimum billing
+demand of 1.2 kW.
+(b) For customers with measured demand or maximum demand greater than 500 kW, the billing demand shall be the greater
+of (i) the measured demand, or (ii) 40% of the maximum contract demand.
+If a measured demand customer has less than 1,100 monthly kilowatt-hours of use, the monthly billing demand will be the
+measured demand or the metered monthly kilowatt-hours divided by 175 hours, whichever is less, but not less than 1.2 kilowatts.
+For those customers without demand measurement, the monthly billing demand will be computed by dividing the metered
+monthly kilowatt-hours by 175 hours. The computed demand will be determined to the nearest 0.1 of a kilowatt, but will not be less
+than 1.2 kilowatts.
+MINIMUM CHARGE.
+The monthly minimum charge for customers without demand measurement will be the Fixed Distribution Service Charge, pl us t he
+Variable Distribution Service Charge per KW of minimum billing demand as described above. The monthly minimum charge for
+customers with demand measurement will be the Fixed Distribution Service Charge, plus per KW of billing demand. In addition t o
+the above, for customers in Procurement Class ¾ charges will be assessed on PJM’s reliability pricing model.
+(D) Denot es Dec reas e
+Iss ued M ay 15, 2026 Effective June 1, 2026

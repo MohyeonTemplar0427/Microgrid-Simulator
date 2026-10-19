@@ -27,6 +27,7 @@ UTILITY_DOCS = {
     "pseg": ("docs/PSEG_New_Jersey_Billing.md", "docs/utility_sources/pseg/manifest.json", "test/test_pseg_billing.py"),
     "firstenergy_pa_west_penn": ("docs/FirstEnergy.md", "docs/utility_sources/firstenergy/manifest.json", "test/test_firstenergy.py"),
     "firstenergy_ohio_edison": ("docs/FirstEnergy.md", "docs/utility_sources/firstenergy/manifest.json", "test/test_firstenergy.py"),
+    "peco": ("docs/PECO.md", "docs/utility_sources/peco/manifest.json", "test/test_peco.py"),
 }
 DEFAULT_EVIDENCE = (".cache/regional_validation_release_20261015/validation.json",
                     ".cache/regional_validation_va_history_20261015/validation.json")

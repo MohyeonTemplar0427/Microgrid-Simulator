@@ -19,6 +19,7 @@ UTILITIES = {
     "pseg": {"label":"PSE&G", "state":"NJ", "zone":"PSEG", "module":"pseg"},
     "firstenergy_pa_west_penn": {"label":"FirstEnergy Pennsylvania · West Penn district", "state":"PA", "zone":"APS", "module":"firstenergy_pa"},
     "firstenergy_ohio_edison": {"label":"FirstEnergy Ohio · Ohio Edison", "state":"OH", "zone":"ATSI", "module":"firstenergy_oh"},
+    "peco": {"label":"PECO · southeastern Pennsylvania", "state":"PA", "zone":"PECO", "module":"peco"},
 }
 
 

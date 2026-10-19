@@ -14,6 +14,7 @@ MODES = {
     "pseg": ("export_mode", "none"),
     "firstenergy_pa_west_penn": ("export_mode", "none"),
     "firstenergy_ohio_edison": ("export_mode", "none"),
+    "peco": ("export_mode", "none"),
 }
 
 
@@ -46,7 +47,7 @@ def grid_only_counterfactual(utility, account, state=None):
             inherited[key] = value
 
     applied = mode == "net_metering"
-    if utility.startswith("firstenergy_"):
+    if utility.startswith("firstenergy_") or utility == "peco":
         applied = bool(result.get("der_ordinary_service_confirmed"))
         set_account("der_ordinary_service_confirmed", False)
         set_account("der_eligibility_source", "")

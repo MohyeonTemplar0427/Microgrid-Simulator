@@ -1,0 +1,9 @@
+RESEARCH NOTES — NOT AN IMPLEMENTED BILLING POLICY
+Source: https://www.puc.pa.gov/pcdocs/1822419.pdf
+PECO Electric Volume III, March 28, 2024, 815 PDF pages.
+
+PDF pages 617–620: proposed rate design and customer-charge changes.
+PDF pages 744–747: purpose of retail-rates testimony, proposed 2025 FARS/ICUS credits and allocation among customer classes.
+PDF page 756: proposed correction to GS minimum-charge language for customers without demand measurement.
+
+These passages were inspected for ordinary R/GS partial-period arithmetic. They do not establish the short-period denominator or the exact treatment of the GS minimum, 1100-kWh condition and 175-hour rule. This is a finding about the inspected passages, not a claim that no operational policy exists. Proposed testimony is not substituted for the adopted tariff.

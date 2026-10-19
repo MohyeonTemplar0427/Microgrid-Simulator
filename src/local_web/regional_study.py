@@ -23,7 +23,8 @@ SITES={"dominion_energy_virginia":(37.63,-77.52,"Hypothetical Henrico-area Virgi
        "dominion_energy_north_carolina":(36.44,-76.50,"Hypothetical northeastern North Carolina site"),
        "pseg":(40.74,-74.17,"Hypothetical Newark, New Jersey site"),
        "firstenergy_pa_west_penn":(40.30,-79.54,"Hypothetical Westmoreland County, Pennsylvania site; West Penn service independently confirmed"),
-       "firstenergy_ohio_edison":(41.16,-81.64,"Hypothetical unincorporated Summit County, Ohio site; Ohio Edison service and absence of municipal charges independently confirmed")}
+       "firstenergy_ohio_edison":(41.16,-81.64,"Hypothetical unincorporated Summit County, Ohio site; Ohio Edison service and absence of municipal charges independently confirmed"),
+       "peco":(39.96,-75.60,"Hypothetical Chester County, Pennsylvania site; PECO service independently confirmed; outside Philadelphia")}
 
 
 def calendar_cycles(start,end):
@@ -258,6 +259,8 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
+    if utility == "peco":
+        equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))

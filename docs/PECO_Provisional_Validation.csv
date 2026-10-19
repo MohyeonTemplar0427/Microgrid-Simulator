@@ -1,0 +1,7 @@
+engine_id,plan,start_date,end_date,scenario,utility_bill_usd,savings_vs_grid_usd,import_kwh,rate_evidence_status,objective_scope,maximum_reconciliation_difference_usd,all_intervals_feasible
+715ac93920149e1cb51d0a3394349d678ef2dc4606a7902e1b1c1ff2a5b5848a,R-TOU,2025-03-04,2025-03-15,grid_only,63.12,0.0,302.6808,provisional,provisional_modeled_bill,0.0,True
+715ac93920149e1cb51d0a3394349d678ef2dc4606a7902e1b1c1ff2a5b5848a,R-TOU,2025-03-04,2025-03-15,pv_only,36.14,26.979999999999997,185.0967419567199,provisional,provisional_modeled_bill,0.0,True
+715ac93920149e1cb51d0a3394349d678ef2dc4606a7902e1b1c1ff2a5b5848a,R-TOU,2025-03-04,2025-03-15,pv_battery,23.03,40.09,119.16768192391936,provisional,provisional_modeled_bill,1.0000000294496658e-06,True
+715ac93920149e1cb51d0a3394349d678ef2dc4606a7902e1b1c1ff2a5b5848a,GS-TOU,2025-05-20,2025-06-18,grid_only,1108.31,0.0,6655.632,provisional,provisional_modeled_bill,0.0,True
+715ac93920149e1cb51d0a3394349d678ef2dc4606a7902e1b1c1ff2a5b5848a,GS-TOU,2025-05-20,2025-06-18,pv_only,819.47,288.8399999999999,4892.706066717688,provisional,provisional_modeled_bill,0.0,True
+715ac93920149e1cb51d0a3394349d678ef2dc4606a7902e1b1c1ff2a5b5848a,GS-TOU,2025-05-20,2025-06-18,pv_battery,727.58,380.7299999999999,4911.990475715465,provisional,provisional_modeled_bill,1.0000143220167956e-06,True

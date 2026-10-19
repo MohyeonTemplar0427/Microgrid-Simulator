@@ -1,0 +1,232 @@
+PDF PAGE 38
+Supplement No. 1 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 37
+PECOEnergyCompany SupersedesOriginalPageNo.37
+GENERATION SUPPLY ADJUSTMENT FOR PROCUREMENT CLASSES 1 AND 2
+LOADS UP TO 100KW
+Applicability: June 1, 2021 this adjustment shall apply to all customers taking default service from the Company with demands up to 100
+kW. The rate contained herein shall be calculated to the nearest one thousandth of a cent. The GSA shall contain the cost of generation
+supply for each tariff rate. The Company will apply Standard Pricing unless customers voluntarily request and are eligible to participate in
+the Time-Of-Use Pricing Option as detailed below.
+Standard Pricing: Standard Pricing provides default service to customers who have not selected or are not eligible for PECO’s
+Time-Of-Use Pricing Option. The rates below shall include the cost of procuring power to serve the default service customers including the
+cost of complying with the Alternative Energy Portfolio Standards Act (“AEPS” or the “Act”) plus associated administrative expenses incurred in
+acquiring power and gaining regulatory approval of any procurement strategy and plan. The standard pricing for default service will represent
+the estimate of the cost to serve the specific tariff rate for the next quarterly period beginning with the three months ended August 31, 2021.
+The rates in this tariff shall be updated quarterly on June 1, September 1, December 1 and March 1 commencing June 1, 2021 and are not
+prorated. If the balance of over/(under) recovery gets too large, the Company can file a reconciliation that will mitigate the subsequent
+impact. The standard generation service charge shall be calculated using the following formula:
+Standard GSA(n) = (C-E+A)/S*1/(1-T)* (1-ALL)/(1-LL) +AEPS/S*1/(1 - T) + WC where;
+C= The sum of the amounts paid to the full requirements suppliers providing the power for the quarterly period, the spot market
+purchases for the quarterly period, plus the cost of any other energy acquired for the quarterly period. Cost shall include energy, capacity
+and ancillary services, distribution line losses, cost of complying with the Alternative Energy Portfolio Standards, and any other load serving
+entity charges other than network transmission service and costs assigned under the Regional Transmission Expansion Plan. Ancillary
+services shall include any allocation by PJM to PECO default service associated with the failure of a PJM member to pay its bill from PJM as
+well as the load serving entity charges listed in the Supply Master Agreement Exhibit D as the responsibility of the supplier. This component
+shall include the proceeds and costs from the exercise of Auction Revenue Rights granted to PECO by PJM.
+AEPS = The projected total cost of complying with the Alternative Energy Portfolio Standards Act (“AEPS” or the “Act”) not included in the C
+component above for the quarterly period for each procurement class. Costs include the amount paid for Alternative Energy and/or
+Alternative Energy Credits (“AEC’s”) purchased for compliance with the Act, the cost of administering and conducting any procurement of
+Alternative Energy and/or AEC’s, payments to the AEC program administrator for its costs of administering an alternative energy credits
+program, payments to a third party for its costs in operating an AEC registry, any charge levied by PECO’s regional transmission operator to
+ensure that alternative energy sources are reliable, a credit for the sale of any AEC’s sold during the calculation period, and the cost of
+Alternative Compliance Payments that are deemed recoverable by the Commission, plus any other direct or indirect cost of acquiring
+Alternative Energy and/or AEC’s and complying with the AEPS statute.
+E = Experienced over or under-collection calculated under the reconciliation provision of the tariff to be effective semiannually with recovery
+during the periods March 1 through August 31 of the current year and September 1 of the current year through February 28 (29) of the following
+year.
+A = Administrative Cost - This includes the cost of the Independ ent Evaluator, consultants providing guidance on the development of the
+procurement plan, legal fees incurred gaining approval of the plan and any other costs associated with designing and implementing a
+procurement plan including the cost of the pricing forecast necessary for estimating cost recoverable under this tariff. Also included in this
+component shall be the cost to implement real time pricing or other time sensitive pricing such as dynamic pricing that is required of the
+Company or is approved in its Act 129 filing. Administrative Costs also includes any other costs incurred to implement retail market
+enhancements directed by the Commission in its Retail Market Investigation at Docket No. I-2011-2237952 or any other applicable docket
+that are not recovered from EGSs or through another rate.
+S = Estimated sales for the period the rate is in effect for the classes to which the rate is applicable. Six month sales are used for the E
+factor with effective periods March 1 through August 31 of the current year and September 1 of the current year through February 28 (29) of the
+followingyear.
+T = The currently effective gross receipts tax rate.
+n = The procurement class for which the GSA is being calculated.
+ALL = Average line losses for the procurement class.
+LL = Line losses for the specific rate class provided in the Company’s Electric Generation Supplier Coordination Tariff rule 6.6.
+WC = $0.00035/kWh to represent the cash working capital for power purchases.
+Auction Revenue Rights (ARR) = Allocated annually by PJM to Firm transmission customers, the ARR’s allow a Company to select rights to
+specific transmission paths in order to avoid congestion charges. In general, the line loss adjustment is applicable to Procurement Class 2 only as
+those classes contain rate classes with three different line loss factors: Current Charges:
+Standard
+Rate Standard GSA Price (C)
+R GSA (1) $0.08381
+RH GSA (1) $0.08381
+GS GSA (2) $0.07170
+(C) Denotes Change
+Issued January 15, 2025 Effective March 1, 2025
+
+PDF PAGE 39
+Supplement No. 1 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 38
+PECOEnergyCompany SupersedesOriginalPageNo.38
+GENERATION SUPPLY ADJUSTMENT FOR PROCUREMENT CLASSES 1 AND 2
+LOADS UP TO 100KW (CONTINUED)
+PD GSA (2) $0.07048 (C)
+HT GSA (2) $0.06757
+POL* GSA (2) $0.06584
+SL-S* GSA (2) $0.06584
+TLCL GSA (2) $0.07170
+SL-E* GSA (2) $0.06584
+AL* GSA (2) $0.06584
+SL-C*, ** GSA (2) $0.06584
+* Prices shall exclude capacity from the Procurement Class 2 RFP results.
+** Rate SL-C was effective July 1, 2019 pursuant to the Order at Docket No. R-2018-3000164
+Procedure: For Procurement Classes 1 and 2 the GSA shall be filed 45 days before the effective dates of June 1, September 1,
+December 1 and March 1 in conjunction with the Reconciliation Schedule.
+Time-Of-Use (TOU) Pricing Option: The TOU Pricing Option provides eligible customers with an opportunity to shift energy usage away
+from peak periods, when wholesale electricity demand and prices are high, to off-peak periods, when demands and prices are lower.
+Customers may voluntarily request this option in lieu of Standard Pricing described above and must meet the TOU Eligibility Requirements
+below. (Customers electing this option are billed based on interval-metered consumption of usage within each TOU Pricing Period. Beginning
+and ending reads are not applicable TOU billing determinants.) Commencing September 1, 2021, TOU Pricing Option rates will be updated
+quarterly in concurrence with the Standard GSA on June 1, September 1, December 1 and March 1 and are not prorated.
+The year-round TOU Pricing Periods, TOU Period Allocators [“PA-GSA(n)”], and TOU Pricing Multipliers [“PM-GSA(n)”] from June 1, 2024
+through May 31, 2025 are as follows:
+TOU Pricing Period Days/Hours Included TOU Period TOU Period TOU Pricing Multiplier TOU Pricing Multiplier
+Allocator Allocator PM-GSA(1) PM-GSA(2)
+PA-GSA(1) PA-GSA(2) (Ratio to Super Off-Peak) (Ratio to Super Off-Peak)
+2:00 – 6:00 p.m.
+Peak (“PP”) Monday through Friday, 12% 14% 6.49-to-1 5.11-to-1
+excluding PJM holidays
+Super Off-Peak (“SOPP”) Midnight (12 a.m.) – 6 a.m. Every day 20% 20% 1-to-1 1-to-1
+Off-Peak (“OPP”) All other hours 68% 66% 1.42-to-1 1.48-to-1
+Commencing with the GSA and TOU rates effective June 1, 2022, PECO may update the TOU Pricing Multipliers in the above table an nually,
+using a rolling five years of historical PJM Day-Ahead Spot Market Pricing energy data and Reliability Pricing Model capacity pricing data for the
+PECO zone. PECO will only update the applicable TOU Pricing Multipliers if the use of such data would result in no more than a 10% change
+from the prior-year’s TOU Pricing Multipliers. If these updates would exceed 10%, the applicable TOU Pricing Multipliers will be changed by
+exactly 10%.
+To calculate the quarterly TOU Pricing Option rates, the Company will first calculate the quarterly TOU Super Off-Peak Price (“SOPP”) in
+accordance with the formula set forth below:
+TOU SOPP GSA(n) = Standard GSA(n) * [ 1 / SOPP-F(n) ] where;
+Standard GSA(n) = Defined as above for Standard Pricing.
+SOPP-F(n) = Super Off-Peak Price Factor representing the ratio of the Standard GSA(n) to the Super Off-Peak Price, calculated as
+follows:
+TOU SOPP PA-GSA(n) + [ (TOU OPP PM-GSA(n) * TOU OPP PA-GSA(n) ] + [ (TOU PP PM-GSA(n) * TOU PP PA-GSA(n) ]
+The Company will then calculate the quarterly TOU Peak (“PP”) and Off-Peak (“OPP”) prices as follows:
+TOU PP GSA(n) = TOU SOPP GSA(n) * TOU PP PM-GSA and;
+TOU OPP GSA(n) = TOU SOPP (GSA(n) * TOU OPP PM-GSA.
+(C) Denotes Change
+Issued January 15, 2025 Effective March 1, 2025
+
+PDF PAGE 40
+Supplement No. 1 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 39
+PECOEnergyCompany SupersedesOriginalPageNo.39
+GENERATION SUPPLY ADJUSTMENT FOR PROCUREMENT CLASSES 1 AND 2
+LOADS UP TO 100KW (CONTINUED)
+Current TOU Pricing Option Charges:
+(C)
+Peak (“PP”) Super Off-Peak (“SOPP”) Off-Peak (“OPP”)
+TOU Rate (2-6 PM Monday-Friday, excluding holidays) (12-6 AM all days) (All other times)
+R (GSA 1) $0.27978 $0.04311 $0.06122
+RH (GSA 1) $0.27978 $0.04311 $0.06122
+GS (GSA 2) $0.19367 $0.03790 $0.05609
+PD (GSA 2) $0.19035 $0.03725 $0.05513
+HT (GSA 2) $0.18248 $0.03571 $0.05285
+TOUEligibilityRequirementsandSwitchingRules:
+The TOU Pricing Option is available to new and existing Customers in Procurement Classes 1 or 2 with a smart meter configured to
+measure energy consumption in watt-hours. This includes Customers in the above referenced Procurement Classes taking default service
+from the Company and who also participate in the Company’s RS-2 (Net Metering) tariff, except for virtual net metered Customers.
+Residential Customers enrolled in the Company’s Customer Assistance Program (CAP) are not eligible for the TOU Pricing Option.
+As a prerequisite for enrollment, the Customer must have a valid e-mail address to ensure the Company is able to provide the enrolled TOU
+Pricing Option Customer with timely and meaningful communications regarding their bill savings performance.
+Participating Customers will remain on the TOU Pricing Option rate until they affirmatively elect to return to PECO’s Standard GSA rate,
+switch to an EGS, or otherwise become ineligible.
+Customers who select the TOU Pricing Option may leave at any time without incurring related penalties or fees. However, Customers who
+select and subsequently leave the TOU Pricing Option for any reason may not re-enroll on the TOU Pricing Option rate for twelve billing
+months after switching off the TOU Pricing Option rate.
+(C) Denotes Change
+Issued January 15, 2025 Effective March 1, 2025
+
+PDF PAGE 46
+Supplement No. 2 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 45
+PECO Energy Company Supersedes Original Page No. 45
+PROVISION FOR T HE RECOVERY OF CONSUMER EDUCAT ION PLAN COSTS
+Purpose: The purpose of this surcharge is to provide for full and current cost recovery of expenditures associated wi th the Company’s
+proposed consumer education plan. The proposed plan shall consist of the cost of the consumer education plan approved in Doc k et M -
+2008- 2032274, P- 2008- 2062739 and R-2024- 3046931.
+Applicability: The surcharge shall be a per customer charge calculated to the nearest one cent, which shall be added to the fixed
+distribution rates for billing purposes for all customers. The rate shall be calculated separately for each customer class. The current
+Consumer Education Plan Cost for each Class 1 is a 5 . 0 cent charge per month for Rates R, RH and CAP, Class 2 and 3 is a 0 .0 cent per (C)
+month for Rate GS and for Class 4 is 0 .0 c ent credit per month for Rates HT and PD with an A pril 1, 2025 effective date.
+Billing Provisions: The surcharge shall be calculated on an annual basis using the following formula:
+MC(n) = (C +E + I ) × 1 _
+R(n) (1 -T)
+C – the cost of the consumer education program includes the following:
+Consumer Education Costs –The incremental cost of programs designed to educate consumers regarding the
+competitive market such as advertising, customer notices, informational materials cost, and any other incremental cost associat ed wi t h
+educating consumers about the market and about available mitigation programs offered by the Company less any cost covered by the
+Company’s Paragraph 37 Funds. Costs associated with this program shall be expensed to FERC account 910. These costs shall also
+include the costs of providing expanded universal service program education and outreach to low and moderate income customers t o
+recover up to $800,000 per year commencing on January 1, 2025.
+MC(n) = consumer education cost per customer for c us t om er class n including over/(under) recovery and associated interest.
+E – The estimated over or (under) recovery from the prior year. The reconciliation period shall be the 12 months ended December 31
+I – Interest on any over or (under) recovery balance. Interest shall be a rate of 6% and shall be calculated from the month of over or
+under collection to the mid- point of the recovery period.
+N – Customer class where 1 = residential, 2 = C&I up to 100 kW, 3 = C&I from 100- 500 kW, and 4 = C&I >500 kW
+R – The total delivery service customers for the c us t om er class for the application period where the application period shall be the 12- month
+period commencing annually on April 1 after the reconciliation period.
+T – The current Pennsylvania gross receipt tax rate included in base rates.
+Filing Schedule: The estimated surcharge shall be filed by February 1 of each year to be effective on the following April 1. The application
+period shall be the 12 months that start the April 1 effective date of the surcharge. The Bureau of Audits shall audit the data in the
+surcharge on an annual basis.
+(C) Denotes Change
+Iss ued January 31, 2025 Effective April 1, 2025
+
+PDF PAGE 53
+Supplement No. 2 to
+Tariff Electric Pa. P.U.C. No. 8
+First Revised Page No. 52
+PECO Energy Company Supersedes Original Page No. 52
+RATE R RESIDENCE SERVICE
+AVAILABILITY.
+Single phase service in the entire territory of the Company to the dwelling and appurtenances of a single private family (or to a multiple
+dwelling unit building consisting of two to five dwelling units, whether occupied or not), for the domestic requirements of its members when
+such service is supplied through one meter. Service is also available for related farm purposes when such service is supplied through one
+meter in conjunction with the farmhouse domestic requirements.
+Each dwelling unit connected after May 10, 1980 except those dwelling units under construction or under written contract for
+construction as of that date must be individually metered for their basic service supply. Centrally supplied master metered heati ng, cooling
+or water heating service may be provided if such supply will result in energy conservation.
+The term "residence service" includes service to: (a) the separate dwelling unit in an apartment house or condominium, but not the halls,
+basement, or other portions of such building common to more than one such unit; (b) the premises occupied as the living quarters of five
+persons or less who unite to establish a common dwelling place for their own personal comfort and convenience on a cost sharing basis; (c)
+the premises owned by a church, and primarily designated or set aside for, and actually occupied and used as, the dwelling place of a
+priest, rabbi, pastor, rector, nun or other functioning Church Divine, and the resident associates; (d) private dwellings in which a portion of
+the space is used for the conduct of business by a person residing therein; (e) A detached garage, located on the same premises as the
+customer’s dwelling unit, that is utilized solely for the domestic requirements of the dwelling unit’s members and is served through the same
+meter as the dwelling unit; (g) A detached garage, located on the same premises as the customer’s dwelling unit, that is utilized solely for
+the domestic requirements of the dwelling unit’s members and requires separate metering service as a result of wiring restric tions or legal
+requirements.
+The term does NOT include service to: (a) Premises institutional in character including Clubs, Fraternities, Orphanages or Homes; (b)
+premises defined as a rooming house or boarding house in the Municipal Code for Cities of the First Class enacted by Act of General
+Assembly; (c) a premises containing a residence unit but primarily devoted to a professional or other office, studio, or other gainful pursuit;
+(d) electric furnaces or welding apparatus other than a transformer type "limited input" arc welder wit h an input not to exceed 37 1/2
+amperes at 240 volts.
+CURRENT CHARACT ERISTICS. Standard single phase secondary service.
+MONT HLY RAT E T ABLE.
+FIXED DISTRIBUTION SERVICE CHARGE: $11.30 (I)
+FIXED DISTRIBUTION SERVICE CHARGE FOR FORMER OFF-PEAK METERS: $2.19
+VARIABLE DISTRIBUTION SERVICE CHARGE:
+All kWhs $0.09655 per kWh
+ENERGY SUPPLY CHARGE:
+Refer to the Generation Supply Adjustment Procurement Class 1.
+T RANSMISSION SERVICE FOR CUST OMERS RECEIVING DEFAULT SERVICE: The Transmission Service Charge shall apply.
+MINIMUM CHARGE: The minimum charge per month will be the Fixed Distribution Service Charge.
+STATE TAX ADJUSTMENT CLAUSE, DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC), NUCLEAR DECOMMISSIONING
+COST ADJUSTMENT, UNIVERSAL SERVICE FUND CHARGE, NO N -BYPASSABLE TRANSMISSION CHARGE , PROVISION FOR THE
+RECOVERY OF ENERGY EFFICIENCY AND CONSERVATION PROGRAM COSTS, FIBER AFFILIATE REVENUE SURCHARGE,
+INCREMENTAL COVID- 19 RELATED UNCOLLECTIBLE SURCHARGE, AND PROVISION FOR THE RECOVERY OF CONSUMER
+EDUCATION PLAN COSTS APPLY TO THIS RATE.
+PAYMENT TERMS. Standard.
+(I) Denotes Increase
+Iss ued January 31, 2025 Effective April 1, 2025
