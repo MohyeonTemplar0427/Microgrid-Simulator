@@ -88,6 +88,16 @@ storage require approved small-DG enrollment; a map location alone does not
 establish it. MISO LRZ7 describes resource adequacy, not a price node or retail
 service territory. See [DTE scope and source evidence](DTE.md).
 
+## Michigan · Consumers Energy
+
+The local candidate supports residential summer TOU RSP, year-round Smart Hours
+RSH, commercial secondary GS and commercial TOU GSTU. Verified coverage is
+January 2025–June 2026, bounded by actual billed PSCR evidence. Commercial EE
+surcharges use a documented utility-assigned annual-review tier, not current
+cycle consumption. Complete regular monthly cycles and confirmed non-export DG
+eligibility are required. MISO LRZ7 and METC transmission metadata remain
+separate from retail bills. See [Consumers scope, sources and limitations](Consumers_Energy.md).
+
 ## Before running a comparison
 
 1. Confirm delivery utility and generation enrollment from the account.

@@ -1,0 +1,119 @@
+{
+  "retrieved_date": "2026-10-20",
+  "scope": "Consumers Energy RSP/RSH/GS/GSTU, ordinary full service, zero exports; January 2025\u2013June 2026 actual PSCR",
+  "sources": [
+    {
+      "url": "https://www.michigan.gov/mpsc/-/media/Project/Websites/mpsc/consumer/rate-books/electric/consumers/Consumers_14_current.pdf?rev=b1cbb572f3294f91ac6fa56a1aa0a40a&hash=656847480CFD7FFBC929E34152B64816",
+      "pdf_sha256": "0005e61c994923bebcb6ae2c07d205723a099fcc2996668cd6fba3bf3d8babbe",
+      "pages": 296,
+      "selected_pdf_pages": [
+        75,
+        76,
+        117,
+        118,
+        122,
+        123,
+        131,
+        146,
+        147,
+        148,
+        149,
+        151,
+        152,
+        153,
+        154,
+        155,
+        158,
+        159,
+        166,
+        170,
+        172,
+        176,
+        186,
+        188,
+        189,
+        190,
+        192
+      ],
+      "extracted_text": "docs/utility_sources/consumers/current-selected.txt",
+      "extracted_text_sha256": "0880653e5eecc42807c0e80937df1169247a845aecf4983778b49de59048f218",
+      "retrieved_at": "2026-10-21T01:06:26.575250+00:00"
+    },
+    {
+      "url": "https://www.michigan.gov/mpsc/-/media/Project/Websites/mpsc/consumer/rate-books/electric/consumers/Consumers_14_canceled_D.pdf?rev=374cf8b11bc848f995aa558e72be1308&hash=33C19B1A701473025B0C71BDB1705AB5",
+      "pdf_sha256": "c085426dade0a836079339a90385150364f0287e59952e751260cbb05fc375ce",
+      "pages": 704,
+      "selected_pdf_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        34,
+        35,
+        36,
+        37,
+        44,
+        54,
+        55,
+        65,
+        67,
+        68,
+        154,
+        164,
+        196,
+        197,
+        248,
+        249,
+        273,
+        335,
+        336,
+        356,
+        357
+      ],
+      "extracted_text": "docs/utility_sources/consumers/canceled_d-selected.txt",
+      "extracted_text_sha256": "d02134fa9003a3ee8b9b5657823e5923da71b60393e38e0250c24f1dcd5465ca",
+      "retrieved_at": "2026-10-21T01:06:38.044199+00:00"
+    },
+    {
+      "url": "https://www.michigan.gov/mpsc/-/media/Project/Websites/mpsc/consumer/rate-books/electric/consumers/Consumers_14_canceled_A_B_C.pdf?rev=42d0436d41e14fa4a811a4a14fdae581&hash=AABB9439F27CB95BD60633F56296B6C9",
+      "pdf_sha256": "aea66064da219b5e24953dc71e8f5259ea1b593e6a94c3bf9982b1f67e74cab4",
+      "pages": 434,
+      "selected_pdf_pages": [
+        367,
+        372,
+        399
+      ],
+      "extracted_text": "docs/utility_sources/consumers/canceled_abc-selected.txt",
+      "extracted_text_sha256": "5513f8f89ef1ba5b8b5c66f17fb03c84e8aaf4c35770800da293a7ba58e9fb7e",
+      "retrieved_at": "2026-10-21T01:06:49.308277+00:00"
+    }
+  ],
+  "clocks": {
+    "service_date": [
+      "base energy/capacity/distribution",
+      "DR",
+      "IRM",
+      "FCM",
+      "deferral"
+    ],
+    "billing_month": [
+      "PSCR actual",
+      "EE assigned tier fees",
+      "power plant/Karn securitization",
+      "LIEAF",
+      "one-time reconciliations"
+    ]
+  },
+  "limitations": [
+    "No extrapolation beyond June2026 actual billed PSCR in downloaded regulator book",
+    "Complete regular cycles, full fixed fees; no partial-period allocation",
+    "No DG export credits or standby/SG",
+    "Commercial EE tier must be utility-assigned, not recalculated by optimizer"
+  ],
+  "tax_sources": [
+    "https://www.michigan.gov/treasury/reference/letter/2013-letter-rulings/letter-ruling-2013-5",
+    "https://www.michigan.gov/taxes/business-taxes/sales-use-tax"
+  ],
+  "retrieval_timezone": "America/Los_Angeles"
+}

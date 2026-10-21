@@ -24,6 +24,12 @@ UTILITIES = {
                      "grid_operator":"MISO", "resource_adequacy_zone":"LRZ7", "transmission_owner":"ITC Transmission",
                      "grid_sources":["https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
                                      "https://www.michigan.gov/mpsc/consumer/electricity/electric-utility-service-area-map"]},
+    "consumers_energy": {"label":"Consumers Energy · Michigan", "state":"MI", "zone":None, "module":"consumers",
+                         "grid_operator":"MISO", "resource_adequacy_zone":"LRZ7", "transmission_owner":"Michigan Electric Transmission Company (METC)",
+                         "grid_sources":["https://www.consumersenergy.com/about-us/electric-generation",
+                                         "https://www.sec.gov/Archives/edgar/data/1317630/000131763026000006/itc-20251231.htm",
+                                         "https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
+                                         "https://www.michigan.gov/mpsc/consumer/electricity/electric-utility-service-area-map"]},
 }
 
 

@@ -682,3 +682,30 @@ and symbolic charge expressions, records assumption provenance per bill and
 component, and labels both the comparison objective and savings provisional.
 It does not extend verified price coverage, enable exports or change old saved
 requests' verified-only default. See [PECO allocation assumptions](PECO_Provisional_Allocation.md).
+
+## Consumers Energy Michigan full-service adapter · October 2026
+
+`billing/consumers.py` supplies RSP/RSH/GS/GSTU to the existing regional bill
+and dispatch contract. `consumers_rates.py` keeps verified dated Python-literal
+prices inside immutable engine snapshots. Supported service and billing months
+are January 2025–June 2026, bounded by actual billed PSCR evidence. No forecast,
+maximum allowable factor or neighboring utility is substituted.
+
+The adapter deliberately separates interval service-date charges from designated
+bill-month riders. Residential seasons use calendar dates; commercial GS/GSTU
+seasons use the account's billing month. Residential weekday holidays remain
+peak where scheduled, while GSTU uses six actual holidays with no substitute
+observance. Commercial EE uses an explicit, documented utility-assigned tier;
+current dispatch does not reclassify it. All three scenarios use the same
+assigned account facts, except removal of DG enrollment for the absent-DER
+counterfactual. Zero exports and zero credit banks only; approved historical
+DG sizing/storage is required. Complete 26–35-day cycles with confirmed full
+monthly charges bound this initial implementation; partial-cycle allocation
+and GSD demand/standby billing are unsupported.
+
+The shared MISO metadata contract now also records Consumers/Michigan,
+LRZ7 and METC separately. Its cpnode is optional and must be explicitly sourced;
+no market price, capacity/transmission adder or California carbon series enters
+ordinary bundled retail bills. Backend, local browser and representative
+OpenDSS replay reuse the shared regional workflow. See
+[Consumers scope and evidence](Consumers_Energy.md). GUI development is paused.

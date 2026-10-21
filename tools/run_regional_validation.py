@@ -48,11 +48,13 @@ PECO_CASES = (("peco", "residential", "R"), ("peco", "residential", "R-TOU"),
 DTE_CASES = (("dte_electric", "residential", "D1.11"), ("dte_electric", "commercial", "D3"),
              ("dte_electric", "commercial", "D3.11"))
 
+CONSUMERS_CASES = tuple(("consumers_energy", "residential" if p in ("RSP", "RSH") else "commercial", p) for p in ("RSP", "RSH", "GS", "GSTU"))
+
 
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -237,12 +239,12 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
     for utility in utilities:
         path = folder/utility
         path.mkdir(exist_ok=True)
-        if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric") or utility == "dominion_energy_virginia" and not va_history_only:
+        if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy") or utility == "dominion_energy_virginia" and not va_history_only:
             file = path/"era5.json"
             expected = previous.get("sources", {}).get(utility, {}).get("sha256")
             if expected is not None:
                 require(file.exists() and digest(file) == expected, "Prepared ERA5 bytes changed; choose a new input folder")
-            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric") else ("2026-09-01","2026-09-30")
+            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy") else ("2026-09-01","2026-09-30")
             request = dict(latitude=SITES[utility][0], longitude=SITES[utility][1], start_date=start, end_date=end)
             payload = json.loads(file.read_text()) if file.exists() else fetch_era5(**request)
             require(payload["request"]["latitude"] == request["latitude"] and payload["request"]["longitude"] == request["longitude"],
@@ -283,7 +285,7 @@ def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
-    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric"):
+    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy"):
         payload=json.loads((source/"era5.json").read_text())
         from src.profiles.era5 import parse_era5
         lat,lon,_=SITES[utility]

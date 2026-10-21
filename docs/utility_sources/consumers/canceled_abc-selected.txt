@@ -1,0 +1,171 @@
+PDF PAGE 367 (one-based)
+M.P.S.C. No. 14 – Electric Third Revised Sheet No. C-64.10 
+Consumers Energy Company Cancels Second Revised Sheet No. C-64.10
+(To add Simple Renewable Program)
+(Continued from Sheet No. C-64.00) 
+C11. SELF-GENERATION, NET METERING, DISTRIBUTED GENERATION AND SIMPLE RENEWABLE 
+PROGRAM (Contd) 
+ C11.3 DISTRIBUTED GENERATION PROGRAM 
+A. The Distributed Generation Program is offered as authorized by 2008 PA 295 as amended, 1939 PA 3, as amended 
+by 2016 PA 341, Section (6)(a)(14), and the Commission in Case No. U-20697.
+B. Distributed Generation Definitions 
+1. A Category 1 distributed generation customer has one or more Eligible Electric Generators with an aggregate 
+nameplate capacity of 20 kW or less that use equipment certified by a nationally recognized testing laboratory 
+to IEEE 1547.1 testing standards and is in compliance with UL 1741 scope 1.1A located on the customer’s 
+premises and metered at a single point of contact. 
+2. A Category 2 distributed generation customer has one or more Eligible Electric Generators with an aggregate 
+capacity greater than 20 kW but not more than 150 kW located on the customer’s premises and metered at a 
+single point of contact. 
+3. A Category 3 distributed generation customer has one or more methane digesters with an aggregate nameplate 
+capacity greater than 150 kW but not more than 550 kW located on the customer’s premises and metered at a 
+single point of contact. 
+4. Eligible Electric Generator – a renewable energy system or a methane digester with a generation capacity 
+limited to no more than 100% of the customer’s electricity consumption for the previous 12 months and does 
+not exceed the following: 
+a. For a renewable energy system, 150 kW of aggregate generation at a single site 
+b. For a methane digester, 550 kW of aggregate generation at a single site 
+5. Inflow – the metered inflow delivered by the Company to the customer during the billing month or time-based 
+pricing period. 
+6. Outflow – the metered quantity of the customer’s generation not used on site and exported to the utility during 
+the billing month or time-based pricing period. 
+7. Outflow Demand for Primary and Secondary Rate Customers – the total metered outflow quantity of Kilowatts 
+(kW) during the On-Peak period divided by the number of On-Peak hours in the billing period. 
+8. Program Capacity – maximum program limit of 4.0% of the Company’s average Peak Demand for Full￾Service Customers during the previous five calendar years. Within the Program Capacity, 2.0% is reserved for 
+Category 1 legacy Net Metering Customers and Distributed Generation Customers, 1.0% is reserved for 
+Category 2 legacy Net Metering Customers and Distributed Generation Customers and 1.0% is reserved for 
+Category 3 legacy Net Metering Customers and Distributed Generation Customers. 
+9. Renewable Energy Resource – a resource that naturally replenishes over a human, not geological, timeframe 
+and that is ultimately derived from solar power, water power, or wind power. Renewable energy resource does 
+not include petroleum, nuclear, natural gas, or coal. A renewable energy resource comes from the sun or from 
+thermal inertia of the earth and minimizes the output of toxic material in the conversion of the energy and 
+includes, but is not limited to, all of the following: 
+a. Biomass 
+b. Solar and solar thermal energy 
+c. Wind energy 
+d. Kinetic energy of moving water, including the following: 
+i. Waves, tides or currents 
+ii. Water released through a dam 
+e. Geothermal energy 
+f. Thermal energy produced from a geothermal heat pump 
+g. Any of the following cleaner energy resources: 
+i. Municipal solid waste, including the biogenic and anthropogenic factions 
+ii. Landfill gas produced by municipal solid waste 
+iii. Fuel that has been manufactured in whole or significant part from waste, including, but not 
+limited to, municipal solid waste. Fuel that meets the requirements of this subparagraph 
+includes, but is not limited to, material that is listed under 40 CFR 241.3(b) or 241.4(a) for 
+which a nonwasted determination is made by the United States Environmental Protection 
+Agency pursuant to 40 CPR 241.3(c). Pet coke, hazardous waste, or scrap tires are not fuel 
+meeting the requirements of this subparagraph. 
+(Continued on Sheet No. C-64.20) 
+Issued August 21, 2024 by Effective for service rendered on
+Garrick J. Rochow, and after January 1, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated July 23, 2024
+in Case No. U-21506
+
+PDF PAGE 372 (one-based)
+M.P.S.C. No. 14 – Electric Second Revised Sheet No. C-64.20 
+Consumers Energy Company Cancels First Revised Sheet No. C-64.20
+(To add Simple Renewable Program)
+(Continued from Sheet No. C-64.10) 
+C11. SELF-GENERATION, NET METERING, DISTRIBUTED GENERATION AND SIMPLE RENEWABLE 
+PROGRAM (Contd) 
+ C11.3 DISTRIBUTED GENERATION PROGRAM (Contd) 
+C. Distributed Generation Program Availability 
+The Distributed Generation Program is available for eligible Distributed Generation customers for service 
+rendered on and after January 1, 2021. 
+A customer participating in a net metering program approved by the Commission before January 1, 2021 shall 
+have the option to take service under this tariff at the time service under the terms and conditions of the previous 
+net metering program terminates in accordance with MCL 460.1183. 
+The Distributed Generation Program is voluntary and available on a first come, first served basis for new customer 
+participants or existing customer participants increasing their aggregate generation. The combined legacy Net 
+Metering and DG program size is equal to 4.0% of the Company’s average instate peak load for Full-Service 
+customers during the previous 5 calendar years. Within the Program Capacity, 2.0% is reserved for Category 1 
+legacy Net Metering and Distributed Generation customers, 1.0% is reserved for Category 2 legacy Net Metering 
+and Distributed Generation customers and 1.0% is reserved for Category 3 legacy Net Metering and Distributed 
+Generation customers. The Company shall notify the Commission upon the Program reaching capacity in any 
+Category. 
+If an existing Net Metering customer increases the aggregate generation following the effective date of the 
+Distributed Generation Program, all onsite generation will be subject to the terms and conditions of the Distributed 
+Generation Program. 
+D. Customer Eligibility 
+In order to be eligible to participate in the Distributed Generation Program, customers must generate a portion 
+or all of their own retail electricity requirements with an Eligible Electric Generator which utilizes a 
+Renewable Energy Resource, as defined in C11.3.B., Distributed Generation Definitions. 
+A customer's eligibility to participate in the Distributed Generation Program is conditioned on the full 
+satisfaction of any payment term or condition imposed on the customer by pre-existing contracts or tariffs 
+with the Company, including those imposed by participation in the Distributed Generation Program, or those 
+required by the interconnection of the customer's Eligible Electric Generator to the Company's distribution 
+system. 
+E. Customer Billing – Category 1, 2 and 3 Customers 
+1. Inflow 
+a. Full Service Customers 
+The customer will be billed according to their retail rate schedule, plus surcharges, and Power Supply 
+Cost Recovery (PSCR) Factor on metered Inflow for the billing period or time-based pricing period. 
+b. Retail Open Access Customers 
+The customer will be billed as stated on the customer’s Retail Open Access Rate Schedule on metered 
+Inflow for the billing period or time-based pricing period. 
+2. Customer Billing – Outflow Credit 
+The customer will be credited on Outflow for the billing period or time-based pricing period. The credit shall 
+be applied to the current billing month and shall be used to offset power supply charges on that bill. Any 
+excess credit not used will be carried forward to subsequent billing periods. Unused Outflow Credit from 
+previous months will be applied to power supply charges in the current billing month, if applicable. Outflow 
+credit is non-transferrable. 
+(Continued on Sheet No. C-64.30) 
+Issued August 21, 2024 by Effective for service rendered on
+Garrick J. Rochow, and after January 1, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated July 23, 2024
+in Case No. U-21506
+ 
+
+PDF PAGE 399 (one-based)
+M.P.S.C. No. 14 – Electric Second Revised Sheet No. C-64.60 
+Consumers Energy Company Cancels First Revised Sheet No. C-64.60 
+(To add Simple Renewable Program)
+(Continued from Sheet No. C-64.50) 
+C11. SELF-GENERATION, NET METERING, DISTRIBUTED GENERATION AND SIMPLE RENEWABLE 
+PROGRAM (Contd) 
+ C11.3 DISTRIBUTED GENERATION PROGRAM (Contd) 
+F. Application for Service 
+In order to participate in the Distributed Generation Program, a customer shall submit completed Interconnection 
+and Distributed Generation Program Applications, including the application fee of $50 to the Company. The 
+application fees are non-refundable. 
+The Distributed Generation Program application fee is waived if the customer is transitioning from the Net 
+Metering Program to the Distributed Generation Program, without a system modification. 
+If a customer does not act or provide proper response to the Company on an application, when some action is 
+required by the customer, the application will be voided by the Company after 6 months. 
+G. Generator Requirements 
+The customer’s requirement for electricity shall be determined by one of the following methods: 
+1. The customer’s annual energy usage, measured in kWh, during the previous 12-month period. 
+2. In instances where complete and correct data is not available or where the customer is making changes on￾site that will affect total usage, the Company and the customer shall mutually agree on a method to determine 
+the customer’s annual electric requirement. 
+The aggregate capacity of Eligible Electric Generators shall be determined by the aggregate projected annual kWh 
+output of the generator(s). 
+The customer is required to provide the Company with a capacity rating in kWAC and kWDC of the generating unit 
+and a projected monthly and annual Kilowatt-hour output of the generating unit when completing the Company’s 
+Distributed Generation Program Application. 
+The customer need not be the owner or operator of the eligible generation equipment, but is ultimately responsible 
+for ensuring compliance with all technical, engineering, and operational requirements suitable for the Company’s 
+distribution system. 
+H. Generator Interconnection Requirements 
+The requirements for interconnecting a generator with the Company’s facilities are contained in Rule B8., 
+Interconnection and Distributed Generation Standards, the Michigan Electric Utility Generator Interconnection 
+Requirements, and the Company’s Generation Interconnection Supplement to Michigan Electric Utility Generator 
+Interconnection Requirements. All such interconnection requirements must be met prior to the effective date of a 
+customer’s participation in the Distributed Generation Program. The customer must sign an Interconnection and 
+Operating Agreement with the Company and fulfill all requirements as specified in the Agreement. The customer 
+shall pay actual interconnection costs associated with participating in the Distributed Generation Program, subject 
+to limits established by the Michigan Public Service Commission. 
+(Continued on Sheet No. C-64.70) 
+Issued August 21, 2024 by Effective for service rendered on
+Garrick J. Rochow, and after January 1, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated July 23, 2024
+in Case No. U-21506 

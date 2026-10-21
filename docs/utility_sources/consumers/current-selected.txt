@@ -1,0 +1,1447 @@
+PDF PAGE 75 (one-based)
+M.P.S.C. No. 14 – Electric Original Sheet No. C-35.00
+Consumers Energy Company
+(To reformat Rate Book)
+(Continued From Sheet No. C-34.00)
+C7. METERING AND METERING EQUIPMENT
+The customer shall provide, free of expense to the Company and close to the point of service entrance, a space suitable 
+to the Company for the installation of the necessary metering equipment. The customer shall permit only authorized 
+agents of the Company or other persons lawfully authorized to do so, to initiate service or to inspect, test, repair or 
+remove Company-owned equipment. If the meters or metering equipment are tampered with, damaged or destroyed 
+through either the intent or neglect of the customer, the cost of necessary repairs or replacements shall be paid by the 
+customer.
+The Company shall make a test of any metering installation upon request of the customer if 12 months or more have 
+elapsed since the last request test of the meter in the same location and if the customer agrees to accept the results of 
+the test as the basis for determining the difference claimed. The test will consist of a test for accuracy, a check of the 
+register, and a check of the meter connections on the customer's premises.
+The Company shall be under no obligation to test meters more frequently than once in any 12-month period. If the 
+customer requests a test on a more frequent basis, a test fee of $20.00 shall be paid in advance by the customer. If such 
+test reveals the meter registration to be outside the accuracy limits prescribed in Rule B1., Technical Standards for 
+Electric Service, the cost of the test shall be refunded and a billing adjustment made. The customer may be present at 
+the time of the test if the customer makes a request prior to the test. A written report shall be made to the customer by 
+the Company and the Company shall maintain a record of the test.
+C8. POWER SUPPLY COST RECOVERY (PSCR) CLAUSE
+A. Applicability of Clause
+This clause permits the monthly adjustment of rates for power supply to allow recovery of the booked costs of 
+fuel and purchased and net interchange power incurred under reasonable and prudent policies and practices, in 
+accordance with Michigan Compiled Laws, Annotated, 460.6 et seq. All rates for electric service unless 
+otherwise provided in the applicable Rate Schedule shall include a Power Supply Cost Recovery Factor.
+For purposes of this clause, the following definitions apply:
+"Power Supply Cost Recovery Factor" means that element of the rates to be charged for electric service to 
+reflect Power Supply Costs incurred and made pursuant to a Power Supply Cost Recovery Clause incorporated 
+in the rates or Rate Schedules.
+"Power Supply Cost Recovery Plan" means a filing made annually describing the expected sources of electric 
+power supply and changes over a future 12-month period specified by the Commission and requesting for each 
+of those 12 months a specific Power Supply Cost Recovery Factor.
+(Continued on Sheet No. C-36.00)
+Issued December 13, 2019 by Effective for service rendered on
+Patti Poppe, and after November 15, 2019
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated November 14, 2019
+in Case No. U-18249
+Michigan Public Service 
+Commission 
+Filed DBR 
+January 6, 2020
+
+PDF PAGE 76 (one-based)
+M.P.S.C. No. 14 – Electric Sixth Revised Sheet No. C-36.00
+Consumers Energy Company Cancels Fifth Revised Sheet No. C-36.00
+(To revise PSCR adjustment factor)
+(Continued From Sheet No. C-35.00)
+C8. POWER SUPPLY COST RECOVERY (PSCR) CLAUSE (Contd)
+A. Applicability of Clause (Contd)
+"Power Supply Costs" means those elements of the costs of fuel and purchased and net interchanged power as 
+determined by the Commission to be included in the calculation of the Power Supply Cost Recovery 
+Factor. The Commission determined in its Order in Case No. U-10335 dated May 10, 1994 that the fossil plant 
+emissions permit fees over or under the amount included in base rates charged the Company are an element of 
+fuel costs for the purpose of the clause.
+B. Billing
+(1) The Power Supply Cost Recovery Factor shall consist of an adjustment factor of 1.07273 applied to 
+projected average booked cost of fuel burned for electric generation and purchased and net interchange 
+power incurred above or below a cost base of $0.05570 per kWh (excluding line losses). Average booked 
+costs of fuel burned and purchased and net interchange power shall be equal to the booked costs in that 
+period divided by that period's net system kWh requirements. The average booked costs so determined 
+shall be truncated to the full $0.00001 cost per Kilowatt-hour. Net system kWh requirements shall be the 
+sum of the net kWh generation and net kWh purchased and interchange power.
+(2) Each month the Company shall include in its rates a Power Supply Cost Recovery Factor up to the 
+maximum authorized by the Commission as shown on Sheet No. D-6.00.
+Should the Company apply lesser factors than those shown on Sheet No. D-6.00, or if the factors are later 
+revised pursuant to Commission Orders or Michigan Compiled Laws, Annotated, 460.6 et seq., the 
+Company shall notify the Commission if necessary and file a revised Sheet No. D-6.00.
+C. General Conditions
+(1) The power supply and cost review shall be conducted not less than once a year for the purpose of 
+evaluating the Power Supply Cost Recovery Plan filed by the Company and to authorize appropriate 
+Power Supply Cost Recovery Factors. Contemporaneously with its Power Supply Cost Recovery Plan, 
+the Company shall file a 5-year forecast of the power supply requirements of its customers, its anticipated 
+sources of supply and projections of Power Supply Costs.
+(2) Not more than 45 days following the last day of each billing month in which a Power Supply Cost 
+Recovery Factor has been applied to customers' bills, the Company shall file with the Commission a 
+detailed statement for that month of the revenues recorded pursuant to the Power Supply Cost Recovery 
+Factor and the allowance for cost of power included in the base rates established in the latest Commission 
+order for the Company, and the cost of power supply.
+(3) All revenues collected pursuant to the Power Supply Cost Recovery Factors and the allowance for power 
+included in the base rates are subject to annual reconciliation proceedings.
+(Continued on Sheet No. C-37.00)
+Issued April 24, 2026 by Effective for bills rendered on after the
+Garrick J. Rochow, Company’s May 2026 Billing Month
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 117 (one-based)
+M.P.S.C. No. 14 – Electric Fourth Revised Sheet No. C-64.10
+Consumers Energy Company Cancels Third Revised Sheet No. C-64.10
+(To update C11.3 Distributed Generation Program)
+(Continued from Sheet No. C-64.00)
+C11. SELF-GENERATION, NET METERING, DISTRIBUTED GENERATION AND SIMPLE RENEWABLE 
+PROGRAM (Contd)
+C11.3 DISTRIBUTED GENERATION PROGRAM
+A. The Distributed Generation Program is offered as authorized by 2008 PA 295 as amended, 1939 PA 3, as 
+amended, and the Commission in Case Nos. U-20697 and U-21767.
+B. Distributed Generation Definitions
+1. Eligible Electric Generator – a renewable energy system or a methane digester with a generation capacity 
+limited to no more than 110% of the customer’s electricity consumption for the previous 12 months and does 
+not exceed 550 kW of aggregate generation at a single site.
+2. Inflow – the metered inflow delivered by the Company to the customer during the billing month or time-based 
+pricing period.
+3. Outflow – the metered quantity of the customer’s generation not used on site and exported to the utility during 
+the billing month or time-based pricing period.
+4. Outflow Demand for Primary and Secondary Rate Customers – the total metered outflow quantity of Kilowatts 
+(kW) during the On-Peak period divided by the number of On-Peak hours in the billing period.
+5. Program Capacity – maximum program limit of 10.0% of the Company’s average Peak Demand for Full￾Service Customers during the previous five calendar years. Within the Program Capacity, not less than 50% is 
+reserved for legacy Net Metering Customers and Distributed Generation Customers with Eligible Electric 
+Generators with an aggregate nameplate capacity of 20 kW or less and not more than 50% is reserved for 
+legacy Net Metering Customers and Distributed Generation Customers with Eligible Electric Generators with 
+an aggregate nameplate capacity of greater than 20 kW but not more than 550 kW.
+6. Renewable Energy Resource – a resource that naturally replenishes over a human, not geological, timeframe 
+and that is ultimately derived from solar power, water power, or wind power. Renewable energy resource does 
+not include petroleum, nuclear, natural gas, industrial waste, post-use polymers, tires, tire-derived fuel, plastic 
+or coal. A renewable energy resource comes from the sun or from thermal inertia of the earth and minimizes 
+the output of toxic material in the conversion of the energy and includes, but is not limited to, all of the 
+following:
+a. Biomass, as described in any of the following:
+i. Landfill gas as described in subparagraph (g).
+ii. Gas from a methane digester using only feedstock as described in subparagraph (h).
+iii. Biomass used by renewable energy systems that are in commercial operation on 
+February 27, 2024.
+iv. Trees and wood used in renewable energy systems that are in commercial operation after 
+February 27, 2024, if the trees and wood are derived from sustainably managed forests or 
+procurement systems, as defined in Section 261c of the management and budget act, 
+1984 PA 431, MCL 18.1261c.
+b. Solar and solar thermal energy
+c. Wind energy
+d. Kinetic energy of moving water, including the following:
+i. Waves, tides or currents
+ii. Water released through a dam
+e. Geothermal energy
+f. Thermal energy produced from a geothermal heat pump
+g. Landfill gas produced from solid waste facilities.
+ h. Any of the following if used as feedstock in a methane digester: 
+ i. Municipal wastewater treatment sludge, wastewater, and sewage.
+ ii. Food waste and food production processing waste.
+ iii. Animal manure.
+iv. Organics separated from municipal solid waste.
+(Continued on Sheet No. C-64.20)
+Issued April 2, 2025 by Effective for service rendered on
+Garrick J. Rochow, and after March 14, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 13, 2025
+in Case No. U-21796
+
+PDF PAGE 118 (one-based)
+M.P.S.C. No. 14 – Electric Fourth Revised Sheet No. C-64.20 
+Consumers Energy Company Cancels Third Revised Sheet No. C-64.20
+(To revise C11.3 Distributed Generation Program)
+(Continued from Sheet No. C-64.10) 
+C11. SELF-GENERATION, NET METERING, DISTRIBUTED GENERATION AND SIMPLE RENEWABLE 
+PROGRAM (Contd) 
+ C11.3 DISTRIBUTED GENERATION PROGRAM (Contd)
+C. Distributed Generation Program Availability
+The Distributed Generation Program is available for eligible Distributed Generation customers for service 
+rendered on and after January 1, 2021.
+A customer participating in a net metering program approved by the Commission before January 1, 2021 shall 
+have the option to take service under this tariff at the time service under the terms and conditions of the previous 
+net metering program terminates in accordance with MCL 460.1183.
+The Distributed Generation Program is voluntary and available on a first come, first served basis for new customer 
+participants or existing customer participants increasing their aggregate generation. The combined legacy Net 
+Metering and DG program size is limited to the Program Capacity as defined in C11.3.B., Distributed Program 
+Definitions. The Company shall notify the Commission upon the Program reaching capacity in any Category.
+If an existing Net Metering customer increases the aggregate generation following the effective date of the 
+Distributed Generation Program, all onsite generation will be subject to the terms and conditions of the Distributed 
+Generation Program. 
+D. Customer Eligibility
+In order to be eligible to participate in the Distributed Generation Program, customers must generate a portion 
+or all of their own retail electricity requirements with an Eligible Electric Generator which utilizes a 
+Renewable Energy Resource, as defined in C11.3.B., Distributed Generation Definitions.
+A customer's eligibility to participate in the Distributed Generation Program is conditioned on the full 
+satisfaction of any payment term or condition imposed on the customer by pre-existing contracts or tariffs 
+with the Company, including those imposed by participation in the Distributed Generation Program, or those 
+required by the interconnection of the customer's Eligible Electric Generator to the Company's distribution
+system.
+E. Customer Billing 
+1. Inflow 
+a. Full Service Customers
+The customer will be billed according to their retail rate schedule, plus surcharges, and Power Supply 
+Cost Recovery (PSCR) Factor on metered Inflow for the billing period or time-based pricing period.
+b. Retail Open Access Customers
+The customer will be billed as stated on the customer’s Retail Open Access Rate Schedule on metered 
+Inflow for the billing period or time-based pricing period.
+2. Customer Billing – Outflow Credit
+The customer will be credited on Outflow for the billing period or time-based pricing period. The credit shall 
+be applied to the current billing month and shall be used to offset eligible electric charges on that bill. Power 
+Plant Securitization Charges and Karn 1 & 2 Securitization Charges are ineligible for offset by Distributed 
+Generation Outflow Credit. Any excess credit not used will be carried forward to subsequent billing periods. 
+Unused Outflow Credit from previous months will be applied to eligible electric charges in the current billing 
+month, if applicable. Outflow credit is non-transferrable. At the Company’s discretion, a check may be issued 
+to the customer.
+(Continued on Sheet No. C-64.30) 
+Issued April 9, 2025 by Effective for service rendered on
+Garrick J. Rochow, and after April 4, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 21, 2025
+in Case No. U-21585
+
+PDF PAGE 122 (one-based)
+M.P.S.C. No. 14 – Electric Third Revised Sheet No. C-64.60
+Consumers Energy Company Cancels Second Revised Sheet No. C-64.60
+(To update C11.3 Distributed Generation Program)
+(Continued from Sheet No. C-64.50)
+C11. SELF-GENERATION, NET METERING, DISTRIBUTED GENERATION AND SIMPLE RENEWABLE 
+PROGRAM (Contd)
+C11.3 DISTRIBUTED GENERATION PROGRAM (Contd)
+F. Application for Service
+In order to participate in the Distributed Generation Program, a customer shall submit completed Interconnection 
+and Distributed Generation Program Applications, including the application fee of $50 to the Company. The 
+application fees are non-refundable.
+The Distributed Generation Program application fee is waived if the customer is transitioning from the Net 
+Metering Program to the Distributed Generation Program, without a system modification.
+If a customer does not act or provide proper response to the Company on an application, when some action is 
+required by the customer, the application will be voided by the Company after 6 months.
+G. Generator Requirements
+The customer’s requirement for electricity shall be determined by one of the following methods:
+1. The customer’s annual energy usage, measured in kWh, during the previous 12-month period.
+2. In instances where complete and correct data is not available or where the customer is making changes on￾site that will affect total usage, the Company and the customer shall mutually agree on a method to determine 
+the customer’s annual electric requirement.
+The aggregate capacity of Eligible Electric Generators shall be determined by the aggregate projected annual kWh 
+output of the generator(s). 
+The customer is required to provide the Company with a capacity rating in kWAC and kWDC of the generating unit 
+and a projected monthly and annual Kilowatt-hour output of the generating unit when completing the Company’s 
+Distributed Generation Program Application.
+The customer need not be the owner or operator of the eligible generation equipment, but is ultimately responsible 
+for ensuring compliance with all technical, engineering, and operational requirements suitable for the Company’s 
+distribution system.
+H. Generator Interconnection Requirements
+The requirements for interconnecting a generator with the Company’s facilities are contained in Rule B8., 
+Interconnection and Distributed Generation Standards, the Michigan Electric Utility Generator Interconnection 
+Requirements, and the Company’s Generation Interconnection Procedures. All such interconnection requirements 
+must be met prior to the effective date of a customer’s participation in the Distributed Generation Program. The 
+customer must sign an Interconnection and Operating Agreement with the Company and fulfill all requirements as 
+specified in the Agreement. The customer shall pay actual interconnection costs associated with participating in 
+the Distributed Generation Program, subject to limits established by the Michigan Public Service Commission.
+(Continued on Sheet No. C-64.70)
+Issued April 2, 2025 by Effective for service rendered on
+Garrick J. Rochow, and after March 14, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 13, 2025
+in Case No. U-21796
+
+PDF PAGE 123 (one-based)
+M.P.S.C. No. 14 – Electric First Revised Sheet No. C-64.70 
+Consumers Energy Company Cancels Original Sheet No. C-64.70
+(To add Simple Renewable Program)
+ (Continued from Sheet No. C-64.60) 
+C11. SELF-GENERATION, NET METERING, DISTRIBUTED GENERATION AND SIMPLE RENEWABLE 
+PROGRAM (Contd) 
+ C11.3 DISTRIBUTED GENERATION PROGRAM (Contd) 
+ 
+I. Metering Requirements 
+Metering requirements shall be specified by the Company, as detailed below. 
+All metering must be capable of recording inflow and outflow, and all parameters metered on the customer’s 
+otherwise applicable retail rate schedule, for both Full Service and Retail Open Access customers. 
+J. Distribution Line Extension and/or Extraordinary Facilities 
+The Company reserves the right to make special contractual arrangements with Distributed Generation Program 
+customers whose utility service requires investment in electric facilities, as authorized by the Company’s Rule 
+C1.4, Extraordinary Facility Requirements and Charges, Rule C1.6, General Provisions of Service, and Rule C6., 
+Distribution Systems, Line Extensions and Service Connections, as set out in the Company’s Electric Rate Book. 
+The Company further reserves the right to condition a customer’s participation in the Distributed Generation 
+Program on a satisfactory completion of any such contractual requirements. 
+K. Customer Termination from the Distributed Generation Program 
+A participating customer may terminate participation in the Company’s Distributed Generation Program at any 
+time for any reason on sixty days’ notice. In the event that a customer who terminates participation in the 
+Distributed Generation Program wishes to re-enroll, that customer must reapply as a new program participant, 
+subject to program size limitations, application queue, and application fee. 
+The Company may terminate a customer from the Distributed Generation Program if the customer fails to 
+maintain eligibility requirements, fails to comply with the terms of the operating agreement, or if the customer’s 
+facilities are determined not to be in compliance with technical, engineering, or operational requirements suitable 
+for the Company’s distribution system. The Company will provide sixty days’ notice to the customer prior to 
+termination from the Distributed Generation Program, except in situations the Company deems dangerous or 
+hazardous. Such notice will include reason(s) for termination. 
+Upon customer termination from the Distributed Generation Program, any existing credit on the customer’s 
+account will either be applied to the customer’s final bill or refunded to the customer. The Company will refund 
+to the customer any remaining credit in excess of the final bill amount. Distributed Generation Program credit is 
+non-transferrable. 
+L. Company Termination of the Distributed Generation Program 
+Company termination of the Distributed Generation Program may occur upon receipt of Commission approval. 
+Upon Company termination of the Distributed Generation Program, any existing credit on the customer’s account 
+will either be applied to the customer’s final bill or refunded to the customer. The Company will refund to the 
+customer any remaining credit in excess of the final bill amount. Distributed Generation Program credit is non￾transferrable. 
+ (Continued on Sheet No. D-64.80)
+Issued August 21, 2024 by Effective for service rendered on
+Garrick J. Rochow, and after January 1, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated July 23, 2024
+in Case No. U-21506 
+
+PDF PAGE 131 (one-based)
+M.P.S.C. No. 14 – Electric Original Sheet No. C-68.00
+Consumers Energy Company
+(To reformat Rate Book)
+SECTION C – PART III
+COMPANY RULES AND REGULATIONS
+(NON-RESIDENTIAL CUSTOMERS)
+INTENT OF SECTION C - PART III
+These Company Rules and Regulations for Non-Residential customers are not to supersede but are in addition to Rule B1., 
+Technical Standards for Electric Service; and Rule B2., Consumer Standards and Billing Practices for Electric and Natural Gas 
+Service
+C13. CUSTOMER DEPOSITS
+The Company may require a cash deposit from the transferor or transferee upon receipt of a bulk transfer notice. The 
+Company shall pay interest on such deposits in accordance with Rule B2., Consumer Standards and Billing Practices 
+for Electric and Natural Gas Service
+C14. PROVISIONS GOVERNING THE APPLICATION OF ON-PEAK AND OFF-PEAK RATES
+A. Energy consumed under Large General Service Primary Demand Rate GPD shall be subject to the on-peak and 
+off-peak charges as set forth in the Rate Schedule and as defined in the Schedule of On-Peak and Off-Peak 
+Hours.
+Demands created under General Service Secondary Demand Rate GSD and Large General Service Primary 
+Demand Rate GPD shall be subject to the on-peak and off-peak charges as set forth in these Rate Schedules and 
+as defined in the Schedule of On-Peak and Off-Peak Hours.
+B. Schedule of On-Peak and Off-Peak Hours
+Except where otherwise provided, the following schedule shall apply Monday through Friday (except holidays 
+designated by the Company). Weekends and holidays are off-peak.
+(1) On-Peak Hours: 11:00 AM to 7:00 PM
+(2) Off-Peak Hours: 7:00 PM to 11:00 AM
+C. Holidays Designated by the Company
+The following are designated as holidays by the Company
+• New Year's Day - January 1
+• Memorial Day - Last Monday in May
+• Independence Day - July 4
+• Labor Day - First Monday in September
+• Thanksgiving Day - Fourth Thursday of November
+• Christmas Day - December 25
+Whenever January 1, July 4 or December 25 falls on Sunday, extended holiday periods such as Monday, 
+January 2; Monday, July 5 and Monday, December 26 shall not be considered as holidays for application of off￾peak hours.
+(Continued on Sheet No. C-69.00)
+Issued December 13, 2019 by Effective for service rendered on
+Patti Poppe, and after November 15, 2019
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated November 14, 2019
+in Case No. U-18249
+Michigan Public Service 
+Commission 
+Filed DBR 
+January 6, 2020
+
+PDF PAGE 146 (one-based)
+M.P.S.C. No. 14 – Electric First Revised Sheet No. D-1.00 
+Consumers Energy Company Cancels Original Sheet No. D-1.00
+(To revise General Terms and Conditions of the Rate Schedules) 
+SECTION D
+RATE SCHEDULES
+GENERAL TERMS AND CONDITIONS OF THE RATE SCHEDULES
+A. Bills for utility service are subject to Michigan State Sales Tax. Customers may file a request with the Company for 
+partial or total exemption from the application of sales tax in accordance with the laws of the State of Michigan and the 
+rules of the Michigan State Department of Treasury. 
+B. Bills shall be increased within the limits of political subdivisions which levy special taxes, license fees or rentals 
+against the Company's property, or its operation, or the production and/or sale of electric energy, to offset such special 
+charges and thereby prevent other customers from being compelled to share such local increases. 
+C. Bills shall be increased to offset any new or increased specific tax or excise imposed by any governmental authority 
+upon the Company's generation or sale of electrical energy. 
+D. A customer that commences service under any of the Company's Rate Schedules thereby agrees to abide by all of the 
+applicable Rules and Regulations contained in this Rate Book for Electric Service. 
+E. Full Service Customers, applicants for service, or operators with generating facilities on or after June 8, 2012 are 
+required to take service under the Self-Generation Provision (SG) or General Service Self Generation Rate GSG-2. 
+F. Non-Residential Customers with load exceeding 1MW may participate in any regional transmission organization 
+wholesale market program per the terms of the Commission order in Case No. U-21099 dated February 23, 2023. All 
+other Full Service Customers shall not participate in any regional transmission organization wholesale market program 
+until the Michigan Public Service Commission issues an order authorizing participation. 
+Issued March 22, 2024 by Effective for service rendered on
+Garrick J. Rochow, and after March 15, 2024
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 1, 2024
+in Case No. U-21389
+
+PDF PAGE 147 (one-based)
+M.P.S.C. No. 14 – Electric Fifth Revised Sheet No. D-2.00 
+Consumers Energy Company Cancels Fourth Revised Sheet No. D-2.00
+(To add Rate LED)
+SURCHARGES 
+ 
+ Renewable Energy 
+Plan Surcharge 
+(Case No. U-17301) 
+Effective beginning the 
+Rate Schedule July 2014 Billing Month(2)
+Residential Rates $ 0.00/billing meter 
+Rate GS, GSTU, and GSD (1)
+ Tier 1: 0 – 1,250 kWh/mo. $ 0.00/billing meter 
+ Tier 2: 1,251 – 5,000 kWh/mo. 0.00/billing meter 
+ Tier 3: 5,001 – 30,000 kWh/mo. 0.00/billing meter 
+ Tier 4: 30,001 – 50,000 kWh/mo. 0.00/billing meter 
+ Tier 5: > 50,000 kWh/mo. 0.00/billing meter 
+Rate GP, GPD, GPTU and EIP (1) 
+ Tier 1: 0 – 5,000 kWh/mo. $ 0.00/billing meter 
+ Tier 2: 5,001 – 10,000 kWh/mo. 0.00/billing meter 
+ Tier 3: 10,001 – 30,000 kWh/mo. 0.00/billing meter 
+ Tier 4: 30,001 – 50,000 kWh/mo. 0 00/billing meter 
+ Tier 5: > 50,000 kWh/mo. 0.00/billing meter 
+Rate GSG-2 NA 
+Rate LED 0.00/billing meter 
+Rate LTILRR 0.00/billing meter 
+Rate GML 
+Tier 1: 0 – 1,250 kWh/mo. $ 0.00/billing meter 
+Tier 2: 1,251 – 5,000 kWh/mo. 0.00/billing meter 
+Tier 3: > 5,000 kWh/mo. 0.00/billing meter 
+Rate GUL 0.00/luminaire 
+Rate GU-LED 0.00/luminaire 
+Rate GU 
+Tier 1: 0 – 1,250 kWh/mo. 0.00/billed account 
+Tier 2: 1,251 – 5,000 kWh/mo. 0.00/billed account 
+Tier 3: > 5,000 kWh/mo. 0.00/billed account 
+Rate PA NA 
+Rate ROA-R, ROA-S, ROA-P NA 
+All Surcharges shall be applied on a monthly basis. The customer’s consumption will be reviewed annually in the January bill 
+month. Following the annual review, the customer may be subsequently moved to the Surcharge level for their applicable rate 
+for the next billing period based on the customer’s average consumption for the previous year. In situations where no historical 
+consumption is available, the monthly Surcharge level will be based on the lowest consumption category for the secondary rate 
+schedules or the lowest consumption category for primary rate schedules. No retroactive adjustment will be made due to the 
+application of the REP Surcharges associated with increases or decreases in consumption. 
+(1)Municipal Pumping customers shall be excluded from the Renewable Energy Plan Surcharge. 
+(2)A Renewable Energy Plan Surcharge will be in effect for the period of the September 2009 Bill Month through the August 2029 Bill 
+Month. The amount may vary during specific months as authorized by the Michigan Public Service Commission. Applicable cases include Case 
+Nos. U-15805, U-16543, U-16581 and U-17301. 
+Issued January 14, 2022 by Effective for service rendered on 
+Garrick J. Rochow, and after December 23, 2021
+President and Chief Executive Officer, 
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated December 22, 2021
+in Case No. U-21160 
+
+PDF PAGE 148 (one-based)
+M.P.S.C. No. 14 – Electric Sixteenth Revised Sheet No. D-2.10
+Consumers Energy Company Cancels Fifteenth Revised Sheet No. D-2.10
+(To revise Energy Efficiency Program Surcharge)
+SURCHARGES
+Rate Schedule
+Energy Efficiency
+Program Surcharge
+(Case No. U-21680)
+Effective beginning the
+March 2026
+Billing Month(1)(6)
+Energy Efficiency
+Self-Directed
+Customer Surcharge
+(Case No. U-21680)
+Effective beginning the
+March 2026
+Billing Month (6)(7)
+Residential Rates $ 0.004617/kWh NA
+Non-Residential Rates (2)
+Tier 1: 0 – 2,000 kWh/mo. $ 8.25/billing meter $ 1.97/month
+Tier 2: 2,001 – 5,000 kWh/mo. 59.64/billing meter 14.38/month
+Tier 3: 5,001 – 10,000 kWh/mo. 128.73/billing meter 30.97/month
+Tier 4: 10,001 – 30,000 kWh/mo. 326.17/billing meter 78.98/month
+Tier 5: 30,001 – 50,000 kWh/mo. 747.53/billing meter 180.27/month
+Tier 6: 50,001 – 75,000 kWh/mo. 1117.28/billing meter 269.70/month
+Tier 7: 75,0001 – 100,000 kWh/mo. 1406.91/billing meter 337.03/month
+Tier 8: 100,001 – 150,000 kWh/mo. 1771.89/billing meter 429.98/month
+Tier 9: 150,001 – 250,000 kWh/mo. 2062.13/billing meter 500.35/month
+Tier 10: >250,000 kWh/mo. 2350.47/billing meter 569.40/month
+Rate GSG-2 (4) NA NA
+Rate GML (3) (5) NA NA
+Rate GUL (3) (5) $ 0.27/fixture per month (3) NA
+Rate GU-LED NA NA
+Rate GU NA NA
+Rate PA NA NA
+Rate ROA-R, ROA-S, ROA-P Same as Full Service
+Delivery Rate Schedule
+Same as Full Service 
+Delivery Rate Schedule
+The customer’s consumption will be reviewed annually in the January bill month. Following the annual review, the customer 
+may be subsequently moved to the Surcharge level for their applicable rate for the next billing period based on the customer’s 
+average consumption for the previous year. In situations where no historical consumption is available, the monthly Surcharge 
+level will be based on the lowest consumption category for the secondary rate schedules, or the lowest consumption category for 
+primary rate schedules. No retroactive adjustment will be made due to the application of the Energy Efficiency Program 
+Surcharge associated with the increases or decreases in consumption.
+(1) This is subject to all general terms and conditions as shown in Rule C12, Energy Efficiency. The Energy Efficiency Program 
+Surcharge amount may vary during specific months as authorized by the Michigan Public Service Commission. The Company 
+will file a new tariff sheet to reflect any change in surcharges once the financial incentive recovery period has been completed.
+(2) Non-Residential Rates include GS, GSTU, GSD, GP, GPTU, GPD, EIP, LTILRR and LED.
+(3) Company-Owned lighting fixture customers served on General Service Unmetered Lighting Rate GUL shall pay this 
+surcharge. Rate codes 1455 and 1460 will not be charged this surcharge.
+(4) Additional Rate Schedules can opt-in to the Energy Efficiency Program as described in Rule C12., Energy Efficiency.
+(5) Lighting rates that choose to opt-in to the Energy Efficiency Program shall be assessed $0.27 per fixture per month.
+(6) This charge will be shown on the monthly utility bill using the methodology as described in Rule C12, Energy Efficiency.
+(7) An eligible customer who files and implements a self-directed plan in compliance with Rule C12 is required to pay the Energy 
+Efficiency Self-Directed Program Surcharge.
+Issued February 20, 2026 by Effective for bills rendered on and after
+Garrick J. Rochow, the Company’s March 2026 Billing Month
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated February 19, 2026
+in Case No. U-21680
+
+PDF PAGE 149 (one-based)
+M.P.S.C. No. 14 – Electric Tenth Revised Sheet No. D-2.20
+Consumers Energy Company Cancels Ninth Revised Sheet No. D-2.20
+(To update Demand Response Surcharge)
+SURCHARGES
+Electric Rate Case 
+Demand Response Surcharge
+(Case No. U-21870) 
+Effective for service rendered 
+Rate Schedule on and after May 1, 2026 
+Rate RSP $0.002224/kWh
+Rate RSH 0.002224/kWh
+Rate RPM 0.002224/kWh
+Rate RSM 0.002224/kWh
+Rate GS 0.002000/kWh
+Rate GSTU 0.002000/kWh
+Rate GSD 0.67/kW
+Rate GP
+Customer Voltage Level 1 0.001705/kWh
+Customer Voltage Level 2 0.001725/kWh
+Customer Voltage Level 3 0.001743/kWh
+Rate GPD
+Customer Voltage Level 1 0.74/kW
+Customer Voltage Level 2 0.76/kW
+Customer Voltage Level 3 0.77/kW
+Rate GPTU
+Customer Voltage Level 1 0.001519/kWh
+Customer Voltage Level 2 0.001537/kWh
+Customer Voltage Level 3 0.001552/kWh
+Rate EIP
+Customer Voltage Level 1 0.001274/kWh
+Customer Voltage Level 2 0.001290/kWh
+Customer Voltage Level 3 0.001302/kWh
+Rate LED
+Customer Voltage Level 1 NA
+Customer Voltage Level 2 NA
+Customer Voltage Level 3 NA
+Rate LTILRR NA
+Rate GSG-2
+Customer Voltage Level 1 NA
+Customer Voltage Level 2 NA
+Customer Voltage Level 3 NA
+Rate GML 0.000517/kWh
+Rate GUL 0.000487/kWh
+Rate GUL-LED 0.000487/kWh
+Rate GU 0.001317/kWh
+Rate PA NA
+Rate ROA-R NA
+Rate ROA-S NA
+Rate ROA-P NA
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 151 (one-based)
+M.P.S.C. No. 14 – Electric Ninth Revised Sheet No. D-2.40
+Consumers Energy Company Cancels Eighth Revised Sheet No. D-2.40
+(To remove U-21585 Investment Recovery Mechanism and
+to add U-21870 Investment Recovery Mechanism)
+SURCHARGES
+Investment Recovery
+ Investment Recovery Mechanism (IRM)
+ Mechanism (IRM) Reconciliation (Case No. U-21870)
+ (Case No. U-21918) Effective for service rendered
+ Effective for the May 1, 2026 through
+Rate Schedule May 2026 Billing Month April 30, 2027
+Rate RSP $(0.02)/customer $0.000699/kWh
+Rate RSH (0.02)/customer 0.000699/kWh
+Rate RPM (0.02)/customer 0.000699/kWh
+Rate RSM (0.02)/customer 0.000699/kWh
+Rate GS (0.05)/customer 0.000534/kWh
+Rate GSTU (0.05)/customer 0.000534/kWh
+Rate GSD (0.25)/customer 0.000412/kWh
+Rate GP
+ Customer Voltage Level 1 (0.55)/customer 0.000066/kWh
+Customer Voltage Level 2 (0.43)/customer 0.000101/kWh 
+Customer Voltage Level 3 (0.47)/customer 0.000173/kWh
+Rate GPD
+Customer Voltage Level 1 (4.69)/customer 0.000045/kWh
+Customer Voltage Level 2 (6.40)/customer 0.000069/kWh
+Customer Voltage Level 3 (1.51)/customer 0.000118/kWh
+Rate GPTU
+Customer Voltage Level 1 (4.69)/customer 0.000045/kWh
+Customer Voltage Level 2 (6.40)/customer 0.000069/kWh
+Customer Voltage Level 3 (1.51)/customer 0.000118/kWh
+Rate EIP
+Customer Voltage Level 1 (4.69)/customer 0.000045/kWh
+Customer Voltage Level 2 (6.40)/customer 0.000069/kWh
+Customer Voltage Level 3 (1.51)/customer 0.000118/kWh
+Rate LED
+Customer Voltage Level 1 NA 0.000045/kWh
+Customer Voltage Level 2 NA 0.000069/kWh
+Customer Voltage Level 3 NA 0.000118/kWh
+Rate LTILRR NA NA
+Rate GSG-2
+Customer Voltage Level 1 (4.69)/customer 0.000045/kWh
+Customer Voltage Level 2 (6.40)/customer 0.000069/kWh
+Customer Voltage Level 3 (1.51)/customer 0.000118/kWh 
+Rate GML (0.09)/customer 0.000806/kWh 
+Rate GUL (0.23)/customer 0.003580/kWh 
+Rate GU-LED (0.23)/customer 0.003580/kWh 
+Rate GU (0.19)/customer 0.000203/kWh 
+Rate PA NA NA
+Rate ROA-R Same as Full Service Same as Full Service
+Delivery Schedule Delivery Schedule
+Rate ROA-S Same as Full Service Same as Full Service
+Delivery Schedule Delivery Schedule
+Rate ROA-P Same as Full Service Same as Full Service
+ Delivery Schedule Delivery Schedule
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 21, 2025 in Case No. U-21585 
+and dated March 27, 2026 in Case No. U-21870 
+
+PDF PAGE 152 (one-based)
+M.P.S.C. No. 14 – Electric Twelfth Revised Sheet No. D-3.00
+Consumers Energy Company Cancels Eleventh Revised Sheet No. D-3.00
+(To update Low-Income Energy Assistance Fund Surcharge)
+SURCHARGES
+Low-Income Low-Income
+Energy Assistance Fund Energy Assistance Fund
+Surcharge Surcharge
+(Case No. U-17377) (Case No. U-17377)
+ Effective beginning with the Effective beginning with the
+Rate Schedule September 2025 Billing Month September 2026 Billing Month
+Rate RSP (1) $1.25/billing meter $1.50/billing meter
+Rate RSH (1) 1.25/billing meter 1.50/billing meter
+Rate RPM (1) 1.25/billing meter 1.50/billing meter
+Rate RSM (1) 1.25/billing meter 1.50/billing meter
+Rate GS 1.25/billing meter 1.50/billing meter
+Rate GSTU 1.25/billing meter 1.50/billing meter
+Rate GSD 1.25/billing meter 1.50/billing meter
+Rate GP 1.25/billing meter 1.50/billing meter
+Rate GPD 1.25/billing meter 1.50/billing meter
+Rate GPTU 1.25/billing meter 1.50/billing meter
+Rate EIP 1.25/billing meter 1.50/billing meter
+Rate GSG-2 1.25/billing meter 1.50/billing meter
+Rate LED 1.25/billing meter 1.50/billing meter
+Rate LTILRR 1.25/billing meter 1.50/billing meter
+Rate GML 1.25/billing meter 1.50/billing meter
+Rate GUL NA NA
+Rate GU-LED NA NA
+Rate GU NA NA
+Rate PA NA NA
+Rate ROA-R 1.25/billing meter 1.50/billing meter
+Rate ROA-S 1.25/billing meter 1.50/billing meter
+Rate ROA-P 1.25/billing meter 1.50/billing meter
+(1) The Low Income Energy Assistance Fund Surcharge, authorized by 2013 PA 295 and the Orders
+ in Case No. U-17377, shall be applied to one residential meter per residential site.
+Issued May 15, 2026 by Effective for bills rendered on and after
+Garrick J. Rochow, the Company’s September 2026 Billing Month
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated April 17, 2026
+in Case No. U-17377
+
+PDF PAGE 153 (one-based)
+M.P.S.C. No. 14 – Electric Eleventh Revised Sheet No. D-4.00
+Consumers Energy Company Cancels Tenth Revised Sheet No. D-4.00
+(To add U-21258 Financial Compensation Mechanism Surcharge)
+SURCHARGES
+Financial Compensation Financial Compensation
+Mechanism Surcharge Mechanism Surcharge
+(Case No. U-21049) (Case No. U-21258)
+Effective for service rendered Effective for service rendered
+April 25, 2025 through January 1, 2026 through
+Rate Schedule December 31, 2025 December 31, 2026
+Rate RSP $0.000293/kWh $0.000243/kWh
+Rate RSH 0.000293/kWh 0.000243/kWh
+Rate RPM 0.000293/kWh 0.000243/kWh
+Rate RSM 0.000293/kWh 0.000243/kWh
+Rate GS 0.000274/kWh 0.000235/kWh
+Rate GSTU 0.000274/kWh 0.000235/kWh
+Rate GSD 0.000274/kWh 0.000222/kWh
+Rate GP
+ Customer Voltage Level 1 0.000242/kWh 0.000197/kWh
+Customer Voltage Level 2 0.000260/kWh 0.000227/kWh
+Customer Voltage Level 3 0.000273/kWh 0.000245/kWh
+Rate GPD
+Customer Voltage Level 1 0.000210/kWh 0.000133/kWh
+Customer Voltage Level 2 0.000225/kWh 0.000154/kWh
+Customer Voltage Level 3 0.000237/kWh 0.000166/kWh
+Rate GPTU
+Customer Voltage Level 1 0.000256/kWh 0.000209/kWh
+Customer Voltage Level 2 0.000276/kWh 0.000242/kWh
+Customer Voltage Level 3 0.000290/kWh 0.000261/kWh
+Rate EIP
+Customer Voltage Level 1 0.000219/kWh 0.000204/kWh
+Customer Voltage Level 2 0.000236/kWh 0.000236/kWh
+Customer Voltage Level 3 0.000248/kWh 0.000255/kWh
+Rate LED
+Customer Voltage Level 1 0.000210/kWh NA
+Customer Voltage Level 2 0.000225/kWh NA
+Customer Voltage Level 3 0.000237/kWh NA
+Rate LTILRR NA NA
+Rate GSG-2
+Customer Voltage Level 1 0.000168/kWh 0.000116/kWh
+Customer Voltage Level 2 0.000181/kWh 0.000134/kWh
+Customer Voltage Level 3 0.000190/kWh 0.000145/kWh
+Rate GML 0.000220/kWh 0.000146/kWh
+Rate GUL 0.000220/kWh 0.000146/kWh
+Rate GU-LED 0.000220/kWh 0.000146/kWh
+Rate GU 0.000220/kWh 0.000146/kWh
+Rate PA NA NA
+Rate ROA-R NA NA
+Rate ROA-S NA NA
+Rate ROA-P NA NA
+Issued December 12, 2025 by Effective for service rendered on 
+Garrick J. Rochow, and after January 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated December 5, 2025 
+in Case No. U-21258 
+
+PDF PAGE 154 (one-based)
+M.P.S.C. No. 14 - Electric Ninth Revised Sheet No. D-5.00
+Consumers Energy Company Cancels Eighth Revised Sheet No. D-5.00
+(To add U-21870 Electric Rate Case Deferral Surcharge)
+SURCHARGES
+Electric Rate Case Electric Rate Case
+Deferral Surcharge Deferral Surcharge
+ (Case No. U-21585) (Case No. U-21870)
+ Effective for service rendered Effective for service rendered
+April 4, 2025 through May 1, 2026 through
+Rate Schedule April 3, 2026 April 30, 2027
+Rate RSP $0.001090/kWh $0.001221/kWh
+Rate RSH 0.001090/kWh 0.001221/kWh
+Rate RPM 0.001090/kWh 0.001221/kWh
+Rate RSM 0.001090/kWh 0.001221/kWh
+Rate GS 0.000889/kWh 0.000933/kWh
+Rate GSTU 0.000889/kWh 0.000933/kWh
+Rate GSD 0.000638/kWh 0.000720/kWh
+Rate GP
+Customer Voltage Level 1 0.000055/kWh 0.000116/kWh
+Customer Voltage Level 2 0.000183/kWh 0.000178/kWh
+Customer Voltage Level 3 0.000319/kWh 0.000305/kWh
+Rate GPD
+Customer Voltage Level 1 0.000037/kWh 0.000078/kWh
+Customer Voltage Level 2 0.000123/kWh 0.000120/kWh
+Customer Voltage Level 3 0.000214/kWh 0.000205/kWh
+Rate GPTU
+Customer Voltage Level 1 0.000037/kWh 0.000078/kWh
+Customer Voltage Level 2 0.000123/kWh 0.000120/kWh
+Customer Voltage Level 3 0.000214/kWh 0.000205/kWh
+Rate EIP
+Customer Voltage Level 1 0.000037/kWh 0.000078/kWh
+Customer Voltage Level 2 0.000123/kWh 0.000120/kWh
+Customer Voltage Level 3 0.000214/kWh 0.000205/kWh
+Rate LED
+Customer Voltage Level 1 0.000037/kWh 0.000078/kWh
+Customer Voltage Level 2 0.000123/kWh 0.000120/kWh
+Customer Voltage Level 3 0.000214/kWh 0.000205/kWh
+Rate LTILRR NA NA
+Rate GSG-2
+Customer Voltage Level 1 0.000037/kWh 0.000078/kWh
+Customer Voltage Level 2 0.000123/kWh 0.000120/kWh
+Customer Voltage Level 3 0.000214/kWh 0.000205/kWh
+Rate GML 0.001082/kWh 0.001409/kWh
+Rate GUL 0.004333/kWh 0.006253/kWh
+Rate GU-LED 0.004333/kWh 0.006253/kWh
+Rate GU 0.000343/kWh 0.000402/kWh
+Rate PA NA NA
+Rate ROA-R Same as Full Service Same as Full Service
+Delivery Rate Schedule Delivery Schedule
+Rate ROA-S Same as Full Service Same as Full Service
+Delivery Rate Schedule Delivery Schedule
+Rate ROA-P Same as Full Service Same as Full Service
+Delivery Rate Schedule Delivery Schedule
+Rate ROA-GPD Same as Full Service Same as Full Service
+Delivery Rate Schedule Delivery Schedule
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 155 (one-based)
+M.P.S.C. No. 14 – Electric Seventy-Ninth Revised Sheet No. D-6.00
+Consumers Energy Company Cancels Seventy-Eighth Revised Sheet No. D-6.00
+(To self-implement the 2026 Maximum Allowable Factor
+and the actual June 2026 PSCR Factor)
+POWER SUPPLY COST RECOVERY (PSCR) FACTORS
+Maximum Allowable Factor Actual Factor Billed 
+Billing Months $/kWh $/kWh 
+Year 2025
+January $0.00909 $0.00794
+February 0.00909 0.00758
+March 0.00909 0.00909
+April 0.00909 0.00909
+May 0.01344 0.01344
+June 0.01127 0.01084
+July 0.01127 0.01127
+August 0.01127 0.01127
+September 0.01023 0.01023
+October 0.00909 0.00909
+November 0.00909 0.00909
+ December 0.00909 0.00909
+Maximum Allowable Factor Actual Factor Billed 
+Billing Months $/kWh $/kWh 
+Year 2026
+January $0.01456 $0.01456
+February 0.01456 0.01456
+March 0.01597 0.01597
+April 0.01456 0.01456
+May 0.01456 0.01456
+June 0.01456 0.01337
+July
+August
+September
+October
+November
+ December
+The listed monthly power supply cost recovery factors are authorized pursuant to Rule C8., Power Supply Cost Recovery 
+(PSCR) Clause. The Maximum Allowable PSCR Factors shown above are subject to adjustment pursuant to the PSCR Factor 
+Ceiling Price Adjustment (Contingency) Mechanism beginning on Sheet No. D-6.10 for the 2026 Plan Year. Sheet No. D-6.00 
+will be updated if adjustments are made pursuant to this mechanism. The Commission is authorized to approve PSCR ceiling 
+price adjustments contingent on future events pursuant to Section 6j(6) of 1982 PA 304, as amended. 
+The Maximum Allowable PSCR Factors, adjusted pursuant to the PSCR Factor Ceiling Price Adjustment (Contingency) 
+Mechanism beginning on Sheet No. D-6.10, are the maximum rates the Company may charge. The actual PSCR Factor Billing 
+in any month may be less than the Maximum Allowable PSCR Factor. 
+The Company has filed for Maximum Allowable PSCR Factors for the 2026 Plan Year in Case No. U-21873 currently pending 
+before the Michigan Public Service Commission. Pursuant to MCL 460.6j, the Company will adjust its rates to incorporate all 
+or part of the requested factors as filed, including contingent factors, until the issuance of an order in U-21873. 
+The Company will file on or before September 30, 2026 for Maximum Allowable PSCR Factors for the 2027 Plan Year 
+pursuant to MCL 460.6j.
+The Company will file a revised Sheet No. D-6.00 at least 10 days before the actual PSCR factor is billed to its customers in the 
+subsequent billing month.
+Issued May 15, 2026 by Effective for bills rendered for
+Garrick J. Rochow, the 2026 Plan Year
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+for self-implementing 
+in Case No. U-21873
+
+PDF PAGE 158 (one-based)
+M.P.S.C. No. 14 – Electric Tenth Revised Sheet No. D-7.00 
+Consumers Energy Company Cancels Ninth Revised Sheet No. D-7.00
+(To revise Power Plant Securitization Charges)
+POWER PLANT SECURITIZATION CHARGE 
+The actual Power Plant Securitization Charge is authorized pursuant to Rule C9.1, Power Plant Securitization Charges, Initial 
+Implementation and True-up Methodology. The Power Plant Securitization Charge is billed to all full service customers, shown 
+in the rate schedules identified below, based upon usage. This charge shall be shown separately on the customer's bill. 
+The actual Power Plant Securitization Charge applied to customers' bills is as follows:
+ Power Plant 
+ Securitization Charge 
+ (Case No. U-17473) 
+ Effective beginning with the 
+Rate Schedule August 2025 Billing Month 
+Rate RSP $ 0.001131 /kWh 
+Rate RSH 0.001131 /kWh 
+Rate RPM 0.001131 /kWh 
+Rate RSM 0.001131 /kWh 
+Rate GS 0.001222 /kWh 
+Rate GSTU 0.001222 /kWh 
+Rate GSD 0.001222 /kWh 
+Rate GP CVL 1 0.000762 /kWh 
+CVL 2 0.000762 /kWh 
+CVL 3 0.000762 /kWh 
+Rates GPD, GPTU, EIP and GSG-2 CVL 1 0.000762 /kWh 
+CVL 2 0.000762 /kWh 
+CVL 3 0.000762 /kWh 
+Rate LED 0.000762 /kWh 
+Rate LTILRR 0.000762 /kWh 
+Rate GML 0.000653 /kWh 
+Rate GUL 0.000653 /kWh 
+Rate GU-LED 0.000653 /kWh 
+Rate GU 0.000653 /kWh 
+Rate PA NA 
+Rate ROA-R (1) NA 
+Rate ROA-S (1) NA 
+Rate ROA-P (1) NA 
+(1) Customers taking ROA service on December 6, 2013 are excluded from the Power Plant Securitization Charge. This exclusion 
+ does not apply to customers first taking ROA service after December 6, 2013 or to customers taking service on December 6, 
+2013 who discontinue taking ROA service any time after December 6, 2013. Customers who discontinue taking ROA service 
+any time after December 6, 2013 and who return to ROA service will pay the Power Plant Securitization Charge applicable to 
+the customer's otherwise applicable Company Full Service Rate Schedule. 
+Issued July 15, 2025 by Effective for bills rendered on and after 
+Garrick J. Rochow, the Company’s August 2025 Billing Month
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission 
+dated July 10, 2025 
+in Case No. U-17473 
+
+PDF PAGE 159 (one-based)
+M.P.S.C. No. 14 – Electric Fourth Revised Sheet No. D-7.10
+Consumers Energy Company Cancels Third Revised Sheet No. D-7.10
+(To update Karn 1 and 2 Securitization Charge)
+KARN 1 AND 2 SECURITIZATION CHARGE
+The actual Karn 1 and 2 Securitization Charge is authorized pursuant to Rule C9.2, Karn 1 and 2 Securitization Charges, Initial 
+Implementation and True-up Methodology. The Karn 1 and 2 Securitization Charge is billed to all full service customers, shown 
+in the rate schedules identified below, based upon usage(1). These charges shall be shown separately on the customer's bill.
+The actual Karn 1 and 2 Securitization Charge applied to customers' bills are as follows:
+Karn 1 and 2
+Securitization Charge
+(Case No. U-20889)
+Effective for the October 2025
+through September 2026
+Rate Schedule Billing Month
+Rates RSP, RSH, RPM and RSM $0.004049/kWh
+Rates GS, GSTU and GSD 0.003662/kWh
+Rate GP
+CVL 1 0.003522/kWh
+CVL 2 0.003564/kWh
+CVL 3 0.003599/kWh
+Rate GPTU
+CVL 1 0.003375/kWh
+CVL 2 0.003415/kWh
+CVL 3 0.003449/kWh
+Rates GPD and GSG-2
+CVL 1 0.001795/kWh
+CVL 2 0.001817/kWh
+CVL 3 0.001835/kWh
+Rate EIP 
+CVL 1 0.002370/kWh
+CVL 2 0.002398/kWh
+CVL 3 0.002422/kWh
+Rate LED
+CVL 1 0.001795/kWh
+CVL 2 0.001817/kWh
+CVL 3 0.001835/kWh
+Rate LTILRR 0.001920/kWh
+Rates GML, GUL and GU-LED 0.001540/kWh
+Rate GU 0.001540/kWh
+Rate PA NA
+Rate ROA-R (1) NA
+Rate ROA-S (1) NA
+Rate ROA-P (1) NA
+(1) Customers taking ROA service on December 17, 2020 are excluded from the Karn 1 and 2 Securitization Charge. This 
+exclusion does not apply to customers first taking ROA service after December 17, 2020 or to customers taking service on 
+December 17, 2020 who discontinue taking ROA service any time after December 17, 2020. Customers who discontinue 
+taking ROA service any time after December 17, 2020 and who return to ROA service will pay the Karn 1 and 2 
+Securitization Charge applicable to the customer's otherwise applicable Company Full Service Rate Schedule.
+Issued September 22, 2025 by Effective for bills rendered on and after 
+Garrick J. Rochow, the Company’s October 2025 Billing Month
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated September 11, 2025 
+in Case No. U-20889
+
+PDF PAGE 166 (one-based)
+M.P.S.C. No. 14 – Electric Ninth Revised Sheet No. D-14.00
+Consumers Energy Company Cancels Eighth Revised Sheet No. D-14.00
+(To revise prices)
+RESIDENTIAL SUMMER ON-PEAK BASIC RATE RSP
+Availability
+Subject to any restrictions, this rate is available to any Full Service Customer desiring electric service for any usual 
+residential use in: (i) private family dwellings; (ii) tourist homes, rooming houses, dormitories, nursing homes and other 
+similarly occupied buildings containing sleeping accommodations for up to six persons; or (iii) existing multifamily 
+dwellings containing up to four households served through a single meter. Service for single-phase or three-phase 
+equipment may be included under this rate, provided the individual capacity of such equipment does not exceed 3 hp or 3 
+kW, nor does the total connected load of the home exceed 10 kW, except as provided for below.
+Service for charging Electric Vehicles is available on this rate and shall not exceed 9.6 kW, except as provided for below. 
+Electric Vehicle charging equipment is not included in the total connected load of the home for purpose of this section.
+Individual equipment exceeding 3 hp or 3 kW, Electric Vehicle charging equipment exceeding 9.6 kW or total household 
+load exceeding 10 kW may be subject to additional charges in accordance with Rule C6., Distribution Systems, Line 
+Extensions and Service Connections. Such charges shall only apply to the extent the cost exceeds that of ensuring the 
+connecting equipment matches that provided as standard to new residential customers.
+This rate is not available for: (i) resale purposes; (ii) multifamily dwellings containing more than four living units served
+through a single meter; (iii) tourist homes, rooming houses, dormitories, nursing homes and similarly occupied buildings 
+containing sleeping accommodations for more than six persons; (iv) any other Non-Residential usage; or (v) Rule C5.5 –
+Non-Transmitting Meter Provision participants.
+Residences in conjunction with commercial or industrial enterprises and mobile home parks may take service on this rate 
+only under the Rules and Regulations contained in the Company's Electric Rate Book.
+Nature of Service
+Service under this rate shall be alternating current, 60-Hertz, single-phase or three-phase (at the Company's option) 
+Secondary Voltage service. The Company will determine the particular nature of the voltage in each case.
+Monthly Rate
+Power Supply Charges: These charges are applicable to Full Service Customers.
+Energy Charge:
+Non-Capacity Capacity Total
+$0.067348 $0.036622 $0.103970 per kWh for Off-Peak kWh between June 1 and September 30
+$0.098398 $0.053506 $0.151904 per kWh for On-Peak kWh between June 1 and September 30
+$0.053762 $0.029234 $0.082996 per kWh for all kWh between October 1 and May 31
+This rate is subject to the Power Supply Cost Recovery (PSCR) Factor shown on Sheet No. D-6.00.
+Delivery Charges: These charges are applicable to Full Service Customers.
+System Access Charge: $8.00 per customer per month
+Distribution Charge: $0.093333 per kWh for all kWh
+This rate is subject to the Surcharges shown on Sheet Nos. D-2.00 through D-5.00 and Securitization Charges shown on Sheet 
+Nos. D-7.00 and D-7.10
+(Continued on Sheet No. D-15.00)
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 170 (one-based)
+M.P.S.C. No. 14 – Electric Third Revised Sheet No. D-18.00
+Consumers Energy Company Cancels Second Revised Sheet No. D-18.00
+(To update Renewable Energy Credit Programs)
+RESIDENTIAL SUMMER ON-PEAK BASIC RATE RSP
+(Continued From Sheet No. D-17.00)
+Monthly Rate: (Contd)
+Net Metering Program:
+The Net Metering Program is available to any eligible customer as described in Rule C 11.2., Net Metering Program, 
+who desires to generate a portion or all of their own retail electricity requirements using a Renewable Energy Resource as 
+defined in Rule C11.2.B, Net Metering Definitions.
+ A customer who participates in the Net Metering Program is subject to the provisions contained in Rule C 11.2., Net 
+Metering Program.
+Distributed Generation Program:
+The Distributed Generation Program is available to any eligible customer as described in Rule C 11.3., Distributed 
+Generation Program, who desires to generate a portion or all of their own retail electricity requirements using a Renewable 
+Energy Resource as defined in Rule C 11.3.B., Distributed Generation Definitions.
+A customer who participates in the Distributed Generation Program is subject to the provisions contained in Rule C 11.3., 
+Distributed Generation Program.
+Green Generation Program:
+Customer contracts for participation in the Green Generation Program shall be available to any eligible customer as 
+described in Rule C10.2, Green Generation Program.
+A customer who participates in the Green Generation Program is subject to the provisions contained in Rule C10.2, Green 
+Generation Program.
+ Renewable Energy Credit (REC) Programs:
+These programs provide customers with the opportunity to subscribe to the environmental attribute of renewable energy by 
+offering customers the ability to utilize renewable energy credits to match up to 100% of their total annual energy. 
+A customer that participates in one of the Renewable Energy Credit (REC) Programs is subject to the provisions contained 
+in Rule C10.8., Renewable Energy Credits (REC) Programs.
+ General Terms:
+This rate is subject to all general terms and conditions shown on Sheet No. D-1.00.
+Schedule of On-Peak and Off-Peak Hours:
+The following schedule shall apply Monday through Friday, June 1 through September 30, including weekday holidays 
+when applicable:
+(1) On-Peak Hours: 2:00 PM to 7:00 PM
+(2) Off-Peak Hours: 7:00 PM to 2:00 PM
+Saturday and Sunday are Off-Peak.
+ Minimum Charge:
+The System Access Charge included in the rate, adjusted for qualified service provision credit and any applicable 
+non-consumption based surcharges.
+Due Date and Late Payment Charge:
+The due date of the customer's bill shall be 21 days from the date of transmittal. A late payment charge of 2%, not 
+compounded, of the portion of the bill, net of taxes, shall be assessed to any bill that is delinquent. A customer who 
+participates in the Winter Protection Plan or who is 65 years of age or older and who has notified the Company the 
+customer is 65 years of age or older, shall be exempt from a late payment charge as described in Rule B2., Consumer 
+Standards and Billing Practices for Electric and Natural Gas Service, R 460.125, Late payment charges.
+Term and Form of Contract:
+Service under this rate shall not require a written contract except for the Green Generation Program participants.
+Issued August 21, 2025 by Effective for service rendered on
+Garrick J. Rochow, and after August 8, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated August 7, 2025
+in Case No. U-21937
+
+PDF PAGE 172 (one-based)
+M.P.S.C. No. 14 – Electric Ninth Revised Sheet No. D-36.00
+Consumers Energy Company Cancels Eighth Revised Sheet No. D-36.00
+(To revise prices)
+RESIDENTIAL SMART HOURS RATE RSH
+Availability
+Subject to any restrictions, this rate is available to any Full Service residential customers who have the required metering 
+equipment and infrastructure installed. The Company will furnish, maintain and own the required equipment at the 
+customers’ premises at the Company’s request. By selecting this rate schedule, the customer agrees to provide an email 
+address. Electric consumption is billed using on-peak and off-peak periods year-round on the Residential Smart Hours 
+Rate.
+Service for single-phase or three-phase equipment may be included under this rate, provided the individual capacity of such 
+equipment does not exceed 3 hp or 3 kW, nor does the total connected load of the home exceed 10 kW, except provided for 
+below.
+Service for charging Electric Vehicles is available on this rate and shall not exceed 9.6 kW, except as provided for below. 
+Electric Vehicle charging equipment is not included in the total connected load of the home for purposes of this section.
+Individual equipment exceeding 3 hp or 3 kW, Electric Vehicle charging equipment exceeding 9.6 kW, or total household 
+load exceeding 10 kW may be subject to additional charges in accordance with Rule C6., Distribution Systems, Line 
+Extensions and Service Connections. Such charges shall only apply to the extent the cost exceeds that of ensuring the 
+connecting equipment matches that provided as standard to new residential customers.
+This rate is not available for resale purposes or for any Non-Residential usage.
+Nature of Service
+Service under this rate shall be alternating current, 60-Hertz, single-phase or three-phase (at the Company's option) 
+Secondary Voltage service. The Company will determine the particular nature of the voltage in each case.
+Monthly Rate
+Power Supply Charges: These charges are applicable to Full Service Customers.
+Energy Charge:
+Non-Capacity Capacity Total
+Off-Peak – Summer $0.067348 $0.036622 $0.103970 per kWh for all Off-Peak kWh 
+between June 1 and September 30
+On-Peak – Summer $0.098398 $0.053506 $0.151904 per kWh for all On-Peak kWh
+between June 1 and September 30
+Off-Peak – Winter $0.052104 $0.028333 $0.080437 per kWh for all Off-Peak kWh 
+between October 1 and May 31
+On-Peak – Winter $0.062442 $0.033954 $0.096396 per kWh for all On-Peak kWh 
+between October 1 and May 31
+This rate is subject to the Power Supply Cost Recovery (PSCR) Factor shown on Sheet No. D-6.00.
+Delivery Charges: These charges are applicable to Full Service Customers.
+System Access Charge: $8.00 per customer per month
+Distribution Charge: $0.093333 per kWh for all kWh for a Full Service customer
+This rate is subject to the Surcharges shown on Sheet Nos. D-2.00 through D-5.00 and Securitization Charges shown on Sheet 
+Nos. D-7.00 and D-7.10
+(Continued on Sheet No. D-36.10)
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 176 (one-based)
+M.P.S.C. No. 14 – Electric Fifth Revised Sheet No. D-39.00
+Consumers Energy Company Cancels Fourth Revised Sheet No. D-39.00
+(To update Renewable Energy Credit Programs)
+RESIDENTIAL SMART HOURS RATE RSH
+(Continued From Sheet No. D-38.00)
+Monthly Rate: (Contd)
+Net Metering Program:
+The Net Metering Program is available to any eligible customer as described in Rule C11.2., Net Metering Program, 
+who desires to generate a portion or all of their own retail electricity requirements using a Renewable Energy 
+Resource as defined in Rule C11.2.B., Net Metering Definitions.
+A customer who participates in the Net Metering Program is subject to the provisions contained in Rule C11.2., Net 
+Metering Program.
+Distributed Generation Program:
+The Distributed Generation Program is available to any eligible customer as described in Rule C 11.3., Distributed 
+Generation Program, who desires to generate a portion or all of their own retail electricity requirements using a 
+Renewable Energy Resource as defined in Rule C 11.3.B., Distributed Generation Definitions.
+A customer who participates in the Distributed Generation Program is subject to the provisions contained in 
+Rule C 11.3., Distributed Generation Program.
+Green Generation Program:
+Customer contracts for participation in the Green Generation Program shall be available to any eligible customer as 
+described in Rule C10.2., Green Generation Program.
+A customer who participates in the Green Generation Program is subject to the provisions contained in Rule C10.2., 
+Green Generation Program.
+Renewable Energy Credit (REC) Programs:
+These programs provide customers with the opportunity to subscribe to the environmental attribute of renewable 
+energy by offering customers the ability to utilize renewable energy credits to match up to 100% of their total annual 
+energy.
+A customer that participates in one of the Renewable Energy Credit (REC) Programs is subject to the provisions 
+contained in Rule C10.8., Renewable Energy Credits (REC) Programs.
+Residential Electric Vehicle Program:
+The Residential Electric Vehicle Program is available to any eligible customer as described in Rule C19.1., 
+Residential Electric Vehicle Program.
+General Terms:
+ This rate is subject to all general terms and conditions shown on Sheet No. D-1.00.
+Minimum Charge:
+The System Access Charge included in the rate, adjusted for qualified service provision credit and any applicable 
+non-consumption based surcharges.
+Due Date and Late Payment Charge:
+The due date of the customer's bill shall be 21 days from the date of transmittal. A late payment charge of 2%, not 
+compounded, of the portion of the bill, net of taxes, shall be assessed to any bill that is delinquent. A customer who 
+participates in the Winter Protection Plan or who is 65 years of age or older and who has notified the Company the 
+customer is 65 years of age or older, shall be exempt from a late payment charge as described in Rule B2., Consumer 
+Standards and Billing Practices for Electric and Natural Gas Service, R 460.125, Late payment charges.
+Schedule of On-Peak and Off-Peak Hours:
+The following schedule shall apply Monday through Friday, including weekday holidays when applicable:
+Summer: June 1 through September 30
+Winter: October 1 through May 31
+(1) On-Peak Hours: 2:00 PM to 7:00 PM
+(2) Off-Peak Hours: 7:00 PM to 2:00 PM
+Saturday and Sunday are Off-Peak.
+Term and Form of Contract:
+ Service under this rate shall not require a written contract.
+Issued August 21, 2025 by Effective for service rendered on
+Garrick J. Rochow, and after August 8, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated August 7, 2025
+ in Case No. U-21937
+
+PDF PAGE 186 (one-based)
+M.P.S.C. No. 14 – Electric Eighth Revised Sheet No. D-45.00
+Consumers Energy Company Cancels Seventh Revised Sheet No. D-45.00
+(To revise prices)
+GENERAL SERVICE SECONDARY RATE GS
+Availability
+Subject to any restrictions, this rate is available to any general use customer, political subdivision or agency of the State of 
+Michigan, either acting separately or in combinations permitted under the laws of this state, desiring Secondary Voltage 
+service for any of the following: (i) standard secondary service, (ii) public potable water pumping and/or waste water 
+system(s), or (iii) resale purposes. This rate is also available for service to any Primary Rate Customer where the Company 
+elects to provide one transformation from the available Primary Voltage to another available Primary Voltage desired by 
+the customer.
+This rate is not available for: (i) private family dwellings, (ii) lighting service except for private streets, mobile home parks 
+or service to temporary lighting installations, (iii) heating water for industrial processing, (iv) resale for lighting service, or 
+(v) new or expanded service for resale to residential customers. Unmetered Billboard Service is not available to Retail 
+Open Access service.
+Nature of Service
+Service under this rate shall be alternating current, 60-Hertz, single-phase or three-phase (at the Company's option) 
+Secondary Voltage service. The Company will determine the particular nature of the voltage in each case.
+Three-phase, 3-wire service requires that the customer furnishes all transformation facilities required for single-phase load 
+and so arranges the load as to avoid excessive unbalance of the three-phase load. When the service is single-phase, or 4-
+wire, three-phase, the single-phase individual motor capacity shall not exceed 3 hp, nor the total single-phase motor 
+capacity of 10 hp, without the specific consent of the Company.
+Where the Company elects to measure the service on the Primary side of the transformers, 3% shall be deducted for billing 
+purposes from the energy measurements thus made. Where the Company elected to provide a Primary Rate Customer one 
+transformation from the available Primary Voltage to another available Primary Voltage desired by the customer, 3% shall 
+not be deducted for billing purposes from the energy measurements thus made.
+Monthly Rate
+Power Supply Charges: These charges are applicable to Full Service customers.
+Energy Charge:
+Non-Capacity Capacity Total
+$0.073051 $0.035056 $0.108107 per kWh for all kWh during the billing months 
+of June - September
+$0.053797 $0.025987 $0.079784 per kWh for all kWh during the billing months
+of October - May
+This rate is subject to the Power Supply Cost Recovery (PSCR) Factor shown on Sheet No. D-6.00.
+Delivery Charges: These charges are applicable to Full Service and Retail Open Access customers.
+System Access Charge: $20.00 per customer per month
+Distribution Charge: $0.069433 per kWh for all kWh
+This rate is subject to the Surcharges shown on Sheet Nos. D-2.00 through D-5.00 and Securitization Charges shown on Sheet 
+Nos. D-7.00 and D-7.10.
+Billboard Service Provision
+Monthly kWh shall be determined by multiplying the total connected load in kW (including the lamps, ballasts, 
+transformers, amplifiers, and control devices) times 730 hours. The kWh for cyclical devices shall be adjusted for the 
+average number of hours used.
+(Continued on Sheet No. D-46.00)
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 188 (one-based)
+M.P.S.C. No. 14 – Electric Fifth Revised Sheet No. D-47.00
+Consumers Energy Company Cancels Fourth Revised Sheet No. D-47.00
+(To update Renewable Energy Credit Programs)
+GENERAL SERVICE SECONDARY RATE GS
+(Continued From Sheet No. D-46.00)
+Monthly Rate: (Contd)
+Net Metering Program:
+The Net Metering Program is available to any eligible customer as described in Rule C11.2., Net Metering 
+Program, who desires to generate a portion or all of their own retail electricity requirements using a Renewable 
+Energy Resource as defined in Rule C11.2.B., Net Metering Definitions.
+A customer who participates in the Net Metering Program is subject to the provisions contained in Rule C11.2., Net 
+Metering Program.
+ Distributed Generation Program:
+The Distributed Generation Program is available to any eligible customer as described in Rule C 11.3., Distributed 
+Generation Program, who desires to generate a portion or all of their own retail electricity requirements using a 
+Renewable Energy Resource as defined in Rule C 11.3.B., Distributed Generation Definitions.
+A customer who participates in the Distributed Generation Program is subject to the provisions contained in Rule C 
+11.3., Distributed Generation Program.
+ Green Generation Program:
+Customer contracts for participation in the Green Generation Program shall be available to any eligible customer as 
+described in Rule C10.2, Green Generation Program.
+A customer who participates in the Green Generation Program is subject to the provision contained in Rule C10.2, 
+Green Generation Program.
+ Renewable Energy Credit (REC) Programs:
+These programs provide customers with the opportunity to subscribe to the environmental attribute of renewable 
+energy by offering customers the ability to utilize renewable energy credits to match up to 100% of their total 
+annual energy.
+A customer that participates in one of the Renewable Energy Credit (REC) Programs is subject to the provisions 
+contained in Rule C10.8., Renewable Energy Credits (REC) Programs.
+ Non-Residential Electric Vehicle Programs:
+The Non-Residential Electric Vehicle Programs are available to any eligible customer as described in Rule C19.2., 
+Non-Residential Electric Vehicle Programs. 
+ Non-Transmitting Meter Provision:
+A customer who chooses a non-transmitting meter is subject to the provisions contained in Rule C5.5, Non￾Transmitting Meter Provision.
+ General Terms:
+This rate is subject to all general terms and conditions shown on Sheet No. D-1.00.
+ Minimum Charge:
+The System Access Charge included in the rate and any applicable non-consumption based surcharges. Special 
+Minimum Charges shall be billed in accordance with Rule C15., Special Minimum Charges.
+ Due Date and Late Payment Charge:
+The due date of the customer bill shall be 21 days from the date of mailing. A late payment charge of 2% of the 
+unpaid balance, net of taxes, shall be assessed to any bill which is not paid on or before the due date shown thereon.
+ Term and Form of Contract:
+Service under this rate shall not require a written contract except for:(i) resale service, (ii) service under the Green 
+Generation Program, (iii) for Special Minimum Charges, (iv) service for lighting or where mobile home parks are 
+involved, (v) service under the Educational Institution Service Provision, (vi) service under the Net Metering 
+Program, (vii) service under the Demand Response Program or (viii) at the option of the Company. If a contract is 
+deemed necessary by the Company,the appropriate contract form shall be used and the contract shall require a 
+minimum term of one year.
+Issued August 21, 2025 by Effective for service rendered on
+Garrick J. Rochow, and after August 8, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated August 7, 2025
+in Case No. U-21937
+
+PDF PAGE 189 (one-based)
+M.P.S.C. No. 14 – Electric Eighth Revised Sheet No. D-48.00
+Consumers Energy Company Cancels Seventh Revised Sheet No. D-48.00
+(To revise prices and Availability)
+GENERAL SERVICE SECONDARY TIME-OF-USE RATE GSTU
+Availability
+Subject to any restrictions, General Service Secondary Time-of-Use Rate GSTU is available to any Full Service Customer 
+taking service at the Company’s Secondary Voltage level with advanced metering infrastructure and supporting critical 
+systems. Standby service shall be provided on this rate for secondary customers with solar installations equal to or greater
+than 150 kW.
+This rate is not available for: (i) private family dwellings, (ii) lighting service except for private streets, mobile home 
+parks or service to temporary lighting installations, (iii) heating water for industrial processing, (iv) resale for lighting 
+service, or (v) new or expanded service for resale to residential customers.
+This rate shall not be taken in conjunction with Net Metering.
+Nature of Service
+Service under this rate shall be alternating current, 60-Hertz, single-phase or three-phase (at the Company's option) 
+Secondary Voltage service. The Company will determine the particular nature of the voltage in each case.
+Three-phase, 3-wire service requires that the customer furnishes all transformation facilities required for single-phase load 
+and so arranges the load as to avoid excessive unbalance of the three-phase load. When the service is single-phase, or 4-
+wire, three-phase, the single-phase individual motor capacity shall not exceed 3 hp, nor the total single-phase motor 
+capacity of 10 hp, without the specific consent of the Company.
+Where the Company elects to measure the service on the Primary side of the transformers,3% shall be deducted for billing 
+purposes from the energy measurements thus made. Where the Company elected to provide a Primary Rate Customer one 
+transformation from the available Primary Voltage to another available Primary Voltage desired by the customer, 3% shall 
+not be deducted for billing purposes from the energy measurements thus made.
+Monthly Rate
+Power Supply Charges: These charges are applicable to Full Service Customers.
+Energy Charge:
+Non-Capacity Capacity Total
+Off-Peak-Summer $0.058059 $0.028063 $0.086122 per kWh for all Off-Peak kWh during
+the billing months of June - September
+Mid-Peak-Summer $0.077384 $0.037369 $0.114753 per kWh for all Mid-Peak kWh during 
+the billing months of June - September
+On-Peak-Summer $0.099359 $0.047982 $0.147341 per kWh for all On-Peak kWh during 
+the billing months of June - September
+Off-Peak-Winter $0.047509 $0.022961 $0.070470 per kWh for all Off-Peak kWh during 
+the billing months of October - May
+On-Peak -Winter $0.058750 $0.028428 $0.087178 per kWh for all On-Peak kWh during 
+the billing months of October - May
+This rate is subject to the Power Supply Cost Recovery (PSCR) Factor shown on Sheet No. D-6.00.
+Delivery Charges: These charges are applicable to Full Service Customers.
+System Access Charge: $20.00 per customer per month
+Distribution Charge: $0.069433 per kWh for all kWh for a Full Service Customer
+This rate is subject to the Surcharges shown on Sheet Nos. D-2.00 through D-5.00 and Securitization Charges shown on Sheet 
+Nos. D-7.00 and D-7.10.
+(Continued on Sheet No. D-49.00)
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 190 (one-based)
+M.P.S.C. No. 14 – Electric Eighth Revised Sheet No. D-49.00
+Consumers Energy Company Cancels Seventh Revised Sheet No. D-49.00
+(To revise price)
+GENERAL SERVICE SECONDARY TIME-OF-USE RATE GSTU
+(Continued From Sheet No. D-48.00)
+Monthly Rate (Contd)
+Schedule of Hours
+The following schedule shall apply Monday through Friday (except holidays designated by the Company). Weekends 
+and holidays are off-peak. Holidays designated by the Company include: New Year’s Day – January 1, Memorial Day 
+– Last Monday in May, Independence Day – July 4, Labor Day – First Monday in September, Thanksgiving Day –
+Fourth Thursday in November and Christmas Day – December 25. Whenever January 1, July 4, or December 25 falls 
+on Sunday, extended holiday periods such as Monday, January 2, Monday, July 5 and Monday, December 26 shall not 
+be considered as holidays for application of off-peak hours. 
+Summer Billing Months of June through September:
+(1) Off-Peak Hours 12:00 AM to 7:00 AM and 11:00 PM to 12:00 AM
+(2) Mid-Peak Hours 7:00 AM to 2:00 PM and 6:00 PM to 11:00 PM
+(3) On-Peak Hours 2:00 PM to 6:00 PM
+Winter Billing Months of January through May and October through December:
+(1) Off-Peak Hours 11:00 PM to 7:00 AM
+(2) On-Peak Hours 7:00 AM to 11:00 PM
+Resale Service Provision
+Subject to any restrictions, the provision is available to customers desiring Secondary Voltage service for resale purposes in 
+accordance with Rule C4.4, Resale.
+Educational Institution Service Provision (GEI)
+When service is supplied to a school, college or university, a credit shall be applied during all billing months. As used in 
+this provision, “school” shall mean buildings, facilities, playing fields, or property directly or indirectly used for school 
+purposes for children in grades kindergarten through twelve, when provided by a public or nonpublic school. School does 
+not include instruction provided in a private residence or proprietary trade,vocational, training, or occupational school. 
+“College” or “University” shall mean buildings located on the same campus and used to impart instruction,including all 
+adjacent and appurtenant buildings owned by the same customer which are located on the same campus and which constitute 
+an integral part of such college or university facilities.
+The monthly credit for the Educational Institution Service Provision shall be applied as follows:
+Delivery Charges: These charges are applicable to Full Service Customers.
+Education Institution Credit: $(0.001000) per kWh for all kWh 
+Customers on this provision shall require a written contract, with a minimum term of one year, and shall be evaluated 
+annually to determine whether or not the accounts shall remain on the service provision.
+General Service Secondary Interruptible (GSI) Provision
+This provision is available to no more than 200 Full Service Customers desiring interruptible service in conjunction with 
+service taken under General Service Secondary Demand Rate GSD or General Service Secondary Time-of-Use Rate GSTU. 
+A customer participating in this provision is not eligible to participate in Demand Response programs with an Aggregator of 
+Retail Customers during any MISO season. Service to interruptible load shall be taken through separately metered circuits 
+and permanently wired. The design and method of installation for application of this rate shall be subject to the approval of 
+the Company.
+Any load designated as interruptible by the customer is subject to Midcontinent Independent System Operator’s, Inc. 
+(MISO) requirements for Load Modifying Resources and the Company shall inform the Customer of such MISO 
+requirements. Interruption under this provision may occur if MISO declares a Maximum Generation Emergency Event that 
+requires deployment of Load Modifying Resources in accordance with the currently effective MISO Emergency Electrical 
+Procedures or NERC Emergency Event Alert 2 notice indicating that MISO is experiencing or expects to experience a 
+shortage of economic resources and the Company has declared Emergency Status.
+(Continued on Sheet No. D-50.00)
+Issued April 24, 2026 by Effective for service rendered on
+Garrick J. Rochow, and after May 1, 2026
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated March 27, 2026
+in Case No. U-21870
+
+PDF PAGE 192 (one-based)
+M.P.S.C. No. 14 – Electric Fourth Revised Sheet No. D-50.10
+Consumers Energy Company Cancels Third Revised Sheet No. D-50.10
+(To update Renewable Energy Credit Programs)
+GENERAL SERVICE SECONDARY TIME-OF-USE RATE GSTU
+(Continued From Sheet No. D-50.00)
+Monthly Rate (Contd)
+Green Generation Program:
+Customer contracts for participation in the Green Generation Program shall be available to any eligible customer as 
+described in Rule C10.2, Green Generation Program.
+A customer who participates in the Green Generation Program is subject to the provision contained in Rule C10.2, Green 
+Generation Program.
+Renewable Energy Credit (REC) Programs
+These programs provide customers with the opportunity to subscribe to the environmental attribute of renewable energy by 
+offering customers the ability to utilize renewable energy credits to match up to 100% of their total annual energy.
+A customer that participates in one of the Renewable Energy Credit (REC) Programs is subject to the provisions contained 
+in Rule C10.8., Renewable Energy Credits (REC) Programs.
+Non-Residential Electric Vehicle Programs
+The Non-Residential Electric Vehicle Programs are available to any eligible customer as described in Rule C19.2., Non￾Residential Electric Vehicle Programs.
+General Terms
+This rate is subject to all general terms and conditions shown on Sheet No. D-1.00.
+Minimum Charge
+The System Access Charge included in the rate and any applicable non-consumption based surcharges. Special 
+Minimum Charges shall be billed in accordance with Rule C15., Special Minimum Charges.
+Due Date and Late Payment Charge
+The due date of the customer bill shall be 21 days from the date of mailing. A late payment charge of 2% of the unpaid 
+balance, net of taxes, shall be assessed to any bill which is not paid on or before the due date shown thereon.
+Term and Form of Contract
+Service under this rate shall not require a written contract except for: (i) resale service, (ii) service under the Green 
+Generation Program, (iii) for Special Minimum Charges, (iv) service for lighting or where mobile home parks are involved, 
+(v) service under the Educational Institution Service Provision, (vi) service under the Demand Response Program, (vii) 
+service under the General Service Secondary Interruptible Provision or (viii) at the option of the Company. If a contract is
+deemed necessary by the Company, the appropriate contract form shall be used and the contract shall require a minimum 
+term of one year.
+Issued August 21, 2025 by Effective for service rendered on
+Garrick J. Rochow, and after August 8, 2025
+President and Chief Executive Officer,
+Jackson, Michigan Issued under authority of the
+Michigan Public Service Commission
+dated August 7, 2025
+in Case No. U-21937
