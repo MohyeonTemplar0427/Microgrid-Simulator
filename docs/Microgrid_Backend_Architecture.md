@@ -709,3 +709,34 @@ no market price, capacity/transmission adder or California carbon series enters
 ordinary bundled retail bills. Backend, local browser and representative
 OpenDSS replay reuse the shared regional workflow. See
 [Consumers scope and evidence](Consumers_Energy.md). GUI development is paused.
+
+## Ameren Illinois standard service · October 2026
+
+`billing/ameren_il.py` implements ordinary DS-1/BGS-1 and standard secondary
+DS-2/BGS-2 with snapshot-safe dated literals in `ameren_il_rates.py`. January
+2025–October 2026 monthly supply sheets are combined with the appropriate
+PBR-R delivery columns, transmission, supplemental fees, adjustments, riders
+and ordinary Illinois excise. Capacity remains inside BGS; non-interval Rider
+TS is charged separately once. Utility-assigned retail Rate Zones I/II/III
+are independent of MISO LRZ4. No hourly market price enters these bills.
+
+The adapter uses exact filled-block integrals for declining winter prices and
+taxes. It shares identical numeric/symbolic bill expressions, reuses proven
+physical energy bounds to prune unreachable thresholds and shares repeated
+threshold graphs. Independent numerical benchmarks and fixed-schedule MILP
+parity check the algebra. Shared regional billing, dispatch, three-scenario
+comparison, queued workers, CSV/ZIP artifacts and OpenDSS replay are reused.
+
+The shared regional contract now selects a per-utility timezone: Ameren uses
+America/Chicago; earlier Eastern-time utilities retain America/New_York.
+The browser and historical input-preparation tool use the same choice. This
+does not change tariff calendars or timezone rules for other workflows.
+
+This first adapter deliberately requires matching complete calendar service
+and billing months, ordinary secondary metering, confirmed non-interval TS
+billing classification and absence of unsupported locality/special charges.
+Partial/cross-month allocation, optional DS-2 demand service, PSP/RTP, ARES,
+interval-billed TS, export credit settlement and standalone storage are rejected.
+The all-customer CGC fee remains present even in grid-only counterfactuals.
+MISO transmission owner, resource zone and optional verified wholesale cpnode
+remain separate account facts. See [Ameren scope](Ameren_Illinois.md).

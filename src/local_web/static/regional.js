@@ -51,7 +51,7 @@ if(typeof document!=="undefined") {
     <button type="button" class="secondary" id="regional-hypothetical">Apply explicitly hypothetical account facts</button>
     <p class="hint">Review every account fact. Existing obligations, contracted demand and history remain the same across scenarios. A checked eligibility field is a user assertion, not verification by the simulator.</p>
     <div id="regional-fields" class="form-grid"></div>
-    <details><summary>Advanced · wholesale pricing identity</summary><label>Wholesale location · JSON or null<textarea name="rg_location">null</textarea></label><p class="hint">Bundled studies do not require market prices. MISO metadata, if supplied, requires cpnode, node_type and source; LRZ7 is not a price node. MISO price retrieval is not implemented. PSE&amp;G CIEP requires the exact PSEG_RESID_AGG aggregate and original PJM hourly file; no Western Hub fallback.</p></details>`;
+    <details><summary>Advanced · wholesale pricing identity</summary><label>Wholesale location · JSON or null<textarea name="rg_location">null</textarea></label><p class="hint">Bundled studies do not require market prices. MISO metadata, if supplied, requires cpnode, node_type and source; A MISO resource-adequacy zone is not a price node. MISO price retrieval is not implemented. PSE&amp;G CIEP requires the exact PSEG_RESID_AGG aggregate and original PJM hourly file; no Western Hub fallback.</p></details>`;
   document.querySelector('[data-step="2"]').append(panel);
   const cycles=document.createElement("fieldset");cycles.hidden=true;
   cycles.innerHTML=`<legend>Utility meter cycles</legend><label>Cycle basis<select name="rg_cycle_mode"><option value="calendar">Explicit hypothetical calendar cycles</option><option value="documented">Documented utility cycles</option></select></label>
@@ -102,7 +102,7 @@ if(typeof document!=="undefined") {
     $("regional-fields").replaceChildren();
     const advanced=document.createElement("details"),heading=document.createElement("summary"),advancedFields=document.createElement("div");
     heading.textContent="Advanced account facts · history, contracts and special eligibility";advancedFields.className="form-grid";advanced.style.gridColumn="1/-1";advanced.append(heading,advancedFields);
-    const basic=new Set(["rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","local_charges_confirmed","full_monthly_charges_confirmed","dg_enrollment_confirmed","dg_source","ee_tier","ee_tier_source","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
+    const basic=new Set(["rate_zone","ts_metering","ts_metering_source","rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","local_charges_confirmed","full_monthly_charges_confirmed","dg_enrollment_confirmed","dg_source","ee_tier","ee_tier_source","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
     const descriptors=selected()?.account_fields||[];
     const spec=Object.fromEntries(descriptors.map(d=>[typeof d==="string"?d:d.name,typeof d==="string"?{}:d]));
     for(const [key,v] of Object.entries(value)){
@@ -135,7 +135,7 @@ if(typeof document!=="undefined") {
     const eraOption=field("weather_source").querySelector('option[value="era5"]');eraOption.hidden=eraOption.disabled=!on;
     weather.hidden=!on||field("weather_source").value!=="era5";
     if(!on){currentKey=null;return;}wasActive=true;
-    field("timezone").value="America/New_York";
+    field("timezone").value=utility().timezone||base().timezone;
     $("utility-suggestion").textContent="Manual utility selection. Confirm actual account eligibility; coordinates do not establish this service territory.";
     const key=field("utility").value+":"+siteCustomerClass();
     if(currentKey!==key){f("plan").replaceChildren(option("","Choose confirmed billing plan…"),...plans().map(p=>{
@@ -209,7 +209,7 @@ if(typeof document!=="undefined") {
       const covered=day=>coverage.some(w=>w.start<=day&&day<=w.end);
       for(const cycle of list){if(field("utility").value==="pseg"){
         if(!covered(cycle.bill_date))throw new Error("The utility bill date is outside verified tariff coverage. PSE&G selects rates by bill date; review the documented cycles.");
-      }else {if((selected()?.bill_month_coverage_required||field("utility").value==="dte_electric")&&!covered(cycle.bill_date))throw new Error("Bill date is outside verified actual PSCR/rider coverage.");for(let day=cycle.start_date;day<=cycle.end_date;){if(!covered(day))throw new Error("Service date "+day+" is outside verified component coverage; no current-rate substitution is used.");const next=new Date(day+"T00:00:00Z");next.setUTCDate(next.getUTCDate()+1);day=next.toISOString().slice(0,10);}}}
+      }else {if((selected()?.bill_month_coverage_required||field("utility").value==="dte_electric")&&!covered(cycle.bill_date))throw new Error("Bill date is outside verified supply/rider coverage.");for(let day=cycle.start_date;day<=cycle.end_date;){if(!covered(day))throw new Error("Service date "+day+" is outside verified component coverage; no current-rate substitution is used.");const next=new Date(day+"T00:00:00Z");next.setUTCDate(next.getUTCDate()+1);day=next.toISOString().slice(0,10);}}}
     }
     if(page.dataset.step==="5"&&selected()?.equipment_modes){const mode=field("pv_choice").value==="yes"?(f("battery").checked?"pv_battery":"pv_only"):field("pv_choice").value==="storage"?"storage_only":"grid_only";if(!selected().equipment_modes.includes(mode))throw new Error("This billing plan does not permit the selected PV/storage arrangement. Choose an eligible plan or grid-only operation.");}
     if(page.dataset.step==="4"&&field("weather_source").value==="era5"&&(!era5||era5Key!==weatherKey()))throw new Error("Retrieve ERA5 for the selected site and exact service dates; no weather fallback is used.");

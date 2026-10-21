@@ -17,6 +17,7 @@ MODES = {
     "peco": ("export_mode", "none"),
     "dte_electric": ("export_mode", "none"),
     "consumers_energy": ("export_mode", "none"),
+    "ameren_illinois": ("export_mode", "none"),
 }
 
 
@@ -49,7 +50,7 @@ def grid_only_counterfactual(utility, account, state=None):
             inherited[key] = value
 
     applied = mode == "net_metering"
-    if utility in ("dte_electric", "consumers_energy"):
+    if utility in ("dte_electric", "consumers_energy", "ameren_illinois"):
         applied = bool(result.get("dg_enrollment_confirmed"))
         set_account("dg_enrollment_confirmed", False)
         set_account("dg_source", "")

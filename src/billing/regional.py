@@ -30,6 +30,10 @@ UTILITIES = {
                                          "https://www.sec.gov/Archives/edgar/data/1317630/000131763026000006/itc-20251231.htm",
                                          "https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
                                          "https://www.michigan.gov/mpsc/consumer/electricity/electric-utility-service-area-map"]},
+    "ameren_illinois": {"label":"Ameren Illinois", "state":"IL", "zone":None, "module":"ameren_il", "timezone":"America/Chicago",
+                        "grid_operator":"MISO", "resource_adequacy_zone":"LRZ4", "transmission_owner":"Ameren Illinois",
+                        "grid_sources":["https://www.icc.illinois.gov/docket/P2024-0088/documents/361990/files/633929.pdf",
+                                        "https://www.ilga.gov/reports/ReportsSubmitted/159RSGAEmail340RSGAAttachICC%20MISO%20Zone%204%20Report%2012-17-2018.pdf"]},
 }
 
 
@@ -67,7 +71,7 @@ def account_region(region, utility):
             if (not isinstance(location,dict) or set(location)!={"cpnode","node_type","source"}
                     or any(not isinstance(v,str) or not 1<=len(v.strip())<=500 for v in location.values())
                     or location["cpnode"].strip().upper()==data["resource_adequacy_zone"]):
-                raise ValueError("MISO pricing identity needs an explicitly verified cpnode, node_type and source; LRZ7 is not a price node and no hub is substituted.")
+                raise ValueError("MISO pricing identity needs an explicitly verified cpnode, node_type and source; a resource-adequacy zone is not a price node and no hub is substituted.")
             return region
         if (not isinstance(location,dict) or set(location)!={"pnode_id","pnode_name","zone","source"}
                 or not str(location["pnode_id"]).isdigit()

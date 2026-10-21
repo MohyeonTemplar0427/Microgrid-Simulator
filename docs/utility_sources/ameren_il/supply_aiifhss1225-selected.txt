@@ -1,0 +1,74 @@
+PDF PAGE 1
+BGS-1 BGS-5
+Delivery Voltage Delivery Voltage
+Secondary Secondary Primary High Voltage All
+Retail Purchased Electricity Charges: (¢/kWh) (¢/kWh) (¢/kWh) (¢/kWh) (¢/kWh)
+ Non-Summer* 7.109 6.958 6.865 6.888
+0-800 5.927
+> 800 5.008
+BGS-1 & RTP-1 BGS-5
+Delivery Voltage Delivery Voltage
+Secondary Secondary Primary High Voltage All
+(¢/kWh) (¢/kWh) (¢/kWh) (¢/kWh) (¢/kWh)
+Charges Applicable to all kWh for BGS and RTP:
+Purchased Electricity Adjustment (4.996) (4.996) (4.996) (4.996) (4.996)
+Supply Cost Adjustment** 0.310 0.117 0.116 0.114 0.090 
+Supply Cost Adjustment*** (0.099) (0.014) (0.014) (0.014) (0.014)
+RTP-1
+Delivery Voltage
+Secondary Secondary Primary High Voltage
+(¢/kWh) (¢/kWh) (¢/kWh) (¢/kWh)
+Charges Applicable RTP:
+Supplier Charge 
+ Non-Summer 0.575 0.575 0.575
+0-800 0.889
+> 800 0.000
+Hourly Energy Charge:****
+Energy Charge
+*
+** Supply Cost Adjustment factors updated effective October 2025. Charges based on calendar month. 
+*** Supply Cost Adjustment factors for Rider EUA, to be combined with the non-EUA Supply Cost Adjustment factor for billing. EUA charges assessed on billing cycle usage.
+**** Customer's billing quantities will be adjusted for applicable losses.
+ Supplier Charge:
+Capacity Cost ($/PLC-Day)
+Summer (June, July, August) 0.666500 All Voltages
+Fall (September, October, November) 0.091600 All Voltages
+Winter (December, January, February) 0.033200 All Voltages
+Spring (March, April, May) 0.069880 All Voltages
+ Energy Charge:*
+Locational Marginal Price (LMP) Price Posted at www.ameren.com
+Ancillary Services Energy Cost (¢/kWh)** 0.016
+Market Settlement Cost (¢/kWh) (0.016)
+ Total Energy Charge Sum of Energy Charges Above
+ Supply Balancing Adjustment (¢/kWh): 0.235
+ Supply Cost Adjustment:
+Supply Cost Adj. - Procurement Charge:*** 0.018 (¢/kWh)
+0.703% of Supplier Charge, Energy Charge and Supply Cost Adj. - Procurement charge
+DS-3/DS-6***** DS-4/DS-6*****
+ Supply Cost Adj. - Uncollectible Factor:*** 0.485% 0.046% of Supplier Charge, Energy Charge, Supply Cost Adj. - Procurement charge and
+ Supply Cost Adj.- Cash Working Capital Factor
+ Supply Cost Adj. - Rider EUA:**** (0.014) (0.014) (¢/kWh)
+* Customer's billing quantities shall be adjusted for applicable losses.
+**
+*** Supply Cost Adjustment is the "Adjustments to the Retail Supply Charges" as referenced in Rider HSS and Rider PER, determined in Docket Nos. 22-0487, 23-0082 and 24-0238.
+**** Supply Cost Adjustment factor for Rider EUA. Charge assessed on billing cycle usage.
+***** DS-6 (Temperature Sensitive DS) is an optional rate for DS-3 and DS-4 Customers.
+Supply Cost Adj. - Cash Working Capital Factor:***
+The MISO Ancillary Service Market for Reserve Services began in January 2009. Renewable Energy Compliance Cost component eliminated from Rider HSS starting June 2017, 
+replaced with a separate charge through Rider REA - Renewable Energy.
+Delivery Voltage
++++++RTP Price Posted on www.ameren.com, see Energy Charge Below+++++
+Prices filed pursuant to Rider PER - Purchased Electricity Recovery, effective October 2025. 
+Rider Hourly Supply Service (HSS) 
+RTP-2
+Ameren Illinois Company d/b/a Ameren Illinois
+Hourly Supply Service Monthly Charges, Purchased Electricity Adjustment and Retail Purchased Electricity Charges
+114th Informational Sheet Supplemental to Sheet Nos.
+23-23.012 and 25-25.014 of Ill. C. C. No. 1 - Electric Service
+Cancelling 113th Informational Sheet
+Effective December 2025
+Rider Basic Generation Service (BGS) and Rider Real Time Pricing (RTP)
+BGS-2
+Delivery Voltage
+BGS-2 & RTP-2
+Delivery Voltage

@@ -29,6 +29,7 @@ UTILITY_DOCS = {
     "firstenergy_ohio_edison": ("docs/FirstEnergy.md", "docs/utility_sources/firstenergy/manifest.json", "test/test_firstenergy.py"),
     "peco": ("docs/PECO.md", "docs/utility_sources/peco/manifest.json", "test/test_peco.py"),
     "consumers_energy": ("docs/Consumers_Energy.md", "docs/utility_sources/consumers/manifest.json", "test/test_consumers.py"),
+    "ameren_illinois": ("docs/Ameren_Illinois.md", "docs/utility_sources/ameren_il/manifest.json", "test/test_ameren_il.py"),
     "dte_electric": ("docs/DTE.md", "docs/utility_sources/dte/manifest.json", "test/test_dte.py"),
 }
 DEFAULT_EVIDENCE = (".cache/regional_validation_release_20261015/validation.json",
@@ -184,6 +185,8 @@ def unit_scope(utility, plan, supply, enabled):
         return "No executable-plan acceptance claim; rejection/catalog coverage only"
     if utility.startswith("firstenergy_"):
         return "Independent filed-arithmetic benchmarks, demand/state/date/DST tests and main-form queued-worker reconciliation; no customer-bill calibration claim"
+    if utility=="ameren_illinois":
+        return "Independent dated seasonal-block/rider/tax benchmarks, Central-time DST, TS classification and main-form queued-worker reconciliation; no customer-bill calibration claim"
     if utility in ("dte_electric", "consumers_energy"):
         return "Independent monthly arithmetic, service/bill-date riders, TOU/DST, EWR band and MISO identity tests; no measured customer-bill calibration claim"
     if utility == "dominion_energy_virginia":
@@ -237,7 +240,7 @@ def build_rows(catalogs=None, *, evidence=(), root=ROOT):
                         coverage_is_complete_bill=segment.get("is_complete_bill",True) if enabled else None,
                         coverage_scope=segment.get("scope","Complete bill supported within validated account restrictions" if enabled else "Unavailable"),
                         coverage_excluded_components="Dated historical taxes; see historical_tax_research_status.json" if segment.get("is_complete_bill") is False else "",
-                        coverage_basis="mixed service dates and bills-rendered components; see utility document" if utility.startswith("firstenergy_") or utility in ("dte_electric", "consumers_energy") else "bill date" if utility == "pseg" else "service dates",
+                        coverage_basis="matching complete calendar service/billing months; partial and crossed-month cycles unsupported" if utility=="ameren_illinois" else "mixed service dates and bills-rendered components; see utility document" if utility.startswith("firstenergy_") or utility in ("dte_electric", "consumers_energy") else "bill date" if utility == "pseg" else "service dates",
                         base_effective_start=plan.get("base_effective_start", "See independent component timeline in utility document"),
                         billing="implemented verified-charges subtotal; incomplete taxes" if segment.get("is_complete_bill") is False else "implemented, eligibility bounded" if enabled else "disabled",
                         dispatch="implemented subtotal optimum only; complete-bill optimum unavailable" if segment.get("is_complete_bill") is False else "implemented, primary optimum required" if enabled else "disabled",

@@ -1,0 +1,79 @@
+PDF PAGE 1
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois 1
+st Revised Sheet No. 65
+Electric Service Schedule Ill. C. C. No. 1 (Canceling Original Sheet No. 65)
+RIDER EDITA – ELECTRIC DEFERRED INCOME TAX ADJUSTMENT
+Date of Filing, July 12, 2022 Date Effective, July 13, 2022
+Filed Pursuant to ICC Order Issued by R.J. Mark, President & CEO
+in Docket No. 21-0738 10 Executive Drive, Collinsville, IL 62234
+APPLICABILITY
+Rider EDITA – Electric Deferred Income Tax Adjustment is applicable to all retail customers. 
+PURPOSE 
+The purpose of this Rider is to allow the Company to: (a) expeditiously pass on to retail customers the 
+amount of unamortized, non-protected property-related Excess Deferred Income Taxes (EDIT) related to 
+the decrease in federal corporate income tax rates pursuant to the Tax Cuts and Jobs Act of 2017 
+(“TCJA”) (Public Law 115-97) and not included in the establishment of delivery service revenue 
+requirement (DSRR), over a period of three (3) calendar years from 2023 through 2025; and (b) reflect 
+the same forecasted cost reduction in Schedule FR A-4: Reconciliation Computation as described in the 
+Determination of the Delivery Reconciliation Amount section of Rider MAP-R – Modernization Action 
+Plan Reconciliation (Rider MAP-R) filed in the calendar year 2024. 
+DEFINITIONS
+Generally, definitions of terms used in this Rider are provided in the Definitions section of the Customer 
+Terms and Conditions. The following definitions are for use in this Rider. 
+ 
+Base Rate Revenues
+Base Rate Revenues, for purposes of this Rider, mean revenues recovered through base rates, as 
+determined in the Company's last Article IX rate case, formula rate update under Section 16-
+108.5, or set pursuant to Section 16-108.18, as applicable. Base Rate Revenues shall include costs 
+and revenues associated with the Delivery Service Rates for DS-1, DS-2, DS-3, DS-4, DS-5, and 
+DS-6. Base Rate Revenues also include EDT Cost Recovery implemented through the Tax 
+Additions tariff, any ongoing Delivery Service charges applied through Rider RDC – Reserve 
+Distribution Capacity, and "Monthly Charges" applied through Rider EVCP - Optional Electric 
+Vehicle Charging Program. Base Rate Revenues shall not include revenues or credits arising 
+from other Riders, including Riders BGS, HSS, PER, PSP, RTP, TS, EEA, EUA, PTR, CEAC, 
+NSM, NM2, REA, EE, CGC, EF, GC, HMAC, EFC, ETAC, or QF.
+Effective Period
+Effective Period means the period during which the EDIT Adjustment Factor (EDAF) is applied 
+to the Company's Base Rate Revenues. The Effective Period begins with the first January 
+monthly Billing Period after the EDAF percentage is filed, continuing through the following 
+December monthly Billing Period.
+
+PDF PAGE 2
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois Original Sheet No. 65.001
+Electric Service Schedule Ill. C. C. No. 1
+RIDER EDITA – ELECTRIC DEFERRED INCOME TAX ADJUSTMENT
+Date of Filing, July 12, 2022 Date Effective, July 13, 2022
+Filed Pursuant to ICC Order Issued by R.J. Mark, President & CEO
+in Docket No. 21-0738 10 Executive Drive, Collinsville, IL 62234
+DETERMINATION OF THE EDIT ADJUSTMENT FACTOR 
+The amount of EDIT amortized in an applicable year beginning with the January monthly Billing Period 
+is calculated through uniformly applying an EDAF expressed as a uniform percentage carried to two 
+decimal places and applied to Base Rate Revenues of each Customer's bill. The EDAF is determined in 
+accordance with the following formula: 
+EDAF = EDITAA / [PBR]
+Where: 
+EDITAA = EDIT Amortization Amount, in $, for the applicable year, is the product of the 
+amortization rate for the applicable year described in the Determination of the 
+Amortization Rate subsection of this section multiplied by the unamortized EDIT 
+balance as of December 31 prior to the initial amortization year. 
+PBR = Projected Base Rate Revenue for the twelve (12) consecutive monthly Billing Periods 
+of the Effective Period.
+PBR for the 2023 applicable year is established by the ICC and provided in the ICC 
+Final Order in the Company’s 2022 formula rate update proceeding filed pursuant to 
+Section 16-108.5 of the Act.
+PBRs for the 2024 and 2025 applicable years are established by the ICC and provided 
+in the ICC Final Order(s) in the Company’s rate proceeding(s) filed under Article IX or 
+Section 16-108.18 of the Act, excluding the reconciliation amount in Rider MAP-R 
+applicable in 2024 and 2025. 
+Notwithstanding the above, if the ICC Final Order for the Company’s filing under 
+Article IX or Section 16-108.18 of the Act is not available to determine EDAF for 
+billing beginning in the January monthly billing period, the Company shall use 
+estimated PBR to determine the EDAF and may update the EDAF when the ICC Final 
+Order is available.
+To the extent the actual amount of EDAF credits in the prior Effective Period is over, or under, the 
+amount of EDITAA for said prior Effective Period, such amount of difference shall be subsequently 
+collected, or credited, respectively, in Rider MAP-R for the 2023 "Delivery Reconciliation Year", as that 
+term is used in Rider MAP-R, and in the "Actual Revenues" component of Rider RBA – Revenue 
+Balancing Adjustment for years 2024 and 2025. 

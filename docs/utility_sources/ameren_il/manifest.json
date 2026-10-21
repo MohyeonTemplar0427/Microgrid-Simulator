@@ -1,0 +1,945 @@
+{
+  "retrieved_date": "2026-10-20",
+  "scope": "Ameren Illinois DS-1/BGS-1 and standard secondary DS-2/BGS-2; complete calendar months January 2025\u2013October 2026; non-interval retail TS classification; zero export",
+  "sources": [
+    {
+      "label": "- Historical Rate PBR-R - Effective December 26, 2024",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel8rtpbrr12262024.ashx",
+      "pdf_sha256": "03694206848c181287dbc513543d041f01c0728ed732666a42056b7b36e11149",
+      "pages": 6,
+      "retrieved_at": "2026-10-21T05:48:20.302976+00:00",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel8rtpbrr12262024-selected.txt",
+      "extracted_text_sha256": "aa878b3fdbf5fd36df0475582e32fcbfc7ff4fc59d29c9fccc0a161ccd34d3a7"
+    },
+    {
+      "label": "- Historical Rate PBR-R - Effective March 21, 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel8rtpbrr03212025.ashx",
+      "pdf_sha256": "161a07e24765a788207223c37d40438ac66f9fd807336b9ebc0c48d265ecfbcb",
+      "pages": 6,
+      "retrieved_at": "2026-10-21T05:48:20.174515+00:00",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel8rtpbrr03212025-selected.txt",
+      "extracted_text_sha256": "4bbd1246e5358560900311ddfc550752186845136e3bbdf1b7904844ddb0d115"
+    },
+    {
+      "label": "- Historical Rate PBR-R - Effective August 28, 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel8rtpbrr08282025.ashx",
+      "pdf_sha256": "c793ff93950d09c7f0395bf0fb8d5eb86b2a2d4710ccfe1de3a069edea5cd24b",
+      "pages": 6,
+      "retrieved_at": "2026-10-21T05:48:20.596167+00:00",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel8rtpbrr08282025-selected.txt",
+      "extracted_text_sha256": "2e44d14fb84625c3e815267a02a02d4a7c3bc0a249653a329cbf7b1a8ce4f7fb"
+    },
+    {
+      "label": "Rate PBR-R - Performance-Based Ratemaking - Reconciliation",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel8rtpbrr.ashx",
+      "pdf_sha256": "ce1beeb7d4833c59ac59241c4784f3fc975131bc6c7a9f9f456faf0b15ac16f5",
+      "pages": 17,
+      "retrieved_at": "2026-10-21T05:48:20.356655+00:00",
+      "selected_pdf_pages": [
+        2,
+        10,
+        11
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel8rtpbrr-selected.txt",
+      "extracted_text_sha256": "110cad636040694dd99d81ceb7239c3bfbeb580760d2abf2cc31d01396d2a873"
+    },
+    {
+      "label": "Historical Rate PBR-R Annual Adjustment Factor",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aielrtpbrraaf.ashx",
+      "pdf_sha256": "586713c0d4a5ac39426088126a32f89a81d0646f1f640cd9e37ba6a5b527b1b4",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:20.529773+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielrtpbrraaf-selected.txt",
+      "extracted_text_sha256": "884d43dec74a67d30d8a26ff652fe637744eea34ff22cc2db774641cc0306180"
+    },
+    {
+      "label": "DS-1 Residential Delivery Service",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel11rtds1.ashx",
+      "pdf_sha256": "e816df48703b9f8ad8516cb214f20cfeae1d2e31321e50a0ea4d8e219e8c9d55",
+      "pages": 4,
+      "retrieved_at": "2026-10-21T05:48:20.747190+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel11rtds1-selected.txt",
+      "extracted_text_sha256": "da79da093c0297140886060ab125dfa40709b2e8cc48dac8083ccca7dbff1110"
+    },
+    {
+      "label": "DS-2 Small General Delivery Service",
+      "url": "https://www.ameren.com/-/media/rates/illinois/non-residential/electric-rates/distribution-delivery/aiel12rtds2.ashx",
+      "pdf_sha256": "2a6f1695d5f5f2e3777defee4d985721127a3d52ec947741c87ee4773291c177",
+      "pages": 8,
+      "retrieved_at": "2026-10-21T05:48:24.571711+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        7
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel12rtds2-selected.txt",
+      "extracted_text_sha256": "986fc9865239bddc3e5d5066c4c7ebda93e88f80e86a9bb5bbdd27605537791a"
+    },
+    {
+      "label": "Customer Terms and Conditions",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/general-information/aiel3otctc.ashx",
+      "pdf_sha256": "5768973600107e75c50f45fdb1d7a85da14029eea57169434a8fff6d06cf9ea7",
+      "pages": 80,
+      "retrieved_at": "2026-10-21T05:48:20.013722+00:00",
+      "selected_pdf_pages": [
+        5,
+        7,
+        10,
+        11,
+        13,
+        21,
+        61,
+        67,
+        71
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel3otctc-selected.txt",
+      "extracted_text_sha256": "24c62b35b37c777d1a573e23c0f020d2431e632edbb9a580c4c4c4819684358b"
+    },
+    {
+      "label": "Rider RBA \u2013 Revenue Balancing Adjustment",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel18rdrba.ashx",
+      "pdf_sha256": "5daf49cfe6e1be27636b0dd3f5a9526e0ef92fa82ba3e3ef3b8fe42f5c6a2858",
+      "pages": 7,
+      "retrieved_at": "2026-10-21T05:48:21.273403+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel18rdrba-selected.txt",
+      "extracted_text_sha256": "d0cc5919e9921fb50f6e897563a4f015bd134d49e181c03349b2340b45032b72"
+    },
+    {
+      "label": "- Historical Rider RBA Charges",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aielhsrrdrba.ashx",
+      "pdf_sha256": "e7ec25692d17a6e62e154a118b1e5dd0f67639756050b6cc5dd8800a58958a4d",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:21.094798+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrrdrba-selected.txt",
+      "extracted_text_sha256": "f3f6a32e26d08e788bb7f2195c25c133855cc2cb7807dd4806a17ad7fdc73039"
+    },
+    {
+      "label": "Rider MAP-R - Modernization Action Plan - Reconciliation",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel20rdmapr.ashx",
+      "pdf_sha256": "226c80b52768d634eaa226e34ba839f2ee73c0f9ee02316450ee1db716471fae",
+      "pages": 9,
+      "retrieved_at": "2026-10-21T05:48:21.011380+00:00",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel20rdmapr-selected.txt",
+      "extracted_text_sha256": "76ad5e71290414915077bf97ee3f47b64116d90546e9f2999da9aca00ab34202"
+    },
+    {
+      "label": "- Historical Rate MAP - R Surcharge",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aielhsrdmapr.ashx",
+      "pdf_sha256": "b1e66aa824a62db22b8f25013645286f5adf3c4f3eb7c53e1688f5badc1c5c16",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:21.029467+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrdmapr-selected.txt",
+      "extracted_text_sha256": "ab75de7d4e2629d7e143008082a2f16309574ac4093ea2fbb0ed229a1ca0ea63"
+    },
+    {
+      "label": "Rider EDITA \u2013 Electric Deferred Income Tax Adjustment",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aiel65rdedita.ashx",
+      "pdf_sha256": "f5a42178a33011b46ca00f177619dc547b6b9cd9a936a19fd1ad45a375189aee",
+      "pages": 3,
+      "retrieved_at": "2026-10-21T05:48:21.239475+00:00",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel65rdedita-selected.txt",
+      "extracted_text_sha256": "05ec098338506a06d5d0677a032fd4d6ef4593f59309e11760bfc36d7378cdab"
+    },
+    {
+      "label": "- Rider EDITA Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/distribution-delivery/aielifrdedita.ashx",
+      "pdf_sha256": "8c7ea26e9c3c14a3fb04a4715b259e4fc269bc0f00e23325900daf2061aec73d",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:21.373791+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielifrdedita-selected.txt",
+      "extracted_text_sha256": "84a0cc4751bd18603fb9ac448ad6d623a2bf69f7842f74776209fa627e15fa02"
+    },
+    {
+      "label": "Rider BGS - Basic Generation Service",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/power-and-energy-supply/aiel22rdbgs.ashx",
+      "pdf_sha256": "ca80ace5f7369e7ae706752f623410eb7cf529d3e40fb8164e8c31303f4645fb",
+      "pages": 4,
+      "retrieved_at": "2026-10-21T05:48:21.337849+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel22rdbgs-selected.txt",
+      "extracted_text_sha256": "0f44c95e9786a0fcd5de08ca0696d7d5007bcd0c143660aa818110b6bed64ae9"
+    },
+    {
+      "label": "Rider PER - Purchased Electricity Recovery",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/power-and-energy-supply/aiel25rdper.ashx",
+      "pdf_sha256": "fabec7ab74616a18e3cf102ecb53dd558e5694daaa7e21a2f99cba5d874a9dbb",
+      "pages": 18,
+      "retrieved_at": "2026-10-21T05:48:21.552469+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        11,
+        13,
+        15
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel25rdper-selected.txt",
+      "extracted_text_sha256": "501a0be5d1397bc98f981fb6b79f072d8bafa3a78d4f3132ce0927f41bbe34cd"
+    },
+    {
+      "label": "Supplemental Customer Charges",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel38otscc.ashx",
+      "pdf_sha256": "0212e38667ec2c138d0f82ef0841759398ac6caf836aae02a9b8e773a29a5270",
+      "pages": 12,
+      "retrieved_at": "2026-10-21T05:48:21.589852+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        9
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel38otscc-selected.txt",
+      "extracted_text_sha256": "3b00710d5f5e9ae4af1cb559f1f85b4a01f372793933cd3b4342a097a74b3a89"
+    },
+    {
+      "label": "- Historical Base Energy Assistance Charge",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhsotscc-beac.ashx",
+      "pdf_sha256": "6fe5014acdb0ff61337b7785ed866f09e7552982501daefe5cbdf89418616684",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:21.790457+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsotscc-beac-selected.txt",
+      "extracted_text_sha256": "87920d5e78bf77abb3558c34d853230ca4d5a8fb1d920ceebe0e645bf49c0bfc"
+    },
+    {
+      "label": "- Historical UCB/POR Program Charge",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhsucbporpc.ashx",
+      "pdf_sha256": "0aa9066552fd5629dbe399421a194e2b73b707f018a136f21322671ecd526bae",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:22.041665+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsucbporpc-selected.txt",
+      "extracted_text_sha256": "d29563fa10641dc4c2ad5bacff3844aebaaa6ecfd9ee234361c89993d515e17d"
+    },
+    {
+      "label": "Tax Additions",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel41otta.ashx",
+      "pdf_sha256": "b8c688ff226360adde74dae20041893cfdd08514c0e7a51c3e52cb4be97f8ef9",
+      "pages": 14,
+      "retrieved_at": "2026-10-21T05:48:22.053475+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel41otta-selected.txt",
+      "extracted_text_sha256": "41236fc5129780c2d5c17006b8af9e55b6ad65e7e7f73e4ed26df989b0ebaba6"
+    },
+    {
+      "label": "Rider EF - Excess Franchise Compensation Adjustment",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel43rdef.ashx",
+      "pdf_sha256": "1b3d32e490a4b2ead7c305cdc9f44b83903ad9b8fb3c1925d04607336c54863b",
+      "pages": 4,
+      "retrieved_at": "2026-10-21T05:48:22.275197+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel43rdef-selected.txt",
+      "extracted_text_sha256": "e1822617312bdcf63e43af73d3a082f8bd6c61cf1c6b3d9d28cfdd3a85684dec"
+    },
+    {
+      "label": "- Rider EF Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielifrdef.ashx",
+      "pdf_sha256": "3c0d36d214f137b5b12a6f2ec6dcf26d4840613c534161fe81d6bd90078aede0",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:22.287943+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielifrdef-selected.txt",
+      "extracted_text_sha256": "cce7782b9912af4c66a1da098f8ba9c954bcbf4bee2138e6b708d7a2fec1eb33"
+    },
+    {
+      "label": "Rider EEA - Electric Environmental Adjustment",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel44rdeea.ashx",
+      "pdf_sha256": "f25555dd77faf01452e9349977e8d0455532c51044daeaaf2c59153381385155",
+      "pages": 7,
+      "retrieved_at": "2026-10-21T05:48:22.278147+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel44rdeea-selected.txt",
+      "extracted_text_sha256": "2c05d5262e72ddc999948c5deb8bc55633b037f64cadb70e84f04426a8261050"
+    },
+    {
+      "label": "- Historical Rider EEA Charges - Rate Zone I",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhseeai.ashx",
+      "pdf_sha256": "536b41d817097523720df310b2b5ad06424f106c5bdffdcf56e9bfa7beb902dd",
+      "pages": 3,
+      "retrieved_at": "2026-10-21T05:48:22.254648+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhseeai-selected.txt",
+      "extracted_text_sha256": "23c63c7cc969185d782b8f39a8f1323c883f2decd7531508072f04ea5ccf6167"
+    },
+    {
+      "label": "- Historical Rider EEA Charges - Rate Zone III",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhseeaiii.ashx",
+      "pdf_sha256": "df6138ab9d94b1b2400a13493602ca8a1c0a096fc36a382bf558031e3c9aed9a",
+      "pages": 3,
+      "retrieved_at": "2026-10-21T05:48:22.569077+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhseeaiii-selected.txt",
+      "extracted_text_sha256": "f624a597b9ecc92c605be8c1602afc7e5dc4f6b1dc0225809e3fd9cdbe86f6e5"
+    },
+    {
+      "label": "Rider EUA - Electric Uncollectible Adjustment",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel45rdeua.ashx",
+      "pdf_sha256": "878383b7ae933f75b9917ea90e75b4f7b920577a738cefecd3a5970bc3bf43ed",
+      "pages": 8,
+      "retrieved_at": "2026-10-21T05:48:22.596992+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel45rdeua-selected.txt",
+      "extracted_text_sha256": "84c5f18f03ebfdb008dd0b1f5cc6b334cd03f2fd63fcc5c31b28294c0de3ac2f"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-eua-charges/aielhsrdeua624.ashx",
+      "pdf_sha256": "7c0f15d53364ecb7a8ea9bf2556a7b8d082b572f3497ec15441ce7b3693fa7fd",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrdeua624-selected.txt",
+      "extracted_text_sha256": "6f4118691c20c3080780ff19ccc76c5389ed4a44204de215b4d0520eca1ddf3e"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-eua-charges/aielhsrdeua625.ashx",
+      "pdf_sha256": "d2705709da6101443a2d912094a6fb8eddb1cff56a59ffdbabe1cd0a9266f083",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrdeua625-selected.txt",
+      "extracted_text_sha256": "ed7c85a127fda09002f41cebb5c792b34c90a94df42da029c98aa6cc744e1e66"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-eua-charges/aielhsrdeua626.ashx",
+      "pdf_sha256": "f4b8632fa74ef68295fc8a892a7ac385e92353a1aa17d5518da9f9bc28df6a7d",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrdeua626-selected.txt",
+      "extracted_text_sha256": "3175083c4c3e2f6373320dfafe4a1005574c90fec1463683eea04adf1f68af89"
+    },
+    {
+      "label": "Rider GC - Government Compliance Adjustment",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel46rdgc.ashx",
+      "pdf_sha256": "df7b6a33c6fffbfd6cad1cbed7542b6771ad45df22ab5eaeec84fc736b1cda4a",
+      "pages": 7,
+      "retrieved_at": "2026-10-21T05:48:22.597032+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel46rdgc-selected.txt",
+      "extracted_text_sha256": "e714311afd95bfcc284bf59a6e8ab5fa90f0c1b79b73adc69ef8349b1de98e9e"
+    },
+    {
+      "label": "- Rider GC Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielifrdgc.ashx",
+      "pdf_sha256": "d919073256e25b28d58de3a8d859b3e0975fe7780130b4b45cef5abf6f7f20e9",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:22.595513+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielifrdgc-selected.txt",
+      "extracted_text_sha256": "4b025e897ecdfb4956c055c12238c3a224ec9aa6e186f4c632408d16ac782cf3"
+    },
+    {
+      "label": "Rider HMAC - Hazardous Materials Adjustment Clause",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel47rdhmac.ashx",
+      "pdf_sha256": "5afa4ca97cc40eac9b6e5068fac568866745695b856e8adf3a18128d3ca72b9f",
+      "pages": 6,
+      "retrieved_at": "2026-10-21T05:48:22.769336+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel47rdhmac-selected.txt",
+      "extracted_text_sha256": "b3132b12c8214b12b87ad05764a40b7a9779f496574c7010adb9462faceda15c"
+    },
+    {
+      "label": "- Rider HMAC Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielifrdhmaciii.ashx",
+      "pdf_sha256": "a6403c04827efd83d18b790b63d76b81509531d2e42a82cd7ac410ab836379c2",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:22.838155+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielifrdhmaciii-selected.txt",
+      "extracted_text_sha256": "5e60f788ac25f9cf272ebc87a3c4068016a36ea14194b72e46bbf0d1432212d1"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/files/illinois/aielifrdhmaciii.ashx",
+      "pdf_sha256": "d624f8baf6533140ae5865323ae1348cd652209027166418a7553ade8fcaef54",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/hmac_legacy_snapshot-selected.txt",
+      "extracted_text_sha256": "e287ee4e6fbc645a4194737b4296376e22d437828fd8fb888645e6f03b3aacbd"
+    },
+    {
+      "label": "Rider IMF - Electricity Infrastructure Maintenance Fee",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel48rdimf.ashx",
+      "pdf_sha256": "6fdc252ea2684650391b75b14af931be539f52338130aa5dc3910e097a820200",
+      "pages": 2,
+      "retrieved_at": "2026-10-21T05:48:22.788536+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel48rdimf-selected.txt",
+      "extracted_text_sha256": "76f72552758efebec8a1d63eddec0f5aeb609b00c28c810c7c6a2efcdec983c5"
+    },
+    {
+      "label": "- Rider IMF Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielifrdimf.ashx",
+      "pdf_sha256": "bdabb306861c46f5b8f94aaf8fbdde834190e9cd138057d3f77cd9b813864120",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:22.828379+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielifrdimf-selected.txt",
+      "extracted_text_sha256": "f763a087c8d62cfca920af1377e0e1d7ba3140f08c7b103ad1be9936d99b34d9"
+    },
+    {
+      "label": "Rider TS - Transmission Service",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel50rdts.ashx",
+      "pdf_sha256": "5ad0c34fcb51a64e7a28c9bd75d7afc37fd461e35b661a45ea20421972dd71c6",
+      "pages": 7,
+      "retrieved_at": "2026-10-21T05:48:23.106540+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel50rdts-selected.txt",
+      "extracted_text_sha256": "00d69ea9d55d5a9406795d17176524e939b1b3609fad129a6d5e6aa35014dc4e"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-rider-ts-charges/2025/aiifts125.ashx",
+      "pdf_sha256": "67654b54e1d91f1a48c6b8b2358e6836c8f7be88e0a09df8b121065bea6d99be",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiifts125-selected.txt",
+      "extracted_text_sha256": "5ca4b15e2eb1ac111bef8a56b98b337778f1fe66fc575d99b262b5a87d11f439"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-rider-ts-charges/2025/aiifts625.ashx",
+      "pdf_sha256": "0f1aeb998647731c1243b166b1b0b8566ed7feed532a935e7eb741dd7203590f",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiifts625-selected.txt",
+      "extracted_text_sha256": "17bec26809b7b6431b1f9f36a36e17ee36d3a6d6ab5c1f361c935a6b72379791"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-rider-ts-charges/2026/aiifts126.ashx",
+      "pdf_sha256": "483409224d2d3c2f826c53f50a114eae683f77984df5f0e495ef4c17b829cbcf",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiifts126-selected.txt",
+      "extracted_text_sha256": "c0a0e590023a3570de654291cd77fb772b38bacabf7a03e2086e24a819d5794b"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-rider-ts-charges/2026/aiifts626.ashx",
+      "pdf_sha256": "37d3a8a7099403e7f43fc18b9e452abc359d75a5b0511e05639f9971d1287548",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiifts626-selected.txt",
+      "extracted_text_sha256": "c05d82ac7e1465c45e3222cf115a68e33eb2aa126a9b3a22233e22334984417d"
+    },
+    {
+      "label": "- Historical Rider CEAC Charges",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhsrdceac.ashx",
+      "pdf_sha256": "84c65e41c04422c4f4f811ed0f56af1bc22914b16ebcfe7b7167b2ef63c022fb",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:23.190049+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrdceac-selected.txt",
+      "extracted_text_sha256": "af876e0c09c2426d7aa2ec2f952df7d24d766f0fb0a34811396acee1a32d07b0"
+    },
+    {
+      "label": "Rider REA - Renewable Energy Adjustment",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel56rdrea.ashx",
+      "pdf_sha256": "682612fc7f241942ce1f8c273c5361f7b0fc326771dfb7aa64588b043ea2b654",
+      "pages": 11,
+      "retrieved_at": "2026-10-21T05:48:23.383278+00:00",
+      "selected_pdf_pages": [
+        2,
+        7,
+        8,
+        11
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel56rdrea-selected.txt",
+      "extracted_text_sha256": "8ef78b9c39170f0f7361428755e38e288e6be0cef189007df6b6c02a60bf2442"
+    },
+    {
+      "url": "https://icc.illinois.gov/downloads/public/filing/4/374302.pdf",
+      "pdf_sha256": "be32c1798ac33de091e80098a53415c53fe108eb136bc870fbf43c0250465401",
+      "pages": 2,
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/rea_2024_06-selected.txt",
+      "extracted_text_sha256": "ebadd2fe80aab1fc297db42bd3ad06a0acba4d6d08d3e4ceb9a175bddbf40b8a"
+    },
+    {
+      "url": "https://www.ameren.com/-/media/rates/files/illinois/aielifrdrea.ashx",
+      "pdf_sha256": "e827b6f488b51876f81d3a97ec801850b3b184070a1c0439e811dceedd48f5c0",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/rea_legacy_snapshot-selected.txt",
+      "extracted_text_sha256": "6ebaaeb14290502c0e619a1fc921d55353617c78d39044ac334a37390749ffe3"
+    },
+    {
+      "url": "https://www.icc.illinois.gov/downloads/public/tariff/currentbooks/5/Electric%20Informational%20Sheets%20Ill.%20C.%20C.%20No.%201%5B4319%5D..pdf",
+      "pdf_sha256": "9118d33ddc0e500b1ae553032ea68161da39464a6a3bfd8fc1fbb2d1c9e15c26",
+      "pages": 54,
+      "selected_pdf_pages": [
+        38
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/icc_informational_book-selected.txt",
+      "extracted_text_sha256": "4f7b347435a4b86db051020135480782d0a9f7fb58005101e0948dedbbb5373f"
+    },
+    {
+      "label": "- Rider REA Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielifrdrea.ashx",
+      "pdf_sha256": "2f9674e7872ff25f6bef63cda8165d5b76d3bc9c29675b5aab8cf2ef564afb03",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:23.492630+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielifrdrea-selected.txt",
+      "extracted_text_sha256": "8dd17dfdc927b3d3df8c9f810822d3a1ce41643314a370860c8370874f49b73c"
+    },
+    {
+      "label": "- Historical Rider EE Charges",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhsrdee.ashx",
+      "pdf_sha256": "9867e2f7f18173cadb44377fbe708d69fac31342cc817c46a1cf4ad3e0594db0",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:23.652010+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrdee-selected.txt",
+      "extracted_text_sha256": "a7d15fd363e2f21e00b7bf48cc9fe63a496997b5c12e8238de04afe779b45d81"
+    },
+    {
+      "label": "Rider CGC - Customer Generation Charge",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aiel60rdcgc.ashx",
+      "pdf_sha256": "eb2c58b6be65f3d6f8264ad8bf03e61432c07cb5f7b5055b4b2718a63acaddd7",
+      "pages": 10,
+      "retrieved_at": "2026-10-21T05:48:23.892523+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel60rdcgc-selected.txt",
+      "extracted_text_sha256": "d8ab9a4ced8d81f6d6aecbf1619fdd8eb6b6e13bc76c075fb7b28e54bff2a0c5"
+    },
+    {
+      "label": "- Rider CGC Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielotcgc.ashx",
+      "pdf_sha256": "4d47d30652cea362789f44c33879abe09404344620a5bca109db4bae507e3e7b",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:23.899765+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielotcgc-selected.txt",
+      "extracted_text_sha256": "276eb9e28951b076ded0208a1bb02ec71604b1f3ef63b37bc92fb51fc8a76852"
+    },
+    {
+      "label": "- Rider USS Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhsrduss.ashx",
+      "pdf_sha256": "1988f80229d77fdf791e46add0309e2402b5b31b07672097b619dcf6f353fe10",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:24.168514+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhsrduss-selected.txt",
+      "extracted_text_sha256": "fd80e5b841dc7c236d9dca37706939a66b2a71238d3cfa3c64f67cf4e111a619"
+    },
+    {
+      "label": "- Rider ETAC Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielifrdetac.ashx",
+      "pdf_sha256": "70b842757322359ccc4656c7139f607fad348988b0cd0088c0e36225a3255ab9",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:24.295999+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielifrdetac-selected.txt",
+      "extracted_text_sha256": "6822d5240fa24dd5120e024f017378cffbc3d54d56fb88750447c2f6095cbf25"
+    },
+    {
+      "label": "- Rider CSESC Informational Filing",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/other-charges/aielhscsesc.ashx",
+      "pdf_sha256": "ca18a49f4aa01359805e768ac415d74ca9d9ede8b3bae65a5ed2ed6f3349ee57",
+      "pages": 2,
+      "retrieved_at": "2026-10-21T05:48:24.554684+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aielhscsesc-selected.txt",
+      "extracted_text_sha256": "00aa58e4c978fe6e6374f86bbca892815b8c4983c76ca20f9fbd9b3459a73825"
+    },
+    {
+      "label": "Rider NMOS - Net Metering For On-Site Generation",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/power-and-energy-supply/aiel31rdnmos.ashx",
+      "pdf_sha256": "850abc9accddc0b8e95fb291fc8cb300cc878b35e3616594d5cacf9c1127948a",
+      "pages": 13,
+      "retrieved_at": "2026-10-21T05:48:21.554331+00:00",
+      "selected_pdf_pages": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/aiel31rdnmos-selected.txt",
+      "extracted_text_sha256": "81ddf2e4607a73289a52f52fe9f27a0c1e82a3ffc24e301e633520e727568951"
+    },
+    {
+      "label": "Effective October 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss1025.ashx",
+      "pdf_sha256": "6af8ec8c7c734b75c375471bc3eadec7b2da6fc624cc404b18350620af11f072",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.483866+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss1025-selected.txt",
+      "extracted_text_sha256": "f4181f7132f97731e422d3fee9e6b6e56c4b86c6f26b3fc3160d82bd9eb554f6"
+    },
+    {
+      "label": "Effective October 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss1026.ashx",
+      "pdf_sha256": "37e0817b23935117a39e15e268a5f37ff1c8e6a8678261508abe15f4c898c607",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:24.543775+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss1026-selected.txt",
+      "extracted_text_sha256": "9203541f237ea37b3ffc31d0d0bfc83f73f81e6c598ea8c20e756414fe68f563"
+    },
+    {
+      "label": "Effective November 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss1125.ashx",
+      "pdf_sha256": "f8964c05256069062be2c48876e0d895ba7bedfb265c0160edaa3d93697ce6cf",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.451166+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss1125-selected.txt",
+      "extracted_text_sha256": "c4c68f2bf5dd5af48bdec5427784519cffedf6a7de98a98d2da04415890dd8be"
+    },
+    {
+      "label": "Effective December 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss1225.ashx",
+      "pdf_sha256": "111cc34bddd7cf224659f272e7a6cd07ebb25889b46252a865d5a3d66de2e450",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.380436+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss1225-selected.txt",
+      "extracted_text_sha256": "35452e3872bbeaf10fb2da94aa2924eccbecd0656dea19ed9a3efda88b44d20d"
+    },
+    {
+      "label": "Effective January 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss125.ashx",
+      "pdf_sha256": "9eb412a2e3cb78d7a2f778b04a8077a63778aa3e259ca15c707f6cb9978f4857",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:26.026514+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss125-selected.txt",
+      "extracted_text_sha256": "bd7c2db618744485acf76bc1a69c91e755814efbfb11b772d86b6c9a7aeb6f72"
+    },
+    {
+      "label": "Effective January 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss126.ashx",
+      "pdf_sha256": "a65180ad1088fed8a6cd59835170ca358e9b71a52ea77bbe8427a721ebcec824",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.391655+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss126-selected.txt",
+      "extracted_text_sha256": "b1351893ea8a6f795a1158f51dcb000947d69f9f204d67922aab141e7dee028c"
+    },
+    {
+      "label": "Effective February 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss225.ashx",
+      "pdf_sha256": "c9da35c21fcdeb095f8e4d4c67c0d6e28dad8511ae50b4d6fbb84d98d6a04f0a",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.942039+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss225-selected.txt",
+      "extracted_text_sha256": "5efa3e14f90b0a4a9e5a9bd11330ee508d89f08d52d64914b38bab97ed79c9c8"
+    },
+    {
+      "label": "Effective February 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss226.ashx",
+      "pdf_sha256": "95ffe420462224808e24869d9d45561f4eca22b22e7db813344b645dec84031c",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.214741+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss226-selected.txt",
+      "extracted_text_sha256": "b78d8b05d989f041281a48dda09597085d33b0caa77bab0ebaa1adaeeb611e1a"
+    },
+    {
+      "label": "Effective March 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss325.ashx",
+      "pdf_sha256": "6a475217e5cec461d9852038f8ddfe9a2ffc53ac0b5bede272a56af4d232656c",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.976707+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss325-selected.txt",
+      "extracted_text_sha256": "7b27585747066bb89876789618ff80aeb02c18a12718c00f030c00fb6ff6bb12"
+    },
+    {
+      "label": "Effective March 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss326.ashx",
+      "pdf_sha256": "8bb5d95733a63177eacf92c30c7f32464ef72a207b50a4837122c806ce4186ee",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.263693+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss326-selected.txt",
+      "extracted_text_sha256": "fa1c71f2accbed3a91a9f12075e1b80a56bb319952c411c58308ea546f2f9407"
+    },
+    {
+      "label": "Effective April 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss425.ashx",
+      "pdf_sha256": "3e31a600f18feeee5e1b7cb5d823de51cc3e620f5b1f270de0014a7615361059",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.941839+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss425-selected.txt",
+      "extracted_text_sha256": "c682da941a3862c8d081db64ba6432eca7e676743c9693a188bef657f96e1efb"
+    },
+    {
+      "label": "Effective April 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss426.ashx",
+      "pdf_sha256": "5b2c4a6489d95802cfeb58e8cd2197b0b1d22806ca7018d07c6af1f3adf0cfeb",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.030697+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss426-selected.txt",
+      "extracted_text_sha256": "9ea99a7d57d14ba091b12cf75844c6bd486f11626a916a9e20059129b734dd51"
+    },
+    {
+      "label": "Effective May 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss525.ashx",
+      "pdf_sha256": "304af5eebe9bb4566b651d807ebb167e6f3b1de5e3ebe1fa6d7eed34632b3799",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.853115+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss525-selected.txt",
+      "extracted_text_sha256": "85c914afe661be1fe0b17553af0432314257ac30690391864cc044fa87afc023"
+    },
+    {
+      "label": "Effective May 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss526.ashx",
+      "pdf_sha256": "fdcfb0fb685ea3be5dc6f509463227b64270069d166c6e73a5545c3d4be8f4f1",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:24.982838+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss526-selected.txt",
+      "extracted_text_sha256": "04f01bfa458698748a786240898745a2d9343acb6cf43b1385be546796c4b081"
+    },
+    {
+      "label": "Effective June 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss625.ashx",
+      "pdf_sha256": "3517756a9908d78fb2c36e99c182a6f4db2bb151a6d11053c0be36a1a388edfe",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.715899+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss625-selected.txt",
+      "extracted_text_sha256": "a1f2c963cad58c919a2197b3c4a11a2c1285305b76a8509cc79756c4cd12175c"
+    },
+    {
+      "label": "Effective June 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss626.ashx",
+      "pdf_sha256": "0f9bfc725281b092446ce5cdf66f1734d21935d465b82fe0b7b1d70580090caa",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.059539+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss626-selected.txt",
+      "extracted_text_sha256": "17a5e8976eaf524822f7973a9c8c277141be01ac039615a96f7b3dafe5563773"
+    },
+    {
+      "label": "Effective July 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss725.ashx",
+      "pdf_sha256": "94db0d912d64529c28a50f23763848b059934fbeb62ddfcab80bbb463fafadbf",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.715857+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss725-selected.txt",
+      "extracted_text_sha256": "94c959f14f5d81b61a8826942fcc1e2f1be99f80ce8b68107424132201546b11"
+    },
+    {
+      "label": "Effective July 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss726.ashx",
+      "pdf_sha256": "b36febc4b003b73b1fd4f80b2360a3c0cd13eda29959734bdf4364c707a48144",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:24.831269+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss726-selected.txt",
+      "extracted_text_sha256": "e48e0df0d42e0ca9173408f20da0ddd718740622c5cafd5eb22edc35c13c29d1"
+    },
+    {
+      "label": "Effective August 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss825.ashx",
+      "pdf_sha256": "b0d0c3f4c1b95648eead8b52c3dff9829a1d03c8af9384186c64a4014441bd01",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.728447+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss825-selected.txt",
+      "extracted_text_sha256": "8f604eaddb49dd4dedeeab89cf2cd518ccb27288c8ae3d62271be408c70403a4"
+    },
+    {
+      "label": "Effective August 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss826.ashx",
+      "pdf_sha256": "c84a66ee4623b90669f99fce74c56d4269a0b6c65b543aebb9338e0675e7481b",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:24.842247+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss826-selected.txt",
+      "extracted_text_sha256": "d4688e714516cdbeb30b189c2851adf9adaec74cad059d0fa3c14341d9cb334c"
+    },
+    {
+      "label": "Effective September 2025",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2025/aiifhss925.ashx",
+      "pdf_sha256": "8230d64f1810577b9525a8e0ac7c0e1c104f5debe95eb3cf9e9e6dec0e755fd5",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:25.590770+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss925-selected.txt",
+      "extracted_text_sha256": "7d771198532c2cd2430c0a2c8075ae96fededd64d94de72afd1253b0172c6ebd"
+    },
+    {
+      "label": "Effective September 2026",
+      "url": "https://www.ameren.com/-/media/rates/illinois/residential/electric-rates/historical-retail-2016-to-present/2026/aiifhss926.ashx",
+      "pdf_sha256": "0a4b73cabd85c3b50999fece53445c8b5bade3e3acb0a005f358579e9e20f911",
+      "pages": 1,
+      "retrieved_at": "2026-10-21T05:48:24.697231+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_il/supply_aiifhss926-selected.txt",
+      "extracted_text_sha256": "0ad8e45cf6663f2126aee3a2549d5b33c1781afe0d3223ae06caa9e9323325b1"
+    }
+  ]
+}

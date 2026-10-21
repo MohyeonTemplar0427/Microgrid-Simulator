@@ -98,6 +98,17 @@ cycle consumption. Complete regular monthly cycles and confirmed non-export DG
 eligibility are required. MISO LRZ7 and METC transmission metadata remain
 separate from retail bills. See [Consumers scope, sources and limitations](Consumers_Energy.md).
 
+## Illinois · Ameren Illinois
+
+The local candidate supports DS-1 residential/BGS-1 and **standard** DS-2 small
+commercial/BGS-2, with verified monthly rates January 2025–October 2026. Confirm
+utility service, BGS supply, retail non-interval TS classification and actual
+Rate Zone I/II/III independently. Only complete calendar cycles, ordinary
+secondary service and approved non-export PV/storage are supported. Standard
+DS-2 uses seasonal energy blocks, not the optional demand tariff. MISO LRZ4,
+Ameren Illinois transmission ownership and wholesale pricing identity remain
+separate from retail Rate Zones. See [Ameren scope and sources](Ameren_Illinois.md).
+
 ## Before running a comparison
 
 1. Confirm delivery utility and generation enrollment from the account.

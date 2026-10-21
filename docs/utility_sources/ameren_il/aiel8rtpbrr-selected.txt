@@ -1,0 +1,102 @@
+PDF PAGE 2
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois Original Sheet No. 8.001
+Electric Service Schedule Ill. C. C. No. 1
+RATE PBR-R – PEFORMANCE-BASED RATEMAKING - RECONCILIATION 
+Date of Filing, December 19, 2023 Date Effective, December 26, 2023 
+Filed Pursuant to ICC Order Issued by L.P. Singh, Chairman & President
+in Docket No. 23-0082 10 Richard Mark Way, Collinsville, IL 62234
+*Asterisk denotes change
+Annual Adjustment Factor
+Annual Adjustment Factor (AAF) means a percentage adjustment factor applied to Base Rate 
+Revenues in effect during the applicable Effective Period as described in the 'Determination of 
+the Annual Adjustment Factor' section of this tariff. The Annual Adjustment Factor is intended 
+to recover the Annual Adjustment Amount as determined in this tariff.
+Base Rate Revenues
+Base Rate Revenues, for purposes of this Rider, means revenues recovered through base 
+Delivery Service rates, as determined in the Company's last Article IX or Article XVI rate case, 
+as applicable. Base Rate Revenues shall include costs and revenues associated with the Delivery 
+Service Rates for DS-1, DS-2, DS-3, DS-4, DS-5, and DS-6. Base Rate Revenues also include 
+EDT Cost Recovery implemented through the Tax Additions tariff, any ongoing Delivery 
+Service charges applied through Rider RDC – Reserve Distribution Capacity, and Monthly 
+Charges applied through Rider EVCP - Optional Electric Vehicle Charging Program. Base Rate 
+Revenues shall not include revenues or credits arising from other Riders, including but not 
+limited to applicable net metering Riders and Riders BGS, HSS, PER, PSP, RTP, TS, EEA, 
+EUA, PTR, CEAC, NSM, REA, EE, CGC, EF, GC, HMAC, EFC, ETAC, CSESC, EDITA, USS 
+or QF. 
+Delivery Reconciliation Year
+Delivery Reconciliation Year means the applicable calendar year for which Ameren Illinois is 
+calculating an Annual Adjustment Amount. The initial Delivery Reconciliation Year begins on 
+January 1, 2024, and ends December 31, 2024. Subsequent Delivery Reconciliation Years begin 
+on January 1st and ends on the following December 31st. 
+Effective Period 
+Effective Period means the period during which the AAF, the recovery mechanism of the AAA, 
+is applied to the Base Rate Revenues. The Effective Period begins with the first January monthly 
+Billing Period after the AAF percentage is filed, continuing through the following December 
+monthly Billing Period. 
+FERC Fm 1
+FERC Fm 1 means the Company’s FERC Financial Report FERC Form No. 1: Annual Report of 
+Major Electric Utilities, Licensees and Others, or its successor.
+Fm 21 ILCC
+Fm 21 ILCC means the Company’s Annual Report of Electric Utilities Licensees and/or Natural 
+Gas Utilities to the Illinois Commerce Commission (ICC).
+
+PDF PAGE 10
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois Original Sheet No. 8.009
+Electric Service Schedule Ill. C. C. No. 1
+RATE PBR-R - PEFORMANCE-BASED RATEMAKING - RECONCILIATION 
+Date of Filing, December 19, 2023 Date Effective, December 26, 2023 
+Filed Pursuant to ICC Order Issued by L.P. Singh, Chairman & President
+in Docket No. 23-0082 10 Richard Mark Way, Collinsville, IL 62234
+*Asterisk denotes change
+DETERMINATION OF ANNUAL ADJUSTMENT FACTOR
+The AAF for each applicable Delivery Reconciliation Year shall be billed over the Effective Period. The 
+AAF shall be expressed as a uniform percentage carried to two decimal places and applied to the Base 
+Rate Revenues of each Customer's individual bill in accordance with the following formula: 
+AAF (%) = [(AAA / BRR) + (PRA / BRR9)] x 100 x (100%/1)
+Where: 
+AAF = Annual Adjustment Factor applicable to the Base Rate Revenues of each Customer's
+individual bill.
+AAA = Annual Adjustment Amount, in dollars, determined pursuant to the Determination of 
+Annual Adjustment Amount section of this tariff. 
+PRA = Prior Reconciliation Amount, in dollars, represents difference between the approved AAA 
+and actual collections for the prior periods. 
+BRR = The projected Base Rate Revenues for the twelve (12) consecutive monthly Billing
+Periods beginning January and continuing through December of the Effective Period. 
+BRR9 = The projected Base Rate Revenues for the nine (9) consecutive monthly Billing Periods 
+beginning April and continuing through December of the Effective Period.
+
+PDF PAGE 11
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois Original Sheet No. 8.010
+Electric Service Schedule Ill. C. C. No. 1
+RATE PBR-R – PEFORMANCE-BASED RATEMAKING - RECONCILIATION 
+Date of Filing, December 19, 2023 Date Effective, December 26, 2023 
+Filed Pursuant to ICC Order Issued by L.P. Singh, Chairman & President
+in Docket No. 23-0082 10 Richard Mark Way, Collinsville, IL 62234
+*Asterisk denotes change
+INFORMATIONAL FILINGS
+The AAA and AAF determined in accordance with the provisions of this tariff shall be filed by the 
+Company with the ICC for informational purposes in the form of an Informational Sheet at the 
+conclusion of each Annual Reconciliation Proceeding. The Informational Sheet filing shall be 
+accompanied by supporting workpapers and documentation. 
+The AAF scheduled to be applicable beginning with a January monthly Billing Period and extending 
+through the following December monthly Billing Period (Effective Period) shall be filed with the ICC for 
+informational purposes after the ICC issues its Order determining the Annual Adjustment Amount and be 
+effective with the immediately following January Billing Period.
+Moreover, subsequent to application of the first AAF, the Company shall file on or before March 20, to 
+be effective with the April Billing Period, a reconciliation of differences between the approved AAA and 
+actual collections for the prior fiscal year. Such adjustments shall continue until the PRA associated with 
+the subsequent Delivery Reconciliation Year has been applied to Customer bills for the applicable 
+Effective Period. 
+Any Informational Sheet filing made after the applicable filing date previously specified in this 
+Informational Filings section, but prior to the date when such AAF is scheduled to become effective is 
+acceptable only if such filing corrects an error or errors from timely filed AAF. Any other such filing 
+made after such specified date is acceptable only if such filing is made in accordance with the special 
+permission request provisions of Section 9-201(a) of the Act.
+MISCELLANEOUS GENERAL PROVISIONS
+Service hereunder is subject to the Customer Terms and Conditions, Standards and Qualifications for 
+Electric Service, Tax Additions, and Supplemental Customer Charge Tariffs of this Schedule, as well as 
+any other applicable Rates, Riders, taxes, adjustments, fees or charges that may be approved by the ICC 
+from time to time and in effect.

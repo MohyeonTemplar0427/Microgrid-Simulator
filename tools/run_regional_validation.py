@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from src.billing.regional import adapter, calculate_cycle, cycle_account, bill_scope  # noqa: E402
-from src.local_web.regional_study import SITES, _load, calendar_cycles, defaults, prepare  # noqa: E402
+from src.local_web.regional_study import SITES, _load, calendar_cycles, defaults, prepare, data_timezone  # noqa: E402
 from src.timeseries import build_interval_index  # noqa: E402
 from tools.validation_support import atomic_json, output_lock, positive_seconds, utc_now, value_hash
 from tools.regional_validation_resume import previous_manifest, reusable, validator_files, archived_attempt
@@ -49,12 +49,13 @@ DTE_CASES = (("dte_electric", "residential", "D1.11"), ("dte_electric", "commerc
              ("dte_electric", "commercial", "D3.11"))
 
 CONSUMERS_CASES = tuple(("consumers_energy", "residential" if p in ("RSP", "RSH") else "commercial", p) for p in ("RSP", "RSH", "GS", "GSTU"))
+AMEREN_CASES = (("ameren_illinois", "residential", "DS-1"),("ameren_illinois", "commercial", "DS-2"))
 
 
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -221,7 +222,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
 
 def weather_request(utility):
     lat, lon, _ = SITES[utility]
-    return dict(latitude=lat, longitude=lon, year=2025, timezone="America/New_York", timestep_minutes=15)
+    return dict(latitude=lat, longitude=lon, year=2025, timezone=data_timezone(utility), timestep_minutes=15)
 
 
 def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=False, va_history_only=False):
@@ -239,17 +240,17 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
     for utility in utilities:
         path = folder/utility
         path.mkdir(exist_ok=True)
-        if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy") or utility == "dominion_energy_virginia" and not va_history_only:
+        if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois") or utility == "dominion_energy_virginia" and not va_history_only:
             file = path/"era5.json"
             expected = previous.get("sources", {}).get(utility, {}).get("sha256")
             if expected is not None:
                 require(file.exists() and digest(file) == expected, "Prepared ERA5 bytes changed; choose a new input folder")
-            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy") else ("2026-09-01","2026-09-30")
+            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois") else ("2026-09-01","2026-09-30")
             request = dict(latitude=SITES[utility][0], longitude=SITES[utility][1], start_date=start, end_date=end)
             payload = json.loads(file.read_text()) if file.exists() else fetch_era5(**request)
             require(payload["request"]["latitude"] == request["latitude"] and payload["request"]["longitude"] == request["longitude"],
                     "Prepared ERA5 coordinates differ; retrieve the exact site in a new input folder")
-            grid = build_interval_index(request["start_date"], request["end_date"], "America/New_York", 15)
+            grid = build_interval_index(request["start_date"], request["end_date"], data_timezone(utility), 15)
             _, provenance = parse_era5(payload["raw_json"], grid, request["latitude"], request["longitude"])
             if not file.exists():
                 write_json(file, payload)
@@ -285,7 +286,7 @@ def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
-    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy"):
+    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois"):
         payload=json.loads((source/"era5.json").read_text())
         from src.profiles.era5 import parse_era5
         lat,lon,_=SITES[utility]

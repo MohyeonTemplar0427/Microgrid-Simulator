@@ -1,0 +1,26 @@
+PDF PAGE 1
+Non-Interval
+Interval Metered
+Metered* Non-Lighting* Lighting*
+($/kW-day) (¢/kWh) (¢/kWh)
+DS-1 Residential Delivery Service 0.34582 2.765
+DS-2 Small General Delivery Service 0.33616 2.688
+DS-3 (DS-6)** General Delivery Service 0.33644
+DS-4 (DS-6)** Large General Delivery Service 0.33498
+DS-5 Lighting Service 1.721
+*
+**
+Ameren Illinois Company d/b/a Ameren Illinois
+Rate
+Rider TS - Transmission Service
+26th Informational Sheet Supplemental to Sheet Nos.
+50 - 50.005 of Ill. C. C. No. 1 - Electric Service
+Effective June 2026
+Per Monthly Billing Period
+DS-6 (Temperature Sensitive DS) is an optional rate for DS-3 and DS-4 Customers.
+Transmission Service Charge
+Canceling 25th Informational Sheet
+Rate includes MISO Schedules 1, 2, 7, 8, 9, 10, 10-FERC, 25, 26, 26A, 26C, 26D, and 34 costs (and any associated 
+credits).
+Customer's billing quantities shall be adjusted for any applicable losses.
+Notes: 

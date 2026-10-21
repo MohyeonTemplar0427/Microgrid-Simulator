@@ -1,0 +1,167 @@
+PDF PAGE 1
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois 5
+th Revised Sheet No. 50
+Electric Service Schedule Ill. C. C. No. 1 (Canceling 3
+rd Revised Sheet No. 50)
+RIDER TS – TRANSMISSION SERVICE
+Date of Filing, July 25, 2024 Date Effective, September 8, 2024
+Issued by L.P. Singh, Chairman & President
+10 Richard Mark Way, Collinsville, IL 62234
+*Asterisk denotes change
+AVAILABILITY
+Rider TS, Transmission Service, is applicable to Customers taking service under Rate DS-1, DS￾2, DS-3, DS-4, DS-5 or DS-6 and receiving Company-supplied power and energy.
+PURPOSE
+The purpose of this Rider is to provide for the recovery of costs, fees and charges related to 
+Transmission Service and other related services necessary for the provision of power and energy 
+by the Company. Recovery shall be made pursuant to the Transmission Provider's FERC￾approved tariffs related to Transmission Service excluding Transmission Service and other 
+related service costs recovered under Rider PER and HSS, as applicable.
+CALCULATION OF THE TRANSMISSION SERVICE CHARGE
+The calculation and application of the Transmission Service Charge (TSC) provides the 
+mechanism necessary for the Company to recover costs, fees and charges related to Transmission 
+Service and related services not otherwise recovered under the Company’s Rider PER. All 
+TSC’s shall be adjusted by the Uncollectible Adjustment as described in Rider PER and Rider 
+HSS. Beginning with the June 2012 Billing Period, TSC’s shall be effective for the period from 
+the June Billing Period through the May Billing Period (“Annual Period”), unless modified as 
+described in the Terms and Conditions of this tariff.
+A. Interval-metered Customers
+* The TSC for interval-metered customers receiving power and energy from the Company will 
+reflect a direct application of the charges pursuant to the Transmission Provider’s FERC￾approved tariffs to be applied based upon the interval-metered customer’s individual billing 
+determinants as defined by the Company. A kW Transmission Adjustment Factor, if any, 
+will be filed annually and shall apply to interval-metered Customers to account for prior 
+period adjustments by the Transmission Provider. The TSC for interval-metered retail 
+Customers receiving power and energy from the Company will be determined as follows:
+
+PDF PAGE 2
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois 4
+th Revised Sheet No. 50.001
+Electric Service Schedule Ill. C. C. No. 1 (Canceling 2
+nd Revised Sheet No. 50.001)
+RIDER TS – TRANSMISSION SERVICE
+Date of Filing, July 25, 2024 Date Effective, September 8, 2024
+Issued by L.P. Singh, Chairman & President
+10 Richard Mark Way, Collinsville, IL 62234
+*Asterisk denotes change
+TSCi = [TSDi]
+Where:
+TSCi = Transmission Service Charge for interval-metered Customers in $/kW￾day, rounded to the nearest $0.00001, to be applied to each kW of 
+Customer’s kW load at the time of the peak system load occurring in the 
+Billing Period including the load of any Behind the Meter Generation, 
+as that term is used in the MISO Transmission Settlements Business 
+Practice manual, times the number of days of service in the Billing 
+Period.
+TSDi = Transmission Service Demand cost equals the sum of the kW daily 
+derived demand costs of the applicable schedules listed in the 
+Transmission Service Charge Informational Sheet filed pursuant to this 
+tariff, expressed in $/kW-day, rounded to the nearest $0.00001.
+* Customers operating Customer-owned parallel generation with nameplate capacities greater 
+than 5 MW will be billed on the total of the load served from the Company's system plus the 
+load served by on-site generation at the time of the Company's peak system load in the 
+applicable Billing Period, unless all of the generation is from solar photovoltaic sources, or 
+the following conditions exist.
+1. Customers with Customer-owned generation (operating on or before June 1, 2010)
+functioning orintended to function to offset load at their Premises, and never having been 
+registered with MISO as a Load Modifying Resource or Market Participant by the 
+Customer, will be billed on the total of the Customer’s load served from the Company's 
+system plus load served by on-site generation in excess of the nameplate capacity 
+operating on or before June 1, 2010, at the time of the Company's peak system load in the 
+applicable Billing Period.
+
+PDF PAGE 4
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois 5
+th Revised Sheet No. 50.003
+Electric Service Schedule Ill. C. C. No. 1 (Canceling 3
+rd Revised Sheet No. 50.003)
+RIDER TS – TRANSMISSION SERVICE
+Date of Filing, July 25, 2024 Date Effective, September 8, 2024
+Issued by L.P. Singh, Chairman & President 
+10 Richard Mark Way, Collinsville, IL 62234
+*Asterisk denotes change
+TSCL = ( )
+
+
+
+
+
+
+L
+L
+E
+ETS x100
+Where:
+TSCL = Transmission Service Charge for BGS-5 – Lighting Service Customers, in 
+¢/kWh, rounded to the nearest 0.001¢, to be applied to each kWh supplied 
+under BGS-5 – Lighting Service.
+ETSL = Estimate of applicable transmission costs which equals the estimate of daily 
+demand costs of the applicable schedules listed in the Transmission Service 
+Charge Informational Sheets filed pursuant to this tariff.
+EL = Energy, in kWh, forecast to be supplied by the Company for the effective 
+Annual Period for BGS-5 - Lighting Service Customers.
+C. Non-interval Non-lighting Service Customers
+The TSC for non-interval metered retail customers, receiving power and energy from the 
+Company will be determined as follows:
+TSCn =ETSn + [TADJn + On] / En
+Where:
+* TSCn = Transmission Service Charge for non-interval metered Customers, in 
+¢/kWh, rounded to the nearest 0.001¢, to be applied to each kWh 
+supplied under Rider PER in the monthly Billing Period.
+
+PDF PAGE 5
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois 2
+nd Revised Sheet No. 50.004
+Electric Service Schedule Ill. C. C. No. 1 (Canceling 1
+st Revised Sheet No. 50.004)
+RIDER TS – TRANSMISSION SERVICE
+Date of Filing, April 6, 2018 Date Effective, May 21, 2018
+Issued by R.J. Mark, President & CEO
+6 Executive Drive, Collinsville, IL 62234
+*Asterisk denotes change
+ETSn = The sum of the estimated Transmission Service costs, fees or charges, 
+for Transmission Service required to deliver the electric power and 
+energy supplied to Customers under Rider PER calculated by dividing 
+the TSCi determined in Section A above by a load factor percentage 
+determined from a monthly average of monthly MISO settlement data 
+associated with serving non-interval non-lighting service customers for 
+the previous calendar year. 
+TADJn = Transmission Adjustment, in dollars, represents an addition to or an 
+offset to the estimated Transmission Service costs, fees or charges, as 
+defined above, to reflect differences between the actual results for the 
+prior period as compared to the actual costs incurred by the Company 
+for the same period. Such Transmission Service costs shall include all 
+applicable costs, fees and charges estimated to be incurred by the 
+Company to obtain Transmission Service used to serve retail Customers 
+receiving power and energy from the Company but will not include any 
+estimates of Transmission Service costs and other related services that 
+are recovered under Rider PER.
+ On = Commission ordered adjustment amount, in dollars ($), resulting from a 
+Commission Order in a reconciliation proceeding, plus the calculated 
+interest attributable to the O component. Interest shall be at the rate 
+established by the Commission under 83 Ill. Adm. Code 280.40(g)(1). 
+Interest on the O component shall be applied from the end of the 
+reconciliation period until the O component is refunded or charged to 
+customers through the TSCn.
+
+PDF PAGE 7
+Ameren Illinois Company Ill. C. C. No. 1
+d/b/a Ameren Illinois Original Sheet No. 50.006
+Electric Service Schedule Ill. C. C. No. 1
+RIDER TS – TRANSMISSION SERVICE
+Date of Filing, April 6, 2018 Date Effective, May 21, 2018
+Issued by R.J. Mark, President & CEO
+6 Executive Drive, Collinsville, IL 62234
+*Asterisk denotes change
+TERMS AND CONDITIONS
+The Transmission Service Charge will be filed with the ICC by the 20th day of the month prior to 
+the start of the Annual Period it is to be applied. If the Company determined during the effective 
+Annual Period that it is appropriate to revise a Transmission Service Charge to better match 
+revenues or expected revenue with costs incurred or expected to be incurred, the Company may, 
+from time to time, calculate a revised Transmission Service Charge to become effective as of the 
+beginning of any calendar month during the effective Annual Period. The Company shall submit 
+all applicable work papers necessary to support the determinations of the TSC’s at the time of the 
+filings.
+TERMS OF PAYMENT
+Customer's bills for service under this tariff shall be rendered and payments due in accordance 
+with the Payment of Bills and Late Payments section of the Customer Terms and Conditions.

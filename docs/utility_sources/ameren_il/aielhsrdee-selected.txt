@@ -1,0 +1,25 @@
+PDF PAGE 1
+Cents
+per kWh
+Residential - Rate DS-1 0.64400
+Small Non-Residential - Rate DS-2 and DS-5 0.81600
+Medium Non-Residential - Rate DS-3 (DS-6)* 0.37000
+Large Non-Residential - Rate DS-4 (DS-6)* 0.17800
+ * DS-6 (Temperature Sensitive DS) is an optional rate for DS-3 and DS-4 customers
+Small Medium Large
+Residential Non-residential Non-residential Non-residential
+Billing Periods Rate DS-1 Rate DS-2 & 5 Rate DS-3 (DS-6)* Rate DS-4 (DS-6)*
+Jan 2026 - Dec 2026 0.64400 0.81600 0.37000 0.17800
+Jan 2025 - Dec 2025 0.55900 0.76300 0.35600 0.19900
+Jan 2024 - Dec 2024 0.41500 0.61700 0.29300 0.13700
+Jan 2023 - Dec 2023 0.31500 0.48400 0.22200 0.09900
+Jan 2022 - Dec 2022 0.24800 0.36000 0.17600 0.10500
+Jan 2021 - Dec 2021 0.20900 0.27700 0.14100 0.12000
+Jan 2020 - Dec 2020 0.19800 0.23900 0.11200 0.08600
+Jan 2019 - Dec 2019 0.11500 0.11900 0.12900 0.18000
+Jan 2018 - Dec 2018 0.05200 0.06000 0.04800 0.05400
+January 2018 - Present
+Ameren Illinois Company d/b/a Ameren Illinois
+Rider EE - Energy Efficiency and Demand-Response Investment Charges
+Charges for Service Billed During the January 2026 Through December 2026 Billing Periods
+Rider EE - Energy Efficiency and Demand-Response Investment Charges 
