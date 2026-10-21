@@ -1,0 +1,109 @@
+===== PDF PAGE 2 =====
+Page 2
+U-21338
+[t]rue-ups of each of the securitization charges shall be conducted periodically, in 
+accordance with the schedule and the methodology approved in this financing 
+order. Annual true-up (and quarterly true-up), semi-annual true-up, and potential 
+additional interim true-up results may be implemented automatically after 45 days 
+absent a Commission order, unless contested.
+June 22 order, p. 61.
+On October 15, 2025, DTE Electric filed its second annual routine true-up adjustment report 
+(Report) in this docket to reflect new surcharges for the period of December 1, 2025 through 
+November 30, 2026. The computation of the proposed surcharges is outlined on page 3 of 
+Attachment A of the Report (attached to this order as Exhibit A). Attachment C of the Report, 
+attached as Exhibit B to this order, contains the proposed new tariffs reflecting the securitization 
+charges after the true-up. 
+The Commission Staff (Staff) reviewed the proposed adjustments and concluded that the 
+adjustments were routine, the calculations were accurate, and the proposed adjustments conformed
+to the methodology approved by the Commission.
+After considering DTE Electric’s filing and the Staff’s review, the Commission agrees that the 
+proposed adjustments are routine, the calculations are accurate, and the proposed adjustments 
+conform to the approved methodology. DTE Electric is therefore authorized to implement the 
+adjustments effective for bills rendered on and after the December 2025 billing month.
+THEREFORE, IT IS ORDERED that:
+A. For bills rendered on and after the December 2025 billing month, DTE Electric Company 
+shall implement the new securitization surcharges set forth in Exhibit B to this order.
+B. Within 30 days from the date of this order, DTE Electric Company shall file with the 
+Commission tariff sheets substantially similar to those set forth in Exhibit B to this order. After 
+the tariff sheets have been reviewed and accepted by the Commission Staff for inclusion in the 
+
+===== PDF PAGE 6 =====
+M.P.S.C. No. 1 - Electric Forty-Fifth Revised Sheet No. C-65.00
+DTE Electric Company Cancels Forty-Fourth Revised Sheet No. C-65.00
+(Update Securitization)
+Issued __________, 2025 Effective for bills rendered on
+M. A. Bruzzano and after December 1, 2025
+Senior Vice President
+Regulatory Affairs Issued under authority of the
+Michigan Public Service Commission
+Detroit, Michigan dated ____________ XX, 2025 
+in Case No. U-21338
+(Continued from Sheet No. C-64.03)
+C8 SURCHARGES AND CREDITS APPLICABLE TO POWER SUPPLY SERVICE (Contd.)
+C8.5 SURCHARGES AND CREDITS APPLICABLE TO POWER SUPPLY SERVICE: Summary of surcharges and 
+credits including PSCR, pursuant to sub-rules C8.1, C8.4 of this rule. (Cents per kilowatthour or percent of base bill unless otherwise 
+noted).
+PSCR
+(¢/kWh)
+Securitization
+Charge River 
+Rouge
+(¢/kWh)
+Securitization
+Charge TCSC
+(¢/kWh)
+Total Power 
+Supply Surcharges
+(excludes
+REPS )
+(¢/kWh)
+Residential
+D1 Non Transmitting Meter 0.250 0.0243 0.2305 0.5048
+D1.1 Int. Space Conditioning 0.250 0.0190 0.1800 0.4490
+D1.2 Enhanced TOU 0.250 0.0167 0.1579 0.4246
+D1.6 Special Low Income Pilot 0.250 0.0243 0.2305 0.5048
+D1.7 Geothermal Time-of-Day 0.250 0.0143 0.1352 0.3995
+D1.8 Dynamic Peak Pricing 0.250 0.0204 0.1934 0.4638
+D1.9 Electric Vehicle 0.250 0.0170 0.1614 0.4284
+D1.11 Standard TOU 0.250 0.0242 0.2292 0.5034
+D1.13 Overnight Savers 0.250 0.0242 0.2292 0.5034
+D2 Space Heating 0.250 0.0151 0.1431 0.4082
+D5 Water Heating 0.250 0.0129 0.1221 0.3850
+D9 Outdoor Lighting 0.250 0.0049 0.0461 0.3010
+Commercial
+D1.1 Int. Space Conditioning 0.250 0.0169 0.1598 0.4267
+D1.7 Geothermal Time-of-Day 0.250 0.0113 0.1068 0.3681
+D1.8 Dynamic Peak Pricing 0.250 0.0192 0.1819 0.4511
+D1.9 Electric Vehicle 0.250 0.0201 0.1904 0.4605
+D3 General Service 0.250 0.0197 0.1867 0.4564
+D3.1 Unmetered 0.250 0.0168 0.1587 0.4255
+D3.2 Educ. Inst. 0.250 0.0187 0.1768 0.4455
+D3.3 Interruptible 0.250 0.0165 0.1560 0.4225
+D3.5 Charging 0.250 0.0197 0.1867 0.4564
+D3.11 TOU General Service 0.250 0.0197 0.1867 0.4564
+D4 Large General Service 0.250 0.0175 0.1661 0.4336
+D5 Water Heating 0.250 0.0116 0.1099 0.3715
+D9 Outdoor Lighting 0.250 0.0049 0.0461 0.3010
+R3 Standby (Secondary) 0.250 0.0169 0.1604 0.4273
+R7 Greenhouse Lighting 0.250 0.0113 0.1067 0.3680
+R8 Space Conditioning 0.250 0.0171 0.1622 0.4293
+Industrial
+D6.2 Educ. Inst. 0.250 0.0189 0.1792 0.4481
+D8 Interruptible Primary 0.250 0.0104 0.0987 0.3591
+D10 Schools 0.250 0.0175 0.1659 0.4334
+D11 Primary Supply 0.250 0.0140 0.1328 0.3968
+D12 Large Low Peak 0.250 0.0140 0.1328 0.3968
+D13 XL NA 0.0109 0.1030 0.1139
+D14 TOU Primary Supply 0.250 0.0140 0.1328 0.3968
+R1.1 Metal Melting 0.250 0.0091 0.0863 0.3454
+R1.2 Electric Process Heating 0.250 0.0090 0.0855 0.3445
+R3 Standby (Primary) 0.250 0.0169 0.1604 0.4273
+R10 Interruptible Supply NA 0.0000 0.0000 0.0000
+Governmental
+E1 Streetlighting 0.250 0.0049 0.0460 0.3009
+E1.1 Energy Only 0.250 0.0136 0.1286 0.3922
+E2 Traffic Lights 0.250 0.0131 0.1237 0.3868
+(Continued on Sheet No. C-66.00)
+Attachment C 
+Page 1 of 1
+EXHIBIT B

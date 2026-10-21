@@ -42,7 +42,7 @@ if(typeof document!=="undefined") {
   const f=name=>field("rg_"+name),pretty=s=>s.replaceAll("_"," ").replace(/^./,c=>c.toUpperCase());
   const panel=document.createElement("fieldset");panel.id="regional-account";panel.hidden=true;
   panel.innerHTML=`<legend>Retail account and jurisdiction</legend><p id="regional-identity" class="hint"></p>
-    <p class="hint">Select service from your bill or utility confirmation. A state, city, postal code or PJM pricing node does not establish territory. No third-party supply contract is assumed.</p>
+    <p class="hint">Select service from your bill or utility confirmation. A state, city, postal code or wholesale pricing node does not establish territory. No third-party supply contract is assumed.</p>
     <label>Service evidence<select name="rg_verification"><option value="hypothetical_case">Explicit hypothetical study</option><option value="electricity_bill">Electricity bill</option><option value="utility_confirmation">Utility confirmation</option></select></label>
     <label>Service evidence / hypothetical assumption<input name="rg_reference" maxlength="500" placeholder="Omit account numbers and personal identifiers"/></label>
     <label>Account billing plan<select name="rg_plan"></select></label>
@@ -51,7 +51,7 @@ if(typeof document!=="undefined") {
     <button type="button" class="secondary" id="regional-hypothetical">Apply explicitly hypothetical account facts</button>
     <p class="hint">Review every account fact. Existing obligations, contracted demand and history remain the same across scenarios. A checked eligibility field is a user assertion, not verification by the simulator.</p>
     <div id="regional-fields" class="form-grid"></div>
-    <details><summary>Advanced · wholesale pricing identity</summary><label>Wholesale location · JSON or null<textarea name="rg_location">null</textarea></label><p class="hint">Bundled studies do not require market prices. PSE&amp;G CIEP requires the exact PSEG_RESID_AGG aggregate and original PJM hourly file; no Western Hub fallback.</p></details>`;
+    <details><summary>Advanced · wholesale pricing identity</summary><label>Wholesale location · JSON or null<textarea name="rg_location">null</textarea></label><p class="hint">Bundled studies do not require market prices. MISO metadata, if supplied, requires cpnode, node_type and source; LRZ7 is not a price node. MISO price retrieval is not implemented. PSE&amp;G CIEP requires the exact PSEG_RESID_AGG aggregate and original PJM hourly file; no Western Hub fallback.</p></details>`;
   document.querySelector('[data-step="2"]').append(panel);
   const cycles=document.createElement("fieldset");cycles.hidden=true;
   cycles.innerHTML=`<legend>Utility meter cycles</legend><label>Cycle basis<select name="rg_cycle_mode"><option value="calendar">Explicit hypothetical calendar cycles</option><option value="documented">Documented utility cycles</option></select></label>
@@ -102,7 +102,7 @@ if(typeof document!=="undefined") {
     $("regional-fields").replaceChildren();
     const advanced=document.createElement("details"),heading=document.createElement("summary"),advancedFields=document.createElement("div");
     heading.textContent="Advanced account facts · history, contracts and special eligibility";advancedFields.className="form-grid";advanced.style.gridColumn="1/-1";advanced.append(heading,advancedFields);
-    const basic=new Set(["rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
+    const basic=new Set(["rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","local_charges_confirmed","full_monthly_charges_confirmed","dg_enrollment_confirmed","dg_source","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
     const descriptors=selected()?.account_fields||[];
     const spec=Object.fromEntries(descriptors.map(d=>[typeof d==="string"?d:d.name,typeof d==="string"?{}:d]));
     for(const [key,v] of Object.entries(value)){
@@ -148,12 +148,14 @@ if(typeof document!=="undefined") {
     $("regional-nem-hypothetical").disabled=f("verification").value!=="hypothetical_case";
     const ciep=field("utility").value==="pseg"&&(utility().accounts[f("plan").value]?.supply==="bgs_ciep"||field("rg_a_supply")?.value==="bgs_ciep");
     $("regional-ciep").hidden=!ciep;
-    $("regional-identity").textContent=`Distribution: ${utility().label} · Jurisdiction: ${utility().state} · Default retail supplier: ${utility().label} · PJM transmission zone: ${utility().transmission_zone} · Wholesale pricing identity is separate.`;
+    const grid=utility().grid_operator||"PJM";
+    const region=grid==="MISO"?`Resource adequacy zone: ${utility().resource_adequacy_zone} · Transmission owner: ${utility().transmission_owner} · LRZ is not a pricing node`:`Transmission zone: ${utility().transmission_zone}`;
+    $("regional-identity").textContent=`Distribution: ${utility().label} · Jurisdiction: ${utility().state} · Default retail supplier: ${utility().label} · Grid operator: ${grid} · ${region} · Wholesale pricing identity is separate.`;
     $("regional-coverage").textContent=plan?`${plan.eligibility||"Confirm actual eligibility."} Verified: ${(plan.coverage||[]).map(w=>w.start+" → "+w.end).join(", ")}. ${(plan.limitations||[]).join(" ")}`:"Choose a plan to inspect its verified dates and requirements.";
     if(plan?.provisional_coverage)$("regional-coverage").textContent+=" Provisional coverage, only with explicit acceptance: "+plan.provisional_coverage.map(w=>w.start+" → "+w.end).join(", ")+". These are assumed historical estimates, not verified tariffs.";
     $("regional-assumptions").hidden=!plan?.provisional_assumptions?.length;
     $("regional-assumption-list").replaceChildren();for(const item of plan?.provisional_assumptions||[]){const p=document.createElement("p");p.textContent=`${item.id} · ${item.start} → ${item.end} · ${item.basis}: ${item.explanation} Values: ${JSON.stringify(item.assumed_values)}`;$("regional-assumption-list").append(p);}
-    $("regional-sources").replaceChildren();for(const source of (plan?.sources||[])){const url=typeof source==="string"?source:source.url;if(!url)continue;const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noreferrer";a.textContent="Official source";$("regional-sources").append(a,document.createTextNode(" · "));}
+    $("regional-sources").replaceChildren();for(const source of [...(plan?.sources||[]),...(utility().grid_sources||[])]){const url=typeof source==="string"?source:source.url;if(!url)continue;const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noreferrer";a.textContent="Official source";$("regional-sources").append(a,document.createTextNode(" · "));}
     $("regional-hypothetical").disabled=f("verification").value!=="hypothetical_case"||!plan;
     for(const opt of field("tariff_id").options)opt.disabled=opt.hidden=opt.value!=="__unset__";
     for(const p of plans().filter(p=>p.status==="supported")){let o=field("tariff_id").querySelector(`option[value="regional:${p.id}"]`);if(!o){o=option("regional:"+p.id,p.label);o.dataset.regional="true";field("tariff_id").append(o);}o.hidden=o.disabled=false;}
@@ -207,7 +209,7 @@ if(typeof document!=="undefined") {
       const covered=day=>coverage.some(w=>w.start<=day&&day<=w.end);
       for(const cycle of list){if(field("utility").value==="pseg"){
         if(!covered(cycle.bill_date))throw new Error("The utility bill date is outside verified tariff coverage. PSE&G selects rates by bill date; review the documented cycles.");
-      }else {for(let day=cycle.start_date;day<=cycle.end_date;){if(!covered(day))throw new Error("Service date "+day+" is outside verified component coverage; no current-rate substitution is used.");const next=new Date(day+"T00:00:00Z");next.setUTCDate(next.getUTCDate()+1);day=next.toISOString().slice(0,10);}}}
+      }else {if(field("utility").value==="dte_electric"&&!covered(cycle.bill_date))throw new Error("DTE bill date is outside verified actual PSCR/rider coverage.");for(let day=cycle.start_date;day<=cycle.end_date;){if(!covered(day))throw new Error("Service date "+day+" is outside verified component coverage; no current-rate substitution is used.");const next=new Date(day+"T00:00:00Z");next.setUTCDate(next.getUTCDate()+1);day=next.toISOString().slice(0,10);}}}
     }
     if(page.dataset.step==="5"&&selected()?.equipment_modes){const mode=field("pv_choice").value==="yes"?(f("battery").checked?"pv_battery":"pv_only"):field("pv_choice").value==="storage"?"storage_only":"grid_only";if(!selected().equipment_modes.includes(mode))throw new Error("This billing plan does not permit the selected PV/storage arrangement. Choose an eligible plan or grid-only operation.");}
     if(page.dataset.step==="4"&&field("weather_source").value==="era5"&&(!era5||era5Key!==weatherKey()))throw new Error("Retrieve ERA5 for the selected site and exact service dates; no weather fallback is used.");

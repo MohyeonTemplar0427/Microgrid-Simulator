@@ -20,6 +20,10 @@ UTILITIES = {
     "firstenergy_pa_west_penn": {"label":"FirstEnergy Pennsylvania · West Penn district", "state":"PA", "zone":"APS", "module":"firstenergy_pa"},
     "firstenergy_ohio_edison": {"label":"FirstEnergy Ohio · Ohio Edison", "state":"OH", "zone":"ATSI", "module":"firstenergy_oh"},
     "peco": {"label":"PECO · southeastern Pennsylvania", "state":"PA", "zone":"PECO", "module":"peco"},
+    "dte_electric": {"label":"DTE Electric · Michigan", "state":"MI", "zone":None, "module":"dte",
+                     "grid_operator":"MISO", "resource_adequacy_zone":"LRZ7", "transmission_owner":"ITC Transmission",
+                     "grid_sources":["https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
+                                     "https://www.michigan.gov/mpsc/consumer/electricity/electric-utility-service-area-map"]},
 }
 
 
@@ -40,10 +44,12 @@ def account_region(region, utility):
     if not data or not isinstance(region,dict):
         raise ValueError("Supply explicit distribution utility, jurisdiction and retail supply facts.")
     expected={"distribution_utility":utility,"state_jurisdiction":data["state"],
-              "grid_operator":"PJM","transmission_zone":data["zone"]}
+              "grid_operator":data.get("grid_operator","PJM"),"transmission_zone":data["zone"]}
+    if data.get("grid_operator")=="MISO":
+        expected.update(resource_adequacy_zone=data["resource_adequacy_zone"],transmission_owner=data["transmission_owner"])
     fields=set(expected)|{"retail_supplier","verification_kind","reference","wholesale_pricing_location"}
     if set(region)!=fields or any(region[k]!=v for k,v in expected.items()):
-        raise ValueError("Distribution utility, state jurisdiction and PJM zone must be independently consistent; no node-based territory assignment.")
+        raise ValueError("Distribution utility, state jurisdiction and regional grid configuration must be independently consistent; no node-based territory assignment.")
     if (region["verification_kind"] not in ("electricity_bill","utility_confirmation","hypothetical_case")
             or not isinstance(region["reference"],str) or not 1<=len(region["reference"].strip())<=500):
         raise ValueError("Document utility confirmation or explicitly identify a hypothetical account; omit personal identifiers.")
@@ -51,6 +57,12 @@ def account_region(region, utility):
         raise ValueError("Identify the retail supplier separately from distribution utility.")
     location=region["wholesale_pricing_location"]
     if location is not None:
+        if data.get("grid_operator")=="MISO":
+            if (not isinstance(location,dict) or set(location)!={"cpnode","node_type","source"}
+                    or any(not isinstance(v,str) or not 1<=len(v.strip())<=500 for v in location.values())
+                    or location["cpnode"].strip().upper()==data["resource_adequacy_zone"]):
+                raise ValueError("MISO pricing identity needs an explicitly verified cpnode, node_type and source; LRZ7 is not a price node and no hub is substituted.")
+            return region
         if (not isinstance(location,dict) or set(location)!={"pnode_id","pnode_name","zone","source"}
                 or not str(location["pnode_id"]).isdigit()
                 or not isinstance(location["zone"],str)

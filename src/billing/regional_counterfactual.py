@@ -15,6 +15,7 @@ MODES = {
     "firstenergy_pa_west_penn": ("export_mode", "none"),
     "firstenergy_ohio_edison": ("export_mode", "none"),
     "peco": ("export_mode", "none"),
+    "dte_electric": ("export_mode", "none"),
 }
 
 
@@ -47,6 +48,14 @@ def grid_only_counterfactual(utility, account, state=None):
             inherited[key] = value
 
     applied = mode == "net_metering"
+    if utility == "dte_electric":
+        applied = bool(result.get("dg_enrollment_confirmed"))
+        set_account("dg_enrollment_confirmed", False)
+        set_account("dg_source", "")
+        return {"account":result,"state":inherited,"applied":applied,
+                "label":"Absent-DER grid-only counterfactual; ordinary full-service tariff retained without DG enrollment",
+                "changed_account_fields":changed_account,"changed_state_fields":[],
+                "warnings":["Hypothetical ordinary grid-only reference removes PV/storage and Rider 18 assertions; no actual account transition or export credits assumed."]}
     if utility.startswith("firstenergy_") or utility == "peco":
         applied = bool(result.get("der_ordinary_service_confirmed"))
         set_account("der_ordinary_service_confirmed", False)

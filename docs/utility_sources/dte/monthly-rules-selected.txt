@@ -1,0 +1,158 @@
+===== PDF PAGE 59 =====
+M.P.S.C. No. 1 - Electric Third Revised Sheet No. C-18.00 
+DTE Electric Company Cancels Second Revised Sheet No. C-18.00 
+(Fina Order Case U-20162)
+Issued June 4, 2019 Effective for service rendered on
+D. M. Stanczak and after May 9, 2019 
+Vice President
+Regulatory Affairs Issued under authority of the
+Michigan Public Service Commission
+Detroit, Michigan dated May 2, 2019 
+in Case No. U-20162
+(Continued from Sheet No. C-17.00) 
+C4 APPLICATION OF RATES (Contd.)
+C4.4 Choice of Rates (Contd.)
+After the customer has selected the rate under which he elects to take service, the customer is not permitted to change 
+from that rate to another until twelve months have elapsed. Neither will a customer be permitted to evade this rule by 
+the device of temporarily terminating the customer's service.
+However, the Company may, at its option, waive this rule where it appears that an earlier change is requested for 
+permanent rather than for temporary or seasonal advantage. The intent of this rule is to prohibit frequent shifts from rate 
+to rate. As used in this rule, the word rate shall include applicable riders.
+C4.5 Billing for Service and Estimated Bills
+A. Billing Frequency; Method of Delivery
+(1) The Company shall transmit a bill once during each billing month to Residential Rate customers D1, 
+and D2 in accordance with the approved daily rate schedules. The Company shall transmit a bill to 
+customers by mail unless the Company and the customer agree in writing to another method of delivery.
+(2) The Company shall transmit a bill once during each billing month to all other customers in accordance 
+with the approved monthly rate schedules. The Company shall transmit a bill to customers by mail 
+unless the Company and the customer agree in writing to another method of delivery.
+B. Meter Reads
+The Company shall schedule meters to be read on approximately a monthly basis and will attempt to 
+read meters in accordance with such schedule. When the Company is unable to obtain an actual meter 
+reading for any reason, the bill shall be estimated. Prior period(s) estimated bill(s) shall be adjusted as 
+necessary when an actual meter reading is obtained.
+C. Estimated Bills
+When the Company is unable to obtain an actual meter reading, the bill shall be estimated on the basis 
+of past service records, adjusted, as may be appropriate. Where past service records are not available or 
+suitable for use, such billing shall be based upon whatever other service data are available. Each such 
+account shall be adjusted as necessary each time an actual meter reading is obtained.
+In the event that a customer’s hourly usage data is not retrievable, such usage for the billing period shall 
+be applied to the lowest hourly rate in the customer’s current rate schedule, should the customer be on a 
+time of use based rate.
+Estimated bills shall have the same force and effect as those based upon actual meter readings.
+(Continued on Sheet No. C-18.01) 
+
+===== PDF PAGE 278 =====
+M.P.S.C. No. 1 - Electric Fifth Revised Sheet No. D-116.00
+DTE Electric Company Cancels Fourth Revised Sheet No. D-116.00
+(Final Order Case No. U-21860) 
+Issued March 16, 2026 Effective for service rendered on
+M. A. Bruzzano and after March 5, 2026
+Senior Vice President
+Regulatory Affairs Issued under authority of the
+Michigan Public Service Commission
+Detroit, Michigan dated February 19, 2026 
+in Case No. U-21860
+(Continued from Sheet D-115.00)
+STANDARD CONTRACT RIDER NO. 18 (contd.) DISTRIBUTED GENERATION PROGRAM
+Rate Schedule Outflow Credit
+$ per kWh
+Primary
+D11 Primary Supply Demand: On-Peak: Off-Peak:
+ Primary $17.09 
+per kW
+$0.04300 $0.03300
+ Subtransmission $16.74 
+per kW
+$0.04237 $0.03237
+ Transmission $16.37 
+per kW
+$0.04160 $0.03160
+D6.2 Primary Educational 
+Institution Demand: On-Peak: Off-Peak:
+ Primary $14.33 
+per kW
+$0.04535 $0.04235
+ Subtransmission $14.04 
+per kW
+$0.04459 $0.04159
+ Transmission $13.72 
+per kW
+$0.04365 $0.04065
+D8 Interruptible Supply Demand: On-Peak Off-Peak
+ Primary $10.50 
+per kW
+$0.04300 $0.03300
+ Subtransmission $10.28 
+per kW
+$0.04237 $0.03237
+ Transmission $10.06 
+per kW
+$0.04160 $0.03160
+D10 All Electric School Summer:
+$0.09626 
+Winter:
+$0.07613 
+D13 XL All kWh:
+$0.04909 
+D14 TOU Primary June-Sept On-Peak: June-Sept Off-Peak: Oct-May On-Peak: Oct-May Off-Peak:
+ Primary $0.10810 $0.06450 $0.07175 $0.06450
+ Subtransmission $0.10690 $0.06330 $0.07055 $0.06330
+ Transmission $0.10544 $0.06184 $0.06909 $0.06184
+(1) Retail Open Access Customers
+The Outflow Credit will be determined by the Retail Service Supplier. For customers taking capacity service 
+from the Company, the capacity outflow credit shall be the appropriate capacity rate(s) from the customer’s rate 
+schedule.
+APPLICATION FOR SERVICE
+In order to participate in the Distributed Generation Program, a customer shall submit completed Interconnection 
+and Distributed Generation Program Applications, including the application fee of $50 to the Company.
+The Distributed Generation Program application fee is waived if the customer is transitioning from the Net Metering 
+Program.
+(Continued on Sheet No. D-116.01)
+
+===== PDF PAGE 280 =====
+M.P.S.C. No. 1 - Electric Second Revised Sheet No. D-116.02 
+DTE Electric Company Cancels First Revised Sheet No. D-116.02 
+(Update Rider 18) 
+Issued April 8, 2025 Effective for service rendered on
+M. A. Bruzzano and after March 13, 2025
+Senior Vice President
+Regulatory Affairs Issued under authority of the
+Michigan Public Service Commission
+Detroit, Michigan dated March 13, 2025
+in Case No. U-21798
+(Continued from Sheet D-116.01)
+STANDARD CONTRACT RIDER NO. 18 (contd.) DISTRIBUTED GENERATION PROGRAM
+METERING REQUIREMENTS
+Metering requirements shall be specified by the Company, as detailed below. All metering must be capable of 
+recording inflow and outflow and all parameters metered on the customer's otherwise applicable retail rate
+schedule, for both Full Service and Retail Open Access customers.
+DISTRIBUTION LINE EXTENSION AND/OR EXTRAORDINARY FACILITIES
+The Company reserves the right to make special contractual arrangements with Distributed Generation Program 
+customers whose utility service requires investment in electric facilities, as authorized by the Company's Standard 
+Contract Rider No. 2, Special Purpose Facilities, Rule C1, Character of Service, and Rule C6., Distribution Systems, 
+Line Extensions and Service Connections, as set out in the Company's Electric Rate Book. The Company further 
+reserves the right to condition a customer's participation in the Distributed Generation Program on a satisfactory 
+completion of any such contractual requirements.
+CUSTOMER TERMINATION FROM THE DISTRIBUTED GENERATION PROGRAM
+A participating customer may terminate participation in the Company's Distributed Generation Program at any time 
+for any reason on sixty days' notice. In the event that a customer who terminates participation in the Distributed 
+Generation Program wishesto re-enroll, that customer must reapply as a new programparticipant,subject to program 
+size limitations, application queue and application fees.
+The Company may terminate a customer from the Distributed Generation Program if the customer fails to maintain 
+the eligibility requirements, fails to comply with the terms of the interconnection and parallel operating agreement,
+or if the customer's facilities are determined not to be in compliance with technical, engineering, or operational 
+requirements suitable for the Company's distribution system. The Company will provide sixty days' notice to the 
+customer prior to termination from the Distributed Generation Program, except in situations the Company deems 
+dangerous or hazardous. Such notice will include the reason(s) for termination.
+Upon customer termination from the Distributed Generation Program, any existing Outflow credit on the customer's 
+account will be applied to Company electric charges, excluding securitization charges of the customer’s future bills 
+for customers who remain in the residence. Outflow credit will be refunded to customers who do not remain in the 
+residence. Distributed Generation Program credit is non-transferrable.
+COMPANY TERMINATION OF THE DISTRIBUTED GENERATION PROGRAM
+Company termination of the Distributed Generation Program may occur upon receipt of Commission approval.
+Upon customer termination from the Distributed Generation Program, any existing Outflow credit on the customer's 
+account will be applied to Company electric charges, excluding securitization charges of the customer’s future bills 
+for customers who remain in the residence. Outflow credit will be refunded to customers who do not remain in the 
+residence. Distributed Generation Program credit is non-transferrable. 
+(Continued on Sheet No. D-116.03) 

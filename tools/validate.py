@@ -25,7 +25,7 @@ GUI_TESTS = ("test/test_application_interface.py", "test/test_desktop_applicatio
 AREAS = {
     "validation": ("test_validation_launcher.py", "test_regional_validation_resume.py",
                    "test_regional_validation_driver.py", "test_regional_coverage.py"),
-    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py"),
+    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py", "test_dte*.py"),
     "billing": ("test_billing*.py", "test_tariff*.py", "test_baseline*.py",
                 "test_pge_residential.py", "test_pge_commercial.py", "test_tou_holidays.py"),
     "dispatch": ("test_battery.py", "test_*dispatch*.py", "test_regional_relaxation.py"),

@@ -24,7 +24,8 @@ SITES={"dominion_energy_virginia":(37.63,-77.52,"Hypothetical Henrico-area Virgi
        "pseg":(40.74,-74.17,"Hypothetical Newark, New Jersey site"),
        "firstenergy_pa_west_penn":(40.30,-79.54,"Hypothetical Westmoreland County, Pennsylvania site; West Penn service independently confirmed"),
        "firstenergy_ohio_edison":(41.16,-81.64,"Hypothetical unincorporated Summit County, Ohio site; Ohio Edison service and absence of municipal charges independently confirmed"),
-       "peco":(39.96,-75.60,"Hypothetical Chester County, Pennsylvania site; PECO service independently confirmed; outside Philadelphia")}
+       "peco":(39.96,-75.60,"Hypothetical Chester County, Pennsylvania site; PECO service independently confirmed; outside Philadelphia"),
+       "dte_electric":(42.28,-83.73,"Hypothetical Ann Arbor-area Michigan site; DTE service and no additional locality charges independently confirmed")}
 
 
 def calendar_cycles(start,end):
@@ -70,7 +71,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         "site":{"latitude":lat,"longitude":lon,"label":label,"utility":utility},
         "site_profile":{"site_type":kind,"subtype":"house" if residential else None},
         "regional_account":{"distribution_utility":utility,"state_jurisdiction":UTILITIES[utility]["state"],
-            "retail_supplier":utility,"grid_operator":"PJM","transmission_zone":UTILITIES[utility]["zone"],
+            "retail_supplier":utility,"grid_operator":UTILITIES[utility].get("grid_operator","PJM"),"transmission_zone":UTILITIES[utility]["zone"],
             "wholesale_pricing_location":None,"verification_kind":"hypothetical_case",
             "reference":"Explicit hypothetical retail account, not a territory or enrollment finding"},
         "account":account,"start_date":start,"end_date":end,"timezone":"America/New_York","timestep_minutes":15,
@@ -90,8 +91,8 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         "electrical_service":{"voltage":account.get("voltage",plan.get("voltage","secondary")),"phase":account.get("phase","single" if residential else "three"),
             "nominal_voltage_v":account.get("delivery_voltage_kv",0)*1000 or account.get("voltage_v",240 if residential else 480),
             "reference":"Explicit representative circuit assumption, not surveyed site wiring"}}
-
-
+    if utility == "dte_electric":
+        request["regional_account"].update(resource_adequacy_zone="LRZ7",transmission_owner="ITC Transmission")
     if utility=="pseg" and plan_id.startswith("GLP"):
         # Keep combined DER below the ordinary-service threshold even after
         # starting demand history rolls out. These remain explicit assumptions.
@@ -111,6 +112,9 @@ def capabilities():
         plans=module.catalog()
         supported=[p for p in plans if p.get("status")=="supported"]
         utilities[utility]={"id":utility,"label":data["label"],"state":data["state"],"transmission_zone":data["zone"],
+            "grid_operator":data.get("grid_operator","PJM"),"resource_adequacy_zone":data.get("resource_adequacy_zone"),
+            "transmission_owner":data.get("transmission_owner"),
+            "grid_sources":data.get("grid_sources",[]),
             "plans":plans,"accounts":{p["id"]:module.defaults(p["id"]) for p in supported},
             "hypothetical_accounts":{p["id"]:(module.hypothetical_defaults(p["id"]) if hasattr(module,"hypothetical_defaults") else module.defaults(p["id"])) for p in supported},
             "study_defaults_by_plan":{p["id"]:defaults(utility,p["customer_class"],p["id"]) for p in supported},
@@ -259,7 +263,7 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility == "peco":
+    if utility in ("peco", "dte_electric"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")

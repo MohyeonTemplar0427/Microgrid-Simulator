@@ -78,6 +78,16 @@ ComEd introduces separate retail supply arrangements within PJM. The account’s
 
 Other providers may appear in location research without an executable account model. The current [LA coverage notes](LA_County_Utilities.md) and `src/billing/la_coverage.py` distinguish these records. Vernon, Cerritos, Lancaster Energy, Pico Rivera PRIME, Pomona Choice, and Palmdale EPIC are not listed here as implemented services. Clean Power Alliance has a limited solar-credit accounting component but no complete main-account billing integration in the inspected workflow; it is also excluded from the completed list.
 
+## Michigan · DTE Electric
+
+The local candidate supports bundled D1.11 residential Standard TOU, D3
+commercial General Service and D3.11 commercial TOU. D1.11/D3 prices cover
+2025 through September 2026; D3.11 starts June 2025. Complete regular monthly
+cycles, confirmed account eligibility and zero exports are required. PV and
+storage require approved small-DG enrollment; a map location alone does not
+establish it. MISO LRZ7 describes resource adequacy, not a price node or retail
+service territory. See [DTE scope and source evidence](DTE.md).
+
 ## Before running a comparison
 
 1. Confirm delivery utility and generation enrollment from the account.

@@ -45,12 +45,14 @@ FIRSTENERGY_CASES = (("firstenergy_pa_west_penn", "residential", "RS"),
                     ("firstenergy_ohio_edison", "commercial", "GS"))
 PECO_CASES = (("peco", "residential", "R"), ("peco", "residential", "R-TOU"),
               ("peco", "commercial", "GS"), ("peco", "commercial", "GS-TOU"))
+DTE_CASES = (("dte_electric", "residential", "D1.11"), ("dte_electric", "commercial", "D3"),
+             ("dte_electric", "commercial", "D3.11"))
 
 
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -139,6 +141,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start, end = ("2025-01-01", "2025-12-31") if period == "annual" else ("2025-07-01", "2025-07-31")
     if utility=="firstenergy_ohio_edison" and custom is None and period=="monthly":
         start,end="2025-10-01","2025-10-31"
+    if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
+        raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
         raise ValueError("Custom2025 Virginia validation requires --include-va-history and an implemented VA-1/GS1 subtotal; no current-rate substitution.")
     va_history=va_history_plan and start.startswith("2025-")
@@ -233,12 +237,12 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
     for utility in utilities:
         path = folder/utility
         path.mkdir(exist_ok=True)
-        if utility.startswith("firstenergy_") or utility == "peco" or utility == "dominion_energy_virginia" and not va_history_only:
+        if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric") or utility == "dominion_energy_virginia" and not va_history_only:
             file = path/"era5.json"
             expected = previous.get("sources", {}).get(utility, {}).get("sha256")
             if expected is not None:
                 require(file.exists() and digest(file) == expected, "Prepared ERA5 bytes changed; choose a new input folder")
-            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility == "peco" else ("2026-09-01","2026-09-30")
+            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric") else ("2026-09-01","2026-09-30")
             request = dict(latitude=SITES[utility][0], longitude=SITES[utility][1], start_date=start, end_date=end)
             payload = json.loads(file.read_text()) if file.exists() else fetch_era5(**request)
             require(payload["request"]["latitude"] == request["latitude"] and payload["request"]["longitude"] == request["longitude"],
@@ -279,7 +283,7 @@ def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
-    if utility.startswith("firstenergy_") or utility == "peco":
+    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric"):
         payload=json.loads((source/"era5.json").read_text())
         from src.profiles.era5 import parse_era5
         lat,lon,_=SITES[utility]

@@ -1,0 +1,123 @@
+{
+  "retrieved_on": "2026-10-19",
+  "scope": "D1.11/D3/D3.11 ordinary full-service, zero-export Category1 DG, verified prices Jan2025\u2013Sep2026; D3.11 Jun2025 onward",
+  "sources": [
+    {
+      "url": "https://www.dteenergy.com/content/dam/dteenergy/deg/website/common/service-and-price/rate-cards/DTEElectricRateBook.pdf",
+      "pdf_sha256": "d9cadeb84131400bab208459cccdf02e3b75c608469161c24fc2ae1e123a9060",
+      "pages": 312,
+      "selected_pdf_pages": [
+        67,
+        98,
+        99,
+        104,
+        105,
+        107,
+        108,
+        110,
+        112,
+        114,
+        141,
+        142,
+        150,
+        151,
+        159,
+        160,
+        222,
+        274,
+        275,
+        276,
+        279
+      ],
+      "extracted_text": "docs/utility_sources/dte/current-selected.txt",
+      "extracted_text_sha256": "3fc108d3e201a93f0918be67703d7fbb23d491ba1b3c496354910f46b1189720"
+    },
+    {
+      "url": "https://www.michigan.gov/-/media/Project/Websites/mpsc/consumer/rate-books/electric/dte/dtee1cand1throughend.pdf",
+      "pdf_sha256": "30df1aa54aafd651e4c3a1811e18a142b7ece676ad4e12f99b133f102e4134b4",
+      "pages": 1046,
+      "selected_pdf_pages": [
+        195,
+        196,
+        233,
+        234,
+        297,
+        298,
+        899,
+        901,
+        903
+      ],
+      "extracted_text": "docs/utility_sources/dte/canceled-d-selected.txt",
+      "extracted_text_sha256": "8228c4c7fbcc5b94fb5b170c407f8367bc0a622e8dbf255d78ab7a76bd74508b"
+    },
+    {
+      "url": "https://www.michigan.gov/documents/mpsc/dtee1cana1throughc_579208_7.pdf",
+      "pdf_sha256": "281e282dc45d1a1709d2b2d8e5eda3ee1cfe8b3d1a31ac9560feb5cfbeb5ff2f",
+      "pages": 1007,
+      "selected_pdf_pages": [
+        698,
+        699,
+        700,
+        701,
+        702,
+        757,
+        758,
+        783,
+        825,
+        826,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837
+      ],
+      "extracted_text": "docs/utility_sources/dte/canceled-c-selected.txt",
+      "extracted_text_sha256": "fd05b0e6252517239af1627abfb59b542fcf9532e291bb6b4f8ec0113828baec"
+    },
+    {
+      "url": "https://www.michigan.gov/-/media/Project/Websites/mpsc/consumer/rate-books/electric/dte/dtee1cur.pdf?rev=a501ba54eeda4cb185ac62862e291337",
+      "pdf_sha256": "60327abf307267f43bec1b827d421f3c31edc5edfaca60a157d56662894d72ce",
+      "pages": 312,
+      "selected_pdf_pages": [
+        112
+      ],
+      "extracted_text": "docs/utility_sources/dte/april2026-selected.txt",
+      "extracted_text_sha256": "26a4941225038a8fdb749518f9a15516f3132e961fde8f88df2febd705ce3192"
+    },
+    {
+      "url": "https://s24.q4cdn.com/970999156/files/doc_downloads/2025/12/U-21338_12-05-25-Finalized.pdf",
+      "pdf_sha256": "773e5c3c79d19f3281c12820c6e4c02391e4a68f1ad9c17f05cf7e094a077cb8",
+      "pages": 8,
+      "selected_pdf_pages": [
+        2,
+        6
+      ],
+      "extracted_text": "docs/utility_sources/dte/december-order-selected.txt",
+      "extracted_text_sha256": "910ea908682be35ed36411e2cddaac43e291ade43e48cff8a6983f39c9edbeee"
+    },
+    {
+      "url": "https://www.dteenergy.com/content/dam/dteenergy/deg/website/common/billing-and-payment/billing/understanding-your-bill/ExplanationCharges.pdf",
+      "pdf_sha256": "0e2d7c115700df0f6aed9edfcb150ff72ef498ba337836aef41cb8e959138283",
+      "pages": 1,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/dte/explanation-charges-selected.txt",
+      "extracted_text_sha256": "3a2756e7a604764b77112ce521e368fb171587eba0f14f905e4c6623cd9480f5"
+    },
+    {
+      "url": "https://www.dteenergy.com/content/dam/dteenergy/deg/website/common/service-and-price/rate-cards/DTEElectricRateBook.pdf",
+      "pdf_sha256": "d9cadeb84131400bab208459cccdf02e3b75c608469161c24fc2ae1e123a9060",
+      "pages": 312,
+      "selected_pdf_pages": [
+        59,
+        278,
+        280
+      ],
+      "extracted_text": "docs/utility_sources/dte/monthly-rules-selected.txt",
+      "extracted_text_sha256": "3bf47902c6f4b0640ec10c8529254d40af2eb8ab1143b05fc3fa0cb325212968"
+    }
+  ]
+}
