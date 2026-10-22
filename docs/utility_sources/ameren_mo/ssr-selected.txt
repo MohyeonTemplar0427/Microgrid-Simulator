@@ -1,0 +1,104 @@
+PDF page 1
+UNION ELECTRIC COMPANY ELECTRIC SERVICE
+MO.P.S.C. SCHEDULE NO. 6 1st Revised SHEET NO. 92
+CANCELLING MO.P.S.C. SCHEDULE NO. 6 Original SHEET NO. 92 
+APPLYING TO MISSOURI SERVICE AREA
+DATE OF ISSUE March 8, 2017 DATE EFFECTIVE April 1, 2017
+ISSUED BY Michael Moehn President St. Louis, Missouri
+NAME OF OFFICER TITLE ADDRESS
+RIDER SSR
+STANDBY SERVICE RIDER
+APPLICABILITY
+Applicable to each customer not currently served by Rider E, at a single premises 
+with behind the meter on-site parallel distributed generation and/or storage system(s) 
+with a capacity over 100 kilowatts (kW), as a modification to standard electric 
+service supplied under either the tariffed rate schedules of Large General Service 
+3(M), Small Primary Service 4(M), or Large Primary Service 11(M). Customers with 
+emergency backup, solar or wind generation that is not integrated with a storage 
+system are excluded from this Rider.
+DEFINITIONS
+DISTRIBUTED GENERATION AND/OR STORAGE - Customer’s private on-site generation and/or 
+storage that:
+1. is located behind the meter on the customer’s premises,
+2. has a rated capacity of 100 kW or more,
+3. operates in parallel with the Company’s system, and
+4. adheres to applicable interconnection agreement entered into with the Company.
+SUPPLEMENTAL SERVICE - Electric service provided by the Company to customer to 
+supplement normal operation of the customer’s on-site parallel distributed generation 
+and/or storage in order to meet the customer’s full service requirements.
+STANDBY SERVICE - Service supplied to the premises by the Company in the event of the 
+customer exceeding its Supplemental Contract Capacity. Standby Service may be needed 
+on either a scheduled or unscheduled basis. Standby Service comprises capacity and 
+associated energy during the time it is used.
+1. BACKUP SERVICE - Unscheduled Standby Service.
+2. MAINTENANCE SERVICE - Scheduled Standby Service.
+BACK-UP SERVICE - The portion of Standby Contract Capacity and associated energy used 
+without advance permission from the Company. The customer must notify the Company 
+within thirty (30) minutes of taking Back-up Service for amounts over five (5)
+megawatts (MW). For Back-up Service billed, the customer shall be charged the daily 
+standby demand charge for back-up service and back-up energy charges associated with 
+Standby Service. The rates for these charges as well as the monthly fixed charges 
+are stated in this Rider. Back-up Service charges will be shown and calculated 
+separately on the customer bill.
+MAINTENANCE SERVICE - The portion of Standby Contract Capacity used with advance 
+permission from the Company. The customer must schedule Maintenance Service with the 
+Company not less than six (6) days prior to its use. Unless otherwise agreed to by 
+the Company, Maintenance Service shall be limited to not more than six (6)
+occurrences and not more than sixty (60) total and partial days during twelve (12) 
+consecutive billing periods (based on billing dates). Maintenance Service may be 
+available during all months and shall not be greater than the seasonal Standby 
+Contract Capacity. The scheduling of Maintenance Service may be restricted by the 
+Company during times associated with system peaking conditions or other times as 
+necessary. For Maintenance Service billed, the customer shall be charged the daily 
+standby demand charge for maintenance service associated with Standby Service Demand.
+
+PDF page 3
+UNION ELECTRIC COMPANY ELECTRIC SERVICE
+MO.P.S.C. SCHEDULE NO. 6 1st Revised SHEET NO. 92.2
+CANCELLING MO.P.S.C. SCHEDULE NO. 6 Original SHEET NO. 92.2
+APPLYING TO MISSOURI SERVICE AREA
+Issued pursuant to the Order of the Mo.P.S.C. in Case No. ER-2021-0240.
+DATE OF ISSUE February 14, 2022 DATE EFFECTIVE February 28, 2022
+ISSUED BY Mark C. Birk Chairman & President St. Louis, Missouri
+NAME OF OFFICER TITLE ADDRESS
+RIDER SSR
+STANDBY SERVICE RIDER (Cont’d.)
+GENERAL PROVISIONS
+The contract term shall be one (1) year, automatically renewable, unless usage, 
+plant modifications or additional generation requires a change to Supplemental 
+Contract Capacity or Standby Contract Capacity.
+The Company will install and maintain the necessary suitable meters for measurement 
+of service rendered hereunder. The Company may inspect generation logs or other 
+evidence that the customer’s generator is being used in accordance with the 
+provisions this Rider.
+Power production equipment at the customer site shall not commence parallel operation 
+until after inspection by the Company and a written interconnection agreement is 
+executed. The sale of excess energy to the Company may be included in the 
+interconnection or other agreement.
+If at any time customer desires to increase demand above the capacity of Company's 
+facilities used in supplying said service due to plant modifications, customer will 
+sign a new agreement for the full capacity of service required and in accordance with 
+applicable rules governing extension of its distribution system.
+In addition to the charges in the applicable rate schedule, customers taking service 
+under this Rider will be subject to the applicable Administrative Charge, Generation 
+and Transmission Access Charges, and the Facilities Charge each month contained 
+herein. If customer chooses the Time-Of-Day (TOD) option under the applicable rate 
+schedule such option will apply to this Rider SSR as well.
+Those customers choosing to install more than one (1) generating unit on the same 
+premises will have a twenty five percent (25%) discount applied to the monthly
+Generation and Transmission Access Charges and Facilities Charges applicable to each 
+additional generator on the same premises.
+In addition to the above specific rules and regulations, all of Company’s General 
+Rules and Regulations shall apply to the supply of service under this Rider.
+In the event a customer adds distributed generation and/or storage after investments 
+are made by the Company in accordance with the net revenue test described in the 
+Company’s line extension policy, the Company may require reimbursement by the 
+customer. Such reimbursement shall be limited to that investment which was incurred 
+within the previous five years and shall be based upon the change in load 
+requirements on the Company’s electric system.
+Fuel and Purchased Power Adjustment (Rider FAC). Applicable to all billed kilowatt￾hours (kWh) of energy under this Rider.
+*Energy Efficiency Investment Charge (Rider EEIC). Applicable to all billed kilowatt￾hours (kWh) of energy under this Rider excluding kWh of energy supplied to customers 
+that have satisfied the opt-out provisions of Section 393.1075, RSMo.
+**Renewable Energy Standard Rate Adjustment Mechanism (Rider RESRAM). Applicable to 
+all billed kilowatt-hours (kWh) of energy under this Rider.
+*Indicates Change. **Indicates Addition.

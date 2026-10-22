@@ -1,0 +1,313 @@
+{
+  "retrieved_date": "2026-10-21",
+  "scope": "Missouri1(M) Anytime/EMS/SmartA+B/OvernightA+B and standard2(M), verified2025\u2013October21,2026, complete calendar cycles, ColeCounty tax jurisdiction, non-export",
+  "sources": [
+    {
+      "label": "uecsheet54rate1mres",
+      "url": "https://www.ameren.com/-/media/rates/missouri/residential/electric-rates/rates/uecsheet54rate1mres.ashx",
+      "pdf_sha256": "f3e4e2e6869521545fe3df68ecb7c28672d1e8ad5cc1a0bbadb4c3b7c51becc6",
+      "pages": 16,
+      "retrieved_at": "2026-10-22T01:32:36.860025+00:00",
+      "selected_pdf_pages": [
+        1,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        14,
+        15
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/uecsheet54rate1mres-selected.txt",
+      "extracted_text_sha256": "880ae6a01042897a314d8e9d89c6b971fd94e8d39dfb91f8f4e4715948573044"
+    },
+    {
+      "label": "uecdsheet55rate2msgs",
+      "url": "https://www.ameren.com/-/media/rates/missouri/non-residential/electric-rates/rates/uecdsheet55rate2msgs.ashx",
+      "pdf_sha256": "23ea77fe738c844410067dc38aa3ba4352258b8a223768e679ffcf2e7877c764",
+      "pages": 5,
+      "retrieved_at": "2026-10-22T01:32:46.879576+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/uecdsheet55rate2msgs-selected.txt",
+      "extracted_text_sha256": "199ae09bf0f1fc4bba761811f23e48e6f1e777d0906b93aba391d1850f820fe1"
+    },
+    {
+      "label": "uecsheet130rrsecvbillingpractices",
+      "url": "https://www.ameren.com/-/media/rates/missouri/residential/electric-rates/general-rules/uecsheet130rrsecvbillingpractices.ashx",
+      "pdf_sha256": "89faeadd9ec51f89b9103b9bf0e72554c33cbd51ed2808fb85c9c451bf3d2d60",
+      "pages": 12,
+      "retrieved_at": "2026-10-22T01:32:42.362774+00:00",
+      "selected_pdf_pages": [
+        1,
+        7
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/uecsheet130rrsecvbillingpractices-selected.txt",
+      "extracted_text_sha256": "89277c11e5755ed058a6396972997249f48b8c5f4e2d3e013a453ffc2187b010"
+    },
+    {
+      "label": "uecesheetno91ridereeiceeinvestmentcharge",
+      "url": "https://www.ameren.com/-/media/rates/missouri/non-residential/electric-rates/riders/uecesheetno91ridereeiceeinvestmentcharge.ashx",
+      "pdf_sha256": "8ff664441e3ed7ff2f78cf03d391de909916906b4f7635987f90c28786821f56",
+      "pages": 24,
+      "retrieved_at": "2026-10-22T01:32:39.861201+00:00",
+      "selected_pdf_pages": [
+        24
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/uecesheetno91ridereeiceeinvestmentcharge-selected.txt",
+      "extracted_text_sha256": "234cabe0bd1c4c25fbd66a4c1ab7910b6f4722bd623ac54022548b8ff29bc850"
+    },
+    {
+      "label": "Cancelled_Tariff_Sheets_-_1_-_58",
+      "url": "https://efis.psc.mo.gov/Document/Display/358720",
+      "pdf_sha256": "de8b508202df72d09226a4dde7d3cd29c2e71fae2fe579c264d53f090c68d477",
+      "pages": 137,
+      "retrieved_at": "2026-10-22T01:33:48.452266+00:00",
+      "selected_pdf_pages": [
+        23,
+        47,
+        58,
+        67,
+        81
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/Cancelled_Tariff_Sheets_-_1_-_58-selected.txt",
+      "extracted_text_sha256": "75e85dc6e0d0eb671c4672a16be6a889d03d8cac2da7422072bed5ffe6503180"
+    },
+    {
+      "label": "Cancelled_Tariff_Sheets_-_90.5_-_123",
+      "url": "https://efis.psc.mo.gov/Document/Display/364118",
+      "pdf_sha256": "899e6bbeda5af9ada8ddfeb1c41fc1d5dd85d135516461d8f88a9d6e309a4178",
+      "pages": 140,
+      "retrieved_at": "2026-10-22T01:33:56.389411+00:00",
+      "selected_pdf_pages": [
+        62,
+        63,
+        78,
+        79,
+        80
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/Cancelled_Tariff_Sheets_-_90.5_-_123-selected.txt",
+      "extracted_text_sha256": "35136f1666c2aa6472a1ab140acfe1d8d25611cae0108197184da6ab7c19ca80"
+    },
+    {
+      "label": "Cancelled_Tariff_Sheets_-_58.1_-_90.4",
+      "url": "https://efis.psc.mo.gov/Document/Display/374382",
+      "pdf_sha256": "f0a81884f90fb06f0242a2bbf9effcd7d051c8d9d96c5829734ddf7c19284443",
+      "pages": 397,
+      "retrieved_at": "2026-10-22T01:34:05.347541+00:00",
+      "selected_pdf_pages": [
+        163,
+        203,
+        204,
+        205,
+        390,
+        391,
+        392
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/Cancelled_Tariff_Sheets_-_58.1_-_90.4-selected.txt",
+      "extracted_text_sha256": "6b606f6f61f03b74a393ddae763dff9d06f539253efeb20d2c7a7bbce4e1ca4e"
+    },
+    {
+      "label": "Currently_Effective_Tariff_-_1_-_92.3",
+      "url": "https://efis.psc.mo.gov/Document/Display/370166",
+      "pdf_sha256": "4f53a5297f8796f8ed82e02c985c22aa857135c276e24554439214b0bcc13c1c",
+      "pages": 322,
+      "retrieved_at": "2026-10-22T01:33:16.824623+00:00",
+      "selected_pdf_pages": [
+        180,
+        195,
+        293
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/Currently_Effective_Tariff_-_1_-_92.3-selected.txt",
+      "extracted_text_sha256": "6486256ac4748f78f6b337c9da8bbdf9fecd87e54dfa63b8c2172e7002190097"
+    },
+    {
+      "label": "Currently_Effective_Tariff_-_93_-_End",
+      "url": "https://efis.psc.mo.gov/Document/Display/367355",
+      "pdf_sha256": "56876f34a29ee315a40efcf37d66442d2134a3ea41d11dd8524573ee1e55cc3f",
+      "pages": 289,
+      "retrieved_at": "2026-10-22T01:33:30.637257+00:00",
+      "selected_pdf_pages": [
+        5
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/Currently_Effective_Tariff_-_93_-_End-selected.txt",
+      "extracted_text_sha256": "496a80fd40b56eb24e20b310301c44c0259616ac8414fc2395168cf4deb7e39c"
+    },
+    {
+      "label": "fac-june2025",
+      "url": "https://efis.psc.mo.gov/Document/Display/825521",
+      "pdf_sha256": "5f8ffa39f24ec86ac0e42088bf47d5af0713de9fd15ea5f4d733b995b9c4dafe",
+      "pages": 1,
+      "retrieved_at": "2026-10-22T01:36:10.351659+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/fac-june2025-selected.txt",
+      "extracted_text_sha256": "9019d1f1b569f982cb32f3380679259db95e4ab84f61bd63ee2d0a7aa4237fad"
+    },
+    {
+      "label": "base-june2025-order",
+      "url": "https://efis.psc.mo.gov/Document/Display/832245",
+      "pdf_sha256": "40bd9242ca7ccdf13f9b86d06052d6614d9a6e09bbc618620ba45beb89efe50b",
+      "pages": 5,
+      "retrieved_at": "2026-10-22T01:36:11.347770+00:00",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/base-june2025-order-selected.txt",
+      "extracted_text_sha256": "203a27f35e23303ebbc6a7bdb9f8520d284c0779fe1a0b1ca3a1db841729a726"
+    },
+    {
+      "label": "ssr",
+      "url": "https://www.ameren.com/-/media/rates/missouri/uecesheetno92riderssrstandbyservicerider.ashx",
+      "pdf_sha256": "f6c70a7faf69624ea380775d6a342441e20e2a584a721b9cb4cc51678309c807",
+      "pages": 4,
+      "retrieved_at": "2026-10-22T01:36:12.140023+00:00",
+      "selected_pdf_pages": [
+        1,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/ssr-selected.txt",
+      "extracted_text_sha256": "61a03b99bce3dc35a1bcfaf01c19a7243dd975671ff3e4ddce6ffe485fd03b46"
+    },
+    {
+      "label": "miso-region",
+      "url": "https://www.ameren.com/-/media/files/our-company/reliability/capacity-rfp/amo-bid-input-form-py2028-2029.ashx",
+      "pdf_sha256": "52ebd53b5917addadc882047b26e2b89159c1945a6f2bebbf38b6c6e4988c0d6",
+      "pages": 1,
+      "retrieved_at": "2026-10-22T01:36:12.921087+00:00",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/miso-region-selected.txt",
+      "extracted_text_sha256": "7e7f9654b12bd31d04b7fa838eb01e0235595c993cfe9f5dcd565bbf9a80e233"
+    },
+    {
+      "label": "tax-rule",
+      "url": "https://dor.mo.gov/resources/official-final-rules/documents/12_CSR_10-108_300_Sales_of_Electricity%2C_Water_Gas.pdf",
+      "pdf_sha256": "2a484eee8b86c3c9b95d870816f922dc96e6b44e686a0ea2400c90e614e077b2",
+      "pages": 3,
+      "retrieved_at": "2026-10-22T01:34:40.072159+00:00",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-rule-selected.txt",
+      "extracted_text_sha256": "fc8e37c7dff841b8e906775c0c4edae4e69d6ae78e00d729c8955ab447b7ef7b"
+    },
+    {
+      "label": "tax-2025-10-2025_-_12-2025_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2025/oct2025.pdf",
+      "pdf_sha256": "dab7e5ff4b92946774b3ad849f9050d5fab1977686ec0217946949a070c5b3c2",
+      "pages": 96,
+      "retrieved_at": "2026-10-22T01:36:13.812745+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2025-10-2025_-_12-2025_-_PDF-selected.txt",
+      "extracted_text_sha256": "90a7d62f19a07b33dd4c55b4db5ada5afef7d3e283527a823fc41084a2577c2a"
+    },
+    {
+      "label": "tax-2025-07-2025_-_09-2025_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2025/july2025.pdf",
+      "pdf_sha256": "00d88991f09f84107320c2c4b7cb1d43cd5ab478f3a56dacdb0f42c9f964d8f5",
+      "pages": 216,
+      "retrieved_at": "2026-10-22T01:36:14.869665+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2025-07-2025_-_09-2025_-_PDF-selected.txt",
+      "extracted_text_sha256": "2434c73301bdccb2c3dc9b176cce6b953416ca6a253983912879ae65db8c41fa"
+    },
+    {
+      "label": "tax-2025-04-2025_-_06-2025_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2025/apr2025.pdf",
+      "pdf_sha256": "2a042a1a777d5c7a9d3ef41d6fa95cab2ef524894bef4ed0ec8f00bb1cb4bd95",
+      "pages": 101,
+      "retrieved_at": "2026-10-22T01:36:17.905068+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2025-04-2025_-_06-2025_-_PDF-selected.txt",
+      "extracted_text_sha256": "735d20df62c13edfa72d1feb63d02045765f9fa8c06e078073a17affb4aed50b"
+    },
+    {
+      "label": "tax-2025-01-2025_-_03-2025_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2025/jan2025.pdf",
+      "pdf_sha256": "8ad5fbf41e5c7ff59db8e1f5218d52a448448a9e724469f624d2457f209f2880",
+      "pages": 99,
+      "retrieved_at": "2026-10-22T01:36:20.789392+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2025-01-2025_-_03-2025_-_PDF-selected.txt",
+      "extracted_text_sha256": "4b35f3d1f7641c68896e12460510bcdb87aa0621c6ffe023999f849a8f191936"
+    },
+    {
+      "label": "tax-2026-10-2026_-_12-2026_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2026/october2026.pdf",
+      "pdf_sha256": "53dbfb05f8e0b4f01b641f5094c422a0025852384b1f2db37ea29bc24c4d7fe8",
+      "pages": 104,
+      "retrieved_at": "2026-10-22T01:36:21.584443+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2026-10-2026_-_12-2026_-_PDF-selected.txt",
+      "extracted_text_sha256": "55519fad42683ee6db235b177d9927b95ebfa12c3f7af3a1ffda9c04f30a2486"
+    },
+    {
+      "label": "tax-2026-07-2026_-_09-2026_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2026/july2026.pdf",
+      "pdf_sha256": "c9d77967e2e9b3f062293b463dc9660426bbea7d723fddd604bb778e9fa19f3c",
+      "pages": 100,
+      "retrieved_at": "2026-10-22T01:36:22.423198+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2026-07-2026_-_09-2026_-_PDF-selected.txt",
+      "extracted_text_sha256": "8336cff0e0859db1eac0b0c910e2b8c907050dea939c7a3729bc619a1c66db52"
+    },
+    {
+      "label": "tax-2026-05-2026_-_06-2026_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2026/may2026.pdf",
+      "pdf_sha256": "d2ccd784e6608f77d7721082b1baaa8775745bea5320c8ce9b9a07a39707cc57",
+      "pages": 105,
+      "retrieved_at": "2026-10-22T01:36:23.446414+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2026-05-2026_-_06-2026_-_PDF-selected.txt",
+      "extracted_text_sha256": "b5bdff585d8b7b67aa5f16e922fb42480ebd92126effb6f70119e8125d5756f4"
+    },
+    {
+      "label": "tax-2026-04-2026_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2026/apr2026.pdf",
+      "pdf_sha256": "2a2a9df77295b13ad6ae142d5ad2fca31373a2703b0dd29935c542b688b81c52",
+      "pages": 105,
+      "retrieved_at": "2026-10-22T01:36:24.400257+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2026-04-2026_-_PDF-selected.txt",
+      "extracted_text_sha256": "0abc0fb25f000b0756c02d4e86065165d0ac53080737d3e83de343542974cbee"
+    },
+    {
+      "label": "tax-2026-01-2026_-_03-2026_-_PDF",
+      "url": "https://dor.mo.gov/pdf/rates/2026/jan2026.pdf",
+      "pdf_sha256": "49539f51f14b216018f878acb6c2bcd87b86aebcbe97564fe5f323d4cdb9076e",
+      "pages": 103,
+      "retrieved_at": "2026-10-22T01:36:25.238525+00:00",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ameren_mo/tax-2026-01-2026_-_03-2026_-_PDF-selected.txt",
+      "extracted_text_sha256": "bf1b2f2cdf2451e626c49eff1aa05b1af60da9f222fd0c4184e4333f81f53825"
+    }
+  ]
+}

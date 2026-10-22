@@ -30,6 +30,7 @@ UTILITY_DOCS = {
     "peco": ("docs/PECO.md", "docs/utility_sources/peco/manifest.json", "test/test_peco.py"),
     "consumers_energy": ("docs/Consumers_Energy.md", "docs/utility_sources/consumers/manifest.json", "test/test_consumers.py"),
     "ameren_illinois": ("docs/Ameren_Illinois.md", "docs/utility_sources/ameren_il/manifest.json", "test/test_ameren_il.py"),
+    "ameren_missouri": ("docs/Ameren_Missouri.md", "docs/utility_sources/ameren_mo/manifest.json", "test/test_ameren_mo.py"),
     "dte_electric": ("docs/DTE.md", "docs/utility_sources/dte/manifest.json", "test/test_dte.py"),
 }
 DEFAULT_EVIDENCE = (".cache/regional_validation_release_20261015/validation.json",
@@ -187,6 +188,8 @@ def unit_scope(utility, plan, supply, enabled):
         return "Independent filed-arithmetic benchmarks, demand/state/date/DST tests and main-form queued-worker reconciliation; no customer-bill calibration claim"
     if utility=="ameren_illinois":
         return "Independent dated seasonal-block/rider/tax benchmarks, Central-time DST, TS classification and main-form queued-worker reconciliation; no customer-bill calibration claim"
+    if utility=="ameren_missouri":
+        return "Independent dated TOU/block/rider/tax benchmarks, Missouri holiday/DST calendars, commercial history and main-form queued-worker reconciliation; no customer-bill calibration claim"
     if utility in ("dte_electric", "consumers_energy"):
         return "Independent monthly arithmetic, service/bill-date riders, TOU/DST, EWR band and MISO identity tests; no measured customer-bill calibration claim"
     if utility == "dominion_energy_virginia":

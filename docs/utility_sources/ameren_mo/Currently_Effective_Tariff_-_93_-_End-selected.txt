@@ -1,0 +1,39 @@
+PDF page 5
+UNION ELECTRIC COMPANY ELECTRIC SERVICE
+MO.P.S.C. SCHEDULE NO. 6 11th Revised SHEET NO. 93.4
+CANCELLING MO.P.S.C. SCHEDULE NO. 6 10th Revised SHEET NO. 93.4
+APPLYING TO MISSOURI SERVICE AREA
+DATE OF ISSUE September 29, 2025 DATE EFFECTIVE February 1, 2026
+ISSUED BY Mark C. Birk Chairman & President St. Louis, Missouri
+NAME OF OFFICER TITLE ADDRESS
+RIDER RESRAM
+RENEWABLE ENERGY STANDARD RATE ADJUSTMENT MECHANISM
+RESRAM Rate Schedule
+Accumulation Period Ending: 07/31/25
+1. Actual RES Costs Incurred in AP (ARC) $55,171,068 
+2. RES Expenses Recovered in AP (RCR) = $43,214,376
+=(RBA + sum of monthly MBAs) 
+3. RES Over/Under Recovery (ROUR)= = $14,345,600
+3.1 Interest + $2,388,908
+3.2 (Over)/Under Recovered Costs (ARC-RCR) + $11,956,692
+4. RES Revenue Requirement (RRR) + $52,790,164
+5. True-Up (T) + $(2,839,788)
+6. Ordered Adjustment (OA) ± $0
+7. Total RESRAM Recoveries(TRR)=(ROUR+RRR+T+OA) = $64,295,975
+8. Estimated Recovery Period Sales (SRP) ÷ 31,069,752,210 kWh
+9. TRRRATE = MIN of((TRR/SRP),(RAC)) = $0.00207/kWh
+10. RESRAMRATE = TRRRATE + ROA1 = $0.00207/kWh
+11. Required Offset Amount (ROA) + $0.00000/kWh
+12. RESRAMRATE (applicable for the first 6 
+months if ROA is greater than $0.00000) = $0.00207/kWh
+*A negative RESRAM Rate represents a per kWh credit that would be applied to a 
+customer's bill.
+Recovery Period for Above RESRAM Rate
+February 1, 2026 to January 31, 2027
+Current RBA = $52,790,164
+Base Amount File No. ER-2024-0319 = $2,380,903
+1 If ROA is equal $0.00000, The RESRAMRATE stated in this Line 10 shall apply for the 
+entire Recovery Period. If ROA is greater than $0.00000, the RESRAMRATE shall be the 
+value shown on line 12 for the first 6 months and, thereafter, the value shown on Line 
+10.
+FILED - Missouri Public Service Commission - 02/01/2026 - ER-2026-0081 - JE-2026-0045

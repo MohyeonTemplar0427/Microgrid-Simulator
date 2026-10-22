@@ -740,3 +740,31 @@ interval-billed TS, export credit settlement and standalone storage are rejected
 The all-customer CGC fee remains present even in grid-only counterfactuals.
 MISO transmission owner, resource zone and optional verified wholesale cpnode
 remain separate account facts. See [Ameren scope](Ameren_Illinois.md).
+
+## Ameren Missouri bundled service · October 2026
+
+`billing/ameren_mo.py` and snapshot-safe `ameren_mo_rates.py` add residential
+1(M) Anytime/EMS/SmartA+B/OvernightA+B and standard secondary commercial2(M).
+Verified service dates are January2025–October21,2026, with complete calendar
+cycles only (latest complete month September2026). Base, FAC, SUR, EEIC and
+RESRAM use their own effective dates; the June2025 RESRAM rebase is not a second
+charge on already rebased costs. Exact winter filled blocks and TOU calendars
+feed both bills and the optimizer. Smart Saver uses nine actual holidays with
+no substitute dates; EMS and Overnight apply the same daily windows on holidays.
+
+Standard2(M) requires dated prior May/October import kWh and the maximum over
+any preceding summer month. The identical inherited history starts all three
+scenarios, then each scenario carries its own subsequent billed-import history.
+Missing-history and later-refund procedures are deliberately rejected. No
+intra-cycle operation can rewrite a preceding billing determinant. Rolling-cycle
+optimization does not internalize future changes in these history determinants,
+so the annual comparison is not a jointly optimized annual bill.
+
+The first complete tax scope is explicitly confirmed unincorporated ColeCounty
+00000-051-000 (domestic utility0%, commercial sales5.6%); other localities are
+unsupported. Utility, Missouri jurisdiction, bundled supplier, Central timezone,
+MISO LRZ5, transmission owner and optional sourced cpnode remain independent.
+No wholesale/capacity/transmission adder or CAISO carbon is substituted. Approved
+non-export PV/storage only, no NEM credits or standby. The shared local-browser,
+worker, bill/artifact and representative OpenDSS paths are reused. See
+[Missouri scope and evidence](Ameren_Missouri.md). GUI development remains paused.

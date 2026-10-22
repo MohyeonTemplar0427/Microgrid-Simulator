@@ -1,0 +1,131 @@
+PDF page 180
+UNION ELECTRIC COMPANY ELECTRIC SERVICE
+MO.P.S.C. SCHEDULE NO. 6 5th Revised SHEET NO. 71.32
+CANCELLING MO.P.S.C. SCHEDULE NO. 6 4th Revised SHEET NO. 71.32
+APPLYING TO MISSOURI SERVICE AREA
+DATE OF ISSUE December 2, 2024 DATE EFFECTIVE February 1, 2025
+ISSUED BY Mark C. Birk Chairman & President St. Louis, Missouri
+NAME OF OFFICER TITLE ADDRESS
+RIDER FAC
+FUEL AND PURCHASED POWER ADJUSTMENT CLAUSE (Cont’d.)
+(Applicable To services provided on February 1, 2025 through May 31, 2025)
+Calculation of Current Fuel Adjustment Rate (FAR):
+Accumulation Period Ending: September 30, 2024
+1. Actual Net Energy Cost = (ANEC) (FC+PP+E+R -OSSR) $194,686,693
+2. (B) = (BF x SAP) - $171,172,252
+2.1 Base Factor (BF) $.01439/kWh
+2.2 Accumulation Period Sales (SAP) 11,895,222,508 kWh
+3. Total Company Fuel and Purchased Power Difference = $23,514,441
+3.1 Customer Responsibility x 95%
+4. Fuel and Purchased Power Amount to be Recovered = $22,338,719
+4.1 Interest (I) - $3,716,640
+4.2 True-Up Amount (TUP) + $(1,319,614)
+4.3 Prudence Adjustment Amount (P) ± $0
+5. Fuel and Purchased Power Adjustment (FPA) = $24,735,745
+6. Estimated Recovery Period Sales (SRP) ÷ 21,680,221,651 kWh
+7. Current Period Fuel Adjustment Rate (FARRP) = $0.00114/kWh
+8. Prior Period Fuel Adjustment Rate (FARRP-1) + $(0.00006)/kWh
+ 9. Preliminary Fuel Adjustment Rate (PFAR) = $0.00108/kWh
+ 10. Rate Adjustment Cap (RAC) = N/A
+11. Fuel Adjustment Rate (FAR, lesser of PFAR and RAC) = $0.00108/kWh
+Initial Rate Component for the Individual Service Classifications
+12. Secondary Voltage Adjustment Factor (VAFSEC) 1.0539
+13. Initial Rate Component for Secondary Customers = $0.00114/kWh
+14. Primary Voltage Adjustment Factor (VAFPRI) 1.0222
+15. Initial Rate Component for Primary Customers = $0.00110/kWh
+16. Primary LPS Weighting Factor (WFPRI) .1587
+17. High Voltage Adjustment Factor (VAFHV) 1.0059
+18. Initial Rate Component for High Voltage Customers = $0.00108/kWh
+19. High Voltage LPS Weighting Factor (WFHV) .3967
+20. Transmission Adjustment Factor (VAFTRANS) 0.9928
+21. Initial Rate Component for Transmission Customers = $0.00107/kWh
+22. Transmission Voltage LPS Weighting Factor (WFTRANS) .4446
+23. Combined Initial Rate Component for RACLPS Comparison = $0.00108/kWh
+LPS Rate Adjustment Cap Components & Adder
+24. RACLPS = N/A
+25. Weighted Avg FAR for Large Primary Service (FARLPS, lesser of 23 and 24) = $0.00108/kWh
+26. Difference (Line 23 – Line 25) if applicable = $0.00000/kWh
+27. Estimated Recovery Period Metered Sales for LPS (SLPS) = 2,553,940,860 kWh
+28. FAR Shortfall Adder (Line 26 x Line 27) = $0
+29. Per kWh FAR Shortfall Adder (Line 28 / (SRP – SRPLPS) = $0.00000/kWh
+FAR Applicable to the Non-LPS Service Classifications
+30. FAR for Secondary(FARSEC) (Line 13 + (Line 29 x Line 12)) = $0.00114/kWh
+31. FAR for Primary(FARPRI) (Line 15 + (Line 29 x Line 14)) = $0.00110/kWh
+32. FAR for High Voltage(FARHV) (Line 18 + (Line 29 x Line 17)) = $0.00108/kWh
+33. FAR for Tramsmission(FARTRANS) (Line 21 + (Line 29 x Line 20)) = $0.00107/kWh
+FAR Applicable to the LPS Service Classifications
+34. LPS RAC Cap Multiplier (Line 25 / Line 23)) = 1.0
+35. FAR for LPS Primary(LPSFARPRI) (Line 15 x Line 34) = $0.00110/kWh
+36. FAR for LPS High Voltage(LPSFARHV) (Line 18 x Line 34) = $0.00108/kWh
+37. FAR for LPS Transmission(LPSFARTRANS) (Line 21 x Line 34) = $0.00107/kWh
+FILED - Missouri Public Service Commission - 02/01/2025 - ER-2025-0171 - EO-2025-0172 - JE-2025-0082
+
+PDF page 195
+UNION ELECTRIC COMPANY ELECTRIC SERVICE
+MO.P.S.C. SCHEDULE NO. 6 4th Revised SHEET NO. 72.14
+CANCELLING MO.P.S.C. SCHEDULE NO. 6 3rd Revised SHEET NO. 72.14
+APPLYING TO MISSOURI SERVICE AREA
+ 
+DATE OF ISSUE July 30, 2026 DATE EFFECTIVE October 1, 2026 
+ISSUED BY Aaron Melda President St. Louis, Missouri
+NAME OF OFFICER TITLE ADDRESS
+RIDER FAC 
+FUEL AND PURCHASED POWER ADJUSTMENT CLAUSE (Cont’d.)
+(Applicable To services provided on October 1, 2026 through January 31, 2027)
+Calculation of Current Fuel Adjustment Rate (FAR): 
+Accumulation Period Ending: May 31, 2026 
+ 1. Actual Net Energy Cost = (ANEC) (FC+PP+E+R -OSSR) $136,195,444 
+2. (B) = (BF x SAP) - $132,973,380 
+ 2.1 Base Factor (BF) $.01383/kWh 
+ 2.2 Accumulation Period Sales (SAP) 9,614,850,389 kWh 
+3. Total Company Fuel and Purchased Power Difference = $3,222,064 
+ 3.1 Customer Responsibility x 95% 
+4. Fuel and Purchased Power Amount to be Recovered = $3,060,961 
+ 4.1 Interest (I) - $3,761,886 
+ 4.2 True-Up Amount (TUP) + $(6,721,848) 
+ 4.3 Prudence Adjustment Amount (P) ± $0 
+5. Fuel and Purchased Power Adjustment (FPA) = $100,999 
+6. Estimated Recovery Period Sales (SRP) ÷ 20,935,918,297 kWh 
+7. Current Period Fuel Adjustment Rate (FARRP) = $0.00000/kWh 
+8. Prior Period Fuel Adjustment Rate (FARRP-1) + $0.00421/kWh 
+9. Fuel Adjustment Rate (FAR) = $0.00421/kWh 
+FAR Applicable to the Individual Service Classifications: 
+ 10. Secondary Voltage Adjustment Factor (VAFSEC) 1.0560 
+ 11. Rate for Secondary Customers = $0.00445/kWh 
+ 12. Primary Voltage Adjustment Factor (VAFPRI) 1.0240 
+13. Rate for Primary Customers = $0.00431/kWh 
+14. High Voltage Adjustment Factor (VAFHV) 1.0060 
+15. Rate for High Voltage Customers = $0.00424/kWh 
+16. Transmission Adjustment Factor (VAFTRANS) 0.9931 
+17. Rate for Transmission Customers = $0.00418/kWh 
+FILED - Missouri Public Service Commission - 10/0/2026 - ER-2027-0027 - JE-2027-0013
+
+PDF page 293
+UNION ELECTRIC COMPANY ELECTRIC SERVICE
+MO.P.S.C. SCHEDULE NO. 6 8th Revised SHEET NO. 90.4
+CANCELLING MO.P.S.C. SCHEDULE NO. 6 7th Revised SHEET NO. 90.4
+APPLYING TO MISSOURI SERVICE AREA
+ 
+DATE OF ISSUE August 31, 2026 DATE EFFECTIVE October 1, 2026 
+ISSUED BY Aaron Melda President St. Louis, Missouri
+NAME OF OFFICER TITLE ADDRESS
+SECURITIZED UTILITY TARIFF RIDER 
+ SUR 
+Calculation of Current Securitized Utility Tariff Rate 
+Applicable to service provided on October 1, 2026 through March 31, 2027. 
+Total Securitized Revenue Requirement (TSRR) $23,091,291 
+Securitized Revenue Requirement True-Up (T) + $(92,658) 
+Allowance (A) + $807,275 
+TSRR + T + A = $23,805,907 
+Estimated Recovery Period Sales (SRP) ÷ 15,990,293,086 
+SUR Rate (Rush Island Plant Retirement Cost) = $0.00149/kWh 
+Loss Adjusted SUR Rates 
+Secondary Voltage Adjustment Factor(VAFSEC) 1.0560 
+Secondary (SUR Rate x VAFSEC) = $0.00157/kWh 
+Primary Voltage Adjustment Factor(VAFPRI) 1.0240 
+Primary (SUR Rate x VAFPRI) = $0.00153/kWh 
+High Voltage Adjustment Factor(VAFHV) 1.0060 
+Substation (SUR Rate x VAFHV) = $0.00150/kWh 
+Transmission Adjustment Factor(VAFTRANS) 0.9931 
+Transmission (SUR Rate x VAFTRANS) = $0.00148/kWh 
+FILED - Missouri Public Service Commission - 10/01/2026 - EF-2024-0021 - JE-2027-0031

@@ -50,12 +50,14 @@ DTE_CASES = (("dte_electric", "residential", "D1.11"), ("dte_electric", "commerc
 
 CONSUMERS_CASES = tuple(("consumers_energy", "residential" if p in ("RSP", "RSH") else "commercial", p) for p in ("RSP", "RSH", "GS", "GSTU"))
 AMEREN_CASES = (("ameren_illinois", "residential", "DS-1"),("ameren_illinois", "commercial", "DS-2"))
+AMEREN_MO_CASES = tuple(("ameren_missouri", "commercial" if p=="2M" else "residential",p)
+    for p in ("1M","1M-EMS","1M-SMART-A","1M-SMART-B","1M-OVERNIGHT-A","1M-OVERNIGHT-B","2M"))
 
 
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -153,6 +155,14 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     r.update(name=name, start_date=start, end_date=end,
              billing_cycles=calendar_cycles(start, end))
     account = r["account"]
+    if utility=="ameren_missouri" and account["tariff"]=="2M":
+        current=pd.Timestamp(start)
+        for key,month in (("may_month",5),("october_month",10)):
+            previous=current.replace(month=month,day=1)
+            if previous>=current:previous-=pd.DateOffset(years=1)
+            account["history"][key]=str(previous.date())
+        last_summer=adapter(utility).preceding_summer_month(current)
+        account["history"]["summer_through"]=str(last_summer.date())
     if utility=="firstenergy_ohio_edison" and allow_ohio_provisional:
         account.update(rate_evidence_mode="provisional_2025",provisional_assumptions_accepted=True)
         r["name"] += " PROVISIONAL historical rates and billing assumptions"
@@ -240,12 +250,12 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
     for utility in utilities:
         path = folder/utility
         path.mkdir(exist_ok=True)
-        if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois") or utility == "dominion_energy_virginia" and not va_history_only:
+        if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri") or utility == "dominion_energy_virginia" and not va_history_only:
             file = path/"era5.json"
             expected = previous.get("sources", {}).get(utility, {}).get("sha256")
             if expected is not None:
                 require(file.exists() and digest(file) == expected, "Prepared ERA5 bytes changed; choose a new input folder")
-            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois") else ("2026-09-01","2026-09-30")
+            start,end=("2025-01-01","2025-12-31") if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri") else ("2026-09-01","2026-09-30")
             request = dict(latitude=SITES[utility][0], longitude=SITES[utility][1], start_date=start, end_date=end)
             payload = json.loads(file.read_text()) if file.exists() else fetch_era5(**request)
             require(payload["request"]["latitude"] == request["latitude"] and payload["request"]["longitude"] == request["longitude"],
@@ -286,7 +296,7 @@ def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
-    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois"):
+    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri"):
         payload=json.loads((source/"era5.json").read_text())
         from src.profiles.era5 import parse_era5
         lat,lon,_=SITES[utility]

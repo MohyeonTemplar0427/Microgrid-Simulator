@@ -1,0 +1,36 @@
+PDF page 1
+Ameren Missouri Bid Input Form: Planning Year 2028 – 2029 MISO ZRC 
+All proposals shall be submited in accordance with Ameren Missouri Seasonal Request for Proposal and the
+instruc�ons provided. Ameren Missouri will only accept electronically submited Proposals. Respondents
+are required to submit all completed forms by the specified deadlines to: 
+AMOWholesaleEnergy@ameren.com
+Summer 2028 Target Volume 450
+Bid Segment 1 2 3 4 5
+MISO Local Resource Zone (1-7)
+ZRC Quantity (MW)
+Price per ZRC ($/MW-Day)
+Seller willing to deliver to Zone 5 (Y/N)
+Fall 2028 Target Volume 0
+Bid Segment 1 2 3 4 5
+MISO Local Resource Zone (1-7)
+ZRC Quantity (MW)
+Price per ZRC ($/MW-Day)
+Seller willing to deliver to Zone 5 (Y/N)
+Winter 2028 / 2029 Target Volume 1,175
+Bid Segment 1 2 3 4 5
+MISO Local Resource Zone (1-7)
+ZRC Quantity (MW)
+Price per ZRC ($/MW-Day)
+Seller willing to deliver to Zone 5 (Y/N)
+Spring 2029 Target Volume 1,325
+Bid Segment 1 2 3 4 5
+MISO Local Resource Zone (1-7)
+ZRC Quantity (MW)
+Price per ZRC ($/MW-Day)
+Seller willing to deliver to Zone 5 (Y/N)
+Full Planning Year 2028 / 2029 Target Volume N/A
+Bid Segment 1 2 3 4 5
+MISO Local Resource Zone (1-7)
+ZRC Quantity (MW)
+Price per ZRC ($/MW-Day)
+Seller willing to deliver to Zone 5 (Y/N)

@@ -123,3 +123,14 @@ Savings are modeled results under these assumptions. A utility profile is not an
 ## Keeping this guide current
 
 Profiles contain introductions rather than duplicate price tables. Use the linked implementation notes and active engine catalog for exact rates and dates. Publication dates on this guide are review dates, not tariff expiration dates. [Maintenance and evidence notes](utility_guide/maintenance.md) describe how to update coverage without confusing implemented code with a promoted browser release.
+
+## Missouri · Ameren Missouri
+
+The local candidate supports residential1(M) Anytime, Evening/Morning Saver,
+Smart Saver A/B and Overnight Saver A/B, plus standard small-commercial2(M).
+Verified rates span January2025–October21,2026; complete calendar cycles only
+make September2026 the last accepted complete month. Commercial winter energy
+uses documented prior May/October/summer imports. First tax-inclusive scope is
+confirmed unincorporated ColeCounty, with approved non-export PV/storage and
+no special charges. Missouri rates and MISO LRZ5 are separate from Illinois
+rates/retail zones and LRZ4. See [Missouri scope and sources](Ameren_Missouri.md).

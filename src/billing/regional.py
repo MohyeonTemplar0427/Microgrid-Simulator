@@ -14,6 +14,10 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "ameren_missouri": {"label":"Ameren Missouri", "state":"MO", "zone":None, "module":"ameren_mo", "timezone":"America/Chicago",
+                       "grid_operator":"MISO", "resource_adequacy_zone":"LRZ5", "transmission_owner":"Ameren Missouri",
+                       "grid_sources":["https://www.ameren.com/-/media/files/our-company/reliability/capacity-rfp/amo-bid-input-form-py2028-2029.ashx",
+                                       "https://docs.misoenergy.org/miso12-legalcontent/Schedule_09_-_Network_Integration_Transmission_Service.pdf"]},
     "dominion_energy_virginia": {"label":"Dominion Energy Virginia", "state":"VA", "zone":"DOM", "module":"dominion_va_general"},
     "dominion_energy_north_carolina": {"label":"Dominion Energy North Carolina", "state":"NC", "zone":"DOM", "module":"dominion_nc"},
     "pseg": {"label":"PSE&G", "state":"NJ", "zone":"PSEG", "module":"pseg"},

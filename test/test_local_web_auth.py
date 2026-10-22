@@ -401,9 +401,13 @@ def test_legacy_database_migration_is_non_destructive(tmp_path):
 
 @pytest.mark.parametrize('changes', [
     {'iss':'https://evil.example'}, {'aud':'wrong-client'}, {'nonce':'wrong'},
-    {'exp':1}, {'sub':''}, {'azp':'wrong-client'}, {'iat':time.time()+1000},
+    {'exp':1}, {'sub':''}, {'azp':'wrong-client'}, {'iat':'future_at_execution'},
 ])
 def test_oidc_rejects_invalid_signed_claims(monkeypatch, changes):
+    # Collection can precede execution by a long run or computer suspension.
+    # Keep this claim in the future relative to verification, not collection.
+    if changes.get('iat') == 'future_at_execution':
+        changes = {**changes, 'iat': time.time()+1000}
     provider, claims = signed_provider(monkeypatch, changes)
     with pytest.raises(Exception): provider.exchange('code','nonce','v'*43)
 

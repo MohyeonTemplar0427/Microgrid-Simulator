@@ -19,7 +19,8 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"ameren_illinois":(39.75,-89.70,"Hypothetical unincorporated Sangamon County, Illinois site; Ameren service, Rate Zone II and no municipal charges independently confirmed"),
+SITES={"ameren_missouri":(38.49,-92.16,"Hypothetical unincorporated Cole County, Missouri site; Ameren service and tax jurisdiction independently confirmed, not a map finding"),
+       "ameren_illinois":(39.75,-89.70,"Hypothetical unincorporated Sangamon County, Illinois site; Ameren service, Rate Zone II and no municipal charges independently confirmed"),
        "dominion_energy_virginia":(37.63,-77.52,"Hypothetical Henrico-area Virginia site; locality independently confirmed"),
        "dominion_energy_north_carolina":(36.44,-76.50,"Hypothetical northeastern North Carolina site"),
        "pseg":(40.74,-74.17,"Hypothetical Newark, New Jersey site"),
@@ -270,13 +271,16 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois"):
+    if utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
+    if utility=="ameren_missouri":
+        _,first_block,first_cycle=cycles[0]
+        module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],equipment=equipment)
     alternatives=r.get("tariff_comparisons",[])
     if not isinstance(alternatives,list) or len(alternatives)>1 or any(not isinstance(p,str) for p in alternatives):
         raise ValueError("Choose at most one alternative tariff for an independently optimized comparison.")
