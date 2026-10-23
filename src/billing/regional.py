@@ -14,6 +14,11 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "xcel_energy_minnesota": {"label":"Xcel Energy · Minnesota (NSP)", "state":"MN", "zone":None, "module":"xcel_mn", "timezone":"America/Chicago",
+                            "grid_operator":"MISO", "resource_adequacy_zone":"LRZ1", "transmission_owner":"Northern States Power Company",
+                            "grid_sources":["https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
+                                            "https://transmissionprod2.xcelenergy.com/Planning/Planning-for-the-Northern-States-Power-Company",
+                                            "https://docs.misoenergy.org/miso12-legalcontent/Schedule_09_-_Network_Integration_Transmission_Service.pdf"]},
     "ameren_missouri": {"label":"Ameren Missouri", "state":"MO", "zone":None, "module":"ameren_mo", "timezone":"America/Chicago",
                        "grid_operator":"MISO", "resource_adequacy_zone":"LRZ5", "transmission_owner":"Ameren Missouri",
                        "grid_sources":["https://www.ameren.com/-/media/files/our-company/reliability/capacity-rfp/amo-bid-input-form-py2028-2029.ashx",

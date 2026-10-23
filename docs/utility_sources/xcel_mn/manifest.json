@@ -1,0 +1,297 @@
+{
+  "retrieved_date": "2026-10-23",
+  "scope": "Ordinary Minnesota residentialA01/A02 and SmallGeneralA10/A12, complete calendar cycles, non-export, unincorporated Sherburne tax jurisdiction",
+  "coverage_gap": [],
+  "sources": [
+    {
+      "label": "current5p1-pdf",
+      "url": "https://xcelnew.my.salesforce.com/sfc/dist/version/download/?oid=00D1U0000011ttV&ids=068R300000h2Qgz&d=/a/R3000009eD7q/dG8j89hN0JiO6SAKQKFHcNhiXf0Osoz7XMTYXy0qV2o&operationContext=DELIVERY&viewId=&dpt=",
+      "sha256": "5b5c104d97600d1ccf613fc2fd683d7e3a47305d05373f136b1ae84c66c350cb",
+      "selected_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "pages": 109,
+      "extracted_text": "docs/utility_sources/xcel_mn/current5p1-pdf-selected.txt",
+      "extracted_text_sha256": "7d1a51234a261164becd3e28da48cda3f1e67f99e0f0594d3f5703befd253ca9"
+    },
+    {
+      "label": "current5p3-pdf",
+      "url": "https://xcelnew.my.salesforce.com/sfc/dist/version/download/?oid=00D1U0000011ttV&ids=068R300000lmy8Y&d=%2Fa%2FR3000009e89p%2F6CCLEW5S0IzVq.omDH.mYhUSD0E_R2DThBnsFiWShaY&operationContext=DELIVERY&viewId=&dpt=",
+      "sha256": "9618b10d31b7dfb98a97bd05b54343957f049f6659962e1faf66055b4f401993",
+      "selected_pdf_pages": [
+        1,
+        2,
+        5,
+        6,
+        23,
+        24,
+        25,
+        51
+      ],
+      "pages": 61,
+      "extracted_text": "docs/utility_sources/xcel_mn/current5p3-pdf-selected.txt",
+      "extracted_text_sha256": "fbe497a9f84660437688935d50666b3440d8ca34933bbf142707382456ce4ae7"
+    },
+    {
+      "label": "current5p4-pdf",
+      "url": "https://xcelnew.my.salesforce.com/sfc/dist/version/download/?oid=00D1U0000011ttV&ids=068R300000mNHEP&d=%2Fa%2FR3000009e3DN%2FaTr4AtBhOStSP5symY_0MDt4hVbAzxoN3crNQ3NWMK0&operationContext=DELIVERY&viewId=&dpt=",
+      "sha256": "410d47b5bd9bfa9e0b4bf5095b3e3c435fdaf4ee90b062de7e6bc2250a373da7",
+      "selected_pdf_pages": [
+        7,
+        9,
+        15,
+        16,
+        17,
+        19,
+        20
+      ],
+      "pages": 44,
+      "extracted_text": "docs/utility_sources/xcel_mn/current5p4-pdf-selected.txt",
+      "extracted_text_sha256": "4d36d5768074a82ed6c7bf63d6ed7accb26a9e689bf7da2c1ae3d9877282e7d6"
+    },
+    {
+      "label": "ratebook",
+      "url": "https://www.xcelenergy.com/staticfiles/xe-responsive/Company/Rates%20%26%20Regulations/Me_Section_5.pdf",
+      "sha256": "293fe44dda4e6c12910f0cf921bc63437ea632ddc26b9b9e512d04b648c122d5",
+      "selected_pdf_pages": [
+        3,
+        5,
+        6,
+        7,
+        34,
+        35,
+        36,
+        37,
+        38,
+        190
+      ],
+      "pages": 243,
+      "extracted_text": "docs/utility_sources/xcel_mn/ratebook-selected.txt",
+      "extracted_text_sha256": "bb0873c6e8e1c316dd4082791aa8ce182ade4b0526f3ec7d0b440b7931f1df37"
+    },
+    {
+      "label": "fuel2025-actual",
+      "url": "https://legistar.granicus.com/minnesotapuc/attachments/49485675-93e3-4200-acfa-1ea163bbe715.pdf",
+      "sha256": "3842fd6aad2fd5d56bdee9e7c35c757dddabcafe50d50fa855c57838e850bd33",
+      "selected_pdf_pages": [
+        39
+      ],
+      "pages": 383,
+      "extracted_text": "docs/utility_sources/xcel_mn/fuel2025-actual-selected.txt",
+      "extracted_text_sha256": "959bad9c51c1a75984d8a423a2da66513806f8c2d245ac37c62653b43b6098ec"
+    },
+    {
+      "label": "cip2024-update",
+      "url": "https://minnesotapuc.legistar.com/View.ashx?GUID=04ABAF9B-7DAE-4139-B233-3CD71CEF7039&ID=13394953&M=F",
+      "sha256": "d68cfcca5e26bcb8222850ecb8fdd215e9d7ca030c0cf1b4f50a51265ea9b2c2",
+      "selected_pdf_pages": [
+        2,
+        3,
+        9
+      ],
+      "pages": 24,
+      "extracted_text": "docs/utility_sources/xcel_mn/cip2024-update-selected.txt",
+      "extracted_text_sha256": "fa90dc6e48660adb1268425b6d8b72e806590f91fd88797f7c3d05d9ff75dc7e",
+      "note": "Proposal corroborated as the existing billed factor by the retrospective2024 ECO filing, PDF page36; proposal alone is not acceptance evidence."
+    },
+    {
+      "label": "m4502-a2",
+      "url": "https://webapi.legistar.com/v1/minnesotapuc/matters/4502/attachments/42010/file",
+      "sha256": "9a0c9cfefa9b4d633595a69c471b820ebfe3785313df2792b7442b488acf93f2",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages": 7,
+      "extracted_text": "docs/utility_sources/xcel_mn/m4502-a2-selected.txt",
+      "extracted_text_sha256": "864a8c4cc9d917b842420f728fe1283609dcf359345d215daf41d511a1642368"
+    },
+    {
+      "label": "m4504-a2",
+      "url": "https://webapi.legistar.com/v1/minnesotapuc/matters/4504/attachments/43807/file",
+      "sha256": "899abce4252d2abb8cc1d15d5741cc4e0f80b645b8d3b79d68c234ace9440b8b",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages": 8,
+      "extracted_text": "docs/utility_sources/xcel_mn/m4504-a2-selected.txt",
+      "extracted_text_sha256": "7d12b75e26e2ce0680510cc968d498e87a8336686ac66eacbb44de0f3e4c371d"
+    },
+    {
+      "label": "m4608-a2",
+      "url": "https://webapi.legistar.com/v1/minnesotapuc/matters/4608/attachments/42296/file",
+      "sha256": "bb938fd1bc22d1dfb7e0984687cb3b9b7c36ade7b4e7c2b6b5d0277cc4d820f7",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "pages": 5,
+      "extracted_text": "docs/utility_sources/xcel_mn/m4608-a2-selected.txt",
+      "extracted_text_sha256": "4a07f9ed2209922f3fa2a5e2775c90f87032e8ea9714ea6eb192fc12088f7c5d"
+    },
+    {
+      "label": "rules6-pdf",
+      "url": "https://xcelnew.my.salesforce.com/sfc/dist/version/download/?oid=00D1U0000011ttV&ids=068R3000008dglx&d=/a/8b000002yLiP/27fcisWyYTkolndzNJOZBmaAcZfAkgpze7HiGxkTwv4&operationContext=DELIVERY&viewId=&dpt=",
+      "sha256": "463ed4520ed798de42aac1db9d07464a1d5c40f08ff6043f3f3cb3639adbe2e7",
+      "selected_pdf_pages": [
+        25,
+        26,
+        28
+      ],
+      "pages": 65,
+      "extracted_text": "docs/utility_sources/xcel_mn/rules6-pdf-selected.txt",
+      "extracted_text_sha256": "24e448d4ede029fa9da4327b5c8f50de78fb05129c26f2df29291ac4ae58d153"
+    },
+    {
+      "label": "utilitytax",
+      "url": "https://www.revenue.state.mn.us/sites/default/files/2023-01/FS157.pdf",
+      "sha256": "5115aac6d7a4135eadc4434c15087953c198938a5ca3b9527958f36bea0cb7d6",
+      "selected_pdf_pages": [
+        1,
+        3,
+        4
+      ],
+      "pages": 4,
+      "extracted_text": "docs/utility_sources/xcel_mn/utilitytax-selected.txt",
+      "extracted_text_sha256": "e190f41227aa3c833410150180d99b631edf782d4cf01da2956a01aad1238d22"
+    },
+    {
+      "label": "taxcounty",
+      "url": "https://www.revenue.state.mn.us/sites/default/files/2018-12/General_Notice_Sherburne_Co.pdf",
+      "sha256": "d3e5051275d76206a1c15964a7dcfbb2fddbc0f2f2863dffa2db624358b157cd",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages": 3,
+      "extracted_text": "docs/utility_sources/xcel_mn/taxcounty-selected.txt",
+      "extracted_text_sha256": "b69c740c66010435aa90c6f30f111259e6fe355a22bb24e953bf7a58c21a3fcb"
+    },
+    {
+      "label": "taxcurrent",
+      "url": "https://www.revenue.state.mn.us/sites/default/files/2026-08/local-sales-and-use-tax-rate-guide-2026-q4.pdf",
+      "sha256": "539b76c2803a32246fb265f23729ea9151e9ae988ec52697aa5d8e3bf42cabc8",
+      "selected_pdf_pages": [
+        24,
+        25
+      ],
+      "pages": 30,
+      "extracted_text": "docs/utility_sources/xcel_mn/taxcurrent-selected.txt",
+      "extracted_text_sha256": "0aadf7c206986baf92d952ad7f5ec9658ae6be286ccc1d3c8589fefa104595b0"
+    },
+    {
+      "label": "riders_effective_dates",
+      "url": "https://www.xcelenergy.com/company/rates_and_regulations/rates/rate_riders",
+      "sha256": "80b72f08603fae15832f90d0dd79fc873ecdd01796536c3fdc76ae612eff26d8",
+      "extracted_text": "docs/utility_sources/xcel_mn/riders-snapshot.txt",
+      "extracted_text_sha256": "cd0510ed3d0ab8b557bcd65451fd2778f4461b3677d99c8193eb8768eafdb456",
+      "note": "HTML snapshot lags filed April/May2026 TCR/RDF/RES changes; January1,2026 TCR(.004436/.003006) and February1,2025 RDF(.001097) retained for earlier effective dates. CIP December31 date is superseded by corrected filed revision26 with effective December1,2025."
+    },
+    {
+      "label": "dsm2024",
+      "url": "https://xcelnew.my.salesforce.com/sfc/p/1U0000011ttV/a/R3000005SWoa/i3UeIgvecEiRLArSFuoyRf8.Y0PhSYrhgX9vSVIqxHc",
+      "sha256": "b7424868cea4f500edfcd37b9836517ee8efa5ad212dbe0bf3ff3f9f7574dd8b",
+      "selected_pdf_pages": [
+        1,
+        36
+      ],
+      "pages": 289,
+      "extracted_text": "docs/utility_sources/xcel_mn/dsm2024-selected.txt",
+      "extracted_text_sha256": "456216236292a777a854645a7da409e572b120f318a2088dbe541d588a61c20e",
+      "note": "Retrospective CURRENT factor only; future proposed factors not adopted as prices"
+    },
+    {
+      "label": "dsm2025",
+      "url": "https://xcelnew.my.salesforce.com/sfc/p/1U0000011ttV/a/R300000NK9Ba/3vK6hTm0TgsICrTCtYQNLWGqqxtHjUAxfpxGbX.P9ak",
+      "sha256": "11b23b8d9f3a32a3c7c50c506f4a30617ed91f720673139e49f4034a6e92695e",
+      "selected_pdf_pages": [
+        1,
+        57
+      ],
+      "pages": 325,
+      "extracted_text": "docs/utility_sources/xcel_mn/dsm2025-selected.txt",
+      "extracted_text_sha256": "35a24c18cb7250f360c5e9f954811d59883b0159f9683df05043f8db15e20dc2",
+      "note": "Retrospective CURRENT factor only; future proposed factors not adopted as prices"
+    },
+    {
+      "label": "miso_lrz1",
+      "url": "https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
+      "sha256": "400d8949a7e34832aa85f031fa0d206c0fe00048a76acf05744454fcb768c006",
+      "selected_pdf_pages": [
+        41
+      ],
+      "pages": 79,
+      "extracted_text": "docs/utility_sources/xcel_mn/miso-lrz1-selected.txt",
+      "extracted_text_sha256": "4c4701bdecdf68732da3fc9195a70a8902553b46db94e46f315226f91ca7f04e",
+      "note": "NSP named in LRZ1; not a retail territory, transmission price zone or wholesale node"
+    },
+    {
+      "label": "stur2025-notice",
+      "url": "https://efiling.web.commerce.state.mn.us/documents/%7B30205F97-0000-C619-8AE9-075F3CEC6B70%7D/download?contentSequence=0&rowIndex=5",
+      "sha256": "b509def147aecdd0b65922d3fd0e675c4719b718eb979dfa0c3889a3e870b203",
+      "bytes": 737797,
+      "selected_pdf_pages": [
+        1,
+        5,
+        6
+      ],
+      "pages": 12,
+      "extracted_text": "docs/utility_sources/xcel_mn/stur2025-notice-selected.txt",
+      "extracted_text_sha256": "b790e282c15fc1971336215f64423abafa05c5e47d55c22175debecb98263ec9",
+      "note": "Clean filed customer notice supplies exact June2025\u2013May2026 factors and published600/800kWh examples. PUC July1,2025 order accepts sales true-up and MISO PRA true-up; do not add that capacity cost a second time."
+    },
+    {
+      "label": "stur2025-order",
+      "url": "https://efiling.web.commerce.state.mn.us/documents/%7B0082C697-0000-C912-BA22-B35FA5868587%7D/download?contentSequence=0&rowIndex=1",
+      "evidence_kind": "browser_pdf_screenshot",
+      "original_pdf_sha256": null,
+      "evidence_file": "docs/utility_sources/xcel_mn/stur2025-order-approval.png",
+      "evidence_sha256": "ea6ca4f3199ce4001f55bfb4703a41fa8910b518f538a3d9ecdea0cf034586c7",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/xcel_mn/stur2025-order-selected.txt",
+      "extracted_text_sha256": "ea5610ccdea4b65615acb214dd32cc4706a8080150a7678356ca4547e23c7a5d",
+      "note": "Screenshot and visual transcription retained; no claim of a downloaded original-PDF hash."
+    },
+    {
+      "label": "cip2025-revision26",
+      "url": "https://efiling.web.commerce.state.mn.us/documents/%7B40C1C19A-0000-C91E-AE92-1342137088AF%7D/download?contentSequence=0&rowIndex=2",
+      "evidence_kind": "browser_pdf_screenshot",
+      "original_pdf_sha256": null,
+      "evidence_file": "docs/utility_sources/xcel_mn/cip2025-revision26-page6.png",
+      "evidence_sha256": "49d7aa1538a2d5304c725b0ab3dc370e931d55aa5c48857b73565a0649f384eb",
+      "selected_pdf_pages": [
+        6
+      ],
+      "extracted_text": "docs/utility_sources/xcel_mn/cip2025-revision26-selected.txt",
+      "extracted_text_sha256": "cf1ae01789dcd19cc4966b61ac1c779d495044d55fdad141a05489658ff11914",
+      "note": "Screenshot and visual transcription retained; no claim of a downloaded original-PDF hash."
+    }
+  ],
+  "research_gaps": [
+    {
+      "component": "Cycle allocation",
+      "behavior": "Complete calendar cycles only; filed FCC billing-day weighting and TCR bill-render clock retained for future implementation"
+    }
+  ],
+  "verified_complete_rate_coverage": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-09-30"
+    }
+  ]
+}

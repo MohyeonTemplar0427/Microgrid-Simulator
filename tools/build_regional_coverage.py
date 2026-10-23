@@ -31,6 +31,7 @@ UTILITY_DOCS = {
     "consumers_energy": ("docs/Consumers_Energy.md", "docs/utility_sources/consumers/manifest.json", "test/test_consumers.py"),
     "ameren_illinois": ("docs/Ameren_Illinois.md", "docs/utility_sources/ameren_il/manifest.json", "test/test_ameren_il.py"),
     "ameren_missouri": ("docs/Ameren_Missouri.md", "docs/utility_sources/ameren_mo/manifest.json", "test/test_ameren_mo.py"),
+    "xcel_energy_minnesota": ("docs/Xcel_Minnesota.md", "docs/utility_sources/xcel_mn/manifest.json", "test/test_xcel_mn.py"),
     "dte_electric": ("docs/DTE.md", "docs/utility_sources/dte/manifest.json", "test/test_dte.py"),
 }
 DEFAULT_EVIDENCE = (".cache/regional_validation_release_20261015/validation.json",
@@ -184,6 +185,8 @@ def nc_eligibility(root):
 def unit_scope(utility, plan, supply, enabled):
     if not enabled:
         return "No executable-plan acceptance claim; rejection/catalog coverage only"
+    if utility=="xcel_energy_minnesota":
+        return "Independent dated non-demand base/rider/tax benchmarks, ordinary TOD observed holidays/DST and main-form queued-worker reconciliation; no customer-bill or full-year coverage claim"
     if utility.startswith("firstenergy_"):
         return "Independent filed-arithmetic benchmarks, demand/state/date/DST tests and main-form queued-worker reconciliation; no customer-bill calibration claim"
     if utility=="ameren_illinois":

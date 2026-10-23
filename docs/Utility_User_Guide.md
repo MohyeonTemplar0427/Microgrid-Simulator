@@ -134,3 +134,14 @@ uses documented prior May/October/summer imports. First tax-inclusive scope is
 confirmed unincorporated ColeCounty, with approved non-export PV/storage and
 no special charges. Missouri rates and MISO LRZ5 are separate from Illinois
 rates/retail zones and LRZ4. See [Missouri scope and sources](Ameren_Missouri.md).
+
+## Minnesota · Xcel Energy (Northern States Power)
+
+The local candidate supports ordinary overhead residential A01 and Time of Day
+A02, plus metered AC Small General A10 and Time of Day A12. All four plans are
+non-demand billed. The first scope uses confirmed ordinary bundled accounts,
+complete calendar cycles, unincorporated Sherburne County taxable service and
+approved non-export PV/storage. Verified complete-rate coverage is
+January2025–September2026, including full-year2025 and the datedJune2025–May2026
+sales true-up factors. A map or MISO LRZ1 does not establish account eligibility. See
+[Minnesota scope, sources and limitations](Xcel_Minnesota.md).

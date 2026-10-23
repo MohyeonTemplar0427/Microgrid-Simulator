@@ -150,7 +150,7 @@ def test_account_region_central_clock_and_existing_clocks():
     with pytest.raises(ValueError,match="not a price node"):
         account_region({**region,"wholesale_pricing_location":dict(cpnode="LRZ4",node_type="zone",source="invalid zone")},ai.UTILITY)
     for utility in UTILITIES:
-        expected="America/Chicago" if utility in (ai.UTILITY,"ameren_missouri") else "America/New_York"
+        expected="America/Chicago" if utility in (ai.UTILITY,"ameren_missouri","xcel_energy_minnesota") else "America/New_York"
         assert defaults(utility)["timezone"]==expected
     assert capabilities()["utilities"][ai.UTILITY]["timezone"]=="America/Chicago"
 

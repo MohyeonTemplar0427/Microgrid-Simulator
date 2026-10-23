@@ -52,12 +52,14 @@ CONSUMERS_CASES = tuple(("consumers_energy", "residential" if p in ("RSP", "RSH"
 AMEREN_CASES = (("ameren_illinois", "residential", "DS-1"),("ameren_illinois", "commercial", "DS-2"))
 AMEREN_MO_CASES = tuple(("ameren_missouri", "commercial" if p=="2M" else "residential",p)
     for p in ("1M","1M-EMS","1M-SMART-A","1M-SMART-B","1M-OVERNIGHT-A","1M-OVERNIGHT-B","2M"))
+XCEL_MN_CASES = tuple(("xcel_energy_minnesota", "residential" if p in ("A01","A02") else "commercial", p)
+                     for p in ("A01","A02","A10","A12"))
 
 
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -146,6 +148,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start, end = ("2025-01-01", "2025-12-31") if period == "annual" else ("2025-07-01", "2025-07-31")
     if utility=="firstenergy_ohio_edison" and custom is None and period=="monthly":
         start,end="2025-10-01","2025-10-31"
+    if utility=="xcel_energy_minnesota" and custom is None and period=="monthly":
+        start,end="2025-04-01","2025-04-30"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
@@ -250,6 +254,20 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
     for utility in utilities:
         path = folder/utility
         path.mkdir(exist_ok=True)
+        if utility=="xcel_energy_minnesota":
+            for year,start,end in ((2025,"2025-01-01","2025-12-31"),(2026,"2026-06-01","2026-09-30")):
+                file=path/f"era5_{year}.json";key=utility+f"_{year}"
+                expected=previous.get("sources",{}).get(key,{}).get("sha256")
+                if expected is not None:
+                    require(file.exists() and digest(file)==expected,"Prepared Minnesota ERA5 bytes changed")
+                request=dict(latitude=SITES[utility][0],longitude=SITES[utility][1],start_date=start,end_date=end)
+                payload=json.loads(file.read_text()) if file.exists() else fetch_era5(**request)
+                expected_dates=dict(start_date=start,end_date=str((pd.Timestamp(end)+pd.DateOffset(days=1)).date()))
+                require(all(payload["request"][k]==v for k,v in {**request,**expected_dates}.items()),"Minnesota weather request mismatch; no year/site substitution")
+                _,provenance=parse_era5(payload["raw_json"],build_interval_index(start,end,data_timezone(utility),15),request["latitude"],request["longitude"])
+                if not file.exists():write_json(file,payload)
+                manifest["sources"][key]=dict(sha256=digest(file),provenance=provenance,retrieved_at=payload["retrieved_at"])
+            continue
         if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri") or utility == "dominion_energy_virginia" and not va_history_only:
             file = path/"era5.json"
             expected = previous.get("sources", {}).get(utility, {}).get("sha256")
@@ -296,7 +314,15 @@ def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
-    if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri"):
+    if utility=="xcel_energy_minnesota":
+        from src.profiles.era5 import parse_era5
+        if request["start_date"][:4]!=request["end_date"][:4]:raise ValueError("Select an exact-year Minnesota weather file.")
+        payload=json.loads((source/f"era5_{request['start_date'][:4]}.json").read_text())
+        lat,lon,_=SITES[utility]
+        require(payload["request"]["models"]=="era5" and payload["request"]["latitude"]==lat and payload["request"]["longitude"]==lon,"Minnesota ERA5 source/site mismatch")
+        parse_era5(payload["raw_json"],build_interval_index(request["start_date"],request["end_date"],request["timezone"],request["timestep_minutes"]),lat,lon)
+        request.update(weather_source="era5",weather_id=None,weather=payload)
+    elif utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri"):
         payload=json.loads((source/"era5.json").read_text())
         from src.profiles.era5 import parse_era5
         lat,lon,_=SITES[utility]

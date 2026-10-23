@@ -1,0 +1,185 @@
+PDF PAGE 25
+Northern States Power Company, a Minnesota corporation  
+Minneapolis, Minnesota 55401  
+MINNESOTA ELECTRIC RATE BOOK – MPUC NO. 2 
+ 
+GENERAL RULES AND REGULATIONS (Continued) Section No. 
+2nd Revised Sheet No. 
+ 
+6 
+10 
+ 
+ 
+ (Continued on Sheet No. 6-11) 
+Date Filed: 11-03-10 By:  Judy M. Poferl  Effective Date: 09-01-12 
+President and CEO of Northern States Power Company, a Minnesota corporation 
+Docket No. E002/GR-10-971  Order Date: 05-14-12 
+ 
+S:\General-Offices-GO-01\PSF\RA\Rates\Current\Mn_elec\Me_6_10_r02.doc  
+2. 4    STANDBY, SUPPLEMENTARY, EMERGENCY, AND INCIDENTAL SERVICES 
+Unless otherwise specifically provided, the company's rate schedules require that the customer’s entire electrical 
+requirements is received from the Company. The Company's service is not available for standby, 
+supplementary, emergency, or incidental service with respect to any other source of power except when 
+contracted for under a rate schedule providing for these services.  
+ 
+A. Definitions  
+1. Standby Service is defined as service available on a firm (scheduled or unscheduled) basis or non-
+firm basis through a permanent connection to supply replacement electric energy and power when 
+the customer's normal source of electric energy supply is not available.  
+ 
+2. Supplementary Service is defined as service continuously available through a permanent connection 
+to supplement or augment directly or indirectly another independent source of power.  
+ 
+3. Emergency Service is defined as service supplied through a temporary connection when the 
+customer's usual source of supply has failed.  
+ 
+4. Incidental Service is defined as service continuously available through a permanent connection to 
+provide power and energy for use by customer where such use is merely incidental to customer's 
+operations and essentially for customer’s convenience; e.g., (without limiting the generality of the 
+foregoing), for voltage or frequency control, for partial lighting of selected or limited areas, or for 
+operation of controls, battery chargers, starting devices, electric clocks, or other equipment requiring 
+relatively small quantities of energy as compared with customer's total energy usage. 
+ 
+B. Parallel Operations  
+If a customer has an independent source of power that will be operated in parallel with the Company's 
+system, such source of power must be operated as provided below. Any customer who operates their 
+facility in non-compliance with these provisions will be subject to discontinuance of service.  
+ 
+1. No customer may connect an i ndependent source of power in parallel with the Company's system 
+without prior written consent of the Company. Any customer desiring to generate in parallel shall 
+execute a contract with the Company that contains terms and provisions regarding metering, billing, 
+technical, and operating parameters for the customer's independent source of power.  
+ 
+2. The interconnection of customer's facilities with the Company's system sha ll not interfere with the 
+quality of the Company's service to any of its other customers.  
+ 
+
+PDF PAGE 26
+Northern States Power Company, a Minnesota corporation  
+Minneapolis, Minnesota 55401  
+MINNESOTA ELECTRIC RATE BOOK – MPUC NO. 2 
+ 
+GENERAL RULES AND REGULATIONS (Continued) Section No. 
+2nd Revised Sheet No. 
+ 
+6 
+11 
+ 
+ 
+ 
+Date Filed: 11-03-10 By:  Judy M. Poferl Effective Date: 09-01-12 
+President and CEO of Northern States Power Company, a Minnesota corporation 
+Docket No. E002/GR-10-971  Order Date: 05-14-12 
+ 
+S:\General-Offices-GO-01\PSF\RA\Rates\Current\Mn_elec\Me_6_11_r02.doc  
+2.4 STANDBY, SUPPLEMENTARY, EMERGENCY, AND INCIDENTAL SERVICES (Continued) 
+ 
+B. Parallel Operations  (Continued) 
+ 
+3. The customer will provide the necessary equi pment as approved by the Company to enable the 
+customer to operate customer’s independent source of power in parallel with Company's system.  
+The customer's independent source of power will be designed so that the interconnection circuit 
+breaker or load-break switch between the Company and the customer will open under the following 
+conditions: 
+a. deenergized Company system, 
+b. sustained line faults on Company's system, and 
+c. faults on customer's system. 
+ 
+A customer shall consult with the Company regarding these minimum requirements, additional 
+protection recommended, proper operation of interconnect circuit breaker or load-break switch, and 
+customer's independent source of power disconnecting device.  
+ 
+4. Since the power factor and the voltage at which the Company's syst em and a customer's system are 
+operated will vary, each party agrees to operate their system at a power factor as near unity as 
+possible in such manner as to absorb their share of the reactive power, and voltage as conducive to 
+the best operating standards.  
+ 
+5. The Company reserves the right to discontinue se rvice if continued parallel operation by the customer 
+results in trouble on the Company's system, such as interruptions, ground faults, radio or telephone 
+interference, surges, or objectionable voltage fluctuations, where such trouble is caused by a 
+customer and the customer fails to remedy the causes thereof within a reasonable time.  
+ 
+ 
+T 
+ 
+ 
+
+PDF PAGE 28
+Northern States Power Company, a Minnesota corporation  
+Minneapolis, Minnesota 55401  
+MINNESOTA ELECTRIC RATE BOOK – MPUC NO. 2 
+ 
+GENERAL RULES AND REGULATIONS (Continued) Section No. 
+8th Revised Sheet No. 
+6 
+14 
+ 
+(Continued on Sheet No. 6-14.1) 
+Date Filed: 03-15-24 By:  Ryan J. Long Effective Date: 10-21-24 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E,G002/M-24-130  Order Date: 10-21-24 
+ 
+  
+3.2 METHOD OF DETERMINING DEMAND FOR BILLING PURPOSES 
+The actual demand in kW is defined as the greatest 15-minute average load during the billing period. For 
+determining the adjusted demand, the actual demand may require application of the average power factor, 
+which is defined as the quotient obtained by dividing the kilowatt-hours used during the month by the square 
+root of the sum of the squares of the kilowatt-hours used and the lagging reactive kilovolt-ampere-hours 
+supplied during the same period. Any leading kilovolt-ampere-hours supplied during the period will not be 
+considered in determining the average power factor. The demand for billing shall be determined as shown in the 
+respective rate schedule. 
+ 
+3.3 READING FREQUENCY; CUSTOMER ACCOMMODATION 
+Meter Reading Standard 
+Please refer to Section 1.9 of the Company’s General Rules and Regulations. 
+ 
+Meter Reading Options 
+For those customers whose meters are inaccessible, and for whom a meter reading appointment during normal 
+business hours would present a hardship due to work or other schedule conflicts, the Company will provide the 
+following options: (1) meter reading appointments during the evening on weekdays or (2) meter reading 
+appointments on a Saturday or Sunday. 
+ 
+3.4 MONTHLY BILLING 
+Bills will normally be rendered monthly and may be paid by mail, by electronic or phone options, or to the 
+Company’s duly authorized agents during regular business hours. A "month", as used for billing purposes, does 
+not mean a calendar month, but means the interval between two consecutive periodic meter consumption data 
+received dates which are, as nearly as practicable, at 30 day intervals. The Company may read certain meters 
+less frequently than once each billing month, except that the Company will read the meter at least once every 
+12 months. If the billing period is longer or shorter than the normal billing period by more than four days, the bill 
+shall be prorated on a daily basis, except for the November, December, January, and February billing periods 
+whereby the bill shall be prorated on a daily basis whenever the billing period is less than 25 days or more than 
+40 days. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C 
+ 
+ 
+ 
+ 

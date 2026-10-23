@@ -1,0 +1,838 @@
+PDF PAGE 1
+Northern States Power Company, a Minnesota corporation  
+Minneapolis, Minnesota 55401   
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2 
+ 
+FUEL CLAUSE RIDER Section No. 
+33rd Revised Sheet No. 
+5 
+91 
+ 
+(Continued on Sheet No. 5-91.1) 
+Date Filed: 04-30-21 By:  Ryan J. Long Effective Date:  05-01-24 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E002/M-01-1479  Order Date:  07-06-21 
+ 
+ 
+FUEL CLAUSE CHARGE 
+There shall be added to or deducted from the monthly bill a Fuel Cost Charge calculated by multiplying the 
+applicable monthly billing kilowatt hours (kWh) by the billed Fuel Adjustment Factor (FAF) per kWh.  The billed 
+FAF is calculated by prorating each calendar month FAF by the number of customer billing days in each 
+calendar month, and rounding to the nearest $0.00001 per kWh.  
+ 
+EXEMPTION 
+For customers participating in Company’s Renewable*Connect and Renewable*Connect Government pilot 
+programs, the Voluntary Renewable*Connect Program Rider (Renewable*Connect Flex) or the Voluntary 
+Renewable*Connect Program Rider (Long Term), the applicable billing kWh subject to the FAF shall be reduced 
+by the elected Voluntary Renewable Adjustment energy blocks.  In the event that a customer’s metered energy 
+use is lower than the subscribed energy blocks, the applicable billing kWh for the FAF for that month is zero.  
+ 
+For customer premises recognized by the Company as not being subject to any of the costs of satisfying the 
+solar energy standard under Minn. Stat. § 216B.1691, subd. 2f (“SES Costs”), the SES Costs reflected in the 
+Fuel Clause Charge assessed to the accounts associated with these premises may be credited to these 
+accounts, and the dollar amount of these credits shall be added back into the Current Period Cost of Energy 
+applicable to the time period when the credit is issued. 
+ 
+FUEL ADJUSTMENT FACTOR (FAF) 
+A separate FAF will be determined for each service category defined by customer class and time-of-day (TOD) 
+period within the Commercial and Industrial – Demand class.  The FAF for each service category is the sum of 
+the Current Period Cost of Energy multiplied by the applicable FAF Ratio, and the applicable Energy Cost True-
+up Factor.  The FAF Ratio is the Class Cost Ratio multiplied by the corresponding TOD Ratio: 
+ 
+Service Category Class Cost 
+Ratio 
+TOD Ratio FAF Ratio 
+  Residential 1.0192 1.0000 1.0192 
+  C&I Non-Demand 1.0183 1.0000 1.0183 
+  C&I Demand 0.9917 1.0114 1.0030 
+  C&I Demand TOD On-Peak 0.9917 1.2853 1.2746 
+  C&I Demand TOD Off-Peak 0.9917 0.8068 0.8001 
+  Outdoor Lighting 0.7659 1.0000 0.7659 
+C&I Demand TOU Pilot Peak 0.9917 1.3341 1.3230 
+C&I Demand TOU Pilot Base 0.9917 1.0754 1.0665 
+C&I Demand TOU Pilot Off-Peak 0.9917 0.5283 0.5239 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+T 
+T 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 2
+Northern States Power Company, a Minnesota corporation  
+Minneapolis, Minnesota 55401   
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2 
+ 
+FUEL CLAUSE RIDER (Continued) Section No. 
+39th Revised Sheet No. 
+5 
+91.1 
+ 
+(Continued on Sheet No. 5-91.2) 
+Date Filed: 07-10-26 By:  Bria E. Shea Effective Date:       10-01-26 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E002/AA-22-179  Order Date: 06-12-19 
+ 
+FUEL COST FACTORS (2026) 
+      Commercial & Industrial 
+ 
+ 
+Month 
+ 
+ 
+Residential 
+  
+Outdoor  
+Lighting  
+Non-Demand 
+   Demand 
+Non-TOD On-Peak Off-Peak 
+January $0.01568 $0.01566 $0.01542 $0.01959 $0.01231 $0.01179 
+February $0.01575 $0.01574 $0.01551 $0.01971 $0.01237 $0.01184 
+March $0.01681 $0.01679 $0.01654 $0.02102 $0.01319 $0.01263 
+April $0.02499 $0.02497 $0.02460 $0.03124 $0.01963 $0.01880 
+May $0.02695 $0.02693 $0.02653 $0.03369 $0.02116 $0.02027 
+June $0.02973 $0.02971 $0.02926 $0.03719 $0.02334 $0.02234 
+July $0.02927 $0.02924 $0.02880 $0.03661 $0.02296 $0.02197 
+August $0.02780 $0.02778 $0.02735 $0.03477 $0.02181 $0.02087 
+September $0.02448 $0.02445 $0.02410 $0.03061 $0.01922 $0.01840 
+October  -$0.00179 -$0.00179 -$0.00175 -$0.00223 -$0.00140 -$0.00134  
+November $0.01926 $0.01925 $0.01895 $0.02408 $0.01512 $0.01448 
+December $0.02162 $0.02159 $0.02128 $0.02703 $0.01697 $0.01624 
+ 
+ 
+ 
+      Month 
+Commercial & Industrial General TOU Service Pilot Program 
+ 
+Peak Base Off-Peak 
+January $0.02034 $0.01640 $0.00807 
+February $0.02045 $0.01649 $0.00810 
+March $0.02181 $0.01759 $0.00864 
+April $0.03242 $0.02616 $0.01287 
+May $0.03498 $0.02821 $0.01387 
+June $0.03860 $0.03111 $0.01528 
+July $0.03800 $0.03063 $0.01502 
+August $0.03609 $0.02909 $0.01427 
+September $0.03178 $0.02562 $0.01259 
+October  -$0.00232 -$0.00187 -$0.00091 
+November $0.02499 $0.02015 $0.00991 
+December $0.02805 $0.02261 $0.01112 
+ 
+CURRENT PERIOD COST OF ENERGY  
+The Current Period Cost of Energy per kWh is defined as the qualifying costs, forecasted to be incurred during 
+the calendar month, divided by the kWh sales forecasted for the same month.  Qualifying kWh sales are all kWh 
+sales excluding intersystem, Renewable*Connect, Renewable*Connect Government, Voluntary 
+Renewable*Connect Program Rider (Renewable*Connect Flex), and Voluntary Renewable*Connect Program 
+Rider (Long Term) kWh sales.  Qualifying costs are the sum of the following:  
+ 
+ 
+ 
+ 
+ 
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+R 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+    
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+R 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 5
+Northern States Power Company, a Minnesota corporation  
+Minneapolis, Minnesota 55401   
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2 
+ 
+FUEL CLAUSE RIDER (Continued) Section No. 
+2nd Revised Sheet No. 
+5 
+91.4 
+ 
+ 
+Date Filed: 07-30-25 By:  Bria E. Shea Effective Date:  01-01-26 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No.  E002/AA-25-63  Order Date: 11-13-25 
+ 
+EXCLUSION OF COMMUNITY SOLAR GARDEN COSTS 
+To comply with Minn. Stat. § 216B.1641, Subd. 11, the fuel adjustment charge to residential customers who 
+have received bill payment assistance or income-qualified energy assistance programs within the proceeding 
+twelve-month timeframe and who also do not subscribe to a community solar garden shall exclude the “net cost 
+of community solar garden generation”. To achieve this exclusion, these customers shall receive a bill credit of 
+$0.00590 per kWh of billed usage that removes “net cost of community solar garden generation”.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+R 
+ 
+ 
+ 
+ 
+
+PDF PAGE 6
+ 
+Northern States Power Company, a Minnesota corporation 
+Minneapolis, Minnesota 55401  
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2 
+ 
+CONSERVATION IMPROVEMENT PROGRAM 
+ADJUSTMENT RIDER 
+Section No. 
+27th Revised Sheet No. 
+5 
+92 
+ 
+(Continued on Sheet No. 5-92.1) 
+Date Filed: 07-13-26 By: Bria E. Shea Effective Date:  08-01-26 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E002/M-25-289  Order Date:  06-12-26 
+ 
+  
+APPLICABILITY 
+Applicable to bills for electric service provided under the Company’s retail rate schedules.  Exemptions are as 
+follows: 
+ 
+“Large Customer Facility” customers that have been exempted from the Company’s Conservation Improvement 
+Program charges pursuant to Minn. Stat. 216B.241 subd. 1a (a) shall receive a monthly exemption from 
+conservation improvement program charges pursuant to Minn. Stat. 216B.16, subd. 6b Energy Conservation 
+Improvement.  Such monthly exemption will be effective beginning January 1 of the year following the grant of 
+exemption.  Upon exemption from conservation program charges, the “Large Customer Facility” customers can 
+no longer participate in the Company’s Energy Conservation Improvement Program. 
+ 
+“Qualified large-scale data center” customers that pay the required fee under Minn. Stat. 216B.72 are exempt 
+pursuant to Minn. Stat. 216B.241 subd. 1a (a) from the requirement to contribute to the Company’s 
+Conservation Improvement Program. Upon exemption from conservation program charges, the “qualified large-
+scale data center” customers can no longer participate in the Company’s Energy Conservation Improvement 
+Program. 
+ 
+RIDER 
+There shall be included on each non-exempt customer’s monthly bill a Conservation Improvement Program 
+(CIP) Adjustment, which shall be calculated by multiplying the monthly applicable billing kilowatt hours (kWh) by 
+the CIP Adjustment Factor. 
+ 
+DETERMINATION OF CONSERVATION IMPROVEMENT PROGRAM ADJUSTMENT FACTOR 
+The CIP Adjustment Factor shall be calculated for each customer class by dividing the Recoverable 
+Conservation Improvement Program Expense by the Projected Retail Sales for a designated recovery period. 
+The factor may be adjusted annually with approval of the Minnesota Public Utilities Commission.  The CIP 
+Adjustment Factor for all rate schedules is: 
+ 
+All Classes $0.001397 per kWh  
+ 
+Recoverable Conservation Improvement Program Expense shall be the CIP expense not recovered through 
+base rates as determined from the CIP Tracker account balance for a designated period. All costs appropriately 
+charged to the CIP Tracker Account shall be eligible for recovery through this Rider.  All revenues received from 
+the CIP Adjustment Factor shall be credited to the CIP Tracker Account. 
+ 
+Projected Retail Sales shall be the estimated kilowatt-hour sales to all non-exempt customers for the designated 
+recovery period. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C 
+ 
+ 
+ 
+ 
+ 
+N 
+ 
+ 
+ 
+N 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 23
+Northern States Power Company, a Minnesota corporation 
+Minneapolis, Minnesota 55401 
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2  
+ 
+INTERIM RATE SURCHARGE RIDER Section No. 
+15th Revised Sheet No. 
+5 
+94 
+ 
+Date Filed: 11-01-24 By:  Ryan J. Long Effective Date:  01-01-25 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E002/GR-24-320  Order Date:  12-30-24 
+ 
+ 
+AVAILABILITY 
+The Interim Rate Surcharge applies to: 
+1. Customer, Energy, Demand, and Minimum Charges (Excluding Customer Charges for EVAAH Programs) 
+2. Energy Charge Credits 
+3. Limited Energy Surcharges 
+4. Controllable Demand Credits 
+5. Voltage Discounts 
+6. Fixed Charges for Low Wattage Unmetered Devices 
+7. Lighting Rates per Luminaire and Lighting Rates per Unit 
+8. Siren Service Rate per Horsepower 
+9. Residential Controlled Air Conditioning and Water Heating Discounts 
+10. Commercial and Industrial Controlled Air Conditioning Credits 
+11. Off Season Load Rider 
+12. Standby Service Rider 
+13. Supplemental Generation Service Rider 
+14. Tier 1 Energy Controlled Service Rider 
+15. Area Development Rider 
+16. Competitive Response Rider 
+17. Tier 1 Peak Controlled Short Notice Rider 
+18. Business Incentive and Sustainability Rider 
+19. Photovoltaic Demand Credit Rider 
+ 
+The Interim Rate Surcharge does not apply to: 
+1. Fuel Clause Rider 
+2. Conservation Improvement Program Adjustment Rider 
+3. Low Income Discounts (Energy and Fuel Cost Charges) 
+4. Low Income Program Surcharges 
+5. City Requested Facilities Surcharge Rider 
+6. Voluntary Renewable*Connect Program Riders 
+7. WAPA Bill Credit Program Rider 
+8. Mercury Cost Recovery Rider 
+9. Environmental Improvement Rider 
+10. State Energy Policy Rate Rider 
+11. Renewable Development Fund Rider 
+12. Transmission Cost Recovery Rider 
+13. Renewable Energy Standard Rider 
+14. Sales True-Up Rider 
+15. Manual Meter Reading Service Rider 
+16. Net Energy Billing Service 
+17. Late Payment Charge 
+18. Customer Charges for EVAAH Programs 
+ 
+This temporary Interim Rate Surcharge Rider will expire when final rates become effective. 
+ 
+RATE 
+Each rate schedule that the Interim Rate Surcharge applies to contains the following text: 
+ 
+INTERIM RATE ADJUSTMENT 
+A 7.14% Interim Rate Surcharge will be applied to rate components specified in the “Interim Rate Surcharge Rider” to 
+service provided beginning January 1, 2025. 
+ 
+D 
+N 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+N 
+
+PDF PAGE 24
+Northern States Power Company, a Minnesota corporation 
+Minneapolis, Minnesota 55401 
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2 
+ 
+AFFORDABILITY CREDIT RIDER Section No. 
+12th Revised Sheet No. 
+5 
+95 
+ 
+(Continued on Sheet No. 5-96) 
+Date Filed: 12-01-25 By:  Bria E. Shea Effective Date: 01-09-26 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E002/M-04-1956 & E002/M-10-854 & 
+E002/M-23-476 
+ Order Date: 12-29-25 
+ 
+PROGRAMS 
+ 
+Affordability Credit Program 
+Eligible customers receive a $15 discount in each monthly billing period. Eligibility is determined by receipt of energy 
+assistance during the current Low Income Home Energy Assistance Program (LIHEAP) season and the customer is 
+62 years or older and/or disabled. The Affordability Credit Program is retroactive to October 1 and ends September 
+30 of each year.  
+ 
+PowerON Program   
+Eligibility is determined by customer receipt of energy assistance during the current (LIHEAP) season and agreement 
+to a monthly payment plan that is based on no more than 3% off their annual income. 
+ 
+Medical Affordability Program (MAP) 
+Eligibility is determined by the customer’s valid medical form on file with the Company, an income no greater 
+than 60% of the state median and agree to a monthly payment plan based on a percentage of their income. 
+Program Parameters 
+• Affordability Credit: Participating customers will receive an affordability credit limiting their bill to 3% of 
+household annual income. 
+• Arrearage Credit: Participating customers will receive an arrearage credit. Receipt of the arrearage 
+forgiveness credit will require a customer copayment that does not exceed 3% of the household’s annual 
+income. The arrearage credit is designed to eliminate customer arrears over a period of 12 to 24 months. 
+• Customer Payment Requirements: Participating customers that miss two consecutive monthly payments will 
+be removed from the Program and subject to regular collection practices, including service disconnection. 
+ 
+Low Usage Affordability Credit (LUAC) Program 
+Eligible customers will receive a 35% discount on the base energy rate portion of their bill each month and paid 
+in the following month. Eligibility will be determined on a customer’s annual average monthly energy usage of 
+300 kWh or less and either a receipt of energy assistance during the current LIHEAP season or a valid program 
+self-declaration of income form, as provided by the customer to the Company. Customers must have received a 
+minimum of three billing statements. 
+ 
+TERMS AND CONDITIONS OF SERVICE 
+1. The company will review current billing information, approved LIHEAP benefits and household income 
+to make payment arrangements with the customer.  A mutually agreed to payment plan will be offered 
+to the customer and a payment schedule provided.   
+ 
+2. Customer must maintain an active account registered under customer’s name with the Company to be 
+eligible for this discount Rider. 
+ 
+3. Customers receiving assistance from LIHEAP with electric service through one meter for domestic and 
+non-domestic purposes jointly may be eligible for this Discount Rider subject to Company’s verification 
+and approval.  The Company shall determine the kWh use that is for domestic purposes.  This 
+Discount Rider only applies to kWh use for domestic purposes. 
+ 
+ 
+T 
+ 
+ 
+T 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+T 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 25
+Northern States Power Company, a Minnesota corporation 
+Minneapolis, Minnesota 55401 
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2 
+ 
+AFFORDABILITY CREDIT RIDER  
+(Continued) 
+Section No. 
+16th Revised Sheet No. 
+5 
+96 
+ 
+ 
+Date Filed: 12-01-25 By: Bria E. Shea Effective Date: 01-09-26 
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E002/M-04-1956 & E002/M-10-854 & 
+E002/M-23-476 
+ Order Date: 12-29-25 
+ 
+ 
+TERMS AND CONDITIONS OF SERVICE (Continued) 
+4. Qualified customers are only eligible to receive an energy discount under this Rider at one residential location at 
+any one time and the discount only applies to a qualified customer’s permanent primary residence.  This Rider 
+will not be available when, in the opinion of the Company, the customer’s accommodation or occupancy is of a 
+temporary nature. 
+ 
+5. The discount shall be prospective and may not be applicable to past due bills or non-electric services. 
+ 
+6. An annual application and eligibility declaration is required for each request for service under this Rider. 
+Without declaration of continuing eligibility, the discount will end. 
+ 
+7. It is the customer’s responsibility to notify the Company if there is a change of address or eligibility status. 
+ 
+8. Discounts will be credited to the eligible customer bills one billing month after Company’s receipt of 
+notification of LIHEAP certification. The Affordability Credit Program under this Rider will be retroactive to 
+the October billing month during that same LIHEAP fiscal year.   
+ 
+9. Refusal or failure of a customer or agencies to provide documentation of eligibility acceptable to the 
+Company may result in removal from this Rider. 
+ 
+10. Customers may be rebilled for periods of ineligibility under the applicable rate schedule. 
+ 
+11. This Rider shall meet the conditions of Minnesota Statutes, Chapter 216B.16, Subd. 14 on low income 
+discount rates. 
+ 
+PROGRAM SURCHARGE 
+Rider program costs shall be recovered in the following per month amounts, with the total surcharge as a 
+separate line item on customer billing statements: 
+ 
+                    
+Service Category Base LUAC PowerON Medical Affordability  Total 
+Residential $0.65 $0.47 $0.82 $0.18 $2.12 
+C&I Non-Demand $0.65 $0.47 $0.82 $0.18 $2.12 
+C&I Demand $2.80 $2.04 $3.56 $0.80 $9.20 
+   
+ 
+Xcel Energy customers who receive LIHEAP assistance in the current LIHEAP year (October 1–September 30) 
+and Lighting class service customers are exempt from paying the program surcharge.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+T 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+T 
+ 
+ 
+ 
+
+PDF PAGE 51
+Northern States Power Company, a Minnesota corporation  
+Minneapolis, Minnesota  55401 
+MINNESOTA ELECTRIC RATE BOOK - MPUC NO. 2   
+ 
+SALES TRUE-UP RIDER 
+ 
+Section No. 
+3rd Revised Sheet No. 
+5 
+118.1 
+ 
+ 
+Date Filed: 04-01-26 By:  Bria E. Shea Effective Date:  06-01-26  
+President, Northern States Power Company, a Minnesota corporation 
+Docket No. E002/M-26-56  Order Date:     07-17-23     
+ 
+  
+APPLICABILITY 
+Applicable to all retail electric services except protective and street lighting services.  
+ 
+RIDER 
+Customer bills will include a surcharge or credit determined by applying the applicable Sales True-Up Rider 
+(STUR) factor to the customer’s billed kWh electric consumption.  
+ 
+ANNUAL STUR FACTORS    
+STUR factors for each applicable class will be determined and updated annually based on revenue differences for 
+each calendar year that result from differences between approved and actual sales and customers.  Updated factors 
+for each calendar year, including a true-up for prior period, will apply for twelve months beginning April 1 following the 
+applicable year. 
+ 
+STUR FACTORS 
+Residential $0.00041 per kWh 
+  (Rate Codes A00, A01, A02, A03, A04, A05, A06, A08, A72, A74, A80, A81, A82, A83) 
+Non-Residential Non-Demand Billed $0.00034 per kWh 
+  (Rate Codes A05, A06, A09, A10, A11, A12, A13, A16, A18, A22, A91, A92, A93, A94)   
+ 
+Non-Residential Demand $0.00038 per kWh 
+  (Rate Codes A14, A15, A17, A19, A23, A24, A27, A29, A87, A88, A89, A90, Interdepartmental) 
+ 
+Public Authority ($0.00090) per kWh 
+  (Rate Codes A40, A41)                                                                                           
+ 
+Metered Lighting $0.00597 per kWh 
+  (Rate Codes A34)                                                                                                     
+ 
+DETERMINATION OF ANNUAL STUR FACTORS 
+Annual STUR factors for each STUR category will be the applicable STUR Deferral divided by forecast sales, where: 
+  STUR Deferral = Calendar year difference between approved and actual base rate revenue 
+  Base rate revenue excludes fuel costs and cost recovery riders  
+  Approved base revenue is base rate revenue by STUR category approved by the Commission in the Company’s 
+    most recent concluded general rate proceeding.  
+  Forecast sales will be the most current sales forecast by STUR category for the period of April 1 through March 31 
+    following each calendar year. 
+  The Annual STUR factor to collect under-recovered revenues shall be capped at +3% of the total customer group 
+    base revenue for each of the rate classes. The STUR factor to return over-recovered revenues shall not be 
+    capped. 
+ 
+TERM 
+The Company will begin calculating Monthly Sales True-Up Rider Deferrals on January 1, 2023 and will file proposed 
+Annual Sales True-Up Rider factors with the Commission annually on April 1 beginning April 1, 2024.  The proposed 
+rate will become effective on June 1 each year and remain in effect for the 12 months.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+R 
+ 
+ 
+R 
+ 
+ 
+R 
+ 
+ 
+R 
+ 
+ 
+R 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
