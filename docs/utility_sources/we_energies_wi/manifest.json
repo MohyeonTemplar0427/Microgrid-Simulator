@@ -1,0 +1,240 @@
+{
+  "retrieved_date": "2026-10-24",
+  "scope": "Wisconsin Electric Rg1/Rg2/Cg1/Cg6 ordinary bundled secondary service, complete calendar cycles, CGS-NP non-export and explicit unincorporated Waukesha jurisdiction",
+  "sources": [
+    {
+      "label": "brochure2025",
+      "url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/2025-rates-brochures.pdf",
+      "final_url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/2025-rates-brochures.pdf",
+      "sha256": "9c551cf2c02bd7f732dd652e625659d71ca6b4910f078096bb708ac7ddf883b6",
+      "bytes": 1125133,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/we_energies_wi/brochure2025-selected.txt",
+      "extracted_text_sha256": "89760ddbb295c8364ee605f3072bc6784f82a198737f7f97379f83ea74bcad77"
+    },
+    {
+      "label": "2025jan",
+      "url": "https://www.we-energies.com/olb/25/2025-01-we-electric-rates.pdf",
+      "final_url": "https://www.we-energies.com/olb/25/2025-01-we-electric-rates.pdf",
+      "sha256": "1a9e39941ca391bbe9133df39dac1ee560bc5251663e4551c8b736519056e4dc",
+      "bytes": 281444,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extracted_text": "docs/utility_sources/we_energies_wi/2025jan-selected.txt",
+      "extracted_text_sha256": "1b0fc30be154d00d6f5dc0c1edf8bcc5c43b9e98581e55961aadc2564273798e"
+    },
+    {
+      "label": "brochure2026",
+      "url": "https://www.we-energies.com/olb/26/2026-01-we-electric-rates.pdf",
+      "final_url": "https://www.we-energies.com/olb/26/2026-01-we-electric-rates.pdf",
+      "sha256": "644c506e923693cbe8b4e0ff8af15ef99d773ee72beb89e9ed57c3f3e13ad35e",
+      "bytes": 281046,
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extracted_text": "docs/utility_sources/we_energies_wi/brochure2026-selected.txt",
+      "extracted_text_sha256": "6b841e54e16726e82dad3de4fc41c7657c73684bfe3ba95c4f65d481c6d738f1"
+    },
+    {
+      "label": "book2026",
+      "url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf",
+      "final_url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf",
+      "sha256": "0efe7c91da2fe2d30ae717ab3c900409f1421e93a7f8b77196dff69f5719dfe0",
+      "bytes": 2068353,
+      "selected_pdf_pages": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        33,
+        34,
+        35,
+        43,
+        44,
+        45,
+        74,
+        75,
+        76,
+        77,
+        78,
+        261,
+        262
+      ],
+      "extracted_text": "docs/utility_sources/we_energies_wi/book2026-selected.txt",
+      "extracted_text_sha256": "27d8670f8610c8f5d761aa7b31d62e201d6645bf4632c7f28788c00639abfab3"
+    },
+    {
+      "label": "wi-low-income",
+      "url": "https://www.we-energies.com/payment-bill/wi-low-income",
+      "final_url": "https://www.we-energies.com/payment-bill/wi-low-income",
+      "sha256": "ab621fe12dae5fafb5a3f3047c85a6a818bba38d36ea38a409f735a1bba638c6",
+      "bytes": 31174,
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/wi-low-income-selected.txt",
+      "extracted_text_sha256": "83e887c4ff83cf67a51cfa21a23c72e854965b1471398c1521a2567141a05c33"
+    },
+    {
+      "label": "reading-bill",
+      "url": "https://www.we-energies.com/payment-bill/reading-bill",
+      "final_url": "https://www.we-energies.com/payment-bill/reading-bill",
+      "sha256": "84255c47e717493a19c49d7dd22659086011651386b60e3980be29a4d67ea4a9",
+      "bytes": 43188,
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/reading-bill-selected.txt",
+      "extracted_text_sha256": "4828c8b1fe06a1be60dbfac04dbd1b085fb88c9dcfe61fc63aca7d36da11576f"
+    },
+    {
+      "label": "law995",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/995/20",
+      "final_url": "https://docs.legis.wisconsin.gov/statutes/statutes/995/20",
+      "sha256": "e96984a1d14317c39359b5840e5c6fb447416f013062e743932d8b21c22796d3",
+      "bytes": 90473,
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/law995-selected.txt",
+      "extracted_text_sha256": "6543a2e84bea78d925e03212c16b7cb23b313fee645d952bcc132954c1589f87"
+    },
+    {
+      "label": "tax1157",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/tax/11/vii/57",
+      "final_url": "https://docs.legis.wisconsin.gov/code/admin_code/tax/11/vii/57",
+      "sha256": "e98e3d69cef06daa88ceb8aa64f7e77c12021c63aa5c8b62159923f93783405c",
+      "bytes": 91621,
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/tax1157-selected.txt",
+      "extracted_text_sha256": "0d86e56b75871affaaa6218b0daa1fdc758642c377d3849fdd5a3ed4b0d53891"
+    },
+    {
+      "label": "dor-taxrates",
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx",
+      "final_url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx",
+      "sha256": "6f655d7048ccfbd0a5ddaaea7ad0fafcb0dd8c50252749cef8382e51f5c59817",
+      "bytes": 82913,
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/dor-taxrates-selected.txt",
+      "extracted_text_sha256": "f5a53468ec581c706686e49bb0615a3ca284201d032f8175b3714ce93b2ce74d"
+    },
+    {
+      "label": "fuel2025refund",
+      "url": "https://news.we-energies.com/refunds-expected-for-we-energies-electric-customers-from-fuel-cost-adjustment/",
+      "final_url": "https://news.we-energies.com/refunds-expected-for-we-energies-electric-customers-from-fuel-cost-adjustment/",
+      "sha256": "10f3ea55167255453a6e753e8fd3bfdeb6c3063e520c3dcbca16cf94daeaa883",
+      "bytes": 32048,
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/fuel2025refund-selected.txt",
+      "extracted_text_sha256": "c44b170b9c4f37bf64f57af80f33fb011c74bca04bf8a42f9740c8fc87894414"
+    },
+    {
+      "label": "ecc2025-june-certificate",
+      "url": "https://s22.q4cdn.com/994559668/files/doc_downloads/2025/June-2025-Monthly-Servicers-Certificate.pdf",
+      "sha256": null,
+      "retrieval_method": "Public primary document search-index text; original bytes inaccessible",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/ecc2025-june-certificate-selected.txt",
+      "extracted_text_sha256": "88f44ed2b69642906f5fafea1bc2910e8e3b3649cf1f8cc5d242846d1fe3f1e1"
+    },
+    {
+      "label": "ecc2025-may-certificate",
+      "url": "https://s22.q4cdn.com/994559668/files/doc_downloads/2025/07/May-2025-Monthly-Servicers-Certificate.pdf",
+      "sha256": null,
+      "retrieval_method": "Public primary document search-index text; original bytes inaccessible",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/ecc2025-may-certificate-selected.txt",
+      "extracted_text_sha256": "9091b6aa514f7815dce11fc03e69a2b0468b42aff68fbcf15b51f8dc21b340f9"
+    },
+    {
+      "label": "ecc2026-june-index",
+      "url": "https://www.we-energies.com/pdfs/etariffs/wisconsin/elecrateswi.pdf",
+      "sha256": null,
+      "retrieval_method": "Public primary document search-index text; original bytes inaccessible",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/ecc2026-june-index-selected.txt",
+      "extracted_text_sha256": "f6e08a9b1a5b5d96936f441652386949749f540e37a1e123739fb872821cb5c9"
+    },
+    {
+      "label": "ecc-adjustment-mechanism",
+      "url": "https://www.sec.gov/Archives/edgar/data/1840327/000110465921062220/tm213205-13_sf1a.htm",
+      "sha256": null,
+      "retrieval_method": "Public primary document search-index text; original bytes inaccessible",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/we_energies_wi/ecc-adjustment-mechanism-selected.txt",
+      "extracted_text_sha256": "035437bec46f03fd6b9ce19279e2ab3416ace9816b1aa435a5839ea34ace416a"
+    },
+    {
+      "label": "sample-bill",
+      "url": "https://www.we-energies.com/payment-bill/pdf/we-energies-sample-bill.pdf",
+      "final_url": "https://www.we-energies.com/payment-bill/pdf/we-energies-sample-bill.pdf",
+      "sha256": "88c28f4ea7f0aae894a7e19c222da24f5f031f08a88a8de59f62140e24df4f33",
+      "bytes": 272414,
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/we_energies_wi/sample-bill-selected.txt",
+      "extracted_text_sha256": "958d71a8202342ef75d2635f29ade71b02fcea1db41d5ac58b1a6b3abd1eea73"
+    }
+  ],
+  "coverage_gap": [
+    {
+      "start": "2025-07-01",
+      "end": "2025-12-31",
+      "component": "environmental_control",
+      "reason": "June2025monthlycertificate does not establish latermonths. No historicalactualfactor/effective-datefiling retrieved; do not infer from normaltrueupcalendar or January2026brochure."
+    }
+  ],
+  "research_access_notes": [
+    "Issuer q4cdn certificate downloads returnedHTTP451. May/June2025 and revision22 June2026 tariff text readable through public search index; no original-byte hashes claimed for those cached extracts.",
+    "Current ratebook includes future October2026 fuel refund and December2026 ECC. Their rates are retained as evidence only, and cannot extend executable coverage."
+  ],
+  "coverage": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-06-30"
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    }
+  ],
+  "validation_limitations": [
+    "Default verified mode rejects full-year2025. Explicit provisional_2025 mode plus boolean acceptance permits July–December2025 ECC proxies; full-year outputs and savings remain provisional estimates.",
+    "Samplebillcomponentbenchmarkdoesnotenabletheshifted29daycycle.",
+    "Calendarcyclebilldateassumedfinalserviceday;partial/shifted/crossingcyclesunsupported."
+  ],
+  "historical_2025_followup": {
+    "research_date": "2026-10-24",
+    "rate_evidence_added": false,
+    "production_coverage_unchanged": true,
+    "report": "docs/utility_sources/we_energies_wi/2025-gap-retrieval-status.md",
+    "report_sha256": "4b821a543ce7e1f7a6ff19c60d08312fecdc2695ce0798c4c96698baffeba791",
+    "archive_index": "docs/utility_sources/we_energies_wi/2025-archive-cdx-index.json",
+    "archive_index_sha256": "c115f66c9249a084e2da452f705123ce1aa606066b983a0e7f193a9a420a8ac6",
+    "archive_index_url": "https://web.archive.org/cdx/search/cdx?url=www.we-energies.com%2Fpdfs%2Fetariffs%2Fwisconsin%2Felecrateswi.pdf&output=json&filter=statuscode:200&from=2025&to=2026&collapse=timestamp:6",
+    "limitations": "Archived PDF replay blocked429 withoutRetry-After; indexmetadataonly, no rate/issuedate/effectivedatecontent verified. Issuercertificates451, PSCportal403. July–December2025ECCgapstillrequiresdocumentcontents."
+  },
+  "provisional_model": {
+    "id": "we_energies_wi_2025_provisional_v1",
+    "coverage": [
+      {
+        "start": "2025-07-01",
+        "end": "2025-12-31"
+      }
+    ],
+    "assumptions_file": "docs/utility_sources/we_energies_wi/2025-provisional-assumptions.json",
+    "assumptions_sha256": "726cfe3d071779b6aab93d2b0a3a216dd0f7d688158fd720fed1e647a455686c",
+    "verified_coverage_extended": false,
+    "disclosure": "June2025 class ECC factors are explicitly carried forward as study assumptions. Existing verified prices/rules and September refund remain intact. Default rejection is preserved; no silent fallback."
+  }
+}

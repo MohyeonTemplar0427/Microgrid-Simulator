@@ -839,16 +839,25 @@ class Application:
     def regional_weather(self, request, owner_id=None):
         """Explicit local ERA5 retrieval with owner-scoped, engine-scoped caching."""
         from .contract import number
+        from ..billing.regional import UTILITIES
         from ..profiles.era5 import fetch_era5, parse_era5
         from ..timeseries import build_interval_index
-        if not isinstance(request,dict) or set(request)!={"latitude","longitude","start_date","end_date"}:
-            raise ValueError("Supply ERA5 site coordinates and exact service dates.")
+        legacy_fields={"latitude","longitude","start_date","end_date"}
+        if not isinstance(request,dict) or set(request) not in (legacy_fields,legacy_fields|{"timezone"}):
+            raise ValueError("Supply ERA5 site coordinates, exact service dates and the regional timezone.")
+        # Keep legacy four-field requests/cache keys readable. New browser
+        # requests explicitly carry the utility's clock and get distinct keys.
+        # A clock validates coverage only; it never establishes service territory.
+        local_timezone=request.get("timezone","America/New_York")
+        supported_clocks={v.get("timezone","America/New_York") for v in UTILITIES.values()}
+        if not isinstance(local_timezone,str) or local_timezone not in supported_clocks:
+            raise ValueError("Select a configured regional utility timezone for ERA5 validation.")
         number(request["latitude"],"Latitude",-90,90);number(request["longitude"],"Longitude",-180,180)
         try:
             days=(datetime.fromisoformat(request["end_date"])-datetime.fromisoformat(request["start_date"])).days+1
             if not 1<=days<=366 or any(len(request[k])!=10 for k in ("start_date","end_date")):
                 raise ValueError("Invalid weather range.")
-            grid=build_interval_index(request["start_date"],request["end_date"],"America/New_York",15)
+            grid=build_interval_index(request["start_date"],request["end_date"],local_timezone,15)
         except (TypeError,ValueError) as exc:
             raise ValueError("ERA5 candidate retrieval requires 1–366 whole local service days.") from exc
         digest=hashlib.sha256(json.dumps([self.engine["id"],"regional_era5",request,owner_id],sort_keys=True).encode()).hexdigest()
@@ -862,7 +871,7 @@ class Application:
                 self.store.grant("weather",digest,owner_id)
                 return {**data,"cached":True}
             self.store.require_weather_storage(owner_id,digest)
-            payload=fetch_era5(request["start_date"],request["end_date"],request["latitude"],request["longitude"])
+            payload=fetch_era5(request["start_date"],request["end_date"],request["latitude"],request["longitude"],local_timezone=local_timezone)
             _,provenance=parse_era5(payload["raw_json"],grid,request["latitude"],request["longitude"])
             data={"weather":payload,"raw_sha256":provenance["raw_sha256"],"provenance":provenance,"cached":False}
             if len(json.dumps(data).encode())>self.store.max_weather_bytes:

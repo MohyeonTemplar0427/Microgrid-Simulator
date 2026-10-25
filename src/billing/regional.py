@@ -14,6 +14,17 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "we_energies_wisconsin": {"label":"We Energies · Wisconsin Electric Power Company", "state":"WI", "zone":None, "module":"we_energies_wi", "timezone":"America/Chicago",
+                            "grid_operator":"MISO", "resource_adequacy_zone":"LRZ2", "transmission_owner":"American Transmission Company (ATC)",
+                            "grid_sources":["https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
+                                            "https://www.we-energies.com/services/business/wholesale-services",
+                                            "https://cdn.misoenergy.org/ATC-WE%20Energies%201st%20Rev%20GIA%20S1005%20SA%203830%20Public708218.pdf"]},
+    "duke_energy_indiana": {"label":"Duke Energy Indiana", "state":"IN", "zone":"DEI", "module":"duke_in", "timezone":"America/Indiana/Indianapolis",
+                           "grid_operator":"MISO", "resource_adequacy_zone":"LRZ6", "transmission_owner":None,
+                           "transmission_ownership_context":"DEI zone includes Duke Energy Indiana, IMPA and Wabash Valley transmission facilities; the zone does not identify the owner serving a particular site.",
+                           "grid_sources":["https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",
+                                           "https://www.in.gov/iurc/files/2024-IRP-Attachments-Volume-II.pdf",
+                                           "https://docs.misoenergy.org/miso12-legalcontent/Schedule_38_-_MTEP_Project_Cost_Recovery_for_DEO_and_DEK.pdf"]},
     "xcel_energy_minnesota": {"label":"Xcel Energy · Minnesota (NSP)", "state":"MN", "zone":None, "module":"xcel_mn", "timezone":"America/Chicago",
                             "grid_operator":"MISO", "resource_adequacy_zone":"LRZ1", "transmission_owner":"Northern States Power Company",
                             "grid_sources":["https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",

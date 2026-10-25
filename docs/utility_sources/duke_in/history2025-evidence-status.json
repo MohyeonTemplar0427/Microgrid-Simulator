@@ -1,0 +1,103 @@
+{
+  "status": "source_incomplete_explicit_provisional2025_enabled",
+  "prior_base_observations": {
+    "RS": {
+      "connection_usd": 10.54,
+      "cumulative_bounds_kwh": [
+        300,
+        1000
+      ],
+      "marginal_rates_usd_per_kwh": [
+        0.148799,
+        0.108297,
+        0.098147
+      ]
+    },
+    "CS": {
+      "connection_usd": 10.7,
+      "cumulative_bounds_kwh": [
+        300,
+        1000,
+        2500
+      ],
+      "marginal_rates_usd_per_kwh": [
+        0.140571,
+        0.130391,
+        0.11846,
+        0.09656
+      ]
+    }
+  },
+  "verified_pre_reset_components": {
+    "fuel": {
+      "value_usd_per_kwh": 0.005902,
+      "clock": "January\u2013March2025billing cycles, priorbasefuel.026955 beforeFeb27reset",
+      "source": "historical-fac142-order.pdfp8"
+    },
+    "energy_efficiency": {
+      "RS": 0.003851,
+      "CS": 0.003882,
+      "clock": "January2025Cycle1 untilbasecasereset",
+      "source": "dsm-final2025.pdfp10"
+    },
+    "load_control": {
+      "RS": 0.001406,
+      "CS": 0.001446,
+      "clock": "January2025Cycle1 untilbasecasereset",
+      "source": "dsm-final2025.pdfp43"
+    },
+    "credits_adjustment": {
+      "RS": -0.007166,
+      "CS": -0.006399,
+      "clock": "January2025Cycle1 untilbasecasereset",
+      "source": "approved50794table+Step1overviewconfirmsJanuaryclock"
+    },
+    "federal_mandate": {
+      "RS": 0.0,
+      "CS": 0.0,
+      "clock": "Currentzero, nozero-extrapolationintounverifiedfutureprojects",
+      "source": "Step1AttachmentLoverview"
+    }
+  },
+  "all_are_partial_component_observations": true,
+  "not_authorized_as_dispatch_prices": true,
+  "missing_complete_rate_windows": [
+    "Jan1\u2013Feb26,2025: priorclass factors62(ECR42),65(TDSIC3),68(RTO60),70(SRA9),73(REP6) still need actualtables; isolatedverifiedbase/60/66/67/72/74 do not formacompletebill",
+    "April\u2013June2025: FAC143 signedfinaltariff required; officialorder numericformula and printedresult conflict in sign",
+    "July\u2013December2025: ECR43/REP7 approvedclassfactor tables andDecember67expiration/datedtariff remainmissing",
+    "May19,2025 rehearingcompliance scope must establish whetherRS/CStariffs changed",
+    "TOU: filed6.5/7.5 tables/calendar language differsfromorder witnesssummary andcurrentbusinessguide weekday/holiday treatment; no preFeb27pricing or expandedTOUdateclaim",
+    "2026 Step2 base/rider histories andApril2026 generationcosttracker unsupported"
+  ],
+  "later_verified_component_observations": {
+    "fuel60": {
+      "2025-07 through 2025-09": {
+        "value": 0.004042,
+        "source": "history2025-review-fac144-order.pdf",
+        "page": 11
+      },
+      "2025-10 through 2025-12": {
+        "value": 0.000372,
+        "source": "review-fac145-order.pdf",
+        "page": 11
+      }
+    },
+    "credits67": {
+      "effective_2025-09": {
+        "RS": -0.013516,
+        "CS": -0.013232,
+        "source": "review-credits67-sep2025-order.pdf",
+        "approved": "2025-08-20",
+        "page": 3
+      }
+    }
+  },
+  "ordinary_billing_cycle_rule": "GTC12.4 full rate schedule for complete26\u201334daycycles; no crossing allocation inferred. A proposed12cyclefullyear schedule can aligntoFeb27onlyafterallratecomponentsareverified.",
+  "TOU_calendar_evidence_status": "filed_sheet_interpretation_utility_confirmation_required",
+  "provisional_exception": {
+    "model": "duke_indiana_2025_provisional_v1",
+    "explicit_mode_and_boolean_acceptance_required": true,
+    "assumptions": "provisional2025-assumptions.json",
+    "meaning": "Incomplete observations alone remain unauthorized as verified prices. User-authorized source-pinned proxies now form a separately labeled provisional dispatch/billing composite."
+  }
+}

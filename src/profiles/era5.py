@@ -46,11 +46,16 @@ def parse_era5(text, interval_index, latitude, longitude):
     return weather, provenance
 
 
-def fetch_era5(start_date, end_date, latitude, longitude, getter=None):
+def fetch_era5(start_date, end_date, latitude, longitude, getter=None, *, local_timezone="America/New_York"):
     import requests
     from datetime import datetime, timezone
-    start = pd.Timestamp(start_date, tz="America/New_York").tz_convert("UTC")
-    end = (pd.Timestamp(end_date, tz="America/New_York")+pd.DateOffset(days=1)).tz_convert("UTC")
+    from zoneinfo import ZoneInfo
+    # Preserve the historical default for existing callers. New regional
+    # workflows supply their configured clock; the provider request and raw
+    # records remain UTC, with a full end date for previous-hour means.
+    ZoneInfo(local_timezone)
+    start = pd.Timestamp(start_date, tz=local_timezone).tz_convert("UTC")
+    end = (pd.Timestamp(end_date, tz=local_timezone)+pd.DateOffset(days=1)).tz_convert("UTC")
     params = {"latitude": latitude, "longitude": longitude, "start_date": start.strftime("%Y-%m-%d"),
               "end_date": end.strftime("%Y-%m-%d"), "hourly": ",".join(VARIABLES),
               "timezone": "UTC", "wind_speed_unit": "ms", "models": "era5"}

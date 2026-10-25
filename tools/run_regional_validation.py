@@ -54,12 +54,23 @@ AMEREN_MO_CASES = tuple(("ameren_missouri", "commercial" if p=="2M" else "reside
     for p in ("1M","1M-EMS","1M-SMART-A","1M-SMART-B","1M-OVERNIGHT-A","1M-OVERNIGHT-B","2M"))
 XCEL_MN_CASES = tuple(("xcel_energy_minnesota", "residential" if p in ("A01","A02") else "commercial", p)
                      for p in ("A01","A02","A10","A12"))
+WE_ENERGIES_CASES = tuple(("we_energies_wisconsin", "residential" if p.startswith("Rg") else "commercial", p)
+                         for p in ("Rg1","Rg2","Cg1","Cg6"))
+DUKE_IN_CASES = tuple(("duke_energy_indiana", "residential" if p.startswith("RS") else "commercial", p)
+                     for p in ("RS","RS-TOU","CS","CS-TOU"))
+# Exact-year files keep current-year validation from reusing2025 weather.
+# Existing Minnesota cache windows and hashes remain unchanged.
+YEARLY_ERA5_WINDOWS = {
+    "xcel_energy_minnesota": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-06-01","2026-09-30")),
+    "we_energies_wisconsin": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
+    "duke_energy_indiana": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
+}
 
 
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -132,8 +143,32 @@ def validation_periods(periods, start_date=None, end_date=None):
     return periods
 
 
+def duke_2025_regular_cycles():
+    """Twelve explicit hypothetical readings avoiding the Feb27 base change.
+
+    IURC16 general term12.4 bills regular26–34-day cycles at the applicable
+    full schedule. These dates are study inputs, not inferred customer meter
+    readings or a new proration rule. Rider billing-month clocks remain
+    separate from service dates and the adapter verifies every component.
+    """
+    cycles=calendar_cycles("2025-04-01","2025-12-31")
+    source=("Explicit hypothetical regular26–34-day meter cycle; twelve2025bills "
+            "aligned with the February27 service-rendered base-rate change. "
+            "Not an actual customer reading. Full monthly charge/blocks under "
+            "IURC16 general term12.4; no rate-change proration assumed.")
+    first=[("2025-01-01","2025-01-26","2025-01-01"),
+           ("2025-01-27","2025-02-26","2025-02-01"),
+           ("2025-02-27","2025-03-31","2025-03-01")]
+    cycles=[dict(start_date=start,end_date=end,billing_month=month,bill_date=end,
+                 kind="regular",source=source,account_overrides={})
+            for start,end,month in first]+cycles
+    for cycle in cycles:
+        cycle.update(kind="regular",source=source)
+    return cycles
+
+
 def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None, allow_va_history=False,
-                 start_date=None, end_date=None, allow_ohio_provisional=False):
+                 start_date=None, end_date=None, allow_ohio_provisional=False, allow_we_duke_provisional=False):
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
@@ -148,8 +183,10 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start, end = ("2025-01-01", "2025-12-31") if period == "annual" else ("2025-07-01", "2025-07-31")
     if utility=="firstenergy_ohio_edison" and custom is None and period=="monthly":
         start,end="2025-10-01","2025-10-31"
-    if utility=="xcel_energy_minnesota" and custom is None and period=="monthly":
+    if utility in ("xcel_energy_minnesota","we_energies_wisconsin") and custom is None and period=="monthly":
         start,end="2025-04-01","2025-04-30"
+    if utility=="duke_energy_indiana" and custom is None and period=="monthly":
+        start,end="2025-03-01","2025-03-31"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
@@ -158,6 +195,9 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     name=(f"{utility} {r['account']['tariff']} {start}–{end} custom" if custom is not None else f"{utility} {kind} {start[:4]} {period} validation")
     r.update(name=name, start_date=start, end_date=end,
              billing_cycles=calendar_cycles(start, end))
+    if utility=="duke_energy_indiana" and start=="2025-01-01" and end=="2025-12-31":
+        r["billing_cycles"]=duke_2025_regular_cycles()
+        r["name"] += " · hypothetical meter readings"
     account = r["account"]
     if utility=="ameren_missouri" and account["tariff"]=="2M":
         current=pd.Timestamp(start)
@@ -170,6 +210,9 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     if utility=="firstenergy_ohio_edison" and allow_ohio_provisional:
         account.update(rate_evidence_mode="provisional_2025",provisional_assumptions_accepted=True)
         r["name"] += " PROVISIONAL historical rates and billing assumptions"
+    if utility in ("we_energies_wisconsin", "duke_energy_indiana") and allow_we_duke_provisional:
+        account.update(rate_evidence_mode="provisional_2025",provisional_assumptions_accepted=True)
+        r["name"] += " · PROVISIONAL 2025 rates"
     if utility == "dominion_energy_virginia":
         account.update(parallel_operation_approved=True, parallel_service=True)
         if va_history or custom is not None:
@@ -254,19 +297,19 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
     for utility in utilities:
         path = folder/utility
         path.mkdir(exist_ok=True)
-        if utility=="xcel_energy_minnesota":
-            for year,start,end in ((2025,"2025-01-01","2025-12-31"),(2026,"2026-06-01","2026-09-30")):
+        if utility in YEARLY_ERA5_WINDOWS:
+            for year,start,end in YEARLY_ERA5_WINDOWS[utility]:
                 file=path/f"era5_{year}.json";key=utility+f"_{year}"
                 expected=previous.get("sources",{}).get(key,{}).get("sha256")
                 if expected is not None:
-                    require(file.exists() and digest(file)==expected,"Prepared Minnesota ERA5 bytes changed")
+                    require(file.exists() and digest(file)==expected,"Prepared exact-year ERA5 bytes changed")
                 request=dict(latitude=SITES[utility][0],longitude=SITES[utility][1],start_date=start,end_date=end)
-                payload=json.loads(file.read_text()) if file.exists() else fetch_era5(**request)
+                payload=json.loads(file.read_text()) if file.exists() else fetch_era5(**request,local_timezone=data_timezone(utility))
                 expected_dates=dict(start_date=start,end_date=str((pd.Timestamp(end)+pd.DateOffset(days=1)).date()))
-                require(all(payload["request"][k]==v for k,v in {**request,**expected_dates}.items()),"Minnesota weather request mismatch; no year/site substitution")
+                require(all(payload["request"][k]==v for k,v in {**request,**expected_dates}.items()),"Exact-year weather request mismatch; no year/site substitution")
                 _,provenance=parse_era5(payload["raw_json"],build_interval_index(start,end,data_timezone(utility),15),request["latitude"],request["longitude"])
                 if not file.exists():write_json(file,payload)
-                manifest["sources"][key]=dict(sha256=digest(file),provenance=provenance,retrieved_at=payload["retrieved_at"])
+                manifest["sources"][key]=dict(sha256=digest(file),provenance=provenance,retrieved_at=payload["retrieved_at"],study_timezone=data_timezone(utility))
             continue
         if utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri") or utility == "dominion_energy_virginia" and not va_history_only:
             file = path/"era5.json"
@@ -314,12 +357,12 @@ def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
-    if utility=="xcel_energy_minnesota":
+    if utility in YEARLY_ERA5_WINDOWS:
         from src.profiles.era5 import parse_era5
-        if request["start_date"][:4]!=request["end_date"][:4]:raise ValueError("Select an exact-year Minnesota weather file.")
+        if request["start_date"][:4]!=request["end_date"][:4]:raise ValueError("Select an exact-year regional weather file.")
         payload=json.loads((source/f"era5_{request['start_date'][:4]}.json").read_text())
         lat,lon,_=SITES[utility]
-        require(payload["request"]["models"]=="era5" and payload["request"]["latitude"]==lat and payload["request"]["longitude"]==lon,"Minnesota ERA5 source/site mismatch")
+        require(payload["request"]["models"]=="era5" and payload["request"]["latitude"]==lat and payload["request"]["longitude"]==lon,"Exact-year ERA5 source/site mismatch")
         parse_era5(payload["raw_json"],build_interval_index(request["start_date"],request["end_date"],request["timezone"],request["timestep_minutes"]),lat,lon)
         request.update(weather_source="era5",weather_id=None,weather=payload)
     elif utility.startswith("firstenergy_") or utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri"):
@@ -359,8 +402,21 @@ def attach_weather(app, request, inputs):
     return request
 
 
-def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False):
+def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
+                       allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if utility in ("we_energies_wisconsin", "duke_energy_indiana"):
+        expected = adapter(utility).evidence(pd.DatetimeIndex(index), account)
+        require(all(bill.get(k) == expected[k] for k in expected),
+                "We/Duke evidence must retain intact component assumptions derived from the account and dates")
+        if expected["rate_evidence_status"] == "provisional":
+            require(allow_we_duke_provisional
+                    and account.get("rate_evidence_mode") == "provisional_2025"
+                    and account.get("provisional_assumptions_accepted") is True
+                    and expected.get("rate_assumptions")
+                    and any("Provisional historical estimate" in w for w in bill.get("warnings", [])),
+                    "Provisional We/Duke bills require explicit opt-in and intact component assumptions")
+            return "provisional_modeled_bill", []
     if bill.get("rate_evidence_status")=="provisional":
         if utility == "peco":
             from src.billing.peco import ALLOCATION_MODEL, allocation_evidence
@@ -402,7 +458,20 @@ def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False,
     return "verified_charges_subtotal", sorted(expected)
 
 
-def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_provisional=False):
+def check_assumption_download(row, model, assumption):
+    """Require the saved CSV to retain values AND source/date provenance."""
+    require(row.get("assumption_model") == model and row.get("assumption_id") == assumption["id"],
+            "Downloaded assumption identity/model changed")
+    for key, expected in assumption.items():
+        if key == "id":
+            continue
+        require(key in row, "Downloaded assumption provenance is missing "+key)
+        actual = json.loads(row[key]) if isinstance(expected, (dict, list)) else row[key]
+        require(actual == expected, "Downloaded assumption provenance changed: "+key)
+
+
+def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_provisional=False,
+          allow_we_duke_provisional=False):
     """Rebill each cycle and verify continuous physical and billing state."""
     directory = Path(directory)
     result = json.loads((directory/"result.json").read_text())
@@ -460,7 +529,8 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
                 dispatch.grid_export_kw.to_numpy()[block], a, state=state, equipment=equipment_one)
             state = bill["next_state"]
             scenario_bills.append(bill)
-            scope, excluded = checked_bill_scope(bill, utility, a, index[block], allow_va_history=allow_va_history, allow_ohio_provisional=allow_ohio_provisional)
+            scope, excluded = checked_bill_scope(bill, utility, a, index[block], allow_va_history=allow_va_history,
+                allow_ohio_provisional=allow_ohio_provisional, allow_we_duke_provisional=allow_we_duke_provisional)
             require(abs(bill["total_usd"]-sum(bill["lines"].values())) < 1e-7, "Itemized bill does not sum")
             ledger = saved_cycles.loc[(saved_cycles.scenario == scenario)&(saved_cycles.cycle_index == i)].iloc[0]
             require(bool(ledger.is_complete_bill) == bill["is_complete_bill"], "Saved completeness flag differs")
@@ -476,7 +546,8 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
                     require(set(selected_assumptions.assumption_id)=={v["id"] for v in bill["rate_assumptions"]},"Assumption download incomplete")
                     for value in bill["rate_assumptions"]:
                         row=selected_assumptions.loc[selected_assumptions.assumption_id==value["id"]].iloc[0]
-                        require(row.assumption_model==bill["assumption_model"] and json.loads(row.assumed_values)==value["assumed_values"],"Assumed values changed in download")
+                        require(row.billing_month == cycle["billing_month"], "Downloaded assumption cycle month changed")
+                        check_assumption_download(row, bill["assumption_model"], value)
             require(abs(ledger.total_usd-bill["total_usd"]) < .00001, "Saved cycle bill differs")
             require(abs(outcomes[i]["reconciliation_difference_usd"]) < .0001, "Dispatch objective does not reconcile")
             if outcomes[i].get("cost_optimum_proven") and "primary_lower_bound_usd" in outcomes[i]:
@@ -506,7 +577,11 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
                     related=[x["id"] for x in bill["rate_assumptions"] if name in x["components"]]
                     require(json.loads(selected.iloc[0].rate_assumption_ids)==related,"Saved component assumptions differ")
                     require(selected.iloc[0].rate_evidence_status==("provisional" if related else "verified"),"Saved component evidence differs")
-                lines.append(dict(scenario=scenario, cycle_index=i, billing_month=cycle["billing_month"], component=name, amount_usd=value))
+                related = [x["id"] for x in bill.get("rate_assumptions", []) if name in x["components"]]
+                lines.append(dict(scenario=scenario, cycle_index=i, billing_month=cycle["billing_month"],
+                    component=name, amount_usd=value,
+                    rate_evidence_status="provisional" if related else "verified" if bill.get("rate_evidence_status") else "not_recorded",
+                    assumption_model=bill.get("assumption_model"), rate_assumption_ids=json.dumps(related)))
             start, stop = block.start, block.stop
             opening = float(soc[start])
             closing = float(soc[stop]) if stop < len(soc) else float(terminal or 0.)
@@ -518,6 +593,7 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
                 utility_bill_usd=bill["total_usd"], opening_battery_kwh=opening, closing_battery_kwh=closing,
                 is_complete_bill=bill["is_complete_bill"], objective_scope=scope,
                 rate_evidence_status=bill.get("rate_evidence_status","not_recorded"),
+                rate_assumption_ids=json.dumps([x["id"] for x in bill.get("rate_assumptions", [])]),
                 excluded_components=json.dumps(excluded),
                 cost_proof_method=outcomes[i].get("cost_proof_method","legacy_not_recorded"),
                 primary_optimality_gap_usd=outcomes[i].get("primary_optimality_gap_usd"),
@@ -564,7 +640,8 @@ def summarize(directory):
         reply=subprocess.run(command(directory,engine["id"],"capabilities"),capture_output=True,
             text=True,check=True,timeout=90,env=worker_environment())
         capabilities=json.loads(reply.stdout)["regional_simulation"]["utilities"]
-        pinned_catalog={utility:{row["id"]:{key:row.get(key) for key in ("label","sources","coverage")}
+        pinned_catalog={utility:{row["id"]:{key:row.get(key) for key in
+            ("label","sources","coverage","provisional_coverage","provisional_assumptions")}
             for row in value["plans"]} for utility,value in capabilities.items()}
         write_json(directory/"regional-source-catalog.json",{"engine_id":engine["id"],"utilities":pinned_catalog})
     def clean(value):
@@ -626,6 +703,9 @@ def summarize(directory):
             input_provenance=result.get("input_provenance",{}),warnings=result.get("warnings",[]),
             is_complete_bill=result.get("is_complete_bill"),
             rate_evidence_status=result.get("rate_evidence_status","not_recorded"),
+            rate_evidence_mode=request["account"].get("rate_evidence_mode","verified"),
+            rate_assumptions=list({item["id"]:item for bills in result.get("billing",{}).values()
+                for bill in bills for item in bill.get("rate_assumptions",[])}.values()),
             reported_amount_kind=("provisional historical estimate; inspect assumption ledger" if result.get("rate_evidence_status")=="provisional" else "verified charges subtotal; historical taxes incomplete" if result.get("is_complete_bill") is False
                 else "complete utility bill" if result.get("is_complete_bill") is True else "legacy completeness not recorded"),
             excluded_components=sorted({value for bills in result.get("billing",{}).values()
@@ -660,19 +740,21 @@ def summarize(directory):
 
 
 def run(output, inputs, *, include_ciep=False, ciep_inputs=None, include_va_history=False, cases=None, periods=("monthly", "annual"),
-        start_date=None, end_date=None, resume=False, case_timeout=2100, allow_ohio_provisional=False):
+        start_date=None, end_date=None, resume=False, case_timeout=2100, allow_ohio_provisional=False,
+        allow_we_duke_provisional=False):
     periods = validation_periods(periods, start_date, end_date)
     case_timeout = positive_seconds(case_timeout)
     output, inputs = private_path(output), private_path(inputs)
     output.mkdir(parents=True, exist_ok=True)
     with output_lock(output, ".regional-validation.lock"):
         return _run(output, inputs, include_ciep=include_ciep, ciep_inputs=ciep_inputs,
-            include_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional, cases=cases, periods=periods,
+            include_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional,
+            allow_we_duke_provisional=allow_we_duke_provisional, cases=cases, periods=periods,
             start_date=start_date, end_date=end_date, resume=resume, case_timeout=case_timeout)
 
 
 def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases, periods,
-         start_date, end_date, resume, case_timeout, allow_ohio_provisional):
+         start_date, end_date, resume, case_timeout, allow_ohio_provisional, allow_we_duke_provisional):
     from src.local_web.runtime import Application
     for utility in SITES:
         adapter(utility)
@@ -687,7 +769,8 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
     execution = dict(cases=[list(c) for c in selections], periods=list(periods),
         start_date=start_date, end_date=end_date, inputs=str(inputs),
         ciep_inputs=str(private_path(ciep_inputs)) if ciep_inputs is not None else None,
-        include_va_history=include_va_history, case_timeout=case_timeout, allow_ohio_provisional=allow_ohio_provisional)
+        include_va_history=include_va_history, case_timeout=case_timeout, allow_ohio_provisional=allow_ohio_provisional,
+        allow_we_duke_provisional=allow_we_duke_provisional)
     old = previous_manifest(output, resume, execution)
     app = Application(output)
     started = time.monotonic()
@@ -732,7 +815,8 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
                 waiting = None
                 try:
                     r = case_request(utility, kind, period, plan="GLP" if plan == "GLP_CIEP" else plan,
-                        ciep_inputs=ciep_inputs if plan == "GLP_CIEP" else None, allow_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional,
+                        ciep_inputs=ciep_inputs if plan == "GLP_CIEP" else None, allow_va_history=include_va_history,
+                        allow_ohio_provisional=allow_ohio_provisional, allow_we_duke_provisional=allow_we_duke_provisional,
                         start_date=start_date if period == "custom" else None, end_date=end_date if period == "custom" else None)
                     attach_weather(app, r, inputs)
                     timing["input_preparation_seconds"] = time.monotonic()-case_started
@@ -743,7 +827,8 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
                         if reusable(prior, r, directory, app.engine["id"]):
                             audited = time.monotonic()
                             try:
-                                rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional)
+                                rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history,
+                                    allow_ohio_provisional=allow_ohio_provisional, allow_we_duke_provisional=allow_we_duke_provisional)
                                 reuse = True
                             except (AssertionError, ValueError, OSError, KeyError):
                                 # Preserve the old attempt; a failed audit cannot stay a pass.
@@ -791,7 +876,8 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
                             raise ValueError(state.get("error") or "Worker did not complete")
                         directory = output/"runs"/job["id"]
                         audited = time.monotonic()
-                        rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional)
+                        rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history,
+                            allow_ohio_provisional=allow_ohio_provisional, allow_we_duke_provisional=allow_we_duke_provisional)
                         timing["artifact_audit_seconds"] = time.monotonic()-audited
                         entry.update(validation="passed", physics=physics,
                             is_complete_bill=bool(rows.is_complete_bill.all()),
@@ -839,7 +925,11 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
         if frames:
             pd.concat(frames, ignore_index=True).to_csv(output/filename, index=False)
     if components:
-        annual = pd.concat(components, ignore_index=True).groupby(["case", "scenario", "component"], as_index=False).amount_usd.sum()
+        annual = pd.concat(components, ignore_index=True).groupby(["case", "scenario", "component"], as_index=False).agg(
+            amount_usd=("amount_usd", "sum"),
+            rate_evidence_status=("rate_evidence_status", lambda values: "provisional" if "provisional" in set(values)
+                else "verified" if set(values)=={"verified"} else "not_recorded"),
+            rate_assumption_ids=("rate_assumption_ids", lambda values: json.dumps(sorted({item for value in values for item in json.loads(value)}))))
         baseline = annual.loc[annual.scenario == "grid_only"].set_index(["case", "component"]).amount_usd
         annual["savings_vs_grid_usd"] = [baseline.get((row.case, row.component), 0.)-row.amount_usd for row in annual.itertuples()]
         annual.to_csv(output/"period-components.csv", index=False)
@@ -860,6 +950,7 @@ def main():
     parser.add_argument("--resume", action="store_true", help="Reuse only same-pin/input/validator cases after artifact verification and independent re-audit")
     parser.add_argument("--case-timeout", type=positive_seconds, default=2100., help="Per-case queue/worker deadline in seconds; requests cancellation on expiry")
     parser.add_argument("--allow-ohio-provisional", action="store_true", help="Explicitly accept documented Ohio Edison2025 provisional rate and billing assumptions; never verified coverage")
+    parser.add_argument("--allow-we-duke-provisional", action="store_true", help="Explicitly accept documented We Energies/Duke Indiana2025 component assumptions; never verified tariff coverage")
     parser.add_argument("--include-va-history", action="store_true", help="Also prepare/run 2025 VA-1/GS1 verified-charge subtotals, with explicitly missing historical taxes")
     parser.add_argument("--ciep-inputs", type=Path, default=ROOT/".cache/regional_historical_inputs/pseg")
     parser.add_argument("--utility", action="append", choices=tuple(SITES), help="Limit preparation/execution to named utility; repeatable")
@@ -887,7 +978,8 @@ def main():
         except ValueError as exc:
             parser.error(str(exc))
         run(args.output, args.inputs, ciep_inputs=args.ciep_inputs,
-            include_va_history=args.include_va_history, allow_ohio_provisional=args.allow_ohio_provisional, cases=selected, periods=periods,
+            include_va_history=args.include_va_history, allow_ohio_provisional=args.allow_ohio_provisional,
+            allow_we_duke_provisional=args.allow_we_duke_provisional, cases=selected, periods=periods,
             start_date=args.start_date,end_date=args.end_date, resume=args.resume, case_timeout=args.case_timeout)
     if args.summarize:
         summarize(args.output)

@@ -39,7 +39,8 @@ def matrix(tmp_path, monkeypatch):
     def audit(*args,**kwargs):
         state.audits+=1
         return (pd.DataFrame([dict(scenario="grid_only",is_complete_bill=True,objective_scope="complete_utility_bill",rate_evidence_status="not_recorded")]),
-                pd.DataFrame([dict(scenario="grid_only",component="fixed",amount_usd=10.)]),
+                pd.DataFrame([dict(scenario="grid_only",component="fixed",amount_usd=10.,
+                                   rate_evidence_status="not_recorded",rate_assumption_ids="[]")]),
                 [dict(scenario=s) for s in driver.SCENARIOS])
     monkeypatch.setattr(runtime,"Application",App)
     monkeypatch.setattr(driver,"case_request",lambda *args,**kwargs:{"fixture":"same account"})

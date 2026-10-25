@@ -1,0 +1,18 @@
+Official illustrative sample: billFebruary3,2026, serviceJanuary5–February2,29days.
+Electric Service
+Residential Electric Service Rg1 
+Meter NZT0123456 Actual Reading 02/03/2026
+Actual Reading 01/05/2026
+Total Electric  Use
+40705
+-40036
+669 KWH
+Energy Charges/Credits
+  Customer Charge 29 Days at $0.49315 $14.30
+  Energy Charge 669 KWH at $0.19342 $129.40
+  Fuel Cost Adjustment 669 KWH at $0.00199 $1.33
+Other Service Charges/Credits
+  Environmental Control Charge 669 KWH at $0.00052 $0.35
+  State Low Income Assistance Fee $3.15
+Subtotal: $148.53
+Electric Service Total: $148.53

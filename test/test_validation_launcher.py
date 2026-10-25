@@ -206,3 +206,19 @@ def test_ohio_provisional_flag_is_explicit_and_forwarded(tmp_path):
         assert "--allow-ohio-provisional" in opted[-1]["command"]
         args.regional=False;args.inputs=None;args.utility=[];args.period=[]
         with pytest.raises(ValueError,match="require --regional"):validate.build_plan(args,tmp_path/".cache/out")
+
+
+def test_we_duke_provisional_flag_is_explicit_and_forwarded(tmp_path):
+    from unittest.mock import patch
+    from tools import run_regional_validation as driver
+    with patch.object(validate,"ROOT",tmp_path), patch.object(driver,"ROOT",tmp_path):
+        (tmp_path/"test").mkdir();(tmp_path/"test/test_fixture.py").write_text("# fixture\n")
+        inputs=tmp_path/".cache/inputs";inputs.mkdir(parents=True)
+        args=options(regional=True,inputs=inputs,test=["test/test_fixture.py"],
+                     utility=["we_energies_wisconsin","duke_energy_indiana"],period=["annual"])
+        assert "--allow-we-duke-provisional" not in validate.build_plan(args,tmp_path/".cache/out")[-1]["command"]
+        args.allow_we_duke_provisional=True
+        assert "--allow-we-duke-provisional" in validate.build_plan(args,tmp_path/".cache/out")[-1]["command"]
+        args.regional=False;args.inputs=None;args.utility=[];args.period=[]
+        with pytest.raises(ValueError,match="require --regional"):
+            validate.build_plan(args,tmp_path/".cache/out")

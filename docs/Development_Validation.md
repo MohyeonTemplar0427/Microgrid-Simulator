@@ -85,6 +85,12 @@ existing regional driver. No solver proof or OpenDSS check is relaxed.
 
 The launcher forwards the driver's repeatable `--utility`, `--plan`, `--period`,
 custom date bounds, `--include-va-history`, `--include-ciep` and `--ciep-inputs`.
+`--allow-we-duke-provisional` explicitly selects and accepts the documented
+We Energies/Duke Indiana 2025 rate assumptions. It is off by default, enters
+the immutable execution/resume selection, and does not enable other utilities
+or extend verified coverage. Use We Rg1/Rg2/Cg1/Cg6 or Duke RS/CS for annual
+2025 validation; Duke TOU was not available in January. The artifact audit
+requires the exact assumption model, affected components, values and warning.
 For custom dates, use `--period custom` alone. CIEP requires its verified
 private price file, not a substitute hub. See
 [regional validation](Regional_Validation.md) for exact prepared input paths

@@ -1,0 +1,160 @@
+PDF PAGE 15
+ 
+PETITIONER’S EXHIBIT 7 
+ 
+DUKE ENERGY INDIANA 2024 BASE RATE CASE 
+DIRECT TESTIMONY OF ROGER A. FLICK, II 
+ 
+ 
+ROGER A. FLICK, II 
+- 14 - 
+C.  Time of Use Periods and Rate Design 1 
+Q. WOULD YOU PLEASE DESCRIBE THE NEW RS, CS, AND LLF/HLF TOU 2 
+RATES DUKE ENERGY INDIANA IS PROPOSING IN THIS CASE? 3 
+A. Yes, the TOU periods are consistent across all three designs and were developed in the 4 
+manner described below. The RS and CS TOU rate designs contain a customer charge, 5 
+time-varying energy charges and a reactive power charge. The new HLF/LLF TOU rate 6 
+differs in that it includes a new three-part demand charge. 7 
+Q. WOULD YOU PLEASE BEGIN BY ADDRESSING CHANGES BEING 8 
+PROPOSED TO THE TOU PERIODS? 9 
+A. Yes. The Company proposes to refresh all its previously defined TOU periods as follows: 10 
+ On-peak, Non-Winter – 5:00 P.M. to 9:00 P.M.  11 
+ On-peak, Winter – 6:00 A.M. to 8:00 A.M. and 5:00 P.M. to 9:00 P.M.  12 
+o On-peak periods do not apply to weekends and designated holidays 13 
+ Discount – 12:00 A.M. to 4:00 A.M., year-round. 14 
+ Off-peak – All other hours not designated On-peak or Discount 15 
+ Non-Winter months are Mid-March through October 16 
+ Winter months are November through Mid-March 17 
+  The Company is also proposing to shift tariff TOU rate administration from Eastern 18 
+Standard Time to Daylight Savings Time to reflect Indiana’s use of daylight savings time. I 19 
+believe eliminating the need for TOU rate participants to translate EST pricing changes on 20 
+our old TOU tariffs will improve their experience on our TOU rates. We will be 21 
+Cause No. 46038
+
+PDF PAGE 16
+ 
+PETITIONER’S EXHIBIT 7 
+ 
+DUKE ENERGY INDIANA 2024 BASE RATE CASE 
+DIRECT TESTIMONY OF ROGER A. FLICK, II 
+ 
+ 
+ROGER A. FLICK, II 
+- 15 - 
+administering our tariffs in alignment with the time on their wrists and clocks in their 1 
+homes or businesses.   2 
+Q. WHAT IS THE BASIS FOR THE PROPOSED TOU CHANGES? 3 
+A. Generally speaking, TOU rates can include a variety of pricing and design options, but 4 
+generally all TOU rates seek to align price signals to the cost differences that exist across 5 
+time (days, seasons, hours) for the electrical grid. Grid operations require that supply match 6 
+demand at any given point in time; thus, supply resources are called upon based on the 7 
+level of system demand, which can vary greatly across days and seasons. Increasingly, 8 
+intermittent and non-dispatchable supply resources (e.g., wind and solar) are changing the 9 
+supply/demand relationship, calling for changes in operational capabilities for the other 10 
+supply resources, but also creating greater opportunities for price responsive demand. The 11 
+Midcontinent Independent System Operator’s (“MISO”) choice to move to a seasonal 12 
+capacity construct is evidence of the increasing complexity of supply/demand dynamics. 13 
+Modern rate design seeks not only to recover the costs of providing service to customers 14 
+based on their use of the system, but also to provide price signals so that customers who 15 
+can respond to price signals can do so in a personally meaningful and informed manner. To 16 
+maximize a TOU rate’s utility, pricing needs to be properly structured and aligned with on 17 
+and off-peak periods thus ensuring proper signaling. The Company’s existing TOU periods 18 
+increasingly do not align with current and anticipated system needs. Therefore, the 19 
+Company is proposing to terminate the Company’s legacy TOU rates and will offer 20 
+existing participants the option of either transitioning to new TOU rates, or any other rate 21 
+Cause No. 46038
+
+PDF PAGE 23
+ 
+PETITIONER’S EXHIBIT 7 
+ 
+DUKE ENERGY INDIANA 2024 BASE RATE CASE 
+DIRECT TESTIMONY OF ROGER A. FLICK, II 
+ 
+ 
+ROGER A. FLICK, II 
+- 22 - 
+A. The Company’s rate designs with refreshed TOU periods benefit customers and advance 1 
+several goals. The new TOU periods properly align price signals to the cost differences that 2 
+exist across seasons and hours, encouraging peak load reduction and efficient system 3 
+usage. In addition, proposed on-peak periods of shorter duration provide the opportunity 4 
+for economic use of battery storage in a manner aligned with system cost. Superior price 5 
+signals to customers encourage adoption of new technologies, such as smart energy 6 
+management devices, energy storage, and EVs. Higher on-peak prices encourage customers 7 
+to improve insulation and invest in more efficient HVAC systems by providing price 8 
+signals to use such technology to push energy consumption away from the peak. The 9 
+proposed Discount periods encourage EV charging or other flexible consumption during 10 
+times of low system costs, providing incentives for distributed energy resource adoption.   11 
+Q. WHICH RATES ARE IMPACTED BY THE COMPANY’S PROPOSED UPDATES 12 
+TO TOU PERIODS? 13 
+A. The impacted historic rates are:  Optional Rate LLF – Closed Time-Of-Use Service, Sheet 14 
+10.2 (Proposed for Termination); Optional Rate LLF – Time-of-Use Service, Sheet 10.4 15 
+(Proposed for Termination); Optional Rate HLF – Closed Time-Of-Use Service, Sheet 12.2 16 
+(Proposed for Termination); and Optional Rate HLF – Time-Of-Use Service, Sheet 12.4 17 
+(Proposed for Termination).   18 
+  The new rates proposed to succeed the rates, above are: Optional Rate RS – Time-19 
+of-Use, Tariff No 6.5.  Optional Rate CS – Time-of-Use, Tariff No. 7.5, and Optional Rate 20 
+HLF/LLF – TOU, Tariff Rate 11.5. 21 
+Cause No. 46038
+
+PDF PAGE 387
+Monthly Monthly
+Revenue at Revenue at
+Customer Bills Present Present Proposed Proposed
+ Line  Description and KWH Rates Rates  1/ Rates Rates
+ No. (a) (b) (c) (d) (e) (f)
+1 Connection Charge 1 $10.54 $10.54 $13.70 $13.70
+Energy Begin End
+2  1st  Block 0 300 300 $0.148799 $44.64 $0.197516 $59.25
+3  2nd  Block 301 1,000 700 $0.108297 $75.81 $0.143753 $100.63
+4  End Block 1,001 and Over 0 $0.098147 $0.00 $0.130280 $0.00
+5  Total Energy 1,000 $130.99 $173.58
+6 Bill Adjustments (Trackers)* $0.012056 $12.06 -$0.002908 -$2.91
+7 Calculated Revenue $143.04 $170.67
+8 Difference $27.63
+9 Percent Increase / (Decrease) 19.32%
+*Standard Contract Rider Summary Table
+Present Proposed
+Rates Rates
+Standard Contract Rider 60 - Fuel Cost Adjustment $0.007351 $0.000000
+Standard Contract Rider 62 - Environmental Compliance Investment Adjustment $0.001697 $0.001371
+Standard Contract Rider 65 - Transmission and Distribution Infrastructure Improvement Cost Rate Adjustment $0.004373 $0.001228
+Standard Contract Rider No. 66-A - Energy Efficiency Revenue Adjustment $0.002369 $0.001008
+Standard Contract Rider No. 67 - Credits to Remove Annual Amortization of Cinergy Merger Costs -$0.006479 -$0.006872
+Standard Contract Rider No. 68 - Midcontinent ISO Management Cost and Revenue Adjustment $0.000752 $0.000000
+Standard Contract Rider No. 70 - Reliability Adjustment $0.000267 $0.000283
+Standard Contract Rider No. 73 - Renewable Energy Project Revenue Adjustment $0.000234 $0.000074
+Standard Contract Rider No. 74 - Renewable Energy Project Revenue Adjustment $0.001491 $0.000000
+$0.012056 -$0.002908
+1/ Estimates a typical residential customer's 2025 monthly bill excluding the rate case's impacts.
+Residential Billing Comparison
+Rate RSN0
+Attachment 7-D (RAF) 
+Page 1 of 1
+Cause No. 46038
+
+PDF PAGE 389
+Connection Charges
+Calculated
+Calculated Minimum System Proposed Current
+Connection Connection Connection Connection Percent
+Rate Schedule Charge 1/ Charge 2/ Charge Charge Increase Increase/Decrease
+Rate RS $10.05 $31.49 $13.70 $10.54 $3.16 29.98%
+Rate CS $10.03 $31.94 $13.91 $10.70 $3.21 30.00%
+  High Efficiency $11.91 $47.36 $33.83 $26.03 $7.80 29.97%
+ Sirens $6.29 $10.21 $10.68 $10.70 -$0.02 -0.19%
+Rate LLF
+ Secondary $43.14 $118.28 $27.63 $21.26 $6.37 29.96%
+ Primary $213.76 $1,551.75 $109.55 $84.28 $25.27 29.98%
+ Primary Direct $73.02 $94.97 $109.55 $84.28 $25.27 29.98%
+ Transmission $280.74 $275.55 $331.00 $331.00 $0.00 0.00%
+ High Efficiency $48.94 $224.73 $28.05 $21.58 $6.47 29.98%
+Rate HLF
+ Secondary $53.30 $317.38 $31.90 $24.54 $7.36 29.99%
+ Primary $244.94 $3,562.43 $125.61 $96.64 $28.97 29.98%
+ Primary Direct $456.80 $484.23 $125.61 $96.64 $28.97 29.98%
+ Common $626.92 $618.14 $855.37 $658.07 $197.30 29.98%
+ Bulk $1,245.79 $1,217.58 $855.37 $658.07 $197.30 29.98%
+Attachment 7-F (RAF) 
+Page 1 of 1
+Cause No. 46038

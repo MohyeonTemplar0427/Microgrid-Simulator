@@ -1,0 +1,265 @@
+{
+  "model": "duke_indiana_2025_provisional_v1",
+  "requires_explicit_mode": "provisional_2025",
+  "requires_boolean_acceptance": true,
+  "verified_coverage": [
+    {
+      "start": "2025-03-01",
+      "end": "2025-03-31"
+    }
+  ],
+  "provisional_coverage": {
+    "RS": [
+      {
+        "start": "2025-01-01",
+        "end": "2025-12-31"
+      }
+    ],
+    "RS-TOU": [
+      {
+        "start": "2025-02-27",
+        "end": "2025-12-31"
+      }
+    ],
+    "CS": [
+      {
+        "start": "2025-01-01",
+        "end": "2025-12-31"
+      }
+    ],
+    "CS-TOU": [
+      {
+        "start": "2025-02-27",
+        "end": "2025-12-31"
+      }
+    ]
+  },
+  "verified_history_complete": false,
+  "assumptions": [
+    {
+      "id": "DEI25-PRE-RESET-RIDERS",
+      "kind": "rate",
+      "start": "2025-01-01",
+      "end": "2025-02-26",
+      "basis": "service_date",
+      "components": [
+        "environmental",
+        "tdsic",
+        "rto_non_fuel",
+        "reliability",
+        "renewable_projects",
+        "indiana_sales_tax"
+      ],
+      "assumed_values": {
+        "environmental": {
+          "RS": 0.003339,
+          "CS": 0.003699
+        },
+        "tdsic": {
+          "RS": 0.002259,
+          "CS": 0.001874
+        },
+        "rto_non_fuel": {
+          "RS": -0.000105,
+          "CS": -7.3e-05
+        },
+        "reliability": {
+          "RS": 0.000984,
+          "CS": 0.00101
+        },
+        "renewable_projects": {
+          "RS": 3.8e-05,
+          "CS": 2.8e-05
+        }
+      },
+      "explanation": "Backcast the same customer class's February27 reset factors for missing pre-reset riders62/65/68/70/73. These are scenario proxies: the reset reallocated costs between base rates and riders, so this backcast may misstate recovery even with the correct old base and verified old60/66/67/74. It is not an official January/February composite.",
+      "sources": [
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/245d050d-5bde-ef11-8eea-001dd808c9d7/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=ord_46038_012925.pdf"
+      ]
+    },
+    {
+      "id": "DEI25-FAC143-SIGN",
+      "kind": "rate",
+      "start": "2025-04-01",
+      "end": "2025-06-01",
+      "basis": "billing_month",
+      "components": [
+        "fuel",
+        "indiana_sales_tax"
+      ],
+      "assumed_values": {
+        "usd_per_kwh": -0.004801
+      },
+      "explanation": "Use negative0.004801 from the order's adjusted fuel0.029577 minus base fuel0.034378, corroborated by its stated decrease and the next order's increase. The printed FAC143 result omits the minus sign; no signed corrected final tariff has been recovered. This sign choice remains provisional.",
+      "sources": [
+        "https://www.in.gov/iurc/files/ord_38707FAC143_032625.pdf",
+        "https://www.in.gov/iurc/files/ord_38707FAC144_062625.pdf"
+      ]
+    },
+    {
+      "id": "DEI25-JULY-RIDER-CONTINUITY",
+      "kind": "rate",
+      "start": "2025-07-01",
+      "end": "2025-12-01",
+      "basis": "billing_month",
+      "components": [
+        "environmental",
+        "renewable_projects",
+        "indiana_sales_tax"
+      ],
+      "assumed_values": {
+        "environmental": {
+          "RS": 0.003339,
+          "CS": 0.003699
+        },
+        "renewable_projects": {
+          "RS": 3.8e-05,
+          "CS": 2.8e-05
+        }
+      },
+      "explanation": "Hold March's same-class62/73 factors for July\u2013December. Superseding ECR43 and REP7 approvals are known, but their exact class sheets are missing. The held factors are sensitivity assumptions, not a claim that approved prices were unchanged; later published residential examples show differences.",
+      "sources": [
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+        "https://www.in.gov/iurc/files/ord_42061ECR43_062625.pdf",
+        "https://www.in.gov/iurc/files/ord_44932REP7_060425.pdf",
+        "https://secure.in.gov/iurc/files/2025-Electric-Residential-Bill-Survey-UPDATED.pdf"
+      ]
+    },
+    {
+      "id": "DEI25-DECEMBER-CREDIT67",
+      "kind": "rate",
+      "start": "2025-12-01",
+      "end": "2025-12-01",
+      "basis": "billing_month",
+      "components": [
+        "credits_adjustment",
+        "indiana_sales_tax"
+      ],
+      "assumed_values": {
+        "RS": -0.013516,
+        "CS": -0.013232
+      },
+      "explanation": "Hold the approved September credit67 factors through December despite unresolved temporary wholesale-credit expiration and the missing dated December sheet. This may overstate the credit; no expiration factor is invented.",
+      "sources": [
+        "https://www.in.gov/iurc/files/ord_UA_082025.pdf"
+      ]
+    },
+    {
+      "id": "DEI25-ORDINARY-BASE-CONTINUITY",
+      "kind": "billing_rule",
+      "start": "2025-05-19",
+      "end": "2025-12-31",
+      "basis": "service_date",
+      "components": [
+        "customer",
+        "energy",
+        "indiana_sales_tax"
+      ],
+      "assumed_values": {
+        "rule": "Retain the filed February27 ordinary RS/CS base schedules through2025"
+      },
+      "explanation": "Assume later2025 ordinary RS/CS base prices remain the February27 schedules. The rehearing response describes LLF/HLF amendments, but the final May compliance package has not been recovered; no change to an ordinary account is invented.",
+      "sources": [
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/cf96af5e-6324-f011-998a-001dd80846ac/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038%20_DEI_Duke%20Response%20to%20OUCC%20and%20Industrial%20Group%27s%20Request%20for%20Ruling_04282025.pdf"
+      ]
+    },
+    {
+      "id": "DEI25-BILL-MONTH-ALLOCATION",
+      "kind": "billing_rule",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "basis": "crossing_calendar_month",
+      "components": [
+        "fuel",
+        "environmental",
+        "tdsic",
+        "energy_efficiency",
+        "credits_adjustment",
+        "rto_non_fuel",
+        "reliability",
+        "federal_mandate",
+        "renewable_projects",
+        "load_control",
+        "indiana_sales_tax"
+      ],
+      "assumed_values": {
+        "rule": "Use designated final-service-day billing month for all volumetric rider factors over one complete regular cycle; no day-share blending"
+      },
+      "explanation": "For a complete regular26\u201334day cycle spanning civil months, use its explicit designated billing month for the whole-cycle riders. Individual billed-month clocks are documented, but their joint historical-cycle allocation is not fully verified. Base prices follow service dates; a February27 base-crossing cycle still rejects.",
+      "sources": [
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+        "https://www.in.gov/iurc/files/ord_38707FAC142_123024.pdf",
+        "https://www.in.gov/iurc/files/ord_38707FAC144_062625.pdf",
+        "https://secure.in.gov/iurc/files/ord_38707FAC145_093025.pdf",
+        "https://www.in.gov/iurc/files/ord_UA_082025.pdf"
+      ]
+    }
+  ],
+  "prior_base_observations": {
+    "RS": {
+      "customer": 10.54,
+      "bounds": [
+        300.0,
+        1000.0
+      ],
+      "energy": [
+        0.148799,
+        0.108297,
+        0.098147
+      ]
+    },
+    "CS": {
+      "customer": 10.7,
+      "bounds": [
+        300.0,
+        1000.0,
+        2500.0
+      ],
+      "energy": [
+        0.140571,
+        0.130391,
+        0.11846,
+        0.09656
+      ]
+    }
+  },
+  "prior_recovered_rider_observations": {
+    "fuel": [
+      0.005902,
+      0.005902
+    ],
+    "energy_efficiency": [
+      0.003851,
+      0.003882
+    ],
+    "credits_adjustment": [
+      -0.007166,
+      -0.006399
+    ],
+    "load_control": [
+      0.001406,
+      0.001446
+    ],
+    "federal_mandate": [
+      0.0,
+      0.0
+    ]
+  },
+  "benchmark": {
+    "source": "https://secure.in.gov/iurc/files/2025-Electric-Residential-Bill-Survey-UPDATED.pdf",
+    "basis": "Bills issuedJuly1,2025,1000kWh ordinary simple residential; all trackers included, taxes excluded",
+    "official_total_usd": 157.98,
+    "provisional_model_pre_tax_usd": 163.0677,
+    "difference_usd": 5.0877,
+    "difference_reason": "Held March62/73 differ from later observed factors; do not force match"
+  },
+  "unsupported": [
+    "2026",
+    "TOU beforeFebruary27,2025",
+    "Cycles crossingFebruary27base-reset",
+    "Partial/extended/initial/final cycles outside complete regular26\u201334day scope",
+    "Exports and separately billed wholesale/capacity/transmission components"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "model": "we_energies_wi_2025_provisional_v1",
+  "status": "provisional_study_assumptions_not_verified_tariff_history",
+  "authorization": "User explicitly requested clearly labeled provisional2025 assumptions and residential/commercial full-year validation; no commit/push.",
+  "scope": "Only Wisconsin Electric Wisconsin Rg1/Rg2/Cg1/Cg6 ordinary bundled complete calendar cycles in July–December2025. Verified dates remain unchanged.",
+  "selection": {
+    "rate_evidence_mode": "provisional_2025",
+    "provisional_assumptions_accepted": true,
+    "default_mode": "verified",
+    "default_acceptance": false
+  },
+  "assumptions": [
+    {
+      "id": "WE25-ECC-JUNE-CARRY-FORWARD",
+      "kind": "rate",
+      "start": "2025-07-01",
+      "end": "2025-12-31",
+      "basis": "service_date",
+      "components": [
+        "environmental_control",
+        "state_low_income_assistance",
+        "wisconsin_sales_tax"
+      ],
+      "assumed_values": {
+        "residential_usd_per_kwh": 0.00055,
+        "commercial_non_demand_usd_per_kwh": 0.0005,
+        "reference_service_month": "2025-06",
+        "policy": "carry_forward_last_verified_month"
+      },
+      "explanation": "Provisional study assumption: carry June2025's verified residential0.00055USD/kWh and smallC&I0.00050USD/kWh ECC through July–December2025. Actual filed factors/effective dates, including any midyear/nonroutine change, remain unverified. January2026 factors are not applied backward. Base energy, TOU, fuel and September's fuel refund retain their verified rules. State-assistance fee and sales-tax amounts depend on the assumed ECC; their rules remain verified.",
+      "sources": [
+        "https://s22.q4cdn.com/994559668/files/doc_downloads/2025/June-2025-Monthly-Servicers-Certificate.pdf"
+      ]
+    }
+  ],
+  "verified_terms_preserved": [
+    "2025 base energy and daily customer prices",
+    "plan-specific TOU periods and legal-holiday rules",
+    "zero2025 ordinary fuel adjustment",
+    "September2025 residential-.04054/smallCI-.03620USD/kWh fuel reconciliation",
+    "state fee lower of3%electric subtotal or3.15res/10.66smallCI",
+    "5%unincorporatedWaukesha tax and principal-residence November–April bill-date exemption"
+  ],
+  "reference_evidence": {
+    "path": "docs/utility_sources/we_energies_wi/ecc2025-june-certificate-selected.txt",
+    "sha256": "88f44ed2b69642906f5fafea1bc2910e8e3b3649cf1f8cc5d242846d1fe3f1e1",
+    "original_pdf_sha256": null,
+    "limitations": "Public primary-document search-index extract verifies June only; original bytes inaccessible. It provides proxy values, not evidence of later effective dates."
+  },
+  "dependent_components": [
+    "environmental_control",
+    "state_low_income_assistance",
+    "wisconsin_sales_tax"
+  ],
+  "replacement_evidence_needed": "Actual effective-dated sheet20.2 sequence and/or applicable monthly class-factor certificates for July–December2025, including December and any intervening changes.",
+  "validation_limit": "Arithmetic/dispatch/replay consistency can validate the model implementation but cannot validate assumed rate history or actual customer savings."
+}

@@ -57,6 +57,58 @@ def test_unverified_va_year_rejects_current_rate_substitution():
         driver.case_request("dominion_energy_virginia","residential","annual")
 
 
+@pytest.mark.parametrize("utility,kind,plan,month",[
+    ("we_energies_wisconsin","residential","Rg2",9),
+    ("we_energies_wisconsin","commercial","Cg6",12),
+    ("duke_energy_indiana","residential","RS",1),
+    ("duke_energy_indiana","commercial","CS",7),
+])
+def test_we_duke_annual_provisional_requires_both_account_and_audit_opt_in(utility,kind,plan,month):
+    with pytest.raises(ValueError):
+        driver.case_request(utility,kind,"annual",plan=plan)
+    r=driver.case_request(utility,kind,"annual",plan=plan,allow_we_duke_provisional=True)
+    grid,native,cycles,_=prepare(r)
+    assert len(grid.index)==35040 and len(cycles)==12
+    assert "PROVISIONAL" in r["name"]
+    _,block,cycle=cycles[month-1]
+    account=driver.cycle_account(r["account"],cycle)
+    bill=driver.calculate_cycle(utility,grid.index[block],native[block],np.zeros(block.stop-block.start),account)
+    assert bill["rate_evidence_status"]=="provisional"
+    with pytest.raises(AssertionError,match="explicit opt-in"):
+        driver.checked_bill_scope(bill,utility,account,grid.index[block])
+    assert driver.checked_bill_scope(bill,utility,account,grid.index[block],allow_we_duke_provisional=True)==("provisional_modeled_bill",[])
+    broken=deepcopy(bill)
+    broken["rate_assumptions"][0]["assumed_values"]={"corrupted":True}
+    with pytest.raises(AssertionError,match="intact component assumptions"):
+        driver.checked_bill_scope(broken,utility,account,grid.index[block],allow_we_duke_provisional=True)
+    for status in ("verified",None):
+        broken=deepcopy(bill)
+        broken.update(rate_evidence_status=status,rate_assumptions=[],assumption_model=None,objective_scope="complete_utility_bill")
+        with pytest.raises(AssertionError,match="intact component assumptions"):
+            driver.checked_bill_scope(broken,utility,account,grid.index[block])
+
+
+def test_we_duke_flag_does_not_change_other_utility_enrollment():
+    ordinary=driver.case_request("pseg","residential","annual",plan="RS")
+    opted=driver.case_request("pseg","residential","annual",plan="RS",allow_we_duke_provisional=True)
+    assert ordinary==opted
+
+
+@pytest.mark.parametrize("key,replacement",[("sources",'["https://wrong.example/source"]'),
+    ("start","2024-01-01"),("end","2027-01-01"),("basis","bill_date"),
+    ("components",'[]'),("assumed_values",'{"usd_per_kwh":0}')])
+def test_download_audit_rejects_tampered_assumption_provenance(key,replacement):
+    assumption=dict(id="fixture",start="2025-07-01",end="2025-12-31",basis="service_date",
+        components=["environmental_control"],assumed_values={"usd_per_kwh":.00055},
+        sources=["https://utility.example/verified-june.pdf"])
+    row={k:json.dumps(v) if isinstance(v,(dict,list)) else v for k,v in assumption.items() if k!="id"}
+    row.update(assumption_id="fixture",assumption_model="fixture_model")
+    driver.check_assumption_download(row,"fixture_model",assumption)
+    row[key]=replacement
+    with pytest.raises(AssertionError,match="provenance changed"):
+        driver.check_assumption_download(row,"fixture_model",assumption)
+
+
 @pytest.mark.parametrize("kind,plan",[("residential","VA-1"),("commercial","VA-GS1")])
 def test_va_2025_subtotal_is_explicit_and_keeps_prior_contract_facts(kind,plan):
     r=driver.case_request("dominion_energy_virginia",kind,"annual",plan=plan,allow_va_history=True)
@@ -399,7 +451,8 @@ def test_run_custom_identity_forwarding_and_catalog_based_scope(tmp_path,monkeyp
     monkeypatch.setattr(driver,"summarize",lambda *args:None)
     monkeypatch.setattr(driver,"audit",lambda *args,**kwargs:(
         pd.DataFrame([{"scenario":"grid_only","is_complete_bill":True,"objective_scope":"complete_utility_bill","rate_evidence_status":"not_recorded"}]),
-        pd.DataFrame([{"scenario":"grid_only","component":"customer","amount_usd":10.}]),[]))
+        pd.DataFrame([{"scenario":"grid_only","component":"customer","amount_usd":10.,
+                       "rate_evidence_status":"not_recorded","rate_assumption_ids":"[]"}]),[]))
     result=driver.run(output,tmp_path/".cache"/"weather",cases=[("dominion_energy_virginia","residential","VA-1G")],
         periods=("custom",),start_date="2026-01-01",end_date="2026-06-30")
     assert seen[0][2]=="custom" and seen[0][3]["start_date"]=="2026-01-01" and seen[0][3]["end_date"]=="2026-06-30"

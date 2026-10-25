@@ -10,6 +10,21 @@ function regionalCalendarCycles(start,end) {
     cursor=new Date(Date.UTC(y,m,1)).toISOString().slice(0,10);
   }return result;
 }
+function regionalRateEvidenceContext(plan,account,start,end) {
+  plan=plan||{};account=account||{};
+  const mode=account.rate_evidence_mode||"verified",accepted=account.provisional_assumptions_accepted===true;
+  const fields=(plan.account_fields||[]).filter(d=>d&&typeof d==="object");
+  const modes=fields.find(d=>d.name==="rate_evidence_mode")?.choices||[];
+  const validDates=/^\d{4}-\d{2}-\d{2}$/.test(start||"")&&/^\d{4}-\d{2}-\d{2}$/.test(end||"")&&start<=end;
+  const overlaps=w=>{let last=w.end;
+    if(last&&w.basis==="billing_month")last=new Date(Date.UTC(Number(last.slice(0,4)),Number(last.slice(5,7)),0)).toISOString().slice(0,10);
+    return validDates&&(!w.start||w.start<=end)&&(!last||start<=last);};
+  const declared=plan.provisional_assumptions||[],assumptions=declared.filter(overlaps);
+  const historical=modes.includes("provisional_2025");
+  const relevant=historical?(declared.length?assumptions.length>0:(plan.provisional_coverage||[]).some(overlaps)):modes.some(m=>m!=="verified");
+  return {mode,accepted,relevant,show_controls:relevant||mode!=="verified"||accepted,
+    assumptions,coverage:[...(plan.coverage||[]),...(mode==="provisional_2025"&&accepted?plan.provisional_coverage||[]:[])]};
+}
 function buildRegionalStudyRequest(base,v) {
   const r=JSON.parse(JSON.stringify(base));r.name="Untitled study";
   r.site={latitude:Number(v.latitude),longitude:Number(v.longitude),label:v.site_label,utility:v.utility};
@@ -35,7 +50,7 @@ function buildRegionalStudyRequest(base,v) {
   r.include_degradation_in_optimization=v.include_degradation_in_optimization===true;
   return r;
 }
-if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles};
+if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles,regionalRateEvidenceContext};
 
 if(typeof document!=="undefined") {
   let currentKey=null,nativeCsv=null,era5=null,era5Key=null,wasActive=false,marketCsv=null;
@@ -141,6 +156,9 @@ if(typeof document!=="undefined") {
     if(currentKey!==key){f("plan").replaceChildren(option("","Choose confirmed billing plan…"),...plans().map(p=>{
       const o=option(p.id,p.label+(p.status!=="supported"?" · unavailable":""));o.disabled=p.status!=="supported";o.title=p.reason||p.eligibility||"";return o;}));currentKey=key;$("regional-fields").replaceChildren();}
     const plan=selected();
+    const evidence=regionalRateEvidenceContext(plan,{rate_evidence_mode:field("rg_a_rate_evidence_mode")?.value,
+      provisional_assumptions_accepted:field("rg_a_provisional_assumptions_accepted")?.checked},field("start_date").value,field("end_date").value);
+    for(const name of ["rate_evidence_mode","provisional_assumptions_accepted"]){const input=field("rg_a_"+name);if(input){input.closest("label").hidden=!evidence.show_controls;if(name==="provisional_assumptions_accepted")input.disabled=evidence.mode==="verified";}}
     const previousAlternative=f("alternative").value;
     f("alternative").replaceChildren(option("","No alternative"),...plans().filter(p=>p.status==="supported"&&p.id!==plan?.id&&((p.voltage||utility().accounts[p.id]?.voltage||base().electrical_service.voltage)===(plan?.voltage||utility().accounts[plan?.id]?.voltage||base().electrical_service.voltage))).map(p=>option(p.id,p.label)));
     if([...f("alternative").options].some(o=>o.value===previousAlternative))f("alternative").value=previousAlternative;
@@ -149,16 +167,17 @@ if(typeof document!=="undefined") {
     const ciep=field("utility").value==="pseg"&&(utility().accounts[f("plan").value]?.supply==="bgs_ciep"||field("rg_a_supply")?.value==="bgs_ciep");
     $("regional-ciep").hidden=!ciep;
     const grid=utility().grid_operator||"PJM";
-    const region=grid==="MISO"?`Resource adequacy zone: ${utility().resource_adequacy_zone} · Transmission owner: ${utility().transmission_owner} · LRZ is not a pricing node`:`Transmission zone: ${utility().transmission_zone}`;
+    const region=grid==="MISO"?`Resource adequacy zone: ${utility().resource_adequacy_zone} · Transmission zone: ${utility().transmission_zone||"Not assigned"} · Transmission owner: ${utility().transmission_owner||"Not assigned; verify site-specific ownership"} · LRZ is not a pricing node. ${utility().transmission_ownership_context||""}`:`Transmission zone: ${utility().transmission_zone}`;
     $("regional-identity").textContent=`Distribution: ${utility().label} · Jurisdiction: ${utility().state} · Default retail supplier: ${utility().label} · Grid operator: ${grid} · ${region} · Wholesale pricing identity is separate.`;
     $("regional-coverage").textContent=plan?`${plan.eligibility||"Confirm actual eligibility."} Verified: ${(plan.coverage||[]).map(w=>w.start+" → "+w.end).join(", ")}. ${(plan.limitations||[]).join(" ")}`:"Choose a plan to inspect its verified dates and requirements.";
     if(plan?.provisional_coverage)$("regional-coverage").textContent+=" Provisional coverage, only with explicit acceptance: "+plan.provisional_coverage.map(w=>w.start+" → "+w.end).join(", ")+". These are assumed historical estimates, not verified tariffs.";
-    $("regional-assumptions").hidden=!plan?.provisional_assumptions?.length;
-    $("regional-assumption-list").replaceChildren();for(const item of plan?.provisional_assumptions||[]){const p=document.createElement("p");p.textContent=`${item.id} · ${item.start} → ${item.end} · ${item.basis}: ${item.explanation} Values: ${JSON.stringify(item.assumed_values)}`;$("regional-assumption-list").append(p);}
+    $("regional-assumptions").hidden=!evidence.assumptions.length;
+    $("regional-assumption-list").replaceChildren();for(const item of evidence.assumptions){const p=document.createElement("p");p.textContent=`${item.id} · ${item.start} → ${item.end} · ${item.basis}: ${item.explanation} Values: ${JSON.stringify(item.assumed_values)}`;$("regional-assumption-list").append(p);}
+    if(evidence.mode!=="verified"&&evidence.accepted&&evidence.assumptions.length)$("regional-assumptions").open=true;
     $("regional-sources").replaceChildren();for(const source of [...(plan?.sources||[]),...(utility().grid_sources||[])]){const url=typeof source==="string"?source:source.url;if(!url)continue;const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noreferrer";a.textContent="Official source";$("regional-sources").append(a,document.createTextNode(" · "));}
     $("regional-hypothetical").disabled=f("verification").value!=="hypothetical_case"||!plan;
     for(const opt of field("tariff_id").options)opt.disabled=opt.hidden=opt.value!=="__unset__";
-    for(const p of plans().filter(p=>p.status==="supported")){let o=field("tariff_id").querySelector(`option[value="regional:${p.id}"]`);if(!o){o=option("regional:"+p.id,p.label);o.dataset.regional="true";field("tariff_id").append(o);}o.hidden=o.disabled=false;}
+    for(const p of plans().filter(p=>p.status==="supported")){let o=field("tariff_id").querySelector(`option[value="regional:${p.id}"]`);if(!o){o=option("regional:"+p.id,p.label);o.dataset.regional="true";field("tariff_id").append(o);}o.textContent=p.label;o.hidden=o.disabled=false;}
     field("tariff_id").value=plan?"regional:"+plan.id:"__unset__";
     $("fixed-price-label").hidden=true;$("price-note").textContent="Utility-specific itemized retail bill; all enabled decision-dependent components feed the same authoritative objective. Inspect completeness, sources and reconciliation in results.";
     const csvOption=field("load_mode").querySelector('option[value="csv"]');if(csvOption){csvOption.hidden=csvOption.disabled=false;csvOption.textContent="Uploaded native-load CSV";}
@@ -205,11 +224,11 @@ if(typeof document!=="undefined") {
     if(page.dataset.step==="2"){if(!selected()||!f("reference").value.trim())throw new Error("Choose the actual billing plan and document service or hypothetical assumptions.");const a=accountValue();if(["provisional_2025","provisional_cycles_v1"].includes(a.rate_evidence_mode)&&!a.provisional_assumptions_accepted)throw new Error("Accept the documented provisional rates and billing assumptions before continuing.");}
     if(page.dataset.step==="3"){
       const list=f("cycle_mode").value==="documented"?JSON.parse(f("cycles").value):regionalCalendarCycles(field("start_date").value,field("end_date").value);
-      const a=accountValue(),coverage=a.rate_evidence_mode==="provisional_2025"&&a.provisional_assumptions_accepted?(selected()?.provisional_coverage||[]):selected()?.coverage||[];
+      const a=accountValue(),coverage=regionalRateEvidenceContext(selected(),a,field("start_date").value,field("end_date").value).coverage;
       const covered=day=>coverage.some(w=>w.start<=day&&day<=w.end);
       for(const cycle of list){if(field("utility").value==="pseg"){
         if(!covered(cycle.bill_date))throw new Error("The utility bill date is outside verified tariff coverage. PSE&G selects rates by bill date; review the documented cycles.");
-      }else {if((selected()?.bill_month_coverage_required||field("utility").value==="dte_electric")&&!covered(cycle.bill_date))throw new Error("Bill date is outside verified supply/rider coverage.");for(let day=cycle.start_date;day<=cycle.end_date;){if(!covered(day))throw new Error("Service date "+day+" is outside verified component coverage; no current-rate substitution is used.");const next=new Date(day+"T00:00:00Z");next.setUTCDate(next.getUTCDate()+1);day=next.toISOString().slice(0,10);}}}
+      }else {if((selected()?.bill_month_coverage_required||field("utility").value==="dte_electric")&&!covered(cycle.bill_date))throw new Error("Bill date is outside the selected supply/rider evidence coverage.");for(let day=cycle.start_date;day<=cycle.end_date;){if(!covered(day))throw new Error("Service date "+day+" is outside the selected component coverage. Review verified dates or explicitly accept the documented provisional assumptions in the account step; no automatic substitution is used.");const next=new Date(day+"T00:00:00Z");next.setUTCDate(next.getUTCDate()+1);day=next.toISOString().slice(0,10);}}}
     }
     if(page.dataset.step==="5"&&selected()?.equipment_modes){const mode=field("pv_choice").value==="yes"?(f("battery").checked?"pv_battery":"pv_only"):field("pv_choice").value==="storage"?"storage_only":"grid_only";if(!selected().equipment_modes.includes(mode))throw new Error("This billing plan does not permit the selected PV/storage arrangement. Choose an eligible plan or grid-only operation.");}
     if(page.dataset.step==="4"&&field("weather_source").value==="era5"&&(!era5||era5Key!==weatherKey()))throw new Error("Retrieve ERA5 for the selected site and exact service dates; no weather fallback is used.");
@@ -217,9 +236,9 @@ if(typeof document!=="undefined") {
     if(page.dataset.step==="8"&&!f("electrical_source").value.trim())throw new Error("Document electrical service facts or representative assumptions.");
     return true;
   }catch(e){showError("form-error",e);return false;}}
-  function weatherKey(){return JSON.stringify([field("latitude").value,field("longitude").value,field("start_date").value,field("end_date").value]);}
+  function weatherKey(){return JSON.stringify([field("latitude").value,field("longitude").value,field("start_date").value,field("end_date").value,field("timezone").value]);}
   $("regional-weather-fetch").addEventListener("click",async()=>{const key=weatherKey();try{$("regional-weather-fetch").disabled=true;$("regional-weather-status").textContent="Retrieving ERA5 reanalysis…";
-    const data=await api("/api/v1/regional/weather",{latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),start_date:field("start_date").value,end_date:field("end_date").value});
+    const data=await api("/api/v1/regional/weather",{latitude:Number(field("latitude").value),longitude:Number(field("longitude").value),start_date:field("start_date").value,end_date:field("end_date").value,timezone:field("timezone").value});
     if(key!==weatherKey())throw new Error("Site or dates changed during retrieval; retrieve matching weather again.");era5=data.weather;era5Key=key;$("regional-weather-status").textContent=(data.cached?"Cached":"Retrieved")+" historical reanalysis ready. "+data.provenance.attribution;
   }catch(e){era5=null;era5Key=null;$("regional-weather-status").textContent=e.message;}finally{$("regional-weather-fetch").disabled=false;}});
   f("native_file").addEventListener("change",async()=>{const item=f("native_file").files[0];if(!item){nativeCsv=null;return;}if(item.size>2*1024*1024){nativeCsv=null;$("regional-native-status").textContent="File exceeds 2 MiB.";return;}nativeCsv=await item.text();$("regional-native-status").textContent="Loaded "+item.name+"; exact intervals checked on submission.";});
@@ -237,6 +256,7 @@ if(typeof document!=="undefined") {
     const d=utility().hypothetical_accounts?.[f("plan").value]||utility().accounts[f("plan").value];accountFields(d);f("reference").value="Explicit hypothetical account; all enrollment, contract and history inputs are study assumptions";
     if(d.supply==="bgs_ciep")f("location").value=JSON.stringify({pnode_id:116472957,pnode_name:"PSEG_RESID_AGG",zone:"",source:"Official PSE&G BGS-CIEP seminar, slide with PJM Data Miner node selection"});sync();});
   form.addEventListener("change",event=>{if(!active())return;if(event.target.name==="tariff_id"&&event.target.value.startsWith("regional:")){f("plan").value=event.target.value.slice(9);accountFields(utility().accounts[f("plan").value]);}
+    if(["rg_a_rate_evidence_mode","start_date","end_date","rg_cycles"].includes(event.target.name)){const accepted=field("rg_a_provisional_assumptions_accepted");if(accepted)accepted.checked=false;}
     sync();if(event.target.name==="rg_battery")renderWizard();});
   form.addEventListener("input",()=>{if(active())sync();});
   function restore(r){template=structuredClone(defaultSettings());restoreSiteProfile(r.site_profile);resetUtilityOptions(r.site.utility);field("utility").value=r.site.utility;siteLabel=r.site.label;

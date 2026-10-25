@@ -1,0 +1,473 @@
+{
+  "retrieved_date": "2026-10-24",
+  "scope": "VerifiedMarch2025 ordinary bundled non-export RS/CS standard/TOU; separately accepted provisional2025 research composites do not extend verified history.",
+  "supported_coverage": [
+    {
+      "start": "2025-03-01",
+      "end": "2025-03-31"
+    }
+  ],
+  "full_year_2025_supported": false,
+  "coverage_gaps": [
+    "Jan1\u2013Feb26,2025: priorclass factors62(ECR42),65(TDSIC3),68(RTO60),70(SRA9),73(REP6) still need actualtables; isolatedverifiedbase/60/66/67/72/74 do not formacompletebill",
+    "April\u2013June2025: FAC143 signedfinaltariff required; officialorder numericformula and printedresult conflict in sign",
+    "July\u2013December2025: ECR43/REP7 approvedclassfactor tables andDecember67expiration/datedtariff remainmissing",
+    "May19,2025 rehearingcompliance scope must establish whetherRS/CStariffs changed",
+    "TOU: filed6.5/7.5 tables/calendar language differsfromorder witnesssummary andcurrentbusinessguide weekday/holiday treatment; no preFeb27pricing or expandedTOUdateclaim",
+    "2026 Step2 base/rider histories andApril2026 generationcosttracker unsupported"
+  ],
+  "sources": [
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+      "sha256": "9c50c4d56f00b6803dc2ee4d6b4e6d4105e713a979f13760a5aac499851d35d6",
+      "bytes": 3844533,
+      "pages": 303,
+      "label": "compliance2025-tariffs",
+      "selected_pdf_pages": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        153,
+        154,
+        155,
+        156,
+        160,
+        161,
+        218,
+        219,
+        220,
+        221,
+        236,
+        239,
+        245,
+        254,
+        286,
+        289,
+        292,
+        295,
+        298,
+        303
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/compliance2025-tariffs-selected.txt",
+      "extracted_text_sha256": "d0c3cba9d022584e6bc68ac168afde62a16fd303f53091360a2fee919e76773e"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/1a6a7d17-82f3-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038%20Duke%20DE%20Step%201%20tariff%20filing.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/1a6a7d17-82f3-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038%20Duke%20DE%20Step%201%20tariff%20filing.pdf",
+      "sha256": "1d323965df7c2b391536857cd0ff2ae7196621325a0d32688211d0079afaac4b",
+      "bytes": 327900,
+      "pages": 2,
+      "label": "review-step1-acceptance",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/review-step1-acceptance-selected.txt",
+      "extracted_text_sha256": "0c73aa8ad92a1778002581e4fbb6df427595eece32f06c89aa3732f019b8c726"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/245d050d-5bde-ef11-8eea-001dd808c9d7/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=ord_46038_012925.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/245d050d-5bde-ef11-8eea-001dd808c9d7/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=ord_46038_012925.pdf",
+      "sha256": "fa6c890cf914223f948e99f4cd691f73acbd46d9db5cecf117d2bc6403c0b175",
+      "bytes": 1204774,
+      "pages": 139,
+      "label": "order-Jan29",
+      "selected_pdf_pages": [
+        137,
+        138,
+        139
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/order-Jan29-selected.txt",
+      "extracted_text_sha256": "2e7eac2676649cb53dd6ff4a86f7fe7523db71ca52971f1e72f0457ab4ebc906"
+    },
+    {
+      "url": "https://www.in.gov/dor/resources/tax-rates-and-reports/rates-fees-and-penalties/corporate-sales-tax-history/",
+      "resolved_url": "https://www.in.gov/dor/resources/tax-rates-and-reports/rates-fees-and-penalties/corporate-sales-tax-history/",
+      "retrieved_at": "2026-10-24T21:45:16.707108+00:00",
+      "sha256": "22e4a498a97a453338a835aeec862013bbe087fbb78309183ab431df1b8d46d8",
+      "extracted_text_sha256": "6ebdcf9b846186cc567ceba30222a9f0f020ec5f435a7a68b2644614abedcd02",
+      "label": "root-indiana-tax-history",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/duke_in/root-indiana-tax-history-selected.txt"
+    },
+    {
+      "url": "https://www.in.gov/dor/about/news-publications/our-team/tax-types/",
+      "resolved_url": "https://www.in.gov/dor/about/news-publications/our-team/tax-types/",
+      "retrieved_at": "2026-10-24T21:45:17.258072+00:00",
+      "sha256": "b00f4cead8308eecad1d3dee7b346588958c3f346d36d28cf428b040a528df8b",
+      "extracted_text_sha256": "6904d42cbac9b0908f2807764f2a4152687013d36db019f567ed8f1837ebdcd8",
+      "label": "root-indiana-tax-types",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/duke_in/root-indiana-tax-types-selected.txt"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/bd20f5cb-b4e8-ef11-be20-001dd80b89f5/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Petitioner%e2%80%99s%20Notice%20of%20Filing%20Revised%20Confidential%20Information_021125.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/bd20f5cb-b4e8-ef11-be20-001dd80b89f5/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Petitioner%E2%80%99s%20Notice%20of%20Filing%20Revised%20Confidential%20Information_021125.pdf",
+      "sha256": "6a2ae0cd568baf1d65d03800c3129af484b10fe094247c6426dd2a88547e219d",
+      "bytes": 113384,
+      "pages": 6,
+      "label": "review-step1-feb11-notice",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/review-step1-feb11-notice-selected.txt",
+      "extracted_text_sha256": "7970f33e8f292eb74d4ffb6a397f7b3e406a8fe48bdfdaf0d9cb4660bffa2d54"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/4ccae390-80e9-ef11-be20-001dd80ad83d/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_Duke%20Energy%20Indiana%20Compliance%20Filing%20Step%201%20Attachment%20A%20Submittal_02122025.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/4ccae390-80e9-ef11-be20-001dd80ad83d/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_Duke%20Energy%20Indiana%20Compliance%20Filing%20Step%201%20Attachment%20A%20Submittal_02122025.pdf",
+      "sha256": "a519651aceee23352757714c86d18ad6076989a1510c1e0c179dd2da18e25961",
+      "bytes": 113718,
+      "pages": 5,
+      "label": "review-step1-feb12",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/review-step1-feb12-selected.txt",
+      "extracted_text_sha256": "a5f86b223e23b9c1baf4e73fccaade04f1798f1457cbb36d0a4af77840372f8e"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9b61cc1c-c6e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20C_Redline%20and%20Clean%20Tariff_020725.pdf",
+      "sha256": "9c50c4d56f00b6803dc2ee4d6b4e6d4105e713a979f13760a5aac499851d35d6",
+      "bytes": 3844533,
+      "pages": 303,
+      "label": "compliance2025-tariffs-historical",
+      "selected_pdf_pages": [
+        34,
+        35,
+        39,
+        40,
+        41,
+        44,
+        45
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/compliance2025-tariffs-historical-selected.txt",
+      "extracted_text_sha256": "dd3905d8cc0218126c56b47e9491df14d8b255dbd2902537f7930eb47c6a1774"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/a20b062d-56f3-ee11-904c-001dd80b3def/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Petitioner%27s+Ex.+7+-+Flick+Direct_040424.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/a20b062d-56f3-ee11-904c-001dd80b3def/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Petitioner%27s+Ex.+7+-+Flick+Direct_040424.pdf",
+      "sha256": "06d3fbfbd7a67d7273b2b673535c425648e9844c893252773a6ab57725a13565",
+      "bytes": 12708438,
+      "pages": 392,
+      "label": "flick-direct2024-historical",
+      "selected_pdf_pages": [
+        15,
+        16,
+        23,
+        387,
+        389
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/flick-direct2024-historical-selected.txt",
+      "extracted_text_sha256": "b3916c01de5199f2c645b39a9074efdc1646244c35045114ea1e322afab60d3d"
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_38707FAC142_123024.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_38707FAC142_123024.pdf",
+      "sha256": "1d5fcf144bedee72f205cd987e2d6323192906382a58da6d7d736a700524f9be",
+      "bytes": 260837,
+      "pages": 11,
+      "label": "historical-fac142-order-historical",
+      "selected_pdf_pages": [
+        1,
+        8
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/historical-fac142-order-historical-selected.txt",
+      "extracted_text_sha256": "7c2b1037c524464ad18d95d0f120232822c2f845444a098549bdc5f119e46260"
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_UA_121824.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_UA_121824.pdf",
+      "sha256": "40464af02e0eb653aba012bd01d080c3b81db157321ca8fb0384d16bd5bf823c",
+      "bytes": 347596,
+      "pages": 12,
+      "label": "historical-credits67-jan-approval-historical",
+      "selected_pdf_pages": [
+        1,
+        2,
+        5
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/historical-credits67-jan-approval-historical-selected.txt",
+      "extracted_text_sha256": "85744626145f866ee0fb325285bae02195ddcab0af0bd19a3d9fb323ad6346d1"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9cc5b793-3bb3-ef11-b8e9-001dd808c9d7/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=45803+DSM-1_DEI_Submission+of+Final+Tariffs_120524.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/9cc5b793-3bb3-ef11-b8e9-001dd808c9d7/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=45803+DSM-1_DEI_Submission+of+Final+Tariffs_120524.pdf",
+      "sha256": "09aeb0b2cabd8195f795a4ca4c20cec763fd2a9db615db2982edb24f96c16e70",
+      "bytes": 1707950,
+      "pages": 43,
+      "label": "dsm-final2025-historical",
+      "selected_pdf_pages": [
+        1,
+        10,
+        43
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/dsm-final2025-historical-selected.txt",
+      "extracted_text_sha256": "c2d240ea71cfee40363df9cdc87b8fdbdd98ed5720cd7598305fda28d2be1e16"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/fd30dc30-c8e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20I_Tracker%2067%20Credit%20page%201.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/fd30dc30-c8e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20I_Tracker%2067%20Credit%20page%201.pdf",
+      "sha256": "3e4794ee049e3525d71ab3598dc09be22470cc521dc0d0a02b959af3a2b5e92e",
+      "bytes": 106826,
+      "pages": 1,
+      "label": "history2025-review-credit67-step1-overview-historical",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/history2025-review-credit67-step1-overview-historical-selected.txt",
+      "extracted_text_sha256": "0fe9ddb6b55107e3c032a8ccb6bc17e7adca2fe28f4f80e133d3a9721727b758"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/4fa592cd-c8e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20K_Tracker%2070%20SRA%20%20Page%201_020725.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/4fa592cd-c8e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20K_Tracker%2070%20SRA%20%20Page%201_020725.pdf",
+      "sha256": "2adecf73ee652fb921cdb6b179df3badb6b60fdc122b1c3883500c209b76ae7c",
+      "bytes": 157990,
+      "pages": 1,
+      "label": "review-compliance70-historical",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/review-compliance70-historical-selected.txt",
+      "extracted_text_sha256": "9c9e10c75052e4437696eadeab84bcdc2ecda6415708aa9167839df7c1ba3f2e"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/245d050d-5bde-ef11-8eea-001dd808c9d7/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=ord_46038_012925.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/245d050d-5bde-ef11-8eea-001dd808c9d7/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=ord_46038_012925.pdf",
+      "sha256": "fa6c890cf914223f948e99f4cd691f73acbd46d9db5cecf117d2bc6403c0b175",
+      "bytes": 1204774,
+      "pages": 139,
+      "label": "order-Jan29-clock-calendar",
+      "selected_pdf_pages": [
+        84,
+        85,
+        101,
+        102,
+        103,
+        136
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/order-Jan29-clock-calendar-selected.txt",
+      "extracted_text_sha256": "4ec72ed677ccaa3c817b253b30692583c36b78cda7399a00e2843bb5d3bc04ed"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/d3900df2-c8e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20L_Tracker%2072%20FMCA%20page%201_020725.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/d3900df2-c8e7-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038_DEI_Step%201%20Compliance%20Filing_Attachment%20L_Tracker%2072%20FMCA%20page%201_020725.pdf",
+      "sha256": "5a100ceba50c67c06cdfe78bf4e5af07138d5db78f73da6997e0a6730a612330",
+      "bytes": 136016,
+      "pages": 1,
+      "label": "review-compliance72-currentzero",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/review-compliance72-currentzero-selected.txt",
+      "extracted_text_sha256": "0c14bc701003a93598694c8c754f9ca5e85c73557f23935d1008504f6c234402"
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_38707FAC144_062625.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_38707FAC144_062625.pdf",
+      "sha256": "88c06d88fd52bf0976cdcf3cba563eed6dc7fdcb14b94e25bcdb7470768be199",
+      "bytes": 296159,
+      "pages": 14,
+      "label": "history2025-fac144",
+      "selected_pdf_pages": [
+        1,
+        11
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/history2025-fac144-selected.txt",
+      "extracted_text_sha256": "a0d8d18bf6f2a582dc685f9ec026fbb68df80bf856c63d7f9efdd19eba684dba"
+    },
+    {
+      "url": "https://secure.in.gov/iurc/files/ord_38707FAC145_093025.pdf",
+      "final_url": "https://secure.in.gov/iurc/files/ord_38707FAC145_093025.pdf",
+      "sha256": "155725d80ea3839f5b206094421b1a3ea4f1a5107e68a82718885def6223f0af",
+      "bytes": 303841,
+      "pages": 14,
+      "label": "history2025-fac145",
+      "selected_pdf_pages": [
+        1,
+        11
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/history2025-fac145-selected.txt",
+      "extracted_text_sha256": "2d8b5c8146ef2b57714567bd7b33074951644fd749eef84840d0595829a745b2"
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_UA_082025.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_UA_082025.pdf",
+      "sha256": "788a140ad9917f1acdf9d855e6185d197bdeb6d5b47bce487e8c89d8a22ff661",
+      "bytes": 318688,
+      "pages": 3,
+      "label": "history2025-credits67-september",
+      "selected_pdf_pages": [
+        1,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/history2025-credits67-september-selected.txt",
+      "extracted_text_sha256": "5b2a4f3fa51aaa29483db994ea338aedc44f87e9d9b50ef987cb1a444beff82b"
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_45803DSM2_100825.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_45803DSM2_100825.pdf",
+      "sha256": "f77ee2541fc354628d4595a4a12f30ed7324eba01c26567685722b28f2f4912a",
+      "bytes": 258940,
+      "pages": 9,
+      "label": "history2025-dsm2-next2026",
+      "selected_pdf_pages": [
+        1,
+        9
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/history2025-dsm2-next2026-selected.txt",
+      "extracted_text_sha256": "cb9987ce4c46915463d5cf4a02d31fe06ebcbe0a437d7a5cf77f5c1ee7e3ddf1"
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_45647TDSIC5_040826.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_45647TDSIC5_040826.pdf",
+      "sha256": "879542805aa6ab5912fb7d7c0f68f0101ff3a0cf52d3b64cfe333535b260627e",
+      "bytes": 302305,
+      "pages": 17,
+      "label": "history2025-tdsic5-next2026",
+      "selected_pdf_pages": [
+        1,
+        3,
+        11
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/history2025-tdsic5-next2026-selected.txt",
+      "extracted_text_sha256": "611512e479b6aeb8b919613164a1ce7e2ccc90e5454f63a7abf627b6f3fc3c03"
+    },
+    {
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/cf96af5e-6324-f011-998a-001dd80846ac/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038%20_DEI_Duke%20Response%20to%20OUCC%20and%20Industrial%20Group%27s%20Request%20for%20Ruling_04282025.pdf",
+      "final_url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/cf96af5e-6324-f011-998a-001dd80846ac/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46038%20_DEI_Duke%20Response%20to%20OUCC%20and%20Industrial%20Group%27s%20Request%20for%20Ruling_04282025.pdf",
+      "sha256": "bd40ee11d90caf8de3ffe9ee5b9a95f983c19e8b34a0e458e63effbd25c298b2",
+      "bytes": 172119,
+      "pages": 6,
+      "label": "history2025-apr28-amendment-scope",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/history2025-apr28-amendment-scope-selected.txt",
+      "extracted_text_sha256": "a4b06f9b02bc723cde71c110c225955d6beb5c909237d1de9becf6bf48da5db2"
+    },
+    {
+      "url": "https://www.duke-energy.com/business/billing/rates/new-2025-tou-rates-dei",
+      "final_url": "https://www.duke-energy.com/business/billing/rates/new-2025-tou-rates-dei",
+      "sha256": "aff6a11a347e39e49fffded0657f5fdfa67ea34522a3d9f2471c3f7c6161bb90",
+      "label": "official-new2025-tou",
+      "source_format": "html",
+      "extracted_text": "docs/utility_sources/duke_in/official-new2025-tou-selected.txt",
+      "extracted_text_sha256": "6f11152b205bf3079ff268c690f5345d677fa19dabc0979afc306d9d1cf8a235",
+      "scope_note": "Generic business TOU guidance does not identifyRS6.5/CS7.5 and cannot replace their filed rules; retained as unresolved discrepancy evidence."
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_38707FAC143_032625.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_38707FAC143_032625.pdf",
+      "sha256": "a1cd982a554add3cdf2a6bf78056c57ee5329b0568dfa1bb2aa493367704442e",
+      "bytes": 253669,
+      "pages": 10,
+      "label": "provisional2025-fac143",
+      "selected_pdf_pages": [
+        1,
+        8
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/provisional2025-fac143-selected.txt",
+      "extracted_text_sha256": "5fee91c545508345332ce651b232e39e9f56e52a367fc0c8aa502532e5868ee9",
+      "scope_note": "Printed result sign conflicts with arithmetic; negative factor is an explicitly provisional assumption."
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_42061ECR43_062625.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_42061ECR43_062625.pdf",
+      "sha256": "fc3a311ee9446daf763373c8624aa7d4c2689a779ce12a18a39be61523b4dc18",
+      "bytes": 248991,
+      "pages": 8,
+      "label": "provisional2025-ecr43-known-supersession",
+      "selected_pdf_pages": [
+        1,
+        8
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/provisional2025-ecr43-known-supersession-selected.txt",
+      "extracted_text_sha256": "9dbeb15639faed9aecceda13c07e9ec62a4bda2ab408514f521bbc984def2edf",
+      "scope_note": "Approval establishes supersession; actual class factor sheets not recovered."
+    },
+    {
+      "url": "https://www.in.gov/iurc/files/ord_44932REP7_060425.pdf",
+      "final_url": "https://www.in.gov/iurc/files/ord_44932REP7_060425.pdf",
+      "sha256": "1c362b4105743c9174a2bf1634f3e9c436bf9a0a3fcf4a760a4c4dca67252942",
+      "bytes": 277391,
+      "pages": 8,
+      "label": "provisional2025-rep7-known-supersession",
+      "selected_pdf_pages": [
+        1,
+        8
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/provisional2025-rep7-known-supersession-selected.txt",
+      "extracted_text_sha256": "4693e1e296af708590541dc08a32d68e44e0085a465b3acc1fff510e27db94f9",
+      "scope_note": "Approval establishes supersession; actual class factor sheets not recovered."
+    },
+    {
+      "url": "https://secure.in.gov/iurc/files/2025-Electric-Residential-Bill-Survey-UPDATED.pdf",
+      "final_url": "https://secure.in.gov/iurc/files/2025-Electric-Residential-Bill-Survey-UPDATED.pdf",
+      "status": 200,
+      "sha256": "92b34eba0bbdc0f88a97fb5684ae46a864598676052b416eb9c64f7ba50007c8",
+      "bytes": 298241,
+      "pages": 9,
+      "label": "provisional2025-independent-july-survey",
+      "selected_pdf_pages": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "extracted_text": "docs/utility_sources/duke_in/provisional2025-independent-july-survey-selected.txt",
+      "extracted_text_sha256": "db1bcc22a896836d71b21f928be1bb8d78f80e68c2d459c5775daa2dc4c54c10",
+      "scope_note": "Rounded July1 bill snapshot; independent benchmark, not exact class factor source."
+    }
+  ],
+  "compliance_revision_review": "February11 only redesignates confidentiality of special contracts; February12 resubmits missing AttachmentA revenue requirements. Neither changes ordinary public RS/CS tariff or rider sheets. February25 EnergyDivision approval is interim subjectrefund.",
+  "support_images": [
+    {
+      "path": "docs/utility_sources/duke_in/prior-rs-base-redline.png",
+      "sha256": "aa3c789b33109a9eff8b55c5569c17224df59fe28bc08216a2b67637b9ddeb81"
+    },
+    {
+      "path": "docs/utility_sources/duke_in/prior-cs-base-redline.png",
+      "sha256": "a3f604742b527e46e551a658bed341db66a1caf5f5254133cdcef697b5c0693c"
+    }
+  ],
+  "billing_cycle_scope": "Complete explicitly confirmed regular26\u201334day meter cycles, full schedule under GTC12.4; designated billing month separate from service dates. Current complete-rate gate onlyMarch2025. Base-reset crossings reject.",
+  "calendar_evidence_status": {
+    "RS": "not_time_of_use",
+    "CS": "not_time_of_use",
+    "RS-TOU": "filed_sheet_interpretation_utility_confirmation_required",
+    "CS-TOU": "filed_sheet_interpretation_utility_confirmation_required"
+  },
+  "provisional_model": "duke_indiana_2025_provisional_v1",
+  "provisional_full_year_2025_standard_supported": true,
+  "provisional_assumption_ledger": "docs/utility_sources/duke_in/provisional2025-assumptions.json"
+}

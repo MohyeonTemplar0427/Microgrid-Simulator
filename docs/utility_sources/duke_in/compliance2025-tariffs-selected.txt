@@ -1,0 +1,2099 @@
+PDF PAGE 131
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 1 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+Page Number 
+ 
+1. Definitions................................................................................................................... 2 
+2. Tariff on File .............................................................................................................. 6 
+3. Application, Service Request or Contract ................................................................. 6 
+4. Service Deposit .......................................................................................................... 7 
+5. Service to be Furnished ............................................................................................ 8 
+6. Character of Service .................................................................................................. 8 
+7. Predication of Rates .................................................................................................. 11 
+8. Rate Schedule Selection ............................................................................................ 12 
+ 9. Service Extensions/Modifications ...............................................................................  12 
+10. Company Equipment on Customer's Premises ........................................................ 13 
+11. Customer's Installation .............................................................................................. 13 
+12. Rendering and Payment of Bills ................................................................................ 14 
+13. Customer's Request to Discontinue Service .............................................................. 15 
+14. Company's Right to Refuse or Discontinue Service .................................................. 15 
+15. Meter Accuracy—Adjustment..................................................................................... 16 
+16. Interruptions, Variations in Service Characteristics .................................................. 16 
+17. Non-Permanent Service ............................................................................................ 17 
+18. Customer's Use of Service—Resale and Redistribution............................................ 17 
+19. Auxiliary Service, Supplementary, Backup and Maintenance Power ....................... 17 
+20. Customer's Inability to Operate .................................................................................. 18 
+21. Tax Adjustment ......................................................................................................... 18 
+22. Service Contracts ...................................................................................................... 18 
+
+PDF PAGE 132
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 2 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+1.   Definitions 
+ 
+For the purpose of better understanding this tariff, the words and expressions listed below shall have 
+the following meanings: 
+ 
+Abbreviations: The following abbreviations will be used: 
+ 
+Horsepower - HP 
+Kilovolt-ampere(s) - kVA 
+Kilowatt(s) - kW 
+Kilowatt-hour(s) - kWh 
+Load Factor - LF 
+Overhead System - OH 
+Power Factor - PF 
+Reactive Kilovolt-ampere(s) - kVAr 
+Reactive Volt-ampere(s) - VAr 
+Reactive Kilovolt-ampere(s) Hours - rKVAh 
+Underground System - UG 
+Volt-ampere(s) - VA 
+Watt(s) - W 
+ 
+Add Consumption:  The algebraic sum of readings of multiple metering points for one customer at 
+one premise as though the customer’s energy delivery were through one meter. 
+ 
+Agreement or Application: A contract or service request for a supply of electric service. 
+ 
+Apartment: Premises containing two or more individual residential dwelling units. Hotels, tourist camps, 
+motels, hospitals, nursing homes, etc., consisting primarily of  guest rooms and/or transient 
+accommodations, are not included. 
+ 
+Auxiliary Service: Service supplied for a part of Customer's load requirements, the wiring for which is 
+entirely separate and apart from the wiring to the remainder of Customer's electric requirements when 
+the latter are furnished by Customer's privately-owned generating equipment. 
+ 
+Billing kW or Billing kVA: Customer's maximum load expressed in kW or kVA (as adjusted in 
+accordance with the applicable rate) which will be used in the calculation of the bill. 
+ 
+Billing Cycle: Company's schedule for meter reading and billing which distributes the starting dates for 
+billing periods throughout the month. 
+ 
+Billing Period or Month: The interval between two consecutive meter readings that are taken for billing 
+purposes. Such readings will be taken as nearly as practicable every 30 days. All rate schedules are 
+on the basis of charges per month unless otherwise specifically stated in the rate schedule. 
+ 
+Breakdown, Reserve or Standby Capacity: Service available for Customer's load requirements in 
+whole, or in part, for use in the event of temporary failure of Customer's privately-owned generating 
+equipment. 
+ 
+Commission: Indiana Utility Regulatory Commission - the regulatory body in Indiana. 
+ 
+Company: Duke Energy Indiana, LLC, sometimes referred to as Duke Energy Indiana or Duke Energy. 
+
+PDF PAGE 133
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 3 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+Contract Year: Twelve consecutive billing periods used in the application of rate schedules. 
+ 
+Contracted Capacity: Customer's specified load requirements expressed in kW or kVA for which 
+Customer contracts and Company is obligated to supply.  
+Cost of underground service extension:  The actual incremental cost of establishing underground service 
+to a customer from the Company’s standard for service. 
+ 
+Cost of modifications to service extensions:  The Company’s cost of altering any service extension after 
+initial installation and before the expiration of its useful life. 
+ 
+Customer: Any person, corporation, municipality, governmental agency or other entity receiving, 
+and agreeing to pay for, electric service from the Company . 
+  
+Delivery Poin t: T he point of the physical c onnection between Company's and Customer's fac ilities 
+beyond which poi nt Cus tomer rece ives and a ssumes res ponsibility a nd liability f or the se rvice 
+rendered. 
+  
+Delivery Voltage: The
+ voltage of Company's facilities at the delivery point. 
+  
+Distribution Line: Any electric line of Company operated at a nominal voltage of 34,500 volts or less.  
+ 
+Distribution Network: The underground distribution system and/or the overhead distribution system.  
+ 
+Energy: The active component of the quantity of supply expressed in kWh. 
+ 
+Horsepower: A unit of delivered power typically used to r ate the nominal size of a motor and the load 
+or demand which such m otor im poses on an elect ric s upply system. T he horsepower rati ng of a 
+motor can be converted into kilowatts, as follows: 
+  
+1 HP = 0.746 kW 
+  
+kVa: 1,000 volt-amperes (VA). The kW of a given load divided by the corresponding power factor 
+expressed as a decimal is equal to the kVa, for example: 
+ 
+ 
+600 𝑘𝑘𝑘𝑘𝑘𝑘 = 540 𝑘𝑘𝑘𝑘
+0.90 𝑃𝑃𝑃𝑃 
+ 
+ 
+          kVAr: 1,000 reactive volt-amperes (VAr)  
+            
+ kW: 1,000 Watts 
+  
+  kWh: The use of the active component of power where 1 kWh is equal to 1 kW used for 1 hour.  
+ 
+  
+
+PDF PAGE 134
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 4 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ For example, a 10 Watt light bulb used continuously for 730 hours is equal to 7.3 kWhs: 
+  
+10 Watts = 0.01 kW and 
+0.01 kW x 730 Hours = 7. 3 kWhs 
+  
+Load Factor: Monthly kWh consumed divided by the product of the average hours per month (730 
+hours) times the kW maximum load in the month, expressed as a percentage: 
+ 
+1000 𝑘𝑘𝑘𝑘ℎ
+5 𝑘𝑘𝑘𝑘 𝑋𝑋 730 𝐻𝐻𝐻𝐻𝐻𝐻 𝑝𝑝𝑝𝑝𝐻𝐻 𝑀𝑀𝑀𝑀
+𝑀𝑀𝑀𝑀ℎ  = 27.40% 
+ 
+Maximum Load: T he maximum i ntegrated rate of use of pow er during a s pecified time i nterval as 
+provided in the rate schedule, expressed in kW or kVa. 
+  
+Meter: The complete installation of equipment needed to measure the maximum load a nd/or energy 
+supplied to Customer. 
+  
+Meter Voltage: The voltage at which service is metered irrespective of the delivery voltage. 
+  
+Nominal Voltage: The designated voltage assigned to a circuit or system of a given voltage class for 
+the purpose of convenient identification. 
+  
+Overhead
+ System: T hose parts of Company's dist ribution sys tem which are c onstructed on a nd 
+supported primarily by wooden poles. 
+ 
+Power Fac tor (P F): The ratio of active power expressed in kW to apparent power expressed in 
+kVA: 
+ 
+0.90 𝑃𝑃𝑃𝑃 = 540 𝑘𝑘𝑘𝑘
+600 𝑘𝑘𝑘𝑘𝑘𝑘  
+ 
+ 
+Premises: A distinct portion of contiguous real estate on which is located the living quarters for the use 
+of a single family, or the main buildi ng or main operation of a co mmercial or industrial Customer and 
+which may include the immediate outlying or adjacent buildings used by the same Customer, provided 
+the use of service in the immediate outlying or adjacent buildings is supplemental and is similar to the 
+type of service used in the main residence, main building or main operation. 
+ 
+Primary Direct Service:  Service at a delivery voltage of 2,400 to 34,000 volts provided directly from a 
+distribution substation.  Service may come from a dedicated substation, or from a proximate distribution 
+circuit that does not serve other primary and/or secondary served customers.  Applicability is subject to 
+Duke Energy Indiana’s determination. 
+Primary Line:  Any distribution line of the Company operated at a nominal voltage between 2,400 volts 
+and 34,500 volts. 
+
+PDF PAGE 135
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 5 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+Rate Schedule: A part of the tariff which sets forth the availability and charges for service supplied to 
+a particular class of customers. 
+ 
+Reactive Volt-Amperes (VAR): Represents the product of volts and amperes that are out of phase with 
+each other known as the reactive component of power. 
+ 
+Residential Dwelling Unit: An individual residence including mobile homes and trailers, or a room or 
+combination of rooms with facilities for private living for a single family. 
+ 
+Rider: A part of the tariff setting forth supplemental provisions applicable to specific rate schedules.  
+ 
+rKVAh: The metered use of the reactive component of power. 
+ 
+Secondary Line: Any distribution line of Company operated at a voltage under 600 volts. 
+Service: The supply of electric energy delivered by Company to Customer. 
+Service Conductors: Company's wires extending from the point of connection with Company's supply 
+line to the delivery point. 
+ 
+Substation: The electric equipment and structures, including transformers, switches, protective devices 
+and other apparatus necessary to transform energy from a transmission or primary line voltage. 
+ 
+Supplemental Service: Service which is normally supplied from Company's facilities in addition to 
+service supplied by Customer's privately-owned generating equipment. 
+ 
+Tariff: The entire body of rate schedules, riders, general terms and conditions for electric service. 
+Transmission Line: Any electric line of Company operated at a voltage above 34,500 volts. 
+Underground System: Those parts of Company's distribution system which are constructed an d 
+installed underground. 
+ 
+Volt-Amperes (VA): Apparent power and equal to the vectorial sum of the active and reactive 
+components of power.  
+ 
+Volt-Amperes (VAR): Reactive component of power. 
+Watt (W): Active component of power. 
+
+PDF PAGE 136
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 6 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+2. Tariff on F ile 
+ 
+2.1    A copy of the Tari ff is on f ile wi th the Commission, ava ilable on the      i nternet      at      
+address  https://www.duke-energy.com/home.   A copy of the Rules and Regulations of Service 
+for Electrical Uti lities in Indi ana i s a lso available on the internet at 
+http://www.in.gov/legislative/iac/iac_title?iact=170. 
+ 
+2.2    T he Commission has continuing jurisdiction over the Tariff i n its entirety. The Tariff, or any part 
+thereof, may be re vised, am ended, or otherwise c hanged fr om time to time in the m anner 
+prescribed by the Public Service Commission Act of Indiana (as amended) or by other applicable 
+laws, and any such c hanges, when approved by the Commission, will s upersede the present 
+Tariff. 
+ 
+2.3   T he G eneral Terms and C onditions for Electric Serv ice sets for th the conditi ons under which 
+service is to be rendered, and governs all classes of service to the extent applicable. In case of 
+conflict between any pro vision of a Ra te Schedule a nd/or Tariff and t he G eneral Terms and 
+Conditions for Electric Service, the provisions of the Rate Schedule and/or Tariff shall prevail. 
+ 
+2.
+4    Company shall have t he ri ght to exec ute contracts for ser vice un der any Ra te Sc hedule a nd 
+Tariff. Com pany shall also have t he rig ht to execute other c ontracts f or ser vice which ma y 
+contain provisio ns not includ ed in t he Tari ff, provid ed, however, s pecific a pproval by t he 
+Commission of such contracts shall be obtained by Company. 
+ 
+2.5   Company may implem ent programs which c ontain pro visions that deviate fr om the Gener al 
+Terms and Conditions for Electric Ser vice, Rate Sch edules, and/or Tariffs wi th Commission 
+approval. 
+ 
+3. Appli catio
+n, Service Request or Contract 
+ 
+3.1    An application in the form of Company's service request or a contract, and a serv ice deposit as 
+provided for in Section 4 hereof, may be required by Company before service will be provided. 
+ 
+3.2    Company shall have the right to require payment for unpaid prior service balances f or the benefit 
+of a form er Customer who is i ndebted to Com pany for the same class of se rvice previou sly 
+supplied at any premises in the Company's service area, or for any other valid or legal reason. 
+ 
+3.3    Certain rate schedules specify a minimum term of contract. In the absence of such requirement 
+in any rate schedule, Company may require a term of contract commensurate with the size of 
+Customer's load which Com pany is obli gated to serve an d/or the cost to Com pany of maki ng 
+service available. 
+ 
+3.
+4    No agent or employee of Company has the authority to am end, modify, alter or waive any par t 
+of the Tariff. 
+ 
+3.5    In written contracts, no promises, agreements or representations of an agent or an employee of 
+Company shall be binding unless such promises, agreements or r epresentations wer e 
+incorporated in the contract before its execution and approval. 
+
+PDF PAGE 137
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 7 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+ 
+3.6.   The benefit and obligations under any service request or contract shall inure to and be binding 
+upon the successors and assigns, survivors and executors or administrators (as the case may 
+be) of the original parties thereto; provided, however, that no assignment shall be made by 
+Customer without first obtaining Company's written consent. Company may require the 
+successor either to execute with Company an assignment agreement wherein the successor- 
+Customer assumes and agrees to be bound by the original contract, or to execute a new contract 
+for service. 
+ 
+3.7    Whether manually or remotely initiated the act of taking service shall constitute an application 
+for service and not relieve a customer from making a service deposit.  
+ 
+4. Service Deposit 
+ 
+4.1  Customers applying for residential service (Rate RS) may be required to pay a deposit if they fail 
+to establish their credit worthiness as determined by the Rules and Regulations of Service for 
+Electrical Utilities in Indiana as promulgated by the Commission. For all other service customers, 
+a service deposit, irrevocable letter of credit or surety bond equal to one-sixth (1/6) of the 
+Customer's expected annual billing may be required. 
+ 
+4.2    A  new  or  additional deposit may be  required from  a  present residential customer  pursuant 
+to the Rules and Regulations of Service for Electrical Utilities in Indiana as promulgated by the 
+Commission, or when (1) the customer has been  mailed disconnect notices for two (2) 
+consecutive months; (2) the customer has been mailed disconnect notice for any th ree (3) 
+months within the preceding twelve (12) month period; or (3) the service to the customer has 
+been disconnected within the past four (4) years pursuant to 170 IAC 4-1-16.    A new or additional 
+deposit may be required from existing non-residential customer based on the customer’s overall 
+financial condition or creditworthiness, which may include external information obtained from 
+credit reporting agencies and public records, provided such new deposit will not exceed one-sixth 
+(1/6) of the customer’s estimated annual revenue . A residential or non-residential customer may 
+contact the Company’s customer service center for questions about the deposit.  
+ 
+4.3    No deposit will exceed one-sixth (1/6) of a residential customer's expected annual billings at 
+the address at which service is rendered . A new residential customer may make the payment in 
+equal installments over a period of eight weeks if the amount of the deposit is more than seventy 
+dollars $70. A residential customer already receiving service may pay a deposit which exceeds 
+$70 over two billing cycles, or approximately 60 days. 
+ 
+4.4   Service deposits shall earn simple interest at a rate of 5% from the date of deposit until service is 
+discontinued or Company makes a refund of such deposit. 
+ 
+4.5    Such service deposit plus accrued interest minus the amount of any unpaid bills shall be 
+returned to Customer upon discontinuance of service for which such deposit was made. For 
+residential customers, such service deposit plus accrued interest shall be refunded, without 
+request by the Customer, upon satisfactory payment by the Customer for a period of either 9 
+successive months or 10 out of any 12 consecutive months, provided the Customer did not 
+make late payments for any 2 consecutive months.
+
+PDF PAGE 138
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 8 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+5.  Service to be Furnished 
+ 
+5.1 When requested by the Company, Customer shall advise Company fully with respect to (1) the 
+location of premises where service is desired and (2) all equipment to be operated. 
+ 
+5.2 Company shall advise Customer concerning the character of service to be supplied, and shall 
+determine the location of the delivery point, and the location of the meter. 
+ 
+5.3    As the facilities provided by Company for supplying service to Customer have definite capacity 
+limitations, Customer shall not make any significant increase in requirements without sufficient 
+advance notice to Company in order to provide a reasonable time in which Company may 
+increase the capacity of its facilities. Failure to provide such notice to Company shall make 
+Customer liable for damages which may be occasioned to the meters or other facilities by 
+overload. 
+ 
+5.4 Before Company will make any changes in its facilities to increase capacity to a customer, a 
+new application or contract for service may be required by the Company. 
+ 
+5.5 Non-Residential Customers may elect to receive enhanced service analytics through voluntary 
+participation in the Energy Profiler Online (EPO) program.  For $15 per meter per month EPO 
+provides configurable interval data to customers on a day behind basis to help them make 
+informed energy decisions. 
+ 
+6. Character of Service 
+ 
+6.1 Available Voltages and Transformer Size Limits 
+ 
+Voltage Transformer Size Limits Availability 
+ 
+Single Phase - 
+120/240 Volts 167 KVA OH & UG 
+ 
+Network and/or Designated Areas 
+120/208 Volts 
+3 Wire 40 KVA OH & UG 
+ 
+Voltages listed below are not available at all locations. The Company must be consulted 
+regarding their availability at any particular location. 
+ 
+When Customer's load requirements are greater than the maximum listed below, the Company 
+will supply additional facilities at the same location, which facilities at the Company's option 
+may be considered excess facilities. 
+ 
+Service 
+Voltage                Transformer Size Limits            Availability 
+ 
+Three Phase - 
+120/208 Volts Wye 1,000 KVA UG 
+   300 KVA OH 
+Three Phase - 
+120/240 Volts 
+4 Wire Open Delta    1 - 50 KVA (1) OH 
+    1 - 100 KVA 
+
+PDF PAGE 139
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 9 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+277/480 Volts Wye 2500 KVA UG 
+ 500 KVA OH 
+ 
+Three Phase - 
+240 Volts Open Delta 2 - 50 KVA ( 2) O H 
+Three Phase - 
+ 
+(1) Customer Size Limit 150 KVA (1 - 100 KVA and 1 - 50 KVA Transformers).  
+(2) Customer Size Limit 100 KVA (2 - 50 KVA Transformers). 
+ 
+6.2 Si ngle Phase 
+Appliances or devices with a r ating of gre ater than 20 am ps shall be connected at 240 volts . 
+Single phase m otors up to but not e xceeding 10 horsepower may be connected to a single 
+phase "lighting service" under the following conditions: 
+ 
+(a)    Single phase motors not in excess of 3/4 horsepower may be wound for 120 or 240 volts 
+and may be operated from a lighting branch circuit. 
+ 
+(b)
+    Single phase motors 1 horsepower to 10 horsepower, inclusive, must be wound for 240 
+volts, be connected across the 240 volt le gs of a 120 /240 volts, 3 wire se rvice, and be 
+operated from a branch circuit separate from any lighting. 
+ 
+(c)   Upon a pproval by Com pany, single phase se rvice will be m ade available to a phase 
+converter where system conditions permit and where the name plate rating of the lar gest 
+three phase motor does not exceed 50 horsepower and where the combined name plate 
+ratings of all three phase motors does not exceed 75 horsepower. 
+ 
+(d)
+    Se rvice to any i ntermittent or highly fluctuating load must be reviewed and a pproved by 
+the Company prior to the installation of such equipment. 
+ 
+Service to any mot or rated greater than 10 ho rsepower must be reviewed and approved 
+by the Company prior to the installation of such equipment. Upon approval, service to any 
+motor rated greater than 10 horsepower will be c onsidered a po wer installation and will 
+be serv ed u nder the Com pany's applicable po wer r ates, wi th the e xception of a "soft- 
+start" single phase motor in excess of 10 horsepower where the starting current of such a 
+motor does not exceed the starting current of an equivalent conventional 10 horsepower 
+single phase motor and where syst em conditions permit. 
+ 
+6.
+3 Thr ee Phase 
+ 
+The Company supplies different voltages and types of polyphase service in va rious locations. 
+In all cases, the Company must be c onsulted regarding the c haracter of ser vice ava ilable at 
+any particular location. 
+ 
+The Company will suppl y single phase or polyphase service for power in a ccordance with the 
+following general provisions: 
+ 
+(a) Installations havi ng a m otor lo ad aggregating 10 horsepower or less will ordinarily be 
+supplied wi th single phase ser vice. Customers requiring polyphas e service within this 
+rating sh ould c onsult t he Company regarding t he ava ilability of such ser vice f or their 
+particular application. 
+ 
+ 
+
+PDF PAGE 140
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 10 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+(b)   Installations having a motor load aggregating more than 10 horsepower may be supplied 
+either single phase or polyphase service, depending upon the particular application and 
+the availability of polyphase service at the Customer's premises. 
+ 
+(c)   All customer loads shall be energized in such a manner that the Company’s system will not 
+experience undue disturbances, unbalance or voltage fluctuations. To determine customer 
+compliance, the Company may use applicable standards such as ANSI C84.1-1995, IEEE 
+519, USDA Handbook 696, IEC 61000-3-7 and IEC 61000-4-15, their successor 
+standards or other standards as they may apply. 
+ 
+(d)  In cases where a customer’s load may cause undue disturbance, unbalance or voltage 
+fluctuation on the Company’s system, the Company shall be consulted prior to installation. 
+The Company may require, at its discretion, mitigation devices including, but not limited to, 
+motor starting devices, static VAR compensators or filters as may be necessary for use 
+with any device (e.g., motor, welder, electric furnace, heating devices, etc.) to prevent 
+undue disturbance, unbalance or voltage fluctuation on the Company’s system. 
+ 
+6.4     Service at Primary Distribution Line Voltages 
+ 
+Voltages listed below are not available at all locations:  
+ 
+ Three Phase 2400/4160 Volts Wye 
+Three Phase 7200/12470 Volts Wye Three 
+Phase 8000/13800 Volts Wye Three 
+Phase 19900/34500 Volts Wye 
+ 
+Company Engineering personnel must be consulted in each case relative to service availability 
+and transformer size limits. 
+ 
+6.5   Service at Transmission Line Voltages 
+ 
+Customers may be supplied at the following voltages as determined and specified by 
+                   Company: 
+ 
+      Three Phase  69 KV 
+                                Three Phase 138 KV  
+               Three Phase 230 KV  
+Three Phase 345 KV 
+ 
+The Company Engineering Department at the Corporate Offices must be consulted in each 
+case relative to service available and transformer size limits. 
+ 
+ 6.6 Point of Service Connection 
+ 
+A. Overhead Service 
+ 
+The Company w ill designate the point at which the overhead service lines will be 
+connected to the Customer's facilities. The Customer's wires, at the point of connection 
+with the Company's lines, shall extend at least three feet beyond the outer end of any 
+conduit, weatherproof fitting, or insulator in order to facilitate this connection. 
+ 
+B. Underground Service 
+ 
+Underground service is subject to special conditions and policies making it necessary to 
+consult the Company before wiring or rewiring the premises. When underground service 
+
+PDF PAGE 141
+Issued: January 29, 2025 
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025   
+IURC No. 16 
+Original Tariff No. 5 
+Page 11 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+is sup
+plied, the Company will designate the point at which Company underground lines 
+will be connected to Customer's Facilities. 
+C. Un
+derground Network Services
+In areas where service is s upplied from an underground Distribution Network system the
+Customer s hall make a rrangements with the Com pany f or t he Com pany to ins tall the
+service conne
+ction. The Company will install, own and maintain a continuous run of cable
+conductors, including nece ss
+ary duc ts from the m anhole or c onnection box, which i s
+located ad
+jacent to Customer's premises, to the meter location. In cases where the service
+connection extends more than ten feet inside the Customer's premises, the Customer shall
+reimburse t he  Company f or the amo unt of the cost of such addition al extension on
+Customer's premises. The right a nd title to all equipment so furnis hed by Company shall
+be and remain in Company.
+D. Chan
+ge of Service
+Any chan
+ges made in service connections (either overhead or underground) at the
+Customer's request, after the original installations, shall be at the Customer's expense.
+7. Predication of Rates
+7.
+1     Company's r ate schedules, e xcept as provided f or in i tems (1), (2), and ( 3) hereunder, ar e
+pred
+icated upon the su pply of ser vice to o ne premises, at one st andard volt age, at o ne 
+delivery point and through one meter for the ultimate use by one Customer. 
+(1) When service is supplied t
+o an individual residential dwelling unit primarily for serving one
+family and w he
+re boarders or roomers are a ccommodated for inci dental incom e, the
+service will be provided under the residential rate schedule.
+(2) When
+ service is su pplied to a re sidential dwelling unit where the use is primar ily for the
+acc
+ommodations of  r oomers or boarders, the ser vice will be provi ded u nder a
+non
+residential ra te schedule, unless se parate ci rcuits ar e furnished by Customer to
+pe
+rmit Company to separately meter and bill the residential and nonresidential uses.
+(3) When the principal use of service supplied to a resid ential dwelling unit is f or residential
+pu
+rposes, but a small amo unt of energy will be us ed f or nonresidential purposes, suc h
+non
+residential use will be permitted only wh en the e quipment for such use is within t he
+capa
+city of a 120 volt, 30 ampere branch circuit (or is less than 3,000 watts capacity) and
+t
+he n onresidential use is less than the re sidential use on the premises . When th e
+non
+residential equipment and/or use e xceeds the above stated limits, the Customer will
+be
+ r equired to s eparate his wiring so that the nonresidential u se may be m etered
+sepa
+rately, and the nonresidential use will be billed under the a ppropriate nonresidential
+rat
+e schedule or the entire service will be billed under the appropriate nonresidential rate
+sc
+hedule.
+(4) Where Company has already supplied a se rvice to a primary reside ntial dwelling unit and
+w
+hen the principal use of a sec ond service to a sec ondary residential dwelli ng unit (i.e.,
+garages, s torage buildi ngs, pool h ouses, etc.) on t he same premis e, is f or reside ntial
+purposes, then such second se rvice will be provi ded under the reside ntial rate sc hedule
+as a separat
+e account.  Add consumption, in such situations, is not permitted. Ho wever, if
+t
+he energy us ed will be f or nonresidential purposes and e xceeds the parameters o f
+section (3) above, the non residential use will be billed under the appropriate nonresidential
+rate schedule.
+
+PDF PAGE 142
+Issued: January 29, 2025 
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025   
+IURC No. 16 
+Original Tariff No. 5 
+Page 12 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+7.
+2     Except f or the pro visions of s ubdivision 7.1 abov e, when ser vice su pplied on one premis e 
+involves more than (1) one service classification, or (2) one standard voltage, or (3) one delivery 
+point, each such se rvice s hall be s eparately m etered and bi lled unless the r ate schedule or 
+Tariff specifically provides for more than one volt age and the combining of the m eter readings, 
+or when the se rvice is su pplied in such m anner f or Company's operati ng convenience or t o 
+meet legal requirements. 
+7.
+3    A dd consumption is not permitted for customers serv ed at primary and hi gher voltages except 
+in such cas es where it is impractic al to electrically serve the cus tomer through one deliver y 
+point. 
+7.
+4    Secon dary cus tomers, who are taking ser vice at a locati on where multiple cus tomers wer e 
+previously served, may have their meter readings added together, up to a maxim um of nine (9) 
+meters.  Customer will pay the monthly connection charge of the appropriate rate schedule for 
+each meter. O ther secondary customer add consumption situations are not permitted except in 
+such cases where it is impractical to electrically serve the customer through one delivery point. 
+8. Rate Sched
+ule Selection
+8.
+1  Wh en more than o ne ra te schedule is available f or the se rvice re quested, Cus tomer shall
+de
+signate the rate schedule on which the application or contract shall be bas ed. Company will 
+assist Customer in the selecti on of  the r ate schedule be st a dapted to Customer 's service 
+requirements, provi ded, however, th at Com pany d oes not a ssume res ponsibility for the 
+selection or that Customer will at all times be served under the most favorable rate schedule. 
+8.
+2   Customer may c hange his ra te schedule selecti on to a nother app licable ra te schedule after 
+twelve (12) months participation on the prior rate by either submitting written notice to Company 
+and/or by executing a new co ntract for service.  All rate changes must conform to the terms of 
+the desired rate.  In no case will the Company refund any monetary difference between the rate 
+schedule under which service was billed in prior periods and the newly selected rate schedule. 
+9. Service Extensio
+ns/Modifications
+9.
+1  Unless ot herwise pro vided in the Company's rate schedules or rul es and re gulations, t he
+Company will ex tend i ts li nes an
+d fac ilities in a ccordance with the Rules and Regulations of 
+Service for Electrical Utilities in Indiana as promulgated by the Commission. 
+9.2  
+ Whenever, in the opinion of the Company, the necessary expenditure to make connection to an 
+applicant for service is not warranted by the Company's estimate of prospective revenues to be 
+derived t herefrom, or  w henever, in the opini on of the Company, the permanence of the 
+Customer's load is questionable, the Company may require the applicant to make an advance 
+deposit for line constructio n or service connection in a ccordance with t he applicable Tariff No. 
+52 - Line Extension - Advance Deposit. 
+9.
+3   If a custom er, person, corporation, municipality, government agency or other entity  r equest f or 
+their convenience, or by their actions, requires that utility facilities be redesigned, reengineered, 
+relocated, remov ed, m odified or reinstall ed, t he utility may requir e the cus tomer to make 
+payment to it of the full cost of performing such service. 
+
+PDF PAGE 143
+Issued: January 29, 2025 
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025   
+IURC No. 16 
+Original Tariff No. 5 
+Page 13 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+10. Company Equipment on Customer's Premises
+10.1  Customer s hall furnish Company a s atisfactory location f or and provide safe a ccess to
+Company's met
+ers and other equipment necessary to provide and m easure service, and shal l 
+also furnish Company the ri ghts on, over or under Customer's premises necessary to ins tall, 
+operate and mai ntain Com pany's ot her fac ilities re quired to suppl y service to Customer. 
+Company reserv es the right to make the fi nal decision as to the location of the m eter o n 
+Customer's premises. 
+10.
+2  Wh en Customer is not the owner of the premis es and/or of the adjacent premises, Customer 
+shall furnish Company with satisfactory easements for the loc ation of Company's facilities on 
+the premises and/or on the adjacent premises. 
+10.3  Wh en Com pany's tr ansformers, meters, or other fac ilities are to be install ed i ndoors on 
+Customer's premises, Customer shall furnish without cost to Company a suitable room or vault 
+for housing the equipm ent; provided, however, that Com pany shall reserve the ri ght to mak e 
+the final decision as  to t he loc ation of  such r oom or v ault. Such spac e shall m eet the 
+requirements (1) of the Nation al Electrical Co de, (2) of any F ederal, st ate or loc al laws or 
+regulations, and (3) of any policies of the Company in effect at the time o f the install ation. 
+10.
+4   Company may c hange the loc ation of any or all of i ts fac ilities up on req uest of Customer, 
+provided (1) such c hange will not interfere wi th or j eopardize Com pany's service eit her t o 
+Customer requesting the change or to other customers of Company, and (2) Customer shall be 
+required to bear all or a portion of the expense of such change. 
+10.
+5   Customer shall provide reasonable protection from loss or damage to Company property and 
+may be liable to Com pany in the event of such loss or damage caused by the negligence of 
+Customer or any agent or employee of Customer. 
+10.
+6  Customer s hall not di sconnect, change c onnections or otherwise interfere with Company's 
+meters or other property and shall be responsible to Company for permitting anyone who is not 
+an agent or employee of Company to tamper with Company's property. 
+10.
+7  All fac ilities install ed by Com pany shall be and remain the pr operty of Company unless a 
+contract expressly otherwise provides, and Company shall operate and maintain its property. 
+10.
+8   Pr operly a uthorized employees or agents of Com pany shall have the right to e nter upon the 
+Customer's premis es at all r easonable times f or the purpose of m eter r eading, inspectin g, 
+testing, repairing or replacing any or all of Company's property used in supplying any service to 
+the Customer. 
+10.
+9 U pon termination of a c ontract or discontinuance of service, Company shall have the right to 
+remove all of its property from Customer's premises. 
+11. Custo
+mer's Installation
+11.
+1  Customer s hall install and mai ntain suitable entrance equipm ent, switc hes, a nd pr otective
+de
+vices to a fford r easonably adequate protecti on to Company's property and syst em against 
+fault originating beyond the delivery point to Customer. 
+11.
+2  All such Customer's equipment s hall be c onstructed and mai ntained s ubject to approval b y 
+authorized inspection and in accordance with the National Electric Code, any Federal, state or 
+local law, and Company requirements in effect at the time of installation. 
+
+PDF PAGE 144
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 14 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+11.3 The use of Customer's equipment shall not adversely a ffect Company's system or service 
+supplied by Company to other customers. 
+ 
+11.4  Power factor correction equipment, owned and installed by Customers served under a rate 
+schedule where kVA is used to determine the Billing Maximum Load, shall be installed either on 
+the load side of the delivery point or on the load side of the metering point, whichever point 
+determines the Customer's equipment ownership. 
+ 
+11.5   Company does not under any circumstances assume any responsibility in connection with 
+Customer's installation, and Customer shall at all times be responsible for the character and 
+condition of such equipment installations. 
+ 
+11.6  Subsequent to installation of Company’s facilities, Customer shall not make changes to the 
+location which create violations of the National Electrical Code, any Federal, State or Local 
+laws or that creates unsafe conditions for operation of Company or Customer equipment. 
+  
+12. Rendering and Payment of Bills  
+12.1   Bills for service will be rendered monthly at intervals of approximately thirty days and will be 
+based on the charges set forth in the rate schedules and are payable using any of the 
+Company’s current payment options. 
+ 
+12.2   All bills are rendered as "net" bills which will be subject to a late payment charge of 3% of net 
+bill when not paid within 17 days following the mailing of the bill; provided, however, that any 
+Customer requesting an Adjusted Due Date shall be allowed an additional period of time for 
+payment of the net bill as hereinafter provided. Company may, at its option, forego the 
+assessment of a late payment charge. 
+ 
+Pick Your Own Due Date is available to residential customers with smart meters.  This program 
+allows residential customers to choose what day their bill is due each month. This change in due 
+date may result in one billing period with a longer or shorter cycle. Customers who enroll in this 
+program can pick their monthly due date, and the due date can be changed once every 12 
+months. 
+ 
+Preference Pay is available to residential customers without smart metering This program 
+allows a residential customer to choose what day their bill is due  each month.  This change in 
+due date may result in one billing period with a longer or shorter cycle. Customers who enroll in 
+this program can pick their monthly due date, and the due date can be changed once every 12 
+months.  
+ 
+12.3   Failure to receive a bill shall not entitle Customer to pay the net bill after the designated date 
+has passed. Upon request, Company will inform Customer of the approximate date on which 
+Customer should receive the bill each month and, if the bill is lost, Company will issue a 
+duplicate. 
+ 
+12.4     Bills for service supplied for not less than 26 days or for not more than 34 days will be calculated 
+on the basis of the applicable rate schedule. A billing for a period covering a shorter period than 
+26 days or a longer period than 34 days will be calculated on a 30-day basis. 
+ 
+12.5 Final bills will be due and payable at the time of discontinuance of service. 
+ 
+12.6 When Company is unable to obtain the reading of a meter after reasonable effort, it may 
+estimate the reading and render a bill, so marked. 
+
+PDF PAGE 145
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 15 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+         12.7   In the event Company's meter fails to register properly for any reason, Company shall estimate 
+Customer's energy use and/or maximum load during the period of failure based on such factors 
+as Customer's normal load and energy usage during a like corresponding period. 
+ 
+12.8    When Company has discontinued service for nonpayment of a bill, as provided for in subdivision 
+14.2(a), a reconnection charge is required.  When possible, service will be reconnected remotely 
+at a cost of $8.  If manual reconnection is required a reconnection charge of $37 will be charged. 
+ 
+12.9   When customer requests Company to provide non- emergency service, including manual 
+reconnection of customers for disconnection for non- payment, outside of normal working hours 
+(7:30 AM through 3:30 PM) Monday through Friday, customer will be charged $250 per trip.  
+ 
+12.10 When Company is required to reprocess a check rendered for payment of a Customer bill, a 
+handling charge of $20.00 shall be added to the Customer's billing. 
+ 
+13. Customer's Request to Discontinue Service 
+ 
+13.1   Customer who has not contracted for service for a specified term may have service discontinued 
+by giving notice to the Company of the date on which Customer desires that service be 
+discontinued. Company will endeavor to obtain the final meter reading on the date Customer 
+specifies their notice, but shall not be obligated to do so unless Customer's notice provides 
+Company at least three working days. Customer shall be obligated to pay for service rendered 
+to the premises until the final meter reading is obtained by Company. 
+ 
+ 
+13.2   Customer who has contracted for service for a specified time may have service discontinued 
+by giving notice to the Company and agreeing to pay for service used to the date of 
+disconnection. Customer shall also be liable for the minimum charges which would be due 
+Company for the remaining period of the contract in accordance with the contract provisions. 
+ 
+14. Company's Right to Protect Public Safety Through Theft Deterrence Charges and/or Refuse or     
+Discontinue Service 
+ 
+14.1  Company may refuse or discontinue service to any Customer (and refuse to serve any other 
+member of the same household or firm at the same premises) without notice for any of the 
+following reasons: 
+ 
+(a)  When, in the Company's opinion, a condition exists that is dangerous or hazardous to life, 
+physical safety or property; 
+ 
+(b)  When emergency repairs must be made to Company's facilities or system; 
+ 
+(c)  Due to the threat to public safety tampering with Company equipment creates, the detection 
+of tampering with Company equipment (e.g. metering) , can result in a $200 charge for 
+residential customers or a $1,000 charge for non- residential customers in addition to 
+required payment of the lost revenues the Company incurred for estimated tampering.  At 
+the Company’s discretion particularly dangerous or repeated instances of tampering may 
+result in both the assessment of charges and the discontinuance of future service.  
+ 
+(d)  When ordered to do so by a court, the Commission, another duly authorized public 
+authority or authorized governmental agency. 
+ 
+
+PDF PAGE 146
+Issued: January 29, 2025 
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025   
+IURC No. 16 
+Original Tariff No. 5 
+Page 16 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+14.
+2   Company may discontinue service to any Cus tomer (and refuse to serve any other member of 
+the same household or firm at the same premises ) w ith reas onable notice for any of the 
+following reasons in accordance with the Rules and Regulations of Service for Electrical Utilities 
+in Indiana as promulgated by the Commission: 
+(a) When
+ any bill remains unpaid;
+(b) When
+ planned repairs are to be made to Company's facilities or system;
+(c) When
+ Customer denies access by employees of Company to its meter or other facilities;
+(d
+) When  Customer us es equipment in such a m anner as to adve rsely a ffect Company's
+system or service supplied by Company to other customers; or
+(e)
+When Customer fails to comply with the provisions of (1) the Tariff, or (2) the contract for
+service.
+14.
+3 Di scontinuance of service in accordance with the provisions of subdivisions 14.1 and 14.2 
+above shall not constitute a breach of any obligation of Company under any contract for 
+service with Customer, and Company shall not in any case be liable to Customer for any 
+damages resulting from such discontinuance of service. 
+15. Met
+er Accuracy - Adjustment
+15.
+1  All ser vice supplied by Com pany will be m easured by meters of standard manufacture which
+are o w
+ned, ins talled and mai ntained by Com pany, except under rate schedules in which the 
+charges f or ser vice are on an unmetered rate predic ated on an estim ated use of eit her 
+Company's or Customer's equipment such as street and outdoor lighting. 
+15.
+2  Meter a ccuracy a nd periodic tests f or a ccuracy shall be mai ntained in a ccordance wi th the 
+Rules and Regulati ons of Ser vice f or Electric al Utilities in India na as promul gated by t he 
+Commission. 
+15.
+3  Wh en a m eter is not recording within t he limits of accuracy prescribed by the rules referred to 
+in subdivision 15.2, an adjustment to billings may be made in accordance with such rules. 
+16.
+Interruptions, Variations in Service Characteristics
+16.
+1  Com pany will, at all times, endeavor to provide regular and uninterrupted service, but does not
+guarantee against variations in service characteristics, such as frequency, voltage, phase angle, 
+phase balance, system neutral to grou nd voltage differentials, momentary outages and single 
+phasing (loss of phase) of three-phase systems, occasioned by ac ts of G od, orders of public 
+authorities, fires, strikes, casualties, terrorism, and necessity for making repairs or replacements 
+of Company's facilities. 
+16.
+2 In case the supply of serv ice is inte rrupted or sustains other va riations such as high or lo w 
+voltage, single phasing (loss of pha se) of th ree-phase ser vice, phase reve rsals, sys tem 
+neutral to ground voltage differentials, or trouble resulting from defects in Customer's wiring or 
+other equipment, Company shall not be liable to Cus tomer for damages or lo sses resulti ng 
+from such interruption or variation in service, unless due to the gross negligence of Company. 
+16.
+3 Such inte rruptions or va riations shall not c onstitute a br each of any ob ligations of Company 
+under any contract for service with Customer. 
+
+PDF PAGE 147
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 17 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+17. Non Permanent Service 
+ 
+17.1  When in the opinion of the Company the use of service will not be of a permanent nature, 
+Customer shall pay (1) the estimated cost of constructing t he facilities to serve Customer, 
+including labor, material, stores freight & handling, and overhead, plus (2) the estimated cost of 
+removing said facilities and returning same to Company storeroom, minus (3) the estimated 
+salvage value of material returned to the Company storeroom. 
+ 
+17.2   If Customer takes service beyond a twelve (12) month continuous peri od, Customer will be 
+eligible to receive a refund of the Customer's payment under subdivision 17.1, as outlined in 
+the applicable Tariff No. 52 - Line Extension - Advance Deposit. 
+ 
+17.3  Service supplied to a non permanent connection will be billed under the applicable rate 
+schedule. 
+ 
+17.4  Customer may be required to make a deposit to insure payment of charges as specified in 
+division 4 hereof. 
+ 
+18. Customer's Use of Service - Resale and Redistribution 
+ 
+18.1  Service shall be used by Customer only for the purposes specified in the applicable agreement 
+and in accordance with the applicable rate schedule, and except as provided under 170 IAC 4- 
+5, no customer shall resell such service to a third Party by submetering such service. 
+ 
+18.2  As of April 2,1980, service delivered to new multi unit buildings containing units that are 
+separately rented, leased or owned, shall be individually metered for each such occupied unit 
+except for: 
+ 
+(i)  Service used in hotels, motels and other similar transient lodging. 
+ 
+(ii)  When the customer proves the cost of purchasing and installing the wiring and equipment 
+necessary for individual metering exceed the long run benefits resulting from energy 
+conservation and efficient utilization of facilities. This exception must encompass all 
+requirements of our master metering guidelines and also be approved by the IURC.  
+ 
+18.3  In the event master metering is approved by the Company, the customer shall own all 
+equipment necessary to take service at one location. 
+ 
+18.4  Existing buildings or premises which were constructed prior to April 2, 1980, or for which a 
+local building permit or a Certificate of Compliance from the Administrative Building Council 
+was issued prior to April 2, 1980, and which are individually metered, shall remain individually 
+metered for each such occupancy unit separately rented, leased or owned. 
+ 
+19. Auxiliary Service, Supplementary, Back-Up, and Maintenance Power 
+ 
+19.1  Company will supply service to Customer operating privately-owned g enerating equipment 
+based on the manner in which Customer makes use of such Company service. 
+ 
+(a) Auxiliary Service will be supplied on a firm-use basis under the applicable rate schedule 
+for a designated part of Customer's load requirements when (i) the wiring to the part of 
+the Customer's requirements is completely segregated from the wiring which furnishes 
+the requirements from Customer's generating equipment and (ii) there are no means for 
+interconnecting the two separate wiring systems. 
+
+PDF PAGE 148
+Issued: January 29, 2025   
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+Effective: February 27, 2025    
+ 
+IURC No. 16 
+Original Tariff No. 5 
+ 
+ 
+Page 18 of 18 
+GENERAL TERMS AND CONDITIONS FOR ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+ 
+(b) Supplementary, Back-Up, and/or Maintenance Power will be provided to "qualifying" 
+generating facilities in acc ordance with Tariff No. 50, Parallel Operation for Qualifying 
+Facilities. 
+ 
+(c)     Supplementary and Back-Up Power will be provided to "nonqualifying" generating facilities         
+in acco rdance with Tariff No. 51, Parallel Operation of Customer  Owned Generation 
+Capacity and Energy Credits  
+ 
+20. Customer's Inability to Operate 
+ 
+20.1    When a fire or other casualty shall render the physical plant or premises of Customer unfit for 
+the purpose of conducting Customer's normal business operations, or makes the premises 
+uninhabitable, the minimum charge of the applicable rate schedule shall, commencing with the 
+first billing period or portion thereof in which normal business operations cease, be waived 
+until the beginning of the subsequent billing period or portion thereof in which the plant or 
+premises shall have been reconstructed and reoccupied by Customer. 
+ 
+20.2   When a strike or lockout of employees of Customer causes the temporary suspension of 
+Customer's business, the minimum charge of the applicable rate schedule shall, commencing 
+with the first billing period or portion thereof in which normal business operations cease, be 
+waived for each billing period, or portion thereof during the continuance of the strike or lockout 
+at the plant involved. 
+ 
+20.3   In either event, subdivisions 20.1 and 20.2 above, Customer shall be billed under the rate 
+schedule in effect at the time of the occurrence for the electric requirements used during each 
+such billing period. 
+ 
+21.  Tax Adjustment 
+ 
+The rates provided herein include in the cost of service the federal and state income tax, property tax 
+and payroll tax rates applicable to the forecasted test period as known at the time the rates were 
+developed.  Customer bills will be computed using these rates and a ny applicable revenue related tax 
+rates and Indiana sales tax rates effective for the billing period will be applied to obtain the total bill to 
+the customer.  
+ 
+22. Service Contracts 
+ 
+Customer may contract with Company to provide energy related services not specifically contained 
+within this electric tariff. Such contract services may include, but not be limited to, maintenance of 
+Customer owned electrical facilities, installation of  electrical facilities on Customer's p remise, and 
+engineering/construction related services. Customer and Company shall enter into a contract 
+specifying the terms and conditions under which such contract services will be provided. The cost of 
+providing such contract services will be based on a similar work order methodology used by Company 
+to establish costs of supplying similar services under this electric tariff, including applicable 
+administrative and overhead charges. The terms of payment for such contract services will be mutually 
+agreed to by Customer and Company. The payment for such services may appear as a separate 
+item on the Customer's bill for electric service. Contracting for such services under this Section will in 
+no way affect Customer's and Company's respective obligations regarding the rendering of and  
+payment for electric service under this electric tariff and the applicable rate schedule. 
+
+PDF PAGE 149
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield. Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 6 
+ 
+Page 1 of 2 
+RATE RS − RESIDENTIAL ELECTRIC SERVICE 
+Issued: January 29, 2025 
+  
+Effective: February 27, 2025 
+ 
+ 
+ 
+ 
+Availability 
+ 
+Available for all residential purposes through one meter to individual customers whos e maximum load 
+requirements do not exceed 75 kilowatts. 
+ 
+Character of Service 
+ 
+Alternating current, sixty Hertz, single phase at a voltage of approximately 120/240 volts three-wire, or 
+120/208 volts three-wire as designated by the Company. 
+ 
+Rate* 
+ 
+Connection Charge  ............................................................................................... $13.70 
+First 300 kWh  ........................................................................................................ $0.186556 per kWh 
+Next 700 kWh ......................................................................................................... $0.135777 per kWh 
+Over 1000 kWh  ..................................................................................................... $0.123051 per kWh 
+ 
+*Subject to the riders listed on Appendix A – List of Applicable Rate Adjustment Riders. 
+ 
+Monthly Minimum Charge 
+ 
+The minimum charge shall be the Connection Charge. 
+ 
+Reconnection Charge 
+ 
+When the service has been turned off by Company for nonpayment of bills, a reconnection charge must 
+be paid by customer before such service is reconnected. (See Section 12 of General Terms and Conditions 
+for Electric Service). 
+ 
+Annual Budget Billing Plan 
+ 
+Company may, upon the request of customer, bill customer , commencing with the next full month's bill 
+and for the next successive 10 months, an amount equal to one-twelfth (1/12) of the estimated cost for all 
+electric service rendered at the premises during the next twelve-month period under this rate schedule. 
+During the first eleven months the cost of each month's service calculated under this rate schedule will be 
+charged to customer's account, and all payments made by customer will be credited to this account. The 
+bill rendered for the twelfth month will include the adjustment for the difference between the actual billing 
+for the first eleven months and the payments made by customer during the same period. 
+ 
+If at any time during the first eleven months it is apparent that customer's expected use of service has 
+been over or under estimated, Company shall have the right to revise the estimate and modify the 
+succeeding monthly billings accordingly. When the monthly payments have been re-estimated, Company 
+will advise customer of the revised amount to be paid. 
+
+PDF PAGE 150
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield. Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 6 
+Page 2 of 2 
+RATE RS − RESIDENTIAL ELECTRIC SERVICE 
+Issued: January 29, 2025 Effective: February 27, 2025 
+Q
+uarterly Budget Billing Plan 
+Company may, up on the r equest of customer, bill customer, commencing with the next full m onth's bil l 
+and for the next two successive months, an amount equal to one-twelfth (1/12) of the cost f or all electri c 
+service rendered at the premis es during the imm ediately preceding twelve-m onth period under this rat e 
+schedule. An up dated amount to be billed customer for each of the next three consecutive months shall 
+be calculated to be the amount equal to one-twelf th (1/12) of the cost f or all electric ser vice rendered at 
+the premis es during the t hen imm ediately p receding twelve-m o nth peri od un der this r ate sc hedule. 
+Customer's bill for each month of subsequent quarterly periods shall be similarly calculated. The cost o f 
+each month's service calculated under this r ate schedule will be c harged to customer's account, and al l 
+payments made by customer will be credited to this acc ount. At the end of the initial twelve-month period 
+that  customer's  request  is  in  effect,  and  at  the  end  of  each  twelve-month  period  thereafter  that 
+customer's request is in effect, Company will determine the difference between the cost for actual electric 
+service re ndered at t he  premis es under this r ate schedule a nd t he am ounts bill ed c ustomer f or those 
+twelve months, and Company shall add or subtract, as appropriate, one-twelfth (1/12) of that difference to 
+each of the next twelve bills to be sent to customer . 
+If
+ at any time it is a pparent that customer's expected use of ser vice has been over or under estimated, 
+Company shall have the right to revise the estimate and modify the succeeding billings accordingly. When 
+the billings have been re-estimated, Company will advise customer of the revised amount to be paid. 
+F
+ixed Billing Plan 
+C
+ompany may, upon request of the customer, guarantee an electric bill amount for 12 months, excluding 
+true-ups.  See Tariff 20, YOUR FIXED BILL for applicability and other Terms and Conditions. 
+Spec
+ial Terms and Conditions 
+1. Service und
+er this rate schedule will be limited to an individual customer's maximum load requirement
+not in excess of 75 kilowatts.
+2. When t
+he principal use of service supplied to a residential dwelling unit is for residential purposes, but
+a small amo unt of energy will be us ed f or nonresidential purposes, such nonresidential use will be
+permitted only when the equipment for such use is within the capacity of a 120 volt, 30 ampere branch
+circuit (or is less than 3,000 watts capacity) and the nonresidential use is less than the residential use
+on the premises.
+3. Mont
+hly meter readings are generally obtained remotely via smart metering technology.
+
+PDF PAGE 153
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 6.5 
+. 
+Page 1 of 2 
+                                            OPTIONAL RATE RS - TIME-OF-USE SERVICE 
+ 
+ 
+Issued: January 29, 2025  Effective: February 27, 2025 
+ 
+Availability 
+ 
+Available on a voluntary basis to customers whose electric service is provided on either  Rate RS - Schedule 
+for Residential Electric Service  (Tariff 6.0) or Optional Rate RS – High Efficiency Residential Service (Tariff 
+6.3) and including new customers who would be eligible for residential service.  Participants must also have 
+an average Billing Maximum Load over the last twelve (12) months that is greater than or equal to 1 kW. 
+ 
+Rate* 
+ 
+Connection Charge Per Month 
+ 
+        Connection Charge….................................................................................................   $ 13.70 
+ 
+   
+ 
+Energy Charge (Billing Period kWh) 
+ 
+Peak  ………………………..........................................................................................   $ 0.214198 per kWh 
+ 
+Off-Peak  ………………………....................................................................................   $ 0.142799 per kWh   
+ 
+Discount  ………………………....................................................................................   $ 0.085679 per kWh   
+ 
+ 
+ 
+*Subject to the riders listed on Appendix A – List of Applicable Rate Adjustment Riders. 
+ 
+ 
+On-Peak/Off-Peak/Super Off-Peak Hours 
+ 
+ 
+          
+ 
+**   Hours will adjust one hour later from the second Sunday in March until the first Sunday in    
+    November in accordance with Eastern Daylight Time (EDT).   
+ 
+* ** Winter Months = On and after the first Sunday in November to the second Sunday in March   
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Periods All Year**
+Winter                     
+Months***
+On-Peak Hours 5 pm - 9 pm 6 am - 8 am
+Off-Peak Hours All Other Hours
+Discount Hours 12-4 am
+
+PDF PAGE 154
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 6.5 
+. 
+Page 2 of 2 
+                                            OPTIONAL RATE RS - TIME-OF-USE SERVICE 
+ 
+ 
+Issued: January 29, 2025  Effective: February 27, 2025 
+ 
+ 
+Holidays: 
+The entire twenty-four (24) hours of the following holidays will be considered off-peak hours:  
+ New Year's Day Labor Day 
+Memorial Day Thanksgiving Day 
+Independence Day Christmas Day 
+ 
+Whenever any of the above holidays occur on a Sunday and the following Monday is legally observed as a 
+holiday, the entire twenty-four (24) hours of such Monday will be considered as off-peak hours. 
+ 
+Whenever any of the above holidays occur on a Saturday and the preceding Friday is legally observed as 
+a holiday, the entire twenty-four (24) hours of such Friday will be considered as off-peak hours. 
+ 
+Monthly Minimum Charge 
+ 
+The minimum charge shall be the Connection Charge. 
+ 
+Reconnection Charge 
+ 
+When the service has been turned off by Company for nonpayment of bills, a reconnection charge must 
+be paid by customer before such service is reconnected. (See Section 12 of General Terms and Conditions 
+for Electric Service). 
+ 
+ 
+Special Terms and Conditions 
+  
+1. Service Under this schedule will be limited to an individual Customer’s maximum load requirement not 
+in excess of 75 kilowatts. 
+  
+2    W hen the principal use of service supplied to a residential dwelling unit is for residential purposes, but  
+      a small amount of energy will be used for nonresidential purposes, such nonresidential use will be   
+      permitted only when the equipment for such use is within the capacity of a 120 volt, 30 ampere branch  
+        circuit (or is less than 3,000 watts capacity) and the nonresidential use is less than the residential use  
+      on the premises. 
+ 
+2. Monthly meter readings are generally obtained remotely via smart metering technology. 
+ 
+4.   Customers electing this tariff can switch back to Rate RS - Schedule for Residential Electric Service 
+(Tariff 6.0) at any time, but will be ineligible for future participation on the Residential – Optional Time-
+of-Use Service (Tariff 6.5)  for 12 months.  
+ 
+
+PDF PAGE 155
+Issued: January 29, 2025 
+DUKE ENERGY INDIANA, LLC 
+1000 East Main Street 
+Plainfield. Indiana 46168 
+  Effective: February 27, 2025  
+IURC NO. 16 
+Original Tariff No. 7 
+Page 1 of 2 
+RATE CS - COMMERCIAL ELECTRIC SERVICE 
+ 
+Availability 
+Available through one meter to any commercial customer whose maximum load requirements do not exceed 75 
+kilowatts. 
+Character of Service 
+Alternating current, sixty Hertz, single phase at a volt age of approximately 120/240 volts three-wire, or 120/208 
+volts three-wire as designated by the Company. 
+Rate* 
+Connection Charge ................................................................................................   $13.91 
+First 300 kWh….....................................................................................................     $0.178612 per kWh 
+Next 700 kWh........................................................................................................ .     $0.165677 per kWh 
+Next 1500 kWh………...........................................................................................    $0.150517 per kWh 
+Over 2500 kWh ..................................................................................................... .     $0.122691 per kWh 
+*S
+ubject to the riders listed on Appendix A – List of Applicable Rate Adjustment Riders.
+Mo
+nthly Minimum Charge 
+The minimum charge shall be the Connection Charge. 
+Reconnection Charge 
+When the service has been turned off by Com pany for nonpayment of bills, a rec onnection charge must be paid 
+by customer before such ser vice is reco nnected.  (See Section 12 of General Terms and Conditions for Electric 
+Service). 
+Special Terms and Conditions 
+1. Service under this rate schedule will be limited to an i ndividual customer's maximum load requirement not in
+excess of 75 kilowatts.
+2. Unmetered electric ser vice will be available un der this r ate schedule for the operation of m unicipal sire ns
+(e.
+g., Fire, Tornado, Emergency Management, etc.) with single phase electric m otors not in e xcess of 7- 1/2
+ho
+rsepower capacity.  Such m unicipal siren service will be billed monthly at $10.43 per delivery point.
+3. Electric ser vice will be ava ilable under this r ate schedule for the oper ation of CATV distrib ution line powe r
+supp
+ly equipment. Such service will be available only on a m etered basis. Each individual m etering point for
+such CATV customer shall be bill
+ed the Connection Charge of this rate schedule, and all kWh will be billed at a
+rate of $ 0.105449 per kWh subject to t he applicable r ate adjustm ent riders listed i n Appendix A – List of
+Applicable Rate Adjustment Riders.
+
+PDF PAGE 156
+Issued: January 29, 2025 
+ 
+                                      Effective: February 27, 2025   
+   
+DUKE ENERGY INDIANA, LLC 
+1000 East Main Street 
+Plainfield. Indiana 46168 
+ 
+IURC NO. 16 
+Original Tariff No. 7 
+ 
+Page 2 of 2 
+ 
+RATE CS - SCHEDULE FOR COMMERCIAL ELECTRIC SERVICE 
+ 
+ 
+ 
+ 
+4.  Electric service will be provided und er this rate schedule for the operation of Fiber Optic Cable (FOC) 
+equipment. This rate is closed to new participation . Each individual delivery/transformation point for such 
+FOC customer shall be billed the Connection Charge of this rate schedule, and each pedestal will be 
+billed at a rate of $1.49 per month. 
+ 
+5.   Monthly meter readings are generally obtained remotely via smart metering technology.   
+ 
+6.   Electric service will be available under this rate schedule for the operation of low power equipment used in 
+the delivery of broadband services. All kWh will be b illed at a rate of $0.105449 per kWh subject to the 
+applicable rate adjustment riders listed in Appendix A – List of Applicable Adjustment Riders. 
+ 
+ 
+ 
+
+PDF PAGE 160
+DUKE ENERGY INDIANA, LLC 
+1000 East Main Street 
+Plainfield. Indiana 46168 
+ 
+IURC NO. 16 
+Original Tariff No. 7.5 
+ 
+Page 1 of 2 
+ 
+OPTIONAL RATE CS – TIME OF USE SERVICE 
+ 
+Issued: January 29, 2025  Effective: February 27, 2025 
+ 
+Availability 
+ 
+Available to customers served through one meter on a voluntary basis whose electric service is provided under 
+commercial service and whose maximum load requirements do not exceed 75 kilowatts and whose average 
+Billing Maximum Load over the last twelve (12) months is greater than or equal to 1 kW. 
+ 
+Character of Service 
+ 
+Alternating current, sixty Hertz, single phase at a voltage of approximately 120/240 volts three-wire, or 120/208 
+volts three-wire as designated by the Company. 
+ 
+  Rate* 
+ 
+Connection Charge Per Month 
+ 
+Connection Charge…...............................................................................................   $ 13.91 
+ 
+Energy Charge  
+ 
+Peak ………………………..........................................................................................   $ 0.169081 per kWh 
+ 
+Off-Peak ………………………....................................................................................   $ 0.148754 per kWh   
+ 
+Discount  ………………………....................................................................................   $ 0.097014 per kWh   
+ 
+ 
+*Subject to the riders listed on Appendix A – List of Applicable Rate Adjustment Riders. 
+ 
+ 
+On-Peak/Off-Peak/Super Off-Peak Hours 
+ 
+ 
+ 
+ 
+**   Hours will adjust one hour later from the second Sunday in March until the first Sunday in    
+    November in accordance with Eastern Daylight Time (EDT).   
+ 
+* ** Winter Months = On and after the first Sunday in November to the second Sunday in March   
+ 
+Holidays: 
+The entire twenty-four (24) hours of the following holidays will be considered off-peak hours:  
+ New Year's Day Labor Day 
+Memorial Day Thanksgiving Day 
+Independence Day Christmas Day 
+ 
+Whenever any of the above holidays occur on a Sunday and the following Monday is legally observed as a holiday, 
+the entire twenty-four (24) hours of such Monday will be considered as off-peak hours. 
+ 
+Periods All Year**
+Winter                     
+Months***
+On-Peak Hours 5 pm - 9 pm 6 am - 8 am
+Off-Peak Hours All Other Hours
+Discount Hours 12-4 am
+
+PDF PAGE 161
+DUKE ENERGY INDIANA, LLC 
+1000 East Main Street 
+Plainfield. Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 7.5 
+Page 2 of 2 
+OPTIONAL RATE CS – TIME OF USE SERVICE 
+Issued: January 29, 2025 Effective: February 27, 2025 
+Whenever any of th
+e above holidays occur on a Saturday and the preceding Friday is legally observed as a 
+holiday, the entire twenty-four (24) hours of such Friday will be considered as off-peak hours. 
+Mo
+nthly Minimum Charge 
+The minimum charge shall be the Connection Charge. 
+Reconnection Charge 
+When the service has been turned off by Com pany for nonpayment of bills, a rec onnection charge must be paid 
+by customer before such service is reconnected.  (See Section 12 of General Terms and Conditions for Electric Service). 
+Special Terms and Conditions 
+1. Unme ter ed electric ser vice under commercial service is ineligible for participation.
+2.
+Smart metering technology is required for participation.
+3. Mont
+hly meter readings are generally obtained remotely via smart metering technology.
+4. C
+ustomers electing this tariff can switch back to Rate CS - Commercial Electric Service (Tariff 7.0) at any time,
+but will be ineligible for future participation on the Optional Rate CS - Time-of-Use Service (Tariff 7.5) for 12
+m
+onths.
+
+PDF PAGE 218
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 50 
+Page 1 of 3 
+RATE QF – P ARALLEL OPERATION FOR QUALIFYING FACILITY 
+I
+ssued: January 29, 2025 Effective: February 27, 2025 
+  
+Availability 
+Available to any customer contracting for parallel operation of a qualifying facility (cogeneration or small power 
+production facility) in accordance with 170 IAC 4-4.1-1 et. seq. The qualifying facility must be located adjacent 
+to an electric line of Company that is adequate for the service provided by such qualifying facility.  
+C
+ontract 
+Cus
+tomer shall enter into a contract   for either the Purchase of Energy from Qualifying Facility or for the 
+Purchase of Energy and Capacity from Qualifying Facility before operating any generating equipment 
+electrically connected with Company's electric system. 
+R
+ate for Purchase of Energy 
+C
+ompany will purchase energy from the qualifying facility of customer in accordance with the conditions and 
+limitations of this Tariff and the applicable contract at the following rate: 
+F
+or all kWh supplied per month  ............................................................................ $0.042917 per kWh 
+Meas
+ured by suitable integrating instruments. 
+R
+ate for Purchase of Capacity 
+C
+ompany will purchase capacity supplied from the qualifying facility of customer  in accordance with the 
+conditions and limitations of this Tariff and the applicable contract at the following rate: 
+R
+ate per kW per month of Contracted Capacity  ................................................... $6.59 per kW 
+Cus
+tomer shall receive from Company payment for such qualifying facility capacity in accordance with the  
+following: 
+$
+ per kW x Contracted Capacity in kW x � 𝐸𝐸
+𝐾𝐾 𝑥𝑥 𝑇𝑇� 
+W
+here:   E  = kilowatt-hours supplied by qualifying facility during the Peak Period 
+K  = kilowatts of capacity the qualifying facility contracts to provide to Company  
+T  = number of hours in the Peak Period 
+C
+ontracted  Capacity  
+Sha
+ll  be  the  amount  of  capacity expressed  in  terms  of  kilowatts  that  customer  guarantees the 
+qualifying facility will supply to Company as provided for in the contract for such service.  
+
+PDF PAGE 219
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 50 
+Page 2 of 3 
+RATE QF – P ARALLEL OPERATION FOR QUALIFYING FACILITY 
+I
+ssued: January 29, 2025 Effective: February 27, 2025 
+P
+eak Periods 
+Periods All Year* Winter Months** 
+On-Peak Hours 5 pm – 9 pm 6 am – 8 am 
+Off-Peak Hours All Other Hours 
+Discount Hours 12-4 am
+* H
+ours will adjust one hour later from the second Sunday in March until the first Sunday i n
+November in accordance with Eastern Daylight Time (EDT).
+*
+ * Winter Months = on and after the first Sunday in November to the second Sunday in March
+H
+olidays 
+T
+he entire twenty-four (24) hours of the following holidays will be considered as off-peak hours: 
+N
+ew Year's Day  Labor Day 
+Memorial Day  Thanksgiving Day 
+Independence Day Christmas Day 
+W
+henever any of the above holidays occur on a Sunday and the following Monday is legally observed as a 
+holiday, the entire twenty-four (24) hours of such Monday will be considered as off-peak hours. 
+W
+henever any of the above holidays occur on a Saturday and the preceding Friday is legally observed as a 
+holiday, the entire twenty-four (24) hours of such Friday will be considered as off-peak hours. 
+S
+pecial Terms and Conditions 
+1. I
+t  shall  be  customer's responsibility to  inform  Company of  any changes in  its  electric generati on
+c
+apability.
+2.
+Customer  shall  comply  with  all  applicable  requirements  of  Standard  Contract  Tariff  No.  80 –
+Interconnection Service.
+3.
+Customer may be required to enter into a “Substation Operation and Maintenance Agreement” for
+setting, resetting, and adjusting the Control Equipment.
+4.
+Customer shall agree to pay Company, in accordance with "Standard Contract Tariff No. 53 – “Excess
+F
+acilities," for all excess facilities required by Company to provide service to such parallel operation, as
+determined by Company, including any additional metering equipment required for Company to purchase
+electric energy from the qualifying facility.
+5.
+Customer shall agree that Company shall not be liable for any damage to, or breakdown of customer 's
+equipment operated in parallel with Company's electric system.
+6.
+Customer shall agree to release, indemnify, and hold harmless Company from any and all claims for
+injury to persons or damage to property due to or in any way connected with the operation of customer 's
+said generators.
+7. C
+ompany may install necessary metering to monitor the electric output of customer's generating facility.
+customer shall agree that the watt-hour and reactive-ampere-hour meters installed by Company to
+
+PDF PAGE 220
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 50 
+Page 3 of 3 
+RATE QF – P ARALLEL OPERATION FOR QUALIFYING FACILITY 
+I
+ssued: January 29, 2025 Effective: February 27, 2025 
+measure electric energy may be equipped to prevent reverse registration.  
+8.
+Supplementary, Backup, Interruptible and/or Maintenance Power, as defined in 170 IAC 4- 4.1-1, will be
+supplied by Company only in accordance with the applicable rate schedules, this Tariff , the applicable
+c
+ontract and the applicable Service Schedules to be filed by Company with the Commission. Such rates
+shall be non-discriminatory and shall be based on the costs to provide such service to customer, and
+mod
+ified, as necessary, to fully comply with all IURC and PURPA requirements.
+9.
+To the extent required by law, Company will make available wheeling service to customer  in accordance
+with the provisions of 170 IAC 4-4.1-6.
+
+PDF PAGE 221
+Duke Energy Indiana, LLC 
+1000 East Main Street 
+Plainfield, Indiana 46168 
+IURC NO. 16 
+Original Tariff No. 51 
+Page 1 of 1 
+PARALLEL OPERATION OF CUSTOMER OWNED GENERATION 
+CAPACITY AND ENERGY CREDITS 
+ 
+ 
+Issued: January 29, 2025 Effective: February 27, 2025 
+Availability 
+ Available to any customer contracting for parallel operation of a generating facility. 
+ I
+nterconnection 
+Customer  shall comply  with all applicable requirements of Tariff No. 80 – Interconnection Service. 
+Capacity and Energy from Generator 
+The following options may be available to customers with respect to capacity and energy from customer- 
+owned generators. 
+Option 1 - Other Company Rider or Tariff Provisions 
+O
+ther Company Riders or Tariff Provisions may be available to customers meeting the requirements 
+of those Riders or Tariff Provisions. These include Tariff No. 23 Peak Load Management, Tariff No. 
+50 – Parallel Operation – For Qualifying Facility, Tariff No. 57 – Net Metering, Tariff No. 54 – Excess 
+Distributed Generation or other Tariffs or Tariff Provisions that may become available from time-to-
+time. 
+Option 2 – Reduction in Usage 
+C
+ustomers may use the output of the generator to reduce usage under the applicable retail rate 
+schedule. All provisions of such rate schedules shall be in effect including any minimum charges. 
+customers will not receive any credit for generation in excess of load and at Company’s option, such 
+generation in excess of load may be prohibited.  The highest thirty-minute maximum load set during 
+the billing cycle shall be used in determining the Billing Maximum Load even though such maximum 
+load was the result of failure of customer owned facilities. customers operating under this option will 
+be supplied supplemental, backup and maintenance capacity and energy under the rates and 
+charges and terms and conditions of the applicable retail rate schedule. Use of this option does not 
+require a contract for purchase of generator output. However, an Interconnection Agreement is 
+required  as specified in Tariff  No. 80 – Interconnection Service.   customers shall agree that the 
+Watt-hour and reactive – Ampere - hour meters installed by Company to measure electric energy 
+may be equipped to prevent reverse registration. This option includes parallel operation of an 
+emergency or stand- by generator for short periods for testing or to transition customer’s load 
+between the generator and the Company’s system. 
+Option 3 – Special Contract 
+A
+t the Company’s option, special contacts may be available for purchase of the generator output at 
+a negotiated rate. The negotiated rate may be for the total generator output or only the output net 
+of the customer ’s load. At the Company’s option, a special contract may be available for backup 
+and maintenance capacity and energy at a negotiated rate. Any and all negotiated rates are subject 
+to IURC approval. 
+Company will gather necessary load and operational data and will evaluate the cost of providing backup 
+capacity and  energy to  customers  under  this  Tariff .  Such  evaluation may  result  in  the  Company 
+proposing to establish separate backup rates. 
+
+PDF PAGE 236
+Duke Energy Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff No. 60
+Plainfield, Indiana  46168 Page 1 of 1
+Calculation of Adjustment
+A. The applicable charges for electric service to the Company's retail customers shall be increased or decreased, 
+to the nearest 0.001 mill ($0.000001) per KWH to recover and/or credit the cost for fuel in accordance with the 
+following formula:
+where:
+1. "F" is the estimated expense of fuel based on a three-month average cost beginning with the first month of 
+the billing cycle and consisting of the following costs:
+(a) the average cost of fossil fuel consumed due to the operation of Company's own generating units 
+incurred to serve native load customers, including only those items listed in Account 151, of the 
+Federal Energy Regulatory Commission's Uniform System of Accounts for Class A and B Public 
+Utilities and Licensees; 
+(b) the actual identifiable fossil fuel costs, or, if fuel costs are not specifically identified, costs computed in 
+accordance with applicable Commission Orders, associated with energy purchased or transferred to 
+serve native load customers for reasons other than identified in (c) below;
+(c) the net energy cost, exclusive of capacity or demand charges, of energy purchased or transferred to 
+serve native load customers on an economic dispatch basis, and energy purchased or transferred to 
+serve native load customers resulting from the scheduled outage of a Company owned generating 
+unit, when the costs thereof are less than the Company's fuel costs of replacement net generating 
+from its own system, as computed in accordance with applicable Commission Orders;
+(d) fuel-related Regional Transmission Operator ("RTO") costs and credits approved by the Commission 
+for recovery in the FCA;
+(e) other revenues or costs approved by the Commission for recovery in this rider.
+2. "S" is the estimated kilowatt-hour sales for the same estimated period set forth in "F." 
+3. "BF" is the base cost of fuel pursuant to the Commission's Order in Cause No. 46038 equal to 
+$0.034378 per kWh.
+B. The factor shall be further modified commencing with the fifth succeeding billing cycle month to reflect the 
+difference between the estimated incremental fuel cost billed and the incremental fuel cost actually incurred 
+during the first and succeeding billing cycle month(s) in which such estimated incremental fuel cost was billed.
+C. Effective for all bills rendered beginning with and subsequent to the later of the effective date of the 
+Commission's Order or the first billing cycle of _______ _______  the fuel cost adjustment shall be: 
+ISSUED:  January 29, 2025 EFFECTIVE: February 27, 2025
+TARIFF NO. 60 - FUEL COST ADJUSTMENT
+Fuel Cost Adjustment Factor  =  F/S — BF
+($0.001521) per kilowatt-hour.
+
+PDF PAGE 239
+Duke Energy Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff No. 62
+Plainfield, Indiana 46168 Page 3 of 6
+APPLICABLE TO RETAIL RATE GROUPS
+Environmental 
+Environmental Compliance
+Compliance Adjustment
+ Line Adjustment Factor Per  Line
+  No. Retail Rate Group Factor Per KWH Non-Coincident KW   No.
+(A) (B)
+1 Rate  RS $0.003339 1
+2 Rates CS and FOC 0.003699 2
+3 Rate LLF 0.002826 3
+4 Rate HLF $1.067395 4
+5 Customer L 0.001880 5
+6 Customer O 0.000319 6
+7 Rate WP 0.002187 7
+8 Rate SL 0.000830 8
+9 Rate MHLS 0.000805 9
+10 Rates MOLS and UOLS 0.001357 10
+11 Rates TS, FS and MS 0.001830 11
+Issued:  January  29, 2025 Effective: February 27,  2025
+TARIFF NO. 62 - ENVIRONMENTAL COMPLIANCE ADJUSTMENT
+
+PDF PAGE 245
+Duke Energy Indiana, LLC IURC No. 16
+1000 E. Main Street Original Tariff No. 65
+Plainfield, IN 46168   Page 3 of 6
+T&D Infrastructure T&D Infrastructure T&D Infrastructure T&D Infrastructure
+T&D Infrastructure Improvement Cost T&D Infrastructure Improvement Cost T&D Infrastructure Improvement Cost T&D Infrastructure Improvement Cost
+Improvement Cost Rate Adjustment Improvement Cost Rate Adjustment Improvement Cost Rate Adjustment Improvement Cost Rate Adjustment
+Line Rate Adjustment Factor Per Non- Rate Adjustment Factor Per Non- Rate Adjustment Factor Per Non- Rate Adjustment Factor Per Non- Line
+No. Rate Groups Factor Per KWH Coincident KW Factor Per KWH Coincident KW Factor Per KWH Coincident KW Factor Per KWH Coincident KW No.
+(A) (B) (C) (D) (E) (F) (G) (H)
+1 Rate RS $0.001062 $0.000065 $0.001132 $0.002259 1
+2 Rate CS $0.000890 $0.000061 $0.000923 $0.001874 2
+3 Rate LLF - Secondary $0.000771 $0.000054 $0.000782 $0.001607 3
+4 Rate LLF - Primary $0.000673 $0.000055 $0.000678 $0.001406 4
+5 Rate LLF - Primary Direct $0.000457 $0.000061 $0.000415 $0.000933 5
+6 Rate LLF - Transmission $0.000426 $0.000063 $0.000332 $0.000821 6
+7 Rate HLF - Secondary $0.306526 $0.023602 $0.315439 $0.645567 7
+8 Rate HLF - Primary $0.291217 $0.025098 $0.302271 $0.618586 8
+9 Rate HLF - Primary Direct $0.189791 $0.024089 $0.177713 $0.391593 9
+10 Rate HLF - Common Transmission $0.185577 $0.027265 $0.169184 $0.382026 10
+11 Rate HLF - Bulk Transmission $0.098481 $0.014479 $0.093623 $0.206583 11
+12 Customer L $0.000150 $0.000016 $0.000014 $0.000180 12
+13 Customer O $0.001132 $0.000166 $0.001101 $0.002399 13
+14 Rate WP $0.000727 $0.000048 $0.000752 $0.001527 14
+15 Rate SL $0.001290 $0.000044 $0.001450 $0.002784 15
+16 Rate MHLS $0.000763 $0.000023 $0.000844 $0.001630 16
+17 Rates MOLS, UOLS, and XLED $0.000555 $0.000019 $0.000586 $0.001160 17
+18 Rates TS, FS and MS $0.000661 $0.000048 $0.000608 $0.001317 18
+Issued: January 29, 2025 Effective: February 27, 2025
+TARIFF NO. 65
+TRANSMISSION AND DISTRIBUTION INFRASTRUCTURE IMPROVEMENT COST RATE
+ADJUSTMENT APPLICABLE TO RETAIL RATE GROUPS
+TDSIC 2.0 TDSIC 2.0 - TED TDSIC 1.0 (Cause No. 44720) Total TDSIC
+
+PDF PAGE 254
+Duke Energy Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff No. 66
+Plainfield, Indiana 46168 Page 6 of 36
+TARIFF NO. 66 -
+ENERGY EFFICIENCY ADJUSTMENT
+The Energy Efficiency Adjustment factor applicable to retail rate schedules for customers who
+are not eligible to opt out or are eligible to opt out but who have not opted out under the terms of this
+tariff shall be as follows:
+Rates for Participating Customers
+ Energy
+ Line Efficiency Factors  Line
+  No. Rate Groups kWh   No.
+(A)
+1 Rate  RS $0.002137 1
+2 Rates CS and FOC $0.001669 2
+3 Rate LLF $0.001669 3
+4 Rate HLF  1/
+$0.001669 4
+5 Customer L  2/
+$0.001669 5
+6 Customer O - Firm $0.001669 6
+7 Customer O - Interruptible $0.001669 7
+8 Rate WP $0.001669 8
+9 Rate SL $0.001669 9
+10 Rate MHLS $0.001669 10
+11 Rates MOLS and UOLS  3/
+$0.001669 11
+12 Rates TS, FS and MS $0.001669 12
+1/ Includes Customer C TOU. 3/ Includes Rate Code XLED & WHTL.
+2/ Includes Customer L RTP.
+Issued:  January 29,  2025 Effective: February 27, 2025
+
+PDF PAGE 286
+D
+uke Energy Indiana, LLC        IURC NO. 16 
+1000 East Main Street          Original Tariff No. 67 
+Plainfield, Indiana 46168        Page 2 of 2 
+Tariff No. 67 - Credits Adjustment 
+Issu
+ed: January 29, 2025   Effective: February 27, 2025 
+9. “i” is the retail rate group’s kilowatt-hour sales for the applicable twelve-month period.
+10. “j”
+ is the annual retail jurisdictional rates for other credits at the rate group level, including phase-in
+rate adjustments and others as approved by the Commission.
+T
+hese rates will be adjusted at least annually, as needed to reflect changes in credit amounts or additions and 
+removal of credits. Rates will be further adjusted to reflect a calendar year reconciliation  of amounts refunded 
+based on actual kilowatt-hours sales. 
+T
+he Credits Adjustments factor applicable to retail rate groups shall be as follows:  
+Retail Rate Group Rate per kWh 
+Rate RS  ($0.014131) 
+Rate CS  (0.013589) 
+Rate LLF  (0.009386) 
+Rate HLF  (0.005929) 
+Customer L  (0.003686) 
+Customer O  (0.009450) 
+Rate WP  (0.007686) 
+Rate SL  0.004817 
+Rate MHLS  (0.006560) 
+Rates MOLS and UOLS  (0.037891) 
+Rates FS, TS and MS  (0.008980) 
+
+PDF PAGE 289
+Duke Energy Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff  No. 68
+Plainfield, Indiana 46168 Page 3 of 3
+ NON-FUEL COSTS AND REVENUE ADJUSTMENT
+APPLICABLE TO RETAIL RATE GROUPS
+RTO Non-Fuel
+RTO Non-Fuel Cost and Revenue
+Cost and Revenue Adjustment
+ Line Adjustment Factor Per  Line
+  No. Retail Rate Group Factor Per KWH Non-Coincident KW   No.
+(A) (B)
+1 Rate  RS ($0.000105) 1
+2 Rates CS and FOC (0.000073) 2
+3 Rate LLF (0.000106) 3
+4 Rate HLF ($0.061030) 4
+5 Customer L 0.000005 5
+6 Customer O (0.000069) 6
+7 Rate WP (0.000057) 7
+8 Rate SL 0.000032 8
+9 Rate MHLS 0.000030 9
+10 Rates MOLS and UOLS (0.000010) 10
+11 Rates TS, FS and MS (0.000128) 11
+Issued:  January  29,  2025 Effective:  February  27, 2025
+TARIFF NO. 68 - REGIONAL TRANSMISSION OPERATOR ("RTO")
+
+PDF PAGE 292
+Duke Energy Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff  No. 70
+Plainfield, Indiana 46168 Page 3 of 3
+APPLICABLE TO ALL RETAIL RATE GROUPS
+Reliability Adjustment
+ Line Reliability Adjustment Factor Per  Line
+  No. Retail Rate Group Factor Per KWH Non-Coincident KW   No.
+(A) (B)
+1 Rate  RS $0.000984 1
+2 Rates CS and FOC 0.001010 2
+3 Rate LLF 0.000792 3
+4 Rate HLF 0.376755 4
+5 Customer L 0.000281 5
+6 Customer O 0.000494 6
+7 Rate WP 0.000541 7
+8 Rate SL 0.000025 8
+9 Rate MHLS 0.000010 9
+10 Rates MOLS and UOLS 0.000255 10
+11 Rates TS, FS and MS 0.000785 11
+Note: The costs included for recovery in this filing were incurred prior to the implementation of base rates in Cause No. 46038.  Therefore, the proposed factors 
+           continue to be based upon retail production demand allocators as approved in Cause No. 45253.
+Issued: January 29, 2025 Effective: February 27, 2025
+TARIFF NO. 70 - RELIABILITY ADJUSTMENT
+
+PDF PAGE 295
+Duke Energy Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff No. 72
+Plainfield, Indiana 46168 Page 3 of 3
+Federally
+Federally Mandated Cost
+Mandated Cost Adjustment
+Line Adjustment Factor Per Line
+No. Rate Groups Factor Per KWH 1/ Non-Coincident KW 1/ No.
+(A) (B)
+1 Rate RS $0.000000 1
+2 Rate CS $0.000000 2
+3 Rate LLF $0.000000 3
+4 Rate HLF $0.000000 4
+5 Customer L $0.000000 5
+6 Customer O $0.000000 6
+7 Rate WP $0.000000 7
+8 Rate SL $0.000000 8
+9 Rate MHLS $0.000000 9
+10 Rates MOLS and UOLS $0.000000 10
+11 Rates TS, FS and MS $0.000000 11
+Issued:  January 29, 2025 Effective:  February 27, 2025
+TARIFF NO. 72 - FEDERALLY MANDATED COST ADJUSTMENT
+APPLICABLE TO RETAIL RATE GROUPS
+1/ Rates to remain $0.000000 until such time as the Company requests and receives approval for recovery of new federally mandated costs in Rider 72.
+
+PDF PAGE 298
+Duke Energy  Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff No. 73
+Plainfield, Indiana 46168 Page 3 of 5
+Renewable Energy
+Renewable Energy Project Adjustment
+Line Project Adjustment Factor Per Line
+No. Retail Rate Group Factor Per KWH Non-Coincident KW No.
+(A) (B)
+1 Rate  RS $0.000038 1
+2 Rates CS and FOC $0.000028 2
+3 Rate LLF $0.000019 3
+4 Rate HLF $0.013445 4
+5 Customer L ($0.000186) 5
+6 Customer O $0.000017 6
+7 Rate WP $0.000015 7
+8 Rate SL $0.000005 8
+9 Rate MHLS $0.000004 9
+10 Rates MOLS and UOLS $0.000019 10
+11 Rates TS, FS and MS $0.000055 11
+Issued: January 29, 2025 Effective: February 27, 2025
+TARIFF NO. 73 - RENEWABLE ENERGY PROJECT ADJUSTMENT
+APPLICABLE TO RETAIL RATE GROUPS
+
+PDF PAGE 303
+Duke Energy Indiana, LLC IURC No. 16
+1000 East Main Street Original Tariff  No. 74
+Plainfield, Indiana 46168 Page 3 of 3
+Projected Adjustment 
+ Line Projected Adjustment Factor Per Line 
+ No. Retail Rate Group Factor Per KWH Non-Coincident KW  No.
+(A) (B)
+1 Rate  RS (0.000206)$                          1
+2 Rates CS and FOC (0.000215)                            2
+3 Rate LLF (0.000160)                            3
+4 Rate HLF (0.060541)                            4
+5 Customer L (0.000106)                            5
+6 Customer O (0.000109)                            6
+7 Rate WP (0.000122)                            7
+8 Rate SL (0.000038)                            8
+9 Rate MHLS (0.000037)                            9
+10 Rates MOLS and UOLS (0.000071)                            10
+11 Rates TS, FS and MS (0.000102)                            11
+Issued:  January  29,  2025 Effective:  February  27, 2025
+TARIFF NO. 74 - LOAD CONTROL ADJUSTMENT 
+APPLICABLE TO RETAIL RATE GROUPS

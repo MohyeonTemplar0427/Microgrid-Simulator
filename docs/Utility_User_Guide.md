@@ -145,3 +145,48 @@ approved non-export PV/storage. Verified complete-rate coverage is
 January2025–September2026, including full-year2025 and the datedJune2025–May2026
 sales true-up factors. A map or MISO LRZ1 does not establish account eligibility. See
 [Minnesota scope, sources and limitations](Xcel_Minnesota.md).
+
+## Wisconsin · We Energies (Wisconsin Electric Power Company)
+
+Updated October 24, 2026. The candidate adds Rg1/Rg2 residential and Cg1/Cg6
+small commercial billing, including their own TOU calendars, customer charges,
+fuel/ECC components, capped assistance fees and an explicitly confirmed tax
+jurisdiction. Executable complete calendar cycles cover January–June 2025 and
+January–September 2026. A full-year 2025 estimate requires explicit
+`provisional_2025` selection and acceptance: July–December ECC factors use a
+documented June carry-forward assumption. The results and affected components
+remain labeled provisional. Wisconsin service is separate from Michigan service and from
+other Wisconsin utilities.
+
+PV with or without storage requires an explicitly approved CGS-NP non-purchase
+account; these studies enforce zero scheduled exports. MISO LRZ2 and the
+representative ATC transmission context do not prove retail service territory
+or determine a wholesale pricing node. The initial small-commercial scope is
+non-demand service below the filed classification threshold.
+
+[Wisconsin scope, sources and limitations](We_Energies_Wisconsin.md).
+
+## Indiana · Duke Energy Indiana
+
+Updated October 24, 2026. The candidate adds RS/RS-TOU residential and CS/CS-TOU
+commercial billing for bounded **March 2025** service and billing designation
+on confirmed complete regular 26–34-day meter cycles, using the
+February 27 filed base rates and matching rider resets. Explicitly accepted
+`provisional_2025` estimates extend standard RS/CS across 2025 using a dated
+component assumption ledger; verified-only still rejects the source gaps.
+Optional TOU plans cannot be applied before their February 27 introduction.
+2026 remains unsupported. The four selected tariffs use single-phase
+service and energy charges; larger commercial demand tariffs are separate
+plans and are not implied by this implementation.
+
+An approved Tariff 51 Option 2 / Tariff 80 non-export account retains ordinary
+retail import charges; export compensation is excluded. Indiana jurisdiction,
+Duke retail service, MISO LRZ6, the DEI transmission zone and a wholesale node
+are separate facts. The DEI zone includes multiple transmission owners, so the
+model does not assign a site's transmission owner from that zone alone.
+
+[Indiana scope, sources and limitations](Duke_Indiana.md).
+
+[Remaining 2025 source evidence and annual-validation status](We_Duke_2025_History.md).
+
+[Provisional full-year assumptions and validation](We_Duke_2025_Provisional_Validation.md).

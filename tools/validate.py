@@ -25,7 +25,7 @@ GUI_TESTS = ("test/test_application_interface.py", "test/test_desktop_applicatio
 AREAS = {
     "validation": ("test_validation_launcher.py", "test_regional_validation_resume.py",
                    "test_regional_validation_driver.py", "test_regional_coverage.py"),
-    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py", "test_dte*.py", "test_consumers*.py", "test_ameren*.py", "test_xcel_mn.py"),
+    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py", "test_dte*.py", "test_consumers*.py", "test_ameren*.py", "test_xcel_mn.py", "test_we_energies_wi.py", "test_duke_in.py", "test_we_duke*.py"),
     "billing": ("test_billing*.py", "test_tariff*.py", "test_baseline*.py",
                 "test_pge_residential.py", "test_pge_commercial.py", "test_tou_holidays.py"),
     "dispatch": ("test_battery.py", "test_*dispatch*.py", "test_regional_relaxation.py"),
@@ -122,12 +122,15 @@ def build_plan(args, output):
                               ("--ciep-inputs", str(private_path(args.ciep_inputs)) if args.ciep_inputs else None)):
             if value is not None:
                 command.extend([option, value])
-        for option, enabled in (("--include-ciep", args.include_ciep), ("--include-va-history", args.include_va_history), ("--allow-ohio-provisional", getattr(args,"allow_ohio_provisional",False))):
+        for option, enabled in (("--include-ciep", args.include_ciep), ("--include-va-history", args.include_va_history),
+                                ("--allow-ohio-provisional", getattr(args,"allow_ohio_provisional",False)),
+                                ("--allow-we-duke-provisional", getattr(args,"allow_we_duke_provisional",False))):
             if enabled:
                 command.append(option)
         phases.append({"id": "regional", "command": command, "timeout_seconds": args.matrix_timeout})
     elif any((args.inputs, args.utility, args.plan, args.period, args.start_date, args.end_date,
-              args.include_ciep, args.include_va_history, args.ciep_inputs, getattr(args,"allow_ohio_provisional",False))):
+              args.include_ciep, args.include_va_history, args.ciep_inputs, getattr(args,"allow_ohio_provisional",False),
+              getattr(args,"allow_we_duke_provisional",False))):
         raise ValueError("Regional input/selection flags require --regional.")
     return phases
 
@@ -308,6 +311,7 @@ def main(argv=None):
     parser.add_argument("--end-date")
     parser.add_argument("--include-ciep", action="store_true")
     parser.add_argument("--allow-ohio-provisional", action="store_true")
+    parser.add_argument("--allow-we-duke-provisional", action="store_true")
     parser.add_argument("--include-va-history", action="store_true")
     args = parser.parse_args(argv)
     try:

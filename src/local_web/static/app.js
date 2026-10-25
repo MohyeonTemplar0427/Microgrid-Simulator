@@ -12,7 +12,7 @@ const field = name => form.elements.namedItem(name);
 function carbonSettings() {return {source:'electricity_maps',region:'from_location'};}
 function syncLocationTimezone() {
   if(template?.schema_version===1)return;
-  if(window.regionalUI?.active()){field('timezone').value='America/New_York';return;}
+  if(window.regionalUI?.active()){field('timezone').value=capabilities?.regional_simulation?.utilities[field('utility').value]?.timezone || '';return;}
   if(window.comedUI?.active()){field('timezone').value='America/Chicago';return;}
   const lat=field('latitude').value, lon=field('longitude').value;
   const mapping=lat!=='' && lon!=='' && capabilities?.carbon_regions?.find(r=>Number(lat)>=r.south && Number(lat)<=r.north && Number(lon)>=r.west && Number(lon)<=r.east);
@@ -451,7 +451,7 @@ async function refreshStudy(id) {
             : "Calculation complete. Check electrical feasibility in the scenario comparison.")
       : study.progress;
     if(study.status==="completed"&&study.request.schema_version===11&&study.result?.rate_evidence_status==="provisional"){$("progress").textContent="Provisional historical estimate. Bills and savings use documented rate and billing assumptions; inspect the assumptions table. "+$("progress").textContent;}
-    if(study.status==="completed"&&study.request.schema_version===11&&study.result?.is_complete_bill===false){$("progress").textContent="Verified-charges subtotal only; missing or provisional bill components are listed below. "+$("progress").textContent;}
+    if(study.status==="completed"&&study.request.schema_version===11&&study.result?.is_complete_bill===false){$("progress").textContent=(study.result?.rate_evidence_status==="provisional"?"Modeled component scope is incomplete; inspect excluded charges and the recorded assumptions. ":"Verified-charges subtotal only; excluded bill components are listed below. ")+$("progress").textContent;}
     $("request-download").href=`/api/studies/${id}/request.json`;
     if (study.status==="failed") { showError("run-error",study.error); await history(); }
     else if (study.status==="cancelled") { await history(); }

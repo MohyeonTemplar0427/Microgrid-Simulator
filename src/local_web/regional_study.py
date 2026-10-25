@@ -19,7 +19,9 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"xcel_energy_minnesota":(45.42,-93.83,"Hypothetical unincorporated Sherburne County, Minnesota site; NSP service and tax jurisdiction independently confirmed, not a map finding"),
+SITES={"we_energies_wisconsin":(43.05,-88.25,"Hypothetical unincorporated Waukesha County, Wisconsin site; Wisconsin Electric service and tax jurisdiction independently confirmed, not a map finding"),
+       "duke_energy_indiana":(39.70,-86.40,"Hypothetical Plainfield/Hendricks County, Indiana site; Duke Indiana service, local charges and Eastern-clock account independently confirmed, not a map finding"),
+       "xcel_energy_minnesota":(45.42,-93.83,"Hypothetical unincorporated Sherburne County, Minnesota site; NSP service and tax jurisdiction independently confirmed, not a map finding"),
        "ameren_missouri":(38.49,-92.16,"Hypothetical unincorporated Cole County, Missouri site; Ameren service and tax jurisdiction independently confirmed, not a map finding"),
        "ameren_illinois":(39.75,-89.70,"Hypothetical unincorporated Sangamon County, Illinois site; Ameren service, Rate Zone II and no municipal charges independently confirmed"),
        "dominion_energy_virginia":(37.63,-77.52,"Hypothetical Henrico-area Virginia site; locality independently confirmed"),
@@ -123,12 +125,14 @@ def capabilities():
         utilities[utility]={"id":utility,"label":data["label"],"state":data["state"],"transmission_zone":data["zone"],
             "grid_operator":data.get("grid_operator","PJM"),"resource_adequacy_zone":data.get("resource_adequacy_zone"),
             "transmission_owner":data.get("transmission_owner"),"timezone":data_timezone(utility),
+            "transmission_ownership_context":data.get("transmission_ownership_context"),
             "grid_sources":data.get("grid_sources",[]),
             "plans":plans,"accounts":{p["id"]:module.defaults(p["id"]) for p in supported},
             "hypothetical_accounts":{p["id"]:(module.hypothetical_defaults(p["id"]) if hasattr(module,"hypothetical_defaults") else module.defaults(p["id"])) for p in supported},
             "study_defaults_by_plan":{p["id"]:defaults(utility,p["customer_class"],p["id"]) for p in supported},
             "hypothetical_nem":{p["id"]:module.nem_defaults(p["id"]) for p in supported if "net_metering" in p.get("solar_modes",[]) } if hasattr(module,"nem_defaults") else {},
-            "defaults":{kind:defaults(utility,kind) for kind in ("residential","commercial")}}
+            "defaults":{kind:defaults(utility,kind) for kind in ("residential","commercial")
+                if any(p["customer_class"]==kind for p in supported)}}
     return {"schema_version":11,"utilities":utilities,"timezone":"America/New_York",
         "interval_minutes":[15,30],"max_days":366,"csv_max_bytes":2*1024*1024,
         "credit_objective_policies":["exclude_opening_credits","explicit_cash_bill"],
@@ -160,6 +164,38 @@ def _load(settings,grid,kind):
         archetype=BuildingArchetype(settings["archetype"]),scaling=LoadScaling.PEAK_KW,peak_kw=settings["power_kw"],
         variability_fraction=0,random_seed=20260101)
     return model.build_load_kw(grid).to_numpy()
+
+
+def _validate_rate_evidence_selection(account, plan):
+    """Require an explicit, typed opt-in before any provisional input is used.
+
+    Legacy saved accounts without these optional fields retain verified-only
+    behavior. The utility adapter still decides whether a particular dated
+    cycle actually uses assumptions; selecting the mode is not rate evidence.
+    """
+    fields={item["name"]:item for item in plan.get("account_fields",[]) if isinstance(item,dict)}
+    choices=fields.get("rate_evidence_mode",{}).get("choices")
+    if not choices:
+        return
+    mode=account.get("rate_evidence_mode","verified")
+    accepted=account.get("provisional_assumptions_accepted",False)
+    if (mode not in choices or type(accepted) is not bool
+            or mode!="verified" and accepted is not True):
+        raise ValueError("Select a supported rate evidence mode and explicitly accept the documented provisional rates and billing assumptions. Verified mode never fills rate gaps.")
+
+
+def _rate_evidence_manifest(account, bills):
+    """Keep selected permissions separate from assumptions actually used."""
+    bills=list(bills)
+    status=("provisional" if any(b.get("rate_evidence_status")=="provisional" for b in bills)
+            else "verified" if bills and all(b.get("rate_evidence_status")=="verified" for b in bills)
+            else "not_recorded")
+    return {"selected_mode":account.get("rate_evidence_mode","verified"),
+            "provisional_assumptions_accepted":account.get("provisional_assumptions_accepted",False),
+            "status":status,
+            "assumption_models":sorted({b["assumption_model"] for b in bills if b.get("assumption_model")}),
+            "assumption_ids":sorted({item["id"] for b in bills for item in b.get("rate_assumptions",[])}),
+            "note":"Selection permits only the catalogued assumptions. Each cycle and component records whether they were actually used; component completeness is separate from historical verification."}
 
 
 def prepare(r):
@@ -194,6 +230,7 @@ def prepare(r):
         raise ValueError(plan.get("reason") or "This plan is not implemented.")
     if plan.get("customer_class")!=kind:
         raise ValueError("The selected billing plan does not match the residential/commercial site class.")
+    _validate_rate_evidence_selection(a,plan)
     supplier=a.get("supply",a.get("supplier",a.get("supply_arrangement")))
     if r["regional_account"]["retail_supplier"]!=utility:
         raise ValueError("This adapter requires the named utility as default retail supplier; third-party supply needs a complete contract model.")
@@ -272,7 +309,7 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota"):
+    if utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
@@ -291,6 +328,7 @@ def prepare(r):
         if plans[alternative].get("voltage") and plans[alternative]["voltage"]!=electrical["voltage"]:
             raise ValueError("A tariff comparison cannot change the site's confirmed electrical service class.")
         alternative_account={**a,"tariff":alternative}
+        _validate_rate_evidence_selection(alternative_account,plans[alternative])
         for _,block,cycle in cycles:
             module.validate_account(cycle_account(alternative_account,cycle),grid.index[block],equipment=equipment)
     return grid,load,cycles,equipment
@@ -349,6 +387,7 @@ def _execute_single_plan(directory,r):
                 export_enabled=has_pv and r["operating_contract"]["mode"]=="net_metering",
                 grid_charging=r["operating_contract"]["grid_charging_confirmed"],
                 credit_objective_policy=r["credit_objective_policy"],equipment={**equipment,"pv":has_pv,"battery":has_storage,
+                    **({"pv_dc_kw":r["solar"]["dc_capacity_kw"] if has_pv else 0.} if "pv_dc_kw" in equipment else {}),
                     "pv_ac_kw":r["pv_capacity_kw"] if has_pv else 0.,"battery_kw":current["max_discharge_kw"] if current else 0.})
             state=result["next_state"];parts.append(result["dispatch"]);bills.append(result["bill"]);outcomes.append(result)
             if has_storage:current["energy_kWh"]=result["terminal_energy_kwh"]
@@ -358,6 +397,7 @@ def _execute_single_plan(directory,r):
                 "total_usd":bill["total_usd"],"unrounded_total_usd":bill["unrounded_total_usd"],
                 "is_complete_bill":bill["is_complete_bill"],"objective_scope":bill_scope(bill),
                 "rate_evidence_status":bill.get("rate_evidence_status","not_recorded"),
+                "assumption_model":bill.get("assumption_model"),
                 "rate_assumption_ids":json.dumps([x["id"] for x in bill.get("rate_assumptions",[])]),
                 "import_kwh":bill["import_kwh"],"export_kwh":bill["export_kwh"],
                 "optimization_objective_usd":result["objective_usd"],"reconciliation_difference_usd":result["reconciliation_difference_usd"],
@@ -388,11 +428,14 @@ def _execute_single_plan(directory,r):
     comparisons=[]
     for name,result in results.items():
         dispatch=result["dispatch"];bills=result["bills"];outcomes=result["outcomes"]
+        evidence=_rate_evidence_manifest(r["account"],bills)
         total=sum(b["total_usd"] for b in bills)
         comparisons.append({"scenario":name,"utility_bill_usd":total,"savings_vs_grid_usd":base-total,
             "is_complete_bill":all(b["is_complete_bill"] for b in bills),
             "objective_scope":"provisional_modeled_bill" if any(bill_scope(b)=="provisional_modeled_bill" for b in bills) else "complete_utility_bill" if all(b["is_complete_bill"] for b in bills) else "verified_charges_subtotal",
             "rate_evidence_status":"provisional" if any(b.get("rate_evidence_status")=="provisional" for b in bills) else "verified" if all(b.get("rate_evidence_status")=="verified" for b in bills) else "not_recorded",
+            "rate_assumption_ids":json.dumps(evidence["assumption_ids"]),
+            "assumption_models":json.dumps(evidence["assumption_models"]),
             "import_kwh":sum(b["import_kwh"] for b in bills),"export_kwh":sum(b["export_kwh"] for b in bills),
             "pv_curtailed_kwh":float(dispatch.pv_curtailed_kw.sum()*grid.timestep_hours),
             "battery_charge_kwh":float(dispatch.battery_charge_kw.sum()*grid.timestep_hours),
@@ -411,7 +454,8 @@ def _execute_single_plan(directory,r):
         if "timestamp" in frame:frame["timestamp"]=pd.to_datetime(frame["timestamp"],utc=True)
         save_table(directory,key,[c.replace("_"," ") for c in frame],frame)
         tables.append({"id":key,"label":label,"row_count":len(frame)})
-    save("comparison","Retail bills, operation and electrical comparison",pd.DataFrame(comparisons))
+    rate_evidence=_rate_evidence_manifest(r["account"],(b for value in results.values() for b in value["bills"]))
+    save("comparison",("Provisional historical estimates" if rate_evidence["status"]=="provisional" else "Retail bills")+", operation and electrical comparison",pd.DataFrame(comparisons))
     save("billing-components","Itemized charges and component savings",pd.DataFrame(items))
     save("billing-cycles","Bills and closing state by confirmed cycle",pd.DataFrame(cycle_rows))
     if assumption_rows:save("billing-assumptions","Provisional tariff rates and billing rules",pd.DataFrame(assumption_rows))
@@ -435,6 +479,7 @@ def _execute_single_plan(directory,r):
         "regional_account":r["regional_account"],"account":r["account"],"operating_contract":r["operating_contract"],
         "is_complete_bill":all(row["is_complete_bill"] for row in comparisons),
         "rate_evidence_status":"provisional" if any(row["rate_evidence_status"]=="provisional" for row in comparisons) else comparisons[0]["rate_evidence_status"],
+        "rate_evidence":rate_evidence,
         "billing_evidence_note":"Component completeness, historical rate evidence, solver proof and representative electrical feasibility are separate claims. Provisional savings use the recorded assumptions.",
         "input_provenance":{"load":{k:v for k,v in r["load"].items() if k!="csv"},"pv":pv_provenance,
             "native_csv_sha256":hashlib.sha256(r["load"]["csv"].encode()).hexdigest() if r["load"]["csv"] else None,
@@ -499,6 +544,7 @@ def execute(directory,r):
     result["tariff_comparison"]={"method":"independently_optimized_per_tariff","primary":primary_tariff,
         "alternatives":r.get("tariff_comparisons",[]),"account_history_and_obligations":"same initial facts",
         "same_schedule_repricing":False}
+    result["rate_evidence"]=_rate_evidence_manifest(r["account"],(bill for bills in result["billing"].values() for bill in bills))
     result["input_provenance"]["request_sha256"]=hashlib.sha256(json.dumps(r,sort_keys=True).encode()).hexdigest()
     write_json(directory/"result.json",result)
     write_json(directory/"progress.json",{"message":"Retail scenario and independently optimized tariff comparisons saved"})
