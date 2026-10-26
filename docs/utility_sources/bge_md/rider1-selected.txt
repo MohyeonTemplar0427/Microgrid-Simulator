@@ -1,0 +1,76 @@
+Source ID: rider1
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt970ee32f55c20fde/6abe810c794a172f39b99bc0/Rdr_1_9.pdf
+Original PDF SHA256: 8d134a8f417beabdf5afbce27720ab0cb6e04731b920b8b2d11bbcf950732783
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+76 Electric – Retail – Baltimore Gas and Electric Company
+Riders
+1. Standard Offer Service
+Standard Offer Service (“SOS”) is an electric supply service that BGE will provide to customers. The
+SOS provided by BGE shall include energy, capacity, line losses, transmission and related ancillary services.
+BGE will provide Standard Offer Market-Priced Service to Schedules R, RL, G, GU, GS, GL, SL, P and T.
+Standard Offer Service includes Generation and Transmission demand and energy charges. Notwithstanding
+the provision of SOS, all SOS customers are free to choose a supplier other than BGE at any time.
+Market-Priced Service
+Customers who do not choose an alternate energy supplier for their electric requirements will be placed on
+Market-Priced Service provided by BGE. All customers eligible for Residential, Types I and II Market-Priced
+Service will be informed of the retail prices and Supply Price Comparison Information for the service, if
+practicable, at least two (2) months prior to the beginning of each service year. The Customer is not permitted
+to change service type within an SOS year. The current Market-Priced Service Charges are shown on page 77-
+A.
+Residential Service: Distribution customers currently served under Schedules R and RL are eligible for
+Residential Standard Offer Service.
+Type I Service: Distribution customers currently served under Schedules G, GU, GS and SL are eligible for
+Type I Service except those assigned to Type II Service .
+Type II Service: Applicable to a distribution customer that has a metered 30-minute demand that equals or
+exceeds 25 kW; energy consumption in excess of 6,000 kWh in any two consecutive winter billing months
+(October through May, inclusive); or a monthly energy consumption that exceeds 7,500 kWh for a single summer
+billing month (June through September, inclusive); and whose PJM capacity peak load contribution is less than
+600kW are eligible for Type II Service, unless excluded by the Phase I Settlement Agreement in Case No. 8908.
+(Continued on Next Page)
+P. S. C. Md. – E-6 (Suppl. 693) Filed 12/21/22 – Effective 02/01/23
+
+=== PDF page 2 ===
+Baltimore Gas and Electric Company – Electric – Retail 77
+1. Standard Offer Service - continued
+Customers eligible for Residential, Types I and II service are subject to the Terms and Conditions of this Tariff.
+The retail prices for Residential, Types I and II customers include:
+1. Where applicable, the seasonally, time -differentiated load weighted average of all electric supply
+prices for each Service in each year;
+2. Retail charges to recover FERC -approved transmission charges and PJM costs incurred by BGE
+related to the Service Type load obligation;
+3. An Administrative Charge , consisting of incremental, uncollectible and cash working capital costs, an
+administrative adjustment and a return ; and
+4. Applicable taxes.
+The actual incremental, uncollectible, and cash working capital costs of providing Residential, Type I, and
+Type II Service for the program year shall be used to true up the estimated incremental, uncollectible and cash
+working capital costs for that same year. Any over - or under-collection of costs shall be applied to the estimated
+incremental, uncollectible and cash working capital costs for each successive program year for Residential, Type
+I, and Type II Service . This adjustment will be made in the February, June and October billing months. The
+adjustment for the return will be made annually. Revenue resulting from the Administrative Adjustment shall
+be credited to all distribution customers eligible for Residential, Type I, and Type II Service in accordance with
+Rider 10 – Administrative Cost Adjustment .
+Hourly-Priced Service : Distribution customers not eligible for Type I or Type II Service whose PJM capacity
+peak load contribution is 600kW or greater are eligible for Hourly -Priced Service. BGE will provide Hourly -
+Priced Service from July 1, 2004 to May 31, 2006, and thereafter subject to Maryland Public Service
+Commission review. Customers eligible for this service are subject to the Terms and Conditions of this Tariff.
+The retail prices for Hourly -Priced Service customers include:
+1. The appropriate PJM hourly integrated real time locational marginal price for energy;
+2. Charges associated with the PJM capacity obligation;
+3. FERC-approved transmission, ancillary services, administrative, energy losses, and any other FERC-
+approved or PJM charges and costs incurred by BGE related to the Hourly -Priced load obligation;
+4. An Administrative Charge, consisting of incremental, uncollectible and cash working capital costs, an
+administrative adjustment and a return ;
+5. Applicable taxes; and
+6. Any other price element directly related to BGE’s Hourly -Priced Service load obligation approved by
+the Maryland Public Service Commission.
+The actual incremental, uncollectible, and cash working capital costs of providing Hourly -Priced Service for
+the program year shall be used to true up the estimated incremental , uncollectible and cash working capital costs
+for that same year. Any over - or under-collection of costs shall be applied to the estimated incremental ,
+uncollectible and cash working capital costs for each successive Hourly-Priced Service program year. This
+adjustment will be made in the February, June and October billing months . The adjustment for the return will be
+made annually. Revenue resulting from the Administrative Adjustment shall be credited to all distribution
+customers eligible for Hourly Service in accordance with Rider 10 – Administrative Cost Adjustment.
+(Continued on Next Page)
+P. S. C. Md. – E-6 (Suppl. 642) Filed 12/20/19 – Effective 02/01/20

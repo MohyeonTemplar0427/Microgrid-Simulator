@@ -1,0 +1,86 @@
+Source ID: comar_sales_price
+Primary URL: https://regs.maryland.gov/us/md/exec/comar/03.06.01.08
+Original SHA256: ca3c47026719174e973ceb7af549a6a34dddbcc9c4d13b02b27520072c3f9343
+Extraction: whitespace normalized; physical PDF pages are one-based.
+.08 “Taxable Price” Defined. | Library of Maryland Regulations
+Toggle mobile menu
+Code of Maryland Regulations
+.08 “Taxable Price” Defined.
+A.
+The sales and use tax is computed on the “taxable price” of a transaction subject to the tax. The term “taxable price” is broadly defined by statute to include, with certain specific exceptions, the total consideration for the transaction, which may be either in the form of money, rights, property, promises, or anything else of value, or by exchange or barter. The total monetary value of the consideration, that is, of all those things which in fact are, or are promised to be, paid or delivered by or on behalf of the purchaser, to or on behalf of the vendor in the consummation and complete performance of a sale, whether or not the vendor receives any benefit from them, constitutes the “price” on which the tax is to be computed. Deductions are not permitted for any expense or cost, including the cost of any labor or service rendered, any material used or any property, digital code, or digital product sold regardless of how any contract, invoice or other evidence of the transaction is stated or computed, except for those items specifically described in §D, or in Regulation .10 with respect to certain utilities or Regulation .28 with respect to leases.
+B.
+Components of Taxable Price—Examples.
+(1)
+The following illustrate some items which might appear as a separate amount in the vendor's computation of a bill that nevertheless are a part of the “taxable price”, and which therefore may not be deducted before computation of the tax:
+(a)
+Any charges for any services to bring the subject of a sale to its finished state ready for delivery and in the condition specified by the buyer, including charges for assembly, fabrication, alteration, lubrication, engraving, monogramming, cleaning, or any other servicing, customizing or dealer preparation.
+(b)
+Any discount which is dependent upon an event occurring after consummation of the sale, such as a discount allowed for the prompt payment of a bill.
+(c)
+Any charge based on the amount or frequency of a purchase, such as a small order charge, the method of billing, such as a split billing, or the nature of the item sold, such as a slow-moving charge for an item not frequently sold.
+(d)
+Excise or other taxes not statutorily imposed directly upon the buyer or act of buying and for which the buyer has no direct legal liability independent of any contractual obligation to the vendor, regardless of how they are stated, such as manufacturer's, wholesaler's, or retailer's taxes, except for certain utility taxes described in Regulation .10 and certain personal property taxes in lease situations as described in Regulation .28.
+(e)
+Any commission or other form of compensation for the services of an agent, factor, consultant, broker, or similar person.
+(f)
+Any charges for warranties, maintenance or service agreements, or insurance coverage required by the vendor to be taken as a condition of the sale. If the sale could be consummated without the payment of these charges, the charges, unless for a taxable service as described in
+Tax-General Article, §11-101(m), Annotated Code of Maryland
+, are not part of the taxable price if separately stated. For example, if the lessee of an automobile who has a contractual obligation to return the automobile undamaged may elect to purchase insurance protecting the lessee against the possibility of having to pay for damages, but need not purchase this insurance in order to lease the vehicle, a separately stated charge for this insurance is not part of the taxable price.
+(g)
+Any portion of the price described as a “donation”, when the donation is in fact required by the vendor as a condition of the sale.
+(h)
+The amount of any rebate which may be made to the buyer by anyone other than the vendor, or by the vendor upon the performance by the buyer of any condition following the sale.
+(2)
+The following illustrate some forms of consideration that might be tendered by or on behalf of the buyer, the values of which are a part of the “taxable price” and therefore may not be deducted before computation of the tax:
+(a)
+The transfer, whether in the nature of a “trade-in”, return, exchange, or otherwise, of anything to the vendor, regardless of whether the buyer may have paid any tax on acquisition of the item or service transferred or whether, in the case of a return or exchange, the buyer may be entitled to any refund of tax previously paid.
+(b)
+The assumption of any liabilities of, or attributable to, the vendor.
+(c)
+The performance of any personal or other services for or on behalf of the vendor.
+(d)
+Except for a federal food coupon, the face value of any coupon, voucher, or similar item issued by any person, including a manufacturer, government agency or the vendor, for which the vendor can be reimbursed or compensated in any form by a third party. This includes compensation in the form of advertising or promotion such as with an online deal-of-the-day eCoupon or similar discount. The presentation of a coupon for which there exists no arrangement for reimbursement to the vendor by any third party, such as a store coupon that in effect establishes a lower price, is not part of the taxable price.
+C.
+“Taxable price” includes, for a short-term vehicle rental as defined under
+Tax-General Article, §11-104(c), Annotated Code of Maryland
+, all sales and charges made in connection with the short-term vehicle rental, including insurance, freight handling, equipment and supplies, delivery and pickup, cellular telephone, and other accessories, but not including sales of motor fuel subject to the motor fuel tax.
+D.
+Each of the following items, if made in connection with the sale and clearly identified with the consideration stated separately from any other item by documentary evidence in existence and made known to the buyer at the time of sale, is not a part of the “taxable price” and is therefore deductible from the total consideration before computation of the tax:
+(1)
+A charge for labor or service used for application or installation, so long as the charge does not include any amounts described in
+§B of this regulation
+, and in particular §B(1)(a), or any other fabrication.
+(2)
+A charge for a professional service, except for a taxable service.
+(3)
+Any amounts paid by the buyer as a finance charge, interest, or similar charge for credit extended to the buyer.
+(4)
+A charge for a delivery, freight, or other transportation service for delivery directly to the buyer by the vendor or by another person acting for the vendor. This does not include any charge:
+(a)
+To transport the property from a third party to any location of the vendor;
+(b)
+To transport the property from any location of the vendor to another location of the vendor; and
+(c)
+For transmission, distribution, or delivery of electricity or natural gas, if the sale or use of the electricity or natural gas is subject to the sales and use tax.
+(5)
+Any consumer excise taxes imposed by a governmental unit directly upon the buyer or act of purchase.
+(6)
+A deposit posted to insure the return of an item taken from the vendor which the vendor expects to have returned, and which will be refunded in full upon the return of the item.
+(7)
+Any trade, wholesale, volume, employee, cash, or other discount irrevocably applied at the time of sale which in effect establishes a new price, and which is not dependent on any condition or event subsequent to the sale.
+(8)
+Any amount paid by a buyer of food or beverages for human consumption on the premises of the vendor as a mandatory gratuity or service charge which is in the nature of a tip, if the food or beverages are served to a group of not more than 10 persons. Mandatory gratuities or service charges on sales of food or beverages to a group of more than 10 persons are part of the “taxable price” whether or not separately stated, and therefore may not be deducted before computation of the tax.
+(9)
+A charge for any service for the operation of equipment used for the production of audio, video, or film recordings.
+(10)
+The value of a user component or part (core value) received from a purchaser of the following remanufactured truck parts:
+(a)
+An air brake system;
+(b)
+An engine;
+(c)
+A rear axle carrier; or
+(d)
+A transmission.
+Cross References
+03.06.01.48A(2)(o)

@@ -1,0 +1,63 @@
+Source ID: rider8_10_history
+Primary URL: https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/bltf75afad89af14ef3/6acce6326214c42d62238ff5/POLR_RateAdjustmentChart_1.pdf?branch=prod_alias
+Original PDF SHA256: 18fd6ff6ea3e4ac445a3165b6ea1e997b6334cf515af4282c3be934ef8114a2c
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+Rider 8 - Energy Cost Adjustment for 8/27/2026
+Sta n d a r d O ffer Ma r ket-Pr iced Ser vice 1
+Rate Schedule Feb. - May '21 Jun. - Sept. '21 Oct. '21 - Jan. '22 Feb. - May '22 Jun. - Sept. '22 Oct. '22 - Jan. '23 Feb. - May '23 Jun. - Sept. '23 Oct. '23 - Jan. '24
+¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW
+Residential - Sc h. R (0.184) - 0.002 - (0.071) - (0.094) - 0.051 - (0.116) - (0.059) - 0.068 - 0.032 -
+Residential - Sc h. RL (0.184) - 0.002 - (0.071) - (0.094) - 0.051 - (0.116) - (0.059) - 0.068 - 0.032 -
+G - Type I Service 0.350 - 0.022 - 0.160 - 0.354 - 0.207 - 0.435 - 0.818 - 0.175 - 0.290 -
+GS - Type I Service 0.350 - 0.022 - 0.160 - 0.354 - 0.207 - 0.435 - 0.818 - 0.175 - 0.290 -
+GU - Type I Service 0.350 - 0.022 - 0.160 - 0.354 - 0.207 - 0.435 - 0.818 - 0.175 - 0.290 -
+SL /PL - Type I Service 2 0.235 - 0.177 - 0.177 - 0.177 - 0.359 - 0.359 - 0.359 - 0.586 - 0.586 -
+G - Type II Servic e 0.002 - 0.017 - 0.022 - 0.109 - 0.085 - 0.173 - 0.429 - 0.355 - 0.507 -
+GS - Type II Servic e 0.002 - 0.017 - 0.022 - 0.109 - 0.085 - 0.173 - 0.429 - 0.355 - 0.507 -
+GL - Type II Servic e ($0.474) $0.46 (0.091) ($0.50) (0.226) ($0.48) (0.765) $0.17 (0.065) $0.10 (0.361) $0.31 (1.122) $0.31 (0.348) ($0.06) (0.888) $0.04
+P/T- Type II Servic e ($0.474) $0.46 (0.091) ($0.50) (0.226) ($0.48) (0.765) $0.17 (0.065) $0.10 (0.361) $0.31 (1.122) $0.31 (0.348) ($0.06) (0.888) $0.04
+Hourly Service 1.729 - 0.418 - 0.915 - 1.015 - 0.720 - 2.214 - 1.145 - (0.325) - (0.327) -
+Rate Schedule Feb. - May '24 Jun. - Sept. '24 Oct. '24 - Jan. '25 Feb. - May '25 Jun. - Sept. '25 Oct. '25 - Jan. '263 Feb. - May '26 Jun. - Sep '26 Oct. '26 - Jan. '27
+¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW ¢/kWh $/ kW
+Residential - Sc h. R (0.678) - (0.047) - (0.165) - (0.180) - 0.018 - 0.088 - (0.049) - (0.138) - (1.050) -
+Residential - Sc h. RL (0.678) - (0.047) - (0.165) - (0.180) - 0.018 - 0.088 - (0.049) - (0.138) - (1.050) -
+G - Type I Service 0.151 - 0.155 - 0.422 - 0.510 - (0.088) - 0.118 - 0.736 - (0.285) - (0.736) -
+GS - Type I Service 0.151 - 0.155 - 0.422 - 0.510 - (0.088) - 0.118 - 0.736 - (0.285) - (0.736) -
+GU - Type I Service 0.151 - 0.155 - 0.422 - 0.510 - (0.088) - 0.118 - 0.736 - (0.285) - (0.736) -
+SL /PL - Type I Service 2 0.586 - 0.633 - 0.633 - 0.633 - 0.282 - 0.282 - 0.282 - 0.366 - 0.366 -
+G - Type II Servic e 0.654 - 0.249 - 0.567 - 1.080 - 0.507 - 0.715 - 2.092 - 0.474 - 0.424 -
+GS - Type II Servic e 0.654 - 0.249 - 0.567 - 1.080 - 0.507 - 0.715 - 2.092 - 0.474 - 0.424 -
+GL - Type II Servic e (2.029) $0.02 (0.083) $0.03 (0.442) $0.24 (1.735) $0.63 (0.295) ($0.42) (0.685) ($1.01) (1.170) ($0.78) (0.325) ($1.45) (0.569) ($3.37)
+P/T- Type II Servic e (2.029) $0.02 (0.083) $0.03 (0.442) $0.24 (1.735) $0.63 (0.295) ($0.42) (0.685) ($1.01) (1.170) ($0.78) (0.325) ($1.45) (0.569) ($3.37)
+Hourly Service 0.495 - (0.112) - (0.102) - 0.117 - 0.405 - 1.021 - 1.202 - (0.689) - (0.155) -
+1 E n er g y C os t A d j u s t m en t ap p l i c ab l e t o al l M ar k et - P r i c ed S er v i c e c u s t om er s an d i n c l u d ed
+i n t h e G en er at i on an d T r an s m i s s i on M ar k et - P r i c ed S er v i c e C h ar g es on t h e c u s t om er ' s b i l l
+2 S L / P L r at es ar e s et an n u al l y ev er y J u n e
+3 Rat es do not inc luded c er t ain ac t ual and f or ec as t ed c apac it y c os t s in r ec ognit ion of t he Commis s ion’ s May 29, 2025 Let t er Or der . The t r ue- up of ac t ual c os t s will be inc luded in a f ut ur e c os t t r ue- up under Rider 8.
+1 of 1
+
+=== PDF page 2 ===
+BGE
+Rider 10 - Administrative Cost Adjustment for
+Standard Offer Market-Priced Service 1
+Feb. - Jun. - Oct. '24 - Feb. - Jun. - Oct. '25 - Feb. - Jun. - Oct. '26 -
+Rate Schedule May '24 Sep. '24 Jan. '25 May '25 Sep. '25 Jan. '26 May '26 Sep. '26 Jan. '27
+¢/kWh ¢/kWh ¢/kWh ¢/kWh ¢/kWh ¢/kWh ¢/kWh ¢/kWh ¢/kWh
+Residential - Sch. R (0.099) (0.094) (0.097) (0.101) (0.096) (0.096) (0.111) (0.107) (0.108)
+Residential - Sch. RL (0.099) (0.094) (0.097) (0.101) (0.096) (0.096) (0.111) (0.107) (0.108)
+G - Type I Service (0.072) (0.067) (0.065) (0.061) (0.064) (0.063) (0.062) (0.064) (0.063)
+GS - Type I Service (0.072) (0.067) (0.065) (0.061) (0.064) (0.063) (0.062) (0.064) (0.063)
+GU - Type I Service (0.072) (0.067) (0.065) (0.061) (0.064) (0.063) (0.062) (0.064) (0.063)
+SL/PL - Type I Service (0.072) (0.067) (0.065) (0.061) (0.064) (0.063) (0.062) (0.064) (0.063)
+G - Type II Service (0.022) (0.025) (0.024) (0.021) (0.025) (0.024) (0.021) (0.025) (0.024)
+GS - Type II Service (0.022) (0.025) (0.024) (0.021) (0.025) (0.024) (0.021) (0.025) (0.024)
+GL - Type II Service (0.022) (0.025) (0.024) (0.021) (0.025) (0.024) (0.021) (0.025) (0.024)
+P/T - Type II Service (0.022) (0.025) (0.024) (0.021) (0.025) (0.024) (0.021) (0.025) (0.024)
+Hourly Service (0.002) (0.003) (0.003) (0.003) (0.005) (0.005) (0.003) (0.005) (0.005)
+1 Administrative Cost Adjustment is applicable to all Distribution customers and is included
+in the Distribution Charge on the customer's bill.
+Revised:
+8/27/2026
+1 of 1

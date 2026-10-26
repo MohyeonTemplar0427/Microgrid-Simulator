@@ -1,0 +1,96 @@
+Source ID: rider15
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt95b3f3254f635c76/Rdr_15.pdf
+Original PDF SHA256: e51df2407bccc6793b98813fe0ac0500bfa1cd8e7da569d800c425d3c10f50fe
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 3 ===
+94B Baltimore Gas and Electric Company – Electric –
+Retail
+Rider 15 – Demand Response Service –continued
+In exchange for device control, the Company will provide a monthly bill credit for each month the
+customer participates in the program. In exchange for control of the cooling equipment, the Company will
+provide a monthly credit on the Customer’s May, June, July, August and September bills. Participants
+confirmed to have electric heat will also be eligible for bill credits each month the system is actively
+enrolled, year-round.
+Monthly Bill Credit: $10 per device
+A Customer shall not concurrently enroll in any other utility-run load control programs or with any
+other company (including a non-utility or Curtailment Service Provider or CSP) which registers the
+Customer for PJM market participation. BGE reserves the right to remove a Customer from the BGE
+program if it is found that their device(s) does not meet the requirements described herein. Participating
+customers may request to be removed from the BGE program at any time. Upon removal from the BYOD
+program, the Company will no longer control the Customer’s device(s). Additionally, upon removal from
+the BYOD program, the customer will no longer receive bill credits.
+4. Access to Company’s Equipment
+Permission is given the Company to enter the Customer’s premises at all reasonable times, for the purpose
+of installing, inspecting, modifying and keeping in repair or removing any or all apparatus used in
+connection with the Air Conditioning Control and Water Heater Control demand response services
+referenced above, and for said purposes the Customer authorizes and requests their landlord, if any, to
+permit the Company to enter said premises. Failure to allow access can result in termination from the
+program.
+BGE reserves the right to remove customers from the program if it is found that the equipment is
+missing, bypassed or removed.
+Customers choosing to participate in an alternative electricity supplier’s, or Curtailment Service
+Provider’s (CSP), demand response program, which is monetized in the PJM markets, will not be eligible
+to participate in any of the Company’s demand response or PTR programs.
+B. Cost Recovery
+Rates for service under the Company’s residential rate schedules are subject to a Charge to recover
+eligible costs for the Demand Response Service program. The Charge is calculated for a 12-month period
+beginning January 1 of each year using the procedures described below.
+Calculation of Charge
+The Charge for the 12-month period beginning January 1 of each year is determined for each rate
+schedule by dividing Eligible Costs (defined below) expected to be allocated to the schedule for the 12-
+month period by the kilowatt sales expected for that rate schedule over the 12-month period including a
+true-up (defined below). Subject to prior Commission approval, the Charge may be revised at any time to
+adjust for significant changes in Eligible Costs. Details concerning the calculation of the Charge are filed
+with and approved by the Commission prior to their use in billing. The Charge is combined with Rider 2 –
+Electric Efficiency Charge and Rider 26 – Peak Time Rebate to comprise the EmPOWER Maryland Charge
+line item on the Customer’s monthly electric bill.
+(Continued on Next Page)
+P. S. C. Md. -- E-6 (Suppl. 742) Filed 11/18/2025 – Effective 01/01/2026
+
+=== PDF page 4 ===
+Electric – Retail – Baltimore Gas and Electric Company 94C
+Rider 15 – Demand Response Service –continued
+The current Charge is as follows:
+Rate Schedule Rate ($ per kilowatt-hour)
+Residential (Schedules R, RD, EV, and RL) 0.00198
+Small General Service (Schedule G, GS) 0.00027
+Eligible Costs
+Total costs eligible for recovery in a 12-month Charge period are the costs approved by the Commission
+and incurred from the following cost categories:
+Program Costs. Eligible Costs include all costs associated with administering the program. They
+include but are not limited to capital costs (procurement and installation of switches and thermostats
+and other capital expenditures such as hardware and software); and operating costs including labor,
+advertising, other operation and maintenance, contractor costs, monitoring and evaluation, customer
+incentives (enrollment incentives and bill credits), return and taxes.
+a. Capital costs are amortized on a straight line basis over ten years (thermostats) and fifteen
+years (switches).
+b. The regulatory asset is amortized over five years for the air conditioning switch and
+thermostat pilot costs and for certain operating costs (specifically, certain customer
+acquisition costs, one-time Enrollment Incentive costs and a portion of the customers’
+monthly credits as required).
+c. Earnings on the net investment in the Demand Response Service are determined by
+applying the Company’s most recent authorized rate of return, adjusted for taxes, to the
+average investment balance net of deferred taxes.
+d. The remaining operating costs (customer's monthly or recurring credit, ongoing operating
+costs, property taxes, costs to administer the BYOD program, etc.) will also be recovered.
+Pilot costs will be recovered as approved by the Commission.
+Program Incentive. BGE’s incentive will be determined monthly beginning in January 2008. It
+will be equal to a tiered percentage sharing basis between residential ratepayers and the Company
+of the benefit components of wholesale capacity revenue, wholesale energy revenue and wholesale
+capacity price mitigation:
+MW Capacity Company Incentive
+0-199 0.00%
+200-299 0.00%
+300-399 5.00%
+400-499 5.75%
+500-599 6.50%
+600 and above 7.75%
+The Company will not receive any program incentive until the Commission determines that Customers
+are receiving benefits sufficient to offset the cost recovery charge.
+The wholesale capacity revenue will be the total amount of revenue that BGE receives from PJM by
+monetizing the peak load reduction capability of its Demand Response Service and residential legacy
+programs in the PJM RPM process and any other capacity revenue that may be derived from bilateral or
+other arrangements associated with these programs.
+(Continued on Next Page)
+P. S. C. Md. -- E-6 (Suppl. 742) Filed 11/18/25– Effective with January 2026 Billings

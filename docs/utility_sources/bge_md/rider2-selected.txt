@@ -1,0 +1,50 @@
+Source ID: rider2
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt0b5280aebf1a4a36/Rdr_2.pdf
+Original PDF SHA256: b9749be06e75554d706fdbfbd4187d0caf884c34d45e95c377443e9286925498
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+78 Electric – Retail – Baltimore Gas and Electric Company
+2. Electric Efficiency Charge
+Rates for service under the Company’s rate schedules are subject to a Charge to recover Eligible
+Costs (hereinafter defined) applicable to that rate schedule incurred by the Company for conservation
+program design and for specific conservation programs approved for inclusion in the Charge by the
+Commission. The Charge is calculated for a 12-month period beginning January 1 of each year using
+the procedures described below.
+Calculation of Efficiency Charge
+The Charge for the 12-month period beginning January 1 of each year is determined for each rate
+schedule by dividing Eligible Costs expected to be allocated to the schedule for the 12-month period
+by the kilowatt sales expected for that rate schedule over the 12-month period. Subject to prior
+Commission approval, the Charge may be revised at any time to include additional conservation
+programs or to otherwise adjust for significant changes in Eligible Costs. Details concerning the
+calculation of the Charge are filed with and approved by the Commission prior to their use in billing.
+For Charge calculation purposes, the costs and revenues from Schedules R, RD, EV, and RL,
+Schedules G and GS, and Schedules P and T, are aggregated to form the Residential, Small General
+Service, and Primary/Transmission Voltage Service classes, respectively. The Charge is combined with
+Rider 15 – Demand Response Service, as appropriate, to comprise the EmPOWER Maryland Charge
+line item on the Customer’s monthly electric bill.
+The current Charges are as follows:
+Rate Schedule Rate ($ per kilowatt-hour)
+Residential (Schedules R, RD, EV, and RL) 0.01097
+Small General Service (Schedules G and GS) 0.03526
+General Service Large (Schedule GL) 0.00969
+Primary/Transmission Voltage Service (Schedules P and T) 0.00376
+Eligible Costs
+Total costs eligible for recovery in a 12-month Charge period are program design costs and the
+implementation costs for programs approved by the Commission, incurred from the following cost
+categories:
+(1) Program Costs. The regulatory asset includes program design costs, and implementation
+costs such as customer education, marketing, rebates and buy-downs, capital, measurement
+and verification (M&V) and evaluation for approved conservation programs. The regulatory
+asset is amortized over five years and earns a return at the rate of the Company’s most recent
+authorized electric system rate of return. Certain program costs, specifically behavioral
+program costs and utility administrative costs, are expensed and will also be recovered.
+(2) Imbalances. For each rate schedule, Imbalances are the differences between cumulative costs
+eligible for recovery and revenues collected through the Charge as of December 31 of each
+year. The estimated Imbalance includes 9 months of actual and 3 months of estimated data.
+An Imbalance is debited or credited against the costs eligible for recovery during the 12-
+months beginning January 1. During its disposition, an Imbalance earns interest at the
+Company’s most recent authorized electric system rate of return. Such rate is adjusted for
+taxes, when the Imbalance represents an under-collection of costs to the Company.
+(Continued on Next Page)
+P. S. C. Md. – E-6 (Suppl. 742) Filed 11/18/2025 – Effective with January 2026 Billings

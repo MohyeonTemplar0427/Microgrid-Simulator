@@ -1,0 +1,61 @@
+Source ID: sos_2025_june
+Primary URL: https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blte65b1dd8c5037101/6841ae4babfad136cad48034/POLR_Rates_PTC_MiscCharges_January_Barnes.pdf?branch=prod_alias
+Original PDF SHA256: c57ea34123f6b4074576fc328e239f0ee7498be30bd5783cc4be8c97e0611bac
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+Baltimore Gas & Electric Company
+Standard Offer Service (SOS) Rates/Miscellaneous Charges
+(Transmission Rates Effective June 1, 2025)
+Standard Offer Service Rates BGE Electric Supply Price Comparison Information 1
+(as shown on monthly BGE bill message effective with June 1, 2025 bills)
+June 1, 2025 Sept. 1, 2025 Oct. 1, 2025 Dec. 1, 2025 Mar. 1, 2026 Weighted Avg.
+Generation through through through through through Supply Price
+Rate Transmission Rate Total Supply Rate 1 Aug. 31, 2025 Sept. 30, 2025 Nov. 30, 2025 Feb. 28, 2026 May 31, 2026 June 1, 2025 through
+(1) (2) (3) = (1) + (2) ¢/kWh ¢/kWh ¢/kWh ¢/kWh ¢/kWh May 31, 2026
+¢/kWh ¢/kWh $/kW ¢/kWh $/kW Rate Schedule (incl. Rider 8 2) (incl. Rider 8 2) (excl. Rider 8) (excl. Rider 8) (excl. Rider 8) ¢/kWh
+RESIDENTIAL R 12.587 15.836 16.587 13.337 16.587 14.422
+RL (TOU) 12.765 16.124 16.523 13.119 16.382 14.376
+Schedule R* Jun. 1, 2025 - Aug. 31, 2025 10.247 2.322 - 12.569 - G Type I SOS 12.021 14.218 14.469 12.273 14.469 13.179
+GS (TOU) Type I SOS 11.544 13.878 14.355 12.009 14.226 13.094
+Schedule RL Jun. 1, 2025 - Aug. 31, 2025 On-Peak 15.739 2.257 - 17.996 - SL 8.559 8.559 8.559 8.559 8.559 8.559
+Jun. 1, 2025 - Aug. 31, 2025 Int-Peak 7.920 2.257 - 10.177 - Notes:
+Jun. 1, 2025 - Aug. 31, 2025 Off-Peak 7.742 2.257 - 9.999 - 1
+Seasonal and Weighted Supply Price Information may change slightly beginning
+Schedule EV Jun. 1, 2025 - Aug. 31, 2025 On-Peak 16.230 4.181 - 20.411 - in February, June and October due to scheduled changes in the Rider 8 and Rider
+Jun. 1, 2025 - Aug. 31, 2025 Off-Peak 7.289 1.390 - 8.679 - 1 Adjustments, and Transmission charges. The June 1, 2025 through May 31,
+2026 supply prices include the final BGE zonal load capacity price based on the
+Schedule RD Jun. 1, 2025 - Aug. 31, 2025 On-Peak 20.852 7.253 - 28.105 - latest PJM auction and Reliability Must Run transmission charges. The Supply
+Price for June 1, 2026 through September 30, 2026 will be set in November 2025.
+Jun. 1, 2025 - Aug. 31, 2025 Off-Peak 7.751 1.147 - 8.898 - A Type II comparison is not determined as these rates change every 3 months.
+Schedule SL includes Rider 8 for the annual period ending May 31, 2026.
+COMMERCIAL & INDUSTRIAL
+2 Rider 8 - Energy Cost Adjustment is used to true-up the actual costs of providing
+Schedules G/GU - Type I SOS Jun. 1, 2025 - Aug. 31, 2025 10.123 1.986 - 12.109 - retail energy supply to our customers. It compares actual customer billings for
+Schedule GS - Type I SOS Jun. 1, 2025 - Aug. 31, 2025 On-Peak 14.888 1.977 - 16.865 - electric supply against payments by BGE to the wholesale suppliers for that
+Jun. 1, 2025 - Aug. 31, 2025 Int-Peak 7.788 1.977 - 9.765 - electricity. The comparison uses only known Rider 8 values.
+Jun. 1, 2025 - Aug. 31, 2025 Off-Peak 6.880 1.977 - 8.857 -
+Miscellaneous Charges on Bill
+Schedule SL/PL - Type I SOS 2 Jun. 1, 2025 - May 31, 2026 8.277 - - 8.277 -
+EmPOWER Md. Charge
+Schedule G - Type II SOS Jun. 1, 2025 - Aug. 31, 2025 12.006 1.986 - 13.992 - Effective with January 2025 Bills - Charge/kWh:
+Schs. R & RL Sch. G Sch. GS Sch. GL Schs. P & T
+Schedule GS - Type II SOS Jun. 1, 2025 - Aug. 31, 2025 On-Peak Energy 17.851 1.977 - 19.828 - Electric Efficiency $0.00764 $0.02059 $0.02059 $0.00593 $0.00074
+Jun. 1, 2025 - Aug. 31, 2025 Inter-Peak Energy 8.965 1.977 - 10.942 - Demand Response 0.00251
+Jun. 1, 2025 - Aug. 31, 2025 Off-Peak Energy 8.566 1.977 - 10.543 - Peak Time Rebates 0.00013 0.00011 0.00011 0.00010 0.00008
+Charge/kWh: $0.01028 $0.02070 $0.02070 $0.00603 $0.00082
+Scheds. GL, P & T - Type II SOS Jun. 1, 2025 - Aug. 31, 2025 On-Peak Energy 19.003 - - 19.003 -
+Jun. 1, 2025 - Aug. 31, 2025 Inter-Peak Energy 9.310 - - 9.310 -
+Jun. 1, 2025 - Aug. 31, 2025 Off-Peak Energy 8.203 - - 8.203 -
+Scheds. GL, P & T - Type II SOS Transmission Demand Charge - - 6.64 - 6.64
+Notes:
+1 Excludes Rider 8 Adjustment. Refer to "Electric Supply and Distribution Rate Adjustment Charts" at bge.com under "Rates & Tariffs" for Rider 8 adjustment.
+2 Charge per lamp-watt (¢/lamp-watt) = 8.277¢/kWh x 0.333 = 2.756 ¢/lamp-watt; Sch. PL rate reflected in lamp fixture and renewal rates, effective 06/01/2025
+* For customers participating in Rider 6 - Vehicle Charging TOU (VC-TOU) Adjustment Program, the VC-TOU On-Peak and Off-Peak Total SOS Rates are
+equal to the Schedule EV On-Peak and Off-Peak Total SOS Rates, respectively. The Vehicle Charging Adjustment is based on the sum of 1) Schedule EV
+(On-Peak) Total SOS Rate minus the Schedule R Total SOS Rate multiplied by the eligible smart EV charger's On-Peak kWh and 2) Schedule EV (Off-Peak)
+Total SOS Rate minus the Schedule R Total SOS Rate multiplied by the eligible smart EV charger's Off-Peak kWh. For more information, see Rider 6 -
+Vehicle Charging Time-of-Use Adjustment
+Hourly Administrative Charge = 0.281 ¢/kWh effective 06/01/2025
+Delivery Service charges are available at bge.com. Click on "My Account", "Rates & Tariffs" , then "Electric Service" for Rates & Tariffs
+for the corresponding rate schedule.

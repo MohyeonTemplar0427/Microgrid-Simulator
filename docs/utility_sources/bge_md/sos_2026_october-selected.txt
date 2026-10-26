@@ -1,0 +1,60 @@
+Source ID: sos_2026_october
+Primary URL: https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blte65b1dd8c5037101/6abe9abda6ea1d360734e875/POLR_Rates_PTC_MiscCharges_5.pdf?branch=prod_alias
+Original PDF SHA256: b5f2b4cef2af9f3020ad7df04456a9f49e1ec555d900abda58f968486d3a6dfb
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+Baltimore Gas & Electric Company
+Standard Offer Service (SOS) Rates/Miscellaneous Charges
+(Transmission Rates Effective June 1, 2026)
+Standard Offer Service Rates BGE Electric Supply Price Comparison Information 1
+(as shown on monthly BGE bill message effective with October 1, 2026 bills)
+Oct. 1, 2026 Jun. 1, 2027 Weighted Avg.
+Generation through through Supply Price
+Rate Transmission Rate Total Supply Rate 1 May 31, 2027 Sep. 30, 2027 Oct. 1, 2026 through
+(1) (2) (3) = (1) + (2) ¢/kWh ¢/kWh Sep. 30, 2027
+¢/kWh ¢/kWh $/kW ¢/kWh $/kW Rate Schedule (incl. Rider 8) (excl. Rider 8) ¢/kWh
+RESIDENTIAL R 14.140 TBD TBD
+RL (TOU) 14.117 TBD TBD
+Schedule R* Oct. 1, 2026 - May 31, 2027 12.962 2.228 - 15.190 - G Type I SOS 13.102 TBD TBD
+GS (TOU) Type I SOS 13.135 TBD TBD
+Schedule RL Oct. 1, 2026 - May 31, 2027 On-Peak 19.827 5.450 - 25.277 - SL 8.858 TBD TBD
+Oct. 1, 2026 - May 31, 2027 Inter-Peak 11.031 1.238 - 12.269 - Notes:
+Oct. 1, 2026 - May 31, 2027 Off-Peak 10.343 1.238 - 11.581 -
+1 Seasonal and Weighted Supply Price Information may change slightly beginning in
+Schedule EV Oct. 1, 2026 - May 31, 2027 On-Peak 20.169 5.281 - 25.450 -
+Oct. 1, 2026 - May 31, 2027 Off-Peak 10.501 1.197 - 11.698 - February, June and October due to scheduled changes in the Rider 8 and Rider 1
+Adjustments, and Transmission charges. The Supply Price for June 1, 2027 through
+Schedule RD Oct. 1, 2026 - May 31, 2027 On-Peak 21.961 5.773 - 27.734 - September 30, 2027 will be set in November 2026. A Type II comparison is not
+determined as these rates change every 3 months. Schedule SL includes Rider 8 for
+Oct. 1, 2026 - May 31, 2027 Off-Peak 10.233 1.163 - 11.396 - the annual period ending May 31, 2027.
+COMMERCIAL & INDUSTRIAL
+2 Rider 8 - Energy Cost Adjustment is used to true-up the actual costs of providing
+Schedules G/GU - Type I SOS Oct. 1, 2026 - May 31, 2027 12.076 1.762 - 13.838 - retail energy supply to our customers. It compares actual customer billings for electric
+Schedule GS - Type I SOS Oct. 1, 2026 - May 31, 2027 On-Peak 15.240 1.760 - 17.000 - supply against payments by BGE to the wholesale suppliers for that electricity. The
+Oct. 1, 2026 - May 31, 2027 Inter-Peak 11.661 1.760 - 13.421 - comparison uses only known Rider 8 values.
+Oct. 1, 2026 - May 31, 2027 Off-Peak 10.639 1.760 - 12.399 -
+Miscellaneous Charges on Bill
+Schedule SL/PL - Type I SOS 2 Oct. 1, 2026 - May 31, 2027 8.355 0.137 - 8.492 -
+EmPOWER Md. Charge
+Schedule G - Type II SOS Oct. 1, 2026 - Nov. 30, 2026 10.988 1.762 - 12.750 - Effective with January 2026 Bills - Charge/kWh:
+Schs. R & RL Sch. G Sch. GS Sch. GL Schs. P & T
+Schedule GS - Type II SOS Oct. 1, 2026 - Nov. 30, 2026 On-Peak 14.724 1.760 - 16.484 - Electric Efficiency $0.01097 $0.03526 $0.03526 $0.00969 $0.00376
+Oct. 1, 2026 - Nov. 30, 2026 Inter-Peak 10.139 1.760 - 11.899 - Demand Response 0.00198 0.00027 0.00027
+Oct. 1, 2026 - Nov. 30, 2026 Off-Peak 8.792 1.760 - 10.552 - Peak Time Rebates 0.00015 0.00013 0.00013 0.00011 0.00009
+Charge/kWh: $0.01310 $0.03566 $0.03566 $0.00980 $0.00385
+Scheds. GL, P & T - Type II SOS Oct. 1, 2026 - Nov. 30, 2026 On-Peak 14.906 - - 14.906 -
+Oct. 1, 2026 - Nov. 30, 2026 Inter-Peak 10.523 - - 10.523 -
+Oct. 1, 2026 - Nov. 30, 2026 Off-Peak 8.889 - - 8.889 -
+Scheds. GL, P & T - Type II SOS Transmission Demand Charge - - 5.78 - 5.78
+Notes:
+1 Excludes Rider 8 Adjustment. Refer to "Electric Supply and Distribution Rate Adjustment Charts" at bge.com under "Rates & Tariffs" for Rider 8 adjustment.
+2 Charge per lamp-watt (¢/lamp-watt) = 8.492¢/kWh x 0.333 = 2.828 ¢/lamp-watt; Sch. PL rate reflected in lamp fixture and renewal rates, effective 10/01/2026
+* For customers participating in Rider 6 - Vehicle Charging TOU (VC-TOU) Adjustment Program, the VC-TOU On-Peak and Off-Peak Total SOS Rates are
+equal to the Schedule EV On-Peak and Off-Peak Total SOS Rates, respectively. The Vehicle Charging Adjustment is based on the sum of 1) Schedule EV
+(On-Peak) Total SOS Rate minus the Schedule R Total SOS Rate multiplied by the eligible smart EV charger's On-Peak kWh and 2) Schedule EV (Off-Peak)
+Total SOS Rate minus the Schedule R Total SOS Rate multiplied by the eligible smart EV charger's Off-Peak kWh. For more information, see Rider 6 -
+Vehicle Charging Time-of-Use Adjustment
+Hourly Administrative Charge = 0.295 ¢/kWh effective 10/01/2026
+Delivery Service charges are available at bge.com. Click on "My Account", "Rates & Tariffs" , then "Electric Service" for Rates & Tariffs
+for the corresponding rate schedule.

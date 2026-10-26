@@ -1,0 +1,39 @@
+Source ID: rider25_rule
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt8ca2dfc58e27bd9a/Rdr_25.pdf
+Original PDF SHA256: e739c76b86cf6099889f04f9a21dd9408395112b200d5e0a941c30b5d298bc73
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+106 Electric – Retail – Baltimore Gas and Electric Company
+25. Monthly Rate Adjustment
+The Delivery Service Price under Schedules R, RL, G, GS and GL is adjusted to reflect test year
+base rate revenues established in the latest base rate proceedings, after adjustments to recognize the
+change in the number of customers from the test year level and to prevent the collection of revenue from
+the commencement of a Major Outage Event and continuing until all Major Outage Event-related
+sustained interruptions are restored. The change in revenues associated with the Customer Charge is the
+change in number of customers multiplied by the Customer Charge rates approved in the latest base rate
+proceeding for the rate schedule. In calculating the change in revenues associated with kilowatt hour
+(kWh) sales, Schedules R and RL are also subdivided into heating (RH and RLH) and non-heating (R and
+RL) subclasses. The change in revenues associated with kilowatt hour (kWh) sales is the test year
+average use per customer for each rate class or subclass multiplied by the net number of customers added
+to each rate class or subclass since the like-month during the test year and multiplying that product by the
+Delivery Service Charge rates approved in the latest base rate proceeding for the rate schedule.
+The change in revenues associated with the Customer Charge and kWh sales for each subclass (if
+applicable) is added to test year revenue for the applicable rate schedule to restate test year revenues for
+the month to include the revised values. Actual revenues collected for the month are compared to the
+restated test year revenues, adjusted for any Major Outage Events, and any difference is divided by
+estimated sales for the second succeeding month to obtain the adjustment to the applicable Delivery
+Service Price. Any difference between actual and estimated sales is reconciled in the determination of the
+adjustment for a future month.
+The Major Outage Event adjustment is calculated by summing the lost delivery charge revenue,
+lost customer charge revenue and lost demand charge revenue. The lost delivery charge revenue is
+calculated by multiplying the kWh lost, determined using test year average usage per hour, by the
+delivery charge rate. The lost customer charge revenue is calculated by multiplying the customer charge
+(converted to an hourly rate) by the customer hours lost. The lost demand delivery charge revenue is the
+product of the customer hours lost per schedule, the test year average demand per hour from the
+corresponding test year month and the distribution demand charge.
+The Monthly Rate Adjustment is calculated separately for each applicable schedule. The
+maximum monthly change in the Monthly Rate Adjustment is limited to 10%. Imbalances are carried
+forward and charged to customers in a future calculation. Details of the calculation of the billing
+adjustment are filed monthly with the Public Service Commission.
+P.S.C. Md. – E-6 (Suppl. 709) Filed 01/12/2024 – Effective 01/01/2024

@@ -63,9 +63,11 @@ ALLIANT_IA_CASES = tuple(("alliant_energy_iowa", "commercial" if p in ("600","60
 PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
                  ("ppl_electric_pennsylvania", "commercial", "GS-1"),
                  ("aep_ohio", "residential", "RS"), ("aep_ohio", "commercial", "GS-1"))
+BGE_CASES = (("bge_maryland", "residential", "R"), ("bge_maryland", "commercial", "G"))
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "bge_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "ppl_electric_pennsylvania": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "aep_ohio": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "alliant_energy_iowa": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -78,7 +80,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -457,6 +459,17 @@ def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False,
         return "provisional_modeled_bill", []
     if bill["is_complete_bill"]:
         return "complete_utility_bill", []
+    if utility == "bge_maryland":
+        from src.billing.bge_md import RELIEF_EXCLUSION, evidence
+        expected_evidence = evidence(index, account)
+        require(account["tariff"] == "R"
+                and account.get("relief_policy") == "exclude_account_specific_refunds"
+                and all(bill.get(k) == expected_evidence[k] for k in expected_evidence if k != "objective_scope")
+                and bill.get("excluded_components") == [RELIEF_EXCLUSION]
+                and bill["metrics"].get("relief_policy") == account["relief_policy"]
+                and any("subtotal excludes account-specific legislative relief" in w for w in bill.get("warnings", [])),
+                "BGE residential evidence must retain exactly its disclosed account-specific fixed-refund exclusion")
+        return "verified_charges_subtotal", [RELIEF_EXCLUSION]
     idx = pd.DatetimeIndex(index)
     expected = {"sales_use_tax_surcharge", "local_utility_consumer_tax"}
     if idx[-1].date() < pd.Timestamp("2025-08-16").date():
@@ -722,7 +735,7 @@ def summarize(directory):
             rate_evidence_mode=request["account"].get("rate_evidence_mode","verified"),
             rate_assumptions=list({item["id"]:item for bills in result.get("billing",{}).values()
                 for bill in bills for item in bill.get("rate_assumptions",[])}.values()),
-            reported_amount_kind=("provisional historical estimate; inspect assumption ledger" if result.get("rate_evidence_status")=="provisional" else "verified charges subtotal; historical taxes incomplete" if result.get("is_complete_bill") is False
+            reported_amount_kind=("provisional historical estimate; inspect assumption ledger" if result.get("rate_evidence_status")=="provisional" else "verified charges subtotal; inspect excluded components" if result.get("is_complete_bill") is False
                 else "complete utility bill" if result.get("is_complete_bill") is True else "legacy completeness not recorded"),
             excluded_components=sorted({value for bills in result.get("billing",{}).values()
                 for bill in bills for value in bill.get("excluded_components",[])}),scenarios=[])

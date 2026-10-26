@@ -1,0 +1,33 @@
+Source ID: rider34
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt0bfdbd25fd81f70c/Rdr_33_34.pdf
+Original PDF SHA256: d8423e4be308c33a81893470be2fd510040cd9e9d33a9cd9dc6f8162c427318c
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 5 ===
+Electric – Retail – Baltimore Gas and Electric Company 119
+34. Base Distribution Revenue Offset Rider
+The Base Distribution Revenue Offset Rider serves in a Multi-Year Plan to provide distribution
+customers with accelerated tax benefits, when available and as approved by the Commission, as a
+reduction to distribution base rates.
+The Base Distribution Revenue Offset Rider revenues and rates shall be included in base
+distribution revenues and base distribution rates for the purposes of calculating the test year base
+revenues, the change in revenues, and actual revenues in the electric Rider 25 – Monthly Rate Adjustment
+for applicable Rate Schedules.
+The following Base Distribution Offset Rider rates will be effective for usage January 1, 2024 –
+December 31, 2024.
+Rate Schedule Customer Delivery Service Delivery Service
+Charge Charge Offset ($/kWh) Demand Offset ($/kW)
+Offset
+($/month)
+R,EV ($0.19) ($0.00348) Not Applicable
+RL $0.00 ($0.00269) Not Applicable
+RD ($0.19) On Peak: ($0.00816) Not Applicable
+Off Peak: ($0.00217)
+G (Secondary) ($0.36) ($0.00328) Not Applicable
+G (Primary) ($0.36) ($0.00311) Not Applicable
+GS $0.00 ($0.00204) Not Applicable
+GU $0.00 ($0.00688) Not Applicable
+GL (Secondary) $0.00 ($0.00084) ($0.38)
+GL (Primary) $0.00 ($0.00079) ($0.36)
+P $0.00 ($0.00032) ($0.19)
+P.S.C. Md. – E-6 (Suppl. 709) Filed 01/12/2024 – Effective 01/01/2024

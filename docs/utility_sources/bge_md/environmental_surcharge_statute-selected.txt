@@ -1,0 +1,27 @@
+Source ID: environmental_surcharge_statute
+Primary URL: https://mgaleg.maryland.gov/mgawebsite/laws/StatuteText?article=gpu&section=7-203
+Original SHA256: 61f8f3e87ff4bea670cd399e21fa69aba62eb904507fea38063c43116f35f351
+Extraction: whitespace normalized; physical PDF pages are one-based.
+§7–203.
+(a) (1) The Commission shall:
+(i) impose an environmental surcharge per kilowatt hour of electricity distributed to retail electric customers within the State; and
+(ii) authorize each electric company to add the full amount of the surcharge to its customers’ bills.
+(2) To the extent that an electric company fails to collect the surcharge from its customers, the amount uncollected shall be deemed a cost of power distribution and allowed and computed as such together with other allowable expenses for purposes of rate making.
+(b) (1) The Comptroller shall collect the revenue from the surcharge imposed under subsection (a) of this section and place the revenue into a special fund, the Environmental Trust Fund.
+(2) The Comptroller shall maintain the method of collection of the surcharge from each electric company, and the money collected shall accrue to the Fund.
+(c) (1) Each fiscal year, the Secretary of Natural Resources shall coordinate the preparation of the annual budget required to carry out the provisions of the Power Plant Research Program under Title 3, Subtitle 3 of the Natural Resources Article.
+(2) Each fiscal year, on approval of the annual budget by the General Assembly for the Power Plant Research Program, the Commission shall establish the amount of the environmental surcharge per kilowatt hour of electric energy distributed in the State that is to be imposed on each electric company in accordance with subsection (a) of this section.
+(d) (1) Notwithstanding any other provision of this subtitle, the amount of the surcharge for each account of each retail electric customer may not exceed the lesser of 0.15 mill per kilowatt hour or $1,000 per month.
+(2) The Department of Natural Resources shall credit against the amount the Commission requires each electric company to pay into the Environmental Trust Fund 0.75% of the total surcharge amount attributed to the electric company on the basis of the amount of the electricity distributed in the State.
+(e) To the extent that the Commission requires an electric company to report the total estimated kilowatt hours of electricity distributed in the State in order to calculate the surcharge under subsection (a)(1) of this section, a small rural electric cooperative described in § 7–502(a) of this title may satisfy the requirement by submitting to the Commission an estimate made in accordance with a formula approved by the Commission from information that the small rural electric cooperative submits to the rural utilities service that includes the required information.
+(f) The surcharge imposed under this subtitle shall terminate on June 30, 2030.
+Previous
+Next
+Validation
+Please fix the following:
+OK
+Success
+Okay
+Click to return on the top page
+Alert
+Okay

@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 UTILITY_DOCS = {
+    "bge_maryland": ("docs/BGE_Maryland.md", "docs/utility_sources/bge_md/sources.json", "test/test_bge_md.py"),
     "ppl_electric_pennsylvania": ("docs/PPL_Pennsylvania.md", "docs/utility_sources/ppl_pa/sources.json", "test/test_ppl_pa.py"),
     "aep_ohio": ("docs/AEP_Ohio.md", "docs/utility_sources/aep_ohio/sources.json", "test/test_aep_ohio.py"),
     "alliant_energy_iowa": ("docs/Alliant_Iowa.md", "docs/utility_sources/alliant_ia/sources.json", "test/test_alliant_ia.py"),
@@ -190,7 +191,7 @@ def nc_eligibility(root):
 def unit_scope(utility, plan, supply, enabled):
     if not enabled:
         return "No executable-plan acceptance claim; rejection/catalog coverage only"
-    if utility in ("ppl_electric_pennsylvania", "aep_ohio"):
+    if utility in ("ppl_electric_pennsylvania", "aep_ohio", "bge_maryland"):
         return "Independent dated ordinary default-supply/delivery/rider/tax benchmarks, effective-date and DST tests, numerical/symbolic parity and main-form queued-worker reconciliation; non-export representative studies, not customer-bill calibration"
     if utility in ("we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         return "Independent dated base/rider/tax bill benchmarks, TOU/holiday/DST, eligibility, numerical/symbolic parity and main-form queued-worker reconciliation; no measured customer-bill calibration claim"
@@ -254,10 +255,10 @@ def build_rows(catalogs=None, *, evidence=(), root=ROOT):
                         coverage=segment["start"]+" → "+segment["end"] if segment["start"] else "Unverified / not executable",
                         coverage_is_complete_bill=segment.get("is_complete_bill",True) if enabled else None,
                         coverage_scope=segment.get("scope","Complete bill supported within validated account restrictions" if enabled else "Unavailable"),
-                        coverage_excluded_components="Dated historical taxes; see historical_tax_research_status.json" if segment.get("is_complete_bill") is False else "",
-                        coverage_basis="matching complete calendar service/billing months; partial and crossed-month cycles unsupported" if utility=="ameren_illinois" else "mixed service dates and bills-rendered components; see utility document" if utility.startswith("firstenergy_") or utility in ("dte_electric", "consumers_energy") else "bill date" if utility == "pseg" else "service dates",
+                        coverage_excluded_components=", ".join(segment["excluded_components"]) if segment.get("excluded_components") else "Dated historical taxes; see historical_tax_research_status.json" if segment.get("is_complete_bill") is False else "",
+                        coverage_basis="matching complete calendar service/billing months; partial and crossed-month cycles unsupported" if utility in ("ameren_illinois", "bge_maryland") else "mixed service dates and bills-rendered components; see utility document" if utility.startswith("firstenergy_") or utility in ("dte_electric", "consumers_energy") else "bill date" if utility == "pseg" else "service dates",
                         base_effective_start=plan.get("base_effective_start", "See independent component timeline in utility document"),
-                        billing="implemented verified-charges subtotal; incomplete taxes" if segment.get("is_complete_bill") is False else "implemented, eligibility bounded" if enabled else "disabled",
+                        billing="implemented verified-charges subtotal; account-specific relief refund excluded" if utility == "bge_maryland" and segment.get("is_complete_bill") is False else "implemented verified-charges subtotal; incomplete taxes" if segment.get("is_complete_bill") is False else "implemented, eligibility bounded" if enabled else "disabled",
                         dispatch="implemented subtotal optimum only; complete-bill optimum unavailable" if segment.get("is_complete_bill") is False else "implemented, primary optimum required" if enabled else "disabled",
                         main_browser="implemented schema-11 path; case evidence separate" if enabled else "identified, disabled",
                         billing_path="src/billing/"+module.__name__.rsplit(".", 1)[-1]+".py::charge_lines" if enabled else "",

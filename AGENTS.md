@@ -15,6 +15,53 @@ validation policy follows normal commits and merges between branches.
 - Public website deployment remains a separate workstream. Do not promote a
   candidate, deploy, commit or push without the user's authorization.
 
+## Efficient development with billing safeguards
+
+- **Scope and orient once.** Establish the requested outcome, affected paths,
+  supported account/date scope and acceptance checks. Inspect Git status,
+  relevant instructions, current source and the latest applicable handoff.
+  Reuse that orientation; re-read targeted files when they change or concurrent
+  work makes an earlier read stale. Keep routine edits and commit-message tasks
+  brief; reserve extended investigation for substantive uncertainty.
+- **Keep context and handoffs compact.** Put durable decisions in the relevant
+  project documentation. For a handoff or requested fresh implementation chat,
+  include the goal, constraints, affected paths, candidate identity, evidence
+  locations, completed checks, exclusions, unresolved gaps and next steps.
+  Reference documents and receipts instead of copying the conversation history.
+- **Research specific gaps.** Reuse existing clients, source ledgers and verified
+  components after checking their applicability. Target missing components and
+  date windows in official utility/regulator sources; preserve references and
+  provenance. Record blocked sources and remaining gaps instead of repeatedly
+  trying an unchanged route. Never infer missing rates or eligibility, extend
+  coverage without evidence or silently substitute data. Provisional assumptions
+  require explicit user authorization and separate, visible scope and evidence labels.
+- **Delegate bounded, independent work.** Give each agent a distinct question or
+  owned edit scope, shared verified context, required checks and a concise output
+  contract. Avoid overlapping edits and repeated repository-wide orientation or
+  identical research. Retain independent source/benchmark review when it helps
+  establish billing correctness; parallel work saves elapsed time, not necessarily
+  model usage.
+- **Keep tool output focused.** Search relevant paths and read needed sections.
+  Save full logs, source material and large artifacts in the appropriate private
+  or ignored evidence location; return summaries, failures and receipt paths.
+  Inspect detailed output when a failure or unresolved concern warrants it.
+  Batch independent reads and avoid frequent unchanged progress polls.
+- **Validate in stages.** Select affected focused checks while editing and
+  workflow checks for changed API/worker contracts. Freeze the candidate, then
+  complete required release checks and applicable, explicitly selected historical
+  matrices before browser acceptance. Avoid repeating passing suites or matrices
+  without a new change, failure or unresolved concern. Subsequent edits require affected checks and
+  any necessary broader regression; documentation-only edits normally need
+  textual/link/diff checks, not simulation reruns. This never waives an explicitly
+  required validation tier or acceptance check.
+- **Preserve proof and accuracy.** Keep effective dates, eligibility, units,
+  timezone/DST, missing-data rejection, independent bill benchmarks, itemized
+  bill/dispatch/credit reconciliation and required OpenDSS scenario/interval
+  coverage. Resume only under the launcher's matching-fingerprint and artifact
+  re-audit rules in `docs/Development_Validation.md`; an old passing report is
+  not proof for a changed candidate. Retain original evidence pins and report
+  unverified assertions, unsupported scope and solver-proof limitations clearly.
+
 ## Validation launcher
 
 Use `/usr/local/bin/python3 tools/validate.py` with explicit `focused`,

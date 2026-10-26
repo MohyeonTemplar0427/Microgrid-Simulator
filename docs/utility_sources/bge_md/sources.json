@@ -1,0 +1,636 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-25",
+  "base_head": "21541dc",
+  "research_scope": {
+    "utility": "Baltimore Gas and Electric Company",
+    "supplier": "BGE Standard Offer Service",
+    "schedules": [
+      "R residential",
+      "G secondary Type I"
+    ],
+    "dated_component_window": "2025-01 through 2026-10; complete calendar billing cycles only",
+    "excluded": "Export settlement; inferred account assignment; unsourced November-December2026; account-specific relief eligibility"
+  },
+  "records": [
+    {
+      "id": "schedule_r",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt10129d1f47260cd7/P3_SCH_R.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Residential schedule, eligibility, fixed and base delivery charges",
+      "original_path": ".cache/bge_md/sources/schedule_r.pdf",
+      "original_sha256": "4c9c65385a882db7823752e9136d8e1676b81f2c93891eef83ce7e7bb6b2c4aa",
+      "original_bytes": 107386,
+      "pdf_page_count": 4,
+      "extracted_text_path": ".cache/bge_md/sources/schedule_r.txt",
+      "extracted_text_sha256": "46e2ca2666c0a6c7d6375ab293f0b73d0f7f44a9164e159dbffefbed673b0627",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/schedule_r-selected.txt",
+      "checked_in_excerpt_sha256": "fc9a5f19025726866ff4b488679f57f06a5d3effcab332d376e3a1bad0dca555",
+      "extraction_limitations": null
+    },
+    {
+      "id": "schedule_g",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/bltae5a035d36f7f19e/P3_SCH_G.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Secondary general service eligibility and charges",
+      "original_path": ".cache/bge_md/sources/schedule_g.pdf",
+      "original_sha256": "7d2defc0d180f091b77636ba81592f6b04ef43bd8755b60d9a482cb142ee8c63",
+      "original_bytes": 91886,
+      "pdf_page_count": 2,
+      "extracted_text_path": ".cache/bge_md/sources/schedule_g.txt",
+      "extracted_text_sha256": "53c354112be6d0dde6a85701de7438c96ae648b8560081e7b91de8831ff8e248",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/schedule_g-selected.txt",
+      "checked_in_excerpt_sha256": "72cd4c873a5a25fd8ac972b5d0a990d6d39f5e04b868e159e601db15ffbc9219",
+      "extraction_limitations": null
+    },
+    {
+      "id": "schedule_gs",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/bltf68cb87a77b79e3f/P3_SCH_GS.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Alternative TOU plan excluded from flat default",
+      "original_path": ".cache/bge_md/sources/schedule_gs.pdf",
+      "original_sha256": "74af7b90d144af3aefc70db1a48bdf79f715d4e65cf230a9dc5d2a17b187304a",
+      "original_bytes": 107892,
+      "pdf_page_count": 2,
+      "extracted_text_path": ".cache/bge_md/sources/schedule_gs.txt",
+      "extracted_text_sha256": "f434fddc2eeafd78eda61f78f5697ebb7fedc93648fcd582217690b27f0d04fd",
+      "selected_pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/schedule_gs-selected.txt",
+      "checked_in_excerpt_sha256": "a3da85342999bc957f20ffb604d484c88b4d69f62c710d878434b2cc176cbc9b",
+      "extraction_limitations": null
+    },
+    {
+      "id": "cseg_ledger",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blt8ad3da6ba8d050f5/6acfc043f4251ab7b699fb93/Rdr32_CS_Current_Rates_12.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Dated component ledger and independent arithmetic composites; not export-settlement authorization",
+      "original_path": ".cache/bge_md/sources/cseg_ledger.pdf",
+      "original_sha256": "45043f5e594fff24d85e634f32022c5a2ee32166af6acf1d6253c0f3a2f0a856",
+      "original_bytes": 4361357,
+      "pdf_page_count": 59,
+      "extracted_text_path": ".cache/bge_md/sources/cseg_ledger.txt",
+      "extracted_text_sha256": "a6ec890eb91aa1d618b243193e568b928e4a059af118ab50bf4679885a1d4b47",
+      "selected_pdf_pages_1_based": [
+        2,
+        6,
+        12,
+        16
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/cseg_ledger-selected.txt",
+      "checked_in_excerpt_sha256": "d5bec8f936c283f16e06a69729cc41d5efb1d4d04218e3377b846e025362ddb1",
+      "extraction_limitations": "Older rotated PDF pages omitted by extractor; selected R/G 2025/2026 pages extracted normally.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/bge_md/sources/cseg-ledger-page2.png",
+          "sha256": "ae36e6572d807617f9ea94e4dac977f434ae83f0d9445d9a2689e325d00c3a70"
+        },
+        {
+          "path": ".cache/bge_md/sources/cseg-ledger-page6.png",
+          "sha256": "a32fbe36b0db8a80a857167b1b4be1902cc1644f7fd95cabda7ebbb5b51deef6"
+        },
+        {
+          "path": ".cache/bge_md/sources/cseg-ledger-page12.png",
+          "sha256": "d24dd1e6f77c30199d64890f081d3aa2a280d973c87358cbb495ed117a69a8b4"
+        },
+        {
+          "path": ".cache/bge_md/sources/cseg-ledger-page16.png",
+          "sha256": "90c3f03ff5b80dae35588b4e6cf5b000f08760a4f9201d891757556712016a64"
+        }
+      ]
+    },
+    {
+      "id": "rider25_history",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blt5d58e3f9b4655346/6abe7c86a1315212b30adbc1/Rider_25_Historical_Chart.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Monthly delivery adjustment history",
+      "original_path": ".cache/bge_md/sources/rider25_history.pdf",
+      "original_sha256": "bf8e1f3584607925ad5c8851adf3dbb48c6dfe49de1c72cc8addf7558c9b5de3",
+      "original_bytes": 363931,
+      "pdf_page_count": 8,
+      "extracted_text_path": ".cache/bge_md/sources/rider25_history.txt",
+      "extracted_text_sha256": "30d24530296b0933d82635ca62f0083b81f79904445ae3bbfbd75feb023cbe00",
+      "selected_pdf_pages_1_based": [
+        6,
+        7
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider25_history-selected.txt",
+      "checked_in_excerpt_sha256": "a8f5e3c82edb4ca354a1c6f76936865088b6e05a94520041470cca5fd9f6ede7",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider8_10_history",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/bltf75afad89af14ef3/6acce6326214c42d62238ff5/POLR_RateAdjustmentChart_1.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Supply Rider8 and delivery Rider10 history",
+      "original_path": ".cache/bge_md/sources/rider8_10_history.pdf",
+      "original_sha256": "18fd6ff6ea3e4ac445a3165b6ea1e997b6334cf515af4282c3be934ef8114a2c",
+      "original_bytes": 198817,
+      "pdf_page_count": 2,
+      "extracted_text_path": ".cache/bge_md/sources/rider8_10_history.txt",
+      "extracted_text_sha256": "520dbc74bf154fefa947905ba76070b4d29da22fb80168c2aae31097c39dded0",
+      "selected_pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider8_10_history-selected.txt",
+      "checked_in_excerpt_sha256": "7ccfc4504c3957d574d7d0fe98ddc71515daa9e1d55d44aaf87f6175fb421620",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider2",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt0b5280aebf1a4a36/Rdr_2.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Electric efficiency component",
+      "original_path": ".cache/bge_md/sources/rider2.pdf",
+      "original_sha256": "b9749be06e75554d706fdbfbd4187d0caf884c34d45e95c377443e9286925498",
+      "original_bytes": 106166,
+      "pdf_page_count": 4,
+      "extracted_text_path": ".cache/bge_md/sources/rider2.txt",
+      "extracted_text_sha256": "ea5b8c57a3e7e4d0747da088007d7b0e213a438a7d96b1fd51066cffe2682326",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider2-selected.txt",
+      "checked_in_excerpt_sha256": "60badd7722a5f72e7af45edb94a096001ab7a0e776a052c4799e41f2e1ffb519",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider15",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt95b3f3254f635c76/Rdr_15.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Demand response component",
+      "original_path": ".cache/bge_md/sources/rider15.pdf",
+      "original_sha256": "e51df2407bccc6793b98813fe0ac0500bfa1cd8e7da569d800c425d3c10f50fe",
+      "original_bytes": 141741,
+      "pdf_page_count": 5,
+      "extracted_text_path": ".cache/bge_md/sources/rider15.txt",
+      "extracted_text_sha256": "0d3ff30073230f5cd42221859295c8c519d8362ac62330324162d6db3f200fb5",
+      "selected_pdf_pages_1_based": [
+        3,
+        4
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider15-selected.txt",
+      "checked_in_excerpt_sha256": "edd5db68a319dc6612d0046da05da92f54f14659ab5f3be6227bc07b283ad56c",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider16",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt722af29653644b4e/Rdr_16_17.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Multi-year-plan adjustment",
+      "original_path": ".cache/bge_md/sources/rider16.pdf",
+      "original_sha256": "91f02a7acfa430abf3e2004bfb926ac807f5e6c2c5dc6dc212a9ee95728a0479",
+      "original_bytes": 82416,
+      "pdf_page_count": 2,
+      "extracted_text_path": ".cache/bge_md/sources/rider16.txt",
+      "extracted_text_sha256": "70264227c5574fa82113d5bdfecbda73f8e25307eb6f60479abdbe3131882dee",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider16-selected.txt",
+      "checked_in_excerpt_sha256": "a270d6d15d5db358687eb739be577a069a9600ffbf5eae6e05ab87dcba05787c",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider25_rule",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt8ca2dfc58e27bd9a/Rdr_25.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Monthly delivery adjustment rules",
+      "original_path": ".cache/bge_md/sources/rider25_rule.pdf",
+      "original_sha256": "e739c76b86cf6099889f04f9a21dd9408395112b200d5e0a941c30b5d298bc73",
+      "original_bytes": 71887,
+      "pdf_page_count": 2,
+      "extracted_text_path": ".cache/bge_md/sources/rider25_rule.txt",
+      "extracted_text_sha256": "6550220e0ecbe1c19c779822f46baa0654f65ac856cef3e59e9377526c2080dc",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider25_rule-selected.txt",
+      "checked_in_excerpt_sha256": "2e482c4f045f65eb2ec19e6aded3e2705d35177b55cbf24d875d52f02c9b26c6",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider26",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/bltbcb53d4782e3ba22/Rdrs_26_27.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Peak time rebate component and optional opt-out exclusion",
+      "original_path": ".cache/bge_md/sources/rider26.pdf",
+      "original_sha256": "5cb8f248d2f045801777917eb61cdd692d2acea6f44428457cc1b736a2348114",
+      "original_bytes": 117013,
+      "pdf_page_count": 4,
+      "extracted_text_path": ".cache/bge_md/sources/rider26.txt",
+      "extracted_text_sha256": "29408180ad6bc30840126051d89806b94cc34434d0e6a758f406dc99ab2238c1",
+      "selected_pdf_pages_1_based": [
+        3
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider26-selected.txt",
+      "checked_in_excerpt_sha256": "eedce65646f8868436214fca25bc59cf6224fdbaddb3acd87b49dc11c3143142",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider34",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt0bfdbd25fd81f70c/Rdr_33_34.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Base distribution offset ending December2024",
+      "original_path": ".cache/bge_md/sources/rider34.pdf",
+      "original_sha256": "d8423e4be308c33a81893470be2fd510040cd9e9d33a9cd9dc6f8162c427318c",
+      "original_bytes": 312233,
+      "pdf_page_count": 9,
+      "extracted_text_path": ".cache/bge_md/sources/rider34.txt",
+      "extracted_text_sha256": "25df18d39e873760e3f09aba5d919e368a2eaf00e4cf9af0a41913d9d1e0f69a",
+      "selected_pdf_pages_1_based": [
+        5
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider34-selected.txt",
+      "checked_in_excerpt_sha256": "f6099e0eb4796de6f65543d1c4dd7542733fa29502b41a99a1a00c936dd35558",
+      "extraction_limitations": null
+    },
+    {
+      "id": "sos_2025_june",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blte65b1dd8c5037101/6841ae4babfad136cad48034/POLR_Rates_PTC_MiscCharges_January_Barnes.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Final June-August2025 SOS supply",
+      "original_path": ".cache/bge_md/sources/sos_2025_june.pdf",
+      "original_sha256": "c57ea34123f6b4074576fc328e239f0ee7498be30bd5783cc4be8c97e0611bac",
+      "original_bytes": 47738,
+      "pdf_page_count": 1,
+      "extracted_text_path": ".cache/bge_md/sources/sos_2025_june.txt",
+      "extracted_text_sha256": "40189100d99021c1d392502b68cb97c02a821598a2c7fa2d76651efc526e590f",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/sos_2025_june-selected.txt",
+      "checked_in_excerpt_sha256": "d00ff662ab065270966fb84f3acecd98742a4b98a3df9e74894c67e39ddacc57",
+      "extraction_limitations": null
+    },
+    {
+      "id": "sos_2025_september",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blte65b1dd8c5037101/68b9ab98e477c8355a323b41/POLR_Rates_PTC_MiscCharges.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Final September2025 SOS supply",
+      "original_path": ".cache/bge_md/sources/sos_2025_september.pdf",
+      "original_sha256": "59ba5e036ae729b288aebca5dc243461f839397ccd670738d230f2d4837b464f",
+      "original_bytes": 62242,
+      "pdf_page_count": 1,
+      "extracted_text_path": ".cache/bge_md/sources/sos_2025_september.txt",
+      "extracted_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/sos_2025_september-selected.txt",
+      "checked_in_excerpt_sha256": "071ce463168b912bab9deb669ee4231518860be638bf20490ce30ff2ed82cc82",
+      "extraction_limitations": null
+    },
+    {
+      "id": "sos_2025_october",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blte65b1dd8c5037101/68dbe17ce346510a223e59cd/POLR_Rates_PTC_MiscCharges.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Final October-November2025 SOS; future comparison projections excluded",
+      "original_path": ".cache/bge_md/sources/sos_2025_october.pdf",
+      "original_sha256": "c06524599e548a0c8f1540236eae72844284b140ba912ef19c8a1c912c3f7a96",
+      "original_bytes": 62087,
+      "pdf_page_count": 1,
+      "extracted_text_path": ".cache/bge_md/sources/sos_2025_october.txt",
+      "extracted_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/sos_2025_october-selected.txt",
+      "checked_in_excerpt_sha256": "bfcde2d966790ec99a51782051ace6e5bdb112a81d76e76059888eaf982004ae",
+      "extraction_limitations": null
+    },
+    {
+      "id": "sos_2026_october",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blte65b1dd8c5037101/6abe9abda6ea1d360734e875/POLR_Rates_PTC_MiscCharges_5.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Final October2026 SOS and current EmPOWER total",
+      "original_path": ".cache/bge_md/sources/sos_2026_october.pdf",
+      "original_sha256": "b5f2b4cef2af9f3020ad7df04456a9f49e1ec555d900abda58f968486d3a6dfb",
+      "original_bytes": 139566,
+      "pdf_page_count": 1,
+      "extracted_text_path": ".cache/bge_md/sources/sos_2026_october.txt",
+      "extracted_text_sha256": "d8941311d28d4d368fd1cfe37d95b036b9be38ca132b3fac56fb6678b073ee78",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/sos_2026_october-selected.txt",
+      "checked_in_excerpt_sha256": "5146bef78e1a0528cb5bee5d30816271dc3fc2fa386471373975a02d4d8829e9",
+      "extraction_limitations": null
+    },
+    {
+      "id": "rider1",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt970ee32f55c20fde/6abe810c794a172f39b99bc0/Rdr_1_9.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Supply rules and component corroboration; superseded future projections excluded",
+      "original_path": ".cache/bge_md/sources/rider1.pdf",
+      "original_sha256": "8d134a8f417beabdf5afbce27720ab0cb6e04731b920b8b2d11bbcf950732783",
+      "original_bytes": 229926,
+      "pdf_page_count": 4,
+      "extracted_text_path": ".cache/bge_md/sources/rider1.txt",
+      "extracted_text_sha256": "58ff32f2840b3c7dcbf422403595b1c8680178b01ebb9f3decddec4370b6a8e7",
+      "selected_pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider1-selected.txt",
+      "checked_in_excerpt_sha256": "6d69b096a2787ee1d8be0459f253197073255bfc0b77e5d8bfc4b440d5a20ede",
+      "extraction_limitations": null
+    },
+    {
+      "id": "supplement728",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/bltafdea164ab2ca8e9/67656b943570d6863a327ab0/Johnston_Suppl728_ML314385.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Supply rules and component corroboration; superseded future projections excluded",
+      "original_path": ".cache/bge_md/sources/supplement728.pdf",
+      "original_sha256": "724ef67bca97950dac83f5653af0b0813ed1f463c93f59e180ecf624415e9127",
+      "original_bytes": 559052,
+      "pdf_page_count": 15,
+      "extracted_text_path": ".cache/bge_md/sources/supplement728.txt",
+      "extracted_text_sha256": "3ee583882dc26ba5ba7565bc2a4133b05db484a041e6688814d6bc4c2efeff8b",
+      "selected_pdf_pages_1_based": [
+        10,
+        15
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/supplement728-selected.txt",
+      "checked_in_excerpt_sha256": "fba5a8b04dd932cebad27a3647c27c1de57d620393a6dada8d3533e8b74d88ed",
+      "extraction_limitations": null
+    },
+    {
+      "id": "supplement751",
+      "url": "https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blt1a0b1cc4f39d8a37/69fb4e3050f7ae24dd91cb6f/Johnston_Suppl751_ML329738.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "Supply rules and component corroboration; superseded future projections excluded",
+      "original_path": ".cache/bge_md/sources/supplement751.pdf",
+      "original_sha256": "21dc45921c896e6fd8bb46966e0129d539e0a819e89e26f1802a93a4791883ae",
+      "original_bytes": 663117,
+      "pdf_page_count": 15,
+      "extracted_text_path": ".cache/bge_md/sources/supplement751.txt",
+      "extracted_text_sha256": "ec89ce26afe246334f514cd0984d6ac148b6783ea153375eeccf701084402ff6",
+      "selected_pdf_pages_1_based": [
+        8,
+        9,
+        14,
+        15
+      ],
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/supplement751-selected.txt",
+      "checked_in_excerpt_sha256": "355aeee2e5f72abb606fb97a12feef5a59c1a0e151bf660776187f6dd89810f9",
+      "extraction_limitations": "Outlined rate tables omitted by text extraction; visually verified redlines, corroborated by dated CSEG ledger.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/bge_md/sources/supplement751-page8.png",
+          "sha256": "41b970b8b361fb7af9acfe522bc3f64f5d2ee41814bbd2f8c672549ad70a91bd"
+        },
+        {
+          "path": ".cache/bge_md/sources/supplement751-page9.png",
+          "sha256": "17eaba8f8dcd4140e0aca175f2758228bc76c3f57f490a83eba6861590784e48"
+        }
+      ]
+    },
+    {
+      "id": "tariff_index",
+      "url": "https://eudapi.bge.com/content-api/api/content/products/other/pages?url=/my-account/my-dashboard/rates-tariffs/electric-service-rates-tariffs&environment=live",
+      "retrieved_date": "2026-10-25",
+      "status": "original_public_json_retrieved",
+      "original_path": ".cache/bge_md/sources/tariff_index.json",
+      "original_sha256": "d33ea47072758b0fcfd93c0c23f564c4278a0a5e8b9d83803501924653f26312",
+      "original_bytes": 13029,
+      "scope": "Source link provenance"
+    },
+    {
+      "id": "rate_information_index",
+      "url": "https://eudapi.bge.com/content-api/api/content/products/other/pages?url=/my-account/my-dashboard/rates-tariffs/electric-service/electric-rates-information&environment=live",
+      "retrieved_date": "2026-10-25",
+      "status": "original_public_json_retrieved",
+      "original_path": ".cache/bge_md/sources/rate_information_index.json",
+      "original_sha256": "f56ab128f64e520a7d42a7ce112b097b16d7b023016fe41c22cfd3d64e4a87b6",
+      "original_bytes": 10580,
+      "scope": "Source link provenance"
+    },
+    {
+      "id": "legislative_relief_page",
+      "url": "https://eudapi.bge.com/content-api/api/content/products/other/pages?url=/my-account/customer-support/assistance-programs/legislative-energy-relief-refund&environment=live",
+      "retrieved_date": "2026-10-25",
+      "status": "original_public_json_retrieved",
+      "original_path": ".cache/bge_md/sources/legislative_relief_page.json",
+      "original_sha256": "1b36ed599bb61044054f9dd54ac9224d09e33d99c48d6e2acd7664d9357db3fe",
+      "original_bytes": 13347,
+      "scope": "Account-specific relief eligibility; no synthetic-account eligibility inferred"
+    },
+    {
+      "id": "dls_local_taxes",
+      "url": "https://dls.maryland.gov/pubs/prod/InterGovMatters/LocFinTaxRte/FinalGuidetoLocalGovernmentTaxingAuthority.pdf",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/dls_local_taxes.pdf",
+      "original_sha256": "11035b7a391caa694de4442475f0ed3c1dd13a7f5c865a15b82a4d57a3513489",
+      "original_bytes": 651487,
+      "selected_pdf_pages_1_based": [
+        7
+      ],
+      "pdf_page_count": 107,
+      "extracted_text_path": ".cache/bge_md/sources/dls_local_taxes.txt",
+      "extracted_text_sha256": "a9a1b634fd1a66389e81ed470b842b13b46f17a1ce9cfa5217c24be50905a03e",
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/dls_local_taxes-selected.txt",
+      "checked_in_excerpt_sha256": "724fdbf64eb78b65d2ce3ca001ff7019da0fc39ab4764175fb46e53dc133b3a3",
+      "rendered_receipts": [
+        {
+          "path": ".cache/bge_md/sources/dls_local_taxes-page7.png",
+          "sha256": "2c897af3926cb76098bb758681a8a72f4c87ec1f0ffed7160a45a8e3cdcc43fa"
+        }
+      ]
+    },
+    {
+      "id": "sb316_fiscal_note",
+      "url": "https://mgaleg.maryland.gov/2025RS/fnotes/bil_0006/sb0316.pdf",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/sb316_fiscal_note.pdf",
+      "original_sha256": "90356ce2d6a541d1e87de5b2034fc2cd0af0ddd880354abc00f368734c11386c",
+      "original_bytes": 585194,
+      "selected_pdf_pages_1_based": [
+        16
+      ],
+      "pdf_page_count": 30,
+      "extracted_text_path": ".cache/bge_md/sources/sb316_fiscal_note.txt",
+      "extracted_text_sha256": "2a21ce0688916f74dda85a74943968650b60604a89c0629785824b637b167caf",
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/sb316_fiscal_note-selected.txt",
+      "checked_in_excerpt_sha256": "51e42105ee4633a2ebc94e77b85ce9f64bac68af35602aacec44d034a6e05662"
+    },
+    {
+      "id": "legislative_energy_briefing",
+      "url": "https://mgaleg.maryland.gov/meeting_material/2026/ent%20-%20134135684347296445%20-%201.22.26_MDs%20Energy%20Landscape%20Part%203_Briefing_Agenda%20and%20Presentations.pdf",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/legislative_energy_briefing.pdf",
+      "original_sha256": "2610c51e6a90b041bc4368d812d5f3d6a5b2e46e2de91ca0288d75b9dd957e21",
+      "original_bytes": 3881443,
+      "selected_pdf_pages_1_based": [
+        11
+      ],
+      "pdf_page_count": 35,
+      "extracted_text_path": ".cache/bge_md/sources/legislative_energy_briefing.txt",
+      "extracted_text_sha256": "c9a8bdb3fb284932ae193659b8eea520d5d072d7ed1d75ba0eb677e7fcee599a",
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "extraction_limitations": "Statement is embedded image; visually read original rendered page. Text extraction alone omits bill amounts.",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/legislative_energy_briefing-selected.txt",
+      "checked_in_excerpt_sha256": "f9c64850d499b4ec7f358bf2fed4bb2bc273f71e8f24be39234860c4a2b3d5ee",
+      "rendered_receipts": [
+        {
+          "path": ".cache/bge_md/sources/legislative_energy_briefing-page11.png",
+          "sha256": "9b2d27f30b892c2e8cfa9c6f6a83f91b6dcc4278d550c7eef1c6f042ffa80a2f"
+        }
+      ]
+    },
+    {
+      "id": "comar_sales_utilities",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.10",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/comar_sales_utilities.html",
+      "original_sha256": "288889df2e37332514953d9869d6453e5239d0e957651c4264c627864150658c",
+      "original_bytes": 18384,
+      "selected_pdf_pages_1_based": [],
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "extracted_text_path": ".cache/bge_md/sources/comar_sales_utilities.txt",
+      "extracted_text_sha256": "2277167d45b9e98a93210afe5718390c424f63877f0e0eb01fdde5d81a08b67d",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/comar_sales_utilities-selected.txt",
+      "checked_in_excerpt_sha256": "534097dd65f0ed3ab6cd4444db80c9304dcae8ede3ff713f476fb29fd8ae8045"
+    },
+    {
+      "id": "comar_sales_price",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/comar_sales_price.html",
+      "original_sha256": "ca3c47026719174e973ceb7af549a6a34dddbcc9c4d13b02b27520072c3f9343",
+      "original_bytes": 22799,
+      "selected_pdf_pages_1_based": [],
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "extracted_text_path": ".cache/bge_md/sources/comar_sales_price.txt",
+      "extracted_text_sha256": "abde6516df2c5f378d090ebfdc8139ce9d8f081e0a529f5d9fa3f8e52a9cf1ab",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/comar_sales_price-selected.txt",
+      "checked_in_excerpt_sha256": "215b281bbe65778cbd2057bdde7e89f53c5f3fb3e55c60d8d9aaa5e2255c0c40"
+    },
+    {
+      "id": "comar_environmental_rounding",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/20.50.01.04",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/comar_environmental_rounding.html",
+      "original_sha256": "68653197e4cb30cffbc738b0b4cf947b1874fadf96014e6c330d931ef0e66093",
+      "original_bytes": 12375,
+      "selected_pdf_pages_1_based": [],
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "extracted_text_path": ".cache/bge_md/sources/comar_environmental_rounding.txt",
+      "extracted_text_sha256": "487b85e3e858450600612fa617fc3bd25ed8a1ea7b2d0f8eb312df7c1ceb7306",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/comar_environmental_rounding-selected.txt",
+      "checked_in_excerpt_sha256": "dc714f5f817a1d77f99ac08d14af7d7f56338dd7afc0410af3a2f5cb4c960b32"
+    },
+    {
+      "id": "environmental_surcharge_statute",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/laws/StatuteText?article=gpu&section=7-203",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/environmental_surcharge_statute.html",
+      "original_sha256": "61f8f3e87ff4bea670cd399e21fa69aba62eb904507fea38063c43116f35f351",
+      "original_bytes": 64681,
+      "selected_pdf_pages_1_based": [],
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "extracted_text_path": ".cache/bge_md/sources/environmental_surcharge_statute.txt",
+      "extracted_text_sha256": "e46f8436f2fea8a07a52c355e22065c65e7de3024c42c9216e36195f6a11b3da",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/environmental_surcharge_statute-selected.txt",
+      "checked_in_excerpt_sha256": "9cedab475883287929c5e01af86cf230fbb35857022a5e746cd8e569c22b4349"
+    },
+    {
+      "id": "sales_tax_price_statute",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-101",
+      "retrieved_date": "2026-10-25",
+      "http_status": 200,
+      "status": "original_retrieved",
+      "original_path": ".cache/bge_md/sources/sales_tax_price_statute.html",
+      "original_sha256": "8267913109c1d8c1cc78276ab0e84ebca847d4c5caaca5b9e95708c1014fb30c",
+      "original_bytes": 161862,
+      "selected_pdf_pages_1_based": [],
+      "scope": "Maryland tax applicability, tax base, rounding or independent bill evidence; see tax_research.md",
+      "extracted_text_path": ".cache/bge_md/sources/sales_tax_price_statute.txt",
+      "extracted_text_sha256": "0df50b814d205d98d383b345062ffcf51d1b3ec98f5632831cde0ecc8ef9b1bd",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/sales_tax_price_statute-selected.txt",
+      "checked_in_excerpt_sha256": "366338c14c613fe2842568b293b88dec3491e1953022ed9e8d88d2841959eac6"
+    },
+    {
+      "id": "rider3",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt3c6680987cbdeb5f/Rdr_3.pdf",
+      "retrieved_date": "2026-10-25",
+      "status": "original_retrieved",
+      "scope": "USC brackets, ordinary6%sales tax, exempt schedule scope",
+      "original_path": ".cache/bge_md/sources/rider3.pdf",
+      "original_sha256": "69b8034f0452c933cb3fd099a19ed7714da49192a7251065994528685ab48733",
+      "original_bytes": 77845,
+      "pdf_page_count": 1,
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "extracted_text_path": ".cache/bge_md/sources/rider3.txt",
+      "extracted_text_sha256": "cd5e71e7bd6263f6e055d68ce3b6b4d2571f2e8ff4ee447a969137941807cef9",
+      "checked_in_excerpt_path": "docs/utility_sources/bge_md/rider3-selected.txt",
+      "checked_in_excerpt_sha256": "248cd8cae1a40a05b475bd405e6795d36564bf71d88d2df55a8defc4210cdfb4"
+    }
+  ],
+  "blocked_sources": [
+    {
+      "description": "Earlier non-timestamp Community Solar URL",
+      "status": "HTTP422; not used as downloaded-original proof",
+      "replacement_source_id": "cseg_ledger"
+    },
+    {
+      "description": "PSC EES annual general-notice document endpoints",
+      "status": "Cloudflare blocked; no downloaded numerical notice proof",
+      "replacement_source_id": "cseg_ledger"
+    },
+    {
+      "id": "anne_arundel_electric_tax",
+      "url": "https://codelibrary.amlegal.com/codes/annearundel/latest/annearundelco_md/0-0-0-152054",
+      "retrieved_date": "2026-10-25",
+      "http_status": 403,
+      "status": "blocked_direct_retrieval",
+      "scope": "No downloaded proof from this route"
+    }
+  ]
+}

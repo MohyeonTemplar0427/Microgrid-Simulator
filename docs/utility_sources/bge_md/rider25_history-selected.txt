@@ -1,0 +1,42 @@
+Source ID: rider25_history
+Primary URL: https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blt5d58e3f9b4655346/6abe7c86a1315212b30adbc1/Rider_25_Historical_Chart.pdf?branch=prod_alias
+Original PDF SHA256: bf8e1f3584607925ad5c8851adf3dbb48c6dfe49de1c72cc8addf7558c9b5de3
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 6 ===
+R RL G GS GL GLP
+Units: $/kWh
+2025
+January 0.00330 0.00173 0.00419 0.00175 0.00340 -0.00331
+February 0.00424 0.00272 0.00064 -0.00013 0.00103 -0.00331
+March -0.00019 -0.00003 -0.00475 -0.00268 -0.00014 -0.00355
+April 0.00371 0.00471 -0.00482 -0.00170 0.00001 -0.00355
+May 0.00475 0.00471 -0.00340 0.00317 0.00131 -0.00350
+June -0.00295 -0.00338 -0.00411 0.00175 0.00188 -0.00355
+July 0.00321 0.00471 0.00046 0.00133 0.00311 -0.00355
+August 0.00118 0.00471 0.00192 0.00051 0.00163 -0.00355
+September -0.00148 0.00365 -0.00171 -0.00268 -0.00129 -0.00355
+October 0.00475 0.00471 0.00332 0.00295 0.00148 -0.00355
+November -0.00475 -0.00471 -0.00482 0.00129 0.00256 -0.00355
+
+=== PDF page 7 ===
+R RL G GS GL GLP
+Units: $/kWh
+December 0.00200 0.00408 -0.00387 0.00380 0.00370 -0.00355
+Baltimore Gas and Electric Company
+Historical Monthly Rate Adjustment under Rider 25 of the Electric Service Tariff
+R RL G GS GL GLP
+$/kWh $/kWh $/kWh $/kWh $/kWh $/kWh
+2026
+January 0.00367 0.00471 -0.00086 -0.00243 0.00370 -0.00355
+February -0.00095 0.00260 -0.00243 0.00420 0.00342 -0.00355
+March -0.00189 -0.00141 0.00250 0.00432 0.00381 -0.00364
+April -0.00333 -0.00483 -0.00497 0.00432 -0.00104 -0.00364
+May 0.00482 0.00160 -0.00307 0.00432 -0.00175 -0.00364
+June 0.00031 -0.00168 -0.00477 0.00432 -0.00100 -0.00364
+July 0.00210 0.00373 -0.00084 0.00432 0.00280 -0.00364
+August -0.00005 0.00483 0.00297 0.00432 0.00381 -0.00364
+September -0.00152 0.00412 0.00220 0.00432 0.00335 -0.00364
+October -0.00173 0.00008 0.00066 0.00432 0.00107 -0.00364
+November
+December

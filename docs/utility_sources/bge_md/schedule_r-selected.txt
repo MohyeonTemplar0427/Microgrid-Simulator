@@ -1,0 +1,9 @@
+Source ID: schedule_r
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt10129d1f47260cd7/P3_SCH_R.pdf
+Original PDF SHA256: 4c9c65385a882db7823752e9136d8e1676b81f2c93891eef83ce7e7bb6b2c4aa
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+Baltimore Gas and Electric Company – Electric – Retail 33
+P A R T 3
+R A T E S

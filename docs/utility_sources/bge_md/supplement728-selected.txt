@@ -1,0 +1,149 @@
+Source ID: supplement728
+Primary URL: https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/bltafdea164ab2ca8e9/67656b943570d6863a327ab0/Johnston_Suppl728_ML314385.pdf?branch=prod_alias
+Original PDF SHA256: 724ef67bca97950dac83f5653af0b0813ed1f463c93f59e180ecf624415e9127
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 10 ===
+77-A Electric – Retail – Baltimore Gas and Electric Company
+Baltimore Gas & Electric Company
+Current Market-Priced Service Rate Components
+(Transmission Rates Effective June 1, 2024)
+Generation Rate Total SOS RateTransmission Rate
+Transm. Transm.
+Admin. Total Rate incl. Rate incl.
+Energy Charge Applicable Generation GRT, PSC GRT, PSC Total Total
+Rate Rate Assess. Assess. Rate Rate
+¢/kWh ¢/kWh 1 Taxes 2 ¢/kWh ¢/kWh $/kW ¢/kWh $/kW
+RESIDENTIAL
+Schedule R* Oct. 1, 2024 - May 31, 2025 10.019 0.355 0.031 10.405 1.682 - 12.087 -
+Feb. 1, 2025 - May 31, 2025 10.019 0.347 0.031 10.397 1.682 - 12.079 -
+Jun. 1, 2025 - Sep. 30, 2025 9.836 0.347 10.2140.031 1.682 - 11.896 -
+Schedule RL Oct. 1, 2024 - May 31, 2025 On-Peak 13.069 0.355 0.040 13.464 1.616 - 15.080 -
+Oct. 1, 2024 - May 31, 2025 Int-Peak 9.577 0.355 0.030 9.962 1.616 - 11.578 -
+Oct. 1, 2024 - May 31, 2025 Off-Peak 8.713 0.355 0.027 9.095 1.616 - 10.711 -
+Feb. 1, 2025 - May 31, 2025 On-Peak 13.069 0.347 0.040 13.456 1.616 - 15.072 -
+Feb. 1, 2025 - May 31, 2025 Int-Peak 9.577 0.347 0.030 9.954 1.616 - 11.570 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 8.713 0.347 0.027 9.087 1.616 - 10.703 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 15.312 0.347 0.047 15.706 1.616 - 17.322 -
+Jun. 1, 2025 - Sep. 30, 2025 Int-Peak 7.516 0.347 0.024 7.887 1.616 - 9.503 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 7.339 0.347 0.023 7.709 1.616 - 9.325 -
+Schedule EV Oct. 1, 2024 - May 31, 2025 On-Peak 15.385 0.355 0.047 15.787 6.670 - 22.457 -
+Oct. 1, 2024 - May 31, 2025 Off-Peak 8.208 0.355 0.026 8.589 - - 8.589 -
+Feb. 1, 2025 - May 31, 2025 On-Peak 15.385 0.347 0.047 15.779 6.670 - 22.449 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 8.208 0.347 0.026 8.581 - - 8.581 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 18.757 0.347 0.058 19.162 5.044 - 24.206 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 5.413 0.347 0.017 5.777 - - 5.777 -
+Schedule RD Oct. 1, 2024 - May 31, 2025 On-Peak 16.798 0.355 0.052 17.205 7.284 - 24.489 -
+Oct. 1, 2024 - May 31, 2025 Off-Peak 7.983 0.355 0.025 8.363 - - 8.363 -
+Feb. 1, 2025 - May 31, 2025 On-Peak 16.798 0.347 0.052 17.197 7.284 - 24.481 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 7.983 0.347 0.025 8.355 - - 8.355 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 25.538 0.347 0.078 25.963 8.751 - 34.714 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 6.131 0.347 0.019 6.497 - - 6.497 -
+COMMERCIAL & INDUSTRIAL
+Scheds. G/GU -Type I SOS Oct. 1, 2024 - May 31, 2025 9.675 0.322 0.030 10.027 1.413 - 11.440 -
+Feb. 1, 2025 - May 31, 2025 9.675 0.341 0.030 10.046 1.413 - 11.459 -
+Jun. 1, 2025 - Sep. 30, 2025 9.758 0.341 0.030 10.129 1.413 - 11.542 -
+Sched. GS - Type I SOS Oct. 1, 2024 - May 31, 2025 On-Peak 12.179 0.322 0.038 12.539 1.306 - 13.845 -
+Oct. 1, 2024 - May 31, 2025 Int-Peak 9.238 0.322 0.029 9.589 1.306 - 10.895 -
+Oct. 1, 2024 - May 31, 2025 Off-Peak 8.370 0.322 0.026 8.718 1.306 - 10.024 -
+Feb. 1, 2025 - May 31, 2025 On-Peak 12.179 0.341 0.038 12.558 1.306 - 13.864 -
+Feb. 1, 2025 - May 31, 2025 Int-Peak 9.238 0.341 0.029 9.608 1.306 - 10.914 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 8.370 0.341 0.026 8.737 1.306 - 10.043 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 14.508 0.341 0.045 14.894 1.306 - 16.200 -
+Jun. 1, 2025 - Sep. 30, 2025 Int-Peak 7.430 0.341 0.023 7.794 1.306 - 9.100 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 6.524 0.341 0.021 6.886 1.306 - 8.192 -
+Sched. SL - Type I SOS 3 Oct. 1, 2024 - May 31, 2025 7.908 0.322 0.025 8.255 - - 8.255 -
+Feb. 1, 2025 - May 31, 2025 7.908 0.341 0.025 8.274 - - 8.274 -
+Sched. PL - Type I SOS 3 Oct. 1, 2024 - May 31, 2025 7.908 0.322 0.025 8.255 - - 8.255 -
+Feb. 1, 2025 - May 31, 2025 7.908 0.341 0.025 8.274 - - 8.274 -
+Sched. G - Type II SOS Dec. 1, 2024 - Feb. 28, 2025 8.724 0.341 0.027 9.092 1.413 - 10.505 -
+Feb. 1, 2025 - Feb. 28, 2025 8.724 0.279 0.027 9.030 1.413 - 10.443 -
+Sched. GS - Type II SOS Dec. 1, 2024 - Feb. 28, 2025 On-Peak Energy 10.837 0.341 0.034 11.212 1.306 - 12.518 -
+Dec. 1, 2024 - Feb. 28, 2025 Inter-Peak Energy 8.543 0.341 0.027 8.911 1.306 - 10.217 -
+Dec. 1, 2024 - Feb. 28, 2025 Off-Peak Energy 7.886 0.341 0.025 8.252 1.306 - 9.558 -
+Feb. 1, 2025 - Feb. 28, 2025 On-Peak Energy 10.837 0.279 0.034 11.150 1.306 - 12.456 -
+Feb. 1, 2025 - Feb. 28, 2025 Inter-Peak Energy 8.543 0.279 0.027 8.849 1.306 - 10.155 -
+Feb. 1, 2025 - Feb. 28, 2025 Off-Peak Energy 7.886 0.279 0.025 8.190 1.306 - 9.496 -
+Scheds. GL, P & T - Type II SOS Dec. 1, 2024 - Feb. 28, 2025 On-Peak Energy 10.765 0.341 0.033 11.139 - - 11.139 -
+Dec. 1, 2024 - Feb. 28, 2025 Inter-Peak Energy 8.478 0.341 0.027 8.846 - - 8.846 -
+Dec. 1, 2024 - Feb. 28, 2025 Off-Peak Energy 7.778 0.341 0.024 8.143 - - 8.143 -
+Feb. 1, 2025 - Feb. 28, 2025 On-Peak Energy 10.765 0.279 0.033 11.077 - - 11.077 -
+Feb. 1, 2025 - Feb. 28, 2025 Inter-Peak Energy 8.478 0.279 0.027 8.784 - - 8.784 -
+Feb. 1, 2025 - Feb. 28, 2025 Off-Peak Energy 7.778 0.279 0.024 8.081 - - 8.081 -
+Scheds. GL, P & T - Type II SOS Transmission Demand Charge - 4.41 - 4.41
+Note:
+1 The Adminstrative Charge rates typically change every February, June and October.
+2 Tax Rates:
+Gross Receipts Tax (GRT) = 2% (Transmission only)
+PSC Assessment = 0.3013% (Effective October 2024)
+3 Charge per lamp-watt (¢/lamp-watt) = 8.255 ¢/kWh x 0.333 = 2.749 ¢/lamp-watt; Sch. PL rate reflected in lamp fixture and renewal rates, effective 10/01/2024
+3 Charge per lamp-watt (¢/lamp-watt) = 8.274 ¢/kWh x 0.333 = 2.755 ¢/lamp-watt; Sch. PL rate reflected in lamp fixture and renewal rates, effective 02/01/2025
+* For customers participating in Rider 6 - Vehicle Charging TOU (VC-TOU) Adjustment Program, the VC-TOU On-Peak and Off-Peak Total SOS Rates are equal to the Schedule EV On-Peak and
+Off-Peak Total SOS Rates, respectively. The Vehicle Charging Adjustment is based on the sum of 1) Schedule EV (On-Peak) Total SOS Rate minus the Schedule R Total SOS Rate multipled by
+the eligible smart EV charger's On-Peak kWh and 2) Schedule EV (Off-Peak) Total SOS Rate minus the Schedule R Total SOS Rate multipled by the eligible smart EV charger's Off-Peak kWh.
+For more information, see Rider 6 - Vehicle Charging Time-of-Use Adjustment.
+Total SOS rates exclude Rider 8 - Energy Cost Adjustment
+Hourly Administrative Charge = 0.232 ¢/kWh effective 10/01/2024
+Hourly Administrative Charge = 0.215 ¢/kWh effective 02/01/2025
+P. S. C. Md. – E-6 (Suppl. 725728) Filed 11/25/2412/19/24– Effective 12/01/2402/01/25
+
+=== PDF page 15 ===
+77-A Electric – Retail – Baltimore Gas and Electric Company
+Baltimore Gas & Electric Company
+Current Market-Priced Service Rate Components
+(Transmission Rates Effective June 1, 2024)
+Generation Rate Total SOS RateTransmission Rate
+Transm. Transm.
+Total Rate incl. Rate incl.
+Energy Admin. Generation GRT, PSC GRT, PSC Total Total
+Rate Charge Rate Assess. Assess. Rate Rate
+¢/kWh ¢/kWh 1 Applicable Taxes 2 ¢/kWh ¢/kWh $/kW ¢/kWh $/kW
+RESIDENTIAL
+Schedule R* Feb. 1, 2025 - May 31, 2025 10.019 0.347 0.031 10.397 1.682 - 12.079 -
+Jun. 1, 2025 - Sep. 30, 2025 9.836 0.347 0.031 10.214 1.682 - 11.896 -
+Schedule RL Feb. 1, 2025 - May 31, 2025 On-Peak 13.069 0.347 0.040 13.456 1.616 - 15.072 -
+Feb. 1, 2025 - May 31, 2025 Int-Peak 9.577 0.347 0.030 9.954 1.616 - 11.570 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 8.713 0.347 0.027 9.087 1.616 - 10.703 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 15.312 0.347 0.047 15.706 1.616 - 17.322 -
+Jun. 1, 2025 - Sep. 30, 2025 Int-Peak 7.516 0.347 0.024 7.887 1.616 - 9.503 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 7.339 0.347 0.023 7.709 1.616 - 9.325 -
+Schedule EV Feb. 1, 2025 - May 31, 2025 On-Peak 15.385 0.347 0.047 15.779 6.670 - 22.449 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 8.208 0.347 0.026 8.581 - - 8.581 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 18.757 0.347 0.058 19.162 5.044 - 24.206 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 5.413 0.347 0.017 5.777 - - 5.777 -
+Schedule RD Feb. 1, 2025 - May 31, 2025 On-Peak 16.798 0.347 0.052 17.197 7.284 - 24.481 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 7.983 0.347 0.025 8.355 - - 8.355 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 25.538 0.347 0.078 25.963 8.751 - 34.714 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 6.131 0.347 0.019 6.497 - - 6.497 -
+COMMERCIAL & INDUSTRIAL
+Scheds. G/GU -Type I SOS Feb. 1, 2025 - May 31, 2025 9.675 0.341 0.030 10.046 1.413 - 11.459 -
+Jun. 1, 2025 - Sep. 30, 2025 9.758 0.341 0.030 10.129 1.413 - 11.542 -
+Sched. GS - Type I SOS Feb. 1, 2025 - May 31, 2025 On-Peak 12.179 0.341 0.038 12.558 1.306 - 13.864 -
+Feb. 1, 2025 - May 31, 2025 Int-Peak 9.238 0.341 0.029 9.608 1.306 - 10.914 -
+Feb. 1, 2025 - May 31, 2025 Off-Peak 8.370 0.341 0.026 8.737 1.306 - 10.043 -
+Jun. 1, 2025 - Sep. 30, 2025 On-Peak 14.508 0.341 0.045 14.894 1.306 - 16.200 -
+Jun. 1, 2025 - Sep. 30, 2025 Int-Peak 7.430 0.341 0.023 7.794 1.306 - 9.100 -
+Jun. 1, 2025 - Sep. 30, 2025 Off-Peak 6.524 0.341 0.021 6.886 1.306 - 8.192 -
+Sched. SL - Type I SOS 3 Feb. 1, 2025 - May 31, 2025 7.908 0.341 0.025 8.274 - - 8.274 -
+Sched. PL - Type I SOS 3 Feb. 1, 2025 - May 31, 2025 7.908 0.341 0.025 8.274 - - 8.274 -
+Sched. G - Type II SOS Feb. 1, 2025 - Feb. 28, 2025 8.724 0.279 0.027 9.030 1.413 - 10.443 -
+Sched. GS - Type II SOS Feb. 1, 2025 - Feb. 28, 2025 On-Peak Energy 10.837 0.279 0.034 11.150 1.306 - 12.456 -
+Feb. 1, 2025 - Feb. 28, 2025 Inter-Peak Energy 8.543 0.279 0.027 8.849 1.306 - 10.155 -
+Feb. 1, 2025 - Feb. 28, 2025 Off-Peak Energy 7.886 0.279 0.025 8.190 1.306 - 9.496 -
+Scheds. GL, P & T - Type II SOS Feb. 1, 2025 - Feb. 28, 2025 On-Peak Energy 10.765 0.279 0.033 11.077 - - 11.077 -
+Feb. 1, 2025 - Feb. 28, 2025 Inter-Peak Energy 8.478 0.279 0.027 8.784 - - 8.784 -
+Feb. 1, 2025 - Feb. 28, 2025 Off-Peak Energy 7.778 0.279 0.024 8.081 - - 8.081 -
+Scheds. GL, P & T - Type II SOS Transmission Demand Charge - 4.41 - 4.41
+Note:
+1 The Adminstrative Charge rates typically change every February, June and October.
+2 Tax Rates:
+Gross Receipts Tax (GRT) = 2% (Transmission only)
+PSC Assessment = 0.3013% (Effective October 2024)
+3 Charge per lamp-watt (¢/lamp-watt) = 8.274 ¢/kWh x 0.333 = 2.755 ¢/lamp-watt; Sch. PL rate reflected in lamp fixture and renewal rates, effective 02/01/2025
+* For customers participating in Rider 6 - Vehicle Charging TOU (VC-TOU) Adjustment Program, the VC-TOU On-Peak and Off-Peak Total SOS Rates are equal to the Schedule EV On-Peak and
+Off-Peak Total SOS Rates, respectively. The Vehicle Charging Adjustment is based on the sum of 1) Schedule EV (On-Peak) Total SOS Rate minus the Schedule R Total SOS Rate multipled by
+the eligible smart EV charger's On-Peak kWh and 2) Schedule EV (Off-Peak) Total SOS Rate minus the Schedule R Total SOS Rate multipled by the eligible smart EV charger's Off-Peak kWh.
+For more information, see Rider 6 - Vehicle Charging Time-of-Use Adjustment.
+Total SOS rates exclude Rider 8 - Energy Cost Adjustment
+Hourly Administrative Charge = 0.215 ¢/kWh effective 02/01/2025
+P. S. C. Md. – E-6 (Suppl. 728) Filed 12/19/24– Effective 02/01/25

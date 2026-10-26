@@ -741,6 +741,19 @@ The all-customer CGC fee remains present even in grid-only counterfactuals.
 MISO transmission owner, resource zone and optional verified wholesale cpnode
 remain separate account facts. See [Ameren scope](Ameren_Illinois.md).
 
+## BGE Maryland R/G SOS · October 2026
+
+`billing/bge_md.py` and snapshot-safe `bge_md_rates.py` extend schema11 with
+residential R and secondary G Type I SOS, January2025–October2026. The existing
+regional worker, PV/storage, saved artifacts and representative OpenDSS paths
+are reused. Monthly rates require matching complete calendar service/billing
+months. Type I assignment, inherited USC band, Anne Arundel tax locality and
+ordinary non-export interconnection are separately confirmed account facts.
+R reports a verified recurring-tariff subtotal excluding unverified historical
+legislative relief refunds; G includes the selected ordinary taxes. Component
+prices and numeric/convex expressions are shared without wholesale-price or
+export-settlement substitution. See [scope and sources](BGE_Maryland.md).
+
 ## Ameren Missouri bundled service · October 2026
 
 `billing/ameren_mo.py` and snapshot-safe `ameren_mo_rates.py` add residential

@@ -1,0 +1,10 @@
+Source ID: legislative_energy_briefing
+Primary URL: https://mgaleg.maryland.gov/meeting_material/2026/ent%20-%20134135684347296445%20-%201.22.26_MDs%20Energy%20Landscape%20Part%203_Briefing_Agenda%20and%20Presentations.pdf
+Original SHA256: 2610c51e6a90b041bc4368d812d5f3d6a5b2e46e2de91ca0288d75b9dd957e21
+Extraction: whitespace normalized; physical PDF pages are one-based.
+PDF physical page 11; presentation slide 10. Visual transcription of reproduced BGE statement:
+Residential Schedule R. Billing period Aug29,2025–Sep30,2025. Days billed32. Usage901kWh.
+Supply:56.31kWh x .12587=$7.09;844.69kWh x .15836=$133.77; supply total$140.86.
+Customer$9.65;EmPOWER901kWh x .01028=$9.26;Distribution901kWh x .04507=$40.61;Delivery total$59.52.
+MD Universal Service$.32;Environmental901kWh x .00015=$.14;Franchise901kWh x .00062=$.56;TaxesFees total$1.02;bill total$201.40.
+Only delivery and itemized tax lines are a calendar-September benchmark. Supply is the shown actual meter-cycle blend; do not reinterpret its total as a complete-calendarSeptember charge.

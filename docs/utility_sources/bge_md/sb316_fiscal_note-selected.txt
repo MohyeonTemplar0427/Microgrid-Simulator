@@ -1,0 +1,41 @@
+Source ID: sb316_fiscal_note
+Primary URL: https://mgaleg.maryland.gov/2025RS/fnotes/bil_0006/sb0316.pdf
+Original SHA256: 90356ce2d6a541d1e87de5b2034fc2cd0af0ddd880354abc00f368734c11386c
+Extraction: whitespace normalized; physical PDF pages are one-based.
+=== PDF page 16 ===
+otherwise be responsible for any of those procurements not directly caused by the bill.
+However, to the extent that the department requires additional staff, general fund
+expenditures for DGS increase by approximately $100,000 to $130,000 annually per staff,
+beginning as early as fiscal 2026.
+Maryland Department of Labor
+The Division of Labor and Industry within MD Labor may need to respond to complaints
+regarding the prevailing wage provisions in the bill. MD Labor advises that this can be
+accomplished through its existing authority, with traditional methods that do not present
+an operational or fiscal impact on the division. The bill also authorizes, but does not require,
+MD Labor to consider, review, and enforce compliance with a community benefit
+agreement. MD Labor did not provide an assessment of operational or fiscal effects
+associated with those activities, but this analysis assumes they are generally limited in
+nature. Other requirements are also generally minimal and absorbable within existing
+budgeted resources.
+Redirection of Taxes on Qualified Data Centers
+Franchise Tax
+The bill requires the Comptroller to distribute 75% of the franchise tax revenue from
+public service companies that is attributable to the kilowatt-hours of electricity delivered
+to qualified data centers that are operational on or after January 1, 2026, to an escrow
+account established by PSC for ratepayer refunds or credits. As noted previously,
+public service company franchise tax revenues are distributed to the general fund. As a
+result, the distribution required under the bill decreases general fund revenues beginning
+in fiscal 2026. The amount depends on the electricity usage attributable to qualified data
+centers, which cannot be reliably estimated. In fiscal 2025, there six qualified data centers
+in Maryland.
+As a point of reference, data from the Electric Power Research Institute estimates that data
+centers in Maryland used 96,360 megawatt-hours, or approximately
+96.4 million kilowatt-hours, of electricity in 2023. The rate of the distribution tax imposed
+on electric companies is $0.00062 per kilowatt-hour for electricity delivered for
+final consumption. Based in this data and the current tax rate, public service company
+franchise tax revenues attributable to electricity usage by data centers was approximately
+$60,000 in fiscal 2023. As a result of the bill, general fund revenues decrease by at least
+$24,000 in fiscal 2026 and by at least $45,000 annually thereafter. The revenue impact in
+future years could be significantly higher to the extent that more qualified data centers
+become operational.
+SB 316/ Page 16

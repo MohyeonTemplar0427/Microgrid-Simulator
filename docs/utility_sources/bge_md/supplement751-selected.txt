@@ -1,0 +1,16 @@
+Source ID: supplement751
+Primary URL: https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blt1a0b1cc4f39d8a37/69fb4e3050f7ae24dd91cb6f/Johnston_Suppl751_ML329738.pdf?branch=prod_alias
+Original PDF SHA256: 21dc45921c896e6fd8bb46966e0129d539e0a819e89e26f1802a93a4791883ae
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 8 ===
+Tables require visual readback; raw extraction omits outlined table text. Verified transcription is recorded in supply_research.md and corroborated by cseg_ledger selected pages.
+
+=== PDF page 9 ===
+Tables require visual readback; raw extraction omits outlined table text. Verified transcription is recorded in supply_research.md and corroborated by cseg_ledger selected pages.
+
+=== PDF page 14 ===
+Tables require visual readback; raw extraction omits outlined table text. Verified transcription is recorded in supply_research.md and corroborated by cseg_ledger selected pages.
+
+=== PDF page 15 ===
+Tables require visual readback; raw extraction omits outlined table text. Verified transcription is recorded in supply_research.md and corroborated by cseg_ledger selected pages.

@@ -1,0 +1,40 @@
+Source ID: schedule_g
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/bltae5a035d36f7f19e/P3_SCH_G.pdf
+Original PDF SHA256: 7d2defc0d180f091b77636ba81592f6b04ef43bd8755b60d9a482cb142ee8c63
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+Baltimore Gas and Electric Company – Electric – Retail 43
+GENERAL SERVICE – ELECTRIC
+SCHEDULE G
+Availability: For use for all purposes where the Customer does not qualify for any of the Company's
+other rate schedules. Additionally available, upon customer request, to an eligible multifamily unit
+dwelling Customer who would otherwise qualify for service on Schedule GL and has solely electric
+vehicle (“EV”) charger(s) load served by the meter with a maximum per EV charger port demand of
+20kW; EV chargers must be available for use only by multiple unit dwelling residents and their guests.
+Delivery Voltage: Service at Secondary Distribution Systems voltages. It is also available for
+customers receiving Primary service under this Schedule on or before January 1, 1987 or for a new
+customer who locates to an existing facility served at Primary Systems voltages where the customer
+does not qualify for other Primary service rate schedules.
+Monthly Net Rates:
+Rate Year 1 Rate Year 2 Rate Year 3
+Effective Effective Effective
+January 1, 2024 January 1, 2025 January 1, 2026
+Customer Charge (per Month) $14.55 $15.10 $15.60
+Delivery Service Charge (Secondary) ($/kWh) $0.04513 $0.04819 $0.04965
+Delivery Service Charge (Primary) ($/kWh) $0.04332 $0.04626 $0.04766
+- Competitive Billing (where applicable) credits $ 0.47 per month (see Section 7.7 for details)
+- The Delivery Service Charge excludes Rider 10 - Administrative Cost Adjustment
+Energy Charges:
+Generation and Transmission Market-Priced Service Charges can be found on
+www.bge.com and Rider 1 – Standard Offer Service.
+Minimum Charge: Net Delivery Service Customer Charge.
+Billing Seasons: Summer rates are billed for the four billing periods ending June through September.
+Non-Summer rates are billed for the eight billing periods ending October through May.
+Late Payment Charge: Standard. (Sec. 7.4)
+Payment Terms: Standard. (Sec. 7)
+Term of Contract: The initial term of contract is 2 years where additional main facilities are required
+for supply. Otherwise, the term of contract is one year. After the initial term of contract, the contract
+may be terminated by at least 30 days' notice from the Customer.
+(Continued on Next Page)
+P. S. C. Md. – E-6 (Suppl. 721) Filed 10/25/2024– Effective 12/01/2024

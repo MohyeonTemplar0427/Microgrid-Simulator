@@ -1,0 +1,6 @@
+Source ID: sos_2025_october
+Primary URL: https://www.bge.com/cdn/assets/v3/assets/blt71bfe6e8a1c2d265/blte65b1dd8c5037101/68dbe17ce346510a223e59cd/POLR_Rates_PTC_MiscCharges.pdf?branch=prod_alias
+Original PDF SHA256: c06524599e548a0c8f1540236eae72844284b140ba912ef19c8a1c912c3f7a96
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===

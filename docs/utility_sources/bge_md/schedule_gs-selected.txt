@@ -1,0 +1,74 @@
+Source ID: schedule_gs
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/bltf68cb87a77b79e3f/P3_SCH_GS.pdf
+Original PDF SHA256: 74af7b90d144af3aefc70db1a48bdf79f715d4e65cf230a9dc5d2a17b187304a
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+Baltimore Gas and Electric Company – Electric – Retail 45
+GENERAL SERVICE SMALL - ELECTRIC
+SCHEDULE GS
+Availability: At the Customer's request, for use for all purposes where the Customer qualifies for
+Schedule G. Additionally available, upon customer request, to an eligible multifamily unit dwelling
+Customer who would otherwise qualify for service on Schedule GL and has solely electric vehicle
+(“EV”) charger(s) load served by the meter with a maximum per EV charger port demand of 20kW; EV
+chargers must be available for use only by multiple unit dwelling residents and their guests.
+Delivery Voltage: Service at Secondary Distribution Systems voltages.
+Monthly Net Rates:
+Rate Year 1 Rate Year 2 Rate Year 3
+Effective Effective Effective
+January 1, 2024 January 1, 2025 January 1, 2026
+Customer Charge (per Month) $18.60 $18.60 $18.60
+Delivery Service Charge ($/kWh) $0.03954 $0.04197 $0.04316
+- Competitive Billing (where applicable) credits $ 0.47 per month (see Section 7.7 for details)
+- The Delivery Service Charge excludes Rider 10 - Administrative Cost Adjustment
+Energy Charges:
+Generation and Transmission Market-Priced Service Charges can be found on www.bge.com
+and Rider 1 – Standard Offer Service.
+Minimum Charge: Net Delivery Service Customer Charge.
+Billing Seasons: Summer rates are billed for usage from June 1 through September 30.
+Non-Summer rates are billed for usage from October 1 through May 31.
+(Continued on Next Page)
+P. S. C. Md. – E-6 (Suppl. 721) Filed 10/25/2024 – Effective 12/01/2024
+
+=== PDF page 2 ===
+46 Electric – Retail – Baltimore Gas and Electric Company
+Schedule GS continued
+Rating Periods:
+Summer
+Peak - Between the hours of 10 am and 8 pm on weekdays, excluding the National holidays
+listed below.
+Intermediate - Between the hours of 7 am and 10 am, and the hours of 8 pm and 11 pm on
+weekdays, excluding the National holidays listed below.
+Off-Peak - All times other than those defined for the On-Peak and Intermediate-Peak rating
+periods.
+Non-Summer
+Peak - Between the hours of 7 am and 11 am, and the hours of 5 pm and 9 pm on weekdays,
+excluding the National holidays listed below.
+Intermediate - Between the hours of 11 am and 5 pm on weekdays, excluding the National
+holidays listed below.
+Off-Peak - All times other than those defined for the On-Peak and Intermediate-Peak rating
+periods.
+The Non-Summer time periods shown above will begin and end one hour later for the period
+between the second Sunday in March and the first Sunday in April, and for the period between
+Holidays: the last Sunday in October and the first Sunday in November.
+All hours on Saturdays and Sundays and the following National holidays are Off-Peak: New Year's
+Day, President's Day, Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving,
+Christmas, and the Monday following such of these as fall on Sunday.
+Late Payment Charge: Standard. (Sec. 7.4)
+Payment Terms: Standard. (Sec. 7)
+Term of Contract: One year and thereafter until terminated by the Customer.
+Subject to Riders applicable as listed below:
+1. Standard Offer Service 22. Minimum Charge for Short-Term Uses
+2. Electric Efficiency Charge 23. Advanced Meter Services
+3. Miscellaneous Taxes and Surcharges 24. Economic Development
+4. Budget Billing 25. Monthly Rate Adjustment
+8. Energy Cost Adjustment 26. Peak Time Rebate
+9. Customer Billing and Consumption Data 28. Small Generator Interconnection Standards
+Requests 29. Maryland Cost Allocation Method
+10. Administrative Cost Adjustment (“MCAM”)
+13. Change of Schedule 32. Community Energy Pilot Program
+16. Multi-Year Plan (“MYP”) Adjustment Rider 33. Electric Vehicle Charging Rider
+18. Net Energy Metering 34. Base Distribution Revenue Offset Rider
+19. Demonstration and Trial Installations
+21. Billing in Event of Service Interruption
+P. S. C. Md. – E-6 (Suppl. 745) Filed 04/30/2026 – Effective 05/01/2026

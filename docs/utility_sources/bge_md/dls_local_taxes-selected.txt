@@ -1,0 +1,36 @@
+Source ID: dls_local_taxes
+Primary URL: https://dls.maryland.gov/pubs/prod/InterGovMatters/LocFinTaxRte/FinalGuidetoLocalGovernmentTaxingAuthority.pdf
+Original SHA256: 11035b7a391caa694de4442475f0ed3c1dd13a7f5c865a15b82a4d57a3513489
+Extraction: whitespace normalized; physical PDF pages are one-based.
+=== PDF page 7 ===
+Anne Arundel County
+Property Tax Cap
+Revenues may not increase compared to previous year by more than the Consumer Price
+In d ex or 4.5%, whichever is less. Charter, § 710(d) .
+Taxes
+Transfer Tax: Authorit y, Chapter 610 of 1975, § 4- 3A-102. Rate is generally capped at
+1%. Howev er, the county may increase the rat e on transfers of $1 million or more, except
+for affordable housing p r ojects. The county has set the rate on transfers of $1 million or
+more at 1.5%. Any reven ue attributable to a tax rate in excess of 1% must be distributed to
+a special fund to be used for affordabl e housing. § 4- 11- 124. All State exemptions apply.
+There are also some addi tional exemptions. § 4- 3A-101.
+Recordation Tax: § 4- 3A-103, TP § 12- 102. Revenue attributable to any special
+record ation tax rate in ex cess of th e gen erally app licable rat e that is impos ed on trans fers
+of $1 million or more must be distributed to a special fund to be used for affordable
+housing. § 4- 11- 124.
+Admissions and Amusement Tax : Rate is 10% except movie theaters are 7.5%. There
+are sev eral sp ecial ex emptions. § 4- 5- 101, TG § 4- 102.
+Fuel Tax: Does not apply to residences, motor fuel, or nonprofits. Applies to oil, liquefied
+petroleum gas, and coal. Tax is collected by the seller from the purchaser. § 4- 6- 103,
+LG §20- 603.
+Gas, Electricity, Steam , and Telephone Tax : Taxes d o not apply to nonprofits.
+Gas, ele ctricity, and stea m: Tax does not apply to residential use of artifici al or natu ral gas
+and electricity. Tax applies to commercial and industrial use of artificial or natural gas,
+electricity, and steam delivered in the county. Tax i s paid by the consumer. T here are lower
+rates for manufacturing activity. Tax is collected by the utility. § 4- 6- 104, LG §20603.
+Telephone: Applies to local exchange service originating within the c ounty. The rate of
+tax is 8% on the gross sales price for business and residenc e local exchang e telephone lines
+or trunks, Centrex exchange access lines, and local telecommunications messages. Tax
+does not apply to wireles s. Individuals at leas t 65 or totally disabled with a combined gross
+income of $8,000 or less are exempt. § 4- 6- 104, LG § 20 603.
+3

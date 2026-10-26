@@ -14,6 +14,10 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "bge_maryland": {"label":"Baltimore Gas and Electric · Maryland", "state":"MD", "zone":"BGE", "module":"bge_md", "timezone":"America/New_York",
+                     "grid_operator":"PJM",
+                     "grid_sources":["https://dataminer2.pjm.com/feed/bill_deter_mnt_load",
+                                     "https://www.bge.com/my-account/my-dashboard/rates-tariffs/electric-service-rates-tariffs"]},
     "ppl_electric_pennsylvania": {"label":"PPL Electric Utilities · Pennsylvania", "state":"PA", "zone":"PPL", "module":"ppl_pa", "timezone":"America/New_York",
                                   "grid_operator":"PJM",
                                   "grid_sources":["https://dataminer2.pjm.com/feed/bill_deter_mnt_load",

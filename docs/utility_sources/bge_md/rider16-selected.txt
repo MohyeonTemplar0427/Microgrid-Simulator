@@ -1,0 +1,45 @@
+Source ID: rider16
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/blt722af29653644b4e/Rdr_16_17.pdf
+Original PDF SHA256: 91f02a7acfa430abf3e2004bfb926ac807f5e6c2c5dc6dc212a9ee95728a0479
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 1 ===
+Baltimore Gas and Electric Company – Electric – Retail 95
+16. Multi-Year Plan (“MYP”) Adjustment Rider
+This rider addresses Imbalances that may arise between the revenue requirement approved by the
+Commission as part of initial rates under a Multi-Year Plan (“MYP”) and the actual revenue requirement
+filed as part of the Annual Informational Filings or Final Reconciliation, pursuant to Order No. 89482.
+The Annual Informational Filings shall be filed within 90 days of the end of the first and second years of
+the approved MYP.
+The Final Reconciliation shall be filed within 120 days of the end of the MYP.
+Imbalances shall be calculated consistent with the MYP revenue requirement approved by the
+Commission in an order resulting from an MYP proceeding. Rate base and operating income shall use
+actual results from the applicable MYP period in calculating the actual revenue requirement to determine
+the Imbalance. If an Imbalance calculated as part of an Annual Informational Filing, as defined in Order
+No. 89482, represents an amount owed to customers, the MYP Adjustment Rider can be utilized to
+provide a credit for such amount, if determined to be appropriate by the Commission. The MYP
+Adjustment Rider can be utilized to recover or credit an Imbalance calculated as part of a Final
+Reconciliation, as determined to be appropriate by the Commission.
+All Imbalances are deferred into a regulatory asset or liability until such time as the Commission
+determines the appropriate disposition of the Imbalance, including the appropriate period over which an
+Imbalance is recovered or credited to customers. Carrying costs will apply for amounts owed to
+customers and will continue to apply during the credit period.
+Calculation of Rate
+The MYP Adjustment Rider rate is determined for each Schedule by first allocating the Imbalance, as
+determined appropriate by the Commission. The resulting amounts are then divided by the estimated
+billing determinants, per kilowatt-hour or per fixture, for each applicable Schedule. Details concerning
+the calculation of the MYP Adjustment are filed with and approved by the Commission prior to their use
+in billing. The MYP Adjustment shall be included in the Distribution Charge on the Customer’s monthly
+electric bill.
+Rates Effective February 1, 2026 – December 31, 2027
+Rate Schedule Rate
+R/RD/EV $0.00086 per kWh
+RL $0.00087 per kWh
+G/GU $0.00041 per kWh
+GS $0.00065 per kWh
+GL $0.00036 per kWh
+P $0.00022 per kWh
+T $0.00000 per kWh
+SL $0.00027 per Lamp-Watt
+PL $0.00 per fixture
+P. S. C. Md. – E-6 (Suppl. 747) Filed 12/30/2025 – Effective 02/01/2026

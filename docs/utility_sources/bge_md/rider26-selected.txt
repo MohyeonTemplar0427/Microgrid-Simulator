@@ -1,0 +1,47 @@
+Source ID: rider26
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt71bfe6e8a1c2d265/bltbcb53d4782e3ba22/Rdrs_26_27.pdf
+Original PDF SHA256: 5cb8f248d2f045801777917eb61cdd692d2acea6f44428457cc1b736a2348114
+Extraction: pypdf layout; whitespace normalized. Page numbers below are physical PDF pages.
+
+=== PDF page 3 ===
+Baltimore Gas and Electric Company – Electric – Retail 107b
+Rider 26 – Peak Time Rebate – continued
+The true-up charge/credit – applicable to Schedules R, RD, EV, RL, G, GS, GL, P and T – is
+combined with Rider 2 – Electric Efficiency Charge and Rider 15 – Demand Response Service to
+comprise the EmPOWER Maryland Charge line item on the Customer’s monthly electric bill.
+The current Charges are as follows:
+Rate Schedule Rate ($ per kilowatt-hour)
+Residential (Schedules R, RD, EV, and RL) 0.00015
+General Service Small (Schedules G and GS) 0.00013
+General Service Large (Schedules GL) 0.00011
+Primary/Trans. Voltage (Schedules P and T) 0.00009
+27. Smart Meter Opt-Out
+Residential and Small Commercial Customers served under Schedules R and G
+respectively, who elect to opt-out of receiving a smart meter and choose to retain a non-smart meter,
+are subject to the Smart Meter Opt-Out fees listed in this Rider. A Customer who is non-responsive
+to BGE’s attempts to install a smart meter, as detailed in Order No. 86727, shall also be subject to
+this Rider. A Customer receiving service under Schedules RL or GS, who is subject to this Rider,
+shall be moved to a non-Time-of-Use schedule, Schedule R and G, respectively, and shall receive
+a non-Time-of-Use ERT (encoder receiver transmitter) or AMR (automatic meter reading) meter
+for no additional costs beyond the Opt-Out fees specified below.
+Smart Meter Opt-Out Customers are subject to a one-time, up-front fee upon enrollment,
+payable in three monthly installments, and a recurring monthly fee after enrollment, regardless of
+the quantity of meters per premise. The applicable fees for enrolling in Smart Meter Opt-Out will
+be shown as separate line items on the Customer’s bill and are as follows:
+One-time, up-front Fee: $75 (payable in three monthly installments)
+Monthly Fee: $5.50 (per month)
+Opt-Out Customers will receive an initial bill that includes the first installment of the one-
+time, up-front fee and ongoing monthly fee. An Opt-Out Customer can elect to discontinue the
+application of this Rider at any time by electing to have a smart meter installed. The charges shall
+be waived and removed from the Customer’s bill where the opt-out charges first appear if the
+customer agrees, before the end of the fifth subsequent billing cycle, to have a smart meter installed,
+provided the Customer allows reasonable access for installation of the smart meter. For Customers
+who elect to have a smart meter installed after the waiver period has expired, the charges shall
+continue to be billed and shall cease upon the earlier of the installation of a smart meter or within
+30 days of receiving customer notification, provided the Customer allows reasonable access for
+installation of the smart meter.
+An Opt-Out Customer served under both an electric schedule and a gas schedule will
+receive only one one-time, up-front fee and monthly fee per premise. A Customer with multiple
+electric premises shall incur fees for each individual premise that is opted-out of receiving a Smart
+Meter.
+P. S. C. Md. – E-6 (Suppl. 742) Filed 11/18/2025– Effective with January 2026 Billings
