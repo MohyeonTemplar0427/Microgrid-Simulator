@@ -1,0 +1,160 @@
+PDF page 1:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 23 
+Canceling Original Page No. 23 
+TRANSMISSION SERVICE CHARGE 
+The Transmission Service Charge (TSC) shall be applied to charges for electricity supplied to 
+customers who receive default service, as defined in Rule 1B(1), from the Company under this Tariff. 
+The TSC shall be computed separately for each of the following four customer classes: 
+(1) Residential: Consisting of Rate Schedules RS and RTS (R),
+(2) Small Commercial and Industrial: Consisting of Rate Schedules GS-1, GS-3, BL, SA,
+SM (R), SHS (R), SLE, and SE (Small C&I),
+(3) Large Commercial and Industrial – Primary: Consisting of Rate Schedule LP-4 (Large C&I –
+Primary), and
+(4) Large Commercial and Industrial – Transmission: Consisting of Rate Schedules LP-
+5 and LP-6 (Large C&I – Transmission).
+The TSC, computed using the formulae described below, shall be applied to the monthly bill of 
+each customer receiving default service from the Company and shall be reconciled on an annual 
+basis for undercollections and overcollections experienced during the previous year. 
+The TSC for the Residential class and the Small C&I class shall be computed using the following 
+formula: 
+TSC = [TCe/S + TCd/S - E/S] X 1/(1-T) 
+The TSC for the Large C&I – Primary class and the Large C&I – Transmission class shall be 
+computed using the following formulae: 
+TSC = TSCd + TSCe 
+The demand – related portion of the TSC (TSCd) for the Large C&I – Primary class and the Large 
+C&I – Transmission class shall be computed using the following formula: 
+TSCd = [TCd/D] X 1/(1-T) 
+The other portion of the TSC (TSCe) for the Large C&I – Primary class and the Large C&I – 
+Transmission class shall be computed using the following formula: 
+TSCe = [TCe/S – E/S] X 1/(1-T) 
+Where: 
+TCd = The demand-related (kW) portion of the charges that the Company incurs to provide 
+transmission service (including ancillary service charges and all non-market-based 
+transmission service charges) to customers who receive default service from the Company. 
+These charges are all FERC-approved charges imposed by PJM on a kW basis. These 
+charges are allocated to each customer class based upon the contribution of that class to 
+the 5 coincident peaks used by PJM to establish such demand – related charges. 
+
+PDF page 2:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase 
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 23A 
+Canceling Original Page No. 23A 
+TRANSMISSION SERVICE CHARGE (CONTINUED) 
+TCe = All other charges not recovered through TCd that the Company incurs to provide 
+transmission service (including ancillary service charges and all non-market-based 
+transmission service charges) to customers who receive default service from the Company. 
+These charges are all FERC-approved charges imposed by PJM on any basis other than 
+a kW basis. These charges are allocated to each customer class based upon the projected 
+kWh usage of that class, including estimated distribution system losses during the 
+computation year. 
+D = For the Large C&I – Primary customer class, the total of the monthly billing demands for 
+all customers in the class, projected for the computation year. For the Large C&I – 
+Transmission customer class, the total of the monthly contributions of all customers in 
+the class to the Company’s 5 coincident peaks used by PJM to establish such demand 
+– related charges. 
+E = Net over or undercollection of the TCe and TCd charges associated with the acquisition of 
+transmission service as of the end of the 12-month period ending September 30 
+immediately preceding the computation year, including applicable interest. Reconciliation 
+of the TSC will be conducted separately for each of the four customer classes. Beginning 
+with the reconciliation period ending April 30, 2013, the percentage of demand-related 
+costs assigned to each customer class will change monthly to reflect the class’ actual share 
+of default service peak load responsibility in that month.  Interest shall be computed monthly 
+from the month the over or undercollection occurs to the month in which the overcollection 
+is refunded or the undercollection is recouped. Interest on recoveries of overcollections 
+and undercollections shall be calculated at the prime rate for commercial borrowing, not to 
+exceed the legal rate of interest in effect on the last day of the month the over or 
+undercollection occurred, effective April 1, 2016. 
+S = The Company’s total retail KWH sales to customers in each customer class who 
+receive default service  under this tariff (including distribution losses) projected for the 
+computation year. 
+T= The total Pennsylvania gross receipts tax rate (exclusive of Part 2 of the State Tax 
+Adjustment Surcharge (STAS) within this tariff) in effect during the billing period, 
+expressed in decimal form. 
+The TSC shall be filed with the Pennsylvania Public Utility Commission (Commission) by 
+November 1 of each year. The TSC rate shall become effective for transmission service acquired 
+on behalf of default service customers and rendered to those customers on or after the following 
+December 1, unless otherwise ordered by the Commission, and shall remain in effect for a period 
+of one year, unless revised on an interim basis subject to the approval of the Commission. Upon 
+determination that a customer class’s TSC, if left unchanged, would result in a material over or 
+undercollection of all transmission service charges incurred or expected to be incurred, the 
+Company may file with the Commission for an interim revision of the TSC to become effective thirty 
+(30) days from the date of filing, unless otherwise ordered by the Commission. 
+
+PDF page 3:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase 
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 23B 
+Canceling Original Page No. 23B 
+TRANSMISSION SERVICE CHARGE (CONTINUED) 
+By November 1 of each year the company will file with the Commission the experienced net 
+over or under collection as described above. The reconciliation will include a calculation of the 
+application period over or under recoveries of transmission service costs. The reconciliation of the 
+TSC will be the difference between actual transmission service costs incurred and actual revenue 
+billed for the application period.  
+Minimum bills shall not be reduced by reason of the TSC, nor shall charges hereunder be a part 
+of the monthly rate schedule minimum. The TSC shall not be subject to any credits or discounts, 
+but Part 2 of the STAS shall apply. 
+Application of the TSC shall be subject to review and audit by the Commission at intervals it 
+shall determine.  The Commission shall review the reasonableness and lawfulness of the level of 
+charges produced by the TSC and the costs included therein. 
+Charges under the TSC for the period July 1, 2026, through November 30, 2026, as set 
+forth in the applicable Rate Schedules. 
+Customer Class Large C&I - 
+Transmission 
+Large C&I - 
+Primary 
+Small C&I Residential 
+Rate Schedule / 
+Charge 
+LP-5 and LP-6 LP-4 GS-1, GS-3, 
+and BL 
+RS and RTS (R)  
+Energy Rate 
+($/kWh) 
+0.03303 0.03326 
+Demand Rate 
+($/kW) 
+18.663 21.647 
+Small C&I –Street Lights
+Rate 
+Schedule/ 
+Charge 
+SA SM (R) SHS 
+(R) 
+SLE SE TS (R) 
+Nominal 
+Lumens Charge 
+Nominal 
+Lumens $/Lamp 
+Nominal 
+Lumens $/Lamp 
+Nominal 
+Lumens $/Fixture $/KWH $/Watt 
+HPS 
+9,500 
+2.167 
+$/Lamp 
+3,350 1.622 5,800 0.984 3,000 0.473 
+0.03303 0.02413 
+6,650 2.533 9,500 1.410 2,900 0.621 
+10,500 3.541 16,000 2.074 5,000 0.686 
+LED 
+4,300 
+0.509 
+$/Fixture
+20,000 5.608 25,500 3.742 4,750 0.857 
+34,000 9.562 50,000 5.873 8,000 1.094 
+51,000 13.215 12,750 2.041 
+20,000 3.165 

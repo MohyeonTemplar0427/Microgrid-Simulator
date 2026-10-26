@@ -1,0 +1,8 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowasmallbusinessbillguide.pdf?hash=E0C3D66D3601DBD6667E65FFD96C0B21&sc_lang=en
+Retrieved: 2026-10-25
+Method: Downloaded original official utility bill-guide PDF; visual bill panel reviewed; only non-identifying rate/billing facts retained.
+
+Official 2025 illustrated bill guide (document1312650,3/25), PDFpage2 visually verified. 600 generalservice sample,31days,1101kWh. Meter/account identifiers omitted.
+Winterenergy1101*.12041=$132.57; TBR1101*-.00592=-$6.52; EnergyCost1101*.0102=$11.23; EECR1101*.0014=$1.54; DRCR1101*.0023=$2.53; RTS1101*.03217=$35.42; basicservice31*.7562=$23.44. Subtotal$200.21; localoption1%=$2.00; state6%=$12.01; total$214.22.
+The illustration supports earlier generalservice DRCR .0023 and separateTBR treatment. It labels December31–January31 but EAC .0102 is the publishedFebruary2025factor; do not use an illustrative bill's date to establish the EAC assignment rule. It does not establish the whole effective window of the missing sixthDRCRsheet.
+Sample figure surrounds an explanatory note that annual EECR depends on approved program costs; it does not state a historical preceding DRCR start date.

@@ -22,6 +22,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 UTILITY_DOCS = {
+    "ppl_electric_pennsylvania": ("docs/PPL_Pennsylvania.md", "docs/utility_sources/ppl_pa/sources.json", "test/test_ppl_pa.py"),
+    "aep_ohio": ("docs/AEP_Ohio.md", "docs/utility_sources/aep_ohio/sources.json", "test/test_aep_ohio.py"),
+    "alliant_energy_iowa": ("docs/Alliant_Iowa.md", "docs/utility_sources/alliant_ia/sources.json", "test/test_alliant_ia.py"),
     "we_energies_wisconsin": ("docs/We_Energies_Wisconsin.md", "docs/utility_sources/we_energies_wi/manifest.json", "test/test_we_energies_wi.py"),
     "duke_energy_indiana": ("docs/Duke_Indiana.md", "docs/utility_sources/duke_in/manifest.json", "test/test_duke_in.py"),
     "dominion_energy_virginia": ("docs/Dominion_Virginia_General.md", "docs/utility_sources/dominion/va_general_2026/manifest.json", "test/test_dominion_va_general.py"),
@@ -187,7 +190,9 @@ def nc_eligibility(root):
 def unit_scope(utility, plan, supply, enabled):
     if not enabled:
         return "No executable-plan acceptance claim; rejection/catalog coverage only"
-    if utility in ("we_energies_wisconsin", "duke_energy_indiana"):
+    if utility in ("ppl_electric_pennsylvania", "aep_ohio"):
+        return "Independent dated ordinary default-supply/delivery/rider/tax benchmarks, effective-date and DST tests, numerical/symbolic parity and main-form queued-worker reconciliation; non-export representative studies, not customer-bill calibration"
+    if utility in ("we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         return "Independent dated base/rider/tax bill benchmarks, TOU/holiday/DST, eligibility, numerical/symbolic parity and main-form queued-worker reconciliation; no measured customer-bill calibration claim"
     if utility=="xcel_energy_minnesota":
         return "Independent dated non-demand base/rider/tax benchmarks, ordinary TOD observed holidays/DST and main-form queued-worker reconciliation; no customer-bill or full-year coverage claim"

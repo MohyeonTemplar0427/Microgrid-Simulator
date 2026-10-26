@@ -1,0 +1,9 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridertaxtaxadjustmentclause.pdf?hash=C322882BF894A3E416066B107F3B23F6&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Sheet 55 tenth revised, issued February 13, 2019, effective March 15, 2019: applicable taxes and fees pass through within the actual taxing jurisdiction, with statutory sales-tax exemptions preserved. Electricity subject to a franchise/user fee is exempt from LOST.
+Dubuque franchise 5%, authorized June 1, 2015. Cedar Rapids franchise 4%, authorized July 1, 2025, appears in sheet 56 seventeenth revised, issued April 29, 2025, effective May 28.
+Do not infer city boundaries or tax eligibility from weather coordinates, postal city, utility choice or county alone. Iowa DOR establishes state-tax exemption for residential energy and ordinary 6% commercial state tax. For an explicitly confirmed unincorporated Linn account, use its verified 1% local jurisdiction without adding a city franchise fee.

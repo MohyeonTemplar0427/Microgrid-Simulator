@@ -1,0 +1,7 @@
+Source: https://www.boonegov.com/egov/apps/document/center.egov?id=2461&view=item
+Retrieved: 2026-10-25
+Method: Downloaded original official municipal public-meeting PDF; source is a corrected utility bill; only redacted rate/billing facts retained.
+
+Original municipal AirportCommission public packet,35pages. PDFpage21 contains an explicit corrected Nov18–Dec19,2025 GS600 bill (31days,3520kWh), issued January2026, with correction reason incorrect rate. Account/meter/address details omitted.
+Winter3520*.12041=$423.84; EAC3520*-.00034=-$1.20; EECR3520*.0032=$11.26; DRCR3520*.0028=$9.86; RTS3520*.03196=$112.50; basicservice31*.7562=$23.44. Subtotal$579.70;1%franchise$5.80; state6%on$585.50=$35.13; corrected total$620.63.
+Some other uncorrected municipal packet bills use EECR.0014 in late2025, conflicting with the filed2025factor. This corrected bill supplies stronger corroboration for .0032; do not copy arbitrary billed rates as generally correct or treat a correction as a new tariff.

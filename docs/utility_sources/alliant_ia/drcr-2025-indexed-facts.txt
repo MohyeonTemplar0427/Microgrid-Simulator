@@ -1,0 +1,8 @@
+Source: https://www.alliantenergy.com/CustomerService/AlliantEnergyService/RatesandTariffs/-/media/1ED911B513B8409CB81FCACF4788AD28.ashx?hash=6175C1FFA8922A484C526F56C4E93AB0&la=en
+Retrieved: 2026-10-25
+Method: Historical official utility tariff public search-index text inspected; original bytes unavailable. URL must not be assumed immutable.
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Historical substitute seventh revised sheet 60.1. Issued May 7, 2025; header effective June 12. Body factors apply June 17, 2025: residential $0.0048/kWh; general service $0.0028/kWh. Earlier factor window remains unrecovered. The official January–February 2025 sample bill contains residential $0.0031/kWh, which proves that sample cycle only.
+Alternative indexed official URL: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderdrcrdemandresponsecostrecovery.pdf?hash=87D819FF055EAB452CE32798681C5820&la=en&sc_lang=en

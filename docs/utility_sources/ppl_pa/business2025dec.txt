@@ -1,0 +1,156 @@
+PDF page 1:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DISTRIBUTION 
+     
+BASE  As of 1/1/16 
+ 
+Rate 
+ 
+Customer Charge KW (Demand) 
+GS1  $22.00 / bill period $4.361 / kW 
+GS3  $60.00 / bill period $3.985 / kW 
+GH2  $22.00 / bill period $3.955 / kW 
+LP4  $169.80 / bill period $2.547 / kW 
+LP5  $994.00 / bill period - 
+ 
+SMART METER PHASE 2 (SMR2) 
+ 
+7/1/24  10/1/24  1/1/25  4/1/25  10/1/25 
+  
+GS1, GS3, GH2 
+ 
+$3.24  $3.13  $3.10  $3.26  $2.91  / bill period 
+LP4, LP5, LPEP 
+ 
+$68.41  $65.10  $64.18  $67.38  $60.16  / bill period 
+ 
+ 
+COMPETITIVE ENHANCEMENT (CER) 
+ 
+STORM DAMAGE EXPENSE (SDER)  1/1/23  1/1/24  1/1/25   
+  1/1/23  1/1/24  1/1/25   
+ 
+GS1, GS3, GH2  $(0.00019)  $0.00007  $0.00092  / kWh 
+All Rates  $(0.01)  $0.05  $(0.01)  / bill period 
+ 
+LP4*  $(25.64)  $9.13  $123.10  / bill period 
+         
+ 
+LP5*  $(20.93)  $7.13  $101.50  / bill period 
+         
+ 
+*Bills from 2016 will have 2 lines for proration of kWh and per bill SDER charge. 
+ 
+ 
+ACT 129 COMPLIANCE - PHASE 3 (ACR)  6/1/22  6/1/23  6/1/24  6/1/25   
+Energy Efficiency           
+GS1, GS3, GH2  $0.00219  $0.00315  $0.00243  $0.00166  / kWh 
+LP4, LP5, LPEP  $0.689  $0.081  $0.761  $1.057  / kW of the PLC  
+ 
+ 
+SYSTEM IMPROVEMENT CHARGE (DSIC) 
+  7/1/24  10/1/24  1/1/25  3/13/25  4/1/25  7/1/25 ¤  10/1/25 
+All Rates*  5.00%  5.00%  5.00%  7.43%  7.50%  7.50%  7.50% 
+* LP-5 is excluded from DSIC.  LPEP has been excluded from DSIC since 1/1/16. 
+  
+PA TAX ADJ SURCHARGE (STAS) 
+  1/1/23  1/1/24  1/1/25 
+All Rates  -0.134%  -0.208%  -0.280% 
+ 
+TAX CUTS AND JOBS ACT CREDIT (TCJA)  1/1/23  1/1/24  1/1/25 
+All Rates (% of Base Dist. Revenue)  -8.230%  -7.670%  -8.000% 
+DECEMBER 2025 
+
+PDF page 2:
+ 
+ 
+ 
+PPL ELECTRIC UTILITIES PRICE CHANGES | DECEMBER 2025 
+ 
+GENERATION 
+ 
+GENERATION SUPPLY CHARGE (GSC1) 
+ 
+12/1/24  6/1/25  12/1/25   
+GS1, GH2, GS3 Small & LP4 Small 
+ 
+$0.07458  $0.08956  $0.09379  / kWh 
+ 
+GSC1 Time-Of-Use (TOU) 
+ 
+12/1/24  6/1/25  12/1/25   
+GS1, GH2, GS3 Small & LP Small On-Peak 
+ 
+$0.08131  $0.12836  $0.10339  /kWh 
+GS1, GH2, GS3 Small & LP Small Off-Peak 
+ 
+$0.06744  $0.08098  $0.08484  /kWh 
+ 
+GENERATION SUPPLY CHARGE (GSC2) 
+ 
+6/1/23  6/1/24  6/1/25   
+REAL TIME PRICING - RTP is the POLR generation pricing for all GS3 Large, LP4 Large and 69KV rates 
+Capacity Price 
+ 
+$0.065  $0.068  $0.287  (kW of PLC per day)  
+PPL Adders to the kWh LMP: 
+ 
+       
+Admin * Under/Over Collection  
+$0.00912  $0.00392  -$0.00354  / kWh 
+ 
+ 
++  +  +   
+Supplier Portion 
+ 
+$0.00420  $0.00433  $0.01005  / kWh 
+ 
+ 
+=  =  =   
+TOTAL SUPPLY RISK FACTOR 
+ 
+$0.01332  $0.00825  $0.00651  / kWh 
+RTP Formula: Hourly Price = Gross Receipts Tax of 1.0626993*(((Supplier Risk Factor+LMP)*Loss Factor)*Usage) 
+Loss Factor: 3-phase = 1.0536482          12KV = 1.026824          69 KV = 1.0 
+ 
+TRANSMISSION 
+ 
+TRANSMISSION SERVICE CHARGE (TSC) 
+ 
+6/1/25  7/12/25  12/1/25   
+GS1, GS3, GH2 
+ 
+$0.03158  $0.03158  $0.03302  / kWh 
+LP4 
+ 
+$21.35  $21.35  $21.647  / kW 
+LP5, LPEP 
+ 
+$28.189  $56.378  $18.663  /kW of PLC 
+ 
+GEN/TRANS STATE TAX ADJ SURCHARGE (STAS) * 
+ 
+ 
+1/1/23  1/1/24  1/1/25 
+All Rates 
+ 
+0.001%  0.001%  0.001% 
+* This is not sales tax, but a state tax adjustment charge. 
+ 
+ 
+ 
+PPL Electric Utilities is committed to safely and reliably delivering power to the  
+businesses that fuel the local and regional economies of central and eastern  
+Pennsylvania. Our continuing investment in a stronger, more secure grid and our  
+dedication to customers positions us to provide the best possible customer experience. 
+pplelectric.com/business 
+1-888-220-9991 
+businessaccounts@pplweb.com 
+

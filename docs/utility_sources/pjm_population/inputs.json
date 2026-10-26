@@ -1,0 +1,152 @@
+{
+  "format_version": 1,
+  "research_date": "2026-10-25",
+  "purpose": "Indicative population footprint; not verified tariff-eligible people or a spatial population intersection",
+  "eia": {
+    "url": "https://www.eia.gov/electricity/data/eia861/zip/f8612024.zip",
+    "landing_url": "https://www.eia.gov/electricity/data/eia861/",
+    "vintage": "2024 final",
+    "archive_sha256": "77ce49c60ac5a6bad50c442fc401aad5404a21da875dc5cbaba353af5ede54de",
+    "workbook": "Sales_Ult_Cust_2024.xlsx",
+    "workbook_sha256": "78f0a24db2b3eced624311f14974906eb82595e3fed17d910ef3bc8fb755780e",
+    "sheet": "States",
+    "included_service_types": [
+      "Bundled",
+      "Delivery"
+    ],
+    "balancing_authority": "PJM",
+    "extract_file": "eia861_2024_pjm_residential_distribution.csv",
+    "extract_sha256": "4f87ebdf192799a5cfcdf58194260cb6596f6d29e2b974bb7184b9dc584d8f86",
+    "expected_account_total": 27756201,
+    "notes": [
+      "Energy-only supplier rows excluded to avoid counting the same delivery account twice.",
+      "EIA utility99999 BA/state adjustments retained in the denominator, including negative adjustments; no numerator allocation inferred.",
+      "Nine nonresidential-only rows marked dot for residential have residential0 validated against other-sector and total customer identities. Source notation retained.",
+      "2024 FirstEnergyPA company-level counts cannot identify the WestPenn district; those rows are not in the numerator."
+    ]
+  },
+  "pjm": {
+    "url": "https://www.pjm.com/m/About-PJM",
+    "reported_population": 67000000,
+    "vintage": "PJM public rounded headline verified2026-10-25",
+    "supporting_text": "PJM operates the electric grid that serves 67 million people across 13 states and the District of Columbia."
+  },
+  "household_size": {
+    "period": "2020-2024 ACS five-year as displayed in Census QuickFacts",
+    "variable": "Persons per household",
+    "access_method": "Official Census web-reader pages; direct CSV403 and Census API MissingKey were not used as data. No credentials loaded.",
+    "states": {
+      "IL": {
+        "persons": 2.46,
+        "url": "https://www.census.gov/quickfacts/fact/table/IL/HSD410224",
+        "supporting_text": "Persons per household, 2020-2024: 2.46"
+      },
+      "OH": {
+        "persons": 2.37,
+        "url": "https://www.census.gov/quickfacts/fact/table/OH/HSD410224",
+        "supporting_text": "Persons per household, 2020-2024: 2.37"
+      },
+      "PA": {
+        "persons": 2.39,
+        "url": "https://www.census.gov/quickfacts/fact/table/PA/HSD410224",
+        "supporting_text": "Persons per household, 2020-2024: 2.39"
+      },
+      "NJ": {
+        "persons": 2.62,
+        "url": "https://www.census.gov/quickfacts/fact/table/NJ/HSD410224",
+        "supporting_text": "Persons per household, 2020-2024: 2.62"
+      },
+      "VA": {
+        "persons": 2.52,
+        "url": "https://www.census.gov/quickfacts/fact/table/VA/HSD410224",
+        "supporting_text": "Persons per household, 2020-2024: 2.52"
+      },
+      "NC": {
+        "persons": 2.44,
+        "url": "https://www.census.gov/quickfacts/fact/table/NC/HSD410224",
+        "supporting_text": "Persons per household, 2020-2024: 2.44"
+      }
+    }
+  },
+  "included_utilities": [
+    {
+      "utility_id": 4110,
+      "label": "ComEd",
+      "states": [
+        "IL"
+      ],
+      "repository_keys": [
+        "comed"
+      ]
+    },
+    {
+      "utility_id": 13998,
+      "label": "Ohio Edison",
+      "states": [
+        "OH"
+      ],
+      "repository_keys": [
+        "firstenergy_ohio_edison"
+      ]
+    },
+    {
+      "utility_id": 14940,
+      "label": "PECO",
+      "states": [
+        "PA"
+      ],
+      "repository_keys": [
+        "peco"
+      ]
+    },
+    {
+      "utility_id": 15477,
+      "label": "PSE&G",
+      "states": [
+        "NJ"
+      ],
+      "repository_keys": [
+        "pseg"
+      ]
+    },
+    {
+      "utility_id": 19876,
+      "label": "Dominion Energy Virginia and North Carolina",
+      "states": [
+        "VA",
+        "NC"
+      ],
+      "repository_keys": [
+        "dominion_energy_virginia",
+        "dominion_energy_north_carolina"
+      ]
+    }
+  ],
+  "west_penn": {
+    "url": "https://www.papowerswitch.com/media/dsbp5oci/paps_numbers093024.pdf",
+    "source_sha256": "212f33585abe548c7151b0394522d016fe7a13334d857ee0bcc4f4bdee9a58fa",
+    "data_date": "2024-09-25",
+    "state": "PA",
+    "label": "West Penn rate district ONLY",
+    "residential_switched_accounts": 113656,
+    "reported_switched_fraction": 0.178,
+    "fraction_rounding_half_width": 0.0005,
+    "assumption": "Published17.8% is assumed rounded to nearest0.1percentage point. Infer total district accounts as113656/0.178; roundingbounds are not broader population uncertainty.",
+    "supporting_text": "West Penn Power9/25/24: Residential switching customers113,656;17.8% of customers;17.6% of load.",
+    "excluded_merged_utility_id": 66101
+  },
+  "sensitivity": {
+    "household_occupancy_relative_change": 0.1,
+    "description": "Illustrative sensitivity only; not a statistical confidence interval or validated utility-specific occupancy bound"
+  },
+  "alliant_effect_on_pjm": 0,
+  "limitations": [
+    "No utility/PJM population polygon intersection was performed.",
+    "Residential service accounts are an imperfect proxy for occupied households, especially master-metered dwellings, seasonal homes and group quarters.",
+    "Statewide household size is assumed representative of each utility subterritory; actual subterritory differences are unmeasured.",
+    "2024 customer data,2020-2024 household factors and current rounded PJM headline have different vintages.",
+    "This is the geography of implemented utilities, not the population on supported tariffs, supply arrangements, solar programs or verified rate dates.",
+    "No corporate gas or unrelated affiliate territories counted.",
+    "Alliant Iowa and other MISO/California utilities add no PJM numerator."
+  ]
+}

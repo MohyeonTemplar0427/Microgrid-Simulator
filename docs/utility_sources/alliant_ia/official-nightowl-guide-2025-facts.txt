@@ -1,0 +1,9 @@
+Official Alliant Energy Iowa Night Owl Bill Guide, original PDF
+Retrieved 2026-10-25 from current official Iowa billing page link.
+Page 2 visually verified: Rate 427, illustrated Jan 16-Feb 18, 2025 cycle, 33 days, 1566 kWh total.
+Energy Efficiency Programs Charge: USD 0.0009/kWh.
+Demand Response Programs Charge: USD 0.0031/kWh.
+Regional Transmission Service: USD 0.04077/kWh.
+Tax Benefit Rider Credit: USD -0.00789/kWh.
+Basic service: USD 0.5096/day.
+This utility-issued guide explicitly establishes prior rider applicability to new price code 427, omitted from the older EECR sheet's printed price-code list. It corroborates class mapping without borrowing the 400 rate merely from its residential label. Use filed base tariff sheets for TOU boundaries: the guide prose contains an inconsistent super-off-peak clock, so its prose is not used to define TOU timing. No customer identifiers retained.

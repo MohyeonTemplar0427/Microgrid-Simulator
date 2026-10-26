@@ -1,0 +1,15 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricgeneralserviceusage.pdf?hash=46A1D422EE2EF3B33D3232B72CC5C26A&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Sheets 22 (substitute fourteenth revised) and 23 (substitute twelfth revised); issued September 20, 2024; effective October 1, 2024.
+One nonresidential establishment adjacent to a distribution circuit of adequate capacity. The tariff uses a less-than-20,000 kWh criterion for 12 consecutive billing months; section 2.03 generally relates classification to monthly energy. Preserve utility-confirmed classification/history, rather than treating this as an annual 20,000 kWh limit. Existing enrolled customers may continue despite exceeding the criterion. No resale.
+Service: 60 Hz, 120/240 V single-phase, one meter, one point of delivery. Alternative service and three-phase require separate facts.
+Service charge $0.7562/day/meter. The $23 monthly figure is comparison only.
+600 energy: winter $0.12041/kWh; summer $0.16513/kWh.
+607 energy: summer on-peak $0.28232/kWh; winter off-peak $0.12041; summer off-peak $0.14116.
+Summer is June 1–August 31. On-peak is 2–7 p.m. CST Monday–Friday, excluding Independence Day; other hours off-peak. Minimum TOD term one year.
+Three-phase incremental charge $45/month or $1.4795/day/meter. No demand charge for 600/607; 707 and larger schedules are distinct.
+Riders: EAC, TAX, EEBC, EECR, DRCR, RTS, RCE, TBR. Optional programs, excess facilities and late-payment fees require separate account facts.

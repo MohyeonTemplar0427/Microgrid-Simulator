@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/outlook
+Retrieved: 2026-10-25
+Original binary SHA256: f2d0a904ca36abeef62d883871dbf1053605a7e3e282da448b2501e43b960e78
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+Official utility Iowa energy cost outlook retrieved October25,2026. It explicitly states that the Tax Benefit Rider ended October1,2025. It confirms base components remained flat in2025 and will remain flat in2026 after their October2024 implementation, under the base-rate moratorium. It does not state an arbitrary shifted-cycle allocation formula.

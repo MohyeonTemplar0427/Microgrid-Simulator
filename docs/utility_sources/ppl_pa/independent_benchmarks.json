@@ -1,0 +1,169 @@
+{
+  "benchmark_type": "Independent Decimal tariff calculation; not a measured customer statement",
+  "cases": {
+    "RS-2025-07": {
+      "import_kwh": 1000,
+      "measured_and_billed_peak_kw": null,
+      "billing_month": "2025-07",
+      "unrounded_lines": {
+        "distribution_customer": "15.58",
+        "distribution_energy": "50.49000",
+        "tcja_credit": "-3.9544000",
+        "distribution_dsic": "4.6586700000",
+        "distribution_state_tax_adjustment": "-0.18696795600000",
+        "generation_supply": "91.66000",
+        "transmission_service": "33.24000",
+        "supply_state_tax_adjustment": "0.0012490000",
+        "sales_tax": "0"
+      },
+      "rounded_lines": {
+        "distribution_customer": "15.58",
+        "distribution_energy": "50.49",
+        "tcja_credit": "-3.95",
+        "distribution_dsic": "4.66",
+        "distribution_state_tax_adjustment": "-0.19",
+        "generation_supply": "91.66",
+        "transmission_service": "33.24",
+        "supply_state_tax_adjustment": "0.00",
+        "sales_tax": "0.00"
+      },
+      "unrounded_total": "191.48855104400000",
+      "sum_of_rounded_lines_total": "191.49",
+      "references": [
+        "docs/utility_sources/ppl_pa/ (agent source pack)",
+        "PPL official RS composites July2025/June2026",
+        "PPL official business price history January2026",
+        "PPL filed DSIC/STAS/TCJA rider clauses"
+      ],
+      "ordering_rationale": "TCJA on base distribution only; DSIC on total distribution including applicable riders/credit, excluding STAS; STAS part1 on distribution plus DSIC; part2 on GSC+TSC; ordinary state-only business sales tax6% last. No GRT/PTC duplication."
+    },
+    "GS-1-2025-07": {
+      "import_kwh": 1000,
+      "measured_and_billed_peak_kw": 3,
+      "billing_month": "2025-07",
+      "unrounded_lines": {
+        "distribution_customer": "22",
+        "distribution_energy": "0",
+        "distribution_demand": "13.083",
+        "smart_meter": "3.03",
+        "competitive_enhancement": "-0.01",
+        "energy_efficiency": "1.66000",
+        "storm_damage": "0.92000",
+        "tcja_credit": "-2.80664",
+        "distribution_dsic": "2.84072700",
+        "distribution_state_tax_adjustment": "-0.114007843600",
+        "generation_supply": "89.56000",
+        "transmission_service": "31.58000",
+        "supply_state_tax_adjustment": "0.0012114000",
+        "sales_tax": "9.70465743338400"
+      },
+      "rounded_lines": {
+        "distribution_customer": "22.00",
+        "distribution_energy": "0.00",
+        "distribution_demand": "13.08",
+        "smart_meter": "3.03",
+        "competitive_enhancement": "-0.01",
+        "energy_efficiency": "1.66",
+        "storm_damage": "0.92",
+        "tcja_credit": "-2.81",
+        "distribution_dsic": "2.84",
+        "distribution_state_tax_adjustment": "-0.11",
+        "generation_supply": "89.56",
+        "transmission_service": "31.58",
+        "supply_state_tax_adjustment": "0.00",
+        "sales_tax": "9.70"
+      },
+      "unrounded_total": "171.44894798978400",
+      "sum_of_rounded_lines_total": "171.44",
+      "references": [
+        "docs/utility_sources/ppl_pa/ (agent source pack)",
+        "PPL official RS composites July2025/June2026",
+        "PPL official business price history January2026",
+        "PPL filed DSIC/STAS/TCJA rider clauses"
+      ],
+      "ordering_rationale": "TCJA on base distribution only; DSIC on total distribution including applicable riders/credit, excluding STAS; STAS part1 on distribution plus DSIC; part2 on GSC+TSC; ordinary state-only business sales tax6% last. No GRT/PTC duplication."
+    },
+    "RS-2026-06": {
+      "import_kwh": 1000,
+      "measured_and_billed_peak_kw": null,
+      "billing_month": "2026-06",
+      "unrounded_lines": {
+        "distribution_customer": "15.50",
+        "distribution_energy": "49.27000",
+        "tcja_credit": "0.00000",
+        "distribution_dsic": "4.85775000",
+        "distribution_state_tax_adjustment": "-0.2165423025000",
+        "generation_supply": "98.04000",
+        "transmission_service": "33.43000",
+        "supply_state_tax_adjustment": "0.0013147000",
+        "sales_tax": "0"
+      },
+      "rounded_lines": {
+        "distribution_customer": "15.50",
+        "distribution_energy": "49.27",
+        "tcja_credit": "0.00",
+        "distribution_dsic": "4.86",
+        "distribution_state_tax_adjustment": "-0.22",
+        "generation_supply": "98.04",
+        "transmission_service": "33.43",
+        "supply_state_tax_adjustment": "0.00",
+        "sales_tax": "0.00"
+      },
+      "unrounded_total": "200.8825223975000",
+      "sum_of_rounded_lines_total": "200.88",
+      "references": [
+        "docs/utility_sources/ppl_pa/ (agent source pack)",
+        "PPL official RS composites July2025/June2026",
+        "PPL official business price history January2026",
+        "PPL filed DSIC/STAS/TCJA rider clauses"
+      ],
+      "ordering_rationale": "TCJA on base distribution only; DSIC on total distribution including applicable riders/credit, excluding STAS; STAS part1 on distribution plus DSIC; part2 on GSC+TSC; ordinary state-only business sales tax6% last. No GRT/PTC duplication."
+    },
+    "GS-1-2026-06": {
+      "import_kwh": 1000,
+      "measured_and_billed_peak_kw": 3,
+      "billing_month": "2026-06",
+      "unrounded_lines": {
+        "distribution_customer": "22",
+        "distribution_energy": "0",
+        "distribution_demand": "13.083",
+        "smart_meter": "2.86",
+        "competitive_enhancement": "-0.01",
+        "energy_efficiency": "0.71000",
+        "storm_damage": "0.94000",
+        "tcja_credit": "0.000",
+        "distribution_dsic": "2.96872500",
+        "distribution_state_tax_adjustment": "-0.1323358647500",
+        "generation_supply": "94.43000",
+        "transmission_service": "33.02000",
+        "supply_state_tax_adjustment": "0.0012745000",
+        "sales_tax": "10.192239818115000"
+      },
+      "rounded_lines": {
+        "distribution_customer": "22.00",
+        "distribution_energy": "0.00",
+        "distribution_demand": "13.08",
+        "smart_meter": "2.86",
+        "competitive_enhancement": "-0.01",
+        "energy_efficiency": "0.71",
+        "storm_damage": "0.94",
+        "tcja_credit": "0.00",
+        "distribution_dsic": "2.97",
+        "distribution_state_tax_adjustment": "-0.13",
+        "generation_supply": "94.43",
+        "transmission_service": "33.02",
+        "supply_state_tax_adjustment": "0.00",
+        "sales_tax": "10.19"
+      },
+      "unrounded_total": "180.062903453365000",
+      "sum_of_rounded_lines_total": "180.06",
+      "references": [
+        "docs/utility_sources/ppl_pa/ (agent source pack)",
+        "PPL official RS composites July2025/June2026",
+        "PPL official business price history January2026",
+        "PPL filed DSIC/STAS/TCJA rider clauses"
+      ],
+      "ordering_rationale": "TCJA on base distribution only; DSIC on total distribution including applicable riders/credit, excluding STAS; STAS part1 on distribution plus DSIC; part2 on GSC+TSC; ordinary state-only business sales tax6% last. No GRT/PTC duplication."
+    }
+  }
+}

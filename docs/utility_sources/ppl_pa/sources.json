@@ -1,0 +1,582 @@
+{
+  "format_version": 1,
+  "utility": "ppl_electric_pennsylvania",
+  "review_date": "2026-10-25",
+  "sources": [
+    {
+      "id": "master2025jan",
+      "url": "https://www.pplelectric.com/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/master383-389.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "fa8230c1b444ad9cacb8907813424182bd6d5c817b28e34bb939533bc8e19036",
+      "bytes": 7281823,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        28,
+        29,
+        32,
+        33,
+        36,
+        46,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        82,
+        83,
+        84,
+        85,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        102,
+        103,
+        104,
+        105,
+        106,
+        109
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/master2025jan.txt",
+      "extracted_text_sha256": "567c66ac917ccd3a90689363ec47d7e2d3dbbdc72e9491566f95cba6a072e51b",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/master2025jan.pdf"
+    },
+    {
+      "id": "master2025oct",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2025/Oct/master400-401-posted-2025-10-1.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f65d499e098bd7cf72b17fd227aa835cf9cb4dbedd80bd81efe11dc55ebd2228",
+      "bytes": 2921311,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        90,
+        92,
+        104
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/master2025oct.txt",
+      "extracted_text_sha256": "8de1b5275a690b787ee9f74bcd029823323d39354f3e700cfaf14c574b6151bb",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/master2025oct.pdf"
+    },
+    {
+      "id": "master2026apr",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/Apr/master414-posted-2026-4-10.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "25f99167c6a3cb77afb7a7193107f32c1caeb22fbf26a0d82e5c74cf49305b6d",
+      "bytes": 8876518,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        46,
+        49,
+        84,
+        90,
+        91,
+        92,
+        103,
+        104,
+        109
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/master2026apr.txt",
+      "extracted_text_sha256": "6581c8497e168d0e9a4990ffa59471b172b703368d127b22414f54119c7b9830",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/master2026apr.pdf"
+    },
+    {
+      "id": "current-1",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Rule-8---Measurement-of-Service.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "1ffb6d06704e021221d97c14c1d6b85f7fd5d55a1714ba6022632ef3fbc5705a",
+      "bytes": 54089,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-1.txt",
+      "extracted_text_sha256": "20d930a7d5c1a7b340311145af86dd9626b686b5a60370627f4be381f6a8f65f",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-1.pdf"
+    },
+    {
+      "id": "current-2",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Rule-9---Billing-and-Payment-for-Service.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "e4b6a99e6e68f3c7e27c65e1114afa471aaf5dc3dafe3ba84dab5313f39cc679",
+      "bytes": 61044,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-2.txt",
+      "extracted_text_sha256": "0518d7ecab411c44065c90c4fac537f44ca6f02bbf0f55ff755503ffbd0a99f7",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-2.pdf"
+    },
+    {
+      "id": "current-3",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/October/RS-10-1-26.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f24d4678ff5e6ff965ea4fd9ab3031131e5d587b40822d31aeb14319f0145e03",
+      "bytes": 152958,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-3.txt",
+      "extracted_text_sha256": "11e1140a150992559a13c7d0e4710bc816e38082b8a609d4515111ba95632e27",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-3.pdf"
+    },
+    {
+      "id": "current-4",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/October/GS-1-10-1-26.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "0abd4c0fc96787f529543582f54e4a3d5817cfe7c71691ffb7619290393c2228",
+      "bytes": 151510,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-4.txt",
+      "extracted_text_sha256": "702c4dab68219bad463e18f43c7f6597f976f9bad2b5a166c1ed871be5f3b7f3",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-4.pdf"
+    },
+    {
+      "id": "current-5",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Rider-Matrix.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "0a15dbe7f3a59b3a857f4ffa005b55aad7558dafd383f410d5bf40509fb4d853",
+      "bytes": 48508,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-5.txt",
+      "extracted_text_sha256": "575dc18299c185174312bb00cf797bbce459e3314ae8d7522d4cace5c01f2526",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-5.pdf"
+    },
+    {
+      "id": "current-6",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/State-Tax-Adjustment-Surcharge.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "b4c8fda0aa128822f5ebba3fa8a3b3d10d6ef50f35e69902ed5603f5b2996d7c",
+      "bytes": 49982,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-6.txt",
+      "extracted_text_sha256": "87cab5fc44f3d600634543cd94355c2e7feea6eac346f1e659c69457877b3745",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-6.pdf"
+    },
+    {
+      "id": "current-7",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Transmission-Service-Charge.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "496c05c10ff4d4cbe120f8733ff2159adb525abec48a8f332c9f5ed7075016d2",
+      "bytes": 62762,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-7.txt",
+      "extracted_text_sha256": "fe8346ad9d21fa761121100fe6dd97bbfcf2510576f9b354cf2c7cee5f44e94d",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-7.pdf"
+    },
+    {
+      "id": "current-8",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Generation-Supply-Charge-1.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "5e786ab2845cca0ddce25eb24c43a3e6480ad51c47e2153a79d82632027bc300",
+      "bytes": 94715,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-8.txt",
+      "extracted_text_sha256": "be7bf0eda9476f4c9fb0936b9273752eb01568891c18345898b42f00791bb488",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-8.pdf"
+    },
+    {
+      "id": "current-9",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/October/Distribution-System-Improvement-Charge-DSIC-10-1-26.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "b251e4b2e1d476121962aee857c75f9a13d091388624a57471387279fe847327",
+      "bytes": 184986,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-9.txt",
+      "extracted_text_sha256": "6e392e9a2674ec8b333e0fd0aad6318069bbcde3fd1c205c67854307e0a761c7",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-9.pdf"
+    },
+    {
+      "id": "current-10",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/October/Storm-Damage-Expense-Rider-10-1-26.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "009a5b639ff104854448078e29f90e786b284f3c78560b44b14f1bda3b205c40",
+      "bytes": 228107,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        5
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-10.txt",
+      "extracted_text_sha256": "053b4081cf1df048d01b93ec8b1340bc15d41fd61ce158bf7782aa0dd3b3f572",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-10.pdf"
+    },
+    {
+      "id": "current-11",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/June/PTC_History-7-1-26.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "bd88c93ba846263590b195060d8441d3b8976b4cfb7efddbb52cf68c30ad1625",
+      "bytes": 102864,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-11.txt",
+      "extracted_text_sha256": "e9f5cb1dab399debc82b74329fd044836129be97925388953abec37810aad043",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-11.pdf"
+    },
+    {
+      "id": "current-12",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/May/Price-to-Compare-June-1-2026--November-30-2026.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "e6fb036446bd6d59bab69c4556b45ed40640103148633676f40c224aa7e93c0b",
+      "bytes": 99141,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-12.txt",
+      "extracted_text_sha256": "ca6b800da72a9415592cbb43d8da8fd991fc7e2632e3f0b2d3c02077748d458a",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-12.pdf"
+    },
+    {
+      "id": "current-13",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/June/PTC-July-1-2026--November-30-2026.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "5c8d4a43683fd91b374ef7a1929497aa1564e6c4b23c3b3a44d77b89fb7113bd",
+      "bytes": 97759,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-13.txt",
+      "extracted_text_sha256": "8759fc6f4e7117437b8c56dccb55efb67875c17a768f4eeee112c7a431de4d30",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-13.pdf"
+    },
+    {
+      "id": "current-14",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2025/Nov/PTC-December-1-2025--May-31-2026.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "2445a8bfcce4c418f4144109adbb9f6d43f2b5829d36c7df4a535d2111078e19",
+      "bytes": 74365,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-14.txt",
+      "extracted_text_sha256": "10cba6b73c17f27ef3877fced69718f9b423ac7c072f078fc22ac9a3e82e1f2b",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-14.pdf"
+    },
+    {
+      "id": "current-15",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2025/PTC-June-1-2025---November-30-2025---updtd---revised---7-12-25.pdf?sc_lang=en&hash=D4CDE7DF0F88FD54DAA377083EB2029B",
+      "retrieved_date": "2026-10-25",
+      "sha256": "41468fad5fae523fdd417dc71c5bd5f06cf136049af032b2794002a6bf4a0d6e",
+      "bytes": 333337,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-15.txt",
+      "extracted_text_sha256": "f3710057018490fa4fbd690902e09d2d2097035840a83273f82eeaef23b36eae",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-15.pdf"
+    },
+    {
+      "id": "current-16",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/General-Supplier-Reference-Information/2024/PTC-Dec-1-2024--May-31-2025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "ef0d32964cf9e2cc78946987b1e18eed5f842ee97f325ba7ef947409c907699f",
+      "bytes": 76943,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/current-16.txt",
+      "extracted_text_sha256": "85f6cb73778383217f1584c8619810ed10724f5ff4dc276ac57984ff5e765c8f",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/current-16.pdf"
+    },
+    {
+      "id": "rs2025apr",
+      "url": "https://www.pplelectric.com/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2025/RS--Residential-Service-3-25-25.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "73cbb9c8b1bd2bb833bb94b058de9780ea50149b7f88833122c2bf94632ecd44",
+      "bytes": 646378,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/rs2025apr.txt",
+      "extracted_text_sha256": "5a8a006253f35cef0e60273cee39c6f63c5556337c2f5b0a884e406b0b288c6f",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/rs2025apr.pdf"
+    },
+    {
+      "id": "rs2025jul",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2025/RS--Residential-Service-7-1-25.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "df7909f86f1742a2f3fb7bfa855d67033ab0c47a0c847b090b7316559e1760c4",
+      "bytes": 633602,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/rs2025jul.txt",
+      "extracted_text_sha256": "17430db34241706b2a772abbdd66fb21533a816ee80994ee36dd6a6733c8b972",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/rs2025jul.pdf"
+    },
+    {
+      "id": "rs2025oct",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2025/Oct/RS--Residential-Service-10-1-25.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f4fa1edc5bbdb97ef5339badd01806565e6a81557f9cc639bffabc9db6711fd4",
+      "bytes": 629515,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/rs2025oct.txt",
+      "extracted_text_sha256": "005408dbb5c2e3fd3888c6f64c5ea779fb87a181f9876507e9e489591fd85224",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/rs2025oct.pdf"
+    },
+    {
+      "id": "rs2026jan",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/RS--Residential-Service-1-1-26.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "5fe00d173fcffab4b918ef0b86f2bc4f18a1bbe7cb69feea09bdb76581ee37ba",
+      "bytes": 630609,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/rs2026jan.txt",
+      "extracted_text_sha256": "81d72808e26e60e89d8b81925ec5e5173a66a895a516c6d3c024abfa29dd40f7",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/rs2026jan.pdf"
+    },
+    {
+      "id": "rs2026jun",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/June/RS--Residential-Service-6-1-26.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "65d679a3c14866bfa60f23db0ade9eafc64c6d9a6a912e20b98ec499d0dce872",
+      "bytes": 620913,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/rs2026jun.txt",
+      "extracted_text_sha256": "86476c88f81ea92757deb4913e22b74081e9f981e2e266f8737024c54bb8b86c",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/rs2026jun.pdf"
+    },
+    {
+      "id": "rs2026jul",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/RS---Residential-Service.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "90aae7659715f578a0046d266eddba99dd1f9464d36d80392cecee8980591ac4",
+      "bytes": 57007,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/rs2026jul.txt",
+      "extracted_text_sha256": "3363bbff58364f96e2490ef07173c542cbb40c865f3f40393a8d3be68e127a71",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/rs2026jul.pdf"
+    },
+    {
+      "id": "business2026jan",
+      "url": "https://www.pplelectric.com/-/media/PPLElectric/At-Your-Service/Docs/Business-Customers/PPL-EU-Business-Account-Price-Sheet_01-01-2026.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "44ce336ae2d9de63383e56df5103cf8e3e22e7ba925c6c42535ef3185b3ed5ab",
+      "bytes": 270125,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/business2026jan.txt",
+      "extracted_text_sha256": "a90d3902543a839111d2f5c332b8ade1ed3aeaa744d5da86f8bad8705d6a14ce",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/business2026jan.pdf"
+    },
+    {
+      "id": "business2025apr",
+      "url": "https://www.pplelectric.com/-/media/PPLElectric/At-Your-Service/Docs/Business-Customers/PPL-EU-Business-Account-Price-Sheet04012025.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "101942b22f497a2a17dd0e76e295e97dc0bdbd0457381f60414e00e941c13632",
+      "bytes": 256324,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/business2025apr.txt",
+      "extracted_text_sha256": "d1283cd88f8bb18cceb42f9e1fb09821638d83e4b2583184365fb75f3882592c",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/business2025apr.pdf"
+    },
+    {
+      "id": "business2025dec",
+      "url": "https://www.pplelectric.com/-/media/PPLElectric/At-Your-Service/Docs/Business-Customers/PPL-EU-Business-Account-Price-Sheet12012025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "0495926b4b530ab04ddb9f0da5658d147691ac775f19476aa3344d9f7eb93d38",
+      "bytes": 270100,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/business2025dec.txt",
+      "extracted_text_sha256": "45aa42460d8e28723655210ef67970236eb93fc0f4b9d48cb612e4a3d423200d",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/business2025dec.pdf"
+    },
+    {
+      "id": "dsic2025mar",
+      "url": "https://www.pplelectric.com/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/Supplement-No-390--DSIC.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "1729fa5ae62f572e7de186e82a3da383f5c877a3a5204e5356a225313d8a410c",
+      "bytes": 192087,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/dsic2025mar.txt",
+      "extracted_text_sha256": "5cb3aa3b7a853e5d7e277bcc9043eca01837371f2ed65352039fee3ca9c065fb",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/dsic2025mar.pdf"
+    },
+    {
+      "id": "acr2025jun",
+      "url": "https://www.pplelectric.com/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2025/Supplement-No-394--ACR4.ashx",
+      "retrieved_date": "2026-10-25",
+      "sha256": "9c9ba1dc4505a68ca0cecf8306437d025704ef0c00c5ce3dae00d67e33471812",
+      "bytes": 353299,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/acr2025jun.txt",
+      "extracted_text_sha256": "a05d71aa4ff3e2d008b96711a952df4003fbd6b95e74b3b16f975cae6f0507fb",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/acr2025jun.pdf"
+    },
+    {
+      "id": "sder2026jul",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Storm-Damage-Expense-Rider.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "c4b87119c15d616de79675b83ac2c0bb8d35cdaf3eba87570f5ab83dffc11802",
+      "bytes": 74307,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        5
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/sder2026jul.txt",
+      "extracted_text_sha256": "fc7a28cc5ac42424dd1c8b6add8c05e48adff5e39ee4f70318ad40a91f61a521",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/sder2026jul.pdf"
+    },
+    {
+      "id": "act_129_compliance_rider_-_phase_4",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Act-129-Compliance-Rider---Phase-4.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "874ad8e3a83f9fbe992118375df386fb258a93f96ee73d5ac8990f8ae7a21063",
+      "bytes": 64168,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/act_129_compliance_rider_-_phase_4.txt",
+      "extracted_text_sha256": "15f0b8448b020e5e2d751db40e7ea6cd86ed321dc525fb0b1443d34f4ca9a3ad",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/act_129_compliance_rider_-_phase_4.pdf"
+    },
+    {
+      "id": "act_129_compliance_rider_-_phase_5",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Act-129-Compliance-Rider---Phase-5.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "7d87bbc248f6b116f7005eb96dac7712fee82e6dd055ebc471b6223ca5c356c8",
+      "bytes": 65906,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/act_129_compliance_rider_-_phase_5.txt",
+      "extracted_text_sha256": "44afd908205448a155e50d2f1e5bc35ea0a21c7441e0679617c64eaae48cb93c",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/act_129_compliance_rider\u00a0-\u00a0phase_5.pdf"
+    },
+    {
+      "id": "merchant_function_charge_rider",
+      "url": "https://www.pplelectric.com/site/-/media/PPLElectric/At-Your-Service/Docs/Current-Electric-Tariff/2026/August/Merchant-Function-Charge-Rider.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "05a108b349a85c4c91dcf8a3b6fca1102ea0c7bb1a8147f8a9d5bb18aaf27f98",
+      "bytes": 47229,
+      "retrieval_method": "Direct public HTTPS download; normal certificate verification; no credentials",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/ppl_pa/merchant_function_charge_rider.txt",
+      "extracted_text_sha256": "a98ce7d408d7039c84ee02575230ad768119331712f0d46dd0ed687c5a24b4d0",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/merchant_function_charge_rider.pdf"
+    },
+    {
+      "id": "pa_sales_tax",
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax",
+      "retrieved_date": "2026-10-25",
+      "sha256": "ef6291952996c3152a64f8f5e7b99719c5e6214922bcacf8c09d4d8a1cfaa9a9",
+      "bytes": 451784,
+      "retrieval_method": "Direct public HTTPS HTML; visible official tax text extracted with BeautifulSoup",
+      "extracted_text": "docs/utility_sources/ppl_pa/pa_sales_tax.txt",
+      "extracted_text_sha256": "bd3b2380bdc9c1902652587a69cc795587d96cef680e13c5dd5dfd410b2ce08c",
+      "original_cache_path": ".cache/ppl_aep_ohio/ppl/pa_sales_tax.html"
+    },
+    {
+      "id": "pa_residential_utilities_indexed",
+      "url": "https://revenue-pa.custhelp.com/app/answers/detail/a_id/3701/kw/residency%20status",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official web-reader indexed text; direct public download returned403; no original-file hash claimed",
+      "extracted_text": "docs/utility_sources/ppl_pa/pa_residential_utilities_indexed.txt",
+      "extracted_text_sha256": "50b0525633b6b2825e2ab148c078f0fa493d1208b8ea9e226932fbfa2be0f57e",
+      "limitation": "Original HTML bytes were unavailable; this factual excerpt is not an original-file transcription."
+    }
+  ]
+}

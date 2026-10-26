@@ -1,0 +1,116 @@
+Source: https://www.legis.iowa.gov/docs/iac/chapter/199.35.pdf
+Retrieved: 2026-10-25
+
+Current codified Iowa Administrative Code199chapter35, effective February26,2025 per ARC8847C/IABJanuary22,2025. Section35.9(2) says annual costs are filed byJune1 for a12month recovery period beginning at the firstutilitybillingmonth at least30days followingCommissionapproval. Section35.9(5) requires separate approved tariff sheets afternewfactorsapproved. Section35.9(6) requires factor, usage andcharge oncustomerbills.
+This establishes a recovery/billing-month rule, but not the effective date of the missing2024DRCRsixthsheet or how arbitrary shifted customercycles split June17,2025. Do not treat proposedARC8230C itself as enactedlaw; codifiedsource is final.
+Relevant exact pages follow:
+
+---PDF PAGE12---
+electric energy efficiency plans will depend on the specifics of the utility’s energy efficiency plan and 
+demand response plan filing as approved by the commission.
+g. The utility’s telephone number, website address, and email address the customer should use to 
+request an exemption from participation in the electric energy efficiency plan.
+h. A deadline by which customers must request an exemption. The deadline shall not be less than 30 
+days from the date of the notice.
+35.7(2) The utility shall deliver the approved notice to all affected customers within 30 days of 
+commission approval.
+[ARC 8847C, IAB 1/22/25, effective 2/26/25]
+199—35.8(476) Annual reporting requirements. Each utility shall file by May 1 of each year an energy 
+efficiency annual report that shall include the utility’s energy efficiency and demand response spending 
+compared to the approved budgets; actual demand and energy savings compared to the performance 
+standards approved by the commission; cost-effectiveness results for the prior calendar year; the results of 
+any monitoring and verification activities; and any additional information pertinent to the implementation 
+or performance of the energy efficiency or demand response plan for the previous calendar year, such as 
+changes in outside firms used to implement energy efficiency programs, updates on pilot projects, and other 
+information as required by commission order.
+[ARC 8847C, IAB 1/22/25, effective 2/26/25]
+199—35.9(476) Energy efficiency and demand response cost recovery. Each utility shall be allowed to 
+recover the authorized energy efficiency and demand response plan expenditures adjusted for any 
+overcollections or undercollections calculated on an annual basis. The utility may propose to recover the 
+portion of the costs of process-oriented industrial assessments related to energy efficiency.
+35.9(1) Accounting for costs. Each utility shall maintain accounting plans and procedures to account 
+for all energy efficiency and demand response costs.
+a. Each utility shall maintain a subaccount system, work order system, or accounting system that 
+identifies individual costs by each program.
+b. Each utility shall maintain accurate employee, equipment, material, and other records that identify 
+all amounts related to each individual energy efficiency or demand response program.
+35.9(2) Automatic adjustment mechanism. Each utility shall file by June 1 of each year energy 
+efficiency and demand response costs proposed to be recovered in rates for the 12-month recovery period 
+beginning at the start of the first utility billing month at least 30 days following commission approval.
+35.9(3) Energy efficiency cost recovery (EECR) and demand response cost recovery (DRCR) factors. 
+Each utility shall calculate an EECR factor to recover the costs associated with the energy efficiency plan, 
+and each electric utility shall also calculate a DRCR factor to recover costs associated with the demand 
+response plan. The utility shall calculate EECR/DRCR factors separately for each customer classification 
+or grouping previously approved by the commission. A utility shall not use customer classifications or 
+allocations of indirect or other related costs, other than those previously approved by the commission, 
+without filing for a modification of the energy efficiency and demand response plan and receiving 
+commission approval.
+a. EECR/DRCR factors shall be calculated according to the following formula:
+EECR/
+DRCR 
+factor
+=
+authorized recovery + 
+overcollection/undercollection
+annual sales units
+b. EECR/DRCR factor is the energy efficiency or demand response recovery amount per unit of 
+sales.
+c. Authorized recovery is the difference between the actual energy efficiency or demand response 
+expenditures by customer class for the previous calendar year and the approved energy efficiency or 
+demand response budget by customer class for the previous calendar year plus the approved energy 
+efficiency or demand response budget by customer class for the current calendar year.
+Utilities[199]Ch 35, p.12 IAC 2/5/25
+---PDF PAGE13---
+d. Overcollection or undercollection is the actual amount recovered by customer class for the 
+previous recovery period less the amount authorized to be recovered by customer class for the previous 
+recovery period. Overcollection or undercollection may also include adjustments ordered by the 
+commission in prudence reviews.
+e. Annual sales units are the estimated sales for the 12-month recovery period for customers who 
+have not requested an exemption as allowed by rule 199—35.7(476).
+35.9(4) Filing requirements. Each utility proposing to recover energy efficiency or demand response 
+costs through an automatic adjustment mechanism shall provide the following information:
+a. Restatement of the derivation of each EECR/DRCR factor previously approved by the 
+commission.
+b. New EECR/DRCR factors based on allocation methods and customer classifications and 
+groupings approved by the commission in previous proceedings.
+c. All worksheets and detailed supporting data used to determine new EECR/DRCR factors. 
+Information already on file with the commission may be incorporated by reference in the filing.
+d. A reconciliation comparing the amounts actually collected by the previous EECR/DRCR factors to 
+the amounts expended. Overcollection or undercollection shall be used to compute adjustment factors.
+e. If the commission has determined in a prudence review that previously recovered energy 
+efficiency or demand response costs were imprudently incurred, adjustment factors that shall include 
+reductions for these amounts.
+35.9(5) Tariff sheets. Upon approval of the new EECR/DRCR factors, the utility shall file separate 
+tariff sheets for commission approval to implement the EECR/DRCR factors in the utility’s rates.
+35.9(6) Customers’ bills. 
+a. Each electric and natural gas utility shall include the EECR factor, the customer’s usage, and the 
+dollar amount charge on the customer’s bill. Customers who receive one bill for electric and natural gas 
+service shall have a separate line item on the bill for the electric EECR and the natural gas EECR.
+b. Each electric utility shall represent the DRCR factor, the customer’s usage, and the dollar amount 
+charge on the customer’s bill.
+[ARC 8847C, IAB 1/22/25, effective 2/26/25]
+199—35.10(476) Modification of an approved plan. 
+35.10(1) An approved energy efficiency plan or an approved demand response plan and associated 
+budget may be modified if the modification is approved by the commission.
+a. Electric utilities may request a modification to an approved energy efficiency plan due to changes 
+in the funding as a result of customers requesting exemptions from the electric energy efficiency plan.
+b. Natural gas and electric utilities may request modification of an approved energy efficiency plan, 
+or electric utilities may request modification of an approved demand response plan, for any reason.
+c. The commission, on its own motion, may consider modification of the energy efficiency or 
+demand response plan and budget.
+35.10(2) All applications to modify shall be filed in the same docket in which the energy efficiency or 
+demand response plan was approved. All parties to the docket in which the energy efficiency or demand 
+response plan was approved shall be served copies of the application to modify and have 14 days to file an 
+objection or agreement. Objections should be specifically related to the contents of the modification. 
+Failure to file a timely objection shall be deemed agreement.
+35.10(3) Each application to modify an approved energy efficiency or demand response plan shall 
+include:
+a. A statement of the proposed modification and the party’s interest in the modification.
+b. An analysis supporting the requested modification.
+c. An estimated implementation schedule for the modification.
+d. A statement of the effect of the modification on attainment of the utility’s performance standards 
+and on projected results, including cost-effectiveness, of the utility’s implementation of the utility’s plan.
+35.10(4) If the commission finds that any reasonable grounds exist to investigate the proposed 
+modification, a procedural schedule shall be set and the commission shall take action within 90 days after 
+the modification request is filed.
+Utilities[199]IAC 2/5/25 Ch 35, p.13

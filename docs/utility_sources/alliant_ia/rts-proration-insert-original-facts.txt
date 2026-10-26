@@ -1,0 +1,5 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/rtschargeinsert.pdf?sc_lang=en
+Retrieved: 2026-10-25
+Original SHA256: 9a18e75e556ce25462cc4921e1f347d567724febb0dcda9b4be3c509c8ffb6cb
+
+Official utility RTS bill insert, document dated2017, explains that a cycle crossing an effective date may show prorated old and new RTS charges based on billing date and rate effective date. It is application-rule evidence, not independent2025 price evidence. The2025 actual government-published crossing-cycle bill corroborates total-cycle kWh multiplied by old/new day fractions. Existing complete-calendar2025 studies need no within-month RTS split because the rate changes September1. Arbitrary meter-cycle endpoint and rounding rules require separate validation.

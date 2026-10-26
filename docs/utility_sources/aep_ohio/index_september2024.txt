@@ -1,0 +1,2 @@
+Factual source notes, retrieved2026-10-25.
+21:400-1 revision4 effectiveJune1,2024: BasicTransmission residential4.38371c/kWh,non-demandGS2.34674c/kWh. 21:437-1 revision1 effectiveCycle1September2024: residentialEnergyEfficiency$0.0008624/kWh; nonresidentialnotapplicable. September2024originaldirectQAreturned404; filedsourcepublicindexedtextverified.

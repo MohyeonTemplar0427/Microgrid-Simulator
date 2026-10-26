@@ -1,0 +1,92 @@
+{
+  "research_date": "2026-10-25",
+  "reported_headline": "About 42% of PJM's population, approximately 28 million people, as an indicative household-based utility-footprint proxy",
+  "metric": "Estimated household population in implemented utility footprints divided by rounded PJM population",
+  "is_geospatial_population_count": false,
+  "is_tariff_eligible_population_count": false,
+  "numerator": [
+    {
+      "utility": "ComEd",
+      "state": "IL",
+      "residential_accounts": 3727675,
+      "persons_per_household": 2.46,
+      "estimated_household_population": 9170080.5,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size"
+    },
+    {
+      "utility": "Ohio Edison",
+      "state": "OH",
+      "residential_accounts": 957780,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 2269938.6,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size"
+    },
+    {
+      "utility": "PECO",
+      "state": "PA",
+      "residential_accounts": 1535818,
+      "persons_per_household": 2.39,
+      "estimated_household_population": 3670605.02,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size"
+    },
+    {
+      "utility": "PSE&G",
+      "state": "NJ",
+      "residential_accounts": 2056231,
+      "persons_per_household": 2.62,
+      "estimated_household_population": 5387325.220000001,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size"
+    },
+    {
+      "utility": "Dominion Energy Virginia and North Carolina",
+      "state": "VA",
+      "residential_accounts": 2383548,
+      "persons_per_household": 2.52,
+      "estimated_household_population": 6006540.96,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size"
+    },
+    {
+      "utility": "Dominion Energy Virginia and North Carolina",
+      "state": "NC",
+      "residential_accounts": 108656,
+      "persons_per_household": 2.44,
+      "estimated_household_population": 265120.64,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size"
+    },
+    {
+      "utility": "West Penn rate district ONLY",
+      "state": "PA",
+      "residential_accounts": 638516.8539325843,
+      "persons_per_household": 2.39,
+      "estimated_household_population": 1526055.2808988765,
+      "evidence": "District accounts estimated from published switched count divided by rounded switched percentage"
+    }
+  ],
+  "estimated_people": 28295666.220898878,
+  "denominator_people": 67000000,
+  "population_share": 0.42232337643132656,
+  "selected_residential_distribution_accounts": 11408224.853932584,
+  "pjm_residential_distribution_accounts": 27756201,
+  "residential_account_share_crosscheck": 0.4110153566740846,
+  "west_penn_accounts_rounding_only_bounds": [
+    636728.2913165266,
+    640315.4929577465
+  ],
+  "illustrative_occupancy_sensitivity_share": [
+    0.3800910387881939,
+    0.4645557140744592
+  ],
+  "sensitivity_is_confidence_interval": false,
+  "alliant_change_in_pjm_population": 0,
+  "limitations": [
+    "No utility/PJM population polygon intersection was performed.",
+    "Residential service accounts are an imperfect proxy for occupied households, especially master-metered dwellings, seasonal homes and group quarters.",
+    "Statewide household size is assumed representative of each utility subterritory; actual subterritory differences are unmeasured.",
+    "2024 customer data,2020-2024 household factors and current rounded PJM headline have different vintages.",
+    "This is the geography of implemented utilities, not the population on supported tariffs, supply arrangements, solar programs or verified rate dates.",
+    "No corporate gas or unrelated affiliate territories counted.",
+    "Alliant Iowa and other MISO/California utilities add no PJM numerator."
+  ],
+  "source_inputs_sha256": "6ca7e115efa3c46980e2b5125609a3a5c1e2afdb8f5a18cf312922f2aea2f864",
+  "source_extract_sha256": "4f87ebdf192799a5cfcdf58194260cb6596f6d29e2b974bb7184b9dc584d8f86"
+}

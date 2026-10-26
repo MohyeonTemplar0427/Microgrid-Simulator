@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridertbrtaxbenefitrider.pdf?hash=47F0CF0DB8FFCB227C7740CBB0696CBB&sc_lang=en
+Retrieved: 2026-10-25
+Original binary SHA256: 22407a3ffd4d99f9d551e8d64e306dee759686cc306e52d18b59d78d85062634
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+Sheets88 revision14 and89 revision10; issued September20,2024, effective October1,2024. Monthly credit factors for all bills in a12-month period: residential400/407/427/507 minus0.00789 USD/kWh; non-residential GS600/607/707 minus0.00592 USD/kWh. The mechanism says it is reflected as part of the Energy Cost Adjustment, but the separate factor is absent from the published EAC totals and is a separate line in the official sample bill. The official utility outlook explicitly says this TBR ended October1,2025. Calendar billing months January–September2025 qualify; October–December do not. Arbitrary shifted-cycle transition allocation is not established here.

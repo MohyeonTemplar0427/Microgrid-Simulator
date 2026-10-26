@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/eacsummary.pdf?hash=A8CA5D89FF3EB558FB8AC66EC66DE142&sc_lang=en
+Retrieved: 2026-10-25
+Original binary SHA256: 5f20858b938aacddb1453c7b6147aefec2b29f99232479dd187d700f541ea616
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+All twelve 2025 designated billing-month factors are identical for Residential and Non-Residential GS. USD/kWh, January through December: 0.01160, 0.01020, 0.00020, -0.01100, -0.01050, 0.00180, 0.01240, 0.01810, 0.01976, 0.01496, 0.00666, -0.00034. The footnote says the September 2025 onward totals include the 0.00006/kWh RCE charge. Do not charge RCE again.

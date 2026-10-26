@@ -85,6 +85,12 @@ existing regional driver. No solver proof or OpenDSS check is relaxed.
 
 The launcher forwards the driver's repeatable `--utility`, `--plan`, `--period`,
 custom date bounds, `--include-va-history`, `--include-ciep` and `--ciep-inputs`.
+For AEP Ohio, `--aep-rate-zone ohio_power` or
+`--aep-rate-zone columbus_southern` selects the explicit legacy retail district
+for its historical matrix. The option requires AEP Ohio in a `--regional`
+selection and enters the immutable execution and request identity. It does
+not infer a district from the site or pricing node; other utilities' requests
+remain unchanged. Use a separate output directory for a different district.
 `--allow-we-duke-provisional` explicitly selects and accepts the documented
 We Energies/Duke Indiana 2025 rate assumptions. It is off by default, enters
 the immutable execution/resume selection, and does not enable other utilities

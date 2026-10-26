@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricresidentialserviceusage.pdf?hash=980EAC1EFC2A19F140DBB78FD02BBF11&sc_lang=en
+Retrieved: 2026-10-25
+Original binary SHA256: ade842236e6b93a9e1187d6168a7e1db28dbde900ee36cf97c298b7866b7c79e
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+Original binary confirms Substitute15th Sheet20 and Substitute36th Sheet21, effective October1,2024. Codes400/407/427 and the daily0.5096 USD service charge remain the posted tariff. Summer is June1–August31; TOD is fixed CST under the stated account interpretation. The official utility outlook independently confirms base components remained flat in2025 and2026. No separate2025 base-price change is indicated. Conditions and prices are otherwise those preserved in residential-400-407-427-facts.txt.

@@ -19,7 +19,10 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"we_energies_wisconsin":(43.05,-88.25,"Hypothetical unincorporated Waukesha County, Wisconsin site; Wisconsin Electric service and tax jurisdiction independently confirmed, not a map finding"),
+SITES={"ppl_electric_pennsylvania":(40.63,-75.61,"Hypothetical unincorporated Lehigh County, Pennsylvania site; PPL service, ordinary default supply and tax jurisdiction are explicit account assumptions, not a map finding"),
+       "aep_ohio":(40.22,-83.03,"Hypothetical unincorporated Delaware County, Ohio site; Ohio Power Company service, legacy rate zone and absence of municipal charges require separate account confirmation"),
+       "alliant_energy_iowa":(42.10,-91.46,"Hypothetical rural Linn County, Iowa site; Interstate Power & Light service and unincorporated tax jurisdiction are explicit account assumptions, not a map finding"),
+       "we_energies_wisconsin":(43.05,-88.25,"Hypothetical unincorporated Waukesha County, Wisconsin site; Wisconsin Electric service and tax jurisdiction independently confirmed, not a map finding"),
        "duke_energy_indiana":(39.70,-86.40,"Hypothetical Plainfield/Hendricks County, Indiana site; Duke Indiana service, local charges and Eastern-clock account independently confirmed, not a map finding"),
        "xcel_energy_minnesota":(45.42,-93.83,"Hypothetical unincorporated Sherburne County, Minnesota site; NSP service and tax jurisdiction independently confirmed, not a map finding"),
        "ameren_missouri":(38.49,-92.16,"Hypothetical unincorporated Cole County, Missouri site; Ameren service and tax jurisdiction independently confirmed, not a map finding"),
@@ -108,6 +111,12 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
         request["operating_contract"]["renewable_only_charging"]=True
+    if utility in ("alliant_energy_iowa", "aep_ohio") and not residential:
+        # An explicitly small-office reference, not automatic classification
+        # from a simulated monthly/annual load or the default larger office.
+        request["solar"]["dc_capacity_kw"]=5.
+        request["pv_capacity_kw"]=4.
+        request["battery"].update(capacity_kWh=10.,energy_kWh=5.,max_charge_kw=3.,max_discharge_kw=3.)
     return request
 
 
@@ -309,7 +318,7 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana"):
+    if utility in ("ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")

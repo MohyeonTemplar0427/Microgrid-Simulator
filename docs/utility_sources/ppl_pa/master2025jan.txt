@@ -1,0 +1,2146 @@
+PDF page 28:
+PPL Electric Utilities Corporation
+Supplement No. 42
+Electric Pa. P.U.C. No. 201
+Fifth Revised Page No. 10B
+ Canceling Fourth Revised Page No. 10B
+(C) Indicates Change
+Issued: December 22, 2004 Effective: January 1, 2005
+RULES FOR ELECTRIC SERVICE
+RULE 6A - STAND-BY SERVICE
+FOR QUALIFYING FACILITIES
+A. APPLICATION STAND-BY SERVICE
+(1) The Company will supply Stand-by Basic Utility Supply Service under terms of this Rule
+to:  (a) Qualifying Facilities (QFs) as defined in the Public Utility Regulatory Policies Act of 1978, or
+(b)
+a customer that contracts with a QF and that must be served under the requirements of either
+federal or state law.
+(2) Stand-by Basic 
+Utility Supply Service is provided only where the Company has available
+capacity and facilities adequate for the service requested and only pursuant to a power purchase or
+interconnection agreement with the Company.
+(3) Customers selecting Rule 6A do not qualify for the Net Service provision of Rule 11.
+B. TYPES OF STAND-BY SERVICE AVAILABLE
+(1) Supplementary Power is electric energy 
+or capacity supplied by the Company and
+regularly used in addition to that energy or capacit y supplied by that QF.  All energy or capacity
+supplied by the Company under this rule shall be Supplementary Power unless it is provided as
+Back-up Power or Maintenance Power as defined below.
+(2) B ack-up Power is electric energy or capacity supplied by the Company to replace (C)
+energy 
+or capacity regularly supplied by the QF's  equipment when such equipment is not available
+during 
+an outage other than prescheduled maintenance or fuel supply disruptions.  An outage is
+defined as the forced interruption of the QF’s entire generation output.  Back-up Power shall be
+limited to 1,314 hours during the most recent consecutive twelve-month billing periods.  
+Any
+additional power supplied above the 1,314 hour limit shall be billed as Supplementary Power.  The
+QF must provide the Company with a written notification of the use of Back-up Power within seven
+business days after conclusion of the use.  This notification must include the day and time at which
+the use of Back-up Power began, the reason for the usage, and the actual duration of the use of
+Back-up Power.
+(3) Maintenance Power is electric energy or capacity supplied by the Company during a
+prescheduled maintenance outage of the QF's generating equipment.  Maintenance Power is
+available for not more than 70 days per year and must be scheduled during the periods March 16 to
+May 31, and September 16 to November 30.  The QF must confirm with the 
+Company in writing 60
+days before receiving such power and indicate the required capacity and proposed duration of
+Maintenance Power use.  The required capacity and proposed duration of Maintenance Power use
+can be changed after the 60-day notice is given, but before the outage occurs, by mutual written
+agreement between the Company and the QF.  The QF must provide the Company a written
+notification of the use of Maintenance Power within seven business days after the conclusion of the
+use.  This notification must include the day and time at which the use of Maintenance Power began
+and the actual duration of the use of Maintenance Power.
+C. INTERCONNECTED AND PARALLEL OPERATION
+The QF shall comply with all Company requirements concerning interconnected or parallel
+operations.  These requirements are on file with the Commission as part of the Company's annual
+PURPA Section 210 filing and/or are contained in power purchase and interconnection agreements
+between the Company and QFs.
+(Continued)
+
+PDF page 29:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Eighth Revised Page No. 10C 
+Canceling Sixth and Seventh Revised Page No. 10C 
+Issued: December 18, 2015 Effective: January 1, 2016 
+RULE 6A - STAND-BY SERVICE 
+F OR QUALIFYING FACILITIES (CONTINUED) (C)
+D. I
+NTERRUPTIBLE OPTION
+Back-up Power is available on an I nterruptible basis to QFs with generators rated in excess of
+500 KW.  I nterruptible Back-up Power may be i nterrupted when, in the Company's opinion, any 
+generation, transmission, or distribution capacity limitations exist or during periods of economic 
+load control.  Whenever possible, the QF will be notified in advance of a probable interruption and 
+the estimated duration of the interruption.  If the QF fails to interrupt, a penalty of $24.95 per KW 
+shall be billed for each KW that has not been interrupted, in addition to applicable Back -up Power 
+charges.  T he Company will notify the QF by telephone at the conclusion of the interruption.  A  
+credit of $0.35/KW for Service at 480 volts or less, $0.30/KW for Service at 12,470 volts, $0.25/KW 
+for Service at 69,000 volts or higher will be applied to the QF's monthly bill for each KW interrupted 
+in any month in which an i nterruption is requested.  N o credits will be applied if the QF fails to 
+interrupt all Back-up Power. 
+E. R
+ATES FOR STAND-BY SERVICE
+(1) Supplementary Power is metered and billed separately under the Company's applicabl e
+g
+eneral service rate schedule. 
+(2) (a)  Back-up Power is billed separately.  The billing is based on KW demand and KWH
+registered on the Company's meters.  Where such actual KW demand use exceeds 
+the KW specified under paragraph G, such excess KW and, on a percentage basis, 
+the associated KWH shall be billed as Supplementary Power.  When metered KW 
+demand use is not available, the KW demand billed will be based on the KW of 
+Back-up Power specified under paragraph G.  When metered KWH use is not 
+available, the KWH energy billed under the Back -up Power rates will be calculated 
+by multiplying the KW of Back-up Power specified under paragraph G by the number 
+of hours of the unscheduled outage. 
+(b) The QF will pay a Monthly Reservation Charge equal to the KW of Back -up Power
+specified under paragraph G multiplied by the Back -up Power capacity charge.  T he
+m
+onthly minimum bill shall be t he greater of the Monthly Reservation Charge or
+charges for actual Back-up Power usage.
+(c) Back-up Power will be billed using the following charges: (C)
+Service at 
+480 Volts 
+ or  Less  
+Service at 
+12,470 Volts 
+Service at 
+69,000 Volts 
+  or  Higher  
+Distribution Charge $60.00 (I) 
+$3.985/KW (D) 
+$169.80 
+$2.547/KW (I) 
+$994.00 
+$0.000/KW 
+(
+Continued) 
+
+PDF page 32:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Eighth Revised Page No. 11 
+Canceling Sixth and Seventh Revised Page No. 11 
+(C) Indicates Change
+Issued: December 18, 2015 Effective: January 1, 2016 
+RULES FOR ELECTRIC SERVICE (C) 
+RULE 7 - TEMPORARY SERVICE 
+A. TEMPORARY SERVICE
+(
+1) Temporary service is service for less than one year or for a year or more when Company (C) 
+must install facilities that will be us ed solely for a s ervice that is known to be limited in duration. 
+Service is supplied for not less than one m onth at the applicable rate schedule subject to the 
+provisions of this rule.  I n no ev ent is service billed for a t otal period of less than one month. 
+Temporary service also includes seasonal service, which is service for less than one year, for which 
+the Company is requested to leave the facilities in place for subsequent reconnection in following 
+years. 
+(
+2) The customer pays, in advance, a non-refundable temporary connection charge equal to the  (C)
+Company's estimated engineering installed cost and net removal cost of all necessary facilities other 
+than transformer, service drop, and metering, required to provide the temporary service.  Where it  is 
+necessary to install and r emove a t ransformer, service drop and m eter, or to energize facilities 
+already in place, the customer also pays a non- refundable connection and di sconnection charge 
+representing the cost of performing this work.  The Company m ay require that the customer pay the 
+connection and disconnection charge in advance. 
+(
+3) Company has the option to supply service without the application of this rule for prearrang ed
+t
+ests or demonstrations. 
+(
+4) The Company may remove all facilities used solely to supply temporary service upon
+di
+scontinuance of service by the customer. 
+(
+5) The provisions in this rule for temporary service apply to annually recurring service; however,
+they do not apply for service to permanent residences on a residential service rate schedule. 
+
+PDF page 33:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Sixth Revised Page No. 12 
+Canceling Fourth and Fifth Revised Page No. 12 
+(C) Indicates Change
+Issued: December 18, 2015 Effective: January 1, 2016 
+RULES FOR ELECTRIC SERVICE (C) 
+RULE 8 - MEASUREMENT OF SERVICE 
+A. LOCATION AND METHOD OF MEASUREMENT
+(
+1) The customer provides free of expense to Company, at a l ocation designated by Company, a
+s
+uitable place for the Company meters which is readily accessible to Company employees at all 
+reasonable hours. 
+(
+2) The Company installs and maintains the metering equipment, unless otherwise allowed by t he
+C
+ommission.  Where energy is metered at a point other than the point of delivery or at a voltage other 
+than the supply voltage, readings of the meters are corrected to conform to measurement at the point of 
+delivery and voltage supply. 
+B
+. METER INSTALLATIONS
+S
+ervice at each point of delivery is metered through one or  more meters as required by t he
+appl
+icable rate schedules.  Measurements from metering equipment for separate points of delivery are 
+never combined for billing purposes except temporarily pending completion of necessary changes in 
+Company's facilities. 
+ 
+In residential and c ommercial complexes and m ultiple occupancy buildings connected after 
+May 21, 1980, each independent occupant is separately metered and bi lled by the Company as an 
+individual customer unless redistribution of service is authorized by the Company.  The Company does 
+not provide service to two or more customers through a single meter except as specifically provided for 
+in Tariff Rule 5F or the applicable rate schedule. 
+C. U
+NMETERED SERVICE
+T
+he Company, at its option, may determine kilowatt  hours and bi lling demands by computati on
+i
+nstead of by measurement for installations having a fixed load or demand value controlled to operate for 
+a definite number of hours during a billing period.  An electric service contract is required for billing this 
+unmetered service. 
+D. M
+ETER TESTING (C) 
+T
+he testing and adj ustment of meters  are made in accordance with any applicable law and any
+regulation.  The company may require customers to pay a fee of $35.00 for a meter test. 
+E
+. DETERMINATION OF DEMAND
+(1
+) The fractional part of the demand billing unit specified in the rate schedule in excess of t he
+m
+inimum is taken as a whole when equal to one- half or more, otherwise, the fractional part is 
+disregarded. 
+(2
+) Where the rate schedule provides that the demand is determined by quantities supplied duri ng
+t
+wo or more periods of use, not more than one such period is taken from any one day's measurements 
+that apply to such determination. 
+(3
+) Where the charges are based on a connected load, the customer's connected load is determined
+by
+ inspection whenever Company deems necessary.  Company will estimate the connected load of any 
+customer who does not permit Company's representative to make such inspection. 
+(4
+) The Company’s electric meters record average demand every 15 minutes or hourly and resets        (C) 
+the register to zero after each monthly billing cycle.  The determination of demand excludes power factor 
+correction. 
+(Continued) 
+
+PDF page 36:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Eighth Revised Page No. 13A 
+Canceling Sixth and Seventh Revised Page No. 13A 
+(I) Indicates Increase (D) Indicates Decrease (C) Indicates Change
+Issued: December 18, 2015 Effective: January 1, 2016 
+RUL E 9 - BILLING AND PAYMENT FOR SERVICE (CONTINUED)    (C) 
+D. PAYMENT
+(
+1) Bills are considered as received by customer when delivered via the U.S. Postal Service or mailed (C) 
+electronically to the premises where the service is supplied or an address mutually agreed upon.  Delay in the 
+receipt of or failure to receive bill does not extend the due date. 
+(2) Bills may be pai d during business hours at any commercial office or collection agency of t he
+C
+ompany authorized to receive payments. 
+(3) Payment of bills by mail will be accepted as paid when postmarked before midnight on the due date (C) 
+or when received by the Company within five days after the due date.   Payments of bills that are electronically 
+transmitted to the Company will be accepted as paid on the date of the actual receipt of payment. 
+(4) Payment of bills after the due dat e specified on t he bill is subject to a late payment charge, as
+provided for in the applicable rate schedule. 
+(5) The customer is responsible for payment for use up to discontinuance or termination of service.
+(6) In the event of discontinuance or termination of service at a residence or dwelling, the Company may
+transfer any unpaid balance to any other residential account of the same ratepayer, or in the event of 
+termination, to a third-party guarantor's account. 
+(7) Regular employees who are head of  a f amily and m ainly responsible for the maintenance of t he
+pr
+emises they occupy may secure up t o 50% reduction in their bills for ser vice under Residential Rate 
+Schedule RS in lieu of other benefits available to other employees.  This option is in the process of elimination 
+and is limited to employees who are presently receiving such reduction and continue to live and work in the 
+area previously served by the former Tariff Electric Pa. P.U.C. No. 196 (Scranton). 
+(8) Payments which are insufficient to pay for both a balance due for prior use and billing for current us e
+ar
+e first applied to the balance due f or prior use, except when an unpaid bill is a di sputed bill or when a 
+payment plan for an overdue balance is agreed upon. 
+E. BU
+DGET BILLING
+B
+udget billing is available upon request for service under residential and general service rate applications
+except for temporary, seasonal, and s peculative service.  Budget billing may start in any month, for new or 
+existing customers, and may be discontinued upon request at which time any difference between budget billing 
+and billing based on actual use becomes due and pay able.  I n any month when the amount billed for the 
+previous billing period is overdue, budget billing may be t erminated; any difference owed the Company is 
+immediately due, and bills thereafter are rendered based on metered use. 
+W
+hen a residential customer elects budget billing, the Company estimates the bills over a 10- month, 11-
+month or 12- month period to eliminate, to the extent possible, seasonal fluctuations in utility bills. The 
+Company shall review accounts at least three times during the optional billing period.  At the conclusion of the 
+budget billing year, a r esulting reconciliation amount exceeding $100, but less than $300, shall be, at the 
+request of the customer , amortized over a 6 -month period. Reconciliation amounts exceeding $300 shall be 
+amortized over at least a 12- month period, at the request of the customer.  Shorter amortization periods are 
+permissible at the request of the customer. 
+W
+hen a non-residential customer elects budget billing, the Company bills the customer each month an 
+amount equal to one- twelfth of the estimated annual charges under the rate schedule.  The monthly charge is 
+adjusted, as required, so that total payments at the end of the budget billing cycle approximately equal actual 
+charges.  W hen billing based on actual use exceeds charges at the end of the twelfth month, the excess is 
+added to regular billing in equal increments over the succeeding four months with no penalty. 
+ E
+ach month, interest at the rate of one- twelfth of the average of 1- year Treasury Bills for the months of 
+September, October, and November of the previous year is applied to funds in the customer's account which 
+are the result of payments for the billed amount in excess of actual charges for service to date.  No interest is 
+charged when there is a negative balance. 
+(Continued) 
+
+PDF page 46:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 388 
+Electric Pa. P.U.C. No. 201 
+Forty-Second Revised Page No. 16 
+Canceling Forty-First Revised Page No. 16 
+ 
+(I)  Indicates Increase (D)  Indicates Decrease (C)  Indicates Change  
+Issued: December 17, 2024 Effective: January 1, 2025  
+ 
+STATE TAX ADJUSTMENT SURCHARGE 
+STATE TAX ADJUSTMENT SURCHARGE  (C) 
+ In addition to the charges and credits provided for in this tariff, a two-part surcharge will be 
+charged for all service rendered on and after the effective date of this provision.  
+• Part 1 will include Capital Stock Tax, Corporate Income Tax, Public Utility Realty Tax, and 
+Gross Receipts Tax, which will be applied to the Distribution component of the bill.  Effective 
+January 1, 2025, this part of the surcharge will be a negative 0.280%. (D)  
+• Part 2 will include the Gross Receipts Tax, which will be applied to all other components of 
+the bill.  Effective January 1, 2025, this part of the surcharge will be a positive 0.001%. (C) 
+Each part of the State Tax Adjustment Surcharge will be recomputed using the elements 
+prescribed by the Commission in its regulations at 52 Pa. Code §69.51, et seq. and at 52 Pa. Code 
+§54.91, et seq.: 
+• on December 17, 2024, and each year thereafter until the surcharge is rolled into base rates, (C) 
+ and 
+• whenever the Company experiences a material change in any of the taxes used in 
+calculation of the surcharge due to a change in the applicable tax rates, or in the basis of 
+calculating such tax rates, or due to changes in its state tax liability arising under  
+66 Pa. C. S. §§2806 (g), 2809(c) or 2810 (c). 
+The recalculation will be submitted to the Commission within 10 days after the occurrence of the 
+event which occasions such recomputation or as prescribed in the Commission’s regulations  
+at 52 Pa. Code §54.91, et seq.  If the recomputed surcharge is less than the one in effect, the utility 
+will, or if the recomputed surcharge is more than the one in effect the utility may, submit with such 
+recomputation a tariff or supplement to reflect such recomputed surcharge.  The effective date of 
+such tariff or supplement shall be 10 days after filing or as prescribed in the Commission’s 
+regulations at 52 Pa. Code §54.91, et seq. 
+TAX INDEMNIFICATION 
+If the Company becomes liable, under Section 2806(g) or 2809(c) of the Public Utility Code, 66 
+Pa. C.S. §§ 2806(g) and 2809(c), for any Pennsylvania state taxes not paid by an electric generation 
+supplier, the non-tax -compliant electric generation supplier shall indemnify the Company for the full 
+amount of additional state tax liability imposed upon it by the Pennsylvania Department of Revenue 
+due to the failure of the electric generation supplier to pay, or remit to the Commonwealth, the tax 
+imposed on the electric generation supplier’s gross receipts under Section 1101 of the Tax Report 
+Code of 1971 or Chapter 28 of Title 66. 
+ 
+ 
+
+PDF page 49:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 386 
+Electric Pa. P.U.C. No. 201 
+Twenty-Fifth Revised Page No. 18 
+Canceling Twenty-Fourth Revised Page No. 18 
+ 
+(I)  Indicates Increase    (D)  Indicates Decrease    (C)  Indicates Change  
+Issued:  December  17, 2024 Effective:  January 1, 2025 
+ 
+                  UNIVERSAL SERVICE RIDER (C) 
+The Universal Service Rider (USR) charge, shall be applied to each kilowatt-hour supplied to      
+customers, who take distribution service under Rate Schedules RS and RTS(R) of this tariff.  The USR 
+charge provides for recovery of the cost s, except internal administrative costs (i.e., employee wages 
+and benefits) , associated with universal service programs  provided by the Company  to residential 
+customers.  The State Tax Adjustment Surcharge included in this Tariff is applied to charges under 
+this Rider.  
+ 
+      Beginning January 1, 2025 and continuing through December 31, 2025, the USR charge will        (C) 
+be $0.01111/kwh.  For subsequent years, the USR charge shall be filed with the Pennsylvania Public  (I)  
+Utility Commission (Commission) by December 21 of the previous year.   The USR charge shall become 
+effective for service rendered on or after the following January 1, unless otherwise ordered by the 
+Commission, and shall remain in effect for a period of one year, unless revised on an interim basis 
+subject to the approval of the Commission. Upon determination that a USR charge , if left unchanged, 
+would result in a material over or under -collection of all USR costs incurred or expected to be incurred 
+during the current 12-month period, the Company may file with the Commission for an interim revision of 
+the USR charge to become effective thirty (30) days from the date of filing, unless otherwise ordered by 
+the Commission. 
+ 
+ The Company will file with the Pennsylvania Public Utility Commission by December 21 of    
+each year an annual reconciliation of the USR revenue recovery during the immediately preceding 
+application period pursuant to 66 Pa. C.S. §1307.  The reconciliation shall become effective for service 
+rendered on and after January 1 and shall remain in effect for a period of one year, or until new USR 
+rates are approved by the Commission.    Interest on overcollections and undercollections  shall be 
+computed monthly at the appropriate rate, as provided for in Section 1308(d) of the Public Utility Code, 
+from the month the over or undercollection occurs to the effective month that the overcollection is 
+refunded or the undercollection is recouped.  
+ 
+The Company shall file a report of collections under the USR within thirty (30) days following  
+the conclusion of each computation- year quarter. These reports will be in a form prescribed by the 
+Commission.  
+ 
+Application of the USR shall be subject to review and audit by the Commission at intervals that 
+it shall determine.  The Commission shall review the level of charges produced by the USR charge  
+and the costs included therein.  
+ 
+ A description of the Company's Universal Service and Energy Conservation Plan for the           
+period 2017 through 2019  period is attached to this tariff as Appendix A. 
+ 
+ 
+ 
+ 
+ 
+
+PDF page 50:
+PPL Electric Utilities Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+ Second Revised Page No. 18H 
+Canceling Original and First Page No 18H 
+ 
+ 
+Issued: December 18, 2015   Effective: January 1, 2016  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (THIS PAGE INTENTIONALLY LEFT BLANK) 
+
+PDF page 51:
+PPL Electric Utilities Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Second Revised Page No. 18I 
+Canceling Original and First Page No. 18I 
+ 
+  
+Issued: December 18, 2015  Effective: January 1, 2016  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (THIS PAGE INTENTIONALLY LEFT BLANK) 
+ 
+
+PDF page 52:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 334 
+Electric Pa. P.U.C. No. 201 
+Sixth Revised Page No. 19L.2 
+Canceling Fifth Revised Page No. 19L.2 
+(C) Indicates Change
+Issued:  March 17, 2022 Effective:  February 24, 2022 
+ NET METERING FOR RENEWABLE CUSTOMER-G ENERATORS (C) 
+P
+URPOSE 
+This Rider sets forth the eligibility, terms and conditions applicable to Customers with installed 
+qualifying renewable customer-owned, generation using a net metering system.   
+APPL
+ICABILITY (C) 
+This Rider applies to renewable customer -generators served under Rate Schedules RS, 
+GS-1, GS -3, and LP -4 who install a device or devices which are, in the Company’s j udgment, 
+subject to Commission review, a bona fide technology for use i n generating electricity from 
+qualifying Tier I or Tier II alternative energy sources , pursuant to the Alternative Energy Portfolio 
+Standards Act, 73 P.S. §§ 1648.1 – 1648.8 (“AEPS Act”) or Commission regulations, and which will 
+be operated in parallel wit h the Company’s system.  This Rider is available to installations where 
+any portion of the electricity generated by the renewable energy generating system offsets part or 
+all of the customer-generator’s requirements for electricity. 
+A r
+enewable customer-generator is a non-utility owner or operator of a net metered distributed 
+generation system with a nameplate capacity of not greater than 50 kilowatts , if installed at a 
+residential service (RS), or not larger than 3,000 kilowatts at other customer service locations (Rate 
+Schedules GS-1, GS-3 and LP-4), except for Custome rs whose system s are above 3 megawatts 
+and up to 5 megawatts who make their systems available to operate in parallel with the Company 
+during grid emergencies, as defined by the regional transmission organization, or where a microgrid 
+is in place for the purpose of maintaining critical infrastructure, such as homeland security 
+assignments, emergency services facilities, hospitals, traffic signals, wastewater treatment plants or 
+telecommunications facilities, provided that technical rules for operating genera tors interconnected 
+with facilities of the Company have been promulgated by the Institute of Electrical and Electronic 
+Engineers (“IEEE”) and the Commission.   
+Q
+ualifying renewable energy  installations are limited to Tier I and Tier II alternative energy  
+sources, as defined by the AEPS Act and the Commission’s r egulations.  The Customer’s 
+equipment must conform to the Commission’s Interconnection Standards and Regulations , 
+pursuant to the AEPS Act.  This Rider is not applicable when the source of supply i s service 
+purchased from a neighboring electric utility under Borderline Service. 
+S
+ervice under this Rider is available upon request to renewable customer-generators on a 
+first-come, first-served basis as long as the total rated generating capacity installed by renewable 
+customer-generator facilities does not adversely impact service to other Customers and does not 
+compromise the protection scheme(s) employed on the Company’s electric distribution system.     
+ (
+Continued) 
+
+PDF page 53:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 125 
+Electric Pa. P.U.C. No. 201 
+Fifth Revised Page No. 19L.3 
+Canceling Third and Fourth Revised Page No. 19L.3 
+ 
+(C) Indicates Change  
+Issued:  December 31, 2012 Effective:  January 1, 2013 
+ 
+   NET METERING FOR RENEWABLE CUSTOMER-GENERATORS (Continued) (C) 
+ 
+METERING PROVISIONS 
+ A Customer may select one of the following metering options in conjunction with service 
+under applicable Rate Schedule RS, GS-1, GS-3, or LP-4. 
+ 
+1. A customer -generator facility used for net metering shall be equipped with a single bi -
+directional meter that can measure and record the flow of electricity in both directions at the 
+same rate. A dual-meter arrangement may be substituted for a single bi -directional meter at 
+the Company’s expense. 
+  
+2. If the customer-generator's existing electric metering equipment does not meet the requirements 
+under Option (1) above, the Company shall install new metering equipment for the customer -
+generator at the Company's expense.  Any subsequent metering equipment change 
+necessitated by the customer -generator shall be paid for by the customer -generator.  The 
+customer-generator has the option of utilizing a qualified meter service provider to install 
+metering equipment for the measurement of generation at the customer-generator’s expense. 
+ 
+Additional metering equipment for the purpose of qualifying alternative energy credits owned by 
+the customer-generator shall be paid for by the customer -generator.  The Company shall take 
+title to the alternati ve energy credits produced by a customer -generator where the customer -
+generator has expressly rejected title to the credits.  In the event that the Company takes title to 
+the alternative energy credits, the Company will pay for and install the necessary metering 
+equipment to qualify the alternative energy credits.  The Company shall, prior to taking title to 
+any alternative energy credits, fully inform the customer-generator of the potential value of those 
+credits and options available to the customer-generator for their disposition.   
+ 
+3. Meter aggregation on properties owned, or leased and operated, by a customer-generator shall 
+be allowed for purposes of net metering.  Meter aggregation shall be limited to meters located 
+on properties within two (2) miles of the boundaries of the customer-generator’s property.  Meter 
+aggregation shall only be available for properties located within the Company’s service territory.  
+Physical meter aggregation shall be at the customer -generator's expense.  The Company shall 
+provide the necessary equipment to complete physical aggregation. If the customer -generator 
+requests virtual meter aggregation, it shall be provided by the Company at the customer -
+generator's expense. The customer -generator shall be responsible only for any i ncremental 
+expense incurred by the Company to process the customer -generator’s account on a virtual 
+meter aggregation basis. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (Continued) 
+
+PDF page 54:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 275 
+Electric Pa. P.U.C. No. 201 
+Eighth Revised Page No. 19L.4 
+Canceling Seventh Revised Page No. 19L.4 
+ 
+(C) Indicates Change  
+Issued:  May 20, 2019 Effective:    June 1, 2019  
+ 
+    NET METERING FOR RENEWABLE CUSTOMER-GENERATORS (Continued)     
+BILLING PROVISIONS: 
+ The following billing provisions apply to default serv ice customer-generators in conjunction with   (C) 
+service under applicable Rate Schedules RS, GS-1, GS-3, or LP-4.      
+           
+     
+1.    The customer-generator will receive a credi t for each kilowatt-hour received by the Company 
+up to the total amount of elec tricity delivered to the Custom er by the Company during the 
+billing period at the full retail rate consistent  with Commission regulations.  If a customer-
+generator supplies more electricity to the Company than the Company delivers to the 
+customer-generator in a given billing period, the excess kilowatt hours shall be carried forward 
+and credited against the custome r-generator’s usage in subsequent billing per iods at the full 
+retail rate.  Any excess kilowa tt hours will continue to accumulate until the end of the PJM 
+planning period ending May 31 of each year.  On  an annual basis consis tent with the PJM 
+planning period, the Company will compensate the custome r-generator for kilowatt-hours 
+received from the customer-generator in excess of the kilowatt hours delivered by Company to 
+the customer-generator during t he preceding year at the Com pany’s Rate Schedule Price To 
+Compare consistent with Co mmission regulations.  Compensat ion will also occur if the 
+customer changes rate schedules or shopping status.  The custom er-generator is responsible 
+for the customer charge, demand charge and other applicable charges under the applicable 
+Rate Schedule. 
+ 
+2. If the Company supplies more kilowatt-hours of electricity than the customer-generator 
+facility feeds back to the Company’s system during the billing period, all charges of the 
+appropriate rate schedule shall be applied to the net kilowatt-hours of electricity that the 
+Company supplied.  The customer-generator is responsible for the customer charge, 
+demand charge and other applicable charges under the applicable Rate Schedule. 
+3. For customer-generators involved in virtual meter aggregation programs, a credit shall be 
+applied first to the meter through which the generating facility supplies electricity to the 
+Company’s distribution system, then through the remaining meters (for the customer-
+generator’s account) equally at each meter’s designated rate under the applicable Rate 
+Schedule.  Virtual meter aggregation is the combination of readings and billing for all 
+meters, regardless of rate class, installed on properties owned, or leased and operated, by 
+a customer-generator by use of the Company’s billing process, rather than through 
+physical rewiring of the customer-generator’s  owned or leased property for a physical, 
+single-point of contact.  The customer-generators are responsible for the customer charge, 
+demand charge and other applicable charges under the applicable Rate Schedule.  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+(Continued) 
+ 
+ 
+ 
+
+PDF page 55:
+PPL Electric Utilities Corporation 
+Supplement No. 125 
+Electric Pa. P.U.C. No. 201 
+Second Revised Page No. 19L.4A 
+Canceling First Revised Page No. 19L.4A 
+ 
+(C) Indicates Change  
+Issued:  December 31, 2012 Effective:  January 1, 2013 
+ 
+    NET METERING FOR RENEWABLE CUSTOMER-GENERATORS (Continued) (C) 
+NET METERING PROVISIONS FOR SHOPPING CUSTOMERS 
+1. Customer-generators may take net metering services from EGSs that offer such 
+services. 
+2. If a net -metering customer takes service from an EGS, the Company will credit the 
+customer for the distribution charge for each kilowatt hour produced by a Tier I or Tier II 
+resource installed on the customer -generator’s side of the electric revenue meter, up to 
+the total amount of kilowatt -hours delivered to the customer by the Company during the 
+billing period.  If a customer -generator supplies more electricity to the electric 
+distribution system than the EDC delivers to the customer -generator in a given billing 
+period, the excess kilowatt hours shall be carried forward and credited against the 
+customer-generator’s usage in subsequent billing periods at the Company’s distribution 
+rates.  Any excess kilowatt hours at the end of the PJM planning period will not carry 
+over to the next year for distribution purposes.  The customer -generator is responsible 
+for the customer charge, demand charge and other applicable charges under the 
+applicable Rate Schedule. 
+ 
+3. If the Company delivers more kilowatt -hours of electricity than the customer -generator 
+facility feeds back to the Company’s system during the billing period, all charges of the 
+applicable rate schedule shall be applied to the net kilowatt -hours of electricity that the 
+Company delivered.  The customer -generator is responsible for the customer charge, 
+demand charge and other applicable charges under the applicable Rate Schedule. 
+ 
+4. Pursuant to Commission regulations, the credit or compensation terms for excess 
+electricity produced by customer-generators who are customers of EGSs shall be stated 
+in the service agreement between the customer-generator and the EGS. 
+5. If a customer-generator switches electricity suppliers, the Company shall treat the end of 
+the service period as if it were the end of the year. 
+ 
+APPLICATION 
+ Customer-generators seeking to receive service under the provisions of this Rider must 
+submit a written application to the Company demonstrating compliance with the Net Metering Rider 
+provisions and quantifying the total rated generating capacity of the customer-generator facility.  
+ 
+MINIMUM CHARGE 
+ The Minimum Charges under Rate Schedules RS, GS -1, GS -3, and LP -4 apply for 
+installations under this Rider. 
+ 
+RIDERS 
+ Bills rendered by the Company under this Rider shall be subject to the charges stated in any 
+other applicable Rider. 
+ 
+ (C) 
+
+PDF page 56:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 275 
+Electric Pa. P.U.C. No. 201 
+Original Page No. 19L.4B 
+ 
+ 
+(C) Indicates Change  
+Issued:  May 20, 2019 Effective:    June 1, 2019  
+ 
+NET METERING FOR RENEWABLE CUSTOMER-GENERATORS (Continued) 
+ 
+ 
+ The following billing provisions apply to Time-of-Us e customer-generators in conjunction with    (C)    
+service under applicable Rate Schedules RS, GS-1, GS-3 (<100kW), or LP-4 (<100kW).   
+               
+   
+1. The customer-generator will receive a credit for each kilowatt-hour received by the Company up 
+to the total amount of electricity delivered to the Customer by the Co mpany during the billing 
+period at the full retail rate consistent with  Commission regulations.  Excess generation supplied 
+by a customer-generator will be recorded on an hour ly basis, maintaining an active record of 
+kilowatt hours produced and consum ed at the customer-generator s premise. If a customer-
+generator supplies more electricity to the Com pany than the Company delivers to the customer-
+generator in a given billing period, the ex cess kilowatt hours shall be carried forward and 
+credited against the customer-gener ator’s usage in subsequent billi ng periods at the full retail 
+rate.  If, in a subsequent billing period, a custom er consumes more el ectricity than produced, 
+kilowatt hours will be pulled from the customers bank on a first in first out basis. Any excess 
+kilowatt hours will continue to accumulate unt il the end of the PJM planning period ending May 
+31 of each year.  On an annual bas is consistent with the PJM planning period, the Company will 
+compensate the customer-generator for all remain ing kilowatt-hours in the customer’s bank, at 
+the generation portion of the time-of-use rate when the excess generation was put into the bank.  
+The customer-generator is responsible for the customer charge,  demand charge and other 
+applicable charges under the applicable Rate Schedule. 
+  
+2. If the Company supplies more kilowatt-hours of electricity than the customer-generator 
+facility feeds back to the Company’s system during the billing period, all charges of the 
+appropriate rate schedule shall be applied to the net kilowatt-hours of electricity that the 
+Company supplied.  The customer-generator is responsible for the customer charge, 
+demand charge and other applicable charges under the applicable Rate Schedule. 
+3. Customer-generators involved in virtual metering programs are not eligible for the TOU  
+Program. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(Continued) 
+ 
+
+PDF page 57:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Second Revised Page No. 19L.5 
+Canceling Original and First Revised Page No. 19L.5 
+ 
+(C)  Indicates Change  
+Issued: December 18, 2015                                              Effective: January 1, 2016 
+ 
+  GREEN POWER OPTION (C) 
+ 
+AVAILABILITY 
+Subject to the limitations described below, service under this voluntary option is available to all  (C) 
+customers who receive Basic Utility Supply Service under Rate Schedules RS, RTS(R), GS -1,  
+GS-3, BL, SA, SM(R), SHS, SLE, SE, TS(R), and GH-2(R).  Customers who elect to purchase 
+Green Power Credits under this option will be subject to the charges described below. 
+ 
+DEFINITIONS 
+Green Power – Electric energy generated from renewable resources that are located within P JM 
+Interconnection, LLC (PJM) and qualify as Alternative Energy Sources under the Alternative Energy 
+Portfolio Standards (AEPS) Act.  For purposes of the Green Power Option, Customers will not be 
+purchasing the capacity and energy generated by the Alternative Energy Sources, but instead, will 
+be purchasing Green Power Credits which will be retired on their behalf. 
+ 
+Green Power Credits  – Alternative Energy Credits, as that term is defined in the AEPS Act, 
+generated by wind and hydroelectric facilities that are located within PJM and qualify as Alternative 
+Energy Sources.   
+ 
+Green Power Block  – The number of Green Power Credits that are produced by the generation of 
+100 kWh of Green Power. 
+ 
+APPLICATION 
+Customers may elect to purchase any whole number of Green Power Blocks per month, at the rate 
+set forth below. 
+ 
+The Customer may initiate participation, change the number of Green Power Blocks selected or 
+may terminate participation in the Green Power Option effective as of the Customer’s next 
+scheduled meter reading date, provided the Company has received at least sixteen (16) days ’ prior 
+notice. 
+ 
+If a Customer fails to pay the Monthly Green Power Charges for two consecutive billing periods, that 
+Customer's participation in the Green Power Option will be terminat ed and any Green Power Blocks 
+that the Customer selected, but did not pay for, will be returned to the Company. 
+ 
+If the Customer pays for Green Power Blocks, and the Company is unable to provide those blocks, 
+the Company will refund the Customer’s payment in full in the next billing period.   
+ 
+RATES AND BILLING 
+The charge for each Green Power Block is $2.50 per month. 
+ 
+The Green Power Charge is in addition to all other charges billed under the Customer's applicable 
+Rate Schedule.  Customers will be bi lled for the fixed number of Green Power Blocks that they 
+select regardless of actual energy use during the billing period. 
+ 
+The Green Power Charge will be set out separately on the Customer's bill. 
+ 
+(Continued) 
+
+PDF page 58:
+PPL Electric Utilities Corporation 
+Supplement No. 72 
+Electric Pa. P.U.C. No. 201 
+Original Page No. 19L.6 
+ 
+ 
+(C)  Indicates Change  
+Issued: August 13, 2009 Effective:  August 14, 2009 
+ 
+GREEN POWER OPTION (Continued) 
+ 
+TERM AND CONDITIONS 
+ 
+The Green Power Option is offered on a month-to-month bas is.  The Company reserves the right to withdraw 
+this Option upon thirty (30) days’ written notice to the Customer. 
+ 
+The total number of Green Power Blocks available for pur chase by Customers will be limited to the lesser of 
+3.3 million Green Power Blocks or the number of Green Power Blocks available to the Company. 
+ 
+The Green Power Option will terminate no later than May 31, 2013. 
+ 
+
+PDF page 59:
+PPL Electric Utilities 
+Corporation 
+ 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Twelfth Revised Page No. 19M 
+Canceling Tenth and Eleventh Revised Page No. 19M 
+ 
+(I)  Indicates Increase (D)  Indicates Decrease (C)  Indicates Change 
+Issued: December 18, 2015  Effective: January 1, 2016   
+ 
+  METERING AND BILLING CREDIT RIDER (C) 
+PURPOSE 
+ This rider provides for Distribution Charge credits when an Electric Generation Supplier 
+licensed by the Commission provides metering, meter reading, and/or billing and collection service 
+to a customer in lieu of the Company. 
+ 
+APPLICATION 
+ This rider applies to the Distribution Charges included in each Rate Schedule included in this 
+Tariff. 
+ 
+NET MONTHLY DISTRIBUTION CHARGE CREDIT (C) 
+Rate Schedule Metering 
+ 
+Meter Reading 
+ 
+Billing and Collection 
+ 
+RS $ 1.97 (I) $    0.17 (I)    $      2.34 (D) 
+ Separate Water Heating Service   1.97 (I) 0.17 (I) 2.34 (D) 
+RTS (R)   1.97 (I) 0.17 (I) 2.34 (D) 
+GS-1  4.08 (D) 0.17 (I) 2.34 (D) 
+ Space Conditioning and Water Heating  4.08 (D) 0.17 (I) 2.34 (D) 
+ Volunteer Fire Co./Sr. Citizen Centers   1.97 (I) 0.17 (I) 2.34 (D) 
+GS-3  4.08 (D) 0.17 (I) 2.34 (D) 
+ Space Conditioning and Water Heating  4.08 (D) 0.17 (I) 2.34 (D) 
+ Volunteer Fire Co./Sr. Citizen Centers   1.97 (I) 0.17 (I) 2.34 (D) 
+LP-4 55.57 (D) 0.17 (I) 2.34 (D) 
+ Space Conditioning and Water Heating  4.08 (D) 0.17 (I) 2.34 (D) 
+LP-5 272.54 (D) 0.17 (I) 2.34 (D) 
+LPEP 272.54 (D) 0.17 (I) 2.34 (D) 
+BL  4.08 (D) 0.17 (I) 2.34 (D) 
+SA   2.34 (D) 
+SM(R)   2.34 (D) 
+SHS   2.34 (D) 
+SLE   2.34 (D) 
+SE   2.34 (D) 
+TS(R)   2.34 (D) 
+GH-2(R)  4.08 (D) 0.17 (I) 2.34 (D) 
+Standby Service - 480 Volts or Less  4.08 (D) 0.17 (I) 2.34 (D) 
+Standby Service - 12,470 Volts 55.57 (D) 0.17 (I) 2.34 (D) 
+Standby Service - 69,000 Volts or Higher 272.54 (D) 0.17 (I) 2.34 (D) 
+ 
+ 
+
+PDF page 60:
+PPL Electric Utilities 
+Corporation 
+ 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Twelfth Revised Page No. 19Z 
+Canceling Tenth and Eleventh Revised Page No. 19Z 
+ 
+ 
+  
+Issued: December 18, 2015 Effective:   January 1, 2016 
+ 
+                                                    TRANSMISSION SERVICE CHARGE                                             (C)  
+ T he Transmission Service Charge (TSC) shall be applied to charges for electricity supplied to  (C) 
+customers who receive Basic  Utility Supply Service (“BUSS”), as defined in Rule 1B(1), from the Company 
+under this Tariff.   
+ 
+ The TSC shall be computed separately for each of the following four customer classes:  
+ 
+ (1) Residential: Consisting of Rate Schedules RS and RTS (R),  
+ (2) S mall Commercial and Industrial: Consisting of Rate Schedules GS-1, GS-3, BL, SA, SM (R), 
+  SHS, SLE, SE, TS (R), and GH-2 (R) (Small C&I),  
+ (3) Large Commercial and Industrial  – Primary: Consisting of Rate Schedule  LP-4 ( Large C&I – 
+Primary), and  
+ (4) Large Commercial and Industrial – Transmission: Consisting of Rate Schedules LP-5, LPEP        
+  and L5S (Large C&I – Transmission). 
+ 
+ The TSC, computed using the formulae described below, shall be applied to the monthly bill of each 
+customer receiving BUS S service from the Company and shall be reconciled on an annual basis for 
+undercollections and overcollections experienced during the previous year.   
+ 
+ The TSC for the Residential class and the Small C&I class shall be computed using the following formula: 
+ 
+TSC = [TCe/S + TCd/S - E/S] X 1/(1-T) 
+ 
+ The TSC for the Large C&I – Primary class and the Large C&I – Transmission class shall be computed 
+using the following formulae: 
+ 
+TSC = TSCd + TSCe 
+ 
+The demand – related portion of the TSC (TSC d) for the Large C&I  – Primary class and the Large C&I – 
+Transmission class shall be computed using the following formula: 
+ 
+TSCd = [TCd/D] X 1/(1-T) 
+ 
+The other portion of the TSC (TSC e) for the Large C&I – Primary class and the Large C&I – Transmission 
+class shall be computed using the following formula:   
+ 
+TSCe = [TCe/S – E/S] X 1/(1-T) 
+ 
+ Where: 
+ 
+TCd = The demand-related (kW) portion of the charges that the Company incurs to provide transmission 
+service (including ancillary service charges  and all non- market-based transmission service 
+charges) to customers who receive BUSS service from the Company.  These charges are all 
+Federal Energy Regulatory Commission (FERC) -approved charges imposed by PJM 
+Interconnection, LLC (PJM) on a kW basis .  These charges are allocated to each customer class 
+based upon the contribution of that class to the 5 coincident peaks used by PJM to establish such 
+demand – related charges. 
+TCe =       All other charges not recovered through TCd that the Company incurs to provide transmission   
+  service (in cluding ancillary service charges  and all non- market-based transmission service 
+charges) to customers who receive BUSS service from the Company.  These charges are all 
+FERC-approved charges imposed by PJM on any basis other than a kW basis.  These charges 
+are allocated to each customer class based upon the projected kWh usage of that class, including 
+estimated distribution system losses during the computation year. 
+(Continued)  
+  
+ 
+
+PDF page 82:
+PPL Electric Utilities Corporation 
+Supplement No. 316  
+Electric Pa. P.U.C. No. 201 
+Original Page No. 19Z.10G 
+  
+ 
+ 
+  
+Issued: April 30, 2021 Effective: June 1, 2021  
+ 
+ACT 129 COMPLIANCE RIDER – PHASE  4 
+ A Phase 4 Act 129 Compliance Rider (ACR 4) shall be applied, on a non-bypassable basis, to         
+charges for electricity  supplied to customers who receive distribution service from the Company 
+under this Tariff.  The ACR 4 will be implemented beginning June 1, 2021. 
+   
+ The ACR  4 shall be computed separately for each of the following three customer classes:                
+ 
+ (1) Residential: Consisting of Rate Schedules RS and RTS (R),  
+ (2) Small Commercial and  Industrial (Small C&I): Consisting of Rate Schedules GS -1, GS-3, 
+BL, SA, SM (R), SHS, SLE, SE, TS (R), and GH-2 (R), and  
+ (3) Large Commercial and Industrial  (Large C&I): Consisting of Rate Schedules LP -4, LP-5, 
+LPEP, and L5S.   
+ 
+ The ACR 4 will be computed for each customer receiving distribution service from the Company 
+using the formulae described below .  For residential customers, the ACR 4 charge shall be included 
+in the distribution charges on a kWh basis of the monthly bill.  For all other custom ers, the ACR 
+charge shall be listed as a separate charge on the monthly bill.  All charges shall be reconciled on 
+an annual basis for undercollections and overcollections experienced during the previous  year.  
+Charges set forth in the residential rate sche dules in this tariff have been adjusted to reflect 
+application of the currently effective ACR 4.   
+ 
+ The ACR 4 for the Residential class and the Small C&I class shall be computed using the 
+following formula: 
+ 
+ACR  4 = [ACc/S - E/S] X 1 / (1-T) 
+ 
+ The ACR 3 for the Large C&I class shall be computed using the following formula: 
+ 
+ACR  4 = [ACc/D - E/D] X 1 / (1-T) 
+ 
+ 
+ Where: 
+ 
+ACc = An  annual budget of all costs required for the Company to implement its Commission-
+approved Phase  4 Energy Efficiency and C onservation (EE& C) Plan during a compliance 
+year.  A compliance year is the 12-month period beginning June 1 of each calendar year and 
+ending May 31 of the following calendar year.  The annual project program cost is the sum of 
+all direct and indirect costs (including all  deferred design and development costs , general 
+administrative costs, and applicable statewide evaluator costs ) required to implement the 
+Company's EE&C Plan divided by the number of months in the Company's EE&C Plan for the 
+given application year.  All de ferred design and development cost, general administrative 
+costs, and applicable statewide evaluator costs will be amortized over a 60 month period. 
+The costs of each EE&C program available to only one customer class will be directly 
+assigned to that custo mer class .  Costs of EE&C programs which cannot be directly 
+assigned to one customer c lass will be allocated to the customer classes benefiting from 
+those programs using an allocation factor determined by dividing the EE&C costs directly 
+assigned to each customer class by the total of the Company's  EE&C Plan costs directly 
+assigned to all customer classes. 
+(Continued) 
+
+PDF page 83:
+PPL Electric Utilities Corporation 
+Supplement No. 316  
+Electric Pa. P.U.C. No. 201 
+Original Page No. 19Z.10H 
+ 
+ 
+  
+Issued: April 30, 2021 Effective: June 1, 2021 
+ 
+ACT 129 COMPLIANCE RIDER – PHASE 4  (CONTINUED) 
+D = For the Large C&I customer class, the total of the monthly billing demands for all customers in 
+the class, projected for the computation year.  The peak demand will be based on the 
+customer’s peak load contribution to the PJM peak load during the prior PJM Planning Year. 
+E = Net over or undercollection of the ACR 4 charges as of the end of the 12- month period  
+ending March 31 immediately preceding the next compliance year.  Reconciliation of the ACR 
+4 will be conducted separately for each of the three customer classes based upon the actual 
+expenses incurred and actual revenues received for each customer class .  No interest shall 
+be computed monthly on over or undercollections.  The reconciliation of ACR 3 revenues and 
+expenses shall be adjusted during the 2022- 2023 ACR 4 application year to reflect actual 
+data for the months of April and May 2021, as well as any expenses incurred prior to May  31, 
+2021, but paid after that date. 
+ 
+S = The Company’s  total billed KWH sales in each customer class who receive distribution 
+service under this tariff (including distribution losses), projected for the computation year. 
+ 
+T = The total Pennsylvania gross receipts tax rate in effect during the billing period, expressed in 
+decimal form. 
+ 
+ The ACR 4 shall be filed wi th the Pennsylvania Public Util ity Commission (Commission) by May 1 of 
+each year.  The ACR 4 charge shall become effective for distribution service provided to all customers on 
+or after the following June 1, unless otherwise ordered by the Commission, and shall remain in effect for 
+a period of one year, unless revised on an interim basis subject to the approval of the Commission.  
+Upon determination that a customer class’s ACR 4, if left unchanged, would result in  a material over or 
+undercollection of Phase 4 Act 129 Compliance costs incurred or expected to be incurred during the 
+current 12- month period ending May 31, the Company may file with the Commission for an interim 
+revision of the ACR 4 to become effective ten (10) days from the date of filing, unless otherwise ordered 
+by the Commission. 
+ 
+At the conclusion of the Phase 3  EE&C Plan on May 31, 2021 , collections under the ACR 3  for each 
+customer class will be reconciled to the total cost of  the EE&C Plan allowed by the Commission for that 
+customer class.  Overcollections or undercollections will be reflected as a separate line item in the E 
+factor calculation and will be refunded or recovered through application of the ACR 4 rate effective June 
+1, 2021 through May 31, 2022.  If any over/under collection balance is expected to remain after March 
+31, 2022, the collection will be included in the ACR 4 rate going forward. 
+ 
+    
+ Minimum bills shall not be reduced by reason of the AC R 4  nor shall charges hereunder be a part of 
+the monthly rate schedule minimum.  The ACR 4 shall not be subject to any credits or discounts . The 
+State Tax Adjustment Surcharge (STAS) included in this Tariff is applied to charges under this Rider.   
+Charges under ACR 3 and ACR 4 will be combined for billing purposes only. 
+ 
+ The Company shall file a report of collections under the AC R 4 within thirty (30) days following the 
+conclusion of each compliance-year.   
+ 
+ Application of the AC R 4 shall be subject to review and audit by the Commission at  intervals it shall 
+determine.  The Commission shall review the level of charges produced by the ACR 4 and the costs 
+included therein. 
+(Continued) 
+
+PDF page 84:
+PPL Electric Utilities Corporation 
+Supplement No. 375  
+Electric Pa. P.U.C. No. 201 
+Third Revised Page No. 19Z.10I 
+ Canceling Second Revised Page No. 19Z.10I 
+ 
+ 
+Issued: April 30, 2024   Effective: June 1, 2024 
+ 
+ACT 129 COMPLIANCE RIDER – PHASE 4 (CONTINUED) 
+  
+ACT 129 COMPLIANCE RIDER – PHASE 4 CHARGE       
+ 
+ Charges under the ACR 4 for the period June 1, 2024 through May 31, 2025, as set forth in the      
+applicable Rate Schedules. 
+ 
+Customer Class Large I&C -  Small I&C Residential 
+ 
+Rate Schedule / Charge  
+ 
+ 
+LP4, L5S, LP-5, and LPEP 
+ 
+GS-1, GS-3, BL, and 
+GH-2 (R) 
+ 
+RS and RTS (R) 
+ 
+ 
+ 
+$0.761 /KW (I) 
+ 
+$0.00243 /KWH (D) 
+ 
+$0.00161 /KWH (I)  
+ 
+ 
+ 
+Small C&I – Street Lights 
+ 
+ 
+ 
+ 
+Rate 
+Schedule/ 
+Charge 
+  
+  
+  
+  
+  
+  
+  
+SA SM (R) SHS SLE SE TS (R) 
+Nominal 
+Lumens Charge 
+ 
+Nominal 
+Lumens 
+  
+$/Lamp  
+Nominal 
+Lumens 
+  
+$/Lamp  
+Nominal 
+Lumens 
+  
+$/Fixture  
+  
+$/KWH  
+  
+$/Watt  
+HPS 
+9,500 
+0.159 
+$/Lamp 
+3,350  
+0.119 5,800  
+0.072 2,600  
+0.031 
+  
+6,650  
+0.186 9,500  
+0.104  3,300  
+0.046 
+  
+10,500  
+0.260 16,000  
+0.153  3,800  
+0.046 
+ 
+0.00243 
+ 
+0.00178 
+LED 
+4,300 
+0.037 
+ 
+$/Fixture 
+20,000  
+0.413 25,500  
+0.275 4,900  
+0.063 
+  
+34,000  
+0.703 50,000  
+0.432 7,500  
+0.080 
+  
+51,000  
+0.972 
+  15,000  
+0.150 
+  
+    20,000  
+0.233   
+ 
+
+PDF page 85:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Sixth  Revised Page No. 19Z.11 
+Canceling Fourth and Fifth Revised Page No. 19Z.11 
+ 
+ 
+(C)  Indicates Change     
+Issued:  December 18, 2015 Effective: January 1, 2016   
+ 
+ MERCHANT FUNCTION CHARGE RIDER  (C)  
+  
+ The Merchant Function Charge (MFC) Rider, stated as a percentage, shall be applied to the    (C)  
+generation supply and transmission services charges billed, under the GSC -1 and TSC, 
+respectively, as set forth in this Tariff, to each residential and small commercial & industrial (Small 
+C&I) customer taking Basic Utility Supply Service (BUSS) under these R ate Schedules: RS, RTS 
+(R), GS-1, GS-3, BL, SA, SM (R), SHS, SLE, SE, TS (R), and GH-2 (R), and stand-by service for the 
+foregoing rate schedules.  The MFC will be reflected in the Company’s Price To Compare. 
+ 
+ The MFC, which will not be s ubject to reconciliation, is designed to make the Company’s 
+Price To Compare more comparable to electric supply service prices offered by EGSs by reflecting 
+anticipated generation supply -related uncollectible accounts expense in default service rates .  In 
+addition, the MFC will be applied to the TSC to reflect the applicable transmission service- related 
+uncollectible accounts expense previously recovered though PPL Electric’s distribution rates.  The 
+MFC is calculated by multiplying the generation supply charges billed under the GSC -1, and 
+transmission service charges billed under the TSC,  to each customer in the applicable class by th e 
+following uncollectible accounts expense percentages. 
+ 
+ Residential Customer Class:   2.31%        (C) 
+ 
+ Small C&I Customer Class:     0.23%        (C) 
+ 
+  
+                   
+ 
+ To eliminate the potential for a doubl e- recovery of generation supply -related and 
+transmission service- related uncollectible accounts expense, the distribution charges for the 
+applicable Rate Schedules have been reduced by the amount of bundled generation supply -related, 
+and transmission service- related, uncollectible accounts expense established in the Company’s 
+most recent distribution rate case at Docket No. R-2015-2469275. 
+ 
+ The MFC Rider will continue until its terms and conditions are changed in a subsequent  
+distribution rate case. 
+
+PDF page 88:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 189 
+Electric Pa. P.U.C. No. 201 
+Original Page 19Z.14A 
+ 
+ 
+  
+Issued: September 18, 2015                                                 Effective: October 1, 2015 
+  
+ 
+                                                SMART METER RIDER - PHASE 2                                      (C) 
+ A Phase 2 Smart Meter Rider (SMR 2) shall be applied, on a non-bypassable basis, to charges 
+for electricity supplied to customers who receive distribution service from the Company under this 
+Tariff.  
+ 
+  The SMR  2 shall be c omputed separately for each of the following three customer classes:  
+ 
+ (1) Residential: Consisting of Rate Schedules RS and RTS (R),  
+ (2) Small Commercial and Industrial (Small C&I): Consisting Rate Schedules GS-1, GS-3, IS-1 
+(R), BL, and GH-2 (R), and  
+ (3) Large Commercial and I ndustrial (Large C&I): Consisting of Rate Schedules LP -4, LP-5, 
+LPEP, and L5S.   
+ 
+ The SMR  2 , as computed using the formulae described below, shall be included in the 
+distribution charges of the monthly bill for each customer receiving distribution service from the 
+Company and shall be reconciled on an annual basis for undercollections and overcollections 
+experienced during the previous year.  Charges set forth in the applicable rate schedules in this tariff 
+have been adjusted to reflect application of the currently effective SMR 2. 
+ 
+ The SMR 2 for the Residential class , the Small C&I class , and the Large C&I class  shall be 
+computed using the following formula: 
+ 
+  
+ 
+SMR 2 = ((SMc – Es)  / N ) X 1 / (1-T) 
+ 
+ Where: 
+ 
+SMc = A quarterly actual amount of all costs required for the Company to implement its Commission  
+approved Smart Meter Plan (SMP) during a compliance period.  The initial SMR  2, effective 
+October 1, 2015, shall be calculated to recover costs not previously reflected in PPL Electric’s 
+rates or rate base and that have been recorded on the Company’s books and records 
+between February 1, 2015 and August 31, 2015.  Thereafter, the SMR 2 will be updated on a 
+quarterly basis to reflect costs during the three- month period ending one month prior to the 
+effective date (a compliance period) of each SMR 2 update.  The quarterly amount is the sum 
+of all direct and indirect capital (e.g. return of and return on applicable smart meter -related 
+investment) and operating (e.g., applicable O&M and taxes  (dependent upon the Company’s 
+tax net operating loss carryforward)) costs, including all deferred design and development 
+costs, and g eneral administrative costs, required to implement the Company’s SMP in the 
+compliance period.   Deferred costs incurred during 2014 and through May 2015 will be 
+recovered over a three-year period.  
+The costs of SMP will be allocated to the total number of meters on PPL Electric’s system 
+based on the ratio of investment in meters for each rate class. 
+ 
+N =  Number of Bills (Customers X 3) per Quarter 
+       
+(Continued) 
+(C) 
+
+PDF page 89:
+PPL Electric Utilities Corporation 
+Supplement No. 380 
+Electric Pa. P.U.C. No. 201 
+Ninth Revised Page No. 19Z.14B 
+Canceling Eighth Revised Page No. 19Z.14B 
+ 
+  
+Issued: September  20, 2024                                              Effective : October 1, 2024 
+ 
+SMART METER RIDER - PHASE 2 (CONTINUED) 
+ 
+Es = Net over or undercollection of the SMR  2 charges as of the end of the 12- month period ending 
+December 31 of each year.  Reconciliation of the SMR  2 will be conducted separately for each of 
+the three customer classes based upon the annual  revenue received compared to the actual 
+SMP costs .  Interest shall be computed monthly at the residential mortgage lending rate specified 
+by the Secretary of Banking  in accordance with L oan Interest and Protection Law (41 P.S. §§ 
+101, et. seq.) from the month the over or undercollection occurs to the effective month that the 
+overcollection is refunded or the undercollection is recouped.  
+ 
+   
+T = The total Pennsylvania gross receipts tax rate in effect during the billing period, expressed in 
+decimal form.  
+ 
+ 
+  The SMR 2 shall be filed with the Pennsylvania Public Utility Commission (Commission ) and 
+served upon the Commission’s Bureau of Investigation and Enforcement, the Bureau of Auditing, the 
+Office of Consumer Advocate, and the Office of Small Business Advocate at least ten (10) days prior to 
+the effective date of the update.  The changes in the SMR  2 rate will occur as follows:   
+                 (C) 
+Effective Date of Change Date to which SMR 2 - Eligible Costs Reflected 
+October 1, 2024 June 1 – August 31, 2024 
+January 1, 2025 September 1 – November 30, 2024 
+April 1, 2025 December 1, 2024 – February 29, 2025 
+July 1, 2025 March 1 – May 31, 2025 
+ 
+ 
+ Minimum bills shall not be reduced by reason of the SMR  2, nor shall charges hereunder be a part of 
+the monthly rate schedule minimum.  The SMR  2 shall not be subject to any credits or discounts. The 
+State Tax Adjustment Surcharge (STAS) included in this Tariff is applied to charges under this Rider.  
+ 
+ The Company shall file a report of collections under the SMR  2 within thirty (30) days following the 
+conclusion of each computation- year quarter.  These reports will be in a form prescribed by the 
+Commission.   
+ 
+ Application of the SMR  2 shall be subject to review and audit by the Commission at intervals it shall 
+determine.  The Commission shall review the level of charges produced by the SMR  2 and the costs 
+included therein. 
+ 
+ 
+ 
+(Continued)
+ 
+
+PDF page 90:
+PPL Electric Utilities 
+Corporation 
+ 
+Supplement No. 3 87 
+Electric Pa. P.U.C. No. 201 
+Thirty-Seventh Revised Page No. 19Z.14C 
+Canceling  Thirty-Sixth Revised Page No. 19Z.14C 
+ 
+(I) Indicates Increase   (D) Indicates Decrease   (C) Indicates Change  
+Issued: December  17, 2024                                      Effective : January 1, 2025 
+ 
+SMART METER RIDER - PHASE 2 (CONTINUED) 
+ 
+SMART METER RIDER - PHASE 2 CHARGES       
+            
+ 
+Charges under the SMR  2 for the period January  1, 2025 through March 31, 2025, as set forth     (C)  
+in the applicable Rate Schedules. 
+ 
+ 
+Customer Class Large C&I  Small C&I Residential  
+ 
+Rate Schedule / 
+Charge  
+ 
+LP-4,  LP-5, LPEP,  
+and L5S 
+ 
+$64.18/Bill (D)  
+ 
+GS-1, GS-3, BL, and 
+GH-2 (R) 
+ 
+$3.10/Bill (D) 
+ 
+RS and RTS (R) 
+ 
+ 
+$1.54/Bill (D) 
+ 
+ 
+ 
+ 
+  
+  
+
+PDF page 91:
+PPL Electric Utilities 
+Corporation 
+Supplement No. 385 
+Electric Pa. P.U.C. No. 201 
+Fourteenth Revised Page No. 19Z.15 
+Canceling Thirteenth Revised Page No. 19Z.15 
+ 
+(I) Indicates Increase   (D) Indicates Decrease  (C) Indicates Change  
+Issued: December 17, 2024 Effective: January 1, 2025 
+ 
+                                        COMPETITIVE ENHANCEMENT RIDER  
+             The Competitive Enhancement Rider (CER) charge shall be applied on a dollar per 
+customer basis to each customer who takes distribution service under this Tariff.  The CER provides 
+for the recovery of the annual costs associated with the Company’s competitive retail electricity 
+market enhancement initiatives and related consumer education programs. 
+ 
+ Beginning January 1, 2025 and continuing through December 31, 2025, the CER charge will 
+be negative $0.01.  For subsequent years, the CER charge shall be filed with the Pennsylvania 
+Public Utility Commission (Commission) by December 21 of the previous year.  The CER charge 
+shall reflect the Company’s estimate of the costs it will incur during the application year associated 
+with its competitive retail electricity market enhancement initiatives and related consumer education 
+programs.  The CER charge shall become effective for service rendered on or after the following 
+January 1, unless otherwise ordered by the Commission, and shall remain in effect for a period of 
+one year, unless revised on an interim basis subject to the approval of the Commission.  Upon 
+determination that a CER charge, if left unchanged, would result in a material over or under -
+collection of all CER costs incurred or expected to be incurred during the current 12- month period, 
+the Company may file with the Commission for an interim revision of the CER charge to become 
+effective thirty (30) days from the date of filing, unless otherwise ordered by the Commission.  
+ 
+ The Company will file with the Commission by December 21 of each year an annual 
+reconciliation of the actual CER revenue billed and the actual CER costs incurred during the 
+immediately preceding application period, pursuant to 66 Pa. C.S. §1307.  The reconciliation shall 
+become effective for service rendered on and after January 1 and shall remain in effect for a period 
+of one year, or until new CER rates are approved by the Commission.  Interest on overcollections 
+and undercollections shall be computed monthly at the appropriate rate, as provided for in Section 
+1308(d) of the Public Utility Code, from the month the over or undercollection occurs to the effective 
+month that the overcollection is refunded or the undercollection is recouped.  
+ 
+                                                                                                                                                                    
+                                                                                                                                                                  
+ Application of the CER shall be subject to review and audit by the Commission at intervals 
+that it shall determine.  The Commission shall review the level of charges produced by the CER 
+charge and the costs included therein.  
+             The State Tax Adjustment Surcharge included in this Tariff is applied to charges under this 
+Rider. 
+ 
+ 
+(C) 
+(C) 
+(D) 
+
+PDF page 92:
+PPL Electric Utilities Corporation 
+Supplement No. 389 
+Electric Pa. P.U.C. No. 201 
+Forty-Ninth Revised Page No. 19Z.16 
+Canceling Forty-Eighth Revised Page No. 19Z.16 
+ 
+(I) Indicates Increase   (D) Indicates Decrease  (C) Indicates Change 
+Issued: December 17, 2024 Effective: January 1, 2025 
+ 
+ 
+DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC) 
+              
+In addition to the net charges provided for in this Tariff, a charge of 5.00% will apply                                 
+consistent with the Commission Order dated May 23, 2013, at Docket No. P-2012-2325034,   
+approving the DSIC.  This charge will be effective during the period January 1, 2025 through           (C)            
+March 31, 2025.  
+ 
+  
+ 
+GENERAL DESCRIPTION 
+ 
+A.  Purpose:  To recover the reasonable and prudent costs incurred to repair, improve, or 
+replace eligible property which is completed and placed in service and recorded in the individual 
+accounts, as noted below, between base rate cases and to provide PPL Electric with the resources 
+to accelerate the replacement of aging infrastructure, to comply with evolving regulatory 
+requirements and to develop and implement solutions to regional supply problems.   
+ 
+The costs of extending facilities to serve new customers are not recoverable through the 
+DSIC.   
+ 
+B.  Eligible Property:  The DSIC-eligible property will consist of the following: 
+ 
+- Poles and towers (Account 364); 
+ 
+- Overhead conductors ( Account 365) and underground conduit and conductors 
+(Accounts 366 and 367); 
+ 
+- Line transformers (account 368) and substation equipment (Account 362); 
+ 
+- Any fixture or device related to eligible property listed above,  including insulators, 
+circuit breakers, fuses, reclosers, grounding wires, crossarms and brackets, relays, 
+capacitors, converters and condensers;  
+ 
+- Unreimbursed costs related to highway relocation projects where an electric 
+distribution company must relocate its facilities; and 
+ 
+- Other related capitalized costs. 
+ 
+ 
+C.  Effective Date:  The DSIC will become effective for bills rendered on and after July 1,   
+      2013. 
+ 
+ 
+(Continued) 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+
+PDF page 93:
+PPL Electric Utilities Corporation 
+Supplement No. 214 
+Electric Pa. P.U.C. No. 201 
+Fourth Revised Page No. 19Z.17 
+Canceling Third Revised Page No. 19Z.17 
+ 
+(I) Indicates Increase   (D) Indicates Decrease  (C) Indicates Change 
+Issued: October 31, 2016 Effective: November 1, 2016 
+ 
+ 
+           DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC) (Continued)  
+ 
+COMPUTATION OF THE DSIC 
+ 
+A.  Calculation:  The initial DSIC, effective July 1, 2013, shall be calculated to recover the         
+fixed costs of eligible plant additions that have not previously been reflected in PPL Electric’s rates 
+or rate base and w ill have been pl aced in service between March 1 through May 31, 2013.  
+Thereafter, the DSIC will be updated on a quarterly basis to reflect eligible plant additions placed in 
+service during the three- month periods ending one month prior to the effective date of each DSIC 
+update.  Thus, changes in the DSIC rate will occur as follows: 
+                 (C) 
+Effective Date of Change Date to which DSIC-Eligible Plant Additions Reflected 
+ April 1st December 1st – February 28th 
+July 1st March 1st – May 31st 
+October 1st June 1st – August 31st 
+January 1st September 1st – November 30th 
+ 
+ 
+B.  D etermination of Fixed Costs:  T he fixed costs of eligible distribution system 
+improvements projects will consist of depreciation and pre-tax return, calculated as follows:  
+ 
+1.  D epreciation:  The depreciation expense shall be c alculated by applying the 
+annual accrual rates employed in PPL Electric’s most recent base rate case for the plant accounts in 
+which each retirement unit of DSIC -eligible property is recorded to the original cost of DSIC -eligible 
+property.  
+ 
+2.  Pre-tax return:  The pre-tax return shall be calculated using the statutory state and 
+federal income tax rates, PPL Electric’s actual capital structure and actual cost rates for long- term 
+debt and preferred stock as of the last day for the three-month period ending one month prior to the 
+effective date of the DSIC and subsequent updates.  The cost of equity will be the equity return rate 
+approved in PPL Electric’s  last fully litigated base rate proceeding for which a f inal order was 
+entered not more than two years prior to the effective date of the DSIC. If more than two years shall 
+have elapsed between the entry of such a final order and the effective date of the DSIC, then the 
+equity return rate used in the calculation will be the equity return rate calculated by the Commission 
+in the most recent Quarterly Report on the Earnings of Jurisdictional Utilities released by the 
+Commission.   
+ 
+C.  Application of DSIC:  The DSIC will be expressed as a percentage carried to two decimal 
+places and will be applied to the total amount billed to each customer for distribution service under 
+PPL Electric’s otherwise applicable rates and charges, excluding amounts billed for the State Tax 
+Adjustment Surcharge (STAS).  To calculate the DSIC, one -fourth of the annual fixed costs 
+associated with all property eligible for cost recovery under the DSIC will be divided by PPL 
+Electric’s projected revenue for distribution service (including all applicable clauses and riders) for 
+the quarterly period during which the charge will be collected, exclusive of the STAS. 
+ 
+ 
+(Continued) 
+
+PDF page 94:
+PPL Electric Utilities Corporation 
+Supplement No. 352 
+Electric Pa. P.U.C. No. 201 
+Third Revised Page No. 19Z.18 
+Canceling Second Page No. 19Z.18 
+ 
+(I) Indicates Increase   (D) Indicates Decrease  (C) Indicates Change 
+Issued: December 20, 2022 Effective: January 1, 2023 
+ 
+ 
+DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC) (Continued) 
+ 
+COMPUTATION OF THE DSIC (Continued) 
+ 
+D.  Formula:  The formula for calculation of the DSIC is as follows:    (C) 
+ 
+       ((DSI  x  PTRR) + STFT + Dep + e)      ___1___                 
+                                                                 ( 1–T )    
+   PQR 
+                  
+     Where: 
+ 
+DSI       = Original cost of eligible distribution system improvement projects net of 
+accrued depreciation and associated accumulated deferred income 
+taxes pertaining to property -related book/tax depreciation timing 
+differences resulting from the use of accelerated depreciation per 
+Internal Revenue Code, 26 U.S. Code § 168.  
+ 
+PTRR   = Pre-tax return rate applicable to DSIC-eligible property. 
+ 
+STFT    = (State Tax Flow Through) Pre-tax flow through calculated on book -tax 
+timing differences between accelerated tax depreciation and book 
+depreciation net of federal tax.  
+ 
+Dep      = Depreciation expense related to DSIC-eligible property. 
+ 
+e  = Amount cal culated (+/-) under the annual reconciliation feature or  
+Commission audit, as described below.  
+ 
+PQR  = Projected quarterly revenues for distribution service ( including all 
+applicable clauses and riders) from appliable customers. The quarterly 
+revenues will be determined on the basis of the summation of projected 
+revenues for the applicable three-month period.     
+ 
+T            = Pennsylvania gross receipts tax rate in effect dur ing the billing month, 
+expressed in decimal form. 
+ 
+Minimum bills shall not be reduced by reason of the DSIC, nor shall charges hereunder be a part of the 
+monthly rate schedule minimum.  The DSIC shall not be subject to any credits or discounts. The State Tax 
+Adjustment Surcharge (STAS) included in this Tariff is applied to charges under the DSIC. 
+ 
+ 
+QUARTERLY UPDATES 
+ 
+Supporting data for each quarterly update will be filed with the Commission and served upon 
+the C ommission’s Bureau of Investigation and Enfor cement, the Bureau of Audits, the Office of 
+Consumer Advocate, and the Office of Small Business Advocate at least ten (10) days prior to the 
+effective date of the update. 
+ 
+ (Continued) 
+x 
+DSIC  =   
+     
+
+PDF page 95:
+PPL Electric Utilities Corporation 
+Supplement No. 214 
+Electric Pa. P.U.C. No. 201 
+Fourth Revised Page No. 19Z.19 
+Canceling Third Revised Page No. 19Z.19 
+ 
+(I) Indicates Increase   (D) Indicates Decrease  (C) Indicates Change 
+Issued: October 31, 2016  Effective: November 1, 2016  
+ 
+                DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC) (Continued)      
+ 
+CUSTOMER SAFEGUARDS 
+ 
+A.  C ap:  The DSIC is capped at 5.0% of the amount billed to customers for distribution 
+service (including all applicable clauses and riders) as determined on an annualized basis. 
+ 
+B.  A udit/Reconciliation:  T he DSIC is subject to audit at intervals determined by the 
+Commission.  Any cost determined by the Commission not to comply with any provision of 66 Pa 
+C.S. §§ 1350,  et seq. , shall be c redited to customer accounts.  T he DSIC is subject to annual 
+reconciliation based on a reconciliation period consisting of the twelve months ending December  31 
+of each year or PPL Electric may elect to subject the DSIC to quarterly reconciliation but only upon 
+request and approval by the Commission.  T he revenue received under the DSIC for the 
+reconciliation period will be compared to PPL Electric’s eligible costs for that period.  The difference 
+between revenue and costs will be recouped or refunded, as appropriate, in accordance with Section 
+1307(e), over a one -year period commencing on April 1 of each year, or in the next quarter if 
+permitted by the Commission.  If DSIC revenues exceed DSIC -eligible costs, such over -collections 
+will be r efunded with interest.  I nterest on ov er-collections and c redits will be c alculated at the 
+residential mortgage lending specified by the Secretary of Banking in accordance with the Loan 
+Interest and Protection Law (41 P.S. §§ 101, et seq.) and will be refunded in the same manner as an 
+over-collection.  PPL Electric is not permitted to accrue interest on under collections. 
+ 
+C.  New Base Rates:  The DSIC will be reset at zero upon application of new base rates to 
+customer billings that provide for prospective recovery of the annual costs that  had previously been 
+recovered under the DSIC.  Thereafter, only the fixed costs of new eligible plant additions that have 
+not previously been reflected in PPL Electric’s rates or rate base will be reflected in the quarterly 
+updates of the DSIC.   
+ 
+D.  Cu stomer Notice:  Customers shall be not ified of changes in the DSIC by including 
+appropriate information on the first bill they receive following any change.  An explanatory bill insert 
+also shall be included with the first billing. 
+ 
+E.   C ustomer classes:  Effective Ju ly 1, 2013 , the DSIC shall be applied equally to al l    
+customer classes except Rate Schedule LP-5, consistent with the Commission Order entered April 
+9, 2015 at Docket No. P-2012-2325034.  Effective January 1, 2016, the DSIC shall be appl ied 
+equally to all customer classes except Rate Schedules LP-5 and LPEP. 
+ 
+F.  Earning Reports:  The DSIC also will be reset at zero if, in any quarter, data filed with the 
+Commission in PPL Electric’s then most recent Annual or Quarterly Earnings reports (Schedule D-2) 
+show that PPL Electric would earn a rate of return that would exceed the allowable rate of return 
+used to calculate its fixed costs under the DSIC as described in the pre- tax return section.  PPL 
+Electric shall file a tariff supplement implementing the reset to zero due to overearning on one- days’ 
+notice and such supplement shall be filed simultaneously with the filing of the most recent Annual or 
+Quarterly Earnings reports indicating that PPL Electric has earned a rate of return that would exceed 
+the allowable rate of return used to calculate its fixed costs. 
+ 
+(C) 
+(C) 
+
+PDF page 96:
+PPL Electric Utilities Corporation 
+Supplement No. 214 
+Electric Pa. P.U.C. No. 201 
+Original Page No. 19Z.19A 
+ 
+ 
+(I) Indicates Increase   (D) Indicates Decrease  (C) Indicates Change 
+Issued: October 31, 2016  Effective: November 1, 2016  
+ 
+                DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC) (Continued)      
+ 
+CUSTOMER SAFEGUARDS (Continued) 
+ 
+ 
+G.  Residual E -Factor Recovery Upon Reset to Zero:  PPL Electric shall file with the 
+Commission interim rate revisions to resolve the residual over/under collection or E -factor amount 
+after the DSIC rate has been reset to zero.  PPL Electric can recoup or refund the residual 
+over/under collection balance when the DSIC rate is reset to zero.  PPL Electric shall refund any 
+overcollection to customers and is entitled to recover any undercollections as set forth in Customer 
+Safeguard Section B.  The tariff supplement shall be submitted in accordance with the Quarterly 
+Updates section of this tariff. 
+ 
+ 
+ 
+(C) 
+
+PDF page 97:
+PPL Electric Utilities Corporation 
+Supplement No. 175 
+Electric Pa. P.U.C. No. 201 
+Fourth Revised Page No. 19Z.20 
+Canceling Third Revised Page No. 19Z.20 
+ 
+ 
+  
+Issued: January 19, 2015 Effective: February 1, 2015 
+  
+ 
+STORM DAMAGE EXPENSE RIDER 
+ 
+PURPOSE 
+ 
+The Storm Damage Expense Rider (SDER) shall be appl ied to bills of all retail 
+customers of the Company.  T he SDER provides for recovery of qualified storm damage 
+expenses incurred by the Company from storms reportable to the Pennsylvania Public Utility 
+Commission (Commission) that are not otherwise currently recovered through its base 
+rates.    
+ 
+STORM DAMAGE EXPENSES 
+ 
+Storm damages for purposes of this SDER are those resulting from direct physical 
+loss or damage to property from wind, tornado, hurricane, tropical storm, tropical 
+depression, rain, snow, hail, sleet, ice, lightning, flood, fire resulting from any of these perils, 
+and similar causes.  Storm damage expenses consist of those expenses incurred to 
+remediate storm damage to the Company’s distribution system, including, but not limited to, 
+overtime and premium wages of the Company’s employees, costs of outside service 
+providers and mutual aid utilities employed by the Company during storm restoration efforts, 
+materials and s upplies used to repair or replace damaged property, overhead charges 
+associated with storm damage expenses, including wages and ben efits, transportation, 
+purchasing and stores charges, expediting expenses for the reasonable and extra costs to 
+make temporary repairs and to expedite the permanent repair or replacement of damaged 
+property, and expenses of providing services to customers whose electric service has been 
+interrupted by any of the perils listed above.  S traight -time wages and benefits and 
+expenses reimbursed by others will be excluded from the SDER, and capitalized costs of 
+repairing or replacing facilities damaged by the perils listed above, will be excluded from the  
+SDER.   
+ 
+ 
+FACTOR DEFINITION 
+ 
+Net storm damage expenses to be recovered in the SDER shall be equal to: 
+SDER = ( C – R ) + E,  
+Where C equals the Cost factor, R equals the Base Rate factor and E equals the 
+Experience factor. 
+ 
+The C Factor  =  For purposes of calculating SDER charges, storms will be categorized as 
+reportable or  non-reportable storms.  Reportable storms are those that 
+cause unscheduled service interruptions in a single event to 2,500 or more 
+customers for 6 or more consecutive hours; non- reportable storms are all 
+other storms.  See 52 Pa. Code § 67.1(b).  Storm damage expenses from 
+non-reportable storms will be r ecovered through base rates and not 
+through the SDER. 
+(Continued) 
+
+PDF page 102:
+PPL Electric Utilities Corporation 
+Supplement No. 384 
+Electric Pa. P.U.C. No. 201 
+Fifteenth Revised Page No. 19Z.25 
+Canceling Fourteenth Revised Page No. 19Z.25 
+ 
+ 
+(I) Indicates Increase    (D) Indicates Decrease    (C) Indicates Change  
+Issued:  November 26, 2024 Effective: January 1, 2025 
+  
+ 
+ 
+ STORM DAMAGE EXPENSE RIDER (Continued) (C) 
+ 
+STORM DAMAGE EXPENSE RIDER CHARGE 
+ 
+ Beginning January 1, 2025 and continuing through the period December 31, 2025, the SDER (C) 
+charges will be applied as set forth in the applicable Rate Schedules, unless otherwise ordered by the 
+Pennsylvania Public Utility Commission (Commission). 
+ 
+Customer Class Large  C&I - 
+Transmission  
+Large  C&I - 
+Primary 
+Small  C&I Residential 
+ 
+Rate Schedule / 
+Charge  
+ 
+ 
+L5S, LP-5, and LPEP 
+ 
+LP-4  
+ 
+GS-1, GS-3, BL, 
+and GH-2 (R) 
+ 
+RS and RTS (R) 
+ 
+ 
+ 
+$101.50/Bill (I) 
+ 
+$123.10/Bill (I) 
+ 
+$0.00092/KWH (I)  
+ 
+$0.00184/KWH (I) 
+ 
+Small C&I – Street Lights 
+ 
+Rate 
+Schedule/ 
+Charge 
+  
+  
+  
+  
+  
+  
+  
+SA SM (R) SHS SLE  SE TS (R) 
+Nominal 
+Lumens 
+ 
+Charge 
+ 
+Nominal 
+Lumens 
+  
+$/Lamp  
+Nominal 
+Lumens 
+  
+$/Lamp  
+Nominal 
+Lumens 
+  
+$/Fixture  
+  
+$/KWH  
+  
+$/Watt  
+HPS 
+9,500 
+0.060  
+$/Lamp 
+3,350 0.045 5,800 0.027 2,600 0.012   
+6,650 0.071 9,500 0.039 3,300 0.017   
+10,500 0.099 16,000 0.058 3,800 0.017 0.00092 0.00067 
+LED 
+4,300 
+0.014 
+$/Fixture 
+20,000 0.156 25,500 0.104 4,900 0.024   
+34,000 0.266 50,000 0.164 7,500 0.030   
+51,000 0.368   15,000 0.057   
+    20,000 0.088   
+ 
+ 
+
+PDF page 103:
+PPL Electric Utilities 
+Corporation                           
+ 
+Supplement No. 383 
+Electric Pa. P.U.C. No. 201 
+Seventh Revised Page No. 19Z.26 
+Cancelling Sixth Revised Page No. 19Z.26 
+ 
+(I)  Indicates Increase (D)  Indicates Decrease (C)  Indicates Change  
+Issued: November 26, 2024 Effective: January 1, 2025  
+ 
+TCJA TEMPORARY SURCHARGE (C) 
+   
+ To implement the effects of the Tax Cuts and Jobs Act (TCJA), on March 15, 2018 the 
+Pennsylvania Public Utility Commission (Commission) issued a Temporary Rates Order at Docket 
+No. M-2018-2641242 directing the utility to file its current base rates and riders as temporary rates, 
+pursuant to Section 1310(d) of the Public Utility Code. 66 Pa. C.S. §  1310(d). Subsequently on May 
+17, 2018, and June 14, 2018, the Commission entered an Order superseding the March 15, 2018 
+Temporary Rates Order directing the utility to establish temporary rates as follows: 
+ 
+ A negative surcharge of 8.00% will apply as a credit for intrastate service to all customer bills   (D) 
+rendered on and after January 1, 2025. This negative surcharge will be distributed equally among  (C) 
+the utility’s various customer classes, exclusive of STAS and automatic adjustment clause revenues. 
+ 
+ This negative surcharge will be reconciled at the end of each calendar year and will remain in 
+place until the utility files and the Commission approves new base rates for the utility pursuant to 
+Section 1308(d) that include the effects of the TCJA tax rate changes. After the initial filing on June 
+15, 2018, the TCJA Temporary Surcharge shall be filed with the Commission by December  1 of 
+each year that it is in place.  
+ 
+ Interest on over or under collections shall be computed monthly at the residential mortgage 
+lending rate specified by the Secretary of Banking in accordance with the Loan Interest and 
+Protection Law (41 P.S. §§ 101, et seq.) from the month that the over or under collection occurs to 
+the mid-point of the recovery period. 
+ 
+  Upon determination that the negative surcharge, if left unchanged, would result in a material over 
+or under collection, the Company may file with the Commission, on at least 10 days’ notice, for an 
+interim revision of the TCJA Temporary Surcharge.  
+  
+ 
+
+PDF page 104:
+PPL Electric Utilities 
+Corporation 
+ 
+Supplement No. 3 87 
+Electric Pa. P.U.C. No. 201 
+One-Hundred-Twent y-Seventh Revised Page No. 20 
+Canceling One-Hundred -Twenty-Sixth Revised Page No. 20  
+ 
+(I)  Indicates Increase (D)  Indicates Decrease  (C)  Indicates Change  
+Issued:  December  17, 2024 Effective: January 1, 2025  
+ 
+                                                 RATE SCHEDULE RS (C) 
+RESIDENTIAL SERVICE 
+APPLICATION RATE SCHEDULE RS 
+ This Rate Schedule is for single phase residential service in accordance with the APPLICATION 
+PROVISIONS hereof.  The Multiple Dwelling Unit Application is restricted to eight or less dwelling 
+units for applications after August 26, 1976, and further to buildings converted to multiple dwelling 
+units for applications after June 28, 1980.  Separate Water Heating Service is available only to 
+service locations served under this application on and continuously after April  26, 1985. 
+ 
+NET MONTHLY RATE  
+ Distribution Charge   
+ Effective: January 1, 2025    
+ 
+  $15.62 per month (Customer Charge, includes SMR2 and CER) plus (D)   
+   4.990 cents per KWH (Includes ACR 4, USR, and SDER)     
+  
+ Transmission Service Charge  
+ The Transmission Service Charge included in this Tariff applies to all KW and kWh billed under 
+this Rate Schedule. 
+ 
+ Generation Supply Charge -1   
+ 
+ The Generation Supply Charge -1 included in this tariff applies to all KWH billed under this rate 
+Schedule. 
+ 
+MINIMUM CHARGE 
+ The Minimum Distribution Charge is the Customer Charge.  
+.    
+BUDGET BILLING 
+ Budget Billing is available at the option of the customer for charges under this Rate Schedule.  
+ 
+MULTIPLE DWELLING UNIT APPLICATION  
+ When multiple dwelling units are supplied through one meter, the per day charge and the KWH 
+block charges of the Distribution Charge rate, plus for customers who receive Basic Utility Supply 
+Service from the Company, Generation Supply Charge- 1 rates are multiplied by the number of 
+dwelling units in the determination of the net monthly bill under this Rate Schedule.  Demand billing 
+does not apply under this provision.  
+ 
+(Continued) 
+
+PDF page 105:
+PPL Electric Utilities 
+Corporation 
+ 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Twenty-Second Revised Page No. 20A 
+Canceling Twentieth and Twenty-First Revised Page No. 20A 
+ 
+(I)  Indicates Increase (D)  Indicates Decrease (C)  Indicates Change 
+Issued:  December 18, 2015 Effective:  January 1, 2016 
+ 
+                                      RATE SCHEDULE RS (CONTINUED) (C) 
+ SEPARATE WATER HEATING SERVICE   
+ When water heating use is supplied exclusively through a separate meter and is equipped with 
+automatic timing controls, water heating service is billed separately at the Customer Charge and 
+the KWH block charges of the Distribution Charge rate.  For customers who receive Basic Utility 
+Supply Service from the Company, the Generation Supply Charge -1 applies.  T he Monthly 
+Minimum Bill applies to this service.  No new applications will be accepted after January 1, 2000. 
+ 
+ The customer provides the separate meter base and service entrance at the same point of 
+delivery and at  the same voltage as the general use service.  T he customer also provides and 
+installs any control device specified by the Company to automatically control the water heater 
+operation.  Supplemental use of renewable energy sources such as wood, solar, wind and water is 
+permitted. 
+ 
+RIDERS     
+ The Riders included in that Tariff apply to this Rate Schedule are listed in the Rider Matrix on 
+Page 14D. 
+ 
+STATE TAX ADJUSTMENT SURCHARGE 
+ The State Tax Adjustment Surcharge included in this Tariff is applied to charges under this 
+Rate Schedule. 
+ 
+PAYMENT    (C) 
+ The above net rate applies when bills are paid on or before the due date specified on the bill, 
+which is not less than 20 days from the date bill is mailed via the U.S. Postal Service or mailed 
+electronically.  After the due dat e, the Company may initiate collection procedures and a  late 
+payment charge of 1.25% per month on the then unpaid and overdue balance is applicable. 
+ 
+ 
+ 
+ 
+ 
+(Continued) 
+ 
+
+PDF page 106:
+PPL Electric Utilities 
+Corporation 
+ 
+Supplement No. 194 
+Electric Pa. P.U.C. No. 201 
+Twenty-First Revised Page No. 20B 
+Canceling Nineteenth and Twentieth Revised Page No. 20B 
+ 
+ 
+(C)  Indicates Change (I)  Indicates Increase (D)  Indicates Decrease 
+Issued: December 18, 2015 Effective: January 1, 2016 
+ 
+                                              RATE SCHEDULE RS (CONTINUED) (C) 
+APPLICATION PROVISIONS  
+ For the purposes of the application of this Rate Schedule, a dwelling is defined as a living 
+space consisting of at least permanent provisions for shelt er, dining, sleeping, and cooking, with 
+provisions for permanent electric, water, and sanitation services. 
+ 
+ (1) This Rate Schedule is for single phase electric service for: 
+(a) A single family dwelling and detached buildings when the detached buildings ar e served 
+at the customer’s expense through the same meter as the single family dwelling. 
+(b) A separate dwelling unit in an apartment house. 
+(c) A single farm dwelling and general farm uses when general farm uses are served at the 
+customer’s expense through the same meter as the single farm dwelling. 
+(d) A building previously wired for single meter service which is converted to not more than 
+8 separate dwelling units served through one meter. 
+ 
+ (2) This Rate Schedule does not apply to:  (C) 
+(a) Residential service that includes more than 2,000 watts of connected load attributable to 
+commercial or professional use exclusive of space heating and ai r conditioning in 
+common with the residence. 
+(b) Residential service combined with any commercial or professional use outside the 
+residence or in a section of a multi-use building that is separate from the dwelling unit. 
+(c) Service which includes common use in excess of 5,500 watts of connected load for 
+halls, basement, or other portions of an apartment building. 
+(d) Single meter service to multiple dwelling units in buildings constructed after June 28, 
+1980. 
+(e) Establishments recognized by name, notice or advertisement, such as hotels, clubs, 
+fraternities, sororities, boarding houses, institutions, orphanages, rest homes, tourist  
+homes and rooming houses with more than 3 rooms available for such use and rectories 
+and convents with accommodations for more than 5 adults. 
+(f) Residential service locations connected on or after September 28, 1995, which include 
+more than 2,000 watts of general farm load. 
+(g) Residential service locations with an installed generating system that has a nameplate 
+capacity greater than 50 kilowatts. 
+(h) Campers, Recreational Vehicles (RV), and construction trailers  that are mobile in nature 
+and are not permitted dwellings. 
+ (3) Where any use of service at a residence or on a farm is not eligible for the application of 
+this Rate Schedule, customer has the option to provide separate circuits so that the portion that is 
+applicable can be metered and billed separately hereunder and the remaining portion can be billed 
+under the applicable general service rate schedule.  When separate circuits are not provided, the 
+entire service is billed under the applicable general service rate schedule. 
+
+PDF page 109:
+PPL Electric Utilities 
+Corporation 
+ 
+Supplement No. 194 
+Elect
+ric Pa. P.U.C. No. 201 
+  Twenty-Eighth Revised Page No. 24 
+Canc
+eling Twenty-Six th and Twenty-Seventh Revised Page No. 24 
+ 
+(I)  Indicates Increase (D)  Indicates Decrease (C)  Indicates Change 
+Issued: December 18, 2015 Effective: January 1, 2016   
+ 
+                                                      RATE SCHEDULE GS-1                         (C) 
+ SINGLE PHASE GENERAL SERVICE 
+                                                 AT SECONDARY VOLTAGE 
+APPLICATION RATE SCHEDULE GS-1 
+ This Rate Schedule is for single phase non-residential service at secondary voltage and other  (C) 
+applications outside the scope of the Residential Rate Schedule, which would include residential 
+service locations with an i nstalled generating system that has a nam eplate greater than 50 
+kilowatts.  The billing demand is limited to 5 KW for accounts served under discontinued 
+Rate Schedule FC as of June 28, 1980.   New applications with voltage levels higher than the 
+secondary voltage will not be accepted after January 1, 2005. 
+ 
+ Effective January 1, 2008, new General Service customers receiving single- phase service will 
+be served under Rate Schedule GS -1.  C ustomers taking service under Rate Schedule GS -1 or 
+Rate Schedule GS-3 as of December 31, 2007 will continue to be allowed to switch from one rate 
+schedule to the other until January 1, 2010, subject to existing rules and restrictions.  On and after 
+January 1, 2010, these customers may no longer switch between Rate Schedule GS -1 and Rate 
+Schedule GS-3 except that: (1) three-phase customers on Rate Schedule GS-1 may switch to Rate 
+Schedule GS-3 but may not thereafter switch back to Rate Schedule GS -1; and (2) single phase 
+customers on Rate Schedule GS -3 may switch to Rate Schedule GS -1, but may not thereafter 
+switch back to Rate Schedule GS-3. 
+ 
+NET MONTHLY RATE 
+ Distribution Charge                                                                                             
+ $ 22.00 per month (Customer Charge) plus (I) 
+  $4.3 61 per kilowatt for all Billing KW                                                       (I) 
+  
+  Transmission Service Charge  
+ The Transmission Service Charge included in this Tariff applies to all KW and KWH billed under 
+this Rate Schedule. 
+ Generation Supply Charge -1  
+ The Generation Supply Charge -1 included in this Tariff applies to all KWH billed under this 
+Rate Schedule. 
+ 
+MINIMUM CHARGE  
+ The Monthly Minimum Distribution Charge is the Customer Charge.   
+ 
+BILLING KW   
+ The Billing KW for the Distribution component is the average number of kilowatts supplied   
+during the 15 minute period of maximum use during the current billing period. 
+ 
+(Continued) 

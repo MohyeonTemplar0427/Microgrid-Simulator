@@ -1,0 +1,8 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrtsregionaltransmissionserviceclause.pdf?hash=59E32BC196FB3CC69C1528F5DDB54260&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Twenty-sixth revised sheet 86. Issued May 28, 2026; header effective July 21. Body factor application begins August 1, 2026: residential $0.04456/kWh; general service $0.03539/kWh.
+These classes pay RTS per kWh, not a customer PLC/NSPL peak charge. The PDF also includes formula sheet 87 dated April 11, 2022 and a one-time December 2022 MISO refund sheet 87.1. That sheet does not establish a 2025 refund factor.

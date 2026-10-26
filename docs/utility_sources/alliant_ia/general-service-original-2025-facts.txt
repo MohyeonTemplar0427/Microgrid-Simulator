@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricgeneralserviceusage.pdf?hash=46A1D422EE2EF3B33D3232B72CC5C26A&sc_lang=en
+Retrieved: 2026-10-25
+Original binary SHA256: 25a1ea96de41a77a5e377a7631c192d8160111f41fdfe9c48116c0459cc6a442
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+Original binary confirms Substitute14th Sheet22 and Substitute12th Sheet23, effective October1,2024. Codes600/607 and daily0.7562 USD service charge remain posted. These selected ordinary schedules have energy charges and no customer maximum-demand charge. The official utility outlook independently confirms base components remained flat in2025 and2026. Classification remains an independent utility account fact, not inferred from a synthetic annual load. Other conditions and prices are preserved in general-service-600-607-facts.txt.

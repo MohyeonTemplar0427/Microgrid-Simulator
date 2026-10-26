@@ -1,0 +1,7 @@
+Source: https://www.alliantenergy.com/CustomerService/AlliantEnergyService/RatesandTariffs/-/media/1ED911B513B8409CB81FCACF4788AD28.ashx?hash=6175C1FFA8922A484C526F56C4E93AB0&la=en
+Retrieved: 2026-10-25
+Method: Public official search-index text; original historical PDF bytes not recovered.
+
+Historical public primary-source indexed copy: substitute seventh revised sheet60.1, canceling substitute sixth revised. Issued May7,2025, footer effective June12,2025. Body explicitly states cost recovery factors apply effective June17,2025. Residential400/407/427/507 $0.0048/kWh; generalservice600/607/707 $0.0028/kWh.
+The body/application date and footer/legal effective date are different statements; do not flatten them into a single date or presume June12 is the factor date. The words do not independently specify how a customer's shifted/crossing billing cycle is allocated.
+The normal live fetch now returns eighth revised sheet60.1 with 2026 factors, even through this old media-ID URL. No original historical binary hash is available.

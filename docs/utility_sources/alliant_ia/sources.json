@@ -1,0 +1,774 @@
+{
+  "schema_version": 1,
+  "retrieved_date": "2026-10-25",
+  "sources": [
+    {
+      "id": "residential",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricresidentialserviceusage.pdf?hash=980EAC1EFC2A19F140DBB78FD02BBF11&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/residential-400-407-427-facts.txt",
+      "extracted_text_sha256": "5d1a2f87a8f93b280a3dfdbf4f372e1c83aa2fd9a9ecfa70a7db9f1ca94d29f3"
+    },
+    {
+      "id": "general_service",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricgeneralserviceusage.pdf?hash=46A1D422EE2EF3B33D3232B72CC5C26A&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/general-service-600-607-facts.txt",
+      "extracted_text_sha256": "0c08844efb3a39f3ca24f0225a3828694eec41ddb18dd5918d6e4b72f8fe489c"
+    },
+    {
+      "id": "eac_summary",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/eacsummary.pdf?hash=A8CA5D89FF3EB558FB8AC66EC66DE142&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/eac-summary-facts.txt",
+      "extracted_text_sha256": "8273abee95e1f938107bed867be373afc488480f22941425541edfc4d898bc5b"
+    },
+    {
+      "id": "eac_detailed",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereacenergyadjustmentclause.pdf?hash=EA46041D4CB9157430846634B2771F3F&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/eac-detailed-facts.txt",
+      "extracted_text_sha256": "b3c8beb86f6797ab895ce31adcc0dc30459a670be22aa539130237eb8fd1f3dd"
+    },
+    {
+      "id": "eecr_2026",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereecrenergyefficiencycostrecovery.pdf?hash=5983CD1D737B6856D51E6CCDA331D86A&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/eecr-2026-facts.txt",
+      "extracted_text_sha256": "adaab623f4ee3391d801886bee375f2914c7af90bc4c37480adadc6f7999923b"
+    },
+    {
+      "id": "drcr_2026",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderdrcrdemandresponsecostrecovery.pdf?hash=E38F2AB098145142E2DD31209DD1D8F5&la=en&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/drcr-2026-facts.txt",
+      "extracted_text_sha256": "bb4856ecb3adc8d246e66d0aa28545ffc9e7610914cb6dcbe9e5653f3ad2b609"
+    },
+    {
+      "id": "eecr_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereecrenergyefficiencycostrecovery.pdf?hash=966CF0C123B08CDFDD0F3342CDA54405&la=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Historical official utility tariff public search-index text inspected; original bytes unavailable. URL must not be assumed immutable.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/eecr-2025-indexed-facts.txt",
+      "extracted_text_sha256": "23051f5c7152151b2780e69889bf387d5151078968a3ebc9d95ca0cb4b5f58a0"
+    },
+    {
+      "id": "drcr_2025",
+      "url": "https://www.alliantenergy.com/CustomerService/AlliantEnergyService/RatesandTariffs/-/media/1ED911B513B8409CB81FCACF4788AD28.ashx?hash=6175C1FFA8922A484C526F56C4E93AB0&la=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Historical official utility tariff public search-index text inspected; original bytes unavailable. URL must not be assumed immutable.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/drcr-2025-indexed-facts.txt",
+      "extracted_text_sha256": "1f31161e456c9036ccd97f006762374f7af2e1cf65fc17fab5c0e4a1fd1c671e"
+    },
+    {
+      "id": "rts_2026_feb",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrtsregionaltransmissionserviceclause.pdf?hash=91A14C6C26764717F5C2BC1792F88908&la=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Historical official utility tariff public search-index text inspected; original bytes unavailable. URL must not be assumed immutable.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/rts-2026-feb-indexed-facts.txt",
+      "extracted_text_sha256": "4d7f8246147c91449b3c095237c1fa6f6825b71358c447e00f2d70b8568b79e6"
+    },
+    {
+      "id": "rts_2026_aug",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrtsregionaltransmissionserviceclause.pdf?hash=59E32BC196FB3CC69C1528F5DDB54260&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/rts-2026-aug-facts.txt",
+      "extracted_text_sha256": "79d1d3dbf2aafb4a272dbb5d0c4d3f8a4944e44d082bf122d5f511d783c1b08f"
+    },
+    {
+      "id": "tbr",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridertbrtaxbenefitrider.pdf?hash=47F0CF0DB8FFCB227C7740CBB0696CBB&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/tbr-conflict-facts.txt",
+      "extracted_text_sha256": "51a40dc80ccbce993f805ef5dcf9aece5703904c14250af250e111fef38a9a7c"
+    },
+    {
+      "id": "rce",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrceratecaseexpense.pdf?hash=EA3E0AD89FAB71A930DD8ED651951BE1&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/rce-facts.txt",
+      "extracted_text_sha256": "020407218388dc50043525a0f323ad895b2b0fd6ea7037a88339bc0043010241"
+    },
+    {
+      "id": "eebc",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereebcenergyefficiencybillcredit.pdf?hash=B7D6B7E996BBEA7BAE1FB573403FFF52&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/eebc-facts.txt",
+      "extracted_text_sha256": "fbefdc44b7bb8f80cfbe42688441b0e722a378c0ed031f8aa5230a436ae80792"
+    },
+    {
+      "id": "tax",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridertaxtaxadjustmentclause.pdf?hash=C322882BF894A3E416066B107F3B23F6&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/tax-facts.txt",
+      "extracted_text_sha256": "d032522d0182f17e5b1ce7c9dc8a6fe07cc436fa5040d17257a1cdab42d4bc7d"
+    },
+    {
+      "id": "inflow_outflow",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/inflowoutflowtariff.pdf?hash=86C5A123994D30ED6F8002639C67266E&la=en&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/inflow-outflow-facts.txt",
+      "extracted_text_sha256": "78dbcc4d6cad4240b6f328d40524c60e3b0ad29b74d0c8d21f7f2462976e3866"
+    },
+    {
+      "id": "interconnection",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/section16cogeneratorssmallpowerproducersalternateenergyproducerssmallhydroproduc.pdf?hash=25CE14668879D93D1DF043AB3496A08A&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/interconnection-facts.txt",
+      "extracted_text_sha256": "b8a8a3d63ff4f1088e5b123d8cad56baddaef51ce50d7ec9feba480b377cf386"
+    },
+    {
+      "id": "clock_guide",
+      "url": "https://www.alliantenergy.com/ways-to-save/time-of-day-iowa",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility HTML page public indexed text inspected.",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/alliant_ia/tod-clock-comparison.txt",
+      "extracted_text_sha256": "937c324b3a5aa67fe0c7109a88e0cc9573e6a7a7627ab624cb2c7e9a8fe380f5"
+    },
+    {
+      "id": "residential_energy_tax",
+      "url": "https://revenue.iowa.gov/media/2405/download?inline=",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official Iowa Department of Revenue public PDF indexed text inspected.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/iowa-residential-energy-tax-facts.txt",
+      "extracted_text_sha256": "27e2cc74a747d8be1c720aed3255f910f4f930cde480e6d6260ba6395f4e5bad"
+    },
+    {
+      "id": "iowa_tax_rules",
+      "url": "https://revenue.iowa.gov/taxes/frequently-asked-questions/sales-tax",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official Iowa Department of Revenue public HTML indexed text inspected.",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/alliant_ia/iowa-tax-rules-facts.txt",
+      "extracted_text_sha256": "b5f21f29d50615b46bbe086cf27803e477118ac9bfb63e030dfcc47bb06d81e3"
+    },
+    {
+      "id": "linn_county_lost",
+      "url": "https://www.linncountyiowa.gov/1593/Local-Option-Sales-Tax-Referendum",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official Linn County public HTML indexed text inspected.",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/alliant_ia/linn-county-local-tax-facts.txt",
+      "extracted_text_sha256": "7ad58a3f37f29c2c5f9f4363307e5c12cace8e59e595cb9cc6462022c3bdbb85"
+    },
+    {
+      "id": "oha_residential20",
+      "url": "https://www.ohatowers.org/wp-content/uploads/2025/01/S8-HCV-UA-Update-Study-Apr-2025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "83ec981babbc0417e5cb8838f08c3dcca36b63f8da58347c37b044150b4dcc9c",
+      "bytes": 2858628,
+      "retrieval_method": "Original public housing-authority PDF downloaded; only attached Interstate Power and Light filed tariff sheet extracted. Consultant summary is not used as complete bill evidence.",
+      "selected_pdf_pages": [
+        43
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/oha-appendix-page-43.txt",
+      "extracted_text_sha256": "40199d0bf8e858b54bf2a940c282d48bfcd8600a654c70f23384ca50302ccce9"
+    },
+    {
+      "id": "oha_residential21",
+      "url": "https://www.ohatowers.org/wp-content/uploads/2025/01/S8-HCV-UA-Update-Study-Apr-2025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "83ec981babbc0417e5cb8838f08c3dcca36b63f8da58347c37b044150b4dcc9c",
+      "bytes": 2858628,
+      "retrieval_method": "Original public housing-authority PDF downloaded; only attached Interstate Power and Light filed tariff sheet extracted. Consultant summary is not used as complete bill evidence.",
+      "selected_pdf_pages": [
+        44
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/oha-appendix-page-44.txt",
+      "extracted_text_sha256": "348434e5aa5718ae78cd1ad72b8813da50bc0441b115f175ba339044d2c6c8e8"
+    },
+    {
+      "id": "oha_eac_apr2025",
+      "url": "https://www.ohatowers.org/wp-content/uploads/2025/01/S8-HCV-UA-Update-Study-Apr-2025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "83ec981babbc0417e5cb8838f08c3dcca36b63f8da58347c37b044150b4dcc9c",
+      "bytes": 2858628,
+      "retrieval_method": "Original public housing-authority PDF downloaded; only attached Interstate Power and Light filed tariff sheet extracted. Consultant summary is not used as complete bill evidence.",
+      "selected_pdf_pages": [
+        45
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/oha-appendix-page-45.txt",
+      "extracted_text_sha256": "59e1d990b4ee267549ea0043a840714f0e1e2494ff29a6f6ca258600856501dd"
+    },
+    {
+      "id": "oha_eecr_2024",
+      "url": "https://www.ohatowers.org/wp-content/uploads/2025/01/S8-HCV-UA-Update-Study-Apr-2025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "83ec981babbc0417e5cb8838f08c3dcca36b63f8da58347c37b044150b4dcc9c",
+      "bytes": 2858628,
+      "retrieval_method": "Original public housing-authority PDF downloaded; only attached Interstate Power and Light filed tariff sheet extracted. Consultant summary is not used as complete bill evidence.",
+      "selected_pdf_pages": [
+        46
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/oha-appendix-page-46.txt",
+      "extracted_text_sha256": "eafbd76f2ddf9d9aad4a9c7edeff8271f863e175df2ba61eaba0d4135b973a99"
+    },
+    {
+      "id": "oha_rts_jan2025",
+      "url": "https://www.ohatowers.org/wp-content/uploads/2025/01/S8-HCV-UA-Update-Study-Apr-2025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "83ec981babbc0417e5cb8838f08c3dcca36b63f8da58347c37b044150b4dcc9c",
+      "bytes": 2858628,
+      "retrieval_method": "Original public housing-authority PDF downloaded; only attached Interstate Power and Light filed tariff sheet extracted. Consultant summary is not used as complete bill evidence.",
+      "selected_pdf_pages": [
+        47
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/oha-appendix-page-47.txt",
+      "extracted_text_sha256": "4b6433b0d2482c57ff02ddaa9e495d2e6f2c85225e080c482c8e3b133f084407"
+    },
+    {
+      "id": "official_2025_sample_bill",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowaresdemandbillguide.pdf?hash=EB7E24BBE56C0ADC6687806EF16B4500&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility sample PDF, public search-index visual-element panel plus PDF text inspected; original bytes inaccessible.",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/official-2025-sample-bill-facts.txt",
+      "extracted_text_sha256": "a23039232fd7aaaa30f772161be273ebfa4a080f7608866becdbcfe294110daa"
+    },
+    {
+      "id": "general_definitions",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/section2definitions.pdf?hash=876ABB5FC3BA8E253404804F72A69595&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Official utility PDF publicly indexed text inspected; original bytes unavailable.",
+      "selected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/general-definitions-facts.txt",
+      "extracted_text_sha256": "bf43803a0579e7dd8ab97850724224dd771b10f45fa5a8e09cbc2ed6d7cd9a3e"
+    },
+    {
+      "id": "eac_summary_original_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/eacsummary.pdf?hash=A8CA5D89FF3EB558FB8AC66EC66DE142&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "5f20858b938aacddb1453c7b6147aefec2b29f99232479dd187d700f541ea616",
+      "bytes": 75436,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/eac-summary-original-2025-facts.txt",
+      "extracted_text_sha256": "38a6bd02d0428a32f46cdeb918a5851c9e43f38ff12b6f592bc7ccfdba29a85a",
+      "original_cache_path": ".cache/alliant_2025_research/eac/eac_summary.pdf"
+    },
+    {
+      "id": "eac_details_original_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereacenergyadjustmentclause.pdf?hash=EA46041D4CB9157430846634B2771F3F&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "19f5029c857173627b733682f4005413f056ada7f70c048cd229aac7a05cc814",
+      "bytes": 134310,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/eac-details-original-2025-facts.txt",
+      "extracted_text_sha256": "a9bd38c10dea65048922aa60350a234b53ab715c3b535cb9e0ee1e05ef8fa9e8",
+      "original_cache_path": ".cache/alliant_2025_research/eac/eac_details.pdf"
+    },
+    {
+      "id": "tbr_original_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridertbrtaxbenefitrider.pdf?hash=47F0CF0DB8FFCB227C7740CBB0696CBB&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "22407a3ffd4d99f9d551e8d64e306dee759686cc306e52d18b59d78d85062634",
+      "bytes": 143664,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/tbr-original-2025-facts.txt",
+      "extracted_text_sha256": "a3453734ca03ff136969e2041d2d9151e2b1e1e1a2a19f40258d8760f10f73f8",
+      "original_cache_path": ".cache/alliant_2025_research/eac/tbr.pdf"
+    },
+    {
+      "id": "rce_original_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrceratecaseexpense.pdf?hash=EA3E0AD89FAB71A930DD8ED651951BE1&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "c0bb2574708ca98e1eafb8f925640b1b071c5b1ce87f118ea4d14edcf27ad539",
+      "bytes": 83922,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/rce-original-2025-facts.txt",
+      "extracted_text_sha256": "8a54d4735a04579c017fdf4895f8362d31cde4510c623c67610a994191ec69c8",
+      "original_cache_path": ".cache/alliant_2025_research/eac/rce.pdf"
+    },
+    {
+      "id": "base_residential_original_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricresidentialserviceusage.pdf?hash=980EAC1EFC2A19F140DBB78FD02BBF11&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "ade842236e6b93a9e1187d6168a7e1db28dbde900ee36cf97c298b7866b7c79e",
+      "bytes": 109789,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/residential-original-2025-facts.txt",
+      "extracted_text_sha256": "06975289d6e43adc0645f114a194f1ba73d1ee43943002f4cccff1bf7a910a44",
+      "original_cache_path": ".cache/alliant_2025_research/eac/base_residential.pdf"
+    },
+    {
+      "id": "base_general_original_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricgeneralserviceusage.pdf?hash=46A1D422EE2EF3B33D3232B72CC5C26A&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "25a1ea96de41a77a5e377a7631c192d8160111f41fdfe9c48116c0459cc6a442",
+      "bytes": 141379,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": [
+        1,
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/general-service-original-2025-facts.txt",
+      "extracted_text_sha256": "5ea15a4c4ce29dcbc54442e170d99c4a93517a092e182043b5d8cf04b0042d40",
+      "original_cache_path": ".cache/alliant_2025_research/eac/base_general.pdf"
+    },
+    {
+      "id": "official_sample_original_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowaresdemandbillguide.pdf?hash=EB7E24BBE56C0ADC6687806EF16B4500&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "03f45ec1ec323de1818ef559ee64798b9705c61625ccb3085de5183189aa0fdc",
+      "bytes": 982748,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/official-sample-original-2025-facts.txt",
+      "extracted_text_sha256": "856627c82eb00710ba8cc127c5635009778225a6204aebecdf252204b3ecc835",
+      "original_cache_path": ".cache/alliant_2025_research/eac/official_sample_bill.pdf"
+    },
+    {
+      "id": "outlook_original_2025",
+      "url": "https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/outlook",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f2d0a904ca36abeef62d883871dbf1053605a7e3e282da448b2501e43b960e78",
+      "bytes": 77690,
+      "retrieval_method": "Original official PDF/HTML downloaded using requests with verified TLS and standard public browser user-agent. Earlier indexed evidence retained separately.",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/alliant_ia/outlook-original-2025-facts.txt",
+      "extracted_text_sha256": "9441d659486f4f0b3b8703323c73df529d0c285bdaa1e06b3a7d8116a1bd3e6c",
+      "original_cache_path": ".cache/alliant_2025_research/eac/outlook.html"
+    },
+    {
+      "id": "rts_official_archive_sept2025",
+      "url": "https://web.archive.org/web/20250907174848id_/https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/electric/rts",
+      "retrieved_date": "2026-10-25",
+      "sha256": "1c6b7050110278968f06ce98eca9e17898f069ef260474b7961d19a83702bfdd",
+      "bytes": 62595,
+      "retrieval_method": "Original archived official utility HTML or official utility bill-insert PDF downloaded; dated rate table and application language inspected.",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/alliant_ia/rts-2025-official-archive-facts.txt",
+      "extracted_text_sha256": "db384b4d3c99a1d2d56582bab84f5a456a90f107f260c66014da4a1cb72512fb",
+      "original_cache_path": ".cache/alliant_2025_research/rts/rts-20250907-page.html",
+      "original_url": "https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/electric/rts"
+    },
+    {
+      "id": "rts_official_archive_oct2025",
+      "url": "https://web.archive.org/web/20251010131804id_/https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/electric/rts",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f58bc0b3ab454cc17fcf113a4458830db84048f0ec6a77e9c6dfa92288066572",
+      "bytes": 61933,
+      "retrieval_method": "Original archived official utility HTML or official utility bill-insert PDF downloaded; dated rate table and application language inspected.",
+      "selected_pdf_pages": null,
+      "extracted_text": "docs/utility_sources/alliant_ia/rts-2025-official-archive-october-facts.txt",
+      "extracted_text_sha256": "878c23de8e1d153355318eae52ac4979a1ef05bd15251a2cb1d059c0b0e187d8",
+      "original_cache_path": ".cache/alliant_2025_research/rts/rts-20251010-page.html"
+    },
+    {
+      "id": "rts_proration_insert_original",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/rtschargeinsert.pdf?sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "9a18e75e556ce25462cc4921e1f347d567724febb0dcda9b4be3c509c8ffb6cb",
+      "bytes": 81431,
+      "retrieval_method": "Original archived official utility HTML or official utility bill-insert PDF downloaded; dated rate table and application language inspected.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/rts-proration-insert-original-facts.txt",
+      "extracted_text_sha256": "e850efa41eff1e32c781fbc464007fd9e0637760771fb65012aebe091b063ffc",
+      "original_cache_path": ".cache/alliant_2025_research/rts/rts-insert.pdf"
+    },
+    {
+      "id": "history2025_eecr2025-indexed",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereecrenergyefficiencycostrecovery.pdf?hash=5983CD1D737B6856D51E6CCDA331D86A&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Public official search-index text; original historical PDF bytes not recovered.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-eecr2025-indexed.txt",
+      "extracted_text_sha256": "90b1725d0208ec402db9615a7597433415a8e566f81e6665654f07a495290800"
+    },
+    {
+      "id": "history2025_drcr2025-indexed",
+      "url": "https://www.alliantenergy.com/CustomerService/AlliantEnergyService/RatesandTariffs/-/media/1ED911B513B8409CB81FCACF4788AD28.ashx?hash=6175C1FFA8922A484C526F56C4E93AB0&la=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": null,
+      "retrieval_method": "Public official search-index text; original historical PDF bytes not recovered.",
+      "selected_pdf_pages": [
+        1
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-drcr2025-indexed.txt",
+      "extracted_text_sha256": "f3b4032babf21224a5493cf95e4f0e70da6909bedce0765616c230540cfe20c4"
+    },
+    {
+      "id": "history2025_eecr2024-actual-appendix",
+      "url": "https://www.ohatowers.org/wp-content/uploads/2025/01/S8-HCV-UA-Update-Study-Apr-2025.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "83ec981babbc0417e5cb8838f08c3dcca36b63f8da58347c37b044150b4dcc9c",
+      "retrieval_method": "Downloaded original public housing-authority report; attached filed utility sheet extracted. Consultant summary is not complete-bill evidence.",
+      "selected_pdf_pages": [
+        46
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-eecr2024-actual-appendix.txt",
+      "extracted_text_sha256": "91cc2dabe0cf90750b150bb2f2cb7ce32eae839897162b53e82ec6e38f41c5d2",
+      "original_cache_path": ".cache/alliant_research/oha-apr2025.pdf",
+      "bytes": 2858628
+    },
+    {
+      "id": "history2025_smallbusiness-sample-redacted-facts",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowasmallbusinessbillguide.pdf?hash=E0C3D66D3601DBD6667E65FFD96C0B21&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "60b88e37dfe3386c5fcdd31612f031d5954cceae161eb96e10ea662f730745ae",
+      "retrieval_method": "Downloaded original official utility bill-guide PDF; visual bill panel reviewed; only non-identifying rate/billing facts retained.",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-smallbusiness-sample-redacted-facts.txt",
+      "extracted_text_sha256": "542baf8f62a81ee5c907ba40723513fdea4ad0fb7fc0924bbe4916e795c78f40",
+      "original_cache_path": ".cache/alliant_2025_research/riders/official_smallbusiness_bill.pdf",
+      "bytes": 1117273
+    },
+    {
+      "id": "history2025_boone-sept-redacted-facts",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?id=2352&view=item",
+      "retrieved_date": "2026-10-25",
+      "sha256": "568b629e947a89402a31ec44723a701dc8c0c024d803c9997b73df2701222f9a",
+      "retrieval_method": "Downloaded original official municipal public-meeting PDF; relevant bill pages visually verified; only redacted rate/billing facts retained.",
+      "selected_pdf_pages": [
+        15,
+        16
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-sept-redacted-facts.txt",
+      "extracted_text_sha256": "ae0838ffd6949b81933542f4e5e13733553d8c4e5036cd715cafbfd703587180",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2352.pdf",
+      "bytes": 16895478
+    },
+    {
+      "id": "history2025_boone-dec-correction-redacted-facts",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?id=2461&view=item",
+      "retrieved_date": "2026-10-25",
+      "sha256": "0b33fd2f1d84d5e6ef2aed22a67dd8611568b0d48597914ff08e21c6d19933e1",
+      "retrieval_method": "Downloaded original official municipal public-meeting PDF; source is a corrected utility bill; only redacted rate/billing facts retained.",
+      "selected_pdf_pages": [
+        21
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-dec-correction-redacted-facts.txt",
+      "extracted_text_sha256": "8a429ddedd4bdd194074151b1cf28cc52dd0d61753074c49e2c52cb624c16258",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2461.pdf",
+      "bytes": 2225689
+    },
+    {
+      "id": "history2025_iowa19935-final-facts",
+      "url": "https://www.legis.iowa.gov/docs/iac/chapter/199.35.pdf",
+      "retrieved_date": "2026-10-25",
+      "sha256": "41c9a81bfcb6ea089a7c5b0f8b0241eed1d656d992a5b15ba3a8ad04cfa96705",
+      "retrieval_method": "Downloaded original official public PDF; selected fact receipt and/or relevant codified pages retained.",
+      "selected_pdf_pages": [
+        12,
+        13
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-iowa19935-final-facts.txt",
+      "extracted_text_sha256": "0efa6d34abf62fd1f03f2a7a558d66196a9e0fc0971d37938ca1f5181bfa7839",
+      "original_cache_path": ".cache/alliant_2025_research/riders/iowa19935.pdf",
+      "bytes": 213814
+    },
+    {
+      "id": "history2025_residential-sample-redacted-facts",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowaresdemandbillguide.pdf?hash=EB7E24BBE56C0ADC6687806EF16B4500&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "03f45ec1ec323de1818ef559ee64798b9705c61625ccb3085de5183189aa0fdc",
+      "retrieval_method": "Downloaded original official public PDF; selected fact receipt and/or relevant codified pages retained.",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-residential-sample-redacted-facts.txt",
+      "extracted_text_sha256": "7a0d41df3fa44a8c9426f26e5fef9eb1d6eedb0968912c090c3d47d42d202980",
+      "original_cache_path": ".cache/alliant_2025_research/riders/official_residential_bill.pdf",
+      "bytes": 982748
+    },
+    {
+      "id": "history2025_boone-june17-crossing-redacted-facts",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2270",
+      "retrieved_date": "2026-10-25",
+      "sha256": "5d2f7994e4d21a4128dbdb465fcc05c0ddc57970e6d54c4bdeb768731a281903",
+      "retrieval_method": "Downloaded original public municipal meeting packet; relevant utility bill visually verified; redacted factual receipt.",
+      "selected_pdf_pages": [
+        22
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-june17-crossing-redacted-facts.txt",
+      "extracted_text_sha256": "a8a70af5770d5af6f3f316d21ba920a017fdc952839b3091b34cac9d644e3473",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2270.pdf",
+      "bytes": 2760757
+    },
+    {
+      "id": "history2025_boone-august2024-rider-change-redacted-facts",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=1986",
+      "retrieved_date": "2026-10-25",
+      "sha256": "a0eaad386b4fc8f7f23f2237310beac7d33a6742993f394d6f4c918b17263f1b",
+      "retrieval_method": "Downloaded original public municipal meeting packet; relevant utility bill visually verified; redacted factual receipt.",
+      "selected_pdf_pages": [
+        16
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-august2024-rider-change-redacted-facts.txt",
+      "extracted_text_sha256": "4f22f6589fff2a2ac510ef47b7bae73b84b499e3f8cf249b1d8a3988bf57a072",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone1986.pdf",
+      "bytes": 2456600
+    },
+    {
+      "id": "history2025_boone-january2025-old-riders",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2122",
+      "retrieved_date": "2026-10-25",
+      "sha256": "bb3854f623e0fc2d72d6108ad686ddd4596d21bb18fa25bae9c7c417fcba69a2",
+      "retrieval_method": "Downloaded original public municipal meeting packet; only non-identifying rate/billing facts retained. Visually checked except July factor-only embedded-text corroboration.",
+      "selected_pdf_pages": [
+        15
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-january2025-old-riders.txt",
+      "extracted_text_sha256": "b5f6f69573815188d879aba86eaa0575a77077e562d0993f976981e3553f7905",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2122.pdf",
+      "bytes": 3121214
+    },
+    {
+      "id": "history2025_boone-february2025-old-riders",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2159",
+      "retrieved_date": "2026-10-25",
+      "sha256": "99c277ca3a9eea89a1f8a0bbdb53a1413aa2c1d3600294f60a569d4b79765a17",
+      "retrieval_method": "Downloaded original public municipal meeting packet; only non-identifying rate/billing facts retained. Visually checked except July factor-only embedded-text corroboration.",
+      "selected_pdf_pages": [
+        21
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-february2025-old-riders.txt",
+      "extracted_text_sha256": "a93a6b225b50049c8c20bcfc816fb7bc0260074a0021788e4049fb096e4edd2a",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2159.pdf",
+      "bytes": 4125433
+    },
+    {
+      "id": "history2025_boone-march2025-old-riders",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2193",
+      "retrieved_date": "2026-10-25",
+      "sha256": "23ed41247492805713c527cd2059b2f5f9ef19df6a03f95c59bdf44c2e668ca8",
+      "retrieval_method": "Downloaded original public municipal meeting packet; only non-identifying rate/billing facts retained. Visually checked except July factor-only embedded-text corroboration.",
+      "selected_pdf_pages": [
+        27
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-march2025-old-riders.txt",
+      "extracted_text_sha256": "3df8683b44e85539161511caf5439bfb915d4334b686f2a9d9be95fcbf990354",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2193.pdf",
+      "bytes": 4123775
+    },
+    {
+      "id": "history2025_boone-april2025-old-riders",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2217",
+      "retrieved_date": "2026-10-25",
+      "sha256": "a48edf130704539b08273388faffda009470d86d4098a33118ffaaa1ed3dc687",
+      "retrieval_method": "Downloaded original public municipal meeting packet; only non-identifying rate/billing facts retained. Visually checked except July factor-only embedded-text corroboration.",
+      "selected_pdf_pages": [
+        9
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-april2025-old-riders.txt",
+      "extracted_text_sha256": "8c444923e1f25a2fcde10728e8be200b8dad95bf365dfaa91b98921104371da8",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2217.pdf",
+      "bytes": 2690790
+    },
+    {
+      "id": "history2025_boone-may2025-old-riders",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2246",
+      "retrieved_date": "2026-10-25",
+      "sha256": "c0480ea6e489ea4425cf7748b9a10dedf1d832cf536488566d122162cd904729",
+      "retrieval_method": "Downloaded original public municipal meeting packet; only non-identifying rate/billing facts retained. Visually checked except July factor-only embedded-text corroboration.",
+      "selected_pdf_pages": [
+        20,
+        21
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-may2025-old-riders.txt",
+      "extracted_text_sha256": "34fab5dca01d7809c8285e954f87cc003baba11804afa445b207fd342474509e",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2246.pdf",
+      "bytes": 3303957
+    },
+    {
+      "id": "history2025_boone-july2025-new-riders",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2302",
+      "retrieved_date": "2026-10-25",
+      "sha256": "4786eb104f3e03201915e04fdbd194ecc88a3d279ef13621025f520388eca4db",
+      "retrieval_method": "Downloaded original public municipal meeting packet; only non-identifying rate/billing facts retained. Visually checked except July factor-only embedded-text corroboration.",
+      "selected_pdf_pages": [
+        10
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-july2025-new-riders.txt",
+      "extracted_text_sha256": "72a22547baf9f557e40c8642e58e0210ed48d89a3c1915d515238e0ef752dc23",
+      "original_cache_path": ".cache/alliant_2025_research/riders/boone2302.pdf",
+      "bytes": 2399710
+    },
+    {
+      "id": "official_residential_guide_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowaresidentialbillguide.pdf?hash=82BB9AE5CA1DF5EA0B78F6881CE2B7BC&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f3ebaaa9a9df28c0d4249759695f95286a906d60dd295af0d09601ee39ff1f34",
+      "bytes": 1091436,
+      "retrieval_method": "Original official utility-issued guide PDF, downloaded with verified TLS and visually inspected page 2; only redacted rate and applicability facts retained.",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/official-residential-guide-2025-facts.txt",
+      "extracted_text_sha256": "874da1d2a6db4cd50b14895f8415e9e22d4fdb15a4fc29cbb22ee6596caf3fd2",
+      "original_cache_path": ".cache/alliant_2025_research/guides/residential.pdf"
+    },
+    {
+      "id": "official_nightowl_guide_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowanightowlbillguide.pdf?hash=687DD6C867B858DC784C7D2E867D878A&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "ff0f561120c61eec2c224240b56cf840d06a900c20059944cc1273e80956e114",
+      "bytes": 1241150,
+      "retrieval_method": "Original official utility-issued guide PDF, downloaded with verified TLS and visually inspected page 2; only redacted rate and applicability facts retained.",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/official-nightowl-guide-2025-facts.txt",
+      "extracted_text_sha256": "71aadab04e0f5b50eeb5e3529237697667d4362e99ca4b4231c5652d260815b6",
+      "original_cache_path": ".cache/alliant_2025_research/guides/nightowl.pdf"
+    },
+    {
+      "id": "official_summersaver_guide_2025",
+      "url": "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowasummersaverbillguide.pdf?hash=17B15EDEC2F7DA9F02C1DB23942C3E3B&sc_lang=en",
+      "retrieved_date": "2026-10-25",
+      "sha256": "fe53875fd82db96422d64e894140e33d31bdb8f6773e7b41719f18275413bc4e",
+      "bytes": 1186841,
+      "retrieval_method": "Original official utility-issued guide PDF, downloaded with verified TLS and visually inspected page 2; only redacted rate and applicability facts retained.",
+      "selected_pdf_pages": [
+        2
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/official-summersaver-guide-2025-facts.txt",
+      "extracted_text_sha256": "6e9d30fa5767097f32787cbee980b13d0c1e9ee3a41fc4e4bd67185c8aeb3f96",
+      "original_cache_path": ".cache/alliant_2025_research/guides/summersaver.pdf"
+    },
+    {
+      "id": "history2025_boone_october_tbr_transition",
+      "url": "https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2376",
+      "retrieved_date": "2026-10-25",
+      "sha256": "f58a2a6d053a53c0a54656c752489c4b6f3a8c450445ef17e86cf7ebc9a03e2d",
+      "bytes": 4820410,
+      "retrieval_method": "Original public municipal packet downloaded with verified TLS; utility charge table visually verified; only redacted rate/billing facts retained.",
+      "selected_pdf_pages": [
+        11
+      ],
+      "extracted_text": "docs/utility_sources/alliant_ia/history2025-boone-october-tbr-transition.txt",
+      "extracted_text_sha256": "9c79ae4a4bf096c5aa1504171b0207a314f4efa3776435a7a74e72cf34a3bf3b",
+      "original_cache_path": ".cache/alliant_2025_research/eac/boone2376.pdf"
+    }
+  ]
+}

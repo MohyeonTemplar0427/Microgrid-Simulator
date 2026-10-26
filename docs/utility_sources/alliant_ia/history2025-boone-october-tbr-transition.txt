@@ -1,0 +1,16 @@
+Primary utility-bill reproduction in official Boone Airport Commission packet
+Source: https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2376
+Original PDF page 11, retrieved 2026-10-25; charge table visually verified.
+Non-Residential Electric Service, Rate 600; stated period Sep 19-Oct 21, 2025; 32 billed days; 720 kWh.
+Winter Energy: 720 kWh x USD 0.12041 = USD 86.70.
+Tax Benefit Rider Credit: 247.500 kWh x USD -0.00592 = USD -1.47; explicitly labeled 11 of 32 days.
+247.500 equals whole-cycle 720 kWh x 11/32; this is day-fraction allocation, not measured subperiod kWh.
+Energy Cost: 720 kWh x USD 0.01496 = USD 10.77 (October billing-month EAC).
+Energy Efficiency Programs Charge: 720 kWh x USD 0.0032 = USD 2.30.
+Demand Response Programs Charge: 720 kWh x USD 0.0028 = USD 2.02.
+Regional Transmission Service: 720 kWh x USD 0.03196 = USD 23.01.
+Basic Service Charge: 32 days x USD 0.7562 = USD 24.20.
+Franchise Fee: USD 147.53 x 1% = USD 1.48.
+State Tax: USD 149.01 x 6% = USD 8.94.
+Total Current Charges: USD 157.95.
+This shifted cycle retains a day-prorated pre-expiry TBR even though EAC is the October billing-month factor. It must not be interpreted as a full October TBR. Arbitrary billing-cycle support requires its own explicit date-allocation contract and tests; current complete-calendar-month studies remain bounded. No name, account number, meter number, address, or billing barcode retained.

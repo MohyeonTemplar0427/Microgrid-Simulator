@@ -1,0 +1,71 @@
+PDF page 1:
+Rate
+Generation Supply 
+Charge ( ¢ / KWH )
+Transmission Service 
+Charge ( ¢ / KWH )
+2025 PA Tax Adj 
+Surchg.(1) ( ¢ / KWH )
+Price to Compare
+( ¢ / KWH )
+RS (Residential Service) 9.166 3.324 0.000 12.490
+RTS (Res Thermal Storage) 9.166 3.324 0.000 12.490
+RWO (Res Separate Water Htg Svc) 9.166 3.324 0.000 12.490
+Residential (TOU On peak - Summer) 13.333 3.324 0.000 16.657
+Residential (TOU Off peak - Summer) 8.243 3.324 0.000 11.567
+Residential (TOU On peak - Non-Summer) 0.000 0.000 0.000 0.000
+Residential (TOU Off peak - Non-Summer) 0.000 0.000 0.000 0.000
+BL (Borderline Service) 8.956 3.158 0.000 12.114
+GS1 G1D (Small Gen Svc) 8.956 3.158 0.000 12.114
+G1V (Small Gen Svc Volunteer ) 8.956 3.158 0.000 12.114
+G1C 8.956 3.158 0.000 12.114
+GH2 H2R (Sprt Mtr Comm Spc Htng) 8.956 3.158 0.000 12.114
+SA (Private Area Lighting)  8.956 3.158 0.000 12.114
+SA (per lamp) (9500 Lumen) (HPS) 5.875 2.072 0.000 7.947
+SA (per fixture) (4300 Lumen) (LED) 1.380 0.487 0.000 1.867
+SE (cents per kwh)(Energy Only) 8.956 3.158 0.000 12.114
+SHS  (High Pressure Sodium) (HPS) 8.956 3.158 0.000 12.114
+SHS (per lamp) (5800 Lumen) 2.669 0.941 0.000 3.610
+SHS (per lamp) (9500 Lumen) 3.824 1.348 0.000 5.172
+SHS (per lamp) (16000 Lumen) 5.624 1.983 0.000 7.607
+SHS (per lamp) (25500 Lumen) 10.147 3.578 0.000 13.725
+SHS (per lamp) (50000 Lumen) 15.924 5.615 0.000 21.539
+SLE (Light Emitting Diode) (LED) 8.956 3.158 0.000 12.114
+SLE (per fixture) (2600 Lumen) 1.155 0.407 0.000 1.562
+SLE (per fixture) (3300 Lumen) 1.683 0.593 0.000 2.276
+SLE (per fixture) (3800 Lumen) 1.701 0.600 0.000 2.301
+SLE (per fixture) (4900 Lumen) 2.325 0.820 0.000 3.145
+SLE (per fixture) (7500 Lumen) 2.967 1.046 0.000 4.013
+SLE (per fixture) (15000 Lumen) 5.534 1.951 0.000 7.485
+SLE (per fixture) (20000 Lumen) 8.583 3.026 0.000 11.609
+SM (Mercury Vapor)  8.956 3.158 0.000 12.114
+SM (per lamp) (3350 Lumen) 4.397 1.551 0.000 5.948
+SM (per lamp) (6650 Lumen) 6.869 2.422 0.000 9.291
+SM (per lamp) (10500 Lumen) 9.601 3.385 0.000 12.986
+SM (per lamp) (20000 Lumen) 15.207 5.362 0.000 20.569
+SM (per lamp) (34000 Lumen) 25.928 9.142 0.000 35.070
+SM (per lamp) (51000 Lumen) 35.833 12.635 0.000 48.468
+TS (Municipal Traffic Signal) 8.956 3.158 0.000 12.114
+TS (per watt) 0.065 0.023 0.000 0.088
+GS3 (Large General Service) 8.956 3.158 0.000 12.114
+G3V (Large Gen Svc Volunteer) 8.956 3.158 0.000 12.114
+MG3 (GS3>=100 kw) (Real Time Pricing) RTP(2)
+3.158 (GSC+TSC)*0.00001 GSC+TSC+STAS
+Small C&I - TOU On peak - Summer 12.836 3.158 0.000 15.994
+Small C&I - TOU Off peak - Summer 8.098 3.158 0.000 11.256
+Small C&I - TOU On peak - Non-Summer 0.000 0.000 0.000 0.000
+Small C&I - TOU Off peak - Non-Summer 0.000 0.000 0.000 0.000
+$/kW
+L4L (LP4 < 100 kw) (Lrg Gen Srv) (12kV) 8.956 21.350 (GSC+TSC)*0.00001 GSC+TSC+STAS
+MP1 (LP4 >=100 kw) (Real Time Pricing) RTP(2)
+21.350 (GSC+TSC)*0.00001 GSC+TSC+STAS
+MT1 (LP5) (Real Time Pricing) (69kV) RTP(2)
+56.378(3) (GSC+TSC)*0.00001 GSC+TSC+STAS
+ Price to Compare
+June 1, 2025 through November 30, 2025
+(1)  The GSC and the TSC reflect the statutory PA Gross Receipts Tax (GRT) of 5.9%.  The State Tax Adjustment Surcharge (STAS) @ 0.001% reflects the incremental GRT pur suant to 72 P.S. 
+§ 8111-A(d) less any applicable refunds.
+(2)  The Real Time Price (RTP) includes  the PJM real time hourly price with a correction for losses bas ed on customer voltage level, the customer specific capacity value, administrative char ges, 
+over/under collection amounts from the previous period determined by the Com pany's monthly reconciliation process and applicable GRT.
+(3) The Transmission Service Charge ($/kW) for the MT1 (LP5) class was updated to be $56.378 for the period of July 12, 2025 through Novem ber 30, 2025 via filing made on June 12, 2025.
+#

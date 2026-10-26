@@ -1,0 +1,2 @@
+Factual source notes, retrieved2026-10-25.
+OfficialUnderstandingYourBill,updatedSeptember2026billing,1000kWhSSOresidentialexample: generationenergy$75.08,capacity$26.59,auction$4.12,alternativeenergy$3.90,totalgeneration$109.69. Basecustomer$13.50+distributionenergy$34.77=$48.27. Transmission$43.44,kWhTax$4.65,taxsavingscredit-$1.91,EE$0.45,PIPP$5.52,ESRR$2.80,DIR$2.60,EDCR$0.87,storm$0.19,gridSMART$2.65. ElectricGridtotal$109.53,totalbill$219.22. Eachlineisroundedtocents.

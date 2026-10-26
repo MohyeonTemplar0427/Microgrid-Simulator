@@ -1,0 +1,329 @@
+Original official PDF factual-source extraction. Retrieval2026-10-25.
+
+=== PDF page 1 ===
+   OHIO POWER COMPANY
+                                                                                                       37th Revised Sheet No. 101-1
+                                                                                            Cancels 36th Revised Sheet No. 101-1
+
+                                                           P.U.C.O. NO. 21
+
+                                                         TABLE OF CONTENTS
+
+  Schedule                                                                        Sheet No(s)             Effective Date
+Ohio Power & Columbus Southern Power Rate Zones
+                    Table of Contents                                        101-1 thru 101-2       Cycle 1 April 2025
+                    List of Communities Served                            102-1 thru 102-9       December 1, 2021
+                    Terms and Conditions of Service                      103-1 thru 103-81     Cycle 1 April 2023
+                    Supplier Terms and Conditions                        103-27 thru 103-55    December 1, 2021
+                    Summary of Applicable Riders                         104-1                    June 1, 2024
+                    Schedule Cross Reference                             105-1 thru 105-2       June 1, 2024
+
+Tariff Schedules
+RS                Residential Service                                      210-1 thru 210-2       January 1, 2022
+RSDM            Residential Service – Demand Metered              214-1 thru 214-2       January 1, 2022
+RS-TOU         Residential Time-of-Use                                215-1 thru 215-2       Cycle 1 February
+                                                                                                                2022
+RS-TOD         Residential Time-of-Day (no new customers)        216-1 thru 216-2       January 1, 2022
+GS-1             General Service – Non-Demand Metered            220-1 thru 220-2       December 1, 2024
+GS                General Service                                          220-3 thru 220-7       December 1, 2024
+GS-TOU         General Service – Time-of-Use – Non-Demand     221-1 thru 221-2       Cycle 1 February
+                                                                                                                2022
+GS-TOD         General Service – Time-of-Day (no new                                222–1 thru 222-2      December 1, 2021
+                    customers)
+GS-FAIR         County and Independent Fairs                         228-1 thru 228-2       December 1, 2021
+AL                 Area Lighting                                             240-1 thru 240-4       December 1, 2021
+SL                 Street Lighting                                            241-1 thru 241-5       December 1, 2021
+EHG              Electric Heating General (No new customers)       250-1 thru 250-2       December 1, 2021
+EHS              Electric Heating Schools (No new customers)       251-1 thru 251-2       December 1, 2021
+SS                School Service (No new customers)                  252-1 thru 252-2       December 1, 2021
+Supp. No. 18    Church and School Service (No new customers)   253-1                    December 1, 2021
+Supp. No. 21    Public Authority-Delayed Payment                    255-1                    December 1, 2021
+GSP              Generation Station Power                              260-1 thru 260-2       December 1, 2021
+NEMS            Net Energy Metering Service                           261-1 thru 261-2       December 1, 2021
+NEMS-H         Net Energy Metering Service – Hospitals            262-1 thru 262-2       December 1, 2021
+COGEN/SPP    Cogeneration and/or Small Power Production       263-1 thru 263-3        February 1, 2025
+PEV              Pilot Plug-In Electric Vehicles                          270-1 thru 270-2       June 1, 2024
+RS-PEV          Residential Plug-in Electric Vehicle                   271-1 thru 271-2       June 1, 2024
+BUS-PEV        Public Plug-in Electric Vehicle                         272-1 thru 272-2       June 1, 2024
+PA                Pole Attachment Tariff                                   300-1 thru 300-3       December 1, 2021
+Riders
+                    Basic Transmission Cost Rider                        400-1                    Cycle 1 April 2025
+                    KWH Tax Rider                                           402-1                    December 1, 2021
+                    Universal Service Fund Rider                          404-1                    Cycle 1 January 2025
+                    Pilot Throughput Balancing Adjustment Rider       406-1                    Cycle 1 March 2025
+
+ Filed pursuant to Orders dated April 3, 2024, in Case No. 23-23-EL-SSO and May 28, 2025, in Case No.
+    25-475-EL-RDR.
+
+  Issued:  May 28, 2025                                                                          Effective: June 1, 2025
+                                                              Issued by
+                                                     Marc Reitter, President
+                                                              AEP Ohio
+
+=== PDF page 2 ===
+    OHIO POWER COMPANY
+                                                                                                                                37th Revised Sheet No. 101-2
+                                                                                                                  Cancels 36        th Revised Sheet No. 101-2
+
+                                                                            P.U.C.O. NO. 21
+
+                                                                       TABLE OF CONTENTS
+
+                          Enhanced Service Reliability Rider                          408-1                           June 1, 2024
+                          gridSMART Rider                                                     410-1                           Cycle 1 April 2025
+                          Distribution Investment Rider                                   412-1                           Cycle 1 March 2025
+                          Storm Damage Recovery Rider                               414-1                           Cycle 1 November
+                                                                                                                                            2024
+                          Bad Debt Rider                                                         416-1                           June 1, 2024
+                          Economic Development Cost Recovery Rider         420-1                           Cycle 1 April 2025
+                          Legacy Generation Resource Rider                         422-1                           January 1, 2025
+                          Retail Reconciliation Rider                                       424-1                           June 1, 2024
+                          SSO Credit Rider                                                      425-1                           June 1, 2024
+                          Power Forward Rider                                               428-1                           June 1, 2024
+                          Tax Savings Credit Rider                                         432-1                           June 1, 2024
+                          Solar Generation Fund Rider                                   433-1                           January 1, 2025
+                          Ohio First Rider                                                        435-1                           June 1, 2024
+                          Energy Efficiency Rider                                            437-1                           Cycle 1 April 2025
+                          Generation Energy Rider                                          450-1                           June 1, 2025
+                          Generation Capacity Rider                                       451-1 thru 451-2         June 1, 2025
+                          Auction Cost Reconciliation Rider                            452-1                           Cycle 1 April 2025
+                          Energy Efficiency and Peak Demand Reduction                                    453-1                           June 1, 2024
+                         Rider
+                          Alternative Energy Rider                                          454-1                           June 1, 2024
+IRP-L                 Interruptible Power Rider – Legacy                                                 470-1 thru 470-3         June 1, 2024
+                         Discretionary Rider
+IRP-E                Interruptible Power Rider – Expanded                                                471-1 thru 471-2         June 1, 2024
+                         Discretionary Rider
+                          Automaker Credit Rider                                            472-1                           June 1, 2024
+                          Alternate Feed Service Rider                                   474-1 thru 474-5         June 1, 2024
+                          Pilot Demand Response Rider                                 475-1                           June 1, 2024
+                          Underground Service Tariff                                      476-1                           December 1, 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Filed pursuant to Orders dated April 3, 2024, in Case No. 23-23-EL-SSO and May 28, 2025,in Case No.
+     25-475-EL-RDR.
+
+
+
+
+
+   Issued:  May 28, 2025                                                                                                  Effective: June 1, 2025
+                                                                              Issued by
+                                                                  Marc Reitter, President
+                                                                             AEP Ohio
+
+
+=== PDF page 170 ===
+   OHIO POWER CO MPAN Y                                                                                                         4th Revised Sheet No. 450-1
+                                                                                                                  Cancels 3rd Rev ised                                        Sheet No. 450-                                        1
+
+
+                                                                           P.U.C.O. NO. 21
+
+                                                              GENER ATION EN ERGY R IDER
+
+
+  Effective    June                        1,    2025, all customer bills subject to the provis ions of this Rider, including any bills rendered
+  under special contr act, shall be adjusted by the Gener ation Energy                               char ge as follows:
+
+
+                                            Schedule                                                       Summer (Jun-Sep)                   Winter (Oct-May)
+                                                                                                                    ¢/KWH                             ¢/KWH
+ Residential
+ RS, R SDM , R S-TOD, RS-TOU, PEV, RS-PEV                                                                          7.68800                           7.68800
+ PIPP R esidential                                                                                                 5.83300                                                                                                                                                                                                         5.83300
+ RS, R SDM , R S-TOD, RS-TOU, PEV
+ Non Demand Metered
+ GS-1, GS Recreational Lighting, GS-TOD, G S-TOU, EHS, SS                                                          7.68800                           7.68800
+ Demand Metered Second ary
+ GS, EHG,  BU S-PEV                                                                                                7.68800                           7.68800
+ Demand Metered Primary
+ GS, BU S-PEV                                                                                                      7.42900                           7.42900
+ Demand Metered Subtran smission/T ransm ission
+ GS, BU S-PEV                                                                                                      7.29500                           7.29500
+ Lighting
+ AL, SL                                                                                                            7.68800                           7.68800
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated May 28, 2025 in C ase N o. 25-475-EL-RDR and Order dated April 3, 2024 in
+Case No. 23-                                                  23-EL- SSO
+
+
+Issued:  May 28, 2025                                                                                                                    Effective:  June 1, 2025
+                                                                               Issued by
+                                                                     Marc Reitter, President
+                                                                               AEP Oh io
+
+
+=== PDF page 171 ===
+OHIO POWER CO MPAN Y                                                                                                    4th Revised Sheet No. 451-1
+                                                                                                          Cancels 3rd Rev ised                                         Sheet No. 451-                                        1
+
+                                                                    P.U.C.O. NO. 21
+
+                                                       GENER ATION C APACIT Y RIDER
+
+
+Effective June                                                           1, 202                                      5, all customer bills subject to the provisions of this Rider, including any bills rendered
+under special contract, shall be adjusted by the Generation Capacity charge                                         as follows:
+
+            Columbus Southern Power Rate Zone
+
+            Rate                                                                                                           ¢/kWh or $/Month
+            RS, PEV, RS-PEV                                                                                                2.29800
+            RS-TOU 1                                                                         On-Peak Hours                 19.20005
+                                                                                             Off-Peak Hours                0.00000
+            RLM                                                                              Winter Rate
+                                                                                             First 750 KWH                 3.18762
+                                                                                             Next 150 KWH                  1.72503
+                                                                                             All Other KWH                 2.01743
+                                                                                             Summer Rate
+                                                                                             First 750 KWH                 3.18762
+                                                                                             Next 150 KWH                  3.02806
+                                                                                             All Other KWH                 2.83330
+
+            RS-E S,  RS-TOD                                                                  On Peak KWH                   3.97676
+                                                                                             Off-Peak KWH                  1.36430
+            GS-1                                                                                                           1.88500
+            GS-2-TOD, GS-2 LM T OD                                                           On-Peak Hours                 5.64179
+                                                                                             Off-Peak Hours                0.01928
+            GS-TOU1, PEV                                                                     On-Peak Hours                 15.80735
+                                                                                             Off-Peak Hours                0.00000
+            Demand Metered Secondary                                                         On-Peak Hours                 2.10674
+            BUS-PEV2                                                                         Off-Peak Hours                0.90900
+            Demand Metered Primary                                                           On-Peak Hours                 1.63969
+            BUS-PEV2                                                                         Off-Peak Hours                0.69250
+            Demand Metered Transmission                                                      On-Peak Hours                 1.96597
+            BUS-PEV2                                                                         Off-Peak Hours                0.81500
+            Demand Metered Secondary
+            GS                                                                                                             1.81800
+            Demand Metered Primary
+            GS                                                                                                             1.38500
+            Demand Metered Transmission
+            GS                                                                                                             1.63000
+1 Applicable only to customers with AMI meters.  On-Peak hours applies to all weekdays, except the                                                 legal
+holidays of New Year’s Day, Presidents’ Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day
+and Christmas Day.  November through April 6AM to 9AM and May through October 2PM through 6PM.
+2 Applicable only to customers with AMI meters.  O                   n-peak billing period is defined as 6 a.m. to 11 p.m. Off-
+peak billing period is defined as those hours not designated as on-                   peak hours
+
+Seasonal Periods
+The winter period shall be the billing months of October through May and the summer per iod shall be the
+billing months of June through September.
+
+
+
+
+
+Filed pursuant to Order dated May 28, 2025 in C ase N o. 25-475-EL-RDR and Order dated April 3, 2024 in
+Case No. 23-                                                  23-EL- SSO
+
+Issued:  May 28, 2025                                                                                                       Effective:  June 1, 2025
+                                                                        Issued by
+                                                              Marc Reitter, President
+                                                                        AEP Oh io
+
+
+=== PDF page 172 ===
+OHIO POWER CO MPAN Y                                                                                                    4th Revised Sheet No. 451-2
+                                                                                                           Cancels 3rd Rev ised Sheet No. 451-                                        2
+
+                                                                     P.U.C.O. NO. 21
+
+                                                       GENER ATION C APACIT Y RIDER
+
+
+
+Effective June                                                              1, 2025                                                                       , all customer bills subject to the provisions of this Rider, including any bills rendered
+under special contract, shall be adjusted by the Generation Capacity charge as follows:
+
+            Ohio Power Rate Zone
+
+           Rate                                                                                                            ¢/kWh or $/Month
+           RS,  RS-PEV                                                                                                     2.29800
+           RS – TOU 1                                                                         On-Peak Hours                19.20005
+                                                                                              Off-Peak Hours               0.00000
+           RS-E S,  RS-TOD                                                                    On Peak KWH                  4.75875
+                                                                                              Off-Peak KWH                 1.31096
+           GS-1, EHS, SS, GS Recreational Lighting                                                                         1.88500
+           GS – TOU 1                                                                         On-Peak Hours                15.80735
+                                                                                              Off-Peak Hours               0.00000
+           GS-1 ES                                                                            On-Peak Hours                3.85577
+                                                                                              Off-Peak Hours               0.84170
+           GS-TOD, GS-2E S                                                                    On-Peak Hours                3.08844
+                                                                                              Off-Peak Hours               1.06385
+           Demand Metered Secondary                                                           On-Peak Hours                2.10674
+           BUS-PEV2                                                                           Off-Peak Hours               0.90900
+           Demand Metered Primary                                                             On-Peak Hours                1.63969
+           BUS-PEV2                                                                           Off-Peak Hours               0.69250
+           Demand Metered Transmission                                                        On-Peak Hours                1.96597
+           BUS-PEV2                                                                           Off-Peak Hours               0.81500
+           Demand Metered Secondary
+           GSEHG                                                                                                           1.81800
+           Demand Metered Primary
+           GS                                                                                                              1.38500
+           Demand Metered Transmission
+           GS                                                                                                              1.63000
+
+
+1 Applicable only to customers with AMI meters.  On-Peak hours applies to all weekdays, except the                                                 legal
+holidays of New Year's Day, Presidents' Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day
+and Christmas Day.  November through April 6AM to 9AM and May through October 2PM through 6PM.
+2 Applicable only to customers with AMI meters.  O                   n-peak billing period is defined as 6 a.m. to 11 p.m. Off-
+peak billing period is defined as those hours not designated as on-                   peak hours
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated May 28, 2025  in C ase No. 25-475-EL-RDR and O rder dated April 3, 2024
+in C ase No. 23-                                                  23-EL- SSO
+
+Issued:  May 28, 2025                                                                                                       Effective:  June 1, 2025
+                                                                        Issued by
+                                                              Marc Reitter, President
+                                                                        AEP Oh io
+

@@ -1,0 +1,250 @@
+year,utility_id,utility_name,part,service_type,data_type,state,ownership,ba_code,res_customers_source,res_customers
+2024,84,A & N Electric Coop,A,Bundled,O,MD,Cooperative,PJM,253,253
+2024,84,A & N Electric Coop,A,Bundled,O,VA,Cooperative,PJM,33096,33096
+2024,240,Albemarle Electric Member Corp,A,Bundled,O,NC,Cooperative,PJM,12728,12728
+2024,636,City of Anderson - (IN),A,Bundled,O,IN,Municipal,PJM,29533,29533
+2024,733,Appalachian Power Co,A,Bundled,O,VA,Investor Owned,PJM,465283,465283
+2024,733,Appalachian Power Co,A,Bundled,O,WV,Investor Owned,PJM,348946,348946
+2024,733,Appalachian Power Co,C,Delivery,O,VA,Investor Owned,PJM,.,0
+2024,963,Atlantic City Electric Co,A,Bundled,O,NJ,Investor Owned,PJM,472020,472020
+2024,963,Atlantic City Electric Co,C,Delivery,O,NJ,Investor Owned,PJM,34468,34468
+2024,994,City of Auburn - (IN),A,Bundled,O,IN,Municipal,PJM,6813,6813
+2024,1167,Baltimore Gas & Electric Co,A,Bundled,O,MD,Investor Owned,PJM,1025745,1025745
+2024,1167,Baltimore Gas & Electric Co,C,Delivery,O,MD,Investor Owned,PJM,188355,188355
+2024,1325,City of Batavia - (IL),A,Bundled,O,IL,Municipal,PJM,10020,10020
+2024,1708,Big Sandy Rural Elec Coop Corp,A,Bundled,O,KY,Cooperative,PJM,11574,11574
+2024,1764,Black Diamond Power Co,A,Bundled,O,WV,Investor Owned,PJM,3479,3479
+2024,1886,Blue Grass Energy Coop Corp,A,Bundled,O,KY,Cooperative,PJM,60641,60641
+2024,1896,City of Bluffton - (IN),A,Bundled,O,IN,Municipal,PJM,5007,5007
+2024,2054,City of Bowling Green - (OH),A,Bundled,O,OH,Municipal,PJM,13068,13068
+2024,2502,"Buckeye Rural Elec Coop, Inc",A,Bundled,O,OH,Cooperative,PJM,16349,16349
+2024,2651,Butler Rural Electric Coop Inc - (OH),A,Bundled,O,OH,Cooperative,PJM,11374,11374
+2024,3216,City of Celina - (OH),A,Bundled,O,OH,Municipal,PJM,7557,7557
+2024,3291,Central Virginia Electric Coop,A,Bundled,O,VA,Cooperative,PJM,34893,34893
+2024,3329,Borough of Chambersburg,A,Bundled,O,PA,Municipal,PJM,9914,9914
+2024,3503,"Choptank Electric Cooperative, Inc",A,Bundled,O,MD,Cooperative,PJM,50697,50697
+2024,3542,Duke Energy Ohio Inc,A,Bundled,O,OH,Investor Owned,PJM,294084,294084
+2024,3542,Duke Energy Ohio Inc,C,Delivery,O,OH,Investor Owned,PJM,399351,399351
+2024,3597,Citizens Electric Co - (PA),A,Bundled,O,PA,Investor Owned,PJM,5958,5958
+2024,3597,Citizens Electric Co - (PA),C,Delivery,O,PA,Investor Owned,PJM,5,5
+2024,3687,Clark Energy Coop Inc - (KY),A,Bundled,O,KY,Cooperative,PJM,26203,26203
+2024,3755,Cleveland Electric Illum Co,A,Bundled,O,OH,Investor Owned,PJM,131370,131370
+2024,3755,Cleveland Electric Illum Co,C,Delivery,O,OH,Investor Owned,PJM,544728,544728
+2024,3762,City of Cleveland - (OH),A,Bundled,O,OH,Municipal,PJM,64914,64914
+2024,3824,Clyde Light & Power,A,Bundled,O,OH,Municipal,PJM,2776,2776
+2024,4065,City of Columbus - (OH),A,Bundled,O,OH,Municipal,PJM,15510,15510
+2024,4110,Commonwealth Edison Co,A,Bundled,O,IL,Investor Owned,PJM,2922223,2922223
+2024,4110,Commonwealth Edison Co,C,Delivery,O,IL,Investor Owned,PJM,805452,805452
+2024,4622,"Cumberland Valley Electric, Inc.",A,Bundled,O,KY,Cooperative,PJM,22478,22478
+2024,4622,"Cumberland Valley Electric, Inc.",A,Bundled,O,TN,Cooperative,PJM,78,78
+2024,4683,City of Cuyahoga Falls - (OH),A,Bundled,O,OH,Municipal,PJM,24349,24349
+2024,4794,City of Danville - (VA),A,Bundled,O,VA,Municipal,PJM,37781,37781
+2024,4922,Dayton Power & Light Co,A,Bundled,O,OH,Investor Owned,PJM,132522,132522
+2024,4922,Dayton Power & Light Co,C,Delivery,O,OH,Investor Owned,PJM,346219,346219
+2024,5027,Delmarva Power,A,Bundled,O,DE,Investor Owned,PJM,275018,275018
+2024,5027,Delmarva Power,A,Bundled,O,MD,Investor Owned,PJM,172008,172008
+2024,5027,Delmarva Power,C,Delivery,O,DE,Investor Owned,PJM,26932,26932
+2024,5027,Delmarva Power,C,Delivery,O,MD,Investor Owned,PJM,14360,14360
+2024,5070,Delaware Electric Cooperative,A,Bundled,O,DE,Cooperative,PJM,104839,104839
+2024,5335,City of Dover - (DE),A,Bundled,O,DE,Municipal,PJM,21601,21601
+2024,5336,City of Dover - (OH),A,Bundled,O,OH,Municipal,PJM,5869,5869
+2024,5487,Duquesne Light Co,A,Bundled,O,PA,Investor Owned,PJM,434171,434171
+2024,5487,Duquesne Light Co,C,Delivery,O,PA,Investor Owned,PJM,116234,116234
+2024,5625,Easton Utilities Comm,A,Bundled,O,MD,Municipal,PJM,8590,8590
+2024,5656,Edgecombe-Martin County E M C,A,Bundled,O,NC,Cooperative,PJM,10716,10716
+2024,6194,Farmers Rural Electric Coop Corp - (KY),A,Bundled,O,KY,Cooperative,PJM,24889,24889
+2024,6442,Fleming-Mason Energy Coop Inc,A,Bundled,O,KY,Cooperative,PJM,23666,23666
+2024,7096,City of Geneva- (IL),A,Bundled,O,IL,Municipal,PJM,8691,8691
+2024,7558,Grayson Rural Electric Coop Corp,A,Bundled,O,KY,Cooperative,PJM,14429,14429
+2024,7891,Guernsey-Muskingum El Coop Inc,A,Bundled,O,OH,Cooperative,PJM,15289,15289
+2024,7908,Hagerstown Light Department,A,Bundled,O,MD,Municipal,PJM,15099,15099
+2024,7977,City of Hamilton - (OH),A,Bundled,O,OH,Municipal,PJM,26964,26964
+2024,8034,Hancock-Wood Electric Coop Inc,A,Bundled,O,OH,Cooperative,PJM,11307,11307
+2024,8198,City of Harrisonburg - (VA),A,Bundled,O,VA,Municipal,PJM,18089,18089
+2024,8761,Holmes-Wayne Electric Coop Inc,A,Bundled,O,OH,Cooperative,PJM,14714,14714
+2024,9292,Inter County Energy Coop Corp - (KY),A,Bundled,O,KY,Cooperative,PJM,26655,26655
+2024,9324,Indiana Michigan Power Co,A,Bundled,O,IN,Investor Owned,PJM,422062,422062
+2024,9324,Indiana Michigan Power Co,A,Bundled,O,MI,Investor Owned,PJM,112600,112600
+2024,9324,Indiana Michigan Power Co,C,Delivery,O,MI,Investor Owned,PJM,.,0
+2024,9575,Jackson Energy Coop Corp - (KY),A,Bundled,O,KY,Cooperative,PJM,49423,49423
+2024,9726,Jersey Central Power & Lt Co,A,Bundled,O,NJ,Investor Owned,PJM,964802,964802
+2024,9726,Jersey Central Power & Lt Co,C,Delivery,O,NJ,Investor Owned,PJM,73456,73456
+2024,10331,Kingsport Power Co,A,Bundled,O,TN,Investor Owned,PJM,43159,43159
+2024,10668,Licking Rural Electric Inc,A,Bundled,O,OH,Cooperative,PJM,25820,25820
+2024,10830,City of Lebanon - (OH),A,Bundled,O,OH,Municipal,PJM,8707,8707
+2024,11011,Licking Valley Rural E C C,A,Bundled,O,KY,Cooperative,PJM,16805,16805
+2024,11200,"Lorain-Medina R E C, Inc",A,Bundled,O,OH,Cooperative,PJM,15234,15234
+2024,11560,City of Manassas - (VA),A,Bundled,O,VA,Municipal,PJM,13947,13947
+2024,12260,Mecklenburg Electric Cooperative,A,Bundled,O,NC,Cooperative,PJM,135,135
+2024,12260,Mecklenburg Electric Cooperative,A,Bundled,O,VA,Cooperative,PJM,30016,30016
+2024,12377,Midwest Energy Cooperative - (MI),A,Bundled,O,IN,Cooperative,PJM,310,310
+2024,12377,Midwest Energy Cooperative - (MI),A,Bundled,O,MI,Cooperative,PJM,29283,29283
+2024,12377,Midwest Energy Cooperative - (MI),A,Bundled,O,OH,Cooperative,PJM,863,863
+2024,12478,Town of Middletown - (DE),A,Bundled,O,DE,Municipal,PJM,9071,9071
+2024,12515,"Midwest Electric, Inc - (OH)",A,Bundled,O,OH,Cooperative,PJM,10836,10836
+2024,12540,City of Milford - (DE),A,Bundled,O,DE,Municipal,PJM,7169,7169
+2024,12674,City of Mishawaka,A,Bundled,O,IN,Municipal,PJM,25071,25071
+2024,12796,Monongahela Power Co,A,Bundled,O,WV,Investor Owned,PJM,334588,334588
+2024,12990,Consolidated Cooperative,A,Bundled,O,OH,Cooperative,PJM,16897,16897
+2024,13208,City of Naperville - (IL),A,Bundled,O,IL,Municipal,PJM,56117,56117
+2024,13519,City of Newark - (DE),A,Bundled,O,DE,Municipal,PJM,11888,11888
+2024,13602,City of Niles - (OH),A,Bundled,O,OH,Municipal,PJM,11882,11882
+2024,13640,Northern Virginia Elec Coop,A,Bundled,O,VA,Cooperative,PJM,167274,167274
+2024,13647,Noble County R E M C,A,Bundled,O,IN,Cooperative,PJM,10986,10986
+2024,13651,Nolin Rural Electric Coop Corp,A,Bundled,O,KY,Cooperative,PJM,35855,35855
+2024,13693,"North Central Elec Coop, Inc - (OH)",A,Bundled,O,OH,Cooperative,PJM,8433,8433
+2024,13762,"Northern Neck Elec Coop, Inc",A,Bundled,O,VA,Cooperative,PJM,17991,17991
+2024,13998,Ohio Edison Co,A,Bundled,O,OH,Investor Owned,PJM,251751,251751
+2024,13998,Ohio Edison Co,C,Delivery,O,OH,Investor Owned,PJM,706029,706029
+2024,14006,Ohio Power Co,A,Bundled,O,OH,Investor Owned,PJM,550768,550768
+2024,14006,Ohio Power Co,C,Delivery,O,OH,Investor Owned,PJM,788464,788464
+2024,14015,Ohio Valley Electric Corp,A,Bundled,O,OH,Investor Owned,PJM,.,0
+2024,14194,City of Orrville - (OH),A,Bundled,O,OH,Municipal,PJM,6314,6314
+2024,14251,Owen Electric Coop Inc,A,Bundled,O,KY,Cooperative,PJM,63984,63984
+2024,14381,City of Painesville,A,Bundled,O,OH,Municipal,PJM,10832,10832
+2024,14599,"Paulding-Putman Elec Coop, Inc",A,Bundled,O,IN,Cooperative,PJM,3851,3851
+2024,14599,"Paulding-Putman Elec Coop, Inc",A,Bundled,O,OH,Cooperative,PJM,9176,9176
+2024,14715,PPL Electric Utilities Corp,A,Bundled,O,PA,Investor Owned,PJM,797773,797773
+2024,14715,PPL Electric Utilities Corp,C,Delivery,O,PA,Investor Owned,PJM,498110,498110
+2024,14940,PECO Energy Co,A,Bundled,O,PA,Investor Owned,PJM,1205013,1205013
+2024,14940,PECO Energy Co,C,Delivery,O,PA,Investor Owned,PJM,330805,330805
+2024,15054,"Pioneer Rural Elec Coop, Inc - (OH)",A,Bundled,O,OH,Cooperative,PJM,16310,16310
+2024,15095,City of Piqua - (OH),A,Bundled,O,OH,Municipal,PJM,9829,9829
+2024,15263,The Potomac Edison Company,A,Bundled,O,MD,Investor Owned,PJM,240570,240570
+2024,15263,The Potomac Edison Company,A,Bundled,O,WV,Investor Owned,PJM,135266,135266
+2024,15263,The Potomac Edison Company,C,Delivery,O,MD,Investor Owned,PJM,15998,15998
+2024,15270,Potomac Electric Power Co,A,Bundled,O,DC,Investor Owned,PJM,285878,285878
+2024,15270,Potomac Electric Power Co,A,Bundled,O,MD,Investor Owned,PJM,485483,485483
+2024,15270,Potomac Electric Power Co,C,Delivery,O,DC,Investor Owned,PJM,32902,32902
+2024,15270,Potomac Electric Power Co,C,Delivery,O,MD,Investor Owned,PJM,68124,68124
+2024,15410,Prince George Electric Coop,A,Bundled,O,VA,Cooperative,PJM,10954,10954
+2024,15477,Public Service Elec & Gas Co,A,Bundled,O,NJ,Investor Owned,PJM,1966950,1966950
+2024,15477,Public Service Elec & Gas Co,C,Delivery,O,NJ,Investor Owned,PJM,89281,89281
+2024,15989,City of Richmond - (IN),A,Bundled,O,IN,Municipal,PJM,16310,16310
+2024,16101,Roanoke Electric Member Corp,A,Bundled,O,NC,Cooperative,PJM,12049,12049
+2024,16179,Rochelle Municipal Utilities,A,Bundled,O,IL,Municipal,PJM,5854,5854
+2024,16213,Rockland Electric Co,A,Bundled,O,NJ,Investor Owned,PJM,63679,63679
+2024,16213,Rockland Electric Co,C,Delivery,O,NJ,Investor Owned,PJM,2210,2210
+2024,16558,City of Salem - (VA),A,Bundled,O,VA,Municipal,PJM,11298,11298
+2024,16587,Salt River Electric Coop Corp,A,Bundled,O,KY,Cooperative,PJM,53479,53479
+2024,17044,"Shelby Energy Coop, Inc - (KY)",A,Bundled,O,KY,Cooperative,PJM,17437,17437
+2024,17066,Shenandoah Valley Elec Coop,A,Bundled,O,VA,Cooperative,PJM,85281,85281
+2024,17564,South Kentucky Rural E C C,A,Bundled,O,KY,Cooperative,PJM,64877,64877
+2024,17564,South Kentucky Rural E C C,A,Bundled,O,TN,Cooperative,PJM,152,152
+2024,17637,Southern Maryland Elec Coop Inc,A,Bundled,O,MD,Cooperative,PJM,158375,158375
+2024,17637,Southern Maryland Elec Coop Inc,C,Delivery,O,MD,Cooperative,PJM,2507,2507
+2024,17860,City of St Charles - (IL),A,Bundled,O,IL,Municipal,PJM,14181,14181
+2024,18085,South Central Power Company,A,Bundled,O,OH,Cooperative,PJM,117469,117469
+2024,18252,City of Sturgis - (MI),A,Bundled,O,MI,Municipal,PJM,6117,6117
+2024,18498,Taylor County Rural E C C,A,Bundled,O,KY,Cooperative,PJM,24985,24985
+2024,18997,The Toledo Edison Co,A,Bundled,O,OH,Investor Owned,PJM,79007,79007
+2024,18997,The Toledo Edison Co,C,Delivery,O,OH,Investor Owned,PJM,199807,199807
+2024,19108,Tideland Electric Member Corp,A,Bundled,O,NC,Cooperative,PJM,21551,21551
+2024,19390,"UGI Utilities, Inc",A,Bundled,O,PA,Investor Owned,PJM,54485,54485
+2024,19390,"UGI Utilities, Inc",C,Delivery,O,PA,Investor Owned,PJM,526,526
+2024,19446,Duke Energy Kentucky,A,Bundled,O,KY,Investor Owned,PJM,139405,139405
+2024,19501,"Union Rural Electric Coop, Inc",A,Bundled,O,OH,Cooperative,PJM,11812,11812
+2024,19856,City of Vineland - (NJ),A,Bundled,O,NJ,Municipal,PJM,22774,22774
+2024,19876,Virginia Electric & Power Co,A,Bundled,O,NC,Investor Owned,PJM,108656,108656
+2024,19876,Virginia Electric & Power Co,A,Bundled,O,VA,Investor Owned,PJM,2383548,2383548
+2024,19876,Virginia Electric & Power Co,C,Delivery,O,VA,Investor Owned,PJM,0,0
+2024,19882,Virginia Tech Electric Service,A,Bundled,O,VA,State,PJM,5660,5660
+2024,19951,City of Wadsworth - (OH),A,Bundled,O,OH,Municipal,PJM,12180,12180
+2024,20334,Wellsborough Electric Co,A,Bundled,O,PA,Investor Owned,PJM,5158,5158
+2024,20334,Wellsborough Electric Co,C,Delivery,O,PA,Investor Owned,PJM,0,0
+2024,20477,City of Westerville - (OH),A,Bundled,O,OH,Municipal,PJM,15713,15713
+2024,20521,Wheeling Power Co,A,Bundled,O,WV,Investor Owned,PJM,34392,34392
+2024,20603,Northeastern Rural E M C,A,Bundled,O,IN,Cooperative,PJM,30610,30610
+2024,21244,"Southside Electric Coop, Inc",A,Bundled,O,VA,Cooperative,PJM,56846,56846
+2024,22053,Kentucky Power Co,A,Bundled,O,KY,Investor Owned,PJM,130852,130852
+2024,40167,"Somerset Rural Elec Coop, Inc",A,Bundled,O,PA,Cooperative,PJM,12322,12322
+2024,40220,Adams Electric Cooperative Inc,A,Bundled,O,PA,Cooperative,PJM,32231,32231
+2024,40221,"Bedford Rural Elec Coop, Inc",A,Bundled,O,PA,Cooperative,PJM,8837,8837
+2024,40222,Valley Rural Electric Coop Inc,A,Bundled,O,PA,Cooperative,PJM,18180,18180
+2024,40224,"Central Electric Coop, Inc - (PA)",A,Bundled,O,PA,Cooperative,PJM,23629,23629
+2024,40228,Rappahannock Electric Coop,A,Bundled,O,VA,Cooperative,PJM,169489,169489
+2024,40289,Claverack Rural Elec Coop Inc,A,Bundled,O,PA,Cooperative,PJM,16742,16742
+2024,40290,Tri-County Rural Elec Coop Inc (PA),A,Bundled,O,PA,Cooperative,PJM,18206,18206
+2024,40292,REA Energy Coop Inc,A,Bundled,O,PA,Cooperative,PJM,20932,20932
+2024,40293,"Northwestern Rural E C A, Inc - (PA)",A,Bundled,O,PA,Cooperative,PJM,18190,18190
+2024,57313,Tesla Inc.,A,Bundled,O,DC,Behind the Meter,PJM,506,506
+2024,57313,Tesla Inc.,A,Bundled,O,DE,Behind the Meter,PJM,3327,3327
+2024,57313,Tesla Inc.,A,Bundled,O,IL,Behind the Meter,PJM,4,4
+2024,57313,Tesla Inc.,A,Bundled,O,MD,Behind the Meter,PJM,26988,26988
+2024,57313,Tesla Inc.,A,Bundled,O,NJ,Behind the Meter,PJM,10055,10055
+2024,57313,Tesla Inc.,A,Bundled,O,OH,Behind the Meter,PJM,0,0
+2024,57313,Tesla Inc.,A,Bundled,O,PA,Behind the Meter,PJM,6956,6956
+2024,57313,Tesla Inc.,A,Bundled,O,VA,Behind the Meter,PJM,66,66
+2024,59086,"Constellation Solar Holding, LLC",A,Bundled,O,DC,Behind the Meter,PJM,0,0
+2024,59086,"Constellation Solar Holding, LLC",A,Bundled,O,DE,Behind the Meter,PJM,0,0
+2024,59086,"Constellation Solar Holding, LLC",A,Bundled,O,MD,Behind the Meter,PJM,0,0
+2024,59505,Heartland REMC,A,Bundled,O,IN,Cooperative,PJM,18013,18013
+2024,59579,Sunnova,A,Bundled,O,DC,Behind the Meter,PJM,64,64
+2024,59579,Sunnova,A,Bundled,O,DE,Behind the Meter,PJM,19,19
+2024,59579,Sunnova,A,Bundled,O,IL,Behind the Meter,PJM,524,524
+2024,59579,Sunnova,A,Bundled,O,KY,Behind the Meter,PJM,0,0
+2024,59579,Sunnova,A,Bundled,O,MD,Behind the Meter,PJM,4578,4578
+2024,59579,Sunnova,A,Bundled,O,MI,Behind the Meter,PJM,0,0
+2024,59579,Sunnova,A,Bundled,O,NJ,Behind the Meter,PJM,30079,30079
+2024,59579,Sunnova,A,Bundled,O,NY,Behind the Meter,PJM,0,0
+2024,59579,Sunnova,A,Bundled,O,OH,Behind the Meter,PJM,4,4
+2024,59579,Sunnova,A,Bundled,O,PA,Behind the Meter,PJM,10759,10759
+2024,59579,Sunnova,A,Bundled,O,VA,Behind the Meter,PJM,2,2
+2024,59579,Sunnova,A,Bundled,O,WV,Behind the Meter,PJM,0,0
+2024,59580,"SunPower Capital, LLC",A,Bundled,O,NJ,Behind the Meter,PJM,5666,5666
+2024,59580,"SunPower Capital, LLC",A,Bundled,O,PA,Behind the Meter,PJM,61,61
+2024,59622,"Ahana Renewables, LLC",A,Bundled,O,DC,Behind the Meter,PJM,0,0
+2024,59622,"Ahana Renewables, LLC",A,Bundled,O,IL,Behind the Meter,PJM,0,0
+2024,59622,"Ahana Renewables, LLC",A,Bundled,O,MD,Behind the Meter,PJM,0,0
+2024,59622,"Ahana Renewables, LLC",A,Bundled,O,NJ,Behind the Meter,PJM,0,0
+2024,59622,"Ahana Renewables, LLC",A,Bundled,O,PA,Behind the Meter,PJM,0,0
+2024,59647,Sunrun Inc.,A,Bundled,O,DC,Behind the Meter,PJM,52,52
+2024,59647,Sunrun Inc.,A,Bundled,O,DE,Behind the Meter,PJM,390,390
+2024,59647,Sunrun Inc.,A,Bundled,O,IL,Behind the Meter,PJM,31729,31729
+2024,59647,Sunrun Inc.,A,Bundled,O,MD,Behind the Meter,PJM,25231,25231
+2024,59647,Sunrun Inc.,A,Bundled,O,NJ,Behind the Meter,PJM,45019,45019
+2024,59647,Sunrun Inc.,A,Bundled,O,PA,Behind the Meter,PJM,5072,5072
+2024,59943,Spruce Finance,A,Bundled,O,MD,Behind the Meter,PJM,579,579
+2024,59943,Spruce Finance,A,Bundled,O,NJ,Behind the Meter,PJM,6250,6250
+2024,59943,Spruce Finance,A,Bundled,O,NY,Behind the Meter,PJM,2415,2415
+2024,60025,Greenbacker Renewable Energy Corporation,A,Bundled,O,IN,Behind the Meter,PJM,0,0
+2024,60025,Greenbacker Renewable Energy Corporation,A,Bundled,O,MD,Behind the Meter,PJM,0,0
+2024,60025,Greenbacker Renewable Energy Corporation,A,Bundled,O,NJ,Behind the Meter,PJM,0,0
+2024,60025,Greenbacker Renewable Energy Corporation,A,Bundled,O,TN,Behind the Meter,PJM,0,0
+2024,60981,"TerraForm US Energy Services, LLC",A,Bundled,O,MD,Behind the Meter,PJM,0,0
+2024,60981,"TerraForm US Energy Services, LLC",A,Bundled,O,NJ,Behind the Meter,PJM,0,0
+2024,60981,"TerraForm US Energy Services, LLC",A,Bundled,O,PA,Behind the Meter,PJM,0,0
+2024,61353,Philadelphia Authority for Industrial Development,A,Bundled,O,PA,Municipal,PJM,.,0
+2024,61823,"Greenskies Renewable Energy, LLC",A,Bundled,O,NJ,Behind the Meter,PJM,.,0
+2024,61823,"Greenskies Renewable Energy, LLC",A,Bundled,O,PA,Behind the Meter,PJM,.,0
+2024,65242,"Scale Sustainable I, LLC",A,Bundled,O,DE,Behind the Meter,PJM,.,0
+2024,65242,"Scale Sustainable I, LLC",A,Bundled,O,NJ,Behind the Meter,PJM,.,0
+2024,65242,"Scale Sustainable I, LLC",A,Bundled,O,PA,Behind the Meter,PJM,.,0
+2024,66026,"Palmetto Solar, LLC",A,Bundled,O,IL,Behind the Meter,PJM,44,44
+2024,66026,"Palmetto Solar, LLC",A,Bundled,O,MD,Behind the Meter,PJM,5,5
+2024,66026,"Palmetto Solar, LLC",A,Bundled,O,NJ,Behind the Meter,PJM,8,8
+2024,66026,"Palmetto Solar, LLC",A,Bundled,O,OH,Behind the Meter,PJM,21,21
+2024,66026,"Palmetto Solar, LLC",A,Bundled,O,PA,Behind the Meter,PJM,43,43
+2024,66036,"EverBright, LLC",A,Bundled,O,IL,Behind the Meter,PJM,3246,3246
+2024,66036,"EverBright, LLC",A,Bundled,O,MD,Behind the Meter,PJM,350,350
+2024,66036,"EverBright, LLC",A,Bundled,O,NJ,Behind the Meter,PJM,160,160
+2024,66036,"EverBright, LLC",A,Bundled,O,OH,Behind the Meter,PJM,267,267
+2024,66101,FirstEnergy Pennsylvania Electric Co,A,Bundled,O,NY,Investor Owned,PJM,3355,3355
+2024,66101,FirstEnergy Pennsylvania Electric Co,A,Bundled,O,PA,Investor Owned,PJM,1464054,1464054
+2024,66101,FirstEnergy Pennsylvania Electric Co,C,Delivery,O,NY,Investor Owned,PJM,45,45
+2024,66101,FirstEnergy Pennsylvania Electric Co,C,Delivery,O,PA,Investor Owned,PJM,338558,338558
+2024,99999,Adjustment 2024,A,Bundled,I,DC,,PJM,-622,-622
+2024,99999,Adjustment 2024,A,Bundled,I,DE,,PJM,13254,13254
+2024,99999,Adjustment 2024,A,Bundled,I,IL,,PJM,-31240,-31240
+2024,99999,Adjustment 2024,A,Bundled,I,IN,,PJM,30479,30479
+2024,99999,Adjustment 2024,A,Bundled,I,KY,,PJM,4626,4626
+2024,99999,Adjustment 2024,A,Bundled,I,MD,,PJM,-52142,-52142
+2024,99999,Adjustment 2024,A,Bundled,I,MI,,PJM,17203,17203
+2024,99999,Adjustment 2024,A,Bundled,I,NC,,PJM,10626,10626
+2024,99999,Adjustment 2024,A,Bundled,I,NJ,,PJM,-51710,-51710
+2024,99999,Adjustment 2024,A,Bundled,I,NY,,PJM,-2415,-2415
+2024,99999,Adjustment 2024,A,Bundled,I,OH,,PJM,179369,179369
+2024,99999,Adjustment 2024,A,Bundled,I,PA,,PJM,77309,77309
+2024,99999,Adjustment 2024,A,Bundled,I,TN,,PJM,0,0
+2024,99999,Adjustment 2024,A,Bundled,I,VA,,PJM,70076,70076
+2024,99999,Adjustment 2024,A,Bundled,I,WV,,PJM,9785,9785

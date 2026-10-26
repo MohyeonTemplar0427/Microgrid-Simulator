@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowaresdemandbillguide.pdf?hash=EB7E24BBE56C0ADC6687806EF16B4500&sc_lang=en
+Retrieved: 2026-10-25
+Original binary SHA256: 03f45ec1ec323de1818ef559ee64798b9705c61625ccb3085de5183189aa0fdc
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+Official guide1312650, March2025. Visually verified sample residential507 January2–February3,2025:1472kWh,32days. It separately charges EAC0.0102 USD/kWh and credits TBR0.00789 USD/kWh. The shared rider lines also show EECR0.0009, DRCR0.0031 and RTS0.04077 per kWh. This fictional utility sample verifies ordering; its507 demand charges are not a400/407/427 benchmark. No real customer account data is used.

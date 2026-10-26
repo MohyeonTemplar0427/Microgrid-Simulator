@@ -1,0 +1,15 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereacenergyadjustmentclause.pdf?hash=EA46041D4CB9157430846634B2771F3F&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Current PDF: 10 pages. Residential 244th revised sheet 57 and general-service 149th revised sheet 57.1; issued September 25, 2026, effective October 2026 billing month.
+Billed column A = AEP column B + TBR column C + fuel column D + RCE column E.
+TBR column C is a dash throughout January 2025–October 2026. The official 2025 residential sample bill resolves treatment: February EAC $0.0102/kWh and TBR -$0.00789/kWh appear as separate lines. Add the standalone TBR only in its applicable period. RCE is already included from September 2025.
+2025 AEP B: .0081, .0065, .0042, .0068, .0088, .0113, .0057, .0034, .0038, .0075, .0060, .0062.
+2025 fuel D: .0035, .0037, -.0040, -.0178, -.0193, -.0095, .0067, .0147, .0159, .0074, .0006, -.0066.
+2025 RCE E: zero January–August, .00006 September–December.
+2026 January–October AEP B: .0063, .0087, .0111, .0007, .0068, .0046, .0054, .0055, .0027, .0170.
+2026 January–October fuel D: -.0057, -.0071, -.0032, -.0033, -.0168, -.0080, .0011, .0052, .0134, -.0003.
+2026 RCE E: .00006 each displayed month.

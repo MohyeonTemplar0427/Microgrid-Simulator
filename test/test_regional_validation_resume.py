@@ -62,6 +62,17 @@ def test_resume_reaudits_passed_case_without_resolving(matrix):
     assert second["cases"][0]["resume_checks"][0]["timing"]["resume_audit_seconds"]>=0
 
 
+def test_aep_legacy_zone_is_part_of_immutable_resume_selection(matrix):
+    kwargs = dict(cases=[("aep_ohio", "residential", "RS")], periods=("monthly",))
+    first = driver.run(matrix.output, matrix.weather.parent, aep_rate_zone="ohio_power", **kwargs)
+    assert first["execution"]["aep_rate_zone"] == "ohio_power"
+    assert first["cases"][0]["case"].endswith("-ohio_power")
+    submissions = matrix.state.submissions
+    with pytest.raises(ValueError, match="selection"):
+        driver.run(matrix.output, matrix.weather.parent, aep_rate_zone="columbus_southern", resume=True, **kwargs)
+    assert matrix.state.submissions == submissions
+
+
 @pytest.mark.parametrize("change",["changed","missing"])
 def test_invalid_artifact_is_rerun_and_original_attempt_retained(matrix,change):
     first=matrix.run();sid=first["cases"][0]["study_id"]

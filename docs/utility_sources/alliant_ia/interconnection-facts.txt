@@ -1,0 +1,7 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/section16cogeneratorssmallpowerproducersalternateenergyproducerssmallhydroproduc.pdf?hash=25CE14668879D93D1DF043AB3496A08A&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Original sheets 356–357, effective November 3, 2010. Section 16.01 requires applicable Iowa Administrative Code 199 chapters 15/45; 16.05 assigns interconnection costs; 16.06 sets standards; 16.07 requires company safety-device review before interconnection. A modeled zero-export constraint does not prove approved interconnection or certified zero-export equipment.

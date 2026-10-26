@@ -1,0 +1,34 @@
+PDF page 1:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 18 
+Canceling Original Page No. 18 
+Effective: July 1, 2026
+RIDERS, SURCHARGE, OPTIONS, AND CHARGES 
+RIDER MATRIX 
+Rate 
+Schedule USR NM MBC ACR MFC DSIC SDER
+RS X X X X X X X 
+RTS (R) X X X X X X 
+GS-1 X X X X X X
+GS-3 X X X X X X
+LP-4 X X X X X
+LP-5 X X X
+LP-6 X X X
+BL X X X X
+SA X X X X X
+SM (R) X X X X X
+SHS (R) X X X X X
+SLE X X X X X
+SE X X X X X
+Rule 6 X X X X X
+Rider Titles 
+USR = Universal Service Rider 
+NM = Net Metering for Renewable Customer-Generators
+MBC = Metering and Billing Credit Rider 
+ACR = Act 129 Compliance Riders 
+MFC = Merchant Function Charge Rider 
+DSIC = Distribution System Improvement Charge
+SDER = Storm Damage Expense Rider

@@ -25,6 +25,12 @@ function regionalRateEvidenceContext(plan,account,start,end) {
   return {mode,accepted,relevant,show_controls:relevant||mode!=="verified"||accepted,
     assumptions,coverage:[...(plan.coverage||[]),...(mode==="provisional_2025"&&accepted?plan.provisional_coverage||[]:[])]};
 }
+function regionalIntervalSupport(select,plan) {
+  const allowed=plan?.interval_minutes||[15,30];
+  for(const option of select.options)option.disabled=!allowed.includes(Number(option.value));
+  // Keep the chosen value explicit; changing utilities must not resample inputs.
+  return allowed;
+}
 function buildRegionalStudyRequest(base,v) {
   const r=JSON.parse(JSON.stringify(base));r.name="Untitled study";
   r.site={latitude:Number(v.latitude),longitude:Number(v.longitude),label:v.site_label,utility:v.utility};
@@ -50,7 +56,7 @@ function buildRegionalStudyRequest(base,v) {
   r.include_degradation_in_optimization=v.include_degradation_in_optimization===true;
   return r;
 }
-if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles,regionalRateEvidenceContext};
+if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles,regionalRateEvidenceContext,regionalIntervalSupport};
 
 if(typeof document!=="undefined") {
   let currentKey=null,nativeCsv=null,era5=null,era5Key=null,wasActive=false,marketCsv=null;
@@ -117,7 +123,7 @@ if(typeof document!=="undefined") {
     $("regional-fields").replaceChildren();
     const advanced=document.createElement("details"),heading=document.createElement("summary"),advancedFields=document.createElement("div");
     heading.textContent="Advanced account facts · history, contracts and special eligibility";advancedFields.className="form-grid";advanced.style.gridColumn="1/-1";advanced.append(heading,advancedFields);
-    const basic=new Set(["tax_jurisdiction","tax_source","rate_zone","ts_metering","ts_metering_source","rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","local_charges_confirmed","full_monthly_charges_confirmed","dg_enrollment_confirmed","dg_source","ee_tier","ee_tier_source","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
+    const basic=new Set(["tax_jurisdiction","tax_source","rate_zone","legacy_rate_zone","ts_metering","ts_metering_source","rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","local_charges_confirmed","full_monthly_charges_confirmed","dg_enrollment_confirmed","dg_source","ee_tier","ee_tier_source","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
     const descriptors=selected()?.account_fields||[];
     const spec=Object.fromEntries(descriptors.map(d=>[typeof d==="string"?d:d.name,typeof d==="string"?{}:d]));
     for(const [key,v] of Object.entries(value)){
@@ -128,7 +134,7 @@ if(typeof document!=="undefined") {
       let input;
       const object=v!==null&&typeof v==="object"||desc.type==="number_array";
       if(object||v===null){input=document.createElement("textarea");input.rows=object?3:1;input.dataset.valueType="json";input.value=JSON.stringify(v);}
-      else if(desc.choices){input=document.createElement("select");for(const c of desc.choices)input.append(option(c,({bgs_rscp:"Default supply · BGS-RSCP",bgs_ciep:"Hourly default supply · BGS-CIEP",bundled:"Bundled utility supply",verified:"Verified dates only",provisional_2025:"Provisional 2025 · documented assumptions",provisional_cycles_v1:"Provisional PECO cycles · allocation assumptions"})[c]||c));input.value=String(v);input.dataset.valueType=typeof v;}
+      else if(desc.choices){input=document.createElement("select");for(const c of desc.choices)input.append(option(c,({bgs_rscp:"Default supply · BGS-RSCP",bgs_ciep:"Hourly default supply · BGS-CIEP",bundled:"Bundled utility supply",default_ptc:"Default supply · fixed Price to Compare (GSC-1)",sso:"Default supply · Standard Service Offer",ohio_power:"Ohio Power legacy rate zone",columbus_southern:"Columbus Southern Power legacy rate zone",verified:"Verified dates only",provisional_2025:"Provisional 2025 · documented assumptions",provisional_cycles_v1:"Provisional PECO cycles · allocation assumptions"})[c]||c));input.value=String(v);input.dataset.valueType=typeof v;}
       else {input=document.createElement("input");input.type=typeof v==="boolean"?"checkbox":typeof v==="number"?"number":"text";
         if(typeof v==="boolean")input.checked=v;else input.value=String(v);if(input.type==="number")input.step="any";input.dataset.valueType=typeof v;}
       input.name="rg_a_"+key;label.append(input);(basic.has(key)?$("regional-fields"):advancedFields).append(label);
@@ -183,7 +189,7 @@ if(typeof document!=="undefined") {
     const csvOption=field("load_mode").querySelector('option[value="csv"]');if(csvOption){csvOption.hidden=csvOption.disabled=false;csvOption.textContent="Uploaded native-load CSV";}
     $("regional-native").hidden=field("load_mode").value!=="csv";field("load_power_kw").disabled=field("load_mode").value==="csv";$("load-power-label").hidden=field("load_mode").value==="csv";
     $("regional-cycle-list").hidden=f("cycle_mode").value!=="documented";
-    for(const minutes of ["5","60"])field("timestep_minutes").querySelector(`option[value="${minutes}"]`).disabled=true;
+    regionalIntervalSupport(field("timestep_minutes"),plan);
     $("strategies").closest("fieldset").hidden=true;$("orientation-controls").hidden=true;
     field("carbon_weight").closest("label").hidden=true;field("carbon_weight").disabled=true;
     const pv=field("pv_choice").value==="yes",storage=batteryEnabled();
@@ -199,7 +205,7 @@ if(typeof document!=="undefined") {
     $("pv-choice-note").textContent="Compare grid-only, PV-only and PV plus storage, or choose storage without PV. Surplus is curtailed unless verified net metering is explicitly enabled.";
   }
   function leaving(){if(wasActive&&!active()){wasActive=false;for(const choice of field("pv_choice").querySelectorAll("option[data-regional-equipment]")){choice.disabled=false;delete choice.dataset.regionalEquipment;}for(const name of ["max_charge_kw","max_discharge_kw","charge_efficiency","discharge_efficiency","capacity_kWh","energy_kWh","SOC_min","SOC_max","pv_capacity_kw","inverter_efficiency"])field(name).closest("label").hidden=false;
-    for(const minutes of ["5","60"])field("timestep_minutes").querySelector(`option[value="${minutes}"]`).disabled=false;
+    regionalIntervalSupport(field("timestep_minutes"),{interval_minutes:[5,15,30,60]});
     if(field("weather_source").value==="era5")field("weather_source").value="";}}
   function mainDefaults(){if(!active())return {};const d=base();return {...d.solar,...d.battery,pv_capacity_kw:d.pv_capacity_kw,load_mode:d.load.mode,load_power_kw:d.load.power_kw,archetype:d.load.archetype,weather_source:"clear_sky",timestep_minutes:15,degradation_cost_per_kWh:d.degradation_cost_per_kWh};}
   function defaults(page){if(!active())return;const d=base();
@@ -223,6 +229,8 @@ if(typeof document!=="undefined") {
   function validate(page){if(!active())return true;try{
     if(page.dataset.step==="2"){if(!selected()||!f("reference").value.trim())throw new Error("Choose the actual billing plan and document service or hypothetical assumptions.");const a=accountValue();if(["provisional_2025","provisional_cycles_v1"].includes(a.rate_evidence_mode)&&!a.provisional_assumptions_accepted)throw new Error("Accept the documented provisional rates and billing assumptions before continuing.");}
     if(page.dataset.step==="3"){
+      const allowed=regionalIntervalSupport(field("timestep_minutes"),selected());
+      if(!allowed.includes(Number(field("timestep_minutes").value)))throw new Error("Choose a supported meter interval: "+allowed.join(" or ")+" minutes. Inputs are not automatically resampled.");
       const list=f("cycle_mode").value==="documented"?JSON.parse(f("cycles").value):regionalCalendarCycles(field("start_date").value,field("end_date").value);
       const a=accountValue(),coverage=regionalRateEvidenceContext(selected(),a,field("start_date").value,field("end_date").value).coverage;
       const covered=day=>coverage.some(w=>w.start<=day&&day<=w.end);

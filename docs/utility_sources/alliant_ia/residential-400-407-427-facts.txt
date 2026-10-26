@@ -1,0 +1,15 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/electricresidentialserviceusage.pdf?hash=980EAC1EFC2A19F140DBB78FD02BBF11&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Sheets 20 (substitute 15th revised), 21 (substitute 36th revised), issued 2024-09-20, effective 2024-10-01.
+Applicable single-family domestic or individually metered apartments; no resale. 60Hz, 120/240V single-phase, one meter, one delivery point; three-phase possible with incremental facilities/customer charge.
+Service: $0.5096/day/meter, $15.50/month is comparison only (30.4167 days).
+Summer June 1-August 31. Rate400 energy winter $0.09992/kWh; summer $0.13398/kWh.
+Rate407: summer on-peak $0.22269/kWh; winter off-peak $0.09992, summer off-peak $0.11134.
+Rate427: summer on-peak $0.24585; off-peak winter $0.11657, summer $0.12293; super-off-peak winter $0.05829, summer $0.06146.
+Filed clock: on-peak 2pm-7pm CST Monday-Friday summer, excluding Independence Day. Super-off-peak midnight-8am CST daily; all other times off-peak. Minimum TOD term one year.
+No observed-day substitution is stated in this sheet. Utility explanatory guide uses CT rather than CST; preserve this clock discrepancy explicitly.
+Three-phase incremental service charge $45/month or $1.4795/day/meter; not part of single-phase example.
+Riders: EAC, TAX, EEBC, EECR, DRCR, RTS, RCE, TBR; optional Second Nature separate. Excess facilities 1.6% of company investment/month if applicable; late payment 1.5% after20days not modeled for on-time ordinary account.

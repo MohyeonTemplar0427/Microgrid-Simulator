@@ -1,0 +1,10 @@
+Source: https://www.boonegov.com/egov/apps/document/center.egov?id=2352&view=item
+Retrieved: 2026-10-25
+Method: Downloaded original official municipal public-meeting PDF; relevant bill pages visually verified; only redacted rate/billing facts retained.
+
+Original public AirportCommission meeting packet,101PDFpages. Pages15–16 visually reviewed. Account numbers, meter numbers, address, remittance details and unrelated agenda material omitted.
+Sample GS600 electric service August20–September19,2025,30billingdays,3200kWh. Separate seasonal meter-register energy:1320summer kWh and1880winter kWh (not whole-cycle day fractions).
+Summer1320*.16513=$217.97; winter1880*.12041=$226.37; TBR3200*-.00592=-$18.94; EnergyCost3200*.01976=$63.23; EECR3200*.0032=$10.24; DRCR3200*.0028=$8.96.
+RTS separately allocated whole-cycle energy by day fraction:1173.333kWh=3200*11/30 at.03217=$37.75 and2026.667kWh=3200*19/30 at.03196=$64.77.
+Basicservice30*.7562=$22.69. Subtotal$633.04;1%franchise$6.33; state6%on$639.37=$38.36; electricservice total$677.73. The page1account summary currentcharge includes additionalmeters/gas and must not be substituted for this electricmeter bill.
+This specific bill supports September1RTS transition and whole-cycle day-fraction allocation for that rider, separately from seasonal register reads. It does not establish all-rider allocation for every cycle.

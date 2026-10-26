@@ -1,0 +1,12 @@
+Source: https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=1986
+PDF pages: [16]
+Retrieved: 2026-10-25
+Only rate and billing facts retained. Account/meter identifiers, addresses and unrelated contents omitted.
+
+General-service 600 bill printed in September 9, 2024 Airport Commission packet. Reading-date labels July 19–August 21, 2024; 33 billing days; total 1,620 kWh. The bill explicitly prints proration factors 12/33 = 0.3636364 and 21/33 = 0.6363636.
+EECR old: 1620 x $0.0018 x 12/33 = $1.06.
+EECR new: 1620 x $0.0014 x 21/33 = $1.44.
+DRCR old: 1620 x $0.0014 x 12/33 = $0.82.
+DRCR new: 1620 x $0.0023 x 21/33 = $2.37.
+This verifies a general-service rider transition at August 1, 2024 (21 new-factor days through August 21), corresponding to the known preceding EECR sheet's August 1 body date and the old DRCR factor used in early 2025. It provides primary actual-bill evidence despite the missing original substitute-sixth DRCR tariff sheet. It does not establish the residential class's factor or applicability.
+Other printed electric line items: summer first step $155.14; second step $31.65; Energy Cost 1620 x .022 = $35.64; Renewable Energy Charge 1620 x .00045 = $0.73; RTS 1620 x .03153 = $51.08; basic service 33 x .6575 = $21.70; electric total $301.63. These older base/rider prices are outside the 2025 selected-case model and must not be reused for 2025.

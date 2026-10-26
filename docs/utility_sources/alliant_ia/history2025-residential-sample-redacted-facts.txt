@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowaresdemandbillguide.pdf?hash=EB7E24BBE56C0ADC6687806EF16B4500&sc_lang=en
+Retrieved: 2026-10-25
+
+Official2025 illustrated billguide (document1312650,3/25). PDFpage2 sample507residential optionaldemand,32days,1472kWh,January2–February3. Identifiers omitted.
+Demand5.818kW*$12.63=$73.48; energy1472*$.02175=$32.02; EnergyCost1472*$.0102=$15.01; EECR1472*$.0009=$1.32; DRCR1472*$.0031=$4.56; TBR1472*−$.00789=−$11.61; RTS1472*$.04077=$60.01; basicservice32*$.5096=$16.31. Subtotal$191.10;5%franchise$9.56;total$200.66.
+This proves earlierresidentialDRCRfactor .0031 in theexamplecycle and separateTBRcredit; doesnotestablishits entireeffectivewindow. The507baseenergy/demandchargesarennotapplicable to400/407/427.

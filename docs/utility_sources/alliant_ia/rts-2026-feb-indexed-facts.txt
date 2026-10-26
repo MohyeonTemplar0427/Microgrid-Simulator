@@ -1,0 +1,7 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrtsregionaltransmissionserviceclause.pdf?hash=91A14C6C26764717F5C2BC1792F88908&la=en
+Retrieved: 2026-10-25
+Method: Historical official utility tariff public search-index text inspected; original bytes unavailable. URL must not be assumed immutable.
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Historical third substitute twenty-fifth revised sheet 86. Issued January 28, 2026; header effective February 3. Body factor application begins February 6, 2026. Residential $0.04494/kWh; general service $0.03568/kWh. The utility's RTS Q&A loosely labels these January–July; prefer the filed factor date and leave earlier January unresolved.

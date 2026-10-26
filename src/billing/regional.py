@@ -14,6 +14,20 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "ppl_electric_pennsylvania": {"label":"PPL Electric Utilities · Pennsylvania", "state":"PA", "zone":"PPL", "module":"ppl_pa", "timezone":"America/New_York",
+                                  "grid_operator":"PJM",
+                                  "grid_sources":["https://dataminer2.pjm.com/feed/bill_deter_mnt_load",
+                                                  "https://www.pplelectric.com/site/Other-Parties/Electricity-Suppliers/Supplier-Reference/Price-Compare"]},
+    "aep_ohio": {"label":"AEP Ohio · Ohio Power Company", "state":"OH", "zone":"AEP", "module":"aep_ohio", "timezone":"America/New_York",
+                 "grid_operator":"PJM",
+                 "grid_sources":["https://dataminer2.pjm.com/feed/bill_deter_mnt_load",
+                                 "https://www.aepohio.com/company/about/rates/"]},
+    "alliant_energy_iowa": {"label":"Alliant Energy · Iowa (Interstate Power & Light)", "state":"IA", "zone":None, "module":"alliant_ia", "timezone":"America/Chicago",
+                            "grid_operator":"MISO", "resource_adequacy_zone":"LRZ3", "transmission_owner":None,
+                            "transmission_ownership_context":"Regional transmission charges recover ITC Midwest and other providers' costs; confirm the actual site's transmission ownership independently.",
+                            "grid_sources":["https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/electric/rts",
+                                            "https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/customerhostedrenewablespilotprogram.pdf",
+                                            "https://www.misoenergy.org/markets-and-operations/settlements/to-rate-data/itc-midwest-llc-itcm/"]},
     "we_energies_wisconsin": {"label":"We Energies · Wisconsin Electric Power Company", "state":"WI", "zone":None, "module":"we_energies_wi", "timezone":"America/Chicago",
                             "grid_operator":"MISO", "resource_adequacy_zone":"LRZ2", "transmission_owner":"American Transmission Company (ATC)",
                             "grid_sources":["https://cdn.misoenergy.org/2023%20Regional%20Resource%20Assessment%20Report630736.pdf",

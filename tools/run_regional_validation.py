@@ -58,9 +58,17 @@ WE_ENERGIES_CASES = tuple(("we_energies_wisconsin", "residential" if p.startswit
                          for p in ("Rg1","Rg2","Cg1","Cg6"))
 DUKE_IN_CASES = tuple(("duke_energy_indiana", "residential" if p.startswith("RS") else "commercial", p)
                      for p in ("RS","RS-TOU","CS","CS-TOU"))
+ALLIANT_IA_CASES = tuple(("alliant_energy_iowa", "commercial" if p in ("600","607") else "residential", p)
+                        for p in ("400","407","427","600","607"))
+PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
+                 ("ppl_electric_pennsylvania", "commercial", "GS-1"),
+                 ("aep_ohio", "residential", "RS"), ("aep_ohio", "commercial", "GS-1"))
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "ppl_electric_pennsylvania": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
+    "aep_ohio": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
+    "alliant_energy_iowa": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "xcel_energy_minnesota": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-06-01","2026-09-30")),
     "we_energies_wisconsin": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "duke_energy_indiana": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -70,7 +78,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -168,7 +176,8 @@ def duke_2025_regular_cycles():
 
 
 def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None, allow_va_history=False,
-                 start_date=None, end_date=None, allow_ohio_provisional=False, allow_we_duke_provisional=False):
+                 start_date=None, end_date=None, allow_ohio_provisional=False, allow_we_duke_provisional=False,
+                 aep_rate_zone=None):
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
@@ -187,6 +196,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2025-04-01","2025-04-30"
     if utility=="duke_energy_indiana" and custom is None and period=="monthly":
         start,end="2025-03-01","2025-03-31"
+    if utility=="alliant_energy_iowa" and custom is None and period=="monthly":
+        start,end="2026-07-01","2026-07-31"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
@@ -199,6 +210,11 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
+    if aep_rate_zone not in (None, "ohio_power", "columbus_southern"):
+        raise ValueError("AEP historical validation requires an explicit supported legacy rate zone; no location-based inference.")
+    if utility == "aep_ohio" and aep_rate_zone is not None:
+        account["legacy_rate_zone"] = aep_rate_zone
+        r["name"] += " · " + aep_rate_zone
     if utility=="ameren_missouri" and account["tariff"]=="2M":
         current=pd.Timestamp(start)
         for key,month in (("may_month",5),("october_month",10)):
@@ -741,7 +757,7 @@ def summarize(directory):
 
 def run(output, inputs, *, include_ciep=False, ciep_inputs=None, include_va_history=False, cases=None, periods=("monthly", "annual"),
         start_date=None, end_date=None, resume=False, case_timeout=2100, allow_ohio_provisional=False,
-        allow_we_duke_provisional=False):
+        allow_we_duke_provisional=False, aep_rate_zone=None):
     periods = validation_periods(periods, start_date, end_date)
     case_timeout = positive_seconds(case_timeout)
     output, inputs = private_path(output), private_path(inputs)
@@ -750,15 +766,21 @@ def run(output, inputs, *, include_ciep=False, ciep_inputs=None, include_va_hist
         return _run(output, inputs, include_ciep=include_ciep, ciep_inputs=ciep_inputs,
             include_va_history=include_va_history, allow_ohio_provisional=allow_ohio_provisional,
             allow_we_duke_provisional=allow_we_duke_provisional, cases=cases, periods=periods,
-            start_date=start_date, end_date=end_date, resume=resume, case_timeout=case_timeout)
+            start_date=start_date, end_date=end_date, resume=resume, case_timeout=case_timeout,
+            aep_rate_zone=aep_rate_zone)
 
 
 def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases, periods,
-         start_date, end_date, resume, case_timeout, allow_ohio_provisional, allow_we_duke_provisional):
+         start_date, end_date, resume, case_timeout, allow_ohio_provisional, allow_we_duke_provisional,
+         aep_rate_zone):
     from src.local_web.runtime import Application
     for utility in SITES:
         adapter(utility)
     selections = list(cases or DEFAULT_CASES)
+    if aep_rate_zone not in (None, "ohio_power", "columbus_southern"):
+        raise ValueError("Select a supported AEP Ohio legacy rate zone.")
+    if aep_rate_zone is not None and not any(row[0] == "aep_ohio" for row in selections):
+        raise ValueError("--aep-rate-zone requires AEP Ohio in the selected utilities.")
     if include_ciep:
         selections.append(("pseg", "commercial", "GLP_CIEP"))
     if include_va_history and cases is None:
@@ -771,6 +793,8 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
         ciep_inputs=str(private_path(ciep_inputs)) if ciep_inputs is not None else None,
         include_va_history=include_va_history, case_timeout=case_timeout, allow_ohio_provisional=allow_ohio_provisional,
         allow_we_duke_provisional=allow_we_duke_provisional)
+    if aep_rate_zone is not None:
+        execution["aep_rate_zone"] = aep_rate_zone
     old = previous_manifest(output, resume, execution)
     app = Application(output)
     started = time.monotonic()
@@ -804,6 +828,8 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
                     continue
                 suffix = f"custom-{start_date}_to_{end_date}" if period == "custom" else period
                 identity = f"{utility}-{plan}-{suffix}"
+                if utility == "aep_ohio" and aep_rate_zone is not None:
+                    identity += "-" + aep_rate_zone
                 prior = next((e for e in manifest["cases"] if e["case"] == identity), None)
                 entry = {"case": identity, "utility": utility, "class": kind, "period": period}
                 if prior:
@@ -817,6 +843,7 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
                     r = case_request(utility, kind, period, plan="GLP" if plan == "GLP_CIEP" else plan,
                         ciep_inputs=ciep_inputs if plan == "GLP_CIEP" else None, allow_va_history=include_va_history,
                         allow_ohio_provisional=allow_ohio_provisional, allow_we_duke_provisional=allow_we_duke_provisional,
+                        aep_rate_zone=aep_rate_zone,
                         start_date=start_date if period == "custom" else None, end_date=end_date if period == "custom" else None)
                     attach_weather(app, r, inputs)
                     timing["input_preparation_seconds"] = time.monotonic()-case_started
@@ -955,6 +982,8 @@ def main():
     parser.add_argument("--ciep-inputs", type=Path, default=ROOT/".cache/regional_historical_inputs/pseg")
     parser.add_argument("--utility", action="append", choices=tuple(SITES), help="Limit preparation/execution to named utility; repeatable")
     parser.add_argument("--plan", action="append", help="Limit execution to named plan IDs after optional cases are added; repeatable")
+    parser.add_argument("--aep-rate-zone", choices=("ohio_power", "columbus_southern"),
+                        help="Explicit AEP Ohio legacy district override; enters frozen execution/request identity")
     parser.add_argument("--period", action="append", choices=("monthly","annual","custom"), help="Limit execution period; custom requires explicit inclusive dates and is used alone")
     parser.add_argument("--start-date",help="Custom inclusive local start date YYYY-MM-DD; no weather retrieval or year shifting")
     parser.add_argument("--end-date",help="Custom inclusive local end date YYYY-MM-DD")
@@ -980,6 +1009,7 @@ def main():
         run(args.output, args.inputs, ciep_inputs=args.ciep_inputs,
             include_va_history=args.include_va_history, allow_ohio_provisional=args.allow_ohio_provisional,
             allow_we_duke_provisional=args.allow_we_duke_provisional, cases=selected, periods=periods,
+            aep_rate_zone=args.aep_rate_zone,
             start_date=args.start_date,end_date=args.end_date, resume=args.resume, case_timeout=args.case_timeout)
     if args.summarize:
         summarize(args.output)

@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereecrenergyefficiencycostrecovery.pdf?hash=5983CD1D737B6856D51E6CCDA331D86A&sc_lang=en
+Retrieved: 2026-10-25
+Method: Public official search-index text; original historical PDF bytes not recovered.
+
+Historical public primary-source indexed copy: substitute thirtieth revised sheet60, canceling substitute twenty-ninth revised. Issued May7,2025, footer effective June12,2025. Body explicitly states cost recovery factors apply effective June17,2025. Residential400/407/427/507 $0.0006/kWh; generalservice600/607/707 $0.0032/kWh.
+The normal live PDF fetch now returns thirty-first revised sheet60 with 2026 factors. The historical search-index extraction therefore remains distinct from the current original bytes; a 2026 binary hash is not attached as though it authenticates the 2025 sheet.

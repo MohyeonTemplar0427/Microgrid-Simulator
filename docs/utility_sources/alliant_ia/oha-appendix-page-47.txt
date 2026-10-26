@@ -1,0 +1,88 @@
+OriginalfileSHA256:83ec981babbc0417e5cb8838f08c3dcca36b63f8da58347c37b044150b4dcc9c
+OriginalPDFpage:47
+Appendix:sub23rd revisedSheet86 RTS factorsJanuary1,2025
+Source:https://www.ohatowers.org/wp-content/uploads/2025/01/S8-HCV-UA-Update-Study-Apr-2025.pdf
+
+Interstate Power and Light Company  
+ELECTRIC TARIFF  
+Filed with the I.U.C. Substitute  Twenty-Third Revised Sheet No. 86
+ORIGINAL TARIFF NO. 1  Canceling Sub. Twenty-Second Revised Sheet No. 86
+  
+ 
+Rider RTS – Regional Transmission Service Clause 
+ 
+ 
+ 
+Date Issued:  December 5, 2024  Effective Date:  December 21, 2024 
+By:  Amy Wheatley – Senior Manager, Regulatory  
+The Regional Transmission Service (RTS) Clause provides a mecha nism to recover costs related to 
+transmission incurred by or charged to the Company consistent w ith a tariff or agreement that is subject to the 
+jurisdiction of the Federal Energy Regulatory Commission through retail rates as approved by the Iowa Utilities
+ 
+Board (Board) through the application of cost recovery factors.
+ 
+Applicable:   
+To all rate classes.  The RTS will be applied to all kW or kWh sales, depending upon rate class, under retail 
+electric rate schedules.  The cost recovery factors are applied  on a monthly basis to either base kilo-Watt-hours 
+(energy) or base kilo-Watt (demand) units, depending upon custo mer class, for the purpose of billing.  The RTS 
+factor shall be applied as a separate charge.  The cost recover y factors shall be determined per the formulae 
+below and shall apply monthly to bills.  All provisions of the customer’s current applicable rate schedule will apply 
+in addition to this charge.
+ 
+ 
+ 
+ 
+ 
+RTS factors to be applied effective January 1, 2025:     C  
+ 
+Class Price Codes RTS 
+ $/kWh 
+ 
+RTS 
+$/kW 
+ 
+ 
+Residential Service  
+ 
+400, 407, 427, 507 
+ 
+$0.04077 
+ 
+n/a 
+ 
+N,I 
+Non-Residential General 
+Service  
+600, 607, 707 
+ 
+$0.03217 n/a I 
+Large General Service*  440, 447, 480, 487 
+ 
+n/a $10.72 
+ 
+ 
+I 
+ 
+ 
+Large General Service –
+Supplementary Power* 
+800, 807, 810, 817 n/a $6.49 R 
+Large General Service - 
+High Load Factor / 
+Large Volume* 
+ 
+ 
+760 n/a $11.93 I 
+Area and Street Lighting 
+Service 
+ 
+620, 630, 640 $0.03533 n/a R 
+ 
+Standby Power Service 
+ 
+790, 840 n/a $8.08 I  
+ 
+ 
+* Large General Service RTS charges shall be included with base rate demand charges in the application 
+of primary service and power factor provisions of the Large General Service tariff. 
+43

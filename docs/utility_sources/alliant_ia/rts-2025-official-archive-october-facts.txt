@@ -1,0 +1,5 @@
+Source: https://web.archive.org/web/20251010131804id_/https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/electric/rts
+Retrieved: 2026-10-25
+Original SHA256: f58bc0b3ab454cc17fcf113a4458830db84048f0ec6a77e9c6dfa92288066572
+
+Archived official utility page captured October10,2025 corroborates the January–August and September-onward2025 class factors in the September7 snapshot. It is not a different new factor. Retain its capture and original hashes separately.

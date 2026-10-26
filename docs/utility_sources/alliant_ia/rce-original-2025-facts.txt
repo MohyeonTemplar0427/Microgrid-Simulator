@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrceratecaseexpense.pdf?hash=EA3E0AD89FAB71A930DD8ED651951BE1&sc_lang=en
+Retrieved: 2026-10-25
+Original binary SHA256: c0bb2574708ca98e1eafb8f925640b1b071c5b1ce87f118ea4d14edcf27ad539
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+Second Substitute11th Revised Sheet90; issued July18,2025; header effective August8,2025. The body applies0.00006 USD/kWh to all uses for all bills rendered in September2025 through October2029 billing months. This distinct billing-month application supersedes any assumption that the header date starts customer charges. EAC already includes this factor from September2025. Do not add a second RCE line.

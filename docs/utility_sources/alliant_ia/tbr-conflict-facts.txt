@@ -1,0 +1,8 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridertbrtaxbenefitrider.pdf?hash=47F0CF0DB8FFCB227C7740CBB0696CBB&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Sheets 88 (fourteenth revised) and 89 (tenth revised); issued September 20, 2024; effective October 1, 2024. Twelve-month refund starting October 2024: residential -$0.00789/kWh; general service -$0.00592/kWh. The text says it is reflected as part of Energy Cost Adjustment on a customer bill. The term expired before October 2025; the utility's 2026 outlook also confirms the October 1, 2025 expiration.
+Ordering is resolved by the official 2025 residential sample bill: Energy Cost $0.0102/kWh and TBR -$0.00789/kWh appear as separate line items. The detailed EAC table's dash therefore does not establish inclusion of the standalone TBR. Add the separately applicable credit during its refund window. Historical DRCR/RTS factor gaps remain separate issues.

@@ -1,0 +1,19 @@
+Source: https://www.boonegov.com/egov/apps/document/center.egov?view=item&id=2270
+PDF pages: [22]
+Retrieved: 2026-10-25
+Only rate and billing facts retained. Account/meter identifiers, addresses and unrelated contents omitted.
+
+General-service 600 bill printed in July 14, 2025 Airport Commission packet. Reading-date labels May 20–June 19, 2025; 30 billing days; total 507 kWh, with measured seasonal registers summer 276 kWh and winter 231 kWh.
+Summer energy: 276 x $0.16513 = $45.58.
+Winter energy: 231 x $0.12041 = $27.81.
+TBR: 507 x -$0.00592 = -$3.00.
+Energy Cost: 507 x $0.0018 = $0.91.
+EECR old: 456.300 kWh x $0.0014 (27 of 30 days) = $0.64.
+EECR new: 50.700 kWh x $0.0032 (3 of 30 days) = $0.16.
+DRCR old: 456.300 kWh x $0.0023 (27 of 30 days) = $1.05.
+DRCR new: 50.700 kWh x $0.0028 (3 of 30 days) = $0.14.
+RTS: 507 x $0.03217 = $16.31.
+Basic service: 30 x $0.7562 = $22.69.
+Subtotal $112.29. Franchise 1% = $1.12. State tax 6% on $113.41 = $6.80. Total current electric charges $120.21.
+The June 17 body factor date corresponds to the billed 3-day new-factor portion through the June 19 read date. The June 12 footer would instead produce a different fraction. This is primary evidence for the explicit June 17 application date and allocating whole-cycle billed kWh by service-day fractions, rather than measuring only energy physically consumed on either side of the change.
+The reading-date labels are not unambiguous interval timestamps: retain the stated 30-day count and 27/3 split, and document the adapter's start/end date convention separately. Seasonal base energy uses actual register totals (276/231), not the rider's 456.3/50.7 allocation. This record does not establish residential DRCR factors.

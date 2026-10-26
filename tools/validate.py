@@ -25,7 +25,7 @@ GUI_TESTS = ("test/test_application_interface.py", "test/test_desktop_applicatio
 AREAS = {
     "validation": ("test_validation_launcher.py", "test_regional_validation_resume.py",
                    "test_regional_validation_driver.py", "test_regional_coverage.py"),
-    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py", "test_dte*.py", "test_consumers*.py", "test_ameren*.py", "test_xcel_mn.py", "test_we_energies_wi.py", "test_duke_in.py", "test_we_duke*.py"),
+    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py", "test_dte*.py", "test_consumers*.py", "test_ameren*.py", "test_xcel_mn.py", "test_we_energies_wi.py", "test_duke_in.py", "test_we_duke*.py", "test_alliant*.py", "test_ppl*.py", "test_aep_ohio*.py"),
     "billing": ("test_billing*.py", "test_tariff*.py", "test_baseline*.py",
                 "test_pge_residential.py", "test_pge_commercial.py", "test_tou_holidays.py"),
     "dispatch": ("test_battery.py", "test_*dispatch*.py", "test_regional_relaxation.py"),
@@ -84,6 +84,8 @@ def fingerprints():
 
 
 def build_plan(args, output):
+    if getattr(args, "aep_rate_zone", None) is not None and not args.regional:
+        raise ValueError("--aep-rate-zone requires --regional; it cannot silently change an unrelated test run.")
     chosen = selected_tests(args.tier, args.area, args.test, args.include_gui)
     pytest = [PYTHON, "-m", "pytest", "-q", "--durations=20",
               "--junitxml="+str(output/"pytest.xml"), *chosen]
@@ -101,6 +103,9 @@ def build_plan(args, output):
         periods = validation_periods(tuple(args.period or ("monthly", "annual")), args.start_date, args.end_date)
         cases = selected_cases(args.utility, args.plan, include_ciep=args.include_ciep,
                                include_va_history=args.include_va_history)
+        aep_rate_zone = getattr(args, "aep_rate_zone", None)
+        if aep_rate_zone is not None and not any(row[0] == "aep_ohio" for row in cases):
+            raise ValueError("--aep-rate-zone requires AEP Ohio in the selected utilities.")
         if not any(period != "annual" or utility != "dominion_energy_virginia"
                    or (args.include_va_history and plan in ("VA-1", "VA-GS1"))
                    for utility, _, plan in cases for period in periods):
@@ -119,6 +124,7 @@ def build_plan(args, output):
             for value in values:
                 command.extend([option, value])
         for option, value in (("--start-date", args.start_date), ("--end-date", args.end_date),
+                              ("--aep-rate-zone", aep_rate_zone),
                               ("--ciep-inputs", str(private_path(args.ciep_inputs)) if args.ciep_inputs else None)):
             if value is not None:
                 command.extend([option, value])
@@ -306,6 +312,7 @@ def main(argv=None):
     from src.billing.regional import UTILITIES
     parser.add_argument("--utility", choices=tuple(UTILITIES), action="append", default=[])
     parser.add_argument("--plan", action="append", default=[])
+    parser.add_argument("--aep-rate-zone", choices=("ohio_power", "columbus_southern"))
     parser.add_argument("--period", choices=("monthly", "annual", "custom"), action="append", default=[])
     parser.add_argument("--start-date")
     parser.add_argument("--end-date")

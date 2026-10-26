@@ -1,0 +1,8 @@
+Source: https://revenue.iowa.gov/taxes/frequently-asked-questions/sales-tax
+Retrieved: 2026-10-25
+Method: Official Iowa Department of Revenue public HTML indexed text inspected.
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Iowa general sales tax is 6%. Electricity is sourced to the billed subscriber address. Residential energy is state-tax exempt but subject to 1% local energy excise in LOST jurisdictions. Electricity subject to a city/county franchise or user fee is exempt from LOST.
+Complementary official source: https://revenue.iowa.gov/taxes/frequently-asked-questions/local-option-sales-tax-lost

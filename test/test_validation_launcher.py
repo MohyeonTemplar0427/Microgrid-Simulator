@@ -222,3 +222,23 @@ def test_we_duke_provisional_flag_is_explicit_and_forwarded(tmp_path):
         args.regional=False;args.inputs=None;args.utility=[];args.period=[]
         with pytest.raises(ValueError,match="require --regional"):
             validate.build_plan(args,tmp_path/".cache/out")
+
+
+def test_aep_rate_zone_requires_matrix_and_selected_utility(tmp_path):
+    from unittest.mock import patch
+    from tools import run_regional_validation as driver
+    with patch.object(validate, "ROOT", tmp_path), patch.object(driver, "ROOT", tmp_path):
+        (tmp_path / "test").mkdir()
+        (tmp_path / "test/test_fixture.py").write_text("# fixture\n")
+        inputs = tmp_path / ".cache/inputs"
+        inputs.mkdir(parents=True)
+        args = options(regional=True, inputs=inputs, test=["test/test_fixture.py"],
+                       utility=["aep_ohio"], period=["annual"], aep_rate_zone="columbus_southern")
+        command = validate.build_plan(args, tmp_path / ".cache/out")[-1]["command"]
+        assert command[command.index("--aep-rate-zone") + 1] == "columbus_southern"
+        args.utility = ["ppl_electric_pennsylvania"]
+        with pytest.raises(ValueError, match="requires AEP Ohio"):
+            validate.build_plan(args, tmp_path / ".cache/out")
+        args.regional = False
+        with pytest.raises(ValueError, match="requires --regional"):
+            validate.build_plan(args, tmp_path / ".cache/out")

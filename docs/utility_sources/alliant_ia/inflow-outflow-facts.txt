@@ -1,0 +1,9 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/inflowoutflowtariff.pdf?hash=86C5A123994D30ED6F8002639C67266E&la=en&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Substitute original sheets 42.2–42.5. Issued October 28, 2020; effective December 30, 2020. DG customers pay all applicable ordinary eligible schedule charges and riders on net company-to-customer flows in each 15-minute interval. Outflow credits use applicable retail volumetric rates, including applicable volumetric riders. Credits only offset volumetric charges; carried credits apply first; unused balance forfeits on the selected January/April annual anniversary and is never paid as cash.
+Eligibility includes behind-meter interconnected DG, at most 1 MW AC, intended onsite use, and production at most 110% of annual customer use, with specified proration for larger facilities. Interconnection approval remains separate.
+An explicitly non-export comparison can use applicable ordinary import charges with zero outflow and stated approved-interconnection assumptions. This does not implement IO export settlement or prove account eligibility.

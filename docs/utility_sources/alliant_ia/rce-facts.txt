@@ -1,0 +1,7 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/riderrceratecaseexpense.pdf?hash=EA3E0AD89FAB71A930DD8ED651951BE1&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Second substitute eleventh revised sheet 90. Issued July 18, 2025; header effective August 8. Billing September 2025–October 2029: $0.00006/kWh, all rates. The EAC summary and detailed billed totals already include this from September 2025. A reporting split must not double count.

@@ -1,0 +1,6 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereacenergyadjustmentclause.pdf?hash=EA46041D4CB9157430846634B2771F3F&sc_lang=en
+Retrieved: 2026-10-25
+Original binary SHA256: 19f5029c857173627b733682f4005413f056ada7f70c048cd229aac7a05cc814
+Method: Original official source downloaded over verified TLS; factual summary from selected pages, with PDF visual checks as recorded in research findings.
+
+Actual downloaded revision: Substitute 244th Sheet57 and Substitute149th Sheet57.1, issued October20,2026, effective October2026 billing month. Both residential and GS tables retain all12 2025 monthly totals. AEP, fuel and included RCE sum exactly to each billed total. The TBR column is a dash throughout those rows; its separately applicable credit is not included in these totals. Original PDF visual review and Decimal checks confirm all12 rows. This binary is newer than the retained September25 indexed-revision record. October2026 composition is AEP0.0033 +fuel0.0134 +RCE0.00006=0.01676; this composition update does not alter the posted total.

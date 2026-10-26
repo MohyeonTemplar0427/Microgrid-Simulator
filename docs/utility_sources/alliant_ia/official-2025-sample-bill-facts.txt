@@ -1,0 +1,17 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/billguides/iowaresdemandbillguide.pdf?hash=EB7E24BBE56C0ADC6687806EF16B4500&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility sample PDF, public search-index visual-element panel plus PDF text inspected; original bytes inaccessible.
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Official sample bill guide: document 1312650 3/25 MJ. Page 2 contains a January 2–February 3, 2025 sample residential bill, 32 days, 1,472 kWh, rate 507 optional demand. Its embedded visual bill panel is exposed by the public search-index visual-element extraction, while the ordinary PDF text parser contains surrounding explanatory text only. Direct original PDF download returned 403; original-file hash is null.
+Winter demand: 5.818 kW x $12.63 = $73.48.
+Winter off-peak energy: 1,472 kWh x $0.02175 = $32.02.
+Energy Cost: 1,472 x $0.0102 = $15.01.
+EECR: 1,472 x $0.0009 = $1.32.
+DRCR: 1,472 x $0.0031 = $4.56.
+TBR: 1,472 x -$0.00789 = -$11.61.
+RTS: 1,472 x $0.04077 = $60.01.
+Basic service: 32 x $0.5096 = $16.31.
+Subtotal $191.10; 5% franchise $9.56; total $200.66.
+This establishes separate TBR versus EAC treatment and the residential DRCR factor for this sample cycle. It does not establish the whole preceding DRCR effective window or the general-service factor. Do not apply 507 demand charges to 400/407/427.

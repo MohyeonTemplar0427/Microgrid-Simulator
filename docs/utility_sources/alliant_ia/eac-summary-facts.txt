@@ -1,0 +1,11 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/eacsummary.pdf?hash=A8CA5D89FF3EB558FB8AC66EC66DE142&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Billed EAC in dollars/kWh, equal for residential and general service for the displayed months. Factors apply by billing month; these are not independently verified rules for allocating arbitrary crossing cycles.
+2025 January–December: 0.01160, 0.01020, 0.00020, -0.01100, -0.01050, 0.00180, 0.01240, 0.01810, 0.01976, 0.01496, 0.00666, -0.00034.
+2026 January–October: 0.00066, 0.00166, 0.00796, -0.00254, -0.00994, -0.00334, 0.00656, 0.01076, 0.01616, 0.01676.
+November/December 2026 are blank, not zero. From September 2025 these values explicitly include $0.00006/kWh RCE; do not add it twice.
+Alliant's official 2025 sample bill separately adds TBR to the EAC billed adjustment. RCE and TBR have different inclusion rules.

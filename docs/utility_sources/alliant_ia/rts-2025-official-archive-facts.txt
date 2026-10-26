@@ -1,0 +1,5 @@
+Source: https://web.archive.org/web/20250907174848id_/https://www.alliantenergy.com/account-and-billing/understanding-bill-rates/iowa/electric/rts
+Retrieved: 2026-10-25
+Original SHA256: 1c6b7050110278968f06ce98eca9e17898f069ef260474b7961d19a83702bfdd
+
+Archived official utility page captured September7,2025. The table identifies January–August2025 RTS prices as residential0.04077 and non-residential general service0.03217 USD/kWh. It gives residential0.04055 and GS0.03196 from September1,2025. The September factors already incorporate the stated refund; do not add a second refund. The January values also match the attached filed January2025 Sheet86 in the OHA source already retained. The exact superseding24th-revision PDF has not been recovered; the dated primary utility table supplies explicit prices and application date.

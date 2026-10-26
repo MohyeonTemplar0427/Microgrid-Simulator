@@ -1,0 +1,1061 @@
+Original official PDF factual-source extraction. Retrieval2026-10-25.
+
+=== PDF page 1 ===
+    OHIO POWER COMPANY
+                                                                                                                       47th Revised Sheet No. 101-1
+                                                                                                          Cancels 46       th Revised Sheet No. 101-1
+
+                                                                            P.U.C.O. NO. 21
+
+                                                                  TABLE OF CONTENTS
+
+   Schedule                                                                                               Sheet No(s)                 Effective Date
+Ohio Power & Columbus Southern Power Rate Zones
+                          Table of Contents                                                     101-1 thru 101-2         Cycle 1 April 2026
+                          List of Communities Served                                     102-1 thru 102-9         December 1, 2021
+                          Terms and Conditions of Service                             103-1 thru 103-82       Cycle 1 April 2026
+                          Supplier Terms and Conditions                                103-27 thru 103-55     December 1, 2021
+                          Summary of Applicable Riders                                 104-1                           June 1, 2024
+                          Schedule Cross Reference                                      105-1 thru 105-2         June 1, 2024
+
+Tariff Schedules
+RS                     Residential Service                                                   210-1 thru 210-2         January 1, 2022
+RSDM               Residential Service – Demand Metered                   214-1 thru 214-2         January 1, 2022
+RS-TOU            Residential Time-of-Use                                           215-1 thru 215-2         Cycle 1 February
+                                                                                                                                   2022
+RS-TOD            Residential Time-of-Day (no new customers)          216-1 thru 216-2         January 1, 2022
+GS-1                  General Service – Non-Demand Metered                220-1 thru 220-2         December 1, 2024
+GS                     General Service                                                        220-3 thru 220-7         December 1, 2024
+GS-TOU            General Service – Time-of-Use – Non-Demand      221-1 thru 221-2         Cycle 1 February
+                                                                                                                                   2022
+GS-TOD            General Service – Time-of-Day (no new                                           222–1 thru 222-2        December 1, 2021
+                       customers)
+DCT                   Data Center Tariff                                                     223-1 thru 223-7         July 23, 2025
+GS-FAIR           County and Independent Fairs                                 228-1 thru 228-2         December 1, 2021
+AL                      Area Lighting                                                            240-1 thru 240-4         December 1, 2021
+SL                      Street Lighting                                                          241-1 thru 241-5         December 1, 2021
+EHG                  Electric Heating General (No new customers)         250-1 thru 250-2         December 1, 2021
+EHS                   Electric Heating Schools (No new customers)         251-1 thru 251-2         December 1, 2021
+SS                     School Service (No new customers)                        252-1 thru 252-2         December 1, 2021
+Supp. No. 18     Church and School Service (No new customers)    253-1                           December 1, 2021
+Supp. No. 21     Public Authority-Delayed Payment                           255-1                           December 1, 2021
+GSP                  Generation Station Power                                        260-1 thru 260-2         December 1, 2021
+NEMS                Net Energy Metering Service                                   261-1 thru 261-2         December 1, 2021
+NEMS-H            Net Energy Metering Service – Hospitals                262-1 thru 262-2         December 1, 2021
+COGEN/SPP     Cogeneration and/or Small Power Production         263-1 thru 263-3          February 1, 2025
+PEV                   Pilot Plug-In Electric Vehicles                                  270-1 thru 270-2         June 1, 2024
+RS-PEV             Residential Plug-in Electric Vehicle                          271-1 thru 271-2         June 1, 2024
+BUS-PEV          Public Plug-in Electric Vehicle                                  272-1 thru 272-2         June 1, 2024
+PA                     Pole Attachment Tariff                                              300-1 thru 300-3         December 1, 2021
+Riders
+                          Basic Transmission Cost Rider                                400-1                           Cycle 1 April 2026
+                          KWH Tax Rider                                                        402-1                           December 1, 2021
+                          Percent of Income Payment Plan Rider                   404-1                           Cycle 1 January 2026
+                          Pilot Throughput Balancing Adjustment Rider         406-1                           Cycle 1 March 2025
+
+   Filed pursuant to Order dated April 3, 2024, in Case No. 23-23-EL-SSO.
+
+
+
+
+
+  Issued:  March 27, 2026                                                                                       Effective: Cycle 1 April 2026
+                                                                         Issued by
+                                                              Marc Reitter, President
+                                                                        AEP Ohio
+
+
+=== PDF page 2 ===
+    OHIO POWER COMPANY
+                                                                                                                                47th Revised Sheet No. 101-2
+                                                                                                                  Cancels 46        th Revised Sheet No. 101-2
+
+                                                                            P.U.C.O. NO. 21
+
+                                                                       TABLE OF CONTENTS
+
+
+                          Enhanced Service Reliability Rider                          408-1                           Cycle 1 December
+                                                                                                                                            2025
+                          gridSMART Rider                                                     410-1                           Cycle 1 April 2026
+                          Distribution Investment Rider                                   412-1                           Cycle 1 March 2026
+                          Storm Damage Recovery Rider                               414-1                           Cycle 1 November
+                                                                                                                                            2025
+                          Bad Debt Rider                                                         416-1                           June 1, 2024
+                          Economic Development Cost Recovery Rider         420-1                           Cycle 1 April 2026
+                          Legacy Generation Resource Rider                         422-1                           August 14, 2025
+                          Retail Reconciliation Rider                                       424-1                           June 1, 2024
+                          SSO Credit Rider                                                      425-1                           June 1, 2024
+                          Power Forward Rider                                               428-1                           June 1, 2024
+                          Tax Savings Credit Rider                                         432-1                           June 1, 2024
+                          Solar Generation Fund Rider                                   433-1                           August 14, 2025
+                          Ohio First Rider                                                        435-1                           June 1, 2024
+                          Energy Efficiency Rider                                            437-1                           Cycle 1 April 2026
+                          Generation Energy Rider                                          450-1                           June 1, 2025
+                          Generation Capacity Rider                                       451-1 thru 451-2         June 1, 2025
+                          Auction Cost Reconciliation Rider                            452-1                           Cycle 1 April 2026
+                          Energy Efficiency and Peak Demand Reduction                                    453-1                           June 1, 2024
+                         Rider
+                          Alternative Energy Rider                                          454-1                           June 1, 2024
+IRP-L                 Interruptible Power Rider – Legacy                                                 470-1 thru 470-3         June 1, 2024
+                         Discretionary Rider
+IRP-E                Interruptible Power Rider – Expanded                                                471-1 thru 471-2         June 1, 2024
+                         Discretionary Rider
+                          Automaker Credit Rider                                            472-1                           June 1, 2024
+                          Alternate Feed Service Rider                                   474-1 thru 474-5         June 1, 2024
+                          Pilot Demand Response Rider                                 475-1                           June 1, 2024
+                          Underground Service Tariff                                      476-1                           December 1, 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Filed pursuant to Order dated April 3, 2024, in Case No. 23-23-EL-SSO.
+
+
+
+
+
+   Issued:  March 27, 2026                                                                                       Effective: Cycle 1 April 2026
+                                                                              Issued by
+                                                                   Marc Reitter, President
+                                                                              AEP Ohio
+
+
+=== PDF page 31 ===
+OHIO POWER COMPANY                                                                                    2nd Revised Sheet No. 103-20
+                                                                                                       Cancels 1   st Sheet No. 103-20
+
+                                                           P.U.C.O. NO. 21
+
+                                           TERMS AND CONDITIONS OF SERVICE
+
+     consecutive months. Retention by the Company, prior to final settlement, of any deposit or guarantee
+     is not a payment or part payment of any bill for service.
+
+23.        BILLING AND BILLS PAYABLE
+
+               The  customer  will  be  held  responsible  for  all  charges  of  electric  energy  delivered  at  the
+     customer’s premises. Bills will be rendered by the Company to the customer monthly in accordance
+     with the schedule selected applicable to the customer’s service with the following exception:
+
+               Year-round residential and not-for-profit General Service Schedule customers shall have the
+     option  of  paying  bills  under  the  Company’s  equal  payment  plan  (Budget  Plan),  whereby  the  total
+     service for the succeeding 12-month period is estimated in advance, and bills are rendered monthly
+     on the basis of one-twelfth of the 12-month estimate. The Company may at any time during the 12-
+     month period adjust the estimate so made, and the bills rendered in accordance with such estimate,
+     to conform more nearly with the actual use of service being experienced. The normal equal payment
+     period will be twelve (12) months, commencing in any month selected by the Company, but in those
+     cases where billing is commenced during a month which leaves less than twelve (12) months until the
+     beginning  of  the  next  normal  equal  payment  period  to  which  the  customer  is  assigned,  payments
+     shall be calculated on the basis of the months in such period.
+
+               In  case  the  actual  service  used  during  any  equal  payment  period  exceeds  the  bills  as
+     rendered on the equal payment plan, the amount of such excess shall be paid on or before the due
+     date of the bill covering the last month of the equal payment period in which such excess appears, or
+     such excess may be added to the estimated use of the next normal equal payment period of twelve
+     (12) months, and shall be payable in equal payments over such period, except that if the customer
+     discontinues service with the Company under the equal payment plan, any such excess not yet paid
+     shall become payable immediately. In case the actual service used during the equal payment period
+     is less than the amount paid under the equal payment plan during such period, the amount of such
+     overpayment shall, at the option of the Company, either be refunded to the customer or credited on
+     the customer’s last bill for the period.
+
+               If a customer fails to pay bills as rendered on the equal payment plan, the Company shall
+     have  the  right  to  withdraw  the  plan  with  respect  to  such  customer  and  to  restore  the  customer  to
+     billing as provided for in the applicable schedules, in addition to any other rights which the Company
+     may have under such schedules and terms and conditions of service in case of arrearage in payment
+     of bills.
+
+               The  customer  will  be  held  responsible  for  all  charges  for  electric  energy  delivered  at  the
+     customer’s premises. Bills will be rendered for each month’s use by the Company to the customer. All
+     bills from the Company are due and payable by mail, checkless payment plan, electronic payment
+     plan  or  at  an  authorized  payment  agent  of  the  Company  within  the  time  limits  specified  in  the
+     schedule.  For  the  purpose  of  this  Section,  the  United  States  Postal  Service  is  not  an  authorized
+     payment  agent,  and  payments  received  through  the  Postal  Service  are  considered  paid  when
+     received  at  the  Company’s  business  offices.  Failure  to  receive  bill  will  not  entitle  customer  to  any
+     discount or to the remission of any charge for nonpayment within the time specified. For purposes of
+     this  Section,  the  word  “month”  as  used  herein  and  in  the  schedules  is  hereby  defined  to  be  the
+     elapsed time between two successive meter readings approximately thirty (30) days apart.
+
+
+Filed pursuant to Order dated November 17, 2021 in Case No. 20-585- EL-AIR
+
+Issued:  March 15, 2026                                                                           Effective: Cycle 1 April 2026
+
+                                                             Issued by
+                                                     Marc Reitter, President
+                                                             AEP Ohio
+
+=== PDF page 32 ===
+OHIO POWER COMPANY                                                                                     2nd Revised Sheet No. 103-21
+                                                                                                       Cancels 1    st Sheet No. 103-21
+
+                                                            P.U.C.O. NO. 21
+
+                                           TERMS AND CONDITIONS OF SERVICE
+
+
+               For  any  General  Service  customer  who  agrees  to  make  payments  to  the  Company  by
+     electronic  transfer,  the  21  days  provision  in  the  Delayed  Payment  Charge  in  the  General  Service
+     tariffs shall be modified to 22 days. If the 22nd day falls upon a weekend or the legal holidays of New
+     Year's Day, Presidents’ Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day and
+     Christmas  Day,  the  payment  must  be  received  by  the  next  business  day  to  avoid  the  Delayed
+     Payment Charge. In no event shall this provision apply to Supplement No. 21.
+
+               If  the  customer  fails  to  pay  in  full  any  final  bill  for  service  rendered  and  said  customer
+     receives like service at another location, the Company may transfer the unpaid balance of the final bill
+     to the said customer’s like service account for any such other location. Like service refers to an end
+     use within the following broad categories: residential, commercial, or industrial. Such amount shall be
+     designated  as  a  past-due  amount  on  the  account  at  such  location  and  subject  to  collection  and
+     disconnection action in accordance with Chapter 4901:1-18 of the Ohio Administrative Code and the
+     Company’s filed tariffs, terms and conditions of service, provided that such transfer of a final bill shall
+     not be used to disconnect service to a residential consumer who is not responsible for such bill.
+
+               If the amount of energy consumed is not properly registered by a meter for any reason, or is
+     not properly charged to the customer’s account, the Company will, for the period of time that incorrect
+     billings can be established, adjust the meter readings and billings to reflect all available information
+     concerning the actual use by the customer. Any resulting overpayment will be paid or credited to the
+     customer.  Unless  the  customer  and  the  Company  agree  otherwise,  the  Company  will  bill  non-
+     residential accounts any undercharged amount  in compliance  with Chapter 4901: 1-10  of the Ohio
+     Administrative Code, as amended from time to time. The Company shall bill uncharged amounts for
+     residential  customers  in  compliance  with  section  4933.28  of  the  Revised  Code,  as  amended  from
+     time to time. Should the amount of the adjustment be under dispute, the Company will continue to
+     supply service and the customer shall continue to pay the amounts billed until a final determination is
+     made.
+
+               A customer shall be charged $12.00 for any dishonored payment received in payment for a
+     bill rendered by the Company, unless the customer shows that the bank was in error.
+
+24.        TERMINATION OF SERVICE AT CUSTOMER’S REQUEST
+
+               It is the responsibility of an existing customer to notify the Company when service is to be
+     discontinued and to provide a mailing address for the final bill.
+
+               When  the  Company  receives  notice  from  an  existing  customer  that  the  service  is  to  be
+     discontinued,  or  from  a  prospective  customer  that  an  existing  service  is  to  be  transferred  into  the
+     prospective  customer’s  name,  the  Company  will,  within  three  (3)  regular  Company  working  days,
+     determine the meter reading for the final bill to the existing customer. The existing customer will be
+     responsible for all service supplied to the premises until such meter reading and discontinuance or
+     transfer is made. Transfer of service to a qualified prospective customer will not be delayed or denied
+     because of nonpayment of the final bill by the former customer, unless the former customer continues
+     to be a consumer of electric service at that premise.
+
+25.        DENIAL OR DISCONTINUATION OF SERVICE
+
+
+Filed pursuant to Order dated November 17, 2021 in Case No. 20-585- EL-AIR
+
+Issued:  March 15, 2026                                                                           Effective: Cycle 1 April 2026
+
+                                                              Issued by
+                                                     Marc Reitter, President
+                                                             AEP Ohio
+
+=== PDF page 160 ===
+      OHIO POWER COMPANY                                                                                           7th Revised Sheet No. 400-1
+                                                                                                                   Cancels 6    th Sheet No. 400-1
+
+                                                                    P.U.C.O. NO. 21
+
+                                                      BASIC TRANSMISSION COST RIDER
+
+      Effective Cycle 1 April 2026, all customer bills subject to the provisions of this Rider, including any bills rendered
+      under special contract, shall be adjusted by the Basic Transmission Cost charge per kW and/or kWh as follows:
+
+                                              Schedule                                                         ¢/kWh                    $/kW
+          Residential
+          RS, RSDM, RS-ES, RLM, RS-TOD, RS-TOU, PEV, RS-PEV                                            4.34364
+          Non Demand Metered
+          GS-1, GS Recreational Lighting, GS1 ES, GS2 ES, GS-TOD,
+          GS-2-TOD, GS-2-LMTOD, GS-TOU, EHS, SS, PEV, BUS-PEV                                          3.16869
+          Demand Metered Secondary
+          GS, EHG                                                                                      0.04444                  10.28
+          Demand Metered Primary
+          GS                                                                                           0.04295                  10.79
+          Demand Metered Transmission
+          GS                                                                                           0.04218                   6.74
+          Lighting
+          AL, SL                                                                                       1.17809
+          County Fair Transmission Supplement Secondary                                                3.16869
+          County Fair Transmission Supplement Primary                                                  4.82644
+          Interim Pilot 1CP Secondary                                                                  0.04444                  14.64
+          Interim Pilot 1CP Primary                                                                    0.04295                  14.64
+          Interim Pilot 1CP Transmission                                                               0.04218                  14.64
+          Interim Pilot 1CP Secondary School                                                           0.04444                  14.64
+          Pilot 6CP BESS and Public Transit EV                                                           0.00                      0.00
+
+      The  Interim  Pilot  1CP  Demand  rates  for  the  Basic  Transmission  Cost  Rider  are  limited  to  availability  as
+      established in Case No. 23-23-EL-SSO. The monthly $/kW for the Interim Pilot 1CP Basic Transmission rate will
+      be  based  on  the  participating  customer’s  demand  during  the  single  zonal  transmission  peak.  The  1CP  will  be
+      changed  each  January  based  on  the  customer’s  contribution  to  the  single  zonal  transmission  peak  during  the
+      previous year.
+
+      Consistent with the terms and conditions adopted in the Opinion and Order in Case No. 23-23-EL-SSO, this pilot
+      program  is  created  to  include  a  Pilot  6CP  Demand  rates  for  the  Basic  Transmission  Cost  Rider.  The  monthly
+      $/kW  for  the  interim  Pilot  6CP  Basic  Transmission  rate  will  be  based  on  the  participating  customer’s  average
+      hourly load coincident with the hourly peaks for AEP Retail Load (AEP East transmission zone) during the months
+      of December, January, February, June, July, and August (in accordance with AEP’s Transmission Agreement for
+      each year November 1 through October 31), and grossed up for losses. The 6CP will be changed each January
+      based on the customer’s contribution to the six zonal transmission peaks during the previous year.
+
+      This  Rider  is  subject  to  reconciliation,  including,  but  not  limited  to,  refunds  to  customers,  based  upon  the  flow
+      through impact to this Rider of changes to the Open Access Transmission Tariff approved by the Federal Energy
+      Regulatory  Commission  (including  changes  related  to  the  Tax  Cuts  and  Jobs  Act  of  2017)  or  based  upon  the
+      results of audits ordered by the Commission.
+
+
+
+Filed pursuant to Order dated March 18, 2026 in Case No. 26-47-EL-RDR and Order dated April 3, 2024 in Case No. 23-
+23-EL-SSO
+
+Issued:  March 19, 2026                                                                                                             Effective:  Cycle 1 April, 2026
+                                                                        Issued by
+                                                               Marc Reitter, President
+                                                                        AEP Ohio
+
+
+=== PDF page 162 ===
+OHIO POWER COMPANY                                                                                   7th Revised Sheet No. 404-1
+                                                                                          Cancels 6th Revised Sheet No. 404-1
+
+
+                                                         P.U.C.O. NO. 21
+
+                                     PERCENT OF INCOME PAYMENT PLAN RIDER
+
+
+
+Effective Cycle 1 January 2026, all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the Percent of Income Payment Plan charge of
+0.55215¢/KWH for the first 833,000 KWH consumed each month and 0.01756¢/KWH for all KWH consumed
+each month in excess of 833,000 KWH.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated December 17, 2025, in Case No. 25-0607-EL-USF
+
+Issued:  December 18, 2025                                                                      Effective:  Cycle 1 January 2026
+
+                                                              Issued by
+                                                      Marc Reitter, President
+                                                              AEP Ohio
+
+=== PDF page 163 ===
+OHIO POWER COMPANY                                                                10th Revised Sheet No. 406-1
+                                                                                          Cancels 9th Revised Sheet No. 406-1
+
+                                                          P.U.C.O. NO. 21
+
+                                  Pilot Throughput Balancing Adjustment Rider (PTBAR)
+
+
+Effective Cycle 1 March 2025 all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the Pilot Throughput Balancing Adjustment Rider
+charge per kWh as follows:
+
+Ohio Power Rate Zone
+
+                                    Schedule                                       ¢/KWH
+            RS, RSDM, RS-ES, RLM, RS-TOD, RS-TOU                     (0.00)
+            GS-1, GS-TOU                                                          0.00
+
+Columbus Southern Power Rate Zone
+
+                                    Schedule                                       ¢/KWH
+            RS, RSDM, RS-ES, RLM, RS-TOD, RS-TOU                     (0.00)
+            GS-1, GS-TOU                                                         0.00
+
+
+This Rider is subject to reconciliation, including, but not limited to, refunds to customers, based upon the
+results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated November 17, 2021 in Case No. 20-585-EL-AIR
+
+Issued:     February 19, 2025                                                                          Effective:   Cycle 1 March 2025
+
+                                                                 Issued by
+                                                         Marc Reitter, President
+                                                                 AEP Ohio
+
+=== PDF page 165 ===
+  OHIO POWER COMPANY                                                                                  18th Revised Sheet No. 410-1
+                                                                                         Cancels  17     th Revised Sheet No. 410-1
+
+                                                            P.U.C.O. NO. 21
+
+                                                           gridSMART RIDER
+
+
+Effective Cycle 1 April 2026, all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the monthly gridSMART Phase 2 charge. This rider
+shall be adjusted periodically to recover amounts authorized by the Commission. This Rider is subject to
+reconciliation, including, but not limited to, refunds to customers, based upon the impact to the carrying
+charge rate recovered through this Rider of changes in Federal corporate income taxes due to the Tax
+Cuts and Jobs Act of 2017 or based upon the results of audits ordered by the Commission in accordance
+with the February 1, 2017 Opinion and Order in Case No. 13-1939-EL-RDR.
+
+
+             Residential Customers                                                                    $2.80
+
+             Non-Residential                                                                               $23.69
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Filed pursuant to Order dated April 3, 2024, in Case No. 23-23-EL-SSO
+
+ Issued:  January 30, 2026                                                                  Effective: Cycle 1 April 2026
+                                                                       Issued by
+                                                               Marc Reitter, President
+                                                                       AEP Ohio
+
+
+=== PDF page 166 ===
+OHIO POWER COMPANY                                                                                          18th Revised Sheet No. 412-1
+                                                                                                Cancels 17     th Revised Sheet No. 412-1
+
+                                                              P.U.C.O. NO. 21
+
+                                                DISTRIBUTION INVESTMENT RIDER
+
+Effective Cycle 1 March 2026, all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the Distribution Investment Rider charge of
+23.60370% of the customer’s distribution charges under the Company’s Schedules, excluding charges
+under any applicable Riders.
+
+This Rider shall be adjusted periodically to recover amounts authorized by the Commission. This Rider is
+subject to reconciliation, including, but not limited to, refunds to customers, based upon the impact to the
+carrying charge rate recovered through this Rider of changes in Federal corporate income taxes due to
+the Tax Cuts and Jobs Act of 2017 or based upon the results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Filed pursuant to order dated April 3, 2024 in Case No. 23-23-EL-SSO and Case No. 14-1696-EL-RDR
+
+  Issued:  December 31, 2025                                                                               Effective:  Cycle 1 March 2026
+                                                                   Issued By
+                                                          Marc Reitter, President
+                                                                   AEP Ohio
+
+
+=== PDF page 167 ===
+OHIO POWER COMPANY                                                                           5th Revised Sheet 414-1
+                                                                                                   Cancels 4th Revised Sheet 414-1
+
+                                                           P.U.C.O. NO. 21
+
+                                             STORM DAMAGE RECOVERY RIDER
+
+
+Effective Cycle 1 November 2025, all customer bills subject to the provisions of this Rider, including any
+bills rendered under special contract, shall be adjusted by the monthly Storm Damage Recovery Rider.
+This Rider shall expire with the last billing cycle of October 2026.
+
+          Residential Customers                                         $0.20/month
+
+          Non-Residential Customers                                    $0.99/month
+
+
+This Rider is subject to reconciliation, including, but not limited to, refunds to customers, based upon the
+results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated October 15, 2025, in Case No. 25-497-EL-RDR and Order dated April 3, 2024, in
+Case No. 23-23-EL-SSO
+Issued: October 20,     2025                                                                     Effective:  Cycle 1 November 2025
+                                                                Issued by
+                                                        Marc Reitter, President
+                                                                AEP Ohio
+
+=== PDF page 169 ===
+OHIO POWER COMPANY                                                                                        10th Revised Sheet No. 420-1
+                                                                                                            Cancels 9    th Sheet No. 420-1
+
+                                                             P.U.C.O. NO. 21
+
+                                   ECONOMIC DEVELOPMENT COST RECOVERY RIDER
+
+
+Effective Cycle 1 April, 2026, all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the Economic Development Cost Recovery charge
+of 2.39150% of the customer’s distribution charges under the Company’s Schedules, excluding charges
+under any applicable Riders. This Rider shall be adjusted periodically to recover amounts authorized by
+the Commission.
+
+This Rider is subject to reconciliation, including, but not limited to, refunds to customers, based upon the
+results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated March 18, 2026 in Case No. 26-85-EL-RDR
+
+Issued:  March 19, 2026                                                                                                 Effective:  Cycle 1 April 2026
+                                                                  Issued by
+                                                          Marc Reitter, President
+                                                                  AEP Ohio
+
+
+=== PDF page 170 ===
+OHIO POWER COMPANY                                                                                                  9th Revised Sheet No. 422-1
+                                                                                                                    Cancels 8    th Sheet No. 422-1
+
+
+
+                                                                  P.U.C.O. NO. 21
+
+                                         LEGACY GENERATION RESOURCE RIDER (LGR)
+
+
+Effective  August  14,  2025,  all  customer  bills  subject  to  the  provisions  of  this  Rider,  including  any  bills
+rendered  under  special  contract  shall  be  adjusted  by  the  monthly  Legacy  Generation  Resource  Rider
+charge as follows:
+
+
+           Schedule                         Charge                Part A                Part B                 Total
+ Residential                           $/month                 $0.00                 $0.00                 $0.00
+ Commercial & Industrial      $/kWh up to                        $0.000000         $0.000000         $0.000000
+                                       833,000 kWh
+
+
+
+This Rider is subject to reconciliation, including, but not limited to, refunds to customers, based upon the
+results of audits ordered by the Commission in accordance with the Opinion and Order in Case No. 19-
+1808-EL-UNC.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated August 1, 2025 in Case No. 20-1118-EL-RDR
+
+Issued:  August 5, 2025                                                                                                     Effective:  August 14, 2025
+                                                                       Issued by
+                                                              Marc Reitter, President
+                                                                       AEP Ohio
+
+
+=== PDF page 174 ===
+OHIO POWER COMPANY                                                                                              2nd Revised Sheet No. 432-1
+                                                                                                                 Cancels 1     st Sheet No. 432-1
+
+                                                                P.U.C.O. NO. 21
+
+                                                 TAX SAVINGS CREDIT RIDER (TSCR)
+
+
+Effective Cycle 1 January 2025, all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the monthly Tax Savings Credit Rider.
+
+          Residential                                                                         $ (0.000) per KWH
+
+          Non-Residential                                                                 $ (0.000) per KWH
+
+
+
+This Rider is subject to reconciliation, including, but not limited to, refunds to customers, based
+upon results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated October 3, 20218 in Case No. 18-1451-EL-ATA
+
+Issued:  December 20, 2024                                                                                  Effective:  Cycle 1 January 2025
+
+                                                                     Issued by
+                                                            Marc Reitter, President
+                                                                     AEP Ohio
+
+
+=== PDF page 175 ===
+OHIO POWER COMPANY                                                                                                   5th Revised Sheet No. 433-1
+                                                                                                        Cancels 4     th Revised Sheet No. 433-1
+
+
+                                                                  P.U.C.O. NO. 21
+
+                                                    Solar Generation Fund (SGF) RIDER
+
+
+Effective  August  14,  2025,  all  customer  bills  subject  to  the  provisions  of  this  Rider,  including  any  bills
+rendered under special contract, shall be adjusted by the monthly Solar Generation Fund (SGF) Rider
+charge as follows:
+
+
+                          Schedule                                  Charge                                    Rate
+                Residential                           $/month                                   $0.00
+                Non-Residential                   $/kWh up to 833,000 kWh                       $0.0000000
+                                                      with a per customer
+                                                      monthly cap of $242
+
+
+This Rider is subject to reconciliation and refunds, consistent with Section 3706.46 of the Revised Code
+and the Entries in Case No. 21-0447-EL-UNC.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated August 1, 2025 in Case No. 24-1040-EL-RDR
+
+Issued:  August 5, 2025                                                                                                     Effective:  August 14, 2025
+                                                                       Issued by
+                                                               Marc Reitter, President
+                                                                       AEP Ohio
+
+
+=== PDF page 177 ===
+OHIO POWER COMPANY                                                                                    3rd Revised Sheet No. 437-1
+                                                                                                     Cancels 2    nd  Sheet No. 437-1
+
+
+                                                           P.U.C.O. NO. 21
+
+                                              ENERGY EFFICIENCY (EE) RIDER
+
+
+Effective Cycle 1 April 2026, all residential customer bills subject to the provisions of this Rider, including
+any bills rendered under special contract, shall be adjusted by the monthly EE Rider as follows:
+
+                            Rate                                                                  $/kWh
+                            Residential Customers                                               $0.0004541
+
+
+This Rider shall be adjusted periodically to recover amounts authorized by the Commission. This Rider is
+subject  to  reconciliation,  including,  but  not  limited  to,  refunds  to  customers,  based  upon  the  results  of
+audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated April 3, 2024, in Case No. 23-23-EL-SSO
+
+Issued: January 30, 2026                                                                                     Effective: Cycle 1 April 2026
+                                                                     Issued by
+                                                             Marc Reitter, President
+                                                                     AEP Ohio
+
+
+=== PDF page 181 ===
+ OHIO POWER COMPANY                                                                                            19th Revised Sheet No. 452-1
+                                                                                                                Cancels 18th Sheet No. 452-1
+
+
+                                                                P.U.C.O. NO. 21
+
+                                              AUCTION COST RECONCILIATION RIDER
+
+
+Effective Cycle 1 April 2026, all customer bills subject to the provisions of this Rider, including any bills rendered
+under special contract, shall be adjusted by the Auction Cost Reconciliation Rider rate of (0.43956) ¢/KWH.  This
+Rider shall be adjusted periodically to recover amounts authorized by the Commission.  This Rider is subject to
+reconciliation, including, but not limited to, refunds to customers, based upon the results of audits ordered by the
+Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated April 3, 2024 in Case No. 23-23-EL-SSO
+
+
+Issued: February 26, 2026                                                                                        Effective:  Cycle 1 April 2026
+                                                                     Issued by
+                                                            Marc Reitter, President
+                                                                     AEP Ohio
+

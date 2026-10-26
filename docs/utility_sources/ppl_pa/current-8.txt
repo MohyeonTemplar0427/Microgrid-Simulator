@@ -1,0 +1,137 @@
+PDF page 1:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 24 
+Canceling Original Page No. 24 
+GENERATION SUPPLY CHARGE-1 
+The Generation Supply Charge-1 (GSC-1) shall be applied to each kilowatt-hour supplied 
+to residential customers who take default service from the Company under Rate Schedules RS 
+and RTS (R), small commercial and industrial customers who take Default Service under Rate 
+Schedules GS-1, GS-3, BL, SA, SM (R), SHS (R), SLE, and SE and standby service for the 
+foregoing rate schedules. Subject to the grandfathering provisions set forth herein, the GSC-1 will 
+not apply to those Rate Schedule GS-3 customers who have a Maximum Registered Peak Load 
+of 100 kW or greater, but the GSC-1 will apply to those Rate Schedule LP-4 customers who have 
+a Maximum Registered Peak Load of less than 100 kW. The GSC-1 shall have the options listed 
+below. 
+FIXED PRICE OPTION – RESIDENTIAL & SMALL COMMERCIAL/INDUSTRIAL 
+PURPOSE 
+The Fixed Price Option provides eligible customers in the Residential and Small 
+Commercial & Industrial Customer Class with default service for those customers who have not 
+selected a retail electric generation supplier (EGS) or the Time of Use Program. 
+PRICING PROVISIONS 
+The Fixed Price GSC-1, determined in accordance with the formula set forth below, shall 
+be applied to all kilowatt-hours billed for service provided during the billing period: 
+Where: 
+GSC-1 = The Generation Supply Charge-1, stated in cents per kilowatt hour, shall be 
+calculated separately for each of the following two Customer Classes: (1) 
+residential, and (2) small commercial and industrial as designated above. 
+GSfp = The total estimated direct and indirect costs incurred by the Company to acquire 
+generation supply from any source on behalf of participating Default Service 
+customers on the Fixed Price Option in the applicable Customer Class. These costs 
+shall be reduced by any revenue received by the Company from the sale of AECs 
+that otherwise would have expired.
+
+
+PDF page 2:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase 
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 24A 
+Canceling Original Page No. 24A 
+GENERATION SUPPLY CHARGE-1 (CONTINUED) 
+The computation period shall be the six calendar months over which the Fixed Price 
+GSC-1, as computed, will apply.  Projections of the Company’s costs to acquire 
+generation supply, adjusted for losses and including AECs, for the computation 
+quarter shall include all direct and indirect costs of generation supply to be acquired 
+by the Company from any source plus any associated generation supply-related 
+procurement and administration costs. Any costs incurred prior to June 1, 2025, 
+shall be amortized ratably over the 48-month period June 1, 2025, through May 31, 
+2029, and the 6-month amortization amount shall be included in the computation of 
+the GSC-1.
+E = Experienced net over or undercollection of costs associated with the acquisition of 
+generation supply for participating default service customers in the applicable 
+Customer Class. These costs will be computed as stated in the GSC-1 
+reconciliation provisions and will include applicable interest.  Interest shall be 
+computed monthly from the month the over- or  under collection occurs to the month 
+in which the overcollection is refunded or the undercollection is recouped.  Interest 
+on recoveries of overcollections and undercollections shall be calculated at the 
+prime rate for commercial borrowing, not to exceed the legal rate of interest in effect 
+on the last day of the month the over- or undercollection occurred. 
+Sfp = The Company’s total retail KWH sales to participating default service customers on 
+the Fixed Price Option in the applicable Customer Class, projected for the 
+computation quarter. 
+T = The Pennsylvania gross receipts tax rate (GRT) (exclusive of Part 2 of the State Tax 
+Adjustment Surcharge (STAS) within this tariff) in effect during the billing month, 
+expressed in decimal form. 
+Minimum bills shall not be reduced by reason of the GSC-1, nor shall GSC-1 charges be a 
+part of the monthly rate schedule minimum. The GSC-1 shall not be subject to any credits or 
+discounts and Part 2 of the STAS shall apply. 
+The following GSC-1 charges apply for the Fixed Price Option during the period July 1, 
+2026 through November 30, 2026. 
+
+PDF page 3:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase 
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 24B 
+Canceling Original Page No. 24B
+GENERATION SUPPLY CHARGE-1 (CONTINUED) 
+Customer Class Small  C&I Residential
+Rate Schedule / Charge 
+GS-1, GS-3 (< 100 kW MRPL), LP-4 
+(< 100 kW MRPL), and BL 
+$0.09445/KWH 
+RS and RTS (R) 
+$0.09753/KWH 
+Small C&I –Street Lights
+Rate 
+Sched ule/
+Charge
+SA SM (R) SHS
+(R) 
+SLE SE TS (R)
+Nominal 
+Lumens Charge
+Nominal 
+Lumens $/Lamp
+Nominal 
+Lumens $/Lamp
+Nominal 
+Lumens $/Fixture $/KWH $/Watt
+HPS 
+9,500 
+6.196
+$/Lamp
+3,350 4.637 5,800 2.815 3,000 1.354
+0.09445 0.06900
+6,650 7.244 9,500 4.033 2,900 1.775
+10,500 10.125 16,000 5.931 5,000 1.963
+LED 
+4,300 
+1.455
+$/Fixture
+20,000 16.038 25,500 10.701 4,750 2.452
+34,000 27.343 50,000 16.793 8,000 3.129
+51,000 37.789 12,750 5.836
+20,000 9.051
+GSC – 1 RECONCILIATION PROVISIONS  
+For the Fixed Price Option, the Company will file with the Commission thirty (30) days prior  
+to each annual period (June 1 through May 31), a reconciliation of GSC-1 actual billed revenues 
+and actual incurred costs for a twelve-month period ending March 31 of each year, pursuant to 66 
+Pa. C.S. §1307. The reconciliation shall become effective for service rendered during the 2 six- 
+month computation periods. 
+The reconciliation will be calculated separately for each of the two Customer Classes. The  
+reconciliation will include a calculation of any over/under collection that will be reflected in the GSC-
+1 charges for the subsequent 2 six-month computation periods. The GSC-1 will be reconciled every 
+twelve months, using over/under collection balance for the twelve-month period ending two months 
+prior to each annual period. 
+Application of the GSC-1 shall be subject to continuous review and audit by the 
+Commission at intervals it shall determine. The Commission shall review the reasonableness and 
+lawfulness of the level of charges produced by the GSC-1 and the costs included therein. 

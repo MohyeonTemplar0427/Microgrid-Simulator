@@ -2,7 +2,7 @@
 
 Find the electricity company serving your study location, understand how its regional service works, and see which account arrangements the simulator can model. Each profile gives a short introduction, a service-area description, relevant regional distinctions, and links to official information and detailed model coverage.
 
-**Reviewed October 15, 2026.** This guide covers 19 providers with implemented billing paths and one separate Dominion Virginia candidate. “Implemented” means selected account arrangements work in the repository; it does not mean the entire tariff book, every historical date, or every solar program is supported. A running browser may use an older engine snapshot.
+**Reviewed October 25, 2026.** This guide covers selected utility billing paths and bounded regional candidates. “Implemented” means selected account arrangements work in the repository; it does not mean the entire tariff book, every historical date, or every solar program is supported. A running browser may use an older engine snapshot.
 
 ## Start with the electricity account
 
@@ -15,7 +15,7 @@ Use the electric section of a recent bill to identify the delivery utility, gene
 | Municipal utility | Publicly owned utility serving its defined local territory. |
 | Community-choice provider or CCA | Public electricity purchaser whose customers generally retain the existing utility’s delivery service. |
 | Tariff or rate plan | The prices, eligibility conditions, and billing rules applicable to the account. |
-| CAISO or PJM | Regional grid/wholesale-market organizations; their names alone do not identify a customer’s retail tariff. |
+| CAISO, PJM or MISO | Regional grid/wholesale-market organizations; their names alone do not identify a customer’s retail tariff. |
 
 The provider profiles link to official descriptions of these service relationships. For billing and simulation terms, see the [short glossary](utility_guide/glossary.md).
 
@@ -146,6 +146,28 @@ January2025–September2026, including full-year2025 and the datedJune2025–May
 sales true-up factors. A map or MISO LRZ1 does not establish account eligibility. See
 [Minnesota scope, sources and limitations](Xcel_Minnesota.md).
 
+## Iowa · Alliant Energy (Interstate Power & Light)
+
+The local candidate supports residential **400** seasonal, **407** two-period
+TOD and **427** three-period TOD, plus eligible small-commercial **600**
+seasonal and **607** TOD. Complete verified component coverage is
+**January–December 2025 and June–October 2026**, with explicitly hypothetical
+or confirmed complete calendar cycles at 15-minute resolution. January–May
+2026 and shifted/partial cycles remain unsupported. TOD follows the filed fixed-CST interpretation and
+requires confirmation of the actual account's clock; public guidance says CT.
+
+Iowa IPL and Wisconsin Power & Light are separate Alliant utilities. Utility
+service, jurisdiction, supplier and local taxes require independent account
+facts. The first case uses an explicit unincorporated Linn County tax account
+and ordinary single-phase 120/240 V service. Approved non-export PV/storage
+keeps ordinary inflow billing; solar-export settlement is not enabled.
+Alliant Iowa belongs to **MISO LRZ3**, so it adds no PJM population coverage.
+
+[Iowa scope, sources and limitations](Alliant_Iowa.md).
+[Full-year 2025 validation](Alliant_Iowa_2025_Validation.md).
+[Initial 2026 validation receipt](Alliant_Iowa_Implementation_Validation.md).
+[Indicative PJM population coverage and method](PJM_Population_Coverage.md).
+
 ## Wisconsin · We Energies (Wisconsin Electric Power Company)
 
 Updated October 24, 2026. The candidate adds Rg1/Rg2 residential and Cg1/Cg6
@@ -190,3 +212,29 @@ model does not assign a site's transmission owner from that zone alone.
 [Remaining 2025 source evidence and annual-validation status](We_Duke_2025_History.md).
 
 [Provisional full-year assumptions and validation](We_Duke_2025_Provisional_Validation.md).
+
+## PJM · PPL Pennsylvania and AEP Ohio
+
+The local candidate adds ordinary **PPL RS / single-phase GS-1** and
+**AEP Ohio RS / non-demand GS-1 (later GS-NDM)** with utility-specific dated
+default supply, delivery, riders and taxes. PPL GS-1 includes a rounded
+15-minute monthly demand charge. AEP's selected commercial class is below
+10 kW and has no customer demand charge; larger demand-metered plans are
+separate future implementations.
+
+Select the delivery utility and supplier from account evidence. AEP Ohio's
+legacy Ohio Power / Columbus Southern rate zone is another explicit account
+fact; it is independent of PJM's AEP transmission zone and differs from Ohio
+Edison. PPL's PJM transmission designation does not establish retail service
+or select a wholesale node. Default retail supply is not replaced by an LMP.
+
+Both workflows compare grid only, approved non-export PV and PV plus storage
+through the existing main browser form, shared dispatch and representative
+OpenDSS replay. Account eligibility, ordinary renewable service, full meter
+cycles and tax jurisdiction need separate confirmation. Export compensation,
+TOU enrollment, other suppliers, special agreements and arbitrary partial or
+shifted cycles are outside this first scope. No stable release is promoted.
+
+[PPL dated scope and sources](PPL_Pennsylvania.md).
+[AEP Ohio dated scope and sources](AEP_Ohio.md).
+[Reproducible validation and acceptance](PPL_AEP_Ohio_Implementation_Validation.md).

@@ -1,0 +1,7 @@
+Source: https://www.alliantenergy.com/-/media/alliant/documents/accountandbilling/ratesandtariffs/iowaelectricrates/ridereecrenergyefficiencycostrecovery.pdf?hash=5983CD1D737B6856D51E6CCDA331D86A&sc_lang=en
+Retrieved: 2026-10-25
+Method: Official utility PDF, publicly indexed text inspected; original PDF bytes unavailable (direct retrieval returned HTTP 403).
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Thirty-first revised sheet 60. Issued April 24, 2026; header effective May 28. Body applies factors to bills beginning June 1, 2026. Residential 400/407/427/507: $0.0013/kWh. General service 600/607/707: $0.0038/kWh. Preserve the factor start date rather than substituting the header date.

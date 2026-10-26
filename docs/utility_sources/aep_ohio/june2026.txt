@@ -1,0 +1,538 @@
+Original official PDF extraction, retrieved2026-10-25.
+
+=== PDF page 1 ===
+  OHIO POWER COMPANY                                                                                                         2nd Revised Sheet No. 101-1
+                                                                                                                 Cancels 1      st Revised Sheet No. 101-1
+
+
+                                                                         P.U.C.O. NO. 22
+
+                                                                    TABLE OF CONTENTS
+
+   Schedule                                                                                               Sheet No(s)                 Effective Date
+Ohio Power Company
+                          Table of Contents                                                     101-1 thru 101-2                June 1, 2026
+                          List of Communities Served                                     102-1 thru 102-8                April 10, 2026
+                          Terms and Conditions of Service                             103-1 thru 103-85              April 24, 2026
+                          Supplier Terms and Conditions                                103-28 thru 103-55            April 10, 2026
+                          Summary of Applicable Riders                                 104-1                                 April 10, 2026
+                          Schedule Cross Reference                                      105-1 thru 105-2                April 10, 2026
+Tariff Schedules
+RS                     Residential Service                                                   210-1 thru 210-2                April 10, 2026
+RSDM               Residential Service – Demand Metered                   214-1 thru 214-2                April 10, 2026
+RS-TOU            Residential Time-of-Use                                           215-1 thru 215-2                April 10, 2026
+GS-NDM           General Service – Non-Demand Metered                220-1 thru 220-2                April 10, 2026
+GS                     General Service                                                        220-3 thru 220-8                April 10, 2026
+GS-TOU            General Service – Time-of-Use – Non-Demand      221-1 thru 221-2                April 10, 2026
+GS-TOD            General Service – Time-of-Day (no new                                               222–1 thru 222-2               April 10, 2026
+                        customers)
+DCT                   Data Center Tariff                                                     223-1 thru 223-7                April 10, 2026
+GS-FAIR           County and Independent Fairs                                 228-1 thru 228-2                April 10, 2026
+AL                      Area Lighting                                                            240-1 thru 240-4                April 10, 2026
+SL                      Street Lighting                                                          241-1 thru 241-5                April 10, 2026
+EHG                  Electric Heating General (No new customers)         250-1 thru 250-2                April 10, 2026
+SS                     School Service (No new customers)                        252-1 thru 252-2                April 10, 2026
+Supp. No. 18     Church and School Service (No new customers)    253-1                                 April 10, 2026
+Supp. No. 21     Public Authority-Delayed Payment                           255-1                                 April 10, 2026
+GSP                  Generation Station Power                                        260-1 thru 260-2                April 10, 2026
+NEMS                Net Energy Metering Service                                   261-1 thru 261-2                April 10, 2026
+NEMS-H            Net Energy Metering Service – Hospitals                262-1 thru 262-2                April 10, 2026
+COGEN/SPP     Cogeneration and/or Small Power Production         263-1 thru 263-3                April 10, 2026
+PEV                   Pilot Plug-In Electric Vehicles                                  270-1 thru 270-2                April 10, 2026
+RS-PEV             Residential Plug-in Electric Vehicle                          271-1 thru 271-2                April 10, 2026
+BUS-PEV          Public Plug-in Electric Vehicle                                  272-1                                 April 10, 2026
+PA                     Pole Attachment Tariff                                              300-1 thru 300-3                April 10, 2026
+Riders
+                          Basic Transmission Cost Rider                                400-1                                 April 10, 2026
+                          KWH Tax Rider                                                        402-1                                 April 10, 2026
+                          Percentage of Income Payment Plan Rider             404-1                                 April 10, 2026
+                          Enhanced Service Reliability Rider                          408-1                                 April 10, 2026
+                          gridSMART Rider                                                     410-1                                 April 10, 2026
+                          Distribution Investment Rider                                   412-1                                 April 10, 2026
+                          Storm Damage Recovery Rider                               414-1                                 April 10, 2026
+                          Bad Debt Rider                                                         416-1                                 April 10, 2026
+                          Economic Development Cost Recovery Rider         420-1                                 April 10, 2026
+                          Legacy Generation Resource Rider                         422-1                                 April 10, 2026
+   Filed pursuant to Order dated April 1, 2026 in Case No. 25-392-EL-AIR
+
+   Issued:  May 28, 2026                                                                                                      Effective:  June 1, 2026
+                                                                               Issued by
+                                                                    Marc Reitter, President
+                                                                              AEP Ohio
+
+
+=== PDF page 2 ===
+  OHIO POWER COMPANY                                                                                                              2nd Revised Sheet No. 101-2
+                                                                                                                     Cancels 1       st Revised Sheet No. 101-2
+
+
+                                                                            P.U.C.O. NO. 22
+
+                                                                       TABLE OF CONTENTS
+
+   Schedule                                                                                               Sheet No(s)                 Effective Date
+                          Retail Reconciliation Rider                                       424-1                                 April 10, 2026
+                          SSO Credit Rider                                                      425-1                                 April 10, 2026
+                          Power Forward Rider                                               428-1                                 April 10, 2026
+                          Tax Savings Credit Rider                                         432-1                                 April 10, 2026
+                          Solar Generation Fund Rider                                   433-1                                 April 10, 2026
+                          Ohio First Rider                                                        435-1                                 April 10, 2026
+                          Energy Efficiency Rider                                            437-1                                 April 10, 2026
+                          Generation Energy Rider                                          450-1                                  June 1, 2026
+                          Generation Capacity Rider                                       451-1                                  June 1, 2026
+                          Auction Cost Reconciliation Rider                            452-1                                 April 10, 2026
+                          Energy Efficiency and Peak Demand Reduction                                     453-1                                 April 10, 2026
+                         Rider
+                          Alternative Energy Rider                                          454-1                                 April 10, 2026
+IRP-L                 Interruptible Power Rider – Legacy                                                  470-1 thru 470-3                April 10, 2026
+                         Discretionary Rider
+IRP-E                Interruptible Power Rider – Expanded                                                 471-1 thru 471-3                April 10, 2026
+                         Discretionary Rider
+                          Automaker Credit Rider                                            472-1                                 April 10, 2026
+                          Alternate Feed Service Rider                                   474-1 thru 474-5                April 10, 2026
+                          Pilot Demand Response Rider                                 475-1                                 April 10, 2026
+                          Underground Service Tariff                                      476-1                                 April 10, 2026
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Filed pursuant to Order dated April 1, 2026 in Case No. 25-392-EL-AIR
+
+   Issued:  May 28, 2026                                                                                                      Effective:  June 1, 2026
+                                                                                  Issued by
+                                                                       Marc Reitter, President
+                                                                                 AEP Ohio
+
+
+=== PDF page 162 ===
+OHIO POWER COMPANY                                                                     Original Sheet No. 410-1
+
+                                                          P.U.C.O. NO. 22
+
+                                                        gridSMART RIDER
+
+Effective Cycle 1 April 2026, all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the monthly gridSMART charges and other charges
+approved  by  the  Commission  in  Case  No.  23-23-EL-SSO.  This  rider  shall  be  adjusted  periodically  to
+recover amounts authorized by the Commission.
+
+This Rider is subject to reconciliation, including, but not limited to, refunds to customers, based upon the
+impact to the carrying charge rate recovered through this Rider of changes in Federal corporate income
+taxes due to the Tax Cuts and Jobs Act of 2017 or based upon the results of audits ordered by the
+Commission.
+
+
+          Residential Customers                                                   $2.80
+
+          Non-Residential                                                            $23.69
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated April 1, 2026 in Case No. 25-392-EL-AIR
+
+Issued:  April 8, 2026                                                                             Effective:  April 10, 2026
+                                                               Issued by
+                                                      Marc Reitter, President
+                                                               AEP Ohio
+
+=== PDF page 163 ===
+OHIO POWER COMPANY                                                                     Original Sheet No. 412-1
+
+
+                                                          P.U.C.O. NO. 22
+
+                                            DISTRIBUTION INVESTMENT RIDER
+
+Effective  April  10,  2026,  all  customer  bills  subject  to  the  provisions  of  this  Rider,  including  any  bills
+rendered  under  special  contract,  shall  be  adjusted  by  the  Distribution  Investment  Rider  charge  of
+2.95915%  of  the  customer’s  distribution  charges  under  the  Company’s  Schedules,  excluding  charges
+under any applicable Riders.
+
+This Rider shall be adjusted periodically to recover amounts authorized by the Commission. This Rider is
+subject to reconciliation, including, but not limited to, refunds to customers, based upon the impact to the
+carrying charge rate recovered through this Rider of changes in Federal corporate income taxes due to
+the Tax Cuts and Jobs Act of 2017 or based upon the results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated April 1, 2026 in Case No. 25-392-EL-AIR
+
+Issued:  April 8, 2026                                                                             Effective:  April 10, 2026
+                                                               Issued by
+                                                       Marc Reitter, President
+                                                               AEP Ohio
+
+=== PDF page 166 ===
+OHIO POWER COMPANY                                                                     Original Sheet No. 420-1
+
+
+                                                         P.U.C.O. NO. 22
+
+                               ECONOMIC DEVELOPMENT COST RECOVERY RIDER
+
+Effective  April  10,  2026,  all  customer  bills  subject  to  the  provisions  of  this  Rider,  including  any  bills
+rendered under special contract, shall be adjusted by the Economic Development Cost Recovery charge
+of 1.80190% of the customer’s distribution charges under the Company’s Schedules, excluding charges
+under any applicable Riders. This Rider shall be adjusted periodically to recover amounts authorized by
+the Commission.
+
+This Rider is subject to reconciliation, including, but not limited to, refunds to customers, based upon the
+results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated April 1, 2026 in Case No. 25-392-EL-AIR
+
+Issued:  April 8, 2026                                                                             Effective:  April 10, 2026
+                                                              Issued by
+                                                     Marc Reitter, President
+                                                              AEP Ohio
+
+=== PDF page 174 ===
+OHIO POWER COMPANY                                                                     Original Sheet No. 437-1
+
+
+                                                            P.U.C.O. NO. 22
+
+                                                ENERGY EFFICIENCY (EE) RIDER
+
+Effective Cycle 1 April 2026, all residential customer bills subject to the provisions of this Rider, including
+any bills rendered under special contract, shall be adjusted by the monthly EE Rider as follows:
+
+                           Rate                                                                                             $/kWh
+                           Residential Customers                                    $0.0004541
+
+
+This Rider shall be adjusted periodically to recover amounts authorized by the Commission. This Rider is
+subject to reconciliation, including, but not limited to, refunds to customers, based upon the results of
+audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated April 1, 2026 in Case No. 25-392-EL-AIR
+
+Issued:  April 8, 2026                                                                             Effective:  April 10, 2026
+                                                                 Issued by
+                                                         Marc Reitter, President
+                                                                 AEP Ohio
+
+=== PDF page 175 ===
+ OHIO POWER COMPANY                                                                                     1st Revised Sheet No. 450-1
+                                                                                                 Cancels Original Sheet No. 450-1
+
+                                                            P.U.C.O. NO. 22
+
+                                                  GENERATION ENERGY RIDER
+
+ Effective  June  1,  2026,  all  customer  bills  subject  to  the  provisions  of  this  Rider,  including  any  bills
+ rendered under special contract, shall be adjusted by the Generation Energy charge as follows:
+
+
+                                   Schedule                                                 Summer (Jun-Sep)     Winter (Oct-May)
+                                                                                                           ¢/KWH                       ¢/KWH
+Residential
+RS, RSDM, RS-TOU, PEV, RS-PEV                                                                7.50800                    7.50800
+PIPP Residential
+RS, RSDM, RS-TOU, PEV                                                                        6.85000                    6.85000
+Non Demand Metered
+GS-NDM, GS Recreational Lighting, GS-TOD, GS-TOU, SS                                         7.50800                     7.50800
+Demand Metered Secondary
+GS, EHG, BUS-PEV                                                                             7.50800                    7.50800
+Demand Metered Primary
+GS, BUS-PEV                                                                                  7.28600                    7.28600
+Demand Metered Subtransmission/Transmission
+GS, BUS-PEV                                                                                  7.17000                    7.17000
+Lighting
+AL, SL                                                                                       7.50800                    7.50800
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Filed pursuant to Order dated May 27, 2026 in Case No. 26-548-EL-RDR and Order dated April 1, 2026 in
+ Case No. 25-392-EL-AIR
+
+ Issued:  May 28, 2026                                                                                                      Effective:  June 1, 2026
+                                                                Issued by
+                                                        Marc Reitter, President
+                                                                AEP Ohio
+
+
+=== PDF page 177 ===
+OHIO POWER COMPANY                                                                     Original Sheet No. 452-1
+
+
+                                                          P.U.C.O. NO. 22
+
+                                        AUCTION COST RECONCILIATION RIDER
+
+Effective Cycle 1 April 2026, all customer bills subject to the provisions of this Rider, including any bills
+rendered under special contract, shall be adjusted by the Auction Cost Reconciliation Rider rate of (0.43956)
+¢/KWH.  This Rider shall be adjusted periodically to recover amounts authorized by the Commission. This
+Rider  is  subject  to  reconciliation,  including,  but  not  limited  to,  refunds  to  customers,  based  upon  the
+results of audits ordered by the Commission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed pursuant to Order dated April 1, 2026 in Case No. 25-392-EL-AIR
+
+Issued:  April 8, 2026                                                                                     Effective:  April 10, 2026
+                                                              Issued by
+                                                      Marc Reitter, President
+                                                              AEP Ohio

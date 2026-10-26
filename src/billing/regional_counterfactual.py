@@ -9,6 +9,9 @@ from copy import deepcopy
 
 
 MODES = {
+    "ppl_electric_pennsylvania": ("export_mode", "none"),
+    "aep_ohio": ("export_mode", "none"),
+    "alliant_energy_iowa": ("export_mode", "none"),
     "we_energies_wisconsin": ("export_mode", "none"),
     "duke_energy_indiana": ("export_mode", "none"),
     "xcel_energy_minnesota": ("export_mode", "none"),
@@ -54,7 +57,7 @@ def grid_only_counterfactual(utility, account, state=None):
             inherited[key] = value
 
     applied = mode == "net_metering"
-    if utility in ("dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana"):
+    if utility in ("dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         applied = bool(result.get("dg_enrollment_confirmed"))
         set_account("dg_enrollment_confirmed", False)
         set_account("dg_source", "")
@@ -62,7 +65,7 @@ def grid_only_counterfactual(utility, account, state=None):
                 "label":"Absent-DER grid-only counterfactual; ordinary full-service tariff retained without DG enrollment",
                 "changed_account_fields":changed_account,"changed_state_fields":[],
                 "warnings":["Hypothetical ordinary grid-only reference removes PV/storage and DG assertions; no actual account transition or export credits assumed."]}
-    if utility.startswith("firstenergy_") or utility == "peco":
+    if utility.startswith("firstenergy_") or utility in ("peco", "ppl_electric_pennsylvania", "aep_ohio"):
         applied = bool(result.get("der_ordinary_service_confirmed"))
         set_account("der_ordinary_service_confirmed", False)
         set_account("der_eligibility_source", "")

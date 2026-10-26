@@ -1,0 +1,116 @@
+PDF page 1:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 26 
+Canceling Original Page No. 26
+ACT 129 COMPLIANCE RIDER – PHASE 4 
+A Phase 4 Act 129 Compliance Rider (ACR 4) shall be applied, on a non-bypassable basis, 
+to charges for electricity supplied to customers who receive distribution service from the Company 
+under this Tariff. The ACR 4 will be implemented beginning June 1, 2021. 
+The ACR 4 shall be computed separately for each of the following three customer classes: 
+(1) Residential: Consisting of Rate Schedule RS,
+(2) Small Commercial and Industrial (Small C&I): Consisting of Rate Schedules GS-1, GS-3,
+BL, SA, SM (R), SHS (R), SLE, and SE, and
+(3) Large Commercial and Industrial (Large C&I): Consisting of Rate Schedules LP-4, and LP-
+5.
+The ACR 4 will be computed for each customer receiving distribution service from the 
+Company using the formulae described below. For residential customers, the ACR 4 charge shall be 
+included in the distribution charges on a kWh basis of the monthly bill. For all other customers, the 
+ACR charge shall be listed as a separate charge on the monthly bill. All charges shall be reconciled 
+on an annual basis for undercollections and overcollections experienced during the previous year. 
+Charges set forth in the residential rate schedules in this tariff have been adjusted to reflect 
+application of the currently effective ACR 4. 
+The costs of each EE&C program available to only one customer class will be directly 
+assigned to that customer class. Costs of EE&C programs which cannot be directly assigned to one 
+customer class will be allocated to the customer classes benefiting from those programs using an 
+allocation factor determined by dividing the EE&C costs directly assigned to each customer class by 
+the total of the Company's EE&C Plan costs directly assigned to all customer classes. 
+The ACR 4 for the Residential class and the Small C&I class shall be computed using the 
+following formula: 
+ACR  4 = [ACc/S - E/S] X 1 / (1-T) 
+The ACR 3 for the Large C&I class shall be computed using the following formula: 
+ACR 4 = [ACc/D - E/D] X 1 / (1-T) 
+
+PDF page 2:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase 
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 26A 
+Canceling Original Page No. 26A 
+ACT 129 COMPLIANCE RIDER – PHASE 4 (CONTINUED) 
+Where: 
+ACc =     An annual budget of all costs required for the Company to implement its Commission 
+approved Phase 4 Energy Efficiency and Conservation (EE&C) Plan during a compliance 
+year, which is the 12-month period beginning June 1 of each calendar year and ending May 
+31 of the following calendar year. The annual project program cost is the sum of all direct 
+and indirect costs (including all deferred design and development costs, general 
+administrative costs, and applicable statewide evaluator costs) required to implement the 
+Company's EE&C Plan divided by the number of months in the Company's EE&C Plan for 
+the given application year. All deferred design and development cost, general administrative 
+costs, and applicable statewide evaluator costs will be amortized over a 60-month period. 
+D = For the Large C&I customer class, the total of the monthly billing demands for all customers 
+in the class, projected for the computation year. The peak demand will be based on the 
+customer’s peak load contribution to the PJM peak load during the prior PJM Planning 
+Year. 
+E = Net over or undercollection of the ACR 4 charges as of the end of the 12-month period  
+ending March 31 immediately preceding the next compliance year. Reconciliation of the 
+ACR 4 will be conducted separately for each of the three customer classes based upon 
+the actual expenses incurred and actual revenues received for each customer class. No 
+interest shall be computed monthly on over or undercollections. The reconciliation of ACR 
+3 revenues and expenses shall be adjusted during the 2022-2023 ACR 4 application year 
+to reflect actual data for the months of April and May 2021, as well as any expenses 
+incurred prior to May 31, 2021, but paid after that date. 
+S = The Company’s total billed KWH sales in each customer class who receive distribution 
+service under this tariff (including distribution losses), projected for the computation year. 
+T = The total Pennsylvania GRT rate in effect during the billing period, expressed in decimal 
+form.
+The ACR 4 shall be filed with the Pennsylvania Public Utility Commission (Commission) by 
+May 1 of each year. The ACR 4 charge shall become effective for distribution service provided to all 
+customers on or after the following June 1, unless otherwise ordered by the Commission, and shall 
+remain in effect for a period of one year, unless revised on an interim basis subject to the approval of  
+the Commission.  Upon determination that a customer class’s ACR 4, if left unchanged, would result 
+in a material over or undercollection of Phase 4 Act 129 Compliance costs incurred or expected to be 
+incurred during the current 12-month period ending May 31, the Company may file with the 
+Commission for an interim revision of the ACR 4 to become effective ten (10) days from the date of 
+filing, unless otherwise ordered by the Commission. 
+
+PDF page 3:
+Issued: June 30, 2026
+PPL Electric Utilities Corporation 
+(C) Indicates Change (D) Indicates Decrease (I) Indicates Increase 
+Effective: July 1, 2026
+Supplement No. 2 to Electric Pa. P .U.C. No. 202
+First Revised Page No. 26B 
+Canceling Original Page No. 26B 
+ACT 129 COMPLIANCE RIDER – PHASE 4 (CONTINUED) 
+At the conclusion of the Phase 3 EE&C Plan on May 31, 2021, collections under the ACR 3 
+for each customer class will be reconciled to the total cost of the EE&C Plan allowed by the 
+Commission for that customer class. Overcollections or undercollections will be reflected as a 
+separate line item in the E factor calculation and will be refunded or recovered through application of 
+the ACR 4 rate effective June 1, 2021 through May 31, 2022. If any over/under collection balance is 
+expected to remain after March 31, 2022, the collection will be included in the ACR 4 rate going 
+forward. 
+Minimum bills shall not be reduced by reason of the ACR 4 nor shall charges hereunder be a 
+part of the monthly rate schedule minimum. The ACR 4 shall not be subject to any credits or discounts. 
+The State Tax Adjustment Surcharge (STAS) included in this Tariff is applied to charges under this 
+Rider. Charges under ACR 3 and ACR 4 will be combined for billing purposes only. 
+The Company shall file a report of collections under the ACR 4 within thirty (30) days following 
+the conclusion of each compliance year. 
+Application of the ACR 4 shall be subject to review and audit by the Commission at intervals 
+it shall determine. The Commission shall review the level of charges produced by the ACR 4 and the 
+costs included therein. 
+ACT 129 COMPLIANCE RIDER – PHASE 4 CHARGE 
+Charges under the ACR 4 for the period June 1, 2025 through May 31, 2026, as set forth in 
+the applicable Rate Schedules. 
+Customer Class Large I&C - Small I&C Residential
+Rate Schedule / Charge LP4, and LP-5
+$1.057 /KW (I)
+GS-1, GS-3, and BL
+$0.00166 /KWH (D)
+RS
+$0.00220 /KWH (I)

@@ -1,0 +1,7 @@
+Source: https://revenue.iowa.gov/media/2405/download?inline=
+Retrieved: 2026-10-25
+Method: Official Iowa Department of Revenue public PDF indexed text inspected.
+
+
+Factual extraction / interpretation notes (not a complete tariff transcription):
+Iowa Department of Revenue form 31-116 (July 12, 2024): residential energy is exempt from Iowa state sales tax, but remains subject to applicable local option tax or franchise fees. Nonresidential use in a residence requires separately metered or supported usage allocation; do not assume all energy at an address is tax-exempt.
