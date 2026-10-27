@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-26",
+  "source_scope": {
+    "utility": "The Potomac Edison Company, Maryland",
+    "tariff": "Electric P.S.C. Md. No.54",
+    "schedule_ids": [
+      "R",
+      "G"
+    ],
+    "supplier": "Potomac Edison Residential SOS / TypeI SOS",
+    "jurisdiction": "Affirmatively confirmed unincorporated Washington County, Maryland; county no-extra-energy-levy conclusion is inference, not expresszero certificate",
+    "initial_supported_cycles": [
+      "2026-09",
+      "2026-10"
+    ],
+    "service_scope": "Complete matching calendar service/billing cycles only",
+    "R_cost_scope": "Ordinary recurringcomponents; literalpublishedRRC$-normalizedzero; legislativeawards/accountcredits outsidewindow excludedbydates",
+    "G_cost_scope": "Verified-charge subtotal excluding state sales tax and unverified transmission minimum/capacity component; verified transmission energy retained",
+    "generation_and_transmission_clocks": "Rleaf62June1,2026;Gleaf70September1,2026. NoGtransbackdating intoJuneAugust",
+    "export": "Unsupported",
+    "metadata": "APS/FE-AP zone metadata does not establish Marylandretaileligibility or wholesale node"
+  },
+  "records": [
+    {
+      "id": "supply_tariff_current",
+      "owner_stream": "supply",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonRetailTariff.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/supply/tariff_current.pdf",
+      "original_sha256": "9d7471b4e8b37649024907137a65df9dab812841e0d7d2f9088b40f81cbb8586",
+      "original_bytes": 1330629,
+      "status": "official_published_evidence",
+      "pdf_page_count": 189,
+      "selected_pdf_pages_1_based": [
+        10,
+        11,
+        12,
+        22,
+        45,
+        46,
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        63,
+        69,
+        70,
+        71,
+        72,
+        147,
+        164,
+        165,
+        166
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/supply_tariff_current_full.txt",
+      "full_text_sha256": "1afe4de4251bb47ad47f8ab8bbc29b2cdc9e8029416a764483d0dd9c6ead485f",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/supply_tariff_current.txt",
+      "checked_in_excerpt_sha256": "92267cff8fdb8465b125f8c59b2880a0c8436748f99748d796d4c574e2574356",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/potomac_edison_md/sources/supply/tariff_current_page62.png",
+          "sha256": "4f9c402bd6b0fea3ec75529b1d47a981ae34f85dcb32078ecb15d64d7933963a",
+          "physical_pdf_page_1_based": 62
+        },
+        {
+          "path": ".cache/potomac_edison_md/sources/supply/tariff_current_page70.png",
+          "sha256": "846425db3048c5a90e9f2f77a831171be9595d950e8faef0162b03d445b0e63c",
+          "physical_pdf_page_1_based": 70
+        },
+        {
+          "path": ".cache/potomac_edison_md/sources/consolidated/supply_tariff_current-page51.png",
+          "sha256": "74958815638a06bfefd64a13cc72d257e768296ea9c4d42ad8a001478f59001e",
+          "physical_pdf_page_1_based": 51
+        },
+        {
+          "path": ".cache/potomac_edison_md/sources/consolidated/supply_tariff_current-page53.png",
+          "sha256": "a82a0b6c3f92358c1668a05309fd1d4d41897e30b7ab53cc12b79c0f9bb9adb9",
+          "physical_pdf_page_1_based": 53
+        },
+        {
+          "path": ".cache/potomac_edison_md/sources/consolidated/supply_tariff_current-page55.png",
+          "sha256": "3331b9705511887ffeffc9fe5fbb1693665f68b9ffa87bc190768a60affc3892",
+          "physical_pdf_page_1_based": 55
+        }
+      ],
+      "duplicate_receipts": [
+        {
+          "owner_stream": "delivery",
+          "path": ".cache/potomac_edison_md/sources/delivery/book_current.pdf",
+          "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonRetailTariff.pdf"
+        },
+        {
+          "owner_stream": "tax",
+          "path": ".cache/potomac_edison_md/sources/tax/../delivery/book_current.pdf",
+          "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonRetailTariff.pdf"
+        }
+      ]
+    },
+    {
+      "id": "supply_adjustments_current",
+      "owner_stream": "supply",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonaceca.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/supply/adjustments_current.pdf",
+      "original_sha256": "7753b235d272c87bd7b5320a9622b4c1776117c56bb5babeabc2d97394e06fca",
+      "original_bytes": 71494,
+      "status": "official_published_evidence",
+      "pdf_page_count": 1,
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/supply_adjustments_current_full.txt",
+      "full_text_sha256": "8aa726cf1b8922b7bf92fff879a391de22e941be151e39a91e38c82671cbae12",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/supply_adjustments_current.txt",
+      "checked_in_excerpt_sha256": "183f865f72ce91d91f848fde06cb93c99fc9987d30bd1e176243a5df08e99713",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/potomac_edison_md/sources/supply/adjustments_current_page1.png",
+          "sha256": "61ba58deadfad1301e6de1f7c82a02149a1cb83b9e64b59cc23c599c5487a4f7",
+          "physical_pdf_page_1_based": 1
+        }
+      ],
+      "duplicate_receipts": [
+        {
+          "owner_stream": "tax",
+          "path": ".cache/potomac_edison_md/sources/tax/../supply/adjustments_current.pdf",
+          "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonaceca.pdf"
+        }
+      ]
+    },
+    {
+      "id": "supply_tariff_index",
+      "owner_stream": "supply",
+      "url": "https://www.firstenergycorp.com/content/customer/customer_choice/maryland/maryland_tariffs.html",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/supply/tariff_index.html",
+      "original_sha256": "a4b59ea2a8542dcf79f55def9435a62df65965418ff73fa819bee3cdc460d622",
+      "original_bytes": 60112,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/supply_tariff_index_full.txt",
+      "full_text_sha256": "0426fb151b9a6caef348c0335002f599b808b2da930951284ee5faac0b62fe83",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/supply_tariff_index.txt",
+      "checked_in_excerpt_sha256": "b09e8867834f4b604d5382b9bc50df0bc463ba73aecf95e6a577dbd362df16f7"
+    },
+    {
+      "id": "supply_choice_current",
+      "owner_stream": "supply",
+      "url": "https://www.firstenergycorp.com/customer_choice/maryland.html",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/supply/choice_current.html",
+      "original_sha256": "08976311ffd494be40950b06d74703c12d8214293710426076289319467bae09",
+      "original_bytes": 71936,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/supply_choice_current_full.txt",
+      "full_text_sha256": "046c282f81a553fb31c6afd3e7e0eada5985bca8fa367ba4b9497245472bdcf6",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/supply_choice_current.txt",
+      "checked_in_excerpt_sha256": "c524cd2847ee82017f15ddce1c3e6a14366fc326797ee761669980c744f2cf8c"
+    },
+    {
+      "id": "delivery_purpa_2026_filing",
+      "owner_stream": "delivery",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/pending-tariff-revisions/pe-annual-surcharge-filing.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/delivery/purpa_2026_filing.pdf",
+      "original_sha256": "ccbc39517961756ae32e65527c40bdd88b3abeb0499174787f9c36a2461b4d38",
+      "original_bytes": 478834,
+      "status": "proposal_and_alternative_record",
+      "use": "Proposed/alternative rates excluded. PURPAselected2026rates only adoptedbook52 authoritative; deleted2025leaf retainedhistoricalcontext. EmPOWER2025proposal notadoptionproof.",
+      "pdf_page_count": 24,
+      "selected_pdf_pages_1_based": [
+        4,
+        5,
+        15,
+        16
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/delivery_purpa_2026_filing_full.txt",
+      "full_text_sha256": "cbfadb39a7666e4c490f02e566c6dc6d2be49a35cef18e6801db8919f774e1b0",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/delivery_purpa_2026_filing.txt",
+      "checked_in_excerpt_sha256": "9e427b0cfb6df64ab258930be67580008e04cfb93c4db15177db2226bc8e3c03",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "delivery_empower_2025_filing",
+      "owner_stream": "delivery",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/pending-tariff-revisions/PE-2025-EmPower-Tariff-Update-112724.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/delivery/empower_2025_filing.pdf",
+      "original_sha256": "4cb3e9b88f93f0f53f16a4d018fcdbf3d7fd7d85b754e8b59604d5e290e901f1",
+      "original_bytes": 2172424,
+      "status": "proposal_and_alternative_record",
+      "use": "Proposed/alternative rates excluded. PURPAselected2026rates only adoptedbook52 authoritative; deleted2025leaf retainedhistoricalcontext. EmPOWER2025proposal notadoptionproof.",
+      "pdf_page_count": 100,
+      "selected_pdf_pages_1_based": [
+        1,
+        2,
+        3
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/delivery_empower_2025_filing_full.txt",
+      "full_text_sha256": "8e83f99cb7dd31ca2a2f8b16793e6a8539e61a70e138b9f10f187fee9fb63080",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/delivery_empower_2025_filing.txt",
+      "checked_in_excerpt_sha256": "a9edcd233ad6d9f520c9d3187cbb26467e90a4b9865863dfdbe718493c603127",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "delivery_base_case_2026_filing",
+      "owner_stream": "delivery",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PE-MD%202026-09-04%20Base%20Rate%20Filing.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/delivery/base_case_2026_filing.pdf",
+      "original_sha256": "872c67baed9ec78cd665fd9a98d4676bffb7adafb4c985b974454d5d5b4f6f57",
+      "original_bytes": 19729175,
+      "status": "pending_case_current_column_benchmark_only",
+      "use": "ExhibitRV13 currentdistributioncolumn only. Proposedcolumns excluded; no new rates adopted.",
+      "pdf_page_count": 928,
+      "selected_pdf_pages_1_based": [
+        172,
+        173
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/delivery_base_case_2026_filing_full.txt",
+      "full_text_sha256": "e165556409db5a63840c569ae4b0709ac2e43ff4b2dd15e8f141a65774f719e1",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/delivery_base_case_2026_filing.txt",
+      "checked_in_excerpt_sha256": "e48b3a30cff182dbdbec3ca99258b77f44f66238cb64fdc21bd25fa2fba776f3",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/potomac_edison_md/sources/consolidated/delivery_base_case_2026_filing-page172.png",
+          "sha256": "d00b675b0c8d05ff010cd6b4f3d9b65a5c4abaa76878dfdc9f2e3be4bb4ef853",
+          "physical_pdf_page_1_based": 172
+        },
+        {
+          "path": ".cache/potomac_edison_md/sources/consolidated/delivery_base_case_2026_filing-page173.png",
+          "sha256": "d4291ff4b16728dde8e5f5abc3abda032894e386f20dec754bb59c3b5aae00bc",
+          "physical_pdf_page_1_based": 173
+        }
+      ],
+      "duplicate_receipts": [
+        {
+          "owner_stream": "tax",
+          "path": ".cache/potomac_edison_md/sources/delivery/base_case_2026_filing.pdf",
+          "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PE-MD%202026-09-04%20Base%20Rate%20Filing.pdf"
+        }
+      ]
+    },
+    {
+      "id": "delivery_empower_notice_jul2026",
+      "owner_stream": "delivery",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-07%20MD%20EmPower%20Surcharge%20Notice.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/delivery/empower_notice_jul2026.pdf",
+      "original_sha256": "b981827287dd181333c25ed04dc32ad8d864238383909ea1e3116d6112d0854d",
+      "original_bytes": 149029,
+      "status": "official_published_evidence",
+      "pdf_page_count": 1,
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/delivery_empower_notice_jul2026_full.txt",
+      "full_text_sha256": "3a2afa47daea082d3e7606e1ecafff49d76b26c9a77c34679d78242fa16078bf",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/delivery_empower_notice_jul2026.txt",
+      "checked_in_excerpt_sha256": "c5c8acd7a28305d92db9d7c7b15e885ed414dd118126a851d4018e7c90474629",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "tax_county_fy2026_citizen_guide",
+      "owner_stream": "tax",
+      "url": "https://www.washco-md.net/wp-content/uploads/Citizens-Guide-Version-FY2026-new-version-for-website.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/county_fy2026_citizen_guide.pdf",
+      "original_sha256": "9305a9e059aaf870e52501f414a4b8387c4b14cf4db494008197c588d5d7c68f",
+      "original_bytes": 2246749,
+      "status": "official_published_evidence",
+      "pdf_page_count": 12,
+      "selected_pdf_pages_1_based": [
+        6
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_county_fy2026_citizen_guide_full.txt",
+      "full_text_sha256": "17076655b2bc454f72dea5f8d238024733bf8ce1bc4fbe984d9f7d3dff0bd4f4",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_county_fy2026_citizen_guide.txt",
+      "checked_in_excerpt_sha256": "cc0caef2c2db00e6b6d0ebe587f9c13a7ce292b55d3910960b8cc761cf6a1398",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "tax_relief_2026",
+      "owner_stream": "tax",
+      "url": "https://www.firstenergycorp.com/help/maryland-energy-relief-credit.html",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/relief_2026.html",
+      "original_sha256": "1567f5af0d908b06918d3307e5a95bc8c920a96a3d6849305be56d9540c5aa2f",
+      "original_bytes": 66451,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_relief_2026_full.txt",
+      "full_text_sha256": "1c836e0a7839ac6d108e2ce7cd733433b533fd54bd33a6f59df2087e2b6d04d2",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_relief_2026.txt",
+      "checked_in_excerpt_sha256": "70ecfb23e81b81bb69f2d8aba2d166e40b13a3b2643025525487aefe9729707a"
+    },
+    {
+      "id": "tax_relief_2025",
+      "owner_stream": "tax",
+      "url": "https://www.firstenergycorp.com/newsroom/news_articles/pe-resi-customers-in-md-to-receieve-relief-refund-bill-credits.html",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/relief_2025.html",
+      "original_sha256": "399a2b69fc041fd7a42eff0bc3af0d9eebe1cf03e8e1bfa4301b9d6f8ae619f0",
+      "original_bytes": 67718,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_relief_2025_full.txt",
+      "full_text_sha256": "8c8dfb8a823bccaf935e75901a11b1c7a989fc4c536b648986097cbe9ce18545",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_relief_2025.txt",
+      "checked_in_excerpt_sha256": "93ee40101668e5199edc7d5bf04464defe2f87c7e1b5c31a1be7f5955005d2d5"
+    },
+    {
+      "id": "tax_sample_bill_definition",
+      "owner_stream": "tax",
+      "url": "https://www.firstenergycorp.com/content/customer/help/billingpayments/about_your_bill/bill-samples/potomac-edison-bill-md.html",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/sample_bill_definition.html",
+      "original_sha256": "6017086eb442dc0934b570bdccfd992baf912ac61d6aa5dbd0a04457d60f8415",
+      "original_bytes": 68994,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_sample_bill_definition_full.txt",
+      "full_text_sha256": "a1786bc6d3923db65fec96fa3a93eb3ff34b140c6acccbebb1ad04950e034b97",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_sample_bill_definition.txt",
+      "checked_in_excerpt_sha256": "3a6031f0863ff63d90befaebf3205212505f3fcfa1712ea61cca6fe9a8faeb0b"
+    },
+    {
+      "id": "tax_book_sos_directory",
+      "owner_stream": "tax",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/SOS/PotomacEdisonRetailTariff.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/book_sos_directory.pdf",
+      "original_sha256": "8dfbdea70b1527c736b0b54337c2826846d4699476131b6aa29d421d455e95fe",
+      "original_bytes": 1117076,
+      "status": "legacy_original_not_current_rate_authority",
+      "use": "Old2022MESpredecessor and unchangedordinaryNEM/accountterms only; not2025rates",
+      "pdf_page_count": 176,
+      "selected_pdf_pages_1_based": [
+        51,
+        53,
+        55,
+        159,
+        160
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_book_sos_directory_full.txt",
+      "full_text_sha256": "2402784083eaa9636ac18d98261fb4305689b762743cbf8b27e0c7b5c98ff435",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_book_sos_directory.txt",
+      "checked_in_excerpt_sha256": "b6695d7ede92741efaa92e88b0bf43db894b06c3d005efcaeec33335c5d48f27",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "tax_comar_sales_utilities",
+      "owner_stream": "tax",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.10",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/comar_sales_utilities.html",
+      "original_sha256": "288889df2e37332514953d9869d6453e5239d0e957651c4264c627864150658c",
+      "original_bytes": 18384,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_comar_sales_utilities_full.txt",
+      "full_text_sha256": "dcef51085bbdaa257f0722176019b1364c34bd3e436928f74c6067a5dbf437b7",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_comar_sales_utilities.txt",
+      "checked_in_excerpt_sha256": "7dade60f196505db3ab2ba7410b5ec41ec81f8d07a5f9997c226ffb8ff783922"
+    },
+    {
+      "id": "tax_comar_sales_price",
+      "owner_stream": "tax",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/comar_sales_price.html",
+      "original_sha256": "ca3c47026719174e973ceb7af549a6a34dddbcc9c4d13b02b27520072c3f9343",
+      "original_bytes": 22799,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_comar_sales_price_full.txt",
+      "full_text_sha256": "f3b9d0924329d469b379189f3f5fe5d9f1cc57ca739681dfebe34e8748f02182",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_comar_sales_price.txt",
+      "checked_in_excerpt_sha256": "4be7b638e9db88d0b5e36da27e3caae199a1d67356f533a705dc9de0c3f0bceb"
+    },
+    {
+      "id": "tax_comar_environmental_rounding",
+      "owner_stream": "tax",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/20.50.01.04",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/comar_environmental_rounding.html",
+      "original_sha256": "68653197e4cb30cffbc738b0b4cf947b1874fadf96014e6c330d931ef0e66093",
+      "original_bytes": 12375,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_comar_environmental_rounding_full.txt",
+      "full_text_sha256": "e868ac2ed72f69769162f92c207fa562c31f45592bb432d13790461a4d1d11b1",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_comar_environmental_rounding.txt",
+      "checked_in_excerpt_sha256": "68a407bd3c041193308ecb68173162b19c83b17c406588ce63cc6093502eedef"
+    },
+    {
+      "id": "tax_environmental_surcharge_statute",
+      "owner_stream": "tax",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gpu&section=7-203",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/environmental_surcharge_statute.html",
+      "original_sha256": "61f8f3e87ff4bea670cd399e21fa69aba62eb904507fea38063c43116f35f351",
+      "original_bytes": 64681,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_environmental_surcharge_statute_full.txt",
+      "full_text_sha256": "a5a5735447039106de503772464bc5bb540ebec6f405d71703d83dfa48326316",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_environmental_surcharge_statute.txt",
+      "checked_in_excerpt_sha256": "6b7607e1ce218aaa0f9136923b57683e989472c9d179126d7b73d93018d2b2df"
+    },
+    {
+      "id": "tax_sales_tax_price_statute",
+      "owner_stream": "tax",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-101",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/sales_tax_price_statute.html",
+      "original_sha256": "8267913109c1d8c1cc78276ab0e84ebca847d4c5caaca5b9e95708c1014fb30c",
+      "original_bytes": 161862,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_sales_tax_price_statute_full.txt",
+      "full_text_sha256": "35791e50a9331ef667ca3168ed62fce105ddb2f8e5a11e30bf5b757f4dac4a8f",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_sales_tax_price_statute.txt",
+      "checked_in_excerpt_sha256": "080ee4e1376d5154280cf0fcf87f9e0b01c8ad466df09a2e1dd16a9fb6892f70"
+    },
+    {
+      "id": "tax_md_sales_tax_tip8",
+      "owner_stream": "tax",
+      "url": "https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip8.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/md_sales_tax_tip8.pdf",
+      "original_sha256": "f6b7398890f28fbb2712405c73891a16aee1210f7d60a9bc68e05bab2b1c3d74",
+      "original_bytes": 122318,
+      "status": "official_published_evidence",
+      "pdf_page_count": 6,
+      "selected_pdf_pages_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_md_sales_tax_tip8_full.txt",
+      "full_text_sha256": "a1887c86c88b0e2b71a35bcc38350e6a27e3cf11967843e48ac5aa806eb8578b",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_md_sales_tax_tip8.txt",
+      "checked_in_excerpt_sha256": "cb20c063b367eab3d7273b38222a2ba1fab49be8da337debc7115d1280f81d95",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "tax_md_tax_general_11_104",
+      "owner_stream": "tax",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/md_tax_general_11_104.html",
+      "original_sha256": "b38e0b50b4e524931148d52dfc565afc66bba2f206dfb04222ec2732ca36a97b",
+      "original_bytes": 80527,
+      "status": "official_published_evidence",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_md_tax_general_11_104_full.txt",
+      "full_text_sha256": "7e13716393392dcc93824e06089f5aadf08ff2cb42cd70442bcbdfb8f8509cc4",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_md_tax_general_11_104.txt",
+      "checked_in_excerpt_sha256": "9cff398ece2589478dd0a224b9a15b587bfe94a2d029d569a6514ad03b4dff66"
+    },
+    {
+      "id": "tax_dls_local_taxes",
+      "owner_stream": "tax",
+      "url": "https://dls.maryland.gov/pubs/prod/InterGovMatters/LocFinTaxRte/FinalGuidetoLocalGovernmentTaxingAuthority.pdf",
+      "retrieved_at": "2026-10-26",
+      "original_path": ".cache/potomac_edison_md/sources/tax/dls_local_taxes.pdf",
+      "original_sha256": "11035b7a391caa694de4442475f0ed3c1dd13a7f5c865a15b82a4d57a3513489",
+      "original_bytes": 651487,
+      "status": "official_published_evidence",
+      "pdf_page_count": 107,
+      "selected_pdf_pages_1_based": [
+        85,
+        86
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/tax_dls_local_taxes_full.txt",
+      "full_text_sha256": "63e536ec9e0cce3f6496cd158aae367a84442cccd53acdbc090051c406ac551d",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/tax_dls_local_taxes.txt",
+      "checked_in_excerpt_sha256": "c9d620a82327fbe8dce6c75307bfaec4aad262a576aab45a84f91dd3fa74ca88",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "metadata_supplier_tariff",
+      "owner_stream": "metadata",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonSupplierTariff.pdf",
+      "retrieved_at": "2026-10-27T02:23:20.635101+00:00",
+      "original_path": ".cache/potomac_edison_md/sources/metadata/supplier_tariff.pdf",
+      "original_sha256": "84b186d3e891cfb19081aee7ed845ef588494b6c0cdcb520b0e3111116c3e1cf",
+      "original_bytes": 577480,
+      "status": "official_metadata_only",
+      "use": "APS/FE-AP metadata only, not Maryland tariff, eligibility or wholesale node selection",
+      "pdf_page_count": 47,
+      "selected_pdf_pages_1_based": [
+        5
+      ],
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/metadata_supplier_tariff_full.txt",
+      "full_text_sha256": "ac9fa7e7d42f12e1a71533595bd4b2ad3a5071fbcbbc22afd16e9e8620f910f7",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/metadata_supplier_tariff.txt",
+      "checked_in_excerpt_sha256": "c1fc1be90a2b4a0405c08a19015c833cbcf79b275b34a2ffe7877c500d538eaa",
+      "extraction_method": "Page-specific pypdf extraction; physical one-based pages. Redlines and proposed columns require original visual context; no flat-token rate inference."
+    },
+    {
+      "id": "metadata_pjm_regions",
+      "owner_stream": "metadata",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "retrieved_at": "2026-10-27T02:23:21.201130+00:00",
+      "original_path": ".cache/potomac_edison_md/sources/metadata/pjm_regions.html",
+      "original_sha256": "98fe1fec5806ffccf3d9104531f8a604140d01e00e3e5b2b1321cb628d3fd601",
+      "original_bytes": 46783,
+      "status": "official_metadata_only",
+      "use": "APS/FE-AP metadata only, not Maryland tariff, eligibility or wholesale node selection",
+      "extraction_method": "HTML text derived without execution; scoped keyword context preserves source wording, not rendered UI proof",
+      "full_text_path": ".cache/potomac_edison_md/sources/consolidated/metadata_pjm_regions_full.txt",
+      "full_text_sha256": "ea6091d42be1115a27bac6f44b14e3689e757fcc8a06e85dcb65d7d057c1182b",
+      "checked_in_excerpt_path": "docs/utility_sources/potomac_edison_md/excerpts/metadata_pjm_regions.txt",
+      "checked_in_excerpt_sha256": "74cb7a1eb4af5df98db770bca458a3b245726d6067cc808a7f5b2336d36ec06c"
+    }
+  ],
+  "derived_receipts": [
+    {
+      "path": ".cache/potomac_edison_md/sources/supply/supply_components_2026.json",
+      "sha256": "588d4ddbf0899152833e2a031968ca2b239db6ce8dfe0f86869cdd4a19486a9c",
+      "status": "derived_transcription_or_research_receipt_not_original"
+    },
+    {
+      "path": ".cache/potomac_edison_md/sources/supply/history_gap_receipt.json",
+      "sha256": "bc2fa4e3068a965c7b0f258ccbc1a32d3cd9de4e58573eaa39ca191a8e21cb80",
+      "status": "derived_transcription_or_research_receipt_not_original"
+    },
+    {
+      "path": ".cache/potomac_edison_md/sources/delivery/delivery_components.json",
+      "sha256": "a2c26986b133a667830a6c5a49285fbbe1da2358fe416c36740b17f460f78ec4",
+      "status": "derived_transcription_or_research_receipt_not_original"
+    },
+    {
+      "path": ".cache/potomac_edison_md/sources/metadata/records.json",
+      "sha256": "c92170d7eb73023efe614b25c0817bee63e3a950be73cf5e4903911e4beed1fc",
+      "status": "derived_transcription_or_research_receipt_not_original"
+    },
+    {
+      "path": ".cache/potomac_edison_md/sources/metadata/blocked_routes.json",
+      "sha256": "7b529c0eec18661bf08b0f51e250b624e4f95c286da6f4fec52df6c76d4d7542",
+      "status": "derived_transcription_or_research_receipt_not_original"
+    },
+    {
+      "path": ".cache/potomac_edison_md/sources/tax/tax_records.json",
+      "sha256": "386242a5354f977ebdc1da21c627d311d3ba33719d3ac7a576e3be5b25420750",
+      "status": "derived_transcription_or_research_receipt_not_original"
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "historical_missing",
+      "status": "unverified",
+      "detail": "2025ECA/AC and finalhistoricalbase originals not recovered; JanMay2026base gaps. GJuneAugust2026transleaf unverified. InitialscopeSeptemberOctoberonly."
+    },
+    {
+      "id": "G_transmission_minimum_capacity",
+      "status": "excluded_unverified_component",
+      "detail": "Exactnesting of minimum$.34/month,$.19/minimumkW andcapacitycharge unbenchmarked; absentcomponent is notzero."
+    },
+    {
+      "id": "G_state_sales_tax",
+      "status": "excluded_unverified_component",
+      "detail": "Ordinarycommercialtax applies; base/credit/bracketcomputation notcalibrated. Notexempt orzero."
+    },
+    {
+      "id": "pending_and_alternative_rates",
+      "status": "excluded",
+      "detail": "PendingGridPrograms/basecaseproposedrates,2025EmPOWERalternativeproposals,2026PURPAalternativeallocation noteffectiveauthority."
+    },
+    {
+      "id": "wholesale_or_other_jurisdiction",
+      "status": "excluded",
+      "detail": "NoOhio/Pennsylvania/WestVirginiaretailrates,wholesaleLMPsubstitution,export/NEMorcommunitysolarsettlement."
+    }
+  ],
+  "validation_limit": "Sourcepreservation only; engine/frontendpins,tests,benchmarks,dispatch/OpenDSS/browserassertions belongseparatereceipts."
+}

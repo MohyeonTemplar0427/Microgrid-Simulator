@@ -64,9 +64,15 @@ PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
                  ("ppl_electric_pennsylvania", "commercial", "GS-1"),
                  ("aep_ohio", "residential", "RS"), ("aep_ohio", "commercial", "GS-1"))
 BGE_CASES = (("bge_maryland", "residential", "R"), ("bge_maryland", "commercial", "G"))
+POTOMAC_EDISON_CASES = (("potomac_edison_maryland", "residential", "R"), ("potomac_edison_maryland", "commercial", "G"))
+DELMARVA_CASES = (("delmarva_maryland", "residential", "R"), ("delmarva_maryland", "commercial", "SGS-S"))
+PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "commercial", "GS"))
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "potomac_edison_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
+    "delmarva_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
+    "pepco_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "bge_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "ppl_electric_pennsylvania": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "aep_ohio": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -80,7 +86,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -184,6 +190,12 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
     va_history_plan=utility == "dominion_energy_virginia" and allow_va_history and plan in ("VA-1", "VA-GS1")
+    if utility == "potomac_edison_maryland" and custom is None and period == "annual":
+        raise ValueError("Potomac Edison full-year2025 coverage is unverified; select explicit September–October2026 complete calendar cycles, not current-rate substitution.")
+    if utility == "delmarva_maryland" and custom is None and period == "annual":
+        raise ValueError("Delmarva full-year2025 coverage is unverified: select explicit supported complete calendar cycles; no current-rate substitution.")
+    if utility == "pepco_maryland" and custom is None and period == "annual":
+        raise ValueError("Pepco full-year2025 component coverage is unverified; select explicit January–February2025 or July–October2026 complete calendar cycles, not current-rate substitution.")
     if custom is not None:
         start,end=custom
     elif utility == "dominion_energy_virginia" and not va_history_plan:
@@ -200,6 +212,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2025-03-01","2025-03-31"
     if utility=="alliant_energy_iowa" and custom is None and period=="monthly":
         start,end="2026-07-01","2026-07-31"
+    if utility in ("pepco_maryland", "delmarva_maryland", "potomac_edison_maryland") and custom is None and period == "monthly":
+        start,end="2026-09-01","2026-09-30"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
@@ -212,6 +226,9 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
+    if utility == "potomac_edison_maryland" and account["tariff"] == "G":
+        from src.billing.potomac_edison_md import hypothetical_history
+        account["history"] = hypothetical_history(start[:7]+"-01")
     if aep_rate_zone not in (None, "ohio_power", "columbus_southern"):
         raise ValueError("AEP historical validation requires an explicit supported legacy rate zone; no location-based inference.")
     if utility == "aep_ohio" and aep_rate_zone is not None:
@@ -423,6 +440,53 @@ def attach_weather(app, request, inputs):
 def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
                        allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if utility == "potomac_edison_maryland":
+        from src.billing.potomac_edison_md import evidence, excluded_components
+        expected = evidence(index, account); residential = account["tariff"] == "R"
+        exclusions = excluded_components(account["tariff"])
+        require(bill.get("is_complete_bill") is residential
+                and bill.get("excluded_components") == exclusions
+                and all(bill.get(k) == expected[k] for k in expected if k != "objective_scope")
+                and bill["metrics"].get("state_sales_tax_status") == ("residential_filed_schedule_exempt" if residential else "excluded_unresolved_compound_base_and_statutory_brackets"),
+                "Potomac Edison evidence must retain complete ordinary R or the exact G transmission minimum/capacity and state-tax exclusions")
+        if not residential:
+            require(account.get("subtotal_scope_confirmed") is True
+                    and bill["metrics"].get("demand_method") == "unmetered"
+                    and bill["metrics"].get("distribution_minimum_inactive_verified") is True
+                    and bill["metrics"].get("minimum_capacity_conservative_upper_kw", 100.) <= 7.5+1e-7
+                    and bill["metrics"].get("transmission_minimum_capacity_status") == "excluded_unverified_combination_and_rounding"
+                    and any("G verified-charge subtotal excludes" in w for w in bill.get("warnings", [])),
+                    "Potomac Edison G must retain the bounded unmetered domain, source history and exact subtotal exclusions")
+        return ("complete_utility_bill" if residential else "verified_charges_subtotal"), sorted(exclusions)
+    if utility == "delmarva_maryland":
+        from src.billing.delmarva_md import evidence, excluded_components
+        expected_evidence = evidence(index, account)
+        expected_exclusions = excluded_components(account["tariff"])
+        require(bill.get("is_complete_bill") is False
+                and account.get("subtotal_scope_confirmed") is True
+                and all(bill.get(k) == expected_evidence[k] for k in expected_evidence if k != "objective_scope")
+                and bill.get("excluded_components") == expected_exclusions
+                and bill["metrics"].get("state_sales_tax_status") == ("residential_filed_schedule_exempt" if account["tariff"] == "R" else "excluded_unresolved_compound_base_and_statutory_brackets")
+                and any("Delmarva verified-charge subtotal excludes" in w for w in bill.get("warnings", [])),
+                "Delmarva evidence must retain exact plan-specific exclusions; an incomplete subtotal cannot become a complete bill")
+        if account["tariff"] == "SGS-S":
+            require(account.get("demand_method") == "utility_estimate"
+                    and bill["metrics"].get("demand_method") == "utility_estimate"
+                    and abs(bill["metrics"]["estimated_billing_demand_kw"]-bill["import_kwh"]/175.) < 1e-7,
+                    "Delmarva SGS-S evidence requires the retained utility-assigned E.3 estimated-demand method")
+        return "verified_charges_subtotal", sorted(expected_exclusions)
+    if utility == "pepco_maryland":
+        from src.billing.pepco_md import evidence, excluded_components
+        expected_evidence = evidence(index, account)
+        expected_exclusions = excluded_components(account["tariff"])
+        require(bill.get("is_complete_bill") is False
+                and account.get("subtotal_scope_confirmed") is True
+                and all(bill.get(k) == expected_evidence[k] for k in expected_evidence if k != "objective_scope")
+                and bill.get("excluded_components") == expected_exclusions
+                and bill["metrics"].get("state_sales_tax_status") == ("residential_filed_schedule_exempt" if account["tariff"] == "R" else "excluded_unresolved_compound_base_and_statutory_brackets")
+                and any("Pepco verified-charge subtotal excludes" in w for w in bill.get("warnings", [])),
+                "Pepco evidence must retain its exact plan-specific credits or state-tax exclusions; an incomplete subtotal cannot become a complete bill")
+        return "verified_charges_subtotal", sorted(expected_exclusions)
     if utility in ("we_energies_wisconsin", "duke_energy_indiana"):
         expected = adapter(utility).evidence(pd.DatetimeIndex(index), account)
         require(all(bill.get(k) == expected[k] for k in expected),

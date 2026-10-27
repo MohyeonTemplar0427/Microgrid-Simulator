@@ -1,0 +1,59 @@
+Source ID: delivery_cseg_oct2026
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt184aa0644dce17a4/6abebe49c7c45d25867c0a5a/CSEG_MD_Pepco_-_10_2026_.pdf?branch=prod_alias
+Original SHA256: 9dc4f996d1a1c596dfc9409abbdff50f44bc65db9460f2e502e0de98d5b1931a
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+Effective October 1, 2026
+CSEG CREDIT RATE
+CNM Credit Rate for Schedule R, RPIV, PIV
+MAY J UNE J ULY A UG UST SEPTEMBER OCTOBER
+2026 2026 2026 2026 2026 2026 A utho ri ty
+Generation
+- All kWh $ (0.10620000) $ (0.10764000) $ (0.10764000) $ (0.10764000) $ (0.10764000) $ (0.12266000) Tariff Page No. 43.1
+- Administrative Charge (0.00500000) (0.00404000) (0.00404000) (0.00404000) (0.00404000) (0.00415000) Tariff Page No. 43.1
+- Pro c urem ent Co st A djustm ent (0.00318530) (0.00420370) (0.00453550) (0.00535150) (0.00556330) (0.00546960) Tariff Page No. 43.1
+Total Generation $ (0.11438530) $ (0.11588370) $ (0.11621550) $ (0.11703150) $ (0.11724330) $ (0.13227960)
+Transmission *
+- All kWh (1) $ (0.02101000) $ (0.02101000) $ (0.02101000) $ (0.02101000) $ (0.02007000) $ (0.02007000) Tariff Page No. 43.1
+Di stri buti o n *
+- All kWh (1) $ (0.04328000) $ (0.08760000) $ (0.08760000) $ (0.08760000) $ (0.08760000) $ (0.08760000) Tariff Page No. 3, 21, 22
+- Bill Stabilization Adjustment (1) 0.00470500 (0.00222300) 0.00085200 (0.00238600) 0.00757900 (0.00434700) Tariff Page No. 47
+- Franchise T ax (Delivery) (1) (0.00062000) (0.00062000) (0.00062000) (0.00062000) (0.00062000) (0.00062000) Tariff Page No. 36
+- Maryland Environmental Surcharge (1) (0.00015100) (0.00015100) (0.00015000) (0.00015000) (0.00015000) (0.00015000) Tariff Page No. 38
+- Empower MD Charge (1) (0.02061800) (0.02061800) (0.02061800) (0.02061800) (0.02061800) (0.02061800) Tariff Page No. 48
+- Administrative Credit 0.00122000 0.00118000 0.00118000 0.00118000 0.00118000 0.00125000 Tariff Page No. 44
+- MYP Adjustment (1) $ (0.00168000) $ (0.00168000) $ (0.00168000) $ (0.00168000) $ (0.00168000) $ (0.00168000) Tariff Page No. 62
+Total Distribution $ (0.06042400) $ (0.11171200) $ (0.10863600) $ (0.11187400) $ (0.10190900) $ (0.11376500)
+- Total Montgomery County (MC) Surcharge $ (0.01132270) $ (0.01132270) $ (0.01132420) $ (0.01132420) $ (0.01132420) $ (0.01132420) Tariff Page No. 37
+TOTAL CREDIT RATE - R (MC) $ (0.20714200) $ (0.25992840) $ (0.25718570) $ (0.26123970) $ (0.25054650) $ (0.27743880)
+TOTAL CREDIT RATE - R (PG) (0.20948230) (0.26226870) (0.26228750) (0.26634150) (0.25564830) (0.28254060)
+* Gross Receipts tax is calculated on the net amount of the applicable charges (after Community Solar Credits are applied)
+The credit for the GRT can be calculated as follows: The sum of the rates notated with the (1) multiplied by the GRT rate of 2.0408%
+
+=== PDF physical page 4 ===
+Effective October 1, 2026
+CSEG CREDIT RATE
+MAY J UNE J ULY A UG UST SEPTEMBER OCTOBER
+2026 2026 2026 2026 2026 2026 A utho ri ty
+Generation
+- All kWh $ (0.10377000) $ (0.10675000) $ (0.10675000) $ (0.10675000) $ (0.10675000) $ (0.11923000) Tariff Page No. 43.2
+- Administrative Charge (0.00493000) (0.00362000) (0.00362000) (0.00362000) (0.00362000) (0.00367000) Tariff Page No. 43.2
+- Pro c urem ent Co st A djustm ent 0.01495330 0.01552230 0.01645240 0.01762680 0.01803500 0.01793970 Tariff Page No. 43.2
+Total Generation $ (0.09374670) $ (0.09484770) $ (0.09391760) $ (0.09274320) $ (0.09233500) $ (0.10496030)
+Transmission *
+- All kWh (1) $ (0.01423000) $ (0.01423000) $ (0.01423000) $ (0.01423000) $ (0.01421000) $ (0.01421000) Tariff Page No. 43.2
+Di stri buti o n *
+- All kWh (1) $ (0.04272000) $ (0.08130000) $ (0.08130000) $ (0.08130000) $ (0.08130000) $ (0.08130000) Tariff Page No. 5
+- Bill Stabilization Adjustment (1) (0.00620000) (0.01003500) (0.00985800) (0.00985500) (0.00990600) (0.00999800) Tariff Page No. 47
+- Franchise T ax (Delivery) (1) (0.00062000) (0.00062000) (0.00062000) (0.00062000) (0.00062000) (0.00062000) Tariff Page No. 36
+- Maryland Environmental Surcharge (1) (0.00015100) (0.00015100) (0.00015000) (0.00015000) (0.00015000) (0.00015000) Tariff Page No. 38
+- Empower MD Charge (1) (0.01198600) (0.01198600) (0.01198600) (0.01198600) (0.01198600) (0.01198600) Tariff Page No. 48
+- Administrative Credit 0.00034000 0.00069000 0.00069000 0.00069000 0.00069000 0.00071000 Tariff Page No. 44
+- MYP Adjustment (1) $ (0.00123000) $ (0.00123000) $ (0.00123000) $ (0.00123000) $ (0.00123000) $ (0.00123000) Tariff Page No. 62
+Total Distribution $ (0.06256700) $ (0.10463200) $ (0.10445400) $ (0.10445100) $ (0.10450200) $ (0.10457400)
+- Total Montgomery County (MC) Surcharge $ (0.02024990) $ (0.02024990) $ (0.02025250) $ (0.02025250) $ (0.02025250) $ (0.02025250) Tariff Page No. 37
+TOTAL CREDIT RATE - GS (MC) $ (0.19079360) $ (0.23395960) $ (0.23285410) $ (0.23167670) $ (0.23129950) $ (0.24399680)
+* Gross Receipts tax is calculated on the net amount of the applicable charges (after Community Solar Credits are applied)
+The credit for the GRT can be calculated as follows: The sum of the rates notated with the (1) multiplied by the GRT rate of 2.0408%

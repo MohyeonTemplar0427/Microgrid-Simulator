@@ -1,0 +1,181 @@
+Source ID: tax_md_sales_tax_tip8
+Primary URL: https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip8.pdf
+Original SHA256: f6b7398890f28fbb2712405c73891a16aee1210f7d60a9bc68e05bab2b1c3d74
+Original remains authoritative. Physical PDF pages are one-based.
+
+=== Physical PDF page 1; pypdf layout extraction, whitespace normalized. ===
+Business tax tip #8
+Calculating Maryland's Sales and Use Tax
+The Maryland sales and use tax rate is 6% on taxable sales. The 6% sales and use tax is imposed
+on 60% of the price of new modular buildings or new mobile homes. There are no general local
+sales taxes in Maryland.
+The Maryland tax on alcoholic beverages is 9% of the charge for the alcoholic beverage.
+Short-term passenger car and recreational vehicle rental sales have a sales tax rate of 11.5% and
+truck rentals are subject to the 8% tax rate. Charges made in connection with a shared motor
+vehicle used for peer -to-peer car sharing and made available on a peer-to-peer car sharing
+program have a sales tax rate of 8% and 11.5% of the taxable price, if the vehicle is a passenger
+car, a multipurpose passenger vehicle, or a motorcycle that is part of a fleet of vehicles that
+includes more than 10 vehicles owned by the same person.
+The sales and use tax rate is 12% of the taxa ble price for electronic smoking devices and tobacco
+pipes. The sales and use tax for vaping liquid sold in a container that contains 5 milliliters or less
+of vaping liquid is 60% of the taxable price.
+How is the 6% sales and use tax calculated?
+The tax is:
+▪ 1 cent on each sale where the taxable price is 20 cents;
+▪ 2¢ if the taxable price is at least 21¢ but less than 34 cents;
+▪ 3¢ if the taxable price is at least 34¢ but less than 51 cents;
+▪ 4¢ if the taxable price is at least 51¢ but less than 67 cents;
+▪ 5¢ if the taxable price is at least 67¢ but less than 84 cents;
+▪ And 6¢ if the taxable price is at least 84 cents.
+
+=== Physical PDF page 2; pypdf layout extraction, whitespace normalized. ===
+On each sale where the taxable price exceeds $1.00:
+▪ 6¢ on each exact dollar, plus 1 cent if the excess over an exact dollar is at least 1 cent but
+less than 17¢;
+▪ 2¢ if the excess over an exact dollar is at least 17¢ but less than 34¢;
+▪ 3¢ if the excess over an exact dollar is at least 34¢ but less than 51¢;
+▪ 4¢ if the excess over an exact dollar is at least 51¢ but less than 67¢;
+▪ 5¢ if the excess over an exact dollar is at least 67¢ but less than 84¢;
+▪ And 6¢ if the excess over an exact dollar is at least 84¢.
+Rate charts should be used when making a sale. You can download a rate chart for sales and use
+tax and a rate chart for alcohol tax.
+How is the tax on Vehicle Rentals calculated?
+Car and motorcycle rentals – The tax for a car and motorcycle rental at a taxable price of $2 or
+more is 23¢ for each exact multiple of $2;
+▪ And for that part of $2 in excess of an exact multiple of $2, 1 cent if the
+▪ excess over an exact multiple of $2 is at least 1 cent but less than 9¢;
+▪ 2¢ if the excess over an exact multiple of $2 is at least 9¢ but less than 18¢;
+▪ 3¢ if the excess over an exact multiple of $2 is at least 18¢ but less than27¢;
+▪ 4¢ if the excess over an exact multiple of $2 is at least 27¢ but less than35¢;
+▪ 5¢ if the excess over an exact multiple of $2 is at least 35¢ but less than44¢;
+▪ 6¢ if the excess over an exact multiple of $2 is at least 44¢ but less than53¢;
+▪ 7¢ if the excess over an exact multiple of $2 is at least 53¢ but less than61¢;
+▪ 8¢ if the excess over an exact multiple of $2 is at least 61¢ but less than70¢;
+▪ 9¢ if the excess over an exact multiple of $2 is at least 70¢ but less than79¢;
+▪ 10¢ if the excess over an exact multiple of $2 is at least 79¢ but less than 87¢;
+▪ 11¢ if the excess over an exact multiple of $2 is at least 87¢ but less than 96¢;
+▪ 12¢ if the excess over an exact multiple of $2 is at least 96¢ but less than $1.05;
+▪ 13¢ if the excess over an exact multiple of $2 is at least $ 1.05 but less than $1.14;
+▪ 14¢ if the excess over an exact multiple of $2 is at least $ 1.14 but less than $1.22;
+▪ 15¢ if the excess over an exact multiple of $2 is at least $ 1.22 but less than $1.31;
+▪ 16¢ if the excess over an exact multiple of $2 is at least $ 1.31 but less than $1.40;
+▪ 17¢ if the excess over an exact multiple of $2 is at least $ 1.40 but less than $1.48;
+▪ 18¢ if the excess over an exact multiple of $2 is at least $ 1.48 but less than $1.57;
+▪ 19¢ if the excess over an exact multiple of $2 is at least $ 1.57 but less than $1.66;
+▪ 20¢ if the excess over an exact multiple of $2 is at least $ 1.66 but less than $1.74;
+▪ 21¢ if the excess over an exact multiple of $2 is at least $ 1.74 but less than $1.83;
+
+=== Physical PDF page 3; pypdf layout extraction, whitespace normalized. ===
+▪ 22¢ if the excess over an exact multiple of $2 is at least $ 1.83 but less than $1.92; and
+▪ 23¢ if the excess over an exact multiple of $2 is at least $ 1.92 but less than $2.00.
+Truck rentals – The tax for a truck rental is 8¢ for each exact dollar; and 2¢ for each 25¢ or part
+of 25¢ in excess of an exact dollar.
+May vendors keep the "breakage"?
+No. Vendors are required to report all amounts they collected or should have collected. Because
+of the requirement to round up, the amount remitted will almost always be more than a flat
+percentage of taxable sales.
+Are there any minimum taxable levels?
+Yes. The tax does not apply to sales of less than 20¢.
+May I make sales on a tax-included basis?
+Yes. Maryland law requires vendors to assume or absorb all or any part of the sales and use tax
+imposed on a retail sale or use and pay that sales and use tax on behalf of the buyer.
+How are vending machine sales treated?
+If you make sales of tangible personal property through vending machines which would have
+been taxable if sold over-the-counter, sales tax is due on the gross receipts from those sales.
+Vendors should multiply their gross receipts by 94.50% before applying the 6% rate.
+What about bulk vending machines?
+Bulk vending machines, which contain unsorted merchandise and dispense merchandise in
+approximately equal portions at random without selection by the customer when a coin is
+inserted, are an exception. Merchandise sold through a bulk vending machine for a taxable price
+of 75 cents or less is exempt from the sales tax.
+What is included in the taxable price?
+The tax is imposed on the entire price whether paid in the form of money, promises, barter or
+anything else of value. It includes the amount of liabilities assumed by the buyer, the value of
+services performed for the vendor and, except for federal food stamps, the face value of any
+coupon for which the vendor can get reimbursement from another source. The taxable price is
+not reduced for any expense or cost for labor or service rendered, material used or any property
+sold except as explained below.
+
+=== Physical PDF page 4; pypdf layout extraction, whitespace normalized. ===
+What about trade-ins?
+The tax is computed based on anything of value transferred in a sale. For this reason, the value
+of trade-ins may not be deducted before computing the tax.
+Are store coupons included in the taxable price?
+No. A store coupon is not included in the taxable price unless the vendor can get reimbursement
+from another source. Manufacturers' coupons, for which a store can get reimbursement, are
+included in the taxable price, however.
+Are warranty charges taxable?
+Warranty, maintenance, service agreement and insurance charges in connection with taxable
+sales are also taxable if the vendor requires them to be purchased or they are automatically
+included in the price of the merchandise. However, if the sale could be completed without
+paying these charges, they are not taxable.
+What other components of a sale are taxable?
+The tax applies to all services necessary to complete a sale, such as assembly, fabrication,
+alteration, lubrication, engraving, monogramming, cleaning, customization and dealer
+preparation. The taxable price is not reduced by prompt payment discounts, manufacturers'
+rebates, commissions or "core charges," or deposits to insure a trade-in, even if refunded. The
+taxable price includes small order, split billing and slow-moving charges. The tax does not apply
+to core charges made in connection with sales of the following re-manufactured truck parts and
+their components: air brake systems, engines, rear axle carriers and transmissions.
+Can nonprofit groups eliminate or reduce the tax by describing all or part of their prices as
+"donations"?
+No. If the donation must be paid to obtain the property, it is part of the taxable price. See Tip #6
+- Retail Sales Involving Exemption Certificates for more information.
+May I deduct any charges from the price before calculating the sales and use tax?
+Yes. You may deduct separately stated charges for installation, professional services, interest
+payments and delivery services. In addition, the tax does not apply to consumer excise taxes,
+deposits, cash discounts and mandatory gratuity charges on food and beverage sales for groups
+of ten or fewer.
+For all short-term rental agreements for passenger cars, Class M vehicles, and E, F, or G trucks,
+the taxable price includes all sales and charges made in connection with the short-term vehicle
+
+=== Physical PDF page 5; pypdf layout extraction, whitespace normalized. ===
+rental, including insurance, freight handling, equipment and supplies, delivery and pickup,
+cellular telephone, and other accessories, but not including sales of motor fuel subject to the
+motor fuel tax.
+How do the deductible charges apply?
+To deduct these charges before computing the sales and use tax, the vendor must clearly
+identify the charges separately from any other items by documentary evidence in existence, and
+made known to the buyer, at the time of the sale. If these charges are included in a lump-sum
+price with no separate statement, the tax must be collected on the entire amount of the sale.
+May I deduct all kinds of delivery charges?
+No. To deduct a delivery charge from the taxable price, it must be a charge for delivering goods
+directly to the buyer. Charges for delivering goods to the seller or between various locations of
+the seller are not deductible. This is why the tax must be collected on "delivery charges" on
+goods picked up at catalog stores.
+Are "shipping and handling" charges deductible?
+No. While a separately stated shipping charge would be deductible, the deduction is lost if it is
+combined with handling charges.
+How is the tax applied to sales of cigarettes?
+The sales and use tax is applied to the full price of the cigarettes without any deduction for
+tobacco taxes which may have been paid on the cigarettes.
+Are there any limitations on the interest deduction?
+Yes. For an interest charge to be deductible, it must be for credit extended to the buyer. Interest
+paid by the seller and re-billed to the buyer does not qualify. No part of a timely lease or rental
+payment may be treated as a deductible interest charge.
+How are restocking charges handled?
+If a sale is cancelled and goods are returned to the seller for a credit or refund, the proportionate
+amount of the tax collected must also be refunded. If a vendor withholds a portion of the price
+as a restocking charge or for any other reason, no refund of the tax on the portion withheld is
+permitted.
+
+=== Physical PDF page 6; pypdf layout extraction, whitespace normalized. ===
+What about lease payments on personal property?
+The tax rate due on applicable lease payments for tangible personal property is based on the
+lease payment period, regardless of the length of the lease or the date that the lease agreement
+was signed. Each lease payment period is considered to be a separate lease for sales and use tax
+purposes. Payments for lease periods due are subject to tax at the 6% rate.
+Is the tax on out-of-state purchases computed the same way as the tax on sales in Maryland?
+Basically, yes. Maryland does, however, grant a credit for the sales tax paid to another state up
+to the amount of the Maryland tax. In addition, a 10% depreciation allowance may be taken for
+each full year the property is used by the purchaser before being brought to Maryland. See Tip#3
+- Sales and Use Tax on Out-of-State Purchases for more information.
+How is the tax computed on repair transactions?
+The tax applies to separately stated material charges in repair transactions. Lumpsum repair
+charges are exempt, but lump-sum repairers are required to pay the tax on all of their purchases.
+See Tip #7 - Are Repairs to Personal Property Taxable? For more information.
+File Electronically
+If you have no sales and use tax due for a required filing period, you can telefile your return by
+calling our automated line at 410-260-7225. If you owe tax, we encourage you to file
+electronically using our free bFile service.
+Revised February 1, 2022

@@ -1,0 +1,15 @@
+Source ID: supply_pca_current
+Primary URL: https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt1b4ac9864f417a73/6abdb850794a17321fb97b45/DPL_MD_PCA_-_102026_.pdf?branch=prod_alias
+Original SHA256: 1df4d4ad6f7897f8dd3cb8ba24e1208d2f8cedb28d8240f4407493e8f7d37d95
+Original remains authoritative. Physical PDF pages are one-based.
+
+=== Physical PDF page 1; Visual transcription of outlined table, already verified in supply stream. ===
+PrimaryURL: https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt1b4ac9864f417a73/6abdb850794a17321fb97b45/DPL_MD_PCA_-_102026_.pdf?branch=prod_alias
+OriginalSHA256: 1df4d4ad6f7897f8dd3cb8ba24e1208d2f8cedb28d8240f4407493e8f7d37d95
+Status: official_maryland_original
+Physical PDF pages one-based; whitespace normalized.
+Visual transcription of physical PDF page1, dollars/kWh.
+Columns Jun26 Jul26 Aug26 Sep26 Oct26
+Residential: .0070129 .0075479 .0094853 .0102448 .0101653
+TypeI: .0025516 .0028041 .0037427 .0043628 .0043337
+All are positive retail charges. November2026–May2027 cells blank. Originalheading says rates effectiveOctober1,2026 but populated earlier columns preserve historicalvalues.

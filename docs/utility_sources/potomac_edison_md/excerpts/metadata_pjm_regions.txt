@@ -1,0 +1,166 @@
+DERIVED SCOPED EXCERPT — ORIGINAL URL: https://emergencyprocedures.pjm.com/ep/pages/regions.jsf
+STATUS: official_metadata_only
+APS/FE-AP metadata only, not Maryland tariff, eligibility or wholesale node selection
+
+MATCH FE-AP
+ Light Company
+WESTERN
+PJM-RTO
+EKPC
+Control Area
+KY
+East Kentucky Power Cooperative
+WESTERN
+PJM-RTO
+FE-AP
+Control Area
+MD, PA, VA, WV
+Former AP: West Penn Power, Mon Power, Potomac Edison/TrAIL Co VA Transmission Zone & Potomac Edison (FirstEnergy; FE-South)
+WESTERN
+PJM-RTO
+FE-AP_EAST
+Demand Response
+MD, PA, VA, WV
+See Load Management Subzone zip code definitions within the Demand Response section of pjm.com:
+http://www.pjm.com/markets-and-operations/demand-response.aspx
+FE-AP
+N/A
+FE-ATSI
+Control Area
+OH
+Former ATSI: Penn Power, Ohio Edison, The Illuminating Company & Toledo Edison (FirstEnergy; FE-West)
+WESTERN
+PJM-RTO
+FE-JC
+Transmission Zone
+NJ
+Former GPU: Jersey Central Power & Light (FirstEnergy; FE-East)
+MIDATL
+PJM-RTO, MAD
+FE-JC_REDBANK
+Demand Response
+NJ
+See Load Management Subzone zip code definitions within the Demand Response section of pjm.com:
+http://www.pjm.com/markets-and-operations/demand-response.aspx
+FE-JC
+N/A
+FE-ME
+Transmission Zone
+PA
+Former GPU: Met-Ed (FirstEnergy; FE-East)
+MIDATL
+PJM-RTO, MAD
+FE-PN
+Transmission Zone
+PA
+Former GPU: Penelec (FirstEnergy; FE-East)
+MIDATL
+PJM-RTO, MAD
+MIDATL
+Region
+DC, DE, MD, NJ, PA, VA
+PJM Mid-Atlantic Region/CZ; including Accomack & Northampton counties in VA
+PJM-RTO
+PJM-RTO, MAD
+OVEC
+Transmission Zone
+IN, KY, OH
+Ohio Valley Electric Corporation
+WESTERN
+PJM-RTO
+PECO
+Transmission Zone
+PA
+PECO (Exelon)
+MIDATL
+PJM-RTO, MAD
+PEPCO
+Transmission Zone
+DC, MD
+PEPCO (Exelon)
+MIDATL
+PJM-RTO, MAD
+PJM-RTO
+RTO
+DC, DE, IL, IN, KY, MD, MI, NC
+
+MATCH Potomac
+ooperative
+WESTERN
+PJM-RTO
+FE-AP
+Control Area
+MD, PA, VA, WV
+Former AP: West Penn Power, Mon Power, Potomac Edison/TrAIL Co VA Transmission Zone & Potomac Edison (FirstEnergy; FE-South)
+WESTERN
+PJM-RTO
+FE-AP_EAST
+Demand Response
+MD, PA, VA, WV
+See Load Management Subzone zip code definitions within the Demand Response section of pjm.com:
+http://www.pjm.com/markets-and-operations/demand-response.aspx
+FE-AP
+N/A
+FE-ATSI
+Control Area
+OH
+Former ATSI: Penn Power, Ohio Edison, The Illuminating Company & Toledo Edison (FirstEnergy; FE-West)
+WESTERN
+PJM-RTO
+FE-JC
+Transmission Zone
+NJ
+Former GPU: Jersey Central Power & Light (FirstEnergy; FE-East)
+MIDATL
+PJM-RTO, MAD
+FE-JC_REDBANK
+Demand Response
+NJ
+See Load Management Subzone zip code definitions within the Demand Response section of pjm.com:
+http://www.pjm.com/markets-and-operations/demand-response.aspx
+FE-JC
+N/A
+FE-ME
+Transmission Zone
+PA
+Former GPU: Met-Ed (FirstEnergy; FE-East)
+MIDATL
+PJM-RTO, MAD
+FE-PN
+Transmission Zone
+PA
+Former GPU: Penelec (FirstEnergy; FE-East)
+MIDATL
+PJM-RTO, MAD
+MIDATL
+Region
+DC, DE, MD, NJ, PA, VA
+PJM Mid-Atlantic Region/CZ; including Accomack & Northampton counties in VA
+PJM-RTO
+PJM-RTO, MAD
+OVEC
+Transmission Zone
+IN, KY, OH
+Ohio Valley Electric Corporation
+WESTERN
+PJM-RTO
+PECO
+Transmission Zone
+PA
+PECO (Exelon)
+MIDATL
+PJM-RTO, MAD
+PEPCO
+Transmission Zone
+DC, MD
+PEPCO (Exelon)
+MIDATL
+PJM-RTO, MAD
+PJM-RTO
+RTO
+DC, DE, IL, IN, KY, MD, MI, NC, NJ, OH, PA, TN, VA, WV
+PJM Interconnection
+PJM-RTO
+PPL
+Transmission Zone
+

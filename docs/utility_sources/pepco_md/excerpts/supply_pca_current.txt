@@ -1,0 +1,17 @@
+Source ID: supply_pca_current
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt9e3743d1d4f743f9/6abd8ce1d4633692b4c108e9/Pepco_MD_PCA_-_102026_.pdf?branch=prod_alias
+Original SHA256: 07d646f03d1c9d1950dd3525ae137b4af8212ebce7c6a86abbb30ce86700b638
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+OriginalURL https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt9e3743d1d4f743f9/6abd8ce1d4633692b4c108e9/Pepco_MD_PCA_-_102026_.pdf?branch=prod_alias
+OriginalSHA256 07d646f03d1c9d1950dd3525ae137b4af8212ebce7c6a86abbb30ce86700b638
+PhysicalPDFpage1; visually verified render.
+Retail PCA, dollars/kWh; parentheses in original denote credit.
+Columns Jun26 Jul26 Aug26 Sep26 Oct26
+Residential .0042037 .0045355 .0053515 .0055633 .0054696
+TypeI -.0155223 -.0164524 -.0176268 -.0180350 -.0179397
+Nov26-May27 blank; no coverage inferred.
+
+[Outlined table: visual transcription; original render retained.]

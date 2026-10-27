@@ -1,0 +1,818 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-26",
+  "source_scope": {
+    "utility": "Delmarva Power & Light Company, Maryland",
+    "supplier": "Delmarva Standard Offer Service",
+    "schedules": [
+      "R residential",
+      "SGS-S TypeI with utility-assigned E3 estimated-demand method"
+    ],
+    "jurisdiction": "Explicit unincorporated Wicomico County account; no additional ordinary local energy levy is a code-based inference plus account confirmation",
+    "initial_source_intersection_cycles": [
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-09",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "monthly_import_limit_kWh": {
+      "R": 7500,
+      "SGS-S": 3500
+    },
+    "SGS_actual_15minute_peak_limit": "Strictly below20kW",
+    "SGS_billing_demand": "Affirmative utility E3 method assignment; imported monthly kWh/175hours, not a fixed3kW value or measured-demand rounding",
+    "cycle_scope": "Complete matching calendar service/billing cycles only",
+    "cost_scope": "Verified recurring-charge subtotals: R excludes unrecoveredRRC and account-specificrefunds; SGS excludes unresolvedstate sales tax",
+    "export": "Unsupported"
+  },
+  "records": [
+    {
+      "id": "supply_book_current",
+      "owner_stream": "supply",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/bltefc1a0bec7ba2be7/6abbd8bb794a17e7adb9629e/9226_9056_9064_DPL_MD_CURRENT_CLEAN_Admin_Charge_RTOUND_eff_100126.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_current.pdf",
+      "original_sha256": "d7165fb9e1efbdd40ddd76cfbc4d6cdc5eb3653db040e27679bc88a81cde9b30",
+      "original_bytes": 786334,
+      "status": "official_maryland_original",
+      "pdf_page_count": 204,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_current.txt",
+      "full_text_sha256": "3d08acc66301c0d294126186b8109dbf469c1529582f5a1fe6c2527516ed6858",
+      "selected_pdf_pages_1_based": [
+        18,
+        48,
+        56,
+        77,
+        87,
+        88,
+        156,
+        161,
+        162,
+        167,
+        168,
+        173,
+        178,
+        181,
+        184,
+        198,
+        199
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_current-selected.txt",
+      "cache_excerpt_sha256": "2cd204fbcd1d6ee62bd00086c77bcdfafb8d3d98e9135d3e2bf74d7c43a05c66",
+      "also_used_by_tax_stream": true,
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_current.txt",
+      "checked_in_excerpt_sha256": "92d718248f27e97874364e3f5f99f09aeca4423534e4893e4da5e8f1faf011eb"
+    },
+    {
+      "id": "supply_pca_current",
+      "owner_stream": "supply",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt1b4ac9864f417a73/6abdb850794a17321fb97b45/DPL_MD_PCA_-_102026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/pca_current.pdf",
+      "original_sha256": "1df4d4ad6f7897f8dd3cb8ba24e1208d2f8cedb28d8240f4407493e8f7d37d95",
+      "original_bytes": 43083,
+      "status": "official_maryland_original",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/delmarva_md/sources/supply/pca_current.txt",
+      "full_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/pca_current-selected.txt",
+      "cache_excerpt_sha256": "27f2672691fe685157b495fe7ba531c6283d2491614839d5031653e9a4040111",
+      "render_path": ".cache/delmarva_md/sources/supply/pca_current.png",
+      "render_sha256": "9655047dc4fce344a3084840751a9516f7d443f5ba0e4e154e212ef35d79a34a",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_pca_current.txt",
+      "checked_in_excerpt_sha256": "ce8b732f6294ed509c09649f0e1157d1553fe3d3deb1f01016bff78c423bce9b"
+    },
+    {
+      "id": "supply_book_2024_dec",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt9a557615138ff16d/677315212fdcc317970bef4b/2024-12-11_MASTER_MD_DPL_Tariff_Book.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2024_dec.pdf",
+      "original_sha256": "b8980e2be4af0f0a8fd169e0e9006057c73661ed6a05a723869fd5941a66c398",
+      "original_bytes": 754095,
+      "status": "official_maryland_original",
+      "pdf_page_count": 197,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2024_dec.txt",
+      "full_text_sha256": "c89a97ef0458ec11fa26ad535fdee349db338b9a85f93eb1db6ad9029cfdccd3",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2024_dec-selected.txt",
+      "cache_excerpt_sha256": "e4796ab38b18234f632f95f45bbcf3eb1af9278319f53c434c4751f2ed2e02f0",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2024_dec.txt",
+      "checked_in_excerpt_sha256": "41270e9cfe456319aa71a1c0892cbf2ba1b1dae90c7f0bac8a078cef99292e9d"
+    },
+    {
+      "id": "supply_book_2025_mar",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/bltc86e36ecc6a3a141/683633a29ef257e70b5933e8/2025-03-05_MASTER_MD_DPL_Tariff_Book_2.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2025_mar.pdf",
+      "original_sha256": "5232828f6c7ff1ba315457dc78c43483c063dae7c416495256a20277aaf41abf",
+      "original_bytes": 758726,
+      "status": "official_maryland_original",
+      "pdf_page_count": 197,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2025_mar.txt",
+      "full_text_sha256": "8ca37e4e19d2c6f53ffe59eca8a8c886a9a93c46bbe0efd6a15cd29beb2bf403",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2025_mar-selected.txt",
+      "cache_excerpt_sha256": "5759b89f950a71374f408dbd2db6458cd38a035255be1668bccde0398ee60370",
+      "use": "historical_corroboration"
+    },
+    {
+      "id": "supply_book_2025_jun",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/bltc3779412321b34d8/6883d48e91541d15afa6c105/MD_SOS_DPL_Type_II_Current_Clean_Filing_eff_0_.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2025_jun.pdf",
+      "original_sha256": "6d46a7bcabf44ca6b31f4afd57cd6a7075d8c0a0a6538261fb86506ea7fae390",
+      "original_bytes": 760237,
+      "status": "excluded_proposed_R_SGS_pages",
+      "pdf_page_count": 197,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2025_jun.txt",
+      "full_text_sha256": "22f6aa17e53a2dcdd6b80fac7d397dd48f7f6532b6a9acd58f2d3f0b18e4e38a",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2025_jun-selected.txt",
+      "cache_excerpt_sha256": "e660f5edef402004ebc0bd2621c605a8252f630efff75b361be83f4054300509",
+      "use": "excluded_proposed_not_rate_authority"
+    },
+    {
+      "id": "supply_book_2025_sep4",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt5cef29ea6692979d/68cc2f0c2755d52c3548c849/2025-09-04_MASTER_MD_DPL_Tariff_Book.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2025_sep4.pdf",
+      "original_sha256": "ef1f1d5144609796c1384d1849bc8c45e6197e25a38ed327ccbc6e35ef4c51ee",
+      "original_bytes": 809110,
+      "status": "official_maryland_original",
+      "pdf_page_count": 198,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2025_sep4.txt",
+      "full_text_sha256": "562d947dc832e8ce8e08224b32a97cce2f8f701c1b4eb8762d450d837ccd842d",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2025_sep4-selected.txt",
+      "cache_excerpt_sha256": "71ce63581c4f09febe3693a6b1b699aab9bba3d6fb655f3434082aa4735833e3",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2025_sep4.txt",
+      "checked_in_excerpt_sha256": "528e557d83329a9f9b44c2a68c5f6acbcf706cb4eac79d9553636238dd79be82"
+    },
+    {
+      "id": "supply_book_2025_sep17",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt99ca5e1b176e4c46/6984dd52c529c6c138cf0f12/2025-09-17_MASTER_MD_DPL_Tariff_Book.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2025_sep17.pdf",
+      "original_sha256": "5bcad77cbbd8425750001cbe7de3d2b8ade1f967870ea810f60df649960c4e5c",
+      "original_bytes": 753998,
+      "status": "official_maryland_original",
+      "pdf_page_count": 198,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2025_sep17.txt",
+      "full_text_sha256": "665bff3cf7e8f38bedc0499f1fa832b4f2db26a57528b335b5d24685c22679c0",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2025_sep17-selected.txt",
+      "cache_excerpt_sha256": "296aa7645cd532dcbe73f204f8be3a8eeffd546af28ea9eff19760b31108b0f4",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2025_sep17.txt",
+      "checked_in_excerpt_sha256": "df954564393ce9b4319b3e7f8004f21c3a2eb9b77babc9c9267128192c63d48d"
+    },
+    {
+      "id": "supply_book_2025_dec",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt59b335dd053a56cf/6984dd40a88c121e90f51aa1/2025-12-31_MASTER_MD_DPL_Tariff_Book_.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2025_dec.pdf",
+      "original_sha256": "750945a845daac0cb861e182090a4b7f5decf2ebd8e32f7508971225bc7d1e7a",
+      "original_bytes": 754150,
+      "status": "official_maryland_original",
+      "pdf_page_count": 198,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2025_dec.txt",
+      "full_text_sha256": "53d728ef5d40bc5f4776a52ef9bef548b68185e182406d07bb120f4b80acfa80",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2025_dec-selected.txt",
+      "cache_excerpt_sha256": "03ddad2c6bfbdde2e9883f0eeaebba1e31fd144b11c6384b26f951801988aae0",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2025_dec.txt",
+      "checked_in_excerpt_sha256": "b5ef613d47acdd23fdebeac0dabbd145c89f65eb17a1b75a17b7bf244bfa2c7a"
+    },
+    {
+      "id": "supply_book_2026_jun",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt5cf7f8ee78966506/6a551e1149eff00ac082bcc7/DPL_MD_CURRENT_CLEAN_SOS_Filing_eff_0601_.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2026_jun.pdf",
+      "original_sha256": "b35d95e3c9bf73eae8d33dd7ac5b805dd0c9bd3e08c42f1b8dd17ffa9da8ace8",
+      "original_bytes": 784915,
+      "status": "official_maryland_original",
+      "pdf_page_count": 203,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2026_jun.txt",
+      "full_text_sha256": "94765048e6876c9a52cad3f7e96f91e844f07046f390caa3cc28423891207597",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2026_jun-selected.txt",
+      "cache_excerpt_sha256": "68562cfec7f34debfb448b09ec6921062a36e486663485148f3b74b28a19cefe",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2026_jun.txt",
+      "checked_in_excerpt_sha256": "a061be97af86c1123ceb322c5125c6f8b3523c928c0b6060ac273638afe489e5"
+    },
+    {
+      "id": "supply_book_2026_aug",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt3f938d0d9a94244e/6a8ddbe4c8beba22bf6a393f/2026-08-20_MASTER_DPL_MD_Tariff_Book.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2026_aug.pdf",
+      "original_sha256": "f7102a1f5db3951a8ae8b3acf7cb9dbb663edf3fdf67907b596dd9d24e1b980a",
+      "original_bytes": 798910,
+      "status": "official_maryland_original",
+      "pdf_page_count": 203,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2026_aug.txt",
+      "full_text_sha256": "000ffea7f7dd682b05f0d40080323326fc063b012bb122667723fadf10d73215",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2026_aug-selected.txt",
+      "cache_excerpt_sha256": "df99ce44dfae37f08ba569a1abdcca3f061b1f9205e816db1ffc0e0213f75af2",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2026_aug.txt",
+      "checked_in_excerpt_sha256": "ba9efd76177085cf4ca9b9f7290359d0d11ca2e141e4c80f570035e9499043ab"
+    },
+    {
+      "id": "supply_book_2025_feb1",
+      "owner_stream": "supply",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt710b9f1dbdaa74b9/67a4f005d7d66ba3bfc3bdc0/DPL_CURRENT_CLEAN_GREEN_RIDER_eff_020125.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2025_feb1.pdf",
+      "original_sha256": "d1fecd4311a64476231935fe54a577b0705082d3f792fd945fd07382d284f705",
+      "original_bytes": 754745,
+      "status": "official_maryland_original",
+      "pdf_page_count": 197,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2025_feb1.txt",
+      "full_text_sha256": "d6a2031fef9c4461ce648f11cd3d6d4da07d243931fe462f6af455bcdb807435",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2025_feb1-selected.txt",
+      "cache_excerpt_sha256": "424134ced5245a7cb05ed57868e15ab5121fa30785594daa1ad174171d7f041d",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2025_feb1.txt",
+      "checked_in_excerpt_sha256": "ce60e183a3c9f87ce2dfe8bffa6ba8b942c77f01c3a7c4b00a137a84ad79eb2c"
+    },
+    {
+      "id": "supply_book_2025_jun_clean",
+      "owner_stream": "supply",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/bltefc1a0bec7ba2be7/6836366f66e14842151acf57/MD_SOS_Type_II_generation_rates_and_Admin_Cha_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/supply/book_2025_jun_clean.pdf",
+      "original_sha256": "9aa135835eb28c37049788263ba8ba30aaa49ef3207ce96def900b0f62b18cf2",
+      "original_bytes": 759467,
+      "status": "official_maryland_original",
+      "pdf_page_count": 197,
+      "full_text_path": ".cache/delmarva_md/sources/supply/book_2025_jun_clean.txt",
+      "full_text_sha256": "0cc6f33c1d96e1640437e22e0f3ea4f72c2f811b5ed87b922117abf52e03d843",
+      "selected_pdf_pages_1_based": [
+        48,
+        55
+      ],
+      "cache_excerpt_path": ".cache/delmarva_md/sources/supply/book_2025_jun_clean-selected.txt",
+      "cache_excerpt_sha256": "33223a89889ece550bae51c1e298601ddcf9f7bc09e579d45f1182390e2f19e7",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/supply_book_2025_jun_clean.txt",
+      "checked_in_excerpt_sha256": "f3d3574f04ff6ec32ec0a4439d2cdaa79d085b65077d0c685a34ea10fb0480ee"
+    },
+    {
+      "id": "delivery_cseg_may2025",
+      "owner_stream": "delivery",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt37f69113f2ff3899/6813cee9952c500a8dd0aae0/DPL_MD_CSEG_-_05012025.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/delivery/cseg_may2025.pdf",
+      "original_sha256": "8064e1cc3cf30cc1d2faf9499d5b01f087d64fbf5b55cf7a3986e82748bcd94f",
+      "original_bytes": 142550,
+      "status": "official_maryland_original",
+      "pdf_page_count": 5,
+      "full_text_path": ".cache/delmarva_md/sources/delivery/cseg_may2025.txt",
+      "full_text_sha256": "dbfb110f9e917e7328d79a1b46170c4b8582afd3c17fb9a176c56be0934e4d0d",
+      "also_used_by_tax_stream": true,
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Labeled retail-sign structured transcription; original CSEG columns/rendered receipts remain authoritative.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/delivery_cseg_may2025.txt",
+      "checked_in_excerpt_sha256": "8e96266f30203b0af119d87a09424d3df71237c83212a5460d7cde6f88a1edfa",
+      "rendered_receipts": [
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_cseg_may2025-page1.png",
+          "sha256": "898ec764171b07592695d6007689d2e490086c9189fa414596cfb98cc757d183",
+          "physical_pdf_page_1_based": 1
+        },
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_cseg_may2025-page2.png",
+          "sha256": "1c1c5f5033459a5c1e0f7b80204a0af157c9d6e020cd9f32410391fc8d66d101",
+          "physical_pdf_page_1_based": 2
+        }
+      ]
+    },
+    {
+      "id": "delivery_cseg_sep2025",
+      "owner_stream": "delivery",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt37f69113f2ff3899/68b731f3c1561b3668f1c405/DPL_MD_CSEG_-_09012025.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/delivery/cseg_sep2025.pdf",
+      "original_sha256": "fac1c860d4f21a05a38feaee53c18c5a978621cba71e370faf67ca6c659efe07",
+      "original_bytes": 142210,
+      "status": "official_maryland_original",
+      "pdf_page_count": 5,
+      "full_text_path": ".cache/delmarva_md/sources/delivery/cseg_sep2025.txt",
+      "full_text_sha256": "4cc6209cf31fed9598e6e48de33ddbd42eb25a1ec46db990cceaf6ee87359854",
+      "also_used_by_tax_stream": true,
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Labeled retail-sign structured transcription; original CSEG columns/rendered receipts remain authoritative.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/delivery_cseg_sep2025.txt",
+      "checked_in_excerpt_sha256": "294c9f70c30e843a78881763be972a4b29bd959c289752e6e4aaaf62e3c48bb5",
+      "rendered_receipts": [
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_cseg_sep2025-page1.png",
+          "sha256": "81aad639f80dd28090fc84862618f57c8d3884f67e5426445de050c084dc7d24",
+          "physical_pdf_page_1_based": 1
+        },
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_cseg_sep2025-page2.png",
+          "sha256": "d0704810ef4b40ab4c0ddc9311a099c2a655d74cfdb03cf52c73ca5255ca69b9",
+          "physical_pdf_page_1_based": 2
+        }
+      ]
+    },
+    {
+      "id": "delivery_cseg_oct2026",
+      "owner_stream": "delivery",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt37f69113f2ff3899/6abea98a15d5b70211b13d6c/CSEG_MD_DPL_-_10_2026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/delivery/cseg_oct2026.pdf",
+      "original_sha256": "de819389d11ad0ae05bdc76997d3fccb756b3318d865fa58ee937fa4a4b402f3",
+      "original_bytes": 164326,
+      "status": "official_maryland_original",
+      "pdf_page_count": 7,
+      "full_text_path": ".cache/delmarva_md/sources/delivery/cseg_oct2026.txt",
+      "full_text_sha256": "4c8acff64e1b4ced4a632fe25ad9f09388c2ee9d494f3a5b589e402efa97d4e4",
+      "also_used_by_tax_stream": true,
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "Labeled retail-sign structured transcription; original CSEG columns/rendered receipts remain authoritative.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/delivery_cseg_oct2026.txt",
+      "checked_in_excerpt_sha256": "186b835c3362d2320cdef2d6b571c51a54e8d6afdfa5e56ee4d2519da5d462a2",
+      "rendered_receipts": [
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_cseg_oct2026-page1.png",
+          "sha256": "f472594bad48aaf3dfeba9c9fae1f29fc28ed690cd9abb268d10dc1cd5c2134c",
+          "physical_pdf_page_1_based": 1
+        },
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_cseg_oct2026-page4.png",
+          "sha256": "f454819e2ab031bd9101c82435ce03eaef7d84c18f22ad69b40439e04bc0b4b6",
+          "physical_pdf_page_1_based": 4
+        }
+      ]
+    },
+    {
+      "id": "delivery_bsa_current",
+      "owner_stream": "delivery",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/bltbc8859786ea995d7/6abd95feaf264f00d4bbc05e/DPL_MD_BSA_-_102026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/delivery/bsa_current.pdf",
+      "original_sha256": "494cc2b66123653f143d88fb65cdeca726d23873a9009f65b1b0e5e0e6d42bc3",
+      "original_bytes": 25033,
+      "status": "official_maryland_original",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/delmarva_md/sources/delivery/bsa_current.txt",
+      "full_text_sha256": "ae689506f62f0dde432adc9981ff88842f9c9d931578e32672364522fc18779c",
+      "use": "supported_scope_or_boundary_evidence",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/delivery_bsa_current.txt",
+      "checked_in_excerpt_sha256": "b7ef50292707f972d006f64f191c3febc61f30e2eb899512601db76521496f38",
+      "rendered_receipts": [
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_bsa_current-page1.png",
+          "sha256": "f6d04ccfa25a9206ed7d96e0c91af0b5d78bcbd558be8231d672f80b633a9d38",
+          "physical_pdf_page_1_based": 1
+        }
+      ]
+    },
+    {
+      "id": "delivery_ac_current",
+      "owner_stream": "delivery",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt919c5f716ed2f78e/6abd979dd463366c81c10b3a/DPL_MD_Admin_Credit_-_102026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/delivery/ac_current.pdf",
+      "original_sha256": "6537256fbe95237cf34e69825a91b27080f7544371af1d5a02194e24cba98893",
+      "original_bytes": 43043,
+      "status": "official_maryland_original",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/delmarva_md/sources/delivery/ac_current.txt",
+      "full_text_sha256": "a5c0c28be5e39545b693ac988bd3789e2b83bd3d13a9e37b5fe6386490bef907",
+      "use": "supported_scope_or_boundary_evidence",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/delivery_ac_current.txt",
+      "checked_in_excerpt_sha256": "4fbcb1cf8bcf465087a867c6d7e9e7932bd913d2dac021f16628aeb75473a487",
+      "rendered_receipts": [
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/delivery_ac_current-page1.png",
+          "sha256": "55bbfe45a6681ac45d4330a7fa2d8eea8be7f8df9074dc4eab8582ced775e0f8",
+          "physical_pdf_page_1_based": 1
+        }
+      ]
+    },
+    {
+      "id": "tax_book_2025jul02",
+      "owner_stream": "tax",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/bltefc1a0bec7ba2be7/6866ba338877742a736471bb/DPL_MD_Environmental_Surcharge_Update_Filing_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/book_2025jul02.pdf",
+      "original_sha256": "b5ac6823987150b49200947fe7058a73dd3121cd3d41c61f4bec7c2edfa449ff",
+      "original_bytes": 761330,
+      "status": "official_maryland_original",
+      "provenance": "Delmarva downloaded original",
+      "full_text_path": ".cache/delmarva_md/sources/tax/book_2025jul02.txt",
+      "full_text_sha256": "db15d7406466246aa1e72163ff4a5e65766682b81b3af3b6aa4562b0bc595e3c",
+      "pdf_page_count": 198,
+      "use": "supported_scope_or_boundary_evidence",
+      "selected_pdf_pages_1_based": [
+        1,
+        18,
+        48,
+        55,
+        87,
+        154,
+        159,
+        160,
+        165,
+        166,
+        176
+      ],
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_book_2025jul02.txt",
+      "checked_in_excerpt_sha256": "9f134fe90e8048c19decd4b959ccf956a0c24f22a9fb3fa104135617c44d3c70",
+      "rendered_receipts": [
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/tax_book_2025jul02-page48.png",
+          "sha256": "6104f86c2acab1bebd53149691297d73555ffe64f06aa00d1f5680511f6c18bb",
+          "physical_pdf_page_1_based": 48
+        },
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/tax_book_2025jul02-page55.png",
+          "sha256": "0a13d233d54684e76a4c540007528dd25ec4a3c763988eb83b3cbae05b6bd286",
+          "physical_pdf_page_1_based": 55
+        }
+      ]
+    },
+    {
+      "id": "tax_comar_sales_utilities",
+      "owner_stream": "tax",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.10",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/comar_sales_utilities.html",
+      "original_sha256": "288889df2e37332514953d9869d6453e5239d0e957651c4264c627864150658c",
+      "original_bytes": 18384,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/tax/comar_sales_utilities.txt",
+      "full_text_sha256": "2277167d45b9e98a93210afe5718390c424f63877f0e0eb01fdde5d81a08b67d",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "HTML text with navigation removed; original bytes retained.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_comar_sales_utilities.txt",
+      "checked_in_excerpt_sha256": "cdc37050fc2343b80a5d7b3849fe98265aadad74129fce63ebbc0669d268c7cc"
+    },
+    {
+      "id": "tax_comar_sales_price",
+      "owner_stream": "tax",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/comar_sales_price.html",
+      "original_sha256": "ca3c47026719174e973ceb7af549a6a34dddbcc9c4d13b02b27520072c3f9343",
+      "original_bytes": 22799,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/tax/comar_sales_price.txt",
+      "full_text_sha256": "abde6516df2c5f378d090ebfdc8139ce9d8f081e0a529f5d9fa3f8e52a9cf1ab",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "HTML text with navigation removed; original bytes retained.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_comar_sales_price.txt",
+      "checked_in_excerpt_sha256": "5416e89c65b5234b331935cda49e9a50d61441f868d664ffbd8fb8dd4e145d27"
+    },
+    {
+      "id": "tax_comar_environmental_rounding",
+      "owner_stream": "tax",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/20.50.01.04",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/comar_environmental_rounding.html",
+      "original_sha256": "68653197e4cb30cffbc738b0b4cf947b1874fadf96014e6c330d931ef0e66093",
+      "original_bytes": 12375,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/tax/comar_environmental_rounding.txt",
+      "full_text_sha256": "487b85e3e858450600612fa617fc3bd25ed8a1ea7b2d0f8eb312df7c1ceb7306",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "HTML text with navigation removed; original bytes retained.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_comar_environmental_rounding.txt",
+      "checked_in_excerpt_sha256": "9dbe172ee1ac17e1928b928519e4c6c9025fbff8f0ba2bd62b3202e5f543a24d"
+    },
+    {
+      "id": "tax_environmental_surcharge_statute",
+      "owner_stream": "tax",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gpu&section=7-203",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/environmental_surcharge_statute.html",
+      "original_sha256": "61f8f3e87ff4bea670cd399e21fa69aba62eb904507fea38063c43116f35f351",
+      "original_bytes": 64681,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/tax/environmental_surcharge_statute.txt",
+      "full_text_sha256": "e46f8436f2fea8a07a52c355e22065c65e7de3024c42c9216e36195f6a11b3da",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "HTML text with navigation removed; original bytes retained.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_environmental_surcharge_statute.txt",
+      "checked_in_excerpt_sha256": "85a80cf983624e20816de6bee0b1a4ebb57da3889ba2a92820d91234086c1a33"
+    },
+    {
+      "id": "tax_sales_tax_price_statute",
+      "owner_stream": "tax",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-101",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/sales_tax_price_statute.html",
+      "original_sha256": "8267913109c1d8c1cc78276ab0e84ebca847d4c5caaca5b9e95708c1014fb30c",
+      "original_bytes": 161862,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/tax/sales_tax_price_statute.txt",
+      "full_text_sha256": "0df50b814d205d98d383b345062ffcf51d1b3ec98f5632831cde0ecc8ef9b1bd",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "HTML text with navigation removed; original bytes retained.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_sales_tax_price_statute.txt",
+      "checked_in_excerpt_sha256": "d0b01652032b0c43a279698c531ad092436412b6f99f41b0d0ca6bea525808c9"
+    },
+    {
+      "id": "tax_dls_local_taxes",
+      "owner_stream": "tax",
+      "url": "https://dls.maryland.gov/pubs/prod/InterGovMatters/LocFinTaxRte/FinalGuidetoLocalGovernmentTaxingAuthority.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/dls_local_taxes.pdf",
+      "original_sha256": "11035b7a391caa694de4442475f0ed3c1dd13a7f5c865a15b82a4d57a3513489",
+      "original_bytes": 651487,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/tax/dls_local_taxes.txt",
+      "full_text_sha256": "a9a1b634fd1a66389e81ed470b842b13b46f17a1ce9cfa5217c24be50905a03e",
+      "pdf_page_count": 107,
+      "use": "supported_scope_or_boundary_evidence",
+      "selected_pdf_pages_1_based": [
+        87,
+        88,
+        89
+      ],
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_dls_local_taxes.txt",
+      "checked_in_excerpt_sha256": "f9f473949c37004c4eaeeff5e90b907a78ad873163858444dda89891642da6cc"
+    },
+    {
+      "id": "tax_md_sales_tax_tip8",
+      "owner_stream": "tax",
+      "url": "https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip8.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/md_sales_tax_tip8.pdf",
+      "original_sha256": "f6b7398890f28fbb2712405c73891a16aee1210f7d60a9bc68e05bab2b1c3d74",
+      "original_bytes": 122318,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/consolidated/md_sales_tax_tip8-full.txt",
+      "full_text_sha256": "e01c1859d0c70d86dcda6df2c248076511837aff0524fd8e996c498b62dbbb4c",
+      "pdf_page_count": 6,
+      "use": "supported_scope_or_boundary_evidence",
+      "selected_pdf_pages_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_md_sales_tax_tip8.txt",
+      "checked_in_excerpt_sha256": "cfdb555270e6201ee98e8c449f36ea1b4633581ed2ce404be82115e4f1d5389f"
+    },
+    {
+      "id": "tax_md_tax_general_11_104",
+      "owner_stream": "tax",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/md_tax_general_11_104.html",
+      "original_sha256": "b38e0b50b4e524931148d52dfc565afc66bba2f206dfb04222ec2732ca36a97b",
+      "original_bytes": 80527,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/consolidated/md_tax_general_11_104-full.txt",
+      "full_text_sha256": "36c245062b314096db969abdf6da44f896ec9e417d34a4f2969e92400e0c8b23",
+      "use": "supported_scope_or_boundary_evidence",
+      "extraction_method": "HTML text with navigation removed; original bytes retained.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_md_tax_general_11_104.txt",
+      "checked_in_excerpt_sha256": "97fc09f7ea8b64549f343d6e2c545d839f8002e4cb4983dec7cc5e17797de064"
+    },
+    {
+      "id": "tax_psc_relief_2025jun27",
+      "owner_stream": "tax",
+      "url": "https://www.psc.state.md.us/wp-content/uploads/MD-PSC-Sets-Plan-to-Distribute-Legislative-Refund-Act-Money_06272025.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/psc_relief_2025jun27.pdf",
+      "original_sha256": "9e49bdef32bf7da1300be1a46ad64c9c51def23f430a05a3661dde70a1f0d21a",
+      "original_bytes": 512841,
+      "status": "official_maryland_original",
+      "provenance": "Previously preserved official Maryland statewide original reused after Delmarva applicability check",
+      "full_text_path": ".cache/delmarva_md/sources/consolidated/psc_relief_2025jun27-full.txt",
+      "full_text_sha256": "1d407133d6d32b2a6c461bf0b485b8a8e9ee7d14d051031bf610f72ab32d430d",
+      "pdf_page_count": 2,
+      "use": "supported_scope_or_boundary_evidence",
+      "selected_pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_psc_relief_2025jun27.txt",
+      "checked_in_excerpt_sha256": "e5ad6095ac7747288ec443e9571cf8b3a221fac534525d16e959b2f91cea6ef2"
+    },
+    {
+      "id": "tax_book_2026jul06",
+      "owner_stream": "tax",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt51d66aaf3a9d1f68/6a6d0cba9307daf5efc549e4/2026-07-06_MASTER_MD_DPL_Tariff_Book_1.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/delmarva_md/sources/tax/book_2026jul06.pdf",
+      "original_sha256": "32f6a01bfc8a9db4d5610c8fa72a6f15e6767559442ba1a1e2b8632203f0c928",
+      "original_bytes": 865061,
+      "status": "official_maryland_original",
+      "provenance": "Downloaded exact archive original during Delmarva tax research",
+      "full_text_path": ".cache/delmarva_md/sources/tax/book_2026jul06.txt",
+      "full_text_sha256": "956f0cd43507cd147d51e8a328c0e06fcbed2f821333decace2dc305572bd2a1",
+      "pdf_page_count": 203,
+      "use": "supported_scope_or_boundary_evidence",
+      "selected_pdf_pages_1_based": [
+        1,
+        48,
+        55
+      ],
+      "extraction_method": "Page-specific text or labeled visual transcription; see excerpt for limits.",
+      "checked_in_excerpt_path": "docs/utility_sources/delmarva_md/excerpts/tax_book_2026jul06.txt",
+      "checked_in_excerpt_sha256": "377c2f2b758f64492de5fa3f1aab5cb8d4317a73b927df869fb69eac11107baa",
+      "rendered_receipts": [
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/tax_book_2026jul06-page1.png",
+          "sha256": "8a8ae8825f928bec7fda9cc2245b240f4c8f366041bcd5dc8d11b6882aeaf757",
+          "physical_pdf_page_1_based": 1
+        },
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/tax_book_2026jul06-page48.png",
+          "sha256": "edd6b23192aab8eb1400aa438d89f9b08d940a8dc79a8c2c442b7d62f168ef16",
+          "physical_pdf_page_1_based": 48
+        },
+        {
+          "path": ".cache/delmarva_md/sources/consolidated/tax_book_2026jul06-page55.png",
+          "sha256": "89dba43b615a4aeda17987d889d1b21710610bfe5c6303dd87782cd3fcbbf904",
+          "physical_pdf_page_1_based": 55
+        }
+      ]
+    },
+    {
+      "id": "metadata_pjm_regions",
+      "owner_stream": "metadata",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "retrieved_at": "2026-10-26T22:15:33.276473+00:00",
+      "original_path": ".cache/delmarva_md/sources/metadata/pjm_regions.html",
+      "original_sha256": "e235ec17b0743eac6368561143aaa9e47c5da9bede5053caf39581206c235539",
+      "original_bytes": 46789,
+      "status": "official_metadata_only",
+      "use": "DPL transmission zone covers Delaware, Maryland and Virginia; separate from Maryland retail utility territory, tariff eligibility, jurisdiction and wholesale node selection. Does not establish a retail tariff or pricing node.",
+      "receipt_path": ".cache/delmarva_md/sources/metadata/receipt.json",
+      "receipt_sha256": "fe324b0baefc9de50dc1831d99f319f18a066b9afe9ed7f0c60480b5d639a1c0"
+    }
+  ],
+  "derived_monthly_component_transcription": {
+    "path": ".cache/delmarva_md/sources/delivery/monthly_components.json",
+    "sha256": "60b232390e2f1c5c535937adecd6fed8b3dfc80cd8e1c365a25b768de5f708f6",
+    "basis": "Retail signs: charges positive, credits negative; CSEG publication signs inverted. No fixed charges, demand, USP, RRC/refunds, jurisdiction taxes. Published SGS transmission energy component valid only first3500kWh; demand omitted by CSEG. Calendar support separately constrained by actual effective dates.",
+    "readback_limit": "Literal structured transcription, not original utility bytes. CSEG source totals independent; includes no fixed/customer/demand/USP/RRC."
+  },
+  "web_only_locality_receipt": {
+    "path": ".cache/delmarva_md/sources/tax/wicomico_code_web_receipt.txt",
+    "sha256": "dfbea72bc331155850e599afe3598722798306d576fa9bf41990d9af0ea8ae89",
+    "status": "Web read succeeded; directoriginal403; no originalHTMLpreservation claim"
+  },
+  "exclusions": [
+    {
+      "id": "proposed",
+      "status": "excluded",
+      "detail": "supply_book_2025_jun relevantR48/SGS55 markedProposed despitearchive placement. ActualMay22approved cleanoriginalsupersedes research reliance."
+    },
+    {
+      "id": "unknown_months",
+      "status": "unverified",
+      "detail": "October2025\u2013April2026 monthlyPCA/BSA/AC not recovered. No full-year2025/2026bill coverage."
+    },
+    {
+      "id": "july2025",
+      "status": "unsupported_crossing",
+      "detail": "MES .000151 effectiveusageJuly2,2025; rejectcompleteJulycyclewithout verifiedallocation."
+    },
+    {
+      "id": "august2025",
+      "status": "unsupported_crossing",
+      "detail": "Transmission changeeffectiveusageAugust27,2025; monthlyCSEG oldAugustvalue doesnot override fileddate."
+    },
+    {
+      "id": "tax_decomposition",
+      "status": "unreconciled_underlying_decomposition",
+      "detail": "Actualfiled billedMES .000151 fromJuly2,2025 retained; simple statutoryassessmentcap .000150 differs. No inventedPSC/GRTgrossup explanation. ExactJuly6,2026book confirms .000150 effectiveJuly1,2026."
+    },
+    {
+      "id": "RRC",
+      "status": "unverified_recurring_credit",
+      "detail": "MonthlyresidentialRRC amounts withquarterlyupdates unrecovered; excludedfromRsubtotal, notzero."
+    },
+    {
+      "id": "SGS_sales_tax",
+      "status": "unverified",
+      "detail": "Ordinarycommercialtax applies; base/credit/bracketcomputationnot calibrated. Excluded tax is unmodeled, notexempt/zero."
+    },
+    {
+      "id": "account_credits_and_fees",
+      "status": "separate_account_or_project_scope",
+      "detail": "Legislativeawards/enrollment/standby/interconnectionfees require separateevidence; no benefit or exemption inferred."
+    },
+    {
+      "id": "other_jurisdictions_export",
+      "status": "excluded",
+      "detail": "Delaware electricity/gas, municipal accounts, wholesalebilling substitution and export/communitysolarsettlement unsupported."
+    }
+  ],
+  "blocked_routes": [
+    {
+      "url": "https://ecode360.com/10172660",
+      "http_status": 403,
+      "web_read_succeeded": true,
+      "original_preserved": false
+    },
+    {
+      "status": "404_stopped",
+      "detail": "Guessed singulararchive/PCApagepaths; actualpluralarchive followed fromMarylandindex."
+    },
+    {
+      "status": "bounded_search_exhausted",
+      "detail": "HistoricalPCA October2025\u2013April2026 not recovered inoneindex/archivepassplustargetedgapqueries; notproofnohistoricalsourceexists."
+    }
+  ],
+  "history_gap_receipt": {
+    "path": ".cache/delmarva_md/sources/supply/history_gap_receipt.json",
+    "sha256": "6cca91cc43a9696025c6de8ede9d0f330a47448d8feacffba3b793dda072c868"
+  },
+  "validation_limit": "Thisledgerpins sourceevidence only. Engine/frontend identity, launcherchecks, independentbillbenchmarks andbrowserassertions belong inseparatevalidationreceipts."
+}

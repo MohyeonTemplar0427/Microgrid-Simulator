@@ -8,18 +8,21 @@ It does not retrieve external weather/prices or promote an engine.
 Run from the repository using `/usr/local/bin/python3`:
 
 ```sh
-# Inspect commands and coverage without starting anything or writing reports.
-/usr/local/bin/python3 tools/validate.py --tier focused --area regional --dry-run
+# Inspect a utility-specific selection without starting checks or writing reports.
+/usr/local/bin/python3 tools/validate.py --tier focused --test test/test_delmarva_md.py --test test/test_delmarva_integration.py --dry-run
 
-# Fast iteration: explicitly select the changed area(s), or an individual test.
+# Routine utility work: select the affected utility and integration tests.
+/usr/local/bin/python3 tools/validate.py --tier focused --test test/test_delmarva_md.py --test test/test_delmarva_integration.py
+
+# Tooling/shared changes: explicitly select the affected area(s) or test nodes.
 /usr/local/bin/python3 tools/validate.py --tier focused --area validation
 /usr/local/bin/python3 tools/validate.py --tier focused --area billing --area dispatch
 /usr/local/bin/python3 tools/validate.py --tier focused --test test/test_regional_dispatch.py
 
-# Offline HTTP/API, form serialization, queued-worker and electrical workflows.
+# Shared API/worker contract changes: offline HTTP/form/worker/electrical workflows.
 /usr/local/bin/python3 tools/validate.py --tier workflow
 
-# Broad backend/browser regression plus JavaScript syntax checks.
+# Shared-engine changes or release milestones: full regression and JS syntax.
 /usr/local/bin/python3 tools/validate.py --tier release
 ```
 
@@ -27,8 +30,66 @@ Focused areas are `validation` (the default tooling checks), `regional`,
 `billing`, `dispatch`, `electrical`, `profiles` and `web`. Area selection is an
 explicit test-file grouping, not automatic proof that all dependants were
 covered. Shared changes can require several groups or the release tier.
-`--test` accepts repeatable repository test paths/nodes. Workflow/release tiers
-cannot be narrowed with `--area` or `--test`.
+`--test` accepts repeatable repository test paths/nodes. For routine utility
+work, prefer these explicit paths over `--area regional`, which includes the
+other utilities. Workflow/release tiers cannot be narrowed with `--area` or
+`--test`. Focused runs do not automatically add JavaScript syntax phases;
+check changed JavaScript with the existing Node toolchain (for example,
+`node --check src/local_web/static/regional.js`). Workflow/release tiers run
+the configured JavaScript syntax checks automatically.
+
+## Select validation by change impact
+
+Routine utility additions and tariff updates default to **targeted utility
+acceptance**, not the full release suite. This is a policy selection made with
+the existing `focused`, `workflow` and `release` tiers; no new launcher tier or
+sampling flag is introduced. Record affected paths, selected tests/scenarios,
+coverage, exclusions and the reason for any broader run in the implementation
+report. A focused acceptance pass must not be labeled a full-release pass.
+
+| Change | Default checks |
+| --- | --- |
+| Utility-specific rates, eligibility or billing adapter | Utility-specific source/arithmetic/boundary tests, numeric/symbolic parity, dispatch/state reconciliation and directly affected integration tests |
+| Utility registration, default site, catalog or browser account fields with unchanged shared behavior | Above, plus affected form serialization, queued-worker, saved-settings/CSV/ZIP checks and changed-JavaScript syntax checks |
+| Shared API/worker contracts or workflow impact not bounded by targeted tests | Workflow tier plus affected utility tests; add full release when shared-engine behavior or cross-utility impact requires it |
+| Shared billing math, dispatch/solver algorithms, time grids, credit/state handling, PV/storage physics or electrical replay affecting multiple utilities | Full release plus relevant cross-utility historical matrices |
+| Release milestone, before stable-engine promotion, explicit user requirement, or failures/uncertain impact requiring broader regression | Full release and explicitly selected historical acceptance matrices |
+| Documentation or commit message | Text, local-link and diff checks; no simulation reruns |
+
+Touching a shared registry file does not alone require full regression. Determine
+whether the edit changes shared behavior or only adds a bounded utility entry.
+Tests must still cover direct consumers and any changed contract; a file-count
+heuristic is not an impact assessment. This policy never waives an explicit
+user-required tier or acceptance check, and validation does not authorize
+staging, committing, pushing, deployment or stable-engine promotion.
+
+### Utility acceptance safeguards
+
+Preserve verified effective dates, units, eligibility, supply/delivery/rider/tax
+separation, independent bill benchmarks and itemized reconciliation. Exercise
+rate boundaries, timezone/DST, missing/duplicate data, unsupported settlement and
+account/state rejection. Check numeric/symbolic billing parity, optimized
+dispatch, SOC/credit continuity, reported proof limits and saved artifacts.
+New billing expressions can alter dispatch even when the shared architecture is
+unchanged; targeted validation must cover those effects.
+
+Use affected checks while editing. On the finished frozen candidate, normally
+run **one explicitly selected new-utility historical matrix**, covering grid-only,
+PV-only and PV-plus-battery across the supported rate regimes. Include full-year
+billing/dispatch validation where verified coverage permits and the acceptance
+scope calls for it. Reject coverage gaps rather than manufacturing an annual
+case. Do not rerun unaffected utilities' historical matrices, or repeat passing
+suites/matrices without a change, failure or unresolved concern.
+
+Interval checks are cumulative scenario timesteps, not independent test cases.
+The current regional driver and worker check every OpenDSS interval in each
+selected case. Keep that normal final-matrix coverage when it is inexpensive.
+A smaller electrical sample requires a recorded reason, selected dates/scenarios
+and interval counts, and explicit **sampled electrical coverage** labels. Use
+supported case selection, not an audit bypass or an invented sampling option.
+Shorter studies do not establish full-year billing/dispatch or an all-interval
+annual electrical pass. Never silently subsample an annual case or relabel old
+electrical evidence as belonging to a changed candidate.
 
 Default runs exclude `test_application_interface.py`,
 `test_desktop_application.py` and `test_graphical_interface.py`. This is a
@@ -76,6 +137,18 @@ Long historical studies are opt-in. Existing cached, year/location-matched
 inputs are required; the launcher has no input-download flag. All utility
 eligibility, coverage and authoritative bill/physical audits remain in the
 existing regional driver. No solver proof or OpenDSS check is relaxed.
+
+Historical matrices are selected according to the impact policy above. They do
+not require the full release tier for every utility addition: a focused utility
+selection can include `--regional` with prepared inputs, for example:
+
+```sh
+/usr/local/bin/python3 tools/validate.py --tier focused --test test/test_delmarva_md.py --test test/test_delmarva_integration.py --regional --utility delmarva_maryland --period custom --start-date 2026-05-01 --end-date 2026-09-30 --inputs .cache/delmarva_md/weather --output .cache/validation/delmarva-targeted
+```
+
+This example is targeted partial-year acceptance, not a full-release or annual
+claim. Choose dates, plans and prepared inputs appropriate to the task. Checks
+inside every selected case and the resume contract below remain unchanged.
 
 ```sh
 /usr/local/bin/python3 tools/validate.py --tier release --regional --utility dominion_energy_north_carolina --plan 1T --period monthly --inputs .cache/regional_historical_inputs/weather_20261015_final --output .cache/validation/release-candidate
@@ -125,9 +198,13 @@ direct driver also supports `--execute --resume --case-timeout ...`.
 
 ## Candidate acceptance
 
-Use focused checks while editing, workflow checks when wiring APIs/contracts,
-then freeze the source and run the required release/matrix checks. Perform
-one concise manual browser acceptance pass only when UI behavior changed.
+Select checks using the change-impact policy above. Use focused checks while
+editing and workflow checks for shared API/worker contract changes. Freeze the
+candidate before final targeted acceptance and its selected historical matrix;
+run the full release tier when a full-regression trigger applies, not automatically
+for every utility addition. Finish those checks before browser acceptance. Perform
+one concise manual browser acceptance pass only when UI behavior changed,
+including new provider/plan/account-field wiring.
 Record its actual engine/frontend identity separately. A CLI-only tooling
 change does not require launching the browser. Report any blocked UI action
 as unverified; API/ZIP checks cannot establish that a browser click succeeded.

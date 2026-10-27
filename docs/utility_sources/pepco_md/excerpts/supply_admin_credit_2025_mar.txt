@@ -1,0 +1,11 @@
+Source ID: supply_admin_credit_2025_mar
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blteda6ce8aea39a7c0/67c5e1da64440c13171e98ff/Pepco_MD_Admin_Credit_-_032025.pdf?branch=prod_alias
+Original SHA256: 64fc40a2e03cbf111b934b251c273c6576249bc0f9220edaf8fe533c5e0dee89
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+Visual transcription of physical PDF page 1. Maryland Administrative Credit, rates effective June 1, 2024; values in dollars/kWh. Table columns span June 2024–May 2025.
+Residential: June–September 2024 zero; October 2024–January 2025 .0016300; February/March 2025 .0010900.
+Type I: June 2024–March 2025 zero. April/May 2025 columns are blank.
+Residential applies to R, R-TM, R-TOU-P, PIV and R-PIV; Type I applies to GS, T, TN, EV, OL and SL. Values are credit magnitudes; apply a negative bill sign. Blank future columns are not rate evidence.

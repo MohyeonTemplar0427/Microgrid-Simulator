@@ -1,0 +1,22 @@
+Source ID: tax_comar_environmental_rounding
+Primary URL: https://regs.maryland.gov/us/md/exec/comar/20.50.01.04
+Original SHA256: 68653197e4cb30cffbc738b0b4cf947b1874fadf96014e6c330d931ef0e66093
+Original remains authoritative. Physical PDF pages are one-based.
+.04 Environmental Surcharge to be Billed and Remitted by Electric Companies. | Library of Maryland Regulations
+Toggle mobile menu
+Code of Maryland Regulations
+.04 Environmental Surcharge to be Billed and Remitted by Electric Companies.
+A.
+If an electric company itemizes the environmental surcharge on a customer's bill, the electric company shall bill the environmental surcharge to each customer as required by
+Public Utilities Article, §7-203, Annotated Code of Maryland
+.
+B.
+An electric company shall remit to the State Comptroller the amount equal to the environmental surcharge billed under
+§A of this regulation
+.
+C.
+When calculating the amount billed to a customer for the environmental surcharge in a billing period, an electric company shall follow the following rounding practices:
+(1)
+If the amount calculated using the environmental surcharge rate and total kilowatt hour usage for the billing period results in an amount ending in $0.005 or greater, the amount shall be rounded up to the next whole cent; and
+(2)
+If the amount calculated using the environmental surcharge rate and total kilowatt hour usage for the billing period results in an amount ending in less than $0.005, the amount shall be rounded down to the next whole cent.

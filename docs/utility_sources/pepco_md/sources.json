@@ -1,0 +1,936 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-26",
+  "base_head_at_pepco_research": "cc8977f",
+  "account_scope": {
+    "utility": "Potomac Electric Power Company (Pepco), Maryland",
+    "supplier": "Pepco Standard Offer Service",
+    "schedules": [
+      "R residential",
+      "GS low-voltage TypeI"
+    ],
+    "jurisdiction": "Explicitly confirmed unincorporated Montgomery County, Maryland",
+    "enabled_component_cycles": [
+      "2025-01",
+      "2025-02",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "cycle_limit": "Complete calendar billing/service cycles; no inferred utility billing-month/account mapping",
+    "export": "Unsupported",
+    "residential_cost_scope": "Verified recurring charges subtotal excluding unrecovered RRC and account-specific legislative refunds",
+    "GS_cost_scope": "Verified-charges subtotal excluding unresolved state sales-tax base/bracket calculation; not zero tax or exemption"
+  },
+  "records": [
+    {
+      "id": "supply_book_current",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blte8a580e4cc79e2c4/6abad89015d5b7d18eb100f3/9232_AND_9761_Pepco_MD_CURRENT_CLEAN_Admin_Ch_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_current.pdf",
+      "original_sha256": "48da9de9906dbadfb6c080ad7917e02f57ebf28ec219a57df76f4a87abca424a",
+      "original_bytes": 910051,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 167,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_current.txt",
+      "full_text_sha256": "774f17188858ab68160798ee51520b758aab96ca3153af4591f6c3b3db2b6992",
+      "selected_pdf_pages_1_based": [
+        8,
+        9,
+        12,
+        13,
+        84,
+        94,
+        95,
+        96,
+        101,
+        102,
+        103,
+        108,
+        109,
+        114,
+        115,
+        120,
+        128,
+        129,
+        132,
+        133,
+        145,
+        146,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_current-selected.txt",
+      "cache_selected_excerpt_sha256": "b4a278af4089e4ca0a284f01e0f641324648705d7b1807374952b378de6fc6d5",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_book_current.txt",
+      "checked_in_excerpt_sha256": "9a54c70c04990f418e84f6eea5f2a4a12563d9244324cc64325d0a3427985423",
+      "rendered_receipts": [
+        {
+          "path": ".cache/pepco_md/sources/consolidated/supply_book_current-page8.png",
+          "sha256": "5fb5423cc2b8bb4d5df5a295b0bee5c8e6d620b599c227b99e65a1640027cb87",
+          "physical_pdf_page_1_based": 8
+        },
+        {
+          "path": ".cache/pepco_md/sources/consolidated/supply_book_current-page12.png",
+          "sha256": "1f15c7716be448e383326114353eab80f8ea9395775b667e9d2fa515664a5b03",
+          "physical_pdf_page_1_based": 12
+        },
+        {
+          "path": ".cache/pepco_md/sources/consolidated/supply_book_current-page155.png",
+          "sha256": "395adf75022e48fb18475982358c0d4d75542e9c3d1c4778451305ef1c2a458e",
+          "physical_pdf_page_1_based": 155
+        }
+      ]
+    },
+    {
+      "id": "supply_pca_current",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt9e3743d1d4f743f9/6abd8ce1d4633692b4c108e9/Pepco_MD_PCA_-_102026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/pca_current.pdf",
+      "original_sha256": "07d646f03d1c9d1950dd3525ae137b4af8212ebce7c6a86abbb30ce86700b638",
+      "original_bytes": 42718,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/pepco_md/sources/supply/pca_current.txt",
+      "full_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/pca_current-selected.txt",
+      "cache_selected_excerpt_sha256": "19ec85e7f7cd46d3f88a801d49f3a456efce6349cf8d8d77daeed84bd9688f9d",
+      "visual_transcription_path": ".cache/pepco_md/sources/supply/pca_current-visual-transcription.txt",
+      "visual_transcription_sha256": "26545a24d0076eea7487dd751d4bdfb5cd06110e321363935562414ee3d979c5",
+      "render_path": ".cache/pepco_md/sources/supply/pca_current.png",
+      "render_sha256": "e8984984b0a75320cf09565dee7a04458907ec52d58e185eed88bbb1483ff5b3",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_pca_current.txt",
+      "checked_in_excerpt_sha256": "a6672c8dd7a7b747313aff4bb5c3e4d6caac06cb79b07723b0c5f19e63037d0b"
+    },
+    {
+      "id": "supply_admin_credit_current",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blteda6ce8aea39a7c0/6abd91df9c17130cafc66f32/Pepco_MD_Admin_Credit_-_102026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/admin_credit_current.pdf",
+      "original_sha256": "97d9af9f2275aa51ebfb4bbfcbf4cbc7c8960590ea63beca502d5937fc84207f",
+      "original_bytes": 42619,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/pepco_md/sources/supply/admin_credit_current.txt",
+      "full_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/admin_credit_current-selected.txt",
+      "cache_selected_excerpt_sha256": "b2f31a9cbb7cdd81df0a1ef2fb860a1be303b98a2f5449dd5196d25ef0647eb2",
+      "visual_transcription_path": ".cache/pepco_md/sources/supply/admin_credit_current-visual-transcription.txt",
+      "visual_transcription_sha256": "0a21708f18c059498dfae70599adb3611bf8f6b01f5bbf04eb41803abd9ab849",
+      "render_path": ".cache/pepco_md/sources/supply/admin_credit_current.png",
+      "render_sha256": "80dcb6eadfbb589ebcf9be13e41fcf8879b3f2962b77904558079cd2e6230734",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_admin_credit_current.txt",
+      "checked_in_excerpt_sha256": "56533d5cfdf0ee2965e9a72461689063961321e54ddef2febdc2a8b2d42d435d"
+    },
+    {
+      "id": "supply_sos_current",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt1228f1dfa3b1058b/6abd94131cd4a4b95641506e/Pepco.MD_SOS_Rates_Type_II_Approved_Rates_09._4.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/sos_current.pdf",
+      "original_sha256": "a37fbe1a18deed172673cb416895d947f80eb3c9cbb468a2c45ca443bba5a6f3",
+      "original_bytes": 60879,
+      "status": "excluded_type_ii_not_R_GS",
+      "owner_stream": "supply",
+      "pdf_page_count": 2,
+      "full_text_path": ".cache/pepco_md/sources/supply/sos_current.txt",
+      "full_text_sha256": "f2db3d7597ba0a68db6f9913648d8cdcc5ee407ddf90bb9cdff475130e65ddb7",
+      "selected_pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/sos_current-selected.txt",
+      "cache_selected_excerpt_sha256": "6105ea8aa17b74cd37e71811f03efbc72d1c42c2273b82f2e31d01804c6b5c2a",
+      "use": "excluded_reference"
+    },
+    {
+      "id": "supply_book_2024_dec",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt755a78723a5a305f/677311681931feb3f86c0d5d/2024-12-11_MASTER_MD_Pepco_Tariff_Book.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2024_dec.pdf",
+      "original_sha256": "366d8ebc0dcbb84048a261f43b28fdbb0ac37946d0e65b5b73d55e3a8526d21e",
+      "original_bytes": 883241,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 159,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2024_dec.txt",
+      "full_text_sha256": "562253859b27ff9a4cc4fe59d13e88fc11338b635573250d21ee7d77fb46d398",
+      "selected_pdf_pages_1_based": [
+        98,
+        99,
+        146,
+        148,
+        149
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2024_dec-selected.txt",
+      "cache_selected_excerpt_sha256": "e4a128a20aa77a2716201421578e8224c8db618cf1bcf449b8eea2ceffad4096",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_book_2024_dec.txt",
+      "checked_in_excerpt_sha256": "89acd71df38ac6ab62a2c9fd1481f176853191ded5beb31e694ca2e9897598bd"
+    },
+    {
+      "id": "supply_book_2025_feb",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt194fef58574d7d43/6836297cc286f0907ec6c6d0/2025-02-28_MASTER_MD_Pepco_Tariff_Book_1.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2025_feb.pdf",
+      "original_sha256": "d51c12b339765dfb3c12b7f7b17be6f63ffc68d9eebc9aa8e52c9d90196655eb",
+      "original_bytes": 881245,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 159,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2025_feb.txt",
+      "full_text_sha256": "bb06ab899637ed5609b1560e909e21706c542a13688709678891c973d759f5da",
+      "selected_pdf_pages_1_based": [
+        98,
+        99
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2025_feb-selected.txt",
+      "cache_selected_excerpt_sha256": "72796de6b7ac3e01a54ea88c174d27faaa2d26dd4786124f2e58a034f54b7a97",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_book_2025_feb.txt",
+      "checked_in_excerpt_sha256": "f3cf130ff43ae147fe6530b42e995ef7b317c68d655268fac460505565358bdc"
+    },
+    {
+      "id": "supply_book_2025_jul",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt524bceaba0d0f205/6883d65a92c95443b3eb59f9/Pepco_MD_Current_Tariff_7.11.2025_.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2025_jul.pdf",
+      "original_sha256": "cd0c8826e6af366ee72635725601ed344c2a23b1c0e6e110871bd6a245c70b84",
+      "original_bytes": 1058614,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 159,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2025_jul.txt",
+      "full_text_sha256": "4f8a3ed5b1e3e12b4470f495d38158cfd1167cd93911ebd1d2273ffcce90eb41",
+      "selected_pdf_pages_1_based": [
+        98,
+        99
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2025_jul-selected.txt",
+      "cache_selected_excerpt_sha256": "d49f1eec2d2ce6f41ebecd9262b8ed7b0b741db693d163ec573953240fd1e8d9",
+      "use": "historical_corroboration_not_extending_initial_scope"
+    },
+    {
+      "id": "supply_book_2025_sep",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt598d25d06beca65e/6984d230c4f5dcf21b846917/2025-09-17_MASTER_MD_Pepco_Tariff_Book_.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2025_sep.pdf",
+      "original_sha256": "a6debb3e9f946702d210650e54e4e9f72a46ccdfe12194fbe5b0a0c53e720951",
+      "original_bytes": 875909,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 158,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2025_sep.txt",
+      "full_text_sha256": "4bc4d39c945d6e62f79bd4014fabd226cd732ff63fed5028fcab0b401b85c5ce",
+      "selected_pdf_pages_1_based": [
+        97,
+        98
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2025_sep-selected.txt",
+      "cache_selected_excerpt_sha256": "5e60b26fd40172bdebe2e9c30259cb7338adb1a2f6dd63451fb1e7ca4ee16604",
+      "use": "historical_corroboration_not_extending_initial_scope"
+    },
+    {
+      "id": "supply_book_2025_dec",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/bltc311d360885f64f9/6984d3a7c529c64103cf0ec2/2025-12-31_MASTER_MD_Pepco_Tariff_Book_.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2025_dec.pdf",
+      "original_sha256": "758679a8d1a247b9523cf32afa1c7da1776091b73435ad0dd9ea5d2225ee4ab1",
+      "original_bytes": 877219,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 158,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2025_dec.txt",
+      "full_text_sha256": "38fe6221d7626b50f52a0941d09fb5167c742b5ab265cf15829206a47cc9e03b",
+      "selected_pdf_pages_1_based": [
+        97,
+        98
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2025_dec-selected.txt",
+      "cache_selected_excerpt_sha256": "ae528f41f3af7fb538b12f516ee1586f20e8f11bd8b74dd452c11da4814b3eaa",
+      "use": "historical_corroboration_not_extending_initial_scope"
+    },
+    {
+      "id": "supply_book_2026_jan",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt3f3a9af774448a72/6984d4fae82bf7d699eca0a4/2026-01-15_MASTER_MD_Pepco_Tariff_Book_1.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2026_jan.pdf",
+      "original_sha256": "cda83af8e721fc7a7e82062fc7eeab49ed20aaca3c28d875e763c7143aa85f59",
+      "original_bytes": 885212,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 159,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2026_jan.txt",
+      "full_text_sha256": "3d3d0822b648beaed4913f1736f6df781885b99b4e130b8d505fae0e7a0eb783",
+      "selected_pdf_pages_1_based": [
+        98,
+        99
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2026_jan-selected.txt",
+      "cache_selected_excerpt_sha256": "c676977aaf06ece06e9ac13cb2587a7e645b6d8f3e85ad631dd67ad57e7407dc",
+      "use": "historical_corroboration_not_extending_initial_scope"
+    },
+    {
+      "id": "supply_book_2026_jun",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt0f5bcbdddd461eef/6a6d09371189f91f28cc80c6/9232_Pepco_MD_CURRENT_CLEAN_SOS_Filing_eff_060126.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2026_jun.pdf",
+      "original_sha256": "0e0d7731da97d8001ab66dba977a2cde6888c769eebb786554bbb7ebf5b5e003",
+      "original_bytes": 896522,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 164,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2026_jun.txt",
+      "full_text_sha256": "db4048ee0ecca54aeef76985d234068b54f3d2793d56ba636eec731292ff82e0",
+      "selected_pdf_pages_1_based": [
+        98,
+        99
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2026_jun-selected.txt",
+      "cache_selected_excerpt_sha256": "f86bc659148d435d811ae25f995ec54b44d05da2060dfe8f96aeaa5819b3634e",
+      "use": "historical_corroboration_not_extending_initial_scope"
+    },
+    {
+      "id": "supply_book_2026_aug",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/bltd839da018e95c86c/6abad7751cd4a4dc6a413611/2026-08-20_MASTER_MD_PEPCO_Tariff_Book_1.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2026_aug.pdf",
+      "original_sha256": "15f2ee9b641ca6da025e322e8ac789e4cbe7cfe3e75908cd8fe33406ab8a4091",
+      "original_bytes": 908822,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 167,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2026_aug.txt",
+      "full_text_sha256": "614aa95a74a7717613dba2991ffe9afdac3e7c654be0a263dd127efe80939395",
+      "selected_pdf_pages_1_based": [
+        102,
+        103
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2026_aug-selected.txt",
+      "cache_selected_excerpt_sha256": "e79dd055465dc0691a42b586b68fc6b47821a2fa1f1a267944367a99c815cab8",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_book_2026_aug.txt",
+      "checked_in_excerpt_sha256": "c694a96cc1c87a154553518ed914a44fbfc75c3fa4242814aef268225e7105c5"
+    },
+    {
+      "id": "supply_book_2025_aug",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt345f23b0964be438/68ae66011030ec696bf54e9d/2025-08-15_MASTER_MD_Pepco_Tariff_Book_.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2025_aug.pdf",
+      "original_sha256": "55f5ed7351f676ec459a6f45d1777940ecd35b4888472589d330a96cc131f3d1",
+      "original_bytes": 874896,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 158,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2025_aug.txt",
+      "full_text_sha256": "8c79f6bb98d22f6df38f73826de1f5c017355fa5998620c9627a83f5869330de",
+      "selected_pdf_pages_1_based": [
+        97,
+        98
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2025_aug-selected.txt",
+      "cache_selected_excerpt_sha256": "2fd857180f7eb6e1dc553070e3f9112d08c59f71f43e6a2b9866ea192dabe2a2",
+      "use": "historical_corroboration_not_extending_initial_scope"
+    },
+    {
+      "id": "supply_book_2025_aug26",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt3933b07bcf0bbc31/68cc32852755d540bf48c859/2025-08-26_MASTER_MD_Pepco_Tariff_Book_(1).pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/book_2025_aug26.pdf",
+      "original_sha256": "5f82fc679a10ec69363c164f5c621d34b0829f223434152b336d077aca81d882",
+      "original_bytes": 875751,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 158,
+      "full_text_path": ".cache/pepco_md/sources/supply/book_2025_aug26.txt",
+      "full_text_sha256": "3e8ed778b18970a147a33ee2bfde4b6109f7fb0e465c9787729e7cf28247ebb1",
+      "selected_pdf_pages_1_based": [
+        97,
+        98
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/book_2025_aug26-selected.txt",
+      "cache_selected_excerpt_sha256": "37b065bbdd0fa8d2fdb0014c054a3133095a157c998667e150fc19a09e2acb1a",
+      "use": "historical_corroboration_not_extending_initial_scope"
+    },
+    {
+      "id": "supply_pca_2025_feb",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt9e3743d1d4f743f9/679d1303c9ecbb3763c0d104/Pepco_MD_SOS_-_PCA_022025.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/pca_2025_feb.pdf",
+      "original_sha256": "714d2000c0c44ea27757942d104f6180a7fad523248fa3e8410bc0b0d69d2099",
+      "original_bytes": 9846,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/pepco_md/sources/supply/pca_2025_feb.txt",
+      "full_text_sha256": "274e1836163e9da1f807b606648584e28da5115f7c6fbfa1b2584547d31d54e8",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/pca_2025_feb-selected.txt",
+      "cache_selected_excerpt_sha256": "6c29e8428cad0c3002a652fa148d4bfdb230960943af33afad4fa45eb6a21d3f",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_pca_2025_feb.txt",
+      "checked_in_excerpt_sha256": "24dacc8af4070612d3498232a24d68fadd28c8e2268487ad94904d03eb1a99fa"
+    },
+    {
+      "id": "supply_admin_credit_2025_mar",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blteda6ce8aea39a7c0/67c5e1da64440c13171e98ff/Pepco_MD_Admin_Credit_-_032025.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/admin_credit_2025_mar.pdf",
+      "original_sha256": "64fc40a2e03cbf111b934b251c273c6576249bc0f9220edaf8fe533c5e0dee89",
+      "original_bytes": 10131,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/pepco_md/sources/supply/admin_credit_2025_mar.txt",
+      "full_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/admin_credit_2025_mar-selected.txt",
+      "cache_selected_excerpt_sha256": "cf47acea558caf84529b881f49a0eba4f395486e2735a255ec8b2548f691412f",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_admin_credit_2025_mar.txt",
+      "checked_in_excerpt_sha256": "cf4e1a55fffd07bea1b4ceee88b251c24fc214f53d55e2c6b1f787041a54a1bd",
+      "extraction_limitations": "Default layout extractor dropped rotated page text. Visual rendering retained; excerpt uses labeled visual transcription or ordinary text-order extraction.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/pepco_md/sources/consolidated/supply_admin_credit_2025_mar-page1.png",
+          "sha256": "7fef231f2900b88b82b5dc906ed92245f07f0b0c4ce9028a2cfdefa87ec1acd8",
+          "physical_pdf_page_1_based": 1
+        }
+      ]
+    },
+    {
+      "id": "supply_bill_education_2025",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt25da1effbd15aac6/6814f48b4fad9846f3c40b76/Pepco-MD_Bill_Education_Fact_Sheet_ada.2.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/bill_education_2025.pdf",
+      "original_sha256": "145835664f82e46cb7d82b969a75a19830595c19f14639a2b002148c492302f4",
+      "original_bytes": 465969,
+      "status": "official_maryland_source",
+      "owner_stream": "supply",
+      "pdf_page_count": 4,
+      "full_text_path": ".cache/pepco_md/sources/supply/bill_education_2025.txt",
+      "full_text_sha256": "aece164893ebef99ac7f7583ab6797e535e4b1557340be9bdd44fceda41b4c3f",
+      "selected_pdf_pages_1_based": [
+        2,
+        3
+      ],
+      "cache_selected_excerpt_path": ".cache/pepco_md/sources/supply/bill_education_2025-selected.txt",
+      "cache_selected_excerpt_sha256": "10ebef0927f266ce3cf7cc79b97136d8e955314124544bfc95c83b1143afe197",
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/supply_bill_education_2025.txt",
+      "checked_in_excerpt_sha256": "d0b63f985ddeabf1d3ac1aa04cee1cc8c361055a73f1c842975b0465a2bdbbbe"
+    },
+    {
+      "id": "supply_pca_explainer_2025",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/bltd8a917ee08c25595/68dbfdb134aea3540e58c2df/Procurement_Cost_Adjustment_6.1.2025_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/supply/pca_explainer_2025.pdf",
+      "original_sha256": "3605eed2736e48bf02b212475db02344449d93a580d59ba7dc6c38f556d1fee8",
+      "original_bytes": 140041,
+      "status": "excluded_dc",
+      "owner_stream": "supply",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/pepco_md/sources/supply/pca_explainer_2025.txt",
+      "full_text_sha256": "d0b4bfc5c77c7067eaffdde7acc8a987d74bd9bd7536a31ae39e70835e24cded",
+      "selected_pdf_pages_1_based": [],
+      "cache_selected_excerpt_path": null,
+      "cache_selected_excerpt_sha256": null,
+      "use": "excluded_reference"
+    },
+    {
+      "id": "delivery_august2025_tariff",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blte8a580e4cc79e2c4/6883d6c9ef057227af7274a2/9478_Pepco_MD_Green_Rider_Update_Current_Clea_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/delivery/august2025_tariff.pdf",
+      "original_sha256": "0a894b875445810b98feb25e62b45508504a3103c5be36a08541b561e8e17036",
+      "original_bytes": 940873,
+      "status": "official_maryland_source",
+      "owner_stream": "delivery",
+      "pdf_page_count": 159,
+      "full_text_path": ".cache/pepco_md/sources/delivery/august2025_tariff.txt",
+      "full_text_sha256": "9ea598988b42e9f1ce20174575e996b5f328311edd03aea3e7f3ba8f2e736219",
+      "selected_pdf_pages_1_based": [
+        8,
+        9,
+        12,
+        13
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/delivery_august2025_tariff.txt",
+      "checked_in_excerpt_sha256": "d59a704f51c5ebbbadc2956e16695dbea7129b5bc6232aab98060a0e2a3c59f6"
+    },
+    {
+      "id": "delivery_bsa_2026",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt048e03b25e5de0cf/6abfc95f15d5b747d1b1848e/Pepco_MD_BSA_-_102026.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/delivery/bsa_2026.pdf",
+      "original_sha256": "4d4d312c0f92638c61884b7e45045c1fcd1bc9edc759878d9fc530b6661a9558",
+      "original_bytes": 26734,
+      "status": "official_maryland_source",
+      "owner_stream": "delivery",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/pepco_md/sources/delivery/bsa_2026.txt",
+      "full_text_sha256": "ff1676733284b263fc83424d2d8ac679a49dcdfd862e2902265d9c39acca266d",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/delivery_bsa_2026.txt",
+      "checked_in_excerpt_sha256": "d540ab2722f190364b93db0537f0758d5aaaa32278e0f387562d35d1ec0a298a",
+      "extraction_limitations": "Default layout extractor dropped rotated page text. Visual rendering retained; excerpt uses labeled visual transcription or ordinary text-order extraction.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/pepco_md/sources/consolidated/delivery_bsa_2026-page1.png",
+          "sha256": "e0ba8dcc97737b4ebf276c9c5eb46364163c6c5e42733b7559aa483446bffea6",
+          "physical_pdf_page_1_based": 1
+        }
+      ]
+    },
+    {
+      "id": "delivery_bsa_april2025",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt048e03b25e5de0cf/67ec27843c6595589ce5236f/Pepco_MD_BSA_-_042025.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/delivery/bsa_april2025.pdf",
+      "original_sha256": "3a31091439a42c9f0459c2e99ec98f074d0424c4392b800077c1de24382721ba",
+      "original_bytes": 54206,
+      "status": "official_maryland_source",
+      "owner_stream": "delivery",
+      "pdf_page_count": 1,
+      "full_text_path": ".cache/pepco_md/sources/delivery/bsa_april2025.txt",
+      "full_text_sha256": "357643a42f9cc9f8198a3966e27374bb5120d88893dfe26f9237f23e075eb7b7",
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/delivery_bsa_april2025.txt",
+      "checked_in_excerpt_sha256": "044d21dcf2cfa670e713fffbbc26fa47e551f8acfc8c22a5d7c34b5124e803e2"
+    },
+    {
+      "id": "delivery_cseg_oct2026",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt184aa0644dce17a4/6abebe49c7c45d25867c0a5a/CSEG_MD_Pepco_-_10_2026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/delivery/cseg_oct2026.pdf",
+      "original_sha256": "9dc4f996d1a1c596dfc9409abbdff50f44bc65db9460f2e502e0de98d5b1931a",
+      "original_bytes": 167594,
+      "status": "official_maryland_source",
+      "owner_stream": "delivery",
+      "pdf_page_count": 6,
+      "full_text_path": ".cache/pepco_md/sources/delivery/cseg_oct2026.txt",
+      "full_text_sha256": "0c3727c1eff742c7e059c9c7fdcce1b7dd08843a6b5f229e8eb5dee2af19d661",
+      "selected_pdf_pages_1_based": [
+        1,
+        4
+      ],
+      "also_referenced_by_tax_stream": true,
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/delivery_cseg_oct2026.txt",
+      "checked_in_excerpt_sha256": "c8ab37193eacbd262b8a35ca03dff9b44ebcb05a49217aba5a320d408ef645e6",
+      "rendered_receipts": [
+        {
+          "path": ".cache/pepco_md/sources/consolidated/delivery_cseg_oct2026-page1.png",
+          "sha256": "ed49d847c95f1ae27caa5f2a21746e537553d4208fa642dc53f32be7a75dc9c3",
+          "physical_pdf_page_1_based": 1
+        },
+        {
+          "path": ".cache/pepco_md/sources/consolidated/delivery_cseg_oct2026-page4.png",
+          "sha256": "e7c6fd4691a965a970b8d514b12c3f6f433f30290f6d13369771f1e2a4d33bc8",
+          "physical_pdf_page_1_based": 4
+        }
+      ]
+    },
+    {
+      "id": "delivery_gtc_current",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/bltb770f5b6804c804c/6939d02c4b4e4a1bd61743cd/MD_Terms_and_Conditions_-_master_file.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/delivery/gtc_current.pdf",
+      "original_sha256": "bcb76372dbe3d2780b014568611399f13335e6936212556e46d92479a62f570d",
+      "original_bytes": 427396,
+      "status": "official_maryland_source",
+      "owner_stream": "delivery",
+      "pdf_page_count": 60,
+      "full_text_path": ".cache/pepco_md/sources/delivery/gtc_current.txt",
+      "full_text_sha256": "e9f414a51f34486fd0c9d8b5b57715e76f9af01a7d620fea3494ac7f075e6a15",
+      "selected_pdf_pages_1_based": [
+        22,
+        24
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/delivery_gtc_current.txt",
+      "checked_in_excerpt_sha256": "4a9c8b026f9beeeb0bcc16fb8fcd423bf61f1067eea320bda58f0b1a129bff5f"
+    },
+    {
+      "id": "tax_pepco_book_2026feb",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blte8a580e4cc79e2c4/6984d9aaa88c126a53f51a93/2026-02-04_MASTER_MD_Pepco_Tariff_Book_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/pepco_book_2026feb.pdf",
+      "original_sha256": "3e7ba9630ac2549ead25ec068f865906bc498b3731252665db67e3e3fdc1314d",
+      "original_bytes": 896801,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/pepco_book_2026feb.txt",
+      "full_text_sha256": "ca9fa0e62baccb4671a2b9ba1a0d5ed0b623238c67d2cc8782e280cbbf8d89d0",
+      "pdf_page_count": 160,
+      "selected_pdf_pages_1_based": [
+        80,
+        90,
+        91,
+        92,
+        116
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_pepco_book_2026feb.txt",
+      "checked_in_excerpt_sha256": "298944f326ef06c6e2210fde5338d16b1fedd6fc09338dcec23856dead0e72d3"
+    },
+    {
+      "id": "tax_cseg_2025feb",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt184aa0644dce17a4/67a0f1215b6934124e523dd3/Pepco_MD_CSEG_-_02012025.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/cseg_2025feb.pdf",
+      "original_sha256": "cda9b73a6e46de51c7a1640292d74e07b4a85020dbddfce2a11669defed06203",
+      "original_bytes": 1349144,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/cseg_2025feb.txt",
+      "full_text_sha256": "724a57a0c94ddd343647d622667717b4ac5720295746038e0c1c23f4abe53338",
+      "pdf_page_count": 6,
+      "selected_pdf_pages_1_based": [
+        1,
+        5
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_cseg_2025feb.txt",
+      "checked_in_excerpt_sha256": "145e730ff84604d1bdbd565f6473ff241a54fd6e188f5d7b172a05b3cf5090c8",
+      "rendered_receipts": [
+        {
+          "path": ".cache/pepco_md/sources/consolidated/tax_cseg_2025feb-page1.png",
+          "sha256": "29a61a9b48443b68ec913bed5313d8034b1421ed967bc3c9169e9f3663920d6a",
+          "physical_pdf_page_1_based": 1
+        },
+        {
+          "path": ".cache/pepco_md/sources/consolidated/tax_cseg_2025feb-page5.png",
+          "sha256": "3ae5036a7ebe313479622dc6b90e12ab212efb623068310390e00e163f764ceb",
+          "physical_pdf_page_1_based": 5
+        }
+      ]
+    },
+    {
+      "id": "tax_surcharges_2024dec",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt6afbc02ddcc5eacf/674dbba2c60dc40bdfec926a/Pepco_MD_Other_Surcharges_-_122024.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/surcharges_2024dec.pdf",
+      "original_sha256": "66d10b000d4b078f19e51e14cc66e98d1f64f1ee9af55f3edf828c19ceda1780",
+      "original_bytes": 9771,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/surcharges_2024dec.txt",
+      "full_text_sha256": "88400a813c22b0a75ac3baab00804750fae8442e0ff09fa0e2065e0754d08837",
+      "pdf_page_count": 1,
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_surcharges_2024dec.txt",
+      "checked_in_excerpt_sha256": "82feb87791fe1cac424f36254f3649d384c3c86f4d88e3c14781c0d2bafa45a1",
+      "extraction_limitations": "Default layout extractor dropped rotated page text. Visual rendering retained; excerpt uses labeled visual transcription or ordinary text-order extraction.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/pepco_md/sources/consolidated/tax_surcharges_2024dec-page1.png",
+          "sha256": "0d07387843b1e302392cef36b1f820581eefbb10766079301a5b11f001ad2af2",
+          "physical_pdf_page_1_based": 1
+        }
+      ]
+    },
+    {
+      "id": "tax_surcharges_2026jul",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt6afbc02ddcc5eacf/6a45513583e4e82736c79df7/Pepco_MD_Other_Surcharges_-_072026_.pdf?branch=prod_alias",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/surcharges_2026jul.pdf",
+      "original_sha256": "e651a1748aee49dd9f6e37599eec07e25dd435cd4ce21ff0ce677e83a899aaf9",
+      "original_bytes": 99271,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/surcharges_2026jul.txt",
+      "full_text_sha256": "49e96f956c5ac1be0fcd9a9837ca669733f6dd31a99a86ad45c342e8fa1f9702",
+      "pdf_page_count": 1,
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_surcharges_2026jul.txt",
+      "checked_in_excerpt_sha256": "86b8eca544a34b068991ba2d6d3c5993d5c8e7f1e5b3edeafbe34d114392d510"
+    },
+    {
+      "id": "tax_handbook_2024dec",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/bltb614da37169223d7/676420cc48ed59e05a475e13/AYS_Pepco-MD_Customer_Handbook_12.24_ada.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/handbook_2024dec.pdf",
+      "original_sha256": "15318f22ffe77f67b863a03a8e1ecf7327f9bf1c627e2af79a6aa1d3f57258bd",
+      "original_bytes": 1772351,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/handbook_2024dec.txt",
+      "full_text_sha256": "c708fad2c353b91707219878270aa9965b15f0353d8b288388e7bf1427e18a8c",
+      "pdf_page_count": 13,
+      "selected_pdf_pages_1_based": [
+        7
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_handbook_2024dec.txt",
+      "checked_in_excerpt_sha256": "f6cd48061e9b0daaae7756b6f0a687b1e52b240a1fe8c05f22f002aefc116931"
+    },
+    {
+      "id": "tax_comar_sales_utilities",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.10",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/comar_sales_utilities.html",
+      "original_sha256": "288889df2e37332514953d9869d6453e5239d0e957651c4264c627864150658c",
+      "original_bytes": 18384,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Reused Maryland statewide original from BGE source cache; applicability separately checked for Pepco",
+      "full_text_path": ".cache/pepco_md/sources/tax/comar_sales_utilities.txt",
+      "full_text_sha256": "2277167d45b9e98a93210afe5718390c424f63877f0e0eb01fdde5d81a08b67d",
+      "use": "initial_scope_evidence",
+      "selected_pdf_pages_1_based": [],
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_comar_sales_utilities.txt",
+      "checked_in_excerpt_sha256": "fe92b9bf37450477da73508eb181086969f72713966a61b74c8987f31b060265"
+    },
+    {
+      "id": "tax_comar_sales_price",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/comar_sales_price.html",
+      "original_sha256": "ca3c47026719174e973ceb7af549a6a34dddbcc9c4d13b02b27520072c3f9343",
+      "original_bytes": 22799,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Reused Maryland statewide original from BGE source cache; applicability separately checked for Pepco",
+      "full_text_path": ".cache/pepco_md/sources/tax/comar_sales_price.txt",
+      "full_text_sha256": "abde6516df2c5f378d090ebfdc8139ce9d8f081e0a529f5d9fa3f8e52a9cf1ab",
+      "use": "initial_scope_evidence",
+      "selected_pdf_pages_1_based": [],
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_comar_sales_price.txt",
+      "checked_in_excerpt_sha256": "a5d85ea3c227cf1f6e60d7038de2d8785d0026ddbd0b03b7aee4388e6d14428d"
+    },
+    {
+      "id": "tax_comar_environmental_rounding",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/20.50.01.04",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/comar_environmental_rounding.html",
+      "original_sha256": "68653197e4cb30cffbc738b0b4cf947b1874fadf96014e6c330d931ef0e66093",
+      "original_bytes": 12375,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Reused Maryland statewide original from BGE source cache; applicability separately checked for Pepco",
+      "full_text_path": ".cache/pepco_md/sources/tax/comar_environmental_rounding.txt",
+      "full_text_sha256": "487b85e3e858450600612fa617fc3bd25ed8a1ea7b2d0f8eb312df7c1ceb7306",
+      "use": "initial_scope_evidence",
+      "selected_pdf_pages_1_based": [],
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_comar_environmental_rounding.txt",
+      "checked_in_excerpt_sha256": "fb84cb60ef0135055129945eb96fab0aea0188e306634905d576896dab634a79"
+    },
+    {
+      "id": "tax_environmental_surcharge_statute",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gpu&section=7-203",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/environmental_surcharge_statute.html",
+      "original_sha256": "61f8f3e87ff4bea670cd399e21fa69aba62eb904507fea38063c43116f35f351",
+      "original_bytes": 64681,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Reused Maryland statewide original from BGE source cache; applicability separately checked for Pepco",
+      "full_text_path": ".cache/pepco_md/sources/tax/environmental_surcharge_statute.txt",
+      "full_text_sha256": "e46f8436f2fea8a07a52c355e22065c65e7de3024c42c9216e36195f6a11b3da",
+      "use": "initial_scope_evidence",
+      "selected_pdf_pages_1_based": [],
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_environmental_surcharge_statute.txt",
+      "checked_in_excerpt_sha256": "275114aa3f1cca29c3a93c294d01211a1878a746111bb0176b8fcc7cdbd6e767"
+    },
+    {
+      "id": "tax_sales_tax_price_statute",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-101",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/sales_tax_price_statute.html",
+      "original_sha256": "8267913109c1d8c1cc78276ab0e84ebca847d4c5caaca5b9e95708c1014fb30c",
+      "original_bytes": 161862,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Reused Maryland statewide original from BGE source cache; applicability separately checked for Pepco",
+      "full_text_path": ".cache/pepco_md/sources/tax/sales_tax_price_statute.txt",
+      "full_text_sha256": "0df50b814d205d98d383b345062ffcf51d1b3ec98f5632831cde0ecc8ef9b1bd",
+      "use": "initial_scope_evidence",
+      "selected_pdf_pages_1_based": [],
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_sales_tax_price_statute.txt",
+      "checked_in_excerpt_sha256": "47814cf785850a759da9009164547109ab5e4e3041875f2693b26f0750ee277a"
+    },
+    {
+      "id": "tax_montgomery_fy2025_return",
+      "url": "https://www.montgomerycountymd.gov/Finance/Resources/Files/FY2025PublicUtilityReturnFillable.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/montgomery_fy2025_return.pdf",
+      "original_sha256": "2f0b0c2538a930bd649f0a248930b6776d8819a6d19d7390d0a09aa2c7c9a2b5",
+      "original_bytes": 319370,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/montgomery_fy2025_return.txt",
+      "full_text_sha256": "e99bde2f32999fd9739e3bb243af0c7af09d0a2bcf600477b9900595126954ef",
+      "pdf_page_count": 1,
+      "selected_pdf_pages_1_based": [
+        1
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_montgomery_fy2025_return.txt",
+      "checked_in_excerpt_sha256": "21370b5ac20f96cce6179e2ad24e8fc4c6c5521b3924d36928d496def73ccf26"
+    },
+    {
+      "id": "tax_psc_relief_2025jun27",
+      "url": "https://www.psc.state.md.us/wp-content/uploads/MD-PSC-Sets-Plan-to-Distribute-Legislative-Refund-Act-Money_06272025.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/psc_relief_2025jun27.pdf",
+      "original_sha256": "9e49bdef32bf7da1300be1a46ad64c9c51def23f430a05a3661dde70a1f0d21a",
+      "original_bytes": 512841,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/psc_relief_2025jun27.txt",
+      "full_text_sha256": "47336a4638bd0be7659e2ca94245c4e254cde3c2ddac613b268661e617c3e83f",
+      "pdf_page_count": 2,
+      "selected_pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_psc_relief_2025jun27.txt",
+      "checked_in_excerpt_sha256": "a74d050a9ae8d1aa75dc79234ab65f50092c8464ccfb23f60a6e53e2ff22aa3f"
+    },
+    {
+      "id": "tax_md_sales_tax_tip8",
+      "url": "https://www.marylandtaxes.gov/forms/Business_Tax_Tips/bustip8.pdf",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/md_sales_tax_tip8.pdf",
+      "original_sha256": "f6b7398890f28fbb2712405c73891a16aee1210f7d60a9bc68e05bab2b1c3d74",
+      "original_bytes": 122318,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/tax/md_sales_tax_tip8.txt",
+      "full_text_sha256": "ffafc8246f4f674f70787ddb9f3673b44034cd6617259286e4ea897d885083ac",
+      "pdf_page_count": 6,
+      "selected_pdf_pages_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "use": "initial_scope_evidence",
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_md_sales_tax_tip8.txt",
+      "checked_in_excerpt_sha256": "4a4a4be256688fe0cc27dc09ad063bde58ae276d9cae7cd6cf2af0263643bbdb"
+    },
+    {
+      "id": "tax_md_tax_general_11_104",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104",
+      "retrieved_date": "2026-10-26",
+      "original_path": ".cache/pepco_md/sources/tax/md_tax_general_11_104.html",
+      "original_sha256": "b38e0b50b4e524931148d52dfc565afc66bba2f206dfb04222ec2732ca36a97b",
+      "original_bytes": 80527,
+      "status": "official_maryland_source",
+      "owner_stream": "tax",
+      "provenance": "Downloaded official original during Pepco research",
+      "full_text_path": ".cache/pepco_md/sources/consolidated/md_tax_general_11_104-full.txt",
+      "full_text_sha256": "36c245062b314096db969abdf6da44f896ec9e417d34a4f2969e92400e0c8b23",
+      "use": "initial_scope_evidence",
+      "selected_pdf_pages_1_based": [],
+      "checked_in_excerpt_path": "docs/utility_sources/pepco_md/excerpts/tax_md_tax_general_11_104.txt",
+      "checked_in_excerpt_sha256": "a47f8a611f17a195aa1a4b65b9d7800336cec529d5fbad00dfaeacf2d1f83d3f"
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "dc",
+      "status": "excluded",
+      "detail": "supply_pca_explainer_2025 is explicitly DC and is never Maryland rate authority"
+    },
+    {
+      "id": "type_ii",
+      "status": "excluded",
+      "detail": "supply_sos_current covers TypeII; not authority for initial R/GS rates"
+    },
+    {
+      "id": "proposed_or_future",
+      "status": "excluded",
+      "detail": "No proposed tariffs used. Future November2026 revisions, RDM TBD columns and unknown future PCA remain unsupported."
+    },
+    {
+      "id": "mes_may_june2026",
+      "status": "rejected_conflicting_scope",
+      "detail": "Original CSEG physicalR1/GS4 prints MES.000151; simple statutorycap is.000150. Unresolved recovery/gross-up or source error retained verbatim. May/June2026 cycles rejected, no substitution."
+    },
+    {
+      "id": "missing_history",
+      "status": "unverified",
+      "detail": "Monthly PCA March2025\u2013April2026 and BSA/counterpart histories not recovered. Full2025/2026 billing coverage is not established."
+    },
+    {
+      "id": "RRC",
+      "status": "unverified_recurring_credit",
+      "detail": "R-only fixed RRC monthly credit with quarterly updates unrecovered; exclusion does not mean zero or account-specific assistance."
+    },
+    {
+      "id": "GS_state_sales_tax",
+      "status": "unverified",
+      "detail": "Tax base compound detail and statutory6%brackets require calibration/explicitcomputation; subtotal only."
+    },
+    {
+      "id": "legislative_refunds",
+      "status": "account_specific_unverified",
+      "detail": "Eligibility/award/posting cannot be inferred from simulated imports."
+    }
+  ],
+  "blocked_or_exhausted_routes": [
+    {
+      "status": "not_retried_known_blocked",
+      "detail": "Prior BGE PSC environmental-notice document downloads Cloudflare-blocked; no new numerical notice proof asserted."
+    },
+    {
+      "status": "failed_discovery_not_source",
+      "detail": "Delivery guessed legacy community-solar routes returned404 and were stopped; actual linked current path recovered."
+    },
+    {
+      "status": "source_history_not_exposed",
+      "detail": "Current PepcoBSA/CSEG pages expose currentdocuments only; final two targeted searchbatches recovered no new neededhistory. Not proofnohistoricalfileexists."
+    }
+  ],
+  "search_receipt": {
+    "path": ".cache/pepco_md/sources/supply/history_search_receipt.json",
+    "sha256": "16d5322bbf7caeb268beff785a2829e800fde055522324b9d8de3f017c2a3572"
+  },
+  "source_fingerprint_limits": "Source receipts establish source identities and interpretations only, not engine/frontend validation, solver proof or successful browser assertions."
+}

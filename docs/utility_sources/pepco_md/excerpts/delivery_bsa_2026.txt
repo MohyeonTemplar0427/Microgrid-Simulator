@@ -1,0 +1,12 @@
+Source ID: delivery_bsa_2026
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt048e03b25e5de0cf/6abfc95f15d5b747d1b1848e/Pepco_MD_BSA_-_102026.pdf?branch=prod_alias
+Original SHA256: 4d4d312c0f92638c61884b7e45045c1fcd1bc9edc759878d9fc530b6661a9558
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+Visual transcription of physical PDF page 1. Bill Stabilization Adjustment, applicable to distribution customers. Rates effective 2026–2027; values in dollars/kWh.
+Columns: Jun-26 Jul-26 Aug-26 Sep-26 Oct-26
+R*: .002223 -.000852 .002386 -.007579 .004347
+GS: .010035 .009858 .009855 .009906 .009998
+* R includes R, PIV, R-PIV and R-TOU-P. Per Order 92607 in Case 9820, R and R-TM are consolidated into R for the October 2026 billing month onward. November 2026–May 2027 columns are blank; no future coverage is inferred. Parentheses in the original represent credits.

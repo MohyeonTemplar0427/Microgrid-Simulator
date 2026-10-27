@@ -1,0 +1,53 @@
+Source ID: tax_comar_sales_utilities
+Primary URL: https://regs.maryland.gov/us/md/exec/comar/03.06.01.10
+Original SHA256: 288889df2e37332514953d9869d6453e5239d0e957651c4264c627864150658c
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+.10 Natural and Artificial Gas, Electricity, Steam, Oil, and Coal. | Library of Maryland Regulations
+Toggle mobile menu
+Code of Maryland Regulations
+.10 Natural and Artificial Gas, Electricity, Steam, Oil, and Coal.
+A.
+Consumption in Production Activities or to Produce Snow for Commercial Services.
+(1)
+The sale of gas, electricity, steam, oil, or coal, consumed directly and predominantly in a production activity or used to operate machinery and equipment used to produce snow for commercial purposes or for use in residential condominiums is not subject to the tax. Production activities do not include processing food or a beverage by a retail food vendor or operating administrative or commercial facilities, such as offices, sales and display rooms, retail outlets and storage facilities, including refrigerated storage facilities.
+(2)
+If electricity, gas, or steam is sold through a single meter for both exempt and taxable uses, the purpose which consumes the majority of the electricity, gas, or steam is the basis for determining the taxability of the sale. The buyer shall determine the majority usage, considering the relative connected load for each purpose and the relative time of operation of each over a period of 1 year, unless the circumstances of a particular case require a different period. Similarly, the taxability of purchases of oil or coal is determined by the majority use where it is impracticable to measure separately the amount purchased for each purpose.
+(3)
+If the sale of electricity or natural gas is exempt from tax, the sale of the transmission, distribution, or delivery of that electricity or natural gas is also exempt from tax.
+(4)
+In order to obtain this exclusion, the buyer of gas, electricity, steam, oil, or coal shall present to the vendor of the commodity and the vendor of the transmission, distribution, or delivery service a certification, upon a form available from the Comptroller, setting forth the basis for the claimed exemption. Upon presentation of the completed and signed form, the vendor may not collect the tax until notified by the Comptroller to resume collection or until the certification is revoked by the buyer. The buyer shall revoke the certification when no longer entitled to an exclusion under the terms of this regulation.
+B.
+Exempt Buyers.
+(1)
+A person operating a nonprofit religious, charitable, or educational organization possessing an exemption certificate issued by the Comptroller under
+Regulation .22 of this chapter
+, and other persons possessing an exemption certificate issued by the Comptroller, may claim exemption for the tax on gas, electricity, steam, oil, coal, or the transmission, distribution, or delivery of electricity or natural gas by providing a photocopy of this certificate to the vendor.
+(2)
+A member of a foreign diplomatic corps may purchase gas, electricity, steam, oil, coal, or the transmission, distribution, or delivery of electricity or natural gas free of tax by presenting to the vendor the evidence of exemption issued by the United States Department of State.
+C.
+Tax Basis.
+(1)
+The tax on sales of gas, electricity, steam, oil, coal, or on charges for the transmission, distribution, or delivery of electricity or natural gas does not apply to late payment penalties imposed as a gross charge or in any other form.
+(2)
+The taxable price on sales of gas, electricity, steam, oil, coal, or on charges for the transmission, distribution, or delivery of electricity or natural gas does not include the amount of a tax imposed by a county with respect to these sales.
+(3)
+The taxable price on sales of electricity or on charges for the transmission, distribution, or delivery of electricity does not include the environmental surcharge which may be added to the customers' bills pursuant to
+Natural Resources Article, §3-302(a), Annotated Code of Maryland
+.
+D.
+Residential Sales.
+(1)
+A sale of electricity, steam, or artificial or natural gas that is delivered under a residential or domestic rate schedule on file with the Public Service Commission is not subject to the tax.
+(2)
+A sale of coal, firewood, heating oil, or propane gas, or any similar liquefied petroleum gas for use in residential property that contains not more than four units, cooperative housing, condominiums, and other similar residential living arrangements is not subject to the tax. The following apply:
+(a)
+If it is impracticable to measure separately the amount of coal, firewood, heating oil, or propane gas or any similar liquefied petroleum gas purchased for both residential and nonresidential purposes, the exemption will apply only if the majority of the usage is for residential purposes.
+(b)
+If a vendor is unable to determine that the majority usage test has been met, the tax shall be charged unless the buyer provides a statement to the effect that a majority of the coal, firewood, heating oil, or propane gas, or any similar liquefied petroleum gas will be used for residential purposes. If the coal, firewood, heating oil, or propane gas, or any similar liquefied petroleum gas is used solely for heating purposes, the buyer shall determine majority usage on the basis of the relative space devoted to residential and nonresidential purposes.
+(3)
+All sales of propane gas in containers less than 60 pounds are presumed to be for recreational, rather than residential, use and are therefore subject to the tax. Sales of propane gas in containers of any size that are not for residential use, or if the majority of the usage is not for residential purposes as set forth in
+§D(2) of this regulation
+, are subject to the tax.
+E.
+Wood and Wood Products. A sale of wood, wood bark or residue, or refuse-derived fuel is not subject to the tax when used for heating purposes.

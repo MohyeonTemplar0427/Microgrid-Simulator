@@ -1,0 +1,104 @@
+Source ID: supply_book_2025_sep4
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/blt47b6e332b18fb457/blt5cef29ea6692979d/68cc2f0c2755d52c3548c849/2025-09-04_MASTER_MD_DPL_Tariff_Book.pdf
+Original SHA256: ef1f1d5144609796c1384d1849bc8c45e6197e25a38ed327ccbc6e35ef4c51ee
+Original remains authoritative. Physical PDF pages are one-based.
+
+=== Physical PDF page 48; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company One-Hundred-Eighth Revised Leaf No. 45
+MONTHLY CHARGES AND RATES
+SERVICE CLASSIFICATION
+RESIDENTIAL “R”
+Delivery Services Charges
+Distribution Service Charge Rate Year 1 Rate Year 2 Rate Year 3
+Effective Effective Effective
+January 1, 2023 – January 1, 2024 – January 1, 2025
+December 31, 2023 December 31, 2024
+Customer Charge $8.96/Month $9.19/Month $9.43/Month
+Kilowatt Hour Charge (Summer) $0.069739/kWh $0.070656/kWh $0.071482/kWh
+Kilowatt Hour Charge (Winter) $0.067279/kWh $0.069395/kWh $0.071482/kWh
+All Billing Months
+January through December
+Opt-Out Fee*
+One-time, Up-front Fee $ 75.00 (payable in three monthly
+Monthly Fee installments)
+$ 17.00 per month
+Administrative Credit Refer to the “AC” Rider
+Universal Service Program Rate Refer to the “USP” Rider
+Franchise Tax $0.000620/kWh
+Environmental Surcharge $0.000151/kWh
+Bill Stabilization Adjustment Refer to the “BSA” Rider
+Empower Md. Charge Refer to the “E-MD” Rider
+RGGI Rate Credit Rider Refer to the “RRC” Rider
+Demand Resource Surcharge Refer to the “DRS” Rider
+Grid Resiliency Charge Refer to the “GRC” Rider
+Multi-Year Plan Adjustment Rider Refer to the “MYP Adjustment” Rider
+Standard Offer Service Phase In Credit / Refer to Rider SOS PIC/DCA
+Deferred Cost Adjustment
+Supply Service Charges with Transmission and Ancillary Services:
+Transmission Rate $0.020699/kWh
+Standard Offer Service for WINTER WINTER SUMMER
+Residential Customers: 10/01/24 – 01/31/25 02/01/2025 – 05/31/25 06/01/25 – 09/30/25
+SOS kilowatt Hour Charge $0.095756/kWh $0.095756/kWh $0.094490/kWh
+Administrative Charge $0.003852/kWh $0.004813/kWh $0.004834/kWh
+Total SOS kilowatt Hour Charge $0.099608/kWh $0.100569/kWh $0.099324/kWh
+Procurement Cost Adjustment Refer to the “SOS” Rider Refer to the “SOS” Rider Refer to the “SOS” Rider
+*The Administrative Charge rates typically change every February, June and October.
+Total Supply Service price is the sum of Standard Offer Service, Transmission, Ancillary and the Procurement Cost Adjustment.
+Note: The above Delivery Service charges apply to those Customers who have an Electricity Supplier, other than the Company,
+as their energy provider. The above Delivery and Standard Offer Service with Transmission and Ancillary Service charges
+apply to those Customers who have the Company as their energy provider.
+In addition, to the charges and rates stated above, Maryland Sa les Tax shall apply to all applicable services, rendered hereunder,
+unless the Customer is exempt from such tax. For applicability of the SOS Phase-In Credit / Deferred Cost Adjustment, refer
+to the Rider SOS PIC/DCA.
+Filed August 1, 2025 Effective Usage on and after August 27, 2025
+Filed in Compliance with the Letter Order issued by the MDPSC on August 27, 2025
+
+=== Physical PDF page 55; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company One-Hundred Thirty-Sixth Revised Leaf No. 47
+MONTHLY CHARGES AND RATES
+SERVICE CLASSIFICATION
+SMALL GENERAL SERVICE – SECONDARY SERVICE “SGS-S”
+Delivery Service Charges
+Distribution Service Charge Rate Year 1 Rate Year 2 Rate Year 3
+Effective Effective Effective
+January 1, 2023 – January 1, 2024 – January 1, 2025
+December 31, 2023 December 31, 2024
+Customer Charge $25.10/Month $25.55/Month $26.00/Month
+Kilowatt Hour Charge (Summer) $0.038748/kWh $0.040138/kWh $0.041549/kWh
+Kilowatt Hour Charge (Winter) $0.038748/kWh $0.040138/kWh $0.041549/kWh
+Demand Charge (Summer) $4.013595/kW $4.157572/kW $4.303679/kW
+Demand Charge (Winter) $4.013595/kW $4.157572/kW $4.303679/kW
+All Billing Months
+January through December
+Administrative Credit for Type I or Type II Refer to the “AC” Rider
+Opt-Out Fee* $75.00 (Payable in three
+One-time, Up-front Fee monthly installments)
+Monthly Fee $17.00 per month
+Universal Service Program Rate Refer to the “USP” Rider
+Franchise Tax $0.000620/kWh
+Environmental Surcharge $0.000151/kWh
+Bill Stabilization Adjustment Refer to the “BSA” Rider
+Empower Md. Charge Refer to the “E-MD” Rider
+Demand Resource Surcharge Refer to the “DRS” Rider
+Grid Resiliency Charge Refer to the “GRC” Rider
+Multi-Year Plan Adjustment Rider Refer to the “MYP Adjustment” Rider
+Supply Service Charges with Transmission and Ancillary Services:
+Transmission Service Rates:
+Demand Rate First 20 kW No Charge
+Demand Rate Greater Than 20 kW $5.671116/kW
+Energy Rate First 3,500 kWh $0.018466/kWh
+Energy Rate Excess 3,500 kWh $0.000000/kWh
+Standard Offer Service for Type I Customers:
+Supply Capacity, Energy and Ancillary Rates:
+EnergyRate
+WINTER WINTER SUMMER
+10/01/24 – 01/31/25 02/01/25 – 05/31/25 06/01/25 – 09/30/25
+SOS kilowatt Hour Charge $0.095756/kWh $0.095756/kWh $0.094633/kWh
+Administrative Charge $0.004067/kWh $0.005267/kWh $0.003878/kWh
+Total SOS kilowatt Hour Charge $0.099823/kWh $0.101023/kWh $0.098511/kWh
+Procurement Cost Adjustment Refer to the “SOS” Rider Refer to the “SOS” Rider Refer to the “SOS” Rider
+*The Administrative Charge rates typically change every February, June and October.
+Filed August 1, 2025 Effective Usage on and after August 27, 2025
+Filed in Compliance with the Letter Order issued by the MDPSC on August 27, 2025

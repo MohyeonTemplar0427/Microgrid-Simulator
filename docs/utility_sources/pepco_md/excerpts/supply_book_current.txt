@@ -1,0 +1,986 @@
+Source ID: supply_book_current
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blte8a580e4cc79e2c4/6abad89015d5b7d18eb100f3/9232_AND_9761_Pepco_MD_CURRENT_CLEAN_Admin_Ch_.pdf?branch=prod_alias
+Original SHA256: 48da9de9906dbadfb6c080ad7917e02f57ebf28ec219a57df76f4a87abca424a
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 8 ===
+Electric--P.S.C. Md. No. 1
+MD - R Thirty-Fourth Revised Page No. 3
+RESIDENTIAL SERVICE
+SCHEDULE "R"
+AVAILABILITY
+Available for Distribution Service and Standard Offer Service when modified by Rider “SOS” in the Maryland
+portion of the Company’s service area for low voltage electric service where the use is primarily for
+residential purposes and for farm operations where the electricity for both farm and residential purposes is
+delivered through the same meter. This rate will also be available for separately metered plug-in vehicle
+charging at Multi-Unit Dwelling (MUD) locations where the chargers are for use only by MUD residents and
+the maximum per-port demand of the charger does not exceed 20 kW
+Not available for residential premises in which five (5) or more rooms are for hire.
+Not available for seasonal loads metered separately from lighting and other usage in the same occupancy.
+Not available for temporary, auxiliary or emergency service.
+CHARACTER OF SERVICE
+The service supplied under this schedule normally will be alternating current, sixty hertz, single phase, three
+wire, 120/240 volts, or three wire, 120/208 volts.
+MONTHLY RATE
+Effective Effective Effective
+Distribution Service Charge April 1, 2024 – August 11, 2026 – August 28, 2026 –
+August 10, 2026 August 27, 2026 October 31, 2026
+Customer Charge $ 8.44 $ 8.67 $ 8.44
+Kilowatt-Hour Charge (Summer) $0.08760 $0.09713 $0.08760
+Kilowatt-Hour Charge (Winter) $0.04328 $0.05469 $0.04328
+Opt-Out Fee *
+One-time, Up-front Fee $ 75.00 (payable in three monthly installments)
+Monthly Fee $ 14.00 per month
+Generation and Transmission Service Charges - Customers who do not receive service from
+an alternative Electric Supplier as defined in the Company’s General Terms and Conditions will
+receive Generation and Transmission Services from the Company under the provisions of Rider
+“SOS” – Standard Offer Service.
+Billing Credit - A monthly billing credit in the amount of $0.61 will be applied to the bill of each
+customer receiving a consolidated bill from an alternative supplier for services provided both by
+Pepco and by the alternative supplier.
+* Opt-Out Fees – Customers who choose to decline the installation of an AMI meter are considered
+to be Opting-Out and will incur a One-Time Enrollment Fee payable in three monthly installments
+as well as an Ongoing Monthly Fee. A customer who requests to Opt-Out of receiving a smart
+meter shall be moved to a non-time-of-use schedule and shall receive a non-time-of-use ERT
+(encoder receiver transmitter) or AMR (automatic meter reading) meter for no additional costs
+beyond the specified Opt-Out Fees. Opt-Out Customers will receive an initial bill that includes the
+first installment of One-Time Upfront Fee and Ongoing Monthly Fee. An Opt-Out
+Customer can elect to discontinue the application of Opt-Out Fees at any time by electing to have
+a smart meter installed. The Fees shall be waived and removed from the Customer’s bill where the
+Opt-Out Fees first appear if the customer agrees, before the end of the subsequent billing cycle, to
+have a smart meter installed, provided the customer allows reasonable access for
+Date of Issue: August 14, 2026 Date Effective: Usage on and after August 11, 2026
+
+=== PDF physical page 9 ===
+Electric--P.S.C. Md. No. 1
+MD - R Twenty-Fifth Revised Page No. 3.1
+installation of the smart meter. For customers who elect to have a smart meter installed after the
+initial billing cycle in which Opt-Out Fees are billed, the charges shall continue to be billed and
+shall cease upon the earlier of the installation of a smart meter or within 30 days of receiving
+customer notification, provided the customer allows reasonable access for installation of the smart
+meter. Charges begin the later of the first full billing cycle following July 1, 2014 or following the
+first full billing cycle after the AMI installation date in that customer’s community.
+A Customer who is non-responsive to Pepco’s attempts to install a smart meter, as detailed in
+Order No. 86727, shall also be responsible for these Fees. However, in the instance where a
+customer is non-responsive to Pepco’s attempts to install a smart meter, as detailed in Order No.
+86727, opt-out charges for those customers will be waived if the customer contacts Pepco to
+schedule a smart meter installation within 30 days after the charges first appear on the bill.
+The applicable fees for enrolling in smart meter Opt-Out will be shown as separate line items on
+the customer’s bill.
+BILLING MONTHS
+Summer – Billing months of June through October.
+Winter – Billing months of November through May.
+METER READING
+Watt-hour meters will be read to the nearest multiple of the meter constant and bills rendered accordingly.
+GROSS RECEIPTS TAX
+A surcharge of 2.0408% is applied to the transmission and distribution components of the customer's bill to
+recover the amount attributable to the Gross Receipts Tax.
+GENERAL TERMS AND CONDITIONS
+This schedule is subject in all respects to the Company's "General Terms and Conditions for Furnishing
+Electric Service" and the Company's "Electric Service Rules and Regulations."
+APPLICABLE RIDERS
+Standard Offer Service – Residential
+Administrative Credit
+Universal Service Charge Recovery
+Net Energy Metering
+Delivery Tax Surcharge
+Montgomery County Surcharge
+Maryland Environmental Surcharge
+Experimental Residential Electric Vehicle Service
+Optional Meter Equipment Related Services
+Bill Stabilization Adjustment
+Empower MD Charge
+Residential Direct Load Control
+RGGI Rate Credit
+Aggregate Net Energy Metering
+Demand Resource Surcharge
+Dynamic Pricing – Peak Energy Savings Credit
+Grid Resiliency Charge
+Economic Relief and Recovery Rider
+MYP Adjustment Rider
+Revenue Deferral Mechanism Rider
+Maryland Cost Allocation Method - Secondary
+Date of Issue: May 1, 2026 Date Effective: Usage on and after May 1, 2026
+
+=== PDF physical page 12 ===
+Electric--P.S.C. Md. No. 1
+MD - GS Thirtieth Revised Page No. 5
+GENERAL SERVICE
+SCHEDULE "GS"
+AVAILABILITY
+Available for Distribution Service and Standard Offer Service when modified by Rider “SOS” in the Maryland
+portion of the Company's service area, except for customers whose maximum thirty (30) minute demand
+equals or exceeds 25 kW during one (1) or more months within twelve (12) billing months or whose monthly
+energy consumption exceeds 6,000 kilowatt-hours in two (2) consecutive winter billing months (November
+through May, inclusive), or whose monthly energy consumption exceeds 7,500 kilowatt-hours for a single
+summer billing month. Customers who exceed the above limits will be transferred to Schedule "MGT LV
+II", "MGT 3A II ", “MGT LV III", "MGT 3A III", "GT LV", "GT 3A", or "GT 3B" in accordance with the availability
+provisions therein. Rate schedule changes will occur annually and become effective with the billing month
+of June.
+Available for low voltage electric service at sixty hertz.
+Not available for railway propulsion service.
+Not available for secondary temporary service or supplementary loads metered separately from lighting
+and other usage in the same occupancy.
+CHARACTER OF SERVICE
+The service supplied under this schedule normally will be alternating current, sixty hertz, either (i) single
+phase, three wire, 120/240 volts or 120/208 volts, or (ii) three phase, four wire, 120/208 volts or 265/460
+volts.
+MONTHLY RATE
+Effective Effective Effective
+Distribution Service Charge April 1, 2024 – August 11, 2026 – August 28, 2026 –
+August 10, 2026 August 27, 2026 October 31, 2026
+Customer Charge $ 12.66 $ 13.02 $ 12.66
+Kilowatt-Hour Charge (Summer) $0.08130 $0.09220 $0.08130
+Kilowatt-Hour Charge (Winter) $0.04272 $0.05447 $0.04272
+Opt-Out Fee *
+One-time, Up-front Fee $ 75.00 (payable in three monthly installments)
+Monthly Fee $ 14.00 per month
+Generation and Transmission Service Charges - Customers who do not receive service from an
+alternative Electric Supplier as defined in the Company’s General Terms and Conditions will receive
+Generation and Transmission Services from the Company under the provisions of Rider “SOS” – Standard
+Offer Service.
+Billing Credit - A monthly billing credit in the amount of $0.74 will be applied to the bill of each customer
+receiving a consolidated bill from an alternative supplier for services provided both by Pepco and by the
+alternative supplier.
+* Opt-Out Fees – Customers who choose to decline the installation of an AMI meter are considered to be
+Opting-Out and will incur a One Time Enrollment Fee payable in three monthly installments as well as an
+Ongoing Monthly Fee. A customer who requests to Opt-Out of receiving a smart meter shall be moved to a
+non-time-of-use schedule and shall receive a non-time-of-use ERT (encoder receiver transmitter) or AMR
+(automatic meter reading) meter for no additional costs beyond the specified Opt-Out Fees. Opt-Out
+Customers will receive an initial bill that includes the first installment of One-Time Upfront Fee and Ongoing
+Monthly Fee. An Opt-Out Customer can elect to discontinue the application of Opt-Out Fees at any time by
+Date of Issue: August 14, 2026 Date Effective: Usage on and after August 11, 2026
+
+=== PDF physical page 13 ===
+Electric--P.S.C. Md. No. 1
+MD - GS Twenty-Ninth Revised Page No. 5.1
+electing to have a smart meter installed. The Fees shall be waived and removed from the Customer’s bill
+where the Opt-Out Fees first appear if the customer agrees, before the end of the subsequent billing cycle,
+to have a smart meter installed, provided the customer allows reasonable access for installation of the smart
+meter. For customers who elect to have a smart meter installed after the initial billing cycle in which Opt-Out
+Fees are billed, the charges shall continue to be bille d and shall cease upon the earlier of the installation of
+a smart meter or within 30 days of receiving customer notification, provided the customer allows reasonable
+access for installation of the smart meter. Charges begin the later of the first full billing cycle following July
+1, 2014 or following the first full billing cycle after the AMI installation date in that customer’s community.
+A Customer who is non-responsive to Pepco’s attempts to install a smart meter, as detailed in
+Order No. 86727, shall also be responsible for these Fees. However, in the instance where a
+customer is non-responsive to Pepco’s attempts to install a smart meter, as detailed in Order No.
+86727, opt-out charges for those customers will be waived if the customer contacts Pepco to
+schedule a smart meter installation within 30 days after the charges first appear on the bill.
+The applicable fees for enrolling in smart meter Opt-Out will be shown as separate line items on
+the customer’s bill.
+BILLING MONTHS
+Summer – Billing months of June through October.
+Winter – Billing months of November through May.
+METER READING
+Watt-hour meters will be read to the nearest multiple of the meter constant and bills rendered accordingly.
+GROSS RECEIPTS TAX
+A surcharge of 2.0408% is applied to the transmission and distribution components of the customer's bill to
+recover the amount attributable to the Gross Receipts Tax.
+GENERAL TERMS AND CONDITIONS
+This schedule is subject in all respects to the Company's "General Terms and Conditions for Furnishing
+Electric Service" and the Company's "Electric Service Rules and Regulations."
+APPLICABLE RIDERS
+Standard Offer Service – Type I Non-Residential
+Administrative Credit
+Universal Service Charge Recovery
+Net Energy Metering
+Power Factor
+Delivery Tax Surcharge
+Montgomery County Surcharge
+Maryland Environmental Surcharge
+Optional Meter Equipment Related Services
+Bill Stabilization Adjustment
+Empower MD Charge
+Aggregate Net Energy Metering
+Non-Residential Direct Load Control
+Demand Resource Surcharge
+Grid Resiliency Charge
+Economic Relief and Recovery Rider
+MYP Adjustment Rider
+Revenue Deferral Mechanism Rider
+Maryland Cost Allocation Method – Secondary
+Date of Issue: May 1, 2026 Date Effective: Usage on and after May 1, 2026
+
+=== PDF physical page 84 ===
+Electric--P.S.C. Md. No. 1
+MD – USC Twelfth Revised Page No. 28
+UNIVERSAL SERVICE CHARGE RECOVERY
+RIDER "USC"
+UNIVERSAL SERVICE CHARGE RECOVERY RIDER
+This rider is applicable to Schedules "R", "R-TM", "GS", "GT LV", "GT 3A", "GT 3B", "MGT LV II", “MGT LV
+III”, "MGT 3A II", “MGT 3A III”, "T", "TM-RT", "EV", “R-PIV”, and “R-TOU-P”. Amounts billed to customers
+shall include a surcharge to recover costs of Universal Service Programs required by the Maryland Electric
+Customer Choice and Competition Act, including bill assistance, low-income weatherization and the
+retirement of arrearages that were incurred prior to July 1, 2000.
+Schedules "R", "R-TM", “R-PIV”, “R-TOU-P” customers will be charged $0.32 per month per account.
+Customers on Schedules "GS", "GT LV", "GT 3A", "GT 3B", "MGT LV II", “MGT LV III”, "MGT 3A II", “MGT
+3A III”, "T", "TM-RT", and "EV" will be charged based on the Customer's previous annual distribution
+revenue, updated in the first quarter of each new year, and in accordance with the Commission’s order.
+Customer’s Annual Electric Distribution Bills Customer Charge
+For Previous Year (Per Month)
+Under $175 $0.25
+$175 - $1,299 $1.85
+$1,300 - $2,599 $6.14
+$2,600 - $6,499 $12.28
+$6,500 - $12,999 $24.56
+$13,000 - $25,999 $36.85
+$26,000 - $51,999 $49.13
+$52,000 - $77,999 $92.12
+$78,000 - $103,999 $122.82
+$104,000 - $129,999 $184.22
+$130,000 - $181,999 $276.35
+$182,000 - $233,999 $368.46
+$234,000 - $259,999 $552.69
+$260,000 - $519,999 $736.91
+$520,000 - $779,999 $982.55
+$780,000 - $1,039,999 $1,228.19
+$1,040,000 - $1,299,999 $1,473.83
+$1,300,000 - $1,559,999 $1,719.47
+$1,560,000 - $1,819,999 $1,965.10
+$1,820,000 - $2,079,999 $2,149.33
+$2,080,000 - $2,339,999 $2,333.56
+$2,340,000 - $2,599,999 $2,456.38
+$2,600,000 - $3,249,999 $2,579.20
+Over $3,250,000 $2,763.43
+Date of Issue: June 28, 2019 Date Effective: July 1, 2019
+
+=== PDF physical page 94 ===
+Electric--P.S.C. Md. No. 1
+MD – DT Fifth Revised Page No. 36
+DELIVERY TAX SURCHARGE
+RIDER "DT"
+DELIVERY TAX SURCHARGE
+This rider is applicable to Schedules "R", "R-TM", "GS", "GT LV", "GT 3A", "GT 3B", "MGT LV II", “MGT LV
+III”, “MGT 3A II”, "MGT 3A III", "T", "OL", "TM-RT", "EV", “PIV”, “R-PIV” and “R-TOU-P”, "SL" and "TN". The
+purpose of this rider is to recover the Franchise Tax (Delivery).
+The current applicable Rider “DT” is available on the Company’s website at www.pepco.com
+Date of Issue: June 28, 2019 Date Effective: Usage on and after July 1, 2019
+
+=== PDF physical page 95 ===
+Electric--P.S.C. Md. No. 1
+MD – MCS Sixth Revised Page No. 37
+MONTGOMERY COUNTY SURCHARGE
+RIDER "MCS"
+MONTGOMERY COUNTY SURCHARGE
+This rider is applied to customers located in Montgomery County. The rider collects the revenue required
+to compensate the Company for the Montgomery County Fuel and Energy Tax imposed by Montgomery
+County.
+The current applicable Rider “MCS” is available on the Company’s website at www.pepco.com/md-rates.
+This surcharge normally will be recomputed and revised on July 1.
+Date of Issue: June 1, 2005 Date Effective: July 1, 2005
+
+=== PDF physical page 96 ===
+Electric--P.S.C. Md. No. 1
+MD – MES Second Revised Page No. 38
+MARYLAND ENVIRONMENTAL SURCHARGE
+RIDER "MES"
+MARYLAND ENVIRONMENTAL SURCHARGE RIDER
+This rider is applied to collect the revenue required to compensate the Company for the environmental
+surcharge imposed by the State of Maryland on all kilowatt-hours generated in Maryland.
+The current applicable Rider “MES” is available on the Company’s website at www.pepco.com.
+This surcharge normally will be determined by the Maryland Pubic Service Commission as of June 30, each
+year to be applied the following year.
+Date of Issue: June 1, 2005 Date Effective: July 1, 2005
+
+=== PDF physical page 101 ===
+Electric--P.S.C. Md. No. 1
+MD – SOS Fortieth Revised Page No. 43
+STANDARD OFFER SERVICE
+RIDER “SOS”
+RIDER “SOS” – STANDARD OFFER SERVICE
+Available in the Maryland portion of the Company’s service area for the provision of Generation and
+Transmission Services to customers who do not have an alternate supplier for Generation and
+Transmission Services as defined in the Customer Choice Act, Section 7-510(C)(2).
+Standard Offer Service (SOS) is available beginning July 1, 2004 in accordance with the provisions
+contained in the Maryland Case No. 8908 Settlement Agreements (Phase I and II) approved by the
+Maryland Public Service Commission in Order Nos. 78400 and 78710 and in the Code of Maryland
+Regulations (COMAR) 20.52 Electric Standard Offer Service.
+DESCRIPTION OF SOS TYPES
+Residential
+Applicable to customers served on Schedules “R”, “R-TM” and “R-TOU-P”.
+Customers may leave or return to Rider “SOS” without penalty by the Company, subject to the
+Company’s General Terms and Conditions.
+A Customer shall not change Type within the SOS year.
+Type I Non-Residential
+Applicable to customers served on Schedules “GS”, “T”, “SL”, “TN”, “EV”, and “OL”.
+Customers may leave or return to Rider “SOS” without penalty by the Company, subject to the
+Company’s General Terms and Conditions.
+A Customer shall not change Type within the SOS year.
+Type II Non-Residential
+Applicable to customers served on Schedules “MGT LV II” and “MGT 3A II”.
+Customers may leave or return to Rider “SOS” without penalty by the Company, subject to the
+Company’s General Terms and Conditions.
+A Customer shall not change Type within the SOS year.
+Hourly-Priced Service (HPS)
+Applicable to customers served on Schedules “MGT LV III”, “MGT 3A III”, “GT LV”, “GT 3A”, “GT
+3B” and “TM-RT”.
+Customers may leave or return to Rider “SOS” without penalty by the Company, subject to the
+Company’s General Terms and Conditions.
+When a customer purchasing from an alternate supplier, other than the Company, returns or is
+returned to the Company on or after June 1, 2005, the customer will receive HPS.
+A Customer shall not change Type within the SOS year.
+Date of Issue: August 20, 2026 Date Effective: Usage on and after September 1, 2026
+
+=== PDF physical page 102 ===
+Electric--P.S.C. Md. No. 1
+MD – SOS Forty-Second Revised Page No. 43.1
+MONTHLY RATE
+Customers receiving Standard Offer Service will pay the Distribution Service Charge, Transmission Service
+Charge and Generation Service Charge including all applicable riders. The Distribution Service Charges
+are stated in the Monthly Rates for the Customer’s applicable Rate Schedule.
+The Standard Offer Service Rate for each Rate Schedule within each SOS Type, including any usage
+incurred under associated Riders, will include the following components:
+1. The seasonally-differentiated and, if applicable, time-of-use differentiated load weighted
+average of all awarded electric supply prices for specific services in each year.
+2. Retail charges designed to recover, on an aggregate basis, FERC-approved transmission
+charges and any other PJM charges and costs incurred by Pepco.
+3. An administrative charge, consisting of incremental, uncollectible and cash working capital
+cost, an administrative adjustment and a return (included in Generation rates tables below);
+and;
+4. Applicable taxes.
+SOS – Residential (Generation, Transmission including separately calculated GRT, and
+Procurement Cost Adjustment)
+Schedule R
+Generation Service Charge 02/01/26 – 05/31/26 06/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS Kilowatt-hour Charge $0.10620 per kwhr $0.10764 per kwhr $0.12266 per kwhr
+Administrative Charge $0.00500 per kwhr $0.00404 per kwhr $0.00415 per kwhr
+Total SOS Kilowatpt Hour Charge $0.11120 per kwhr $0.11168 per kwhr $0.12681 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.02007 per kwhr $0.02007 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Schedule R-TM
+Generation Service Charge 02/01/26 – 05/31/26 06/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS Kilowatt-hour Charge
+On Peak $0.10752 per kwhr $0.11277 per kwhr $0.12389 per kwhr
+Intermediate $0.10624 per kwhr $0.10642 per kwhr $0.12280 per kwhr
+Off Peak $0.10560 per kwhr $0.10519 per kwhr $0.12211 per kwhr
+Administrative Charge $0.00500 per kwhr $0.00404 per kwhr $0.00415 per kwhr
+Total SOS Kilowatt Hour
+Charge
+On Peak $0.11252 per kwhr $0.11681 per kwhr $0.12804 per kwhr
+Intermediate $0.11124 per kwhr $0.11046 per kwhr $0.12695 per kwhr
+Off Peak $0.11060 per kwhr $0.10923 per kwhr $0.12626 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.02028 per kwhr $0.02028 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Date of Issue: September 28, 2026 Date Effective: Usage on and after October 1, 2026
+
+=== PDF physical page 103 ===
+Electric--P.S.C. Md. No. 1
+MD – SOS Sixteenth Revised Page No. 43.2
+Schedule R-TOU-P
+Generation Service Charge 06/01/26 – 08/31/26 09/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS Kilowatt-hour Charge
+On Peak $0.20831 per kwhr $0.20514 per kwhr $0.21058 per kwhr
+Off Peak $0.10847 per kwhr $0.10809 per kwhr $0.12311 per kwhr
+Administrative Charge $0.00404 per kwhr $0.00404 per kwhr $0.00415 per kwhr
+Total SOS Kilowatt Hour Charge
+On Peak $0.21235 per kwhr $0.20918 per kwhr $0.21473 per kwhr
+Off Peak $0.11251 per kwhr $0.11213 per kwhr $0.12726 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge
+Kilowatt-hour Charge Included in Generation Service Charge
+Procurement Cost Adjustment See www.pepco.com for currently effective rate.
+Note: Schedule R-TOU-P billing periods are as follows:
+Summer – Billing months are June through September, and On-Peak hours will be between the hours of 2:00 pm
+and 7:00 pm excluding weekends and holidays. All other hours are off-peak.
+Winter - Billing months are October through May, and On-Peak hours will be between the hours of 6:00 am and
+9:00 am and the hours of 5:00 pm and 9:00 pm, excluding weekends and holidays. All other hours are off-peak.
+SOS – Type I Non-Residential (Generation, Transmission including separately calculated GRT, and
+Procurement Cost Adjustment)
+Schedule GS and EV
+Generation Service Charge 02/01/26 – 05/31/26 06/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS Kilowatt-hour Charge $0.10377 per kwhr $0.10675 per kwhr $0.11923 per kwhr
+Administrative Charge $0.00493 per kwhr $0.00362 per kwhr $0.00367 per kwhr
+Total SOS Kilowatt Hour Charge $0.10870 per kwhr $0.11037 per kwhr $0.12290 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.01421 per kwhr $0.01421 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Schedule T
+Generation Service Charge 02/01/26 – 05/31/26 06/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS Kilowatt-hour Charge $0.10377 per kwhr $0.10675 per kwhr $0.11923 per kwhr
+Administrative Charge $0.00493 per kwhr $0.00362 per kwhr $0.00367 per kwhr
+Total SOS Kilowatt Hour Charge $0.10870 per kwhr $0.11037 per kwhr $0.12290 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.01404 per kwhr $0.01404 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Schedule SL
+Generation Service Charge 02/01/26 – 05/31/26 06/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS Kilowatt-hour Charge $0.09925 per kwhr $0.10121 per kwhr $0.11607 per kwhr
+Administrative Charge $0.00493 per kwhr $0.00362 per kwhr $0.00367 per kwhr
+Total SOS Kilowatt Hour Charge $0.10418 per kwhr $0.10483 per kwhr $0.11974 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.00107 per kwhr $0.00107 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+MONTHLY RATE (continued)
+Date of Issue: September 28, 2026 Date Effective: Usage on and after October 1, 2026
+
+=== PDF physical page 108 ===
+Electric--P.S.C. Md. No. 1
+MD – SOS Fortieth Revised Page No. 43.7
+BILLING MONTHS
+Summer – Billing months of June through October
+Winter – Billing months of November through May.
+RATING PERIODS
+Weekdays - (Excluding Holidays)
+On-Peak Period 12:00 noon to 8:00 p.m.
+Intermediate Period 8:00 a.m. to 12:00 noon
+and
+8:00 p.m. to 12:00 midnight
+Off-Peak Period 12:00 midnight to 8:00 a.m.
+Saturdays, Sundays and Holidays
+Off-Peak Period All Hours
+Holidays
+Holidays include all holidays as designated by the Federal Government.
+BILLING DEMANDS
+On-Peak (Summer Billing Months Only) - The billing demand shall be the maximum thirty (30) minute
+demand recorded during the on-peak period of the billing month.
+Maximum (All Months) - The billing demand shall be the maximum thirty (30) minute demand recorded
+during the billing month.
+PROCUREMENT COST ADJUSTMENT
+In addition to the Standard Offer Service rates shown above, for Residential, Type I, and Type II customers
+(excludes HPS customers) there will be a monthly Procurement Cost Adjustment (PCA) shown as a
+separate line item on the Customer’s bill. Refer to HPS for the Hourly Priced Service Procurement Cost
+Adjustment (HPS-PCA).
+The PCA is a $ per kilowatt-hour rate applied to the Customer’s billed kilowatt-hours.
+The PCA is an adjustment made in order to true-up the rates customers are billed to reflect the Company’s
+actual costs of providing Standard Offer Service.
+A true-up adjustment will be made to the PCA at least three (3) times per year- effective with the June,
+November and February billing months. These true-ups will revise the PCA based on actual and forecasted
+collections of SOS revenues by SOS Type and the actual and forecasted cost of providing Standard Offer
+Service.
+The current applicable PCA rate by SOS Type is available on the Company’s website at www.pepco.com.
+PUBLICATION OF PRICES
+The Standard Offer Service Rates shown in this Rider are posted on the Company’s website at
+www.pepco.com.
+The market hourly Locational Marginal Prices used for HPS are available on the PJM website at
+www.pjm.com.
+Date of Issue: July 31, 2026 Date Effective: Usage on and after September 1, 2026
+
+=== PDF physical page 109 ===
+Electric--P.S.C. Md. No. 1
+MD – AC Sixth Page No. 44
+ADMINISTRATIVE CREDIT
+RIDER “AC”
+RIDER “AC” – ADMINISTRATIVE CREDIT
+This rider is applicable to all customers served under Rate Schedules “R”, “RTM”, “GS”, “T”, “MGT LV II,
+“MGT 3A II”, “SL”, “EV” “PIV”, “R-PIV” and “R-TOU-P”. Customers served under these Rate Schedules
+will receive the applicable credit each month based on SOS type (i.e. Residential, Type I, Type II and HPS).
+The purpose of this rider is to return to all customers receiving distribution service a portion of the SOS
+Administrative Charge revenues received (collected via Administrative Adjustment component) from
+customers on Standard Offer Service.
+The credit, by SOS type, is a $ per kilowatt-hour rate and is applied to the Customer’s billed kilowatt-hours.
+A true-up adjustment will be made to Rider “AC” at least three times per year – effective with the June,
+October and February billing months. These true-ups will revise the credits to customers based on actual
+and forecasted collections of the Administrative Charge and payments of the Administrative Credit.
+The current applicable Rider “AC” by SOS Type is available on the Company’s website at www.pepco.com.
+Date of Issue: September 30, 2022 Date Effective: Usage on and after October 1, 2022
+
+=== PDF physical page 114 ===
+Electric--P.S.C. Md. No. 1
+MD – E-MD Nineteenth Revised Page No. 48
+EMPOWER MD CHARGE
+RIDER "E-MD"
+RIDER “E-MD” – EmPOWER MD CHARGE
+This rider is applicable to Schedules "R", "R-TM", “PIV”, “R-PIV”, “R-TOU-P”, GS", "T", “MGT LV II”, “MGT
+3A II”, “MGT LV III”, “MGT 3A III”, “GT LV”, “GT 3A”, “GT 3B”, “TM-RT”, “EV”, “SL”, “OL”, and “TN”. Amounts
+billed to customers shall include a surcharge to reflect demand-side management program costs. Rider “E-
+MD” will be determined annually by class based on projections of demand-side management program costs
+and PJM market earnings (including an adjustment for variances between budgeted and actual prior year
+expenditures) and forecasts of kilowatt hour sales.
+Rate Schedule Rate ($ per kilowatt-hour)
+“R "R-TM"
+“PIV”, “R-PIV” and R-TOU-P” $ 0.020618
+"GS", "T”, "SL, "OL",
+"EV" and "TN" $ 0.011986
+"MGT LV II”, “MGT 3A II",
+“MGT LV III”, and “MGT 3A III” $ 0.011986
+"GT LV", GT 3A”, “GT 3B”,
+and "TM-RT" $ 0.011986
+This surcharge will be effective Billing Month of January 2026 and will be revised on or before January of
+each subsequent year to reflect each year’s costs. The rider will be applied each year thereafter, and will
+include cost and revenue effects, effective with the billing month of January.
+The surcharge (in dollars per kilowatt hour) will be computed by dividing the total annual amount to be
+recovered for each class by forecasted Maryland retail sales (in kilowatt hours) for that class.
+The total amount to be recovered (R) is computed in accordance with the following formula:
+R=A+B+C
+Where A is amortization (paragraph (c) below, B is the capital cost recovery factor (CCRF) (paragraph (d)
+below), and C is the current year expense (paragraph (e) below). The surcharge will be computed for billing
+purposes in accordance with the procedure described below:
+(a) Current year program costs will be determined by reference to budgeted and projected utility costs
+minus projected PJM market earnings. Program costs include program design costs,
+implementation contractor expenses, education costs, marketing costs, rebate and buy-down
+costs, utility incentives, capital costs, measurement and verification (M&V) and evaluation costs
+applicable to the conservation and demand side management programs.
+(b) The unamortized balance of program costs for each prior year will be determined as of the
+beginning of the year by subtracting accumulated amortization from cumulative program costs at
+that date. Such costs and amortization are recorded in a Demand-Side Recovery Account.
+(c) For the conservation programs, amortization for the year will be based on a five year amortization
+period and will be the sum of (i) 20% of estimated current year program costs, and (ii) unamortized
+balance of program cost for each prior year (as of the beginning of the period) divided by the
+remaining years in the amortization period (including the current period). NOTE: Through this
+mechanism, the second through fifth years of amortization related to a given year's
+Date of Issue: December 31, 2025 Date Effective: Billing Month of January 2026
+
+=== PDF physical page 115 ===
+Electric--P.S.C. Md. No. 1
+MD – E-MD Nineteenth Revised Page No. 48.1
+program costs will reflect a true-up for any variance between actual and originally projected costs
+or sales in that year. The demand response program component of the EmPOWER Md. Charge
+will be calculated in a similar method as noted above in (i) and (ii), with the costs recovered through
+two different amortization schedules, which are based on the classification of expenses. New costs
+associated with equipment installation are amortized over a 5 year period. Program marketing and
+evaluation costs are amortized over a 5 year period.
+(d) The Capital Cost Recovery Factor (CCRF) will be computed for billing purposes by monthly
+application of the last Commission-authorized rate of return on rate base in a base rate proceeding
+to the unamortized balance of program costs as of the beginning of the month, plus one-half of
+current month program costs. The CCRF will be recalculated with each annual update of the tariff
+with no compounding.
+(e) For demand response programs, operations and maintenance expenses will be expensed
+annually.
+Date of Issue: December 31, 2025 Date Effective: Billing Month of January 2026
+
+=== PDF physical page 120 ===
+Electric--P.S.C. Md. No. 1
+MD – RRC First Revised Page No. 50
+RGGI RATE CREDIT
+RIDER "RRC"
+RIDER “RRC” – RGGI RATE CREDIT
+This rider is applicable to all customers served under Rate Schedules “R”, “R-TM” and “R-TOU-P”.
+Customers served under these Rate Schedules shall receive a monthly bill credit on a dollar per customer
+basis, funded through Regional Greenhouse Gas Initiative (“RGGI”) auction proceeds and other monies
+included in the Maryland Strategic Energy Investment Fund pursuant to Chapters 127 and 128 of the Acts
+of the General Assembly of 2008.
+The credit shall commence with the billing month of June 2009 and shall be subject to update and true up
+on a quarterly basis.
+The current applicable credit is available on the Company’s website at www.pepco.co
+Date of Issue: June 28, 2019 Date Effective: Usage on and after
+July 1, 2019.
+
+=== PDF physical page 128 ===
+Electric--P.S.C. Md. No. 1
+MD – DRS Seventh Revised Page No. 54
+DEMAND RESOURCE SURCHARGE
+RIDER "DRS"
+RIDER “DRS” – DEMAND RESOURCE SURCHARGE
+This rider is applicable to Schedules "R", "R-TM", “PIV”, “R-PIV”,“R-TOU-P”,"GS", "T", “MGT LV II”, “MGT
+3A II”, “MGT LV III”, “MGT 3A III”, “GT LV”, “GT 3A”, “GT 3B”, “TM-RT”, “EV”, “SL”, “OL”, and “TN”. Amounts
+billed to customers shall include a surcharge to recover the costs of Capacity Resource Agreements as
+provided in Maryland Public Service Commission Order No. 82511 in Case No. 9149. Rider “DRS” will be
+determined annually by service classification by calculating a Contract for Differences payment (comparing
+the projections of demand response resource costs against the PJM Reliability Pricing model clearing price
+and actual delivered capacity for each power planning year), along with approved incremental costs, and
+distributing that by each service classification’s Peak Load Contribution.
+Rate Schedule Rate ($ per kilowatt-hour)
+“R", "R-TM" “PIV”
+“R-PIV” and “R-TOU-P” $0.00000
+"GS", "T”, "OL",
+"EV" and "TN" $0.00000
+"MGT LV II”, “MGT 3A II",
+“MGT LV III”, and “MGT 3A III” $0.00000
+"GT LV", GT 3A”, “GT 3B”,
+and "TM-RT" $0.00000
+“SL” $0.00000
+This surcharge will be effective the Billing Month of June 2012 and will be revised on or before May of each
+subsequent year to reflect each year’s costs. The rider will be applied each year thereafter, and will include
+cost and revenue effects, effective with the billing month of June. Any imbalance between the actual costs
+and the Surcharge amount shall be reconciled annually over the subsequent planning year.
+The surcharge (in dollars per kilowatt hour) will be computed by dividing the total annual amount to be
+recovered for each class by forecasted Maryland retail sales (in kilowatt hours) for that class.
+The total amount to be recovered (R) is computed in accordance with the following formula:
+R= (A+B)
+Where A is Contract for Differences payments (paragraph (a) below, B is the incremental costs (paragraph
+(b) below). The surcharge will be computed for billing purposes in accordance with the procedure described
+below:
+(a) Annual Contract for Differences payments will be determined by the differences between the
+contract price of the demand response resource as stated in the Capacity Resource Agreement
+and PJM Reliability Model Clearing price for the actual delivered capacity for each power planning
+period.
+(b) The incremental costs are approved costs incurred by the Company in administration of each
+Capacity Resource Agreement.
+Date of Issue: June 28, 2019 Date Effective: Usage on and after July 1, 2019
+
+=== PDF physical page 129 ===
+Electric--P.S.C. Md. No. 1
+MD – DRS Seventh Revised Page No. 54.1
+Termination of Capacity Resource Agreement
+A final, one-time reconciliation shall be conducted upon termination of all Capacity Resource Agreements.
+Date of Issue: June 28, 2019 Date Effective: Usage on and after July 1, 2019
+
+=== PDF physical page 132 ===
+Electric--P.S.C. Md. No. 1
+MD – GRC Fourth Revised Page No. 56
+GRID RESILIENCY CHARGE RIDER – RIDER “GRC”
+APPLICABILITY
+The Distribution Charges billed under the Schedules "R", "R-TM”, “GS”, "T", "MGT LV II", "MGT LV III",
+"MGT 3A II", "MGT 3A III", "GT LV", "GT 3A", "GT 3B", "TM-RT", "SL", “OL”, “EV” and "TN" shall be subject
+to the Grid Resiliency Charge as specified in the terms of this Rider. The Grid Resiliency Charge provides
+for collection of the monthly charges and rates set forth.
+The Grid Resiliency Charge is specifically intended to recover approved expenditures determined to be
+incremental to those required to meet Maryland electric distribution reliability standards specified in the
+Maryland Service Quality and Reliability Standards and undertaken in an accelerated timeframe with
+respect to the baseline planning levels.
+DETERMINATION OF CHARGE
+The Grid Resiliency Charge will be based on revenue requirements calculated using projected annual
+expenditures. The revenue requirement will include the following items and adjustments:
+1. Return on incremental accelerated capital expenditures placed into service during the period at the
+authorized rate of return.
+2. Recovery of incremental accelerated capital expenditures placed into service during the period
+through depreciation expense.
+3. Incremental accelerated operating and maintenance expenses.
+4. Reconciliation of the deferred balance on an annual basis. (See “Adjustment to Charge”)
+5. The Grid Resiliency Charge is currently expected to remain in effect for approximately three years
+beginning in January 2014, and thereafter will continue in effect until the completion of the first rate
+case filed after all of approved grid resiliency-related projects are placed into service.
+MONTHLY CHARGES AND RATES:
+Rate Schedule
+“R” $0.00000 per kwhr
+“R-TM” $0.00000 per kwhr
+“GS”, “T”, “EV” $0.00000 per kwhr
+“MGT LV II”, “MGT LV III” $ 0.0000 per kw of maximum demand
+“MGT 3A II”, “MGT 3A III” $ 0.0000 per kw of maximum demand
+“GT LV” $ 0.0000 per kw of maximum demand
+“GT 3A” $ 0.0000 per kw of maximum demand
+“GT 3B” $ 0.0000 per kw of maximum demand
+“TM-RT” $ 00.00 per month per delivery point
+“SL” $0.00000 per kwhr
+“TN” $0.00000 per kwhr
+“OL”
+Mecury Vapor
+175 Watt $0.00 per lamp per month
+250 Watt $0.00 per lamp per month
+400 Watt $0.00 per lamp per month
+High Pressure Sodium
+100 Watt $0.00 per lamp per month
+150 Watt $0.00 per lamp per month
+250 Watt $0.00 per lamp per month
+Date of Issue: June 28, 2019 Date Effective: Usage on and after July 1, 2019
+
+=== PDF physical page 133 ===
+Electric--P.S.C. Md. No. 1
+MD – GRC Fourth Revised Page No. 56.1
+ADJUSTMENT TO CHARGE
+The Grid Resiliency Charge is subject to deferred accounting. A monthly over/under recovery calculation
+will be performed based on actual revenues received under Grid Resiliency Charge Rider and the actual
+revenue requirement in each month, and the over/under recovery will be tracked as a deferred balance.
+Interest on this balance will be calculated monthly using the Company’s short term debt rate. The interest
+rate will be reset each month. The deferred balance will be reconciled on an annual basis.
+Date of Issue: June 28, 2019 Date Effective: Usage on and after July 1, 2019
+
+=== PDF physical page 145 ===
+Electric--P.S.C. Md. No. 1
+MD – ERR Fifth Revised Page No. 61
+ECONOMIC RELIEF AND RECOVERY RIDER
+RIDER “ERR”
+RIDER “ERR” – ECONOMIC RELIEF AND RECOVERY RIDER
+This rider is applicable to Schedules “R”, “R-TM”, “GS”, “T”, “MGT-LV”, “MGT-3A”, “GT LV”, “GT 3A”, “GT
+3B”, “TM-RT”, “EV”, “OL”, “SL”, “SSL-OH”, “SSL-UG”, “SSL-OH-LED”, “SSL-UG-LED”, “TN”, “PIV”, “R-PIV”
+and “R-TOU-P”.
+The purpose of Rider “ERR” is to provide offsetting credits via customer benefits to mitigate the increase to
+base distribution rates beginning April 1, 2024.
+The Rider “ERR” rate is calculated for each Rate Schedule and is calculated as the difference in revenue
+before the MYP allocated increase, adjusted for billing determinant changes for Rate Schedules subject to
+Rider “BSA”, and the revenue after the MYP allocated increase for each Rate Year. The resulting difference
+is multiplied by the percentage of the revenue increase offset.
+Rider “ERR” revenues and rates shall be included in base distribution revenues and base distribution rates
+for the purposes of calculating the test year base revenues, the change in revenues, and actual revenues
+in the Rider “BSA” monthly adjustment for applicable Rate Schedules.
+Rider “ERR” will be labeled as “Pepco Federal Tax Credit” on customer bills.
+Rider “ERR” will be effective from April 1, 2024 with the following monthly rates:
+Schedules R and R-PIV
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Schedule R-TM
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Schedule GS
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Schedule T
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Date of Issue: August 6, 2024 Date Effective: Usage on and after July 29, 2024
+
+=== PDF physical page 146 ===
+Electric--P.S.C. Md. No. 1
+MD – ERR Original Page No. 61.1
+Kilowatt-Hour Charge (Winter) $0.00000
+Schedule MGT LV
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Kilowatt Charge $0.0000
+Schedule MGT 3A
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Kilowatt Charge $0.0000
+Schedule GT LV
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Kilowatt Charge $0.0000
+Schedule GT 3A
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Kilowatt Charge $0.0000
+Schedule GT 3B
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Kilowatt-Hour Charge (Summer) $0.00000
+Kilowatt-Hour Charge (Winter) $0.00000
+Kilowatt Charge $0.0000
+Schedule TM-RT
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $0.00
+Date of Issue: August 6, 2024 Date Effective: Usage on and after July 29, 2024
+
+=== PDF physical page 150 ===
+Electric--P.S.C. Md. No. 1
+MD – MYP First Page No. 62
+MULTI-YEAR PLAN (“MYP”) ADJUSTMENT RIDER
+RIDER "MYP ADJUSTMENT"
+RIDER “MYP ADJUSTMENT” – MULTI-YEAR PLAN ADJUSTMENT RIDER
+This rider is applicable to Schedules “R”, “R-TM”, “GS”, “T”, “MGT LV”, “MGT 3A”, “GT LV”, “GT 3A”, “GT
+3B”, “TM-RT”, “EV”, “OL”, “SL”, “SSL-OH”, “SSL-UG”, “SSL-OH-LED”, “SSL-UG-LED”, “TN”, “PIV”, “R-PIV”,
+and “R-TOU-P”.
+This rider addresses “Imbalances” that may arise between the revenue requirement approved by the
+Commission as part of initial rates under a Multi-Year Plan’s (“MYP”) and the actual revenue requirement
+filed as part of the Annual Informational Filings and/or Final Reconciliation, pursuant to Order No. 89482.
+The Annual Informational Filings shall be filed within 90 days of the end of the first and second years of the
+approved MYP. The Final Reconciliation shall be filed within 120 days of the end of the MYP.
+Imbalances shall be calculated consistent with the MYP revenue requirement approved by the Commission
+in an order resulting from an MYP proceeding. Rate base and operating income shall use actual results
+from the applicable MYP period in calculating the actual revenue requirement to determine the Imbalance.
+If an Imbalance calculated as part of an Annual Informational Filing, as defined in Order No. 89482,
+represents an amount owed to customers, Rider MYP Adjustment can be utilized to provide a credit for
+such amount, if determined to be appropriate by the Commission. Rider MYP Adjustment can also be
+utilized to recover or credit an Imbalance calculated as part of a Final Reconciliation, as determined to be
+appropriate by the Commission.
+All Imbalances are deferred into a regulatory asset or liability until such time as the Commission determines
+the appropriate disposition of the Imbalance, including the appropriate period over which an Imbalance is
+recovered or credited to customers. Carrying costs will apply for amounts owed to customers and will
+continue to apply during the credit period.
+RATE CALCULATION
+The Rider MYP Adjustment rate is determined by first allocating the Imbalance to each rate schedule in a
+manner determined appropriate by the Commission. The resulting amounts are then divided by the
+estimated billing determinants, per kilowatt-hour, per customer, or per fixture, for each applicable rate
+schedule. Details regarding the calculation of Rider MYP Adjustment are filed with and approved by the
+Commission prior to their use in the Company’s billing system. The Rider MYP Adjustment shall be included
+in the distribution charge on the customer’s monthly electric bill.
+Date of Issue: May 13, 2026 Date Effective: Usage on and after May 1, 2026
+
+=== PDF physical page 151 ===
+Electric--P.S.C. Md. No. 1
+MD – MYP First Page No. 62.1
+Rates Effective August 1, 2024 – March 31, 2025
+Rate Schedule Rate
+R $0.00020 per kWh
+R-TM $0.00017 per kWh
+GS $0.00015 per kWh
+T $0.00010 per kWh
+MGT LV $0.00007 per kWh
+MGT 3A $0.00005 per kWh
+GT LV $0.00007 per kWh
+GT 3A $0.00006 per kWh
+GT 3B $0.00000 per kWh
+TM-RT $13.50 per customer
+EV $0.00005 per kWh
+OL $0.03 per fixture
+SL $0.00008 per kWh
+SSL-OH $0.02 per fixture
+SSL-UG $0.02 per fixture
+SSL-OH-LED $0.02 per fixture
+SSL-UG-LED $0.02 per fixture
+TN $0.00000 per kWh
+PIV $0.00020 per kWh
+R-PIV $0.00020 per kWh
+R-TOU-P $0.00020 per kWh
+Date of Issue: May 13, 2026 Date Effective: Usage on and after May 1, 2026
+
+=== PDF physical page 152 ===
+Electric--P.S.C. Md. No. 1
+MD – MYP First Page No. 62.2
+Rates Effective April 1, 2025 – March 31, 2026
+Rate Schedule Rate
+R $0.00091 per kWh
+R-TM $0.00082 per kWh
+GS $0.00068 per kWh
+T $0.00046 per kWh
+MGT LV $0.00033 per kWh
+MGT 3A $0.00023 per kWh
+GT LV $0.00033 per kWh
+GT 3A $0.00026 per kWh
+GT 3B $0.00000 per kWh
+TM-RT $58.99 per customer
+EV $0.00018 per kWh
+OL $0.12 per fixture
+SL $0.00040 per kWh
+SSL-OH $0.09 per fixture
+SSL-UG $0.09 per fixture
+SSL-OH-LED $0.09 per fixture
+SSL-UG-LED $0.09 per fixture
+TN $0.00000 per kWh
+PIV $0.00091 per kWh
+R-PIV $0.00091 per kWh
+R-TOU-P $0.00091 per kWh
+Date of Issue: May 13, 2026 Date Effective: Usage on and after May 1, 2026
+
+=== PDF physical page 153 ===
+Electric--P.S.C. Md. No. 1
+MD – MYP First Page No. 62.3
+Rates Effective May 1, 2026 – April 30, 2027
+Rate Schedule Rate
+R $0.00168 per kWh
+R-TM $0.00154 per kWh
+GS $0.00123 per kWh
+T $0.00084 per kWh
+MGT LV $0.00061 per kWh
+MGT 3A $0.00043 per kWh
+GT LV $0.00062 per kWh
+GT 3A $0.00049 per kWh
+GT 3B $0.00000 per kWh
+TM-RT $108.81 per customer
+EV $0.00033 per kWh
+OL $0.22 per fixture
+SL $0.00074 per kWh
+SSL-OH $0.16 per fixture
+SSL-UG $0.16 per fixture
+SSL-OH-LED $0.16 per fixture
+SSL-UG-LED $0.16 per fixture
+TN $0.00000 per kWh
+PIV $0.00168 per kWh
+R-PIV $0.00168 per kWh
+R-TOU-P $0.00168 per kWh
+Date of Issue: May 13, 2026 Date Effective: Usage on and after May 1, 2026
+
+=== PDF physical page 154 ===
+Electric--P.S.C. Md. No. 1
+MD – RDM First Revised Page No. 63.1
+REVENUE DEFERRAL MECHANISM RIDER
+RIDER “RDM”
+RIDER “RDM” – REVENUE DEFERRAL MECHANISM RIDER
+This rider is applicable to Schedules “R”, “R-TM”, “GS”, “T”, “MGT-LV”, “MGT-3A”, “GT LV”, “GT 3A”,
+“GT 3B”, “TM-RT”, “EV”, “OL”, “SL”, “SSL-OH”, “SSL-UG”, “SSL-OH-LED”, “SSL-UG-LED”, “TN”,
+“PIV”, “R- PIV” and “R-TOU-P”.
+Revenue Deferral Period ( August 11, 2026 – August 27, 2026)
+For the Revenue Deferral Period August 11, 2026 through August 27, 2026, the Rider “RDM” is
+composed of :
+the Rider “RDM – Base Distribution” rate component, which is calculated for each rate schedule as
+the difference between the rate schedule’s base distribution rates in effect as of April 1, 2024, and
+the Company’s proposed base distribution rates for that rate schedule effective
+August 11, 2026 as filed in the Company’s Rebuttal filing on March 11, 2026 in Case No.
+9820.
+For purposes of the Rider “BSA” monthly adjustment for applicable rate schedules, the rate schedule’s
+monthly Bill Stabilization Adjustment authorized revenue per customer amounts calculated for each
+rate class for the period August 10, 2026 through August 27, 2026 shall be adjusted so as to equal the
+level of authorized distribution revenue based on the monthly revenue per customer targets in effect
+for the period August 11, 2025 through August 27, 2025.
+Each Rider “RDM – Base Distribution” rate component of the Rider “RDM” rate will be included in the
+“Distribution Services" section on customer bills, specifically within the corresponding Customer
+Charge, Energy Charge, or Maximum Demand Charge line item.
+Revenue Deferral Transition Period (August 28, 2026 – October 31, 2026)
+For the Revenue Deferral Transition Period August 28, 2026 through October 31, 2026, the Rider
+“RDM” rate is zero.
+Revenue Deferral Recovery Period (November 1, 2026 – December 31, 2026)
+The Company will file no later than September 30, 2026, an update to Rider “RDM” that will include
+Rider “RDM” rates for the Revenue Deferral Recovery Period of November 1, 2026, through December
+31, 2026. These rates will be designed for each rate schedule to recover Authorized Deferred
+Revenues for the Revenue Deferral Period. The Authorized Deferred Revenues for the Revenue
+Deferral Period are the actual deferred revenues for the Revenue Deferral Period as reconciled to
+what the Company would have been allowed to defer based on authorized rates during the Revenue
+Deferral Period pursuant to the Commission’s Final Order in Case No. 9820.
+Rider “RDM” will be labelled as “Pepco Revenue Deferral Recovery” on customer bills during the
+Revenue Deferral Recovery Period.
+Deferred Revenue Imbalance Tracking
+Rider RDM imbalances will be deferred into a regulatory asset or liability until such time as the
+Commission determines the appropriate disposition of the imbalance.
+Date of Issue: August 14, 2026 Date Effective: Usage on and after August 11, 2026
+
+=== PDF physical page 155 ===
+Electric--P.S.C. Md. No. 1
+MD – RDM First Revised Page No. 63.2
+Schedules R and R-PIV
+Distribution Service Charge August 11, 2026 – August 28, 2026 – November 1, 2026 –
+August 27, 2026 October 31, 2026 December 31, 2026
+RDM – Base
+Distribution
+Customer Charge ($0.23) $0.00 [TBD]
+Kilowatt-Hour Charge (Summer) ($0.00953) $0.00000 [TBD]
+Kilowatt-Hour Charge (Winter) ($0.01141) $0.00000 [TBD]
+.
+Schedule R-TM
+Distribution Service Charge August 11, 2026 August 28, 2026 – November 1, 2026
+– August 27, October 31, 2026 – December 31,
+2026 2026
+RDM – Base
+Distribution
+Customer Charge $1.65 $0.00 [TBD]
+Kilowatt-Hour Charge (Summer) ($0.01197) $0.00000 [TBD]
+Kilowatt-Hour Charge (Winter) ($0.01182) $0.00000 [TBD]
+Schedule GS
+Distribution Service Charge August 11, 2026 August 28, 2026 – November 1, 2026
+– August 27, October 31, 2026 – December 31,
+2026 2026
+RDM – Base
+Distribution
+Customer Charge ($0.36) $0.00 [TBD]
+Kilowatt-Hour Charge (Summer) ($0.01090) $0.00000 [TBD]
+Kilowatt-Hour Charge (Winter) ($0.01175) $0.00000 [TBD]
+Schedule T
+Distribution Service Charge August 11, 2026 – August 28, 2026 – November 1, 2026
+August 27, 2026 October 31, 2026 – December 31,
+RDM – Base 2026
+Distribution
+Customer Charge ($0.37) $0.00 [TBD]
+Kilowatt-Hour Charge (Summer) ($0.01555) $0.00000 [TBD]
+Kilowatt-Hour Charge (Winter) ($0.01173) $0.00000 [TBD]
+Schedule MGT LV
+Distribution Service Charge August 11, 2026 – August 28, 2026 – November 1,
+August 27, 2026 October 31, 2026 2026 – December
+RDM – Base 31, 2026
+Distribution
+Customer Charge ($1.36) $0.00 [TBD]
+Kilowatt-Hour Charge (Summer) ($0.00252) $0.00000 [TBD]
+Kilowatt-Hour Charge (Winter) ($0.00252) $0.00000 [TBD]
+Kilowatt Charge ($0.4009) $0.0000 [TBD]
+Date of Issue: August 14, 2026 Date Effective: Usage on and after August 11, 2026

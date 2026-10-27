@@ -1,0 +1,40 @@
+Source ID: tax_sales_tax_price_statute
+Primary URL: https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-101
+Original SHA256: 8267913109c1d8c1cc78276ab0e84ebca847d4c5caaca5b9e95708c1014fb30c
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+(l) (1) “Taxable price” means the value, in money, of the consideration of any kind that is paid, delivered, payable, or deliverable by a buyer to a vendor in the consummation and complete performance of a sale without deduction for any expense or cost, including the cost of:
+(i) any labor or service rendered;
+(ii) any material used; or
+(iii) any property, digital code, or digital product sold.
+(2) “Taxable price” includes, for tangible personal property, a digital code, or a digital product acquired by a sale for use in the State by the person who assembles, fabricates, or manufactures the property or digital product, only the price of the raw materials and component parts contained in the property or digital product.
+(3) “Taxable price” does not include:
+(i) a charge that is made in connection with a sale and is stated as a separate item of the consideration for:
+1. a delivery, freight, or other transportation service for delivery directly to the buyer by the vendor or by another person acting for the vendor, unless the transportation service is a taxable service;
+2. a finance charge, interest, or similar charge for credit extended to the buyer;
+3. a labor or service for application or installation;
+4. a mandatory gratuity or service charge in the nature of a tip for serving food or beverage to a group of 10 or fewer individuals for consumption on the premises of the vendor;
+5. a professional service;
+6. a tax:
+A. imposed by a county on the sale of coal, electricity, oil, nuclear fuel assemblies, steam, or artificial or natural gas;
+B. imposed under § 3–302(a) of the Natural Resources Article, as a surcharge on electricity, and added to an electric bill;
+C. imposed under §§ 6–201 through 6–203 of the Tax – Property Article, on tangible personal property subject to a lease that is for an initial period that exceeds 1 year and is noncancellable except for cause; or
+D. imposed under § 4–102 of this article on the gross receipts derived from an admissions and amusement charge;
+7. any service for the operation of equipment used for the production of audio, video, or film recordings; or
+8. reimbursement of incidental expenses paid to a third party and incurred in connection with providing a taxable detective service;
+(ii) the value of a used component or part (core value) received from a purchaser of the following remanufactured truck parts:
+1. an air brake system;
+2. an engine;
+3. a rear axle carrier; or
+4. a transmission;
+(iii) a charge for a nontaxable service that is made in connection with a sale of a taxable communication service, even if the nontaxable charges are aggregated with and not separately stated from the taxable charges for communications services, if the vendor can reasonably identify charges not subject to tax from its books and records that are kept in the regular course of business; or
+(iv) a transportation network company impact fee imposed under § 10–408 of the Public Utilities Article.
+(4) “Taxable price” includes all sales and charges, including insurance, freight handling, equipment and supplies, delivery and pickup, cellular telephone, and other accessories, but not including sales of motor fuel subject to the motor fuel tax, made in connection with:
+(i) a short–term vehicle rental, as defined in § 11–104(c) of this subtitle; or
+(ii) a shared motor vehicle used for peer–to–peer car sharing and made available on a peer–to–peer car sharing program, as defined in § 19–520 of the Insurance Article.
+(5) “Taxable price” includes:
+(i) for the sale or use of an accommodation facilitated by an accommodations intermediary or a short–term rental platform, the full amount of the consideration paid by a buyer for the sale or use of an accommodation, but not including any tax that is remitted to a taxing authority; and
+(ii) for the sale or use of a home amenity rental facilitated by a home amenity rental intermediary or home amenity rental platform, the full amount of consideration paid by a buyer for the sale or use of a home amenity rental, but not including any tax that is remitted to a taxing authority.
+(6) “Taxable price” does not include:
+(i) for the sale or use of an accommodation facilitated by an accommodations intermediary or a short–term rental platform, a commission paid by an accommodations provider to a person after facilitating the sale or use of an accommodation; or
+(ii) for the sale or use of a home amenity rental facilitated by a home amenity rental intermediary or home amenity rental platform, a commission paid by a home amenity rental provider to a person after facilitating the sale or use of a home amenity rental.

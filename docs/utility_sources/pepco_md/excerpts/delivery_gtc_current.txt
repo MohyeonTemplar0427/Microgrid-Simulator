@@ -1,0 +1,82 @@
+Source ID: delivery_gtc_current
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/bltb770f5b6804c804c/6939d02c4b4e4a1bd61743cd/MD_Terms_and_Conditions_-_master_file.pdf?branch=prod_alias
+Original SHA256: bcb76372dbe3d2780b014568611399f13335e6936212556e46d92479a62f570d
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 22 ===
+Electric--P.S.C. Md. No. 1
+MD Original Page No. 19
+b. Multi-month billing.
+In computing bills covering service rendered for periods of more or less
+than one month, the following provisions shall apply:
+1. Bills without separate demand charge. Bills covering periods of 16
+to 45 days inclusive shall be computed at monthly rates. Bills
+covering periods of more than 45 days shall be computed to the
+nearest multiple of one month, that is, two, three, or more months,
+as the case may be. Electricity used during periods of less than 16
+days shall be included with the next full month's billing and not billed
+separately, except that final bills covering less than 16 days shall
+be billed at monthly rates.
+2. Bills with separate demand charge. Bills covering periods of 25 to
+35 days, or multiple monthly periods consisting of multiples of 30
+days plus 25 to 35 days, shall be computed at monthly rates to the
+nearest multiple of one month. For bills covering all other periods,
+the "monthly" provisions of the respective rate schedules shall be
+applied pro rata on the basis of the ratio of the number of days
+covered to a 30-day billing period. When a billing period exceeds
+35 days as a result of a meter reading schedule change by the
+Company, the bill will be rendered as if it was for a normal billing
+month.
+c. Combined Billing
+When more than one meter is used to measure the amount of electricity
+consumed by a Customer, a bill in accordance with the appropriate rate
+schedule will be rendered for the electricity supplied through each meter.
+However, consumption registered by two or more meters supplying a single
+premises may be numerically added and a single bill rendered for the total
+consumption as though supplied through a single meter, provided the
+additional meter is made necessary by:
+1. Regulations or codes promulgated by municipal or other
+governmental authorities.
+2. The Customer's load being of such size and character as to make
+it advisable, in the opinion of the Company, to install more than one
+service control switch or more than one service connection to
+supply the premises.
+Date of Issue: May 26, 2000 Date Effective: Service rendered on
+and after July 1, 2000
+
+=== PDF physical page 24 ===
+Electric--P.S.C. Md. No. 1
+MD Original Page No. 21
+In order to ensure the accuracy of the billing, the Customer shall provide
+the Company access to the meter to obtain actual meter readings, as
+provided in Section 2(e) -- Metering. Bills based on cumulative estimated
+or Customer-reported readings of residential meters will not normally be
+allowed for more than six months after the last actual reading by the
+Company, and a lesser period may be determined appropriate by the
+Company in individual cases. Refusal to provide such access may result
+in discontinuance of service as provided in Section 9 --
+DISCONTINUANCE OF ELECTRIC SERVICE.
+e. Change of Rates
+Unless the Commission otherwise orders, rates changes effective on a
+specified date will be prorated for each affected Customer based on the
+number of days the new rate was applied to that Customer out of an
+assumed 30 day billing period. Rate changes effective "with bills rendered"
+during a nominal calendar billing month will be applied to all affected
+Customer's consumption recorded and billed during the Company's billing
+cycle which coincides approximately with that calendar month designated.
+Rate changes effective "with meters read" on and after a specified date will
+be applied to all affected Customers' consumption recorded on meters read
+on or after that date.
+f. Final Billing
+When a Residential Customer requests discontinuance of service the final
+meter reading may be computed, based on the Customer's average daily
+usage during the preceding month. A Non-Residential Customer's final bill
+will be based on an actual reading if possible. Final readings will not be
+computed when prior use is short-term or irregular so as to provide an
+unsatisfactory basis for the computation or when a Customer specifically
+requests that the meter be read. The Company reserves the right to
+estimate any Customer's final meter reading in any case where access to
+the meter is not provided within a reasonable time.
+Date of Issue: May 26, 2000 Date Effective: Service rendered on
+and after July 1, 2000

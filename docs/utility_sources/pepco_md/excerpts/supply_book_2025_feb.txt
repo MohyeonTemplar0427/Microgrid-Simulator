@@ -1,0 +1,104 @@
+Source ID: supply_book_2025_feb
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt194fef58574d7d43/6836297cc286f0907ec6c6d0/2025-02-28_MASTER_MD_Pepco_Tariff_Book_1.pdf
+Original SHA256: d51c12b339765dfb3c12b7f7b17be6f63ffc68d9eebc9aa8e52c9d90196655eb
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 98 ===
+Electric--P.S.C. Md. No. 1
+MD – SOS Thirty-Third Revised Page No. 43.1
+MONTHLY RATE
+Customers receiving Standard Offer Service will pay the Distribution Service Charge, Transmission Service
+Charge and Generation Service Charge including all applicable riders. The Distribution Service Charges
+are stated in the Monthly Rates for the Customer’s applicable Rate Schedule.
+The Standard Offer Service Rate for each Rate Schedule within each SOS Type, including any usage
+incurred under associated Riders, will include the following components:
+1. The seasonally-differentiated and, if applicable, time-of-use differentiated load weighted
+average of all awarded electric supply prices for specific services in each year.
+2. Retail charges designed to recover, on an aggregate basis, FERC-approved transmission
+charges and any other PJM charges and costs incurred by Pepco.
+3. An administrative charge, consisting of incremental, uncollectible and cash working capital
+cost, an administrative adjustment and a return (included in Generation rates tables below);
+and;
+4. Applicable taxes.
+SOS – Residential (Generation, Transmission including separately calculated GRT, and
+Procurement Cost Adjustment)
+Schedule R
+Generation Service Charge 10/01/24 – 01/31/25 02/01/25 – 05/31/25 06/01/25 – 09/30/25
+SOS Kilowatt-hour Charge $0.10115 per kwhr $0.10115 per kwhr $0.09882 per kwhr
+Administrative Charge $0.00391 per kwhr $0.00589 per kwhr $0.00589 per kwhr
+Total SOS Kilowatt Hour Charge $0.10506 per kwhr $0.10704 per kwhr $0.10471 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.01951 per kwhr $0.01951 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Schedule R-TM
+Generation Service Charge 10/01/24 – 01/31/25 02/01/25 – 05/31/25 06/01/25 – 09/30/25
+SOS Kilowatt-hour Charge
+On Peak $0.10231 per kwhr $0.10231 per kwhr $0.10243 per kwhr
+Intermediate $0.10221 per kwhr $0.10221 per kwhr $0.09707 per kwhr
+Off Peak $0.10028 per kwhr $0.10028 per kwhr $0.09773 per kwhr
+Administrative Charge $0.00391 per kwhr $0.00589 per kwhr $0.00589 per kwhr
+Total SOS Kilowatt Hour
+Charge
+On Peak $0.10622 per kwhr $0.10820 per kwhr $0.10832 per kwhr
+Intermediate $0.10612 per kwhr $0.10810 per kwhr $0.10296 per kwhr
+Off Peak $0.10419 per kwhr $0.10617 per kwhr $0.10362 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.01978 per kwhr $0.01978 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Date of Issue: January 23, 2025 Date Effective: Usage on and after February 1, 2025
+
+=== PDF physical page 99 ===
+Electric--P.S.C. Md. No. 1
+MD – SOS Thirty-Third Revised Page No. 43.2
+Schedule R-TOU-P
+Generation Service Charge 10/01/24 – 01/31/25 02/01/25 – 05/31/25 06/01/25 – 09/30/25
+SOS Kilowatt-hour Charge
+On Peak $0.20418 per kwhr $0.20418 per kwhr $0.28656 per kwhr
+Off Peak $0.09651 per kwhr $0.09651 per kwhr $0.07571 per kwhr
+Administrative Charge $0.00391 per kwhr $0.00589 per kwhr $0.00589 per kwhr
+Total SOS Kilowatt Hour Charge
+On Peak $0.20809 per kwhr $0.21007 per kwhr $0.29245 per kwhr
+Off Peak $0.10042 per kwhr $0.10240 per kwhr $0.08160 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge
+Kilowatt-hour Charge Included in Generation Service Charge
+Procurement Cost Adjustment See www.pepco.com for currently effective rate.
+Note: Schedule R-TOU-P billing periods are as follows:
+Summer – Billing months are June through September, and On-Peak hours will be between the hours of 2:00
+pm and 7:00 pm excluding weekends and holidays. All other hours are off-peak.
+Winter - Billing months are October through May, and On-P eak hours will be between the hours of 6:00 am
+and 9:00 am and the hours of 5:00 pm and 9:00 pm, excluding weekends and holidays. All other hours are
+off-peak.
+SOS – Type I Non-Residential (Generation, Transmission including separately calculated GRT, and
+Procurement Cost Adjustment)
+Schedule GS and EV
+Generation Service Charge 10/01/24 – 01/31/25 02/01/25 – 05/31/25 06/01/25 – 09/30/25
+SOS Kilowatt-hour Charge $0.10050 per kwhr $0.10050 per kwhr $0.09806 per kwhr
+Administrative Charge $0.00326 per kwhr $0.00530 per kwhr $0.00530 per kwhr
+Total SOS Kilowatt Hour Charge $0.10376 per kwhr $0.10580 per kwhr $0.10336 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.01302 per kwhr $0.01302 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Schedule T
+Generation Service Charge 10/01/24 – 01/31/25 02/01/25 – 05/31/25 06/01/25 – 09/30/25
+SOS Kilowatt-hour Charge $0.10050 per kwhr $0.10050 per kwhr $0.09806 per kwhr
+Administrative Charge $0.00326 per kwhr $0.00530 per kwhr $0.00530 per kwhr
+Total SOS Kilowatt Hour Charge $0.10376 per kwhr $0.10580 per kwhr $0.10336 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.00939 per kwhr $0.00939 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Schedule SL
+Generation Service Charge 10/01/24 – 01/31/25 02/01/25 – 05/31/25 06/01/25 – 09/30/25
+SOS Kilowatt-hour Charge $0.09791 per kwhr $0.09791 per kwhr $0.09353 per kwhr
+Administrative Charge $0.00326 per kwhr $0.00530 per kwhr $0.00530 per kwhr
+Total SOS Kilowatt Hour Charge $0.10117 per kwhr $0.10321 per kwhr $0.09883 per kwhr
+*The Administrative Charge rates typically change every February, June and October.
+Transmission Service Charge Summer Winter
+Kilowatt-hour Charge $0.00004 per kwhr $0.00004 per kwhr
+Procurement Cost Adjustment See www.pepco.com for currently effective rate
+Date of Issue: January 23, 2025 Date Effective: Usage on and after February 1, 2025

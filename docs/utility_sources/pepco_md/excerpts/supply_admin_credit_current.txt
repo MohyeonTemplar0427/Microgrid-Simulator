@@ -1,0 +1,17 @@
+Source ID: supply_admin_credit_current
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blteda6ce8aea39a7c0/6abd91df9c17130cafc66f32/Pepco_MD_Admin_Credit_-_102026_.pdf?branch=prod_alias
+Original SHA256: 97d9af9f2275aa51ebfb4bbfcbf4cbc7c8960590ea63beca502d5937fc84207f
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+OriginalURL https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blteda6ce8aea39a7c0/6abd91df9c17130cafc66f32/Pepco_MD_Admin_Credit_-_102026_.pdf?branch=prod_alias
+OriginalSHA256 97d9af9f2275aa51ebfb4bbfcbf4cbc7c8960590ea63beca502d5937fc84207f
+PhysicalPDFpage1; visually verified render.
+Credit magnitudes, dollars/kWh; apply negative sign in bills.
+Columns Jun26 Jul26 Aug26 Sep26 Oct26
+Residential .0011800 .0011800 .0011800 .0011800 .0012500
+TypeI .0006900 .0006900 .0006900 .0006900 .0007100
+Not supply administrative charge.
+
+[Outlined table: visual transcription; original render retained.]

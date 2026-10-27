@@ -19,7 +19,10 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"bge_maryland":(39.08,-76.57,"Hypothetical unincorporated Anne Arundel County, Maryland site outside Annapolis/Highland Beach; BGE service, SOS and tax jurisdiction require independent confirmation"),
+SITES={"potomac_edison_maryland":(39.60,-77.73,"Hypothetical unincorporated Washington County, Maryland site; Potomac Edison utility/SOS, unmetered history and tax jurisdiction independently confirmed, not inferred from coordinates"),
+       "delmarva_maryland":(38.40,-75.65,"Hypothetical unincorporated Wicomico County, Maryland site; Delmarva service, SOS, estimated-demand assignment and tax jurisdiction independently confirmed, not inferred from coordinates"),
+       "pepco_maryland":(39.05,-77.18,"Hypothetical unincorporated Montgomery County, Maryland site; Pepco service, SOS and tax jurisdiction independently confirmed, not inferred from coordinates"),
+       "bge_maryland":(39.08,-76.57,"Hypothetical unincorporated Anne Arundel County, Maryland site outside Annapolis/Highland Beach; BGE service, SOS and tax jurisdiction require independent confirmation"),
        "ppl_electric_pennsylvania":(40.63,-75.61,"Hypothetical unincorporated Lehigh County, Pennsylvania site; PPL service, ordinary default supply and tax jurisdiction are explicit account assumptions, not a map finding"),
        "aep_ohio":(40.22,-83.03,"Hypothetical unincorporated Delaware County, Ohio site; Ohio Power Company service, legacy rate zone and absence of municipal charges require separate account confirmation"),
        "alliant_energy_iowa":(42.10,-91.46,"Hypothetical rural Linn County, Iowa site; Interstate Power & Light service and unincorporated tax jurisdiction are explicit account assumptions, not a map finding"),
@@ -112,7 +115,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
         request["operating_contract"]["renewable_only_charging"]=True
-    if utility in ("alliant_energy_iowa", "aep_ohio", "bge_maryland") and not residential:
+    if utility in ("alliant_energy_iowa", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland") and not residential:
         # An explicitly small-office reference, not automatic classification
         # from a simulated monthly/annual load or the default larger office.
         request["solar"]["dc_capacity_kw"]=5.
@@ -319,14 +322,14 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
+    if utility in ("potomac_edison_maryland", "delmarva_maryland", "pepco_maryland", "bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
-    if utility=="ameren_missouri":
+    if utility in ("ameren_missouri", "potomac_edison_maryland"):
         _,first_block,first_cycle=cycles[0]
         module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],equipment=equipment)
     alternatives=r.get("tariff_comparisons",[])

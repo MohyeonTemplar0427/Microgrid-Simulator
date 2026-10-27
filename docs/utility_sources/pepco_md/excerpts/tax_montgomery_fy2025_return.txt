@@ -1,0 +1,45 @@
+Source ID: tax_montgomery_fy2025_return
+Primary URL: https://www.montgomerycountymd.gov/Finance/Resources/Files/FY2025PublicUtilityReturnFillable.pdf
+Original SHA256: 2f0b0c2538a930bd649f0a248930b6776d8819a6d19d7390d0a09aa2c7c9a2b5
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+MONTGOMERY COUNTY, MARYLAND FET-2025-B
+DIVISION OF TREASURY – EXCISE TAX UNIT Rates effective on or after
+27 Courthouse Square, Suite 200 July 1, 2024
+Rockville, Maryland 20850 Phone: 240-777-8962
+excisetax@montgomerycountymd.gov
+PUBLIC UTILITY FUEL-ENERGY TAX RETURN
+Company Name: IMPORTANT
+►T his return must be received ON
+Address: OR BEFORE the last day of the
+month immediately following the
+period for which the return is filed.
+► A return must be filed even if no
+City, State, Zip: tax is due.
+► See page titled Fuel-Energy T ax
+Phone: Information.
+Fuel Energy Tax Tax Return for
+Account Number: Month and Year:
+Non-Residential Distributions
+Total Gross Sales LESS Sales or NET Sales or
+and/or Deliveries in Deliveries Subject Deliveries Subject
+Type of Fuel Energy the County to Exemptions to Fuel Energy Tax Rate of Tax Amount of Tax
+Electricity: kWh - 0.01978 $ -
+Gas: Therms - 0.17026 $ -
+Residential and Agricultural Distributions
+Electricity: kWh - 0.01106 $ -
+Gas: Therms - 0.09515 $ -
+Interest and Penalty Tax Due
+Months
+Late Total Non-Residential Tax Due: $ -
+Penalty @ 10% per
+month: $ - Total Residential Tax Due: $ -
+Interest @ 1/2% per
+month: $ - Total Tax Due (plus Int & Pen): $ -
+Make check or money order payable to Montgomery County Maryland and mail to the above address.
+I declare under penalty of perjury that this return has been examined by me and to the
+best of my knowledge and belief is true, correct, and complete.
+Signature Title Date
+Print Name Email Address

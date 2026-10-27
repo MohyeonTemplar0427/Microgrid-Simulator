@@ -1,0 +1,67 @@
+Source ID: tax_psc_relief_2025jun27
+Primary URL: https://www.psc.state.md.us/wp-content/uploads/MD-PSC-Sets-Plan-to-Distribute-Legislative-Refund-Act-Money_06272025.pdf
+Original SHA256: 9e49bdef32bf7da1300be1a46ad64c9c51def23f430a05a3661dde70a1f0d21a
+Original remains authoritative. Physical PDF pages are one-based.
+
+=== Physical PDF page 1; pypdf layout extraction, whitespace normalized. ===
+COMMISSIONERS
+___________
+CONTACT: Tori Leonard
+FREDERICK H. HOOVER, JR. tori.leonard@maryland.gov
+CHAIR
+MICHAEL T. RICHARD
+KUMAR P. BARVE
+BONNIE A. SUCHMAN
+ODOGWU OBI LINTON
+Maryland PSC Sets Plans to Refund Residential Utility Customers
+First of two credits to appear on late summer bills
+For Immediate Release: June 27, 2025
+Media Contact: Tori Leonard | tori.leonard@maryland.gov
+(BALTIMORE, MD) - The Maryland Public Service Commission has established a plan
+to provide bill credits to residential electricity customers under the Next Generation
+Energy Act (Senate Bill 937/House Bill 1035) that authorized the creation of the
+Legislative Energy Relief Refund, was passed by the General Assembly in the 2025
+legislative session and signed by Governor Wes Moore. The $200 million authorized
+for refunds will be applied to utility bills in two phases - one in August or September
+of this year, and one in either January or February of 2026.
+“The Commission reviewed a number of proposals from utilities, the Office of
+People’s Counsel, the Commission’s Technical Staff and other stakeholders and has
+selected a plan that will allow for the most equitable, efficient and timely
+distribution of refunds to provide relief to customers, particularly those most
+affected by bill increases this past winter,” said Frederick H. Hoover, Chair of the
+Public Service Commission.
+The amount of individual refunds will be based on average customer electricity
+usage over a year; the estimated refund amount for both phases would be an
+average of about $80 per customer depending upon the utility service territory.
+Lower usage customers would see lower credits and higher usage customers would
+receive higher credits. To ensure all customers receive some meaningful benefit
+the Commission has directed the utilities to direct 25 percent of the refunds this
+summer to minimum credits.
+To be eligible for the first round of credits, the customer must have an active
+residential electric account as of June 1, 2025, must have recorded electricity usage
+during the 12-month period ending March 31, 2025 (to cover the impacts of this
+past winter’s heating season), and must be an active account holder during the
+billing month in which the credit is applied to the customer’s bill.
+
+=== Physical PDF page 2; pypdf layout extraction, whitespace normalized. ===
+The Commission also noted that it is possible there will be customers receiving the
+credit who can afford to pay their bills but may wish to assist other customers who
+cannot. The Commission asked parties to develop messaging or promotion to
+accompany the bill credits that highlight programs customers can use to donate
+money (unrelated to the bill credit) to, such as Fuel Fund of Maryland or SMECO’s
+Members Helping Members program.
+Also, the Commission requested the utilities to examine their ability to redirect a
+customer's credit to customers who receive bill assistance through the state’s Office
+of Home Energy Programs, if requested by the customer. While this may not be
+feasible for the first round of bill credits, the parties should consider if such a
+mechanism could be implemented for the winter 2026 bill credits.
+###
+About the Public Service Commission:
+The Maryland Public Service Commission regulates electric and gas utilities and suppliers,
+telephone companies (land lines), private water and sewer companies, passenger motor
+vehicle carriers for hire, taxicab companies in some jurisdictions and bay pilot rates. The
+Commission implements the energy policy of the State and also regulates the siting of
+energy generating facilities and high-voltage transmission lines.
+WILLIAM DONALD SCHAEFER TOWER ∙ 6 ST. PAUL STREET ∙ BALTIMORE, MARYLAND 21202-6806
+410-767-8000 ∙ Toll Free: 1-800-492-0474 ∙ FAX: 410-333-6495
+MDRS: 1-800-735-2258 (TTY/Voice) ∙ Website: www.psc.state.md.us

@@ -14,6 +14,18 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "potomac_edison_maryland": {"label":"Potomac Edison · Maryland", "state":"MD", "zone":"APS", "module":"potomac_edison_md", "timezone":"America/New_York",
+                               "grid_operator":"PJM",
+                               "grid_sources":["https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonSupplierTariff.pdf",
+                                               "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "delmarva_maryland": {"label":"Delmarva Power · Maryland", "state":"MD", "zone":"DPL", "module":"delmarva_md", "timezone":"America/New_York",
+                         "grid_operator":"PJM",
+                         "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+                                         "https://www.delmarva.com/my-account/my-dashboard/rates-tariffs/maryland/current-tariffs"]},
+    "pepco_maryland": {"label":"Pepco · Maryland", "state":"MD", "zone":"PEPCO", "module":"pepco_md", "timezone":"America/New_York",
+                       "grid_operator":"PJM",
+                       "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+                                       "https://www.pepco.com/my-account/my-dashboard/rates-tariffs/maryland/current-tariffs"]},
     "bge_maryland": {"label":"Baltimore Gas and Electric · Maryland", "state":"MD", "zone":"BGE", "module":"bge_md", "timezone":"America/New_York",
                      "grid_operator":"PJM",
                      "grid_sources":["https://dataminer2.pjm.com/feed/bill_deter_mnt_load",

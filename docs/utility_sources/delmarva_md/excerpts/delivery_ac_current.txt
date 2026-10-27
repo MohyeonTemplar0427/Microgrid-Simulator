@@ -1,0 +1,22 @@
+Source ID: delivery_ac_current
+Primary URL: https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt919c5f716ed2f78e/6abd979dd463366c81c10b3a/DPL_MD_Admin_Credit_-_102026_.pdf?branch=prod_alias
+Original SHA256: 6537256fbe95237cf34e69825a91b27080f7544371af1d5a02194e24cba98893
+Original remains authoritative. Physical PDF pages are one-based.
+
+=== Physical PDF page 1; Ordinary text extraction; rotated layout had omitted text. Original render retained. ===
+Jun-26 Jul-26 Aug-26 Sep-26 Oct-26 Nov-26 Dec-26 Jan-27 Feb-27 Mar-27 Apr-27 May-27
+SOS Type
+Residential 1/ $0.0013800 $0.0013800 $0.0013800 $0.0013800 $0.0014200 $0.0014200 $0.0014200 $0.0014200
+Type I 2/ $0.0008430 $0.0008430 $0.0008430 $0.0008430 $0.0009010 $0.0009010 $0.0009010 $0.0009010
+Type II 3/ $0.0002270 $0.0002270 $0.0002270 $0.0002270 $0.0002540 $0.0002540 $0.0002540 $0.0002540
+HPS 4/ $0.0013120 $0.0013120 $0.0013120 $0.0013120 $0.0012240 $0.0012240 $0.0012240 $0.0012240
+1/ Applies to Schedules "R", "R-TOU-ND", "R-TOU-P", "R-PIV", and "PIV"
+2/ Applies to Schedules "SGS-S I", "GS-WATER HEATING", GS-SPACE HEATING", "ORL", and "OL"
+3/ Applies to Schedules "SGS-S II SOS", "LGS-S II SOS", and "GS-P II SOS"
+4/ Applies to Schedules "LGS-S III", "GS-P III", and "GS-T III"
+RATES EFFECTIVE October 1, 2026
+Note: This rate typically changes every February, June, and October. Please revisit this page for most current information.
+DELMARVA POWER
+MARYLAND
+ADMINISTRATIVE CREDIT ($/kWh)
+APPLICABLE TO DELIVERY SERVICE CUSTOMERS

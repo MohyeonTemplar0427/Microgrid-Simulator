@@ -1,0 +1,22 @@
+Source ID: supply_pca_2025_feb
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt9e3743d1d4f743f9/679d1303c9ecbb3763c0d104/Pepco_MD_SOS_-_PCA_022025.pdf?branch=prod_alias
+Original SHA256: 714d2000c0c44ea27757942d104f6180a7fad523248fa3e8410bc0b0d69d2099
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+POTOMAC ELECTRIC POWER COMPANY
+MARYLAND
+PROCUREMENT COST ADJUSTMENT ($/kWh)
+APPLICABLE TO STANDARD OFFER SERVICE CUSTOMERS
+RATES EFFECTIVE JUNE 1, 2024
+Note: This rate changes periodically. Please revisit this page for most current information.
+SOS Type Jun-24 Jul-24 Aug-24 Sep-24 Oct-24 Nov-24 Dec-24 Jan-25 Feb-25 Mar-25 Apr-25 May-25
+Residential 1/ (0.0035278) (0.0037639) (0.0026213) (0.0028946) (0.0036424) (0.0032105) (0.0025311) (0.0017815) (0.0030934)
+Type I 2/ (0.0128871) (0.0137390) (0.0143381) (0.0151405) (0.0158014) (0.0155680) (0.0152332) (0.0154652) (0.0162402)
+Type II 3/ (0.0032288) (0.0026037) (0.0019060) (0.0024432) (0.0025718) (0.0021123) (0.0022342) (0.0021243) (0.0024357)
+HPS 4/ 0.0271187 0.0256776 0.0234370 0.0272334 0.0241570 0.0272546 0.0296817 0.0297045 0.0288662
+1/ Applies to Schedules "R", "R-TM", "R-TOU-P", "PIV", and "R-PIV"
+2/ Applies to Schedules "GS", "T", "TN", "EV", "OL" and "SL"
+3/ Applies to Schedules "MGT LV II" and "MGT 3A II".
+4/ Applies to Schedules "MGT LV III", "MGT 3A III", "GT LV", "GT 3A", "GT 3B", and "TM-RT".

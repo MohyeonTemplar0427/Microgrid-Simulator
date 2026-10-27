@@ -1,0 +1,25 @@
+Source ID: delivery_bsa_april2025
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt048e03b25e5de0cf/67ec27843c6595589ce5236f/Pepco_MD_BSA_-_042025.pdf?branch=prod_alias
+Original SHA256: 3a31091439a42c9f0459c2e99ec98f074d0424c4392b800077c1de24382721ba
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+ATTACHMENT 1
+POTOMAC ELECTRIC POWER COMPANY
+MARYLAND
+BILL STABILIZATION ADJUSTMENT ($/kWh)
+APPLICABLE TO DISTRIBUTION CUSTOMERS
+Feb-25 Mar-25 Ap r - 2 5
+Rate Class
+R* (0.001328) (0.003096) (0.005530)
+R-TM (0.001022) (0.001113) (0.006161)
+GS 0.005659 0.005801 0.005987
+MGT-LV (0.003028) (0.002234) (0.003738)
+MGT-3A (0.001653) (0.001673) (0.001681)
+GT-LV 0.000358 0.001091 (0.003719)
+GT-3A (0.000991) (0.001397) 0.002057
+GT-3B (0.000774) (0.000805) (0.000774)
+T 0.003009 0.003069 0.003166
+EV 0.002107 0.002102 0.001820
+*Includes Rate Schedules R, PIV, R-PIV, R-T OU-P

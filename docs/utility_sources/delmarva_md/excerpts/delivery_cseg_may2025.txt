@@ -1,0 +1,92 @@
+Source ID: delivery_cseg_may2025
+Primary URL: https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt37f69113f2ff3899/6813cee9952c500a8dd0aae0/DPL_MD_CSEG_-_05012025.pdf?branch=prod_alias
+Original SHA256: 8064e1cc3cf30cc1d2faf9499d5b01f087d64fbf5b55cf7a3986e82748bcd94f
+Original remains authoritative. Physical PDF pages are one-based.
+Retail-sign transcription of selected R/SGS-S monthly component rows. Charges positive, credits negative; original CSEG signs are reversed. Fixed customer, USP, delivery demand, RRC and account-specific refunds excluded from published variable composite. SGS transmission energy component applies only first3500kWh.
+CAUTION: Ordinary text extraction reorders first-two-month cells in these originals; use rendered column positions and this labeled per-month transcription.
+
+2025-01 R, physical PDF page 1
+generation: 0.09575600
+supply_admin: 0.00385200
+pca: 0.00544620
+transmission_energy_first_3500_sgs: 0.01945600
+base_energy: 0.07148200
+bsa: 0.00784000
+mes: 0.00015000
+empower: 0.01264900
+administrative_credit: -0.00120100
+franchise: 0.00062000
+myp: -0.00264700
+published_variable_composite: 0.21340320
+
+2025-01 SGS-S, physical PDF page 2
+generation: 0.09575600
+supply_admin: 0.00406700
+pca: 0.00186740
+transmission_energy_first_3500_sgs: 0.01983800
+base_energy: 0.04154900
+bsa: 0.00556300
+mes: 0.00015000
+empower: 0.01119100
+administrative_credit: -0.00050600
+franchise: 0.00062000
+myp: -0.00175600
+published_variable_composite: 0.17833940
+
+2025-02 R, physical PDF page 1
+generation: 0.09575600
+supply_admin: 0.00481300
+pca: 0.00504160
+transmission_energy_first_3500_sgs: 0.01945600
+base_energy: 0.07148200
+bsa: 0.00087900
+mes: 0.00015000
+empower: 0.01264900
+administrative_credit: -0.00119800
+franchise: 0.00062000
+myp: -0.00264700
+published_variable_composite: 0.20700160
+
+2025-02 SGS-S, physical PDF page 2
+generation: 0.09575600
+supply_admin: 0.00526700
+pca: 0.00060430
+transmission_energy_first_3500_sgs: 0.01983800
+base_energy: 0.04154900
+bsa: -0.00182500
+mes: 0.00015000
+empower: 0.01119100
+administrative_credit: -0.00046100
+franchise: 0.00062000
+myp: -0.00175600
+published_variable_composite: 0.17093330
+
+2025-03 R, physical PDF page 1
+generation: 0.09575600
+supply_admin: 0.00481300
+pca: 0.00466360
+transmission_energy_first_3500_sgs: 0.01945600
+base_energy: 0.07148200
+bsa: -0.00443200
+mes: 0.00015000
+empower: 0.01264900
+administrative_credit: -0.00119800
+franchise: 0.00062000
+myp: -0.00264700
+published_variable_composite: 0.20131260
+
+2025-03 SGS-S, physical PDF page 2
+generation: 0.09575600
+supply_admin: 0.00526700
+pca: 0.00138900
+transmission_energy_first_3500_sgs: 0.01983800
+base_energy: 0.04154900
+bsa: -0.00090000
+mes: 0.00015000
+empower: 0.01119100
+administrative_credit: -0.00046100
+franchise: 0.00062000
+myp: -0.00175600
+published_variable_composite: 0.17264300
+
+Original footnote: Gross Receipts tax is embedded in applicable rates. No export/community-solar settlement support follows.

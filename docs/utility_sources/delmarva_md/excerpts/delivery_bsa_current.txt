@@ -1,0 +1,23 @@
+Source ID: delivery_bsa_current
+Primary URL: https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/bltbc8859786ea995d7/6abd95feaf264f00d4bbc05e/DPL_MD_BSA_-_102026_.pdf?branch=prod_alias
+Original SHA256: 494cc2b66123653f143d88fb65cdeca726d23873a9009f65b1b0e5e0e6d42bc3
+Original remains authoritative. Physical PDF pages are one-based.
+
+=== Physical PDF page 1; Ordinary text extraction; rotated layout had omitted text. Original render retained. ===
+Jun-26 Jul-26 Aug-26 Sep-26 Oct-26 Nov-26 Dec-26 Jan-27 Feb-27 Mar-27 Apr-27 May-27
+Rate Class
+($/kWh)
+R* (0.001603) 0.002644 0.002305 (0.002557) 0.008578
+SGS (0.000579) 0.003230 0.000547 (0.000852) 0.001865
+GS-SH (0.002173) (0.002159) (0.002155) (0.002159) (0.002178)
+GS-WH 0.001979 0.001813 0.001821 0.001886 0.002145
+($/kW)
+LGS (1.449944) (0.653776) (1.572932) (0.881589) (1.621531)
+GS-P 1.018351 0.759112 1.050705 1.051738 1.053237
+*Includes Service Classifications R, R-TOU-ND, R-TOU-P, R-PIV, PIV
+DELMARVA POWER
+Note: This rate changes periodically. Please revisit this page for most current information.
+RATES EFFECTIVE 2026 - 2027
+APPLICABLE TO DISTRIBUTION CUSTOMERS
+BILL STABILIZATION ADJUSTMENT
+MARYLAND

@@ -1,0 +1,140 @@
+Source ID: supply_bill_education_2025
+Primary URL: https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt25da1effbd15aac6/6814f48b4fad9846f3c40b76/Pepco-MD_Bill_Education_Fact_Sheet_ada.2.pdf
+Original SHA256: 145835664f82e46cb7d82b969a75a19830595c19f14639a2b002148c492302f4
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 2 ===
+Breaking Down Your Pepco Bill
+The remaining bill pages provide a complete breakdown of your energy charges.
+PAGE TWO
+JOHN SMITH Your electric bill for the period
+Account number: 1234 5678 910 January 29, 2025 to February 25, 2025
+DISTRIBUTION Details of your Electric Charges
+Residential Service - service number 0000 0000 0000 0000 0000 01
+CHARGE Electricity you used this period
+Based on your usage Meter Energy End Start Number Total TOTAL ELECTRIC
+and covers your use Number Type Date Date Of Days Use
+1AB000000001 Use (kWh) Feb 25 Jan 29 28 987USAGE IN KILOWATT
+of the electric delivery Reading Reading Multiplier
+system, which is 131810 130823 1 HOURS (KWH)
+the infrastructure Your meter records electric energy use in hourly intervals. Your bill is the total of all
+necessary to deliver hourly intervals recorded during your billing period.
+energy to your home. End and start date kWh meter readings are provided for informational purposes only.
+It also includes the Please visit My Account at pepco.com to view your energy use data.
+Bill Stabilization Your next bill period is scheduled to end on March 26, 2025
+Adjustment (BSA), CUSTOMER
+which is updated Delivery Charges: These charges reflect the cost of bringing electricity to you. CHARGE
+monthly to ensure Current charges for 28 days, winter rates in effect. Same for all
+the company does Type of charge How we calculate this charge Amount($) customers in a rate
+not make more or Distribution Services: type, designed to
+less than the Customer Charge 8.44cover fixed costs such
+approved revenue Energy Charge 987 kWh X $0.0421520 per kWh 41.61 as metering, billing
+depending on your Pepco Revenue Deferral and customer care.
+energy usage. Recovery 2.40
+Franchise Tax (Delivery) 987 kWh X $0.0006200 per kWh 0.61
+Universal Service Charge 0.32
+MD Environmental
+EmPOWER Surcharge 987 kWh X $0.0001500 per kWh 0.15
+EmPOWER Maryland SURCHARGES
+MARYLAND Charge 987 kWh X $0.0137900 per kWh 13.61Fixed or usage-based
+CHARGE Gross Receipts Tax at 2.0408% 1.37
+Montgomery County fees and credits related
+This supports energy Energy Tax 987 kWh X $0.0113205 per kWh 11.17 to special programs or
+efficiency programs Administrative Credit 987 kWh X $0.0010900- per kWh 1.08− regulations.
+that can help customers Total Electric Delivery Charges 78.60
+save energy and lower
+their bill. Page 2 of 4
+Check here to enroll in the Direct Debit plan Sign and date here
+By signing here, you authorize Pepco to electronically deduct the amount of your monthly bill from your checking account each month. The
+check you send with this signed authorization will be used to set up Direct Debit. You understand that we will notify you each month of
+the date and amount of the debit, which will be on or after the due date stated on your monthly bill. You understand that to withdraw this
+authorization you must call Pepco. You understand that Pepco does not charge for this service, but that your bank may have charges for this
+service.
+Customer Service Centers
+Washington DC Maryland
+701 Ninth St NW (Mon - Fri) 8:30am - 5:15pm 201 West Gude Dr, Rockville (Mon - Fri) 10:00am - 2:00pm
+2300 Martin Luther King Jr Ave SE (Mon - Fri) 9:00am - 5:00pm 8300 Old Marlboro Pk, Forestville (Mon, Wed, Fri) 10:00am - 2:00pm
+Any inquiry or complaint about this bill should be made prior to the due date, in order to avoid late charges.
+Electronic Check Conversion - When you provide a check as payment, you authorize us either to use information from your check to make a
+one-time electronic fund transfer from your account or to process the payment as a check transaction.
+Printed on recyclable paper.
+
+=== PDF physical page 3 ===
+PAGE THREE
+JOHN SMITH
+Account number: 1234 5678 910
+Supply Charges: These charges reflect the cost of producing electricity for you.
+You can compare this part of your bill to offers from competitive suppliers.
+Your Price to Compare is 11.96 cents ($0.1196) per kWh. When shopping
+for electric suppliers, compare this price to those proposed by other suppliers. This
+price reflects the average annual amount a customer on this rate pays per kilowatt-
+hour for Electric Supply. For information on electric energy suppliers please visit
+MDEnergyChoice.com.
+Billing Period: Jan 29, 2025 to Feb 25, 2025 (28 days)
+PROCUREMENT
+COST ADJUSTMENT
+Updated monthly
+as a charge or
+credit, ensuring
+Pepco receives
+only its approved
+cost for purchasing
+your electricity.
+STANDARD OFFER
+Breaking Down Your Pepco Bill SERVICE (SOS)
+Includes the pass-
+through cost of
+electricity purchased
+on your behalf and
+00 00000000 000000001 is determined by
+Your electric bill for the period supply and demand
+January 29, 2025 to February 25, 2025 of electricity. This
+charge also includes
+the transmission
+network, managed by
+PJM Interconnection,
+and reliability
+upgrades needed
+to carry electricity
+long distances from
+generators to Pepco
+customers locally. If
+you use a third-party
+supplier, it would be
+listed here.
+kWh
+13201650100 33099066020 60 80 40 0 0Type of chargeHow we calculate this chargeAmount($)
+Transmission Services:
+Energy Charge 987 kWh X $0.0195100 per kWh 19.26Month Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb
+24 ELECTRIC DELIVERY
+24
+23
+Gross Receipts Tax at 2.0408% 0.3923
+2324
+232324
+Your daily electricity use for this bill period. Visit My Account at pepco.com to see your hourly electricity use.232424
+2424 AND SUPPLY TOTAL
+Generation Services: 23
+Meter Number 1ND35502535924
+23
+23
+Energy Charge 987 kWh X $0.1068693 per kWh 105.48Temp 50 45 47 46 34 42 50 39 39 46 36 41 40 34 35 41 38 38 47 38 31 23 28 32 34 41 46 5223AND CUSTOMER TYPE
+Procurement Cost 25
+Adjustment 987 kWh X $0.0030934- per kWh 3.05−24
+24
+Total Electric Supply Charges 122.08
+2425
+Total Electric Charges - Residential Service200.68 Date 29 30 31 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+Your monthly Electricity use in kWh MONTHLY ELECTRIC
+Daily temperature averages: Feb 2024: 44° F Feb 2025: 40° F USE CHART
+kWh Your smart electric meter is read wirelessly. Visit My Account at pepco.com to view your daily and hourly energy usage.
+DAILY ELECTRIC Compares year-over-
+Pepco EV charging stations are in a neighborhood near you, learn more here Pepco.com/ev.USE CHART
+If you are moving or discontinuing service, please contact Pepco at least three days in advance. year monthly electric
+Information regarding rate schedules and how to verify the accuracy of your bill will be mailed upon request.Can be used to usage (kWh), and
+review individual average temperatures.
+usage patterns that Page 3 of 4 Illustrates how weather
+may correlate with and usage impact
+bill changes. your bill.
+Year

@@ -1,0 +1,24 @@
+Source ID: tax_surcharges_2026jul
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt6afbc02ddcc5eacf/6a45513583e4e82736c79df7/Pepco_MD_Other_Surcharges_-_072026_.pdf?branch=prod_alias
+Original SHA256: e651a1748aee49dd9f6e37599eec07e25dd435cd4ce21ff0ce677e83a899aaf9
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 1 ===
+POTOMAC ELECTRIC POWER COMPANY
+MARYLAND
+OTHER NON-TARIFF SURCHARGES ($/kWh)
+APPLICABLE TO STANDARD OFFER SERVICE CUSTOMERS
+RATES EFFECTIVE JULY 2026
+Note: Rate may change periodically. Please revisit this page for most current information.
+Jul-26 Aug-26 Sep-26 Oct-26 Nov-26 Dec-26 Jan-27 Feb-27 Mar-27 Apr-27 May-27 Jun-27
+Prince Georges County Tax (1) $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260 $ 0.0164260
+Maryland Environmental Surcharge $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500 $ 0.0001500
+(1)
+Montgomery County Surcharge (2)
+Residential $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242 $ 0.0113242
+Non-Residential $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525 $ 0.0202525
+Delivery Tax (3) $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620 $ 0.000620
+(1) Applied to all meters read on or after July 1, 2026
+(2) Effective for energy transmitted or distributed on or after July 1, 2026
+(3) Tax rate imposed under COMAR paragraph 8-402.1 for each kilowatt hour of electricity delivered, effective with billing month of April 2000

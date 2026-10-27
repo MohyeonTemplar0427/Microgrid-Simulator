@@ -754,6 +754,21 @@ legislative relief refunds; G includes the selected ordinary taxes. Component
 prices and numeric/convex expressions are shared without wholesale-price or
 export-settlement substitution. See [scope and sources](BGE_Maryland.md).
 
+## Pepco Maryland R/GS SOS · October 2026
+
+`billing/pepco_md.py` and snapshot-safe `pepco_md_rates.py` reuse schema11 for
+R residential and secondary GS Type I SOS. Executable intersections are
+January–February2025 and July–October2026; missing PCA/BSA/tax history and the
+May–June2026 MES discrepancy reject. Both plans return verified-charge subtotals:
+R excludes unverified RGGI/legislative fixed credits, GS excludes unresolved state
+sales-tax calculation. Same-clock base/RDM changes are reported net, including
+exact August2026 cancellation; separate transition invoice rounding is not claimed.
+Montgomery County tax locality, dated USC assignment, Type I eligibility and
+ordinary non-export interconnection remain explicit account facts. Maryland
+retail service stays distinct from DC and the shared PEPCO PJM zone. Shared
+PV/storage, isolated workers, saved artifacts and representative OpenDSS are
+reused. See [scope and evidence](Pepco_Maryland.md).
+
 ## Ameren Missouri bundled service · October 2026
 
 `billing/ameren_mo.py` and snapshot-safe `ameren_mo_rates.py` add residential
@@ -781,3 +796,34 @@ No wholesale/capacity/transmission adder or CAISO carbon is substituted. Approve
 non-export PV/storage only, no NEM credits or standby. The shared local-browser,
 worker, bill/artifact and representative OpenDSS paths are reused. See
 [Missouri scope and evidence](Ameren_Missouri.md). GUI development remains paused.
+
+## Delmarva Maryland R/SGS-S SOS · October 2026
+
+`billing/delmarva_md.py` and snapshot-safe `delmarva_md_rates.py` add R residential
+and a bounded SGS-S Type I SOS option to the existing regional worker/browser.
+SGS-S retains explicitly utility-assigned E.3 estimated demand (kWh/175), with
+monthly imports at most3,500kWh and actual15-minute peak below20kW. Distribution
+demand charges remain present; no metered-demand rounding or tariff classification
+is inferred. Complete-calendar intersections are January–June2025, September2025
+and May–October2026. Intramonth allocation gaps and missing monthly history reject.
+Both plans disclose verified-charge subtotals: R excludes unverified fixed credits,
+SGS-S excludes state sales-tax calculation. Delmarva's embedded GRT is not grossed
+up again. Wicomico tax locality, utility/SOS, demand method, year-specific USC,
+interconnection and the multi-state DPL zone remain independent facts. Shared
+PV/storage, saved artifacts and representative OpenDSS are reused. See
+[scope and evidence](Delmarva_Maryland.md).
+
+## Potomac Edison Maryland R/G SOS · October 2026
+
+`billing/potomac_edison_md.py` and snapshot-safe `potomac_edison_md_rates.py` add
+ordinary R residential and bounded unmetered G Type I SOS, September–October2026.
+R has complete ordinary component coverage. G reports a subtotal excluding
+unverified transmission minimum/capacity and state sales tax. Its prior12monthly
+imports roll separately per scenario; numeric acceptance conservatively requires
+minimum-inactive distribution charges and capacity/actualpeak below the supported
+7.5kW boundary. Unknown floor cases reject; the optimizer does not force imports
+or invent minimum/rounding formulas. Inclusive supply administration is charged
+once, and zero2026RRC is source-labeled. Locality, utility/SOS, USC, method/history,
+ordinary NEM-account approval and multi-state APS metadata remain independent.
+Shared billing/dispatch, worker/API contracts and representative replay are reused;
+validation follows the targeted utility policy. See [scope and sources](Potomac_Edison_Maryland.md).

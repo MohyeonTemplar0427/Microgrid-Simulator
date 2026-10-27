@@ -1,0 +1,1585 @@
+DERIVED SCOPED EXCERPT — ORIGINAL URL: https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonRetailTariff.pdf
+STATUS: official_published_evidence
+
+
+PHYSICAL PDF PAGE10
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 4-1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RULES AND REGULATIONS COVERING THE SUPPLY OF ELECTRIC SERVICE 
+ 
+1. DEFINITIONS (Continued) 
+ 
+ (d) “Company Charges”:    The sum of the Fixed and Variable Distribution Charges and any surcharges 
+that may be in effect from time to time.  Also includes  Transmission Charges and electric supply charges if Default 
+Electricity Supply Service is taken from the Company. 
+ 
+ (e) “Competitive Power Supply”:    Unbundled energy and capacity provided by an Electricity Supplier to 
+Customers.  Competitive Power Supply  does not include energy or capacity pr ovided to Customers by the Company 
+in the provision of Default Electricity Supply Service. 
+ 
+ (f) “COMAR”:    Code of Maryland Regulations. 
+ 
+ (g) “Customer”:    Any corporation, municipality, gov ernmental agency, person, partnership or other entity to 
+whom the Company may furnish Service. 
+ 
+ (h) “Default Electricity Supply Service”:    An electr icity supply Service provided by the Company, consisting 
+of Residential SOS, Type I SOS, Type II SOS, and Hourly-Priced LCS. 
+ 
+ (i) “Electricity Supplier”:    An entity that has been certified or licensed by the Commission to sell electricity 
+to Customers within the State of Maryland.  For the pur pose of this document, the Company is not an Electricity 
+Supplier in the provision of Default Electricity Supply Service. 
+ 
+ (j) “Energy Required”:    The use of energy by the Customer, expressed in kwh, kilowatt-hours; the use of 
+1,000 watts for one hour. 
+ 
+ (k) “FERC”:    Federal Energy Regulatory Commission. 
+ 
+ (l) “Fixed Distribution Charge”:    A charge to reco ver the distribution costs, which are due to the presence 
+of the Customer on the distribution system, regardless of the energy consumed or Capacity Required. 
+ 
+ (m) “Hourly-Priced Large Customer Service (LCS)”:    Hourly-Priced LCS is available from January 1, 2005 
+to non-residential Customers not eligible for Type I SOS or Type II SOS.  
+ 
+ (n) “Load Limiter”:  Device that automatically inte rrupts electric Service at a residence when the preset 
+electrical load is exceeded.  The Cu stomer must decrease usage and press the reset button on the device to restore 
+Service. 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE11
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ First Revision of  
+ Original Page No. 4-2 
+ Canceling 
+ Original Page No. 4-2 
+ 
+ 
+ 
+RULES AND REGULATIONS COVERING THE SUPPLY OF ELECTRIC SERVICE 
+ 
+1. DEFINITIONS (Continued) 
+ 
+ (o) “Master Metered Service”:    Electric Service provided to multiple occupancy buildings and associated 
+common areas and facilities, the electrical energy and load usage for which is measured for billing purposes through 
+a single meter.  The owner/operator of the multiple occupancy building may collect the utility bill from occupants in the 
+form of rent. 
+ 
+ (p) “Meter”:    A device that measures electric power.  Meter excludes supplemental components including, 
+but not limited to, meter cabinets, test switches, metering transformers (current transformers and potential 
+transformers) and associated wiring connections. 
+ 
+ (q) “Month”:    The period between two monthly meter readings, taken as nearly as practicable on the same 
+date each calendar month as selected by the Company. 
+ 
+ (r) “PJM”:    PJM Interconnection, L.L.C. 
+ 
+ (s) “Point of Service”:    The point of connection between the electric lines of the Company and the electric 
+system of the Customer. 
+ 
+ (t) “Rate Schedule”:    A rate which may be obtained by a Customer if their use of Service conforms to the 
+character of supply contemplated in the rate. 
+ 
+ (u) “Residential Service”:    Service through one meter to a householder or tenant living in a separate 
+dwelling unit, such as a house, mobile home, or separate apartment in a building, each such dwelling unit having a 
+separate kitchen, using electric energy for general household Service, and may include use of electric energy for 
+lighting the yard, private garages and/or barns which are adjacent to and on the same parcel as the residence being 
+served and are used exclusively by the resident being served. 
+ 
+ (v) “Residential Standard Offer Service (SOS)”:    Residential SOS is available for all residential Customers 
+taking Service under Rate Schedule R or Rate Schedule R -TOU.  Residential SOS includes an administrative charge 
+of $0.00400 per kilowatt-hour. 
+ 
+ (w) “Service”:    Any electricity which the Company may supply or distribute, or any work or material 
+furnished or any obligation performed by the Company hereunder or any Rate Schedule of the Company. 
+ 
+ (x) “Submetered Service”:    The metered measurement of Service by the owner/operator of a Master 
+Metered multiple occupancy building for the purpose of determining the actual use of individual occupants. 
+ 
+ (y) “Transmission Charge”:    Transmission Charge is based on PJM’s Open Access Transmission Tariff 
+which will change from time to time and is subject to FERC approval.   
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  November 20, 2025 Effective  April 20, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of January 7, 2026. 
+
+PHYSICAL PDF PAGE12
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ First Revision of 
+ Original Page No. 4-3 
+ Canceling  
+ Original Page No. 4-3 
+ 
+ 
+RULES AND REGULATIONS COVERING THE SUPPLY OF ELECTRIC SERVICE 
+ 
+1. DEFINITIONS (Concluded) 
+ 
+ 
+ (z) “Type I Standard Offer Service (SOS)”:    Type I SOS is available for all non -residential Customers taking 
+Service under Rate Schedules OL, AL, MSL, EMU, MU , LED and special lighting contracts for Hagerstown and 
+Frederick; for non-residential Customers taking Service under Rate Schedules C, G, C -A, and CSH that during the 
+prior year do not have a metered 30 -minute billing demand that equals or exceeds 25 kW; energy consumption in 
+excess of 6,000 kWh in any two consecutive Non- Summer billing months; or a monthly energy consumption that 
+exceeds 7,500 kWh for a single Summer billing month; and for non-residential Customers taking Service under Rate 
+Schedule MFH-EV. Summer billing months shall include the billing months of June through September, whereas 
+Non-Summer billing months shall consist of all other billing months.  Type I SOS includes an administrative charge of 
+$0.00550 per kilowatt-hour. 
+ 
+ (aa) “Type II Standard Offer Service (SOS)”:    Type II SOS is available for non-residential Customers taking 
+Service under Rate Schedules C, G, C -A, and CSH that are not eligible for Type I SOS, and for non -residential 
+Customers taking Service under Rate Schedule PH with a PJM capacity peak load contribution less than 600 
+kilowatts as of June 1st of each year.  Type II SOS includes an administrative charge of $0.00600 per kilowatt-hour. 
+ 
+ (bb) “Universal Service Program (USP)”:    A program that helps low -income Customers maintain electric 
+Service, includes Customer bill assistance and payment programs, termination of Service protection, and policies and 
+Services that help low-income Customer to reduce or manage energy consumption in a cost-effective manner. 
+ 
+ (cc)  “Variable Distribution Charge”:    Charge to recover the balance of distribution costs, not recovered in 
+the Fixed Distribution Charge, which are stated as variable charges and based on the billing determinants to which 
+they are most closely associated. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued February 28, 2025 Effective  April 1, 2025 
+ 
+Approved at Public Service Commission Administrative Meeting of March 26, 2025 in Case No. 9478. 
+
+PHYSICAL PDF PAGE22
+ 
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ First Revision of 
+ Original Page No. 4-13 
+ Canceling 
+ Original Page No. 4-13 
+ 
+ 
+RULES AND REGULATIONS COVERING THE SUPPLY OF ELECTRIC SERVICE 
+ 
+10. METERING AND BILLING (Continued) 
+ 
+ (iii) One Bill Option  available for r esidential and n on-residential Customers – Electricity Supplier 
+Consolidated Billing (Bill Ready Option).  The issues of the Electricity Supplier’s qualifications 
+to provide a consolidated billing S ervice and their ability to purchase Company receivables 
+have not been determined.  Should any Electricity Supplier elect to provide Electricity Supplier 
+Consolidated Billing, the Commission has determined that the issues of purchase of 
+receivables and the qualifications of the Electricity Supplier to provide consolidated billing must 
+be considered prior to any Electricity Supplier Consolidated Billing being implemented.  The 
+Company will adjust the residential Customer’s bill under the Average Payment Plan to reflect 
+the Company’s regulated non-Competitive Power Supply charges. 
+ 
+ (b) Where Service is rendered under Rate Schedule provisions which do not require Monthly demand 
+measurements and when the Customer selects the Company to provide the billing Services, meters may be read and 
+bills rendered either Monthly or bimonthly at the Company’s option.  When meters are read at bimonthly intervals, 
+bills for the initial months of the interval may be estimated either from a like period of similar use or in some other 
+reasonable way.  The bill for the final months of the interval will be calculated from the metered use during the interval 
+corrected for the amount of estimated use previously billed. 
+ 
+ (c) All electricity delivered by the Company shall be on the basis of meter measurement, except for 
+installations where the usage is constant and the consumption may readily be computed, and all charges for 
+electricity used shall be calculated from the meter reading of estimated consumption and the usage at each Point of 
+Service shall be billed separately. 
+ 
+ (d) Monthly bills issued by the Company shall be rendered, as nearly as practicable, for 30 day periods.  
+However, bills for less than 25 days or more than 35 days for Monthly billing, shall be prorated on the basis of the 
+ratio of the number of days in the period to the number of days included in the standard period, which will be taken at 
+thirty days for Monthly billing.  Bills shall be due on the date rendered.  In case of any dispute as to date of rendering 
+the postmark shall control 
+ 
+ (e) Bills issued by the Company for special or short term Service, including charges for connection and 
+disconnection, may be rendered at any time at the discretion of the Company, and will be payable upon presentation. 
+ 
+ (f) If Service is supplied to the Customer before a meter is placed in use or while the metering is defective, 
+the Customer will pay for Service on a basis estimated from a period of similar use. 
+ 
+ (g) When an investigation discloses excessive bills due to an accidental ground on Customer’s wiring or 
+equipment, occurring without the knowledge of the Customer, an allowance for a share of such wastage will be made 
+by the Company. 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  December 2, 2025 Effective  January 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of December 23, 2025. 
+
+PHYSICAL PDF PAGE45
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 4-36 
+ 
+ 
+ 
+ 
+ 
+ 
+RULES AND REGULATIONS COVERING THE SUPPLY OF ELECTRIC SERVICE 
+ 
+19. UTILITY SERVICE PROTECTION PROGRAM 
+ 
+ The Company has established a Utility Service Protec tion Program (USPP) effective November 1, 1988 for 
+residential Customers certified eligible by the Maryland Energy Assistance Program. 
+ 
+ For USPP participants, electric Servic e will be maintained and late pay charges (Rule 12(b) of this tariff) will be 
+suspended providing plan participants make timely payments prescribed by the program.  Security deposits or non-
+pay reconnect charges will not be collected from eligible plan participants. 
+ 
+ 
+20. IMPOSED RELOCATIONS OR UNDERGROUNDING 
+ 
+ When the Company is required by any political subdivis ion of the United States, or any agency thereof, to 
+place new facilities, which are not mandated underground facilities pursuant to COMAR, or to relocate existing 
+facilities underground, or to otherwise relocate existing fac ilities; the cost of such plac ement or relocation shall be 
+recovered by the Company in the manner hereafter provided. 
+ 
+ The political subdivision or agency which imposes the requirement for relocation or undergrounding shall pay 
+the adjusted cost thereof in advance.  In absence of such payment, the Com pany may recover, within a period of five 
+years, such adjusted cost by means of  a surcharge applied upon the bills of all Customers whose electric Service 
+delivery points are situated within the political subdivision. 
+ 
+ 
+21. DEFAULT ELECTRICITY SUPPLY SERVICE 
+ 
+ (a) General 
+ 
+  Default Electricity Supply Service is provided to Customers who either: 
+ 
+ (1) Contract for electricity with a certified Electricity Supplier and it is not delivered; 
+  
+ (2) Cannot arrange for electricity from a certified Electricity Supplier; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE46
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 4-37 
+ 
+ 
+ 
+ 
+ 
+ 
+RULES AND REGULATIONS COVERING THE SUPPLY OF ELECTRIC SERVICE 
+ 
+21. DEFAULT ELECTRICITY SUPPLY SERVICE (Concluded) 
+ 
+ (3) Do not choose a certified Electricity Supplier; 
+ 
+ (4) Choose the Default Electricity Supply Service; or 
+ 
+ (5) Have been denied Service or referred to the Default Electricity Supply Service by a certified 
+Electricity Supplier because of a delinquent account. 
+ 
+  The Company shall collect transmission revenues pursuant to the applicable FERC approved Open 
+Access Transmission Tariff. 
+ 
+ (b) At any time on a regularly scheduled meter readi ng date, Customers may switch Electricity Suppliers or 
+leave or return to the Company's Default Electricity Supply Service.  If an Electricity Supplier defaults, a Customer 
+may return to Company's Default Electricity Supply Servic e at any time regardless of scheduled meter reading dates 
+until the effective date of a pending or authorized Electricity Supplier switch. 
+ 
+ (c) Customer Termination of Serv ice at Existing Account.  If a Customer contacts the Company to 
+discontinue electric Service, the Company will notify the current Electricity S upplier of the Customer's discontinuance 
+of Service for the account at the Customer's location.  If available, the Company will provide the Electricity Supplier 
+that served the Customer at the old location with the Customer's new mailing address or forwarding address. 
+ 
+ (d) Electricity Supplier Discontinuance of Service.  When initiating the discontinuance of Service to 
+Customers, the Electricity Supplier must comply with t he notification requirements of  the Commission and submit a 
+valid drop transaction to the Company on the date the Custom er is notified.   An Electricity Supplier must provide the 
+Company 60 days advanced notice of its int ent to discontinue Service to a non-residential Customer or to an entire 
+class of Customers. 
+ 
+ (e) Effective Date of Discontinuance.  Any discont inuance will take effect on a meter read date and in 
+accordance with the provisions of this Tariff that govern a retail Customer’s change of Electricity Supplier.  
+ 
+ (f) Customer Number Change.  If the Company elects to change the account number for a Customer 
+receiving generation Service from the Electricity Supplier , the Company will notify the Electricity Supplier of the 
+change in account number at the same Customer location, via electronic file. 
+ 
+ (g) Full Requirements Service Provision.  The Electr icity Supplier shall agree to supply full requirements 
+Service for each of its Custom ers at each Customer account enrolled.  Partial requirement s or split load Service will 
+not be supported. 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE50
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 4-41 
+ 
+ 
+ 
+ 
+ 
+ 
+RULES AND REGULATIONS COVERING THE SUPPLY OF ELECTRIC SERVICE 
+ 
+22. CHANGING ELECTRIC SUPPLIERS (Continued) 
+ 
+ (g) Transaction Error Handling.  An Electricity Supp lier shall notify the Company of an enrollment or drop 
+error via an Electronic Data Interchange cancel transaction no later than two (2) business days after the enrollment or 
+drop transaction is initiated by the El ectricity Supplier.  The Company shall process the cancel transaction and return 
+the Customer to the Customer’s enrollment state before the erroneous transaction. 
+ 
+ (1) Incumbent Electricity Supplier-Identified Errone ous Transactions.  If an erroneous transaction is 
+identified by the incumbent Electricity Supplier, the incumbent Electricity Supplier shall, upon 
+verifiable consent of the Custom er, cancel the pending enrollment by notifying the Company by an 
+Electronic Data Interchange cancel transaction wi thin 24 hours of the Customer’s consent and not 
+later than two (2) business days after the erroneous  enrollment of drop transaction is received by 
+the Company.  Initiation of the Electronic Data Interchange cancel transaction by the incumbent 
+Electricity Supplier without the verifiable Cu stomer consent is c onsidered an unauthorized 
+enrollment of the Customer with the incumbent Electricity Supplier. 
+ 
+ (2) Electronic Cancel Transactions Received Lat er Than Two Business Days.  Electronic cancel 
+transactions received from the incumbent Electricit y Supplier later than two (2) business days after 
+the erroneous enrollment or drop transaction is received by the Company will be rejected.  
+ 
+ (h) Customer Designation to Control.  The Electric ity Supplier acknowledges and agrees that the Company 
+will give effect to all Customer requests to change to a new  Electricity Supplier, and cons equently the last Customer 
+designation of an Electricity Supplier, for which the procedures under Secti on 22(c) have been completed, will be 
+given effect by the Company.  
+ 
+ 
+23. BACK-UP SUPPLY FOR SELF-GENERATORS 
+ 
+ Service for Standby (Back-Up) or Maintenance purpos es is available under the Company’s Alternative 
+Generation Schedule, Schedule “AGS”.  Retail Customers, who sell any portion of their on-site, self-generation into 
+the market, may not replace t hat generation with su pplementary Service supplied under  any schedule in this Tariff.  
+Such replacement power will be provided at a rate determined by contract. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE51
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ First Revision of  
+ Original Page No. 5 
+ Canceling 
+ Original Page No. 5 
+ 
+ 
+ 
+ 
+ 
+ 
+UNIVERSAL SERVICE PROGRAM SURCHARGE 
+ 
+ Effective for bills rendered on and after June 1, 2019, t here shall be a Universal Service Program Surcharge 
+per Customer at rates set forth below to fund the Maryland statewide Universa l Service Program.  These rates shall 
+be applied each month and are based on the distribution amount of customer bills rendered in the prior calendar year.  
+Amounts included hereunder shall be subject to late pay charges. 
+ 
+ Electric Bills 
+ Rendered Customer Charge 
+ (Prior Calendar Year) (per month) 
+ 
+Residential - Rate Schedule R 
+ N/A $0.32 
+ 
+Commercial & Industrial - Rate Schedules C, G, C-A, CSH, PH, AGS, PP, Hagerstown, and Frederick. 
+ 
+ Under $175 $0.25 
+ $175 - $1,299 $1.84 
+ $1,300 - $2,599 $6.14 
+ $2,600 - $6,499 $12.28 
+ $6,500 - $12,999 $24.56 
+ $13,000 - $25,999 $36.84 
+ $26,000 - $51,999 $49.13 
+ $52,000 - $77,999 $92.11 
+ $78,000 - $103,999 $122.82 
+ $104,000 - $129,999 $184.21 
+ $130,000 - $181,999 $276.33 
+ $182,000 - $233,999 $368.44 
+ $234,000 - $259,999 $552.65 
+ $260,000 - $519,999 $736.87 
+ $520,000 - $779,999 $982.49 
+ $780,000 - $1,039,999 $1,228.12 
+ $1,040,000 - $1, 299,999 $1,473.75 
+ $1,300,000 - $1, 559,999 $1,719.37 
+ $1,560,000 - $1, 819,999 $1,964.99 
+ $1,820,000 - $2, 079,999 $2,149.21 
+ $2,080,000 - $2, 339,999 $2,333.43 
+ $2,340,000 - $2, 599,999 $2,456.24 
+ $2,600,000 - $3, 249,999 $2,579.05 
+ Over $3,250,000 $2,763.27 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  May 1, 2019 Effective  June 1, 2019 
+ 
+Issued under Order No. 89015 dated May 29, 2019 in Case No. 8903. 
+ 
+
+PHYSICAL PDF PAGE52
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Ninth Revision of 
+ Original Page No. 5-1 
+ Canceling 
+ Eighth Revision of 
+ Original Page No. 5-1 
+ 
+ 
+COGENERATION PURPA PROJECT TERMINATION AGREEMENT SURCHARGE 
+ 
+ Effective for all Service rendered on and after January  1, 2026, there shall be a surcharge at rates set forth 
+below to recover costs associated with the Agreement between the Company and AES WR Limited Partnership to 
+terminate the parties’ former COGENERATION PURPA PROJECT  Agreement.  The Termination Agreement was  
+approved by the Commission on June 21, 2023.  Applicable bills rendered shall include an amount equal to the 
+surcharge rate times the number of kilowatts and kilowatt -hours used in the billing period.  The resulting charge is in 
+addition to any minimum charge set out in the Rate Schedule and is added to the Customer's charges before any tax 
+surcharge is levied against the Customer's total bill.  Amounts billed hereunder shall be subject to late pay charges.   
+ 
+ 
+COGENERATION PURPA PROJECT TERMINATION AGREEMENT SURCHARGE 
+ 
+   
+ Schedule Rate Per kW Rate Per kWh 
+ 
+ R  $0.00806 
+ C  0.00953 
+ G  0.00953 
+ C-A  0.01050 
+ CSH  0.01050 
+ PH $1.87 0.00421 
+ AGS 1.87 0.00421 
+ PP 0.917 0.00198 
+ OL  0.01335 
+ AL  0.01335 
+ MSL  0.01335 
+ EMU  0.01335 
+ MU  0.01335 
+ LED  0.01335 
+ Fred/Hag  0.00953 
+   
+ 
+ 
+ Rates for Service under each of the Company's Rate Schedules are subject to this surcharge. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  November 17, 2025 Effective  January 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of December 23, 2025 in Case No. 8797. 
+
+PHYSICAL PDF PAGE53
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 5-2 
+ 
+ 
+ 
+ 
+ 
+ 
+FRANCHISE TAX SURCHARGE 
+APPLICABLE TO ALL SCHEDULES AND SPECIAL CONTRACTS 
+ 
+ Effective with all bills rendered on and after January 7, 2000, there shall be a franchise tax surcharge at  
+$0.00062 per kilowatt-hour which shall be billed under all Ra te Schedules and contracts.  A credit of $0.000020 shall 
+apply to kilowatt-hours in excess of 500 million up to 1,5 00 million delivered during a calendar year to a single 
+industrial Customer for use in a production activity at the same location.  A credit of $0.000455 shall apply to kilowatt-
+hours in excess of 1,500 million delivered during a calendar year to a single industrial Customer for use in a 
+production activity at the same location.  All bills re ndered shall include an amount equal to the Franchise Tax 
+Surcharge times the kilowatt-hours used in the billing period.   The resulting charge is in addition to any minimum 
+charge set out in the Rate Schedule and is added to the Customer's bill before any surc harge is levied against the 
+Customer's total bill.  Amounts billed hereunder shall be subject to late pay charges. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE55
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Sixth Revision of 
+ Original Page No. 5-4 
+ Canceling 
+ Fifth Revision of 
+ Original Page No. 5-4 
+ 
+ 
+ 
+ 
+MARYLAND ENVIRONMENTAL SURCHARGE 
+ 
+ The charges to Customers served in Maryland, shall include, in addition to the charges specified in this tariff, 
+an environmental surcharge, imposed by the State of Maryland on all kilowatt -hours distributed in Maryland.  The 
+amount of the surcharge shall be shown as a separate item on bills rendered to Customers served in Maryland, 
+except wholesale Customers. 
+ 
+ Adjustments in bills will be made by adding to each bill, as determined by application of the appropriate Rate 
+Schedule, a tax surcharge.  The charge to be added will be determined by the Commission as of June 30 each year 
+to be applied the following year. 
+ 
+ 
+STATEMENT OF ENVIRONMENTAL SURCHARGE RATES 
+APPLICABLE TO BILLS FOR ELECTRIC SERVICE SUPPLIED 
+WITHIN STATE OF MARYLAND UNDER 
+PROVISIONS OF NATURAL RESOURCES SECTION 3-302  
+ENVIRONMENTAL TRUST FUND 
+ 
+ 
+ 
+ Effective 
+  Date  Location Surcharge Rate 
+ 
+ July 1, 2026 State of Maryland $0.000149/Kwh 
+ not to exceed $1,000 per month 
+ 
+ 
+ 
+ This surcharge is applicable to all Rate Schedules.  This surcharge is not subject to Maryland Sales Tax or 
+Montgomery County Local Tax.  This surcharge shall be set out separately on the Customer's bill the same as the 
+two above mentioned taxes and is not subject to late payment charge and is not considered revenue. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY CHRISTIAN T. BEAM, PRESIDENT 
+ 
+Issued  June 30, 2026 To become effective on 
+ all bills rendered on 
+ or after July 1, 2026 
+ 
+Issued in accordance with the Commission’s directive June 30, 2026 
+
+PHYSICAL PDF PAGE56
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Ninth Revision of 
+ Original Page No. 5-5 
+ Canceling 
+ Eighth Revision of 
+ Original Page No. 5-5 
+ 
+ 
+ 
+EMPOWER MD SURCHARGE 
+ 
+ In accordance with the Annotated Code of Maryland, Public Utility Companies, Section 7-211, Energy 
+Efficiency Programs, there shall be a surcharge as set forth below to recover the costs associated with Company -
+sponsored programs which promote energy efficiency and conservation and such other programs as approved by the 
+Commission.  This surcharge is applied to designated Rate Schedules to recover costs allocated to that Rate 
+Schedule.  This surcharge will be applied each month until changed by the Commission.  The resulting surcharge is 
+in addition to any minimum charge set out in the Rate Schedule and is added to the Customer's bill before any tax 
+surcharge is levied against the Customer's total bill.  Amounts billed hereunder shall be subject to late pay charges. 
+ 
+ 
+CALCULATION OF SURCHARGE 
+ 
+ The EmPower MD Surcharge is a rate per kilowatt -hour and is calculated by dividing the costs allocated to 
+each Rate Schedule by the distribution kilowatt -hour sales expected for the same Rate Schedule.  The calculation 
+includes a Reconciliation Factor adjustment, and an adjustment for gross receipts tax and the Commission 
+assessment factor.  Changes to the surcharge will be filed annually on or before December 1, to become effective the 
+forthcoming 12-month period beginning January 1.  Upon determination that the surcharge, if left unchanged, would 
+result in a material over/under -collection, the Company may file a proposed interim revision of the surcharge for 
+Commission approval. 
+ 
+ Applicable bills rendered shall include an amount equal to the surcharge rate times the number of 
+distribution kilowatt-hours as follows: 
+   
+ Schedule Rate per kWh 
+ R $0.01376 
+ C $0.01142 
+ G $0.01142 
+ C-A $0.01142 
+ CSH $0.01142 
+ PH (small)* $0.01700 
+ PH (large)* $0.02559 
+ PP $0.01979 
+ OL $0.00202 
+ AL $0.00202 
+ MSL $0.00202 
+ EMU $0.00202 
+ MU $0.00202 
+ LED $0.00202 
+ Hag/Fred $0.00202 
+ 
+ *PH (small) defined as Customers eligible to receive Type II SOS and PH (large) defined as Customers 
+eligible to receive Hourly-Priced LCS. 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  November 17, 2025 Effective  January 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of December 23, 2025 in Case No. 9705. 
+
+PHYSICAL PDF PAGE57
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Second Revision of 
+ Original Page No. 5-6 
+ Canceling 
+ First Revision of 
+ Original Page No. 5-6 
+ 
+ 
+ 
+EMPOWER MD SURCHARGE (Concluded) 
+ 
+ELIGIBLE COSTS 
+ 
+ Costs eligible for recovery through the EmPower MD Surcharge are approved by the Commission and 
+include: 
+ 
+ Program Costs -- Program Costs are the actual and/or estimated costs incurred by the Company 
+for research, development, implementation and operation of programs approved by the 
+Commission.  Program Costs include, but are not limited to, Company labor, rebates and 
+incentives, payments to third parties for program administration and implementation, marketing and 
+advertising costs incurred by the Company, market research costs, program development, 
+monitoring and evaluation, consultant and contractor fees, applicable software and software 
+licenses, program measurement and monitoring hardware, and all other administrative activities 
+associated with program development and implementation.   Unamortized balances will accrue 
+interest monthly at the Company’s average cost of outstanding debt. 
+ 
+ Reconciliation Factor --  The Reconciliation Factor corrects for over/under -collection of Program 
+Costs.  For the period ending each December, the differences between actual and forecasted 
+Program Costs incurred, and actual and forecasted revenues collected from the EmPower MD 
+Surcharge, as adjusted for removal of gross receipts tax and the Commission assessment factor, 
+are included in the Reconciliation Factor.  The Reconciliation Factor is debited or credited against 
+the Program Costs eligible for recovery through the Empower MD Surcharge for the forthcoming 
+12-month period beginning January 1. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  November 27, 2024 Effective  January 1, 2025 
+ 
+Approved at Public Service Commission Administrative Meeting of December 18, 2024 in Case No. 9705. 
+ 
+
+PHYSICAL PDF PAGE59
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 5-8 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ADMINISTRATIVE CREDIT 
+ 
+ 
+ The charges to all Customers taking Service under Rate Schedules R, C, G, C-A, CSH, PH, OL, AL, MSL, EMU, 
+MU and special lighting contracts for Hagerstown and Frederick,  shall include, in addition to the charges specified in 
+this tariff, an Administra tive Credit.  Customers receiving Hourly-Price d LCS under the terms and conditions of the 
+Hourly-Priced LCS Rider shall not be eligible for this credit. 
+ 
+ For residential Customers taking Service under Rate Schedu le R, the Administrative Credit will be in the form of 
+a per kilowatt-hour credit, which will be calculated by dividing the available residential administrative adjustment 
+revenues by the total residential distribution kilowatt-hours.  For all other Customers, t he Administrative Credit shall 
+reflect revenues collected in excess of the Company’s incremental costs to provide Type I SOS and Type II SOS.  
+Applicable bills rendered shall include an amount equal to the credit times the number of kilowatt-hours used in the 
+billing period.  The resulting credit is in addition to any mi nimum charge set out in the Rate Schedule and is added to 
+the Customer’s bill before any surcharge is levied against the Customer’s bill. 
+ 
+ Credits shall be calculated in accordance with the Phase I Settlement Agreement in Case No. 8908.  
+Adjustments to the credits will be m ade in June, October and January, or more frequently if necessary.  For 
+residential Customers taking Service under Rate Schedule R, this adjustment will reflect changes in the residential 
+administrative adjustment revenues and the level of distribution kilowatt-hour  sales used to calculate the credit.  For 
+all other Customers, this adjustment will reconcile pa yments of this credit against the Company’s actual and 
+forecasted revenues in excess of the incremental costs to provide Type I SOS and Type II SOS. 
+ 
+ The current Administrative Credits are available on the Company’s website at www.firstenergycorp.com . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE60
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 5-9 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ENERGY COST ADJUSTMENT SURCHARGE 
+ 
+ 
+ There shall be an Energy Cost Adju stment Surcharge that applies to all Cu stomers receiving Residential SOS, 
+Type I SOS, Type II SOS and Hourly-Priced LCS. 
+ 
+ This surcharge shall recover the difference between billed Transmission and Electric Supply Charges against 
+payments by the Company to PJM and wholesale Electricity Suppliers.  Reconciliation adjustments to this surcharge 
+will be made in June, October and January, or more frequentl y if necessary.  Applicable bills rendered shall include 
+an amount equal to the surcharge times the number of k ilowatt-hours used in the billing period.  The resulting 
+charge/(credit) is in addition to any minimum charge set ou t in the Rate Schedule and is added to the Customer’s bill 
+before any surcharge is levied against the Customer’s bill. 
+ 
+ The current Energy Cost Adjustment Surchar ge is available on the Company’s website at 
+www.firstenergycorp.com . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE61
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Fifth Revision of 
+ Original Page No. 5-10 
+ Canceling 
+ Fourth Revision 
+ Original Page No. 5-10 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+With the effective date appearing below, 
+the Electric Distribution Investment Surcharge 
+is hereby canceled. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  January 18, 2024 Effective  January 17, 2024 
+ 
+Approved at Public Service Commission Administrative Meeting of January 17, 2024 in Case No. 9490. 
+
+PHYSICAL PDF PAGE62
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Eleventh Revision of  
+ Original Page No. 6 
+ Canceling  
+ Tenth Revision of 
+ Original Page No. 6 
+ 
+ 
+RESIDENTIAL SERVICE 
+SCHEDULE "R" 
+AVAILABILITY 
+ 
+ Available for single-phase Residential Service through one meter.  All applicable surcharges, credits and 
+taxes shall apply. 
+ 
+MONTHLY RATE 
+ 
+ DISTRIBUTION CHARGES 
+ 
+ FIXED DISTRIBUTION CHARGE 
+ 
+ $6.00 per month.  
+ 
+ VARIABLE DISTRIBUTION CHARGE 
+ 
+ Energy Charge  
+ All kilowatt-hours................................................................................ $0.02287 per kilowatt-hour 
+  
+ TRANSMISSION CHARGE 
+ 
+ Energy Charge 
+ All kilowatt-hours................................................................................ $0.00396 per kilowatt-hour 
+ 
+ The Transmission Charge is based on PJM’s Open Access Transmission Tariff which will change from time to 
+time and is subject to FERC approval. 
+ 
+ ELECTRIC SUPPLY CHARGE 
+ Summer Non-Summer 
+     06-01-2026 thru 10-01-2026 thru 
+     09-30-2026 05-31-2027 
+ Energy Charge  
+ All kilowatt-hours....................... $0.10824 per kilowatt-hour .............. $0.10209 per kilowatt-hour 
+ 
+ The Transmission and Electric Supply Charges apply only to Customers receiving Residential SOS from the 
+Company.  These charges do not apply to Customers obtaining Competitive Power Supply.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  January 16, 2026 Effective  June 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of February 18, 2026 
+in Case Nos. 8908, 9056, and 9064. 
+
+PHYSICAL PDF PAGE63
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 6-1 
+ 
+ 
+ 
+ 
+ 
+ 
+RESIDENTIAL SERVICE 
+SCHEDULE "R" (Concluded) 
+ 
+LATE PAYMENT CHARGE 
+ 
+ Applies to this schedule as set forth in  Company Rule No. 12 of this tariff. 
+ 
+GENERAL 
+ 
+ Service supplied is subject to the Rules and Regulations  Covering the Supply of Electric Service, and  the 
+“Customer Guide for Electric Service-Maryland”.  
+ 
+ This schedule includes Service to a residence which has a commercial enterprise or office within it, provided 
+the total installation used for purposes other than residential is not greater than 500 watts. 
+ 
+ When two or more dwelling units including two or more houses on a farm are supplied through a single 
+meter, each shall be classed as a single residence with  the Customer Charge increased proportionately to number of 
+dwelling units.  This provision restri cted to those Customers and locations served in this manner on June 13, 1974. 
+All such new installations shall be separately metered. 
+ 
+ Farms will be served under this Rate Schedule as re sidential Customers when the farm is operated by the 
+owner or lessee of the farm residence and land, and when the farm equipment connec ted load is less than the 
+residence connected load.  In determining connected load , electric motor load over one horsepower shall be counted 
+as one horsepower equals ½ kilowatt and electric space heating equipment shall be c ounted as ½ of its full 
+connected load.  Farms operated as commercial enterpri ses by tenants, managers and other paid personnel for 
+absentee owners or engaged in retail sales shall not be served under this rate as residential Customers. 
+ 
+ Customers have the option of  using the Company's Average Payment Plan as set forth in Company Rule 10 
+of this tariff. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE69
+ 
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Third Revision of  
+ Original Page No. 7 
+ Canceling 
+ Second Revision of 
+ Original Page No. 7 
+ 
+ 
+GENERAL SERVICE 
+SCHEDULE "G" 
+ 
+AVAILABILITY 
+ 
+ Available for single-ph ase and three-phase Service at standard Company voltage throughout the entire 
+territory served by the Company.  The standard voltage depe nds upon the location, char acter and size of the 
+Customer's load.  This information can be furnish ed at any of  the Company's offices.  Service s hall not be available 
+for Standby  or Maintenance Service such as that required for Alternative Generation Facil ities.  Al l appli cable 
+surcharges, credits and taxes shall apply. 
+ 
+MONTHLY RATE 
+ 
+ DISTRIBUTION CHARGES 
+ 
+ FIXED DISTRIBUTION CHARGE 
+ 
+  $4. 85 per month. 
+ 
+  VARIABLE DIST RIBUTION CHARGES 
+ 
+ Capacity Charge  
+ Minimum kilowatts................................................................................................. $1.70 per kilowatt 
+ All kilowatts in excess of 7.5 measured as set forth under 
+ “Determination of Capacity” .............................................................................. $2.12 per kilowatt 
+ 
+ Energy Charge  
+ All kilowatt-hours .....................................................................................$0.02243 per kilowatt-hour 
+  
+ Voltage Discount  
+ 
+ Company will furnish Service at one voltage and at one point from the Compan y's e xisting distribution 
+system voltage.  A voltage disc ount of 25¢ per  kilowatt will apply wh en the Customer takes S ervice at a v oltage 
+between 2,000 and 15,000 volts and prov ides all facilities beyond the Point of Service.  A voltage discount of 50¢ per 
+kilowatt will apply when t he Customer takes Service at a v oltage greater than 15,000 volts and provides all facilities 
+beyond the Point of Service. 
+ 
+ Reactive Kilovolt-Ampere Charge 
+ 
+ Reactive kilovolt-ampere charge is applied to the Customer’s reactive kilovolt-ampere capacity requirement 
+in excess of 25% of the Customer’s kilowatt capacity. 
+ 
+ B
+illing reactive kilovolt-amperes.................................................$0.40 per reactive kilovolt-ampere 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  January 29, 2024 Effective  March 1, 2024 
+ 
+Approved at Public Service Commission Administrative Meeting of February 21, 2024 in Case No. 9695. 
+
+PHYSICAL PDF PAGE70
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Thirtieth Revision of 
+ Original Page No. 7-1 
+ Canceling 
+ Twenty-ninth Revision of 
+ Original Page No. 7-1 
+ 
+ 
+GENERAL SERVICE 
+SCHEDULE "G" (Continued) 
+ TRANSMISSION CHARGES 
+ 
+ Capacity Charge 
+ Minimum Charge ................................................................................................$0.34 per month 
+ Minimum kilowatts ............................................................................................$0.19 per kilowatt  
+ All kilowatts in excess of 7.5 measured as set forth under 
+ “Determination of Capacity” ..........................................................................$0.24 per kilowatt  
+ 
+ Energy Charge  
+ First block (0-700 kilowatt-hours) ....................................................... $0.00440 per kilowatt-hour 
+ Second block (over 700 kilowatt-hours) ............................................. $0.00214 per kilowatt-hour 
+ 
+ The Transmission Charges are based on PJM’s Open Access Transmission Tariff which will change from time to 
+time and is subject to FERC approval.  
+ 
+ ELECTRIC SUPPLY CHARGES 
+   Type I SOS 
+     Summer Non-Summer 
+     06-01-2026 thru 10-01-2026 thru 
+     09-30-2026 05-31-2027 
+ Capacity Charge 
+ All kilowatts in excess of 7.5 measured as set forth under 
+  “Determination of Capacity” ................................ $9.99 per kilowatt ................ $11.44 per kilowatt 
+ 
+ Energy Charge  
+ First block (0-700 kilowatt-hours) ................ $0.13108 per kilowatt-hour ......... $0.15064 per kilowatt-hour 
+ Second block (over 700 kilowatt-hours) ...... $0.06067 per kilowatt-hour ......... $0.06977 per kilowatt-hour 
+ 
+   Type II SOS 
+     09-01-2026 thru 
+     11-30-2026 
+ Capacity Charge 
+ All kilowatts in excess of 7.5 measured as set forth under 
+  “Determination of Capacity” .................................................... $10.14 per kilowatt 
+ 
+ Energy Charge  
+ First block (0-700 kilowatt-hours) .................................... $0.13345 per kilowatt-hour 
+ Second block (over 700 kilowatt-hours) .......................... $0.06176 per kilowatt-hour 
+ 
+ The Transmission and Electric Supply Charges apply only to Customers receiving Type I SOS or Type II SOS 
+from the Company.  These charges do not apply to Customers obtaining Competitive Power Supply. 
+ 
+ 
+ISSUED BY CHRISTIAN T. BEAM, PRESIDENT 
+ 
+Issued  June 9, 2026 Effective  September 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of July 15, 2026 
+in Case Nos. 8908, 9056, and 9064 
+
+PHYSICAL PDF PAGE71
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 7-2 
+ 
+ 
+ 
+ 
+ 
+ 
+GENERAL SERVICE 
+SCHEDULE "G" (Continued) 
+ 
+The Company will categorize Customers eligible to receiv e Type I SOS or Type II SOS during June of each year.  
+Customers shall not switch between Type I SOS and Type II SOS during the period of June through May. 
+ 
+MINIMUM CHARGE 
+ 
+ Capacity to be used in determining the minimum charge shall be the Capacity Required in the current 
+month, but not less than one-half (½) the highest kilowatt Capacity Required in the previous twelve (12) months. 
+ 
+ For connections without a demand meter, the kilowatt Capacity Required under this schedule shall be 
+defined as the number of kilowatt-hours used in the current  month, but not less than one-half (½) of the highest 
+kilowatt-hours used in any of the previous twelve (12) months, divided by 250. 
+ 
+LATE PAYMENT CHARGE 
+ 
+ Applies to this schedule as set forth in  Company Rule No. 12 of this tariff. 
+ 
+DETERMINATION OF CAPACITY 
+ 
+ KILOWATT CAPACITY 
+ 
+ Capacity Required is the highest metered demand in kilo watts established over a thirty (30) minute interval 
+during the billing period. 
+ 
+ REACTIVE KILOVOLT-AMPERE CAPACITY 
+ 
+ Capacity Required is the highest metered demand in reacti ve kilovolt-amperes established over a thirty (30) 
+minute interval during a billing period. 
+ 
+ Reactive meters will be installed when the Cust omer's kilowatt capacity exceeds 200 kilowatts. 
+ 
+ Kilowatts and reactive kilovolt-amperes will be computed to the nearest one-half (½) kilowatt and reactive 
+kilovolt-ampere. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE72
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 7-3 
+ 
+ 
+ 
+ 
+ 
+ 
+GENERAL SERVICE 
+SCHEDULE "G" (Concluded) 
+ 
+TERM 
+ 
+ Up to 25 kilowatts of single-phase capacity is prov ided on a month to month basis.  A one year minimum 
+term is required for single-phase capacity in excess of 25 k ilowatts and for three-phase Service (except as provided 
+under "Monthly Service").  When the Company's net investment  in local facilities is ten thousand (10,000) dollars or 
+more for new or upgraded connections, an Electric Service Agreement with a three year minimum term is required. 
+ 
+GENERAL 
+ 
+ Service supplied is subject to the Rules and Regulati ons Covering the Supply of Electric Service and the 
+“Customer Guide for Electric Service-Maryland”. 
+ 
+MONTHLY SERVICE 
+ 
+ Monthly Service is available if the Customer pays the net cost of connection and disconnection and pays the 
+following additional charges: 
+ 
+ Months of Continuous 
+  Service  Additional Charge 
+ 
+ 1st and 2nd Months 10% of Monthly Bill 
+ 3rd and 4th Months 8% of Monthly Bill 
+ 5th and 6th Months 6%  of Monthly Bill 
+ 7th and 8th Months 4%  of Monthly Bill 
+ 9th to 11th Months 2% of Monthly Bill 
+ 12th and thereafter 0% of Monthly Bill 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE147
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Original Page No. 20 
+ 
+ 
+ 
+ 
+ 
+ 
+ALTERNATIVE GENERATION SCHEDULE 
+SCHEDULE "AGS" 
+ 
+AVAILABILITY 
+ 
+ Available for the sale of electricity to Customer s, including small power producers and cogenerators which 
+are qualifying facilities as defined in the Public Utility Re gulatory Policies Act of 1978.  To qualify for this schedule, 
+Customer, at the site of Customer's Service under this schedule, (such si te located in the Company's Maryland 
+Service territory) must operate or utilize el ectric Service from active electrical generation facilities not owned by the 
+Company ("Alternative Generation Facilities").  Electricity sold under this schedule may not be resold; nor may it be 
+used to operate the auxiliary loads of  the alternative generation facilities while those facilities are generating 
+electricity for sale to the Company, except during periods of emergency on the alternative generation station Service 
+facilities and with the approval of t he Company.  A recording demand meter must be installed on all connections 
+receiving Service under this schedule.  An Electric Service agreement shall be executed. 
+All applicable surcharges, credits and taxes shall apply. 
+ 
+DETERMINATION OF DEMAND 
+ 
+ Demand or kW demand noted in this schedule shall be  the kW demand integrated over the demand interval.  
+Demand interval shall be of the same duration specified in the Rate Schedule under which standard Service is 
+provided the Customer.  If standard Se rvice is not provided by the Company, the demand interval shall be 30 
+minutes. 
+ 
+TYPES OF SUPPLY 
+ 
+ Types of power supply available are Supplementary, Maintenance (Firm or Interruptible), and Standby (Firm 
+or Interruptible).  For the purposes of this schedule, "normal alternative generat ion" for the current billing period shall 
+be determined as follows: 
+ 
+ (1) The most recent three billing periods each of whic h contains at least one demand interval period during 
+which alternative generation occurred and no Standby or Maintenance Power was used will be selected 
+and the total number of such demand intervals which occur in those periods shall be identified; 
+ 
+ (2) The net kWh of alternative generation for all the intervals identified in (1) shall be totaled; 
+ 
+ (3) The net kWh totaled in (2) shall be divi ded by the quantity (total number of intervals  intervals per hour) 
+to obtain the average kW of normal alternative generation. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY SAMUEL L. BELCHER, PRESIDENT 
+ 
+Issued  March 25, 2019 Effective  March 23, 2019 
+ 
+Issued under Order No. 89072 dated March 22, 2019 in Case No. 9490. 
+
+PHYSICAL PDF PAGE164
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ First Revision of 
+ Original Page No. 26 
+ Canceling 
+ Original Page No. 26 
+ 
+ 
+NET ENERGY METERING RIDER 
+ 
+AVAILABILITY 
+ 
+  This Rider is available to all Customers who own and operate a biomass, solar, fuel cell, wind, or closed 
+conduit hydro electrical generating facility that has a capacity of not more than 2,000 kilowatts or a micro combined 
+heat and power electric generating facility not exceeding 30 kilowatts, where such generating facility is connected for 
+parallel operation with the Service of the Company, and where such generating facility is located on the Customer's 
+premises or contiguous property and is intended to offset part or all of the Customer's electrical requirements. 
+ 
+  Terms and conditions for net excess generation by the Customer to the Company are included herein for 
+reference only.  The Customer may alternatively select other options to operate in parallel and sell power under terms 
+of the Company’s Schedule “CO-G”. 
+ 
+  In accordance with the Annotated Code of Maryland, Public Utility Companies, Section 7-306, Net energy 
+metering, this Rider will be available to eligible Customers on a first-come, first-served basis until the rated generating 
+capacity owned and operated by eligible Customers in the State reaches 3,000 MW. 
+ 
+RATES 
+ 
+  A Customer receiving Service under this Rider is subject to the identical energy, capacity, and reactive 
+charges, rate structure, and monthly charges and minimum charges that would be assigned if the Customer were not 
+an eligible customer-generator. 
+ 
+  This Rider provides no adjustment to the demand billing determinant or capacity charge that a Customer 
+eligible for Service under this Rider may be subject to. 
+ 
+  The Company shall provide metering that is capable of measuring the flow of electricity in two directions at no 
+additional cost to Customers qualified to receive Service under this Rider.  The Customer shall pay the differential cost 
+between any additional metering requested and the metering normally provided by the Company to Customers who do 
+not receive Service under this Rider.  An eligible Customer-generator or the eligible Customer-generator assignee shall 
+own and have title to all renewable energy attributes or renewable energy credits associated with any electricity 
+produced by its electric generating system. 
+ 
+  The Customer shall pay for any changes to the Company’s distribution system made necessary by the 
+connection of the Customer’s equipment.  This work will be performed by the Company at the Customer’s expense and 
+in the case of new facilities will include only the differential cost between those facilities required to serve the Customer-
+generator and a non-generating Customer. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+ 
+Issued  November 26, 2025 Effective  January 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of December 23, 2025. 
+
+PHYSICAL PDF PAGE165
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Third Revision of 
+ Original Page No. 26-1 
+ Canceling 
+ Second Revision of 
+ Original Page No. 26-1 
+ 
+NET ENERGY METERING RIDER (Continued) 
+SPECIAL CONDITIONS 
+1. Net Energy:  Net Energy is the energy supplied by the Company minus the energy generated by the Customer, 
+during a billing period, where, the energy generated by the Customer is that energy fed back into the Company’s 
+system at such times as Customer generation exceeds Customer requirements.  Only if net energy is positive shall 
+net energy charges be applied at the rates specified above except that the minimum charge will be applied in any 
+case. If the calculation of net energy yields a negative result, all such negative net energy shall be considered Net 
+Excess Generation and shall be treated as stated in Special Condition No. 3 below.  The components of net energy 
+shall be determined by the use of metering capable of measuring the flow of electricity in two directions, to be 
+provided by the Company at the same charge an eligible Customer would pay for a standard meter. 
+ 
+2. Net Excess Generation:  Net Excess Generation occurs when the cumulative value of energy generated by the 
+Customer exceeds the cumulative value of energy generated and supplied to the Customer by the Company during 
+an entire billing period and is the amount by which the energy generated by t he Customer and fed back into the 
+Company’s system exceeds the energy generated and supplied by the Company resulting in a negative kilowatt -
+hour reading at the end of the billing period. If electricity generated by the Customer exceeds the electricity supplied 
+by the Company, the Customer shall be required to pay only Customer charges and minimum charges for that 
+month, as required by the Rate Schedule under which the Customer is receiving Service. 
+ 
+3. Billing and Billing Periods:  The billing period to be used under this tariff shall be the customary billing period for 
+ordinary residential or general Service Rate Schedules.  In any billing period where the energy generated and 
+supplied by the Company exceeds the energy generated by the Customer, the Company will bill the Customer for 
+the Net Energy consumed per the terms of the Rate Schedule.  In billing periods where the energy generated by 
+the Customer exceeds the energy generated and supplied to the Customer by the Company, the Customer is 
+required to pay only the Customer charges and minimums that the Customer would have otherwise paid under the 
+applicable residential or general Service Rate Schedule.   
+ 
+4. Net Excess Generation will be carried forward in either of two methods, as determined by the Customer.  Eligible 
+Customers must notify the Company which method they select by indicating on the Interconnection Application or 
+by indicating on a form accepted by the Commission.  A Customer may designate a third party to submit an accrual 
+election form on their behalf.  If a selection is not made, the Customer will be defaulted to the Twelve-Month Period 
+method.    Customers receiving service under this Rider may opt to change method for Net Excess Generation 
+accumulation only by contacting the Company and may not switch methods more than once in a calendar year. 
+ 
+a. Twelve-Month Period:  Using this method, Net Excess Generation will be carried forward until the 
+Customer’s consumption of electricity from the grid eliminates the Net Excess Generation or the 12-month 
+accrual period expires, or the account is closed.  The dollar value of Net Excess Generation shall be equal 
+to the generation or commodity portion of the rate that the Customer would have been charged by the 
+Company averaged over the previous 12- month period ending with the billing cycle that is complete 
+immediately prior to the end of April multiplied by the kilowatt -hours of Net Excess Generation. For 
+Customers served by an Electricity Supplier, the dollar value of the Net Excess Generation shall be equal 
+to the generation or commodity rate that the Customer  would have been charged by the Electricity 
+Supplier (where available through a Commission approved predefined and standardized electronic 
+process across all Maryland utilities) multiplied by the kilowatt -hours of Net Excess Generation. If the 
+Electricity Supplier kilowatt-hour rate is unavailable, the applicable generation or commodity rate that 
+would have been charged by the Company  will be used. Within 30 days after the billing cycle that is 
+complete immediately prior to the end of April of each year, the Company shall calculate the dollar value  
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+Issued  November 26, 2025 Effective  January 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of December 23, 2025. 
+ 
+
+PHYSICAL PDF PAGE166
+THE POTOMAC EDISON COMPANY Electric P.S.C. Md. No. 54 
+ Third Revision of 
+ Original Page No. 26-2 
+ Canceling 
+ Second Revision of 
+ Original Page No. 26-2 
+ 
+NET ENERGY METERING RIDER (Continued) 
+of accrued Net Excess Generation remaining at the end of the previous 12-month period to be applied as  
+a bill credit to the Customer’s account.  If the remaining credit balance after settling any past due balance 
+is more than $25 it will be refunded to the Customer. Should the credit balance be $25 or less, the amount 
+will remain as a credit on the Customer’s account to pay for future charges.  Within 15 days that a 
+Customer-generator closes their account, the Company shall calculate the dollar value of any accrued 
+Net Excess Generation remaining at the time of the account closing to be applied as a bill cre dit to the 
+Customer’s account.  Any remaining balance after settling any open balance will be refunded to the 
+Customer.   
+b. Indefinite Period: Using this method, Net Excess Generation will be carried forward indefinitely regardless 
+of whether the Customer previously accrued Net Excess Generation for a period authorized under the 
+Twelve-Month Period method.  The dollar value of Net Excess Generation at account closing  shall be 
+equal to the generation or commodity portion of the rate that the Customer would have been charged by 
+the Company averaged over the previous 12-month period ending with the billing cycle that is complete 
+immediately prior to the end of the preceding April multiplied by the kilowatt -hours of Net Excess 
+Generation.  For Customers served by an Electricity Supplier, the dollar value of the Net Excess 
+Generation shall be equal to the generation or commodity rate that the Customer would have been 
+charged by the E lectricity Supplier (where available through a Commission approved predefined and 
+standardized electronic process across all Maryland utilities) multiplied by the kilowatt -hours of Net 
+Excess Generation.  If the Electricity Supplier kilowatt-hour rate is unavailable, the applicable generation 
+or commodity kilowatt-hour rate that would have been charged by the Company will be used.    Within 15 
+days that a Customer -generator closes their account, the Company shall apply  the dollar value of any 
+accrued Net Excess Generation remaining at the time of the account closing to be applied as a bill credit 
+to the Customer’ account.  Any remaining credit balance after settling any open balance will first be used 
+to credit any outstanding balances on other Customer accounts.  Any remaining balance will then be 
+refunded to the Customer.   
+ 
+5. Meter Accuracy:  The metering supplied by the Company under this tariff shall be accurate to within ± 5% when 
+registering in reverse, that is during those times when the energy generated by the Customer is greater than the 
+energy generated by the Company.  When the energy generated and supplied to the Customer by the Company 
+is greater than the energy generated by the Customer, the meter must retain the ability to register consumption 
+within the accuracy tolerances as specified in the applicable sections of the Annotated Code of Maryland and the 
+Code of Maryland Regulations. 
+ 
+6. Safety and Reliability:  The design and installation of the Customer’s generation must comply with all applicable 
+laws and regulations and shall meet all applicable safety and performance standards established by the National 
+Electric Code, The Institute of Electrical and Electronics Engineers and Underwriters Laboratory. 
+ 
+a. The Customer assumes sole responsibility to design and install its system for protection against faults or 
+disturbances on the Company's system. 
+ 
+b. The Company shall have the right to inspect all the facilities and their operation, and to test all protective 
+equipment, at any time that this Rider is in effect. 
+ 
+c. Customer generation must operate in parallel with Company generation.  Customer must provide 
+synchronizing equipment which will automatically isolate the Customer generation from the Company's system 
+if the Company's circuit becomes de-energized or if the Customer should lose synchronization. 
+ 
+ISSUED BY K. JON TAYLOR, SENIOR VICE PRESIDENT 
+Issued  November 26, 2025 Effective  January 1, 2026 
+ 
+Approved at Public Service Commission Administrative Meeting of December 23, 2025. 

@@ -1,0 +1,202 @@
+Source ID: delivery_august2025_tariff
+Primary URL: https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blte8a580e4cc79e2c4/6883d6c9ef057227af7274a2/9478_Pepco_MD_Green_Rider_Update_Current_Clea_.pdf?branch=prod_alias
+Original SHA256: 0a894b875445810b98feb25e62b45508504a3103c5be36a08541b561e8e17036
+Purpose: initial_scope_evidence
+Physical PDF pages are one-based. Whitespace is normalized; original PDF/HTML remains authoritative.
+
+=== PDF physical page 8 ===
+Electric--P.S.C. Md. No. 1
+MD - R Thirty-Second Revised Page No. 3
+RESIDENTIAL SERVICE
+SCHEDULE "R"
+AVAILABILITY
+Available for Distribution Service and Standard Offer Service when modified by Rider “SOS” in the Maryland
+portion of the Company’s service area for low v oltage electric service where the use is primarily for
+residential purposes and for farm operations where the electricity for both farm and residential purpo ses is
+delivered thro ugh the same meter. This rate will also be availabl e for separately metere d plug-in vehicle
+charging at Multi-Unit Dwelling (MUD) locations where the c hargers are for use only by MUD residents
+and the maximum per-port demand of the charger does not exceed 20 kW.
+Not available for residential premises in which five (5) or more rooms are for hire.
+Not available for seasonal loads metered separately fr om lighting and other usage in the same occupancy.
+Not available for temporary, aux iliary or emergency service.
+CHARACTER OF SERVICE
+The service supplied under this schedule norm ally will be alternating curre nt, sixty hertz, single phase, three
+wire, 120/240 volts, or three wire, 120/208 volts.
+MONTHLY RATE
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $ 8.44
+Kilowatt-Hour Charge (Summer) $0.08760
+Kilowatt-Hour Charge (Winter) $0.04328
+Opt-Out Fee *
+One-time, Up-front Fee $ 75.00 (payable in three monthly installments)
+Monthly Fee $ 14.00 per month
+Generation and Transmission Service Charges - Customers who do not receive service from
+an alternative Electric Supplier as defined in the Company’s General Terms and Conditions will
+receive Generation and Transmission Services from the Company under the provisions of Rider
+“SOS” – Standard Offer Service.
+Billing Credit - A monthly billing credit in the amount of $0.61 will be applied to the bill of each
+customer receiving a consolidated bill from an alternative supplier for services provided both by
+Pepco and by the alternative supplier.
+* Opt-Out Fees – Customers who choose to decline the installation of an AMI meter are considered
+to be Opting-Out and will incur a One Time Enrollment Fee payable in three monthly installments
+as well as an Ongoing Monthly Fee. A customer who requests to Opt-Out of receiving a smart
+meter shall be moved to a non-time-of-use schedule and shall receive a non-time-of-use ERT
+(encoder receiver transmitter) or AMR (automatic meter reading) meter for no additional costs
+beyond the specified Opt-Out Fees. Opt-Out Customers will receive an initial bill that includes the
+first installment of One-Time Upfront Fee and Ongoing Monthly Fee. An Opt-Out
+Customer can elect to discontinue the application of Opt-Out Fees at any time by electing to have
+a smart meter installed. The Fees shall be waived and removed from the Customer’s bill where the
+Opt-Out Fees first appear if the customer agrees, before the end of the subsequent billing cycle, to
+have a smart meter installed, provided the customer allows reasonable access for
+Date of Issue: August 6, 2024 Date Effective: Usage on and after July 29, 2024
+
+=== PDF physical page 9 ===
+Electric--P.S.C. Md. No. 1
+MD - R Twenty-Fifth Revised Page No. 3.1
+installation of the smart meter. For customers who elect to have a smart meter installed after the
+initial billing cycle in which Opt-Out Fees are billed, the charges shall continue to be billed and
+shall cease upon the earlier of the installation of a smart meter or within 30 days of receiving
+customer notification, provided the customer allows reasonable access for installation of the smart
+meter. Charges begin the later of the first full billing cycle following July 1, 2014 or following the
+first full billing cycle after the AMI installation date in that customer’s community.
+A Customer who is non-responsive to Pepco’s attempts to install a smart meter, as detailed in
+Order No. 86727, shall also be responsible for these Fees. However, in the instance where a
+customer is non-responsive to Pepco’s attempts to install a smart meter, as detailed in Order No.
+86727, opt-out charges for those customers will be waived if the customer contacts Pepco to
+schedule a smart meter installation within 30 days after the charges first appear on the bill.
+The applicable fees for enrolling in smart meter Opt-Out will be shown as separate line items on
+the customer’s bill.
+BILLING MONTHS
+Summer – Billing months of June through October.
+Winter – Billing months of November through May.
+METER READING
+Watt-hour meters will be read to the nearest multiple of the meter constant and bills rendered accordingly.
+GROSS RECEIPTS TAX
+A surcharge of 2.0408% is applied to the transmission and distribution components of the customer's bill to
+recover the amount attributable to the Gross Receipts Tax.
+GENERAL TERMS AND CONDITIONS
+This schedule is subject in all respects to the Company's "General Terms and Conditions for Furnishing
+Electric Service" and the Company's "Electric Service Rules and Regulations."
+APPLICABLE RIDERS
+Standard Offer Service – Residential
+Administrative Credit
+Universal Service Charge Recovery
+Net Energy Metering
+Delivery Tax Surcharge
+Montgomery County Surcharge
+Maryland Environmental Surcharge
+Experimental Residential Electric Vehicle Service
+Optional Meter Equipment Related Services
+Bill Stabilization Adjustment
+Empower MD Charge
+Residential Direct Load Control
+RGGI Rate Credit
+Aggregate Net Energy Metering
+Demand Resource Surcharge
+Dynamic Pricing – Peak Energy Savings Credit
+Grid Resiliency Charge
+Economic Relief and Recovery Rider
+MYP Adjustment Rider
+Revenue Deferral Mechanism Rider
+Date of Issue: August 6, 2024 Date Effective: Usage on and after July 29, 2024
+
+=== PDF physical page 12 ===
+Electric--P.S.C. Md. No. 1
+MD - GS Twenty-Eighth Revised Page No. 5
+GENERAL SERVICE
+SCHEDULE "GS"
+AVAILABILITY
+Available for Distribution Service and Standard Offer Service when modified by Rider “SOS” in the Maryland
+portion of the Company's service area, except for customers whose maximum thirty (30) minute demand
+equals or exceeds 25 kW during one (1) or more months within twelve (12) billing months or whose monthly
+energy consumption exceeds 6,000 kilowatt-hours in two (2) consecutive winter billing months (November
+through May, inclusive), or whose monthly energy consumption exceeds 7,500 kilowatt-hours for a single
+summer billing month. Customers who exceed the above limits will be transferred to Schedule "MGT LV
+II", "MGT 3A II ", “MGT LV III", "MGT 3A III", "GT LV", "GT 3A", or "GT 3B" in accordance with the availability
+provisions therein. Rate schedule changes will occur annually and become effective with the billing month
+of June.
+Available for low voltage electric service at sixty hertz.
+Not available for railway propulsion service.
+Not available for secondary temporary service or supplementary loads metered separately from lighting
+and other usage in the same occupancy.
+CHARACTER OF SERVICE
+The service supplied under this schedule normally will be alternating current, sixty hertz, either (i) single
+phase, three wire, 120/240 volts or 120/208 volts, or (ii) three phase, four wire, 120/208 volts or 265/460
+volts.
+MONTHLY RATE
+Rate Year 1
+Distribution Service Charge Effective
+April 1, 2024
+Customer Charge $ 12.66
+Kilowatt-Hour Charge (Summer) $0.08130
+Kilowatt-Hour Charge (Winter) $0.04272
+Opt-Out Fee *
+One-time, Up-front Fee $ 75.00 (payable in three monthly installments)
+Monthly Fee $ 14.00 per month
+Generation and Transmission Service Charges - Customers who do not receive service from an
+alternative Electric Supplier as defined in the Company’s General Terms and Conditions will receive
+Generation and Transmission Services from the Company under the provisions of Rider “SOS” – Standard
+Offer Service.
+Billing Credit - A monthly billing credit in the amount of $0.74 will be applied to the bill of each customer
+receiving a consolidated bill from an alternative supplier for services provided both by Pepco and by the
+alternative supplier.
+* Opt-Out Fees – Customers who choose to decline the installation of an AMI meter are considered to be
+Opting-Out and will incur a One Time Enrollment Fee payable in three monthly installments as well as an
+Ongoing Monthly Fee. A customer who requests to Opt-Out of receiving a smart meter shall be moved to a
+non-time-of-use schedule and shall receive a non-time-of-use ERT (encoder receiver transmitter) or AMR
+(automatic meter reading) meter for no additional costs beyond the specified Opt-Out Fees. Opt-Out
+Customers will receive an initial bill that includes the first installment of One-Time Upfront Fee and Ongoing
+Monthly Fee. An Opt-Out Customer can elect to discontinue the application of Opt-Out Fees at any time by
+Date of Issue: August 6, 2024 Date Effective: Usage on and after July 29, 2024
+
+=== PDF physical page 13 ===
+Electric--P.S.C. Md. No. 1
+MD - GS Twenty-Eighth Revised Page No. 5.1
+electing to have a smart meter installed. The Fees shall be waived and removed from the Customer’s bill
+where the Opt-Out Fees first appear if the customer agrees, before the end of the subsequent billing cycle,
+to have a smart meter installed, provided the customer allows reasonable access for installation of the smart
+meter. For customers who elect to have a smart meter installed after the initial billing cycle in which Opt-Out
+Fees are billed, the charges shall continue to be bille d and shall cease upon the earlier of the installation of
+a smart meter or within 30 days of receiving customer notification, provided the customer allows reasonable
+access for installation of the smart meter. Charges begin the later of the first full billing cycle following July
+1, 2014 or following the first full billing cycle after the AMI installation date in that customer’s community.
+A Customer who is non-responsive to Pepco’s attempts to install a smart meter, as detailed in
+Order No. 86727, shall also be responsible for these Fees. However, in the instance where a
+customer is non-responsive to Pepco’s attempts to install a smart meter, as detailed in Order No.
+86727, opt-out charges for those customers will be waived if the customer contacts Pepco to
+schedule a smart meter installation within 30 days after the charges first appear on the bill.
+The applicable fees for enrolling in smart meter Opt-Out will be shown as separate line items on
+the customer’s bill.
+BILLING MONTHS
+Summer – Billing months of June through October.
+Winter – Billing months of November through May.
+METER READING
+Watt-hour meters will be read to the nearest multiple of the meter constant and bills rendered accordingly.
+GROSS RECEIPTS TAX
+A surcharge of 2.0408% is applied to the transmission and distribution components of the customer's bill to
+recover the amount attributable to the Gross Receipts Tax.
+GENERAL TERMS AND CONDITIONS
+This schedule is subject in all respects to the Company's "General Terms and Conditions for Furnishing
+Electric Service" and the Company's "Electric Service Rules and Regulations."
+APPLICABLE RIDERS
+Standard Offer Service – Type I Non-Residential
+Administrative Credit
+Universal Service Charge Recovery
+Net Energy Metering
+Power Factor
+Delivery Tax Surcharge
+Montgomery County Surcharge
+Maryland Environmental Surcharge
+Optional Meter Equipment Related Services
+Bill Stabilization Adjustment
+Empower MD Charge
+Aggregate Net Energy Metering
+Non-Residential Direct Load Control
+Demand Resource Surcharge
+Grid Resiliency Charge
+Economic Relief and Recovery Rider
+MYP Adjustment Rider
+Revenue Deferral Mechanism Rider
+Date of Issue: August 6, 2024 Date Effective: Usage on and after July 29, 2024

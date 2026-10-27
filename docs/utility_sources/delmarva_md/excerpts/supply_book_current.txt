@@ -1,0 +1,657 @@
+Source ID: supply_book_current
+Primary URL: https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/bltefc1a0bec7ba2be7/6abbd8bb794a17e7adb9629e/9226_9056_9064_DPL_MD_CURRENT_CLEAN_Admin_Charge_RTOUND_eff_100126.pdf?branch=prod_alias
+Original SHA256: d7165fb9e1efbdd40ddd76cfbc4d6cdc5eb3653db040e27679bc88a81cde9b30
+Original remains authoritative. Physical PDF pages are one-based.
+
+=== Physical PDF page 18; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Second Revised Leaf No. 17
+RULES AND REGULATIONS
+SECTION IV - PAYMENT TERMS
+A. Billing
+Period
+Rates are stated on a monthly basis and bills are rendered monthly following the delivery of
+service based on meter readings scheduled at approximately monthly intervals off from 25 to 35
+days. When periods are greater than 35 or less than 25 days the bill shall be computed by prorating
+to 30 days on the basis of the actual period covered by the meter readings.
+B. When Bills are Payable
+All bills are due and payable upon presentation.
+C. Estimated
+Bills
+When the Company is unable at any time during the month to read the Customer's meter, the
+Company may estimate the Customer’s electric usage and render an estimated bill.
+D. Customer’s
+Billing Option
+Before the Customer has the right to purchase electric supply services from an Electricity
+Supplier, the Company shall provide the Company’s combined Electric Supply & Delivery Service
+for the Customer and the Company shall issue one consolidated bill to the Customer for that delivery,
+transmission and electric supply services.
+When the Customer has the right to choose an Electricity Supplier, the Customer shall also
+have the right to select one of the following billing options, to the extent that the Customer is not
+constrained by the Customer’s agreement with its Electricity Supplier:
+1. One consolidated bill from the Company, which includes the Company’s Delivery
+Service charges and the Electricity Suppliers’ charges; or
+2. One consolidated bill from the Electricity Supplier, which includes both of the Electricity
+Supplier’s charges and the Company’s Delivery Service charges including a Billing
+Credit of $1.00 per bill from the Company to the Customer; or
+3. Multiple separate bills; One bill from the Company for Delivery Service charges and the
+other bill(s) from the Electricity Supplier(s) for their charges.
+If, at any time, the Customer has not exercised the right to select one of the three billing
+options above, then the Company shall issue one consolidated bill to the Customer for the
+Company’s Delivery Service and for the Customer’s Electricity Supplier Service.
+If, at any time, the Customer receives the Company’s combined Electric Supply & Delivery
+Service from the Company, then the Company shall issue one consolidated bill to the Customer for
+both the delivery, transmission and electric supply services.
+Filed December 22, 2016 Effective December 26, 2016
+Filed in Compliance with Approval at the MD PSC Administrative Meeting 12/21/2016
+
+=== Physical PDF page 48; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company One-Hundred-Thirteenth Revised Leaf No. 45
+MONTHLY CHARGES AND RATES
+SERVICE CLASSIFICATION
+RESIDENTIAL “R”
+Delivery Services Charges
+Distribution Service Charge Rate Year 1 Rate Year 2 Rate Year 3
+Effective Effective Effective
+January 1, 2023 – January 1, 2024 – January 1, 2025
+December 31, 2023 December 31, 2024
+Customer Charge $8.96/Month $9.19/Month $9.43/Month
+Kilowatt Hour Charge (Summer) $0.069739/kWh $0.070656/kWh $0.071482/kWh
+Kilowatt Hour Charge (Winter) $0.067279/kWh $0.069395/kWh $0.071482/kWh
+All Billing Months
+January through December
+Opt-Out Fee*
+One-time, Up-front Fee $ 75.00 (payable in three monthly
+Monthly Fee installments)
+$ 17.00 per month
+Administrative Credit Refer to the “AC” Rider
+Universal Service Program Rate Refer to the “USP” Rider
+Franchise Tax $0.000620/kWh
+Environmental Surcharge $0.000150/kWh
+Bill Stabilization Adjustment Refer to the “BSA” Rider
+Empower Md. Charge Refer to the “E-MD” Rider
+RGGI Rate Credit Rider Refer to the “RRC” Rider
+Demand Resource Surcharge Refer to the “DRS” Rider
+Grid Resiliency Charge Refer to the “GRC” Rider
+Multi-Year Plan Adjustment Rider Refer to the “MYP Adjustment” Rider
+Maryland Cost Allocation Method-Secondary Refer to the “MCAM-S” Rider
+Standard Offer Service Phase In Credit / Refer to Rider SOS PIC/DCA
+Deferred Cost Adjustment
+Supply Service Charges with Transmission and Ancillary Services:
+Transmission Rate $0.021361/kWh
+Standard Offer Service for WINTER SUMMER WINTER
+Residential Customers: 02/01/26 – 05/31/26 06/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS kilowatt Hour Charge $0.095462/kWh $0.098203/kWh $0.106302/kWh
+Administrative Charge $0.004429/kWh $0.004617/kWh $0.004267/kWh
+Total SOS kilowatt Hour Charge $0.099891/kWh $0.102820/kWh $0.110569/kWh
+Procurement Cost Adjustment Refer to the “SOS” Rider Refer to the “SOS” Rider Refer to the “SOS” Rider
+*The Administrative Charge rates typically change every February, June and October.
+Total Supply Service price is the sum of Standard Offer Service, Transmission, Ancillary and the Procurement Cost Adjustment.
+Note: The above Delivery Service charges apply to those Customers who have an Electricity Supplier, other than the Company,
+as their energy provider. The above Delivery and Standard Offer Service with Transmission and Ancillary Service charges apply
+to those Customers who have the Company as their energy provider.
+In addition, to the charges and rates stated above, Maryland Sales Tax shall apply to all applicable services, rendered hereunder,
+unless the Customer is exempt from such tax. For applicability of the SOS Phase-In Credit / Deferred Cost Adjustment, refer to
+the Rider SOS PIC/DCA.
+Filed September 28, 2026 Effective Usage on and after October 1, 2026
+Filed in Compliance with the Letter Order issued on September 23, 2026
+
+=== Physical PDF page 56; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company One-Hundred Forty-Fourth Revised Leaf No. 47
+MONTHLY CHARGES AND RATES
+SERVICE CLASSIFICATION
+SMALL GENERAL SERVICE – SECONDARY SERVICE “SGS-S”
+Delivery Service Charges
+Distribution Service Charge Rate Year 1 Rate Year 2 Rate Year 3
+Effective Effective Effective
+January 1, 2023 – January 1, 2024 – January 1, 2025
+December 31, 2023 December 31, 2024
+Customer Charge $25.10/Month $25.55/Month $26.00/Month
+Kilowatt Hour Charge (Summer) $0.038748/kWh $0.040138/kWh $0.041549/kWh
+Kilowatt Hour Charge (Winter) $0.038748/kWh $0.040138/kWh $0.041549/kWh
+Demand Charge (Summer) $4.013595/kW $4.157572/kW $4.303679/kW
+Demand Charge (Winter) $4.013595/kW $4.157572/kW $4.303679/kW
+All Billing Months
+January through December
+Administrative Credit for Type I or Type II Refer to the “AC” Rider
+Opt-Out Fee* $75.00 (Payable in three
+One-time, Up-front Fee monthly installments)
+Monthly Fee $17.00 per month
+Universal Service Program Rate Refer to the “USP” Rider
+Franchise Tax $0.000620/kWh
+Environmental Surcharge $0.000150/kWh
+Bill Stabilization Adjustment Refer to the “BSA” Rider
+Empower Md. Charge Refer to the “E-MD” Rider
+Demand Resource Surcharge Refer to the “DRS” Rider
+Grid Resiliency Charge Refer to the “GRC” Rider
+Multi-Year Plan Adjustment Rider Refer to the “MYP Adjustment” Rider
+Maryland Cost Allocation Method – Secondary Refer to the “MCAM-S” Rider
+Supply Service Charges with Transmission and Ancillary Services:
+Transmission Service Rates:
+Demand Rate First 20 kW No Charge
+Demand Rate Greater Than 20 kW $5.591050/kW
+Energy Rate First 3,500 kWh $0.018205/kWh
+Energy Rate Excess 3,500 kWh $0.000000/kWh
+Standard Offer Service for Type I Customers:
+Supply Capacity, Energy and Ancillary Rates:
+EnergyRate
+WINTER SUMMER WINTER
+02/01/26 – 05/31/26 06/01/26 – 09/30/26 10/01/26 – 05/31/27
+SOS kilowatt Hour Charge $0.093642/kWh $0.098630/kWh $0.103693/kWh
+Administrative Charge $0.004719/kWh $0.003944/kWh $0.003784/kWh
+Total SOS kilowatt Hour Charge $0.098361/kWh $0.102574/kWh $0.107477/kWh
+Procurement Cost Adjustment Refer to the “SOS” Rider Refer to the “SOS” Rider Refer to the “SOS” Rider
+*The Administrative Charge rates typically change every February, June and October.
+Filed September 28, 2026 Effective Usage on and after October 1, 2026
+Filed in Compliance with the Letter Order issued on September 23, 2026
+
+=== Physical PDF page 77; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Fifth Revised Leaf No. 57
+SERVICE CLASSIFICATION "R"
+RESIDENTIAL SERVICE
+A. Availability
+This rate applies throughout the territory served by the Company in the State of Maryland and is available
+to any Customer desiring service for household and other related uses in a single private dwelling or dwelling
+unit, farmstead, or estate and pertinent detached buildings. This rate will also be available for separately
+metered plug-in vehicle charging at Multi-Unit Dwelling (MUD) locations where the chargers are for use
+only by MUD residents and the maximum per-port demand of the charger does not exceed 20 kW.
+B. Contract Term
+Residential contracts are on a monthly basis until terminated.
+C. Monthly Rate
+The monthly charges and rates under this Service Classification are shown on Tariff Leaf No. 45 – 45a.
+*Opt-Out Fees – Customers who choose to decline the installation of an AMI meter are considered to be
+Opting Out and will incur a One Time Enrollment Fee payable in three monthly installments as well as an
+ongoing monthly Fee. A customer who requests to Opt-Out of receiving a smart meter shall be moved to a non-
+time-of-use schedule and shall receive a non-time-of-use ERT (encoder receiver transmitter) or AMR (automatic
+meter reading) meter for no additional costs beyond the specified Opt-Out Fees. Opt-Out Customers will receive
+an initial bill that includes the first installment of One-Time, Up-front Fee and Ongoing Monthly Fees. An Opt-
+Out Customer can elect to discontinue the application of Opt-Out Fees at any time by electing to have a smart
+meter installed. The fees shall be waived and removed from the customer’s bill where the Opt-Out Fees first
+appear if the customer agrees, before the end of the subsequent billing cycle, to have a smart meter installed,
+provided the customer allows reasonable access for installation of the smart meter. For customers who elect to
+have a smart meter installed after the initial billing cycle in which Opt-Out Fees are billed, the charges shall
+continue to be billed and shall cease upon the earlier of the installation of a smart meter or within 30 days of
+receiving customer notification, provided the customer allows reasonable access for installation of the smart
+meter. Fees begin the later of the first full billing cycle following July 1, 2014 or following the first full billing
+cycle after the AMI installation date in that customer’s community.
+A Customer who is non-responsive to Delmarva Power’s attempts to install a smart meter, as detailed
+in Order No. 86727, shall also be responsible for these Fees. However, in the instance where a customer is
+non-responsive to Delmarva Power’s attempts to install a smart meter, as detailed in Order No. 86727, opt-
+out charges for those customers will be waived if the customer contacts Delmarva Power to schedule a smart
+meter installation within 30 days after the charges first appear on the bill.
+The applicable fees for enrolling in smart meter Opt-Out will be shown as separate line items on the
+customer’s bill.
+D. Standard Offer Service
+Any Customer in this Service Classification who has not exercised their right to purchase its electric supply
+service from an Electricity Supplier shall be provided Standard Offer Service in accordance with the provisions
+of Rider SOS, subject to the Company’s enrollment rules and tariff provisions.
+Filed October 31, 2025 Effective Usage on and after April 1, 2025
+Filed in Compliance with approval at the December 4, 2024 Administrative Meeting
+
+=== Physical PDF page 87; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 – Electric
+Delmarva Power & Light Company Sixth Revised Leaf No. 61
+SERVICE CLASSIFICATION "SGS-S"
+SMALL GENERAL SERVICE - SECONDARY RATE
+A. Availability
+This rate is available to any Customer having a monthly maximum measured demand of less than 300
+kW and desiring service at secondary voltage as defined in Section XI-I of the Rules and Regulations. Any
+Customer taking service under this Service Classification whose measured demand in any month is equal
+to or exceeds 300 kW shall be automatically transferred to Service Classification "LGS-S", effective with
+the next succeeding billing month.
+B. Contract
+Term
+Contracts, when required, are for an initial period of one (1) year with automatic month-to-month
+extensions until terminated. A contract for an initial period of more than (1) year may be required if special
+investment by the Company is necessary.
+C. Monthly Rate
+The Monthly Charges and Rates under this Service Classification are shown on Tariff Leaf No. 47-47a.
+*Opt-Out Fees – Customers who choose to decline the installation of an AMI meter are considered to be
+Opting Out and will incur a One Time Enrollment Fee payable in three monthly installments as well as an
+ongoing monthly Fee. A customer who requests to Opt-Out of receiving a smart meter shall be moved to a non-
+time-of-use schedule and shall receive a non-time-of-use ERT (encoder receiver transmitter) or AMR (automatic
+meter reading) meter for no additional costs beyond the specified Opt-Out Fees. Opt-Out Customers will receive
+an initial bill that includes the first installment of One-Time, Up-front Fee and Ongoing Monthly Fees. An Opt-
+Out Customer can elect to discontinue the application of Opt-Out Fees at any time by electing to have a smart
+meter installed. The fees shall be waived and removed from the customer’s bill where the Opt-Out Fees first
+appear if the customer agrees, before the end of the subsequent billing cycle, to have a smart meter installed,
+provided the customer allows reasonable access for installation of the smart meter. For customers who elect to
+have a smart meter installed after the initial billing cycle in which Opt-Out Fees are billed, the charges shall
+continue to be billed and shall cease upon the earlier of the installation of a smart meter or within 30 days of
+receiving customer notification, provided the customer allows reasonable access for installation of the smart
+meter. Fees begin the later of the first full billing cycle following July 1, 2014 or following the first full billing
+cycle after the AMI installation date in that customer’s community.
+A Customer who is non-responsive to Delmarva Power’s attempts to install a smart meter, as detailed
+in Order No. 86727, shall also be responsible for these Fees. However, in the instance where a customer is
+non-responsive to Delmarva Power’s attempts to install a smart meter, as detailed in Order No. 86727, opt-
+out charges for those customers will be waived if the customer contacts Delmarva Power to schedule a smart
+meter installation within 30 days after the charges first appear on the bill.
+The applicable fees for enrolling in smart meter Opt-Out will be shown as separate line items on the
+customer’s bill.
+D. Standard Offer Service
+Any Customer in this Service Classification who has not exercised their right to purchase its electric
+supply service from an Electricity Supplier shall be provided Standard Offer Service in accordance with the
+provisions of Rider SOS, subject to the Company’s enrollment rules and tariff provisions.
+Filed February 5, 2015 Effective Usage on and after February 9, 2015
+Filed in Compliance with approval at the February 4, 2015 Administrative Meeting
+
+=== Physical PDF page 88; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Fifth Revised Leaf No. 62
+SERVICE CLASSIFICATION "SGS-S"
+SMALL GENERAL SERVICE - SECONDARY RATE (Continued)
+E. Measured
+Demand
+1. The measured demand shall be the greatest demand established by the Customer during any fifteen
+(15) minute period of the month as measured by demand meter, taken to the nearest whole
+kilowatt, except as modified by paragraphs 2 or 3.
+2. When a Customer has contracted for off-peak service, the measured demand shall be the greatest
+demand during a fifteen (15) minute interval of the month which occurs during on-peak hours
+taken to the nearest whole kilowatt.
+3. For demands of less than twenty kilowatts (20 kW), the demand of a Customer may be
+determined, at the option of the Company, by measurement, by assessment after test, or by
+estimation. When a Customer's demand is estimated it shall be the kilowatts resulting from
+dividing the kilowatt-hours of energy used during the month by one hundred and seventy-five
+(175) hours, except that no demand will be estimated at more than twenty kilowatts (20 kW). The
+Company, on request of a Customer whose demand is so estimated, will test measure the demand,
+and thereafter will either assess a demand based on the test measurements or install a demand
+meter where the Customer's use of energy exceeds one hundred seventy-five (175) hours use of
+its demand.
+F. Off-Peak Service
+On-peak hours are 6:00 a.m. to 10:00 p.m. during periods of the year when Eastern Standard Time
+is in effect, and 9:00 a.m. to 10:00 p.m. when Eastern Daylight Savings time is in effect, Monday through
+Friday, including holidays falling on weekdays. All other hours are off-peak hours.
+The availability of Off-Peak Service is subject to agreement in writing between the Company and
+the Customer. There shall be an additional charge per month for such service as shown on Tariff Leaf No.
+47. The Company reserves the right to restrict the amount of off-peak power available to any individual
+Customer and to restrict the total amount of off-peak power available on its system.
+G. Billing Demand
+The billing demand for each billing month shall be the maximum measured demand as created during
+that month.
+H. Minimum
+Charge
+The minimum monthly charge shall be the Customer Charge.
+Filed April 30, 2004 Effective with Usage On and After June 1, 2004
+Filed in Compliance with Orders in Case No. 8908 Phase I and Phase II
+
+=== Physical PDF page 156; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Tenth Revised Leaf No. 115
+RIDER “USP”
+UNIVERSAL SERVICE PROGRAM RECOVERY RIDER
+A. Applicability
+This rider is applicable to Service Classifications “R”, “R-TOU-ND”, “R-TOU-P”, “R-PIV”, “SGS-S”, “LGS-
+S”, “GS-P”, “GS-T”, “TN”, and “ORL. The surcharge is as follows:
+Service
+Classification Surcharge
+“R”, “R-TOU-ND”, “R-TOU-P”, “R-PIV” $0.32 per Month per Residential Customer
+“SGS-S”, “LGS-S”, “GS-P”, The monthly USP charge per customer is stated
+“GS-T”, “TN”, and “ORL” below* and is determined based on the Customer’s
+previous annual distribution revenue, updated in the
+first quarter of each new year, and in accordance
+with the Commission’s order.
+* Monthly Universal Service Program Charge for General Service Customers
+Customer’s Distribution Electric Annual Billing Amount During Monthly Universal Service Program
+the previous Calendar Year. Charge
+Under $175 $0.25
+$175-$1,299 $1.85
+$1,300-$2,599 $6.14
+$2,600-$6,499 $12.28
+$6,500-$12,999 $24.56
+$13,000-$25,999 $36.85
+$26,000-$51,999 $49.13
+$52,000-$77,999 $92.12
+$78,000-$103,999 $122.82
+$104,000-$129,999 $184.22
+$130,000-$181,999 $276.35
+$182,000-$233,999 $368.46
+$234,000-$259,999 $552.69
+$260,000-$519,999 $736.91
+$520,000-$779,999 $982.55
+$780,000-$1,039,999 $1,228.19
+$1,040,000-$1,299,999 $1,473.83
+$1,300,000-$1,559,999 $1,719.47
+$1,560,000-$1,819,999 $1,965.10
+$1,820,000-$2,079,999 $2,149.33
+$2,080,000-$2,339,999 $2,333.56
+$2,340,000-$2,599,999 $2,456.38
+$2,600,000-$3,249,999 $2,579.20
+Over $3,250,000 $2,763.43
+Filed February 1, 2023 Effective Usage on and after January 1, 2023
+Filed in Compliance with Approval at the MD PSC Administrative Meeting on February 1, 2023
+
+=== Physical PDF page 161; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Fourth Revised Leaf No. 120
+RIDER "SOS"
+STANDARD OFFER SERVICE RIDER
+A. Availability
+Available in the Maryland portion of the Company's service area for the provision of electric supply
+and transmission services to Customers who do not have an Electricity Supplier for supply and transmission
+services, as defined in the Customer Choice Act, Section 7-510(C)(2).
+Standard Offer Service (“SOS”) is available be
+ginning June 1, 2004 for non-residential rate classes
+and July 1, 2004 for residential rate classes, in accordance with the provisions contained in the Maryland
+Case No. 8908 Settlement Agreements (Phase I and II) approved by the Maryland Public Service
+Commission in Order Nos. 78400 and 78710, and in the Code of Maryland Regulations (COMAR) 20.52
+Electric Standard Offer Service.
+The key features governing the provision of Standard Offer Service for each type of service offered
+are described in this Rider.
+B. Description of SOS Types:
+Residential:
+Applicable to Customers served under Service Classification “R”, “R-TOU-ND” and “R-
+TOU-P”.
+Customers may leave or return to Rider SOS on their scheduled meter read date without
+penalty, subject to the Company’s Customer enrollment rules and tariffs.
+Type I Non-Residential:
+Applicable to Customers served under Service Classifications and rate classes: all “SGS-S”
+Customers except those assigned to Type II Non-Residential, and all Customers
+served under “GS-SH”, “GS-WH”, “ORL”, “OL” and “TN”.
+Customers may leave or return to Rider SOS on their scheduled meter read date without
+penalty, subject to the Company’s Customer enrollment rules and tariffs.
+Changes to SOS Types will occur annually and will be effective with the billing
+month of June.
+Type II Non-Residential:
+Applicable to Customers served under Service Classifications: “SGS-S” Customers whose
+measured demand equals or exceeds 25 kW during one or more months within twelve
+billing months, or whose monthly energy consumption exceeds 6,000 kWh in any
+two consecutive winter billing months (October through May, inclusive) or whose
+monthly energy consumption exceeds 7,500 kWh for a single summer billing month,
+“LGS-S” whose PJM capacity Peak Load Contribution is less than 600 kW, and “GS-
+P” whose PJM capacity Peak Load Contribution is less than 600 kW.
+Customers may leave or return to Rider SOS on their scheduled meter read date without
+penalty, subject to the Company’s Customer enrollment rules and tariffs.
+Changes to SOS Types will occur annually and will be effective with the billing
+month of June.
+Filed March 15, 2019 Effective Usage on and after April 1, 2019
+Filed in Compliance with approval at the March 6, 2019 Administrative Meeting
+
+=== Physical PDF page 162; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Fourth Revised Leaf No. 121
+RIDER "SOS"
+STANDARD OFFER SERVICE RIDER – (Continued)
+C. Monthly Rate
+Customers receiving Standard Offer Service and Hourly Priced Service, as defined in the Rules and
+Regulations and under the applicable Service Classification, will pay the Delivery Service Charge,
+Transmission Service Charge and Supply Service Charge including all applicable taxes.
+The Distribution, Transmission and Standard Offer Service Charges are stated in the Monthly
+Charges and Rates table for the Customer’s applicable Service Classification. The Charges for Hourly
+Priced Service are defined under Rider HPS and stated in the Monthly Charges and Rates table for the
+Customer’s applicable Service Classification.
+The Standard Offer Service Rate for each Service Classification within each SOS Type, including
+any usage incurred under associated Riders, will include the following components:
+1. The seasonally-differentiated and, if applicable, time-of-use differentiated load weighted average
+of all awarded electric supply prices for specific services in each year.
+2. Retail charges designed to recover, on an aggregate basis, FERC-approved transmission charges
+and any other PJM charges and costs incurred by the Company.
+3. An administrative charge, consisting of incremental, uncollectible and cash working capital cost,
+an administrative adjustment and a return (included in Supply Rates tables) and;
+4. Applicable taxes.
+D. Procurement Cost Adjustment
+In addition to the Standard Offer Service rates shown above, for Residential, and Type I and II
+customers served under Standard Offer Service there will be a monthly SOS Procurement Cost Adjustment
+(PCA) shown as a separate line item on the Customer’s bill. Refer to the HPS Rider for the Hourly Priced
+Service Procurement Cost Adjustment (HPS-PCA).
+The PCA is a $ per kilowatt-hour rate applied to the Customer’s billed kilowatt-hours.
+The PCA is an adjustment made in order to true-up the rates customers are billed to reflect the
+Company’s actual costs of providing Standard Offer Service.
+A true-up adjustment will be made to the PCA at least three (3) times per year- effective with the
+June, October and February billing months. These true-ups will revise the PCA based on actual and
+forecasted collections of SOS revenues by SOS Type and the actual and forecasted cost of providing
+Standard Offer Service.
+The current applicable PCA rate by SOS type is available on the Company’s website at
+www.delmarva.com.
+E. Publication of Standard Offer Service Rates
+The Standard Offer Service Rates are shown under the Monthly Charges and Rates table of the tariff
+and are posted on the Company’s website at www.delmarva.com.
+Filed March 30, 2022 Effective Usage on and after April 1, 2022
+Filed in Compliance with Order No. 90098 on March 2, 2022 and Approval at the March 23, 2022 Administrative Meeting
+
+=== Physical PDF page 167; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company First Revised Leaf No. 126
+RIDER “S”
+STANDBY SERVICE
+A. Applicability
+Applicable, except as noted below, when part or all of the Customer's electric or other power
+requirements, including all retail sales for station power, normally are supplied by its own power producing
+equipment, or on-site generation, that is operated in parallel with the Company’s delivery system and
+standby electric service is required.
+Applicable in conjunction with Service Classification Rate “X” and Rider “EP”, when the qualifying
+cogenerator or power producer elects to sell electricity to the Company under the designated excess power
+provision of the tariff.
+Not applicable to Customer’s generators or sources of power where the Customer’s needs would
+otherwise be provided under a service classification and whose self-generated power does not exceed 60
+kilowatts.
+Not applicable to Customers served under Rider “SWEGS”, whose own needs would otherwise be
+provided under a residential or general service classification.
+Not applicable to Customer having on-site generation on or before May 1, 2004, until the effective
+date of rates approved in the Company’s next distribution rate case.
+B. Contract
+Term
+All contracts for service under this Rider shall be effective for not less than one calendar year, with
+automatic year-to-year extensions until terminated. A contract for any initial period of more than (1) year
+may be required if special investment by the Company is necessary.
+C. Character of Service
+The service supplied under this Rider will be Delivery Service of a type normally provided under the
+Company's standard retail rates for Customers with Electricity Suppliers and for Customers receiving
+service under the Company’s combined Electric Supply & Delivery Service. Customers with Electricity
+Suppliers must receive all of their Supply, Ancillary and Transmission services from that supplier. For
+Customers receiving service under the Company’s combined Electric Supply & Delivery Service, the
+Supply, Ancillary and Transmission services supplied under this Rider will be of a type normally provided
+under the Company’s standard retail rate.
+D. Monthly Charges
+1. Service Classification - A Customer receiving Standby Service from the Company will be billed
+under the applicable Service Classification: “R”, “RTOU-ND”, “R-TOU-P”, “ORL”, “OL”,
+“SGS-S”, “LGS-S”, “GS-P”, or “GS-T”. The applicable Service Classification will be determined
+based on the total electric usage and load of the Customer’s premise regardless of the source of
+the supply, as well as the Availability provision under the Service Classification. The Customer,
+subject to the Company’s enrollment rules and tariff provisions, may opt for the Company’s
+combined Electric Supply & Delivery Service, or Delivery Service only, as defined under the
+Company’s “Definition of Terms”.
+Filed October 21, 2022 Effective November 1, 2022
+Filed in Compliance with Approval at the October 12, 2022 Administrative Meeting
+
+=== Physical PDF page 168; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Second Revised Leaf No. 127
+RIDER “S”
+STANDBY SERVICE – (Continued)
+D. Monthly Charges – (Continued)
+2. Delivery Service Billing – The Distribution Charge under the Delivery Service Charges in the
+Monthly Charges and Rates will be applied to the electric usage and load of the premises including
+both the kilowatt-hours and kilowatts provided by the Customer’s on-site generation, discounted
+by 20 percent, and the total kilowatt-hours and kilowatts provided by the Company or by an
+Electricity Supplier. When the Power Factor provision under the Customer’s Service
+Classification is applicable, the power factor charge or credit will only be applied to the kilowatts
+delivered by the Company. In addition, the Environmental Surcharge and the Franchise Tax will
+only be applied to the kilowatt-hours and kilowatts delivered by the Company.
+3. Company’s Combined Electric Supply & Delivery
+Service Billing – In addition to the Delivery
+Service Billing as stated above in paragraph D.2, the Transmission Service Charge, the Ancillary
+Service Charge and the Supply Service Charge in the Monthly Charges and Rates will be applied
+to the kilowatt-hours and kilowatts supplied by the Company to a Standard Offer Service
+Customer.
+E. Metering
+The Customer will furnish and maintain, or, at the Customer’s option, the Company will provide at
+the Customer’s expense, Company-approved metering and communications equipment, necessary to allow
+the Company to monitor and meter the output of the Customer’s on-site generation power sources, and to
+communicate this information to the Company and, as required, to the independent system operator. Any
+Customer-provided metering equipment will be subject to the terms of Section VIII of the Company’s Rules
+and Regulations, and Rider “MMR” if applicable. If the Customer’s own power producing equipment is
+non-electrical, the Customer must provide the Company with sufficient operating information and records
+to estimate contract standby electrical requirements.
+F. Parallel
+Operation
+The Company is not liable for any loss, cost, damage or other expense to any party resulting from the
+use or presence of electric current or potential which originates from a Customer's generation facilities.
+Protective equipment shall be installed and maintained at the expense of the Customer, in accordance with
+specifications furnished by the Company. Such protective equipment will be required in any interconnected
+operation with a Customer. The Customer shall enter into an interconnection agreement with the Company
+(and with the independent system ope rator if applicable) covering the facility and operational requirements
+of parallel operation, including the Company’s Technical Considerations Covering Parallel Operations of
+Customer Owned Generation (“Technical Requirements”).
+Filed August 30, 2007 Effective the Billing Month of September 2007
+Filed in Compliance with the Letter Order Dated 08/29/2007
+
+=== Physical PDF page 173; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Twenty Leaf No. 132
+RIDER "E-MD"
+EmPOWER Md. Charge
+A. Applicability
+This rider is applicable to Service Classifications “R”, “R-TOU-ND”, “R-TOU-P”, “R-PIV”, “SGS-S”,
+“LGS-S”, “GS-P”, “GS-T”, “ORL” “OL”, and “TN”. Amounts billed to customers shall include a surcharge
+to reflect demand-side management program costs. Rider “E-MD” will be determined annually by service
+classification based on projections of demand-side management program costs and PJM market earnings
+(including an adjustment for variances between budgeted and actual prior year expenditures) and forecasts
+of kilowatt hour sales.
+B. Monthly Charge and Rate
+Service Classification Rate ($ per kilowatt-hour)
+“R", "R-TOU", “R-TOU-P” and “R-PIV” $0.020055/kWh
+"SGS", "TN”, "SH, "WH" $0.014937/kWh
+"LGS” $0.014937/kWh
+"GS-P” $0.014937/kWh
+"GS-T” $0.014937/kWh
+"ORL” , “OL” $0.014937/kWh
+This surcharge will be effective with the billing month of January 2026 and will be revised on or before
+January of each subsequent year to reflect each year’s costs. The rider will be applied each year thereafter,
+and will include cost and revenue effects, effective with the billing month of January.
+C. Determination of Surcharge
+The surcharge (in dollars per kilowatt hour) will be computed by dividing the total annual amount to be
+recovered for each service classification group by forecasted Maryland retail sales (in kilowatt hours) for
+that class.
+The total amount to be recovered (R) is computed in accordance with the following formula:
+R=A+B+C
+Filed December 31, 2025 Effective Billing Month of January 2026
+Filed in Compliance with Approval at the December 23, 2025 Administrative Meeting
+
+=== Physical PDF page 178; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company First Revised Leaf No. 137
+RIDER “RRC”
+RGGI RATE CREDIT
+A. Availability
+This rider is applicable to Service Classifications “R”, R-TOU-ND” and “R-TOU-P”.
+B. Credit
+Under this Rider, customers in the applicable Service Classifications shall receive a monthly bill credit
+on a dollar per customer basis, funded through Regional Greenhouse Gas Initiative (“RGGI”) auction
+proceeds and other monies included in the Maryland Strategic Energy Investment Fund pursuant to
+Chapters 127 and 128 of the Acts of the General Assembly of 2008.
+The credit shall commence with the Billing month of June 2009 and shall be subject to update and
+true up on a quarterly basis.
+The current applicable credit is available on the Company’s website at www.delmarva.com.
+Filed June 28, 2019 Effective Usage on and after July 1, 2019
+Filed in Compliance with Approval at the June 19, 2019 MD PSC Administrative Meeting
+
+=== Physical PDF page 181; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Eighth Revised Leaf No. 139
+RIDER "DRS"
+Demand Resource Surcharge
+A. Applicability
+This rider is applicable to Service Classifications “R”, “R-TOU-P”, “R-TOU-ND”, “SGS-S”, “LGS-S”,
+“GS-P”, “GS-T”, “ORL” “OL”, and “TN”. Amounts billed to customers shall include a surcharge to
+recover the costs of Capacity Resource Agreements as provided in Maryland Public Service Commission
+Order No. 82511 in Case No. 9149. Rider “DRS” will be determined annually by service classification
+by calculating a Contract for Differences payment (comparing the projections of demand response
+resource costs against the PJM Reliability Pricing model clearing price and actual delivered capacity for
+each power planning year), along with approved incremental costs, and distributing that by each service
+classification’s Peak Load Contribution.
+B. Monthly Charge and Rate
+Service Classification Rate ($ per kilowatt-hour)
+“R", "R-TOU", “R-TOU-P and “R-PIV $ 0.00000/kWh
+"SGS", "TN”, "SH, "WH" $ 0.00000/kWh
+"LGS” $ 0.00000/kWh
+"GS-P” $ 0.00000/kWh
+"GS-T” $ 0.00000/kWh
+"ORL” , “OL” $ 0.00000/kWh
+This surcharge will be effective with the billing month of June 2012 and will be revised on or before May
+of each subsequent year to reflect each year’s costs. The rider will be applied each year thereafter, and
+will include cost and revenue effects, effective with the billing month of June. Any imbalance between
+the actual costs and the Surcharge amount shall be reconciled annually over the subsequent planning year.
+C. Determination of Surcharge
+The surcharge (in dollars per kilowatt hour) will be computed by dividing the total annual amount to be
+recovered for each service classification group by forecasted Maryland retail sales (in kilowatt hours) for
+that class.
+The total amount to be recovered (R) is computed in accordance with the following formula:
+R=(A+B)*C
+Filed October 21, 2022 Effective Usage on and after November 1, 2022
+Filed in Compliance with Approval at the MD PSC Administrative Meeting on October 12, 2022
+
+=== Physical PDF page 184; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Fourth Revised Leaf No. 142
+RIDER "GRC"
+Grid Resiliency Charge Rider (Continued)
+C. Monthly Charges and Rates:
+Service Classification January 1, 2014
+“R" $0.00000/kWh
+"RTOU-ND", “R-TOU-P” $0.00000/kWh
+"SGS-S $0.00000/kWh
+"GS-SH” $0.00000/kWh
+"GS-WH” $0.00000/kWh
+"TN” $0.00000/kWh
+"LGS-S” $0.0000/kW
+"GS-P” $0.0000/kW
+"OL” $0.00000/kWh
+"ORL” $0.00000/kWh
+D. Adjustment to Charge:
+The Grid Resiliency Charge is subject to deferred accounting. A monthly over/under recovery calculation
+will be performed based on actual revenues received under Grid Resiliency Charge Rider and the actual
+revenue requirement in each month, and the over/under recovery will be tracked as a deferred balance.
+Interest on this balance will be calculated monthly using the Company’s short term debt rate. The interest
+rate will be reset each month. The deferred balance will be reconciled through an annual adjustment to
+the Grid Resiliency Charge.
+Filed June 28, 2019 Effective Usage on and after July 1, 2019
+Filed in Compliance with approval at the June 19, 2019 Administrative Meeting
+
+=== Physical PDF page 198; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Original Leaf No. 150a
+(Rider “MYP” Continued)
+Rates Effective August 1, 2024 – June 30, 2025
+Rate Schedule Rate
+R $(0.002647) per kWh
+R-PIV $(0.002647) per kWh
+R-TOU-P $(0.002647) per kWh
+R-TOU-ND $(0.002647) per kWh
+PIV $(0.002647) per kWh
+SGS-S $(0.001756) per kWh
+GS-SH $(0.000569) per kWh
+GS-WH $(0.000544) per kWh
+TN $(0.001651) per kWh
+LGS-S $(0.750672) per kW
+GS-P $(0.486162) per kW
+GS-T $(16.03) per customer
+ORL $(0.004074) per kWh
+OL $(0.47) per fixture
+Filed July 29, 2024 Effective Usage on and after August 1, 2024
+Filed in Compliance with Approval at the MD PSC Administrative Meeting on July 24, 2024
+
+=== Physical PDF page 199; pypdf layout extraction, whitespace normalized. ===
+P.S.C. Md. No. 12 - Electric
+Delmarva Power & Light Company Original Leaf No. 150b
+(Rider “MYP” Continued)
+Rates Effective July 1, 2025 – June 30, 2026
+Rate Schedule Rate
+R $(0.000256) per kWh
+R-PIV $(0.000256) per kWh
+R-TOU-P $(0.000256) per kWh
+R-TOU-ND $(0.000256) per kWh
+PIV $(0.000256) per kWh
+SGS-S $(0.000171) per kWh
+GS-SH $(0.000057) per kWh
+GS-WH $(0.000049) per kWh
+TN $(0.000161) per kWh
+LGS-S $(0.000193) per kW
+GS-P $(0.000112) per kW
+GS-T $(1.56) per customer
+ORL $(0.000389) per kWh
+OL $(0.05) per fixture
+Filed May 29, 2025 Effective Usage on and after July 1, 2025
+Filed in Compliance by Letter Order dated May 29, 2025

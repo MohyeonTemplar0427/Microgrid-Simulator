@@ -9,6 +9,9 @@ from copy import deepcopy
 
 
 MODES = {
+    "potomac_edison_maryland": ("export_mode", "none"),
+    "delmarva_maryland": ("export_mode", "none"),
+    "pepco_maryland": ("export_mode", "none"),
     "bge_maryland": ("export_mode", "none"),
     "ppl_electric_pennsylvania": ("export_mode", "none"),
     "aep_ohio": ("export_mode", "none"),
@@ -66,7 +69,7 @@ def grid_only_counterfactual(utility, account, state=None):
                 "label":"Absent-DER grid-only counterfactual; ordinary full-service tariff retained without DG enrollment",
                 "changed_account_fields":changed_account,"changed_state_fields":[],
                 "warnings":["Hypothetical ordinary grid-only reference removes PV/storage and DG assertions; no actual account transition or export credits assumed."]}
-    if utility.startswith("firstenergy_") or utility in ("peco", "ppl_electric_pennsylvania", "aep_ohio", "bge_maryland"):
+    if utility.startswith("firstenergy_") or utility in ("peco", "ppl_electric_pennsylvania", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland"):
         applied = bool(result.get("der_ordinary_service_confirmed"))
         set_account("der_ordinary_service_confirmed", False)
         set_account("der_eligibility_source", "")
