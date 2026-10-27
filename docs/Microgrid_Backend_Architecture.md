@@ -827,3 +827,60 @@ once, and zero2026RRC is source-labeled. Locality, utility/SOS, USC, method/hist
 ordinary NEM-account approval and multi-state APS metadata remain independent.
 Shared billing/dispatch, worker/API contracts and representative replay are reused;
 validation follows the targeted utility policy. See [scope and sources](Potomac_Edison_Maryland.md).
+
+## Atlantic City Electric New Jersey RS/MGS-Secondary · October 2026
+
+`billing/atlantic_city_electric.py` and snapshot-safe
+`atlantic_city_electric_rates.py` add ordinary RS and measured MGS-Secondary
+BGS-RSCP with explicit 2025/2026 component intersections. Exactly 30 local days
+inside one month/season/regime are accepted; unverified proration and full years
+reject. CBT/SUT and embedded supply administration are retained once. Historical
+RS relief/recovery is mandatory, with negative balance settlement rejected.
+MGS final numeric bills round kWh/demand as filed; its existing `objective_inputs`
+hook preserves a separate raw-quantity operating proxy and explicit error bound.
+Cost/cycling proofs concern that proxy, not minimum rounded cash invoices. The
+new utility's matrix audit rechecks both amounts and cannot relabel the proof.
+No shared billing math, dispatch algorithms, worker/API contracts, physics or
+replay are changed. November PLS, supplier, NJ tax status, written ordinary DER
+approval and PJM AECO metadata remain independent. Historical MGS DER rejects
+because standby history is unmodeled; bounded 2026 DER uses the adopted rule.
+See [billing scope and sources](Atlantic_City_Electric_New_Jersey.md).
+
+## JCP&L New Jersey RS/GS secondary · October 2026
+
+`billing/jcpl_nj.py` and snapshot-safe `jcpl_nj_rates.py` add ordinary RS and
+Company-assigned no-demand-meter GS secondary BGS-RSCP, January2025–October2026.
+Complete calendar cycles retain full monthly fixed charges and 600/1000kWh
+blocks. Verified mid-month linear changes follow actual interval service energy
+under PartII3.07; unverified nonlinear/fixed crossings reject. Mandatory EGCC,
+dated constituent riders and summed TEC owner blocks are retained once, with
+inclusive CBT/SUT and no additional wholesale/tax charge. GS requires independent
+Contract Demand/prior actual peaks and current imports at most10kW, plus dated
+November PLS below500kW; conservative peak ceilings carry between cycles. This
+does not implement general metered demand/ratchet/standby calculations. DER is
+already-active ordinary approved non-export ClassI service; GS additionally
+needs utility-confirmed no-STB treatment and retained no-meter classification.
+No categorical standby exemption is inferred from equipment size. The existing
+regional worker, form, PV/storage, saved artifacts and all-interval OpenDSS replay
+are reused without shared API/solver/physics changes. PJM JCPL and emergency
+FE-JC metadata remain distinct. Raw energy/unrounded cost proofs do not claim
+minimum rounded cash invoices or joint annual optima. See [scope and sources](JCPL_New_Jersey.md).
+
+## Rockland Electric New Jersey SC1/SC2 · October 2026
+
+`billing/rockland_nj.py` and snapshot-safe `rockland_nj_rates.py` add ordinary
+SC1 non-TOD residential and metered secondary SC2 non-demand-billed BGS-RSCP.
+Only the October2026 component intersection and Bergen/Eastern/PJM scope are
+enabled. Earlier transmission/component gaps reject, and annual PTC vintages
+are not current invoice prices. The ordinary cycle rule is26–34days; calendar
+service and bill months match the all-usage-billed-month reconciliation clock.
+No JCP&L physical no-demand-meter,10kW/history/NovemberPLS or20-day DER rule is
+imported. SC2 non-demand BILLING is an independent retained assignment, with
+no invented numeric threshold; the ordinary branch is outside demand-billed
+SC2/SC7 standby treatment. Active executed ordinary PV/storage approval and
+zero exports/bank remain required. Inclusive CBT/SUT, summed rider constituents,
+bundled transmission and expired/combined credits are counted once. Unsupported
+monthly-minimum ordering cases reject without forced purchases. Existing math,
+worker/API schema, PV/storage, browser persistence and all-interval OpenDSS replay
+are reused. Explicit October clear-sky modeled acceptance is separate from
+unavailable historical-weather/annual acceptance. See [scope and sources](Rockland_Electric_New_Jersey.md).

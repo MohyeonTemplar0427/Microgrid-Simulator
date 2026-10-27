@@ -1,0 +1,424 @@
+SOURCE: https://www.nj.gov/bpu/pdf/boardorders/2025/20251121/2F%20ORDER%20ACE%20BRC.pdf
+ORIGINAL: .cache/atlantic_city_electric/sources/delivery/base_order_nov2025.pdf
+SHA256: 9ddb469e77968d77d319bd7c088c6592849805b7cd0dda020bb23880526470f3
+Physical PDF pages are one based.
+
+=== PHYSICAL PDF PAGE 4 ===
+ 
+ 
+BPU DOCKET NO. ER24110854 
+  OAL DOCKET NO. PUC 17805-2024 S 
+4 
+Agenda Date: 11/21/25 
+Agenda Item: 2F 
+period ending September 30, 2024.  The Signatory Parties further agree that this rate base 
+amount does not reflect any particular ratemaking adjustment by any Signatory Party for 
+incorporation into the overall revenue requirement. 
+ 
+2. The Signatory Parties agree that, for the purposes of resolving this proceeding, the 
+Company shall have an overall rate of return of 6.80 percent, which is based upon a capital 
+structure consisting of 50.24 percent equity with a cost rate of 9.6 percent, a nd 49.76 
+percent long-term debt with a cost rate of 3.97 percent.   
+ 
+3. The Signatory Parties agree and recommend that the Board authorize the Company to 
+implement revised rates as indicated on the attached proof of revenues and rate design 
+schedules (included as Exhibit A  of the Stipulation ) implementing the terms of th e 
+Stipulation, effective for services rendered on and after December 1, 2025.  The Signatory 
+Parties agree that the Company’s tariff shall reflect a monthly customer charge for Rate 
+Schedule RS (residential service) at the currently authorized rate of $6.75, including SUT.  
+Based upon the rate design in Exhibit A of the Stipulation, the rate impact of the stipulated 
+revenue requirement increase for an average residential customer using 649 kilowatt-hour 
+(“kWh”) per month and taking Basic Generation Service will be an increase of $6.77 or 
+3.55%, including SUT, from $190.61 to $197.38  per month. 5  This agreement on rate 
+design is for settlement purposes only and does not indicate any party’s agreement to the 
+Company’s functionalization, classification, and allocation of costs or to the Company’s 
+cost of service methodology presented in its Petition and testimony filed in this matter. 
+ 
+4. By Order dated April 18, 2019, the Board authorized ACE to implement its IIP 1.0. 6  IIP 
+1.0 concluded in June 2023 and authorized the investment of approximately $85.1 million 
+in facilities that are complete and providing service to customers.  The Signatory Parties 
+have reviewed the Company’s IIP 1.0 investments and recommend that the Board find 
+these program investments are reasonable and prudent, in -service, and should be 
+reflected in the Company’s rate base.  The Signatory Parties further recommend that the 
+Board find ACE’s recovery of IIP 1.0 investments through the approved provisi onal cost 
+recovery mechanism is final and no longer subject to refund but shall remain subject to 
+audit. 
+ 
+5. By Order dated June 29, 2023, ACE was authorized to implement a four (4) -year $93.1 
+million program, known as Powering the Future, to invest in targeted reliability 
+improvements, technology upgrades, and other system enhancements. 7  Powering the 
+Future began on July 1, 2023 and will continue through June 30, 2027.  By the June 2023 
+Order, ACE was allowed to file a total of five (5) rate adjustment requests over the term of 
+ 
+5 The estimated rate impacts do not reflect the temporary rate credits or surcharges approved by the Board 
+in In re the New Jersey Board of Public Utilities’ Consideration of Electric Rate Impacts Beginning June 1, 
+2025 – Atlantic City Electric Company , BPU Docket Nos. EX25040210, and ER25050281, Order dated 
+June 18, 2025. 
+6 In re the Petition of Atlantic City Electric Company for Approval of an Infrastructure Investment Program, 
+and Related Cost Recovery Mechanism, Pursuant to N.J.A.C. 14:3 -2A.1 et seq. , BPU Docket No. 
+EO18020196, Order Approving Stipulation of Settlement, Order dated April 18, 2019.  
+7 In re the Petition of Atlantic City Electric Company for Approval of Powering the Future, an Infrastructure 
+Investment Program and Related Cost Recovery Mechanism, Pursuant to N.J.A.C. 14:3-2A.1 et seq., BPU 
+Docket No. ER22100666, Decision and Order Approving Stipulation of Settlement, Order dated June 29, 
+2023 (“June 2023 Order”). 
+
+=== PHYSICAL PDF PAGE 8 ===
+Agenda Date: 11/21/25 
+Agenda Item: 2F 
+Therefore, based upon the Board's review and consideration of the record in this proceeding, the 
+Board HEREBY FINDS the Initial Decision and Stipulation to be reasonable, in the public interest, 
+and in accordance with the law. Accordingly, the Board HEREBY ADOPTS the Initial Decision 
+and Stipulation in their entirety, and HEREBY INCORPORATES the terms and conditions as 
+though fully set forth herein, subject to any terms and conditions set forth in this Order. 
+Based upon the Stipulation, the monthly bill for the typical residential electric customer using 649 
+kWh per month will increase by $6.77. 
+The Board HEREBY ORDERS the Company to submit revised tariffs conforming to the terms and 
+conditions of the Stipulation and this Order by November 28, 2025 for rates effective for services 
+rendered on and after December 1, 2025. 
+The Company's rates remain subject to audit by the Board. This Decision and Order shall not 
+preclude the Board from taking any actions deemed to be appropriate as a result of any Board 
+audit. 
+This Order shall be effective on November 21, 2025. 
+DATED: November 21, 2025 BOARD OF PUBLIC UTILITIES 
+BY: 
+CHRISTINE GUHL-SADOVY 
+PRESIDENT 
+ON CHRISTODOULOU 
+COMMISSIONER 
+ATTEST: 
+TARY 
+I HEREBY CERTIFY that the within 
+documl!nt Is a true copy of the original 
+In the files of the Board of Public Utlllttes. 
+8 
+Ml HAEL BANGE 
+COMMISSIONER 
+BPU DOCKET NO. ER24110854 
+OAL DOCKET NO. PUC 17805-2024 S 
+
+=== PHYSICAL PDF PAGE 92 ===
+ATLANTIC CITY ELECTRIC COMPANY 
+BPU NJ No. 11 Electric Service - Section II       Revised Sheet Replaces Sheet No. 13 
+TERMS AND CONDITIONS OF SERVICE 
+ 
+4. USE OF ENERGY  (Continued) 
+ 
+ 4.5 Residential Use: 
+  All individual residences shall be served i ndividually under the appropriate service schedule.  
+Three phase (3ph) service and service for motors in excess of 5 horsepower shall not be allowed 
+for residential service.  Service for such loads shall be furnished under the appropriate general 
+service schedule.  Customers shall not be allowed to receive service for two (2) or more separate 
+residences through a single meter under any sche dule, regardless of common ownership of the 
+affected residences.  A residential unit is defined as a dwelling intended for residential occupancy.  
+Any separate building loads may be served from this residential meter that is not intended for 
+commercial purposes.  A detached building on a residential parcel that is not capable of being 
+served by the residential meter and is not used for commercial purposes may qualify for 
+residential service.  
+ 
+ 4.6 Commercial Activi ties Within Residences: 
+  Detached building or buildings appurtenant to the residence, such as a garage, stable or barn, 
+may be served by an extension of the customer’s  residential service wiring and meter.  That 
+portion of a residence which becomes regularly used for commercial or manufacturing purposes 
+shall be served under a general service schedule.  A customer shall be authorized to maintain 
+separate wiring so that the residential portion of the premises is served through a separate meter 
+under the appropriate schedule, and the commercial or manufacturing portion of the premises is 
+served through a separate meter or meters under the appropriate general service schedule.  In 
+the event that the customer does not elect to utilize this authorization, the appropriate general 
+service schedule shall apply to all service supplied.  
+ 4.7 Other Sources of Energy: 
+ The Company will not supply service to cust omers who have other so urces of energy supply 
+except under schedules which specifically provide for such service.  A customer shall not be 
+permitted to operate its own generating equipment in parallel with the Company’s service, except 
+with the written permission of the Company.  In order to avoid undue jeopardy to life and property 
+to the customer’s premises, to the Company’s system, and in the facilities of third parties, the 
+customer shall not install its own generating equipment without the prior written permission of the 
+Company.   
+          4.8 Meter Collars: 
+ Pursuant to P.L. 2023, C. 156, the Company sha ll authorize the installation and operation of a 
+meter collar adapter, as that device is defined by law, whether owned by a residential customer, 
+by the Company, or by a third-party, provided that the following criteria are met:  
+  (1) the meter collar adapter is qualified to be connected to the supply side of the service 
+disconnect pursuant to the applicable provisions of the National Electric Code;  
+  (2) the meter collar adapter is approved or listed by a nationally recognized testing 
+laboratory and is suitable according to the device’s approval or listing documentation, for use in 
+meter sockets that are rated up to 200 amperes; 
+  (3) the meter collar adapter is certified to meet all applicable standards, as determined 
+by a nationally recognized testing laboratory;  
+  (4) the meter collar adapter does not impede access to the sealed meter socket 
+compartment or the pull section of the service section of the Company’s electric meter or 
+switchboard, as applicable; and  
+  (5) the specific model of meter collar adapter  is approved by the Company for installation, 
+as publicly noticed, including notice on the Company’s website.  
+  
+ Customers will be directly responsible for any and all cost associated with meter collars.   
+ 
+ 
+Date of Issue:   Effective Date:  
+ 
+Issued by: J. Tyler Anthony, President and Chief Executive Officer – Atlantic City Electric Company 
+Filed pursuant to Board of Public Utilities of the State of New Jersey directives associated with the BPU 
+Docket No. ER24110854 
+ 
+Exhibit C 
+Page 35 of 151
+
+=== PHYSICAL PDF PAGE 96 ===
+ATLANTIC CITY ELECTRIC COMPANY 
+BPU NJ No. 11 Electric Service - Section II   Third Revised Sheet Replaces Second Sheet No. 17 
+ 
+TERMS AND CONDITIONS OF SERVICE 
+ 
+6. METERING, BILLING AND PAYM ENT FOR SERVICE  (Continued) 
+ 
+ 6.4 Payment of Bills: 
+ Bills are payable upon presentation, at any lo cation identified by the Company as a payment 
+office, Courtesy Center or authorized collection agency, within twenty (20) days of the postmarked 
+date.  
+ 
+ Overdue bills for non-residential customers are subj ect to a late payment charge as specified on 
+Rate Schedule CHG.  This charge will be app lied to amounts billed including accounts payable 
+and unpaid late payment charge amounts applied to previous bills, which are not received by the 
+Company within forty-five (45) days for non- residential customers, following the due date 
+specified on the bill.  The amount of the late payment charge to be added to the unpaid balance 
+for non-residential customers shall be determined by multiplying the unpaid balance by the late 
+payment charge rate as specified in Rate Schedule CHG.  When payment is received by the 
+Company from a customer who has an unpaid balance which includes charges for late payment, 
+the payment shall be applied first to such c harges and then to the remainder of the unpaid 
+balance. 
+ 
+ New Jersey public utility companies, subject to the New Jersey State Excise Tax, shall be billed 
+net of such taxes. 
+  
+  Courtesy Center Locations 
+ 
+Egg Harbor Township 6814 Tilton Rd, Egg Harbor Township, NJ 08234 
+Ventnor 5014 Wellington Ave,  
+Ventnor City, NJ 08406   
+Cape May Court 
+House 
+420 S Main St, Cape May Court House, NJ 
+08210.  
+Millville 1101 N. 2nd St , Millville NJ 08332 
+Turnersville 5101 Rt42 Turnersville NJ 08012 
+ 
+ 
+ 6.5 Billing Period:  
+  Except as hereinafter provided under normal co urse of business, customers shall be billed 
+monthly.  Bills for other than thirty (30) days sha ll be prorated.  Where credit situations require, 
+the Company may read meters and render bills at shorter intervals.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:   Effective Date:  
+ 
+Issued by:  J. Tyler Anthony, President and Chief Executive Officer – Atlantic City Electric Company 
+Filed pursuant to Board of Public Utilities of the State of New Jersey directives associated with the BPU 
+Docket No. ER24110854 
+Exhibit C 
+Page 39 of 151
+
+=== PHYSICAL PDF PAGE 166 ===
+ 
+ATLANTIC CITY ELECTRIC COMPANY 
+BPU NJ No. 11 Electric Service - Section IV       Revised Sheet Replaces Revised Sheet No. 44
+ 
+ 
+ 
+AVAILABILITY 
+RIDER STB-STANDBY SERVICE 
+(Applicable to MGS, AGS, TGS and SPP Rate Schedules)
+Standby Service is defined as a charge imposed by an electric public utility upon a distributed generation facility for 
+the recovery of costs necessary to make energy available to the generation facility during a customer facility power 
+generation outage. The additional electrical energy available is defined as the customer’s Generating Capacity.  
+The Generating Capacity is the amount of the customer owned electrical energy source, as specified by the 
+installed name plate capacity, available and intended for the customer’s use.  
+This rider is required when non-intermittent electric or other power requirements are supplied by the customer’s 
+own power-producing equipment, with a Generating Capacity available to the customer during a power outage 
+greater than 100 kilowatts (kW). 
+   
+  DEMAND DETERMINATION 
+ 
+The monthly billing demand shall be as defined under the "Demand Determination" section of the applicable rate 
+schedule. 
+ 
+The Standby Service Demand shall be the "Generating Capacity" as defined above. 
+ 
+During a billing month in which the demand determination is during a  forced outage or mutually agreed upon 
+customer's scheduled maintenance shutdown, the Standby Service Charge may be waived upon request with the 
+Company’s approval. 
+STANDBY SERVICE CHARGE 
+This rider imposes a Standby Service Charge at the following voltage levels: 
+ 
+Tariff Transmission  Stand By Rate Distribution Stand By Rate 
+ ($/kW) ($/kW) 
+MGS-Secondary and $0.89 $0.52 
+MGS-SEVC   
+MGS Primary $0.73 $0.26 
+AGS Secondary $0.80 $2.19 
+AGS Primary $0.91 $1.97 
+TGS Sub Transmission $0.44 $0.00 
+TGS Transmission $0.44 $0.00 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:                                             Effective Date:  
+ 
+Issued by:   
+Exhibit C 
+Page 109 of 151
+
+=== PHYSICAL PDF PAGE 244 ===
+ATLANTIC CITY ELECTRIC COMPANY 
+BPU NJ No. 11 Electric Service - Section II  Third      Revised Sheet Replaces Second Sheet No. 
+13 
+TERMS AND CONDITIONS OF SERVICE 
+ 
+4. USE OF ENERGY  (Continued) 
+ 
+ 4.5 Residential Use: 
+  All individual residences shall be served i ndividually under the appropriate service schedule.  
+Three phase (3ph) service and service for motors in excess of 5 horsepower shall not be allowed 
+for residential service.  Service for such loads shall be furnished under the appropriate general 
+service schedule.  Customers shall not be allowed to receive service for two (2) or more separate 
+residences through a single meter under any sche dule, regardless of common ownership of the 
+affected residences.  A residential unit is defined as a dwelling intended for residential occupancy.  
+Any separate building loads may be served from this residential meter that is not intended for 
+commercial purposes.  Where aA detached garagebuilding on a residential parcel that is not 
+capable of being served by the residential me ter and is not used for commercial purposes  may    
+qualify for reside ntial service.,  Any additional buildings separately metered not meeting the 
+residential use definition in the administrative code (N.J.A.C. 5:28-1.2, N.J.A.C. 5:28-1.4, N.J.A.C. 
+14:3-1.1) will not be installed under the residential rate regardless of the property use.   but the 
+primary load of the detached garage is for EV char gers, the EV charger can be installed at full 
+cost to the customer and connected under the Rate Schedule EV-ERR. 
+ 
+ 4.6 Commercial Activi ties Within Residences: 
+  Detached building or buildings appurtenant to the residence, such as a garage, stable or barn, 
+may be served by an extension of the customer’s  residential service wiring and meter.  That 
+portion of a residence which becomes regularly used for commercial or manufacturing purposes 
+shall be served under a general service schedule.  A customer shall be authorized to maintain 
+separate wiring so that the residential portion of the premises is served through a separate meter 
+under the appropriate schedule, and the commercial or manufacturing portion of the premises is 
+served through a separate meter or meters under the appropriate general service schedule.  In 
+the event that the customer does not elect to utilize this authorization, the appropriate general 
+service schedule shall apply to all service supplied.  
+ 
+ 4.7 Other Sources of Energy: 
+ The Company will not supply service to cust omers who have other so urces of energy supply 
+except under schedules which specifically provide for such service.  A customer shall not be 
+permitted to operate its own generating equipment in parallel with the Company’s service, except 
+with the written permission of the Company.  In order to avoid undue jeopardy to life and property 
+to the customer’s premises, to the Company’s system, and in the facilities of third parties, the 
+customer shall not install its own generating equipment without the prior written permission of the 
+Company.  
+  
+          4.8 Meter Collars: 
+ Pursuant to P.L. 2023, C. 156, the Company sha ll authorize the installation and operation of a 
+meter collar adapter, as that device is defined by law, whether owned by a residential customer, 
+by the Company, or by a third-party, provided that the following criteria are met:  
+  (1) the meter collar adapter is qualified to be connected to the supply side of the service 
+disconnect pursuant to the applicable provisions of the National Electric Code;  
+  (2) the meter collar adapter is approved or listed by a nationally recognized testing 
+laboratory and is suitable according to the device’s approval or listing documentation, for use in 
+meter sockets that are rated up to 200 amperes; 
+  (3) the meter collar adapter is certified to meet all applicable standards, as determined 
+by a nationally recognized testing laboratory;  
+  (4) the meter collar adapter does not impede access to the sealed meter socket 
+compartment or the pull section of the service section of the Company’s electric meter or 
+switchboard, as applicable; and  
+  (5) the specific model of meter collar adapter  is approved by the Company for installation, 
+as publicly noticed, including notice on the Company’s website.  
+  
+ Customers will be directly responsible for any and all cost associated with meter collars.   
+ 
+Date of Issue: July 3, 2024  Effective Date: July 5, 2024 
+Exhibit D 
+Page 35 of 157
+
+=== PHYSICAL PDF PAGE 249 ===
+ATLANTIC CITY ELECTRIC COMPANY 
+BPU NJ No. 11 Electric Service - Section II   Third Revised Sheet Replaces Second Sheet No. 17 
+ 
+TERMS AND CONDITIONS OF SERVICE 
+ 
+6. METERING, BILLING AND PAYM ENT FOR SERVICE  (Continued) 
+ 
+ 6.4 Payment of Bills: 
+ Bills are payable upon presentation, at any lo cation identified by the Company as a payment 
+office, Courtesy Center or authorized collection agency, within twenty (20) days of the postmarked 
+date.  
+ 
+ Overdue bills for non-residential customers are subj ect to a late payment charge as specified on 
+Rate Schedule CHG.  This charge will be app lied to amounts billed including accounts payable 
+and unpaid late payment charge amounts applied to previous bills, which are not received by the 
+Company within forty-five (45) days for non- residential customers, following the due date 
+specified on the bill.  The amount of the late payment charge to be added to the unpaid balance 
+for non-residential customers shall be determined by multiplying the unpaid balance by the late 
+payment charge rate as specified in Rate Schedule CHG.  When payment is received by the 
+Company from a customer who has an unpaid balance which includes charges for late payment, 
+the payment shall be applied first to such c harges and then to the remainder of the unpaid 
+balance. 
+ 
+ New Jersey public utility companies, subject to the New Jersey State Excise Tax, shall be billed 
+net of such taxes. 
+  
+  Courtesy Center Locations 
+ 
+Egg Harbor Township 6814 Tilton Rd, Egg Harbor Township, NJ 08234 
+Ventnor 5014 Wellington Ave,  
+Ventnor City, NJ 08406   
+Cape May Court 
+House 
+420 S Main St, Cape May Court House, NJ 
+08210.  
+Millville 1101 N. 2nd St , Millville NJ 08332 
+Turnersville 5101 Rt42 Turnersville NJ 08012 
+ 
+ 
+ 6.5 Billing Period:  
+  Except as hereinafter provided under normal co urse of business, customers shall be billed 
+monthly.  Bills for other than thirty (30) days sha ll be prorated.  Where credit situations require, 
+the Company may read meters and render bills at shorter intervals.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue: November 30, 2023  Effective Date: December 1, 2023 
+ 
+Issued by:   
+Issued by:  J. Tyler Anthony, President and Chief Executive Officer – Atlantic City Electric Company 
+Filed pursuant to Board of Public Utilities of the State of New Jersey directives associated with the BPU 
+Docket No. ER23020091 
+Exhibit D 
+Page 40 of 157

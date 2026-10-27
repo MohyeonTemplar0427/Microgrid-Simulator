@@ -64,12 +64,18 @@ PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
                  ("ppl_electric_pennsylvania", "commercial", "GS-1"),
                  ("aep_ohio", "residential", "RS"), ("aep_ohio", "commercial", "GS-1"))
 BGE_CASES = (("bge_maryland", "residential", "R"), ("bge_maryland", "commercial", "G"))
+ROCKLAND_CASES = (("rockland_electric_new_jersey", "residential", "SC1"), ("rockland_electric_new_jersey", "commercial", "SC2"))
+JCPL_CASES = (("jcpl_new_jersey", "residential", "RS"), ("jcpl_new_jersey", "commercial", "GS"))
+ATLANTIC_CITY_CASES = (("atlantic_city_electric_new_jersey", "residential", "RS"), ("atlantic_city_electric_new_jersey", "commercial", "MGS-SECONDARY"))
 POTOMAC_EDISON_CASES = (("potomac_edison_maryland", "residential", "R"), ("potomac_edison_maryland", "commercial", "G"))
 DELMARVA_CASES = (("delmarva_maryland", "residential", "R"), ("delmarva_maryland", "commercial", "SGS-S"))
 PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "commercial", "GS"))
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "rockland_electric_new_jersey": ((2026,"2026-10-01","2026-10-31"),),
+    "jcpl_new_jersey": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
+    "atlantic_city_electric_new_jersey": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "potomac_edison_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "delmarva_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "pepco_maryland": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -86,7 +92,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -189,7 +195,11 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
+    if utility == "rockland_electric_new_jersey" and custom is None and period == "annual":
+        raise ValueError("Rockland full-year2025 component coverage is unverified; only October2026 calendar cycles are enabled. No historical transmission or current-price substitution.")
     va_history_plan=utility == "dominion_energy_virginia" and allow_va_history and plan in ("VA-1", "VA-GS1")
+    if utility == "atlantic_city_electric_new_jersey" and custom is None and period == "annual":
+        raise ValueError("ACE full-year2025 coverage is unsupported: source gaps and non30-day proration are not filled with current rates.")
     if utility == "potomac_edison_maryland" and custom is None and period == "annual":
         raise ValueError("Potomac Edison full-year2025 coverage is unverified; select explicit September–October2026 complete calendar cycles, not current-rate substitution.")
     if utility == "delmarva_maryland" and custom is None and period == "annual":
@@ -212,8 +222,10 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2025-03-01","2025-03-31"
     if utility=="alliant_energy_iowa" and custom is None and period=="monthly":
         start,end="2026-07-01","2026-07-31"
-    if utility in ("pepco_maryland", "delmarva_maryland", "potomac_edison_maryland") and custom is None and period == "monthly":
+    if utility in ("pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey") and custom is None and period == "monthly":
         start,end="2026-09-01","2026-09-30"
+    if utility == "rockland_electric_new_jersey" and custom is None and period == "monthly":
+        start,end="2026-10-01","2026-10-31"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
@@ -226,6 +238,17 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
+    if utility == "jcpl_new_jersey" and account["tariff"] == "GS":
+        from src.billing.jcpl_nj import history_through, pls_as_of
+        account["prior_history_through_month"] = history_through(start)
+        account["peak_load_share_as_of"] = pls_as_of(start)
+        for cycle in r["billing_cycles"]:
+            assignment = pls_as_of(cycle["start_date"])
+            cycle["account_overrides"].update(peak_load_share_as_of=assignment,
+                pls_source="Explicit hypothetical utility-assigned November PLS10kW as of "+assignment+"; dated procurement-year BGS-RSCP assignment, not inferred from monthly demand")
+    if utility == "atlantic_city_electric_new_jersey" and account["tariff"] == "MGS-SECONDARY":
+        from src.billing.atlantic_city_electric import pls_as_of
+        account["peak_load_share_as_of"] = pls_as_of(start)
     if utility == "potomac_edison_maryland" and account["tariff"] == "G":
         from src.billing.potomac_edison_md import hypothetical_history
         account["history"] = hypothetical_history(start[:7]+"-01")
@@ -440,6 +463,71 @@ def attach_weather(app, request, inputs):
 def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
                        allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if utility == "rockland_electric_new_jersey":
+        from src.billing.rockland_nj import cycle_review
+        expected=cycle_review(account,index);m=bill.get("metrics",{});res=account["tariff"]=="SC1"
+        require(bill.get("is_complete_bill") is True and bill.get("excluded_components")==[]
+                and bill.get("rate_evidence_status")=="verified" and bill.get("assumption_model") is None
+                and bill.get("rate_assumptions")==[] and bill.get("next_state")=={}
+                and m.get("quantity_basis")=="raw_import_energy_no_unsourced_quantity_rounding"
+                and m.get("objective_scope")=="unrounded_ordinary_component_charges"
+                and m.get("whole_cycle_block_kwh")== (600. if res else None)
+                and m.get("monthly_charge_factor")==1. and m.get("partial_period_proration_applied") is False
+                and m.get("reconciliation_clock")==expected["reconciliation_clock"]
+                and m.get("minimum_inactive_domain_verified") is True
+                and bill["unrounded_total_usd"]>=m.get("monthly_minimum_usd",float("inf"))-1e-7
+                and bill["total_usd"]>=m["monthly_minimum_usd"]
+                and m.get("additional_tax_percentage_applied") is False and m.get("rounded_cash_optimum_claimed") is False,
+                "Rockland requires verified October ordinary charges, matched billing-month reconciliation, whole monthly blocks, inactive minimum and explicit unrounded proof scope")
+        require(account.get("county")=="Bergen" and account.get("service_division")=="eastern"
+                and account.get("no_ami_opt_out_fee_confirmed") is True,
+                "Rockland no special/AMI fees and Bergen/Eastern account scope must remain explicit")
+        if not res:
+            require(account.get("sc2_non_demand_confirmed") is True
+                    and account.get("metering")=="metered_non_demand_billed"
+                    and all(bill["lines"].get(k)==0. for k in ("distribution_demand","transmission_demand","bgs_generation_demand","ciep_standby_fee")),
+                    "Rockland SC2 retained non-demand BILLING must not silently become metered-demand/CIEP service")
+        return "complete_utility_bill",[]
+    if utility == "jcpl_new_jersey":
+        from src.billing.jcpl_nj import cycle_review
+        expected = cycle_review(account, index); m = bill.get("metrics", {})
+        require(bill.get("is_complete_bill") is True and bill.get("excluded_components") == []
+                and bill.get("rate_evidence_status") == "verified" and bill.get("assumption_model") is None
+                and bill.get("rate_assumptions") == []
+                and m.get("quantity_basis") == "raw_import_energy_no_unsourced_quantity_rounding"
+                and m.get("linear_allocation_basis") == expected["linear_allocation_basis"]
+                and m.get("whole_cycle_block_kwh") == (600. if account["tariff"] == "RS" else 1000.)
+                and m.get("unchanged_monthly_blocks_verified") is True
+                and m.get("monthly_charge_factor") == 1. and m.get("partial_period_proration_applied") is False
+                and m.get("additional_tax_percentage_applied") is False
+                and m.get("rounded_cash_optimum_claimed") is False,
+                "JCP&L evidence must retain complete conditional ordinary charges, actual service-energy allocation, whole monthly blocks and unrounded proof scope")
+        if account["tariff"] == "GS":
+            require(account.get("gs_no_demand_meter_confirmed") is True
+                    and account.get("gs_minimum_domain_confirmed") is True
+                    and account.get("demand_method") == "utility_no_meter"
+                    and m.get("gs_minimum_inactive_verified") is True
+                    and 0. <= m.get("actual_15_minute_peak_kw", 11.) <= 10.+1e-7
+                    and 0. <= m.get("opening_conservative_peak_bound_kw", 11.) <= 10.
+                    and m["actual_15_minute_peak_kw"] <= bill["next_state"].get("gs_history_peak_upper_bound_kw", -1.)+1e-7
+                    and 0. <= bill["next_state"].get("gs_history_peak_upper_bound_kw", 11.) <= 10.+1e-7
+                    and bill["next_state"].get("through_month") == account["billing_month"]
+                    and all(bill["lines"].get(k) == 0. for k in ("distribution_demand", "minimum_demand", "reactive_demand")),
+                    "JCP&L GS must retain utility no-meter classification, independently bounded actual history/contract and inactive excess10 demand/minimum charges")
+        return "complete_utility_bill", []
+    if utility == "atlantic_city_electric_new_jersey":
+        from src.billing.atlantic_city_electric import cycle_review, RAW_OBJECTIVE
+        cycle_review(account, index)
+        metrics = bill.get("metrics", {}); residential = account["tariff"] == "RS"
+        require(bill.get("is_complete_bill") is True and bill.get("excluded_components") == []
+                and bill.get("rate_evidence_status") == "verified"
+                and bill.get("assumption_model") is None and bill.get("rate_assumptions") == []
+                and metrics.get("optimization_objective_scope") == ("unrounded_rs_component_charges" if residential else RAW_OBJECTIVE)
+                and metrics.get("quantity_basis") == ("raw_rs_energy" if residential else "filed_nearest_quantities_no_half_ties")
+                and metrics.get("rounded_cash_optimum_claimed") is False
+                and metrics.get("additional_tax_percentage_applied") is False,
+                "ACE evidence must retain complete ordinary charges, final quantity rules and explicit pre-rounding objective proof limits")
+        return "complete_utility_bill", []
     if utility == "potomac_edison_maryland":
         from src.billing.potomac_edison_md import evidence, excluded_components
         expected = evidence(index, account); residential = account["tariff"] == "R"
@@ -646,6 +734,21 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
             if outcomes[i].get("cost_optimum_proven") and "primary_lower_bound_usd" in outcomes[i]:
                 proof = outcomes[i]
                 objective = bill["unrounded_total_usd"]
+                if utility == "atlantic_city_electric_new_jersey":
+                    # Re-audit the existing objective-input hook separately from
+                    # the final filed quantity-rounded bill. A proxy proof must
+                    # never be relabeled as a minimum rounded customer invoice.
+                    from src.billing.atlantic_city_electric import objective_inputs
+                    objective_account, objective_state = objective_inputs(a, policy=request["credit_objective_policy"])
+                    proxy_bill = calculate_cycle(utility, index[block], dispatch.grid_import_kw.to_numpy()[block],
+                        dispatch.grid_export_kw.to_numpy()[block], objective_account,
+                        state=objective_state, equipment=equipment_one)
+                    objective = proxy_bill["unrounded_total_usd"]
+                    saved = result["billing"][scenario][i]
+                    for key in ("quantity_basis", "optimization_objective_scope", "rounded_cash_optimum_claimed"):
+                        require(saved["metrics"].get(key) == bill["metrics"][key], "ACE saved quantity/proof scope changed")
+                    require(abs(bill["unrounded_total_usd"]-objective) <= bill["metrics"]["quantity_rounding_charge_error_bound_usd"]+1e-7,
+                            "ACE final quantity-rounded charges exceed the independently reconstructed proxy error bound")
                 if request["include_degradation_in_optimization"]:
                     objective += request["degradation_cost_per_kWh"]*dt*float((charge[block]+discharge[block]).sum())
                 require(proof["cost_proof_method"] in ("strict_milp","physical_relaxation_bound"), "Unknown primary proof method")

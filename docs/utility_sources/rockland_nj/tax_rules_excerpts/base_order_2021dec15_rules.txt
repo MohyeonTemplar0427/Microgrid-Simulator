@@ -1,0 +1,453 @@
+SOURCE: https://www.nj.gov/bpu/pdf/boardorders/2021/20211215/2B%20ORDER%20RECO%202021%20BRC.pdf
+ORIGINAL: .cache/rockland_electric_nj/sources/tax_rules/base_order_2021dec15.pdf
+SHA256: 28b253e4b5ad38cd2b1a3474ad27df356ba50fb1e613cc8eb5358cefd20491b4
+Physical PDF pages one based; printedleafnumbers differ.
+
+=== PHYSICAL PDF PAGE 3 ===
+ 
+BPU DOCKET NOS. ER21050823, 
+ER21030675, ER21091143  
+OAL DOCKET NOS. PUC 05219-21 & 
+PUC 05218-21 
+3 
+Agenda Date: 12/15/21 
+Agenda Item: 2B 
+storm cost deferral mechanism, and 2) address recovery in rates of the total deferred incremental 
+operation and maintenance (“O&M”) storm related costs, the time period for recovery, and the 
+carrying charge and manner of recovery, in a Phase Two of the Company’s 2021 Rate Case 
+Petition. 
+ 
+By Order dated October 6, 2021, the Board further suspended the proposed rate increase until 
+February 21, 2022 as settlement negotiations were ongoing.  
+ 
+After publication of notices in newspapers of general circulation in the Company’s service territory, 
+public hearings for the 2021 Rate Case Petition and Securitization Petition were conducted 
+virtually on September 24, 2021 at 3:30  pm and 4:30 pm with ALJ Betancourt presiding.3  No 
+members of the public appeared or filed written comments with the Board. 
+ 
+STIPULATION 
+ 
+After discovery and comprehensive settlement discussions, the Company, the New Jersey 
+Division of Rate Counsel  (“Rate Counsel”)  and Board Staff (“Staff”), ( collectively, “Parties”) 
+executed a stipulation of settlement (“Stipulation”), the key elements of which are as follows:4 
+ 
+1. Effective Date.  The Parties agree that should the Board issue a written Order approving 
+the Stipulation, revenue recovery and rates set forth in the Stipulation shall become 
+effective for service rendered on and after January 1, 2022 (“Effective Date”). 
+ 
+2. Test Year.  The Parties agree that the proper test year for establishing rates is the 12 -
+month period ended September 30, 2021. 
+ 
+3. Distribution Revenue Requirement and Rate Adjustment .  In the interest of achieving a 
+satisfactory resolution of the issues to be decided in this proceeding, the Parties agree to 
+an addition to annual distribution revenues of $9.65 million, excluding SUT, which equates 
+to an increase in overall revenues of 4.6%.  The Parties agree that RECO’s base rates 
+will be just and reasonable after they are adjusted to generate an additional $9.65 million 
+in annual distribution revenues for service rendered on and after the Effective Date. 
+ 
+4. Rate Base.  The stipulated electric distribution rate base used in deriving the revenue 
+requirement and rates reflected in the Stipulation is approximately $262.8 million.   
+ 
+5. Rate of Return.  The overall rate of return, before income tax gross up, for purposes of 
+this Settlement, is 7.08%, as set forth in Schedule A of the Stipulation.  This is based upon 
+a return on common equity of 9.60% and an embedded cost rate of long- term debt of 
+4.74%.  The Parties agree that the capital structure for purposes of this Settlement is 
+51.49% long-term debt and 48.51% common equity.   
+ 
+6. Determination of Revenue Requirement .  The determination of the stipulated revenue 
+requirement is reflected on attached Schedule A of the Stipulation. 
+ 
+                                            
+3 Due to the COVID-19 pandemic, public hearings were held via Zoom. 
+4 Although summarized in this Order, the detailed terms of the Stipulation control, subject to the findings 
+and conclusions of the Order. Paragraphs are numbered to coincide with the Stipulation.   
+
+=== PHYSICAL PDF PAGE 4 ===
+ 
+BPU DOCKET NOS. ER21050823, 
+ER21030675, ER21091143  
+OAL DOCKET NOS. PUC 05219-21 & 
+PUC 05218-21 
+4 
+Agenda Date: 12/15/21 
+Agenda Item: 2B 
+7. Consolidated Tax Adjustment .  The Parties acknowledge that the stipulated revenue 
+increase reflects an adjustment for consolidated income taxes. 
+ 
+8. Rates.  The Parties agree that Schedule B  of the Stipulation summarizes the revised 
+electric distribution rates that shall be implemented on the Effective Date and that shall be 
+included in revised Tariff leaves.  The revised rates set forth in Schedule B implement the 
+terms of the Stipulation regarding revenue requirements and rates.  The Parties agree that 
+the rates set forth in the Stipulation and attached schedules are just and reasonable.   
+ 
+9. Rate Design/Tariff .  The revised rates are set forth in Schedule B  of the Stipulation.  
+Monthly customer charges excluding S UT were increased as follows: (i) for S ervice 
+Classification (“SC”) No. 1, the customer charge increased from $5.07 to $5.39; (ii) for SC 
+No. 2 – Secondary Demand Billed, the customer charge increased from $19.70 to $22.51; 
+(iii) for SC No. 2 – Primary, the customer charge increased from $86.28 to $93.79; (iv) for 
+SC No. 6 – Energy Only unmetered service, the customer charge increased from $2.81 to 
+$3.75; (v) for SC No. 6 – Energy Only metered service, the customer charge increased 
+from $13.13 to $15.01; and (vi) for SC No. 7 –  Primary, the customer charge increased 
+from $234.47 to $281.36, as referenced in Schedule B  of the Stipulation .  Next, before 
+applying any revenue increase, a revenue neutral change was implemented for the SC 
+No. 2 Secondary Demand Billed class, whereby 25% of the current usage rate differentials 
+and a corresponding portion of demand rate differentials were eliminated and 2% of usage 
+revenues were shifted to demand revenues.  Thereafter, distribution rates were developed 
+within each SC by applying uniform percentage increases, specific to each SC: 1) to all 
+distribution rates (excluding customer charges) in non- demand billed classes; and 2) to 
+demand distribution rates (excluding customer charges) only in demand -billed classes.  
+The Parties agree that Schedule C of the Stipulation demonstrates that the rates to be 
+implemented by RECO are designed to produce an additional $9.65 million in annual 
+revenues.  The Parties also agree to making the following changes to the Company’s 
+Tariff, which are set forth in schedule F of the Stipulation:  (i) SC No. 5 and all references 
+to SC No. 5 will be removed from the Tariff; (ii) the wattage ranges assigned to the 
+Company’s LED street lights under SC Nos. 4 and 6 have been extended; (iii) uncollectible 
+expense is transferred from base rates to the Societal Benefits Charge (“SBC”) for 
+recovery as described in paragraph 10; and (iv) the TBC and TBC-Tax charges (currently 
+set at $0) are eliminated from the Tariff consistent with paragraph 20 of the Stipulation.  
+The Parties agree that all of the foregoing changes described in this Paragraph will be 
+reflected in the compliance Tariff to be filed pursuant to Paragraph 23 of the Stipulation. 
+ 
+10. Uncollectible Expense.  The Parties agree that uncollectible expense should no longer be 
+recovered through the Company’s base rates, but instead should be transferred to and 
+recovered as a separate component through the SBC.   Accordingly, commencing on the 
+Effective Date, the Company shall implement the adjusted SBC  rate as set forth in 
+Schedule F of the Stipulation that will collect the Company’s uncollectible expense along 
+with the other costs recovered through the SBC under prior Board orders.  The Parties 
+acknowledge that the Stipulation revenue increase reflects an adjustment to the SBC rate 
+in Schedule F of the Stipulation that is designed to provide for the annual recovery of 
+$434,205 in uncollectible expense.  The Company will include the reconciliation of the 
+uncollectible expense along with the annual filing  made to reconcile the Demand Side 
+Management and Clean Energy Program components of the SBC.  
+ 
+ 
+
+=== PHYSICAL PDF PAGE 9 ===
+ 
+BPU DOCKET NOS. ER21050823, 
+ER21030675, ER21091143  
+OAL DOCKET NOS. PUC 05219-21 & 
+PUC 05218-21 
+9 
+Agenda Date: 12/15/21 
+Agenda Item: 2B 
+ 
+Therefore, based upon the Board’s review and consideration of the record in this proceeding, the 
+Board HEREBY FINDS the Initial Decision and Stipulation to be reasonable, in the public interest, 
+and in accordance with the law.  Accordingly, the Board HEREBY  ADOPTS the attached Initial 
+Decision and Stipulation in their entirety, and HEREBY INCORPORATES their terms and 
+conditions as though fully set forth herein, subject to any terms and conditions set forth in this 
+Order. 
+ 
+As agreed to by the Parties, the Board CONSIDERS  the Henri Petition to be resolved.  
+Accordingly, the Board HEREBY DIRECTS Staff to take the necessary steps to close Docket No. 
+ER21091143. 
+ 
+As a result of the Stipulation, a typical residential customer using 925 kWh per month will receive 
+an annualized monthly increase of approximately $7.65, or 4.5%. 
+ 
+The rates approved by this Order will become effective for service rendered on and after January 
+1, 2022.  The Company is HEREBY DIRECTED to file tariff sheets consistent with this Order by 
+December 30, 2021.  The Board HEREBY DIRECTS Staff to review the compliance tariff filings 
+for consistency with this Order. 
+ 
+The Company’s rates remain subject to audit by the Board.  This Decision and Order shall not 
+preclude the Board from taking any actions deemed to be appropriate as a result of  any Board 
+audit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PHYSICAL PDF PAGE 54 ===
+ISSUED: EFFECTIVE: 
+ISSUED BY: Robert Sanchez, President 
+Mahwah, New Jersey 07430 
+ROCKLAND ELECTRIC COMPANY 
+B.P.U. NO. 3 - ELECTRICITY 
+Revised Leaf No. 66 
+Superseding Revised Leaf No. 66 
+GENER
+AL INFORMATION 
+SERVICE CLASSIFICATION RIDER 
+NET METERING AND INTERCONNECTION STANDARDS FOR CLASS I RENEWABLE ENERGY 
+SYSTEMS 
+App lic
+able to Service Classification Nos. 1, 2, 3, and 7 
+Eligibility 
+A cust
+omer operating a qualifying class I renewable energy system as defined at N.J.A.C. 14:8-1.2 
+(“Customer-generator”) located on the customer’s side of the electric meter, used at the customer's 
+residence or facility is eligible for service hereunder, provided that (1) the generating capacity of the 
+Customer-generator’s facility does not exceed the amount of electricity supplied by the electric pow er 
+supplier or basic generation service provider to the customer over a historical 12-month period; (2) 
+the Customer-generator's annual peak demand is less than ten megawatts; and (3) the Customer-
+generator complies with the provisions of this Rider. 
+The Customer-generator will be required to submit an application for service under this Rider and pay 
+an application processing fee as defined in N.J.A.C. 14:8-5 at the time of application. The Customer-
+generator will also be required to submit a signed Net Metering Agreement to the Company and the 
+Company's execution of such Net Metering Agreement shall constitute approval for the Customer-
+generator to receive service hereunder. 
+Interconnection with the Company's system will be in accordance with the terms and conditions set 
+forth in the Net Metering Agreement.  Interconnection costs shall be paid as defined in N.J.A.C. 14:8-
+5 and shall be in addition to any line extension charge required to meet service requirements. 
+Net metering shall be available to eligible Customer-generators on a first-come, first-served basis.  
+The Company may be authorized by the Board to cease offering net metering whenever the total 
+rated generating capacity owned and operated by net metering Customer-generators Statewide 
+equals 2.5 percent of the State’s peak electricity demand. 
+(Continued) 
+DRAFT
+Schedule F 
+Attachment 1 
+Page 8 of 36
+
+=== PHYSICAL PDF PAGE 55 ===
+ISSUED: EFFECTIVE: 
+ISSUED BY: Robert Sanchez, President 
+Mahwah, New Jersey 07430 
+ROCKLAND ELECTRIC COMPANY 
+B.P.U. NO. 3 - ELECTRICITY 
+Revised Leaf No. 71 
+Superseding Revised Leaf No. 71 
+GENER
+AL INFORMATION 
+SERVICE CLASSIFICATION RIDER (Continued) 
+CORPORATE BUSINESS TAX (CBT) 
+Applicable to Service Classifications 1, 2, 3, 4, 6, and 7 
+In accordance with P.L. 1997, c. 192 (the "energy tax reform statute"), provision for the New Jersey  
+Corporation Business Tax has been included in all customer charges, distribution changes and, where 
+applicable, per luminaire charges applicable under this tariff. The energy tax reform statute exempts 
+the following customers from the CBT provision, and when billed to such customers, the Base Tariff  
+Rates otherwise applicable under this tariff shall be reduced by the provision for the  CBT (and related 
+New Jersey Sales and Use Tax) included therein: 
+(1) F ranc
+hised providers of utility services (gas, electricity, water, waste water and
+telecommunications services provided by local exchange carriers) within the State of New
+Jersey.
+(2) Coge nerator
+s in operation, or which have filed an application for an operating permit or a
+construction permit and a certificate of operation in order to comply with air quality standards
+under P.L. 1954, c. 212 (C.26:2C-1 et seq.) with the New Jersey Department of
+Environmental Protection, on or before March 10, 1997.
+(3) S peci
+al contract customers for which a customer-specific tax classification was approved by
+a written Order of the Board prior to January 1, 1998.
+DRAFT
+Schedule F 
+Attachment 1 
+Page 9 of 36
+
+=== PHYSICAL PDF PAGE 56 ===
+ISSUED: EFFECTIVE: 
+ISSUED BY: Robert Sanchez, President 
+Mahwah, New Jersey 07430 
+ROCKLAND ELECTRIC COMPANY 
+B.P.U. NO. 3 - ELECTRICITY 
+Revised Leaf No. 72 
+Superseding Revised Leaf No. 72 
+GENER
+AL INFORMATION 
+SERVICE CLASSIFICATION RIDER (Continued) 
+SALES AND USE TAX (SUT) 
+Applicable to Service Classifications 1, 2, 3, 4, 6, and 7 
+In accordance with P.L. 1997, c. 192 (the "energy tax reform statute"), as amended by P.L. 2016, c. 
+57, provision for the New Jersey Sales and Use Tax ("SUT") has been included in all charges  
+applicable under this tariff by multiplying the charges that would apply before application of the SUT 
+by the factor 1.06625. 
+(1) The en ergy
+ tax reform statute exempts the following customers from the SUT provision, and
+when billed to such customers, the charges otherwise applicable under this  tariff shall be
+reduced by the provision for the SUT included therein:
+(a) F ranc
+hised providers of utility services (gas, electricity, water, waste water and
+telecommunications services provided by local exchange carriers) within the State of
+New Jersey.
+(b) Coge nerator
+s in operation, or which have filed an application for an operating permit
+or a construction permit and a certificate of operation in order to comply with air
+quality standards under P.L. 1954, c. 212 (C.26:2C-1 et seq.) with the New Jersey
+Department of Environmental Protection, on or before March 10, 1997.
+(c) S peci
+al contract customers for which a customer-specific tax classification was
+approved by a written Order of the Board prior to January 1, 1998.
+(d) A genc
+ies or instrumentalities of the federal government.
+(e) I nter
+national organizations of which the United States of America is a member.
+(2) T he Bus
+iness Retention and Relocation Assistance Act (P.L. 2004, c. 65) and subsequent
+amendment (P.L. 2005, c.374) exempts the following customers from the SUT provision, and
+when billed to such customers, the charges otherwise applicable shall be reduced by the
+provision for the SUT included therein:
+(a) A  qual
+ified business that employs at least 250 people within an enterprise
+zone, at least 50% of whom are directly employed in a manufacturing process, for the
+exclusive use or consumption of such business within an enterprise zone, and
+(Continued) 
+DRAFT
+Schedule F 
+Attachment 1 
+Page 10 of 36
+
+=== PHYSICAL PDF PAGE 59 ===
+ISSUED: EFFECTIVE: 
+ISSUED BY: Robert Sanchez, President 
+Mahwah, New Jersey 07430 
+. 
+SERVICE C
+LASSIFICATION NO. 1 
+RESIDENTIAL SERVICE (Continued) 
+RATE – MONTHLY (Continued) 
+(5) Basic  Generation Service
+Custome
+rs taking Basic Generation Service from the Company will be billed for such service
+in accordance with General Information Section No. 31.
+In accordance with Riders CBT and SUT, the charges in this Rate Schedule include provision for the 
+New Jersey Corporation Business Tax and the New Jersey Sales and Use Tax. When billed to 
+customers exempt from one or more of these taxes, as set forth in Riders CBT and SUT, such 
+charges will be reduced by the relevant amount of such taxes included therein.  
+MINIMUM CHARGE EACH CONTRACT EACH LOCATION 
+$5.75 mo nthl
+y, not less than $34.50 per contract. 
+TERMS OF PAYMENT 
+Bills are due in accordance with General Information Section No. 10. 
+TERM 
+Terminable at any time unless a specified period is required under a line ex tension agreement. 
+EXTENSION OF FACILITIES 
+Where service is supplied from an extension the charges thereon shall be determined as provided  
+in General Information. 
+(Conti
+nued) 
+ROCKLAND ELECTRIC COMPANY 
+B.P.U. NO. 3 – ELECTRICITY 
+Revised Leaf No. 84 
+Superseding Revised Leaf No. 84 
+DRAFT
+Schedule F 
+Attachment 1 
+Page 13 of 36
+
+=== PHYSICAL PDF PAGE 60 ===
+ISSUED: EFFECTIVE: 
+ISSUED BY: Robert Sanchez, President 
+Mahwah, New Jersey 07430 
+SERVICE C
+LASSIFICATION NO. 2 
+GENERAL SERVICE 
+APPLICABLE TO USE OF SERVICE FOR 
+Sales and delivery of electric power supply provided by the Company or delivery of electric power 
+supply provided by an electric generation supplier under the Company’s Retail Access Program  
+to general secondary or primary service customers. 
+A customer taking primary service whose demand exceeds 1,000 kW during any two of the 
+previous twelve months shall not be eligible for this rate and shall be transferred to Service  
+Classification No. 7. A customer so transferred shall only be eligible for transfer back to Service  
+Classification No. 2 on the annual anniversary of the transfer to Service Classification No. 7 and  
+only if said customer has not exceeded 1,000 kW during any two of the previous twelve months. 
+All service at one location shall be taken through one meter except that service under Special  
+Provision B shall be separately metered. 
+Demand billed customers with on-site generation that meet the definition of distributed generation as 
+defined in N.J.S.A. 48:2-21.37 shall be subject to the provisions of Service Classification Rider – 
+Standby Service. 
+CHARACTER OF SERVICE 
+Continuous, 60 cycle, A.C., single or three phase secondary, at approximately 120/208, 120/240  
+volts, and 277/480 volts where available; or three phase primary at approximately 2400/4160 and  
+7620/13200 volts Wye, 13000 and 34500 volts Delta, 69000 volts Wye, and in limited areas 2400 
+or 4800 volts Delta, depending upon the magnitude and characteristics of the load and the circuit  
+from which service is supplied. 
+RATE – MONTHLY 
+Summer M onths*    Other Months 
+(1) Customer Charge
+(a) Secondar
+y Service (Non-Demand Billed)
+Unmetered Service $14.00 $14.00 
+   Metered Service $16.00 $16.00 
+(b) S econdar
+y Service (Demand Billed) $ 24.00 $24.00 
+(c) P rimar
+y Service $100.00 $100.00 
+* Definition of Summer Billing Months - June through September
+(Conti
+nued) 
+ROCKLAND ELECTRIC COMPANY 
+B.P.U. NO. 3 - ELECTRICITY 
+Revised Leaf No. 87 
+Superseding Revised Leaf No. 87 
+DRAFT
+Schedule F 
+Attachment 1 
+Page 14 of 36
+
+=== PHYSICAL PDF PAGE 63 ===
+ISSUED: EFFECTIVE: 
+ISSUED BY: Robert Sanchez, President 
+Mahwah, New Jersey 07430 
+SERVICE C
+LASSIFICATION NO. 2 
+GENERAL SERVICE (Continued) 
+RATE – MONTHLY (Continued) 
+(5) CIEP Standby Fee
+In acco
+rdance with General Information Section No. 32, a CIEP Standby Fee shall be
+assessed on all kWh of customers eligible for BGS-CIEP service.
+(6) Basic Generation Service
+Customer
+s taking Basic Generation Service from the Company will be billed for suc h service
+in accordance with General Information Section No. 31.
+In accordance with Riders CBT and SUT, the charges in this Rate Schedule include provision for the 
+New Jersey Corporation Business Tax and the New Jersey Sales and Use Tax.  When billed to 
+customers exempt from one or more of these taxes, as set forth in Riders CBT and SUT, such 
+charges will be reduced by the relevant amount of such taxes included therein.  
+MINIMUM MONTHLY CHARGE 
+Secondary Service (Non-Demand Billed) 
+Unmetered Service $14.00 
+ Metered Service $16.00 
+Secondary Service (Demand Billed) $24.00  Plus the demand charge. 
+Primary Service  $100.00  Plus the demand charge. 
+DETERMINATION OF DEMAND 
+The m onthl
+y billing demand in kW shall be either the greatest connected load or the greatest 15-
+minute integrated demand, determined as follows: 
+(1) B ill
+ing demand may be on a connected load basis when
+(a) demand meter would not reduce the billing demand, or
+(b) t he ins
+tallation is temporary, or
+(c) t he dev
+ice has a large instantaneous or highly fluctuating demand.
+(2) B ill
+ing shall be on a demand meter basis in all other cases and shall be billed at not less
+than 90% of the kVA demand. The billing demand for the billing months of October
+through May inclusive shall not be less than 70% of the highest metered demand for the
+preceding billing months of June through September inclusive.
+(Conti nued) 
+ROCKLAND ELECTRIC COMPANY 
+B.P.U. NO. 3 - ELECTRICITY 
+ Revised Leaf No. 91 
+ Superseding Revised Leaf No. 91 
+DRAFT
+Schedule F 
+Attachment 1 
+Page 17 of 36

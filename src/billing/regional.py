@@ -14,6 +14,12 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "rockland_electric_new_jersey": {"label":"Rockland Electric · New Jersey (Bergen/Eastern)", "state":"NJ", "zone":"RECO", "module":"rockland_nj", "timezone":"America/New_York",
+                                    "grid_operator":"PJM", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "jcpl_new_jersey": {"label":"JCP&L · New Jersey", "state":"NJ", "zone":"JCPL", "module":"jcpl_nj", "timezone":"America/New_York",
+                        "grid_operator":"PJM", "emergency_region":"FE-JC", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf", "https://www.pjm.com/markets-and-operations"]},
+    "atlantic_city_electric_new_jersey": {"label":"Atlantic City Electric · New Jersey", "state":"NJ", "zone":"AECO", "module":"atlantic_city_electric", "timezone":"America/New_York",
+                                        "grid_operator":"PJM", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
     "potomac_edison_maryland": {"label":"Potomac Edison · Maryland", "state":"MD", "zone":"APS", "module":"potomac_edison_md", "timezone":"America/New_York",
                                "grid_operator":"PJM",
                                "grid_sources":["https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/maryland/tariffs/PotomacEdisonSupplierTariff.pdf",

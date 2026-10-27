@@ -1,0 +1,34 @@
+SOURCE: .cache/rockland_electric_nj/sources/supply/ptc_current_linked.pdf
+PHYSICAL PAGE: 2
+
+Service Classification Service Classification Description Block Units Summer (June - September) Winter (October - May)
+0 - 600 kWh $/kWh 0.10646 0.16616
+> 600 kWh $/kWh 0.20125 0.16616
+Peak $/kWh 0.2785 0.34533
+Off Peak $/kWh 0.1081 0.10863
+Non-Demand Billed All kWh $/kWh 0.13923 0.1255
+All kWh $/kWh 0.10956 0.10331
+All kW $/kW 8.32 8.2
+All kW $/kW 8.32 8.2
+All kWh $/kWh 0.10693 0.10068
+All kW $/kW 8.32 8.2
+All kW $/kW 8.32 8.2
+Peak $/kWh 0.2225 0.2168
+Off Peak $/kWh 0.09066 0.0941
+SC No. 4 Public Street Lighting All kWh $/kWh 0.08452 0.08706
+SC No. 6 Private Overhead Lighting All kWh $/kWh 0.0841 0.08599
+*  Transmission Charges to be Included for SC Nos. 4 and 6 can be found on Leaf 102, and 116 of RECO's tariff which can be found on www.oru.com.
+**Reflects BGS block structures
+SC No. 3 Residential Time of Day Service
+SC No. 1
+Residential Service (Time of Day Service)
+Residential Service (Non-Time of Day 
+Service)
+SC No. 2 (Non-CIEP Eligible)
+Secondary
+Primary
+Rockland Electric Company
+Price to Compare
+Effective 6/1/2026 through 5/31/2027
+Excludes BGS Reconciliation Charge
+Applicable to Customers in Passaic and Sussex Counties

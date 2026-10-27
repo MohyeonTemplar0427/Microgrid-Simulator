@@ -1,0 +1,324 @@
+DERIVEDSCOPEDTEXT
+Original:https://eudapi.atlanticcityelectric.com/content-api/api/content/products/other/pages?url=%2Fmy-account%2Fmy-dashboard%2Frates-tariffs%2Fcurrent-tariffs&environment=live
+Status:official_original
+Scope:Component dates are independent. Snapshot is not automatic continuous-month coverage.
+{
+  "breadcrumbs": {
+    "segments": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "My Account"
+      },
+      {
+        "title": "My Dashboard",
+        "url": "/MyAccount/MyBillUsage/pages/secure/MyBillUsage.aspx",
+        "linkType": "Secure"
+      },
+      {
+        "title": "Rates \uff06 Tariffs",
+        "url": "/my-account/my-dashboard/rates-tariffs",
+        "linkType": "Anon"
+      },
+      {
+        "title": "Current Tariffs",
+        "url": "/my-account/my-dashboard/rates-tariffs/current-tariffs",
+        "linkType": "Anon"
+      }
+    ]
+  },
+  "url": "/my-account/my-dashboard/rates-tariffs/current-tariffs",
+  "metadata": {
+    "dataType": "metadata",
+    "systemOwner": [],
+    "systemTeam": []
+  },
+  "contents": [
+    {
+      "dataType": "article_page_template.section",
+      "title": "",
+      "contents": [
+        {
+          "dataType": "section.document",
+          "reference": [
+            {
+              "uniqueId": "blt48defb80fbbd2c4e",
+              "contentTypeId": "document",
+              "title": "NJTariffSection_I_III.pdf",
+              "version": 3,
+              "tags": [
+                "rates and tariffs",
+                "current tariffs"
+              ],
+              "dataType": "contents.section.contents.document.reference",
+              "description": "New Jersey Tariff Section I and III",
+              "displayTitle": "New Jersey Tariff Section I and III",
+              "documentFile": {
+                "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt368629e4a98f7506/6a22e5190641402e5fee72f1/NJ_Tariff_Sections_I_III_Eff_06.04.2026_.pdf?branch=prod_alias",
+                "fileSize": "245852",
+                "fileName": "NJ_Tariff_Sections_I_III_Eff_06.04.2026_.pdf",
+                "description": "",
+                "permanentUrl": "https://azure-na-assets.contentstack.com/v3/assets/blt407b5f1850a51a1b/blt368629e4a98f7506/NJ_Tariff_Section_I_III_Eff._12.01.23.pdf?branch=prod_alias",
+                "publishDetails": {
+                  "environment": "bltcd5183375cda9112",
+                  "locale": "en-us",
+                  "time": "2026-06-05T15:02:52.86Z",
+                  "user": "blt7a8a3ad11bb7425f",
+                  "dataType": "publish_details"
+                },
+                "uniqueId": "blt368629e4a98f7506",
+                "title": "NJ_Tariff_Section_I_III_Eff._12.01.23.pdf",
+                "version": 4,
+                "tags": [],
+                "dataType": "asset"
+              },
+              "metadata": {
+                "dataType": "metadata"
+              },
+              "reference": "contents.section.contents.document.reference"
+            }
+          ]
+        },
+        {
+          "dataType": "section.document",
+          "reference": [
+            {
+              "uniqueId": "bltba2d553d2c724400",
+              "contentTypeId": "document",
+              "title": "ACE-NJ-Supplier-Coordination-Agreement-EDM.pdf",
+              "version": 2,
+              "tags": [
+                "rates and tariffs"
+              ],
+              "dataType": "contents.section.contents.document.reference",
+              "displayTitle": "Supplier Coordination Agreement",
+              "description": "New Jersey Thirdparty Supplier Agreement",
+              "documentFile": {
+                "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt4fa8fcd4622a33ec/647e174a43871d320dba623f/ACE-NJ-Supplier-Coordination-Agreement-EDM.pdf?branch=prod_alias",
+                "fileSize": "411080",
+                "fileName": "ACE-NJ-Supplier-Coordination-Agreement-EDM.pdf",
+                "permanentUrl": "https://azure-na-assets.contentstack.com/v3/assets/blt407b5f1850a51a1b/blt4fa8fcd4622a33ec/ACE-NJ-Supplier-Coordination-Agreement-EDM.pdf?branch=prod_alias",
+                "publishDetails": {
+                  "environment": "bltcd5183375cda9112",
+                  "locale": "en-us",
+                  "time": "2023-07-03T14:37:55.317Z",
+                  "user": "blt6dec1c220a5aa044",
+                  "dataType": "publish_details"
+                },
+                "uniqueId": "blt4fa8fcd4622a33ec",
+                "title": "ACE-NJ-Supplier-Coordination-Agreement-EDM.pdf",
+                "version": 2,
+                "tags": [],
+                "dataType": "asset"
+              },
+              "metadata": {
+                "dataType": "metadata"
+              },
+              "reference": "contents.section.contents.document.reference"
+            }
+          ]
+        },
+        {
+          "dataType": "section.document",
+          "reference": [
+            {
+              "uniqueId": "blt925b28a4de131ba4",
+              "contentTypeId": "document",
+              "title": "NJTariffSectionIV.pdf",
+              "version": 7,
+              "tags": [
+                "rates and tariffs",
+                "current tariffs"
+              ],
+              "dataType": "contents.section.contents.document.reference",
+              "description": "New Jersey Tariff Section IV",
+              "displayTitle": "New Jersey Tariff Section IV",
+              "documentFile": {
+                "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6abe603b9c1713f986c691b5/NJ_Tariff_Section_IV_Eff._10.01.2026_EECEC_T_.pdf?branch=prod_alias",
+                "fileSize": "797341",
+                "fileName": "NJ_Tariff_Section_IV_Eff._10.01.2026_EECEC_T_.pdf",
+                "description": "",
+                "permanentUrl": "https://azure-na-assets.contentstack.com/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/NJ_Tariff_Section_IV_EFF_2.15.24_ZEC_Update.pdf?branch=prod_alias",
+                "publishDetails": {
+                  "environment": "bltcd5183375cda9112",
+                  "locale": "en-us",
+                  "time": "2026-10-01T13:29:36.238Z",
+                  "user": "blt7a8a3ad11bb7425f",
+                  "dataType": "publish_details"
+                },
+                "uniqueId": "blt433389f747df102f",
+                "title": "NJ_Tariff_Section_IV_EFF_2.15.24_ZEC_Update.pdf",
+                "version": 35,
+                "tags": [],
+                "dataType": "asset"
+              },
+              "metadata": {
+                "dataType": "metadata",
+                "systemOwner": [],
+                "systemTeam": []
+              },
+              "reference": "contents.section.contents.document.reference"
+            }
+          ]
+        },
+        {
+          "dataType": "section.document",
+          "reference": [
+            {
+              "uniqueId": "blt29b956e4cc7dcd75",
+              "contentTypeId": "document",
+              "title": "Veterans-Organization-Service-Application-and-FAQs.pdf",
+              "version": 1,
+              "tags": [],
+              "dataType": "contents.section.contents.document.reference",
+              "displayTitle": "Veterans\u2019 Organization Service FAQs and\u00a0Veterans\u2019 Organization Service Application",
+              "description": "Veterans\u2019 Organization Service FAQs and\u00a0Veterans\u2019 Organization Service Application",
+              "documentFile": {
+                "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt6e55ebd7e7ac1610/647e17490e17ca31528d28f8/Veterans-Organization-Service-Application-and-FAQs.pdf?branch=prod_alias",
+                "fileSize": "197791",
+                "fileName": "Veterans-Organization-Service-Application-and-FAQs.pdf",
+                "permanentUrl": "https://azure-na-assets.contentstack.com/v3/assets/blt407b5f1850a51a1b/blt6e55ebd7e7ac1610/Veterans-Organization-Service-Application-and-FAQs.pdf?branch=prod_alias",
+                "publishDetails": {
+                  "environment": "bltcd5183375cda9112",
+                  "locale": "en-us",
+                  "time": "2023-07-03T14:37:04.793Z",
+                  "user": "blt6dec1c220a5aa044",
+                  "dataType": "publish_details"
+                },
+                "uniqueId": "blt6e55ebd7e7ac1610",
+                "title": "Veterans-Organization-Service-Application-and-FAQs.pdf",
+                "version": 2,
+                "tags": [],
+                "dataType": "asset"
+              },
+              "metadata": {
+                "dataType": "metadata"
+              },
+              "reference": "contents.section.contents.document.reference"
+            }
+          ]
+        },
+        {
+          "dataType": "section.document",
+          "reference": [
+            {
+              "uniqueId": "bltb9a3657e5005b201",
+              "contentTypeId": "document",
+              "title": "ACE-NJ-Customer-Account-Services-Master-Agreement.pdf",
+              "version": 1,
+              "tags": [
+                "rates and tariffs",
+                "current tariffs"
+              ],
+              "dataType": "contents.section.contents.document.reference",
+              "displayTitle": "Customer Account Services Master Agreement",
+              "description": "Customer Account Services Master Agreement",
+              "documentFile": {
+                "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/bltcf61486bd76faa08/647e174936a70c7bba1eba75/ACE-NJ-Customer-Account-Services-Master-Agreement.pdf?branch=prod_alias",
+                "fileSize": "204351",
+                "fileName": "ACE-NJ-Customer-Account-Services-Master-Agreement.pdf",
+                "permanentUrl": "https://azure-na-assets.contentstack.com/v3/assets/blt407b5f1850a51a1b/bltcf61486bd76faa08/ACE-NJ-Customer-Account-Services-Master-Agreement.pdf?branch=prod_alias",
+                "publishDetails": {
+                  "environment": "bltcd5183375cda9112",
+                  "locale": "en-us",
+                  "time": "2023-07-03T14:37:31.59Z",
+                  "user": "blt6dec1c220a5aa044",
+                  "dataType": "publish_details"
+                },
+                "uniqueId": "bltcf61486bd76faa08",
+                "title": "ACE-NJ-Customer-Account-Services-Master-Agreement.pdf",
+                "version": 2,
+                "tags": [],
+                "dataType": "asset"
+              },
+              "metadata": {
+                "dataType": "metadata"
+              },
+              "reference": "contents.section.contents.document.reference"
+            }
+          ]
+        },
+        {
+          "dataType": "section.document",
+          "reference": [
+            {
+              "uniqueId": "blt5ed27c02af71ffce",
+              "contentTypeId": "document",
+              "title": "NJTariffSectionII.pdf",
+              "version": 2,
+              "tags": [
+                "rates and tariffs",
+                "current tariffs"
+              ],
+              "dataType": "contents.section.contents.document.reference",
+              "description": "NJ Tariff Section II",
+              "displayTitle": "NJ Tariff Section II",
+              "documentFile": {
+                "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt4a0dd8b48f9edb0e/693079f34870f34c6237092c/ACE_2025_BRC_Tariff_Section_II_Eff_12.1.2025_1.pdf?branch=prod_alias",
+                "fileSize": "467767",
+                "fileName": "ACE_2025_BRC_Tariff_Section_II_Eff_12.1.2025_1.pdf",
+                "description": "",
+                "permanentUrl": "https://azure-na-assets.contentstack.com/v3/assets/blt407b5f1850a51a1b/blt4a0dd8b48f9edb0e/NJ_Tariff_Section_II_Eff._12.01.23.pdf?branch=prod_alias",
+                "publishDetails": {
+                  "environment": "bltcd5183375cda9112",
+                  "locale": "en-us",
+                  "time": "2025-12-03T17:57:12.769Z",
+                  "user": "blt7a8a3ad11bb7425f",
+                  "dataType": "publish_details"
+                },
+                "uniqueId": "blt4a0dd8b48f9edb0e",
+                "title": "NJ_Tariff_Section_II_Eff._12.01.23.pdf",
+                "version": 5,
+                "tags": [],
+                "dataType": "asset"
+              },
+              "metadata": {
+                "dataType": "metadata"
+              },
+              "reference": "contents.section.contents.document.reference"
+            }
+          ]
+        }
+      ],
+      "condition": []
+    }
+  ],
+  "relatedContent": {
+    "title": "",
+    "topicFeed": [],
+    "dataType": "related_content",
+    "description": {
+      "html": "<p></p>",
+      "dataType": "json"
+    },
+    "links": []
+  },
+  "uniqueId": "blt4738efdcfd1eb770",
+  "contentTypeId": "article_page_template",
+  "title": "Current Tariffs",
+  "version": 48,
+  "tags": [
+    "my account",
+    "rates and tariffs",
+    "my dashboard",
+    "current tariffs"
+  ],
+  "taxonomies": [],
+  "dataType": "article_page_template",
+  "header": {
+    "dataType": "header",
+    "title": "",
+    "description": "<p><span>View the PDF attachments below for details about the New Jersey billing components.</span></p>",
+    "shortDescription": "\u200bView information on electric tariffs currently applicable in your jurisdiction.\u200b",
+    "callToAction": "",
+    "icon": [],
+    "excludeEntryFromGlobalSearchResults": false
+  },
+  "searchAndSocial": {
+    "dataType": "search_and_social",
+    "metaDescription": "",
+    "metaTitle": ""
+  }
+}

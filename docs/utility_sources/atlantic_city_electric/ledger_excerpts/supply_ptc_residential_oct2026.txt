@@ -1,0 +1,3 @@
+DERIVEDSELECTEDVISUALTRANSCRIPTION
+Original:https://www.atlanticcityelectric.com/cdn/images/v3/assets/blt407b5f1850a51a1b/blt2cb4981187386832/6abbf378dd2fa91830f9889e/ACE_PTC_09-29-26.png?branch=prod_alias
+VISUALREADBACK: RSfirst750summerenergy13.03c,winter14.07c;RSexcess750summer14.03c,winter14.07c;transinclTEC4.09c;recon0;PTCsummerfirstblock17.12c,excess18.12c;winter18.16c;annual17.84c. Roundedcomparisononly.

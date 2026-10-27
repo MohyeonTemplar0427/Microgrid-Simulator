@@ -1,0 +1,7 @@
+DERIVEDSCOPEDTEXT
+Original:https://emergencyprocedures.pjm.com/ep/pages/regions.jsf
+Status:official_metadata_only
+Scope:AECO transmissionzone NJ; AECO_ENGLAND is distinctDRsubzone. No wholesalepricingnodeinference orretailjurisdictionproof.
+AECO Transmission Zone NJ Atlantic City Electric (Exelon) MIDATL PJM-RTO, MAD
+AECO_ENGLAND Demand Response NJ See Load Management Subzone zip code definitions within the Demand Response section of pjm.com: http://www.pjm.com/markets-and-operations/demand-response.aspx AECO N/A
+

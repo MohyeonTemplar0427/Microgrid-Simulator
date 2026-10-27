@@ -1,0 +1,62 @@
+ 
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+ 
+                                          
+BPU No. 14 ELECTRIC - PART III          Original Sheet No. 53 
+ 
+ 
+ 
+APPLICABILITY: Rider RAC determines a Remediation Adjustment in accordance with the formula set 
+forth below.  The factor is included in the Societal Benefits Charge applicable to all KWH usage of any 
+Full Service Customer or Delivery Service Customer. 
+ 
+The calculated RAC rate shall be prepared by the Company and filed with the BPU annually by the end of 
+December with a requested effective date of June 1 of the subsequent year.  Rider RAC provides for the 
+recovery of manufactured gas plant remediation costs (net of insurance and other recoveries) over rolling 
+seven year periods, including carrying costs on the unamortized balance.  Carrying cost is calculated on 
+a monthly basis at an interest rate equal to the rate on seven-year constant maturity Treasuries, as shown 
+in the Federal Reserve Statistical Release on or closest to January 1 of each year, plus sixty basis points, 
+compounded annually as of January 1 of each year. 
+ 
+CALCULATION OF THE REMEDIATION ADJUSTMENT CLAUSE FACTOR: 
+ 
+1) By using the following formula: 
+ 
+ RAC = Recoverable Cost / Sales 
+ 
+2) Where the terms are defined as follows: 
+ 
+RAC = The Remediation Adjustment Clause factor in cents per KWH to be applied to all applicable 
+retail KWH sales. 
+ 
+Recoverable Cost = Manufactured Gas Plant remediation expenses (net of insurance and other 
+recoveries) amortized over rolling seven year periods.  The cost includes carrying costs on any 
+unamortized balance of remediation costs, net of associated deferred tax balance, at an annual 
+interest rate stated above. 
+ 
+ Sales = The Company's forecasted retail KWH sales. 
+ 
+3) Effective September 1, 2022, the RAC computation is as follows ($ Millions): 
+ 
+ RAC = $15.454 / 19,185,264 MWH = $0.000806 per KWH 
+      ($0.000859 per KWH including SUT) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+___________________________________________________________________________________ 
+Issued: May 28, 2024       Effective: June 1, 2024 
+ 
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024 
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+Rider RAC 
+Remediation Adjustment Clause 

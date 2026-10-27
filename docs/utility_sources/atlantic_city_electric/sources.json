@@ -1,0 +1,764 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-27",
+  "source_scope": {
+    "utility": "Atlantic City Electric Company, New Jersey",
+    "tariff": "BPU NJ No.11",
+    "schedules": [
+      "RS",
+      "MGS-Secondary"
+    ],
+    "supply": "BGS-RSCP, actualutilityenrollmentrequired",
+    "initial_cycle_rule": "Exactly30consecutivecompletedlocaldays whollyoneadoptedcomponentregimeandseason;non30/partial/crossingcyclesreject",
+    "PLS": "UtilityassignedannualgenerationcapacityPLSstrictlybelow500kWforMGS;notmonthlymeteredpeak;noCIEPelection",
+    "initial_full_year_coverage": false,
+    "production_source_windows": [
+      "2025FebruaryMay",
+      "2025June",
+      "2025JulyAugust",
+      "2025OctoberNovember",
+      "2026SeptemberOctober"
+    ],
+    "historical_terms_continuity": "VerifiedoldSectionII4.7effectiveJuly5,2024and6.5effectiveDecember1,2023inBPUadoptedredlinephysical244/249;cleancounterparts92/96",
+    "taxes": "PublishedordinaryCBT/SUTcomponentsincluded;noextraSUT/adminmultiplier;notaxexemptioninferred",
+    "export": "Unsupported",
+    "quantity_and_optimization": "RSrawenergy:nostatedquantityrounding. MGSenergynearest.01kWh,demandnearest.1kW;halftiesreject. MGSrawquantityobjectiveisproxy;finalroundedbilldoesnotproveexactcashbilloptimum",
+    "metadata": "AECOzone separatefromwholesalepricingnode,utilityterritoryandscheduleeligibility"
+  },
+  "records": [
+    {
+      "id": "delivery_current_tariff_index",
+      "owner_stream": "delivery",
+      "url": "https://eudapi.atlanticcityelectric.com/content-api/api/content/products/other/pages?url=%2Fmy-account%2Fmy-dashboard%2Frates-tariffs%2Fcurrent-tariffs&environment=live",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/current_tariff_index.json",
+      "original_sha256": "7f4220f2b06ed66f54ca5d16707dfad0ac7450e83b0a6a386ba3aaff76a7f827",
+      "original_bytes": 13389,
+      "retrieval_date": "2026-10-27",
+      "status": "official_original",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "full_text_path": ".cache/atlantic_city_electric/sources/consolidated/delivery_current_tariff_index_full.txt",
+      "full_text_sha256": "7f4220f2b06ed66f54ca5d16707dfad0ac7450e83b0a6a386ba3aaff76a7f827",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_current_tariff_index.txt",
+          "sha256": "fb8b76beb0926f7b7ce5b382c96ec2af81c30db9fdb565e479fd3af10765248f"
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_iv_oct2025",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/68dd58af4ef0714a0f199592/NJ_Tariff_Section_IV_EFF_10.1.2025_BGS_Recon.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_oct2025.pdf",
+      "original_sha256": "c081b6e50e5ae4cefad05b12414c4b18f4febdad32b84194f45debaa0d9ec08e",
+      "original_bytes": 882111,
+      "retrieval_date": "2026-10-27",
+      "status": "official_adopted_tariff_book",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 96,
+      "selected_pdf_pages_1_based": [
+        7,
+        8,
+        16,
+        17,
+        18,
+        54,
+        56,
+        62,
+        63,
+        71,
+        72,
+        74,
+        75,
+        76
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_oct2025.txt",
+      "full_text_sha256": "ef9955749c45a7652c22a7544cbda0e8a99ad96ca09c633b14cecfd956dc4e4c",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/supply_excerpts/section_iv_oct2025_supply_selected.txt",
+          "sha256": "2bbde04c5002a89c62572ad9053df6fd8afb440ad5523ecb0bf0e63c4d5abbfc"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/delivery_excerpts/section_iv_oct2025.txt",
+          "sha256": "b799cbd38b94151ca711cd598227bfd61cec5c5364b2eb5e46517505121588c3"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/tax_excerpts/section_iv_oct2025_rules.txt",
+          "sha256": "12630f9f96b596927d696322b12a75ebee5c70f4e61fe6fbde06ae0e917653b6"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_iv_oct2025.txt",
+          "sha256": "d7ed6499ac5d89852dd748207e3d68dbb89639bd987daaa6c956c890b2091803"
+        }
+      ],
+      "rendered_receipts": [],
+      "shared_original_receipts": [
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/atlantic_city_electric/sources/delivery/section_iv_oct2025.pdf",
+          "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/68dd58af4ef0714a0f199592/NJ_Tariff_Section_IV_EFF_10.1.2025_BGS_Recon.pdf?branch=prod_alias"
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_iv_oct2026",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6abe603b9c1713f986c691b5/NJ_Tariff_Section_IV_Eff._10.01.2026_EECEC_T_.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_oct2026.pdf",
+      "original_sha256": "b46c4e1786734a0e4307f47cfbada8818262601b65270ebc026dfd94e06016d3",
+      "original_bytes": 797341,
+      "retrieval_date": "2026-10-27",
+      "status": "official_adopted_tariff_book",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 75,
+      "selected_pdf_pages_1_based": [
+        7,
+        8,
+        12,
+        13,
+        14,
+        43,
+        44,
+        47,
+        48,
+        52,
+        53,
+        55,
+        56,
+        57,
+        58
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_oct2026.txt",
+      "full_text_sha256": "b89704ef06e9eba408d65aa329bb5d359710d155c6b2d13e29df85a849ce5c3d",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/supply_excerpts/section_iv_oct2026_supply_selected.txt",
+          "sha256": "73c0d99e2198fa053a7eca03a7c307eb90a833909930cc338fb9083a37c9e111"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/delivery_excerpts/section_iv_oct2026.txt",
+          "sha256": "d5aa036bd71eada7fa97a703e38fdb2bb290dc668b2fd5e33214c4329052368d"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/tax_excerpts/section_iv_oct2026_rules.txt",
+          "sha256": "99f59e08bae0cad53941fa1a98c94c3620d173d3ae823dcf489a6cb1cfc64d8a"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_iv_oct2026.txt",
+          "sha256": "19036263a86f90a3216aa04dc91aa073dfc0ee6e9d2cc4801e92cd670e7e2fae"
+        }
+      ],
+      "rendered_receipts": [],
+      "shared_original_receipts": [
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/atlantic_city_electric/sources/delivery/section_iv_oct2026.pdf",
+          "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6abe603b9c1713f986c691b5/NJ_Tariff_Section_IV_Eff._10.01.2026_EECEC_T_.pdf?branch=prod_alias"
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_iv_jun2025",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/683f33006dffb339d38ca110/NJ_Tariff_Section_IV_EFF_6.1.25_BGS_BGS_RECO_1.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_jun2025.pdf",
+      "original_sha256": "a032686b1816d6b813ee262a0855b32ed9bb0bc91440dad3dbaaa85ca7bc9d93",
+      "original_bytes": 1924671,
+      "retrieval_date": "2026-10-27",
+      "status": "official_adopted_tariff_book",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 96,
+      "selected_pdf_pages_1_based": [
+        7,
+        16,
+        71,
+        72,
+        74
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_jun2025.txt",
+      "full_text_sha256": "72da56d7a999e0e59687958346e7e7051fd03bcdac5a21ccb55bc7ab9898147f",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/supply_excerpts/section_iv_jun2025_supply_selected.txt",
+          "sha256": "563b2559b2618895b176e28264c607cc9667fee630bca984a0f33b90a6cabc8e"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/delivery_excerpts/section_iv_jun2025.txt",
+          "sha256": "6c21d19ef331a896a54896cfbaedfaaed41df118f52fbe14db6b9841c81d6ed1"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_iv_jun2025.txt",
+          "sha256": "b69d72f1db895929e6328b574e7b55304041477e02d0b2a6f1584f5c6bef0817"
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/atlantic_city_electric/sources/supply/section_iv_jun2025_page71.png",
+          "sha256": "096d9a2dde9e7513b261704e6d50f62d0702ec02a1f02df95394951f86b3e7cc",
+          "physical_page": 71
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_iv_jul2025",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6865b21243e27fd3754fa950/NJ_Tariff_Section_IV_EFF_7.1.25_Elec_Rate_Mit.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_jul2025.pdf",
+      "original_sha256": "289bcac58959d3e18ff0bc4981d2842a5a27237e128453ef7daf70ce9dd7b2d5",
+      "original_bytes": 1887570,
+      "retrieval_date": "2026-10-27",
+      "status": "official_adopted_tariff_book",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 96,
+      "selected_pdf_pages_1_based": [
+        7,
+        16,
+        71,
+        72,
+        74,
+        96
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_jul2025.txt",
+      "full_text_sha256": "50a1408bf671c36eb59e2bd3af989427c598ba985b45cda009dbf740f9814adf",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/delivery_excerpts/section_iv_jul2025.txt",
+          "sha256": "99f02c609d64c77d3d7401517727838230d4b428b7ba996f2858902ae7ee2c83"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_iv_jul2025.txt",
+          "sha256": "b10b05c1c252680e3356344cb513b9429544d3eb2b62d42eeb12548b43c290d9"
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_i_iii_jun2026",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt368629e4a98f7506/6a22e5190641402e5fee72f1/NJ_Tariff_Sections_I_III_Eff_06.04.2026_.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_i_iii_jun2026.pdf",
+      "original_sha256": "3eba205877bbe8a67da5aacf2721bb7cc63b60a7d62fc0701a86d742e9d8d903",
+      "original_bytes": 245852,
+      "retrieval_date": "2026-10-27",
+      "status": "official_metadata_and_service_terms",
+      "scope_note": "Currentservicearea/context only; no datebackdating ofnewterms",
+      "physical_page_count": 17,
+      "selected_pdf_pages_1_based": [
+        1,
+        2,
+        3
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_i_iii_jun2026.txt",
+      "full_text_sha256": "387aa34ee48ec9d20bf36592550cbbda6472a243d562fe121af69e5049a81ccc",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_i_iii_jun2026.txt",
+          "sha256": "e938d510d048b1ed7d7917983671393f633ebdf5f473200f2e2fb4f4c34755f2"
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_ii_dec2025",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt4a0dd8b48f9edb0e/693079f34870f34c6237092c/ACE_2025_BRC_Tariff_Section_II_Eff_12.1.2025_1.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_ii_dec2025.pdf",
+      "original_sha256": "c0adc28f57735714dc9c603b24b5306205a630adb0ed14f8547aa256f26a74a2",
+      "original_bytes": 467767,
+      "retrieval_date": "2026-10-27",
+      "status": "official_original",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 39,
+      "selected_pdf_pages_1_based": [
+        19,
+        23
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_ii_dec2025.txt",
+      "full_text_sha256": "bd570964d8886890ecc484e62e5027aa0ebe03bee0f1a39414429d4a922a2334",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/tax_excerpts/section_ii_dec2025_rules.txt",
+          "sha256": "d5e649f8484448bc60ed63ecee01c7d569e099e92cf9ef2f91a5835c754732fa"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_ii_dec2025.txt",
+          "sha256": "92b169c37a9bd7bb17bfad5119d6122d874f6873485627f99c218d4220f4491f"
+        }
+      ],
+      "shared_original_receipts": [
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/atlantic_city_electric/sources/delivery/section_ii_dec2025.pdf",
+          "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt4a0dd8b48f9edb0e/693079f34870f34c6237092c/ACE_2025_BRC_Tariff_Section_II_Eff_12.1.2025_1.pdf?branch=prod_alias"
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_iv_feb2025",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/679d15624d805f7db588d91a/NJ_Tariff_Section_IV_EFF_2.1.25_ZEC.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_feb2025.pdf",
+      "original_sha256": "c53ed2072e2c04d1150722b1fc9399ea7199bd1fba5ecb99d8631772ec7acb98",
+      "original_bytes": 1934137,
+      "retrieval_date": "2026-10-27",
+      "status": "official_adopted_tariff_book",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 96,
+      "selected_pdf_pages_1_based": [
+        7,
+        8,
+        16,
+        17,
+        18,
+        54,
+        62,
+        63,
+        71,
+        72,
+        74,
+        75,
+        76,
+        82,
+        84,
+        91,
+        95
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_feb2025.txt",
+      "full_text_sha256": "f7eef580606a7cda41eb1936ec640b5f4c9a78968c182624046158a51bcc3a9f",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/supply_excerpts/section_iv_feb2025_supply_selected.txt",
+          "sha256": "390c241d1ac799a214b0509c2b8fd3679dd9e749eb23eaccc1f477070ab51e75"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/delivery_excerpts/section_iv_feb2025.txt",
+          "sha256": "d730715d81adf8793b4b1cf4e1c3361f44caedf14ad3e2f125994fbac2c4573c"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/tax_excerpts/section_iv_feb2025_rules.txt",
+          "sha256": "422bc09f06f61402ce3d1284a404e8c26513b38ba6e0a2ed48c5d33fe7946a9e"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_iv_feb2025.txt",
+          "sha256": "9f1322ad6903fa50d281913b666842c401ab13cf7ed8c432b864c16f4b96614a"
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/atlantic_city_electric/sources/supply/section_iv_feb2025_page71.png",
+          "sha256": "f74f89128dad70f897d68bf6fa40e12135b865f2ad6391715425d372d71458bd",
+          "physical_page": 71
+        }
+      ],
+      "shared_original_receipts": [
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/atlantic_city_electric/sources/delivery/section_iv_feb2025.pdf",
+          "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/679d15624d805f7db588d91a/NJ_Tariff_Section_IV_EFF_2.1.25_ZEC.pdf?branch=prod_alias"
+        }
+      ]
+    },
+    {
+      "id": "delivery_rggi_order_may2025",
+      "owner_stream": "delivery",
+      "url": "https://www.nj.gov/bpu/pdf/boardorders/2025/20250521/2D%20ORDER%20ACE%20Rider%20RGGI%20True%20Up.pdf",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/rggi_order_may2025.pdf",
+      "original_sha256": "2a9941d4899ded3ecffb6440f50ae811d482790bd6da993c3464cbdc22acf67e",
+      "original_bytes": 1331724,
+      "retrieval_date": "2026-10-27",
+      "status": "official_original",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 84,
+      "selected_pdf_pages_1_based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/rggi_order_may2025.txt",
+      "full_text_sha256": "416c9bdc3dbcd3ba88d1ee0613c1315001f4f2b86bf0188b11cc6ff3284a9b17",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_rggi_order_may2025.txt",
+          "sha256": "ea95a17bd3f53e9cbd7f6a1499e8b299b958821190e12b9215ab280b3299629c"
+        }
+      ]
+    },
+    {
+      "id": "delivery_section_iv_sep2026",
+      "owner_stream": "delivery",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6aa85773fb097ba01be38a19/NJ_Tariff_Section_IV_Eff._09.01.2026_BGS_.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_sep2026.pdf",
+      "original_sha256": "438ba7ab5a72a022a7813dac8efbb4faf45fba057cd9f5efad4c2e60d783ff92",
+      "original_bytes": 791537,
+      "retrieval_date": "2026-10-27",
+      "status": "official_adopted_tariff_book",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 75,
+      "selected_pdf_pages_1_based": [
+        7,
+        12,
+        43,
+        52,
+        53,
+        55
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/section_iv_sep2026.txt",
+      "full_text_sha256": "e81b10ffd48a65112b0dc642283155ad4c50c75619f55f5b7f382d12f90486d6",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/supply_excerpts/section_iv_sep2026_supply_selected.txt",
+          "sha256": "4ddabdec30b4922499ad27b8134b1445b1a60d2fb6c8d6f82ae6e4ad4f83c292"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/delivery_excerpts/section_iv_sep2026.txt",
+          "sha256": "b3d714db77dbc2ba9294919de9ffb4aa7437935290c1a771e4705baaefda5fe0"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/tax_excerpts/section_iv_sep2026_rules.txt",
+          "sha256": "be50494dc8d0e6f8d36878ca0cb6ec0abb11b6aed8dbbd2e2764c38ca2fbed42"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_section_iv_sep2026.txt",
+          "sha256": "e0be549d70c5e56ad15eb38d18d2796c8b9a3de73c31e8f61efb73e1f2770150"
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/atlantic_city_electric/sources/supply/section_iv_sep2026_page52.png",
+          "sha256": "58172e67ef225fe7652d745dce2f063ed2ae24c616273dbc44f5202fc5076fa4",
+          "physical_page": 52
+        }
+      ],
+      "shared_original_receipts": [
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/atlantic_city_electric/sources/delivery/section_iv_sep2026.pdf",
+          "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6aa85773fb097ba01be38a19/NJ_Tariff_Section_IV_Eff._09.01.2026_BGS_.pdf?branch=prod_alias"
+        }
+      ]
+    },
+    {
+      "id": "delivery_base_order_nov2025",
+      "owner_stream": "delivery",
+      "url": "https://www.nj.gov/bpu/pdf/boardorders/2025/20251121/2F%20ORDER%20ACE%20BRC.pdf",
+      "original_path": ".cache/atlantic_city_electric/sources/delivery/base_order_nov2025.pdf",
+      "original_sha256": "9ddb469e77968d77d319bd7c088c6592849805b7cd0dda020bb23880526470f3",
+      "original_bytes": 5728965,
+      "retrieval_date": "2026-10-27",
+      "status": "official_original",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "rendered_receipts": [
+        {
+          "path": ".cache/atlantic_city_electric/sources/tax_rules/base_order_old_terms_page244.png",
+          "sha256": "c75ddd01fdac920b7153ca77453c3a4928b8f9c86cfee2e474fdb6328d97128e",
+          "physical_page": 244,
+          "observed": "\u00a74.7 unchanged black text; old leaf effective July5,2024"
+        },
+        {
+          "path": ".cache/atlantic_city_electric/sources/tax_rules/base_order_old_terms_page249.png",
+          "sha256": "dd35d88050c2e7090a98fc91e146bec9f302f934b7c8f7c31ff30fb74005f0dd",
+          "physical_page": 249,
+          "observed": "\u00a76.5 unchanged black text; old leaf effective December1,2023"
+        }
+      ],
+      "physical_page_count": 380,
+      "selected_pdf_pages_1_based": [
+        4,
+        8,
+        35,
+        36,
+        92,
+        96,
+        166,
+        181,
+        199,
+        244,
+        249,
+        338,
+        356
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/delivery/base_order_nov2025.txt",
+      "full_text_sha256": "68875568aaad8453e71ee15acd7a8fcb1abb4f12e4b6575fe8761315b1841907",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/tax_excerpts/base_order_nov2025_rules.txt",
+          "sha256": "c78636bda6d63766dee48631b4c77c036d5fb199a3a91557007f7b60aa388425"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/delivery_base_order_nov2025.txt",
+          "sha256": "ba97e6ea6bcbd41a42d20bebb81a30d1315cf547353537b0f23c8a1b2b6845bd"
+        }
+      ],
+      "shared_original_receipts": [
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/atlantic_city_electric/sources/delivery/base_order_nov2025.pdf",
+          "url": "https://www.nj.gov/bpu/pdf/boardorders/2025/20251121/2F%20ORDER%20ACE%20BRC.pdf"
+        }
+      ]
+    },
+    {
+      "id": "supply_order_2026_tec",
+      "owner_stream": "supply",
+      "url": "https://www.nj.gov/bpu/pdf/boardorders/2026/20260923/2P%20ORDER%20July%2026%20NITS%20TEC.pdf",
+      "original_path": ".cache/atlantic_city_electric/sources/supply/order_2026_tec.pdf",
+      "original_sha256": "01ec78fd363a314fdf94247f96d787ac479a5249f65786813b7bce8bd70c102e",
+      "original_bytes": 177248,
+      "retrieval_date": "2026-10-27",
+      "status": "official_original",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "physical_page_count": 5,
+      "selected_pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "full_text_path": ".cache/atlantic_city_electric/sources/supply/order_2026_tec.txt",
+      "full_text_sha256": "9a03458436ad0e7ef5e515fcfe070b84807fea1f8a245fd44f3020019e449777",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/supply_excerpts/order_2026_tec_selected.txt",
+          "sha256": "17a933f252ac6b5da9b8d85a4fb1f05b49c39ba418fe8fe12e8d647a1c6b2dea"
+        },
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/supply_order_2026_tec.txt",
+          "sha256": "0c6cb2d6a3a211a6020f9249b416053e6addd810e018f35404039e19ff598bd7"
+        }
+      ]
+    },
+    {
+      "id": "supply_auction_2026_benchmark",
+      "owner_stream": "supply",
+      "url": "https://nj.gov/bpu/newsroom/2026/approved/20260212.html",
+      "original_path": ".cache/atlantic_city_electric/sources/supply/auction_2026_benchmark.html",
+      "original_sha256": "ab8cf2db9a20a555af8613d8fce050757bbf4a2a74ccf4b6789c50dc49779a62",
+      "original_bytes": 32772,
+      "retrieval_date": "2026-10-27",
+      "status": "official_context_benchmark_not_retail_tariff",
+      "scope_note": "650kWhforecastedwholebillcontext; auctiontranchepricesandcurrentforecastare notadoptedretailrates orperiodbillproof",
+      "full_text_path": ".cache/atlantic_city_electric/sources/consolidated/supply_auction_2026_benchmark_full.txt",
+      "full_text_sha256": "40c4da704113a4ce7a27b15853987bdc6ea17640ff24c398ff4b1b98e9155080",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/supply_auction_2026_benchmark.txt",
+          "sha256": "8f19db62d4335a375ad5aa308b99d0ccbb85a4e86b93d5f18186859054123bfe"
+        }
+      ]
+    },
+    {
+      "id": "supply_choice_content",
+      "owner_stream": "supply",
+      "url": "https://eudapi.atlanticcityelectric.com/content-api/api/content/products/other/pages?product=other&environment=live&url=/my-account/my-service/customer-choice",
+      "original_path": ".cache/atlantic_city_electric/sources/supply/choice_content.json",
+      "original_sha256": "7ce36c3857eb1d14483120520ccda41f0abc499651a6f3536df353e1b2450ca1",
+      "original_bytes": 9835,
+      "retrieval_date": "2026-10-27",
+      "status": "official_original",
+      "scope_note": "Component dates are independent. Snapshot is not automatic continuous-month coverage.",
+      "full_text_path": ".cache/atlantic_city_electric/sources/consolidated/supply_choice_content_full.txt",
+      "full_text_sha256": "7ce36c3857eb1d14483120520ccda41f0abc499651a6f3536df353e1b2450ca1",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/supply_choice_content.txt",
+          "sha256": "f4194be0171c79fad7f6c23175d131f68090216e4b1f75b86f2f721c7e39ca91"
+        }
+      ]
+    },
+    {
+      "id": "supply_ptc_residential_content",
+      "owner_stream": "supply",
+      "url": "https://eudapi.atlanticcityelectric.com/content-api/api/content/products/other/pages?product=other&environment=live&url=/my-account/my-service/customer-choice/price-to-compare-residential",
+      "original_path": ".cache/atlantic_city_electric/sources/supply/ptc_residential_content.json",
+      "original_sha256": "f753c50fa4b8d354817942b663cf26f5cca85626a49b617bf6b9ebfb24b0afbb",
+      "original_bytes": 7608,
+      "retrieval_date": "2026-10-27",
+      "status": "official_comparison_benchmark_with_date_conflict",
+      "scope_note": "ContentheadingstaleEffective7/15/26;linkedimages09-29-26matchOctleaves. PTCroundedcomparisonnotexactinvoice;MGSclassaveragetransnotdemandbillingrate.",
+      "full_text_path": ".cache/atlantic_city_electric/sources/consolidated/supply_ptc_residential_content_full.txt",
+      "full_text_sha256": "f753c50fa4b8d354817942b663cf26f5cca85626a49b617bf6b9ebfb24b0afbb",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/supply_ptc_residential_content.txt",
+          "sha256": "2fbce399a7d3f214ec71ecabd390fa6bab4dc2b50c31b5f89dc73912c22e8d21"
+        }
+      ]
+    },
+    {
+      "id": "supply_ptc_business_content",
+      "owner_stream": "supply",
+      "url": "https://eudapi.atlanticcityelectric.com/content-api/api/content/products/other/pages?product=other&environment=live&url=/my-account/my-service/customer-choice/price-to-compare-business",
+      "original_path": ".cache/atlantic_city_electric/sources/supply/ptc_business_content.json",
+      "original_sha256": "9e99980e7bc0d2fd5e78aee256bb8631ec3e468f02cfaab91f00f3058b159596",
+      "original_bytes": 8250,
+      "retrieval_date": "2026-10-27",
+      "status": "official_comparison_benchmark_with_date_conflict",
+      "scope_note": "ContentheadingstaleEffective7/15/26;linkedimages09-29-26matchOctleaves. PTCroundedcomparisonnotexactinvoice;MGSclassaveragetransnotdemandbillingrate.",
+      "full_text_path": ".cache/atlantic_city_electric/sources/consolidated/supply_ptc_business_content_full.txt",
+      "full_text_sha256": "9e99980e7bc0d2fd5e78aee256bb8631ec3e468f02cfaab91f00f3058b159596",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/supply_ptc_business_content.txt",
+          "sha256": "6553b1540ad116fa5473f75d1265fef3dd65c5b58fd587ddade342096f5853d0"
+        }
+      ]
+    },
+    {
+      "id": "supply_ptc_residential_oct2026",
+      "owner_stream": "supply",
+      "url": "https://www.atlanticcityelectric.com/cdn/images/v3/assets/blt407b5f1850a51a1b/blt2cb4981187386832/6abbf378dd2fa91830f9889e/ACE_PTC_09-29-26.png?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/supply/ptc_residential_oct2026.png",
+      "original_sha256": "66fbce3e3e16e5527cb5b4cae6ec455758787a87db428066a6f73d8d1d89e486",
+      "original_bytes": 66974,
+      "retrieval_date": "2026-10-27",
+      "status": "official_comparison_benchmark_with_date_conflict",
+      "scope_note": "ContentheadingstaleEffective7/15/26;linkedimages09-29-26matchOctleaves. PTCroundedcomparisonnotexactinvoice;MGSclassaveragetransnotdemandbillingrate.",
+      "extraction_method": "Originalimagepreserved and visually read; manualselectedtranscriptionisderivative",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/supply_ptc_residential_oct2026.txt",
+          "sha256": "cfff7bfba58e420a86a0f15d77c5785e0e19575da00c1e3b1bccfb6d0b893c51"
+        }
+      ]
+    },
+    {
+      "id": "supply_ptc_business_oct2026",
+      "owner_stream": "supply",
+      "url": "https://www.atlanticcityelectric.com/cdn/images/v3/assets/blt407b5f1850a51a1b/bltfe573aecb1df8183/6abbf66715d5b72300b1064a/ACE_Bus_PTC_09-29-26.png?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/supply/ptc_business_oct2026.png",
+      "original_sha256": "1ba57eac84d7da10055ef6f7380ea23e180bcc79d66ae3f361cb420ba1b0d49b",
+      "original_bytes": 73740,
+      "retrieval_date": "2026-10-27",
+      "status": "official_comparison_benchmark_with_date_conflict",
+      "scope_note": "ContentheadingstaleEffective7/15/26;linkedimages09-29-26matchOctleaves. PTCroundedcomparisonnotexactinvoice;MGSclassaveragetransnotdemandbillingrate.",
+      "extraction_method": "Originalimagepreserved and visually read; manualselectedtranscriptionisderivative",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/supply_ptc_business_oct2026.txt",
+          "sha256": "39532a82653a4c9e12457b0add077b10f9b15903691c46a7eb7559888d08a4d7"
+        }
+      ]
+    },
+    {
+      "id": "tax_rules_terms_2023dec_not_billing_authority",
+      "owner_stream": "tax_rules",
+      "url": "https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt368629e4a98f7506/6569d48f2d1387000b2ce0d1/NJ_Tariff_Section_I_III_Eff._12.01.23.pdf?branch=prod_alias",
+      "original_path": ".cache/atlantic_city_electric/sources/tax_rules/terms_2023dec.pdf",
+      "original_sha256": "3d9698c986f6424c7c8de6e1e93c630522e0b6cb8f5bc3b92388ea7bcd96ecb4",
+      "original_bytes": 197082,
+      "retrieval_date": "2026-10-27",
+      "status": "retrieved_not_used_as_authority",
+      "scope_note": "Contains Sections I and III, not Section II. Retained retrieval receipt only; not authority for billing period, tax, NEM or proration.",
+      "physical_page_count": 20,
+      "selected_pdf_pages_1_based": [],
+      "full_text_path": ".cache/atlantic_city_electric/sources/tax_rules/terms_2023dec.txt",
+      "full_text_sha256": "c284a9bf5ce66f5c7040892636fea86e40533a28cf272d558f23b772b7155d15",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/tax_rules_terms_2023dec_not_billing_authority.txt",
+          "sha256": "8bfdb463e0b9e43c543d0c1a8529f0c2f9564762f7a66aa27bef582bbefa3650"
+        }
+      ]
+    },
+    {
+      "id": "metadata_pjm_regions",
+      "owner_stream": "metadata",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "original_path": ".cache/atlantic_city_electric/sources/metadata/pjm_regions.html",
+      "original_sha256": "98fe1fec5806ffccf3d9104531f8a604140d01e00e3e5b2b1321cb628d3fd601",
+      "original_bytes": 46783,
+      "retrieval_date": "2026-10-26",
+      "status": "official_metadata_only",
+      "scope_note": "AECO transmissionzone NJ; AECO_ENGLAND is distinctDRsubzone. No wholesalepricingnodeinference orretailjurisdictionproof.",
+      "current_web_verification_date": "2026-10-27",
+      "full_text_path": ".cache/atlantic_city_electric/sources/consolidated/metadata_pjm_regions_full.txt",
+      "full_text_sha256": "ea6091d42be1115a27bac6f44b14e3689e757fcc8a06e85dcb65d7d057c1182b",
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/atlantic_city_electric/ledger_excerpts/metadata_pjm_regions.txt",
+          "sha256": "9b5da11a607f844fb2644166170120bb1776383fe19f74aa13c52b1b5d7b70b1"
+        }
+      ]
+    }
+  ],
+  "derived_receipts": [
+    {
+      "path": ".cache/atlantic_city_electric/sources/supply/ptc_business_content.json",
+      "sha256": "9e99980e7bc0d2fd5e78aee256bb8631ec3e468f02cfaab91f00f3058b159596",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/supply/supply_snapshots.json",
+      "sha256": "5fd22d70f87c38fc267329116678a074e12cfa7d4500c3b422ee83f8adb0f395",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/supply/choice_content.json",
+      "sha256": "7ce36c3857eb1d14483120520ccda41f0abc499651a6f3536df353e1b2450ca1",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/supply/supply_records.json",
+      "sha256": "bd3b88824dce136fbaa7d1300ceeb48a0513c642cf045f04436aa5f1c26365d1",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/supply/shared_tariff_receipts.json",
+      "sha256": "0ddbe0331c8f95d326b86754c5487efcfed514f4b9becbcbc41fd5b41be4ea4f",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/supply/ptc_residential_content.json",
+      "sha256": "f753c50fa4b8d354817942b663cf26f5cca85626a49b617bf6b9ebfb24b0afbb",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/tax_rules/tax_rules_records.json",
+      "sha256": "34cf873c43d2cfa2db46ea291933c08f6c8ebbcb7be3e227dd16c4ad702e0c55",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/delivery/delivery_snapshots.json",
+      "sha256": "ae741c0f4b33863ed026389466af55c16c33493d432fd65bc29a0bb85d5b2a92",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    },
+    {
+      "path": ".cache/atlantic_city_electric/sources/metadata/receipt.json",
+      "sha256": "6444a084f6a72b2042c4558cb2663e591f62fb7987531712c5f335e39c0a32ba",
+      "status": "Research/transcription/retrievalreceipt;notoriginaltariffbytes"
+    }
+  ],
+  "gaps_and_exclusions": [
+    {
+      "id": "crossing_allocation",
+      "detail": "SectionII6.5allocationunverified;exact30dayswhollyonecomponentregime/seasononly;Sep15,2025andJul15,2026notmonthlyaveraged"
+    },
+    {
+      "id": "intervening_2026_supply",
+      "detail": "No31st/32ndadoptedBGSgenerationleaforinterveningrecon/TECupdates;currentSep/Oct2026notbackdatedJuneAugust"
+    },
+    {
+      "id": "auction_and_other_supply",
+      "detail": "Auctiontrancheprices,proposals,CIEPstandby/capacity/RCandthirdpartysupplyexcluded"
+    },
+    {
+      "id": "PTC_date_and_precision",
+      "detail": "Stale7/15/26contentheadingvs09-29-26image;adoptedclockscontrol. RoundedPTCbenchmarktolerance.01cent;MGSaveragecentsnotperaccounttransdemand"
+    },
+    {
+      "id": "historical_STB_and_terms",
+      "detail": "2025MGS DER excluded:old50percent/sixmonthstandbyavailabilitynotimplemented;2026DERrequiresapprovedordinaryclassificationandconservativebound. HistoricalSectionII4.7/6.5continuityresolvedviaadoptedredlinepages244/249andclean92/96;precisecomponentallocationremainsunverified."
+    },
+    {
+      "id": "residential_deferral",
+      "detail": "MandatoryRS-30JulyAugust2025,+10September2025February2026includedwhereapplicable. Negativebalance/cashrefundsettlementunverified."
+    },
+    {
+      "id": "cash_optimality",
+      "detail": "Rawquantityproxyandfinalroundedinvoicekeptseparate;noexactcashoptimumclaimed"
+    },
+    {
+      "id": "export_special_accounts",
+      "detail": "NoNEMexportsettlement/communitysolar/EVspecial/submetertimeofuse/taxexemptionsorunverifiedspecialaccountcharges"
+    }
+  ],
+  "validation_limit": "Sourceevidenceonly;engine/frontendpins,focusedacceptance,historical/OpenDSSmatrixandbrowserassertionsbelongseparatereceipts."
+}

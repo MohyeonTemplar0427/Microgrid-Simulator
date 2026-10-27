@@ -9,6 +9,9 @@ from copy import deepcopy
 
 
 MODES = {
+    "rockland_electric_new_jersey": ("export_mode", "none"),
+    "jcpl_new_jersey": ("export_mode", "none"),
+    "atlantic_city_electric_new_jersey": ("export_mode", "none"),
     "potomac_edison_maryland": ("export_mode", "none"),
     "delmarva_maryland": ("export_mode", "none"),
     "pepco_maryland": ("export_mode", "none"),
@@ -69,10 +72,16 @@ def grid_only_counterfactual(utility, account, state=None):
                 "label":"Absent-DER grid-only counterfactual; ordinary full-service tariff retained without DG enrollment",
                 "changed_account_fields":changed_account,"changed_state_fields":[],
                 "warnings":["Hypothetical ordinary grid-only reference removes PV/storage and DG assertions; no actual account transition or export credits assumed."]}
-    if utility.startswith("firstenergy_") or utility in ("peco", "ppl_electric_pennsylvania", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland"):
+    if utility.startswith("firstenergy_") or utility in ("peco", "ppl_electric_pennsylvania", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey", "rockland_electric_new_jersey"):
         applied = bool(result.get("der_ordinary_service_confirmed"))
         set_account("der_ordinary_service_confirmed", False)
         set_account("der_eligibility_source", "")
+        if utility == "rockland_electric_new_jersey":
+            set_account("der_activation_date", "")
+        if utility == "jcpl_new_jersey":
+            set_account("der_activation_date", "")
+            set_account("gs_standby_not_applicable_confirmed", False)
+            set_account("gs_standby_source", "")
         return {"account":result,"state":inherited,"applied":applied,
                 "label":"Ordinary absent-DER grid-only counterfactual; selected default tariff and demand history retained",
                 "changed_account_fields":changed_account,"changed_state_fields":[],

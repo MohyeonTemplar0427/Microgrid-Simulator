@@ -1,0 +1,263 @@
+DERIVEDSCOPEDTARIFFEXTRACTION
+Original:https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/New%20Jersey/tariffs/BPU-14-Part-III-Eff-10-1-2025.pdf
+Allphysicalpagesonebased;adjacentCIEPexcluded. TECcomponentsfromallretaineddatedblocksaddonce.
+
+PHYSICAL PDF PAGE4
+ 
+ JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                              1st Rev. Sheet No. 3   
+BPU No. 14 ELECTRIC - PART III           Superseding Original Sheet No. 3 
+ 
+ 
+ 
+ 
+ 
+APPLICABLE TO USE OF SERVICE FOR:   Service Classification RS is available for: (a) Individual 
+Residential Structures; (b) separately metered residences in Multiple Residential Structures; (c) incidental 
+use for non -residential purposes when included along with the residence; and/or (d) Auxiliary Residential 
+Purposes whether metered separately from the residence or not. 
+ 
+This Service Classification is optional for Customer s which elect to be billed hereunder rather than under 
+Service Classification RT.  (Also see Part II, Section 2.03) 
+ 
+CHARACTER OF SERVICE:   Single -phase service, with limited applications of three -phase service, at 
+secondary voltages. 
+ 
+RATE PER BILLING MONTH (All charges include Sales and Use Tax as provided in Rider SUT): 
+All charges are applicable to Full Service Customers.  All charges, excluding Basic Generation Service 
+(default service), are applicable to Delivery Service Customers. 
+ 
+BASIC GENERATION SERVICE (default service): 
+  
+1) BGS Energy and Reconciliation Charges as provided in Rider BGS -RSCP (Basic Generation 
+Service – Residential Small Commercial Pricing) (formerly Rider BGS-FP) 
+  
+2) Transmission Charge: $0.014877 per KWH for all KWH including Water Heating 
+                            
+ 
+DELIVERY SERVICE (Customer and Distribution charges include Corporation Business Tax as 
+provided in Rider CBT): 
+ 
+1) Customer Charge:  $ 4.27 per month  
+Supplemental Customer Charge:  $ 2.23 per month Off-Peak/Controlled Water Heating 
+ 
+2) Distribution Charge: 
+ 
+June through September: 
+  $ 0.020182 per KWH for the first 600 KWH (except Water Heating) 
+  $ 0.079810 per KWH for all KWH over 600 KWH (except Water Heating) 
+ 
+ October through May: 
+  $ 0.033061 per KWH for all KWH (except Water Heating) 
+ 
+  Water Heating Service: 
+  $0.022066 per KWH for all KWH for Off-Peak Water Heating  
+  $0.029064 per KWH for all KWH for Controlled Water Heating  
+ 
+ 
+ 
+ 
+ 
+_______________________________________________________________________________________ 
+Issued: April 30, 2025   Effective: May 1, 2025 
+ 
+Filed pursuant to Order of Board of Public Utilities 
+Docket No. ER25010024 dated April 23, 2025 
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+Service Classification RS 
+Residential Service 
+ 
+
+PHYSICAL PDF PAGE11
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+ 
+                                            1st Rev. Sheet No. 10 
+BPU No. 14 ELECTRIC - PART III        Superseding Original Sheet No. 10 
+ 
+APPLICABLE TO USE OF SERVICE FOR:   Service Classification GS is available for general service 
+purposes at secondary voltages not included under Service Classifications RS, RT, RGT or GST. 
+ 
+CHARACTER OF SERVICE:  Single or three-phase service at secondary voltages. 
+ 
+RATE PER BILLING MONTH (All charges include Sales and Use Tax as provided in Rider SUT): 
+All charges are applicable to Full Service Customers.  All charges, excluding Basic Generation Service 
+(default service), are applicable to Delivery Service Customers. 
+ 
+BASIC GENERATION SERVICE (default service):  
+ 
+1) BGS Energy and Reconciliation Charges as provided in Rider BGS-RSCP (Basic   Generation 
+Service – Residential Small Commercial Pricing) (formerly BGS-FP) or Rider BGS-CIEP (Basic 
+Generation Service – Commercial Industrial Energy Pricing) 
+  
+2) Transmission Charge: 
+  $ 0.014877 per KWH for all KWH including Water Heating 
+ 
+DELIVERY SERVICE (Customer and Distribution charges include Corporation Business Tax as 
+provided in Rider CBT): 
+ 
+1) Customer Charge:   $  4.65 per month single-phase 
+$16.69 per month three-phase 
+ 
+Supplemental Customer Charge: $  2.23 per month Off-Peak/Controlled Water Heating 
+     $  3.81 per month Day/Night Service 
+     $ 17.34 per month Traffic Signal Service  
+ 
+2) Distribution Charge: 
+ 
+ KW Charge: (Demand Charge) 
+  $ 9.00 per maximum KW during June through September, in excess of 10 KW 
+  $ 8.38 per maximum KW during October through May, in excess of 10 KW 
+  $ 4.08 per KW Minimum Charge, in excess of 10 KW 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+_________________________________________________________________________________ 
+Issued: April 30, 2025  Effective: May 1, 2025 
+ 
+Filed pursuant to Orders of Board of Public Utilities 
+Docket No. ER25010024 dated April 23, 2025 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+Service Classification GS 
+General Service Secondary 
+
+PHYSICAL PDF PAGE42
+ 
+JERSEY CENTRAL POWER & LIGHT COMPANY    
+                           2 nd Rev. Sheet No. 41 
+BPU No. 14 ELECTRIC - PART III            Superseding 1st Rev. Sheet No. 41 
+ 
+Effective June 1, 2015, Rider BGS-FP (Basic Generation Service – Fixed Pricing) is renamed Rider BGS-RSCP 
+to comply with the BPU Order dated November 24, 2014 (Docket No. ER14040370). 
+ 
+AVAILABILITY: Rider BGS -RSCP is available to and provides Basic Generation Service (default service) 
+charges applicable to all KWH usage for Full Service Customers taking service at secondary voltages under 
+Service Classifications RS, RT, RGT, GS, GST, OL, SVL, MVL, ISL  and LED, except for GS and GST 
+Customers that have a peak load share of 50 0 KW or greater as of November 1, 2024 . Rider BGS -RSCP-
+eligible GS and GST Customer s may elect to take default service under Rider BGS -CIEP no later than the 
+second business day in January of each year. Such election will be effective June 1 of that year and Rider BGS-
+CIEP will remain the Customer’s default service for the entire 12-month period from June 1 through May 31 of 
+the following year. BGS-RSCP-eligible Customers who have elected to take default service under BGS-CIEP 
+may return to BGS-RSCP by notifying the Company no later than the second business day in January of each 
+year. Such notification to return to BGS-RSCP will become effective June 1 of that year.  
+ 
+ 
+RATE PER BILLING MONTH:  (For service rendered effective June 1, 2025 through May 31, 2026) 
+1) BGS Energy Charge per KWH: (All charges include Sales and Use Tax as provided in Rider SUT.) 
+ 
+ 
+Service Classification           June through September        October through May  
+RS - first 600 KWH    $0.125888  
+      - all KWH over 600    $0.135113  
+   - all KWH         $0.136817 
+ (Excludes off-peak and controlled water heating special provisions) 
+  
+RT - all on-peak KWH    $0.176465   $0.175992 
+     - all off-peak KWH    $0.092434   $ 0.100009 
+ 
+ 
+RGT - all on-peak KWH    $0.176465 
+        - all off-peak KWH    $0.092434 
+        - all KWH         $0.136817 
+ 
+RS and GS Water Heating – all KWH  $0.128414   $0.127822 
+(For separately metered off-peak and controlled water heating usage under applicable special provisions) 
+ 
+GS - all KWH      $0.124982   $0 .124626 
+ (Excludes off-peak and controlled water heating special provisions) 
+ 
+       
+GST - all on-peak KWH     $0.165577   $0.159186 
+        - all off-peak KWH     $0.092789   $0.101903 
+ 
+OL, SVL, MVL, ISL, LED - all KWH  $0.101311   $0.104743 
+ 
+BGS Energy Charges above reflect costs for energy, generation capacity, ancillary services and related cost.  
+ 
+ 
+__________________________________________________________________________________________________________ 
+Issued: May 29, 2025   Effective: June 1, 2025 
+Filed pursuant to Secretary’s Letter of Board of Public Utilities 
+Docket No. ER2403091 dated May 21, 2025  
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911  
+Rider BGS-RSCP 
+Basic Generation Service – Residential Small Commercial Pricing 
+ (Applicable to Service Classifications RS, RT, RGT, GS, GST, OL, SVL, MVL, ISL and LED) 
+
+PHYSICAL PDF PAGE43
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                               
+                   8 th Rev. Sheet No. 42            
+BPU No. 14 ELECTRIC - PART III                    Superseding 7th Rev. Sheet No. 42 
+ 
+2) BGS Transmission Charge per KWH: As provided in the respective tariff for Service Classifications RS, 
+RT, RGT, GS, GST, OL, SVL, MVL , ISL  and LED. Effective September 1, 2019 , a RMR surcharge of 
+$0.000000 per KWH (includes Sales and Use Tax as provided in Rider SUT) will be added to the BGS 
+Transmission Charge applicable to all KWH usage.   
+Effective December 15, 2021, the following TEC surcharges (include Sales and Use Tax as provided in 
+Rider SUT) will be added to the BGS Transmission Charge applicable to all KWH usage, except lighting 
+under Service Classifications OL, SVL, MVL, ISL and LED:  
+EL18-680FM715-TEC surcharge of $0.000000 per KWH   
+Effective May 1, 2025, the following TEC surcharges (include Sales and Use Tax as provided in Rider SUT) 
+will be added to the BGS Transmission Charge applicable to all KWH usage, except lighting under Service 
+Classifications OL, SVL, MVL, ISL and LED:  
+PSEG-TEC surcharge of $0.002240 per KWH 
+VEPCO-TEC surcharge of $0.000405 per KWH  
+PPL-TEC surcharge of $0.000647 per KWH 
+AEP-East-TEC surcharge of $0.000061 per KWH 
+MAIT-TEC surcharge of $0.000107 per KWH 
+EL05-121-TEC surcharge of $0.000237 per KWH 
+SRE-TEC surcharge of $0.000182 per KWH 
+NIPSCO-TEC surcharge of $0.000002 per KWH 
+SFC-TEC surcharge of $0.000004 per KWH 
+Transource-TEC surcharge of $0.000038 Per KWH 
+ 
+Effective September 15, 2025, the following TEC surcharges (include Sales and Use Tax as provided in 
+Rider SUT) will be added to the BGS Transmission Charge applicable to all KWH usage, except lighting 
+under Service Classifications OL, SVL, MVL, ISL and LED: 
+ 
+TRAILCO-TEC surcharge of $0.000215 per KWH 
+ACE-TEC surcharge of $0.000098 per KWH  
+PECO-TEC surcharge of $0.000061 per KWH 
+Delmarva-TEC surcharge of $0.000006 per KWH 
+PEPCO-TEC surcharge of $0.000011 per KWH  
+BG&E-TEC surcharge of $0.000019 per KWH 
+COMED-TEC surcharge of $0.000000 Per KWH 
+Duquesne-TEC surcharge of $0.000000 Per KWH 
+NextEra-TEC surcharge of $0.000006 Per KWH 
+ 
+3) BGS Reconciliation Charge per KWH : $0.002501 (includes Sales and Use Tax as provided in Rider 
+SUT) 
+The above BGS Reconciliation Charge recovers the difference between the costs for the provision of Basic 
+Generation Service and the revenues from BGS Customers for Basic Generation Service and is subject to 
+quarterly true-ups. 
+ 
+ 
+ 
+Issued: September 15, 2025      Effective: September 15, 2025 
+ 
+Filed pursuant to Order of Board of Public Utilities 
+Docket No. ER25070380 dated September 10, 2025 
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911  
+  
+Rider BGS-RSCP 
+Basic Generation Service – Residential Small Commercial Pricing 
+ (Applicable to Service Classifications RS, RT, RGT, GS, GST, OL, SVL, MVL, ISL and LED) 

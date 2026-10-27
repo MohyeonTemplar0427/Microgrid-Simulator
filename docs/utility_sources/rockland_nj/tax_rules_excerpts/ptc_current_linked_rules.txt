@@ -1,0 +1,70 @@
+SOURCE: https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/files/oru/documents/saveenergyandmoney/shop-for-energy-money/how-to-choose-your-energy-service-company-esco/price-to-compare-nj.pdf?rev=71564846ed6646c7b7a66bfd109bbc7a&hash=1FF6822E5A7E5A3C4397885577A74C51
+ORIGINAL: .cache/rockland_electric_nj/sources/supply/ptc_current_linked.pdf
+SHA256: cc4530c871b7ff866cbb6e41c9281ce6b906535cec28d32f08d8a607adc25415
+Physical PDF pages one based; printedleafnumbers differ.
+
+=== PHYSICAL PDF PAGE 1 ===
+Service Classification Service Classification Description Block Units Summer (June - September) Winter (October - May)
+0 - 600 kWh $/kWh 0.12455 0.18425
+> 600 kWh $/kWh 0.21934 0.18425
+Peak $/kWh 0.29659 0.36342
+Off Peak $/kWh 0.12619 0.12672
+Non-Demand Billed All kWh $/kWh 0.14502 0.13129
+All kWh $/kWh 0.11535 0.10910
+All kW $/kW 11.11 10.99
+All kW $/kW 11.11 10.99
+All kWh $/kWh 0.11272 0.10647
+All kW $/kW 11.11 10.99
+All kW $/kW 11.11 10.99
+Peak $/kWh 0.24059 0.23489
+Off Peak $/kWh 0.10875 0.11219
+SC No. 4* Public Street Lighting All kWh $/kWh 0.09907 0.10161
+SC No. 6* Private Overhead Lighting All kWh $/kWh 0.09865 0.10054
+*  Transmission Charges to be Included for SC Nos. 4 and 6 can be found on Leaf 102, and 116 of RECO's tariff which can be found on www.oru.com.
+**Reflects BGS block structures
+Rockland Electric Company
+Price to Compare
+Effective 6/1/2026 through 5/31/2027
+Excludes BGS Reconciliation Charge
+Applicable to Customers in Bergen County
+SC No. 3 Residential Time of Day Service
+Residential Service (Non-Time of Day 
+Service)
+SC No. 2 (Non-CIEP Eligible)
+Secondary
+Primary
+SC No. 1
+Residential Service (Time of Day Service)
+
+=== PHYSICAL PDF PAGE 2 ===
+Service Classification Service Classification Description Block Units Summer (June - September) Winter (October - May)
+0 - 600 kWh $/kWh 0.10646 0.16616
+> 600 kWh $/kWh 0.20125 0.16616
+Peak $/kWh 0.2785 0.34533
+Off Peak $/kWh 0.1081 0.10863
+Non-Demand Billed All kWh $/kWh 0.13923 0.1255
+All kWh $/kWh 0.10956 0.10331
+All kW $/kW 8.32 8.2
+All kW $/kW 8.32 8.2
+All kWh $/kWh 0.10693 0.10068
+All kW $/kW 8.32 8.2
+All kW $/kW 8.32 8.2
+Peak $/kWh 0.2225 0.2168
+Off Peak $/kWh 0.09066 0.0941
+SC No. 4 Public Street Lighting All kWh $/kWh 0.08452 0.08706
+SC No. 6 Private Overhead Lighting All kWh $/kWh 0.0841 0.08599
+*  Transmission Charges to be Included for SC Nos. 4 and 6 can be found on Leaf 102, and 116 of RECO's tariff which can be found on www.oru.com.
+**Reflects BGS block structures
+SC No. 3 Residential Time of Day Service
+SC No. 1
+Residential Service (Time of Day Service)
+Residential Service (Non-Time of Day 
+Service)
+SC No. 2 (Non-CIEP Eligible)
+Secondary
+Primary
+Rockland Electric Company
+Price to Compare
+Effective 6/1/2026 through 5/31/2027
+Excludes BGS Reconciliation Charge
+Applicable to Customers in Passaic and Sussex Counties

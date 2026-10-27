@@ -1,0 +1,1433 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-27",
+  "source_scope": {
+    "utility_key": "rockland_electric_new_jersey",
+    "utility": "Rockland Electric Company",
+    "jurisdiction": "New Jersey BPU No.3",
+    "plans": [
+      "SC1 non-TOD residential",
+      "SC2 metered secondary non-demand-billed"
+    ],
+    "supply": "BGS-RSCP, independently retained utility assignment",
+    "county_division": "Bergen/Eastern only initial accepted source intersection",
+    "wholesale_metadata": "PJM RECO region; not retail price or nodal LMP. Central/Western non-PJM metadata retained but excluded initial scope.",
+    "source_rate_coverage": {
+      "start": "2026-10-01",
+      "end_inclusive": "2026-10-31",
+      "basis": "all sourced ordinary recurring components intersect onlyOctober2026; earlier partial source facts not executable"
+    },
+    "simulation_weather": "Parent may validate explicit October clear-sky modeled scenarios; no historical actual-weather/full-year claim. October2026 is not complete as ofOctober27.",
+    "account_scope": "Ordinary nonexempt established continuous-service account; independently confirmed classification/territory/BGS and no special fees; source facts are conditional, not customer eligibility proof",
+    "cycle": "Complete ordinary calendarcycle within one sourced regime/season, physical13 leaf10A26\u201334days retainmonthlycharge; unsupportedproration/crossingreject",
+    "SC2_nondemand": "Utility-assigned retained metered nondemand account, no inventednumericthreshold; official PTCnon-demandrow hasonlykWh while adjacent demandclass carrieskW; no inferredstudy-sizeexemption",
+    "DER": "AlreadyactiveutilityexecutedordinaryNEM/interconnection coveringactualPV/storage/non-exportconfig and retainedclass; noSTB/specialfees. Standbyexplicitdemand-billedSC2/SC7 scope; no100kWexemptionborrowed",
+    "export": "Unsupported; no exports or openingcreditbank",
+    "actual_customer_eligibility_claimed": false,
+    "full_year_validation_claim": false
+  },
+  "records": [
+    {
+      "id": "delivery_tariff_index",
+      "original_path": ".cache/rockland_electric_nj/sources/delivery/tariff_index.html",
+      "original_sha256": "717fac9764f103cf9b792ee67661cf242960f1fba60ae815c3f7e7d9a4a8e1b6",
+      "original_bytes": 124635,
+      "urls": [
+        "https://www.oru.com/en/rates-tariffs/rates/new-jersey/electric"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_index",
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_index.html"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "delivery_tariff_current",
+      "original_path": ".cache/rockland_electric_nj/sources/delivery/tariff_current.pdf",
+      "original_sha256": "3721612c3d326d280467ba05cbe581f2f0253adef57a88ab4035eb2c265dd841",
+      "original_bytes": 2089413,
+      "urls": [
+        "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/files/oru/documents/rates/new-jersey/schedule-for-electric-service.pdf?hash=C00EE3FD73B16FCDFAA50E21EA11771E&rev=b3349442f97f4fd38d3e59185ee46e11",
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/schedule-for-electric-service.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_current",
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_oru_origin",
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_oru_origin.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "shared_tariff_current",
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 7,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p007.txt",
+          "sha256": "fd4b509cc29fe0b47f329d1843992cf8a842041cb8e05c71651cd91dd6925697"
+        },
+        {
+          "physical_page": 8,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p008.txt",
+          "sha256": "565322f6b00f03cdad2b1bc15ffe757c8e7759820f051468a5abd165d4c50da0"
+        },
+        {
+          "physical_page": 53,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p053.txt",
+          "sha256": "5df37dc6cbceee626e73fca46c4e6c6877532d0625b42772995f99827a4eda64"
+        },
+        {
+          "physical_page": 54,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p054.txt",
+          "sha256": "9f47307a5e61258e92f0736c468586e2609a23c021bb16507217cf257660c13b"
+        },
+        {
+          "physical_page": 55,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p055.txt",
+          "sha256": "ebbfc73ef12c1a71452266bda49076db81eb6eacdf8bb9bb06a362d55577e249"
+        },
+        {
+          "physical_page": 56,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p056.txt",
+          "sha256": "8c969735969acae5ddc44411aa314225ac5f29d5e75301c32505a4df94f1dff4"
+        },
+        {
+          "physical_page": 57,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p057.txt",
+          "sha256": "db15a127bd56410079a18e7dc6cbaa724ee72023fa684304210e7bc206f3812b"
+        },
+        {
+          "physical_page": 103,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p103.txt",
+          "sha256": "265c18b7b15d8bcd402d4006104b7ad752e629d8436005211b8d39828afa8539"
+        },
+        {
+          "physical_page": 104,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p104.txt",
+          "sha256": "02a56678e17bf71e7603b64ef464d6d2cf3f77b668d8748ce15309290f204b84"
+        },
+        {
+          "physical_page": 109,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p109.txt",
+          "sha256": "868be1f40c86499acfbab7486662c811c1d9e9307a9a2052eab4d931d50df602"
+        },
+        {
+          "physical_page": 110,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p110.txt",
+          "sha256": "6e44a9a64e15444138d1ec82e8a070fb181ca051833473668ee9a59000fc18ca"
+        },
+        {
+          "physical_page": 111,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/tariff_current_p111.txt",
+          "sha256": "10e08a90c4cb123c431161c66d74cb6be4e97041f53a8d2b13d480278126c7a5"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/tax_rules_excerpts/tariff_current_rules.txt",
+          "sha256": "217a6457ae01b7475d9e502a4ac4046771d18235b646181f4b07b5a9b377692a",
+          "physical_pages": [
+            10,
+            12,
+            13,
+            20,
+            66,
+            77,
+            78,
+            79,
+            82,
+            83,
+            84,
+            85,
+            86,
+            101,
+            102,
+            104,
+            105,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113
+          ]
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p101_aff093e04f.txt",
+          "sha256": "aff093e04f0e3cdd2e92932f896200e21947619024117efa0d70cfb176e16df8",
+          "physical_page": 101,
+          "printed_leaf": "82",
+          "revision": "18th Revised",
+          "effective_footer": "July 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p102_55fe283ca8.txt",
+          "sha256": "55fe283ca8fd36ebaad829dcb30131adac0ab44a4aa49e0fda010d43ce1a2905",
+          "physical_page": 102,
+          "printed_leaf": "82.1",
+          "revision": "Original",
+          "effective_footer": "July 16, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p104_b507f840e2.txt",
+          "sha256": "b507f840e2837bc85f9e5c65f68814b5c8b478743ab8357ffb13bf2717ae66bc",
+          "physical_page": 104,
+          "printed_leaf": "84",
+          "revision": "10th Revised",
+          "effective_footer": "July 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p107_59ab7b7fac.txt",
+          "sha256": "59ab7b7fac02b600aa2b8577e5c763523aa4501b26410cdf42b60b10487becdd",
+          "physical_page": 107,
+          "printed_leaf": "87",
+          "revision": "8th Revised",
+          "effective_footer": "July 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p108_41e5e53485.txt",
+          "sha256": "41e5e53485055b7b7a73d79269a90dba545fe44da4ff09b71141a0828b3ea694",
+          "physical_page": 108,
+          "printed_leaf": "88",
+          "revision": "16th Revised",
+          "effective_footer": "July 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p111_38be750291.txt",
+          "sha256": "38be750291e6c29e70f2af01e74acc751469c93d3b66ddbc0ba56f67de0cace5",
+          "physical_page": 111,
+          "printed_leaf": "91",
+          "revision": "11th Revised",
+          "effective_footer": "July 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p109_663cdeda7f.txt",
+          "sha256": "663cdeda7f0158789ff36af738387b2882da8b6be9bf75594dac6174d2c95c89",
+          "physical_page": 109,
+          "printed_leaf": "89",
+          "revision": "5th Revised",
+          "effective_footer": "January 1, 2024"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p59_7897505601.txt",
+          "sha256": "7897505601aef9698ad7da053c424b7fc6de87805f75f436ec068141be59416e",
+          "physical_page": 59,
+          "printed_leaf": "56",
+          "revision": "33rd Revised",
+          "effective_footer": "October 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p61_7c0a65695e.txt",
+          "sha256": "7c0a65695efaee337ce5d372b82e02ea11388eb87bb9765084609f5127372e85",
+          "physical_page": 61,
+          "printed_leaf": "58",
+          "revision": "22nd Revised",
+          "effective_footer": "June 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p76_877644e4bd.txt",
+          "sha256": "877644e4bdc49c6d7cc3f69d6ceaa59458a70bc862453c5017a40c9f4c3ce232",
+          "physical_page": 76,
+          "printed_leaf": "65D",
+          "revision": "Original",
+          "effective_footer": "July 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p73_7255d37afc.txt",
+          "sha256": "7255d37afc9ec8e5000c6eee3bba6a7b1d62e32eb8897c07d78c5a1dfc8dbe36",
+          "physical_page": 73,
+          "printed_leaf": "65A",
+          "revision": "1st Revised",
+          "effective_footer": "July 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p68_ee0d4a8e20.txt",
+          "sha256": "ee0d4a8e206ec49483a680761ed0431eeb11770f551304fcf80cf4e3ed2af57c",
+          "physical_page": 68,
+          "printed_leaf": "61",
+          "revision": "8th Revised",
+          "effective_footer": "July 15, 2026"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p66_67533d5190.txt",
+          "sha256": "67533d519004f1a62bf04bc6e01d0ca0710d2d653171f3037898691c2521129e",
+          "physical_page": 66,
+          "printed_leaf": "59",
+          "revision": "15th Revised",
+          "effective_footer": "July 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p67_6a2d5ec44d.txt",
+          "sha256": "6a2d5ec44dd13adb6a63dbe1a00f429c8aab0558953e2a2958370cbd4209fa9a",
+          "physical_page": 67,
+          "printed_leaf": "60",
+          "revision": "5th Revised",
+          "effective_footer": "July 1, 2018"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p94_39b5a0ab7c.txt",
+          "sha256": "39b5a0ab7c51aca703e19f360fa0b0df1beaf55e3b578ad35789a3a016de2098",
+          "physical_page": 94,
+          "printed_leaf": "81B",
+          "revision": "Original",
+          "effective_footer": "January 1, 2023"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/tariff_current_p93_81113c79d4.txt",
+          "sha256": "81113c79d4e4c30ba0a6917f98d222f0fed97162bb5836be8d8e4eaa346c8cbe",
+          "physical_page": 93,
+          "printed_leaf": "81A",
+          "revision": "Original",
+          "effective_footer": "January 1, 2023"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/tariff_current_p103.png",
+          "sha256": "33062813814b14b1331a2e87c5842506ff2382d1a9f7bad37361b683e27ac0d4",
+          "owner_stream": "supply",
+          "visually_reviewed": false
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/tariff_current_p109.png",
+          "sha256": "96192b10346d8b3d5fb25b4b09586ba182f66b614f73a7a0a9e5b5c2ec0ea0ae",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/tariff_current_p110.png",
+          "sha256": "a4afb4666747e7a72bf58e79f76be1d6ad8698ac3096e701363c5cbe7d5401cb",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/tariff_current_p53.png",
+          "sha256": "6f23c40b5d3a733a832f30fed5283101d10d4ac2cce9c1a00c60fa8989b06548",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/tariff_current_p55.png",
+          "sha256": "97e96b2c22679bd31dd0a393c980fe4669a9660d647c8f9b9cf57aa5425fe2c2",
+          "owner_stream": "supply",
+          "visually_reviewed": false
+        },
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/rockland_electric_nj/sources/tax_rules/tariff_current_page85.png",
+          "sha256": "bd1813ba710a187fd40e3c5b3eaaac9ea04b05f487c52e75284f780ee23dee77",
+          "visually_reviewed": true
+        },
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/rockland_electric_nj/sources/tax_rules/tariff_current_page109.png",
+          "sha256": "8d7123a30a48046068879d7fde2af8d7007d43c428c8aa9a8e1c8ac51ac75456",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p101.png",
+          "sha256": "1e71a4324ec2a71c1c595e71c69da30821930c694126506673174a5d96a58325",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p102.png",
+          "sha256": "98075e6dc8eeb2cea68cab9c4fd1d648fc175d9cf8961418779074769cc6bdbd",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p107.png",
+          "sha256": "d197d5c36aff0f4e91db241be1c3c5dbb59c306e96abe28636fc22d18c9341d1",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p108.png",
+          "sha256": "346d5364f99e40defd4a495909d1a61fca44bbde4c669f009d49fad9a7a4297f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p59.png",
+          "sha256": "4a9966611dfe98d5ea09fe6022b8e69b74282b7de00cd447c84bfc3bfa41ca57",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p61.png",
+          "sha256": "0c535ade4004a7a4e40c56c125ff3a0493b1d38c90b636420e8ba7088e8b9c78",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p68.png",
+          "sha256": "476755cd80ed8d980bfa6c56a8e0459f0bc8b06818e8562c1388d63a8b132e00",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_current_p76.png",
+          "sha256": "9611f32204caa12f259e9febd89c8c3c360c79a27d5bd182e244b0e43eeba0b8",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        }
+      ],
+      "source_qualifications": [
+        "adopted mixed-effective-date NJ BPU3 leaves; physical4 erroneous NY TOC excluded"
+      ],
+      "selected_physical_pages": [
+        7,
+        8,
+        10,
+        12,
+        13,
+        20,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59,
+        61,
+        66,
+        67,
+        68,
+        73,
+        76,
+        77,
+        78,
+        79,
+        82,
+        83,
+        84,
+        85,
+        86,
+        93,
+        94,
+        101,
+        102,
+        103,
+        104,
+        105,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113
+      ],
+      "physical_pages": 153,
+      "full_text_path": ".cache/rockland_electric_nj/sources/delivery/tariff_current.txt",
+      "full_text_sha256": "ef7a20090e8bb8f9eb98335b817b5240063875eb2fcc43e9add236c87121de6a",
+      "alternate_extractions": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/tariff_oru_origin.txt",
+          "sha256": "ef7a20090e8bb8f9eb98335b817b5240063875eb2fcc43e9add236c87121de6a"
+        }
+      ]
+    },
+    {
+      "id": "delivery_base_order_2026jun30",
+      "original_path": ".cache/rockland_electric_nj/sources/delivery/base_order_2026jun30.pdf",
+      "original_sha256": "bc6c49995e285cf18e89d77c569b190e19537d3b6ee51d10f61b91caab1aa63c",
+      "original_bytes": 2647133,
+      "urls": [
+        "https://www.nj.gov/bpu/pdf/boardorders/2026/20260630/2D%20ORDER%20RECO%20Base%20Rate%20Case.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "base_order_2026jun30",
+          "path": ".cache/rockland_electric_nj/sources/delivery/base_order_2026jun30.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "base_order_2026jun30",
+          "path": ".cache/rockland_electric_nj/sources/delivery/base_order_2026jun30.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/rockland_nj/tax_rules_excerpts/base_order_2026jun30_rules.txt",
+          "sha256": "637e69815ea887596e81becb7790caa50f5f203c24747cca7345c8195dc4a997",
+          "physical_pages": [
+            4,
+            9,
+            10
+          ]
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/base_order_2026jun30_p92_774178ee22.txt",
+          "sha256": "774178ee22656b6b4379a66534deea1af823138fc6d454f04645843e9b8b7dbe",
+          "physical_page": 92,
+          "printed_leaf": "82",
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/base_order_2026jun30_p95_674e0f5ef1.txt",
+          "sha256": "674e0f5ef1f5ac0abf6cd36b8abc69bbaf0fdbbf512718720f7a9ae55c105c5e",
+          "physical_page": 95,
+          "printed_leaf": "88",
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/base_order_2026jun30_p29_b740f3bb80.txt",
+          "sha256": "b740f3bb80d9a99ac03af0ed2521aa6092ce86a75491ce9412b67c517a51091b",
+          "physical_page": 29,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/rockland_electric_nj/sources/tax_rules/base_order_2026jun30_page10.png",
+          "sha256": "39a504af76df354b1f67dcbd43ea24502b4daed77bf47a06e646b2cc502238d1",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/base_order_2026jun30_p92.png",
+          "sha256": "8dd69190ccdcd48eb2c5d3661bc1c77edc1dc841c56d66f100047f69ee170f9b",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/base_order_2026jun30_p95.png",
+          "sha256": "9eb7f62f86ab5be5a2b03921655d7378d39c91c1147113a8eb572bab55346322",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        4,
+        9,
+        10,
+        29,
+        92,
+        95
+      ],
+      "physical_pages": 113,
+      "full_text_path": ".cache/rockland_electric_nj/sources/delivery/base_order_2026jun30.txt",
+      "full_text_sha256": "de2994bbe6ecff01fc87bff6c0ffd9153158354a8c20dd6d500df97d351f05aa"
+    },
+    {
+      "id": "delivery_rggi_sbc_cip_order_2025may21",
+      "original_path": ".cache/rockland_electric_nj/sources/delivery/rggi_sbc_cip_order_2025may21.pdf",
+      "original_sha256": "73693fd6f74f005879a8d82e80e1f93f74a4d19bc01349a2a59f0a77ebcd9094",
+      "original_bytes": 2651471,
+      "urls": [
+        "https://www.nj.gov/bpu/pdf/boardorders/2025/20250521/2K%20ORDER%20RECO%20RGGI%20SBC%20CIP.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "rggi_sbc_cip_order_2025may21",
+          "path": ".cache/rockland_electric_nj/sources/delivery/rggi_sbc_cip_order_2025may21.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/rggi_sbc_cip_order_2025may21_p102_61bc8b5c4d.txt",
+          "sha256": "61bc8b5c4d32aa4e00ead3af2719579ec223eab37e36e93df88a6e5e01dde68b",
+          "physical_page": 102,
+          "printed_leaf": "56",
+          "revision": "31th Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/rggi_sbc_cip_order_2025may21_p12_765d2c69df.txt",
+          "sha256": "765d2c69dfe33022186b5a1b7ff5911890867255f9a629f21d7077cf879af1da",
+          "physical_page": 12,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/rggi_sbc_cip_order_2025may21_p13_3dd4676a62.txt",
+          "sha256": "3dd4676a62c0265a768e402cb1fcea78f8e5c0a70554282ba83dbdadce9b0e9e",
+          "physical_page": 13,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/rggi_sbc_cip_order_2025may21_p10_ced3d76ccb.txt",
+          "sha256": "ced3d76ccb760d958db2e0a77cc415ec8221049ab9acc02641844ad252b26822",
+          "physical_page": 10,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/rggi_sbc_cip_order_2025may21_p14_f469f5fcb9.txt",
+          "sha256": "f469f5fcb9f3af652c58fe514170d8112b0162a0787b08013cd3729d6377bd67",
+          "physical_page": 14,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/rggi_sbc_cip_order_2025may21_p10.png",
+          "sha256": "83497caab9c82b36306f4ef0e226c852ad8c9dcc5c54de287a8ea5171bc8c6f6",
+          "owner_stream": "delivery",
+          "visually_reviewed": false,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/rggi_sbc_cip_order_2025may21_p102.png",
+          "sha256": "55c99da894711b29f5cfe33528650b7ff826ae30ddddf236832bde18558714e6",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/rggi_sbc_cip_order_2025may21_p13.png",
+          "sha256": "a4cd9fb53925d408a2eb13dd2f24389e8b65c51b1aef51ff84a12328c113fa1d",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/rggi_sbc_cip_order_2025may21_p14.png",
+          "sha256": "adffe38928e838ab8d12ea761df4347a5dfe2ef4f23c78a890a104a5dfe25709",
+          "owner_stream": "delivery",
+          "visually_reviewed": false,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        10,
+        12,
+        13,
+        14,
+        102
+      ],
+      "physical_pages": 112,
+      "full_text_path": ".cache/rockland_electric_nj/sources/delivery/rggi_sbc_cip_order_2025may21.txt",
+      "full_text_sha256": "992effb5b28bcbc0064cc181dd6319f8be647d887d1f0bb6329d4c757b406d82"
+    },
+    {
+      "id": "delivery_usf_order_2025sep25",
+      "original_path": ".cache/rockland_electric_nj/sources/delivery/usf_order_2025sep25.pdf",
+      "original_sha256": "d3c916fc98cbfb0bd63be120878d54301ee3e3dfa0dce96741db47ea2903ba57",
+      "original_bytes": 777220,
+      "urls": [
+        "https://www.nj.gov/bpu/pdf/boardorders/2025/20250925/2A%20ORDER%20USF%20Lifeline.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "usf_order_2025sep25",
+          "path": ".cache/rockland_electric_nj/sources/delivery/usf_order_2025sep25.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/usf_order_2025sep25_p10_12836625b9.txt",
+          "sha256": "12836625b90146bd517fa4f74dc3644934fbe5e67791cf9e8c0aa3b2a60942cf",
+          "physical_page": 10,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/delivery_excerpts/usf_order_2025sep25_p11_757a811608.txt",
+          "sha256": "757a811608b01ee6f7766169afce11956e031f5021887664e65d6cea75470be8",
+          "physical_page": 11,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/usf_order_2025sep25_p10.png",
+          "sha256": "3b15b8af2597fd03733ad8abc4897cef0a4871eb6bb4b1c97e1f5d20fcdea840",
+          "owner_stream": "delivery",
+          "visually_reviewed": true,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/delivery/usf_order_2025sep25_p11.png",
+          "sha256": "f7e0170753d44ea5fb50e5f7d99f4aadf97400c7aca6728ec2af5ea39cd37b12",
+          "owner_stream": "delivery",
+          "visually_reviewed": false,
+          "review_status": "Exact owner-confirmed list:13reviewed,3renderedonly; metadata correction changes no original/excerpt/prices."
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        10,
+        11
+      ],
+      "physical_pages": 16,
+      "full_text_path": ".cache/rockland_electric_nj/sources/delivery/usf_order_2025sep25.txt",
+      "full_text_sha256": "69264356da5eacdfd43f1bd0ce41253aeffb71331a0c9cbb66b732e4c679acc8"
+    },
+    {
+      "id": "supply_reco_rc_202412",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202412.pdf",
+      "original_sha256": "63f6ebc3bb64774b9c6d6742af8c4e6aaa49a6f5fe1e0441b8a453f2bdb19aa3",
+      "original_bytes": 105408,
+      "urls": [
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202412.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "reco_rc_202412",
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202412.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/reco_rc_202412_p001.txt",
+          "sha256": "439d8df4ffef0d623eead48cff8ddc0e55a4c6943d76df539bc773b2d8c80a5f"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "adopted quarterly leaf54"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202412.txt",
+      "full_text_sha256": "451d9593c130e626cbfc1a3c4c41018cf51bb6f3a72b4af4bcf670a92af93d96"
+    },
+    {
+      "id": "supply_reco_rc_202503",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202503.pdf",
+      "original_sha256": "019beb4c67e3cbf4e933b405ad491aef90a2932072d931045ed527ce32394b6a",
+      "original_bytes": 105393,
+      "urls": [
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202503.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "reco_rc_202503",
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202503.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/reco_rc_202503_p001.txt",
+          "sha256": "fc258c2efe3a9c99fae4681b172e12ac997b9030ba0546874aa7a8bc9bc3158a"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "adopted quarterly leaf54"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202503.txt",
+      "full_text_sha256": "d5598032fea36c44bc4eed1a98dec27fc6b62fd85acd66c42cb3b21998183a36"
+    },
+    {
+      "id": "supply_reco_rc_202506",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202506.pdf",
+      "original_sha256": "95aa99cdabfebb561f0852e2000b1e35b5f75b4d769914cd5eecac291e83f0b8",
+      "original_bytes": 106358,
+      "urls": [
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202506.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "reco_rc_202506",
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202506.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/reco_rc_202506_p001.txt",
+          "sha256": "72a05d26c0ab82d85809e6f7296f28b7e88cd0c64c0fcf8dcb4f6891809daf04"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "adopted quarterly leaf54"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202506.txt",
+      "full_text_sha256": "78b424d804ce9e64294e4f14fec80ce2510ec1dc3dc7c986211aadb638882ea9"
+    },
+    {
+      "id": "supply_reco_rc_202512",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202512.pdf",
+      "original_sha256": "d653c332742fae1dcec91d45489d1964072aea1c83b2e5d840bd0175a0d5facd",
+      "original_bytes": 100069,
+      "urls": [
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202512.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "reco_rc_202512",
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202512.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/reco_rc_202512_p001.txt",
+          "sha256": "7495a5d61dfe496a37cf60514457af0655f9259537c549f54ab167c483db15e1"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "adopted quarterly leaf54"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202512.txt",
+      "full_text_sha256": "c6d8cb8a24db372a845bfe2b41bcc768c325c5ac8c7809bcc456eb48feac1711"
+    },
+    {
+      "id": "supply_reco_rc_202603",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202603.pdf",
+      "original_sha256": "dafcc73de4366f4b659456d16b08c2cd59584bd5a2d81ff23944a99a42ea51e2",
+      "original_bytes": 100085,
+      "urls": [
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202603.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "reco_rc_202603",
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202603.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/reco_rc_202603_p001.txt",
+          "sha256": "1900775b5ab07481a2a16bb94a5891ade4326440b4742803dd56b4b69507b17e"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "adopted quarterly leaf54"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202603.txt",
+      "full_text_sha256": "105c8c104052b5e3aa8287d3b3a9c382c8cb6bab8c6ce9ce35591a30e1bf90e6"
+    },
+    {
+      "id": "supply_reco_rc_202606",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202606.pdf",
+      "original_sha256": "a8ee06dfbd1151fb7a7bcc4a5bf962860100a7d7930605bcc8fe07e1005b87e4",
+      "original_bytes": 100088,
+      "urls": [
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202606.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "reco_rc_202606",
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202606.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/reco_rc_202606_p001.txt",
+          "sha256": "62fb0b1279f9ad96ab3197942268b80b7c8fb718002442513f6c1d1d81f3f0af"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "adopted quarterly leaf54"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202606.txt",
+      "full_text_sha256": "e9b8804f7fc5d9b54023f8449601feec9cb005de74f0b004c204ffc03258f2e5"
+    },
+    {
+      "id": "supply_reco_rc_202609",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202609.pdf",
+      "original_sha256": "56a81c421d78d13950021d753a2d9dae507bba71216735f75c3554326b840fd3",
+      "original_bytes": 100101,
+      "urls": [
+        "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202609.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "reco_rc_202609",
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202609.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/reco_rc_202609_p001.txt",
+          "sha256": "6b6a7694a2979481dcc95f8d9f30129b025cf5dab1194a007ec5ee11e11201d2"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202609_p1.png",
+          "sha256": "aa95ecc2c761c631e8412000977a2d762949e34acdcb050adadab6b57e80bdcc",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "adopted quarterly leaf54"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/reco_rc_202609.txt",
+      "full_text_sha256": "f848d21dd601e4bc9ca8d7a96122090f56408234b8909524410e0498d5c4cf86"
+    },
+    {
+      "id": "supply_tariff_index",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/tariff_index.html",
+      "original_sha256": "bf152f7b9a67a82c02c69cb004e6a779b5e6ad43ee7ec5d70adcf6638bb1c7b4",
+      "original_bytes": 124635,
+      "urls": [
+        "https://www.oru.com/en/rates-tariffs/rates/new-jersey/electric"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "tariff_index",
+          "path": ".cache/rockland_electric_nj/sources/supply/tariff_index.html"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "supply_esco_current",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/esco_current.html",
+      "original_sha256": "dc5b6fc93913c7a6cd88dc8ab2121baef9db64410d721650d8cf80b5e3e38418",
+      "original_bytes": 103225,
+      "urls": [
+        "https://www.oru.com/en/save-money/shop-for-energy-suppliers/how-to-choose-your-energy-service-company-esco"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "esco_current",
+          "path": ".cache/rockland_electric_nj/sources/supply/esco_current.html"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "supply_ptc_current_linked",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/ptc_current_linked.pdf",
+      "original_sha256": "cc4530c871b7ff866cbb6e41c9281ce6b906535cec28d32f08d8a607adc25415",
+      "original_bytes": 119442,
+      "urls": [
+        "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/files/oru/documents/saveenergyandmoney/shop-for-energy-money/how-to-choose-your-energy-service-company-esco/price-to-compare-nj.pdf?rev=71564846ed6646c7b7a66bfd109bbc7a&hash=1FF6822E5A7E5A3C4397885577A74C51"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "ptc_current_linked",
+          "path": ".cache/rockland_electric_nj/sources/supply/ptc_current_linked.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "ptc_current_linked",
+          "path": ".cache/rockland_electric_nj/sources/supply/ptc_current_linked.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/ptc_current_linked_p001.txt",
+          "sha256": "515e036eff873188bd97173a0ed3dc1f9ea2568f09ae548ce00a433d182f8276"
+        },
+        {
+          "physical_page": 2,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/ptc_current_linked_p002.txt",
+          "sha256": "595631cfa8c343a2a8dfdb0bfbd6e666ecd6ddf258d6dcb201b0b4e5d62d5714"
+        },
+        {
+          "path": "docs/utility_sources/rockland_nj/tax_rules_excerpts/ptc_current_linked_rules.txt",
+          "sha256": "d1d8b681de6ba66bb24970f603cbdef14087260f6f7541a34dc84793c311784a",
+          "physical_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/ptc_current_linked_p1.png",
+          "sha256": "b2a18285b48107526283b99c5051fbeb9d9275d2d8580b6df9354ca526f87924",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/rockland_electric_nj/sources/supply/ptc_current_linked_p2.png",
+          "sha256": "32d4fec279437ecf2e5b39a6cd7ea7028c658dc67f54d906b49199c6dae00ddd",
+          "owner_stream": "supply",
+          "visually_reviewed": false
+        },
+        {
+          "owner_stream": "tax_rules",
+          "path": ".cache/rockland_electric_nj/sources/tax_rules/ptc_current_bergen.png",
+          "sha256": "364e6cee6cf71a9cf094590ddbefe9517e1ebfe885bf07ec93e240f1299d1337",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "official PTC benchmark; annual heading does not certify unchanged transmission throughout year"
+      ],
+      "selected_physical_pages": [
+        1,
+        2
+      ],
+      "physical_pages": 2,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/ptc_current_linked.txt",
+      "full_text_sha256": "5024f2a297b6f042a3b0c026884c86d61a3bb39389da57c1ef66eb3c509868d2"
+    },
+    {
+      "id": "supply_bpu_transmission_order_2026sep24",
+      "original_path": ".cache/rockland_electric_nj/sources/supply/bpu_transmission_order_2026sep24.pdf",
+      "original_sha256": "01ec78fd363a314fdf94247f96d787ac479a5249f65786813b7bce8bd70c102e",
+      "original_bytes": 177248,
+      "urls": [
+        "https://www.nj.gov/bpu/pdf/boardorders/2026/20260923/2P%20ORDER%20July%2026%20NITS%20TEC.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "bpu_transmission_order_2026sep24",
+          "path": ".cache/rockland_electric_nj/sources/supply/bpu_transmission_order_2026sep24.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "physical_page": 1,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/bpu_transmission_order_2026sep24_p001.txt",
+          "sha256": "8cfec19045c48d2f11dadc4937c76085d0fea86353f316fa2c7976cf24ce050f"
+        },
+        {
+          "physical_page": 2,
+          "path": "docs/utility_sources/rockland_nj/supply_excerpts/bpu_transmission_order_2026sep24_p002.txt",
+          "sha256": "1acd0309964764500f03912066841af7323aa3a5a3cdf71145954a0ad9fddca6"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "adopted order; October1effective; no prior numeric leaf appendices"
+      ],
+      "selected_physical_pages": [
+        1,
+        2
+      ],
+      "physical_pages": 5,
+      "full_text_path": ".cache/rockland_electric_nj/sources/supply/bpu_transmission_order_2026sep24.txt",
+      "full_text_sha256": "4247a847103715fb1d8cf6e5916915805f3636992b634e9c5b34c30a780aab8d"
+    },
+    {
+      "id": "tax_rules_base_order_2021dec15",
+      "original_path": ".cache/rockland_electric_nj/sources/tax_rules/base_order_2021dec15.pdf",
+      "original_sha256": "28b253e4b5ad38cd2b1a3474ad27df356ba50fb1e613cc8eb5358cefd20491b4",
+      "original_bytes": 3644517,
+      "urls": [
+        "https://www.nj.gov/bpu/pdf/boardorders/2021/20211215/2B%20ORDER%20RECO%202021%20BRC.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "base_order_2021dec15",
+          "path": ".cache/rockland_electric_nj/sources/tax_rules/base_order_2021dec15.pdf"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/rockland_nj/tax_rules_excerpts/base_order_2021dec15_rules.txt",
+          "sha256": "c36877f27c5946303897c1afbacc276be4bc46507db27c80ce57d9eed0182b88",
+          "physical_pages": [
+            3,
+            4,
+            9,
+            54,
+            55,
+            56,
+            59,
+            60,
+            63
+          ]
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        3,
+        4,
+        9,
+        54,
+        55,
+        56,
+        59,
+        60,
+        63
+      ],
+      "physical_pages": 122,
+      "full_text_path": ".cache/rockland_electric_nj/sources/tax_rules/base_order_2021dec15.txt",
+      "full_text_sha256": "139f8664821099b9e2208736df7706ebed8afca9cccd937463b4523845482acb"
+    },
+    {
+      "id": "tax_rules_ami_order_2017aug23",
+      "original_path": ".cache/rockland_electric_nj/sources/tax_rules/ami_order_2017aug23.pdf",
+      "original_sha256": "83c763c395635fa1d75c207f573ef24d679a386007bc92ebde33cbf0d89f92e6",
+      "original_bytes": 1477848,
+      "urls": [
+        "https://www.nj.gov/bpu/pdf/boardorders/2017/20170823/8-23-17-2F.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "ami_order_2017aug23",
+          "path": ".cache/rockland_electric_nj/sources/tax_rules/ami_order_2017aug23.pdf"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/rockland_nj/tax_rules_excerpts/ami_order_2017aug23_rules.txt",
+          "sha256": "d956759dd344bdfdd6733d36b3b0c6e82212f5196fc030b76d488ba5122fa7d5",
+          "physical_pages": [
+            21
+          ]
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        21
+      ],
+      "physical_pages": 43,
+      "full_text_path": ".cache/rockland_electric_nj/sources/tax_rules/ami_order_2017aug23.txt",
+      "full_text_sha256": "0a3a827aa24cd1ba4e2cc763cd187db138c7ae0711cb43d2a5e92e0e843bf9ac"
+    },
+    {
+      "id": "metadata_reco_2026_bgs_notice",
+      "original_path": ".cache/rockland_electric_nj/sources/metadata/reco_2026_bgs_notice.pdf",
+      "original_sha256": "602d4017bceca69b84454e1ed7f495c0f0180f7c4008a41eae9ed223767c49f7",
+      "original_bytes": 83662,
+      "urls": [
+        "https://nj.gov/bpu/pdf/publicnotice/ER25040190%20RECO%202026%20BGS%209.11.25.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "reco_2026_bgs_notice",
+          "path": ".cache/rockland_electric_nj/sources/metadata/reco_2026_bgs_notice.pdf"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/metadata/county_control_area_excerpt.txt",
+          "sha256": "abb84fd9cd9f8ba826e826600c97ee66d12239f7ba88f82d622b424753b337a9",
+          "physical_pages": [
+            1
+          ]
+        }
+      ],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Proposed2026BGSnotice used only for county/controlarea metadata; proposedprices are not adoptedrateevidence"
+      ],
+      "selected_physical_pages": [],
+      "physical_pages": 2,
+      "full_text_path": ".cache/rockland_electric_nj/sources/metadata/reco_2026_bgs_notice.txt",
+      "full_text_sha256": "8835999f281327288eac86c2407c08df31406b2b1d850d3f33483c85ee876dc8"
+    },
+    {
+      "id": "metadata_pjm_regions",
+      "original_path": ".cache/rockland_electric_nj/sources/metadata/pjm_regions.html",
+      "original_sha256": "98fe1fec5806ffccf3d9104531f8a604140d01e00e3e5b2b1321cb628d3fd601",
+      "original_bytes": 46783,
+      "urls": [
+        "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "pjm_regions",
+          "path": ".cache/rockland_electric_nj/sources/metadata/pjm_regions.html"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/rockland_electric_nj/sources/metadata/pjm_regions_excerpt.txt",
+          "sha256": "147f81861dcf03f433b1db92ce4b3ed2b3585cb3212baacc740264bad24bcbd8",
+          "physical_pages": []
+        }
+      ],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "PJM RECO metadata does not establish wholesale pricing node, all-county balancing area or retail territory; Central/Western non-PJM scope requires separate source and cannot be inferred from this row."
+      ],
+      "selected_physical_pages": []
+    }
+  ],
+  "derived_receipts": [
+    {
+      "path": ".cache/rockland_electric_nj/sources/delivery/delivery_records.json",
+      "sha256": "f7d2514680d76e5f806d0339463d9615ebf559ee8f47e5162e3dfa58d8ffa882",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/rockland_electric_nj/sources/delivery/delivery_snapshots.json",
+      "sha256": "339d5547e1c1ff0a3823f0bd38e1842463602a9ab0b22434edc23ac7aae4f9c6",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/rockland_electric_nj/sources/delivery/page_inventory.json",
+      "sha256": "1e07273012b38da5a7b12fa5f2bbe6f002629fb6ce38d358c10d58f2db8ba31d",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/rockland_electric_nj/sources/metadata/county_notice_receipt.json",
+      "sha256": "302b249d34057351ecd256a3b0693eedfd8b49c965e4e4216cf9110c83d0cfea",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/rockland_electric_nj/sources/metadata/pjm_receipt.json",
+      "sha256": "83505b969ebf3fc57be90b91d16e2f8ef8347d73e12c197543a3367e6f3d5985",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/rockland_electric_nj/sources/supply/supply_records.json",
+      "sha256": "d8566645d7900ae8961dba21fe1e364d64ccbd7e458aff6fda09e410b3b62a61",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/rockland_electric_nj/sources/supply/supply_snapshots.json",
+      "sha256": "aa8fb4d8d4e9bd1dfcfba28de29942ef83adedf3b0c4e817236ba640409df1a9",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/rockland_electric_nj/sources/tax_rules/tax_rules_records.json",
+      "sha256": "2c857ef2005365c8aaabda36639150a29fbdf98c221e0af57a892221cfe8e695",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/rockland_nj/delivery_research.md",
+      "sha256": "2ff0fbc09436f6ee4c68170a962dcb72eea2cdfad816c42caabc6e5f97c62ea6",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/rockland_nj/supply_research.md",
+      "sha256": "916716bda8454c1feeb23f12a3e3e6c54ac68b11ed05ce818f5695a9c000dbf4",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/rockland_nj/tax_rules_research.md",
+      "sha256": "e8984eb1ee2a921803fd4cc2ef6e137847b0dc62482ad0dc192b7652c0f21455",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    }
+  ],
+  "blocked_routes": [
+    {
+      "owner_stream": "supply",
+      "id": "reco_rc_202509",
+      "url": "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/bgs-reconciliation-charges/bgs-202509.pdf",
+      "http_status": 404,
+      "original_preserved": false,
+      "action": "targetedmissingquarterroute;notretried"
+    },
+    {
+      "owner_stream": "supply",
+      "id": "ptc_current",
+      "url": "https://www.oru.com/-/media/files/oru/documents/saveenergyandmoney/shop-for-energy-money/how-to-choose-your-energy-service-company-esco/recopricetocomparenj.pdf",
+      "http_status": 404,
+      "original_preserved": false,
+      "action": "targetedmissingquarterroute;notretried"
+    },
+    {
+      "owner_stream": "supply",
+      "id": "ptc_azure",
+      "url": "https://edge-e-dcxprod-web-bechbkdqagefb9ge.a03.azurefd.net/-/media/files/oru/documents/saveenergyandmoney/shop-for-energy-money/how-to-choose-your-energy-service-company-esco/recopricetocomparenj.pdf",
+      "final_url": "https://www.coned.com/en/404",
+      "http_status": 404,
+      "retrieved_date": "2026-10-27",
+      "original_preserved": false,
+      "action": "one migration-route check;not retried"
+    },
+    {
+      "owner_stream": "supply",
+      "id": "bpu_2026_leaf_blocked",
+      "url": "https://publicaccess.bpu.state.nj.us/DocumentHandler.ashx?document_id=1415794",
+      "http_status": 403,
+      "original_preserved": false,
+      "action": "parent observed web403; unchanged route not retried"
+    },
+    {
+      "owner_stream": "supply",
+      "id": "historical2025_index_only",
+      "url": "https://www.oru.com/-/media/files/oru/documents/rates/new-jersey/schedule-for-electric-service.pdf",
+      "authority_status": "stale official web index reports21st leaf50 June2025; original URL serves current153pagebook; NOT executable2025 numeric proof",
+      "original_preserved": false
+    }
+  ],
+  "limitations": [
+    "Current153pagebook contains erroneous NY O&R PSC inserts includingphysical4and131\u2013132; these are excluded from NJauthority.",
+    "Earlier2025/2026partialfacts retained for research only; Jan2025May2026generation originals, SepNov2025reconciliation and preOct2026adoptedtransmission remainmissing.",
+    "AdoptedSept24,2026transmissionorder5pages approvesOct1,not petitionproposedSep1; no priornumericappendices. AugustSeptembertransmissiongap remains.",
+    "PTC annualJune2026May2027 heading does not certify unchangedrates; impliedJune-era surcharges .02181/.01245 differOct .02187/.01247. PTCnotOctwholebill.",
+    "Bergen versusPassaicSussex PTC differences measure avoidable base-transmission shoppingcredit; not county-varying full-service BGS. Tariff base transmission remains payableCentralWesternshoppers.",
+    "Proposed2026BGSnotice is retained ONLY for currentcounty/controlarea metadata; auctiontrancheprices, proposedrates and proposedPLSeligibility are excluded. Adoptedleaf52billing-demand500kWinany2calendaryearmonths controls CIEPeligibility; noJCPNovemberPLSrule.",
+    "Supplyenergy includescapacity/ancillary/ISOadmin. Transmissionbundle alreadyincludesRMR/EL05-121/TEC. Rideraggregate/components addonce. CBT/SUTalreadyincluded; no duplicate tax.",
+    "Reconciliation chargedforallusagebilledin indicatedmonth, distinctfromservice-intervalclock. Unsupportedpartial/nonlinear/seasoncrossingsreject.",
+    "Quantity/cashcent rounding and invoicelevel optimum not established; rawstudy arithmetic noexactprintedinvoiceclaim.",
+    "IndependentBRC925kWhannualizedmonthlyimpact and650kWhOcttransmissionincrement retained withdate/componentlimits; no matchedOctoberwholebillbenchmark.",
+    "Physical13unrevised2018datedmonthlyrule retained; secondindependentpre2025fullbookcopy not recovered. Historicalorders supportother tax/NEM/feecontinuity separately."
+  ],
+  "validation_limit": "Source-packet original preservation/hash/text checks only. No tests, simulations, OpenDSS, browser or productionacceptance proved by this ledger."
+}

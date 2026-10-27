@@ -22,6 +22,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 UTILITY_DOCS = {
+    "rockland_electric_new_jersey": ("docs/Rockland_Electric_New_Jersey.md", "docs/utility_sources/rockland_nj/sources.json", "test/test_rockland_nj.py"),
+    "jcpl_new_jersey": ("docs/JCPL_New_Jersey.md", "docs/utility_sources/jcpl_nj/sources.json", "test/test_jcpl_nj.py"),
+    "atlantic_city_electric_new_jersey": ("docs/Atlantic_City_Electric_New_Jersey.md", "docs/utility_sources/atlantic_city_electric/sources.json", "test/test_atlantic_city_electric.py"),
     "potomac_edison_maryland": ("docs/Potomac_Edison_Maryland.md", "docs/utility_sources/potomac_edison_md/sources.json", "test/test_potomac_edison_md.py"),
     "delmarva_maryland": ("docs/Delmarva_Maryland.md", "docs/utility_sources/delmarva_md/sources.json", "test/test_delmarva_md.py"),
     "pepco_maryland": ("docs/Pepco_Maryland.md", "docs/utility_sources/pepco_md/sources.json", "test/test_pepco_md.py"),
@@ -194,7 +197,7 @@ def nc_eligibility(root):
 def unit_scope(utility, plan, supply, enabled):
     if not enabled:
         return "No executable-plan acceptance claim; rejection/catalog coverage only"
-    if utility in ("ppl_electric_pennsylvania", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland"):
+    if utility in ("ppl_electric_pennsylvania", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey", "rockland_electric_new_jersey"):
         return "Independent dated ordinary default-supply/delivery/rider/tax benchmarks, effective-date and DST tests, numerical/symbolic parity and main-form queued-worker reconciliation; non-export representative studies, not customer-bill calibration"
     if utility in ("we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         return "Independent dated base/rider/tax bill benchmarks, TOU/holiday/DST, eligibility, numerical/symbolic parity and main-form queued-worker reconciliation; no measured customer-bill calibration claim"
@@ -259,7 +262,7 @@ def build_rows(catalogs=None, *, evidence=(), root=ROOT):
                         coverage_is_complete_bill=segment.get("is_complete_bill",True) if enabled else None,
                         coverage_scope=segment.get("scope","Complete bill supported within validated account restrictions" if enabled else "Unavailable"),
                         coverage_excluded_components=", ".join(segment["excluded_components"]) if segment.get("excluded_components") else "Dated historical taxes; see historical_tax_research_status.json" if segment.get("is_complete_bill") is False else "",
-                        coverage_basis="matching complete calendar service/billing months; partial and crossed-month cycles unsupported" if utility in ("ameren_illinois", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland") else "mixed service dates and bills-rendered components; see utility document" if utility.startswith("firstenergy_") or utility in ("dte_electric", "consumers_energy") else "bill date" if utility == "pseg" else "service dates",
+                        coverage_basis="October2026 complete ordinary Bergen/Eastern calendar cycles only; all-usage billed-month reconciliation, full monthly block; modeled clear-sky acceptance is not historical weather evidence" if utility == "rockland_electric_new_jersey" else "Complete ordinary calendar cycles; actual service-energy allocation for verified linear changes, whole monthly blocks retained" if utility == "jcpl_new_jersey" else "Exactly30 local service days inside one calendar month, season and filed regime; other proration unsupported" if utility == "atlantic_city_electric_new_jersey" else "matching complete calendar service/billing months; partial and crossed-month cycles unsupported" if utility in ("ameren_illinois", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland") else "mixed service dates and bills-rendered components; see utility document" if utility.startswith("firstenergy_") or utility in ("dte_electric", "consumers_energy") else "bill date" if utility == "pseg" else "service dates",
                         base_effective_start=plan.get("base_effective_start", "See independent component timeline in utility document"),
                         billing="implemented verified-charges subtotal; G transmission minimum/capacity and state sales tax excluded" if utility == "potomac_edison_maryland" and segment.get("is_complete_bill") is False else "implemented verified-charges subtotal; plan-specific fixed credits or state sales-tax calculation excluded" if utility in ("pepco_maryland", "delmarva_maryland") else "implemented verified-charges subtotal; account-specific relief refund excluded" if utility == "bge_maryland" and segment.get("is_complete_bill") is False else "implemented verified-charges subtotal; incomplete taxes" if segment.get("is_complete_bill") is False else "implemented, eligibility bounded" if enabled else "disabled",
                         dispatch="implemented subtotal optimum only; complete-bill optimum unavailable" if segment.get("is_complete_bill") is False else "implemented, primary optimum required" if enabled else "disabled",

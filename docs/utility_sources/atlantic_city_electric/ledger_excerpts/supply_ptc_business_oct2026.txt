@@ -1,0 +1,3 @@
+DERIVEDSELECTEDVISUALTRANSCRIPTION
+Original:https://www.atlanticcityelectric.com/cdn/images/v3/assets/blt407b5f1850a51a1b/bltfe573aecb1df8183/6abbf66715d5b72300b1064a/ACE_Bus_PTC_09-29-26.png?branch=prod_alias
+VISUALREADBACK: MGS-Ssummerenergy11.98c,winter11.30c;classaveragetransinclTECsummer2.56c,winter2.69c;recon0;PTCsummer14.54c,winter13.99c,annual14.17c. ClassaveragePTCnotperaccounttransmissiondemandbillingrate.

@@ -1,0 +1,565 @@
+SOURCE: https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/New%20Jersey/tariffs/BPU14-Parts-I-II-Eff-7-15-2024.pdf
+ORIGINAL: .cache/jcpl_new_jersey/sources/tax_rules/parts_i_ii_jul2024.pdf
+SHA256: d69386bee80bd0311142491443cd09ef2771b47243f59aab28bb530a0631d958
+Physical PDF pages one based; distinguish printed tariff sheets.
+
+=== PHYSICAL PDF PAGE 3 ===
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                    
+BPU No. 14 ELECTRIC - PART I      Original Sheet No. 2 
+ 
+ 
+A - Service Tariff:  This tariff for Service ("Tariff") of Jersey Central Powe r & Light Company,                    
+("Company"), is filed with the Boar d of Public Utilities of New Jersey ("BPU") pursuant to NJAC 14:3-1.3.  
+The Standard Terms and Conditions set forth in Part II of this Tariff state the conditions under which Service 
+is rendered, and govern the Company's provision of Full Service, Delivery Service and/or other Services to 
+the extent applicable.  The Service Classifications and Riders contained in Part III of this Tariff state the 
+basis for computing the charges to Customers for Servic e. Except where specifically modified by written 
+contract, all applicable provisions of this Tariff constitute, or are a part of, each service contract, express or 
+implied, and both the Customer and the Company shall be bound thereby. 
+ 
+B - Revision of Tariff:  The Company may at any time, and in any manner permitted by law and the 
+applicable rules and regulations of the BPU, supplement, terminate, change, or modify this Tariff or any 
+part thereof. 
+ 
+C - Exchange of Information:  The Company will, at the Customer's request, explain the provisions of its 
+Tariff and inform the Customer as to the conditions under which Service can be obtained from the 
+Company's system.  It is the responsibility of the Customer or his agent, before making his initial electrical 
+installation or planning material changes in an existing installation, to obtain from the Company information 
+regarding the characteristics of available Service, its designation of the point of attachment of the service 
+connection and meter location, and such other inform ation as may be necessary to assure that the 
+Customer's installation will be compatible with the facilities and Service the Company will supply. 
+ 
+D - Statements by Agents:  No representative of the Company has authority to modify any provision 
+contained in this Tariff or bind the Company by any promise or representation contrary thereto. 
+ 
+E - Agreements and Contracts:  Standard agreements to provide Service shall be in accordance with 
+Parts II and III of this Tariff.  As a condition for establishing, continuing, or resuming the provision of Service 
+in a situation where the Company in curs or will incur greater than norma l investment cost  or operating 
+expense in order to meet the Customer's special or  unusual Service requirements, or to protect the 
+Company's system from undue disturbance of voltage re gulation or other adverse effects, and in order to 
+avoid undue discrimination, the Company may require an agreement for a longer term than specified in the 
+applicable Service Classification, may require a contribution in aid of construction and may establish such 
+minimum charges and facilities charges as may be equitable under the circumstances. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+___________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+  
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+ 
+General Information 
+ 
+
+=== PHYSICAL PDF PAGE 20 ===
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                    
+BPU No. 14 ELECTRIC - PART II Original Sheet No. 10 
+ 
+ 
+ 
+3.01 Measurement of Electricity Consumption:   The Service provided to the Customer will be 
+measured separately for each Point of  Delivery by metering.  Bills w ill be based upon th e registration of 
+such metering equipment except as may be otherwise provided in this Tariff.  Such registration shall be 
+conclusive as measuring the quantity of Service receiv ed by the Customer except when (i) the metering 
+equipment fails to register or is determined to be regi stering outside the limits of accuracy prescribed by 
+the BPU, or (ii) the electric service registered on su ch meter was delivered outside the tenant-Customer’s 
+premises without the tenant-Customer’s permission (N.J.A.C. 14:4-7.8).. In some instances the Company 
+may, at its sole discretion, allow for unmetered Service.  (Also see Sections 3.15 and 3.16) 
+ 
+3.02 Separate Billing for Each Installation:  Service provided through each meter shall be billed 
+separately in accordance with this Tariff.  Conjunct ive billing, which is the combination of the quantities of 
+energy, demand, or other billing elements of two or more meters or Services into respective single quantities 
+for the purpose of billing as if the bill were for a single meter or Service, will not be permitted except where 
+more than one meter has been installed for Company o perating reasons.  (Also see Sections 1.02 and 
+3.15) 
+ 
+3.03 Meter Reading and Billing Period:  Unless otherwise specified, the charges for Service are stated 
+on a monthly basis.  Meters are read on a regular schedul e, as nearly as practicable every 30 days.  The 
+term "month" as used in this Tariff, generally me ans the period between any tw o consecutive regularly 
+scheduled meter readings.  The term "billing period" usually refers to the interval of time elapsing between 
+two consecutive meter readings, but it may mean other time  intervals, either actual or estimated, taken or 
+made for the purpose of computing the amount due to the Company from the Customer.  Bills to Customers 
+will normally be rendered monthly, but the Company ma y, in its sole discretion, read meters and render 
+bills generally, or to lim ited groups of Customers , on other than a monthly basis for either experimental 
+purposes or as a regular procedure, after gi ving reasonable notice to the affected Customers  and to the 
+BPU.  In such event the monthly charges stated in the applicable service classification shall be prorated to 
+conform to the new billing period.  (See NJAC 14:3-7.4) 
+ 
+3.04 Prorating of Monthly Charges:   All bills for periods other than 26 to 35 days inclusive will be 
+computed by prorating the monthly charges provided in the applicable service classifications on the basis 
+of the relationship between the number of days in the billing period and 30 days. 
+ 
+3.05 Estimated Bills:   Where the Company has not obtained a reading of the meter it may submit a bill 
+for the minimum charge, or estimate the amount of Service provided and submit an estimated bill.  Such 
+bill is subject to adjustment on the basis of the actual  Service provided as established by the next actual 
+meter reading, or for any unusual circumstances known to have affected the amount of Service provided. 
+ 
+The Company reserves the right to discontinue Serv ice when a meter reading has not been obtained for 
+eight months or more and after written notice is s ent to the Customer per NJAC 14:3-7.2.  The Company 
+will use all reasonable means to obtain a meter readi ng before discontinuing Service.  (Also see Section 
+7.03 and NJAC 14:3-3A.1) 
+ 
+ 
+ 
+__________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+ 
+Section 3 - Billings, Payments, Credit Deposits & Metering 
+
+=== PHYSICAL PDF PAGE 21 ===
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                    
+BPU No. 14 ELECTRIC - PART II               Original Sheet No. 11 
+ 
+3.06 Billing Adjustments:  An adjustment of charges due to the Company for Services provided by the 
+Company will be made if a meter is found to be registering as fast; more than two percent. The adjustment 
+will be made corresponding to the percentage error as found in the meter covering the entire period which 
+the meter registered inaccurately, provided such a pe riod can be determined.  If such period cannot be 
+determined, a correction shall be applied to ½ of the to tal amount of billing affected since the most recent 
+prior meter test. No adjustment shall be made for a period greater than the time during which the Customer 
+has received service through the meter in question. Billing adjustments will be in accordance with N.J.A.C. 
+14:3-4.6 and shall not be for a period of more than six years prior to the time the reason for the adjustment 
+became known to the Company.  
+3.07 Billing of Charges in Tariff:   Unless otherwise designated, the charges set forth in this Tariff shall 
+apply to Service rendered on and after the effective date specified in the applicable Service Classification.  
+3.08 Payment of Bills:  Bills for Service provided by the Company are payable when rendered and are 
+due within fifteen days of the mailing date of the bill or as otherwise prescribed by regulation NJAC 14:3-
+3A.3. They can be paid at any business office of the Company, to any duly authorized collector or collection 
+agency, by mail, or by electronic funds transfer. If a b ill is not paid by the date indicated on the bill, the 
+Company, on not less than ten days written notice, may discontinue service to the Customer after 27 days 
+following rendition of the bill or as otherwise prescribed by regulation.  (See NJAC 14:3-3A.3)    
+Whenever a residential Customer advises the Company  that the Customer wis hes to discuss a deferred 
+payment agreement because of a present inability to pay a total outstanding bill and/or a security deposit, 
+the Company will make a good faith effort to provid e the Customer with a reasonable deferred payment 
+agreement. Either prior to or after the discontinuanc e of service for non-payment, a residential Customer 
+may be required to pay a down payment of not more than 25% of the total outstanding bill due at the time 
+of the agreement.  Deferred payment agreements which extend more than two months must be in writing.  
+The Company is not required to offer or enter into more than one deferred payment agreement in a 12-
+month period, but the Company may, in its sole discretion, elect to offer more than one such agreement in 
+the same 12-month period. If the Customer defaults on any of the terms of the agreements, the Company 
+may discontinue service after providing the Customer  with a notice of discontinuance.  (See NJAC 14:3-
+7.7)  
+A Customer's failure to receive a bill shall not relieve  the Customer of any of the Customer's obligations 
+hereunder.  
+Where a non-residential Customer requests a deferred payment agreement, the agreement shall be limited 
+to a period of no more than three months, and the Customer may be required to make a partial payment at 
+the time of entering into the deferred payment agr eement. The amount of the partial payment shall be no 
+more than one half of the amount past due and owing at  that time. The existence of a deferred payment 
+agreement does not relieve the Customer of applicable monthly late payment charges.  (See Section 3.19)  
+3.09 Guarantee of Payment:  Where the credit of an Applicant for Service is impaired or not 
+established, or where the credit of a Customer has become impaired, a money deposit or other guarantee 
+satisfactory to the Company may be required as security fo r the payment of bills for Service before the 
+Company will commence or continue Service. If a residential Customer's Service has been terminated for 
+non-payment of bills, the Company may not condition restoration of Service on payment of a deposit unless 
+said deposit had been included as a charge on prior bills, or prior notice to the Customer had been given.  
+(See NJAC 14:3-3.4) 
+___________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+ 
+  
+ 
+Section 3 - Billings, Payments, Credit Deposits & Metering 
+
+=== PHYSICAL PDF PAGE 23 ===
+ 
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+ 
+                                    
+BPU No. 14 ELECTRIC - PART II      Original Sheet No. 13 
+ 
+ 
+3.14 Taxes on Contributions in Aid of Construction and Customer Advances or Deposits:   Any 
+contribution in aid of construction (“CIAC”), Customer advance or deposit, or other like amount received 
+from Customers which shall constitute taxable income as defined by the Internal Revenue Service may be 
+increased to include a payment equal to the applicable current taxes incurred by the Company as a result 
+of receiving such monies, less the net present valu e of future tax benefits related to the tax depreciation 
+guideline-life applicable to the property constructed with such monies, which for transmission or distribution 
+items shall be taken to be 20 years. The discount rate to be used for such present value calculation will be 
+the Company's last allowed overall rate of return. 
+ 
+3.15 Unmetered Service:   Where the Customer's equipment is of such a character and its operation is 
+so conducted that the Customer's use of service at the Point of Delivery is substantially invariable over the 
+period Service is supplied, thus permitting accurate determination of billing quantities by calculation based 
+on the electrical characteristics of such equipment, the Company may omit the installation of metering 
+equipment and, with the consent of the Customer, use the respective quantities, so determined, for billing 
+purposes under the applicable Service Classification. The Customer shall not make any change whatever 
+in the equipment or mode of operation thereof, Service to which is billed in the foregoing manner, without 
+first obtaining the Company's consent in writing. If the Customer changes equipment or mode of operation, 
+any Service to such changed equipment or operation shall be deemed unauthorized use and shall be 
+subject to discontinuance as provided elsewhere in this Tariff. 
+ 
+3.16 Non-measurable Loads:  Customers with equipment which creates unusual fluctuations, which 
+cannot be measured by standard metering facilities, shall have the maximum 15-minute demand, monthly 
+KWH, and reactive component calculated for such equipment, and added to any such measured quantities 
+for the Customer's remaining load for billing purposes under the applicable Service Classification. 
+ 
+3.17 Equal Payment Plan for Indi vidual Residential Dwelling Units:  The Company may, upon 
+request by a residential Full Service Customer, determine a payment plan of twelve equal monthly 
+payments for the Customer.  Monthly payments required under this plan may be revised by the Company 
+one time during the payment plan period as rate changes  or special conditions warrant.  If actual charges 
+are more or less than the estimated amounts, billing adjustments necessary to provide for the payment of 
+the actual charges due for Service rendered under this plan shall be made in the twelfth month of the plan, 
+or in the event the Equal Payment Plan is terminated , on the next bill. The Company may terminate this 
+plan at any time as to any Customer if any monthly bill rendered to such Customer under this plan is unpaid 
+when the next monthly bill is rendered.  (See NJAC 14:3-7.5) 
+ 
+3.18 Returned Payment Charge:   A charge of $15 will be assessed against a Customer's account 
+when a check or an electronic payment or other form  of funds transfer, which has been issued to the 
+Company, is returned by the bank as uncollectible,  or otherwise dishonored by the bank from which the 
+funds were drawn. 
+ 
+ 
+ 
+ 
+_________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+ 
+ 
+Section 3 - Billings, Payments, Credit Deposits & Metering 
+
+=== PHYSICAL PDF PAGE 38 ===
+ 
+ 
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                    
+BPU No. 14 ELECTRIC - PART II      Original Sheet No. 28 
+ 
+ 
+ 
+9.01 The following requirements and standards for connection of generating facilities located on 
+Customer's premises  to the Company system shall be met to assure the integrity and safe operation of the 
+Company system with no deterioration to the qualit y and reliability of service to other Customers . The 
+operation of the generation facility should be done in a competent manner, such that the Company system 
+as a whole is protected. 
+ 
+9.02 All small power producers or cogenerators shall make application to the Company for approval to 
+interconnect their facilities with the Company system. 
+ 
+9.03 The Company shall require the following as part of the application:   
+ 
+(a) Plans and specifications of the proposed installation. 
+(b) Single line diagram and details of the proposed protection schemes. 
+(c) Instruction manuals for all protective components. 
+(d) Component specification and internal wiring diagrams of protective components if not provided 
+in instruction manuals. 
+(e) Generator data required to analyze fault cont ributions and load current flows including, but not 
+limited to, equivalent impedances and time constants. 
+(f) All protective equipment's ratings if  not provided in instruction manuals. 
+(g) Evidence of insurance satisfactory to the Company. 
+(h) An agreement to indemnify and hold harmless the Company from any and all liability or claim 
+thereof for damage to property, including property of the Company and injury or death to 
+persons resulting from or caused by the presence, operation, maintenance or removal of such 
+installation. 
+ 
+9.04 The Company shall within 30 days from the re ceipt of all required data from the Applicant  either 
+approve or reject in writing the application for co nnection to the Company system. Rejection of an 
+application shall state with specificity the reasons fo r such rejection. Connection to the Company system 
+will be permitted only upon obtaining the formal approval of the Company. The Company may require the 
+execution of a formal application form and/or interconnection agreement by the Customer.   
+ 
+9.05    The installation of the gen eration facilities must be in comp liance with the requirements of the 
+National Electrical Code and all applicable local, St ate and federal codes or regulations. The installation 
+shall be undertaken and completed in a workman like manner, and shall meet or exceed industry 
+acceptance standards of good practice. The provisio ns of the National Electrical Safety Code and the 
+standards of the Institute of Electrical and Electr onics Engineers, National Electrical Manufacturers 
+Association and the American National Standards Institute shall be observ ed to the extent that they are 
+applicable. Prior to connection, the Company must be pr ovided with evidence that electrical inspection by 
+an authorized inspection agency indicates that the abov e items were completed in a manner satisfactory 
+to the Company. 
+ 
+ 
+__________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+ 
+Section 9 - General Interconnect Requirements for On-Site Generation 
+
+=== PHYSICAL PDF PAGE 39 ===
+ 
+ 
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                    
+BPU No. 14 ELECTRIC - PART II      Original Sheet No. 29 
+ 
+ 
+9.06 The generation facility shall have the following characteristics: 
+ 
+(a) Interconnection voltage shall be compatible an d consistent with the system to which the 
+Company determines the generation facility is to be connected. 
+(b) The generation facility shall produce 60 Hertz sinusoidal output compatible with the Company 
+system to which the facility is to be connected. 
+(c) The generation facility must provide and maintain automatic synchronization with the Company 
+system to which it is to be connected. 
+(d) The break point between the generation facilities producing single-phase or three-phase output 
+shall be in accordance with existing Company mo tor specifications or as otherwise specified 
+by the Company. 
+(e) At no time shall the operation of the facility result in excessive har monic distortion of the 
+Company wave form.  Total harmonic distortion greater than 5% shall be deemed excessive 
+and shall result in disconnection of the facility from the Company system. 
+(f) The installation of power fa ctor correction (“PFC”) capacitors at the facility may be required 
+under conditions to be determined by the Company when necessary to assure the quality and 
+reliability of service to other Customers.  The cost of PFC capacitors shall be borne by the 
+Customer. 
+(g) The cost of supplying and installing 15-minut e integrated generation output metering, and any 
+other special facilities or devices occasioned by the generation facility which the Company 
+may deem necessary on its system, such as telemetry and control equipment, shall be borne 
+by the Customer. 
+ 
+9.07 The Customer shall provide automatic disconnect ing devices with appropriate control devices which 
+will isolate the facility from the Company system within a time period specified by the Company for, but not 
+necessarily limited to, the following conditions: 
+ 
+(a) A fault on the Customer's equipment. 
+(b) A fault on the Company system. 
+(c) A de-energized Company line to which the Customer is connected. 
+(d) An abnormal operating voltage or frequency. 
+(e) Failure of automatic synchronization with the Company system. 
+(f) Loss of a phase or improper phase sequence. 
+(g) Total harmonic content in excess of 5%. 
+(h) Abnormal power factor. 
+ 
+The devices shall be so designed and constructed to pr event reconnection of the facility to the Company 
+system until the cause of disconnection is corrected. 
+ 
+9.08 The Company shall reserve the right to specify setti ngs of all isolation devices which are part of the 
+generation facility. 
+ 
+__________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+ 
+Section 9 - General Interconnect Requirements for On-Site Generation 
+
+=== PHYSICAL PDF PAGE 40 ===
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                    
+BPU No. 14 ELECTRIC - PART II      Original Sheet No. 30 
+ 
+ 
+ 
+9.09 The Company shall require initial inspection and testing as well as subsequent inspection and 
+testing of the facility's isolation and fault protection systems at the Customer's expense on an annual basis. 
+Maintenance of these systems must be performed and documented by the Customer at specified intervals 
+to the satisfaction of the Company. The Company shall reserve the right to disconnect the Customer and/or 
+the generation equipment from the Company system for fa ilure to comply with these inspections, testing 
+and maintenance requirements. 
+ 
+9.10 The Customer is solely responsible for provid ing adequate protection for the equipment located on 
+the Customer's side of the interconnection system. Th is protection shall include, but not be limited to, 
+negative phase sequence voltage on three-phase systems. 
+ 
+9.11 The Customer shall provide a Company-controlled disconnecting device providing a visible break 
+on the Company side of the interconn ection system. The Company shall require that this device accept a 
+Company-provided padlock. The Company may also require manual operation of the device when required. 
+The Company shall require this device to be labeled "Cogeneration Disconnection Switch" and located 
+outside the facility such that 24-hour access is possible. 
+ 
+9.12 The Customer shall agree to grant access to the Company's authorized representative during any 
+reasonable hours to install, inspect and maintain the Company's metering equipment. 
+ 
+9.13 The Customer must satisfy, and shall be subject to , all terms and conditions of the Company's Tariff 
+for Service. 
+ 
+9.14 No wind generator, tower structure or device shall be installed at a location where, in the event of 
+failure, it can fall in such a manner as to contact, land upon, or interfere with any Company lines or 
+equipment. 
+ 
+9.15 The Customer shall maintain or cause to be maintained the generator and its associated structures, 
+wiring and devices in a safe and proper operating condition so that the installation continues to meet all the 
+requirements contained herein. 
+ 
+9.16 When and if any controversy arises as to t he interpretation and application of these requirements 
+and standards, the matter may be referred to the BPU for determination. 
+ 
+9.17 The Company reserves the right to modify or replace the Customer's service meter to prevent 
+reverse registration from the Customer's generation facility.  Customers desiring to sell power to the 
+Company should refer to Rider QFS - Cogeneration and Small Power Production Service. 
+ 
+ 
+ 
+ 
+ 
+___________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+ 
+Section 9 - General Interconnect Requirements for On-Site Generation 
+
+=== PHYSICAL PDF PAGE 47 ===
+ 
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+                                                                                                                                           
+BPU No. 14 ELECTRIC - PART II      Original Sheet No. 37  
+ 
+[Please Note the use of lower case “customer” or “customers” tracks the form of usage in the 
+applicable Board regulations, and is included within the meaning of the term Customer as defined 
+in this Tariff.] 
+12.01   General:  For the purpose of this Section of the Tariff for Service a Customer-generator is an 
+electricity customer such as an industrial, commercia l or residential customer that generates electricity 
+using Class 1 renewable resources as defined in NJAC 14:8-1.2 on the customer’s side of the meter.  Net 
+metering, as defined in Section 12.02 below, provides  for the billing or crediting, as applicable, of energy 
+usage by measuring the difference between the amount  of electricity delivered by the Company to a 
+Customer-generator, as defined in Section 12.02 below, in a given Billing Month and the electricity delivered 
+by a Customer-generator into the Company distribution system. The Company reserves the right to select 
+and supply the type of meter(s) that will enable the net metering of electricity as described above.  
+The Customer generator shall be responsible for all interconnection costs as defined in NJAC 14:8-5.7 et 
+seq., which shall be in addition to any other charges applicable to meet service requirements. For customers 
+eligible for Net Metering the term usage as applied in Section 2.05 shall mean net usage as determined by 
+Net Metering. It is the Customer-g enerator’s responsibility to know a ll of the rules associated with the 
+provision of net metering service.  
+12.02 Limitations and Qualifications for Net Metering:   “Net metering” means a system of metering 
+and billing for electricity in which the Company 1) credits a customer-generator at the full retail rate for each 
+kilowatt-hour produced by a Class 1 renewable energy  system installed on the customer-generator’s side 
+of the electric revenue meter, up to the total amount of electricity used by that customer-generator during 
+an annualized period determined under NJAC 14:8-4.3 and 2) compensates the customer-generator at the 
+end of the annualized period determined under NJAC 14:8-4.3 for any remaining credits, at a rate equal to 
+the avoided cost of wholesale power. To qualify fo r Net Metering, a Customer-generator must generate 
+Class 1 renewable en ergy as defined in NJAC 14:8-1.2. Th e Company will offer net metering to any 
+customer that generates Class 1 renewable electricity on the customer’s side of the meter provided that the 
+generating capacity of the Customer-generator’s facility does not exceed the amount of electricity supplied 
+by the Company over an Annualized period (as defined in NJAC 14:8-4.3).  
+12.03   Limitations and Qualifications for Aggr egated Net Metering (N .J.S.A. 48:3-87e(4)) and 
+(N.J.A.C 14:8-7):  To qualify for Aggregated Net Metering a customer must be: a state entity, school district, 
+county, county agency, county authorit y, municipality, municipal agency, or municipal authority that has 
+multiple facilities with metered accounts to be k nown collectively as the “Aggregated Meters.”  The 
+Aggregated Meters must be: located within the Company’s territory; served under the same rate schedule; 
+all served by either Basic Generation Service or by the same Third Party Supplier; and located within the 
+customer’s territorial jurisdiction or, for a State entit y, located within 5 miles of one another. One of the 
+Aggregated Meters must operate a Class 1 solar elec tric power generation system using a net metered 
+account as defined in Section 12.02, Limitations and Qualifications for Net Metering, except for the 
+annualized electric generation capability limitation. The Qualified Customer-Generator must be located on 
+property owned by the customer. The size of t he Qualified Customer-Generator for Aggregated Net 
+Metering is defined in Section 12.03.a, Customer-G enerator Sizing Qualifications for Aggregated Net 
+Metering. 
+a) Customer-Generator Sizing Qualifications for Aggregated Net Metering:   The annualized 
+electric generation capability of the customer’s solar generating system, located at the net metered 
+location cannot exceed the amount of electricity supplied by the electric power supplier or basic 
+generation service provider to all of the A ggregated Meters over an annualized period.  The 
+Aggregated Meters used to determine the maxi mum annualized electric generation capability of 
+the customer’s solar generating system may not be used to determine the maximum annualized 
+electric generation capab ility of other aggregated net metered facilities nor become a Qualified 
+Customer-Generator as defined in Section 12.02, Limitations and Qualifications for Net Metering.   
+___________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+Section 12 – Net Metering Installations 
+
+=== PHYSICAL PDF PAGE 50 ===
+JERSEY CENTRAL POWER & LIGHT COMPANY 
+ 
+                                                                                                                                           
+BPU No. 14 ELECTRIC - PART II      Original Sheet No. 40  
+ 
+12.05 Installation Standards:   A Customer-generator shall comply with the requirements of the 
+Company which are set forth in detail in the Applicat ion/Agreement Parts 1 and 2 for Level 1 Projects or 
+the Interconnection Application and Agreement for Level 2 or Level 3 Projects both of which are approved 
+by the New Jersey Office of Clean Energy and available at www.firstenergycorp.com. In addition, the 
+Customer-generator shall be responsible for meeting all applicable safety and power quality standards as 
+set forth below. 
+The Customer-generator’s facility shall comply with all applicable safety and power quality 
+standards specified by the National Electrical Code, In stitute of Electrical and Electronics Engineers, and 
+accredited testing institutions, such as Underwriters Laboratories. The Customer-generator’s facility should 
+be constructed and installed in accordance with the State of New Jersey Uniform Construction Code 
+requirements for electrical installations, UL  1741 and the IEEE Standard 1547. Net Metering systems 
+served by network distribution systems, shall comp ly with standards established by the Company and 
+approved by the BPU in addition to the aforementioned applicable safety and power quality standards and 
+all other requirements in NJAC 14:8-5.2 et seq 
+ 
+12.06 Initiation of Service:  Prior to interconnecting with the Company’s distribution system the 
+Customer-generator is required to provide the Comp any with an Interconnection Application/Agreement 
+Parts 1 and 2 for Level 1 projects or an Interconnection Application and Agreement for Level 2 or Level 3 
+Projects and must also pay all appropriate charges as detailed in these applications. Additionally, the 
+Company may, at its option, inspect the interconnection prior to the initiation of Net Metering service. 
+Initiation of service will become effective on the Customer-generator’s first regularly scheduled 
+meter reading date that is at least twenty (20) days after the Customer-generator elects to take service 
+under or to be billed under or in accordance with this provision, by executing an Interconnection Application, 
+but in no case prior to the installation of the necessary meter(s), and shall terminate at a regularly scheduled 
+meter reading date that is at least twenty (20) da ys following the receipt by the Company of Customer-
+generator’s notification of termination or from the date that the Company deter mines that the customer-
+generator is no longer eligible for net metering service pursuant to NJAC 14:8-4.1 et seq. 
+ 
+12.07 Net Metering Billing:  In any Billing Month during an Annual ized period, where the amount of 
+electricity delivered by the Customer-generator plus any kilowatt-hour credits held over from the previous 
+Billing Month or Billing Months exceeds the electricity supplied by the Customer-generator’s electric supplier 
+or basic generation service provider, as applicable, the excess kilowatt-hours shall be credited to the 
+Customer-generator in the next Billing Month durin g the Annualized period. At  the end of the Annualized 
+period, the Customer-generator will be compensated for any remaining credits by the Customer-generator’s 
+electric supplier or basic generation service provider, as applicable, at the avoided cost of wholesale power 
+(as defined at NJAC 14:8-4.2). 
+A Customer-generator shall have a one-time opportunity to select a Billing Month as the start of the 
+Customer-generator’s Annualized period. This select ion will become effective on the first regularly 
+scheduled meter reading date that is at  least twenty (20) days after t he Customer-generator notifies the 
+Company of the Customer-generator’s selection under the one-time opportunity provided in NJAC 14:8-4.3 
+(f) – (j). 
+In the event that a Customer-gen erator changes suppliers, the electric power supplier or basic 
+generation service provider with whom service is terminating shall treat the end of the service period as if 
+it were the end of the Annualized period and shall co mpensate the Customer-generator for any remaining 
+credits at the avoided cost of wholesale power. 
+ 
+12.08 Program Availability:  The Company may be authorized by the BPU to cease offering net metering 
+whenever the total rated generating capacity owned and operated by Customer-generators on a Statewide 
+basis equals 5.8 percent of total annual kilowatt-hour sales in the State. 
+__________________________________________________________________________________ 
+Issued: May 28, 2024               Effective: June 1, 2024 
+  
+Filed pursuant to Orders of Board of Public Utilities 
+Docket Nos. ER23030144 and PUC 3346-23 dated February 14, 2024  
+ 
+Issued by William Douglas Mokoid, President 
+300 Madison Avenue, Morristown, NJ 07962-1911 
+  
+Section 12 – Net Metering Installations 

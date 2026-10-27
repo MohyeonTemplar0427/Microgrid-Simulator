@@ -1,0 +1,831 @@
+SOURCE: https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6abe603b9c1713f986c691b5/NJ_Tariff_Section_IV_Eff._10.01.2026_EECEC_T_.pdf?branch=prod_alias
+ORIGINAL: .cache/atlantic_city_electric/sources/delivery/section_iv_oct2026.pdf
+SHA256: b46c4e1786734a0e4307f47cfbada8818262601b65270ebc026dfd94e06016d3
+Physical PDF pages are one based; printed sheet numbers appear in the source text.
+
+
+=== PHYSICAL PDF PAGE 7 ===
+ 
+ATLANTIC  CITY ELECTRIC COMPANY  
+BPU NJ No. 11  Electric  Service  - Section IV  Sixty-Sixth  Revised  Sheet  Replaces Sixty-Fifth  Revised  Sheet  
+No. 5 
+ 
+RATE SCHEDULE RS  
+(Residential  Service)  
+ 
+AVAILABILITY 
+Available for  full domestic service to  individually metered  residential customers, including  rural domestic customers, 
+engaged  principally in agricultural pursuits. 
+ 
+ SUMMER 
+June  Through  
+WINTER 
+October  Through  May  
+Sep tember   
+ 
+Delivery Service  Charges:   
+Customer  Charge ($/Month) $6.75 $6.75 
+Distribution Rates ($/kWH)   
+First Block $0. 095030 $0. 086485 
+(Summer  <= 750  kWh;  Winter<= 500kWh)   
+Excess kWh $0. 111568 $0. 086485 
+Residential TOU Option 
+  
+Distribution Rates ($/kWh) 
+  
+On Peak $0.244459 $0.223230 
+Off Peak $0.065170 $0.055860 
+On Peak Hours are considered to be 4:00 PM to 
+9:00 PM, Monday through Friday.  
+  
+ 
+Societal Benefits Charge ($/kWh) 
+Clean Energy  Program                                                                       See  Rider  SBC 
+Universal Service Fund                                                                      See  Rider  SBC 
+Lifeline                                                                                                    See  Rider  SBC 
+Uncollectible Accounts                                                                         See  Rider  SBC 
+Transition Bond Charge (TBC)  ($/kWh)                                                     See  Rider  SEC 
+Market  Transition Charge Tax  (MTC-Tax)  ($/kWh)                                  See  Rider  SEC 
+Transmission Service Charges  ($/kWh): 
+Transmission Rate                                                                            $0.037688                      $0.037688 
+Reliability  Must Run  Transmission  Surcharge                                                   $0.000000  
+Transmission Enhancement Charge ($/kWh) 
+Basic  Generation Service  Charge ($/kWh) 
+Energy Efficiency and Clean Energy Charge ($/kWh)   
+Infrastructure Investment Program  Charge 
+Conservation Incentive  Program  Recovery Charge 
+See  Rider  BGS 
+See Rider  BGS 
+See Rider  EECEC 
+  See Rider  IIP 
+ See  Rider  CIP 
+ 
+ 
+CORPORATE BUSINESS TAX  (CBT) 
+Charges  under  this rate  schedule include a component for  Corporate  Business Taxes  as  set  forth  in Rider  CBT. 
+ 
+NEW JERSEY SALES AND USE TAX (SUT) 
+Charges  under  this rate  schedule include a component  for  New  Jersey  Sales  and Use Tax  as  set  forth  in Rider  SUT. 
+ 
+ 
+ 
+ 
+Date of Issue:  September 29, 2026                                                 Effective  Date:  October 1, 2026  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER25070444 & ER26070406 
+
+=== PHYSICAL PDF PAGE 8 ===
+ 
+ATLANTIC  CITY ELECTRIC COMPANY  
+BPU NJ No. 11  Electric  Service  - Section IV          Seventh Revised  Sheet  Replaces  Sixth  Revised  Sheet  No. 6
+ 
+ 
+ 
+ 
+TERM  OF CONTRACT  
+ 
+RATE SCHEDULE RS  (Continued) 
+(Residential  Service) 
+None,  except  that  reasonable notice of  service discontinuance will be required. 
+ 
+TERMS AND  CONDITIONS 
+See  Section  II  inclusive for  Terms  and  Conditions  of  Service. 
+ 
+"In  accordance with  P.L.  1997,  c. 162,  the  charges  in this Rate Schedule includes  provision for  the  New  Jersey  
+Corporation  Business Tax  and  the  New  Jersey  Sales  and  Use Tax.  When billed  to  customers exempt  from  one  or  
+more of these taxes, as  set  forth  in Riders CBT and  SUT, such charges  will be reduced  by  the  relevant  amount  of 
+such taxes  included  therein." 
+ 
+PRICE TO COMPARE 
+A customer  may  choose to receive electric supply from a third party  supplier  as  defined in Section  11 of  the  
+Standard Terms  and Conditions  of  this Tariff.   A customer  who receives  electric supply from  a third party  supplier  
+will not  be billed  the  Basic Generation  Service Charges or  the  Transmission Service Charges.  Customers eligible 
+for  BGS CIEP who  receive supply from a third party  supplier  will continue  to be  billed  the CIEP Standby  Fee . 
+ 
+ELECTRIC  VEHICLE BASIC GENERATION SERVICE CUSTOMERS  ONLY 
+Electric Vehicle Basic Generation Service (“BGS”) Customers Only: Based upon  the  following eligibility  criteria,  
+Atlantic City  Electric Company  (“ACE”) residential customers who  receive their electric supply through BGS may elect 
+to  receive a net  off-peak  BGS energy  credit exclusively for  their electric vehicle usage.   This option,  upon  ACE 
+approval into the  program,  will be  issued  twice a year  as  an  off-bill credit directly to the customer  by  check, after  the 
+entire usage has  been billed at  the  RS rate. 
+ 
+A customer  eligible for  participation  under  this special provision must be  an  ACE Residential customer  taking  service 
+under  the  RS  rate  schedule, install or  utilize ACE  approved  smart charging  equipment  and  network technology, and  
+agree  to share the  Electric Vehicle Charging Data with  ACE  in a manner  specified  by  ACE.  In  order  for  the  customer  
+to  receive a credit,  data  must be  available to  ACE and  the  proper  services  must be  in place to  make this rate  available.  
+If  data  is not  available for  any  reason, a customer  may  not  receive a credit for  the  period  that  ACE does  or  did not  have 
+access to  the  required data. 
+ 
+The  electric vehicle credit will be  calculated by  ACE’s program  administration  team  twice a year  using  the  electric 
+vehicle usage off-peak  minus  the  on-peak  electric vehicle usage multiplied  by  $.02/kWh  (ex. (off-peak  kWh  – on-peak  
+kWh)*.02)  for  the corresponding billing  period.   If  the customer’s on-peak  usage  is higher  than  off-peak  usage  for  the 
+billing  period,  no  credit for  the  corresponding  billing  period  will be  provided.  BGS on-peak  hours are 8:00  A.M.  to  8:00 
+P.M.,  Monday  through  Friday. All other  hours are considered off-peak  hours. 
+This solution  will fall under  the  ACE  EVsmart umbrella of  programs. 
+RESIDENTIAL TOU OPTION 
+This option is available to all residential customers except those without activated Advanced Metering Infrastructure 
+(AMI) capable of registering interval usage and customers who have selected the BGS-TOU option.  
+ 
+BILLING MONTHS AND RATING PERIODS 
+ Summer (June 1 through September 30) On Peak hours  will be between the hours of 4:00 pm and 9:00 pm, 
+excluding weekends and holidays 
+ Winter (October 1 through May 31) On Peak hours wi ll be between the hours of 4:00 pm and 9:00 pm, excluding 
+weekends and holidays.  
+ 
+Date of Issue:   September 29, 2026                                               Effective  Date:  October  1,  2026 
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER25070444 
+
+=== PHYSICAL PDF PAGE 12 ===
+ATL AN TIC  CI TY ELECTRIC COMPANY  
+ 
+ 
+BPU NJ No. 11  Electric  Service  - Section IV Sixty-Seventh  Revised  Sheet  Replaces  Sixty-Eighth  Revised 
+Sheet  No. 8 
+ 
+ 
+ 
+ 
+AVAILABILITY 
+ 
+RATE SCHEDULE MGS-SECONDARY 
+(Monthly  General  Service)
+Available at  any  point  within the  Company’s system  where facilities  of  adequate  character  and capacity  exist for  the  
+entire electric service requirements  of  any  customer  delivered  at  one point  and metered at  or  compensated to  the  
+voltage of  delivery.  This schedule is not available to  residential customers. 
+ 
+ 
+ 
+ 
+Delivery Service  Charges: 
+SUMMER 
+June  Through  September  
+WINTER 
+October  Through  May  
+Customer  Charge 
+Single Phase 
+ 
+$13.99 
+ 
+$13.99  
+Three  Phase $16.27 $16.27  
+Distribution Demand Charge (per  kW)  $3.89 $3.19  
+Reactive Demand Charge 
+(For  each kvar  over  one-third of  kW demand) 
+Distribution Rates ($/kWh) 
+$0.76  
+ 
+$0.061560  
+$0.76  
+ 
+$0.054488  
+ 
+Societal Benefits Charge ($/kWh) 
+Clean Energy  Program                                                                                     See  Rider  SBC 
+Universal Service Fund                                                                                     See  Rider  SBC 
+Lifeline                                                                                                                  See  Rider  SBC 
+Uncollectible Accounts                                                                                       See  Rider  SBC 
+Transition Bond Charge (TBC)  ($/kWh)                                                                   See  Rider  SEC 
+Market  Transition Charge Tax  (MTC-Tax)  ($/kWh)                                                See  Rider  SEC 
+CIEP Standby Fee  ($/kWh)                                                                                          See  Rider  BGS
+Transmission  Demand  Charge  ($/kW   for  each   kW   in  
+excess  of 3 kW)  
+$6.88                                   $6.49 
+Reliability Must  Run Transmission Surcharge ($/kWh)                                           $0.000000 
+Transmission Enhancement Charge ($/kWh) 
+Basic  Generation Service  Charge ($/kWh) 
+Energy Efficiency and Clean Energy Charge ($/kWh) 
+Infrastructure Investment Program  Charge 
+Conservation Incentive  Program  Recovery Charge 
+See  Rider  BGS 
+See  Rider  BGS 
+See  Rider  EECEC  
+See  Rider  IIP   
+See  Rider  CIP 
+ 
+The minimum monthly bill shall be equal to the applicable customer charge plus any applicable adjustment. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:  September 29, 2026                                                Effective  Date:  October 1, 2026  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER26070406 
+
+=== PHYSICAL PDF PAGE 13 ===
+ 
+ATLANTIC  CITY ELECTRIC COMPANY  
+BPU NJ No. 11  Electric  Service  - Section IV                   Third  Revised  Sheet  Replaces Second  Sheet  No. 9 
+RATE SCHEDULE MGS-SECONDARY (Continued) 
+(Monthly  General  Service) 
+ 
+CORPORATE BUSINESS TAX  (CBT) 
+Charges  under  this rate  schedule include a component for  Corporate  Business Taxes  as  set  forth  in Rider  CBT. 
+ 
+NEW JERSEY SALES AND USE TAX (SUT) 
+Charges  under  this rate  schedule include a component for  New  Jersey  Sales  and  Use Tax  as  set  forth in Rider 
+SUT. 
+ 
+RELIGIOUS  HOUSE OF WORSHIP SERVICE 
+When electric service is supplied  to  a customer  where the  primary use of  the  service is for  public religious  services  
+and  the  customer  applies  for  and  is eligible for  such service,  the  customer's  monthly bill will be  subject to  the  
+following  credits 
+ 
+Energy Credit 
+For  service rendered  June thru September, inclusive:    $0.019677  per  kWh  for  each of  the  first 300 kWhs  used 
+per  month. 
+For  service rendered  October  thru May, inclusive:       $0.015706 per  kWh  for  each of  the first 300  kWhs  used 
+per  month. 
+ 
+Demand Adjustment 
+For  service rendered  all months  of  the  year, metered demand will be decreased  by 7 kW to  arrive at billing 
+demand. 
+ 
+The  customer  will be  required  to  sign  an  Application  for Religious  House of  Worship Service certifying eligibility. 
+The  customer  shall furnish satisfactory proof of  eligibility  for  service under  this special provision to  the 
+Company, who  will determine  eligibility. 
+ 
+VETERANS’ ORGANIZATION  SERVICE 
+Pursuant to  N.J.S.A 48:2-21.41,  when electric service is delivered to  a customer  that  is a veterans’ organization, 
+and  where the  primary use of  the service is dedicated to serving  the  needs  of  veterans  of  the armed  forces, and  the 
+customer  applies  for  and is eligible for  such service. 
+ 
+Each customer  shall be  eligible for  billing  under  this Special Provision  upon  submitting  an  Application  for  Veterans’ 
+Organization Service under  this rate schedule and by  qualifying as  a “Veterans’ Organization”  as  defined  by  
+N.J.S.A. 48:2-21.41  as  “an  organization  dedicated to  serving  the  needs  of  veterans of  the  armed forces  that:  is 
+chartered  under  federal law, qualifies  as  a tax  exempt organization  under  paragraph  (19)  of  subsection  (c) of  
+section  501  of  the  federal Internal Revenue Code  of 1986,  26  U.S.C. s.501 (c)(19), or  that  is organized  as  a 
+corporation  under  the  ‘New Jersey  Nonprofit Corporation  Act,’ N.J.S.15A:1-1 et seq.”   Under  N.J.S.A. 48:  2-21.41,  a 
+qualified  Veterans’ Organization shall be  charged  the  residential rate  for  service delivered  to the property  where the  
+Veterans’ Organization primarily operates, if the residential rate  is lower  than  the  commercial rate for  service at  that  
+property.  The customer  shall furnish satisfactory proof  of  eligibility  of  service under this special provision to the 
+Company, who  will determine  eligibility. 
+ 
+If  a customer’s application  is approved  by  the Company, the  customer  shall be  eligible under  this Special Provision  
+beginning  with the billing  cycle that  commences  after  receipt  of  the  Application. 
+ 
+The  customer  will continue to  be  billed  on  this rate schedule.   Each month,  during  the  billing  process, a comparison  
+will be made  to  the  RS rate schedule,  and  if the  RS rate schedule is lower  for  the  distribution  portion  of  the bill, a 
+credit will be placed  on  the  customer’s account.   If  the RS  rate is not  lower, the  customer  will be  billed  under  this 
+rate schedule and no corresponding credit will be p laced on the customer’s account.  
+  
+Date of Issue:   November 21, 2025                                          Effective  Date:  December  1,  2025 
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 
+
+=== PHYSICAL PDF PAGE 14 ===
+ 
+ATLANTIC  CITY ELECTRIC COMPANY  
+BPU NJ No. 11  Electric  Service  - Section IV Eight  Revised  Sheet  Replaces  Seventh  Revised  Sheet  No. 10 
+RATE SCHEDULE MGS-SECONDARY (Continued) 
+(Monthly  General  Service) 
+ 
+DEMAND  DETERMINATION  FOR BILLING  
+Demand  shall be  as  shown or  computed  from  the  readings  of Company's  demand  meter  during  the  fifteen  minute  
+period of  customer's  greatest use during  the  month.   Demand values  used for  billing  will be  rounded  to  the  nearest 
+tenth  of  a kW. 
+ 
+Where no  demand meters are installed, a customer's  demand  will be  calculated  for  the  period  June 1st thru 
+September  30th,  inclusive.   This demand  will be estimated  by  dividing  the  kWh  use by  150. 
+ 
+Where demand is expected to  exceed 100 kilowatts, the Company  may  measure reactive demand  as  the greatest 
+rate  of  reactive volt-ampere hour  use during  a fifteen  (15)  minute  interval during  the month. 
+ 
+Reactive demand values  used  for  billing  will be rounded  to  the  nearest tenth  of  a kvar. 
+ 
+The  provisions  of this paragraph  are not  available to new  service locations  connected  on  or  after  January 1,  1983. 
+Where a customer  has  permanently installed  electrical space heating  equipment  of  less than  the  total of all other  
+connected load  and where such electrical heating equipment represents  the sole source of  space and comfort 
+heating, such equipment  may  be  so connected as  to exclude  its  contribution  to  measured  demand. 
+ 
+ENERGY DETERMINATION  FOR BILLING  
+Energy  values  used  for  billing  will be  rounded  to  the  nearest hundredth  of  a kWh. 
+ 
+TERM  OF CONTRACT  
+A customer  may  elect to  have service discontinued  at  any  time  after  giving due  notice to the Company  of  its  
+intention  to do so,  provided that  all requirements  and  obligations  under  the  tariff  of  the  Company  have been  met. 
+ 
+STANDBY SERVICE 
+See  Rider  STB 
+ 
+FIXED LOADS  
+Customers with  fixed  attached  loads  may  request to receive service on  a computed  kilowatt-hour  basis.  The  
+Company, in its  sole discretion,  shall determine to  grant such request.   Such customers shall agree  to pay  a 
+monthly bill equivalent  to the computed  kilowatt-hour  usage  for  the  billing  period,  said usage  to  be  determined  
+mutually by  the Company  and  customer  and specified  in the  contract.   No  changes  in attached  load may  be  made 
+by  the  customer  without  the  written permission of  the  Company  and customer  shall allow  the  Company  access to  its  
+premises  to assure conformance herewith. 
+ 
+TERMS AND  CONDITIONS 
+See  Section  II  inclusive for  Terms  and  Conditions  of  Service. 
+ 
+"In  accordance with  P.L.  1997,  c. 162,  the  charges  in this Rate Schedule includes  provision for  the  New  
+Jersey  Corporation  Business Tax  and  the New Jersey  Sales  and Use Tax.  When  billed to  customers 
+exempt  from  one  or  more of these taxes, as  set  forth  in Riders CBT and  SUT, such charges  will be reduced  
+by  the  relevant  amount  of  such taxes  included  therein." 
+ 
+PRICE TO COMPARE 
+A customer  may  choose to receive electric supply from a third party  supplier  as  defined in Section  11 of  the 
+Standard Terms  and Conditions  of  this tariff.   A customer  who receives  electric supply from  a third party  supplier  will 
+not  be billed  the  Basic Generation Service Charges  or  the  Transmission Service Charges.  Customers eligible for  
+BGS CIEP who receive supply from a third party supp lier will continue to be billed the CIEP Standby Fe e.  
+  
+Date of Issue:   November  25, 2025                                                                Effective  Date:  December  1,  2025 
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 
+
+=== PHYSICAL PDF PAGE 43 ===
+ 
+ATLANTIC  CITY ELECTRIC COMPANY  
+BPU NJ No. 11  Electric  Service  - Section IV    Forty-Sixth  Revised  Sheet  Replaces Forty-Fifth  Revised  
+Sheet  No. 34
+ 
+ 
+ 
+AVAILABILITY 
+RIDER STB-STANDBY SERVICE 
+(Applicable  to MGS, AGS, TGS and SPP Rate Schedules) 
+Standby Service is defined as a charge imposed by an electric public utility upon a distributed generation facility 
+for the recovery of costs necessary to make energy available to the generation facility during a customer facility 
+power generation outage. The additional electrical energy available is defined as the customer’s Generating 
+Capacity.  The Generating Capacity is the amount of the customer owned electrical energy source, as specified by 
+the installed name plate capacity, available and intended for the customer’s use.  
+This rider is required when non-intermittent electric or other power requirements are supplied by the customer’s 
+own power-producing equipment, with a Generating Capacity available to the customer during a power outage 
+greater than 100 kilowatts (kW). 
+  
+ DEMAND  DETERMINATION 
+ 
+The  monthly billing demand  shall be  as  defined  under  the  "Demand  Determination" section  of  the  applicable 
+rate  schedule. 
+ 
+The  Standby  Service Demand  shall be  the  "Generating  Capacity" as  defined  above. 
+ 
+During a billing month in which the demand determination is during a  forced outage or  mutually agreed  upon 
+customer's  scheduled maintenance shutdown, the Standby Service Charge may be waived upon request with the 
+Company’s approval. 
+ 
+STANDBY SERVICE CHARGE 
+This  rider imposes  a Standby Service  Charge at  the following voltage levels: 
+ 
+Tariff Transmission Stand By Rate Distribution Stand By Rate 
+ ($/kW)  ($/kW) 
+MGS-Secondary and $1.03  $0.52 
+MGS-SEVC   
+MGS Primary $0.74  $0.26 
+AGS Secondary $0.89  $2.19 
+AGS Primary $0.91  $1.97 
+TGS Sub Transmission $0.60  $0.00 
+TGS Transmission $0.60  $0.00 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:  September 29, 2026                                                        Effective  Date:  October 1, 2026  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the BPU 
+Docket  No. ER26070406 
+
+=== PHYSICAL PDF PAGE 44 ===
+ 
+ATLANTIC  CITY ELECTRIC COMPANY  
+BPU NJ No. 11  Electric  Service  - Section IV                   Third  Revised  Sheet  Replaces Second  Sheet  No. 35 
+ 
+RIDER STB-STANDBY SERVICE (Continued) 
+(Applicable  to MGS, AGS, TGS and SPP Rate Schedules)  
+ 
+TERMS AND  CONDITIONS 
+ 
+   Generating Capacity may be revised with the Company’s approval as changes in the customer's conditions warrant. 
+ 
+ 
+"In  accordance with  P.L.  1997,  c. 162,  the  charges  in this Rate Schedule include provision for  the  New  
+Jersey  Corporation  Business Tax  and  the New Jersey  Sales  and Use Tax.  When  billed to  customers 
+exempt  from  one  or  more of these taxes, as  set  forth  in Riders CBT and  SUT, such charges  will be reduced  
+by  the  relevant  amount  of  such taxes  included  therein." 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:   November 25, 2025                                      Effective  Date:  December 1, 2025  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 
+
+=== PHYSICAL PDF PAGE 47 ===
+ATL AN TIC  CI TY ELECTRIC COMPANY  
+ 
+ 
+BPU NJ No. 11  Electric  Service  - Section IV                        Second  Revised Sheet Replaces First  Sheet  No. 38 
+ 
+CBT  – RIDER (CORPORATE 
+BUSINESS TAX) 
+ 
+ 
+In  accordance with  P.L.  1997,  C.  162 (the  “energy  tax  reform statute”), provision  for  the  New  Jersey  Corporation  
+Business Tax  has  been  included  in all charges  applicable Riders [tariff designation for  LEACs/LGACs] (the  “Base 
+Tariff  Rates) by  multiplying  the  Base Tariff  Rates  in effect immediately prior  to  January 1,  1998  by  the factor 
+1.3518%  [1 plus  the “a”  factor  carried  out  to decimals].   The  energy  tax  reform statute  exempts  the  following  
+customers from  the  CBT provision, and when  billed  to such customers, the Base Tariff  Rates  otherwise applicable 
+under  this tariff  shall be reduced  by  the  provision for  the CBT (and  related  New  Jersey  Sales  and  Use Tax) included 
+therein: 
+ 
+1.    Franchised  providers of  utility  services  (gas, electricity, water, waste  water  and  telecommunications  services  
+provided by  local exchange  carriers) within the  State of  New  Jersey. 
+ 
+2.    Operating  co-generators, or those which have filed  an application  for  an operating  permit or  a construction  
+permit and a certificate  of  operation  in order  to comply with  air quality  standards  under  P.L.  1954,  C.  212 
+(C.26:2c-1 et  seq.)  with the New  Jersey  Department  of  Environmental Protection,  on  or  before March 10,  1997. 
+ 
+3.    Special contract customers for  which a customer-specific tax  classification  was  approved  by  a written  Order  of 
+the  Board of  Utilities  prior  to January 1,  1998. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:   November 25, 2025                                              Effective  Date:  December 1, 2025  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 
+
+=== PHYSICAL PDF PAGE 48 ===
+ATL AN TIC  CI TY ELECTRIC COMPANY  
+ 
+ 
+BPU NJ No. 11  Electric  Service  - Section IV        Sixth  Revised  Sheet  Replaces  Fifth  Revised  Sheet  No. 39  
+RIDER - SUT  (SALES AND  USE TAX) 
+ 
+A.   In  accordance with  P.L.  1997, C.  162  (the  "energy  tax  reform statute"), provision  for  the  New  Jersey  Sales  and  Use 
+Tax  ("SUT")  has  been  included  in all charges  applicable under  Atlantic's  tariff  by multiplying  the  charges  that  would 
+apply before application  of  the SUT  by  the  factor  1.06875.   Pursuant  to  P.L.  2016,  c.57,  this factor  is changed  to 
+1.06625  effective January 1,  2018.   The  energy  tax  reform statute  exempts  the  following customers from  the  SUT  
+provision: 
+1.     Franchised  providers of  utility services  (gas, electricity, water, wastewater  and  telecommunications services  
+provided  by  local exchange  carriers) within the  State  of  New  Jersey. 
+2.     Operating  co-generators, or  those which have filed  an  application  for  an  operating  permit or  construction  
+permit and  a certificate  of  operation  in order  to  comply with air quality  standards  under  P.L.  1954,  C.212  
+(C.26:2C-1 et  seq.)  with  the  New  Jersey  Department  of  Environmental Protection,  on  or  before March 10, 
+1997. 
+3.     Special contract customers for  which a customer-specific tax  classification  was  approved  by  a written  Order  
+of  the  New  Jersey  Board of  Public Utilities  prior  to  January 1,  1998. 
+4.     Agencies  or  instrumentalities of  the  federal government. 
+5.     International organizations  of  which the  United  States  of  America is a member. 
+  
+B. The  Business Retention  and  Relocation  Assistance Act (P.L.  2004,  c. 65)  and  subsequent  amendment  (P.L.  2005, c.374)    
+exempts  the  following  customers from  the  SUT  provision,  and  when  billed  to  such customers, the  charges  otherwise 
+applicable shall be  reduced  by  the  provision  for  the  SUT  included  therein: 
+1.     A qualified  business that  employs at  least 250  people within an  enterprise zone,  at  least 50%  of  whom  are 
+directly employed  in a manufacturing  process, for  the  exclusive use or  consumption  of  such business within 
+an  enterprise zone,  and 
+2.     A group  of  two  or  more persons: (a)  each of  which is a qualified  business that  are all located  within a single 
+redevelopment  area  adopted pursuant  to  the  “Local Redevelopment  and  Housing  Law,”  P.L.1992,  c.79  
+(C.40A:12A-1 et  seq.); (b)  that  collectively employ at  least 250  people within an  enterprise zone,  at  least 50% 
+of  whom  are directly employed  in a manufacturing  process; (c) are each engaged  in a vertically integrated 
+business, evidenced  by  the  manufacture and  distribution  of  a product or  family of  products  that,  when  taken  
+together, are primarily used,  packaged  and  sold as  a single product;  and  (d)  collectively use the  energy  and  
+utility service for  the  exclusive use or  consumption  of  each of  the  persons that  comprise a group  within an  
+enterprise zone. 
+3.     A business facility  located  within a county that  is designated for  the  50%  tax  exemption  under  section  1 of  P.L. 
+1993,  c.373  (C.54:32B-8.45) provided  that  the  business certifies  that  it employs at  least 50  people at  that  facility, 
+at  least 50%  of  whom  are directly employed  in a manufacturing  process, and  provided  that  the  energy  and  utility 
+services  are consumed  exclusively at  that  facility. 
+ 
+A business that  meets  the  requirements  in B.1.,  B.2.  or  B.3.  above shall not  be  provided the  exemption  described  
+in this section  until it has  complied  with  such requirements  for  obtaining  the  exemption as  may  be  provided  
+pursuant  to  P.L.1983,  c.303  (C.52:27H-60  et  seq.)  and  P.L.1966,  c.30  (C.54:32B-1 et  seq.)  and  the  Company  has  
+received  a sales  tax  exemption  letter  issued  by  the  New  Jersey  Department  of  Treasury, Division  of  Taxation. 
+  
+There are,  however, other  tariff  charges  provided  in the  Company's  current  tariff  which are not  subject,  or  are excluded  
+from  the  SUT  calculations in the  compliance filing,  as  follows: 
+1.            Rate Schedules 
+Residential Underground  Extensions  (RUE) ...............................Exempt  all charges. 
+Contributed  Lighting  Extension  (CLE)  .........................................Exempt  all charges. 
+2.            Other Tariff Charges 
+Installation  of  Service at  Original Location  ...................................$65.00  - Exempt  
+Connect  ........................................................................................$15.00  - Exempt  
+Reconnect .....................................................................................$15.00  - Exempt  
+Succession   ...................................................................................$15.00  - Exempt  
+Disconnect ....................................................................................$15.00  - Exempt  
+Special Reading  of  Meters ............................................................$15.00  - Exempt  
+Late  Payment  Charge  - .................................................................. Exempt 
+                              Uncollectible Check ..........................................................................$7.64 – Exempt  
+  
+Date of Issue:   November 25, 2025                                                   Effective  Date:  December 1, 2025  
+  
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 
+
+=== PHYSICAL PDF PAGE 56 ===
+ 
+   ATLANTIC  CITY ELECTRIC COMPANY  
+  BPU NJ No. 11  Electric  Service  - Section IV       Fifth  Revised  Sheet  Replaces  Fourth  Revised  Sheet  No. 44 
+RIDER NEM 
+Net  Energy Metering 
+AVAILABILITY 
+This Rider  is available to  any  customer  served  under  the  Company’s Rate Schedules  RS, MGS-Secondary,  MGS- 
+SEVC,  MGS-Primary, AGS Secondary, AGS Primary, TGS Subtransmission,  and  TGS Transmission who owns  and  
+operates  a customer-generator  facility  that: 
+1.    Uses  a New  Jersey  defined  Class I renewable resource,  including solar  technologies, photovoltaic 
+technologies, wind energy, fuel cells powered  by  renewable fuels, geothermal technologies, wave or  tidal 
+action, and/or  methane  gas  from  landfills or  a biomass facility, provided that  the biomass is cultivated  and  
+harvested  in a sustainable manner, as  more specifically defined  in Board of  Public Utilities  Regulations  at  
+N.J.A.C.  14:8;  and 
+2.   Is  located on the customer’s premises or contiguous property; and 
+3.     Is  interconnected  and  operated  in parallel with the Company’s transmission or  distribution facilities; and 
+4.     Is  intended  primarily to  offset  all or  part of the customer’s own electricity  requirements; and 
+5.     Is  not  a Qualifying Facility  (QF) served  under  the  Company’s Rate Schedule SPP, Small Power  Purchase. 
+ 
+CONNECTION TO THE COMPANY’S SYSTEM 
+Any  customer  who elects  this Rider  must submit a New Jersey  Interconnection  Application  Form with  the Company, 
+at  least 30 days prior  to  activating the customer-generator  facility.   The  customer  should not  install a customer- 
+generator  facility  without  prior  approval from  the Company  and  the customer  shall not  operate  a customer-generator  
+facility  without  final written  approval from the Company. 
+ 
+The  customer-generator  facility  shall not  be  connected to  the  Company’s system  unless it meets  all applicable safety  
+and  performance standards established  by  the  National Electric Code,  The Institute of  Electrical and  Electronics 
+Engineers (IEEE), Underwriters Laboratories, and  as  currently detailed  in the  Company’s Technical Interconnection  
+Requirements,  Technical  Considerations   Covering  Parallel  Operations   of   customer   owned  generation  and  
+interconnected with the  Company’s Power  Delivery System  in the  State of  New  Jersey  and  the  applicable codes  of  
+the  local public authorities. Special attention should be  given  to IEEE Standard 1547-2018  (or  latest amended 
+revision)  for  Interconnection and Interoperability  of Distributed Energy  Resources with  Associated  Electric Power  
+Systems  Interfaces.   The  customer  must obtain,  at  the  customer’s sole expense,  all necessary inspections  and  
+approvals required  by  the local public authorities  before the  customer-generator  facility  is connected  to the Company’s 
+electric system. 
+ 
+INTERCONNECTION AND  PARALLEL OPERATION 
+Interconnection  with  the  Company’s system  requires  the installation  of  protective equipment  which provides  safety  for  
+personnel, affords  adequate protection against damage to  the Company’s system  or  to  the customer’s property, and  
+prevents  any  interference with  the  Company’s supply of  service to  other  customers. Such protective equipment  shall 
+be  installed,  owned  and  maintained  by  the  customer  at  the  Customer’s expense.  Generation systems  and  equipment 
+that  comply with  the standards  established  in the previous  Section  of this Rider  shall be  deemed  by  the Company  to  
+have generally complied with  the requirements  of  this Section. 
+ 
+CESSATION OF PARALLEL OPERATION 
+The  customer’s equipment  must be  installed and configured  so that  parallel operation must cease immediately and  
+automatically during system  outages  or  loss of  the  Company’s primary electric source.  The customer  must also cease 
+parallel operation  upon  notification  by  the  Company  of  a system  emergency, abnormal condition, or  in cases  where 
+such operation is determined  to  be  unsafe,  interferes  with  the  supply of  service to other  customers, or  interferes  with  
+the  Company’s system  maintenance or  operation. 
+ 
+DELIVERY VOLTAGE 
+The  delivery voltage of  the  customer-generator  facility  shall be  at  the same voltage  level and  at  the same delivery point  
+as  if the Customer  were purchasing  all of  its  electricity  from  the  Company. 
+ 
+ 
+ 
+Date of Issue:   November 25, 2025                                                            Effective  Date:  December 1, 2025  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 
+
+=== PHYSICAL PDF PAGE 57 ===
+ATL AN TIC  CI TY ELECTRIC COMPANY  
+ 
+ 
+BPU NJ No. 11  Electric  Service  - Section IV      Third  Revised  Sheet  Replaces Second  Revised  Sheet  No. 45 
+RIDER NEM (Continued) 
+Net  Energy Metering 
+ 
+TERM  OF CONTRACT  
+The  contract term shall be  same  as  that  under  the  customer’s applicable Rate  Schedule. 
+ 
+MONTHLY RATES, RATE COMPONENTS AND  BILLING  UNIT  PROVISIONS 
+The  monthly  rates, rate components   and   billing unit  provisions   shall be those  as   stated   under  the  customer’s 
+applicable Rate  Schedule.   Under  this Rider, only the  per  kilowatt-hour  charge components  of the customer’s bill are 
+affected.   The monthly charges  shall be based  on  one  of  the following  conditions: 
+ 
+a)    When the  monthly energy  meter  reading  registers that  the  customer  has  consumed  more energy  than  the  
+customer  delivered  to  the  Company’s delivery system  by the  end  of  the monthly billing  period,  the customer  shall 
+be  charged  for  the  net  amount  of  electricity  consumed based  on  the  rates  and charges  under  the  customer’s 
+applicable Rate Schedule for  either  Delivery Service when  the  customer  has  a third party  supplier  as  its  electric 
+supplier, or  the  combined  Delivery, Transmission  and Basic Generation Service when  the customer  has  the  
+Company  as  its  electric supplier; or 
+b)    If  the customer  is receiving combined  Delivery, Transmission  and Basic Generation Service,  and  the monthly 
+energy  meter  reading  registers that  the  customer  has  delivered  more energy  to the  Company’s delivery system  
+than  the  customer  has  consumed  by  the  end  of the  monthly billing  period,  the customer  shall be charged  the  
+Customer  Charge  and any  appropriate demand  charges  based on  the  customer’s applicable Rate  Schedule.  In 
+addition,  the  Company  shall receive and  take ownership of the delivered  energy  from  the  customer  and  the 
+Company  shall credit the customer  for  that  delivered  energy.  At the  end of twelve consecutive monthly billing 
+periods  beginning with the first month  in which net  metering  becomes  applicable (annualized  period), the  customer  
+will be  compensated  for  any  remaining  credits  at  the  average  Residual Metered  Load  Aggregate  locational 
+marginal price for energy, for  the  annualized period,  in the Pennsylvania,  New  Jersey  and  Maryland  
+Interconnection  (PJM)  Control Area  Transmission Zone for  the  Company.  In  the  event  that  a customer  leaves  
+Basic Generation  Service prior  to  the end of  the  annualized  period,  the  end  of  the  service period will be  treated 
+as  if it were the  end of  the  annualized  period;  or 
+c)   If  the customer  has  a third party  supplier  and  the  monthly energy  meter  reading  registers that  the  customer  has  
+delivered  more energy  to  the  Company’s delivery system  than the  customer  has  consumed  by  the  end  of  the  
+monthly billing period, the  customer  shall be  charged  the Customer  Charge and any appropriate  demand  charges  
+based  on the customer’s applicable Rate Schedule.  Monthly meter  data  will be forwarded  to  the customer’s third 
+party  supplier  in accordance with existing Electronic Data Interchange  (EDI)  Standards.   In  the  event that  a 
+customer  changes  electric supplier  prior  to  the  end  of  the  annualized period,  the  end  of  the service period will be  
+treated  as  if it were the  end  of  the annualized  period. 
+ 
+The  customer  has  one  opportunity  to  select an  annualized  billing period in accordance with  the  provisions  of  N.J.A.C. 
+14:8-4.3. 
+ 
+RENEWABLE ENERGY CERTIFICATES 
+The  Renewable Energy  Certificates  generated  by  the  customer-generator  facility  are owned  entirely by  the  customer  
+or  the  eligible customer’s assignee. 
+ 
+METERING  
+The  watt-hour  energy  meter at  the  customer’s location  shall measure the net  energy  consumed  by  the  customer  or  the  
+net  energy  delivered  by  the  customer-generator  facility  for  the monthly billing  period.   The  Company  shall furnish,  
+install, maintain and own all the  metering  equipment  needed  for  measurement  of  the  service supplied. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:   November 25, 2025                                       Effective  Date:  December 1, 2025  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 
+
+=== PHYSICAL PDF PAGE 58 ===
+ATL AN TIC  CI TY ELECTRIC COMPANY  
+ 
+ 
+BPU NJ No. 11  Electric  Service  - Section IV                Second  Revised  Sheet  Replaces First  Sheet  No. 46 
+RIDER NEM (Continued) 
+Net  Energy Metering 
+ 
+MODIFICATION OF THE COMPANY’S SYSTEM 
+If  it is necessary for  the Company  to  extend  or  modify  portions  of its  systems  to accommodate  the delivery of electricity  
+from  the  customer-generator  facility, the  Company   at  the  customer’s  expense  shall perform such extension  or  
+modification. 
+ 
+LIABILITY 
+The  Company  accepts  no responsibility  whatsoever  for damage  or  injury to  any  person  or  property  caused  by failure 
+of  the  customer  to  operate  in compliance with Company’s requirements. The Company  shall not be  liable for  any  loss, 
+cost,  damage or  expense to  any  party  resulting from  the  use or  presence of  electric current or  potential which originates  
+from  the customer-generator  facility.  Connection  by  the  Company  under  this Rider  does  not  imply that  the Company  
+has  inspected  or  certified that  the  customer-generator  facility  has  complied  with  any  necessary local codes  or  
+applicable safety  or  performance standards.  All inspections, certifications  and compliance with  applicable local codes  
+and safety  requirements  are the  sole responsibility  of the customer-generator. 
+ 
+FAILURE  TO COMPLY 
+If  the  customer  fails to  comply with any  of  the requirements  set  forth  in this Rider, the  Company  may  disconnect the  
+customer’s service from  the Company’s electric system  until the  requirements  are met,  or  the customer-generator  
+facility  is disconnected  from  the  customer’s electric system. 
+ 
+TERMS AND  CONDITIONS 
+The  Terms  and  Conditions  set  forth  in this tariff  shall govern the  provision  of  service under  this Rider. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:   November 25, 2025                                           Effective  Date:  December 1, 2025  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the 
+BPU Docket  No. ER24110854 

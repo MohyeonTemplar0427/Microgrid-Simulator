@@ -1,0 +1,74 @@
+SOURCE: https://www.atlanticcityelectric.com/cdn/assets/v3/assets/blt407b5f1850a51a1b/blt433389f747df102f/6aa85773fb097ba01be38a19/NJ_Tariff_Section_IV_Eff._09.01.2026_BGS_.pdf?branch=prod_alias
+ORIGINAL: .cache/atlantic_city_electric/sources/delivery/section_iv_sep2026.pdf
+SHA256: 438ba7ab5a72a022a7813dac8efbb4faf45fba057cd9f5efad4c2e60d783ff92
+Physical PDF pages are one based.
+
+=== PHYSICAL PDF PAGE 43 ===
+ 
+ATLANTIC  CITY ELECTRIC COMPANY  
+BPU NJ No. 11  Electric  Service  - Section IV    Forty-Fifth  Revised  Sheet  Replaces Forty-Fourth  Revised  
+Sheet  No. 34
+ 
+ 
+ 
+AVAILABILITY 
+RIDER STB-STANDBY SERVICE 
+(Applicable  to MGS, AGS, TGS and SPP Rate Schedules) 
+Standby Service is defined as a charge imposed by an electric public utility upon a distributed generation facility 
+for the recovery of costs necessary to make energy available to the generation facility during a customer facility 
+power generation outage. The additional electrical energy available is defined as the customer’s Generating 
+Capacity.  The Generating Capacity is the amount of the customer owned electrical energy source, as specified 
+by the installed name plate capacity, available and intended for the customer’s use.  
+This rider is required when non-intermittent electric or other power requirements are supplied by the customer’s 
+own power-producing equipment, with a Generating Capacity available to the customer during a power outage 
+greater than 100 kilowatts (kW). 
+  
+ DEMAND  DETERMINATION 
+ 
+The  monthly billing demand  shall be  as  defined  under  the  "Demand  Determination" section  of the  applicable 
+rate  schedule. 
+ 
+The  Standby  Service Demand  shall be  the  "Generating  Capacity" as  defined  above. 
+ 
+During a billing month in which the demand determination is during a  forced outage or  mutually agreed  upon 
+customer's  scheduled maintenance shutdown, the Standby Service Charge may be waived upon request with 
+the Company’s approval. 
+ 
+STANDBY SERVICE CHARGE 
+This  rider imposes  a Standby Service  Charge at  the following voltage levels: 
+ 
+Tariff Transmission Stand By Rate Distribution Stand By Rate 
+ ($/kW)  ($/kW) 
+MGS-Secondary and $0.89  $0.52 
+MGS-SEVC   
+MGS Primary $0.73  $0.26 
+AGS Secondary $0.80  $2.19 
+AGS Primary $0.91  $1.97 
+TGS Sub Transmission $0.44  $0.00 
+TGS Transmission $0.44  $0.00 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date of Issue:  November 25, 2025                                   Effective  Date:  December 1, 2025  
+ 
+Issued  by:   J.  Tyler  Anthony,  President and Chief  Executive Officer  – Atlantic City Electric  Company 
+Filed  pursuant to Board of Public  Utilities  of the State of New  Jersey  directives  associated  with the BPU 
+Docket  No. ER24110854 
