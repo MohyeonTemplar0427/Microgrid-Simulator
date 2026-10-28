@@ -1,0 +1,52 @@
+Source: https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf
+Original SHA256: 665736ea46b7860651226605624c298b6990e3c0581166e543ccf27bd25b8f9d
+Physical page: 247
+Printed page: 246
+Revision: Original
+Rate district: Penelec, independently reviewed column
+
+Issued: December 5, 2024    Effective: January 1, 2025                       
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Supplement No. 14 to 
+Electric Pa P.U.C. No. 1 
+  Original Page 246 
+ 
+ 
+ 
+ 
+ LED CONVERSION CHARGE RIDER (continued) 
+ 
+The LEDC rates by Customer Class shall be calculated annually in accordance with the formula 
+set forth below: 
+ 
+LEDC = [( LEDCC - E ) / S] x [1 / (1 - T)]  
+Where: 
+ 
+LEDC =   The charge in cents or dollar per Billing Unit by Customer Class as defined by this 
+ rider applied to each Billing Unit for the Rate Schedules identified in this rider. 
+ 
+LEDCC =   A projection of the remaining net asset value of the non-LED lighting fixtures that 
+will be replaced during the LEDC Computational Year. Such costs will be allocated 
+to each Customer Class based upon each Customer Class’s contribution to the total 
+Company Network Service Peak Load. 
+ 
+E = The cumulative over or under-collection of LEDC costs that results from billing the 
+LEDC during the LEDC Reconciliation Year (an over-collection is denoted by a 
+positive E and an under -collection by a negative E), including applicable interest.  
+Interest shall be computed monthly at the legal rate determined pursuant to 41 P.S. 
+§ 202, from the month in which the over or under-collection occurs to the month in 
+which the over-collection is refunded to or the under-collection is recovered from 
+all Delivery Service Customers. 
+ 
+S = The Company’s projected Billing Units (kWh sales delivered to all Customers in 
+the residential and commercial customer class or kW PLC demand for the Industrial 
+Customer Class) for the LEDC Computational Year.  
+ 
+T =  The Pennsylvania gross receipts tax rate in effect during the billing month 
+expressed in decimal form as reflected in the Company’s base rates. 
+ 
+ 
+ 
+ 
+ 

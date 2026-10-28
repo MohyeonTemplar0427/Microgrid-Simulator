@@ -905,3 +905,25 @@ non-export PV/storage, PV-only charging and zero banks reuse existing components
 Utility district, supplier, PA tax, PJM METED wholesale zone and FE-ME emergency
 region remain separate. No shared billing math, solver, physics, worker/API or
 replay behavior changes. See [scope and sources](Met_Ed_Pennsylvania.md).
+
+## Penelec Pennsylvania RS/GS-Small · October 2026
+
+`billing/penelec_pa.py` and snapshot-safe `penelec_pa_rates.py` add ordinary
+Penelec district RS and Company-retained GS-Small default PTC. Verified complete
+calendar intersections are January2025–June2026 and October2026; missing
+July–September2026 DSIC rejects. Mandatory LEDC applies to every ordinary class
+billing unit and remains inside DSIC/STAS/current-tax bases. January–March2025
+LEDC non-applicability is a disclosed first-April-rate-window interpretation,
+not an explicit filed zero-priced row. January2025 GS-S excludes unresolved
+prior-refund sales tax while retaining known current tax and the $3.42 refund;
+RS solely residential uses its known $6.15 refund. January entitlement/source
+is independent. RS single-dwelling inactive special-demand/prior11/native/import
+25kW bounds and GS actual/no-demand-meter/non-imputed prior12/native/import
+1500kWh bounds preserve classification without PV-derived resets. Penelec A+C
+provisions do not import Penn Power's500kW branch. Ordinary active approved
+non-export renewable PV/storage, PV-only charging and zero banks reuse existing
+worker/dispatch/physics/replay without shared behavioral changes. PENELEC market
+zone and FE-PN emergency metadata remain separate from delivery/supply/tax.
+Independent audit reconstructs DSIC/STAS bases including LEDC. Earlier Met-Ed
+LEDC completeness concern is recorded separately; old files/evidence pins remain
+unchanged. See [account and source scope](Penelec_Pennsylvania.md).

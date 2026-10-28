@@ -1,0 +1,24 @@
+SOURCE: .cache/met_ed_pa/sources/supply/historical_rates.xlsx
+SHEET: PTC - Res and Small Comm
+Penelecresidentialrow8/commercialrow14; unitsUSD/kWh. RawJune24headers notfiledclockauthority.
+row6col2: Residential
+row6col12: 2024-12-01T00:00:00
+row6col13: 2025-06-24T00:00:00
+row6col14: 2025-12-01T00:00:00
+row6col15: 2026-06-24T00:00:00
+row8col2: Penelec
+row8col12: 0.10474
+row8col13: 0.11003
+row8col14: 0.11747
+row8col15: 0.13142
+row12col2: Small Commercial
+row12col12: 2024-12-01T00:00:00
+row12col13: 2025-06-24T00:00:00
+row12col14: 2025-12-01T00:00:00
+row12col15: 2026-06-24T00:00:00
+row14col2: Penelec
+row14col12: 0.10382
+row14col13: 0.11405
+row14col14: 0.12155
+row14col15: 0.1292
+row18col2: Note: Prior to June 2023, the PTC rates were filed on a quarterly basis.  The information contained here reflects the June and December rates only. Starting June 2023, the PTC rates are filed on semi-annual basis.

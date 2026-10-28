@@ -1,0 +1,2509 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-28",
+  "source_scope": {
+    "utility_key": "firstenergy_pa_penelec",
+    "module": "penelec_pa",
+    "utility": "FirstEnergy Pennsylvania Electric Company, Penelec Rate District",
+    "jurisdiction": "Pennsylvania PUC Electric No.1; NY/Waverly excluded",
+    "plans": [
+      "RS",
+      "GS-S"
+    ],
+    "supply": "DefaultPTC only; Penelec assigned class and no HP/TOU/shopping",
+    "source_rate_coverage": [
+      {
+        "start": "2025-01-01",
+        "end_inclusive": "2026-06-30"
+      },
+      {
+        "start": "2026-10-01",
+        "end_inclusive": "2026-10-31"
+      }
+    ],
+    "coverage_conditions": "Fullcomponentintersection/accountconditionsrequired; Jan2025GS verifiedsubtotalonly; JulSep2026 DSICmissing; JanMar2025 LEDC start-date/absence interpretation disclosed",
+    "LEDC": "Mandatorynonbypassableclassallocation, not customerconversioncondition. JanMar25 representedNOT_APPLICABLE_BEFORE_FIRST_APRIL_COMPUTATIONAL_PERIOD withzerochargefromOriginal245firstAprwindow+Original247Aprilcomputationalyear+FirstRevpositiveApr1. This is an explicit start-date/absence inference, not an explicitpricedJanMarzero row.",
+    "January2025_GS": "KnownCURRENTtariffcharges taxed6%, thenknown3.42GRT-inclusiverefundleafonce; UNKNOWNpriorrefund-relatedsales-taxadjustment excluded,notzero, verifiedsubtotalonly. AnnualGSincludingJanuarymixedcomplete/subtotal.",
+    "January2025_RS": "Ordinarysolelyresidentialexemptbranch maycompletewithknown6.15GRT-inclusiverefundleafonce; establishedeligibleaccount/postingfactsrequired.",
+    "RS_inactive_special_demand": "Narrowimplementationguard: independentpreceding11monthactualpeak<=25kW,current/native/import15minutepeak<=25kW,noinheritedexcessdemandratchet orcurrent/inheritedspecialdemand. Doesnotproveabsenceofmetertrigger orapproval.",
+    "GS_S": "Utilityassignednon-demandmeteredsecondary/singlelocation; retainedclassificationandhistoryconfirmed. Two consecutive>1500kWhmonths inrecent12 mayendeligibility. Conservativeprior12monthqualificationupperbound<=1500plusmodelednativeandimportcycleenergy<=1500 isstudyrestriction, notliteralhardtariffcap orprovedgross/netpredicate.",
+    "GS_provision_matrix": "PenelecA+C,NOTB. ExcludeimputedfixedusageC/earlytermination/specialservice. PennPowerGSDS500kWnotPenelecrule.",
+    "cycle": "Ordinarycompletecalendarcycles; explicitsuitablebilldatefact forTCJA/DSICbills-rendered; service-renderedcomponentsretainfiledclocks. Unsupportedpartial/shifted/nonlinearprorationreject.",
+    "taxes": "FiledGRTincludedonce; PAsalestaxseparate:solelyresidentialRSexempt/ordinaryfullytaxableGS6%onlyexplicitstate-onlylocalityoutsideAlleghenyPhiladelphia; noexemptioninferredfromutility/weather.",
+    "DER": "AlreadyactiveapprovedordinaryNEM/interconnection foractualPV/storage/non-exportoperation, retainedclass,noPartialServices/specialfees; noopeningbank/exports; RS/GSSretainJanMaySPVcredit; no blanketPVwaiver.",
+    "wholesale_metadata": "FE-PN emergencyregion andPENELEC marketzonelabel separate; selectedofficialPJMcoarsemapprinted20230511 labelonly, no territory/locality/supplier/pricingnodeproof.",
+    "actual_customer_eligibility_claimed": false,
+    "full_year_validation_claim": false
+  },
+  "records": [
+    {
+      "id": "delivery_tariff_index",
+      "original_path": ".cache/met_ed_pa/sources/delivery/tariff_index.html",
+      "original_sha256": "375cefa83f0d3a9652767f3e3606e6730ca008fb40dc002c24d8a424211cb95b",
+      "original_bytes": 63021,
+      "urls": [
+        "https://www.firstenergycorp.com/customer_choice/pennsylvania/pennsylvania_tariffs.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_index",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_index.html"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "delivery_tariff_current",
+      "original_path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf",
+      "original_sha256": "665736ea46b7860651226605624c298b6990e3c0581166e543ccf27bd25b8f9d",
+      "original_bytes": 2670563,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "shared_tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p065.txt",
+          "sha256": "bc1364c21a4cc234491ee4d82cacad2d3b2a0b00d9dbb5c6f141aebeaf1b74cc",
+          "physical_page": 65
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p066.txt",
+          "sha256": "3b7f5224669b96219ccfbbf7fe6f80c856d58c8bcde9a29b0d3db0a7ec78f96e",
+          "physical_page": 66
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p203.txt",
+          "sha256": "4413f99055f1017d1c55b239e303a817e11290b6b4a6c7e80c419a93b1b59de6",
+          "physical_page": 203
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p204.txt",
+          "sha256": "b20e4ca0f15ae0aa429b3bf0079d951be5e828ad150393a28cc6e21488feded2",
+          "physical_page": 204
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p205.txt",
+          "sha256": "41eb1d81cc93f898c0e22293b25b86ad809467cb0f3ed9564d69c79d436ec156",
+          "physical_page": 205
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p206.txt",
+          "sha256": "7e1e678edc5007f50da0535a777956f8bc10c91fea6a888865bf3ac41432882a",
+          "physical_page": 206
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p207.txt",
+          "sha256": "6df0ee4eae4e51f4c5ab6aac2aa9030c74b6d8b46253ec8b71341bf7c4c34852",
+          "physical_page": 207
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/shared_tariff_current_p208.txt",
+          "sha256": "cbd8c7b9f934d49046781c76cd5cf6377096ad8ed5f97a8960b8f9b0249bf892",
+          "physical_page": 208
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/tariff_current.txt",
+          "sha256": "d90014b63b86bb97ca3144326e61b7b4329966b74b845ebe53f1842079f8e6fd",
+          "physical_pages": [
+            24,
+            46,
+            47,
+            48,
+            49,
+            50,
+            61,
+            62,
+            63,
+            65,
+            66,
+            67,
+            182,
+            183,
+            184,
+            187,
+            188,
+            189,
+            190,
+            191,
+            213,
+            216,
+            224,
+            225,
+            226,
+            227,
+            228,
+            232,
+            235,
+            242,
+            246,
+            247,
+            248
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p182.txt",
+          "sha256": "783e0397fced5aeefdbe308e8cff936617fd15e444999a229e16d0f01c47e8ff",
+          "physical_page": 182,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p183.txt",
+          "sha256": "9a7c6c9f65277082ff9798230a98bd3dbacbd5f88cdbbdc5abc7e762fe220c19",
+          "physical_page": 183,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p185.txt",
+          "sha256": "472697e559013fdd51240580367ff16713034be0fdf3d7c2f5a018980ccbaeec",
+          "physical_page": 185,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p194.txt",
+          "sha256": "81b0b086a00908cbe7b8df2a81ed80ad139be3c3aa56b978609fcd1fb41cf0df",
+          "physical_page": 194,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p198.txt",
+          "sha256": "1784c743b47b982a2b377aa430c2c0edb2a0a1da1e9d44cedbffc686d346b5a3",
+          "physical_page": 198,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p213.txt",
+          "sha256": "840b85b0006af13415e7d75f0bb3de9cb4a9626c42f62cd687bb4fcd43e69577",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p216.txt",
+          "sha256": "ced3f860240f95bb2f8a3db2b2d4595a94dd2272f5bc96b5dd193b0ff8258799",
+          "physical_page": 216,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p240.txt",
+          "sha256": "ae73932e06a50bb8aaf51483b4d9462f1923946038c12893ebb28c50930a6603",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Eleventh Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p246.txt",
+          "sha256": "a223437800c4e6b9c4e955e1f15974e6356d4cfebd401b56847b46f15040a0b1",
+          "physical_page": 246,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p181.txt",
+          "sha256": "72341654f34b8e5cbbbab6943b0226b8eca1509f1217ff6b988044003abe0411",
+          "physical_page": 181,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p62.txt",
+          "sha256": "8862fba8e66fa6948709f6b634cc6641ae1c93242b3b636353d417ca7f63ece4",
+          "physical_page": 62,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p63.txt",
+          "sha256": "cdc8555d0e11db2cb903c5af2ab7d7c63c9bd1102267684d59c8eeb0ee4345dd",
+          "physical_page": 63,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p66.txt",
+          "sha256": "5e28597fa3bd2cb4ecad56b8d9e8d51cc93f2d86cc04a1bb6d6940361707848c",
+          "physical_page": 66,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p247.txt",
+          "sha256": "63e8a4fc2b19c8fde0ca3bc10b9aa5526a57d97035253cf57c0773bf24286d9c",
+          "physical_page": 247,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/tariff_current_p248.txt",
+          "sha256": "68e855a867ad8244b9070ebbec2680a8d793fa240b403ccf1abda08a73ab3eca",
+          "physical_page": 248,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/rs_demand.png",
+          "sha256": "2518a39f6e19bd33ab1bceba68db726cb9fbee9c8902d2dfacde92bbe03d666c",
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "physical_page": 62,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/gs_matrix.png",
+          "sha256": "78ff12fcd7ba9a7fe00746a72ba3d84ac0c12f446bb7d30d9b621c682ebbb812",
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "physical_page": 66,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/ledc2026.png",
+          "sha256": "528e0b589767cbfc53992610b3b9172a0078e58e378cbad51460bb63c8534a8f",
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "physical_page": 246,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p181.png",
+          "sha256": "2b1bdf2e854927fe82b0d375c29bffbbf494adefbbeb368c8185e948cb1794a6",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p182.png",
+          "sha256": "d6bc22404dab0d9b7b95d517677574b914729c711b0636f090aedb4c450d2d57",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p183.png",
+          "sha256": "e0167bc17a16fc6730c27bba62833f43c68163fecbacb71d2acd6055afcec7fd",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p185.png",
+          "sha256": "02fc5c56c064cbc15715d671623198c889a5ae7c743ed62f5636097e1869ff9f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p194.png",
+          "sha256": "549a2d7422cb040aab3826df50dbcad0136e56a44f9f1c470b4ea18103dfcf5c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p198.png",
+          "sha256": "8b21cd0a62efefd64a1474ec0a0b4600b9381fda82556b5d8bf25c0ad9a3ee7c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p213.png",
+          "sha256": "20b33df4a04661f5f1c4630488451bf037adedb92641d5fd00e688fbbace4677",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p216.png",
+          "sha256": "d9a469f9b3021f201d4a432b634bc4d2bdbe84409d75d43b8b6bd085c61ac7f4",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p240.png",
+          "sha256": "cebaf82f0eea160c6391caddafd7e155e9cda687168e6da1291661ac4830faa3",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p246.png",
+          "sha256": "06ccd4ec4abc656fbaf4be90830e7095d9b8afde5ab84dd0e9e9108dd1afadd8",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p247.png",
+          "sha256": "76c5a6b83e170e80660a8cfd30be1ccbca7d2f039bff390a7c8da5094b2c0e83",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p248.png",
+          "sha256": "c342e7cadf94815d2b264a9392e975543fb999f4b083b5bcb7ea3268a9e9e6d7",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p62.png",
+          "sha256": "a1b0da672834b23d965e8aafbd066fdf32e5c96d045cd53a42f3dded6b89d0ec",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p63.png",
+          "sha256": "f4e869608751cd24060b2bbb18f79364627c43ff7750d549d05cbaf188f15fb3",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/tariff_current_p66.png",
+          "sha256": "6be472332e25436034e5966d005e52b6d5fcd00297770ac1a3704ff7070555b5",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; Peneleccolumnonly, sourceclockretained",
+        "Penelec district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        24,
+        46,
+        47,
+        48,
+        49,
+        50,
+        61,
+        62,
+        63,
+        65,
+        66,
+        67,
+        181,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        189,
+        190,
+        191,
+        194,
+        198,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        213,
+        216,
+        224,
+        225,
+        226,
+        227,
+        228,
+        232,
+        235,
+        240,
+        242,
+        246,
+        247,
+        248
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/tariff_current.txt",
+      "full_text_sha256": "c7375bdd9cebe5523140d123bcdb95ccd3365e6a1afb740dbbc3af2f89ce62a8",
+      "alternate_extractions": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/shared_tariff_current.txt",
+          "sha256": "dd40b5d783bc8677e055c080996210072b163d3495fbebb22670f9af1951df80"
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.txt",
+          "sha256": "dd40b5d783bc8677e055c080996210072b163d3495fbebb22670f9af1951df80"
+        }
+      ]
+    },
+    {
+      "id": "delivery_historical_rates",
+      "original_path": ".cache/met_ed_pa/sources/delivery/historical_rates.xlsx",
+      "original_sha256": "b2d50924124cc6f760473950bd31988d3b46a23e447c900a0d77159373dc4a85",
+      "original_bytes": 569129,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/Historical-Rates.xlsx"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "historical_rates",
+          "path": ".cache/met_ed_pa/sources/delivery/historical_rates.xlsx"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "historical_rates",
+          "path": ".cache/met_ed_pa/sources/supply/historical_rates.xlsx"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/historical_rates_penelec_cells.txt",
+          "sha256": "9e07ecc40e1881e502d21b362892cbdd59e3b4880d6ac65c9b39298e9ed8b647",
+          "sheet": "PTC - Res and Small Comm",
+          "cells": "B6,B8,B12,B14,B18,L6:O8,L12:O14"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "officialnumericcrosscheck; June24headernotfiledJune1clockauthority"
+      ],
+      "selected_physical_pages": [],
+      "full_text_path": ".cache/met_ed_pa/sources/supply/historical_rates_cells.json",
+      "full_text_sha256": "562c0fcc915e767a8bc357c56e7143bfd19c596cd7efb4922e2fda1e4e56214e"
+    },
+    {
+      "id": "delivery_papuc-1858451",
+      "original_path": ".cache/firstenergy_research/papuc-1858451.pdf",
+      "original_sha256": "b74772efdc7b2c5a7bb527f6b34b007826b8e17a1e9efd387d6f5777f1e0ae99",
+      "original_bytes": 1665492,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1858451.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1858451",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858451",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/papuc-1858451.txt",
+          "sha256": "6ae08f62cbdcef50388600d5a30249d4518a5d79633b414be51e3f8f396fb320",
+          "physical_pages": [
+            1,
+            15,
+            16,
+            17,
+            18,
+            79,
+            91,
+            92,
+            93
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p15.txt",
+          "sha256": "f010c62a33a22a1633d71ea67698eff42688be16fa264c8edb8a7cdb65b0b65f",
+          "physical_page": 15,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p17.txt",
+          "sha256": "40680b956317a81a94633a1553f8ab6c81785992192321d18913636a90c74c27",
+          "physical_page": 17,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p79.txt",
+          "sha256": "acc211d1085ac14ea93b02d76556393df0a1e35a147e6529a2c2c5b36dea17a9",
+          "physical_page": 79,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p81.txt",
+          "sha256": "367931a0842aa9b2af6758736dd53f7461dd2a91442084de05fb79444094d188",
+          "physical_page": 81,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p84.txt",
+          "sha256": "0b69952b915fa48118a27de7b9e7389ca082b21f70c2ccf17b2c8f1a12bb82eb",
+          "physical_page": 84,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p89.txt",
+          "sha256": "9fb10a6bde924a87d10edb72e9c698f8a51dad0c9a31108b5cebee01ccbefaae",
+          "physical_page": 89,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p91.txt",
+          "sha256": "af43667dd8472a2193188f8833e6e8afcb39b7dd4d3787da6572be31b5e7c962",
+          "physical_page": 91,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858451_p93.txt",
+          "sha256": "39e01f861082643cf0cc74180c219cdb5202bf0c5ddb3e15976f0b0cd618d3de",
+          "physical_page": 93,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p15.png",
+          "sha256": "c61d2e2242619d19f5febdbcdfcb66e2002f727439551da37dcacc5fc15dcf51",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p17.png",
+          "sha256": "2796803bf86d4b065133d368740112102ccce8c1fa9f9c9fc6fc2ba37f030f4c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p79.png",
+          "sha256": "619bfc448c401716e467fe2be7ca1c52efad955297e9ab195da521dcbcd4bce4",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p81.png",
+          "sha256": "81102d5fe451f9e46ab06faeae26c77875b286406bff96680abf602930fec5fc",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p84.png",
+          "sha256": "4c70f531e4df863b8306241ca16747dc96316c9de7f93c558d71a104fe9dc357",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p89.png",
+          "sha256": "a5cb42e7747a90bd6a4bc10e8f5c3e33955929a4c914645ecdff888c28cec763",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p91.png",
+          "sha256": "3102089f2fd6a06ca5b9f9212dcb2be28a582121a16e248583344453e9590418",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858451_p93.png",
+          "sha256": "c342e7cadf94815d2b264a9392e975543fb999f4b083b5bcb7ea3268a9e9e6d7",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penelec district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        79,
+        81,
+        84,
+        89,
+        91,
+        92,
+        93
+      ],
+      "physical_pages": 93,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1858451.txt",
+      "full_text_sha256": "1110251bac2cca49f0ab470028aaeded8dfbfc19ce3cce1d3394497263f5b9ad",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1858451.txt",
+          "sha256": "34f4f0fc7d85adc5f25b9e1c3f1417eda3b6c668d97682b281e855e579eb0ec8"
+        }
+      ]
+    },
+    {
+      "id": "delivery_pa-20250515174716",
+      "original_path": ".cache/firstenergy_research/pa-20250515174716.pdf",
+      "original_sha256": "efccf0bf4bba2f5f43aad96d1e56ab2d77495abd2174335a39c25cee98193a2a",
+      "original_bytes": 2520316,
+      "urls": [
+        "https://web.archive.org/web/20250515174716id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-20250515174716",
+          "path": ".cache/firstenergy_research/pa-20250515174716.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa-20250515174716",
+          "path": ".cache/firstenergy_research/pa-20250515174716.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/pa-20250515174716.txt",
+          "sha256": "86a998769b92bb60fb7b3201be7e437e483ca8aeb5a748ee13a64796f0719ff8",
+          "physical_pages": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            61,
+            62,
+            63,
+            65,
+            66,
+            67,
+            182,
+            183,
+            184,
+            187,
+            188,
+            189,
+            190,
+            191,
+            224,
+            242,
+            246,
+            247,
+            248
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-20250515174716_p182.txt",
+          "sha256": "fccaae7a14052277fb906e9ec076f2fe534ce7920fc7b9786c4415dd3ced420c",
+          "physical_page": 182,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-20250515174716_p185.txt",
+          "sha256": "fa264fea07c851f8af4eb7e61eb2118a3cef6ac84a0cdc8280c55b95a6a9620c",
+          "physical_page": 185,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-20250515174716_p213.txt",
+          "sha256": "7d2f13647b990e0a733952d618f92e6e490bb3201e4c925d88225dfd10320386",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-20250515174716_p246.txt",
+          "sha256": "e02cc920a7f075274bff31cb00dc1c0b0e1cec1d953c34c79f423e82896afe28",
+          "physical_page": 246,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/stas2025.png",
+          "sha256": "c30960573a6e7bbe1f970f7e71b999cdff3e4058d67d0089fc185975d7f4652d",
+          "owner_stream": "tax_rules",
+          "source_id": "pa-20250515174716",
+          "physical_page": 182,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/ledc2025.png",
+          "sha256": "0a1120ad41b9d98a8b4817d982792798f7ec25d5615fdc5e186201722354e9ff",
+          "owner_stream": "tax_rules",
+          "source_id": "pa-20250515174716",
+          "physical_page": 246,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-20250515174716_p182.png",
+          "sha256": "401841d86e6ebaefab362019a75b5c9b1812981cbdc5789202c40d10b7b1d1e6",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-20250515174716_p185.png",
+          "sha256": "ca31c74560443c5b77d305f61d4e6d29e24717467b79dedc74cd70c657cf3e14",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-20250515174716_p213.png",
+          "sha256": "c45b314313131a940b6765a020c3d73bb5d63d48a31627b1230ca7e3861dfe09",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-20250515174716_p246.png",
+          "sha256": "bac84103cd132cb1b8f47de77bf51a6f1cb95d68c62a4a1fecd054a670fa406f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penelec district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        61,
+        62,
+        63,
+        65,
+        66,
+        67,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        189,
+        190,
+        191,
+        213,
+        224,
+        242,
+        246,
+        247,
+        248
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/pa-20250515174716.txt",
+      "full_text_sha256": "0056f8620fbc990651b35cfe0fb8966d781cbd27884091689d0e2a5947968371",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/pa-20250515174716.txt",
+          "sha256": "93f8c05d4eab46d8e154face2e7887f45383dd889de8432b60104af05f6e47b6"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1858401",
+      "original_path": ".cache/firstenergy_research/papuc-1858401.pdf",
+      "original_sha256": "74d69b22c621e6d0242a90014c4ee6cb8629fcf295dc3ef50710c2bcb73a89da",
+      "original_bytes": 942608,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1858401.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1858401",
+          "path": ".cache/firstenergy_research/papuc-1858401.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858401",
+          "path": ".cache/firstenergy_research/papuc-1858401.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/papuc-1858401.txt",
+          "sha256": "f318a33c59ea4704a1952c6c3f712425a57af7a32c3dcaf13dfcb64cb150fc2f",
+          "physical_pages": [
+            1,
+            4
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1858401_p4.txt",
+          "sha256": "5f9e3eae3c37f7de682fc31558df655acad039f60da5fae5fcc73238d531dea0",
+          "physical_page": 4,
+          "printed_leaf": null,
+          "revision": "Filed accepted refund calculation",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/refund2025.png",
+          "sha256": "a3c5c8565d788b1f24600d5af82437b95a6d0d062c8a27b12b1f5ce1f38d537c",
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858401",
+          "physical_page": 4,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1858401_p4.png",
+          "sha256": "f85b11ac5d5ec0518723488dd1a59b7b38a178e99ba2236aeb3c23f7f3f6cc8f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penelec district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        1,
+        4
+      ],
+      "physical_pages": 5,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1858401.txt",
+      "full_text_sha256": "e72486048fae339a1fd1134aae51c13b5f41b4170212d941ce60810aafb2db35",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1858401.txt",
+          "sha256": "11c65d5fda7f9ac7a9c87017fbf91119dd717e7d8f342410298b05787be64b6a"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1860381",
+      "original_path": ".cache/firstenergy_research/papuc-1860381.pdf",
+      "original_sha256": "f712cb3ef7b7b248d9d68ba76c7d55751fa2cbac74b1e8e9924607ac27b5ef74",
+      "original_bytes": 369565,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1860381.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1860381",
+          "path": ".cache/firstenergy_research/papuc-1860381.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1860381_p6.txt",
+          "sha256": "09ebc1dc2adadb5db709ecfbbb322ea994cdad7428166877380c14335f011514",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1860381_p6.png",
+          "sha256": "3f51b68fed4043c471cbfe5b1d49506d72be3b37a8fbb9a88cd86d9fc81637aa",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 18,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1860381.txt",
+      "full_text_sha256": "1cfca79737b4687d19eef1d0d1913c9fc706b20d7ba4694e04d1ec6c8d77cbbe"
+    },
+    {
+      "id": "delivery_papuc-1860899",
+      "original_path": ".cache/firstenergy_research/papuc-1860899.pdf",
+      "original_sha256": "8477b46d9625816a7d1e73835022c5ff4bb322d5dd66cea3b39f4a436e23ea68",
+      "original_bytes": 157869,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1860899.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1860899",
+          "path": ".cache/firstenergy_research/papuc-1860899.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1860899",
+          "path": ".cache/firstenergy_research/papuc-1860899.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/papuc-1860899.txt",
+          "sha256": "583bc2ba8a72ffb80026d2d608385413696a2f13b6116758485c44e9c1528084",
+          "physical_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1860899_p1.txt",
+          "sha256": "9768d6228cf2aadbb6b5c78c06c48cf929531e0055abc48789c72f8652963a07",
+          "physical_page": 1,
+          "printed_leaf": null,
+          "revision": "Commission acceptance",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1860899_p1.png",
+          "sha256": "e74fd63550ffab0d2a7c795cd5e95efeeeb64e935d30290180462741911c3b3c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penelec district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        1,
+        2
+      ],
+      "physical_pages": 2,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1860899.txt",
+      "full_text_sha256": "d44f50951fa99e742df195687fc6913b54cf8cb896f31a173da31667014523c4",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1860899.txt",
+          "sha256": "c1cc4031f351c1db45e187fbf137c85f26b31a154596f67cee7686ea5b55c47c"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1870842",
+      "original_path": ".cache/firstenergy_research/papuc-1870842.pdf",
+      "original_sha256": "203abe5782eb1cf51bb3f081fbbd97a0944592df95120962a51e97a147f5e71a",
+      "original_bytes": 284557,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1870842.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1870842",
+          "path": ".cache/firstenergy_research/papuc-1870842.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1870842_p6.txt",
+          "sha256": "d0ff8423cca936119562996d11c8e45ad65ecc2d17b6c2ff316cf9b101db2ba2",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1870842_p6.png",
+          "sha256": "12fa238c0b97395f246fe80eccac75d7b59147e2dda4bd8557d9c7830a700931",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1870842.txt",
+      "full_text_sha256": "09b30e92908890819ba0fd3a74da534dba5b5343bb057cdfb1eead2da96b7576"
+    },
+    {
+      "id": "delivery_papuc-1877401",
+      "original_path": ".cache/firstenergy_research/papuc-1877401.pdf",
+      "original_sha256": "c0cf4ca81d8ec1daae70c0e9c65e7f0a3e639ece2d72ecb1ad039f0065a60405",
+      "original_bytes": 544983,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1877401.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1877401",
+          "path": ".cache/firstenergy_research/papuc-1877401.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1877401_p6.txt",
+          "sha256": "bedbb7b1757291b1d68d4a985de17ee61445226ff7929dee0beb36a8145f0756",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1877401_p6.png",
+          "sha256": "c811f61b8502dafaf3fedaf0a47697d705ec9bf810fe5d5976e311c766036c61",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 14,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1877401.txt",
+      "full_text_sha256": "987481535166bb17ed5f994b535c7b4f173090ff99dc88b01e3959aba42baf39"
+    },
+    {
+      "id": "delivery_papuc-1879719",
+      "original_path": ".cache/firstenergy_research/papuc-1879719.pdf",
+      "original_sha256": "d6cc73ec9a35f2c812399625e1cf700771858162165ac56d742f67c1952e3bc7",
+      "original_bytes": 287838,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1879719.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1879719",
+          "path": ".cache/firstenergy_research/papuc-1879719.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1879719",
+          "path": ".cache/firstenergy_research/papuc-1879719.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/papuc-1879719.txt",
+          "sha256": "407ea9cd1725722eee494e280afa3caac4d81d608a13d841c2ef7f357d74b492",
+          "physical_pages": [
+            1,
+            5
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1879719_p5.txt",
+          "sha256": "62957e1e5ade750e9820963f0a5321dd7053c9eb45ea1de0a81a0f5fd5a565c3",
+          "physical_page": 5,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/tcja2025.png",
+          "sha256": "d4df2dd24899bcfceb2e85cc137905adba2f653baab3372992c35bd01aa9bdc8",
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1879719",
+          "physical_page": 5,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1879719_p5.png",
+          "sha256": "69e83c8252f31aa7cc8963b8294411324863e7b1e863a3db330480ba65c466a3",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penelec district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        1,
+        5
+      ],
+      "physical_pages": 9,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1879719.txt",
+      "full_text_sha256": "82299895f0e54a07162f0b88032642f5de5e0728a0201887ec3de485870cda88",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1879719.txt",
+          "sha256": "762637afcf1d6dad5577c64b48f4e77592eea60d433841d067818600f224b83e"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1883054",
+      "original_path": ".cache/firstenergy_research/papuc-1883054.pdf",
+      "original_sha256": "e605f32e3378416d98dd0b0b52c41ad105c284aeadff3f59401c0ed7e4f053b3",
+      "original_bytes": 282665,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1883054.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1883054",
+          "path": ".cache/firstenergy_research/papuc-1883054.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1883054_p6.txt",
+          "sha256": "1077bc29fa033f26799a5f78315d5b778f851511af3b873faaee08b2b1384740",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Sixth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1883054_p6.png",
+          "sha256": "b7c170d22ffb90ffd2c87ef7627491b30ca78a4419c4c095fcad3c2a8a5526f1",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1883054.txt",
+      "full_text_sha256": "346e81ffc83f79368b507463dbdd45bd7650c9f31c0aed502ae59aa12ec8d792"
+    },
+    {
+      "id": "delivery_papuc-1885199",
+      "original_path": ".cache/firstenergy_research/papuc-1885199.pdf",
+      "original_sha256": "b54c7f26cebe99bd930fd56793eda1453dd11c18c042a396d34d2220c211aedb",
+      "original_bytes": 383883,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1885199.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1885199",
+          "path": ".cache/firstenergy_research/papuc-1885199.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1885199_p7.txt",
+          "sha256": "3ec7dcc56a13b941ff4bff580c62aa4150b22f14f5ed163b7581c786021a4054",
+          "physical_page": 7,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1885199_p7.png",
+          "sha256": "ebf37c091dc98722be71c82b277a4997d47d22c1b45c2a869974aa06d8241638",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        7
+      ],
+      "physical_pages": 19,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1885199.txt",
+      "full_text_sha256": "dd9c5ac9e132cba568cdec32c66b887e94c2591a7e985cc19a5b92486bb05024"
+    },
+    {
+      "id": "delivery_papuc-1895067",
+      "original_path": ".cache/firstenergy_research/papuc-1895067.pdf",
+      "original_sha256": "fa78c4150271aef61ff879a3f9776b86e95ad196df82d655cad5d1add3c4b926",
+      "original_bytes": 282395,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1895067.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1895067",
+          "path": ".cache/firstenergy_research/papuc-1895067.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/papuc-1895067_p6.txt",
+          "sha256": "90d6ec69c4d2b0c928779ce0eb2abfc91fce6fd67e53ac91afac8faf7041d6b8",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Seventh Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/papuc-1895067_p6.png",
+          "sha256": "20b983ce59dab860f1aad7242cc8fde839f6b515d0b61e86f249f5e613ec9ad0",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/papuc-1895067.txt",
+      "full_text_sha256": "70aaf52591a0426d5344b90ac52869ffc6d0cb8601663aa2ca12c00f1ec769c1"
+    },
+    {
+      "id": "delivery_pa-20250612040318",
+      "original_path": ".cache/firstenergy_research/pa-20250612040318.pdf",
+      "original_sha256": "950266135e6348aac8d173a794aa6117e65868cde47636a71a9c0922e17d410b",
+      "original_bytes": 2519120,
+      "urls": [
+        "https://web.archive.org/web/20250612040318id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-20250612040318",
+          "path": ".cache/firstenergy_research/pa-20250612040318.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-20250612040318_p213.txt",
+          "sha256": "02f08af0b0a420aecb7c028bf11ddc8ececf47a2e1ae216b724ba44ed1483511",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-20250612040318_p221.txt",
+          "sha256": "638a5c12902123f404a775d296aab632866bb8710ff63c79c6732741540644ce",
+          "physical_page": 221,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-20250612040318_p232.txt",
+          "sha256": "6ef5f15f79128de608ac689291cedf49256b973ed60ff353297f9887894f2bff",
+          "physical_page": 232,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-20250612040318_p213.png",
+          "sha256": "57512fb768a893960066a16c1afad0d8c272e8277949a71fd833b73c9fdbc57f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-20250612040318_p221.png",
+          "sha256": "b8993d4513b629f048003615b27c5dbdfe8f1f078569077b12a9d1bf70bcf740",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-20250612040318_p232.png",
+          "sha256": "e5d546dee2904765dbb291823a9562bf65fa2279ea347d6f60659147880a6083",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        213,
+        221,
+        232
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/pa-20250612040318.txt",
+      "full_text_sha256": "f738c9f7b31c01cad1d8cb3afb159e745d1fb7bf2b07716cd80d4aa8c817714f"
+    },
+    {
+      "id": "delivery_pa-2026-01",
+      "original_path": ".cache/firstenergy_research/pa-2026-01.pdf",
+      "original_sha256": "6161113b3a7e6a1ee77b25d600eadbc6c60dbd1ba7c44f6864961a8510c76202",
+      "original_bytes": 2487082,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff-1-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-2026-01",
+          "path": ".cache/firstenergy_research/pa-2026-01.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-2026-01_p213.txt",
+          "sha256": "e5b066a18b9c7642b843baa68cc4add4713124bb7c6b09a503e1cd58cd57802b",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-2026-01_p240.txt",
+          "sha256": "26d04cce698d58885ec466d252d7b88848abfa49a0daf848aae956b2c9f05d80",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Eighth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-2026-01_p213.png",
+          "sha256": "57512fb768a893960066a16c1afad0d8c272e8277949a71fd833b73c9fdbc57f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-2026-01_p240.png",
+          "sha256": "47f36b670ee4b07604d93afd49fb1575d9258126cb838947770ef0c8762078f8",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        213,
+        240
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/pa-2026-01.txt",
+      "full_text_sha256": "3b82704bf871aa0cf999dde274cead09a614599f312e7d15f6af5f5e43b582c0"
+    },
+    {
+      "id": "delivery_pa-2026-04",
+      "original_path": ".cache/met_ed_pa/sources/delivery/pa-2026-04.pdf",
+      "original_sha256": "2d63d379fab461a3e602d9d7b43cd0625f1acf8005613c92fda03b1c92749dbb",
+      "original_bytes": 2593730,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff-4-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-2026-04",
+          "path": ".cache/met_ed_pa/sources/delivery/pa-2026-04.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-2026-04_p240.txt",
+          "sha256": "cb92f03f1704decb694451c6f4ad4be76eda1a0d47dd0385cf479728eca0a96e",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Ninth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-2026-04_p240.png",
+          "sha256": "e6a348a04924bd91311c4f4f261974a184e81dc37219c7e58920e3d7830cf159",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        240
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/pa-2026-04.txt",
+      "full_text_sha256": "87bc05c7b5024ccf1ee659077c51c933f45bc39ef2ce5e83bafca460dc8f6cc7"
+    },
+    {
+      "id": "delivery_pa-june2024",
+      "original_path": ".cache/firstenergy_research/pa-june2024.pdf",
+      "original_sha256": "8a9865ed187ebe37352751eccdb48f908ef8c3282e8ea210c59c6c723b732e69",
+      "original_bytes": 1691444,
+      "urls": [
+        "https://web.archive.org/web/20240607145718id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-june2024",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_june2024_spv",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/pa_june2024_spv.txt",
+          "sha256": "e5e886acce3371e0beae63fed8be31b9b0e2f949989e5aba5f08abb1e0238adb",
+          "physical_pages": [
+            231,
+            232,
+            233,
+            234
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-june2024_p231.txt",
+          "sha256": "7c27528d4e319beb2c32aad2c6449adba4cb5c3d6fcaaf53f7e35ed2495535f3",
+          "physical_page": 231,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/delivery/pa-june2024_p234.txt",
+          "sha256": "50698f3dcdb41cfb6a57eee5e1823f1f1549284a49367d891a9cc741f9c99251",
+          "physical_page": 234,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/tax_rules/spv_exclusion.png",
+          "sha256": "e1739d051f955c9225846ab2935d351209d2c518256864cc81a3250b83a098b1",
+          "owner_stream": "tax_rules",
+          "source_id": "pa_june2024_spv",
+          "physical_page": 234,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-28: Penelec columns, signs, classmatrix and applicability verified"
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-june2024_p231.png",
+          "sha256": "373b468c1641c4a27dab9abf0ef394918329ce2d6a0c7ab4bcf1d214534eeeb4",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penelec_pa/sources/delivery/pa-june2024_p234.png",
+          "sha256": "88ab915be1d60d37ee5c153dc68d6983c71f8b8dab73912644eae78800345a99",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penelec district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        231,
+        232,
+        233,
+        234
+      ],
+      "physical_pages": 243,
+      "full_text_path": ".cache/penelec_pa/sources/delivery/pa-june2024.txt",
+      "full_text_sha256": "c4af3a36529c4cbb0d48b88993fdf2e38e5515eabaea388697d7a890ae9b3f4c",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/pa-june2024.txt",
+          "sha256": "53b07cbebde2559aeda33be19b43ee8c38354c1d62c5a33e0fe3ac944f5c107b"
+        }
+      ]
+    },
+    {
+      "id": "supply_pa-supp11",
+      "original_path": ".cache/firstenergy_research/pa-supp11.pdf",
+      "original_sha256": "1f9ba4c52c8baf416018477039aff367396eb893f8479c8e668dee99a2633b39",
+      "original_bytes": 286865,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FE-PA-Supp-No-11-PTC-HPS-Rider-Changes-12-1-2024.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "pa-supp11",
+          "path": ".cache/firstenergy_research/pa-supp11.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/pa-supp11_p001.txt",
+          "sha256": "a2fc2bac6c548b6b43a97b99f5aa3a9bffb0ce4f19ef05bd3f2ffc26ab5fde57",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/pa-supp11_p003.txt",
+          "sha256": "467688360594d767a15de7a5155749af290538a6e1bf7ce4a0a818845f42013e",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/pa-supp11_p3.png",
+          "sha256": "3ccfc685919de25aca40cfe7f4e19c8dde1856ec0f31768d31c12ffaa13547b5",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; Peneleccolumnonly, sourceclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 4,
+      "full_text_path": ".cache/penelec_pa/sources/supply/pa-supp11.txt",
+      "full_text_sha256": "dc681ad7434cc27161390d7c42a7fa712bb7191ed4f8908c248331b1b7da8f07"
+    },
+    {
+      "id": "supply_pa-supp19",
+      "original_path": ".cache/firstenergy_research/pa-supp19.pdf",
+      "original_sha256": "d11bc4fd1e9254c2d4648410919b578cdc00608a80e46b8ea0d162effe57e4f0",
+      "original_bytes": 196431,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-Supp-No-19-PTC-and-HPS-Rider.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "pa-supp19",
+          "path": ".cache/firstenergy_research/pa-supp19.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/pa-supp19_p001.txt",
+          "sha256": "574cc426821928b14de0d8e129b5766d5a9153a30ac00e59ab3e5590c000afa7",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/pa-supp19_p003.txt",
+          "sha256": "931f61f0de0a61143cb8f60349c1aebe495a6f316e51908e549d9acff40e53d6",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/pa-supp19_p3.png",
+          "sha256": "13226740a0367dac5033d78e70d4b795ce87e17bef00589df93ce318af04d865",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; Peneleccolumnonly, sourceclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 5,
+      "full_text_path": ".cache/penelec_pa/sources/supply/pa-supp19.txt",
+      "full_text_sha256": "c958f86af8792cc25456488b8cebc6b386d7286d4ac84ad28d3d5ea051a0308c"
+    },
+    {
+      "id": "supply_supp28",
+      "original_path": ".cache/met_ed_pa/sources/supply/supp28.pdf",
+      "original_sha256": "a5ebbe14bac4ca4807c8ce477323ffad850b34cc854f302b1e64f694e7ffb336",
+      "original_bytes": 171636,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-Supp-No-28-PTC-HPS-Rider-Changs-12-1-2025.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "supp28",
+          "path": ".cache/met_ed_pa/sources/supply/supp28.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/supp28_p001.txt",
+          "sha256": "9b074ff2074c87322364ace677114361ac083cf8c347a32d4f7e1f4aed9eacad",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/supp28_p003.txt",
+          "sha256": "fab7d89aa3c9b948afeef70f536160dd5199a1cc4bc1ea03cf19b127ef7ef5e6",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/supp28_p3.png",
+          "sha256": "362a240df1d9dbf6e0ea2b73157e64a7b82990f9cba77e4270fd650a6e39858c",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; Peneleccolumnonly, sourceclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 4,
+      "full_text_path": ".cache/penelec_pa/sources/supply/supp28.txt",
+      "full_text_sha256": "8f10e63d0a0d2ac6510cd95c847ad56dd0dc288897516d942f8c46810e127984"
+    },
+    {
+      "id": "supply_supp36",
+      "original_path": ".cache/met_ed_pa/sources/supply/supp36.pdf",
+      "original_sha256": "a8b0ff4be057ec7d19b9da1d5a9342054a00904b30f5d4797feff50b2e5e0eae",
+      "original_bytes": 675074,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-PTC-Effective-06-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "supp36",
+          "path": ".cache/met_ed_pa/sources/supply/supp36.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/supp36_p001.txt",
+          "sha256": "78cfe7b4497f90d1b9eee1dabf66f7cba30e10ed1c440aae767e170c78fca8ac",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/supp36_p004.txt",
+          "sha256": "1a86062c374d6b4efb25f938492d98502c2d10a380914092688f623dd6c22610",
+          "physical_page": 4
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/supp36_p006.txt",
+          "sha256": "a440120b4d881d9e6e72be082a13a4fe4044a558f326a02e12e621bb037b84f3",
+          "physical_page": 6
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/supp36_p018.txt",
+          "sha256": "4e5de904e11410887450f7eccaa64f3164f0ec0fc57af2b2d042b75ed9490454",
+          "physical_page": 18
+        },
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/supp36_p021.txt",
+          "sha256": "582b61ad990ce4d4d1b13f2c023ee0259b0d5ee8581ccc89a51c3c8dafdaf14f",
+          "physical_page": 21
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/supp36_p6.png",
+          "sha256": "43083a6c33a2bea2ac359840fee53dc7a4d8ff0c392c452695c3303a33091301",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; Peneleccolumnonly, sourceclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        4,
+        6,
+        18,
+        21
+      ],
+      "physical_pages": 44,
+      "full_text_path": ".cache/penelec_pa/sources/supply/supp36.txt",
+      "full_text_sha256": "baa0522505f3188c75d06b353c08e1b65cee69ee3f34efa22f1218b605fa27cd"
+    },
+    {
+      "id": "supply_abcs_dec24",
+      "original_path": ".cache/penelec_pa/sources/supply/abcs_dec24.pdf",
+      "original_sha256": "f370a6ee79e5c538c65e0cc3e23b35ac3a0a7f6cfda2e872203ed5bd21faa05c",
+      "original_bytes": 98340,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2024-12%20ABCs%20of%20Shopping%20pn.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_dec24",
+          "path": ".cache/penelec_pa/sources/supply/abcs_dec24.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/abcs_dec24_p001.txt",
+          "sha256": "becf6ffc9d3b335594c3f5a8e8f1cd35bc95b021e918aa2577b6e72e8c6f81a9",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "officialPeneleccustomerinsertbenchmark; componentonly"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penelec_pa/sources/supply/abcs_dec24.txt",
+      "full_text_sha256": "88983b63fe9e24f23339a69ac866abddef3aafbf23f804c6bfe01f4350bc44cb"
+    },
+    {
+      "id": "supply_abcs_jun25",
+      "original_path": ".cache/penelec_pa/sources/supply/abcs_jun25.pdf",
+      "original_sha256": "4cae34f44d9fd6fcc149c17b838e5b3d422c62c24a9dd8f04d55e3e25badedfa",
+      "original_bytes": 96450,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-06%20Penelec%20ABCs%20Of%20Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_jun25",
+          "path": ".cache/penelec_pa/sources/supply/abcs_jun25.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/abcs_jun25_p001.txt",
+          "sha256": "ba2439d193f20e4ca2765303baf1ebe3217716b30a62e51d88f75c6c646d826c",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/abcs_jun25_p1.png",
+          "sha256": "fff96fc329893ec44dc77bfdb0937534ba2fa811694b2df147820f2d28151e74",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "retainedoriginal: correctJune25numericprices, erroneousMay31,26endheader; NOTDec25May26rateauthority"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penelec_pa/sources/supply/abcs_jun25.txt",
+      "full_text_sha256": "b56847285966fed1e263c0fb1595db8911efdec410a14b14941304523ac0eab0"
+    },
+    {
+      "id": "supply_abcs_apr26",
+      "original_path": ".cache/penelec_pa/sources/supply/abcs_apr26.pdf",
+      "original_sha256": "8ad3b813b92dfec9aea6784168b99cb24736c74f9207b69ae02bd1335efb405c",
+      "original_bytes": 96433,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/04-2026%20PA%20Penelec%20ABC%27s%20of%20Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_apr26",
+          "path": ".cache/penelec_pa/sources/supply/abcs_apr26.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/abcs_apr26_p001.txt",
+          "sha256": "ac961f4a015ab7e5fa59633a323e2a494261753d85438b0e0044aab03d8089f4",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/abcs_apr26_p1.png",
+          "sha256": "1847bca75f41b9ce297db6411ec0446ba49d1463e1da773be4ec76fef88f7679",
+          "owner_stream": "supply",
+          "visually_reviewed": false
+        }
+      ],
+      "source_qualifications": [
+        "officialPeneleccustomerinsertbenchmark; componentonly"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penelec_pa/sources/supply/abcs_apr26.txt",
+      "full_text_sha256": "855a06916e689c483874aca69b5b2614d016770fd1716f335b1c8dc2116a6c11"
+    },
+    {
+      "id": "supply_abcs_aug26",
+      "original_path": ".cache/penelec_pa/sources/supply/abcs_aug26.pdf",
+      "original_sha256": "735284a01b282eff87e42a5d575a55fc0bd0f0552b322d4553245d83353287fb",
+      "original_bytes": 96636,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-08%20Penelec%20ABCs%20Of%20Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_aug26",
+          "path": ".cache/penelec_pa/sources/supply/abcs_aug26.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/abcs_aug26_p001.txt",
+          "sha256": "648b477902a39259d8f0b40f7e1cf1f90f39f4d212631702aa27578bfd3c7809",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/abcs_aug26_p1.png",
+          "sha256": "e6b7e5a5d271bbd9ae90e071e0e4caaf6a8718e37275de1b8da9b6debf5bab50",
+          "owner_stream": "supply",
+          "visually_reviewed": false
+        }
+      ],
+      "source_qualifications": [
+        "officialPeneleccustomerinsertbenchmark; componentonly"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penelec_pa/sources/supply/abcs_aug26.txt",
+      "full_text_sha256": "9af29b2f74118cf73c8d1c58eab05f652e25140407a3da7c348886c73fbf19ba"
+    },
+    {
+      "id": "supply_bill_insert_index",
+      "original_path": ".cache/penelec_pa/sources/supply/bill_insert_index.html",
+      "original_sha256": "46d70552b1d286a7a3dc534ddc98d9354af98f26d5b16d0bf5077b262116be0e",
+      "original_bytes": 120654,
+      "urls": [
+        "https://www.firstenergycorp.com/help/billingpayments/about_your_bill/bill_inserts/penelec.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "bill_insert_index",
+          "path": ".cache/penelec_pa/sources/supply/bill_insert_index.html"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "supply_abcs_current_dec25_link",
+      "original_path": ".cache/penelec_pa/sources/supply/abcs_current_dec25_link.pdf",
+      "original_sha256": "27bad406cb474dee2104d9b2047e673c36daba967b9f41b5d8fd0274ff0a27b2",
+      "original_bytes": 96467,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/10693-Penelec-ABCs-Of-Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_current_dec25_link",
+          "path": ".cache/penelec_pa/sources/supply/abcs_current_dec25_link.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/supply_excerpts/abcs_current_dec25_link_p001.txt",
+          "sha256": "07167b36cfc8bb287766ce01308b4acfb19abd91fdda2d4f7052698d7f83bcdc",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/supply/abcs_current_dec25_link_p1.png",
+          "sha256": "34c1d80c9254046f24d345f08b1221d19a576463dce7cdacaf436da1a610741f",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "officialPeneleccustomerinsertbenchmark; componentonly"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penelec_pa/sources/supply/abcs_current_dec25_link.txt",
+      "full_text_sha256": "cc331c62ad23cf1f0c4989ef1af5fdbdcbfc3272f7edcffac873d892d01bccab"
+    },
+    {
+      "id": "tax_rules_pa_52_56_2",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_52_56_2.html",
+      "original_sha256": "7a8c8e24777c95bf7fa3b2d8e23f3e3d9fd0dd23e04169b7084923db0f2ddcad",
+      "original_bytes": 24307,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter56/s56.2.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_52_56_2",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_52_56_2.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/pa_52_56_2.txt",
+          "sha256": "8d047e18123a114e44b5a75eded975c7a861ea952edaab02cb992551bb1e99cd",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenelec; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13reopenedlive2026-10-28andmatchedrelevantclauses."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_52_75_13",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_52_75_13.html",
+      "original_sha256": "d3e5b486fb48d14f4cd15736362379b2f02a483abaf7b22eb24af382dcea26d2",
+      "original_bytes": 9801,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter75/s75.13.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_52_75_13",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_52_75_13.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/pa_52_75_13.txt",
+          "sha256": "e09dfe45ebca5e9c6c2387b1a1405867e6d31f0db91cbefda611c532ce2a80da",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenelec; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13reopenedlive2026-10-28andmatchedrelevantclauses."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_61_32_25",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_61_32_25.html",
+      "original_sha256": "1466a3e421a4e128f8dc1c291b07409bdfa6f7866652b7f8822f6b8ae1e3fa79",
+      "original_bytes": 13731,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter32/s32.25.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_61_32_25",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_61_32_25.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/pa_61_32_25.txt",
+          "sha256": "5e5b7b9b73a0c481b618a7ace10f42c218ae59fbc80eb57176b0bcbcb60f7478",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenelec; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13reopenedlive2026-10-28andmatchedrelevantclauses."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_61_33_2",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_61_33_2.html",
+      "original_sha256": "3006420a6f301dcf3f456969bc41ad6766362a6273d0d3574fb90b91c86d8121",
+      "original_bytes": 12296,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter33/s33.2.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_61_33_2",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_61_33_2.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/pa_61_33_2.txt",
+          "sha256": "05cf3747ce200045aff0ef71d47e64490ac929cdc19d2cf701f773dfa8657bf5",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenelec; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13reopenedlive2026-10-28andmatchedrelevantclauses."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_dor_sales_tax",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_dor_sales_tax.html",
+      "original_sha256": "7fd70b7bbd9a2f4f3bc0b408b0e06e308d0df0ecf0f498a3758583879f7168ea",
+      "original_bytes": 451784,
+      "urls": [
+        "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_dor_sales_tax",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_dor_sales_tax.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penelec_pa/tax_rules_excerpts/pa_dor_sales_tax.txt",
+          "sha256": "361f4b7d5f8adcd4229cc2c8f3d8e85419a127052a68038c3dfa812434325f0a",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenelec; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13reopenedlive2026-10-28andmatchedrelevantclauses."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "metadata_pjm_zones",
+      "original_path": ".cache/penelec_pa/sources/metadata/pjm_zones.pdf",
+      "original_sha256": "465880de2d75b1353e251672fce35f59173ec76df32b577ba3bdc95272d98549",
+      "original_bytes": 19064305,
+      "urls": [
+        "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.ashx"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "pjm_zones",
+          "path": ".cache/penelec_pa/sources/metadata/pjm_zones.pdf"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/penelec_pa/sources/metadata/pjm_zones_penelec_excerpt.txt",
+          "sha256": "19b3f936ca4c858fc817ba904d12cb126046d1644f3fecddfabd3f0f10bb67a3",
+          "physical_pages": [
+            1
+          ]
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penelec_pa/sources/metadata/pjm_zones_penelec.png",
+          "sha256": "bdf2c0d95e532a3c895f9f4e872aab8be93eceabd9706d60b1b9258764a6e9e8",
+          "visually_reviewed": true,
+          "parser_notes": null,
+          "physical_page": 1,
+          "owner_stream": "metadata"
+        }
+      ],
+      "source_qualifications": [
+        "PENELEC PJM zone label only; coarse map is not territory, locality, supplier, account eligibility or pricing node proof."
+      ],
+      "selected_physical_pages": [],
+      "full_text_path": ".cache/penelec_pa/sources/supply/pjm_zones_selected_source_full_text.txt",
+      "full_text_sha256": "92c1851018e8a133275fea91526f9c1cf0a0ee2d462c2491d84274e5d38fe6f2",
+      "physical_pages": 1
+    },
+    {
+      "id": "metadata_pjm_regions",
+      "original_path": ".cache/penelec_pa/sources/metadata/pjm_regions.html",
+      "original_sha256": "98fe1fec5806ffccf3d9104531f8a604140d01e00e3e5b2b1321cb628d3fd601",
+      "original_bytes": 46783,
+      "urls": [
+        "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "pjm_regions",
+          "path": ".cache/penelec_pa/sources/metadata/pjm_regions.html"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/penelec_pa/sources/metadata/pjm_regions_excerpt.txt",
+          "sha256": "64a6fc8f8252664b4e6b8715708e3bb015ea09de8514b07226db02b45a0e41a8",
+          "physical_pages": []
+        }
+      ],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "FE-PN emergency transmission region and PENELEC market/load zone are separate metadata; neither assigns utility territory, supplier, tax jurisdiction, eligibility, rate or pricing node."
+      ],
+      "selected_physical_pages": []
+    }
+  ],
+  "derived_receipts": [
+    {
+      "path": ".cache/penelec_pa/sources/delivery/delivery_records.json",
+      "sha256": "6b6452e5e5edc94075301390df56f734bc681eac210f652f1d0c08610205643d",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/delivery_snapshots.json",
+      "sha256": "3fb387405ecb1bbe09f933318b2c2ee48b1a05eb435b8ac798e2609e6e392bc0",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/render_inventory.json",
+      "sha256": "44ead5186e255f6f0de2945e5794f2986f17ee8a94c9692b3921111c36c917af",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/metadata/market_zone_receipt.json",
+      "sha256": "9c5997f9d80f22806e3f83d0dd25b7908ad8ff6e884b8a6332454940ec369455",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/metadata/pjm_receipt.json",
+      "sha256": "1cf51fa6f5bc97929721a2e56580581d010693c1f50b115d8c63eaca4e6f8146",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/supply/supply_records.json",
+      "sha256": "ab9aa153a01e8f209483f3eb78227a6b1197f6cace33a8fa2b0b3f32f320cd8d",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/supply/supply_snapshots.json",
+      "sha256": "51bd0903f12a53253bccd9f50945a1a91473e67870977f51dc73ea6266267b80",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/tax_rules/tax_rules_records.json",
+      "sha256": "40f464b66716e4b6d26601cacde519e8247342187eb41a5c48f5f4bc75eb11bd",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/penelec_pa/delivery_research.md",
+      "sha256": "3fd96e91c291f760c1fb0933faaa4ff32aca623ab6d54e772a930093822dada5",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/penelec_pa/supply_research.md",
+      "sha256": "72eb56d065562f53d6dfdb9779304cd01acfcf4b831c5d03fbdd760708bea11b",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/penelec_pa/tax_rules_research.md",
+      "sha256": "1c3000ddd1bf55e84403ea40ab3c27cb050aee4fb5fb332351aafcfcf96b4b37",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penelec_pa/sources/supply/ptc_four_windows_montage.png",
+      "sha256": "93ea46804cdb8ded76eb65c16176c0a4d45deb763286b88dbeb2c06a6599a518",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/supply/tariff_current_p66.png",
+      "sha256": "f83576820c1d51b77f7662ab1c6c899f52111abd29f9ecdaedaef222dd1c521c",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_1.png",
+      "sha256": "3dbe4c35dd2bb6bfd93818646b5795ba9aa1e0af4a92052e73f4a5786eaa3770",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_10.png",
+      "sha256": "e2da4e08c562d1638ca8ac886fa71cbe9f6a2a9017be8b6dac8762498c750abb",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_11.png",
+      "sha256": "7b60d2dc8b636b54639d9ab9aecaeccc7b0225f05d9a79590acb3ed05f2e95ba",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_2.png",
+      "sha256": "a4b0e9d5bca3aca68019a3013a0d091c02f614d40b3b8258b3da3681f198b139",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_3.png",
+      "sha256": "c304c89e7c7e543dd43b91ae93bb9d89a6c0fb5ab01f61a2d13b30547836357f",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_4.png",
+      "sha256": "32509b333a45c5fbc76fd082cf8a4a82c8bd5c98ecc631da5375e5f1d8b0b242",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_5.png",
+      "sha256": "985720d1c1640846295a3e88583405b81e9e152accfcfaf653b677b5169da363",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_6.png",
+      "sha256": "059ec9ce9f817fa0136721d47ac6ed262d70d79776942eb15df304833f91b1df",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_7.png",
+      "sha256": "e541785c69af2ef97063d1f0351002666a21b6a9c84bed726253953d4e56f4fc",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_8.png",
+      "sha256": "28cff8dd0f095229a7a6f1ef0599736c82361980995bca0e15a4118f37d63c5d",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penelec_pa/sources/delivery/review_contact_9.png",
+      "sha256": "5cf4b9362e4e0bb2f134a2909f8114f92967c185b17024d6290496fc56c7cb64",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/utility_sources/firstenergy/manifest.json",
+      "sha256": "5b3bd4e5dd3d2f419a8669d8ff5b5fbf41782f8427802ff391bb0b74ccde89d5",
+      "status": "reused source provenance ledger; no edits; Met-Ed column applicability verified independently"
+    }
+  ],
+  "blocked_routes": [
+    {
+      "owner_stream": "supply",
+      "id": "abcs_dec25",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-12%20Penelec%20ABCs%20Of%20Shopping.pdf",
+      "final_url": "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-12%20Penelec%20ABCs%20Of%20Shopping.pdf",
+      "http_status": 404,
+      "retrieved_date": "2026-10-28",
+      "original_preserved": false,
+      "action": "oneofficialsourceattempt;notretried"
+    },
+    {
+      "id": "JulySeptember2026_DSIC",
+      "status": "TenthRevised239 not recovered in bounded targeted official search; do not extend Ninth or backfill Eleventh",
+      "scope": "unsupported2026-07-01through2026-09-30"
+    }
+  ],
+  "limitations": [
+    "Peneleccolumns only; MetEd/PennPower/WestPennprices andclassprovisionsnotborrowed. Reusedoriginals verifiedSHA/applicability; multipleURLcopiesdeduplicatedwithaliases.",
+    "LEDCmandatoryallclassesbillingunits, notconditionaloncustomerconversion. Apr25Mar26RS.00022/GS.00016; Apr26Mar27.00007/.00006. JanMar25 not-applicable-beforefirstAprwindowisdisclosedinference; no separatepricedJanMarzero rowfound.",
+    "JulSep26DSICmissingquarter cannotcarryApril orbackfillOctober. Jan25GS unknownpriorrefundsales-taxadjustment excludescompletebillclaim; refunds district-specific6.15/3.42alreadyGRTinclusiveonce.",
+    "PTCcomposites include applicableGRT/loss/admin/capacity/PJM/AEPS/NITS/recon. SeparateDSSNMBtransmissionandmandatoryLEDCaddonce; noLMP/PLC/NSPLcharges addedtoPTC.",
+    "Supp28rawMay30endpointretained; correctcurrentPenelecDec25link10693andApril26insert explicitlysameprices throughMay31 plusrider204sixmonths supportMay31. FileddatesJune1controlnotworkbookrawJune24headers.",
+    "ActualretainedJune25insert hascorrectJuneprices butwrongMay31,26endheader; adoptedSupp19Nov30,25controls. Unavailableindexed2025-12asset404notretainednumericproof; distinctactualcurrent10693Decemberoriginaliscorrect.",
+    "Physical66matrixPenelecA+CnotPennPowerBGSDS. Initialexcludesutility-imputedC; exactGSclassificationgross/netpredicateunproved, companyassignment/historyseparatefrommodeledenergy.",
+    "PTC/USC/DSS/LEDC/STASserviceclocks distinctfromTCJA/DSICbills-rendered. Accountbilldateexplicit; no720hourmonth/unsupportedproration/cashrounding/minimumorderinginvented.",
+    "RSspecialdemandmetertriggers andPenelec3.26/excesskWabove25ratchetretainedsourcefacts; inactiveimplementationdomain doesnotconfereligibility. NoPV-resetqualification/history.",
+    "IndependentPenelecPTCinserts/workbook/supportingcalculationsarecomponentbenchmarks; noindependentlymatchedactualcompleteutilityinvoiceestablished.",
+    "Rootmetadata includesonlyFE-PNHTMLandselectedPJMzonesPDFPENELEClabelpage1; unusedpjm_2025_zonal_msa.pdf/.txt excludedfromledgerandaudit. NoMSAgeographyadoption orwholesalepriceinference.",
+    "Sourcefacts/accountscopeareconditional; actualcustomereligibility, engine/math/dispatch/OpenDSS/matrix/browseracceptance requiretheir ownmatchingcandidateproofs. Rootimplementationguideandvalidationreportsnotpinnedassources."
+  ],
+  "validation_limit": "Source preservation/hash/text checks only; no billing simulation, optimizer, electrical or browser proof claim."
+}

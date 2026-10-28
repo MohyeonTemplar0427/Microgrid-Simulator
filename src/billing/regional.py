@@ -14,6 +14,8 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "firstenergy_pa_penelec": {"label":"FirstEnergy Pennsylvania · Penelec district", "state":"PA", "zone":"PENELEC", "module":"penelec_pa", "timezone":"America/New_York",
+                              "grid_operator":"PJM", "emergency_region":"FE-PN", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf", "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.ashx"]},
     "firstenergy_pa_met_ed": {"label":"FirstEnergy Pennsylvania · Met-Ed district", "state":"PA", "zone":"METED", "module":"met_ed_pa", "timezone":"America/New_York",
                              "grid_operator":"PJM", "emergency_region":"FE-ME", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf", "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2025/20250613/20250613-post-meeting---review-requested---zonal-msa-map-changes.pdf"]},
     "rockland_electric_new_jersey": {"label":"Rockland Electric · New Jersey (Bergen/Eastern)", "state":"NJ", "zone":"RECO", "module":"rockland_nj", "timezone":"America/New_York",

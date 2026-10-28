@@ -64,6 +64,7 @@ PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
                  ("ppl_electric_pennsylvania", "commercial", "GS-1"),
                  ("aep_ohio", "residential", "RS"), ("aep_ohio", "commercial", "GS-1"))
 BGE_CASES = (("bge_maryland", "residential", "R"), ("bge_maryland", "commercial", "G"))
+PENELEC_CASES = (("firstenergy_pa_penelec", "residential", "RS"), ("firstenergy_pa_penelec", "commercial", "GS-S"))
 MET_ED_CASES = (("firstenergy_pa_met_ed", "residential", "RS"), ("firstenergy_pa_met_ed", "commercial", "GS-S"))
 ROCKLAND_CASES = (("rockland_electric_new_jersey", "residential", "SC1"), ("rockland_electric_new_jersey", "commercial", "SC2"))
 JCPL_CASES = (("jcpl_new_jersey", "residential", "RS"), ("jcpl_new_jersey", "commercial", "GS"))
@@ -74,6 +75,7 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "firstenergy_pa_penelec": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "firstenergy_pa_met_ed": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "rockland_electric_new_jersey": ((2026,"2026-10-01","2026-10-31"),),
     "jcpl_new_jersey": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -94,7 +96,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -228,7 +230,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2026-09-01","2026-09-30"
     if utility == "rockland_electric_new_jersey" and custom is None and period == "monthly":
         start,end="2026-10-01","2026-10-31"
-    if utility == "firstenergy_pa_met_ed" and custom is None and period == "monthly":
+    if utility in ("firstenergy_pa_met_ed", "firstenergy_pa_penelec") and custom is None and period == "monthly":
         start,end="2026-06-01","2026-06-30"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
@@ -242,8 +244,10 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
-    if utility == "firstenergy_pa_met_ed":
-        from src.billing.met_ed_pa import history_through
+    if utility in ("firstenergy_pa_met_ed", "firstenergy_pa_penelec"):
+        history_through=adapter(utility).history_through
+        if utility=="firstenergy_pa_penelec":
+            account.update(january_refund_eligibility_confirmed=start=="2025-01-01",refund_eligibility_source="Explicit hypothetical established eligible Penelec account entitled to the January2025 prior-cost refund" if start=="2025-01-01" else "")
         account["gs_history_through_month" if account["tariff"] == "GS-S" else "rs_history_through_month"] = history_through(start)
     if utility == "jcpl_new_jersey" and account["tariff"] == "GS":
         from src.billing.jcpl_nj import history_through, pls_as_of
@@ -470,8 +474,8 @@ def attach_weather(app, request, inputs):
 def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
                        allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
-    if utility == "firstenergy_pa_met_ed":
-        from src.billing.met_ed_pa import JANUARY_GS_EXCLUSION,cycle_review,rates_on
+    if utility in ("firstenergy_pa_met_ed", "firstenergy_pa_penelec"):
+        model=adapter(utility);JANUARY_GS_EXCLUSION=model.JANUARY_GS_EXCLUSION;cycle_review=model.cycle_review;rates_on=model.rates_on
         expected=cycle_review(account,index);r=rates_on(expected["service_start"],account["tariff"]);m=bill.get("metrics",{});res=account["tariff"]=="RS"
         excluded=[JANUARY_GS_EXCLUSION] if not res and account["bill_date"][:7]=="2025-01" else []
         require(bill.get("is_complete_bill") is (not excluded) and bill.get("excluded_components")==excluded
@@ -506,6 +510,27 @@ def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False,
                     and 0.<=bill["import_kwh"]<=1500.+1e-7
                     and bill["next_state"].get("gs_qualification_upper_bound_kwh")==1500.,
                     "Met-Ed GS Company-retained qualification envelope must not reset from optimized imports")
+        if utility=="firstenergy_pa_penelec":
+            independent_dsic_basis=sum(v for k,v in raw.items() if k not in ("supply","distribution_dsic","state_tax_adjustment","sales_tax","january_refund"))
+            independent_stas_basis=sum(v for k,v in raw.items() if k not in ("state_tax_adjustment","sales_tax","january_refund"))
+            require(abs(m["dsic_basis_usd"]-independent_dsic_basis)<1e-6
+                    and abs(m["stas_basis_usd"]-independent_stas_basis)<1e-6,
+                    "Penelec DSIC/STAS bases must independently include every applicable delivery rider including LEDC")
+            require(abs(raw.get("led_conversion",float("inf"))-bill["import_kwh"]*r["ledc_kwh"])<1e-6
+                    and m.get("ledc_usd_kwh")==r["ledc_kwh"]
+                    and m.get("ledc_applicability_status")==r["source_versions"]["LEDC"].get("status","FILED_EFFECTIVE_PRICE")
+                    and m.get("ledc_start_window_interpretation")==r["source_versions"]["LEDC"].get("interpretation"),
+                    "Penelec mandatory LEDC and original first-April-window non-applicability interpretation must remain explicit")
+            if not res:
+                require(account.get("gs_fixed_imputed_usage_excluded_confirmed") is True
+                        and account.get("gs_no_demand_meter_confirmed") is True
+                        and m.get("gs_fixed_imputed_usage_excluded_verified") is True,
+                        "Penelec GS-S ordinary actual metering/no-demand-meter branch must exclude fixed/imputed usage")
+            if account["bill_date"][:7]=="2025-01":
+                require(account.get("january_refund_eligibility_confirmed") is True
+                        and bool(account.get("refund_eligibility_source"," ").strip())
+                        and m.get("january_refund_entitlement_confirmed") is True,
+                        "Penelec January refund entitlement must be independently documented")
         return ("verified_charges_subtotal" if excluded else "complete_utility_bill"),excluded
     if utility == "rockland_electric_new_jersey":
         from src.billing.rockland_nj import cycle_review

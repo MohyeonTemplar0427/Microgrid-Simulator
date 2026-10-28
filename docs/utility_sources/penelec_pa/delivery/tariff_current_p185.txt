@@ -1,0 +1,76 @@
+Source: https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf
+Original SHA256: 665736ea46b7860651226605624c298b6990e3c0581166e543ccf27bd25b8f9d
+Physical page: 185
+Printed page: 185
+Revision: Third Revised
+Rate district: Penelec, independently reviewed column
+
+Issued: December 1, 2025 Effective: January 1, 2026  
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Supplement No. 31 to 
+Electric Pa P.U.C. No. 1  
+                                Third Revised Page 185 
+                                    Superseding Second Revised Page 185 
+ 
+  
+ 
+ 
+ 
+UNIVERSAL SERVICE COST RIDER 
+ 
+Universal Service Charge (“USC”) shall be applied to each kilowatt-hour delivered during a billing 
+month to all Customers served under residential retail rate schedules under this Tariff, determined to the 
+nearest one-thousandth of a cent per kilowatt-hour. The USC shall be non-bypassable. 
+ 
+For service rendered January 1, 2026 through December 31, 2026 the USC shall be equal to the 
+charge below for all kWh. The USC shall be included in the distribution charges of the monthly bill. 
+ 
+Rate District Met-Ed Penelec Penn Power West Penn 
+Charge 1.283  (I) 
+cents per kWh 
+1.844  (I) 
+cents per kWh 
+1.236  (I) 
+cents per kWh 
+1.058 (I) 
+cents per kWh 
+ 
+The USC shall be calculated in accordance with the formula set forth below: 
+ 
+USC = [(USC/SRes) – (E/SRes)] x [1/(1-T)] 
+ 
+Where:  
+ 
+USC = The charge in mills per kilowatt -hour to be applied to each kilowatt -hour delivered to all 
+Customers served under residential retail rate schedules under this Tariff. 
+ 
+USC = Universal Service Program Costs, which are the estimated direct, indirect and 
+administrative costs to be incurred by the Companies to provide Universal Service to 
+Customers for the USC Computational Year for the following programs (“Universal 
+Service Programs”): 
+ 
+• Customer Assistance and Referral for Evaluation of Services (“CARES”) 
+Program 
+• Customer Assistance Program (“CAP”) 
+• Fuel Fund Administration 
+• Gatekeeper Program 
+• WARM (formerly LIURP) Program 
+• Any other replacement or Commission-mandated Universal Service 
+Programs. 
+ 
+SRes =  The Company’s projected retail kilowatt -hour sales for the projected USC billing period 
+for Customers served under residential retail rate schedules under this Tariff. 
+ 
+(C) Change 
+(I) Increase 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+(C) 

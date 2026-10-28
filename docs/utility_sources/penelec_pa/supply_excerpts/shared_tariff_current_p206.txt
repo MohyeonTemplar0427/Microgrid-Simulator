@@ -1,0 +1,57 @@
+SOURCE: .cache/met_ed_pa/sources/delivery/tariff_current.pdf
+PHYSICAL PAGE: 206
+
+Issued: December 22, 2023 Effective: January 1, 2024  
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Electric Pa P.U.C. No. 1  
+  Original Page 206 
+ 
+ 
+ 
+ PRICE TO COMPARE DEFAULT SERVICE RATE RIDER (continued) 
+ 
+DSExp2 =  The cumulative costs to provide Default Service incurred by the Company for the 
+respective Customer Class for the six -month period ending two months prior to the 
+effective date, including but not limited to the following: 
+ 
+• Payments made to winning bidders. 
+• Any PJM related charges including capacity, operating reserve, transmission - 
+related costs other than Non- Market Based Services Transmission Charges 
+identified in the Default Service Support Rider, and ancillary services associated 
+with the acquisition of default service supply. 
+• All contingency plan implementation costs incurred during the supply period, 
+including any PJM charges to implement the Company’s contingency plans. 
+• An allocated portion of other costs incurred to develop and implement the 
+competitive bid process for Default Service including legal, customer notice, and 
+consultant fees. 
+• The net AEPS expenses incurred by the Company associated with the portfolio 
+procurements of the supply needed from block and spot purchases. These net AEPS 
+expenses will reflect the net proceeds of sales of AEPS credits purchased that 
+exceed the AEPS credits needed to meet AEPS requirements. 
+• The cost of credit when the Company is considered by PJM to be the load serving 
+entity. 
+• Any cost incurred by the Company associated with any Commission -approved 
+solar power purchase agreements and the administration of the Company’s long - 
+term solar procurement, including the costs associated with spot purchases to 
+satisfy a fixed quantity of default service load. These costs will be recovered from 
+the customers in the applicable procurement classes receiving an allocation of the 
+solar energy and/or the SPAECs procured. 
+ 
+PTCRev = The cumulative revenues billed to Retail Customers by Customer Class for Default 
+Service under the Default Service Supply Plan, excluding applicable Pennsylvania 
+gross receipts tax, for the six-month period ending two months prior to the effective 
+date billed under the respective Customer Class PTCDefault rates. 
+ 
+DSInt  =  The cumulative amount of carrying charges calculated on a monthly basis for the six - 
+month period ending two months prior to the effective date by Customer Class. 
+Interest shall be computed monthly for the over or under collection at the prime rate of 
+interest for commercial banking, not to exceed the legal rate of interest, in effect on the 
+last day of the month that the over and under collection occurs, as reported in the Wall 
+Street Journal, to the effective month that the over collection is refunded or the under 
+collection is collected.  
+ 
+DSSales = The Company’s projected Default Service kWh sales to Retail Customers by Customer 
+Class for the six-month billing period that the E rate component of the PTC Default rate 
+will be in effect. 
+ 
