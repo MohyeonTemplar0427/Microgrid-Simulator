@@ -25,7 +25,7 @@ GUI_TESTS = ("test/test_application_interface.py", "test/test_desktop_applicatio
 AREAS = {
     "validation": ("test_validation_launcher.py", "test_regional_validation_resume.py",
                    "test_regional_validation_driver.py", "test_regional_coverage.py"),
-    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py", "test_dte*.py", "test_consumers*.py", "test_ameren*.py", "test_xcel_mn.py", "test_we_energies_wi.py", "test_duke_in.py", "test_we_duke*.py", "test_alliant*.py", "test_ppl*.py", "test_aep_ohio*.py", "test_bge*.py", "test_pepco*.py", "test_delmarva*.py", "test_potomac_edison*.py", "test_atlantic_city_electric*.py", "test_jcpl*.py", "test_rockland*.py"),
+    "regional": ("test_regional*.py", "test_dominion*.py", "test_pseg_billing.py", "test_firstenergy*.py", "test_ohio_provisional.py", "test_peco*.py", "test_dte*.py", "test_consumers*.py", "test_ameren*.py", "test_xcel_mn.py", "test_we_energies_wi.py", "test_duke_in.py", "test_we_duke*.py", "test_alliant*.py", "test_ppl*.py", "test_aep_ohio*.py", "test_bge*.py", "test_pepco*.py", "test_delmarva*.py", "test_potomac_edison*.py", "test_atlantic_city_electric*.py", "test_jcpl*.py", "test_rockland*.py", "test_met_ed*.py"),
     "billing": ("test_billing*.py", "test_tariff*.py", "test_baseline*.py",
                 "test_pge_residential.py", "test_pge_commercial.py", "test_tou_holidays.py"),
     "dispatch": ("test_battery.py", "test_*dispatch*.py", "test_regional_relaxation.py"),

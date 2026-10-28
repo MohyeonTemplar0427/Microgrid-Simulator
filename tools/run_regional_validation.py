@@ -64,6 +64,7 @@ PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
                  ("ppl_electric_pennsylvania", "commercial", "GS-1"),
                  ("aep_ohio", "residential", "RS"), ("aep_ohio", "commercial", "GS-1"))
 BGE_CASES = (("bge_maryland", "residential", "R"), ("bge_maryland", "commercial", "G"))
+MET_ED_CASES = (("firstenergy_pa_met_ed", "residential", "RS"), ("firstenergy_pa_met_ed", "commercial", "GS-S"))
 ROCKLAND_CASES = (("rockland_electric_new_jersey", "residential", "SC1"), ("rockland_electric_new_jersey", "commercial", "SC2"))
 JCPL_CASES = (("jcpl_new_jersey", "residential", "RS"), ("jcpl_new_jersey", "commercial", "GS"))
 ATLANTIC_CITY_CASES = (("atlantic_city_electric_new_jersey", "residential", "RS"), ("atlantic_city_electric_new_jersey", "commercial", "MGS-SECONDARY"))
@@ -73,6 +74,7 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "firstenergy_pa_met_ed": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "rockland_electric_new_jersey": ((2026,"2026-10-01","2026-10-31"),),
     "jcpl_new_jersey": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "atlantic_city_electric_new_jersey": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -92,7 +94,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -226,6 +228,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2026-09-01","2026-09-30"
     if utility == "rockland_electric_new_jersey" and custom is None and period == "monthly":
         start,end="2026-10-01","2026-10-31"
+    if utility == "firstenergy_pa_met_ed" and custom is None and period == "monthly":
+        start,end="2026-06-01","2026-06-30"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
     if custom is not None and utility=="dominion_energy_virginia" and start.startswith("2025-") and not va_history_plan:
@@ -238,6 +242,9 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
+    if utility == "firstenergy_pa_met_ed":
+        from src.billing.met_ed_pa import history_through
+        account["gs_history_through_month" if account["tariff"] == "GS-S" else "rs_history_through_month"] = history_through(start)
     if utility == "jcpl_new_jersey" and account["tariff"] == "GS":
         from src.billing.jcpl_nj import history_through, pls_as_of
         account["prior_history_through_month"] = history_through(start)
@@ -463,6 +470,43 @@ def attach_weather(app, request, inputs):
 def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
                        allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if utility == "firstenergy_pa_met_ed":
+        from src.billing.met_ed_pa import JANUARY_GS_EXCLUSION,cycle_review,rates_on
+        expected=cycle_review(account,index);r=rates_on(expected["service_start"],account["tariff"]);m=bill.get("metrics",{});res=account["tariff"]=="RS"
+        excluded=[JANUARY_GS_EXCLUSION] if not res and account["bill_date"][:7]=="2025-01" else []
+        require(bill.get("is_complete_bill") is (not excluded) and bill.get("excluded_components")==excluded
+                and bill.get("rate_evidence_status")=="verified" and bill.get("assumption_model") is None and bill.get("rate_assumptions")==[]
+                and m.get("quantity_basis")=="raw_import_energy_no_unsourced_quantity_rounding"
+                and m.get("objective_scope")=="unrounded_verified_component_charges"
+                and m.get("rounded_cash_optimum_claimed") is False and m.get("additional_grt_percentage_applied") is False
+                and m.get("monthly_charge_factor")==1. and m.get("partial_period_proration_applied") is False
+                and m.get("source_versions")==r["source_versions"],
+                "Met-Ed source scope, raw quantities, current-tax/refund exclusion and unrounded proof labels must remain explicit")
+        raw=bill["unrounded_lines"];base=raw["distribution_customer"]+raw["distribution_energy"]
+        current=sum(v for k,v in raw.items() if k not in ("sales_tax","january_refund"))
+        require(abs(m.get("current_tariff_before_sales_tax_usd",float("inf"))-current)<1e-6
+                and abs(raw["tcja"]-base*r["tcja_fraction"])<1e-6
+                and abs(raw["distribution_dsic"]-m["dsic_basis_usd"]*r["dsic_fraction"])<1e-6
+                and abs(raw["state_tax_adjustment"]-m["stas_basis_usd"]*r["stas_fraction"])<1e-6
+                and abs(raw["sales_tax"]-(0. if res else current*.06))<1e-6
+                and m.get("current_charge_minimum_domain_verified") is True and current>=r["customer"]-1e-7
+                and m.get("january_refund_sales_tax_status")==("unverified_excluded" if excluded else "not_applicable")
+                and bill["next_state"].get("through_month")==account["billing_month"]
+                and type(bill["next_state"].get("january_refund_applied")) is bool,
+                "Met-Ed DSIC/TCJA/STAS/current-sales-tax bases, inactive minimum and refund-state reconciliation changed")
+        if res:
+            require(account.get("solely_residential_use_confirmed") is True
+                    and account.get("rs_special_demand_inactive_confirmed") is True
+                    and m.get("rs_special_demand_inactive_verified") is True
+                    and m.get("actual_15_minute_peak_kw",26.)<=25.+1e-7
+                    and bill["next_state"].get("rs_peak_upper_bound_kw")==25.
+                    and raw.get("distribution_special_demand")==0.,"Met-Ed RS special-demand and inherited excess-ratchet domain must remain inactive")
+        else:
+            require(account.get("gs_small_confirmed") is True and account.get("metering")=="non_demand_billed"
+                    and 0.<=bill["import_kwh"]<=1500.+1e-7
+                    and bill["next_state"].get("gs_qualification_upper_bound_kwh")==1500.,
+                    "Met-Ed GS Company-retained qualification envelope must not reset from optimized imports")
+        return ("verified_charges_subtotal" if excluded else "complete_utility_bill"),excluded
     if utility == "rockland_electric_new_jersey":
         from src.billing.rockland_nj import cycle_review
         expected=cycle_review(account,index);m=bill.get("metrics",{});res=account["tariff"]=="SC1"

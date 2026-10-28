@@ -1,0 +1,54 @@
+Issued: April 26, 2 024 Effective: June 1, 2024 
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Supplement No. 6 to 
+Electric Pa P.U.C. No. 1 
+First Revised Page 231 
+Superseding Original Page 231 
+S
+OLAR PHOTOVOLTAIC REQUIREMENTS CHARGE RIDER 
+Me
+t-Ed, Penelec and Penn Power 
+A Solar Photovoltaic Requirements Charge (“SPVRC”), determined to the nearest one-thousandth of 
+a cent per kWh, shall be applied to each kWh delivered during a billing month to all Delivery Service 
+Customers not qualifying for Solar Photovoltaic (“SPV”) self- generation exclusion.  The SPVRC shall be 
+non-bypassable. 
+Fo
+r service rendered June 1, 2024 through May 31, 2025, the SPVRC shall be equal to: 
+Rate District Met- Ed Penelec Penn Power 
+Charge (0.001) (D) 
+cents per kWh 
+(0.001) (D) 
+cents per kWh 
+0.000 (D) 
+cents per kWh 
+The SPVRC shall be calculated annually in accordance with the formula set forth below: 
+SPV
+RC = [( SPVRCC - E ) / S] x [1 / (1 - T)]  
+SPVRCC = SPVRCExp1 + SPVRCExp2 + SPVRCExp3 + SPVRCExp4 
+Where: 
+SPV
+RC =  The charge in cents per kWh to be applied to each kWh delivered to Delivery 
+Service Customers served under this tariff. 
+SPV
+RCC =   Solar Photovoltaic Requirements Charge Costs calculated in accordance with the 
+formula shown above. 
+E = T
+he over or under-collection of SPVRC costs that results from billing the SPVRC 
+during the SPVRC Reconciliation Year (an over-collection is denoted by a positive 
+E and an under -collection by a negative E), including applicable interest.  The E 
+rate shall be applied to each kWh delivered to Delivery Service Customers. Interest 
+shall be computed monthly at the legal rate determined pursuant to 41 P.S. § 202, 
+from the month in which the over or under-collection occurs to the month in which 
+the over -collection is refunded to or the under -collection is recovered from all 
+Delivery Service Customers. 
+SPVRCExp1 = A projection of the costs incurred to acquire the Solar Photovoltaic Alternative 
+Energy Credits (“SPAECs”) to be retired during the SPVRC Computational Year 
+obtained from winning bidders selected in the competitive procurement process to 
+fulfill the Company’s SPV obligations imposed by the AEPS Act and related laws 
+and regulations, as the same may be amended from time to time (“AEPS Laws And 
+Regulations”). 
+(C) Change
+(D) Decrease
+(C
+)

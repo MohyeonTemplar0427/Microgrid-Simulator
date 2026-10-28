@@ -1,0 +1,40 @@
+SOURCE: .cache/met_ed_pa/sources/supply/supp36.pdf
+PHYSICAL PAGE: 12
+
+Line 
+No. Description
+Tranches 
+Procured
+Winning 
+Price 
+(per MWh)
+ Weighted 
+Auction 
+Price 
+(per MWh) 
+ PTC 
+Component 
+(per kWh)  
+Auction Results
+1 November 2024 Auction (June 25 through May 27) 1 103.53$     11.50$       
+2 April 2025 Auction (June 25 through May 27) 1 103.46 11.50
+3 November 2025 Auction (June 26 through May 27) 2 115.78 25.73
+4 November 2025 Auction (June 26 through May 28) 1 115.79 12.87
+5 April 2026 Auction (June 26 through May 27) 3 111.05 37.02
+6 April 2026 Auction (June 26 through May 28) 1 111.44 12.38
+7 PTC Current Cost Component 9 110.99$     0.11099$  
+8 x PTC Loss Current 1.0515
+9 Loss Adjusted PTC Current Cost Component 0.11671$  
+10 + PTC Adm 0.00006
+11 PTC Current 0.11677$  
+12 x Gross up for Gross Receipts Tax (GRT = 5.90%) 1.062699
+13 PTC Current including Gross Receipts Tax 0.12409$  
+14 + E - PTC (Over)/Under Collection (Page 2, Line 9) 0.00455
+15 PTC Default Rate 0.12864$  
+Met-Ed Rate District Schedule 2
+(A)  Computations pursuant to the terms of the Company's "Price to Compare Default Service Rate Rider" 
+(B) Adders subject to semi-annual updates
+Page 1 of 3
+FirstEnergy Pennsylvania Electric Company - Met-Ed Rate District
+Price to Compare Default Service ("PTC") Rider Rates - Commercial Class
+For the Default Service Period June 1, 2026 through November 30, 2026

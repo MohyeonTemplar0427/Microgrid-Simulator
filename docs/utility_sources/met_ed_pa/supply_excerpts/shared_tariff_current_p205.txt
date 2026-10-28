@@ -1,0 +1,44 @@
+SOURCE: .cache/met_ed_pa/sources/delivery/tariff_current.pdf
+PHYSICAL PAGE: 205
+
+Issued: December 22, 2023 Effective: January 1, 2024  
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Electric Pa P.U.C. No. 1  
+  Original Page 205 
+ 
+ 
+ 
+ PRICE TO COMPARE DEFAULT SERVICE RATE RIDER (continued) 
+ 
+PTCNITS = When the Company purchases Network Integration Transmission Service from PJM 
+on behalf of customers, a Network Integration Transmission Service Charge for Default 
+Service, determined to the nearest one -thousandth of a cent per kWh to be applied to 
+each kWh of Default Service delivered to Retail Customers under this rider.  
+ 
+E =  The Price to Compare Default Service Reconciliation Rate component by Customer 
+Class. The rate determined to the nearest one- thousandth of a cent per kWh by 
+Customer Class shall be applied to each kWh of Default Service delivered to retail 
+Customers by Customer Class under this rider. 
+ 
+DSExp1 =  An allocated portion of the incremental start-up costs incurred by the Company through 
+May 31, 2023 in connection with the Company’s Default Service Supply Plan to 
+provide Default Service amortized over the forty-eight (48) month period ending May 
+31, 2027, including but not limited to: 
+ 
+• •Incremental start -up administrative costs including metering and billing costs 
+incurred and other costs as necessary to provide service to Default Service 
+Customers. 
+• Other start-up costs incurred to develop and implement the competitive bid process 
+for the Default Service Supply Plan for Default Service including legal, customer 
+notice, and consultant fees. 
+• The incremental administrative start -up costs incurred to implement the Time -of- 
+Use Rider. 
+ 
+Interest shall be computed monthly for the over or under collection at the prime rate 
+of interest for commercial banking, not to exceed the legal rate of interest, in effect on 
+the last day of the month that the over and under collection occurs, as reported in the 
+Wall Street Journal, to the effective month that the over collection is refunded or the 
+under collection is collected and included in the determination of the monthly 
+amortized amount. 
+ 

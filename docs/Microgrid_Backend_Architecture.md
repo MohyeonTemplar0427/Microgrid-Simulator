@@ -884,3 +884,24 @@ monthly-minimum ordering cases reject without forced purchases. Existing math,
 worker/API schema, PV/storage, browser persistence and all-interval OpenDSS replay
 are reused. Explicit October clear-sky modeled acceptance is separate from
 unavailable historical-weather/annual acceptance. See [scope and sources](Rockland_Electric_New_Jersey.md).
+
+## Met-Ed Pennsylvania RS/GS-Small · October 2026
+
+`billing/met_ed_pa.py` and snapshot-safe `met_ed_pa_rates.py` add ordinary
+FirstEnergy Pennsylvania Met-Ed district RS and retained GS-Small default PTC.
+Verified calendar-cycle intersections cover January2025–June2026 and October2026;
+July–September2026 DSIC is unresolved and rejects. January2025 GS-S reports a
+verified-charge subtotal: current 6% tax and the known $4.18 refund are modeled,
+while the refund's unknown prior-period sales-tax adjustment remains excluded.
+RS solely residential is tax-exempt. Source-specific DSS replacements, positive
+Met-Ed TCJA, dated STAS, DSIC bases and SPV credits are retained without duplicate
+GRT or supply transmission. RS requires independent inactive special-demand and
+prior11/current native/import peak bounds of25kW. GS-S requires Company-retained
+classification and independent prior12/current native/import energy bounds of
+1500kWh; conservative history envelopes carry without PV-derived reclassification.
+These are narrower implementation domains, not general eligibility thresholds.
+Inactive minimum cases reject without forced purchases. Active ordinary approved
+non-export PV/storage, PV-only charging and zero banks reuse existing components.
+Utility district, supplier, PA tax, PJM METED wholesale zone and FE-ME emergency
+region remain separate. No shared billing math, solver, physics, worker/API or
+replay behavior changes. See [scope and sources](Met_Ed_Pennsylvania.md).

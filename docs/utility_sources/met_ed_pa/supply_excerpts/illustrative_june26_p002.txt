@@ -1,0 +1,47 @@
+SOURCE: .cache/met_ed_pa/sources/supply/illustrative_june26.pdf
+PHYSICAL PAGE: 2
+
+Line 
+No. Description
+Tranches 
+Procured
+Winning 
+Price 
+(per MWh)
+ Weighted 
+Auction 
+Price 
+(per MWh) 
+ PTC Component 
+(per kWh)  
+Auction Results
+1 November 2024 Auction (June 25 through May 27) 4 106.26$     14.17$        
+2 April 2025 Auction (June 25 through May 27) 4 109.57 14.61
+3 November 2025 Auction (June 26 through May 27) 7 125.32 29.24
+4 November 2025 Auction (June 26 through May 28) 3 124.79 12.48
+5 April 2026 Auction (June 26 through May 27) 8 128.50 34.27
+6 April 2026 Auction (June 26 through May 28) 4 126.06 16.81
+7 PTC Current Cost Component 30 121.57$      0.12157$           
+8 x PTC Loss Current 1.0515
+9 Loss Adjusted PTC Current Cost Component 0.12783$           
+10 + PTC Adm 0.00006
+11 PTC Current 0.12789$           
+12 x Gross up for Gross Receipts Tax (GRT = 5.90%) 1.062699
+13 PTC Current including GRT 0.13591$           
+14 + E - PTC (Over)/Under Collection 0.00360
+15 PTC Default Rate 0.13951$           
+Line Item Explanation for the Residential Procurement Class PTC Calculation
+Lines 1-4 - The results of each default service auction conducted for the applicable PTC rate period
+Line 5 - The total number of tranches procured and weighted average price per MWh and per kWh
+Line 9 - The current cost of providing default service to the procurement class per kWh
+Line 10 - Gross Receipts Tax (GRT) Gross-up factor
+Line 6 - Average line loss factor for the procurement class
+Line 11 - The current cost of providing default service to the procurement class per kWh, including GRT
+Line 12 - Prior period (Over)/Under Collection being collected in the current rate period per kWh, including GRT
+Line 13 - Total PTC Rider Rate per kWh
+Line 7 - Loss adjusted auction costs per kWh
+Line 8 - Administrative costs associated with providing default service to the procurement class per kWh
+FirstEnergy Pennsylvania Electric Company - Met-Ed Rate District
+Estimated Price to Compare Default Service ("PTC") Rider Rates - Residential Class
+For the Default Service Period June 1, 2026 through November 30, 2026
+For Illustrative Purposes ONLY

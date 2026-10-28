@@ -1,0 +1,25 @@
+ORIGINAL: .cache/met_ed_pa/sources/supply/historical_rates.xlsx
+SHEET: PTC - Res and Small Comm
+Units: USD/kWh
+Raw original cell values retained; June24 headers are not adopted-date authority.
+B6: Residential
+L6: 2024-12-01T00:00:00
+M6: 2025-06-24T00:00:00
+N6: 2025-12-01T00:00:00
+O6: 2026-06-24T00:00:00
+B7: Met-Ed
+L7: 0.11011
+M7: 0.11903
+N7: 0.12965
+O7: 0.13951
+B12: Small Commercial
+L12: 2024-12-01T00:00:00
+M12: 2025-06-24T00:00:00
+N12: 2025-12-01T00:00:00
+O12: 2026-06-24T00:00:00
+B13: Met-Ed
+L13: 0.11048
+M13: 0.11574
+N13: 0.12931
+O13: 0.12864
+B18: Note: Prior to June 2023, the PTC rates were filed on a quarterly basis.  The information contained here reflects the June and December rates only. Starting June 2023, the PTC rates are filed on semi-annual basis.

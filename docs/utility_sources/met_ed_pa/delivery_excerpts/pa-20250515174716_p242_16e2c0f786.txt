@@ -1,0 +1,50 @@
+Issued: December 22, 2023 Effective: January 1, 2024  
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Electric Pa P.U.C. No. 1  
+  Original Page 241 
+ 
+ 
+ 
+DISTRIBUTION SYSTEM IMPROVEMENT CHARGE RIDER (continued) 
+ 
+C. Application of DSIC: The DSIC will be expressed as a percentage carried to two decimal 
+places and will be applied to the total amount billed to each customer for distribution 
+service under the Rate District’s otherwise applicable rates and charges, excluding amounts 
+billed for the State Tax Adjustment Surcharge (STAS). All Customers will be billed the 
+DSIC on a bills-rendered basis. To calculate the DSIC, one-fourth of the annual fixed costs 
+associated with all property eligible for cost recovery under the DSIC will be divided by 
+the Rate District’s projected revenue for distribution service (including all applicable 
+clauses and riders) for the quarterly period duri ng which the charge will be collected, 
+exclusive of the STAS. 
+ 
+D. Formula: The formula for calculation of the DSIC is as follows:  
+ 
+DSIC  =  (DSI x PTRR +STFT + Dep + e) x [1 / (1-T)] 
+       PQR 
+ 
+Where: 
+ 
+DSI = Original cost of eligible distribution system improvement projects net of 
+accrued depreciation and associated accumulated deferred income taxes 
+pertaining to property- related book/tax depreciation timing differences 
+resulting from the use of accelerated depreciation per Internal Re venue 
+Code, 26 U.S. Code § 168. 
+PTRR = Pre-tax return rate applicable to DSIC-eligible property. 
+STFT = (State Tax Flow Through) Pre -tax flow through calculated on book- tax 
+timing differences between accelerated tax depreciation and book 
+depreciation net of federal tax. 
+Dep = Depreciation expense related to DSIC-eligible property. 
+e = Amount calculated (+/ -) under the annual reconciliation feature or 
+Commission audit, as described below.  
+T = If applicable, Pennsylvania Gross Receipts Tax rate in effect during the 
+billing month, expressed in decimal form. 
+PQR =  Projected quarterly revenues for distribution service (including all 
+applicable clauses and riders) are based on the summation of projected 
+revenues for the applicable three-month period from applicable customers, 
+excluding those customers listed in 4. Customer Safeguards E. below. 
+ 
+Minimum bills shall not be reduced by reason of the DSIC, nor shall changes hereunder be a part 
+of the monthly rate schedule minimum. The DSIC shall not be subject to any credits or discounts. 
+The STAS included in this Tariff is applied to charges under the DSIC. 
+ 

@@ -1,0 +1,2103 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-27",
+  "source_scope": {
+    "utility_key": "firstenergy_pa_met_ed",
+    "module": "met_ed_pa",
+    "utility": "FirstEnergy Pennsylvania Electric Company, Met-Ed Rate District",
+    "jurisdiction": "Pennsylvania PUC Electric No.1",
+    "plans": [
+      "RS",
+      "GS-S"
+    ],
+    "supply": "DefaultPTC only; utility-assignedMetEdclass andnoHP/TOU/shoppingsupplier",
+    "source_rate_coverage": [
+      {
+        "start": "2025-01-01",
+        "end_inclusive": "2026-06-30"
+      },
+      {
+        "start": "2026-10-01",
+        "end_inclusive": "2026-10-31"
+      }
+    ],
+    "coverage_conditions": "All rates/account/rider/tax/source-cycleconditions required; Jan2025GS verifiedsubtotal only; JulSep2026 rejected for missingDSIC",
+    "January2025_GS": "Currenttariff6%tax on verified currentpre-refund charges; known4.18GRT-inclusiverefundleafappliedonce; tax adjustment attributable topriorchargedrefund unverified, excludedasunknown,neverzero. Visibleverifiedsubtotalonly.",
+    "January2025_RS": "Ordinaryresidentialtaxexemptbranch maycompletewithknown6.53GRT-inclusiverefundleafonce; establishedeligibleaccountandpostingfacts required",
+    "small_GS": "UtilityassignedMetEdnonresidentialwithoutdemandmeter, singlelocation/secondary; two consecutive>1500kWhmonthsinrecent12mayloseclassification; assignment/historyrequired; GSDS500historicalbillingdemandandHPexcluded",
+    "taxes": "FiledPTC/delivery/riderGRTalreadyincluded; nosecondgrossup. OrdinarycommercialPAsalestaxseparate; residentialexemption/statusandlocalityconditions independentlyconfirmed.",
+    "DER": "AlreadyactiveapprovedordinaryNEM/interconnection coveringactualPV/storage/non-exportoperation; zeroexports/openingbank; retainedclass/noSTBYrequiresseparaterule/accountproof",
+    "wholesale_metadata": "FE-ME emergencyregion andMETEDmarket/loadzonelabel separately sourced; noMSAgeographyadoption, wholesaleprice,nodeorretailterritoryinferred",
+    "actual_customer_eligibility_claimed": false,
+    "full_year_validation_claim": false,
+    "RS_special_demand_inactive_guard": "Implementation restriction, not a new tariff eligibility fact: independently confirmed prior11-month/current/native demand<=25kW; reject outside this inactive-special-demand branch."
+  },
+  "records": [
+    {
+      "id": "delivery_tariff_index",
+      "original_path": ".cache/met_ed_pa/sources/delivery/tariff_index.html",
+      "original_sha256": "375cefa83f0d3a9652767f3e3606e6730ca008fb40dc002c24d8a424211cb95b",
+      "original_bytes": 63021,
+      "urls": [
+        "https://www.firstenergycorp.com/customer_choice/pennsylvania/pennsylvania_tariffs.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_index",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_index.html"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "delivery_tariff_current",
+      "original_path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf",
+      "original_sha256": "665736ea46b7860651226605624c298b6990e3c0581166e543ccf27bd25b8f9d",
+      "original_bytes": 2670563,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "shared_tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p065.txt",
+          "sha256": "bc1364c21a4cc234491ee4d82cacad2d3b2a0b00d9dbb5c6f141aebeaf1b74cc",
+          "physical_page": 65
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p066.txt",
+          "sha256": "3b7f5224669b96219ccfbbf7fe6f80c856d58c8bcde9a29b0d3db0a7ec78f96e",
+          "physical_page": 66
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p203.txt",
+          "sha256": "4413f99055f1017d1c55b239e303a817e11290b6b4a6c7e80c419a93b1b59de6",
+          "physical_page": 203
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p204.txt",
+          "sha256": "b20e4ca0f15ae0aa429b3bf0079d951be5e828ad150393a28cc6e21488feded2",
+          "physical_page": 204
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p205.txt",
+          "sha256": "41eb1d81cc93f898c0e22293b25b86ad809467cb0f3ed9564d69c79d436ec156",
+          "physical_page": 205
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p206.txt",
+          "sha256": "7e1e678edc5007f50da0535a777956f8bc10c91fea6a888865bf3ac41432882a",
+          "physical_page": 206
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p207.txt",
+          "sha256": "6df0ee4eae4e51f4c5ab6aac2aa9030c74b6d8b46253ec8b71341bf7c4c34852",
+          "physical_page": 207
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/shared_tariff_current_p208.txt",
+          "sha256": "cbd8c7b9f934d49046781c76cd5cf6377096ad8ed5f97a8960b8f9b0249bf892",
+          "physical_page": 208
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/tariff_current.txt",
+          "sha256": "98585cb49878295b2a07f1ffe0797d18afafbbc3efa018eb2d5b711f9fe5a154",
+          "physical_pages": [
+            24,
+            46,
+            47,
+            48,
+            49,
+            50,
+            61,
+            62,
+            63,
+            65,
+            66,
+            67,
+            182,
+            183,
+            184,
+            187,
+            188,
+            189,
+            190,
+            191,
+            213,
+            216,
+            224,
+            225,
+            226,
+            227,
+            228,
+            232,
+            235,
+            242
+          ]
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p61_3cb480f2c7.txt",
+          "sha256": "3cb480f2c710a8e38835e32b53fdfc89fb33d405a8b6288947508f36a654167f",
+          "physical_page": 61,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p65_5fe27e4402.txt",
+          "sha256": "5fe27e4402f8577fb38f7c5f81748873fe26eec6fd647299b991dd7b45be3a2d",
+          "physical_page": 65,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p182_7239a9374c.txt",
+          "sha256": "7239a9374c0234d2669a1898376b93afa21e5de18971fc74b2fef43f4c977048",
+          "physical_page": 182,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": "January 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p183_79f1c45b5f.txt",
+          "sha256": "79f1c45b5f955b80f5ca46e247e17da235d08ed605c2d1bcfdb5c0621daeb83e",
+          "physical_page": 183,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": "January 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p185_677cf0e45f.txt",
+          "sha256": "677cf0e45fa0fa81dcfda29c83e1f1bd88e93f4424b0210cdaaecb3e10e2adec",
+          "physical_page": 185,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": "January 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p194_f3b134cdc4.txt",
+          "sha256": "f3b134cdc43e28ba987d4ba7530e8f578e07f04f30077bfc51cd346c946fef3a",
+          "physical_page": 194,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": "June 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p198_2fcbef296f.txt",
+          "sha256": "2fcbef296f163f58d6eb6a22d5558499c0a5d56b19c2a45d073e87bf7e4cce7b",
+          "physical_page": 198,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": "January 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p213_ce5fad222f.txt",
+          "sha256": "ce5fad222f309bf960d6bd75fbf13230e7bddef56a106c33d96a8c37c085a497",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": "June 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p216_bc7980fd31.txt",
+          "sha256": "bc7980fd310c363e2a42e476e8d016136a0dfe6cd296a5d94f644c28b88cd08a",
+          "physical_page": 216,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p240_990a318d2c.txt",
+          "sha256": "990a318d2c6f5f3f18edae9b746e7e66e084afa25a2ab3316e8e251bc316a0cb",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Eleventh Revised",
+          "effective_footer": "October 1, 2026"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p181_e29d6a9f00.txt",
+          "sha256": "e29d6a9f0081dd2d95deae8cbafa0e3736af3c52f5fe35dca3cfacca011e49e8",
+          "physical_page": 181,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p184_6805ed32db.txt",
+          "sha256": "6805ed32dbe8d2b0d03ef0267ea3998bb6cc61dbf8535c134411f3be5b79c872",
+          "physical_page": 184,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": "January 1, 2024"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/tariff_current_p242_6f6e8561ad.txt",
+          "sha256": "6f6e8561ad183f8feaf6711eaa6455885dbdc22b4085da6a1524d49745b0904c",
+          "physical_page": 242,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "April 1, 2026"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/tax_rules/gs65.png",
+          "sha256": "3e11a68b9c7dd6ee9c20e87bcf263b4496e409d5abfe8d12f8a6371aba96cb2d",
+          "owner_stream": "tax_rules",
+          "visually_reviewed": false
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/tax_rules/spv234.png",
+          "sha256": "e1739d051f955c9225846ab2935d351209d2c518256864cc81a3250b83a098b1",
+          "owner_stream": "tax_rules",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current_p194.png",
+          "sha256": "cac046412e1e4c87dc7112404c1897847e7cfb8f7e5ef6a9bd9f04c117660137",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current_p198.png",
+          "sha256": "8b3aab05660db55c99052d89abc2c590c48ebd8a9c212e33b88bb3dd51ecce39",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current_p240.png",
+          "sha256": "ecf2f8d48cc4782f02c0205b38c017fb624b79a637a6c9461ca5c772305c454e",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "currentpublishedadoptedtariff; leaf-specificeffectiveclocks",
+        "Met-Ed-specific general rules and original/revised pages; current rates not automatically backdated. Physical page differs from printed leaf after215A."
+      ],
+      "selected_physical_pages": [
+        24,
+        46,
+        47,
+        48,
+        49,
+        50,
+        61,
+        62,
+        63,
+        65,
+        66,
+        67,
+        181,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        189,
+        190,
+        191,
+        194,
+        198,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        213,
+        216,
+        224,
+        225,
+        226,
+        227,
+        228,
+        232,
+        235,
+        240,
+        242
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/tariff_current.txt",
+      "full_text_sha256": "dd40b5d783bc8677e055c080996210072b163d3495fbebb22670f9af1951df80"
+    },
+    {
+      "id": "delivery_historical_rates",
+      "original_path": ".cache/met_ed_pa/sources/delivery/historical_rates.xlsx",
+      "original_sha256": "b2d50924124cc6f760473950bd31988d3b46a23e447c900a0d77159373dc4a85",
+      "original_bytes": 569129,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/Historical-Rates.xlsx"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "historical_rates",
+          "path": ".cache/met_ed_pa/sources/delivery/historical_rates.xlsx"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "historical_rates",
+          "path": ".cache/met_ed_pa/sources/supply/historical_rates.xlsx"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/historical_rates_met_ed_cells.txt",
+          "sha256": "8fd2e6c2a9d4cc36d0a60b4696f8a018165ce3875888477619c5f0a0d63e4fc8",
+          "sheet": "PTC - Res and Small Comm",
+          "cells": "B6,B7,B12,B13,B18,L6:O7,L12:O13"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "officialpublishedhistoricalnumericcrosscheck; rawJun2025/26headerssayJune24notfiledJune1soheadersnotclockauthority"
+      ],
+      "selected_physical_pages": [],
+      "full_text_path": ".cache/met_ed_pa/sources/supply/historical_rates_cells.json",
+      "full_text_sha256": "562c0fcc915e767a8bc357c56e7143bfd19c596cd7efb4922e2fda1e4e56214e"
+    },
+    {
+      "id": "delivery_papuc-1858451",
+      "original_path": ".cache/firstenergy_research/papuc-1858451.pdf",
+      "original_sha256": "b74772efdc7b2c5a7bb527f6b34b007826b8e17a1e9efd387d6f5777f1e0ae99",
+      "original_bytes": 1665492,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1858451.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1858451",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858451",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/papuc-1858451.txt",
+          "sha256": "8ca65f906db9b3a1c0de2363ddba884abbe650132f39d06abea85f61674bde06",
+          "physical_pages": [
+            1,
+            15,
+            16,
+            17,
+            18,
+            78,
+            79
+          ]
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p15_d0d7d9b3fe.txt",
+          "sha256": "d0d7d9b3fe176e0b4231c0551b56dbd1ba491f8a33e1706da0beb21b9fd4ef6e",
+          "physical_page": 15,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p17_d5ed93be4d.txt",
+          "sha256": "d5ed93be4d8bd3bdfce8a963994e767b9f89c18abf24603a5e40dea254bed619",
+          "physical_page": 17,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p79_741e43f5e3.txt",
+          "sha256": "741e43f5e33b2f3ba8950278003539edb4f247ac9e9d3956c4c8468881b1777f",
+          "physical_page": 79,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p81_6467eddf86.txt",
+          "sha256": "6467eddf864822b16a2385c57b703f77f3dbf59e25a21abe1a410dbc0a64ca47",
+          "physical_page": 81,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p84_b200fb8ed3.txt",
+          "sha256": "b200fb8ed3ef09fba39acd49b16aab58506250adcfcaf5252070004efac2484f",
+          "physical_page": 84,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p89_748fe27e0f.txt",
+          "sha256": "748fe27e0fd72bc7a67fbf802298b608f95538767f807b862be9341df882dc18",
+          "physical_page": 89,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p16_f3d109ac03.txt",
+          "sha256": "f3d109ac03a04a7c98095167e28b0ead7337766008f500c0f5ff75403dcd2bb7",
+          "physical_page": 16,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858451_p18_200c7ca5bc.txt",
+          "sha256": "200c7ca5bc8d399f9aff84100adf7c5cf98c50fc35b618306eea1cb9cd9f81f2",
+          "physical_page": 18,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/papuc-1858451_p15.png",
+          "sha256": "55033fa7cce463010f82b2ecb2eee3ab28a90153ab17041294720e50599b1749",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/papuc-1858451_p17.png",
+          "sha256": "670c4bf036f7bd83be79a31359e2dae2e5f873906a73a5a2432cff5f6b43f6af",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "AcceptedJan2025Supp14 applicability/base and zeroSTAS/TCJA; page numbers verified alongside current leaves."
+      ],
+      "selected_physical_pages": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        78,
+        79,
+        81,
+        84,
+        89
+      ],
+      "physical_pages": 93,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1858451.txt",
+      "full_text_sha256": "fb4544c83d3ebcd27dc32839464dc5f8c2e6847de1d94bf54703c4499ebd3300",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1858451.txt",
+          "sha256": "34f4f0fc7d85adc5f25b9e1c3f1417eda3b6c668d97682b281e855e579eb0ec8"
+        }
+      ]
+    },
+    {
+      "id": "delivery_pa-20250515174716",
+      "original_path": ".cache/firstenergy_research/pa-20250515174716.pdf",
+      "original_sha256": "efccf0bf4bba2f5f43aad96d1e56ab2d77495abd2174335a39c25cee98193a2a",
+      "original_bytes": 2520316,
+      "urls": [
+        "https://web.archive.org/web/20250515174716id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-20250515174716",
+          "path": ".cache/firstenergy_research/pa-20250515174716.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa-20250515174716",
+          "path": ".cache/firstenergy_research/pa-20250515174716.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/pa-20250515174716.txt",
+          "sha256": "7fc884bab6db4597b1849af4ee361db4ad315dd403af7ab2326bc1bb615b2076",
+          "physical_pages": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            61,
+            62,
+            65,
+            66,
+            67,
+            182,
+            183,
+            184,
+            187,
+            188,
+            189,
+            190,
+            191,
+            224,
+            241,
+            242
+          ]
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-20250515174716_p182_03b0d9913b.txt",
+          "sha256": "03b0d9913bdb267754e04afabdd597bf5a09558dd68b39e9ddc708c6947fdd55",
+          "physical_page": 182,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-20250515174716_p185_6362ab6c96.txt",
+          "sha256": "6362ab6c9653da0e1ba1edb0fe0e43b93d8dcadbc8987ffb98f6528788b1d0b2",
+          "physical_page": 185,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "January 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-20250515174716_p242_16e2c0f786.txt",
+          "sha256": "16e2c0f786787a821b540ee22108cdc1205c9cd0aeba3dbd84ecc84008098506",
+          "physical_page": 242,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": "January 1, 2024"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Official tariff archived May2025; confirms historical rules and Met-Ed applicability, not automatic proof of every 2025 rider price."
+      ],
+      "selected_physical_pages": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        61,
+        62,
+        65,
+        66,
+        67,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        189,
+        190,
+        191,
+        224,
+        241,
+        242
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_pa-20250515174716.txt",
+      "full_text_sha256": "aae3706469df8ddb55508927ff10f79c3d7344fe75f18e76ffa1edbde7c3df77",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/pa-20250515174716.txt",
+          "sha256": "93f8c05d4eab46d8e154face2e7887f45383dd889de8432b60104af05f6e47b6"
+        }
+      ]
+    },
+    {
+      "id": "delivery_pa-supp11",
+      "original_path": ".cache/firstenergy_research/pa-supp11.pdf",
+      "original_sha256": "1f9ba4c52c8baf416018477039aff367396eb893f8479c8e668dee99a2633b39",
+      "original_bytes": 286865,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FE-PA-Supp-No-11-PTC-HPS-Rider-Changes-12-1-2024.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-supp11",
+          "path": ".cache/firstenergy_research/pa-supp11.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "pa-supp11",
+          "path": ".cache/firstenergy_research/pa-supp11.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/pa-supp11_p001.txt",
+          "sha256": "a2fc2bac6c548b6b43a97b99f5aa3a9bffb0ce4f19ef05bd3f2ffc26ab5fde57",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/pa-supp11_p003.txt",
+          "sha256": "467688360594d767a15de7a5155749af290538a6e1bf7ce4a0a818845f42013e",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/supply/pa-supp11_p3.png",
+          "sha256": "3ccfc685919de25aca40cfe7f4e19c8dde1856ec0f31768d31c12ffaa13547b5",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; crosscheckedofficialhistory/currentbook/customerinsert"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 4,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_pa-supp11.txt",
+      "full_text_sha256": "dc681ad7434cc27161390d7c42a7fa712bb7191ed4f8908c248331b1b7da8f07",
+      "alternate_extractions": [
+        {
+          "path": ".cache/met_ed_pa/sources/supply/pa-supp11.txt",
+          "sha256": "dc681ad7434cc27161390d7c42a7fa712bb7191ed4f8908c248331b1b7da8f07"
+        }
+      ]
+    },
+    {
+      "id": "delivery_pa-supp19",
+      "original_path": ".cache/firstenergy_research/pa-supp19.pdf",
+      "original_sha256": "d11bc4fd1e9254c2d4648410919b578cdc00608a80e46b8ea0d162effe57e4f0",
+      "original_bytes": 196431,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-Supp-No-19-PTC-and-HPS-Rider.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-supp19",
+          "path": ".cache/firstenergy_research/pa-supp19.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "pa-supp19",
+          "path": ".cache/firstenergy_research/pa-supp19.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/pa-supp19_p001.txt",
+          "sha256": "574cc426821928b14de0d8e129b5766d5a9153a30ac00e59ab3e5590c000afa7",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/pa-supp19_p003.txt",
+          "sha256": "931f61f0de0a61143cb8f60349c1aebe495a6f316e51908e549d9acff40e53d6",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/supply/pa-supp19_p3.png",
+          "sha256": "13226740a0367dac5033d78e70d4b795ce87e17bef00589df93ce318af04d865",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; crosscheckedofficialhistory/currentbook/customerinsert"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 5,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_pa-supp19.txt",
+      "full_text_sha256": "c958f86af8792cc25456488b8cebc6b386d7286d4ac84ad28d3d5ea051a0308c",
+      "alternate_extractions": [
+        {
+          "path": ".cache/met_ed_pa/sources/supply/pa-supp19.txt",
+          "sha256": "c958f86af8792cc25456488b8cebc6b386d7286d4ac84ad28d3d5ea051a0308c"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1858401",
+      "original_path": ".cache/firstenergy_research/papuc-1858401.pdf",
+      "original_sha256": "74d69b22c621e6d0242a90014c4ee6cb8629fcf295dc3ef50710c2bcb73a89da",
+      "original_bytes": 942608,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1858401.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1858401",
+          "path": ".cache/firstenergy_research/papuc-1858401.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858401",
+          "path": ".cache/firstenergy_research/papuc-1858401.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/papuc-1858401.txt",
+          "sha256": "f318a33c59ea4704a1952c6c3f712425a57af7a32c3dcaf13dfcb64cb150fc2f",
+          "physical_pages": [
+            1,
+            4
+          ]
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858401_p4_b7d82c3d59.txt",
+          "sha256": "b7d82c3d595f3fd225f67f252509784d4ee1fb0821020d9821449a8f58da4258",
+          "physical_page": 4,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1858401_p1_f23d9aaad6.txt",
+          "sha256": "f23d9aaad6c9ea95a77240b6ca0b63c283b5fc1a0f1f759d4dec2d81dc50ad67",
+          "physical_page": 1,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/tax_rules/refund4.png",
+          "sha256": "a3c5c8565d788b1f24600d5af82437b95a6d0d062c8a27b12b1f5ce1f38d537c",
+          "owner_stream": "tax_rules",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/papuc-1858401_p4.png",
+          "sha256": "7042a0c65b65f4dfb0a1839a331e33bdcee7ca29e1c0700cfcc05582ec307e06",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "January2025 once/account priorcostrefund; Met-Ed RS6.53 andGS-S4.18 GRTinclusive."
+      ],
+      "selected_physical_pages": [
+        1,
+        4
+      ],
+      "physical_pages": 5,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1858401.txt",
+      "full_text_sha256": "d0306ed5d392f130b51dd9a0894dc17cb9a9729b86301280d7f01948bd999f37",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1858401.txt",
+          "sha256": "11c65d5fda7f9ac7a9c87017fbf91119dd717e7d8f342410298b05787be64b6a"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1859431",
+      "original_path": ".cache/firstenergy_research/papuc-1859431.pdf",
+      "original_sha256": "ff9aacbc39dbfbba4571656cbad89d08a0d9798b372e1fc78f9fa3f4c2a9accb",
+      "original_bytes": 2832796,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1859431.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1859431",
+          "path": ".cache/firstenergy_research/papuc-1859431.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [],
+      "physical_pages": 27,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1859431.txt",
+      "full_text_sha256": "cb191f0dcaf1160804180833d120a106fee379f11e8fa27e7f37598b4ea17771"
+    },
+    {
+      "id": "delivery_papuc-1860381",
+      "original_path": ".cache/firstenergy_research/papuc-1860381.pdf",
+      "original_sha256": "f712cb3ef7b7b248d9d68ba76c7d55751fa2cbac74b1e8e9924607ac27b5ef74",
+      "original_bytes": 369565,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1860381.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1860381",
+          "path": ".cache/firstenergy_research/papuc-1860381.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1860381_p6_51a0788693.txt",
+          "sha256": "51a078869322269d9d9a4d5ec9f3de4c5c804ec99e19a38a859c74fd10810ef9",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": "January 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 18,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1860381.txt",
+      "full_text_sha256": "64332b311d3034588c5b9f8377a45ed513f03f58a0580fc973e9da874fd2b7eb"
+    },
+    {
+      "id": "delivery_papuc-1860899",
+      "original_path": ".cache/firstenergy_research/papuc-1860899.pdf",
+      "original_sha256": "8477b46d9625816a7d1e73835022c5ff4bb322d5dd66cea3b39f4a436e23ea68",
+      "original_bytes": 157869,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1860899.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1860899",
+          "path": ".cache/firstenergy_research/papuc-1860899.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1860899",
+          "path": ".cache/firstenergy_research/papuc-1860899.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/papuc-1860899.txt",
+          "sha256": "583bc2ba8a72ffb80026d2d608385413696a2f13b6116758485c44e9c1528084",
+          "physical_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1860899_p1_b8b791d705.txt",
+          "sha256": "b8b791d705725f498627dd799774eddbcd87d2bc9215d50c860246b311dbccf2",
+          "physical_page": 1,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1860899_p2_19e6113381.txt",
+          "sha256": "19e611338143c1a80002c79a8d0d817dbb03b8bdb4f777ebdb692f870bb202b5",
+          "physical_page": 2,
+          "printed_leaf": null,
+          "revision": null,
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "PUC acceptance of January refund filing."
+      ],
+      "selected_physical_pages": [
+        1,
+        2
+      ],
+      "physical_pages": 2,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1860899.txt",
+      "full_text_sha256": "3e96873a17ddcba973e2e0ba789cdfda9e35be16d3c8c79ba63be6a951f3e81b",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1860899.txt",
+          "sha256": "c1cc4031f351c1db45e187fbf137c85f26b31a154596f67cee7686ea5b55c47c"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1870842",
+      "original_path": ".cache/firstenergy_research/papuc-1870842.pdf",
+      "original_sha256": "203abe5782eb1cf51bb3f081fbbd97a0944592df95120962a51e97a147f5e71a",
+      "original_bytes": 284557,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1870842.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1870842",
+          "path": ".cache/firstenergy_research/papuc-1870842.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1870842_p6_8c5cf13816.txt",
+          "sha256": "8c5cf138167cc0f657a3dd87904a653996e0f245192c13db41c2d3fba3e6fa12",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": "April 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1870842.txt",
+      "full_text_sha256": "bf726fe268ee4198439b859f1a5047573b026f350cb437507321e40f12aaa5bc"
+    },
+    {
+      "id": "delivery_papuc-1877401",
+      "original_path": ".cache/firstenergy_research/papuc-1877401.pdf",
+      "original_sha256": "c0cf4ca81d8ec1daae70c0e9c65e7f0a3e639ece2d72ecb1ad039f0065a60405",
+      "original_bytes": 544983,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1877401.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1877401",
+          "path": ".cache/firstenergy_research/papuc-1877401.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1877401_p6_78888d8849.txt",
+          "sha256": "78888d88499a7a0577101d92efed51e1464bab7589cef0f8b4f4d97217ae2940",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": "June 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 14,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1877401.txt",
+      "full_text_sha256": "cde6b31dd2963c954eaf6fd3d604e7e9d5713d416273219b851084b51d53f209"
+    },
+    {
+      "id": "delivery_papuc-1879559",
+      "original_path": ".cache/firstenergy_research/papuc-1879559.pdf",
+      "original_sha256": "0224004905ef71919756eb494fd27233d58ee014e50b8ee8d8c35c4eb6ea51eb",
+      "original_bytes": 380601,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1879559.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1879559",
+          "path": ".cache/firstenergy_research/papuc-1879559.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [],
+      "physical_pages": 15,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1879559.txt",
+      "full_text_sha256": "80232c42b4023fce310be5a5b37ebf32993ba7e405d68de48074d1e9c94e2276"
+    },
+    {
+      "id": "delivery_papuc-1879719",
+      "original_path": ".cache/firstenergy_research/papuc-1879719.pdf",
+      "original_sha256": "d6cc73ec9a35f2c812399625e1cf700771858162165ac56d742f67c1952e3bc7",
+      "original_bytes": 287838,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1879719.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1879719",
+          "path": ".cache/firstenergy_research/papuc-1879719.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1879719",
+          "path": ".cache/firstenergy_research/papuc-1879719.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/papuc-1879719.txt",
+          "sha256": "5ccc93b0cd2a10f221f9fc6b757f390022040275c94a14f29a66bedf19a0b4ce",
+          "physical_pages": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1879719_p5_2adf0ebc1f.txt",
+          "sha256": "2adf0ebc1f1f76b5f82c85a0dfb130fed403784301c1f344a691012fcd46f1aa",
+          "physical_page": 5,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": "July 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/tax_rules/tcja5.png",
+          "sha256": "d4df2dd24899bcfceb2e85cc137905adba2f653baab3372992c35bd01aa9bdc8",
+          "owner_stream": "tax_rules",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/papuc-1879719_p5.png",
+          "sha256": "d33126f4a229c1f46a23f513cfa5647573a48d2c9117165783464be6946ecf6b",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "July2025TCJA Met-Ed POSITIVE1.12%; table governs numeric sign."
+      ],
+      "selected_physical_pages": [
+        1,
+        4,
+        5
+      ],
+      "physical_pages": 9,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1879719.txt",
+      "full_text_sha256": "a5f3abc0bf6ffc07433943673fa6f60733c0ce54a9d534b722169f858ed38280",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1879719.txt",
+          "sha256": "762637afcf1d6dad5577c64b48f4e77592eea60d433841d067818600f224b83e"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1883054",
+      "original_path": ".cache/firstenergy_research/papuc-1883054.pdf",
+      "original_sha256": "e605f32e3378416d98dd0b0b52c41ad105c284aeadff3f59401c0ed7e4f053b3",
+      "original_bytes": 282665,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1883054.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1883054",
+          "path": ".cache/firstenergy_research/papuc-1883054.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1883054_p6_eab4aca9a1.txt",
+          "sha256": "eab4aca9a12c0779b11ce296e52d8c6b3f338df8dafcddc7f552d8e65f7126e8",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Sixth Revised",
+          "effective_footer": "July 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1883054.txt",
+      "full_text_sha256": "4429871a02ecdfd83a5d7efd41a22c434547a5fcdb39fb8b56f1725fc33678ed"
+    },
+    {
+      "id": "delivery_papuc-1885199",
+      "original_path": ".cache/firstenergy_research/papuc-1885199.pdf",
+      "original_sha256": "b54c7f26cebe99bd930fd56793eda1453dd11c18c042a396d34d2220c211aedb",
+      "original_bytes": 383883,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1885199.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1885199",
+          "path": ".cache/firstenergy_research/papuc-1885199.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1885199_p7_9be703bc07.txt",
+          "sha256": "9be703bc073c33cf3cd5de801548f139c2c91d25d8fac6b14dd4f0e96b50d847",
+          "physical_page": 7,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": "August 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/papuc-1885199_p7.png",
+          "sha256": "47fc657e1666544a81015cef79255a3f21961435351b23369d48d93e57833281",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        7
+      ],
+      "physical_pages": 19,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1885199.txt",
+      "full_text_sha256": "e92a6f78ec0a2f418a10006a749834bf49127776f2dfa7cf1921058977a46eed"
+    },
+    {
+      "id": "delivery_papuc-1895067",
+      "original_path": ".cache/firstenergy_research/papuc-1895067.pdf",
+      "original_sha256": "fa78c4150271aef61ff879a3f9776b86e95ad196df82d655cad5d1add3c4b926",
+      "original_bytes": 282395,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1895067.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1895067",
+          "path": ".cache/firstenergy_research/papuc-1895067.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/papuc-1895067_p6_8dfcb95237.txt",
+          "sha256": "8dfcb952377800ad9259e62e195e68eda2b63529656ed58fa4f0eb7d8c1e1207",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Seventh Revised",
+          "effective_footer": "October 1, 2025"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1895067.txt",
+      "full_text_sha256": "337e06dafafd81a00a0c00a36fdd40029e439287b19b62583648755c508bd112"
+    },
+    {
+      "id": "delivery_papuc-1898804",
+      "original_path": ".cache/firstenergy_research/papuc-1898804.pdf",
+      "original_sha256": "d43554864a41b117411c385ea9ecbdc08d6710da0430a06656cda8e55381e5ea",
+      "original_bytes": 598383,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1898804.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1898804",
+          "path": ".cache/firstenergy_research/papuc-1898804.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [],
+      "physical_pages": 43,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_papuc-1898804.txt",
+      "full_text_sha256": "52a043db6d5601129d6a41792432467c7e72169194db5145b888e78e3734a621"
+    },
+    {
+      "id": "delivery_pa-20250612040318",
+      "original_path": ".cache/firstenergy_research/pa-20250612040318.pdf",
+      "original_sha256": "950266135e6348aac8d173a794aa6117e65868cde47636a71a9c0922e17d410b",
+      "original_bytes": 2519120,
+      "urls": [
+        "https://web.archive.org/web/20250612040318id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-20250612040318",
+          "path": ".cache/firstenergy_research/pa-20250612040318.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-20250612040318_p213_1c46e56882.txt",
+          "sha256": "1c46e5688288249af6dbb1191799f1d42725d94e09507ec5009d4c8f4f3cdad1",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": "June 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-20250612040318_p221_0e9692b190.txt",
+          "sha256": "0e9692b190d99d45e91791aa3c0eb103d524c43c4f77f057dffdb8f37ebd860b",
+          "physical_page": 221,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": "January 1, 2024"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-20250612040318_p232_fcfb6fdebb.txt",
+          "sha256": "fcfb6fdebb64969abaf125f7b1e0fd9f915d7766cb09b2ffbf2ce9972447e98a",
+          "physical_page": 232,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": "June 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-20250612040318_p216_08c17ceaf3.txt",
+          "sha256": "08c17ceaf364461cc3425cb89dc92e5978e6412488ec214923434826e699fb0f",
+          "physical_page": 216,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/pa-20250612040318_p213.png",
+          "sha256": "219954ead5cb7150ccf010442e71c6f09e116651316875eb0421c39c02c1617f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        213,
+        216,
+        221,
+        232
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_pa-20250612040318.txt",
+      "full_text_sha256": "0e9b8a3e9e7619fb74557bfa8e2d75134a3ff0c7bc9f832bcb08a46e51d0d1b6"
+    },
+    {
+      "id": "delivery_pa-2026-01",
+      "original_path": ".cache/firstenergy_research/pa-2026-01.pdf",
+      "original_sha256": "6161113b3a7e6a1ee77b25d600eadbc6c60dbd1ba7c44f6864961a8510c76202",
+      "original_bytes": 2487082,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff-1-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-2026-01",
+          "path": ".cache/firstenergy_research/pa-2026-01.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-2026-01_p213_1c46e56882.txt",
+          "sha256": "1c46e5688288249af6dbb1191799f1d42725d94e09507ec5009d4c8f4f3cdad1",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": "June 1, 2025"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-2026-01_p240_7811ec0232.txt",
+          "sha256": "7811ec0232e391ee5bc4e960e475e4a37051debed3d7cfa3581d78aa02556cb9",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Eighth Revised",
+          "effective_footer": "January 1, 2026"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        213,
+        240
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_pa-2026-01.txt",
+      "full_text_sha256": "8330411d12df2481fb1e2196cc4ba2c281f15f8f918e7a0bce3e5e0a1d5e9803"
+    },
+    {
+      "id": "delivery_pa-2026-04",
+      "original_path": ".cache/met_ed_pa/sources/delivery/pa-2026-04.pdf",
+      "original_sha256": "2d63d379fab461a3e602d9d7b43cd0625f1acf8005613c92fda03b1c92749dbb",
+      "original_bytes": 2593730,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff-4-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-2026-04",
+          "path": ".cache/met_ed_pa/sources/delivery/pa-2026-04.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-2026-04_p240_17ae24c063.txt",
+          "sha256": "17ae24c063fef0df4ab401319babe720a5cd6bf8fea497f31eb04d578c4dacc7",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Ninth Revised",
+          "effective_footer": "April 1, 2026"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        240
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_pa-2026-04.txt",
+      "full_text_sha256": "a18899cee0bca1395da6636e2e9d6d7652ef772c7b16b8016b5afdc6dcbbbddd"
+    },
+    {
+      "id": "delivery_pa-june2024",
+      "original_path": ".cache/firstenergy_research/pa-june2024.pdf",
+      "original_sha256": "8a9865ed187ebe37352751eccdb48f908ef8c3282e8ea210c59c6c723b732e69",
+      "original_bytes": 1691444,
+      "urls": [
+        "https://web.archive.org/web/20240607145718id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-june2024",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_june2024_spv",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/pa_june2024_spv.txt",
+          "sha256": "e5e886acce3371e0beae63fed8be31b9b0e2f949989e5aba5f08abb1e0238adb",
+          "physical_pages": [
+            231,
+            232,
+            233,
+            234
+          ]
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-june2024_p231_579ee39a79.txt",
+          "sha256": "579ee39a7961f28c8f70f0ca987a19a034cd2831c2bf9cabefb44be444922749",
+          "physical_page": 231,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": "June 1, 2024"
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/delivery_excerpts/pa-june2024_p234_5f1dd94ce6.txt",
+          "sha256": "5f1dd94ce63dd3e7afd7351130392a1b5ab152cff7ad3f02aa3dfdc2d6655da8",
+          "physical_page": 234,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": "January 1, 2024"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/pa-june2024_p231.png",
+          "sha256": "1ad953b6c8e1a1f852f86a2b130d36a5e0a1c56e928b35c14fdbef1d8148bb97",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "SPVRC effectiveJune2024May2025; Met-Ed credit-.00001USD/kWh; exclusion only GS-Large,GP,TP so RS/GS-S retain it including DER. Archive SHA1 verified against existing officialcaptureledger."
+      ],
+      "selected_physical_pages": [
+        231,
+        232,
+        233,
+        234
+      ],
+      "physical_pages": 243,
+      "full_text_path": ".cache/met_ed_pa/sources/delivery/reused_pa-june2024.txt",
+      "full_text_sha256": "b603697625cb28378d7a506b8ca1ac820a2256953b75168c7c73ef07ab707183",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/pa-june2024.txt",
+          "sha256": "53b07cbebde2559aeda33be19b43ee8c38354c1d62c5a33e0fe3ac944f5c107b"
+        }
+      ]
+    },
+    {
+      "id": "supply_supp28",
+      "original_path": ".cache/met_ed_pa/sources/supply/supp28.pdf",
+      "original_sha256": "a5ebbe14bac4ca4807c8ce477323ffad850b34cc854f302b1e64f694e7ffb336",
+      "original_bytes": 171636,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-Supp-No-28-PTC-HPS-Rider-Changs-12-1-2025.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "supp28",
+          "path": ".cache/met_ed_pa/sources/supply/supp28.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/supp28_p001.txt",
+          "sha256": "9b074ff2074c87322364ace677114361ac083cf8c347a32d4f7e1f4aed9eacad",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/supp28_p003.txt",
+          "sha256": "fab7d89aa3c9b948afeef70f536160dd5199a1cc4bc1ea03cf19b127ef7ef5e6",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/supply/supp28_p3.png",
+          "sha256": "362a240df1d9dbf6e0ea2b73157e64a7b82990f9cba77e4270fd650a6e39858c",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; crosscheckedofficialhistory/currentbook/customerinsert"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 4,
+      "full_text_path": ".cache/met_ed_pa/sources/supply/supp28.txt",
+      "full_text_sha256": "8f10e63d0a0d2ac6510cd95c847ad56dd0dc288897516d942f8c46810e127984"
+    },
+    {
+      "id": "supply_supp36",
+      "original_path": ".cache/met_ed_pa/sources/supply/supp36.pdf",
+      "original_sha256": "a8b0ff4be057ec7d19b9da1d5a9342054a00904b30f5d4797feff50b2e5e0eae",
+      "original_bytes": 675074,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-PTC-Effective-06-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "supp36",
+          "path": ".cache/met_ed_pa/sources/supply/supp36.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/supp36_p001.txt",
+          "sha256": "78cfe7b4497f90d1b9eee1dabf66f7cba30e10ed1c440aae767e170c78fca8ac",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/supp36_p004.txt",
+          "sha256": "1a86062c374d6b4efb25f938492d98502c2d10a380914092688f623dd6c22610",
+          "physical_page": 4
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/supp36_p006.txt",
+          "sha256": "a440120b4d881d9e6e72be082a13a4fe4044a558f326a02e12e621bb037b84f3",
+          "physical_page": 6
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/supp36_p009.txt",
+          "sha256": "c3a5f65b87c0d673c97b7edfd03d58a74c888bfc17f319d621ceb1a10ece95f5",
+          "physical_page": 9
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/supp36_p012.txt",
+          "sha256": "76e316a19704899bd0f7452d516e38ac08604f1a93e785e4bca965dd65d77466",
+          "physical_page": 12
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/supply/supp36_p6.png",
+          "sha256": "43083a6c33a2bea2ac359840fee53dc7a4d8ff0c392c452695c3303a33091301",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedPTCrates; crosscheckedofficialhistory/currentbook/customerinsert"
+      ],
+      "selected_physical_pages": [
+        1,
+        4,
+        6,
+        9,
+        12
+      ],
+      "physical_pages": 44,
+      "full_text_path": ".cache/met_ed_pa/sources/supply/supp36.txt",
+      "full_text_sha256": "baa0522505f3188c75d06b353c08e1b65cee69ee3f34efa22f1218b605fa27cd"
+    },
+    {
+      "id": "supply_illustrative_june26",
+      "original_path": ".cache/met_ed_pa/sources/supply/illustrative_june26.pdf",
+      "original_sha256": "7d4a6745a5cc079f3e83f243854f5a39e9f22a36a1fe85a9165c8b8e619dfa0e",
+      "original_bytes": 140933,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/ME-Rate-District-PTC-and-HP-Illustrative-6-1-2026.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "illustrative_june26",
+          "path": ".cache/met_ed_pa/sources/supply/illustrative_june26.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/illustrative_june26_p001.txt",
+          "sha256": "6ad03b3d96973ba7556243fc7ab0a26005a8d1bab3ff95596b67119dfdff5547",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/illustrative_june26_p002.txt",
+          "sha256": "489926f10ae19dc56ad3716483219fcf5582cabe95f418727e77bf5b7512ca39",
+          "physical_page": 2
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "illustrativeestimatedONLY; notusedasadoptedcompositeauthority"
+      ],
+      "selected_physical_pages": [
+        1,
+        2
+      ],
+      "physical_pages": 4,
+      "full_text_path": ".cache/met_ed_pa/sources/supply/illustrative_june26.txt",
+      "full_text_sha256": "bd662b7445d10f7c9418685063c258678963d04460fd410a929e985379d5a578"
+    },
+    {
+      "id": "supply_abcs_shopping",
+      "original_path": ".cache/met_ed_pa/sources/supply/abcs_shopping.pdf",
+      "original_sha256": "017f0010a62c102429c17a3cfd8da85b22c2ef98f2faad9942df8a63b01a5877",
+      "original_bytes": 95910,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/10692-Met-Ed-ABCs-Of-Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_shopping",
+          "path": ".cache/met_ed_pa/sources/supply/abcs_shopping.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/supply_excerpts/abcs_shopping_p001.txt",
+          "sha256": "1ffe22b7e9daae26f3be18cb1357f6898bc425a68ef280e369dbadd17083060a",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/supply/abcs_shopping_p1.png",
+          "sha256": "ccc18b167de19f00a9d9a027c97534a78bafae923f044f154e538fd769e05f44",
+          "owner_stream": "supply",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "officialbillinsertindependentPTCbenchmarkandMay31dateconfirmation"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/met_ed_pa/sources/supply/abcs_shopping.txt",
+      "full_text_sha256": "25a593adb1a6a8f1e1957f940be96f88a15b2c076048d5e64dd3ea323fd47558"
+    },
+    {
+      "id": "tax_rules_pa_52_56_2",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_52_56_2.html",
+      "original_sha256": "7a8c8e24777c95bf7fa3b2d8e23f3e3d9fd0dd23e04169b7084923db0f2ddcad",
+      "original_bytes": 24307,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter56/s56.2.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_52_56_2",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_52_56_2.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/pa_52_56_2.txt",
+          "sha256": "8d047e18123a114e44b5a75eded975c7a861ea952edaab02cb992551bb1e99cd",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Official primary rule; section labels retained in HTML text. Retrieved2026-10-27. Applicability limits described in research note."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_52_75_13",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_52_75_13.html",
+      "original_sha256": "d3e5b486fb48d14f4cd15736362379b2f02a483abaf7b22eb24af382dcea26d2",
+      "original_bytes": 9801,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter75/s75.13.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_52_75_13",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_52_75_13.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/pa_52_75_13.txt",
+          "sha256": "e09dfe45ebca5e9c6c2387b1a1405867e6d31f0db91cbefda611c532ce2a80da",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Official primary rule; section labels retained in HTML text. Retrieved2026-10-27. Applicability limits described in research note."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_61_32_25",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_61_32_25.html",
+      "original_sha256": "1466a3e421a4e128f8dc1c291b07409bdfa6f7866652b7f8822f6b8ae1e3fa79",
+      "original_bytes": 13731,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter32/s32.25.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_61_32_25",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_61_32_25.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/pa_61_32_25.txt",
+          "sha256": "5e5b7b9b73a0c481b618a7ace10f42c218ae59fbc80eb57176b0bcbcb60f7478",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Official primary rule; section labels retained in HTML text. Retrieved2026-10-27. Applicability limits described in research note."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_61_33_2",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_61_33_2.html",
+      "original_sha256": "3006420a6f301dcf3f456969bc41ad6766362a6273d0d3574fb90b91c86d8121",
+      "original_bytes": 12296,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter33/s33.2.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_61_33_2",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_61_33_2.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/pa_61_33_2.txt",
+          "sha256": "05cf3747ce200045aff0ef71d47e64490ac929cdc19d2cf701f773dfa8657bf5",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Official primary rule; section labels retained in HTML text. Retrieved2026-10-27. Applicability limits described in research note."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_dor_sales_tax",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_dor_sales_tax.html",
+      "original_sha256": "7fd70b7bbd9a2f4f3bc0b408b0e06e308d0df0ecf0f498a3758583879f7168ea",
+      "original_bytes": 451784,
+      "urls": [
+        "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_dor_sales_tax",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_dor_sales_tax.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/met_ed_pa/tax_rules_excerpts/pa_dor_sales_tax.txt",
+          "sha256": "361f4b7d5f8adcd4229cc2c8f3d8e85419a127052a68038c3dfa812434325f0a",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Official primary rule; section labels retained in HTML text. Retrieved2026-10-27. Applicability limits described in research note."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "metadata_pjm_2025_zonal_msa",
+      "original_path": ".cache/met_ed_pa/sources/metadata/pjm_2025_zonal_msa.pdf",
+      "original_sha256": "0b3d680db1575dd56fe3bdeff13cd9d72986e018f9585b230735e775a5324853",
+      "original_bytes": 1894555,
+      "urls": [
+        "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2025/20250613/20250613-post-meeting---review-requested---zonal-msa-map-changes.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "pjm_2025_zonal_msa",
+          "path": ".cache/met_ed_pa/sources/metadata/pjm_2025_zonal_msa.pdf"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/met_ed_pa/sources/metadata/meted_market_label_excerpt.txt",
+          "sha256": "f8d06d1c2b3c532e336f8072532fa899ec5cae27286a49c0e8498614d58957ed",
+          "physical_pages": [
+            14
+          ]
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/met_ed_pa/sources/metadata/pjm_2025_meted_p14.png",
+          "sha256": "6f92692ed3e880a3012ce76114890268755ae04594b2fc334e6beca3fc088814",
+          "visually_reviewed": true,
+          "parser_notes": "pypdf repaired cross-reference offsets while extracting; PDFium render separately inspected. No MSA changes treated as adopted.",
+          "physical_page": 14,
+          "owner_stream": "metadata"
+        }
+      ],
+      "source_qualifications": [
+        "METED native load-zone label only, not adoption of proposed MSA-boundary changes, retail territory eligibility or a wholesale pricing node"
+      ],
+      "selected_physical_pages": [],
+      "physical_pages": 21,
+      "full_text_path": ".cache/met_ed_pa/sources/metadata/pjm_2025_zonal_msa.txt",
+      "full_text_sha256": "2e8fe754e9e67480105a601c84d366ae5ff680ac71751454729e5f95d4078f83"
+    },
+    {
+      "id": "metadata_pjm_regions",
+      "original_path": ".cache/met_ed_pa/sources/metadata/pjm_regions.html",
+      "original_sha256": "98fe1fec5806ffccf3d9104531f8a604140d01e00e3e5b2b1321cb628d3fd601",
+      "original_bytes": 46783,
+      "urls": [
+        "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "pjm_regions",
+          "path": ".cache/met_ed_pa/sources/metadata/pjm_regions.html"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/met_ed_pa/sources/metadata/pjm_regions_excerpt.txt",
+          "sha256": "c992e7ee009ccd4334df9f5517f8a70887f4bea1962791006963d82a4bd63d0f",
+          "physical_pages": []
+        }
+      ],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "FE-ME emergency region and METED load/market zone are separate labels; no node, utility territory, supplier, tax eligibility or retail rate inferred."
+      ],
+      "selected_physical_pages": []
+    }
+  ],
+  "derived_receipts": [
+    {
+      "path": ".cache/met_ed_pa/sources/delivery/delivery_records.json",
+      "sha256": "3a29636d7d6dd22ec8efe2889ccc62d1b82d3616d06526708f7acc70a20c1882",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/delivery/delivery_snapshots.json",
+      "sha256": "1f10863b1dd77ae379245235d10dddc83af3e012869ebe6596e693ff8bd6f197",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/delivery/page_inventory.json",
+      "sha256": "9ce5adbb32d0b8c599c05610bfe1fdec34cbd422faeb2728d1e29824b366b8f7",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/metadata/market_zone_receipt.json",
+      "sha256": "fde299307e3ba91b191739191e270fce2570a8fd674d7f9a9f73ebc677685e51",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/metadata/pjm_receipt.json",
+      "sha256": "5fed249157f651aed57174dc176a709f683a8438e7e55361e65c5576215895b6",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/supply/historical_rates_cells.json",
+      "sha256": "562c0fcc915e767a8bc357c56e7143bfd19c596cd7efb4922e2fda1e4e56214e",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/supply/supply_records.json",
+      "sha256": "d9f5f2e7274bed5d1b193e0b490277dfc85a1febf5cfa322c380a5dc52396af0",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/supply/supply_snapshots.json",
+      "sha256": "0489f68d897db15811b3dd544d716df691406eba3a771851c279d7e87bfc0c2b",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/tax_rules/tax_rules_records.json",
+      "sha256": "e46ffe97cfeb2d5efe2d6b990b58187d1fd653270631b505a3fb3eb4e5d46d79",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/met_ed_pa/delivery_research.md",
+      "sha256": "d91c3d359cc11e25b7a40e9bf2d313d2018b434c26f8305a5164fd031ff955cd",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/met_ed_pa/supply_research.md",
+      "sha256": "36d0b9028acfa5d5a9a13d225ead5e3c63caf23cb65335614836e2da4def6750",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/met_ed_pa/tax_rules_research.md",
+      "sha256": "53eb188f9ff70738435ab931d6ac4f190dd820d0290bbe518b848e54f295e962",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/met_ed_pa/sources/supply/ptc_four_windows_montage.png",
+      "sha256": "93ea46804cdb8ded76eb65c16176c0a4d45deb763286b88dbeb2c06a6599a518",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/utility_sources/firstenergy/manifest.json",
+      "sha256": "5b3bd4e5dd3d2f419a8669d8ff5b5fbf41782f8427802ff391bb0b74ccde89d5",
+      "status": "reused source provenance ledger; no edits; Met-Ed column applicability verified independently"
+    }
+  ],
+  "blocked_routes": [
+    {
+      "id": "retained_invalid_historical_book",
+      "original_path": ".cache/firstenergy_research/pa-20241107095503.pdf",
+      "status": "invalid Pages object; excluded source authority; not retried"
+    },
+    {
+      "id": "jul_sep2026_DSIC",
+      "status": "bounded targeted search did not recover adopted quarterly DSIC; no carryforward or October backfill"
+    }
+  ],
+  "limitations": [
+    "Met-Ed columns only: Penelec/PennPower/WestPennadjacentvalues are not substitutes. Reusedoldoriginals verifiedbySHA andMetEdapplicability; multipleURLs/copiesdeduplicatedbyhash.",
+    "All datedbase/ridercomponentversions andboundaries belongtotheir selectedphysicalpages. Currentprices are notautomaticallybackdated; historicalfileexistence doesnotenableunsupportedrates.",
+    "JulySeptember2026DSIC remainsmissing. Quarter-specificDSICcannotcarryforwardfromApril orbackfillfromOctober. Earlier2025acceptedSupp14/originalDSICretainedseparately.",
+    "January2025GS priorcostrefundtaxadjustment remainsunknown. Current6%sales-taxarithmetic andknown4.18GRT-inclusiverefundleafareverifiedsubtotalonly,notfullcustomerpayablecashbill. Do notinventzeroorextrapolatepriorcustomertransactiontax.",
+    "January2025RS known6.53refundtaxinclusiveandexemptordinaryresidentialstatus distinctfromGS. Refundposting/accountentitlement mustbeindependentlyconfirmed; nobankornegativebalancecashsettlementinvented.",
+    "PTCDefaultcomposites include applicableGRT,losses,administration,capacity/PJM/AEPS/NITS/reconciliation. DSSnon-bypassableNMBtransmissionseparate; publishedaggregatecomponentsaddonce. NoLMP/PLC/NSPLfeesaddedtoordinaryPTCGS-S.",
+    "Supp28rawenddateMay30,2026retained; independentofficialABCsinsert explicitlysameprices throughMay31 plusrider204sixmonthclock supportsMay31. Historicalworkbook2025/26June24headers are notadoptedclockauthority; filedsheetsJune1control.",
+    "IllustrativeestimatedPTC/HPcomputations, auctiontranches, proposedrates, hourlypricingandTOUareexcludedfromadoptedfinalcompositeauthority.",
+    "FE-ME emergencylabel distinctfromMETEDmarketzone. PJM21pageproposal-mapPDFphysical14usedforMETEDlabelonly; noadoptionofproposedMSAboundaries. pypdf repairedxref warnings retained, PDFiumrenderreviewpassed.",
+    "OfficialPTChistory/billinsert/supportingschedules arecomponentbenchmarks; noindependentlymatchedactualitemizedMetEdinvoiceestablishedbythissourcepacket.",
+    "Sourcecoverageconditionaloncompleteordinarycycles,accounttax/interconnection/classfacts andallrow-specificrules. Engine/tests/historicalmatrix/OpenDSS/browseracceptance areseparatecandidate-pinnedproofs.",
+    "Authorized tax-note correction: supersedingSecondRevised182 STAS+.02% controls2025, notSupp14zero. JanuaryonlyTCJA/DSICzero; priorrefund remainsseparateoutsidecurrentSTASbase withoutrelyingonzeroSTAS. Runtimealreadyusedcorrectrate."
+  ],
+  "validation_limit": "Source preservation/text/hash checks only. No engine/test/simulation/OpenDSS/browser acceptance is proved by the source ledger."
+}
