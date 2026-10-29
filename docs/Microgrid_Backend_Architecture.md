@@ -1,5 +1,11 @@
 # Microgrid backend architecture
 
+Optional PJM regional-average carbon accounting for schema 11 is documented in
+[PJM regional carbon](PJM_Regional_Carbon.md). It evaluates scheduled imports
+after dispatch and does not alter retail charges, optimization or electrical
+replay. Utility, supplier, jurisdiction, wholesale location and carbon zone
+remain separate identities.
+
 Customer PDF observations are handled separately from simulated tariffs and
 interval-native load; see [Measured bill analysis](Measured_Bill_Analysis.md).
 
@@ -927,3 +933,22 @@ zone and FE-PN emergency metadata remain separate from delivery/supply/tax.
 Independent audit reconstructs DSIC/STAS bases including LEDC. Earlier Met-Ed
 LEDC completeness concern is recorded separately; old files/evidence pins remain
 unchanged. See [account and source scope](Penelec_Pennsylvania.md).
+
+## Penn Power Pennsylvania RS/GS-Small · October 2026
+
+`billing/penn_power_pa.py` and snapshot-safe `penn_power_pa_rates.py` add ordinary
+Penn Power RS and Company-retained GS-Small default PTC, January2025–June2026 and
+October2026 complete calendar cycles. July–September2026 DSIC remains unsupported.
+RS requires one family unit/meter with no same-meter business and inactive25kW
+special-demand/prior11/native/import domain. GS availability/history/native/import
+1500kWh bounds, no demand meter/fixed usage and separately sourced full GSDS/hourly
+qualification history remain independent of PV and current small load; no invented
+GSDS lookback cutoff is used. Historical literal F.THREE-PHASE/current C labels
+have identical source bodies, supporting the narrow ordinarysinglephase branch
+without invented fees. JanuaryGS needs exact historicalGS4.84refund entitlement
+and remains a subtotal for unresolved refund tax; RS uses confirmed6.19 once.
+Mandatory LEDC, disclosed JanMar first-April-window interpretation, zero Penn Power
+SPV, signed SMT/DSS and +1.59%TCJA are retained. Known minimum failures reject
+without forced purchases. Existing math/dispatch/worker/PV/storage/replay are
+reused without shared behavioral changes. ATSI/FE-ATSI metadata remain separate
+from PA tariff/jurisdiction and wholesale prices. See [scope](Penn_Power_Pennsylvania.md).

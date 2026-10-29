@@ -17,6 +17,9 @@ def get_carbon_intensity_range(
     zone: str,
     start: str,
     end: str,
+    *,
+    flow_traced: bool | None = None,
+    emission_factor_type: str | None = None,
 ) -> dict:
     
     url = (
@@ -34,6 +37,16 @@ def get_carbon_intensity_range(
         "end": end,
         "temporalGranularity": "15_minutes",
     }
+    # Existing callers retain their API contract. Consumers that make a
+    # specific accounting claim must request its basis explicitly.
+    if flow_traced is not None:
+        if type(flow_traced) is not bool:
+            raise ValueError("flow_traced must be a boolean.")
+        params["flowTraced"] = "true" if flow_traced else "false"
+    if emission_factor_type is not None:
+        if emission_factor_type not in ("direct", "lifecycle"):
+            raise ValueError("Choose direct or lifecycle emission factors.")
+        params["emissionFactorType"] = emission_factor_type
 
     response = requests.get(
         url,

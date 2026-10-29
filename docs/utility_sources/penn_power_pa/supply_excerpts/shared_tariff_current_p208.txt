@@ -1,0 +1,54 @@
+SOURCE: .cache/met_ed_pa/sources/delivery/tariff_current.pdf
+PHYSICAL PAGE: 208
+
+Issued: December 22, 2023 Effective: January 1, 2024  
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Electric Pa P.U.C. No. 1  
+  Original Page 208 
+ 
+ 
+ 
+HOURLY PRICING DEFAULT SERVICE RIDER 
+ 
+AVAILABILITY: 
+ 
+The charges billed under this rider are applicable to all Customers on Rate Schedules 44, 46, GS-
+Medium (HP), GS -Large, GP, TP or GS- Small (Special Provision GSDS) who elect to take Default 
+Service from the Company. These charges are also applicable to Customers on Rate Schedules GS-Small, 
+and GS-Medium (PTC) on a voluntary basis who meet the metering requirements of this rider. Rates shall 
+be billed under this rider on the next scheduled meter reading date after electing Default Service. 
+ 
+Rate Schedule GS -Small, GS-Medium (PTC) Customers electing service under this rider must 
+have Smart Meter technology installed as part of the Company’s Smart Meter Plan filed with and approved 
+by the Commission. 
+ 
+Hourly Pricing Service Charges: 
+ 
+Customers participating in the Hourly Pricing Default Service Rider will be billed for usage based 
+on the following calculation: 
+ 
+Hourly Pricing Service Charges = (HP Energy Charge + HPCap-AEPS-Other Charge + HPAdministrative Charge + 
+HPUnc + HPReconciliation Charge) x [1 / (1-T)] 
+ 
+HP Energy Charge per kWh: 
+n 
+HP Energy Charge = ∑ (kWht x (LMPt + HPOth) x HPLoss Multiplier)  
+t=1 
+Where: 
+ 
+n =  Total number of hours in the billing period 
+ 
+t =  An hour in the billing period 
+ 
+LMP = the “Real Time” PJM load-weighted average Locational Marginal Price for the Met-
+Ed, Penelec, ATSI (Penn Power), or APS (West Penn) Transmission Zone. 
+ 
+HPOth =  $0.00400 per kWh for estimate of capacity, ancillary services, NITS, AEPS 
+compliance and other supply components. 
+ 
+Met-Ed 
+Rate Schedule GS-S, GS-M, GS-L GP TP 
+HP Loss Multipliers 1.0515 1.0171 1.0007 
+ 
+ 

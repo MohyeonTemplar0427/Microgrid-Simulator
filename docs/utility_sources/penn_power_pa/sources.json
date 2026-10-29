@@ -1,0 +1,2779 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-29",
+  "source_scope": {
+    "utility_key": "firstenergy_pa_penn_power",
+    "module": "penn_power_pa",
+    "utility": "FirstEnergy Pennsylvania Electric Company, PennPower Rate District",
+    "jurisdiction": "Pennsylvania PUC Electric No.1 independently established; metadataOHcell preserved, not jurisdictionassignment",
+    "plans": [
+      "RS",
+      "GS-S"
+    ],
+    "supply": "ordinaryDefaultPTC only, utility-retainedPennPowerclass; noGSDS/HP/TOU/shopping",
+    "source_rate_coverage": [
+      {
+        "start": "2025-01-01",
+        "end_inclusive": "2026-06-30"
+      },
+      {
+        "start": "2026-10-01",
+        "end_inclusive": "2026-10-31"
+      }
+    ],
+    "coverage_conditions": "Allcomponent/account/rider/tax/billdateconditionsrequired. JanMar2025LEDCstart-date/absenceinference disclosed. JulSep2026DSICmissing. Jan2025GSverifiedsubtotalonly, andrequiresindependenthistoricGSrow4.84entitlement.",
+    "LEDC": "Mandatorynonbypassablealllistedclasses, notcustomerconversiondependent. JanMar25 NOT_APPLICABLE_BEFORE_FIRST_APRIL_COMPUTATIONAL_PERIOD isdisclosedinference, noexplicitpricedJanMarzero row.",
+    "January2025_GS": "Exact4.84GRT-inclusiverefundonlywithindependentaccount/Companysource tyinghistoricPennPowerGSrowtostudiedaccount; currentGS-Snamealoneinsufficient; absententitlementrejectJanuary. Knowncurrenttariffcharges taxed6%, thenknownconfirmed4.84once; unknownpriorrefundtaxadjustmentexcluded,notzero,verifiedsubtotal/annualmixedlabel.",
+    "January2025_RS": "Ordinarysolelyresidentialbranchknown6.19GRT-inclusiverefundoncecancompletewithconfirmedentitlement/posting/priorrepresentedfacts.",
+    "GS_class": "PennPoweravailabilityloads up to1500kWh; ongoing>1500monthlyintwoconsecutivemonths/12mayloseclass. Assignment/history/qualificationquantityfactseparatefrommodelednative/importbounds; nogross/netpredicateinvented.",
+    "GS_general_provisions": "PennPowerA+B+C+F. Bhistoric500kW+otherwiseGP/TP+onGS-Sbecausewithoutcontract=>HP. ExcludeBGSDS/Cimputedusage/special/earlytermination. HistoricalFexplicitlyTHREE-PHASE; currentlabelsidenticalbodyC, sameOriginal67Jan1,24footer. Knownnarrowsinglephaseonemeter/no combinedmeter/no3phasegear/addedfacilityfactdomain, noF-specificsubtotalgap.",
+    "F_proof": {
+      "direct_historical": "officialJune2024Original67literalF",
+      "current": "Original67C",
+      "body_equal": true,
+      "whitespace_hyphen_normalized_sha256": "b69c335423e63168301ed8b855e819d65ea988e9c2d7134de743fe8bd2480de2",
+      "limitation": "version-labelinconsistencyretained; no mappingfromparagraphorderandno missingchargeinvented"
+    },
+    "RS_scope": "ordinaryresidentialsinglephaseonemeter; no mixedbusiness/specialgeneralprovisions; exact source-specificdemand/meterconditionsownedbyrulespacket",
+    "cycle": "Completeordinarycalendarcycles; explicitbilldatefactsforTCJA/DSICbills-rendered vsservice-renderedPTC/STAS/DSS/LEDC; unsupportedpartial/shifted/nonlinearprorationreject.",
+    "taxes": "FiledGRTalreadyincludedonce. SolelyresidentialRSexempt/ordinaryfullytaxableGS6%onlyexplicitlocalityoutsideAlleghenyPhiladelphia; supplier/territory/weatherdonotproveexemption/locality.",
+    "DER": "AlreadyactiveCompanyapprovedordinaryNEM/interconnection coveringactualPV/storage/charging, retainedclassandnoPartialServices/specialfees; zeroexports/openingbank. No automaticstandalonebattery/size/nonexportwaiver.",
+    "metadata": "FE-ATSIcontrolarea sourceOHcellretainedverbatimwhiledescriptionnamesPennPower; ATSI historicalcoarsemapzonelabelonly. NoPAjurisdiction/territory/tax/locality/supplier/nodeassignmentinferred.",
+    "actual_customer_eligibility_claimed": false,
+    "full_year_validation_claim": false
+  },
+  "records": [
+    {
+      "id": "delivery_tariff_index",
+      "original_path": ".cache/met_ed_pa/sources/delivery/tariff_index.html",
+      "original_sha256": "375cefa83f0d3a9652767f3e3606e6730ca008fb40dc002c24d8a424211cb95b",
+      "original_bytes": 63021,
+      "urls": [
+        "https://www.firstenergycorp.com/customer_choice/pennsylvania/pennsylvania_tariffs.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_index",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_index.html"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "delivery_tariff_current",
+      "original_path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf",
+      "original_sha256": "665736ea46b7860651226605624c298b6990e3c0581166e543ccf27bd25b8f9d",
+      "original_bytes": 2670563,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "shared_tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        },
+        {
+          "owner_stream": "supply_gap",
+          "source_id": "current_original67_comparator",
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply",
+        "tax_rules",
+        "supply_gap"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p065.txt",
+          "sha256": "bc1364c21a4cc234491ee4d82cacad2d3b2a0b00d9dbb5c6f141aebeaf1b74cc",
+          "physical_page": 65
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p066.txt",
+          "sha256": "3b7f5224669b96219ccfbbf7fe6f80c856d58c8bcde9a29b0d3db0a7ec78f96e",
+          "physical_page": 66
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p067.txt",
+          "sha256": "7efa482dd379a1e02162f052e9581671a7dc85730836bb268566bc1bb55d6ff3",
+          "physical_page": 67
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p203.txt",
+          "sha256": "4413f99055f1017d1c55b239e303a817e11290b6b4a6c7e80c419a93b1b59de6",
+          "physical_page": 203
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p204.txt",
+          "sha256": "b20e4ca0f15ae0aa429b3bf0079d951be5e828ad150393a28cc6e21488feded2",
+          "physical_page": 204
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p205.txt",
+          "sha256": "41eb1d81cc93f898c0e22293b25b86ad809467cb0f3ed9564d69c79d436ec156",
+          "physical_page": 205
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p206.txt",
+          "sha256": "7e1e678edc5007f50da0535a777956f8bc10c91fea6a888865bf3ac41432882a",
+          "physical_page": 206
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p207.txt",
+          "sha256": "6df0ee4eae4e51f4c5ab6aac2aa9030c74b6d8b46253ec8b71341bf7c4c34852",
+          "physical_page": 207
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p208.txt",
+          "sha256": "cbd8c7b9f934d49046781c76cd5cf6377096ad8ed5f97a8960b8f9b0249bf892",
+          "physical_page": 208
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/shared_tariff_current_p209.txt",
+          "sha256": "20fbc83a8cae13b81a1644583e132487f0bc5c156daec425ab12d3fb5e526397",
+          "physical_page": 209
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/tariff_current.txt",
+          "sha256": "eed080b9eec7f56f2d83b7bad9c6a5a59c7d698bdd7adec9d7bd46e22e46e6c2",
+          "physical_pages": [
+            24,
+            46,
+            47,
+            48,
+            49,
+            50,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            182,
+            183,
+            184,
+            187,
+            188,
+            189,
+            190,
+            191,
+            213,
+            216,
+            224,
+            225,
+            226,
+            227,
+            228,
+            232,
+            235,
+            242,
+            246,
+            247,
+            248
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p182.txt",
+          "sha256": "51c229c3012501e33533c5e256b37ac5b1fece7c7a7777f01e8128ab3c809870",
+          "physical_page": 182,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p183.txt",
+          "sha256": "429699a997ff7d6d07aef4a8e9e61f9809651f71d32527ec902ce8c36b4e5e67",
+          "physical_page": 183,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p185.txt",
+          "sha256": "7c5b2c5fd7c8e42d98e4171147c65b12f53b71443d523b0bdf645ef68a6d767c",
+          "physical_page": 185,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p194.txt",
+          "sha256": "ba35ecfdb26256236713921cf6196c4f1432353b43334663f7525d7a8ae5e73b",
+          "physical_page": 194,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p198.txt",
+          "sha256": "38d624f3eb3ee0d2a36532e9a3c4b5eca30220c90bd10b93ecb558648f782cb1",
+          "physical_page": 198,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p213.txt",
+          "sha256": "7da81721fd5dec0ec5f752737f53da820111f3ba413a5456859a3236d3f0972b",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p216.txt",
+          "sha256": "07ffb19a38d7712a1ecf26cb2d9b16ac141d5146ecb628af4b43f8ddcce7b81a",
+          "physical_page": 216,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p242.txt",
+          "sha256": "f0b8014cf2a6455a2f86d6b0eabe26630f2536064eca0f7f6899bf3cd26448a4",
+          "physical_page": 242,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p240.txt",
+          "sha256": "f9547ef5e2ad9cc213489302d7643424080ba401b0f267b268d7c195a9a7005f",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Eleventh Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p246.txt",
+          "sha256": "70442e3710bcf7d5704e5c80be71dedaf53c6d58034cc6600db92326700a0c7d",
+          "physical_page": 246,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p64.txt",
+          "sha256": "e1a0608108b4b0b3e6b3bdbdf50aee19b3c9f115c18d0b3a80dc9490feaffc79",
+          "physical_page": 64,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p67.txt",
+          "sha256": "3568766529248848518178693cf1a3e5e64aae8d77a4b924045c886a61de9d64",
+          "physical_page": 67,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p181.txt",
+          "sha256": "b3ff22a8cddda5e6f4eb110a448cbcf5bd1774328a9f2dc5a2a83797cb8574a5",
+          "physical_page": 181,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p62.txt",
+          "sha256": "2cf9fe380b8846988fa75734469d3e806d295f0ae4621892ed63b21cf8c473de",
+          "physical_page": 62,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p63.txt",
+          "sha256": "4caaf1bdd927bae3d5b863aff22ce5741d625f96f74bd6ec314e184fee1d13cf",
+          "physical_page": 63,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p66.txt",
+          "sha256": "8a611272da614f915e54f3ba3729c796f6012260b84ba14c60d29ae416dc9af4",
+          "physical_page": 66,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p247.txt",
+          "sha256": "d4fdba8ad01bf95d3b8d97800fc0db5a66b6d22bfc33b0b08f835d3dcc6dc2f2",
+          "physical_page": 247,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/tariff_current_p248.txt",
+          "sha256": "9a046d9c45950a541061fcc53e6bbbee202cc7901200da9c7ab03e1a653fb8d1",
+          "physical_page": 248,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/current_original67_comparator_p66.txt",
+          "sha256": "3b7f5224669b96219ccfbbf7fe6f80c856d58c8bcde9a29b0d3db0a7ec78f96e",
+          "physical_page": 66
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/current_original67_comparator_p67.txt",
+          "sha256": "7efa482dd379a1e02162f052e9581671a7dc85730836bb268566bc1bb55d6ff3",
+          "physical_page": 67
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/current_original67_comparator_p67.png",
+          "sha256": "b4f58d9805ace29317679f8f134f2f71825971e2ed0c5539f0ab17927e0a025c",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": "665736ea46b7860651226605624c298b6990e3c0581166e543ccf27bd25b8f9d",
+          "physical_page": 67
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/rs_demand.png",
+          "sha256": "2518a39f6e19bd33ab1bceba68db726cb9fbee9c8902d2dfacde92bbe03d666c",
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "physical_page": 62,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/gs_matrix.png",
+          "sha256": "78ff12fcd7ba9a7fe00746a72ba3d84ac0c12f446bb7d30d9b621c682ebbb812",
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "physical_page": 66,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/ledc2026.png",
+          "sha256": "528e0b589767cbfc53992610b3b9172a0078e58e378cbad51460bb63c8534a8f",
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "physical_page": 246,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/current_C.png",
+          "sha256": "b56b387fbe61850f07c31a57796a23985ba2259e6d80669e7eb0f6874659d991",
+          "owner_stream": "tax_rules",
+          "source_id": "tariff_current",
+          "physical_page": 67,
+          "visually_reviewed": true,
+          "review_status": "Visually reviewed2026-10-29: literalhistoricalF.THREE-PHASE/currentC.THREE-PHASE; identicalbody independently compared"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p181.png",
+          "sha256": "2b1bdf2e854927fe82b0d375c29bffbbf494adefbbeb368c8185e948cb1794a6",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p182.png",
+          "sha256": "d6bc22404dab0d9b7b95d517677574b914729c711b0636f090aedb4c450d2d57",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p183.png",
+          "sha256": "e0167bc17a16fc6730c27bba62833f43c68163fecbacb71d2acd6055afcec7fd",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p185.png",
+          "sha256": "02fc5c56c064cbc15715d671623198c889a5ae7c743ed62f5636097e1869ff9f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p194.png",
+          "sha256": "549a2d7422cb040aab3826df50dbcad0136e56a44f9f1c470b4ea18103dfcf5c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p198.png",
+          "sha256": "8b21cd0a62efefd64a1474ec0a0b4600b9381fda82556b5d8bf25c0ad9a3ee7c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p213.png",
+          "sha256": "20b33df4a04661f5f1c4630488451bf037adedb92641d5fd00e688fbbace4677",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p216.png",
+          "sha256": "d9a469f9b3021f201d4a432b634bc4d2bdbe84409d75d43b8b6bd085c61ac7f4",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p240.png",
+          "sha256": "cebaf82f0eea160c6391caddafd7e155e9cda687168e6da1291661ac4830faa3",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p242.png",
+          "sha256": "4b28c63c319b74ac2e2aec54f1aeccc4f2eef8e90add35ae676ffd12547e2bc1",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p246.png",
+          "sha256": "06ccd4ec4abc656fbaf4be90830e7095d9b8afde5ab84dd0e9e9108dd1afadd8",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p247.png",
+          "sha256": "76c5a6b83e170e80660a8cfd30be1ccbca7d2f039bff390a7c8da5094b2c0e83",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p248.png",
+          "sha256": "c342e7cadf94815d2b264a9392e975543fb999f4b083b5bcb7ea3268a9e9e6d7",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p62.png",
+          "sha256": "a1b0da672834b23d965e8aafbd066fdf32e5c96d045cd53a42f3dded6b89d0ec",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p63.png",
+          "sha256": "f4e869608751cd24060b2bbb18f79364627c43ff7750d549d05cbaf188f15fb3",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p64.png",
+          "sha256": "61471ce1f2c51a0f4dffa0750efcc94727a1ecdedcd6ff905fb645e70c108f3c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p66.png",
+          "sha256": "6be472332e25436034e5966d005e52b6d5fcd00297770ac1a3704ff7070555b5",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/tariff_current_p67.png",
+          "sha256": "b4f58d9805ace29317679f8f134f2f71825971e2ed0c5539f0ab17927e0a025c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedrate/rule; PennPowercolumnonly, actualeffectiveclockretained",
+        "Penn Power district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14.",
+        "already-inspected baseline comparator; no new route/network"
+      ],
+      "selected_physical_pages": [
+        24,
+        46,
+        47,
+        48,
+        49,
+        50,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        181,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        189,
+        190,
+        191,
+        194,
+        198,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        213,
+        216,
+        224,
+        225,
+        226,
+        227,
+        228,
+        232,
+        235,
+        240,
+        242,
+        246,
+        247,
+        248
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/tariff_current.txt",
+      "full_text_sha256": "c7375bdd9cebe5523140d123bcdb95ccd3365e6a1afb740dbbc3af2f89ce62a8",
+      "alternate_extractions": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/shared_tariff_current.txt",
+          "sha256": "dd40b5d783bc8677e055c080996210072b163d3495fbebb22670f9af1951df80"
+        },
+        {
+          "path": ".cache/met_ed_pa/sources/delivery/tariff_current.txt",
+          "sha256": "dd40b5d783bc8677e055c080996210072b163d3495fbebb22670f9af1951df80"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/current_original67_comparator_full.txt",
+          "sha256": "dd40b5d783bc8677e055c080996210072b163d3495fbebb22670f9af1951df80"
+        }
+      ]
+    },
+    {
+      "id": "delivery_historical_rates",
+      "original_path": ".cache/met_ed_pa/sources/delivery/historical_rates.xlsx",
+      "original_sha256": "b2d50924124cc6f760473950bd31988d3b46a23e447c900a0d77159373dc4a85",
+      "original_bytes": 569129,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/Historical-Rates.xlsx"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "historical_rates",
+          "path": ".cache/met_ed_pa/sources/delivery/historical_rates.xlsx"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "historical_rates",
+          "path": ".cache/met_ed_pa/sources/supply/historical_rates.xlsx"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/historical_rates_penn_power_cells.txt",
+          "sha256": "472ca6d5272a95300d87eb81e298c4b1fd8744c493c3d38ef8ed60d8b137efcc",
+          "sheet": "PTC - Res and Small Comm",
+          "cells": "B6,B9,B12,B15,B18,L6:O9,L12:O15"
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "officialnumericcrosscheck; rawJune24headersnotJune1filedclockauthority"
+      ],
+      "selected_physical_pages": [],
+      "full_text_path": ".cache/met_ed_pa/sources/supply/historical_rates_cells.json",
+      "full_text_sha256": "562c0fcc915e767a8bc357c56e7143bfd19c596cd7efb4922e2fda1e4e56214e"
+    },
+    {
+      "id": "delivery_papuc-1858451",
+      "original_path": ".cache/firstenergy_research/papuc-1858451.pdf",
+      "original_sha256": "b74772efdc7b2c5a7bb527f6b34b007826b8e17a1e9efd387d6f5777f1e0ae99",
+      "original_bytes": 1665492,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1858451.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1858451",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "gap_f_accepted_supp14",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858451",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        },
+        {
+          "owner_stream": "supply_gap",
+          "source_id": "accepted_supp14",
+          "path": ".cache/firstenergy_research/papuc-1858451.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply",
+        "tax_rules",
+        "supply_gap"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/gap_f_accepted_supp14_p17.txt",
+          "sha256": "b1f39dd728fc8d21c456601c3682014390d8edb0fdfb7518bb11710414273dc0",
+          "physical_page": 17
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/gap_f_accepted_supp14_p18.txt",
+          "sha256": "9477ea4b64a6d661a938c92bf0e3977de437bb01567364c48dc70c789aacf66f",
+          "physical_page": 18
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/gap_f_accepted_supp14_p19.txt",
+          "sha256": "02e52aa18c48a75171f37cbf30da0e0658da6515b8cc9461bd97524b4beed53e",
+          "physical_page": 19
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/papuc-1858451.txt",
+          "sha256": "2754a31db0158f2a8fb2b104beee0473fd2b0d148bba7dbb61718516f89ac147",
+          "physical_pages": [
+            1,
+            15,
+            16,
+            17,
+            18,
+            19,
+            79,
+            91,
+            92,
+            93
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p15.txt",
+          "sha256": "a12d34095208570e0a04820d2bd9425fb6ed85aaa846e309b1827c63d2ae1acb",
+          "physical_page": 15,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p17.txt",
+          "sha256": "e5de2a80dad955eae25d1aec9671f3506deed5a63c775ccd6dde142c650eef1e",
+          "physical_page": 17,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p79.txt",
+          "sha256": "522f47363e8c2d5b89c2d92969d21b28d3a8e59f79641e3e7dd8905d8f8c3733",
+          "physical_page": 79,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p81.txt",
+          "sha256": "7322d670d588c77dc87bce0dd394e5b06fc2e6e4633dd2bae8baa1f330d86bfc",
+          "physical_page": 81,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p84.txt",
+          "sha256": "3f6541808d3fa5a67d71b93e3e16deb5fb1716162492216e5f4465ab8a095f3a",
+          "physical_page": 84,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p89.txt",
+          "sha256": "0ea500aa6b81a2cc3a625d1d4bb94db59301cb4c57269ef384e391874145757a",
+          "physical_page": 89,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p91.txt",
+          "sha256": "c9f08b90d30ebf89b3efc7a9317f95c27018628bafb145ce4e8018e31d780258",
+          "physical_page": 91,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858451_p93.txt",
+          "sha256": "042e6fff5c9baeeded52f2ae389fde9f3a669b18c978344d648714da564bbe01",
+          "physical_page": 93,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/accepted_supp14_p17.txt",
+          "sha256": "b1f39dd728fc8d21c456601c3682014390d8edb0fdfb7518bb11710414273dc0",
+          "physical_page": 17
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/accepted_supp14_p18.txt",
+          "sha256": "9477ea4b64a6d661a938c92bf0e3977de437bb01567364c48dc70c789aacf66f",
+          "physical_page": 18
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/accepted_supp14_p19.txt",
+          "sha256": "02e52aa18c48a75171f37cbf30da0e0658da6515b8cc9461bd97524b4beed53e",
+          "physical_page": 19
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/accepted_supp14_p18.png",
+          "sha256": "94401820dc55827301dc6aae0e3cc734681a058ad0ad0a63199cf036b7d56129",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": "b74772efdc7b2c5a7bb527f6b34b007826b8e17a1e9efd387d6f5777f1e0ae99",
+          "physical_page": 18
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p15.png",
+          "sha256": "c61d2e2242619d19f5febdbcdfcb66e2002f727439551da37dcacc5fc15dcf51",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p17.png",
+          "sha256": "2796803bf86d4b065133d368740112102ccce8c1fa9f9c9fc6fc2ba37f030f4c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p79.png",
+          "sha256": "619bfc448c401716e467fe2be7ca1c52efad955297e9ab195da521dcbcd4bce4",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p81.png",
+          "sha256": "81102d5fe451f9e46ab06faeae26c77875b286406bff96680abf602930fec5fc",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p84.png",
+          "sha256": "4c70f531e4df863b8306241ca16747dc96316c9de7f93c558d71a104fe9dc357",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p89.png",
+          "sha256": "a5cb42e7747a90bd6a4bc10e8f5c3e33955929a4c914645ecdff888c28cec763",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p91.png",
+          "sha256": "3102089f2fd6a06ca5b9f9212dcb2be28a582121a16e248583344453e9590418",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858451_p93.png",
+          "sha256": "c342e7cadf94815d2b264a9392e975543fb999f4b083b5bcb7ea3268a9e9e6d7",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "bounded route2; accepted regulator supplement revises65/66 then68, not67; directliteralF/currentClabelcomparison",
+        "Penn Power district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14.",
+        "bounded route2; accepted regulator supplement revises65/66 then68, not67"
+      ],
+      "selected_physical_pages": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        19,
+        79,
+        81,
+        84,
+        89,
+        91,
+        92,
+        93
+      ],
+      "physical_pages": 93,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1858451.txt",
+      "full_text_sha256": "1110251bac2cca49f0ab470028aaeded8dfbfc19ce3cce1d3394497263f5b9ad",
+      "alternate_extractions": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/accepted_supp14_full.txt",
+          "sha256": "fb4544c83d3ebcd27dc32839464dc5f8c2e6847de1d94bf54703c4499ebd3300"
+        },
+        {
+          "path": ".cache/firstenergy_research/papuc-1858451.txt",
+          "sha256": "34f4f0fc7d85adc5f25b9e1c3f1417eda3b6c668d97682b281e855e579eb0ec8"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/accepted_supp14_full.txt",
+          "sha256": "fb4544c83d3ebcd27dc32839464dc5f8c2e6847de1d94bf54703c4499ebd3300"
+        }
+      ]
+    },
+    {
+      "id": "delivery_pa-20250515174716",
+      "original_path": ".cache/firstenergy_research/pa-20250515174716.pdf",
+      "original_sha256": "efccf0bf4bba2f5f43aad96d1e56ab2d77495abd2174335a39c25cee98193a2a",
+      "original_bytes": 2520316,
+      "urls": [
+        "https://web.archive.org/web/20250515174716id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-20250515174716",
+          "path": ".cache/firstenergy_research/pa-20250515174716.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa-20250515174716",
+          "path": ".cache/firstenergy_research/pa-20250515174716.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/pa-20250515174716.txt",
+          "sha256": "ede3ee40c2bfd305734ce24942ec46099cd73161c32ac0a2f6a344c494420588",
+          "physical_pages": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            182,
+            183,
+            184,
+            187,
+            188,
+            189,
+            190,
+            191,
+            224,
+            242,
+            246,
+            247,
+            248
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250515174716_p182.txt",
+          "sha256": "031fad49be6a98d77763ec87296ee352eb0683b2930472b130cde4db13b7b8cf",
+          "physical_page": 182,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250515174716_p185.txt",
+          "sha256": "e4daa0d956bf029bb0fbc0900a6d39c79b5dedd12ab51ab6de82d8b207fd396e",
+          "physical_page": 185,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250515174716_p213.txt",
+          "sha256": "00995472a3757ef1493cf2a9c8d000aa1de49a4a3d7a8220c2a42ee1cb68b6a2",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250515174716_p242.txt",
+          "sha256": "3310664939a8491c17848cc4fd6484f00fe7f0b88a643205a08eff3e505c7fbf",
+          "physical_page": 242,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250515174716_p246.txt",
+          "sha256": "2bfe6d86f9595306778e273d25792c4b6f72e5a50feba462103e3eae95dea144",
+          "physical_page": 246,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/stas2025.png",
+          "sha256": "c30960573a6e7bbe1f970f7e71b999cdff3e4058d67d0089fc185975d7f4652d",
+          "owner_stream": "tax_rules",
+          "source_id": "pa-20250515174716",
+          "physical_page": 182,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/ledc2025.png",
+          "sha256": "0a1120ad41b9d98a8b4817d982792798f7ec25d5615fdc5e186201722354e9ff",
+          "owner_stream": "tax_rules",
+          "source_id": "pa-20250515174716",
+          "physical_page": 246,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250515174716_p182.png",
+          "sha256": "401841d86e6ebaefab362019a75b5c9b1812981cbdc5789202c40d10b7b1d1e6",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250515174716_p185.png",
+          "sha256": "ca31c74560443c5b77d305f61d4e6d29e24717467b79dedc74cd70c657cf3e14",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250515174716_p213.png",
+          "sha256": "c45b314313131a940b6765a020c3d73bb5d63d48a31627b1230ca7e3861dfe09",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250515174716_p242.png",
+          "sha256": "38984d0a4485e6ad0dbf84269563e5f17587bf4f38c8a2dfd7f70aa2e6667221",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250515174716_p246.png",
+          "sha256": "bac84103cd132cb1b8f47de77bf51a6f1cb95d68c62a4a1fecd054a670fa406f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penn Power district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        189,
+        190,
+        191,
+        213,
+        224,
+        242,
+        246,
+        247,
+        248
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/pa-20250515174716.txt",
+      "full_text_sha256": "0056f8620fbc990651b35cfe0fb8966d781cbd27884091689d0e2a5947968371",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/pa-20250515174716.txt",
+          "sha256": "93f8c05d4eab46d8e154face2e7887f45383dd889de8432b60104af05f6e47b6"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1858401",
+      "original_path": ".cache/firstenergy_research/papuc-1858401.pdf",
+      "original_sha256": "74d69b22c621e6d0242a90014c4ee6cb8629fcf295dc3ef50710c2bcb73a89da",
+      "original_bytes": 942608,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1858401.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1858401",
+          "path": ".cache/firstenergy_research/papuc-1858401.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858401",
+          "path": ".cache/firstenergy_research/papuc-1858401.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/papuc-1858401.txt",
+          "sha256": "b341b084e26b2b009e1b5149328afd8667609eff5d9c5f7ededb2cfe104db305",
+          "physical_pages": [
+            1,
+            5
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1858401_p5.txt",
+          "sha256": "86a129c0d982ff93f84c259c83540df035fc3d7c83cdcc79d6f731c5afab4e65",
+          "physical_page": 5,
+          "printed_leaf": null,
+          "revision": "Filed accepted refund calculation",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/refund2025.png",
+          "sha256": "7ea5dddeaf5911a88906784bde7074f5ed83b4a6df7a1ffe94e37306ac149eb2",
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1858401",
+          "physical_page": 5,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1858401_p5.png",
+          "sha256": "040c2b5d96b3c6b31d57db0fbe7bb782fce0406bb77267a24c16086b99431ff9",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penn Power district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        1,
+        5
+      ],
+      "physical_pages": 5,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1858401.txt",
+      "full_text_sha256": "e72486048fae339a1fd1134aae51c13b5f41b4170212d941ce60810aafb2db35",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1858401.txt",
+          "sha256": "11c65d5fda7f9ac7a9c87017fbf91119dd717e7d8f342410298b05787be64b6a"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1860381",
+      "original_path": ".cache/firstenergy_research/papuc-1860381.pdf",
+      "original_sha256": "f712cb3ef7b7b248d9d68ba76c7d55751fa2cbac74b1e8e9924607ac27b5ef74",
+      "original_bytes": 369565,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1860381.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1860381",
+          "path": ".cache/firstenergy_research/papuc-1860381.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1860381_p6.txt",
+          "sha256": "711c3cde0094213038a0fb831d981c86c30e16844b92f3507ac6e237125ac838",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1860381_p6.png",
+          "sha256": "3f51b68fed4043c471cbfe5b1d49506d72be3b37a8fbb9a88cd86d9fc81637aa",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 18,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1860381.txt",
+      "full_text_sha256": "1cfca79737b4687d19eef1d0d1913c9fc706b20d7ba4694e04d1ec6c8d77cbbe"
+    },
+    {
+      "id": "delivery_papuc-1860899",
+      "original_path": ".cache/firstenergy_research/papuc-1860899.pdf",
+      "original_sha256": "8477b46d9625816a7d1e73835022c5ff4bb322d5dd66cea3b39f4a436e23ea68",
+      "original_bytes": 157869,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1860899.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1860899",
+          "path": ".cache/firstenergy_research/papuc-1860899.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1860899",
+          "path": ".cache/firstenergy_research/papuc-1860899.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/papuc-1860899.txt",
+          "sha256": "583bc2ba8a72ffb80026d2d608385413696a2f13b6116758485c44e9c1528084",
+          "physical_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1860899_p1.txt",
+          "sha256": "e666ae52f986b4ce5466297cdb1498116b6551fc0c51834a28e2dfab9e79ddc7",
+          "physical_page": 1,
+          "printed_leaf": null,
+          "revision": "Commission acceptance",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1860899_p1.png",
+          "sha256": "e74fd63550ffab0d2a7c795cd5e95efeeeb64e935d30290180462741911c3b3c",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penn Power district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        1,
+        2
+      ],
+      "physical_pages": 2,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1860899.txt",
+      "full_text_sha256": "d44f50951fa99e742df195687fc6913b54cf8cb896f31a173da31667014523c4",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1860899.txt",
+          "sha256": "c1cc4031f351c1db45e187fbf137c85f26b31a154596f67cee7686ea5b55c47c"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1870842",
+      "original_path": ".cache/firstenergy_research/papuc-1870842.pdf",
+      "original_sha256": "203abe5782eb1cf51bb3f081fbbd97a0944592df95120962a51e97a147f5e71a",
+      "original_bytes": 284557,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1870842.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1870842",
+          "path": ".cache/firstenergy_research/papuc-1870842.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1870842_p6.txt",
+          "sha256": "fffb032c9c3d5835f6a00ac10adaab4668ebf70482f96427fda357763000afb0",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Fifth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1870842_p6.png",
+          "sha256": "12fa238c0b97395f246fe80eccac75d7b59147e2dda4bd8557d9c7830a700931",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1870842.txt",
+      "full_text_sha256": "09b30e92908890819ba0fd3a74da534dba5b5343bb057cdfb1eead2da96b7576"
+    },
+    {
+      "id": "delivery_papuc-1877401",
+      "original_path": ".cache/firstenergy_research/papuc-1877401.pdf",
+      "original_sha256": "c0cf4ca81d8ec1daae70c0e9c65e7f0a3e639ece2d72ecb1ad039f0065a60405",
+      "original_bytes": 544983,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1877401.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1877401",
+          "path": ".cache/firstenergy_research/papuc-1877401.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1877401_p6.txt",
+          "sha256": "43ad23106323dec026c402e22f66c82a9be481bf56496235927ea928d7ffd1ce",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1877401_p6.png",
+          "sha256": "c811f61b8502dafaf3fedaf0a47697d705ec9bf810fe5d5976e311c766036c61",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 14,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1877401.txt",
+      "full_text_sha256": "987481535166bb17ed5f994b535c7b4f173090ff99dc88b01e3959aba42baf39"
+    },
+    {
+      "id": "delivery_papuc-1879719",
+      "original_path": ".cache/firstenergy_research/papuc-1879719.pdf",
+      "original_sha256": "d6cc73ec9a35f2c812399625e1cf700771858162165ac56d742f67c1952e3bc7",
+      "original_bytes": 287838,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1879719.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1879719",
+          "path": ".cache/firstenergy_research/papuc-1879719.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1879719",
+          "path": ".cache/firstenergy_research/papuc-1879719.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/papuc-1879719.txt",
+          "sha256": "407ea9cd1725722eee494e280afa3caac4d81d608a13d841c2ef7f357d74b492",
+          "physical_pages": [
+            1,
+            5
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1879719_p5.txt",
+          "sha256": "0d08dc44121cdb4f3dbc00f1175229cae1d73eb9a05c474e63916f089112676d",
+          "physical_page": 5,
+          "printed_leaf": null,
+          "revision": "Third Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/tcja2025.png",
+          "sha256": "d4df2dd24899bcfceb2e85cc137905adba2f653baab3372992c35bd01aa9bdc8",
+          "owner_stream": "tax_rules",
+          "source_id": "papuc-1879719",
+          "physical_page": 5,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1879719_p5.png",
+          "sha256": "69e83c8252f31aa7cc8963b8294411324863e7b1e863a3db330480ba65c466a3",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "Penn Power district/class columns and applicable common FEPA rules independently reviewed; do not import neighboring district prices. January2025STAS uses supersedingSupp15 notearlierSupp14."
+      ],
+      "selected_physical_pages": [
+        1,
+        5
+      ],
+      "physical_pages": 9,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1879719.txt",
+      "full_text_sha256": "82299895f0e54a07162f0b88032642f5de5e0728a0201887ec3de485870cda88",
+      "alternate_extractions": [
+        {
+          "path": ".cache/firstenergy_research/papuc-1879719.txt",
+          "sha256": "762637afcf1d6dad5577c64b48f4e77592eea60d433841d067818600f224b83e"
+        }
+      ]
+    },
+    {
+      "id": "delivery_papuc-1883054",
+      "original_path": ".cache/firstenergy_research/papuc-1883054.pdf",
+      "original_sha256": "e605f32e3378416d98dd0b0b52c41ad105c284aeadff3f59401c0ed7e4f053b3",
+      "original_bytes": 282665,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1883054.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1883054",
+          "path": ".cache/firstenergy_research/papuc-1883054.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1883054_p6.txt",
+          "sha256": "c33b95b7cad965e88d710dcf51059fd7ee757bd752978181c6ef1831df14d667",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Sixth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1883054_p6.png",
+          "sha256": "b7c170d22ffb90ffd2c87ef7627491b30ca78a4419c4c095fcad3c2a8a5526f1",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1883054.txt",
+      "full_text_sha256": "346e81ffc83f79368b507463dbdd45bd7650c9f31c0aed502ae59aa12ec8d792"
+    },
+    {
+      "id": "delivery_papuc-1885199",
+      "original_path": ".cache/firstenergy_research/papuc-1885199.pdf",
+      "original_sha256": "b54c7f26cebe99bd930fd56793eda1453dd11c18c042a396d34d2220c211aedb",
+      "original_bytes": 383883,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1885199.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1885199",
+          "path": ".cache/firstenergy_research/papuc-1885199.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1885199_p7.txt",
+          "sha256": "8ab89f53334a01ef498f7cdeaff09fb77c65a1057b29ed94bbc0bac49bb16124",
+          "physical_page": 7,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1885199_p7.png",
+          "sha256": "ebf37c091dc98722be71c82b277a4997d47d22c1b45c2a869974aa06d8241638",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        7
+      ],
+      "physical_pages": 19,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1885199.txt",
+      "full_text_sha256": "dd9c5ac9e132cba568cdec32c66b887e94c2591a7e985cc19a5b92486bb05024"
+    },
+    {
+      "id": "delivery_papuc-1895067",
+      "original_path": ".cache/firstenergy_research/papuc-1895067.pdf",
+      "original_sha256": "fa78c4150271aef61ff879a3f9776b86e95ad196df82d655cad5d1add3c4b926",
+      "original_bytes": 282395,
+      "urls": [
+        "https://www.puc.pa.gov/pcdocs/1895067.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "papuc-1895067",
+          "path": ".cache/firstenergy_research/papuc-1895067.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/papuc-1895067_p6.txt",
+          "sha256": "2ec177f9e5a2648f19cb5ad43d8cb0e0cce98756b01d582bf11b46fdae5bb0a8",
+          "physical_page": 6,
+          "printed_leaf": null,
+          "revision": "Seventh Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/papuc-1895067_p6.png",
+          "sha256": "20b983ce59dab860f1aad7242cc8fde839f6b515d0b61e86f249f5e613ec9ad0",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        6
+      ],
+      "physical_pages": 6,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/papuc-1895067.txt",
+      "full_text_sha256": "70aaf52591a0426d5344b90ac52869ffc6d0cb8601663aa2ca12c00f1ec769c1"
+    },
+    {
+      "id": "delivery_pa-20250612040318",
+      "original_path": ".cache/firstenergy_research/pa-20250612040318.pdf",
+      "original_sha256": "950266135e6348aac8d173a794aa6117e65868cde47636a71a9c0922e17d410b",
+      "original_bytes": 2519120,
+      "urls": [
+        "https://web.archive.org/web/20250612040318id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-20250612040318",
+          "path": ".cache/firstenergy_research/pa-20250612040318.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250612040318_p213.txt",
+          "sha256": "0d1dc31d6475f47477d806602802012b40a0fe783fb6a708821e3b475732d1e5",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250612040318_p221.txt",
+          "sha256": "16390a95e162dbbef4e862a14ed5e74d8eea00e0e248fa4109b059df1e3938b1",
+          "physical_page": 221,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-20250612040318_p232.txt",
+          "sha256": "a4a7a5d5353bba773497d50effd6d9e6d49b0bb84ecc931bb198dad8fe45f8f7",
+          "physical_page": 232,
+          "printed_leaf": null,
+          "revision": "Second Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250612040318_p213.png",
+          "sha256": "57512fb768a893960066a16c1afad0d8c272e8277949a71fd833b73c9fdbc57f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250612040318_p221.png",
+          "sha256": "b8993d4513b629f048003615b27c5dbdfe8f1f078569077b12a9d1bf70bcf740",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-20250612040318_p232.png",
+          "sha256": "e5d546dee2904765dbb291823a9562bf65fa2279ea347d6f60659147880a6083",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        213,
+        221,
+        232
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/pa-20250612040318.txt",
+      "full_text_sha256": "f738c9f7b31c01cad1d8cb3afb159e745d1fb7bf2b07716cd80d4aa8c817714f"
+    },
+    {
+      "id": "delivery_pa-2026-01",
+      "original_path": ".cache/firstenergy_research/pa-2026-01.pdf",
+      "original_sha256": "6161113b3a7e6a1ee77b25d600eadbc6c60dbd1ba7c44f6864961a8510c76202",
+      "original_bytes": 2487082,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff-1-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-2026-01",
+          "path": ".cache/firstenergy_research/pa-2026-01.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-2026-01_p213.txt",
+          "sha256": "aaf368d8e55f83007a06c3be12c2866880149c7d411b3e4a57c91c693b7493ab",
+          "physical_page": 213,
+          "printed_leaf": null,
+          "revision": "Fourth Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-2026-01_p240.txt",
+          "sha256": "4afbf2557dd66791bfd4fcec1f0d2e81f5cfde2b890209e4d33f093dc8f95597",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Eighth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-2026-01_p213.png",
+          "sha256": "57512fb768a893960066a16c1afad0d8c272e8277949a71fd833b73c9fdbc57f",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-2026-01_p240.png",
+          "sha256": "47f36b670ee4b07604d93afd49fb1575d9258126cb838947770ef0c8762078f8",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        213,
+        240
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/pa-2026-01.txt",
+      "full_text_sha256": "3b82704bf871aa0cf999dde274cead09a614599f312e7d15f6af5f5e43b582c0"
+    },
+    {
+      "id": "delivery_pa-2026-04",
+      "original_path": ".cache/met_ed_pa/sources/delivery/pa-2026-04.pdf",
+      "original_sha256": "2d63d379fab461a3e602d9d7b43cd0625f1acf8005613c92fda03b1c92749dbb",
+      "original_bytes": 2593730,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff-4-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-2026-04",
+          "path": ".cache/met_ed_pa/sources/delivery/pa-2026-04.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-2026-04_p240.txt",
+          "sha256": "ec8883ed148f3e786d7deac437cbc1afc4a8c6e1463dff4e2acebf65e0d190fd",
+          "physical_page": 240,
+          "printed_leaf": null,
+          "revision": "Ninth Revised",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-2026-04_p240.png",
+          "sha256": "e6a348a04924bd91311c4f4f261974a184e81dc37219c7e58920e3d7830cf159",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [],
+      "selected_physical_pages": [
+        240
+      ],
+      "physical_pages": 248,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/pa-2026-04.txt",
+      "full_text_sha256": "87bc05c7b5024ccf1ee659077c51c933f45bc39ef2ce5e83bafca460dc8f6cc7"
+    },
+    {
+      "id": "delivery_pa-june2024",
+      "original_path": ".cache/firstenergy_research/pa-june2024.pdf",
+      "original_sha256": "8a9865ed187ebe37352751eccdb48f908ef8c3282e8ea210c59c6c723b732e69",
+      "original_bytes": 1691444,
+      "urls": [
+        "https://web.archive.org/web/20240607145718id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "delivery",
+          "source_id": "pa-june2024",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        },
+        {
+          "owner_stream": "supply",
+          "source_id": "gap_f_official_june2024_original",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        },
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_june2024_spv",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        },
+        {
+          "owner_stream": "supply_gap",
+          "source_id": "official_june2024_original",
+          "path": ".cache/firstenergy_research/pa-june2024.pdf"
+        }
+      ],
+      "owner_streams": [
+        "delivery",
+        "supply",
+        "tax_rules",
+        "supply_gap"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/gap_f_official_june2024_original_p66.txt",
+          "sha256": "0b98b458de452119aa819362f179e88fd26d4c0eb5de68f9df4d94d2b6089a42",
+          "physical_page": 66
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/gap_f_official_june2024_original_p67.txt",
+          "sha256": "ecb363e45dc8a8b02838ba13cca8f11eca5ac33e1c98707f92a64e4443f72ae7",
+          "physical_page": 67
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/pa_june2024_spv.txt",
+          "sha256": "eb8b0ad93bc4efbe1d997cefacdb67afa24463d693a1bff0ed01d4dd024a26de",
+          "physical_pages": [
+            66,
+            67,
+            231,
+            232,
+            233,
+            234
+          ]
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/historical_F_current_C_comparison.txt",
+          "sha256": "90708c121a83ba2117f0370ac9f4cf527cf7b0c822d2037fcbdc0252284bb795",
+          "normalized_body_sha256": "b69c335423e63168301ed8b855e819d65ea988e9c2d7134de743fe8bd2480de2",
+          "result": "Identical literalclausebody; Fidentifier independently documented, not inferredfromorder"
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-june2024_p231.txt",
+          "sha256": "aa0e5c56b657947e128ef1aef807acc87be2a94917d54370836801503c17bd8a",
+          "physical_page": 231,
+          "printed_leaf": null,
+          "revision": "First Revised",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-june2024_p234.txt",
+          "sha256": "c3a85bf2d03728c3b9c9c45b49b5a626f7aabfbc5c61e15e3f476598ef7147c0",
+          "physical_page": 234,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/delivery/pa-june2024_p67.txt",
+          "sha256": "a185cefa889034b57d36d84312aa4346713f370e98b8b4fb298df599a1692f2d",
+          "physical_page": 67,
+          "printed_leaf": null,
+          "revision": "Original",
+          "effective_footer": null
+        }
+      ],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/official_june2024_original_p66.txt",
+          "sha256": "0b98b458de452119aa819362f179e88fd26d4c0eb5de68f9df4d94d2b6089a42",
+          "physical_page": 66
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/official_june2024_original_p67.txt",
+          "sha256": "ecb363e45dc8a8b02838ba13cca8f11eca5ac33e1c98707f92a64e4443f72ae7",
+          "physical_page": 67
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/official_june2024_original_p66.png",
+          "sha256": "2c2861f1389e3b636fbb21f38cacd6a63f32e4fe0c650ea97cc3f76adc06c146",
+          "owner_stream": "supply",
+          "visually_reviewed": false,
+          "source_original_sha256": "8a9865ed187ebe37352751eccdb48f908ef8c3282e8ea210c59c6c723b732e69",
+          "physical_page": 66
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/official_june2024_original_p67.png",
+          "sha256": "e8a55764f2a4657ed9509223c67a224dbf98b92badd214353b811b28303091df",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": "8a9865ed187ebe37352751eccdb48f908ef8c3282e8ea210c59c6c723b732e69",
+          "physical_page": 67
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/spv_exclusion.png",
+          "sha256": "e1739d051f955c9225846ab2935d351209d2c518256864cc81a3250b83a098b1",
+          "owner_stream": "tax_rules",
+          "source_id": "pa_june2024_spv",
+          "physical_page": 234,
+          "visually_reviewed": true,
+          "review_status": "Visually inspected2026-10-29: PennPower class, matrix, sign and date checked"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/tax_rules/historic_F.png",
+          "sha256": "d915daf7307500ea5f2b7a590a39517dc7004d5032162f3edaafb376ceabd662",
+          "owner_stream": "tax_rules",
+          "source_id": "pa_june2024_spv",
+          "physical_page": 67,
+          "visually_reviewed": true,
+          "review_status": "Visually reviewed2026-10-29: literalhistoricalF.THREE-PHASE/currentC.THREE-PHASE; identicalbody independently compared"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-june2024_p231.png",
+          "sha256": "373b468c1641c4a27dab9abf0ef394918329ce2d6a0c7ab4bcf1d214534eeeb4",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-june2024_p234.png",
+          "sha256": "88ab915be1d60d37ee5c153dc68d6983c71f8b8dab73912644eae78800345a99",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/delivery/pa-june2024_p67.png",
+          "sha256": "e8a55764f2a4657ed9509223c67a224dbf98b92badd214353b811b28303091df",
+          "owner_stream": "delivery",
+          "visually_reviewed": true
+        }
+      ],
+      "source_qualifications": [
+        "bounded route1; retained archived official original; directliteralF/currentClabelcomparison",
+        "PennPower historical Original66 A(3),B,C,F matrix and literal F.THREE-PHASE on Original67; standaloneSPVzero/exclusionclassrules. SHAverified officialarchivedbook.",
+        "bounded route1; retained archived official original"
+      ],
+      "selected_physical_pages": [
+        66,
+        67,
+        231,
+        232,
+        233,
+        234
+      ],
+      "physical_pages": 243,
+      "full_text_path": ".cache/penn_power_pa/sources/delivery/pa-june2024.txt",
+      "full_text_sha256": "c4af3a36529c4cbb0d48b88993fdf2e38e5515eabaea388697d7a890ae9b3f4c",
+      "alternate_extractions": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/official_june2024_original_full.txt",
+          "sha256": "b603697625cb28378d7a506b8ca1ac820a2256953b75168c7c73ef07ab707183"
+        },
+        {
+          "path": ".cache/firstenergy_research/pa-june2024.txt",
+          "sha256": "53b07cbebde2559aeda33be19b43ee8c38354c1d62c5a33e0fe3ac944f5c107b"
+        },
+        {
+          "path": ".cache/penn_power_pa/sources/supply/gap_review_f/official_june2024_original_full.txt",
+          "sha256": "b603697625cb28378d7a506b8ca1ac820a2256953b75168c7c73ef07ab707183"
+        }
+      ]
+    },
+    {
+      "id": "supply_pa-supp11",
+      "original_path": ".cache/firstenergy_research/pa-supp11.pdf",
+      "original_sha256": "1f9ba4c52c8baf416018477039aff367396eb893f8479c8e668dee99a2633b39",
+      "original_bytes": 286865,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FE-PA-Supp-No-11-PTC-HPS-Rider-Changes-12-1-2024.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "pa-supp11",
+          "path": ".cache/firstenergy_research/pa-supp11.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/pa-supp11_p001.txt",
+          "sha256": "a2fc2bac6c548b6b43a97b99f5aa3a9bffb0ce4f19ef05bd3f2ffc26ab5fde57",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/pa-supp11_p003.txt",
+          "sha256": "467688360594d767a15de7a5155749af290538a6e1bf7ce4a0a818845f42013e",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/pa-supp11_p3.png",
+          "sha256": "3ccfc685919de25aca40cfe7f4e19c8dde1856ec0f31768d31c12ffaa13547b5",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedrate/rule; PennPowercolumnonly, actualeffectiveclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 4,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/pa-supp11.txt",
+      "full_text_sha256": "dc681ad7434cc27161390d7c42a7fa712bb7191ed4f8908c248331b1b7da8f07"
+    },
+    {
+      "id": "supply_pa-supp19",
+      "original_path": ".cache/firstenergy_research/pa-supp19.pdf",
+      "original_sha256": "d11bc4fd1e9254c2d4648410919b578cdc00608a80e46b8ea0d162effe57e4f0",
+      "original_bytes": 196431,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-Supp-No-19-PTC-and-HPS-Rider.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "pa-supp19",
+          "path": ".cache/firstenergy_research/pa-supp19.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/pa-supp19_p001.txt",
+          "sha256": "574cc426821928b14de0d8e129b5766d5a9153a30ac00e59ab3e5590c000afa7",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/pa-supp19_p003.txt",
+          "sha256": "931f61f0de0a61143cb8f60349c1aebe495a6f316e51908e549d9acff40e53d6",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/pa-supp19_p3.png",
+          "sha256": "13226740a0367dac5033d78e70d4b795ce87e17bef00589df93ce318af04d865",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedrate/rule; PennPowercolumnonly, actualeffectiveclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 5,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/pa-supp19.txt",
+      "full_text_sha256": "c958f86af8792cc25456488b8cebc6b386d7286d4ac84ad28d3d5ea051a0308c"
+    },
+    {
+      "id": "supply_supp28",
+      "original_path": ".cache/met_ed_pa/sources/supply/supp28.pdf",
+      "original_sha256": "a5ebbe14bac4ca4807c8ce477323ffad850b34cc854f302b1e64f694e7ffb336",
+      "original_bytes": 171636,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-Supp-No-28-PTC-HPS-Rider-Changs-12-1-2025.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "supp28",
+          "path": ".cache/met_ed_pa/sources/supply/supp28.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/supp28_p001.txt",
+          "sha256": "9b074ff2074c87322364ace677114361ac083cf8c347a32d4f7e1f4aed9eacad",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/supp28_p003.txt",
+          "sha256": "fab7d89aa3c9b948afeef70f536160dd5199a1cc4bc1ea03cf19b127ef7ef5e6",
+          "physical_page": 3
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/supp28_p3.png",
+          "sha256": "362a240df1d9dbf6e0ea2b73157e64a7b82990f9cba77e4270fd650a6e39858c",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedrate/rule; PennPowercolumnonly, actualeffectiveclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        3
+      ],
+      "physical_pages": 4,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/supp28.txt",
+      "full_text_sha256": "8f10e63d0a0d2ac6510cd95c847ad56dd0dc288897516d942f8c46810e127984"
+    },
+    {
+      "id": "supply_supp36",
+      "original_path": ".cache/met_ed_pa/sources/supply/supp36.pdf",
+      "original_sha256": "a8b0ff4be057ec7d19b9da1d5a9342054a00904b30f5d4797feff50b2e5e0eae",
+      "original_bytes": 675074,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/FEPA-PTC-Effective-06-1-26.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "supp36",
+          "path": ".cache/met_ed_pa/sources/supply/supp36.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/supp36_p001.txt",
+          "sha256": "78cfe7b4497f90d1b9eee1dabf66f7cba30e10ed1c440aae767e170c78fca8ac",
+          "physical_page": 1
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/supp36_p004.txt",
+          "sha256": "1a86062c374d6b4efb25f938492d98502c2d10a380914092688f623dd6c22610",
+          "physical_page": 4
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/supp36_p006.txt",
+          "sha256": "a440120b4d881d9e6e72be082a13a4fe4044a558f326a02e12e621bb037b84f3",
+          "physical_page": 6
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/supp36_p027.txt",
+          "sha256": "39f2e75ba79b38de14db2a6dd0861f813ac8733b04506918376530d8a22dae18",
+          "physical_page": 27
+        },
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/supp36_p030.txt",
+          "sha256": "bcede00b90c4abb5851e213947d72ad2bf7d687c88e9db86726b9667e3959ac8",
+          "physical_page": 30
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/supp36_p6.png",
+          "sha256": "43083a6c33a2bea2ac359840fee53dc7a4d8ff0c392c452695c3303a33091301",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "filedpublishedrate/rule; PennPowercolumnonly, actualeffectiveclockretained"
+      ],
+      "selected_physical_pages": [
+        1,
+        4,
+        6,
+        27,
+        30
+      ],
+      "physical_pages": 44,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/supp36.txt",
+      "full_text_sha256": "baa0522505f3188c75d06b353c08e1b65cee69ee3f34efa22f1218b605fa27cd"
+    },
+    {
+      "id": "supply_abcs_jun25",
+      "original_path": ".cache/penn_power_pa/sources/supply/abcs_jun25.pdf",
+      "original_sha256": "2b5b344264b34922f704457a36f9d42836a77ba674ae09f8c2a14c9f9b9192bc",
+      "original_bytes": 96908,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-06%20Penn%20Power%20ABCs%20Of%20Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_jun25",
+          "path": ".cache/penn_power_pa/sources/supply/abcs_jun25.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/abcs_jun25_p001.txt",
+          "sha256": "2279797cef27f844371503986461e61c49d28bb9656c685939d3abb66484c5b5",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/abcs_jun25_p1.png",
+          "sha256": "c7c00756160810a407efea714061f91ef59bcbb2f991a13e9247cc3dba344457",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "correctJune25prices, erroneousMay31,26endheader; filedSupp19Nov30,25controls"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/abcs_jun25.txt",
+      "full_text_sha256": "458e5c911213919b730d2f843b766c242dc49328c85c2cf0c5248e8e40f16e86"
+    },
+    {
+      "id": "supply_abcs_current_dec25_link",
+      "original_path": ".cache/penn_power_pa/sources/supply/abcs_current_dec25_link.pdf",
+      "original_sha256": "6c7982f0fcb11fdd1218e15cd501637ce29a1eded3dd9936059880d598c35fd3",
+      "original_bytes": 96808,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/10694-Penn-Power-ABCs-Of-Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_current_dec25_link",
+          "path": ".cache/penn_power_pa/sources/supply/abcs_current_dec25_link.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/abcs_current_dec25_link_p001.txt",
+          "sha256": "4bb520c51913566a0619bf07f0a410ce1d3fe71f568d34a35f345e0520b36319",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/abcs_current_dec25_link_p1.png",
+          "sha256": "b380e6c918c5a5d9e17ee76913230582ca70c05053e23ad2efe177b6af87f940",
+          "owner_stream": "supply",
+          "visually_reviewed": true,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "officialPennPowercustomerinsertcomponentbenchmark"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/abcs_current_dec25_link.txt",
+      "full_text_sha256": "af9ddd482f7d76ee3b86cf888c8a1f465f01008ce39f4b7abee61fb86ff274c7"
+    },
+    {
+      "id": "supply_abcs_apr26",
+      "original_path": ".cache/penn_power_pa/sources/supply/abcs_apr26.pdf",
+      "original_sha256": "e12679b10e384470960a397226f03f18a45589cd9f6a92bc34afbdf2f4fa20f4",
+      "original_bytes": 97017,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/04-2026%20PA%20Penn%20Power%20ABC%27s%20of%20Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_apr26",
+          "path": ".cache/penn_power_pa/sources/supply/abcs_apr26.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/abcs_apr26_p001.txt",
+          "sha256": "b97a0399f044a88d07da3fdffe4b79a74f9fd617840f2e9dbf866277f3e87b53",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/abcs_apr26_p1.png",
+          "sha256": "4940fd90dd093a3293b9394f42f7c36c9cd9aebff8c4ecd50aeb8bc1f585b936",
+          "owner_stream": "supply",
+          "visually_reviewed": false,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "officialPennPowercustomerinsertcomponentbenchmark"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/abcs_apr26.txt",
+      "full_text_sha256": "92c6c1d522a6bf906282cd6314bfea75376bb041f44625de581902d6c5216351"
+    },
+    {
+      "id": "supply_abcs_aug26",
+      "original_path": ".cache/penn_power_pa/sources/supply/abcs_aug26.pdf",
+      "original_sha256": "d1ddeaa7c9f52075495149e5daf39e13623013db88859cf8bdd0044ccab1222f",
+      "original_bytes": 97147,
+      "urls": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-08%20Penn%20Power%20ABCs%20Of%20Shopping.pdf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "abcs_aug26",
+          "path": ".cache/penn_power_pa/sources/supply/abcs_aug26.pdf"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/supply_excerpts/abcs_aug26_p001.txt",
+          "sha256": "aa22a9fd6d30ee2c4fc344103bc6a804b3b3fc3fc53b018b2e77dca4e4ec7c84",
+          "physical_page": 1
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/supply/abcs_aug26_p1.png",
+          "sha256": "6c62495ce8145bee05c062ccbb0bf924bef739ea523158172e8d3c1b4fd4760a",
+          "owner_stream": "supply",
+          "visually_reviewed": false,
+          "source_original_sha256": null,
+          "physical_page": null
+        }
+      ],
+      "source_qualifications": [
+        "officialPennPowercustomerinsertcomponentbenchmark"
+      ],
+      "selected_physical_pages": [
+        1
+      ],
+      "physical_pages": 1,
+      "full_text_path": ".cache/penn_power_pa/sources/supply/abcs_aug26.txt",
+      "full_text_sha256": "8048efdae36952d7626d65629b5205219fdd5ffa9a965475fb46b2686488593e"
+    },
+    {
+      "id": "supply_bill_insert_index",
+      "original_path": ".cache/penn_power_pa/sources/supply/bill_insert_index.html",
+      "original_sha256": "8699f095819133fa717b1df621e472b44cd8e35cee24f41942952128d04eb69f",
+      "original_bytes": 114222,
+      "urls": [
+        "https://www.firstenergycorp.com/help/billingpayments/about_your_bill/bill_inserts/penn_power.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "supply",
+          "source_id": "bill_insert_index",
+          "path": ".cache/penn_power_pa/sources/supply/bill_insert_index.html"
+        }
+      ],
+      "owner_streams": [
+        "supply"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_52_56_2",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_52_56_2.html",
+      "original_sha256": "7a8c8e24777c95bf7fa3b2d8e23f3e3d9fd0dd23e04169b7084923db0f2ddcad",
+      "original_bytes": 24307,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter56/s56.2.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_52_56_2",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_52_56_2.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/pa_52_56_2.txt",
+          "sha256": "8d047e18123a114e44b5a75eded975c7a861ea952edaab02cb992551bb1e99cd",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenn Power; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13 liveverified2026-10-28; applicability independently checked forPennPower2026-10-29."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_52_75_13",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_52_75_13.html",
+      "original_sha256": "d3e5b486fb48d14f4cd15736362379b2f02a483abaf7b22eb24af382dcea26d2",
+      "original_bytes": 9801,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/052/chapter75/s75.13.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_52_75_13",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_52_75_13.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/pa_52_75_13.txt",
+          "sha256": "e09dfe45ebca5e9c6c2387b1a1405867e6d31f0db91cbefda611c532ce2a80da",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenn Power; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13 liveverified2026-10-28; applicability independently checked forPennPower2026-10-29."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_61_32_25",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_61_32_25.html",
+      "original_sha256": "1466a3e421a4e128f8dc1c291b07409bdfa6f7866652b7f8822f6b8ae1e3fa79",
+      "original_bytes": 13731,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter32/s32.25.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_61_32_25",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_61_32_25.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/pa_61_32_25.txt",
+          "sha256": "5e5b7b9b73a0c481b618a7ace10f42c218ae59fbc80eb57176b0bcbcb60f7478",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenn Power; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13 liveverified2026-10-28; applicability independently checked forPennPower2026-10-29."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_61_33_2",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_61_33_2.html",
+      "original_sha256": "3006420a6f301dcf3f456969bc41ad6766362a6273d0d3574fb90b91c86d8121",
+      "original_bytes": 12296,
+      "urls": [
+        "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter33/s33.2.html"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_61_33_2",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_61_33_2.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/pa_61_33_2.txt",
+          "sha256": "05cf3747ce200045aff0ef71d47e64490ac929cdc19d2cf701f773dfa8657bf5",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenn Power; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13 liveverified2026-10-28; applicability independently checked forPennPower2026-10-29."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "tax_rules_pa_dor_sales_tax",
+      "original_path": ".cache/met_ed_pa/sources/tax_rules/pa_dor_sales_tax.html",
+      "original_sha256": "7fd70b7bbd9a2f4f3bc0b408b0e06e308d0df0ecf0f498a3758583879f7168ea",
+      "original_bytes": 451784,
+      "urls": [
+        "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "tax_rules",
+          "source_id": "pa_dor_sales_tax",
+          "path": ".cache/met_ed_pa/sources/tax_rules/pa_dor_sales_tax.html"
+        }
+      ],
+      "owner_streams": [
+        "tax_rules"
+      ],
+      "checked_in_excerpts": [
+        {
+          "path": "docs/utility_sources/penn_power_pa/tax_rules_excerpts/pa_dor_sales_tax.txt",
+          "sha256": "361f4b7d5f8adcd4229cc2c8f3d8e85419a127052a68038c3dfa812434325f0a",
+          "physical_pages": []
+        }
+      ],
+      "retained_private_excerpts": [],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Primary Pennsylvania general rule applies toPenn Power; tax/residential/NEMapplicabilitylimits recorded inresearchnote. Tax32.25/33.2andNEM75.13 liveverified2026-10-28; applicability independently checked forPennPower2026-10-29."
+      ],
+      "selected_physical_pages": []
+    },
+    {
+      "id": "metadata_pjm_zones",
+      "original_path": ".cache/penn_power_pa/sources/metadata/pjm_zones.pdf",
+      "original_sha256": "465880de2d75b1353e251672fce35f59173ec76df32b577ba3bdc95272d98549",
+      "original_bytes": 19064305,
+      "urls": [
+        "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.ashx"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "pjm_zones",
+          "path": ".cache/penn_power_pa/sources/metadata/pjm_zones.pdf"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/penn_power_pa/sources/metadata/pjm_zones_atsi_excerpt.txt",
+          "sha256": "772f8b0744a332e9146fa16470013d569535400cdcda96e04f6f06d302e0a7f4",
+          "physical_pages": [
+            1
+          ]
+        }
+      ],
+      "rendered_receipts": [
+        {
+          "path": ".cache/penn_power_pa/sources/metadata/pjm_zones_atsi.png",
+          "sha256": "bdf2c0d95e532a3c895f9f4e872aab8be93eceabd9706d60b1b9258764a6e9e8",
+          "visually_reviewed": true,
+          "parser_notes": null,
+          "physical_page": 1,
+          "owner_stream": "metadata"
+        }
+      ],
+      "source_qualifications": [
+        "ATSI PJM zone label only, shared with other districts. Historical coarse map is not retail territory, tax locality, utility eligibility, transmission ownership or node assignment."
+      ],
+      "selected_physical_pages": [],
+      "full_text_path": ".cache/penn_power_pa/sources/supply/pjm_zones_selected_source_full_text.txt",
+      "full_text_sha256": "92c1851018e8a133275fea91526f9c1cf0a0ee2d462c2491d84274e5d38fe6f2",
+      "physical_pages": 1
+    },
+    {
+      "id": "metadata_pjm_regions",
+      "original_path": ".cache/penn_power_pa/sources/metadata/pjm_regions.html",
+      "original_sha256": "98fe1fec5806ffccf3d9104531f8a604140d01e00e3e5b2b1321cb628d3fd601",
+      "original_bytes": 46783,
+      "urls": [
+        "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"
+      ],
+      "aliases": [
+        {
+          "owner_stream": "metadata",
+          "source_id": "pjm_regions",
+          "path": ".cache/penn_power_pa/sources/metadata/pjm_regions.html"
+        }
+      ],
+      "owner_streams": [
+        "metadata"
+      ],
+      "checked_in_excerpts": [],
+      "retained_private_excerpts": [
+        {
+          "path": ".cache/penn_power_pa/sources/metadata/pjm_regions_excerpt.txt",
+          "sha256": "dc208ff662b9e331a1ae11085f25ceff94b35b3efd16681599c693d76d5f4a13",
+          "physical_pages": []
+        }
+      ],
+      "rendered_receipts": [],
+      "source_qualifications": [
+        "Source lists OH while naming Penn Power in FE-ATSI description; retained verbatim. Penn Power PA tariff jurisdiction is independently established. ATSI market-zone label and FE-ATSI emergency control-area metadata do not assign utility territory, retail supplier, tax, eligibility or wholesale pricing node."
+      ],
+      "selected_physical_pages": []
+    }
+  ],
+  "derived_receipts": [
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/delivery_records.json",
+      "sha256": "7d0376dca74fcb79db6695b5ad431a38693f524194e346e872c51aef8d67338e",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/delivery_snapshots.json",
+      "sha256": "67309c2f0e1a043488db219ee430472a7ee080eb8632194b089ea1fc601c6a56",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/render_inventory.json",
+      "sha256": "b76cdcb8975b7b5ff9417bb80417e8fc16132ee9d1b05e78f98b39de413af494",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/metadata/market_zone_receipt.json",
+      "sha256": "55f6e130d8514a5873bc5e5ec3dcb175966bbc1808218353f91c0bab52c2073a",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/metadata/pjm_receipt.json",
+      "sha256": "4530c2aeb94180a9db9fd1f1f3ee7506403588b8ac98436f5c0bf1bbcd972c6d",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/supply_records.json",
+      "sha256": "00f9c257f12d1b1ffcaf9e759303743234644c015a9f35c2cab58db5470e112f",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/supply_snapshots.json",
+      "sha256": "584fed4d16585ed0b5221225d092e2f0a1a6d2adc71325ee5ffc42eb540df462",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/tax_rules/tax_rules_records.json",
+      "sha256": "ee1a3525c4dd039812d3cd7264181969a6c56e6540f168c07662814c58f0d018",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/penn_power_pa/delivery_research.md",
+      "sha256": "b3b1bf5d76b983c67fc28cb66f86ac78354569839ea7d1b075a2abbdd14d406e",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/penn_power_pa/supply_research.md",
+      "sha256": "421f9d6d9cbdfc4832854d4be1d6ab01b0e59e2d3aa7e42a4cc44fa049d8141d",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": "docs/utility_sources/penn_power_pa/tax_rules_research.md",
+      "sha256": "5e6a6cbdffa90c8a15b94c981c7b5238f8be941609e7165dfcdf9fe7e9e8aeb0",
+      "status": "owner receipt/normalized extraction or research note; derivative not original authority"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/ptc_four_windows_montage.png",
+      "sha256": "93ea46804cdb8ded76eb65c16176c0a4d45deb763286b88dbeb2c06a6599a518",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/tariff_current_p65.png",
+      "sha256": "2796803bf86d4b065133d368740112102ccce8c1fa9f9c9fc6fc2ba37f030f4c",
+      "status": "derived render/review aid",
+      "visually_reviewed": false
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/tariff_current_p66.png",
+      "sha256": "6be472332e25436034e5966d005e52b6d5fcd00297770ac1a3704ff7070555b5",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_1.png",
+      "sha256": "3dbe4c35dd2bb6bfd93818646b5795ba9aa1e0af4a92052e73f4a5786eaa3770",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_10.png",
+      "sha256": "2a75547e7976366d6d501da983dbaf0a974dcf811230d83b4d9e957647b24b4f",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_11.png",
+      "sha256": "950a96ad51d41f77e3484e17744f7e39d64ba226c26f8c074dc5634114762f05",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_12.png",
+      "sha256": "7b60d2dc8b636b54639d9ab9aecaeccc7b0225f05d9a79590acb3ed05f2e95ba",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_2.png",
+      "sha256": "a4b0e9d5bca3aca68019a3013a0d091c02f614d40b3b8258b3da3681f198b139",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_3.png",
+      "sha256": "c304c89e7c7e543dd43b91ae93bb9d89a6c0fb5ab01f61a2d13b30547836357f",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_4.png",
+      "sha256": "32509b333a45c5fbc76fd082cf8a4a82c8bd5c98ecc631da5375e5f1d8b0b242",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_5.png",
+      "sha256": "985720d1c1640846295a3e88583405b81e9e152accfcfaf653b677b5169da363",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_6.png",
+      "sha256": "059ec9ce9f817fa0136721d47ac6ed262d70d79776942eb15df304833f91b1df",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_7.png",
+      "sha256": "e541785c69af2ef97063d1f0351002666a21b6a9c84bed726253953d4e56f4fc",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_8.png",
+      "sha256": "28cff8dd0f095229a7a6f1ef0599736c82361980995bca0e15a4118f37d63c5d",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/delivery/review_contact_9.png",
+      "sha256": "6d426ace8c7f670d9403b03010311189c40c88c4dee20a8da21174c39cab961f",
+      "status": "derived render/review aid",
+      "visually_reviewed": true
+    },
+    {
+      "path": "docs/utility_sources/firstenergy/manifest.json",
+      "sha256": "5b3bd4e5dd3d2f419a8669d8ff5b5fbf41782f8427802ff391bb0b74ccde89d5",
+      "status": "reused source provenance ledger; no edits; Met-Ed column applicability verified independently"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/gap_review_f/gap_f_findings.md",
+      "sha256": "415b6b7908fa0870ed00da8babed1a32118cf70fb545cae06bd68b7c63f95995",
+      "status": "bounded historical F label comparison; derivative receipt, no invented clause linkage"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/gap_review_f/gap_f_records.json",
+      "sha256": "1da7e3d62a7e20a5868a7bbb5cc8e7035a540e6cdb340cf248788b9f2fed8739",
+      "status": "bounded historical F label comparison; derivative receipt, no invented clause linkage"
+    },
+    {
+      "path": ".cache/penn_power_pa/sources/supply/gap_review_f/version_label_body.diff",
+      "sha256": "bd840f24d40602ee7ea77d9cf9f390ccc0edf36cc7fe130afafd342c89e1b2c0",
+      "status": "bounded historical F label comparison; derivative receipt, no invented clause linkage"
+    }
+  ],
+  "blocked_routes": [
+    {
+      "id": "JulySeptember2026_DSIC",
+      "status": "TenthRevised239 not recovered in bounded targeted official search; do not extend Ninth or backfill Eleventh",
+      "scope": "unsupported2026-07-01through2026-09-30"
+    }
+  ],
+  "limitations": [
+    "PennPowernumericcolumns/classmatrixreadindependently; noPenelec/MetEd/WestPennratesborrowed. PTCfactor1.0661notHPGS-S1.0515; originalPDFs reusedbyhashwithaliases.",
+    "Supply4filedwindowsverified; allcomponentintersectionJan2025Jun2026+Oct2026 only. JulySeptember2026DSICcannotcarryAprilorbackfillOctober.",
+    "LEDCmandatoryalllistedclasses. Apr25Mar26RS/GS.00004;Apr26Mar27RS.00009/GS.00008. JanMar25not-applicablebeforefirstAprilperiodisdisclosedinference, notexplicitpricedzerorow.",
+    "JanuaryGSrequiresindependenthistoricGSrowexact4.84entitlement; GS-Snamealoneisnotprovenmapping. Knownrefundappliedonceafter6%knowncurrenttax; unknownpriorrefundsales-taxadjustmentexcludedverifiedsubtotal,notzero. RS6.19ordinaryexemptrefundseparate.",
+    "DirecthistoricalF.THREE-PHASEfoundintwo boundedprimaryroutes; currentOriginal67relabelsidenticalbodyC. Independentreviewagrees. Sameclausebodycontainsnoprintedstandalonefee; knownstandard singlephaseone-meter/no combined/threephasegeardomain, noFsubtotalneeded. Labelinconsistencyretained.",
+    "Historical andcurrent clausebodyhashes use statednormalizations; deliveryalphanumericmethod andsupply/taxwhitespace-hyphenmethodproduce differenthashstrings buteach matchesits historical/currentpair. No rawbyteequalityclaimed.",
+    "PTCcomposites includeGRT/loss/admin/capacity/PJM/AEPS/NITS/recon; DSSnonbypassableNMBtransmissionseparateonce. NoLMP/PLC/NSPLfee orsecondGRTadded.",
+    "Supp28rawMay30endpointretained; PennPowercorrectcurrentDecemberlink10694andApril26inserts samepricesexplicitMay31plusrider204sixmonths supportMay31. FiledJune1notworkbookrawJune24headerscontrols.",
+    "ActualJune25insertcorrectJunepricesbutwrongMay31,26header; adoptedSupp19Nov30,25controls. CurrentDecember10694originaliscorrect; nostaleDecemberfilenameguess/no numericsourceblockedroute.",
+    "ShoppinginsertGeneralPrimary-GS-Small/Medium shorthanddoesnotoverrideadoptedsecondaryGS-Sdesignation. OtherclassessharingPTCnotimplementedautomatically.",
+    "STAS2025+.01%/2026-.01%;TCJAJulDec25positive1.59%; DSIC/TCJAbillsclockanddefinedbases. Mandatoryridercomponents/aggregateamountsaddonce; exactcash/quantityrounding/minimumorderingunverifiedbeyondnarrowguards.",
+    "PennPowerSPVJanMay25filedzero, notMetEd/Penelecnegativecredit. LaterzeroSPVwithinDSSnotextra. DERapproval/accountclass/feesfactsnotinferredfromstudycapacity.",
+    "RootmetadataFE-ATSIrowretainsOHstatecellwhilePennPowerPAjurisdictionseparate; ATSI coarsemapprinted20230511 labelonly, not territoryorpricingnode. Rootguide/validationreport notpinnedassourcederivatives.",
+    "IndependentPTChistory/customerinserts/supportingcalculationsarecomponentbenchmarks; noindependentlymatchedactualcompleteutilityinvoiceestablished. Sourceauditdoesnotproveengine/billing/simulation/optimizer/OpenDSS/browseracceptance."
+  ],
+  "validation_limit": "Original/text/excerpt/render/receipt preservation and prior sourcehash checks only. No runtime or historical/electrical/browser acceptance claim."
+}

@@ -1,0 +1,98 @@
+PHYSICAL PDF PAGE 1 OF 5
+  
+ 
+ December 5, 2024 
+VIA ELECTRONIC FILING  
+ 
+Ms. Rosemary Chiavetta, Secretary 
+Pennsylvania Public Utility Commission 
+Commonwealth Keystone Building 
+400 North Street, 2nd Floor 
+Harrisburg, PA 17120 
+ 
+Re: FirstEnergy Pennsylvania Electric Company 
+ Docket Nos. R-2024-3047068, et al.  - Customer Bill Credit  
+ 
+Dear Secretary Chiavetta: 
+ 
+ In its Joint Settlement Agreement, FirstEnergy Pennsylvania Electric Company (“FE PA” 
+or “Company”) agreed  to refund $13,596,184, inclusive of  compounded interest, to customers 
+due to certain costs from its prior distribution base rate case s that were improperly classified, 
+misallocated, or lacked proper supporting documentation.  In its November 21, 2024 Order 
+approving the Settlement, the Pennsylvania Public Utility Commission (“Commission”) ordered 
+that FE PA file with the Bureau of Technical Utility Services  a list that shall detail by rate class 
+how much will be refunded to each rate class as a result of the refund  within thirty days of the 
+entry of the Order.1 
+ 
+ In compliance with the Commission’s directive, the information contained in FE PA 
+Attachment A shows the credit to be paid for each rate  class.  The credits will be paid over the 
+January 2025 billing cycle on a bills-rendered basis and will be reflected on each bill as a separate 
+line item labeled, “Refund for Non-eligible costs.”  
+ 
+ Following the distribution of the one -time refunds, the Company will submit an  
+informational filing to the Commission that reports the actual refunds distributed to customers.  
+ 
+ 
+ 
+If you have any questions regarding the enclosed documents, please contact me. 
+ 
+ 
+ 
+ 
+ Sincerely, 
+ 
+ 
+ 
+ Joanne M. Savage 
+ Director of Rates & Regulatory Affairs-PA 
+ 610-921-6525 
+ 
+Enclosures 
+c:  Certificate of Service   
+ Paul Diskin, Bureau of Technical Utility Services (pdiskin@pa.gov) 
+ 
+1 PaPUC, et al. v. FirstEnergy Pennsylvania Electric Company, Docket Nos. R-2024-3047068, et al. (Order 
+entered November 21, 2024).  
+2800 Pottsville Pike 
+P.O. Box 16001 
+Reading, PA 19612-6001 
+
+
+PHYSICAL PDF PAGE 5 OF 5
+FirstEnergy Pennsylvania Electic Company - Penn Power Rate District
+Customer Refund Calculation 
+2023 Regulatory Estimated Total 
+ Distribution Liability  Forecasted Credit/Customers Estimated
+Line No. Rate Schedule Revenue % of Total  with Interest Customers with GRT Refund
+(1) (2) = (Line 11) / (1) (3) = (Line 11) x (2) (4) (5) = (3) / (4) / ( 1-5.9%) (6) = (4) x (5)
+1 RS 89,998,435$       74.7% (874,992)$              150,315         (6.19)$                            (930,450)$             
+2 GSR 98,323                0.1% (956)                       79                  (12.86)                            (1,016)                   
+3 GS 5,467,803           4.5% (53,160)                  11,685           (4.84)                              (56,555)                 
+4 GM 13,549,986         11.2% (131,737)                8,504             (16.47)                            (140,061)               
+5 PNP 89,176                0.1% (867)                       85                  (10.84)                            (921)                      
+6 OL 559,356              0.5% (5,438)                    649                (8.91)                              (5,783)                   
+7 GS Large 3,824,141           3.2% (37,179)                  138                (286.31)                          (39,511)                 
+8 GP 3,846,737           3.2% (37,399)                  111                (358.06)                          (39,745)                 
+9 GT 2,127,552           1.8% (20,685)                  46                  (477.87)                          (21,982)                 
+10 STLT 974,362              0.8% (9,473)                    82                  (122.77)                          (10,067)                 
+11 120,535,870$     100% (1,171,886)$           (1,246,091)$          
+Rider L is excluded- customers on Rider L are also billed their standard rate schedule charges
+FirstEnergy Pennsylvania Electric Company - West Penn Rate District
+Customer Refund Calculation 
+2023 Regulatory Estimated Total 
+ Distribution Liability  Forecasted Credit/Customers Estimated
+Line No. Rate Schedule Revenue % of Total  with Interest Customers with GRT Refund
+(1) (2) = (Line 12) / (1) (3) = (Line 12) x (2) (4) (5) = (3) / (4) / ( 1-5.9%) (6) = (4) x (5)
+1 RS10 295,081,189$     71.1% (2,652,806)$           634,332         (4.45)$                            (2,822,777)$          
+2 GS10 794,493              0.2% (7,143)                    650                (11.68)                            (7,592)                   
+3 GS20 15,163,590         3.7% (136,322)                63,045           (2.30)                              (145,004)               
+4 GP30 58,179,580         14.0% (523,040)                35,921           (15.48)                            (556,057)               
+5 GP35 21,291,198         5.1% (191,410)                678                (300.02)                          (203,414)               
+6 OL 4,248,888           1.0% (38,198)                  3,754             (10.82)                            (40,618)                 
+7 PP40 11,042,511         2.7% (99,273)                  143                (737.75)                          (105,498)               
+8 PP44 37,981                0.0% (341)                       1                    (362.87)                          (363)                      
+9 PP46 2,714,296           0.7% (24,402)                  2                    (12,965.87)                     (25,932)                 
+10 PSU 882,114              0.2% (7,930)                    1                    (8,427.52)                       (8,428)                   
+11 STLT 5,803,443           1.4% (52,173)                  571                (97.11)                            (55,450)                 
+12 Total 415,239,285$     100% (3,733,038)$           (3,971,132)$          
+Rider L is excluded- customers on Rider L are also billed their standard rate schedule charges

@@ -14,6 +14,8 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "firstenergy_pa_penn_power": {"label":"FirstEnergy Pennsylvania · Penn Power district", "state":"PA", "zone":"ATSI", "module":"penn_power_pa", "timezone":"America/New_York",
+                                 "grid_operator":"PJM", "emergency_region":"FE-ATSI", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf", "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.ashx"]},
     "firstenergy_pa_penelec": {"label":"FirstEnergy Pennsylvania · Penelec district", "state":"PA", "zone":"PENELEC", "module":"penelec_pa", "timezone":"America/New_York",
                               "grid_operator":"PJM", "emergency_region":"FE-PN", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf", "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.ashx"]},
     "firstenergy_pa_met_ed": {"label":"FirstEnergy Pennsylvania · Met-Ed district", "state":"PA", "zone":"METED", "module":"met_ed_pa", "timezone":"America/New_York",

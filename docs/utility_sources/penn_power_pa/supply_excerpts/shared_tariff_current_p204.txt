@@ -1,0 +1,41 @@
+SOURCE: .cache/met_ed_pa/sources/delivery/tariff_current.pdf
+PHYSICAL PAGE: 204
+
+Issued: December 22, 2023 Effective: January 1, 2024 
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Electric Pa P.U.C. No. 1 
+O riginal Page 204 
+ PRICE TO COMPARE DEFAULT SERVICE RATE RIDER (continued) 
+Th
+e PTC Default rates by Residential or Commercial Customer Class will be calculated semi - 
+annually for the six- month period ending March 31 st to be effective for the six -month period beginning 
+June 1 st and for the six -month period ending September 30 th to be effective for the six -month period 
+beginning December 1st. The PTCDefault rate shall be calculated by Customer Class in accordance with the 
+formula set forth below: 
+PTCDefault = (PTCCurrent + E) x [1 / (1 - T)] 
+PTCCurrent = (PTCCurrent Cost Component x PTC LossCurrent) + PTCAdm + 
+PTCNITS E = {[(DSExp1 + DSExp2) - PTCRev + DSInt] / DSSales} 
+Where: 
+PTCCurrent = The current cost component of the PTC Default rate grossed up for line losses calculated 
+by Residential or Commercial Customer Class determined to the nearest one - 
+thousandth of a cent per kWh to be applied to each kWh of Default Service delivered to 
+Retail Customers under this rider. 
+T
+he computation of the PTCCurrent component of the PTCDefault rate by Residential or 
+Commercial Customer Class will use the following procedures: 
+PTCCurrent Cost Component = The current cost component of the PTC Default rate calculated by Customer Class 
+determined to the nearest one-thousandth of a cent per kWh to be applied to each kWh 
+of Default Service delivered to Retail Customers under this rider. This rate will be 
+determined by Customer Class using the projected weighted cost of Default Service 
+supply acquired by the Company to serve Default Service load and any PJM charges 
+related to the provision of Default Service. 
+PTC Lo
+ssCurrent = Distribution line losses for energy that are determined by the applicable Loss Factors 
+specified below: 
+Rate District Met-Ed Penelec Penn Power West Penn 
+Customer Class Res Com Res Com Res Com Res Com 
+Loss Factor 1.0515 1.0515 1.0573 1.0573 1.0661 1.0661 1.0910 1.0899 
+PTCAdm = An administrative fee for applicable administration costs by Customer Class determined 
+to the nearest one-thousandth of a cent per kWh to be applied to each kWh of Default 
+Service delivered to Retail Customers under this rider. 

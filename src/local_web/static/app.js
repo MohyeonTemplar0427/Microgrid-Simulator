@@ -461,6 +461,7 @@ async function refreshStudy(id) {
       $("results-content").hidden=false;
       $("table-select").replaceChildren(...study.result.tables.map(t=>option(t.id,t.label)));
       $("warning-list").replaceChildren(...study.result.warnings.map(w=>{const li=document.createElement("li");li.textContent=w;return li;}));
+      window.regionalUI?.carbonResult(study.result,study.request.schema_version===11);
       await loadTable(); await history();
     } else pollTimer=setTimeout(()=>refreshStudy(id),1200);
   } catch(error) {
@@ -481,7 +482,7 @@ async function loadTable() {
   $("all-columns").parentElement.hidden=selected!=="comparison";
   const comedColumns=["scenario","subtotal_usd","subtotal_savings_vs_grid_usd","import_kwh","billed_mkd_kw","overall_interval_peak_kw","degradation_cost_usd","battery_throughput_kwh","throughput_reduction_kwh","minimum_throughput_proven","throughput_refinement_status","throughput_optimality_gap_kwh","throughput_proof_method","all_intervals_feasible","is_complete_bill"];
   const displayedSummary=activeStudy?.request.schema_version===11
-    ? ["tariff","scenario","utility_bill_usd","savings_vs_grid_usd","rate_evidence_status","is_complete_bill","import_kwh","export_kwh","pv_curtailed_kwh","estimated_battery_wear_usd","all_cycle_cost_optima_proven","all_intervals_feasible","failed_intervals"]
+    ? ["tariff","scenario","utility_bill_usd","savings_vs_grid_usd","rate_evidence_status","is_complete_bill","import_kwh","export_kwh","grid_import_emissions_kg_co2e","emissions_difference_vs_grid_kg_co2e","pv_curtailed_kwh","estimated_battery_wear_usd","all_cycle_cost_optima_proven","all_intervals_feasible","failed_intervals"]
     : activeStudy?.request.schema_version===10
     ? comedColumns.filter(c=>c!=="billed_mkd_kw" || Object.hasOwn(activeStudy.request.account,"service_voltage"))
     : summaryColumns;
@@ -497,7 +498,8 @@ async function loadTable() {
   Object.assign(comedLabels,{battery_throughput_kwh:"Battery throughput (kWh)",throughput_reduction_kwh:"Cycling reduction (kWh)",minimum_throughput_proven:"Minimum cycling proven",throughput_refinement_status:"Cycling refinement",throughput_optimality_gap_kwh:"Remaining cycling gap ≤ (kWh)",throughput_lower_bound_kwh:"Cycling lower bound (kWh)",throughput_proof_method:"Cycling proof"});
   const refinementNames={optimal:"Proven minimum",improved_unproven:"Improved · minimum unproven",retained_primary:"Primary retained",not_applicable:"Not applicable"};
   const proofNames={full_milp:"Full mixed-integer solve",continuous_relaxation_bound:"Matched relaxation bound",not_proven:"Unproven",not_applicable:"Not applicable"};
-  for (const i of indices) {const cell=document.createElement("th");cell.scope="col";cell.textContent=table.columns[i]==="timestamp"?"Time (UTC)":activeStudy?.request.schema_version===10&&selected==="comparison"?(comedLabels[table.columns[i]]||table.labels[i]):table.labels[i];cell.title=table.columns[i];header.append(cell);}
+  const regionalLabels={grid_import_emissions_kg_co2e:"Grid-import emissions (kg CO₂e)",emissions_difference_vs_grid_kg_co2e:"Grid reference − scenario (kg CO₂e)"};
+  for (const i of indices) {const cell=document.createElement("th");cell.scope="col";cell.textContent=table.columns[i]==="timestamp"?"Time (UTC)":activeStudy?.request.schema_version===11&&selected==="comparison"?(regionalLabels[table.columns[i]]||table.labels[i]):activeStudy?.request.schema_version===10&&selected==="comparison"?(comedLabels[table.columns[i]]||table.labels[i]):table.labels[i];cell.title=table.columns[i];header.append(cell);}
   head.append(header);
   for (const row of table.data) {
     const tr=document.createElement("tr");

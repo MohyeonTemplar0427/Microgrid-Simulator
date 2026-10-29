@@ -1,0 +1,6 @@
+Historical Original67 literal F.THREE-PHASE and current Original67 C.THREE-PHASE
+Sources: officialJune2024archive/currentofficialFEPAfullbook; both effectiveJanuary1,2024.
+Normalization: collapsewhitespace, removewhitespacearoundhyphen; excludeheadinglabel and followingRulessection.
+Identical body SHA256: b69c335423e63168301ed8b855e819d65ea988e9c2d7134de743fe8bd2480de2
+
+Alternating current, 60 hertz, standard single-phase or three-phase three-wire or four-wire secondary service, as available. Single and three-phase service will be metered and billed separately or, where feasible, single and three-phase service will be furnished through a single meter installation and billed as one account provided the customer arranges his wiring to facilitate the installation of a single meter. Where service is furnished at three-phase, the customer shall provide and maintain all equipment required for lighting services.

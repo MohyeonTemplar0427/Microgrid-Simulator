@@ -1,0 +1,24 @@
+SOURCE: .cache/met_ed_pa/sources/supply/historical_rates.xlsx
+SHEET: PTC - Res and Small Comm
+PennPowerRSrow9/SmallCommercialrow15, USD/kWh. June24headersretainedbutfiledJune1clockscontrol.
+row6col2: Residential
+row6col12: 2024-12-01T00:00:00
+row6col13: 2025-06-24T00:00:00
+row6col14: 2025-12-01T00:00:00
+row6col15: 2026-06-24T00:00:00
+row9col2: Penn Power
+row9col12: 0.11168
+row9col13: 0.11857
+row9col14: 0.12606
+row9col15: 0.13477
+row12col2: Small Commercial
+row12col12: 2024-12-01T00:00:00
+row12col13: 2025-06-24T00:00:00
+row12col14: 2025-12-01T00:00:00
+row12col15: 2026-06-24T00:00:00
+row15col2: Penn Power
+row15col12: 0.12098
+row15col13: 0.12726
+row15col14: 0.13729
+row15col15: 0.13729
+row18col2: Note: Prior to June 2023, the PTC rates were filed on a quarterly basis.  The information contained here reflects the June and December rates only. Starting June 2023, the PTC rates are filed on semi-annual basis.

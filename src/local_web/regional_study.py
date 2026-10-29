@@ -19,7 +19,8 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"firstenergy_pa_penelec":(40.52,-78.40,"Explicit hypothetical Altoona/Blair County Pennsylvania site; Penelec district/default PTC, state-only tax, retained GS-S assignment and active ordinary renewable approval are independent facts, not inferred from coordinates"),
+SITES={"firstenergy_pa_penn_power":(41.00,-80.35,"Explicit hypothetical New Castle/Lawrence County Pennsylvania site; Penn Power district/default PTC, state-only tax, GS-S/GSDS history and active ordinary renewable approval are independent account facts, not inferred from coordinates"),
+       "firstenergy_pa_penelec":(40.52,-78.40,"Explicit hypothetical Altoona/Blair County Pennsylvania site; Penelec district/default PTC, state-only tax, retained GS-S assignment and active ordinary renewable approval are independent facts, not inferred from coordinates"),
        "firstenergy_pa_met_ed":(40.34,-75.93,"Explicit hypothetical Reading/Berks County Pennsylvania site; Met-Ed district, default supply, state-only tax, Company GS-S qualification and active ordinary renewable approval are independent facts, not inferred from coordinates"),
        "rockland_electric_new_jersey":(40.95,-74.02,"Explicit hypothetical Bergen County/Eastern Division site; Rockland BGS-RSCP, non-demand billing, ordinary taxable service and active DER approval are independent account facts, not inferred from coordinates"),
        "jcpl_new_jersey":(40.28,-74.12,"Explicit hypothetical Monmouth County, New Jersey site; JCP&L service, BGS-RSCP, PLS, tax and active ordinary DER/no-STB classification are independently confirmed, not inferred from coordinates"),
@@ -103,7 +104,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         "battery":{**deepcopy(DEFAULT_SITE_REQUEST["battery"]),"capacity_kWh":10. if residential else 30.,
             "energy_kWh":5. if residential else 15.,"max_charge_kw":3. if residential else 8.,"max_discharge_kw":3. if residential else 8.},
         "ess":None,"degradation_cost_per_kWh":.03,"include_degradation_in_optimization":False,
-        "credit_objective_policy":"exclude_opening_credits","tariff_comparisons":[],
+        "credit_objective_policy":"exclude_opening_credits","tariff_comparisons":[],"carbon":None,
         "operating_contract":{"mode":"non_export","interconnection_confirmed":False,"grid_charging_confirmed":False,
             "renewable_only_charging":False,"no_battery_export":True,"reference":""},
         "electrical_service":{"voltage":account.get("voltage",plan.get("voltage","secondary")),"phase":account.get("phase","single" if residential else "three"),
@@ -120,7 +121,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
         request["operating_contract"]["renewable_only_charging"]=True
-    if utility in ("alliant_energy_iowa", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey", "rockland_electric_new_jersey", "firstenergy_pa_met_ed", "firstenergy_pa_penelec") and not residential:
+    if utility in ("alliant_energy_iowa", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey", "rockland_electric_new_jersey", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power") and not residential:
         # An explicitly small-office reference, not automatic classification
         # from a simulated monthly/annual load or the default larger office.
         request["solar"]["dc_capacity_kw"]=5.
@@ -220,7 +221,7 @@ def prepare(r):
     utility=r.get("site",{}).get("utility") if isinstance(r,dict) else None
     if utility not in UTILITIES:
         raise ValueError("Choose a supported regional utility with explicit district and jurisdiction confirmation.")
-    if set(r)-{"tariff_comparisons"}!=set(defaults(utility)) - {"tariff_comparisons"} or type(r.get("schema_version")) is not int or r["schema_version"]!=11:
+    if set(r)-{"tariff_comparisons","carbon"}!=set(defaults(utility)) - {"tariff_comparisons","carbon"} or type(r.get("schema_version")) is not int or r["schema_version"]!=11:
         raise ValueError("Supply exactly the regional main-study schema 11 fields.")
     if not isinstance(r["name"],str) or not 1<=len(r["name"].strip())<=120:
         raise ValueError("Supply a valid draft/saved title.")
@@ -238,6 +239,8 @@ def prepare(r):
         grid=build_interval_index(r["start_date"],r["end_date"],r["timezone"],r["timestep_minutes"])
     except (TypeError,ValueError) as exc:
         raise ValueError("Use valid inclusive local dates, at most 366 service days.") from exc
+    from .regional_carbon import validate as validate_carbon
+    validate_carbon(r)
     module=adapter(utility)
     plans={p["id"]:p for p in module.catalog()}
     a=r["account"]
@@ -327,18 +330,18 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("firstenergy_pa_penelec", "firstenergy_pa_met_ed", "rockland_electric_new_jersey", "jcpl_new_jersey", "atlantic_city_electric_new_jersey", "potomac_edison_maryland", "delmarva_maryland", "pepco_maryland", "bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
+    if utility in ("firstenergy_pa_penn_power", "firstenergy_pa_penelec", "firstenergy_pa_met_ed", "rockland_electric_new_jersey", "jcpl_new_jersey", "atlantic_city_electric_new_jersey", "potomac_edison_maryland", "delmarva_maryland", "pepco_maryland", "bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
-        if utility in ("firstenergy_pa_met_ed","firstenergy_pa_penelec") and a["tariff"]=="GS-S" and float(np.sum(load[block])*.25)>1500.+1e-7:
+        if utility in ("firstenergy_pa_met_ed","firstenergy_pa_penelec","firstenergy_pa_penn_power") and a["tariff"]=="GS-S" and float(np.sum(load[block])*.25)>1500.+1e-7:
             raise ValueError(UTILITIES[utility]["label"]+" GS-S initial declared domain separately bounds native cycle energy at1500kWh; PV-reduced imports cannot establish qualification.")
-        if utility in ("firstenergy_pa_met_ed","firstenergy_pa_penelec") and a["tariff"]=="RS" and float(np.max(load[block]))>25.+1e-7:
+        if utility in ("firstenergy_pa_met_ed","firstenergy_pa_penelec","firstenergy_pa_penn_power") and a["tariff"]=="RS" and float(np.max(load[block]))>25.+1e-7:
             raise ValueError(UTILITIES[utility]["label"]+" RS native15-minute peak exceeds the inactive special-demand envelope; PV-reduced imports cannot erase demand eligibility/history.")
-    if utility in ("ameren_missouri", "potomac_edison_maryland", "jcpl_new_jersey", "firstenergy_pa_met_ed", "firstenergy_pa_penelec"):
+    if utility in ("ameren_missouri", "potomac_edison_maryland", "jcpl_new_jersey", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
         _,first_block,first_cycle=cycles[0]
         module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],equipment=equipment)
     alternatives=r.get("tariff_comparisons",[])
@@ -379,6 +382,8 @@ def _execute_single_plan(directory,r):
     from ..billing.regional_counterfactual import grid_only_counterfactual
     directory=Path(directory)
     grid,load,cycles,equipment=prepare(r)
+    from .regional_carbon import values as carbon_values
+    carbon,carbon_provenance=carbon_values(r,directory,grid.index)
     utility=r["site"]["utility"]
     available=np.zeros(len(grid.index));source_tables={};pv_provenance={"source":"no PV configured"};warnings=[]
     if equipment["pv"]:
@@ -386,6 +391,9 @@ def _execute_single_plan(directory,r):
         available=pv.pv_available_kw.to_numpy();source_tables={"weather":weather,"pv-production":pv.diagnostics}
         pv_provenance={"weather":weather_provenance,"pv":pv.provenance};warnings.extend(pv_warnings)
     inputs=pd.DataFrame({"timestamp":grid.index,"native_load_kw":load,"pv_available_kw":available})
+    if carbon is not None:
+        inputs["carbon_intensity_g_co2e_per_kwh"]=carbon
+        warnings.append(carbon_provenance["warning"])
     specs={"grid_only":(False,False)}
     if equipment["pv"]:specs["pv_only"]=(True,False)
     if r["battery"] is not None:specs["pv_battery" if equipment["pv"] else "storage_only"]=(equipment["pv"],True)
@@ -411,6 +419,10 @@ def _execute_single_plan(directory,r):
                 credit_objective_policy=r["credit_objective_policy"],equipment={**equipment,"pv":has_pv,"battery":has_storage,
                     **({"pv_dc_kw":r["solar"]["dc_capacity_kw"] if has_pv else 0.} if "pv_dc_kw" in equipment else {}),
                     "pv_ac_kw":r["pv_capacity_kw"] if has_pv else 0.,"battery_kw":current["max_discharge_kw"] if current else 0.})
+            if carbon is not None:
+                result["dispatch"]["carbon_intensity_g_co2e_per_kwh"]=carbon[block]
+                result["dispatch"]["grid_import_emissions_kg_co2e"]=(
+                    result["dispatch"]["grid_import_kw"].to_numpy()*grid.timestep_hours*carbon[block]/1000)
             state=result["next_state"];parts.append(result["dispatch"]);bills.append(result["bill"]);outcomes.append(result)
             if has_storage:current["energy_kWh"]=result["terminal_energy_kwh"]
             bill=result["bill"]
@@ -422,6 +434,7 @@ def _execute_single_plan(directory,r):
                 "assumption_model":bill.get("assumption_model"),
                 "rate_assumption_ids":json.dumps([x["id"] for x in bill.get("rate_assumptions",[])]),
                 "import_kwh":bill["import_kwh"],"export_kwh":bill["export_kwh"],
+                **({"grid_import_emissions_kg_co2e":float(result["dispatch"]["grid_import_emissions_kg_co2e"].sum())} if carbon is not None else {}),
                 "optimization_objective_usd":result["objective_usd"],"reconciliation_difference_usd":result["reconciliation_difference_usd"],
                 "closing_state":json.dumps(_json_value(state),sort_keys=True),"metrics":json.dumps(_json_value(bill.get("metrics",{})),sort_keys=True)})
             for assumption in bill.get("rate_assumptions",[]):
@@ -448,6 +461,7 @@ def _execute_single_plan(directory,r):
     ac_by_name={row["scenario"]:row for row in ac_rows}
     base=sum(b["total_usd"] for b in results["grid_only"]["bills"])
     comparisons=[]
+    base_emissions=(float(results["grid_only"]["dispatch"]["grid_import_emissions_kg_co2e"].sum()) if carbon is not None else None)
     for name,result in results.items():
         dispatch=result["dispatch"];bills=result["bills"];outcomes=result["outcomes"]
         evidence=_rate_evidence_manifest(r["account"],bills)
@@ -459,6 +473,8 @@ def _execute_single_plan(directory,r):
             "rate_assumption_ids":json.dumps(evidence["assumption_ids"]),
             "assumption_models":json.dumps(evidence["assumption_models"]),
             "import_kwh":sum(b["import_kwh"] for b in bills),"export_kwh":sum(b["export_kwh"] for b in bills),
+            **({"grid_import_emissions_kg_co2e":float(dispatch["grid_import_emissions_kg_co2e"].sum()),
+                "emissions_difference_vs_grid_kg_co2e":base_emissions-float(dispatch["grid_import_emissions_kg_co2e"].sum())} if carbon is not None else {}),
             "pv_curtailed_kwh":float(dispatch.pv_curtailed_kw.sum()*grid.timestep_hours),
             "battery_charge_kwh":float(dispatch.battery_charge_kw.sum()*grid.timestep_hours),
             "battery_discharge_kwh":float(dispatch.battery_discharge_kw.sum()*grid.timestep_hours),
@@ -481,7 +497,9 @@ def _execute_single_plan(directory,r):
     save("billing-components","Itemized charges and component savings",pd.DataFrame(items))
     save("billing-cycles","Bills and closing state by confirmed cycle",pd.DataFrame(cycle_rows))
     if assumption_rows:save("billing-assumptions","Provisional tariff rates and billing rules",pd.DataFrame(assumption_rows))
-    save("inputs","Native demand and available AC PV",inputs)
+    save("inputs","Native demand, available AC PV"+(" and PJM carbon intensity" if carbon is not None else ""),inputs)
+    if carbon is not None:
+        save("carbon-provenance","PJM carbon source and provider interval provenance",pd.read_csv(directory/"carbon-source.csv"))
     for name,result in results.items():save("dispatch-"+name,"Dispatch · "+name,result["dispatch"])
     for key,label,frame in ac_tables:save(key,label,frame)
     for key,frame in source_tables.items():save(key,key.replace("-"," ").title(),frame)
@@ -489,7 +507,8 @@ def _execute_single_plan(directory,r):
         "Existing obligations and starting demand history are identical across scenarios; actual endogenous state evolves independently. A net-metered study labels its absent-PV grid-only counterfactual separately and removes NEM enrollment and solar credits from that reference.",
         "Utility charges use scheduled ideal meter flows. OpenDSS PCC measurements and network losses are separate diagnostics and never alter the bill.",
         "Load: "+r["load"]["source"]+". Monthly meter purchases cannot establish native loads or interval behavior.",
-        "No capital costs, production incentives or location-assigned carbon signal are included. Wholesale prices are used only where the retail supply arrangement explicitly requires them.",
+        "No capital costs or production incentives are included. Wholesale prices are used only where the retail supply arrangement explicitly requires them.",
+        *([] if carbon is not None else [carbon_provenance["warning"]]),
         "Credit objective policy: "+r["credit_objective_policy"]+". Actual carried credits remain in the bill ledger; excluded opening credits do not change dispatch."])
     if r["operating_contract"]["mode"]=="net_metering":
         warnings.append("Closing credits are reported at their filed utility-ledger value. The rolling-cycle optimizer assigns no invented terminal cash value to unused kWh banks; equally priced schedules can curtail different amounts of PV. Minimum cycling does not prove minimum PV curtailment or a jointly optimized annual benefit.")
@@ -503,7 +522,7 @@ def _execute_single_plan(directory,r):
         "rate_evidence_status":"provisional" if any(row["rate_evidence_status"]=="provisional" for row in comparisons) else comparisons[0]["rate_evidence_status"],
         "rate_evidence":rate_evidence,
         "billing_evidence_note":"Component completeness, historical rate evidence, solver proof and representative electrical feasibility are separate claims. Provisional savings use the recorded assumptions.",
-        "input_provenance":{"load":{k:v for k,v in r["load"].items() if k!="csv"},"pv":pv_provenance,
+        "input_provenance":{"load":{k:v for k,v in r["load"].items() if k!="csv"},"pv":pv_provenance,"carbon":carbon_provenance,
             "native_csv_sha256":hashlib.sha256(r["load"]["csv"].encode()).hexdigest() if r["load"]["csv"] else None,
             "request_sha256":hashlib.sha256(json.dumps(r,sort_keys=True).encode()).hexdigest()},
         "engine_id":json.loads((directory/"engine.json").read_text())["id"]}))
@@ -531,6 +550,10 @@ def execute(directory,r):
         folder=directory/("alternative-"+str(i));folder.mkdir(exist_ok=True)
         for name in ("engine.json","weather.csv","weather.json"):
             if (directory/name).is_file():shutil.copyfile(directory/name,folder/name)
+        if r.get("carbon") is not None:
+            for name in ("carbon-source.csv","carbon-source.json"):
+                shutil.copyfile(directory/name,folder/name)
+            shutil.copytree(directory/"carbon-source",folder/"carbon-source",dirs_exist_ok=True)
         alternative={**primary,"account":{**deepcopy(r["account"]),"tariff":tariff}}
         write_json(folder/"request.json",alternative)
         _execute_single_plan(folder,alternative)
@@ -538,7 +561,7 @@ def execute(directory,r):
         prefix="alt"+str(i)+"-"
         for table in other["tables"]:
             source_id=table["id"]
-            if source_id in ("inputs","weather","pv-production"):
+            if source_id in ("inputs","weather","pv-production","carbon-provenance"):
                 continue  # Shared physical inputs have one authoritative table.
             frame=pd.read_csv(folder/(source_id+".csv"))
             if "scenario" in frame:frame["scenario"]=prefix+frame["scenario"]

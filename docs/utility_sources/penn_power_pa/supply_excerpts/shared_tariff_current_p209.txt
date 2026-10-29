@@ -1,0 +1,71 @@
+SOURCE: .cache/met_ed_pa/sources/delivery/tariff_current.pdf
+PHYSICAL PAGE: 209
+
+Issued: April 17, 2026 Effective: June 1, 2026 
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Supplement No. 36 to 
+Electric Pa P.U.C. No. 1 
+Third Revised Page 209 
+      Superseding Second Revised Page 209 
+H
+OURLY PRICING DEFAULT SERVICE RIDER (continued) 
+Penelec 
+Rate Schedule GS-S, GS-M, GS-L GP TP 
+HP Loss Multipliers 1.0573 1.0234 1.0035 
+Penn Power 
+Rate Schedule GS-S, GS-M, GS-L GP TP 
+HP Loss Multipliers 1.0515 1.0171 1.0007 
+West Penn 
+Rate Schedule GS-S, GS-M GS-L GP, TP, 44, 46 
+HP Loss Multipliers 1.0899 1.0678 1.0356 
+PSU 
+Rate Schedule GP 
+HP Loss Multipliers 1.0356 
+T
+hese HP Loss Multipliers exclude transmission losses. 
+HP Cap-AEPS-Other Charge: 
+This represents the costs paid by the Company to the Supplier for Capacity, AEPS costs, and any 
+other costs incurred by the Supplier multiplied by the HP Loss Multipliers. 
+Rate District Met-Ed Penelec Penn Power West Penn PSU 
+Charge $0.06057 (D) 
+per kWh 
+$0.05068 (D) 
+per kWh 
+$0.05244 (D) 
+per kWh 
+$0.03156 (I) 
+per kWh 
+$0.03156 (I) 
+per kWh 
+HP Administrative Charge: 
+This represents the administrative costs incurred by the Company associated with providing 
+Hourly Pricing Service. 
+Rate District Met-Ed Penelec Penn Power West Penn PSU 
+Charge $0.00006 
+per kWh 
+$0.00006 
+per kWh 
+$0.00006 
+per kWh 
+$0.00006 
+per kWh 
+$0.00006 
+per kWh 
+HP Uncollectibles Charge: 
+This represents the default service-related uncollectible accounts expense associated with Hourly 
+Pricing Default Service. This charge is subject to annual adjustment on June 1 of each year. 
+Rate District Met-Ed Penelec Penn Power West Penn PSU 
+Charge $0.00015 
+per kWh 
+$0.00060 
+per kWh 
+$0.00011 
+per kWh 
+$0.00004 
+per kWh 
+$0.00004 
+per kWh 
+(D)
+Decrease
+(I) Increase

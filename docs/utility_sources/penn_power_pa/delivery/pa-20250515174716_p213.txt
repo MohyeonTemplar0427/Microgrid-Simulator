@@ -1,0 +1,92 @@
+Source: https://web.archive.org/web/20250515174716id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/PA/tariffs/fe-pa-retail-tariff.pdf
+Original SHA256: efccf0bf4bba2f5f43aad96d1e56ab2d77495abd2174335a39c25cee98193a2a
+Physical page: 213
+Printed page: 213
+Revision: Third Revised
+Rate district: PennPower, independently reviewed column
+
+Issued: May 1, 2025 Effective: June 1, 2025 
+FIRSTENERGY PENNSYLVANIA 
+ELECTRIC COMPANY 
+Supplement No. 22 to 
+Electric Pa P.U.C. No. 1 
+   Third Revised Page 213 
+ Superseding Second Revised Page 213 
+DEF
+AULT SERVICE SUPPORT RIDER 
+A
+ Default Service Support (“DSS”) rate shall be applied to DSS Sales delivered by the Company 
+to Delivery Service Customers under this rider as determined to the nearest one-thousandth of a cent per 
+kWh or dollar per kW NSPL, as applicable. The DSS rate shall be billed to Customers receiving 
+Delivery Service from the Company under this rider. The DSS rates shall be calculated according to the 
+provisions of this rider. The DSS Rider shall be non-bypassable. 
+For service rendered during the DSS Initial Computational Period and thereafter, the DSS 
+Computational Year, the DSS rates billed by Rate Schedule are as follows: 
+Rate District Met-Ed 
+Customer Class Residential Commercial Industrial 
+Rate Schedule RS, GS-V GS-S GS-M, MS, Outdoor 
+Area Lighting 
+Service, STLT, 
+LED, BRD 
+GS-L, GP, TP 
+Charge 0.12447 (D) 
+cents per kWh 
+(0.01601) (D) 
+cents per kWh 
+(0.02984) (D) 
+cents per kWh 
+$(0.26674) (D) 
+per kW NSPL 
+Rate District Penelec 
+Customer Class Residential Commercial Industrial 
+Rate Schedule RS, GS-V GS-S GS-M, H, BRD, 
+LED, Street 
+Lighting, Municipal 
+Street Lighting, 
+Outdoor Area 
+Lighting Service 
+GS-L, GP, TP 
+Charge 0.800 (D) 
+cents per kWh 
+0.365 (D) 
+cents per kWh 
+0.361 (D) 
+cents per kWh 
+$2.727 (D) 
+per kW NSPL 
+Rate District Penn Power 
+Customer Class Residential Commercial Industrial 
+Rate Schedule RS, GS-V GS-S PNP, GS-M, PLS, 
+SV, SVD, 
+SM, LED 
+GS-L, GP, TP, GS-S 
+(GSDS) 
+Charge 0.266 (I) 
+cents per kWh 
+0.085 (I) 
+cents per kWh 
+0.083 (I) 
+cents per kWh 
+$0.2730 (I) 
+per kW NSPL 
+Rate District West Penn 
+Customer Class Residential Commercial Industrial 
+Rate Schedule RS, GS-V GS-S GS-M, 51-58, 71, 72 GS-L, GP, TP, 44, 46 
+Charge 0.770 (I) 
+cents per kWh 
+0.411 (I) 
+cents per kWh 
+0.407 (I) 
+cents per kWh 
+$2.636 (I) 
+per kW NSPL 
+Rate District PSU 
+Customer Class Industrial 
+Rate Schedule GP 
+Charge $2.636 (I) 
+per kW NSPL 
+(
+D) D
+ecrease
+(I)
+Increase

@@ -1,0 +1,44 @@
+Source: https://www.puc.pa.gov/pcdocs/1858401.pdf
+Original SHA256: 74d69b22c621e6d0242a90014c4ee6cb8629fcf295dc3ef50710c2bcb73a89da
+Physical page: 5
+Printed page: Penn Power customer refund calculation
+Revision: Filed accepted refund calculation
+Rate district: PennPower, independently reviewed column
+
+FirstEnergy Pennsylvania Electic Company - Penn Power Rate District
+Customer Refund Calculation 
+2023 Regulatory Estimated Total 
+ Distribution Liability  Forecasted Credit/Customers Estimated
+Line No. Rate Schedule Revenue % of Total  with Interest Customers with GRT Refund
+(1) (2) = (Line 11) / (1) (3) = (Line 11) x (2) (4) (5) = (3) / (4) / ( 1-5.9%) (6) = (4) x (5)
+1 RS 89,998,435$       74.7% (874,992)$              150,315         (6.19)$                            (930,450)$             
+2 GSR 98,323                0.1% (956)                       79                  (12.86)                            (1,016)                   
+3 GS 5,467,803           4.5% (53,160)                  11,685           (4.84)                              (56,555)                 
+4 GM 13,549,986         11.2% (131,737)                8,504             (16.47)                            (140,061)               
+5 PNP 89,176                0.1% (867)                       85                  (10.84)                            (921)                      
+6 OL 559,356              0.5% (5,438)                    649                (8.91)                              (5,783)                   
+7 GS Large 3,824,141           3.2% (37,179)                  138                (286.31)                          (39,511)                 
+8 GP 3,846,737           3.2% (37,399)                  111                (358.06)                          (39,745)                 
+9 GT 2,127,552           1.8% (20,685)                  46                  (477.87)                          (21,982)                 
+10 STLT 974,362              0.8% (9,473)                    82                  (122.77)                          (10,067)                 
+11 120,535,870$     100% (1,171,886)$           (1,246,091)$          
+Rider L is excluded- customers on Rider L are also billed their standard rate schedule charges
+FirstEnergy Pennsylvania Electric Company - West Penn Rate District
+Customer Refund Calculation 
+2023 Regulatory Estimated Total 
+ Distribution Liability  Forecasted Credit/Customers Estimated
+Line No. Rate Schedule Revenue % of Total  with Interest Customers with GRT Refund
+(1) (2) = (Line 12) / (1) (3) = (Line 12) x (2) (4) (5) = (3) / (4) / ( 1-5.9%) (6) = (4) x (5)
+1 RS10 295,081,189$     71.1% (2,652,806)$           634,332         (4.45)$                            (2,822,777)$          
+2 GS10 794,493              0.2% (7,143)                    650                (11.68)                            (7,592)                   
+3 GS20 15,163,590         3.7% (136,322)                63,045           (2.30)                              (145,004)               
+4 GP30 58,179,580         14.0% (523,040)                35,921           (15.48)                            (556,057)               
+5 GP35 21,291,198         5.1% (191,410)                678                (300.02)                          (203,414)               
+6 OL 4,248,888           1.0% (38,198)                  3,754             (10.82)                            (40,618)                 
+7 PP40 11,042,511         2.7% (99,273)                  143                (737.75)                          (105,498)               
+8 PP44 37,981                0.0% (341)                       1                    (362.87)                          (363)                      
+9 PP46 2,714,296           0.7% (24,402)                  2                    (12,965.87)                     (25,932)                 
+10 PSU 882,114              0.2% (7,930)                    1                    (8,427.52)                       (8,428)                   
+11 STLT 5,803,443           1.4% (52,173)                  571                (97.11)                            (55,450)                 
+12 Total 415,239,285$     100% (3,733,038)$           (3,971,132)$          
+Rider L is excluded- customers on Rider L are also billed their standard rate schedule charges

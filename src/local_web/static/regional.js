@@ -31,11 +31,25 @@ function regionalIntervalSupport(select,plan) {
   // Keep the chosen value explicit; changing utilities must not resample inputs.
   return allowed;
 }
+function regionalCarbonControl(input,gridOperator) {
+  input.disabled=gridOperator!=="PJM";
+  if(input.disabled)input.checked=false;
+}
+function regionalCarbonResultText(metadata) {
+  if(metadata?.status!=="verified")return "Grid carbon emissions were not calculated for this study. Missing emissions are not zero.";
+  const coverage=metadata.coverage||{};
+  return `PJM regional average · Electricity Maps · ${metadata.zone}. Lifecycle consumption emissions from scheduled grid imports, in kg CO₂e. `+
+    `Coverage (UTC): ${coverage.start_utc} → ${coverage.end_exclusive_utc} (exclusive). `+
+    `Provider-estimated intervals: ${coverage.estimated_interval_count} / ${coverage.interval_count}. `+
+    `Provider resolution: ${metadata.provider_interval_minutes} minutes; study resolution: ${metadata.study_interval_minutes} minutes. `+
+    "Exports receive no emissions credit. Grid-reference differences are accounting comparisons, not marginal avoided emissions. Bill optimization is unchanged. Inspect the saved result for source hashes and estimation metadata.";
+}
 function buildRegionalStudyRequest(base,v) {
   const r=JSON.parse(JSON.stringify(base));r.name="Untitled study";
   r.site={latitude:Number(v.latitude),longitude:Number(v.longitude),label:v.site_label,utility:v.utility};
   r.tariff_comparisons=v.rg_alternative?[v.rg_alternative]:[];
   r.site_profile=v.site_profile;r.regional_account=v.regional_account;r.account=v.account;
+  r.carbon=v.rg_carbon===true&&v.regional_account.grid_operator==="PJM"?{source:"electricity_maps",region:"US-MIDA-PJM"}:null;
   for(const key of ["start_date","end_date"])r[key]=v[key];r.timestep_minutes=Number(v.timestep_minutes);
   r.billing_cycles=v.cycles||regionalCalendarCycles(r.start_date,r.end_date);
   r.load={mode:v.load_mode,power_kw:v.load_mode==="csv"?null:Number(v.load_power_kw),
@@ -56,7 +70,7 @@ function buildRegionalStudyRequest(base,v) {
   r.include_degradation_in_optimization=v.include_degradation_in_optimization===true;
   return r;
 }
-if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles,regionalRateEvidenceContext,regionalIntervalSupport};
+if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles,regionalRateEvidenceContext,regionalIntervalSupport,regionalCarbonControl,regionalCarbonResultText};
 
 if(typeof document!=="undefined") {
   let currentKey=null,nativeCsv=null,era5=null,era5Key=null,wasActive=false,marketCsv=null;
@@ -79,6 +93,11 @@ if(typeof document!=="undefined") {
     <label id="regional-cycle-list">Consecutive cycle list · JSON<textarea name="rg_cycles" rows="8" placeholder="start_date, end_date, billing_month, bill_date, kind, source, account_overrides"></textarea></label>
     <p class="hint">The utility's billing month and bill date are separate from service dates. Actual meter cycles must cover every interval. Each jurisdiction applies its own proration and rate-change rules.</p>`;
   document.querySelector('[data-step="3"]').append(cycles);
+  const carbon=document.createElement("fieldset");carbon.hidden=true;
+  carbon.innerHTML=`<legend>Grid carbon emissions</legend>
+    <label><input name="rg_carbon" type="checkbox"/> Include PJM regional-average emissions</label>
+    <p class="hint" id="regional-carbon-note">Electricity Maps · US-MIDA-PJM · consumption-based lifecycle intensity. Results report kg CO₂e from grid imports, with no export emissions credit. This regional proxy is not the utility's supply mix or a site measurement. Bill optimization is unchanged. Historical access and complete 15-minute coverage are required; no missing data or constant assumptions are substituted.</p>`;
+  document.querySelector('[data-step="3"]').append(carbon);
   const load=document.createElement("fieldset");load.hidden=true;
   load.innerHTML=`<legend>Native consumption and provenance</legend><label>Load source / assumption<input name="rg_load_source" maxlength="500"/></label>
     <div id="regional-native"><label>Native-load CSV · timestamp,native_load_kw<input name="rg_native_file" type="file" accept=".csv,text/csv"/></label>
@@ -123,7 +142,7 @@ if(typeof document!=="undefined") {
     $("regional-fields").replaceChildren();
     const advanced=document.createElement("details"),heading=document.createElement("summary"),advancedFields=document.createElement("div");
     heading.textContent="Advanced account facts · history, contracts and special eligibility";advancedFields.className="form-grid";advanced.style.gridColumn="1/-1";advanced.append(heading,advancedFields);
-    const basic=new Set(["gs_fixed_imputed_usage_excluded_confirmed","january_refund_eligibility_confirmed","rs_special_demand_inactive_confirmed","gs_small_confirmed","ptc_review_confirmed","solely_residential_use_confirmed","no_special_rates_confirmed","sc2_non_demand_confirmed","no_ami_opt_out_fee_confirmed","county","service_division","gs_no_demand_meter_confirmed","gs_minimum_domain_confirmed","gs_standby_not_applicable_confirmed","der_activation_date","bgs_rscp_confirmed","quantity_objective_confirmed","unmetered_source","history_confirmed","history_source","demand_method","estimated_demand_source","tax_jurisdiction","tax_source","type_i_confirmed","usc_band","usc_source","usc_assignment_2025_source","usc_assignment_2026_source","subtotal_scope_confirmed","relief_policy","rate_zone","legacy_rate_zone","ts_metering","ts_metering_source","rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","local_charges_confirmed","full_monthly_charges_confirmed","dg_enrollment_confirmed","dg_source","ee_tier","ee_tier_source","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
+    const basic=new Set(["gs_no_qualifying_gsds_history_confirmed","legacy_gs_refund_entitlement_confirmed","gs_fixed_imputed_usage_excluded_confirmed","january_refund_eligibility_confirmed","rs_special_demand_inactive_confirmed","gs_small_confirmed","ptc_review_confirmed","solely_residential_use_confirmed","no_special_rates_confirmed","sc2_non_demand_confirmed","no_ami_opt_out_fee_confirmed","county","service_division","gs_no_demand_meter_confirmed","gs_minimum_domain_confirmed","gs_standby_not_applicable_confirmed","der_activation_date","bgs_rscp_confirmed","quantity_objective_confirmed","unmetered_source","history_confirmed","history_source","demand_method","estimated_demand_source","tax_jurisdiction","tax_source","type_i_confirmed","usc_band","usc_source","usc_assignment_2025_source","usc_assignment_2026_source","subtotal_scope_confirmed","relief_policy","rate_zone","legacy_rate_zone","ts_metering","ts_metering_source","rate_evidence_mode","provisional_assumptions_accepted","supply","supply_arrangement","supplier","eligibility_confirmed","ordinary_use_confirmed","ordinary_service_confirmed","local_charges_confirmed","full_monthly_charges_confirmed","dg_enrollment_confirmed","dg_source","ee_tier","ee_tier_source","no_local_tax_confirmed","der_ordinary_service_confirmed","der_eligibility_source","no_special_provisions_confirmed","locality","parallel_service","parallel_operation_approved","parallel_operation_confirmed","solar_mode","solar_program","export_mode","ami","tou_enrollment_confirmed","legacy_enrollment_confirmed","net_metering_confirmed","voltage","voltage_v","delivery_voltage_kv","phase","power_factor"]);
     const descriptors=selected()?.account_fields||[];
     const spec=Object.fromEntries(descriptors.map(d=>[typeof d==="string"?d:d.name,typeof d==="string"?{}:d]));
     for(const [key,v] of Object.entries(value)){
@@ -134,7 +153,7 @@ if(typeof document!=="undefined") {
       let input;
       const object=v!==null&&typeof v==="object"||desc.type==="number_array";
       if(object||v===null){input=document.createElement("textarea");input.rows=object?3:1;input.dataset.valueType="json";input.value=JSON.stringify(v);}
-      else if(desc.choices){input=document.createElement("select");for(const c of desc.choices)input.append(option(c,c==="default_ptc"&&["firstenergy_pa_met_ed","firstenergy_pa_penelec"].includes(field("utility").value)?"Default supply · fixed Price to Compare":({bgs_rscp:"Default supply · BGS-RSCP",bgs_ciep:"Hourly default supply · BGS-CIEP",bundled:"Bundled utility supply",default_ptc:"Default supply · fixed Price to Compare (GSC-1)",sso:"Default supply · Standard Service Offer",sos:"Default supply · Standard Offer Service",ohio_power:"Ohio Power legacy rate zone",columbus_southern:"Columbus Southern Power legacy rate zone",verified:"Verified dates only",provisional_2025:"Provisional 2025 · documented assumptions",provisional_cycles_v1:"Provisional PECO cycles · allocation assumptions"})[c]||c));input.value=String(v);input.dataset.valueType=typeof v;}
+      else if(desc.choices){input=document.createElement("select");for(const c of desc.choices)input.append(option(c,c==="default_ptc"&&["firstenergy_pa_met_ed","firstenergy_pa_penelec","firstenergy_pa_penn_power"].includes(field("utility").value)?"Default supply · fixed Price to Compare":({bgs_rscp:"Default supply · BGS-RSCP",bgs_ciep:"Hourly default supply · BGS-CIEP",bundled:"Bundled utility supply",default_ptc:"Default supply · fixed Price to Compare (GSC-1)",sso:"Default supply · Standard Service Offer",sos:"Default supply · Standard Offer Service",ohio_power:"Ohio Power legacy rate zone",columbus_southern:"Columbus Southern Power legacy rate zone",verified:"Verified dates only",provisional_2025:"Provisional 2025 · documented assumptions",provisional_cycles_v1:"Provisional PECO cycles · allocation assumptions"})[c]||c));input.value=String(v);input.dataset.valueType=typeof v;}
       else {input=document.createElement("input");input.type=typeof v==="boolean"?"checkbox":typeof v==="number"?"number":"text";
         if(typeof v==="boolean")input.checked=v;else input.value=String(v);if(input.type==="number")input.step="any";input.dataset.valueType=typeof v;}
       input.name="rg_a_"+key;label.append(input);(basic.has(key)?$("regional-fields"):advancedFields).append(label);
@@ -152,7 +171,7 @@ if(typeof document!=="undefined") {
     }return a;
   }
   function sync(){const on=active();
-    for(const section of [panel,cycles,load,operating,economics]){section.hidden=!on;for(const input of section.querySelectorAll("input,select,textarea,button"))input.disabled=!on;}
+    for(const section of [panel,cycles,carbon,load,operating,economics]){section.hidden=!on;for(const input of section.querySelectorAll("input,select,textarea,button"))input.disabled=!on;}
     const eraOption=field("weather_source").querySelector('option[value="era5"]');eraOption.hidden=eraOption.disabled=!on;
     weather.hidden=!on||field("weather_source").value!=="era5";
     if(!on){currentKey=null;return;}wasActive=true;
@@ -173,6 +192,11 @@ if(typeof document!=="undefined") {
     const ciep=field("utility").value==="pseg"&&(utility().accounts[f("plan").value]?.supply==="bgs_ciep"||field("rg_a_supply")?.value==="bgs_ciep");
     $("regional-ciep").hidden=!ciep;
     const grid=utility().grid_operator||"PJM";
+    regionalCarbonControl(f("carbon"),utility().grid_operator);
+    $("regional-carbon-note").hidden=grid!=="PJM";
+    f("carbon").closest("label").hidden=grid!=="PJM";
+    if(grid!=="PJM"){$("regional-carbon-note").hidden=false;$("regional-carbon-note").textContent="Regional carbon data is not connected for this grid operator. No PJM factor is assigned to this utility.";}
+    else $("regional-carbon-note").textContent="Electricity Maps · US-MIDA-PJM · consumption-based lifecycle intensity. Results report kg CO₂e from grid imports, with no export emissions credit. This regional proxy is not the utility's supply mix or a site measurement. Bill optimization is unchanged. Historical access and complete 15-minute coverage are required; no missing data or constant assumptions are substituted.";
     const region=grid==="MISO"?`Resource adequacy zone: ${utility().resource_adequacy_zone} · Transmission zone: ${utility().transmission_zone||"Not assigned"} · Transmission owner: ${utility().transmission_owner||"Not assigned; verify site-specific ownership"} · LRZ is not a pricing node. ${utility().transmission_ownership_context||""}`:`Transmission zone: ${utility().transmission_zone}`;
     $("regional-identity").textContent=`Distribution: ${utility().label} · Jurisdiction: ${utility().state} · Default retail supplier: ${utility().label} · Grid operator: ${grid} · ${region} · Wholesale pricing identity is separate.`;
     $("regional-coverage").textContent=plan?`${plan.eligibility||"Confirm actual eligibility."} Verified: ${(plan.coverage||[]).map(w=>w.start+" → "+w.end).join(", ")}. ${(plan.limitations||[]).join(" ")}`:"Choose a plan to inspect its verified dates and requirements.";
@@ -272,6 +296,7 @@ if(typeof document!=="undefined") {
     for(const key of ["start_date","end_date","timestep_minutes","pv_capacity_kw","weather_source","degradation_cost_per_kWh"])field(key).value=r[key];
     for(const [key,value] of Object.entries({...r.solar,...(r.battery||{})}))field(key).value=value;
     field("include_degradation_in_optimization").checked=r.include_degradation_in_optimization;
+    f("carbon").checked=r.carbon?.source==="electricity_maps"&&r.carbon.region==="US-MIDA-PJM";
     field("pv_choice").value=r.solar.dc_capacity_kw>0?"yes":r.battery?"storage":"no";f("battery").checked=!!r.battery;
     field("load_mode").value=r.load.mode;field("load_power_kw").value=r.load.power_kw??"";field("archetype").value=r.load.archetype??"";
     currentKey=null;sync();f("plan").value=r.account.tariff;accountFields(r.account);sync();f("alternative").value=r.tariff_comparisons?.[0]||"";
@@ -296,7 +321,11 @@ if(typeof document!=="undefined") {
       amount.setAttribute("x",620);amount.setAttribute("y",y);amount.setAttribute("font-size",13);amount.textContent=Number(row.utility_bill_usd).toLocaleString(undefined,{style:"currency",currency:"USD"});svg.append(label,bar,amount);});
     const caption=document.createElement("figcaption");caption.className="hint";caption.textContent="Utility charges only. Each tariff is optimized independently; wear and electrical losses are reported separately. Provisional historical estimates use the recorded rate and billing assumptions; completeness does not verify historical rates. Incomplete bills are flagged in the table.";chart.append(svg,caption);
   }
-  window.regionalUI={comparisonChart,active,batteryEnabled,sync,leaving,mainDefaults,defaults,validate,restore,request,
+  function carbonResult(result,enabled){
+    let note=$("regional-carbon-result");if(!note){note=document.createElement("p");note.id="regional-carbon-result";note.className="hint";$("warning-list").before(note);}
+    note.hidden=!enabled;note.textContent=enabled?regionalCarbonResultText(result?.input_provenance?.carbon):"";
+  }
+  window.regionalUI={comparisonChart,carbonResult,active,batteryEnabled,sync,leaving,mainDefaults,defaults,validate,restore,request,
     dateDefaults:()=>({start:field("start_date").value||base().start_date,end:field("end_date").value||base().end_date}),
-    reset:()=>{currentKey=null;nativeCsv=era5=era5Key=marketCsv=null;},submit:()=>api("/api/v1/regional/studies?draft=1",request())};
+    reset:()=>{currentKey=null;nativeCsv=era5=era5Key=marketCsv=null;f("carbon").checked=false;},submit:()=>api("/api/v1/regional/studies?draft=1",request())};
 }
