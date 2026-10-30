@@ -1,0 +1,8 @@
+Duquesne Light AppendixA transmission values; not embedded in Rider8 DSS.
+2025-06-01 through2026-05-31:
+Source: https://duquesnelight.com/docs/default-source/default-document-library/currenttariff_99_25.pdf?sfvrsn=ba3f2647_2
+Printed142, eighthrevision, supplement94 issued2025-05-15 effective2025-06-01. Web PDF P160 (zero-based):RS $0.027187/kWh; GS $0.018386/kWh. No demand charge for either row.
+2026-06-01 through2026-11-30 (implementation horizon can stopOctober):
+Source: https://www.duquesnelight.com/docs/default-source/default-document-library/tariff-no-25-%28110%29-effective-10-01-2026---rider-no-22---distribution-system-improvement-charge-%28dsic%29-quarterly-filing.pdf
+Printed142, ninthrevision, supplement105 issued2026-05-15 effective2026-06-01. WebPDF P163 (zero-based):RS $0.031841/kWh; GS $0.012015/kWh. No demand charge for either row.
+TSC annual update is effective June 1 unless revised more often. Formula includes the 1/(1-T) gross-receipts-tax adjustment. No extra GRT or NSPL demand charge applies to these energy-only rows.

@@ -1,0 +1,160 @@
+{
+  "utility": "duquesne_light_pennsylvania",
+  "plans": [
+    "RS",
+    "GS"
+  ],
+  "verified_delivery_scope": {
+    "start": "2025-01-01",
+    "end": "2026-10-31"
+  },
+  "base_effective_date": "2024-12-20",
+  "base_source_id": "base_supp85",
+  "base_rates": {
+    "RS": {
+      "customer_usd": "13.00",
+      "distribution_energy_usd_per_kwh": "0.082479",
+      "source_pdf_page": 35,
+      "printed_tariff_page": "38"
+    },
+    "GS": {
+      "customer_usd": "18.00",
+      "distribution_energy_usd_per_kwh": "0.084601",
+      "source_pdf_page": 41,
+      "printed_tariff_page": "46"
+    }
+  },
+  "eec_windows": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-05-31",
+      "RS_usd_per_kwh": "0.0021",
+      "GS_usd_per_kwh": "0.0020",
+      "source_id": "eec_2024_supp76",
+      "printed_tariff_page": "118"
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2026-05-31",
+      "RS_usd_per_kwh": "0.0019",
+      "GS_usd_per_kwh": "-0.0006",
+      "source_id": "eec_2025_supp93",
+      "printed_tariff_page": "118"
+    },
+    {
+      "start": "2026-06-01",
+      "end": "2026-10-31",
+      "RS_usd_per_kwh": "0.0017",
+      "GS_usd_per_kwh": "0.0009",
+      "source_id": "eec_2026_final",
+      "printed_tariff_page": "118"
+    }
+  ],
+  "usc_windows": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "RS_non_CAP_usd_per_kwh": "0.01549",
+      "GS": "not_applicable",
+      "source_id": "usc_2025_supp84",
+      "printed_tariff_page": "93"
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-10-31",
+      "RS_non_CAP_usd_per_kwh": "0.01599",
+      "GS": "not_applicable",
+      "source_id": "usc_2026_supp97",
+      "printed_tariff_page": "93"
+    }
+  ],
+  "dsic_bill_date_windows": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-03-31",
+      "factor": "-0.0010",
+      "source_id": "dsic_2025q1_supp87",
+      "revision": "25th"
+    },
+    {
+      "start": "2025-04-01",
+      "end": "2025-12-31",
+      "factor": "0.0002",
+      "source_id": "dsic_2025q2_supp90",
+      "revision": "26th",
+      "continuity_proof": "Supp99 27th revised printed137 cancels26th revised printed137; no intermediate revision."
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-03-31",
+      "factor": "0.0049",
+      "source_id": "dsic_2026q1_supp99",
+      "revision": "27th"
+    },
+    {
+      "start": "2026-04-01",
+      "end": "2026-06-30",
+      "factor": "0.0139",
+      "source_id": "dsic_2026q2_supp101",
+      "revision": "28th"
+    },
+    {
+      "start": "2026-07-01",
+      "end": "2026-09-30",
+      "factor": "0.0217",
+      "source_id": "dsic_2026q3_supp107",
+      "revision": "29th"
+    },
+    {
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "factor": "0.0336",
+      "source_id": "dsic_2026q4_supp110",
+      "revision": "30th",
+      "filed_quarter_end": "2026-12-31"
+    }
+  ],
+  "zero_riders": {
+    "smart_meter": {
+      "single_phase_usd_per_meter_month": "0.00",
+      "poly_phase_usd_per_meter_month": "0.00",
+      "source_id": "smr_2023_supp55",
+      "effective": "2023-01-01",
+      "printed_tariff_page": "129"
+    },
+    "retail_market_enhancement": {
+      "RS_usd_per_month": "0.00",
+      "GS_under25kw_usd_per_month": "0.00",
+      "source_id": "rmes_2022_supp40",
+      "effective": "2022-02-01",
+      "printed_tariff_page": "88"
+    }
+  },
+  "application_rules": {
+    "RS_rider_integration": "Base RS8.2479c excludes USC and EEC; add each once. USC and EEC are added to distribution energy charge. CAP excluded from USC so bounded ordinary model must exclude CAP.",
+    "GS_rider_integration": "EEC appears separately; June2025-May2026 is a negative0.06c/kWh credit. GS has no USC under Rider5.",
+    "DSIC": "Bill-rendered-date basis; total otherwise-applicable distribution rates/charges including clauses/riders, excluding STAS. STAS applies to DSIC. DSIC not part of monthly rate-schedule minimum and minimum not reduced by DSIC.",
+    "SMC": "Per-meter/type monthly charge; STAS applies; not part of monthly rate-schedule minimum. Explicit zero for both types.",
+    "RMES": "Monthly charge; STAS applies. Explicit zero for RS and GS<25kW.",
+    "taxes": "Rider10 STAS and retail sales taxes are independently owned by rules/tax research; do not add GRT again to filed riders."
+  },
+  "research_gaps": [],
+  "scope_exclusions": [
+    "Third-party supply",
+    "CAP/assistance",
+    "EV/TOU pilots",
+    "RH/RA heating and special riders",
+    "non-ordinary discounts",
+    "Export/NEM settlement",
+    "Irregular or partial-cycle allocations"
+  ],
+  "application_clocks": {
+    "base": "Effective service-date tariff version; matching complete calendar cycles only",
+    "universal_service": "Residential non-CAP kilowatt-hours delivered during billing month, dated January1 annual version",
+    "energy_efficiency": "Rate applies to all customers served during any part of a billing month; matching complete calendar cycles select one filed version; no partial-cycle proration inferred",
+    "smart_meter": "Per-meter monthly charge, applicable to customers served during any part of billing month; current explicit zero",
+    "retail_market_enhancement": "Per-customer monthly surcharge; current explicit zero",
+    "DSIC": "Explicit bill-rendered date determines entire bill factor",
+    "STAS": "All bills rendered; independent rules source confirms rate and base; do not choose service date for a delayed bill"
+  }
+}

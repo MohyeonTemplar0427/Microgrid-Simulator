@@ -1,0 +1,13 @@
+Duquesne Light Tariff25 supplement88; retained prior filed tariff pages.
+Source: https://www.duquesnelight.com/docs/default-source/default-document-library/currenttariff_88_25.pdf?sfvrsn=6e9bed44_6
+Retrieval: official-domain search-index full page text, not successful direct PDF open. Direct route returned404; original binary and visual rendering are unverified.
+Printed page98, supplement83, issued2024-10-01 effective2024-12-01:
+Residential standard DSS,2024-12-01 through2025-05-31:8.4472 cents/kWh.
+Printed page98A, ninthrevision, supplement83, sameissue/effectivedates:
+Smallcommercial/industrial standard DSS,2024-12-01 through2025-05-31:7.7009 cents/kWh.
+Printed page142, seventhrevision, supplement85, issued2024-12-09 effective2024-12-20:
+AppendixA monthly transmission energy charges:RS $0.024048/kWh; GS $0.015625/kWh. No demandcharge shown for either row.
+
+Final corroboration (supersedes the original access limitation for these values):
+PUC original https://www.puc.pa.gov/pcdocs/1851302.pdf contains clean filed Supplement83 pages98 and98A at PDF36/37. OriginalPDF downloaded, SHA recorded in rates_by_window.json; table pages rendered and visually checked. PUC approval letter https://www.puc.pa.gov/pcdocs/1855715.pdf dated2024-11-08 permits the rates to become effective as filed for2024-12-01 through2025-05-31.
+TSC values are separately corroborated by original https://www.puc.pa.gov/pcdocs/1859015.pdf PDF76 printed142, Supplement85 effective2024-12-20, downloaded and visually checked.

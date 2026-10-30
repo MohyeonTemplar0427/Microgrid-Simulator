@@ -1,0 +1,97 @@
+SOURCE: https://www.puc.pa.gov/pcdocs/1927034.pdf
+PDF PAGE: 4 (1-based)
+SHA256 ORIGINAL: 317f38d4c78a3660c80079a95cef9a555eeb4a898fa45b50d66a20c751a75a3a
+
+DUQUESNE LIGHT COMPANY SUPPLEMENT NO. 104 
+ TO ELECTRIC – PA. P.U.C. NO. 25 
+ SEVENTH REVISED PAGE NO. 118 
+ CANCELLING SIXTH REVISED PAGE NO. 118 
+(C) – Indicates Change                         (D) – Indicates Decrease                         (I) – Indicates Increase                     
+ISSUED:  APRIL 1, 2026 EFFECTIVE:  JUNE 1, 2026 
+ 
+STANDARD CONTRACT RIDERS - (Continued) 
+ 
+ 
+RIDER NO. 15A – PHASE V ENERGY EFFICIENCY AND CONSERVATION SURCHARGE 
+ 
+ 
+(Applicable to all Rates) 
+ 
+ 
+The Phase V Energy Efficiency and Conservation Surcharge (“EEC V”) is instituted as a cost recovery mechanism 
+to recover the costs associated with implementing Phase V of the Company’s Energy Efficiency and Conservation 
+Plan in effect from June 1, 2026, through May 31, 2031.  Act 129 of 2008 became law on October 15, 2008, requiring 
+the Pennsylvania Public Utility Commission (“Commission”) to develop an Energy Efficiency and Conservation 
+Program applicable to electric distribution companies (“EDCs”) with at least 100,0 00 customers.  This EEC V is 
+implemented in compliance with Docket No. M -2025-3052826 renaming the current Rider No. 15A – Phase IV 
+Energy Efficiency and Conservation Surcharge.  The EEC V is a non -bypassable Surcharge and shall be applied 
+to all customers’ bills. 
+ 
+ 
+RATES 
+ 
+  Monthly Surcharge 
+ 
+ 
+Customer Class 
+ 
+Applicable Tariff 
+Rate Schedule 
+ 
+ 
+¢/kWh 
+ 
+Fixed Charge 
+$/Month 
+ 
+ 
+$/kW(1) 
+Residential RS, RH, RA 0.17   
+Small & Medium Commercial and Industrial GS, GM & GMH 0.09   
+Large Commercial GL, GLH, L  $94.19 $0.41 
+Large Industrial GL, GLH, L, HVPS  ($170.52) ($0.02) 
+Lighting AL, SE, SM, SH, PAL 0.00   
+Unmetered UMS 0.00   
+ 
+(1)Monthly Surcharge applicable to the customer’s Peak Load Contribution. 
+ 
+ 
+CALCULATION OF SURCHARGE 
+ 
+ 
+The rate, calculated independently for each customer class in this Tariff, shall be applied to all customers served 
+under the Tariff.  The rate shall be determined in accordance with the formulas set forth below and shall be applied 
+to all customers served during any part of a billing month: 
+ 
+ 
+RESIDENTIAL CUSTOMER CLASS 
+ 
+EEC (r) = [ ( ( B – e ) / S ) * 100 ] * [ ( 1 / ( 1 – T ) ) ] 
+ 
+Where: EEC (r)  = The Energy Efficiency and Conservation Surcharge (residential) in one-hundredth of a cent 
+which shall be added to the distribution rates for billing purposes for all residential 
+customers.  
+ 
+(C) 
+(C) 
+(C) 
+(C) 
+ 
+(C) 
+(C) 
+(C) 
+ 
+ 
+ 
+ 
+ 
+ 
+(D) 
+(I) 
+(D) (D) 
+(D) (D) 
+ 
+ 
+ 
+ 
+ 

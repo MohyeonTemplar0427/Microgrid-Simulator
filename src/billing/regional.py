@@ -14,6 +14,9 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "duquesne_light_pennsylvania": {"label":"Duquesne Light · Pennsylvania", "state":"PA", "zone":"DLCO", "module":"duquesne_pa", "timezone":"America/New_York",
+                                  "grid_operator":"PJM", "emergency_region":"DUQ", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+                                      "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.pdf"]},
     "firstenergy_pa_penn_power": {"label":"FirstEnergy Pennsylvania · Penn Power district", "state":"PA", "zone":"ATSI", "module":"penn_power_pa", "timezone":"America/New_York",
                                  "grid_operator":"PJM", "emergency_region":"FE-ATSI", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf", "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.ashx"]},
     "firstenergy_pa_penelec": {"label":"FirstEnergy Pennsylvania · Penelec district", "state":"PA", "zone":"PENELEC", "module":"penelec_pa", "timezone":"America/New_York",

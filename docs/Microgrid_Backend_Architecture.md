@@ -952,3 +952,19 @@ SPV, signed SMT/DSS and +1.59%TCJA are retained. Known minimum failures reject
 without forced purchases. Existing math/dispatch/worker/PV/storage/replay are
 reused without shared behavioral changes. ATSI/FE-ATSI metadata remain separate
 from PA tariff/jurisdiction and wholesale prices. See [scope](Penn_Power_Pennsylvania.md).
+
+## Duquesne Light Pennsylvania RS/GS · October 2026
+
+`billing/duquesne_pa.py` adds ordinary solely residential RS and Company-retained
+non-demand GS fixed default service for matching complete January 2025–October
+2026 calendar cycles. Filed DSS and AppendixA transmission are separate exact
+components, including GRT once. Distribution USC/EEC/SMC/RMES, bill-rendered
+DSIC/STAS and ordinary state-only sales tax retain their individual bases.
+GS prior12/native/import 1000kWh/5kW conservative bounds and Company supply/class
+reviews remain independent of PV. Its low-import minimum wording is unverified;
+accepted cases stay in a documented inactive domain without adding a minimum,
+inventing a demand price or forcing purchases. Approved ordinary renewable
+PV/storage is non-export and PV-only charging. Existing billing math, dispatch,
+worker, weather/equipment and all-interval replay are reused. DLCO transmission
+map and DUQ control-area identifiers are separate from tariff, supplier and
+optional PJM regional-average carbon. See [scope](Duquesne_Light_Pennsylvania.md).

@@ -19,7 +19,8 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"firstenergy_pa_penn_power":(41.00,-80.35,"Explicit hypothetical New Castle/Lawrence County Pennsylvania site; Penn Power district/default PTC, state-only tax, GS-S/GSDS history and active ordinary renewable approval are independent account facts, not inferred from coordinates"),
+SITES={"duquesne_light_pennsylvania":(40.65,-80.31,"Explicit hypothetical Center Township/Beaver County Pennsylvania site; Duquesne service, RS/GS Company assignment, default supply, state-only tax and approved ordinary renewable service require independent confirmation, not inferred from coordinates"),
+       "firstenergy_pa_penn_power":(41.00,-80.35,"Explicit hypothetical New Castle/Lawrence County Pennsylvania site; Penn Power district/default PTC, state-only tax, GS-S/GSDS history and active ordinary renewable approval are independent account facts, not inferred from coordinates"),
        "firstenergy_pa_penelec":(40.52,-78.40,"Explicit hypothetical Altoona/Blair County Pennsylvania site; Penelec district/default PTC, state-only tax, retained GS-S assignment and active ordinary renewable approval are independent facts, not inferred from coordinates"),
        "firstenergy_pa_met_ed":(40.34,-75.93,"Explicit hypothetical Reading/Berks County Pennsylvania site; Met-Ed district, default supply, state-only tax, Company GS-S qualification and active ordinary renewable approval are independent facts, not inferred from coordinates"),
        "rockland_electric_new_jersey":(40.95,-74.02,"Explicit hypothetical Bergen County/Eastern Division site; Rockland BGS-RSCP, non-demand billing, ordinary taxable service and active DER approval are independent account facts, not inferred from coordinates"),
@@ -121,6 +122,12 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
         request["operating_contract"]["renewable_only_charging"]=True
+    if utility=="duquesne_light_pennsylvania":
+        request["operating_contract"]["renewable_only_charging"]=True
+        if not residential:
+            request["solar"]["dc_capacity_kw"]=1.5
+            request["pv_capacity_kw"]=1.2
+            request["battery"].update(capacity_kWh=2.,energy_kWh=1.,max_charge_kw=.6,max_discharge_kw=.6)
     if utility in ("alliant_energy_iowa", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey", "rockland_electric_new_jersey", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power") and not residential:
         # An explicitly small-office reference, not automatic classification
         # from a simulated monthly/annual load or the default larger office.
@@ -330,18 +337,22 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("firstenergy_pa_penn_power", "firstenergy_pa_penelec", "firstenergy_pa_met_ed", "rockland_electric_new_jersey", "jcpl_new_jersey", "atlantic_city_electric_new_jersey", "potomac_edison_maryland", "delmarva_maryland", "pepco_maryland", "bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
+    if utility in ("duquesne_light_pennsylvania", "firstenergy_pa_penn_power", "firstenergy_pa_penelec", "firstenergy_pa_met_ed", "rockland_electric_new_jersey", "jcpl_new_jersey", "atlantic_city_electric_new_jersey", "potomac_edison_maryland", "delmarva_maryland", "pepco_maryland", "bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
+    if utility=="duquesne_light_pennsylvania" and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
+        raise ValueError("Duquesne first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
+        if utility=="duquesne_light_pennsylvania" and a["tariff"]=="GS" and (float(np.sum(load[block])*.25)>1000.+1e-7 or float(np.max(load[block]))>5.+1e-7):
+            raise ValueError("Duquesne GS independently bounds native monthly energy<=1000kWh and known15-minute peak<=5kW; PV-reduced imports cannot establish eligibility.")
         if utility in ("firstenergy_pa_met_ed","firstenergy_pa_penelec","firstenergy_pa_penn_power") and a["tariff"]=="GS-S" and float(np.sum(load[block])*.25)>1500.+1e-7:
             raise ValueError(UTILITIES[utility]["label"]+" GS-S initial declared domain separately bounds native cycle energy at1500kWh; PV-reduced imports cannot establish qualification.")
         if utility in ("firstenergy_pa_met_ed","firstenergy_pa_penelec","firstenergy_pa_penn_power") and a["tariff"]=="RS" and float(np.max(load[block]))>25.+1e-7:
             raise ValueError(UTILITIES[utility]["label"]+" RS native15-minute peak exceeds the inactive special-demand envelope; PV-reduced imports cannot erase demand eligibility/history.")
-    if utility in ("ameren_missouri", "potomac_edison_maryland", "jcpl_new_jersey", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
+    if utility in ("duquesne_light_pennsylvania", "ameren_missouri", "potomac_edison_maryland", "jcpl_new_jersey", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
         _,first_block,first_cycle=cycles[0]
         module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],equipment=equipment)
     alternatives=r.get("tariff_comparisons",[])

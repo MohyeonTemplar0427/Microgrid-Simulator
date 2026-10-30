@@ -1,0 +1,178 @@
+{
+  "retrieved_date": "2026-10-29",
+  "scope": "RS standard residential and GS non-demand-metered, Company-retained small C&I default service; no TOU or EGS",
+  "units": "USD/kWh; exact filed six-decimal USD values, not rounded website PTC",
+  "windows": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-05-31",
+      "RS": {
+        "generation_dss_per_kwh": "0.084472",
+        "transmission_per_kwh": "0.024048",
+        "unrounded_ptc_per_kwh": "0.108520"
+      },
+      "GS": {
+        "generation_dss_per_kwh": "0.077009",
+        "transmission_per_kwh": "0.015625",
+        "unrounded_ptc_per_kwh": "0.092634"
+      },
+      "dss_source": "puc1851302",
+      "transmission_source": "puc1859015",
+      "source_quality": "original_PUC_filed_PDF_and_rendered_tables_with_DSS_approval_letter"
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2025-11-30",
+      "RS": {
+        "generation_dss_per_kwh": "0.097093",
+        "transmission_per_kwh": "0.027187",
+        "unrounded_ptc_per_kwh": "0.124280"
+      },
+      "GS": {
+        "generation_dss_per_kwh": "0.084471",
+        "transmission_per_kwh": "0.018386",
+        "unrounded_ptc_per_kwh": "0.102857"
+      },
+      "dss_source": "dlc110",
+      "transmission_source": "dlc99",
+      "source_quality": "primary_web_pdf_text_binary_blocked"
+    },
+    {
+      "start": "2025-12-01",
+      "end": "2026-05-31",
+      "RS": {
+        "generation_dss_per_kwh": "0.110275",
+        "transmission_per_kwh": "0.027187",
+        "unrounded_ptc_per_kwh": "0.137462"
+      },
+      "GS": {
+        "generation_dss_per_kwh": "0.097016",
+        "transmission_per_kwh": "0.018386",
+        "unrounded_ptc_per_kwh": "0.115402"
+      },
+      "dss_source": "dlc110",
+      "transmission_source": "dlc99",
+      "source_quality": "primary_web_pdf_text_binary_blocked"
+    },
+    {
+      "start": "2026-06-01",
+      "end": "2026-10-31",
+      "RS": {
+        "generation_dss_per_kwh": "0.109568",
+        "transmission_per_kwh": "0.031841",
+        "unrounded_ptc_per_kwh": "0.141409"
+      },
+      "GS": {
+        "generation_dss_per_kwh": "0.096754",
+        "transmission_per_kwh": "0.012015",
+        "unrounded_ptc_per_kwh": "0.108769"
+      },
+      "dss_source": "dlc110",
+      "transmission_source": "dlc110",
+      "source_quality": "primary_web_pdf_text_binary_blocked"
+    }
+  ],
+  "basis": {
+    "dss": "Includes GRT, capacity, losses, AEC/PJM, procurement/admin and reconciliation; excludes Duquesne-zonal transmission",
+    "transmission": "Appendix A energy component; includes GRT; no RS/GS demand adder; Appendix A printed146 excludes TSC from STAS, credits/discounts and rate-schedule minimums.",
+    "rate_factor": "Already incorporated in filed DSS; do not apply again",
+    "application": "Filed application period; all kWh billed for default service during billing month. Complete calendar cycles avoid unverified crossing allocation.",
+    "small_supply_assignment": "Company October review of 12 most recent monthly billing demands; average <25 kW assigned small C&I effective with January billing"
+  },
+  "sources": [
+    {
+      "id": "dlc110",
+      "url": "https://www.duquesnelight.com/docs/default-source/default-document-library/tariff-no-25-%28110%29-effective-10-01-2026---rider-no-22---distribution-system-improvement-charge-%28dsic%29-quarterly-filing.pdf",
+      "title": "Tariff25 supplement110 effective2026-10-01",
+      "retrieval": "web PDF text",
+      "binary_status": "blocked_direct_cli_incapsula",
+      "pages": {
+        "dss_residential": "printed98A, webP107 (zero-based)",
+        "dss_small": "printed98B, webP108 (zero-based)",
+        "dss_rules": "printed98/102/103/104, webP106/P113/P114/P115 (zero-based)",
+        "transmission": "printed142, webP163 (zero-based)"
+      }
+    },
+    {
+      "id": "dlc99",
+      "url": "https://duquesnelight.com/docs/default-source/default-document-library/currenttariff_99_25.pdf?sfvrsn=ba3f2647_2",
+      "title": "Tariff25 supplement99 effective2026-01-01",
+      "retrieval": "web PDF text",
+      "binary_status": "blocked_direct_cli_incapsula",
+      "pages": {
+        "transmission": "printed142, webP160 (zero-based)"
+      }
+    },
+    {
+      "id": "dlc88_indexed",
+      "url": "https://www.duquesnelight.com/docs/default-source/default-document-library/currenttariff_88_25.pdf?sfvrsn=6e9bed44_6",
+      "title": "Tariff25 supplement88 effective2025-03-01",
+      "retrieval": "official_domain_search_index_full_relevant_page_text",
+      "direct_pdf_open_status": "404",
+      "binary_status": "unavailable",
+      "pages": {
+        "dss_residential": "printed98 supplement83",
+        "dss_small": "printed98A supplement83",
+        "transmission": "printed142 supplement85"
+      }
+    },
+    {
+      "id": "dlc77_indexed",
+      "url": "https://duquesnelight.com/docs/default-source/default-document-library/supplement-no-77-to-tariff-no-25-appendix-a-transmission-service-charges-effective-june-1-2024.pdf?sfvrsn=6197ee44_0",
+      "title": "Supplement77 AppendixA effective2024-06-01",
+      "retrieval": "official_domain_search_index_full_relevant_page_text",
+      "direct_pdf_open_status": "404",
+      "binary_status": "unavailable",
+      "pages": {
+        "transmission": "printed142"
+      }
+    },
+    {
+      "id": "puc1851302",
+      "url": "https://www.puc.pa.gov/pcdocs/1851302.pdf",
+      "title": "Filed Supplement83 DSS, effective2024-12-01",
+      "docket": "M-2024-3051457",
+      "retrieval": "downloaded_original_PDF_and_rendered_table_pages",
+      "binary_sha256": "78c8f774e43345dcb9518436bdb9e56fa1c90c1a114b7787c81f5d71b53beaea",
+      "pages": {
+        "RS": "PDF36, printed98",
+        "GS": "PDF37, printed98A"
+      },
+      "approval_source": "puc1855715"
+    },
+    {
+      "id": "puc1855715",
+      "url": "https://www.puc.pa.gov/pcdocs/1855715.pdf",
+      "title": "PUC Nov8 2024 letter permitting Supplement83 rates as filed",
+      "retrieval": "downloaded_original_PDF",
+      "binary_sha256": "3e886e153a781efb60697dabc527e332bbc8faf6048046fefad44e6e3267a4ee"
+    },
+    {
+      "id": "puc1859015",
+      "url": "https://www.puc.pa.gov/pcdocs/1859015.pdf",
+      "title": "Filed Supplement85, effective2024-12-20",
+      "retrieval": "downloaded_original_PDF_and_rendered_table_page",
+      "binary_sha256": "cca79afa9dcb861c3489dc8e3e4562aef35926ad13254cde3a898df4b39adb95",
+      "pages": {
+        "TSC": "PDF76, printed142"
+      }
+    }
+  ],
+  "excerpts": {
+    "dss_rules_and_basis.txt": "a4bab6948b0d2ed62eb5f730c61026e471656b2455f568e436d9006919301b00",
+    "puc1851302_p36.txt": "7debe74dd1a7cd9506128a5e64d59f688eb8802d101131802941d4496621e359",
+    "puc1851302_p37.txt": "c4b7b01d9696208259a3809350432b4fa816cf38ef70a71fdfc5cbc30cb80a6d",
+    "puc1855715_approval.txt": "bea9cbca07124c65d510e129f2ec89e9eb7e445b988e8134bf0bbde7901866a2",
+    "puc1859015_p76.txt": "1d24169e232d77382deac77f32340a22b59fba07fba5aa1d0befedde04aea218",
+    "tariff110_dss_values.txt": "b88776c55157bd99e4eff363d351ab892327f949f41ae06dc5f9822df9d31901",
+    "tariff88_2025_values.txt": "34a3306ac233b092612f1ca1077793334308d7e8ced11e3f15ed711573c5a81a",
+    "transmission_2025_2026_values.txt": "a4ab92e93aea73e6646006493d46f9419df2cb872d9a0e4dafc3f40e84b27f98"
+  },
+  "limitations": [
+    "Direct DLC PDF downloads remain blocked; original PUC copies close pre-June2025 DSS/TSC binary and visual gaps. Later cached web PDFs retain exact filed history; preserve their separate access status.",
+    "Original failed DLC routes and initial indexed retrieval remain recorded; they are not the final pre-June2025 rate evidence.",
+    "December 2026 future DSS placeholders are not rates; implementation horizon here stops October 2026.",
+    "No additional wholesale LMP/PLC/NSPL, administration or GRT adder.",
+    "Tariff eligibility, delivery riders and tax bases are owned by the separate research reviewers."
+  ]
+}

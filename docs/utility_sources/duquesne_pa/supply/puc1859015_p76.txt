@@ -1,0 +1,77 @@
+DUQUESNE LIGHT COMPANY SUPPLEMENT NO. 85 
+ TO ELECTRIC – PA. P.U.C. NO. 25 
+ SEVENTH REVISED PAGE NO. 142 
+ CANCELLING SIXTH REVISED PAGE NO. 142 
+ 
+(C) – Indicates Change                            
+ISSUED:  DECEMBER 9, 2024 EFFECTIVE:  DECEMBER 20, 2024 
+APPENDIX A 
+ 
+ 
+TRANSMISSION SERVICE CHARGES 
+ 
+ 
+(Applicable to All Rates) 
+ 
+The Company will provide and charge for transmission service consistent with the PJM Open Access 
+Transmission Tariff approved or accepted by the Federal Energy Regulatory Commission (FERC) for customers 
+who receive Default Service from the Company.  Customers taking Default Service from the Company shall be 
+charged in accordance with the charges of the applicable rate sc hedules stated below.  These charges shall also 
+apply to riders applicable to each rate schedule. 
+ 
+MONTHLY RATES 
+ 
+ 
+ 
+Rate Class 
+Energy 
+Charge 
+$/kWh 
+Demand 
+Charge 
+$/kW 
+Monthly 
+Charge 
+Per Fixture 
+Monthly 
+Charge 
+Per Fixture 
+Monthly 
+Charge 
+Per Fixture 
+   
+RS $0.024048 ⎯       
+RH $0.012097 ⎯       
+RA $0.018447 ⎯       
+GS $0.015625 ⎯       
+GM    < 25 kW $0.009987 $1.95          
+GM    => 25 kW $0.012651 $2.19          
+GMH  < 25 kW $0.011036 $4.14(1)     (C)  
+GMH  => 25 kW $0.007703 $6.22(1)     (C)  
+GL ⎯ $6.24(2)       
+GLH ⎯ $7.32(2)       
+L ⎯ $6.08(2)       
+HVPS ⎯ $6.08(2)       
+AL $0.002091 ⎯       
+SE $0.001749 ⎯       
+UMS $0.001749 $5.51(2)       
+   Rate Class    
+By Wattage   SH PAL SM    
+Mercury Vapor         
+100   ⎯ ⎯ $0.08    
+175   ⎯ ⎯ $0.14    
+250   ⎯ ⎯ $0.19    
+400   ⎯ ⎯ $0.30    
+1000   ⎯ ⎯ $0.73    
+High Pressure Sodium         
+70   ⎯ $0.05 $0.05    
+100   $0.09 $0.09 $0.09    
+150   $0.13 $0.13 $0.13    
+200   $0.17 ⎯ ⎯    
+250   ⎯ $0.20 $0.21    
+400   $0.30 $0.31 $0.32    
+1000   ⎯ ⎯ $0.73    
+(1) May through October 
+(2) Demand charge based on the customer’s Network Service Peak Load (“NSPL”). 
+ 
+(C) 

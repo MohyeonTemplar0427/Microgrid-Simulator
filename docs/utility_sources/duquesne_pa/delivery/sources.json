@@ -1,0 +1,211 @@
+{
+  "retrieved_date": "2026-10-29",
+  "scope": "Delivery components only; source PDFs in ignored cache; original rate page excerpts retained",
+  "sources": [
+    {
+      "id": "usc_2025_supp84",
+      "url": "https://www.puc.pa.gov/pcdocs/1857627.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/usc_2025_supp84_puc_1857627.pdf",
+      "pages": 14,
+      "sha256": "27fa08bbc5d0bbc2af0b67795555abbaa2baebff5ee11318960c6be4ef650238",
+      "retained_pdf_pages_one_based": [
+        14
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/usc_2025_supp84.txt",
+      "excerpt_sha256": "a73e7fda457bfdef0513007b57c42376e6ad8586607e2f7a852bf6b317b55ed9"
+    },
+    {
+      "id": "base_supp85",
+      "url": "https://www.puc.pa.gov/pcdocs/1859015.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/base_supp85_puc_1859015.pdf",
+      "pages": 193,
+      "sha256": "cca79afa9dcb861c3489dc8e3e4562aef35926ad13254cde3a898df4b39adb95",
+      "retained_pdf_pages_one_based": [
+        35,
+        36,
+        41,
+        59,
+        60
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/base_supp85.txt",
+      "excerpt_sha256": "a405b4ff5135d8014ebd8ad19d09623d7cb130f358f81ab0c15e460d438c2164"
+    },
+    {
+      "id": "base_supp85_replacement",
+      "url": "https://www.puc.pa.gov/pcdocs/1859726.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/base_supp85_replacement_puc_1859726.pdf",
+      "pages": 9,
+      "sha256": "e957d47d89de657ff6bb0d66f29dbde4f0b5a664d0a454d13a8ab9f67b68e155",
+      "retained_pdf_pages_one_based": [
+        1
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/base_supp85_replacement.txt",
+      "excerpt_sha256": "84c07dfe344f09e674f84dfa6593ae024b773cb208f1af157e952448eed03f7d"
+    },
+    {
+      "id": "eec_2025_supp93",
+      "url": "https://www.puc.pa.gov/pcdocs/1877398.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/eec_2025_supp93_puc_1877398.pdf",
+      "pages": 17,
+      "sha256": "c9db3be5909c9d84dab9bdc5273c87bc685c6a22fce50150133849a70a03c3f1",
+      "retained_pdf_pages_one_based": [
+        6
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/eec_2025_supp93.txt",
+      "excerpt_sha256": "c42add370dcc106976975a1ea6ded0ddc47ffe1d30a2d636aa8b20a9f42207ca"
+    },
+    {
+      "id": "eec_2026_supp104",
+      "url": "https://www.puc.pa.gov/pcdocs/1921396.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/eec_2026_supp104_puc_1921396.pdf",
+      "pages": 11,
+      "sha256": "dd9071841e48e658b2579f3787c6480692cb8b95e3aae7a948a6837cd678281b",
+      "retained_pdf_pages_one_based": [
+        1
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/eec_2026_supp104.txt",
+      "excerpt_sha256": "8e2a72272ef145e5393b1cc1362f8277e5da1b15b868d5eed0f46f306aca8637"
+    },
+    {
+      "id": "eec_2026_final",
+      "url": "https://www.puc.pa.gov/pcdocs/1927034.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/eec_2026_final_puc_1927034.pdf",
+      "pages": 15,
+      "sha256": "317f38d4c78a3660c80079a95cef9a555eeb4a898fa45b50d66a20c751a75a3a",
+      "retained_pdf_pages_one_based": [
+        4
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/eec_2026_final.txt",
+      "excerpt_sha256": "a24ee80fba3da779a9301f7d2d786f02b3e97482f749c1192a1e2e1dec173a10"
+    },
+    {
+      "id": "smr_2023_supp55",
+      "docket": "M-2022-3037319",
+      "docket_url": "https://www.puc.pa.gov/docket/M-2022-3037319",
+      "document": "SMC RATE ADJ; SUPP NO 55 TO PA PUC NO 25; EFF: 1/1/23 - DLC",
+      "url": "https://www.puc.pa.gov/pcdocs/1768417.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/smr_2023_supp55_puc_1768417.pdf",
+      "pages": 7,
+      "sha256": "6f57382abd37593145247f33f3752181b470d64e3707e852da0755413f2be2f9",
+      "retained_pdf_pages_one_based": [
+        5
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/smr_2023_supp55.txt",
+      "excerpt_sha256": "9b537efd3f438bf6730d1701512db10b0f015385e3f225a63b7eb948ad9ba55c"
+    },
+    {
+      "id": "rmes_2022_supp40",
+      "docket": "M-2022-3030499",
+      "docket_url": "https://www.puc.pa.gov/docket/M-2022-3030499",
+      "document": "INTERIM RMES RATE ADJ; SUPP NO 40 TO PA PUC NO 25; EFF: 2/1/22 - DLC",
+      "url": "https://www.puc.pa.gov/pcdocs/1731394.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/rmes_2022_supp40_puc_1731394.pdf",
+      "pages": 16,
+      "sha256": "c7dc3bc76a94abab1e9da35c61168d7c57874b291e87cc2bd527f102e3b906ca",
+      "retained_pdf_pages_one_based": [
+        6
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/rmes_2022_supp40.txt",
+      "excerpt_sha256": "0beea5a8fad6fd23f84cf9d92733d098f63385fdeb9abea5b6043f181a5e2c36"
+    },
+    {
+      "id": "usc_2026_supp97",
+      "docket": "M-2025-3058889",
+      "docket_url": "https://www.puc.pa.gov/docket/M-2025-3058889",
+      "document": "REVISED USC RATE ADJ; SUPP NO 97 TO PA PUC NO 25 - DLC",
+      "url": "https://www.puc.pa.gov/pcdocs/1904364.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/usc_2026_supp97_puc_1904364.pdf",
+      "pages": 14,
+      "sha256": "7e03bbcda363be48af2abf7d89200e34b4892836fcede558e2e07f110d0693e9",
+      "retained_pdf_pages_one_based": [
+        14
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/usc_2026_supp97.txt",
+      "excerpt_sha256": "4bd6da5b63a1ee1711592f961665afe3a40359c48b363dc0691f0be9ff36bf6c"
+    },
+    {
+      "id": "dsic_2025q1_supp87",
+      "url": "https://www.puc.pa.gov/pcdocs/1860296.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/dsic_2025q1_supp87_puc_1860296.pdf",
+      "pages": 14,
+      "sha256": "2709b5d518743a8ce8dd095955786056a930db461fa2ddc2dd618685167f4436",
+      "retained_pdf_pages_one_based": [
+        6
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/dsic_2025q1_supp87.txt",
+      "excerpt_sha256": "5e4debcd9d11b5bf2aafa665cd85c080cd19449dc2e578800c8f2fca21db9b67"
+    },
+    {
+      "id": "dsic_2025q2_supp90",
+      "url": "https://www.puc.pa.gov/pcdocs/1871144.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/dsic_2025q2_supp90_puc_1871144.pdf",
+      "pages": 14,
+      "sha256": "418745072f36c7d76493656b2fc821ad30a307058623d88f559ba4f46b6953a3",
+      "retained_pdf_pages_one_based": [
+        6
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/dsic_2025q2_supp90.txt",
+      "excerpt_sha256": "94682ed0924c1c564d3bc00833804ae6820883a3f2432f72d75d353333f54753"
+    },
+    {
+      "id": "dsic_2026q1_supp99",
+      "url": "https://www.puc.pa.gov/pcdocs/1907919.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/dsic_2026q1_supp99_puc_1907919.pdf",
+      "pages": 14,
+      "sha256": "a9bc133ab1e220d9f6cc5556273d87d22e863ece9c81cf3587c36a6be10d534d",
+      "retained_pdf_pages_one_based": [
+        6
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/dsic_2026q1_supp99.txt",
+      "excerpt_sha256": "caeabea599d8c8bf07de6a4a6b1d5283e153f77c8e52ddad3b98a4843b12a7f0"
+    },
+    {
+      "id": "dsic_2026q2_supp101",
+      "url": "https://www.puc.pa.gov/pcdocs/1919225.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/dsic_2026q2_supp101_puc_1919225.pdf",
+      "pages": 12,
+      "sha256": "2b77662bce0cf07f67c405a47f91f6760eb57824276574ee7e3b3e037b8b64f3",
+      "retained_pdf_pages_one_based": [
+        5
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/dsic_2026q2_supp101.txt",
+      "excerpt_sha256": "2123888756eb8daa848a366099d224479b79aa3dd77ecaf034923c8c8ffd241d"
+    },
+    {
+      "id": "dsic_2026q3_supp107",
+      "url": "https://www.puc.pa.gov/pcdocs/1936914.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/dsic_2026q3_supp107_puc_1936914.pdf",
+      "pages": 13,
+      "sha256": "51cb703a35b5b44691248ab2832964fc789251feb5aa7cc4eafbc5a24915a944",
+      "retained_pdf_pages_one_based": [
+        6
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/dsic_2026q3_supp107.txt",
+      "excerpt_sha256": "5fbbb57d7c62a96033f0096041ef3ddc2c8efe6ff29280170bde7421cb585939"
+    },
+    {
+      "id": "dsic_2026q4_supp110",
+      "url": "https://www.puc.pa.gov/pcdocs/1950968.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/dsic_2026q4_supp110_puc_1950968.pdf",
+      "pages": 13,
+      "sha256": "3017c0c914024dc94c8d77c970e12a5bfbbbc181fb8ce54734652376f5f13962",
+      "retained_pdf_pages_one_based": [
+        6
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/dsic_2026q4_supp110.txt",
+      "excerpt_sha256": "95b0d5b91956a2944c7753f4e6310025ae003ad171e28ac6973f09bfa8e3b59c"
+    },
+    {
+      "id": "eec_2024_supp76",
+      "url": "https://www.puc.pa.gov/pcdocs/1826568.pdf",
+      "path": ".cache/duquesne_pa/sources/delivery/eec_2024_puc_1826568.pdf",
+      "pages": 16,
+      "sha256": "f0b6ab7a979bf3a768c71050dcd0dfd541155aac21147c604b7017bbf33bfa97",
+      "retained_pdf_pages_one_based": [
+        16
+      ],
+      "excerpt_path": "docs/utility_sources/duquesne_pa/delivery/eec_2024_supp76.txt",
+      "excerpt_sha256": "2e6fbd6de73012aa62ec21fe27eb18cf4f9fc58615706068a534779ae5173f95"
+    }
+  ]
+}

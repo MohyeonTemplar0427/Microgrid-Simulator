@@ -1,0 +1,60 @@
+{
+  "status": "verified",
+  "docket": "R-2024-3052641",
+  "docket_url": "https://www.puc.pa.gov/docket/R-2024-3052641",
+  "filed": "2024-12-20",
+  "effective": "2025-01-01",
+  "through": "2025-12-31",
+  "approved": "2025-01-02",
+  "part1_percentage": "-0.1278",
+  "part1_fraction": "-0.001278",
+  "part1_basis": "distribution charges",
+  "part2_percentage": "0.0000",
+  "part2_fraction": "0",
+  "part2_basis": "all bill components",
+  "application_clock": "all bills rendered",
+  "history_typo": "Utility history saysJan1 2024;originaltariffheader,filingletter,computationsandPUCapprovalallshowJan1 2025",
+  "sources": [
+    {
+      "id": "stas_2025_supp86_puc1860313",
+      "url": "https://www.puc.pa.gov/pcdocs/1860313.pdf",
+      "status": 200,
+      "sha256": "ddad27b1423c76ddfa14082b3b680268737b250aac4dce8692196afdbe40ef0e",
+      "bytes": 396774,
+      "pages": 11,
+      "retrieved_at": "2026-10-30T04:00:17.727006+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/stas_2025_supp86_puc1860313.pdf",
+      "excerpt_pages_one_based": [
+        1,
+        4,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "stas_2025_approval_puc1861038",
+      "url": "https://www.puc.pa.gov/pcdocs/1861038.pdf",
+      "status": 200,
+      "sha256": "afbae06a325db88ae5562caf37ebbe4d644673ef0f750c2ac5ec5d27dde47385",
+      "bytes": 139186,
+      "pages": 1,
+      "retrieved_at": "2026-10-30T04:00:17.550330+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/stas_2025_approval_puc1861038.pdf",
+      "excerpt_pages_one_based": [
+        1
+      ]
+    }
+  ],
+  "visual_check": {
+    "status": "passed",
+    "file": ".cache/duquesne_pa/sources/rules/stas_2025_verified-07.png",
+    "sha256": "0f291c5dca4028b68a4d377dc3d367224043d32fad8e863c2b9cffec3dc9a134",
+    "pdf_page_one_based": 7,
+    "printed_page": 112
+  },
+  "excerpt_sha256": {
+    "stas_2025_approval_puc1861038_excerpts.txt": "049c842d267615161ec7205212b06007ac8d47a91b79e4eb93ec15ffb6d49590",
+    "stas_2025_supp86_puc1860313_excerpts.txt": "f66ebb7800cc9816cc682f0d9f5f6a0fe45c4c0169f5693aa4a14dd5675afe85"
+  }
+}

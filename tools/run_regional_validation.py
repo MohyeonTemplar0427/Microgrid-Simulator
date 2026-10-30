@@ -65,6 +65,7 @@ PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
                  ("aep_ohio", "residential", "RS"), ("aep_ohio", "commercial", "GS-1"))
 BGE_CASES = (("bge_maryland", "residential", "R"), ("bge_maryland", "commercial", "G"))
 PENN_POWER_CASES = (("firstenergy_pa_penn_power", "residential", "RS"), ("firstenergy_pa_penn_power", "commercial", "GS-S"))
+DUQUESNE_CASES = (("duquesne_light_pennsylvania", "residential", "RS"), ("duquesne_light_pennsylvania", "commercial", "GS"))
 PENELEC_CASES = (("firstenergy_pa_penelec", "residential", "RS"), ("firstenergy_pa_penelec", "commercial", "GS-S"))
 MET_ED_CASES = (("firstenergy_pa_met_ed", "residential", "RS"), ("firstenergy_pa_met_ed", "commercial", "GS-S"))
 ROCKLAND_CASES = (("rockland_electric_new_jersey", "residential", "SC1"), ("rockland_electric_new_jersey", "commercial", "SC2"))
@@ -76,6 +77,7 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "duquesne_light_pennsylvania": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "firstenergy_pa_penn_power": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "firstenergy_pa_penelec": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "firstenergy_pa_met_ed": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -98,7 +100,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -232,7 +234,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2026-09-01","2026-09-30"
     if utility == "rockland_electric_new_jersey" and custom is None and period == "monthly":
         start,end="2026-10-01","2026-10-31"
-    if utility in ("firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power") and custom is None and period == "monthly":
+    if utility in ("duquesne_light_pennsylvania", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power") and custom is None and period == "monthly":
         start,end="2026-06-01","2026-06-30"
     if utility == "dte_electric" and plan == "D3.11" and period == "annual" and custom is None:
         raise ValueError("DTE D3.11 is verified from June 2025; select monthly or explicit June–December custom dates, not a full-year2025 claim.")
@@ -246,6 +248,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
+    if utility=="duquesne_light_pennsylvania" and account["tariff"]=="GS":
+        account["gs_history_through_month"]=adapter(utility).history_through(start)
     if utility in ("firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
         history_through=adapter(utility).history_through
         if utility=="firstenergy_pa_penelec":
@@ -329,7 +333,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
             r["name"] += " CIEP"
     r["operating_contract"].update(interconnection_confirmed=True, grid_charging_confirmed=True,
         reference="Explicit hypothetical utility-approved non-export PV/storage account; no export compensation assumed")
-    if utility.startswith("firstenergy_"):
+    if utility.startswith("firstenergy_") or utility=="duquesne_light_pennsylvania":
         r["operating_contract"].update(grid_charging_confirmed=False,renewable_only_charging=True)
     r["solar"].update(tilt_degrees=30., azimuth_degrees=180., system_losses_fraction=.14,
                        inverter_efficiency=.96)
@@ -479,6 +483,23 @@ def attach_weather(app, request, inputs):
 def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
                        allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if utility=="duquesne_light_pennsylvania":
+        from src.billing.duquesne_pa import cycle_review
+        cycle_review(account,index);m=bill.get("metrics",{});r=m.get("rates",{})
+        require(bill.get("is_complete_bill") is True and bill.get("excluded_components")==[]
+                and bill.get("rate_evidence_status")=="verified" and bill.get("assumption_model") is None
+                and bill.get("rate_assumptions")==[] and m.get("rounded_cash_optimum_claimed") is False
+                and m.get("quantity_basis")=="raw_interval_energy_no_unsourced_meter_rounding"
+                and m.get("additional_grt_percentage_applied") is False
+                and m.get("source_versions")==r.get("source_versions"),"Duquesne ordinary component/source/quantity scope differs")
+        require(abs(bill["unrounded_lines"]["distribution_dsic"]-m["dsic_basis_usd"]*r["dsic_fraction"])<1e-8
+                and abs(bill["unrounded_lines"]["distribution_state_tax_adjustment"]-m["stas_distribution_basis_usd"]*r["stas_distribution_fraction"])<1e-8,
+                "Duquesne distribution DSIC/STAS bases do not reconcile")
+        if account["tariff"]=="GS":
+            require(m.get("minimum_charge_domain")=="restricted_inactive_GS_ambiguity_bound_no_minimum_added"
+                    and m.get("raw_import_kwh",1001.)<=1000.+1e-7 and m.get("actual_15_minute_peak_kw",6.)<=5.+1e-7,
+                    "Duquesne GS exceeded independently confirmed non-demand/minimum scope")
+        return "complete_utility_bill",[]
     if utility in ("firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
         model=adapter(utility);JANUARY_GS_EXCLUSION=model.JANUARY_GS_EXCLUSION;cycle_review=model.cycle_review;rates_on=model.rates_on
         expected=cycle_review(account,index);r=rates_on(expected["service_start"],account["tariff"]);m=bill.get("metrics",{});res=account["tariff"]=="RS"

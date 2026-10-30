@@ -1,0 +1,38 @@
+SOURCE: https://www.puc.pa.gov/pcdocs/1857627.pdf
+PDF PAGE: 14 (1-based)
+SHA256 ORIGINAL: 27fa08bbc5d0bbc2af0b67795555abbaa2baebff5ee11318960c6be4ef650238
+
+DUQUESNE LIGHT COMPANY SUPPLEMENT NO. 84 
+TO ELECTRIC – PA. P.U.C. NO. 25 
+SEVENTH REVISED PAGE NO. 93 
+CANCELLING SIXTH REVISED PAGE NO. 93 
+(D) – Indicates Decrease
+ISSUED:  DECEMBER 2, 2024 EFFECTIVE:  JANUARY 1, 2025 
+STANDARD CONTRACT RIDERS - (Continued) 
+RIDER NO. 5 – UNIVERSAL SERVICE CHARGE 
+(Applicable to Rate Schedules RS, RH and RA) 
+APPLICABILITY 
+The Universal Service Charge (“USC”) is instituted as a cost recovery mechanism to recover the costs incurred 
+by the Company to provide its Commission approved Universal Service and Energy Conservation Plan.  The USC 
+shall be applicable to all residential customers who take distribution service under Rate Schedules RS, RH and RA 
+except for residential customers in the Company’s Customer Assistance Program (“CAP”).  The USC provides for 
+the recovery of the costs, excluding internal administrative costs, associated with universal service programs 
+provided by the Company to residential customers.  The USC shall be determined to the nearest one-thousandth 
+of one (1) cent per kilowatt-hour (“kWh”) in accordance with the formula set forth below and shall be applied to 
+all kilowatt-hours delivered during the billing month.  The USC is a non-bypassable charge. 
+RATE 
+In addition to the charges provided in this Tariff, an amount of 1.549 cents per kilowatt-hour shall be added to the 
+distribution energy charges per kilowatt-hour of each applicable rate schedule to determine the total per kilowatt-
+hour charge.  The USC shall not be applicable to customers enrolled in the Company’s CAP. 
+CALCULATION OF CHARGE 
+USC = [ (USc – Cr – E) / SRes ] * 100 * [1 / (1 – T) ] 
+Where: USC = The charge, in cents per kilowatt -hour, to be applied to each kilowatt -hour delivered to all 
+applicable non-CAP customers who take distribution service under the residential retail rate 
+schedules under this Tariff. 
+USc = Universal Service Program costs, which are the estimated direct and external administrative 
+costs to be incurred by the Company to provide Universal Service to customers for the USC 
+Computational Year.  Such costs shall include, but are not limited to, preparation of the Needs 
+Assessment, Universal Service Plan development, Impact Evaluation and educational 
+materials.  Universal Service Programs include the following programs which may change 
+from time to time: 
+(D)

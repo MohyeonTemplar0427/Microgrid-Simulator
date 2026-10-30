@@ -1,0 +1,156 @@
+{
+  "utility": "duquesne_light_pennsylvania",
+  "retrieved_date": "2026-10-29",
+  "scope": "RS solely residential and Company-retained non-demand GS; fixed DSS plus AppendixA transmission; matching complete calendar cycles; state-onlytax; non-export",
+  "coverage": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-10-31"
+    }
+  ],
+  "component_ledgers": {
+    "delivery": "delivery/rates_by_window.json",
+    "supply": "supply/rates_by_window.json",
+    "rules": "rules/research.md",
+    "tax": "rules/tax_sources.json"
+  },
+  "evidence_files": [
+    {
+      "path": "delivery/base_supp85.txt",
+      "sha256": "a405b4ff5135d8014ebd8ad19d09623d7cb130f358f81ab0c15e460d438c2164"
+    },
+    {
+      "path": "delivery/base_supp85_replacement.txt",
+      "sha256": "84c07dfe344f09e674f84dfa6593ae024b773cb208f1af157e952448eed03f7d"
+    },
+    {
+      "path": "delivery/dsic_2025q1_supp87.txt",
+      "sha256": "5e4debcd9d11b5bf2aafa665cd85c080cd19449dc2e578800c8f2fca21db9b67"
+    },
+    {
+      "path": "delivery/dsic_2025q2_supp90.txt",
+      "sha256": "94682ed0924c1c564d3bc00833804ae6820883a3f2432f72d75d353333f54753"
+    },
+    {
+      "path": "delivery/dsic_2026q1_supp99.txt",
+      "sha256": "caeabea599d8c8bf07de6a4a6b1d5283e153f77c8e52ddad3b98a4843b12a7f0"
+    },
+    {
+      "path": "delivery/dsic_2026q2_supp101.txt",
+      "sha256": "2123888756eb8daa848a366099d224479b79aa3dd77ecaf034923c8c8ffd241d"
+    },
+    {
+      "path": "delivery/dsic_2026q3_supp107.txt",
+      "sha256": "5fbbb57d7c62a96033f0096041ef3ddc2c8efe6ff29280170bde7421cb585939"
+    },
+    {
+      "path": "delivery/dsic_2026q4_supp110.txt",
+      "sha256": "95b0d5b91956a2944c7753f4e6310025ae003ad171e28ac6973f09bfa8e3b59c"
+    },
+    {
+      "path": "delivery/eec_2024_supp76.txt",
+      "sha256": "2e6fbd6de73012aa62ec21fe27eb18cf4f9fc58615706068a534779ae5173f95"
+    },
+    {
+      "path": "delivery/eec_2025_supp93.txt",
+      "sha256": "c42add370dcc106976975a1ea6ded0ddc47ffe1d30a2d636aa8b20a9f42207ca"
+    },
+    {
+      "path": "delivery/eec_2026_final.txt",
+      "sha256": "a24ee80fba3da779a9301f7d2d786f02b3e97482f749c1192a1e2e1dec173a10"
+    },
+    {
+      "path": "delivery/eec_2026_supp104.txt",
+      "sha256": "8e2a72272ef145e5393b1cc1362f8277e5da1b15b868d5eed0f46f306aca8637"
+    },
+    {
+      "path": "delivery/rates_by_window.json",
+      "sha256": "92ea33677cbdfd3139fc436ce0e0e17dcd3718c65ada9cb29075d63d3b2a0987"
+    },
+    {
+      "path": "delivery/research.md",
+      "sha256": "a85e77f053ba351b12f8e24487b020431f85a8277f75b75333b7db7e37a8d17e"
+    },
+    {
+      "path": "delivery/rmes_2022_supp40.txt",
+      "sha256": "0beea5a8fad6fd23f84cf9d92733d098f63385fdeb9abea5b6043f181a5e2c36"
+    },
+    {
+      "path": "delivery/smr_2023_supp55.txt",
+      "sha256": "9b537efd3f438bf6730d1701512db10b0f015385e3f225a63b7eb948ad9ba55c"
+    },
+    {
+      "path": "delivery/sources.json",
+      "sha256": "b840ef29cdfd6731afa018c92142a22150990708abceb2c50b94067f7160c8e8"
+    },
+    {
+      "path": "delivery/usc_2025_supp84.txt",
+      "sha256": "a73e7fda457bfdef0513007b57c42376e6ad8586607e2f7a852bf6b317b55ed9"
+    },
+    {
+      "path": "delivery/usc_2026_supp97.txt",
+      "sha256": "4bd6da5b63a1ee1711592f961665afe3a40359c48b363dc0691f0be9ff36bf6c"
+    },
+    {
+      "path": "rules/research.md",
+      "sha256": "6838af00801d6f99cc60391435fd96fbe3926f7e9252d04959a8c5c6622121c5"
+    },
+    {
+      "path": "rules/stas_2025_approval_puc1861038_excerpts.txt",
+      "sha256": "049c842d267615161ec7205212b06007ac8d47a91b79e4eb93ec15ffb6d49590"
+    },
+    {
+      "path": "rules/stas_2025_sources.json",
+      "sha256": "1b90eaa5264192816b405a64cfdc3c29a16c2926239b0faa4ddc4c9606088a14"
+    },
+    {
+      "path": "rules/stas_2025_supp86_puc1860313_excerpts.txt",
+      "sha256": "f66ebb7800cc9816cc682f0d9f5f6a0fe45c4c0169f5693aa4a14dd5675afe85"
+    },
+    {
+      "path": "rules/tax_sources.json",
+      "sha256": "0def76969e7449f955b1b9408013ecacad13d4818b478fab1a457b35b580af58"
+    },
+    {
+      "path": "supply/dss_rules_and_basis.txt",
+      "sha256": "a4bab6948b0d2ed62eb5f730c61026e471656b2455f568e436d9006919301b00"
+    },
+    {
+      "path": "supply/puc1851302_p36.txt",
+      "sha256": "7debe74dd1a7cd9506128a5e64d59f688eb8802d101131802941d4496621e359"
+    },
+    {
+      "path": "supply/puc1851302_p37.txt",
+      "sha256": "c4b7b01d9696208259a3809350432b4fa816cf38ef70a71fdfc5cbc30cb80a6d"
+    },
+    {
+      "path": "supply/puc1855715_approval.txt",
+      "sha256": "bea9cbca07124c65d510e129f2ec89e9eb7e445b988e8134bf0bbde7901866a2"
+    },
+    {
+      "path": "supply/puc1859015_p76.txt",
+      "sha256": "1d24169e232d77382deac77f32340a22b59fba07fba5aa1d0befedde04aea218"
+    },
+    {
+      "path": "supply/rates_by_window.json",
+      "sha256": "652d8c2f4c2540b11c7741949768b886897e6f5e2e93c7d336c64992f79c8eb7"
+    },
+    {
+      "path": "supply/tariff110_dss_values.txt",
+      "sha256": "b88776c55157bd99e4eff363d351ab892327f949f41ae06dc5f9822df9d31901"
+    },
+    {
+      "path": "supply/tariff88_2025_values.txt",
+      "sha256": "34a3306ac233b092612f1ca1077793334308d7e8ced11e3f15ed711573c5a81a"
+    },
+    {
+      "path": "supply/transmission_2025_2026_values.txt",
+      "sha256": "a4ab92e93aea73e6646006493d46f9419df2cb872d9a0e4dafc3f40e84b27f98"
+    }
+  ],
+  "limitations": [
+    "GS low-import minimum-charge treatment remains unverified; accepted cases restricted to separately confirmed inactive domain without forced purchases or invented minimum.",
+    "Some later supply prices retained as primary cached PDF text; direct utility binaries blocked by Incapsula, recorded separately. Original PUC copies corroborate all delivery and preJune2025 supply components.",
+    "No site/customer calibration or partial-cycle/export settlement claims."
+  ]
+}

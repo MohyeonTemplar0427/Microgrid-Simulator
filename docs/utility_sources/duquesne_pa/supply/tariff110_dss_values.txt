@@ -1,0 +1,11 @@
+Duquesne Light Tariff25 supplement110; retained filed Rider8 tables.
+Source: https://www.duquesnelight.com/docs/default-source/default-document-library/tariff-no-25-%28110%29-effective-10-01-2026---rider-no-22---distribution-system-improvement-charge-%28dsic%29-quarterly-filing.pdf
+Retrieval: web-readable full PDF text; original PDF binary is blocked by Incapsula for direct CLI downloads. Hash this extraction separately from a PDF.
+PDF page labels (zero-based): P107 and P108. Printed pages98A and98B, supplement102, issued2026-04-01 effective2026-06-01.
+Standard DSS supply charge, cents/kWh:
+Period                           RS        GS smallC&I
+2025-06-01 through2025-11-30       9.7093    8.4471
+2025-12-01 through2026-05-31      11.0275    9.7016
+2026-06-01 through2026-11-30      10.9568    9.6754
+Future rows are X.XXXX placeholders, not rates.
+GS row: Small commercial and industrial customers with monthly metered demand less than 25 kW; Rate Schedules GS/GM and GMH.

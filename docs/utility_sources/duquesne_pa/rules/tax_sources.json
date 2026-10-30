@@ -1,0 +1,61 @@
+{
+  "verified_at": "2026-10-29",
+  "source_records": [
+    {
+      "id": "pa_sales_tax",
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax",
+      "status": 200,
+      "sha256": "fe3e59a15fe723d9d36f12d7c2d9eaa2c969be8186dccb8e8362303b69384982",
+      "bytes": 451784,
+      "retrieved_at": "2026-10-30T03:31:57.959486+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/pa_sales_tax.html"
+    },
+    {
+      "id": "pa_residential_utility_exemption",
+      "url": "https://revenue-pa.custhelp.com/app/answers/detail/a_id/3701",
+      "status": 403,
+      "sha256": "153fd9ad4382ad149f13f08ae6c99fe6b756cc2afae3389b6e485da2b195c258",
+      "bytes": 3988,
+      "retrieved_at": "2026-10-30T03:31:56.992292+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/pa_residential_utility_exemption.html"
+    },
+    {
+      "id": "pa_taxable_purchase_price",
+      "url": "https://www.pacodeandbulletin.gov/Display/pacode?d=reduce&file=/secure/pacode/data/061/chapter33/s33.2.html",
+      "status": 200,
+      "sha256": "c3b58efa77412eacae9999eb8714cfd32819a5713c28d498ddc17d57051aa834",
+      "bytes": 42485,
+      "retrieved_at": "2026-10-30T03:31:57.483208+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/pa_taxable_purchase_price.html"
+    },
+    {
+      "id": "pa_local_sales_tax",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter60/s60.16.html",
+      "status": 200,
+      "sha256": "47496228fd8ff4579c501052a82b0bab3b5afd9917cc53aaa5ec558dce7b23f7",
+      "bytes": 36720,
+      "retrieved_at": "2026-10-30T03:31:57.483318+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/pa_local_sales_tax.html"
+    },
+    {
+      "id": "pa_gross_receipts_tax",
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/corporation-taxes/gross-receipts-tax",
+      "status": 200,
+      "sha256": "b01cd0492eea1fec280e39928b6f1cda433c351099372753b7060f1081d22963",
+      "bytes": 386753,
+      "retrieved_at": "2026-10-30T03:31:57.666098+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/pa_gross_receipts_tax.html"
+    },
+    {
+      "id": "pa_residential_rule",
+      "url": "https://www.pacodeandbulletin.gov/Display/pacode?d=reduce&file=/secure/pacode/data/061/chapter32/s32.25.html",
+      "status": 200,
+      "sha256": "0ad15ddb062510d62bb8d561c6025fdcc709da51efdb3d3933cd51dc51147e24",
+      "bytes": 44008,
+      "retrieved_at": "2026-10-30T03:48:13.237810+00:00",
+      "local_path": ".cache/duquesne_pa/sources/rules/pa_residential_rule.html"
+    }
+  ],
+  "notes": "HTTP403 FAQ payload is blocked evidence, not verified source content. Its cached official web text was separately inspected; Code32.25 is the directly downloaded legal source. Other HTTP200 HTML files were checked for relevant content.",
+  "research_notes_sha256": "6838af00801d6f99cc60391435fd96fbe3926f7e9252d04959a8c5c6622121c5"
+}

@@ -1,0 +1,81 @@
+SOURCE: https://www.puc.pa.gov/pcdocs/1731394.pdf
+PDF PAGE: 6 (1-based)
+SHA256 ORIGINAL: c7dc3bc76a94abab1e9da35c61168d7c57874b291e87cc2bd527f102e3b906ca
+
+DUQUESNE LIGHT COMPANY SUPPLEMENT NO. 40 
+ TO ELECTRIC – PA. P.U.C. NO. 25 
+ THIRD REVISED PAGE NO. 88 
+ CANCELLING SECOND REVISED PAGE NO. 88 
+(D) – Indicates Decrease 
+ISSUED:  JANUARY 21, 2022 EFFECTIVE:  FEBRUARY 1, 2022 
+STANDARD CONTRACT RIDERS - (Continued) 
+ 
+ 
+RIDER NO. 1 – RETAIL MARKET ENHANCEMENT SURCHARGE 
+ 
+ 
+(Applicable to all Rates) 
+ 
+ 
+The Retail Market Enhancement Surcharge (“RMES”) is instituted as a cost recovery mechanism to recover all 
+eligible costs incurred by the Company associated with implementing Commission -mandated activities, 
+programs, projects, services etc. to enhance the competitive energy market in Pennsylvania.  As an  example, 
+some of the mandated activities may be found in, but are not limited to, Commission Order’s at Docket No. I -
+2011-2237952, Docket No. M-2013-2355751, and Docket No. M-2014-2401345.  The RMES shall remain in effect to 
+recover all expenses associated with Commission-mandated consumer education and retail market enhancement 
+activities that are directed by the Commission to be recovered through the RMES or other Commission-approved 
+mechanism and that are not otherwise being recovered in base rates.  Co nsumer education activities shall also 
+include those expenses to educate low -income and Customer Assistance Program (“CAP”) customers about 
+shopping in the retail market.  The RMES will be recomputed annually and filed, to be effective June 1 of each 
+year, unless the new rate is such a small change as to warrant no change in rates.  The RMES shall be applied to 
+all customers’ bills.  The RMES process will reconcile actual expense with revenue billed in accordance with this 
+Rider. 
+ 
+ 
+MONTHLY RETAIL MARKET ENHANCEMENT SURCHARGE RATES 
+ 
+ 
+ 
+Tariff Rate Class 
+Monthly RME 
+Surcharge 
+per Customer 
+(cents) 
+Rate RS 0.00 
+Rate RH 0.00 
+Rate RA 0.00 
+Rate GS 0.00 
+Rate GM < 25 kW 0.00 
+Rate GM > 25 kW 0.00 
+Rate GMH < 25 kW 0.00 
+Rate GMH > 25 kW 0.00 
+Rates GL, GLH, L and HVPS 0.00 
+Rates AL, SE, UMS, SM, SH and PAL 0.00 
+ 
+ 
+CALCULATION OF RATES 
+ 
+The RMES, calculated independently for each customer class in this Tariff, shall be applied to all customers served 
+under the Tariff.  The RMES shall be determined in cents per month in accordance with the formula set forth 
+below and shall be applied to all customers served during any part of a billing month: 
+ 
+RMES = [  ( ( RME – e ) / ( C * 12 ) * 100 ) ] * [ 1 / ( 1 – T ) ] 
+ 
+Where RMES = Retail Market Enhancement Surcharge, a fixed charge in cents per month, to be billed to 
+each customer served under the applicable Tariff rate class. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(D) 
+(D) 
+(D) 
+(D) 
+(D) 
+(D) 
+(D) 
+(D) 
+(D) 
