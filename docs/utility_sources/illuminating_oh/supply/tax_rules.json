@@ -1,0 +1,49 @@
+{
+  "reviewed_on": "2026-10-31",
+  "coverage": [
+    "2025-01-01",
+    "2026-10-31"
+  ],
+  "scope": "Ordinary metered RS/GS non-self-assessor; no local/franchise charge and no tax exemption/special contract",
+  "skt": {
+    "tariff_sheet": 92,
+    "tariff_pdf_page_2026": 90,
+    "rates_usd_per_kwh": [
+      ".00465",
+      ".00419",
+      ".00363"
+    ],
+    "cat_rate": ".0026",
+    "cat_factor": "1 / (1 - .0026)",
+    "thirty_calendar_days": {
+      "thresholds_kwh": [
+        2000,
+        15000
+      ]
+    },
+    "other_calendar_days": {
+      "thresholds_kwh": [
+        "67 * calendar_days",
+        "500 * calendar_days"
+      ]
+    },
+    "day_count": "Local calendar measurement days; DST elapsed-hours do not change local day count",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-5727.81",
+    "statute_effective": "2023-10-03",
+    "reason": "Sheet92 explicitly incorporates compliance with ORC5727.81, whose subsectionA expressly specifies daily average thresholds for non30-day measurements."
+  },
+  "cat": {
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-5751.03",
+    "effective": "2023-10-03",
+    "rate": ".0026",
+    "application": "Apply only SKT explicit gross-up; other filed dollar rates already incorporate their applicable CAT. No generic whole-bill CAT adder."
+  },
+  "sales_tax": {
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-5739.02",
+    "section": "B(7)",
+    "current_effective": "2025-09-30",
+    "earlier_official": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/57/5739/5739.02/10-3-2023/5739.02-10-3-2023.pdf",
+    "rule": "Sales of electricity delivered through wires are exempt; no generic Ohio retail sales tax percentage."
+  },
+  "unverified": "No municipal/franchise-specific rate was verified; require independently confirmed ordinary jurisdiction without local adder. Federal/state self-assessing, high-use and special exemptions excluded."
+}

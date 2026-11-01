@@ -1,0 +1,131 @@
+Original URL: https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2026-Electric-Service.pdf
+Original PDF SHA-256: 99f7ef25320bdc39050b44e3309ed12e4bf00f3632df5f4dba4464310adb8efa
+Retrieved: 2026-10-31
+PDF pages (one-based): [5, 17, 91, 92]
+
+
+PDF PAGE 5
+The Cleveland Electric Illuminating Company Original Sheet 3
+Cleveland, Ohio P.U.C.O. No. 13 Page 1 of 1
+DEFINITION OF TERRITORY
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, before
+The Public Utilities Commission of Ohio
+Issued by:  Torrence L. Hinton, President Effective:  March 1, 2026
+COMPANY'S TERRITORY:
+The term "Company's Territory" shall be deemed to mean and include the territory served by the
+Company's distribution system in Ashtabula, Cuyahoga, Geauga, Lake, Lorain, Medina, Portage, Summit
+and Trumbull Counties.
+Further information concerning specific cities and townships can be found at the PUCO website:
+http://www.puc.state.oh.us/pucogis/newcntymaps/elcnty.html
+
+PDF PAGE 17
+The Cleveland Electric Illuminating Company Sheet 4
+Cleveland, Ohio P.U.C.O. No. 13 3rd Revised Page 12 of 23
+ELECTRIC SERVICE REGULATIONS
+Filed pursuant to Orders dated  October 15, 2024, and November 19, 2025 and February 18, 2026, in Case Nos.
+24-0055-EL-ATA, and 24-0468-EL-AIR, respectively, before
+The Public Utilities Commission of Ohio
+Issued by:  Torrence L. Hinton, President Effective:  March 1, 2026
+C. Resale:
+1. Electric service is provided for the sole use of the customer, who shall not sell any of such
+service to any other person, or permit any other person to use the same, without the written
+consent of the Company.
+2. The above provision does not apply to service provided to a landlord for resal e or redistribution
+to tenants where such resale or redistribution takes place only upon property owned by the
+landlord and where the landlord is not otherwise operating as a public utility.
+3. In the event that a landlord chooses to resell or redistribute electric service pursuant to C.2., the
+landlord shall: (a) provide notice in its leases (in all capital letters and in a minimum font larger
+than the remainder of the lease language) to tenants that by signing the lease, the tenant
+agrees that the landlord can secure and resell electricity and the tenant is no longer under the
+Commission’s jurisdiction and loses the rights under law associated with being under the
+Commission’s jurisdiction; (b) ensure that the landlord’s charges for resale of electricity to each
+tenant will be equal to or lower than the total bill for a similarly situated customer served by the
+Company’s standard service offer; and (c) follow the same disconnection standards applicable
+to landlords under Ohio Adm. Code 4901:1-18 when engaging in the disconnection of electric
+service to a tenant for non-payment of charges related to electric usage.
+D. Parallel Operation:  The Company shall provide service in parallel with a customer’s generating
+facilities if the customer has adequate protective and regulating equipment and has sufficient
+trained personnel to perform the necessary operations, and further, at the Company’s option, if the
+customer provides electronic communications with the offices of the Company's load dispatcher.
+Net Energy Metering Rider customers shall not be required to provide electronic communications or
+install a telephone line.  The Company will not furnish service in parallel with a customer's
+generating facilities when, in the opinion of the Company, such parallel operation may create a
+hazard or disturb, impair or interfere with the Company's service to other customers .
+E. Regulation Of Power Factor:  The Company may require the customer to maintain a power factor
+in the range of 85% to 100% for secondary, primary and subtransmission service and 90% to 100%
+for transmission service, coincident with the customer’s maximum monthly peak demand and to
+provide, at the customer’s expense, any corrective equipment necessary in order to do so.  The
+Company may inspect the customer’s installed equipment and/or place instruments on the
+premises of the customer in order to determine compliance with this requirement, as deemed
+appropriate by the Company.  The Company may charge the customer the Company’s installation
+cost incurred for corrective devices necessary for compliance with this provision.  The Company is
+under no obligation to serve, or to continue to serve, a customer who does not maintain a power
+factor consistent with the parameters set forth in this provision.
+F. Unbalanced Loads:  The customer shall not use three phase electric service in such a manner as
+to impose an unreasonable unbalance between phases.
+G. Interference:  The Company reserves the right to discontinue or refuse service to any customer if
+the service is used in a manner that disturbs or impairs the operation of the Company's system, or
+interferes with the service to other customers.  When such interference occurs due to the use of
+any apparatus installed upon a customer's premises, the customer must either remove said
+apparatus, or provide the equipment necessary to alleviate such interference.  The Company may
+discontinue or refuse service until such adverse conditions are alleviated.
+
+PDF PAGE 91
+The Cleveland Electric Illuminating Company Original Sheet No. 93
+Cleveland, Ohio P.U.C.O. No. 11 2nd Revised Page 1 of 2
+Rider No. 17 Net Energy Metering Rider
+Availability
+Pursuant to Section 4928.01(A)(30)-(32) of the Revised Code (Net Metering), a customer-generator
+is a customer of the Company that is a user of a net metering system.  To qualify for a net metering
+system, the customer-generator facility must use as its fuel either solar, wind, biomass, landfill gas,
+or hydropower, or use a microturbine or a fuel cell which is located on the customer-generator’s
+premises and operates in parallel with the Company’s transmission and distribution systems and is
+intended primarily to offset part or all of the customer’s requirements for electricity.  A net metering
+system used by a customer-generator shall meet all applicable safety and performance standards
+established by the National Electrical Code, the Institute of Electrical and Electronic Engineers,
+Underwriters Laboratories and Rules 4901:1-22-03 and 4901:1-22-04 of the Ohio Administrative
+Code.
+Metering
+In order to receive service under this Rider, Net Metering must be accomplished using a single meter
+capable of registering the flow of electricity in each direction.  If the existing electrical meter in
+service at the customer’s facility is not capable of measuring the flow of electricity in each direction,
+the Company will, upon written request by the customer-generator, acquire, install, maintain, and
+read an approved meter that is capable of measuring electricity in each direction.  The customer-
+generator will pay the Company all expenses involved in either modifying the existing meter or
+providing a new meter capable of registering the flow of electricity in each direction.  Maintenance
+of the meter will be the responsibility of the Company, which will own the meter.  The Company, at
+its own expense and with written consent of the customer-generator, may install additional meters to
+monitor the flow of electricity.  Maintenance of the additional meter(s) will be the responsibility of
+the Company, which will own the meter(s).
+Billing
+The provisions of this rider will be applied to the rate schedule to which the customer would be
+assigned if that customer were not a customer-generator. The customer-generator will be billed or
+credited charges and applicable riders as measured by the meter.  Measured demand specified in the
+appropriate tariff shall be based on the peak demand measured as supplied by the Company only,
+flowing from the Company’s system to the customer-generator’s facility.  If the Company supplies
+more kilowatt-hours of electricity than the customer-generator facility feeds back to the Company’s
+system during the billing period, all energy charges of the appropriate rate schedule shall be applied
+to the net kilowatt-hours of electricity that the Company supplied.  If the customer-generator facility
+feeds more kilowatt-hours of electricity back to the system than the Company supplies to the
+customer-generator facility during the billing period, energy charges of the Generation Service Rider
+(GEN) shall be applied to the net kilowatt-hours of electricity that the customer-generator facility
+supplied, which shall be allowed to accumulate as a bill credit until netted against the customer
+generator’s bill, or until the customer-generator requests in writing a refund that amounts to, but is no
+greater than, an annual true-up of accumulated credits over a twelve-month period.
+Filed pursuant to Order dated October 7, 2009, in Case No. 09-843-EL-ATA, before
+The Public Utilities Commission of Ohio
+Issued by:  Richard R. Grigg, President Effective:  October 27, 2009
+
+PDF PAGE 92
+The Cleveland Electric Illuminating Company Original Sheet No. 93
+Cleveland, Ohio P.U.C.O. No. 11 Page 2 of 2
+Net Energy Metering Rider
+Application
+Customer-generators seeking to receive service under the provisions of this rider must submit a
+written application to the Company demonstrating compliance with the Net Energy Metering Rider
+provisions and quantifying the total rated generating capacity of the customer-generator facility.
+Interconnection
+The Company’s Distribution Interconnection Tariff shall apply to service under this rider.
+Filed pursuant to Order dated July 19, 2000, in Case No. 99-1212-EL-ETP before
+The Public Utilities Commission of Ohio
+Issued by H. Peter Burg, President Effective: January 1, 2003

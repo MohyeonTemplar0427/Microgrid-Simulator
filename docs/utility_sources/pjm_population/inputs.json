@@ -1,6 +1,6 @@
 {
-  "format_version": 1,
-  "research_date": "2026-10-25",
+  "format_version": 2,
+  "research_date": "2026-10-31",
   "purpose": "Indicative population footprint; not verified tariff-eligible people or a spatial population intersection",
   "eia": {
     "url": "https://www.eia.gov/electricity/data/eia861/zip/f8612024.zip",
@@ -22,13 +22,13 @@
       "Energy-only supplier rows excluded to avoid counting the same delivery account twice.",
       "EIA utility99999 BA/state adjustments retained in the denominator, including negative adjustments; no numerator allocation inferred.",
       "Nine nonresidential-only rows marked dot for residential have residential0 validated against other-sector and total customer identities. Source notation retained.",
-      "2024 FirstEnergyPA company-level counts cannot identify the WestPenn district; those rows are not in the numerator."
+      "All four FirstEnergyPA rate districts now have executable billing; merged66101 PArows included once. NYrows excluded. Earlier WestPenn district inference retained only in archived baseline."
     ]
   },
   "pjm": {
     "url": "https://www.pjm.com/m/About-PJM",
     "reported_population": 67000000,
-    "vintage": "PJM public rounded headline verified2026-10-25",
+    "vintage": "PJM public rounded headline reverified2026-10-31",
     "supporting_text": "PJM operates the electric grid that serves 67 million people across 13 states and the District of Columbia."
   },
   "household_size": {
@@ -65,6 +65,12 @@
         "persons": 2.44,
         "url": "https://www.census.gov/quickfacts/fact/table/NC/HSD410224",
         "supporting_text": "Persons per household, 2020-2024: 2.44"
+      },
+      "MD": {
+        "persons": 2.57,
+        "url": "https://www.census.gov/quickfacts/fact/table/MD/HSD410224",
+        "supporting_text": "Persons per household,2020-2024:2.57",
+        "verified_date": "2026-10-31"
       }
     }
   },
@@ -120,6 +126,129 @@
         "dominion_energy_virginia",
         "dominion_energy_north_carolina"
       ]
+    },
+    {
+      "utility_id": 963,
+      "label": "Atlantic City Electric",
+      "states": [
+        "NJ"
+      ],
+      "repository_keys": [
+        "atlantic_city_electric_new_jersey"
+      ]
+    },
+    {
+      "utility_id": 1167,
+      "label": "Baltimore Gas & Electric",
+      "states": [
+        "MD"
+      ],
+      "repository_keys": [
+        "bge_maryland"
+      ]
+    },
+    {
+      "utility_id": 5027,
+      "label": "Delmarva Power Maryland",
+      "states": [
+        "MD"
+      ],
+      "repository_keys": [
+        "delmarva_maryland"
+      ]
+    },
+    {
+      "utility_id": 5487,
+      "label": "Duquesne Light",
+      "states": [
+        "PA"
+      ],
+      "repository_keys": [
+        "duquesne_light_pennsylvania"
+      ]
+    },
+    {
+      "utility_id": 9726,
+      "label": "JCP&L",
+      "states": [
+        "NJ"
+      ],
+      "repository_keys": [
+        "jcpl_new_jersey"
+      ]
+    },
+    {
+      "utility_id": 14006,
+      "label": "AEP Ohio (Ohio Power)",
+      "states": [
+        "OH"
+      ],
+      "repository_keys": [
+        "aep_ohio"
+      ]
+    },
+    {
+      "utility_id": 14715,
+      "label": "PPL Electric Utilities",
+      "states": [
+        "PA"
+      ],
+      "repository_keys": [
+        "ppl_electric_pennsylvania"
+      ]
+    },
+    {
+      "utility_id": 15263,
+      "label": "Potomac Edison Maryland",
+      "states": [
+        "MD"
+      ],
+      "repository_keys": [
+        "potomac_edison_maryland"
+      ]
+    },
+    {
+      "utility_id": 15270,
+      "label": "Pepco Maryland",
+      "states": [
+        "MD"
+      ],
+      "repository_keys": [
+        "pepco_maryland"
+      ]
+    },
+    {
+      "utility_id": 16213,
+      "label": "Rockland Electric New Jersey",
+      "states": [
+        "NJ"
+      ],
+      "repository_keys": [
+        "rockland_electric_new_jersey"
+      ]
+    },
+    {
+      "utility_id": 66101,
+      "label": "FirstEnergy Pennsylvania: all four PA districts",
+      "states": [
+        "PA"
+      ],
+      "repository_keys": [
+        "firstenergy_pa_met_ed",
+        "firstenergy_pa_penelec",
+        "firstenergy_pa_penn_power",
+        "firstenergy_pa_west_penn"
+      ]
+    },
+    {
+      "utility_id": 3755,
+      "label": "The Illuminating Company (CEI)",
+      "states": [
+        "OH"
+      ],
+      "repository_keys": [
+        "firstenergy_ohio_illuminating"
+      ]
     }
   ],
   "west_penn": {
@@ -133,7 +262,9 @@
     "fraction_rounding_half_width": 0.0005,
     "assumption": "Published17.8% is assumed rounded to nearest0.1percentage point. Infer total district accounts as113656/0.178; roundingbounds are not broader population uncertainty.",
     "supporting_text": "West Penn Power9/25/24: Residential switching customers113,656;17.8% of customers;17.6% of load.",
-    "excluded_merged_utility_id": 66101
+    "excluded_merged_utility_id": 66101,
+    "counted_currently": false,
+    "current_reason": "Superseded for currentnumerator by allfour implementedPA districts; legacyestimate retained only for historicalbaseline."
   },
   "sensitivity": {
     "household_occupancy_relative_change": 0.1,
@@ -148,5 +279,63 @@
     "This is the geography of implemented utilities, not the population on supported tariffs, supply arrangements, solar programs or verified rate dates.",
     "No corporate gas or unrelated affiliate territories counted.",
     "Alliant Iowa and other MISO/California utilities add no PJM numerator."
-  ]
+  ],
+  "implemented_repository_keys": [
+    "aep_ohio",
+    "atlantic_city_electric_new_jersey",
+    "bge_maryland",
+    "comed",
+    "delmarva_maryland",
+    "dominion_energy_north_carolina",
+    "dominion_energy_virginia",
+    "duquesne_light_pennsylvania",
+    "firstenergy_ohio_edison",
+    "firstenergy_ohio_illuminating",
+    "firstenergy_pa_met_ed",
+    "firstenergy_pa_penelec",
+    "firstenergy_pa_penn_power",
+    "firstenergy_pa_west_penn",
+    "jcpl_new_jersey",
+    "peco",
+    "pepco_maryland",
+    "potomac_edison_maryland",
+    "ppl_electric_pennsylvania",
+    "pseg",
+    "rockland_electric_new_jersey"
+  ],
+  "merged_utility_requirements": [
+    {
+      "utility_id": 66101,
+      "states": [
+        "PA"
+      ],
+      "required_repository_keys": [
+        "firstenergy_pa_met_ed",
+        "firstenergy_pa_penelec",
+        "firstenergy_pa_penn_power",
+        "firstenergy_pa_west_penn"
+      ],
+      "reason": "All four PA rate districts must be explicitly implemented before using merged2024 accounts; noNYjurisdiction or districtestimateaddition allowed."
+    }
+  ],
+  "current_additions": [
+    {
+      "utility_id": 3755,
+      "state": "OH",
+      "repository_key": "firstenergy_ohio_illuminating"
+    }
+  ],
+  "baseline": {
+    "research_date": "2026-10-25",
+    "estimate_file": "estimate_2026-10-25.json",
+    "estimate_sha256": "3a833168d41d159fc86b8510902e8ccc9c1a86eff074f4c5965d627648268707",
+    "inputs_file": "inputs_2026-10-25.json",
+    "inputs_sha256": "6ca7e115efa3c46980e2b5125609a3a5c1e2afdb8f5a18cf312922f2aea2f864",
+    "implemented_workflow_count": 7,
+    "note": "Historical sevenutility/state-district baseline, including inferredWestPennonly; numerator not relabeled as currentbillingacceptance."
+  },
+  "registry_review": {
+    "date": "2026-10-31",
+    "scope": "ComEd separate workflow plus PJM regional registry utility/state-district entries, including this candidateCEI addition; counts represent at least one executable billing plan in some verifiedwindow, not complete2025-2026coverage."
+  }
 }

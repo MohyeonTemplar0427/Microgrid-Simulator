@@ -1,134 +1,156 @@
 # Indicative PJM population coverage
 
-Reviewed October 25, 2026 against the current utility registry and the separate
-ComEd workflow. **The implemented utility footprints correspond to roughly
-28 million people, or about 42% of PJM's publicly reported 67 million people.**
-This is a household-based planning estimate, not an exact count of residents
-inside service-area polygons and not a count of people eligible for every
-implemented billing plan. Alliant Iowa belongs to MISO and adds **zero** to
-this PJM numerator.
+Reviewed **October 31, 2026** against the regional registry and the separate
+ComEd workflow, including The Illuminating Company candidate. There are **21
+implemented utility/state-district workflows** with at least one executable
+retail billing plan in a verified date window. Their distribution footprints
+correspond to **about 50 million people, or about 75%** of PJM's reported
+67 million people, using the household-based proxy below.
+
+**This is territory coverage, not the share of people eligible for supported
+plans or fully verified 2025–2026 bills.** Some utilities have narrower verified
+date windows, incomplete historical components, account restrictions, or
+separate validation evidence pins. No utility-territory/Census-block polygon
+intersection was performed. PJM carbon-data coverage is a separate metric.
+CEI's account/date scope and candidate-specific acceptance are documented in
+[the utility guide](Illuminating_Company_Ohio.md) and
+[implementation validation](Illuminating_Company_Ohio_Implementation_Validation.md).
+
+## Progress from this addition
+
+| Scope | Implemented utility/state-district workflows | Estimated footprint people | Indicative PJM population share |
+| --- | ---: | ---: | ---: |
+| Immediately before CEI | 20 | 48.57 million | 72.5% |
+| Including The Illuminating Company (CEI) | 21 | 50.17 million | 74.9% |
+| Earlier October 25 seven-workflow baseline | 7 | 28.30 million | 42.2% |
+
+CEI adds **676,098 residential distribution accounts**, approximately **1.60
+million people** using Ohio's 2.37 persons per household, or **2.39 percentage
+points** in this proxy. The earlier roughly 42% headline predates the subsequent
+utility additions; it is preserved in its original input/output evidence,
+rather than treated as the current implementation total.
+
+The 21 count separates Dominion Virginia/North Carolina and the four FirstEnergy
+Pennsylvania rate districts. It is not a count of corporate parents, tariff
+schedules, all PJM utilities, fully supported customer classes or annual
+acceptance passes. ComEd is a separate executable workflow outside the regional
+utility dictionary. No MISO or California utility adds to this PJM numerator.
 
 ## Definition and method
 
-The question answered is: approximately how many residents are associated with
-the electric distribution utilities for which the simulator has at least one
-executable retail billing workflow?
-
-1. Read the final **2024 EIA-861** `Sales_Ult_Cust_2024.xlsx`, `States` sheet.
-   Keep balancing-authority code `PJM` and service types `Bundled` and
-   `Delivery`. Exclude `Energy` supplier rows so a delivery account is not
-   counted again when its customer chooses another retail supplier. Use only
-   residential accounts for the population proxy; commercial/industrial
-   accounts are not people. EIA describes the file as customer counts by
-   state, sector, service type and balancing authority. [EIA data and method](https://www.eia.gov/electricity/data/eia861/).
-2. Select ComEd, Dominion Virginia/North Carolina, PSE&G, Ohio Edison, PECO
-   and only the West Penn rate district. The same Virginia Electric & Power
-   Company EIA ID is used for Dominion's two state rows; it is not counted
-   twice as two whole companies. PSEG Long Island, gas customers, other
-   FirstEnergy Pennsylvania districts and MISO utilities are excluded.
-3. Estimate people as residential distribution accounts multiplied by the
-   state's **2020–2024 Census QuickFacts persons per household**: Illinois
-   2.46; Ohio 2.37; Pennsylvania 2.39; New Jersey 2.62; Virginia 2.52; North
-   Carolina 2.44. The relevant sources are linked in the checked-in
-   [input ledger](utility_sources/pjm_population/inputs.json).
-4. Divide that estimate by PJM's rounded public population headline of
-   **67 million**, verified on its current [About PJM page](https://www.pjm.com/m/About-PJM).
-
-The formula is:
+1. Reuse the same final **2024 EIA-861** `Sales_Ult_Cust_2024.xlsx`, `States`
+   extract. Select balancing authority `PJM` and service types `Bundled` and
+   `Delivery`; exclude `Energy` supplier rows to avoid counting delivery
+   accounts twice. Only residential accounts enter the population proxy.
+   [EIA data and method](https://www.eia.gov/electricity/data/eia861/).
+2. Select only the implemented utility/state combinations below. Pepco,
+   Delmarva and Potomac Edison contribute **Maryland only**; their DC, Delaware
+   and West Virginia rows remain outside the numerator. Dominion's two state
+   rows are selected once each under one EIA utility ID.
+3. Multiply residential distribution accounts by the state's **2020–2024
+   Census QuickFacts persons per household**: IL 2.46, OH 2.37, PA 2.39,
+   NJ 2.62, VA 2.52, NC 2.44, MD **2.57**. Prior factors are retained from the
+   earlier source review; Maryland was newly verified on October 31.
+   [Maryland QuickFacts](https://www.census.gov/quickfacts/fact/table/MD/HSD410224).
+4. Divide by PJM's rounded public **67 million** population headline,
+   reverified October 31. [About PJM](https://www.pjm.com/m/About-PJM).
 
 ```text
-Estimated footprint population = sum(residential distribution accounts × state household size)
-Indicative coverage share = estimated footprint population / 67,000,000
+Estimated footprint people = sum(residential distribution accounts × state household size)
+Indicative coverage share = estimated footprint people / 67,000,000
 ```
 
-| Implemented electric utility / district | Residential accounts used | Estimated people, millions |
+| Implemented utility/state footprint | Residential distribution accounts | Estimated people, millions |
 | --- | ---: | ---: |
-| ComEd, Illinois | 3,727,675 | 9.17 |
-| Dominion, Virginia | 2,383,548 | 6.01 |
-| Dominion, North Carolina | 108,656 | 0.27 |
-| PSE&G, New Jersey | 2,056,231 | 5.39 |
-| PECO, Pennsylvania | 1,535,818 | 3.67 |
-| Ohio Edison, Ohio | 957,780 | 2.27 |
-| West Penn district, Pennsylvania | approximately 638,517 | 1.53 |
-| **Total** | **approximately 11.41 million** | **28.30** |
+| ComEd · IL | 3,727,675 | 9.17 |
+| Ohio Edison · OH | 957,780 | 2.27 |
+| PECO · PA | 1,535,818 | 3.67 |
+| PSE&G · NJ | 2,056,231 | 5.39 |
+| Dominion Energy Virginia and North Carolina · VA | 2,383,548 | 6.01 |
+| Dominion Energy Virginia and North Carolina · NC | 108,656 | 0.27 |
+| Atlantic City Electric · NJ | 506,488 | 1.33 |
+| Baltimore Gas & Electric · MD | 1,214,100 | 3.12 |
+| Delmarva Power Maryland · MD | 186,368 | 0.48 |
+| Duquesne Light · PA | 550,405 | 1.32 |
+| JCP&L · NJ | 1,038,258 | 2.72 |
+| AEP Ohio (Ohio Power) · OH | 1,339,232 | 3.17 |
+| PPL Electric Utilities · PA | 1,295,883 | 3.10 |
+| Potomac Edison Maryland · MD | 256,568 | 0.66 |
+| Pepco Maryland · MD | 553,607 | 1.42 |
+| Rockland Electric New Jersey · NJ | 65,889 | 0.17 |
+| FirstEnergy Pennsylvania: all four PA districts · PA | 1,802,612 | 4.31 |
+| The Illuminating Company (CEI) · OH | 676,098 | 1.60 |
+| **Total** | **20,255,216** | **50.17** |
 
-The numerical calculation is 42.23%, but that precision describes arithmetic,
-not measurement accuracy. The appropriate headline is **about 42%**, not an
-exact percentage of all residents or all billable accounts.
+The mathematical result is 74.88%; **about 75%** is the appropriate headline.
+Arithmetic precision does not measure the uncertainty in the household proxy.
+The selected accounts are **73.0%** of EIA's **27,756,201 PJM residential
+distribution accounts**, a separate cross-check with a different denominator.
 
-## West Penn merger and district estimate
+## FirstEnergy Pennsylvania merger handling
 
-EIA's 2024 FirstEnergy Pennsylvania ID `66101` combines Met-Ed, Penelec,
-Penn Power and West Penn. Counting that entire company would overstate the
-implemented footprint. FirstEnergy confirms the consolidation took effect
-January 1, 2024 while the local brands/rate districts remained separate.
+The 2024 EIA utility ID **66101** combines Met-Ed, Penelec, Penn Power and West
+Penn. All four Pennsylvania districts now have executable retail adapters, so
+this update includes their **1,802,612 PA residential accounts once**. The
+company's small New York rows remain excluded. It does not add four copies of
+the merged company or add the earlier inferred West Penn district on top.
 [Official consolidation announcement](https://www.firstenergycorp.com/newsroom/news_articles/firstenergy-pennsylvania-subsidiaries-receive-approval-to-consolidate.html).
 
-For a same-year district estimate, the Pennsylvania PUC's September 2024
-switching table reports West Penn's residential switched customers as
-**113,656**, or **17.8% of its residential customers**. Dividing gives about
-638,517 total district residential accounts. The adjacent 17.6% value is load
-share and is not used. Assuming the customer percentage was rounded to the
-nearest 0.1 percentage point, its denominator is about 636,728–640,315 accounts.
-This rounding interval does not measure broader population uncertainty.
-[PUC district table](https://www.papowerswitch.com/media/dsbp5oci/paps_numbers093024.pdf).
+The October 25 baseline included only West Penn, estimating that district from
+a PUC switched-account count divided by a rounded percentage. That inference
+was appropriate to the narrower old selection; its rounding-only range no
+longer enters the current total. The original
+[inputs](utility_sources/pjm_population/inputs_2026-10-25.json) and
+[estimate](utility_sources/pjm_population/estimate_2026-10-25.json) are preserved
+byte for byte and remain reproducible. The reporting tool requires all four
+PA district keys before accepting merged-company counts, rejects NY scope and
+rejects adding the old district estimate to the merged total.
 
-## Cross-checks, uncertainty and interpretation
+## Limits and remaining gaps
 
-The selected utilities/district represent about **41.1% of PJM's 27.76 million
-residential distribution accounts** in the EIA snapshot, an additional
-account-share cross-check on the household-weighted estimate. The denominator
-retains EIA's identified state/BA adjustment rows, including negative ones;
-those adjustments are not arbitrarily assigned to particular utilities.
-Nine nonresidential-only rows with a residential dot have zero residential
-accounts verified against the other-sector/total identities, with source
-notation preserved. The small New York rows reported with BA `PJM` stay in
-the EIA denominator; they are not counted as West Penn.
+An account is an imperfect proxy for one occupied household. Master metering,
+seasonal homes, vacancies, group quarters, meter timing and differences between
+statewide and utility-territory household size can distort the estimate. No
+geographic uncertainty interval or statistical confidence interval is claimed.
+An illustrative ±10% occupancy-factor sensitivity gives approximately **67–82%**;
+this is a scenario, not a validated uncertainty bound.
 
-The population proxy assumes an account corresponds to one occupied household
-and statewide household size represents each subterritory. Master-metered
-housing, seasonal/second-home meters, vacancies, group quarters, meter timing,
-and local differences in household size can break that relationship. No
-utility-territory/PJM/Census-block polygon intersection was performed. Input
-vintages also differ: 2024 account data, 2020–2024 household factors and a
-current rounded PJM headline.
+The input vintages remain final 2024 account data, 2020–2024 household factors
+and a current rounded PJM headline. The denominator retains identified EIA
+state/BA adjustments, including negative ones; these are not allocated to a
+utility by assumption. Nine nonresidential-only rows with a residential dot
+retain the earlier zero-account verification and original source notation.
+The source extract and its SHA-256 have not changed.
 
-An illustrative **±10% change in the occupancy multiplier** moves the result
-to about **38–46%**. This is a sensitivity scenario, not a statistical
-confidence interval or a demonstrated uncertainty bound. The estimate should
-not be presented as evidence that exactly 42% of PJM residents can receive a
-fully verified simulated bill: supported schedules, supplier arrangements,
-solar programs, account eligibility and historical rate dates are narrower.
+The result does **not** imply every residential/small-commercial tariff, all
+2025–2026 dates, export/NEM settlement, actual customer eligibility, annual
+bill optimum, site-specific electrical networks or local carbon intensity is
+verified. Historical validation receipts retain their original engine/frontend
+pins; adding a utility does not renew older acceptance evidence.
 
-Large remaining PJM distribution footprints include Ohio Power/AEP Ohio,
-PPL Electric Utilities, Baltimore Gas & Electric, Jersey Central Power & Light,
-other FirstEnergy Pennsylvania districts, Pepco and Appalachian Power. Adding
-Alliant Iowa or another MISO utility does not close those PJM gaps.
+Remaining PJM footprints include Appalachian Power, AES Ohio, Duke Energy
+Ohio/Kentucky, Toledo Edison, Mon Power, Pepco DC, Delmarva Delaware, Potomac
+Edison West Virginia and many cooperatives/municipals. Their full footprints
+must not be inferred from an already implemented affiliate or state.
 
 ## Reproduction and evidence
 
-The public source extract, household factors, utility IDs, source URLs and
-SHA-256 checks are under
-[`docs/utility_sources/pjm_population/`](utility_sources/pjm_population/inputs.json).
-The original EIA ZIP/workbook and PUC PDF are retained in ignored
-`.cache/pjm_population`. No credentials or private customer data are used.
-The Census API required a key and direct CSV requests returned 403, so those
-responses were not used as data; values were read from official Census pages.
-The 2025 early release was not substituted for final 2024 data.
+The public input ledger and output are
+[inputs.json](utility_sources/pjm_population/inputs.json) and
+[estimate.json](utility_sources/pjm_population/estimate.json). The earlier
+source archive/workbook hashes and extract are retained. The October 31
+source [refresh receipt](utility_sources/pjm_population/refresh_2026-10-31.json)
+records Maryland/PJM checks separately. No credentials
+or private customer data are read.
 
 ```sh
 /usr/local/bin/python3 tools/estimate_pjm_population_coverage.py
 ```
 
-The command is offline. It validates the source-extract hash, distribution
-service types, utility/state uniqueness, adjustment IDs and selected utility
-presence, rejects the merged FirstEnergy company in the numerator, and
-recalculates the estimate and sensitivity. Machine-readable output is retained
-in [estimate.json](utility_sources/pjm_population/estimate.json).
-
-Verification of this reporting tool: an offline rerun reproduced the checked-in
-JSON byte-for-byte. Four corruption/overcount checks rejected a repeated
-utility/state, the merged FirstEnergy company, an energy-only supplier row and
-a changed source-extract hash. The private check receipt is
-`.cache/pjm_population/offline_guard_checks.json`; these checks validate report
-arithmetic and evidence handling, not the population-proxy assumptions.
+This command is offline and makes no API or simulation calls. It verifies
+source/baseline hashes, distribution-service rows, duplicate selections,
+adjustments, merged-district scope and current-addition attribution. Ten focused
+reporting tests passed under the validation launcher; the original October 25
+JSON was independently reproduced exactly. These checks validate arithmetic and
+evidence handling, not the population-proxy assumptions or any tariff billing.
+Private check receipt: `.cache/illuminating_oh/population_focused_2/report.json`.

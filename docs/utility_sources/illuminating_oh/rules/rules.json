@@ -1,0 +1,80 @@
+{
+  "research_date": "2026-10-31",
+  "utility": "firstenergy_ohio_illuminating",
+  "legal_name": "The Cleveland Electric Illuminating Company",
+  "jurisdiction": "Ohio / PUCO",
+  "tariff_number": "P.U.C.O. No. 13",
+  "source_manifest": "sources.json",
+  "verified_rule_versions": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-02-28",
+      "RS_sheet": "Original10, effective2009-05-01",
+      "GS_sheet": "Original20pages1-3,effective2009-05-01"
+    },
+    {
+      "start": "2026-03-01",
+      "end": "2026-10-31",
+      "RS_sheet": "1stRevised10,effective2026-03-01",
+      "GS_sheet": "1stRevised20pages1-3,effective2026-03-01"
+    }
+  ],
+  "RS": {
+    "eligibility": "One meter per family unit in residence/apartment; exclusively residential. Mixed residential/commercial same meter, commercial/institutional/industrial premises and shared apartment facilities go to appropriate general service.",
+    "service": "secondary; delivery voltage utility assigned",
+    "special_meters_excluded": true
+  },
+  "GS": {
+    "eligibility": "General service installations requiring Secondary Service, one meter per installation; no universal small-load ceiling in Schedule GS",
+    "secondary_definition_volts_max": 600,
+    "measured_demand_integration_minutes": 30,
+    "billing_demand": "max(highest 30-minute integrated import kW,5.0,documented contract kW)",
+    "floor_kw": 5.0,
+    "history_ratchet": "None in Sheet20; contract demand remains an independent floor and is not inferred from current DER-reduced demand.",
+    "contract_rule": "For new service after2009-04-30 or significant change:60% expected typical monthly peak; old contracts retained; company may require revised contract for increase; customer may request reevaluation at most once per12months. Input must be verified utility-assigned contract.",
+    "non_demand_meter_rule": "For customers without demand meter and >1000kWh/month, measured demand=kWh/200; proposed implementation excludes estimated/unmetered demand.",
+    "reactive_charge": "Three-phase customers only; $.36/rkVA before2026-03-01, $.60 thereafter; single-phase scope avoids this component.",
+    "primary_metering_loss_reduction": "2% before2026-03-01;1.5% thereafter; primary-side metering excluded.",
+    "base_capacity_first5_is_flat_monthly_amount": true,
+    "unverified_or_excluded": [
+      "Primary-metering adjustments",
+      "Unmetered service",
+      "Optional GSU tariff",
+      "Duplicate/premium circuit",
+      "Three-phase/reactive billing",
+      "Special Time-of-Day/Interval Metering fees unless confirmed absent"
+    ]
+  },
+  "billing": {
+    "cycle": "Monthly, typically approximately30days; complete calendar cycles are a narrower model scope.",
+    "season": "Summer serviceJun1-Aug31;winterSep1-May31 unless component says otherwise.",
+    "effective_basis": "Non-seasonal rates begin with service rendered on stated effective date.",
+    "partial_allocation": "No general fixed-charge allocation rule verified for irregular/split cycles; exclude partial cycles and whole calendar cycles crossing midmonth component transition unless independently verified.",
+    "minimum": "No separate minimum-bill clause in ordinaryRS/GS sheets; GS5kW/contract capacity floor always applies. PartialService has separate minimums and is excluded.",
+    "supplier": "SSO only, ordinary standardGEN; no shopping/CRES/aggregation/TOU/CPP/PTR/RTP/specials. Supplier changes follow regular meter reading and cannot split a billing month."
+  },
+  "DER": {
+    "ordinary_basis": "OhioOAC4901:1-10-28(B)(4) effective2024-04-08 requires standard netmetering retail structure/components/monthlycharges identical to noncustomer-generator. TariffSheet93 applies underlying schedule and import-only peakdemand;Sheet46 excludes NEMqualifying generation.",
+    "eligibility": "Onsite qualifying solar primarily offsetting own requirements; approved sizing <=120% of requirements determined from prior3-year average or utilityreasonableestimate.",
+    "required_evidence": [
+      "Utility eligibility and ordinary/NEM billing confirmation for exact PV and paired-storage configuration",
+      "Written interconnection agreement and final permissiontooperate before study",
+      "Correct installed meter/approval",
+      "NoPartialService/specialfacility/recurringextra meterfee confirmed"
+    ],
+    "mode": "Zeroexports,zerocreditbank; PV-only batterycharging as conservative modelrestriction. No standalonestorage; no verified exportsettlement.",
+    "storage": "Utility interconnection page expressly includes storageequipment in siteplan/oneline/application. This is not automatic NEMqualification; approval of exact pairedconfiguration required.",
+    "sizing_bound": "<=25kWcombined output may be selected as conservative modeling level1 bound; it is not an automatic approval or universal tariffeligibility bound.",
+    "source_conflict": "OldSheet93 allows requested annualrefund; currentOAC requires continuous monetarycarryforward/no cashpayment requirement. Rejectingexports/creditbanks avoids claiming either settlement."
+  },
+  "PJM": {
+    "grid_operator": "PJM",
+    "emergency_region": "FE-ATSI",
+    "emergency_region_type": "Control Area",
+    "source": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+    "load_energy_zone": "FE Ohio",
+    "utility_company_code": "CEI",
+    "transmission_context": "ATSI",
+    "separation": "PJM control/zone metadata never determines utility eligibility, retailGEN/riders, chosen wholesaleLMP node or regional-averagecarbon intensity. FE Ohio energyzone combinesOE,CEI,TE;NSPL/transmissionallocation kept companyspecific."
+  }
+}

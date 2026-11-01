@@ -1,0 +1,467 @@
+{
+  "reviewed": "2026-10-31",
+  "status": "Source-reviewed delivery-only vectors; intersect with separately verified supply/tax dates. Do not extend endpoints or assume every month from earliest/latest.",
+  "units": "USD per indicated billing unit; pairs ordered [RS,GS]; all cents converted exactly by /100; percentages by /100.",
+  "field_units": {
+    "rs_customer": "USD/month",
+    "rs_energy": "USD/kWh",
+    "gs_customer": "USD/month",
+    "gs_first_5_kw": "USD/month total for first5kW, not per-kW",
+    "gs_excess_kw": "USD/kW above5kW",
+    "nmb": "RS USD/kWh; GS USD/billing-kW",
+    "dcr": "If base_distribution: unitless multiplier of ONLY base service+energy/capacity. Otherwise RS USD/kWh, GS USD/billing-kW.",
+    "ami": "USD/customer-month",
+    "lgr_rs": "USD/month",
+    "lgr_gs": "USD/kWh, first833000 only",
+    "sgf_rs": "USD/month",
+    "sgf_gs": "USD/kWh, first833000 only",
+    "crc_fixed_rs": "USD/month",
+    "crc_energy_gs": "USD/kWh",
+    "vmc": "RS USD/kWh; GS USD/billing-kW; January2025 only",
+    "rer": "RS USD/kWh only; replaced by CCR in2026scope"
+  },
+  "billing_demand": "GS max(highest aligned30minute integrated measured kW,5.0kW,actual utility contract demand); measured secondary meter only.",
+  "windows": [
+    {
+      "rs_customer": "4.00",
+      "rs_energy": "0.029510",
+      "gs_customer": "7.00",
+      "gs_first_5_kw": "13.6800",
+      "gs_excess_kw": "7.4790",
+      "gs_reactive_rkva": "0.36",
+      "usf_first_833000_kwh": "0.0021322",
+      "usf_excess_kwh": "0.0005680",
+      "tsa": [
+        "-0.001865",
+        "-0.001416"
+      ],
+      "crc_fixed_rs": "-0.51",
+      "crc_energy_gs": "-0.000298",
+      "ccr": [
+        "0",
+        "0"
+      ],
+      "dcr_credit_rs": "0",
+      "dcr_credit_gs_kw": "0",
+      "dcr_credit_gs_kwh": "0",
+      "regime": "2025-01",
+      "start": "2025-01-01",
+      "end": "2025-01-31",
+      "esp": "ESP V",
+      "drr": [
+        "0.000006",
+        "0.000005"
+      ],
+      "dun": "0.000233",
+      "ami": [
+        "1.750",
+        "16.215"
+      ],
+      "pur": "-0.000029",
+      "dse": "0",
+      "edr": [
+        "0.001044",
+        "0.003842"
+      ],
+      "automaker": "0.000027",
+      "nmb": [
+        "0.025913",
+        "7.6850"
+      ],
+      "rer": "0.001172",
+      "dcr": [
+        "0.478156",
+        "0.442175"
+      ],
+      "dcr_basis": "base_distribution",
+      "pir": "0.000427",
+      "lgr_rs": "1.50",
+      "lgr_gs": "0.0018007",
+      "sgf_rs": "0.10",
+      "sgf_gs": "0.00029051",
+      "vmc": [
+        "0.000223",
+        "0.0566"
+      ],
+      "primary_sources": [
+        "live-2024-jan2025",
+        "puc-june-2025:PDF164 supersedes stale PIR22nd retained in Jan composite"
+      ]
+    },
+    {
+      "rs_customer": "4.00",
+      "rs_energy": "0.029510",
+      "gs_customer": "7.00",
+      "gs_first_5_kw": "13.6800",
+      "gs_excess_kw": "7.4790",
+      "gs_reactive_rkva": "0.36",
+      "usf_first_833000_kwh": "0.0021322",
+      "usf_excess_kwh": "0.0005680",
+      "tsa": [
+        "-0.001865",
+        "-0.001416"
+      ],
+      "crc_fixed_rs": "-0.51",
+      "crc_energy_gs": "-0.000298",
+      "ccr": [
+        "0",
+        "0"
+      ],
+      "dcr_credit_rs": "0",
+      "dcr_credit_gs_kw": "0",
+      "dcr_credit_gs_kwh": "0",
+      "regime": "2025-06",
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "esp": "ESP IV",
+      "drr": [
+        "0.000006",
+        "0.000004"
+      ],
+      "dun": "0.001024",
+      "ami": [
+        "1.882",
+        "16.303"
+      ],
+      "pur": "-0.000034",
+      "dse": "0.001151",
+      "edr": [
+        "0.000262",
+        "0.002953"
+      ],
+      "automaker": "0.000024",
+      "nmb": [
+        "0.023233",
+        "6.7456"
+      ],
+      "rer": "0.001172",
+      "dcr": [
+        "0.010944",
+        "4.7478"
+      ],
+      "dcr_basis": "energy_or_demand",
+      "pir": "0.000427",
+      "lgr_rs": "1.50",
+      "lgr_gs": "0.0018007",
+      "sgf_rs": "0.10",
+      "sgf_gs": "0.00029051",
+      "vmc": [
+        "0",
+        "0"
+      ],
+      "primary_sources": [
+        "cei_20250612:full172page archived officialJune12composite"
+      ]
+    },
+    {
+      "rs_customer": "4.00",
+      "rs_energy": "0.029510",
+      "gs_customer": "7.00",
+      "gs_first_5_kw": "13.6800",
+      "gs_excess_kw": "7.4790",
+      "gs_reactive_rkva": "0.36",
+      "usf_first_833000_kwh": "0.0021322",
+      "usf_excess_kwh": "0.0005680",
+      "tsa": [
+        "-0.001865",
+        "-0.001416"
+      ],
+      "crc_fixed_rs": "-0.51",
+      "crc_energy_gs": "-0.000298",
+      "ccr": [
+        "0",
+        "0"
+      ],
+      "dcr_credit_rs": "0",
+      "dcr_credit_gs_kw": "0",
+      "dcr_credit_gs_kwh": "0",
+      "regime": "2025-09",
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "esp": "ESP IV",
+      "drr": [
+        "0.000002",
+        "0.000001"
+      ],
+      "dun": "0.000738",
+      "ami": [
+        "1.019",
+        "13.291"
+      ],
+      "pur": "0.000009",
+      "dse": "0.000462",
+      "edr": [
+        "0.000190",
+        "0.001163"
+      ],
+      "automaker": "0.000026",
+      "nmb": [
+        "0.023233",
+        "6.7456"
+      ],
+      "rer": "0.001360",
+      "dcr": [
+        "0.010814",
+        "4.6748"
+      ],
+      "dcr_basis": "energy_or_demand",
+      "pir": "0.000459",
+      "lgr_rs": "0",
+      "lgr_gs": "0",
+      "sgf_rs": "0",
+      "sgf_gs": "0",
+      "vmc": [
+        "0",
+        "0"
+      ],
+      "primary_sources": [
+        "puc-june-2025:July quarterlies",
+        "live-2025-sept2025:PDF161 DCR54th and PDF162 PIR24th"
+      ]
+    },
+    {
+      "rs_customer": "4.00",
+      "rs_energy": "0.029510",
+      "gs_customer": "7.00",
+      "gs_first_5_kw": "13.6800",
+      "gs_excess_kw": "7.4790",
+      "gs_reactive_rkva": "0.36",
+      "usf_first_833000_kwh": "0.0021322",
+      "usf_excess_kwh": "0.0005680",
+      "tsa": [
+        "-0.001865",
+        "-0.001416"
+      ],
+      "crc_fixed_rs": "-0.51",
+      "crc_energy_gs": "-0.000298",
+      "ccr": [
+        "0",
+        "0"
+      ],
+      "dcr_credit_rs": "0",
+      "dcr_credit_gs_kw": "0",
+      "dcr_credit_gs_kwh": "0",
+      "regime": "2025-10/11",
+      "start": "2025-10-01",
+      "end": "2025-11-30",
+      "esp": "ESP IV",
+      "drr": [
+        "-0.000001",
+        "-0.000001"
+      ],
+      "dun": "0.000161",
+      "ami": [
+        "1.939",
+        "17.917"
+      ],
+      "pur": "0.000036",
+      "dse": "0.000462",
+      "edr": [
+        "0.000267",
+        "0.002435"
+      ],
+      "automaker": "0.000029",
+      "nmb": [
+        "0.025030",
+        "7.1987"
+      ],
+      "rer": "0.001360",
+      "dcr": [
+        "0.010814",
+        "4.6748"
+      ],
+      "dcr_basis": "energy_or_demand",
+      "pir": "0.000459",
+      "lgr_rs": "0",
+      "lgr_gs": "0",
+      "sgf_rs": "0",
+      "sgf_gs": "0",
+      "vmc": [
+        "0",
+        "0"
+      ],
+      "primary_sources": [
+        "live-2025-sept2025:October quarterlies and DCR54th"
+      ]
+    },
+    {
+      "rs_customer": "4.00",
+      "rs_energy": "0.029510",
+      "gs_customer": "7.00",
+      "gs_first_5_kw": "13.6800",
+      "gs_excess_kw": "7.4790",
+      "gs_reactive_rkva": "0.36",
+      "usf_first_833000_kwh": "0.0021322",
+      "usf_excess_kwh": "0.0005680",
+      "tsa": [
+        "-0.001865",
+        "-0.001416"
+      ],
+      "crc_fixed_rs": "-0.51",
+      "crc_energy_gs": "-0.000298",
+      "ccr": [
+        "0",
+        "0"
+      ],
+      "dcr_credit_rs": "0",
+      "dcr_credit_gs_kw": "0",
+      "dcr_credit_gs_kwh": "0",
+      "regime": "2025-12",
+      "start": "2025-12-01",
+      "end": "2025-12-31",
+      "esp": "ESP IV",
+      "drr": [
+        "-0.000001",
+        "-0.000001"
+      ],
+      "dun": "0.000161",
+      "ami": [
+        "1.939",
+        "17.917"
+      ],
+      "pur": "0.000036",
+      "dse": "0.000462",
+      "edr": [
+        "0.000267",
+        "0.002435"
+      ],
+      "automaker": "0.000029",
+      "nmb": [
+        "0.025030",
+        "7.1987"
+      ],
+      "rer": "0.001360",
+      "dcr": [
+        "0.010831",
+        "4.7142"
+      ],
+      "dcr_basis": "energy_or_demand",
+      "pir": "0.000459",
+      "lgr_rs": "0",
+      "lgr_gs": "0",
+      "sgf_rs": "0",
+      "sgf_gs": "0",
+      "vmc": [
+        "0",
+        "0"
+      ],
+      "primary_sources": [
+        "2025-CEI-Electric-Service-Tariff:DCR55th PDF161"
+      ]
+    },
+    {
+      "rs_customer": "6.50",
+      "rs_energy": "0.048397",
+      "gs_customer": "10.00",
+      "gs_first_5_kw": "26.6451",
+      "gs_excess_kw": "12.5319",
+      "gs_reactive_rkva": "0.60",
+      "usf_first_833000_kwh": "0.0032567",
+      "usf_excess_kwh": "0.0005680",
+      "tsa": [
+        "-0.001054",
+        "-0.000779"
+      ],
+      "crc_fixed_rs": "0",
+      "crc_energy_gs": "0",
+      "ccr": [
+        "0.002491",
+        "0.000597"
+      ],
+      "regime": "2026-10",
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "esp": "ESP IV / March2026 distribution reset",
+      "drr": [
+        "0.000006",
+        "0.000004"
+      ],
+      "dun": "0.000283",
+      "ami": [
+        "0.882",
+        "6.483"
+      ],
+      "pur": "-0.000134",
+      "dse": "0.000874",
+      "edr": [
+        "0.000291",
+        "0.002192"
+      ],
+      "automaker": "0.000029",
+      "nmb": [
+        "0.029134",
+        "6.6568"
+      ],
+      "rer": "0",
+      "dcr": [
+        "0.001216",
+        "0.4665"
+      ],
+      "dcr_basis": "energy_or_demand",
+      "dcr_credit_rs": "0",
+      "dcr_credit_gs_kw": "0",
+      "dcr_credit_gs_kwh": "0",
+      "pir": "0.000445",
+      "lgr_rs": "0",
+      "lgr_gs": "0",
+      "sgf_rs": "0",
+      "sgf_gs": "0",
+      "vmc": [
+        "0",
+        "0"
+      ],
+      "primary_sources": [
+        "CEI-2026-Electric-Service"
+      ]
+    }
+  ],
+  "zero_ordinary_riders": {
+    "TAS1": "explicit0; TAS2 no longer applies since2010-09-22",
+    "DSM": "RS0 since2016-01-01",
+    "Fuel": "0 since2009-06-01",
+    "LEX": "0 since2015-01-01",
+    "DSI": "0 since2012-01-01",
+    "CDR": "credit no longer applies since2011-08-06; do not apply printed historical-.0110cent",
+    "DGC": "0 since2013-06-21",
+    "DFC": "0 since2013-06-21",
+    "RDD": "RS0 since2011-12-30",
+    "NDD": "GS0 since2011-12-26",
+    "GDR": "fixed0 from2025-02-01 only; not applicable Jan2025",
+    "ORR": "0 from2025-02-01; not applicable Jan2025",
+    "CSR": "RS/GS rates1+2 zero since2021-09-01",
+    "RGC": "printed0 for eligible heating accounts; ordinary no-legacy account excludes rider",
+    "EEC": "ESP V Jan2025zero; removed from Feb2025 summary",
+    "SCR": "ESP V Jan2025zero; removed from Feb2025 summary"
+  },
+  "excluded_eligibility": [
+    "RDC/legacy heating eligibility",
+    "BDC historical special credit",
+    "SDC public schools",
+    "special contracts/RAR/GRC",
+    "ELR enrollment",
+    "PTR/CPP/RCP/RTP/HLF optional programs",
+    "AMO meteroptout",
+    "CFA county fairs",
+    "EV optional rate",
+    "NMB optout",
+    "primary/threephase/reactive facilities",
+    "unverified export/NEM settlement"
+  ],
+  "gaps": [
+    {
+      "start": "2025-02-01",
+      "end": "2025-05-31",
+      "reason": "Feb compliance composite and April quarterly component intersections not yet retained."
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2025-08-31",
+      "reason": "12th LGRJuly1 missing; Aug14 removal also needs fixedcharge crossing allocation."
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-09-30",
+      "reason": "Earlier2026 quarterlies, JanTSA and February-April DCR credits not yet retained; May13Wayback partial source under separate review."
+    }
+  ]
+}

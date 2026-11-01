@@ -1,0 +1,51 @@
+{
+  "reviewed": "2026-10-31",
+  "eia_vintage": "2024 final",
+  "eia_extract_unchanged_sha256": "4f87ebdf192799a5cfcdf58194260cb6596f6d29e2b974bb7184b9dc584d8f86",
+  "source_refresh": [
+    {
+      "id": "md_quickfacts",
+      "url": "https://www.census.gov/quickfacts/fact/table/MD/HSD410224",
+      "error": "HTTP Error 403: Forbidden",
+      "fallback": "Official cached web-reader content reviewed2026-10-31"
+    },
+    {
+      "id": "pjm_about",
+      "url": "https://www.pjm.com/m/About-PJM",
+      "path": ".cache/pjm_population/refresh_2026-10-31/pjm_about.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 76178,
+      "sha256": "5e00b8c776c9bd462cd2730305fe3d0b327cf4e083e98b94f23299a0e016bfad"
+    }
+  ],
+  "verified_values": [
+    {
+      "id": "md_quickfacts",
+      "url": "https://www.census.gov/quickfacts/fact/table/MD/HSD410224",
+      "value": 2.57,
+      "units": "persons per household",
+      "period": "2020-2024",
+      "method": "Official cached web-reader full table, Personsperhousehold row, reviewed2026-10-31"
+    },
+    {
+      "id": "pjm_about",
+      "url": "https://www.pjm.com/m/About-PJM",
+      "value": 67000000,
+      "units": "rounded population headline",
+      "method": "Official cached web-reader AboutPJM WhatWeDo text, reviewed2026-10-31"
+    }
+  ],
+  "prior_household_factors": "Retained original2026-10-25 source review; not claimed newlyreverified",
+  "baseline_byte_identity": {
+    "inputs_sha256": "6ca7e115efa3c46980e2b5125609a3a5c1e2afdb8f5a18cf312922f2aea2f864",
+    "estimate_sha256": "3a833168d41d159fc86b8510902e8ccc9c1a86eff074f4c5965d627648268707"
+  },
+  "checks": {
+    "original_baseline_reproduction": "Exact JSON value match",
+    "focused_launcher": ".cache/illuminating_oh/population_focused_2/report.json",
+    "tests": 10,
+    "status": "passed",
+    "initial_run": "One handwritten expectedpercent typo in newtest fixed; source/currentarithmetic unchanged"
+  }
+}

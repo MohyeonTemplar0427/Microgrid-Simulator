@@ -1,0 +1,93 @@
+{
+  "reviewed_on": "2026-10-31",
+  "sources": [
+    {
+      "id": "jan2025",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2024-Electric-Service.pdf",
+      "source_kind": "official_utility_tariff",
+      "pdf_path": ".cache/illuminating_oh/sources/shared/live-2024-jan2025.pdf",
+      "pdf_sha256": "b4b21955888017a47f597d6e466cba4d2876d4a1d4098383bbc67097f2ff6cd3",
+      "pdf_pages": 151,
+      "selected_pdf_pages": [
+        72,
+        83,
+        116,
+        117,
+        120,
+        126
+      ],
+      "excerpt": "jan2025-selected.txt",
+      "excerpt_sha256": "3d2ce0e870af830b5c127c96ce8c764010d92e9c0e1552c869042947a48dd41a"
+    },
+    {
+      "id": "june2025",
+      "url": "https://web.archive.org/web/20250612032344id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2025-Electric-Service.pdf",
+      "source_kind": "archived_official_utility_tariff",
+      "pdf_path": ".cache/illuminating_oh/sources/supply/cei_20250612.pdf",
+      "pdf_sha256": "1d2dec6377d4f1821afc30803255981421ddc61e1ae045e0e1dc572c59247138",
+      "pdf_pages": 172,
+      "selected_pdf_pages": [
+        78,
+        89,
+        128,
+        129,
+        135,
+        142
+      ],
+      "excerpt": "june2025-selected.txt",
+      "excerpt_sha256": "2ed68cdeee757306ce62deb18fa2cce4a58c40bb338a3935d2955d8447085b99"
+    },
+    {
+      "id": "aug2025",
+      "url": "https://web.archive.org/web/20250825000848id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2025-Electric-Service.pdf",
+      "source_kind": "archived_official_utility_tariff",
+      "pdf_path": ".cache/illuminating_oh/sources/supply/cei_20250825.pdf",
+      "pdf_sha256": "86bdb16cc39dc3df007b71f1c87604733cd53ce17d0ba3a00148948749d981eb",
+      "pdf_pages": 172,
+      "selected_pdf_pages": [
+        78,
+        128,
+        135,
+        142
+      ],
+      "excerpt": "aug2025-selected.txt",
+      "excerpt_sha256": "6316465d2192c627979328940a9e515659652c4bd6d8e7042cb7aadb49382dd0"
+    },
+    {
+      "id": "dec2025",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-CEI-Electric-Service-Tariff.pdf",
+      "source_kind": "official_utility_tariff",
+      "pdf_path": ".cache/illuminating_oh/sources/shared/2025-CEI-Electric-Service-Tariff.pdf",
+      "pdf_sha256": "3fca38bac7afdd48a459f457684e415af31ce7037267b18ec04397c3c28e1b79",
+      "pdf_pages": 172,
+      "selected_pdf_pages": [
+        78,
+        89,
+        128,
+        129,
+        135,
+        142
+      ],
+      "excerpt": "dec2025-selected.txt",
+      "excerpt_sha256": "9b076cb26166420ec6740dfcfef7f1c083ac1011aca390fdef5a484712e21778"
+    },
+    {
+      "id": "oct2026",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2026-Electric-Service.pdf",
+      "source_kind": "official_utility_tariff",
+      "pdf_path": ".cache/illuminating_oh/sources/shared/CEI-2026-Electric-Service.pdf",
+      "pdf_sha256": "99f7ef25320bdc39050b44e3309ed12e4bf00f3632df5f4dba4464310adb8efa",
+      "pdf_pages": 176,
+      "selected_pdf_pages": [
+        79,
+        90,
+        129,
+        130,
+        136,
+        143
+      ],
+      "excerpt": "oct2026-selected.txt",
+      "excerpt_sha256": "3bd50d7e5ef6326ba936abd2fd8ef38daf77ec4e1d5fb1d6e2df9cd7542384e2"
+    }
+  ]
+}

@@ -1,5 +1,11 @@
 # Microgrid backend architecture
 
+The Illuminating Company's separate Ohio RS/measured GS SSO adapter is described
+in [its utility guide](Illuminating_Company_Ohio.md). It reuses regional billing,
+dispatch and replay with verified component intersections only; it does not
+extend Ohio Edison coverage. GS preserves its actual contract and 30-minute
+measurement, and state-kWh tax follows the incorporated non30-day statutory rule.
+
 Optional PJM regional-average carbon accounting for schema 11 is documented in
 [PJM regional carbon](PJM_Regional_Carbon.md). It evaluates scheduled imports
 after dispatch and does not alter retail charges, optimization or electrical

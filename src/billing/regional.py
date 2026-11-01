@@ -14,6 +14,9 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "firstenergy_ohio_illuminating": {"label":"FirstEnergy Ohio · The Illuminating Company", "state":"OH", "zone":"ATSI", "module":"illuminating_oh", "timezone":"America/New_York",
+                                    "grid_operator":"PJM", "emergency_region":"FE-ATSI", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+                                        "https://www.firstenergycorp.com/customer_choice/ohio_.html"]},
     "duquesne_light_pennsylvania": {"label":"Duquesne Light · Pennsylvania", "state":"PA", "zone":"DLCO", "module":"duquesne_pa", "timezone":"America/New_York",
                                   "grid_operator":"PJM", "emergency_region":"DUQ", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
                                       "https://www.pjm.com/-/media/DotCom/about-pjm/pjm-zones.pdf"]},

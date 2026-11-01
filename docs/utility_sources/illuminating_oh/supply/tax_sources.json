@@ -1,0 +1,49 @@
+{
+  "reviewed_on": "2026-10-31",
+  "sources": [
+    {
+      "name": "orc_5727_81.html",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5727.81",
+      "path": ".cache/illuminating_oh/sources/supply/orc_5727_81.html",
+      "status": 200,
+      "bytes": 30366,
+      "sha256": "58f13e232da46c407f9d6f6be2e3c19400e5156e8b294f973dbc5bb091d74696",
+      "excerpt": "orc_5727_81-selected.txt",
+      "excerpt_sha256": "78794181ae6ca5bab3be67b1b15dd21649ee52c3f3a69cf05f90d23bb3a4d70e"
+    },
+    {
+      "name": "orc_5751_03.html",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5751.03",
+      "path": ".cache/illuminating_oh/sources/supply/orc_5751_03.html",
+      "status": 200,
+      "bytes": 16297,
+      "sha256": "3a757f5a1f4ebe68c686932262d36d894c7fed6e495d63d0d64ad1fbf8394b5f",
+      "excerpt": "orc_5751_03-selected.txt",
+      "excerpt_sha256": "51686e246e8d887f9a2cef1ef6933c9e57dba64d59bee5cba4e869999e545a35"
+    },
+    {
+      "name": "orc_5739_02.html",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5739.02",
+      "path": ".cache/illuminating_oh/sources/supply/orc_5739_02.html",
+      "status": 200,
+      "bytes": 72982,
+      "sha256": "2f7f0ee91f4c6a3b56df93a93c48488d7dc5ace714d98853d619f91f953b57c3",
+      "excerpt": "orc_5739_02-selected.txt",
+      "excerpt_sha256": "262001b42ef8072ed643b85787d85775944a0efe330357b72d0f623ec4eac178"
+    },
+    {
+      "name": "orc_5739_02_2023.pdf",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/57/5739/5739.02/10-3-2023/5739.02-10-3-2023.pdf",
+      "path": ".cache/illuminating_oh/sources/supply/orc_5739_02_2023.pdf",
+      "status": 200,
+      "bytes": 289486,
+      "sha256": "b372091d44e96efc82aedcb8ec46a90c95470c1a0162e137f5dd0cab4bb25d82",
+      "pages": 19,
+      "selected_pdf_pages": [
+        3
+      ],
+      "excerpt": "orc_5739_02_2023-selected.txt",
+      "excerpt_sha256": "cbbce5501856973e28b2854824d8ce5dc5186dcb06fe5c082a9811051753086c"
+    }
+  ]
+}

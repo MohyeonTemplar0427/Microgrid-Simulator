@@ -1,0 +1,20 @@
+Original URL: https://emergencyprocedures.pjm.com/ep/pages/regions.jsf
+Original HTML SHA-256: 9a879a9b95d2858c58383af515a2b7901d4a3c23d2bba84f3405e5c7f6287045
+Retrieved: 2026-10-31
+
+See Load Management Subzone zip code definitions within the Demand Response section of pjm.com:
+http://www.pjm.com/markets-and-operations/demand-response.aspx
+FE-AP
+N/A
+FE-ATSI
+Control Area
+OH
+Former ATSI: Penn Power, Ohio Edison, The Illuminating Company & Toledo Edison (FirstEnergy; FE-West)
+WESTERN
+PJM-RTO
+FE-JC
+Transmission Zone
+NJ
+Former GPU: Jersey Central Power & Light (FirstEnergy; FE-East)
+MIDATL
+PJM-RTO, MAD

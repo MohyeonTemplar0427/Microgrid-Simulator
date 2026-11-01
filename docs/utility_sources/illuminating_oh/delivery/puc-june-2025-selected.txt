@@ -1,0 +1,367 @@
+Official tariff selected source pages
+Original URL: https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Cleveland%20Electric%20Illuminating%20Company%2C%20FIRSTENERGY/PUCO13%20Scheduleof%20Rates%20for%20Electric%20Service%20%281%29.pdf
+Retrieved: 2026-10-31
+Original PDF SHA256: 85d5b7872955a33fd2bb03358318069111ecea85994716985e85b307bd7c773a
+PDF page numbers below are one-based; source text extracted with pypdf.
+
+
+=== PDF PAGE 117 ===
+The Cleveland Electric Illuminating Company Sheet 96
+Cleveland, Ohio P.U.C.O. No. 13 64th Revised Page 1 of 1
+RIDER DRR
+Delta Revenue Recovery Rider
+Filed pursuant to Order dated May 15, 2024 in Case No. 23-301-EL-SSO and Case No. 24-1060-EL-RDR before
+The Public Utilities Commission of Ohio
+ Effective:  July 1, 2025
+APPLICABILITY:
+Applicable to any customer receiving electric service under the Company's rate schedules or reasonable
+arrangement (special contract) approved by the Public Utilities Commission of Ohio.  The Delta Revenue
+Recovery Rider (DRR) charge will apply, for all rate schedules, effective for service rendered beginning
+July 1, 2025, for all kWhs per kWh.  This Rider is not avoidable for customers who take electric
+generation service from a certified supplier.
+PURPOSE:
+The DRR charge recovers the difference in revenue (“delta revenue”) between the application of rates in
+the otherwise applicable rate schedule and the result of any economic development schedule, energy
+efficiency schedule, reasonable arrangement, or governmental special contract approved by the Public
+Utilities Commission of Ohio on or after January 1, 2009.
+RATE:
+RS  0.0002¢
+GS 0.0001¢
+GP 0.0000¢
+GSU  0.0000¢
+GT 0.0000¢
+STL 0.0006¢
+TRF  0.0001¢
+POL 0.0007¢
+RIDER UPDATES:
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than
+December 1st, March 1st, June 1st and September 1st of each year, the Company will file with the PUCO
+a request for approval of the Rider charges which, unless otherwise ordered by the PUCO, shall become
+effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each year.
+This Rider is subject to reconciliation, including, but not limited to increases or refunds. Such
+reconciliation shall be based solely upon the results of audits ordered by the Commission.
+
+
+=== PDF PAGE 121 ===
+The Cleveland Electric Illuminating Company Sheet 99
+Cleveland, Ohio P.U.C.O. No. 13 65th Revised Page 1 of 1
+RIDER DUN
+Distribution Uncollectible Rider
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case
+No. 24-1061-EL-RDR, before The Public Utilities Commission of Ohio
+Issued by: Torrence L. Hinton, President                                                                                        Effective: July 1, 2025
+APPLICABILITY:
+Applicable to any customer who receives electric service under the Company's r ate schedules.  The
+Distribution Uncollectible Rider (DUN) charge will apply, for all rate schedules, effective for service
+rendered beginning July 1, 2025, for all kWhs per kWh.  This Rider is not avoidable for customers during
+the period the customer takes electric generation service from a certified supplier.
+RATE:
+DUN charge 0.0738¢
+RIDER UPDATES:
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than
+December 1st, March 1st, June 1st and September 1st of each year, the Company shall file with the
+PUCO a request for approval of the rider charges which, unless otherwise ordered by the PUCO, shall
+become effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each
+year.  To the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to
+increases or refunds. Such reconciliation shall be based solely upon the results of audits ordered by the
+Commission in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and
+the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO.
+
+
+=== PDF PAGE 131 ===
+The Cleveland Electric Illuminating Company Sheet 106
+Cleveland, Ohio P.U.C.O. No. 13 61st Revised Page 1 of 1
+RIDER AMI
+Advanced Metering Infrastructure / Modern Grid Rider
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case
+No. 24-1027-EL-RDR before The Public Utilities Commission of Ohio
+Issued by: Torrence L. Hinton, President Effective: July 1, 2025
+APPLICABILITY:
+Applicable to any customer who receives electric service under the Company’s rate schedules, with the
+exception of General Service - Transmission (Rate “GT”).  This Advanced Metering Infrastructure /
+Modern Grid Rider charge is a fixed monthly charge and will be effective for service rendered beginning
+July 1, 2025. This Rider is not avoidable for customers during the period the customer takes electric
+generation service from a certified supplier.
+CHARGE *:
+RS $1.019
+GS $13.291
+GP $76.710
+GSU $139.026
+STL (per lighting unit) $0.964
+TRF $1.102
+POL $5.769
+* The charges listed above, except those for rate schedule STL, will be applied per customer, per
+month.  Any customer who receives electric service under rate schedule STL will have the above
+charge applied per lighting unit, per month.
+PROVISIONS:
+The charges set forth in this Rider recover costs associated with the Ohio Site Deployment of the Smart
+Grid Modernization Initiative in Case No. 09-1820-EL-ATA.  Any additional costs associated with
+expansion of the Ohio Site Deployment or the implementation of any additional advanced metering or grid
+modernization infrastructure in Ohio including, but not limited to, Commission directed, legislatively
+mandated or Company initiated and Commission approved infrastructure expansion will be collected
+through this Rider.
+RIDER UPDATES:
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis. No later than
+December 1st, March 1st, June 1st and September 1st of each year, the Company shall file with the
+PUCO a request for approval of the Rider charges which, unless otherwise ordered by the PUCO, shall
+become effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each
+year.  To the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to
+increases or refunds. Such reconciliation shall be based solely upon the results of audits ordered by the
+Commission in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and
+the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO and upon the Commission’s orders
+in Case No. 18-47-AU-COI.
+
+
+=== PDF PAGE 134 ===
+The Cleveland Electric Illuminating Company Sheet 109
+Cleveland, Ohio P.U.C.O. No. 13 65th Revised Page 1 of 1
+RIDER PUR
+PIPP Uncollectible Rider
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case
+No. 24-1061-EL-RDR, before The Public Utilities Commission of Ohio
+Issued by: Torrence L. Hinton, President                                                                                        Effective: July 1, 2025
+APPLICABILITY:
+Applicable to any customer who receives electric service under the Company's r ate schedules.  The PIPP
+Uncollectible Rider (PUR) charge will apply, for all rate schedules, effective for service rendered
+beginning July 1, 2025, for all kWhs per kWh.  This Rider is not avoidable for customers during the period
+the customer takes electric generation service from a certified supplier.  This Rider recovers uncollectible
+expense associated with PIPP customers to the extent such expense is incurred by the Company  and is
+not recovered elsewhere.
+RATE:
+PUR charge 0.0009¢
+RIDER UPDATES:
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than
+December 1st, March 1st, June 1st and September 1st of each year, the Company shall file with the
+PUCO a request for approval of the rider charges which, unless otherwise ordered by the PUCO, shall
+become effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each
+year.  To the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to
+increases or refunds. Such reconciliation shall be based solely upon the results of audits ordered by the
+Commission in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and
+the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO.
+
+
+=== PDF PAGE 146 ===
+The Cleveland Electric Illuminating Company Sheet 115
+Cleveland, Ohio P.U.C.O. No. 13 35th Revised Page 1 of 3
+RIDER DSE
+Demand Side Management and Energy Efficiency Rider
+F
+iled pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO and Case
+No. 25-0091-EL-RDR, before The Public Utilities Commission of Ohio
+Issued by: Torrence L. Hinton, President Effective:  July 1, 2025
+The Company reserves the right to revise such schedule consistent with the Commission’s final rules,
+which may include modification or deletion of all or portions of this schedule.
+AP
+PLICABILITY:
+A
+pplicable to any customer that takes electric service under the Company's r ate schedules.  The following
+charges will apply, by rate schedule, effective for service rendered beginning July  1, 2025, for all kWhs
+per kWh:
+RAT
+E: DSE1 DSE2
+RS 0.04
+62¢   0.0000¢
+GS 0.0462¢   0.0000¢
+GP 0.0462¢   0.0000¢
+GSU 0.0462¢   0.0000¢
+GT 0.0462¢   0.0000¢
+STL 0.0462¢   0.0000¢
+TRF 0.0462¢   0.0000¢
+POL 0.0462¢   0.0000¢
+PR
+OVISIONS:
+1. The D
+SE1 charges set forth in this Rider recover costs incurred by the Company associated with
+c
+ustomers taking service under the Economic Load Response Rider (ELR).
+2. T
+he DSE2 charges set forth in this Rider recover costs incurred by the Company associated with th e
+pr
+ograms that may be implemented by the Company to secure compliance with the energy efficiency
+and peak demand reduction requirements in Section 4928.66, Revised Code through demand-
+response programs, energy efficiency programs, peak demand reduction programs, and self -directed
+dema
+nd-response, energy efficiency or other customer-sited programs.  The costs initially deferred by
+the Company and subsequently fully recovered through this Rider will be all program costs, including
+but
+ not limited to any customer incentives or rebates paid, applicable carrying costs, all reasonable
+adm
+inistrative costs to conduct such programs, lost distribution revenues resulting from t he
+i
+mplementation of such programs, and any performance incentives such as shared savings.
+RI
+DER UPDATES:
+1. T
+he DSE1 charges set forth in this Rider shall be updated semi-annually.  No later than December
+1st and June 1st of each year, the Company shall file with the PUCO a request for approval of the
+R
+ider charges which, unless otherwise ordered by the PUCO, shall become effective on a service
+r
+endered basis on January 1st and July 1st of each year.
+
+
+=== PDF PAGE 151 ===
+The Cleveland Electric Illuminating Company Sheet 116
+Cleveland, Ohio P.U.C.O. No. 13 5th Revised Page 3 of 5
+RIDER EDR
+Economic Development Rider
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO and Case
+No. 24-1061-EL-RDR before The Public Utilities Commission of Ohio
+Issued by: Torrence L. Hinton, President                                                                                        Effective: July 1, 2025
+e. Standard Charge Provision
+APPLICABILITY:
+Applicable to any customer that takes electric service under the Company's r ate schedules.  This
+Standard Charge Provision is not avoidable for customers who take electric generation service from a
+certified supplier.
+PURPOSE:
+The charges provided for by Section (e) of this Rider recover the difference in revenues resulting from
+the application of rates in the otherwise applicable rate schedule, and the application of credits in
+sections (a), (b), and (c) of this Rider.
+RATE:
+The following total charges will apply, by rate schedule for all kWhs per kWh:
+ Provision 1 Provision 2 Total
+RS 0.0000¢ 0.0190¢     0.0190¢
+GS 0.1005¢ 0.0158¢     0.1163¢
+GP 0.1780¢ 0.0051¢     0.1831¢
+GSU 0.0000¢ 0.0026¢     0.0026¢
+GT 0.0000¢ 0.0006¢     0.0006¢
+STL 0.0000¢ 0.0706¢     0.0706¢
+TRF 0.0000¢ 0.0106¢     0.0106¢
+POL 0.0000¢ 0.0862¢     0.0862¢
+f. Provision Expired
+
+
+=== PDF PAGE 153 ===
+The Cleveland Electric Illuminating Company Sheet 116
+Cleveland, Ohio P.U.C.O. No. 13 5th Revised Page 5 of 5
+RIDER EDR
+Economic Development Rider
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO and Case
+No. 24-1061-EL-RDR before The Public Utilities Commission of Ohio
+Issued by: Torrence L. Hinton, President Effective: July 1, 2025
+i. Automaker Charge Provision
+APPLICABILITY:
+Applicable to any customer that takes electric service under the Company's r ate schedules with the
+exception of General Service - Transmission (GT), Street Lighting (STL), Traffic Lighting (TRF), and
+Private Outdoor Lighting (POL).  This Automaker Charge Provision is not avoidable for customers
+who take electric generation service from a certified supplier.
+PURPOSE:
+The charges provided for by Section (i) of this Rider recover costs associated with implementation of
+the Automaker Credit Provision.
+RATE:
+The following charge will apply effective for service rendered beginning July 1, 2025, for all kWhs per
+kWh:
+Automaker Charge 0.0026¢
+RIDER UPDATES:
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than
+December 1st, March 1st, June 1st and September 1st of each year, the Company will file with the PUCO
+a request for approval of the Rider charges which, unless otherwise ordered by the PUCO, shall become
+effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each year.  To
+the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to increases or
+refunds. Such reconciliation shall be based solely upon the results of audits ordered by the Commission
+in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and the March 31,
+2016 Opinion and Order in Case No. 14-1297-EL-SSO.
+
+
+=== PDF PAGE 157 ===
+The Cleveland Electric Illuminating Company Sheet 119
+Cleveland, Ohio P.U.C.O. No. 13 21st Revised Page 2 of 2
+RIDER NMB
+Non-Market-Based Services Rider
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and March
+19, 2025, in Case No. 25-0031-EL-RDR, before The Public Utilities Commission of Ohio
+Issued by: Torrence L. Hinton, President Effective: April 1, 2025
+NMBC = The amount of the Company’s total projected Non-Market-Based Services-related
+costs for the Computation Period, allocated to each rate schedule.
+The Computation Period over which NMB will apply shall be for a 12 month period
+beginning no later than 75 days after filing, which will be no later than January 15th
+of each year.
+E = Starting June 1, 2012, any net over- or under-collection of the Non-Market-Based
+Services-related costs, including applicable interest, invoiced during the period
+from June 1, 2011 to March 31, 2012, allocated to rate schedules.  Thereafter, E
+will be calculated for the 12-month period immediately preceding the Computation
+Period.
+BU = Forecasted billing units for the Computation Period for each rate schedule.
+CAT = The Commercial Activity Tax rate as established in Section 5751.03 of the Ohio
+Revised Code.
+NMB charges:
+RS (all kWhs, per kWh) 2.3233¢
+GS* (per kW of Billing Demand) $6.7456
+GP* (per kW of Billing Demand) $8.0035
+GSU (per kW of Billing Demand) $8.6697
+GT (per kVa of Billing Demand) $7.3552
+STL (all kWhs, per kWh) 0.0000¢
+TRF (all kWhs, per kWh) 1.4480¢
+POL (all kWhs, per kWh) 0.0000¢
+* Separately metered outdoor recreation facilities owned by non-profit, governmental and
+educational institutions, such as athletic fields, served under Rate GS or GP, primarily for
+lighting purposes, will be charged per the NMB charge applicable to Rate Schedule POL.
+RIDER UPDATES:
+The charges contained in this Rider shall be updated and reconciled on an annual basis.  The Company
+will file with the PUCO a request for approval of the Rider NMB charges no later than January 15th of
+each year, which shall become effective on a service rendered basis no later than  75 days after filing,
+unless otherwise ordered by the Commission. To the extent permitted by law, this Rider is subject to
+reconciliation, including, but not limited to increases or refunds. Such reconciliation shall be based solely
+upon the results of audits ordered by the Commission in accordance with the July 18, 2012 Opinion and
+Order in Case No. 12-1230-EL-SSO, and the March 31, 2016 Opinion and Order in Case No. 14-1297-
+EL-SSO and upon the Commission’s orders in Case No. 18-47-AU-COI.
+
+
+=== PDF PAGE 160 ===
+The Cleveland Electric Illuminating Company Original Sheet 121
+Cleveland, Ohio P.U.C.O. No. 13 Page 2 of 2
+RIDER NDD
+Non-Residential Deferred Distribution Cost Recovery Rider
+Filed pursuant to Order dated January 5, 2011, in Case No. 10-2984-EL-ATA, before
+The Public Utilities Commission of Ohio
+ Effective:  January 7, 2011
+RIDER UPDATES:
+The charges contained in this Rider shall be updated and reconciled May 31, 2010, December 31, 2010,
+and May 31, 2011.  For the May 2010 and May 2011 reconciliation, the Company shall file with the Public
+Utilities Commission of Ohio (“PUCO”) a request for approval of the rider updated charges which, unless
+otherwise ordered by the PUCO, shall become effective on a service rendered basis September 1, 2010
+and September 1, 2011, respectively.  The rider charges resulting from the December 31, 2010
+reconciliation will become effective in January 2011 upon filing with the PUCO subject to final
+reconciliation in May 2011.
+
+
+=== PDF PAGE 164 ===
+The Cleveland Electric Illuminating Company Sheet 125
+Cleveland, Ohio P.U.C.O. No. 13 23 rd Revised Page 1 of 1
+RIDER PIR
+Phase-In Recovery Rider
+Filed pursuant to Order dated October 10, 2012 in Case No. 12-1465-EL-ATS and
+Case No. 13-2142-EL-RDR, before
+The Public Utilities Commission of Ohio
+ Effective:  January 1, 2025
+APPLICABILITY:
+Applicable to any customer who receives electric service under the Company's rate schedules set forth
+below.  The Phase-In Recovery Rider (PIR) charges will apply, by rate schedule, for all kWhs per kWh.
+This Rider is nonbypassable within the meaning of O.R.C. § 4928.231 and is not avoidable for customers
+who take electric generation service from a certified supplier.
+RATE:
+RS 0.0427¢
+GS 0.0427¢
+GP1 0.0427¢
+GP2 0.0427¢
+GSU1 0.0427¢
+GSU2 0.0427¢
+GT1 0.0427¢
+GT2 0.0427¢
+STL 0.0427¢
+TRF 0.0427¢
+POL 0.0427¢
+PROVISIONS:
+1. The charges set forth in this Rider recover costs associated with phase-in recovery bonds issued to
+securitize costs for which the Company was previously authorized recovery, in accordance with
+O.R.C. §§ 4928.23 through 4928.2318.
+2. The GP2, GSU2, and GT2 PIR charges are applicable to those customers served under a special
+contract that included a fixed price for service where such fixed price was different than the rate under
+the otherwise applicable tariff and where the contract term included the period January 1, 2009
+through May 31, 2009.  The GP1, GSU1, and GT1 PIR charges are applicable to all other customers
+taking service under these rate schedules.
+RIDER UPDATES:
+The charges contained in this Rider shall be updated on a semi-annual basis.  No later than November 1 st
+and May 1st of each year, the Company will file with the PUCO a request for approval of the Rider
+charges which, unless otherwise ordered by the PUCO, shall become effective on a service rendered
+basis on January 1st and July 1st of each year.

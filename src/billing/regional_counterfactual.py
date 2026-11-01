@@ -9,6 +9,7 @@ from copy import deepcopy
 
 
 MODES = {
+    "firstenergy_ohio_illuminating": ("export_mode", "none"),
     "duquesne_light_pennsylvania": ("export_mode", "none"),
     "firstenergy_pa_penn_power": ("export_mode", "none"),
     "firstenergy_pa_penelec": ("export_mode", "none"),
@@ -80,7 +81,7 @@ def grid_only_counterfactual(utility, account, state=None):
         applied = bool(result.get("der_ordinary_service_confirmed"))
         set_account("der_ordinary_service_confirmed", False)
         set_account("der_eligibility_source", "")
-        if utility in ("duquesne_light_pennsylvania", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
+        if utility in ("firstenergy_ohio_illuminating", "duquesne_light_pennsylvania", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
             set_account("der_activation_date", "")
         if utility == "rockland_electric_new_jersey":
             set_account("der_activation_date", "")

@@ -1,0 +1,108 @@
+{
+  "reviewed_on": "2026-10-31",
+  "utility": "Cleveland Electric Illuminating Company (The Illuminating Company)",
+  "plans": [
+    "RS",
+    "GS"
+  ],
+  "supply": "sso",
+  "units": "USD/kWh; exact decimal strings converted from filed cents per kWh",
+  "window_semantics": "Supply selections restricted to complete intersections currently being reviewed by root; not automatic complete-bill coverage. June/GEN seasonal and rider bases are service-rendered. Capacity already converted to energy units; no PJM/PLC/NSPL/loss/CAT second adder.",
+  "windows": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-01-31",
+      "energy": ".073408",
+      "capacity": {
+        "RS": ".003130",
+        "GS": ".002846"
+      },
+      "gcr": ".003073",
+      "aer": "-.000213",
+      "ndu": ".000524",
+      "source": "jan2025"
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "energy": ".073661",
+      "capacity": {
+        "RS": ".022112",
+        "GS": ".021864"
+      },
+      "gcr": "-.002909",
+      "aer": ".000219",
+      "ndu": "-.001976",
+      "source": "june2025"
+    },
+    {
+      "start": "2025-08-14",
+      "end": "2025-08-31",
+      "energy": ".073661",
+      "capacity": {
+        "RS": ".022112",
+        "GS": ".021864"
+      },
+      "gcr": "-.001206",
+      "aer": ".000257",
+      "ndu": "-.000926",
+      "source": "aug2025"
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "energy": ".066966",
+      "capacity": {
+        "RS": ".022112",
+        "GS": ".021864"
+      },
+      "gcr": "-.001206",
+      "aer": ".000257",
+      "ndu": "-.000926",
+      "source": "aug2025"
+    },
+    {
+      "start": "2025-10-01",
+      "end": "2025-12-31",
+      "energy": ".066966",
+      "capacity": {
+        "RS": ".022112",
+        "GS": ".021864"
+      },
+      "gcr": ".000841",
+      "aer": ".000342",
+      "ndu": ".001303",
+      "source": "dec2025"
+    },
+    {
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "energy": ".072774",
+      "capacity": {
+        "RS": ".028612",
+        "GS": ".021729"
+      },
+      "gcr": ".009846",
+      "aer": ".000169",
+      "ndu": ".000975",
+      "source": "oct2026"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-02-01",
+      "end": "2025-05-31",
+      "reason": "GEN18 and earlier ESP-IV component continuity unverified; May13 archive inherently truncated, unrecoverable."
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2025-08-13",
+      "reason": "Supply components verified in August book, but delivery LGR12/allocation remains unverified; no complete-bill claim."
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-09-30",
+      "reason": "Quarterly supply sheet chronology not established from full readable originals; May10 archive inherently truncated and unrecoverable. A primary cached January2026 NDU excerpt alone is insufficient."
+    }
+  ]
+}

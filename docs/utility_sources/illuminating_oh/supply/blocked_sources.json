@@ -1,0 +1,31 @@
+{
+  "reviewed_on": "2026-10-31",
+  "sources": [
+    {
+      "id": "cei_20260510",
+      "url": "https://web.archive.org/web/20260510121025id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2026-Electric-Service.pdf",
+      "path": ".cache/illuminating_oh/sources/supply/cei_20260510.incomplete",
+      "bytes": 5242880,
+      "sha256": "b16ebdc0a27e95d8629ca2973b85d558ad6ae80f4a9fc376a72473089eb26ae2",
+      "complete_pdf": false,
+      "reason": "Archive capture truncated at5MiB; noEOF. May2026 HEAD has Warning299 wayback content truncated by length. Boundedpypdf/PyMuPDF repairfailed orreturned0pages; no selectedratesfrompartialsource.",
+      "establishes_rate_coverage": false
+    },
+    {
+      "id": "cei_20250513",
+      "url": "https://web.archive.org/web/20250513221003id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2025-Electric-Service.pdf",
+      "path": ".cache/illuminating_oh/sources/supply/cei_20250513.incomplete",
+      "bytes": 5242880,
+      "sha256": "ff8044592fa39084bb1a1867c09cddf180a366630aa19a4c54309875093f70f6",
+      "complete_pdf": false,
+      "reason": "Archive capture truncated at5MiB; noEOF. May2026 HEAD has Warning299 wayback content truncated by length. Boundedpypdf/PyMuPDF repairfailed orreturned0pages; no selectedratesfrompartialsource.",
+      "establishes_rate_coverage": false
+    }
+  ],
+  "cache_receipts": [
+    "cdx_2025.json",
+    "cdx_2026.json",
+    "wayback_2025_downloads.json",
+    "recovery_receipt.json"
+  ]
+}

@@ -1,0 +1,149 @@
+Original URL: https://www.firstenergycorp.com/feconnect/ohio-interconnection/OH-retail-interconnection.html
+Original HTML SHA-256: 36cb2d1c7ced4762b1630377ce48417d22f43a1ae0621cae4a14687a0c82a341
+Retrieved: 2026-10-31
+
+Interconnect Small Generation to the Distribution System
+Prior to completing the application process, a customer interested in interconnecting small generation with the Company's distribution system must first determine the size and type of equipment to install in accordance with the
+Company's Tariffs
+.
+NEW Online Portal
+We are excited to announce the launch of our new online interconnection Portal! The online portal will make the application process more convenient and efficient for you. We strongly encourage you to explore the benefits of using the new portal and are interested in your feedback.
+Features & Benefits of Online Applications
+Access to all your interconnection accounts with a secure login
+Ability to check the status of applications
+Ability to upload all necessary documents
+Capability to pay fees electronically either by a one-time bank or credit card payment using your contact/customer account number and invoice number
+Submit multiple applications
+Save and edit your applications
+Save time and avoid errors
+Interconnection Portal
+Part 1 - Customer Application Submission
+Open All
+Close All
+Step 1 - Required Size & Type of Equipment
+If you are interested in interconnecting small generation with the FirstEnergy's distribution system you must first determine the size and type of equipment which best suits the your requirements in accordance with the Company's Tariff.  The Interconnection Tariff rate schedule is available
+Ohio Tariffs
+.
+Step 2 - Type of Application Based on Capacity Level
+Below are guidelines for determining which application is required.  The online and paper applications are available in Step 5.  If you use the online application, the level will be determined for you based on the data that you provide.
+Level 1 - Generator Capacity of ≤ 25 kW, Inverter based, certified
+Level 2 - Generator Capacity For Level 3, the generator capacity limit is 20,000 kW
+Level 3 - Generator Capacity of >2,000 and <20,000kW / fails to qualify for levels 1 or 2
+Step 3 - Applicable Application Fees
+Level 1 - $50
+Level 2 - $50 plus $1/kW of the system’s nameplate capacity
+Level 3 - $100 plus $2/kW of the system’s nameplate capacity.
+Check Payments
+Please make sure the check is made payable to FirstEnergy Corporation and it includes the Customer Name and Account Number on the check to ensure that the payment goes to the correct account and work can begin.
+Step 4 - Required Site Plan & One-Line Diagram
+You are required to submit a site plan and one-line diagram with your application.  The online application allows you to attach these documents during the fourth step of the application process.
+Submit Site Plan
+Site Plan Example
+Please do not send overhead internet photos. The site plan
+must
+include:
+Overall property layout and street access including North arrow orientation and the nearest cross street in each direction. (Indicate direction of nearest cross street if impractical to show on drawing).
+Ground mounted installations must show clearances and details of surrounding structures especially how they cross the Company's facilities.  The route and length of the electrical connection to the premise is also required.
+Location of the DER AC disconnect meeting the requirements of the NEC - for self-contained metering locations.
+Location of the DER utility required AC visible break disconnect - for metering locations utilizing instrument transformers.
+Location of generation, inverter, storage and associated electrical equipment.
+Location of service transformer.
+Submit One-Line Diagram
+PV Example
+Turbine Example
+The one-line diagram
+must
+include:
+Energy source (PV array, wind turbine, etc.). Please indicate DC and AC ratings as appropriate.
+Please indicate AC rating of the inverter.
+Identify the make and model of the disconnect switch and note if it is lockable with a visible break when required.
+Identify connection to Customer’s electrical system.
+Identify utility meter, inverter and/or associated generation and storage (battery) equipment.
+Step 5 - Complete & Submit Application, Documents & Fees
+Complete Your Application
+NEW Online Portal Now Available
+We are excited to announce the launch of our new online interconnection Portal! The online portal will make the application process more convenient and efficient for you. We strongly encourage you to explore the benefits of using the new portal and are interested in your feedback.
+Interconnection Portal
+Paper Applications
+Level 1 Application - ≤ 25 kW, Inverter based, UL1741 Certified
+Level 2 and 3 Application
+Net Energy Metering Rider Application
+See "Net Metering" Chapter 4901:1-10-28 et seq. of the Ohio Administrative Code at
+http://codes.ohio.gov/oac/4901%3A1-10-28
+.* This link is also available through the Public Utilities Commission of Ohio's website at
+www.PUCO.ohio.gov
+.*
+Part 2 - Company Review & Conditional Approval
+Step 1 - Engineering Review
+Your application will be received and reviewed by our Engineering Department to ensure that:
+Application has been completed correctly
+All drawings and documentation have been provided.
+Associated fees have been determined and paid.
+The design is consistent with Company policy and State requirements.
+Our Company will process the application under the schedule provided for by the rules approved by the Public Utility Commission of Ohio.
+General Provisions -
+http://codes.ohio.gov/oac/4901:1-22-04v1
+*
+Simplified Procedures -
+http://codes.ohio.gov/oac/4901:1-22-06v1
+*
+Step 2 - Customer Notification
+After the engineering review, you will be notified via email or phone as to whether:
+Application is approved.
+An upgrade and fee is required.
+Information is incorrect or missing in the application.
+Part 3 - Construction & Final Approvals
+Open All
+Close All
+Step 1 - Customer Installation
+Following approval of the application, the Customer installs the facility in accordance with the Application, PUCO rules and the
+Company's Requirements for Interconnection of Customer-Owned Generation to the FirstEnergy Distribution System.
+Step 2 - Customer Agreement & Third-Party Inspection Report
+Following installation of your generation equipment, you must complete and submit the Interconnection Agreement with the following attachments:
+Select the appropriate Interconnection Agreement.
+Level 1 -
+Short Form Agreement
+Levels 2 or 3 -
+Standard Agreement Form
+Step 3 - Company Final Review & Approval to Operate
+Engineering will:
+Review the as-built installation and final documentation for compliance.
+Determine the need for a witness test as provided for in the regulations and notify customer.
+Finalize documentation and authorize system operation.
+Notify customer of the status of customer's application.
+Arrange for the installation of net energy metering, where appropriate.
+Note:
+Generation interconnection should not be energized prior to electrical inspection and receipt of Certificate of Completion signed by authorized Company personnel,
+Step 4 - Company Installs Net Meter
+If you already have provided a completed application for service under the Net Energy Metering Rider, the Company will replace the existing meter with a meter capable of bi-directional registration.  Depending on meter availability and other work priorities, this may take several weeks.
+Although you do not have to wait until the bi-directional meter is installed to operate your facility, FirstEnergy will not be responsible for tracking and crediting your excess generation until it is.
+You should be aware that depending on the type of meter currently set at your service location:
+Your existing meter could offset your usage by your excess generation, thereby "netting" your energy flows internally, rather than separately registering the energy in and out of your facility.
+Your existing meter may include a feature that prevents it from turning backwards and registering reverse power flow.  In this case, even though your facility should reduce the amount of electricity you need to purchase, the electricity your facility generates in excess of your current consumption would not be measured or subtracted from your overall electrical energy use.
+Your existing meter may register the kilowatt-hours your facility is providing to FirstEnergy's  system as though they were being delivered to you from FirstEnergy's system.
+You should not operate your facility in this circumstance since it will result in charges for the energy that you generate.
+Please check with your installer to ensure that you do not have this type of meter before operating your facility.
+Application and Agreement Submission Order
+In order to streamline the process and avoid delaying application review, please submit your documents in the following order.
+Step 1
+- Interconnection application, one line, site plan, spec sheets, and payment/fee
+Note: Checks should be payable to FirstEnergy Corporation and include Customer Name and Account Number
+.
+Level 1 Application (Most Residential) ≤ 25 kW, Inverter Based, UL1741 Certified
+Level 2 and 3 Application
+Step 2
+- Interconnection agreement, net energy meter rider, and third-party inspection report.
+Level 1 - Short Form Agreement
+Level 2 or 3 Standard Agreement Form
+Net Metering Application
+Additional Technical Requirements and References
+Interconnection Guide - Single Phase
+Interconnection Guide - Three Phase
+Ohio Tariffs
+Frequently Asked Questions
+Signage Requirements
+Commissioning Test Requirements
+Public Utilities Commission of OH
+*
+Bi-Directional Metering Information
+

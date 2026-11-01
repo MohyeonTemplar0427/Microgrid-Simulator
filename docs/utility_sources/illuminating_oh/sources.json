@@ -1,0 +1,79 @@
+{
+  "reviewed_on": "2026-10-31",
+  "utility": "firstenergy_ohio_illuminating",
+  "legal_name": "The Cleveland Electric Illuminating Company",
+  "jurisdiction": "Ohio / PUCO",
+  "tariff": "P.U.C.O. No.13",
+  "plans": [
+    "RS",
+    "GS"
+  ],
+  "supply": "ordinary SSO",
+  "verified_complete_calendar_windows": [
+    [
+      "2025-01-01",
+      "2025-01-31"
+    ],
+    [
+      "2025-06-01",
+      "2025-06-30"
+    ],
+    [
+      "2025-09-01",
+      "2025-12-31"
+    ],
+    [
+      "2026-10-01",
+      "2026-10-31"
+    ]
+  ],
+  "component_ledgers": [
+    "delivery/sources.json",
+    "supply/sources.json",
+    "supply/tax_sources.json",
+    "rules/sources.json"
+  ],
+  "source_integrity": "Each component ledger preserves original public source URL, PDF/header revision, effective date, selected excerpts and source hashes. Blocked/truncated sources are explicitly excluded as rate evidence.",
+  "files": {
+    "delivery/2025-CEI-Electric-Service-Tariff-selected.txt": "b66b840a3516881413e7f510b81a74401a96a3aa0445bbc136a396fc0e1b3180",
+    "delivery/CEI-2026-Electric-Service-selected.txt": "9b65ec560477bcf763293f35de287800351e9444da35eb2669aa0dbf98c0ba72",
+    "delivery/cei_20250612-selected.txt": "a88a8a3b8dc657df81a3dc55e7a552e04601193c9e6a9b41d9a892060eed081c",
+    "delivery/live-2024-jan2025-selected.txt": "03a207751563c8179585bc1912dadf448eb0de0d5a4dec56eadd5c5908c42359",
+    "delivery/live-2025-sept2025-selected.txt": "4a396336630dfc8ac9c800db8978d67cbffdf0fd9d70e9ed58cf8cb0f26af55d",
+    "delivery/puc-june-2025-selected.txt": "43a163d5436ed99943cd9ea8255e906a7f8e85ca8f8fff98d480171460923e5a",
+    "delivery/rates_by_window.json": "1ec18c5b824726f045c01529180dc7c6caf42ae1c37680d199578da5032e8f2e",
+    "delivery/research.md": "c58537f3f26ad5988242611cba22e437a28cac9ba6de17982b753cd3b57e247e",
+    "delivery/sources.json": "b655604ef5a7a9c4b380a7dc59635020416bdc29a699ea9f5d644291b80b172a",
+    "rules/2025-billing-supply-rules.txt": "d011fbd3f41d97ba0620f2276068ee54ef6b63ee881b6a893dc057f1fe661c56",
+    "rules/2025-rs-gs-schedules.txt": "e5a1f0749b4f1d5d9d1ab7c3ebc14a854b26d80060aec7142b7bdd09fbb8f624",
+    "rules/2026-billing-supply-rules.txt": "023dd606b4c22589de9d2d668dee78ae0be4a068b8173cf2b252a39fbcbc3c6e",
+    "rules/2026-rs-gs-schedules.txt": "22ac3f7d282350e73becd343231f621bb5545173144c4c33194a0c2451a26a5d",
+    "rules/2026-territory-parallel-nem.txt": "ad7303d0f8c712089e83b6f4830d3f994cde34338c58ac55a10734e71e20fe2f",
+    "rules/firstenergy_interconnection-selected.txt": "8ae61018102228420e87423a456fe3f033413d44c1c5d2499c9f465c884848b9",
+    "rules/firstenergy_pjm_zone-selected.txt": "26123302a8e88f4aaccc6656ca5fc70597cd434efaa8976b0ec53cb37c4d81d0",
+    "rules/ohio_nem_rule-selected.txt": "3192dc29b07559a1d3033b35d2bcef68e91def5413d6b57d08da50b820c1c006",
+    "rules/partial-service-nem-rules.txt": "cecb35b47938fecba8b043387a1cce1ebde05a043d80c26c246ab6577ea3d1e9",
+    "rules/pjm_regions-selected.txt": "275a0027e688eb483a271b263787a2b46e3a89452d6a960702b67bde7dc9fa50",
+    "rules/research.md": "15427bb95bc763349e7241e0bd86d181016ad7a7718509d279a7752d816d3532",
+    "rules/rules.json": "920223e87c2d2b768f71eeee4b7f6d27a5eddf5ec889b6b9af80ba64c5c2768a",
+    "rules/sources.json": "1bb620ba8d68b69a5e1ec6d200946579e9d8242d48bebc12a4d3c81a35a63d0d",
+    "supply/aug2025-selected.txt": "6316465d2192c627979328940a9e515659652c4bd6d8e7042cb7aadb49382dd0",
+    "supply/blocked_sources.json": "582a183a1bfdd5b69b331d0b04cd563f4ca8e38accc3c49cdc5dea371e27265c",
+    "supply/dec2025-selected.txt": "9b076cb26166420ec6740dfcfef7f1c083ac1011aca390fdef5a484712e21778",
+    "supply/jan2025-selected.txt": "3d2ce0e870af830b5c127c96ce8c764010d92e9c0e1552c869042947a48dd41a",
+    "supply/june2025-selected.txt": "2ed68cdeee757306ce62deb18fa2cce4a58c40bb338a3935d2955d8447085b99",
+    "supply/oct2026-selected.txt": "3bd50d7e5ef6326ba936abd2fd8ef38daf77ec4e1d5fb1d6e2df9cd7542384e2",
+    "supply/orc_5727_81-selected.txt": "78794181ae6ca5bab3be67b1b15dd21649ee52c3f3a69cf05f90d23bb3a4d70e",
+    "supply/orc_5739_02-selected.txt": "262001b42ef8072ed643b85787d85775944a0efe330357b72d0f623ec4eac178",
+    "supply/orc_5739_02_2023-selected.txt": "cbbce5501856973e28b2854824d8ce5dc5186dcb06fe5c082a9811051753086c",
+    "supply/orc_5751_03-selected.txt": "51686e246e8d887f9a2cef1ef6933c9e57dba64d59bee5cba4e869999e545a35",
+    "supply/rates_by_window.json": "98240a000080fa8db8a40d24b84b173933cbe8938c427e24aeaec5b2dd192779",
+    "supply/research.md": "5c176386044901bd956f2b0fc0a957bc024b674766160163bbfd3f502a21ec66",
+    "supply/sources.json": "6fbf8baccc6f1a30fe304d386b6fc12f4b946cc4e407f7b24d56f2f40cc581a9",
+    "supply/tax_rules.json": "4077bb26daebeb612f2444410db3e8a6d45ec7d8bbed2ac70d1bf7210c152be6",
+    "supply/tax_sources.json": "e78b2fdf3e46155be526ff8e13394e3792d26c57026806e6bb7fdd835b9755ca"
+  },
+  "private_originals": ".cache/illuminating_oh/sources/",
+  "no_rate_substitution": true,
+  "no_export_settlement": true
+}

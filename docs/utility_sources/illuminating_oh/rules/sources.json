@@ -1,0 +1,140 @@
+{
+  "research_date": "2026-10-31",
+  "sources": [
+    {
+      "id": "2025-rs-gs-schedules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-CEI-Electric-Service-Tariff.pdf",
+      "original_pdf_sha256": "3fca38bac7afdd48a459f457684e415af31ce7037267b18ec04397c3c28e1b79",
+      "pdf_pages_one_based": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "excerpt_file": "2025-rs-gs-schedules.txt",
+      "excerpt_sha256": "e5a1f0749b4f1d5d9d1ab7c3ebc14a854b26d80060aec7142b7bdd09fbb8f624",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2026-rs-gs-schedules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "99f7ef25320bdc39050b44e3309ed12e4bf00f3632df5f4dba4464310adb8efa",
+      "pdf_pages_one_based": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "excerpt_file": "2026-rs-gs-schedules.txt",
+      "excerpt_sha256": "22ac3f7d282350e73becd343231f621bb5545173144c4c33194a0c2451a26a5d",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2025-billing-supply-rules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-CEI-Electric-Service-Tariff.pdf",
+      "original_pdf_sha256": "3fca38bac7afdd48a459f457684e415af31ce7037267b18ec04397c3c28e1b79",
+      "pdf_pages_one_based": [
+        9,
+        10,
+        19,
+        20
+      ],
+      "excerpt_file": "2025-billing-supply-rules.txt",
+      "excerpt_sha256": "d011fbd3f41d97ba0620f2276068ee54ef6b63ee881b6a893dc057f1fe661c56",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2026-billing-supply-rules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "99f7ef25320bdc39050b44e3309ed12e4bf00f3632df5f4dba4464310adb8efa",
+      "pdf_pages_one_based": [
+        9,
+        10,
+        11,
+        21,
+        22
+      ],
+      "excerpt_file": "2026-billing-supply-rules.txt",
+      "excerpt_sha256": "023dd606b4c22589de9d2d668dee78ae0be4a068b8173cf2b252a39fbcbc3c6e",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "partial-service-nem-rules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-CEI-Electric-Service-Tariff.pdf",
+      "original_pdf_sha256": "3fca38bac7afdd48a459f457684e415af31ce7037267b18ec04397c3c28e1b79",
+      "pdf_pages_one_based": [
+        56,
+        90,
+        91
+      ],
+      "excerpt_file": "partial-service-nem-rules.txt",
+      "excerpt_sha256": "cecb35b47938fecba8b043387a1cce1ebde05a043d80c26c246ab6577ea3d1e9",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2026-territory-parallel-nem.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/CEI-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "99f7ef25320bdc39050b44e3309ed12e4bf00f3632df5f4dba4464310adb8efa",
+      "pdf_pages_one_based": [
+        5,
+        17,
+        91,
+        92
+      ],
+      "excerpt_file": "2026-territory-parallel-nem.txt",
+      "excerpt_sha256": "ad7303d0f8c712089e83b6f4830d3f994cde34338c58ac55a10734e71e20fe2f",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "ohio_nem_rule",
+      "original_url": "https://codes.ohio.gov/ohio-administrative-code/rule-4901:1-10-28",
+      "original_html_sha256": "f8a2a31e9b3eaf0500b66176fa9f370b8c381b013df3f90a4d8f53160c4ee737",
+      "excerpt_file": "ohio_nem_rule-selected.txt",
+      "excerpt_sha256": "3192dc29b07559a1d3033b35d2bcef68e91def5413d6b57d08da50b820c1c006",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "firstenergy_interconnection",
+      "original_url": "https://www.firstenergycorp.com/feconnect/ohio-interconnection/OH-retail-interconnection.html",
+      "original_html_sha256": "36cb2d1c7ced4762b1630377ce48417d22f43a1ae0621cae4a14687a0c82a341",
+      "excerpt_file": "firstenergy_interconnection-selected.txt",
+      "excerpt_sha256": "8ae61018102228420e87423a456fe3f033413d44c1c5d2499c9f465c884848b9",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "pjm_regions",
+      "original_url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "original_html_sha256": "9a879a9b95d2858c58383af515a2b7901d4a3c23d2bba84f3405e5c7f6287045",
+      "excerpt_file": "pjm_regions-selected.txt",
+      "excerpt_sha256": "275a0027e688eb483a271b263787a2b46e3a89452d6a960702b67bde7dc9fa50",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "firstenergy_pjm_zone",
+      "original_url": "https://www.firstenergycorp.com/supplierservices/oh/supplier_registration/pjm-short-name.html",
+      "original_html_sha256": "d2ce6956b708519d657f60929f804500c4b845be965f3843cefae054eaf5185f",
+      "excerpt_file": "firstenergy_pjm_zone-selected.txt",
+      "excerpt_sha256": "26123302a8e88f4aaccc6656ca5fc70597cd434efaa8976b0ec53cb37c4d81d0",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31"
+    }
+  ],
+  "visual_review": [
+    {
+      "original": "CEI-2026-Electric-Service.pdf",
+      "page": 30,
+      "image": ".cache/illuminating_oh/sources/rules/2026_gs_p30.png",
+      "checked": "Flat up-to-5-kW capacity amount, excess demand rate, thirty-minute integration/floor/contract and three-phase reactive-only rule verified visually"
+    },
+    {
+      "original": "2025-CEI-Electric-Service-Tariff.pdf",
+      "page": 28,
+      "image": ".cache/illuminating_oh/sources/rules/2025_gs_p28.png",
+      "checked": "Same demand structure and earlier prices verified visually"
+    }
+  ],
+  "rendering_note": "Poppler created both images successfully but emitted repeated fontconfig cache warnings; output was viewed. No PDF content was modified."
+}
