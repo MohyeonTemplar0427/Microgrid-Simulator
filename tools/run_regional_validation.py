@@ -67,6 +67,8 @@ BGE_CASES = (("bge_maryland", "residential", "R"), ("bge_maryland", "commercial"
 PENN_POWER_CASES = (("firstenergy_pa_penn_power", "residential", "RS"), ("firstenergy_pa_penn_power", "commercial", "GS-S"))
 DUQUESNE_CASES = (("duquesne_light_pennsylvania", "residential", "RS"), ("duquesne_light_pennsylvania", "commercial", "GS"))
 ILLUMINATING_CASES = (("firstenergy_ohio_illuminating", "residential", "RS"), ("firstenergy_ohio_illuminating", "commercial", "GS"))
+TOLEDO_CASES = (("firstenergy_ohio_toledo", "residential", "RS"), ("firstenergy_ohio_toledo", "commercial", "GS"))
+AES_OHIO_CASES = (("aes_ohio", "residential", "D17"), ("aes_ohio", "commercial", "D19"))
 PENELEC_CASES = (("firstenergy_pa_penelec", "residential", "RS"), ("firstenergy_pa_penelec", "commercial", "GS-S"))
 MET_ED_CASES = (("firstenergy_pa_met_ed", "residential", "RS"), ("firstenergy_pa_met_ed", "commercial", "GS-S"))
 ROCKLAND_CASES = (("rockland_electric_new_jersey", "residential", "SC1"), ("rockland_electric_new_jersey", "commercial", "SC2"))
@@ -78,6 +80,8 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "aes_ohio": ((2025,"2025-01-01","2025-12-31"),),
+    "firstenergy_ohio_toledo": ((2025,"2025-01-01","2025-12-31"),),
     "firstenergy_ohio_illuminating": ((2025,"2025-01-01","2025-12-31"),),
     "duquesne_light_pennsylvania": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
     "firstenergy_pa_penn_power": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-09-30")),
@@ -102,7 +106,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES + TOLEDO_CASES + AES_OHIO_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -205,6 +209,10 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
+    if utility=="aes_ohio" and custom is None and period=="annual":
+        raise ValueError("AES Ohio full-year2025 component coverage is unverified; select supported complete calendar cycles without substituting rates.")
+    if utility == "firstenergy_ohio_toledo" and custom is None and period == "annual":
+        raise ValueError("Toledo Edison full-year2025 component coverage is unverified; select January, June or September–November2025 complete calendar cycles, without current-rate substitution.")
     if utility == "firstenergy_ohio_illuminating" and custom is None and period == "annual":
         raise ValueError("The Illuminating Company full-year2025 component coverage is unverified; select January, June or September–December2025 complete calendar cycles, without current-rate substitution.")
     if utility == "rockland_electric_new_jersey" and custom is None and period == "annual":
@@ -230,6 +238,10 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2025-10-01","2025-10-31"
     if utility=="firstenergy_ohio_illuminating" and custom is None and period=="monthly":
         start,end="2025-06-01","2025-06-30"
+    if utility=="firstenergy_ohio_toledo" and custom is None and period=="monthly":
+        start,end="2025-06-01","2025-06-30"
+    if utility=="aes_ohio" and custom is None and period=="monthly":
+        start,end="2025-06-01","2025-06-30"
     if utility in ("xcel_energy_minnesota","we_energies_wisconsin") and custom is None and period=="monthly":
         start,end="2025-04-01","2025-04-30"
     if utility=="duke_energy_indiana" and custom is None and period=="monthly":
@@ -254,6 +266,10 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
+    if utility=="aes_ohio":
+        account.update(adapter(utility).hypothetical_defaults(account["tariff"],day=start[:7]+"-01"))
+    if utility=="firstenergy_ohio_toledo":
+        account.update(billing_month=start[:7]+"-01",bill_date=end)
     if utility=="firstenergy_ohio_illuminating":
         account.update(billing_month=start[:7]+"-01",bill_date=end)
     if utility=="duquesne_light_pennsylvania" and account["tariff"]=="GS":
@@ -341,7 +357,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
             r["name"] += " CIEP"
     r["operating_contract"].update(interconnection_confirmed=True, grid_charging_confirmed=True,
         reference="Explicit hypothetical utility-approved non-export PV/storage account; no export compensation assumed")
-    if utility.startswith("firstenergy_") or utility=="duquesne_light_pennsylvania":
+    if utility.startswith("firstenergy_") or utility in ("aes_ohio","duquesne_light_pennsylvania"):
         r["operating_contract"].update(grid_charging_confirmed=False,renewable_only_charging=True)
     r["solar"].update(tilt_degrees=30., azimuth_degrees=180., system_losses_fraction=.14,
                        inverter_efficiency=.96)
@@ -491,6 +507,66 @@ def attach_weather(app, request, inputs):
 def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
                        allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if utility=="aes_ohio":
+        from src.billing.aes_ohio import cycle_review, SEASONAL_MONTHS, LLF_BOUNDARY_USD
+        from src.billing.aes_ohio_rates import rates_on
+        cycle=cycle_review(account,index);m=bill.get("metrics",{});r=rates_on(cycle["service_start"],account["tariff"],bill_date=account["bill_date"])
+        require(bill.get("is_complete_bill") is True and bill.get("excluded_components")==[]
+                and bill.get("rate_evidence_status")=="verified" and bill.get("rate_assumptions")==[]
+                and bill.get("assumption_model") is None and m.get("rates")==r
+                and m.get("source_versions")==r["source_versions"] and m.get("supply_source_grade")==r["supply_source_grade"]
+                and m.get("quantity_basis")=="raw_interval_energy_no_unsourced_meter_rounding"
+                and m.get("rounded_cash_optimum_claimed") is False
+                and m.get("state_tax_cat_gross_up_applied") is False and m.get("additional_tax_percentage_applied") is False
+                and m.get("excise_tax_thresholds_kwh")==cycle["excise_tax_thresholds_kwh"],
+                "AES source grade, raw quantity, statutory tax or complete-bill scope differs")
+        raw=bill["unrounded_lines"];base=sum(raw[k] for k in ("distribution_customer","distribution_energy","distribution_demand"))
+        require(abs(base-m["base_distribution_usd"])<1e-7
+                and abs(raw["infrastructure_investment"]-base*r["infrastructure_percent"]/100.)<1e-7
+                and abs(raw["distribution_investment"]-base*r["distribution_investment_percent"]/100.)<1e-7
+                and abs(raw["tax_savings"]-base*r["tax_savings_percent"]/100.)<1e-7
+                and raw["customer_refund"]==0. and raw["minimum_adjustment"]==0.,
+                "AES selected distribution rider/minimum or one-time refund arithmetic differs")
+        if account["billing_month"] >= "2026-09-01":
+            require(m.get("d43_refund_status")=="confirmed_received_once_before_cycle"
+                    and account.get("d43_refund_resolved_confirmed") is True
+                    and m.get("d43_refund_received_date")==account["d43_refund_received_date"]
+                    and m.get("d43_refund_received_usd")==account["d43_refund_received_usd"],
+                    "AES later cycles require independently documented prior one-time D43 receipt")
+        if account["tariff"]=="D19":
+            history=m.get("demand_history_used",[])
+            floor=.75*max((h["maximum_kw"] for h in history if pd.Timestamp(h["month"]).month in SEASONAL_MONTHS),default=0.)
+            demand=max(m["actual_30_minute_peak_kw"],floor)
+            normal=demand*(r["distribution_demand"]+r["transmission_demand"])+bill["import_kwh"]*r["transmission_energy"]
+            capped=bill["import_kwh"]*r["low_load_combined"]
+            distribution_difference=abs(demand*r["distribution_demand"]-bill["import_kwh"]*r["low_load_distribution"])
+            require(len(history)==11 and abs(m["billing_demand_kw"]-demand)<1e-7 and abs(m["ratchet_floor_kw"]-floor)<1e-7
+                    and m["low_load_factor_applied"]==(normal>capped)
+                    and (abs(normal-capped)>LLF_BOUNDARY_USD or distribution_difference<=1e-7)
+                    and bill["next_state"]["history"]==history[1:]+[dict(month=account["billing_month"],maximum_kw=m["actual_30_minute_peak_kw"])],
+                    "AES30-minute seasonal actual-history ratchet, shared low-load branch or carried actual peak differs")
+        else:
+            require(bill["next_state"]=={} and m["billing_demand_kw"]==0.,"AES residential state/demand changed")
+        return "complete_utility_bill",[]
+    if utility=="firstenergy_ohio_toledo":
+        from src.billing.toledo_oh import cycle_review
+        cycle=cycle_review(account,index);m=bill.get("metrics",{});r=m.get("rates",{})
+        require(bill.get("is_complete_bill") is True and bill.get("excluded_components")==[]
+                and bill.get("rate_evidence_status")=="verified" and bill.get("assumption_model") is None
+                and bill.get("rate_assumptions")==[] and m.get("rounded_cash_optimum_claimed") is False
+                and m.get("quantity_basis")=="raw_interval_energy_no_unsourced_meter_rounding"
+                and m.get("demand_history_ratchet_applied") is False
+                and m.get("additional_tax_percentage_applied") is False
+                and m.get("state_tax_thresholds_kwh")==cycle["state_tax_thresholds_kwh"]
+                and m.get("source_versions")==r.get("source_versions"),"Toledo ordinary component/source/quantity/tax scope differs")
+        demand=0. if account["tariff"]=="RS" else max(m["actual_15_minute_peak_kw"],5.,account["contract_demand_kw"])
+        require(abs(m["billing_demand_kw"]-demand)<1e-7 and bill.get("next_state")=={},
+                "Toledo measured15-minute demand/contract floor or unsupported carried state differs")
+        base=sum(bill["unrounded_lines"][k] for k in ("distribution_customer","distribution_energy","distribution_demand"))
+        dcr_basis=base if r["dcr_basis"]=="base_distribution" else bill["import_kwh"] if account["tariff"]=="RS" else demand
+        require(abs(bill["unrounded_lines"]["delivery_capital"]-r["dcr"]*dcr_basis)<1e-8,
+                "Toledo DCR base-only percentage or energy/demand basis differs")
+        return "complete_utility_bill",[]
     if utility=="firstenergy_ohio_illuminating":
         from src.billing.illuminating_oh import cycle_review
         cycle=cycle_review(account,index);m=bill.get("metrics",{});r=m.get("rates",{})

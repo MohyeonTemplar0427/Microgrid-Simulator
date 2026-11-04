@@ -1,6 +1,6 @@
 {
   "format_version": 2,
-  "research_date": "2026-10-31",
+  "research_date": "2026-11-02",
   "purpose": "Indicative population footprint; not verified tariff-eligible people or a spatial population intersection",
   "eia": {
     "url": "https://www.eia.gov/electricity/data/eia861/zip/f8612024.zip",
@@ -28,7 +28,7 @@
   "pjm": {
     "url": "https://www.pjm.com/m/About-PJM",
     "reported_population": 67000000,
-    "vintage": "PJM public rounded headline reverified2026-10-31",
+    "vintage": "PJM public rounded headline reverified2026-11-01",
     "supporting_text": "PJM operates the electric grid that serves 67 million people across 13 states and the District of Columbia."
   },
   "household_size": {
@@ -249,6 +249,26 @@
       "repository_keys": [
         "firstenergy_ohio_illuminating"
       ]
+    },
+    {
+      "utility_id": 18997,
+      "label": "Toledo Edison",
+      "states": [
+        "OH"
+      ],
+      "repository_keys": [
+        "firstenergy_ohio_toledo"
+      ]
+    },
+    {
+      "utility_id": 4922,
+      "label": "AES Ohio (Dayton Power and Light)",
+      "states": [
+        "OH"
+      ],
+      "repository_keys": [
+        "aes_ohio"
+      ]
     }
   ],
   "west_penn": {
@@ -291,6 +311,7 @@
     "duquesne_light_pennsylvania",
     "firstenergy_ohio_edison",
     "firstenergy_ohio_illuminating",
+    "firstenergy_ohio_toledo",
     "firstenergy_pa_met_ed",
     "firstenergy_pa_penelec",
     "firstenergy_pa_penn_power",
@@ -301,7 +322,8 @@
     "potomac_edison_maryland",
     "ppl_electric_pennsylvania",
     "pseg",
-    "rockland_electric_new_jersey"
+    "rockland_electric_new_jersey",
+    "aes_ohio"
   ],
   "merged_utility_requirements": [
     {
@@ -320,9 +342,9 @@
   ],
   "current_additions": [
     {
-      "utility_id": 3755,
+      "utility_id": 4922,
       "state": "OH",
-      "repository_key": "firstenergy_ohio_illuminating"
+      "repository_key": "aes_ohio"
     }
   ],
   "baseline": {
@@ -337,5 +359,14 @@
   "registry_review": {
     "date": "2026-10-31",
     "scope": "ComEd separate workflow plus PJM regional registry utility/state-district entries, including this candidateCEI addition; counts represent at least one executable billing plan in some verifiedwindow, not complete2025-2026coverage."
+  },
+  "previous_implementation_snapshot": {
+    "research_date": "2026-11-01",
+    "estimate_file": "estimate_2026-11-01.json",
+    "estimate_sha256": "a0dc45e16f488898460c7f9e06c2471fa06d0a4d64770246ec16032b5284d240",
+    "inputs_file": "inputs_2026-11-01.json",
+    "inputs_sha256": "49193432d3d6231b8b68d3996c13b13141441639fea7265f580328f7dc72fdb8",
+    "implemented_workflow_count": 22,
+    "note": "Exact pre-AES22-workflow Toledo snapshot retained; its original engine/evidence ownership is not renewed."
   }
 }

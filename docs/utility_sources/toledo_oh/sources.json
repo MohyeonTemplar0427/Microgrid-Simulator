@@ -1,0 +1,81 @@
+{
+  "reviewed_on": "2026-11-01",
+  "utility": "firstenergy_ohio_toledo",
+  "legal_name": "The Toledo Edison Company",
+  "jurisdiction": "Ohio / PUCO",
+  "tariff": "P.U.C.O.No.8",
+  "plans": [
+    "RS",
+    "GS"
+  ],
+  "supply": "ordinary SSO",
+  "verified_complete_calendar_windows": [
+    [
+      "2025-01-01",
+      "2025-01-31"
+    ],
+    [
+      "2025-06-01",
+      "2025-06-30"
+    ],
+    [
+      "2025-09-01",
+      "2025-11-30"
+    ],
+    [
+      "2026-10-01",
+      "2026-10-31"
+    ]
+  ],
+  "component_ledgers": [
+    "delivery/sources.json",
+    "supply/sources.json",
+    "supply/tax_sources.json",
+    "rules/sources.json"
+  ],
+  "source_integrity": "Exact original source hashes, selected excerpts, revisions, dates, units and applicability are preserved. Truncated/blocked sources and the unreproducible December DCR lead do not establish executable rates.",
+  "files": {
+    "delivery/2025-TE-Electric-Service-Tariff-selected.txt": "11243258b624cf0bce5c2ca26b5655ae5d3e7ba90fd34b5ff6b9bec3db33deb6",
+    "delivery/TE-2026-Electric-Service-selected.txt": "7c993c65a550521a21b430425b20d2688c41c284dc923726f8c180990865c605",
+    "delivery/aug-2025-selected.txt": "6a1fb4aa81b4cd5f1cdc28bb0b4877ccef6cf563d090040fb5e135d588c66af5",
+    "delivery/june-2025-selected.txt": "7a81d25f6cc1d623bf4cb1bd1e61ff8a02069cd2edd0a94c1a5b49c6977e5678",
+    "delivery/live-2024-jan2025-selected.txt": "a43101cabe9906d62e29fb98e2fdb33a13849c72eeb3c55e999cf886cb92090f",
+    "delivery/puc-2025-selected.txt": "494c5e468a4e73514619e9c6ca2e9d8df4fafc77e5d79e5794eb3c470572fc3c",
+    "delivery/rates_by_window.json": "f0bfe441f9cbef8eaa5e23ac0de252409712e5f40e854fd26b572983378e7623",
+    "delivery/research.md": "f833c3cbaa604da7ed3c945cf1cf992406528aa7ba1b749b307ebae40437da2f",
+    "delivery/sources.json": "bfb1e48a43b8cccb476d2788a364e148e5f96762822a64853af1f7554899c0e8",
+    "delivery/unverified_december_lead.json": "dd6ec27b37ba9a85938a56db1669fb3aed639069d2fe6f1468b62ae9620d71be",
+    "rules/2025-billing-supply-rules.txt": "93c0f2c1658a9bca401efef22b5cb4a32d04b4885c9aa2657f6a547d946b3832",
+    "rules/2025-rs-gs-schedules.txt": "d7c444d4cb5a445adf23a9a779ada1bab12e2f5d611cfe0f4b2a15e423b0e3ea",
+    "rules/2026-billing-supply-rules.txt": "529ce2e3fda848efc905f6ec5f31eb54af991b7b528dd682a6b581fb7320d8d1",
+    "rules/2026-rs-gs-schedules.txt": "e10e198001cafcefa7c28f49722fb300b87712d6e6f31129751e1c87b081b7af",
+    "rules/2026-territory-parallel.txt": "1ced8171bd3feabf99dd202b90ce272d5d03893985f871c604ecb3ad1bbac894",
+    "rules/firstenergy_interconnection-selected.txt": "8ae61018102228420e87423a456fe3f033413d44c1c5d2499c9f465c884848b9",
+    "rules/firstenergy_pjm_zone-selected.txt": "26123302a8e88f4aaccc6656ca5fc70597cd434efaa8976b0ec53cb37c4d81d0",
+    "rules/ohio_nem_rule-selected.txt": "3192dc29b07559a1d3033b35d2bcef68e91def5413d6b57d08da50b820c1c006",
+    "rules/partial-service-nem-rules.txt": "2ab6e7e6de80493644cd1fa7e63033cd67b9b557d7c35a411ddf73e5cea960af",
+    "rules/pjm_regions-selected.txt": "275a0027e688eb483a271b263787a2b46e3a89452d6a960702b67bde7dc9fa50",
+    "rules/research.md": "5014ef6ff52c75da9c35b963cf5a133309c39d38eb29bede670b7c7d98f7e96f",
+    "rules/rules.json": "03b4d71c00400377011fb8fb2cf850acbe1ee8d80b5612b720f656f79bf71462",
+    "rules/sources.json": "95fb80ef01fcbb4aa7f80ff5664de57187e5cf79268ee13ac63d37bb9ef90584",
+    "supply/blocked_sources.json": "7c8d0ed5cc6d8818a98533e2e8bc125b3bf98e3cc989fb58fa5c95efe0d7efa4",
+    "supply/jan2025-selected.txt": "56ecc8060a129326109d828f977f2ad3b2310f043ca6dcec2b429281c4ceb418",
+    "supply/june2025-selected.txt": "cf90f0320193d2b8d5d53460c3bef89b32fad642acdfd191be3375759ec270dc",
+    "supply/oct2026-selected.txt": "b468a99dcef2ddaa292d302d61883eb67a1c561d3a6be3bdd97990190a072472",
+    "supply/orc_5727_81-selected.txt": "78794181ae6ca5bab3be67b1b15dd21649ee52c3f3a69cf05f90d23bb3a4d70e",
+    "supply/orc_5739_02-selected.txt": "262001b42ef8072ed643b85787d85775944a0efe330357b72d0f623ec4eac178",
+    "supply/orc_5739_02_2023-selected.txt": "cbbce5501856973e28b2854824d8ce5dc5186dcb06fe5c082a9811051753086c",
+    "supply/orc_5751_03-selected.txt": "51686e246e8d887f9a2cef1ef6933c9e57dba64d59bee5cba4e869999e545a35",
+    "supply/q3_2025-selected.txt": "3ef02ec18ccec07a689f496a04edbe25353a9966487390dd9d4523d4cd40b6ff",
+    "supply/q4_2025-selected.txt": "0e3b35f51171b1e96c3f7515ad4917f73728ec5fc7cc124e2221052891829f4a",
+    "supply/rates_by_window.json": "544251a525bd6411dcec54632db809336fe70894468e0c4ca3fd2e1f4f0cedae",
+    "supply/research.md": "f47defccce1a783d50f08b3e985cca4d427e84307644b0fb1b7eb1f56958bfa5",
+    "supply/sources.json": "77922f44a0a1717973e19de36ae24f1c77dba17d4528a99a71cbd2197bde4416",
+    "supply/tax_rules.json": "992c9d21388572c7c239d46ac6a288b32ab5be67387618e05b80bd1c7ec9651f",
+    "supply/tax_sources.json": "85e16ada78a05a4d6b27b6c920eefab39268800ede3e5847a286c92826c22a35",
+    "supply/visual_review.json": "ed13df8925c3c8dde21aa531909172c5940c95d4c46ddc8d987077bc86cb3f94"
+  },
+  "private_originals": ".cache/toledo_oh/sources/",
+  "no_rate_substitution": true,
+  "no_export_settlement": true
+}

@@ -1,5 +1,18 @@
 # Microgrid backend architecture
 
+AES Ohio's ordinary single-phase D17 Residential and D19 Secondary G10 SSO
+adapter is described in [its utility guide](AES_Ohio.md). G10 service dates
+remain separate from T08/rider bill dates. D19 retains actual 30-minute peaks,
+the seasonal prior-eleven-month ratchet and the coupled low-load alternative.
+Source gaps, unresolved D43 receipt and low-load comparator boundary cases
+reject. This additive adapter reuses the existing worker, solver and replay;
+earlier utilities keep their original acceptance evidence and engine pins.
+
+Toledo Edison's separate Ohio RS/measured GS SSO adapter is described in
+[its utility guide](Toledo_Edison_Ohio.md). Its GS demand interval is **15 minutes**,
+independently verified in both tariff regimes; CEI's 30-minute rule does not
+apply. Dated component gaps reject and prior utilities retain their own evidence.
+
 The Illuminating Company's separate Ohio RS/measured GS SSO adapter is described
 in [its utility guide](Illuminating_Company_Ohio.md). It reuses regional billing,
 dispatch and replay with verified component intersections only; it does not

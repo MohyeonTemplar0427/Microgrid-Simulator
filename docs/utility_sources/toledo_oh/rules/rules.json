@@ -1,0 +1,85 @@
+{
+  "research_date": "2026-11-01",
+  "utility": "firstenergy_ohio_toledo",
+  "legal_name": "The Toledo Edison Company",
+  "jurisdiction": "Ohio / PUCO",
+  "tariff_number": "P.U.C.O. No.8",
+  "source_manifest": "sources.json",
+  "verified_rule_versions": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-02-28",
+      "RS_sheet": "Original10 effective2009-01-23",
+      "GS_sheet": "Original20pages1-3 effective2009-01-23"
+    },
+    {
+      "start": "2026-03-01",
+      "end": "2026-10-31",
+      "RS_sheet": "1stRevised10 effective2026-03-01",
+      "GS_sheet": "1stRevised20pages1-3 effective2026-03-01"
+    }
+  ],
+  "RS": {
+    "eligibility": "One meter per family unit in residence/apartment; exclusively residential. Mixed residential/commercial through same meter, commercial/institutional/industrial premises and shared apartment facilities use appropriate general service.",
+    "service": "Secondary voltage utility assigned; one120/240Vsinglephase meter in initialmodel",
+    "special_meters_excluded": true
+  },
+  "GS": {
+    "eligibility": "General service installations requiring Secondary Service, one meter per installation; no universal small-load ceiling in Sheet20",
+    "secondary_definition_volts_max": 600,
+    "measured_demand_integration_minutes": 15,
+    "billing_demand": "max(highest aligned15-minute integrated importkW,5.0,documentedactualCompanycontractkW)",
+    "floor_kw": 5.0,
+    "history_ratchet": "No trailinghistoricalratchet inSheet20; independentcontractfloor retained acrossscenarios",
+    "contract_rule": "New serviceafter2009-01-22 orsignificantchange:60%expectedtypicalmonthlypeak; oldcontractsretained; Companymayrequire revisedcontract forincrease; customerreviewrequest no morethanonceper12months. ActualCompany-assignedcontractrequired, neverinferredfromDER-reducedimports.",
+    "non_demand_meter_rule": "Without demandmeter and>1000kWh/month measured demandestimatedaskWh/200; excludeestimated/unmeteredGS ininitialscope",
+    "reactive_charge": "Threephaseonly; $.360/rkVAbefore2026-03-01,$.60thereafter; singlephase excludescomponent",
+    "primary_metering_loss_reduction": "2%before2026-03-01;1.5%thereafter; excludeprimarysidemetering",
+    "base_capacity_first5_is_flat_monthly_amount": true,
+    "unverified_or_excluded": [
+      "Primarysidemetering",
+      "Unmeteredorestimateddemand",
+      "OptionalGSUschedule",
+      "Duplicate/premiumcircuits",
+      "Threephase/reactivebilling",
+      "OptionalTimeOfDay/Intervalmeterfees"
+    ]
+  },
+  "billing": {
+    "cycle": "Monthly typicallyapproximately30days; completecalendarcycles are narrower modelscope",
+    "season": "SummerJun1-Aug31;winterSep1-May31 unlesscomponentotherwisespecifies",
+    "effective_basis": "Nonseasonalrates begin withservicerendered onstatedeffectivedate; individualridersmayusespecialclock",
+    "partial_allocation": "No general fixed-chargeallocation ruleverified forpartial/shifted/splitcycles;excludeuntilspecificsourceevidence",
+    "minimum": "No separateordinaryRS/GS minimumbillclause;GS5kW/contractcapacityfloorapplies;PartialServicehasdifferentminimumsandexcluded",
+    "supplier": "OrdinaryGENSSOonly;shopping/CRES/aggregation/TOU/CPP/PTR/RTP/specialsexcluded; oneSupplierperbillingmonth;SSO/CertifiedSuppliercannotmixwithinmonth"
+  },
+  "DER": {
+    "ordinary_basis": "ToledoSheet93 applies underlyingordinaryscheduleandCompany-importpeakonly;Sheet52excludesNEMqualifyinggeneration. OhioOAC4901:1-10-28(B)(4)effective2024-04-08 requiresidenticalretailstructure/components/monthlychargestononcustomer-generator.",
+    "eligibility": "Qualifyingsolaronsite primarilyoffsetownrequirements;utilityapprovedsizing<=120%requirements basedonprior3yearaverageorreasonableutilityestimate",
+    "required_evidence": [
+      "ExactPVandpairedstorageconfiguration eligibility andordinary/NEMbillingconfirmedbyCompany",
+      "Writteninterconnectionagreement andfinalpermissiontooperatebeforestudy",
+      "Requiredmetersinstalled/active",
+      "NoPartialService/specialfacilities/recurringextrameterfeesconfirmed"
+    ],
+    "mode": "Zeroexportsandzerobank;PV-onlybatterycharging conservativestudyrestriction;no standalonestorage orverifiedexportsettlement",
+    "storage": "FirstEnergyOhiointerconnectioninstructionsrequirestorageequipmentinsiteplan,onelineandapplication;finalCompanyreview/approvalrequired;notautomaticNEMeligibility",
+    "sizing_bound": "Combinedstudyoutput<=25kWmayboundfirstmodel;notautomaticLevel1approvaloruniversaltariffeligibility",
+    "source_conflict": "OldSheet93requestedannualcashrefunddifferscurrentOACcontinuousmonetarycarryforward/no cashpaymentrequirement;do notenableunverifiedsettlement"
+  },
+  "PJM": {
+    "grid_operator": "PJM",
+    "emergency_region": "FE-ATSI",
+    "emergency_region_type": "Control Area",
+    "source": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+    "load_energy_zone": "FE Ohio",
+    "utility_company_code": "TE",
+    "transmission_context": "ATSI",
+    "separation": "FEOhioenergyzonecombinesOE/CEI/TE; CompanyspecificNSPL/transmissionaccountsretained. Utility/Ohio/SSO/PJMmetadata/wholesaleLMPnode/regionalaveragecarbonremainseparate"
+  },
+  "hypothetical_site": {
+    "latitude": 41.5,
+    "longitude": -83.65,
+    "label": "Explicit hypothetical unincorporatedWoodCountyOhio; countylisted inCompanyterritory but actualutility,localtax,GScontractandinterconnectionfactsrequireindependentconfirmation; coordinatesnoteligibilityfinding"
+  }
+}

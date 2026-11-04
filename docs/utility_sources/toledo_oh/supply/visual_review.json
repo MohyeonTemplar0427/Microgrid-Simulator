@@ -1,0 +1,29 @@
+{
+  "reviewed_on": "2026-11-01",
+  "pages": [
+    {
+      "image_path": ".cache/toledo_oh/sources/supply/jan2025_GEN.png",
+      "image_sha256": "86ba06dbe39b01eecedc83a4592e18feabd59cd447fe4531ff78cd94bb437416",
+      "source_pdf": "live-2024-jan2025.pdf",
+      "pdf_page_one_based": 121,
+      "status": "rendered_and_visually_reviewed",
+      "observed": "Effective header, cents/kWh energy and class capacity values match selected source excerpt"
+    },
+    {
+      "image_path": ".cache/toledo_oh/sources/supply/june2025_GEN.png",
+      "image_sha256": "65cc03a9426b1d1aca33c8c2ea637b9a370427702595f386a6ef1813bb2c9301",
+      "source_pdf": "june-2025.pdf",
+      "pdf_page_one_based": 135,
+      "status": "rendered_and_visually_reviewed",
+      "observed": "Effective header, cents/kWh energy and class capacity values match selected source excerpt"
+    },
+    {
+      "image_path": ".cache/toledo_oh/sources/supply/oct2026_GEN.png",
+      "image_sha256": "643f86fc4ce51acf2508b4466655618c73b1ef1d2f1f406b16498ecb63964816",
+      "source_pdf": "TE-2026-Electric-Service.pdf",
+      "pdf_page_one_based": 135,
+      "status": "rendered_and_visually_reviewed",
+      "observed": "Effective header, cents/kWh energy and class capacity values match selected source excerpt"
+    }
+  ]
+}

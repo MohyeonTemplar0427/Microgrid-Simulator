@@ -1,0 +1,223 @@
+{
+  "as_of": "2026-11-02",
+  "scope": "Supply/transmission and independent calculator evidence only",
+  "sources": [
+    {
+      "id": "rates-tariffs.html",
+      "url": "https://www.aes-ohio.com/rates-tariffs",
+      "status": "official_index_or_explanatory_page",
+      "original_path": ".cache/aes_ohio/sources/supply/rates-tariffs.html",
+      "bytes": 81140,
+      "sha256": "36f62270f532d862c5fb2864291ef9182679a36f09d665719689edab509312ea",
+      "retrieved_utc": "2026-11-02T21:06:42.096362+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "energy-supply.html",
+      "url": "https://www.aes-ohio.com/energy-supply",
+      "status": "official_index_or_explanatory_page",
+      "original_path": ".cache/aes_ohio/sources/supply/energy-supply.html",
+      "bytes": 67948,
+      "sha256": "2b56f29b7c1d9fff3cd52d3d9d0ba15fcf998a115515900387ec8b16c334772f",
+      "retrieved_utc": "2026-11-02T21:06:42.949712+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "residential-bill-calculator.html",
+      "url": "https://www.aes-ohio.com/residential-bill-calculator",
+      "status": "official_index_or_explanatory_page",
+      "original_path": ".cache/aes_ohio/sources/supply/residential-bill-calculator.html",
+      "bytes": 68765,
+      "sha256": "028dae0842f0a4f053fad3290b657ef998222668eff18e787e49f14db83a274a",
+      "retrieved_utc": "2026-11-02T21:09:33.627535+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "commercial-bill-calculator.html",
+      "url": "https://www.aes-ohio.com/commercial-bill-calculator",
+      "status": "official_index_or_explanatory_page",
+      "original_path": ".cache/aes_ohio/sources/supply/commercial-bill-calculator.html",
+      "bytes": 62598,
+      "sha256": "2652064774191032787d5743a031e39caf5c5aeff3407c58ecfd9259555ac52d",
+      "retrieved_utc": "2026-11-02T21:09:34.473291+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "energy-supply-press-release-2025.html",
+      "url": "https://www.aes-ohio.com/press-release/aes-ohio-customers-have-options-their-energy-supplier",
+      "status": "official_index_or_explanatory_page",
+      "original_path": ".cache/aes_ohio/sources/supply/energy-supply-press-release-2025.html",
+      "bytes": 63122,
+      "sha256": "6d23598507b66053421ae709b8a11c6df9a84da92fd7ad6eb887a40c7f945698",
+      "retrieved_utc": "2026-11-02T21:07:16.253798+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "G02-Tariff-Index-6-1-2026.pdf",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/G02-Tariff-Index-6-1-2026.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/G02-Tariff-Index-6-1-2026.pdf",
+      "bytes": 71335,
+      "sha256": "7c19ac946a213aab54605ab5c3bc68d7075a1d44ad60a0419f73b5293b92984a",
+      "retrieved_utc": "2026-11-02T21:06:44.331392+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "G10-Standard-Offer-Rate-6-1-2024.pdf",
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-05/G10%20-%20Standard%20Offer%20Rate%20%206-1-2024.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/G10-Standard-Offer-Rate-6-1-2024.pdf",
+      "bytes": 98642,
+      "sha256": "4066b28224061873e458f025cc7915398ef24cde533e38457e0088428b85f5d4",
+      "retrieved_utc": "2026-11-02T21:11:11.728532+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "G10-Standard-Offer-Rate-6-1-2026.pdf",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/G10-Standard-Offer-Rate-6-1-2026.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/G10-Standard-Offer-Rate-6-1-2026.pdf",
+      "bytes": 99720,
+      "sha256": "15c9edd2cd5c450f341648208f236018efb8c6d78af7531e71c14ea8ca9c376d",
+      "retrieved_utc": "2026-11-02T21:06:43.443750+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "T08-TCRR-6-1-2024.pdf",
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-05/T08%20-%20TCRR%206-1-2024.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/T08-TCRR-6-1-2024.pdf",
+      "bytes": 133922,
+      "sha256": "641ec69c340a8ebdd50bafdfcaaf28fc4a48ddf7eecbc960baf6ee4503fd8b7f",
+      "retrieved_utc": "2026-11-02T21:07:13.359662+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "T08-TCRR-9-1-2024.pdf",
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-09/T08%20-%20TCRR%209-1-2024_0.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/T08-TCRR-9-1-2024.pdf",
+      "bytes": 134195,
+      "sha256": "614184d78ed4ad12ede8bb6b213ae41ae169e28f786c48ea197e4d89e5d20f34",
+      "retrieved_utc": "2026-11-02T21:09:32.530219+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "T08-TCRR-6-1-2025.pdf",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-06/T08-TCRR-6-1-2025.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/T08-TCRR-6-1-2025.pdf",
+      "bytes": 111787,
+      "sha256": "8e7d46d34028d8dc1e11c371406dfcac4cf27ad92af144fc175046f5547e78e5",
+      "retrieved_utc": "2026-11-02T21:06:47.178385+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "T08-TCRR-9-1-2025.pdf",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-09/T08-TCRR-9-1-2025.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/T08-TCRR-9-1-2025.pdf",
+      "bytes": 207026,
+      "sha256": "cd4a4bccb6b31efb88a3036f9948664fbc324a5d6252e3b1fef2c05fb2be673f",
+      "retrieved_utc": "2026-11-02T21:12:36.746479+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "T08-TCRR-6-1-2026-rf.pdf",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/T08-TCRR-6-1-2026-rf.pdf",
+      "status": "official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/T08-TCRR-6-1-2026-rf.pdf",
+      "bytes": 116903,
+      "sha256": "8aabf15658bc4adc3d36a1879edae6e76399875697b55ecf2a25ee6f02b76b69",
+      "retrieved_utc": "2026-11-02T21:06:43.864676+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "Com-Website-Calculator-10-1-2026.xlsx",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/Com-Website-Calculator-10-1-2026.xlsx",
+      "status": "official_bill_calculator",
+      "original_path": ".cache/aes_ohio/sources/supply/Com-Website-Calculator-10-1-2026.xlsx",
+      "bytes": 2049059,
+      "sha256": "489b6a2b24c0f9da2c4fc2223bf624e0451b0f979a0a05a5b32c4d5164897542",
+      "retrieved_utc": "2026-11-02T21:09:30.989330+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "Com-Website-Calculator-6-1-2025.xlsx",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-06/Com-Website-Calculator-6-1-2025.xlsx",
+      "status": "official_bill_calculator",
+      "original_path": ".cache/aes_ohio/sources/supply/Com-Website-Calculator-6-1-2025.xlsx",
+      "bytes": 1905643,
+      "sha256": "665ff9dde930658ed2c20fb6189bd6421a55eacfa330d70b62b32545fba275c8",
+      "retrieved_utc": "2026-11-02T21:06:46.071593+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "Res-Website-Calculator-10-1-2026.xlsx",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/Res-Website-Calculator-10-1-2026.xlsx",
+      "status": "official_bill_calculator",
+      "original_path": ".cache/aes_ohio/sources/supply/Res-Website-Calculator-10-1-2026.xlsx",
+      "bytes": 2030116,
+      "sha256": "e926b789d55c867851abb564288eda04f66b2bddc3f2c9b660026d06481280d2",
+      "retrieved_utc": "2026-11-02T21:09:31.959844+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "Res-Website-Calculator-11-1-2026.xlsx",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-11/Res-Website-Calculator-11-1-2026.xlsx",
+      "status": "official_bill_calculator",
+      "original_path": ".cache/aes_ohio/sources/supply/Res-Website-Calculator-11-1-2026.xlsx",
+      "bytes": 2018245,
+      "sha256": "f6b3309348142a9c9d1b9ebb2d748ab41d264abfa570345441fb1e155e41f7ce",
+      "retrieved_utc": "2026-11-02T21:09:30.064977+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "Res-Website-Calculator-6-1-2025.xlsx",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-06/Res-Website-Calculator-6-1-2025.xlsx",
+      "status": "official_bill_calculator",
+      "original_path": ".cache/aes_ohio/sources/supply/Res-Website-Calculator-6-1-2025.xlsx",
+      "bytes": 1880496,
+      "sha256": "e4bd7fcc320fe271fa9fd8c69f5f813e11795b0ca203fe30647937c8e797bab5",
+      "retrieved_utc": "2026-11-02T21:06:45.173676+00:00",
+      "original_preserved": true
+    },
+    {
+      "id": "g10_2025_page1_search_snapshot.txt",
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Dayton%20Power%20and%20Light%20Company%20dba%20AES%20Ohio/dpl%20PUCO%2017Generation.pdf",
+      "status": "cached_search_rendering_of_official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/g10_2025_page1_search_snapshot.txt",
+      "bytes": 2181,
+      "sha256": "28bd20da84a6aa8d61608a5032abc0cb5bc73133e7dfd638fb400c41e0b02abb",
+      "retrieved_utc": "2026-11-02T21:18:21.742527+00:00",
+      "original_preserved": false,
+      "revision": 26,
+      "effective_date": "2025-06-01",
+      "limitation": "Cached official regulator page text reproduced via search. Live mutable URL now supplies2026original. This text is not an original adopted PDF."
+    },
+    {
+      "id": "g10_2025_cached_search_extract.txt",
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Dayton%20Power%20and%20Light%20Company%20dba%20AES%20Ohio/dpl%20PUCO%2017Generation.pdf",
+      "status": "cached_search_rendering_of_official_adopted_tariff",
+      "original_path": ".cache/aes_ohio/sources/supply/g10_2025_cached_search_extract.txt",
+      "bytes": 2813,
+      "sha256": "dae9ff587fac37866520fbc8323b27bfd8a6a00a00e692ffe7d154b78e41a94b",
+      "retrieved_utc": "2026-11-02T21:18:21.742736+00:00",
+      "original_preserved": false,
+      "revision": 26,
+      "effective_date": "2025-06-01",
+      "limitation": "Cached official regulator page text reproduced via search. Live mutable URL now supplies2026original. This text is not an original adopted PDF."
+    },
+    {
+      "id": "puco_generation_book_current",
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Dayton%20Power%20and%20Light%20Company%20dba%20AES%20Ohio/dpl%20PUCO%2017Generation.pdf",
+      "status": "official_adopted_tariff_current_compilation",
+      "original_path": ".cache/aes_ohio/sources/supply/puco_generation_2025.pdf",
+      "bytes": 720425,
+      "sha256": "0d0e3e07559f9d82725e000abb2beeb0a4e69c9158c6565239f80e829b58d0da",
+      "original_preserved": true,
+      "limitation": "Local historical-search filename contains2025 but actual content is2026G10 27th, page49 of56. Never count as2025adopted original."
+    }
+  ],
+  "failed_routes_path": ".cache/aes_ohio/sources/supply/failed_routes.json"
+}

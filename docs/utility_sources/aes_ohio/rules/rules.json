@@ -1,0 +1,90 @@
+{
+  "reviewed_on": "2026-11-02",
+  "scope_status": "Implementation-safe account constraints; complete rate windows are controlled by delivery/supply source intersection, not this common-rules ledger.",
+  "ordinary_accounts": {
+    "D17": {
+      "tariff_eligibility": "Single-phase residences, single apartments and churches, entire requirements through one meter; separately metered noncommercial barns/sheds on residential premises also qualify.",
+      "initial_study_scope": "Ordinary single-phase residential secondary account, one meter, no special contract/auxiliary service/tax exemption.",
+      "D14_residential_definition": "Standard secondary voltage, not exceeding400amps; primary use residential, incidental nonresidential portion no greater than residential portion.",
+      "supply": "G10 Standard Offer only; AGS/G9 excluded from initial scope",
+      "transmission": "T8 mandatory"
+    },
+    "D19": {
+      "tariff_eligibility": "Secondary nonresidential customer for lighting/power, all electric service at one premises location; any secondary-voltage portion invokes D19.",
+      "initial_study_scope": "Ordinary single-phase metered secondary; no primary-voltage metering adjustment, unmetered service, county fair/agricultural society special provision, special connected-load determination, emergency/auxiliary agreement or tax exemption.",
+      "supply": "G10 Standard Offer only; AGS/G9 excluded from initial scope",
+      "transmission": "T8 mandatory",
+      "minimum": "Customer Charge for regular complete monthly bill; source does not authorize generic day/30 proration."
+    }
+  },
+  "metering_and_calendar": {
+    "D05_B2": "Bills normally rendered monthly; other intervals by customer request and Company agreement. Charges computed monthly with due allowance and adjustments for readings adjusted to monthly basis.",
+    "partial_cycles": "No numeric fixed-charge/demand proration found in D05/G05/T05. Restrict initial studies to complete calendar months; reject partial cycles and unresolved mixed-rate periods.",
+    "transition_2025_11_06": "D05 revised effectiveNov6,2025; no adopted source recovered specifying midcycle allocation of base demand, customer/minimum, T08 and percentage riders. November2025 must remain blocked unless stronger source is added.",
+    "multi_meter": "D05 B9 prohibits combining separate meter/delivery readings absent specific tariff/agreement.",
+    "estimate_scope": "Real utility may estimate missing readings; simulator must reject missing input intervals rather than create estimates.",
+    "D05_versions": [
+      {
+        "revision": 8,
+        "effective": "2023-09-01",
+        "proof": "PUCO distribution bookPDFpp9-17"
+      },
+      {
+        "revision": 9,
+        "effective": "2025-11-06",
+        "proof": "D05_2025.pdf"
+      }
+    ],
+    "G05_T05": "G05 B1 and T05 B refer billing/meter/payment toD05; no further rate allocation rule.",
+    "measurement_days": "Local calendar measurement days for statute; DST23/25hour day remains one calendar day."
+  },
+  "D19_demand": {
+    "integration_minutes": 30,
+    "current": "Greatest30-minute integrated kW; include all intervals unless permitted offpeak designation/election applies.",
+    "offpeak_window_if_elected": "20:00–08:00, Saturdays/Sundays and observed NewYear, MemorialDay, IndependenceDay, LaborDay, Thanksgiving, Christmas; weighted75%. Other times100%.",
+    "history": "75% of greatest such offpeak or onpeak demand as used for billing in Jun,Jul,Aug,Dec,Jan,Feb within prior11months. Require genuine historical billing-demand records or explicitly established new-service history, never silently zero missing records.",
+    "offpeak_election": "For demand<1000kW no demand designated offpeak without electing$20/month metering option; minimum1year term then30days notice. Initial ordinary no-election scope treats every current interval as full-weight demand.",
+    "special_facilities": "Company may use85% total connected load when demand not proportionate to installed facilities; low-load factor provision then unavailable. Initial study excludes this determination.",
+    "low_load_factor": "D19 caps relevant demand/energy billing for D19 plus T8. Numeric cap and allocation are delivery/supply-ledger values; do not exclude ordinary low-load cases merely to avoid selector modeling.",
+    "minimum": "Monthly minimum is customer charge, not an invented minimumkW."
+  },
+  "excise_tax": {
+    "tariff": "D33 Fourth Revised, effective2018-10-01, filed case15-1830-EL-AIR order2018-09-26; identical D33 in assembledJune2025 book and current adopted index.",
+    "statute": "ORC5727.81(A), effective2023-10-03; authenticatedLSCDocument308891 all6pages reviewed.",
+    "basis": "kWh distributed through utility meter; for nonexport model use gross utility-importkWh, not native behind-meter load or net-after-credit money.",
+    "rates_usd_per_kwh": [
+      "0.00465",
+      "0.00419",
+      "0.00363"
+    ],
+    "exact30day_thresholds_kwh": [
+      2000,
+      15000
+    ],
+    "otherday_thresholds_kwh": [
+      "67*calendar_days",
+      "500*calendar_days"
+    ],
+    "formula": "r1*min(Q,b1)+r2*min(max(Q-b1,0),b2-b1)+r3*max(Q-b2,0)",
+    "CAT_gross_up": "None stated byAESD33 or D05/D15/G05/T05; do not import ToledoSKT grossup or apply generic0.26% wholebill adder.5751.03 defines taxpayer tax rate, not an AES retail billing component.",
+    "cap": "No ordinaryD17/D19 maximum found; reviewed entireD33 andORC5727.81.",
+    "excluded": "Federal/uranium/qualified-regeneration/qualified-manufacturing exemptions; special self-assessing regime underC; special exemption claims. Ordinary imported electricity remains distinct from own generated selfconsumption.",
+    "calculator_conflict": "Official commercial calculator normalizes25–35day bills to1 and uses2000/15000 bands, differing from statute fornon30days. Use calculator tax benchmark only for exactly30days; statutory detailed-tariff contract controls modeled non30days and label discrepancy."
+  },
+  "other_taxes": {
+    "sales_tax": "ORC5739.02(B)(7):electricity delivered through wires exempt.2023 authenticated andcurrentSep30,2025 versions retained. No generic Ohio sales tax percentage.",
+    "CAT": "ORC5751.03 rate0.0026 is taxpayer grossreceiptstax; no independent AES line-item authority found.",
+    "local": "No separate municipal/franchise percentage verified. Initial scope requires ordinary jurisdiction/account with no separate local adder; do not infer local tax from sales tax tables."
+  },
+  "DER": {
+    "2025_basis": "D35 FourthRev effectiveSep1,2023 applies physical connection/parallel operation; definitionK includes static inverter, p18 expressly distinguishesPVwith no battery storage. Thus storage configurations were contemplated before2026; exact equipment approval remains required.",
+    "required_attestation": "Company approval and executed interconnection agreement/PTO must cover exactPV orPV+paired-storage equipment and nonexport operating configuration. Confirm ordinaryD17/D19 continues with noD10 emergency/auxiliary contract-capacity charge.",
+    "study_restrictions": "Behindmeter PV orPV+paired storage, no exports or exportcredit ledger; battery charging only fromPV is conservative simulator scope, not asserted AES mandate; standalone battery excluded.",
+    "sizing": "D05D andOAC4901:1-10-28 effectiveApr8,2024:primarily offset own requirements; size no greater than120% of requirements based on average utility supplied annually previous3years; OAC allows consumption estimate for unique circumstances. Do not substitute current webFAQ previousyear wording.",
+    "ordinary_rates": "OAC4901:1-10-28(B)(4):standard netmetering tariff rate structure, retail components and monthly charges identical to otherwise-applicable tariff. Source supports ordinary account basis but does not prove equipmentapproval.",
+    "standby_exclusion": "D10D emergency/auxiliary service uses agreed ContractCapacityCharge based on greater of prior12month peakbillingkW oragreedcapacity times applicable distributionkW rate lesscontinuouscosts; exclude such agreements.",
+    "G11_exclusion": "OriginalG11 effectiveMay1,2018 appliesFERCQF notonD05NEM; separate agreement, totaloutputsale andmonthlyadministrative fee. ExcludeQF/PURPA/cogeneration/thirdpartysale/wholesalesettlement.",
+    "future_guide": "Feb11,2026technicalguide explicitlydefinesESS andBTMnonexportclass andPTO; supplementary currentguidance only, notbackdated2025adoptedproof.",
+    "unverified": "No blanket historical automaticPV+storageeligibility orAESrenewable-onlychargingmandate verified; noactual customerPTO/companyapproval obtained. Modeled support conditional on account/configuration attestations, not engineering permission to install."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "unverified_research_lead_not_executable_rate_evidence",
+  "retrieved_on": "2026-11-01",
+  "query": "site.firstenergycorp.com \"Toledo\" \"December 1, 2025\" \"DCR\"",
+  "search_result_ref": "turn376search12",
+  "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+  "reported_sheet": "Sheet12455thRevised,December1,2025,Case25-0930-EL-RDR",
+  "reported_rates": {
+    "rs_usd_per_kwh": ".006891",
+    "gs_usd_per_billing_kw": "2.5768"
+  },
+  "verification_failure": "OpeningsearchrefredirectedtooldTE-2025PDFtextwith54thSept1DCR,not55th;cachedsearchleadnotreproducibleasfullsheet. RootagreesnottoenabledDecember.",
+  "attempted_followup": "Oneopen+find55threturnednone;no unchangedroutes repeated"
+}

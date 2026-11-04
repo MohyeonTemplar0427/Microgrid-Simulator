@@ -1,0 +1,103 @@
+{
+  "reviewed_on": "2026-11-01",
+  "utility": "The Toledo Edison Company",
+  "plans": [
+    "RS",
+    "GS"
+  ],
+  "supply": "sso",
+  "units": "USD/kWh; exact decimal strings converted from filed cents per kWh",
+  "window_semantics": "Supply-only dated intersections. Delivery/rules determine executable complete bills; July/August and December2025 supply evidence does not establish missing delivery component or fixed-charge allocation. Service-rendered supply energy/capacity and quarterlies remain separate. No whole-bill CAT/wholesale LMP/PLC/NSPL/loss adder.",
+  "windows": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-01-31",
+      "energy": ".073408",
+      "capacity": {
+        "RS": ".003647",
+        "GS": ".003038"
+      },
+      "gcr": ".003073",
+      "aer": "-.000023",
+      "ndu": ".000317",
+      "source": "jan2025"
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "energy": ".073661",
+      "capacity": {
+        "RS": ".024846",
+        "GS": ".021990"
+      },
+      "gcr": "-.002909",
+      "aer": ".000172",
+      "ndu": "-.000546",
+      "source": "june2025"
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2025-08-31",
+      "energy": ".073661",
+      "capacity": {
+        "RS": ".024846",
+        "GS": ".021990"
+      },
+      "gcr": "-.001206",
+      "aer": ".000244",
+      "ndu": ".000159",
+      "source": "q3_2025"
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "energy": ".066966",
+      "capacity": {
+        "RS": ".024846",
+        "GS": ".021990"
+      },
+      "gcr": "-.001206",
+      "aer": ".000244",
+      "ndu": ".000159",
+      "source": "q3_2025"
+    },
+    {
+      "start": "2025-10-01",
+      "end": "2025-12-31",
+      "energy": ".066966",
+      "capacity": {
+        "RS": ".024846",
+        "GS": ".021990"
+      },
+      "gcr": ".000841",
+      "aer": ".000295",
+      "ndu": ".001307",
+      "source": "q4_2025"
+    },
+    {
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "energy": ".072774",
+      "capacity": {
+        "RS": ".029096",
+        "GS": ".021536"
+      },
+      "gcr": ".009846",
+      "aer": ".000135",
+      "ndu": ".000784",
+      "source": "oct2026"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-02-01",
+      "end": "2025-05-31",
+      "reason": "GEN18 and complete earlier ESP-IV chronology unverified; May2025 archived capture truncated and zero recoverable pages."
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-09-30",
+      "reason": "Earlier2026 supply quarterlies not retained. February2026 capture duplicates September/October2025 book; May2026 truncated with zero recoverable pages."
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+Original URL: https://codes.ohio.gov/ohio-administrative-code/rule-4901:1-10-28
+Original HTML SHA-256: f8a2a31e9b3eaf0500b66176fa9f370b8c381b013df3f90a4d8f53160c4ee737
+Retrieved: 2026-10-31
+
+Rule 4901:1-10-28 - Ohio Administrative Code | Ohio Laws
+Skip to main content
+Back To Top
+Top
+This website publishes administrative rules on their effective dates, as designated by the adopting state agencies, colleges, and
+universities.
+Rule 4901:1-10-28
+|
+Net metering.
+Ohio Administrative Code
+/
+4901:1
+/
+Chapter 4901:1-10 | Electric Companies
+Effective:
+April 8, 2024
+Promulgated Under:
+111.15
+PDF:
+Download Authenticated PDF
+(A) For purposes of this rule, the
+following definitions apply:
+(1) "Advanced
+meter" means any electric meter that meets the pertinent engineering
+standards using digital technology and is capable of providing two-way
+communications with the electric utility to provide usage and/or other
+technical data.
+(2) "CRES
+provider" means any provider of competitive retail electric
+service.
+(3) "Customer-generator" has the meaning set forth in
+division (A)(29) of section
+4928.01
+of the Revised Code. A customer that hosts
+or leases third party owned generation equipment on its premises is considered
+a customer-generator.
+(4) "Electric
+utility" has the meaning set forth in division (A)(11) of section
+4928.1
+of the Revised Code.
+(5) "Hospital"
+has the meaning set forth in division (C) of section
+3701.01
+of the Revised
+Code.
+(6) "Interval
+meter" means any electric meter that is capable of measuring interval
+usage data on at least an hourly basis.
+(7) "Microturbine" means a turbine or an integrated
+modular turbine package with a capacity of two megawatts or less.
+(8) "Net
+metering" has the meaning set forth in division (A)(30) of section
+4928.01
+of the Revised Code.
+(9) "Net metering
+system" has the meaning set forth in division (A)(31) of section
+4928.01
+of the Revised Code. Net metering system includes all facilities, regardless of
+whether the customer-generator is on the electric utility's net metering
+tariff or engaged in net metering with a CRES provider.
+(10) "Third
+party" means a person or entity that may be indirectly involved or
+affected but is not a principal party to an arrangement, contract, or
+transaction between other parties.
+(B) Net metering.
+(1) Each electric utility shall develop a
+standard net metering tariff and a hospital net metering tariff. The electric
+utility shall timely make such tariffs available to customer-generators upon
+request and on a nondiscriminatory basis.
+(2) A CRES provider may offer net
+metering contracts to its customers, consistent with Chapter 4901:1-21 of the
+Administrative Code, at any price, rate, credit, or refund for excess
+generation. The CRES provider and the customer may define the terms of any
+contract, including the price, rate, credit, or refund for any excess
+production by a customer-generator. A CRES provider is not required to enter
+into any net metering contract with any customer. Only customers who have
+signed an interconnection agreement with the electric utility may engage in net
+metering with a CRES provider.
+(3) Except as used by hospitals, a net
+metering system must use as its fuel either solar, wind, biomass, landfill gas,
+or hydropower, or use a microturbine or a fuel cell.
+(4) The electric utility's standard
+net metering tariff shall be identical in rate structure, all retail rate
+components, and any monthly charges, to the tariff to which the same customer
+would be assigned if that customer were not a customer-generator.
+(a) The electric utility shall disclose on the electric
+utility's website, and to any customer upon request, the name, address,
+telephone number, and email address of the electric utility's net metering
+department or contact person.
+(b) The electric utility shall provide on the electric
+utility's website, and to any customer upon request, all necessary
+information regarding eligibility for the electric utility's net metering
+tariffs. The electric utility shall also provide this information to any
+customer, upon request, within a net metering application packet. The website
+and application packet shall describe and provide the following information in
+a straightforward manner: net metering tariff terms and conditions, sample net
+metering and interconnection agreements, and the terms and conditions for
+eligibility to be a net metering customer-generator. The website and
+application packet shall also provide information on costs that the customer
+may incur as a result of net metering enrollment, including any costs
+associated with the following: application, interconnection, and meter
+installation.
+(5) A net metering system must be located
+on the customer-generator's premises. A customer-generator's premises
+is the area that is owned, operated, or leased by the customer-generator with
+the metering point for the customer-generator's account. A contiguous lot
+to the area with the customer-generator's metering point may be considered
+the customer-generator's premises regardless of easements, public
+thoroughfares, transportation rights-of-way, or utility rights-of-way, so long
+as it would not create an unsafe or hazardous condition pursuant to the
+interconnection standards set forth in Chapter 4901:1-22 of the Administrative
+Code.
+(6) Unless it is a hospital, a
+customer-generator must intend primarily to offset part or all of the
+customer-generator's requirements for electricity, regardless of whether
+the customer-generator is on the electric utility's net metering tariff or
+engaged in net metering by contract with a CRES provider.
+(a) The electric utility shall communicate with and assist a
+customer-generator in calculating the customer-generator's requirements
+for electricity based on the average amount of electricity supplied by the
+electric utility to the customer-generator annually over the previous three
+years. In instances where the electric utility cannot provide data without
+divulging confidential or proprietary information, or in circumstances where
+the electric utility does not have the data or cannot calculate the average
+annual electricity supplied to the premises over the previous three years due
+to new construction, vacant properties, facility expansions, or other unique
+circumstances, the electric utility shall use any available consumption data or
+measures to establish an appropriate consumption estimate. Upon request from
+any customer-generator, the electric utility shall provide or make available to
+the customer-generator either the average electricity supplied to the premises
+over the previous three years or a reasonable consumption estimate for the
+premises.
+(b) A customer-generator must size its facilities so as to not
+exceed one hundred twenty per cent of its requirements for electricity at the
+time of interconnections, regardless of whether the customer-generator intends
+to take service through an electric utility or a CRES provider.
+(7) Net metering shall be accomplished
+using a single meter capable of registering the flow of electricity in each
+direction. Upon request from a customer-generator, the electric utility shall
+provide the customer-generator with a detailed cost estimate of installing an
+interval meter. If the net metering system is located in an area where advanced
+meters have been deployed or are proposed to be deployed within twelve months,
+then the electric utility shall provide the customer-generator with a detailed
+cost estimate of installing an advanced meter that is also an interval
+meter.
+(a) If a customer-generator requests an advanced meter that is
+also an interval meter, then such cost shall be paid by the customer-generator
+through the applicable smart grid rider. If the net metering system is not
+located in an area where the electric utility has deployed, is deploying, or
+proposes to deploy within twelve months advanced meters, then the electric
+utility may install any interval meter.
+(b) The electric utility, at its own expense and with the written
+consent of the customer-generator, may install one or more additional meters to
+monitor the flow of electricity in each direction. No electric utility shall
+impose, without commission approval, any additional interconnection requirement
+or additional charges on customer-generators refusing to give such
+consent.
+(c) If a customer's existing meter needs to be reprogrammed
+for the customer to become a customer-generator, or to accommodate net
+metering, then the electric utility shall provide the customer-generator a
+detailed cost estimate for the reprogramming or setup of the existing meter.
+The cost of setting up the meter to accommodate net metering shall be at the
+customer's expense. If a customer-generator has a meter that is capable of
+measuring the flow of electricity in each direction, is sufficient for net
+metering, and does not require setup or reprogramming, then the
+customer-generator shall not be charged for a new meter, setup, or
+reprogramming to accommodate net metering.
+(d) For hospital customer-generators, net metering shall be
+accomplished using either two meters or a single meter with two registers that
+are capable of separately measuring the flow of electricity in both directions.
+One meter or register shall be capable of measuring the electricity generated
+by the hospital at the output of the generator or net of the hospital's
+load behind the meter at the time it is generated. If the hospital's
+existing electric meter is not capable of separately measuring electricity the
+hospital generates at the time it is generated, the electric utility, upon
+written request from the hospital, shall install at the hospital's expense
+a meter that is capable of such measurement.
+(8) The measurement of net electricity
+supplied by the electric utility or received from the customer-generator is
+calculated in the following manner:
+(a) The electric utility shall measure the net electricity
+produced or consumed during the billing period, in accordance with normal
+metering practices.
+(b) If the electricity supplied by the electric utility exceeds
+the electricity received from the customer-generator over the monthly billing
+cycle, then the customer-generator shall be billed for the net electricity
+consumed by it in accordance with normal metering practices.
+(c) For customer-generators on the electric utility's
+standard net metering tariff, when the electric utility receives more
+electricity from the customer-generator than it supplied to the
+customer-generator over a monthly billing cycle, the excess electricity shall
+be converted to a monetary credit at the energy component of the electric
+utility's standard service offer that continuously carries forward as a
+monetary credit on the customer-generator's future bills. The electric
+utility shall not be required to pay the monetary credit, other than to credit
+it to future bills, and the monetary credit may be lost if a customer-generator
+does not use the credit or stops taking service from the electric
+utility.
+(d) The hospital net metering tariff shall comply with division
+(A)(2) of section
+4928.67
+of the Revised Code. For purposes of this rule, the
+market value means the locational marginal price of energy determined by a
+regional transmission organization's operational market at the time the
+customer-generated electricity is generated.
+(e) A CRES provider may offer a net metering contract at any
+price, rate, or manner of credit for excess generation. The CRES provider shall
+notify the electric utility whenever a net metering contract has been entered
+into with a customer-generator. The electric utility may move the
+customer-generator to bill-ready billing, unless the CRES provider and the
+customer-generator agree to dual billing.
+(f) If a customer-generator is net metering with a CRES provider
+and uses an advanced meter capable of measuring at least hourly interval usage
+data, the electric utility shall transmit or make available to the CRES
+provider the customer-generator's interval data for that billing period
+within twenty-four hours of performing industry-standard validation,
+estimation, and editing processes. The electric utility shall also transmit or
+make available to the CRES provider the customer-generator's daily
+interval usage data within twenty-four hours of performing daily
+industry-standard validation, estimation, and editing processes.
+(g) The electric utility shall at least annually calculate and
+provide or make available to the CRES provider the individual network service
+peak load values and peak load contributions of customer-generators engaged in
+net metering with that CRES provider.
+(h) The electric utility shall ensure that any final settlement
+data sent to a regional transmission organization includes negative loads in
+the hourly load calculation of any electricity provided to a CRES provider from
+its customer-generators with hourly interval metering. Load from a
+customer-generator shall be incorporated in the CRES provider's total
+hourly energy obligation reported to the regional transmission organization and
+will offset the CRES provider's reported load to the regional transmission
+organization. For customer-generators with non-hourly metering, customer
+generation will offset the CRES provider's energy obligation.
+(9) In no event shall the electric
+utility impose on the customer-generator any charges that relate to the
+electricity the customer-generator feeds back to the system.
+(10) All customer-generators shall comply
+with the interconnection standards set forth in Chapter 4901:1-22 of the
+Administrative Code.
+(11) Renewable energy credits associated
+with a customer-generator's net metering facility shall be the property of
+the customer-generator unless otherwise contracted with an electric utility,
+CRES provider, or other entity.
+(12) The electric utility shall annually
+report to the commission the total number and installed capacity of
+customer-generators on the electric utility's net metering tariffs for
+each technology and consumer class.
+Last updated March 10, 2026 at 8:04 AM
+Supplemental Information
+Authorized By:
+4928.06
+,
+4928.11
+,
+4905.28
+, and
+4928.67
+Amplifies:
+4928.67
+,
+4928.11
+, and
+4905.28
+Five Year Review Date:
+2/12/2031
+Prior Effective Dates:
+9/18/2000, 1/1/2004, 10/22/2007, 6/29/2009, 10/7/2019

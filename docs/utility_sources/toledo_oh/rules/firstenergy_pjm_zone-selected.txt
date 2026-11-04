@@ -1,0 +1,22 @@
+Original URL: https://www.firstenergycorp.com/supplierservices/oh/supplier_registration/pjm-short-name.html
+Original HTML SHA-256: d2ce6956b708519d657f60929f804500c4b845be965f3843cefae054eaf5185f
+Retrieved: 2026-10-31
+
+FE Ohio Zone (Toledo Edison, The Illuminating Company, Ohio Edison)
+For this load, up to four PJM short names are needed. The first one will be used for the load/energy InSchedule contract.  All load schedules, regardless of which operating company the load is in, are associated with this short name.
+The other three will be used for the transfer of transmission related charges you initially incurred to the respective EDC (TE, OE, or CEI) and cannot be the same as the first.  The FE Ohio zone is made up of three operating companies: Toledo Edison (“TE”), The Illuminating Company (“CEI”), and  Ohio Edison (“OE”).  Whereas one PJM Short name can be used to account for all the load/energy, separate short names are needed for transmission-related charges.  This is due to NSPL's needing to be uploaded to PJM by company (OE, TE, CEI) and not by zone (FE OHIO).  These accounts will initially have transmission-related charges in them; however, the charges will then be transferred back to the respective EDCs so, in effect you, the supplier, will have net zero charges in these accounts.
+Example:   ABC is your short name for energy
+You create three new sub-accounts : ABCOE, ABDTE, and ABCCEI.  These sub-accounts will be used for NSPL uploads and the transfer of transmission-related charges  back to OE, TE, and CEI respectively.  They will all end up having net zero charges
+If your intention is to only serve in one or two of the FE Ohio operating companies, then you need only create transmission sub-accounts for those companies.
+After receiving the short names, an InSchedule contract is created for the load. You may then proceed to create Billing Line Item Transfers online using PJM's Billing Line Item Transfer tool to transfer all of your transmission-related charges for serving load back to the respective EDC's account.
+PJM is very knowledgeable of the need for this setup and if you have any questions regarding the Billing Line Item Transfer tool, you may reference the materials linked below or contract PJM at
+custsvc@pjm.com
+or at (866)400-8980.
+PJM BLI reference material
+https://www.pjm.com/markets-and-operations/etools/billing-line-item-transfer.aspx
+*
+PJM BLI User Guide page
+https://www.pjm.com/-/media/etools/blit/billing-line-item-transfer-user-guide.ashx?la=en
+*
+*This is a link to a third-party site. The site is maintained by the third-party vendors administering these programs on behalf of FirstEnergy’s Pennsylvania Electric Companies.
+Last Modified: April 13, 2020

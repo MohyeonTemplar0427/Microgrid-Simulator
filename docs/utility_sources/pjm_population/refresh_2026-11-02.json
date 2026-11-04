@@ -1,0 +1,22 @@
+{
+  "research_date": "2026-11-02",
+  "operation": "Repository footprint scope refresh only; reused exact EIA2024/Census source vintage, no new data retrieval",
+  "added_utility": "AES Ohio / EIA4922, OH only",
+  "added_bundled_accounts": 132522,
+  "added_delivery_accounts": 346219,
+  "source_extract_sha256": "4f87ebdf192799a5cfcdf58194260cb6596f6d29e2b974bb7184b9dc584d8f86",
+  "previous_snapshot": {
+    "research_date": "2026-11-01",
+    "estimate_file": "estimate_2026-11-01.json",
+    "estimate_sha256": "a0dc45e16f488898460c7f9e06c2471fa06d0a4d64770246ec16032b5284d240",
+    "inputs_file": "inputs_2026-11-01.json",
+    "inputs_sha256": "49193432d3d6231b8b68d3996c13b13141441639fea7265f580328f7dc72fdb8",
+    "implemented_workflow_count": 22,
+    "note": "Exact pre-AES22-workflow Toledo snapshot retained; its original engine/evidence ownership is not renewed."
+  },
+  "current_input_sha256": "c8406891f2531680441bc490d199cf8373dfb4ba46730b71e5934c23612dfdf5",
+  "current_estimate_sha256": "5075924f3a553edfbc1a99941d8ec93d049c9a4de86bfdf8936c104cb0373701",
+  "workflow_count": 23,
+  "population_share": 0.7755736656716418,
+  "scope": "Utility-territory household-population proxy only; not eligible-customer, tariff/date, annual electrical or carbon coverage."
+}

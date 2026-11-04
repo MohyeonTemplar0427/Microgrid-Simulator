@@ -1,0 +1,1877 @@
+PDF PAGE 29 (one-based)
+The Toledo Edison Company Sheet 10 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 1 
+ 
+RESIDENTIAL SERVICE - (RATE “RS”) 
+ 
+ 
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, before The 
+Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective:  March 1, 2026 
+AVAILABILITY: 
+ 
+Available for residential service to installations served through one meter for each family unit in a 
+residence or apartment. 
+ 
+When service is used through the same meter for both residential and commercial purposes the 
+applicable general service rate schedule shall apply. 
+ 
+This rate schedule is not available for service to a commercial, institutional or industrial establishment.   
+The hallways and other common facilities of an apartment building or apartment complex are to be billed 
+on the appropriate general service rate. 
+ 
+This provision shall be applied prospectively as of the effective date of this tariff.  In the event a detached 
+garage or other facility on a residential customer’s property is separately served and metered, such 
+facility shall be metered and billed based on whether or not the structures are used for commercial 
+business. Commercial use will be billed according to the appropriate general service schedule. The 
+Company shall determine the primary purpose of the accompanying structure(s) and can change the rate 
+schedule in the future if the primary purpose of any has changed. 
+ 
+SERVICE: 
+ 
+Service is provided per the Electric Service Regulations at a secondary voltage. 
+ 
+ 
+RATE: 
+ 
+All charges under this rate schedule shall be calculated as described below and charged on a monthly 
+basis. 
+ 
+ 
+ Distribution Charges: 
+ Service Charge: $6.50 
+ 
+ Energy Charge: 
+ All kWh, per kWh 3.6046¢ 
+ 
+ 
+SPECIAL METERS: 
+ 
+Time-Of-Day Metering is available from the Company.  Charges for such service are specified in the 
+Miscellaneous Charges, Tariff Sheet 75. 
+ 
+APPLICABLE RIDERS: 
+ 
+The charges included with the applicable riders as designated on the Summary Rider, Tariff Sheet 80 
+shall be added to the Rates and charges set forth above. 
+ 
+ 
+ELECTRIC SERVICE REGULATIONS: 
+ 
+The Company's Electric Service Regulations shall apply to the installation and use of electric service.  
+
+PDF PAGE 30 (one-based)
+The Toledo Edison Company Sheet 20 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 3 
+ 
+GENERAL SERVICE - SECONDARY (RATE “GS”) 
+ 
+ 
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, before 
+The Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective: March 1, 2026 
+AVAILABILITY: 
+ 
+Available to general service installations requiring Secondary Service. Secondary Service is defined in 
+the Company’s Electric Service Regulations. Choice of voltage shall be at the option of the Company. 
+ 
+ 
+SERVICE: 
+ 
+All service under this rate schedule will be served through one meter for each installation. 
+ 
+ 
+RATE: 
+ 
+All charges under this rate schedule shall be calculated as described below and charged on a monthly 
+basis. 
+ 
+Distribution Charges: 
+Service Charge: $10.00 
+ 
+Capacity Charge: 
+Up to 5 kW of billing demand $17.5166 
+For each kW over 5 kW of billing demand  $8.2769 
+ 
+Reactive Demand Charge applicable to three phase customers only 
+For each rkVA of reactive billing demand $0.60 
+ 
+ 
+BILLING DEMAND: 
+ 
+The billing demand for the month shall be the greatest of: 
+ 
+1. Measured Demand, being the highest fifteen (15) minute integrated kW 
+2. 5.0 kW 
+3. The Contract Demand 
+ 
+Measured Demand shall be estimated for all customers not having a demand meter and using over 1, 000 
+kWh per month by applying a factor of 200 by the following formula: Measured Demand = kWh / 200. 
+ 
+ 
+REACTIVE BILLING DEMAND: 
+ 
+For installations metered with reactive energy metering, the reactive billing demand in rkVA for the month 
+shall be determined by multiplying the Measured Demand by the ratio of the measured lagging reactive 
+kilovoltampere hours to the measured kilowatthours by the following formula: rkVA = Measured Demand 
+X (measured lagging reactive kilovoltampere hours ÷ measured kilowatthours ).  For all other installations, 
+the reactive billing demand shall be the integrated reactive demand occurring coincident with the 
+Measured Demand.   
+ 
+ 
+APPLICABLE RIDERS: 
+ 
+The charges included with the applicable riders as designated on the Summary Rider, Tariff Sheet 80  
+shall be added to the Rates and charges set forth above. 
+
+PDF PAGE 92 (one-based)
+The Toledo Edison Company Sheet 80 
+Toledo, Ohio P.U.C.O. No. 8 22nd Revised Page 1 of 1 
+ 
+SUMMARY RIDER 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, and Orders dated November 19, 2025 and 
+February 18, 2026, in Case Nos. 14-1297-EL-SSO, and 24-0468-EL-AIR, respectively, 
+before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective: March 1, 2026 
+Rates and charges included in the rate schedules listed in the following matrix shall be modified consistent with the terms and 
+conditions of the indicated Riders: 
+ 
+ Rate Schedule 
+Rider  -  (Sheet) RS GS GP GSU GT STL TRF POL 
+Q Advanced Metering Infrastructure / Modern Grid  -  (106)         
+Q Alternative Energy Resource  -  (84)         
+ Automated Meter Opt-Out – (128)         
+ Business Distribution Credit  -  (86)         
+ Commercial High Load Factor Experimental TOU – (130)         
+A Conservation Support Rider (133)         
+A Consumer Rate Credit – (137)         
+A County Fairs and Agricultural Societies (134)         
+T Customer Credit Recovery – (122)         
+ Deferred Fuel Cost Recovery - (118)         
+A Deferred Generation Cost Recovery - (117)         
+Q Delivery Capital Recovery  -  (124)         
+ Delivery Service Improvement  -  (108)         
+Q Delta Revenue Recovery  -  (96)         
+T Demand Side Management – (97)         
+T Demand Side Management and Energy Efficiency  -  (115)         
+Q Distribution Uncollectible  -  (99)         
+Q Economic Development -  (116)         
+ Economic Development 4a – (88)         
+ Economic Load Response Program  -  (101)         
+A Electric Vehicle Charging – (138)         
+ Experimental Critical Peak Pricing  -  (113)         
+ Experimental Real Time Pricing  -  (111)         
+ Fuel – (105)         
+Q Generation Cost Reconciliation  -  (103)         
+ Generation Service  -  (114)         
+T Government Directives Recovery – (126)         
+ Hospital Net Energy Metering  -  (87)         
+T Legacy Generation Resource – (135)         
+Q Line Extension Cost Recovery – (107)         
+ Net Energy Metering  -  (93)         
+Q Non-Distribution Uncollectible  -  (110)         
+A Non-Market-Based Services  -  (119)         
+P Non-Residential Deferred Distribution Cost Recovery – (121)         
+A Ohio Renewable Resources – (129)         
+T Phase-In Recovery (125)         
+P Percentage of Income Payment Plan – (90)         
+Q PIPP Uncollectible  -  (109)         
+ Reasonable Arrangement  -  (98)         
+P Residential Deferred Distribution Cost Recovery – (120)         
+
+PDF PAGE 93 (one-based)
+The Toledo Edison Company Sheet 80 
+Toledo, Ohio P.U.C.O. No. 8 22nd Revised Page 2 of 1 
+ 
+SUMMARY RIDER 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, and Orders dated November 19, 2025 and 
+February 18, 2026, in Case Nos. 14-1297-EL-SSO, and 24-0468-EL-AIR, respectively, 
+before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective: March 1, 2026 
+ Residential Distribution Credit  -  (81)         
+ Residential Generation Credit  -  (123)         
+ School Distribution Credit  -  (85)         
+A Solar Generation Fund – (136)         
+ State kWh Tax  -  (92)         
+A Tax Savings Adjustment – (91)         
+A Transmission and Ancillary Services – (83)         
+ 
+ - Rider is applicable or available to the rate schedules indicated 
+ 
+A - Rider is updated/reconciled annually T - Rider is updated/reconciled twice per year 
+Q - Rider is updated/reconciled quarterly P - Rider is updated/reconciled periodically 
+ 
+ 
+
+PDF PAGE 95 (one-based)
+The Toledo Edison Company Sheet 83 
+Toledo, Ohio P.U.C.O. No. 8 2nd Revised Page 1 of 3 
+ 
+RIDER TAS 
+Transmission and Ancillary Services Rider 
+ 
+ 
+Filed pursuant to Order dated December 16, 2009, in Case No. 09-968-EL-ATA, before  
+The Public Utilities Commission of Ohio 
+ Effective:  January 1, 2010 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's r ate schedules. 
+ 
+ 
+PURPOSE: 
+ 
+The Transmission and Ancillary Services Rider (TAS) will recover all transmission and transmission-
+related costs, including ancillary and congestion costs, imposed on or charged to the Company  by FERC 
+or a regional transmission organization, independent transmission operator, or similar organization 
+approved by FERC. 
+ 
+ 
+RATE: 
+ 
+For the time period of January 1, 2010 through December 31, 2010, the TAS2 charge for each rate 
+schedule shall be calculated as follows: 
+ 
+TAS2 = 
+ TAC - E  1 
+  
+BU 
+x  
+1 - CAT   
+Where: 
+ 
+TAC = T he amount of the Company’s total projected Transmission and Ancillary Services-
+related costs for the Computation Period, allocated to each rate schedule. 
+ 
+The Computation Period over which TAS2 will apply shall be January 1 through 
+December 31, 2010. 
+ 
+E = T he net over- or under-collection of the TAC, including applicable interest, invoiced 
+during the 12-month period ending September 30 of the year immediately 
+preceding the Computation Period, allocated to rate schedules. 
+ 
+BU = Forecasted billing units for the Computational Period for each rate schedule. 
+ 
+CAT = The Commercial Activity Tax rate as established in Section 5751.03 of the Ohio 
+Revised Code. 
+ 
+The balance remaining as of December 31, 2010 in TAS2 shall be carried forward into TAS1.  
+ 
+The TAS1 charges are not applied to customers during the period the customer takes electric 
+generation service from a certified supplier. 
+ 
+The TAS2 charges are not avoidable for customers who take electric generation service from a 
+certified supplier during the period January 1, 2010 through December 31, 2010. 
+ 
+
+PDF PAGE 96 (one-based)
+The Toledo Edison Company Sheet 83 
+Toledo, Ohio P.U.C.O. No. 8 4th Revised Page 2 of 3 
+ 
+RIDER TAS 
+Transmission and Ancillary Services Rider 
+ 
+ 
+Filed pursuant to Order dated December 16, 2009, in Case No. 09-968-EL-ATA, before  
+The Public Utilities Commission of Ohio 
+ Effective:  January 1, 2010 
+For the time period beginning January 1, 2011, the TAS1 charge for each rate schedule shall be 
+calculated as follows: 
+ 
+TAS1 = 
+ TAC - E  1 
+  
+BU 
+x  
+1 - CAT   
+Where: 
+ 
+TAC = The amount of the Company’s total projected Transmission and Ancillary Services -
+related costs for the Computation Period, allocated to each rate schedule. 
+ 
+The Computation Period over which TAS1 will apply shall be January 1 through 
+December 31 of each year. 
+ 
+E = The net over- or under-collection of the TAC, including applicable interest, invoiced 
+during the 12-month period ending September 30 of each year that immediately 
+precedes the Computation Period, allocated to rate schedules. 
+ 
+BU = Forecasted billing units for the Computational Period for each rate schedule. 
+ 
+CAT = The Commercial Activity Tax rate as established in Section 5751.03 of the Ohio 
+Revised Code. 
+ 
+The TAS1 charges are not applied to customers during the period the customer takes electric 
+generation service from a certified supplier. 
+ 
+The TAS2 charges are not avoidable for customers who take electric generation service from a 
+certified supplier during the period January 1, 2010 through December 31, 2010.  
+ 
+
+PDF PAGE 97 (one-based)
+The Toledo Edison Company Sheet 83 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 3 of 3 
+ 
+RIDER TAS 
+Transmission and Ancillary Services Rider 
+ 
+ 
+Filed pursuant to Order dated December 16, 2009, in Case No. 09-968-EL-ATA, before  
+The Public Utilities Commission of Ohio 
+ Effective:  September 10, 2010 
+TAS charges: 
+The following charges will apply, by rate schedule, effective for service rendered beginning January  1, 
+2010: 
+ TAS1 TAS2 
+RS (all kWhs, per kWh) 0.0000¢ (0.1175)¢ 
+GS* (per kW of Billing Demand) $ 0.0000 $ (0.3125) 
+GP* (per kW of Billing Demand) $ 0.0000 $ (0.3273) 
+GSU (per kVa of Billing Demand) $ 0.0000 $ (0.4598) 
+GT (per kVa of Billing Demand) $ 0.0000 $ (0.3046) 
+STL (all kWhs, per kWh) 0.0000¢ (0.0415)¢ 
+TRF (all kWhs, per kWh) 0.0000¢ (0.0415)¢ 
+POL (all kWhs, per kWh) 0.0000¢ (0.0415)¢ 
+ 
+* Separately metered outdoor recreation facilities owned by non-profit governmental and educational 
+institutions, such as athletic fields, served under Rate GS or GP, primarily for lighting purposes, will 
+be charged per the TAS charge applicable to Rate Schedule POL. 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on an annual basis.  The TAS Rider 
+will be filed with the Public Utilities Commission of Ohio on or before October 18 of each year and be 
+effective for service rendered January 1 through December 31 of the subsequent year, unless otherwise 
+ordered by the Commission. 
+ 
+The TAS2 charges of this Rider shall no longer be applied as of service rendered beginning September 
+10, 2010, pending final reconciliation of the costs authorized by the Commission’s December 16, 2009 
+Finding and Order issued in Case No. 09-968-EL-ATA. 
+
+PDF PAGE 106 (one-based)
+The Toledo Edison Company Sheet 90 
+Toledo, Ohio P.U.C.O. No. 8 26th Revised Page 1 of 1 
+ 
+RIDER PIPP 
+Percentage of Income Payment Plan Rider 
+ 
+ 
+Filed pursuant to Order dated September 17, 2026, in Case No. 26-0859-EL-UNC, 
+Before The Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective:  October 1, 2026 
+A charge of 0.44700¢ per kWh for the first 833,000 kWh and 0.05610¢ per kWh for the kWh above 
+833,000 kWh shall be added to the energy charge of all applicable rate schedules for the exclusive 
+purposes of providing funding for the low-income customer assistance programs and for the Consumer 
+Education Program authorized under Section 4928.56 of the Ohio Revised Code, and for paying the 
+administrative costs of the low-income customer assistance programs and the Consumer Education 
+Program. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 107 (one-based)
+The Toledo Edison Company Sheet 91 
+Toledo, Ohio P.U.C.O. No. 8 8th Revised Page 1 of 1 
+ 
+RIDER TSA 
+Tax Savings Adjustment Rider 
+ 
+ 
+Filed pursuant to Orders dated July 17, 2019, November 19, 2025 and February 18, 2026, in Case Nos. 18-1656-EL-
+ATA et al., and 24-0468-EL-AIR, respectively, and Case No. 25-1107-EL-RDR, before 
+The Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective:  March 1, 2026 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules.  The 
+following credits will apply, by rate schedule, effective for service rendered beginning March 1, 2026 for 
+all kWh per kWh.  This Rider is not avoidable for customers during the period the customer takes electric 
+generation service from a certified supplier. 
+ 
+ 
+ 
+RATE: 
+ 
+RS  (0.0831¢) 
+GS (0.0509¢) 
+GP  (0.0191¢) 
+GSU (0.0109¢) 
+GT (0.0069¢) 
+STL (0.2238¢) 
+TRF  (0.0640¢) 
+POL (0.2099¢) 
+ 
+ 
+RIDER UPDATES: 
+ 
+The credit contained in this Rider shall be updated and reconciled on an annual basis.  No later than 
+December 1st of each year, the Company will file with the PUCO a request for approval of the Rider credit 
+which, unless otherwise ordered by the PUCO, shall become effective on a service rendered basis on 
+January 1st of each year.  This Rider is subject to reconciliation, including, but not limited to increases or 
+refunds, based upon the results of audits ordered by the Commission in accordance with the July 17, 
+2019 Opinion and Order in Case No. 18-1656-EL-ATA.  
+   
+ 
+ 
+
+PDF PAGE 111 (one-based)
+The Toledo Edison Company Sheet 96 
+Toledo, Ohio P.U.C.O. No. 8 69th Revised Page 1 of 1 
+ 
+RIDER DRR 
+Delta Revenue Recovery Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2025 and January 22, 2025 in Case No. 14-1297-EL-SSO and Case 
+No. 25-1109-EL-RDR before 
+The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  October 1, 2026 
+APPLICABILITY: 
+ 
+Applicable to any customer receiving electric service under the Company's rate schedules or reasonable 
+arrangement (special contract) approved by the Public Utilities Commission of Ohio.  The Delta Revenue 
+Recovery Rider (DRR) charge will apply, for all rate schedules, effective for service rendered beginning 
+October 1, 2026, for all kWhs per kWh.  This Rider is not avoidable for customers who take electric 
+generation service from a certified supplier. 
+ 
+ 
+PURPOSE: 
+ 
+The DRR charge recovers the difference in revenue (“delta revenue”) between the application of rates in 
+the otherwise applicable rate schedule and the result of any economic development schedule, energy 
+efficiency schedule, reasonable arrangement, or governmental special contract approved by the Public 
+Utilities Commission of Ohio on or after January 1, 2009. 
+ 
+ 
+RATE: 
+ 
+RS 0.0006¢ 
+GS 0.0004¢ 
+GP 0.0001¢ 
+GSU  0.0001¢ 
+GT 0.0000¢ 
+STL 0.0017¢ 
+TRF  0.0001¢ 
+POL 0.0016¢ 
+ 
+ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than 
+December 1st, March 1st, June 1st and September 1st of each year, the Company will file with the PUCO 
+a request for approval of the rider charges which, unless otherwise ordered by the PUCO, shall become 
+effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each year. 
+This Rider is subject to reconciliation, including, but not limited to increases or refunds. Such 
+reconciliation shall be based solely upon the results of audits ordered by the Commission.  
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 112 (one-based)
+The Toledo Edison Company Sheet 97 
+Toledo, Ohio P.U.C.O. No. 8 14th Revised Page 1 of 2 
+ 
+RIDER DSM 
+Demand Side Management Rider 
+ 
+ 
+Filed pursuant to Orders dated January 21, 2009 and July 18, 2012, in Case Nos. 07-551-EL-AIR and 
+12-1230-EL-SSO, respectively and Case No. 15-1842-EL-RDR, before  
+The Public Utilities Commission of Ohio 
+ Effective:  January 1, 2016 
+APPLICABILITY: 
+ 
+A Demand Side Management (“DSM”) Charge shall be applied to each kilowatt-hour (“kWh”) delivered 
+during a billing month to all retail customers taking service under Rate Schedule RS.  The DSM Charge is 
+not avoidable to customers during the period the customer takes electric generation service from a 
+certified supplier. 
+ 
+RATES: 
+ 
+On the Effective Date (“ED”), the DSM Charge shall be 0.0000¢, and shall be adjusted semi-annually 
+based on the following formula: 
+ 
+DSM Charge = [((ADB - ADFIT) x CC + AMORT + RA) / PS] x [1 / (1-CAT)], rounded to the fifth decimal 
+place. 
+ 
+Where: 
+ 
+ADB = The net accumulated balance of the residential demand side management costs deferred 
+by the Company, including applicable Carrying Costs (“CC”). Residential demand side 
+management costs that are deferred shall include all DSM program costs incurred for 
+programs contemplated in the Settlement Stipulation approved in PUCO Case Nos. 05-
+1125-EL-ATA, 05-1126-EL-AAM and 05-1127-EL-UNC, all reasonable administrative 
+costs to conduct such DSM programs and lost distribution revenues until included in the 
+Company’s tariffs established in a subsequent rate case. 
+ 
+The initial ADB will be based on the Company’s filing in Case No. 07-551-EL-AIR, with all 
+subsequent ADB’s being based on the deferred balance at each March 31 and 
+September 30 thereafter. 
+ 
+ADFIT = The accumulated deferred income tax associated with the ADB. 
+ 
+AMORT = The ADB amortized over a three year period.  However in no case will the amortization 
+period extend beyond December 31, 2012.  Any ADB at April 30, 2012 will be collected 
+over the RHY effective July 1, 2012. 
+ 
+RA = The net over or under collection of the RC during the Recovery Half-Year (“RHY”), plus 
+Carrying Costs.  A positive RA reflects an under collection of the RC. 
+ 
+PS = The Company’s forecasted kWh retail sales during the RHY for customers taking service 
+under Rate Schedule RS. 
+ 
+CAT = The Commercial Activity Tax rate as established in Section 5751.03 of the Ohio Revised 
+Code. 
+ 
+CC = The return earned on the RC and RA, which shall be calculated by multiplying the RC 
+and RA by the Company’s cost of debt. 
+ 
+RHY = The calendar half-year in which the then current DSM Charge is collected.  The RHY 
+commences on January 1 and July 1, immediately following the determination of the ADB 
+as of September 30 or March 31 for such DSM Charge. 
+ 
+
+PDF PAGE 113 (one-based)
+The Toledo Edison Company Sheet 97 
+Toledo, Ohio P.U.C.O. No. 8 2nd Revised Page 2 of 2 
+ 
+RIDER DSM 
+Demand Side Management Rider 
+ 
+ 
+Filed pursuant to Order dated January 21, 2009, in Case No. 07-551-EL-AIR, before  
+The Public Utilities Commission of Ohio 
+ Effective:  July 1, 2009 
+ED = The date on which the DSM Charge becomes effective.  The ED for the initial DSM 
+Charge shall be January 1, 2009 with all subsequent DSM Charges becoming effective 
+on each following July 1 and January 1. 
+ 
+ 
+OTHER PROVISIONS: 
+ 
+1. No later than December 1 and June 1 of each year, the Company shall file with the Public 
+Utilities Commission of Ohio (“Commission”) a request for approval of a DSM Charge which, 
+unless otherwise ordered by the Commission, shall become effective on a service  rendered 
+basis on January 1 and July 1 following the determination of the ADB to which the DSM Charge 
+applies. 
+ 
+2. The Company shall submit with its semi-annual filing, documentation sufficient to demonstrate 
+that the DSM Charge that is the subject of the filing is calculated consistent with the DSM 
+Charge formula set forth in this DSM Rider.  All such documentation shall be subject to 
+Commission audit and review. 
+ 
+3. If after the Effective Date, but prior to the next semi-annual filing, the Commission determines 
+that the DSM Charge proposed by the Company is unreasonable, any differential in amounts 
+collected under this DSM Rider based on the DSM Charge on the Effective Date, and that 
+authorized in a final order of the Commission for said Recovery Half Year, including any 
+Carrying Costs on said differential, shall be adjusted in the next Reconciling Adjustment.  
+ 
+ 
+ 
+
+PDF PAGE 115 (one-based)
+The Toledo Edison Company Sheet 99 
+Toledo, Ohio P.U.C.O. No. 8  70 th Revised Page 1 of 1 
+ 
+RIDER DUN 
+Distribution Uncollectible Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case 
+No. 25-1104-EL-RDR, before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President                                                                                  Effective: October 1, 2026 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules.  The 
+Distribution Uncollectible Rider (DUN) charge will apply, for all rate schedules, effective for service 
+rendered beginning October 1, 2026, for all kWhs per kWh.  This Rider is not avoidable for customers 
+during the period the customer takes electric generation service from a certified supplier. 
+ 
+ 
+RATE: 
+ 
+DUN charge (0.0107)¢ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than 
+December 1st, March 1st, June 1st and September 1st of each year, the Company shall file with the 
+PUCO a request for approval of the rider charges which, unless otherwise ordered by the PUCO, shall 
+become effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each 
+year.  To the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to 
+increases or refunds. Such reconciliation shall be based solely upon the results of audits ordered by the 
+Commission in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and 
+the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO. 
+ 
+
+PDF PAGE 124 (one-based)
+The Toledo Edison Company Sheet 105 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 1 
+ 
+Fuel Rider 
+ 
+ 
+Filed pursuant to Order dated January 14, 2009, in Case No. 09-21-EL-ATA, before  
+The Public Utilities Commission of Ohio 
+ Effective:  December 14, 2009 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's r ate schedules.  The Fuel 
+Rider will apply, for all rate schedules, effective for service rendered beginning June 1, 2009 for all kWhs 
+per kWh.  This Rider is not applied to customers during the period the customer takes electric generation 
+service from a certified supplier. 
+ 
+ 
+RATE: 
+ 
+RS 0.1058¢ 
+GS 0.1058¢ 
+GP 0.1022¢ 
+GSU 0.0993¢ 
+GT 0.0992¢ 
+STL 0.1058¢ 
+TRF 0.1058¢ 
+POL 0.1058¢ 
+ 
+ 
+RIDER PROVISIONS: 
+ 
+The Fuel Rider recovers costs as authorized by the Commission’s January 14, 2009 Finding and Order in 
+Case No. 09-21-EL-ATA et al. The Fuel Rider shall be reconciled to reflect the difference between actual 
+and forecasted costs and the difference between actual and forecasted generation revenue and revenue 
+collected under this Rider. 
+ 
+The Fuel Rider shall no longer be applied as of service rendered beginning December 14 , 2009, pending 
+final reconciliation of the costs authorized by the Commission’s January 14, 2009 Finding and Order in 
+Case No. 09-21-EL-ATA et al. 
+ 
+ 
+
+PDF PAGE 125 (one-based)
+The Toledo Edison Company Sheet 106 
+Toledo, Ohio P.U.C.O. No. 8 67 th  Revised Page 1 of 1 
+ 
+RIDER AMI 
+Advanced Metering Infrastructure / Modern Grid Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case 
+No. 25-1105-EL-RDR before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  October 1, 2026 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company’s rate schedules, with the 
+exception of General Service - Transmission (Rate “GT”).  This Advanced Metering Infrastructure / 
+Modern Grid Rider charge is a fixed monthly charge and will be effective for service rendered beginning 
+October 1, 2026. This Rider is not avoidable for customers during the period the customer takes electric 
+generation service from a certified supplier. 
+ 
+ 
+CHARGE *: 
+ 
+RS $1.764 
+GS $7.926 
+GP $7.607 
+GSU $7.539 
+STL (per lighting unit) $0.318 
+TRF $0.609 
+POL $0.890 
+ 
+* The charges listed above, except those for rate  schedule STL, will be applied per customer, per 
+month.  Any customer who receives electric service under rate schedule STL will have the above 
+charge applied per lighting unit, per month. 
+ 
+PROVISIONS: 
+ 
+The charges set forth in this Rider recover costs associated with the implementation of any additional 
+advanced metering or grid modernization infrastructure in Ohio including, but not limited to, Commission 
+directed, legislatively mandated or Company initiated and Commission approved infrastructure expansion 
+will be collected through this Rider. 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis. No later than 
+December 1st, March 1st, June 1st and September 1st of each year, the Company shall file with the 
+PUCO a request for approval of the Rider charges which, unless otherwise ordered by the PUCO, shall 
+become effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each 
+year.  To the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to 
+increases or refunds. Such reconciliation shall be based solely upon the results of audits ordered by the 
+Commission in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and 
+the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO and upon the Commission’s orders 
+in Case No. 18-47-AU-COI.  
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 126 (one-based)
+The Toledo Edison Company Sheet 107 
+Toledo, Ohio P.U.C.O. No. 8 13th Revised Page 1 of 1 
+ 
+RIDER LEX 
+Line Extension Cost Recovery Rider 
+ 
+ 
+Filed pursuant to Orders dated May 27, 2009 and July 18, 2012, in Case Nos. 08-935-EL-SSO et al and 
+12-1230-EL-SSO, respectively and Case No. 14-1948-EL-RDR, before  
+The Public Utilities Commission of Ohio 
+ Effective:  January 1, 2015 
+APPLICABILITY: 
+ 
+Applicable to any customer receiving electric service under the Company's rate schedules.  The Line 
+Extension Cost Recovery Rider (LEX) charge will apply for all rate schedules, on a service rendered 
+basis, for all kWhs per kWh.  This Rider is not avoidable for customers who take electric generation 
+service from a certified supplier. 
+ 
+ 
+RATE: 
+ 
+LEX charge 0.0000¢ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis beginning 
+December 1, 2011, and thereafter no later than December 1st, March 1st, June 1st and September 1st of 
+each year, the Company will file with the PUCO a request for approval of the Rider charges which, unless 
+otherwise ordered by the PUCO, shall become effective on a service rendered basis on January 1st, April 
+1st, July 1st and October 1st of each year. 
+ 
+
+PDF PAGE 127 (one-based)
+The Toledo Edison Company Sheet 108 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 1 
+ 
+RIDER DSI 
+Delivery Service Improvement Rider 
+ 
+ 
+Filed pursuant to Order dated March 25, 2009, in Case No. 08-935-EL-SSO et al., before  
+The Public Utilities Commission of Ohio 
+ Effective:  January 1, 2012 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's Rate Schedules . The 
+Delivery Service Improvement Rider (DSI) charges will apply, by Rate Schedule, effective for bills 
+rendered beginning January 1, 2012. This Rider is not avoidable for customers who shop with a certified 
+supplier. 
+ 
+ 
+RATE: 
+ 
+RS (all kWhs, per kWh) 0.0000¢ 
+GS (per kW of Billing Demand) $ 0.0000 
+GP (per kW of Billing Demand) $ 0.0000 
+GSU (per kVa of Billing Demand) $ 0.0000 
+ 
+ 
+ 
+
+PDF PAGE 128 (one-based)
+The Toledo Edison Company Sheet 109 
+Toledo, Ohio P.U.C.O. No. 8 71 st Revised Page 1 of 1 
+ 
+RIDER PUR 
+PIPP Uncollectible Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, and Orders dated November 19, 2025 and 
+February 18, 2026, in Case Nos. 14-1297-EL-SSO, and 24-0468-EL-AIR, respectively, and Case No. 25-1104-EL-
+RDR, before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President                                                                                  Effective: October 1, 2026 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules.  The PIPP 
+Uncollectible Rider (PUR) charge will apply, for all rate schedules, effective for service rendered 
+beginning October 1, 2026, for all kWhs per kWh.  This Rider is not avoidable for customers during the 
+period the customer takes electric generation service from a certified supplier.  This Rider recovers 
+uncollectible expense associated with PIPP customers to the extent such expense is incurred by the 
+Company and is not recovered elsewhere. 
+ 
+ 
+RATE: 
+ 
+PUR charge (0.0060)¢ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than 
+December 1st, March 1st, June 1st and September 1st of each year, the Company shall file with the 
+PUCO a request for approval of the rider charges which, unless otherwise ordered by the PUCO, shall 
+become effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each 
+year.  To the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to 
+increases or refunds. Such reconciliation shall be based solely upon the results of audits ordered by the 
+Commission in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and 
+the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 138 (one-based)
+The Toledo Edison Company Sheet 115 
+Toledo, Ohio P.U.C.O. No. 8 39th Revised Page 1 of 3 
+RIDER DSE 
+Demand Side Management and Energy Efficiency Rider 
+F
+iled pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO and Orders 
+dated November 19, 2025 and January 7, 2026 in Case No. 17-974-EL-UNC, et al., and Case No. 25-1106-EL-RDR, 
+before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  July 1, 2026 
+The Company reserves the right to revise such schedule consistent with the Commission’s final rules, 
+which may include modification or deletion of all or portions of this schedule. 
+A
+PPLICABILITY: 
+A
+pplicable to any customer that takes electric service under the Company's rate schedules.  The following 
+charges will apply, by rate schedule, effective for service rendered beginning May 1, 2026, for all kWhs 
+per kWh: 
+R
+ATE: DSE1 DSE2 
+R
+S 0.0874¢  0.0000¢ 
+GS 0.0874¢  0.0000¢ 
+GP 0.0874¢  0.0000¢ 
+GSU 0.0874¢  0.0000¢ 
+GT 0.0874¢  0.0000¢ 
+STL 0.0874¢  0.0000¢ 
+TRF 0.0874¢  0.0000¢ 
+POL 0.0874¢  0.0000¢ 
+PR
+OVISIONS: 
+1. T
+he DSE1 charges set forth in this Rider recover costs incurred by the Company associated with
+c
+ustomers taking service under the Economic Load Response Rider (ELR).
+2. T
+he DSE2 charges set forth in this Rider recover costs incurred by the Company associated with the
+pr
+ograms that may be implemented by the Company to secure compliance with the, energy efficiency
+and peak demand reduction requirements in Section 4928.66, Revised Code through demand-
+response programs, energy efficiency programs, peak demand reduction programs, and self-directed
+dem
+and-response, energy efficiency or other customer-sited programs.  The costs initially deferred by
+the Company and subsequently fully recovered through this Rider will be all program costs, including
+but
+ not limited to any customer incentives or rebates paid, applicable carrying costs, all reasonable
+adm
+inistrative costs to conduct such programs, lost distribution revenues resulting from the
+i
+mplementation of such programs, and any performance incentives such as shared savings.
+R
+IDER UPDATES: 
+1. T
+he DSE1 charges set forth in this Rider shall be updated semi-annually.  No later than December
+1st and June 1st of each year, the Company shall file with the PUCO a request for approval of the
+R
+ider charges which, unless otherwise ordered by the PUCO, shall become effective on a service
+r
+endered basis on January 1st and July 1st of each year.
+
+PDF PAGE 142 (one-based)
+The Toledo Edison Company Sheet 116 
+Toledo, Ohio P.U.C.O. No. 8 10 th Revised Page 2 of 5 
+ 
+RIDER EDR 
+Economic Development Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO and Case 
+No. 25-1104-EL-RDR before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President                                                                                  Effective: October 1, 2026 
+c. Non Residential Credit Provision  
+ 
+APPLICABILITY: 
+Applicable to any customer taking General Service - Transmission (GT), Street Lighting (STL), Traffic 
+Lighting (TRF), and Private Outdoor Lighting (POL) service under the Company’s rate schedules.  
+This Non-Residential Credit Provision is not applied during the period a customer takes electric 
+generation service from a certified supplier. 
+ 
+RATE: 
+The following credits will apply, by rate schedule, effective for service rendered beginning October 1, 
+2026, for all kWhs, per kWh: 
+ 
+GT (0.0000)¢ 
+STL (0.0000)¢ 
+TRF (0.0000)¢ 
+POL (0.0000)¢ 
+ 
+d. General Service – Transmission (Rate GT) Provision 
+ 
+APPLICABILITY: 
+Applicable to any customer taking service under the Company’s General Service – Transmission 
+(Rate GT). This provision is not avoidable for customers who take electric generation service from a 
+certified supplier. 
+ 
+RATE: 
+The following charge will apply, effective for service rendered beginning October 1, 2026: 
+ 
+ GT (per kVA of billing demand)      $0.0000 
+ 
+The following credit will apply, effective for service rendered beginning October 1, 2026: 
+ 
+ GT (all kWhs, per kWh)       (0.0000)¢ 
+ 
+ADDITIONAL PROVISION: 
+The charges provided for by Section (d) of this Rider shall be applied to the greater of (i) the 
+measured monthly on-peak demand, or (ii) 25% of the measure monthly off-peak demand. Monthly 
+on-peak demand is defined as the highest thirty (30) minute integrated kVA between the hours of 
+6:00 a.m. to 10:00 p.m. EST (equivalent to 7:00 a.m. to 11:00 p.m. EDT), Monday through Friday, 
+excluding holidays. Holidays are defined as New Year’s Day, Memorial Day, Independence Day, 
+Labor Day, Thanksgiving Day, and Christmas Day. Monthly off-peak demand is defined as the 
+highest thirty (30) minute integrated kVA for all other hours. This provision of Rider EDR is reconciled 
+within this subpart (d) quarterly and is revenue neutral to the Companies. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 143 (one-based)
+The Toledo Edison Company Sheet 116 
+Toledo, Ohio P.U.C.O. No. 8 10 th Revised Page 3 of 5 
+ 
+RIDER EDR 
+Economic Development Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO and Case 
+No. 25-1104-EL-RDR before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President                                                                                  Effective: October 1, 2026 
+ 
+e. Standard Charge Provision  
+ 
+APPLICABILITY: 
+Applicable to any customer that takes electric service under the Company's rate schedules.  This 
+Standard Charge Provision is not avoidable for customers who take electric generation service from a 
+certified supplier. 
+ 
+PURPOSE: 
+The charges provided for by Section (e) of this Rider recover the difference in revenues resulting from 
+the application of rates in the otherwise applicable rate schedule, and the application of credits in 
+sections (a), (b), and (c) of this Rider. 
+ 
+RATE: 
+The following total charges will apply, by rate schedule for all kWhs per kWh: 
+ 
+ 
+ Provision 1 Provision 2 Total 
+RS 0.0000¢ 0.0291¢     0.0291¢ 
+GS 0.1035¢ 0.0185¢     0.1220¢ 
+GP 0.4506¢ 0.0064¢     0.4570¢ 
+GSU 0.0000¢ 0.0034¢     0.0034¢ 
+GT 0.0000¢ 0.0003¢     0.0003¢ 
+STL 0.0000¢ 0.0820¢     0.0820¢ 
+TRF 0.0000¢ 0.0033¢     0.0033¢ 
+POL 0.0000¢ 0.0777¢     0.0777¢ 
+ 
+ 
+f. Provision Expired 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 145 (one-based)
+The Toledo Edison Company Sheet 116 
+Toledo, Ohio P.U.C.O. No. 8 10 th Revised Page 5 of 5 
+ 
+RIDER EDR 
+Economic Development Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO and Case 
+No. 25-1104-EL-RDR before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  October 1, 2026 
+ 
+i. Automaker Charge Provision  
+ 
+APPLICABILITY: 
+Applicable to any customer that takes electric service under the Company's rate schedules with the 
+exception of General Service - Transmission (GT), Street Lighting (STL), Traffic Lighting (TRF), and 
+Private Outdoor Lighting (POL).  This Automaker Charge Provision is not avoidable for customers 
+who take electric generation service from a certified supplier. 
+ 
+PURPOSE: 
+The charges provided for by Section (i) of this Rider recover costs associated with implementation of 
+the Automaker Credit Provision. 
+ 
+RATE: 
+The following charge will apply effective for service rendered beginning October 1, 2026, for all kWhs 
+per kWh: 
+ 
+Automaker Charge 0.0029¢ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than 
+December 1st, March 1st, June 1st and September 1st of each year, the Company will file with the PUCO 
+a request for approval of the Rider charges which, unless otherwise ordered by the PUCO, shall become 
+effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each year.  To 
+the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to increases or 
+refunds. Such reconciliation shall be based solely upon the results of audits ordered by the Commission 
+in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and the March 31, 
+2016 Opinion and Order in Case No. 14-1297-EL-SSO. 
+ 
+ 
+
+PDF PAGE 146 (one-based)
+The Toledo Edison Company Original Sheet 117 
+Toledo, Ohio P.U.C.O. No. 8 Page 1 of 1 
+ 
+RIDER DGC 
+Deferred Generation Cost Recovery Rider 
+ 
+ 
+Filed pursuant to Order dated May 27, 2009, in Case No. 08-935-EL-SSO et al., before  
+The Public Utilities Commission of Ohio 
+ Effective:  June 1, 2009 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules.  The 
+following Deferred Generation Cost Recovery Rider (DGC) charges will apply, by rate schedule, effective 
+on a service rendered basis, for all kWhs per kWh.  This Rider is not avoidable for customers who take 
+electric generation service from a certified supplier. 
+ 
+ 
+RATE: 
+ 
+RS 0.0000¢ 
+GS 0.0000¢ 
+GP 0.0000¢ 
+GSU 0.0000¢ 
+GT 0.0000¢ 
+STL 0.0000¢ 
+TRF 0.0000¢ 
+POL 0.0000¢ 
+ 
+ 
+PROVISIONS: 
+ 
+The amount of this Rider reflects recovery of generation costs deferred from June 2009 through May 
+2011 due to any future Commission Order plus the associated Commission approved carrying costs on 
+the unrecovered deferred cost balance. 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on an annual basis, or more 
+frequently if necessary, beginning June 1, 2011. The Company shall file with the PUCO a request for 
+approval of the Rider charges which, unless otherwise ordered by the PUCO, shall become effective on a 
+service rendered basis on the first day of the subsequent month, but no less than 30 days after the filing 
+of such request. 
+ 
+ 
+
+PDF PAGE 147 (one-based)
+The Toledo Edison Company Sheet 118 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 1 
+ 
+RIDER DFC 
+Deferred Fuel Cost Recovery Rider 
+ 
+ 
+Filed pursuant to Orders dated December 19, 2008 and July 18, 2012, in Case Nos. 08-935-EL-SSO et al. and 
+12-1230-EL-SSO, respectively and in Case No. 12-2977-EL-RDR before  
+The Public Utilities Commission of Ohio 
+ Effective:  June 21, 2013 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules .  The 
+Deferred Fuel Cost Rider (DFC) charge will apply, for all rate schedules, effective for service rendered 
+beginning January 1, 2011, for all kWhs per kWh.  This Rider is not avoidable for customers who take 
+electric generation service from a certified supplier. 
+ 
+The amount of this Rider reflects eligible fuel costs deferred from January 2006 through December 2007,  
+plus the associated Commission approved carrying costs on the unrecovered deferred cost balance.  
+ 
+ 
+RATE: 
+ 
+DFC charge 0.0000¢ 
+ 
+
+PDF PAGE 149 (one-based)
+The Toledo Edison Company Sheet 119 
+Toledo, Ohio P.U.C.O. No. 8 23rd Revised Page 2 of 2 
+ 
+RIDER NMB 
+Non-Market-Based Services Rider 
+ 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and March 
+18, 2026 in Case No. 26-0035-EL-RDR, before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:   April 1, 2026 
+ 
+NMBC = The amount of the Company’s total projected Non-Market-Based Services-related 
+costs for the Computation Period, allocated to each rate schedule. 
+ 
+The Computation Period over which NMB will apply shall be for a 12 month period 
+beginning no later than 75 days after filing, which will be no later than January 15th 
+of each year. 
+ 
+E = Starting June 1, 2012, any net over- or under-collection of the Non-Market-Based 
+Services-related costs, including applicable interest, invoiced during the period 
+from June 1, 2011 to March 31, 2012, allocated to rate schedules.  Thereafter, E 
+will be calculated for the 12-month period immediately preceding the Computation 
+Period. 
+ 
+BU = Forecasted billing units for the Computation Period for each rate schedule. 
+ 
+CAT = The Commercial Activity Tax rate as established in Section 5751.03 of the Ohio 
+Revised Code. 
+ 
+NMB charges: 
+ 
+RS (all kWhs, per kWh) 2.5117¢ 
+GS* (per kW of Billing Demand) $4.8415 
+GP* (per kW of Billing Demand) $5.7606 
+GSU (per kVa of Billing Demand) $9.0436 
+GT (per kVa of Billing Demand) $10.9703 
+STL (all kWhs, per kWh) 0.0000¢ 
+TRF (all kWhs, per kWh) 1.1782¢ 
+POL (all kWhs, per kWh) 0.0000¢ 
+ 
+* Separately metered outdoor recreation facilities owned by non-profit, governmental and 
+educational institutions, such as athletic fields, served under Rate GS or GP, primarily for 
+lighting purposes, will be charged per the NMB charge applicable to Rate Schedule POL.  
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on an annual basis.  The Company 
+will file with the PUCO a request for approval of the Rider NMB charges no later than January 15th of 
+each year, which shall become effective on a service rendered basis no later than  75 days after filing, 
+unless otherwise ordered by the Commission. To the extent permitted by law, this Rider is subject to 
+reconciliation, including, but not limited to increases or refunds. Such reconciliation shall be based solely 
+upon the results of audits ordered by the Commission in accordance with the July 18, 2012 Opinion and 
+Order in Case No. 12-1230-EL-SSO, and the March 31, 2016 Opinion and Order in Case No. 14-1297-
+EL-SSO and upon the Commission’s orders in Case No. 18-47-AU-COI. 
+
+PDF PAGE 150 (one-based)
+The Toledo Edison Company Sheet 120 
+Toledo, Ohio P.U.C.O. No. 8 4th Revised Page 1 of 1 
+ 
+RIDER RDD 
+Residential Deferred Distribution Cost Recovery Rider 
+ 
+ 
+Filed pursuant to Order dated August 19, 2009, in Case No. 09-641-EL-ATA, before  
+The Public Utilities Commission of Ohio 
+ Effective:  January 1, 2012 
+APPLICABILITY: 
+ 
+Applicable to any residential customer who receives electric service under the Company's rate schedules.  
+The Residential Deferred Distribution Cost Recovery Rider (RDD) charge will apply, effective for service 
+rendered beginning September 1, 2010 and continuing until recovery of the actual August 31, 2009 
+balances related to the post May 31, 2007, ETP Transition Tax, Line Extension and RCP Distribution 
+deferrals, including applicable interest, is completed.  This Rider is not avoidable for customers who take 
+electric generation service from a certified supplier. 
+ 
+ 
+RATE: Summer Winter 
+ 
+All kWh (per kWh) 0.0000¢ 0.0000¢ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled May 31, 2010, December 31, 2010, 
+and May 31, 2011.  For the May 2010 and May 2011 reconciliation, the Company shall file with the Public 
+Utilities Commission of Ohio (“PUCO”) a request for approval of the rider updated charges which, unless 
+otherwise ordered by the PUCO, shall become effective on a service rendered basis September 1, 2010 
+and September 1, 2011, respectively.  The rider charges resulting from the December 31, 2010 
+reconciliation will become effective in January 2011 upon filing with the PUCO subject to final 
+reconciliation in May 2011.  Regardless of the scheduled reconciliation periods, the deferred balance will 
+be tracked and the charges will actually cease with the billing portion immediately following the one in 
+which full recovery of the deferred balances is achieved. 
+
+PDF PAGE 151 (one-based)
+The Toledo Edison Company Sheet 121 
+Toledo, Ohio P.U.C.O. No. 8 4th Revised Page 1 of 1 
+ 
+RIDER NDD 
+Non-Residential Deferred Distribution Cost Recovery Rider 
+ 
+ 
+Filed pursuant to Order dated August 19, 2009, in Case No. 09-642-EL-ATA, before  
+The Public Utilities Commission of Ohio 
+ Effective:  January 1, 2012 
+APPLICABILITY: 
+ 
+Applicable to any non-residential service customer who receives electric service under the Company's 
+rate schedules1.  The Non-Residential Deferred Distribution Cost Recovery Rider (NDD) charge will 
+apply, by rate schedule, effective for service rendered as described in the following section to recover the 
+actual August 31, 2009 balances related to the post May 31, 2007, ETP Transition Tax, Line Extension 
+and RCP Distribution deferrals, plus applicable interest.  This Rider is not avoidable for customers who 
+take electric generation service from a certified supplier. 
+ 
+ 
+RATE: Summer Winter 
+ 
+GS1 (all kWhs, per kWh) 0.0000¢ 0.0000¢ 
+GP1,2 (per kW of Billing Demand) $ 0.0000 $ 0.0000 
+GSU1 (per kVa of Billing Demand) $ 0.0000 $ 0.0000 
+GT (per kVa of Billing Demand) $ 0.0000 $ 0.0000 
+STL (all kWhs, per kWh) 0.0000¢ 0.0000¢ 
+TRF (all kWhs, per kWh) 0.0000¢ 0.0000¢ 
+POL (all kWhs, per kWh) 0.0000¢ 0.0000¢ 
+ 
+Note: 
+ 
+1 Customers subject to the School Credit Provision of Rider EDR are exempted from this Rider.  
+ 
+2 Separately metered outdoor recreation facilities owned by non-profit governmental and 
+educational institutions, such as athletic fields, served under Rate GP, primarily for lighting 
+purposes, will be charged per the NDD charge applicable to Rate Schedule GS. 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled May 31, 2010, December 31, 2010, 
+and May 31, 2011.  For the May 2010 and May 2011 reconciliation, the Company shall file with the Public 
+Utilities Commission of Ohio (“PUCO”) a request for approval of the rider updated charges which, unless 
+otherwise ordered by the PUCO, shall become effective on a service rendered basis September 1, 2010 
+and September 1, 2011, respectively.  The rider charges resulting from the December 31, 2010 
+reconciliation will become effective in January 2011 upon filing with the PUCO subject to final 
+reconciliation in May 2011. 
+ 
+
+PDF PAGE 152 (one-based)
+The Toledo Edison Company   Sheet 122 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 1 
+ 
+RIDER CCR 
+Customer Credit Recovery Rider 
+ 
+ 
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, and  
+Case No. 25-1109-EL-RDR before The Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective:  July 1, 2026 
+ APPLICABILITY: 
+ 
+Applicable to any customer that takes electric service under the Company's rate schedules set forth 
+below.  The Customer Credit Recovery Rider (CCR) charges will apply, by rate schedule, effective for 
+service rendered as described below.  This Rider is not avoidable for customers who take electric 
+generation service from a certified supplier. 
+ 
+ 
+PURPOSE: 
+ 
+The charges provided for in this Rider recover credits provided to qualified customers in Riders RDC, 
+RGC, BDC, and SDC. 
+ 
+ 
+RATE: 
+ 
+The following charges will apply, by rate schedule for all kWhs per kWh: 
+ 
+       RS                  0.2838¢  
+      GS                  0.0201¢ 
+      GP                  0.0144¢ 
+      GSU                 0.0000¢ 
+ 
+RIDER UPDATES: 
+ 
+The CCR charges set forth in this Rider shall be updated and reconciled on a semi-annual basis.  No later 
+than December 1st and June 1st of each year, the Company shall file with the PUCO a request for 
+approval of these rider charges which, unless otherwise ordered by the PUCO, shall become effective on 
+a service rendered basis on January 1st and July 1st of each year.  This Rider is subject to reconciliation, 
+including, but not limited to increases or refunds. Such reconciliation shall be based solely upon the 
+results of audits ordered by the Commission. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 153 (one-based)
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Toledo Edison Company Sheet 123 
+Toledo, Ohio P.U.C.O. No. 8 10th Revised Page 1 of 1 
+RIDER RGC 
+Residential Generation Credit Rider 
+APPLICABILITY: 
+Applicable to any customer taking service under Rate Schedule RS who took service from the Company 
+under one of the following rate schedules as of January 1, 2007, or any subsequent customer at that 
+same service address, who continues to comply with the requirements of the previously applicable rate 
+schedule set forth below, and who uses electricity as their primary or sole source of heat at that address: 
+RGC1 
+Residential Rate “R-02” (Add-On Heat Pump) Original Sheet No. 11 
+Residential Rate “R-06” (Space Heating and Water Heating) Original Sheet No. 13 
+Residential Rate “R-06a” (Space Heating and Water Heating) Original Sheet No. 14 
+Residential Rate “R-07” (Space Heating) Original Sheet No. 17 
+Residential Rate “R-07a” (Space Heating) Original Sheet No. 18 
+RGC2 
+Residential Rate “R-09” (Apartment Rate) Original Sheet No. 19 
+Residential Rate “R-09a” (Apartment Rate) Original Sheet No. 20 
+This Residential Generation Credit Rider (RGC) credit is effective for service rendered beginning October 
+31 through March 31, for kWhs consumed by the customer during each such billing period.  This Rider is 
+not avoidable for customers who take electric generation service from a certified supplier. 
+RATE: RGC1* RGC2** 
+RGC credit 0.0000¢ 0.0000¢ 
+* Will apply for all kWhs in excess of 2,000 kWhs, per kWh 
+** Will apply for the first 2,000 kWhs, per kWh 
+ADDITIONAL PROVISION: 
+Any customer taking service under Rate Schedule RS who took service from the Company under one of 
+the above rate schedules as of January 1, 2007, or any subsequent customer at that same service 
+address, who continues to comply with the requirements of the previously applicable rate schedule set 
+forth above, and who takes electric generation service from a certified supplier, will have generation 
+charges reduced by 1.90¢ per kWh for all kWhs in excess of 500 kWhs consumed by the customer during 
+each winter billing period as defined in the Electric Service Regulations. 
+Filed pursuant to Orders dated May 25, 2011 and March 31, 2016, in Case No. 10-176-EL-ATA 
+and 14-1297-EL-SSO, respectively, before 
+The Public Utilities Commission of Ohio 
+Issued by:  Samuel L. Belcher, President Effective:  October 31, 2018 
+
+PDF PAGE 154 (one-based)
+The Toledo Edison Company Sheet 124 
+Toledo, Ohio P.U.C.O. No. 8 58 th Revised Page 1 of 1 
+ 
+RIDER DCR 
+Delivery Capital Recovery Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, November 19, 2025 and 
+February 18, 2026, and November 19, 2025, in Case Nos. 14-1297-EL-SSO, and 24-468-EL-AIR, 
+respectively, and in Case No. 25-0930-EL-RDR before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  September 1, 2026  
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules set forth 
+below.  The Delivery Capital Recovery Rider (DCR) charges will apply, by rate schedule, effective for bills 
+rendered beginning September 1, 2026.  This Rider is not avoidable for customers who take electric 
+generation service from a certified supplier. 
+ 
+ 
+RATE: 
+ 
+ 
+RS (all kWhs, per kWh) 0.0820¢ 
+GS (per kW of Billing Demand) $0.2575 
+GP (per kW of Billing Demand) $0.0966 
+GSU (per kVa of Billing Demand) $0.0238 
+ 
+ 
+PROVISIONS: 
+ 
+The charges set forth in this Rider recover costs associated with delivery plant investments made since 
+the date certain in Case No. 24-0468-EL-AIR, exclusive of any delivery plant investments being recovered 
+elsewhere. 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated on a quarterly basis. Effective with the filing made 
+on or about April 20, 2014, the Company will file a request for approval of the Rider charges on or about 
+March 31st, June 30th, September 30th and December 31st of each year. Charges, unless otherwise 
+ordered by the PUCO, shall become effective on a bills rendered basis on June 1st, September 1st, 
+December 1st and March 1st of each year. To the extent permitted by law, this Rider is subject to 
+reconciliation, including, but not limited to increases or refunds.  Such reconciliation shall be based solely 
+upon the results of audits ordered by the Commission in accordance with the August 25, 2010 Opinion 
+and Order in Case No. 10-388-EL-SSO, the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-
+SSO, and the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO and upon the 
+Commission’s orders in Case No. 18-47-AU-COI. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 155 (one-based)
+The Toledo Edison Company 
+Toledo, Ohio P.U.C.O. No. 8 
+Sheet 124 
+1st Revised Page 2 of 2 
+RIDER DCR 
+Delivery Capital Recovery Rider 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case Nos. 14-1297-EL-
+SSO, Orders dated November 19, 2025 and January 7, 2026 in Case No. 17-974-EL-UNC, et al., and 
+Case No. 25-0930-EL-RDR before  
+The Public Utilities Co mmission of O hio 
+Issued by: Torrence L. Hinton, President Effective:  May 1, 2026 
+ADDITIONAL PROVISIONS: 
+Pursuant to the November 19, 2025 PUCO Opinion and Order and January 7, 2026 PUCO Entry in Case 
+No. 17-974-EL-UNC, et al., credits were applied under this provision, by rate schedule, effective for 
+service rendered beginning February 1, 2026 through April 30, 2026. The credits are set to zero effective 
+for service rendered beginning May 1, 2026, subject to final reconciliation. 
+Credit 1 Credit 2 Total 
+RS (all kWh, per kWh)  (0.0000¢) (0.0000¢) (0.0000¢) 
+GS (per kW of Billing Demand) ($0.0000) ($0.0000)  ($0.0000) 
+GS (all kWhs, per kWh)  (0.0000¢) (0.0000¢) 
+GP (per kW of Billing Demand) ($0.0000) ($0.0000)  ($0.0000) 
+GP (all kWhs, per kWh)  (0.0000¢) (0.0000¢) 
+GSU (per kVa of Billing Demand) ($0.0000) ($0.0000)  ($0.0000) 
+GSU (all kWhs, per kWh)  (0.0000¢) (0.0000¢) 
+GT (per kW of Billing Demand)  ($0.0000) ($0.0000)  ($0.0000) 
+GT (all kWhs, per kWh)  (0.0000¢) (0.0000¢) 
+STL (all kWhs, per kWh)  (0.0000¢) (0.0000¢) (0.0000¢) 
+TRF (all kWhs, per kWh)  (0.0000¢) (0.0000¢) (0.0000¢) 
+POL (all kWhs, per kWh)  (0.0000¢) (0.0000¢) (0.0000¢) 
+
+PDF PAGE 156 (one-based)
+The Toledo Edison Company Sheet 125 
+Toledo, Ohio P.U.C.O. No. 8 26 th Revised Page 1 of 1 
+ 
+RIDER PIR 
+Phase-In Recovery Rider 
+ 
+ 
+Filed pursuant to Order dated October 10, 2012 in Case No. 12-1465-EL-ATS and 
+Case No. 13-2144-EL-RDR before  
+The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective: July 1, 2026 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules set forth 
+below.  The Phase-In Recovery Rider (PIR) charges will apply, by rate schedule, for all kWhs per kWh.  
+This Rider is nonbypassable within the meaning of O.R.C. § 4928.231 and is not avoidable for customers 
+who take electric generation service from a certified supplier. 
+ 
+ 
+RATE:        
+ 
+RS  0.0256¢ 
+GS  0.0256¢ 
+GP  0.0256¢ 
+GSU  0.0256¢ 
+GT  0.0256¢ 
+STL  0.0256¢ 
+TRF  0.0256¢ 
+POL  0.0256¢ 
+  
+  
+PROVISIONS: 
+ 
+The charges set forth in this Rider recover costs associated with phase-in recovery bonds issued to 
+securitize costs for which the Company was previously authorized recovery, in accordance with O.R.C. §§ 
+4928.23 through 4928.2318. 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated on a semi-annual basis.  No later than November 1 st 
+and May 1st of each year, the Company will file with the PUCO a request for approval of the Rider 
+charges which, unless otherwise ordered by the PUCO, shall become effective on a service rendered 
+basis on January 1st and July 1st of each year. 
+ 
+
+PDF PAGE 157 (one-based)
+The Toledo Edison Company Original Sheet 126 
+Toledo, Ohio P.U.C.O. No. 8 Page 1 of 1 
+ 
+  RIDER GDR 
+Government Directives Recovery Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, before 
+The Public Utilities Commission of Ohio 
+ Effective:  February 1, 2025 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company’s rate schedules. This 
+Government Directives Recovery Rider (GDR) charge is a fixed monthly charge and will be effective for 
+service rendered beginning February 1, 2025. This Rider is not avoidable for customers during the period 
+the customer takes electric generation service from a certified supplier. 
+ 
+PURPOSE: 
+ 
+Charges set forth in this Rider shall recover costs associated with federal or state government mandates 
+enacted after August 4, 2014.  
+ 
+CHARGE*: 
+ 
+RS $0.0000 
+GS $0.0000 
+GP $0.0000 
+GSU $0.0000 
+GT $0.0000 
+STL (per lighting unit) $0.0000 
+TRF $0.0000 
+POL $0.0000 
+ 
+* The charges listed above, except those for rate schedule STL, will be applied per customer, per 
+month.  Any customer who receives electric service under rate schedule STL will have the above 
+charge applied per lighting unit, per month. 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a semi-annual basis.  No later 
+than December 1st and June 1st of each year, the Company shall file with the PUCO a request for 
+approval of these charges which, unless otherwise ordered by the PUCO, shall become effective on a 
+service rendered basis on January 1st and July 1st of each year, beginning February 1, 2025. 
+ 
+ 
+ 
+
+PDF PAGE 159 (one-based)
+The Toledo Edison Company Original Sheet 129 
+Toledo, Ohio P.U.C.O. No. 8 Page 1 of 1 
+ 
+RIDER ORR 
+Ohio Renewable Resources Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO before 
+The Public Utilities Commission of Ohio 
+ Effective:  February 1, 2025 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company’s rate schedules. This Ohio 
+Renewable Resources Rider (ORR) will be effective for service rendered beginning February 1, 2025. 
+This Rider is not avoidable for customers during the period the customer takes electric generation service 
+from a certified supplier. 
+ 
+The ORR charges will apply, by rate schedule, as follows:   
+ 
+RATE: 
+ 
+RS (all kWhs, per kWh) 0.0000¢ 
+GS (per kW of Billing Demand) $0.0000 
+GP (per kW of Billing Demand) $0.0000 
+GSU (per kVa of Billing Demand) $0.0000 
+GT (per kVa of Billing Demand) $0.0000 
+STL (all kWhs, per kWh) 0.0000¢ 
+TRF (all kWhs, per kWh) 0.0000¢ 
+POL (all kWhs, per kWh) 0.0000¢ 
+ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated on an annual basis.  No later than April 1st of each 
+year, the Company will file with the PUCO a request for approval of the Rider charges which, unless 
+otherwise ordered by the PUCO, shall become effective on a service rendered basis on June 1st of each 
+year.   
+ 
+ 
+ 
+ 
+
+PDF PAGE 162 (one-based)
+The Toledo Edison Company Sheet 133 
+Toledo, Ohio P.U.C.O. No. 8 4th Revised Page 1 of 1 
+ 
+Rider CSR 
+Conservation Support Rider 
+ 
+ 
+Filed pursuant to Orders dated January 15, 2020 and June 17, 2020, in Case No. 19-2080-EL-ATA, and Orders 
+dated February 2, 2021 and July 7, 2021 in Case No. 21-0101-EL-ATA and Case No. 21-0484-EL-ATA, respectively, 
+before The Public Utilities Commission of Ohio 
+Issued by:  Samuel L Belcher, President Effective: September 1, 2021    
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company’s rate schedules 
+Residential Service (“Rate RS”) and General Service – Secondary (“Rate GS”).  This Conservation 
+Support Rider (CSR) will be effective for service rendered beginning September 1, 2021.  This Rider is 
+not avoidable for customers who take electric generation service from a certified supplier.  
+ 
+ 
+RATE 1: 
+ 
+ 
+ RS (all kWhs, per kWh): 0.0000¢ 
+ 
+ 
+ GS (For each kW over 5 kW of billing demand): $0.0000 
+ 
+ 
+RATE 2: 
+ 
+ 
+ RS (all kWhs, per kWh): 0.0000¢ 
+ 
+ 
+ GS (all kWhs, per kWh): 0.0000¢ 
+ 
+ 
+ 
+
+PDF PAGE 164 (one-based)
+The Toledo Edison Company  Sheet 135  
+Toledo, Ohio P.U.C.O. No. 8  13 th Revised Page 1 of 1 
+ 
+RIDER LGR 
+Legacy Generation Resource Rider 
+ 
+Filed pursuant to Order dated December 18, 2019 in Case No. 19-2121-EL-ATA,  
+and the Entry dated August 6, 2025, in Case No. 24-1062-EL-RDR before  
+The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:   August 14, 2025 
+APPLICABILITY: 
+ 
+Applicable to any customer that takes electric service under the Company's rate schedules. The Legacy 
+Generation Resource Rider (“LGR”) charges or credits will apply effective for service rendered beginning  
+August 14, 2025. This Rider is not avoidable for customers who take electric generation service from a 
+certified supplier.  
+ 
+RATE: 
+ 
+For Rate RS, the Rider LGR charges or credits will be a single monthly flat rate per month.  For all other 
+rate schedules listed below, the Rider LGR charges or credits will be a single cents per kWh rate for 
+usage up to 833,000 kWh per month per customer billing account. 
+ 
+ Part A Part B Part A & B      
+RS $0.00 $0.00 $0.00 
+GS 0.0000¢ 0.00000¢ 0.00000¢ 
+GP 0.0000¢ 0.00000¢ 0.00000¢ 
+GSU 0.0000¢ 0.00000¢ 0.00000¢ 
+GT 0.0000¢ 0.00000¢ 0.00000¢ 
+STL 0.0000¢ 0.00000¢ 0.00000¢ 
+TRF 0.0000¢ 0.00000¢ 0.00000¢ 
+POL 0.0000¢ 0.00000¢ 0.00000¢ 
+ 
+ 
+PROVISIONS: 
+ 
+1. Rider LGR is implemented pursuant to Section 4928.148 of the Revised Code. 
+ 
+2. The Part A rate will be designed to collect the forecasted net costs related to the legacy generation 
+resources and the over/under recovered amount from the period.  
+ 
+3. The Part B rate will reconcile the over/under amounts associated with the forecasted billing 
+determinants versus the actual billing determinants. 
+ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges or credits contained in this Rider shall be updated and reconciled on a semi-annual basis. 
+No later than December 1st and June 1st each year, the Company will file with the PUCO a request for 
+approval of the Rider charges or credits which, unless otherwise ordered by the PUCO, shall become 
+effective on a service rendered basis on January 1 st and July 1st of each year. This Rider is subject to 
+reconciliation, including, but not limited to increases or refunds. Such reconciliation shall be based solely 
+upon the results of audits ordered by the commission.  
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 165 (one-based)
+The Toledo Edison Company Sheet 136  
+Toledo, Ohio P.U.C.O. No. 8 5 th Revised Page 1 of 1 
+ 
+RIDER SGF 
+Solar Generation Fund Rider 
+ 
+Filed pursuant to Order dated October 20, 2021 in Case No. 21-0938-EL-ATA, and the Entry dated August 6, 2025 in 
+Case No. 24-1037-EL-RDR before  
+The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  August 14, 2025 
+APPLICABILITY: 
+ 
+Applicable to any customer that takes electric service under the Company's rate schedules. The Solar 
+Generation Fund Rider (“SGF”) charges will apply effective for bills rendered beginning August 14, 2025. 
+This Rider is not avoidable for customers who take electric generation service from a certified supplier.  
+ 
+RATE: 
+ 
+For Rate RS, the Rider SGF charge will be a single monthly flat rate per month.  For all other rate 
+schedules listed below, the Rider SGF charges will be a single cents per kWh rate for usage up to 
+833,000 kWh per month per customer billing account. 
+ 
+    
+RS   $0.00   
+GS   0.000000¢  
+GP   0.000000¢  
+GSU   0.000000¢  
+GT   0.000000¢  
+STL   0.000000¢  
+TRF   0.000000¢  
+POL   0.000000¢  
+ 
+ 
+PROVISIONS: 
+ 
+Rider SGF is implemented pursuant to Section 3706.46 of the Revised Code. 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on an annual basis. On or about 
+November 15th each year, the Company will file with the PUCO a request for approval of the Rider 
+charges which, unless otherwise ordered by the PUCO, shall become effective on a bill rendered basis on 
+January 1st of each year. This Rider is subject to reconciliation, including, but not limited to increases or 
+refunds. Such reconciliation shall be based solely upon the results of audits ordered by the Commission. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 166 (one-based)
+The Toledo Edison Company Sheet 137  
+Toledo, Ohio P.U.C.O. No. 8 7th Revised Page 1 of 1 
+ 
+RIDER CRC 
+Consumer Rate Credit Rider 
+ 
+Filed pursuant to Order dated December 1, 2021 in Case No. 21-1127-EL-ATA, et. al. and Case No. 25-1137-EL-
+RDR before  
+The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective: January 1, 2026 
+APPLICABILITY: 
+ 
+Applicable to any customer that takes electric service under the Company's rate schedules. The 
+Consumer Rate Credit Rider (“CRC”) is not avoidable for customers who take electric generation service 
+from a certified supplier. 
+ 
+RATE: 
+ 
+For Rate RS, the Rider CRC RATE 1 and RATE 2 rates will each be a single flat rate per customer per 
+month.  RATE 1 will apply on a bills rendered basis and RATE 2 will apply on a service rendered basis . 
+ 
+For all other rate schedules listed below, the Rider CRC RATE 1 and RATE 2 rates will each be a single 
+cents per kWh rate per month per customer billing account that will apply on a service rendered basis. 
+ 
+ 
+      RATE 1      RATE 2   
+RS   ($00.00)     $(0.00)  
+GS (0.0000¢) (0.0000¢)  
+GP (0.0000¢) (0.0000¢)  
+GSU (0.0000¢) (0.0000¢)  
+GT (0.0000¢) (0.0000¢)  
+STL (0.0000¢) (0.0000¢)  
+TRF (0.0000¢) (0.0000¢)  
+POL (0.0000¢) (0.0000¢)  
+ 
+ 
+PROVISIONS: 
+ 
+1. RATE 1 provides refunds to customers associated with the Company’s Significantly Excessive 
+Earnings Test for years 2017-2019.   
+ 
+2. RATE 2 provides consumer rate reductions, pursuant to the December 1, 2021 PUCO Opinion and 
+Order in Case No. 20-1476-EL-UNC et. al. 
+ 
+ 
+ 
+RIDER UPDATES: 
+ 
+RATE 1 for Rate RS will apply over one month and RATE 1 for all other rate schedules will apply over six 
+months, at which point the RATE 1 rates will be set to zero subject to final reconciliation.   
+ 
+For RATE 2, all rates shall be updated and reconciled on an annual basis.  No later than November 1st of 
+each year, the Company will file with the PUCO to update the RATE 2 rates  which, unless otherwise 
+ordered by the PUCO, shall become effective on a service rendered basis on January 1st of each year.  
+ 
+This Rider is subject to reconciliation, including, but not limited to increases or refunds, based upon the 
+results of audits ordered by the Commission in accordance with the December 1, 2021  Opinion and Order 
+in Case No. 21-1127-EL-ATA. 
+ 

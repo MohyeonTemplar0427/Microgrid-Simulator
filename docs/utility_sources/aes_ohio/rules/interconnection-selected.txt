@@ -1,0 +1,136 @@
+Original URL: https://www.aes-ohio.com/interconnection
+Original HTML SHA-256: 1ec96d0ca414ba4d5b9b8c18cd21be44990950c69cd4d4270c387c64bb3261f7
+Retrieved: 2026-11-02
+
+Interconnection online application and requirements
+Your one-stop resource for interconnection applications and technical requirements to guide planning and installation of
+renewable energy
+systems.
+Complete your application using our online interconnection application system.
+Login to our online interconnection application system
+Technical requirements
+Rules for interconnection and parallel preperation of distributed generation.
+Download
+Screening process
+Learn how AES Ohio evaluates interconnection applications.
+Download
+Timeframe and fees
+Interconnection rules are defined in AES Ohio's tariff approved by the Public Utilities Commission of Ohio. Note that
+other Ohio tariffs
+may be of relevance, including
+G11
+.
+Download
+Billing and payment
+Net metering billing and payment rules are defined in AES Ohio's tariff approved by the Public Utilities Commission of Ohio.
+See section D (Net Metering).
+Download
+For relevant applications, there is a $95 fee to upgrade to a bidirectional residential meter.
+Level 1
+applications are the most common for more than 90% for residential 0-25 kW. The cost is $50.
+Level 2
+applications are for 25 kW to 2 MW. These have an additional five days for engineering review. The cost is $50 + $1 per kW + cost of any network upgrades.
+Level 3
+applications are significantly more expensive, require a full impact study and facility study agreement, and will often require some sort of power purchase agreement or PJM WAMPA. The cost is $100 + $2/kW + the cost of network upgrades. Additionally, level 3 applicants must pay for impact and facility studies (pricing will vary). These can be net metering, cogeneration or solo generation. Timeline for processing is six months to a year.
+Learn more about Net Metering
+Reference applications
+for review
+Before completing the online interconnection application, you can review needed information for each level with our
+downloadable reference applications.
+Image
+Level 1 interconnection application
+Downloadable reference application for
+systems generating 25 kW or less
+. Please
+complete application online
+.
+Level 2 interconnection application
+Downloadable reference application for
+systems generating between 25 kW and 2 MW
+. Please
+complete application online
+.
+Level 3 interconnection application
+Downloadable reference application for
+systems generating more than 2 MW
+. Please
+complete application online
+.
+Interconnection
+FAQs
+General solar questions
+How much energy does a system generate?
+The amount of kWh produced by solar panels is dependent on factors such as shading, direction of solar panels and weather.
+Does the direction of the solar panel matter?
+Yes. Southern facing panels will receive the most amount of sunlight for stationary panels. Single-axis and two-axis sun tracking follow a SE-to-SW motion.
+Will I have power during a system outage?
+No, you will not. Most inverter-based systems are designed to operate in combination with the utility system. It's a safety measure to prevent back-feeding electricity onto our distribution lines.
+If I install solar or wind, do I still need power from the utility?
+Yes, for 24/7 reliability, typical renewable generation systems still require grid connectivity. Wind and solar vary in their output during the day and matching generation with energy consumption is not possible without special equipment.
+Net metering
+What is net energy metering?
+Customers who generate their own electricity using renewable energy sources can interconnect with the electric grid and receive bill credits for excess generation. A special net-capable meter measures the energy a customer uses off the grid and the excess generation the renewable system provides onto the grid and calculates the difference or “net.”
+What is a net-capable meter?
+A net-capable meter measures the flow of electricity in two directions.
+Can the net-capable meter measure the total generation of my system?
+No. Generation occurs on the customer side of the meter. Any energy generated is first fed inside the premises for use by appliances-, electronics, lights, etc. The meter measures only the excess energy that is fed onto the grid.
+Will I get a check for extra power I generate?
+No. When you generate more power than you use, you will receive a credit that offsets your charges on the current bill with any remaining credit balance applied to next month’s bill.
+Specifications and timeline
+How long does it take for an application to be approved?
+Upon receipt of an application form, AES Ohio will review the application for completeness. If AES Ohio determines the application form is incorrect and/or is incomplete, AES Ohio will notify the customer within ten (10) business days and provide the correct form and/or a description of the information needed to complete the application form. The interconnection request will be placed in Queue based upon the date and time of receipt of the completed application form.
+Event
+Number of business days
+Level 1
+10 days to give notice of receipt
+10 days to give notice of approval
+5 days to give interconnection agreement
+Level 2
+10 days to give notice of receipt
+20 days to give notice of approval
+5 days to give interconnection agreement
+Level 3
+10 days to give notice of receipt
+10 days to schedule scoping call
+5 days to provide impact study agreement
+5 days to provide facilities study agreement
+5 days to provide interconnection agreement
+Pre-application
+10 days to provide report
+What am I responsible for once installing my solar system?
+You are responsible for complying with all applicable laws, regulations, protection, maintenance, and operation required to accommodate power generation and/or storage. You are also responsible for synchronization with the distribution system.
+What happens if I change my equipment after my application has been approved?
+After an application has been approved, any changes in your system requires an updated application.
+What specifications does my equipment need to have?
+An application for interconnection of distributed generators that are twenty-five kilowatts or less and utilize equipment that is certified in compliance with IEEE 1547 standard and UL 1741 standard.
+Does my drawing need to be stamped by a professional engineer?
+Drawings need to be stamped only for level 2 applications greater than 50kW and all level 3 applications. Level 1 applications do not require a stamp from a professional engineer.
+What is the largest solar I can install?
+According to
+Ohio Rule 4901:1-10-28
+, a customer-generator must size their facility so as not to exceed 120% of their previous year’s historical usage.
+What needs to be included on the site plan?
+Overall property layout and street access including north arrow orientation and the nearest cross street in each direction. (Indicate direction of nearest cross street if impractical to show on drawing).
+Ground mounted installations must show clearances and details of surrounding structures especially how they cross the company's facilities. The route and length of the electrical connection to the premises is also required.
+Location of the DER AC disconnect meeting the requirements of the NEC — for self-contained metering locations.
+Location of the DER utility required AC visible break disconnect — for metering locations utilizing instrument transformers.
+Location of generation, inverter, storage and associated electrical equipment.
+Location of service transformer.
+What needs to be included in the one-line diagram?
+Please indicate DC and AC ratings as appropriate.
+Please indicate AC rating of the inverter.
+Identify the make and model of the disconnect switch and note if it's lockable with a visible break when required.
+Identify connection to customer’s electrical system.
+Identify utility meter, inverter and / or associated generation and storage (battery) equipment.
+Additional information
+This
+policy video
+from the
+Edison Electric Institute
+explains net metering and the associated costs for customers and utilities. If you have additional questions, please contact
+AES Ohio's Interconnection Department
+:
+1900 Dryden Rd.
+Dayton, OH 45439
+317-268-8418
+aesohiointerconnection@aes.com

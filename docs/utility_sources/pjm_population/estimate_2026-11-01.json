@@ -1,0 +1,327 @@
+{
+  "research_date": "2026-11-01",
+  "reported_headline": "About 76% of PJM's population, approximately 51 million people, as an indicative household-based utility-footprint proxy",
+  "metric": "Estimated household population in implemented utility footprints divided by rounded PJM population",
+  "is_geospatial_population_count": false,
+  "is_tariff_eligible_population_count": false,
+  "numerator": [
+    {
+      "utility": "ComEd",
+      "state": "IL",
+      "residential_accounts": 3727675,
+      "persons_per_household": 2.46,
+      "estimated_household_population": 9170080.5,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 4110,
+      "repository_keys": [
+        "comed"
+      ]
+    },
+    {
+      "utility": "Ohio Edison",
+      "state": "OH",
+      "residential_accounts": 957780,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 2269938.6,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 13998,
+      "repository_keys": [
+        "firstenergy_ohio_edison"
+      ]
+    },
+    {
+      "utility": "PECO",
+      "state": "PA",
+      "residential_accounts": 1535818,
+      "persons_per_household": 2.39,
+      "estimated_household_population": 3670605.02,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 14940,
+      "repository_keys": [
+        "peco"
+      ]
+    },
+    {
+      "utility": "PSE&G",
+      "state": "NJ",
+      "residential_accounts": 2056231,
+      "persons_per_household": 2.62,
+      "estimated_household_population": 5387325.220000001,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 15477,
+      "repository_keys": [
+        "pseg"
+      ]
+    },
+    {
+      "utility": "Dominion Energy Virginia and North Carolina",
+      "state": "VA",
+      "residential_accounts": 2383548,
+      "persons_per_household": 2.52,
+      "estimated_household_population": 6006540.96,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 19876,
+      "repository_keys": [
+        "dominion_energy_virginia",
+        "dominion_energy_north_carolina"
+      ]
+    },
+    {
+      "utility": "Dominion Energy Virginia and North Carolina",
+      "state": "NC",
+      "residential_accounts": 108656,
+      "persons_per_household": 2.44,
+      "estimated_household_population": 265120.64,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 19876,
+      "repository_keys": [
+        "dominion_energy_virginia",
+        "dominion_energy_north_carolina"
+      ]
+    },
+    {
+      "utility": "Atlantic City Electric",
+      "state": "NJ",
+      "residential_accounts": 506488,
+      "persons_per_household": 2.62,
+      "estimated_household_population": 1326998.56,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 963,
+      "repository_keys": [
+        "atlantic_city_electric_new_jersey"
+      ]
+    },
+    {
+      "utility": "Baltimore Gas & Electric",
+      "state": "MD",
+      "residential_accounts": 1214100,
+      "persons_per_household": 2.57,
+      "estimated_household_population": 3120237.0,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 1167,
+      "repository_keys": [
+        "bge_maryland"
+      ]
+    },
+    {
+      "utility": "Delmarva Power Maryland",
+      "state": "MD",
+      "residential_accounts": 186368,
+      "persons_per_household": 2.57,
+      "estimated_household_population": 478965.75999999995,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 5027,
+      "repository_keys": [
+        "delmarva_maryland"
+      ]
+    },
+    {
+      "utility": "Duquesne Light",
+      "state": "PA",
+      "residential_accounts": 550405,
+      "persons_per_household": 2.39,
+      "estimated_household_population": 1315467.95,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 5487,
+      "repository_keys": [
+        "duquesne_light_pennsylvania"
+      ]
+    },
+    {
+      "utility": "JCP&L",
+      "state": "NJ",
+      "residential_accounts": 1038258,
+      "persons_per_household": 2.62,
+      "estimated_household_population": 2720235.96,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 9726,
+      "repository_keys": [
+        "jcpl_new_jersey"
+      ]
+    },
+    {
+      "utility": "AEP Ohio (Ohio Power)",
+      "state": "OH",
+      "residential_accounts": 1339232,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 3173979.8400000003,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 14006,
+      "repository_keys": [
+        "aep_ohio"
+      ]
+    },
+    {
+      "utility": "PPL Electric Utilities",
+      "state": "PA",
+      "residential_accounts": 1295883,
+      "persons_per_household": 2.39,
+      "estimated_household_population": 3097160.37,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 14715,
+      "repository_keys": [
+        "ppl_electric_pennsylvania"
+      ]
+    },
+    {
+      "utility": "Potomac Edison Maryland",
+      "state": "MD",
+      "residential_accounts": 256568,
+      "persons_per_household": 2.57,
+      "estimated_household_population": 659379.76,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 15263,
+      "repository_keys": [
+        "potomac_edison_maryland"
+      ]
+    },
+    {
+      "utility": "Pepco Maryland",
+      "state": "MD",
+      "residential_accounts": 553607,
+      "persons_per_household": 2.57,
+      "estimated_household_population": 1422769.99,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 15270,
+      "repository_keys": [
+        "pepco_maryland"
+      ]
+    },
+    {
+      "utility": "Rockland Electric New Jersey",
+      "state": "NJ",
+      "residential_accounts": 65889,
+      "persons_per_household": 2.62,
+      "estimated_household_population": 172629.18,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 16213,
+      "repository_keys": [
+        "rockland_electric_new_jersey"
+      ]
+    },
+    {
+      "utility": "FirstEnergy Pennsylvania: all four PA districts",
+      "state": "PA",
+      "residential_accounts": 1802612,
+      "persons_per_household": 2.39,
+      "estimated_household_population": 4308242.680000001,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 66101,
+      "repository_keys": [
+        "firstenergy_pa_met_ed",
+        "firstenergy_pa_penelec",
+        "firstenergy_pa_penn_power",
+        "firstenergy_pa_west_penn"
+      ]
+    },
+    {
+      "utility": "The Illuminating Company (CEI)",
+      "state": "OH",
+      "residential_accounts": 676098,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 1602352.26,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 3755,
+      "repository_keys": [
+        "firstenergy_ohio_illuminating"
+      ]
+    },
+    {
+      "utility": "Toledo Edison",
+      "state": "OH",
+      "residential_accounts": 278814,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 660789.18,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 18997,
+      "repository_keys": [
+        "firstenergy_ohio_toledo"
+      ]
+    }
+  ],
+  "estimated_people": 50828819.43,
+  "denominator_people": 67000000,
+  "population_share": 0.7586390959701492,
+  "selected_residential_distribution_accounts": 20534030,
+  "pjm_residential_distribution_accounts": 27756201,
+  "residential_account_share_crosscheck": 0.7397997297973162,
+  "west_penn_accounts_rounding_only_bounds": null,
+  "illustrative_occupancy_sensitivity_share": [
+    0.6827751863731343,
+    0.8345030055671642
+  ],
+  "sensitivity_is_confidence_interval": false,
+  "alliant_change_in_pjm_population": 0,
+  "limitations": [
+    "No utility/PJM population polygon intersection was performed.",
+    "Residential service accounts are an imperfect proxy for occupied households, especially master-metered dwellings, seasonal homes and group quarters.",
+    "Statewide household size is assumed representative of each utility subterritory; actual subterritory differences are unmeasured.",
+    "2024 customer data,2020-2024 household factors and current rounded PJM headline have different vintages.",
+    "This is the geography of implemented utilities, not the population on supported tariffs, supply arrangements, solar programs or verified rate dates.",
+    "No corporate gas or unrelated affiliate territories counted.",
+    "Alliant Iowa and other MISO/California utilities add no PJM numerator."
+  ],
+  "source_inputs_sha256": "49193432d3d6231b8b68d3996c13b13141441639fea7265f580328f7dc72fdb8",
+  "source_extract_sha256": "4f87ebdf192799a5cfcdf58194260cb6596f6d29e2b974bb7184b9dc584d8f86",
+  "implemented_utility_state_district_workflows": 22,
+  "implemented_repository_keys": [
+    "aep_ohio",
+    "atlantic_city_electric_new_jersey",
+    "bge_maryland",
+    "comed",
+    "delmarva_maryland",
+    "dominion_energy_north_carolina",
+    "dominion_energy_virginia",
+    "duquesne_light_pennsylvania",
+    "firstenergy_ohio_edison",
+    "firstenergy_ohio_illuminating",
+    "firstenergy_ohio_toledo",
+    "firstenergy_pa_met_ed",
+    "firstenergy_pa_penelec",
+    "firstenergy_pa_penn_power",
+    "firstenergy_pa_west_penn",
+    "jcpl_new_jersey",
+    "peco",
+    "pepco_maryland",
+    "potomac_edison_maryland",
+    "ppl_electric_pennsylvania",
+    "pseg",
+    "rockland_electric_new_jersey"
+  ],
+  "merged_firstenergy_pa_counted_once": true,
+  "legacy_west_penn_estimate_counted": false,
+  "current_additions": [
+    {
+      "utility": "Toledo Edison",
+      "state": "OH",
+      "residential_accounts": 278814,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 660789.18,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 18997,
+      "repository_keys": [
+        "firstenergy_ohio_toledo"
+      ]
+    }
+  ],
+  "added_residential_accounts_this_implementation": 278814,
+  "added_estimated_people_this_implementation": 660789.18,
+  "added_population_percentage_points": 0.9862525074626867,
+  "estimated_people_before_current_additions": 50168030.25,
+  "population_share_before_current_additions": 0.7487765708955224,
+  "implemented_workflows_before_current_additions": 21,
+  "historical_baseline": {
+    "research_date": "2026-10-25",
+    "implemented_workflows": 7,
+    "estimated_people": 28295666.220898878,
+    "population_share": 0.42232337643132656,
+    "source_estimate_sha256": "3a833168d41d159fc86b8510902e8ccc9c1a86eff074f4c5965d627648268707"
+  },
+  "previous_implementation_snapshot": {
+    "research_date": "2026-10-31",
+    "implemented_workflows": 21,
+    "estimated_people": 50168030.25,
+    "population_share": 0.7487765708955224,
+    "source_estimate_sha256": "3d0fb77d293140469457f1ec52f9dae68f0da74f57bbc65ef6b7e7c2da780956"
+  }
+}

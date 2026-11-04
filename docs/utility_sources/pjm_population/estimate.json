@@ -1,6 +1,6 @@
 {
-  "research_date": "2026-10-31",
-  "reported_headline": "About 75% of PJM's population, approximately 50 million people, as an indicative household-based utility-footprint proxy",
+  "research_date": "2026-11-02",
+  "reported_headline": "About 78% of PJM's population, approximately 52 million people, as an indicative household-based utility-footprint proxy",
   "metric": "Estimated household population in implemented utility footprints divided by rounded PJM population",
   "is_geospatial_population_count": false,
   "is_tariff_eligible_population_count": false,
@@ -225,18 +225,42 @@
       "repository_keys": [
         "firstenergy_ohio_illuminating"
       ]
+    },
+    {
+      "utility": "Toledo Edison",
+      "state": "OH",
+      "residential_accounts": 278814,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 660789.18,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 18997,
+      "repository_keys": [
+        "firstenergy_ohio_toledo"
+      ]
+    },
+    {
+      "utility": "AES Ohio (Dayton Power and Light)",
+      "state": "OH",
+      "residential_accounts": 478741,
+      "persons_per_household": 2.37,
+      "estimated_household_population": 1134616.1700000002,
+      "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
+      "utility_id": 4922,
+      "repository_keys": [
+        "aes_ohio"
+      ]
     }
   ],
-  "estimated_people": 50168030.25,
+  "estimated_people": 51963435.6,
   "denominator_people": 67000000,
-  "population_share": 0.7487765708955224,
-  "selected_residential_distribution_accounts": 20255216,
+  "population_share": 0.7755736656716418,
+  "selected_residential_distribution_accounts": 21012771,
   "pjm_residential_distribution_accounts": 27756201,
-  "residential_account_share_crosscheck": 0.7297546231200732,
+  "residential_account_share_crosscheck": 0.7570478034800223,
   "west_penn_accounts_rounding_only_bounds": null,
   "illustrative_occupancy_sensitivity_share": [
-    0.6738989138059702,
-    0.8236542279850747
+    0.6980162991044776,
+    0.853131032238806
   ],
   "sensitivity_is_confidence_interval": false,
   "alliant_change_in_pjm_population": 0,
@@ -249,9 +273,9 @@
     "No corporate gas or unrelated affiliate territories counted.",
     "Alliant Iowa and other MISO/California utilities add no PJM numerator."
   ],
-  "source_inputs_sha256": "9a09e179ca0cb8a12ce1a80633ab453387d939bc33921e24d90e26d6f32c9ea5",
+  "source_inputs_sha256": "c8406891f2531680441bc490d199cf8373dfb4ba46730b71e5934c23612dfdf5",
   "source_extract_sha256": "4f87ebdf192799a5cfcdf58194260cb6596f6d29e2b974bb7184b9dc584d8f86",
-  "implemented_utility_state_district_workflows": 21,
+  "implemented_utility_state_district_workflows": 23,
   "implemented_repository_keys": [
     "aep_ohio",
     "atlantic_city_electric_new_jersey",
@@ -263,6 +287,7 @@
     "duquesne_light_pennsylvania",
     "firstenergy_ohio_edison",
     "firstenergy_ohio_illuminating",
+    "firstenergy_ohio_toledo",
     "firstenergy_pa_met_ed",
     "firstenergy_pa_penelec",
     "firstenergy_pa_penn_power",
@@ -273,35 +298,43 @@
     "potomac_edison_maryland",
     "ppl_electric_pennsylvania",
     "pseg",
-    "rockland_electric_new_jersey"
+    "rockland_electric_new_jersey",
+    "aes_ohio"
   ],
   "merged_firstenergy_pa_counted_once": true,
   "legacy_west_penn_estimate_counted": false,
   "current_additions": [
     {
-      "utility": "The Illuminating Company (CEI)",
+      "utility": "AES Ohio (Dayton Power and Light)",
       "state": "OH",
-      "residential_accounts": 676098,
+      "residential_accounts": 478741,
       "persons_per_household": 2.37,
-      "estimated_household_population": 1602352.26,
+      "estimated_household_population": 1134616.1700000002,
       "evidence": "EIA2024 residential distribution accounts times statewide Census household size",
-      "utility_id": 3755,
+      "utility_id": 4922,
       "repository_keys": [
-        "firstenergy_ohio_illuminating"
+        "aes_ohio"
       ]
     }
   ],
-  "added_residential_accounts_this_implementation": 676098,
-  "added_estimated_people_this_implementation": 1602352.26,
-  "added_population_percentage_points": 2.391570537313433,
-  "estimated_people_before_current_additions": 48565677.99,
-  "population_share_before_current_additions": 0.724860865522388,
-  "implemented_workflows_before_current_additions": 20,
+  "added_residential_accounts_this_implementation": 478741,
+  "added_estimated_people_this_implementation": 1134616.1700000002,
+  "added_population_percentage_points": 1.693456970149254,
+  "estimated_people_before_current_additions": 50828819.43,
+  "population_share_before_current_additions": 0.7586390959701492,
+  "implemented_workflows_before_current_additions": 22,
   "historical_baseline": {
     "research_date": "2026-10-25",
     "implemented_workflows": 7,
     "estimated_people": 28295666.220898878,
     "population_share": 0.42232337643132656,
     "source_estimate_sha256": "3a833168d41d159fc86b8510902e8ccc9c1a86eff074f4c5965d627648268707"
+  },
+  "previous_implementation_snapshot": {
+    "research_date": "2026-11-01",
+    "implemented_workflows": 22,
+    "estimated_people": 50828819.43,
+    "population_share": 0.7586390959701492,
+    "source_estimate_sha256": "a0dc45e16f488898460c7f9e06c2471fa06d0a4d64770246ec16032b5284d240"
   }
 }

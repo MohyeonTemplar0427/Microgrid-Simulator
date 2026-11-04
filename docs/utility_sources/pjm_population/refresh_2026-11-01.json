@@ -1,0 +1,43 @@
+{
+  "reviewed": "2026-11-01",
+  "eia_vintage": "2024 final",
+  "eia_extract_unchanged_sha256": "4f87ebdf192799a5cfcdf58194260cb6596f6d29e2b974bb7184b9dc584d8f86",
+  "source_refresh": [
+    {
+      "id": "pjm_about",
+      "url": "https://www.pjm.com/m/About-PJM",
+      "value": 67000000,
+      "units": "rounded population headline",
+      "method": "Official cached web-reader AboutPJM WhatWeDo paragraph reviewed2026-11-01",
+      "selected_excerpt": ".cache/toledo_oh/sources/rules/pjm_about-selected.txt",
+      "selected_excerpt_sha256": "ce4feb6c00963d0e842123ec2e6a96b17177ed1f2e82340d1c13a88506328eca",
+      "original_html_downloaded": false
+    }
+  ],
+  "reused_household_factors": "All prior official Census2020-2024 factors retained; Ohio2.37 unchanged, no new household-factor retrieval or substitute vintage.",
+  "toledo_eia": {
+    "utility_id": 18997,
+    "state": "OH",
+    "bundled_residential_accounts": 79007,
+    "delivery_residential_accounts": 199807,
+    "total_residential_distribution_accounts": 278814
+  },
+  "preserved_previous_implementation_snapshot": {
+    "research_date": "2026-10-31",
+    "estimate_file": "estimate_2026-10-31.json",
+    "estimate_sha256": "3d0fb77d293140469457f1ec52f9dae68f0da74f57bbc65ef6b7e7c2da780956",
+    "inputs_file": "inputs_2026-10-31.json",
+    "inputs_sha256": "9a09e179ca0cb8a12ce1a80633ab453387d939bc33921e24d90e26d6f32c9ea5",
+    "implemented_workflow_count": 21,
+    "note": "Exact pre-Toledo21-workflow CEI snapshot retained; its originalengine/evidence ownership is not renewed."
+  },
+  "checks": {
+    "expected_workflows_before": 21,
+    "expected_workflows_after": 22,
+    "source_extract_unchanged": true,
+    "original_oct25_and_oct31_json_reproduction": "checked in focused reporting tests",
+    "focused_launcher": ".cache/toledo_oh/population_focused_1/report.json",
+    "tests": 12,
+    "status": "passed"
+  }
+}

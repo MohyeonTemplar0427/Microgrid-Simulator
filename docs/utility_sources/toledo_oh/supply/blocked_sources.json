@@ -1,0 +1,28 @@
+{
+  "reviewed_on": "2026-11-01",
+  "sources": [
+    {
+      "source_url": "https://web.archive.org/web/20250513223818id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2025-Electric-Service.pdf",
+      "path": ".cache/toledo_oh/sources/shared/may-2025.pdf",
+      "bytes": 5242880,
+      "sha256": "881681e654812038ead777a1d04ef235b562307ebb69bbf09099c3a88a00b460",
+      "has_pdf_eof": false,
+      "status": "intrinsically_truncated_archive_source",
+      "pypdf": "Stream has ended unexpectedly",
+      "bounded_recovery": "Existing private PyMuPDF1.26.7 opened as repaired but yielded zero pages; no rate evidence used",
+      "unchanged_route_retried": false
+    },
+    {
+      "source_url": "https://web.archive.org/web/20260510113918id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "path": ".cache/toledo_oh/sources/shared/may-2026.pdf",
+      "bytes": 5242880,
+      "sha256": "ddd0bbbd665b90f6ddeb54b3c7c6b3500ca6b5dfcd9787fd49758da9db98c601",
+      "has_pdf_eof": false,
+      "status": "intrinsically_truncated_archive_source",
+      "pypdf": "Stream has ended unexpectedly",
+      "bounded_recovery": "Existing private PyMuPDF1.26.7 opened as repaired but yielded zero pages; no rate evidence used",
+      "unchanged_route_retried": false
+    }
+  ],
+  "other_archive_note": "February2026 TE-2025 archive binary identical to live/year-end2025 book; its capture date is not source coverage."
+}

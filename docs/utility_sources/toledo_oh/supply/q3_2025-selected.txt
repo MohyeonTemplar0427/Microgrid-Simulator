@@ -1,0 +1,387 @@
+Original official Toledo Edison tariff, selected PDF pages (one-based).
+
+PDF PAGE 98
+The Toledo Edison Company Sheet 84 
+Toledo, Ohio P.U.C.O. No. 8 64th Revised Page 1 of 1 
+ 
+RIDER AER 
+Alternative Energy Resource Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case 
+No. 24-1058-EL-RDR, before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective: July 1, 2025 
+APPLICABILITY: 
+ 
+Applicable to any customer that takes electric service under the Company's r ate schedules.  The 
+Alternative Energy Resource Rider (AER) is not applied to customers during the period the customer 
+takes electric generation service from a certified supplier.  The following charge will apply, for all rate 
+schedules, effective for service rendered beginning July 1, 2025, for all kWhs per kWh: 
+ 
+ 
+RATE: 
+ 
+AER charge 0.0244¢ 
+ 
+ 
+PROVISIONS: 
+ 
+The charges set forth in this Rider recover costs incurred by the Company associated with securing 
+compliance with the alternative energy resource requirements in Section 4928.64, Revised Code.  The 
+costs recovered through this Rider will be all costs associated with securing compliance with the 
+alternative energy resource requirements including, but not limited to, all Renewable Energy Credits 
+costs, any reasonable costs of administering the request for proposal, and applicable carrying costs.  This 
+rider shall be in effect until all costs are fully recovered. 
+ 
+Pursuant to R.C. 4928.644(B), mercantile customers registered as self-assessing purchasers under R.C. 
+5727.81(C) are exempt from the charges set forth in this Rider effective January 1, 2020.  
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than 
+December 1st, March 1st, June 1st and September 1st of each year, the Company will file with the PUCO 
+a request for approval of the Rider charges which, unless otherwise ordered by the PUCO, shall become 
+effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each year , 
+beginning October 1, 2016.  To the extent permitted by law, this Rider is subject to reconciliation, 
+including, but not limited to increases or refunds. Such reconciliation shall be based solely upon the 
+results of audits ordered by the Commission in accordance with the July 18, 2012 Opinion and Order in 
+Case No. 12-1230-EL-SSO, and the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 108
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Toledo Edison Company Original Sheet 92 
+Toledo, Ohio P.U.C.O. No. 8 Page 1 of 1 
+RIDER SKT 
+State kWh Tax Rider 
+APPLICABILITY: 
+A state kWh tax shall be applied to each kWh delivered to a customer taking service under Rate Schedules 
+RS, GS, GP, GSU, GT, STL, TRF and POL consistent with Section 5727.81 of the Ohio Revised Code, 
+unless a customer elects to be a self-assessing purchaser that has been approved by the Ohio Department 
+of Taxation. A self-assessing purchaser is any customer taking service from the Company that consumed 
+over the course of the previous calendar year more than 45,000,000 kWhs of electricity and meets the 
+requirements set forth in Section 5727.81 of the Ohio Revised Code. 
+RATE: 
+First 2,000 kWhs 
+Next 13,000 kWhs 
+All Excess Over 15,000 kWhs 
+0.465¢ per kWh 
+0.419¢ per kWh 
+0.363¢ per kWh 
+In the event that the customer’s meter is not actually read for the billing period, the estimated kWhs to 
+collect the Company charges may be used to collect the State kWh Tax. 
+ADDITIONAL TAXES: 
+The Ohio Commercial Activity Tax (CAT) rate as established in Section 5751.02 of the Ohio Revised 
+Code shall be applied to the above charges according to the formula 1 / (1 - CAT). 
+Filed pursuant to Order dated January 21, 2009, in Case No. 07-551-EL-AIR, before  
+The Public Utilities Commission of Ohio 
+Issued by:  Richard R. Grigg, President Effective: January 23, 2009 
+
+PDF PAGE 122
+The Toledo Edison Company Sheet 103 
+Toledo, Ohio P.U.C.O. No. 8  65th Revised Page 1 of 2 
+ 
+RIDER GCR 
+Generation Cost Reconciliation Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case 
+No. 24-1061-EL-RDR, before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President                                                                                                  Effective: July 1, 2025 
+ 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's rate schedules . The 
+Generation Cost Reconciliation Rider (GCR) charge will apply, by rate schedule, effective for service 
+rendered beginning July 1, 2025, for all kWhs per kWh. 
+ 
+ 
+RATE:  GCR1 GCR2 
+ 
+RS (0.1206)¢ 0. 0000¢ 
+GS (0.1206)¢ 0. 0000¢ 
+GP (0.1164)¢ 0. 0000¢ 
+GSU (0.1131)¢ 0. 0000¢ 
+GT (0.1130)¢ 0. 0000¢ 
+STL (0.1206)¢ 0. 0000¢ 
+TRF (0.1206)¢ 0. 0000¢ 
+POL (0.1206)¢ 0. 0000¢ 
+ 
+The GCR charge shall be calculated as follows: 
+ 
+GCR = {[GCR Deferral Balance] / S} x 1/(1 - CAT) x {(1 - LOSSAVG) / (1 - LOSS)} 
+ 
+ Where: 
+ 
+i. The calculation period is the three-month period ended two months prior to the effective 
+dates of the updated rider (i.e. three months ended October 31, January 31, April 30, and 
+July 31). 
+ii. Each component of the formula includes the aggregated data for The Cleveland Electric 
+Illuminating Company, Ohio Edison Company, and The Toledo Edison Company.  
+iii. For any given billing period, only the non-zero GCR charge will be applied. 
+ 
+ 
+
+PDF PAGE 123
+The Toledo Edison Company Sheet 103 
+Toledo, Ohio P.U.C.O. No. 8  4th Revised Page 2 of 2 
+ 
+RIDER GCR 
+Generation Cost Reconciliation Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case 
+No. 24-1061-EL-RDR, before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  February 1, 2025 
+GCR Deferral Balance = [(BP - GCRREV -  GENREV  + ES  +  ECBP) + I] 
+ 
+BP = The actual reconciliation balance, including applicable interest, at the end of the 
+previous calculation period. 
+ 
+GCRREV = The actual revenue associated with Rider GCR, as billed for the calculation 
+period, excluding applicable Commercial Activity Tax. 
+ 
+GENREV = The actual revenue associated with Riders GEN, HLF, RTP and CPP as billed for 
+the calculation period, excluding applicable Commercial Activity Tax. 
+ 
+ES = The actual cost of supplying generation service to SSO customers and 
+customers taking service under special contracts for the calculation period. 
+ 
+ECBP = The competitive bidding process expenses. 
+ 
+I = The applicable interest for the calculation period at a monthly rate of 0.7066%. 
+ 
+S = The projected kWh sales for the period during which Rider GCR will be applied. 
+ 
+CAT = The Commercial Activity Tax rate as established in Section 5751.03 of the Ohio 
+Revised Code. 
+ 
+LOSS = The loss factor associated with each rate category based on service voltage. 
+(See Page 1 of Exhibit C to the Application in Case No. 08-0935-EL-SSO). 
+ 
+LOSSAVG = The aggregated loss factor. 
+ 
+AVOIDABILITY: 
+ 
+The GCR charge shall equal GCR1 and GCR1 is not applied to customers during the calculation period 
+the customer takes electric generation service from a certified supplier, unless the GCR Deferral Balance 
+> (10% x ES) for two consecutive calculation periods.  If the GCR Deferral Balance > (10% x ES) for two 
+consecutive calculation periods, then, subject to Commission approval, GCR2 = GCR and GCR2 is not 
+avoidable for customers who take electric generation service from a certified supplier. 
+ 
+Regardless, in the event that a supplier that has been providing power as a result of the competitive bid 
+process defaults during the applicable ESP period, the Company upon its belief that such default will 
+cause the GCR Deferral Balance to exceed the 10% threshold, may determine that the GCR charge is 
+not avoidable for customers who take generation from a certified supplier, subject to Commission 
+approval. 
+ 
+RIDER UPDATES: 
+ 
+The charges contained in this Rider shall be updated and reconciled on a quarterly basis.  No later than 
+December 1st, March 1st, June 1st and September 1st of each year, the Company will file with the PUCO 
+a request for approval of the Rider charges which, unless otherwise ordered by the PUCO, shall become 
+effective on a service rendered basis on January 1st, April 1st, July 1st and October 1st of each year. To 
+the extent permitted by law, this Rider is subject to reconciliation, including, but not limited to increases or 
+refunds. Such reconciliation shall be based solely upon the results of audits ordered by the Commission  
+in accordance with the July 18, 2012 Opinion and Order in Case No. 12-1230-EL-SSO, and the March 31, 
+2016 Opinion and Order in Case No. 14-1297-EL-SSO. 
+
+PDF PAGE 129
+The Toledo Edison Company Sheet 110 
+Toledo, Ohio P.U.C.O. No. 8 66th Revised Page 1 of 1 
+ 
+RIDER NDU 
+Non-Distribution Uncollectible Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and Case 
+No. 24-1061-EL-RDR, before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President                                                                                                  Effective: July 1, 2025 
+APPLICABILITY: 
+ 
+Applicable to any customer who receives electric service under the Company's r ate schedules.  The Non-
+Distribution Uncollectible Rider (NDU) charge / (credit) will apply, for all rate schedules, effective for 
+service rendered beginning July 1, 2025, for all kWhs per kWh.  This Rider is not applied to customers 
+during the period the customer takes electric generation service from a certified supplier.  
+ 
+ 
+RATE: 
+ 
+NDU charge / (credit) 0.0159¢ 
+ 
+ 
+RIDER UPDATES: 
+ 
+The charges / credits contained in this Rider shall be updated and reconciled on a quarterly basis.  No 
+later than December 1st, March 1st, June 1st and September 1st of each year, the Company shall file 
+with the PUCO a request for approval of the rider charges / credits which, unless otherwise ordered by 
+the PUCO, shall become effective on a service rendered basis on January 1st, April 1st, July 1 st and 
+October 1st of each year.  To the extent permitted by law, this Rider is subject to reconciliation, including, 
+but not limited to increases or refunds. Such reconciliation shall be based solely upon the results of audits 
+ordered by the Commission in accordance with the July 18, 2012 Opinion and Order in Case No. 12-
+1230-EL-SSO, and the March 31, 2016 Opinion and Order in Case No. 14-1297-EL-SSO. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PDF PAGE 135
+The Toledo Edison Company Sheet 114 
+Toledo, Ohio P.U.C.O. No. 8  19th Revised Page 1 of 3 
+ 
+RIDER GEN 
+Generation Service Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025 in Case No. 14-1297-EL-SSO, and May 
+28, 2025, in Case No. 25-0379-EL-RDR before The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  June 1, 2025 
+APPLICABILITY: 
+ 
+For customers taking the Standard Service Offer electric generation service (“SSO Generation Service”) 
+from the Company, the following Standard Service Offer Generation Charges (SSOGC) by rate schedule, 
+will apply, effective for service rendered beginning June 1, 2025, for all kWhs per kWh, unless otherwise 
+noted.  For billing purposes, the winter rates shall be applicable during each winter billing period as 
+defined in the Electric Service Regulations.  
+ 
+Capacity costs will be developed based on the results from annual PJM capacity auctions (including 
+incremental auctions) and allocated to each Company and tariff schedule based on the average of 
+coincident peaks, including distribution losses, for the months of June through September of the year  
+prior to the applicable PJM delivery year.  The calculated wholesale capacity costs are used to develop 
+capacity charges. 
+ 
+These calculated wholesale capacity costs will be converted to an energy basis and will then be 
+subtracted from the SSO competitive bid process (“CBP”) results to develop the non-capacity related 
+energy charges. 
+ 
+ 
+RATE: 
+ 
+Capacity Charges Summer Winter 
+RS* 2.4846¢ 2.4846¢ 
+GS 2.1990¢ 2.1990¢ 
+GP 1.6829¢ 1.6829¢ 
+GSU 1.2052¢ 1.2052¢ 
+GT 1.2372¢ 1.2372¢ 
+STL 0.0000¢ 0.0000¢ 
+TRF 1.2011¢ 1.2011¢ 
+POL 0.0000¢ 0.0000¢ 
+ 
+Energy Charges Summer Winter 
+RS* 7.3661¢ 6.6966¢ 
+GS 7.3661¢ 6.6966¢ 
+GP 7.1108¢ 6.4646¢ 
+GSU 6.9112¢ 6.2831¢ 
+GT 6.9043¢ 6.2768¢ 
+STL 7.3661¢ 6.6966¢ 
+TRF 7.3661¢ 6.6966¢ 
+POL 7.3661¢ 6.6966¢ 
+ 
+* Customers participating in the Percentage of Income Payment Plan (PIPP) program shall pay 8.7146¢, 
+for all kWh per kWh, in lieu of the Rate RS Capacity and Energy Charges shown above.  
+ 
+
+PDF PAGE 136
+The Toledo Edison Company Sheet 114 
+Toledo, Ohio P.U.C.O. No. 8  18th Revised Page 2 of 3 
+ 
+RIDER GEN 
+Generation Service Rider 
+ 
+ 
+Filed pursuant to Orders dated December 18, 2024 and January 22, 2025, in Case No. 14-1297-EL-SSO, and January 27, 2021, 
+and May 28, 2025, in Case Nos. 20-0050-EL-ATA, and 25-0379-EL-RDR, respectively, before 
+The Public Utilities Commission of Ohio 
+Issued by: Torrence L. Hinton, President Effective:  June 1, 2025 
+TIME-OF-DAY OPTION (NON-RESIDENTIAL): 
+ 
+For customers with the appropriate qualifying time-of-day metering, or an advanced meter installed by the 
+Company who elect to be served under the Time-Of-Day Option (Non-Residential), the charge by rate 
+schedule will be as shown below, for all kWhs, per kWh: 
+ 
+Capacity Charges  Summer   Winter  
+ Midday Shoulder Midday Shoulder 
+ Peak Peak Off-Peak Peak Peak Off-Peak 
+ 
+GS 2.1990¢ 2.1990¢ 2.1990¢             2.1990¢ 2.1990¢ 2.1990¢ 
+GP 1.6829¢ 1.6829¢ 1.6829¢ 1.6829¢ 1.6829¢ 1.6829¢ 
+GSU 1.2052¢ 1.2052¢ 1.2052¢ 1.2052¢ 1.2052¢ 1.2052¢ 
+GT 1.2372¢ 1.2372¢ 1.2372¢ 1.2372¢ 1.2372¢ 1.2372¢ 
+ 
+ 
+Energy Charges  Summer   Winter  
+ Midday Shoulder Midday Shoulder 
+ Peak Peak Off-Peak Peak Peak Off-Peak 
+ 
+GS 11.5906¢ 7.8523¢ 5.7014¢ 7.4573¢ 7.7031¢ 5.8964¢ 
+GP 11.1888¢ 7.5801¢ 5.5038¢ 7.1990¢ 7.4362¢ 5.6921¢ 
+GSU 10.8748¢ 7.3673¢ 5.3493¢             6.9969¢      7.2274¢       5.5323¢ 
+GT 10.8639¢ 7.3600¢ 5.3439¢ 6.9898¢      7.2202¢       5.5267¢ 
+ 
+ 
+Midday-peak time shall be noon to 6 p.m. EST, Monday through Friday, excluding holidays.  
+ 
+Shoulder-peak time shall be 6 a.m. to noon and 6 p.m. to 10 p.m. EST, Monday through Friday, 
+excluding holidays. 
+ 
+Holidays are defined as New Year’s Day, Memorial Day, Independence Day, Labor Day, 
+Thanksgiving Day, and Christmas Day.  Off-Peak shall be all other hours. 
+ 
+A customer may terminate its participation in this time-of-day option at any time effective with the next 
+scheduled meter reading. A qualifying customer may return to the time-of-day option at any time after 
+a hiatus from the time-of-day option of at least one (1) year. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

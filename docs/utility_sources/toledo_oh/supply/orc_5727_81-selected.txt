@@ -1,0 +1,23 @@
+(A) For the purpose of raising revenue to fund the needs of this state and its local governments, an excise tax is hereby levied and imposed on an electric distribution company for all electricity distributed by such company at the following rates per kilowatt hour of electricity distributed in a thirty-day period by the company through a meter of an end user in this state:
+KILOWATT HOURS DISTRIBUTED
+RATE PER
+TO AN END USER
+KILOWATT HOUR
+For the first 2,000
+$.00465
+For the next 2,001 to 15,000
+$.00419
+For 15,001 and above
+$.00363
+If no meter is used to measure the kilowatt hours of electricity distributed by the company, the rates shall apply to the estimated kilowatt hours of electricity distributed to an unmetered location in this state.
+The electric distribution company shall base the monthly tax on the kilowatt hours of electricity distributed to an end user through the meter of the end user that is not measured for a thirty-day period by dividing the days in the measurement period into the total kilowatt hours measured during the measurement period to obtain a daily average usage. The tax shall be determined by obtaining the sum of divisions (A)(1), (2), and (3) of this section and multiplying that amount by the number of days in the measurement period:
+(1) Multiplying $0.00465 per kilowatt hour for the first sixty-seven kilowatt hours distributed using a daily average;
+(2) Multiplying $0.00419 for the next sixty-eight to five hundred kilowatt hours distributed using a daily average;
+(3) Multiplying $0.00363 for the remaining kilowatt hours distributed using a daily average.
+Except as provided in division (C) of this section, the electric distribution company shall pay the tax to the tax commissioner in accordance with section
+5727.82
+of the Revised Code, unless required to remit each tax payment electronically in accordance with section
+5727.83
+of the Revised Code.
+Only the distribution of electricity through a meter of an end user in this state shall be used by the electric distribution company to compute the amount or estimated amount of tax due. In the event a meter is not actually read for a measurement period, the estimated kilowatt hours distributed by an electric distribution company to bill for its distribution charges shall be used.
+

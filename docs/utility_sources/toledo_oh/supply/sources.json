@@ -1,0 +1,100 @@
+{
+  "reviewed_on": "2026-11-01",
+  "sources": [
+    {
+      "id": "jan2025",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2024-Electric-Service.pdf",
+      "source_kind": "official_utility_tariff",
+      "pdf_path": ".cache/toledo_oh/sources/shared/live-2024-jan2025.pdf",
+      "pdf_sha256": "1a4a0a04474b56c96ef14b0d61f0878d627f241dc0141559a2d314fb96adf69c",
+      "pdf_pages": 146,
+      "selected_pdf_pages": [
+        93,
+        100,
+        111,
+        112,
+        115,
+        121,
+        122
+      ],
+      "excerpt": "jan2025-selected.txt",
+      "excerpt_sha256": "56ecc8060a129326109d828f977f2ad3b2310f043ca6dcec2b429281c4ceb418"
+    },
+    {
+      "id": "june2025",
+      "url": "https://web.archive.org/web/20250612032413id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2025-Electric-Service.pdf",
+      "source_kind": "archived_official_utility_tariff",
+      "pdf_path": ".cache/toledo_oh/sources/shared/june-2025.pdf",
+      "pdf_sha256": "666d852aa4e0ec9dc620c87fa0e805531b9efb91c3eb264436e1b23c48541c23",
+      "pdf_pages": 165,
+      "selected_pdf_pages": [
+        98,
+        108,
+        122,
+        123,
+        129,
+        135,
+        136
+      ],
+      "excerpt": "june2025-selected.txt",
+      "excerpt_sha256": "cf90f0320193d2b8d5d53460c3bef89b32fad642acdfd191be3375759ec270dc"
+    },
+    {
+      "id": "q3_2025",
+      "url": "https://web.archive.org/web/20250825001741id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2025-Electric-Service.pdf",
+      "source_kind": "archived_official_utility_tariff",
+      "pdf_path": ".cache/toledo_oh/sources/shared/aug-2025.pdf",
+      "pdf_sha256": "ca7966a0916632c94fe0cb05c81e8c434be92c080bb8a6dde392f0ef12983a08",
+      "pdf_pages": 165,
+      "selected_pdf_pages": [
+        98,
+        108,
+        122,
+        123,
+        129,
+        135,
+        136
+      ],
+      "excerpt": "q3_2025-selected.txt",
+      "excerpt_sha256": "3ef02ec18ccec07a689f496a04edbe25353a9966487390dd9d4523d4cd40b6ff"
+    },
+    {
+      "id": "q4_2025",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-TE-Electric-Service-Tariff.pdf",
+      "source_kind": "official_utility_tariff",
+      "pdf_path": ".cache/toledo_oh/sources/shared/2025-TE-Electric-Service-Tariff.pdf",
+      "pdf_sha256": "abd8458a06e43f6907ae9dfe9a2f7a41da687b96879439e1c85a860d8f3181b1",
+      "pdf_pages": 165,
+      "selected_pdf_pages": [
+        98,
+        108,
+        122,
+        123,
+        129,
+        135,
+        136
+      ],
+      "excerpt": "q4_2025-selected.txt",
+      "excerpt_sha256": "0e3b35f51171b1e96c3f7515ad4917f73728ec5fc7cc124e2221052891829f4a"
+    },
+    {
+      "id": "oct2026",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "source_kind": "official_utility_tariff",
+      "pdf_path": ".cache/toledo_oh/sources/shared/TE-2026-Electric-Service.pdf",
+      "pdf_sha256": "77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837",
+      "pdf_pages": 168,
+      "selected_pdf_pages": [
+        98,
+        108,
+        122,
+        123,
+        129,
+        135,
+        136
+      ],
+      "excerpt": "oct2026-selected.txt",
+      "excerpt_sha256": "b468a99dcef2ddaa292d302d61883eb67a1c561d3a6be3bdd97990190a072472"
+    }
+  ]
+}

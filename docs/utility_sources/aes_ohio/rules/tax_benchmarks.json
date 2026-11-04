@@ -1,0 +1,229 @@
+{
+  "derivation": "Independent Decimal arithmetic fromD33/ORC5727.81A; unrounded component specification, no imported production code. Not customer invoice evidence.",
+  "vectors": [
+    {
+      "calendar_days": 28,
+      "import_kwh": "0",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "0.00000"
+    },
+    {
+      "calendar_days": 28,
+      "import_kwh": "1875",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "8.71875"
+    },
+    {
+      "calendar_days": 28,
+      "import_kwh": "1876",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "8.72340"
+    },
+    {
+      "calendar_days": 28,
+      "import_kwh": "1877",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "8.72759"
+    },
+    {
+      "calendar_days": 28,
+      "import_kwh": "13999",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "59.51877"
+    },
+    {
+      "calendar_days": 28,
+      "import_kwh": "14000",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "59.52296"
+    },
+    {
+      "calendar_days": 28,
+      "import_kwh": "14001",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "59.52659"
+    },
+    {
+      "calendar_days": 28,
+      "import_kwh": "20000",
+      "first_breakpoint": "1876",
+      "second_breakpoint": "14000",
+      "tax_usd": "81.30296"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "0",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "0.00000"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "1942",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "9.03030"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "1943",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "9.03495"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "1944",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "9.03914"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "14499",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "61.64459"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "14500",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "61.64878"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "14501",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "61.65241"
+    },
+    {
+      "calendar_days": 29,
+      "import_kwh": "20000",
+      "first_breakpoint": "1943",
+      "second_breakpoint": "14500",
+      "tax_usd": "81.61378"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "0",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "0.00000"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "1999",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "9.29535"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "2000",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "9.30000"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "2001",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "9.30419"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "14999",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "63.76581"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "15000",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "63.77000"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "15001",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "63.77363"
+    },
+    {
+      "calendar_days": 30,
+      "import_kwh": "20000",
+      "first_breakpoint": "2000",
+      "second_breakpoint": "15000",
+      "tax_usd": "81.92000"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "0",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "0.00000"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "2076",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "9.65340"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "2077",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "9.65805"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "2078",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "9.66224"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "15499",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "65.89623"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "15500",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "65.90042"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "15501",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "65.90405"
+    },
+    {
+      "calendar_days": 31,
+      "import_kwh": "20000",
+      "first_breakpoint": "2077",
+      "second_breakpoint": "15500",
+      "tax_usd": "82.23542"
+    }
+  ]
+}

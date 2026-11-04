@@ -1,0 +1,552 @@
+{
+  "sources": {
+    "D01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D1%20-%20Table%20of%20contents%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D01_D1 - Table of contents 9-1-2023.pdf",
+      "sha256": "d4ada8464a8f246b9adc620e56071345b953f32a3599e35cca8669e9342cfe07",
+      "bytes": 63969,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-11/D2-Tariff-Index-11.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_D2-Tariff-Index-11.1.26.pdf",
+      "sha256": "af99ed43b7098a4aa08275f971ecc1162126ef14378a40d4df992b57264150ba",
+      "bytes": 89303,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D03": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D3%20-%20Applications%20and%20contract%20for%20service%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D03_D3 - Applications and contract for service 9-1-2023.pdf",
+      "sha256": "9c0d5f04b12507361fbb25904a401bd75752823d795aa1907270c621e19aa22c",
+      "bytes": 86382,
+      "pages": 3,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D14": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D14%20-%20Definitions%20and%20amendments%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D14_D14 - Definitions and amendments 9-1-2023.pdf",
+      "sha256": "3ffc21a105ec8d2e32f8105f5dd8110deecee5a39fea18f8b1c193b65152b7b4",
+      "bytes": 113205,
+      "pages": 4,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D17": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D17-Residential-1-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D17_D17-Residential-1-1-2026.pdf",
+      "sha256": "a0d45ad3e058f78ad975aa0d3eb4fd07ff3e044836bd03f15c1f188383fb9ae7",
+      "bytes": 70669,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D19": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/D19-Secondary-6-1-2026-rf.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D19_D19-Secondary-6-1-2026-rf.pdf",
+      "sha256": "67914995c0b0e6f26529ed3f39bcb0810004759e0306cbdea19fba77b7cb3f19",
+      "bytes": 119685,
+      "pages": 5,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D43": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D43-Customer-Refund-Tariff-8-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D43_D43-Customer-Refund-Tariff-8-1-2026.pdf",
+      "sha256": "db27d2b66278e302fb99b4df4dc139e18406c884133b41b3456e573581512c70",
+      "bytes": 61258,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D27": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-08/D27-Solar-Generation-Fund-Rider-8.14.25.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D27_D27-Solar-Generation-Fund-Rider-8.14.25.pdf",
+      "sha256": "58b481f4dd7cdccea25c7c7a84aef17681b4ee00fa4222ca895d32c63cb285a2",
+      "bytes": 82351,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D28": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/D28%20-%20USF%2010-1-2026%20-%20clean.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D28_D28 - USF 10-1-2026 - clean.pdf",
+      "sha256": "cbb8bbe1dce829f7b72a009b323956576057e62cb1493cfa718431cae4d21da9",
+      "bytes": 63045,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/D29-IIR-10.1.26-Amnd.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_D29-IIR-10.1.26-Amnd.pdf",
+      "sha256": "5f077237878f71d942f2a9b8e612f3cccedee365da2e9b92899fb4c4d282ebf4",
+      "bytes": 63673,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D30": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/D30-Storm-Cost-Recovery-Rider-6-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D30_D30-Storm-Cost-Recovery-Rider-6-1-2026.pdf",
+      "sha256": "197cf8f71e489f03234c449dd168594300a117eb91757a9828c219da6d87f0e3",
+      "bytes": 63620,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D31": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D31%20-%20Regulatory%20Compliance%20Rider%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D31_D31 - Regulatory Compliance Rider 9-1-2023.pdf",
+      "sha256": "7bbeb7113d765b92f12c81591a6f1d9d5f8524c70e5b02f5295ca978e0c68b70",
+      "bytes": 79661,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D32": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D32-PRO%20Rider-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D32_D32-PRO Rider-4-1-2026.pdf",
+      "sha256": "a8b5e440f89b22b195772806cce7932018e189493ed8b2115624261cc098220e",
+      "bytes": 51254,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D34": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D34%20-%20Switching%20fees%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D34_D34 - Switching fees 9-1-2023.pdf",
+      "sha256": "5afcb9d9e94df45db7f520b93daf5811af8ae6b700a1d38eca872451bdc2cf92",
+      "bytes": 85053,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/D36-DIR-10.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_D36-DIR-10.1.26.pdf",
+      "sha256": "c8a14eb60077fd4ccda816cb2672932c591aa77c2f90ae9452e596e04f4215f0",
+      "bytes": 64461,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D37": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/D37-Customer-Programs-Rider-6-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D37_D37-Customer-Programs-Rider-6-1-2026.pdf",
+      "sha256": "5910ff0e3f2d72ab9efd38d29c8c8433fe846732608d134e2bd8efbb79b59f6e",
+      "bytes": 62446,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D38": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D38%20-%20EER%201.1.21.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D38_D38 - EER 1.1.21.pdf",
+      "sha256": "0181106401758c9ce6205398a91934f9f78d72456f3860ad83dd14b35c22485a",
+      "bytes": 48688,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D39": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-11/D39-Economic-Development-Rider-11.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D39_D39-Economic-Development-Rider-11.1.26.pdf",
+      "sha256": "cb860fa0a1c369aec6adc7fc355ab233f0c8cb99044ea5d78255131262e1eb87",
+      "bytes": 66113,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D40": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-08/D40-Legacy-Generation-Rider-8.14.25.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D40_D40-Legacy-Generation-Rider-8.14.25.pdf",
+      "sha256": "694c56545a31d240cefbb19b656a80bc385e0fa558d9164bba5c72904e0bea97",
+      "bytes": 67399,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D41": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-11/D41-Tax-Savings-Credit-Rider-11.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D41_D41-Tax-Savings-Credit-Rider-11.1.26.pdf",
+      "sha256": "0e6a23176e0fa33e453b4149a9400abb8d4b11ebfbf63b0e88755d901cba15e0",
+      "bytes": 82151,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "puco_distribution_book": {
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Dayton%20Power%20and%20Light%20Company%20dba%20AES%20Ohio/DP%20and%20L%20PUCO%2017%20Distribution.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/puco_distribution_book.pdf",
+      "sha256": "d1777cf5b5d1bf9e483be751139c2c6cf1bdd11fbc4ea0f96ba50f54376085c3",
+      "bytes": 1516710,
+      "pages": 137,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-01-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2025-01/D2-Tariff-Index-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-01-01.pdf",
+      "sha256": "ba0a16a160fda981e25d49d4f8e871743c6128f60b404ef82fb27ddadd03841c",
+      "bytes": 129306,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D28_2025-01-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2025-01/D28-USF-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D28_2025-01-01.pdf",
+      "sha256": "0e5013202ec8cf7009a51153adcfbfbe8df437ce75687919abf81df99dba32ca",
+      "bytes": 61424,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2025-01-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2025-01/D36-Distribution-Investment-Rider-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2025-01-01.pdf",
+      "sha256": "d296198119cda906b7cf679e7c5cfb3520c9dadcf04534c18f6823e272760c9f",
+      "bytes": 64732,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D19_2024-09-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-09/D19%20-%20Secondary%209-1-2024.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D19_2024-09-01.pdf",
+      "sha256": "6b2cd3e3d48f352ae283bf75b2976921e1d8e6e64f6f4de4319973fadfda862b",
+      "bytes": 110657,
+      "pages": 5,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D39_2023-09-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D39%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D39_2023-09-01.pdf",
+      "sha256": "99399a522873fae3394cc666eefe0b58882363d71ba755e15e3ae1fd924106f3",
+      "bytes": 72723,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D41_2025-11-06": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D41%20-%20Tax%20Savings%20Credit%20Rider-11-6-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D41_2025-11-06.pdf",
+      "sha256": "8a62fc76de03e9543688fc878c640980ae38b7c12696dde9f1005908c60b0936",
+      "bytes": 81553,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "puco_distribution_book_1": {
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Dayton%20Power%20and%20Light%20Company%20dba%20AES%20Ohio/DP%20and%20L%20PUCO%2017%20Distribution%20%281%29.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/puco_distribution_book_1.pdf",
+      "sha256": "9d26e991d0e79aa0fc96335212f7503bc0db04ce7bcdad42a1e6220752879d7d",
+      "bytes": 1227472,
+      "pages": 138,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2025-01-01_a": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-01/D29-Infrastructure-Investment-Rider-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2025-01-01_a.pdf",
+      "sha256": "3b52e190ee2a478dd4d35157eb1b85d3b334524eb05fdadff0c9eafb49f57285",
+      "bytes": 62554,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-07/D2-Tariff-Index-7-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-07-01.pdf",
+      "sha256": "c82f1110a7a051e896c97592f39d3e8251705e2b77162a73ae895e0749eb7d0b",
+      "bytes": 89737,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-10-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-10/D2-Tariff-Index-10-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-10-01.pdf",
+      "sha256": "ab2bfe6c87356054393331abb61ac80de363e337487a2c259322e2a15e3385cd",
+      "bytes": 63062,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2026-01-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D2-Tariff-Index-1-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2026-01-01.pdf",
+      "sha256": "bead58390b5ae0507d68522bc710114eecdb48523e5a7104ad518144bd1c22d6",
+      "bytes": 89816,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2026-04-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D2-Tariff-Index-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2026-04-01.pdf",
+      "sha256": "2b2a14c7e104a0bd4e84a0d3ccd6b650d54ae3671544280e2e7464a3e29a4448",
+      "bytes": 63346,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2026-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D2-Tariff-Index-7-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2026-07-01.pdf",
+      "sha256": "56bc8e460bd9cc28c5f37607cd9d2673438234c758bbe2d1efc81d56302944b5",
+      "bytes": 63362,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2025-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-07/D29-Infrastructure-Investment-Rider-7-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2025-07-01.pdf",
+      "sha256": "53461ae8f737cfe3843060326d31a408f5550d3928869276559393178602dc39",
+      "bytes": 51212,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2025-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-07/D36-Distribution-Investment-Rider-7-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2025-07-01.pdf",
+      "sha256": "c45e46629a4961f1448f08b9e5804226565e7f755aef58ca5470173d6bfeb79d",
+      "bytes": 60582,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D19_2025-09-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-09/D19-Secondary-9-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D19_2025-09-01.pdf",
+      "sha256": "dc144f0c4e39d612e0016cab004d9820707ff88ee87b4f3b11097280cc6d9456",
+      "bytes": 204887,
+      "pages": 5,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-11-06": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D2-Tariff-Index-11-6-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-11-06.pdf",
+      "sha256": "c9c153512ec8a849b14fe6832e8407691a4e0a6e604054a022a18b7f08054b3f",
+      "bytes": 89656,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2026-04-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D29-Infrastructure-Investment-Rider-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2026-04-01.pdf",
+      "sha256": "f7ec2aea28930ff4606f35f7363e88f487ff142ac1b5b314e7adbe910f24460f",
+      "bytes": 50999,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2026-04-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D36-Distribution-Investment-Rider-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2026-04-01.pdf",
+      "sha256": "ea704d242cfdd64da84a51a738ddbe0d6d7555105f4bcfd7567abb44e5a98251",
+      "bytes": 51246,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2026-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D29-Infrastructure-Investment-Rider-7-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2026-07-01.pdf",
+      "sha256": "53435dd4ac5e5a8b9a965401694389587dd55f86e75a805d54f1fa589d93777c",
+      "bytes": 52232,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2026-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D36-Distribution-Investment-Rider-7-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2026-07-01.pdf",
+      "sha256": "1ac5cd13c0f55977430139086fd45a4318fe84cecc9c55332f6ba956c63ea05e",
+      "bytes": 51543,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D28_2026-01-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D28-USF-1-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D28_2026-01-01.pdf",
+      "sha256": "5dff18391b54776af60699810f473f1b6b8ac8d5be6b7736e8c98a3281216c29",
+      "bytes": 62760,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "index": {
+      "url": "https://www.aes-ohio.com/rates-tariffs",
+      "original_path": ".cache/aes_ohio/sources/delivery/index.html",
+      "sha256": "36f62270f532d862c5fb2864291ef9182679a36f09d665719689edab509312ea",
+      "status": "official_customer_tariff_index",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    }
+  },
+  "failed_archive_routes": [
+    {
+      "id": "D29_2025-01-01_b",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-01/D29-IIR-1-1-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D29_2025-01-01_c",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-01/D29-IIR-1.1.25.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D40_2025-07-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-07/D40-Legacy-Generation-Rider-7-1-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D29_2025-10-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-10/D29-IIR-10.1.25.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D36_2025-10-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-10/D36-DIR-10.1.25.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D17_2025-11-06",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D17-Residential-11-6-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D19_2025-11-06",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D19-Secondary-11-6-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D29_2026-01-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D29-IIR-1.1.26.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D36_2026-01-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D36-DIR-1.1.26.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D29_2026-04-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D29-IIR-4.1.26.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D36_2026-04-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D36-DIR-4.1.26.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D29_2026-07-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D29-IIR-7.1.26.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D36_2026-07-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D36-DIR-7.1.26.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D30_2025-12-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-12/D30-Storm-Cost-Recovery-Rider-12-1-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D29_2025-10-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-10/D29-Infrastructure-Investment-Rider-10-1-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D36_2025-10-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-10/D36-Distribution-Investment-Rider-10-1-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D29_2026-01-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D29-Infrastructure-Investment-Rider-1-1-2026.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D36_2026-01-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D36-Distribution-Investment-Rider-1-1-2026.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D17_2025-11-06",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D17%20-%20Residential-11-6-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D19_2025-11-06",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D19%20-%20Secondary-11-6-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D19_2026-01-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D19-Secondary-1-1-2026.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D30_2025-12-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-12/D30%20-%20Storm%20Cost%20Recovery%20Rider-12-1-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    },
+    {
+      "id": "D41_2025-08-01",
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-08/D41-Tax-Savings-Credit-Rider-8-1-2025.pdf",
+      "status": 404,
+      "bytes": 33059
+    }
+  ],
+  "blocked_routes": [
+    {
+      "url": "https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=21-1110-EL-RDR",
+      "status": "Request Rejected on official direct request; web tool inaccessible",
+      "receipt": ".cache/aes_ohio/sources/delivery/puco_21-1110_case.html",
+      "retry_policy": "Stopped unchanged route."
+    }
+  ],
+  "notes": [
+    "Live index differs from cached web crawl: adopted D39/D41 updated November1,2026. Live original index controls.",
+    "Index top proposed tariff book was not used. Customer tariff links and official PUCO assembled snapshots supplied adopted sources.",
+    "PUCO assembled book current path is June2025 snapshot; (1) path is December2024 snapshot. Neither silently treated as current November2026.",
+    "All originals private under ignored .cache; tracked files contain numerical facts, metadata, brief attribution only."
+  ]
+}

@@ -145,6 +145,19 @@ def estimate(inputs_path=DEFAULT_INPUTS):
                 or hashlib.sha256(baseline_input_path.read_bytes()).hexdigest() != baseline_config["inputs_sha256"]):
             raise ValueError("Historical baseline evidence changed; preserve its original identity.")
         baseline = json.loads(baseline_path.read_text())
+        previous_config = config.get("previous_implementation_snapshot")
+        if previous_config is not None:
+            previous_path = inputs_path.parent / previous_config["estimate_file"]
+            previous_input_path = inputs_path.parent / previous_config["inputs_file"]
+            if (hashlib.sha256(previous_path.read_bytes()).hexdigest() != previous_config["estimate_sha256"]
+                    or hashlib.sha256(previous_input_path.read_bytes()).hexdigest() != previous_config["inputs_sha256"]):
+                raise ValueError("Previous implementation snapshot evidence changed; preserve its original identity.")
+            previous = json.loads(previous_path.read_text())
+            expected_workflows = len(implemented)-len(additions)
+            if (previous_config["implemented_workflow_count"] != expected_workflows
+                    or previous["implemented_utility_state_district_workflows"] != expected_workflows
+                    or abs(previous["estimated_people"]-(people-added_people)) > 1e-7):
+                raise ValueError("Previous implementation snapshot does not match the current addition attribution.")
         result.update(
             implemented_utility_state_district_workflows=len(implemented),
             implemented_repository_keys=implemented,
@@ -165,6 +178,13 @@ def estimate(inputs_path=DEFAULT_INPUTS):
         )
         # This rounding range belongs only to the old inferred district estimate.
         result["west_penn_accounts_rounding_only_bounds"] = None
+        if previous_config is not None:
+            result["previous_implementation_snapshot"] = dict(
+                research_date=previous["research_date"],
+                implemented_workflows=previous_config["implemented_workflow_count"],
+                estimated_people=previous["estimated_people"],
+                population_share=previous["population_share"],
+                source_estimate_sha256=previous_config["estimate_sha256"])
     return result
 
 

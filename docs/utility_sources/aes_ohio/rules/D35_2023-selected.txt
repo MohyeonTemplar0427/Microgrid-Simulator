@@ -1,0 +1,302 @@
+Original URL: https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D35%20-%20Interconnection%20service%209-1-2023.pdf
+Original PDF SHA-256: 0593bec883d221270fe51c4ef02a4713c5c6607bfeabbaac3edf7270e13bec50
+Retrieved: 2026-11-02
+
+--- PDF page 1 ---
+THE DAYTON POWER AND LIGHT COMPANY Fourth Revised Sheet No. D35 
+MacGregor Park Cancels 
+1065 Woodman Drive Third Revised Sheet No. D35 
+Dayton, Ohio 45432 Page 1 of 29 
+ 
+P.U.C.O. No. 17 
+ELECTRIC DISTRIBUTION SERVICE 
+INTERCONNECTION SERVICE 
+ 
+ 
+ 
+Filed pursuant to the Opinion and Order in Case No. 22-0900-EL-SSO dated August 9, 2023 of the Public 
+Utilities Commission of Ohio. 
+ 
+Issued August 25, 2023 Effective September 1, 2023 
+Issued by 
+Kenneth J. Zagzebski, President and Chief Executive Officer 
+ 
+DESCRIPTION OF SERVICE: 
+ 
+This Tariff Sheet provides the terms, conditions and fees for the Interconnection of electric distributed 
+generation facilities to the Company’s Distribution System. 
+ 
+APPLICABLE: 
+ 
+Applicable in the entire territory where DP&L P.U.C.O. No. 17 applies, this Tariff Sheet applies to those 
+situations where a Service Customer seeks to physically connect its electric distributed generation facility 
+to, and may operate it in parallel with, the Company's Distribution System.   
+ 
+PURPOSE: 
+ 
+The purpose of this Tariff Sheet is to implement Ohio Revised Code Section 4928.11, which calls for 
+uniform interconnection standards that are not unduly burdensome or expensive and also ensure safety and 
+reliability of the Company’s Distribution System.  This Tariff Sheet contains the terms and conditions that 
+govern the Interconnection and Parallel Operation of an Interconnection Service Customer’s facility with 
+the Company’s Distribution System. 
+ 
+DEFINITIONS: 
+ 
+(A) "Applicant" means the person requesting interconnection service and may be any of the following: 
+(1) A customer generator as defined by division (A)(29) of section 4928.01 of the Revised Code. 
+(2) A self-generator as defined by division (A )(32) of section 4928.01 of the Revised Code. 
+(3) The owner or operator of distributed generation as defined in paragraph (K) of this rule. 
+(B) "Application" means a request to an electric distribution utility (EDU) using the format set forth 
+on the web site of the public utilities commission of Ohio for interconnection of distributed 
+generation to the electric distribution system owned by the EDU. 
+(C) "Area network" means a type of electric distribution system served by multiple transformers 
+interconnected in an electrical network circuit, which is generally used in large metropolitan areas 
+that are densely populated, in order to provide highly reliable service. Area network has the same 
+meaning as the term "distribution secondary grid network" found in institute of electrical and 
+electronics engineers (IEEE) standard 1547 sub clause 4.1.4. 
+
+--- PDF page 2 ---
+THE DAYTON POWER AND LIGHT COMPANY Fourth Revised Sheet No. D35 
+MacGregor Park Cancels 
+1065 Woodman Drive Third Revised Sheet No. D35 
+Dayton, Ohio 45432 Page 2 of 29 
+ 
+P.U.C.O. No. 17 
+ELECTRIC DISTRIBUTION SERVICE 
+INTERCONNECTION SERVICE 
+ 
+ 
+ 
+Filed pursuant to the Opinion and Order in Case No. 22-0900-EL-SSO dated August 9, 2023 of the Public 
+Utilities Commission of Ohio. 
+ 
+Issued August 25, 2023 Effective September 1, 2023 
+Issued by 
+Kenneth J. Zagzebski, President and Chief Executive Officer 
+(D) "Automatic sectionalizing device" means any self-contained, circuit-opening device used in 
+conjunction with a source-side protective device, which features automatic reclosing capability. 
+(E) "Backup electricity supply" means replacement electric power supplied to an applicant by the 
+EDU at a tariff rate or alternatively, as a market-based option or by a competitive retail electric 
+service provider of the applicant's choice at a rate to be determined between the provider and the 
+applicant. 
+(F)  "Business Day" means any day which is not a Saturday, Sunday, or legal holiday. 
+(G) "Calendar Day" means any day, including Saturday, Sunday, and legal holidays.  
+(H) "Commission" means the public utilities commission of Ohio. 
+(I) "Competitive retail electric service" means a component of retail electric service that is 
+competitive as provided under division (B) of section 4928.01 of the Revised Code. 
+(J)  "Cost recovery" means collection, upon approval by the commission pursuant to its authority 
+under section 4909.15 of the Revised Code, of such documented EDU interconnection costs that 
+are incurred at reasonable levels for prudent purposes and that are over and above the review 
+processing fees set forth in rules 4901:1-22-06 to 4901:1-22-08 of the Administrative Code. 
+(K)  “Distributed generation" is a general term for al l or part of a system of a distributed electrical 
+generator or a static inverter either by itself or in the aggregate of twenty megawatts or less in size 
+together with all protective, safety, and associated equipment installed at a point of common 
+coupling on the EDU's distribution system in close proximity to the customer load. 
+(L) "Electric distribution utility" or (EDU) means an electric distribution utility, which is an investor-
+owned electric utility that owns and operates a distribution wires system and supplies at least retail 
+electric distribution service. 
+(M)  "Equipment package" means distributed generation facility assembled to include not only a 
+generator or electric source but related peripheral devices that facilitate operation of the 
+distributed generation. 
+(N)  "Expedited procedure" means a review process for certified distributed generation that passes a 
+certain prespecified review procedure, has a capacity rating of two megawatts or less, and does not 
+qualify for simplified procedures. 
+(O) "Interconnection" means the physical connection of the applicant's facilities to the EDU's system for 
+the purpose of electrical power transfers. 
+
+--- PDF page 7 ---
+THE DAYTON POWER AND LIGHT COMPANY Fourth Revised Sheet No. D35 
+MacGregor Park Cancels 
+1065 Woodman Drive Third Revised Sheet No. D35 
+Dayton, Ohio 45432 Page 7 of 29 
+ 
+P.U.C.O. No. 17 
+ELECTRIC DISTRIBUTION SERVICE 
+INTERCONNECTION SERVICE 
+ 
+ 
+ 
+Filed pursuant to the Opinion and Order in Case No. 22-0900-EL-SSO dated August 9, 2023 of the Public 
+Utilities Commission of Ohio. 
+ 
+Issued August 25, 2023 Effective September 1, 2023 
+Issued by 
+Kenneth J. Zagzebski, President and Chief Executive Officer 
+(a) A copy of the application review process. 
+(b) A checklist or description of the information needed to complete the application. 
+(c) A statement that processing the application cannot begin until the needed information is 
+received. 
+(6) Upon receiving any necessary application materials missing from the original application, the 
+EDU shall provide the applicant with a second, written or email notice establishing a target 
+date for processing the application. 
+(7) If an EDU determines that it cannot connect the applicant's facility within the time frames 
+stated in this chapter, it will notify the applicant in writing of that fact within ten business 
+days after the application has been received. The notification must include the following: 
+(a) The reason or reasons interconnection service could not be performed within the time 
+frames stated in this rule. 
+(b) An alternative date for interconnection service. 
+(D) Compliance with national industry standards 
+An EDU shall file tariffs for uniform interconnection service with the commission that are 
+consistent with the following: 
+(1) The institute of electric and electronics engineers 1547 standard, effective as set forth in rule 
+4901:1-22-03 of the Administrative Code. 
+(2) Underwriters laboratory 1741 standard for inve rters, converters, and controllers for use in 
+independent power systems, effective as set forth in rule 4901:1-22-03 of the Administrative 
+Code. 
+(3) The appropriate criteria and interconnection parameters for the customer's technology, so as 
+not to impose technical and economic barriers to new technology or the development, 
+installation, and interconnection of an applicant's facilities, pursuant to division (A) of section 
+4928.11 of the Revised Code. 
+(E) Metering 
+Any metering installation, testing, or recalibration performed by the EDU at the request of the 
+applicant for installation of the applicant's distributed generation facility shall be provided 
+consistent with the electric service and safety standards pursuant to Chapter 4928. of the Revised 
+
+--- PDF page 8 ---
+THE DAYTON POWER AND LIGHT COMPANY Fourth Revised Sheet No. D35 
+MacGregor Park Cancels 
+1065 Woodman Drive Third Revised Sheet No. D35 
+Dayton, Ohio 45432 Page 8 of 29 
+ 
+P.U.C.O. No. 17 
+ELECTRIC DISTRIBUTION SERVICE 
+INTERCONNECTION SERVICE 
+ 
+ 
+ 
+Filed pursuant to the Opinion and Order in Case No. 22-0900-EL-SSO dated August 9, 2023 of the Public 
+Utilities Commission of Ohio. 
+ 
+Issued August 25, 2023 Effective September 1, 2023 
+Issued by 
+Kenneth J. Zagzebski, President and Chief Executive Officer 
+Code, and rule 4901:1-10-05 and, as applicable, paragraph (C) of rule 4901:1-10-28 of the 
+Administrative Code. Interconnection requested by the applicant for the purposes of net metering 
+must follow the commission's net metering rules promulgated pursuant to division (A)(31) of 
+section 4928.01 of the Revised Code. Any exception to the net metering rules shall be 
+implemented in accordance with any special metering or communication infrastructure ordered by 
+the commission. 
+(F) Disposal of excess energy produced by the applicant's distributed generation 
+(1) An applicant proposing to install a self-generator as defined in division (A)(32) of section 
+4928.01 of the Revised Code for the purposes of selling excess electricity to retail electric 
+service providers as a competitive service to the extent not preempted by federal law must 
+first seek certification of managerial, technical and financial capability consistent with section 
+4928.08 of the Revised Code. 
+(2) An applicant requesting interconnection for the purpose of selling energy to any party as a 
+sale for resale or as a wholesale transaction may be subject to applicable rules for regional 
+interstate sales at wholesale prices in markets operated by independent transmission system 
+operators or regional transmission operators under the jurisdiction of the federal energy 
+regulatory commission. 
+(G) Construction or system upgrades of the EDU's system 
+(1) Where construction or system upgrades of the EDU's system are required by the applicant's 
+installation of a distributed generation facility, the EDU shall provide the applicant with an 
+estimate of the timetable and the applicant's cost for the construction or system upgrades, 
+consistent with the provisions of this chapter. 
+(2) All construction or distribution system upgrade costs shall be the responsibility of the 
+interconnection applicant. 
+(3) If the applicant desires to proceed with the construction or system upgrades, the applicant and 
+EDU shall enter into a contract for the completion of the construction or system upgrades. 
+(4) All construction and system upgrade cost estimates and invoices shall be itemized and clearly 
+explained. 
+(5) Interconnection service shall take place no later than two weeks following the completion of 
+such construction or system upgrades. 
+ 
+
+--- PDF page 18 ---
+THE DAYTON POWER AND LIGHT COMPANY Fourth Revised Sheet No. D35 
+MacGregor Park Cancels 
+1065 Woodman Drive Third Revised Sheet No. D35 
+Dayton, Ohio 45432 Page 18 of 29 
+ 
+P.U.C.O. No. 17 
+ELECTRIC DISTRIBUTION SERVICE 
+INTERCONNECTION SERVICE 
+ 
+ 
+ 
+Filed pursuant to the Opinion and Order in Case No. 22-0900-EL-SSO dated August 9, 2023 of the Public 
+Utilities Commission of Ohio. 
+ 
+Issued August 25, 2023 Effective September 1, 2023 
+Issued by 
+Kenneth J. Zagzebski, President and Chief Executive Officer 
+(a) A supplemental review may be performed where twelve months of line section minimum 
+load data is available or can be calculated, estimated from existing data, or determined 
+from a power flow model, and where the aggregate distributed generation facility 
+capacity on the line section is less than one hundred per cent of the minimum load for all 
+line sections bounded by automatic sectionalizing devices upstream of the proposed 
+distributed generation facility. If minimum load data is not available, or cannot be 
+calculated, estimated or determined, the EDU shall include the reason(s) that it is unable 
+to calculate, estimate or determine minimum load in its supplemental review results 
+notification as set forth in rule 4901:1-22-07(E)(1) of the Administrative Code.  
+(i) The type of generation used by the proposed distributed generation facility will be 
+taken into account when calculating, estimating, or determining the circuit or line 
+section minimum load.  For the application of a solar photovoltaic generation system 
+with no battery storage, use daytime minimum load, and use absolute minimum load 
+for other generation.  
+(ii) When this screen is being applied to a distributed generation facility that serves 
+some onsite electrical load, the total load must be considered as part of the aggregate 
+generation.  
+(iii) The EDU will consider generating faci lity capacity known to be reflected in the 
+minimum load data as part of the aggregate generation for purposes of this screen. 
+(b) In aggregate with existing generation on the line section: (1) the voltage regulation on the 
+line section can be maintained in compliance with relevant requirements under all system 
+conditions, (2) the voltage fluctuation is within acceptable limits as defined by IEEE 
+1453 or utility practice similar to IEEE 1453, and (3) the harmonic levels meet IEEE 519 
+limits at the point of interconnection.  
+(c) The location of the proposed distributed generation facility and the aggregate generation 
+capacity on the line section do not create impacts to safety or reliability that cannot be 
+adequately addressed without application of the level 3 standard review. The EDU may 
+consider the following and other factors in determining potential impacts to safety and 
+reliability in applying the screen:  
+(i) Whether the line section has significant minimum loading levels dominated by a 
+small number of customers.  
+(ii) If there is an even or uneven distribution of loading along the feeder. 
+
+--- PDF page 28 ---
+THE DAYTON POWER AND LIGHT COMPANY Fourth Revised Sheet No. D35 
+MacGregor Park Cancels 
+1065 Woodman Drive Third Revised Sheet No. D35 
+Dayton, Ohio 45432 Page 28 of 29 
+ 
+P.U.C.O. No. 17 
+ELECTRIC DISTRIBUTION SERVICE 
+INTERCONNECTION SERVICE 
+ 
+ 
+ 
+Filed pursuant to the Opinion and Order in Case No. 22-0900-EL-SSO dated August 9, 2023 of the Public 
+Utilities Commission of Ohio. 
+ 
+Issued August 25, 2023 Effective September 1, 2023 
+Issued by 
+Kenneth J. Zagzebski, President and Chief Executive Officer 
+(2) The disconnection can only occur after a reasonable time to cure the noncompliance condition 
+has elapsed. 
+(J) Other disconnection of the unit 
+(1) The applicant retains the option to temporarily disconnect from the EDU's system at any time. 
+Such temporary disconnection shall not be a termination of the interconnection agreement 
+unless the applicant exercises its termination rights under the interconnection agreement. 
+(2) The EDU shall have the right to disconnect th e applicant's unit(s) without notice in the event 
+of an emergency or to eliminate conditions that constitute a potential hazard to the EDU 
+personnel or the general public. The EDU shall notify the applicant of the emergency as soon 
+as circumstances permit. 
+(K) Service interruption 
+During routine maintenance and repairs on the EDU's system consistent with Chapter 4901:1-23 
+of the Administrative Code, or other commission or der, the EDU shall provide the applicant with 
+a seven-day notice of service interruption. 
+(L) Effective term and termination rights of an interconnection agreement 
+(1) An interconnection agreement becomes effective when executed by both parties and shall 
+continue in force until terminated under any of the following conditions: 
+(a) The applicant terminates the interconnection agreement at any time by giving the EDU 
+sixty calendar days prior notice. 
+(b) The EDU terminates the interconnection agreement upon failure of the applicant to 
+generate energy from the applicant's facility in parallel with the EDU's system by the 
+later of two years from the date of the executed interconnection agreement or twelve 
+months after completion of the interconnection. 
+(c) Either party terminates by giving the other party at least sixty calendar days prior written 
+notice that the other party is in default of any of the material terms and conditions of the 
+interconnection agreement, so long as the notice specifies the basis for the termination 
+and there is reasonable opportunity to cure the default. 
+(2) All applicants' installations existing on or before  the effective date of this rule are exempted 
+from the changes instituted by this rule. 

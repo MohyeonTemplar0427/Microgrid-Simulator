@@ -1,0 +1,1572 @@
+{
+  "schema_version": 1,
+  "scope": "AES Ohio adopted P.U.C.O.No.17 D17 and ordinary secondary-metered single-phase D19 delivery only",
+  "verified_on": "2026-11-02",
+  "date_basis": "Riders generally bills-rendered, not service-date daily proration. Full calendar bill-month vectors only; base sheets retain printed effective dates. Latest index establishes November2026 current rates; no December2026 or later coverage claimed.",
+  "numeric_representation": "Exact original decimals as strings. Percent units must divide by100 to use as fractions. D19 absent ordinary energy charge encoded0 explicitly labeled.",
+  "external_ownership": {
+    "D33": "rules source ledger; excluded here",
+    "G10/T08 and official billing calculators": "supply source ledger; excluded here"
+  },
+  "sources": {
+    "D01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D1%20-%20Table%20of%20contents%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D01_D1 - Table of contents 9-1-2023.pdf",
+      "sha256": "d4ada8464a8f246b9adc620e56071345b953f32a3599e35cca8669e9342cfe07",
+      "bytes": 63969,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-11/D2-Tariff-Index-11.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_D2-Tariff-Index-11.1.26.pdf",
+      "sha256": "af99ed43b7098a4aa08275f971ecc1162126ef14378a40d4df992b57264150ba",
+      "bytes": 89303,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D03": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D3%20-%20Applications%20and%20contract%20for%20service%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D03_D3 - Applications and contract for service 9-1-2023.pdf",
+      "sha256": "9c0d5f04b12507361fbb25904a401bd75752823d795aa1907270c621e19aa22c",
+      "bytes": 86382,
+      "pages": 3,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D14": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D14%20-%20Definitions%20and%20amendments%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D14_D14 - Definitions and amendments 9-1-2023.pdf",
+      "sha256": "3ffc21a105ec8d2e32f8105f5dd8110deecee5a39fea18f8b1c193b65152b7b4",
+      "bytes": 113205,
+      "pages": 4,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D17": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D17-Residential-1-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D17_D17-Residential-1-1-2026.pdf",
+      "sha256": "a0d45ad3e058f78ad975aa0d3eb4fd07ff3e044836bd03f15c1f188383fb9ae7",
+      "bytes": 70669,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D19": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/D19-Secondary-6-1-2026-rf.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D19_D19-Secondary-6-1-2026-rf.pdf",
+      "sha256": "67914995c0b0e6f26529ed3f39bcb0810004759e0306cbdea19fba77b7cb3f19",
+      "bytes": 119685,
+      "pages": 5,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D43": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D43-Customer-Refund-Tariff-8-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D43_D43-Customer-Refund-Tariff-8-1-2026.pdf",
+      "sha256": "db27d2b66278e302fb99b4df4dc139e18406c884133b41b3456e573581512c70",
+      "bytes": 61258,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D27": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-08/D27-Solar-Generation-Fund-Rider-8.14.25.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D27_D27-Solar-Generation-Fund-Rider-8.14.25.pdf",
+      "sha256": "58b481f4dd7cdccea25c7c7a84aef17681b4ee00fa4222ca895d32c63cb285a2",
+      "bytes": 82351,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D28": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/D28%20-%20USF%2010-1-2026%20-%20clean.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D28_D28 - USF 10-1-2026 - clean.pdf",
+      "sha256": "cbb8bbe1dce829f7b72a009b323956576057e62cb1493cfa718431cae4d21da9",
+      "bytes": 63045,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/D29-IIR-10.1.26-Amnd.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_D29-IIR-10.1.26-Amnd.pdf",
+      "sha256": "5f077237878f71d942f2a9b8e612f3cccedee365da2e9b92899fb4c4d282ebf4",
+      "bytes": 63673,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D30": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/D30-Storm-Cost-Recovery-Rider-6-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D30_D30-Storm-Cost-Recovery-Rider-6-1-2026.pdf",
+      "sha256": "197cf8f71e489f03234c449dd168594300a117eb91757a9828c219da6d87f0e3",
+      "bytes": 63620,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D31": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D31%20-%20Regulatory%20Compliance%20Rider%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D31_D31 - Regulatory Compliance Rider 9-1-2023.pdf",
+      "sha256": "7bbeb7113d765b92f12c81591a6f1d9d5f8524c70e5b02f5295ca978e0c68b70",
+      "bytes": 79661,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D32": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D32-PRO%20Rider-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D32_D32-PRO Rider-4-1-2026.pdf",
+      "sha256": "a8b5e440f89b22b195772806cce7932018e189493ed8b2115624261cc098220e",
+      "bytes": 51254,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D34": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D34%20-%20Switching%20fees%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D34_D34 - Switching fees 9-1-2023.pdf",
+      "sha256": "5afcb9d9e94df45db7f520b93daf5811af8ae6b700a1d38eca872451bdc2cf92",
+      "bytes": 85053,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-10/D36-DIR-10.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_D36-DIR-10.1.26.pdf",
+      "sha256": "c8a14eb60077fd4ccda816cb2672932c591aa77c2f90ae9452e596e04f4215f0",
+      "bytes": 64461,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D37": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-06/D37-Customer-Programs-Rider-6-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D37_D37-Customer-Programs-Rider-6-1-2026.pdf",
+      "sha256": "5910ff0e3f2d72ab9efd38d29c8c8433fe846732608d134e2bd8efbb79b59f6e",
+      "bytes": 62446,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D38": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D38%20-%20EER%201.1.21.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D38_D38 - EER 1.1.21.pdf",
+      "sha256": "0181106401758c9ce6205398a91934f9f78d72456f3860ad83dd14b35c22485a",
+      "bytes": 48688,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D39": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-11/D39-Economic-Development-Rider-11.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D39_D39-Economic-Development-Rider-11.1.26.pdf",
+      "sha256": "cb860fa0a1c369aec6adc7fc355ab233f0c8cb99044ea5d78255131262e1eb87",
+      "bytes": 66113,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D40": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-08/D40-Legacy-Generation-Rider-8.14.25.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D40_D40-Legacy-Generation-Rider-8.14.25.pdf",
+      "sha256": "694c56545a31d240cefbb19b656a80bc385e0fa558d9164bba5c72904e0bea97",
+      "bytes": 67399,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D41": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-11/D41-Tax-Savings-Credit-Rider-11.1.26.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D41_D41-Tax-Savings-Credit-Rider-11.1.26.pdf",
+      "sha256": "0e6a23176e0fa33e453b4149a9400abb8d4b11ebfbf63b0e88755d901cba15e0",
+      "bytes": 82151,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "puco_distribution_book": {
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Dayton%20Power%20and%20Light%20Company%20dba%20AES%20Ohio/DP%20and%20L%20PUCO%2017%20Distribution.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/puco_distribution_book.pdf",
+      "sha256": "d1777cf5b5d1bf9e483be751139c2c6cf1bdd11fbc4ea0f96ba50f54376085c3",
+      "bytes": 1516710,
+      "pages": 137,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-01-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2025-01/D2-Tariff-Index-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-01-01.pdf",
+      "sha256": "ba0a16a160fda981e25d49d4f8e871743c6128f60b404ef82fb27ddadd03841c",
+      "bytes": 129306,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D28_2025-01-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2025-01/D28-USF-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D28_2025-01-01.pdf",
+      "sha256": "0e5013202ec8cf7009a51153adcfbfbe8df437ce75687919abf81df99dba32ca",
+      "bytes": 61424,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2025-01-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2025-01/D36-Distribution-Investment-Rider-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2025-01-01.pdf",
+      "sha256": "d296198119cda906b7cf679e7c5cfb3520c9dadcf04534c18f6823e272760c9f",
+      "bytes": 64732,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D19_2024-09-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-09/D19%20-%20Secondary%209-1-2024.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D19_2024-09-01.pdf",
+      "sha256": "6b2cd3e3d48f352ae283bf75b2976921e1d8e6e64f6f4de4319973fadfda862b",
+      "bytes": 110657,
+      "pages": 5,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D39_2023-09-01": {
+      "url": "https://www.aes-ohio.com/sites/aesvault.com/files/2024-02/D39%209-1-2023.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D39_2023-09-01.pdf",
+      "sha256": "99399a522873fae3394cc666eefe0b58882363d71ba755e15e3ae1fd924106f3",
+      "bytes": 72723,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D41_2025-11-06": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D41%20-%20Tax%20Savings%20Credit%20Rider-11-6-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D41_2025-11-06.pdf",
+      "sha256": "8a62fc76de03e9543688fc878c640980ae38b7c12696dde9f1005908c60b0936",
+      "bytes": 81553,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "puco_distribution_book_1": {
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Dayton%20Power%20and%20Light%20Company%20dba%20AES%20Ohio/DP%20and%20L%20PUCO%2017%20Distribution%20%281%29.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/puco_distribution_book_1.pdf",
+      "sha256": "9d26e991d0e79aa0fc96335212f7503bc0db04ce7bcdad42a1e6220752879d7d",
+      "bytes": 1227472,
+      "pages": 138,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2025-01-01_a": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-01/D29-Infrastructure-Investment-Rider-1-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2025-01-01_a.pdf",
+      "sha256": "3b52e190ee2a478dd4d35157eb1b85d3b334524eb05fdadff0c9eafb49f57285",
+      "bytes": 62554,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-07/D2-Tariff-Index-7-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-07-01.pdf",
+      "sha256": "c82f1110a7a051e896c97592f39d3e8251705e2b77162a73ae895e0749eb7d0b",
+      "bytes": 89737,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-10-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-10/D2-Tariff-Index-10-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-10-01.pdf",
+      "sha256": "ab2bfe6c87356054393331abb61ac80de363e337487a2c259322e2a15e3385cd",
+      "bytes": 63062,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2026-01-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D2-Tariff-Index-1-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2026-01-01.pdf",
+      "sha256": "bead58390b5ae0507d68522bc710114eecdb48523e5a7104ad518144bd1c22d6",
+      "bytes": 89816,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2026-04-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D2-Tariff-Index-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2026-04-01.pdf",
+      "sha256": "2b2a14c7e104a0bd4e84a0d3ccd6b650d54ae3671544280e2e7464a3e29a4448",
+      "bytes": 63346,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2026-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D2-Tariff-Index-7-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2026-07-01.pdf",
+      "sha256": "56bc8e460bd9cc28c5f37607cd9d2673438234c758bbe2d1efc81d56302944b5",
+      "bytes": 63362,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2025-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-07/D29-Infrastructure-Investment-Rider-7-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2025-07-01.pdf",
+      "sha256": "53461ae8f737cfe3843060326d31a408f5550d3928869276559393178602dc39",
+      "bytes": 51212,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2025-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-07/D36-Distribution-Investment-Rider-7-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2025-07-01.pdf",
+      "sha256": "c45e46629a4961f1448f08b9e5804226565e7f755aef58ca5470173d6bfeb79d",
+      "bytes": 60582,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D19_2025-09-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-09/D19-Secondary-9-1-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D19_2025-09-01.pdf",
+      "sha256": "dc144f0c4e39d612e0016cab004d9820707ff88ee87b4f3b11097280cc6d9456",
+      "bytes": 204887,
+      "pages": 5,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D02_2025-11-06": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2025-11/D2-Tariff-Index-11-6-2025.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D02_2025-11-06.pdf",
+      "sha256": "c9c153512ec8a849b14fe6832e8407691a4e0a6e604054a022a18b7f08054b3f",
+      "bytes": 89656,
+      "pages": 2,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2026-04-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D29-Infrastructure-Investment-Rider-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2026-04-01.pdf",
+      "sha256": "f7ec2aea28930ff4606f35f7363e88f487ff142ac1b5b314e7adbe910f24460f",
+      "bytes": 50999,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2026-04-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-04/D36-Distribution-Investment-Rider-4-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2026-04-01.pdf",
+      "sha256": "ea704d242cfdd64da84a51a738ddbe0d6d7555105f4bcfd7567abb44e5a98251",
+      "bytes": 51246,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D29_2026-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D29-Infrastructure-Investment-Rider-7-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D29_2026-07-01.pdf",
+      "sha256": "53435dd4ac5e5a8b9a965401694389587dd55f86e75a805d54f1fa589d93777c",
+      "bytes": 52232,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D36_2026-07-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-07/D36-Distribution-Investment-Rider-7-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D36_2026-07-01.pdf",
+      "sha256": "1ac5cd13c0f55977430139086fd45a4318fe84cecc9c55332f6ba956c63ea05e",
+      "bytes": 51543,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "D28_2026-01-01": {
+      "url": "https://vault.aes.com/sites/aesvault.com/files/2026-01/D28-USF-1-1-2026.pdf",
+      "original_path": ".cache/aes_ohio/sources/delivery/D28_2026-01-01.pdf",
+      "sha256": "5dff18391b54776af60699810f473f1b6b8ac8d5be6b7736e8c98a3281216c29",
+      "bytes": 62760,
+      "pages": 1,
+      "status": "official_adopted_tariff",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    },
+    "index": {
+      "url": "https://www.aes-ohio.com/rates-tariffs",
+      "original_path": ".cache/aes_ohio/sources/delivery/index.html",
+      "sha256": "36f62270f532d862c5fb2864291ef9182679a36f09d665719689edab509312ea",
+      "status": "official_customer_tariff_index",
+      "receipt_recorded_utc": "2026-11-02T21:14:00+00:00"
+    }
+  },
+  "rate_rows": [
+    {
+      "sheet": "D17",
+      "effective_from": "2023-09-01",
+      "known_until_exclusive": "2025-11-06",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "customer": "9.75",
+        "energy": "0.0286082"
+      },
+      "unit": {
+        "customer": "USD/customer/month",
+        "energy": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        63,
+        64
+      ],
+      "revision": 19
+    },
+    {
+      "sheet": "D17",
+      "effective_from": "2026-01-01",
+      "known_until_exclusive": null,
+      "source_id": "D17",
+      "values": {
+        "customer": "9.75",
+        "energy": "0.0493180"
+      },
+      "unit": {
+        "customer": "USD/customer/month",
+        "energy": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1,
+        2
+      ],
+      "revision": 21
+    },
+    {
+      "sheet": "D19",
+      "effective_from": "2024-09-01",
+      "known_until_exclusive": "2025-06-01",
+      "source_id": "D19_2024-09-01",
+      "values": {
+        "customer_single_phase": "16.68",
+        "demand_all_billing_kw": "4.7725904",
+        "energy": "0",
+        "low_load_d19_component": "0.0521380",
+        "low_load_d19_plus_t08_total": "0.0878585"
+      },
+      "unit": {
+        "customer_single_phase": "USD/customer/month",
+        "demand_all_billing_kw": "USD/kW/month",
+        "energy": "USD/kWh",
+        "low_load_d19_component": "USD/kWh",
+        "low_load_d19_plus_t08_total": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1,
+        2,
+        3
+      ],
+      "revision": 29,
+      "notes": "Minimum base charge is customer charge. Energy=0 is absence of an ordinary energy charge in RATE PER MONTH, not an independently printed numeric rate."
+    },
+    {
+      "sheet": "D19",
+      "effective_from": "2025-06-01",
+      "known_until_exclusive": "2025-09-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "customer_single_phase": "16.68",
+        "demand_all_billing_kw": "4.7725904",
+        "energy": "0",
+        "low_load_d19_component": "0.0521380",
+        "low_load_d19_plus_t08_total": "0.0980791"
+      },
+      "unit": {
+        "customer_single_phase": "USD/customer/month",
+        "demand_all_billing_kw": "USD/kW/month",
+        "energy": "USD/kWh",
+        "low_load_d19_component": "USD/kWh",
+        "low_load_d19_plus_t08_total": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        67,
+        68,
+        69
+      ],
+      "revision": 30,
+      "notes": "Minimum base charge is customer charge. Energy=0 is absence of an ordinary energy charge in RATE PER MONTH, not an independently printed numeric rate."
+    },
+    {
+      "sheet": "D19",
+      "effective_from": "2025-09-01",
+      "known_until_exclusive": "2025-11-06",
+      "source_id": "D19_2025-09-01",
+      "values": {
+        "customer_single_phase": "16.68",
+        "demand_all_billing_kw": "4.7188637",
+        "energy": "0",
+        "low_load_d19_component": "0.0646420",
+        "low_load_d19_plus_t08_total": "0.1196054"
+      },
+      "unit": {
+        "customer_single_phase": "USD/customer/month",
+        "demand_all_billing_kw": "USD/kW/month",
+        "energy": "USD/kWh",
+        "low_load_d19_component": "USD/kWh",
+        "low_load_d19_plus_t08_total": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1,
+        2,
+        3
+      ],
+      "revision": 31,
+      "notes": "Minimum base charge is customer charge. Energy=0 is absence of an ordinary energy charge in RATE PER MONTH, not an independently printed numeric rate."
+    },
+    {
+      "sheet": "D19",
+      "effective_from": "2026-06-01",
+      "known_until_exclusive": null,
+      "source_id": "D19",
+      "values": {
+        "customer_single_phase": "19.00",
+        "demand_all_billing_kw": "7.8040932",
+        "energy": "0",
+        "low_load_d19_component": "0.2138108",
+        "low_load_d19_plus_t08_total": "0.3339010"
+      },
+      "unit": {
+        "customer_single_phase": "USD/customer/month",
+        "demand_all_billing_kw": "USD/kW/month",
+        "energy": "USD/kWh",
+        "low_load_d19_component": "USD/kWh",
+        "low_load_d19_plus_t08_total": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1,
+        2,
+        3
+      ],
+      "revision": 34,
+      "notes": "Minimum base charge is customer charge. Energy=0 is absence of an ordinary energy charge in RATE PER MONTH, not an independently printed numeric rate."
+    },
+    {
+      "sheet": "D27",
+      "effective_from": "2025-01-01",
+      "known_until_exclusive": "2025-08-14",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17": "0.10",
+        "D19_first_833000_kwh": "0.000290516"
+      },
+      "unit": {
+        "D17": "USD/month",
+        "D19_first_833000_kwh": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        92
+      ],
+      "revision": 11
+    },
+    {
+      "sheet": "D27",
+      "effective_from": "2025-08-14",
+      "known_until_exclusive": null,
+      "source_id": "D27",
+      "values": {
+        "D17": "0.00",
+        "D19_first_833000_kwh": "0.000000000"
+      },
+      "unit": {
+        "D17": "USD/month",
+        "D19_first_833000_kwh": "USD/kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 12,
+      "notes": "BILLS RENDERED beginning August 14,2025. No extension to earlier rendered bills."
+    },
+    {
+      "sheet": "D28",
+      "effective_from": "2025-01-01",
+      "known_until_exclusive": "2026-01-01",
+      "source_id": "D28_2025-01-01",
+      "values": {
+        "first_833000_kwh": "0.0020072",
+        "over_833000_kwh": "0.0005700"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 25,
+      "notes": "First billing-cycle unit of effective month, bills rendered. Applies to all distributed kWh, not PIPP-program participants only."
+    },
+    {
+      "sheet": "D28",
+      "effective_from": "2026-01-01",
+      "known_until_exclusive": "2026-10-01",
+      "source_id": "D28_2026-01-01",
+      "values": {
+        "first_833000_kwh": "0.0032369",
+        "over_833000_kwh": "0.0005700"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 26,
+      "notes": "First billing-cycle unit of effective month, bills rendered. Applies to all distributed kWh, not PIPP-program participants only."
+    },
+    {
+      "sheet": "D28",
+      "effective_from": "2026-10-01",
+      "known_until_exclusive": null,
+      "source_id": "D28",
+      "values": {
+        "first_833000_kwh": "0.0042663",
+        "over_833000_kwh": "0.0005700"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 27,
+      "notes": "First billing-cycle unit of effective month, bills rendered. Applies to all distributed kWh, not PIPP-program participants only."
+    },
+    {
+      "sheet": "D29",
+      "effective_from": "2025-01-01",
+      "known_until_exclusive": "2025-04-01",
+      "source_id": "D29_2025-01-01_a",
+      "values": {
+        "D17": "10.1090",
+        "D19": "10.1090"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 29
+    },
+    {
+      "sheet": "D29",
+      "effective_from": "2025-04-01",
+      "known_until_exclusive": "2025-07-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17": "9.2080",
+        "D19": "9.2080"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        94
+      ],
+      "revision": 30
+    },
+    {
+      "sheet": "D29",
+      "effective_from": "2025-07-01",
+      "known_until_exclusive": "2025-10-01",
+      "source_id": "D29_2025-07-01",
+      "values": {
+        "D17": "8.0040",
+        "D19": "8.0040"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 31
+    },
+    {
+      "sheet": "D29",
+      "effective_from": "2026-04-01",
+      "known_until_exclusive": "2026-07-01",
+      "source_id": "D29_2026-04-01",
+      "values": {
+        "D17": "9.0190",
+        "D19": "9.0190"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 35
+    },
+    {
+      "sheet": "D29",
+      "effective_from": "2026-07-01",
+      "known_until_exclusive": "2026-10-01",
+      "source_id": "D29_2026-07-01",
+      "values": {
+        "D17": "6.7650",
+        "D19": "6.7650"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 36
+    },
+    {
+      "sheet": "D29",
+      "effective_from": "2026-10-01",
+      "known_until_exclusive": null,
+      "source_id": "D29",
+      "values": {
+        "D17": "6.8880",
+        "D19": "6.8880"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 37
+    },
+    {
+      "sheet": "D36",
+      "effective_from": "2025-01-01",
+      "known_until_exclusive": "2025-04-01",
+      "source_id": "D36_2025-01-01",
+      "values": {
+        "D17": "14.8385",
+        "D19": "14.8385"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 15
+    },
+    {
+      "sheet": "D36",
+      "effective_from": "2025-04-01",
+      "known_until_exclusive": "2025-07-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17": "17.0211",
+        "D19": "17.0211"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        130
+      ],
+      "revision": 16
+    },
+    {
+      "sheet": "D36",
+      "effective_from": "2025-07-01",
+      "known_until_exclusive": "2025-10-01",
+      "source_id": "D36_2025-07-01",
+      "values": {
+        "D17": "14.1341",
+        "D19": "14.1341"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 17
+    },
+    {
+      "sheet": "D36",
+      "effective_from": "2026-04-01",
+      "known_until_exclusive": "2026-07-01",
+      "source_id": "D36_2026-04-01",
+      "values": {
+        "D17": "2.9731",
+        "D19": "2.9731"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 21
+    },
+    {
+      "sheet": "D36",
+      "effective_from": "2026-07-01",
+      "known_until_exclusive": "2026-10-01",
+      "source_id": "D36_2026-07-01",
+      "values": {
+        "D17": "5.3313",
+        "D19": "5.3313"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 22
+    },
+    {
+      "sheet": "D36",
+      "effective_from": "2026-10-01",
+      "known_until_exclusive": null,
+      "source_id": "D36",
+      "values": {
+        "D17": "7.4660",
+        "D19": "7.4660"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 23
+    },
+    {
+      "sheet": "D30",
+      "effective_from": "2024-12-01",
+      "known_until_exclusive": "2025-06-01",
+      "source_id": "puco_distribution_book_1",
+      "values": {
+        "D17": "0.21",
+        "D19": "0.80"
+      },
+      "unit": "USD/month",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        95
+      ],
+      "revision": 17
+    },
+    {
+      "sheet": "D30",
+      "effective_from": "2025-06-01",
+      "known_until_exclusive": "2025-12-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17": "2.27",
+        "D19": "8.38"
+      },
+      "unit": "USD/month",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        95
+      ],
+      "revision": 18
+    },
+    {
+      "sheet": "D30",
+      "effective_from": "2026-06-01",
+      "known_until_exclusive": null,
+      "source_id": "D30",
+      "values": {
+        "D17": "0.80",
+        "D19": "3.21"
+      },
+      "unit": "USD/month",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 20
+    },
+    {
+      "sheet": "D31",
+      "effective_from": "2023-09-01",
+      "known_until_exclusive": null,
+      "source_id": "D31",
+      "values": {
+        "D17": "2.82",
+        "D19_single_phase": "3.66"
+      },
+      "unit": {
+        "D17": "percent of base distribution charges",
+        "D19_single_phase": "USD/bill"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 9
+    },
+    {
+      "sheet": "D32",
+      "effective_from": "2023-09-01",
+      "known_until_exclusive": "2025-04-01",
+      "source_id": "puco_distribution_book_1",
+      "values": {
+        "D17": "0.32",
+        "D19": "1.10"
+      },
+      "unit": "USD/bill",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        97
+      ],
+      "revision": 7
+    },
+    {
+      "sheet": "D32",
+      "effective_from": "2025-04-01",
+      "known_until_exclusive": "2026-04-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17": "2.07",
+        "D19": "6.97"
+      },
+      "unit": "USD/bill",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        97
+      ],
+      "revision": 8
+    },
+    {
+      "sheet": "D32",
+      "effective_from": "2026-04-01",
+      "known_until_exclusive": null,
+      "source_id": "D32",
+      "values": {
+        "D17": "0.65",
+        "D19": "2.84"
+      },
+      "unit": "USD/bill",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 9
+    },
+    {
+      "sheet": "D37",
+      "effective_from": "2023-09-01",
+      "known_until_exclusive": "2026-06-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17": "0.0000000"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        131
+      ],
+      "revision": 8,
+      "notes": "D19 outside applicability D17/D18; do not charge D19."
+    },
+    {
+      "sheet": "D37",
+      "effective_from": "2026-06-01",
+      "known_until_exclusive": null,
+      "source_id": "D37",
+      "values": {
+        "D17": "0.0022468"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 9,
+      "notes": "D19 outside applicability D17/D18; do not charge D19."
+    },
+    {
+      "sheet": "D38",
+      "effective_from": "2021-01-01",
+      "known_until_exclusive": null,
+      "source_id": "D38",
+      "values": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 12
+    },
+    {
+      "sheet": "D39",
+      "effective_from": "2023-08-14",
+      "known_until_exclusive": "2026-11-01",
+      "source_id": "D39_2023-09-01",
+      "values": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 29,
+      "notes": "Filename says9-1-2023 but original effective date is August14,2023, ninth billing unit. Original text controls."
+    },
+    {
+      "sheet": "D39",
+      "effective_from": "2026-11-01",
+      "known_until_exclusive": null,
+      "source_id": "D39",
+      "values": {
+        "D17": "0.0000725",
+        "D19": "0.0000358"
+      },
+      "unit": "USD/kWh",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 30
+    },
+    {
+      "sheet": "D40",
+      "effective_from": "2025-01-01",
+      "known_until_exclusive": "2025-07-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17_part_a": "1.18",
+        "D17_part_b": "0.32",
+        "D17_total": "1.50",
+        "D19_part_a": "0.0018637",
+        "D19_part_b": "-0.0001513",
+        "D19_total": "0.0017124"
+      },
+      "unit": {
+        "D17": "USD/month",
+        "D19": "USD/kWh on first833000kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        134
+      ],
+      "revision": 16
+    },
+    {
+      "sheet": "D40",
+      "effective_from": "2025-08-14",
+      "known_until_exclusive": null,
+      "source_id": "D40",
+      "values": {
+        "D17_part_a": "0.00",
+        "D17_part_b": "0.00",
+        "D17_total": "0.00",
+        "D19_part_a": "0.0000000",
+        "D19_part_b": "0.0000000",
+        "D19_total": "0.0000000"
+      },
+      "unit": {
+        "D17": "USD/month",
+        "D19": "USD/kWh on first833000kWh"
+      },
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 18
+    },
+    {
+      "sheet": "D41",
+      "effective_from": "2024-11-01",
+      "known_until_exclusive": "2025-08-01",
+      "source_id": "puco_distribution_book",
+      "values": {
+        "D17": "-0.4889",
+        "D19": "-0.4889"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        135
+      ],
+      "revision": 5
+    },
+    {
+      "sheet": "D41",
+      "effective_from": "2025-11-06",
+      "known_until_exclusive": "2026-11-01",
+      "source_id": "D41_2025-11-06",
+      "values": {
+        "D17": "2.5675",
+        "D19": "2.5675"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 8,
+      "notes": "POSITIVE original printed rate despite name Tax Savings Credit Rider. Visually confirmed; do not negate."
+    },
+    {
+      "sheet": "D41",
+      "effective_from": "2026-11-01",
+      "known_until_exclusive": null,
+      "source_id": "D41",
+      "values": {
+        "D17": "-0.2577",
+        "D19": "-0.2577"
+      },
+      "unit": "percent of base distribution charges",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "revision": 9
+    },
+    {
+      "sheet": "D43",
+      "effective_from": "2026-08-01",
+      "known_until_exclusive": null,
+      "source_id": "D43",
+      "values": {
+        "D17": "14.39",
+        "D19": "49.27"
+      },
+      "unit": "USD one-time bill CREDIT",
+      "status": "verified_original_values",
+      "pdf_pages_1based": [
+        1
+      ],
+      "notes": "One-time refund only. Application month/account prior receipt must be known; not recurring each month. No exact terminal window stated."
+    }
+  ],
+  "complete_delivery_component_intersections": [
+    {
+      "bill_months": [
+        "2025-01",
+        "2025-02",
+        "2025-03"
+      ],
+      "D17_customer_usd": "9.75",
+      "D17_energy_usd_per_kwh": "0.0286082",
+      "D19_single_phase_customer_usd": "16.68",
+      "D19_demand_usd_per_kw": "4.7725904",
+      "D29_percent": "10.1090",
+      "D36_percent": "14.8385",
+      "D30_usd": {
+        "D17": "0.21",
+        "D19": "0.80"
+      },
+      "D31": {
+        "D17_percent": "2.82",
+        "D19_single_phase_usd": "3.66"
+      },
+      "D32_usd": {
+        "D17": "0.32",
+        "D19": "1.10"
+      },
+      "D28_first833000_usd_per_kwh": "0.0020072",
+      "D28_over833000_usd_per_kwh": "0.0005700",
+      "D41_percent": "-0.4889",
+      "D39_usd_per_kwh": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "D37_D17_usd_per_kwh": "0.0000000",
+      "D37_D19": "not applicable",
+      "D38_usd_per_kwh": "0.0000000",
+      "D27_D17_usd": "0.10",
+      "D27_D19_first833000_usd_per_kwh": "0.000290516",
+      "D40_D17_usd": "1.50",
+      "D40_D19_first833000_usd_per_kwh": "0.0017124",
+      "D43": "one-time credit applicability must be resolved for Aug2026/current account; not recurring",
+      "D19_low_load_component_usd_per_kwh": "0.0521380",
+      "D19_low_load_plus_T08_usd_per_kwh": "0.0878585"
+    },
+    {
+      "bill_months": [
+        "2025-04",
+        "2025-05"
+      ],
+      "D17_customer_usd": "9.75",
+      "D17_energy_usd_per_kwh": "0.0286082",
+      "D19_single_phase_customer_usd": "16.68",
+      "D19_demand_usd_per_kw": "4.7725904",
+      "D29_percent": "9.2080",
+      "D36_percent": "17.0211",
+      "D30_usd": {
+        "D17": "0.21",
+        "D19": "0.80"
+      },
+      "D31": {
+        "D17_percent": "2.82",
+        "D19_single_phase_usd": "3.66"
+      },
+      "D32_usd": {
+        "D17": "2.07",
+        "D19": "6.97"
+      },
+      "D28_first833000_usd_per_kwh": "0.0020072",
+      "D28_over833000_usd_per_kwh": "0.0005700",
+      "D41_percent": "-0.4889",
+      "D39_usd_per_kwh": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "D37_D17_usd_per_kwh": "0.0000000",
+      "D37_D19": "not applicable",
+      "D38_usd_per_kwh": "0.0000000",
+      "D27_D17_usd": "0.10",
+      "D27_D19_first833000_usd_per_kwh": "0.000290516",
+      "D40_D17_usd": "1.50",
+      "D40_D19_first833000_usd_per_kwh": "0.0017124",
+      "D43": "one-time credit applicability must be resolved for Aug2026/current account; not recurring",
+      "D19_low_load_component_usd_per_kwh": "0.0521380",
+      "D19_low_load_plus_T08_usd_per_kwh": "0.0878585"
+    },
+    {
+      "bill_months": [
+        "2025-06"
+      ],
+      "D17_customer_usd": "9.75",
+      "D17_energy_usd_per_kwh": "0.0286082",
+      "D19_single_phase_customer_usd": "16.68",
+      "D19_demand_usd_per_kw": "4.7725904",
+      "D29_percent": "9.2080",
+      "D36_percent": "17.0211",
+      "D30_usd": {
+        "D17": "2.27",
+        "D19": "8.38"
+      },
+      "D31": {
+        "D17_percent": "2.82",
+        "D19_single_phase_usd": "3.66"
+      },
+      "D32_usd": {
+        "D17": "2.07",
+        "D19": "6.97"
+      },
+      "D28_first833000_usd_per_kwh": "0.0020072",
+      "D28_over833000_usd_per_kwh": "0.0005700",
+      "D41_percent": "-0.4889",
+      "D39_usd_per_kwh": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "D37_D17_usd_per_kwh": "0.0000000",
+      "D37_D19": "not applicable",
+      "D38_usd_per_kwh": "0.0000000",
+      "D27_D17_usd": "0.10",
+      "D27_D19_first833000_usd_per_kwh": "0.000290516",
+      "D40_D17_usd": "1.50",
+      "D40_D19_first833000_usd_per_kwh": "0.0017124",
+      "D43": "one-time credit applicability must be resolved for Aug2026/current account; not recurring",
+      "D19_low_load_component_usd_per_kwh": "0.0521380",
+      "D19_low_load_plus_T08_usd_per_kwh": "0.0980791"
+    },
+    {
+      "bill_months": [
+        "2026-06"
+      ],
+      "D17_customer_usd": "9.75",
+      "D17_energy_usd_per_kwh": "0.0493180",
+      "D19_single_phase_customer_usd": "19.00",
+      "D19_demand_usd_per_kw": "7.8040932",
+      "D29_percent": "9.0190",
+      "D36_percent": "2.9731",
+      "D30_usd": {
+        "D17": "0.80",
+        "D19": "3.21"
+      },
+      "D31": {
+        "D17_percent": "2.82",
+        "D19_single_phase_usd": "3.66"
+      },
+      "D32_usd": {
+        "D17": "0.65",
+        "D19": "2.84"
+      },
+      "D28_first833000_usd_per_kwh": "0.0032369",
+      "D28_over833000_usd_per_kwh": "0.0005700",
+      "D41_percent": "2.5675",
+      "D39_usd_per_kwh": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "D37_D17_usd_per_kwh": "0.0022468",
+      "D37_D19": "not applicable",
+      "D38_usd_per_kwh": "0.0000000",
+      "D27_D17_usd": "0.00",
+      "D27_D19_first833000_usd_per_kwh": "0.000000000",
+      "D40_D17_usd": "0.00",
+      "D40_D19_first833000_usd_per_kwh": "0.0000000",
+      "D43": "one-time credit applicability must be resolved for Aug2026/current account; not recurring",
+      "D19_low_load_component_usd_per_kwh": "0.2138108",
+      "D19_low_load_plus_T08_usd_per_kwh": "0.3339010"
+    },
+    {
+      "bill_months": [
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "D17_customer_usd": "9.75",
+      "D17_energy_usd_per_kwh": "0.0493180",
+      "D19_single_phase_customer_usd": "19.00",
+      "D19_demand_usd_per_kw": "7.8040932",
+      "D29_percent": "6.7650",
+      "D36_percent": "5.3313",
+      "D30_usd": {
+        "D17": "0.80",
+        "D19": "3.21"
+      },
+      "D31": {
+        "D17_percent": "2.82",
+        "D19_single_phase_usd": "3.66"
+      },
+      "D32_usd": {
+        "D17": "0.65",
+        "D19": "2.84"
+      },
+      "D28_first833000_usd_per_kwh": "0.0032369",
+      "D28_over833000_usd_per_kwh": "0.0005700",
+      "D41_percent": "2.5675",
+      "D39_usd_per_kwh": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "D37_D17_usd_per_kwh": "0.0022468",
+      "D37_D19": "not applicable",
+      "D38_usd_per_kwh": "0.0000000",
+      "D27_D17_usd": "0.00",
+      "D27_D19_first833000_usd_per_kwh": "0.000000000",
+      "D40_D17_usd": "0.00",
+      "D40_D19_first833000_usd_per_kwh": "0.0000000",
+      "D43": "one-time credit applicability must be resolved for Aug2026/current account; not recurring",
+      "D19_low_load_component_usd_per_kwh": "0.2138108",
+      "D19_low_load_plus_T08_usd_per_kwh": "0.3339010"
+    },
+    {
+      "bill_months": [
+        "2026-10"
+      ],
+      "D17_customer_usd": "9.75",
+      "D17_energy_usd_per_kwh": "0.0493180",
+      "D19_single_phase_customer_usd": "19.00",
+      "D19_demand_usd_per_kw": "7.8040932",
+      "D29_percent": "6.8880",
+      "D36_percent": "7.4660",
+      "D30_usd": {
+        "D17": "0.80",
+        "D19": "3.21"
+      },
+      "D31": {
+        "D17_percent": "2.82",
+        "D19_single_phase_usd": "3.66"
+      },
+      "D32_usd": {
+        "D17": "0.65",
+        "D19": "2.84"
+      },
+      "D28_first833000_usd_per_kwh": "0.0042663",
+      "D28_over833000_usd_per_kwh": "0.0005700",
+      "D41_percent": "2.5675",
+      "D39_usd_per_kwh": {
+        "D17": "0.0000000",
+        "D19": "0.0000000"
+      },
+      "D37_D17_usd_per_kwh": "0.0022468",
+      "D37_D19": "not applicable",
+      "D38_usd_per_kwh": "0.0000000",
+      "D27_D17_usd": "0.00",
+      "D27_D19_first833000_usd_per_kwh": "0.000000000",
+      "D40_D17_usd": "0.00",
+      "D40_D19_first833000_usd_per_kwh": "0.0000000",
+      "D43": "one-time credit applicability must be resolved for Aug2026/current account; not recurring",
+      "D19_low_load_component_usd_per_kwh": "0.2138108",
+      "D19_low_load_plus_T08_usd_per_kwh": "0.3339010"
+    },
+    {
+      "bill_months": [
+        "2026-11"
+      ],
+      "D17_customer_usd": "9.75",
+      "D17_energy_usd_per_kwh": "0.0493180",
+      "D19_single_phase_customer_usd": "19.00",
+      "D19_demand_usd_per_kw": "7.8040932",
+      "D29_percent": "6.8880",
+      "D36_percent": "7.4660",
+      "D30_usd": {
+        "D17": "0.80",
+        "D19": "3.21"
+      },
+      "D31": {
+        "D17_percent": "2.82",
+        "D19_single_phase_usd": "3.66"
+      },
+      "D32_usd": {
+        "D17": "0.65",
+        "D19": "2.84"
+      },
+      "D28_first833000_usd_per_kwh": "0.0042663",
+      "D28_over833000_usd_per_kwh": "0.0005700",
+      "D41_percent": "-0.2577",
+      "D39_usd_per_kwh": {
+        "D17": "0.0000725",
+        "D19": "0.0000358"
+      },
+      "D37_D17_usd_per_kwh": "0.0022468",
+      "D37_D19": "not applicable",
+      "D38_usd_per_kwh": "0.0000000",
+      "D27_D17_usd": "0.00",
+      "D27_D19_first833000_usd_per_kwh": "0.000000000",
+      "D40_D17_usd": "0.00",
+      "D40_D19_first833000_usd_per_kwh": "0.0000000",
+      "D43": "one-time credit applicability must be resolved for Aug2026/current account; not recurring",
+      "D19_low_load_component_usd_per_kwh": "0.2138108",
+      "D19_low_load_plus_T08_usd_per_kwh": "0.3339010"
+    }
+  ],
+  "gaps": [
+    {
+      "bill_months": [
+        "2025-07"
+      ],
+      "missing": [
+        "D40 July1,2025 original numeric rates"
+      ]
+    },
+    {
+      "bill_months": [
+        "2025-08",
+        "2025-09"
+      ],
+      "missing": [
+        "D41 August1,2025 original numeric rate",
+        "D40 July1\u2013August13,2025 rates; August bills-rendered transition"
+      ]
+    },
+    {
+      "bill_months": [
+        "2025-10"
+      ],
+      "missing": [
+        "D29 October1,2025 original numeric rate",
+        "D36 October1,2025 original numeric rate",
+        "D41 August1,2025 original numeric rate"
+      ]
+    },
+    {
+      "bill_months": [
+        "2025-11"
+      ],
+      "missing": [
+        "D17/D19/D29/D36 November6,2025 numeric originals",
+        "D41 November1\u20135,2025 Seventh Revision numeric rate",
+        "Midmonth base-rate bill allocation evidence"
+      ]
+    },
+    {
+      "bill_months": [
+        "2025-12"
+      ],
+      "missing": [
+        "D17/D19/D29/D36 November6,2025 numeric originals",
+        "D30 December1,2025 original numeric rate"
+      ]
+    },
+    {
+      "bill_months": [
+        "2026-01",
+        "2026-02",
+        "2026-03"
+      ],
+      "missing": [
+        "D19 January1,2026 numeric original",
+        "D29/D36 January1,2026 numeric originals",
+        "D30 December1,2025 original numeric rate"
+      ]
+    },
+    {
+      "bill_months": [
+        "2026-04",
+        "2026-05"
+      ],
+      "missing": [
+        "D19 January1,2026 numeric original",
+        "D30 December1,2025 original numeric rate"
+      ]
+    }
+  ],
+  "not_executable_alone": [
+    "G10/T08 dated supply/transmission intersection required",
+    "D33 and account eligibility required from rules evidence",
+    "D19 full prior11-month demand history required",
+    "D43 one-time credit/account receipt state required if applicable",
+    "LLF comparator and selected percentage bases corroborated by external official calculator trace; invoice-rounding proof remains external"
+  ],
+  "demand_rules": {
+    "D19_interval_minutes": 30,
+    "current_ordinary_rule": "For eligible no-offpeak-election service below1000kW, all current 30-minute integrated maxima are undesignated off-peak and billed without75% time discount.",
+    "historical_ratchet_factor": "0.75",
+    "historical_lookback_months": 11,
+    "historical_qualifying_months": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      12
+    ],
+    "historical_source_excerpt": "such off-peak or on-peak demand as used for billing",
+    "restricted_domain_inference": "With no off-peak election throughout current/prior11months and all maxima <=100kW, use each month actual all-hours30-minute maximum as such demand; do not feed a ratchet-inflated billing demand back into ratchet history. This determinant interpretation is an explicit inference from D19 paragraphs1\u20133.",
+    "demand_formula_restricted_domain": "max(current_actual_30min_peak_kw,0.75*max(actual_30min_peak_kw of prior11months whose month in[1,2,6,7,8,12]))",
+    "no_prior_data_policy": "Reject missing required history unless independently documented true new-service start; do not assume zero.",
+    "excess_5_kw_adjustment": "None in D19. T08 component tiering is separate.",
+    "base_minimum": "Customer charge. No separate contract kW floor/PF surcharge stated in D19 ordinary-rate provisions.",
+    "offpeak_election_surcharge_usd_per_month": "20.00",
+    "offpeak_election_contract_min_years": 1,
+    "offpeak_termination_written_notice_days": 30,
+    "special_connected_load_factor": "0.85",
+    "special_connected_load_low_load_cap": "Not applicable; reject this special provision.",
+    "primary_voltage_metering_billing_adjustment": "kW and kWh reduced1%; excluded from ordinary secondary-metered subset."
+  },
+  "low_load_factor": {
+    "source_rule": "D19 p2 limits Demand and Energy charge provisions jointly with T08. Customer charge is separate.",
+    "official_calculator_trace": ".cache/aes_ohio/sources/supply/formula_review.json",
+    "comparator_from_supply_agent": "Bill Calculator L16=Y only when L15<L14; equality ordinary. L14 includes separately rounded ordinary variable D19/T08 charge tests; excludes customer. L15=rounded combined Max Trigger times total kWh.",
+    "selected_components": "WhenY, D19 own low-load variable rate and T08 own low-load variable rate replace corresponding ordinary variable components; customer separately retained.",
+    "percentage_base_from_supply_agent": "D29/D36/D41 percent applies customer plus SELECTED D19 variable charge (ordinary or LLF); T08 excluded. D31 residential percent similarly base distribution by original terms.",
+    "invoice_rounding_limitation": "Do not claim exact rounded-invoice branch/optimizer parity from an unrounded algebraic comparator; independent benchmark must apply calculator rounding.",
+    "filed_tariff_interim_cent_rounding": "Not specified in D19. Rounding/tie detail is from official calculator corroboration.",
+    "combined_equality_component_limit": "Combined equality need not equalize D19-only variable components; percentage riders may distinguish final bills. Allowing either selector branch at equality is unsafe unless final equivalence is proven; otherwise reject unresolved equality band.",
+    "september2025_precision_discrepancy": {
+      "filed_combined": "0.1196054",
+      "calculator_combined": "0.11960537",
+      "filed_D19": "0.0646420",
+      "calculator_D19": "0.06464197"
+    }
+  },
+  "one_time_refund": {
+    "sheet": "D43",
+    "effective_from": "2026-08-01",
+    "one_time_only": true,
+    "D17_credit_usd": "14.39",
+    "D19_credit_usd": "49.27",
+    "unknown": "Original gives beginning date but no explicit end date or prior-receipt state. Must not repeat automatically."
+  },
+  "verification": {
+    "original_hashes_recomputed": true,
+    "key_pdf_pages_rendered_and_visually_reviewed": 17,
+    "rendered_receipt_directory": ".cache/aes_ohio/sources/delivery/rendered",
+    "production_code_modified": false,
+    "tests_or_matrices_run": false
+  }
+}

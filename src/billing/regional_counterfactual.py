@@ -9,6 +9,8 @@ from copy import deepcopy
 
 
 MODES = {
+    "aes_ohio": ("export_mode", "none"),
+    "firstenergy_ohio_toledo": ("export_mode", "none"),
     "firstenergy_ohio_illuminating": ("export_mode", "none"),
     "duquesne_light_pennsylvania": ("export_mode", "none"),
     "firstenergy_pa_penn_power": ("export_mode", "none"),
@@ -77,11 +79,11 @@ def grid_only_counterfactual(utility, account, state=None):
                 "label":"Absent-DER grid-only counterfactual; ordinary full-service tariff retained without DG enrollment",
                 "changed_account_fields":changed_account,"changed_state_fields":[],
                 "warnings":["Hypothetical ordinary grid-only reference removes PV/storage and DG assertions; no actual account transition or export credits assumed."]}
-    if utility.startswith("firstenergy_") or utility in ("duquesne_light_pennsylvania", "peco", "ppl_electric_pennsylvania", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey", "rockland_electric_new_jersey"):
+    if utility.startswith("firstenergy_") or utility in ("aes_ohio", "duquesne_light_pennsylvania", "peco", "ppl_electric_pennsylvania", "aep_ohio", "bge_maryland", "pepco_maryland", "delmarva_maryland", "potomac_edison_maryland", "atlantic_city_electric_new_jersey", "jcpl_new_jersey", "rockland_electric_new_jersey"):
         applied = bool(result.get("der_ordinary_service_confirmed"))
         set_account("der_ordinary_service_confirmed", False)
         set_account("der_eligibility_source", "")
-        if utility in ("firstenergy_ohio_illuminating", "duquesne_light_pennsylvania", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
+        if utility in ("aes_ohio", "firstenergy_ohio_toledo", "firstenergy_ohio_illuminating", "duquesne_light_pennsylvania", "firstenergy_pa_met_ed", "firstenergy_pa_penelec", "firstenergy_pa_penn_power"):
             set_account("der_activation_date", "")
         if utility == "rockland_electric_new_jersey":
             set_account("der_activation_date", "")

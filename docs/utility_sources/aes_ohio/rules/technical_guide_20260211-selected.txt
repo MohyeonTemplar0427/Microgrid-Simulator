@@ -1,0 +1,266 @@
+Original URL: https://www.aes-ohio.com/sites/aesvault.com/files/2026-02/AES-Ohio-Distribution-Interconnection-Standard-02-11-2026.pdf
+Original PDF SHA-256: bcd10ca74063d9941459e499ea3d9fe57a4555eb43e7f23d8f17483928cf0d36
+Retrieved: 2026-11-02
+
+--- PDF page 4 ---
+  
+  
+  
+    
+  
+1 Introduction  
+  
+The AES Ohio distribution interconnection technical requirements are intended to facilitate distributed energy 
+resource (DER) installations while ensuring the delivery of safe and reliable power to all customers.  This 
+document contains information on the application process, technical requirements, and testing and 
+commissioning requirements for distributed energy resources.  The target audience for this public facing 
+document are customers, DER developers, owners, and installers.  The following information is in alignment with 
+and supplements the Interconnection Tariff on file with the Public Utility Commission of Ohio.    
+  
+Please note that this document is a guide, and the Company reserves the right to change its policies, procedures 
+and standards when deemed necessary to maintain the reliability of the AES Ohio Electric Power System (EPS) 
+and the safety of the Company’s customers, workforce and the general public.  
+  
+In Ohio, the interconnection of DER to the distribution system is governed by Ohio Administrative Code   Chapter 
+4901:1-22. Interconnection Services and Net Metering is governed by Ohio Administrative Code Rule 4901:1-10-
+28 | Net metering.   
+  
+2 Scope  
+  
+This policy applies to distributed energy resources that are designed to operate in parallel with the AES Ohio 
+distribution system and export electric power for more than 100 milliseconds.  The policy does not apply to 
+customer owned emergency or standby generators that do not operate in parallel with or create momentary 
+parallel operation with the AES Ohio distribution system for no more than 100 milliseconds.  This document also 
+does not apply to DERs connected directly to an AES Ohio distribution substation, the AES Ohio transmission 
+system at 69kV, 138kV, or 345kV, or any resource under the jurisdiction and requirements of FERC due to their 
+wholesale market sales of electricity.  The AES Ohio Transmission Interconnection Requirements can be found 
+here   
+  
+3 Definitions  
+  
+Abnormal Operating Condition – A situation in which the Company is operating the Distribution System in other 
+than normal configuration, or under conditions that do not normally exist.   
+Application – See Interconnection Request Application below.   
+Basic Impulse Level (BIL) – A measure of the ability of a piece of equipment to withstand abnormal voltage and 
+surge voltages.  
+Company – AES Ohio  
+Customer – An entity that receives electric service from Company.   
+Distributed Energy Resource (DER) – A source of electric power that is directly connected to Company’s 
+Distribution System. DER sources include energy storage systems, fuel cells, solar photovoltaic (PV), biomass, 
+natural gas, wind, etc. DER conversion technology includes inverters, induction generators, and synchronous 
+generators, including reciprocating or turbine-driven generators.   
+DER Owner – The entity that is the counterparty to the Company in the DER Interconnection Agreement.  Direct 
+Transfer Trip (DTT) – High speed relaying function and communication channel between two or more devices 
+that provides for a remote operation of a circuit breaker or recloser.  
+Distribution System – Company’s wires, equipment, and facilities that operate at a nominal operating alternating 
+current (AC) voltage of 34.5 kV or below.  
+Effectively Grounded – A system in which a low impedance path to ground exists to limit overvoltage during fault 
+conditions.  
+Energy Storage System – A system that captures energy produced at one time, stores that energy for a period of 
+time, and delivers that energy as electricity at a future time.   
+FERC – Federal Energy Regulatory Commission  
+
+--- PDF page 6 ---
+  
+  
+  
+All current and active AES Ohio interconnection incentives can be found here. The Ohio Rule 4901:1 which 
+provides current guidelines for net metering can be found here. There is no guarantee of acceptance or 
+availability of such incentives.   
+  
+4.2 Applying for Interconnection  
+  
+All interconnection application forms can be found here at the AES Ohio Interconnection website. Additionally, all 
+applications can be submitted electronically via PowerClerk, AES Ohio’s application portal. Interconnection in 
+Ohio is broken into different levels depending on the size of the proposed DER system. There is also a 
+preapplication process that can be used to gather information about the existing facilities at a given proposed 
+POI.   
+While the pre-application process is valid for all levels of interconnection, it is not required, and is often bypassed 
+for smaller behind the meter (BTM) facilities that do not have flexibility of choosing their POI. A pre-application is 
+most used for Level 3 applications. The application levels and fees are defined in Ohio Rule 4901:1 and are 
+summarized in Table 1 for reference.  There will be an additional fee of $95 for meter replacement for net 
+metering customers.  
+  
+  
+Application Level  System Requirements  Fees  
+Pre-Application  No system requirements but is typically designed for 
+Level 3 projects.   
+$300  
+Level 1  DER nominal nameplate capacity of 25 kW or less (likely 
+connected behind the meter at a residence or small 
+business)  
+$50  
+Level 2  DER nominal nameplate capacity greater than 25kW and 
+less than 2 MW*   
+$50 + $1 per kW of nominal 
+nameplate capacity  
+Level 3   DER nominal nameplate capacity greater than 2 MW* 
+and less than 20 MW.  
+$100 + $2 per kW of nominal 
+nameplate capacity  
+  
+Table 1. Application Level Criteria and Fees  
+* 3 MW if the DER is primary connected, located on a 600 amp capable line, and withing 2.5 miles of the 
+substation.  
+  
+  
+4.3 Interconnection Process Overview  
+  
+The interconnection process begins when a customer or developer submits an interconnection application. The 
+application must include information about the DER facility including the fuel source, nominal nameplate capacity, 
+equipment being used, site plan, and electrical diagram (one-line). Further clarification on the site plan and 
+oneline diagrams is summarized below. Applications are reviewed based on the processes and procedures 
+defined in Ohio Rule 4901:1 to ensure the delivery of safe and reliable power to all customers and AES Ohio’s 
+workers. If an interconnection study identifies system modifications to the AES Ohio electrical power supply are 
+required for interconnection to proceed, the applicant will be provided with the estimated cost of the system 
+modifications. AES Ohio will then generate an Interconnection Agreement (IA) that includes any necessary 
+system modifications and DER customer charges. When any charges are paid and both parties sign the IA, the 
+project moves forward, and the interconnection queue progresses accordingly. After the DER customer and AES 
+Ohio construct any required facilities, permission to operate (PTO) is granted to the DER customer.   
+  
+Site Plan  
+
+--- PDF page 17 ---
+  
+  
+  
+  
+  
+  
+  
+7.1.3 Behind the Meter (Non-Exporting)  
+  
+A DER that is only intended to supplement customer load, operate in parallel with the area EPS, and not to export 
+power back to the area EPS will require standard anti-islanding protection unless installed on a secondary 
+network.  Interconnection onto a secondary network will additionally require a minimum power relay and 
+dedicated breaker to ensure that the DER cannot back feed onto the secondary network and risk the tripping of 
+network protectors.  
+  
+  
+  
+Figure 5 – Simplified Behind the Meter (Non-Exporting) DER Single Line Diagram on Secondary Network  
+  
+  
+7.2 Protection and Relay Requirements  
+  
+The minimum protection the DER Owner shall incorporate for all DER to detect and clear faults on the EPS is as 
+follows.    
+  
+• Under and over voltage (27/59) and under and over frequency (81U / 81O) – see section 6.8 for the 
+default AES Ohio settings.  The Company will determine if special settings need to be applied on a 
+caseby-case basis.  
+• Directional time and instantaneous phase overcurrent protection (67)  
+• Directional time and instantaneous ground overcurrent protection (67N)  
+  
+
+
+--- PDF page 19 ---
+  
+  
+  
+→ The DER is any one of the following types:  
+• Synchronous or asynchronous machine  
+• Non-certified inverter  
+• Self-excited induction generator  
+  
+  
+  
+  
+  
+A DTT scheme may be required if any of the criteria below are met pending the outcome of the interconnection 
+study.  
+  
+→ The nameplate output of the DER is equal to or greater than 1000 kW.  
+→ The minimum load on the line segment following the operation of any Company owned sectionalizing 
+device is not greater than three times the aggregate DER capacity.  
+  
+If the Company determines DTT is required the company shall install, own, and maintain the fiber optic 
+communications line and the associated equipment enabling a DTT scheme.  The cost associated with the 
+installation of the DTT scheme, including the fiber optic communications line, will be the responsibility of the DER 
+Owner.  
+  
+7.4 Intentional and Unintentional Islanding  
+  
+Intentional Islanding  
+  
+An intentional island, such as a microgrid, is planned to operate independent of the utility source upon an 
+unforeseen utility outage and energize some portion of the area EPS.  AES Ohio will work collaboratively with the 
+DER Owner when intentional islanding is desired.  Permission to operate in grid forming mode must be granted in 
+writing by the company before intentional islanding is permitted.  
+  
+A DER Owner may wish to use a DER as backup or emergency generation following a loss of the utility source to 
+energize the DER Owners equipment and load.  This is supported by the Company with the requirement that the 
+DER ceases to energize Company owned facilities and the area EPS within 2 seconds following a loss of the 
+utility source.  
+  
+Unintentional Islanding  
+  
+An unintentional island is an unplanned island that has energized or re-energized a portion of the area EPS 
+following the loss of the utility source.  Unintentional islands may result in unsafe conditions for the public, 
+customers, and Company employees and can result in equipment damage.  In the absence of a written 
+agreement with the Company to form an intentional island or microgrid the DER must cease to energize the area 
+EPS within 2 seconds following the loss of the utility source.  Inverter based generation must be configured to 
+operate in grid following mode.  Inverter based generation shall not operate in grid forming mode or with 
+antiislanding function disabled without consultation with and written permission by the Company.  
+  
+7.5 Automatic Reclosing of Company Equipment  
+  
+AES Ohio normally uses automatic reclosing to re-energize the downstream EPS following a fault clearing trip.  If 
+the fault is momentary this action will automatically restore the impacted customers.  The automatic reclosing 
+scheme does not normally check for the absence of voltage or synchronization prior to operating.  It is the DER  
+
+--- PDF page 21 ---
+  
+  
+  
+The DER meter will record real and reactive interconnection power flows between the DER and the EPS. The 
+meter will display real power, reactive power will only be recorded. Meter will be a two-way communicating AMI 
+meter that records intervals. The customer can request to monitor their usage with their own equipment using 
+KYZ.  If necessary, a separate metering of station power may be required to meter facility load when the DER is 
+offline.    
+  
+10 Testing and Commissioning  
+  
+The DER Owner is responsible for conducting commissioning and verification testing to confirm that the DER as 
+designed, installed, and operating meets the interconnection and interoperability requirements of this document 
+and IEEE Std 1547-2018.  
+  
+  
+10.1 Witness Testing  
+  
+AES Ohio requires DER inspection of completed installations and witness testing prior to granting permission to 
+operate for any DER with an aggregate nameplate capacity of 1000 kW or greater.  The DER Owner and the  
+Company will jointly determine a date and time of the inspection and witness testing once the DER has 
+successfully completed initial synchronization and the control parameters are in their final configuration.    
+  
+Witness testing at minimum will require confirmation and testing of the following:  
+  
+→ Confirmation of reactive power mode and/or constant power factor as agreed upon by the Company.  
+→ Confirmation of aggregate nameplate capacity.  
+→ Confirmation of interconnection transformer winding configuration (if applicable).  
+→ Confirmation of utility accessible disconnect switch.  
+→ Witness test that the DER disconnects following a loss of a single phase.  
+→ Witness test that the DER disconnects following a three-phase loss of utility source.  
+→ Witness test DER reconnection delay upon the return of the utility source.  
+→ Witness test the DER ramp rate upon reconnection and parallel operation with the utility source.  
+  
+The Company reserves the right to require witness testing of additional commissioning activities if deemed 
+necessary by the Company.  
+  
+10.2 Permission to Operate  
+  
+For DERs that require witness testing a Permission to Operate (PTO) will be issued following a successful witness 
+test within 48 hours.  If the DER fails any portion of the inspection and witness test another witness test will be 
+scheduled within 30 days to allow the DER Owner to resolve any problems.  The DER Owner may seek an 
+extension of this 30 days upon mutual agreement between the Company and the DER Owner.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

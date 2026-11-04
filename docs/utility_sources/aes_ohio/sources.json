@@ -1,0 +1,103 @@
+{
+  "reviewed_on": "2026-11-02",
+  "utility": "aes_ohio",
+  "legal_name": "The Dayton Power and Light Company dba AES Ohio",
+  "jurisdiction": "OH",
+  "tariff": "P.U.C.O.No.17",
+  "plans": [
+    "D17",
+    "D19"
+  ],
+  "supply": "G10 Standard Offer with T08 nonbypassable transmission",
+  "verified_complete_calendar_windows": [
+    [
+      "2025-01-01",
+      "2025-06-30"
+    ],
+    [
+      "2026-06-01",
+      "2026-07-31"
+    ],
+    [
+      "2026-09-01",
+      "2026-11-30"
+    ]
+  ],
+  "component_ledgers": [
+    "delivery/rates.json",
+    "supply/rates.json",
+    "rules/rules.json"
+  ],
+  "source_integrity": {
+    "original_records_hashed_by_ledger": {
+      "delivery/source_ledger.json": 44,
+      "supply/sources.json": 21,
+      "rules/sources.json": 28
+    },
+    "original_pdfs_and_calculators_private": true
+  },
+  "source_grades": {
+    "g10_26th_2025_06_01": "Official date-bounded calculator pricing corroborated by retained cached adopted tariff text; original PDF not recovered. Distinct from adopted-original PDF grade, no inferred rate.",
+    "other_supported_generations": "Adopted original PDFs retained"
+  },
+  "account_limits": [
+    "complete calendar cycles",
+    "ordinary single-phase secondary, G10SSO, no local/special taxes",
+    "D19 actual30-minute peaks and11-month seasonal ratchet without optional demand/NSPL/legacyTCRRoptout/connectedload/contractminimum",
+    "August2026 first D43receipt blocked; Sep2026+requires exact prioronce receipt proof",
+    "LLF$0.02 boundary with differing distribution allocations rejected",
+    "exact approved ordinary PV/pairedESS, activePTO, PV-only charging, zeroexports/bank"
+  ],
+  "calculator_differences": [
+    "non30day statutory tax bands",
+    "intermediate-cent LLF selector",
+    "September2025 precision difference outside executablecoverage",
+    "embedded2024 alternative-energy amount differs but ordinaryfullrate unaffected; no mercantileexemption modeled"
+  ],
+  "files": {
+    "delivery/README.md": "04e881b65a1a1b99e81ac09515cee1520e123612bf19a6856285ecbf6acf4a0c",
+    "delivery/rates.json": "fe282ece9041684810b9bba4460f12508588bf511da4da7620b32840c00ad2a8",
+    "delivery/source_ledger.json": "f56121b30afa2892147d78c22c50d8cbdfb0222baaf8062c3e8aeededd0ca999",
+    "delivery/verification_receipt.json": "6bf9c918aac1f3f7bb0dedb1d301f944725c41607475701f6c5e4619854cedd0",
+    "rules/D05_2023-selected.txt": "1b802299e0f48d4a11fbe4cc12c602b64b8bc54ae43141ff50a76d548d21036d",
+    "rules/D05_2025-selected.txt": "e995cd173dcbf1f1e8f94625c812439af646403c18c8d7eb067c309e9606668a",
+    "rules/D10_2023-selected.txt": "804b898cb12d01da4828bb262b57f2b53546728c7e8bf3020671ea1b8c32593a",
+    "rules/D14_2023-selected.txt": "440ab5e3e4413b8b822bd843245d8497c6914eb55241d7514aed77026e67baa9",
+    "rules/D14_book_2023-selected.txt": "599c6159b10fe7f0aaf285ebb4fe43c8fcd43a7076368fb868b140e2128ede29",
+    "rules/D15_2023-selected.txt": "41ec3b92e9a47220dd3c0cbe1e70a0c2f9fa70fa36c840eaaec4e6e8e54e6cb6",
+    "rules/D15_2025-selected.txt": "7d2231f47e2f8ffed4831a6a8a417310e761a1113311c51fc4ca78b0e224998c",
+    "rules/D17_2026-selected.txt": "7a30aac9283985ac85788d9397a23d25a39998e7b5a2b278aeed79488da94c7b",
+    "rules/D17_book_2023-selected.txt": "8de456b673ca0dab610a4935f94a93361895da02174272c6da68dec9bae18bb4",
+    "rules/D19_2026-selected.txt": "285b02319b1940a8a96d1b19307c3cb35546834bfc25921eb70623c650093b18",
+    "rules/D19_book_2025-selected.txt": "d17bd2852adb8b8be1d1aefef855d0db48d2000836cada28533bdf3356f20642",
+    "rules/D33_2018-selected.txt": "0c9e6896737a2ddb0171cffb228b94d539d2fb69c17216ce6fb35ea47804c9c2",
+    "rules/D33_book_2018-selected.txt": "6dc78ace1f68f731b7af6f4af5cef44a50c29021c51daa835fe4f6973d69e1b0",
+    "rules/D35_2023-selected.txt": "47eae304e908ce58b4f80139290fce14bd8a4822ae918d510b86ba41ce29e135",
+    "rules/G05_2023-selected.txt": "2137a94c7d7f413c1412847a3cc6f1965aa7bc1d1a7469cb0e17b46d7b9d8741",
+    "rules/G11_2017-selected.txt": "d94f02161188ae346ad21ac12284b404c6f2de0c6fcc2af169264c2f9c975e6c",
+    "rules/T05_2001-selected.txt": "48935f6d538bbb70ce3c7f6aa7b52f9892e0456666ce22805f25317f5dfcf81c",
+    "rules/interconnection-selected.txt": "11e7e9d5618fd92d4a525b6e923e369fd743cb1b29a7002df747cf0c74c2a243",
+    "rules/net_metering-selected.txt": "f5b5db522af67ad3a96a32f71e2ef2cfc06517ff818ab9d597c82dc6118b0d44",
+    "rules/ohio_nem_rule-selected.txt": "3192dc29b07559a1d3033b35d2bcef68e91def5413d6b57d08da50b820c1c006",
+    "rules/orc_5727_81-selected.txt": "78794181ae6ca5bab3be67b1b15dd21649ee52c3f3a69cf05f90d23bb3a4d70e",
+    "rules/orc_5727_81_2023-selected.txt": "b60071282b6cc49187e81b0b5ce2f753555f56bce145c43de9648741c266e61d",
+    "rules/orc_5739_02-selected.txt": "262001b42ef8072ed643b85787d85775944a0efe330357b72d0f623ec4eac178",
+    "rules/orc_5739_02_2023-selected.txt": "cbbce5501856973e28b2854824d8ce5dc5186dcb06fe5c082a9811051753086c",
+    "rules/orc_5751_03-selected.txt": "51686e246e8d887f9a2cef1ef6933c9e57dba64d59bee5cba4e869999e545a35",
+    "rules/renewable_process-selected.txt": "6708c5a74bacc0b75bb40f9e36e79d01ee22f2b8a0d22764d0f2a0d02d7e26ed",
+    "rules/research.md": "60efb46540e791ca27b6d015108be2b0b052238dfffa526b0b5ca9b0b21fdd19",
+    "rules/rules.json": "25bfdbb101b7c69c256fd776379445d96291e42464246749213b70c311fd7379",
+    "rules/sources.json": "af9888fa9b4a39b25ade6e5762f5356753dc74d965fd468214dc696e6324617b",
+    "rules/tariff_index-selected.txt": "a9aa3689414a47928005262c1b5cb2bdad3c6e3d11cb626a1d6bddeeff61a584",
+    "rules/tax_benchmarks.json": "3c2a34233832b6a2fb959c5309d0e060e24eb4b144c286383ae0f1a40eed0475",
+    "rules/technical_guide_20260211-selected.txt": "b33660dd265d92e8bda327584d98363ef6b16e2f36b231aea14b54764957f11f",
+    "supply/README.md": "10f34b2e332f87007041de7e9ff9d1c7ce47dcf4c197a66288581f86d7ea33dc",
+    "supply/calculator_evidence.json": "8d86af4c6bbb611611927b74760495f2f24fb338a503fdbd500db2e2be6b5e74",
+    "supply/calculator_rate_vectors.json": "e43afa4909a6edac5ea26d78e238625e35537c6692ed224293d07d1da9b466f6",
+    "supply/rates.json": "f09def731946d8aaf3239c5806e02c3193157879b69d6672c21e5f31aaa6db8c",
+    "supply/sources.json": "8b79cd5bfc6f5b5ab49beae9d374a975aaa8b835c3f288c938de0aba65884606"
+  },
+  "private_originals": ".cache/aes_ohio/sources/",
+  "no_rate_substitution": true,
+  "no_export_settlement": true
+}

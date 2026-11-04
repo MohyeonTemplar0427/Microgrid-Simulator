@@ -1,0 +1,153 @@
+{
+  "research_date": "2026-11-01",
+  "sources": [
+    {
+      "id": "2025-rs-gs-schedules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-TE-Electric-Service-Tariff.pdf",
+      "original_pdf_sha256": "abd8458a06e43f6907ae9dfe9a2f7a41da687b96879439e1c85a860d8f3181b1",
+      "pdf_pages_one_based": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "excerpt_file": "2025-rs-gs-schedules.txt",
+      "excerpt_sha256": "d7c444d4cb5a445adf23a9a779ada1bab12e2f5d611cfe0f4b2a15e423b0e3ea",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2026-rs-gs-schedules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837",
+      "pdf_pages_one_based": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "excerpt_file": "2026-rs-gs-schedules.txt",
+      "excerpt_sha256": "e10e198001cafcefa7c28f49722fb300b87712d6e6f31129751e1c87b081b7af",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2025-billing-supply-rules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-TE-Electric-Service-Tariff.pdf",
+      "original_pdf_sha256": "abd8458a06e43f6907ae9dfe9a2f7a41da687b96879439e1c85a860d8f3181b1",
+      "pdf_pages_one_based": [
+        9,
+        10,
+        11,
+        20,
+        21
+      ],
+      "excerpt_file": "2025-billing-supply-rules.txt",
+      "excerpt_sha256": "93c0f2c1658a9bca401efef22b5cb4a32d04b4885c9aa2657f6a547d946b3832",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2026-billing-supply-rules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837",
+      "pdf_pages_one_based": [
+        8,
+        9,
+        10,
+        11,
+        20,
+        21
+      ],
+      "excerpt_file": "2026-billing-supply-rules.txt",
+      "excerpt_sha256": "529ce2e3fda848efc905f6ec5f31eb54af991b7b528dd682a6b581fb7320d8d1",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "partial-service-nem-rules.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837",
+      "pdf_pages_one_based": [
+        55,
+        109,
+        110
+      ],
+      "excerpt_file": "partial-service-nem-rules.txt",
+      "excerpt_sha256": "2ab6e7e6de80493644cd1fa7e63033cd67b9b557d7c35a411ddf73e5cea960af",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "2026-territory-parallel.txt",
+      "original_url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837",
+      "pdf_pages_one_based": [
+        5,
+        17
+      ],
+      "excerpt_file": "2026-territory-parallel.txt",
+      "excerpt_sha256": "1ced8171bd3feabf99dd202b90ce272d5d03893985f871c604ecb3ad1bbac894",
+      "status": "original_pdf_downloaded_and_text_extracted"
+    },
+    {
+      "id": "ohio_nem_rule",
+      "original_url": "https://codes.ohio.gov/ohio-administrative-code/rule-4901:1-10-28",
+      "original_html_sha256": "f8a2a31e9b3eaf0500b66176fa9f370b8c381b013df3f90a4d8f53160c4ee737",
+      "excerpt_file": "ohio_nem_rule-selected.txt",
+      "excerpt_sha256": "3192dc29b07559a1d3033b35d2bcef68e91def5413d6b57d08da50b820c1c006",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31",
+      "reused_from": "docs/utility_sources/illuminating_oh/rules/ohio_nem_rule-selected.txt",
+      "applicability_reviewed": "2026-11-01",
+      "reuse_scope": "Ohio electric-utility rule or common FirstEnergy Ohio interconnection/PJM source explicitly covering Toledo Edison; original retrieval/provenance preserved, not a new HTML download"
+    },
+    {
+      "id": "firstenergy_interconnection",
+      "original_url": "https://www.firstenergycorp.com/feconnect/ohio-interconnection/OH-retail-interconnection.html",
+      "original_html_sha256": "36cb2d1c7ced4762b1630377ce48417d22f43a1ae0621cae4a14687a0c82a341",
+      "excerpt_file": "firstenergy_interconnection-selected.txt",
+      "excerpt_sha256": "8ae61018102228420e87423a456fe3f033413d44c1c5d2499c9f465c884848b9",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31",
+      "reused_from": "docs/utility_sources/illuminating_oh/rules/firstenergy_interconnection-selected.txt",
+      "applicability_reviewed": "2026-11-01",
+      "reuse_scope": "Ohio electric-utility rule or common FirstEnergy Ohio interconnection/PJM source explicitly covering Toledo Edison; original retrieval/provenance preserved, not a new HTML download"
+    },
+    {
+      "id": "pjm_regions",
+      "original_url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "original_html_sha256": "9a879a9b95d2858c58383af515a2b7901d4a3c23d2bba84f3405e5c7f6287045",
+      "excerpt_file": "pjm_regions-selected.txt",
+      "excerpt_sha256": "275a0027e688eb483a271b263787a2b46e3a89452d6a960702b67bde7dc9fa50",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31",
+      "reused_from": "docs/utility_sources/illuminating_oh/rules/pjm_regions-selected.txt",
+      "applicability_reviewed": "2026-11-01",
+      "reuse_scope": "Ohio electric-utility rule or common FirstEnergy Ohio interconnection/PJM source explicitly covering Toledo Edison; original retrieval/provenance preserved, not a new HTML download"
+    },
+    {
+      "id": "firstenergy_pjm_zone",
+      "original_url": "https://www.firstenergycorp.com/supplierservices/oh/supplier_registration/pjm-short-name.html",
+      "original_html_sha256": "d2ce6956b708519d657f60929f804500c4b845be965f3843cefae054eaf5185f",
+      "excerpt_file": "firstenergy_pjm_zone-selected.txt",
+      "excerpt_sha256": "26123302a8e88f4aaccc6656ca5fc70597cd434efaa8976b0ec53cb37c4d81d0",
+      "status": "original_html_downloaded",
+      "retrieved": "2026-10-31",
+      "reused_from": "docs/utility_sources/illuminating_oh/rules/firstenergy_pjm_zone-selected.txt",
+      "applicability_reviewed": "2026-11-01",
+      "reuse_scope": "Ohio electric-utility rule or common FirstEnergy Ohio interconnection/PJM source explicitly covering Toledo Edison; original retrieval/provenance preserved, not a new HTML download"
+    }
+  ],
+  "visual_review": [
+    {
+      "year": 2025,
+      "pdf_page_one_based": 28,
+      "image": ".cache/toledo_oh/sources/rules/gs_2025.png",
+      "sha256": "02dcdb0481d240533a7710b2d71db5fdabe6c149577f7b942c7980da0f7a3d0d",
+      "review": "Rendered and visually reviewed:15-minute demand;5kW/contractfloor; flatfirst5 amount;units; reactive3phase only; effective date"
+    },
+    {
+      "year": 2026,
+      "pdf_page_one_based": 30,
+      "image": ".cache/toledo_oh/sources/rules/gs_2026.png",
+      "sha256": "3aea0c1f87ce2019a439a3b704852d8c74d1d370dd76a6245bcafddbc17569e8",
+      "review": "Rendered and visually reviewed:15-minute demand;5kW/contractfloor; flatfirst5 amount;units; reactive3phase only; effective date"
+    }
+  ]
+}

@@ -1,0 +1,945 @@
+{
+  "reviewed": "2026-11-01",
+  "utility": "firstenergy_ohio_toledo",
+  "legal_name": "The Toledo Edison Company",
+  "jurisdiction": "Ohio/PUCO",
+  "tariff": "P.U.C.O.No.8",
+  "sources": [
+    {
+      "id": "live-2024-jan2025",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2024-Electric-Service.pdf",
+      "original_pdf_path": ".cache/toledo_oh/sources/shared/live-2024-jan2025.pdf",
+      "original_pdf_sha256": "1a4a0a04474b56c96ef14b0d61f0878d627f241dc0141559a2d314fb96adf69c",
+      "page_count": 146,
+      "status": "original_primary_pdf_downloaded_validated_and_selected_text_retained",
+      "pdf_pages_one_based": [
+        26,
+        27,
+        91,
+        98,
+        99,
+        103,
+        105,
+        113,
+        114,
+        124,
+        128,
+        129,
+        131,
+        132,
+        134,
+        135,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146
+      ],
+      "page_headers": [
+        {
+          "pdf_page_one_based": 26,
+          "sheet": "10",
+          "revision": "Original",
+          "effective": "January 23, 2009"
+        },
+        {
+          "pdf_page_one_based": 27,
+          "sheet": "20",
+          "revision": "Original",
+          "effective": "January 23, 2009"
+        },
+        {
+          "pdf_page_one_based": 91,
+          "sheet": "80",
+          "revision": "19th Revised",
+          "effective": "June 1, 2024"
+        },
+        {
+          "pdf_page_one_based": 98,
+          "sheet": "90",
+          "revision": "24th Revised",
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 99,
+          "sheet": "91",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 103,
+          "sheet": "96",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 105,
+          "sheet": "99",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 113,
+          "sheet": "106",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 114,
+          "sheet": "109",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 124,
+          "sheet": "115",
+          "revision": null,
+          "effective": "June 1, 2024"
+        },
+        {
+          "pdf_page_one_based": 128,
+          "sheet": "116",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 129,
+          "sheet": "116",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 131,
+          "sheet": "119",
+          "revision": "19th Revised",
+          "effective": "October 1, 2024"
+        },
+        {
+          "pdf_page_one_based": 132,
+          "sheet": "122",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 134,
+          "sheet": "124",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 135,
+          "sheet": "125",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 141,
+          "sheet": "135",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 142,
+          "sheet": "136",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 143,
+          "sheet": "137",
+          "revision": "6th Revised",
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 144,
+          "sheet": "138",
+          "revision": "Original",
+          "effective": "June 1, 2024"
+        },
+        {
+          "pdf_page_one_based": 145,
+          "sheet": "139",
+          "revision": "Original",
+          "effective": "June 1, 2024"
+        },
+        {
+          "pdf_page_one_based": 146,
+          "sheet": "140",
+          "revision": "1st Revised",
+          "effective": "August 1, 2024"
+        }
+      ],
+      "excerpt_file": "live-2024-jan2025-selected.txt",
+      "excerpt_sha256": "a43101cabe9906d62e29fb98e2fdb33a13849c72eeb3c55e999cf886cb92090f",
+      "scope": "Applied components and applicability/revision rules; see ratevectors forexactintersections"
+    },
+    {
+      "id": "june-2025",
+      "url": "https://web.archive.org/web/20250612032413id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2025-Electric-Service.pdf",
+      "original_pdf_path": ".cache/toledo_oh/sources/shared/june-2025.pdf",
+      "original_pdf_sha256": "666d852aa4e0ec9dc620c87fa0e805531b9efb91c3eb264436e1b23c48541c23",
+      "page_count": 165,
+      "status": "original_primary_pdf_downloaded_validated_and_selected_text_retained",
+      "pdf_pages_one_based": [
+        27,
+        28,
+        92,
+        93,
+        106,
+        107,
+        111,
+        115,
+        125,
+        128,
+        138,
+        143,
+        145,
+        149,
+        152,
+        154,
+        155,
+        157,
+        159,
+        163,
+        164,
+        165
+      ],
+      "page_headers": [
+        {
+          "pdf_page_one_based": 27,
+          "sheet": "10",
+          "revision": "Original",
+          "effective": "January 23, 2009"
+        },
+        {
+          "pdf_page_one_based": 28,
+          "sheet": "20",
+          "revision": "Original",
+          "effective": "January 23, 2009"
+        },
+        {
+          "pdf_page_one_based": 92,
+          "sheet": "80",
+          "revision": "20th Revised",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 93,
+          "sheet": "80",
+          "revision": "20th Revised",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 106,
+          "sheet": "90",
+          "revision": "24th Revised",
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 107,
+          "sheet": "91",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 111,
+          "sheet": "96",
+          "revision": "63rd Revised",
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 115,
+          "sheet": "99",
+          "revision": null,
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 125,
+          "sheet": "106",
+          "revision": "60th Revised",
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 128,
+          "sheet": "109",
+          "revision": null,
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 138,
+          "sheet": "115",
+          "revision": "34th Revised",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 143,
+          "sheet": "116",
+          "revision": null,
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 145,
+          "sheet": "116",
+          "revision": null,
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 149,
+          "sheet": "119",
+          "revision": "21st Revised",
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 152,
+          "sheet": "122",
+          "revision": "27th Revised",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 154,
+          "sheet": "124",
+          "revision": null,
+          "effective": "June 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 155,
+          "sheet": "125",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 157,
+          "sheet": "128",
+          "revision": null,
+          "effective": "September 1, 2020"
+        },
+        {
+          "pdf_page_one_based": 159,
+          "sheet": "130",
+          "revision": "10th Revised",
+          "effective": "June 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 163,
+          "sheet": "135",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 164,
+          "sheet": "136",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 165,
+          "sheet": "137",
+          "revision": "6th Revised",
+          "effective": "January 1, 2025"
+        }
+      ],
+      "excerpt_file": "june-2025-selected.txt",
+      "excerpt_sha256": "7a81d25f6cc1d623bf4cb1bd1e61ff8a02069cd2edd0a94c1a5b49c6977e5678",
+      "scope": "Applied components and applicability/revision rules; see ratevectors forexactintersections"
+    },
+    {
+      "id": "aug-2025",
+      "url": "https://web.archive.org/web/20250825001741id_/https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2025-Electric-Service.pdf",
+      "original_pdf_path": ".cache/toledo_oh/sources/shared/aug-2025.pdf",
+      "original_pdf_sha256": "ca7966a0916632c94fe0cb05c81e8c434be92c080bb8a6dde392f0ef12983a08",
+      "page_count": 165,
+      "status": "original_primary_pdf_downloaded_validated_and_selected_text_retained",
+      "pdf_pages_one_based": [
+        111,
+        115,
+        125,
+        128,
+        138,
+        143,
+        145,
+        149,
+        152,
+        154,
+        155,
+        163,
+        164,
+        165
+      ],
+      "page_headers": [
+        {
+          "pdf_page_one_based": 111,
+          "sheet": "96",
+          "revision": "64th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 115,
+          "sheet": "99",
+          "revision": "65th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 125,
+          "sheet": "106",
+          "revision": "61st Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 128,
+          "sheet": "109",
+          "revision": "65th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 138,
+          "sheet": "115",
+          "revision": "35th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 143,
+          "sheet": "116",
+          "revision": "5th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 145,
+          "sheet": "116",
+          "revision": "5th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 149,
+          "sheet": "119",
+          "revision": "21st Revised",
+          "effective": "April 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 152,
+          "sheet": "122",
+          "revision": "28th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 154,
+          "sheet": "124",
+          "revision": null,
+          "effective": "June 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 155,
+          "sheet": "125",
+          "revision": "24th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 163,
+          "sheet": "135",
+          "revision": null,
+          "effective": "August 14, 2025"
+        },
+        {
+          "pdf_page_one_based": 164,
+          "sheet": "136",
+          "revision": null,
+          "effective": "August 14, 2025"
+        },
+        {
+          "pdf_page_one_based": 165,
+          "sheet": "137",
+          "revision": "6th Revised",
+          "effective": "January 1, 2025"
+        }
+      ],
+      "excerpt_file": "aug-2025-selected.txt",
+      "excerpt_sha256": "6a1fb4aa81b4cd5f1cdc28bb0b4877ccef6cf563d090040fb5e135d588c66af5",
+      "scope": "Applied components and applicability/revision rules; see ratevectors forexactintersections"
+    },
+    {
+      "id": "2025-TE-Electric-Service-Tariff",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/2025-TE-Electric-Service-Tariff.pdf",
+      "original_pdf_path": ".cache/toledo_oh/sources/shared/2025-TE-Electric-Service-Tariff.pdf",
+      "original_pdf_sha256": "abd8458a06e43f6907ae9dfe9a2f7a41da687b96879439e1c85a860d8f3181b1",
+      "page_count": 165,
+      "status": "original_primary_pdf_downloaded_validated_and_selected_text_retained",
+      "pdf_pages_one_based": [
+        27,
+        28,
+        92,
+        93,
+        106,
+        107,
+        111,
+        115,
+        125,
+        128,
+        138,
+        143,
+        145,
+        149,
+        152,
+        154,
+        155,
+        163,
+        164,
+        165
+      ],
+      "page_headers": [
+        {
+          "pdf_page_one_based": 27,
+          "sheet": "10",
+          "revision": "Original",
+          "effective": "January 23, 2009"
+        },
+        {
+          "pdf_page_one_based": 28,
+          "sheet": "20",
+          "revision": "Original",
+          "effective": "January 23, 2009"
+        },
+        {
+          "pdf_page_one_based": 92,
+          "sheet": "80",
+          "revision": "20th Revised",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 93,
+          "sheet": "80",
+          "revision": "20th Revised",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 106,
+          "sheet": "90",
+          "revision": "24th Revised",
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 107,
+          "sheet": "91",
+          "revision": null,
+          "effective": "January 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 111,
+          "sheet": "96",
+          "revision": "65th Revised",
+          "effective": "October 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 115,
+          "sheet": "99",
+          "revision": null,
+          "effective": "October 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 125,
+          "sheet": "106",
+          "revision": null,
+          "effective": "October 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 128,
+          "sheet": "109",
+          "revision": null,
+          "effective": "October 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 138,
+          "sheet": "115",
+          "revision": "35th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 143,
+          "sheet": "116",
+          "revision": null,
+          "effective": "October 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 145,
+          "sheet": "116",
+          "revision": null,
+          "effective": "October 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 149,
+          "sheet": "119",
+          "revision": "22nd Revised",
+          "effective": "October 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 152,
+          "sheet": "122",
+          "revision": "28th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 154,
+          "sheet": "124",
+          "revision": "54th Revised",
+          "effective": "September 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 155,
+          "sheet": "125",
+          "revision": "24th Revised",
+          "effective": "July 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 163,
+          "sheet": "135",
+          "revision": null,
+          "effective": "August 14, 2025"
+        },
+        {
+          "pdf_page_one_based": 164,
+          "sheet": "136",
+          "revision": null,
+          "effective": "August 14, 2025"
+        },
+        {
+          "pdf_page_one_based": 165,
+          "sheet": "137",
+          "revision": "6th Revised",
+          "effective": "January 1, 2025"
+        }
+      ],
+      "excerpt_file": "2025-TE-Electric-Service-Tariff-selected.txt",
+      "excerpt_sha256": "11243258b624cf0bce5c2ca26b5655ae5d3e7ba90fd34b5ff6b9bec3db33deb6",
+      "scope": "Applied components and applicability/revision rules; see ratevectors forexactintersections"
+    },
+    {
+      "id": "TE-2026-Electric-Service",
+      "url": "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf",
+      "original_pdf_path": ".cache/toledo_oh/sources/shared/TE-2026-Electric-Service.pdf",
+      "original_pdf_sha256": "77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837",
+      "page_count": 168,
+      "status": "original_primary_pdf_downloaded_validated_and_selected_text_retained",
+      "pdf_pages_one_based": [
+        29,
+        30,
+        92,
+        93,
+        95,
+        96,
+        97,
+        106,
+        107,
+        111,
+        112,
+        113,
+        115,
+        124,
+        125,
+        126,
+        127,
+        128,
+        138,
+        142,
+        143,
+        145,
+        146,
+        147,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        159,
+        162,
+        164,
+        165,
+        166
+      ],
+      "page_headers": [
+        {
+          "pdf_page_one_based": 29,
+          "sheet": "10",
+          "revision": "1st Revised",
+          "effective": "March 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 30,
+          "sheet": "20",
+          "revision": "1st Revised",
+          "effective": "March 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 92,
+          "sheet": "80",
+          "revision": "22nd Revised",
+          "effective": "March 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 93,
+          "sheet": "80",
+          "revision": "22nd Revised",
+          "effective": "March 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 95,
+          "sheet": "83",
+          "revision": "2nd Revised",
+          "effective": "January 1, 2010"
+        },
+        {
+          "pdf_page_one_based": 96,
+          "sheet": "83",
+          "revision": "4th Revised",
+          "effective": "January 1, 2010"
+        },
+        {
+          "pdf_page_one_based": 97,
+          "sheet": "83",
+          "revision": "1st Revised",
+          "effective": "September 10, 2010"
+        },
+        {
+          "pdf_page_one_based": 106,
+          "sheet": "90",
+          "revision": "26th Revised",
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 107,
+          "sheet": "91",
+          "revision": "8th Revised",
+          "effective": "March 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 111,
+          "sheet": "96",
+          "revision": "69th Revised",
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 112,
+          "sheet": "97",
+          "revision": "14th Revised",
+          "effective": "January 1, 2016"
+        },
+        {
+          "pdf_page_one_based": 113,
+          "sheet": "97",
+          "revision": "2nd Revised",
+          "effective": "July 1, 2009"
+        },
+        {
+          "pdf_page_one_based": 115,
+          "sheet": "99",
+          "revision": null,
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 124,
+          "sheet": "105",
+          "revision": "1st Revised",
+          "effective": "December 14, 2009"
+        },
+        {
+          "pdf_page_one_based": 125,
+          "sheet": "106",
+          "revision": null,
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 126,
+          "sheet": "107",
+          "revision": "13th Revised",
+          "effective": "January 1, 2015"
+        },
+        {
+          "pdf_page_one_based": 127,
+          "sheet": "108",
+          "revision": "1st Revised",
+          "effective": "January 1, 2012"
+        },
+        {
+          "pdf_page_one_based": 128,
+          "sheet": "109",
+          "revision": null,
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 138,
+          "sheet": "115",
+          "revision": "39th Revised",
+          "effective": "July 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 142,
+          "sheet": "116",
+          "revision": null,
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 143,
+          "sheet": "116",
+          "revision": null,
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 145,
+          "sheet": "116",
+          "revision": null,
+          "effective": "October 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 146,
+          "sheet": "117",
+          "revision": "Original",
+          "effective": "June 1, 2009"
+        },
+        {
+          "pdf_page_one_based": 147,
+          "sheet": "118",
+          "revision": "1st Revised",
+          "effective": "June 21, 2013"
+        },
+        {
+          "pdf_page_one_based": 149,
+          "sheet": "119",
+          "revision": "23rd Revised",
+          "effective": "April 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 150,
+          "sheet": "120",
+          "revision": "4th Revised",
+          "effective": "January 1, 2012"
+        },
+        {
+          "pdf_page_one_based": 151,
+          "sheet": "121",
+          "revision": "4th Revised",
+          "effective": "January 1, 2012"
+        },
+        {
+          "pdf_page_one_based": 152,
+          "sheet": "122",
+          "revision": "1st Revised",
+          "effective": "July 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 153,
+          "sheet": "123",
+          "revision": "10th Revised",
+          "effective": "October 31, 2018"
+        },
+        {
+          "pdf_page_one_based": 154,
+          "sheet": "124",
+          "revision": null,
+          "effective": "September 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 155,
+          "sheet": "124",
+          "revision": "1st Revised",
+          "effective": "May 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 156,
+          "sheet": "125",
+          "revision": null,
+          "effective": "July 1, 2026"
+        },
+        {
+          "pdf_page_one_based": 157,
+          "sheet": "126",
+          "revision": "Original",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 159,
+          "sheet": "129",
+          "revision": "Original",
+          "effective": "February 1, 2025"
+        },
+        {
+          "pdf_page_one_based": 162,
+          "sheet": "133",
+          "revision": "4th Revised",
+          "effective": "September 1, 2021"
+        },
+        {
+          "pdf_page_one_based": 164,
+          "sheet": "135",
+          "revision": null,
+          "effective": "August 14, 2025"
+        },
+        {
+          "pdf_page_one_based": 165,
+          "sheet": "136",
+          "revision": null,
+          "effective": "August 14, 2025"
+        },
+        {
+          "pdf_page_one_based": 166,
+          "sheet": "137",
+          "revision": "7th Revised",
+          "effective": "January 1, 2026"
+        }
+      ],
+      "excerpt_file": "TE-2026-Electric-Service-selected.txt",
+      "excerpt_sha256": "7c993c65a550521a21b430425b20d2688c41c284dc923726f8c180990865c605",
+      "scope": "Applied components and applicability/revision rules; see ratevectors forexactintersections"
+    },
+    {
+      "id": "puc-2025",
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/The%20Toledo%20Edison%20Company%2C%20FIRSTENERGY/PUCO%208%20Schedule%20of%20Ratesfor%20Electric%20Service%20%281%29.pdf",
+      "original_pdf_path": ".cache/toledo_oh/sources/shared/puc-2025.pdf",
+      "original_pdf_sha256": "831392ec4a21f411bc0cd98b40a46e9280269fceb1428843a4c20813a89eeab1",
+      "page_count": 146,
+      "status": "original_primary_pdf_downloaded_validated_and_selected_text_retained",
+      "pdf_pages_one_based": [
+        146
+      ],
+      "page_headers": [
+        {
+          "pdf_page_one_based": 146,
+          "sheet": "140",
+          "revision": "Original",
+          "effective": "June 1, 2024"
+        }
+      ],
+      "excerpt_file": "puc-2025-selected.txt",
+      "excerpt_sha256": "494c5e468a4e73514619e9c6ca2e9d8df4fafc77e5d79e5794eb3c470572fc3c",
+      "scope": "Consulted stale June2024 VMC original only; superseded by August2024 firstrevision fromoldliveJanbook and NOT applied"
+    }
+  ],
+  "visual_reviews": [
+    {
+      "path": ".cache/toledo_oh/sources/delivery/visuals/gs_2026.png",
+      "sha256": "3aea0c1f87ce2019a439a3b704852d8c74d1d370dd76a6245bcafddbc17569e8",
+      "review": "Rendered withPoppler andvisuallyviewed; units/flatGSfirst5/15min andJanDCRbase-onlypercentage verified"
+    },
+    {
+      "path": ".cache/toledo_oh/sources/delivery/visuals/dcr_jan2025.png",
+      "sha256": "f2cde1ca39c3e4b6c66f20606e1330fa01ec817fc235016781d0043c25a67962",
+      "review": "Rendered withPoppler andvisuallyviewed; units/flatGSfirst5/15min andJanDCRbase-onlypercentage verified"
+    }
+  ],
+  "duplicate_aliases": {
+    "source_sha256": "abd8458a06e43f6907ae9dfe9a2f7a41da687b96879439e1c85a860d8f3181b1",
+    "files": [
+      "2025-TE-Electric-Service-Tariff.pdf",
+      "live-2025-oct2025.pdf",
+      "feb-2026.pdf"
+    ],
+    "meaning": "AllsameOctober2025compositewithSeptemberDCR54;2026archivedateandfilename do notestablish2026ratecoverage"
+  },
+  "blocked_sources_receipt": ".cache/toledo_oh/sources/shared/blocked_sources.json",
+  "notes": [
+    "Completecalendarintersectionsonly; independentlyintersectsupply/tax.",
+    "Exactselectedrawsourceexcerptsretainfirstandlatestrevisionsforzero/inapplicablecomponents.",
+    "No copyingofCEI/OErates,30minGSmeasurementorautomaticfull2025coverage."
+  ]
+}

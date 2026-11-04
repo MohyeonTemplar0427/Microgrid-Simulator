@@ -14,6 +14,12 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "aes_ohio": {"label":"AES Ohio · Dayton Power and Light", "state":"OH", "zone":"DAY", "module":"aes_ohio", "timezone":"America/New_York",
+                 "grid_operator":"PJM", "emergency_region":"DAY", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+                     "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2025/20250916/20250916-item-04k---day-aes-large-load-request.pdf"]},
+    "firstenergy_ohio_toledo": {"label":"FirstEnergy Ohio · Toledo Edison", "state":"OH", "zone":"ATSI", "module":"toledo_oh", "timezone":"America/New_York",
+                              "grid_operator":"PJM", "emergency_region":"FE-ATSI", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+                                  "https://www.firstenergycorp.com/customer_choice/ohio_.html"]},
     "firstenergy_ohio_illuminating": {"label":"FirstEnergy Ohio · The Illuminating Company", "state":"OH", "zone":"ATSI", "module":"illuminating_oh", "timezone":"America/New_York",
                                     "grid_operator":"PJM", "emergency_region":"FE-ATSI", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
                                         "https://www.firstenergycorp.com/customer_choice/ohio_.html"]},

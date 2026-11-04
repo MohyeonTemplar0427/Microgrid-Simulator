@@ -19,7 +19,9 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"firstenergy_ohio_illuminating":(41.50,-81.30,"Explicit hypothetical unincorporated Geauga County Ohio site; The Illuminating Company service, ordinary SSO, contract demand, absence of municipal charges and active approved renewable service are independent account facts, not inferred from coordinates"),
+SITES={"aes_ohio":(39.82,-84.25,"Explicit hypothetical unincorporated Montgomery County Ohio site; AES service, ordinary SSO, demand history, no off-peak election/local charges and exact approved ordinary PV/storage are independent account facts, not inferred from coordinates"),
+       "firstenergy_ohio_toledo":(41.50,-83.65,"Explicit hypothetical unincorporated Wood County Ohio site; Toledo Edison service, ordinary SSO, actual contract demand, absence of municipal charges and active approved renewable service are independent account facts, not inferred from coordinates"),
+       "firstenergy_ohio_illuminating":(41.50,-81.30,"Explicit hypothetical unincorporated Geauga County Ohio site; The Illuminating Company service, ordinary SSO, contract demand, absence of municipal charges and active approved renewable service are independent account facts, not inferred from coordinates"),
        "duquesne_light_pennsylvania":(40.65,-80.31,"Explicit hypothetical Center Township/Beaver County Pennsylvania site; Duquesne service, RS/GS Company assignment, default supply, state-only tax and approved ordinary renewable service require independent confirmation, not inferred from coordinates"),
        "firstenergy_pa_penn_power":(41.00,-80.35,"Explicit hypothetical New Castle/Lawrence County Pennsylvania site; Penn Power district/default PTC, state-only tax, GS-S/GSDS history and active ordinary renewable approval are independent account facts, not inferred from coordinates"),
        "firstenergy_pa_penelec":(40.52,-78.40,"Explicit hypothetical Altoona/Blair County Pennsylvania site; Penelec district/default PTC, state-only tax, retained GS-S assignment and active ordinary renewable approval are independent facts, not inferred from coordinates"),
@@ -122,6 +124,8 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["pv_capacity_kw"]=5.
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
+        request["operating_contract"]["renewable_only_charging"]=True
+    if utility=="aes_ohio":
         request["operating_contract"]["renewable_only_charging"]=True
     if utility=="duquesne_light_pennsylvania":
         request["operating_contract"]["renewable_only_charging"]=True
@@ -338,15 +342,26 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("firstenergy_ohio_illuminating", "duquesne_light_pennsylvania", "firstenergy_pa_penn_power", "firstenergy_pa_penelec", "firstenergy_pa_met_ed", "rockland_electric_new_jersey", "jcpl_new_jersey", "atlantic_city_electric_new_jersey", "potomac_edison_maryland", "delmarva_maryland", "pepco_maryland", "bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
+    if utility=="aes_ohio":
+        equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
+        if (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
+            raise ValueError("AES Ohio initial study scope requires non-export operation and PV-only battery charging.")
+    if utility in ("firstenergy_ohio_toledo", "firstenergy_ohio_illuminating", "duquesne_light_pennsylvania", "firstenergy_pa_penn_power", "firstenergy_pa_penelec", "firstenergy_pa_met_ed", "rockland_electric_new_jersey", "jcpl_new_jersey", "atlantic_city_electric_new_jersey", "potomac_edison_maryland", "delmarva_maryland", "pepco_maryland", "bge_maryland", "ppl_electric_pennsylvania", "aep_ohio", "peco", "dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
     if utility.startswith("firstenergy_") and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("FirstEnergy first renewable scope requires non-export operation and PV-only battery charging.")
     if utility=="duquesne_light_pennsylvania" and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("Duquesne first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
+    if utility=="aes_ohio":
+        _,first_block,first_cycle=cycles[0]
+        module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],state=None,equipment=equipment)
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
+        if utility=="aes_ohio" and float(np.max(load[block]))>(25. if a["tariff"]=="D17" else 100.)+1e-7:
+            raise ValueError("AES Ohio native load exceeds the declared D17 25kW/D19 100kW study envelope; PV-reduced imports cannot establish eligibility.")
+        if utility=="firstenergy_ohio_toledo" and float(np.max(load[block]))>(25. if a["tariff"]=="RS" else 100.)+1e-7:
+            raise ValueError("Toledo Edison native load exceeds the declared RS25kW/GS100kW study envelope; PV-reduced imports cannot establish eligibility.")
         if utility=="firstenergy_ohio_illuminating" and float(np.max(load[block]))>(25. if a["tariff"]=="RS" else 100.)+1e-7:
             raise ValueError("The Illuminating Company native load exceeds the declared RS25kW/GS100kW study envelope; PV-reduced imports cannot establish eligibility.")
         if utility=="duquesne_light_pennsylvania" and a["tariff"]=="GS" and (float(np.sum(load[block])*.25)>1000.+1e-7 or float(np.max(load[block]))>5.+1e-7):

@@ -1,0 +1,1353 @@
+{
+  "inspection_date": "2026-11-02",
+  "workbooks": [
+    {
+      "source_file": "Com-Website-Calculator-10-1-2026.xlsx",
+      "sha256": "489b6a2b24c0f9da2c4fc2223bf624e0451b0f979a0a05a5b32c4d5164897542",
+      "macros_present": false,
+      "inspection": "OpenXML/openpyxl read only; workbook never saved or macros executed; cached outputs are not a new recalculation",
+      "sheets": [
+        {
+          "name": "Commercial",
+          "state": "visible"
+        },
+        {
+          "name": "Date List",
+          "state": "hidden"
+        },
+        {
+          "name": "Help",
+          "state": "visible"
+        },
+        {
+          "name": "Input",
+          "state": "hidden"
+        },
+        {
+          "name": "Lists",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Calculator",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Components",
+          "state": "hidden"
+        },
+        {
+          "name": "Rates",
+          "state": "hidden"
+        },
+        {
+          "name": "Normal",
+          "state": "hidden"
+        },
+        {
+          "name": "Rate Detail",
+          "state": "hidden"
+        },
+        {
+          "name": "Instructions",
+          "state": "hidden"
+        },
+        {
+          "name": "Typical Bills",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Testing",
+          "state": "hidden"
+        }
+      ],
+      "input_title": "Rates Effective January 1, 2010 through October 1, 2024",
+      "inputs": {
+        "D7": {
+          "label": "Rate",
+          "value": "Secondary Single Phase",
+          "formula": "Secondary Single Phase"
+        },
+        "D8": {
+          "label": "From",
+          "value": "2026-10-01T00:00:00",
+          "formula": "2026-10-01T00:00:00"
+        },
+        "D9": {
+          "label": "To",
+          "value": "2026-10-31T00:00:00",
+          "formula": "2026-10-31T00:00:00"
+        },
+        "D10": {
+          "label": "kWh Usage",
+          "value": 1000,
+          "formula": 1000
+        },
+        "D11": {
+          "label": "kW Demand",
+          "value": 5,
+          "formula": 5
+        },
+        "D12": {
+          "label": "kVar",
+          "value": null,
+          "formula": null
+        },
+        "D13": {
+          "label": "NSPL (optional)",
+          "value": null,
+          "formula": null
+        },
+        "D14": {
+          "label": "Supplier",
+          "value": "AES Ohio",
+          "formula": "AES Ohio"
+        }
+      },
+      "cached_components": [
+        {
+          "label_cell": "A21",
+          "label": "Customer Charge (per bill)",
+          "amount_cell": "E21",
+          "cached_amount": 19,
+          "formula": "=Bill!C27"
+        },
+        {
+          "label_cell": "A23",
+          "label": "          Distribution Charge",
+          "amount_cell": "E23",
+          "cached_amount": 39.02,
+          "formula": "=Bill!C30"
+        },
+        {
+          "label_cell": "A24",
+          "label": "          PIPP Rider (previously named the USF Rider)",
+          "amount_cell": "E24",
+          "cached_amount": 4.27,
+          "formula": "=Bill!C31"
+        },
+        {
+          "label_cell": "A25",
+          "label": "          Legacy Generation Rider",
+          "amount_cell": "E25",
+          "cached_amount": 0,
+          "formula": "=Bill!C44"
+        },
+        {
+          "label_cell": "A26",
+          "label": "          Storm Rider",
+          "amount_cell": "E26",
+          "cached_amount": 3.21,
+          "formula": "=Bill!C36"
+        },
+        {
+          "label_cell": "A27",
+          "label": "          Excise Tax",
+          "amount_cell": "E27",
+          "cached_amount": 4.65,
+          "formula": "=Bill!C32"
+        },
+        {
+          "label_cell": "A28",
+          "label": "          Energy Efficiency Rider ",
+          "amount_cell": "E28",
+          "cached_amount": 0,
+          "formula": "=Bill!C33"
+        },
+        {
+          "label_cell": "A29",
+          "label": "          Economic Development Rider ",
+          "amount_cell": "E29",
+          "cached_amount": 0,
+          "formula": "=Bill!C34"
+        },
+        {
+          "label_cell": "A30",
+          "label": "          Economic Development Incentive",
+          "amount_cell": "E30",
+          "cached_amount": 0,
+          "formula": "=Bill!C35"
+        },
+        {
+          "label_cell": "A31",
+          "label": "          Infrastructure Investment Rider",
+          "amount_cell": "E31",
+          "cached_amount": 4,
+          "formula": "=Bill!C40"
+        },
+        {
+          "label_cell": "A32",
+          "label": "          Rate Stabilization Charge",
+          "amount_cell": "E32",
+          "cached_amount": 0,
+          "formula": "=Bill!C42"
+        },
+        {
+          "label_cell": "A33",
+          "label": "          Transmission Cost Recovery Rider - N",
+          "amount_cell": "E33",
+          "cached_amount": 22.540000000000003,
+          "formula": "=Bill!C41"
+        },
+        {
+          "label_cell": "A34",
+          "label": "          Tax Savings Credit Rider",
+          "amount_cell": "E34",
+          "cached_amount": 1.49,
+          "formula": "=Bill!C43"
+        },
+        {
+          "label_cell": "A35",
+          "label": "          Solar Generation Fund Rider ",
+          "amount_cell": "E35",
+          "cached_amount": 0,
+          "formula": "=Bill!C45"
+        },
+        {
+          "label_cell": "A36",
+          "label": "Proactive Reliability Optimization Rider",
+          "amount_cell": "E36",
+          "cached_amount": 2.84,
+          "formula": "=Bill!C47"
+        },
+        {
+          "label_cell": "A37",
+          "label": "Distribution Investment Rider",
+          "amount_cell": "E37",
+          "cached_amount": 4.33,
+          "formula": "=Bill!C39"
+        },
+        {
+          "label_cell": "A38",
+          "label": "Regulatory Compliance Rdr",
+          "amount_cell": "E38",
+          "cached_amount": 3.66,
+          "formula": "=Bill!C37"
+        },
+        {
+          "label_cell": "A39",
+          "label": "Other Delivery Charges:",
+          "amount_cell": "E39",
+          "cached_amount": 90.01,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E23:E38))"
+        },
+        {
+          "label_cell": "A41",
+          "label": "AES Ohio Delivery Total:",
+          "amount_cell": "E41",
+          "cached_amount": 109.01,
+          "formula": "=IF(E9=\"ERROR\",\"\",E21+E39)"
+        },
+        {
+          "label_cell": "A45",
+          "label": "Standard Offer Rate ",
+          "amount_cell": "E45",
+          "cached_amount": 108.56,
+          "formula": "=Bill!C50"
+        },
+        {
+          "label_cell": "A47",
+          "label": "Supply Total:",
+          "amount_cell": "E47",
+          "cached_amount": 108.56,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E45:E45))"
+        },
+        {
+          "label_cell": "A49",
+          "label": "Total",
+          "amount_cell": "E49",
+          "cached_amount": 217.57,
+          "formula": "=IF(E9=\"ERROR\",\"\",E41+E47)"
+        },
+        {
+          "label_cell": "A53",
+          "label": "AES Ohio Delivery Charges: ",
+          "amount_cell": "E53",
+          "cached_amount": 108.56,
+          "formula": "=E47"
+        },
+        {
+          "label_cell": "A54",
+          "label": "Customer Charge",
+          "amount_cell": "E54",
+          "cached_amount": 0.10856,
+          "formula": "=ROUND(E53/D10,5)"
+        }
+      ]
+    },
+    {
+      "source_file": "Com-Website-Calculator-6-1-2025.xlsx",
+      "sha256": "665ff9dde930658ed2c20fb6189bd6421a55eacfa330d70b62b32545fba275c8",
+      "macros_present": false,
+      "inspection": "OpenXML/openpyxl read only; workbook never saved or macros executed; cached outputs are not a new recalculation",
+      "sheets": [
+        {
+          "name": "Commercial",
+          "state": "visible"
+        },
+        {
+          "name": "Date List",
+          "state": "hidden"
+        },
+        {
+          "name": "Help",
+          "state": "visible"
+        },
+        {
+          "name": "Input",
+          "state": "hidden"
+        },
+        {
+          "name": "Lists",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Calculator",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Components",
+          "state": "hidden"
+        },
+        {
+          "name": "Rates",
+          "state": "hidden"
+        },
+        {
+          "name": "Normal",
+          "state": "hidden"
+        },
+        {
+          "name": "Rate Detail",
+          "state": "hidden"
+        },
+        {
+          "name": "Instructions",
+          "state": "hidden"
+        },
+        {
+          "name": "Typical Bills",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Testing",
+          "state": "hidden"
+        }
+      ],
+      "input_title": "Rates Effective January 1, 2010 through October 1, 2024",
+      "inputs": {
+        "D7": {
+          "label": "Rate",
+          "value": "Secondary Single Phase",
+          "formula": "Secondary Single Phase"
+        },
+        "D8": {
+          "label": "From",
+          "value": "2025-06-01T00:00:00",
+          "formula": "2025-06-01T00:00:00"
+        },
+        "D9": {
+          "label": "To",
+          "value": "2025-06-30T00:00:00",
+          "formula": "2025-06-30T00:00:00"
+        },
+        "D10": {
+          "label": "kWh Usage",
+          "value": 1000,
+          "formula": 1000
+        },
+        "D11": {
+          "label": "kW Demand",
+          "value": 5,
+          "formula": 5
+        },
+        "D12": {
+          "label": "kVar",
+          "value": null,
+          "formula": null
+        },
+        "D13": {
+          "label": "NSPL (optional)",
+          "value": null,
+          "formula": null
+        },
+        "D14": {
+          "label": "Supplier",
+          "value": "AES Ohio",
+          "formula": "AES Ohio"
+        }
+      },
+      "cached_components": [
+        {
+          "label_cell": "A21",
+          "label": "Customer Charge (per bill)",
+          "amount_cell": "E21",
+          "cached_amount": 16.68,
+          "formula": "=Bill!C27"
+        },
+        {
+          "label_cell": "A23",
+          "label": "          Distribution Charge",
+          "amount_cell": "E23",
+          "cached_amount": 23.86,
+          "formula": "=Bill!C30"
+        },
+        {
+          "label_cell": "A24",
+          "label": "          Universal Service Charge",
+          "amount_cell": "E24",
+          "cached_amount": 2.01,
+          "formula": "=Bill!C31"
+        },
+        {
+          "label_cell": "A25",
+          "label": "          Legacy Generation Rider",
+          "amount_cell": "E25",
+          "cached_amount": 1.71,
+          "formula": "=Bill!C44"
+        },
+        {
+          "label_cell": "A26",
+          "label": "          Storm Rider",
+          "amount_cell": "E26",
+          "cached_amount": 8.38,
+          "formula": "=Bill!C36"
+        },
+        {
+          "label_cell": "A27",
+          "label": "          Excise Tax",
+          "amount_cell": "E27",
+          "cached_amount": 4.65,
+          "formula": "=Bill!C32"
+        },
+        {
+          "label_cell": "A28",
+          "label": "          Energy Efficiency Rider ",
+          "amount_cell": "E28",
+          "cached_amount": 0,
+          "formula": "=Bill!C33"
+        },
+        {
+          "label_cell": "A29",
+          "label": "          Economic Development Rider ",
+          "amount_cell": "E29",
+          "cached_amount": 0,
+          "formula": "=Bill!C34"
+        },
+        {
+          "label_cell": "A30",
+          "label": "          Economic Development Incentive",
+          "amount_cell": "E30",
+          "cached_amount": 0,
+          "formula": "=Bill!C35"
+        },
+        {
+          "label_cell": "A31",
+          "label": "          Infrastructure Investment Rider",
+          "amount_cell": "E31",
+          "cached_amount": 3.73,
+          "formula": "=Bill!C40"
+        },
+        {
+          "label_cell": "A32",
+          "label": "          Rate Stabilization Charge",
+          "amount_cell": "E32",
+          "cached_amount": 0,
+          "formula": "=Bill!C42"
+        },
+        {
+          "label_cell": "A33",
+          "label": "          Transmission Cost Recovery Rider - N",
+          "amount_cell": "E33",
+          "cached_amount": 20.59,
+          "formula": "=Bill!C41"
+        },
+        {
+          "label_cell": "A34",
+          "label": "          Tax Savings Credit Rider",
+          "amount_cell": "E34",
+          "cached_amount": -0.2,
+          "formula": "=Bill!C43"
+        },
+        {
+          "label_cell": "A35",
+          "label": "          Solar Generation Fund Rider ",
+          "amount_cell": "E35",
+          "cached_amount": 0.29,
+          "formula": "=Bill!C45"
+        },
+        {
+          "label_cell": "A36",
+          "label": "Proactive Reliability Optimization Rider",
+          "amount_cell": "E36",
+          "cached_amount": 6.97,
+          "formula": "=Bill!C47"
+        },
+        {
+          "label_cell": "A37",
+          "label": "Distribution Investment Rider",
+          "amount_cell": "E37",
+          "cached_amount": 6.9,
+          "formula": "=Bill!C39"
+        },
+        {
+          "label_cell": "A38",
+          "label": "Regulatory Compliance Rdr",
+          "amount_cell": "E38",
+          "cached_amount": 3.66,
+          "formula": "=Bill!C37"
+        },
+        {
+          "label_cell": "A39",
+          "label": "Other Delivery Charges:",
+          "amount_cell": "E39",
+          "cached_amount": 82.55,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E23:E38))"
+        },
+        {
+          "label_cell": "A41",
+          "label": "AES Ohio Delivery Total:",
+          "amount_cell": "E41",
+          "cached_amount": 99.22999999999999,
+          "formula": "=IF(E9=\"ERROR\",\"\",E21+E39)"
+        },
+        {
+          "label_cell": "A45",
+          "label": "Standard Offer Rate ",
+          "amount_cell": "E45",
+          "cached_amount": 94.5,
+          "formula": "=Bill!C50"
+        },
+        {
+          "label_cell": "A47",
+          "label": "Supply Total:",
+          "amount_cell": "E47",
+          "cached_amount": 94.5,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E45:E45))"
+        },
+        {
+          "label_cell": "A49",
+          "label": "Total",
+          "amount_cell": "E49",
+          "cached_amount": 193.73,
+          "formula": "=IF(E9=\"ERROR\",\"\",E41+E47)"
+        },
+        {
+          "label_cell": "A53",
+          "label": "AES Ohio Delivery Charges: ",
+          "amount_cell": "E53",
+          "cached_amount": 94.5,
+          "formula": "=E47"
+        },
+        {
+          "label_cell": "A54",
+          "label": "Customer Charge",
+          "amount_cell": "E54",
+          "cached_amount": 0.0945,
+          "formula": "=ROUND(E53/D10,5)"
+        }
+      ]
+    },
+    {
+      "source_file": "Res-Website-Calculator-10-1-2026.xlsx",
+      "sha256": "e926b789d55c867851abb564288eda04f66b2bddc3f2c9b660026d06481280d2",
+      "macros_present": false,
+      "inspection": "OpenXML/openpyxl read only; workbook never saved or macros executed; cached outputs are not a new recalculation",
+      "sheets": [
+        {
+          "name": "Residential",
+          "state": "visible"
+        },
+        {
+          "name": "Date Range",
+          "state": "hidden"
+        },
+        {
+          "name": "Help",
+          "state": "visible"
+        },
+        {
+          "name": "Lists",
+          "state": "hidden"
+        },
+        {
+          "name": "Input",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Calculator",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Components",
+          "state": "hidden"
+        },
+        {
+          "name": "Rates",
+          "state": "hidden"
+        },
+        {
+          "name": "Normal",
+          "state": "hidden"
+        },
+        {
+          "name": "Rate Detail",
+          "state": "hidden"
+        },
+        {
+          "name": "Instructions",
+          "state": "hidden"
+        },
+        {
+          "name": "Typical Bills",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Testing",
+          "state": "hidden"
+        }
+      ],
+      "input_title": "Rates Effective January 1, 2010 through June 1, 2025",
+      "inputs": {
+        "D7": {
+          "label": "Rate",
+          "value": "Residential Non-Heating",
+          "formula": "Residential Non-Heating"
+        },
+        "D8": {
+          "label": "From",
+          "value": "2026-10-01T00:00:00",
+          "formula": "2026-10-01T00:00:00"
+        },
+        "D9": {
+          "label": "To",
+          "value": "2026-10-31T00:00:00",
+          "formula": "2026-10-31T00:00:00"
+        },
+        "D10": {
+          "label": "Usage",
+          "value": 1000,
+          "formula": 1000
+        },
+        "D11": {
+          "label": "Supplier",
+          "value": "AES Ohio",
+          "formula": "AES Ohio"
+        },
+        "D12": {
+          "label": "PIPP",
+          "value": "No",
+          "formula": "No"
+        }
+      },
+      "cached_components": [
+        {
+          "label_cell": "A19",
+          "label": "Customer Charge (per bill)",
+          "amount_cell": "E19",
+          "cached_amount": 9.75,
+          "formula": "=Bill!C27"
+        },
+        {
+          "label_cell": "A21",
+          "label": "          Distribution Charge ",
+          "amount_cell": "E21",
+          "cached_amount": 49.32,
+          "formula": "=Bill!C30"
+        },
+        {
+          "label_cell": "A22",
+          "label": "          PIPP Rider (previously named the USF Rider)",
+          "amount_cell": "E22",
+          "cached_amount": 4.27,
+          "formula": "=Bill!C31"
+        },
+        {
+          "label_cell": "A23",
+          "label": "          Legacy Generation Rider",
+          "amount_cell": "E23",
+          "cached_amount": 0,
+          "formula": "=Bill!C44"
+        },
+        {
+          "label_cell": "A24",
+          "label": "          Storm Rider",
+          "amount_cell": "E24",
+          "cached_amount": 0.8,
+          "formula": "=Bill!C36"
+        },
+        {
+          "label_cell": "A25",
+          "label": "          Excise Tax",
+          "amount_cell": "E25",
+          "cached_amount": 4.65,
+          "formula": "=Bill!C32"
+        },
+        {
+          "label_cell": "A26",
+          "label": "          Energy Efficiency Rider ",
+          "amount_cell": "E26",
+          "cached_amount": 0,
+          "formula": "=Bill!C33"
+        },
+        {
+          "label_cell": "A30",
+          "label": "          Economic Development Rider ",
+          "amount_cell": "E30",
+          "cached_amount": 0,
+          "formula": "=Bill!C34"
+        },
+        {
+          "label_cell": "A31",
+          "label": "          Infrastructure Investment Rider",
+          "amount_cell": "E31",
+          "cached_amount": 4.07,
+          "formula": "=Bill!C40"
+        },
+        {
+          "label_cell": "A32",
+          "label": "          Rate Stabilization Charge",
+          "amount_cell": "E32",
+          "cached_amount": 0,
+          "formula": "=Bill!C42"
+        },
+        {
+          "label_cell": "A34",
+          "label": "          Transmission Cost Recovery Rider",
+          "amount_cell": "E34",
+          "cached_amount": 17.92,
+          "formula": "=Bill!C41"
+        },
+        {
+          "label_cell": "A35",
+          "label": "          Tax Savings Credit Rider",
+          "amount_cell": "E35",
+          "cached_amount": 1.52,
+          "formula": "=Bill!C43"
+        },
+        {
+          "label_cell": "A36",
+          "label": "          Solar Generation Fund Rider",
+          "amount_cell": "E36",
+          "cached_amount": 0,
+          "formula": "=Bill!C45"
+        },
+        {
+          "label_cell": "A37",
+          "label": "Proactive Reliability Optimization Rider",
+          "amount_cell": "E37",
+          "cached_amount": 0.65,
+          "formula": "=Bill!C47"
+        },
+        {
+          "label_cell": "A38",
+          "label": "Distribution Investment Rider",
+          "amount_cell": "E38",
+          "cached_amount": 4.41,
+          "formula": "=Bill!C39"
+        },
+        {
+          "label_cell": "A39",
+          "label": "Customer Programs Rider",
+          "amount_cell": "E39",
+          "cached_amount": 2.25,
+          "formula": "=Bill!C46"
+        },
+        {
+          "label_cell": "A40",
+          "label": "Regulatory Compliance Rdr",
+          "amount_cell": "E40",
+          "cached_amount": 1.67,
+          "formula": "=Bill!C37"
+        },
+        {
+          "label_cell": "A41",
+          "label": "Other Delivery Charges:",
+          "amount_cell": "E41",
+          "cached_amount": 91.53,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E21:E40))"
+        },
+        {
+          "label_cell": "A43",
+          "label": "AES Ohio Delivery Total:",
+          "amount_cell": "E43",
+          "cached_amount": 101.28,
+          "formula": "=IF(E9=\"ERROR\",\"\",E19+E41)"
+        },
+        {
+          "label_cell": "A47",
+          "label": "Standard Offer Rate",
+          "amount_cell": "E47",
+          "cached_amount": 108.56,
+          "formula": "=Bill!C50"
+        },
+        {
+          "label_cell": "A49",
+          "label": "Supply Total:",
+          "amount_cell": "E49",
+          "cached_amount": 108.56,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E47:E47))"
+        },
+        {
+          "label_cell": "A51",
+          "label": "Total",
+          "amount_cell": "E51",
+          "cached_amount": 209.84,
+          "formula": "=IF(E9=\"ERROR\",\"\",E43+E49)"
+        },
+        {
+          "label_cell": "A55",
+          "label": "AES Ohio Delivery Charges: ",
+          "amount_cell": "E55",
+          "cached_amount": 108.56,
+          "formula": "=E49"
+        },
+        {
+          "label_cell": "A56",
+          "label": "Customer Charge",
+          "amount_cell": "E56",
+          "cached_amount": 0.10856,
+          "formula": "=ROUND(E55/D10,5)"
+        }
+      ]
+    },
+    {
+      "source_file": "Res-Website-Calculator-11-1-2026.xlsx",
+      "sha256": "f6b3309348142a9c9d1b9ebb2d748ab41d264abfa570345441fb1e155e41f7ce",
+      "macros_present": false,
+      "inspection": "OpenXML/openpyxl read only; workbook never saved or macros executed; cached outputs are not a new recalculation",
+      "sheets": [
+        {
+          "name": "Residential",
+          "state": "visible"
+        },
+        {
+          "name": "Date Range",
+          "state": "hidden"
+        },
+        {
+          "name": "Help",
+          "state": "visible"
+        },
+        {
+          "name": "Lists",
+          "state": "hidden"
+        },
+        {
+          "name": "Input",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Calculator",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Components",
+          "state": "hidden"
+        },
+        {
+          "name": "Rates",
+          "state": "hidden"
+        },
+        {
+          "name": "Normal",
+          "state": "hidden"
+        },
+        {
+          "name": "Rate Detail",
+          "state": "hidden"
+        },
+        {
+          "name": "Instructions",
+          "state": "hidden"
+        },
+        {
+          "name": "Typical Bills",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Testing",
+          "state": "hidden"
+        }
+      ],
+      "input_title": "Rates Effective January 1, 2010 through June 1, 2025",
+      "inputs": {
+        "D7": {
+          "label": "Rate",
+          "value": "Residential Non-Heating",
+          "formula": "Residential Non-Heating"
+        },
+        "D8": {
+          "label": "From",
+          "value": "2026-11-01T00:00:00",
+          "formula": "2026-11-01T00:00:00"
+        },
+        "D9": {
+          "label": "To",
+          "value": "2026-11-30T00:00:00",
+          "formula": "2026-11-30T00:00:00"
+        },
+        "D10": {
+          "label": "Usage",
+          "value": 1000,
+          "formula": 1000
+        },
+        "D11": {
+          "label": "Supplier",
+          "value": "AES Ohio",
+          "formula": "AES Ohio"
+        },
+        "D12": {
+          "label": "PIPP",
+          "value": "No",
+          "formula": "No"
+        }
+      },
+      "cached_components": [
+        {
+          "label_cell": "A19",
+          "label": "Customer Charge (per bill)",
+          "amount_cell": "E19",
+          "cached_amount": 9.75,
+          "formula": "=Bill!C27"
+        },
+        {
+          "label_cell": "A21",
+          "label": "          Distribution Charge ",
+          "amount_cell": "E21",
+          "cached_amount": 49.32,
+          "formula": "=Bill!C30"
+        },
+        {
+          "label_cell": "A22",
+          "label": "          PIPP Rider (previously named the USF Rider)",
+          "amount_cell": "E22",
+          "cached_amount": 4.27,
+          "formula": "=Bill!C31"
+        },
+        {
+          "label_cell": "A23",
+          "label": "          Legacy Generation Rider",
+          "amount_cell": "E23",
+          "cached_amount": 0,
+          "formula": "=Bill!C44"
+        },
+        {
+          "label_cell": "A24",
+          "label": "          Storm Rider",
+          "amount_cell": "E24",
+          "cached_amount": 0.8,
+          "formula": "=Bill!C36"
+        },
+        {
+          "label_cell": "A25",
+          "label": "          Excise Tax",
+          "amount_cell": "E25",
+          "cached_amount": 4.65,
+          "formula": "=Bill!C32"
+        },
+        {
+          "label_cell": "A26",
+          "label": "          Energy Efficiency Rider ",
+          "amount_cell": "E26",
+          "cached_amount": 0,
+          "formula": "=Bill!C33"
+        },
+        {
+          "label_cell": "A30",
+          "label": "          Economic Development Rider ",
+          "amount_cell": "E30",
+          "cached_amount": 0.07,
+          "formula": "=Bill!C34"
+        },
+        {
+          "label_cell": "A31",
+          "label": "          Infrastructure Investment Rider",
+          "amount_cell": "E31",
+          "cached_amount": 4.07,
+          "formula": "=Bill!C40"
+        },
+        {
+          "label_cell": "A32",
+          "label": "          Rate Stabilization Charge",
+          "amount_cell": "E32",
+          "cached_amount": 0,
+          "formula": "=Bill!C42"
+        },
+        {
+          "label_cell": "A34",
+          "label": "          Transmission Cost Recovery Rider",
+          "amount_cell": "E34",
+          "cached_amount": 17.92,
+          "formula": "=Bill!C41"
+        },
+        {
+          "label_cell": "A35",
+          "label": "          Tax Savings Credit Rider",
+          "amount_cell": "E35",
+          "cached_amount": -0.15,
+          "formula": "=Bill!C43"
+        },
+        {
+          "label_cell": "A36",
+          "label": "          Solar Generation Fund Rider",
+          "amount_cell": "E36",
+          "cached_amount": 0,
+          "formula": "=Bill!C45"
+        },
+        {
+          "label_cell": "A37",
+          "label": "Proactive Reliability Optimization Rider",
+          "amount_cell": "E37",
+          "cached_amount": 0.65,
+          "formula": "=Bill!C47"
+        },
+        {
+          "label_cell": "A38",
+          "label": "Distribution Investment Rider",
+          "amount_cell": "E38",
+          "cached_amount": 4.41,
+          "formula": "=Bill!C39"
+        },
+        {
+          "label_cell": "A39",
+          "label": "Customer Programs Rider",
+          "amount_cell": "E39",
+          "cached_amount": 2.25,
+          "formula": "=Bill!C46"
+        },
+        {
+          "label_cell": "A40",
+          "label": "Regulatory Compliance Rdr",
+          "amount_cell": "E40",
+          "cached_amount": 1.67,
+          "formula": "=Bill!C37"
+        },
+        {
+          "label_cell": "A41",
+          "label": "Other Delivery Charges:",
+          "amount_cell": "E41",
+          "cached_amount": 89.92999999999999,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E21:E40))"
+        },
+        {
+          "label_cell": "A43",
+          "label": "AES Ohio Delivery Total:",
+          "amount_cell": "E43",
+          "cached_amount": 99.67999999999999,
+          "formula": "=IF(E9=\"ERROR\",\"\",E19+E41)"
+        },
+        {
+          "label_cell": "A47",
+          "label": "Standard Offer Rate",
+          "amount_cell": "E47",
+          "cached_amount": 108.56,
+          "formula": "=Bill!C50"
+        },
+        {
+          "label_cell": "A49",
+          "label": "Supply Total:",
+          "amount_cell": "E49",
+          "cached_amount": 108.56,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E47:E47))"
+        },
+        {
+          "label_cell": "A51",
+          "label": "Total",
+          "amount_cell": "E51",
+          "cached_amount": 208.24,
+          "formula": "=IF(E9=\"ERROR\",\"\",E43+E49)"
+        },
+        {
+          "label_cell": "A55",
+          "label": "AES Ohio Delivery Charges: ",
+          "amount_cell": "E55",
+          "cached_amount": 108.56,
+          "formula": "=E49"
+        },
+        {
+          "label_cell": "A56",
+          "label": "Customer Charge",
+          "amount_cell": "E56",
+          "cached_amount": 0.10856,
+          "formula": "=ROUND(E55/D10,5)"
+        }
+      ]
+    },
+    {
+      "source_file": "Res-Website-Calculator-6-1-2025.xlsx",
+      "sha256": "e4bd7fcc320fe271fa9fd8c69f5f813e11795b0ca203fe30647937c8e797bab5",
+      "macros_present": false,
+      "inspection": "OpenXML/openpyxl read only; workbook never saved or macros executed; cached outputs are not a new recalculation",
+      "sheets": [
+        {
+          "name": "Residential",
+          "state": "visible"
+        },
+        {
+          "name": "Date Range",
+          "state": "hidden"
+        },
+        {
+          "name": "Help",
+          "state": "visible"
+        },
+        {
+          "name": "Lists",
+          "state": "hidden"
+        },
+        {
+          "name": "Input",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Calculator",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Components",
+          "state": "hidden"
+        },
+        {
+          "name": "Rates",
+          "state": "hidden"
+        },
+        {
+          "name": "Normal",
+          "state": "hidden"
+        },
+        {
+          "name": "Rate Detail",
+          "state": "hidden"
+        },
+        {
+          "name": "Instructions",
+          "state": "hidden"
+        },
+        {
+          "name": "Typical Bills",
+          "state": "hidden"
+        },
+        {
+          "name": "Bill Testing",
+          "state": "hidden"
+        }
+      ],
+      "input_title": "Rates Effective January 1, 2010 through June 1, 2025",
+      "inputs": {
+        "D7": {
+          "label": "Rate",
+          "value": "Residential Non-Heating",
+          "formula": "Residential Non-Heating"
+        },
+        "D8": {
+          "label": "From",
+          "value": "2025-06-01T00:00:00",
+          "formula": "2025-06-01T00:00:00"
+        },
+        "D9": {
+          "label": "To",
+          "value": "2025-06-30T00:00:00",
+          "formula": "2025-06-30T00:00:00"
+        },
+        "D10": {
+          "label": "Usage",
+          "value": 1000,
+          "formula": 1000
+        },
+        "D11": {
+          "label": "Supplier",
+          "value": "AES Ohio",
+          "formula": "AES Ohio"
+        },
+        "D12": {
+          "label": "PIPP",
+          "value": "No",
+          "formula": "No"
+        }
+      },
+      "cached_components": [
+        {
+          "label_cell": "A19",
+          "label": "Customer Charge (per bill)",
+          "amount_cell": "E19",
+          "cached_amount": 9.75,
+          "formula": "=Bill!C27"
+        },
+        {
+          "label_cell": "A21",
+          "label": "          Distribution Charge ",
+          "amount_cell": "E21",
+          "cached_amount": 28.61,
+          "formula": "=Bill!C30"
+        },
+        {
+          "label_cell": "A22",
+          "label": "          Universal Service Charge ",
+          "amount_cell": "E22",
+          "cached_amount": 2.01,
+          "formula": "=Bill!C31"
+        },
+        {
+          "label_cell": "A23",
+          "label": "          Legacy Generation Rider",
+          "amount_cell": "E23",
+          "cached_amount": 1.5,
+          "formula": "=Bill!C44"
+        },
+        {
+          "label_cell": "A24",
+          "label": "          Storm Rider",
+          "amount_cell": "E24",
+          "cached_amount": 2.27,
+          "formula": "=Bill!C36"
+        },
+        {
+          "label_cell": "A25",
+          "label": "          Excise Tax",
+          "amount_cell": "E25",
+          "cached_amount": 4.65,
+          "formula": "=Bill!C32"
+        },
+        {
+          "label_cell": "A26",
+          "label": "          Energy Efficiency Rider ",
+          "amount_cell": "E26",
+          "cached_amount": 0,
+          "formula": "=Bill!C33"
+        },
+        {
+          "label_cell": "A30",
+          "label": "          Economic Development Rider ",
+          "amount_cell": "E30",
+          "cached_amount": 0,
+          "formula": "=Bill!C34"
+        },
+        {
+          "label_cell": "A31",
+          "label": "          Infrastructure Investment Rider",
+          "amount_cell": "E31",
+          "cached_amount": 3.53,
+          "formula": "=Bill!C40"
+        },
+        {
+          "label_cell": "A32",
+          "label": "          Rate Stabilization Charge",
+          "amount_cell": "E32",
+          "cached_amount": 0,
+          "formula": "=Bill!C42"
+        },
+        {
+          "label_cell": "A34",
+          "label": "          Transmission Cost Recovery Rider - N ",
+          "amount_cell": "E34",
+          "cached_amount": 15.01,
+          "formula": "=Bill!C41"
+        },
+        {
+          "label_cell": "A35",
+          "label": "          Tax Savings Credit Rider",
+          "amount_cell": "E35",
+          "cached_amount": -0.19,
+          "formula": "=Bill!C43"
+        },
+        {
+          "label_cell": "A36",
+          "label": "          Solar Generation Fund Rider",
+          "amount_cell": "E36",
+          "cached_amount": 0.1,
+          "formula": "=Bill!C45"
+        },
+        {
+          "label_cell": "A37",
+          "label": "Proactive Reliability Optimization Rider",
+          "amount_cell": "E37",
+          "cached_amount": 2.07,
+          "formula": "=Bill!C47"
+        },
+        {
+          "label_cell": "A38",
+          "label": "Distribution Investment Rider",
+          "amount_cell": "E38",
+          "cached_amount": 6.53,
+          "formula": "=Bill!C39"
+        },
+        {
+          "label_cell": "A39",
+          "label": "Regulatory Compliance Rdr",
+          "amount_cell": "E39",
+          "cached_amount": 1.08,
+          "formula": "=Bill!C37"
+        },
+        {
+          "label_cell": "A40",
+          "label": "Other Delivery Charges:",
+          "amount_cell": "E40",
+          "cached_amount": 67.17,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E21:E39))"
+        },
+        {
+          "label_cell": "A42",
+          "label": "AES Ohio Delivery Total:",
+          "amount_cell": "E42",
+          "cached_amount": 76.92,
+          "formula": "=IF(E9=\"ERROR\",\"\",E19+E40)"
+        },
+        {
+          "label_cell": "A46",
+          "label": "Standard Offer Rate",
+          "amount_cell": "E46",
+          "cached_amount": 94.5,
+          "formula": "=Bill!C50"
+        },
+        {
+          "label_cell": "A48",
+          "label": "Supply Total:",
+          "amount_cell": "E48",
+          "cached_amount": 94.5,
+          "formula": "=IF(E9=\"ERROR\",\"\",SUM(E46:E46))"
+        },
+        {
+          "label_cell": "A50",
+          "label": "Total",
+          "amount_cell": "E50",
+          "cached_amount": 171.42000000000002,
+          "formula": "=IF(E9=\"ERROR\",\"\",E42+E48)"
+        },
+        {
+          "label_cell": "A54",
+          "label": "AES Ohio Delivery Charges: ",
+          "amount_cell": "E54",
+          "cached_amount": 94.5,
+          "formula": "=E48"
+        },
+        {
+          "label_cell": "A55",
+          "label": "Customer Charge",
+          "amount_cell": "E55",
+          "cached_amount": 0.0945,
+          "formula": "=ROUND(E54/D10,5)"
+        }
+      ]
+    }
+  ]
+}

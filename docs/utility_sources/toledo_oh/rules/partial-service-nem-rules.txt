@@ -1,0 +1,162 @@
+Original URL: https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf
+Original PDF SHA-256: 77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837
+Retrieved/reviewed: 2026-11-01
+PDF pages (one-based): [55, 109, 110]
+
+PDF PAGE 55
+ 
+  
+      
+   
+    
+ 
+ 
+ 
+   
+   
+ 
+ 
+ 
+  
+     
+ 
+ 
+   
+   
+ 
+  
+     
+   
+ 
+    
+ 
+ 
+    
+ 
+ 
+   
+ 
+The Toledo Edison Company Original Sheet No. 52 
+Toledo, Ohio P.U.C.O. No. 8 Page 1 of 8 
+PARTIAL SERVICE RATE "GS-15" 
+APPLICABILITY: 
+Applicable to any Customer with non-synchronous or synchronous, which does not qualify for the Net 
+Metering Rider, electric generation equipment having been established as a Qualifying Facility, or who 
+requires partial service from the Company as back-up, or as a partial electric requirement to another 
+electric source. 
+RATE:
+  Capacity Reservation Charge: 
+   Per kVA of Capacity Reservation 
+Per billing Period
+    Per Voltage Classification 
+Transmission Subtransmission  Distribution 
+138 kV and Above 23 - 34.5 - 69KV 4.16 - 12.47 kV 
+Transmission & 
+Distribution Charge: All kW, per kW All kW, per kW All kW, per kW 
+$1.46 $2.18 $2.96 
+ Generation Charge: All kW, per kW All kW, per kW All kW, per kW 
+$1.56 $1.71 $1.76 
+  Demand Charge: 
+Whenever the Customer utilizes Supplemental, Back-up or Maintenance power, the demand 
+will be charged as indicated below: 
+a. Supplemental Demand 
+The Demand Charge found in the applicable Standard Tariff shall be used to calculate the 
+monthly billing charge for Supplemental power. 
+b. Back-Up Demand 
+The Customer shall have the option of either Method A or Method B, below, as the 
+method under which Back-Up Demand shall be calculated.  Sixty days prior to the initial 
+one-year contract period, and at least 60 days prior to each succeeding annual period, the 
+Customer shall specify the method chosen.  That method shall apply for the full contract 
+period. 
+Filed pursuant to Order dated July 19, 2000, in Case No. 99-1212 –EL-ETP before 
+The Public Utilities Commission of Ohio 
+Issued by H. Peter Burg, President Effective: January 1, 2003 
+
+PDF PAGE 109
+  
+ 
+  
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Toledo Edison Company Original Sheet No. 93 
+Toledo, Ohio P.U.C.O. No. 8 2nd Revised Page 1 of 2 
+Rider No. 14 Net Energy Metering Rider 
+Availability 
+Pursuant to Section 4928.01(A)(30)-(32) of the Revised Code (Net Metering), a customer-generator 
+is a customer of the Company that is a user of a net metering system.  To qualify for a net metering 
+system, the customer-generator facility must use as its fuel either solar, wind, biomass, landfill gas, 
+or hydropower, or use a microturbine or a fuel cell which is located on the customer-generator’s 
+premises and operates in parallel with the Company’s transmission and distribution systems and is 
+intended primarily to offset part or all of the customer’s requirements for electricity.  A net metering 
+system used by a customer-generator shall meet all applicable safety and performance standards 
+established by the National Electrical Code, the Institute of Electrical and Electronic Engineers, 
+Underwriters Laboratories and Rules 4901:1-22-03 and 4901:1-22-04 of the Ohio Administrative 
+Code. 
+Metering 
+In order to receive service under this Rider, Net Metering must be accomplished using a single meter 
+capable of registering the flow of electricity in each direction.  If the existing electrical meter in 
+service at the customer’s facility is not capable of measuring the flow of electricity in each direction, 
+the Company will, upon written request by the customer-generator, acquire, install, maintain, and 
+read an approved meter that is capable of measuring electricity in each direction.  The customer-
+generator will pay the Company all expenses involved in either modifying the existing meter or 
+providing a new meter capable of registering the flow of electricity in each direction.  Maintenance 
+of the meter will be the responsibility of the Company, which will own the meter.  The Company, at 
+its own expense and with written consent of the customer-generator, may install additional meters to 
+monitor the flow of electricity.  Maintenance of the additional meter(s) will be the responsibility of 
+the Company, which will own the meter(s). 
+Billing 
+The provisions of this rider will be applied to the rate schedule to which the customer would be 
+assigned if that customer were not a customer-generator. The customer-generator will be billed or 
+credited charges and applicable riders as measured by the meter.  Measured demand specified in the 
+appropriate tariff shall be based on the peak demand measured as supplied by the Company only, 
+flowing from the Company’s system to the customer-generator’s facility.  If the Company supplies 
+more kilowatt-hours of electricity than the customer-generator facility feeds back to the Company’s 
+system during the billing period, all energy charges of the appropriate rate schedule shall be applied 
+to the net kilowatt-hours of electricity that the Company supplied.  If the customer-generator facility 
+feeds more kilowatt-hours of electricity back to the system than the Company supplies to the 
+customer-generator facility during the billing period, energy charges of the Generation Service Rider 
+(GEN) shall be applied to the net kilowatt-hours of electricity that the customer-generator facility 
+supplied, which shall be allowed to accumulate as a bill credit until netted against the customer 
+generator’s bill, or until the customer-generator requests in writing a refund that amounts to, but is no 
+greater than, an annual true-up of accumulated credits over a twelve-month period. 
+Filed pursuant to Order dated October 7, 2009, in Case No. 09-846-EL-ATA, before  
+The Public Utilities Commission of Ohio 
+Issued by:  Richard R. Grigg, President Effective:  October 27, 2009 
+
+PDF PAGE 110
+  
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+The Toledo Edison Company Original Sheet No.  93 
+Toledo, Ohio P.U.C.O. No. 8 Page 2 of 2 
+Rider No. 14 Net Energy Metering Rider 
+Application 
+Customer-generators seeking to receive service under the provisions of this rider must submit a 
+written application to the Company demonstrating compliance with the Net Energy Metering Rider 
+provisions and quantifying the total rated generating capacity of the customer-generator facility.  
+Interconnection 
+The Company’s Distribution Interconnection Tariff shall apply to service under this rider. 
+Filed pursuant to Order dated January 18, 2001, in Case No. 99-1212-EL-ETP before  
+The Public Utilities Commission of Ohio 
+Issued by H. Peter Burg, President Effective: February 19, 2002  

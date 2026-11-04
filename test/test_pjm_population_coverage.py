@@ -15,6 +15,9 @@ def inputs(tmp_path):
     config = json.loads(DEFAULT_INPUTS.read_text())
     names = [config["eia"]["extract_file"], config["baseline"]["estimate_file"],
              config["baseline"]["inputs_file"]]
+    previous = config.get("previous_implementation_snapshot")
+    if previous:
+        names += [previous["estimate_file"], previous["inputs_file"]]
     for name in names:
         (tmp_path / name).write_bytes((DEFAULT_INPUTS.parent / name).read_bytes())
     target = tmp_path / "inputs.json"
@@ -28,17 +31,22 @@ def save(inputs):
     return path
 
 
-def test_current_proxy_and_cei_increment_have_distinct_denominators():
+def test_current_proxy_and_aes_increment_have_distinct_denominators():
     result = estimate()
-    assert result["implemented_utility_state_district_workflows"] == 21
-    assert result["implemented_workflows_before_current_additions"] == 20
-    assert result["selected_residential_distribution_accounts"] == 20_255_216
+    assert result["implemented_utility_state_district_workflows"] == 23
+    assert result["implemented_workflows_before_current_additions"] == 22
+    assert result["selected_residential_distribution_accounts"] == 21_012_771
     assert result["pjm_residential_distribution_accounts"] == 27_756_201
-    assert result["estimated_people"] == pytest.approx(50_168_030.25)
-    assert result["estimated_people_before_current_additions"] == pytest.approx(48_565_677.99)
-    assert result["added_residential_accounts_this_implementation"] == 676_098
-    assert result["added_estimated_people_this_implementation"] == pytest.approx(1_602_352.26)
-    assert result["population_share"] == pytest.approx(50_168_030.25 / 67_000_000)
+    assert result["estimated_people"] == pytest.approx(51_963_435.6)
+    assert result["estimated_people_before_current_additions"] == pytest.approx(50_828_819.43)
+    assert result["added_residential_accounts_this_implementation"] == 478_741
+    assert result["added_estimated_people_this_implementation"] == pytest.approx(1_134_616.17)
+    assert result["population_share"] == pytest.approx(51_963_435.6 / 67_000_000)
+    aes = [row for row in result["numerator"] if row["utility_id"] == 4922]
+    assert len(aes) == 1
+    assert aes[0]["state"] == "OH"
+    assert aes[0]["residential_accounts"] == 132_522 + 346_219
+    assert aes[0]["repository_keys"] == ["aes_ohio"]
     assert not result["is_geospatial_population_count"]
     assert not result["is_tariff_eligible_population_count"]
     assert result["sensitivity_is_confidence_interval"] is False
@@ -65,6 +73,24 @@ def test_original_seven_workflow_baseline_retains_exact_evidence_identity():
     expected = json.loads((root / config["baseline"]["estimate_file"]).read_text())
     assert estimate(root / config["baseline"]["inputs_file"]) == expected
     assert expected["population_share"] == pytest.approx(0.42232337643132656)
+
+
+def test_latest_toledo_snapshot_retains_exact_evidence_identity():
+    config = json.loads(DEFAULT_INPUTS.read_text())
+    root = DEFAULT_INPUTS.parent
+    previous = config["previous_implementation_snapshot"]
+    expected = json.loads((root / previous["estimate_file"]).read_text())
+    assert estimate(root / previous["inputs_file"]) == expected
+    assert expected["implemented_utility_state_district_workflows"] == 22
+    assert expected["population_share"] == pytest.approx(50_828_819.43 / 67_000_000)
+
+
+def test_fixed_cei_snapshot_retains_exact_evidence_identity():
+    root = DEFAULT_INPUTS.parent
+    expected = json.loads((root / "estimate_2026-10-31.json").read_text())
+    assert estimate(root / "inputs_2026-10-31.json") == expected
+    assert expected["implemented_utility_state_district_workflows"] == 21
+    assert expected["population_share"] == pytest.approx(50_168_030.25 / 67_000_000)
 
 
 def test_duplicate_utility_state_rejected(inputs):
@@ -119,9 +145,11 @@ def test_source_corruption_and_energy_supplier_overcount_rejected(inputs, mode):
         estimate(save(inputs))
 
 
-def test_changed_historical_baseline_is_not_relabelled(inputs):
+@pytest.mark.parametrize("snapshot,expected", [("baseline", "Historical baseline"),
+                                               ("previous_implementation_snapshot", "Previous implementation snapshot")])
+def test_changed_historical_baseline_is_not_relabelled(inputs, snapshot, expected):
     path, config = inputs
-    baseline = path.parent / config["baseline"]["estimate_file"]
+    baseline = path.parent / config[snapshot]["estimate_file"]
     baseline.write_bytes(baseline.read_bytes() + b"\n")
-    with pytest.raises(ValueError, match="Historical baseline evidence changed"):
+    with pytest.raises(ValueError, match=expected + " evidence changed"):
         estimate(save(inputs))

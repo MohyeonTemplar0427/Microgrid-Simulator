@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "source_hashes_checked": 44,
+  "rate_rows_checked": 41,
+  "source_text_numeric_presence_checked": true,
+  "inferred_absent_D19_energy_excluded_from_literal_check": true,
+  "private_originals_gitignored": true,
+  "rendered_key_pdf_pages_reviewed": 17,
+  "scope": "Source facts and documentation only. No production validation, invoice parity or simulation claim."
+}

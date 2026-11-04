@@ -1,0 +1,217 @@
+Original URL: https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/Ohio/tariffs/TE-2026-Electric-Service.pdf
+Original PDF SHA-256: 77919a5db9daf24e0accff6fc1a9df4d908bf76bb7dac8ef4cb5ded0c84a4837
+Retrieved/reviewed: 2026-11-01
+PDF pages (one-based): [29, 30, 31, 32]
+
+PDF PAGE 29
+The Toledo Edison Company Sheet 10 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 1 
+ 
+RESIDENTIAL SERVICE - (RATE “RS”) 
+ 
+ 
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, before The 
+Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective:  March 1, 2026 
+AVAILABILITY: 
+ 
+Available for residential service to installations served through one meter for each family unit in a 
+residence or apartment. 
+ 
+When service is used through the same meter for both residential and commercial purposes the 
+applicable general service rate schedule shall apply. 
+ 
+This rate schedule is not available for service to a commercial, institutional or industrial establishment.   
+The hallways and other common facilities of an apartment building or apartment complex are to be billed 
+on the appropriate general service rate. 
+ 
+This provision shall be applied prospectively as of the effective date of this tariff.  In the event a detached 
+garage or other facility on a residential customer’s property is separately served and metered, such 
+facility shall be metered and billed based on whether or not the structures are used for commercial 
+business. Commercial use will be billed according to the appropriate general service schedule. The 
+Company shall determine the primary purpose of the accompanying structure(s) and can change the rate 
+schedule in the future if the primary purpose of any has changed. 
+ 
+SERVICE: 
+ 
+Service is provided per the Electric Service Regulations at a secondary voltage. 
+ 
+ 
+RATE: 
+ 
+All charges under this rate schedule shall be calculated as described below and charged on a monthly 
+basis. 
+ 
+ 
+ Distribution Charges: 
+ Service Charge: $6.50 
+ 
+ Energy Charge: 
+ All kWh, per kWh 3.6046¢ 
+ 
+ 
+SPECIAL METERS: 
+ 
+Time-Of-Day Metering is available from the Company.  Charges for such service are specified in the 
+Miscellaneous Charges, Tariff Sheet 75. 
+ 
+APPLICABLE RIDERS: 
+ 
+The charges included with the applicable riders as designated on the Summary Rider, Tariff Sheet 80 
+shall be added to the Rates and charges set forth above. 
+ 
+ 
+ELECTRIC SERVICE REGULATIONS: 
+ 
+The Company's Electric Service Regulations shall apply to the installation and use of electric service.  
+
+PDF PAGE 30
+The Toledo Edison Company Sheet 20 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 1 of 3 
+ 
+GENERAL SERVICE - SECONDARY (RATE “GS”) 
+ 
+ 
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, before 
+The Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective: March 1, 2026 
+AVAILABILITY: 
+ 
+Available to general service installations requiring Secondary Service. Secondary Service is defined in 
+the Company’s Electric Service Regulations. Choice of voltage shall be at the option of the Company. 
+ 
+ 
+SERVICE: 
+ 
+All service under this rate schedule will be served through one meter for each installation. 
+ 
+ 
+RATE: 
+ 
+All charges under this rate schedule shall be calculated as described below and charged on a monthly 
+basis. 
+ 
+Distribution Charges: 
+Service Charge: $10.00 
+ 
+Capacity Charge: 
+Up to 5 kW of billing demand $17.5166 
+For each kW over 5 kW of billing demand  $8.2769 
+ 
+Reactive Demand Charge applicable to three phase customers only 
+For each rkVA of reactive billing demand $0.60 
+ 
+ 
+BILLING DEMAND: 
+ 
+The billing demand for the month shall be the greatest of: 
+ 
+1. Measured Demand, being the highest fifteen (15) minute integrated kW 
+2. 5.0 kW 
+3. The Contract Demand 
+ 
+Measured Demand shall be estimated for all customers not having a demand meter and using over 1, 000 
+kWh per month by applying a factor of 200 by the following formula: Measured Demand = kWh / 200. 
+ 
+ 
+REACTIVE BILLING DEMAND: 
+ 
+For installations metered with reactive energy metering, the reactive billing demand in rkVA for the month 
+shall be determined by multiplying the Measured Demand by the ratio of the measured lagging reactive 
+kilovoltampere hours to the measured kilowatthours by the following formula: rkVA = Measured Demand 
+X (measured lagging reactive kilovoltampere hours ÷ measured kilowatthours ).  For all other installations, 
+the reactive billing demand shall be the integrated reactive demand occurring coincident with the 
+Measured Demand.   
+ 
+ 
+APPLICABLE RIDERS: 
+ 
+The charges included with the applicable riders as designated on the Summary Rider, Tariff Sheet 80  
+shall be added to the Rates and charges set forth above. 
+
+PDF PAGE 31
+The Toledo Edison Company Sheet 20 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 2 of 3 
+ 
+GENERAL SERVICE - SECONDARY (RATE “GS”) 
+ 
+ 
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, before 
+The Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective: March 1, 2026 
+ 
+ADJUSTMENT FOR PRIMARY METERING: 
+ 
+Where a transformer installation (regardless of ownership) is utilized solely to furnish service to a single 
+customer, the Company may meter the service on the primary side of the transformers, and in such case 
+all the demand and energy registrations shall each be reduced 1.5%. 
+ 
+ 
+SPECIAL METERS: 
+ 
+Time-Of-Day and Interval Metering is available from the Company. Charges for such service are specified 
+in the Miscellaneous Charges, Tariff Sheet 75. 
+ 
+ 
+UNMETERED SERVICE: 
+ 
+Unmetered service is available to customers with loads of constant wattage such that the monthly use 
+may be calculated accurately and where the Company and the customer agree to unmetered service.   
+The Billing Load shall be the connected load in kilowatts.  The monthly billing kilowatt-hours shall be the 
+product of Hours of Use times connected load.  Hours of Use shall be 730 hours for continuous operation 
+mode and 350 hours for all other operation modes. 
+ 
+The customer shall notify the Company of the initial connected load and operation mode and shall provide 
+advance notice of each subsequent change in such load or operation mode.  The Company may make an 
+inspection of the customer's equipment at any time to verify connected loads and operation mode.  In the 
+event of the customer's failure to notify the Company of an increase in load, the Company reserves the 
+right to refuse to provide unmetered service at the delivery point thereafter and adjust prior billing 
+amounts accordingly to reflect the increases in load. 
+ 
+ 
+DUPLICATE CIRCUIT SERVICE: 
+ 
+When service is furnished to provide redundancy to the Company’s main service as requested by the 
+customer, a contract demand shall be established by mutual agreement and shall be specified in the 
+service contract.  Such installations shall be considered a Premium Installation and shall be a separate 
+account from the customer’s main service. 
+ 
+ 
+ELECTRIC SERVICE REGULATIONS: 
+ 
+The Company's Electric Service Regulations shall apply to the installation and use of electric service. 
+ 
+ 
+CONTRACT: 
+ 
+Electric service hereunder shall be  furnished in accordance with a written contract, at the Company’s 
+discretion, which by its term shall be in full force and effect for a minimum period of one year  and shall 
+continue in force thereafter from year to year unless either party shall give to the other not less than 60 
+days notice in writing prior to the expiration date of any said yearly periods that the contract shall be 
+terminated at the expiration date of said yearly period.  When a contract is terminated in the manner 
+provided herein, the service will be discontinued. 
+ 
+
+PDF PAGE 32
+The Toledo Edison Company Sheet 20 
+Toledo, Ohio P.U.C.O. No. 8 1st Revised Page 3 of 3 
+ 
+GENERAL SERVICE - SECONDARY (RATE “GS”) 
+ 
+ 
+Filed pursuant to Orders dated November 19, 2025, and February 18, 2026, in Case No. 24-0468-EL-AIR, before 
+The Public Utilities Commission of Ohio 
+Issued by:  Torrence L. Hinton, President Effective: March 1, 2026 
+The Contract Demand shall be specified in the contract for electric service of customers establishing  
+service after January 22, 2009 and of customers requiring or requesting a significant change in service.  
+The Contract Demand shall be 60% of the customer’s expected, typical monthly peak load. Customers  
+with a Contract Demand on January 22, 2009 will remain at that existing Contract Demand level, until 
+such time as they reestablish service or request or require a significant change in service.  The Contract 
+Demand shall be reevaluated based on actual usage upon customer request, no more than once per 12 
+month period. 
+ 
+If the Customer’s capacity or service requirements substantially increase, the Company, it its sole and 
+exclusive judgement, may at any time require the Customer to enter into a new contract for electric 
+service. 
+ 
+ 
