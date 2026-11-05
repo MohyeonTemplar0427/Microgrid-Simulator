@@ -58,6 +58,7 @@ WE_ENERGIES_CASES = tuple(("we_energies_wisconsin", "residential" if p.startswit
                          for p in ("Rg1","Rg2","Cg1","Cg6"))
 DUKE_IN_CASES = tuple(("duke_energy_indiana", "residential" if p.startswith("RS") else "commercial", p)
                      for p in ("RS","RS-TOU","CS","CS-TOU"))
+DUKE_OH_CASES = (("duke_energy_ohio", "residential", "RS"), ("duke_energy_ohio", "commercial", "DM"))
 ALLIANT_IA_CASES = tuple(("alliant_energy_iowa", "commercial" if p in ("600","607") else "residential", p)
                         for p in ("400","407","427","600","607"))
 PPL_AEP_CASES = (("ppl_electric_pennsylvania", "residential", "RS"),
@@ -80,6 +81,7 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "duke_energy_ohio": ((2025,"2025-01-01","2025-12-31"),(2026,"2026-01-01","2026-10-31")),
     "aes_ohio": ((2025,"2025-01-01","2025-12-31"),),
     "firstenergy_ohio_toledo": ((2025,"2025-01-01","2025-12-31"),),
     "firstenergy_ohio_illuminating": ((2025,"2025-01-01","2025-12-31"),),
@@ -106,7 +108,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES + TOLEDO_CASES + AES_OHIO_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + DUKE_OH_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES + TOLEDO_CASES + AES_OHIO_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -209,6 +211,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
+    if utility=="duke_energy_ohio" and custom is None and period=="annual":
+        raise ValueError("Duke Energy Ohio full-year coverage is unverified. Select a supported complete cycle.")
     if utility=="aes_ohio" and custom is None and period=="annual":
         raise ValueError("AES Ohio full-year2025 component coverage is unverified; select supported complete calendar cycles without substituting rates.")
     if utility == "firstenergy_ohio_toledo" and custom is None and period == "annual":
@@ -242,6 +246,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start,end="2025-06-01","2025-06-30"
     if utility=="aes_ohio" and custom is None and period=="monthly":
         start,end="2025-06-01","2025-06-30"
+    if utility=="duke_energy_ohio" and custom is None and period=="monthly":
+        start,end="2025-06-01","2025-06-30"
     if utility in ("xcel_energy_minnesota","we_energies_wisconsin") and custom is None and period=="monthly":
         start,end="2025-04-01","2025-04-30"
     if utility=="duke_energy_indiana" and custom is None and period=="monthly":
@@ -266,7 +272,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
-    if utility=="aes_ohio":
+    if utility in ("duke_energy_ohio","aes_ohio"):
         account.update(adapter(utility).hypothetical_defaults(account["tariff"],day=start[:7]+"-01"))
     if utility=="firstenergy_ohio_toledo":
         account.update(billing_month=start[:7]+"-01",bill_date=end)
@@ -357,7 +363,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
             r["name"] += " CIEP"
     r["operating_contract"].update(interconnection_confirmed=True, grid_charging_confirmed=True,
         reference="Explicit hypothetical utility-approved non-export PV/storage account; no export compensation assumed")
-    if utility.startswith("firstenergy_") or utility in ("aes_ohio","duquesne_light_pennsylvania"):
+    if utility.startswith("firstenergy_") or utility in ("duke_energy_ohio","aes_ohio","duquesne_light_pennsylvania"):
         r["operating_contract"].update(grid_charging_confirmed=False,renewable_only_charging=True)
     r["solar"].update(tilt_degrees=30., azimuth_degrees=180., system_losses_fraction=.14,
                        inverter_efficiency=.96)

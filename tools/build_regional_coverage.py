@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 UTILITY_DOCS = {
+    "duke_energy_ohio": ("docs/Duke_Energy_Ohio.md", "docs/utility_sources/duke_ohio/sources.json", "test/test_duke_oh.py"),
     "aes_ohio": ("docs/AES_Ohio.md", "docs/utility_sources/aes_ohio/sources.json", "test/test_aes_ohio.py"),
     "firstenergy_ohio_toledo": ("docs/Toledo_Edison_Ohio.md", "docs/utility_sources/toledo_oh/sources.json", "test/test_toledo_oh.py"),
     "firstenergy_ohio_illuminating": ("docs/Illuminating_Company_Ohio.md", "docs/utility_sources/illuminating_oh/sources.json", "test/test_illuminating_oh.py"),
@@ -287,6 +288,9 @@ def build_rows(catalogs=None, *, evidence=(), root=ROOT):
                     if utility=="aes_ohio":
                         row["coverage_basis"]="Matching complete service/bill calendar months; G10 service dates vs T08/rider bill dates; actual30-minute seasonal prior11-month history; LLF boundary and D43 receipt restrictions; G1026 originalPDF gap explicitly graded"
                         row["capacity_transmission"]="G10 retail generation energy including embedded alternative-energy component; T08 nonbypassable demand/energy or coupled low-load substitute; no extra wholesale PLC/NSPL charge"
+                    if utility=="duke_energy_ohio":
+                        row["coverage_basis"]="Matching complete calendar service, final meter read and revenue months; independent DM history and retained classification"
+                        row["capacity_transmission"]="Separate RC and RE retail supply blocks, BTR and RTEP transmission, no demand price or wholesale adder"
                     for period in ("monthly", "annual"):
                         cases = [x for x in matched if x["period"] == period]
                         complete = [x for x in cases if x["evidence_status"] == "audited_complete" and segment.get("is_complete_bill") is not False]

@@ -19,7 +19,8 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"aes_ohio":(39.82,-84.25,"Explicit hypothetical unincorporated Montgomery County Ohio site; AES service, ordinary SSO, demand history, no off-peak election/local charges and exact approved ordinary PV/storage are independent account facts, not inferred from coordinates"),
+SITES={"duke_energy_ohio":(39.20,-84.54,"Explicit hypothetical site near Cincinnati, Ohio. Confirm Duke service, ordinary SSO, DM classification and local charges independently of coordinates."),
+       "aes_ohio":(39.82,-84.25,"Explicit hypothetical unincorporated Montgomery County Ohio site; AES service, ordinary SSO, demand history, no off-peak election/local charges and exact approved ordinary PV/storage are independent account facts, not inferred from coordinates"),
        "firstenergy_ohio_toledo":(41.50,-83.65,"Explicit hypothetical unincorporated Wood County Ohio site; Toledo Edison service, ordinary SSO, actual contract demand, absence of municipal charges and active approved renewable service are independent account facts, not inferred from coordinates"),
        "firstenergy_ohio_illuminating":(41.50,-81.30,"Explicit hypothetical unincorporated Geauga County Ohio site; The Illuminating Company service, ordinary SSO, contract demand, absence of municipal charges and active approved renewable service are independent account facts, not inferred from coordinates"),
        "duquesne_light_pennsylvania":(40.65,-80.31,"Explicit hypothetical Center Township/Beaver County Pennsylvania site; Duquesne service, RS/GS Company assignment, default supply, state-only tax and approved ordinary renewable service require independent confirmation, not inferred from coordinates"),
@@ -125,7 +126,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
         request["operating_contract"]["renewable_only_charging"]=True
-    if utility=="aes_ohio":
+    if utility in ("duke_energy_ohio","aes_ohio"):
         request["operating_contract"]["renewable_only_charging"]=True
     if utility=="duquesne_light_pennsylvania":
         request["operating_contract"]["renewable_only_charging"]=True
@@ -342,6 +343,12 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
+    if utility=="duke_energy_ohio":
+        equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
+        if op["mode"]!="non_export" or op["grid_charging_confirmed"]:
+            raise ValueError("Duke Energy Ohio requires non-export operation and PV-only battery charging.")
+        if float(np.max(load))>module.IMPORT_LIMIT_KW[a["tariff"]]+1e-7:
+            raise ValueError("Duke native load exceeds the study limit. PV-reduced imports cannot establish DM eligibility.")
     if utility=="aes_ohio":
         equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
         if (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):

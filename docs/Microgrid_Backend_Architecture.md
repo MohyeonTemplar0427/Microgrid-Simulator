@@ -987,3 +987,15 @@ PV/storage is non-export and PV-only charging. Existing billing math, dispatch,
 worker, weather/equipment and all-interval replay are reused. DLCO transmission
 map and DUQ control-area identifiers are separate from tariff, supplier and
 optional PJM regional-average carbon. See [scope](Duquesne_Light_Pennsylvania.md).
+
+## Duke Energy Ohio RS/DM · November 2026
+
+`billing/duke_oh.py` adds ordinary single-phase RS and company-retained DM
+Standard Service Offer for matching June 2025 and October 2026 calendar cycles.
+DM uses independent 12-month review facts and reclassification limits, while
+its billing expression prices energy blocks. RC/RE supply, BTR/RTEP
+transmission, percentage and fixed riders, and filed OET retain separate bases.
+The October DCI sheet supplements the compiled book's index. Non-export PV and
+PV-charged paired storage reuse the regional worker, exact billing math and
+representative electrical replay. Ohio retail identity and PJM DEOK remain
+separate. See [scope and evidence](Duke_Energy_Ohio.md).

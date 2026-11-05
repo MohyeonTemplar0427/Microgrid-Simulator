@@ -1,0 +1,257 @@
+{
+  "utility": "duke_energy_ohio",
+  "jurisdiction": "OH",
+  "schedule_book": "PUCO Electric No. 19",
+  "retrieval_date": "2026-11-04",
+  "verified_revenue_months": [
+    "2025-06-01",
+    "2026-10-01"
+  ],
+  "source_documents": {
+    "PUCO19-2025-06-10": {
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/Duke%20Energy%20Ohio%20-%20Electric/PUCO19%20Schedules%20of%20Rates,%20Classifications,%20Rules%20andRegulations.pdf",
+      "sha256": "e9b69402a80280012cdc2801ebf092d30a5e5403ea2f54eba7e29b06396a1ca3",
+      "private_path": ".cache/duke_ohio/rules/puco19_2025_book.pdf",
+      "pdf_pages_1_based": {
+        "25.8": [
+          27
+        ],
+        "30.18": [
+          71,
+          72
+        ],
+        "43.20": [
+          96,
+          97
+        ],
+        "77.09": [
+          190
+        ],
+        "80.09": [
+          194
+        ],
+        "83.6": [
+          198
+        ],
+        "84.05": [
+          199
+        ],
+        "85.2": [
+          200,
+          201
+        ],
+        "86.26": [
+          202
+        ],
+        "88.15": [
+          207
+        ],
+        "89.14": [
+          208,
+          209,
+          210,
+          211
+        ],
+        "100.4": [
+          232
+        ],
+        "101.09": [
+          233
+        ],
+        "103.40": [
+          240
+        ],
+        "105.19": [
+          242
+        ],
+        "106": [
+          243,
+          244
+        ],
+        "107": [
+          245
+        ],
+        "108.17": [
+          246
+        ],
+        "110.53": [
+          248
+        ],
+        "111.17": [
+          249,
+          250,
+          251
+        ],
+        "112.17": [
+          252,
+          253,
+          254
+        ],
+        "115.52": [
+          257
+        ],
+        "119.7": [
+          261
+        ],
+        "122.11": [
+          266
+        ],
+        "126.5": [
+          269
+        ],
+        "128.11": [
+          271
+        ]
+      }
+    },
+    "PUCO19-2026-10-01": {
+      "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/empliibrary/files/docketing/tariffs/Electric/Duke%20Energy%20Ohio%20-%20Electric/PUCO%2019%20Schedules%20of%20Rates,%20Classifications,%20Rules%20and%20Regulations%20(1).pdf",
+      "sha256": "a9271f929c00e8bea956e8ada3f2d6bea5602836beeb74216d8241910132c49e",
+      "private_path": ".cache/duke_ohio/rules/puco19_alternate.pdf",
+      "pdf_pages_1_based": {
+        "10.215": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "30.18": [
+          71,
+          72
+        ],
+        "43.20": [
+          92,
+          93
+        ],
+        "77.10": [
+          184
+        ],
+        "80.11": [
+          186
+        ],
+        "83.6": [
+          190
+        ],
+        "84.07": [
+          191
+        ],
+        "85.2": [
+          192,
+          193
+        ],
+        "86.28": [
+          194
+        ],
+        "88.16": [
+          199
+        ],
+        "89.16": [
+          200,
+          201,
+          202,
+          203
+        ],
+        "100.5": [
+          223
+        ],
+        "101.10": [
+          224
+        ],
+        "103.45_prior": [
+          231
+        ],
+        "105.21": [
+          232
+        ],
+        "106": [
+          233,
+          234
+        ],
+        "107.02": [
+          235
+        ],
+        "108.18": [
+          236
+        ],
+        "110.59": [
+          237
+        ],
+        "111.18": [
+          238,
+          239,
+          240
+        ],
+        "112.18": [
+          241,
+          242,
+          243
+        ],
+        "115.58": [
+          244
+        ],
+        "119.7": [
+          245
+        ],
+        "122.13": [
+          249
+        ],
+        "128.13": [
+          253
+        ]
+      }
+    },
+    "sheet_103.46": {
+      "url": "https://www.duke-energy.com/-/media/pdfs/for-your-home/rates/electric-oh/sheet-no-103-oh-e-rider-dci.pdf",
+      "sha256": "bd8668ecc8bd786aac78535850ec3b03c814c38f6fd16223339167cf4453a8af",
+      "private_path": ".cache/duke_ohio/rules/sheet_103.pdf",
+      "pdf_pages_1_based": {
+        "103.46": [
+          1
+        ]
+      }
+    }
+  },
+  "cross_checks": {
+    "duke_calculators": {
+      "2025_RS": {
+        "url": "https://p-cd.duke-energy.com/-/media/documents/for-your-home/billing-calculators/2025/2025-rs-web-calculator.xlsx",
+        "sha256": "411d025786d1da90fff3d117ab262071da7b0cd76d17161ba1e31f7ecfaf484b",
+        "private_path": ".cache/duke_ohio/benchmarks/2025-rs-web-calculator.xlsx"
+      },
+      "2025_DM": {
+        "url": "https://p-cd.duke-energy.com/-/media/documents/for-your-home/billing-calculators/2025/2025-dm-web-calculator.xlsx",
+        "sha256": "e9249008a48d1f5241ac72da6692458232a65d7b1cc73e135133bfcc7150b5f1",
+        "private_path": ".cache/duke_ohio/benchmarks/2025-dm-web-calculator.xlsx"
+      },
+      "2026_RS": {
+        "url": "https://p-cd.duke-energy.com/-/media/documents/for-your-home/billing-calculators/2026/2026-rs-web-calculator.xlsx?rev=3abe0c9b03644e61ad23664dc01c1eb1",
+        "sha256": "831e46a1565b71cd48e6123dd2b998fbba8594e4582009890d2689b49762fd06",
+        "private_path": ".cache/duke_ohio/benchmarks/2026-rs-web-calculator.xlsx"
+      },
+      "2026_DM": {
+        "url": "https://p-cd.duke-energy.com/-/media/documents/for-your-home/billing-calculators/2026/2026-dm-web-calculator.xlsx?rev=7ae91d2acfcc4c249d33a223c678e62d",
+        "sha256": "7827df732584118c009af997e4791425199d1559ba54d988779eaf7e3eb77c4e",
+        "private_path": ".cache/duke_ohio/benchmarks/2026-dm-web-calculator.xlsx"
+      }
+    },
+    "puco_utility_rate_survey": "https://puco.ohio.gov/utilities/electricity/resources/ohio-utility-rate-survey",
+    "puco_price_to_compare": "https://puco.ohio.gov/utilities/electricity/resources/historical-ptc-chart-duke-electricity",
+    "october_price_to_compare": "https://www.energychoice.ohio.gov/ApplesToApplesComparision.aspx?Category=Electric&RateCode=2&TariffCodeId=18&TerritoryId=4"
+  },
+  "rules": {
+    "statutory_excise": "https://codes.ohio.gov/ohio-revised-code/section-5727.81",
+    "wired_sales_tax_exemption": "https://codes.ohio.gov/ohio-revised-code/section-5739.02",
+    "interconnection": "https://codes.ohio.gov/ohio-administrative-code/chapter-4901:1-22",
+    "pjm_deok": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"
+  },
+  "source_reconciliation": [
+    "Apply final monthly meter reading rule in Sheet 25.8 and matching revenue-month season. ESRR 80.09 starts June 2; the supported June final read qualifies.",
+    "The October index specifies October 1 for DCI but its book contains superseded 103.45. Separate filed 103.46 sets 18.624% from October 1.",
+    "Sheet 85.2 predates DSM/DSMR, the DM DDR addition, the USR to PIPP rename, and the Sheet 126.5 PSR withdrawal. Individual later rider applicability governs.",
+    "SGF and LGR are zero after August 14, 2025 per filed sheets. Workbook and PTC are cross-checks, not component substitutes or daily rate authority.",
+    "Official OET Sheet 83.6 and both calculator editions use 2000/15000 kWh retail block boundaries. Statutory distributor remittance includes separate non-30-day rules."
+  ],
+  "unsupported": "All other 2025–2026 months and unmatched/shifted cycles; complete contemporaneous rider and allocation evidence has not been established."
+}

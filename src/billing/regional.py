@@ -14,6 +14,10 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "duke_energy_ohio": {"label":"Duke Energy Ohio · Electric", "state":"OH", "zone":"DEOK",
+                         "module":"duke_oh", "timezone":"America/New_York", "grid_operator":"PJM",
+                         "emergency_region":"DEOK",
+                         "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
     "aes_ohio": {"label":"AES Ohio · Dayton Power and Light", "state":"OH", "zone":"DAY", "module":"aes_ohio", "timezone":"America/New_York",
                  "grid_operator":"PJM", "emergency_region":"DAY", "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
                      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2025/20250916/20250916-item-04k---day-aes-large-load-request.pdf"]},
