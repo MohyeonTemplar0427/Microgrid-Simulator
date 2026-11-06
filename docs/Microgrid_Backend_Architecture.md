@@ -999,3 +999,45 @@ The October DCI sheet supplements the compiled book's index. Non-export PV and
 PV-charged paired storage reuse the regional worker, exact billing math and
 representative electrical replay. Ohio retail identity and PJM DEOK remain
 separate. See [scope and evidence](Duke_Energy_Ohio.md).
+
+## Appalachian Power Virginia RS and SGS · November 2026
+
+`billing/appalachian_va.py` adds Tariff 28 Standard Service 015/231 for
+verified calendar intersections in 2025 and 2026. SGS has no billed demand
+charge and requires its own preceding 12-month metered demand and retained
+Company assignment. Base generation, generation-only S.B.R.R., separate
+securitization, fuel, delivery and dated riders feed the same numeric and
+symbolic bill. The initial City of Roanoke scope separates Virginia's
+consumption tax from the City consumer utility tax. Non-export PV and
+PV-charged paired storage require a written Company agreement preserving
+ordinary import billing. See the [utility guide](Appalachian_Power_Virginia.md).
+
+## Indiana Michigan Power Indiana RS and secondary GS · November 2026
+
+`billing/im_in.py` adds IURC No. 20 bundled RS 015/016 and
+non-demand-metered secondary GS 215/218. The bill prices the filed bundled
+base charges, eight separately dated trackers and Indiana sales tax.
+Account evidence confirms the exact tariff code and, for GS, the utility's
+meter assignment and usage review. Simulated native load and meter imports
+also have independent study limits. PV and PV-charged storage require
+written approval preserving ordinary non-export billing. Indiana retail
+identity, the PJM AEP zone and optional wholesale data remain separate.
+See the [utility guide](Indiana_Michigan_Power_Indiana.md).
+
+## Five additional PJM jurisdictions · November 2026
+
+The local regional registry adds Appalachian Power West Virginia RS/SGS,
+Pepco District of Columbia R/GS-ND SOS, Delmarva Delaware R/SGS-ND SOS,
+Mon Power West Virginia A/B and I&M Michigan RS/GS. Each module owns
+its dated eligibility, component arithmetic, tax scope and non-export
+agreement requirements. Existing regional billing, exact optimization,
+queued workers, PV/storage and OpenDSS replay remain the entry points.
+
+Mon Power B carries actual prior monthly imports for its capacity minimum.
+Delmarva's retail transmission uses independently assigned PLC with dated
+validity. Pepco's first-30-kWh minimum and commercial metering rules remain
+utility-specific. Michigan uses actual billed PSCR and excludes LIEAF from
+its sales-tax base. State/utility identity, supplier, PJM metadata and
+optional wholesale prices remain independent. Missing source intersections
+fail closed. See the [batch scope and validation](PJM_Five_Utility_Batch_Validation.md)
+and its linked source ledgers.

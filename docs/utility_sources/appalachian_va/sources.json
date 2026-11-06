@@ -1,0 +1,234 @@
+{
+  "utility": "appalachian_power_virginia",
+  "jurisdiction": "VA",
+  "tax_locality": "roanoke_city",
+  "authority": "Virginia SCC Tariff No. 28 Standard Service",
+  "reviewed": "2026-11-04",
+  "cycles": {
+    "2025-01-01": {
+      "source_version": "tariff28-2025-01",
+      "source_grade": "filed_book_and_corrected_official_summary",
+      "rate_urls": [
+        "https://www.appalachianpower.com/lib/docs/cleanenergy/electric-cars/APCoStandardTariff28-January12025SUTUpdate.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/SelectResidentialandNon-ResidentialCharges-January_1_2025.pdf",
+        "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/consumption-tax.pdf",
+        "https://salemva.gov/DocumentCenter/View/2607/Special-Regulatory-Tax-State-PDF"
+      ]
+    },
+    "2025-11-01": {
+      "source_version": "tariff28-2025-11",
+      "source_grade": "filed_sheets_and_cached_official_summary",
+      "rate_urls": [
+        "https://www.appalachianpower.com/lib/docs/cleanenergy/electric-cars/APCoStandardTariff28-January12025SUTUpdate.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff28Nov1-2025-G-RACFuelWWSUpdate.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff_28_March_15-2026-TRACUpdate.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/SelectResidentialandNon-ResidentialCharges-Nov1-2025.pdf"
+      ]
+    },
+    "2026-01-01": {
+      "source_version": "tariff28-2026-01",
+      "source_grade": "filed_sheets_and_cached_official_summary",
+      "rate_urls": [
+        "https://www.appalachianpower.com/lib/docs/cleanenergy/electric-cars/APCoStandardTariff28-January12025SUTUpdate.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff28Nov1-2025-G-RACFuelWWSUpdate.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff_28_November_1_2026_Update-PIPP.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/SelectResidentialandNon-ResidentialCharges-January-1-2026.pdf"
+      ]
+    },
+    "2026-10-01": {
+      "source_version": "tariff28-2026-10",
+      "source_grade": "dated_filed_sheet_reconstruction",
+      "rate_urls": [
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff_28_November_1_2026_Update-PIPP.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff28March-1-2026-DR-RAC-E-RAC-VCEA-Update.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff_28_May-27-2026_Update-Securitization.pdf"
+      ]
+    },
+    "2026-11-01": {
+      "source_version": "tariff28-2026-11",
+      "source_grade": "filed_book_and_official_summary",
+      "rate_urls": [
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff_28_November_1_2026_Update-PIPP.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff_28_May-27-2026_Update-Securitization.pdf",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Select_Residential_and_Non-Residential_Charges-Nov_1_2026.pdf"
+      ]
+    }
+  },
+  "retained_originals": {
+    "tariff_jan25": {
+      "url": "https://www.appalachianpower.com/lib/docs/cleanenergy/electric-cars/APCoStandardTariff28-January12025SUTUpdate.pdf",
+      "path": ".cache/apco_va/sources_2025/Tariff28_2025-01-01.pdf",
+      "sha256": "1f0b00ba9d303ee3f4694ac504cc928bba7177ac654d80e2fcb1483cade90dfc",
+      "pdf_pages_1_based": {
+        "4-1": [
+          25
+        ],
+        "4-2": [
+          26
+        ],
+        "10-1": [
+          36
+        ],
+        "50": [
+          126
+        ],
+        "52": [
+          127
+        ],
+        "53": [
+          128
+        ],
+        "54": [
+          129
+        ],
+        "55": [
+          130
+        ],
+        "58": [
+          131
+        ],
+        "59": [
+          132
+        ],
+        "60": [
+          133
+        ],
+        "NBP-1": [
+          134
+        ],
+        "NBP-2": [
+          135
+        ],
+        "NBP-3": [
+          136
+        ],
+        "NBP-4": [
+          137
+        ],
+        "NBP-5": [
+          138
+        ]
+      }
+    },
+    "tariff_nov26": {
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Tariff_28_November_1_2026_Update-PIPP.pdf",
+      "path": ".cache/apco_va/sources_2026/tariff_28_2026-11-01.pdf",
+      "sha256": "b11b1c59a833c87f11fb7c076655dce0364ff9e650fd6cbdcfd16c369635d512",
+      "pdf_pages_1_based": {
+        "4-1": [
+          28
+        ],
+        "4-2": [
+          29
+        ],
+        "10-1": [
+          39
+        ],
+        "31-1": [
+          101
+        ],
+        "31-2": [
+          102
+        ],
+        "31-3": [
+          103
+        ],
+        "50": [
+          144
+        ],
+        "51": [
+          145
+        ],
+        "52": [
+          146
+        ],
+        "53": [
+          147
+        ],
+        "54": [
+          148
+        ],
+        "58": [
+          149
+        ],
+        "59": [
+          150
+        ],
+        "60": [
+          151
+        ],
+        "NBP-1": [
+          152
+        ],
+        "NBP-2": [
+          153
+        ],
+        "NBP-3": [
+          154
+        ],
+        "NBP-4": [
+          155
+        ],
+        "NBP-5": [
+          156
+        ],
+        "NBP-7": [
+          157
+        ]
+      }
+    },
+    "illustration_nov26": {
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/Select_Residential_and_Non-Residential_Charges-Nov_1_2026.pdf",
+      "path": ".cache/apco_va/benchmarks/nov_2026.pdf",
+      "sha256": "9032aa212b42f8eedfa11522b2a55b7a04b560a7946e5132609f5be450ad49f6",
+      "pdf_pages_1_based": {
+        "illustration": [
+          1
+        ]
+      }
+    },
+    "superseded_jan25_illustration": {
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Virginia/SelectResidentialandNon-ResidentialCharges-Jan-1-2025.pdf",
+      "path": ".cache/apco_va/sources_2025/Illustrative_2025-01-01.pdf",
+      "sha256": "bf9f5ea7408d54f2a4e39bb785e2d18383f6f401687f3e9f5836e00709d64ff4"
+    },
+    "historic_state_levy_corroboration": {
+      "url": "https://www.dominionenergy.com/-/media/content/rates-and-tariffs/pdfs/virginia/shared/consumption-tax.pdf",
+      "path": ".cache/apco_va/sources_rules/regulatory_historic_filed_dominion.pdf",
+      "sha256": "a284af3f1720ea454a407f0fece442f5444294415ef7ead595d88240ae157e11"
+    },
+    "current_state_levy": {
+      "url": "https://www.scc.virginia.gov/regulated-industries/public-taxation/taxes-and-fees/",
+      "path": ".cache/apco_va/sources_rules/scc_actual_levy.html",
+      "sha256": "e68df4c84fddabfdbe04b289b0766665c68a5b91078c5d63586eeedc4d3e38cd"
+    },
+    "city_current_guidance_index": {
+      "url": "https://www.roanokeva.gov/3259/Consumer-Utility-Tax",
+      "path": ".cache/apco_va/sources_rules/roanoke_current_city_tax.html",
+      "sha256": "a3d31f3f7cc655411f69d6d6d65420fb9ff41f250a3cca4b5e84ce5259c88a87"
+    },
+    "city_consumer_utility_tax": {
+      "url": "https://www.roanokeva.gov/DocumentCenter/View/8874/guidelines-Consumer-Utility-Tax?bidId=",
+      "path": ".cache/apco_va/sources_rules/roanoke_tax_guidance.pdf",
+      "sha256": "a40c1d1bcc016f46fc59d57c057a50b7f5f7f1ba02c993601860f368b810f488"
+    }
+  },
+  "source_notes": [
+    "January 2025 Sheet 59 and the corrected official illustration agree on SGS EE-RAC at 0.00237 dollars per kWh. An older illustration used 0.00143.",
+    "November 2025 and January 2026 itemized APCo illustrations are available from indexed official source text. Superseded direct links failed or redirected. Used as checks against dated retained and indexed individual tariff sheets.",
+    "October 2026 is reconstructed from the applicable 2026 compiled original and the prior PIPP sheet. September 24 BC-RAC applies throughout the October service month. November 1 PIPP does not apply in October.",
+    "Tariff Sheet 51 November compilation contains a mislabeled subtitle and erroneous 2026 financing order date. The SCC-accepted May sheet and the actual order confirm 2025-11-24 and 2026-05-27 effectiveness. Credit is exactly 39.24 percent of base generation.",
+    "City current published collection guidance supplies separate Roanoke tax; full independent historical ordinance revision log is unavailable. Scope excludes exemptions and heating relief. The SCC actual levy is distinct from the higher statutory maximum.",
+    "Tariff schedules require a special arrangement for small production. Only exact, active written non-export approvals retaining all ordinary import billing terms are modeled."
+  ],
+  "rule_urls": {
+    "statute": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2900/",
+    "scc_levy_authority": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2902/",
+    "historical_levy_public_notice": "https://salemva.gov/DocumentCenter/View/2607/Special-Regulatory-Tax-State-PDF",
+    "securitization_order": "https://www.sec.gov/Archives/edgar/data/6879/000119312526083197/d44535dex991.htm",
+    "city_historical_rate_corroboration": "https://www.roanokecountyva.gov/DocumentCenter/View/10566/24-Appendices?bidId=",
+    "city_consumption_tax_split": "https://www.roanokeva.gov/355/Consumption-Tax",
+    "interconnection": "https://law.lis.virginia.gov/admincode/title20/agency5/chapter314/section10/",
+    "pjm_aep": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"
+  }
+}

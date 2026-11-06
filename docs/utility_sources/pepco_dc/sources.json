@@ -1,0 +1,187 @@
+{
+  "utility": "pepco_district_of_columbia",
+  "jurisdiction": "DC",
+  "plans": [
+    "R",
+    "GS-ND"
+  ],
+  "retrieved_at": "2026-11-05",
+  "scope": "Ordinary one-meter single-phase 120/240V SOS without special credits; non-export.",
+  "components": [
+    {
+      "name": "distribution",
+      "clock": "usage and designated billing year/month",
+      "source": "R-3, R-6",
+      "versions": "2025 and 2026 base rates, June\u2013October summer"
+    },
+    {
+      "name": "generation and admin",
+      "clock": "filed usage start with assigned billing season",
+      "source": "R-41.1, R-41.3",
+      "rule": "R generation minimum includes first30kWh and first30kWh administration, additional administration applies only above30. GSND all kWh."
+    },
+    {
+      "name": "transmission",
+      "clock": "filed usage start",
+      "source": "R-41.1,R-41.3",
+      "rule": "R .12 minimum includes first30kWh. GSND all kWh. No extra wholesale price or GRT adder."
+    },
+    {
+      "name": "BSA",
+      "clock": "billed calendar month",
+      "source": "external BSA factors and current filing",
+      "rule": "2025-26 continuation supported by current utility table and August2026 filing. AdjustmentI not inferred zero from missing rate; report says deferred."
+    },
+    {
+      "name": "DC tax",
+      "clock": "usage",
+      "source": "R-32",
+      "rule": "Flat kWh delivery tax by account class. Generation includes applicable taxes."
+    }
+  ],
+  "coverage": [
+    {
+      "start": "2025-06-01",
+      "end": "2025-06-30"
+    },
+    {
+      "start": "2026-06-01",
+      "end": "2026-10-31"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-05-31",
+      "reason": "Matching administrative-credit and BSA intersections remain unverified."
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2026-05-31",
+      "reason": "Administrative-credit chart has blank later-month cells; no extension of June 2025 values."
+    },
+    {
+      "start": "2026-11-01",
+      "end": "2026-12-31",
+      "reason": "Administrative credits and later rider intersection remain unverified."
+    }
+  ],
+  "sources": [
+    {
+      "name": "book_jun26",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt1592c0ff5185f738/6a31746c61cd281dcff19c9e/DC_FC1017_SOS_Compliant_Eff_06.01.26_WEBPAGE_1.pdf",
+      "filename": "book_jun26.pdf",
+      "sha256": "8586fa2d343f2e219a641aeef028ae5ab53e9e2dcf895b05a4a151e8dd22cc58",
+      "notes": "Physical pp6\u201311 R/GS-ND; p63 and65 June/July2026 SOS; p69 PCA remains original June2025 factors; p74 RADS; p75 SETF; p79 annual BSA rules; p80 UPC; p84 underground rider deleted April30; pp85\u201386 EDIT; MRP zero sheet."
+    },
+    {
+      "name": "surcharges_apr26",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/bltc885fc58885f93bd/69cec85dff660f73157dc8a7/DC_Applicable_Surcharges_for_Web_04.01.2026.pdf",
+      "filename": "surcharges_apr26.pdf",
+      "sha256": "88dabf8d4e70d36a07e146de88a2897f7478f82400a3c126d6211d48aaf451fb",
+      "notes": "Distinct residential .0070 and commercial .0077 delivery tax; March2026 PSOS .002350, SETF .002056 and MESF .004854; EATF .0002322; RADS .001155; UPC R .00055 GSND .00067."
+    },
+    {
+      "name": "ac_oct26",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt66500373b1c2c438/6abd76429c1713cfb5c66be2/Pepco_DC_Admin_Credit_-_102026_.pdf",
+      "filename": "ac_oct26.pdf",
+      "sha256": "7ce817dfc3e522caac038bc556a0690f1224de8e4f43e4997cc6fab92a55574e",
+      "notes": "June\u2013October2026 filled with zero for residential and small commercial. Later cells blank."
+    },
+    {
+      "name": "ac_sep26",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt66500373b1c2c438/6a8ee7a1a96aaabf44421f9f/Pepco_DC_Admin_Credit_-_092026.pdf",
+      "filename": "ac_sep26.pdf",
+      "sha256": "2e00a9c9ae1059ca8967691ebb0a60520747a96485897d320aba64787896f31b",
+      "notes": "June\u2013September2026 filled with zero for residential and small commercial. Later cells blank."
+    },
+    {
+      "name": "bsa_mar26",
+      "url": "https://azure-na-assets.contentstack.com/v3/assets/bltbb7c204688a1a6a8/blt5b5379651528b194/69a0b911cb09cdedba32880d/Pepco_DC_BSA_-_032026_.pdf",
+      "filename": "bsa_mar26.pdf",
+      "sha256": "dd7eb5bc7c92daa5ccffbdb84d7d9c154b79e88e96a88380e24ece512d50e79e",
+      "notes": "Utility's March2026 chart continues March1 2025 factors without an ending date. Read with current monthly report and tariff/order continuation evidence."
+    },
+    {
+      "name": "bsa_mar25",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt55bfb2d4df34768a/67c5e63d86c64e250e36d89b/Pepco_DC_BSA_-_032025.pdf?branch=prod_alias",
+      "filename": "bsa_mar25.pdf",
+      "sha256": "dbf853daf6de330c9985a2c56ebf5779671d8e016f4a3a6cebef64df5556a9b4",
+      "notes": "Explicit March1 2025\u2013February28 2026 BSA Adjustment II R .000134, GS ND -.000791 USD/kWh."
+    },
+    {
+      "name": "book_jun25",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt1592c0ff5185f738/6838a59f7476148e7ae7d25a/DC_PCA_SOS_Current_Tariff_Eff_6.1.2025.pdf?branch=prod_alias",
+      "filename": "book_jun25.pdf",
+      "sha256": "b7f15d3493212bca7ff501481e4c59d5e6f3ba3c061808a5def1e935b924e20d",
+      "notes": "Physical pp6\u201311 R/GS-ND; p57 DT; p58 March2025 PSOS; pp63\u201365 SOS; p69 PCA; p73 RADS; pp80 and84 UPC/Underground; pp85\u201386 EDIT; MRP zero sheet."
+    },
+    {
+      "name": "ac_jun25",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt66500373b1c2c438/6838ad23e2a01b03084d9c61/Pepco_DC_Admin_Credit_-_062025.pdf?branch=prod_alias",
+      "filename": "ac_jun25.pdf",
+      "sha256": "80d04b4585d823f927053701240b47efa90f770ef18efac83fc21483d58718cf",
+      "notes": "Only June2025 is filled. July2025\u2013May2026 cells are blank and do not establish rates."
+    },
+    {
+      "name": "book_jan25",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt1592c0ff5185f738/6776a74cb347d77ba1a90cb9/FC1176_-_Pepco_DC_MYP_clean_eff_Jan_1_2025.pdf?branch=prod_alias",
+      "filename": "book_jan25.pdf",
+      "sha256": "ee91bd737e26e2bac915f60477247549a2ba565b503743b565dc619a13ec76c2",
+      "notes": "January2025 compliance confirms 2025/2026 delivery and earlier riders. Administrative-credit/BSA intersections incomplete."
+    },
+    {
+      "name": "surcharges_oct24",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/bltc885fc58885f93bd/6724ed9eac5a5837cf871fed/DC_Applicable_Surcharges_for_Web_10.31.24.pdf?branch=prod_alias",
+      "filename": "surcharges_oct24.pdf",
+      "sha256": "29fd9c27cf9678dea940405650fb7be81bb654bd02bee598e2fe39e6923c0503",
+      "notes": "SETF .006510 October1 2024 annual October rate. Supports fiscal-year2025 June cycle."
+    },
+    {
+      "name": "bsa_aug26_report",
+      "url": "https://edocket.dcpsc.org/apis/api/filing/download?attachId=250861&guidFileName=29035541-df98-40f9-aa06-d7e9c60907f0.pdf",
+      "filename": "bsa_aug26_report.pdf",
+      "sha256": "a1dae28becf9cb60fccfde98322cb319a8000dc2117460c5f6ddf79ed42d63d3",
+      "notes": "September30 2026 filing, August2026 report. Describes actual ongoing BSA II. Attachment2 states Adjustment I for 2026 revenues is expected after PSC approval in 2027."
+    },
+    {
+      "name": "setf_oct26_filed",
+      "url": "https://edocket.dcpsc.org/apis/api/filing/download?attachId=250708&guidFileName=1e9c4277-e002-4b2d-bf02-9298c0c7a95f.pdf",
+      "filename": "setf_oct26_filed.pdf",
+      "sha256": "bc0cb82d30b547b6f7b4a3ce4d0e833bea72b0bd40b777acdef2772f76236d3e",
+      "notes": "ET2026-03 filing states mandated billing-system change .002056 to .001666 October1 2026. Not copied from an unapproved estimate."
+    },
+    {
+      "name": "mesf_oct26_filed",
+      "url": "https://edocket.dcpsc.org/apis/api/filing/download?attachId=250709&guidFileName=0dd360f4-c89f-4273-bc32-73b80094baef.pdf",
+      "filename": "mesf_oct26_filed.pdf",
+      "sha256": "b155404e6786636d2823f810c01528983fb47db5b67364ff7492777fa5aa8e5e",
+      "notes": "ET2026-04 filing states mandated billing-system change .004854 to .005544 October1 2026. Includes corrected applicable-rider lists."
+    },
+    {
+      "name": "sos_order_2026",
+      "url": "https://edocket.dcpsc.org/apis/api/Filing/download?attachId=243207&guidFileName=364c5efc-780a-4d94-873f-3a8412c11a25.pdf",
+      "filename": "sos_order_2026.pdf",
+      "sha256": "6779f5ebc8c5c2316459424dd60354de467e68a99e622438bc0ed5c42796d03e",
+      "notes": "DCPSC Order22869, May20 2026 SOS procurement. Cross-source check of July2026 supply boundary."
+    },
+    {
+      "name": "book26",
+      "url": "https://www.pepco.com/cdn/assets/v3/assets/bltbb7c204688a1a6a8/blt1592c0ff5185f738/69839b400b2c5e790e410a8d/Pepco_DC_RAD_Compliant_Filing_Eff_02.01.2026.pdf?branch=prod_alias",
+      "filename": "book26.pdf",
+      "sha256": "d6b782803deb9611ab8282b27e0c7a6d724565afd54cfb7f961290e5b36c573c",
+      "notes": "February2026 book corroborates continuing SOS November2025\u2013May2026 and February2026 RADS. Used to audit source chronology, not fill missing monthly credits."
+    }
+  ],
+  "source_gaps": [
+    "Angular tariff pages returned app shells, without readable archive lists. Known official assets retrieved directly.",
+    "No complete annual coverage. Administrative-credit blanks cannot be extended.",
+    "OPC current calculator retains inconsistent older base charges, excluded as an independent full-bill benchmark.",
+    "No customer bill or actual DER approval supplied. Bill tests independently transcribe filed rates with Decimal arithmetic."
+  ],
+  "eligibility_review": {
+    "source": "book_jun26.pdf, physical page11, R-6.1",
+    "rules": "Demand meter for >6000kWh in two winter months, >7500kWh in one summer month, or >=25kW in any month. Return requires each prior12months <6000kWh and demand<25kW.",
+    "initial_domain": "Independent non-demand metering confirmation, no pending reclassification, prior12 energy readings each<6000, prior12 demand readings each<25, and current native/import energy<6000 each cycle. History is not inferred from modeled PV-reduced imports."
+  }
+}

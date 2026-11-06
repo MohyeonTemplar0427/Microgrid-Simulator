@@ -1,0 +1,267 @@
+{
+  "utility": "indiana_michigan_power_indiana",
+  "jurisdiction": "IN",
+  "tariff": "IURC No. 20",
+  "retrieval_date": "2026-11-04",
+  "plans": {
+    "RS": [
+      "015",
+      "016"
+    ],
+    "secondary_GS": [
+      "215",
+      "218"
+    ]
+  },
+  "clock": "America/Indiana/Indianapolis; filed service dates and I&M assigned bill months remain distinct.",
+  "evidence_scope": "Ordinary taxable 120/240 V single-phase secondary bundled, non-export only.",
+  "sources": [
+    {
+      "name": "September tariff book",
+      "url": "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf",
+      "evidence": "Original Sheets 3, 4, 12–12.2, 44; 2026 Sheets 45–53; FAC 96 starts June 8.",
+      "filename": "book_09-29-2026.pdf",
+      "sha256": "88fc1991dce5f3b67cfa7d3f964872b0990ba53c61f9fe0b9beba21627aab6e9"
+    },
+    {
+      "name": "October tariff book",
+      "url": "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_10-28-2026.pdf",
+      "evidence": "Fifth Revised 46.1 and Fourth Revised 51 begin with November 2026 bills. Third Revised 47 remains in this book.",
+      "filename": "book_10-28-2026.pdf",
+      "sha256": "e816895e5dbe22783499762b34e9a75ef28d7353f6e4f998e191c313097ef7d1"
+    },
+    {
+      "name": "January tariff book",
+      "url": "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_01-30-2026.pdf#page=1",
+      "evidence": "Indexed utility PDF, read through cached web copy; direct download returned 404. Third Revised 46.1; Second Revised 48 and 50, with July and August 2025 starts."
+    },
+    {
+      "name": "Phase II March implementation",
+      "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/5c1c76f4-0ef6-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46090_Indiana+Michigan+Power+Company_Tariff+Submission_022825.pdf",
+      "evidence": "Clean pages 12–16 supply RS/GS factors for ECR, OSS/PJM, RA, SPR and Phase-In credit. Sheet 53 was subsequently revised for April 2025.",
+      "filename": "filing_46090.pdf",
+      "sha256": "a762aeef06dbfdeb16315965c63b3a8b8aea5b9c4ecae4af694faa4b0c882d8e"
+    },
+    {
+      "name": "2025 DSM/EE",
+      "url": "https://www.in.gov/iurc/files/Amended-Utility-Articles-5.21.25.pdf",
+      "evidence": "Filing 50829 staff memorandum gives the unchanged non-opt-out RS and GS factors.",
+      "filename": "Amended-Utility-Articles-5.21.25.pdf",
+      "sha256": "71c366bec2467bac088b18e5a56d250b243f29c5a8a78ac2a7631ab38de55118"
+    },
+    {
+      "name": "FAC 94",
+      "url": "https://www.in.gov/iurc/files/ord_38702FAC94_043025.pdf",
+      "evidence": "Order confirms negative 0.450 mill/kWh. January 2026 book preserves May 5 service start.",
+      "filename": "ord_38702FAC94_043025.pdf",
+      "sha256": "b33dd22b1af174a269c1c2d2c2690ca566eb26957e66596e6cc970a7e3cdea8f"
+    },
+    {
+      "name": "FAC 95",
+      "url": "https://www.in.gov/iurc/files/ord_38702FAC95_102925.pdf",
+      "evidence": "Order confirms negative 0.168 mill/kWh through April 2026. January 2026 book gives October 31 service start.",
+      "filename": "ord_38702FAC95_102925.pdf",
+      "sha256": "94de364d5db489d129aa0643fb11af6b851eec60d78218eaab6c049be871083a"
+    },
+    {
+      "name": "FAC 96",
+      "url": "https://www.in.gov/iurc/files/ord_38702FAC96_060326.pdf",
+      "evidence": "Order approves distinct residential/nonresidential factors. The filed sheet begins June 8 despite May–October wording in the order.",
+      "filename": "ord_38702FAC96_060326.pdf",
+      "sha256": "2b942410283c18f97fb3bc2bc9e429fbf535d950e706a74f90930962f5a0d7d7"
+    },
+    {
+      "name": "PJM 15",
+      "url": "https://www.in.gov/iurc/files/ord_43774PJM15_061825.pdf",
+      "evidence": "Order independently confirms July 2025 rider factors. Second Revised 48 gives the July bill-month start.",
+      "filename": "ord_43774PJM15_061825.pdf",
+      "sha256": "653cde7bea52621b593ad21d8df745f974d690aac4905629125c424064d9e05b"
+    },
+    {
+      "name": "RA 5",
+      "url": "https://www.in.gov/iurc/files/ord_45164RA5_072325.pdf",
+      "evidence": "Order confirms the factors. Second Revised 50 in the January book gives August 2025 bill-month start.",
+      "filename": "ord_45164RA5_072325.pdf",
+      "sha256": "641a06309c3265556401abde0ae310caded17f5e240c338f82cff51860d83cd7"
+    },
+    {
+      "name": "SPR 4",
+      "url": "https://www.in.gov/iurc/files/ord_45245SPR4_092425A.pdf",
+      "evidence": "Order corroborates the SPR factors. September 2026 book shows the October 2025 bill-month start.",
+      "filename": "ord_45245SPR4_092425A.pdf",
+      "sha256": "c1f1f903222ce1cf25deb94b5f025034e0f9c86296d45c8c045f23676b3e5dd3"
+    },
+    {
+      "name": "Tax Rider",
+      "url": "https://www.in.gov/iurc/files/ord_46080_030525.pdf",
+      "evidence": "Ratemaking tax rider. Second Revised 53 has the April 2025 billing start and is separate from state sales tax.",
+      "filename": "ord_46080_030525.pdf",
+      "sha256": "dbdee0302d6572dfefe2dd8e4479d669fe3ec4bb9c6d82866eb3c742aaf76c01"
+    },
+    {
+      "name": "FAC 93",
+      "url": "https://www.in.gov/iurc/files/ord_38702FAC93_112024.pdf",
+      "evidence": "Conditional order requires a review of recalculation. Final implementation not established.",
+      "filename": "ord_38702FAC93_112024.pdf",
+      "sha256": "f1afb451fc0e55610a10a4a594baa9c5149c6401ebca03c78bfd1d6943ae3db7"
+    },
+    {
+      "name": "ECR 10",
+      "url": "https://www.in.gov/iurc/files/ord_44871ECR10_100726.pdf",
+      "evidence": "Order covers 2027 forecast and requires Energy Division review before implementation. Next filed effective sheet was not recovered."
+    },
+    {
+      "name": "Indiana DOR",
+      "url": "https://www.in.gov/dor/files/sib51.pdf",
+      "evidence": "Sales tax bulletin 51 for public utilities; ordinary taxable electric service."
+    },
+    {
+      "name": "Indiana OUCC tax guidance",
+      "url": "https://www.in.gov/oucc/electric/tips-and-publications/understanding-electric-rates/",
+      "evidence": "Confirms Indiana's 7% sales tax for ordinary electricity service and I&M's PJM territory."
+    },
+    {
+      "name": "I&M interconnection",
+      "url": "https://www.indianamichiganpower.com/business/builders/CreateGreen-IN",
+      "evidence": "Indiana application, interconnection agreement and permission to operate. Actual non-export approval and preserved tariff must be confirmed separately."
+    },
+    {
+      "name": "PJM",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "evidence": "PJM AEP control area includes Indiana Michigan Power. Retail supplier and wholesale pricing remain separate."
+    },
+    {
+      "name": "IURC 2025 bill benchmark",
+      "url": "https://www.in.gov/iurc/files/2025-Electric-Residential-Bill-Survey-Update.pdf",
+      "evidence": "July 1 survey Tables 1 and 5, excluding sales tax. Four usage levels and component detail at 1,000 kWh.",
+      "filename": "survey25.pdf",
+      "sha256": "926eb6cc2af3d59649a8309acde60fa1892a436599cd837ecba8a58b622d0ea0"
+    },
+    {
+      "name": "IURC 2026 bill benchmark",
+      "url": "https://www.in.gov/iurc/files/2026-Electric-Residential-Bill-Survey_Update_7.28.26.pdf",
+      "evidence": "July 1 survey Tables 1 and 5, excluding sales tax. Four usage levels and component detail at 1,000 kWh.",
+      "filename": "survey26.pdf",
+      "sha256": "1f0b1030429c76f86c365a5753edb39eff1dd8dd38380c7d736c9e0c7dc40798"
+    }
+  ],
+  "calendar_windows": [
+    {
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf",
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/5c1c76f4-0ef6-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46090_Indiana+Michigan+Power+Company_Tariff+Submission_022825.pdf",
+        "https://www.in.gov/iurc/files/Amended-Utility-Articles-5.21.25.pdf",
+        "https://www.in.gov/iurc/files/ord_38702FAC94_043025.pdf"
+      ],
+      "grade": "filed_tariff_and_orders_reconstruction"
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2025-07-31",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf",
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/5c1c76f4-0ef6-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46090_Indiana+Michigan+Power+Company_Tariff+Submission_022825.pdf",
+        "https://www.in.gov/iurc/files/Amended-Utility-Articles-5.21.25.pdf",
+        "https://www.in.gov/iurc/files/ord_38702FAC94_043025.pdf",
+        "https://www.in.gov/iurc/files/ord_43774PJM15_061825.pdf"
+      ],
+      "grade": "filed_tariff_and_orders_reconstruction"
+    },
+    {
+      "start": "2025-08-01",
+      "end": "2025-09-30",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf",
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/5c1c76f4-0ef6-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46090_Indiana+Michigan+Power+Company_Tariff+Submission_022825.pdf",
+        "https://www.in.gov/iurc/files/Amended-Utility-Articles-5.21.25.pdf",
+        "https://www.in.gov/iurc/files/ord_38702FAC94_043025.pdf",
+        "https://www.in.gov/iurc/files/ord_43774PJM15_061825.pdf",
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_01-30-2026.pdf#page=1",
+        "https://www.in.gov/iurc/files/ord_45164RA5_072325.pdf"
+      ],
+      "grade": "filed_tariff_and_orders_reconstruction"
+    },
+    {
+      "start": "2025-11-01",
+      "end": "2025-12-31",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf",
+        "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/5c1c76f4-0ef6-ef11-be20-001dd80b8c52/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=46090_Indiana+Michigan+Power+Company_Tariff+Submission_022825.pdf",
+        "https://www.in.gov/iurc/files/Amended-Utility-Articles-5.21.25.pdf",
+        "https://www.in.gov/iurc/files/ord_38702FAC95_102925.pdf",
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_01-30-2026.pdf#page=1",
+        "https://www.in.gov/iurc/files/ord_43774PJM15_061825.pdf",
+        "https://www.in.gov/iurc/files/ord_45164RA5_072325.pdf"
+      ],
+      "grade": "filed_tariff_and_orders_reconstruction"
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-03-31",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf",
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_01-30-2026.pdf#page=1",
+        "https://www.in.gov/iurc/files/ord_38702FAC95_102925.pdf",
+        "https://www.in.gov/iurc/files/ord_43774PJM15_061825.pdf",
+        "https://www.in.gov/iurc/files/ord_45164RA5_072325.pdf"
+      ],
+      "grade": "filed_tariff_and_orders_reconstruction"
+    },
+    {
+      "start": "2026-04-01",
+      "end": "2026-04-30",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf",
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_01-30-2026.pdf#page=1",
+        "https://www.in.gov/iurc/files/ord_38702FAC95_102925.pdf",
+        "https://www.in.gov/iurc/files/ord_43774PJM15_061825.pdf"
+      ],
+      "grade": "filed_tariff_and_orders_reconstruction"
+    },
+    {
+      "start": "2026-07-01",
+      "end": "2026-10-31",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_09-29-2026.pdf"
+      ],
+      "grade": "dated_filed_tariff_book"
+    },
+    {
+      "start": "2026-11-01",
+      "end": "2026-11-30",
+      "source_urls": [
+        "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Indiana/IM_IN_TB_20_10-28-2026.pdf"
+      ],
+      "grade": "dated_filed_tariff_book"
+    }
+  ],
+  "unsupported_windows": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-04-30",
+      "reason": "Earlier Phase II and final FAC 93 implementation sheets were not fully reconciled."
+    },
+    {
+      "start": "2025-05-01",
+      "end": "2025-05-31",
+      "reason": "FAC changes for service rendered from May 5. Within-cycle allocation is unverified."
+    },
+    {
+      "start": "2025-10-01",
+      "end": "2025-10-31",
+      "reason": "FAC changes for service rendered from October 31. Within-cycle allocation is unverified."
+    },
+    {
+      "start": "2026-05-01",
+      "end": "2026-06-30",
+      "reason": "May FAC continuation is unverified and the new filed FAC starts June 8."
+    },
+    {
+      "start": "2026-12-01",
+      "end": "2026-12-31",
+      "reason": "The next approved ECR filing's implementation date has not been verified."
+    }
+  ]
+}

@@ -19,7 +19,14 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"duke_energy_ohio":(39.20,-84.54,"Explicit hypothetical site near Cincinnati, Ohio. Confirm Duke service, ordinary SSO, DM classification and local charges independently of coordinates."),
+SITES={"appalachian_power_west_virginia":(38.18,-81.3,"Hypothetical unincorporated Kanawha County, WV. Confirm utility service and absence of local electric taxes independently."),
+       "pepco_district_of_columbia":(38.9,-77.04,"Hypothetical District of Columbia site. Confirm Pepco territory, account and taxes independently."),
+       "delmarva_delaware":(38.68,-75.32,"Hypothetical unincorporated Sussex County, Delaware site. Confirm Delmarva service, PLC and tax geography independently."),
+       "mon_power_west_virginia":(39.5,-80.17,"Hypothetical unincorporated Marion County, WV. Confirm Mon Power service and absence of local electric taxes independently."),
+       "indiana_michigan_power_michigan":(42.1167,-86.45,"Hypothetical Benton Harbor, Michigan site. Confirm I&M service, meter assignment and taxes independently."),
+       "indiana_michigan_power_indiana":(41.08,-85.14,"Hypothetical Fort Wayne, Indiana site. Confirm I&M service, metering and tax independently."),
+       "appalachian_power_virginia":(37.27,-79.94,"Explicit hypothetical City of Roanoke, Virginia site. Confirm APCo Standard Service, tax jurisdiction and any DER agreement independently."),
+       "duke_energy_ohio":(39.20,-84.54,"Explicit hypothetical site near Cincinnati, Ohio. Confirm Duke service, ordinary SSO, DM classification and local charges independently of coordinates."),
        "aes_ohio":(39.82,-84.25,"Explicit hypothetical unincorporated Montgomery County Ohio site; AES service, ordinary SSO, demand history, no off-peak election/local charges and exact approved ordinary PV/storage are independent account facts, not inferred from coordinates"),
        "firstenergy_ohio_toledo":(41.50,-83.65,"Explicit hypothetical unincorporated Wood County Ohio site; Toledo Edison service, ordinary SSO, actual contract demand, absence of municipal charges and active approved renewable service are independent account facts, not inferred from coordinates"),
        "firstenergy_ohio_illuminating":(41.50,-81.30,"Explicit hypothetical unincorporated Geauga County Ohio site; The Illuminating Company service, ordinary SSO, contract demand, absence of municipal charges and active approved renewable service are independent account facts, not inferred from coordinates"),
@@ -126,9 +133,9 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
         request["operating_contract"]["renewable_only_charging"]=True
-    if utility in ("duke_energy_ohio","aes_ohio"):
+    if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio"):
         request["operating_contract"]["renewable_only_charging"]=True
-    if utility=="duquesne_light_pennsylvania":
+    if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "duquesne_light_pennsylvania"):
         request["operating_contract"]["renewable_only_charging"]=True
         if not residential:
             request["solar"]["dc_capacity_kw"]=1.5
@@ -343,6 +350,19 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
+    if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan"):
+        equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
+        if op["mode"]!="non_export" or op["grid_charging_confirmed"]:
+            raise ValueError("This utility scope requires non-export operation and PV-only battery charging.")
+    if utility=="indiana_michigan_power_indiana":
+        if op["mode"]!="non_export" or op["grid_charging_confirmed"]:
+            raise ValueError("I&M Indiana requires non-export operation and PV-only battery charging.")
+    if utility=="appalachian_power_virginia":
+        equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
+        if op["mode"]!="non_export" or op["grid_charging_confirmed"]:
+            raise ValueError("Appalachian Power scope requires non-export operation and PV-only battery charging.")
+        if float(np.max(load))>module.STUDY_LIMIT_KW+1e-7:
+            raise ValueError("Appalachian Power native load exceeds the 25 kW study limit. Simulated imports cannot establish SGS eligibility.")
     if utility=="duke_energy_ohio":
         equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
         if op["mode"]!="non_export" or op["grid_charging_confirmed"]:
@@ -360,11 +380,13 @@ def prepare(r):
     if utility=="duquesne_light_pennsylvania" and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("Duquesne first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
-    if utility=="aes_ohio":
+    if utility in ("mon_power_west_virginia","aes_ohio"):
         _,first_block,first_cycle=cycles[0]
         module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],state=None,equipment=equipment)
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
+        if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana"):
+            module.validate_native_load(cycle_account(a,cycle), load[block])
         if utility=="aes_ohio" and float(np.max(load[block]))>(25. if a["tariff"]=="D17" else 100.)+1e-7:
             raise ValueError("AES Ohio native load exceeds the declared D17 25kW/D19 100kW study envelope; PV-reduced imports cannot establish eligibility.")
         if utility=="firstenergy_ohio_toledo" and float(np.max(load[block]))>(25. if a["tariff"]=="RS" else 100.)+1e-7:

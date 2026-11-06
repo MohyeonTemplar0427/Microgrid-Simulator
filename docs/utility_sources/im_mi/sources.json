@@ -1,0 +1,101 @@
+{
+  "utility": "indiana_michigan_power_michigan",
+  "jurisdiction": "MI",
+  "grid_operator": "PJM",
+  "zone": "AEP",
+  "retrieved_date": "2026-11-05",
+  "plans": {
+    "RS": [
+      "015",
+      "016"
+    ],
+    "GS": [
+      "215",
+      "218"
+    ]
+  },
+  "coverage": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-04-30"
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2025-12-31"
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-05-01",
+      "end": "2025-05-31",
+      "reason": "Tax Rider D-123 states bills rendered but the revision footer starts service May 16. Allocation is unverified."
+    }
+  ],
+  "sources": [
+    {
+      "name": "Utility book June 30, 2025",
+      "url": "https://qa.indianamichiganpower.com/lib/docs/ratesandtariffs/Michigan/IMMITBBk182025-06-30.pdf",
+      "filename": "utility_jun25.pdf",
+      "pages": "D-2–5, D-19–23, D-114–123",
+      "purpose": "Base, actual2025 PSCR, original realignment, February2025 EWR and May16 tax zeroing",
+      "sha256": "d56a7c9d33de573b5f43aac7a4deb371b826a338895c5add2008cd78be0521c6"
+    },
+    {
+      "name": "Utility book September18,2026",
+      "url": "https://www.indianamichiganpower.com/lib/docs/ratesandtariffs/Michigan/IM_MI_TB_Bk_19_2026_09_18.pdf",
+      "filename": "utility_sep26.pdf",
+      "pages": "D-2–5, D-19–23, D-114–123",
+      "purpose": "MPSC19 accessibility reissue and actual July2026 PSCR, August RRA, September LIEAF",
+      "sha256": "011bb0946fb4301ea4b79085231f72a5f9bf542fcc348ca927d3c53612e1d5ac"
+    },
+    {
+      "name": "MPSC18 current cached rate sheets",
+      "url": "https://www.michigan.gov/mpsc/-/media/Project/Websites/mpsc/consumer/rate-books/electric/indiana-michigan/IM-18-current.pdf?hash=5958609692FDCE1A563587C0B12D3B13&rev=7e1c95088a7f4809b7f2c2e61b007181",
+      "filename": "regulator_historical_review.txt",
+      "evidence_kind": "cached_primary_source_text",
+      "purpose": "First Revised D-117 effective August2025, Second Revised D-122 September2025",
+      "sha256": "6360fd37aa62cce70cd3f5d45ed3d187137d8e1e788f74f8f5f4fa36dfb9e880"
+    },
+    {
+      "name": "MPSC18 canceled cached rate sheets",
+      "url": "https://www.michigan.gov/mpsc/-/media/Project/Websites/mpsc/consumer/rate-books/electric/indiana-michigan/IM-18-cancelled-A-B-C-D.pdf?hash=7F78A3FEA6034049BAC0BDAAD624F537&rev=a980c8a51e0e48c5bb34ec32cb378513",
+      "filename": "regulator_historical_review.txt",
+      "evidence_kind": "cached_primary_source_text",
+      "purpose": "Original D-118 January2025 and original D-123 credits. Companion regulator_riders_review.txt preserves Second Revised D-118 January2026.",
+      "sha256": "6360fd37aa62cce70cd3f5d45ed3d187137d8e1e788f74f8f5f4fa36dfb9e880"
+    },
+    {
+      "name": "Michigan Treasury tax rates",
+      "url": "https://www.michigan.gov/taxes/business-taxes/sales-use-tax",
+      "purpose": "Ordinary residential4% and commercial6%"
+    },
+    {
+      "name": "Michigan Treasury LIEAF tax treatment",
+      "url": "https://www.michigan.gov/treasury/reference/letter/2013-letter-rulings/letter-ruling-2013-5",
+      "purpose": "LIEAF is excluded from sales price and therefore the sales tax base"
+    },
+    {
+      "name": "I&M published PSCR reduction",
+      "url": "https://espanol.indianamichiganpower.com/company/news/view?releaseID=12209",
+      "purpose": "May26,2026 utility announcement reports roughly14.50 dollars per1000kWh decrease before tax"
+    },
+    {
+      "name": "Michigan interconnection",
+      "url": "https://www.indianamichiganpower.com/business/builders/CreateGreen-MI",
+      "purpose": "Application and approval required; no generic export credit or ordinary-billing agreement inferred"
+    }
+  ],
+  "access_limits": [
+    "MPSC PDF direct downloads returned403. Cached regulator indexed sheets retain primary-source text and explicit source grade.",
+    "Old utility April2026 URL returned404. Official linked September2026 book and surviving June2025 utility QA book were downloaded.",
+    "May2025 Tax Rider clock conflict blocks the complete cycle. No allocation assumption is supplied."
+  ],
+  "billing_scope": "Full monthly charges on confirmed matching calendar service/bill cycles; ordinary full-service single-phase secondary.",
+  "eligibility_scope": "GS non-demand metering, independent usage<4500kWh/month and under10kW EWR assignment.",
+  "tax_scope": "4% residential or6% ordinary commercial taxable subtotal, with LIEAF excluded.",
+  "benchmark_scope": "Independent Decimal source-vector rebill and published PSCR change comparison; no customer invoice."
+}

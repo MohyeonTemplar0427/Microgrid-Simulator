@@ -22,6 +22,13 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 UTILITY_DOCS = {
+    "appalachian_power_west_virginia": ("docs/Appalachian_Power_West_Virginia.md", "docs/utility_sources/appalachian_wv/sources.json", "test/test_appalachian_wv.py"),
+    "pepco_district_of_columbia": ("docs/Pepco_DC.md", "docs/utility_sources/pepco_dc/sources.json", "test/test_pepco_dc.py"),
+    "delmarva_delaware": ("docs/Delmarva_Delaware.md", "docs/utility_sources/delmarva_de/sources.json", "test/test_delmarva_de.py"),
+    "mon_power_west_virginia": ("docs/Mon_Power_West_Virginia.md", "docs/utility_sources/mon_power_wv/sources.json", "test/test_mon_power_wv.py"),
+    "indiana_michigan_power_michigan": ("docs/Indiana_Michigan_Power_Michigan.md", "docs/utility_sources/im_mi/sources.json", "test/test_im_mi.py"),
+    "indiana_michigan_power_indiana": ("docs/Indiana_Michigan_Power_Indiana.md", "docs/utility_sources/im_in/sources.json", "test/test_im_in.py"),
+    "appalachian_power_virginia": ("docs/Appalachian_Power_Virginia.md", "docs/utility_sources/appalachian_va/sources.json", "test/test_appalachian_va.py"),
     "duke_energy_ohio": ("docs/Duke_Energy_Ohio.md", "docs/utility_sources/duke_ohio/sources.json", "test/test_duke_oh.py"),
     "aes_ohio": ("docs/AES_Ohio.md", "docs/utility_sources/aes_ohio/sources.json", "test/test_aes_ohio.py"),
     "firstenergy_ohio_toledo": ("docs/Toledo_Edison_Ohio.md", "docs/utility_sources/toledo_oh/sources.json", "test/test_toledo_oh.py"),
@@ -291,6 +298,11 @@ def build_rows(catalogs=None, *, evidence=(), root=ROOT):
                     if utility=="duke_energy_ohio":
                         row["coverage_basis"]="Matching complete calendar service, final meter read and revenue months; independent DM history and retained classification"
                         row["capacity_transmission"]="Separate RC and RE retail supply blocks, BTR and RTEP transmission, no demand price or wholesale adder"
+                    if utility=="indiana_michigan_power_indiana":
+                        row["coverage_basis"]="Complete matching Indiana calendar cycles within filed FAC and billed-month tracker windows, with independent GS non-demand metering and taxable status"
+                    if utility=="appalachian_power_virginia":
+                        row["coverage_basis"]="Matching calendar service and bill dates in verified intersections, with City of Roanoke taxes and independent SGS history"
+                        row["capacity_transmission"]="Filed standard generation and fuel, T-RAC transmission and separate capacity riders, with no wholesale adder"
                     for period in ("monthly", "annual"):
                         cases = [x for x in matched if x["period"] == period]
                         complete = [x for x in cases if x["evidence_status"] == "audited_complete" and segment.get("is_complete_bill") is not False]

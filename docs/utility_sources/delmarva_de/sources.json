@@ -1,0 +1,95 @@
+{
+  "utility": "delmarva_delaware",
+  "jurisdiction": "DE",
+  "tariff": "PSC Del.No.8",
+  "retrieved": "2026-11-05",
+  "source_grade": "dated_filed_tariff_and_published_utility_compliance_table",
+  "sources": [
+    {
+      "name": "2025 tariff book",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt62f3e22e86bbad0a/68bf19565c76c08916ee2704/2025.09.05_filing_DPL_DE_Electric_Primary_tar.pdf?branch=prod_alias",
+      "evidence": "Leaves27,39,43,53\u201354,60\u201361,111\u2013112,120\u2013124,127,139. December2025 stack.",
+      "file": "book25.pdf",
+      "sha256": "b38e45db35cb8c353eeefae712981c0e0a204bd52cec6397106ee231537b26f3"
+    },
+    {
+      "name": "2026 tariff book",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt62f3e22e86bbad0a/6a9889810528b53e0f1e5df6/2026.08.21_filing_DPL_DE_Electric_Primary_tar_.pdf",
+      "evidence": "Pages44/48 ordinary rates;154transmission;155PCA;164UFRC;165EDIT;168DSIC;172EE;184SSER; rule leaf27.",
+      "file": "book26.pdf",
+      "sha256": "802d47eed7d435079df7416fc2478ec8fac34b1b412e9efa152ebccabf1dca07"
+    },
+    {
+      "name": "RPCR table",
+      "url": "https://www.delmarva.com/cdn/assets/v3/assets/blt47b6e332b18fb457/blt1075ed3a862f315b/6a0f4a312b4519b154cb738a/RPCR_Table_I-net_posting_eff_June_to_December_.pdf",
+      "evidence": "Page2 visually inspected. Dec2025 QFCP .003860/RPS .005795. Jan\u2013May26 .004042/.005795. Jun\u2013Dec26 .004042/.005172. Earlier2025 not extrapolated.",
+      "file": "rpcr26.pdf",
+      "sha256": "b7b613a809259f242843ee15fcbb4b047c05b0f018f4a8b81b9580a9fd550afb"
+    },
+    {
+      "name": "Independent interim component benchmark",
+      "url": "https://delafile.delaware.gov/CaseManagement/ViewFileNetDocument.aspx?Id=88103153-93df-43f4-9653-f45ee8d56f9d&Type=Docket",
+      "evidence": "July8 compliance filing25-1555. JLM-S9+3-1 Tables13\u201314 confirm fixed/volumetric base components adopted by interim sheets. Full illustrative bills have earlier supply/riders and are not current-cycle full-bill benchmarks.",
+      "file": "interim_bill26.pdf",
+      "sha256": "369bce2a9d72b92367e1088dbe3058377a58b0c17f4f33052e84517c963a91af"
+    },
+    {
+      "name": "Public utility tax",
+      "url": "https://delcode.delaware.gov/title30/c055/",
+      "evidence": "30Del.C.5502 ordinary4.25% and5506(e) residential exemption. Reduced rates/exemptions excluded."
+    },
+    {
+      "name": "Embedded PSC assessment",
+      "url": "https://depsc.delaware.gov/wp-content/uploads/sites/54/2023/11/Consent-Item-1C-Docket-No.-23-1398-Order-10329.pdf",
+      "evidence": "Order10329 revised supply/rider rates with4mill assessment. No extra assessment multiplier."
+    }
+  ],
+  "coverage": [
+    {
+      "start": "2025-12-01",
+      "end": "2025-12-31"
+    },
+    {
+      "start": "2026-09-01",
+      "end": "2026-11-30"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-11-30",
+      "reason": "Earlier QFCP-RC factors and composite intersections are unverified."
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-08-31",
+      "reason": "Superseded DSIC and transmission versions or July transition allocation are unverified."
+    },
+    {
+      "start": "2026-12-01",
+      "end": "2026-12-31",
+      "reason": "December 9 interim base-rate transition allocation is unverified."
+    }
+  ],
+  "eligibility": {
+    "R": "Ordinary private household, separate electric space-heating class excluded",
+    "SGS_ND": "Utility-retained secondary SGS-ND, independent maximum prior usage<3500kWh, no outstanding12month MGS-S transfer obligation"
+  },
+  "billing": {
+    "clock": "America/New_York15minute actual DST intervals",
+    "cycle": "Complete matching calendar cycles only",
+    "transmission": "Independent utility-assigned PLCkW and validity dates; never inferred from load",
+    "dsic": "5.32% December25 of customer plus volumetric distribution base;0% Sep\u2013Nov26",
+    "tax": "Ordinary unincorporated Sussex R exemption and SGS4.25%",
+    "wholesale": "PJM DPL metadata separate from supplier, tax locality and retail bill"
+  },
+  "blocked_routes": [
+    "Current tariff HTML has no readable content/blocked2.9KB response; indexed official PDFs retrieved.",
+    "2026RPCR PDFpage2 is an image. PDFKit render was visually inspected and archived in ignored evidence."
+  ],
+  "limitations": [
+    "No annual2025/26coverage. SupersededQFCP/DSIC/transmission sheets and midcycle proration unresolved.",
+    "No actual invoice. Independent full-bill benchmarks use separate tariff transcription.",
+    "Exact invoice rounding outside scope."
+  ]
+}

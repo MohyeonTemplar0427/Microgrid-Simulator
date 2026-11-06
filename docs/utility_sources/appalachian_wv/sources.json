@@ -1,0 +1,65 @@
+{
+  "utility": "appalachian_power_west_virginia",
+  "jurisdiction": "WV",
+  "reviewed_on": "2026-11-05",
+  "scope": "Ordinary unincorporated single-phase secondary bundled non-export",
+  "sources": [
+    "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENG_Tariff_Sheets_Eff_11-19-25.pdf#page=1",
+    "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENEC_Tariff_Sheets_Eff_9-1-26.pdf",
+    "https://code.wvlegislature.gov/11-15-8/",
+    "https://www.appalachianpower.com/business/builders/generating-equipment"
+  ],
+  "coverage": [
+    {
+      "start": "2025-10-01",
+      "end": "2025-10-31"
+    },
+    {
+      "start": "2026-09-01",
+      "end": "2026-10-31"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-09-30",
+      "reason": "Earlier tariff intersections and September 29 allocation are not fully reconciled."
+    },
+    {
+      "start": "2025-11-01",
+      "end": "2026-08-31",
+      "reason": "The November CRRC true-up and intermediate ENG/RET, base-rate and ENEC intersections remain unverified."
+    },
+    {
+      "start": "2026-11-01",
+      "end": "2026-12-31",
+      "reason": "The next CRRC true-up and later components have not been verified."
+    }
+  ],
+  "decisions": [
+    "Tariff 16 ordinary RS015 and SGS231. Source periods October2025 and September\u2013October2026.",
+    "2025 exact base and rider factors from cached official tariff source, current ENEC5.779/5.346cents before Nov1 true-up.",
+    "Original ENG effective billed September29 at .00313cents RS and .00245cents SGS. Exact factor corrected after independent review.",
+    "No assumed November2025 ENEC/CRRC reconciliation. Direct archived PDFs returned404. Web excerpts retained with source URL.",
+    "2026 authoritative base14.02 RS/16.51 SGS from July1, ENEC Sept1 includesCRRC. EEDR/ECS, BBS0/BRSP0 and RET June21 retained.",
+    "The illustrative summary fixed-charge total13.44 is stale in2026. The authoritative schedule14.02 matches official headline183.07 at1000kWh.",
+    "Official calculation workbook has stale date/code/precision fields. It corroborates embeddedCRRC structure but does not override filed sheet values."
+  ],
+  "private_source_sha256": {
+    ".cache/appalachian_wv/sources/web_2025_rs_eng.txt": "40731f7d248bfae0a3733beffe1cd982919fee7832138a148d0fc2bc062efe3b",
+    ".cache/appalachian_wv/sources/book_sep26.txt": "f73545c2cb86e9080ad269e0868671bddfc554ef4b4f0de128866ff035c8f21f",
+    ".cache/appalachian_wv/sources/web_2025_details.txt": "cdf160069d82c2e7a220b8904398679c6913ea4b5cb61a79f80b0c17455f76b7",
+    ".cache/appalachian_wv/sources/web_2025_sheets.txt": "b1e7230b8adefba08db198bae257739e520cb39d57b1d60d50f6655295599932",
+    ".cache/appalachian_wv/sources/web_2025_index.txt": "d4b899e3e560ac13adb8d987289e8539b396a32c3cd5b970881556981fecc93a",
+    ".cache/appalachian_wv/sources/web_2025_numbers.txt": "503a978e1e56d95671c74a35b8bce5fa5e9de368e978949152a9b02ead005add",
+    ".cache/appalachian_wv/sources/book_sep26.pdf": "1ec085c33d6b8ebdce9e2568107575ca0e454197c3bd0577ba8f3b03e9fce6a0",
+    ".cache/appalachian_wv/sources/relevant26.txt": "1bf55a5b4c7d0be19a005e81978d5c25634a1113b3a309ac5fe577a174ba4daa",
+    ".cache/appalachian_wv/sources/web_2025_crrc_notes.txt": "879437ce34fbc4b8da84b088a1161a16ba2c3141b8b363d0e5e1b86a93c12726",
+    ".cache/appalachian_wv/sources/calculator_sep26.xlsx": "7bc7003747c796dc2cc5591a425ff035d2a86184353483d7b3b4102ab099f488"
+  },
+  "tax_sources": [
+    "https://code.wvlegislature.gov/11-15-8/",
+    "https://tax.wv.gov/Documents/Reports/TaxExpenditureStudy/ConsumersSalesAndServiceTaxAndUseTaxExpenditures.January.2025.pdf"
+  ],
+  "independent_review": ".cache/pepco_dc/review_appalachian_mon_power.json"
+}

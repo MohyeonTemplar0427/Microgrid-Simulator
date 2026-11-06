@@ -1,0 +1,72 @@
+{
+  "utility": "mon_power_west_virginia",
+  "jurisdiction": "WV",
+  "reviewed_on": "2026-11-05",
+  "scope": "Ordinary unincorporated single-phase secondary bundled non-export",
+  "sources": [
+    "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/west-virginia/tariffs/WVMPRetailTariff.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-09%20WV%20Mon%20Power%20Electric%20Rates%20Notice%20Residential.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-09%20WV%20Mon%20Power%20Non-residential%20Rates.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-09%20MP%20Residential%20Rates.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-09%20MP%20Non-Resi%20Rates.pdf",
+    "https://code.wvlegislature.gov/11-15-8/",
+    "https://www.firstenergycorp.com/feconnect/westvirginia.html",
+    "https://www.psc.state.wv.us/Mgmt_Sum/MSR2025_Report.pdf"
+  ],
+  "coverage": [
+    {
+      "start": "2025-08-01",
+      "end": "2025-12-31"
+    },
+    {
+      "start": "2026-08-01",
+      "end": "2026-11-30"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-07-31",
+      "reason": "Earlier rider chronology and July 15 allocation are not verified."
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-07-31",
+      "reason": "January ENEC/ELG, April 5 vegetation and July 15 ECC intersections remain unverified."
+    },
+    {
+      "start": "2026-12-01",
+      "end": "2026-12-31",
+      "reason": "Later tariff intersection is not verified."
+    }
+  ],
+  "decisions": [
+    "Tariff22 ordinary A/B. Source periods August\u2013December2025 and August\u2013November2026.",
+    "Official July15 2025 notices provide full residential/commercial stacks, including normalization, combinedECC,vegetation,ELG,renewable.",
+    "WVPSC management summary confirms137.43/1000kWh with next ENEC factors January1 2026. Earlier2025 and intermediate2026 intersections blocked.",
+    "August1 2026 official notices reconcile current base and separate ECC/ECC2/normalization, vegetation. ELG and renewable rolled into base.",
+    "B minimum uses maximum current/prior12monthlykWh/120 at$2.41 per kW, then additional riders. Independent normalcapacity<10kW and no demandmeter required.",
+    "Initial no-local-tax scope deliberately excludes municipal component-specific tax treatment."
+  ],
+  "private_source_sha256": {
+    ".cache/mon_power_wv/sources/commercial_aug26.pdf": "7a8b4b67ee94467267511036aa20cf5bbb9c7b25ea1bdb3cb9380d5a072ef49c",
+    ".cache/mon_power_wv/sources/residential_aug26.txt": "d73dd320afe921f68a5c5d2e138e21d779fa309e63036551da1345c9013e6ecf",
+    ".cache/mon_power_wv/sources/commercial_aug26.txt": "c59c68c76a272808a42a7c8a6c8bd7a0e665d27b8fd5e0f2caace303cfe67a55",
+    ".cache/mon_power_wv/sources/residential_aug26.pdf": "39a14557bd2e277e3a9aece4577474eedbfa3a41997338ed7196b784e3df69a8",
+    ".cache/mon_power_wv/sources/residential_jul25.pdf": "f07bc8993e987f10041c0efd05dbfacaf70a76f63ba9fd84e36d441594c747e1",
+    ".cache/mon_power_wv/sources/residential_jul24.pdf": "63ef0c0f9d44727f2116e82d12e46c13512e75fc27947c6de691ca68bf0b85d2",
+    ".cache/mon_power_wv/sources/book_current.pdf": "46789d29b6f67af8cb3237790850e4f96ae174f39a09354fd418c9fa453d1ec0",
+    ".cache/mon_power_wv/sources/commercial_jul25.txt": "54ac93fbc69696c1b439102f8cc640d335c056588b20bbf4306e765b6b594aec",
+    ".cache/mon_power_wv/sources/commercial_jul24.txt": "32d7e90586699c1647e96901af6b5200a39976f1a8c0219f23312de72e8205b8",
+    ".cache/mon_power_wv/sources/residential_jul25.txt": "3bef4d8c2bb2999082d267e6be3a82435873011668f443f645ac49716f4c7c4c",
+    ".cache/mon_power_wv/sources/residential_jul24.txt": "83a32e42be7860f6b22c799fddca8e7227645cbbf869b8ba77111e1fcaad69f5",
+    ".cache/mon_power_wv/sources/book_current.txt": "e0135f1533539fc099e376d22303193feac99517defd18980cedbfff6b148393",
+    ".cache/mon_power_wv/sources/commercial_jul25.pdf": "dead926180b623c6da0b6bc89951a1ce6a1fbcd16184e0aeff7df75c584a25b2",
+    ".cache/mon_power_wv/sources/commercial_jul24.pdf": "bcfb8c0c6b06eeb56e35fc07ddf91e5e3f0a92ae4e52f3f3b16f355bc9eb4eb8"
+  },
+  "tax_sources": [
+    "https://code.wvlegislature.gov/11-15-8/",
+    "https://tax.wv.gov/Documents/Reports/TaxExpenditureStudy/ConsumersSalesAndServiceTaxAndUseTaxExpenditures.January.2025.pdf"
+  ],
+  "independent_review": ".cache/pepco_dc/review_appalachian_mon_power.json"
+}
