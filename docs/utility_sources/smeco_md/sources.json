@@ -4,11 +4,16 @@
   "grid_operator": "PJM",
   "zone": "SMECO",
   "retrieved_date": "2026-11-05",
-  "plans": ["R", "GSS"],
+  "plans": [
+    "R",
+    "GSS"
+  ],
   "billing_status": "blocked_missing_approved_component_intersections",
   "coverage": [],
   "executable_coverage": [],
-  "pending_months": ["2026-11"],
+  "pending_months": [
+    "2026-11"
+  ],
   "ptc_scope": "supply_only_base_sos_plus_pca",
   "gaps": [
     {
@@ -26,7 +31,7 @@
       "sha256": "df56b9a1cb17034804db31fa43dd5f1ed4c624e5a3416051001974a257d444db",
       "evidence_kind": "downloaded_primary_tariff",
       "pages": "Sheets49–60,63–64,72–74,143–144,157,177–178",
-      "purpose": "Current R/GSS eligibility and Aug1 2026 base schedules, BSA formula, 2026 EMC, USP and prior written generation approval. This book does not supply historical monthly BSA/PCA factors."
+      "purpose": "Current R/GSS eligibility and Aug1 2026 base schedules, BSA formula, Jan1 2026 EMC, Jun1 2025 USP sheets177–178 and prior written generation approval. This book does not supply historical monthly BSA/PCA factors."
     },
     {
       "name": "SMECO rates and fees page",
@@ -76,17 +81,35 @@
       "name": "USP",
       "url": "https://www.smeco.coop/wp-content/uploads/RIDER-USP-1.pdf",
       "pages": "Sheets177–178",
-      "purpose": "Effective Dec1 2024 R0.32dollars/month; commercial tier assigned using independent prior-year distribution revenue with first-quarter reclassification."
+      "purpose": "Individual sheet version effectiveDec1 2024 R0.32dollars/month and commercial prior-year-revenue tiers. Combined book retains a distinct Jun1 2025 version with same amounts; no whole-bill coverage inferred.",
+      "followup_2026_11_06": {
+        "filename": "usp_individual.pdf",
+        "sha256": "756c868ffcae42e0e585ff6b79dc2d8080f0245707f2040ce95f53f51838fb94",
+        "private_directory": ".cache/smeco_md/gap_20261106",
+        "retrieved_date": "2026-11-06"
+      }
     },
     {
       "name": "Legislative relief",
       "url": "https://www.smeco.coop/relief/",
-      "purpose": "Account-specific residential relief summer2025/winter2026 under HB1035; no generic zero credit or unknown historical eligibility is assumed."
+      "purpose": "Account-specific residential relief summer2025/winter2026 under HB1035; no generic zero credit or unknown historical eligibility is assumed.",
+      "followup_2026_11_06": {
+        "filename": "relief.html",
+        "sha256": "18bbfbbadb4d4f944ee62a59d1495b7915500aa75e0be083d65a7eb5140c7635",
+        "private_directory": ".cache/smeco_md/gap_20261106",
+        "retrieved_date": "2026-11-06"
+      }
     },
     {
       "name": "Commercial bill description",
       "url": "https://www.smeco.coop/my-account/paying-your-bill/about-the-commercial-bill/",
-      "purpose": "States Maryland6percent sales/use tax and actual15-minute demand. This is insufficient alone to infer every tax-base inclusion/exclusion."
+      "purpose": "States Maryland6percent sales/use tax and actual15-minute demand. This is insufficient alone to infer every tax-base inclusion/exclusion.",
+      "followup_2026_11_06": {
+        "filename": "commercial_bill.html",
+        "sha256": "7f91a5acfd373c419959dc5906d15ca29aa936c8822fdca7d4db5d2401dd11f3",
+        "private_directory": ".cache/smeco_md/gap_20261106",
+        "retrieved_date": "2026-11-06"
+      }
     },
     {
       "name": "PSC monthly BSA case index",
@@ -122,13 +145,111 @@
       "name": "PJM OATT Attachment H-9C",
       "url": "https://agreements.pjm.com/oatt/30388",
       "purpose": "SMECO NITS revenue requirement is related to Pepco Zone network load obligation; no retail rate or wholesale-price settlement is inferred."
+    },
+    {
+      "name": "COMAR03.06.01.10 utility sales tax",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.10",
+      "evidence_kind": "downloaded_primary_utility_or_state_source",
+      "purpose": "Residential exemption and sales-tax exclusions for county tax, environmental surcharge and late-payment penalties; not a complete bill.",
+      "filename": "comar_sales_utilities.html",
+      "sha256": "288889df2e37332514953d9869d6453e5239d0e957651c4264c627864150658c",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "retrieved_date": "2026-11-06"
+    },
+    {
+      "name": "COMAR20.50.01.04 environmental rounding",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/20.50.01.04",
+      "evidence_kind": "downloaded_primary_utility_or_state_source",
+      "purpose": "Positive half-up rounding to cents for the environmental surcharge.",
+      "filename": "comar_environmental_rounding.html",
+      "sha256": "68653197e4cb30cffbc738b0b4cf947b1874fadf96014e6c330d931ef0e66093",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "retrieved_date": "2026-11-06"
+    },
+    {
+      "name": "Public Utilities7-203 environmental surcharge",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gpu&section=7-203",
+      "evidence_kind": "downloaded_primary_utility_or_state_source",
+      "purpose": "Customer cap is lesser of0.15mill/kWh and1000dollars/month; does not establish approved historical SMECO factors.",
+      "filename": "environmental_statute.html",
+      "sha256": "b53fe1fdd24b4998224a3df93e30410bfe1c9de1cfccc1978b124c7198d579f3",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "retrieved_date": "2026-11-06"
+    },
+    {
+      "name": "August2025 legislative energy relief notice",
+      "url": "https://www.smeco.coop/news-releases/smeco-to-distribute-legislative-energy-relief-refund/",
+      "evidence_kind": "downloaded_primary_utility_or_state_source",
+      "purpose": "Official summer credit eligibility/amounts; printed tier endpoints overlap and cannot resolve exact boundary treatment.",
+      "filename": "relief_aug2025.html",
+      "sha256": "bd3cb58d01309263d7415e556cc062f42bb9804efbf5bc0ed9358dc18da53d50",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "retrieved_date": "2026-11-06"
+    },
+    {
+      "name": "PSC official filings Oct19-23 2026",
+      "url": "https://webpscxb.pscmaryland.com/DMS/filingsreport/3",
+      "filename": "filingsreport3.html",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "sha256": "1b0373f2c175e9faa443df074166e2bd7b539925ae80cb9bc5b5c6c96b1a52d7",
+      "retrieved_date": "2026-11-06",
+      "evidence_kind": "success_metadata_only",
+      "method": "GET",
+      "purpose": "SMECO filed BSA effective November2026 on October22 2026, Case9456 ML335643.; SMECO filed monthly Purchased Power Cost Adjustment on October22 2026, Case9504 ML335644, public and confidential.; HTML button documents official maillogpdfview endpoint. Filing presence does not prove rate approval."
+    },
+    {
+      "name": "PSC public MailLog search form",
+      "url": "https://webpscxb.pscmaryland.com/DMS/maillogsearch",
+      "filename": "maillogsearch.html",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "sha256": "60cff0af00aa5151414475040f1708b31e18dc8cabbcd993b826e6ded10cb97c",
+      "retrieved_date": "2026-11-06",
+      "evidence_kind": "success",
+      "method": "GET",
+      "purpose": "Public search form, not an approved numeric rate."
+    },
+    {
+      "name": "PSC MailLog332289 public search result",
+      "url": "https://webpscxb.pscmaryland.com/DMS/maillogsearch",
+      "filename": "maillog332289_search.html",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "sha256": "c59ab261383d0e2adc1442545de90cb5602b2ae4b39804bc4adc6b1936cd9060",
+      "retrieved_date": "2026-11-06",
+      "evidence_kind": "success_metadata_only",
+      "method": "POST public search form, number332289",
+      "purpose": "SMECO July20 2026 filing: BSA effective August2026 billingmonth, Case9456 ML332289.; Only document-view URL is /DMS/maillogpdfview/MailLog/0/0/332289/0.; No actual factor or approval extracted."
+    },
+    {
+      "name": "Calvert Fire and Rescue Commission May26 2026 packet",
+      "url": "https://www.calvertcountymd.gov/AgendaCenter/ViewFile/Agenda/_05262026-5045",
+      "filename": "calvert_20260526_agenda.pdf",
+      "private_directory": ".cache/smeco_md/gap_20261106",
+      "sha256": "b30e407ce83d10c5cd35af13a93910a5e133c733f746933eea4fffdd9fc320f7",
+      "retrieved_date": "2026-11-06",
+      "evidence_kind": "success_corroboration_only",
+      "method": "GET",
+      "purpose": "Prince Frederick VRS Statement of Activity Detail is a general ledger, not an electric invoice.; Records nonzero BSA/PCA-energy/PCA-demand/EmPOWER/franchise/USP/environmental amounts, but no unit factors, kWh, billing cycle, tariff class or eligibility.; Cannot derive R/GSS rates or independent bill benchmark."
     }
   ],
   "verified_current_component_observations_not_executable_bills": {
     "base_effective": "2026-08-01",
     "R": {
-      "summer_billing_months": [5,6,7,8,9],
-      "winter_billing_months": [10,11,12,1,2,3,4],
+      "summer_billing_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "winter_billing_months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
       "sos_summer_dollars_per_kwh": 0.1248,
       "sos_winter_dollars_per_kwh": 0.1319,
       "distribution_dollars_per_kwh": 0.05404,
@@ -136,7 +257,7 @@
       "minimum_rule": "Facilities plus USP; other applicable riders/taxes remain payable."
     },
     "GSS": {
-      "sos_summer_dollars_per_kwh": 0.1150,
+      "sos_summer_dollars_per_kwh": 0.115,
       "sos_winter_dollars_per_kwh": 0.1218,
       "distribution_dollars_per_kwh": 0.04488,
       "secondary_single_phase_facilities_dollars_per_month": 18.28,
@@ -144,15 +265,17 @@
       "demand_rule": "Maximum current15minute demand,50percent highest preceding11months,50percent contracted capacity; power-factor adjustment if measured peakPF<90percent.",
       "minimum_rule": "Facilities charge; additional applicable riders/taxes remain payable."
     },
-    "franchise_tax_dollars_per_kwh": 0.000620,
+    "franchise_tax_dollars_per_kwh": 0.00062,
     "environmental_surcharge": "Mandatory; approved dated rate and monthlycap/rounding must be reconciled separately.",
     "emc_effective": "2026-01-01",
     "emc_R_dollars_per_kwh": 0.01247,
     "emc_GSS_dollars_per_kwh": 0.01057,
-    "usp_effective": "2024-12-01",
+    "usp_effective": "2025-06-01",
     "usp_R_dollars_per_month": 0.32,
     "usp_GSS_example_175_to_1299_prior_year_revenue_dollars_per_month": 1.85,
-    "usp_GSS_assignment": "Customer-specific actual prior-year revenue and first-quarter placement; modeled imports do not establish tier."
+    "usp_GSS_assignment": "Customer-specific actual prior-year revenue and first-quarter placement; modeled imports do not establish tier.",
+    "usp_individual_sheet_effective": "2024-12-01",
+    "usp_version_reconciliation": "Combined bookPDF190–191 effectiveJun1 2025; separately linked individualPDF1–2 effectiveDec1 2024. Both show sameR0.32 and commercial tier amounts. Exact source versions preserved; remaining dated components still missing."
   },
   "pjm_identity": {
     "emergency_transmission_zone": "SMECO",
@@ -173,5 +296,109 @@
     "Residential relief/capital-refund applicability and independently documented ordinary account facts.",
     "Exact non-export PV/storage interconnection and import-billing terms, then independent bills, parity, workers, historical cases and browser acceptance on a frozen candidate."
   ],
-  "benchmark_scope": "Source-level eligibility/base/rider review only. No complete customer or synthetic bill benchmark, dispatch acceptance or electrical simulation is claimed for blocked SMECO plans."
+  "benchmark_scope": "Source-level eligibility/base/rider review only. No complete customer or synthetic bill benchmark, dispatch acceptance or electrical simulation is claimed for blocked SMECO plans.",
+  "gap_followup_2026_11_06": {
+    "reviewed_date": "2026-11-06",
+    "status": "no_additional_executable_coverage",
+    "monthly_research_receipt": ".cache/smeco_md/gap_20261106/research_receipt.json",
+    "nonmonthly_retrieval_receipt": ".cache/smeco_md/gap_20261106/nonmonthly_downloads.json",
+    "monthly_filing_metadata": [
+      {
+        "component": "BSA",
+        "billing_month": "2026-08",
+        "case": "9456",
+        "maillog": "332289",
+        "filed_date": "2026-07-20",
+        "approval_established": false,
+        "numeric_factor_recovered": false
+      },
+      {
+        "component": "BSA",
+        "billing_month": "2026-11",
+        "maillog": "335643",
+        "filed_date": "2026-10-22",
+        "approval_established": false,
+        "numeric_factor_recovered": false,
+        "case": "9456"
+      },
+      {
+        "component": "PCA",
+        "billing_month": null,
+        "maillog": "335644",
+        "filed_date": "2026-10-22",
+        "approval_established": false,
+        "numeric_factor_recovered": false,
+        "case": "9504",
+        "published_subject": "Monthly Purchased Power Cost Adjustment Factor; no billing month stated in this index entry."
+      }
+    ],
+    "public_ledger_not_bill_benchmark": {
+      "source": "https://www.calvertcountymd.gov/AgendaCenter/ViewFile/Agenda/_05262026-5045",
+      "pdf_page_1_based": 26,
+      "finding": "General ledger lacks tariff class,kWh/kW,meter dates andunit factors; noR/GSS factor or independent bill benchmark established."
+    },
+    "residential_relief_observations_not_implemented": {
+      "august2025": {
+        "active_account_as_of": "2025-08-01",
+        "historical_year_end": "2025-03-31",
+        "published_average_monthly_kwh_ranges": [
+          "0–400",
+          "400–1200",
+          "1200+"
+        ],
+        "published_credits_dollars": [
+          "40",
+          "55",
+          "67.89"
+        ],
+        "boundary_caveat": "Published endpoints overlap at400/1200. Do not invent an inequality or use modeled load to establish historical eligibility.",
+        "historical_electricity_use_required": true
+      },
+      "january2026": {
+        "active_account_as_of": "2025-12-01",
+        "positive_historical_use_required": true,
+        "historical_year_start": "2024-10-01",
+        "historical_year_end": "2025-09-30",
+        "published_average_monthly_kwh_ranges": [
+          "0–399",
+          "400–799",
+          "800–1199",
+          "1200–1599",
+          "1600–1999",
+          "2000–2399",
+          "2400+"
+        ],
+        "published_credits_dollars": [
+          "40",
+          "47.65",
+          "55.30",
+          "62.95",
+          "70.60",
+          "78.25",
+          "85.90"
+        ],
+        "boundary_caveat": "Fractional-average tier assignment and cash/balance treatment still require reconciliation; no executable credit model."
+      },
+      "account_specific_capital_refunds": "Not inferred or assumedzero; independently verified account applicability required."
+    },
+    "state_tax_observations_not_complete_bill": {
+      "residential_schedule_sales_tax_exempt": true,
+      "commercial_general_sales_tax_percent": "6",
+      "sales_tax_exclusions": [
+        "county_tax",
+        "environmental_surcharge",
+        "late_payment_penalties"
+      ],
+      "environmental_customer_cap_dollars_per_kwh": ".000150",
+      "environmental_customer_cap_dollars_per_month": "1000",
+      "environmental_rounding": "half_up_to_cent",
+      "caveat": "Statutory cap is not a historical filed factor. ActualdatedSMECOenvironmental rate, locality andremainingtaxablecharge reconciliation are missing."
+    },
+    "source_requests": [
+      "Actual approved R/GSS monthly PCA energy/demand and BSA factor sheets, approval orders/notices and billing-month applicability; start with August2026 BSA ML332289. October22 BSA/PCA filings ML335643/335644 are metadata, not approval; PCA month not established.",
+      "Full superseded base/EMC/USP/environmental sheets for requested2025–26 cycles; remainingtaxbase/locality reconciliation.",
+      "Historical account eligibility, actual USP placement andlegislative/capitalcredit treatment, plus ordinarynonexport DERagreements andindependentbills beforeimplementation."
+    ],
+    "validation_scope": "Documentation/source reconciliation only. Engine,frontend,existingcoverage andearlierfrozen evidence remainunchanged. No newbilling/dispatch/OpenDSS/browser acceptance claimed."
+  }
 }

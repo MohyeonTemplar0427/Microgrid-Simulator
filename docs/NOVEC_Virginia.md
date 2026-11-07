@@ -38,6 +38,23 @@ reconstruction, nor a 1,000-kWh illustration is substituted for a complete
 filed component stack. Official bill examples currently retrieved are dated
 2022, so a secondary claim of a June 2026 example is not adopted.
 
+A **November 6, 2026 follow-up** checked the official July 9, August 6 and
+September 10 board summaries and March 2026 customer newsletter; none supplies
+the missing numeric rates. The current linked R-1/SC-1 PDFs remain byte-for-byte
+identical to the verified 2024/2023 sheets. The November PCA page contains no
+additional rate chart, and its rounded increase and approximate bill examples
+cannot establish an exact prior PCA. This bounded review adds no supported
+cycles; its [receipt](../.cache/novec_va/gap_20261106/review.json) retains source
+URLs, downloaded hashes and findings without replacing earlier evidence.
+
+Two primary-source requests remain: (1) the original dated January 2026 PCA
+notice and any intervening notices establishing all applicable factors through
+October; and (2) exact R-1/SC-1 sheets effective November 1, 2026, including
+fixed, energy, supply and minimum charges and their billing applicability.
+Once those components are recovered, verify 2026 state/SCC levy continuity and
+Prince William County tax applicability, including FY2027. That tax continuity
+check was not completed in this follow-up.
+
 The [source ledger](utility_sources/novec_va/sources.json) distinguishes filed
 informational tariffs, official notices, state/county sources, visual SC-1
 transcription and blocked retrievals. Downloaded originals, rendered SC-1 pages,

@@ -332,5 +332,97 @@
       "url": "https://www.novec.com/About_NOVEC/PJM-Overview.cfm",
       "error": "curl: (56) The requested URL returned error: 404"
     }
-  ]
+  ],
+  "gap_followup_2026_11_06": {
+    "reviewed_date": "2026-11-06",
+    "status": "No additional executable coverage; January-December2025 support unchanged and all2026 cycles remain blocked.",
+    "review_receipt": ".cache/novec_va/gap_20261106/review.json",
+    "retrieval_receipt": ".cache/novec_va/gap_20261106/retrieval.json",
+    "unchanged_current_base_sheets": [
+      {
+        "original_source": "r1_2024.pdf",
+        "current_download": "r1_current.pdf",
+        "sha256": "86b2853cbcbd2ce0befdb2f1ec9a3d3637a97e2b95b0347eb627ead377098507",
+        "finding": "Byte-identical to original verified2024 sheet."
+      },
+      {
+        "original_source": "sc1_2023.pdf",
+        "current_download": "sc1_current.pdf",
+        "sha256": "37b05fd68bb77872209380d52d5c21af324e4eb42ad41869550fe34620a85fe6",
+        "finding": "Byte-identical to original verified2023 sheet."
+      }
+    ],
+    "new_primary_documents": [
+      {
+        "file": "board_july2026.pdf",
+        "url": "https://www.novec.com/About_NOVEC/upload/July-2026-Board-Meeting-Minute-Summary.pdf",
+        "retrieved_date": "2026-11-06",
+        "bytes": 134021,
+        "sha256": "cf7c813d32e415e22085bcd0b1b7a3af6a9bccce1af96b113f680b0d5b042b03",
+        "path": ".cache/novec_va/gap_20261106/board_july2026.pdf",
+        "finding": "No numeric PCA factor or revised R-1/SC-1 rate vector."
+      },
+      {
+        "file": "board_august2026.pdf",
+        "url": "https://www.novec.com/About_NOVEC/upload/August-2026-Board-Meeting-Minute-Summary.pdf",
+        "retrieved_date": "2026-11-06",
+        "bytes": 134277,
+        "sha256": "2a5f6baa77f339465810b2e004bcc6e8ec15ad4ab55e38ed7149de0230571d62",
+        "path": ".cache/novec_va/gap_20261106/board_august2026.pdf",
+        "finding": "No numeric PCA factor or revised R-1/SC-1 rate vector."
+      },
+      {
+        "file": "board_september2026.pdf",
+        "url": "https://www.novec.com/About_NOVEC/upload/September-2026-Board-Meeting-Minute-Summary.pdf",
+        "retrieved_date": "2026-11-06",
+        "bytes": 107263,
+        "sha256": "d11fc2616f602a4b981f02b3855256e1c6823d5768e3926a53cfde62ce7a0a99",
+        "path": ".cache/novec_va/gap_20261106/board_september2026.pdf",
+        "finding": "No numeric PCA factor or revised R-1/SC-1 rate vector."
+      },
+      {
+        "file": "whats_current_march2026.pdf",
+        "url": "https://www.novec.com/About_NOVEC/upload/2026-March-WC-nobleed-compressed.pdf",
+        "retrieved_date": "2026-11-06",
+        "bytes": 232273,
+        "sha256": "5edc5399355597f9fb68b7401069a5c7278268831ad8812a7393b15d43392b5a",
+        "path": ".cache/novec_va/gap_20261106/whats_current_march2026.pdf",
+        "finding": "No numeric PCA factor or revised R-1/SC-1 rate vector."
+      }
+    ],
+    "current_page_checks": [
+      {
+        "file": "document_center.html",
+        "url": "https://www.novec.com/About_NOVEC/Document-Center.cfm",
+        "sha256": "e6bb7ee054e7987afb9935dcc14a38167612649e4ba31f4dc35806957c96ea31",
+        "path": ".cache/novec_va/gap_20261106/document_center.html"
+      },
+      {
+        "file": "regulated_rates.html",
+        "url": "https://www.novec.com/About_NOVEC/Regulated-Rates.cfm",
+        "sha256": "6bd501c91f2923a2cc7cd9fdfbc86f1da26fd23664d35566f85a4580ade54ec4",
+        "path": ".cache/novec_va/gap_20261106/regulated_rates.html"
+      },
+      {
+        "file": "pca_notice.html",
+        "url": "https://www.novec.com/About_NOVEC/PCA-Power-Cost-Adjustment.cfm",
+        "sha256": "e3fa75744d89eb4b1a8497acf49535891c31710fb0f961e8a4fef8b3a7d00e10",
+        "path": ".cache/novec_va/gap_20261106/pca_notice.html"
+      },
+      {
+        "file": "whats_current_2026.html",
+        "url": "https://www.novec.com/About_NOVEC/What-s-Current-2026.cfm",
+        "sha256": "84b4d5c2d6cfd85729bf5b7e9a9724d0378d50432a5b4b2b532bf53f82bbb7e1",
+        "path": ".cache/novec_va/gap_20261106/whats_current_2026.html"
+      }
+    ],
+    "november_notice_limit": "Exact PCA.02482/kWh and5percent distribution increase confirmed, but rounded1.16cent change and approximate1000kWh examples cannot establish the exact prior PCA or revised component vectors. HTML has no additional ratechart; image inventory is logo/social/tracking only.",
+    "primary_source_requests": [
+      "Original dated January2026 PCA notice and any intervening notices establishing every applicable factor throughOctober2026.",
+      "Exact R-1/SC-1 sheets effectiveNovember1 2026, including fixed, energy, supply andminimum charges plusbilling applicability."
+    ],
+    "tax_followup": "After coretariff evidence is established, verify2026 state/SCC levy continuity andPrince William County applicability includingFY2027. Tax continuity was not completed in this bounded followup.",
+    "earlier_evidence_preserved": true,
+    "archival_access_note": "One Internet Archive CDX request for the overwritten2026 PCA page was inaccessible via web tool; no snapshot or rate was recovered. No archive contents inferred."
+  }
 }
