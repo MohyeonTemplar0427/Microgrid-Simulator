@@ -1,0 +1,336 @@
+{
+  "utility_id": "northern_virginia_electric_cooperative",
+  "plans": [
+    "R-1",
+    "SC-1"
+  ],
+  "jurisdiction": "VA",
+  "scope": "Ordinary member, one single-phase 120/240V secondary meter, unincorporated Prince William County, complete calendar service/bill cycles, non-export",
+  "verified_complete_bill_coverage": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    }
+  ],
+  "components": {
+    "r1_base": {
+      "source": "r1_2024.pdf",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "effective": "2024-01-01",
+      "filed_informational": "2023-10-17",
+      "customer_usd": "21.30",
+      "delivery_per_kwh": ".01348",
+      "supply_per_kwh": ".09731",
+      "minimum_usd": "21.30"
+    },
+    "sc1_base": {
+      "source": "sc1_2023.pdf",
+      "pdf_pages_1_based": [
+        1,
+        2
+      ],
+      "effective": "2023-04-01",
+      "filed_informational": "2023-03-22",
+      "customer_single_phase_usd": "26.78",
+      "delivery_per_kwh": ".02064",
+      "supply_per_kwh": ".09242",
+      "minimum_single_phase_usd": "26.78",
+      "visual_transcription": "docs/utility_sources/novec_va/sc1_visual_transcription.txt",
+      "visual_transcription_sha256": "8e3f6e8a147705e17923da2fe898da54c405dd07bbddfc9762c72f0431bca700"
+    },
+    "pca_jan_jun2025": {
+      "source": "jan25.pdf",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "effective": "2025-01-01",
+      "value_dollars_per_kwh": "-.008",
+      "classes": "Residential and commercial accounts"
+    },
+    "pca_jul_dec2025": {
+      "source": "jul25.pdf",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "effective": "2025-07-01",
+      "explicit_through": "2025-12-31",
+      "value_dollars_per_kwh": ".002",
+      "classes": "Residential and commercial accounts"
+    },
+    "state_consumption_tax": {
+      "source": "tax_law.html",
+      "tiers_kwh": [
+        2500,
+        50000
+      ],
+      "marginal_dollars_per_kwh": [
+        ".00102",
+        ".00065",
+        ".00050"
+      ]
+    },
+    "local_consumption_tax": {
+      "source": "tax_law.html",
+      "tiers_kwh": [
+        2500,
+        50000
+      ],
+      "marginal_dollars_per_kwh": [
+        ".00038",
+        ".00024",
+        ".00018"
+      ]
+    },
+    "actual_regulatory_levy_before_aug2025": {
+      "source": "salem_levy.pdf",
+      "corroboration": "SCC current levy page begins new vector Aug1 2025; Salem official table retains prior July16 2021 vector after correcting erroneous2024 update",
+      "tiers_kwh": [
+        2500,
+        50000
+      ],
+      "marginal_dollars_per_kwh": [
+        ".000165",
+        ".000110",
+        ".000077"
+      ]
+    },
+    "actual_regulatory_levy_from_aug2025": {
+      "source": "scc_tax.html",
+      "authority": "tax_authority.html",
+      "effective": "2025-08-01",
+      "marginal_dollars_per_kwh": [
+        ".000165",
+        ".000165",
+        ".000165"
+      ],
+      "not_statutory_maximum": true,
+      "no_dominion_meter_read_clock_inferred": true
+    },
+    "county_consumer_tax": {
+      "sources": [
+        "pwc_fy25.pdf",
+        "pwc_fy26.pdf"
+      ],
+      "pdf_pages_1_based": [
+        28,
+        30
+      ],
+      "county_code_reference": "26-111",
+      "residential": {
+        "fixed_usd": "1.40",
+        "per_kwh": ".01509",
+        "monthly_cap_usd": "3"
+      },
+      "commercial": {
+        "fixed_usd": "2.29",
+        "per_kwh": ".013487",
+        "monthly_cap_usd": "100"
+      },
+      "basis": "Grid imported kWh; ordinary active service, no exemption or relief"
+    }
+  },
+  "eligibility": {
+    "sc1_tariff_rule": "Exceeding30kW in two preceding12 billing months triggers LP1 for succeeding12 months;90day notice",
+    "sc1_initial_scope": "Independently retained assignment with no transfer/pending change; twelve actual prior monthly demands each below30kW; current native/import29.9kW and5999kWh caps",
+    "motor_limit_hp": 10,
+    "r1_study_peak_kw": 25,
+    "minimums_at_zero_imports": "R21.30+county1.40; SC26.78+county2.29",
+    "unsupported": "Three-phase, residential farm/church variants, optional tariffs/programs, large motors, special facilities, other localities, government/other exemption, cooperative federal-power tax reduction and data centers"
+  },
+  "der_rules": {
+    "source": "terms_2024.pdf",
+    "pdf_pages_1_based": [
+      12,
+      13
+    ],
+    "effective": "2024-11-01",
+    "rule": "Exact parallel equipment requires prior NOVEC approval; market sales require contracts with cooperative and transmission provider",
+    "implemented_scope": "Final permission before cycle plus written account-specific ordinary-import billing terms; non-export PV and PV-charged paired storage only"
+  },
+  "grid_metadata": {
+    "grid_operator": "PJM",
+    "transmission_zone": "DOM",
+    "utility_and_supplier_remain_separate": true,
+    "primary_sources": [
+      {
+        "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/load-forecast-supplement-2026.pdf",
+        "pdf_page_1_based": 37,
+        "printed_page": 33,
+        "finding": "Dominion-zone section lists NOVEC separately among participating load-serving forecasts"
+      },
+      {
+        "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/novec-documentation.pdf",
+        "finding": "NOVEC-hosted-on-PJM forecast explains separate utility request and forecast sharing with Dominion transmission operator"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "start": "2026-01-01",
+      "end": "2026-10-31",
+      "reason": "Only secondary references recovered for .01320/kWh January2026 PCA; original primary dated page overwritten. Not used."
+    },
+    {
+      "start": "2026-11-01",
+      "end": "2026-12-31",
+      "reason": "Primary November notice states PCA.02482 and5percent distribution increase; exact updated fixed/volumetric R1/SC1 vectors missing. Older current tariff links do not reconcile with announced change."
+    }
+  ],
+  "retrieval_notes": [
+    "Retained primary files retrieved with system curl and certificate verification; sandbox DNS and Python certificate failures were overcome without disabling TLS verification.",
+    "Official January2026 newsletter and Oct-Dec2025/Jan2026 board summaries contain no requested2026 PCA factor.",
+    "Official digital-publication Jan-Feb2026 route returned403; Nov-Dec2025 route cache miss; unchanged routes were not retried.",
+    "Actual current official residential/business sample-bill PDF bytes contain2022 examples. They do not establish2026 rates.",
+    "Rate sheets are marked filed for informational purposes; no separate SCC approval docket is asserted."
+  ],
+  "independent_benchmarks_1000_kwh": {
+    "2025_jan_res_raw_usd": "128.655",
+    "2025_jan_sc_raw_usd": "149.182",
+    "2025_jul_res_raw_usd": "138.655",
+    "2025_jul_sc_raw_usd": "159.182",
+    "regulatory_change_at3500kwh_aug_minus_jul_usd": ".055",
+    "no_actual_customer_invoice": true
+  },
+  "source_material": [
+    {
+      "file": "r1_2024.pdf",
+      "url": "https://www.novec.com/About_NOVEC/upload/NOVEC_RateRebal-010124.pdf",
+      "sha256": "86b2853cbcbd2ce0befdb2f1ec9a3d3637a97e2b95b0347eb627ead377098507",
+      "bytes": 632496,
+      "path": ".cache/novec_va/sources/r1_2024.pdf"
+    },
+    {
+      "file": "sc1_2023.pdf",
+      "url": "https://www.novec.com/About_NOVEC/upload/Small-Commercial-Service-SC-1-3-22-23.pdf",
+      "sha256": "37b05fd68bb77872209380d52d5c21af324e4eb42ad41869550fe34620a85fe6",
+      "bytes": 420226,
+      "path": ".cache/novec_va/sources/sc1_2023.pdf"
+    },
+    {
+      "file": "jan25.pdf",
+      "url": "https://www.novec.com/About_NOVEC/upload/2025-JanFeb-WC-nobleed-compressed.pdf",
+      "sha256": "b9a5bc0f3595aa64881ff1caa48bb6169330aae37c2099cf3733eeb5659bc839",
+      "bytes": 180801,
+      "path": ".cache/novec_va/sources/jan25.pdf"
+    },
+    {
+      "file": "jul25.pdf",
+      "url": "https://www.novec.com/About_NOVEC/upload/2025-July-WC_nobleed.pdf",
+      "sha256": "f3a4d14dcad929eb3784c5bb79e8aead0c7269ee5e0dabe1c4fbdc3ea0d81d2f",
+      "bytes": 4032907,
+      "path": ".cache/novec_va/sources/jul25.pdf"
+    },
+    {
+      "file": "pca_current.html",
+      "url": "https://www.novec.com/About_NOVEC/PCA-Power-Cost-Adjustment.cfm",
+      "sha256": "6d9afa0e91b6028b07c69d5cdfac1d52d2e0998df084600cd293f9c5cac3ba13",
+      "bytes": 30654,
+      "path": ".cache/novec_va/sources/pca_current.html"
+    },
+    {
+      "file": "rates.html",
+      "url": "https://www.novec.com/About_NOVEC/Regulated-Rates.cfm",
+      "sha256": "6d7e4492de62b0cf0c1280dc8a15075bb961bc1636cbda812b4394406f1535f3",
+      "bytes": 26273,
+      "path": ".cache/novec_va/sources/rates.html"
+    },
+    {
+      "file": "pubs25.html",
+      "url": "https://www.novec.com/About_NOVEC/What-s-Current-2025.cfm",
+      "sha256": "59c63d0e4e71a8503f54ea4d646ffac4c37e0717944007f634a60de801a8055e",
+      "bytes": 32943,
+      "path": ".cache/novec_va/sources/pubs25.html"
+    },
+    {
+      "file": "pubs26.html",
+      "url": "https://www.novec.com/About_NOVEC/What-s-Current-2026.cfm",
+      "sha256": "c1dbd891c355c47d043734102489e3933c6eb49ba86d88e72f3901bb1d3ee5ac",
+      "bytes": 28515,
+      "path": ".cache/novec_va/sources/pubs26.html"
+    },
+    {
+      "file": "coopliving25.html",
+      "url": "https://www.novec.com/About_NOVEC/Cooperative-Living-2025.cfm",
+      "sha256": "2b8b653614c8b4e1d2ca54f24585e208497ee21485dc490a45ceb1342bf6dde0",
+      "bytes": 34688,
+      "path": ".cache/novec_va/sources/coopliving25.html"
+    },
+    {
+      "file": "coopliving26.html",
+      "url": "https://www.novec.com/About_NOVEC/Cooperative-Living-2026.cfm",
+      "sha256": "cdbd28a78ed62440a77245be8b69a92bc254bc6f7c332066428c6d9c71392a02",
+      "bytes": 31313,
+      "path": ".cache/novec_va/sources/coopliving26.html"
+    },
+    {
+      "file": "terms_2024.pdf",
+      "url": "https://www.novec.com/About_NOVEC/upload/NOVEC-Terms-and-Conditions-101624.pdf",
+      "sha256": "260e968b29ff8c72520bf3cb071505b8aca0ce44719ba732909a9937edf19919",
+      "bytes": 1334100,
+      "path": ".cache/novec_va/sources/terms_2024.pdf"
+    },
+    {
+      "file": "sample_residential.pdf",
+      "url": "https://www.novec.com/Customer_Services/upload/How-To-Read-Your-Bill-Residential.pdf",
+      "sha256": "ebf9604ca1a89ff48360ca28d40545681e383d3d014d784c04e88dfc12b0ce70",
+      "bytes": 1347436,
+      "path": ".cache/novec_va/sources/sample_residential.pdf"
+    },
+    {
+      "file": "sample_business.pdf",
+      "url": "https://www.novec.com/Customer_Services/upload/How-to-Read-Your-Bill-Business.pdf",
+      "sha256": "4b13bc136e9c6b6f4b6623d50b2294d155ce9c23e6e729b3b0d3860edf3f96ec",
+      "bytes": 1437929,
+      "path": ".cache/novec_va/sources/sample_business.pdf"
+    },
+    {
+      "file": "scc_tax.html",
+      "url": "https://www.scc.virginia.gov/regulated-industries/public-taxation/taxes-and-fees/",
+      "sha256": "e68df4c84fddabfdbe04b289b0766665c68a5b91078c5d63586eeedc4d3e38cd",
+      "bytes": 43372,
+      "path": ".cache/novec_va/sources/scc_tax.html"
+    },
+    {
+      "file": "tax_law.html",
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2900/",
+      "sha256": "cd9f4dddb3fd9b49ba8dec5dc57ed1188db3449eb97b064cdbc4b3237cc27259",
+      "bytes": 34414,
+      "path": ".cache/novec_va/sources/tax_law.html"
+    },
+    {
+      "file": "tax_authority.html",
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2902/",
+      "sha256": "4c146b38a71953a5477f911eaf01e5e562dce57c3511bb9c27025ec6a160839e",
+      "bytes": 30634,
+      "path": ".cache/novec_va/sources/tax_authority.html"
+    },
+    {
+      "file": "salem_levy.pdf",
+      "url": "https://salemva.gov/DocumentCenter/View/2607/Special-Regulatory-Tax-State-PDF",
+      "sha256": "07f0c30c4e3fe6d96ac45322c1abef6260e342f1ed703975e46f45d79724823f",
+      "bytes": 438616,
+      "path": ".cache/novec_va/sources/salem_levy.pdf"
+    },
+    {
+      "file": "pwc_fy25.pdf",
+      "url": "https://www.pwcva.gov/assets/2024-07/FINAL%20Adopted%20Revenue%20FY25-FY29%20.pdf",
+      "sha256": "173787c8254cab1e53b11b99279b9b3e05af60e6c38f8ee482070c8f159be608",
+      "bytes": 1270638,
+      "path": ".cache/novec_va/sources/pwc_fy25.pdf"
+    },
+    {
+      "file": "pwc_fy26.pdf",
+      "url": "https://www.pwcva.gov/assets/2025-06/Adopted%20Revenue%20FY26-FY30_Final%20Draft_V2_6.25.2025.pdf",
+      "sha256": "99cff9d5f798cd3a6868e8ac02f020b4891c96861e3339ffa29ecd1f081724cd",
+      "bytes": 2090130,
+      "path": ".cache/novec_va/sources/pwc_fy26.pdf"
+    },
+    {
+      "file": "pjm.html",
+      "url": "https://www.novec.com/About_NOVEC/PJM-Overview.cfm",
+      "error": "curl: (56) The requested URL returned error: 404"
+    }
+  ]
+}

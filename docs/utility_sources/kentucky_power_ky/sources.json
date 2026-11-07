@@ -1,0 +1,435 @@
+{
+  "utility": "kentucky_power_kentucky",
+  "jurisdiction": "KY",
+  "grid_operator": "PJM",
+  "zone": "AEP",
+  "retrieved_date": "2026-11-05",
+  "plans": {
+    "RS": [
+      "015",
+      "017",
+      "022"
+    ],
+    "GS": [
+      "211",
+      "212",
+      "215",
+      "216",
+      "218"
+    ]
+  },
+  "coverage": [
+    {
+      "start": "2025-12-01",
+      "end": "2026-08-31"
+    }
+  ],
+  "coverage_basis": "service_dates_with_separately_confirmed_following_utility_billing_month_and_next_day_bill",
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-11-30",
+      "reason": "Earlier complete component intersections and transition allocations are unverified."
+    },
+    {
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "reason": "The service-date Decommissioning Rider step on September 29 requires unverified allocation."
+    },
+    {
+      "start": "2026-10-01",
+      "end": "2026-12-31",
+      "reason": "Later annual rider sheets and the complete December monthly factor stack are not reconciled."
+    }
+  ],
+  "sources": [
+    {
+      "name": "Filed current Kentucky PSC No14 book",
+      "url": "https://psc.ky.gov/tariffs/electric/Kentucky%20Power%20Company/Tariff.pdf",
+      "filename": "current.pdf",
+      "sha256": "250bb90b570b64f4956d9c288f169f7f0b9e125434d762ed51010f3cd3cc8e5f",
+      "pages": "RS5-1\u20133;GS6-1\u20134;riders26\u201340",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded No13 RS",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/Tariff%20R.S.-Residential%20Service/03-01.pdf",
+      "filename": "2026_tariff_r_s_residential_service_03-01.pdf",
+      "sha256": "e2ad66a7860a6715bf8785395248360729ea6717e5bdf3e2aee9b09dac84ebd4",
+      "pages": "5-1\u20133:20 dollars,12.785c plus0.494c temporary, Oct28 2025 bill clock",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded No13 GS",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/Tariff%20G.S.-General%20Service/03-01.pdf",
+      "filename": "2026_tariff_g_s_general_service_03-01.pdf",
+      "sha256": "88ac8ba1dfebe8da82bdd2495c4f6606dfe980f53d63b4982bf32daef5291521",
+      "pages": "6-1\u20133:28 dollars and13.060c first4450;metering/history/contract rules",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded REA",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/Tariff%20R.E.A.-Residential%20Energy%20Assistance/03-01.pdf",
+      "filename": "2026_tariff_r_e_a_residential_energy_assistance_03-01.pdf",
+      "sha256": "ef7ee8281074142ceb338f43c5ba5a7ccb59b098cf70a0205a8b5b6ff0e2bd90",
+      "pages": "26-1",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded KEDS",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/Tariff%20K.E.D.S.-Kentucky%20Economic%20Development%20Surcharge/03-01.pdf",
+      "filename": "2026_tariff_k_e_d_s_kentucky_economic_development_surcharge_03-01.pdf",
+      "sha256": "56762f93089c14a8083a94b1f8de0b39a50bba15aa25e52e8b66ac59f46aeed4",
+      "pages": "27-1",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded DSM",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/Tariff%20D.S.M.C.-Demand-Side%20Management%20Adjustment%20Clause/03-01.pdf",
+      "filename": "2026_tariff_d_s_m_c_demand_side_management_adjustment_clause_03-01.pdf",
+      "sha256": "02fcbb0f6e31667aca6201a6904eecbb604de95def3ccada5632ba085038a9e8",
+      "pages": "28-1\u20132",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded PPA",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/Tariff%20P.P.A.-Purchase%20Power%20Adjustment/03-01.pdf",
+      "filename": "2026_tariff_p_p_a_purchase_power_adjustment_03-01.pdf",
+      "sha256": "c46cbea5a5b56dca11f86d93974c544c8bf81f1c44553845738c07ec66bfdb4c",
+      "pages": "31-1\u20133",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded FTC",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/F.T.C.-Federal%20Tax%20Cut%20Tariff/03-01.pdf",
+      "filename": "2026_f_t_c_federal_tax_cut_tariff_03-01.pdf",
+      "sha256": "171fed635842ebc3fcf19dee0a49dab5ef0f34c7358eb64b08ff44520fc95acb",
+      "pages": "35-1\u20132",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded DR",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/D.R.-Decommissioning%20Rider/03-01.pdf",
+      "filename": "2026_d_r_decommissioning_rider_03-01.pdf",
+      "sha256": "aea11dfdbca918d2e6083a6340c4ea610466fda6c6528b959fa9abe35219c9b1",
+      "pages": "33-1\u20133",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded original SSR factors",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/Tariff%20S.S.R.%20(Sercuritized%20Surcharge%20Rider)/03-01.pdf",
+      "filename": "2026_tariff_s_s_r_sercuritized_surcharge_rider__03-01.pdf",
+      "sha256": "faf875563fc41b89f32b42d8161ad58f85c65a36b69678b912ef251923aff8aa",
+      "pages": "7.0704% residential and10.9636% non-residential",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Superseded March2026 SSR factors",
+      "url": "https://psc.ky.gov/tariffs/Electric/Kentucky%20Power%20Company/Cancelled%20Tariff%20Pages/2026/S.S.R.-Securitized%20Surcharge%20Rider/09-01.pdf",
+      "filename": "2026_s_s_r_securitized_surcharge_rider_09-01.pdf",
+      "sha256": "e3299f30685ed6362c6f435b985f411c80bded2902d7e18660e8279d181aa9f8",
+      "pages": "5.7929% residential and12.8595% non-residential",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Official monthly FAC2025 filings including January/February2026 bills",
+      "url": "https://psc.ky.gov/PSCFAC/aep-kentucky%20power%20company/2025_KP.pdf",
+      "filename": "fac2025.pdf",
+      "sha256": "928f7ab8e85393d3471f2c0a36a30de34d5ec029e82df998b45f138a48bb8aa3",
+      "pages": "Summary of adjustment clauses:designated billing months, not expense labels",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "PSC2026-00071 source environmental factor review",
+      "url": "https://psc.ky.gov/pscecf/2026-00071/mmcaldwell%40aep.com/05152026024532/04_KPCO_R_KPSC_1_1_Attachment1.xlsx",
+      "filename": "es_review_1.xlsx",
+      "sha256": "1924aafdf058b200319ed77990842a686b2a16b7f90ea1e4593d73a1824ed615",
+      "pages": "Form1.00:expense-month factors;Row18 residential andRow24 all-other",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "ssr rehearing order",
+      "url": "https://psc.ky.gov/pscscf/2025%20Cases/2025-00307//20261008_PSC_ORDER.pdf",
+      "filename": "ssr_rehearing_order.pdf",
+      "sha256": "deec277538aad2e89a3c31243d9f06756164b6032f9a04d7225e010b89b63b97",
+      "pages": "Orders and directives governing factor application",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "ssr may order",
+      "url": "https://psc.ky.gov/pscscf/2025%20Cases/2025-00307//20260528_PSC_ORDER.pdf",
+      "filename": "ssr_may_order.pdf",
+      "sha256": "85781ae6a3dfbe86ac4f68c0869fb0fa4076b341028d4f974ad24a16ebf145bd",
+      "pages": "Orders and directives governing factor application",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "fuel credit amendment",
+      "url": "https://psc.ky.gov/order_vault/Orders_2025/202300008_12222025.pdf",
+      "filename": "fuel_credit_amendment.pdf",
+      "sha256": "c9c9b6194e441bf4cc94dbeec92a005d110a623a40a2e6ea9b016e1ffa6ac5ae",
+      "pages": "Orders and directives governing factor application",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "march fac",
+      "url": "https://psc.ky.gov/trf4/uploadedFiles/300_Kentucky_Power_Company/02122026024156/KPCO_Tariff_1st_Revised_Tariff_Sheet_30-3_Annotated.pdf",
+      "filename": "march_fac.pdf",
+      "sha256": "b17786ba89ee220c29cba9e75078d05c142a05275c7ca4228a5db85d7286bc2e",
+      "pages": "Orders and directives governing factor application",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "dsm oct order",
+      "url": "https://psc.ky.gov/pscscf/2025%20Cases/2025-00365//20260924_PSC_ORDER.pdf",
+      "filename": "dsm_oct_order.pdf",
+      "sha256": "1e068987d011fb5a92f7bb425a5d2b9ba6c98902f40e9f230b0880748d9de614",
+      "pages": "Orders and directives governing factor application",
+      "evidence_kind": "downloaded_primary_source"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-01",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-01_KP_Rate.xls",
+      "filename": "2026-01_KP_Rate.xls",
+      "sha256": "ca5913e85ccfdaf24805b44ccdc6a91cf53fdb262463013a1c599664fcec030d",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-02",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-02_KP_Rate.xls",
+      "filename": "2026-02_KP_Rate.xls",
+      "sha256": "778fc4c9533b65dc9069ca6d6e7d96a70a87bf23ccf1ac67ae2a9b32a72588a7",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-03",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-03_KP_Rate.xls",
+      "filename": "2026-03_KP_Rate.xls",
+      "sha256": "413ced61b4084279a7ae82ef1a01d3ed3db0d6695bc829cd8b69f8854cc1f527",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-04",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-04_KP_Rate.xls",
+      "filename": "2026-04_KP_Rate.xls",
+      "sha256": "6b1e133626f38859a6f8cb01250f1c8e71f50b82a03d01ded4385c8ec1e2b3ed",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-05",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-05_KP_Rate.xls",
+      "filename": "2026-05_KP_Rate.xls",
+      "sha256": "dc9ed9f4868b5225813eaac8654825a41d61fdc79a097748702ea9824e0a98ce",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-06",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-06_KP_Rate.xls",
+      "filename": "2026-06_KP_Rate.xls",
+      "sha256": "69d570862e4ddeebd1634f8d3cae5891e247e4d2ca611baf524a0dded9f58368",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-07",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-07_KP_Rate.xls",
+      "filename": "2026-07_KP_Rate.xls",
+      "sha256": "81d439a5b8a3b6a86fa24b9050cb03181924ffba47b49f796d11388b1ad8d22d",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-08",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-08_KP_Rate.xls",
+      "filename": "2026-08_KP_Rate.xls",
+      "sha256": "149602a72d8a0decf51c01c77547d1a16932b1d4bca2b532044442156b0d56ec",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-09",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-09_KP_Rate.xls",
+      "filename": "2026-09_KP_Rate.xls",
+      "sha256": "0e9fd9f7e70aa643a2d69a03197f5502753ed4ed5e3a491ef94b8e78b30ff406",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-10",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-10_KP_Rate.xls",
+      "filename": "2026-10_KP_Rate.xls",
+      "sha256": "8edbd2700c291aeec77522d89e2e8eb10612fe2d0b4de9ca4b4fcfe4b2be27a1",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    },
+    {
+      "name": "Utility monthly calculation workbook2026-11",
+      "url": "https://www.kentuckypower.com/lib/docs/ratesandtariffs/Kentucky/2026-11_KP_Rate.xls",
+      "filename": "2026-11_KP_Rate.xls",
+      "sha256": "ae2c49341acf7d61613961b11bd437f2d6effafe7562250a16b3182f6085f56b",
+      "sheets": [
+        "RS",
+        "GS Sec",
+        "Tax Table",
+        "Rider Rates"
+      ],
+      "evidence_kind": "downloaded_official_utility_calculator",
+      "status": "supporting_or_monthly_factor_source;known_stale_fields_do_not_override_filed_sheets",
+      "scope": "Jan-Sep monthly factors;Oct-Nov retained as research only"
+    }
+  ],
+  "component_chronology": [
+    {
+      "component": "RS bundled base",
+      "clock": "service",
+      "old": "20 dollars/month;0.12785 dollars/kWh",
+      "new": "FromMar1 2026:24 dollars<=2000kWh;38 dollars>2000;first600kWh0.15385,next0.11534",
+      "scope": "Initial native/import cap2000kWh deliberately excludes the discontinuous higher service-charge tier"
+    },
+    {
+      "component": "RS temporary charge",
+      "clock": "utility_billing_month",
+      "rate": ".00494 dollars/kWh",
+      "effective": "November2025 throughAugust2027 billing cycles",
+      "scope": "Separate from base, not double-counted inside calculator composite energy"
+    },
+    {
+      "component": "GS secondary base",
+      "clock": "service",
+      "old": "28 dollars/month;first4450kWh0.13060",
+      "new": "Mar1 2026:31 dollars/month;first4450kWh0.13725",
+      "scope": "Initial cap4449kWh and9.49kW;actual utility review includes contract/history and billing demand<=10kW;no demand meter"
+    },
+    {
+      "component": "FAC and environmental factors",
+      "clock": "independently_assigned_utility_billing_month",
+      "scope": "ServiceDec2025\u2013Aug2026 uses named factorsJan\u2013Sep2026;no calendar-month inference from expense dates or workbook filename",
+      "exact_example": "March2026 FAC bills renderedFeb24\u2013Mar24 2026, filed30-3;calendarFebruary study issues billMarch1"
+    },
+    {
+      "component": "FCCR",
+      "clock": "utility_billing_month",
+      "rate": "RS-.00487,GS-.00432 dollars/kWh January\u2013April2026 bills",
+      "authority": "Dec22 2025 amendment removes the later-of approval trigger;filed30-3 andactual utility calculators corroborate"
+    },
+    {
+      "component": "PPA and DR",
+      "clock": "service",
+      "effective": "Sep30 2025;valuesunchangedMar1 2026",
+      "rate": "PPA RS.00022,GS.00019;DR RS.000082,GS.000135",
+      "next_step": "DR changesSep29 2026;September allocation blocked"
+    },
+    {
+      "component": "SSR",
+      "clock": "service",
+      "rate": "BeforeMar1 2026:.070704/.109636;fromMar1:.057929/.128595",
+      "basis": "RS ordinary subtotal including fuel and DR;GS nonfuel subtotal less embedded0.03380/kWh plusDR",
+      "authority": "May28 andOct8 2026 orders in2025-00307:SSR applies toDR,DR nottoSSR;broader tariff instruction governs over stale calculator and narrower enumerated list"
+    },
+    {
+      "component": "GR and DTL",
+      "clock": "service",
+      "effective": "Mar1 2026",
+      "rate": "GR RS.00476/GS.00373;DTL RS-.00080/GS-.00057"
+    },
+    {
+      "component": "Tax",
+      "clock": "confirmed_location_and_account",
+      "rate": "Pike County3%school tax;no city franchise;RS primarydomicile exempt;GS6%sales tax including school levy",
+      "source": "Filed tax rules plusutilityTaxTable Pike County row23(H23=.03), countyhistorical effective date retained inworkbook"
+    }
+  ],
+  "source_conflicts": [
+    "January2026 workbook repeatsOctober2025 expense ES=.050112/.086949. RegulatorForm1.00 November2025 expense (January2026 bill) gives .048531/.087593;use regulatorfactor.",
+    "March2026 workbook retains old base rates though filedNo14 is effectiveMar1;use filedbase and GR/DTL.",
+    "Workbooks compositeRSenergy includes temporary.00494;separate it fromfiled energy toavoid duplicate collection.",
+    "All reviewed workbooks omitDR fromSSR;May28/Oct8 PSCorders requireSSR onDR. Historical model is approvedtariff calculation, not replication of utility billing-system undercollection.",
+    "CalculatorGSavailability text describes old>10kW/>15kW scope;filedGSavailability andexplicitmeter/historyreview control.",
+    "WorkbookGR/DTL row dates erroneouslyshowMar1 2025;filedcurrentbook andRiderRates table sayMar1 2026.",
+    "CurrentDSMCpage retains expired2025 caption;stampedMar2026reissue and2025-00365 continuation/finalOct1 order establish timing. LaterOctoberstacknotenabled."
+  ],
+  "eligibility_scope": "Independent tariffcode,ordinarymeter,Companybillingmonth,unincorporatedPiketaxfacts;RSdomicile;GSno demandmeter,contract andactual billingdemand/history<=10kW. DERwritten specialagreement for exactapprovednonexportPV/storage preserving allordinaryterms.",
+  "benchmark_scope": "Independent literal Decimal transcription;filed rates/orders govern correctedcalculator discrepancies;no actual customerinvoice.",
+  "access_limits": [
+    "2025 monthly calculator filename pattern returned404 for all12months;not retried.",
+    "2026FAC annual guessedURL inaccessible;officialutilitymonthlyfactor sources retained alongsidefiledspecialMarchFAC andfilings.",
+    "Workbooks use standard Excel default protection;raw originals preserved;decryptedcopies andformula readback inprivatecache only.",
+    "Private reader dependencies installed only in.cache/kentucky_power_ky/python and are not runtime dependencies."
+  ],
+  "private_evidence_root": ".cache/kentucky_power_ky"
+}

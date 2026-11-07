@@ -14,6 +14,21 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "potomac_edison_west_virginia": {"label":"Potomac Edison · West Virginia", "state":"WV", "zone":"APS", "module":"potomac_edison_wv",
+        "timezone":"America/New_York", "grid_operator":"PJM",
+        "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "wheeling_power_west_virginia": {"label":"Wheeling Power · West Virginia", "state":"WV", "zone":"AEP", "module":"wheeling_wv",
+        "timezone":"America/New_York", "grid_operator":"PJM",
+        "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "kentucky_power_kentucky": {"label":"Kentucky Power · Kentucky", "state":"KY", "zone":"AEP", "module":"kentucky_power_ky",
+        "timezone":"America/New_York", "grid_operator":"PJM",
+        "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "southern_maryland_electric_cooperative": {"label":"SMECO · Maryland", "state":"MD", "zone":"SMECO", "module":"smeco_md",
+        "timezone":"America/New_York", "grid_operator":"PJM", "emergency_region":"SMECO",
+        "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "northern_virginia_electric_cooperative": {"label":"NOVEC · Virginia", "state":"VA", "zone":"DOM", "module":"novec_va",
+        "timezone":"America/New_York", "grid_operator":"PJM",
+        "grid_sources":["https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/load-forecast-supplement-2026.pdf", "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/novec-documentation.pdf"]},
     "appalachian_power_west_virginia": {"label":"Appalachian Power · West Virginia", "state":"WV", "zone":"AEP", "module":"appalachian_wv",
         "timezone":"America/New_York", "grid_operator":"PJM",
         "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},

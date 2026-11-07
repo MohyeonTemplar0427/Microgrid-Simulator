@@ -1041,3 +1041,27 @@ its sales-tax base. State/utility identity, supplier, PJM metadata and
 optional wholesale prices remain independent. Missing source intersections
 fail closed. See the [batch scope and validation](PJM_Five_Utility_Batch_Validation.md)
 and its linked source ledgers.
+
+## Potomac Edison WV, Wheeling, Kentucky Power, SMECO and NOVEC · November 2026
+
+The second batch adds separate ordinary non-export adapters for Potomac Edison
+WV R/G, Wheeling Power WV RS/SGS, Kentucky Power RS/GS and NOVEC VA R-1/SC-1.
+SMECO MD R/GSS is identified but disabled: approved monthly PCA/BSA and complete
+dated bill components could not be verified. Unsupported providers retain a
+visible reason in the local browser and cannot produce a priced study.
+
+Potomac's independently sourced ECC/normalization differs from Mon Power's.
+Wheeling uses its joint filed ENEC factor without an Appalachian-only CRRC.
+Kentucky preserves independently assigned following-month factors and next-day
+bill dates through explicit cycle lists; stale calculator environmental and
+securitized-rider formulas do not override filed sources. NOVEC's 2025 ordinary
+taxable Prince William scope separates supply, delivery, PCA, state/local
+consumption taxes, actual SCC levy and county consumer-tax caps; its independent
+SC-1 classification review is explicit per cycle. NOVEC 2026 remains blocked.
+
+The existing billing math, solver, worker contracts, PV/storage and OpenDSS
+components are reused. The browser guards unavailable plans and preserves
+Kentucky's documented billing clock. Utility/supplier/locality/PJM/wholesale
+identities remain separate. See the
+[second batch validation](PJM_Second_Five_Utility_Batch_Validation.md) and its
+linked utility guides for verified dates, source grades and candidate evidence.

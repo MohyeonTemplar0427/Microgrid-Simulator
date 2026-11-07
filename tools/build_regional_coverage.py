@@ -22,6 +22,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 UTILITY_DOCS = {
+    'potomac_edison_west_virginia': ('docs/Potomac_Edison_West_Virginia.md', 'docs/utility_sources/potomac_edison_wv/sources.json', 'test/test_potomac_edison_wv.py'),
+    'wheeling_power_west_virginia': ('docs/Wheeling_Power_West_Virginia.md', 'docs/utility_sources/wheeling_wv/sources.json', 'test/test_wheeling_wv.py'),
+    'kentucky_power_kentucky': ('docs/Kentucky_Power_Kentucky.md', 'docs/utility_sources/kentucky_power_ky/sources.json', 'test/test_kentucky_power_ky.py'),
+    'southern_maryland_electric_cooperative': ('docs/SMECO_Maryland.md', 'docs/utility_sources/smeco_md/sources.json', 'test/test_smeco_md.py'),
+    'northern_virginia_electric_cooperative': ('docs/NOVEC_Virginia.md', 'docs/utility_sources/novec_va/sources.json', 'test/test_novec_va.py'),
     "appalachian_power_west_virginia": ("docs/Appalachian_Power_West_Virginia.md", "docs/utility_sources/appalachian_wv/sources.json", "test/test_appalachian_wv.py"),
     "pepco_district_of_columbia": ("docs/Pepco_DC.md", "docs/utility_sources/pepco_dc/sources.json", "test/test_pepco_dc.py"),
     "delmarva_delaware": ("docs/Delmarva_Delaware.md", "docs/utility_sources/delmarva_de/sources.json", "test/test_delmarva_de.py"),

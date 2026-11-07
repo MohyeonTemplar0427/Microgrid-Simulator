@@ -19,7 +19,12 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"appalachian_power_west_virginia":(38.18,-81.3,"Hypothetical unincorporated Kanawha County, WV. Confirm utility service and absence of local electric taxes independently."),
+SITES={"potomac_edison_west_virginia":(39.44,-77.99,"Hypothetical unincorporated Berkeley County, WV; utility territory and absence of local electric taxes independently confirmed, not inferred from coordinates."),
+       "wheeling_power_west_virginia":(39.90,-80.66,"Hypothetical unincorporated Marshall County, WV; Wheeling service and absence of local electric taxes require independent confirmation."),
+       "kentucky_power_kentucky":(37.55,-82.53,"Hypothetical unincorporated Pike County, KY; utility assignment, school-tax jurisdiction and account eligibility require independent confirmation."),
+       "southern_maryland_electric_cooperative":(38.45,-76.60,"Illustrative southern Maryland locality only; SMECO billing is unavailable until approved monthly full components are verified."),
+       "northern_virginia_electric_cooperative":(38.80,-77.55,"Hypothetical unincorporated Prince William County, VA; NOVEC territory and taxable locality independently confirmed, not inferred from coordinates."),
+       "appalachian_power_west_virginia":(38.18,-81.3,"Hypothetical unincorporated Kanawha County, WV. Confirm utility service and absence of local electric taxes independently."),
        "pepco_district_of_columbia":(38.9,-77.04,"Hypothetical District of Columbia site. Confirm Pepco territory, account and taxes independently."),
        "delmarva_delaware":(38.68,-75.32,"Hypothetical unincorporated Sussex County, Delaware site. Confirm Delmarva service, PLC and tax geography independently."),
        "mon_power_west_virginia":(39.5,-80.17,"Hypothetical unincorporated Marion County, WV. Confirm Mon Power service and absence of local electric taxes independently."),
@@ -82,7 +87,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
     account=(module.hypothetical_defaults(plan_id) if hasattr(module,"hypothetical_defaults") else module.defaults(plan_id))
     coverage=plan["coverage"][-1]
     first=pd.Timestamp(coverage["start"])
-    preferred=account.get("billing_month")
+    preferred=(module.DEFAULT_SERVICE_MONTH if utility=="kentucky_power_kentucky" else account.get("billing_month"))
     candidate=None
     if type(preferred) is int and 1<=preferred<=12:
         candidate=first.replace(month=preferred,day=1)
@@ -133,9 +138,9 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["battery"].update(max_charge_kw=5.,max_discharge_kw=5.)
     if utility.startswith("firstenergy_"):
         request["operating_contract"]["renewable_only_charging"]=True
-    if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio"):
+    if utility in ("potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "southern_maryland_electric_cooperative", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio"):
         request["operating_contract"]["renewable_only_charging"]=True
-    if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "duquesne_light_pennsylvania"):
+    if utility in ("potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "southern_maryland_electric_cooperative", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "duquesne_light_pennsylvania"):
         request["operating_contract"]["renewable_only_charging"]=True
         if not residential:
             request["solar"]["dc_capacity_kw"]=1.5
@@ -147,6 +152,10 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["solar"]["dc_capacity_kw"]=5.
         request["pv_capacity_kw"]=4.
         request["battery"].update(capacity_kWh=10.,energy_kWh=5.,max_charge_kw=3.,max_discharge_kw=3.)
+    if utility=="kentucky_power_kentucky":
+        request["account"].update(module.hypothetical_defaults(plan_id,day=start))
+        for cycle in request["billing_cycles"]:
+            cycle.update(module.hypothetical_cycle_fields(cycle["start_date"]))
     return request
 
 
@@ -350,7 +359,7 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan"):
+    if utility in ("potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "southern_maryland_electric_cooperative", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan"):
         equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
         if op["mode"]!="non_export" or op["grid_charging_confirmed"]:
             raise ValueError("This utility scope requires non-export operation and PV-only battery charging.")
@@ -380,12 +389,12 @@ def prepare(r):
     if utility=="duquesne_light_pennsylvania" and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("Duquesne first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
-    if utility in ("mon_power_west_virginia","aes_ohio"):
+    if utility in ("potomac_edison_west_virginia","mon_power_west_virginia","aes_ohio"):
         _,first_block,first_cycle=cycles[0]
         module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],state=None,equipment=equipment)
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
-        if utility in ("appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana"):
+        if utility in ("potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "southern_maryland_electric_cooperative", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana"):
             module.validate_native_load(cycle_account(a,cycle), load[block])
         if utility=="aes_ohio" and float(np.max(load[block]))>(25. if a["tariff"]=="D17" else 100.)+1e-7:
             raise ValueError("AES Ohio native load exceeds the declared D17 25kW/D19 100kW study envelope; PV-reduced imports cannot establish eligibility.")

@@ -1,0 +1,149 @@
+{
+  "utility": "wheeling_power_west_virginia",
+  "jurisdiction": "WV",
+  "authority": "P.S.C. W.Va. No21; joint Appalachian/Wheeling sheets",
+  "reviewed_on": "2026-11-05",
+  "sources": [
+    "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENG_Tariff_Sheets_Eff_11-19-25.pdf#page=1",
+    "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/2025_Base_Case_Tariff_11-17-2025.pdf",
+    "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENEC_Tariff_Sheets_Eff_9-1-26.pdf",
+    "https://code.wvlegislature.gov/11-15-8/",
+    "https://www.appalachianpower.com/business/builders/generating-equipment"
+  ],
+  "coverage": [
+    {
+      "start": "2025-10-01",
+      "end": "2025-11-30"
+    },
+    {
+      "start": "2026-09-01",
+      "end": "2026-10-31"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-09-30",
+      "reason": "Earlier full intersections and the September 29 allocation remain unverified."
+    },
+    {
+      "start": "2025-12-01",
+      "end": "2026-08-31",
+      "reason": "December ENG transition and intermediate ENG/RET, base and ENEC intersections remain unverified."
+    },
+    {
+      "start": "2026-11-01",
+      "end": "2026-12-31",
+      "reason": "Later complete component intersections have not been verified."
+    }
+  ],
+  "component_evidence": [
+    {
+      "period": "2025-10 through2025-11",
+      "sources": [
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENG_Tariff_Sheets_Eff_11-19-25.pdf#page=1",
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/2025_Base_Case_Tariff_11-17-2025.pdf"
+      ],
+      "grade": "cached_official_filed_tariff_compilation_and_indexed_original_ENG",
+      "vectors": {
+        "RS": {
+          "customer": 13.44,
+          "energy": [
+            0.10643,
+            0.09189,
+            0.05896
+          ],
+          "enec": 0.05779,
+          "energy_efficiency": 0.001826,
+          "environmental": 0.00309,
+          "renewable_generation": 3.13e-05
+        },
+        "SGS": {
+          "customer": 15.83,
+          "energy": [
+            0.060437
+          ],
+          "enec": 0.05346,
+          "energy_efficiency": 0.000203,
+          "environmental": 0.00171,
+          "renewable_generation": 2.45e-05
+        }
+      },
+      "notes": "Joint original sheets explicitly name Wheeling Tariff21. Original ENG starts billedSeptember29; next ENG starts billsDecember12, not filenameNovember19. No other reviewed base/rider change throughNovember."
+    },
+    {
+      "period": "2026-09 through2026-10",
+      "sources": [
+        "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENEC_Tariff_Sheets_Eff_9-1-26.pdf"
+      ],
+      "grade": "downloaded_joint_filed_tariff_book_reused_after_hash_and_applicability_review",
+      "vectors": {
+        "RS": {
+          "customer": 14.02,
+          "energy": [
+            0.111,
+            0.09584,
+            0.0615
+          ],
+          "enec": 0.05857,
+          "energy_efficiency": 0.001826,
+          "environmental": 0.00309,
+          "renewable_generation": 0.0021386
+        },
+        "SGS": {
+          "customer": 16.51,
+          "energy": [
+            0.06304
+          ],
+          "enec": 0.05294,
+          "energy_efficiency": 0.000203,
+          "environmental": 0.00171,
+          "renewable_generation": 0.00173
+        }
+      },
+      "notes": "Joint No16/No21 sheets: July1base, September1ENEC, filed EE/DR/ECS/RET/BBS/BRSP. Prior cached raw book checked against previous ledger hashes."
+    }
+  ],
+  "billing_rules": [
+    "CRRC applies to Appalachian Power only (Sheet37 applicability note). Wheeling uses the joint Sheet34 ENEC factor without an Appalachian credit added or subtracted. Separate WP calculation workbook confirms direct .05857/.05294 factors.",
+    "RS015 and SGS231 ordinary single-phase secondary120/240V meter; SGS assignment and normal capacity requirements below10kW independently confirmed, study cap9.9kW. RS study cap25kW.",
+    "Matching complete calendar service/bill months, final-day billdate/fullmonthly charge are explicit study restrictions, not inferred actual reading schedules.",
+    "Initial location outside every municipality/local-electric-tax district, confirmed independently; regulated-electricity WV sales-tax exclusion.",
+    "Final PV or pairedPV-only-storage approval and written ordinary-import agreement for exact installation; no export settlement, NMS, COGEN/SPP, optional riders or tax exemptions."
+  ],
+  "independent_benchmarks": {
+    "RS_1000kwh_2025": "175.3373",
+    "SGS_1000kwh_2025": "131.6645",
+    "RS_1000kwh_2026": "183.0646",
+    "RS_2000kwh_2026": "344.5292",
+    "SGS_1000kwh_2026": "136.133",
+    "note": "Literal component arithmetic, joint filed tariff evidence. Separate WP workbook corroborates factor structure but stale ECS precision and tax lookup errors do not override filed sheets."
+  },
+  "private_source_sha256": {
+    ".cache/wheeling_wv/sources/book_sep26.pdf": "1ec085c33d6b8ebdce9e2568107575ca0e454197c3bd0577ba8f3b03e9fce6a0",
+    ".cache/wheeling_wv/sources/book_sep26.txt": "f73545c2cb86e9080ad269e0868671bddfc554ef4b4f0de128866ff035c8f21f",
+    ".cache/wheeling_wv/sources/original_eng_indexed.txt": "a421b262dd457b40ed969e22d60e7f1b445c6008e7759a4620d5816621c4e3dc",
+    ".cache/wheeling_wv/sources/web_2025_crrc_notes.txt": "879437ce34fbc4b8da84b088a1161a16ba2c3141b8b363d0e5e1b86a93c12726",
+    ".cache/wheeling_wv/sources/web_2025_details.txt": "cdf160069d82c2e7a220b8904398679c6913ea4b5cb61a79f80b0c17455f76b7",
+    ".cache/wheeling_wv/sources/web_2025_numbers.txt": "503a978e1e56d95671c74a35b8bce5fa5e9de368e978949152a9b02ead005add",
+    ".cache/wheeling_wv/sources/web_2025_rs_eng.txt": "40731f7d248bfae0a3733beffe1cd982919fee7832138a148d0fc2bc062efe3b",
+    ".cache/wheeling_wv/sources/web_2025_sheets.txt": "b1e7230b8adefba08db198bae257739e520cb39d57b1d60d50f6655295599932",
+    ".cache/smeco_md/review_sources/WP-WVRate-9-1-2026.xlsx": "45bb832094bf616e8ee5cbb5e1aa7fff17708432f1dae8bdabbb62c9ff870344"
+  },
+  "blocked_retrievals": [
+    {
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENG_Tariff_Sheets_Eff_11-19-25.pdf#page=1",
+      "result": "404"
+    },
+    {
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/2025_Base_Case_Tariff_11-17-2025.pdf",
+      "result": "404; official-index original-sheet excerpt preserved"
+    },
+    {
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/WestVirginia/ENEC_Tariff_Sheets_Eff_9-1-26.pdf",
+      "result": "web fetch timeout; reused hash-verified prior downloaded book"
+    }
+  ],
+  "independent_review": ".cache/smeco_md/review_wv.json",
+  "customer_invoice_supplied": false
+}

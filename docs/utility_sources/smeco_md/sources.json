@@ -1,0 +1,177 @@
+{
+  "utility": "southern_maryland_electric_cooperative",
+  "jurisdiction": "MD",
+  "grid_operator": "PJM",
+  "zone": "SMECO",
+  "retrieved_date": "2026-11-05",
+  "plans": ["R", "GSS"],
+  "billing_status": "blocked_missing_approved_component_intersections",
+  "coverage": [],
+  "executable_coverage": [],
+  "pending_months": ["2026-11"],
+  "ptc_scope": "supply_only_base_sos_plus_pca",
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-12-31",
+      "reason": "No complete approved monthly PCA/BSA plus dated delivery/rider/tax intersection was established for R or GSS. Published residential supply-only PTC history cannot fill those gaps; November2026 monthly factors are explicitly pending."
+    }
+  ],
+  "private_evidence_root": ".cache/smeco_md/sources",
+  "sources": [
+    {
+      "name": "Current SMECO retail electric service tariff book",
+      "url": "https://www.smeco.coop/wp-content/uploads/SMECO-Tariff-Rate-Schedules.pdf",
+      "filename": "current_book.pdf",
+      "sha256": "df56b9a1cb17034804db31fa43dd5f1ed4c624e5a3416051001974a257d444db",
+      "evidence_kind": "downloaded_primary_tariff",
+      "pages": "Sheets49–60,63–64,72–74,143–144,157,177–178",
+      "purpose": "Current R/GSS eligibility and Aug1 2026 base schedules, BSA formula, 2026 EMC, USP and prior written generation approval. This book does not supply historical monthly BSA/PCA factors."
+    },
+    {
+      "name": "SMECO rates and fees page",
+      "url": "https://www.smeco.coop/my-account/general-information/rates-fees/",
+      "filename": "rates.html",
+      "sha256": "7179cb32adea76fcadeb71a20820a9e6c8869a0bd865c9b8ed22fe187d1b3b6d",
+      "evidence_kind": "downloaded_primary_utility_page",
+      "purpose": "Supply-only residential PTC history for 2025–2026. All displayed November2026 monthly rates are expressly pending approval; neither those factors nor the historical PTC establish executable full bills."
+    },
+    {
+      "name": "SMECO customer choice page",
+      "url": "https://www.smeco.coop/my-account/customer-choice/",
+      "evidence_kind": "reviewed_primary_utility_page",
+      "purpose": "Confirms PTC equals base SOS plus PCA only. October2026 rates on this page are also explicitly labeled pending, despite later dates elsewhere."
+    },
+    {
+      "name": "September2026 cooperative newsletter, August SOS update",
+      "url": "https://www.smeco.coop/about/news/cooperative-review/september_2026/articlefourjump/",
+      "evidence_kind": "reviewed_primary_utility_page",
+      "purpose": "Explicitly confirms approved Aug1 2026 residential base change and August supply:0.1248+0.007609=0.132409 dollars/kWh. No BSA or complete bill is provided."
+    },
+    {
+      "name": "R schedule",
+      "url": "https://www.smeco.coop/wp-content/uploads/SCHEDULE-R.pdf",
+      "pages": "Sheets63–64",
+      "purpose": "Ordinary residential SOS, seasonal billing-month rates, facilities-plus-USP minimum, franchise tax and mandatory environmental surcharge."
+    },
+    {
+      "name": "GSS schedule",
+      "url": "https://www.smeco.coop/wp-content/uploads/SCHEDULE-GSS.pdf",
+      "pages": "Sheets72–74",
+      "purpose": "Independent peak below25kW, secondary single-phase class, 15-minute demand and prior11/contract floors, facility minimum and riders."
+    },
+    {
+      "name": "BSA formula",
+      "url": "https://www.smeco.coop/wp-content/uploads/RiderBSABillStabilizationAdjustment.pdf",
+      "pages": "Sheets143–144",
+      "purpose": "Required monthly BSA for R/GSS secondary; computed monthly for second succeeding billing month. Formula is not a substitute for the approved monthly factor."
+    },
+    {
+      "name": "2026 EMC",
+      "url": "https://www.smeco.coop/wp-content/uploads/RIDER-EMC.pdf",
+      "pages": "Sheet157",
+      "purpose": "Effective Jan1 2026 R0.01247 and GSS0.01057 dollars/kWh. Earlier2025 component history is not inferred."
+    },
+    {
+      "name": "USP",
+      "url": "https://www.smeco.coop/wp-content/uploads/RIDER-USP-1.pdf",
+      "pages": "Sheets177–178",
+      "purpose": "Effective Dec1 2024 R0.32dollars/month; commercial tier assigned using independent prior-year distribution revenue with first-quarter reclassification."
+    },
+    {
+      "name": "Legislative relief",
+      "url": "https://www.smeco.coop/relief/",
+      "purpose": "Account-specific residential relief summer2025/winter2026 under HB1035; no generic zero credit or unknown historical eligibility is assumed."
+    },
+    {
+      "name": "Commercial bill description",
+      "url": "https://www.smeco.coop/my-account/paying-your-bill/about-the-commercial-bill/",
+      "purpose": "States Maryland6percent sales/use tax and actual15-minute demand. This is insufficient alone to infer every tax-base inclusion/exclusion."
+    },
+    {
+      "name": "PSC monthly BSA case index",
+      "url": "https://webpscxb.pscmaryland.com/DMS/case/9456",
+      "evidence_kind": "indexed_primary_source_metadata_only_download_blocked",
+      "purpose": "Search index identifies monthly2025 BSA filings; body/download403 prevented extraction of actual approved rate factors."
+    },
+    {
+      "name": "Public WordPress BSA media archive query",
+      "url": "https://www.smeco.coop/wp-json/wp/v2/media?search=BSA&per_page=100",
+      "filename": "media_bsa.json",
+      "sha256": "ca466385e60447d54e5998dc9efbffa92dbaf0cf76cc495e1cf64139d6f9878a",
+      "purpose": "Distinct official archive route returned the static2023 BSA formula only; it did not establish historical monthly factors."
+    },
+    {
+      "name": "Public WordPress PCA media archive query",
+      "url": "https://www.smeco.coop/wp-json/wp/v2/media?search=PCA&per_page=100",
+      "filename": "media_pca.json",
+      "sha256": "9232cbf030e285a3d53948667d08b66954583e4065c9d747f0fef5848fbc6d24",
+      "purpose": "Historical supply charts/images do not include the mandatory monthly BSA/delivery/tax stack."
+    },
+    {
+      "name": "PJM emergency regions",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "purpose": "SMECO is listed as a separate MD transmission zone inside MIDATL."
+    },
+    {
+      "name": "PJM2026 conceptual C&M load aggregation table",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/task-forces/camstf/2026/20260410/20260410-item-xx---connect-and-manage-conceptual-example-using-27-28-rpm-education---presentation.pdf",
+      "purpose": "Lists SMECO as an area inside PEPCO market/load aggregation, distinct from emergency-region labeling."
+    },
+    {
+      "name": "PJM OATT Attachment H-9C",
+      "url": "https://agreements.pjm.com/oatt/30388",
+      "purpose": "SMECO NITS revenue requirement is related to Pepco Zone network load obligation; no retail rate or wholesale-price settlement is inferred."
+    }
+  ],
+  "verified_current_component_observations_not_executable_bills": {
+    "base_effective": "2026-08-01",
+    "R": {
+      "summer_billing_months": [5,6,7,8,9],
+      "winter_billing_months": [10,11,12,1,2,3,4],
+      "sos_summer_dollars_per_kwh": 0.1248,
+      "sos_winter_dollars_per_kwh": 0.1319,
+      "distribution_dollars_per_kwh": 0.05404,
+      "facilities_dollars_per_month": 9.75,
+      "minimum_rule": "Facilities plus USP; other applicable riders/taxes remain payable."
+    },
+    "GSS": {
+      "sos_summer_dollars_per_kwh": 0.1150,
+      "sos_winter_dollars_per_kwh": 0.1218,
+      "distribution_dollars_per_kwh": 0.04488,
+      "secondary_single_phase_facilities_dollars_per_month": 18.28,
+      "eligibility": "Independent maximum peak demand below25kW; utility retains classification.",
+      "demand_rule": "Maximum current15minute demand,50percent highest preceding11months,50percent contracted capacity; power-factor adjustment if measured peakPF<90percent.",
+      "minimum_rule": "Facilities charge; additional applicable riders/taxes remain payable."
+    },
+    "franchise_tax_dollars_per_kwh": 0.000620,
+    "environmental_surcharge": "Mandatory; approved dated rate and monthlycap/rounding must be reconciled separately.",
+    "emc_effective": "2026-01-01",
+    "emc_R_dollars_per_kwh": 0.01247,
+    "emc_GSS_dollars_per_kwh": 0.01057,
+    "usp_effective": "2024-12-01",
+    "usp_R_dollars_per_month": 0.32,
+    "usp_GSS_example_175_to_1299_prior_year_revenue_dollars_per_month": 1.85,
+    "usp_GSS_assignment": "Customer-specific actual prior-year revenue and first-quarter placement; modeled imports do not establish tier."
+  },
+  "pjm_identity": {
+    "emergency_transmission_zone": "SMECO",
+    "market_forecast_aggregation": "PEPCO",
+    "wholesale_pricing_location": null,
+    "note": "Distinct metadata contexts are preserved; no BGE/DPL identity or wholesale price is substituted."
+  },
+  "access_limits": [
+    "PSC case9456 direct web and system-curl routes returned403; the legacy official host timed out. No repeated unchanged route or rate reconstruction from formula was used.",
+    "Direct Python download initially failed TLS trust; system curl successfully retained the official tariff book/page/archive results with their hashes.",
+    "Current website factors are explicitly pending; elapsed time or a later page date does not prove approval.",
+    "One targeted official newsletter search corroborated only August2026 residential supply, not its full mandatory component stack."
+  ],
+  "requirements_to_enable": [
+    "Approved actual monthly R/GSS PCA and BSA factors with billing-month applicability for each proposed cycle.",
+    "Superseded delivery/base/EMC versions and explicit component effective-date intersections for2025–2026.",
+    "Environmental surcharge originals and tax-base/rate/locality reconciliation, including commercial Maryland sales/use tax.",
+    "Residential relief/capital-refund applicability and independently documented ordinary account facts.",
+    "Exact non-export PV/storage interconnection and import-billing terms, then independent bills, parity, workers, historical cases and browser acceptance on a frozen candidate."
+  ],
+  "benchmark_scope": "Source-level eligibility/base/rider review only. No complete customer or synthetic bill benchmark, dispatch acceptance or electrical simulation is claimed for blocked SMECO plans."
+}

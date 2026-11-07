@@ -35,6 +35,12 @@ function regionalCarbonControl(input,gridOperator) {
   input.disabled=gridOperator!=="PJM";
   if(input.disabled)input.checked=false;
 }
+function regionalUnavailableReason(spec,customerClass) {
+  const plans=(spec?.plans||[]).filter(p=>p.customer_class===customerClass);
+  if(plans.some(p=>p.status==="supported"))return "";
+  const reasons=[...new Set(plans.map(p=>p.reason).filter(Boolean))];
+  return `Billing is unavailable for ${spec?.label||"this utility"} and this site type. ${reasons.join(" ")}`.trim();
+}
 function regionalCarbonResultText(metadata) {
   if(metadata?.status!=="verified")return "Grid carbon emissions were not calculated for this study. Missing emissions are not zero.";
   const coverage=metadata.coverage||{};
@@ -70,7 +76,7 @@ function buildRegionalStudyRequest(base,v) {
   r.include_degradation_in_optimization=v.include_degradation_in_optimization===true;
   return r;
 }
-if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles,regionalRateEvidenceContext,regionalIntervalSupport,regionalCarbonControl,regionalCarbonResultText};
+if(typeof module!=="undefined")module.exports={buildRegionalStudyRequest,regionalCalendarCycles,regionalRateEvidenceContext,regionalIntervalSupport,regionalCarbonControl,regionalCarbonResultText,regionalUnavailableReason};
 
 if(typeof document!=="undefined") {
   let currentKey=null,nativeCsv=null,era5=null,era5Key=null,wasActive=false,marketCsv=null;
@@ -199,7 +205,7 @@ if(typeof document!=="undefined") {
     else $("regional-carbon-note").textContent="Electricity Maps · US-MIDA-PJM · consumption-based lifecycle intensity. Results report kg CO₂e from grid imports, with no export emissions credit. This regional proxy is not the utility's supply mix or a site measurement. Bill optimization is unchanged. Historical access and complete 15-minute coverage are required; no missing data or constant assumptions are substituted.";
     const region=grid==="MISO"?`Resource adequacy zone: ${utility().resource_adequacy_zone} · Transmission zone: ${utility().transmission_zone||"Not assigned"} · Transmission owner: ${utility().transmission_owner||"Not assigned; verify site-specific ownership"} · LRZ is not a pricing node. ${utility().transmission_ownership_context||""}`:`Transmission zone: ${utility().transmission_zone}`;
     $("regional-identity").textContent=`Distribution: ${utility().label} · Jurisdiction: ${utility().state} · Default retail supplier: ${utility().label} · Grid operator: ${grid} · ${region} · Wholesale pricing identity is separate.`;
-    $("regional-coverage").textContent=plan?`${plan.eligibility||"Confirm actual eligibility."} Verified: ${(plan.coverage||[]).map(w=>w.start+" → "+w.end).join(", ")}. ${(plan.limitations||[]).join(" ")}`:"Choose a plan to inspect its verified dates and requirements.";
+    $("regional-coverage").textContent=regionalUnavailableReason(utility(),siteCustomerClass())||(plan?`${plan.eligibility||"Confirm actual eligibility."} Verified: ${(plan.coverage||[]).map(w=>w.start+" → "+w.end).join(", ")}. ${(plan.limitations||[]).join(" ")}`:"Choose a plan to inspect its verified dates and requirements.");
     if(plan?.provisional_coverage)$("regional-coverage").textContent+=" Provisional coverage, only with explicit acceptance: "+plan.provisional_coverage.map(w=>w.start+" → "+w.end).join(", ")+". These are assumed historical estimates, not verified tariffs.";
     $("regional-assumptions").hidden=!evidence.assumptions.length;
     $("regional-assumption-list").replaceChildren();for(const item of evidence.assumptions){const p=document.createElement("p");p.textContent=`${item.id} · ${item.start} → ${item.end} · ${item.basis}: ${item.explanation} Values: ${JSON.stringify(item.assumed_values)}`;$("regional-assumption-list").append(p);}
@@ -231,17 +237,21 @@ if(typeof document!=="undefined") {
   function leaving(){if(wasActive&&!active()){wasActive=false;for(const choice of field("pv_choice").querySelectorAll("option[data-regional-equipment]")){choice.disabled=false;delete choice.dataset.regionalEquipment;}for(const name of ["max_charge_kw","max_discharge_kw","charge_efficiency","discharge_efficiency","capacity_kWh","energy_kWh","SOC_min","SOC_max","pv_capacity_kw","inverter_efficiency"])field(name).closest("label").hidden=false;
     regionalIntervalSupport(field("timestep_minutes"),{interval_minutes:[5,15,30,60]});
     if(field("weather_source").value==="era5")field("weather_source").value="";}}
-  function mainDefaults(){if(!active())return {};const d=base();return {...d.solar,...d.battery,pv_capacity_kw:d.pv_capacity_kw,load_mode:d.load.mode,load_power_kw:d.load.power_kw,archetype:d.load.archetype,weather_source:"clear_sky",timestep_minutes:15,degradation_cost_per_kWh:d.degradation_cost_per_kWh};}
+  function mainDefaults(){if(!active()||!base())return {};const d=base();return {...d.solar,...d.battery,pv_capacity_kw:d.pv_capacity_kw,load_mode:d.load.mode,load_power_kw:d.load.power_kw,archetype:d.load.archetype,weather_source:"clear_sky",timestep_minutes:15,degradation_cost_per_kWh:d.degradation_cost_per_kWh};}
   function defaults(page){if(!active())return;const d=base();
+    if(!d){sync();return;}
     if(page.contains(f("plan"))&&!f("plan").value){f("plan").value=d.account.tariff;accountFields(utility().accounts[d.account.tariff]);}
     const values={verification:"hypothetical_case",reference:d.regional_account.reference,load_source:d.load.source,cycle_mode:"calendar",credit_policy:d.credit_objective_policy,
       export:"non_export",
       voltage:d.electrical_service.voltage,phase:d.electrical_service.phase,volts:d.electrical_service.nominal_voltage_v,
       electrical_source:d.electrical_service.reference,operation_source:"Explicit hypothetical approved parallel non-export installation; review account facts"};
+    if(field("utility").value==="kentucky_power_kentucky"&&page.contains(f("cycle_mode"))&&f("cycles").value===""){
+      f("cycle_mode").value="documented";f("cycles").value=JSON.stringify(d.billing_cycles,null,2);
+    }
     for(const [key,v] of Object.entries(values)){const input=f(key);if(page.contains(input)&&input.value==="")input.value=v;}
     sync();
   }
-  function values(){const v=Object.fromEntries(new FormData(form));for(const input of form.querySelectorAll('input[type="checkbox"]'))v[input.name]=input.checked;
+  function values(){if(!base())throw new Error(regionalUnavailableReason(utility(),siteCustomerClass()));const v=Object.fromEntries(new FormData(form));for(const input of form.querySelectorAll('input[type="checkbox"]'))v[input.name]=input.checked;
     for(const key of [...Object.keys(base().solar),...Object.keys(base().battery||{}),"pv_capacity_kw","pv_choice","weather_source","degradation_cost_per_kWh","timestep_minutes"])v[key]=field(key).value;
     const a=accountValue();const region={...base().regional_account,verification_kind:f("verification").value,reference:f("reference").value,
       wholesale_pricing_location:JSON.parse(f("location").value||"null")};
@@ -251,8 +261,10 @@ if(typeof document!=="undefined") {
       native_csv:nativeCsv,era5,weather_id:weatherId,ess:essResolution};}
   function request(){if(field("ess_mode").value==="equipment"&&batteryEnabled()&&!essResolution?.ready)throw new Error("Review and apply ESS equipment first.");return buildRegionalStudyRequest(base(),values());}
   function validate(page){if(!active())return true;try{
+    const unavailable=regionalUnavailableReason(utility(),siteCustomerClass());if(unavailable)throw new Error(unavailable);
     if(page.dataset.step==="2"){if(!selected()||!f("reference").value.trim())throw new Error("Choose the actual billing plan and document service or hypothetical assumptions.");const a=accountValue();if(["provisional_2025","provisional_cycles_v1"].includes(a.rate_evidence_mode)&&!a.provisional_assumptions_accepted)throw new Error("Accept the documented provisional rates and billing assumptions before continuing.");}
     if(page.dataset.step==="3"){
+      if(field("utility").value==="kentucky_power_kentucky"&&f("cycle_mode").value!=="documented")throw new Error("Use documented utility cycles for Kentucky Power, with the separately confirmed billing month and bill date.");
       const allowed=regionalIntervalSupport(field("timestep_minutes"),selected());
       if(!allowed.includes(Number(field("timestep_minutes").value)))throw new Error("Choose a supported meter interval: "+allowed.join(" or ")+" minutes. Inputs are not automatically resampled.");
       const list=f("cycle_mode").value==="documented"?JSON.parse(f("cycles").value):regionalCalendarCycles(field("start_date").value,field("end_date").value);
@@ -326,6 +338,6 @@ if(typeof document!=="undefined") {
     note.hidden=!enabled;note.textContent=enabled?regionalCarbonResultText(result?.input_provenance?.carbon):"";
   }
   window.regionalUI={comparisonChart,carbonResult,active,batteryEnabled,sync,leaving,mainDefaults,defaults,validate,restore,request,
-    dateDefaults:()=>({start:field("start_date").value||base().start_date,end:field("end_date").value||base().end_date}),
+    dateDefaults:()=>{const d=active()?base():null;return {start:field("start_date").value||d?.start_date||"",end:field("end_date").value||d?.end_date||""};},
     reset:()=>{currentKey=null;nativeCsv=era5=era5Key=marketCsv=null;f("carbon").checked=false;},submit:()=>api("/api/v1/regional/studies?draft=1",request())};
 }

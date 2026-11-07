@@ -1,0 +1,149 @@
+{
+  "utility": "potomac_edison_west_virginia",
+  "jurisdiction": "WV",
+  "authority": "P.S.C. W.Va. No.3, ordinary R/G",
+  "reviewed_on": "2026-11-05",
+  "sources": [
+    "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/west-virginia/tariffs/WVPERetailTariff.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-09%20WV%20Potomac%20Edison%20Electric%20Rates%20Notice%20Residential.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-09%20WV%20Potomac%20Edison%20Non-residential%20Rates.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-09%20PEWV%20Residential%20Rates.pdf",
+    "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-09%20PEWV%20Non-Res%20Rates.pdf",
+    "https://code.wvlegislature.gov/11-15-8/",
+    "https://www.firstenergycorp.com/feconnect/westvirginia.html"
+  ],
+  "coverage": [
+    {
+      "start": "2025-08-01",
+      "end": "2025-12-31"
+    },
+    {
+      "start": "2026-08-01",
+      "end": "2026-11-30"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-07-31",
+      "reason": "Earlier full component intersections and July 15 transition allocation are unverified."
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-07-31",
+      "reason": "Intermediate fuel/base, vegetation and July 15 ECC intersections are unverified."
+    },
+    {
+      "start": "2026-12-01",
+      "end": "2026-12-31",
+      "reason": "The later full component intersection has not been verified."
+    }
+  ],
+  "component_evidence": [
+    {
+      "effective_start": "2025-07-15",
+      "scope": "Complete cycles from August through December2025",
+      "source": [
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-09%20WV%20Potomac%20Edison%20Electric%20Rates%20Notice%20Residential.pdf",
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2025-09%20WV%20Potomac%20Edison%20Non-residential%20Rates.pdf"
+      ],
+      "grade": "downloaded_official_approved_rate_notice",
+      "vectors": {
+        "R": {
+          "customer": 6.0,
+          "energy": [
+            0.11555
+          ],
+          "normalization": -0.00066,
+          "ecc": 0.00364,
+          "ecc2": 0.0,
+          "vegetation": 0.01212,
+          "effluent": 0.0006,
+          "renewable": 0.00018
+        },
+        "G": {
+          "customer": 10.0,
+          "energy": [
+            0.12808,
+            0.11403
+          ],
+          "normalization": 0.00029,
+          "ecc": 0.00278,
+          "ecc2": 0.0,
+          "vegetation": 0.01157,
+          "effluent": 0.00044,
+          "renewable": 7e-05
+        }
+      },
+      "notes": "Combined environmental control charge in the official notice; ECC-2 not added again."
+    },
+    {
+      "effective_start": "2026-08-01",
+      "scope": "Complete cycles August through November2026",
+      "source": [
+        "https://www.firstenergycorp.com/content/dam/customer/Customer%20Choice/Files/west-virginia/tariffs/WVPERetailTariff.pdf",
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-09%20PEWV%20Residential%20Rates.pdf",
+        "https://www.firstenergycorp.com/content/dam/customer/billinserts/2026-09%20PEWV%20Non-Res%20Rates.pdf"
+      ],
+      "grade": "downloaded_filed_tariff_and_official_notice",
+      "vectors": {
+        "R": {
+          "customer": 6.0,
+          "energy": [
+            0.12023
+          ],
+          "normalization": 0.00028,
+          "ecc": 0.0028,
+          "ecc2": 0.00031,
+          "vegetation": 0.01189,
+          "effluent": 0.0,
+          "renewable": 0.0
+        },
+        "G": {
+          "customer": 10.0,
+          "energy": [
+            0.131,
+            0.11637
+          ],
+          "normalization": -6e-05,
+          "ecc": 0.00229,
+          "ecc2": 0.00025,
+          "vegetation": 0.01079,
+          "effluent": 0.0,
+          "renewable": 0.0
+        }
+      },
+      "notes": "Filed Sheets7C/7D/7E separate normalization/ECC/ECC2 effectiveJuly15; base Sheet8/9 August1. Vegetation Sheet7G April5; approved August notice confirms ongoing collection."
+    }
+  ],
+  "billing_rules": [
+    "G independently assigned non-demand-metered service, normal maximum requirements below10kW, no pending reclassification; 9.9kW/6000kWh are separate native/import study limits.",
+    "G minimum=max(customer+block energy,2.41*max(current and previous12 actual meter kWh)/120), with riders additional. Exactly12 prior consecutive bills ending before cycle; actual scenario imports carried forward.",
+    "R ordinary individual residence on one single-phase secondary120/240V meter; minimum customer charge.",
+    "No municipality or local electric-tax district, independently confirmed. WV regulated-electricity sales-tax exclusion, not automatic inference from coordinates.",
+    "Complete calendar service month and matching billed month with final-day bill date/fullmonthly charges are study restrictions.",
+    "Non-export PV and PV-charged paired storage require exact-installation final interconnection approval and a Company written ordinary-rate agreement without AGS/standby charges. No real agreement supplied in development."
+  ],
+  "independent_benchmarks": {
+    "R_1000kwh_2025": "137.43",
+    "G_1000kwh_2025": "144.80",
+    "R_1000kwh_2026": "141.51",
+    "G_1000kwh_2026": "145.492",
+    "note": "Independent literal tariff arithmetic; matching aggregate Mon Power totals do not establish component identity."
+  },
+  "private_source_sha256": {
+    ".cache/potomac_edison_wv/sources/book26.pdf": "31ae57d7e41c0395d727cb4c1868b6668a9dbd167beaa8cf58d320662a808908",
+    ".cache/potomac_edison_wv/sources/book26.txt": "15db16969bc815d00aa532a3f40ac66f11af8db0e956893bdfd87ba78b697e57",
+    ".cache/potomac_edison_wv/sources/com25.pdf": "baa49be10d8474f1e99030ca52e418715fab0d36c9baaab932366ed78581bf3b",
+    ".cache/potomac_edison_wv/sources/com25.txt": "b67d0a92bd95130f81aa48529da9763eeb898d05caac57ae54140b6b63a41e62",
+    ".cache/potomac_edison_wv/sources/com26.pdf": "85cfcbb78386af109d77d6161823fddd45c2cd78e461a38164b77532b4a39f14",
+    ".cache/potomac_edison_wv/sources/com26.txt": "3883241cf9db4d795ab2666ca56f385b36048837bbd6e93a45df98d7eb6b27bb",
+    ".cache/potomac_edison_wv/sources/download_receipt.json": "e5d22bfc657cbf8316eedd82ba72fd4a0336d3da72f110f54291121a8efdd0f8",
+    ".cache/potomac_edison_wv/sources/res25.pdf": "3893199eccf4840e3b81467b3a20fb055211a3f14df02402f0ad0a37f2ed20da",
+    ".cache/potomac_edison_wv/sources/res25.txt": "f5def3e4df05e3ee35e55a14f16e1991468c40d9548334b7896afa5875d23c09",
+    ".cache/potomac_edison_wv/sources/res26.pdf": "348444591d32fb9e3095f0d78bd84919d44de01eaf701d67d97eea29cb80da26",
+    ".cache/potomac_edison_wv/sources/res26.txt": "e5fd59ee19ff50fc5d1b03e0a1f1494edb862abdb4194bb778bcef79a1b2b8e8"
+  },
+  "blocked_retrievals": [],
+  "customer_invoice_supplied": false
+}
