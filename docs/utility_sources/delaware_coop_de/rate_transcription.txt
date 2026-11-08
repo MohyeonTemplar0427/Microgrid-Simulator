@@ -1,0 +1,8 @@
+Delaware Electric Cooperative ordinary R and GS transcription, reviewed November 7, 2026.
+Sources: tariff_2024_11.pdf, tariff_2025_03.pdf, tariff_2025_08.pdf and tariff_2026_06.pdf.
+R: service/minimum $28/month; distribution $.021400/kWh; first 700 supply $.101600/kWh; remaining supply $.081600/kWh.
+GS: service/minimum $30/month; distribution $.022498/kWh; first 700 supply $.111090/kWh; remaining supply $.101090/kWh.
+Both: renewable resource fund $.000178/kWh. PCA -$.001500/kWh through April 2026; +$.012161/kWh from May 1, 2026.
+2026 PDF page 47 (leaf 47) is an image: reviewed rendered r_2026_page47.png. R-BTP is a different optional schedule; its $.021314 distribution rate is not R.
+2026 pages 51-52 (leaves 51-52) contain GS; leaf 41 sets ordinary GS PUT at 4.25% of all other charges. 30 Del. C. 5506(e) exempts residential service.
+The PCA notice calls the decimal factors cents, conflicting with tariff dollar signs. At 1,000 kWh the difference is $13.661, consistent with its approximately $13 illustration. Dollar/kWh tariff values control.

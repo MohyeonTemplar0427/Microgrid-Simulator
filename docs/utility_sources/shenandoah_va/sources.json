@@ -1,0 +1,437 @@
+{
+  "utility": "shenandoah_valley_electric_cooperative",
+  "jurisdiction": "VA",
+  "reviewed_date": "2026-11-07",
+  "plans": [
+    "A-15",
+    "B-16"
+  ],
+  "supply": "bundled",
+  "retail_supplier": "Shenandoah Valley Electric Cooperative",
+  "wholesale_supplier_context": "Old Dominion Electric Cooperative",
+  "regional_identity_scope": "PJM metadata and wholesale pricing are separate from verified cooperative retail supply; root owns regional registration.",
+  "billing_status": "blocked_missing_complete_dated_component_intersections",
+  "coverage": [],
+  "executable_coverage": [],
+  "private_evidence_root": ".cache/shenandoah_va/sources",
+  "sources": [
+    {
+      "filename": "rates.html",
+      "url": "https://www.svec.coop/your-account/rates/",
+      "sha256": "9c80b9400430fd230e8c9f6ce00dae7fa9ab866d4e025edfd7f2441be7ab0669",
+      "bytes": 114999,
+      "evidence_kind": "current_utility_page",
+      "purpose": "Current A-15/B-16 eligibility and PCA billing factor history December 2025 through November 2026. STS section still expressly names A-14/B-14; no inferred successor application."
+    },
+    {
+      "filename": "doc_00.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/Residential-A-15.pdf",
+      "sha256": "e5858ea76379047cda098168670db76f8e9429abf6e0b13f956bf67db270d1de",
+      "bytes": 593506,
+      "evidence_kind": "accepted_base_schedule",
+      "purpose": "A-15 residential, effective bills rendered on/after May 1, 2026, accepted May 12, 2026. Distribution and supply components only.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "filename": "doc_01.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/General-Service-B-16.pdf",
+      "sha256": "9e11757adbb9984c4a6db1bf80cf1daa152419cb299e50c7913202f802fa66cf",
+      "bytes": 596426,
+      "evidence_kind": "accepted_base_schedule",
+      "purpose": "B-16 general service, effective bills rendered on/after May 1, 2026, accepted May 12, 2026. Demand, energy, RKVA and minimum provisions; no complete tax/surcharge vector.",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "doc_02.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/VA-Sales-and-Use-Surcharge-2026.pdf",
+      "sha256": "c0e7841d080437543ee4468f448eea7ab70afcb737409c2c55111a005e82ff70",
+      "bytes": 158382,
+      "evidence_kind": "dated_surcharge_with_unresolved_applicability",
+      "purpose": "STS-12 $1.25/account/month effective January 5, 2026, filed informational December 5, 2025. Expressly lists A-14/B-14, without successor language.",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "filename": "doc_03.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/Power-Cost-Adjustment-PCA-2-June-2022.pdf",
+      "sha256": "a14549a7500063c7c71cc8832bd173eae3fc02231448f569453495687ae125ae",
+      "bytes": 736541,
+      "evidence_kind": "power_cost_adjustment_formula",
+      "purpose": "PCA-2 effective June 1, 2022. Applies to schedules that reference PCA; formula is separate from actual factors published by billing month.",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "doc_04.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/PUR-2025-00190-Order-for-Notice-and-Comment.pdf",
+      "sha256": "0cbdb63fa1ee7ceb635fb602241f31d125cab595206f148d95a9daff01211e3e",
+      "bytes": 2100987,
+      "evidence_kind": "interim_order",
+      "purpose": "PUR-2025-00190 December 5, 2025 order permits January 1, 2026 B-15/LP-15 interim schedules and LPD-2. B-15 eligibility clarification is not evidence that every earlier B-14 rider transfers.",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "filename": "base_b15.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/General-Service-Schedule-B-15.pdf",
+      "sha256": "9776c90684f8c8c8006a9e7b75ca17e45613a2d62a98d4eaa6d97abad4db93f4",
+      "bytes": 160454,
+      "evidence_kind": "accepted_historical_base_schedule",
+      "purpose": "B-15 general service effective bills rendered on/after January 1, 2026; accepted January 13. Exact rates retained separately from later B-16.",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "terms_2026.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/Terms-and-Conditions-2026.pdf",
+      "sha256": "b233876a9ddf549295cfc573396d79971f6f32e2ee5d0938dee488d963c0d346",
+      "bytes": 955856,
+      "evidence_kind": "filed_terms_and_scc_acknowledgement",
+      "purpose": "Terms effective January 1, 2026. SCC January 21 receipt acknowledges informational filing. Printed pp.5 and9 concern approved parallel generation and monthly billing; pp.13-14 list A-X/B-X families without a STS applicability clause.",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "filename": "bill_explanation.pdf",
+      "url": "https://www.svec.coop/wp-content/uploads/residential-bill-explanation.pdf",
+      "sha256": "c12bc5d17528e3eb6ac455700dc675451b62530593d09faf06e989e5b40f4d87",
+      "bytes": 1580234,
+      "evidence_kind": "generic_bill_explanation",
+      "purpose": "Explains city/county, consumption tax and sales/use surcharge. Does not establish dated numeric historical factors or successor schedule application.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "filename": "va_consumption_tax_reused.html",
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2900/",
+      "sha256": "cd9f4dddb3fd9b49ba8dec5dc57ed1188db3449eb97b064cdbc4b3237cc27259",
+      "bytes": 34414,
+      "evidence_kind": "reused_primary_state_statute",
+      "purpose": "Section 58.1-2900(A)(6) requires the cooperative-period federal-power adjustment to each of the three statutory tax amounts when applicable. No SVEC dated numeric ratio or independently established nonapplicability recovered.",
+      "original_retrieved_date": "2026-11-05",
+      "reused_date": "2026-11-07",
+      "original_private_path": ".cache/novec_va/sources/tax_law.html"
+    },
+    {
+      "filename": "rate_jun2025_notice.html",
+      "url": "https://www.svec.coop/news-releases/adjusted-rates-take-effect-this-summer/",
+      "sha256": "9db84ff6f3f5bd1619df2f36d89a2cae74ddbb2aae2c144bbf4c5d26d32df713",
+      "bytes": 91978,
+      "evidence_kind": "dated_utility_notice",
+      "purpose": "May 30, 2025 notice describes June 1 power-cost and existing seasonal block changes. Dollar-change narrative does not establish missing historical A-14/STS vectors."
+    },
+    {
+      "filename": "rate_may2026_notice.html",
+      "url": "https://www.svec.coop/news-releases/may-1-rate-adjustments/",
+      "sha256": "358fdd4107d4932c4590d82bc806f034dd0956351fb26924fdeacfc1320f08a4",
+      "bytes": 91813,
+      "evidence_kind": "dated_utility_notice",
+      "purpose": "April 20, 2026 notice separates ODEC supply-cost and SVEC distribution increases; no complete bill or STS successor rule."
+    },
+    {
+      "filename": "member_guide.html",
+      "url": "https://www.svec.coop/member-services/new-member-information/new-member-guide/",
+      "sha256": "897b723c8a670243e6b8b20cba43f7f13299e2b0f88e46f02006e2e904b90c23",
+      "bytes": 100739,
+      "evidence_kind": "utility_rules_index",
+      "purpose": "Links 2026 terms and member-service material; source index only."
+    },
+    {
+      "filename": "scc_389006.pdf",
+      "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8c5q01%21.PDF",
+      "sha256": "928c51434da94d546736d537f391538b5af3954ee1efc9b01b66caa6fbd9cde8",
+      "bytes": 3402220,
+      "evidence_kind": "regulator_accepted_rate_sheets",
+      "purpose": "May 12, 2026 acceptance letter and stamped current rate schedules. Confirms A-15/B-16; no STS-12 successor provision found.",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "filename": "scc_388787.pdf",
+      "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8bzn01%21.PDF",
+      "sha256": "504d5380a2503e2da4d8473baebac08888918c9527a0c4804c6c4d067d1e3b30",
+      "bytes": 5501013,
+      "evidence_kind": "regulator_approved_tariffs_workpapers",
+      "purpose": "May 4, 2026 tariffs/workpapers responding to May 1 order, PUR-2026-00016. Confirms approved current rates; does not resolve missing STS successor applicability.",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "discovery_routes": [
+    {
+      "filename": "media_general.json",
+      "url": "https://www.svec.coop/wp-json/wp/v2/media?search=General&per_page=100",
+      "sha256": "e990b358b153aa0688e8b9cdb3fb1d5829ae8b7464bd34d6c27ae8c2637915c3",
+      "bytes": 4875,
+      "purpose": "Official public attachment discovery; upload dates do not establish effective dates."
+    },
+    {
+      "filename": "media_residential.json",
+      "url": "https://www.svec.coop/wp-json/wp/v2/media?search=Residential&per_page=100",
+      "sha256": "08370bd297dffbc108d5b09bbefc5c9cfb5cc7740b8ed7f509edd1a4359285b2",
+      "bytes": 13805,
+      "purpose": "Official public attachment discovery; upload dates do not establish effective dates."
+    },
+    {
+      "filename": "media_tax.json",
+      "url": "https://www.svec.coop/wp-json/wp/v2/media?search=Tax&per_page=100",
+      "sha256": "35d1f1c2ffbed6c87d32a937a676f7ec71762ff786178dfc7672925f2a5d7950",
+      "bytes": 2524,
+      "purpose": "Official public attachment discovery; upload dates do not establish effective dates."
+    },
+    {
+      "filename": "scc_case146786_documents.json",
+      "url": "https://www.scc.virginia.gov/DocketSearchAPI/breeze/CaseDetails/GetDocuments?%24filter=MATTER_NO+eq+146786&%24select=Document_Name%2CDate_Filed%2CDocID%2CFileName",
+      "sha256": "510e2d3e5d5b59cf893328c9d65db69b0fc4cf63f1403ee99f6e63d053ce7d7a",
+      "bytes": 3222,
+      "purpose": "Official docket client endpoint listing original regulator filenames and filing dates."
+    }
+  ],
+  "base_observations_not_executable_bills": {
+    "A-15": {
+      "effective": "2026-05-01",
+      "accepted": "2026-05-12",
+      "single_phase_customer_usd": "30.00",
+      "multiphase_customer_usd": "37.50",
+      "distribution_usd_per_kwh": "0.03323",
+      "summer_billing_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "summer_supply_first_800_kwh": "0.06380",
+      "summer_supply_above_800_kwh": "0.09024",
+      "winter_supply_all_kwh": "0.06380",
+      "eligibility": "Normal permanent single-family residence/residential farm; not construction service."
+    },
+    "B-16": {
+      "effective": "2026-05-01",
+      "accepted": "2026-05-12",
+      "single_phase_customer_usd": "30.00",
+      "multiphase_customer_usd": "37.50",
+      "demand_first_20_kw_usd_per_kw": "4.79",
+      "demand_above_20_kw_usd_per_kw": "8.89",
+      "RKVA_usd_per_RKVA": "0.59",
+      "distribution_energy_first_500_kwh": "0.02611",
+      "distribution_energy_next_3700_kwh": "0.00239",
+      "distribution_energy_above_4200_kwh": "0.00091",
+      "summer_supply_all_kwh": "0.06979",
+      "winter_supply_all_kwh": "0.06066",
+      "billing_demand": "Maximum metered fifteen-minute kW in billing month. RKVA may be measured and billed separately.",
+      "minimum": "Highest of basic customer charge; tariff demand charge applied to greater of half preceding-calendar-year highest monthly billing demand and half requested capacity; or contract minimum. Exact minimum application requires independent account review.",
+      "eligibility": "General/non-residential secondary service; customers qualifying for LPD-2 must take LPD-2/successor. No eligibility inferred from modeled imports."
+    },
+    "B-15": {
+      "effective": "2026-01-01",
+      "accepted": "2026-01-13",
+      "single_phase_customer_usd": "30.00",
+      "multiphase_customer_usd": "37.50",
+      "demand_first_20_kw_usd_per_kw": "4.15",
+      "demand_above_20_kw_usd_per_kw": "7.70",
+      "RKVA_usd_per_RKVA": "0.59",
+      "distribution_energy_first_500_kwh": "0.02262",
+      "distribution_energy_next_3700_kwh": "0.00207",
+      "distribution_energy_above_4200_kwh": "0.00079",
+      "summer_supply_all_kwh": "0.06979",
+      "winter_supply_all_kwh": "0.06066",
+      "note": "Historical observation only; B-16 is the current catalog ID. STS-12 names B-14 rather than this successor."
+    },
+    "historical_A-14": "Original exact dated sheet not recovered; May2025 narrative and current A-15 rates do not authorize reconstruction."
+  },
+  "pca_observations_not_executable_rates": {
+    "2025-12": "0.02818",
+    "2026-01": "0.02299",
+    "2026-02": "0.02299",
+    "2026-03": "0.02299",
+    "2026-04": "0.02299",
+    "2026-05": "0.03411",
+    "2026-06": "0.03411",
+    "2026-07": "0.03411",
+    "2026-08": "0.03411",
+    "2026-09": "0.03411",
+    "2026-10": "0.03411",
+    "2026-11": "0.03411"
+  },
+  "surcharge_observation_not_applied": {
+    "schedule": "STS-12",
+    "effective": "2026-01-05",
+    "filed_informational": "2025-12-05",
+    "monthly_usd": "1.25",
+    "expressly_named_schedules": [
+      "A-14",
+      "B-14",
+      "C-14",
+      "PC-7",
+      "LP-14",
+      "CMV-4",
+      "HPS-4",
+      "LED-4"
+    ],
+    "successor_applicability_established": false,
+    "missing": "No original 2025 surcharge; no recovered primary source explicitly applies STS-12 to A-15, B-15 or B-16."
+  },
+  "cooperative_tax_factor": {
+    "authority": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2900/",
+    "section": "58.1-2900(A)(6)",
+    "dated_numeric_factor_established": false,
+    "zero_factor_from_checkbox_allowed": false,
+    "rule": "For qualifying federal-entity power purchases, deduct from each tax amount under A(1), A(2) and A(3) that amount times total federal power cost, including facilities rental, divided by total cooperative Virginia operating revenue for the taxable period.",
+    "gap": "SVEC-specific dated utility-period federal-power ratio or independently established statutory nonapplicability is absent. A hypothetical account checkbox or generic ordinary-tax confirmation cannot establish a zero ratio.",
+    "locality_scope_considered": "Unincorporated Rockingham County; complete effective local utility-tax vector and source reconciliation not established by this adapter."
+  },
+  "billing_chronology": {
+    "current_base": "Effective for bills rendered on/after May 1, 2026; seasons are June-September versus October-May billing months.",
+    "pca": "Website factors explicitly labeled by billing month; unsupported factors are not filled from a neighboring month.",
+    "terms": "Monthly bills; start/end service prorated by days; estimates permitted if no valid reading. Tariffs allow readings billed in units of 10 kWh, requiring independent meter precision before future acceptance."
+  },
+  "DER_scope": {
+    "enabled": false,
+    "required": "Final written exact-installation permission for parallel operation, active interconnection/metering before cycle, ordinary import terms and all extra charges. Terms 2026 printed p.5 provides approval requirement.",
+    "storage": "PV-only charging and zero export; no standalone or grid-charged storage evidence.",
+    "settlement": "No export credits, net metering or demand/credit state is enabled."
+  },
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-11-30",
+      "reason": "Historical bases/PCA/STS and complete taxes missing."
+    },
+    {
+      "start": "2025-12-01",
+      "end": "2026-04-30",
+      "reason": "PCA available and B-15 recovered, but A-14/2025 STS/STS12-on-B15 and dated taxes missing."
+    },
+    {
+      "start": "2026-05-01",
+      "end": "2026-11-30",
+      "reason": "A-15/B-16 and PCA available, but STS12 successor application and dated cooperative/local/SCC tax intersection missing."
+    },
+    {
+      "start": "2026-12-01",
+      "end": "2026-12-31",
+      "reason": "PCA not recovered; no extension of November factor, with surcharge/tax gaps unchanged."
+    }
+  ],
+  "access_limits": [
+    "Prior root routes Residential-A14.pdf and VA-Sales-and-Use-Surcharge-2025.pdf returned 404; not retried. Existing official public media catalogs did not recover those superseded sources.",
+    "SCC case web view exposed a JavaScript shell; its public client declared the CaseDetails/GetDocuments endpoint, which succeeded. Accepted and approved May2026 filing PDFs were preserved.",
+    "SCC original application filename 8bn$01!.PDF and revised filing 8bqy01!.PDF returned 404 once each; these unchanged routes were stopped. Metadata alone does not prove their contents.",
+    "Current rate-page links and A-X/B-X terms are not treated as proof that a rider expressly naming A-14/B-14 applies to successor suffixes."
+  ],
+  "requirements_to_enable": [
+    "Exact original dated A-14/earlier B/STS tariff histories for any requested earlier cycles; no reconstruction from an approximate notice.",
+    "Primary explicit STS-12 successor applicability or filed corrected rider; never assume zero or waive this from an account checkbox.",
+    "Dated SVEC federal-power statutory tax factor or independently established nonapplicability, actual SCC levy, effective locality utility-tax rules and ordinary account applicability.",
+    "Independent B actual demand, preceding-calendar-year/requested-capacity/contract minima, RKVA billing and retained assignment; meter precision and full billing cycles.",
+    "Exact-installation ordinary-import DER approval followed by independent complete bills, numeric/symbolic parity, dispatch/state and saved-artifact checks, then frozen selected historical/browser acceptance."
+  ],
+  "visual_review": {
+    "files": [
+      "doc_00.pdf pages1-2",
+      "doc_01.pdf pages1-2",
+      "doc_02.pdf page1",
+      "base_b15.pdf pages1-2",
+      "terms_2026.pdf page9"
+    ],
+    "receipt_root": ".cache/shenandoah_va/rendered",
+    "observed": "A-15/B-16 current values/effective stamps and STS-12 named A-14/B-14 verified visually; other rendered pages are retained for focused review."
+  },
+  "benchmark_scope": "Source/version/applicability review and fail-closed interface acceptance only. No complete-bill benchmark, dispatch/SOC proof, historical simulation, all-interval electrical result, browser acceptance or GUI compatibility is claimed."
+}

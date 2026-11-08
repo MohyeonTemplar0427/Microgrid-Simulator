@@ -77,6 +77,17 @@ PJM_NEXT5_CASES = (
     ("northern_virginia_electric_cooperative", "residential", "R-1"),
     ("northern_virginia_electric_cooperative", "commercial", "SC-1"),
 )
+# REC, SCP and SVEC are visible but deliberately unavailable; no study cases.
+PJM_THIRD5_CASES = (
+    ("duke_energy_kentucky", "residential", "RS"),
+    ("duke_energy_kentucky", "commercial", "DS"),
+    ("delaware_electric_cooperative", "residential", "R"),
+    ("delaware_electric_cooperative", "commercial", "GS"),
+)
+THIRD5_MONTHLY_DATES = {
+    "duke_energy_kentucky": ("2026-04-01", "2026-04-30"),
+    "delaware_electric_cooperative": ("2026-07-01", "2026-07-31"),
+}
 NEXT5_MONTHLY_DATES = {
     "potomac_edison_west_virginia": ("2025-11-01", "2025-11-30"),
     "wheeling_power_west_virginia": ("2025-11-01", "2025-11-30"),
@@ -105,6 +116,8 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "duke_energy_kentucky": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-09-30")),
+    "delaware_electric_cooperative": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-09-30")),
     'potomac_edison_west_virginia': ((2025, '2025-01-01', '2025-12-31'), (2026, '2026-01-01', '2026-09-30')),
     'wheeling_power_west_virginia': ((2025, '2025-01-01', '2025-12-31'), (2026, '2026-01-01', '2026-09-30')),
     'kentucky_power_kentucky': ((2025, '2025-01-01', '2025-12-31'), (2026, '2026-01-01', '2026-09-30')),
@@ -143,7 +156,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
-        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + DUKE_OH_CASES + APCO_VA_CASES + IM_IN_CASES + PJM_BATCH5_CASES + PJM_NEXT5_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES + TOLEDO_CASES + AES_OHIO_CASES if row[0] in utilities)
+        selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + DUKE_OH_CASES + APCO_VA_CASES + IM_IN_CASES + PJM_BATCH5_CASES + PJM_NEXT5_CASES + PJM_THIRD5_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES + TOLEDO_CASES + AES_OHIO_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
     if include_ciep:
@@ -246,6 +259,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
+    if utility=="duke_energy_kentucky" and custom is None and period=="annual":
+        raise ValueError("Duke Energy Kentucky full-year2025 coverage is unverified; select April–June2025 or2026 complete service cycles.")
     if utility in NEXT5_MONTHLY_DATES and utility!="northern_virginia_electric_cooperative" and custom is None and period=="annual":
         raise ValueError("Full-year2025 component coverage is unverified. Select supported complete cycles.")
     if utility in BATCH5_MONTHLY_DATES and custom is None and period=="annual":
@@ -281,6 +296,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start, end = "2026-09-01", "2026-09-30"
     else:
         start, end = ("2025-01-01", "2025-12-31") if period == "annual" else ("2025-07-01", "2025-07-31")
+    if utility in THIRD5_MONTHLY_DATES and custom is None and period=="monthly":
+        start,end=THIRD5_MONTHLY_DATES[utility]
     if utility in NEXT5_MONTHLY_DATES and custom is None and period=="monthly":
         start,end=NEXT5_MONTHLY_DATES[utility]
     if utility in BATCH5_MONTHLY_DATES and custom is None and period=="monthly":
@@ -321,7 +338,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
-    if utility in ("potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio"):
+    if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio"):
         account.update(adapter(utility).hypothetical_defaults(account["tariff"],day=start[:7]+"-01"))
     if utility=="firstenergy_ohio_toledo":
         account.update(billing_month=start[:7]+"-01",bill_date=end)
@@ -410,9 +427,14 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
                              "metadata": json.loads((folder/"metadata.json").read_text())})
             r["regional_account"]["wholesale_pricing_location"] = deepcopy(adapter(utility).RESIDUAL_LOCATION)
             r["name"] += " CIEP"
-    if utility=="kentucky_power_kentucky":
+    if utility in ("kentucky_power_kentucky", "duke_energy_kentucky"):
         for cycle in r["billing_cycles"]:
             cycle.update(adapter(utility).hypothetical_cycle_fields(cycle["start_date"]))
+    if utility=="delaware_electric_cooperative" and account["tariff"]=="GS":
+        for cycle in r["billing_cycles"]:
+            facts=adapter(utility).hypothetical_defaults("GS",day=cycle["start_date"])
+            cycle["account_overrides"].update({k:facts[k] for k in
+                ("gs_history_through_month","gs_monthly_demands_kw","gs_review_source")})
     if utility=="northern_virginia_electric_cooperative" and account["tariff"]=="SC-1":
         # Classification history is an independent account fact per cycle;
         # it is not inferred from simulated PV-reduced imports.
@@ -422,7 +444,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
                 ("sc_history_through_month","sc_monthly_demands_kw","sc_review_source")})
     r["operating_contract"].update(interconnection_confirmed=True, grid_charging_confirmed=True,
         reference="Explicit hypothetical utility-approved non-export PV/storage account; no export compensation assumed")
-    if utility.startswith("firstenergy_") or utility in ("potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio","duquesne_light_pennsylvania"):
+    if utility.startswith("firstenergy_") or utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio","duquesne_light_pennsylvania"):
         r["operating_contract"].update(grid_charging_confirmed=False,renewable_only_charging=True)
     r["solar"].update(tilt_degrees=30., azimuth_degrees=180., system_losses_fraction=.14,
                        inverter_efficiency=.96)

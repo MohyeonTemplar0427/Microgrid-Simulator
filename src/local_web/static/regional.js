@@ -245,7 +245,7 @@ if(typeof document!=="undefined") {
       export:"non_export",
       voltage:d.electrical_service.voltage,phase:d.electrical_service.phase,volts:d.electrical_service.nominal_voltage_v,
       electrical_source:d.electrical_service.reference,operation_source:"Explicit hypothetical approved parallel non-export installation; review account facts"};
-    if(field("utility").value==="kentucky_power_kentucky"&&page.contains(f("cycle_mode"))&&f("cycles").value===""){
+    if(["kentucky_power_kentucky","duke_energy_kentucky"].includes(field("utility").value)&&page.contains(f("cycle_mode"))&&f("cycles").value===""){
       f("cycle_mode").value="documented";f("cycles").value=JSON.stringify(d.billing_cycles,null,2);
     }
     for(const [key,v] of Object.entries(values)){const input=f(key);if(page.contains(input)&&input.value==="")input.value=v;}
@@ -264,7 +264,7 @@ if(typeof document!=="undefined") {
     const unavailable=regionalUnavailableReason(utility(),siteCustomerClass());if(unavailable)throw new Error(unavailable);
     if(page.dataset.step==="2"){if(!selected()||!f("reference").value.trim())throw new Error("Choose the actual billing plan and document service or hypothetical assumptions.");const a=accountValue();if(["provisional_2025","provisional_cycles_v1"].includes(a.rate_evidence_mode)&&!a.provisional_assumptions_accepted)throw new Error("Accept the documented provisional rates and billing assumptions before continuing.");}
     if(page.dataset.step==="3"){
-      if(field("utility").value==="kentucky_power_kentucky"&&f("cycle_mode").value!=="documented")throw new Error("Use documented utility cycles for Kentucky Power, with the separately confirmed billing month and bill date.");
+      if(["kentucky_power_kentucky","duke_energy_kentucky"].includes(field("utility").value)&&f("cycle_mode").value!=="documented")throw new Error("Use documented utility cycles for Kentucky Power or Duke Energy Kentucky, with the separately confirmed billing month and bill date.");
       const allowed=regionalIntervalSupport(field("timestep_minutes"),selected());
       if(!allowed.includes(Number(field("timestep_minutes").value)))throw new Error("Choose a supported meter interval: "+allowed.join(" or ")+" minutes. Inputs are not automatically resampled.");
       const list=f("cycle_mode").value==="documented"?JSON.parse(f("cycles").value):regionalCalendarCycles(field("start_date").value,field("end_date").value);

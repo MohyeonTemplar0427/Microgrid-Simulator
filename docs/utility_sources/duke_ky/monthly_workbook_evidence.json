@@ -1,0 +1,92 @@
+[
+  {
+    "filename": "esm_STAFF-DR-01-001_-_Attachment_13.xlsx",
+    "sheet": "FORM 1.00",
+    "cells": {
+      "A8": "For the Expense Month of March 2025",
+      "E19": 0.0351,
+      "E28": 0.0548
+    }
+  },
+  {
+    "filename": "esm_STAFF-DR-01-001_-_Attachment_14.xlsx",
+    "sheet": "FORM 1.00",
+    "cells": {
+      "A8": "For the Expense Month of April 2025",
+      "E19": 0.0149,
+      "E28": 0.0234
+    }
+  },
+  {
+    "filename": "esm_STAFF-DR-01-001_-_Attachment_15.xlsx",
+    "sheet": "FORM 1.00",
+    "cells": {
+      "A8": "For the Expense Month of May 2025",
+      "E19": 0.0543,
+      "E28": 0.0855
+    }
+  },
+  {
+    "filename": "esm_STAFF-DR-01-001_-_Attachment_25.xlsm",
+    "sheet": "FORM 1.00",
+    "cells": {
+      "A8": "For the Expense Month of March 2026",
+      "E19": -0.0039,
+      "E28": -0.006
+    }
+  },
+  {
+    "filename": "esm_STAFF-DR-01-001_-_Attachment_26.xlsm",
+    "sheet": "FORM 1.00",
+    "cells": {
+      "A8": "For the Expense Month of April 2026",
+      "E19": -0.0191,
+      "E28": -0.0288
+    }
+  },
+  {
+    "filename": "esm_STAFF-DR-01-001_-_Attachment_27.xlsm",
+    "sheet": "FORM 1.00",
+    "cells": {
+      "A8": "For the Expense Month of May 2026",
+      "E19": -0.0097,
+      "E28": -0.0146
+    }
+  },
+  {
+    "filename": "school_tax_2025.xlsx",
+    "sheet": "rptTaxRateLevied",
+    "cells": {
+      "A1": "Tax Rates Levied",
+      "T2": "Date Generated: May 28, 2025 4:04:14 PM",
+      "A3": "District",
+      "P3": "Utility",
+      "A19": "035 Boone County",
+      "P19": 3
+    }
+  },
+  {
+    "filename": "school_tax_2026.xlsx",
+    "sheet": "rptTaxRateLevied",
+    "cells": {
+      "A1": "Tax Rates Levied",
+      "T2": "Date Generated: April 30, 2026 5:14:04 PM",
+      "A3": "District",
+      "P3": "Utility",
+      "A19": "035 Boone County",
+      "P19": 3
+    }
+  },
+  {
+    "filename": "school_tax_2027.xlsx",
+    "sheet": "rptTaxRateLevied",
+    "cells": {
+      "A1": "Tax Rates Levied - 2026-2027",
+      "T2": null,
+      "A3": "District",
+      "P3": "Utility",
+      "A8": "035 Boone County",
+      "P8": 3
+    }
+  }
+]

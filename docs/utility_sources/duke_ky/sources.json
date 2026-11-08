@@ -1,0 +1,498 @@
+{
+  "utility": "duke_energy_kentucky",
+  "state": "KY",
+  "retrieved_date": "2026-11-07",
+  "coverage": [
+    {
+      "start": "2025-04-01",
+      "end": "2025-06-30"
+    },
+    {
+      "start": "2026-04-01",
+      "end": "2026-06-30"
+    }
+  ],
+  "coverage_basis": "complete_calendar_service_cycles_with_independent_following_named_billing_month_and_verified_first_business_day_bill",
+  "plans": [
+    "RS",
+    "DS"
+  ],
+  "sources": [
+    {
+      "url": "https://psc.ky.gov/tariffs/electric/Duke%20Energy%20Kentucky/Cancelled%20Tariff%20Pages/2025/RATE%20DS%20-%20SERVICE%20AT%20SECONDARY%20DISTRIBUTION%20VOLTAGE/10-02.pdf",
+      "path": ".cache/duke_ky/sources/cancelled_2025_ds_10-02.pdf",
+      "sha256": "778da5a688dcd00eda4647cd0b25ed3e71e5648a9849a307c7e9ad2fe25872dc",
+      "bytes": 280080,
+      "retrieved_utc": "2026-11-07T21:26:40.570941+00:00",
+      "pdf_pages_reviewed": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/tariffs/electric/Duke%20Energy%20Kentucky/Cancelled%20Tariff%20Pages/2025/RIDER%20PSM%20-%20PROFIT%20SHARING%20MECHANISM/06-02.pdf",
+      "path": ".cache/duke_ky/sources/cancelled_2025_psm_06-02.pdf",
+      "sha256": "8506d35889e9fb689187722e0bf55cfeb8d18ad09770cd8741846a949c79f675",
+      "bytes": 253036,
+      "retrieved_utc": "2026-11-07T21:26:41.708472+00:00",
+      "pdf_pages_reviewed": [
+        1,
+        3
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/tariffs/electric/Duke%20Energy%20Kentucky/Cancelled%20Tariff%20Pages/2025/RIDER%20PSM%20-%20PROFIT%20SHARING%20MECHANISM/09-02.pdf",
+      "path": ".cache/duke_ky/sources/cancelled_2025_psm_09-02.pdf",
+      "sha256": "012f321923147064038a9cec740e4ccc0cd8e5d398f48130af28a79f225c1ce8",
+      "bytes": 959729,
+      "retrieved_utc": "2026-11-07T21:26:43.872862+00:00",
+      "pdf_pages_reviewed": [
+        1,
+        3
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/tariffs/electric/Duke%20Energy%20Kentucky/Cancelled%20Tariff%20Pages/2025/RATE%20RS%20-%20RESIDENTIAL%20SERVICE/10-02.pdf",
+      "path": ".cache/duke_ky/sources/cancelled_2025_rs_10-02.pdf",
+      "sha256": "2cae3a14bfcaff467d153689f81dd209977659f8fbb299f917a3e7061ab0eb45",
+      "bytes": 260787,
+      "retrieved_utc": "2026-11-07T21:26:40.161590+00:00",
+      "pdf_pages_reviewed": [
+        1
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/tariffs/electric/Duke%20Energy%20Kentucky/Cancelled%20Tariff%20Pages/2026/RIDER%20DSMR%20-%20DEMAND%20SIDE%20MANAGEMENT%20RATE/02-02.pdf",
+      "path": ".cache/duke_ky/sources/cancelled_2026_dsmr_02-02.pdf",
+      "sha256": "97fcefd594496aaa6885a0ce716869cd5605888875afc680e88df2528ad49e70",
+      "bytes": 270246,
+      "retrieved_utc": "2026-11-07T21:26:42.438814+00:00",
+      "pdf_pages_reviewed": [
+        1
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/tariffs/electric/Duke%20Energy%20Kentucky/Cancelled%20Tariff%20Pages/2026/RIDER%20PSM%20-%20PROFIT%20SHARING%20MECHANISM/06-01.pdf",
+      "path": ".cache/duke_ky/sources/cancelled_2026_psm_06-01.pdf",
+      "sha256": "5c7afc3e1055ab5aa946635c8758782ccc93bbd24132cc6f5df47dd1cd38a65e",
+      "bytes": 206049,
+      "retrieved_utc": "2026-11-07T21:26:43.736734+00:00",
+      "pdf_pages_reviewed": [
+        1,
+        3
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/tariffs/electric/Duke%20Energy%20Kentucky/Tariff.pdf",
+      "path": ".cache/duke_ky/sources/current_tariff.pdf",
+      "sha256": "c07351553c55bb2bb97f5259adcd4c7bd4fe7e2451b318bdf48c819d64d39126",
+      "bytes": 4373022,
+      "retrieved_utc": "2026-11-07T21:34:09.046129+00:00",
+      "pdf_pages_reviewed": [
+        12,
+        20,
+        29,
+        31,
+        32,
+        33,
+        34,
+        110,
+        111,
+        115,
+        118,
+        123,
+        124,
+        126,
+        129,
+        173
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/DEK_R_PSCDR01_102326.pdf",
+      "path": ".cache/duke_ky/sources/esm_DEK_R_PSCDR01_102326.pdf",
+      "sha256": "02adc4893013e86c6c02232fc9758504831449fc17ff32510331a337ee049af5",
+      "bytes": 5205233,
+      "retrieved_utc": "2026-11-07T21:27:13.981844+00:00",
+      "pdf_pages_reviewed": [
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/STAFF-DR-01-001_-_Attachment_01_%28a%29%28b%29.xlsx",
+      "path": ".cache/duke_ky/sources/esm_STAFF-DR-01-001_-_Attachment_01_(a)(b).xlsx",
+      "sha256": "bd5b0b34d7ff02115908ba46a00fa7cfd0b650e90fa457a65c29f8842613ea2c",
+      "bytes": 58329,
+      "retrieved_utc": "2026-11-07T21:27:12.666184+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/STAFF-DR-01-001_-_Attachment_13.xlsx",
+      "path": ".cache/duke_ky/sources/esm_STAFF-DR-01-001_-_Attachment_13.xlsx",
+      "sha256": "563d90e69ad75d5ce70371986d3e4843d98ad7306997cdd82eb86881c0b55879",
+      "bytes": 528994,
+      "retrieved_utc": "2026-11-07T21:29:44.848684+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/STAFF-DR-01-001_-_Attachment_14.xlsx",
+      "path": ".cache/duke_ky/sources/esm_STAFF-DR-01-001_-_Attachment_14.xlsx",
+      "sha256": "20b3305137c00050dd0e2389c8229152c056bb8468aeeb2378a240d424888ace",
+      "bytes": 528265,
+      "retrieved_utc": "2026-11-07T21:29:45.550815+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/STAFF-DR-01-001_-_Attachment_15.xlsx",
+      "path": ".cache/duke_ky/sources/esm_STAFF-DR-01-001_-_Attachment_15.xlsx",
+      "sha256": "e84fccc124c3da32c50e4d949e8562d8c15fca8fcfabeeb483d0975a5bccbbc8",
+      "bytes": 529366,
+      "retrieved_utc": "2026-11-07T21:29:44.778279+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/STAFF-DR-01-001_-_Attachment_25.xlsm",
+      "path": ".cache/duke_ky/sources/esm_STAFF-DR-01-001_-_Attachment_25.xlsm",
+      "sha256": "b027d142f4bdc9257c8e3078398814d92b0224754a8d1241f33883bb5246fb35",
+      "bytes": 537279,
+      "retrieved_utc": "2026-11-07T21:29:45.550937+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/STAFF-DR-01-001_-_Attachment_26.xlsm",
+      "path": ".cache/duke_ky/sources/esm_STAFF-DR-01-001_-_Attachment_26.xlsm",
+      "sha256": "68a759b691269978865a96c5a942972d195c70a984bd9f0beca683253f70b217",
+      "bytes": 537251,
+      "retrieved_utc": "2026-11-07T21:29:45.744255+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/pscecf/2026-00234/charlene.barlow%40duke-energy.com/10232026023518/STAFF-DR-01-001_-_Attachment_27.xlsm",
+      "path": ".cache/duke_ky/sources/esm_STAFF-DR-01-001_-_Attachment_27.xlsm",
+      "sha256": "cf15cdf654771ea39982c4eff4f011af4c52c8962b937029b0df2057b629bcfa",
+      "bytes": 539477,
+      "retrieved_utc": "2026-11-07T21:29:47.419289+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/Case/ViewCaseFilings/2026-00234",
+      "path": ".cache/duke_ky/sources/esm_review_case.html",
+      "sha256": "812201a81154bf04bb3ac6c6d2cf0d2562491fe5f8ea932c8a419cd4a9b1749c",
+      "bytes": 48713,
+      "retrieved_utc": "2026-11-07T21:26:43.699469+00:00"
+    },
+    {
+      "url": "https://psc.ky.gov/PSCFAC/duke%20energy%20kentucky/2025_DEK.pdf",
+      "path": ".cache/duke_ky/sources/fac_2025.pdf",
+      "sha256": "be16df0af1efb50175dade37040be5bba5479f547d5cf493b30894d2ff6dd1a8",
+      "bytes": 3327740,
+      "retrieved_utc": "2026-11-07T21:26:22.151986+00:00",
+      "pdf_pages_reviewed": [
+        50,
+        57,
+        64
+      ]
+    },
+    {
+      "url": "https://psc.ky.gov/PSCFAC/duke%20energy%20kentucky/2026_DEK.pdf",
+      "path": ".cache/duke_ky/sources/fac_2026.pdf",
+      "sha256": "679044913a218941ff98f45fb9c8899f08e1f557c448a8d207b6e7ccc7fba237",
+      "bytes": 1059893,
+      "retrieved_utc": "2026-11-07T21:26:17.471680+00:00",
+      "pdf_pages_reviewed": [
+        30,
+        37,
+        44
+      ]
+    },
+    {
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58185",
+      "path": ".cache/duke_ky/sources/gross_receipts_definitions_2026.pdf",
+      "sha256": "c9b16bb58ff482e82084cd9c65abff72a42cd5569fbb769485f61b14219bbdcc",
+      "bytes": 63321,
+      "retrieved_utc": "2026-11-07T21:29:46.269504+00:00",
+      "pdf_pages_reviewed": [
+        4,
+        5
+      ]
+    },
+    {
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58191",
+      "path": ".cache/duke_ky/sources/residential_exemption_2026.pdf",
+      "sha256": "425b51c6cfe5c6f63c21f821ac12ad14ec0982665a5516493e91f0631f5cf7f1",
+      "bytes": 88438,
+      "retrieved_utc": "2026-11-07T21:29:46.358089+00:00",
+      "pdf_pages_reviewed": [
+        1,
+        2
+      ]
+    },
+    {
+      "url": "https://apps.legislature.ky.gov/lrc/publications/ResearchReports/RR504.pdf",
+      "path": ".cache/duke_ky/sources/school_tax_2025.pdf",
+      "sha256": "660bd81700ca3cbd36d912a1e4fd9324575708f3fa8fc3dc2e8f5e5995a7b590",
+      "bytes": 8774950,
+      "retrieved_utc": "2026-11-07T21:26:46.137642+00:00",
+      "pdf_pages_reviewed": [
+        43
+      ]
+    },
+    {
+      "url": "https://education.ky.gov/districts/SEEK/Documents/2024-2025%20Local%20District%20Tax%20Levies%205%2030%2025.xlsx",
+      "final_url": "https://www.education.ky.gov/districts/SEEK/Documents/2024-2025%20Local%20District%20Tax%20Levies%205%2030%2025.xlsx",
+      "path": ".cache/duke_ky/sources/school_tax_2025.xlsx",
+      "sha256": "b69ca9792475b196ab605ba0287874b7bd016f6846f2ca53ecbcf95370bff195",
+      "bytes": 47005,
+      "retrieved_utc": "2026-11-07T21:40:42.418454+00:00"
+    },
+    {
+      "url": "https://education.ky.gov/districts/SEEK/Documents/Tax%20Rate%20Levied%20as%20of%20April%2030%202026.xlsx",
+      "final_url": "https://www.education.ky.gov/districts/SEEK/Documents/Tax%20Rate%20Levied%20as%20of%20April%2030%202026.xlsx",
+      "path": ".cache/duke_ky/sources/school_tax_2026.xlsx",
+      "sha256": "5cba2c1778976673b4a436e1bfd6f67540c82f29f348b5cf21d3fe74adf22d4c",
+      "bytes": 43727,
+      "retrieved_utc": "2026-11-07T21:39:58.389562+00:00"
+    },
+    {
+      "url": "https://education.ky.gov/districts/SEEK/Documents/2026-2027%20Local%20District%20Tax%20Levies.xlsx",
+      "final_url": "https://www.education.ky.gov/districts/SEEK/Documents/2026-2027%20Local%20District%20Tax%20Levies.xlsx",
+      "path": ".cache/duke_ky/sources/school_tax_2027.xlsx",
+      "sha256": "d02b37ec49c46e062e68c1a8f1c6a7813500afcca8c8df09c81c8f896a8a032e",
+      "bytes": 32475,
+      "retrieved_utc": "2026-11-07T21:42:06.370462+00:00"
+    },
+    {
+      "url": "https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx",
+      "retrieved_date": "2026-11-07",
+      "access": "web_tool_text_readback; direct bytes HTTP403",
+      "sha256": null,
+      "verified_summary": "DOR sales tax guidance: six percent of gross receipts, no local sales tax."
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/51A380%20%281-3-23%29.pdf",
+      "retrieved_date": "2026-11-07",
+      "access": "web_tool_text_readback; direct bytes HTTP403",
+      "sha256": null,
+      "verified_summary": "DOR Form51A380: electricity primary-domicile exemption; effective first complete cycle after provider receipt."
+    },
+    {
+      "url": "https://revenue.ky.gov/Business/Utility-Gross-Receipts-License-Tax/Pages/default.aspx",
+      "retrieved_date": "2026-11-07",
+      "access": "web_tool_text_readback; direct bytes HTTP403",
+      "sha256": null,
+      "verified_summary": "DOR school-utility levy is imposed on service-provider gross receipts and collected at the school district rate; district boundary is separate from county name."
+    }
+  ],
+  "excerpts": [
+    {
+      "path": "filed_evidence.txt",
+      "sha256": "5d04695c31acb2316e3f89a2be86ef95702772f59efe23f7fba304f3cab37ff0",
+      "bytes": 105642
+    },
+    {
+      "path": "monthly_workbook_evidence.json",
+      "sha256": "4cff53afac4d04e27f448934966488b8b251df50643c8244d6acf5ef1789bab9",
+      "bytes": 2082
+    }
+  ],
+  "monthly_components": [
+    {
+      "service_month": "2025-04-01",
+      "billing_month": "2025-05-01",
+      "bill_date": "2025-05-01",
+      "independent_factor_literals": [
+        ".004559",
+        ".0351",
+        ".0548",
+        ".001508"
+      ],
+      "factor_order": [
+        "fac",
+        "esm_residential",
+        "esm_nonresidential",
+        "signed_psm"
+      ],
+      "fac_source": "fac_2025.pdf",
+      "fac_source_page": 64,
+      "esm_filename": "esm_STAFF-DR-01-001_-_Attachment_13.xlsx",
+      "esm_cells": [
+        "FORM 1.00!E19",
+        "FORM 1.00!E28"
+      ]
+    },
+    {
+      "service_month": "2025-05-01",
+      "billing_month": "2025-06-01",
+      "bill_date": "2025-06-02",
+      "independent_factor_literals": [
+        "-.006385",
+        ".0149",
+        ".0234",
+        ".000806"
+      ],
+      "factor_order": [
+        "fac",
+        "esm_residential",
+        "esm_nonresidential",
+        "signed_psm"
+      ],
+      "fac_source": "fac_2025.pdf",
+      "fac_source_page": 57,
+      "esm_filename": "esm_STAFF-DR-01-001_-_Attachment_14.xlsx",
+      "esm_cells": [
+        "FORM 1.00!E19",
+        "FORM 1.00!E28"
+      ]
+    },
+    {
+      "service_month": "2025-06-01",
+      "billing_month": "2025-07-01",
+      "bill_date": "2025-07-01",
+      "independent_factor_literals": [
+        ".000627",
+        ".0543",
+        ".0855",
+        ".000806"
+      ],
+      "factor_order": [
+        "fac",
+        "esm_residential",
+        "esm_nonresidential",
+        "signed_psm"
+      ],
+      "fac_source": "fac_2025.pdf",
+      "fac_source_page": 50,
+      "esm_filename": "esm_STAFF-DR-01-001_-_Attachment_15.xlsx",
+      "esm_cells": [
+        "FORM 1.00!E19",
+        "FORM 1.00!E28"
+      ]
+    },
+    {
+      "service_month": "2026-04-01",
+      "billing_month": "2026-05-01",
+      "bill_date": "2026-05-01",
+      "independent_factor_literals": [
+        ".006094",
+        "-.0039",
+        "-.0060",
+        "-.005893"
+      ],
+      "factor_order": [
+        "fac",
+        "esm_residential",
+        "esm_nonresidential",
+        "signed_psm"
+      ],
+      "fac_source": "fac_2026.pdf",
+      "fac_source_page": 44,
+      "esm_filename": "esm_STAFF-DR-01-001_-_Attachment_25.xlsm",
+      "esm_cells": [
+        "FORM 1.00!E19",
+        "FORM 1.00!E28"
+      ]
+    },
+    {
+      "service_month": "2026-05-01",
+      "billing_month": "2026-06-01",
+      "bill_date": "2026-06-01",
+      "independent_factor_literals": [
+        "-.009567",
+        "-.0191",
+        "-.0288",
+        "-.003992"
+      ],
+      "factor_order": [
+        "fac",
+        "esm_residential",
+        "esm_nonresidential",
+        "signed_psm"
+      ],
+      "fac_source": "fac_2026.pdf",
+      "fac_source_page": 37,
+      "esm_filename": "esm_STAFF-DR-01-001_-_Attachment_26.xlsm",
+      "esm_cells": [
+        "FORM 1.00!E19",
+        "FORM 1.00!E28"
+      ]
+    },
+    {
+      "service_month": "2026-06-01",
+      "billing_month": "2026-07-01",
+      "bill_date": "2026-07-01",
+      "independent_factor_literals": [
+        "-.001945",
+        "-.0097",
+        "-.0146",
+        "-.003992"
+      ],
+      "factor_order": [
+        "fac",
+        "esm_residential",
+        "esm_nonresidential",
+        "signed_psm"
+      ],
+      "fac_source": "fac_2026.pdf",
+      "fac_source_page": 30,
+      "esm_filename": "esm_STAFF-DR-01-001_-_Attachment_27.xlsm",
+      "esm_cells": [
+        "FORM 1.00!E19",
+        "FORM 1.00!E28"
+      ]
+    }
+  ],
+  "clocks": {
+    "base_and_dsmr": "Initial meter-read service-date schedule applicability (sheet25), limited to stable full service periods; no within-cycle transition allocation.",
+    "fac": "Filed effective date for billing; expense month is second preceding named billing month. Use exact bill date, not PDF year or service month.",
+    "esm": "Expense month second preceding named billing month (sheet76); exact classes/form1.00 factors.",
+    "psm": "Named utility billing month/quarter and filed effective date; positive printed factors credit, parenthesized factors charge.",
+    "ds_demand": "Fifteen-minute demand; 85 percent prior summer peak retained for eleven succeeding months, one-kW single-phase minimum. Independent preceding-twelve-month review and current ceiling restrict all demands to free first15kW."
+  },
+  "arithmetic": {
+    "base_2025": {
+      "RS_customer": 13,
+      "RS_kwh": 0.111639,
+      "DS_customer": 15,
+      "DS_first_6000_kwh": 0.114788
+    },
+    "base_2026": {
+      "RS_customer": 14.75,
+      "RS_kwh": 0.126104,
+      "DS_customer": 15,
+      "DS_first_6000_kwh": 0.126995
+    },
+    "dsm_2025": {
+      "RS_kwh": 0.002418,
+      "DS_kwh": 0.003409,
+      "RS_HEA": 0.3
+    },
+    "dsm_2026": {
+      "RS_kwh": 0.005514,
+      "DS_kwh": 0.001154,
+      "RS_HEA": 0.3
+    },
+    "esm_basis_RS": "Ordinary subtotal including customer, base energy, DSMR, HEA, FAC and signed PSM.",
+    "esm_basis_DS": "Ordinary subtotal less embedded fuel .033780 per kWh and FAC. Customer, DSMR and signed PSM remain in the base.",
+    "minimum": "Customer charge is the ordinary base minimum; mandatory riders then increase/decrease the base bill. The bounded DS maximum energy/demand base-rate cap is inactive.",
+    "tax": "Confirmed unincorporated Boone County in Boone school district, school3% of ordinary subtotal including ESM; no city franchise; accepted primary-domicile exemption RS; ordinary taxable DS6% including school levy."
+  },
+  "account_scope": "One confirmed ordinary single-phase 120/240V secondary meter. DS\u226414.99kW and5999kWh native/import envelope, independent current billing-demand ceiling1\u201315kW and all twelve prior actual demands\u226415kW. No PF/primary adjustment, formerRateC, special facilities or reclassification.",
+  "der_scope": "No export. Final written approval active before cycle and explicit auxiliary/supplementary agreement preserving all ordinary RS/DS import terms with no GSS/standby/additional charge for exact approved PV/storage. Storage PV-only charged, no export. Permission cannot be inferred from zero-export modeling.",
+  "gaps": [
+    "2025Jan\u2013Mar earlier intersections/DSMR transition not enabled",
+    "2025Jul\u2013Oct interim/refund/base transition allocation unverified",
+    "2025Nov\u20132026Mar intermediate base/DSMR transitions not enabled",
+    "2026Jul\u2013Dec later ESM,September fuel roll-in and full later stacks not verified"
+  ],
+  "source_conflicts": [
+    "Archived file names identify cancellation dates, not start dates. Effective dates are taken from the actual sheet.",
+    "Current tariff book has stale base pages relative to September2026 FAC order; support intentionally ends June2026.",
+    "2026-00234 summary contains two post-review expense months (April/May2026); original attached monthly workbooks verify the June/July billing factors.",
+    "PSM printed positive factors are credits, whereas FAC/ESM parentheses indicate negative factors. Signs are handled by component."
+  ],
+  "access_limits": [
+    "PSC PDF web open failed but direct official bytes were preserved with CA verification.",
+    "DOR sales/domicile/rate-spreadsheet direct download403; web text readback preserved where available. KDE www host403 resolved once via canonical education.ky.gov host with browser-compatible headers; all exact KDE bytes preserved.",
+    "Official KDE approved FY2025/FY2026 levies give Boone school3% at rptTaxRateLevied!P19 and FY2027 at P8; exact district identity and account tax status remain independently documented account facts."
+  ],
+  "verification_scope": "Utility-focused source/Decimal/component/symbolic/clock/eligibility checks. No actual customer invoice, annual coverage, browser acceptance, OpenDSS matrix or engine promotion claim."
+}

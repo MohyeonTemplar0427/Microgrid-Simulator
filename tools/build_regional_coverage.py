@@ -22,6 +22,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 UTILITY_DOCS = {
+    "rappahannock_electric_cooperative": ("docs/Rappahannock_Virginia.md", "docs/utility_sources/rappahannock_va/sources.json", "test/test_rappahannock_va.py"),
+    "duke_energy_kentucky": ("docs/Duke_Energy_Kentucky.md", "docs/utility_sources/duke_ky/sources.json", "test/test_duke_ky.py"),
+    "south_central_power_ohio": ("docs/South_Central_Power_Ohio.md", "docs/utility_sources/south_central_oh/sources.json", "test/test_south_central_oh.py"),
+    "delaware_electric_cooperative": ("docs/Delaware_Electric_Cooperative.md", "docs/utility_sources/delaware_coop_de/sources.json", "test/test_delaware_coop_de.py"),
+    "shenandoah_valley_electric_cooperative": ("docs/Shenandoah_Valley_Virginia.md", "docs/utility_sources/shenandoah_va/sources.json", "test/test_shenandoah_va.py"),
     'potomac_edison_west_virginia': ('docs/Potomac_Edison_West_Virginia.md', 'docs/utility_sources/potomac_edison_wv/sources.json', 'test/test_potomac_edison_wv.py'),
     'wheeling_power_west_virginia': ('docs/Wheeling_Power_West_Virginia.md', 'docs/utility_sources/wheeling_wv/sources.json', 'test/test_wheeling_wv.py'),
     'kentucky_power_kentucky': ('docs/Kentucky_Power_Kentucky.md', 'docs/utility_sources/kentucky_power_ky/sources.json', 'test/test_kentucky_power_ky.py'),

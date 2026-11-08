@@ -1,0 +1,210 @@
+{
+  "utility": "rappahannock_electric_cooperative",
+  "jurisdiction": "VA",
+  "grid_operator": "PJM",
+  "zone": null,
+  "plans": [
+    "A-1",
+    "B-1"
+  ],
+  "reviewed_date": "2026-11-07",
+  "billing_status": "blocked_unverified_tax_intersections",
+  "coverage": [],
+  "executable_coverage": [],
+  "component_observations_not_executable_bills": {
+    "base_effective": "2024-10-01",
+    "base_clock": "All bills issued on/after; full same-calendar cycles considered only",
+    "A1": {
+      "access_monthly_dollars": "16.50",
+      "delivery_first300_dollars_per_kwh": ".06450",
+      "delivery_over300_dollars_per_kwh": ".04472",
+      "summer_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "supply_first800_summer_and_all_winter_dollars_per_kwh": ".06777",
+      "supply_over800_summer_dollars_per_kwh": ".09780",
+      "minimum": "Access charge unless special contract"
+    },
+    "B1": {
+      "access_monthly_dollars": "45",
+      "delivery_dollars_per_kwh": ".02599",
+      "supply_summer_dollars_per_kwh": ".08217",
+      "supply_winter_dollars_per_kwh": ".05643",
+      "maximum_required_demand_kw": "25",
+      "demand_measurement_minutes": 15,
+      "transformer_minimum": "Delivery minimum is access+$1 for each required kVA or fraction above15; required capacity is an independent utility fact, not PV-reduced demand."
+    },
+    "pca_jun_dec2025": ".02509",
+    "pca_from_may2026": ".03426",
+    "dr2025": ".000032",
+    "dr2026": ".000031",
+    "pca_dr_combined_current": ".034291",
+    "source_unit": "dollars per kWh",
+    "tax": "State/local consumption and actual SCC components exist, but mandatory cooperative taxable-period federal-power adjustment/nonapplicability is unverified. No unadjusted full bill is authorized."
+  },
+  "sources": [
+    {
+      "name": "rates.html",
+      "url": "https://myrec.coop/electric-rates",
+      "original_path": ".cache/rappahannock_va/sources/rates.html",
+      "sha256": "b5fa2cff429a8ed7f70b45dec82af6752c92911d4782bfccc55ed0ff97678c71",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "A-1: Residential and Church Service",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/Residential%20A-1%20Rate.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_00.pdf",
+      "sha256": "87eaff2bbc5633fbf0982004d1c800cf478cdde12cd59111f0f44eea46b9b60d",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "B - 1: Small General Service",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/SGS%20B-1.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_01.pdf",
+      "sha256": "05da39cc6ed783bc488f8c3af3ef933b2d17f59a8d247e0cdc08806c6caa0506",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "PCA Factor",
+      "url": "https://myrec.coop/sites/default/files/documents/PCA-5-1-2026-stamped.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_02.pdf",
+      "sha256": "a65472615e6bf49eade7712f525c503bf1c7aae58814a7b2d982469edd25874d",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "DR Rider",
+      "url": "https://myrec.coop/sites/default/files/2025-12/DR-Rider-Factor-Sheet_1-1-2026_stamped.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_03.pdf",
+      "sha256": "76cb926036641516df43b85a0eccabb4f42461c3c92754e92cda2da0ee375eff",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "Terms and Conditions",
+      "url": "https://myrec.coop/sites/default/files/documents/Governance%20Center/Terms%20and%20Conditions-8-27-2024.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_04.pdf",
+      "sha256": "64970566c00b42469a42bf03edccff159626f72703fddc1913724c3796ea7f45",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "Exhibit of Applicable Riders",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/Exhibit%20of%20Applicable%20Riders.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_05.pdf",
+      "sha256": "6d612c8212a973269c1797a8ac0a465cd37eaf6407a8143037d292eb788e37f7",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "EF - Excess Facilities",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/EF%20Excess%20Facilities.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_06.pdf",
+      "sha256": "5d2a37eda9c7bed85f37f7fd296b0dbe0263834311eaa760a3e3071cdefedc34",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "F: Fees",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/F%20Fees.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_07.pdf",
+      "sha256": "7f3da2c100df211b4ab670b5e365a043ffa0b1ebea62b42598c3327713de0bb1",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "GV: Small Power Production Facilities",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/GV%20Small%20Power%20Production%20Facilities.pdf",
+      "original_path": ".cache/rappahannock_va/sources/doc_08.pdf",
+      "sha256": "8eb4180c929803bc58c2dbde351bb87a4b01b6e755f44a18edb9bfd68cb1d809",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "PCA June2025 factor indexed official sheet",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/PCA-6-1-2025-stamped.pdf",
+      "original_path": ".cache/rappahannock_va/sources/pca_jun2025.pdf",
+      "sha256": "406f96fcd2f5ee50a4cc5dcbff5954f9421c7a42448420d176b21a224ebbc5ec",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "Indexed official DR2025 factor",
+      "url": "https://myrec.coop/sites/default/files/documents/Electric%20Rates/2025%20DR%20Rider%20Factor%20Sheet.pdf",
+      "original_path": ".cache/rappahannock_va/sources/dr_2025.pdf",
+      "sha256": "b08c73290ad66fa021d61a0e37afbb7789b5858147f0e7ee19a0c4034800f965",
+      "evidence_kind": "downloaded_primary_utility_source"
+    },
+    {
+      "name": "tax_law.html",
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter29/section58.1-2900/",
+      "original_path": ".cache/novec_va/sources/tax_law.html",
+      "sha256": "cd9f4dddb3fd9b49ba8dec5dc57ed1188db3449eb97b064cdbc4b3237cc27259",
+      "evidence_kind": "reused_primary_state_authority_original"
+    },
+    {
+      "name": "scc_tax.html",
+      "url": "https://www.scc.virginia.gov/regulated-industries/public-taxation/taxes-and-fees/",
+      "original_path": ".cache/novec_va/sources/scc_tax.html",
+      "sha256": "e68df4c84fddabfdbe04b289b0766665c68a5b91078c5d63586eeedc4d3e38cd",
+      "evidence_kind": "reused_primary_state_authority_original"
+    },
+    {
+      "name": "salem_levy.pdf",
+      "url": "https://salemva.gov/DocumentCenter/View/2607/Special-Regulatory-Tax-State-PDF",
+      "original_path": ".cache/novec_va/sources/salem_levy.pdf",
+      "sha256": "07f0c30c4e3fe6d96ac45322c1abef6260e342f1ed703975e46f45d79724823f",
+      "evidence_kind": "reused_primary_state_authority_original"
+    },
+    {
+      "name": "RockinghamCode7-10 indexed text",
+      "url": "https://library.municode.com/va/rockingham_county/codes/code_of_ordinances?nodeId=CH7FITA_ARTVIUTSETA",
+      "original_path": ".cache/rappahannock_va/sources/rockingham_indexed_excerpt.txt",
+      "sha256": "d60505b53c7dc3f9edb98c2ab469566a426441777031e503779cb58ab1cb9d99",
+      "evidence_kind": "indexed_official_codification_excerpt_not_original_signed_ordinance",
+      "purpose": "Published floor/cap formulas; residential.1500 decimal remains unresolved. No executable tax factor inferred."
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://myrec.coop/sites/myrec/files/documents/Electric%20Rates/Exhibit%20of%20Applicable%20Riders.pdf",
+      "http": "404",
+      "error": "curl: (56) The requested URL returned error: 404"
+    },
+    {
+      "url": "https://myrec.coop/sites/myrec/files/documents/Electric%20Rates/EF%20Excess%20Facilities.pdf",
+      "http": "404",
+      "error": "curl: (56) The requested URL returned error: 404"
+    },
+    {
+      "url": "https://myrec.coop/sites/myrec/files/documents/Electric%20Rates/F%20Fees.pdf",
+      "http": "404",
+      "error": "curl: (56) The requested URL returned error: 404"
+    },
+    {
+      "url": "https://myrec.coop/sites/myrec/files/documents/Electric%20Rates/GV%20Small%20Power%20Production%20Facilities.pdf",
+      "http": "404",
+      "error": "curl: (56) The requested URL returned error: 404"
+    }
+  ],
+  "independent_review": {
+    "reviewer": "separate utility agent",
+    "finding": "Section58.1-2900A6 is cooperative/taxable-period based. A customer checkbox cannot establish the qualifying federal-power cost/revenue ratio as zero; a dated factor or documented nonapplicability is required."
+  },
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-12-31",
+      "reason": "Complete cooperative tax/component intersections are unverified; all billing/dispatch paths remain blocked."
+    }
+  ],
+  "requirements_to_enable": [
+    "Utility/SCC dated federal-power adjustment factor or documented nonapplicability for every tax period; statute alone is not a numeric factor.",
+    "Resolve Rockingham residential decimal and exact county tax application from original authority; do not silently change .1500 to .01500.",
+    "Original preceding PCA factors forJan\u2013May2025 andJan\u2013Apr2026 if those cycles are requested; currentfuturecycles separately verified.",
+    "Independent B1 assignment,requiredtransformer capacity,ordinaryservice,noaccountcredits,locality andexact approved nonexport import terms, followed by independent bills/dispatch/electrical/browser acceptance."
+  ],
+  "benchmark_scope": "Filed component literal review only; no complete REC bill, solver, historical dispatch, annual electrical or browser execution claim.",
+  "pjm_identity": {
+    "note": "PJM sources establish REC load in Dominion projects, not a single zone for every REC service point. No specific wholesale location or uniform transmission zone inferred.",
+    "sources": [
+      "https://www.pjm.com/-/media/DotCom/committees-groups/committees/teac/2026/20260203/20260203-item-12---dom-supplemental-projects.pdf"
+    ]
+  },
+  "preserved_prior_evidence": true
+}

@@ -1,0 +1,61 @@
+{
+  "method": "Separate literal Decimal transcription of official tariff leaves47/51, section17 and 30DelC5506(e); does not import adapter or rates.",
+  "cases": [
+    {
+      "plan": "R",
+      "month": "2025-11-01",
+      "kwh": "1000",
+      "unrounded_lines_usd": {
+        "distribution_customer": "28",
+        "distribution_energy": "21.4000",
+        "renewable_resource_fund": "0.178000",
+        "supply_energy": "95.6000",
+        "power_cost_adjustment": "-1.5000",
+        "delaware_public_utility_tax": "0.000000"
+      },
+      "unrounded_total_usd": "143.678000"
+    },
+    {
+      "plan": "R",
+      "month": "2026-07-01",
+      "kwh": "1000",
+      "unrounded_lines_usd": {
+        "distribution_customer": "28",
+        "distribution_energy": "21.4000",
+        "renewable_resource_fund": "0.178000",
+        "supply_energy": "95.6000",
+        "power_cost_adjustment": "12.161000",
+        "delaware_public_utility_tax": "0.000000"
+      },
+      "unrounded_total_usd": "157.339000"
+    },
+    {
+      "plan": "GS",
+      "month": "2025-11-01",
+      "kwh": "1000",
+      "unrounded_lines_usd": {
+        "distribution_customer": "30",
+        "distribution_energy": "22.498000",
+        "renewable_resource_fund": "0.178000",
+        "supply_energy": "108.09000",
+        "power_cost_adjustment": "-1.5000",
+        "delaware_public_utility_tax": "6.7688050000"
+      },
+      "unrounded_total_usd": "166.0348050000"
+    },
+    {
+      "plan": "GS",
+      "month": "2026-07-01",
+      "kwh": "1000",
+      "unrounded_lines_usd": {
+        "distribution_customer": "30",
+        "distribution_energy": "22.498000",
+        "renewable_resource_fund": "0.178000",
+        "supply_energy": "108.09000",
+        "power_cost_adjustment": "12.161000",
+        "delaware_public_utility_tax": "7.3493975000"
+      },
+      "unrounded_total_usd": "180.2763975000"
+    }
+  ]
+}

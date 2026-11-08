@@ -1065,3 +1065,28 @@ Kentucky's documented billing clock. Utility/supplier/locality/PJM/wholesale
 identities remain separate. See the
 [second batch validation](PJM_Second_Five_Utility_Batch_Validation.md) and its
 linked utility guides for verified dates, source grades and candidate evidence.
+
+## Rappahannock, Duke Kentucky, South Central, Delaware Cooperative and SVEC · November 2026
+
+This batch adds separate registry/account scopes for the five requested utilities.
+Duke Energy Kentucky RS/DS is executable for April–June service cycles in 2025
+and 2026, with independently assigned following billing months and first-business-
+day bill dates. Its bounded DS branch preserves the independent summer demand
+history/ratchet while staying within the first 15 kW and 6,000-kWh blocks.
+Delaware Electric Cooperative R/GS is executable January 2025–October 2026,
+including the May 2026 PCA change, independent retained GS classification and
+the exact approved non-export PV/battery design.
+
+Rappahannock A-1/B-1, South Central Power R/SGS and Shenandoah A-15/B-16 remain
+visible but unavailable. Known base/PCA observations cannot supply missing
+monthly G&T, rider-successor or cooperative-period tax factors. In particular,
+Virginia §58.1-2900(A)(6) cannot be waived by an account checkbox asserting a
+zero federal-power adjustment. No priced subtotal is exposed as a complete bill.
+
+The existing billing math, dispatch algorithms, worker/API contracts, PV/storage
+and electrical replay are reused. Changes to shared paths are bounded registry,
+default, account-field, non-export, documented-cycle and validation-tool wiring.
+No uniform transmission zone is invented for an unavailable cooperative, and
+utility, supplier, jurisdiction, PJM metadata and wholesale prices remain separate.
+See the [third batch validation](PJM_Third_Five_Utility_Batch_Validation.md) and
+its linked guides/ledgers for dated scope, targeted acceptance and exclusions.

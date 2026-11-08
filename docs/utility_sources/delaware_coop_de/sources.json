@@ -1,0 +1,425 @@
+{
+  "utility_id": "delaware_electric_cooperative",
+  "jurisdiction": "DE",
+  "plans": [
+    "R",
+    "GS"
+  ],
+  "retrieved_date": "2026-11-07",
+  "scope": "Ordinary member, DEC bundled supply, one 120/240V single-phase secondary meter, unincorporated Sussex, full calendar cycle/final-day meter read and matching bill, non-export only.",
+  "verified_complete_bill_coverage": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-10-31"
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2026-11-01",
+      "end": "2026-12-31",
+      "reason": "Incomplete/future cycles at evidence cutoff; no future PCA/tariff continuity inferred."
+    }
+  ],
+  "base_effective": "Meter readings on/after 2024-07-01. Full supported cycles start 2025-01-01.",
+  "components": {
+    "R": {
+      "service_usd": "28",
+      "minimum_usd": "28",
+      "distribution_per_kwh": ".021400",
+      "supply_first_700_per_kwh": ".101600",
+      "supply_over_700_per_kwh": ".081600"
+    },
+    "GS": {
+      "service_usd": "30",
+      "minimum_usd": "30",
+      "distribution_per_kwh": ".022498",
+      "supply_first_700_per_kwh": ".111090",
+      "supply_over_700_per_kwh": ".101090"
+    },
+    "renewable_resource_fund_per_kwh": ".000178",
+    "pca_before_2026_05": "-.001500",
+    "pca_from_2026_05": ".012161",
+    "R_public_utility_tax": "0",
+    "GS_public_utility_tax": ".0425"
+  },
+  "tax_basis": "Tariff section17 adds4.25% to gross for GS; 30DelC5502(b)(1) and5506(e) ordinary tax/residential exemption. Reduced manufacturing/processing rates and special exemptions excluded.",
+  "tariff_locators": {
+    "tariff_2024_11": "Leaves39-43,47-48,51-52; R/GS common base and old PCA",
+    "tariff_2025_03": "Leaves39-43,47-48,51-52; unchanged R/GS base and old PCA",
+    "tariff_2025_08": "PDFpages38-40 sections16/17,42 OptionB NoSale,46 ordinaryR,50 GS; leaves47/51",
+    "tariff_2026_06": "PDFpages41 tax/PCA,43 OptionB NoSale,47 scanned R,48 R continuation,51-52 GS; leaves47/51 remain adopted2024 but updated PCA matches May2026 notice"
+  },
+  "pca_unit_conflict": {
+    "notice": "Decimal values mislabeled cents per kWh",
+    "resolution": "Tariff dollar signs and1000kWh approximately$13 difference confirm dollars/kWh. Exact delta(.012161-(-.001500))*1000=$13.661.",
+    "monthly_variability": "PCA is periodic, not a guessed month-by-month series; standing dated tariff books plus the May2026 replacement notice establish the retained factor."
+  },
+  "gs_eligibility": "Tariff maximum average monthly demand less than50kW during prior12months; retain utility assignment and full actual history, active contract and no additional facilities/minimum. Both leaf51 thirty-month references and leaf52 at-least-one-year term retained as account-specific utility-confirmed contract, not resolved by invented term.",
+  "der_scope": "Tariff18.2 OptionB NoSale bills applicable standard schedule without excess-generation offsets. Exact final non-export permission under100kWDC plus accepted sizing/history and battery supplement required; no NEM or standby rights inferred. PV-only battery charging is a conservative implementation restriction, not claimed as universal tariff rule.",
+  "sources": [
+    {
+      "id": "tariff_2024_11",
+      "url": "https://www.delaware.coop/sites/default/files/2024-11/Tariff%20-%20Revised%20November%202024.pdf",
+      "file": ".cache/delaware_coop_de/sources/tariff_2024_11.pdf",
+      "sha256": "012f4226514644287402044462a7b5896bc3dc7dad4b4c5b148987b3613c5dbc",
+      "bytes": 834786,
+      "retrieved_date": "2026-11-07"
+    },
+    {
+      "id": "tariff_2025_03",
+      "url": "https://www.delaware.coop/sites/default/files/2025-03/Tariff%20-%20Revised%20March%202025.pdf",
+      "file": ".cache/delaware_coop_de/sources/tariff_2025_03.pdf",
+      "sha256": "eeda92e324f1f3fa32f8a05094bc3a821c2d15755139a89c2f67c16f5a11d9f1",
+      "bytes": 798154,
+      "retrieved_date": "2026-11-07"
+    },
+    {
+      "id": "tariff_2025_08",
+      "url": "https://www.delaware.coop/sites/default/files/2025-08/Tariff%20-%20Revised%20August%202025.pdf",
+      "file": ".cache/delaware_coop_de/sources/tariff_2025_08.pdf",
+      "sha256": "0cc4200cf7edcb630dd00219dbce7ba7833e2810004f04f918b8095732135385",
+      "bytes": 803037,
+      "retrieved_date": "2026-11-07"
+    },
+    {
+      "id": "tariff_2026_06",
+      "url": "https://www.delaware.coop/sites/default/files/2026-06/Tariff%20-%20Revised%20June%202026%20.pdf",
+      "file": ".cache/delaware_coop_de/sources/tariff_2026_06.pdf",
+      "sha256": "1e0d419ed89f29ee1d5ecefa415c2525e81c6bf8c45e86ffe8d42fc356c68b81",
+      "bytes": 1804770,
+      "retrieved_date": "2026-11-07"
+    },
+    {
+      "id": "public_utility_tax",
+      "url": "https://delcode.delaware.gov/title30/c055/",
+      "file": ".cache/delaware_coop_de/sources/public_utility_tax.html",
+      "sha256": "184f0617063c3b87213a6f336fcdcb00d0d8a30c0fc64f8725f3e2a11878d9ad",
+      "bytes": 44086,
+      "retrieved_date": "2026-11-07"
+    },
+    {
+      "id": "pca_notice",
+      "url": "https://www.delaware.coop/press-room/power-cost-adjustment-increase-approved",
+      "error": "curl: (56) The requested URL returned error: 403"
+    },
+    {
+      "id": "interconnection",
+      "url": "https://www.delaware.coop/energy-savings-programs/solar-interconnections",
+      "error": "curl: (56) The requested URL returned error: 403"
+    },
+    {
+      "id": "battery",
+      "url": "https://www.delaware.coop/btp/batteries",
+      "error": "curl: (56) The requested URL returned error: 403"
+    },
+    {
+      "id": "minutes_2026_01",
+      "url": "https://www.delaware.coop/sites/default/files/2026-02/FINAL%20Board%20Meeting%20Minutes%2001.14.2026.pdf",
+      "file": ".cache/delaware_coop_de/sources/minutes_2026_01.pdf",
+      "sha256": "3d7c6d3cfecda378947813317c2a68ed78c7ed8f39be91e7982585f268639461",
+      "bytes": 187330,
+      "retrieved_date": "2026-11-07"
+    },
+    {
+      "id": "minutes_2026_02",
+      "url": "https://www.delaware.coop/sites/default/files/2026-03/FINAL%20Board%20Meeting%20Minutes%2002.18.2026.pdf",
+      "file": ".cache/delaware_coop_de/sources/minutes_2026_02.pdf",
+      "sha256": "faeff17a0b5596d06a62b786a71f5bb25ceca5349179e4faa26a37e13c7fd101",
+      "bytes": 182972,
+      "retrieved_date": "2026-11-07"
+    },
+    {
+      "id": "nonexport_application",
+      "url": "https://www.delaware.coop/sites/default/files/2024-05/DEC%20Interconnection%20Agreement%20%28Under%20100kW%29%20April%202024%20Non-Export_1.pdf",
+      "retrieved_date": "2026-11-07",
+      "file": ".cache/delaware_coop_de/sources/nonexport_application.pdf",
+      "sha256": "25a907d4fff8c7073f00502338935688bdcfb17848d0da2441790a2355e954cf",
+      "bytes": 420239
+    },
+    {
+      "id": "battery_application",
+      "url": "https://www.delaware.coop/sites/default/files/2023-09/DEC%20Interconnection%20Agreement%20%28Battery%20Storage%29%2C%20Updated.pdf",
+      "retrieved_date": "2026-11-07",
+      "file": ".cache/delaware_coop_de/sources/battery_application.pdf",
+      "sha256": "b1f2e2e7a75951a467b54da94f9f2ca5abefebb274d660de961ce2552af7831f",
+      "bytes": 273503
+    },
+    {
+      "id": "pca_2026_change",
+      "url": "https://www.delaware.coop/press-room/board-approves-pca-change",
+      "retrieved_date": "2026-11-07",
+      "error": "curl: (56) The requested URL returned error: 403",
+      "web_extraction_file": ".cache/delaware_coop_de/sources/pca_2026_web_extract.txt",
+      "web_extraction_sha256": "92672534a0363f6fca5ac7d3ffbd643793af2dc2075d605afd760edf65f32993",
+      "capture_kind": "web tool text extraction, not original HTML bytes",
+      "evidence": "April 2 hearing; old -.0015/new .012161; effective May 1; approximately $13 difference at 1000 kWh. 2026 anchored by January/February minutes and April2 adoption in the 2026 tariff book."
+    },
+    {
+      "id": "minutes_2025_12",
+      "url": "https://www.delaware.coop/sites/default/files/2026-01/FINAL%20Board%20Meeting%20Minutes%2012.17.2025.pdf",
+      "retrieved_date": "2026-11-07",
+      "file": ".cache/delaware_coop_de/sources/minutes_2025_12.pdf",
+      "sha256": "b4fa7792cb67de48ef7f8ee7cf1a3d8f4297a99f1ac5a85c6eb922e10aadeafa",
+      "bytes": 135978
+    }
+  ],
+  "monthly_intersections": [
+    {
+      "month": "2025-01-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2024_11",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-02-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2024_11",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-03-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_03",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-04-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_03",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-05-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_03",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-06-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_03",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-07-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_03",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-08-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-09-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-10-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-11-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2025-12-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-01-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-02-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-03-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-04-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2025_08",
+      "pca_dollars_per_kwh": "-.001500",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-05-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2026_06",
+      "pca_dollars_per_kwh": ".012161",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-06-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2026_06",
+      "pca_dollars_per_kwh": ".012161",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-07-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2026_06",
+      "pca_dollars_per_kwh": ".012161",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-08-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2026_06",
+      "pca_dollars_per_kwh": ".012161",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-09-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2026_06",
+      "pca_dollars_per_kwh": ".012161",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    },
+    {
+      "month": "2026-10-01",
+      "plans": [
+        "R",
+        "GS"
+      ],
+      "tariff_source": "tariff_2026_06",
+      "pca_dollars_per_kwh": ".012161",
+      "pca_chronology_source": "pca_2026_change",
+      "ordinary_tax": "R exempt; GS 4.25% gross"
+    }
+  ],
+  "tracked_snapshots": [
+    {
+      "file": "rate_transcription.txt",
+      "sha256": "d8f09874014b0b9908d118025878321fc7867e15ece08e64bac67b8994cc20ba"
+    },
+    {
+      "file": "independent_benchmarks.json",
+      "sha256": "980bb9f48024a454ade85ed0111d8b5e3f6389702abd9b9db6fefec87c24dd6c"
+    }
+  ],
+  "retrieval_notes": [
+    "Initial sandbox Python DNS denied. Authorized system curl retrieved PDFs and tax with normal TLS verification; default Python certificate store could not validate the local trust chain.",
+    "Some public HTML routes returned403 via curl. Their unchanged paths were not retried; official web-tool extraction of the precise2026 notice is retained and hashed separately, not called original HTML.",
+    "The older power-cost-adjustment-increase-approved route concerns an earlier February16 hearing and is not used for2026 rates."
+  ]
+}

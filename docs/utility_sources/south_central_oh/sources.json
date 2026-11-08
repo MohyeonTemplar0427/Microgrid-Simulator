@@ -1,0 +1,443 @@
+{
+  "utility": "south_central_power_ohio",
+  "jurisdiction": "OH",
+  "retrieved_date": "2026-11-07",
+  "plans": [
+    "R",
+    "SGS"
+  ],
+  "supply": "bundled",
+  "retail_supplier": "South Central Power Company",
+  "wholesale_supplier_context": "Buckeye Power",
+  "grid_identity_scope": "PJM metadata is maintained separately by shared registration; no wholesale node or IOU SSO rate is assigned from cooperative supply.",
+  "billing_status": "blocked_missing_complete_monthly_component_intersections",
+  "coverage": [],
+  "executable_coverage": [],
+  "private_evidence_root": ".cache/south_central_oh/sources",
+  "sources": [
+    {
+      "filename": "Rate-Schedule-Residential-04.01.24.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rate-Schedule-Residential-04.01.24.pdf",
+      "sha256": "f11d13cce065c479e7cea935611185113cd1298a55235a7e89c81963add2ba21",
+      "bytes": 109061,
+      "evidence_kind": "dated_base_schedule",
+      "purpose": "R base distribution/customer/minimum effective April 1, 2024; not a whole-bill vector.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "filename": "Rate-Schedule-SGS-04.2024.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rate-Schedule-SGS-04.2024.pdf",
+      "sha256": "bdbc365fecbab7a37675f7e01506b85987b5054f9d6fffa32b6faf8789c6218e",
+      "bytes": 97846,
+      "evidence_kind": "dated_base_schedule",
+      "purpose": "SGS base distribution/customer/minimum and classification effective April 1, 2024; not a whole-bill vector.",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "Rate-Schedule-Residential-04.01.2025.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rate-Schedule-Residential-04.01.2025.pdf",
+      "sha256": "fde04b5decbffac68bc9c95ffea5deb25b68a202d2398f5a3d76c7d0b25ac352",
+      "bytes": 109859,
+      "evidence_kind": "dated_base_schedule",
+      "purpose": "R base distribution/customer/minimum effective April 1, 2025; approved December 17, 2024.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "filename": "Rate-Schedule-SGS-04.01.2025.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rate-Schedule-SGS-04.01.2025.pdf",
+      "sha256": "b43e3e146fdd940edc33c9186ffe0e8165bab56a6057ef540306bcfee76cd3c4",
+      "bytes": 97459,
+      "evidence_kind": "dated_base_schedule",
+      "purpose": "SGS base distribution/customer/minimum effective April 1, 2025; approved December 17, 2024.",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "Rate-Schedule-Residential-04.01.2026-Approved-3-17-2026.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rate-Schedule-Residential-04.01.2026-Approved-3-17-2026.pdf",
+      "sha256": "c0709324bf856983bf38b563c4bdef12572afac9b16bc7c9dba2e64571550d23",
+      "bytes": 88005,
+      "evidence_kind": "dated_base_schedule",
+      "purpose": "R base distribution/customer/minimum effective April 1, 2026; approved March 17, 2026.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "filename": "Rate-Schedule-SGS-04.01.2026-Approved-3-17-2026.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rate-Schedule-SGS-04.01.2026-Approved-3-17-2026.pdf",
+      "sha256": "500f77a45ef6e513b2b68d98d90a80a6c133983270999d111423b888d07a2807",
+      "bytes": 76035,
+      "evidence_kind": "dated_base_schedule",
+      "purpose": "SGS base distribution/customer/minimum effective April 1, 2026; approved March 17, 2026.",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "Rider-A-1.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rider-A-1.pdf",
+      "sha256": "9c23774592dc905cfa690209f3f32db1dd084b055382da298dcc59c9ca893f00",
+      "bytes": 8243,
+      "evidence_kind": "adjustment_formula",
+      "purpose": "Direct or allocable governmental impositions pass through; effective June 1, 2009. This source supplies no numeric locality vector.",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "filename": "Rider-A.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rider-A.pdf",
+      "sha256": "9c23774592dc905cfa690209f3f32db1dd084b055382da298dcc59c9ca893f00",
+      "bytes": 8243,
+      "evidence_kind": "duplicate_adjustment_formula",
+      "purpose": "Identical bytes to Rider-A-1.pdf, not an earlier Rider B.",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "filename": "Rider-B-effective-2025.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rider-B-effective-2025.pdf",
+      "sha256": "59c4ef4ace2d7ec97e9ab339db1f45588977b5a9000fdca3993478ea75a957d2",
+      "bytes": 97722,
+      "evidence_kind": "adjustment_formula",
+      "purpose": "Separate monthly six-decimal generation and transmission cost factors from supplier invoices; generation includes PJM/12-CP contributions; each calculation applies 1.06 loss multiplier. Approved August 20, 2025, effective October 1, 2025. No historical monthly factors.",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "filename": "Residential-Bill-Example-2026.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Residential-Bill-Example-2026.pdf",
+      "sha256": "9b5ba697d9f3e8f150ffa7ddf966ce3299dbe6b2086e269ed60a20655a3cbb03",
+      "bytes": 2884636,
+      "evidence_kind": "dated_example_invoice_only",
+      "purpose": "Official example: April 30-May 29 service, June 2, 2026 bill. Exact sample factors and printed charges are reconciled in sample_bill_benchmark.json; no other cycle or SGS applicability inferred.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "filename": "Rate-Schedule-Net-Billing-Effective-03012022-1.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Rate-Schedule-Net-Billing-Effective-03012022-1.pdf",
+      "sha256": "77db0a5961ae2571e5eca477b33b4d69c6e1a77c62495ad03b0825dd457dfe02",
+      "bytes": 97416,
+      "evidence_kind": "generation_rules_not_enabled",
+      "purpose": "Separate net-billing schedule effective March 1, 2022. Ordinary applicable rate/minimum provisions remain; avoided-cost export pricing is not enabled or inferred for zero export.",
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "filename": "company-documents.html",
+      "url": "https://www.southcentralpower.com/about-us/company-documents/",
+      "sha256": "c9341c12677a51fedfe57e4b5f403c4432529d089b74e81a61b50b5b259c299a",
+      "bytes": 106293,
+      "evidence_kind": "primary_utility_page",
+      "purpose": "Links board-approved 2026 base schedules and Riders A/B."
+    },
+    {
+      "filename": "understanding-your-bill.html",
+      "url": "https://www.southcentralpower.com/your-account/payment-billing/understanding-your-bill/",
+      "sha256": "5b2f3ccd9e0bcf0bdc298bcdacf7ada7c50a1c0ed461ca15a745dd82178442ea",
+      "bytes": 112615,
+      "evidence_kind": "primary_utility_page",
+      "purpose": "Links official residential and security sample invoices; explains monthly generation/transmission changes."
+    },
+    {
+      "filename": "commercial-classes-2024.html",
+      "url": "https://www.southcentralpower.com/rates/",
+      "sha256": "37f6e9fc53c6c7647a911247009c8592b5f9d3fbc06e4cc0d456457e3d7faa23",
+      "bytes": 106709,
+      "evidence_kind": "dated_cooperative_notice",
+      "purpose": "Commercial class changes effective April 1, 2024: SGS below 50 kW; MGS 50-350; LGS 350-1500. The full SGS sheets control scope."
+    },
+    {
+      "filename": "modest-rate-adjust-2025.html",
+      "url": "https://www.southcentralpower.com/news-releases/modest-rate-adjust-coming-in-april/",
+      "sha256": "bc7b17b4f18b39a0235d40237fe714fff614355a833b0f1cf9eab2829d3017dc",
+      "bytes": 106561,
+      "evidence_kind": "dated_cooperative_notice",
+      "purpose": "February 2025 notice confirms R customer charge changes from $27 to $29 in April 2025."
+    },
+    {
+      "filename": "weathering-rising-costs-2026.html",
+      "url": "https://www.southcentralpower.com/news-releases/weathering-rising-costs/",
+      "sha256": "a2b86a5fbc02090a5b5639b472597a8e171b337ff973c5af6f3e39c12db810e3",
+      "bytes": 106920,
+      "evidence_kind": "dated_cooperative_notice",
+      "purpose": "February 2026 notice confirms R customer charge changes from $29 to $34 in April 2026."
+    },
+    {
+      "filename": "billing-transparency-2025.html",
+      "url": "https://www.southcentralpower.com/news-releases/providing-greater-billing-transparency/",
+      "sha256": "a08c93bd9b50ce2938db1fd78b998f71c28f4dee51317ad0ad1e2c1442e3ee4a",
+      "bytes": 105143,
+      "evidence_kind": "dated_cooperative_notice",
+      "purpose": "September 2025 article: generation/transmission split into two line items as early as October; change itself is not an added charge. Does not publish monthly factors."
+    },
+    {
+      "filename": "interconnection-process.html",
+      "url": "https://www.southcentralpower.com/faqs/what-is-south-central-power-companys-interconnection-process/",
+      "sha256": "807e381587d3bc5fdc450dcfb69511b3d1b9762e88758f94ff72df24485ee9a1",
+      "bytes": 106828,
+      "evidence_kind": "primary_utility_rules",
+      "purpose": "Executed documents, interconnection fee/self-certification, and bidirectional meter installation precede permission to operate. Does not independently establish ordinary-import approval for a specific PV/storage installation."
+    },
+    {
+      "filename": "energy-mix.html",
+      "url": "https://www.southcentralpower.com/services/energy-mix/",
+      "sha256": "faaf88cf83ca96afeaf528ed5c414e94f66e5e277daecd226d56ac6d30c46cab",
+      "bytes": 103271,
+      "evidence_kind": "primary_utility_supplier_context",
+      "purpose": "Buckeye Power is the generation/transmission partner. Retail cooperative supply is separate from PJM metadata/pricing."
+    },
+    {
+      "filename": "ohio-5727-81.html",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5727.81",
+      "sha256": "58f13e232da46c407f9d6f6be2e3c19400e5156e8b294f973dbc5bb091d74696",
+      "bytes": 30366,
+      "evidence_kind": "state_statute",
+      "purpose": "Effective October 3, 2023: ordinary monthly kWh excise tax tiers and daily averaging for non-30-day periods; exemptions/self-assessment require separate facts."
+    },
+    {
+      "filename": "ohio-5739-02.html",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5739.02",
+      "sha256": "2f7f0ee91f4c6a3b56df93a93c48488d7dc5ace714d98853d619f91f953b57c3",
+      "bytes": 72982,
+      "evidence_kind": "state_statute_current_snapshot",
+      "purpose": "Current statute exempts electricity delivered through wires from general sales tax. Current snapshot alone is not a complete historical Rider A/locality/account intersection."
+    },
+    {
+      "filename": "member-rates.html",
+      "url": "https://www.southcentralpower.com/your-account/member-rates/",
+      "sha256": "bf8e0bcdfa442c44d0b9cdc40770fdff4ec0abd53164d0bd66db7e33c99ad979",
+      "bytes": 101166,
+      "evidence_kind": "primary_utility_page",
+      "purpose": "Identifies current schedules and Buckeye Power monthly generation/transmission pass-through; contains no numeric monthly factor table."
+    },
+    {
+      "filename": "GT-split-bill-graphic.png",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/GT-split-bill-graphic.png",
+      "sha256": "76f837d44c2dabe5a33364b29fc4b424a55575285cc6a5e9568b68a1867346e4",
+      "bytes": 296778,
+      "evidence_kind": "undated_illustration_not_rates",
+      "purpose": "Undated split-bill graphic has $27 consumer charge and sample watermark despite 2025 line-item redesign. No effective period or service/bill dates; factors are not usable historical rate evidence."
+    },
+    {
+      "filename": "Security-Bill-Example-2026.pdf",
+      "url": "https://www.southcentralpower.com/wp-content/uploads/Security-Bill-Example-2026.pdf",
+      "sha256": "d86def126441e7121687c4c2c0badcb1378cb45f6769f6a30091a8970193380c",
+      "bytes": 1017243,
+      "evidence_kind": "excluded_non_electric_example",
+      "purpose": "Security-monitoring invoice, not an electric R/SGS bill; its calendar service period and sales tax cannot establish electric billing chronology or taxes.",
+      "pages": [
+        1,
+        2
+      ]
+    }
+  ],
+  "discovery_routes": [
+    {
+      "filename": "media-2025.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=2025&per_page=100&_fields=id%2Cdate%2Cmodified%2Cslug%2Csource_url%2Ctitle%2Cdescription",
+      "sha256": "6a6a4524edf7e3c6bf38a14ac47c7daafd4bcb9f486f05d8d92087a6db0c6103",
+      "bytes": 33312,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-2026.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=2026&per_page=100&_fields=id%2Cdate%2Cmodified%2Cslug%2Csource_url%2Ctitle%2Cdescription",
+      "sha256": "7eb0ed0d9ccd5712b6534710815563bf9f4297f1b3fd4fe373efb9c14df6be94",
+      "bytes": 30881,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-Rate-Schedule.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=Rate+Schedule&per_page=100&_fields=id%2Cdate%2Cmodified%2Cslug%2Csource_url%2Ctitle%2Cdescription",
+      "sha256": "0a26a2de3f4887d877e1a60484f70fac52d8b4a6574ae816a58d57329d7bde1e",
+      "bytes": 12102,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-Rider-B.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=Rider+B&per_page=100&_fields=id%2Cdate%2Cmodified%2Cslug%2Csource_url%2Ctitle%2Cdescription",
+      "sha256": "247f3c3c46c7136c93beeac0ee90d917785ad31505281dd0c5be6b8fabd63b19",
+      "bytes": 1782,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-bill.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=bill&per_page=100",
+      "sha256": "6ab32d8271ebd45072a14303803ed8e16392ef72e5522a64314b32b811ac4581",
+      "bytes": 54518,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-generation.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=generation&per_page=100&_fields=id%2Cdate%2Cmodified%2Cslug%2Csource_url%2Ctitle%2Cdescription",
+      "sha256": "95c13e44778703b007ed362e145af99c8517aa3aadd20a47eea1d803b03b3890",
+      "bytes": 1350,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-rider.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=rider&per_page=100",
+      "sha256": "c56e51fb258a182b100537f02a333865e3e22a3d5cd13ec0ef4948435c87303f",
+      "bytes": 7355,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-transmission.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=transmission&per_page=100&_fields=id%2Cdate%2Cmodified%2Cslug%2Csource_url%2Ctitle%2Cdescription",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "media-wholesale.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/media?search=wholesale&per_page=100&_fields=id%2Cdate%2Cmodified%2Cslug%2Csource_url%2Ctitle%2Cdescription",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "search-generation.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/search?search=generation&per_page=100",
+      "sha256": "6904e1c915ce20d38f579b87822e6c804d7e86f4117a7b77a0a3efcc74f84442",
+      "bytes": 35303,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "search-tax.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/search?search=tax&per_page=100",
+      "sha256": "71dbf0426fc718e5edc3b59fb18c08c937d606fd69c926ffb18a4b1c5a53d4de",
+      "bytes": 7390,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "search-transmission.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/search?search=transmission&per_page=100",
+      "sha256": "8ff0411732da4e1a793ac99622fc9e49d4da31427d2563f9ee6ff2b411fe0ecc",
+      "bytes": 18618,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    },
+    {
+      "filename": "search-understanding.json",
+      "url": "https://www.southcentralpower.com/wp-json/wp/v2/search?search=understanding&per_page=100",
+      "sha256": "5fd8a006932303d3459de3043971c0a0ddef74e71d3efe42c965170dc1655dfe",
+      "bytes": 26028,
+      "purpose": "Public official catalog discovery only; attachment upload dates are not tariff applicability."
+    }
+  ],
+  "base_component_observations_not_executable_bills": [
+    {
+      "approved": "2023-12-19",
+      "effective": "2024-04-01",
+      "R_customer_usd": "27.00",
+      "SGS_customer_usd": "38.00",
+      "distribution_usd_per_kwh": "0.0260"
+    },
+    {
+      "approved": "2024-12-17",
+      "effective": "2025-04-01",
+      "R_customer_usd": "29.00",
+      "SGS_customer_usd": "41.00",
+      "distribution_usd_per_kwh": "0.0260"
+    },
+    {
+      "approved": "2026-03-17",
+      "effective": "2026-04-01",
+      "R_customer_usd": "34.00",
+      "SGS_customer_usd": "48.00",
+      "distribution_usd_per_kwh": "0.0260"
+    }
+  ],
+  "minimum_rules": {
+    "R": "Customer charge for first 5 kVA installed or allocated transformer capacity plus $1.50 for each kVA above 5; one ordinary dwelling only in contemplated scope.",
+    "SGS": "Highest applicable minimum: ordinary customer charge for first 5 allocated kVA plus $1.50 per kVA above 5; unusual installations may carry separately contracted minimum charges/capacity. Seasonal disconnection does not avoid the twelve-month minimum. New extensions can require added facility or minimum charges."
+  },
+  "eligibility": {
+    "R": "Individual single-family/home/farm single-phase service; ordinary 120/240 V, no shared meter/multiple dwelling, mixed use or special program in contemplated scope.",
+    "SGS": "Utility-confirmed non-residential SGS billing capacity below 50 kW; cooperative can reclassify based on historical usage. No demand price line in recovered SGS sheets, but historical assignment and any contractual minimum remain independent facts.",
+    "motors": "Single-phase individual motor limit 15 hp absent cooperative permission; cooperative can require motor-start controls."
+  },
+  "billing_chronology": {
+    "tariff_rules": "Monthly or part thereof full consumer/minimum charges; estimated intervening readings and bimonthly billings permitted by the sheets, with applicable charges/blocks doubled for bimonthly service.",
+    "rider_A": "Applied commencing with bill rendered after effective date.",
+    "rider_B_2025": "Separate generation/transmission factors applied to total billed kWh on bills rendered on or after effective date October 1, 2025; factors determined monthly.",
+    "sample": "Service April 30-May 29, 2026; bill June 2, 2026; not matching calendar service/billing month. This sample alone does not establish all monthly factor applicability."
+  },
+  "tax_observations_not_complete_bill": {
+    "ordinary_30_day_tiers_kwh": [
+      "2000",
+      "15000"
+    ],
+    "ordinary_30_day_rates_usd_per_kwh": [
+      "0.00465",
+      "0.00419",
+      "0.00363"
+    ],
+    "non_30_day_rule": "Apply rates to daily average blocks: first 67 kWh/day, then through 500 kWh/day, remainder; multiply daily tax by days. Do not substitute 2000/15000 unchanged for non-30-day periods.",
+    "sales_tax": "Electricity delivered through wires is exempt under current ORC 5739.02(B)(7); security-monitoring sample sales tax is unrelated.",
+    "Rider_A": "No numeric complete locality/account impositions vector established. Ordinary status, local impositions, exemptions and self-assessor status require independent evidence."
+  },
+  "DER_scope": {
+    "enabled": false,
+    "ordinary_import_approval": "Future support requires final written cooperative approval preserving ordinary import billing for the exact non-export PV or paired-storage installation, active before the service cycle, with all extra charges documented.",
+    "storage": "PV-only charging and zero export; standalone/grid-charged storage not established.",
+    "export": "No net metering, avoided-cost net billing or credit bank is implemented; zero-export configuration alone is not tariff/interconnection approval."
+  },
+  "gaps": [
+    {
+      "start": "2025-01-01",
+      "end": "2026-12-31",
+      "reason": "No complete executable R/SGS monthly component intersection established. Monthly G&T factors and applicability are not published in the recovered pages/catalogs; June 2 sample rates cannot be carried into arbitrary cycles or SGS. Prior Rider B original and complete Rider A/locality/account applicability also remain unresolved."
+    }
+  ],
+  "requirements_to_enable": [
+    "Official monthly generation/transmission factor history, stated billing-date/service-period applicability and the pre-October 2025 Rider B original for proposed earlier cycles.",
+    "Independent complete R/SGS ordinary-account/locality/Rider A/tax intersections and actual transformer allocation/contract minima.",
+    "Independent retained SGS classification below 50 kW, historical demand/usage and any facility/contract conditions; no eligibility derived from PV-reduced imports.",
+    "Exact-installation ordinary-import PV/storage approval, then independent bill arithmetic, numeric/symbolic parity, dispatch/state/CSV/ZIP checks and selected frozen-candidate historical/browser acceptance."
+  ],
+  "access_limits": [
+    "Initial sandbox Python DNS lookup failed; approved network retrieval with system CA file preserved official source bytes.",
+    "Web retrieval of 2025 base PDFs failed or timed out; one separate official-download route succeeded and is hashed here. No repeated failing browser operation was used.",
+    "Official public catalog found dated base sheets, current Rider B formula and examples, but no complete monthly G&T history. No unchanged-route retries or adjacent-rate substitution."
+  ],
+  "benchmark_scope": "Only the exact official example invoice is independently reconciled. It is not an executable historical tariff, SGS benchmark, dispatch result, electrical acceptance or customer calibration.",
+  "sample_visual_review": {
+    "pages": [
+      1,
+      2
+    ],
+    "rendered_files": [
+      ".cache/south_central_oh/rendered/residential-sample-1.png",
+      ".cache/south_central_oh/rendered/residential-sample-2.png",
+      ".cache/south_central_oh/rendered/sample-charges-detail.png"
+    ],
+    "result": "Rendered bill dates, 1201 kWh, unit factors, component charges and total agree with extracted text and independent Decimal arithmetic."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "official_example_invoice_reconciliation_only",
+  "source_url": "https://www.southcentralpower.com/wp-content/uploads/Residential-Bill-Example-2026.pdf",
+  "source_sha256": "9b5ba697d9f3e8f150ffa7ddf966ce3299dbe6b2086e269ed60a20655a3cbb03",
+  "source_pdf_pages": [
+    1,
+    2
+  ],
+  "service_start": "2026-04-30",
+  "service_end": "2026-05-29",
+  "bill_date": "2026-06-02",
+  "customer_class": "residential",
+  "tariff": "R",
+  "import_kwh": "1201",
+  "generation_rate_usd_per_kwh": "0.078845",
+  "transmission_rate_usd_per_kwh": "0.030777",
+  "distribution_rate_usd_per_kwh": "0.026",
+  "tax_rate_applicable_to_this_usage_usd_per_kwh": "0.00465",
+  "printed_lines_usd": {
+    "delivery_customer": "34.00",
+    "delivery_energy": "31.23",
+    "generation": "94.69",
+    "transmission": "36.96",
+    "ohio_kwh_tax": "5.58"
+  },
+  "independent_unrounded_lines_usd": {
+    "delivery_customer": "34.00",
+    "delivery_energy": "31.226",
+    "generation": "94.692845",
+    "transmission": "36.963177",
+    "ohio_kwh_tax": "5.58465"
+  },
+  "printed_total_usd": "202.46",
+  "independent_component_rounded_total_usd": "202.46",
+  "broader_cycle_applicability_established": false,
+  "SGS_applicability_established": false,
+  "executable_coverage": [],
+  "note": "This record validates the source invoice arithmetic only. The printed service period spans two calendar months and is billed in June; no monthly factor interval, other account rate or exact hourly metering chronology is inferred."
+}
