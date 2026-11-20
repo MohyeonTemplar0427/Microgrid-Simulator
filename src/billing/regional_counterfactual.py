@@ -9,6 +9,7 @@ from copy import deepcopy
 
 
 MODES = {
+    "oncor_texas": ("export_mode", "none"),
     "ugi_electric_pennsylvania": ("export_mode", "none"),
     "kingsport_power_tennessee": ("export_mode", "none"),
     "naperville_illinois": ("export_mode", "none"),
@@ -92,7 +93,7 @@ def grid_only_counterfactual(utility, account, state=None):
             inherited[key] = value
 
     applied = mode == "net_metering"
-    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois", "oncor_texas"):
         applied = bool(result.get("der_ordinary_service_confirmed") or result.get("nms_approved"))
         for key, value in (("der_ordinary_service_confirmed", False), ("der_activation_date", ""),
                            ("der_eligibility_source", ""), ("battery_interconnection_confirmed", False),

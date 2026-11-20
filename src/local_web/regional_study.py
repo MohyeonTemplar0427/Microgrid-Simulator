@@ -19,7 +19,8 @@ from .contract import DEFAULT_SITE_REQUEST,number,identifier
 from .site_profile import customer_class
 
 
-SITES={"rappahannock_electric_cooperative":(38.60,-78.80,"Illustrative unincorporated Rockingham County, VA only; REC billing remains unavailable pending complete tax evidence."),
+SITES={"oncor_texas": (32.78, -96.80, "Illustrative Dallas weather site. Verify Oncor delivery, REP agreement and tax jurisdiction independently."),
+       "rappahannock_electric_cooperative":(38.60,-78.80,"Illustrative unincorporated Rockingham County, VA only; REC billing remains unavailable pending complete tax evidence."),
        "ugi_electric_pennsylvania":(41.34,-75.97,"Hypothetical Dallas Borough, Luzerne County, PA. Confirm UGI distribution, default supply and assigned account class independently."),
        "kingsport_power_tennessee":(36.55,-82.56,"Hypothetical Kingsport city, TN. Confirm Kingsport Power service, plan assignment and city tax jurisdiction independently."),
        "naperville_illinois":(41.77,-88.15,"Hypothetical inside-city Naperville, IL. Confirm city electric service, bill-month PPA, plan assignment and tax treatment independently."),
@@ -117,7 +118,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         "site":{"latitude":lat,"longitude":lon,"label":label,"utility":utility},
         "site_profile":{"site_type":kind,"subtype":"house" if residential else None},
         "regional_account":{"distribution_utility":utility,"state_jurisdiction":UTILITIES[utility]["state"],
-            "retail_supplier":utility,"grid_operator":UTILITIES[utility].get("grid_operator","PJM"),"transmission_zone":UTILITIES[utility]["zone"],
+            "retail_supplier":plan.get("retail_supplier",utility),"grid_operator":UTILITIES[utility].get("grid_operator","PJM"),"transmission_zone":UTILITIES[utility]["zone"],
             "wholesale_pricing_location":None,"verification_kind":"hypothetical_case",
             "reference":"Explicit hypothetical retail account, not a territory or enrollment finding"},
         "account":account,"start_date":start,"end_date":end,"timezone":data_timezone(utility),"timestep_minutes":15,
@@ -166,7 +167,7 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["account"].update(module.hypothetical_defaults(plan_id,day=start))
         for cycle in request["billing_cycles"]:
             cycle.update(module.hypothetical_cycle_fields(cycle["start_date"]))
-    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois", "oncor_texas"):
         request["solar"]["dc_capacity_kw"] = 2.
         request["pv_capacity_kw"] = 1.5
         request["operating_contract"]["renewable_only_charging"] = "pv_battery" in plan["equipment_modes"]
@@ -302,8 +303,8 @@ def prepare(r):
         raise ValueError("The selected billing plan does not match the residential/commercial site class.")
     _validate_rate_evidence_selection(a,plan)
     supplier=a.get("supply",a.get("supplier",a.get("supply_arrangement")))
-    if r["regional_account"]["retail_supplier"]!=utility:
-        raise ValueError("This adapter requires the named utility as default retail supplier; third-party supply needs a complete contract model.")
+    if r["regional_account"]["retail_supplier"]!=plan.get("retail_supplier",utility):
+        raise ValueError("The regional account must identify the retail supplier for the selected billing plan.")
     if utility=="pseg" and supplier=="bgs_ciep":
         location=r["regional_account"]["wholesale_pricing_location"]
         if not location or str(location["pnode_id"])!="116472957" or location["pnode_name"]!="PSEG_RESID_AGG" or location["zone"]!="":
@@ -379,7 +380,7 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
-    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois", "oncor_texas"):
         equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
         if op["mode"] != "non_export" or op["grid_charging_confirmed"]:
             raise ValueError("Select non-export operation without grid charging for this tariff.")
@@ -413,12 +414,14 @@ def prepare(r):
     if utility=="duquesne_light_pennsylvania" and (pv or battery) and (op["grid_charging_confirmed"] or op["mode"]!="non_export"):
         raise ValueError("Duquesne first renewable scope requires non-export operation and PV-only battery charging.")
     cycles=list(cycle_partitions(grid.index,r["billing_cycles"]))
-    if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia","mon_power_west_virginia","aes_ohio"):
+    if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia","mon_power_west_virginia","aes_ohio","oncor_texas"):
         _,first_block,first_cycle=cycles[0]
         module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],state=None,equipment=equipment)
     for _,block,cycle in cycles:
+        if utility == "oncor_texas" and cycle["account_overrides"]:
+            raise ValueError("Oncor cycle overrides cannot change the documented meter, tax profile or signed retail agreement.")
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
-        if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+        if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois", "oncor_texas"):
             module.validate_native_load(cycle_account(a,cycle), load[block])
         if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "southern_maryland_electric_cooperative", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana"):
             module.validate_native_load(cycle_account(a,cycle), load[block])
@@ -440,6 +443,8 @@ def prepare(r):
     alternatives=r.get("tariff_comparisons",[])
     if not isinstance(alternatives,list) or len(alternatives)>1 or any(not isinstance(p,str) for p in alternatives):
         raise ValueError("Choose at most one alternative tariff for an independently optimized comparison.")
+    if alternatives and utility == "oncor_texas":
+        raise ValueError("Configure separate Oncor studies for independently documented retail contracts.")
     for alternative in alternatives:
         if alternative==a["tariff"] or alternative not in plans or plans[alternative].get("status")!="supported" or plans[alternative].get("customer_class")!=kind:
             raise ValueError("Choose a distinct implemented alternative tariff for the same utility/customer class.")

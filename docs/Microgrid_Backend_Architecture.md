@@ -1,5 +1,12 @@
 # Microgrid backend architecture
 
+[Oncor Electric Delivery and Texas retail contracts](Oncor_Texas.md) describes
+the ERCOT regional adapter. Each study pairs an Oncor delivery schedule with a
+dated retail contract from NEC, Constellation, 4Change or Ambit. Supply, Oncor
+delivery, meter tax jurisdiction and wholesale identity remain separate. Ambit
+secondary demand accounts carry forward eleven monthly 15-minute peaks for
+delivery rider billing.
+
 AES Ohio's ordinary single-phase D17 Residential and D19 Secondary G10 SSO
 adapter is described in [its utility guide](AES_Ohio.md). G10 service dates
 remain separate from T08/rider bill dates. D19 retains actual 30-minute peaks,

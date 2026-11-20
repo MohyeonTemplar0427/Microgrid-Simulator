@@ -14,6 +14,9 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "oncor_texas": {"label": "Oncor Electric Delivery · Texas", "state": "TX", "zone": None,
+        "module": "oncor_tx", "timezone": "America/Chicago", "grid_operator": "ERCOT",
+        "grid_sources": ["https://www.ercot.com/about", "https://www.eia.gov/electricity/data/eia861/"]},
     "ugi_electric_pennsylvania": {"label":"UGI Electric · Pennsylvania", "state":"PA", "zone":"UGI", "module":"ugi_pa",
         "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
     "kingsport_power_tennessee": {"label":"Kingsport Power · Tennessee", "state":"TN", "zone":"AEP", "module":"kingsport_tn",
@@ -214,6 +217,8 @@ def account_region(region, utility):
         raise ValueError("Identify the retail supplier separately from distribution utility.")
     location=region["wholesale_pricing_location"]
     if location is not None:
+        if data.get("grid_operator") == "ERCOT":
+            raise ValueError("Oncor retail contracts do not use a wholesale settlement point. Leave the pricing location unassigned.")
         if data.get("grid_operator")=="MISO":
             if (not isinstance(location,dict) or set(location)!={"cpnode","node_type","source"}
                     or any(not isinstance(v,str) or not 1<=len(v.strip())<=500 for v in location.values())

@@ -122,6 +122,7 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "oncor_texas": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-10-31")),
     "ugi_electric_pennsylvania": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-10-31")),
     "kingsport_power_tennessee": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-10-31")),
     "naperville_illinois": ((2025, "2025-08-01", "2025-08-31"),),
@@ -165,6 +166,9 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
+        if "oncor_texas" in utilities:
+            selected.extend(("oncor_texas", p["customer_class"], p["id"])
+                            for p in adapter("oncor_texas").catalog() if p["status"] == "supported")
         selected.extend(row for row in PJM_FOURTH5_CASES if row[0] in utilities)
         selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + DUKE_OH_CASES + APCO_VA_CASES + IM_IN_CASES + PJM_BATCH5_CASES + PJM_NEXT5_CASES + PJM_THIRD5_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES + TOLEDO_CASES + AES_OHIO_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
@@ -269,7 +273,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
-    if utility in FOURTH5_UTILITIES and custom is None and period == "annual":
+    if (utility in FOURTH5_UTILITIES or utility == "oncor_texas") and custom is None and period == "annual":
         selected_plan = next(p for p in adapter(utility).catalog() if p["id"] == r["account"]["tariff"])
         if any(not any(w["start"] <= day <= w["end"] for w in selected_plan["coverage"])
                for day in pd.date_range("2025-01-01", "2025-12-31").strftime("%Y-%m-%d")):
@@ -313,7 +317,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start, end = ("2025-01-01", "2025-12-31") if period == "annual" else ("2025-07-01", "2025-07-31")
     if utility in THIRD5_MONTHLY_DATES and custom is None and period=="monthly":
         start,end=THIRD5_MONTHLY_DATES[utility]
-    if utility in FOURTH5_UTILITIES and custom is None and period == "monthly":
+    if (utility in FOURTH5_UTILITIES or utility == "oncor_texas") and custom is None and period == "monthly":
         start, end = r["start_date"], r["end_date"]
     if utility in NEXT5_MONTHLY_DATES and custom is None and period=="monthly":
         start,end=NEXT5_MONTHLY_DATES[utility]
@@ -355,7 +359,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
-    if utility in FOURTH5_UTILITIES:
+    if (utility in FOURTH5_UTILITIES or utility == "oncor_texas"):
         account.update(adapter(utility).hypothetical_defaults(account["tariff"], day=start))
     if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio"):
         account.update(adapter(utility).hypothetical_defaults(account["tariff"],day=start[:7]+"-01"))
@@ -463,7 +467,7 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
                 ("sc_history_through_month","sc_monthly_demands_kw","sc_review_source")})
     r["operating_contract"].update(interconnection_confirmed=True, grid_charging_confirmed=True,
         reference="Explicit hypothetical utility-approved non-export PV/storage account; no export compensation assumed")
-    if utility in FOURTH5_UTILITIES:
+    if (utility in FOURTH5_UTILITIES or utility == "oncor_texas"):
         r["operating_contract"].update(grid_charging_confirmed=False, renewable_only_charging=r["battery"] is not None,
             reference="Hypothetical utility approval for the exact equipment selected, with zero export.")
     if utility.startswith("firstenergy_") or utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio","duquesne_light_pennsylvania"):
@@ -566,6 +570,9 @@ def prepare_inputs(folder, *, env_file=None, utilities=None, include_va_history=
 
 def attach_weather(app, request, inputs):
     utility = request["site"]["utility"]
+    if utility == "oncor_texas" and request["solar"]["dc_capacity_kw"] == 0:
+        prepare(request)
+        return request  # A grid-only fixed contract consumes no weather file.
     source = private_path(inputs)/utility
     va_history = utility == "dominion_energy_virginia" and request["start_date"].startswith("2025-")
     if utility in YEARLY_ERA5_WINDOWS:
@@ -616,6 +623,17 @@ def attach_weather(app, request, inputs):
 def checked_bill_scope(bill, utility, account, index, *, allow_va_history=False, allow_ohio_provisional=False,
                        allow_we_duke_provisional=False):
     """Allow exactly the documented historical VA tax gap, by explicit opt-in."""
+    if utility == "oncor_texas":
+        from src.billing.oncor_tx import EXCLUSIONS
+        subtotal = account["tax_treatment"] == "pretax_subtotal"
+        excluded = list(EXCLUSIONS) if subtotal else []
+        require(bill["is_complete_bill"] is (not subtotal) and bill["excluded_components"] == excluded
+                and bill["rate_evidence_status"] == "verified" and bill["metrics"]["bill_date"] == account["bill_date"]
+                and bill["metrics"]["retail_supplier"] == account["supply"]
+                and bill["rate_sources"] and not bill["rate_assumptions"], "Oncor EFL, tax scope or enrollment differs")
+        if bill["metrics"]["oncor_schedule"] != "secondary_gt_10_kw":
+            require(bill["next_state"] == {}, "Unexpected Oncor billing state")
+        return ("verified_charges_subtotal" if subtotal else "complete_utility_bill"), sorted(excluded)
     if utility=="aes_ohio":
         from src.billing.aes_ohio import cycle_review, SEASONAL_MONTHS, LLF_BOUNDARY_USD
         from src.billing.aes_ohio_rates import rates_on
@@ -969,7 +987,7 @@ def check_assumption_download(row, model, assumption):
 
 
 def expected_scenarios(utility, plan_id):
-    if utility in FOURTH5_UTILITIES:
+    if (utility in FOURTH5_UTILITIES or utility == "oncor_texas"):
         plan = next(p for p in adapter(utility).catalog() if p["id"] == plan_id)
         return tuple(plan["equipment_modes"])
     return SCENARIOS
@@ -1035,6 +1053,13 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
                 "battery_kw": request["battery"]["max_discharge_kw"] if has_storage else 0.}
             bill = calculate_cycle(utility, index[block], dispatch.grid_import_kw.to_numpy()[block],
                 dispatch.grid_export_kw.to_numpy()[block], a, state=state, equipment=equipment_one)
+            if utility == "oncor_texas" and bill["metrics"]["oncor_schedule"] == "secondary_gt_10_kw":
+                history = (a if state is None else state)["prior_ncp_kw"]
+                peak = float(dispatch.grid_import_kw.to_numpy()[block].max())
+                require(bill["next_state"] == dict(prior_ncp_kw=history[1:] + [peak],
+                            history_through_month=a["billing_month"], tariff=a["tariff"])
+                        and abs(bill["metrics"]["rider_billing_kw"] - max(peak, .8 * max(history))) < 1e-7,
+                        "Oncor demand history or rider ratchet differs from the imported intervals")
             state = bill["next_state"]
             scenario_bills.append(bill)
             scope, excluded = checked_bill_scope(bill, utility, a, index[block], allow_va_history=allow_va_history,
