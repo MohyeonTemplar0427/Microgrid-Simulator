@@ -222,17 +222,20 @@ if(typeof document!=="undefined") {
     regionalIntervalSupport(field("timestep_minutes"),plan);
     $("strategies").closest("fieldset").hidden=true;$("orientation-controls").hidden=true;
     field("carbon_weight").closest("label").hidden=true;field("carbon_weight").disabled=true;
+    const modes=plan?.equipment_modes||["grid_only","pv_only","pv_battery","storage_only"];
+    const paired=modes.includes("pv_battery");
+    f("battery").disabled=!paired;
+    if(!paired)f("battery").checked=false;
     const pv=field("pv_choice").value==="yes",storage=batteryEnabled();
-    $("regional-battery-choice").hidden=!pv;
+    $("regional-battery-choice").hidden=!pv||!paired;
     for(const name of ["max_charge_kw","max_discharge_kw","charge_efficiency","discharge_efficiency","capacity_kWh","energy_kWh","SOC_min","SOC_max"]){field(name).disabled=!storage;field(name).closest("label").hidden=!storage;}
     for(const name of ["pv_capacity_kw","inverter_efficiency"]){field(name).disabled=!pv;field(name).closest("label").hidden=!pv;}
     $("pv-battery-connection").hidden=!(pv&&storage);field("pv_battery_connection").value="ac_coupled";
-    const modes=plan?.equipment_modes||["grid_only","pv_only","pv_battery","storage_only"];
     for(const [value,allowed] of [["yes",modes.includes("pv_only")],["storage",modes.includes("storage_only")]]){const choice=field("pv_choice").querySelector(`option[value="${value}"]`);choice.disabled=!allowed;choice.dataset.regionalEquipment="true";}
     const solarModes=ciep?["non_export"]:plan?.solar_modes||(plan?.net_metering===false?["non_export"]:["non_export","net_metering"]);
     f("export").querySelector('option[value="net_metering"]').disabled=!solarModes.includes("net_metering");
     $("dataset-info").textContent=field("rg_a_rate_evidence_mode")?.value==="provisional_cycles_v1"?"PECO provisional allocation: 1–45 whole local service days; days/30 outside 26–35 days, dated delivery, end-of-service GSA/TSC and one cycle demand. Explicit acceptance is required. Bills and savings are estimates; prices remain within verified dates.":field("rg_a_rate_evidence_mode")?.value==="provisional_2025"&&field("rg_a_provisional_assumptions_accepted")?.checked?"Use complete utility cycles within the explicitly accepted provisional 2025 coverage. Rates and bills use documented assumptions; calendar cycles remain hypothetical. Wholesale prices do not replace bundled retail rates.":"Use complete utility cycles within the selected plan's verified dates. Calendar cycles are explicitly hypothetical; market data is unnecessary for bundled supply.";
-    $("pv-choice-note").textContent="Compare grid-only, PV-only and PV plus storage, or choose storage without PV. Surplus is curtailed unless verified net metering is explicitly enabled.";
+    $("pv-choice-note").textContent=paired?"Compare grid-only, PV-only and PV plus storage, or choose storage without PV. Surplus is curtailed unless verified net metering is explicitly enabled.":(modes.includes("pv_only")?"Compare grid-only and approved non-export PV. Surplus solar is curtailed.":"This plan supports grid-only operation.");
   }
   function leaving(){if(wasActive&&!active()){wasActive=false;for(const choice of field("pv_choice").querySelectorAll("option[data-regional-equipment]")){choice.disabled=false;delete choice.dataset.regionalEquipment;}for(const name of ["max_charge_kw","max_discharge_kw","charge_efficiency","discharge_efficiency","capacity_kWh","energy_kWh","SOC_min","SOC_max","pv_capacity_kw","inverter_efficiency"])field(name).closest("label").hidden=false;
     regionalIntervalSupport(field("timestep_minutes"),{interval_minutes:[5,15,30,60]});

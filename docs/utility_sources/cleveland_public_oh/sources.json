@@ -1,0 +1,23 @@
+{
+  "provider": "City of Cleveland Division of Cleveland Public Power",
+  "status": "Blocked for complete cycles throughout 2025 and 2026",
+  "authority": "Ordinance 957-2024 and Board of Control Resolution 639-24",
+  "residential": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-27146",
+  "small_commercial": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-27163",
+  "recovery": "https://codelibrary.amlegal.com/codes/cleveland/latest/cleveland_oh/0-0-0-27435",
+  "adopted_resolution": "https://www.clevelandohio.gov/sites/clevelandohio/files/boc/2024-12-18%20Minutes%20%26%20Resolutions%20Adopted.pdf",
+  "tax": "https://codes.ohio.gov/ohio-revised-code/section-5727.81",
+  "current_rate_page": "https://www.cpp.org/Billing/Rate-Schedule",
+  "missing_evidence": "Class-specific monthly amounts actually billed, including the 523.17 environmental adjustment to 523.21 recovery, and their billing applicability. CPP may defer or over-recover purchased power. Its website lists factors without a dated application history.",
+  "illustrative_bill": {
+    "url": "https://www.cpp.org/sites/default/files/2024-12/CPP_UnderstandingYourBillBrochure_2024_R5_Interior_BillImage.pdf",
+    "sha256": "ea6c3de37aca44aa8c34b1ce3c7176cc81d783de3e754cfc2ac3ae49d1a3802a",
+    "read_period": ["2025-10-11", "2025-11-13"], "issue_date": "2025-11-16", "kwh": 500,
+    "winter_base_usd": 37.60, "recovery_usd_per_kwh": 0.07938, "recovery_usd": 39.69, "ohio_tax_usd": 2.33, "total_usd": 79.62,
+    "use": "Educational example with a November period end. It establishes an arithmetic benchmark only. The illustrated residential recovery factor differs from the undated web factor and supplies no commercial history."
+  },
+  "grid": {
+    "pjm_zone_source": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2024/20241025/20241025-item-03g---first-energy-large-load-request.pdf",
+    "zone": "ATSI", "emergency_control_area": "CPP", "wholesale_node": null
+  }
+}

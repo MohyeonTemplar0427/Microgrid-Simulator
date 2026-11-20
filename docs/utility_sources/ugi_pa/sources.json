@@ -1,0 +1,438 @@
+{
+  "as_of": "2026-11-19",
+  "utility": "UGI Utilities, Inc. – Electric Division, Pennsylvania",
+  "tariff": "UGI Electric Pa. P.U.C. No. 6",
+  "archive": {
+    "url": "https://ugi.outsystemsenterprise.com/UGITariff_FO/TariffDetail?TariffId=211",
+    "navigation": "UGI Tariffs > Electric > Service Tariff No. 6 > Supplements > View Supplement. Supplement 101 is the View Tariff compiled book.",
+    "authority": "Use the effective date and basis printed on the signed cover and changed tariff sheet. Portal display dates vary with browser timezone; list timestamps are not the rate-table authority.",
+    "local_path": ".cache/pjm_fourth5/ugi_pa/public-24-DataActionGetSupplementsByTariffId.json",
+    "bytes": 37382,
+    "sha256": "19328d33e6ca5bc6f3a0bc14c5f7ccd5db8ad9361a406679caae9a73d6852239"
+  },
+  "supplements": [
+    {
+      "supplement": 52,
+      "effective": "2023-03-01",
+      "sheets": "B pp 39–41",
+      "use": "Class assignment under DSP IV, supply composition and GRT",
+      "basis": "service rendered or rule",
+      "pdf_pages": 5,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-52.pdf",
+      "bytes": 123333,
+      "sha256": "974adfc83b8d8b75a89377c5b1b78b3013013ecbdd3130ff196f589054d1f70b"
+    },
+    {
+      "supplement": 62,
+      "effective": "2023-10-01",
+      "sheets": "pp 31, 38, 52–53, 62",
+      "use": "Base accounts, cents/kWh, monthly minimums, historical STAS reset and Rule 17",
+      "basis": "service rendered or rule",
+      "pdf_pages": 46,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-62.pdf",
+      "bytes": 632763,
+      "sha256": "c24661edbe54c6ab477d7c799e2595a394130a5879f5bb600c3a125bec07bbc6"
+    },
+    {
+      "supplement": 73,
+      "effective": "2024-09-01",
+      "sheets": "E p 46",
+      "use": "Energy efficiency",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-73.pdf",
+      "bytes": 125188,
+      "sha256": "0bf81ae92df84ea0363500b90338909e145dff1bbdcde809d992bc86a91ad27e"
+    },
+    {
+      "supplement": 75,
+      "effective": "2024-12-01",
+      "sheets": "B p 40",
+      "use": "Common GSR-1 price",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-75.pdf",
+      "bytes": 104149,
+      "sha256": "f70997110f29cbeea3c98dd55790bfbcf691fbc5bc2d9e9a229fe9218051bec8"
+    },
+    {
+      "supplement": 76,
+      "effective": "2024-12-01",
+      "sheets": "C p 42",
+      "use": "Residential USP",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-76.pdf",
+      "bytes": 106457,
+      "sha256": "92a970f4404bffe0841a975567026291c0cf6ce9d1bfac104b51ac43303cca86"
+    },
+    {
+      "supplement": 77,
+      "effective": "2025-01-01",
+      "sheets": "G p 50",
+      "use": "DSIC, replacement page",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-77.pdf",
+      "bytes": 114860,
+      "sha256": "fd301b08bc09adb662c8a615703c87554452700d381cd203d4d0df35637dcedc"
+    },
+    {
+      "supplement": 78,
+      "effective": "2025-01-20",
+      "sheets": "A p 38",
+      "use": "STAS",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-78.pdf",
+      "bytes": 98190,
+      "sha256": "0b95d7ee9b49584b16c05c75a32228ea9372adff9ced33d193cf67c1308db3e4"
+    },
+    {
+      "supplement": 79,
+      "effective": "2025-04-01",
+      "sheets": "G p 50",
+      "use": "DSIC",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-79.pdf",
+      "bytes": 115049,
+      "sha256": "e8c40ad820aefe53e5d4b087fa208c1be9ca899707fd90348d5d2fb8a36410a0"
+    },
+    {
+      "supplement": 80,
+      "effective": "2025-06-01",
+      "sheets": "Rule 17 pp 30–32; B pp 39–41",
+      "use": "DSP V rules and supply peak classification; revised customer-generation rules",
+      "basis": "service rendered or rule",
+      "pdf_pages": 8,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-80.pdf",
+      "bytes": 66606,
+      "sha256": "78062820fb68bde60594dc08c14b0fb158ab87cd8ffba623f4832c2d99c38b4e"
+    },
+    {
+      "supplement": 81,
+      "effective": "2025-06-01",
+      "sheets": "B p 40",
+      "use": "Separate class GSR-1 prices",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-81.pdf",
+      "bytes": 28411,
+      "sha256": "e27c60854b6b79d60ff4b88ef71ee8bf0d617f672bfeb6967bdb118748fffc69"
+    },
+    {
+      "supplement": 82,
+      "effective": "2025-06-01",
+      "sheets": "C p 42",
+      "use": "Residential USP",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-82.pdf",
+      "bytes": 1101266,
+      "sha256": "7076280c04ffb08d79e1b4ce7c085f43c8b77c77e8b50e0601c969d39927d36a"
+    },
+    {
+      "supplement": 83,
+      "effective": "2025-07-01",
+      "sheets": "G p 50",
+      "use": "DSIC",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-83.pdf",
+      "bytes": 1111743,
+      "sha256": "7727249795752938f86e5318ff328103582e2884497c986db8d50a153ce8298b"
+    },
+    {
+      "supplement": 84,
+      "effective": "2025-09-01",
+      "sheets": "E p 46",
+      "use": "Energy efficiency",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-84.pdf",
+      "bytes": 1502616,
+      "sha256": "4d98e6ac753b442328e6bdc7d879545b0cd183f0ae0260bc9fafe37c4bbb15c3"
+    },
+    {
+      "supplement": 85,
+      "effective": "2025-09-20",
+      "sheets": "A p 38",
+      "use": "STAS",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-85.pdf",
+      "bytes": 1096801,
+      "sha256": "4ba48f8169e130beb3dcbe4ef1ceddd72784fa3c50260f58d40c97fd711e9636"
+    },
+    {
+      "supplement": 86,
+      "effective": "2025-10-01",
+      "sheets": "G p 50",
+      "use": "DSIC",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-86.pdf",
+      "bytes": 1111847,
+      "sha256": "77b501597b02ca5358a2dfb5401801c9c87c1fc2f5f2fa770f4003d429087e5c"
+    },
+    {
+      "supplement": 87,
+      "effective": "2025-12-01",
+      "sheets": "B p 40",
+      "use": "Class GSR-1",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-87.pdf",
+      "bytes": 1100302,
+      "sha256": "3768b0e98e57a2f626990000dbd5eb181db9d9d9ea6b5cffc1db2ec8e0db5d83"
+    },
+    {
+      "supplement": 88,
+      "effective": "2025-12-01",
+      "sheets": "C p 42",
+      "use": "Residential USP",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-88.pdf",
+      "bytes": 1101025,
+      "sha256": "0e9f36d35d7f74f2bff7e8134e3a1c186a7a4817406a39650683a86810b08181"
+    },
+    {
+      "supplement": 89,
+      "effective": "2026-01-01",
+      "sheets": "G p 50",
+      "use": "DSIC",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-89.pdf",
+      "bytes": 1111870,
+      "sha256": "21e3f91585aeda6fb0f3ac7f40f77f490126322c32af7b747d109a67aa60c877"
+    },
+    {
+      "supplement": 90,
+      "effective": "2026-01-19",
+      "sheets": "A p 38",
+      "use": "STAS",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-90.pdf",
+      "bytes": 1096789,
+      "sha256": "976b5b6601781572516e7b63afc922afc72173ea7e97a445dce5f9911ba1c19f"
+    },
+    {
+      "supplement": 91,
+      "effective": "2026-04-01",
+      "sheets": "G p 50",
+      "use": "DSIC",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-91.pdf",
+      "bytes": 1107276,
+      "sha256": "edfef3b15ce5febac0f03678ec192bb8809a0ec74b2e3e40bf82f694ab1e202e"
+    },
+    {
+      "supplement": 92,
+      "effective": "proposed 2026-06-01",
+      "sheets": "proposed base filing",
+      "use": "Suspended by Supplement 94; proposed prices excluded",
+      "basis": "service rendered or rule",
+      "pdf_pages": 35,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-92.pdf",
+      "bytes": 551298,
+      "sha256": "de8cd56688b319b15920f796e2eb6c0104c4889a62d6661b3818eba3d4bb0dd5"
+    },
+    {
+      "supplement": 93,
+      "effective": "2026-06-01",
+      "sheets": "B p 40",
+      "use": "Class GSR-1",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-93.pdf",
+      "bytes": 1092992,
+      "sha256": "61f2564b8af874e0a96c7412e8b02f7fa454cb273c59ea70a72e159e16102286"
+    },
+    {
+      "supplement": 94,
+      "effective": "Order entered 2026-04-16; filed 2026-05-05",
+      "sheets": "cover",
+      "use": "Suspends Supplement 92 until January 1, 2027; existing tariff as otherwise amended continues",
+      "basis": "service rendered or rule",
+      "pdf_pages": 1,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-94.pdf",
+      "bytes": 1072892,
+      "sha256": "a2ec065681b4f73e9bb729339f825b767a4991007e806959c3eb381640f526d9"
+    },
+    {
+      "supplement": 95,
+      "effective": "2026-06-01",
+      "sheets": "C p 42",
+      "use": "Residential USP; recalculation upon base or GSR change",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-95.pdf",
+      "bytes": 1094191,
+      "sha256": "ebf37c14f7b7b08756b6ab74659aeb59293c78f28ab3baa690030ebd16df87be"
+    },
+    {
+      "supplement": 96,
+      "effective": "2026-07-01",
+      "sheets": "G p 50",
+      "use": "DSIC",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-96.pdf",
+      "bytes": 1103999,
+      "sha256": "60fb98a466696d99d031219882ca4842a004fc3d28abcd69282906675e63a700"
+    },
+    {
+      "supplement": 97,
+      "effective": "2026-07-20",
+      "sheets": "A p 38",
+      "use": "STAS",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-97.pdf",
+      "bytes": 1089176,
+      "sha256": "fab1fbe3ca2cb78aeb7e6ed0315d6c4183e790d396fb815a8b910bb6a5a88647"
+    },
+    {
+      "supplement": 98,
+      "effective": "2026-09-01",
+      "sheets": "E p 46",
+      "use": "Energy efficiency",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-98.pdf",
+      "bytes": 1488548,
+      "sha256": "9c5e99f10f42df21bae0def1194bf200a7904f5f2f885501b95882ccc1c3b158"
+    },
+    {
+      "supplement": 99,
+      "effective": "2026-10-01",
+      "sheets": "G p 50",
+      "use": "DSIC",
+      "basis": "bills rendered",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-99.pdf",
+      "bytes": 1139281,
+      "sha256": "90255efa45130f0cd3e00c3b6652faa7b7082dad708cf2ec44d845d51c9c1099"
+    },
+    {
+      "supplement": 100,
+      "effective": "2026-10-19",
+      "sheets": "A p 38",
+      "use": "Negative STAS",
+      "basis": "service rendered or rule",
+      "pdf_pages": 3,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/supp-100.pdf",
+      "bytes": 1124460,
+      "sha256": "311a1156f478f05c036d0514f64234c127f7b505bfe7e244cacc607a56a1a1da"
+    },
+    {
+      "supplement": 101,
+      "effective": "2026-12-01",
+      "sheets": "B p 40 and complete book",
+      "use": "Future GSR and full compiled ordinary GS-1 schedule; residential USP requires separate recalculation",
+      "basis": "service rendered or rule",
+      "pdf_pages": 91,
+      "local_path": ".cache/pjm_fourth5/ugi_pa/current-portal.pdf",
+      "bytes": 2654001,
+      "sha256": "90e7c699669862a21cd4586d5ab11872cbe39762d28a07ca22329ebad0709061"
+    }
+  ],
+  "other_sources": [
+    {
+      "url": "https://www.ugi.com/tariffs/",
+      "use": "Public UGI tariffs directory links to the electric division archive",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/tariffs.html",
+      "bytes": 135703,
+      "sha256": "7167a9640288419703f5c8b012570cf199bace7d55686704b5af9e2a67284769"
+    },
+    {
+      "url": "https://www.ugi.com/rate-filing/",
+      "use": "March 27, 2026 UGI Electric rate filing R-2025-3059430; Book IV and IX under electric division",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/rate-filing.html",
+      "bytes": 176924,
+      "sha256": "a9a687bb60bded0c8f2ea6c0d9b7d3e7a77efd01f305716439edba7e4a45328f"
+    },
+    {
+      "url": "https://www.ugi.com/wp-content/uploads/2026/03/BOOK%20IX%20(Current%20Tariffs)_ADA.pdf",
+      "use": "Filed Exhibit F. Service area, Rule 13, Rule 17, A/B/C/E/G, A.6 DSIC base, R/GS-1",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/current-202603.pdf",
+      "bytes": 3322240,
+      "sha256": "533b6fd0ba1442f5ab2a0986e611a3273bd4302c2038596e2999da97db814120"
+    },
+    {
+      "url": "https://www.ugi.com/wp-content/uploads/2023/01/BOOK-IX-Current-Tariffs_ADA.pdf",
+      "use": "Historical current-rate exhibit. Rule 17 original equipment, threshold and ordinary import provisions predating Supplement 80, amended by Supplement 62",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/previous-book.pdf",
+      "bytes": 1476783,
+      "sha256": "d4e57ed25f178a3c3ad4561dd953231baef2f5c34b107fce0cf6d02437f6c554"
+    },
+    {
+      "url": "https://www.ugi.com/wp-content/uploads/2026/03/BOOK%20IV%20(Exhibits%20A,%20B%20and%20E)_ADA.pdf",
+      "use": "Exhibit E pp 2–3, PDF pp 233–234. Current-price pro forma verifies factor bases by class; projected DSIC 5.00% and STAS 0.02%",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/book-iv.pdf",
+      "bytes": 22202824,
+      "sha256": "ef30842a000f82218cbadac01201d475f619e35cc48c9df79a0a3a18e1da6dea"
+    },
+    {
+      "url": "https://www.ugi.com/notices/",
+      "use": "Published $200.50 R 1,000-kWh pro-forma baseline using the Exhibit E projected factors",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/notice.html",
+      "bytes": 246421,
+      "sha256": "2667f2eabba4681fc50ef99fe25d0a62b239ea601acb138cea973b4f26f79798"
+    },
+    {
+      "url": "https://www.ugi.com/price-to-compare/ugi-electric/",
+      "use": "Utility PTC inclusive of STAS; independent October/December class-price cross-check",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/ptc.html",
+      "bytes": 139464,
+      "sha256": "649870d10cee29b8aa6192098cf89d139f594532f6c79f6f8591b604ff347525"
+    },
+    {
+      "url": "https://www.ugi.com/resources-for-customer-generation/",
+      "use": "Final approvals for ordinary Rule 17, upgrade and metering requirements, certified Level 1 inverter threshold 10 kW",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/interconnection.html",
+      "bytes": 143919,
+      "sha256": "0f6aab50ffc7541e83491fa649f1b73eef1238fccbab72fd6e38bec536b655b8"
+    },
+    {
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax",
+      "use": "Pennsylvania tax 6%; local additions apply only to Allegheny or Philadelphia",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/pa-tax.html",
+      "bytes": 451117,
+      "sha256": "c4ef0989168891795af95c3bb23360ba259e03274f8eb97e56efe958804635aa"
+    },
+    {
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter32/s32.25.html",
+      "use": "61 Pa. Code §32.25(b), metered residential use and commercial treatment; mixed use and special exemptions excluded",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/pa-meter-use.html",
+      "bytes": 13731,
+      "sha256": "1466a3e421a4e128f8dc1c291b07409bdfa6f7866652b7f8822f6b8ae1e3fa79"
+    },
+    {
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/061/chapter33/s33.2.html",
+      "use": "61 Pa. Code §33.2, taxable purchase price and included related charges",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/pa-tax-base.html",
+      "bytes": 12296,
+      "sha256": "3006420a6f301dcf3f456969bc41ad6766362a6273d0d3574fb90b91c86d8121"
+    },
+    {
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/regions.jsf",
+      "use": "UGI Electric Service is transmission zone UGI, PA. No retail eligibility, supplier or wholesale price implied",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/pjm-regions.html",
+      "bytes": 46789,
+      "sha256": "11e7fede274de8838de4ce3aecce372c230e0febaa790d51c9775b3ed931ca87"
+    },
+    {
+      "url": "https://www.eia.gov/electricity/data/eia861/zip/f8612025.zip",
+      "use": "Net_Metering_2025.xlsx, States- Utility Level, utility 19390, PA, PJM. Photovoltaic-paired storage by class; no individual tariff or permission inferred",
+      "local_path": ".cache/pjm_fourth5/ugi_pa/eia861_2025.zip",
+      "bytes": 4756816,
+      "sha256": "f59f6c732bf685fe0a1591b32227f5ce572dc0dfd26bb5caaeed128ac4e3a396"
+    }
+  ]
+}

@@ -14,6 +14,18 @@ from .regional_math import BillingMath
 
 
 UTILITIES = {
+    "ugi_electric_pennsylvania": {"label":"UGI Electric · Pennsylvania", "state":"PA", "zone":"UGI", "module":"ugi_pa",
+        "grid_sources":["https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "kingsport_power_tennessee": {"label":"Kingsport Power · Tennessee", "state":"TN", "zone":"AEP", "module":"kingsport_tn",
+        "grid_sources":["https://ferc.gov/sites/default/files/2023-04/E-3-EL22-34-001.pdf"]},
+    "naperville_illinois": {"label":"City of Naperville Electric · Illinois", "state":"IL", "zone":"COMED", "module":"naperville_il",
+        "timezone":"America/Chicago", "grid_sources":["https://naperville.legistar.com/View.ashx?GUID=26FC62C8-3676-4BAB-8EF5-02B83F9B774A&ID=14589971&M=F","https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"],
+        "transmission_ownership_context":"City distribution and IMEA wholesale supply at ComEd delivery points. A wholesale pricing node requires separate evidence."},
+    "cleveland_public_power_ohio": {"label":"Cleveland Public Power · Ohio", "state":"OH", "zone":"ATSI", "module":"cleveland_public_oh",
+        "emergency_region":"CPP", "grid_sources":["https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2024/20241025/20241025-item-03g---first-energy-large-load-request.pdf","https://emergencyprocedures.pjm.com/ep/pages/regions.jsf"]},
+    "choptank_electric_cooperative": {"label":"Choptank Electric Cooperative · Maryland", "state":"MD", "zone":None, "module":"choptank_md",
+        "grid_sources":["https://www.eia.gov/electricity/data/eia861/","https://www.choptankelectric.coop/sites/default/files/07.01.2022%20Choptank%20Electric%20Supplier%20Coordination%20Tariff.pdf"],
+        "transmission_ownership_context":"Delmarva Power & Light meters aggregate system load for supplier reconciliation. Customer billing and wholesale node assignment require separate evidence."},
     "rappahannock_electric_cooperative": {"label":"Rappahannock Electric Cooperative · Virginia", "state":"VA", "zone":None, "module":"rappahannock_va",
         "timezone":"America/New_York", "grid_operator":"PJM",
         "grid_sources":["https://www.pjm.com/about-pjm/member-services/member-list"],

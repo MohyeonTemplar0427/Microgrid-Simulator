@@ -88,6 +88,12 @@ THIRD5_MONTHLY_DATES = {
     "duke_energy_kentucky": ("2026-04-01", "2026-04-30"),
     "delaware_electric_cooperative": ("2026-07-01", "2026-07-31"),
 }
+PJM_FOURTH5_CASES = (
+    ("ugi_electric_pennsylvania", "residential", "R"), ("ugi_electric_pennsylvania", "commercial", "GS-1"),
+    ("kingsport_power_tennessee", "residential", "RS"), ("kingsport_power_tennessee", "commercial", "SGS"),
+    ("naperville_illinois", "residential", "FRS"), ("naperville_illinois", "commercial", "FGS"),
+)
+FOURTH5_UTILITIES = {row[0] for row in PJM_FOURTH5_CASES}
 NEXT5_MONTHLY_DATES = {
     "potomac_edison_west_virginia": ("2025-11-01", "2025-11-30"),
     "wheeling_power_west_virginia": ("2025-11-01", "2025-11-30"),
@@ -116,6 +122,9 @@ PEPCO_CASES = (("pepco_maryland", "residential", "R"), ("pepco_maryland", "comme
 # Exact-year files keep current-year validation from reusing2025 weather.
 # Existing Minnesota cache windows and hashes remain unchanged.
 YEARLY_ERA5_WINDOWS = {
+    "ugi_electric_pennsylvania": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-10-31")),
+    "kingsport_power_tennessee": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-10-31")),
+    "naperville_illinois": ((2025, "2025-08-01", "2025-08-31"),),
     "duke_energy_kentucky": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-09-30")),
     "delaware_electric_cooperative": ((2025, "2025-01-01", "2025-12-31"), (2026, "2026-01-01", "2026-09-30")),
     'potomac_edison_west_virginia': ((2025, '2025-01-01', '2025-12-31'), (2026, '2026-01-01', '2026-09-30')),
@@ -156,6 +165,7 @@ YEARLY_ERA5_WINDOWS = {
 def selected_cases(utilities=None, plans=None, *, include_ciep=False, include_va_history=False):
     selected = [row for row in DEFAULT_CASES if not utilities or row[0] in utilities]
     if utilities:
+        selected.extend(row for row in PJM_FOURTH5_CASES if row[0] in utilities)
         selected.extend(row for row in FIRSTENERGY_CASES + PECO_CASES + DTE_CASES + CONSUMERS_CASES + AMEREN_CASES + AMEREN_MO_CASES + XCEL_MN_CASES + WE_ENERGIES_CASES + DUKE_IN_CASES + DUKE_OH_CASES + APCO_VA_CASES + IM_IN_CASES + PJM_BATCH5_CASES + PJM_NEXT5_CASES + PJM_THIRD5_CASES + ALLIANT_IA_CASES + PPL_AEP_CASES + BGE_CASES + PEPCO_CASES + DELMARVA_CASES + POTOMAC_EDISON_CASES + ATLANTIC_CITY_CASES + JCPL_CASES + ROCKLAND_CASES + MET_ED_CASES + PENELEC_CASES + PENN_POWER_CASES + DUQUESNE_CASES + ILLUMINATING_CASES + TOLEDO_CASES + AES_OHIO_CASES if row[0] in utilities)
     if include_va_history and (not utilities or "dominion_energy_virginia" in utilities):
         selected.extend(VA_HISTORY_CASES)
@@ -259,6 +269,11 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
     """Complete explicit hypothetical account, local dates and imported load."""
     custom=custom_bounds(period,start_date,end_date)
     r = defaults(utility, kind, plan)
+    if utility in FOURTH5_UTILITIES and custom is None and period == "annual":
+        selected_plan = next(p for p in adapter(utility).catalog() if p["id"] == r["account"]["tariff"])
+        if any(not any(w["start"] <= day <= w["end"] for w in selected_plan["coverage"])
+               for day in pd.date_range("2025-01-01", "2025-12-31").strftime("%Y-%m-%d")):
+            raise ValueError("Full-year 2025 billing is unavailable for this plan. Select verified complete cycles.")
     if utility=="duke_energy_kentucky" and custom is None and period=="annual":
         raise ValueError("Duke Energy Kentucky full-year2025 coverage is unverified; select April–June2025 or2026 complete service cycles.")
     if utility in NEXT5_MONTHLY_DATES and utility!="northern_virginia_electric_cooperative" and custom is None and period=="annual":
@@ -298,6 +313,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         start, end = ("2025-01-01", "2025-12-31") if period == "annual" else ("2025-07-01", "2025-07-31")
     if utility in THIRD5_MONTHLY_DATES and custom is None and period=="monthly":
         start,end=THIRD5_MONTHLY_DATES[utility]
+    if utility in FOURTH5_UTILITIES and custom is None and period == "monthly":
+        start, end = r["start_date"], r["end_date"]
     if utility in NEXT5_MONTHLY_DATES and custom is None and period=="monthly":
         start,end=NEXT5_MONTHLY_DATES[utility]
     if utility in BATCH5_MONTHLY_DATES and custom is None and period=="monthly":
@@ -338,6 +355,8 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
         r["billing_cycles"]=duke_2025_regular_cycles()
         r["name"] += " · hypothetical meter readings"
     account = r["account"]
+    if utility in FOURTH5_UTILITIES:
+        account.update(adapter(utility).hypothetical_defaults(account["tariff"], day=start))
     if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio"):
         account.update(adapter(utility).hypothetical_defaults(account["tariff"],day=start[:7]+"-01"))
     if utility=="firstenergy_ohio_toledo":
@@ -444,6 +463,9 @@ def case_request(utility, kind, period="annual", *, plan=None, ciep_inputs=None,
                 ("sc_history_through_month","sc_monthly_demands_kw","sc_review_source")})
     r["operating_contract"].update(interconnection_confirmed=True, grid_charging_confirmed=True,
         reference="Explicit hypothetical utility-approved non-export PV/storage account; no export compensation assumed")
+    if utility in FOURTH5_UTILITIES:
+        r["operating_contract"].update(grid_charging_confirmed=False, renewable_only_charging=r["battery"] is not None,
+            reference="Hypothetical utility approval for the exact equipment selected, with zero export.")
     if utility.startswith("firstenergy_") or utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana", "appalachian_power_virginia","duke_energy_ohio","aes_ohio","duquesne_light_pennsylvania"):
         r["operating_contract"].update(grid_charging_confirmed=False,renewable_only_charging=True)
     r["solar"].update(tilt_degrees=30., azimuth_degrees=180., system_losses_fraction=.14,
@@ -946,6 +968,13 @@ def check_assumption_download(row, model, assumption):
         require(actual == expected, "Downloaded assumption provenance changed: "+key)
 
 
+def expected_scenarios(utility, plan_id):
+    if utility in FOURTH5_UTILITIES:
+        plan = next(p for p in adapter(utility).catalog() if p["id"] == plan_id)
+        return tuple(plan["equipment_modes"])
+    return SCENARIOS
+
+
 def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_provisional=False,
           allow_we_duke_provisional=False):
     """Rebill each cycle and verify continuous physical and billing state."""
@@ -956,7 +985,9 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
     require(result["engine_id"] == engine_id, "Worker engine differs from the pin")
     utility = request["site"]["utility"]
     require(result["ac_validation"]["status"] == "completed", "Representative circuit was not evaluated")
-    require(len(result["ac_validation"]["scenarios"]) == len(SCENARIOS), "An electrical scenario is missing")
+    scenarios = expected_scenarios(utility, request["account"]["tariff"])
+    require(Counter(row["scenario"] for row in result["ac_validation"]["scenarios"]) == Counter(scenarios),
+            "Electrical scenarios differ from the required plan equipment coverage")
     inputs = pd.read_csv(directory/"inputs.csv")
     require(pd.DatetimeIndex(pd.to_datetime(inputs.timestamp, utc=True)).equals(index.tz_convert("UTC")), "Input timestamp grid changed")
     require(np.allclose(inputs.native_load_kw, native, atol=1e-8, rtol=0), "Native input changed")
@@ -964,7 +995,8 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
     saved_lines = pd.read_csv(directory/"billing-components.csv")
     saved_cycles = pd.read_csv(directory/"billing-cycles.csv")
     rows, lines, physics = [], [], []
-    for scenario in SCENARIOS:
+    require(Counter(comparison.index) == Counter(scenarios), "Bill comparison omits or adds a required scenario")
+    for scenario in scenarios:
         outcomes = result["optimization"][scenario]["cycles"]
         require(len(outcomes) == len(cycles), "Optimizer lost a billing cycle")
         require(all(x["cost_optimum_proven"] is not False for x in outcomes), "Primary optimum was not proven")
@@ -1104,7 +1136,8 @@ def audit(directory, request, engine_id, *, allow_va_history=False, allow_ohio_p
             max_soc_recursion_error_kwh=soc_error, ac_failed_intervals=ac["failed_intervals"],
             ac_all_intervals_feasible=ac["all_intervals_feasible"],
             all_minimum_cycling_proven=all(x["minimum_cycling_proven"] is not False for x in outcomes)))
-    require(comparison.loc["pv_only", "utility_bill_usd"] <= comparison.loc["grid_only", "utility_bill_usd"]+.02, "PV-only unexpectedly worsens the optimum")
+    if "pv_only" in scenarios:
+        require(comparison.loc["pv_only", "utility_bill_usd"] <= comparison.loc["grid_only", "utility_bill_usd"]+.02, "PV-only unexpectedly worsens the optimum")
     # Independent rolling policies can produce different endogenous histories;
     # do not claim a joint annual optimum or impose an invalid annual ordering.
     return pd.DataFrame(rows), pd.DataFrame(lines), physics
@@ -1326,7 +1359,7 @@ def _run(output, inputs, *, include_ciep, ciep_inputs, include_va_history, cases
                         raise ValueError("Prepared case inputs changed; use a fresh output directory.")
                     if prior and prior.get("study_id"):
                         directory = output/"runs"/prior["study_id"]
-                        if reusable(prior, r, directory, app.engine["id"]):
+                        if reusable(prior, r, directory, app.engine["id"], scenarios=expected_scenarios(utility, plan)):
                             audited = time.monotonic()
                             try:
                                 rows, lines, physics = audit(directory, r, app.engine["id"], allow_va_history=include_va_history,

@@ -1090,3 +1090,18 @@ No uniform transmission zone is invented for an unavailable cooperative, and
 utility, supplier, jurisdiction, PJM metadata and wholesale prices remain separate.
 See the [third batch validation](PJM_Third_Five_Utility_Batch_Validation.md) and
 its linked guides/ledgers for dated scope, targeted acceptance and exclusions.
+
+### UGI Electric, Kingsport Power, Naperville, Cleveland Public Power and Choptank
+
+UGI, Kingsport and Naperville use the existing regional billing and study paths.
+The UGI adapter supports approved non-export PV with paired storage. Kingsport
+and Naperville support grid-only and approved PV-only studies. The browser uses
+the selected plan’s equipment modes to configure the storage control. Historical
+validation requires every scenario in each new plan’s supported equipment set,
+checks every interval, and includes the corresponding dispatch and electrical
+files in the resume audit.
+
+Cleveland and Choptank appear in the catalog with class-specific source gaps.
+Their plans cannot submit a bill or an electrical study. The fourth batch report
+records verified dates, published future terms, independent bill benchmarks and
+the browser assertion that remained unverified. [Fourth batch validation](PJM_Fourth_Five_Utility_Batch_Validation.md)

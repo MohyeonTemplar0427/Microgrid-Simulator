@@ -9,6 +9,9 @@ from copy import deepcopy
 
 
 MODES = {
+    "ugi_electric_pennsylvania": ("export_mode", "none"),
+    "kingsport_power_tennessee": ("export_mode", "none"),
+    "naperville_illinois": ("export_mode", "none"),
     "rappahannock_electric_cooperative": ("export_mode", "none"),
     "duke_energy_kentucky": ("export_mode", "none"),
     "south_central_power_ohio": ("export_mode", "none"),
@@ -89,6 +92,16 @@ def grid_only_counterfactual(utility, account, state=None):
             inherited[key] = value
 
     applied = mode == "net_metering"
+    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+        applied = bool(result.get("der_ordinary_service_confirmed") or result.get("nms_approved"))
+        for key, value in (("der_ordinary_service_confirmed", False), ("der_activation_date", ""),
+                           ("der_eligibility_source", ""), ("battery_interconnection_confirmed", False),
+                           ("nms_approved", False), ("nms_projected_annual_kwh", None)):
+            if key in result:
+                set_account(key, value)
+        return dict(account=result, state=inherited, applied=applied, changed_account_fields=changed_account,
+                    changed_state_fields=[], label="Ordinary grid-only account with the renewable installation removed",
+                    warnings=["The baseline retains the documented supply, account classification, taxes and billing history."])
     if utility in ("dte_electric", "consumers_energy", "ameren_illinois", "ameren_missouri", "xcel_energy_minnesota", "we_energies_wisconsin", "duke_energy_indiana", "alliant_energy_iowa"):
         applied = bool(result.get("dg_enrollment_confirmed"))
         set_account("dg_enrollment_confirmed", False)

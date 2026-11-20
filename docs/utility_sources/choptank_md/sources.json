@@ -1,0 +1,323 @@
+{
+  "utility": "choptank_electric_cooperative",
+  "jurisdiction": "Maryland",
+  "retail_supplier": "Choptank Electric Cooperative Standard Offer Service",
+  "wholesale_supplier_context": "Old Dominion Electric Cooperative",
+  "balancing_authority": "PJM",
+  "system_meter": "Delmarva Power & Light (supplier tariff section 8.6)",
+  "retail_wholesale_lmp_used": false,
+  "pricing_node": null,
+  "billing_status": "blocked_missing_complete_dated_component_intersections",
+  "executable_coverage": [],
+  "as_of": "2026-11-19",
+  "plans": [
+    "residential_r",
+    "commercial_c",
+    "general_service_s"
+  ],
+  "supply": "sos",
+  "coverage": [],
+  "private_evidence_root": ".cache/pjm_fourth5/choptank_md",
+  "discovery_limits": [
+    "FY2025, FY2026 and FY2027 official environmental assignment document URLs returned HTTP 403. The available PSC index confirms dates only.",
+    "Reviewed Choptank tariff books, residential/Small Power bill explainers, regulator references and public-sector invoice discovery. No in-period primary Choptank numerical environmental assignment recovered.",
+    "The PSC downloadable PC53 material covers arrearage/termination, rather than tariff itemization. Legacy cooperative examples predate the modeled years."
+  ],
+  "requested_calendar_years": [
+    2025,
+    2026
+  ],
+  "base_effective_billings": "2023-12-01",
+  "base_observations": {
+    "residential_r": {
+      "sheet": "901 Schedule R",
+      "customer_usd": "11.75",
+      "delivery_per_kwh": "0.06351",
+      "delivery_per_kw": "0.00",
+      "sos_supply_capacity_energy_per_kwh": "0.05918",
+      "sos_transmission_per_kwh": "0.01530"
+    },
+    "commercial_c": {
+      "sheet": "902 Schedule C",
+      "customer_usd": "19.50",
+      "delivery_per_kwh": "0.06552",
+      "sos_supply_capacity_energy_per_kwh": "0.05762",
+      "sos_transmission_per_kwh": "0.01202"
+    },
+    "general_service_s": {
+      "sheet": "903 Schedule S",
+      "customer_usd": "37.50",
+      "delivery_per_kwh": "0.03758",
+      "delivery_per_kw": "4.20",
+      "reactive_per_rkvahr": "0.00264",
+      "sos_generation_per_kwh": "0.04996",
+      "sos_generation_per_kw": "2.00",
+      "sos_transmission_per_kwh": "0.00125",
+      "sos_transmission_per_kw": "2.85"
+    }
+  },
+  "shared_charges_observed": {
+    "franchise_usd_per_kwh": "0.00062",
+    "residential_usp_usd_per_month": "0.32",
+    "commercial_usp_example_usd_per_month": "1.85",
+    "commercial_usp_example_prior_year_distribution_revenue_usd": "$175–$1,299"
+  },
+  "supply_observations": [
+    {
+      "effective_billings": "2025-05-01",
+      "applies_to": "residential_r",
+      "published_residential_price_to_compare_per_kwh": "0.09897",
+      "implied_residential_pca_per_kwh": "0.02449",
+      "grade": "Residual from published R comparison and two R SOS rates; not an approved per-class PCA chronology."
+    },
+    {
+      "effective_billings": "2026-05-01",
+      "applies_to": "all except General Service–Irrigation",
+      "published_pca_per_kwh": "0.02994",
+      "published_residential_price_to_compare_per_kwh": "0.10442",
+      "grade": "Cooperative rate notice. October 2026 was the last complete elapsed month as of review."
+    }
+  ],
+  "environmental_surcharge": {
+    "assigned_numeric_values": {},
+    "psc_index_is_numeric_evidence": false,
+    "notices": [
+      {
+        "fiscal_year": "FY2025",
+        "date": "2024-06-28",
+        "url": "https://webpscxb.pscmaryland.com/DMS/maillogpdfview/GeneralNotices/a/0/214/0",
+        "result": "HTTP 403, numerical assignment unavailable"
+      },
+      {
+        "fiscal_year": "FY2026",
+        "date": "2025-06-30",
+        "url": "https://webpscxb.pscmaryland.com/DMS/maillogpdfview/GeneralNotices/a/0/222/0",
+        "result": "HTTP 403, numerical assignment unavailable"
+      },
+      {
+        "fiscal_year": "FY2027",
+        "date": "2026-06-29",
+        "url": "https://webpscxb.pscmaryland.com/DMS/maillogpdfview/GeneralNotices/a/0/228/0",
+        "result": "HTTP 403, numerical assignment unavailable"
+      }
+    ],
+    "statutory_ceiling_usd_per_kwh": "0.00015",
+    "statutory_monthly_cap_usd": "1000",
+    "substitution_from_cap_or_other_utility": false
+  },
+  "account_treatment": {
+    "positive_export_supported": false,
+    "der_enabled": false,
+    "retirement_years_for_may_2025": [
+      1995,
+      1996,
+      2023
+    ],
+    "retirement_years_for_may_2026": [
+      1997,
+      2024
+    ],
+    "operation_round_up": "Automatic enrollment. Actual opt-out verification or contribution calculation required.",
+    "legislative_refund": "PSC PC70 lists Choptank participation. Individual amounts and actual bill postings remain unresolved.",
+    "assigned_small_commercial_usp_band": "Determined by historical distribution revenue. Example band requires independent assignment."
+  },
+  "sources": [
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/tariff_202312.pdf",
+      "url": "https://www.choptankelectric.coop/sites/default/files/12.01.2023%20Choptank%20Electric%20Tariff%20and%20Terms%20and%20Conditions-120423.pdf",
+      "sha256": "e6fd80d3827538fe10b49a2ea0f8aad764200ae026df2489432ead7d41d80c5b",
+      "bytes": 463421,
+      "retrieved": "2026-11-19",
+      "use": "December 2023 book. Physical pages 55–59, 64–66 and 110–111 establish base charges, eligibility and riders. The revision history records removal of the former RGGI rate credit."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/tariff_202503.pdf",
+      "url": "https://choptankelectric.coop/sites/default/files/03.01.2025%20Choptank%20Electric%20Tariff%20and%20Terms%20and%20Conditions.pdf",
+      "sha256": "8f374ecd10dc316a37141904c88d53001b2d97c83d6548d7be44b565cd823720",
+      "bytes": 706792,
+      "retrieved": "2026-11-19",
+      "use": "March 2025 book. Physical pages 17, 19, 55–59, 64–66, 110–111 and 117."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/tariff_202607.pdf",
+      "url": "https://choptankelectric.coop/sites/default/files/Tariff%20updates%207-1-26.pdf",
+      "sha256": "76b398c7b1d13ed74675ca1de1e3ee7e439cdcaeccf0f7d8d8838590787a3072",
+      "bytes": 701025,
+      "retrieved": "2026-11-19",
+      "use": "July 2026 book. Same physical pages for R/C/S/USP/franchise, page 118 for interconnection; revision history 121–123 identifies 2025/2026 changes."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/rates.html",
+      "url": "https://choptankelectric.coop/rates",
+      "sha256": "e5cd7080d6b27441382e51d6976b84b1ec98c0420a0275f8bddbc8488a21c99c",
+      "bytes": 163207,
+      "retrieved": "2026-11-19",
+      "use": "Cooperative SOS PCA for May 1, 2026 billings onward as published on retrieval; separate irrigation rate. Independent residential supply comparison."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/choice.html",
+      "url": "https://www.choptankelectric.coop/customer-choice-portal",
+      "sha256": "5108281216792168c8541f7172f88e57c44743496cc951cd17c5db841f86e512",
+      "bytes": 156929,
+      "retrieved": "2026-11-19",
+      "use": "Residential price comparison effective with May 1, 2025 billings. No commercial comparison or printed PCA there."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/pca_policy.pdf",
+      "url": "https://choptankelectric.coop/sites/default/files/PCA-policy-0422.pdf",
+      "sha256": "2a02b880b2798343d6ae1dca9158e74825423273fef63f81698072143088a262",
+      "bytes": 151925,
+      "retrieved": "2026-11-19",
+      "use": "Board Policy 361, II.B.4–6. Board can adjust PCA during the year; charge/credit is on retail cooperative SOS supply."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/esc_index.html",
+      "url": "https://webpscxb.pscmaryland.com/dms/general-notices",
+      "sha256": "9305685ea2ed7062add8a3ec197f823db3ab8c6424b4da64fbacc9e23c02aa42",
+      "bytes": 281118,
+      "retrieved": "2026-11-19",
+      "use": "PSC notice dates and published retrieval targets only. Numerical assignment table unavailable."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/reg_surcharge.html",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/20.50.01.04",
+      "sha256": "68653197e4cb30cffbc738b0b4cf947b1874fadf96014e6c330d931ef0e66093",
+      "bytes": 12375,
+      "retrieved": "2026-11-19",
+      "use": "Maryland mandated environmental bill rounding (half cent upward)."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/pc70.html",
+      "url": "https://webpscxb.pscmaryland.com/DMS/pc/pc70",
+      "sha256": "3d0db75dfe8b5280cc69aa3fc3aeebc89d2799e1b45f1b9632901501d2be0d52",
+      "bytes": 65728,
+      "retrieved": "2026-11-19",
+      "use": "PSC PC70 entries list Choptank June 3, 2025 response. This public index supplies no account-level posting or amount."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/relief_2025.html",
+      "url": "https://psc.maryland.gov/news/2025/psc-sets-plan-to-distribute-legislative-relief-fund-to-utility-customers/",
+      "sha256": "5c9f2e6145c7950aae343fe84b093f488b2bccf3c01e8edcbfe1d0ddec19f19d",
+      "bytes": 79909,
+      "retrieved": "2026-11-19",
+      "use": "June 27, 2025 statewide relief framework, posting windows and account tests. No Choptank-specific credit value."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/member_202505.pdf",
+      "url": "https://choptankelectric.coop/sites/default/files/CL%20May%202025%20Final_Choptank.pdf",
+      "sha256": "f44f015028b6d6e8b9500e6ca71b53d8bf0afb94db29ab440d44ad4ef2bb6f7b",
+      "bytes": 23036150,
+      "retrieved": "2026-11-19",
+      "use": "May 2025 cooperative magazine, “A record-breaking capital credit retirement”; posting month and historical eligibility years."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/capital_2026.html",
+      "url": "https://choptankelectric.coop/choptank-electric-announces-3-million-capital-credit-retirement-annual-meeting",
+      "sha256": "c8fde75407430b8ceae6bcf9364010afc14b25da614a910c5f6afe3d8db6b327",
+      "bytes": 155133,
+      "retrieved": "2026-11-19",
+      "use": "2026 cooperative notice of May account-specific capital credit retirement for 1997 and 2024."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/member_202606.pdf",
+      "url": "https://choptankelectric.coop/sites/default/files/CL%20Choptank_June%202026.pdf",
+      "sha256": "87349cd52d41638e2d436a306a43877a19133e1ab2bd7fa24c2a65b11356b84b",
+      "bytes": 16575682,
+      "retrieved": "2026-11-19",
+      "use": "June 2026 allocation informational notice and May retirement distinction."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/guide_2025.pdf",
+      "url": "https://www.choptankelectric.coop/sites/default/files/CEC-Member%20Guide-2025-2026.pdf",
+      "sha256": "b0a31adba894423d2aebaf704cfd2e14d91ba84394c4ff920720de49a666223f",
+      "bytes": 332597,
+      "retrieved": "2026-11-19",
+      "use": "Member enrollment in Operation Round Up and opt-out, plus power-cost and bill mechanics."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/example_r_2019.pdf",
+      "url": "https://choptankelectric.coop/sites/default/files/Bill%20explainer_residential_3.0.pdf",
+      "sha256": "ed00743635d21d73f2ad1e32aa12dd65e750c5f090e1a4e2a22d2cf78c40354c",
+      "bytes": 716662,
+      "retrieved": "2026-11-19",
+      "use": "Legacy residential bill explainer. Item names and units only, no 2025–26 numeric authority."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/example_s_2019.pdf",
+      "url": "https://choptankelectric.coop/sites/default/files/Bill%20explainer_small%20power_11.27.19.pdf",
+      "sha256": "01147f10f3c0239426340fa10b47ad488c485a96a495885e6716bca045c0b961",
+      "bytes": 11011664,
+      "retrieved": "2026-11-19",
+      "use": "2019 Small Power bill explainer. Distinguishes distribution, reactive, generation and transmission quantities, sales tax, USP, environmental and franchise taxes."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/solar.html",
+      "url": "https://choptankelectric.coop/solar",
+      "sha256": "0afa3e4ecca2b89e7eed6078a062174a812907694c461e0cec4689d5eb513179",
+      "bytes": 227161,
+      "retrieved": "2026-11-19",
+      "use": "Cooperative FAQ distinguishes storage prevented from injecting into the system from generation interconnections."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/supplier_202207.pdf",
+      "url": "https://www.choptankelectric.coop/sites/default/files/07.01.2022%20Choptank%20Electric%20Supplier%20Coordination%20Tariff.pdf",
+      "sha256": "1e193883ae957e7eb19da2443c6280a8e296907a8a22e7045676a918cbffd803",
+      "bytes": 605187,
+      "retrieved": "2026-11-19",
+      "use": "Supplier tariff 8.5, 8.6, 9.1–9.5: supplier losses, Delmarva metering and PJM obligations separate from retail billing."
+    },
+    {
+      "original_path": ".cache/pjm_fourth5/choptank_md/odec_pjm.html",
+      "url": "https://www.odec.com/generation-transmission/generation-transmission-overview/",
+      "sha256": "a39e2aa2c63e9d30108d7c20706afc4c4dfdf906ac1e286b1508b995d21c1d86",
+      "bytes": 90152,
+      "retrieved": "2026-11-19",
+      "use": "ODEC purchases transmission service through the PJM OATT. Multiple service providers; no precise site pnode."
+    },
+    {
+      "original_path": ".cache/delmarva_md/sources/tax/comar_sales_utilities.html",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.10",
+      "sha256": "288889df2e37332514953d9869d6453e5239d0e957651c4264c627864150658c",
+      "bytes": 18384,
+      "retrieved": "2026-10-26",
+      "rechecked": "2026-11-19",
+      "use": "Shared Maryland authority; historical original rehashed. No other utility rate used."
+    },
+    {
+      "original_path": ".cache/delmarva_md/sources/tax/comar_sales_price.html",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/03.06.01.08",
+      "sha256": "ca3c47026719174e973ceb7af549a6a34dddbcc9c4d13b02b27520072c3f9343",
+      "bytes": 22799,
+      "retrieved": "2026-10-26",
+      "rechecked": "2026-11-19",
+      "use": "Shared Maryland authority; historical original rehashed. No other utility rate used."
+    },
+    {
+      "original_path": ".cache/delmarva_md/sources/tax/environmental_surcharge_statute.html",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gpu&section=7-203",
+      "sha256": "61f8f3e87ff4bea670cd399e21fa69aba62eb904507fea38063c43116f35f351",
+      "bytes": 64681,
+      "retrieved": "2026-10-26",
+      "rechecked": "2026-11-19",
+      "use": "Shared Maryland authority; historical original rehashed. No other utility rate used."
+    },
+    {
+      "original_path": ".cache/delmarva_md/sources/tax/dls_local_taxes.pdf",
+      "url": "https://dls.maryland.gov/pubs/prod/InterGovMatters/LocFinTaxRte/FinalGuidetoLocalGovernmentTaxingAuthority.pdf",
+      "sha256": "11035b7a391caa694de4442475f0ed3c1dd13a7f5c865a15b82a4d57a3513489",
+      "bytes": 651487,
+      "retrieved": "2026-10-26",
+      "rechecked": "2026-11-19",
+      "use": "Shared Maryland authority; historical original rehashed. No other utility rate used."
+    },
+    {
+      "original_path": ".cache/delmarva_md/sources/tax/md_tax_general_11_104.html",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104",
+      "sha256": "b38e0b50b4e524931148d52dfc565afc66bba2f206dfb04222ec2732ca36a97b",
+      "bytes": 80527,
+      "retrieved": "2026-10-26",
+      "rechecked": "2026-11-19",
+      "use": "Shared Maryland authority; historical original rehashed. No other utility rate used."
+    }
+  ]
+}

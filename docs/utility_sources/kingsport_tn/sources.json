@@ -1,0 +1,246 @@
+{
+  "utility_id": "kingsport_power_tennessee",
+  "jurisdiction": "TN",
+  "utility": "Kingsport Power Company d/b/a AEP Appalachian Power",
+  "supply_arrangement": "Kingsport Power bundled",
+  "grid_operator": "PJM",
+  "transmission_zone": "AEP",
+  "wholesale_pricing_location": null,
+  "reviewed_date": "2026-11-19",
+  "private_source_archive": ".cache/pjm_fourth5/kingsport_tn/sources/",
+  "coverage": {
+    "service_first": "2025-01-01",
+    "service_last": "2026-10-31",
+    "latest_verified_bill_date": "2026-11-19",
+    "bill_clock": "final service day or following calendar month, separately evidenced; billing month must match issue date"
+  },
+  "component_units": "USD/customer/month and USD/kWh unless specified",
+  "plans": {
+    "RS": {
+      "codes": [
+        "015"
+      ],
+      "customer": "16.43",
+      "minimum_before_riders": "16.43",
+      "distribution_per_kwh": ".00325"
+    },
+    "SGS": {
+      "codes": [
+        "231",
+        "232"
+      ],
+      "customer": "22.03",
+      "minimum_before_riders": "22.03",
+      "distribution_first_600": ".03225",
+      "distribution_above_600": ".02076",
+      "eligible_normal_max_kw": "<10, reviewed utility assignment"
+    }
+  },
+  "fppar_by_bill_rendered_from": {
+    "2024-11-01": {
+      "RS": ".10219",
+      "SGS": ".08279"
+    },
+    "2025-11-01": {
+      "RS": ".09504",
+      "SGS": ".07699"
+    },
+    "2026-11-01": {
+      "RS": ".10617",
+      "SGS": ".08601"
+    }
+  },
+  "trp_ms_by_service_rendered_from": {
+    "2024-09-01": {
+      "RS": "3.85",
+      "SGS": "6.87"
+    },
+    "2025-09-01": {
+      "RS": "6.84",
+      "SGS": "12.20"
+    },
+    "2026-07-01": {
+      "RS": "7.81",
+      "SGS": "13.94"
+    }
+  },
+  "other_charges": {
+    "admin_per_kwh": ".00011",
+    "federal_adjustment_distribution_base": "0.0000%",
+    "pay_in_full_within_15_days": "-1.5% of base plus riders",
+    "city_franchise": "5% of charges after prompt discount if earned",
+    "ordinary_sales_tax": "RS 0%; SGS 7% on otherwise charged amount including city franchise",
+    "local_option_sales_tax": "0%"
+  },
+  "coverage_gaps": [
+    {
+      "start": "2026-11-01",
+      "end": "2026-12-31",
+      "reason": "Incomplete or future service months at evidence cutoff. November published FPPAR may apply to a supported October service cycle issued November 1\u201319."
+    }
+  ],
+  "equipment": [
+    "grid_only",
+    "pv_only"
+  ],
+  "pv_basis": "Prior NMS acceptance for exact non-export solar installation up to 10 kW AC, historical usage/approved annual output, no opening USD/kWh credit and no outstanding one-time charges. Battery and export settlement excluded.",
+  "sources": [
+    {
+      "id": "base_and_riders",
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Tennessee/KGPT_Tariff-Nov_1_2026_FPPAR_Update.pdf",
+      "locator": "Tariff 3. PDF pp. 32\u201333 FPPAR bills rendered; p. 40 federal tax; pp. 41\u201342 RS; p. 49 SGS; pp. 74\u201378 NMS; p. 79 ACR; pp. 80\u201381 TRP&MS service rendered. Base, NMS, ACR and federal rate sheets effective August 8, 2022.",
+      "sha256": "0f7ac28642de325dd191479f610fc1d81a13cf07dd5bd04b33a9c92c690e1540",
+      "evidence_file": "book_202611.pdf"
+    },
+    {
+      "id": "fuel_notice_2024",
+      "url": "https://tpucdockets.tn.gov/archive/filings/2016/1600001gb.pdf",
+      "locator": "Public notice: the earlier adjustment applies to bills beginning November 1, 2024.",
+      "sha256": "fb77e46ef876d60081c33bf0d30ecc79ce0fc21e97ea91349dcd393c9219c59e",
+      "evidence_file": "fuel_notice24.pdf"
+    },
+    {
+      "id": "fuel_schedule_2025_and_2026",
+      "url": "https://tpucdockets.tn.gov/archive/filings/2016/1600001gc.pdf",
+      "locator": "PDF p. 18 current and adjusted dollar/kWh; pp. 59\u201360 redline with prior November 1, 2025 date and rates; pp. 65\u201366 clean November 1, 2026 sheets. PDF p. 194 lists SGS codes. Wholesale support is not a retail price input.",
+      "sha256": "4ed81e1431605044c6cd3d5b02b0fd7b463c66af3cbe9f20fbcad4715ba66040",
+      "evidence_file": "fuel_schedules26.pdf"
+    },
+    {
+      "id": "early_fuel_sheet",
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Tennessee/KGPT_Tariff_3_FPPAR_November-1_2024.pdf",
+      "locator": "Ninth-revised sheets 2-16/2-17, effective November 1, 2024. Official indexed PDF pages inspected; direct historical download returned HTTP 404. The March 2025 regulatory bill comparison independently reconciles both rates.",
+      "retrieval": "indexed official document, direct download unavailable; see locator"
+    },
+    {
+      "id": "september_book",
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Tennessee/KGPT_Tariff_3-FPPAR_Sept-1-2025.pdf",
+      "locator": "September 2025 full tariff retained Ninth-revised FPPAR sheets with November 1, 2024 effective date. Official indexed PDF inspected; direct historical download returned HTTP 404.",
+      "retrieval": "indexed official document, direct download unavailable; see locator"
+    },
+    {
+      "id": "2025_reliability_and_examples",
+      "url": "https://tpucdockets.tn.gov/archive/filings/2025/2500022b.pdf",
+      "locator": "PDF p. 7 TRP&MS redline with prior $3.85/$6.87; p. 8 Exhibit 3, company typical bills for current and proposed rates.",
+      "sha256": "3c1b889bd2c5d77fcb619adf04917bd9dba731c1a12c709b15d4d76021defa22",
+      "evidence_file": "trp25_bench.pdf"
+    },
+    {
+      "id": "2025_reliability_filed",
+      "url": "https://tpucdockets.tn.gov/archive/filings/2025/2500022y.pdf",
+      "locator": "PDF pp. 2\u20133, final amended tariff, service rendered September 1, 2025, $6.84/$12.20; visually inspected filed rate table.",
+      "sha256": "0732b5f433c7218ad78de9b2c8ba1a823cc4f8ebd3ea7f38a94b04fe701a3eae",
+      "evidence_file": "trp25.pdf"
+    },
+    {
+      "id": "2025_reliability_order",
+      "url": "https://tpucdockets.tn.gov/archive/filings/2025/2500022z.pdf",
+      "locator": "TPUC final order 25-00022.",
+      "sha256": "507549e044f69ba2b0f0350e5cf20524758c9a3122f015f6b397739fc820f0b8",
+      "evidence_file": "order25.pdf"
+    },
+    {
+      "id": "2026_reliability_filed",
+      "url": "https://tpucdockets.tn.gov/filings/2026/2600015u.pdf",
+      "locator": "PDF pp. 1\u20133, final corrected July 1, 2026 service date; revised from initial September date, $7.81/$13.94. Visually inspected filed table.",
+      "sha256": "71128c0374b829d58dcc87fca721a57a651f28def92b4e89a26a0edb61d9d671",
+      "evidence_file": "trp26.pdf"
+    },
+    {
+      "id": "2026_reliability_order",
+      "url": "https://tpucdockets.tn.gov/filings/2026/2600015w.pdf",
+      "locator": "TPUC final order 26-00015.",
+      "sha256": "5cf9af447cd560ebf4eb7a4730a040cba7b62d8d10a97b605e77b42cff1fcd7f",
+      "evidence_file": "order26.pdf"
+    },
+    {
+      "id": "2026_exhibit",
+      "url": "https://tpucdockets.tn.gov/filings/2026/2600015a.pdf",
+      "locator": "2026 docket 26-00015, Exhibit 3, PDF p. 79. Comparison uses .09504/.07699 and the previous/proposed reliability charges. The printed 2025 date headings are stale; do not use them to date tariff changes.",
+      "sha256": "5005227e99afaae7744784c3023b52350d44aebd517308c0f1677bcccea7bc3a",
+      "evidence_file": "so_2025.pdf"
+    },
+    {
+      "id": "residential_calculator",
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Tennessee/KingsportPowerCompany-ResidentialBillCalculator-Nov_1_2026.xlsx",
+      "locator": "RS cells G25:G26 and I25:I48, Rider Rates, Taxes row 12. The FPPAR sheet display date in J32 is stale; the referenced Rider Rates C4 carries November 1, 2026.",
+      "sha256": "072af2884704a37bd3e38b1e27b168386f3d7e6309b58bf41255deaf99814a77",
+      "evidence_file": "calculator_R_202611.xlsx"
+    },
+    {
+      "id": "commercial_calculator",
+      "url": "https://www.appalachianpower.com/lib/docs/ratesandtariffs/Tennessee/KingsportPowerCompany-CommercialIndustrialBillCalculator-Nov_1_2026.xlsm",
+      "locator": "SGS rows 25\u201353 and Taxes row 12 show the prompt discount, then city fee, then ordinary 7% Tennessee tax. Filed schedules and code determination govern.",
+      "sha256": "37d5a17e306a49f817c626d37966cce435248a2ecd12c48bf426f7dfe32300db",
+      "evidence_file": "calculator_SGS_202611.xlsm"
+    },
+    {
+      "id": "utility_examples",
+      "url": "https://www.appalachianpower.com/company/about/rates/tn",
+      "locator": "Published November 1, 2026 residential 1,000 and 2,000 kWh illustrative bills, before this study\u2019s city fee.",
+      "sha256": "3333997015a1ef34497eaa0335e029f547c66ad2bf6bd8d22ab032decca62727",
+      "evidence_file": "rate_page.html"
+    },
+    {
+      "id": "classification",
+      "url": "https://tpucdockets.tn.gov/archive/filings/2016/1600001cm.pdf",
+      "locator": "Kingsport CPAD 2-005, PDF p. 6: 231 SGS-fixed, 232 SGS-measured, 233 nonmetered. All three billed on kWh. This adapter covers 231/232 only.",
+      "sha256": "66a87977060b1871f720ed96715599f0e5807c43e51707764f364b0bf1b3d178",
+      "evidence_file": "codes.pdf"
+    },
+    {
+      "id": "solar",
+      "url": "https://www.appalachianpower.com/lib/docs/business/builders/TNNetMeteringPackage2024.pdf",
+      "locator": "January 17, 2024 Tennessee NMS information, pp. 1\u20132, and attached tariff: limits, historical sizing, inspection, meter, final approval. No battery-specific billing terms identified.",
+      "sha256": "839d235025ffd0cf8dfc790fc080e01f2afbb53d2f6e2d6b73130587d4318518",
+      "evidence_file": "nms.pdf"
+    },
+    {
+      "id": "city_ordinance",
+      "url": "https://www.kingsporttn.gov/wp-content/uploads/default/Feb__29___March_1__2016_BMA_Packet.pdf",
+      "locator": "City March 2016 ordinance amendment materials specify 5% on first 500,000 kWh and 1.5% above. Official indexed city PDF inspected; direct download returned HTTP 403.",
+      "retrieval": "indexed official document, direct download unavailable; see locator"
+    },
+    {
+      "id": "city_adoption",
+      "url": "https://www.kingsporttn.gov/wp-content/uploads/default/3_15_16_BMA_Minutes.pdf",
+      "locator": "City March 15, 2016 meeting, Ordinance 6556 adopted. Official indexed city PDF inspected; direct download returned HTTP 403.",
+      "retrieval": "indexed official document, direct download unavailable; see locator"
+    },
+    {
+      "id": "tax_2024",
+      "url": "https://www.tn.gov/content/dam/tn/revenue/documents/tax_manuals/June-2024/Sales-Use-Tax-Manual.pdf",
+      "locator": "Tennessee sales and use tax manual, PDF pp. 103/147/235; state residential exemption and no local option tax on electric power.",
+      "sha256": "d953fa825e4e0d5ab1631e040aae8b8b668659477f0d7920c356ef1361d162dc",
+      "evidence_file": "tax_manual_2024.pdf"
+    },
+    {
+      "id": "tax_2026",
+      "url": "https://www.tn.gov/content/dam/tn/revenue/documents/tax_manuals/august-2026/sales-use-tax-manual.pdf",
+      "locator": "Tennessee sales and use tax manual, PDF pp. 101/144/226; local utility treatment and residential end use.",
+      "sha256": "05e3c404ee3dede4866a6ee86262fdb9d52e55baa52e1059da5af25cc7152aa3",
+      "evidence_file": "tax_manual_2026.pdf"
+    },
+    {
+      "id": "tax_exemption",
+      "url": "https://www.tn.gov/content/dam/tn/revenue/documents/taxes/sales/streamlined/2025/2025.1-Certificate-of-Compliance.pdf",
+      "locator": "Tennessee 2025 streamlined-sales-tax certificate, PDF p. 6; residential energy explicitly exempt.",
+      "sha256": "1e2b87d36d032427a2830ddbac4bcee795a6fa3b9692e0d679349b0037b3a485",
+      "evidence_file": "tax_residential.pdf"
+    },
+    {
+      "id": "tax_base",
+      "url": "https://revenue.support.tn.gov/hc/en-us/articles/360058703911-SUT-137-Utilities-Water-Natural-Gas-Propane-and-Electricity",
+      "locator": "Tennessee DOR SUT-137 identifies taxable commercial electricity charges and excludes service connection fees. The commercial utility workbook applies 7% to ordinary charges including the city fee.",
+      "sha256": "934c2ce7a7e92e673cef3de4677a9bdeef987b799d5558ca9c5f9b433aa79916",
+      "evidence_file": "tax_util.html"
+    },
+    {
+      "id": "pjm_zone",
+      "url": "https://ferc.gov/sites/default/files/2023-04/E-3-EL22-34-001.pdf",
+      "locator": "FERC EL22-34-001, PDF p. 4, paragraph 8 identifies Kingsport Power among AEP East companies in the AEP Zone.",
+      "sha256": "1ffe8144fe95e8b1f16713face7a5d542cb26c3e7acc64fd14febd8da5807e74",
+      "evidence_file": "jurisdiction.pdf"
+    }
+  ]
+}

@@ -28,7 +28,7 @@ def previous_manifest(output, resume, execution):
     return old
 
 
-def reusable(entry, request, directory, engine_id):
+def reusable(entry, request, directory, engine_id, *, scenarios=("grid_only", "pv_only", "pv_battery")):
     """Hash checks precede the driver's mandatory independent physical/bill audit."""
     if entry.get("status") != "completed" or entry.get("validation") != "passed":
         return False
@@ -38,7 +38,7 @@ def reusable(entry, request, directory, engine_id):
     required = {"request.json", "result.json", "inputs.csv", "comparison.csv",
                 "billing-components.csv", "billing-cycles.csv", "ac-summary.csv"}
     required.update(f"{prefix}-{scenario}.csv" for prefix in ("dispatch", "ac")
-                    for scenario in ("grid_only", "pv_only", "pv_battery"))
+                    for scenario in scenarios)
     if not required.issubset(hashes):
         return False
     for name, expected in hashes.items():

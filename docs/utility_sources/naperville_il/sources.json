@@ -1,0 +1,31 @@
+{
+  "distributor_and_retail_supplier": "City of Naperville Department of Public Utilities – Electric",
+  "jurisdiction": "Illinois, ordinary taxable city customer within corporate limits",
+  "ordinance": {
+    "identifier": "24-123, Title 8, Chapter 1, Article C, Section 4",
+    "adopted": "https://library.municode.com/il/naperville/ordinances/code_of_ordinances?nodeId=1330189",
+    "city_filing": "https://naperville.legistar.com/View.ashx?GUID=DB34630C-7A31-4303-9B1F-2CADADC170B3&ID=13544827&M=F",
+    "filing_sha256": "22b3b85707a2f5e014ed50bb781a43e1f3023499ccab1f90f92de85f04aae9a9",
+    "locations": ["Fee Schedule 2, monthly minimum", "Rate Schedule 1, FRS", "Rate Schedule 2, FGS", "8.2, January GS classification", "4, purchased power adjustment on a following bill"],
+    "calendar_year_base_customer_and_kwh": {"2025": {"FRS": [19.26, 0.11433], "FGS": [37.71, 0.11475]}, "2026": {"FRS": [21.52, 0.11968], "FGS": [41.77, 0.11933]}}
+  },
+  "survey": {
+    "provider": "Northern Illinois Municipal Power Agency, Utility Financial Solutions report, October 2025",
+    "url": "https://www.nimpaonline.org/wp-content/uploads/2025/10/NIMPA-Comparative-Monthly-Electric-Bills-Final-Report-2025.pdf",
+    "sha256": "8477835303ffa78071d1468f6fc57e32e1d25cb04b49d6f3d8c469da839352a4",
+    "locations": "Naperville column, Exhibits 1, 5, 21 and page 26. Survey uses rates effective August 1 and explicitly dates this municipal adjustment to August 2025.",
+    "bill_month": "2025-08", "ppa_usd_per_kwh": 0.00535, "city_tax_fraction_of_pre_tax_electric_charges": 0.05,
+    "state_tax_lesser_of": {"usd_per_kwh": 0.0032, "fraction_of_pre_tax_electric_charges": 0.05},
+    "benchmark_usd": {"FRS": {"0": 20.22, "100": 33.11, "500": 84.66, "1000": 149.09},
+                      "FGS": {"0": 39.60, "100": 52.53, "500": 104.25, "1000": 168.90}}
+  },
+  "tax_scope": {
+    "state_rule": "https://library.municode.com/il/naperville/codes/code_of_ordinances?nodeId=TIT8PUUT_CH1EL",
+    "historical_commercial_tax_correction": "https://www.naperville.il.us/globalassets/media/finance-documents/budget-audit-reports/2026-approved-budget.pdf",
+    "applicability": "Modeled standard statutory city tax must match independently documented account billing. Commercial accounts affected by the historical municipal software error are outside scope."
+  },
+  "der": {"city_2025_guide": "https://www.naperville.il.us/globalassets/media/projects/electric/sustainability-grant-forms/net-metering-utility-ebill-explained---june-2025.pdf",
+          "city_approval": "https://www.naperville.il.us/357/Solar-Panels",
+          "scope": "Utility-approved, self-owned PV, within the study limit of 10 kW AC. Ordinary import billing continues with no exported energy and zero opening bank. Storage not enabled."},
+  "gaps": "No exact billed PPA verified for Jan–Jul 2025 or Sep 2025–Dec 2026. The six-month illustration and the $0.086 supply baseline do not supply monthly dollar factors. The public NIMPA comparative-report index returned only the 2025 report. No digitization or interpolation of Exhibit 29."
+}

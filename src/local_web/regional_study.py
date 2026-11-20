@@ -20,6 +20,11 @@ from .site_profile import customer_class
 
 
 SITES={"rappahannock_electric_cooperative":(38.60,-78.80,"Illustrative unincorporated Rockingham County, VA only; REC billing remains unavailable pending complete tax evidence."),
+       "ugi_electric_pennsylvania":(41.34,-75.97,"Hypothetical Dallas Borough, Luzerne County, PA. Confirm UGI distribution, default supply and assigned account class independently."),
+       "kingsport_power_tennessee":(36.55,-82.56,"Hypothetical Kingsport city, TN. Confirm Kingsport Power service, plan assignment and city tax jurisdiction independently."),
+       "naperville_illinois":(41.77,-88.15,"Hypothetical inside-city Naperville, IL. Confirm city electric service, bill-month PPA, plan assignment and tax treatment independently."),
+       "cleveland_public_power_ohio":(41.50,-81.69,"Illustrative Cleveland, OH location. City distribution and class-specific monthly riders require independent evidence."),
+       "choptank_electric_cooperative":(38.40,-75.65,"Illustrative unincorporated Wicomico County, MD. Confirm Choptank service, account classification and tax treatment independently."),
        "duke_energy_kentucky":(38.99,-84.65,"Hypothetical unincorporated Boone County, KY, within Boone County school district; Duke territory, tax status and RS/DS assignment require independent confirmation."),
        "south_central_power_ohio":(39.60,-82.94,"Illustrative Pickaway County, OH only; South Central Power billing is unavailable pending dated monthly G&T and complete component evidence."),
        "delaware_electric_cooperative":(38.68,-75.50,"Hypothetical unincorporated Sussex County, DE; cooperative territory, R/GS assignment, independent classification history and taxes require confirmation."),
@@ -161,6 +166,16 @@ def defaults(utility="dominion_energy_virginia",kind="residential",plan_id=None)
         request["account"].update(module.hypothetical_defaults(plan_id,day=start))
         for cycle in request["billing_cycles"]:
             cycle.update(module.hypothetical_cycle_fields(cycle["start_date"]))
+    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+        request["solar"]["dc_capacity_kw"] = 2.
+        request["pv_capacity_kw"] = 1.5
+        request["operating_contract"]["renewable_only_charging"] = "pv_battery" in plan["equipment_modes"]
+        if "pv_battery" in plan["equipment_modes"]:
+            request["battery"].update(capacity_kWh=2., energy_kWh=1., max_charge_kw=1., max_discharge_kw=1.)
+        else:
+            request["battery"] = None
+        if "pv_only" not in plan["equipment_modes"]:
+            request["solar"]["dc_capacity_kw"] = request["pv_capacity_kw"] = 0.
     return request
 
 
@@ -364,6 +379,10 @@ def prepare(r):
         raise ValueError("Electrical phase must match the confirmed account phase.")
     equipment={"pv":pv,"battery":battery is not None,"pv_ac_kw":r["pv_capacity_kw"],"battery_kw":battery.max_discharge_kw if battery else 0.,
         "renewable_only_charging":op["renewable_only_charging"],"no_battery_export":op["no_battery_export"]}
+    if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+        equipment["pv_dc_kw"] = r["solar"]["dc_capacity_kw"]
+        if op["mode"] != "non_export" or op["grid_charging_confirmed"]:
+            raise ValueError("Select non-export operation without grid charging for this tariff.")
     if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "southern_maryland_electric_cooperative", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan"):
         equipment["pv_dc_kw"]=r["solar"]["dc_capacity_kw"]
         if op["mode"]!="non_export" or op["grid_charging_confirmed"]:
@@ -399,6 +418,8 @@ def prepare(r):
         module.validate_state(cycle_account(a,first_cycle),grid.index[first_block],state=None,equipment=equipment)
     for _,block,cycle in cycles:
         module.validate_account(cycle_account(a,cycle),grid.index[block],equipment=equipment)
+        if utility in ("ugi_electric_pennsylvania", "kingsport_power_tennessee", "naperville_illinois"):
+            module.validate_native_load(cycle_account(a,cycle), load[block])
         if utility in ("duke_energy_kentucky", "delaware_electric_cooperative", "potomac_edison_west_virginia", "wheeling_power_west_virginia", "kentucky_power_kentucky", "southern_maryland_electric_cooperative", "northern_virginia_electric_cooperative", "appalachian_power_west_virginia", "pepco_district_of_columbia", "delmarva_delaware", "mon_power_west_virginia", "indiana_michigan_power_michigan", "indiana_michigan_power_indiana"):
             module.validate_native_load(cycle_account(a,cycle), load[block])
         if utility=="aes_ohio" and float(np.max(load[block]))>(25. if a["tariff"]=="D17" else 100.)+1e-7:
